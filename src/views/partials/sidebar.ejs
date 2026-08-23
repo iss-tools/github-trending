@@ -1,0 +1,48 @@
+<div class="space-y-8">
+    
+    <!-- Tags Cloud -->
+    <div class="bg-card rounded-lg border border-border p-6 shadow-sm">
+        <h3 class="font-bold text-lg mb-4 text-primary">热门标签</h3>
+        <div class="flex flex-wrap gap-2">
+            <% meta.topTags.forEach(tagObj => { %>
+                <a href="#" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <%= tagObj.tag %> <span class="opacity-50 text-[10px] ml-1"><%= tagObj.count %></span>
+                </a>
+            <% }) %>
+            <% if (meta.topTags.length === 0) { %>
+                <span class="text-sm text-muted-foreground">暂无标签数据</span>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- Rankings -->
+    <div class="bg-card rounded-lg border border-border p-6 shadow-sm">
+        
+        <div class="flex items-center justify-between mb-4 border-b border-border pb-2">
+            <h3 class="font-bold text-lg text-primary">排行榜</h3>
+            <div class="flex text-xs bg-muted rounded-md p-1">
+                <button class="px-2 py-1 rounded-sm bg-background shadow-sm text-foreground">Star 榜</button>
+                <button class="px-2 py-1 rounded-sm text-muted-foreground hover:text-foreground transition-colors">上榜次数</button>
+            </div>
+        </div>
+
+        <!-- Star Ranking -->
+        <div class="space-y-3">
+            <% meta.topStars.forEach((repo, index) => { %>
+                <a href="<%= repo.url %>" target="_blank" class="flex items-center justify-between group">
+                    <div class="flex items-center gap-3 overflow-hidden">
+                        <span class="text-sm font-bold <%= index < 3 ? 'text-blue-500' : 'text-muted-foreground' %>"><%= index + 1 %></span>
+                        <span class="text-sm text-foreground truncate group-hover:text-blue-500 transition-colors"><%= repo.repo %></span>
+                    </div>
+                    <span class="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-md flex-shrink-0 flex items-center gap-1">
+                        ⭐ <%= (repo.stars / 1000).toFixed(1) %>k
+                    </span>
+                </a>
+            <% }) %>
+            <% if (meta.topStars.length === 0) { %>
+                <span class="text-sm text-muted-foreground">暂无榜单数据</span>
+            <% } %>
+        </div>
+
+    </div>
+</div>

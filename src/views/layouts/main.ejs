@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending CMS</title>
+    <link href="/style.css" rel="stylesheet">
+    <script>
+        // Check local storage for theme or use system preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-foreground font-sans antialiased">
+    
+    <%- include('../partials/header') %>
+
+    <main class="flex-grow container mx-auto px-4 py-8 flex gap-8">
+        <!-- Main Content Area -->
+        <div class="flex-grow w-3/4">
+            <%- include(body) %>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="w-1/4 flex-shrink-0">
+            <%- include('../partials/sidebar') %>
+        </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+
+</body>
+</html>
