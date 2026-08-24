@@ -28,14 +28,24 @@ const loadData = (filename: string) => {
 // Routes
 app.get('/', (req, res) => renderPage(req, res, 'all'));
 
-const renderPage = (req: express.Request, res: express.Response, type: string) => {
+['daily', 'weekly', 'monthly'].forEach(type => {
+    app.get(`/${type}`, (req, res) => {
+        renderPage(req, res, type);
+    });
+
+    app.get(`/${type}/:date.html`, (req, res) => {
+        renderPage(req, res, type, req.params.date);
+    });
+});
+
+const renderPage = (req: express.Request, res: express.Response, type: string, pathDate?: string) => {
     const data = loadData(`${type}.json`) || {};
     const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
     
     // keys are dates (e.g. 20260101, 202635, or 'all')
     const dates = Object.keys(data).sort((a, b) => b.localeCompare(a));
     
-    let selectedDate = req.query.date as string | undefined;
+    let selectedDate = pathDate;
     if (type === 'all') {
         selectedDate = 'all';
     }

@@ -8,7 +8,6 @@
             <% 
             const getPageUrl = (p) => {
                 const params = new URLSearchParams();
-                if (typeof selectedDate !== 'undefined' && selectedDate) params.set('date', selectedDate);
                 if (typeof selectedLang !== 'undefined' && selectedLang) params.set('lang', selectedLang);
                 if (typeof searchQuery !== 'undefined' && searchQuery) params.set('q', searchQuery);
                 params.set('page', p);

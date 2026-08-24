@@ -12,9 +12,6 @@
 
         <div class="flex items-center gap-4">
             <form action="" method="GET" class="relative">
-                <% if (typeof selectedDate !== 'undefined' && selectedDate) { %>
-                    <input type="hidden" name="date" value="<%= selectedDate %>">
-                <% } %>
                 <% if (typeof selectedLang !== 'undefined' && selectedLang) { %>
                     <input type="hidden" name="lang" value="<%= selectedLang %>">
                 <% } %>
