@@ -1,21 +1,30 @@
 <div class="space-y-8">
     
+    <%
+      let activeTab = 'tags';
+      if (typeof type !== 'undefined') {
+          if (type === 'category') activeTab = 'categories';
+          else if (type === 'topic') activeTab = 'topics';
+          else if (type === 'language') activeTab = 'languages';
+      }
+    %>
     <!-- Metadata Tabs -->
     <div class="bg-card rounded-lg border border-border shadow-sm flex flex-col">
         <!-- Tab Headers -->
         <div class="flex border-b border-border text-sm font-medium px-2 pt-2 gap-1 overflow-x-auto custom-scrollbar">
-            <button onclick="switchMetaTab('tags')" id="tab-tags" class="meta-tab px-4 py-2 border-b-2 border-primary text-foreground transition-colors whitespace-nowrap">标签</button>
-            <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">分类</button>
-            <button onclick="switchMetaTab('topics')" id="tab-topics" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">Topics</button>
-            <button onclick="switchMetaTab('languages')" id="tab-languages" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">开发语言</button>
+            <button onclick="switchMetaTab('tags')" id="tab-tags" class="meta-tab px-4 py-2 border-b-2 transition-colors whitespace-nowrap <%= activeTab === 'tags' ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground' %>">标签</button>
+            <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 transition-colors whitespace-nowrap <%= activeTab === 'categories' ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground' %>">分类</button>
+            <button onclick="switchMetaTab('topics')" id="tab-topics" class="meta-tab px-4 py-2 border-b-2 transition-colors whitespace-nowrap <%= activeTab === 'topics' ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground' %>">Topics</button>
+            <button onclick="switchMetaTab('languages')" id="tab-languages" class="meta-tab px-4 py-2 border-b-2 transition-colors whitespace-nowrap <%= activeTab === 'languages' ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground' %>">开发语言</button>
         </div>
         
         <!-- Tab Contents -->
         <div class="p-4 max-h-72 overflow-y-auto custom-scrollbar">
             <!-- Tags -->
-            <div id="content-tags" class="meta-content flex flex-wrap gap-2">
+            <div id="content-tags" class="meta-content flex-wrap gap-2 <%= activeTab === 'tags' ? 'flex' : 'hidden' %>">
                 <% if (meta.topTags) { meta.topTags.forEach(tagObj => { %>
-                    <a href="/tag/<%= encodeURIComponent(tagObj.tag) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <% const isActive = typeof type !== 'undefined' && type === 'tag' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === tagObj.tag.toLowerCase(); %>
+                    <a href="/tag/<%= encodeURIComponent(tagObj.tag) %>.html" class="px-3 py-1 rounded-full text-xs transition-colors <%= isActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted text-muted-foreground hover:bg-primary/80 hover:text-primary-foreground' %>">
                         <%= tagObj.tag %> <span class="opacity-50 text-[10px] ml-1"><%= tagObj.count %></span>
                     </a>
                 <% })} %>
@@ -25,9 +34,10 @@
             </div>
             
             <!-- Categories -->
-            <div id="content-categories" class="meta-content hidden flex-wrap gap-2">
+            <div id="content-categories" class="meta-content flex-wrap gap-2 <%= activeTab === 'categories' ? 'flex' : 'hidden' %>">
                 <% if (meta.topCategories) { meta.topCategories.forEach(catObj => { %>
-                    <a href="/category/<%= encodeURIComponent(catObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <% const isActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === catObj.name.toLowerCase(); %>
+                    <a href="/category/<%= encodeURIComponent(catObj.name) %>.html" class="px-3 py-1 rounded-full text-xs transition-colors <%= isActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted text-muted-foreground hover:bg-primary/80 hover:text-primary-foreground' %>">
                         <%= catObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= catObj.count %></span>
                     </a>
                 <% })} %>
@@ -37,9 +47,10 @@
             </div>
             
             <!-- Topics -->
-            <div id="content-topics" class="meta-content hidden flex-wrap gap-2">
+            <div id="content-topics" class="meta-content flex-wrap gap-2 <%= activeTab === 'topics' ? 'flex' : 'hidden' %>">
                 <% if (meta.topTopics) { meta.topTopics.forEach(topicObj => { %>
-                    <a href="/topic/<%= encodeURIComponent(topicObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <% const isActive = typeof type !== 'undefined' && type === 'topic' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === topicObj.name.toLowerCase(); %>
+                    <a href="/topic/<%= encodeURIComponent(topicObj.name) %>.html" class="px-3 py-1 rounded-full text-xs transition-colors <%= isActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted text-muted-foreground hover:bg-primary/80 hover:text-primary-foreground' %>">
                         <%= topicObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= topicObj.count %></span>
                     </a>
                 <% })} %>
@@ -49,9 +60,10 @@
             </div>
             
             <!-- Languages -->
-            <div id="content-languages" class="meta-content hidden flex-wrap gap-2">
+            <div id="content-languages" class="meta-content flex-wrap gap-2 <%= activeTab === 'languages' ? 'flex' : 'hidden' %>">
                 <% if (meta.topLanguages) { meta.topLanguages.forEach(langObj => { %>
-                    <a href="/language/<%= encodeURIComponent(langObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <% const isActive = typeof type !== 'undefined' && type === 'language' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === langObj.name.toLowerCase(); %>
+                    <a href="/language/<%= encodeURIComponent(langObj.name) %>.html" class="px-3 py-1 rounded-full text-xs transition-colors <%= isActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted text-muted-foreground hover:bg-primary/80 hover:text-primary-foreground' %>">
                         <%= langObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= langObj.count %></span>
                     </a>
                 <% })} %>

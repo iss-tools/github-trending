@@ -14,7 +14,8 @@
                 <span class="font-medium"><%= item.repo %></span>
             </a>
             <% if (item.language) { %>
-                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="bg-muted px-2.5 py-1 rounded-md text-foreground font-medium hover:bg-primary hover:text-primary-foreground transition-colors"><%= item.language %></a>
+                <% const isLangActive = typeof type !== 'undefined' && type === 'language' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === item.language.toLowerCase(); %>
+                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="px-2.5 py-1 rounded-md text-foreground font-medium transition-colors <%= isLangActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted hover:bg-primary hover:text-primary-foreground' %>"><%= item.language %></a>
             <% } %>
             <span class="bg-muted px-2.5 py-1 rounded-md text-foreground flex items-center gap-1">
                 ⭐ <%= item.stars %>
@@ -51,36 +52,37 @@
             </div>
         <% } %>
 
-        <% if (item.summaryData.suitable && item.summaryData.suitable.length > 0) { %>
-            <div class="mb-6">
-                <h3 class="text-xl font-bold mt-0 mb-3 border-b border-border pb-2">👥 适合人群</h3>
-                <div class="flex flex-wrap gap-2 not-prose">
-                    <% item.summaryData.suitable.forEach(person => { %>
-                        <a href="/suitable/<%= encodeURIComponent(person) %>.html" class="bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
-                            <%= person %>
-                        </a>
-                    <% }) %>
-                </div>
-            </div>
-        <% } %>
-
         <% if (item.summaryData.category && item.summaryData.category.length > 0) { %>
-            <div class="mt-8 pt-4 border-t border-border/50 not-prose">
-                <div class="flex flex-wrap items-center gap-2">
-                    <span class="text-sm font-semibold text-muted-foreground">分类:</span>
+            <div class="flex items-start gap-2 text-sm mb-3">
+                <span class="text-muted-foreground font-medium min-w-16">分类：</span>
+                <div class="flex flex-wrap gap-2">
                     <% item.summaryData.category.forEach(cat => { %>
-                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="text-xs bg-muted text-muted-foreground px-2.5 py-1 rounded border border-border hover:bg-primary hover:text-primary-foreground transition-colors"><%= cat %></a>
+                        <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
+                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="px-2.5 py-0.5 rounded-full border transition-colors <%= isCatActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-background text-muted-foreground border-border hover:bg-primary/10 hover:text-primary hover:border-primary' %>"><%= cat %></a>
+                    <% }) %>
+                </div>
+            </div>
+        <% } %>
+        
+        <% if (item.summaryData.tags && item.summaryData.tags.length > 0) { %>
+            <div class="flex items-start gap-2 text-sm mb-3">
+                <span class="text-muted-foreground font-medium min-w-16">标签：</span>
+                <div class="flex flex-wrap gap-2">
+                    <% item.summaryData.tags.forEach(tag => { %>
+                        <% const isTagActive = typeof type !== 'undefined' && type === 'tag' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === tag.toLowerCase(); %>
+                        <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="px-2.5 py-0.5 rounded-full border transition-colors <%= isTagActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-background text-muted-foreground border-border hover:bg-primary/10 hover:text-primary hover:border-primary' %>"><%= tag %></a>
                     <% }) %>
                 </div>
             </div>
         <% } %>
 
-        <% if (item.summaryData.tags && item.summaryData.tags.length > 0) { %>
-            <div class="mt-4 not-prose">
-                <div class="flex flex-wrap items-center gap-2">
-                    <span class="text-sm font-semibold text-muted-foreground">标签:</span>
-                    <% item.summaryData.tags.forEach(tag => { %>
-                        <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="text-xs bg-muted text-muted-foreground px-2.5 py-1 rounded border border-border hover:bg-primary hover:text-primary-foreground transition-colors"><%= tag %></a>
+        <% if (item.summaryData.suitable && item.summaryData.suitable.length > 0) { %>
+            <div class="flex items-start gap-2 text-sm mb-3">
+                <span class="text-muted-foreground font-medium min-w-16">适合：</span>
+                <div class="flex flex-wrap gap-2">
+                    <% item.summaryData.suitable.forEach(person => { %>
+                        <% const isSuitActive = typeof type !== 'undefined' && type === 'suitable' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === person.toLowerCase(); %>
+                        <a href="/suitable/<%= encodeURIComponent(person) %>.html" class="px-2.5 py-0.5 rounded-full border transition-colors <%= isSuitActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-800' %>"><%= person %></a>
                     <% }) %>
                 </div>
             </div>

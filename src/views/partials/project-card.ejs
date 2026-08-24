@@ -5,7 +5,8 @@
         </a>
         <div class="flex items-center gap-2 text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
             <% if (item.language) { %>
-                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="font-medium text-foreground hover:text-primary transition-colors hover:underline"><%= item.language %></a>
+                <% const isLangActive = typeof type !== 'undefined' && type === 'language' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === item.language.toLowerCase(); %>
+                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="font-medium <%= isLangActive ? 'bg-primary text-primary-foreground px-1.5 rounded' : 'text-foreground hover:text-primary hover:underline' %> transition-colors"><%= item.language %></a>
                 <span>•</span>
             <% } %>
             <span>⭐ <%= item.stars %></span>
@@ -26,7 +27,8 @@
                 <div class="flex flex-wrap items-center gap-1 mt-3">
                     <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
                     <% item.summaryData.category.forEach(cat => { %>
-                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"><%= cat %></a>
+                        <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
+                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="text-[10px] <%= isCatActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-background text-muted-foreground border-border hover:bg-primary/10 hover:text-primary hover:border-primary' %> border px-2 py-0.5 rounded-full transition-colors"><%= cat %></a>
                     <% }) %>
                 </div>
             <% } %>
@@ -35,7 +37,8 @@
                 <div class="flex flex-wrap items-center gap-1 mt-2">
                     <span class="text-[10px] font-semibold text-muted-foreground mr-1">标签:</span>
                     <% item.summaryData.tags.forEach(tag => { %>
-                        <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"><%= tag %></a>
+                        <% const isTagActive = typeof type !== 'undefined' && type === 'tag' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === tag.toLowerCase(); %>
+                        <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="text-[10px] <%= isTagActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-background text-muted-foreground border-border hover:bg-primary/10 hover:text-primary hover:border-primary' %> border px-2 py-0.5 rounded-full transition-colors"><%= tag %></a>
                     <% }) %>
                 </div>
             <% } %>
@@ -44,7 +47,8 @@
                 <div class="flex flex-wrap items-center gap-1 mt-2">
                     <span class="text-[10px] font-semibold text-muted-foreground mr-1">适合:</span>
                     <% item.summaryData.suitable.forEach(person => { %>
-                        <a href="/suitable/<%= encodeURIComponent(person) %>.html" class="text-[10px] bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-2 py-0.5 rounded-full hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"><%= person %></a>
+                        <% const isSuitActive = typeof type !== 'undefined' && type === 'suitable' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === person.toLowerCase(); %>
+                        <a href="/suitable/<%= encodeURIComponent(person) %>.html" class="text-[10px] border px-2 py-0.5 rounded-full transition-colors <%= isSuitActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-800' %>"><%= person %></a>
                     <% }) %>
                 </div>
             <% } %>
@@ -55,7 +59,8 @@
         <div class="flex flex-wrap items-center gap-1 mt-1">
             <span class="text-[10px] font-semibold text-muted-foreground mr-1">Topics:</span>
             <% item.githubData.topics.forEach(topic => { %>
-                <a href="/topic/<%= encodeURIComponent(topic) %>.html" class="text-[10px] bg-muted/50 text-muted-foreground px-2 py-0.5 rounded hover:bg-primary hover:text-primary-foreground transition-colors"><%= topic %></a>
+                <% const isTopicActive = typeof type !== 'undefined' && type === 'topic' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === topic.toLowerCase(); %>
+                <a href="/topic/<%= encodeURIComponent(topic) %>.html" class="text-[10px] px-2 py-0.5 rounded transition-colors <%= isTopicActive ? 'bg-primary text-primary-foreground font-bold shadow-sm' : 'bg-muted/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground' %>"><%= topic %></a>
             <% }) %>
         </div>
     <% } %>
