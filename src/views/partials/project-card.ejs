@@ -20,23 +20,19 @@
 
     <% if (item.summaryData) { %>
         <div class="mt-2 text-[13px] sm:text-sm bg-muted/50 p-3 rounded-md border border-border/50">
-            <h4 class="font-semibold text-foreground mb-1">AI 总结</h4>
+            <div class="flex items-center justify-between mb-1">
+                <h4 class="font-semibold text-foreground m-0">AI 总结</h4>
+                <a href="/repo/<%= item.repo %>.html" class="text-xs text-primary hover:underline font-medium">阅读全文 &rarr;</a>
+            </div>
             <p class="text-muted-foreground line-clamp-3"><%= item.summaryData.summary %></p>
             
             <% if (item.summaryData.category && item.summaryData.category.length > 0) { %>
-                <div class="flex flex-wrap items-center justify-between gap-1 mt-3">
-                    <div class="flex flex-wrap items-center gap-1">
-                        <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
-                        <% item.summaryData.category.forEach(cat => { %>
-                            <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
-                            <a href="/category/<%= encodeURIComponent(cat) %>.html" class="px-2 py-0.5 rounded text-[10px] font-medium transition-colors <%= isCatActive ? 'bg-primary text-primary-foreground' : 'bg-background border border-border text-muted-foreground hover:border-primary hover:text-foreground' %>"><%= cat %></a>
-                        <% }) %>
-                    </div>
-                    <a href="/repo/<%= item.repo %>.html" class="text-xs text-primary hover:underline font-medium shrink-0">阅读全文 &rarr;</a>
-                </div>
-            <% } else { %>
-                <div class="flex justify-end mt-3">
-                    <a href="/repo/<%= item.repo %>.html" class="text-xs text-primary hover:underline font-medium">阅读全文 &rarr;</a>
+                <div class="flex flex-wrap items-center gap-1 mt-3">
+                    <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
+                    <% item.summaryData.category.forEach(cat => { %>
+                        <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
+                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="px-2 py-0.5 rounded text-[10px] font-medium transition-colors <%= isCatActive ? 'bg-primary text-primary-foreground' : 'bg-background border border-border text-muted-foreground hover:border-primary hover:text-foreground' %>"><%= cat %></a>
+                    <% }) %>
                 </div>
             <% } %>
             

@@ -51,7 +51,7 @@ app.get('/privacy', (req, res) => {
     });
 });
 
-['tag', 'category', 'suitable', 'topic', 'language'].forEach(filterType => {
+['tag', 'category', 'suitable', 'topic', 'language', 'keyword'].forEach(filterType => {
     app.get(`/${filterType}/:value.html`, (req, res) => {
         renderFilterPage(req, res, filterType, req.params.value);
     });
@@ -196,26 +196,30 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
     const propName = filterType === 'tag' ? 'tags' : filterType;
     const lowerValue = decodedValue.toLowerCase();
     
-    let filteredList = list.filter((item: any) => {
-        if (filterType === 'topic') {
-            return item.githubData && item.githubData.topics && 
-                   item.githubData.topics.some((t: string) => t.toLowerCase() === lowerValue);
-        }
-        if (filterType === 'language') {
-            return item.language && item.language.toLowerCase() === lowerValue;
-        }
-        
-        if (!item.summaryData || !item.summaryData[propName]) return false;
-        
-        if (Array.isArray(item.summaryData[propName])) {
-            return item.summaryData[propName].some((t: string) => t.toLowerCase() === lowerValue);
-        }
-        
-        return typeof item.summaryData[propName] === 'string' && 
-               item.summaryData[propName].toLowerCase() === lowerValue;
-    });
+    let filteredList = list;
+    
+    if (filterType !== 'keyword') {
+        filteredList = list.filter((item: any) => {
+            if (filterType === 'topic') {
+                return item.githubData && item.githubData.topics && 
+                       item.githubData.topics.some((t: string) => t.toLowerCase() === lowerValue);
+            }
+            if (filterType === 'language') {
+                return item.language && item.language.toLowerCase() === lowerValue;
+            }
+            
+            if (!item.summaryData || !item.summaryData[propName]) return false;
+            
+            if (Array.isArray(item.summaryData[propName])) {
+                return item.summaryData[propName].some((t: string) => t.toLowerCase() === lowerValue);
+            }
+            
+            return typeof item.summaryData[propName] === 'string' && 
+                   item.summaryData[propName].toLowerCase() === lowerValue;
+        });
+    }
 
-    const searchQuery = req.query.q as string | undefined;
+    const searchQuery = filterType === 'keyword' ? decodedValue : (req.query.q as string | undefined);
     if (searchQuery) {
         const q = searchQuery.toLowerCase();
         filteredList = filteredList.filter((item: any) => 

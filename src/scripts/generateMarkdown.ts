@@ -84,18 +84,18 @@ export const generateMarkdown = (allArray: any[], dailyGrouped: any, weeklyGroup
     const monthlyDates = generateIndex('monthly', monthlyGrouped);
 
     // 3. Generate README
-    let readmeMd = `# GitHub Trending\n\nThis repository tracks trending GitHub projects and provides AI-generated summaries.\n\n`;
+    let readmeMd = `# GitHub 热门项目追踪 (Trending)\n\n本项目持续追踪 GitHub 上的热门开源项目，并提供由 AI 生成的深度总结与技术分析。\n\n`;
     
-    readmeMd += `## Latest Rankings\n\n`;
+    readmeMd += `## 最新榜单\n\n`;
     
-    if (dailyDates.length > 0) readmeMd += `- [Daily Trending (${dailyDates[0]})](markdown/daily/${dailyDates[0]}.md)\n`;
-    if (weeklyDates.length > 0) readmeMd += `- [Weekly Trending (${weeklyDates[0]})](markdown/weekly/${weeklyDates[0]}.md)\n`;
-    if (monthlyDates.length > 0) readmeMd += `- [Monthly Trending (${monthlyDates[0]})](markdown/monthly/${monthlyDates[0]}.md)\n`;
+    if (dailyDates.length > 0) readmeMd += `- [今日热门 (${dailyDates[0]})](markdown/daily/${dailyDates[0]}.md)\n`;
+    if (weeklyDates.length > 0) readmeMd += `- [本周热门 (${weeklyDates[0]})](markdown/weekly/${weeklyDates[0]}.md)\n`;
+    if (monthlyDates.length > 0) readmeMd += `- [本月热门 (${monthlyDates[0]})](markdown/monthly/${monthlyDates[0]}.md)\n`;
     
-    readmeMd += `\n## All Historical Rankings\n\n`;
-    readmeMd += `- [All Daily Rankings](markdown/daily/${dailyDates[0] || ''}.md)\n`;
-    readmeMd += `- [All Weekly Rankings](markdown/weekly/${weeklyDates[0] || ''}.md)\n`;
-    readmeMd += `- [All Monthly Rankings](markdown/monthly/${monthlyDates[0] || ''}.md)\n`;
+    readmeMd += `\n## 历史榜单\n\n`;
+    readmeMd += `- [全部日榜索引](markdown/daily/${dailyDates[0] || ''}.md)\n`;
+    readmeMd += `- [全部周榜索引](markdown/weekly/${weeklyDates[0] || ''}.md)\n`;
+    readmeMd += `- [全部月榜索引](markdown/monthly/${monthlyDates[0] || ''}.md)\n`;
 
     fs.writeFileSync(path.join(rootDir, 'README.md'), readmeMd);
 };

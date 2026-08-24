@@ -870,6 +870,10 @@ video {
   width: 91.666667%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -966,10 +970,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1552,8 +1552,16 @@ body {
   background-color: var(--muted);
 }
 
+.hover\:bg-muted-foreground:hover {
+  background-color: var(--muted-foreground);
+}
+
 .hover\:bg-primary:hover {
   background-color: var(--primary);
+}
+
+.hover\:text-background:hover {
+  color: var(--background);
 }
 
 .hover\:text-blue-500:hover {
@@ -1682,6 +1690,10 @@ body {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:gap-3 {

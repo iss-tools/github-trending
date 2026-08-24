@@ -1,15 +1,15 @@
-# GitHub Trending
+# GitHub 热门项目追踪 (Trending)
 
-This repository tracks trending GitHub projects and provides AI-generated summaries.
+本项目持续追踪 GitHub 上的热门开源项目，并提供由 AI 生成的深度总结与技术分析。
 
-## Latest Rankings
+## 最新榜单
 
-- [Daily Trending (20260824)](markdown/daily/20260824.md)
-- [Weekly Trending (202635)](markdown/weekly/202635.md)
-- [Monthly Trending (202608)](markdown/monthly/202608.md)
+- [今日热门 (20260824)](markdown/daily/20260824.md)
+- [本周热门 (202635)](markdown/weekly/202635.md)
+- [本月热门 (202608)](markdown/monthly/202608.md)
 
-## All Historical Rankings
+## 历史榜单
 
-- [All Daily Rankings](markdown/daily/20260824.md)
-- [All Weekly Rankings](markdown/weekly/202635.md)
-- [All Monthly Rankings](markdown/monthly/202608.md)
+- [全部日榜索引](markdown/daily/20260824.md)
+- [全部周榜索引](markdown/weekly/202635.md)
+- [全部月榜索引](markdown/monthly/202608.md)
