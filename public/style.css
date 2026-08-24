@@ -1622,6 +1622,14 @@ body {
     flex-direction: row;
   }
 
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
   .sm\:gap-3 {
     gap: 0.75rem;
   }
@@ -1664,6 +1672,10 @@ body {
   .sm\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .sm\:pl-9 {

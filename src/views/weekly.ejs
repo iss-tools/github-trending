@@ -79,13 +79,12 @@
             });
         %>
         <% if (sortedLangs.length > 0) { %>
-        <div class="flex items-center gap-4 border-t border-border pt-4">
-            <span class="text-sm font-semibold text-foreground whitespace-nowrap">按语言快速导航:</span>
-            <div class="flex gap-2 flex-wrap">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 bg-muted/30 p-3 rounded-lg border border-border mt-6">
+            <span class="text-sm font-semibold text-foreground whitespace-nowrap shrink-0">按语言快速导航:</span>
+            <div class="flex gap-2 overflow-x-auto pb-2 sm:pb-0 sm:flex-wrap w-full" style="scrollbar-width: none;">
                 <% sortedLangs.forEach(lang => { %>
-                    <a href="#lang-<%= encodeURIComponent(lang) %>" 
-                       class="px-3 py-1 rounded-full text-xs border bg-background border-border text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors flex items-center gap-1">
-                        <%= lang %> <span class="opacity-50 text-[10px]"><%= groupedList[lang].length %></span>
+                    <a href="#lang-<%= encodeURIComponent(lang) %>" class="px-2.5 py-1 text-xs rounded border border-border bg-background hover:bg-muted text-muted-foreground hover:text-foreground transition-colors shrink-0">
+                        <%= lang %>
                     </a>
                 <% }) %>
             </div>
