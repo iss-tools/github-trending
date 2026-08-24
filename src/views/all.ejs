@@ -1,20 +1,20 @@
 <div class="space-y-6">
     <!-- Filters Area -->
-    <div class="bg-card rounded-lg border border-border p-4 flex flex-col gap-4 shadow-sm">
-        
+    <div class="bg-card rounded-lg border border-border p-4 flex flex-col gap-4 shadow-sm sticky top-16">
+
         <div class="sticky top-16 z-20 bg-background pt-2 pb-2 sm:static sm:pt-0 sm:pb-0">
             <div class="flex items-center">
                 <div class="flex overflow-x-auto border-b border-border w-full" style="scrollbar-width: none;">
-                    <a href="?lang=" 
-                       class="px-4 py-2 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors shrink-0 <%= !selectedLang ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border' %>">
+                    <a href="?lang="
+                        class="px-4 py-2 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors shrink-0 <%= !selectedLang ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border' %>">
                         全部
                     </a>
-                    <% languages.forEach(lang => { %>
-                        <a href="?lang=<%= encodeURIComponent(lang) %>" 
-                           class="px-4 py-2 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors shrink-0 <%= selectedLang === lang ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border' %>">
+                    <% languages.forEach(lang=> { %>
+                        <a href="?lang=<%= encodeURIComponent(lang) %>"
+                            class="px-4 py-2 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors shrink-0 <%= selectedLang === lang ? 'border-primary text-foreground' : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border' %>">
                             <%= lang %>
                         </a>
-                    <% }) %>
+                        <% }) %>
                 </div>
             </div>
         </div>
@@ -27,19 +27,20 @@
             全部
             <span class="text-muted-foreground text-base font-normal">项目 (<%= list.length %>)</span>
         </h2>
-        
+
         <div class="space-y-4">
-            <% list.forEach(item => { %>
+            <% list.forEach(item=> { %>
                 <%- include('partials/project-card', { item }) %>
-            <% }) %>
-            
-            <% if (list.length === 0) { %>
-                <div class="py-12 text-center text-muted-foreground bg-card rounded-lg border border-border border-dashed">
-                    没有找到相关项目
-                </div>
-            <% } %>
-            
-            <%- include('partials/pagination') %>
+                    <% }) %>
+
+                        <% if (list.length===0) { %>
+                            <div
+                                class="py-12 text-center text-muted-foreground bg-card rounded-lg border border-border border-dashed">
+                                没有找到相关项目
+                            </div>
+                            <% } %>
+
+                                <%- include('partials/pagination') %>
         </div>
     </div>
 </div>

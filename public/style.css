@@ -673,12 +673,16 @@ video {
   z-index: 20;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[60\] {
+  z-index: 60;
+}
+
+.z-\[70\] {
+  z-index: 70;
 }
 
 .col-span-full {
@@ -845,6 +849,10 @@ video {
   min-height: 100vh;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -863,10 +871,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .w-fit {
@@ -1627,6 +1631,10 @@ body {
 
   .sm\:w-48 {
     width: 12rem;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
   }
 
   .sm\:flex-row {
