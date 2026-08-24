@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
         } else {
             document.documentElement.classList.remove('dark');
         }
-        
+
         function toggleTheme() {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
@@ -24,55 +25,64 @@
         }
     </script>
 </head>
+
 <body class="min-h-screen flex flex-col bg-background text-foreground font-sans antialiased">
-    
+
     <%- include('../partials/header') %>
 
-    <main class="flex-grow container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8 relative">
-        <!-- Main Content Area -->
-        <div class="flex-grow w-full lg:w-3/4">
-            <%- include(body) %>
-        </div>
-
-        <!-- Mobile Sidebar Overlay -->
-        <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-[60] hidden lg:hidden opacity-0 transition-opacity duration-300" onclick="toggleMobileMenu()"></div>
-
-        <!-- Sidebar -->
-        <div id="sidebar-container" class="fixed inset-y-0 right-0 z-[70] w-11/12 sm:w-96 bg-background shadow-2xl transform translate-x-full transition-transform duration-300 lg:static lg:translate-x-0 lg:w-1/4 lg:shadow-none lg:bg-transparent overflow-y-auto lg:overflow-visible p-5 lg:p-0 flex-shrink-0">
-            <!-- Mobile Close Button -->
-            <div class="flex justify-between items-center mb-6 lg:hidden">
-                <h2 class="font-bold text-lg text-primary">菜单</h2>
-                <button onclick="toggleMobileMenu()" class="p-2 bg-muted rounded-full hover:bg-muted/80 text-muted-foreground focus:outline-none">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
+        <main class="flex-grow container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8 relative">
+            <!-- Main Content Area -->
+            <div class="flex-grow w-full lg:w-3/4">
+                <%- include(body) %>
             </div>
-            
-            <%- include('../partials/sidebar') %>
-        </div>
-    </main>
 
-    <%- include('../partials/footer') %>
+            <!-- Mobile Sidebar Overlay -->
+            <div id="mobile-menu-overlay"
+                class="fixed inset-0 bg-black/50 z-[60] hidden lg:hidden opacity-0 transition-opacity duration-300"
+                onclick="toggleMobileMenu()"></div>
 
-    <script>
-        function toggleMobileMenu() {
-            const sidebar = document.getElementById('sidebar-container');
-            const overlay = document.getElementById('mobile-menu-overlay');
-            
-            if (sidebar.classList.contains('translate-x-full')) {
-                // Open menu
-                sidebar.classList.remove('translate-x-full');
-                overlay.classList.remove('hidden');
-                // slight delay for opacity transition
-                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            } else {
-                // Close menu
-                sidebar.classList.add('translate-x-full');
-                overlay.classList.add('opacity-0');
-                setTimeout(() => overlay.classList.add('hidden'), 300);
-                document.body.style.overflow = '';
-            }
-        }
-    </script>
+            <!-- Sidebar -->
+            <div id="sidebar-container"
+                class="fixed inset-y-0 right-0 z-[70] w-11/12 sm:w-96 bg-background shadow-2xl transform translate-x-full transition-transform duration-300 lg:static lg:translate-x-0 lg:w-1/4 lg:shadow-none lg:bg-transparent overflow-y-auto lg:overflow-visible p-5 lg:p-0 flex-shrink-0">
+                <!-- Mobile Close Button -->
+                <div class="flex justify-between items-center mb-6 lg:hidden">
+                    <h2 class="font-bold text-lg text-primary">菜单</h2>
+                    <button onclick="toggleMobileMenu()"
+                        class="p-2 bg-muted rounded-full hover:bg-muted/80 text-muted-foreground focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <%- include('../partials/sidebar') %>
+            </div>
+        </main>
+
+        <%- include('../partials/footer') %>
+
+            <script>
+                function toggleMobileMenu() {
+                    const sidebar = document.getElementById('sidebar-container');
+                    const overlay = document.getElementById('mobile-menu-overlay');
+
+                    if (sidebar.classList.contains('translate-x-full')) {
+                        // Open menu
+                        sidebar.classList.remove('translate-x-full');
+                        overlay.classList.remove('hidden');
+                        // slight delay for opacity transition
+                        setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+                        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                    } else {
+                        // Close menu
+                        sidebar.classList.add('translate-x-full');
+                        overlay.classList.add('opacity-0');
+                        setTimeout(() => overlay.classList.add('hidden'), 300);
+                        document.body.style.overflow = '';
+                    }
+                }
+            </script>
 </body>
+
 </html>

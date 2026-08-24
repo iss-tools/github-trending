@@ -673,16 +673,16 @@ video {
   z-index: 20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-\[60\] {
   z-index: 60;
 }
 
 .z-\[70\] {
   z-index: 70;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .col-span-full {
