@@ -32,6 +32,15 @@ const loadData = (filename: string) => {
 // Routes
 app.get('/', (req, res) => renderPage(req, res, 'all'));
 
+app.get('/privacy', (req, res) => {
+    const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
+    res.render('layouts/main', {
+        body: '../privacy',
+        type: 'privacy',
+        meta
+    });
+});
+
 ['daily', 'weekly', 'monthly'].forEach(type => {
     app.get(`/${type}`, (req, res) => {
         renderPage(req, res, type);
