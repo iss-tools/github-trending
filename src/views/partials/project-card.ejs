@@ -1,9 +1,9 @@
 <div class="bg-card border border-border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow mb-4 flex flex-col gap-3">
     <div class="flex flex-col sm:flex-row justify-between items-start gap-3">
-        <a href="<%= item.url %>" target="_blank" class="text-lg font-bold text-blue-600 dark:text-blue-400 hover:underline break-all sm:break-normal">
+        <a href="<%= item.url %>" target="_blank" class="text-base sm:text-lg font-bold text-blue-600 dark:text-blue-400 hover:underline break-all sm:break-normal">
             <%= item.repo %>
         </a>
-        <div class="flex items-center flex-wrap gap-2 text-xs text-muted-foreground bg-muted px-2 py-1 rounded w-fit shrink-0">
+        <div class="flex items-center flex-wrap gap-2 text-[11px] sm:text-xs text-muted-foreground bg-muted px-2 py-1 rounded w-fit shrink-0">
             <% if (item.language) { %>
                 <% const isLangActive = typeof type !== 'undefined' && type === 'language' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === item.language.toLowerCase(); %>
                 <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="font-medium <%= isLangActive ? 'bg-primary text-primary-foreground px-1.5 rounded' : 'text-foreground hover:text-primary hover:underline' %> transition-colors"><%= item.language %></a>
@@ -15,11 +15,11 @@
     </div>
     
     <% if (item.description) { %>
-        <p class="text-sm text-muted-foreground line-clamp-2"><%= item.description %></p>
+        <p class="text-[13px] sm:text-sm text-muted-foreground line-clamp-2"><%= item.description %></p>
     <% } %>
 
     <% if (item.summaryData) { %>
-        <div class="mt-2 text-sm bg-muted/50 p-3 rounded-md border border-border/50">
+        <div class="mt-2 text-[13px] sm:text-sm bg-muted/50 p-3 rounded-md border border-border/50">
             <h4 class="font-semibold text-foreground mb-1">AI 总结</h4>
             <p class="text-muted-foreground line-clamp-3"><%= item.summaryData.summary %></p>
             
