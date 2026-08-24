@@ -6,7 +6,6 @@
         <div class="flex border-b border-border text-sm font-medium px-2 pt-2 gap-1 overflow-x-auto custom-scrollbar">
             <button onclick="switchMetaTab('tags')" id="tab-tags" class="meta-tab px-4 py-2 border-b-2 border-primary text-foreground transition-colors whitespace-nowrap">标签</button>
             <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">分类</button>
-            <button onclick="switchMetaTab('suitable')" id="tab-suitable" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">适用人群</button>
             <button onclick="switchMetaTab('topics')" id="tab-topics" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">Topics</button>
             <button onclick="switchMetaTab('languages')" id="tab-languages" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">开发语言</button>
         </div>
@@ -34,18 +33,6 @@
                 <% })} %>
                 <% if (!meta.topCategories || meta.topCategories.length === 0) { %>
                     <span class="text-sm text-muted-foreground">暂无分类数据</span>
-                <% } %>
-            </div>
-            
-            <!-- Suitable -->
-            <div id="content-suitable" class="meta-content hidden flex-wrap gap-2">
-                <% if (meta.topSuitable) { meta.topSuitable.forEach(suitObj => { %>
-                    <a href="/suitable/<%= encodeURIComponent(suitObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
-                        <%= suitObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= suitObj.count %></span>
-                    </a>
-                <% })} %>
-                <% if (!meta.topSuitable || meta.topSuitable.length === 0) { %>
-                    <span class="text-sm text-muted-foreground">暂无适用人群数据</span>
                 <% } %>
             </div>
             

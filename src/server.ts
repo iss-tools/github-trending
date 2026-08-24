@@ -153,18 +153,25 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
     const list = data['all'] || [];
     
     const propName = filterType === 'tag' ? 'tags' : filterType;
+    const lowerValue = decodedValue.toLowerCase();
+    
     let filteredList = list.filter((item: any) => {
         if (filterType === 'topic') {
-            return item.githubData && item.githubData.topics && item.githubData.topics.includes(decodedValue);
+            return item.githubData && item.githubData.topics && 
+                   item.githubData.topics.some((t: string) => t.toLowerCase() === lowerValue);
         }
         if (filterType === 'language') {
-            return item.language === decodedValue;
+            return item.language && item.language.toLowerCase() === lowerValue;
         }
+        
         if (!item.summaryData || !item.summaryData[propName]) return false;
+        
         if (Array.isArray(item.summaryData[propName])) {
-            return item.summaryData[propName].includes(decodedValue);
+            return item.summaryData[propName].some((t: string) => t.toLowerCase() === lowerValue);
         }
-        return item.summaryData[propName] === decodedValue;
+        
+        return typeof item.summaryData[propName] === 'string' && 
+               item.summaryData[propName].toLowerCase() === lowerValue;
     });
 
     const searchQuery = req.query.q as string | undefined;
