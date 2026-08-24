@@ -49,7 +49,29 @@ const renderPage = (req: express.Request, res: express.Response, type: string) =
     const languages = Array.from(langs);
     
     const selectedLang = req.query.lang as string;
-    const filteredList = selectedLang ? list.filter((i: any) => i.language === selectedLang) : list;
+    const searchQuery = (req.query.q as string || '').toLowerCase().trim();
+    
+    let filteredList = list;
+    
+    if (selectedLang) {
+        filteredList = filteredList.filter((i: any) => i.language === selectedLang);
+    }
+    
+    if (searchQuery) {
+        filteredList = filteredList.filter((i: any) => 
+            i.repo.toLowerCase().includes(searchQuery) || 
+            (i.description && i.description.toLowerCase().includes(searchQuery))
+        );
+    }
+    
+    // pagination
+    const page = parseInt(req.query.page as string, 10) || 1;
+    const itemsPerPage = 10;
+    const totalItems = filteredList.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+    const currentPage = Math.max(1, Math.min(page, totalPages));
+    
+    const paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
     
     res.render('layouts/main', {
         body: `../${type}`, // will include views/${type}.ejs inside main
@@ -58,7 +80,11 @@ const renderPage = (req: express.Request, res: express.Response, type: string) =
         selectedDate,
         languages,
         selectedLang,
-        list: filteredList,
+        list: paginatedList,
+        totalItems,
+        currentPage,
+        totalPages,
+        searchQuery,
         meta,
         isListView,
     });

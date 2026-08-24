@@ -1,0 +1,44 @@
+<% if (totalPages > 1) { %>
+    <div class="mt-8 flex items-center justify-between border-t border-border pt-6">
+        <div class="text-sm text-muted-foreground">
+            显示第 <%= (currentPage - 1) * 10 + 1 %> 到 <%= Math.min(currentPage * 10, totalItems) %> 条，共 <%= totalItems %> 条
+        </div>
+        
+        <div class="flex items-center gap-2">
+            <% 
+            const getPageUrl = (p) => {
+                const params = new URLSearchParams();
+                if (typeof selectedDate !== 'undefined' && selectedDate) params.set('date', selectedDate);
+                if (typeof selectedLang !== 'undefined' && selectedLang) params.set('lang', selectedLang);
+                if (typeof searchQuery !== 'undefined' && searchQuery) params.set('q', searchQuery);
+                params.set('page', p);
+                return '?' + params.toString();
+            };
+            %>
+            
+            <% if (currentPage > 1) { %>
+                <a href="<%= getPageUrl(currentPage - 1) %>" class="px-3 py-1.5 rounded-md border border-border text-sm hover:bg-muted transition-colors">
+                    上一页
+                </a>
+            <% } else { %>
+                <button disabled class="px-3 py-1.5 rounded-md border border-border text-sm opacity-50 cursor-not-allowed">
+                    上一页
+                </button>
+            <% } %>
+
+            <span class="text-sm font-medium px-2">
+                <%= currentPage %> / <%= totalPages %>
+            </span>
+
+            <% if (currentPage < totalPages) { %>
+                <a href="<%= getPageUrl(currentPage + 1) %>" class="px-3 py-1.5 rounded-md border border-border text-sm hover:bg-muted transition-colors">
+                    下一页
+                </a>
+            <% } else { %>
+                <button disabled class="px-3 py-1.5 rounded-md border border-border text-sm opacity-50 cursor-not-allowed">
+                    下一页
+                </button>
+            <% } %>
+        </div>
+    </div>
+<% } %>
