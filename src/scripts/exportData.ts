@@ -1,6 +1,7 @@
 import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
+import { generateMarkdown } from './generateMarkdown';
 
 const dbPath = path.resolve(__dirname, '../../../api/data/analysis.db');
 const db = new Database(dbPath, { readonly: true });
@@ -130,5 +131,8 @@ fs.writeFileSync(path.join(dataDir, 'daily.json'), JSON.stringify(groupByDate(da
 fs.writeFileSync(path.join(dataDir, 'weekly.json'), JSON.stringify(groupByDate(weekly), null, 2));
 fs.writeFileSync(path.join(dataDir, 'monthly.json'), JSON.stringify(groupByDate(monthly), null, 2));
 fs.writeFileSync(path.join(dataDir, 'meta.json'), JSON.stringify({ topTags, topCategories, topSuitable, topTopics, topLanguages, topStars, topAppearances }, null, 2));
+
+// Generate Markdown docs
+generateMarkdown(allArray, groupByDate(daily), groupByDate(weekly), groupByDate(monthly));
 
 console.log('Export complete!');

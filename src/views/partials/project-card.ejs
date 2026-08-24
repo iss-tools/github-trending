@@ -24,12 +24,19 @@
             <p class="text-muted-foreground line-clamp-3"><%= item.summaryData.summary %></p>
             
             <% if (item.summaryData.category && item.summaryData.category.length > 0) { %>
-                <div class="flex flex-wrap items-center gap-1 mt-3">
-                    <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
-                    <% item.summaryData.category.forEach(cat => { %>
-                        <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
-                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="text-[10px] <%= isCatActive ? 'bg-primary text-primary-foreground font-bold shadow-sm border-primary' : 'bg-background text-muted-foreground border-border hover:bg-primary/10 hover:text-primary hover:border-primary' %> border px-2 py-0.5 rounded-full transition-colors"><%= cat %></a>
-                    <% }) %>
+                <div class="flex flex-wrap items-center justify-between gap-1 mt-3">
+                    <div class="flex flex-wrap items-center gap-1">
+                        <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
+                        <% item.summaryData.category.forEach(cat => { %>
+                            <% const isCatActive = typeof type !== 'undefined' && type === 'category' && typeof filterValue !== 'undefined' && filterValue.toLowerCase() === cat.toLowerCase(); %>
+                            <a href="/category/<%= encodeURIComponent(cat) %>.html" class="px-2 py-0.5 rounded text-[10px] font-medium transition-colors <%= isCatActive ? 'bg-primary text-primary-foreground' : 'bg-background border border-border text-muted-foreground hover:border-primary hover:text-foreground' %>"><%= cat %></a>
+                        <% }) %>
+                    </div>
+                    <a href="/repo/<%= item.repo %>.html" class="text-xs text-primary hover:underline font-medium shrink-0">阅读全文 &rarr;</a>
+                </div>
+            <% } else { %>
+                <div class="flex justify-end mt-3">
+                    <a href="/repo/<%= item.repo %>.html" class="text-xs text-primary hover:underline font-medium">阅读全文 &rarr;</a>
                 </div>
             <% } %>
             

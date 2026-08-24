@@ -57,6 +57,28 @@ app.get('/privacy', (req, res) => {
     });
 });
 
+app.get('/repo/:owner/:name.html', (req, res) => {
+    const { owner, name } = req.params;
+    const repoName = `${owner}/${name}`;
+    
+    const data = loadData('all.json') || {};
+    const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
+    
+    const list = data['all'] || [];
+    const item = list.find((i: any) => i.repo === repoName);
+    
+    if (!item) {
+        return res.status(404).send('Repository not found');
+    }
+    
+    res.render('layouts/main', {
+        body: '../repo',
+        type: 'repo',
+        item,
+        meta,
+    });
+});
+
 const renderPage = (req: express.Request, res: express.Response, type: string, pathDate?: string) => {
     const data = loadData(`${type}.json`) || {};
     const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
