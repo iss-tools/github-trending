@@ -7,6 +7,7 @@
             <button onclick="switchMetaTab('tags')" id="tab-tags" class="meta-tab px-4 py-2 border-b-2 border-primary text-foreground transition-colors whitespace-nowrap">标签</button>
             <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">分类</button>
             <button onclick="switchMetaTab('suitable')" id="tab-suitable" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">适用人群</button>
+            <button onclick="switchMetaTab('topics')" id="tab-topics" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">Topics</button>
         </div>
         
         <!-- Tab Contents -->
@@ -44,6 +45,18 @@
                 <% })} %>
                 <% if (!meta.topSuitable || meta.topSuitable.length === 0) { %>
                     <span class="text-sm text-muted-foreground">暂无适用人群数据</span>
+                <% } %>
+            </div>
+            
+            <!-- Topics -->
+            <div id="content-topics" class="meta-content hidden flex-wrap gap-2">
+                <% if (meta.topTopics) { meta.topTopics.forEach(topicObj => { %>
+                    <a href="/topic/<%= encodeURIComponent(topicObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                        <%= topicObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= topicObj.count %></span>
+                    </a>
+                <% })} %>
+                <% if (!meta.topTopics || meta.topTopics.length === 0) { %>
+                    <span class="text-sm text-muted-foreground">暂无Topic数据</span>
                 <% } %>
             </div>
         </div>

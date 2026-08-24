@@ -42,7 +42,7 @@ app.get('/', (req, res) => renderPage(req, res, 'all'));
     });
 });
 
-['tag', 'category', 'suitable'].forEach(filterType => {
+['tag', 'category', 'suitable', 'topic'].forEach(filterType => {
     app.get(`/${filterType}/:value.html`, (req, res) => {
         renderFilterPage(req, res, filterType, req.params.value);
     });
@@ -148,12 +148,15 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
 const renderFilterPage = (req: express.Request, res: express.Response, filterType: string, value: string) => {
     const decodedValue = decodeURIComponent(value);
     const data = loadData('all.json') || {};
-    const meta = loadData('meta.json') || { topTags: [], topCategories: [], topSuitable: [], topStars: [], topAppearances: [] };
+    const meta = loadData('meta.json') || { topTags: [], topCategories: [], topSuitable: [], topTopics: [], topStars: [], topAppearances: [] };
     
     const list = data['all'] || [];
     
     const propName = filterType === 'tag' ? 'tags' : filterType;
     let filteredList = list.filter((item: any) => {
+        if (filterType === 'topic') {
+            return item.githubData && item.githubData.topics && item.githubData.topics.includes(decodedValue);
+        }
         if (!item.summaryData || !item.summaryData[propName]) return false;
         if (Array.isArray(item.summaryData[propName])) {
             return item.summaryData[propName].includes(decodedValue);

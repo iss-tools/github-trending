@@ -22,13 +22,41 @@
             <h4 class="font-semibold text-foreground mb-1">AI 总结</h4>
             <p class="text-muted-foreground line-clamp-3"><%= item.summaryData.summary %></p>
             
+            <% if (item.summaryData.category && item.summaryData.category.length > 0) { %>
+                <div class="flex flex-wrap items-center gap-1 mt-3">
+                    <span class="text-[10px] font-semibold text-muted-foreground mr-1">分类:</span>
+                    <% item.summaryData.category.forEach(cat => { %>
+                        <a href="/category/<%= encodeURIComponent(cat) %>.html" class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"><%= cat %></a>
+                    <% }) %>
+                </div>
+            <% } %>
+            
             <% if (item.summaryData.tags && item.summaryData.tags.length > 0) { %>
-                <div class="flex flex-wrap gap-1 mt-3">
+                <div class="flex flex-wrap items-center gap-1 mt-2">
+                    <span class="text-[10px] font-semibold text-muted-foreground mr-1">标签:</span>
                     <% item.summaryData.tags.forEach(tag => { %>
                         <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"><%= tag %></a>
                     <% }) %>
                 </div>
             <% } %>
+
+            <% if (item.summaryData.suitable && item.summaryData.suitable.length > 0) { %>
+                <div class="flex flex-wrap items-center gap-1 mt-2">
+                    <span class="text-[10px] font-semibold text-muted-foreground mr-1">适合:</span>
+                    <% item.summaryData.suitable.forEach(person => { %>
+                        <a href="/suitable/<%= encodeURIComponent(person) %>.html" class="text-[10px] bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-2 py-0.5 rounded-full hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"><%= person %></a>
+                    <% }) %>
+                </div>
+            <% } %>
+        </div>
+    <% } %>
+
+    <% if (item.githubData && item.githubData.topics && item.githubData.topics.length > 0) { %>
+        <div class="flex flex-wrap items-center gap-1 mt-1">
+            <span class="text-[10px] font-semibold text-muted-foreground mr-1">Topics:</span>
+            <% item.githubData.topics.forEach(topic => { %>
+                <a href="/topic/<%= encodeURIComponent(topic) %>.html" class="text-[10px] bg-muted/50 text-muted-foreground px-2 py-0.5 rounded hover:bg-primary hover:text-primary-foreground transition-colors"><%= topic %></a>
+            <% }) %>
         </div>
     <% } %>
 </div>

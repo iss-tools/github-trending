@@ -7,6 +7,8 @@
                 分类 "<span class="text-primary"><%= filterValue %></span>" 的项目
             <% } else if (type === 'suitable') { %>
                 适合 "<span class="text-primary"><%= filterValue %></span>" 的项目
+            <% } else if (type === 'topic') { %>
+                包含 Topic "<span class="text-primary"><%= filterValue %></span>" 的项目
             <% } %>
         </h2>
         <p class="text-center text-muted-foreground mt-2">
