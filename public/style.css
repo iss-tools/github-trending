@@ -776,6 +776,10 @@ video {
   height: 100%;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -927,6 +931,10 @@ video {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .truncate {

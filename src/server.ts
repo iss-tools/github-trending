@@ -152,12 +152,13 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
     
     const list = data['all'] || [];
     
+    const propName = filterType === 'tag' ? 'tags' : filterType;
     let filteredList = list.filter((item: any) => {
-        if (!item.summaryData || !item.summaryData[filterType]) return false;
-        if (Array.isArray(item.summaryData[filterType])) {
-            return item.summaryData[filterType].includes(decodedValue);
+        if (!item.summaryData || !item.summaryData[propName]) return false;
+        if (Array.isArray(item.summaryData[propName])) {
+            return item.summaryData[propName].includes(decodedValue);
         }
-        return item.summaryData[filterType] === decodedValue;
+        return item.summaryData[propName] === decodedValue;
     });
 
     const searchQuery = req.query.q as string | undefined;

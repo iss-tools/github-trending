@@ -78,7 +78,10 @@ rows.forEach(row => {
   }
   // take max stars
   repoMap[row.repo].stars = Math.max(repoMap[row.repo].stars, row.stars);
-  repoMap[row.repo].appearances += 1;
+  
+  if (row.type.includes('daily')) {
+      repoMap[row.repo].appearances += 1;
+  }
 });
 
 const topTags = Object.entries(tagsMap).sort((a, b) => b[1] - a[1]).slice(0, 20).map(i => ({ tag: i[0], count: i[1] }));

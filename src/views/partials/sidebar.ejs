@@ -10,7 +10,7 @@
         </div>
         
         <!-- Tab Contents -->
-        <div class="p-4">
+        <div class="p-4 max-h-72 overflow-y-auto custom-scrollbar">
             <!-- Tags -->
             <div id="content-tags" class="meta-content flex flex-wrap gap-2">
                 <% if (meta.topTags) { meta.topTags.forEach(tagObj => { %>
@@ -80,13 +80,13 @@
         <div class="flex items-center justify-between mb-4 border-b border-border pb-2">
             <h3 class="font-bold text-lg text-primary">排行榜</h3>
             <div class="flex text-xs bg-muted rounded-md p-1">
-                <button class="px-2 py-1 rounded-sm bg-background shadow-sm text-foreground">Star 榜</button>
-                <button class="px-2 py-1 rounded-sm text-muted-foreground hover:text-foreground transition-colors">上榜次数</button>
+                <button id="btn-stars" onclick="switchRankingTab('stars')" class="px-2 py-1 rounded-sm bg-background shadow-sm text-foreground">Star 榜</button>
+                <button id="btn-appearances" onclick="switchRankingTab('appearances')" class="px-2 py-1 rounded-sm text-muted-foreground hover:text-foreground transition-colors">上榜次数</button>
             </div>
         </div>
 
         <!-- Star Ranking -->
-        <div class="space-y-3">
+        <div id="ranking-stars" class="space-y-3">
             <% meta.topStars.forEach((repo, index) => { %>
                 <a href="<%= repo.url %>" target="_blank" class="flex items-center justify-between group">
                     <div class="flex items-center gap-3 overflow-hidden">
@@ -103,5 +103,48 @@
             <% } %>
         </div>
 
+        <!-- Appearances Ranking -->
+        <div id="ranking-appearances" class="space-y-3 hidden">
+            <% meta.topAppearances.forEach((repo, index) => { %>
+                <a href="<%= repo.url %>" target="_blank" class="flex items-center justify-between group">
+                    <div class="flex items-center gap-3 overflow-hidden">
+                        <span class="text-sm font-bold <%= index < 3 ? 'text-blue-500' : 'text-muted-foreground' %>"><%= index + 1 %></span>
+                        <span class="text-sm text-foreground truncate group-hover:text-blue-500 transition-colors"><%= repo.repo %></span>
+                    </div>
+                    <span class="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-md flex-shrink-0 flex items-center gap-1">
+                        🔥 <%= repo.appearances %>次
+                    </span>
+                </a>
+            <% }) %>
+            <% if (meta.topAppearances.length === 0) { %>
+                <span class="text-sm text-muted-foreground">暂无榜单数据</span>
+            <% } %>
+        </div>
     </div>
 </div>
+
+<script>
+    function switchRankingTab(tabName) {
+        // Toggle buttons
+        const btnStars = document.getElementById('btn-stars');
+        const btnAppearances = document.getElementById('btn-appearances');
+        
+        if (tabName === 'stars') {
+            btnStars.classList.add('bg-background', 'shadow-sm', 'text-foreground');
+            btnStars.classList.remove('text-muted-foreground', 'hover:text-foreground');
+            btnAppearances.classList.add('text-muted-foreground', 'hover:text-foreground');
+            btnAppearances.classList.remove('bg-background', 'shadow-sm', 'text-foreground');
+            
+            document.getElementById('ranking-stars').classList.remove('hidden');
+            document.getElementById('ranking-appearances').classList.add('hidden');
+        } else {
+            btnAppearances.classList.add('bg-background', 'shadow-sm', 'text-foreground');
+            btnAppearances.classList.remove('text-muted-foreground', 'hover:text-foreground');
+            btnStars.classList.add('text-muted-foreground', 'hover:text-foreground');
+            btnStars.classList.remove('bg-background', 'shadow-sm', 'text-foreground');
+            
+            document.getElementById('ranking-appearances').classList.remove('hidden');
+            document.getElementById('ranking-stars').classList.add('hidden');
+        }
+    }
+</script>
