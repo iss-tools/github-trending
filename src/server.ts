@@ -26,18 +26,22 @@ const loadData = (filename: string) => {
 };
 
 // Routes
-app.get('/', (req, res) => {
-    res.redirect('/daily');
-});
+app.get('/', (req, res) => renderPage(req, res, 'all'));
 
 const renderPage = (req: express.Request, res: express.Response, type: string) => {
     const data = loadData(`${type}.json`) || {};
     const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
     
-    // keys are dates (e.g. 20260101, 202635)
+    // keys are dates (e.g. 20260101, 202635, or 'all')
     const dates = Object.keys(data).sort((a, b) => b.localeCompare(a));
-    const selectedDate = (req.query.date as string) || (dates.length > 0 ? dates[0] : null);
-    const list = selectedDate ? data[selectedDate] : [];
+    
+    let selectedDate = req.query.date as string | undefined;
+    if (type === 'all') {
+        selectedDate = 'all';
+    }
+    
+    const list = selectedDate && data[selectedDate] ? data[selectedDate] : [];
+    const isListView = !selectedDate;
     
     // filter languages
     const langs = new Set<string>();
@@ -56,6 +60,7 @@ const renderPage = (req: express.Request, res: express.Response, type: string) =
         selectedLang,
         list: filteredList,
         meta,
+        isListView,
     });
 };
 

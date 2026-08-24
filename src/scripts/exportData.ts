@@ -21,6 +21,8 @@ const monthly: any[] = [];
 const tagsMap: Record<string, number> = {};
 const repoMap: Record<string, any> = {};
 
+const allMap = new Map();
+
 rows.forEach(row => {
   // Parse JSON
   let summary = null;
@@ -47,6 +49,11 @@ rows.forEach(row => {
   if (row.type.includes('daily')) daily.push(item);
   else if (row.type.includes('weekly')) weekly.push(item);
   else if (row.type.includes('monthly')) monthly.push(item);
+
+  // deduplicate for all.json, keeping max stars
+  if (!allMap.has(item.repo) || allMap.get(item.repo).stars < item.stars) {
+      allMap.set(item.repo, item);
+  }
 
   // For Repo Map (Star ranking & appearance count)
   if (!repoMap[row.repo]) {
@@ -84,7 +91,11 @@ const groupByDate = (arr: any[]) => {
    return grouped;
 };
 
+const allArray = Array.from(allMap.values()).sort((a: any, b: any) => b.stars - a.stars);
+const allGrouped = { "all": allArray };
+
 const dataDir = path.resolve(__dirname, '../../data');
+fs.writeFileSync(path.join(dataDir, 'all.json'), JSON.stringify(allGrouped, null, 2));
 fs.writeFileSync(path.join(dataDir, 'daily.json'), JSON.stringify(groupByDate(daily), null, 2));
 fs.writeFileSync(path.join(dataDir, 'weekly.json'), JSON.stringify(groupByDate(weekly), null, 2));
 fs.writeFileSync(path.join(dataDir, 'monthly.json'), JSON.stringify(groupByDate(monthly), null, 2));

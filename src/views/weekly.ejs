@@ -1,3 +1,23 @@
+<% if (typeof isListView !== 'undefined' && isListView) { %>
+    <div class="space-y-6">
+        <h2 class="text-xl font-bold mb-4 text-foreground">周榜历史</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <% dates.forEach(dateStr => { %>
+                <a href="?date=<%= dateStr %>" class="block p-6 bg-card rounded-lg border border-border hover:border-primary hover:shadow-md transition-all group">
+                    <h3 class="text-lg font-semibold text-foreground group-hover:text-primary mb-2 transition-colors">
+                        <%= dateStr.substring(0, 4) %> 年第 <%= dateStr.substring(4) %> 周
+                    </h3>
+                    <p class="text-sm text-muted-foreground">查看该周热门项目</p>
+                </a>
+            <% }) %>
+            <% if (dates.length === 0) { %>
+                <div class="col-span-full py-12 text-center text-muted-foreground bg-card rounded-lg border border-border border-dashed">
+                    暂无历史数据
+                </div>
+            <% } %>
+        </div>
+    </div>
+<% } else { %>
 <div class="space-y-6">
     <!-- Filters Area -->
     <div class="bg-card rounded-lg border border-border p-4 flex flex-col gap-4 shadow-sm">
@@ -59,3 +79,4 @@
         </div>
     </div>
 </div>
+<% } %>
