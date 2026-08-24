@@ -7,7 +7,7 @@ const __dirname = dirname(__filename);
 
 
 export const generateSitemapRss = (allArray: any[], dailyGrouped: any, weeklyGrouped: any, monthlyGrouped: any, meta: any) => {
-    const DOMAIN = process.env.DOMAIN || 'https://trending.example.com';
+    const DOMAIN = process.env.DOMAIN || 'https://trending.pptboard.com';
     const publicDir = path.resolve(__dirname, '../../public');
     
     if (!fs.existsSync(publicDir)) {
