@@ -1,7 +1,7 @@
 <header class="border-b border-border bg-card shadow-sm sticky top-0 z-[99]">
     <div class="container mx-auto px-4 h-16 flex items-center justify-between">
         <div class="flex items-center gap-2 sm:gap-8">
-            <a href="/" class="text-base sm:text-xl font-bold text-primary tracking-tight shrink-0">Trending CMS</a>
+            <a href="/" class="text-base sm:text-xl font-bold text-primary tracking-tight shrink-0">Trending</a>
 
             <nav class="flex items-center gap-1 sm:gap-4">
                 <a href="/monthly"
@@ -14,7 +14,9 @@
         </div>
 
         <div class="flex items-center gap-2 sm:gap-4">
-            <form onsubmit="event.preventDefault(); if(this.q.value.trim()) window.location.href='/keyword/' + encodeURIComponent(this.q.value.trim()) + '.html';" class="relative">
+            <form
+                onsubmit="event.preventDefault(); if(this.q.value.trim()) window.location.href='/keyword/' + encodeURIComponent(this.q.value.trim()) + '.html';"
+                class="relative">
                 <% if (typeof selectedLang !=='undefined' && selectedLang) { %>
                     <input type="hidden" name="lang" value="<%= selectedLang %>">
                     <% } %>
