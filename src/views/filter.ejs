@@ -1,0 +1,31 @@
+<div class="space-y-6">
+    <div class="bg-card rounded-lg border border-border p-6 shadow-sm mb-6 flex flex-col items-center justify-center">
+        <h2 class="text-2xl font-black mb-2 text-foreground text-center">
+            <% if (type === 'tag') { %>
+                包含标签 "<span class="text-primary"><%= filterValue %></span>" 的项目
+            <% } else if (type === 'category') { %>
+                分类 "<span class="text-primary"><%= filterValue %></span>" 的项目
+            <% } else if (type === 'suitable') { %>
+                适合 "<span class="text-primary"><%= filterValue %></span>" 的项目
+            <% } %>
+        </h2>
+        <p class="text-center text-muted-foreground mt-2">
+            共找到 <%= totalItems %> 个相关项目
+        </p>
+    </div>
+
+    <!-- Project List -->
+    <div class="space-y-4 max-w-4xl mx-auto">
+        <% list.forEach(item => { %>
+            <%- include('partials/project-card', { item }) %>
+        <% }) %>
+        
+        <% if (list.length === 0) { %>
+            <div class="py-12 text-center text-muted-foreground bg-card rounded-lg border border-border border-dashed">
+                未找到相关项目
+            </div>
+        <% } %>
+    </div>
+    
+    <%- include('partials/pagination') %>
+</div>

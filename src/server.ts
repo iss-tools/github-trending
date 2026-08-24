@@ -42,6 +42,12 @@ app.get('/', (req, res) => renderPage(req, res, 'all'));
     });
 });
 
+['tag', 'category', 'suitable'].forEach(filterType => {
+    app.get(`/${filterType}/:value.html`, (req, res) => {
+        renderFilterPage(req, res, filterType, req.params.value);
+    });
+});
+
 const renderPage = (req: express.Request, res: express.Response, type: string, pathDate?: string) => {
     const data = loadData(`${type}.json`) || {};
     const meta = loadData('meta.json') || { topTags: [], topStars: [], topAppearances: [] };
@@ -136,6 +142,53 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
         searchQuery,
         meta,
         isListView,
+    });
+};
+
+const renderFilterPage = (req: express.Request, res: express.Response, filterType: string, value: string) => {
+    const decodedValue = decodeURIComponent(value);
+    const data = loadData('all.json') || {};
+    const meta = loadData('meta.json') || { topTags: [], topCategories: [], topSuitable: [], topStars: [], topAppearances: [] };
+    
+    const list = data['all'] || [];
+    
+    let filteredList = list.filter((item: any) => {
+        if (!item.summaryData || !item.summaryData[filterType]) return false;
+        if (Array.isArray(item.summaryData[filterType])) {
+            return item.summaryData[filterType].includes(decodedValue);
+        }
+        return item.summaryData[filterType] === decodedValue;
+    });
+
+    const searchQuery = req.query.q as string | undefined;
+    if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        filteredList = filteredList.filter((item: any) => 
+            (item.repo && item.repo.toLowerCase().includes(q)) ||
+            (item.description && item.description.toLowerCase().includes(q))
+        );
+    }
+    
+    const page = parseInt(req.query.page as string, 10) || 1;
+    const itemsPerPage = 10;
+    const totalItems = filteredList.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+    const currentPage = Math.max(1, Math.min(page, totalPages));
+    
+    const paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    
+    res.render('layouts/main', {
+        body: '../filter',
+        type: filterType,
+        filterValue: decodedValue,
+        list: paginatedList,
+        totalItems,
+        currentPage,
+        totalPages,
+        itemsPerPage,
+        searchQuery,
+        meta,
+        isListView: false,
     });
 };
 

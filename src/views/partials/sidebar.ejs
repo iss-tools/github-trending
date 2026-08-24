@@ -1,19 +1,78 @@
 <div class="space-y-8">
     
-    <!-- Tags Cloud -->
-    <div class="bg-card rounded-lg border border-border p-6 shadow-sm">
-        <h3 class="font-bold text-lg mb-4 text-primary">热门标签</h3>
-        <div class="flex flex-wrap gap-2">
-            <% meta.topTags.forEach(tagObj => { %>
-                <a href="#" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
-                    <%= tagObj.tag %> <span class="opacity-50 text-[10px] ml-1"><%= tagObj.count %></span>
-                </a>
-            <% }) %>
-            <% if (meta.topTags.length === 0) { %>
-                <span class="text-sm text-muted-foreground">暂无标签数据</span>
-            <% } %>
+    <!-- Metadata Tabs -->
+    <div class="bg-card rounded-lg border border-border shadow-sm flex flex-col">
+        <!-- Tab Headers -->
+        <div class="flex border-b border-border text-sm font-medium px-2 pt-2 gap-1 overflow-x-auto custom-scrollbar">
+            <button onclick="switchMetaTab('tags')" id="tab-tags" class="meta-tab px-4 py-2 border-b-2 border-primary text-foreground transition-colors whitespace-nowrap">标签</button>
+            <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">分类</button>
+            <button onclick="switchMetaTab('suitable')" id="tab-suitable" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">适用人群</button>
+        </div>
+        
+        <!-- Tab Contents -->
+        <div class="p-4">
+            <!-- Tags -->
+            <div id="content-tags" class="meta-content flex flex-wrap gap-2">
+                <% if (meta.topTags) { meta.topTags.forEach(tagObj => { %>
+                    <a href="/tag/<%= encodeURIComponent(tagObj.tag) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                        <%= tagObj.tag %> <span class="opacity-50 text-[10px] ml-1"><%= tagObj.count %></span>
+                    </a>
+                <% })} %>
+                <% if (!meta.topTags || meta.topTags.length === 0) { %>
+                    <span class="text-sm text-muted-foreground">暂无标签数据</span>
+                <% } %>
+            </div>
+            
+            <!-- Categories -->
+            <div id="content-categories" class="meta-content hidden flex-wrap gap-2">
+                <% if (meta.topCategories) { meta.topCategories.forEach(catObj => { %>
+                    <a href="/category/<%= encodeURIComponent(catObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                        <%= catObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= catObj.count %></span>
+                    </a>
+                <% })} %>
+                <% if (!meta.topCategories || meta.topCategories.length === 0) { %>
+                    <span class="text-sm text-muted-foreground">暂无分类数据</span>
+                <% } %>
+            </div>
+            
+            <!-- Suitable -->
+            <div id="content-suitable" class="meta-content hidden flex-wrap gap-2">
+                <% if (meta.topSuitable) { meta.topSuitable.forEach(suitObj => { %>
+                    <a href="/suitable/<%= encodeURIComponent(suitObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                        <%= suitObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= suitObj.count %></span>
+                    </a>
+                <% })} %>
+                <% if (!meta.topSuitable || meta.topSuitable.length === 0) { %>
+                    <span class="text-sm text-muted-foreground">暂无适用人群数据</span>
+                <% } %>
+            </div>
         </div>
     </div>
+    
+    <script>
+    function switchMetaTab(tabName) {
+        document.querySelectorAll('.meta-tab').forEach(el => {
+            el.classList.remove('border-primary', 'text-foreground');
+            el.classList.add('border-transparent', 'text-muted-foreground');
+        });
+        document.querySelectorAll('.meta-content').forEach(el => {
+            el.classList.add('hidden');
+            el.classList.remove('flex');
+        });
+        
+        const activeTab = document.getElementById('tab-' + tabName);
+        if(activeTab) {
+            activeTab.classList.remove('border-transparent', 'text-muted-foreground');
+            activeTab.classList.add('border-primary', 'text-foreground');
+        }
+        
+        const activeContent = document.getElementById('content-' + tabName);
+        if(activeContent) {
+            activeContent.classList.remove('hidden');
+            activeContent.classList.add('flex');
+        }
+    }
+    </script>
 
     <!-- Rankings -->
     <div class="bg-card rounded-lg border border-border p-6 shadow-sm">

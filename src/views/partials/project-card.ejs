@@ -25,7 +25,7 @@
             <% if (item.summaryData.tags && item.summaryData.tags.length > 0) { %>
                 <div class="flex flex-wrap gap-1 mt-3">
                     <% item.summaryData.tags.forEach(tag => { %>
-                        <span class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full"><%= tag %></span>
+                        <a href="/tag/<%= encodeURIComponent(tag) %>.html" class="text-[10px] bg-background border border-border text-muted-foreground px-2 py-0.5 rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"><%= tag %></a>
                     <% }) %>
                 </div>
             <% } %>
