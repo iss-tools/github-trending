@@ -119,11 +119,21 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
             });
         });
     } else {
-        itemsPerPage = type === 'all' ? 10 : 20;
-        totalItems = filteredList.length;
-        totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
-        currentPage = Math.max(1, Math.min(page, totalPages));
-        paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+        if (type === 'all') {
+            itemsPerPage = 10;
+            totalItems = filteredList.length;
+            totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+            currentPage = Math.max(1, Math.min(page, totalPages));
+            paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+        } else {
+            // For specific date views (daily, weekly, monthly), show all items without pagination
+            // so we can group them perfectly by language.
+            itemsPerPage = filteredList.length || 20;
+            totalItems = filteredList.length;
+            totalPages = 1;
+            currentPage = 1;
+            paginatedList = filteredList;
+        }
     }
     
     res.render('layouts/main', {
