@@ -79,11 +79,10 @@
             });
         %>
         <% if (sortedLangs.length > 0) { %>
-        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 bg-muted/30 p-3 rounded-lg border border-border mt-6">
-            <span class="text-sm font-semibold text-foreground whitespace-nowrap shrink-0">按语言快速导航:</span>
-            <div class="flex gap-2 overflow-x-auto pb-2 sm:pb-0 sm:flex-wrap w-full" style="scrollbar-width: none;">
+        <div class="sticky top-16 z-20 bg-background pt-2 pb-2 sm:static sm:pt-0 sm:pb-0 sm:bg-transparent mt-6">
+            <div class="flex overflow-x-auto border-b border-border w-full" style="scrollbar-width: none;">
                 <% sortedLangs.forEach(lang => { %>
-                    <a href="#lang-<%= encodeURIComponent(lang) %>" class="px-2.5 py-1 text-xs rounded border border-border bg-background hover:bg-muted text-muted-foreground hover:text-foreground transition-colors shrink-0">
+                    <a href="#lang-<%= encodeURIComponent(lang) %>" class="px-4 py-2 text-sm font-semibold whitespace-nowrap border-b-2 border-transparent transition-colors text-muted-foreground hover:text-foreground hover:border-border shrink-0">
                         <%= lang %>
                     </a>
                 <% }) %>
