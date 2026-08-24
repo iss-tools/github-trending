@@ -5,7 +5,7 @@
         </a>
         <div class="flex items-center gap-2 text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
             <% if (item.language) { %>
-                <span class="font-medium text-foreground"><%= item.language %></span>
+                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="font-medium text-foreground hover:text-primary transition-colors hover:underline"><%= item.language %></a>
                 <span>•</span>
             <% } %>
             <span>⭐ <%= item.stars %></span>

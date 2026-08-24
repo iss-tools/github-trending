@@ -22,6 +22,7 @@ const tagsMap: Record<string, number> = {};
 const categoryMap: Record<string, number> = {};
 const suitableMap: Record<string, number> = {};
 const topicsMap: Record<string, number> = {};
+const languageMap: Record<string, number> = {};
 const repoMap: Record<string, any> = {};
 
 const allMap = new Map();
@@ -64,6 +65,10 @@ rows.forEach(row => {
   
   const item = { ...row, summaryData: summary, githubData: github };
 
+  if (row.language) {
+      languageMap[row.language] = (languageMap[row.language] || 0) + 1;
+  }
+
   if (row.type.includes('daily')) daily.push(item);
   else if (row.type.includes('weekly')) weekly.push(item);
   else if (row.type.includes('monthly')) monthly.push(item);
@@ -94,6 +99,7 @@ const topTags = Object.entries(tagsMap).sort((a, b) => b[1] - a[1]).slice(0, 20)
 const topCategories = Object.entries(categoryMap).sort((a, b) => b[1] - a[1]).slice(0, 20).map(i => ({ name: i[0], count: i[1] }));
 const topSuitable = Object.entries(suitableMap).sort((a, b) => b[1] - a[1]).slice(0, 20).map(i => ({ name: i[0], count: i[1] }));
 const topTopics = Object.entries(topicsMap).sort((a, b) => b[1] - a[1]).slice(0, 20).map(i => ({ name: i[0], count: i[1] }));
+const topLanguages = Object.entries(languageMap).sort((a, b) => b[1] - a[1]).slice(0, 20).map(i => ({ name: i[0], count: i[1] }));
 const repos = Object.values(repoMap);
 const topStars = [...repos].sort((a, b) => b.stars - a.stars).slice(0, 10);
 const topAppearances = [...repos].sort((a, b) => b.appearances - a.appearances).slice(0, 10);
@@ -123,6 +129,6 @@ fs.writeFileSync(path.join(dataDir, 'all.json'), JSON.stringify(allGrouped, null
 fs.writeFileSync(path.join(dataDir, 'daily.json'), JSON.stringify(groupByDate(daily), null, 2));
 fs.writeFileSync(path.join(dataDir, 'weekly.json'), JSON.stringify(groupByDate(weekly), null, 2));
 fs.writeFileSync(path.join(dataDir, 'monthly.json'), JSON.stringify(groupByDate(monthly), null, 2));
-fs.writeFileSync(path.join(dataDir, 'meta.json'), JSON.stringify({ topTags, topCategories, topSuitable, topTopics, topStars, topAppearances }, null, 2));
+fs.writeFileSync(path.join(dataDir, 'meta.json'), JSON.stringify({ topTags, topCategories, topSuitable, topTopics, topLanguages, topStars, topAppearances }, null, 2));
 
 console.log('Export complete!');

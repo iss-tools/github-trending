@@ -8,6 +8,7 @@
             <button onclick="switchMetaTab('categories')" id="tab-categories" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">分类</button>
             <button onclick="switchMetaTab('suitable')" id="tab-suitable" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">适用人群</button>
             <button onclick="switchMetaTab('topics')" id="tab-topics" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">Topics</button>
+            <button onclick="switchMetaTab('languages')" id="tab-languages" class="meta-tab px-4 py-2 border-b-2 border-transparent text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">开发语言</button>
         </div>
         
         <!-- Tab Contents -->
@@ -57,6 +58,18 @@
                 <% })} %>
                 <% if (!meta.topTopics || meta.topTopics.length === 0) { %>
                     <span class="text-sm text-muted-foreground">暂无Topic数据</span>
+                <% } %>
+            </div>
+            
+            <!-- Languages -->
+            <div id="content-languages" class="meta-content hidden flex-wrap gap-2">
+                <% if (meta.topLanguages) { meta.topLanguages.forEach(langObj => { %>
+                    <a href="/language/<%= encodeURIComponent(langObj.name) %>.html" class="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
+                        <%= langObj.name %> <span class="opacity-50 text-[10px] ml-1"><%= langObj.count %></span>
+                    </a>
+                <% })} %>
+                <% if (!meta.topLanguages || meta.topLanguages.length === 0) { %>
+                    <span class="text-sm text-muted-foreground">暂无开发语言数据</span>
                 <% } %>
             </div>
         </div>

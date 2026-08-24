@@ -14,7 +14,7 @@
                 <span class="font-medium"><%= item.repo %></span>
             </a>
             <% if (item.language) { %>
-                <span class="bg-muted px-2.5 py-1 rounded-md text-foreground font-medium"><%= item.language %></span>
+                <a href="/language/<%= encodeURIComponent(item.language) %>.html" class="bg-muted px-2.5 py-1 rounded-md text-foreground font-medium hover:bg-primary hover:text-primary-foreground transition-colors"><%= item.language %></a>
             <% } %>
             <span class="bg-muted px-2.5 py-1 rounded-md text-foreground flex items-center gap-1">
                 ⭐ <%= item.stars %>

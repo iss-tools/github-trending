@@ -42,7 +42,7 @@ app.get('/', (req, res) => renderPage(req, res, 'all'));
     });
 });
 
-['tag', 'category', 'suitable', 'topic'].forEach(filterType => {
+['tag', 'category', 'suitable', 'topic', 'language'].forEach(filterType => {
     app.get(`/${filterType}/:value.html`, (req, res) => {
         renderFilterPage(req, res, filterType, req.params.value);
     });
@@ -148,7 +148,7 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
 const renderFilterPage = (req: express.Request, res: express.Response, filterType: string, value: string) => {
     const decodedValue = decodeURIComponent(value);
     const data = loadData('all.json') || {};
-    const meta = loadData('meta.json') || { topTags: [], topCategories: [], topSuitable: [], topTopics: [], topStars: [], topAppearances: [] };
+    const meta = loadData('meta.json') || { topTags: [], topCategories: [], topSuitable: [], topTopics: [], topLanguages: [], topStars: [], topAppearances: [] };
     
     const list = data['all'] || [];
     
@@ -156,6 +156,9 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
     let filteredList = list.filter((item: any) => {
         if (filterType === 'topic') {
             return item.githubData && item.githubData.topics && item.githubData.topics.includes(decodedValue);
+        }
+        if (filterType === 'language') {
+            return item.language === decodedValue;
         }
         if (!item.summaryData || !item.summaryData[propName]) return false;
         if (Array.isArray(item.summaryData[propName])) {
