@@ -75,11 +75,22 @@ app.get('/repo/:owner/:name.html', (req, res) => {
         return res.status(404).send('Repository not found');
     }
     
+    const seoTitle = `${item.repo} - GitHub 热门项目 AI 深度分析`;
+    const summary = item.summaryData?.summary ? item.summaryData.summary.substring(0, 150).replace(/\n/g, ' ') : `查看 ${item.repo} 的详细 AI 总结。`;
+    const seoDescription = summary;
+    let keys = [item.repo, 'github', 'trending'];
+    if (item.language) keys.push(item.language);
+    if (item.summaryData?.tags) keys.push(...item.summaryData.tags);
+    const seoKeywords = keys.join(', ');
+    
     res.render('layouts/main', {
         body: '../repo',
         type: 'repo',
         item,
         meta,
+        seoTitle,
+        seoDescription,
+        seoKeywords
     });
 });
 
@@ -171,6 +182,41 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
         }
     }
     
+    let seoTitle = 'GitHub 热门项目追踪 | Trending';
+    let seoDescription = '本项目持续追踪 GitHub 上的热门开源项目，并提供由 AI 生成的深度总结与技术分析。';
+    let seoKeywords = 'github, trending, ai, open source, 开源项目, 热门项目';
+
+    if (type === 'daily' && pathDate) {
+        seoTitle = `GitHub 今日热门 (${pathDate}) - 每日追踪`;
+        seoDescription = `查看 ${pathDate} 的 GitHub 今日热门项目榜单，获取 AI 深度代码分析与架构拆解。`;
+        seoKeywords = `github daily trending, ${pathDate}, 今日热门, github开源, AI分析`;
+    } else if (type === 'weekly' && pathDate) {
+        seoTitle = `GitHub 本周热门 (${pathDate}) - 每周追踪`;
+        seoDescription = `查看 ${pathDate} 的 GitHub 本周热门项目榜单，获取本周最火开源项目的深度解析。`;
+        seoKeywords = `github weekly trending, ${pathDate}, 本周热门, 开源项目`;
+    } else if (type === 'monthly' && pathDate) {
+        seoTitle = `GitHub 本月热门 (${pathDate}) - 每月追踪`;
+        seoDescription = `查看 ${pathDate} 的 GitHub 本月热门项目榜单，掌握月度开源生态风向。`;
+        seoKeywords = `github monthly trending, ${pathDate}, 本月热门, 最佳开源项目`;
+    } else if (type === 'daily') {
+        seoTitle = 'GitHub 每日热门榜单历史记录';
+        seoDescription = '浏览所有的 GitHub 每日热门榜单历史数据。';
+    } else if (type === 'weekly') {
+        seoTitle = 'GitHub 每周热门榜单历史记录';
+        seoDescription = '浏览所有的 GitHub 每周热门榜单历史数据。';
+    } else if (type === 'monthly') {
+        seoTitle = 'GitHub 每月热门榜单历史记录';
+        seoDescription = '浏览所有的 GitHub 每月热门榜单历史数据。';
+    } else if (searchQuery) {
+        seoTitle = `搜索: ${searchQuery} | GitHub 热门项目追踪`;
+        seoDescription = `关于 ${searchQuery} 的搜索结果。`;
+        seoKeywords = `${searchQuery}, github search, trending`;
+    } else if (selectedLang) {
+        seoTitle = `${selectedLang} - GitHub 热门项目追踪`;
+        seoDescription = `筛选语言为 ${selectedLang} 的 GitHub 热门开源项目。`;
+        seoKeywords = `${selectedLang}, github, 编程语言排行`;
+    }
+    
     res.render('layouts/main', {
         body: `../${type}`, // will include views/${type}.ejs inside main
         type,
@@ -187,6 +233,9 @@ const renderPage = (req: express.Request, res: express.Response, type: string, p
         searchQuery,
         meta,
         isListView,
+        seoTitle,
+        seoDescription,
+        seoKeywords
     });
 };
 
@@ -240,6 +289,19 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
     
     const paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
     
+    const typeLabelMap: Record<string, string> = {
+        'tag': '标签',
+        'category': '分类',
+        'suitable': '适合人群',
+        'topic': 'Topic',
+        'language': '编程语言',
+        'keyword': '搜索结果'
+    };
+    const label = typeLabelMap[filterType] || filterType;
+    const seoTitle = `${decodedValue} - ${label} | GitHub 热门项目追踪`;
+    const seoDescription = `查看与 ${decodedValue} (${label}) 相关的 GitHub 热门项目与 AI 深度分析总结。`;
+    const seoKeywords = `${decodedValue}, ${label}, github trending, ai总结`;
+    
     res.render('layouts/main', {
         body: '../filter',
         type: filterType,
@@ -252,6 +314,9 @@ const renderFilterPage = (req: express.Request, res: express.Response, filterTyp
         searchQuery,
         meta,
         isListView: false,
+        seoTitle,
+        seoDescription,
+        seoKeywords
     });
 };
 
