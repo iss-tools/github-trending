@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import { marked } from 'marked';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -8,6 +9,9 @@ const PORT = process.env.PORT || 3001;
 // Setup View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+// Expose marked to all templates
+app.locals.marked = marked;
 
 // Static assets
 app.use(express.static(path.join(__dirname, '../public')));

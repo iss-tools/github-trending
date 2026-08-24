@@ -74,14 +74,16 @@
 
     <!-- Project List -->
     <div>
-        <h2 class="text-xl font-bold mb-4 text-foreground flex items-center gap-2">
-            <%= selectedDate ? `${selectedDate.substring(0, 4)}-${selectedDate.substring(4, 6)}-${selectedDate.substring(6, 8)}` : '今日' %> 
-            <span class="text-muted-foreground text-base font-normal">日榜项目 (<%= list.length %>)</span>
+        <h2 class="text-2xl font-black mb-2 text-foreground text-center mt-6">
+            <%= selectedDate ? `${selectedDate.substring(0, 4)}-${selectedDate.substring(4, 6)}-${selectedDate.substring(6, 8)}` : '今日' %> 热门开源项目精选
         </h2>
+        <p class="text-center text-muted-foreground mb-10">
+            精选 <%= list.length %> 个高质量热门项目，深度解析核心能力
+        </p>
         
-        <div class="space-y-4">
-            <% list.forEach(item => { %>
-                <%- include('partials/project-card', { item }) %>
+        <div class="space-y-4 max-w-4xl mx-auto mt-8">
+            <% list.forEach((item, index) => { %>
+                <%- include('partials/project-article', { item, index }) %>
             <% }) %>
             
             <% if (list.length === 0) { %>
