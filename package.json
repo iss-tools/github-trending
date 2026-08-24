@@ -9,7 +9,8 @@
     "watch:server": "tsx watch src/server.ts",
     "build:css": "tailwindcss -i ./src/public/style.css -o ./public/style.css --minify",
     "export": "tsx src/scripts/exportData.ts",
-    "build:static": "npm run build:css && tsx src/scripts/generateStatic.ts"
+    "build:static": "npm run build:css && tsx src/scripts/generateStatic.ts",
+    "push": "cd .. && git subtree push --prefix trending public-trending main"
   },
   "keywords": [],
   "author": "",
