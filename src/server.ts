@@ -2,9 +2,13 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs';
 import { marked } from 'marked';
+import markedKatex from 'marked-katex-extension';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Setup marked extensions
+marked.use(markedKatex({ throwOnError: false }));
 
 // Setup View Engine
 app.set('view engine', 'ejs');
