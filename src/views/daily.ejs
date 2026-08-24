@@ -2,15 +2,27 @@
     <div class="space-y-6">
         <h2 class="text-xl font-bold mb-4 text-foreground">日榜历史</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <% dates.forEach(dateStr => { %>
-                <a href="?date=<%= dateStr %>" class="block p-6 bg-card rounded-lg border border-border hover:border-primary hover:shadow-md transition-all group">
-                    <h3 class="text-lg font-semibold text-foreground group-hover:text-primary mb-2 transition-colors">
-                        <%= dateStr.substring(0, 4) %>-<%= dateStr.substring(4, 6) %>-<%= dateStr.substring(6, 8) %>
-                    </h3>
-                    <p class="text-sm text-muted-foreground">查看当日热门项目</p>
+            <% dateCards.forEach(card => { %>
+                <a href="?date=<%= card.dateStr %>" class="block p-6 bg-card rounded-lg border border-border hover:border-primary hover:shadow-md transition-all group flex flex-col h-full">
+                    <div class="mb-4 flex-grow">
+                        <h3 class="text-lg font-semibold text-foreground group-hover:text-primary mb-2 transition-colors">
+                            <%= card.dateStr.substring(0, 4) %>-<%= card.dateStr.substring(4, 6) %>-<%= card.dateStr.substring(6, 8) %>
+                        </h3>
+                        <p class="text-sm text-muted-foreground">共 <%= card.total %> 个热门项目</p>
+                    </div>
+                    
+                    <% if (card.langStats && card.langStats.length > 0) { %>
+                        <div class="flex flex-wrap gap-1.5 mt-auto border-t border-border pt-4">
+                            <% card.langStats.forEach(stat => { %>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-muted text-muted-foreground">
+                                    <%= stat.lang %>: <%= stat.count %>
+                                </span>
+                            <% }) %>
+                        </div>
+                    <% } %>
                 </a>
             <% }) %>
-            <% if (dates.length === 0) { %>
+            <% if (dateCards.length === 0) { %>
                 <div class="col-span-full py-12 text-center text-muted-foreground bg-card rounded-lg border border-border border-dashed">
                     暂无历史数据
                 </div>

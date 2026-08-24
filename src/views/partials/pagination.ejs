@@ -1,7 +1,7 @@
 <% if (totalPages > 1) { %>
     <div class="mt-8 flex items-center justify-between border-t border-border pt-6">
         <div class="text-sm text-muted-foreground">
-            显示第 <%= (currentPage - 1) * 10 + 1 %> 到 <%= Math.min(currentPage * 10, totalItems) %> 条，共 <%= totalItems %> 条
+            显示第 <%= (currentPage - 1) * itemsPerPage + 1 %> 到 <%= Math.min(currentPage * itemsPerPage, totalItems) %> 条，共 <%= totalItems %> 条
         </div>
         
         <div class="flex items-center gap-2">

@@ -66,17 +66,51 @@ const renderPage = (req: express.Request, res: express.Response, type: string) =
     
     // pagination
     const page = parseInt(req.query.page as string, 10) || 1;
-    const itemsPerPage = 10;
-    const totalItems = filteredList.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
-    const currentPage = Math.max(1, Math.min(page, totalPages));
+    let itemsPerPage = 10;
+    let totalItems = 0;
+    let totalPages = 1;
+    let currentPage = 1;
+    let paginatedList: any[] = [];
+    let dateCards: any[] = [];
     
-    const paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    if (isListView) {
+        itemsPerPage = 20;
+        totalItems = dates.length;
+        totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+        currentPage = Math.max(1, Math.min(page, totalPages));
+        
+        const paginatedDates = dates.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+        
+        paginatedDates.forEach(dateStr => {
+            const items = data[dateStr] || [];
+            const langCounts: Record<string, number> = {};
+            items.forEach((item: any) => {
+                const lang = item.language || 'Unknown';
+                langCounts[lang] = (langCounts[lang] || 0) + 1;
+            });
+            const langStats = Object.entries(langCounts)
+                                    .sort((a, b) => b[1] - a[1])
+                                    .slice(0, 5) // top 5 languages
+                                    .map(([lang, count]) => ({ lang, count }));
+            dateCards.push({
+                dateStr,
+                total: items.length,
+                langStats
+            });
+        });
+    } else {
+        itemsPerPage = type === 'all' ? 10 : 20;
+        totalItems = filteredList.length;
+        totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+        currentPage = Math.max(1, Math.min(page, totalPages));
+        paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    }
     
     res.render('layouts/main', {
         body: `../${type}`, // will include views/${type}.ejs inside main
         type,
         dates,
+        dateCards,
         selectedDate,
         languages,
         selectedLang,
@@ -84,6 +118,7 @@ const renderPage = (req: express.Request, res: express.Response, type: string) =
         totalItems,
         currentPage,
         totalPages,
+        itemsPerPage,
         searchQuery,
         meta,
         isListView,
