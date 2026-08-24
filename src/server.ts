@@ -325,6 +325,10 @@ app.get('/daily', (req, res) => renderPage(req, res, 'daily'));
 app.get('/weekly', (req, res) => renderPage(req, res, 'weekly'));
 app.get('/monthly', (req, res) => renderPage(req, res, 'monthly'));
 
-app.listen(PORT, () => {
-    console.log(`Trending CMS running at http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production' || process.env.RUN_LOCAL === 'true') {
+    app.listen(PORT, () => {
+        console.log(`Trending CMS running at http://localhost:${PORT}`);
+    });
+}
+
+export default app;

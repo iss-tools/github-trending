@@ -8,7 +8,8 @@
     "watch:css": "tailwindcss -i ./src/public/style.css -o ./public/style.css --watch",
     "watch:server": "tsx watch src/server.ts",
     "build:css": "tailwindcss -i ./src/public/style.css -o ./public/style.css --minify",
-    "export": "tsx src/scripts/exportData.ts"
+    "export": "tsx src/scripts/exportData.ts",
+    "build:static": "npm run build:css && tsx src/scripts/generateStatic.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +19,11 @@
     "@types/express": "^5.0.6",
     "@types/marked": "^6.0.0",
     "@types/node": "^26.2.0",
+    "@types/supertest": "^7.2.1",
     "autoprefixer": "^10.5.4",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.26",
+    "supertest": "^7.2.2",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
