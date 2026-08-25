@@ -72,11 +72,29 @@
                 const pre = block.parentElement;
                 if (pre && pre.tagName === 'PRE') {
                     pre.classList.add('mermaid');
-                    pre.classList.add('flex', 'justify-center');
+                    pre.classList.add('flex', 'justify-center', 'cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+                    pre.title = "点击查看完整结构图";
                     pre.textContent = block.textContent; // Replace code tag with raw text
                 }
             });
-            mermaid.run();
+            mermaid.run().then(() => {
+                document.querySelectorAll('.mermaid svg').forEach(svg => {
+                    svg.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        openZoomModal(this);
+                    });
+                });
+            });
+
+            // Support zooming for standard Markdown images
+            document.querySelectorAll('.prose img').forEach(img => {
+                img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+                img.title = "点击查看大图";
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    openZoomModal(this);
+                });
+            });
         });
     </script>
 </head>
@@ -117,6 +135,21 @@
 
         <%- include('../partials/footer') %>
 
+            <!-- Mermaid Zoom Modal -->
+            <div id="mermaid-modal" class="fixed inset-0 z-[100] hidden bg-black/80 flex items-center justify-center p-4">
+                <div class="absolute inset-0 cursor-pointer" onclick="closeMermaidModal()"></div>
+                <button onclick="closeMermaidModal()" class="absolute top-4 right-4 p-2 bg-black/50 text-white hover:bg-black rounded-full z-[101] transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                <div class="relative w-full h-full flex items-center justify-center overflow-hidden pointer-events-none" id="mermaid-modal-container">
+                    <!-- cloned svg goes here -->
+                </div>
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white/80 text-sm flex gap-6 pointer-events-none z-[101] bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+                    <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg> 滚轮缩放</span>
+                    <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11"></path></svg> 拖拽移动</span>
+                </div>
+            </div>
+
             <script>
                 function toggleMobileMenu() {
                     const sidebar = document.getElementById('sidebar-container');
@@ -136,6 +169,87 @@
                         setTimeout(() => overlay.classList.add('hidden'), 300);
                         document.body.style.overflow = '';
                     }
+                }
+
+                // Zooming and Dragging Logic
+                let mScale = 1;
+                let mIsDragging = false;
+                let mStartX, mStartY, mTranslateX = 0, mTranslateY = 0;
+                
+                function openZoomModal(element) {
+                    const modal = document.getElementById('mermaid-modal');
+                    const container = document.getElementById('mermaid-modal-container');
+                    container.innerHTML = '';
+                    
+                    const clone = element.cloneNode(true);
+                    mScale = 1;
+                    mTranslateX = 0;
+                    mTranslateY = 0;
+                    
+                    clone.style.transform = `translate(${mTranslateX}px, ${mTranslateY}px) scale(${mScale})`;
+                    clone.style.transformOrigin = 'center center';
+                    clone.style.cursor = 'grab';
+                    clone.style.transition = 'transform 0.1s ease-out';
+                    clone.style.pointerEvents = 'auto'; 
+                    clone.classList.remove('max-w-full', 'w-full', 'hover:opacity-90'); 
+                    clone.style.width = 'auto';
+                    clone.style.height = 'auto';
+                    clone.style.maxHeight = '90vh';
+                    clone.style.maxWidth = '90vw';
+                    clone.style.objectFit = 'contain';
+                    
+                    // Only apply background/padding if it's an SVG (mermaid), regular images should be transparent
+                    if (clone.tagName === 'svg') {
+                        clone.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#020817' : '#ffffff';
+                        clone.classList.add('p-6', 'rounded-xl', 'shadow-2xl');
+                    } else {
+                        clone.classList.add('rounded-lg', 'shadow-2xl');
+                    }
+                    
+                    container.appendChild(clone);
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Dragging
+                    clone.addEventListener('mousedown', e => {
+                        mIsDragging = true;
+                        clone.style.cursor = 'grabbing';
+                        clone.style.transition = 'none'; 
+                        mStartX = e.clientX - mTranslateX;
+                        mStartY = e.clientY - mTranslateY;
+                    });
+                    
+                    window.addEventListener('mousemove', e => {
+                        if (!mIsDragging) return;
+                        mTranslateX = e.clientX - mStartX;
+                        mTranslateY = e.clientY - mStartY;
+                        updateMermaidTransform(clone);
+                    });
+                    
+                    window.addEventListener('mouseup', () => {
+                        if (mIsDragging) {
+                            mIsDragging = false;
+                            clone.style.cursor = 'grab';
+                            clone.style.transition = 'transform 0.1s ease-out';
+                        }
+                    });
+                    
+                    // Zooming
+                    clone.addEventListener('wheel', e => {
+                        e.preventDefault();
+                        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+                        mScale = Math.max(0.2, Math.min(mScale + delta, 5)); 
+                        updateMermaidTransform(clone);
+                    }, { passive: false });
+                }
+                
+                function updateMermaidTransform(el) {
+                    el.style.transform = `translate(${mTranslateX}px, ${mTranslateY}px) scale(${mScale})`;
+                }
+                
+                function closeMermaidModal() {
+                    document.getElementById('mermaid-modal').classList.add('hidden');
+                    document.body.style.overflow = '';
                 }
             </script>
 </body>
