@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/volcengine/OpenViking)
 
-- **Stars**: 32475
+- **Stars**: 32929
 - **Language**: Python
 
 ## OpenViking：给 AI Agent 装上「持久大脑」的开源利器

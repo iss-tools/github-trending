@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/cordiverse/cordis)
 
-- **Stars**: 7235
+- **Stars**: 7393
 - **Language**: TypeScript
 
 ## Cordis：实现时空可组合性的元框架深度评测

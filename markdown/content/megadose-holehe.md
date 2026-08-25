@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/megadose/holehe)
 
-- **Stars**: 14074
+- **Stars**: 14140
 - **Language**: Python
 
 ## Holehe：无感知邮箱数字足迹检测工具评测

@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/NousResearch/hermes-agent)
 
-- **Stars**: 234969
+- **Stars**: 235695
 - **Language**: Python
 
 ## Hermes Agent：一个真正能“越用越聪明”的自主智能体

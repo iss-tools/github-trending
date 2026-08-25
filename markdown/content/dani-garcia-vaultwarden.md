@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/dani-garcia/vaultwarden)
 
-- **Stars**: 65954
+- **Stars**: 66103
 - **Language**: Rust
 
 ## Vaultwarden：轻量级自建密码管理服务器评测

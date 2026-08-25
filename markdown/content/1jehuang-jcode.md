@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/1jehuang/jcode)
 
-- **Stars**: 18351
+- **Stars**: 18435
 - **Language**: Rust
 
 ## jcode：极致高效的 AI 编码代理 Harness 评测

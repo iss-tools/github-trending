@@ -2,6 +2,8 @@
 
 本项目持续追踪 GitHub 上的热门开源项目，并提供由 AI 生成的深度总结与技术分析。
 
+在线访问：https://trending.pptboard.com
+
 ## 最新榜单
 
 - [今日热门 (20260824)](markdown/daily/20260824.md)

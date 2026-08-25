@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/Alishahryar1/free-claude-code)
 
-- **Stars**: 47942
+- **Stars**: 48815
 - **Language**: Python
 
 ## Free Claude Code：零成本复现顶级 AI 编程助手
