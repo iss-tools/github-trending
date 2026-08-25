@@ -16,6 +16,54 @@ const PORT = process.env.PORT || 3001;
 // Setup marked extensions
 marked.use(markedKatex({ throwOnError: false }));
 
+const detailsExtension = {
+  name: 'details',
+  level: 'block',
+  start(src: string) { return src.match(/<details[\s>]/i)?.index; },
+  tokenizer(src: string, tokens: any) {
+    const rule = /^<details(?:[^>]*)>([\s\S]*?)<\/details>/i;
+    const match = rule.exec(src);
+    if (match) {
+      const token = {
+        type: 'details',
+        raw: match[0],
+        text: match[1],
+        tokens: []
+      };
+      this.lexer.blockTokens(token.text, token.tokens);
+      return token;
+    }
+  },
+  renderer(token: any) {
+    return `<details>\n${this.parser.parse(token.tokens)}</details>\n`;
+  }
+};
+
+const summaryExtension = {
+  name: 'summary',
+  level: 'block',
+  start(src: string) { return src.match(/<summary>/i)?.index; },
+  tokenizer(src: string, tokens: any) {
+    const rule = /^<summary>([\s\S]*?)<\/summary>/i;
+    const match = rule.exec(src);
+    if (match) {
+      const token = {
+        type: 'summary',
+        raw: match[0],
+        text: match[1],
+        tokens: []
+      };
+      this.lexer.inlineTokens(token.text, token.tokens);
+      return token;
+    }
+  },
+  renderer(token: any) {
+    return `<summary>${this.parser.parseInline(token.tokens)}</summary>\n`;
+  }
+};
+
+marked.use({ extensions: [detailsExtension, summaryExtension] as any });
+
 // Setup View Engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));

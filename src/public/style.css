@@ -31,3 +31,35 @@
 body {
   @apply bg-background text-foreground transition-colors duration-200;
 }
+
+/* Add borders to markdown tables rendered within .prose */
+.prose table {
+  @apply border-collapse border border-border w-full text-sm my-6;
+}
+
+.prose th, .prose td {
+  @apply border border-border px-4 py-3 text-left;
+}
+
+.prose th {
+  @apply bg-muted font-bold text-foreground;
+}
+
+.prose td {
+  @apply text-muted-foreground;
+}
+
+.prose tr:nth-child(even) td {
+  @apply bg-muted;
+}
+
+/* Remove annoying backticks added by tailwind typography on inline code */
+.prose :not(pre) > code::before {
+  content: none !important;
+}
+.prose :not(pre) > code::after {
+  content: none !important;
+}
+.prose :not(pre) > code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-primary font-normal text-[0.875em];
+}
