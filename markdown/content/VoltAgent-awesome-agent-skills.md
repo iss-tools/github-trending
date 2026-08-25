@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/VoltAgent/awesome-agent-skills)
 
-- **Stars**: 31787
+- **Stars**: 31988
 
 ## Awesome Agent Skills 深度评测：AI 编程时代的技能宝库
 

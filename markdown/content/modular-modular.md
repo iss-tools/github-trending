@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/modular/modular)
 
-- **Stars**: 29060
+- **Stars**: 29082
 - **Language**: Mojo
 
 ## Modular 平台深度评测：用 Mojo 重写 AI 基础设施

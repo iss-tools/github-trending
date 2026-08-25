@@ -2,26 +2,30 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 30
+      "count": 38
     },
     {
       "tag": "GitHub",
-      "count": 22
+      "count": 24
     },
     {
       "tag": "自动化",
-      "count": 15
+      "count": 21
     },
     {
       "tag": "开源项目",
-      "count": 15
+      "count": 13
+    },
+    {
+      "tag": "Claude",
+      "count": 13
+    },
+    {
+      "tag": "本地部署",
+      "count": 12
     },
     {
       "tag": "DevOps",
-      "count": 11
-    },
-    {
-      "tag": "开发者工具",
       "count": 10
     },
     {
@@ -29,15 +33,15 @@
       "count": 10
     },
     {
-      "tag": "Claude",
-      "count": 10
-    },
-    {
-      "tag": "本地部署",
+      "tag": "工作流",
       "count": 9
     },
     {
       "tag": "Rust",
+      "count": 9
+    },
+    {
+      "tag": "隐私保护",
       "count": 8
     },
     {
@@ -49,61 +53,69 @@
       "count": 8
     },
     {
-      "tag": "工作流",
-      "count": 7
-    },
-    {
-      "tag": "隐私保护",
-      "count": 6
-    },
-    {
-      "tag": "自托管",
-      "count": 6
-    },
-    {
       "tag": "Linux",
-      "count": 5
+      "count": 6
     },
     {
       "tag": "Arch Linux",
-      "count": 5
+      "count": 6
     },
     {
       "tag": "Hyprland",
-      "count": 5
+      "count": 6
+    },
+    {
+      "tag": "开发环境",
+      "count": 6
     },
     {
       "tag": "DHH",
-      "count": 5
+      "count": 6
     },
     {
       "tag": "MCP",
+      "count": 6
+    },
+    {
+      "tag": "罗技",
       "count": 5
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 65
+      "count": 75
     },
     {
       "name": "AI 编程",
-      "count": 58
+      "count": 67
     },
     {
       "name": "效率工具",
-      "count": 16
+      "count": 20
     },
     {
       "name": "生活效率",
-      "count": 7
+      "count": 9
     },
     {
       "name": "开发者工具",
-      "count": 6
+      "count": 7
     },
     {
       "name": "操作系统",
+      "count": 6
+    },
+    {
+      "name": "系统工具",
+      "count": 5
+    },
+    {
+      "name": "开源硬件",
+      "count": 5
+    },
+    {
+      "name": "隐私安全",
       "count": 5
     },
     {
@@ -111,39 +123,35 @@
       "count": 5
     },
     {
+      "name": "开源项目",
+      "count": 5
+    },
+    {
+      "name": "安全工具",
+      "count": 5
+    },
+    {
       "name": "安全合规",
       "count": 5
     },
     {
-      "name": "系统工具",
-      "count": 4
-    },
-    {
-      "name": "开源硬件",
-      "count": 4
-    },
-    {
-      "name": "隐私安全",
-      "count": 4
-    },
-    {
-      "name": "开源项目",
-      "count": 4
-    },
-    {
-      "name": "安全工具",
-      "count": 4
-    },
-    {
       "name": "开源社区",
-      "count": 4
+      "count": 5
     },
     {
       "name": "人工智能",
       "count": 4
     },
     {
+      "name": "设计资源",
+      "count": 3
+    },
+    {
       "name": "基础设施",
+      "count": 3
+    },
+    {
+      "name": "资源合集",
       "count": 3
     },
     {
@@ -153,200 +161,192 @@
     {
       "name": "数据库",
       "count": 3
-    },
-    {
-      "name": "开发资源",
-      "count": 3
-    },
-    {
-      "name": "系统优化",
-      "count": 3
     }
   ],
   "topSuitable": [
     {
       "name": "开源项目维护者",
-      "count": 8
+      "count": 11
     },
     {
       "name": "技术团队负责人",
-      "count": 7
+      "count": 9
     },
     {
       "name": "个人开发者",
-      "count": 7
-    },
-    {
-      "name": "DevOps 工程师",
-      "count": 7
+      "count": 8
     },
     {
       "name": "软件开发者",
+      "count": 8
+    },
+    {
+      "name": "DevOps 工程师",
+      "count": 8
+    },
+    {
+      "name": "资深开发者与极客",
       "count": 6
     },
     {
-      "name": "追求极致效率的资深开发者",
-      "count": 5
+      "name": "追求键盘操作效率的用户",
+      "count": 6
     },
     {
-      "name": "从 macOS/Windows 迁移到 Linux 的用户",
-      "count": 5
+      "name": "Linux 美学追求者",
+      "count": 6
     },
     {
-      "name": "认同“主厨精选”理念的 DHH 粉丝",
-      "count": 5
+      "name": "Arch Linux 爱好者",
+      "count": 6
     },
     {
-      "name": "喜欢折腾但时间有限的用户",
-      "count": 5
-    },
-    {
-      "name": "Linux 桌面环境爱好者",
-      "count": 5
-    },
-    {
-      "name": "独立开发者",
-      "count": 4
+      "name": "DHH 的理念追随者",
+      "count": 6
     },
     {
       "name": "注重隐私的极客用户",
-      "count": 4
+      "count": 5
     },
     {
       "name": "罗技外设高级玩家",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Linux/macOS 用户",
-      "count": 4
+      "count": 5
     },
     {
       "name": "需要自动化配置的开发者",
-      "count": 4
+      "count": 5
     },
     {
       "name": "企业开发者与安全团队",
-      "count": 4
+      "count": 5
     },
     {
       "name": "AI应用研究人员",
-      "count": 4
+      "count": 5
     },
     {
       "name": "开发工具集成开发者",
-      "count": 4
+      "count": 5
     },
     {
       "name": "个人开发者与极客",
-      "count": 4
+      "count": 5
     },
     {
       "name": "安全研究员",
-      "count": 4
+      "count": 5
+    },
+    {
+      "name": "AI 工具极客",
+      "count": 5
     }
   ],
   "topTopics": [
     {
       "name": "llm",
-      "count": 22
+      "count": 24
     },
     {
       "name": "ai",
-      "count": 16
+      "count": 18
     },
     {
       "name": "ai-agents",
-      "count": 15
+      "count": 17
     },
     {
       "name": "claude-code",
-      "count": 13
+      "count": 16
     },
     {
       "name": "ai-agent",
-      "count": 10
+      "count": 12
     },
     {
       "name": "local-first",
-      "count": 9
+      "count": 11
     },
     {
       "name": "rust",
-      "count": 8
+      "count": 10
+    },
+    {
+      "name": "dsh-plugin",
+      "count": 9
+    },
+    {
+      "name": "skills",
+      "count": 9
+    },
+    {
+      "name": "typescript",
+      "count": 9
+    },
+    {
+      "name": "codex",
+      "count": 9
+    },
+    {
+      "name": "agent-skills",
+      "count": 9
     },
     {
       "name": "python",
       "count": 8
     },
     {
-      "name": "typescript",
-      "count": 8
-    },
-    {
-      "name": "dsh-plugin",
-      "count": 7
-    },
-    {
-      "name": "skills",
-      "count": 7
-    },
-    {
-      "name": "codex",
-      "count": 7
-    },
-    {
-      "name": "agent-skills",
-      "count": 7
-    },
-    {
       "name": "claude",
+      "count": 7
+    },
+    {
+      "name": "agents",
+      "count": 6
+    },
+    {
+      "name": "chatgpt",
+      "count": 6
+    },
+    {
+      "name": "cli",
+      "count": 6
+    },
+    {
+      "name": "electron",
+      "count": 6
+    },
+    {
+      "name": "anthropic",
       "count": 6
     },
     {
       "name": "mcp",
       "count": 6
-    },
-    {
-      "name": "agents",
-      "count": 5
-    },
-    {
-      "name": "machine-learning",
-      "count": 5
-    },
-    {
-      "name": "cli",
-      "count": 5
-    },
-    {
-      "name": "electron",
-      "count": 5
-    },
-    {
-      "name": "anthropic",
-      "count": 5
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 31
-    },
-    {
-      "name": "TypeScript",
-      "count": 18
+      "count": 34
     },
     {
       "name": "Rust",
-      "count": 17
+      "count": 21
+    },
+    {
+      "name": "TypeScript",
+      "count": 20
     },
     {
       "name": "Shell",
-      "count": 8
+      "count": 9
     },
     {
       "name": "JavaScript",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Mojo",
@@ -369,13 +369,13 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 469801,
+      "stars": 469964,
       "appearances": 0
     },
     {
       "repo": "openclaw/openclaw",
       "url": "https://github.com/openclaw/openclaw",
-      "stars": 387392,
+      "stars": 387472,
       "appearances": 1
     },
     {
@@ -387,19 +387,19 @@
     {
       "repo": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 235695,
-      "appearances": 2
+      "stars": 235928,
+      "appearances": 3
     },
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 235241,
+      "stars": 235629,
       "appearances": 2
     },
     {
       "repo": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 206391,
+      "stars": 206667,
       "appearances": 1
     },
     {
@@ -417,13 +417,13 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 116940,
-      "appearances": 2
+      "stars": 117350,
+      "appearances": 3
     },
     {
       "repo": "harry0703/MoneyPrinterTurbo",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "stars": 115878,
+      "stars": 116061,
       "appearances": 0
     }
   ],
@@ -431,62 +431,62 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 116940,
-      "appearances": 2
+      "stars": 117350,
+      "appearances": 3
     },
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 15373,
-      "appearances": 2
-    },
-    {
-      "repo": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "stars": 235241,
-      "appearances": 2
+      "stars": 15889,
+      "appearances": 3
     },
     {
       "repo": "basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "stars": 29978,
-      "appearances": 2
+      "stars": 30339,
+      "appearances": 3
     },
     {
       "repo": "AprilNEA/OpenLogi",
       "url": "https://github.com/AprilNEA/OpenLogi",
-      "stars": 15742,
-      "appearances": 2
-    },
-    {
-      "repo": "block/buzz",
-      "url": "https://github.com/block/buzz",
-      "stars": 30444,
-      "appearances": 2
+      "stars": 15990,
+      "appearances": 3
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 2829,
-      "appearances": 2
+      "stars": 2998,
+      "appearances": 3
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 48815,
-      "appearances": 2
+      "stars": 49171,
+      "appearances": 3
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 37180,
-      "appearances": 2
+      "stars": 37359,
+      "appearances": 3
     },
     {
-      "repo": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "stars": 242549,
-      "appearances": 2
+      "repo": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "stars": 31988,
+      "appearances": 3
+    },
+    {
+      "repo": "dani-garcia/vaultwarden",
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "stars": 66140,
+      "appearances": 3
+    },
+    {
+      "repo": "anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "stars": 1433,
+      "appearances": 3
     }
   ]
 }
