@@ -2,5 +2,151 @@
 
 [GitHub URL](https://github.com/K-Dense-AI/scientific-agent-skills)
 
-- **Stars**: 34599
+- **Stars**: 34664
 - **Language**: Python
+
+## Scientific Agent Skills：AI 科研领域的万能技能插件库
+
+> 内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。
+
+- **Tags**: AI Agent, 开源, 科研, 自动化, 生物信息
+- **Category**: AI 编程, 开发工具, 科研工具
+
+## Details
+
+# Scientific Agent Skills 深度评测
+## 一句话总结
+Scientific Agent Skills 是一个“开箱即用、跨科学域、163+ 已验证技能”的 AI Agent 技能库，它把生物医药、化学、医学、材料、物理、工程、地学与科研写作等领域的最佳实践与数据库访问封装为标准化 SKILL.md，能显著提高研究型 AI Agent 的可靠性与产出效率，是真正把“通用模型”升级为“领域专家”的关键基础设施。
+---
+## 背景与痛点
+- AI 模型在科学计算与数据分析的原始能力已接近甚至追上传统软件，但研究者常常卡在“最后一公里”：正确调用专业 API、遵守实验室规范与质量体系、完成多步骤可复现的流程，以及在敏感领域确保边界清晰、数据可溯源。这促使 K-Dense 提出并实现“Agent Skills”标准化方案：以 SKILL.md 为核心的可携带、可版本化的“技能包”，让 Agent 在需要时按需加载专业指令与资源，而非一次性全量加载上下文。
+- 本仓库原名 “Claude Scientific Skills”，现已扩展为兼容任何支持 Agent Skills 标准的客户端（如 Cursor、Claude Code、Codex、Google Antigravity 等），并将技能从单一模型生态升级为跨生态的标准资产。
+---
+## 核心亮点与功能剖析
+### 1) 覆盖面与组织：163+ 技能 × 跨域 × 标准化
+- 按“技能类型”组织，而非零散堆砌：
+  - 100+ 科学与金融数据库（含统一 database-lookup 覆盖 78+ 公共数据库：PubChem、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov、FRED、USPTO 等；另有 DepMap、Imaging Data Commons、PrimeKG、NCATS ARAX、U.S. Treasury Fiscal Data、Hugging Science、OneKGPd、Genomic Intelligence 等；以及多数据库聚合包如 BioServices、BioPython、gget）。
+  - 70+ 优化的 Python 包技能（RDKit、Scanpy、PyTorch Lightning、scikit-learn、PyTDC、PathML、pydicom、NeuroKit2、PufferLib、QuTiP、GeoPandas、pymatgen、BioPython、Qiskit、OpenMM/MDAnalysis 等）。
+  - 9 个科学平台集成（Benchling、DNAnexus、LatchBio、OMERO、Protocols.io、Open Notebook、Ginkgo Cloud Lab、LabArchives、Opentrons）。
+  - 30+ 分析与沟通工具（文献综述、可溯源写作、保密审稿、全文检索与行号级引用的 Paperclip、Exa Search、宏免 PPTX 海报/幻灯片/示意图、Mermaid 图表等）。
+  - 10+ 研究与临床工具（证据有界假设生成、基金写作、聚集性临床决策支持、PK/PD 建模与剂量、BIDS、ISO/ICH/USP/CLSI 等质量体系证据起草、方法验证等，均标注“非认证/非决策”，仅生成待审核草稿与证据材料）。
+- 机制：每个技能是一个“SKILL.md + 可选脚本/模板/参考资料”的文件夹，符合 Agent Skills 标准的渐进式加载（Discovery/Activation/Execution），既保证上下文可控，又能按需释放专业信息。
+### 2) 多模态与跨域工作流能力（案例化 prompt）
+官方 README 提供了能直接丢给 Agent 的“长提示词”，例如：
+- 药物发现管道（EGFR 抑制剂优先级排序）：
+  - Prompt 含义：让 Agent 调用 ChEMBL（数据库）、RDKit/datamol（分子）、DiffDock（对接）、PubMed（文献）、COSMIC（突变）、可视化与报告等技能，一次性完成多步流程。
+- 单细胞 RNA-seq 分析：组合 NCBI Gene、UniProt、STRING、Reactome/KEGG、Torch Geometric、Arboreto、Open Targets、PyMC、NetworkX、GEO 等技能进行从注释、互作到网络重建与可视化。
+这些“提示词即工作流”的能力，使研究团队能把原本数天到数周的迭代压缩为一次可控的对话与自动化执行。
+### 3) 工程化与可维护性：测试、CI 与安全扫描
+- 每个 skill 若附带 scripts/，必须在 tests/<skill-name>/ 下提供配套测试套件，且在 tests/skill-requirements.toml 中登记；CI 会阻止“有脚本无测试”的 PR；repo 级的结构性合约（frontmatter 合规、本地链接解析、脚本解析、无硬编码路径、--help 行为）由 tests/_meta 检查，保证整体契约不被破坏。
+- 安全：所有技能均通过 Cisco AI Defense Skill Scanner 进行每周增量扫描，至少每 30 天全量重扫；结果发布于 docs/security-report.md；README 明确“技能可执行代码与发起网络请求”，建议用户按需安装、先读 SKILL.md 再信任，并可本地复扫。这在 Agent 生态属于工程化水平较高、风险透明度较好的实践。
+### 4) 安装与部署体验（npx / gh skill / Agent Plugins 三路）
+- npx skills add（标准 Agent Skills 安装器）：一键安装到支持的主机（Claude Code、Claude Cowork、Codex、Gemini CLI、Google Antigravity、Cursor 等）。
+- GitHub CLI（v2.90.0+）：支持交互式安装、指定技能、指定主机、版本锁定（–pin）、批量更新（gh skill update --all）。
+- Agent Plugins 1.0.0 兼容：根目录 plugin.json + skills/ 布局，适配 Cursor、Codex 等插件客户端；官方给出 Cursor 的软链接示例与重载指令，以及手动 git clone 到 ~/.agents/skills 的方案；Hermes 也支持 tap 形式添加。
+### 5) 生态与内容矩阵：文档、示例与社区
+- 文档矩阵：README + docs/examples.md + docs/skills.md + 每个技能自带的 SKILL.md 与 references/，外加多段视频教程（技能 101、文献综述与假设生成、实验协议撰写与预算、回复审稿意见、复现 Nature Medicine 论文等）。
+- 博客与基准：官方博客深度评测关键技能（例如 PyOpenMS 技能在 250 次运行中实现 100% 任务成功、92% 更少的 API 错误；rowan 技能在 pKa/ logD / 对接恢复等基准上接近实验水平；optimize-for-gpu 技能在 12 个库中取得平均 58 倍加速等）。这些“定量指标”让“AI 做科研”从感性判断进入可量化验证时代。
+---
+## 技术栈与架构解析（面向 GitHub 开源项目）
+- 技能格式：遵循 Agent Skills 开放标准，每个技能至少包含 SKILL.md，内嵌 YAML frontmatter（如 metadata.version、name、description 等）；支持分发脚本、参考资料、模板等附加资产。Agent 在启动时只读“元数据”（Discovery），命中任务后再完整加载技能指令（Activation），按需执行（Execution）。
+- 目录组织（基于树视图抽样）：
+  - 根目录含 README.md、LICENSE.md（MIT）、SECURITY.md、pyproject.toml、plugin.json、.github/workflows/（含 release.yml、security-scan.yml）、docs/ 与 scientific-skills/ 等结构；scientific-skills/ 下以每个技能为子目录（如 scientific-skills/adaptyv/SKILL.md 与 references/），另有 scan_skills.py 用于扫描与元信息处理。
+  - 注意：README 在 v2.43.0+ 调整为 skills/ 布局以对齐 Agent Skills 标准，历史路径 scientific-skills/<name> 需要更新为 skills/<name>（文档中的 FAQ 与故障排除部分明确给出迁移说明）。
+- CI/CD 与质量门禁：
+  - 技能测试工作流（Skill Tests）在每次 PR 运行结构性合约与标准库-only 测试；完整的 --isolated 扫描会在本地或定时任务中构建约 100 个隔离环境进行全量测试。这保证了“技能增删改”不会破坏整体稳定性。
+- 依赖与包管理：
+  - 仓库工具链要求 Python 3.13+；各技能的 Python 依赖可能支持更广范围。安装依赖统一采用 uv（更快更现代的 Python 包管理器），README 给出 macOS/Linux 与 Windows 的安装命令与替代方案。
+- 安全与合规：
+  - SECURITY.md 与安全扫描工作流构成了纵深防护；README 明确“个体技能可能使用不同许可证，需逐一核对其 license 字段”，仓库本体为 MIT 但“按技能许可证合规”是用户责任。这在复杂聚合型仓库中是非常必要的分层授权实践。
+---
+## 上手门槛与部署体验
+- 门槛评估：
+  - 对完全小白：需要先会用任意一种“支持 Agent Skills 的 Agent/IDE 客户端”（如 Cursor、Claude Code、Codex、Gemini CLI 等）。不过 README 提供了“Getting Started with Scientific Agent Skills”视频与“K-Dense BYOK”桌面本地部署路径，可以大大降低第一次使用的认知成本。
+  - 对开发者/研究人员：掌握终端与 GitHub 基本操作即可，建议安装 uv 并使用 gh skill 或 npx skills add 进行自动化安装与版本管理。
+- 安装示例（核心代码片段）
+  - 使用 npx 一键添加（推荐给支持 Agent Skills 的主机）：
+    - npx skills add K-Dense-AI/scientific-agent-skills
+  - 使用 GitHub CLI 交互式安装与更新：
+    - 安装全部：gh skill install K-Dense-AI/scientific-agent-skills
+    - 仅安装单个技能：gh skill install K-Dense-AI/scientific-agent-skills scanpy
+    - 指定主机：gh skill install K-Dense-AI/scientific-agent-skills --agent cursor
+    - 版本锁定（可复现安装）：gh skill install K-Dense-AI/scientific-agent-skills --pin v2.64.0
+    - 更新所有技能：gh skill update --all
+  - Cursor 插件式手动安装：
+    - mkdir -p ~/.cursor/plugins/local
+    - ln -s "$(pwd)" ~/.cursor/plugins/local/scientific-agent-skills
+    - 然后在 Cursor 中执行“Developer: Reload Window”，在 Customize 中确认技能加载。
+- 实战 Prompt 示例（可直接用于已装技能的 Agent）：
+  - “Use available skills you have access to whenever possible. Query ChEMBL for EGFR inhibitors (IC50 < 50nM), analyze structure-activity relationships with RDKit, generate improved analogs with datamol, perform virtual screening with DiffDock against AlphaFold EGFR structure, search PubMed for resistance mechanisms, check COSMIC for mutations, and create visualizations and a comprehensive report.”
+---
+## 目标人群与收益
+- 目标人群：
+  - 科研人员（生命科学、化学、医学、药学、材料、物理、工程、地学等），特别是需要“从数据到结论”快速迭代的人。
+  - 药企/生物技术/临床研究机构的数据科学家与生物信息工程师，需要在实验设计、文献综述、证据汇总与合规文档上加速的团队。
+  - 使用 Cursor / Claude Code / Codex 等开发工具的研发者，希望把通用编码 Agent 变为“科学域专家助手”。
+- 收益（痛点 → 解法）：
+  - 痛点：API 文档分散、参数变更、合规流程冗长 → 解法：技能库内含版本感知的流程与示例，省去数日文献与接口调研。
+  - 痛点：多学科协作链条断裂（例如湿实验与干实验接口不清）→ 解法：同一技能库覆盖从湿实验自动化（Opentrons/LIMS）到干实验分析（单细胞、分子对接、PK/PD），确保语言与流程对齐。
+  - 痛点：可复现性差与结果难以溯源 → 解法：技能强调“证据边界”“来源保留”“行号级引用”，将产出与输入/步骤绑定，便于同行评审与监管审查。
+  - 痛点：临床与监管领域不敢放手让 AI 生成 → 解法：技能明确“聚合/草稿/研究用途，不作临床诊断或认证/放行”等界限，帮助团队在 AI 辅助与法规合规间找到可操作的平衡。
+---
+## 竞品/同类对比
+- 与 Awesome-Scientific-Skills 等聚合列表对比：
+  - Awesome 类项目主要是“目录与索引”，需要在众多仓库中自行挑选与拼装；本仓库属于“已验证技能集合”，每个技能附带测试、文档与安全扫描，可直接在 Agent 中调用，开箱即用。
+- 与 K-Dense Web（托管平台）对比：
+  - 官方博客明确指出，Scientific Agent Skills 是“预览版/本地 BYOK 基础设施”，而 K-Dense Web 提供托管算力与端到端长周期任务自主执行；若团队更重视数据隐私与本地控制，可选用 BYOK + 技能库；若希望“完全托管、减少运维”，则 K-Dense Web 更合适。
+- 与直接让模型调用 Python 包相比：
+  - 模型会写代码但不熟悉具体实验室/团队/监管的最佳实践，技能库在“如何写”上注入专家经验与安全边界，显著提升成功率和可靠性（官方基准的 PyOpenMS、rowan、optimize-for-gpu 等均给出数值证据）。
+---
+## 局限与不足
+- 上下文与选配：技能数量庞大（163+），README 明确建议“按需装选集”，避免全量安装导致上下文膨胀与加载变慢。
+- 依赖管理复杂度：不同技能对 Python 包与版本有不同要求，需要用 uv 按 SKILL.md 逐个安装，这对完全不熟悉 Python 生态的用户仍有门槛。
+- 许可证碎片化：仓库本体 MIT，但每个技能独立标注 license，用户在商业或严格合规场景下需要逐一核验；虽然 README 提供了指引，但仍是潜在合规风险点。
+- 安全网关与策略：技能可执行代码、发起网络请求与文件读写，在安全敏感环境中（如临床生产、涉密环境）需搭配沙盒（如 NVIDIA OpenShell）或策略网关使用；官方博客也给出“在沙箱中运行 AI Scientist”的实践建议。
+- 更新与维护：项目 Stars 与 Fork 数量与公开基准表明其活跃度较高，但对小众子领域技能的更新节奏仍取决于上游包/接口的变更与社区贡献。官方 FAQ 提到“定期更新技能与发布说明”，但建议使用者对关键任务锁定版本（–pin）以确保可复现。
+---
+## 社区活跃度与生命力（数据与事实）
+- Star 与 Fork：公开页显示约 34k+ Stars、3.3k+ Forks；第三方 Star History 与 TrendShift 显示其在 2026 年 3 月曾登顶 GitHub Trending 第一，属于“现象级”科研 AI 开源项目。
+- Issues 与 PR：公开 Issues 与 PR 数量较少（当前仅个位数），表明项目以“官方驱动+规范贡献”为主，社区问题通过文档与 FAQ 已被前置化解。PR 流程清晰且必须通过测试与结构合约，保证质量不因膨胀而下降。
+- 贡献者与更新频率：Contributors/Commits/Code frequency 等页面与定期博客发布显示活跃的维护节奏与持续的技能扩展；官方社交媒体与 YouTube 频道定期发布新技能与演示视频，生态粘性较强。
+---
+## Demo / 核心代码与配置示例
+- 提示词即工作流（无代码，落地最快）：
+  - “Use available skills you have access to whenever possible. Query NCBI Gene for annotations, retrieve sequences from UniProt, identify interactions via STRING, map to Reactome/KEGG pathways, analyze topology with Torch Geometric, reconstruct GRNs with Arboreto, assess druggability with Open Targets, model with PyMC, visualize networks, and search GEO for similar patterns.”
+- 安装与版本管理（代码）：
+  - npx skills add K-Dense-AI/scientific-agent-skills
+  - gh skill install K-Dense-AI/scientific-agent-skills --pin v2.64.0
+  - gh skill update --all
+  - Cursor 插件安装：
+    - mkdir -p ~/.cursor/plugins/local
+    - ln -s "$(pwd)" ~/.cursor/plugins/local/scientific-agent-skills
+- 本地测试与合约检查（代码）：
+  - 结构性与标准库-only 测试：
+    - uv run python -m pytest tests/_meta -q
+  - 单个技能测试：
+    - uv run --with pytest python -m pytest tests/<skill-name> -q
+  - 全量隔离环境扫描：
+    - uv run python tests/run_all.py --isolated
+---
+## 结语与行动建议（终极评判）
+- 判决：Scientific Agent Skills 把“通用模型能做什么”升级为“在科研与合规场景下该怎么做、怎么做才对”的工程化资产集合。对于科研机构、药企、临床研究团队与个人研究者，这是一套“低门槛接入、高上限扩展”的 AI 协作基础设施；其测试、安全扫描与标准化布局使它在众多 Agent 技能仓库中具备明显优势。
+- 建议行动：
+  - 如果你已用 Cursor/Claude Code/Codex 等客户端：立即用 npx skills add K-Dense-AI/scientific-agent-skills 一键安装，先用 README 中的“药物发现”或“系统生物学网络分析”提示词跑一次完整流程，直观感受“技能链”的威力。
+  - 若对数据隐私敏感：搭配 K-Dense BYOK 本地运行，或在沙盒（如 NVIDIA OpenShell）中调用技能，避免直接在生产环境中执行未审查的脚本与网络请求。
+  - 团队层面：在内部建立“技能选集与版本锁定”策略，按课题组或业务线只装相关技能，配合 CI 复用 repo 级测试与安全扫描流程，把技能纳入自身的软件质量与合规体系。
+---
+## 附录：小白能直接抄用的“最小可用流程”
+- 步骤 1：确保有 GitHub CLI 并更新到 2.90.0+，安装 uv：
+  - macOS/Linux：curl -LsSf https://astral.sh/uv/install.sh | sh
+  - Windows（PowerShell）：powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+- 步骤 2：在终端执行：
+  - gh skill install K-Dense-AI/scientific-agent-skills --agent cursor（或你所用的客户端）
+- 步骤 3：重启客户端，在 Agent 对话框中输入 README 中的任一示例 Prompt，观察其是否正确识别并调用对应技能完成端到端流程。
+---
+## 参考与延伸阅读
+- 官方仓库 README（安装、示例、FAQ、License）：
+- Agent Skills 官方标准（SKILL.md 定义与渐进式加载机制）：
+- K-Dense 博客（技能基准、Agent 能力边界、K-Dense Web vs Scientific Agent Skills 对比）：
+- Awesome-Scientific-Skills（作为聚合列表对照）：
+- Star History 与 TrendShift（活跃度与趋势）：

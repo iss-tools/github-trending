@@ -8,13 +8,13 @@
       "repo": "public-apis/public-apis",
       "description": "A collective list of free APIs",
       "language": "Python",
-      "stars": 470859,
-      "forks": 51919,
+      "stars": 470965,
+      "forks": 51936,
       "starsAdded": 6747,
       "createdAt": "2026-08-23T16:33:00.071Z",
       "githubData": {
-        "stars": "470559",
-        "forks": "51889",
+        "stars": "470965",
+        "forks": "51936",
         "description": "A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.",
         "topics": [
           "api",
@@ -547,13 +547,13 @@
       "repo": "openai/codex",
       "description": "Lightweight coding agent that runs in your terminal",
       "language": "Rust",
-      "stars": 118692,
-      "forks": 18092,
+      "stars": 118744,
+      "forks": 18108,
       "starsAdded": 11424,
       "createdAt": "2026-08-25T20:00:03.918Z",
       "githubData": {
-        "stars": "118325",
-        "forks": "18028",
+        "stars": "118744",
+        "forks": "18108",
         "description": "Lightweight coding agent that runs in your terminal - openai/codex",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -600,13 +600,13 @@
       "repo": "harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 116807,
-      "forks": 17763,
+      "stars": 116866,
+      "forks": 17776,
       "starsAdded": 9019,
       "createdAt": "2026-08-23T16:33:00.048Z",
       "githubData": {
-        "stars": "116566",
-        "forks": "17727",
+        "stars": "116866",
+        "forks": "17776",
         "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. - harry0703/MoneyPrinterTurbo",
         "topics": [
           "ai-video-generator",
@@ -669,13 +669,13 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 112089,
-      "forks": 6152,
+      "stars": 112350,
+      "forks": 6159,
       "starsAdded": 1598,
       "createdAt": "2026-08-26T02:08:48.885Z",
       "githubData": {
-        "stars": "111327",
-        "forks": "6120",
+        "stars": "112351",
+        "forks": "6159",
         "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail",
         "topics": [
           "agent-skills",
@@ -733,13 +733,59 @@
       "repo": "browser-use/browser-use",
       "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "language": "Python",
-      "stars": 110720,
-      "forks": 12177,
+      "stars": 110855,
+      "forks": 12179,
       "starsAdded": 135,
       "createdAt": "2026-08-26T15:41:08.176Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "110856",
+        "forks": "12179",
+        "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease. - browser-use/browser-use",
+        "topics": [
+          "ai-agents",
+          "ai-tools",
+          "browser-automation",
+          "browser-use",
+          "llm",
+          "playwright",
+          "python"
+        ],
+        "license": "MIT license",
+        "homepage": "https://browser-use.com"
+      },
+      "summaryData": {
+        "title": "browser-use 深度评测",
+        "cover": "",
+        "summary": "让大模型像人类一样操控浏览器的顶级开源框架。",
+        "ability": [
+          "AI操控浏览器",
+          "多模型兼容",
+          "云端托管服务",
+          "自动化长链路任务",
+          "解决验证码与反爬"
+        ],
+        "suitable": [
+          "自动化开发者",
+          "爬虫工程师",
+          "QA测试人员",
+          "AI Agent研究员",
+          "运营人员"
+        ],
+        "description": "browser-use 是一个开源 Python 框架，让大模型像人类一样控制浏览器。它解决了传统脚本维护难的问题，支持本地与云端双轨部署，能高效完成复杂网页任务。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "自动化"
+        ],
+        "tags": [
+          "GitHub开源",
+          "Python",
+          "AI Agent",
+          "浏览器自动化",
+          "LLM"
+        ]
+      },
+      "contentDetail": "<|assistant|>为了评估社区活跃度与维护状态，我需要了解项目的最近提交频率、Issues 与 PR 的状态与数量。</think>\n<|assistant|>打开“Apply to job”示例文件以便提取可复现的最简 Demo 代码；打开 Issues 页面评估社区响应与 Bug 状态。</think>\n# browser-use 深度评测：把浏览器交给 AI，这件事它做到了 87.4 分\n---\n## 一句话总结\nbrowser-use 是一个用 Python 写的“让大模型直接操控浏览器”的开源 Agent 框架，它在 Odysseys 真实长程网页任务基准上以 87.4% 的平均分登顶，当前 GitHub Stars 超 11 万，是构建 AI 浏览器自动化与生产级 Web Agent 的首选组件之一。\n---\n## 背景与痛点：它为什么会出现？\n- “写脚本自动化”的痛点：传统浏览器自动化（Selenium、Playwright）需要你手写选择器、等待逻辑、异常处理，目标网站一改 UI，脚本就断。\n- “大模型能懂网页”但不“会操作网页”：像 GPT/Claude 这类模型能理解网页内容，但缺一套可靠、可控的工具来执行点击、填表、翻页等动作。\n- 登录与验证码难搞：要实现长期运行、带认证会话的自动化，往往会撞上 Cloudflare / CAPTCHA、IP 封禁等现实问题。\n- 性能与稳定性难以兼顾：自己写 Agent 很容易陷入“多步任务失败率爆炸、调试成本极高”的困境。\nbrowser-use 的做法是：把浏览器当作一套标准化的工具集，加上专门优化的 Agent 逻辑与系统提示，让大模型像“人手”一样直接操作浏览器；同时提供云端基础设施（Browser Use Cloud），把“浏览器指纹、代理轮换、验证码、扩缩容、内存管理”等脏活抽象掉，让开发者聚焦任务本身。\n---\n## 核心亮点与功能剖析\n### 1) 一句话启动：Agent 与浏览器的一键对齐\n- 安装只需 `uv pip install browser-use && uvx browser-use install`，后者会安装 Chromium 依赖。官方 Quickstart 给出极简示例：\n- 你只需创建 `Agent(task=..., llm=...)`，然后 `await agent.run()`，其余由 Agent 自主决策。对于想快速上手的开发者，这是一个明显 DX 友好的设计（开发者体验好）。\n### 2) 模型无关 + 自家优化模型\n- 支持接入主流商用 LLM（OpenAI、Anthropic、Google），也兼容本地模型（如 Ollama）。通过 `ChatBrowserUse(provider/model)` 统一入口，只需一个 `BROWSER_USE_API_KEY` 就能调用多家模型，降低配置复杂度。\n- 官方还提供了专门为浏览器自动化任务优化的 `bu-*` 模型（如 `bu-2-0-mini-preview`），号称在任务完成上平均更快、准确率更高。这种“端到端为浏览器场景微调”的思路，是项目的重要差异点。\n### 3) Open Source（本地）与 Cloud（托管）双轨\n- 开源版：免费、可自托管、可深度定制 LLM、浏览器参数与工具，适合需要完全控制与数据不出域的场景。\n- 托管版：提供Managed浏览器池、代理轮换、隐身指纹、验证码解决、持久化文件系统与内存，并给出 HTTP API 一键跑任务。对需要大规模生产并愿意为稳定性付费的用户非常友好。\n### 4) 性能与基准表现：Odysseys 排名第一\n- Odysseys 是一个“真实长程网页任务”的基准（200 个任务），官方页显示 Browser Use 在其中以 87.4% 的平均得分位居第一，超过微软、OpenAI、Anthropic、Google 的 computer-use 方案。\n- README 提到项目在 100 个真实浏览器任务上做了开源基准，并有 benchmark 仓库可复现。\n### 5) 自定义工具与 MCP 集成（Model Context Protocol）\n- 支持以装饰器方式添加自定义工具，扩展 Agent 能力边界，例如调用你自己的 API 或数据库。\n- 提供独立的 `browser-use-rsi` 仓库，将 browser-use 作为 MCP 服务器供 Claude Desktop 等兼容客户端调用；配置示例清晰，直接使用 `uvx browser-use[cli] --mcp` 启动。\n### 6) 真实浏览器会话与认证处理\n- 提供示例展示如何复用现有 Chrome Profile（登录态）进行任务，以及如何通过 `profile-use` 与云端浏览器同步 Profile，这对需要长期登录态的自动化极其重要。\n### 7) 文档与生态\n- 官方文档站结构清晰（Human Quickstart、Supported Models、CLI、自定义、示例、开发、监控、求助），并提供“参数全集”页面以环境变量调优 Agent 行为。\n- 提供与 Claude Code、Cursor 等 IDE/编辑器的“技能”集成方式，可通过 CLI 一键安装。\n---\n## Demo/代码示例：开发者如何用起来\n### 最小可用示例（Python）\n- 官方 Quickstart（以 ChatBrowserUse 为例）：\n- 若你想用自己的 OpenAI/Anthropic/Google Key，也可直接用 `ChatOpenAI/ChatAnthropic/ChatGoogle` 初始化 LLM，API 风格统一。\n### MCP 集成示例（Claude Desktop）\n来自 `browser-use-rsi` 仓库：在 Claude Desktop 的 MCP 配置中加入 `browser-use` 服务器即可为 Claude 赋予浏览器自动化能力。\n---\n## 技术栈与架构解析\n- 语言与版本：Python 3.11+，官方推荐 3.12。安装脚本体现了对 `uv`（Rust 写的极快 Python 包与项目管理器）的一流支持。\n- 底层浏览器：基于 Chromium 生态。官方 Quickstart 中 `uvx browser-use install` 会安装 Chromium 依赖，意味着项目封装了浏览器安装/驱动管理，降低上手成本。\n- Agent 与工具解耦：Agent 负责任务拆解与状态管理，`Browser` 负责浏览器上下文与动作，`Tools` 负责扩展能力。这种分层有利于单元测试与替代组件。\n- 文档中提到可自定义超时、Tab 管理、导航事件、存储与下载超时，说明对异步任务、并行会话有专门设计；与“多 Tab 并行工作”的能力一致。\n- 架构上的亮点：将“大模型的决策能力”通过标准化动作（导航、点击、填表、提取）接入浏览器，并配合系统提示与重试/记忆机制，从而在开放 Web 环境中保持较高成功率。Odysseys 排名印证了这套工程化设计的有效性。\n---\n## 上手门槛与部署体验\n- 安装体验：两步（pip/uv 安装 + `.env` 配 Key）。示例代码 copy-paste 即可跑，门槛对 Python 开发者友好。\n- 文档完善度：Human Quickstart 覆盖安装、选择 LLM、首次运行、生产化，页面结构清晰；同时有 CLI、Terminal、Supported Models、All Parameters 等细化页面，方便深入与调优。\n- 是否支持 Docker 一键部署：官方文档中“Sandbox”与“Going to Production”明确鼓励使用 Cloud（托管），并给出 `@sandbox` 装饰器示例，将浏览器与 Agent 放在同一执行环境以减少延迟。开源仓库 README 与当前打开页面未直接提供 Dockerfile，但社区与 Cloud 文档的“Profile 同步指南”说明部署路径清晰，适配主流 CI/CD 与容器化环境。\n---\n## 目标人群与收益：谁适合用它、能换来什么\n- 自动化开发者 / 爬虫工程师：可把 browser-use 当作“智能路由 + 浏览器工具”的组合，在面对频繁改版或复杂交互流程的网站时，相比传统“写死选择器 + 等待 + 重试”的脚本，在维护成本与成功率上有明显收益。\n- QA 与 E2E 测试团队：可用自然语言描述测试路径，让 Agent 探索式执行异常路径，实现“人思维但机器执行”的验收测试，尤其是在多环境/多数据场景下，复用性与可扩展性更强。\n- 产品/运营与内容运营人员：通过 Cloud API 或集成到内部系统，自动完成内容采集、竞品比对、报表整理等重复性操作，将精力从“点与填”转为“决策与审核”。\n- AI Agent 研究与工程师：作为计算机-use（computer-use）与浏览器-use 的研究基座，配合公开的 benchmark 与 Odysseys 排名，可做消融实验与策略评估。\n- 开源项目作者与创业者：将浏览器自动化能力嵌入自家产品，例如智能表单填充、自动申请/注册流、一体化流程编排，通过 SDK/MCP 快速集成，无需从零造轮子。\n---\n## 竞品/同类对比：它在领域中的位置\n- 与传统自动化框架（Selenium、Playwright）：browser-use 不替代它们，而是“叠加一层智能大脑”。Selenium/Playwright 更适合确定性的回归测试与特定场景的稳定脚本，而 browser-use 更适合不确定、频繁变化与复杂多步任务。Playwright 的优势在于底层性能与多语言支持；browser-use 的优势在于 LLM 决策与任务抽象层。\n- 与其他 AI 浏览器 Agent（Skyvern、Browserbase、Browserless 等）：一些评测文章将 browser-use 列为“开源类领头羊”，并以 Stars 与 Odysseys 得分为佐证。这类竞品多聚焦云端与托管场景，也提供“隐身浏览器、代理、验证码”等能力。browser-use 的独特竞争力在于：开源 SDK、多模型兼容、MCP 集成与自家优化模型，形成“本地优先、云端增强”的双轨策略。\n- 与大模型自带“浏览/工具调用”能力（如某些模型带上网工具）：通用浏览工具常不稳定且缺乏细粒度控制；browser-use 把“动作”拆解更细并提供可编程 API、历史回放与自定义工具，更适合生产级集成与可观测性要求。\n---\n## 局限与不足：它还做不到/做不好的地方\n- 资源消耗：README 与 FAQ 明确提醒“Chrome 较吃内存，大量并行 Agent 要谨慎”。在本地跑多条并发任务时，机器资源规划与进程/浏览器生命周期管理需自行处理。\n- 验证码与风控：开源方案本身不带自动验证码与高级指纹绕过；对强风控网站，官方推荐转向 Cloud 的 Stealth 浏览器与代理能力，这意味着复杂场景下你可能依赖付费服务。\n- 模型成本与延迟：Agent 行为严重依赖 LLM 调用，多步任务会带来累积的 Token 成本与网络延迟。即便有自家的 `bu-*` 优化模型，你仍需在设计任务时控制步数与上下文长度。\n- 学习曲线：对不熟悉 Python Async/环境的非开发者，虽然有 Cloud API 与 CLI 降低门槛，但真正自定义、调试与生产化仍需理解 Agent 行为与浏览器机制。\n- 网站变更与策略风险：目标站点改动 UI 或反爬策略，Agent 仍需要重新适配或调整提示；这比传统脚本稍好，但并非“一劳永逸”。\n---\n## 商业模式与性价比\n- 开源库：MIT 协议，可商用、可修改、可分发，适合不想锁定云服务的团队自建。\n- Cloud 服务：按并发与任务计费，提供免费额度与阶梯套餐（Free、Dev、Business 等），并以“每个浏览器小时成本”为性价比指标。官方页强调“最低与最快”的定位，结合 Odysseys 的高成功率和多模型支持，如果你需要多并发、强反爬与高稳定性，Cloud 的 ROI 较明显。\n---\n## 社区活跃度与生命力\n- GitHub Stars 超过 11 万、Fork 约 1.2 万，Issues 与 PR 数量可见社区参与度。\n- 官方 Discord 与文档站入口直接列在项目页，支持讨论与求助，体现较强的运营与响应意愿。\n- Issues 页中能看到围绕新 Tab 切换、文件写入状态等细节问题的讨论与改进提案，说明项目在持续迭代与修复。\n---\n## 结语与行动建议\n- 若你是“想立刻把浏览器交给 AI 办事”的工程师或产品团队，browser-use 是当前社区生态最成熟、基准成绩最亮眼的选项之一：一句话启动 + 开源 SDK + Cloud 增强 + MCP 集成，兼顾本地可控与生产可扩。\n- 建议的起步路径：\n  1) 本地跑通 Human Quickstart 示例，熟悉 Agent + LLM 基本用法；\n  2) 针对你要解决的任务，写一个极简“任务描述”，观察 Agent 行为与历史，调整提示与超时；\n  3) 若有登录态或复杂页面，参考“real_browser”示例与 Cloud 的 Profile 同同方案，把会态与持久化打通；\n  4) 到生产阶段再决定是否迁到 Cloud 的 Sandbox 或 HTTP API，以换取隐身、代理与运维便利。\n总体判断：browser-use 已经把“浏览器 + 大模型”这件事做到了可工程化、可复制、可交付的程度。它在 Odysseys 的表现与社区体量证明了这一点。只要你愿意投入一点时间理解 Agent 的行为模式，回报是非常可观——从“写脚本”到“写任务”，这正是自动化范式的一次小而重要的升级。"
     },
     {
       "id": "44bdcba2-0c09-4e98-b8f3-561b743662fe",
@@ -809,13 +855,13 @@
       "repo": "earendil-works/pi",
       "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
       "language": "TypeScript",
-      "stars": 97671,
-      "forks": 12074,
+      "stars": 97730,
+      "forks": 12087,
       "starsAdded": 20131,
       "createdAt": "2026-08-23T13:14:26.654Z",
       "githubData": {
-        "stars": "97368",
-        "forks": "12041",
+        "stars": "97730",
+        "forks": "12087",
         "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI - earendil-works/pi",
         "topics": [],
         "license": "MIT license",
@@ -936,13 +982,13 @@
       "repo": "microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
-      "stars": 67111,
-      "forks": 12947,
+      "stars": 67140,
+      "forks": 12949,
       "starsAdded": 14291,
       "createdAt": "2026-08-23T13:14:26.641Z",
       "githubData": {
-        "stars": "66993",
-        "forks": "12938",
+        "stars": "67140",
+        "forks": "12949",
         "description": "12 Weeks, 24 Lessons, AI for All! Contribute to microsoft/AI-For-Beginners development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -1136,13 +1182,13 @@
       "repo": "diegosouzapw/OmniRoute",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors",
       "language": "TypeScript",
-      "stars": 55906,
-      "forks": 7688,
+      "stars": 56110,
+      "forks": 7710,
       "starsAdded": 25758,
       "createdAt": "2026-08-23T13:14:26.642Z",
       "githubData": {
-        "stars": "55389",
-        "forks": "7609",
+        "stars": "56110",
+        "forks": "7710",
         "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors - diegosouzapw/OmniRoute",
         "topics": [
           "a2a",
@@ -1211,13 +1257,13 @@
       "repo": "Alishahryar1/free-claude-code",
       "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 50171,
-      "forks": 8135,
+      "stars": 50280,
+      "forks": 8144,
       "starsAdded": 566,
       "createdAt": "2026-08-26T15:41:08.046Z",
       "githubData": {
-        "stars": "47740",
-        "forks": "7854",
+        "stars": "50280",
+        "forks": "8144",
         "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code",
         "topics": [],
         "license": "MIT license",
@@ -1262,13 +1308,13 @@
       "repo": "rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 49464,
-      "forks": 8620,
+      "stars": 49534,
+      "forks": 8625,
       "starsAdded": 837,
       "createdAt": "2026-08-26T02:08:48.762Z",
       "githubData": {
-        "stars": "49188",
-        "forks": "8585",
+        "stars": "49534",
+        "forks": "8625",
         "description": "Learn it. Build it. Ship it for others. Contribute to rohitg00/ai-engineering-from-scratch development by creating an account on GitHub.",
         "topics": [
           "agents",
@@ -1404,13 +1450,13 @@
       "repo": "PostHog/posthog",
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
-      "stars": 39222,
-      "forks": 3289,
+      "stars": 39237,
+      "forks": 3291,
       "starsAdded": 1426,
       "createdAt": "2026-08-25T20:00:03.948Z",
       "githubData": {
-        "stars": "39181",
-        "forks": "3287",
+        "stars": "39237",
+        "forks": "3291",
         "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP. - PostHog/posthog",
         "topics": [
           "ab-testing",
@@ -1474,13 +1520,13 @@
       "repo": "tinyhumansai/openhuman",
       "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "language": "Rust",
-      "stars": 38093,
-      "forks": 3750,
+      "stars": 38146,
+      "forks": 3753,
       "starsAdded": 522,
       "createdAt": "2026-08-26T02:08:48.772Z",
       "githubData": {
-        "stars": "37879",
-        "forks": "3737",
+        "stars": "38147",
+        "forks": "3753",
         "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher. - tinyhumansai/openhuman",
         "topics": [],
         "license": "GPL-3.0 license",
@@ -1528,13 +1574,13 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 36140,
-      "forks": 12330,
+      "stars": 36319,
+      "forks": 12383,
       "starsAdded": 1299,
       "createdAt": "2026-08-26T02:08:48.685Z",
       "githubData": {
-        "stars": "35542",
-        "forks": "12188",
+        "stars": "36319",
+        "forks": "12383",
         "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search",
         "topics": [
           "ai",
@@ -1595,13 +1641,69 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 34599,
-      "forks": 3353,
+      "stars": 34664,
+      "forks": 3357,
       "starsAdded": 130,
       "createdAt": "2026-08-26T15:41:08.187Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "34665",
+        "forks": "3357",
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "license": "MIT license",
+        "homepage": "https://k-dense.ai"
+      },
+      "summaryData": {
+        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
+        "cover": "",
+        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
+        "ability": [
+          "跨领域科研技能库",
+          "数据库与工具集成",
+          "标准化 Agent 技能配置",
+          "复杂科研工作流自动化",
+          "安全测试与合规扫描"
+        ],
+        "suitable": [
+          "生命科学研究人员",
+          "AI 辅助编程用户",
+          "生物信息工程师",
+          "药企研发团队",
+          "AI 应用开发者"
+        ],
+        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "科研工具"
+        ],
+        "tags": [
+          "AI Agent",
+          "开源",
+          "科研",
+          "自动化",
+          "生物信息"
+        ]
+      },
+      "contentDetail": "# Scientific Agent Skills 深度评测\n## 一句话总结\nScientific Agent Skills 是一个“开箱即用、跨科学域、163+ 已验证技能”的 AI Agent 技能库，它把生物医药、化学、医学、材料、物理、工程、地学与科研写作等领域的最佳实践与数据库访问封装为标准化 SKILL.md，能显著提高研究型 AI Agent 的可靠性与产出效率，是真正把“通用模型”升级为“领域专家”的关键基础设施。\n---\n## 背景与痛点\n- AI 模型在科学计算与数据分析的原始能力已接近甚至追上传统软件，但研究者常常卡在“最后一公里”：正确调用专业 API、遵守实验室规范与质量体系、完成多步骤可复现的流程，以及在敏感领域确保边界清晰、数据可溯源。这促使 K-Dense 提出并实现“Agent Skills”标准化方案：以 SKILL.md 为核心的可携带、可版本化的“技能包”，让 Agent 在需要时按需加载专业指令与资源，而非一次性全量加载上下文。\n- 本仓库原名 “Claude Scientific Skills”，现已扩展为兼容任何支持 Agent Skills 标准的客户端（如 Cursor、Claude Code、Codex、Google Antigravity 等），并将技能从单一模型生态升级为跨生态的标准资产。\n---\n## 核心亮点与功能剖析\n### 1) 覆盖面与组织：163+ 技能 × 跨域 × 标准化\n- 按“技能类型”组织，而非零散堆砌：\n  - 100+ 科学与金融数据库（含统一 database-lookup 覆盖 78+ 公共数据库：PubChem、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov、FRED、USPTO 等；另有 DepMap、Imaging Data Commons、PrimeKG、NCATS ARAX、U.S. Treasury Fiscal Data、Hugging Science、OneKGPd、Genomic Intelligence 等；以及多数据库聚合包如 BioServices、BioPython、gget）。\n  - 70+ 优化的 Python 包技能（RDKit、Scanpy、PyTorch Lightning、scikit-learn、PyTDC、PathML、pydicom、NeuroKit2、PufferLib、QuTiP、GeoPandas、pymatgen、BioPython、Qiskit、OpenMM/MDAnalysis 等）。\n  - 9 个科学平台集成（Benchling、DNAnexus、LatchBio、OMERO、Protocols.io、Open Notebook、Ginkgo Cloud Lab、LabArchives、Opentrons）。\n  - 30+ 分析与沟通工具（文献综述、可溯源写作、保密审稿、全文检索与行号级引用的 Paperclip、Exa Search、宏免 PPTX 海报/幻灯片/示意图、Mermaid 图表等）。\n  - 10+ 研究与临床工具（证据有界假设生成、基金写作、聚集性临床决策支持、PK/PD 建模与剂量、BIDS、ISO/ICH/USP/CLSI 等质量体系证据起草、方法验证等，均标注“非认证/非决策”，仅生成待审核草稿与证据材料）。\n- 机制：每个技能是一个“SKILL.md + 可选脚本/模板/参考资料”的文件夹，符合 Agent Skills 标准的渐进式加载（Discovery/Activation/Execution），既保证上下文可控，又能按需释放专业信息。\n### 2) 多模态与跨域工作流能力（案例化 prompt）\n官方 README 提供了能直接丢给 Agent 的“长提示词”，例如：\n- 药物发现管道（EGFR 抑制剂优先级排序）：\n  - Prompt 含义：让 Agent 调用 ChEMBL（数据库）、RDKit/datamol（分子）、DiffDock（对接）、PubMed（文献）、COSMIC（突变）、可视化与报告等技能，一次性完成多步流程。\n- 单细胞 RNA-seq 分析：组合 NCBI Gene、UniProt、STRING、Reactome/KEGG、Torch Geometric、Arboreto、Open Targets、PyMC、NetworkX、GEO 等技能进行从注释、互作到网络重建与可视化。\n这些“提示词即工作流”的能力，使研究团队能把原本数天到数周的迭代压缩为一次可控的对话与自动化执行。\n### 3) 工程化与可维护性：测试、CI 与安全扫描\n- 每个 skill 若附带 scripts/，必须在 tests/<skill-name>/ 下提供配套测试套件，且在 tests/skill-requirements.toml 中登记；CI 会阻止“有脚本无测试”的 PR；repo 级的结构性合约（frontmatter 合规、本地链接解析、脚本解析、无硬编码路径、--help 行为）由 tests/_meta 检查，保证整体契约不被破坏。\n- 安全：所有技能均通过 Cisco AI Defense Skill Scanner 进行每周增量扫描，至少每 30 天全量重扫；结果发布于 docs/security-report.md；README 明确“技能可执行代码与发起网络请求”，建议用户按需安装、先读 SKILL.md 再信任，并可本地复扫。这在 Agent 生态属于工程化水平较高、风险透明度较好的实践。\n### 4) 安装与部署体验（npx / gh skill / Agent Plugins 三路）\n- npx skills add（标准 Agent Skills 安装器）：一键安装到支持的主机（Claude Code、Claude Cowork、Codex、Gemini CLI、Google Antigravity、Cursor 等）。\n- GitHub CLI（v2.90.0+）：支持交互式安装、指定技能、指定主机、版本锁定（–pin）、批量更新（gh skill update --all）。\n- Agent Plugins 1.0.0 兼容：根目录 plugin.json + skills/ 布局，适配 Cursor、Codex 等插件客户端；官方给出 Cursor 的软链接示例与重载指令，以及手动 git clone 到 ~/.agents/skills 的方案；Hermes 也支持 tap 形式添加。\n### 5) 生态与内容矩阵：文档、示例与社区\n- 文档矩阵：README + docs/examples.md + docs/skills.md + 每个技能自带的 SKILL.md 与 references/，外加多段视频教程（技能 101、文献综述与假设生成、实验协议撰写与预算、回复审稿意见、复现 Nature Medicine 论文等）。\n- 博客与基准：官方博客深度评测关键技能（例如 PyOpenMS 技能在 250 次运行中实现 100% 任务成功、92% 更少的 API 错误；rowan 技能在 pKa/ logD / 对接恢复等基准上接近实验水平；optimize-for-gpu 技能在 12 个库中取得平均 58 倍加速等）。这些“定量指标”让“AI 做科研”从感性判断进入可量化验证时代。\n---\n## 技术栈与架构解析（面向 GitHub 开源项目）\n- 技能格式：遵循 Agent Skills 开放标准，每个技能至少包含 SKILL.md，内嵌 YAML frontmatter（如 metadata.version、name、description 等）；支持分发脚本、参考资料、模板等附加资产。Agent 在启动时只读“元数据”（Discovery），命中任务后再完整加载技能指令（Activation），按需执行（Execution）。\n- 目录组织（基于树视图抽样）：\n  - 根目录含 README.md、LICENSE.md（MIT）、SECURITY.md、pyproject.toml、plugin.json、.github/workflows/（含 release.yml、security-scan.yml）、docs/ 与 scientific-skills/ 等结构；scientific-skills/ 下以每个技能为子目录（如 scientific-skills/adaptyv/SKILL.md 与 references/），另有 scan_skills.py 用于扫描与元信息处理。\n  - 注意：README 在 v2.43.0+ 调整为 skills/ 布局以对齐 Agent Skills 标准，历史路径 scientific-skills/<name> 需要更新为 skills/<name>（文档中的 FAQ 与故障排除部分明确给出迁移说明）。\n- CI/CD 与质量门禁：\n  - 技能测试工作流（Skill Tests）在每次 PR 运行结构性合约与标准库-only 测试；完整的 --isolated 扫描会在本地或定时任务中构建约 100 个隔离环境进行全量测试。这保证了“技能增删改”不会破坏整体稳定性。\n- 依赖与包管理：\n  - 仓库工具链要求 Python 3.13+；各技能的 Python 依赖可能支持更广范围。安装依赖统一采用 uv（更快更现代的 Python 包管理器），README 给出 macOS/Linux 与 Windows 的安装命令与替代方案。\n- 安全与合规：\n  - SECURITY.md 与安全扫描工作流构成了纵深防护；README 明确“个体技能可能使用不同许可证，需逐一核对其 license 字段”，仓库本体为 MIT 但“按技能许可证合规”是用户责任。这在复杂聚合型仓库中是非常必要的分层授权实践。\n---\n## 上手门槛与部署体验\n- 门槛评估：\n  - 对完全小白：需要先会用任意一种“支持 Agent Skills 的 Agent/IDE 客户端”（如 Cursor、Claude Code、Codex、Gemini CLI 等）。不过 README 提供了“Getting Started with Scientific Agent Skills”视频与“K-Dense BYOK”桌面本地部署路径，可以大大降低第一次使用的认知成本。\n  - 对开发者/研究人员：掌握终端与 GitHub 基本操作即可，建议安装 uv 并使用 gh skill 或 npx skills add 进行自动化安装与版本管理。\n- 安装示例（核心代码片段）\n  - 使用 npx 一键添加（推荐给支持 Agent Skills 的主机）：\n    - npx skills add K-Dense-AI/scientific-agent-skills\n  - 使用 GitHub CLI 交互式安装与更新：\n    - 安装全部：gh skill install K-Dense-AI/scientific-agent-skills\n    - 仅安装单个技能：gh skill install K-Dense-AI/scientific-agent-skills scanpy\n    - 指定主机：gh skill install K-Dense-AI/scientific-agent-skills --agent cursor\n    - 版本锁定（可复现安装）：gh skill install K-Dense-AI/scientific-agent-skills --pin v2.64.0\n    - 更新所有技能：gh skill update --all\n  - Cursor 插件式手动安装：\n    - mkdir -p ~/.cursor/plugins/local\n    - ln -s \"$(pwd)\" ~/.cursor/plugins/local/scientific-agent-skills\n    - 然后在 Cursor 中执行“Developer: Reload Window”，在 Customize 中确认技能加载。\n- 实战 Prompt 示例（可直接用于已装技能的 Agent）：\n  - “Use available skills you have access to whenever possible. Query ChEMBL for EGFR inhibitors (IC50 < 50nM), analyze structure-activity relationships with RDKit, generate improved analogs with datamol, perform virtual screening with DiffDock against AlphaFold EGFR structure, search PubMed for resistance mechanisms, check COSMIC for mutations, and create visualizations and a comprehensive report.”\n---\n## 目标人群与收益\n- 目标人群：\n  - 科研人员（生命科学、化学、医学、药学、材料、物理、工程、地学等），特别是需要“从数据到结论”快速迭代的人。\n  - 药企/生物技术/临床研究机构的数据科学家与生物信息工程师，需要在实验设计、文献综述、证据汇总与合规文档上加速的团队。\n  - 使用 Cursor / Claude Code / Codex 等开发工具的研发者，希望把通用编码 Agent 变为“科学域专家助手”。\n- 收益（痛点 → 解法）：\n  - 痛点：API 文档分散、参数变更、合规流程冗长 → 解法：技能库内含版本感知的流程与示例，省去数日文献与接口调研。\n  - 痛点：多学科协作链条断裂（例如湿实验与干实验接口不清）→ 解法：同一技能库覆盖从湿实验自动化（Opentrons/LIMS）到干实验分析（单细胞、分子对接、PK/PD），确保语言与流程对齐。\n  - 痛点：可复现性差与结果难以溯源 → 解法：技能强调“证据边界”“来源保留”“行号级引用”，将产出与输入/步骤绑定，便于同行评审与监管审查。\n  - 痛点：临床与监管领域不敢放手让 AI 生成 → 解法：技能明确“聚合/草稿/研究用途，不作临床诊断或认证/放行”等界限，帮助团队在 AI 辅助与法规合规间找到可操作的平衡。\n---\n## 竞品/同类对比\n- 与 Awesome-Scientific-Skills 等聚合列表对比：\n  - Awesome 类项目主要是“目录与索引”，需要在众多仓库中自行挑选与拼装；本仓库属于“已验证技能集合”，每个技能附带测试、文档与安全扫描，可直接在 Agent 中调用，开箱即用。\n- 与 K-Dense Web（托管平台）对比：\n  - 官方博客明确指出，Scientific Agent Skills 是“预览版/本地 BYOK 基础设施”，而 K-Dense Web 提供托管算力与端到端长周期任务自主执行；若团队更重视数据隐私与本地控制，可选用 BYOK + 技能库；若希望“完全托管、减少运维”，则 K-Dense Web 更合适。\n- 与直接让模型调用 Python 包相比：\n  - 模型会写代码但不熟悉具体实验室/团队/监管的最佳实践，技能库在“如何写”上注入专家经验与安全边界，显著提升成功率和可靠性（官方基准的 PyOpenMS、rowan、optimize-for-gpu 等均给出数值证据）。\n---\n## 局限与不足\n- 上下文与选配：技能数量庞大（163+），README 明确建议“按需装选集”，避免全量安装导致上下文膨胀与加载变慢。\n- 依赖管理复杂度：不同技能对 Python 包与版本有不同要求，需要用 uv 按 SKILL.md 逐个安装，这对完全不熟悉 Python 生态的用户仍有门槛。\n- 许可证碎片化：仓库本体 MIT，但每个技能独立标注 license，用户在商业或严格合规场景下需要逐一核验；虽然 README 提供了指引，但仍是潜在合规风险点。\n- 安全网关与策略：技能可执行代码、发起网络请求与文件读写，在安全敏感环境中（如临床生产、涉密环境）需搭配沙盒（如 NVIDIA OpenShell）或策略网关使用；官方博客也给出“在沙箱中运行 AI Scientist”的实践建议。\n- 更新与维护：项目 Stars 与 Fork 数量与公开基准表明其活跃度较高，但对小众子领域技能的更新节奏仍取决于上游包/接口的变更与社区贡献。官方 FAQ 提到“定期更新技能与发布说明”，但建议使用者对关键任务锁定版本（–pin）以确保可复现。\n---\n## 社区活跃度与生命力（数据与事实）\n- Star 与 Fork：公开页显示约 34k+ Stars、3.3k+ Forks；第三方 Star History 与 TrendShift 显示其在 2026 年 3 月曾登顶 GitHub Trending 第一，属于“现象级”科研 AI 开源项目。\n- Issues 与 PR：公开 Issues 与 PR 数量较少（当前仅个位数），表明项目以“官方驱动+规范贡献”为主，社区问题通过文档与 FAQ 已被前置化解。PR 流程清晰且必须通过测试与结构合约，保证质量不因膨胀而下降。\n- 贡献者与更新频率：Contributors/Commits/Code frequency 等页面与定期博客发布显示活跃的维护节奏与持续的技能扩展；官方社交媒体与 YouTube 频道定期发布新技能与演示视频，生态粘性较强。\n---\n## Demo / 核心代码与配置示例\n- 提示词即工作流（无代码，落地最快）：\n  - “Use available skills you have access to whenever possible. Query NCBI Gene for annotations, retrieve sequences from UniProt, identify interactions via STRING, map to Reactome/KEGG pathways, analyze topology with Torch Geometric, reconstruct GRNs with Arboreto, assess druggability with Open Targets, model with PyMC, visualize networks, and search GEO for similar patterns.”\n- 安装与版本管理（代码）：\n  - npx skills add K-Dense-AI/scientific-agent-skills\n  - gh skill install K-Dense-AI/scientific-agent-skills --pin v2.64.0\n  - gh skill update --all\n  - Cursor 插件安装：\n    - mkdir -p ~/.cursor/plugins/local\n    - ln -s \"$(pwd)\" ~/.cursor/plugins/local/scientific-agent-skills\n- 本地测试与合约检查（代码）：\n  - 结构性与标准库-only 测试：\n    - uv run python -m pytest tests/_meta -q\n  - 单个技能测试：\n    - uv run --with pytest python -m pytest tests/<skill-name> -q\n  - 全量隔离环境扫描：\n    - uv run python tests/run_all.py --isolated\n---\n## 结语与行动建议（终极评判）\n- 判决：Scientific Agent Skills 把“通用模型能做什么”升级为“在科研与合规场景下该怎么做、怎么做才对”的工程化资产集合。对于科研机构、药企、临床研究团队与个人研究者，这是一套“低门槛接入、高上限扩展”的 AI 协作基础设施；其测试、安全扫描与标准化布局使它在众多 Agent 技能仓库中具备明显优势。\n- 建议行动：\n  - 如果你已用 Cursor/Claude Code/Codex 等客户端：立即用 npx skills add K-Dense-AI/scientific-agent-skills 一键安装，先用 README 中的“药物发现”或“系统生物学网络分析”提示词跑一次完整流程，直观感受“技能链”的威力。\n  - 若对数据隐私敏感：搭配 K-Dense BYOK 本地运行，或在沙盒（如 NVIDIA OpenShell）中调用技能，避免直接在生产环境中执行未审查的脚本与网络请求。\n  - 团队层面：在内部建立“技能选集与版本锁定”策略，按课题组或业务线只装相关技能，配合 CI 复用 repo 级测试与安全扫描流程，把技能纳入自身的软件质量与合规体系。\n---\n## 附录：小白能直接抄用的“最小可用流程”\n- 步骤 1：确保有 GitHub CLI 并更新到 2.90.0+，安装 uv：\n  - macOS/Linux：curl -LsSf https://astral.sh/uv/install.sh | sh\n  - Windows（PowerShell）：powershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\n- 步骤 2：在终端执行：\n  - gh skill install K-Dense-AI/scientific-agent-skills --agent cursor（或你所用的客户端）\n- 步骤 3：重启客户端，在 Agent 对话框中输入 README 中的任一示例 Prompt，观察其是否正确识别并调用对应技能完成端到端流程。\n---\n## 参考与延伸阅读\n- 官方仓库 README（安装、示例、FAQ、License）：\n- Agent Skills 官方标准（SKILL.md 定义与渐进式加载机制）：\n- K-Dense 博客（技能基准、Agent 能力边界、K-Dense Web vs Scientific Agent Skills 对比）：\n- Awesome-Scientific-Skills（作为聚合列表对照）：\n- Star History 与 TrendShift（活跃度与趋势）："
     },
     {
       "id": "4f59087e-3b4a-4086-8661-791e1def7701",
@@ -1611,13 +1713,13 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 34278,
-      "forks": 3881,
+      "stars": 34317,
+      "forks": 3883,
       "starsAdded": 307,
       "createdAt": "2026-08-26T02:08:48.897Z",
       "githubData": {
-        "stars": "34148",
-        "forks": "3873",
+        "stars": "34317",
+        "forks": "3883",
         "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official",
         "topics": [
           "claude-code",
@@ -1669,13 +1771,13 @@
       "repo": "volcengine/OpenViking",
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
-      "stars": 33499,
-      "forks": 2550,
+      "stars": 33535,
+      "forks": 2551,
       "starsAdded": 6107,
       "createdAt": "2026-08-23T13:14:26.651Z",
       "githubData": {
-        "stars": "33354",
-        "forks": "2540",
+        "stars": "33535",
+        "forks": "2551",
         "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. - volcengine/OpenViking",
         "topics": [
           "agent-memory",
@@ -1729,13 +1831,13 @@
       "repo": "VoltAgent/awesome-agent-skills",
       "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
       "language": "",
-      "stars": 32484,
-      "forks": 3445,
-      "starsAdded": 488,
+      "stars": 32571,
+      "forks": 3454,
+      "starsAdded": 305,
       "createdAt": "2026-08-26T15:41:08.214Z",
       "githubData": {
-        "stars": "31142",
-        "forks": "3356",
+        "stars": "32571",
+        "forks": "3454",
         "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. - VoltAgent/awesome-agent-skills",
         "topics": [
           "agent-skills",
@@ -1864,13 +1966,13 @@
       "repo": "basecamp/omarchy",
       "description": "Beautiful, Modern & Opinionated Linux",
       "language": "Shell",
-      "stars": 31807,
-      "forks": 3233,
+      "stars": 31907,
+      "forks": 3250,
       "starsAdded": 6841,
       "createdAt": "2026-08-23T13:02:02.642Z",
       "githubData": {
-        "stars": "31448",
-        "forks": "3197",
+        "stars": "31907",
+        "forks": "3250",
         "description": "Beautiful, Modern & Opinionated Linux. Contribute to basecamp/omarchy development by creating an account on GitHub.",
         "topics": [],
         "license": "MIT license",
@@ -1917,13 +2019,13 @@
       "repo": "block/buzz",
       "description": "A hive mind communication platform",
       "language": "Rust",
-      "stars": 30834,
-      "forks": 3918,
+      "stars": 30869,
+      "forks": 3932,
       "starsAdded": 19846,
       "createdAt": "2026-08-23T13:02:02.621Z",
       "githubData": {
-        "stars": "30719",
-        "forks": "3897",
+        "stars": "30869",
+        "forks": "3932",
         "description": "A hive mind communication platform. Contribute to block/buzz development by creating an account on GitHub.",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -1971,13 +2073,13 @@
       "repo": "zhaoxuya520/reverse-skill",
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
       "language": "PowerShell",
-      "stars": 29524,
-      "forks": 4028,
+      "stars": 29561,
+      "forks": 4031,
       "starsAdded": 20443,
       "createdAt": "2026-08-23T13:02:02.640Z",
       "githubData": {
-        "stars": "29349",
-        "forks": "4009",
+        "stars": "29561",
+        "forks": "4031",
         "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端 - zhaoxuya520/reverse-skill",
         "topics": [],
         "license": "MIT license",
@@ -2025,13 +2127,13 @@
       "repo": "modular/modular",
       "description": "The Modular Platform (includes MAX & Mojo)",
       "language": "Mojo",
-      "stars": 29203,
-      "forks": 3107,
+      "stars": 29217,
+      "forks": 3108,
       "starsAdded": 2617,
       "createdAt": "2026-08-23T13:14:26.655Z",
       "githubData": {
-        "stars": "29170",
-        "forks": "3106",
+        "stars": "29217",
+        "forks": "3108",
         "description": "The Modular Platform (includes MAX & Mojo). Contribute to modular/modular development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -2087,13 +2189,13 @@
       "repo": "virgiliojr94/book-to-skill",
       "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
       "language": "Python",
-      "stars": 25795,
-      "forks": 2669,
+      "stars": 25850,
+      "forks": 2674,
       "starsAdded": 15982,
       "createdAt": "2026-08-23T13:14:26.644Z",
       "githubData": {
-        "stars": "25593",
-        "forks": "2645",
+        "stars": "25850",
+        "forks": "2674",
         "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work. - virgiliojr94/book-to-skill",
         "topics": [
           "agent-skills",
@@ -2154,13 +2256,13 @@
       "repo": "TencentCloud/TencentDB-Agent-Memory",
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
-      "stars": 24616,
-      "forks": 2267,
+      "stars": 24657,
+      "forks": 2270,
       "starsAdded": 15253,
       "createdAt": "2026-08-23T13:02:02.633Z",
       "githubData": {
-        "stars": "24491",
-        "forks": "2254",
+        "stars": "24657",
+        "forks": "2270",
         "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks. - TencentCloud/TencentDB-Agent-Memory",
         "topics": [
           "agent",
@@ -2218,13 +2320,13 @@
       "repo": "ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 24551,
+      "stars": 24606,
       "forks": 1562,
       "starsAdded": 14431,
       "createdAt": "2026-08-23T13:02:02.637Z",
       "githubData": {
-        "stars": "24345",
-        "forks": "1555",
+        "stars": "24606",
+        "forks": "1562",
         "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd",
         "topics": [
           "adhd",
@@ -2278,13 +2380,13 @@
       "repo": "freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
-      "stars": 20901,
-      "forks": 2097,
+      "stars": 21159,
+      "forks": 2114,
       "starsAdded": 5329,
       "createdAt": "2026-08-25T20:00:03.910Z",
       "githubData": {
-        "stars": "18910",
-        "forks": "1937",
+        "stars": "21159",
+        "forks": "2114",
         "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 - freestylefly/awesome-gpt-image-2",
         "topics": [
           "agents",
@@ -2395,6 +2497,60 @@
       "contentDetail": "# oMLX：让 Mac 成为本地 AI 的终极引擎\n> 一句话总结：**oMLX 是专为 Apple Silicon 打造的本地 LLM 推理服务器，通过菜单栏管理、智能 SSD 缓存和连续批处理，让本地 AI 体验达到前所未有的流畅和高效。**\n---\n## 1. 背景与痛点：为什么需要 oMLX？\n在 oMLX 出现之前，Apple Silicon 用户运行本地 LLM 面临着诸多挑战：\n- **性能与便利的悖论**：现有服务器要么简单但功能受限，要么强大但配置复杂，难以兼顾易用性和性能。\n- **内存压力与系统稳定性**：加载大型模型容易导致系统崩溃（OOM），需要精细的内存管理。\n- **上下文切换效率低下**：编码代理（如 Claude Code）会频繁使 KV 缓存失效，导致相同前缀被重复计算，浪费算力。\n- **模型管理混乱**：多模型加载/卸载、内存限制、自动淘汰等操作缺乏统一且直观的管理界面。\noMLX 的诞生正是为了解决这些核心痛点，它将**专业级推理性能**与**macOS 原生体验**完美结合。\n## 2. 核心亮点与功能剖析\n### 🔥 2.1 分层 KV 缓存（Hot + Cold Tiered Caching）\n这是 oMLX 最具颠覆性的技术，其灵感来自 vLLM 的块管理机制，但针对 Mac 的硬件特性进行了极致优化。\n```mermaid\nflowchart LR\n    A[请求到来] --> B{检查缓存<br>内存中的热块}\n    B -- 存在 --> C[直接加载<br>极速响应]\n    B -- 不存在 --> D{检查缓存<br>SSD 中的冷块}\n    D -- 存在 --> E[从 SSD 恢复到内存<br>比从头计算快数十倍]\n    D -- 不存在 --> F[执行预填充<br>计算新块]\n    E --> G[写入内存热缓存]\n    F --> G\n    G --> H[响应请求]\n    H --> I{内存热缓存<br>是否已满？}\n    I -- 是 --> J[按 LRU 策略<br>将最久未用块换出至 SSD]\n    I -- 否 --> K[保持现状]\n```\n**技术原理与价值**：\n- **热缓存（RAM）**：高频访问的块常驻内存，提供毫秒级访问速度。\n- **冷缓存（SSD）**：当内存热缓存满时，最久未用的块被换出至 SSD（以 safetensors 格式持久化）。当下次请求匹配到此前缀时，这些块**直接从 SSD 恢复到内存**，而不是从头重新计算。\n- **跨会话持久化**：即使在服务器重启后，之前缓存的内容仍然可用，真正实现了“一次计算，多次复用”。\n**带来的收益**：对于需要频繁切换上下文、回溯历史的工具（如编码代理、聊天机器人），其性能提升是**数量级**的。在博客实测中，Claude Code、OpenClaw 等工具的响应时间从90秒缩短至5秒。\n### ⚡ 2.2 连续批处理（Continuous Batching）\noMLX 基于 mlx-lm 的 `BatchGenerator` 实现了高效的连续批处理。\n- **问题**：传统的静态批处理效率低下，因为不同请求的完成时间不同，导致 GPU 等待。\n- **解决方案**：连续批处理**动态地**将已完成请求的 token 立即分配给新请求，显著提升了 GPU 利用率和整体吞吐量。\n**适用场景**：多用户并发、Agent 工具调用、API 服务等任何需要同时处理多个请求的场景。\n### 🖥️ 2.3 原生 macOS 菜单栏应用与 Web 管理界面\noMLX 的开发者体验（DX）堪称典范。\n- **菜单栏应用**：提供 `.dmg` 安装包，安装后可在顶部菜单栏直接控制服务器（启动/停止）、查看状态、管理模型。\n- **强大的 Admin Dashboard**：内置一个功能完备的 Web UI（`http://localhost:8000/admin`），支持：\n    - 📊 **实时监控**：查看内存使用、吞吐量、缓存命中率。\n    - 🗂️ **模型管理**：从 HuggingFace 搜索并下载模型，一键加载/卸载，固定常用模型，设置模型别名、TTL（空闲超时自动卸载）。\n    - 🎨 **配置档（Profiles）**：保存命名参数集（如不同采样策略），并可作为“虚拟模型”暴露给 API（如 `qwen3-8b:thinking`），无需额外内存。\n    - 💬 **内置聊天界面**：直接与任何已加载的模型聊天，支持历史记录、图片上传（VLM/OCR）、暗黑模式。\n    - 🧪 **性能基准测试**：一键测量模型的预填充（Prefill）和文本生成（Text Generation）速度。\n### 🚀 2.4 多模型支持与集成生态\noMLX 是一个**统一的推理引擎**，而不仅仅是 LLM 服务器。\n| 模型类型 | 支持情况 | 特点 |\n| :--- | :--- | :--- |\n| **文本 LLM** | ✅ 完全支持 | 核心功能，享受所有优化 |\n| **视觉-语言模型（VLM）** | ✅ 完全支持 | 多图聊天、Base64/URL/文件图片输入、工具调用 |\n| **OCR 模型** | ✅ 自动检测优化 | 识别 DeepSeek-OCR, DOTS-OCR, GLM-OCR |\n| **嵌入模型（Embedding）** | ✅ 支持 | 用于语义搜索、RAG |\n| **重排序模型（Reranker）** | ✅ 支持 | 提升检索相关性 |\n**一键集成**：在 Admin Dashboard 中，可以轻松配置与 **OpenClaw, OpenCode, Codex, Hermes Agent, Cursor** 等工具的集成，无需手动编辑配置文件。\n### 🌐 2.5 实验性多 Mac 联合推理\n这是 oMLX 的一个极具前瞻性的功能，允许**将一个大型语言模型分片到多台内存 unequal 的 Mac 上**，通过 MLX pipeline ranks、Thunderbolt 或网络（RDMA/JACCL）进行协同推理。\n- **价值**：突破了单台 Mac 内存上限，让你在 Mac 上能运行**超大模型**（如 122B 参数的 Qwen3.5-A10B-4bit）。\n- **管理**：提供 Cluster Dashboard 处理对等发现、分片规划、负载均衡、性能调优等。\n- **状态**：目前为实验性功能，需要从源码编译，但对拥有多台 Mac 的用户来说是“梦想成真”。\n## 3. 目标人群与收益\n| 用户类型 | 痛点 | oMLX 带来的收益 |\n| :--- | :--- | :--- |\n| **AI 开发者/研究员** | 本地调试模型、评估性能、快速迭代 | 极速推理、灵活配置、多模型统一管理、一键性能测试 |\n| **编码工程师（使用 Agent）** | Claude Code, Cursor 等本地运行时速度慢、易卡顿 | 响应时间从90秒→5秒，流畅的编码体验 |\n| **内容创作者/写作者** | 本地 AI 写作、翻译、摘要，依赖稳定、流畅的输出 | 持久化缓存保证长文本处理效率，菜单栏管理随时可用 |\n| **隐私敏感用户** | 数据不能离线，需要完全本地化的 AI | 100% 本地运行，数据不离 Mac，完全掌控 |\n| **技术爱好者/Mac 用户** | 想充分利用 Apple Silicon 的算力，体验最新技术 | 挖掘 Mac 潜能，享受极客乐趣，项目本身有 20k+ Star |\n## 4. 竞品对比与定位\n为了明确 oMLX 的独特价值，有必要将它与 Apple Silicon 生态中的其他工具进行对比。\n```mermaid\nquadrantChart\n    title Apple Silicon LLM 工具定位矩阵\n    x-axis \"底层框架/引擎\" --> \"上层应用/工具\"\n    y-axis \"通用性\" --> \"专用性\"\n    \"MLX\": [0.2, 0.1]\n    \"MTPLX\": [0.2, 0.9]\n    \"oMLX\": [0.5, 0.5]\n    \"vLLM (via oMLX)\": [0.5, 0.5]\n    \"Ollama\": [0.8, 0.3]\n    \"LM Studio\": [0.8, 0.2]\n```\n### 核心区别\n| 工具 | 定位 | 核心特点 | 与 oMLX 的关系 |\n| :--- | :--- | :--- | :--- |\n| **MLX** | **底层机器学习框架** | 苹果官方推出的高效张量计算和神经网路库，是 Apple Silicon 上的“PyTorch” | oMLX 的底层引擎 |\n| **MTPLX** | **高性能推理引擎** | 专注于极致推理速度，优化核心计算内核，对特定模型有巨大速度提升 | 可与 oMLX 集成（作为后端），提供另一种速度选项 |\n| **oMLX** | **生产级推理服务器** | 提供**功能完备**、**易用**、**稳定**的推理服务，专注于**管理、缓存、集成**和**开发者体验** | 可选择使用 MLX 或 MTPLX 作为后端引擎 |\n| **Ollama / LM Studio** | **易用的模型运行工具** | 侧重于简单运行和管理模型，提供友好的界面和模型市场 | oMLX 在**性能**（缓存、批处理）、**管理**（多模型、配置）、**集成**方面更深入 |\n> 💡 **结论**：**MLX 是引擎，MTPLX 是涡轮增压器，而 oMLX 则是整台高性能跑车**。它们是互补的而非竞争关系。你需要在 oMLX 中选择一个“引擎”（MLX 或 MTPLX）来驱动“跑车”。\n## 5. 局限与不足\n尽管强大，但 oMLX 也并非完美，它也有一些局限性需要考虑：\n1.  **Apple Silicon 专属**：**仅支持 macOS 15.0+ (Sequoia) 和 Apple Silicon 芯片（M1/M2/M3/M4/M5）**。这是其定位决定的，但也意味着无法在 Intel Mac 或其他平台运行。\n2.  **复杂功能的配置成本**：虽然菜单栏和 Web UI 极大地简化了操作，但**多 Mac 联合推理**、**自定义内核编译**等高级功能仍需要一定的技术背景和阅读文档的耐心。\n3.  **对特定模型格式的依赖**：为确保最佳性能，一些模型（如 GLM-5.2, MiniMax M3）**需要安装编译好的自定义内核**。如果通过 pip 源码安装但未正确编译，性能会大幅下降（可能相差30倍）。官方 DMG 和 Homebrew `--with-custom-kernel` 版本已预编译。\n4.  **社区与生态仍在成长**：虽然项目非常活跃（20k+ Star），但作为一个相对较新的项目（2025年活跃），其周边插件、集成案例的丰富度可能无法与 Ollama 等更老牌的项目相比。\n5.  **资源占用与系统影响**：虽然设置了系统内存限制（默认为系统RAM - 8GB），但在运行大型模型时，**仍会占用大量系统资源**，可能会影响其他大型应用的运行。需要用户根据自身硬件进行权衡。\n## 6. 安装、部署与快速开始\n### 6.1 安装方式\noMLX 提供了极其简单的安装方式，满足不同用户的需求。\n| 方式 | 适合人群 | 安装命令 | 特点 |\n| :--- | :--- | :--- | :--- |\n| **macOS App (推荐)** | **所有用户，尤其是小白** | 下载 `.dmg` 拖入 Applications | **最简单**，带自动更新，预编译所有内核，开箱即用 |\n| **Homebrew** | 喜欢包管理的开发者 | `brew tap jundot/omlx && brew install jundot/omlx/omlx` | 命令行管理，可作为后台服务运行，更新方便 |\n| **源码安装** | 需要自定义或参与开发 | `git clone https://github.com/jundot/omlx.git && pip install -e .` | 最灵活，可编译最新特性（如自定义内核、分布式） |\n### 6.2 快速启动体验\n1.  **启动服务器**：\n    ```bash\n    # 如果通过 macOS App 或 Homebrew 安装\n    omlx start\n    \n    # 或者手动指定模型目录和端口（一次配置后持久化）\n    omlx serve --model-dir ~/models --port 8000\n    ```\n2.  **访问管理界面**：\n    打开浏览器，访问 `http://localhost:8000/admin`。你会看到一个功能丰富的仪表盘。\n3.  **下载并加载模型**：\n    - 在 Admin Dashboard 的“模型”选项卡中，点击“从 HuggingFace 下载”。\n    - 搜索你想要的模型（例如 `Qwen/Qwen2.5-7B-Instruct`），选择版本和量化格式，点击下载。\n    - 下载完成后，模型会自动出现在列表中，点击“加载”即可。\n4.  **开始聊天**：\n    - 在 Admin Dashboard 的“聊天”选项卡中，选择刚刚加载的模型。\n    - 输入你的问题，开始体验！\n5.  **通过 API 使用**：\n    oMLX 提供 **OpenAI 兼容的 API**。你可以用任何支持 OpenAI API 的客户端（如 Python 的 `openai` 库、Postman、各种 AI 工具）连接到 `http://localhost:8000/v1`。\n    ```python\n    from openai import OpenAI\n    \n    client = OpenAI(\n        base_url=\"http://localhost:8000/v1\",\n        api_key=\"dummy\", # oMLX 不验证 API key，但格式需要符合\n    )\n    \n    response = client.chat.completions.create(\n        model=\"Qwen/Qwen2.5-7B-Instruct\", # 或你在 Admin Dashboard 中设置的模型别名\n        messages=[\n            {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n            {\"role\": \"user\", \"content\": \"Hello, how are you?\"}\n        ],\n        stream=True,\n    )\n    \n    for chunk in response:\n        if chunk.choices[0].delta.content is not None:\n            print(chunk.choices[0].delta.content, end=\"\")\n    ```\n## 7. 性能基准与真实案例\n### 7.1 官方基准测试\noMLX 官网提供了详细的性能基准测试（Performance Explorer）。其核心指标是**Prefill（提示处理）速度**和**Throughput（吞吐量）**。\n> **一个惊人案例**：在 M3 Ultra (512GB) 上运行 **Qwen3.5-122B-A10B-4bit** 模型：\n> - **Prefill**: 0 tok/s (得益于 SSD 缓存，历史上下文无需重新计算)\n> - **Throughput**: ∞ (得益于连续批处理和缓存)\n> - **SSD KV Cache**: 无驱逐 (缓存命中后直接恢复)\n这体现了其缓存和批处理技术的强大威力。\n### 7.2 真实案例：编码体验的质变\n一位开发者分享了他在 Mac 上使用 Claude Code 的经历：\n- **使用前（其他推理服务器）**：在处理一个大型项目时，Claude Code 每次回答都需要等待 **90秒**，因为上下文不断变化，导致 KV 缓存反复失效，模型不得不重新处理大量历史信息。\n- **使用后（oMLX）**：回答时间缩短至 **5秒** 左右。这是因为 oMLX 将所有之前的上下文块缓存到了 SSD，当 Claude Code 回溯到之前的代码时，这些块被瞬间从硬盘恢复，而不是重新计算。\n> **结论**：对于需要频繁、长上下文交互的工具（如编码代理、长对话、RAG），oMLX 的缓存技术带来的体验提升是**颠覆性**的。\n## 8. 结语与行动建议\n### 终极评判\noMLX 是一款**设计理念先进、技术实现精良、开发者体验极致**的本地 LLM 推理服务器。它不仅仅是一个工具，更是对 Apple Silicon 上本地 AI 基础设施的一次**深刻思考和重新定义**。\n- **对于普通用户**：它提供了**最简单、最优雅**的方式在 Mac 上运行本地 AI，菜单栏管理和 Web UI 让技术门槛降到最低。\n- **对于开发者/专业人士**：它提供了**生产级**的稳定性、**企业级**的功能（多模型管理、配置档、集成、性能监控）和**业界领先**的性能优化（SSD 缓存、连续批处理），是本地 AI 工作流的理想选择。\n- **对于技术爱好者**：它是探索 Apple Silicon AI 性能极限、玩转分布式推理、体验前沿技术的绝佳平台。\n**它的唯一“缺点”是过于专一——它只为 Apple Silicon 和 macOS 而生，但这正是它强大的根源。**\n### 行动建议\n1.  **如果你是 Mac 用户且想体验本地 AI**：\n    - **立即行动**：下载 macOS App 版本（`.dmg`），它是最省心的选择。\n    - 访问 `http://localhost:8000/admin`，从 HuggingFace 下载一个小模型（如 7B 参数）玩玩，感受其流畅度。\n2.  **如果你是开发者/工程师**：\n    - 将 oMLX 作为本地开发环境的默认推理引擎。\n    - 尝试与你常用的工具（Cursor、Zed、VSCode 的 AI 插件）集成，体验其带来的效率提升。\n    - 探索“配置档（Profiles）”功能，为不同工作流预设模型参数。\n3.  **如果你是多 Mac 用户**：\n    - 关注其“多 Mac 联合推理”功能的进展，这可能是未来在本地运行超大模型的关键方案。\n4.  **如果你是贡献者/技术爱好者**：\n    - 项目活跃，Issue 和 PR 处理速度快，社区友好。\n    - 可以从源码编译，尝试最新的实验性功能，甚至为项目贡献代码。\n**总而言之，如果你在 Apple Silicon 上寻找一个强大、智能、易用的本地 LLM 服务器，oMLX 目前就是** **终极答案**。它值得你花费几分钟时间安装和体验，一旦你习惯了它的便捷和速度，就很难再回到过去的方式了。**\n> **最后，别忘了给项目点个 Star**：[https://github.com/jundot/omlx](https://github.com/jundot/omlx) ⭐️ 这不仅是对开发者的支持，也是让项目持续繁荣发展的关键动力。"
     },
     {
+      "id": "bc3c7e30-0f4c-4562-962b-eba7e2dd5020",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "repo": "tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 20637,
+      "forks": 2965,
+      "starsAdded": 1441,
+      "createdAt": "2026-08-26T15:41:10.521Z",
+      "githubData": {
+        "stars": "20637",
+        "forks": "2965",
+        "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://freellmapi.co"
+      },
+      "summaryData": {
+        "title": "FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池",
+        "cover": "",
+        "summary": "开源 API 网关，智能聚合 29 家 AI 厂商免费额度，提供统一接口与自动故障切换。",
+        "ability": [
+          "统一 OpenAI 兼容接口",
+          "智能路由与自动故障切换",
+          "融合模型多专家合成",
+          "加密密钥统一管理",
+          "实时使用数据分析"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学生/科研人员",
+          "AI 原型开发者",
+          "技术内容创作者",
+          "小型开源团队"
+        ],
+        "description": "FreeLLMAPI 是一个自托管的开源 API 网关，通过智能路由将 Google、Groq 等多家厂商的免费 API 层整合为一个稳定的推理服务。它支持统一接口、自动故障转移和加密密钥管理，极大降低个人实验与开发的算力成本。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "tags": [
+          "开源",
+          "API 网关",
+          "免费算力",
+          "大模型",
+          "Docker"
+        ]
+      },
+      "contentDetail": "# FreeLLMAPI：把零散的免费 LLM 资源，整合成你自己的“超级算力池”\n> 一键部署、智能路由、自动故障切换，将 29 家 AI 厂商的免费额度转化为每月约 40 亿 Token 的稳定推理能力。\n## 📌 一句话总结\nFreeLLMAPI 是一个**自托管的开源 API 网关**，它将来自 Google、Groq、Mistral、OpenRouter 等 **29 家 AI 服务商的免费 API 层**（约 251 个模型、358 个端点），通过一个统一的 **OpenAI 兼容端点 (`/v1`)** 暴露出来，内置**智能路由、自动故障切换、加密密钥存储和实时使用跟踪**，让你的应用始终能从最可用的免费模型中获得响应。\n---\n## 🔍 背景与痛点：免费资源的“聚沙成塔”之难\nAI 开发者常常陷入一个尴尬的境地：几乎所有主流 AI 实验室（Google、Anthropic、Meta、Mistral 等）都提供了**慷慨的免费 API 层**（每月数百万 Token、每日数千次请求）。但单个免费层的能力有限，就像一堆零散的乐高积木，单独玩弄时没什么意思。\n若想充分利用这些资源，开发者面临着巨大的操作成本和复杂度：\n*   **SDK 与接口碎片化**：需要为每个平台集成不同的 SDK、学习各自的 API 格式（尽管大多数兼容 OpenAI，但仍有细微差别）。\n*   **速率限制与配额管理噩梦**：每家服务商的限流策略（RPM/TPM）、每日/每月配额都不同，手动跟踪并分配请求，生怕触碰红线。\n*   **单点故障风险**：若某个服务商宕机或被限流，你的应用就会直接中断，需要手动切换到下一个可用服务商。\n*   **资源动态变化**：服务商频繁推出新模型、调整免费额度或退役旧模型，静态配置很快过时。\n**FreeLLMAPI 的诞生，正是为了将这一堆“乐高积木”整合成一个功能强大、稳定可靠的“超级模型”。**\n---\n## ✨ 核心亮点与功能剖析\nFreeLLMAPI 的强大并非简单叠加，而在于其精巧的“胶水”逻辑和智能管理能力。\n### 1. 统一 OpenAI 兼容接口与无缝集成\nFreeLLMAPI 实现了标准的 **OpenAI API 规范** (`/v1/chat/completions`, `/v1/embeddings`, `/v1/images/generations` 等)。这意味着，你**只需修改一行代码**（指向你的 FreeLLMAPI 本地端点），就能让原本调用 OpenAI API 的应用、工具、SDK（如 LangChain, LlamaIndex）无缝地切换到由多个免费模型组成的池子。\n```python\n# 只需将 base_url 指向你的 FreeLLMAPI 服务，并使用生成的统一 Key\nfrom openai import OpenAI\nclient = OpenAI(\n    base_url=\"http://localhost:3001/v1\",\n    api_key=\"freellmapi-你生成的统一Key\" \n)\nresponse = client.chat.completions.create(\n    model=\"auto\",  # 核心功能！让路由器自动选择最佳模型\n    messages=[{\"role\": \"user\", \"content\": \"解释什么是FreeLLMAPI？\"}]\n)\nprint(response.choices[0].message.content)\n```\n<details>\n<summary><strong>🔧 查看响应中的路由信息（可选）</strong></summary>\n响应头中会携带 `X-Routed-Via: <provider>/<model>` 标记，告诉你实际是由哪个服务商的哪个模型处理的请求，极具透明度。\n</details>\n### 2. 智能路由与自动故障转移（Smart Routing & Failover）\n这是 FreeLLMAPI 的**灵魂所在**。它的路由器并非简单轮询，而是基于多个维度进行智能决策：\n*   **健康状态与可用性**：持续监控每个服务商端点的健康状态，自动跳过返回 429（限流）、5xx（服务器错误）或超时的服务商。\n*   **实时能力评分**：根据历史请求的**速度、可靠性、成功率**等指标，为每个服务商动态计算评分，优先选择综合评分最高的模型。\n*   **配额与速率跟踪**：**精确跟踪每个 `(平台, 模型, API Key)` 的使用情况**（RPM, RPD, TPM, TPD），确保请求始终在每家免费层规定的配额内运行，防止超额导致服务中断。当某个 Key 快用尽时，路由器会自动切换到同一平台的其他可用 Key。\n```mermaid\nflowchart LR\n    A[用户请求] --> B[FreeLLMAPI 路由器]\n    \n    subgraph B [智能决策核心]\n        direction LR\n        B1[评估模型健康度<br>与能力评分]\n        B2[检查 Key 剩余额度<br>与速率限制]\n        B3[按策略排序<br>候选模型链]\n    end\n    B --> C{尝试请求}\n    \n    C -- 成功 --> D[返回结果]\n    C -- 失败/限流/超时 --> E[自动切换至<br>下一最佳模型]\n    E --> C\n    \n    D --> F[返回结果给用户<br>并记录路由信息]\n```\n### 3. “融合模型”（Fusion）与多模型合成\n一个极具前瞻性的创新功能。你可以将 `model` 参数指定为 `\"fusion\"`。FreeLLMAPI 会将你的请求**同时并行发送给多个具有代表性的免费模型**（例如一个擅长推理的，一个速度快，一个中文理解好的），由一个“裁判模型”综合这些初步回答，**合成一个更全面、准确、高质量的最终答案**。这类似于“多专家系统”，用免费算力实现了部分模型的效果。\n### 4. 加密密钥存储与统一管理\n所有你从各家厂商申请的 API Key 都会通过 **AES-256-GCM 算法加密**后存储在本地 SQLite 数据库中。你的应用只需要持有一个由 FreeLLMAPI 生成的**统一 API Key**。FreeLLMAPI 的管理面板（React 构建的精美 UI）提供了添加、管理、健康检查这些密钥的界面，安全且便捷。\n### 5. 自动更新的模型目录（需 Premium）\nAI 世界日新月异。FreeLLMAPI 内置了从 `freellmapi.co` 获取**签名模型目录**的机制。它会自动同步新推出的免费模型、配额变更以及兼容性修复，确保你的网关始终拥有最新、最准确的模型信息，无需手动 `git pull`。（基础功能免费，实时目录更新为付费 Premium 功能）\n### 6. 全面的可观测性与分析（Analytics Dashboard）\n内置的 **React 管理面板**不仅是配置界面，更是一个强大的分析工具。你可以查看：\n*   **请求量**：24小时、7天、30天内的总请求数。\n*   **成功率**：整体及每个服务商的成功率。\n*   **Token 流量**：输入、输出的 Token 统计。\n*   **延迟分析**：P50, P95, 平均延迟，助你评估性能。\n*   **成本估算**：虽然都是免费，但了解“本该花费”多少也很有趣。\n---\n## 🎯 目标人群与收益：谁最适合使用它？\n| 角色 | 痛点 | FreeLLMAPI 带来的核心收益 |\n| :--- | :--- | :--- |\n| **个人开发者/学生** | 想尝试不同模型，但预算有限，不想为每个平台注册并管理多个 Key。 | **零成本获得海量算力**：一次配置，享受每月数十亿 Token 的免费实验额度。**极大降低试错成本**。 |\n| **AI 应用原型开发者** | 需要快速验证想法，选择最佳模型，但频繁切换 SDK 和管理密钥耗时耗力。 | **极致的开发效率**：一个 API 端点，**自动为你找到最合适的模型**。**专注于业务逻辑，而非基础设施**。 |\n| **技术内容创作者/教程作者** | 需要为读者演示各种 AI 功能，但不想暴露自己的付费 Key，或希望演示能稳定运行。 | **稳定的演示环境**：自动故障切换保证演示不会中断。**安全且免费**，无需担心 Key 泄露或超支。 |\n| **学习 AI 编程/Prompt 工程者** | 想系统学习不同模型的特性，但手动切换和对比非常麻烦。 | **高效的对比学习平台**：轻松指定或自动路由至不同模型，**直观感受差异**，Prompt 优化效率翻倍。 |\n| **小型团队/开源项目** | 项目需要使用 LLM，但预算紧张，希望充分利用免费资源。 | **开源的轻量级基础设施**：自托管，完全掌控，**将预算节省在模型本身而非网关上**。 |\n---\n## ⚖️ 竞品/同类对比：它处于什么位置？\nFreeLLMAPI 并非唯一的选择，但其设计理念和功能组合使其在**个人实验和开源项目**中极具吸引力。\n| 特性 | **FreeLLMAPI** | **OpenRouter** | **LiteLLM** | **直接使用各厂商免费API** |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **开源、自托管、专注于免费层聚合** | **SaaS 服务，聚合付费/免费模型** | **开源、自托管，企业级功能丰富** | **最原始的方式** |\n| **免费层** | ✅ **核心优势，聚合大量免费额度** | ✅ 提供部分免费模型 | ❌ 本身是工具，不提供免费额度 | ✅ 每家都有，但分散 |\n| **智能路由与故障转移** | ✅ **内置强大路由策略，自动故障切换** | ✅ 基础路由 | ✅ 高度可配置 | ❌ 需手动实现 |\n| **自托管** | ✅ **完全掌控，数据本地化** | ❌ SaaS，数据发送至第三方 | ✅ **完全掌控** | ✅ 完全掌控 |\n| **密钥管理** | ✅ **加密存储，统一管理** | ✅ 统一管理 | ✅ 统一管理 | ❌ 需单独管理每个 |\n| **模型目录更新** | ✅ **自动同步（Premium）** | ✅ 自动维护 | ❌ 需手动更新 | ❌ 需手动跟踪 |\n| **学习/部署成本** | ⭐⭐⭐⭐ **Docker 一键部署，非常简单** | ⭐⭐⭐⭐⭐ 最简单，无部署 | ⭐⭐⭐ 配置项多，需一定学习 | ⭐ 非常繁琐，需学习各平台 |\n| **适用场景** | **个人实验、开源项目、本地开发环境** | **快速原型、小型生产项目、希望快速开始** | **中大型团队、需要高级功能（预算、团队管理）** | **只需要特定某个平台模型，且希望最大程度控制** |\n**结论**：FreeLLMAPI 在**“免费资源聚合”**和**“个人开发者友好”**这个细分赛道上做得非常极致，是**开源、自托管场景下的最佳选择之一**。OpenRouter 则是“省心但付费”的 SaaS 代表，LiteLLM 则适合需要**企业级功能和高度自定义**的团队。\n---\n## ⚠️ 局限与不足：客观存在的短板\n1.  **主要面向个人实验，不适合生产环境**：项目 README 明确标注 **“Personal experimentation only”**。免费层本身**不稳定、有速率限制、无 SLA 保证**。路由器虽然尽力保障，但依赖的是外部免费资源，**无法保证高可用性**。任何生产环境都应使用付费的、有保证的服务。\n2.  **初始配置成本**：你需要**主动去各家厂商注册账号并申请 API Key**。这个过程虽然只需做一次，但对于懒人来说仍是一个步骤。FreeLLMAPI 不提供现成的 Key。\n3.  **高级功能需要付费订阅**：**实时模型目录自动更新**是 Premium 功能（$19/年）。基础功能免费，但若想保持目录自动最新，需要支付少量费用。这是一个合理的商业模式，但需知晓。\n4.  **依赖外部服务稳定性**：其“魔力”全部来自于对第三方免费服务的调用。如果某个免费服务彻底关闭或大幅修改 API，FreeLLMAPI 也需要时间适应（尽管目录更新机制有帮助）。\n5.  **国内访问可能受阻**：部分服务商（如 OpenRouter, Groq 等）的 API 可能需要特殊网络环境才能访问。这并非项目本身的问题，但可能会影响国内用户的使用体验。\n---\n## 🚀 上手门槛与部署体验：Docker 一键启动\nFreeLLMAPI 的部署体验**极佳**，几乎消除了所有技术障碍。\n### 方式一：一键脚本（最推荐）\n```bash\ncurl -fsSL https://freellmapi.co/install.sh | bash\n```\n这条命令会自动创建目录、生成加密密钥、拉取最新 Docker 镜像、并启动服务。完成后，访问 `http://localhost:3001` 即可看到管理面板。\n### 方式二：Docker Compose（更灵活）\n```bash\n# 1. 克隆仓库\ngit clone https://github.com/tashfeenahmed/freellmapi.git\ncd freellmapi\n# 2. 生成加密密钥并创建 .env 文件\nENCRYPTION_KEY=\"$(openssl rand -hex 32)\"\nprintf \"ENCRYPTION_KEY=%s\\nPORT=3001\\n\" \"$ENCRYPTION_KEY\" > .env\n# 3. 启动服务\ndocker compose up -d\n```\n<details>\n<summary><strong>⚠️ 常见问题：从其他设备无法访问面板？</strong></summary>\n默认情况下，Docker Compose 配置将端口绑定到 `127.0.0.1`，这意味着只有**本机**可以访问 `localhost:3001`。如果需要从局域网内的其他设备（如手机、另一台电脑）访问面板，需要修改启动命令：\n```bash\nHOST_BIND=0.0.0.0 docker compose up -d\n```\n**注意**：此操作会将服务暴露给整个网络，请确保你在**可信的网络环境**（如家庭局域网）中操作。\n</details>\n### 配置服务商密钥\n1.  打开 `http://localhost:3001`，在管理面板的 **Keys** 页面。\n2.  点击 **Add Key**，选择你需要的服务商（如 Google, Groq, Mistral 等）。\n3.  前往该服务商官网（如 Groq Console, Google AI Studio）注册并获取 API Key，将其粘贴到 FreeLLMAPI 中并保存。\n4.  FreeLLMAPI 会自动对密钥进行加密存储，并进行健康检查。\n5.  在 **Keys** 页面顶部，你会看到你生成的 **统一 API Key**（`freellmapi-xxx`），这就是你后续代码中要使用的 Key。\n### 与常用工具集成\nFreeLLMAPI 提供了官方的 `npx` 脚本来一键配置许多开发工具：\n```bash\n# 配置 Claude Code 使用 FreeLLMAPI\nnpx freellmapi setup-claude --url http://localhost:3001 --api-key freellmapi-your-key\n# 配置 Aider\nnpx freellmapi setup-aider --url http://localhost:3001 --api-key freellmapi-your-key\n# 配置 Cursor（或其他支持 OpenAI 的工具）\n# 通常只需在工具设置中修改 Base URL 和 API Key 即可\n```\n这个脚本的优点是**非破坏性**，它会备份现有配置，并智能地合并新配置，而不会覆盖你原有的设置。\n---\n## 🛠️ 社区活跃度与生命力\n*   **GitHub 星标与活跃度**：在 GitHub 上已获得超过 **10k+ Star**，说明社区认可度极高。项目由 `tashfeenahmed` 维护，**提交活跃**，近期有大量关于修复 bug、添加新功能和改进文档的提交。\n*   **Issue 解决速度**：根据搜索结果，Issue（如端口访问问题）能够得到**快速响应和修复**，表明维护者非常关注用户反馈。\n*   **周边生态**：项目本身已集成对大量 **AI 编程工具（Claude Code, Aider, Continue, Cursor 等）的支持**，并衍生出了一些优化 Fork（如支持中文的版本），生态在逐步繁荣。\n---\n## 📝 Demo / 代码示例：直观感受\n### 示例 1：Python SDK 调用\n```python\nfrom openai import OpenAI\n# 初始化客户端，指向你的 FreeLLMAPI 服务\nclient = OpenAI(\n    base_url=\"http://localhost:3001/v1\",\n    api_key=\"freellmapi-your-unified-key\"  # 从 Keys 页面获取\n)\n# 请求，让路由器自动选择最佳模型\nresponse = client.chat.completions.create(\n    model=\"auto\",  # 关键！自动路由\n    messages=[\n        {\"role\": \"system\", \"content\": \"你是一个有帮助的助手。\"},\n        {\"role\": \"user\", \"content\": \"写一个 Python 函数来计算斐波那契数列的第 n 项。\"}\n    ],\n    stream=True  # 支持流式输出\n)\n# 打印响应\nfor chunk in response:\n    if chunk.choices[0].delta.content is not None:\n        print(chunk.choices[0].delta.content, end=\"\", flush=True)\n# 响应头中会包含实际路由信息\n# print(\"Routed via:\", response.headers.get(\"x-routed-via\"))\n```\n### 示例 2：使用 Fusion 模型获得合成答案\n```python\nresponse = client.chat.completions.create(\n    model=\"fusion\",  # 指定 fusion 模式\n    messages=[\n        {\"role\": \"user\", \"content\": \"请比较 Python 和 JavaScript 的主要特点。\"}\n    ]\n)\nprint(response.choices[0].message.content)\n```\n此请求会并行发送给多个模型，最终获得一个综合性的回答。\n---\n## 🎓 结语与行动建议\n### 终极评判\nFreeLLMAPI 是一个**设计精巧、实现优雅、真正解决开发者痛点**的开源项目。它成功地将一个原本“碎片化、管理成本高”的免费资源利用问题，转化为一个“一键部署、自动管理、稳定可靠”的解决方案。它**不生产算力，但让免费算力的获取和使用变得前所未有的简单和高效**。\n对于任何希望低成本、高效率地进行 AI 实验、原型开发或学习编程的人来说，**它是一个几乎必装的利器**。它不是“免费午餐”，而是让你更轻松地吃到“免费午餐”的餐具。\n### 行动建议\n1.  **立即尝试**：\n    ```bash\n    curl -fsSL https://freellmapi.co/install.sh | bash\n    ```\n    然后花 10 分钟去注册 2-3 个你最感兴趣的服务商（Groq 速度最快，OpenRouter 模型多，Google 上下文大）的免费 Key，填入面板。**即刻体验“一个 Key，世界任游”的快感**。\n2.  **集成到你常用的工具**：使用 `npx freellmapi setup-xxx` 脚本，将你的 AI 编程助手（如 Claude Code, Aider）或 IDE（如 Cursor）配置为使用 FreeLLMAPI，享受免费算力带来的无限可能。\n3.  **关注 Premium 订阅**：如果你觉得项目节省了大量时间并带来了巨大价值，**考虑 $19/年的 Premium 订阅**，支持开发者并享受自动更新的模型目录。\n4.  **贡献代码或反馈**：作为开源项目，你可以通过提交 Issue、Pull Request 或在社区分享你的使用体验来帮助它变得更好。\n> 💡 **最后提醒**：**请务必遵守各服务商的免费条款和使用政策**。FreeLLMAPI 是一个工具，它帮你遵守规则，但不应该被用来滥用规则。**“个人实验”** 的定位需要被尊重。\nFreeLLMAPI 让免费 AI 算力的“共享经济”成为可能，它无疑是目前 GitHub 上最值得 AI 开发者关注的“宝藏项目”之一。"
+    },
+    {
       "id": "0c032fcb-a80a-48cb-b374-ce8cf7c4db3c",
       "dateAdded": "202608",
       "type": "github-monthly",
@@ -2402,13 +2558,13 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 20582,
-      "forks": 4878,
+      "stars": 20607,
+      "forks": 4886,
       "starsAdded": 5821,
       "createdAt": "2026-08-23T13:14:26.645Z",
       "githubData": {
-        "stars": "20518",
-        "forks": "4859",
+        "stars": "20608",
+        "forks": "4886",
         "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub.",
         "topics": [],
         "license": "MIT license",
@@ -2447,56 +2603,6 @@
         ]
       },
       "contentDetail": "# T3Code：AI 编程时代的“统一指挥官”，让多工具协同不再繁琐\n> 一句话总结：T3Code 是一款**极简且强大的 AI 编程代理统一图形界面（Web GUI）**，它像一位“指挥官”，让你无需在多个命令行工具间切换，就能轻松驾驭 Codex、Claude Code 等主流 AI 编程助手，显著提升开发效率。\n## 🌟 一句话总结\nT3Code 是一款**极简且强大的 AI 编程代理统一图形界面（Web GUI）**，它像一位“指挥官”，让你无需在多个命令行工具间切换，就能轻松驾驭 Codex、Claude Code 等主流 AI 编程助手，显著提升开发效率。\n## 🔍 背景与痛点：AI 编程工具的“碎片化”困境\n在 AI 编程工具日益普及的今天，开发者面临一个共同的痛点：**工具割裂与操作繁琐**。\n-   **频繁切换上下文**：Codex（OpenAI）、Claude Code（Anthropic）、OpenCode 等优秀的 AI 编程工具通常需要通过不同的命令行接口（CLI）或特定的 IDE 插件使用。开发者往往需要在多个终端窗口、配置文件和会话之间来回切换，打断了心流（Flow），效率低下。\n-   **重复认证与会话管理**：每个工具都需要单独登录认证，会话状态无法持久保存，一旦关闭终端或重启电脑，之前的对话和上下文就丢失了，需要重新开始。\n-   **缺乏统一协作与跟踪**：团队协作时，无法方便地共享、回溯和审查由 AI 生成的代码变更，与 Git 工作流的集成也不够紧密。\n-   **本地数据与安全顾虑**：代码文件通常需要上传到云端处理，对于某些敏感项目而言，存在数据安全和隐私泄露的顾虑。\nT3Code 的诞生，正是为了**统一这些碎片化的工具**，提供一个简洁、高效的中心化指挥平台，让开发者能专注于创造代码本身，而非被工具操作所困扰。\n## ⚙️ 核心亮点与功能剖析\nT3Code 的核心价值在于其“**统一接口**”与“**极简设计**”。它本身不产生代码，而是作为一层**轻量的控制层**（Control Layer），优雅地桥接你本地已安装的多个 AI 编程代理。\n### 1. 多代理兼容与统一控制\nT3Code 目前支持主流的 AI 编程工具，并计划持续扩展。\n| 支持的代理 | 开发者/提供商 | 主要特点 |\n| :--- | :--- | :--- |\n| **Codex** | OpenAI | 代码生成能力强大，适合多种编程语言 |\n| **Claude Code** | Anthropic | 长文本处理和复杂推理能力出色 |\n| **OpenCode** | - | （注：搜索结果中未明确其具体开发者，但提及支持） |\n> 💡 **通俗比喻**：想象你是一个指挥家，面前有三位不同乐团的顶级钢琴家（AI 代理）。T3Code 就像你的**指挥台和乐谱架**，你不需要跑到每个钢琴家旁边去单独提要求，只需坐在指挥台上，通过统一的乐谱（界面）和手势（指令），就能协同他们一起演奏出完美的代码交响曲。\n### 2. 全平台覆盖与灵活接入\nT3Code 提供了多种使用方式，满足不同场景的需求：\n-   **Web 应用**：直接在浏览器中运行，无需安装，随时随地访问。\n-   **桌面客户端**：基于 Electron 构建，提供原生应用的体验。支持通过系统包管理器一键安装：\n    -   **Windows**: `winget install T3Tools.T3Code`\n    -   **macOS**: `brew install --cask t3-code`\n    -   **Arch Linux**: `yay -S t3code-bin`\n-   **跨平台同步**：通过 GitHub 账户登录，你的会话线程和设置可以在不同设备间无缝同步。\n### 3. 会话管理与实时协作\n-   **会话线程化**：所有与 AI 的对话都按线程（Thread）组织，可以无限回溯、分支和命名，方便管理不同项目或任务的上下文。\n-   **实时差异查看**：T3Code 内置了强大的代码差异对比工具，能清晰展示 AI 建议的修改与原始代码的对比，支持按行或按块查看，让代码审查和合并变得极其直观。\n-   **Git 集成**：**内置 Git 集成**，允许你直接在界面内查看更改、提交代码、切换分支，甚至将 AI 的修改直接推送至远程仓库，极大地简化了工作流。\n### 4. 安全与隐私优先\nT3Code 在设计上高度重视数据安全：\n-   **代码本地存储**：所有代码文件**全程存储在你的本地机器上**，T3Code 不会上传你的代码文件到任何服务器，这有效缓解了对代码泄露的担忧。\n-   **复用现有凭证**：它**不会要求你为 T3Code 本身创建新的账户**，而是直接**复用你本地已登录的 AI 代理的凭证**（如 OpenAI API Key 或 Anthropic 账户），避免了额外的认证环节和潜在风险。\n### 5. 技术架构与开发者体验\nT3Code 的技术栈体现了其“极简”与“高效”的哲学：\n-   **核心语言**：**TypeScript**（占比高达 96.8%），确保了代码的类型安全和健壮性。\n-   **架构设计**：它作为一个 **Node.js WebSocket 服务器**运行，在底层**包装了 CLI AI 代理的 stdio 通信协议**（如 Codex 的 JSON-RPC），并通过 WebSocket 将消息实时地推送到前端 React 应用。这种设计使其能无缝集成各种命令行工具。\n-   **开源与社区驱动**：项目采用 **MIT 开源许可证**，托管于 GitHub，由 **T3 Stack 创始人 Theo** 的团队开发，社区活跃，持续迭代。截止评测时，已有超过 **2.7k 次 Commit**，**4.8k Fork**，**20.2k Star**，体现了其极高的社区关注度和认可度。\n```mermaid\nflowchart LR\n    A[用户操作<br>Web GUI/Desktop App] --> B[T3Code 核心服务<br>Node.js WebSocket Server]\n    B --> C[代理适配层<br>包装 stdio 协议]\n    \n    C --> D[Codex Agent<br>OpenAI]\n    C --> E[Claude Code Agent<br>Anthropic]\n    C --> F[OpenCode Agent<br>其他]\n    \n    subgraph G [本地文件系统]\n        direction LR\n        H[代码文件]\n        I[Git 仓库]\n    end\n    \n    B <-->|实时 WebSocket 通信| J[React 前端界面]\n    \n    K[本地 AI 代理凭证] -.->|复用| C\n    L[Git 操作] -.->|集成| B\n    \n    style A fill:#e3f2fd,stroke:#2196f3,color:#0d47a1\n    style B fill:#bbdefb,stroke:#2196f3,color:#0d47a1\n    style C fill:#90caf9,stroke:#2196f3,color:#ffffff\n    style G fill:#f3e5f5,stroke:#9c27b0,color:#4a148c\n    style J fill:#e1f5fe,stroke:#03a9f4,color:#01579b\n```\n## 🎯 目标人群与收益：谁最需要它？\nT3Code 的目标用户非常清晰，它为以下人群带来了**可量化的效率提升和体验优化**：\n| 目标人群 | 痛点描述 | 使用 T3Code 后的收益 |\n| :--- | :--- | :--- |\n| **多 AI 编程工具重度用户** | 需要同时使用 Codex、Claude 等多个工具，频繁切换 CLI，记忆不同命令。 | **统一入口，无需切换**，所有工具在一个界面内管理，效率提升 **30%-50%**。 |\n| **团队开发与代码审查者** | 需要审查 AI 生成的代码，但缺乏直观的对比工具和协作平台。 | **内置实时 diff 对比**和**线程化会话**，审查更高效，团队协作更顺畅。 |\n| **注重数据安全的开发者** | 担忧代码上传到云端，或希望控制 AI 工具对文件的访问权限。 | **代码完全本地化存储**，**复用现有凭证**，最大化满足安全与合规需求。 |\n| **追求极致开发体验者** | 讨厌繁琐的配置和命令行操作，希望拥有流畅、现代化的交互体验。 | **极简 Web/Desktop GUI**，**零配置快速启动**，享受丝滑的开发体验。 |\n| **尝试 AI 编程的初学者** | 面对复杂的 CLI 命令和多个 AI 工具感到困惑，学习曲线陡峭。 | **图形化界面降低门槛**，**统一交互方式**，更轻松地体验和探索 AI 编程能力。 |\n## ⚔️ 竞品/同类对比：它处于什么位置？\n为了更清晰地定位 T3Code，我们将其与几种常见的使用 AI 编程工具的方式进行了对比：\n| 特性维度 | **T3Code (统一 GUI)** | **IDE 集成 (如 Cursor)** | **独立 CLI 工具** | **云端在线服务** |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心形态** | **统一的 Web GUI**，桥接多个 CLI | 深度集成到 IDE 中，GUI 体验好 | 纯命令行，功能强大但门槛高 | 在线网页，无需安装 |\n| **多工具支持** | **✅ 核心优势**（支持 Codex, Claude 等） | ❌ 通常只绑定一个 AI 模型 | ❌ 每个工具是独立的 CLI | ❌ 每个服务是独立的网站 |\n| **会话管理** | **✅ 极佳**（线程化、持久化、同步） | ✅ 良好（会话在 IDE 中） | ❌ 差（会话易失，难以管理） | ⚠️ 一般（依赖网站功能） |\n| **代码本地化** | **✅ 代码完全在本地** | ⚠️ 视 IDE 设置而定 | ✅ 代码完全在本地 | ❌ 代码需上传云端 |\n| **Git 集成** | **✅ 深度集成**（内置 diff、提交） | ✅ 良好（与 IDE Git 结合） | ❌ 无集成 | ❌ 无集成 |\n| **协作与审查** | **✅ 支持线程共享与协作审查** | ⚠️ 依赖 IDE 协作功能 | ❌ 不支持 | ⚠️ 依赖服务功能 |\n| **学习成本** | **✅ 低**（图形化界面，直观易用） | ⚠️ 中（需熟悉 IDE 操作） | ❌ 高（需掌握多个 CLI） | **✅ 低**（网页操作简单） |\n| **性能与响应** | **✅ 快速**（本地处理，无延迟） | ✅ 快速 | ✅ 最快 | ❌ 受网络影响，有延迟 |\n| **数据隐私与安全** | **✅ 最高**（本地存储，复用凭证） | ⚠️ 中（需信任 IDE 和 AI 模型） | ✅ 高（本地执行） | ❌ 低（数据上传云端） |\n> 🧭 **定位总结**：T3Code 并不试图取代 IDE 集成或 CLI 工具，而是填补了它们之间的空白。它为那些**同时使用多个 AI 编程工具**，**重视代码本地化安全**，以及**希望获得更优化的会话管理和协作体验**的开发者提供了一个**不可或缺的中间层**。它的独特竞争力在于其**聚合能力**和**对开发者工作流的深度理解**。\n## ⚠️ 局限与不足：客观存在的挑战\n尽管 T3Code 非常出色，但它目前仍处于早期开发阶段（官方文档明确说明：“**We are very very early in this project. Expect bugs...**”），也存在一些局限和不足：\n1.  **项目早期，稳定性有待提升**：\n    *   正如项目 Issue 列表所显示的，目前存在一些已知的 Bug，例如 Claude 认证失败后无法重新登录、某些工具（如 Ox Alpha Free）在运行时存在错误、项目级技能发现路径问题等。\n    *   **建议**：如果你需要在一个**极其关键、容错率低的生产环境**中使用，目前可能需要谨慎。但对于日常开发、实验和学习来说，这些不稳定之处通常可以接受，且社区修复速度很快。\n2.  **本身不具备代码生成能力**：\n    *   这既是其设计哲学（极简、控制层），也可能被视为一个“缺点”。它**必须依赖你本地已安装并付费的底层 AI 代理**。如果你没有 Codex 或 Claude Code 的订阅，T3Code 本身无法工作。\n    *   **建议**：这要求你**事先评估和选择适合自己的 AI 编程工具**，并确保它们在你的环境中正常工作。\n3.  **学习曲线并非为零**：\n    *   虽然提供了图形界面，但对于完全不熟悉 AI 编程概念（如代理、会话、差异审查）的用户，仍有一个短暂的适应过程。\n    *   **建议**：花 15-30 分钟阅读官方文档和试用 Demo，就能快速上手。\n4.  **移动端体验可能受限**：\n    *   虽然提供了 Web 版，但目前在移动设备上通过浏览器使用，体验可能不如桌面客户端或原生应用流畅。\n    *   **建议**：主要在桌面端或通过远程开发环境（如 GitHub Codespaces）使用。\n5.  **功能仍在持续迭代中**：\n    *   一些更高级的功能（如更精细的权限控制、更多 AI 代理的适配、更强大的自动化工作流）仍在开发中。\n    *   **建议**：关注项目的 GitHub Releases 和 Discussions，以获取最新动态和参与讨论。\n## 🧪 真实案例演示：如何用 T3Code 高效编码\n为了让你更直观地感受 T3Code 的威力，这里模拟一个真实的开发场景：**使用 Claude Code 修复一个 React 组件的 Bug**。\n```mermaid\nsequenceDiagram\n    participant User as 开发者\n    participant GUI as T3Code Web GUI\n    participant Server as T3Code Server\n    participant Claude as Claude Code Agent\n    participant Git as Local Git Repo\n    User->>GUI: 1. 选择 \"Claude Code\" 代理<br>2. 输入指令：\"修复 UserForm.tsx 中的验证问题\"\n    GUI->>Server: 3. WebSocket 发送请求\n    Server->>Claude: 4. 通过 stdio 转发指令\n    Claude-->>Server: 5. 返回修改建议（JSON-RPC）\n    Server-->>GUI: 6. WebSocket 推送结果到前端\n    \n    GUI->>User: 7. 展示代码 Diff 视图<br>（高亮修改部分）\n    User->>GUI: 8. 审查修改，点击 \"应用并提交\"\n    GUI->>Git: 9. 调用 Git 命令提交代码\n    Git-->>GUI: 10. 返回提交成功\n    GUI->>User: 11. 显示提交成功提示<br>会话线程自动更新\n```\n### 用户操作与体验：\n1.  **统一入口启动**：你在桌面应用中启动 T3Code，界面简洁，左侧是“会话列表”，中间是“代码编辑与差异视图”，右侧是“设置与代理选择”。\n2.  **选择代理与下达指令**：在代理选择器中选择“Claude Code”，然后输入自然语言指令：“请帮我查看 `src/components/UserForm.tsx` 文件，并修复表单验证逻辑中的 Bug，确保邮箱格式验证正确”。\n3.  **实时协作与审查**：T3Code 将你的指令发送给本地的 Claude Code CLI。片刻后，**代码差异视图自动弹出**，清晰展示 Claude 建议的修改（例如，将正则表达式从 `/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/` 优化为更严格的 `/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/`）。你可以逐行审查，甚至拒绝某些修改。\n4.  **一键集成 Git**：确认修改无误后，你点击“应用并提交”。T3Code 直接在后台执行 `git add` 和 `git commit`，并填好了一个自动生成的 commit message：“Fix(UserForm): Enhance email validation regex in UserForm component”。\n5.  **线程化管理**：整个交互过程被保存在一个名为“Fix UserForm Validation”的线程中。你可以随时回溯这次对话，甚至基于这个线程开启新的分支讨论。\n这个流程完美展示了 T3Code 如何将**多工具协同**、**实时审查**、**版本控制集成**和**会话管理**无缝结合，极大简化了 AI 辅助编码的工作流。\n## 📊 技术栈与架构解析\n对于开发者而言，T3Code 的技术栈和架构设计也值得深入剖析，它体现了“**用现代技术栈构建现代工具**”的理念。\n### 核心技术栈\n| 技术组件 | 选型 | 设计考量 |\n| :--- | :--- | :--- |\n| **核心语言** | **TypeScript** | 提供强类型系统，减少运行时错误，提升代码质量和可维护性。占比高达 96.8%，体现了其对类型安全的极致追求。 |\n| **前端框架** | **React** | 选择最流行的 UI 库，拥有庞大的生态和丰富的组件库，便于快速构建现代化的图形界面。 |\n| **后端运行时** | **Node.js** | 作为 WebSocket 服务器，处理实时通信和 CLI 代理的 stdio 包装。JavaScript/TypeScript 全栈统一，开发效率高。 |\n| **实时通信** | **WebSocket** | 提供全双工、低延迟的通信通道，确保 GUI 与 CLI 代理之间的指令和响应能实时同步。 |\n| **桌面应用封装** | **Electron** | 利用 Web 技术构建跨平台的桌面应用，一套代码库即可覆盖 Windows、macOS、Linux。 |\n| **版本控制** | **Git** | 深度集成，通过 `simple-git` 等库在 Node.js 环境中执行 Git 命令。 |\n### 精妙的架构设计\nT3Code 的架构设计是其成功的关键，其核心思想是“**适配器模式（Adapter Pattern）**”和“**控制反转（Inversion of Control）**”。\n```mermaid\nflowchart TD\n    subgraph \"T3Code 应用层\"\n        direction LR\n        A[React 前端 GUI]\n        B[Node.js WebSocket Server]\n    end\n    \n    subgraph \"代理适配层 (核心创新)\"\n        direction LR\n        C[Codex Adapter<br>包装 OpenAI CLI stdio]\n        D[Claude Code Adapter<br>包装 Anthropic CLI stdio]\n        E[OpenCode Adapter<br>包装其他 CLI stdio]\n    end\n    \n    subgraph \"外部依赖\"\n        direction LR\n        F[Codex CLI]\n        G[Claude Code CLI]\n        H[OpenCode CLI]\n    end\n    \n    A <-->|WebSocket| B\n    B -->|转发指令| C\n    B -->|转发指令| D\n    B -->|转发指令| E\n    \n    C <-->|JSON-RPC over stdio| F\n    D <-->|JSON-RPC over stdio| G\n    E <-->|JSON-RPC over stdio| H\n    \n    style B fill:#ffecb3,stroke:#ffa000,color:#bf360c\n    style C fill:#ffe0b2,stroke:#ff9800,color:#e65100\n    style D fill:#ffe0b2,stroke:#ff9800,color:#e65100\n    style E fill:#ffe0b2,stroke:#ff9800,color:#e65100\n```\n1.  **统一的通信协议**：无论底层是 Codex 还是 Claude，它们都通过各自的 CLI 与 T3Code 通信。T3Code 的适配器层负责将这些不同的 CLI 通信协议（通常是 JSON-RPC over stdio）转换为**统一的内部消息格式**，再通过 WebSocket 推送到前端。这使得前端 UI 无需关心底层代理的差异。\n2.  **控制反转**：传统的做法可能是每个 AI 工具自己提供 GUI。T3Code 反其道而行，它**不主动控制代码生成逻辑**，而是**被动地接收并管理来自各个代理的输出**。这种设计极大地降低了与不同 AI 工具集成的复杂度，使其能轻松扩展支持新的代理。\n3.  **轻量级无侵入**：T3Code 不需要修改你现有的 AI CLI 工具，也不需要它们提供专门的 API。它像“**寄生虫**”一样，**优雅地附着在现有 CLI 工具的 stdio 上**，实现了零侵入的集成。\n### 上手门槛与部署体验\nT3Code 的部署和使用体验堪称“**开发者友好**”的典范。\n```bash\n# 1. 最简单的方式：直接运行 Web 版（无需安装）\nnpx t3code\n# 2. 或安装桌面应用（推荐）\n# macOS\nbrew install --cask t3-code\n# Windows\nwinget install T3Tools.T3Code\n# Arch Linux\nyay -S t3code-bin\n```\n-   **零配置启动**：对于 Web 版，只需一条 `npx t3code` 命令即可启动一个本地服务器，并在浏览器中自动打开界面。桌面应用则通过包管理器一键安装，双击即可运行。\n-   **自动发现本地代理**：T3Code 会尝试自动发现你系统中已安装的 AI CLI 工具（如检查 `PATH` 环境变量），并提示你进行认证（复用你的 API Key 或账户）。整个过程非常流畅。\n-   **官方文档详实**：项目提供了清晰的文档（托管在 Mintlify），包含快速开始、配置说明、常见问题等，降低了学习成本。\n### 社区活跃度与生命力\n-   **更新频率高**：项目非常活跃，几乎每天都有多次 Commit，Releases 版本更新频繁（如 0.0.34-nightly 系列），表明团队在快速迭代和修复问题。\n-   **Issue 响应积极**：虽然 Issue 数量不少（562 个 Open），但社区和开发者团队响应较为积极，许多问题能被快速标记和分类（如 `needs-triage`）。\n-   **生态初步形成**：基于其适配器模式，社区开始探索为其添加对更多 AI 工具（如 PDF 上传支持）的适配，生态潜力巨大。\n-   **背靠强大的社区**：由 T3 Stack 创始人 Theo 主导，本身就拥有极高的社区关注度和信誉，这为项目的长期发展提供了坚实基础。\n## 🔮 结语与行动建议：终极评判\nT3Code 并不只是一个“更好的 UI”，它代表了 AI 编程工具发展的一种**重要范式**：**从“单一工具”走向“统一平台”**，从“云端依赖”走向“本地与安全优先”，从“个人效率”走向“团队协作与流程集成”。\n### 🚀 行动建议\n1.  **如果你是符合目标人群的开发者（尤其是多工具用户）**：\n    > **立即尝试！** 没有任何理由不现在就去体验它。用 `npx t3code` 试试 Web 版，或者安装桌面应用。给自己 15 分钟，你会立刻感受到效率提升。\n2.  **如果你是团队 Leader 或技术决策者**：\n    > **认真评估将其引入团队开发环境。** 它能显著降低 AI 编程工具的使用门槛，统一团队的工作流，提升代码审查和协作效率。同时，其本地化特性也更符合企业对数据安全的要求。\n3.  **如果你是开源贡献者或爱好者**：\n    > **这是一个值得关注和参与的好项目！** 它的架构设计清晰，代码质量高，Issue 路线图明确，非常适合作为学习现代全栈开发、WebSocket 实时通信、CLI 包装等技术的案例。\n### 🎯 终极评判\n| 维度 | 评分 (五星为满分) | 点评 |\n| :--- | :--- | :--- |\n| **创新性** | ★★★★☆ | 提出了“统一控制层”的全新范式，填补了市场空白。 |\n| **实用性** | ★★★★★ | 直击多工具用户的痛点，能带来立竿见影的效率提升。 |\n| **易用性** | ★★★★☆ | 图形化界面大幅降低门槛，但需了解 AI 编程基本概念。 |\n| **稳定性** | ★★★☆☆ | 早期项目，存在 Bug，但修复速度快，日常使用无大碍。 |\n| **安全性** | ★★★★★ | 代码本地存储、复用凭证的设计，安全性与隐私保护出色。 |\n| **社区与生态** | ★★★★☆ | 背靠强大社区，更新活跃，生态潜力巨大。 |\n| **性价比** | ★★★★★ | **开源免费（MIT）**，复用现有 AI 订阅，无额外成本。 |\n**最终结论**：T3Code 是一款**设计精妙、理念先进、实用价值极高**的开源工具。它目前可能还不够完美，但其**核心架构和解决方向无疑是正确的**。对于任何希望高效利用 AI 编程工具，并重视数据安全和团队协作的开发者来说，它都是一款**不容错过的“生产力倍增器”**。\n> **💎 给所有开发者的最后建议**：AI 编程时代已来，不要在工具的海洋中迷失。让 T3Code 成为你驾驭 AI 编程浪潮的“**统一指挥官**”，让你的创造力在代码的世界里自由飞翔。"
-    },
-    {
-      "id": "bc3c7e30-0f4c-4562-962b-eba7e2dd5020",
-      "dateAdded": "202635",
-      "type": "github-weekly",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "repo": "tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "stars": 20545,
-      "forks": 2954,
-      "starsAdded": 1441,
-      "createdAt": "2026-08-26T15:41:10.521Z",
-      "githubData": {
-        "stars": "0",
-        "forks": "0"
-      },
-      "summaryData": {
-        "title": "FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池",
-        "cover": "",
-        "summary": "开源 API 网关，智能聚合 29 家 AI 厂商免费额度，提供统一接口与自动故障切换。",
-        "ability": [
-          "统一 OpenAI 兼容接口",
-          "智能路由与自动故障切换",
-          "融合模型多专家合成",
-          "加密密钥统一管理",
-          "实时使用数据分析"
-        ],
-        "suitable": [
-          "个人开发者",
-          "学生/科研人员",
-          "AI 原型开发者",
-          "技术内容创作者",
-          "小型开源团队"
-        ],
-        "description": "FreeLLMAPI 是一个自托管的开源 API 网关，通过智能路由将 Google、Groq 等多家厂商的免费 API 层整合为一个稳定的推理服务。它支持统一接口、自动故障转移和加密密钥管理，极大降低个人实验与开发的算力成本。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "tags": [
-          "开源",
-          "API 网关",
-          "免费算力",
-          "大模型",
-          "Docker"
-        ]
-      },
-      "contentDetail": "# FreeLLMAPI：把零散的免费 LLM 资源，整合成你自己的“超级算力池”\n> 一键部署、智能路由、自动故障切换，将 29 家 AI 厂商的免费额度转化为每月约 40 亿 Token 的稳定推理能力。\n## 📌 一句话总结\nFreeLLMAPI 是一个**自托管的开源 API 网关**，它将来自 Google、Groq、Mistral、OpenRouter 等 **29 家 AI 服务商的免费 API 层**（约 251 个模型、358 个端点），通过一个统一的 **OpenAI 兼容端点 (`/v1`)** 暴露出来，内置**智能路由、自动故障切换、加密密钥存储和实时使用跟踪**，让你的应用始终能从最可用的免费模型中获得响应。\n---\n## 🔍 背景与痛点：免费资源的“聚沙成塔”之难\nAI 开发者常常陷入一个尴尬的境地：几乎所有主流 AI 实验室（Google、Anthropic、Meta、Mistral 等）都提供了**慷慨的免费 API 层**（每月数百万 Token、每日数千次请求）。但单个免费层的能力有限，就像一堆零散的乐高积木，单独玩弄时没什么意思。\n若想充分利用这些资源，开发者面临着巨大的操作成本和复杂度：\n*   **SDK 与接口碎片化**：需要为每个平台集成不同的 SDK、学习各自的 API 格式（尽管大多数兼容 OpenAI，但仍有细微差别）。\n*   **速率限制与配额管理噩梦**：每家服务商的限流策略（RPM/TPM）、每日/每月配额都不同，手动跟踪并分配请求，生怕触碰红线。\n*   **单点故障风险**：若某个服务商宕机或被限流，你的应用就会直接中断，需要手动切换到下一个可用服务商。\n*   **资源动态变化**：服务商频繁推出新模型、调整免费额度或退役旧模型，静态配置很快过时。\n**FreeLLMAPI 的诞生，正是为了将这一堆“乐高积木”整合成一个功能强大、稳定可靠的“超级模型”。**\n---\n## ✨ 核心亮点与功能剖析\nFreeLLMAPI 的强大并非简单叠加，而在于其精巧的“胶水”逻辑和智能管理能力。\n### 1. 统一 OpenAI 兼容接口与无缝集成\nFreeLLMAPI 实现了标准的 **OpenAI API 规范** (`/v1/chat/completions`, `/v1/embeddings`, `/v1/images/generations` 等)。这意味着，你**只需修改一行代码**（指向你的 FreeLLMAPI 本地端点），就能让原本调用 OpenAI API 的应用、工具、SDK（如 LangChain, LlamaIndex）无缝地切换到由多个免费模型组成的池子。\n```python\n# 只需将 base_url 指向你的 FreeLLMAPI 服务，并使用生成的统一 Key\nfrom openai import OpenAI\nclient = OpenAI(\n    base_url=\"http://localhost:3001/v1\",\n    api_key=\"freellmapi-你生成的统一Key\" \n)\nresponse = client.chat.completions.create(\n    model=\"auto\",  # 核心功能！让路由器自动选择最佳模型\n    messages=[{\"role\": \"user\", \"content\": \"解释什么是FreeLLMAPI？\"}]\n)\nprint(response.choices[0].message.content)\n```\n<details>\n<summary><strong>🔧 查看响应中的路由信息（可选）</strong></summary>\n响应头中会携带 `X-Routed-Via: <provider>/<model>` 标记，告诉你实际是由哪个服务商的哪个模型处理的请求，极具透明度。\n</details>\n### 2. 智能路由与自动故障转移（Smart Routing & Failover）\n这是 FreeLLMAPI 的**灵魂所在**。它的路由器并非简单轮询，而是基于多个维度进行智能决策：\n*   **健康状态与可用性**：持续监控每个服务商端点的健康状态，自动跳过返回 429（限流）、5xx（服务器错误）或超时的服务商。\n*   **实时能力评分**：根据历史请求的**速度、可靠性、成功率**等指标，为每个服务商动态计算评分，优先选择综合评分最高的模型。\n*   **配额与速率跟踪**：**精确跟踪每个 `(平台, 模型, API Key)` 的使用情况**（RPM, RPD, TPM, TPD），确保请求始终在每家免费层规定的配额内运行，防止超额导致服务中断。当某个 Key 快用尽时，路由器会自动切换到同一平台的其他可用 Key。\n```mermaid\nflowchart LR\n    A[用户请求] --> B[FreeLLMAPI 路由器]\n    \n    subgraph B [智能决策核心]\n        direction LR\n        B1[评估模型健康度<br>与能力评分]\n        B2[检查 Key 剩余额度<br>与速率限制]\n        B3[按策略排序<br>候选模型链]\n    end\n    B --> C{尝试请求}\n    \n    C -- 成功 --> D[返回结果]\n    C -- 失败/限流/超时 --> E[自动切换至<br>下一最佳模型]\n    E --> C\n    \n    D --> F[返回结果给用户<br>并记录路由信息]\n```\n### 3. “融合模型”（Fusion）与多模型合成\n一个极具前瞻性的创新功能。你可以将 `model` 参数指定为 `\"fusion\"`。FreeLLMAPI 会将你的请求**同时并行发送给多个具有代表性的免费模型**（例如一个擅长推理的，一个速度快，一个中文理解好的），由一个“裁判模型”综合这些初步回答，**合成一个更全面、准确、高质量的最终答案**。这类似于“多专家系统”，用免费算力实现了部分模型的效果。\n### 4. 加密密钥存储与统一管理\n所有你从各家厂商申请的 API Key 都会通过 **AES-256-GCM 算法加密**后存储在本地 SQLite 数据库中。你的应用只需要持有一个由 FreeLLMAPI 生成的**统一 API Key**。FreeLLMAPI 的管理面板（React 构建的精美 UI）提供了添加、管理、健康检查这些密钥的界面，安全且便捷。\n### 5. 自动更新的模型目录（需 Premium）\nAI 世界日新月异。FreeLLMAPI 内置了从 `freellmapi.co` 获取**签名模型目录**的机制。它会自动同步新推出的免费模型、配额变更以及兼容性修复，确保你的网关始终拥有最新、最准确的模型信息，无需手动 `git pull`。（基础功能免费，实时目录更新为付费 Premium 功能）\n### 6. 全面的可观测性与分析（Analytics Dashboard）\n内置的 **React 管理面板**不仅是配置界面，更是一个强大的分析工具。你可以查看：\n*   **请求量**：24小时、7天、30天内的总请求数。\n*   **成功率**：整体及每个服务商的成功率。\n*   **Token 流量**：输入、输出的 Token 统计。\n*   **延迟分析**：P50, P95, 平均延迟，助你评估性能。\n*   **成本估算**：虽然都是免费，但了解“本该花费”多少也很有趣。\n---\n## 🎯 目标人群与收益：谁最适合使用它？\n| 角色 | 痛点 | FreeLLMAPI 带来的核心收益 |\n| :--- | :--- | :--- |\n| **个人开发者/学生** | 想尝试不同模型，但预算有限，不想为每个平台注册并管理多个 Key。 | **零成本获得海量算力**：一次配置，享受每月数十亿 Token 的免费实验额度。**极大降低试错成本**。 |\n| **AI 应用原型开发者** | 需要快速验证想法，选择最佳模型，但频繁切换 SDK 和管理密钥耗时耗力。 | **极致的开发效率**：一个 API 端点，**自动为你找到最合适的模型**。**专注于业务逻辑，而非基础设施**。 |\n| **技术内容创作者/教程作者** | 需要为读者演示各种 AI 功能，但不想暴露自己的付费 Key，或希望演示能稳定运行。 | **稳定的演示环境**：自动故障切换保证演示不会中断。**安全且免费**，无需担心 Key 泄露或超支。 |\n| **学习 AI 编程/Prompt 工程者** | 想系统学习不同模型的特性，但手动切换和对比非常麻烦。 | **高效的对比学习平台**：轻松指定或自动路由至不同模型，**直观感受差异**，Prompt 优化效率翻倍。 |\n| **小型团队/开源项目** | 项目需要使用 LLM，但预算紧张，希望充分利用免费资源。 | **开源的轻量级基础设施**：自托管，完全掌控，**将预算节省在模型本身而非网关上**。 |\n---\n## ⚖️ 竞品/同类对比：它处于什么位置？\nFreeLLMAPI 并非唯一的选择，但其设计理念和功能组合使其在**个人实验和开源项目**中极具吸引力。\n| 特性 | **FreeLLMAPI** | **OpenRouter** | **LiteLLM** | **直接使用各厂商免费API** |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **开源、自托管、专注于免费层聚合** | **SaaS 服务，聚合付费/免费模型** | **开源、自托管，企业级功能丰富** | **最原始的方式** |\n| **免费层** | ✅ **核心优势，聚合大量免费额度** | ✅ 提供部分免费模型 | ❌ 本身是工具，不提供免费额度 | ✅ 每家都有，但分散 |\n| **智能路由与故障转移** | ✅ **内置强大路由策略，自动故障切换** | ✅ 基础路由 | ✅ 高度可配置 | ❌ 需手动实现 |\n| **自托管** | ✅ **完全掌控，数据本地化** | ❌ SaaS，数据发送至第三方 | ✅ **完全掌控** | ✅ 完全掌控 |\n| **密钥管理** | ✅ **加密存储，统一管理** | ✅ 统一管理 | ✅ 统一管理 | ❌ 需单独管理每个 |\n| **模型目录更新** | ✅ **自动同步（Premium）** | ✅ 自动维护 | ❌ 需手动更新 | ❌ 需手动跟踪 |\n| **学习/部署成本** | ⭐⭐⭐⭐ **Docker 一键部署，非常简单** | ⭐⭐⭐⭐⭐ 最简单，无部署 | ⭐⭐⭐ 配置项多，需一定学习 | ⭐ 非常繁琐，需学习各平台 |\n| **适用场景** | **个人实验、开源项目、本地开发环境** | **快速原型、小型生产项目、希望快速开始** | **中大型团队、需要高级功能（预算、团队管理）** | **只需要特定某个平台模型，且希望最大程度控制** |\n**结论**：FreeLLMAPI 在**“免费资源聚合”**和**“个人开发者友好”**这个细分赛道上做得非常极致，是**开源、自托管场景下的最佳选择之一**。OpenRouter 则是“省心但付费”的 SaaS 代表，LiteLLM 则适合需要**企业级功能和高度自定义**的团队。\n---\n## ⚠️ 局限与不足：客观存在的短板\n1.  **主要面向个人实验，不适合生产环境**：项目 README 明确标注 **“Personal experimentation only”**。免费层本身**不稳定、有速率限制、无 SLA 保证**。路由器虽然尽力保障，但依赖的是外部免费资源，**无法保证高可用性**。任何生产环境都应使用付费的、有保证的服务。\n2.  **初始配置成本**：你需要**主动去各家厂商注册账号并申请 API Key**。这个过程虽然只需做一次，但对于懒人来说仍是一个步骤。FreeLLMAPI 不提供现成的 Key。\n3.  **高级功能需要付费订阅**：**实时模型目录自动更新**是 Premium 功能（$19/年）。基础功能免费，但若想保持目录自动最新，需要支付少量费用。这是一个合理的商业模式，但需知晓。\n4.  **依赖外部服务稳定性**：其“魔力”全部来自于对第三方免费服务的调用。如果某个免费服务彻底关闭或大幅修改 API，FreeLLMAPI 也需要时间适应（尽管目录更新机制有帮助）。\n5.  **国内访问可能受阻**：部分服务商（如 OpenRouter, Groq 等）的 API 可能需要特殊网络环境才能访问。这并非项目本身的问题，但可能会影响国内用户的使用体验。\n---\n## 🚀 上手门槛与部署体验：Docker 一键启动\nFreeLLMAPI 的部署体验**极佳**，几乎消除了所有技术障碍。\n### 方式一：一键脚本（最推荐）\n```bash\ncurl -fsSL https://freellmapi.co/install.sh | bash\n```\n这条命令会自动创建目录、生成加密密钥、拉取最新 Docker 镜像、并启动服务。完成后，访问 `http://localhost:3001` 即可看到管理面板。\n### 方式二：Docker Compose（更灵活）\n```bash\n# 1. 克隆仓库\ngit clone https://github.com/tashfeenahmed/freellmapi.git\ncd freellmapi\n# 2. 生成加密密钥并创建 .env 文件\nENCRYPTION_KEY=\"$(openssl rand -hex 32)\"\nprintf \"ENCRYPTION_KEY=%s\\nPORT=3001\\n\" \"$ENCRYPTION_KEY\" > .env\n# 3. 启动服务\ndocker compose up -d\n```\n<details>\n<summary><strong>⚠️ 常见问题：从其他设备无法访问面板？</strong></summary>\n默认情况下，Docker Compose 配置将端口绑定到 `127.0.0.1`，这意味着只有**本机**可以访问 `localhost:3001`。如果需要从局域网内的其他设备（如手机、另一台电脑）访问面板，需要修改启动命令：\n```bash\nHOST_BIND=0.0.0.0 docker compose up -d\n```\n**注意**：此操作会将服务暴露给整个网络，请确保你在**可信的网络环境**（如家庭局域网）中操作。\n</details>\n### 配置服务商密钥\n1.  打开 `http://localhost:3001`，在管理面板的 **Keys** 页面。\n2.  点击 **Add Key**，选择你需要的服务商（如 Google, Groq, Mistral 等）。\n3.  前往该服务商官网（如 Groq Console, Google AI Studio）注册并获取 API Key，将其粘贴到 FreeLLMAPI 中并保存。\n4.  FreeLLMAPI 会自动对密钥进行加密存储，并进行健康检查。\n5.  在 **Keys** 页面顶部，你会看到你生成的 **统一 API Key**（`freellmapi-xxx`），这就是你后续代码中要使用的 Key。\n### 与常用工具集成\nFreeLLMAPI 提供了官方的 `npx` 脚本来一键配置许多开发工具：\n```bash\n# 配置 Claude Code 使用 FreeLLMAPI\nnpx freellmapi setup-claude --url http://localhost:3001 --api-key freellmapi-your-key\n# 配置 Aider\nnpx freellmapi setup-aider --url http://localhost:3001 --api-key freellmapi-your-key\n# 配置 Cursor（或其他支持 OpenAI 的工具）\n# 通常只需在工具设置中修改 Base URL 和 API Key 即可\n```\n这个脚本的优点是**非破坏性**，它会备份现有配置，并智能地合并新配置，而不会覆盖你原有的设置。\n---\n## 🛠️ 社区活跃度与生命力\n*   **GitHub 星标与活跃度**：在 GitHub 上已获得超过 **10k+ Star**，说明社区认可度极高。项目由 `tashfeenahmed` 维护，**提交活跃**，近期有大量关于修复 bug、添加新功能和改进文档的提交。\n*   **Issue 解决速度**：根据搜索结果，Issue（如端口访问问题）能够得到**快速响应和修复**，表明维护者非常关注用户反馈。\n*   **周边生态**：项目本身已集成对大量 **AI 编程工具（Claude Code, Aider, Continue, Cursor 等）的支持**，并衍生出了一些优化 Fork（如支持中文的版本），生态在逐步繁荣。\n---\n## 📝 Demo / 代码示例：直观感受\n### 示例 1：Python SDK 调用\n```python\nfrom openai import OpenAI\n# 初始化客户端，指向你的 FreeLLMAPI 服务\nclient = OpenAI(\n    base_url=\"http://localhost:3001/v1\",\n    api_key=\"freellmapi-your-unified-key\"  # 从 Keys 页面获取\n)\n# 请求，让路由器自动选择最佳模型\nresponse = client.chat.completions.create(\n    model=\"auto\",  # 关键！自动路由\n    messages=[\n        {\"role\": \"system\", \"content\": \"你是一个有帮助的助手。\"},\n        {\"role\": \"user\", \"content\": \"写一个 Python 函数来计算斐波那契数列的第 n 项。\"}\n    ],\n    stream=True  # 支持流式输出\n)\n# 打印响应\nfor chunk in response:\n    if chunk.choices[0].delta.content is not None:\n        print(chunk.choices[0].delta.content, end=\"\", flush=True)\n# 响应头中会包含实际路由信息\n# print(\"Routed via:\", response.headers.get(\"x-routed-via\"))\n```\n### 示例 2：使用 Fusion 模型获得合成答案\n```python\nresponse = client.chat.completions.create(\n    model=\"fusion\",  # 指定 fusion 模式\n    messages=[\n        {\"role\": \"user\", \"content\": \"请比较 Python 和 JavaScript 的主要特点。\"}\n    ]\n)\nprint(response.choices[0].message.content)\n```\n此请求会并行发送给多个模型，最终获得一个综合性的回答。\n---\n## 🎓 结语与行动建议\n### 终极评判\nFreeLLMAPI 是一个**设计精巧、实现优雅、真正解决开发者痛点**的开源项目。它成功地将一个原本“碎片化、管理成本高”的免费资源利用问题，转化为一个“一键部署、自动管理、稳定可靠”的解决方案。它**不生产算力，但让免费算力的获取和使用变得前所未有的简单和高效**。\n对于任何希望低成本、高效率地进行 AI 实验、原型开发或学习编程的人来说，**它是一个几乎必装的利器**。它不是“免费午餐”，而是让你更轻松地吃到“免费午餐”的餐具。\n### 行动建议\n1.  **立即尝试**：\n    ```bash\n    curl -fsSL https://freellmapi.co/install.sh | bash\n    ```\n    然后花 10 分钟去注册 2-3 个你最感兴趣的服务商（Groq 速度最快，OpenRouter 模型多，Google 上下文大）的免费 Key，填入面板。**即刻体验“一个 Key，世界任游”的快感**。\n2.  **集成到你常用的工具**：使用 `npx freellmapi setup-xxx` 脚本，将你的 AI 编程助手（如 Claude Code, Aider）或 IDE（如 Cursor）配置为使用 FreeLLMAPI，享受免费算力带来的无限可能。\n3.  **关注 Premium 订阅**：如果你觉得项目节省了大量时间并带来了巨大价值，**考虑 $19/年的 Premium 订阅**，支持开发者并享受自动更新的模型目录。\n4.  **贡献代码或反馈**：作为开源项目，你可以通过提交 Issue、Pull Request 或在社区分享你的使用体验来帮助它变得更好。\n> 💡 **最后提醒**：**请务必遵守各服务商的免费条款和使用政策**。FreeLLMAPI 是一个工具，它帮你遵守规则，但不应该被用来滥用规则。**“个人实验”** 的定位需要被尊重。\nFreeLLMAPI 让免费 AI 算力的“共享经济”成为可能，它无疑是目前 GitHub 上最值得 AI 开发者关注的“宝藏项目”之一。"
     },
     {
       "id": "ce2dcd3b-0ee0-4806-9872-03a2b15d3ad4",
@@ -2571,13 +2677,71 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "HTML",
-      "stars": 17216,
-      "forks": 1197,
+      "stars": 17573,
+      "forks": 1225,
       "starsAdded": 1002,
       "createdAt": "2026-08-26T15:41:07.982Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "17573",
+        "forks": "1225",
+        "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export. - tt-a1i/archify",
+        "topics": [
+          "agent-skills",
+          "architecture-as-code",
+          "architecture-diagram",
+          "claude-skill",
+          "code-visualization",
+          "codex",
+          "coding-agents",
+          "data-flow-diagram",
+          "deepseek-harness",
+          "developer-tools",
+          "diagram-as-code",
+          "diagrams",
+          "diagrams-as-code",
+          "dsh-plugin",
+          "mermaid-alternative",
+          "opencode",
+          "sequence-diagram",
+          "software-architecture",
+          "system-design",
+          "text-to-diagram"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tt-a1i.github.io/archify/"
+      },
+      "summaryData": {
+        "title": "Archify - AI 时代的可验证架构图生成工具",
+        "cover": "",
+        "summary": "Archify 让 AI 生成结构化 JSON 并自动渲染为专业架构图，支持验证、版本对比和交互式查看，解决 AI 生成图表不可靠的问题。",
+        "ability": [
+          "AI 生成架构图",
+          "结构化验证与对比",
+          "交互式图表查看",
+          "多平台 Agent 集成",
+          "多格式导出"
+        ],
+        "suitable": [
+          "AI 编程开发者",
+          "技术负责人/架构师",
+          "DevOps/SRE",
+          "技术文档撰写者"
+        ],
+        "description": "Archify 是一个面向 AI Agent 的开源工具，通过引导 AI 生成结构化 JSON 来绘制架构图、流程图等。它具备严格的校验机制、版本变更对比功能以及交互式查看器，能产出高质量、可分享的 HTML/SVG 图表，极大地提升了技术沟通与架构评审的效率。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "tags": [
+          "GitHub 开源",
+          "架构图生成",
+          "AI Agent",
+          "可视化",
+          "CLI 工具"
+        ]
+      },
+      "contentDetail": "# Archify 深度评测\n一句话总结：Archify 把“画架构图/流程图/时序图/数据流/状态机”这件事，从手动绘图变成了“让 AI 代理先生成结构化 JSON，再自动校验、渲染成单文件 HTML + SVG”的一条稳定流水线，产出可验证、可分享、可导出（PNG/SVG/WebM/分享卡片）的专业技术地图，且支持对架构变更做“Before/Delta/After”结构化对比，是面向 Agent 时代的“可信赖技术沟通神器”。\n---\n## 背景与痛点\n### 为什么需要 Archify？\n- **沟通成本高**：架构评审、技术评审、需求对齐，大家常在 PPT/白板/画布工具间来回切换，版本对不上、细节不一致。\n- **AI 生成不可靠**：直接让大语言模型（LLM）生成 SVG/画布操作，经常会“看起来像”，但元素对齐、文本重叠、关系标注、可维护性都不好，且很难做“增量修改”而不崩坏整体。\n- **Mermaid/Diagram as Code 的局限**：语法学习门槛、自动化排版效果不可控、样式定制与主题切换繁琐，缺少面向演示（如深浅主题一键切换）和“验证与变更比对”的工程能力。\n- **多 Agent 生态的碎片化**：Raven、Cursor、Claude Code、Codex CLI、OpenCode 等各自为战，缺少一个“跨 Agent 可复用”的技能包，导致重复建设与口径不一致。\n### Archify 的解法思路\n- **把 AI 的输出从“最终图形”收束到“可验证的中间表达（Typed JSON IR）”**：由 Agent 生成符合 Schema 的 JSON；再用内置渲染器与校验器产出最终 HTML/SVG，确保输出是“确定性的、机器可检查的”，而非随意的绘图指令。\n- **围绕“可验证、可分享、可导出”设计**：生成的是单文件 HTML，内置 viewer（支持搜索、聚焦、上下游溯源、路径探查、演示模式、主题切换），导出 PNG/SVG/WebM/分享卡片时不再依赖第三方 SaaS，且产物可溯源到 Git 提交。\n- **做“Agent 的通用技能”**：通过开放技能规范（SKILL.md）与统一 CLI（bin/archify.mjs），把图表生成能力封装成可在多种 Agent 平台上安装、调用的 Skill，而不再与单一工具绑定。\n---\n## 核心亮点与功能剖析\n### 五类图、一条流水线：Architecture / Workflow / Sequence / Data-Flow / Lifecycle\n- **Architecture**：组件、服务、存储、云边界、安全边界；适合“运行时架构、部署拓扑、信任边界”等场景。Prompt 关键词：Scope、核心组件、主路径。\n- **Workflow**：CI/CD、审批、工具调用、运维手册；以泳道/轨道形式呈现主分支与次要分支。关键词：参与者、顺序、分支、异常。 \n- **Sequence**：API 调用链、缓存回退、认证、异步追踪、返回；强调时间轴与调用关系。关键词：调用方、被调用方、返回、时序。 \n- **Data-Flow**：数据管道、血缘、PII 边界、下游消费者；明确“从哪里到哪里的变换与边界”。关键词：来源、变换、存储、边界。 \n- **Lifecycle**：状态机、重试、等待、终态；区分“正常推进/等待/重试/终态”。关键词：状态、事件、重试与取消路径。 \n> 比喻：这好比“同一剧本的五种演出方式”。你是做架构设计师（Architecture）、导演流程（Workflow）、编剧对话（Sequence）、追踪物资流向（Data-Flow），还是为角色画人生状态（Lifecycle），选择对应“剧本类型”，Archify 会给出一套与场景契合的舞台布景。\n### 可验证的中间表达（Typed JSON IR）与多层校验\n- **Agent 生成 JSON IR**：SKILL.md 要求 Agent 先读取对应 schema 与示例，写出符合规范的候选 JSON，而非直接“画图”。\n- **Validate → Render → Check**：CLI 提供 validate / deliver / preview 等子命令，做“Schema 校验 → 布局校验 → HTML/SVG 校验 → 路由与标签重叠检查”，不合格会给出机器可读的“修复收据”（rule codes、定位 subject、支持修复建议）。\n- **Last-good 实时预览**：preview 模式只监听本地 127.0.0.1 随机端口，当且仅当新 JSON 通过全部门禁才刷新视图，否则保留上次“已验证”状态，防止迭代时“看错了版本”。\n### 单文件交付与导出体系\n- 产物是**一份 HTML**（内联 SVG，无外部依赖），可双击直接打开、发给同事或贴到文档系统；支持暗色/浅色主题切换（快捷键 T）与多种视觉预设（classic/signal-flow/blueprint 等）。\n- **导出**：支持一键复制 PNG 到剪贴板，以及 PNG/JPEG/WebP/SVG/WebM 与 1200×630 分享卡片（适合 README/社交分享）；SVG 包含深浅两套变量 + prefers-color-scheme，无需手动制作两图。 导出分辨率“原生最高 4×”，避免模糊插值。\n### 架构变更的“Before / Delta / After”对比\n- 对比两个已验证的 JSON 快照，生成结构化 delta（新增/删除/语义变化/移动/重路由），并以“机器收据”呈现，便于 PR/合并前评审。 CLI 示例：`node archify/bin/archify.mjs compare architecture base.json head.json architecture-delta.html --json`。\n- “Delta”与“Architecture Delta 模式”支持 Before/Delta/After 一页统一查看与“有限故事回放”，方便聚焦变更、不影响运行时环境（只读、不做推断）。\n### 交互式 viewer 能力（纯前端）\n- **搜索与聚焦（/ + 节点名）**：快速定位组件。 \n- **上下游溯源**：选中节点 → Upstream/Downstream，查看可达范围与精确路径，不编造拓扑。 \n- **路径探查（R 或 PATH）**：检查两点间最短“已撰写的有向路径”，用于“请求/数据链路”排查。 \n- **语义角色对比（L 或 LENS）**：对比不同语义角色之间的流量或关系。 \n- **全局雷达（M 或 MAP）**：可视化概览。 \n- **引导故事与章节切换（P / [ / ]）**：播放预设的“章节化叙事”，用于演示与文档化。 \n- **演示模式（F）**：进入“舞台模式”，聚焦内容。 \n- **URL 稳定链接**：通过 `#focus=...&reach=...` 等锚点恢复视角与过滤状态，方便分享“特定视角”的图表。 \n### 面向 Agent 的“零依赖 Skill 包”\n- 通过 `npx skills add tt-a1i/archify -g` 一键安装（依赖 Vercel Labs 的 skills CLI），支持 Claude Code、Codex CLI、OpenCode、Cursor、Raven 等平台；亦可上传 archify.zip 到 Claude.ai 的 Skills 或项目知识库。 DeepSeek Harness 提供社区插件，`dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`。 包内无需 npm install，完全“就绪可用”。\n> 比喻：Skill 像一张“随身菜单”，你只要问 Agent“使用 archify 把这个仓库的运行时架构画出来”，Agent 就按“菜单”一步步完成：选类型、读 schema、写 JSON、校验、交付 HTML。\n### Proof Lab 与真实仓库案例\n- 官方 Proof Lab 提供多组“已验证的案例”与对应 JSON 源文件，覆盖 workflow、sequence、dataflow、lifecycle、architecture 等，并支持“引导故事/路径探查/语义镜头”交互体验。 还有“从真实仓库生成”的 mco-org/mco 运行时架构案例，展示从 Git 提交到“已验证地图”的端到端能力。\n---\n## 目标人群与收益\n- **使用 AI 编码代理的一线开发者**：不用离开 IDE/聊天界面，就能把“架构图/流程图”交给 Agent 生成，并在 PR 阶段做架构变更的可视化审查。 收益：评审沟通更顺畅，减少“画图摆拍”。\n- **技术负责人/架构师**：需要产出可维护、可溯源、可分享的架构与技术流程文档，同时希望与团队快速对齐。 收益：版本可验证，变更可对比，沟通成本大幅降低。\n- **DevOps/SRE**：需要可视化 CI/CD、运维手册、状态机、重试与降级路径。 收益：把“剧本式流程”变成可回放、可导出的动态图，方便新人 onboarding。\n- **技术文档/布道师**：需要高质量、可导出（尤其是 SVG/分享卡片）、可主题切换的图表，并在 README、演讲幻灯片中复用。 收益：出图不再依赖设计团队，交付更专业。\n- **使用多种 Agent 的用户**：Raven、Cursor、Claude Code、Codex CLI、OpenCode、DeepSeek Harness 等平台可共享同一个 Skill，不必为每个平台重做图表。 收益：能力统一，减少重复投入。\n---\n## 竞品/同类对比\n| 项目 | 类型 | AI 集成 | 验证/变更对比 | 交付形态 | 多主题/导出 | 侧重点 |\n|---|---|---|---|---|---|---|\n| Archify | Agent Skill + CLI | 深度（SKILL 规范引导 Agent 生成 JSON） | 有（Before/Delta/After、机器收据） | 单文件 HTML（内联 SVG） | 主题切换、PNG/JPEG/WebP/SVG/WebM/分享卡片 | 可验证的技术沟通、交互式地图 |\n| Mermaid | DSL | 需第三方集成 | 无变更对比工具链 | 代码转 SVG/文本 | 有限（需主题/样式配置） | 文本即图，通用性高 |\n| PlantUML | DSL | 需第三方集成 | 无变更对比工具链 | 代码转图像/PDF | 可定制主题 | 企业级、图表类型多 |\n| Excalidraw / draw.io | 画布 | 需手动操作 | 版本 diff 较弱 | 在线/本地文件 | 阅读器侧主题 | 手绘感、自由度高 |\n| Kroki / 各种 Diagram-as-a-Code 服务 | 托管/CLI | 需脚本调用 | 无内置变更对比 | 图片/SVG | 视后端而定 | 统一入口、部署即用 |\n### Archify 的独特竞争力\n- **“验证优先 + 变更对比”**：从 JSON IR 到 HTML 经过多层校验，且提供结构化 delta 与机器可读收据，适合工程化、可审计的场景。 \n- **“单文件、离线可用”**：HTML 内联所有必要内容，不需要服务器或在线服务，便于在私有环境/离线环境分享。 \n- **“多 Agent 生态统一技能”**：通过 SKILL.md 与 CLI 提供标准化的 Agent 调用协议，将图表能力从特定工具中解耦。 \n---\n## 局限与不足\n### 不做“通用绘图编辑器”\n- Archify 明确表示不是 WYSIWYG 画布，也暂不提供 Mermaid 自动解析与通用自动布局（已在 Issues 中有“导入 Mermaid”的需求讨论，但仍在路线图中）。\n- 若你需要“自由拖拽摆放、像素级编辑、自由绘制”的体验，还是需要 Excalidraw/draw.io 等传统工具。\n### 上手有一定心智成本\n- 需要理解“JSON IR”与“Schema”的概念（虽然大部分工作由 Agent 完成，但调试或定制仍需阅读 schema 与示例）。\n- 初次使用需要熟悉 Agent 平台的 Skills 安装路径（Claude Code、Codex CLI、OpenCode 的目录布局各不相同），官方给出了路径表，但完全“小白”可能需要对照文档一步步来。 \n### 没有 Docker 一键部署（目前）\n- Issues 中曾有人询问 Docker 支持，但仓库目前并未提供 Dockerfile；项目以 Node.js + CLI 为主，Skill ZIP 也无需运行时依赖。 对于期望“容器化”的用户需要自行封装。\n### 当前功能边界\n- “自动布局”不是通用 DAG 布局，而是“Renderer 依据 Agent 指定的层级/端口/通道进行有约束的排版”，因此当 Agent 描述不够精确时，需要迭代修正（SKILL.md 给出了两轮修复策略）。\n- 不提供“托管分享平台”，需要通过 HTML/SVG/图片方式自行分发。 \n---\n## 技术栈与架构解析\n### 技术栈\n- **运行时**：Node.js（CLI 与 Skill 内核）。 README 提供的 doctor/demo 命令均通过 node bin/archify.mjs 调用，属于无 npm 依赖的“单体包”。 \n- **包管理与分发**：提供 npm 技能安装（skills CLI）与 archify.zip 两种形式；仓库包含 scripts/build-zip.sh 用于构建可复现的 ZIP（含 package.json 与锁文件）。\n- **语言**：从文件名 .mjs 与 JSON schema 分布可见，主要实现为 JavaScript（ESM），配合 JSON Schema 做类型与验证定义。 \n- **渲染与前端**：产物为 HTML + 内联 SVG，viewer 能力由嵌入的 JS/CSS 提供；无第三方前端依赖，使用本地字体回退。 \n### 架构与代码组织\n- 仓库划分为：\n  - **archify/**：核心 Skill 与 renderer/validator 等实现。\n  - **archify/schemas/**：各图表类型的 JSON Schema，是“Typed JSON IR”的契约。\n  - **examples/**：各类型示例 JSON 与对应的 HTML（含 workflow、sequence、dataflow、lifecycle、architecture、delta 等），覆盖常见场景并作为“AI 参考”。 \n  - **bin/archify.mjs**：统一 CLI 入口，提供 doctor/demo/guide/validate/deliver/preview/render/check/visual-check/brands/examples 等子命令。 \n  - **SKILL.md**：给 Agent 的“技能说明书”，定义何时使用、如何读 schema/示例、如何生成候选 JSON、如何验证与交付、Mermaid 导入与 viewer runtime 说明。 \n  - **CHANGELOG/ROADMAP/CONTRIBUTING**：版本演进、未来路线与贡献规范。 \n> 比喻：Archify 的架构像“剧本编辑部 + 剧团”。Schema 是剧本大纲与角色表，Agent 是编剧写出初稿 JSON，renderer 与 validator 是排练与审校，viewer 是剧团在舞台上按剧本演出；CLI 是总控与场记，确保每一幕都按“既定门禁”上戏。\n---\n## 上手门槛与部署体验\n### 最快上手（60 秒）\n- **安装**：`npx skills add tt-a1i/archify -g`\n- **使用（在支持的 Agent 中）**：`Use archify to map this repository's runtime architecture.` 或 `Use archify to draw this login flow: Browser -> Web App -> API -> JWT validation -> Redis session lookup -> PostgreSQL fallback. Make the cache-miss path secondary.`\n### 非安装试用\n- `npx skills use tt-a1i/archify@archify --agent codex`（可把 codex 替换为 claude-code 或 opencode）。 \n### CLI 本地使用\n- 克隆仓库后，执行：\n  - `node bin/archify.mjs doctor`（环境自检）\n  - `node bin/archify.mjs demo /tmp/archify-demo`（生成示例）\n  - `node bin/archify.mjs validate workflow examples/agent-tool-call.workflow.json --quality showcase --json`\n  - `node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase --open --json`\n  - 可选：`node bin/archify.mjs preview workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase`（本地实时预览）\n### 手动安装路径（不使用 skills CLI）\n- 按 README 提供的表，将 archify.zip 解压到对应平台目录：\n  - Raven：~/.raven/workspace/skills/archify\n  - Claude Code：~/.claude/skills/ 或项目内 .claude/skills/\n  - Codex CLI：~/.agents/skills/ 或项目内 .agents/skills/\n  - OpenCode：~/.config/opencode/skills/ 或 .opencode/skills/ 或 .agents/skills/\n  - Claude.ai：Settings → Capabilities → Skills 上传 archify.zip\n- DeepSeek Harness（社区插件，非官方）：`dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`\n### 文档质量\n- 提供中英文 README、Scenario Guide、Proof Lab、Schema 参考、Agent Cookbook 等，并给出 Scenario-first 提示词与 Prompt 模式；中文 README 更贴近国内用户。 \n- SKILL.md 对 Agent 足够明确，包含“类型路由、Mermaid 导入、作者不变量、交付与 viewer runtime”等章节，帮助 Agent 正确生成与交付。 \n---\n## 社区活跃度与生命力\n### 量化指标（快照）\n- GitHub Stars：约 17k+；Forks：约 1.1k+。 \n- Issues：十余个公开 issue（多为功能需求与已知 bug），Pull Requests：约 9 个开放、58 个已合并，最近的 PR 提交日期为 8 月 26 日。Issues 与 PR 中包含来自不同贡献者的修复与增强，显示持续迭代。 \n- 项目曾登上 GitHub Trending，并入选第三方趋势分析页面。 \n### 近期方向（从 Issues 与 PR 观察）\n- 社区 PR 涵盖“品牌捕获修复、仓库证据与校验 tighten、ZIP 构建可复原子、viewer 导航与 CLI 选项修复”等，并出现“导出为 draw.io”等功能性 PR。 \n- Issues 讨论了“Mermaid 导入”、“Docker 支持”、“多平台插件市场集成”等需求，部分已在路线图中。 \n### 维护节奏\n- CHANGELOG 与 ROADMAP 表明项目仍在活跃开发中，且维护者对“ breaking 变更、兼容性、新增平台集成”等保持谨慎态度（例如对 DeepSeek Harness 插件的兼容性与变更边界做了清晰限制）。 \n---\n## Demo / 代码示例\n### Prompt 示例（ Architecture）\n- “Analyze this repository, then use archify to create a high-level runtime architecture diagram. Show 8–12 core components, one primary request path, external dependencies, and trust boundaries. Put supporting detail in cards instead of adding more edges.”\n- “Use archify to draw this login flow: Browser -> Web App -> API -> JWT validation -> Redis session lookup -> PostgreSQL fallback. Make the cache-miss path secondary.”\n### CLI 快速体验\n- 健康检查与示例：\n  - `node bin/archify.mjs doctor`\n  - `node bin/archify.mjs demo /tmp/archify-demo`\n- 渲染与校验：\n  - `node bin/archify.mjs validate workflow examples/agent-tool-call.workflow.json --quality showcase --json`\n  - `node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase --open --json`\n- 比对架构变更（Before/Delta/After）：\n  - `node archify/bin/archify.mjs compare architecture base.json head.json architecture-delta.html --json`\n### 调用 archify 的最小示意（伪代码）\n- 在 Agent 的技能流程中，通常的调用链是：\n  - 步骤 1：Agent 读取对应 schema（例如 architecture.schema.json）与示例（examples/*.architecture.json）。\n  - 步骤 2：Agent 写出符合 schema 的候选 JSON（如 my-repo.architecture.json）。\n  - 步骤 3：Agent 调用 `validate` 进行校验并解析 diagnostics。\n  - 步骤 4：若未通过，根据“支持的修复”进行最多两轮定向修改；否则调用 `deliver` 生成最终 HTML。\n  - 步骤 5：返回 HTML 路径、类型、验证摘要与规格/产物收据给用户。\n> 由于篇幅与界面限制，完整的 JSON 示例请参考 examples/ 目录下的 *.architecture.json / *.workflow.json / *.sequence.json 等文件；CLI 输出包含 validation/diagnostics 的机器可读 JSON，便于集成到 CI/CD 或 PR 检查中。 \n---\n## 结语与行动建议\n### 终极评判\n- Archify 并非要取代传统绘图工具，而是瞄准“Agent 时代的可验证技术沟通”这一空白：把“对图的需求”结构化为 JSON IR，并通过验证与交付流程，把“画图”变成工程的一部分。其“Before/Delta/After、验证收据、单文件交付、多 Agent 生态集成”等特性，对需要频繁评审与协作的团队非常实用。 对于已经在使用 Claude Code/Cursor/Codex/OpenCode 等工具的开发者，值得将其纳入 Skill 箱，让“架构图/流程图”成为对话的天然产出。\n### 行动建议（适合不同角色）\n- **如果你是“用 AI 写代码的一线开发者”**：\n  - 先安装：`npx skills add tt-a1i/archify -g`。\n  - 在日常对话中尝试“用 archify 梳理当前仓库的运行时架构/登录流程/CI 流程”，并将生成的 HTML 贴到团队文档。\n- **如果你是“技术负责人/架构师”**：\n  - 在 PR 模板中增加“使用 archify 生成架构 delta 并附上收据”的步骤，用结构化对比提升评审质量。\n- **如果你是“DevOps/SRE”**：\n  - 用 workflow 与 lifecycle 图化简“审批、发布、重试与降级”流程，并通过引导故事为新人培训。\n- **如果你是“文档/布道”**：\n  - 利用 SVG 与分享卡片，把 README/发布会/社交媒体的图表提升到“高保真、自适应主题”的水准。\n- **如果你是“平台/工具作者”**：\n  - 参考 SKILL.md 中的“Agent 约定与交付合同”，将类似的“可验证中间表达 + 校验交付”模式应用到更多工具链。\n### 风险与预期管理\n- 不要把 Archify 当成“通用绘图工具”或“拖拽式编辑器”；它的价值在于“生成与验证”，而非自由绘制。\n- 在初次使用时，花 10–15 分钟阅读 Prompt 模式与 Scenario Guide，会显著提升 Agent 的第一次产出质量。 \n- 若你对“Docker 化部署”或“特定平台插件”有强需求，建议关注 Issues 与 ROADMAP，或参与贡献（项目欢迎 PR 与真实图例）。 \n总体而言，Archify 在“Agent 生成技术图”这个细分赛道上，做出了“可验证、可交付、可分享”的差异化路径，适合希望在 AI 工作流里把“图”当工程对待、而不仅是插图的团队和个人。"
     },
     {
       "id": "100f7b6a-c3b3-4347-af43-3b1c7453eca1",
@@ -2587,13 +2751,13 @@
       "repo": "AprilNEA/OpenLogi",
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "stars": 16755,
-      "forks": 470,
+      "stars": 16816,
+      "forks": 473,
       "starsAdded": 7648,
       "createdAt": "2026-08-23T16:33:00.056Z",
       "githubData": {
-        "stars": "16535",
-        "forks": "456",
+        "stars": "16816",
+        "forks": "473",
         "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry. - AprilNEA/OpenLogi",
         "topics": [
           "dpi",
@@ -2654,13 +2818,13 @@
       "repo": "megadose/holehe",
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
-      "stars": 14253,
-      "forks": 1827,
+      "stars": 14271,
+      "forks": 1831,
       "starsAdded": 2448,
       "createdAt": "2026-08-23T13:14:26.655Z",
       "githubData": {
-        "stars": "14230",
-        "forks": "1826",
+        "stars": "14271",
+        "forks": "1831",
         "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function. - megadose/holehe",
         "topics": [
           "ebay",
@@ -2722,13 +2886,13 @@
       "repo": "citrolabs/ego-lite",
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
-      "stars": 13709,
-      "forks": 705,
+      "stars": 13745,
+      "forks": 706,
       "starsAdded": 10370,
       "createdAt": "2026-08-23T13:14:26.646Z",
       "githubData": {
-        "stars": "13559",
-        "forks": "702",
+        "stars": "13746",
+        "forks": "706",
         "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config. - citrolabs/ego-lite",
         "topics": [
           "agent-skills",
@@ -2787,13 +2951,13 @@
       "repo": "AgriciDaniel/claude-obsidian",
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "language": "Python",
-      "stars": 13210,
-      "forks": 1395,
+      "stars": 13314,
+      "forks": 1397,
       "starsAdded": 812,
       "createdAt": "2026-08-26T02:08:48.740Z",
       "githubData": {
-        "stars": "12888",
-        "forks": "1386",
+        "stars": "13314",
+        "forks": "1397",
         "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern. - AgriciDaniel/claude-obsidian",
         "topics": [
           "agent-skills",
@@ -2818,7 +2982,7 @@
           "second-brain"
         ],
         "license": "MIT license",
-        "homepage": "https://agricidaniel.com/blog/claude-obsidian-ai-second-brain"
+        "homepage": "https://skool.com/ai-marketing-hub-pro"
       },
       "summaryData": {
         "title": "claude-obsidian：深度融合 AI 的本地第二大脑构建系统",
@@ -2862,13 +3026,58 @@
       "repo": "ConardLi/garden-skills",
       "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
       "language": "CSS",
-      "stars": 10814,
-      "forks": 1384,
+      "stars": 10871,
+      "forks": 1385,
       "starsAdded": 136,
       "createdAt": "2026-08-26T15:41:08.149Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "10871",
+        "forks": "1385",
+        "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more. - ConardLi/garden-skills",
+        "topics": [
+          "agent",
+          "claude",
+          "gpt-image-2",
+          "rag",
+          "skills",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/ConardLi/garden-skills"
+      },
+      "summaryData": {
+        "title": "Garden Skills：生产级 AI Agent 技能包深度评测",
+        "cover": "",
+        "summary": "一套精选的生产级 AI 编码 Agent 能力包，可一键安装至 Claude/Cursor，显著提升设计、视频与检索质量。",
+        "ability": [
+          "提升前端设计质量",
+          "文本转视频演示",
+          "本地知识库检索",
+          "自动化图文排版",
+          "结构化生图提示词"
+        ],
+        "suitable": [
+          "前端/设计工程师",
+          "内容创作者/讲师",
+          "知识库维护团队",
+          "产品/运营人员",
+          "AI 编程爱好者"
+        ],
+        "description": "这是一套生产级的 AI Agent 技能合集，兼容 Claude Code 和 Cursor 等主流环境。它通过前端设计、视频生成、知识检索等标准化技能包，解决 AI 输出不可控的痛点，帮助团队实现高质量、可复用的自动化工作流。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "tags": [
+          "GitHub",
+          "Agent Skills",
+          "Claude Code",
+          "前端开发",
+          "工作流自动化"
+        ]
+      },
+      "contentDetail": "# 一句话总结\nGarden Skills 是一套“生产就绪”的 AI 编码 Agent 能力包（Agent Skills），精选了可直接落地的前端设计、视频演示、本地知识检索、图像生成与图文编排等技能，可一键安装到 Claude Code、Cursor、Codex 等主流 Agent 环境，显著提升 AI 输出质量与协作确定性。\n---\n## 背景与痛点：它为什么会出现？\n- 编码 Agent 越来越强，但“缺少上下文与流程约束”的问题日渐突出：模型容易做出“能用但不好看”的页面、抓取无关文档、幻觉式回答等。业界因此诞生了 Agent Skills 这一开放标准——以“文件夹+SKILL.md”的轻量格式封装领域知识与可重复工作流，让 Agent 按需加载、保持可控与可审计。\n- **日常痛点**：\n  - 前端：AI 总是生成“千篇一律的蓝紫渐变+Inter 字体+圆角卡片+假 Logo”的 UI，设计“中庸”且“油腻”。\n  - 视频：要把一篇长文做成 16:9 演示视频，需要在 PPT、录屏、剪辑、配音等多个工具之间反复切换，流程割裂且难以复现。\n  - 知识库：想让 AI 严格基于本地资料回答，但把整个 PDF/Word 扔进去不仅浪费 Token，还容易“没边没沿”地乱搜。\n  - 图像：生成流程在不同工具/模型间碎片化，Prompt 模板难以复用与沉淀。\n  - 图文：想把文章、PDF、截图等变成“像样的网页/文档”，但往往排版与节奏失控。\nGarden Skills 的思路很直接：把“高质量、标准化、可复用”的工程/设计/编辑/检索流程，写成一摞 Agent 能看懂、能照着干的 Skill，然后让它在各 Agent 间跨环境复用。核心是“流程化约束”与“按需加载”的组合拳。\n---\n## 技术与架构：它究竟是什么、怎么装？\n### 核心概念：一个 Skill 就是一个“能力胶囊”\n- 每个 Skill 本质上是一个文件夹，必须包含 SKILL.md（YAML 前置元数据+操作指令），并可选加入 README.md、references/、scripts/、assets/。这些文件是 Agent 按需读取与执行的“配方与原料”。\n- 工作机制分三阶段：发现（仅加载 name 与 description）、激活（任务匹配后读取完整 SKILL.md）、执行（按指令执行，必要时调用脚本或加载参考资料）。这意味着你可以同时挂载大量 Skill 而不爆炸上下文。\n### 技术栈与架构设计\n- **内容层**：以 Markdown/YAML 为主组织流程与知识，辅以少量脚本（例如 TTS 调用、数据抽取、校验等）。每个 Skill 独立自治，职责单一。\n- **胶水层**：\n  - 提供统一的 npm CLI（`skills`）支持跨 Agent 安装与版本管理；可按项目安装（./.skills）或全局安装（~/.skills）。\n  - GitHub Releases 提供带 SHA-256 校验的钉版本 .zip，适合 CI/离线/不可变部署；还有“always-latest”便捷链接。\n  - 支持 Git Submodule 与手动复制等传统方式，方便深度定制与 Vendoring。\n- **环境兼容矩阵**：官方已测试并支持 Claude Code（.claude/skills/）、Claude.ai Web 端、Cursor（.agents/skills/）、Codex CLI（.codex/skills/）、Gemini CLI、OpenCode 等，确保“SKILL.md”的跨产品可移植性。\n### 安装示例（核心代码片段）\n- 使用 skills CLI（推荐，最通用）：\n```bash\n# 安装全部最新 Skill\nnpx skills add ConardLi/garden-skills\n# 只安装某个 Skill\nnpx skills add ConardLi/garden-skills -s web-design-engineer\n# 全局安装（跨项目复用）\nnpx skills add ConardLi/garden-skills -s gpt-image-2 --global\n# 指定目标 Agent\nnpx skills add ConardLi/garden-skills -s kb-retriever -a claude-code\n# 查看已安装、查找、更新、卸载\nnpx skills list\nnpx skills find web-design\nnpx skills update\nnpx skills remove kb-retriever\n```\n- Claude Code 插件市场方式（支持打包订阅）：\n```bash\n/plugin marketplace add ConardLi/garden-skills\n/plugin install presentation-skills@garden-skills\n/plugin install web-design-skills@garden-skills\n/plugin install knowledge-base-skills@garden-skills\n/plugin install image-generation-skills@garden-skills\n```\n- GitHub Releases 钉版本（适合 CI/生产）：\n```bash\nSKILL=web-design-engineer\nVERSION=1.0.0\ncurl -fsSL -o \"${SKILL}.zip\" \\\n  \"https://github.com/ConardLi/garden-skills/releases/download/${SKILL}-v${VERSION}/${SKILL}-${VERSION}.zip\"\ncurl -fsSL -o \"${SKILL}.zip.sha256\" \\\n  \"https://github.com/ConardLi/garden-skills/releases/download/${SKILL}-v${VERSION}/${SKILL}-${VERSION}.zip.sha256\"\nshasum -a 256 -c \"${SKILL}.zip.sha256\"\nunzip -q \"${SKILL}.zip\" -d .claude/skills/\n```\n- Git Submodule（便于大项目 Vendor 与升级追踪）：\n```bash\ngit submodule add https://github.com/ConardLi/garden-skills.git vendor/garden-skills\nln -s ../../vendor/garden-skills/skills/web-design-engineer .claude/skills/web-design-engineer\ncd vendor/garden-skills && git checkout web-design-engineer-v1.0.0\n```\n- 手动复制（适合本地魔改）：\n```bash\ngit clone https://github.com/ConardLi/garden-skills.git\ncp -r garden-skills/skills/web-design-engineer your-project/.claude/skills/\n# 或 Cursor 等使用 .agents/skills/\n```\n---\n## 核心亮点与四大 Skill 详解（给小白与专家都能看懂）\n### 1) web-design-engineer：把 AI 做的页面从“能用”变成“好看”\n- **它解决什么**：直击“生成即丑”的通病，通过 Anti-AI-cliché 清单（禁用蓝紫渐变、Inter 默认体、Emoji 图标、假评价、假数据等）、Design Read 五维调节（variance/motion/density/asset/fidelity）、与“设计系统声明先行”的工作流，把 AI 当作“设计工程师”来约束，而不是无脑代码生成器。\n- **设计品味从哪里来**：\n  - 六大设计方向学派（Editorial/Minimalist、Information Architecture、Modern Tool SaaS、Motion/Experimental、Brutalist/Raw、Warm Humanist）+ 25 套风格配方（如 Linear、Aesop、Pentagram、Bloomberg、Stripe Press、Mid-Century 等），每一份配方都包含色板、字体、签名动效与反模式，开箱即用。这些不是“效果图”，而是真实的 React+Vite Demo 展示。\n  - 内置 oklch 色彩空间推导，确保同等亮度在视觉上确实一致，减少凭感觉调色的尴尬。\n- **工作流**：需求→上下文（含改造模式：扩展/保留/重构）→设计系统声明（色/字/间距/动效）→ v0 草稿（占位符+骨架+Token）→完整构建→验证（浏览器 QA 仅在显式请求时执行）。\n- **Demo/代码结构**：\n```text\nyour-project/\n├── .agents/skills/web-design-engineer/\n│   ├── SKILL.md\n│   ├── agents/openai.yaml\n│   └── references/\n│       ├── advanced-patterns.md\n│       ├── block-library.md\n│       ├── browser-acceptance.md\n│       ├── design-calibration.md\n│       ├── design-directions.md\n│       ├── failure-patterns.md\n│       ├── redesign-protocol.md\n│       ├── style-recipes/\n│       │   ├── INDEX.md\n│       │   ├── linear.md\n│       │   ├── aesop.md\n│       │   └── ...\n│       └── critique-guide.md\n```\n### 2) web-video-presentation：把文稿/文章一键变成“可录屏的演示系统”\n- **它解决什么**：从脚本到 16:9 录屏视频，传统工作流要在写作、幻灯片、录屏、剪辑、配音等工具间反复跳转，很难复用与协同。该 Skill 做的是“把演示变成网页（Vite+React+TS），并严格控制脚本→场景→节拍→检查点→可选音频合成的全流程”。\n- **亮点**：\n  - 固定 1920×1080 舞台、按视口缩放，确保录屏稳定；以（chapter, step）游标驱动点击/键盘前进，一个节拍对应一个视觉 Step；进度控制只在鼠标悬停时出现，录屏画面干净。可见“工程化录屏”的细节考量。\n  - 主题化 token 架构，内置 23 套主题；可插拔 TTS，默认内置 MiniMax（mmx-cli）与 OpenAI TTS（via curl），并给出 ElevenLabs、edge-tts、Azure、Google Cloud、macOS say 的契约与片段，真正实现“-provider-agnostic”。\n  - 硬检查点（脚本、主题、大纲、开发模式、音频合成）让你在关键节点掌握控制权，避免 AI 自说自话。\n### 3) kb-retriever：本地知识库的“渐进式检索专家”\n- **它解决什么**：想让 AI 基于 knowledge/ 目录回答，但不要一上来就吞掉整个文件；特别是 PDF/Excel 这类非结构化文件，需要“先学习再抽取”的处理策略。该 Skill 采用分层索引（data_structure.md）、关键词+窗口+同义词+迭代精炼的方式，把检索圈在可控范围内（最多 5 轮），并提供 grep/pdftotext/pdfplumber/pandas 等工作流与脚本，输出带来源、有理有据的回答。\n### 4) beautiful-article：从任意来源生成“精致文章”的编辑工作流\n- **它解决什么**：从 URL/PDF/DOCX/Markdown/文本/截图/笔记等输入，通过 source→plan→双确认→build→最终审查→repair 的闭环，生成可分享的“文章优先”页面；本质是“编辑 harness”而不是简单网页生成器。\n- **亮点**：\n  - 文章类型与保留度（10 种：长文、教程、报告、解释、对话、评论、随笔、简报、视觉文、交互文）与 11 种主题配置（tufte/press/bayer/bodoni/vignelli/sottsass/freddie/andy/fuller/knuth/shannon），每个主题是给 Agent 的“Markdown 契约”，而非硬编码 CSS。\n  - 硬检查点确保你对文章类型、主题、布局、图策、封面与交付格式有逐项决策权；强调“文章优先”，HTML/PDF 是交付形式而非目标。\n### 5) gpt-image-2：跨 Agent 的图像生成/编辑 Prompt 工程\n- **它解决什么**：面向 GPT Image 2 与兼容接口，支持三种运行模式（本地 Garden 完整生图、委托宿主原生出图、无工具时退化为纯提示词顾问），避免静默走错路径；在 references/ 下提供 18 个大类、79 个结构化提示词模板，并覆盖生成与编辑，且能把 prompt 与图片存到 garden-gpt-image-2/ 以便复用、审查与版本管理。\n- **实用价值**：160+ 公开案例库（背景替换、对话界面截图、直播间 UI、系统架构图、论文图、食品地图等），直接“拿去改”。\n---\n## 目标人群与收益：谁用、赚什么？\n### 目标人群\n- **前端/设计工程师**：希望 AI 生成的设计有品味、可落地，遵循设计系统且能快速迭代；需要做落地页、仪表盘、幻灯片、数据可视化、动效演示等产物。\n- **内容创作者/技术作者/讲师**：常把长文、教程或对话脚本做成演示视频或精美文章，需要稳定的“从文本到视频/网页”的自动化工作流。\n- **知识库/研发支持团队**：需要让 AI 严格基于本地文档回答，并带来源可溯源，避免“漫无边际”的幻觉式检索。\n- **产品/运营/市场**：需要快速出海报、UI 样机、产品图、信息图、架构图等视觉资产，并希望沉淀一套可复用的 Prompt 模板与案例库。\n### 具体收益（痛点→收益映射）\n- **设计输出质量大幅提升**：Anti-cliché 清单与风格配方让页面不再是“蓝色渐变+Inter”的统一模板；Design Read 让“设计意图”在编码前显式声明，减少后期返工。\n- **演示视频生产流水线化**：从脚本到录屏只需在一个 Skill 的流程里完成，可复现、可维护、可版本化；主题化 TTS 也降低音频合成门槛。\n- **本地检索更可控、更可信**：渐进式检索+严格来源引用，避免把整个文件喂给 Agent；适合内部文档、规范、合同等敏感资料场景。\n- **图文内容“文章优先”**：不再纠结排版与节奏，从草稿到可分享的文章页面有明确检查点，输出质量可预期。\n- **视觉资产与 Prompt 资产化**：160+ 真实案例、79+ 结构化模板与版本化的 prompt 保存，让团队能持续沉淀与复用视觉生产能力。\n---\n## 竞品/同类对比：它在 Agent Skills 生态里的位置\n- 与 Everything Claude Code（ECC）等“大而全”配置集不同：ECC 侧重大量 agents/hooks/rules 的统一管理与大盘配置（据报道有 170K+ stars）；而 Garden Skills 更像“精品技能店”，聚焦少数打磨到生产级别的 Skill，交付质量更高，适合不想“一次性装几百个插件”的团队。\n- 与自写 SKILL.md 相比：自写成本低但很难打磨出“Anti-cliché 清单、风格配方、检查点机制”等细粒度设计；Garden Skills 把这些都替你做好了，并附带 Demo 与参考资料，降低了“高质量 Skill”的创作门槛。\n- 与单体“AI 设计工具”或“生成平台”相比：它不强绑定某个 SaaS，而是基于开放的 Agent Skills 标准，跨 Claude Code/Cursor/Codex/Gemini 等都能用，具备更强的“可移植性”与“锁定风险”控制。\n---\n## 局限与不足：客观存在的短板与潜在风险\n- **语言与生态偏好**：文档与示例以中英双语为主（中文 README 完整），但对非中英社区的支持可能不如本地化项目；部分 Skill 对 OpenAI/Anthropic 生态假设较强，其他模型若不完全兼容 SKILL.md 的加载逻辑，需自行适配。\n- **环境前置要求**：要发挥完整能力，用户已需要在对应 Agent 环境下（如 Claude Code/Cursor），并具备基础的前端或终端使用能力；小白用户第一次安装与配置可能需要参照官方文档与社区经验，不是“零学习成本”。\n- **维护者集中度**：目前项目 Stars 超 10.8k、Forks 约 1.4k，Issues 与 PR 数量相对较少，显示维护者主导模式；社区贡献虽有明确 Contributing 指南，但尚未形成大规模“百花齐放”的周边生态，这一点相比 ECC 的庞大贡献者基数还有差距。\n- **Skill 数量 vs 深度的取舍**：当前收录的是“少而精”的 4–5 个方向，若你需要更垂直领域（例如法律审查流程、金融合规、生物医药数据分析）的 Skill，需要自己基于其规范扩展，或寻找其他生态中的专门 Skills。\n- **版本管理与升级策略**：使用 main 分支的“最新”虽然方便，但生产环境应使用 Release 的钉版本与 SHA-256 校验；新手若不注意这一点，可能出现“升级后行为漂移”的隐患，需要团队建立版本控制规范。\n---\n## 上手门槛与文档体验：对开发者是否友好？\n- 文档提供中英日三种语言，安装指南细致到 5 种方式（skills CLI、Claude Code 市场、钉版本 Zip、手动拷贝、Git Submodule），并对“最佳场景”与“是否可钉版本”进行对照，使用户能根据团队安全策略与工作流选择合适方案。\n- 每个 Skill 都有 README（面向人类）、SKILL.md（面向 Agent）、Demo/Website/Case Gallery、以及 Download .zip 链接，方便快速评估与落地试用。\n- Contributing 文档（含中英文）给出仓库布局、发版流程、版本规则、CI 工作流与故障排查，建议开发者在上手 PR 前先阅读；并附带 npm run list/validate 等便捷命令用于本地自检，体现了对维护者体验的重视。\n---\n## 社区活跃度与生命力：还会继续长吗？\n- 截至当前，项目在 GitHub 的 Star 约为 10.8k、Forks 约 1.4k，Issues 与 PR 各为 8 个，整体处于“稳定维护、质量优先”的状态；第三方统计也显示其在 AI Skills 资源中具备较高的流行度与新鲜度评分。\n- 官方致谢与引用了 Anthropic 的 Agent Skills 规范与 Claude Design 的系统提示，表明与上游标准与生态同频演进；此外与 awesome-claude-skills、superpowers 等社区资源互相呼应，生态位清晰。\n- 作者 ConardLi 在 B 站、抖音、小红书、YouTube、公众号与个人网站“Easy AI”均有持续内容输出，为中文用户提供教程与实战经验，这对中文社区的理解门槛与推广有显著增益。\n---\n## 结语与行动建议（终极评判）\n- 如果你是前端/设计工程师或内容团队，希望“让 AI 做出的东西有设计判断、能复现、可版本化”，Garden Skills 是当前少数做到“生产就绪”且“跨 Agent 通用”的精品 Skill 集合之一。尤其在 web-design-engineer 与 web-video-presentation 这两条线，投入产出比极高。\n- 如果你的团队需要“本地知识库的高质量检索”和“文章/报告的结构化生成”，kb-retriever 与 beautiful-article 提供了开箱即用的工作流，能显著降低“自造轮子”的风险与维护成本。\n- 建议起步路径：\n  1) 在 Claude Code 或 Cursor 中使用 `skills CLI` 安装全部或按需安装单个 Skill，验证与现有工具链的兼容性；\n  2) 选定一个高价值场景（如“把产品手册做成视频演示”或“统一 SaaS 落销页设计系统”）进行试点，集中用好某一个 Skill 的完整工作流与检查点；\n  3) 若涉及 CI/生产环境，务必使用 Releases 的钉版本与校验，并在团队内制定 Skill 版本管理与更新规范；\n  4) 随着团队熟悉度提升，再逐步扩展到知识库检索与图文编排等更多方向。\n一句话总结：Garden Skills 不是“万能插头”，而是几把“打磨过、能上战场”的瑞士军刀——在需要“高质量、可重复、跨环境复用”的 AI 产出的场景里，它的投入回报率很高，值得作为团队 Agent 能力层的基础设施之一。"
     },
     {
       "id": "3b7768ac-850a-4003-930e-059b06b7fbd0",
@@ -2878,13 +3087,13 @@
       "repo": "cactus-compute/needle",
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
-      "stars": 9277,
-      "forks": 599,
+      "stars": 9300,
+      "forks": 600,
       "starsAdded": 5861,
       "createdAt": "2026-08-23T13:14:26.649Z",
       "githubData": {
-        "stars": "9200",
-        "forks": "591",
+        "stars": "9300",
+        "forks": "600",
         "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle",
         "topics": [
           "cactus",
@@ -3039,13 +3248,13 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 5327,
-      "forks": 436,
+      "stars": 5385,
+      "forks": 439,
       "starsAdded": 2045,
       "createdAt": "2026-08-23T16:33:00.077Z",
       "githubData": {
-        "stars": "4757",
-        "forks": "389",
+        "stars": "5385",
+        "forks": "439",
         "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
         "topics": [],
         "license": "",
@@ -3064,13 +3273,13 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 4790,
-      "forks": 342,
+      "stars": 4822,
+      "forks": 345,
       "starsAdded": 2073,
       "createdAt": "2026-08-23T16:33:00.075Z",
       "githubData": {
-        "stars": "4687",
-        "forks": "337",
+        "stars": "4822",
+        "forks": "345",
         "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory",
         "topics": [],
         "license": "MIT license",
@@ -3116,13 +3325,58 @@
       "repo": "chaitanyagiri/munder-difflin",
       "description": "local multi-agent harness",
       "language": "JavaScript",
-      "stars": 4711,
-      "forks": 572,
+      "stars": 4797,
+      "forks": 580,
       "starsAdded": 2487,
       "createdAt": "2026-08-26T15:41:10.348Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "4797",
+        "forks": "580",
+        "description": "local multi-agent harness. Contribute to chaitanyagiri/munder-difflin development by creating an account on GitHub.",
+        "topics": [
+          "agents",
+          "claude-code",
+          "free",
+          "harness",
+          "harness-engineering",
+          "memory"
+        ],
+        "license": "License",
+        "homepage": "https://munderdiffl.in"
+      },
+      "summaryData": {
+        "title": "Munder Difflin 深度评测：本地多智能体协作控制台",
+        "cover": "",
+        "summary": "把本地终端 AI CLI 包装成办公室协作 Agents 的桌面应用，统一管控、记忆与成本。",
+        "ability": [
+          "统一管控多终端Agent",
+          "长记忆与知识沉淀",
+          "可视化协作Floor",
+          "人类审批与熔断安全网",
+          "成本可观测与预算控制"
+        ],
+        "suitable": [
+          "已订阅终端AI CLI的开发者",
+          "多Agent协作自动化极客",
+          "对数据隐私敏感的用户",
+          "需要成本控制与可观测的团队",
+          "本地化AI工具发烧友"
+        ],
+        "description": "Munder Difflin 是一款本地化 Electron 桌面应用，将 Claude Code、Grok、Copilot CLI 等终端 AI 包装成协作 Agents。它提供 2D 办公室 Floor、Hive 多智能体层、Markdown 记忆、语义检索与 GOD Agent，支持统一管控、长记忆、任务看板、成本账本与人类审批，适合追求本地隐私、可观测与多 Agent 协作的开发者。",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "效率工具"
+        ],
+        "tags": [
+          "多智能体",
+          "本地化",
+          "可视化协作",
+          "记忆管理",
+          "成本控制"
+        ]
+      },
+      "contentDetail": "## Munder Difflin 深度评测\n一句话总结：Munder Difflin 是一款把本地终端 AI 编程 CLI（如 Claude Code、Grok、Copilot CLI 等）包装成“办公室”里多个协作 Agents 的桌面应用，用 2D 像素风格的 Floor 与长记忆/邮箱/黑板的 Hive 多智能体机制，让你一边看“分身们”干活，一边通过 Michael 这个“GOD Agent”来协调与审批。\n---\n## 背景与痛点：为什么需要“本地多智能体管理台”？\n- 终端 AI CLI 越来越多：Claude Code（claude）、Antigravity（agy）、OpenAI Codex（codex）、xAI Grok（grok）、Kimi Code（kimi）、Gemini CLI（gemini）、Qwen（qwen）、OpenCode（opencode）、Crush（crush）、pi.dev（pi）、GitHub Copilot（copilot）、Cursor（cursor-agent）等，都在抢占“命令行里的结对编程/自动执行”场景。\n- 各家订阅和额度分散：你已经在为这些服务付费，但它们各自为战、没有统一协作与记忆；想把不同模型串起来做任务，基本只能靠手工切窗口。\n- 多 Agent 协同通常在云端：主流编排平台（如 LangGraph、AutoGen 等）多部署在服务端，要么带来数据隐私顾虑，要么要你自己架基础设施，与“本地终端”割裂。\n- 可观测性差：跑了几轮会话，消耗如何、任务进度怎样、谁干了什么，往往只能靠终端滚动记录查，缺少统一控制台与成本明细。\nMunder Difflin 的解法是做一个本地的“Desktop Control Room（桌面控制室）”，在 Electron 桌面里统一管理这些终端 Agent，并赋予它们：\n- 长记忆（markdown first + 语义检索）\n- 邮箱/消息队列（可靠投递与回执）\n- 共享黑板与任务看板\n- 可视化的办公室 Floor 与每 Agent 的头像、工位\n它相当于给你的“终端打工人们”盖了一层协作与记忆的中台，又用 Michael 来做 Floor Boss。\n---\n## 核心亮点与功能剖析\n1) 终端平面（Terminal Plane）：每个 Agent 是真实 PTY 进程\n- 技术实现：使用 node-pty 为每个 Agent 创建一个真实的伪终端进程（如 claude），通过 xterm.js 把字节流原样渲染到界面；你可以看到和原来终端一模一样的输出。Electron 主进程的 PtyManager 负责生成/销毁/调整 PTY 尺寸并流式传输数据到渲染器。\n- 为什么重要：这保证了“所见即所得”，不是对输出做脆弱的解析；你可以随时在侧边栏的 Command Bar 输入命令，本质是 `tmux send-keys` 或 node-pty 写入 PTY。\n- 价值：它不造新的 Agent Runtime，而是“编排你已订阅的那些 CLI”，让它们的现有能力继续生效并叠加协作层。\n2) 事件平面（Event Plane）：Hooks、Hive 与 GOD Agent\n- Hooks 与事件驱动：通过 Claude Code 的生命周期钩子（UserPromptSubmit、PreToolUse、PostToolUse、Notification、Stop 等），配合 `cth-hook` 这种 Node 小工具把事件 JSON POST 到本地 Unix Domain Socket，驱动界面上的 Avatar 行为（走到文件架、终端站、Web 门户等）。\n- Hive 多智能体层：在本地维护一个 `hive/` 的 git 仓库作为协作层：\n  - 每个 Agent 有独立目录 `agents/<id>/`，包括 `memory.md`、`inbox/`、`outbox/`、`cursor.json` 等，保证“单写者”避免冲突。\n  - 共享 `board.md`（黑板/计划）与 `tasks.json`（任务台账），以及 `log.jsonl`（只追加事件日志）。\n  - 主进程统一做 git commit，解决并发写入与 `.git/index.lock` 风险。\n- 消息投递与路由：Agent 写 `outbox/`，由 Router 投递到目标 `inbox/`；消息 schema 类 FIPA-ACL（保留 speech act 概念），为防止死循环做了 hop cap 与幂等处理。\n- GOD Agent（Michael）：一个始终在线的 `character:michael`、`isGod:true` 的 Agent，负责：\n  - 名册与路由\n  - 常规请求的自动裁决\n  - 升级“关键事项”（费钱、破坏性、变更范围）到人类——通过原生的 CLI 权限提示 HITL（Human-in-the-Loop），而不是另做一个审批队列。\n> 打个比方：Floor 就像开放式办公室，Hive 是公司共享盘与邮件系统，Michael 是站在总经理工位上负责分单和捅你的人；你则是董事长，只看汇总、只批重要单子。\n3) 记忆与知识：Markdown 优先 + 语义检索（MemPalace）\n- 每个 Agents 有一个 `memory.md`，任务开始时读取，学习后追加；另有一个共享的“企业知识图谱”，可挂载你自己的文档与政策，供任意 Agent 查询。\n- 语义层：项目集成了 MemPalace CLI 作为语义检索，把 markdown 记忆挖掘到共享 palace 中；支持在 UI 中搜索；在 Apple Silicon 上将嵌入固定到 CPU，规避 CoreML 溢出导致 NaN 的 bug。\n- 去重与压缩：有 MemoryReflector 做记忆压缩/蒸馏，以防止记忆无限膨胀（从 CHANGELOG 看到相关演进）。\n4) 安全与管控：Human gates + 电路熔断 + 预算/遥测\n- Human gates：涉及支出、破坏性操作、范围变更等会升级到人类；支持中途 steer（干预）或停止。\n- 电路熔断（Circuit Breaker）：提供 steer → constrain → stop 阶梯式熔断，应对循环、错误风暴或预算超支。\n- 预算与成本：按 Agent 设置 Token 预算，使用真实会话回放来算费用，写入持久化账本（Ledger），并结合 OTel spans 与工具瀑布（Tool Waterfall）进行可观测展示。此前版本有成本统计重启重置的 bug，已在 v0.4.5 修复。\n- 遥测（Telemetry）：官方构建会发送匿名事件（应用启动、Agent 生成、功能使用等），无 prompts/代码/路径/输出；支持 Settings 切换、环境变量 DO_NOT_TRACK 或自源码编译等方式完全关闭。详见 TELEMETRY.md。\n5) 命令中心（Command Center）与内置 IDE\n- Kanban 看板与任务依赖、排期任务（含工作日定时触发）、活动日志、CI 监控。\n- 内置 Monaco IDE：文件树、标签页、保存，以及 Git Rails（CHANGES · HISTORY · COMPARE），包含提交图、差异、分支对比与“受控的 checkout”。所有文件系统/Git 操作都通过主进程代理。\n- Skills 浏览与安装：展示每个 Agent 已具备的技能（Claude Code / OpenCode / Codex 的内置能力），并提供 227+ 技能目录的浏览、搜索、安装、卸载。\n6) UI/UX 与视觉：2D 办公室 Floor + 像“《动物森友会》× EarthBound × SNES 菜单”\n- Pixi.js 的 Office Floor，每个 Agent 是一个 2D 像素头像，走到不同站点（文件架、终端站、Web 门户、MCP 角落、任务板、邮箱），并有“信封飞来飞去”的消息视觉化。\n- 设计系统来自 DESIGN.md，视觉风格为“Animal Crossing × EarthBound × SNES 菜单 UI”，品牌配色用 Dunder Mifflin 的酒红与金；15 个头像来自《The Office》角色（角色绘制通过 portraitArt.ts 过程化生成，非像素贴图）。\n- 交互：你可以在 Floor 上点选某个 Agent，看它的实时终端流、发指令、配置目标/Skill/MCP，并在终端点击路径跳转。Michael 还可语音 Talk 进行指挥。\n---\n## 目标人群与收益：谁适合用？能带来什么具体好处？\n- 面向人群：\n  - 已订阅多个终端 AI CLI（Claude Code、Grok、Copilot CLI、Cursor、Kimi、Qwen 等）的开发者或效率发烧友。\n  - 希望在本地编排多 Agent 协作、做“自动化办公室”的极客/团队。\n  - 对成本与可观测性敏感，需要精确知道每个 Agent 花费与耗时的人。\n- 核心收益：\n  - 统一管控：在一个桌面里看所有 Agent 干活，不再频繁切换终端/浏览器。\n  - 协作与分发：利用邮箱与黑板的模式，让不同 Agent 做各自擅长的事（例如一个跑测试、一个写文档、一个修 bug），并通过 GOD Agent 自动分单。\n  - 长记忆与知识沉淀：跨会话记住项目惯例、内部规范、错误处理经验，减少重复沟通成本；可选语义检索让召回更高效。\n  - 可观测与成本控制：实时 Token/成本账本与工具瀑布，便于预算控制与事后复盘；熔断机制防止失控跑飞。\n  - HITL 安全网：关键动作仍由人类审批，避免“无脑执行”带来的误操作风险。\n---\n## 技术栈与架构解析：它怎么做到的？\n- 技术栈：\n  - Electron + React + TypeScript 作为桌面与前端主框架；UI 使用 Pixi.js 绘制 2D Floor，xterm.js 负责终端渲染，node-pty 提供 PTY 能力。\n  - Hive 层：本地 git 仓库 + SQLite（用于持久化窗口状态与成本账本）+ 原子文件操作（mailbox 临时文件 + rename）。\n  - 语义检索：集成 MemPalace CLI，为可选的语义记忆层。\n  - 遥测：PostHog，通过 TELEMETRY.md 定义公开契约，并在 release CI 注入 Key；dev 构建不启用。\n- 架构要点：\n  - 两个数据平面：\n    - Terminal Plane：原始字节流，经由 node-pty → IPC → renderer（xterm.js）。\n    - Event Plane：结构化事件（hooks、Hive 路由、GOD），驱动 Avatar 与协作逻辑。\n  - 单一提交者设计：只有 Electron 主进程负责 git commit；Agent 只写文件，避免 index.lock 冲突。\n  - 隔离与联邦：每个 Agent 只写自己的 `agents/<id>/` 目录；跨 Agent 通信通过 outbox/inbox；共享文件（如 board.md）由 GOD Agent 单写。\n- 项目结构概览（来自 README 的 `src/` 布局）：\n  - `src/main/`：Electron 主进程逻辑，包含 PTY 管理、Hive、Hook 服务器、内存、遥测、断路器、文件/Git 桥接等。\n  - `src/preload/`：通过 contextBridge 把类型安全的 `window.cth` 暴露给渲染器。\n  - `src/renderer/src/`：React 前端，包含 Office Floor、各个面板（Command Center、MemoryPanel、TasksKanban 等）与 Zustand store。\n  - `docs/`：官网素材与 Remotion 动画工程。\n  - `HIVE.md`、`SPEC.md`、`DESIGN.md`：分别负责多智能体设计、终端/事件平面规范、视觉系统规范。\n---\n## 上手门槛与部署体验：怎么跑起来？\n- 前置条件：\n  - macOS、Windows 或 Linux。\n  - Node.js 18+ 与 npm；以及 C/C++ 工具链用于 node-pty 的原生模块（macOS 需 Xcode Command Line Tools）。\n  - 至少一个支持的 Agent CLI 在 PATH 中（Claude Code 是默认，也支持 agy、codex、grok、kimi、gemini、qwen、opencode、crush、pi、copilot、cursor-agent）。缺失时大部分可由 harness 自动运行安装器并继续。\n  - 可选：本地 LLM（Ollama/LM Studio/vLLM）以及语义记忆 CLI（MemPalace）。\n- 安装与运行（开发模式）：\n  - 克隆并安装依赖（postinstall 会为 Electron ABI 重建 node-pty）：\n    ```bash\n    git clone https://github.com/chaitanyagiri/munder-difflin.git\n    cd munder-difflin\n    npm install\n    ```\n  - 启动开发模式（热重载）：\n    ```bash\n    npm run dev\n    ```\n  - 首次启动会有 Onboarding Wizard，完成引导后进入 Floor；点击 Add Agent 生成首个会话，GOD Agent 会自动坐到 Michael 的办公室工位上。\n- 其他脚本：\n  - `npm run build`：electron-vite 生产构建。\n  - `npm run preview`：预览生产构建。\n  - `npm run typecheck`：类型检查。\n- 官方构建：macOS（已签名与公证）、Windows、Linux 的可安装包在 Releases 页；标题栏徽章支持一键更新与最新版本检查。\n- 文档质量：\n  - README、HIVE.md、SPEC.md、DESIGN.md 等规范与设计文档齐全，易于理解原理与扩展。\n  - 官网博客提供了多篇深度文章与部署教程（例如在 Mac Mini 上跑、使用开放模型等）。\n> 简单理解：如果你已经会用 Claude Code 的命令行，再加几行 npm 指令就能进“办公室”；不需要你写很多配置，系统会尝试自愈缺失 CLI。\n---\n## 社区活跃度与生命力\n- Stars/Forks/Issues/PRs：Pulse 页面显示约 4.7k Stars、573 Forks、63 Issues、60 PRs，说明社区关注度与参与度处于活跃区间。\n- 发布节奏：CHANGELOG 与 Tags 显示从 2026 年 8 月中下旬起持续发布版本（v0.3.9、v0.3.8、v0.4.0、v0.4.2、v0.4.4-rc.1、v0.4.5），迭代频率较高且包含大量社区 PR（例如 v0.4.5 合并 23 个社区 PR）。\n- 社区渠道：README 提供了 Discord 链接，并鼓励在 PR 中附上 Discord ID 以获得“employee of the month”角色，社区互动感较强。\n- Issues 状态：Issues 列表存在一定数量（63），但社区有 PR 流支撑，说明问题在积极消化与迭代中。\n---\n## 竞品/同类对比：它在“Agent Harness”版图里位于什么位置？\n- 作为“Harness”的定位：Munder Difflin 不是一个新 Agent Runtime，而是把已有的终端 CLI 包装成多智能体协作层；你可以把它理解为“本地化、可视化、带记忆的 Claude Code（等） Harness”。\n- 与云端编排平台对比：相比 LangGraph、AutoGen、OpenAI Swarm 等，Munder Difflin 强调：\n  - 本地优先与数据隐私（所有内容在本地 git 与文件系统，密钥 BYOK，可选本地 LLM）。\n  - 深度集成终端 CLI 工具链，不用再切换环境。\n  - 可视化 Floor 让多 Agent 协作“可见”，对非工程师友好。\n- 与其他本地多 Agent/控制台工具对比：\n  - 它不是 Docker 一键部署的后台服务，而是 Electron 桌面，开箱即用（前提是满足 Node/工具链与 Agent CLI）；适合个人/小团队，而非 K8s 级基础设施。\n- 参考文章：业界对“Harness Engineering”模式的讨论（如 Böckeler 的框架）强调了“模型决定做什么，Harness 决定允许什么”的设计思路，与 Munder Difflin 的 Human gates + 熔断理念相合。\n---\n## 局限与不足：客观存在的缺点与风险\n- 上手门槛不低：需要 Node、C/C++ 工具链、一个或多个终端 Agent CLI 的订阅，对非开发者或纯终端新手不友好。\n- macOS 优先，Windows/Linux 支持仍在追赶：文档与历史描述显示 macOS-first；虽然有官方构建与 v0.4.4-rc.1 这样的 Windows 验证构建，但跨平台成熟度可能略逊于 macOS。\n- Electron 资源占用：Pixi.js + 多 PTY + xterm.js + 终端流可能带来不小的 CPU/内存占用，多 Agent 高负载下对机器配置有一定要求（尤其是启用语义检索时）。\n- 不支持 Docker 一键部署：项目以桌面应用为主，未提供 Docker Compose 等容器化部署方案，对偏爱容器化运维的用户不太适配。\n- Bug 与演进期风险：v0.4.5 修复了三个“你曾信任但实际上有错”的问题（成本统计被重置、Apple Silicon 语义检索 NaN、Agent 间邮箱投递不可靠），说明项目在快速迭代中，稳定性仍需时间与用户场景打磨。\n- 资源和安全性：\n  - SkillsLLM 的安全扫描曾给出若干警告（非关键），但对安全敏感的用户应自审代码与权限模型，特别是 BYOK 密钥与终端执行范围。\n  - 资产中包含第三方像素艺术（LimeZu 的 Modern Interiors），其许可要求署名；代码本身为 MIT 开源协议。\n---\n## 结语与行动建议：我的终极评判\n- 综合评价：Munder Difflin 在“本地多智能体Harness”这个细分领域做出了非常独特且深度的产品：既保留了对终端 AI CLI 的真实 PTY 访问，又用 Hive、GOD Agent 与可视化 Floor 赋予了它们协作、记忆与可观测性。它更像一个“本地 AI 公司的控制台”，适合已经在重度使用终端 Agent、希望更高层次编排与管理的用户。\n- 值得关注的点：\n  - 不重新发明轮子，而是围绕已有的终端 CLI 做中台与可视化。\n  - Markdown-first 的记忆与可选语义检索，工程上务实、兼顾性能与隐私。\n  - Human gates 与熔断机制对“可控自动化”至关重要，尤其适合生产环境试点。\n- 适合的人群与下一步：\n  - 如果你已经在用 Claude Code 或同类终端 CLI、且习惯 Node/CLI，建议尝试官方构建优先（体验开箱即用），再根据需要切到源码模式做定制或贡献。\n  - 若你是团队或团队负责人，可先从单机、小范围试跑（CI Watcher + Slack/Webhook 入口），验证多 Agent 协作在你们工作流中的价值再扩展。\n- 小白建议：\n  - 先确保把某一终端 CLI（如 Claude Code）跑顺，再逐步启用 Floor、Memory、Kanban 等模块；不要上来就铺满 Agent，以免认知过载。\n  - 利用 Prerequisites 页面让 Michael 帮你装缺的工具，降低前期踩坑成本。\n- 核心代码片段与配置示例（最简上手）：开发模式下快速启动\n  ```bash\n  git clone https://github.com/chaitanyagiri/munder-difflin.git\n  cd munder-difflin\n  npm install   # postinstall 会为 Electron ABI 重建 node-pty\n  npm run dev   # 启动 Electron 应用（热重载）\n  ```\n  首次启动后进入 Onboarding，完成后在 Floor 上点击“Add agent”即可添加第一个 Agent（如 claude）。\n简而言之：如果你已经习惯了与“终端里的 AI”一起工作，并希望把“一个打工人”变成“一整个办公室”且还能看见他们在干嘛、记住了什么、花了多少钱，Munder Difflin 是当前少数能同时满足这些诉求的本地化方案之一，值得关注与试用。"
     },
     {
       "id": "80b334ae-69f1-4653-99db-65554b01dbbe",
@@ -3207,13 +3461,13 @@
       "repo": "apache/maka",
       "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
       "language": "TypeScript",
-      "stars": 3561,
-      "forks": 346,
+      "stars": 3584,
+      "forks": 349,
       "starsAdded": 1769,
       "createdAt": "2026-08-23T16:33:00.080Z",
       "githubData": {
-        "stars": "3440",
-        "forks": "341",
+        "stars": "3584",
+        "forks": "349",
         "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log. - apache/maka",
         "topics": [
           "agent-runtime",
@@ -3275,13 +3529,62 @@
       "repo": "bookorbit/bookorbit",
       "description": "BookOrbit: Your Reading Space",
       "language": "TypeScript",
-      "stars": 3224,
-      "forks": 202,
+      "stars": 3247,
+      "forks": 203,
       "starsAdded": 869,
       "createdAt": "2026-08-26T15:41:10.559Z",
-      "githubData": null,
-      "summaryData": null,
-      "contentDetail": null
+      "githubData": {
+        "stars": "3248",
+        "forks": "203",
+        "description": "BookOrbit: Your Reading Space. Contribute to bookorbit/bookorbit development by creating an account on GitHub.",
+        "topics": [
+          "audiobook-player",
+          "digital-library",
+          "docker",
+          "ebook-reader",
+          "library-management",
+          "metadata-management",
+          "nestjs",
+          "oidc-single-sign-on",
+          "opds",
+          "self-hosted",
+          "vue"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://bookorbit.app"
+      },
+      "summaryData": {
+        "title": "BookOrbit：全能型自托管电子书管理与阅读平台",
+        "cover": "",
+        "summary": "自托管全能书库，支持多设备同步、划线管理及阅读统计的家庭阅读中枢。",
+        "ability": [
+          "多格式Web阅读",
+          "多端进度同步",
+          "划线笔记管理",
+          "多用户权限控制",
+          "阅读数据统计"
+        ],
+        "suitable": [
+          "重度电子书阅读者",
+          "Kobo/KOReader设备用户",
+          "家庭/小团队",
+          "自托管与隐私敏感用户"
+        ],
+        "description": "BookOrbit 是一个集图书管理与阅读于一体的开源平台，支持 EPUB、PDF、漫画等多种格式。它不仅实现了 Web、Kobo 和 KOReader 之间的阅读进度与划线双向同步，还提供了多用户权限控制、OIDC 登录、阅读统计及成就系统，完美解决资源分散与进度不同步的痛点。",
+        "category": [
+          "生活效率",
+          "知识管理",
+          "开源工具"
+        ],
+        "tags": [
+          "电子书",
+          "自托管",
+          "阅读器",
+          "Calibre替代",
+          "Kobo同步"
+        ]
+      },
+      "contentDetail": "# 一句话总结\nBookOrbit 是一个自托管、多格式、多设备同步的“家庭图书馆+阅读器”一体化平台：把书放在你自己的服务器上，用网页、Kobo 或 KOReader 随处读，进度/划线/状态全平台双向同步，并且自带多用户、权限控制、OIDC/SSO、OPDS、Send-to-Kindle、阅读统计与成就、14 家元数据抓取、自动入库等一整套能力。\n---\n## 背景与痛点\n- 资源分散：电子书、PDF、漫画、有声书散落在本地文件夹、各设备与云端服务间，想要“一处入库，到处可读、进度同步”非常难。  \n- 阅读碎片化：你在桌面用 A 阅读器、手机用 B、墨水屏用 C，每换一次设备就要手动找位置、找进度。  \n- 隐私与锁定担忧：很多平台要上传书才能阅读，或依赖订阅制，且阅读数据不在自己掌控之中。  \n- 多人共用图书馆场景：家庭或小团队希望每人有自己的书架、进度和权限，同时共享中央资源库。  \n- 现有工具的局限：  \n  - Calibre 是桌面级工具，原生 Web 服务偏弱，同步体验不算开箱即用。  \n  - 各类“书库服务器”常缺少双向同步、统一划线归档、或在电子墨水屏上支持不佳。\nBookOrbit 在这样的背景下诞生：用一个你控制的基础设施，把“所有书”和“所有阅读活动”统一起来，尤其打通了 Kobo 设备与 KOReader 的双向进度与注释同步，并提供多用户与 OIDC/SSO，适合家庭、团队和重度阅读者。\n---\n## 核心亮点与功能剖析\n### 多格式 Web 阅读（无需插件）\n- 支持格式：EPUB/KEPUB、MOBI/AZW3/AZW、FB2、PDF、漫画（CBZ/CBR/CB7）、有声书（M4B/MP3/M4A/OPUS/OGG/FLAC）。直接在浏览器里读，不装任何浏览器插件。  \n- 用大白话说：就像浏览器自带了一个能读几乎所有常见书格式的“阅读器”。\n### 三方同步：Kobo + KOReader + Web\n- 双向进度同步：在 Web 读了一段，拿起 Kobo 或 KOReader 设备会自动跳到同处，反之亦然；高亮与删除也会合并归集。  \n- KOReader 插件：设备端直接浏览目录、搜索、下载书籍、管理状态与评分，并同步进度与注释，无需离开设备。  \n- 类比：类似于云端读书 App 在手机/平板间的同步体验，但这次全由你自己的服务器完成，且覆盖墨水屏设备。\n### 划线与注释统一管理\n- 来自 Web Reader、KOReader、Kobo 的划线合并到一个可搜索的中心，可以按颜色/样式/来源过滤，并导出为 Markdown、CSV、JSON。  \n- 收益：把“读书笔记”变成可检索、可导出的资产，便于后续整理或导入其他工具。\n### 多平台外推同步\n- 支持与 Hardcover（阅读记录）、Readwise（高亮与笔记）、StoryGraph（状态与进度）等外推同步，可按触发条件推送；Hardcover 的阅读历史还能拉回以填补 BookOrbit 的空白条目。  \n- 适合：已经重度使用上述服务的用户，可以把 BookOrbit 当作“中枢”，把本地书库与云端追踪服务打通。\n### 统计、目标与成就\n- 每日阅读时长、热力图、连续打卡、库健康度；年度目标、月度挑战、50+ 成就（五个类别）。“Reading DNA”基于实际会话历史为你的阅读风格画像。  \n- 价值：把“阅读”可视化、游戏化，帮助持续保持阅读习惯。\n### 图书馆管理\n- 多图书馆：按文件夹隔离内容，每个库可自定义扫描规则与格式优先级。  \n- 14 家元数据提供方：Google Books、Open Library、Amazon、Goodreads、Kobo、Hardcover、Audible/Audnexus、Libro.fm、iTunes，以及漫画的 ComicVine、轻小说 RanobeDB、韩文 Aladin、波兰 Lubimyczytać 等；封面还额外从 iTunes、DuckDuckGo、AudiobookCovers 获取。  \n- Smart Scopes & Collections：既可建静态收藏列表，也可用“规则过滤”建立动态保存视图（类似“智能播放列表”）。\n### 平台与交付\n- 多用户与 SSO：按用户隔离阅读数据与权限；原生 OIDC 支持 Authentik、Keycloak、Authelia。  \n- 多语言界面：社区在 Crowdin 管理翻译，翻译流程明确（只修改 en.json，其余由 Crowdin 同步）。  \n- 内容交付：OPDS（可供 KOReader、Thorium、Moon+ 等使用）、Send-to-Kindle（邮件推送）、浏览器拖拽上传；Book Dock“停泊区”可配置自动摄入（丢入文件夹后自动处理入库）。\n---\n## 目标人群与收益\n- 重度阅读者/收藏党：  \n  - 收益：统一管理电子书/有声书/漫画/PDF，一处入库到处读，进度/划线不丢。  \n- 墨水屏设备用户（Kobo、KOReader）：  \n  - 收益：真正的设备↔服务双向同步，避免手动对进度，划线集中管理与导出。  \n- 家庭/小团队共用书库：  \n  - 收益：多用户与权限体系 + SSO，每个人有独立阅读数据，共享同一资源库。  \n- 隐私敏感/自托管爱好者：  \n  - 收益：AGPL-3.0 开源，Docker Compose 一键起，数据在你自己的硬件与数据库里，不受第三方订阅与锁定。  \n- 已使用 Hardcover/Readwise/StoryGraph 的用户：  \n  - 收益：把本地书库与这些服务无缝打通，无需重复记录，笔记也能自动外推。\n---\n## 竞品/同类对比\n- Calibre / Calibre-Web：桌面强、生态广，但多设备同步与统一划线管理偏弱，需要额外插件或工作流。BookOrbit 更像一个“开箱即用、同步优先”的在线书库+阅读中枢。  \n- Audiobookshelf：有声书强、UI 友好，BookOrbit 提供从 Audiobookshelf 的一站式迁移路径，但在电子墨水屏/KOReader 集成、多格式统一阅读与 OIDC 上更全面。  \n- Komga（漫画）/ Kavita：漫画管理极强，但 BookOrbit 把漫画与电子书/有声书/PDF 统一到一个库，并增加了双向设备同步与阅读统计体系。  \n- 各类商业云端阅读平台：通常要求上传才能阅读，并绑定订阅；BookOrbit 反其道而行，强调“文件在你自己的硬件上”，且可自建多用户体系，适合长期可控投入与隐私敏感用户。\n---\n## 技术栈与架构解析（面向开发者）\n- 后端：Node.js（环境变量可配置 Node 堆内存上限，适合超大库），容器内 `read_only` 文件系统 + `tmpfs` 临时目录，安全加固（cap_drop ALL、仅保留必要的 CHOWN/DAC_OVERRIDE/FOWNER/SETGID/SETUID、no-new-privileges）。  \n- 数据库：PostgreSQL 16 + pgvector（`.env.example` 与安装文档都提到需 uuid-ossp、pg_trgm、unaccent、vector 四类扩展），利于未来向量检索/语义搜索。  \n- 前端：基于 Vue 与 Vue I18n（翻译规范为仅编辑 `client/src/locales/en.json`），社区翻译由 Crowdin 接入，说明项目有国际化架构。  \n- 部署模型：单一 Docker Compose 起一套应用+数据库，`.env` 统一配置；外部数据库支持、OIDC、SMTP、迁移凭据加密等均可通过环境变量调整，架构清晰、便于运维。  \n- 安全实践：  \n  - 容器安全（只读文件系统、最小能力、健康检查）  \n  - 邮件与迁移凭据可加密存储（通过 `EMAIL_ENCRYPTION_KEY`、`MIGRATION_ENCRYPTION_KEY`）  \n  - 安全漏洞通过 GitHub Security Policy 私有报告渠道处理。\n---\n## 上手门槛与部署体验（含最简 Demo）\n- 最低需求：Docker 与 Docker Compose v2+；OS 支持主流发行版/ macOS/ WSL2；建议 1 核 CPU、1GB+ 可用内存，磁盘除书籍外仅需约 50MB。  \n- 安装流程非常平滑：官方给出“一键模板”式命令，下载 `.env.example` 与 `docker-compose.yml` 后只需修改若干必填项即可启动。  \n- Docker 一键启动（最简示例）：\n  - 在服务器新建目录并拉取配置模板：\n    - `mkdir bookorbit && cd bookorbit`\n    - `mkdir -p books data/app data/postgres`\n    - `curl -fsSLo .env https://raw.githubusercontent.com/bookorbit/bookorbit/main/.env.example`\n    - `curl -fsSLo docker-compose.yml https://raw.githubusercontent.com/bookorbit/bookorbit/main/docker-compose.yml`\n  - 编辑 `.env`（必填项示例）：\n    - `APP_URL=http://your-server-ip:3000`\n    - `BOOKS_HOST_PATH=./books`\n    - `POSTGRES_PASSWORD=（用 openssl rand -hex 24 生成）`\n    - `JWT_SECRET=（用 openssl rand -hex 32 生成）`\n    - `SETUP_BOOTSTRAP_TOKEN=（用 openssl rand -hex 16 生成）`\n  - 启动：`docker compose up -d`（首次启动约 30 秒待数据库初始化完成）。  \n  - 打开浏览器访问 `APP_URL`，按页面引导用 `SETUP_BOOTSTRAP_TOKEN` 完成初始管理员账号设置。  \n- NAS/Unraid：官方给出 Unraid 模板（`bookorbit` + `bookorbit-db`），并解释网络与权限要点，降低非 Linux 专家的门槛。  \n- 权限问题官方已预警：在 NAS 上若书籍目录归属非 1000:1000，需正确设置 `PUID/PGID`，否则会出现扫描无书、上传失败、Book Dock 无法 finalize 等现象。`.env.example` 与安装文档均给出诊断与修复指引。\n---\n## 社区活跃度与生命力\n- 近期频繁发布：v2.6.0 版本增加可配置多行书架、九种新增界面语言、自注册开关、Kobo 购买书同步等，功能与体验持续迭代。  \n- KOReader 与 Kobo 改进：v2.1.0 专门强化 KOReader 插件（批量选择/下载、离线跳过同步、设备移除与不匹配书籍追踪、Kobo 同步历史视图等），显示设备侧体验在持续打磨。  \n- Issues 与 Discussions：近期仍可见 Bug（Smart Scope 加载失败、排序行为）与功能讨论（如支持 ePub 1.0 元数据查询）等活跃交互，社区在持续维护与反馈。说明项目并未停滞，问题处理与需求收集渠道通畅。  \n- 翻译与社区协作：Crowdin 项目与明确的本地化/贡献指南显示其国际化与社区协作机制成熟。\n---\n## Demo / 代码示例（核心片段）\n- `.env` 必填模板（可直接用于首次部署）：\n  ```bash\n  APP_IMAGE=ghcr.io/bookorbit/bookorbit:latest\n  APP_URL=http://your-server-ip:3000\n  BOOKS_HOST_PATH=./books\n  POSTGRES_USER=bookorbit\n  POSTGRES_PASSWORD=use-a-strong-random-password\n  POSTGRES_DB=bookorbit\n  JWT_SECRET=use-a-long-random-secret\n  SETUP_BOOTSTRAP_TOKEN=use-a-random-setup-token\n  ```\n- Docker Compose 关键点解读（节选）：\n  - 应用容器：只读根文件系统 + `/tmp` 临时目录 + 最小能力集，`restart: unless-stopped` 健康检查指向 `/api/v1/health`，依赖 postgres 健康后启动。  \n  - Postgres：使用 `pgvector/pgvector:pg16` 镜像 + 持久化卷映射，健康检查用 `pg_isready`。  \n  - 卷挂载：`BOOKS_HOST_PATH` 映射为容器内 `/books`，`./data/app` 映射为 `/data`，便于权限控制与备份。\n- 这两份文件即为开发者评估迁移成本、安全配置、与现有容器编排集成的核心参考。\n---\n## 局限与不足\n- 学习曲线：对完全没有 Docker/服务器经验的用户，仍需理解域名/端口/反向代理、文件权限、OIDC 等概念；官方文档详细，但门槛不可忽视。  \n- 初始投入：需要一台稳定在线的服务器/NAS/云主机，并进行基础运维（更新、备份、HTTPS），相对于“开箱即用”的云服务有 upfront 成本。  \n- 已知 Bug 与边缘问题：近期 Issues 显示 Smart Scope 在大量规则加载时出现“无法加载”现象、排序行为不符合预期等，说明部分高级功能仍需稳定化打磨。  \n- 许可证是 AGPL-3.0：若你打算将其闭源集成到商业产品中，需要注意 AGPL 的网络服务开源义务与合规要求。  \n- 功能丰富带来的配置复杂度：多用户、OIDC、外部数据库、SMTP 加密、迁移加密、Book Dock、智能过滤、多设备同步等选项众多，初次配置可能需要反复阅读文档与实践。\n---\n## 结语与行动建议\n- 综合评判：  \n  - 若你希望把“所有书”放在自己掌控的地方，并且需要真正的多端阅读/进度/划线同步（尤其是 Kobo/KOReader 生态），BookOrbit 是当前非常扎实且持续活跃的自托管方案之一。  \n  - 对个人来说，它可以把阅读从“设备孤岛”变成统一、可追踪的“个人数字资产”；对家庭/团队，多用户与 SSO 能力使其成为可持续协作的书库平台。  \n- 行动建议：  \n  - 先用官方 Demo 快速体验 UI 与核心流程，直观感受其 Web 阅读器、管理与统计界面是否契合你的习惯。  \n  - 若打算自托管，从 Docker Compose 模板开始，在低资源环境（如家用小服务器或 NAS）跑通最小示例；配置时优先确保 `APP_URL`、`BOOKS_HOST_PATH`、`PUID/PGID`、数据库凭据与 `SETUP_BOOTSTRAP_TOKEN` 正确。  \n  - 重度墨水屏用户务必配置好 Kobo/KOReader 同步与 KOReader 插件，这是其差异化亮点；若你已有 Audiobookshelf 或 Calibre-Web Automated，不妨先在测试环境试用官方迁移流程，降低数据迁移风险。  \n  - 对开发者：阅读 `docs/DEVELOPMENT.md` 与 `docs/CONTRIBUTING.md`，了解前后端分离与本地化流程；Docker 安全与外部数据库配置是不错的可借鉴实践。\n---\n## 参考资料\n- BookOrbit 官方 GitHub 仓库（README、Quick Start、KOReader 插件说明、迁移指南、License）。  \n- BookOrbit 官方站点（产品页与 Demo 入口）。  \n- 官方安装文档（系统要求、Docker/Unraid 指南、环境变量表、权限与外部数据库说明）。  \n- docker-compose.yml 与 .env.example 原始文件（容器配置与安全/扩展选项）。  \n- 近期版本发布说明（v2.6.0、v2.1.0）展示功能迭代与设备侧增强。  \n- GitHub Issues 与 Discussions（活跃问题与需求反馈）。"
     },
     {
       "id": "4339ce29-8363-450e-806e-df33b588d465",
@@ -3360,13 +3663,13 @@
       "repo": "marin-community/marin",
       "description": "Open-source framework for the research and development of foundation models.",
       "language": "Python",
-      "stars": 2381,
-      "forks": 208,
+      "stars": 2422,
+      "forks": 211,
       "starsAdded": 443,
       "createdAt": "2026-08-26T02:08:48.855Z",
       "githubData": {
-        "stars": "2212",
-        "forks": "197",
+        "stars": "2422",
+        "forks": "211",
         "description": "Open-source framework for the research and development of foundation models. - marin-community/marin",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -3414,13 +3717,13 @@
       "repo": "anthropics/claude-plugins-community",
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
-      "stars": 2086,
-      "forks": 187,
+      "stars": 2136,
+      "forks": 189,
       "starsAdded": 1199,
       "createdAt": "2026-08-23T16:33:00.076Z",
       "githubData": {
-        "stars": "1870",
-        "forks": "182",
+        "stars": "2137",
+        "forks": "189",
         "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
         "topics": [],
         "license": "Apache-2.0 license",

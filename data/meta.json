@@ -2,15 +2,15 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 51
+      "count": 52
     },
     {
       "tag": "自动化",
-      "count": 30
+      "count": 31
     },
     {
       "tag": "GitHub",
-      "count": 30
+      "count": 31
     },
     {
       "tag": "Claude",
@@ -19,6 +19,10 @@
     {
       "tag": "开源项目",
       "count": 20
+    },
+    {
+      "tag": "AI Agent",
+      "count": 15
     },
     {
       "tag": "本地部署",
@@ -30,10 +34,6 @@
     },
     {
       "tag": "隐私保护",
-      "count": 12
-    },
-    {
-      "tag": "AI Agent",
       "count": 12
     },
     {
@@ -84,22 +84,22 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 100
+      "count": 105
     },
     {
       "name": "AI 编程",
-      "count": 91
+      "count": 95
     },
     {
       "name": "效率工具",
-      "count": 30
-    },
-    {
-      "name": "开发者工具",
-      "count": 12
+      "count": 33
     },
     {
       "name": "生活效率",
+      "count": 13
+    },
+    {
+      "name": "开发者工具",
       "count": 12
     },
     {
@@ -151,15 +151,15 @@
       "count": 4
     },
     {
+      "name": "知识管理",
+      "count": 4
+    },
+    {
       "name": "资源聚合",
       "count": 4
     },
     {
       "name": "基础设施",
-      "count": 3
-    },
-    {
-      "name": "知识管理",
       "count": 3
     }
   ],
@@ -248,10 +248,14 @@
   "topTopics": [
     {
       "name": "llm",
-      "count": 31
+      "count": 32
     },
     {
       "name": "claude-code",
+      "count": 24
+    },
+    {
+      "name": "ai-agents",
       "count": 23
     },
     {
@@ -259,11 +263,11 @@
       "count": 22
     },
     {
-      "name": "ai-agents",
-      "count": 22
+      "name": "skills",
+      "count": 16
     },
     {
-      "name": "skills",
+      "name": "agent-skills",
       "count": 15
     },
     {
@@ -275,43 +279,39 @@
       "count": 14
     },
     {
-      "name": "typescript",
-      "count": 13
-    },
-    {
-      "name": "agent-skills",
-      "count": 13
-    },
-    {
       "name": "agents",
-      "count": 12
+      "count": 13
     },
     {
       "name": "dsh-plugin",
-      "count": 12
+      "count": 13
+    },
+    {
+      "name": "python",
+      "count": 13
+    },
+    {
+      "name": "typescript",
+      "count": 13
     },
     {
       "name": "rust",
       "count": 12
     },
     {
-      "name": "python",
-      "count": 12
+      "name": "claude",
+      "count": 11
     },
     {
       "name": "mcp",
       "count": 11
     },
     {
-      "name": "chatgpt",
-      "count": 9
-    },
-    {
-      "name": "claude",
-      "count": 9
-    },
-    {
       "name": "codex",
+      "count": 10
+    },
+    {
+      "name": "chatgpt",
       "count": 9
     },
     {
@@ -377,7 +377,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 470859,
+      "stars": 470965,
       "appearances": 0
     },
     {
@@ -431,7 +431,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 118692,
+      "stars": 118744,
       "appearances": 4
     }
   ],
@@ -439,55 +439,55 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 118692,
+      "stars": 118744,
       "appearances": 4
     },
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 20901,
+      "stars": 21159,
       "appearances": 4
     },
     {
       "repo": "basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "stars": 31807,
+      "stars": 31907,
       "appearances": 4
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 3561,
+      "stars": 3584,
       "appearances": 4
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50171,
+      "stars": 50280,
       "appearances": 4
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38093,
+      "stars": 38146,
       "appearances": 4
     },
     {
       "repo": "VoltAgent/awesome-agent-skills",
       "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "stars": 32484,
+      "stars": 32571,
       "appearances": 4
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2086,
+      "stars": 2136,
       "appearances": 4
     },
     {
       "repo": "AprilNEA/OpenLogi",
       "url": "https://github.com/AprilNEA/OpenLogi",
-      "stars": 16755,
+      "stars": 16816,
       "appearances": 3
     },
     {

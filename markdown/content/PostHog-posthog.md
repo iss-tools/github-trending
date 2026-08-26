@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/PostHog/posthog)
 
-- **Stars**: 39222
+- **Stars**: 39237
 - **Language**: Python
 
 ## PostHog 深度评测：全能型开源产品分析平台
