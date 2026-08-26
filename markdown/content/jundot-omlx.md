@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/jundot/omlx)
 
-- **Stars**: 20565
+- **Stars**: 20658
 - **Language**: Python
 
 ## oMLX：Mac 本地 AI 推理的终极引擎

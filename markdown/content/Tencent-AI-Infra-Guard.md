@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/Tencent/AI-Infra-Guard)
 
-- **Stars**: 5794
+- **Stars**: 5905
 - **Language**: Python
 
 ## AI-Infra-Guard：全栈式 AI 红队平台深度评测

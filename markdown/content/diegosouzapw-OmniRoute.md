@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/diegosouzapw/OmniRoute)
 
-- **Stars**: 54537
+- **Stars**: 55259
 - **Language**: TypeScript
 
 ## OmniRoute：免费开源的AI智能路由网关深度评测

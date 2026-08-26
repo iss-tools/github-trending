@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/multica-ai/andrej-karpathy-skills)
 
-- **Stars**: 206667
+- **Stars**: 207263
 
 ## Karpathy-Inspired Claude Code Guidelines 深度评测
 

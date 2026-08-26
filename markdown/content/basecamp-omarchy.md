@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/basecamp/omarchy)
 
-- **Stars**: 30339
+- **Stars**: 31355
 - **Language**: Shell
 
 ## Basecamp/Omarchy：极致美观与效率的 Linux 发行版评测
