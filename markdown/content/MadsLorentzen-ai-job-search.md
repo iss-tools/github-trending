@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/MadsLorentzen/ai-job-search)
 
-- **Stars**: 35559
+- **Stars**: 36140
 - **Language**: Python
 
 ## ai-job-search：全栈本地化AI求职助手
