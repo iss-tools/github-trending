@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/OpenCut-app/OpenCut)
 
-- **Stars**: 87141
+- **Stars**: 87198
 - **Language**: TypeScript
 
 ## OpenCut 深度评测：开源版的浏览器端剪映

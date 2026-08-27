@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/block/buzz)
 
-- **Stars**: 31054
+- **Stars**: 31065
 - **Language**: Rust
 
 ## Block's Buzz：开源、自托管的人机协同工作空间

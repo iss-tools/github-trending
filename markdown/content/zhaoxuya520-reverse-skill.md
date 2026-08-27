@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/zhaoxuya520/reverse-skill)
 
-- **Stars**: 29757
+- **Stars**: 29797
 - **Language**: PowerShell
 
 ## reverse-skill：给 AI 装上逆向工程与渗透测试的“安全大脑”

@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/santifer/career-ops)
 
-- **Stars**: 68771
+- **Stars**: 68793
 - **Language**: JavaScript
 
 ## career-ops：本地 AI 求职指挥中心

@@ -65,10 +65,6 @@
       "count": 8
     },
     {
-      "tag": "MCP",
-      "count": 8
-    },
-    {
       "tag": "Linux",
       "count": 8
     },
@@ -78,6 +74,10 @@
     },
     {
       "tag": "Hyprland",
+      "count": 8
+    },
+    {
+      "tag": "开发环境",
       "count": 8
     }
   ],
@@ -119,11 +119,11 @@
       "count": 8
     },
     {
-      "name": "设计资源",
+      "name": "安全合规",
       "count": 7
     },
     {
-      "name": "安全合规",
+      "name": "设计资源",
       "count": 7
     },
     {
@@ -151,11 +151,11 @@
       "count": 5
     },
     {
-      "name": "开发资源",
+      "name": "知识管理",
       "count": 4
     },
     {
-      "name": "知识管理",
+      "name": "开发资源",
       "count": 4
     },
     {
@@ -229,19 +229,19 @@
       "count": 8
     },
     {
-      "name": "开发者与产品经理",
+      "name": "安全研究员",
       "count": 7
     },
     {
-      "name": "UI/UX 设计师",
+      "name": "企业开发者与安全团队",
       "count": 7
     },
     {
-      "name": "数字营销与电商运营",
+      "name": "AI应用研究人员",
       "count": 7
     },
     {
-      "name": "AI Agent 构建者",
+      "name": "开发工具集成开发者",
       "count": 7
     }
   ],
@@ -279,6 +279,10 @@
       "count": 17
     },
     {
+      "name": "ai-agent",
+      "count": 15
+    },
+    {
       "name": "agents",
       "count": 15
     },
@@ -287,8 +291,8 @@
       "count": 15
     },
     {
-      "name": "ai-agent",
-      "count": 15
+      "name": "mcp",
+      "count": 14
     },
     {
       "name": "local-first",
@@ -296,10 +300,6 @@
     },
     {
       "name": "typescript",
-      "count": 14
-    },
-    {
-      "name": "mcp",
       "count": 14
     },
     {
@@ -315,15 +315,15 @@
       "count": 11
     },
     {
-      "name": "chatgpt",
-      "count": 10
-    },
-    {
-      "name": "prompt-engineering",
+      "name": "claude-skills",
       "count": 10
     },
     {
       "name": "workflow-automation",
+      "count": 10
+    },
+    {
+      "name": "chatgpt",
       "count": 10
     }
   ],
@@ -333,11 +333,11 @@
       "count": 66
     },
     {
-      "name": "TypeScript",
+      "name": "Rust",
       "count": 27
     },
     {
-      "name": "Rust",
+      "name": "TypeScript",
       "count": 27
     },
     {
@@ -389,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471412,
+      "stars": 471489,
       "appearances": 0
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119102,
+      "stars": 119131,
       "appearances": 4
     }
   ],
@@ -451,13 +451,13 @@
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2354,
+      "stars": 2370,
       "appearances": 5
     },
     {
-      "repo": "freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 22546,
+      "repo": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 32427,
       "appearances": 5
     },
     {
@@ -467,45 +467,45 @@
       "appearances": 5
     },
     {
-      "repo": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "stars": 32378,
+      "repo": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "stars": 38477,
       "appearances": 5
     },
     {
-      "repo": "tinyhumansai/openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38452,
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "stars": 22709,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50729,
+      "stars": 50758,
       "appearances": 5
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 3711,
+      "stars": 3726,
       "appearances": 4
     },
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119102,
+      "stars": 119131,
       "appearances": 4
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 34554,
+      "appearances": 3
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2598,
-      "appearances": 3
-    },
-    {
-      "repo": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 49911,
+      "stars": 2626,
       "appearances": 3
     }
   ]

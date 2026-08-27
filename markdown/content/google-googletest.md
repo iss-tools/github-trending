@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/google/googletest)
 
-- **Stars**: 38976
+- **Stars**: 38987
 - **Language**: C++
 
 ## GoogleTest 深度评测：C++ 生态最成熟的测试框架
