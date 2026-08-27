@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/microsoft/AI-For-Beginners)
 
-- **Stars**: 67213
+- **Stars**: 67281
 - **Language**: Jupyter Notebook
 
 ## Microsoft AI-For-Beginners 课程评测

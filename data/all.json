@@ -1,6 +1,660 @@
 {
   "all": [
     {
+      "id": "978d3c15-e407-4097-932e-8096859fdb2a",
+      "dateAdded": "202608",
+      "type": "github-monthly",
+      "url": "https://github.com/unclebob/swarm-forge",
+      "repo": "unclebob/swarm-forge",
+      "description": "A simple tool for coordinating several AI agents.",
+      "language": "Clojure",
+      "stars": 2895,
+      "forks": 297,
+      "starsAdded": 1579,
+      "createdAt": "2026-08-27T11:00:05.761Z",
+      "githubData": null,
+      "summaryData": null
+    },
+    {
+      "id": "92ca9774-3ef1-4e0a-acc2-dcb8f65ba7ea",
+      "dateAdded": "202608",
+      "type": "github-monthly",
+      "url": "https://github.com/public-apis/public-apis",
+      "repo": "public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars": 471351,
+      "forks": 51980,
+      "starsAdded": 19469,
+      "createdAt": "2026-08-27T11:00:05.759Z",
+      "githubData": {
+        "stars": "471324",
+        "forks": "51978",
+        "description": "A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.",
+        "topics": [
+          "api",
+          "apis",
+          "dataset",
+          "development",
+          "free",
+          "list",
+          "lists",
+          "open-source",
+          "public",
+          "public-api",
+          "public-apis",
+          "resources",
+          "software"
+        ],
+        "license": "MIT license",
+        "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "API",
+          "开发者工具",
+          "免费资源",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "public-apis：从社区瑰宝到争议广告牌的深度评测",
+        "ability": [
+          "免费API资源聚合",
+          "分类索引与检索",
+          "API元数据标注",
+          "Markdown格式易读",
+          "社区驱动的更新机制（历史上）"
+        ],
+        "summary": "曾被誉为开发者“API圣经”的免费API目录，如今因商业化与维护停滞，仅能作为参考起点。",
+        "category": [
+          "开发资源",
+          "API 集合",
+          "工具箱"
+        ],
+        "suitable": [
+          "全栈开发者",
+          "初创团队",
+          "编程学生与初学者",
+          "数据科学家",
+          "产品原型设计人员"
+        ],
+        "description": "public-apis 是 GitHub 上极具知名度的免费API列表项目，收录了超过1600个涵盖各类领域的API接口。虽然项目因商业化争议和维护停滞导致实用性下降，但其庞大的历史资源库依然是寻找免费数据接口的有价值起点，建议结合官方文档严格验证后使用。"
+      }
+    },
+    {
+      "id": "fb51619e-a305-414b-aec5-05171425ad22",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "repo": "Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "stars": 50700,
+      "forks": 8197,
+      "starsAdded": 4235,
+      "createdAt": "2026-08-27T11:00:03.775Z",
+      "githubData": {
+        "stars": "50668",
+        "forks": "8192",
+        "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": ""
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "降本增效",
+          "API 代理",
+          "Claude",
+          "GitHub 项目"
+        ],
+        "cover": "",
+        "title": "Free Claude Code：零成本复现顶级 AI 编程助手",
+        "ability": [
+          "多模型智能路由与容错",
+          "代码输出智能降噪",
+          "多终端与语音交互支持",
+          "Token 消耗大幅优化"
+        ],
+        "summary": "通过本地代理路由技术，将昂贵请求转发至免费模型，实现低成本、高可用的 AI 编程体验。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "预算有限的个人开发者",
+          "追求极致性价比的学生",
+          "需要灵活切换模型的极客"
+        ],
+        "description": "Free Claude Code 是一个开源本地代理工具，能拦截 Claude Code 的请求并重定向到 NVIDIA 等免费模型。它具备智能路由、流量过滤和多端支持功能，在大幅降低 API 成本的同时，保障了开发工作流的连续性和稳定性。"
+      }
+    },
+    {
+      "id": "752199bb-a8eb-4859-b64c-c383fb06b77a",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "repo": "tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "language": "Rust",
+      "stars": 38431,
+      "forks": 3776,
+      "starsAdded": 1818,
+      "createdAt": "2026-08-27T11:00:03.772Z",
+      "githubData": {
+        "stars": "38415",
+        "forks": "3775",
+        "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher. - tinyhumansai/openhuman",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "https://tinyhumans.ai/openhuman"
+      },
+      "summaryData": {
+        "tags": [
+          "AI助手",
+          "本地部署",
+          "知识管理",
+          "自动化",
+          "隐私保护"
+        ],
+        "cover": "",
+        "title": "OpenHuman 评测：你的本地优先、记忆超强的个人AI超级大脑",
+        "ability": [
+          "本地持久记忆",
+          "自动数据同步",
+          "智能任务编排",
+          "深度研究整合",
+          "隐私本地优先"
+        ],
+        "summary": "构建持久化、本地记忆的AI个人超级大脑，像贴身智能助理一样持续学习你的数据和工作流。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与工程师",
+          "知识工作者",
+          "隐私敏感用户",
+          "技术爱好者",
+          "内容创作者"
+        ],
+        "description": "OpenHuman 是一个本地优先的 AI 助手，通过自动同步 Gmail、Notion 等数据构建持久化知识库，具备强大的任务编排和研究能力，确保隐私安全，解决传统 AI 助手“冷启动”和缺乏上下文的痛点。"
+      }
+    },
+    {
+      "id": "c7543042-d836-45f3-9086-6cfcc2e4acb1",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/santifer/career-ops",
+      "repo": "santifer/career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "language": "JavaScript",
+      "stars": 68753,
+      "forks": 13015,
+      "starsAdded": 3061,
+      "createdAt": "2026-08-27T11:00:03.758Z",
+      "githubData": null,
+      "summaryData": null
+    },
+    {
+      "id": "97e98947-8686-4370-9c4e-25979950bf58",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/securo-finance/securo",
+      "repo": "securo-finance/securo",
+      "description": "Open-source personal finance manager. Self-hosted, privacy-first.",
+      "language": "Python",
+      "stars": 2315,
+      "forks": 302,
+      "starsAdded": 617,
+      "createdAt": "2026-08-27T11:00:03.751Z",
+      "githubData": null,
+      "summaryData": null
+    },
+    {
+      "id": "b3ee0812-47b8-4b81-a70a-9d9f85b775db",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 100831,
+      "forks": 19439,
+      "starsAdded": 707,
+      "createdAt": "2026-08-27T11:00:02.150Z",
+      "githubData": {
+        "forks": "19370",
+        "stars": "100412",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
+      "id": "2b469808-f52a-425d-aea5-243a1143ff61",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "repo": "OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "language": "TypeScript",
+      "stars": 87087,
+      "forks": 8597,
+      "starsAdded": 1040,
+      "createdAt": "2026-08-27T11:00:02.147Z",
+      "githubData": null,
+      "summaryData": null
+    },
+    {
+      "id": "ff91046f-387f-4cd6-b26a-a2bde8e0b2b2",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/actions/checkout",
+      "repo": "actions/checkout",
+      "description": "Action for checking out a repo",
+      "language": "TypeScript",
+      "stars": 8666,
+      "forks": 2750,
+      "starsAdded": 4,
+      "createdAt": "2026-08-27T11:00:02.144Z",
+      "githubData": null,
+      "summaryData": null
+    },
+    {
+      "id": "6b9ab660-a484-4d0d-8c02-ba8545d19ce3",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "language": "Python",
+      "stars": 73411,
+      "forks": 8423,
+      "starsAdded": 125,
+      "createdAt": "2026-08-27T11:00:02.137Z",
+      "githubData": {
+        "forks": "8423",
+        "stars": "73416",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "antigravity",
+          "automation",
+          "claude",
+          "claude-code",
+          "codex",
+          "composio",
+          "cursor",
+          "developer-tools",
+          "gemini-cli",
+          "mcp",
+          "openai-codex",
+          "rube",
+          "saas",
+          "skill",
+          "workflow-automation"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows - ComposioHQ/awesome-claude-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Skills",
+          "自动化",
+          "Prompt工程",
+          "工具集"
+        ],
+        "cover": "",
+        "title": "Claude 技能生态的宝藏清单：awesome-claude-skills 评测",
+        "ability": [
+          "精选技能收录",
+          "渐进式加载省Token",
+          "跨平台工作流统一",
+          "快速上手模板",
+          "应用自动化集成"
+        ],
+        "summary": "收录 1000+ Claude 技能的精华清单，助你一键提升 AI 自动化效率。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "资源合集"
+        ],
+        "suitable": [
+          "AI 重度使用者",
+          "开发工程师",
+          "产品运营人员",
+          "自动化工作流搭建者",
+          "安全运维人员"
+        ],
+        "description": "这是一个 GitHub 上的精选列表，收录了超过 1000 个 Claude 技能，涵盖开发、办公、数据分析等多个领域。它通过详细的分类和入门指南，帮助用户快速找到并复用高质量技能，解决 Claude 上下文限制问题，实现从对话到自动化的升级。"
+      }
+    },
+    {
+      "id": "72bf5e21-6f46-4174-8d4c-68a166f4cd4c",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/google/googletest",
+      "repo": "google/googletest",
+      "description": "GoogleTest - Google Testing and Mocking Framework",
+      "language": "C++",
+      "stars": 38962,
+      "forks": 10859,
+      "starsAdded": 4,
+      "createdAt": "2026-08-27T11:00:02.108Z",
+      "githubData": {
+        "forks": "10859",
+        "stars": "38963",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://google.github.io/googletest/",
+        "description": "GoogleTest - Google Testing and Mocking Framework. Contribute to google/googletest development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "C++",
+          "单元测试",
+          "Mock",
+          "GoogleTest",
+          "CI/CD"
+        ],
+        "cover": "",
+        "title": "GoogleTest 深度评测：C++ 生态最成熟的测试框架",
+        "ability": [
+          "声明式断言与测试套件",
+          "强大的 Mock 能力(gMock)",
+          "深度集成 CMake/Bazel 与 CI",
+          "跨平台与多编译器支持",
+          "完善的参数化与类型测试"
+        ],
+        "summary": "GoogleTest 是谷歌开源的 C++ 测试与 Mock 框架，支持声明式断言、参数化测试及 gMock，是 C++ 质量保障的首选基础设施。",
+        "category": [
+          "开发工具",
+          "测试框架"
+        ],
+        "suitable": [
+          "C++ 工程师与开发团队",
+          "CI/CD 维护者",
+          "测试与质量工程师",
+          "大型项目架构师",
+          "C++ 初学者与学习者"
+        ],
+        "description": "GoogleTest 是 C++ 生态最成熟、最被默认选择的测试框架，提供断言、测试套件、参数化测试及 gMock 模拟对象，深度兼容主流构建系统与 CI，适合从嵌入式到基础设施的各种 C++ 项目，帮助团队高效构建稳定可维护的测试体系。"
+      }
+    },
+    {
+      "id": "896503ef-68f4-4792-ab64-d8543ffeb61a",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "JavaScript",
+      "stars": 91994,
+      "forks": 8093,
+      "starsAdded": 133,
+      "createdAt": "2026-08-27T11:00:02.106Z",
+      "githubData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "6e9be765-6ccc-419b-b6c8-34b7df57f501",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "repo": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars": 51772,
+      "forks": 6500,
+      "starsAdded": 1284,
+      "createdAt": "2026-08-27T11:00:02.097Z",
+      "githubData": {
+        "forks": "6502",
+        "stars": "51778",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "claude",
+          "copilot",
+          "cursor",
+          "elevenlabs",
+          "ffmpeg",
+          "flux",
+          "image-generation",
+          "open-source",
+          "openai",
+          "python",
+          "remotion",
+          "stable-diffusion",
+          "text-to-speech",
+          "text-to-video",
+          "video-generation",
+          "video-production"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://www.openmontage.video/",
+        "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+      },
+      "summaryData": {
+        "tags": [
+          "自动化",
+          "视频剪辑",
+          "AI Agent",
+          "工作流",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenMontage：全流程 AI 视频自动生成框架",
+        "ability": [
+          "全流程自动制片",
+          "真实素材与动画双轨",
+          "多模型/本地化混合编排",
+          "成本控制与质量门",
+          "可视化项目管理回放"
+        ],
+        "summary": "一套让 AI 助手全自动完成从脚本调研到成片剪辑全流程的开源视频制作框架。",
+        "category": [
+          "AI 视频",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "独立视频创作者",
+          "技术型内容运营",
+          "教育培训机构",
+          "AI 极客与开发者"
+        ],
+        "description": "OpenMontage 将 Claude、Cursor 等编程助手转化为影视制作公司，支持从选题调研、脚本生成、素材检索到剪辑合成的全自动化。兼容本地与云端模型，提供成本预估与质量审核，是高效、低成本、可控的 AI 视频生产流水线。"
+      }
+    },
+    {
+      "id": "cb3d582e-c9f6-473e-95f7-0cfdc21cc5c3",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "repo": "JetBrains/go-modern-guidelines",
+      "description": "Help AI coding agents write modern Go",
+      "language": "Go",
+      "stars": 1828,
+      "forks": 53,
+      "starsAdded": 314,
+      "createdAt": "2026-08-27T11:00:02.077Z",
+      "githubData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "Go 语言",
+          "AI 助手",
+          "代码规范",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "JetBrains Modern Go Guidelines 深度评测",
+        "ability": [
+          "版本感知：自动适配项目 Go 版本",
+          "现代化重构：推荐最新惯用法",
+          "AI 技能集成：支持多平台 Agent",
+          "渐进披露：优化上下文占用",
+          "团队协同：统一代码风格"
+        ],
+        "summary": "JetBrains 官方出品的 AI 辅助编程指南，让 Go 代码根据版本自动拥抱现代语法，拒绝陈旧写法。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "Go 语言"
+        ],
+        "suitable": [
+          "Go 语言开发者",
+          "使用 AI 编程的程序员",
+          "技术团队负责人",
+          "代码质量追求者"
+        ],
+        "description": "这是一套专为 AI 代理设计的 Go 语言编写指南，通过读取项目的 go.mod 版本，让 AI 在生成代码时自动使用匹配的现代语法和标准库 API，减少后期重构成本，提升代码可读性与安全性，同时支持 JetBrains Junie、Claude Code 等多种开发环境。"
+      }
+    },
+    {
+      "id": "55c41c65-ece5-4c2d-8246-d3b151a8aad2",
+      "dateAdded": "20260827",
+      "type": "github-daily",
+      "url": "https://github.com/zedeus/nitter",
+      "repo": "zedeus/nitter",
+      "description": "Alternative Twitter front-end",
+      "language": "Nim",
+      "stars": 13596,
+      "forks": 1067,
+      "starsAdded": 63,
+      "createdAt": "2026-08-27T11:00:01.932Z",
+      "githubData": {
+        "forks": "1067",
+        "stars": "13596",
+        "topics": [
+          "nim",
+          "privacy",
+          "self-hosted",
+          "twitter",
+          "x"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://nitter.net",
+        "description": "Alternative Twitter front-end. Contribute to zedeus/nitter development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Twitter前端",
+          "开源",
+          "隐私保护",
+          "RSS订阅",
+          "Docker部署"
+        ],
+        "cover": "",
+        "title": "Nitter 开源项目评测：隐私优先的 Twitter 前端",
+        "ability": [
+          "零 JS 无广告浏览",
+          "隐私保护代理",
+          "RSS 订阅功能",
+          "轻量级高性能",
+          "自建个人实例"
+        ],
+        "summary": "开源免费的 Twitter（X）隐私前端，去广告、无追踪，但面临平台封杀，更适合自建使用。",
+        "category": [
+          "开源项目",
+          "隐私工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "隐私敏感用户",
+          "RSS 资讯聚合者",
+          "开发者与运维",
+          "内容研究人员",
+          "开源爱好者"
+        ],
+        "description": "Nitter 是一个开源的 Twitter 前端，主打隐私保护和无广告浏览。它通过后端代理避免了平台的追踪和繁重的脚本，提供极致的轻量级体验。虽然面临 X 平台的封杀，公共实例大多不可用，但仍非常适合个人自建或作为 RSS 数据源使用。"
+      }
+    },
+    {
       "id": "d78a1669-4e72-4f7d-bd30-8ed6a5fb3e1d",
       "dateAdded": "202608",
       "type": "github-monthly",
@@ -8,13 +662,13 @@
       "repo": "earendil-works/pi",
       "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
       "language": "TypeScript",
-      "stars": 97959,
-      "forks": 12108,
+      "stars": 98090,
+      "forks": 12125,
       "starsAdded": 20153,
       "createdAt": "2026-08-27T02:01:00.822Z",
       "githubData": {
-        "stars": "97959",
-        "forks": "12108",
+        "stars": "98090",
+        "forks": "12125",
         "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI - earendil-works/pi",
         "topics": [],
         "license": "MIT license",
@@ -60,12 +714,12 @@
       "repo": "megadose/holehe",
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
-      "stars": 14289,
+      "stars": 14299,
       "forks": 1834,
       "starsAdded": 2500,
       "createdAt": "2026-08-27T02:01:00.811Z",
       "githubData": {
-        "stars": "14289",
+        "stars": "14298",
         "forks": "1834",
         "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function. - megadose/holehe",
         "topics": [
@@ -127,13 +781,13 @@
       "repo": "citrolabs/ego-lite",
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
-      "stars": 13841,
-      "forks": 707,
+      "stars": 13905,
+      "forks": 710,
       "starsAdded": 9706,
       "createdAt": "2026-08-27T02:01:00.808Z",
       "githubData": {
-        "stars": "13842",
-        "forks": "707",
+        "stars": "13899",
+        "forks": "710",
         "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config. - citrolabs/ego-lite",
         "topics": [
           "agent-skills",
@@ -191,13 +845,13 @@
       "repo": "diegosouzapw/OmniRoute",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors",
       "language": "TypeScript",
-      "stars": 56384,
-      "forks": 7755,
+      "stars": 56559,
+      "forks": 7775,
       "starsAdded": 25766,
       "createdAt": "2026-08-27T02:01:00.794Z",
       "githubData": {
-        "stars": "56385",
-        "forks": "7755",
+        "stars": "56527",
+        "forks": "7772",
         "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors - diegosouzapw/OmniRoute",
         "topics": [
           "a2a",
@@ -265,13 +919,13 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 20643,
-      "forks": 4897,
+      "stars": 20668,
+      "forks": 4918,
       "starsAdded": 5829,
       "createdAt": "2026-08-27T02:01:00.790Z",
       "githubData": {
-        "stars": "20643",
-        "forks": "4897",
+        "stars": "20664",
+        "forks": "4918",
         "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub.",
         "topics": [],
         "license": "MIT license",
@@ -318,13 +972,13 @@
       "repo": "volcengine/OpenViking",
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
-      "stars": 33650,
-      "forks": 2562,
+      "stars": 33753,
+      "forks": 2565,
       "starsAdded": 6387,
       "createdAt": "2026-08-27T02:01:00.780Z",
       "githubData": {
-        "stars": "33650",
-        "forks": "2562",
+        "stars": "33740",
+        "forks": "2565",
         "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. - volcengine/OpenViking",
         "topics": [
           "agent-memory",
@@ -377,13 +1031,13 @@
       "repo": "virgiliojr94/book-to-skill",
       "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
       "language": "Python",
-      "stars": 25955,
-      "forks": 2691,
+      "stars": 26038,
+      "forks": 2697,
       "starsAdded": 15929,
       "createdAt": "2026-08-27T02:01:00.776Z",
       "githubData": {
-        "stars": "25956",
-        "forks": "2691",
+        "stars": "26025",
+        "forks": "2694",
         "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work. - virgiliojr94/book-to-skill",
         "topics": [
           "agent-skills",
@@ -443,12 +1097,12 @@
       "repo": "cactus-compute/needle",
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
-      "stars": 9343,
-      "forks": 603,
+      "stars": 9376,
+      "forks": 604,
       "starsAdded": 6029,
       "createdAt": "2026-08-27T02:01:00.772Z",
       "githubData": {
-        "stars": "9343",
+        "stars": "9373",
         "forks": "603",
         "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle",
         "topics": [
@@ -473,13 +1127,13 @@
       "repo": "ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 24732,
-      "forks": 1566,
+      "stars": 24807,
+      "forks": 1572,
       "starsAdded": 14348,
       "createdAt": "2026-08-27T02:01:00.767Z",
       "githubData": {
-        "stars": "24732",
-        "forks": "1566",
+        "stars": "24799",
+        "forks": "1572",
         "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd",
         "topics": [
           "adhd",
@@ -532,13 +1186,13 @@
       "repo": "microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
-      "stars": 67213,
-      "forks": 12957,
+      "stars": 67281,
+      "forks": 12974,
       "starsAdded": 14458,
       "createdAt": "2026-08-27T02:01:00.761Z",
       "githubData": {
-        "stars": "67213",
-        "forks": "12957",
+        "stars": "67274",
+        "forks": "12973",
         "description": "12 Weeks, 24 Lessons, AI for All! Contribute to microsoft/AI-For-Beginners development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -596,13 +1250,13 @@
       "repo": "block/buzz",
       "description": "A hive mind communication platform",
       "language": "Rust",
-      "stars": 30979,
-      "forks": 3944,
+      "stars": 31035,
+      "forks": 3958,
       "starsAdded": 18291,
       "createdAt": "2026-08-27T02:01:00.754Z",
       "githubData": {
-        "stars": "30979",
-        "forks": "3944",
+        "stars": "31027",
+        "forks": "3954",
         "description": "A hive mind communication platform. Contribute to block/buzz development by creating an account on GitHub.",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -642,30 +1296,6 @@
       }
     },
     {
-      "id": "a18bb97f-ecb3-4ae3-b72d-c2d9ab2d12fb",
-      "dateAdded": "202608",
-      "type": "github-monthly",
-      "url": "https://github.com/cursor/plugins",
-      "repo": "cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "stars": 5462,
-      "forks": 445,
-      "starsAdded": 2916,
-      "createdAt": "2026-08-27T02:01:00.728Z",
-      "githubData": {
-        "stars": "5462",
-        "forks": "445",
-        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
-        "topics": [],
-        "license": "",
-        "homepage": ""
-      },
-      "summaryData": {
-        "summary": "# Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”\n> 2026年的编程已不再是单打独斗，Cursor 的插件系统正在将你的 IDE 变成一个能调用无数工具、遵循团队规范、自动执行复杂工作流的“超级开发者”。\n## 🧠 一句话总结\nCursor 的插件系统是其 AI 原生 IDE 的核心扩展能力，它通过**模块化打包规则、技能、代理、命令、MCP 服务器和钩子**，将通用 AI 转化为**能理解你团队内部工具、工作流和代码规范的专属智能助手**，从根本上解决了 AI 编程工具“懂技术但不懂团队”的痛点。\n## 🔍 背景与痛点：为什么需要插件系统？\n### AI 编程的“最后一公里”问题\n目前的 AI 编程工具（如 Cursor, GitHub Copilot）大多基于通用模型训练，它们就像一位才华横溢但刚入职的“通用型程序员”：\n-   **懂语言但不懂行话**：精通各种编程语言的语法和算法，但对你们团队特有的**内部工具链、缩写、代码规范、部署流程**一无所知。\n-   **能写代码但无法协同**：可以生成单个文件或函数，但难以理解**跨文件、跨服务的复杂业务逻辑**，更别提自动触发你们团队的 CI/CD 流程或通知系统。\n-   **是助手而非队员**：需要你手动描述每一个细节，无法像真正的团队成员那样**主动感知项目状态、执行预定义的工作流**。\n### Cursor 插件：团队专属的“入职培训脚本”\nCursor 的插件系统正是为了解决这些问题而生。它提供了一种结构化、可分发的方式，将你团队的**“入职培训手册”** 自动化并注入到 Cursor 的 AI 能力中。通过插件，你可以：\n-   **固化最佳实践**：将代码风格、架构模式、安全审查规则等硬编码为 AI 永久遵循的规则。\n-   **集成内部工具**：让 AI 能够直接与你们自建的 API、数据库、服务总线等“对话”，生成真正可用的代码。\n-   **自动化工作流**：将复杂的、多步骤的任务（如“从设计稿生成代码并部署到预发环境”）封装成 AI 可一键执行的命令。\n```mermaid\nflowchart TD\n    A[通用AI编程工具] --> B[痛点: 懂技术但不懂团队]\n    B --> C[Cursor插件系统]\n    \n    subgraph D [插件核心能力]\n        D1[规则<br>固化代码规范与审查标准]\n        D2[技能<br>封装领域专用能力]\n        D3[代理<br>定制化AI行为与流程]\n        D4[命令<br>一键执行复杂任务]\n        D5[MCP服务器<br>连接外部工具与数据源]\n        D6[钩子<br>响应事件自动化]\n    end\n    \n    C --> D\n    \n    D --> E[收益: 打造专属智能开发团队]\n    \n    subgraph F [实际应用场景]\n        F1[代码审查与安全审计]\n        F2[设计稿转代码]\n        F3[自动化测试与部署]\n        F4[数据查询与分析]\n    end\n    \n    E --> F\n```\n## ⚡ 核心亮点与功能剖析\nCursor 的插件系统并非简单的功能扩展，而是对 AI 能力的深度定制和编排。其核心亮点在于其**模块化设计**和**开放标准**。\n### 1. 模块化组件：构建插件的积木块\n一个 Cursor 插件是一个目录，其中包含一个**清单文件 (`plugin.json`)** 和任意数量的以下组件：\n| 组件 | 格式支持 | 描述 | 典型应用场景 |\n| :--- | :--- | :--- | :--- |\n| **规则 (Rules)** | Cursor Plugins | 持久化的 AI 指导和编码标准 (`.mdc` 文件) | 代码风格、命名规范、安全审查检查项 |\n| **技能 (Skills)** | 两者皆可 | 代理用于复杂任务的专业化能力 | 解析特定日志格式、调用内部API生成代码、自动化测试 |\n| **代理 (Agents)** | Cursor Plugins | 定制的代理配置和提示词 | 设置一个专门用于“性能优化”或“安全审计”的专属AI代理 |\n| **命令 (Commands)** | Cursor Plugins | 代理可执行的命令文件 | 一键“部署到预发环境”、“生成API文档并发布” |\n| **MCP 服务器** | 两者皆可 | 将 Cursor 连接到外部工具或数据源的服务 | 连接公司内部的知识库、数据库、CI/CD系统 |\n| **钩子 (Hooks)** | Cursor Plugins | 用于观察和代理行为的自动化脚本 | 代码提交前自动运行测试、合并PR后自动通知团队 |\n这种设计使得你可以**按需组合**这些组件，构建出从简单的代码规范增强到复杂的多步骤自动化工作流的插件。\n### 2. Agent Plugins 开放标准：生态繁荣的基石\nCursor 支持 **Agent Plugins 开放标准**。这意味着：\n-   **跨平台兼容**：符合该标准的技能和 MCP 服务器不仅能在 Cursor 中使用，理论上也能在其他支持该标准的 AI 工具中运行，促进了生态的繁荣和资源的共享。\n-   **社区生态**：你可以从 [cursor.directory](https://cursor.directory) 浏览和安装由社区贡献的插件和 MCP 服务器，极大地扩展了 Cursor 的能力边界。\n### 3. 开箱即用的官方与第三方插件库\nCursor 提供了丰富的官方插件和与第三方工具的集成，覆盖了开发的全生命周期：\n-   **规划与设计**：Linear (任务管理)、Figma (设计转代码)\n-   **基础设施与服务**：AWS, Cloudflare, Vercel (部署与管理)、Stripe (支付集成)\n-   **数据与分析**：Databricks, Snowflake, Amplitude (查询数据与洞察)\n-   **日常办公**：**Google Workspace** (Gmail, Drive, Calendar) 、GitHub、Zoom、Salesforce 等\n这些插件让你无需离开 IDE，就能调用各种工具，**将编程、沟通、部署、数据分析等流程无缝串联**。\n## 🎯 目标人群与收益：谁最适合用，能得到什么？\n### 核心目标人群\n1.  **中大型团队的技术负责人/架构师**\n    -   **痛点**：团队规模大，代码规范难统一；新员工上手慢，最佳实践难以传承；重复性工作多（如代码审查、部署流程）。\n    -   **收益**：通过插件固化团队标准，让 AI 自动审查代码、生成符合架构的新代码、自动化重复流程，**将个人经验转化为团队资产**，大幅提升整体开发效率和代码质量。\n2.  **有特定技术栈或领域知识的独立开发者/小团队**\n    -   **痛点**：通用 AI 对你使用的冷门框架或业务领域（如区块链、游戏开发、量化交易）不熟悉，生成代码需要大量修改。\n    -   **收益**：开发自己的技能插件，将领域知识“教”给 AI，让 Cursor 成为你专属的领域专家，**大幅减少调试和修改时间**。\n3.  **追求极致效率的全栈开发者/自动化爱好者**\n    -   **痛点**：在多个工具间频繁切换（如 IDE、终端、浏览器、设计工具），工作流被打断。\n    -   **收益**：通过插件将所有工具集成到 IDE 中，用自然语言命令触发一系列自动化操作，**打造个人专属的“开发流水线”**。\n### 具体收益\n| 收益维度 | 说明 | 量化示例（预估） |\n| :--- | :--- | :--- |\n| **开发效率提升** | 自动化重复任务、减少上下文切换、AI 生成更精准的代码。 | **代码生成效率提升 40-60%**，跨文件修改时间从小时级降至分钟级。 |\n| **代码质量与规范统一** | AI 持续遵循规则，自动进行审查和检测。 | **代码规范符合率提升至 95%+**，潜在安全漏洞在生成阶段就被拦截。 |\n| **知识沉淀与传承** | 将最佳实践、业务逻辑、内部工具使用方法固化到插件中。 | **新员工上手时间缩短 50-70%**，团队知识流失风险降低。 |\n| **工作流自动化** | 将复杂、多步骤的任务封装成命令，一键执行。 | 将“从设计稿到预发环境部署”的流程从**数小时缩短至数分钟**。 |\n## ⚖️ 竞品/同类对比：Cursor 插件系统的独特竞争力\n| 特性 | Cursor 插件系统 | GitHub Copilot Extensions | VS Code 插件 (传统) | Claude Code Projects |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **AI 原生深度集成**，旨在从根本上增强 AI 能力本身。 | **功能扩展**，在 AI 补全/聊天基础上增加外部工具调用能力。 | **IDE 功能扩展**，与 AI 能力是两套独立体系。 | **项目级上下文管理**，侧重于让 AI 理解整个项目。 |\n| **AI 能力定制化深度** | ⭐⭐⭐⭐⭐<br>**最深**。可定制系统提示词、注入规则、改变代理行为，**从“根”上定制 AI**。 | ⭐⭐⭐☆<br>较深。可通过 Extensions 调用工具，但核心 AI 模型行为定制能力有限。 | ⭐☆☆☆☆<br>无。传统插件无法改变 AI 模型的输出和行为。 | ⭐⭐⭐⭐☆<br>深。可通过 `.claude` 文件和配置进行项目级定制，但插件化分发机制不如 Cursor 成熟。 |\n| **与 IDE 的集成度** | ⭐⭐⭐⭐⭐<br>**最高**。基于 VS Code 但深度重构，插件与 AI 能力、编辑器UI无缝融合。 | ⭐⭐⭐⭐☆<br>高。作为 VS Code 插件，集成度很高。 | ⭐⭐⭐☆☆<br>中高。是 VS Code 的原生扩展方式，但与 AI 能力割裂。 | ⭐⭐☆☆☆<br>低。主要在终端中运行，与图形化 IDE 集成度较弱。 |\n| **工作流自动化能力** | ⭐⭐⭐⭐⭐<br>**最强**。支持命令、钩子、MCP，可构建复杂的多步骤自动化流程。 | ⭐⭐⭐☆☆<br>中等。可通过触发命令或聊天进行简单操作，但编排复杂工作流能力较弱。 | ⭐⭐☆☆☆<br>弱。传统插件主要提供功能点，难以编排跨工具的复杂流程。 | ⭐⭐⭐☆☆<br>中等。擅长处理代码任务，但与外部工具的自动化集成能力有限。 |\n| **学习曲线与开发门槛** | ⭐⭐⭐☆☆<br>中等。需理解插件结构和各组件概念，开发有一定门槛。 | ⭐⭐☆☆☆<br>较低。Extensions 开发相对简单，但定制 AI 能力深度有限。 | ⭐⭐☆☆☆<br>低。VS Code 插件生态成熟，开发文档完善，入门容易。 | ⭐⭐⭐☆☆<br>中等。需要理解其配置文件和命令行交互方式。 |\n| **独特优势** | **最彻底的 AI 能力定制化**和**最强的 IDE 内工作流自动化**。 | **生态庞大**，与 GitHub 深度集成，补全体验流畅。 | **生态最成熟**，插件数量最多，几乎能找到任何功能扩展。 | **强大的代码库理解能力**，对大型项目维护和重构非常友好。 |\n**🏆 总结：** Cursor 插件系统的**核心竞争力**在于它不是在 IDE 上“贴”一个 AI，而是将 AI **深度融合进 IDE 的每一寸肌理**，并提供了**无与伦比的定制化深度和自动化能力**。它更适合那些希望**深度定制 AI 以符合自身团队规范和工作流**的开发者和团队。\n## ⚠️ 局限与不足：客观存在的挑战\n1.  **学习与开发门槛**：\n    -   要开发一个功能完善的插件，需要理解 **Cursor 的插件架构、各种组件（Rules, Skills, Agents, etc.）的概念和用法**，这对非技术背景或刚入门的开发者来说有一定挑战。\n    -   虽然有官方文档和示例，但社区资源和教程（尤其是中文）相比 VS Code 生态还不够丰富。\n2.  **生态成熟度**：\n    -   Cursor 插件生态仍处于快速发展期，**高质量、经过广泛验证的第三方插件数量**远不如 VS Code 传统插件生态丰富。\n    -   部分插件可能存在**兼容性问题**（如与特定 Cursor 版本或操作系统的兼容性），或者文档不够详尽。\n3.  **对 Cursor IDE 的依赖**：\n    -   插件系统是 Cursor **独有的**，无法在其他 IDE（如 VS Code、JetBrains）上使用。这意味着如果你选择了 Cursor 的插件生态，就必须**完全迁移到 Cursor IDE**。虽然 Cursor 基于 VS Code，配置迁移相对容易，但这是一个重要的决策点。\n4.  **性能与稳定性考虑**：\n    -   过多或复杂的插件（尤其是涉及频繁外部 API 调用的 MCP 服务器）可能会对 IDE 的**性能和响应速度产生一定影响**。\n    -   插件的稳定性依赖于其开发者的维护质量，一个“有毒”的插件可能会导致 IDE 崩溃或行为异常。\n5.  **企业级安全与治理**：\n    -   目前 Cursor 插件主要针对个人和小团队。对于大型企业，**缺乏内置的、细粒度的插件管理和安全控制机制**（如插件市场访问控制、插件审计流程、私有插件分发）。Cursor 官方表示正在构建**私有团队插件市场**以解决此问题，但这目前仍是一个“即将推出”的功能。\n## 🛠️ 上手指南与代码示例：如何创建你的第一个插件\n### 最小化插件结构\n创建一个最基本的插件只需一个目录和一个清单文件。\n```bash\nmy-awesome-plugin/\n├── .cursor-plugin/\n│   └── plugin.json      # 插件清单（必填）\n└── rules/\n    └── my-rule.mdc      # 一个规则文件（示例）\n```\n### 1. 创建清单文件 `plugin.json`\n这是插件的“身份证”，告诉 Cursor 插件叫什么、是谁做的、有什么内容。\n```json\n{\n  \"name\": \"my-awesome-plugin\",\n  \"displayName\": \"我的超棒插件\",\n  \"description\": \"这是我的第一个 Cursor 插件，用于演示规则文件。\",\n  \"author\": \"Your Name\",\n  \"version\": \"0.0.1\",\n  \"license\": \"MIT\",\n  \"categories\": [\"Developer Tools\"],\n  \"contributes\": {\n    \"rules\": [\n      {\n        \"id\": \"my-rule\",\n        \"path\": \"rules/my-rule.mdc\"\n      }\n    ]\n  }\n}\n```\n### 2. 创建规则文件 `rules/my-rule.mdc`\n规则文件使用 Markdown 格式，用于告诉 AI 在编写代码时应该遵循什么规范。\n```markdown\n---\nid: my-rule\nname: 我的代码规范\ndescription: 确保生成的代码符合我的编码风格\n---\n# 代码风格指南\n请遵循以下规范编写所有代码：\n1.  **函数命名**: 使用 camelCase，例如 `getUserData`。\n2.  **变量命名**: 使用 camelCase，例如 `userName`。\n3.  **常量命名**: 使用 UPPER_SNAKE_CASE，例如 `MAX_RETRY_COUNT`。\n4.  **类命名**: 使用 PascalCase，例如 `UserService`。\n5.  **注释**: 所有公共函数必须添加 JSDoc 注释说明其用途、参数和返回值。\n6.  **错误处理**: 所有异步操作必须包含 try-catch 块进行错误处理。\n## 示例\n**不好的示例**:\n```javascript\nfunction get_data(u) {\n  return db.find(u);\n}\n```\n**好的示例**:\n```javascript\n/**\n * 根据用户ID获取用户数据\n * @param {string} userId - 用户ID\n * @returns {Promise<Object>} 用户数据对象\n */\nasync function getUserData(userId) {\n  try {\n    const userData = await db.find({ id: userId });\n    return userData;\n  } catch (error) {\n    console.error('获取用户数据失败:', error);\n    throw error; // 重新抛出错误，由调用方处理\n  }\n}\n```\n```\n### 3. 安装与测试\n1.  在 Cursor 中，打开 `Customize` 页面（快捷键 `Cmd/Ctrl + ,`）。\n2.  在 \"Plugins\" 部分，点击 \"...\" 菜单，选择 \"Install from Directory...\"。\n3.  选择你的 `my-awesome-plugin` 文件夹。\n4.  Cursor 会自动加载插件。你可以在插件列表中看到它。\n5.  **测试规则**：打开一个新文件，用自然语言告诉 Cursor：“帮我写一个获取用户列表的函数”。Cursor 生成的代码应该会遵循你 `my-rule.mdc` 中定义的规范。\n## 🚀 结语与行动建议：终极评判\nCursor 的插件系统是一项**极具前瞻性和颠覆性**的创新。它远不止于“添加功能”，而是开创了一种 **“通过定制化 AI 来重塑和增强整个开发工作流”** 的新范式。\n### ✅ 最终评价\n-   **创新性**：⭐⭐⭐⭐⭐ (前所未有地将 AI 深度定制化与 IDE 工作流自动化融合)\n-   **实用性**：⭐⭐⭐⭐☆ (对中大型团队和追求效率的开发者价值巨大，但对个人小项目可能有些“杀鸡用牛刀”)\n-   **易用性**：⭐⭐⭐☆☆ (开发插件有门槛，但使用和安装官方/社区插件相对简单)\n-   **生态成熟度**：⭐⭐⭐☆☆ (处于快速发展期，潜力巨大，但目前数量和质量有待提升)\n-   **推荐度**：⭐⭐⭐⭐☆ (强烈推荐给技术负责人、团队骨干和追求极致效率的开发者)\n### 🎯 行动建议\n1.  **如果你是个人开发者或小团队**：\n    -   **从使用开始**：先探索 Cursor 插件市场，安装一些官方插件（如 Google Workspace、GitHub）和社区插件，体验一下无缝集成带来的效率提升。\n    -   **创建简单规则**：从写一个 `.cursorrules` 文件或简单的规则插件开始，固化你个人的代码风格，让 AI 更懂你。\n2.  **如果你是技术负责人或架构师**：\n    -   **评估团队价值**：思考团队中最重复、最易出错、最需要传承知识的环节。这些是插件能发挥最大价值的领域。\n    -   **启动试点项目**：选择一个非核心项目或新功能，尝试开发一个团队插件（例如，自动化代码审查流程、集成内部 API）。让一两位经验丰富的开发者主导。\n    -   **规划长期策略**：随着 Cursor 插件生态的成熟，考虑将**插件开发纳入团队的技术基础设施规划**，将其作为提升团队整体研发效能的关键投资。\n3.  **如果你是插件开发者**：\n    -   **贡献社区**：尝试将你开发的高质量插件提交到 [cursor.directory](https://cursor.directory)，丰富社区生态。\n    -   **探索标准**：深入研究 Agent Plugins 开放标准，开发可跨平台使用的技能和 MCP 服务器，提升插件的通用价值。\n> **💡 未来展望**：随着 Cursor 官方对**私有团队插件市场**和更强大的**Agent 编排能力**的投入，我们可以预见，未来的 IDE 将不再只是一个代码编辑器，而是一个**集成了无数AI微智能体、能自动执行复杂工作流的“开发操作中心”**。Cursor 的插件系统正在引领这场变革。\n---\n**💎 总结一下**：Cursor 插件系统是为那些**不满足于通用AI，希望将AI深度定制并融入自己团队DNA的开发者和团队**准备的。它需要一定的学习成本，但一旦驾驭，它将成为你手中最强大的“效率武器”，彻底改变你的编程方式。"
-      }
-    },
-    {
       "id": "f21c8a1b-f274-444e-bcb4-b3ee263c3bdc",
       "dateAdded": "202608",
       "type": "github-monthly",
@@ -673,13 +1303,13 @@
       "repo": "zhaoxuya520/reverse-skill",
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
       "language": "PowerShell",
-      "stars": 29661,
-      "forks": 4050,
+      "stars": 29734,
+      "forks": 4061,
       "starsAdded": 20811,
       "createdAt": "2026-08-27T02:01:00.697Z",
       "githubData": {
-        "stars": "29661",
-        "forks": "4050",
+        "stars": "29725",
+        "forks": "4060",
         "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端 - zhaoxuya520/reverse-skill",
         "topics": [],
         "license": "MIT license",
@@ -726,13 +1356,13 @@
       "repo": "TencentCloud/TencentDB-Agent-Memory",
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
-      "stars": 24740,
-      "forks": 2273,
+      "stars": 24802,
+      "forks": 2284,
       "starsAdded": 15471,
       "createdAt": "2026-08-27T02:01:00.692Z",
       "githubData": {
-        "stars": "24740",
-        "forks": "2273",
+        "stars": "24796",
+        "forks": "2282",
         "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks. - TencentCloud/TencentDB-Agent-Memory",
         "topics": [
           "agent",
@@ -789,13 +1419,13 @@
       "repo": "bookorbit/bookorbit",
       "description": "BookOrbit: Your Reading Space",
       "language": "TypeScript",
-      "stars": 3301,
-      "forks": 205,
+      "stars": 3325,
+      "forks": 206,
       "starsAdded": 895,
       "createdAt": "2026-08-27T02:00:58.690Z",
       "githubData": {
-        "stars": "3301",
-        "forks": "205",
+        "stars": "3325",
+        "forks": "206",
         "description": "BookOrbit: Your Reading Space. Contribute to bookorbit/bookorbit development by creating an account on GitHub.",
         "topics": [
           "audiobook-player",
@@ -853,13 +1483,13 @@
       "repo": "tashfeenahmed/freellmapi",
       "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
       "language": "TypeScript",
-      "stars": 20766,
-      "forks": 2987,
+      "stars": 20865,
+      "forks": 2994,
       "starsAdded": 1700,
       "createdAt": "2026-08-27T02:00:58.684Z",
       "githubData": {
-        "stars": "20766",
-        "forks": "2987",
+        "stars": "20850",
+        "forks": "2992",
         "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi",
         "topics": [],
         "license": "MIT license",
@@ -906,13 +1536,13 @@
       "repo": "PostHog/posthog",
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
-      "stars": 39276,
-      "forks": 3291,
+      "stars": 39294,
+      "forks": 3290,
       "starsAdded": 1485,
       "createdAt": "2026-08-27T02:00:58.680Z",
       "githubData": {
-        "stars": "39276",
-        "forks": "3291",
+        "stars": "39291",
+        "forks": "3290",
         "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP. - PostHog/posthog",
         "topics": [
           "ab-testing",
@@ -968,73 +1598,6 @@
       }
     },
     {
-      "id": "2faacb6d-0a54-4403-8263-3893c853a48b",
-      "dateAdded": "202635",
-      "type": "github-weekly",
-      "url": "https://github.com/public-apis/public-apis",
-      "repo": "public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "language": "Python",
-      "stars": 471205,
-      "forks": 51966,
-      "starsAdded": 5585,
-      "createdAt": "2026-08-27T02:00:58.674Z",
-      "githubData": {
-        "stars": "471205",
-        "forks": "51966",
-        "description": "A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.",
-        "topics": [
-          "api",
-          "apis",
-          "dataset",
-          "development",
-          "free",
-          "list",
-          "lists",
-          "open-source",
-          "public",
-          "public-api",
-          "public-apis",
-          "resources",
-          "software"
-        ],
-        "license": "MIT license",
-        "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo"
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "API",
-          "开发者工具",
-          "免费资源",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "public-apis：从社区瑰宝到争议广告牌的深度评测",
-        "ability": [
-          "免费API资源聚合",
-          "分类索引与检索",
-          "API元数据标注",
-          "Markdown格式易读",
-          "社区驱动的更新机制（历史上）"
-        ],
-        "summary": "曾被誉为开发者“API圣经”的免费API目录，如今因商业化与维护停滞，仅能作为参考起点。",
-        "category": [
-          "开发资源",
-          "API 集合",
-          "工具箱"
-        ],
-        "suitable": [
-          "全栈开发者",
-          "初创团队",
-          "编程学生与初学者",
-          "数据科学家",
-          "产品原型设计人员"
-        ],
-        "description": "public-apis 是 GitHub 上极具知名度的免费API列表项目，收录了超过1600个涵盖各类领域的API接口。虽然项目因商业化争议和维护停滞导致实用性下降，但其庞大的历史资源库依然是寻找免费数据接口的有价值起点，建议结合官方文档严格验证后使用。"
-      }
-    },
-    {
       "id": "597cbd53-3f37-4355-9232-0c0e42e79d02",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1042,12 +1605,12 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 4874,
+      "stars": 4894,
       "forks": 346,
       "starsAdded": 1714,
       "createdAt": "2026-08-27T02:00:58.668Z",
       "githubData": {
-        "stars": "4874",
+        "stars": "4894",
         "forks": "346",
         "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory",
         "topics": [],
@@ -1086,6 +1649,30 @@
       }
     },
     {
+      "id": "6946fd0e-18be-436c-9de3-ac1025f7cfe6",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/cursor/plugins",
+      "repo": "cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 5560,
+      "forks": 453,
+      "starsAdded": 1859,
+      "createdAt": "2026-08-27T02:00:58.636Z",
+      "githubData": {
+        "stars": "5548",
+        "forks": "452",
+        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
+        "topics": [],
+        "license": "",
+        "homepage": ""
+      },
+      "summaryData": {
+        "summary": "# Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”\n> 2026年的编程已不再是单打独斗，Cursor 的插件系统正在将你的 IDE 变成一个能调用无数工具、遵循团队规范、自动执行复杂工作流的“超级开发者”。\n## 🧠 一句话总结\nCursor 的插件系统是其 AI 原生 IDE 的核心扩展能力，它通过**模块化打包规则、技能、代理、命令、MCP 服务器和钩子**，将通用 AI 转化为**能理解你团队内部工具、工作流和代码规范的专属智能助手**，从根本上解决了 AI 编程工具“懂技术但不懂团队”的痛点。\n## 🔍 背景与痛点：为什么需要插件系统？\n### AI 编程的“最后一公里”问题\n目前的 AI 编程工具（如 Cursor, GitHub Copilot）大多基于通用模型训练，它们就像一位才华横溢但刚入职的“通用型程序员”：\n-   **懂语言但不懂行话**：精通各种编程语言的语法和算法，但对你们团队特有的**内部工具链、缩写、代码规范、部署流程**一无所知。\n-   **能写代码但无法协同**：可以生成单个文件或函数，但难以理解**跨文件、跨服务的复杂业务逻辑**，更别提自动触发你们团队的 CI/CD 流程或通知系统。\n-   **是助手而非队员**：需要你手动描述每一个细节，无法像真正的团队成员那样**主动感知项目状态、执行预定义的工作流**。\n### Cursor 插件：团队专属的“入职培训脚本”\nCursor 的插件系统正是为了解决这些问题而生。它提供了一种结构化、可分发的方式，将你团队的**“入职培训手册”** 自动化并注入到 Cursor 的 AI 能力中。通过插件，你可以：\n-   **固化最佳实践**：将代码风格、架构模式、安全审查规则等硬编码为 AI 永久遵循的规则。\n-   **集成内部工具**：让 AI 能够直接与你们自建的 API、数据库、服务总线等“对话”，生成真正可用的代码。\n-   **自动化工作流**：将复杂的、多步骤的任务（如“从设计稿生成代码并部署到预发环境”）封装成 AI 可一键执行的命令。\n```mermaid\nflowchart TD\n    A[通用AI编程工具] --> B[痛点: 懂技术但不懂团队]\n    B --> C[Cursor插件系统]\n    \n    subgraph D [插件核心能力]\n        D1[规则<br>固化代码规范与审查标准]\n        D2[技能<br>封装领域专用能力]\n        D3[代理<br>定制化AI行为与流程]\n        D4[命令<br>一键执行复杂任务]\n        D5[MCP服务器<br>连接外部工具与数据源]\n        D6[钩子<br>响应事件自动化]\n    end\n    \n    C --> D\n    \n    D --> E[收益: 打造专属智能开发团队]\n    \n    subgraph F [实际应用场景]\n        F1[代码审查与安全审计]\n        F2[设计稿转代码]\n        F3[自动化测试与部署]\n        F4[数据查询与分析]\n    end\n    \n    E --> F\n```\n## ⚡ 核心亮点与功能剖析\nCursor 的插件系统并非简单的功能扩展，而是对 AI 能力的深度定制和编排。其核心亮点在于其**模块化设计**和**开放标准**。\n### 1. 模块化组件：构建插件的积木块\n一个 Cursor 插件是一个目录，其中包含一个**清单文件 (`plugin.json`)** 和任意数量的以下组件：\n| 组件 | 格式支持 | 描述 | 典型应用场景 |\n| :--- | :--- | :--- | :--- |\n| **规则 (Rules)** | Cursor Plugins | 持久化的 AI 指导和编码标准 (`.mdc` 文件) | 代码风格、命名规范、安全审查检查项 |\n| **技能 (Skills)** | 两者皆可 | 代理用于复杂任务的专业化能力 | 解析特定日志格式、调用内部API生成代码、自动化测试 |\n| **代理 (Agents)** | Cursor Plugins | 定制的代理配置和提示词 | 设置一个专门用于“性能优化”或“安全审计”的专属AI代理 |\n| **命令 (Commands)** | Cursor Plugins | 代理可执行的命令文件 | 一键“部署到预发环境”、“生成API文档并发布” |\n| **MCP 服务器** | 两者皆可 | 将 Cursor 连接到外部工具或数据源的服务 | 连接公司内部的知识库、数据库、CI/CD系统 |\n| **钩子 (Hooks)** | Cursor Plugins | 用于观察和代理行为的自动化脚本 | 代码提交前自动运行测试、合并PR后自动通知团队 |\n这种设计使得你可以**按需组合**这些组件，构建出从简单的代码规范增强到复杂的多步骤自动化工作流的插件。\n### 2. Agent Plugins 开放标准：生态繁荣的基石\nCursor 支持 **Agent Plugins 开放标准**。这意味着：\n-   **跨平台兼容**：符合该标准的技能和 MCP 服务器不仅能在 Cursor 中使用，理论上也能在其他支持该标准的 AI 工具中运行，促进了生态的繁荣和资源的共享。\n-   **社区生态**：你可以从 [cursor.directory](https://cursor.directory) 浏览和安装由社区贡献的插件和 MCP 服务器，极大地扩展了 Cursor 的能力边界。\n### 3. 开箱即用的官方与第三方插件库\nCursor 提供了丰富的官方插件和与第三方工具的集成，覆盖了开发的全生命周期：\n-   **规划与设计**：Linear (任务管理)、Figma (设计转代码)\n-   **基础设施与服务**：AWS, Cloudflare, Vercel (部署与管理)、Stripe (支付集成)\n-   **数据与分析**：Databricks, Snowflake, Amplitude (查询数据与洞察)\n-   **日常办公**：**Google Workspace** (Gmail, Drive, Calendar) 、GitHub、Zoom、Salesforce 等\n这些插件让你无需离开 IDE，就能调用各种工具，**将编程、沟通、部署、数据分析等流程无缝串联**。\n## 🎯 目标人群与收益：谁最适合用，能得到什么？\n### 核心目标人群\n1.  **中大型团队的技术负责人/架构师**\n    -   **痛点**：团队规模大，代码规范难统一；新员工上手慢，最佳实践难以传承；重复性工作多（如代码审查、部署流程）。\n    -   **收益**：通过插件固化团队标准，让 AI 自动审查代码、生成符合架构的新代码、自动化重复流程，**将个人经验转化为团队资产**，大幅提升整体开发效率和代码质量。\n2.  **有特定技术栈或领域知识的独立开发者/小团队**\n    -   **痛点**：通用 AI 对你使用的冷门框架或业务领域（如区块链、游戏开发、量化交易）不熟悉，生成代码需要大量修改。\n    -   **收益**：开发自己的技能插件，将领域知识“教”给 AI，让 Cursor 成为你专属的领域专家，**大幅减少调试和修改时间**。\n3.  **追求极致效率的全栈开发者/自动化爱好者**\n    -   **痛点**：在多个工具间频繁切换（如 IDE、终端、浏览器、设计工具），工作流被打断。\n    -   **收益**：通过插件将所有工具集成到 IDE 中，用自然语言命令触发一系列自动化操作，**打造个人专属的“开发流水线”**。\n### 具体收益\n| 收益维度 | 说明 | 量化示例（预估） |\n| :--- | :--- | :--- |\n| **开发效率提升** | 自动化重复任务、减少上下文切换、AI 生成更精准的代码。 | **代码生成效率提升 40-60%**，跨文件修改时间从小时级降至分钟级。 |\n| **代码质量与规范统一** | AI 持续遵循规则，自动进行审查和检测。 | **代码规范符合率提升至 95%+**，潜在安全漏洞在生成阶段就被拦截。 |\n| **知识沉淀与传承** | 将最佳实践、业务逻辑、内部工具使用方法固化到插件中。 | **新员工上手时间缩短 50-70%**，团队知识流失风险降低。 |\n| **工作流自动化** | 将复杂、多步骤的任务封装成命令，一键执行。 | 将“从设计稿到预发环境部署”的流程从**数小时缩短至数分钟**。 |\n## ⚖️ 竞品/同类对比：Cursor 插件系统的独特竞争力\n| 特性 | Cursor 插件系统 | GitHub Copilot Extensions | VS Code 插件 (传统) | Claude Code Projects |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **AI 原生深度集成**，旨在从根本上增强 AI 能力本身。 | **功能扩展**，在 AI 补全/聊天基础上增加外部工具调用能力。 | **IDE 功能扩展**，与 AI 能力是两套独立体系。 | **项目级上下文管理**，侧重于让 AI 理解整个项目。 |\n| **AI 能力定制化深度** | ⭐⭐⭐⭐⭐<br>**最深**。可定制系统提示词、注入规则、改变代理行为，**从“根”上定制 AI**。 | ⭐⭐⭐☆<br>较深。可通过 Extensions 调用工具，但核心 AI 模型行为定制能力有限。 | ⭐☆☆☆☆<br>无。传统插件无法改变 AI 模型的输出和行为。 | ⭐⭐⭐⭐☆<br>深。可通过 `.claude` 文件和配置进行项目级定制，但插件化分发机制不如 Cursor 成熟。 |\n| **与 IDE 的集成度** | ⭐⭐⭐⭐⭐<br>**最高**。基于 VS Code 但深度重构，插件与 AI 能力、编辑器UI无缝融合。 | ⭐⭐⭐⭐☆<br>高。作为 VS Code 插件，集成度很高。 | ⭐⭐⭐☆☆<br>中高。是 VS Code 的原生扩展方式，但与 AI 能力割裂。 | ⭐⭐☆☆☆<br>低。主要在终端中运行，与图形化 IDE 集成度较弱。 |\n| **工作流自动化能力** | ⭐⭐⭐⭐⭐<br>**最强**。支持命令、钩子、MCP，可构建复杂的多步骤自动化流程。 | ⭐⭐⭐☆☆<br>中等。可通过触发命令或聊天进行简单操作，但编排复杂工作流能力较弱。 | ⭐⭐☆☆☆<br>弱。传统插件主要提供功能点，难以编排跨工具的复杂流程。 | ⭐⭐⭐☆☆<br>中等。擅长处理代码任务，但与外部工具的自动化集成能力有限。 |\n| **学习曲线与开发门槛** | ⭐⭐⭐☆☆<br>中等。需理解插件结构和各组件概念，开发有一定门槛。 | ⭐⭐☆☆☆<br>较低。Extensions 开发相对简单，但定制 AI 能力深度有限。 | ⭐⭐☆☆☆<br>低。VS Code 插件生态成熟，开发文档完善，入门容易。 | ⭐⭐⭐☆☆<br>中等。需要理解其配置文件和命令行交互方式。 |\n| **独特优势** | **最彻底的 AI 能力定制化**和**最强的 IDE 内工作流自动化**。 | **生态庞大**，与 GitHub 深度集成，补全体验流畅。 | **生态最成熟**，插件数量最多，几乎能找到任何功能扩展。 | **强大的代码库理解能力**，对大型项目维护和重构非常友好。 |\n**🏆 总结：** Cursor 插件系统的**核心竞争力**在于它不是在 IDE 上“贴”一个 AI，而是将 AI **深度融合进 IDE 的每一寸肌理**，并提供了**无与伦比的定制化深度和自动化能力**。它更适合那些希望**深度定制 AI 以符合自身团队规范和工作流**的开发者和团队。\n## ⚠️ 局限与不足：客观存在的挑战\n1.  **学习与开发门槛**：\n    -   要开发一个功能完善的插件，需要理解 **Cursor 的插件架构、各种组件（Rules, Skills, Agents, etc.）的概念和用法**，这对非技术背景或刚入门的开发者来说有一定挑战。\n    -   虽然有官方文档和示例，但社区资源和教程（尤其是中文）相比 VS Code 生态还不够丰富。\n2.  **生态成熟度**：\n    -   Cursor 插件生态仍处于快速发展期，**高质量、经过广泛验证的第三方插件数量**远不如 VS Code 传统插件生态丰富。\n    -   部分插件可能存在**兼容性问题**（如与特定 Cursor 版本或操作系统的兼容性），或者文档不够详尽。\n3.  **对 Cursor IDE 的依赖**：\n    -   插件系统是 Cursor **独有的**，无法在其他 IDE（如 VS Code、JetBrains）上使用。这意味着如果你选择了 Cursor 的插件生态，就必须**完全迁移到 Cursor IDE**。虽然 Cursor 基于 VS Code，配置迁移相对容易，但这是一个重要的决策点。\n4.  **性能与稳定性考虑**：\n    -   过多或复杂的插件（尤其是涉及频繁外部 API 调用的 MCP 服务器）可能会对 IDE 的**性能和响应速度产生一定影响**。\n    -   插件的稳定性依赖于其开发者的维护质量，一个“有毒”的插件可能会导致 IDE 崩溃或行为异常。\n5.  **企业级安全与治理**：\n    -   目前 Cursor 插件主要针对个人和小团队。对于大型企业，**缺乏内置的、细粒度的插件管理和安全控制机制**（如插件市场访问控制、插件审计流程、私有插件分发）。Cursor 官方表示正在构建**私有团队插件市场**以解决此问题，但这目前仍是一个“即将推出”的功能。\n## 🛠️ 上手指南与代码示例：如何创建你的第一个插件\n### 最小化插件结构\n创建一个最基本的插件只需一个目录和一个清单文件。\n```bash\nmy-awesome-plugin/\n├── .cursor-plugin/\n│   └── plugin.json      # 插件清单（必填）\n└── rules/\n    └── my-rule.mdc      # 一个规则文件（示例）\n```\n### 1. 创建清单文件 `plugin.json`\n这是插件的“身份证”，告诉 Cursor 插件叫什么、是谁做的、有什么内容。\n```json\n{\n  \"name\": \"my-awesome-plugin\",\n  \"displayName\": \"我的超棒插件\",\n  \"description\": \"这是我的第一个 Cursor 插件，用于演示规则文件。\",\n  \"author\": \"Your Name\",\n  \"version\": \"0.0.1\",\n  \"license\": \"MIT\",\n  \"categories\": [\"Developer Tools\"],\n  \"contributes\": {\n    \"rules\": [\n      {\n        \"id\": \"my-rule\",\n        \"path\": \"rules/my-rule.mdc\"\n      }\n    ]\n  }\n}\n```\n### 2. 创建规则文件 `rules/my-rule.mdc`\n规则文件使用 Markdown 格式，用于告诉 AI 在编写代码时应该遵循什么规范。\n```markdown\n---\nid: my-rule\nname: 我的代码规范\ndescription: 确保生成的代码符合我的编码风格\n---\n# 代码风格指南\n请遵循以下规范编写所有代码：\n1.  **函数命名**: 使用 camelCase，例如 `getUserData`。\n2.  **变量命名**: 使用 camelCase，例如 `userName`。\n3.  **常量命名**: 使用 UPPER_SNAKE_CASE，例如 `MAX_RETRY_COUNT`。\n4.  **类命名**: 使用 PascalCase，例如 `UserService`。\n5.  **注释**: 所有公共函数必须添加 JSDoc 注释说明其用途、参数和返回值。\n6.  **错误处理**: 所有异步操作必须包含 try-catch 块进行错误处理。\n## 示例\n**不好的示例**:\n```javascript\nfunction get_data(u) {\n  return db.find(u);\n}\n```\n**好的示例**:\n```javascript\n/**\n * 根据用户ID获取用户数据\n * @param {string} userId - 用户ID\n * @returns {Promise<Object>} 用户数据对象\n */\nasync function getUserData(userId) {\n  try {\n    const userData = await db.find({ id: userId });\n    return userData;\n  } catch (error) {\n    console.error('获取用户数据失败:', error);\n    throw error; // 重新抛出错误，由调用方处理\n  }\n}\n```\n```\n### 3. 安装与测试\n1.  在 Cursor 中，打开 `Customize` 页面（快捷键 `Cmd/Ctrl + ,`）。\n2.  在 \"Plugins\" 部分，点击 \"...\" 菜单，选择 \"Install from Directory...\"。\n3.  选择你的 `my-awesome-plugin` 文件夹。\n4.  Cursor 会自动加载插件。你可以在插件列表中看到它。\n5.  **测试规则**：打开一个新文件，用自然语言告诉 Cursor：“帮我写一个获取用户列表的函数”。Cursor 生成的代码应该会遵循你 `my-rule.mdc` 中定义的规范。\n## 🚀 结语与行动建议：终极评判\nCursor 的插件系统是一项**极具前瞻性和颠覆性**的创新。它远不止于“添加功能”，而是开创了一种 **“通过定制化 AI 来重塑和增强整个开发工作流”** 的新范式。\n### ✅ 最终评价\n-   **创新性**：⭐⭐⭐⭐⭐ (前所未有地将 AI 深度定制化与 IDE 工作流自动化融合)\n-   **实用性**：⭐⭐⭐⭐☆ (对中大型团队和追求效率的开发者价值巨大，但对个人小项目可能有些“杀鸡用牛刀”)\n-   **易用性**：⭐⭐⭐☆☆ (开发插件有门槛，但使用和安装官方/社区插件相对简单)\n-   **生态成熟度**：⭐⭐⭐☆☆ (处于快速发展期，潜力巨大，但目前数量和质量有待提升)\n-   **推荐度**：⭐⭐⭐⭐☆ (强烈推荐给技术负责人、团队骨干和追求极致效率的开发者)\n### 🎯 行动建议\n1.  **如果你是个人开发者或小团队**：\n    -   **从使用开始**：先探索 Cursor 插件市场，安装一些官方插件（如 Google Workspace、GitHub）和社区插件，体验一下无缝集成带来的效率提升。\n    -   **创建简单规则**：从写一个 `.cursorrules` 文件或简单的规则插件开始，固化你个人的代码风格，让 AI 更懂你。\n2.  **如果你是技术负责人或架构师**：\n    -   **评估团队价值**：思考团队中最重复、最易出错、最需要传承知识的环节。这些是插件能发挥最大价值的领域。\n    -   **启动试点项目**：选择一个非核心项目或新功能，尝试开发一个团队插件（例如，自动化代码审查流程、集成内部 API）。让一两位经验丰富的开发者主导。\n    -   **规划长期策略**：随着 Cursor 插件生态的成熟，考虑将**插件开发纳入团队的技术基础设施规划**，将其作为提升团队整体研发效能的关键投资。\n3.  **如果你是插件开发者**：\n    -   **贡献社区**：尝试将你开发的高质量插件提交到 [cursor.directory](https://cursor.directory)，丰富社区生态。\n    -   **探索标准**：深入研究 Agent Plugins 开放标准，开发可跨平台使用的技能和 MCP 服务器，提升插件的通用价值。\n> **💡 未来展望**：随着 Cursor 官方对**私有团队插件市场**和更强大的**Agent 编排能力**的投入，我们可以预见，未来的 IDE 将不再只是一个代码编辑器，而是一个**集成了无数AI微智能体、能自动执行复杂工作流的“开发操作中心”**。Cursor 的插件系统正在引领这场变革。\n---\n**💎 总结一下**：Cursor 插件系统是为那些**不满足于通用AI，希望将AI深度定制并融入自己团队DNA的开发者和团队**准备的。它需要一定的学习成本，但一旦驾驭，它将成为你手中最强大的“效率武器”，彻底改变你的编程方式。"
+      }
+    },
+    {
       "id": "7196265a-dcc5-4c3e-ae07-1ed2836c486e",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1093,13 +1680,13 @@
       "repo": "chaitanyagiri/munder-difflin",
       "description": "local multi-agent harness",
       "language": "JavaScript",
-      "stars": 4884,
-      "forks": 587,
+      "stars": 4943,
+      "forks": 595,
       "starsAdded": 2192,
       "createdAt": "2026-08-27T02:00:58.632Z",
       "githubData": {
-        "stars": "4884",
-        "forks": "587",
+        "stars": "4931",
+        "forks": "593",
         "description": "local multi-agent harness. Contribute to chaitanyagiri/munder-difflin development by creating an account on GitHub.",
         "topics": [
           "agents",
@@ -1153,13 +1740,13 @@
       "repo": "harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 116997,
-      "forks": 17801,
+      "stars": 117098,
+      "forks": 17810,
       "starsAdded": 7232,
       "createdAt": "2026-08-27T02:00:58.626Z",
       "githubData": {
-        "stars": "116997",
-        "forks": "17801",
+        "stars": "117080",
+        "forks": "17808",
         "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. - harry0703/MoneyPrinterTurbo",
         "topics": [
           "ai-video-generator",
@@ -1221,13 +1808,13 @@
       "repo": "openai/codex",
       "description": "Lightweight coding agent that runs in your terminal",
       "language": "Rust",
-      "stars": 118913,
-      "forks": 18145,
+      "stars": 119068,
+      "forks": 18167,
       "starsAdded": 12120,
       "createdAt": "2026-08-27T02:00:58.616Z",
       "githubData": {
-        "stars": "118913",
-        "forks": "18145",
+        "stars": "119054",
+        "forks": "18164",
         "description": "Lightweight coding agent that runs in your terminal - openai/codex",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -1273,13 +1860,13 @@
       "repo": "apache/maka",
       "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
       "language": "TypeScript",
-      "stars": 3643,
-      "forks": 352,
+      "stars": 3700,
+      "forks": 353,
       "starsAdded": 2217,
       "createdAt": "2026-08-27T02:00:58.606Z",
       "githubData": {
-        "stars": "3643",
-        "forks": "352",
+        "stars": "3690",
+        "forks": "353",
         "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log. - apache/maka",
         "topics": [
           "agent-runtime",
@@ -1333,6 +1920,121 @@
       }
     },
     {
+      "id": "3cbb3819-b5e8-49d7-8667-85bbba8aaa2c",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "language": "JavaScript",
+      "stars": 22417,
+      "forks": 2236,
+      "starsAdded": 9477,
+      "createdAt": "2026-08-27T02:00:58.527Z",
+      "githubData": {
+        "stars": "22366",
+        "forks": "2227",
+        "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 - freestylefly/awesome-gpt-image-2",
+        "topics": [
+          "agents",
+          "ai-image-generation",
+          "chatgpt",
+          "dsh-plugin",
+          "gpt-image-2",
+          "image-prompts",
+          "prompt-as-code",
+          "prompt-engineering",
+          "skills",
+          "workflow-automation"
+        ],
+        "license": "MIT license",
+        "homepage": "https://gpt-image2.canghe.ai"
+      },
+      "summaryData": {
+        "tags": [
+          "GPT-Image2",
+          "提示词工程",
+          "自动化",
+          "开源项目",
+          "生产力工具"
+        ],
+        "cover": "",
+        "title": "awesome-gpt-image-2 深度评测：工业级 GPT 图像提示词工程库",
+        "ability": [
+          "Prompt-as-Code 结构化协议",
+          "500+ 实战逆向案例库",
+          "20+ 工业级原子模板",
+          "Agent 自动化集成",
+          "批量生成与工作流支持"
+        ],
+        "summary": "将 GPT-Image2 提示词工程升级为工业级生产力的开源瑞士军刀",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计资源"
+        ],
+        "suitable": [
+          "开发者与产品经理",
+          "UI/UX 设计师",
+          "数字营销与电商运营",
+          "AI Agent 构建者"
+        ],
+        "description": "这是一个将 AI 图像提示词从艺术创作转化为工程化开发的开源项目。通过结构化模板和海量案例，解决了生成不稳定的痛点，支持批量生产和自动化集成，适合需要高效、可控出图的专业人士。"
+      }
+    },
+    {
+      "id": "21fec671-8ab8-4290-a085-96be07408fca",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/basecamp/omarchy",
+      "repo": "basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "stars": 32337,
+      "forks": 3301,
+      "starsAdded": 5186,
+      "createdAt": "2026-08-27T02:00:58.504Z",
+      "githubData": {
+        "stars": "32306",
+        "forks": "3301",
+        "description": "Beautiful, Modern & Opinionated Linux. Contribute to basecamp/omarchy development by creating an account on GitHub.",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://omarchy.org"
+      },
+      "summaryData": {
+        "tags": [
+          "Linux",
+          "Arch Linux",
+          "Hyprland",
+          "开发环境",
+          "DHH"
+        ],
+        "cover": "",
+        "title": "Basecamp/Omarchy：极致美观与效率的 Linux 发行版评测",
+        "ability": [
+          "开箱即用的开发环境",
+          "统一的美学主题设计",
+          "Hyprland 高效平铺窗口管理",
+          "强大的系统级增强功能",
+          "基于 Arch 的滚动更新"
+        ],
+        "summary": "由 DHH 主导的基于 Arch Linux 的高度定制化发行版，预装精选开发工具与 Hyprland 窗口管理器，提供开箱即用的极致效率与美学体验。",
+        "category": [
+          "操作系统",
+          "开发工具"
+        ],
+        "suitable": [
+          "资深开发者与极客",
+          "追求键盘操作效率的用户",
+          "Linux 美学追求者",
+          "Arch Linux 爱好者",
+          "DHH 的理念追随者"
+        ],
+        "description": "Omarchy 是一款由 Ruby on Rails 创造者 DHH 打造的 Linux 发行版，基于 Arch Linux 和 Hyprland 窗口管理器。它通过预装精选的开发工具（如 Neovim、Alacritty）和统一的视觉主题，解决了搭建高效开发环境耗时耗力的痛点，旨在为开发者提供“美丽、现代且固执”的极致工作流体验。"
+      }
+    },
+    {
       "id": "aac1ee60-3f80-4fee-8ced-aef243b1fff9",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1340,13 +2042,13 @@
       "repo": "modular/modular",
       "description": "The Modular Platform (includes MAX & Mojo)",
       "language": "Mojo",
-      "stars": 29231,
-      "forks": 3109,
+      "stars": 29236,
+      "forks": 3110,
       "starsAdded": 1984,
       "createdAt": "2026-08-27T02:00:58.499Z",
       "githubData": {
-        "stars": "29231",
-        "forks": "3109",
+        "stars": "29236",
+        "forks": "3110",
         "description": "The Modular Platform (includes MAX & Mojo). Contribute to modular/modular development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -1401,13 +2103,13 @@
       "repo": "AprilNEA/OpenLogi",
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "stars": 16931,
-      "forks": 480,
+      "stars": 17006,
+      "forks": 483,
       "starsAdded": 7078,
       "createdAt": "2026-08-27T02:00:58.490Z",
       "githubData": {
-        "stars": "16931",
-        "forks": "480",
+        "stars": "16996",
+        "forks": "481",
         "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry. - AprilNEA/OpenLogi",
         "topics": [
           "dpi",
@@ -1460,6 +2162,59 @@
       }
     },
     {
+      "id": "1e6bdbc3-7192-4b79-9f5b-0af0fd7fc6ca",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "repo": "anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "language": "Python",
+      "stars": 2344,
+      "forks": 201,
+      "starsAdded": 1759,
+      "createdAt": "2026-08-27T02:00:58.485Z",
+      "githubData": {
+        "stars": "2331",
+        "forks": "199",
+        "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": ""
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件生态",
+          "Anthropic",
+          "AI 工具",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Claude 插件社区市场（Claude Plugins Community）深度评测",
+        "ability": [
+          "官方安全审核",
+          "统一安装分发",
+          "组件化插件设计",
+          "插件生态扩展",
+          "标准化工作流"
+        ],
+        "summary": "Anthropic 官方背书的安全 Claude 插件市场，提供审核、分发与标准化工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源社区"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队负责人",
+          "AI 工具极客",
+          "插件创作者",
+          "DevOps 工程师"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的 GitHub 仓库，专门收录经过严格安全审核的 Claude 插件。它通过统一的标准和便捷的命令行工具，解决了插件安装难、安全风险高的问题，为 Claude Code 和 Cowork 用户提供高效的扩展能力。"
+      }
+    },
+    {
       "id": "3af6cf06-dd22-40ef-baf8-3b2dd98fe411",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -1467,13 +2222,13 @@
       "repo": "VoltAgent/awesome-agent-skills",
       "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
       "language": "",
-      "stars": 32778,
-      "forks": 3468,
+      "stars": 32858,
+      "forks": 3473,
       "starsAdded": 242,
       "createdAt": "2026-08-27T02:00:56.403Z",
       "githubData": {
-        "stars": "32778",
-        "forks": "3468",
+        "stars": "32858",
+        "forks": "3473",
         "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. - VoltAgent/awesome-agent-skills",
         "topics": [
           "agent-skills",
@@ -1533,13 +2288,13 @@
       "repo": "marin-community/marin",
       "description": "Open-source framework for the research and development of foundation models.",
       "language": "Python",
-      "stars": 2532,
-      "forks": 218,
+      "stars": 2577,
+      "forks": 221,
       "starsAdded": 441,
       "createdAt": "2026-08-27T02:00:56.398Z",
       "githubData": {
-        "stars": "2532",
-        "forks": "218",
+        "stars": "2581",
+        "forks": "221",
         "description": "Open-source framework for the research and development of foundation models. - marin-community/marin",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -1586,13 +2341,13 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 34876,
-      "forks": 3369,
+      "stars": 34984,
+      "forks": 3376,
       "starsAdded": 138,
       "createdAt": "2026-08-27T02:00:56.393Z",
       "githubData": {
-        "stars": "34877",
-        "forks": "3369",
+        "stars": "34959",
+        "forks": "3374",
         "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills",
         "topics": [
           "agent-skills",
@@ -1657,13 +2412,13 @@
       "repo": "browser-use/browser-use",
       "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "language": "Python",
-      "stars": 111208,
-      "forks": 12196,
+      "stars": 111329,
+      "forks": 12201,
       "starsAdded": 149,
       "createdAt": "2026-08-27T02:00:56.389Z",
       "githubData": {
-        "stars": "111208",
-        "forks": "12196",
+        "stars": "111329",
+        "forks": "12201",
         "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease. - browser-use/browser-use",
         "topics": [
           "ai-agents",
@@ -1718,13 +2473,13 @@
       "repo": "ConardLi/garden-skills",
       "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
       "language": "CSS",
-      "stars": 11055,
-      "forks": 1396,
+      "stars": 11146,
+      "forks": 1401,
       "starsAdded": 113,
       "createdAt": "2026-08-27T02:00:56.383Z",
       "githubData": {
-        "stars": "11055",
-        "forks": "1396",
+        "stars": "11131",
+        "forks": "1400",
         "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more. - ConardLi/garden-skills",
         "topics": [
           "agent",
@@ -1771,59 +2526,6 @@
       }
     },
     {
-      "id": "b87f23f6-9372-432a-95dd-c1e43660c448",
-      "dateAdded": "20260827",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "repo": "anthropics/claude-plugins-community",
-      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "language": "Python",
-      "stars": 2278,
-      "forks": 194,
-      "starsAdded": 538,
-      "createdAt": "2026-08-27T02:00:56.376Z",
-      "githubData": {
-        "stars": "2278",
-        "forks": "194",
-        "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": ""
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件生态",
-          "Anthropic",
-          "AI 工具",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "Claude 插件社区市场（Claude Plugins Community）深度评测",
-        "ability": [
-          "官方安全审核",
-          "统一安装分发",
-          "组件化插件设计",
-          "插件生态扩展",
-          "标准化工作流"
-        ],
-        "summary": "Anthropic 官方背书的安全 Claude 插件市场，提供审核、分发与标准化工具。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源社区"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队负责人",
-          "AI 工具极客",
-          "插件创作者",
-          "DevOps 工程师"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的 GitHub 仓库，专门收录经过严格安全审核的 Claude 插件。它通过统一的标准和便捷的命令行工具，解决了插件安装难、安全风险高的问题，为 Claude Code 和 Cowork 用户提供高效的扩展能力。"
-      }
-    },
-    {
       "id": "718670cd-7a69-4fa6-b78c-7d6f771b1cf1",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -1831,13 +2533,13 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 113037,
-      "forks": 6184,
+      "stars": 113348,
+      "forks": 6198,
       "starsAdded": 1598,
       "createdAt": "2026-08-27T02:00:56.369Z",
       "githubData": {
-        "stars": "113039",
-        "forks": "6184",
+        "stars": "113278",
+        "forks": "6195",
         "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail",
         "topics": [
           "agent-skills",
@@ -1887,59 +2589,6 @@
       }
     },
     {
-      "id": "3b24b623-157d-4068-a098-5e1bce11b301",
-      "dateAdded": "20260827",
-      "type": "github-daily",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "repo": "tinyhumansai/openhuman",
-      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
-      "language": "Rust",
-      "stars": 38343,
-      "forks": 3769,
-      "starsAdded": 525,
-      "createdAt": "2026-08-27T02:00:56.362Z",
-      "githubData": {
-        "stars": "38343",
-        "forks": "3769",
-        "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher. - tinyhumansai/openhuman",
-        "topics": [],
-        "license": "GPL-3.0 license",
-        "homepage": "https://tinyhumans.ai/openhuman"
-      },
-      "summaryData": {
-        "tags": [
-          "AI助手",
-          "本地部署",
-          "知识管理",
-          "自动化",
-          "隐私保护"
-        ],
-        "cover": "",
-        "title": "OpenHuman 评测：你的本地优先、记忆超强的个人AI超级大脑",
-        "ability": [
-          "本地持久记忆",
-          "自动数据同步",
-          "智能任务编排",
-          "深度研究整合",
-          "隐私本地优先"
-        ],
-        "summary": "构建持久化、本地记忆的AI个人超级大脑，像贴身智能助理一样持续学习你的数据和工作流。",
-        "category": [
-          "开发工具",
-          "生活效率",
-          "AI 编程"
-        ],
-        "suitable": [
-          "开发者与工程师",
-          "知识工作者",
-          "隐私敏感用户",
-          "技术爱好者",
-          "内容创作者"
-        ],
-        "description": "OpenHuman 是一个本地优先的 AI 助手，通过自动同步 Gmail、Notion 等数据构建持久化知识库，具备强大的任务编排和研究能力，确保隐私安全，解决传统 AI 助手“冷启动”和缺乏上下文的痛点。"
-      }
-    },
-    {
       "id": "9f5785fa-51d2-4df4-bfc8-15e4beb77c4f",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -1947,13 +2596,13 @@
       "repo": "rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 49744,
-      "forks": 8652,
+      "stars": 49869,
+      "forks": 8668,
       "starsAdded": 838,
       "createdAt": "2026-08-27T02:00:56.351Z",
       "githubData": {
-        "stars": "49745",
-        "forks": "8652",
+        "stars": "49849",
+        "forks": "8664",
         "description": "Learn it. Build it. Ship it for others. Contribute to rohitg00/ai-engineering-from-scratch development by creating an account on GitHub.",
         "topics": [
           "agents",
@@ -2013,58 +2662,6 @@
       }
     },
     {
-      "id": "15ebb545-a059-4689-af53-85844af9aa77",
-      "dateAdded": "20260827",
-      "type": "github-daily",
-      "url": "https://github.com/basecamp/omarchy",
-      "repo": "basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "stars": 32199,
-      "forks": 3288,
-      "starsAdded": 1024,
-      "createdAt": "2026-08-27T02:00:56.343Z",
-      "githubData": {
-        "stars": "32199",
-        "forks": "3288",
-        "description": "Beautiful, Modern & Opinionated Linux. Contribute to basecamp/omarchy development by creating an account on GitHub.",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://omarchy.org"
-      },
-      "summaryData": {
-        "tags": [
-          "Linux",
-          "Arch Linux",
-          "Hyprland",
-          "开发环境",
-          "DHH"
-        ],
-        "cover": "",
-        "title": "Basecamp/Omarchy：极致美观与效率的 Linux 发行版评测",
-        "ability": [
-          "开箱即用的开发环境",
-          "统一的美学主题设计",
-          "Hyprland 高效平铺窗口管理",
-          "强大的系统级增强功能",
-          "基于 Arch 的滚动更新"
-        ],
-        "summary": "由 DHH 主导的基于 Arch Linux 的高度定制化发行版，预装精选开发工具与 Hyprland 窗口管理器，提供开箱即用的极致效率与美学体验。",
-        "category": [
-          "操作系统",
-          "开发工具"
-        ],
-        "suitable": [
-          "资深开发者与极客",
-          "追求键盘操作效率的用户",
-          "Linux 美学追求者",
-          "Arch Linux 爱好者",
-          "DHH 的理念追随者"
-        ],
-        "description": "Omarchy 是一款由 Ruby on Rails 创造者 DHH 打造的 Linux 发行版，基于 Arch Linux 和 Hyprland 窗口管理器。它通过预装精选的开发工具（如 Neovim、Alacritty）和统一的视觉主题，解决了搭建高效开发环境耗时耗力的痛点，旨在为开发者提供“美丽、现代且固执”的极致工作流体验。"
-      }
-    },
-    {
       "id": "b941a72a-16c0-4911-9d36-2c8a6332ea40",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -2072,13 +2669,13 @@
       "repo": "AgriciDaniel/claude-obsidian",
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "language": "Python",
-      "stars": 13601,
-      "forks": 1413,
+      "stars": 13698,
+      "forks": 1414,
       "starsAdded": 810,
       "createdAt": "2026-08-27T02:00:56.338Z",
       "githubData": {
-        "stars": "13601",
-        "forks": "1413",
+        "stars": "13704",
+        "forks": "1414",
         "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern. - AgriciDaniel/claude-obsidian",
         "topics": [
           "agent-skills",
@@ -2146,13 +2743,13 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 36760,
-      "forks": 12479,
+      "stars": 36931,
+      "forks": 12506,
       "starsAdded": 1300,
       "createdAt": "2026-08-27T02:00:56.332Z",
       "githubData": {
-        "stars": "36760",
-        "forks": "12479",
+        "stars": "36931",
+        "forks": "12506",
         "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search",
         "topics": [
           "ai",
@@ -2205,56 +2802,6 @@
       }
     },
     {
-      "id": "f30911fa-2d05-4a4d-a4fa-367ecc46913d",
-      "dateAdded": "20260827",
-      "type": "github-daily",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "repo": "Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
-      "language": "Python",
-      "stars": 50562,
-      "forks": 8180,
-      "starsAdded": 536,
-      "createdAt": "2026-08-27T02:00:56.323Z",
-      "githubData": {
-        "stars": "50562",
-        "forks": "8180",
-        "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": ""
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "降本增效",
-          "API 代理",
-          "Claude",
-          "GitHub 项目"
-        ],
-        "cover": "",
-        "title": "Free Claude Code：零成本复现顶级 AI 编程助手",
-        "ability": [
-          "多模型智能路由与容错",
-          "代码输出智能降噪",
-          "多终端与语音交互支持",
-          "Token 消耗大幅优化"
-        ],
-        "summary": "通过本地代理路由技术，将昂贵请求转发至免费模型，实现低成本、高可用的 AI 编程体验。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "预算有限的个人开发者",
-          "追求极致性价比的学生",
-          "需要灵活切换模型的极客"
-        ],
-        "description": "Free Claude Code 是一个开源本地代理工具，能拦截 Claude Code 的请求并重定向到 NVIDIA 等免费模型。它具备智能路由、流量过滤和多端支持功能，在大幅降低 API 成本的同时，保障了开发工作流的连续性和稳定性。"
-      }
-    },
-    {
       "id": "909d9c52-a873-437e-9769-7cc07149b01d",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -2262,13 +2809,13 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 34444,
-      "forks": 3893,
+      "stars": 34490,
+      "forks": 3897,
       "starsAdded": 308,
       "createdAt": "2026-08-27T02:00:56.318Z",
       "githubData": {
-        "stars": "34444",
-        "forks": "3893",
+        "stars": "34484",
+        "forks": "3894",
         "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official",
         "topics": [
           "claude-code",
@@ -2312,69 +2859,6 @@
       }
     },
     {
-      "id": "5cd10fc6-73f2-4866-a296-ff04b0a17c80",
-      "dateAdded": "20260827",
-      "type": "github-daily",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "repo": "freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "language": "JavaScript",
-      "stars": 22035,
-      "forks": 2194,
-      "starsAdded": 4050,
-      "createdAt": "2026-08-27T02:00:56.313Z",
-      "githubData": {
-        "stars": "22035",
-        "forks": "2194",
-        "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 - freestylefly/awesome-gpt-image-2",
-        "topics": [
-          "agents",
-          "ai-image-generation",
-          "chatgpt",
-          "dsh-plugin",
-          "gpt-image-2",
-          "image-prompts",
-          "prompt-as-code",
-          "prompt-engineering",
-          "skills",
-          "workflow-automation"
-        ],
-        "license": "MIT license",
-        "homepage": "https://gpt-image2.canghe.ai"
-      },
-      "summaryData": {
-        "tags": [
-          "GPT-Image2",
-          "提示词工程",
-          "自动化",
-          "开源项目",
-          "生产力工具"
-        ],
-        "cover": "",
-        "title": "awesome-gpt-image-2 深度评测：工业级 GPT 图像提示词工程库",
-        "ability": [
-          "Prompt-as-Code 结构化协议",
-          "500+ 实战逆向案例库",
-          "20+ 工业级原子模板",
-          "Agent 自动化集成",
-          "批量生成与工作流支持"
-        ],
-        "summary": "将 GPT-Image2 提示词工程升级为工业级生产力的开源瑞士军刀",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "设计资源"
-        ],
-        "suitable": [
-          "开发者与产品经理",
-          "UI/UX 设计师",
-          "数字营销与电商运营",
-          "AI Agent 构建者"
-        ],
-        "description": "这是一个将 AI 图像提示词从艺术创作转化为工程化开发的开源项目。通过结构化模板和海量案例，解决了生成不稳定的痛点，支持批量生产和自动化集成，适合需要高效、可控出图的专业人士。"
-      }
-    },
-    {
       "id": "3948f2e9-491d-4ed2-a21b-5a0c6663c4e7",
       "dateAdded": "20260827",
       "type": "github-daily",
@@ -2382,13 +2866,13 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 19510,
-      "forks": 1325,
+      "stars": 20715,
+      "forks": 1359,
       "starsAdded": 1035,
       "createdAt": "2026-08-27T02:00:56.278Z",
       "githubData": {
-        "stars": "19094",
-        "forks": "1311",
+        "stars": "20418",
+        "forks": "1352",
         "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export. - tt-a1i/archify",
         "topics": [
           "agent-skills",
@@ -2622,65 +3106,6 @@
           "研究前沿AI应用的技术研究者"
         ],
         "description": "Awesome LLM Apps 是一个精心策划的GitHub仓库，包含智能体、多智能体团队、Agent技能及RAG教程。它致力于通过开源实战代码，降低AI应用开发门槛，让用户能克隆、部署甚至商业化这些项目，极大提升开发效率与探索速度。"
-      }
-    },
-    {
-      "id": "44bdcba2-0c09-4e98-b8f3-561b743662fe",
-      "dateAdded": "20260826",
-      "type": "github-daily",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 100420,
-      "forks": 19374,
-      "starsAdded": 218,
-      "createdAt": "2026-08-26T02:08:48.713Z",
-      "githubData": {
-        "forks": "19370",
-        "stars": "100412",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
       }
     },
     {
@@ -3534,9 +3959,9 @@
       "repo": "lyogavin/airllm",
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 32281,
-      "forks": 3414,
-      "starsAdded": 8428,
+      "stars": 32605,
+      "forks": 3453,
+      "starsAdded": 8651,
       "createdAt": "2026-08-23T13:14:26.656Z",
       "githubData": {
         "forks": "3419",

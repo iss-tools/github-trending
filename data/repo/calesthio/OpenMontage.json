@@ -1,0 +1,73 @@
+{
+  "id": "6e9be765-6ccc-419b-b6c8-34b7df57f501",
+  "dateAdded": "20260827",
+  "type": "github-daily",
+  "url": "https://github.com/calesthio/OpenMontage",
+  "repo": "calesthio/OpenMontage",
+  "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+  "language": "Python",
+  "stars": 51772,
+  "forks": 6500,
+  "starsAdded": 1284,
+  "createdAt": "2026-08-27T11:00:02.097Z",
+  "githubData": {
+    "forks": "6502",
+    "stars": "51778",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "claude",
+      "copilot",
+      "cursor",
+      "elevenlabs",
+      "ffmpeg",
+      "flux",
+      "image-generation",
+      "open-source",
+      "openai",
+      "python",
+      "remotion",
+      "stable-diffusion",
+      "text-to-speech",
+      "text-to-video",
+      "video-generation",
+      "video-production"
+    ],
+    "license": "AGPL-3.0 license",
+    "homepage": "https://www.openmontage.video/",
+    "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+  },
+  "summaryData": {
+    "tags": [
+      "自动化",
+      "视频剪辑",
+      "AI Agent",
+      "工作流",
+      "开源"
+    ],
+    "cover": "",
+    "title": "OpenMontage：全流程 AI 视频自动生成框架",
+    "ability": [
+      "全流程自动制片",
+      "真实素材与动画双轨",
+      "多模型/本地化混合编排",
+      "成本控制与质量门",
+      "可视化项目管理回放"
+    ],
+    "summary": "一套让 AI 助手全自动完成从脚本调研到成片剪辑全流程的开源视频制作框架。",
+    "category": [
+      "AI 视频",
+      "开源项目",
+      "开发工具"
+    ],
+    "suitable": [
+      "独立视频创作者",
+      "技术型内容运营",
+      "教育培训机构",
+      "AI 极客与开发者"
+    ],
+    "description": "OpenMontage 将 Claude、Cursor 等编程助手转化为影视制作公司，支持从选题调研、脚本生成、素材检索到剪辑合成的全自动化。兼容本地与云端模型，提供成本预估与质量审核，是高效、低成本、可控的 AI 视频生产流水线。"
+  },
+  "contentDetail": "# OpenMontage 深度评测：把你的 AI 编程助手变成“影视制作公司”\n---\n## 一句话总结\nOpenMontage 是一套把 Claude Code、Cursor、Copilot 等变成“全流程影视制作公司”的开源框架——从选题调研、脚本、分镜，到素材生成、剪辑、配音与最终合成，全都可以用一句自然语言提示让 Agent 自动完成；且同时支持“真·实拍素材”的纪录片式剪辑，而不仅是“动图蒙太奇”。\n---\n## 背景与痛点\n- 痛点一：工具碎片化。大多数“AI 视频工作流”是多个孤立服务的拼接：一个写脚本、一个配音、一个生图、一个拼接成片。每次切换都丢失上下文、手动重复上传素材、再人工拼合。\n- 痛点二：内容浮于表面。端到端的“一键视频”产品通常只会调用一次文本到视频接口，期望拿到一条完整可用片子。现实是：你需要多次迭代、精细控制，且希望视频基于真实资料而非幻觉。\n- 痛点三：成本与能力不可控。选错模型，单条片子费用爆表；想本地离线做，却难以统一调度 TTS、图像与视频模型、素材库与渲染器。\n- 痛点四：创作者视角被剥夺。很多平台会限制你用他们预设的模板或风格，而真正的专业制作需要“提案→分镜→质量门”的流程，并在关键节点由人确认。\nOpenMontage 的出发点很简单：把真实制作团队的“标准作业程序（SOP）”代码化，让 AI 编程助手作为“总导演”，按阶段推进并可被人类干预与审核。\n---\n## 核心亮点与功能剖析\n### 1) 12 条完整的生产“管道”（Pipelines）\n每条管道都是从创意到成片的结构化工作流。核心阶段：research → proposal → script → scene_plan → assets → edit → compose。\n常用管道一览：\n- Animated Explainer：用于教育/教程/科普，配调研、旁白、画面、音乐。\n- Animation：动效/排版/信息动画，适合社媒、产品演示、抽象概念可视化。\n- Cinematic：预告片、宣传片、氛围剪辑。\n- Documentary Montage：基于 Pexels、Archive.org、NASA、Wikimedia 等免费/开放片源，通过 CLIP 索引进行语义检索与剪辑，做“真正实拍素材”的蒙太奇（不是静态照片 Ken Burns）。\n- Clip Factory：把长片批量切片为高光片段并排序，适合长内容再制作为短内容。\n- Localization & Dub：字幕、翻译与配音。\n- Screen Demo：录制并美化软件演示/教程。\n- Talking Head：演讲/访谈类以人像为主的视频。\n### 2) 真实素材 vs. 图像动画的两条路径\nOpenMontage 明确区分了两条路径，并都能“零付费 API”起步：\n- 图像动画路径：使用 Piper（离线 TTS）+ 免费图源（Unsplash/Pexels/Pixabay 等）+ Remotion 做数据驱动的动效/字幕卡片；适合低成本、信息密度高的 explainer。\n- 本地角色动画：SVG 骨架 + 姿态库 + GSAP 时间轴 + HyperFrames 渲染，可做卡通角色“演”戏（不依赖云端视频模型）。\n- 真实实拍路径：Documentary Montage 会为多个开放/免费源建立可检索语料，剪辑成“实拍镜头”的成片，并可用 CLIP 做语义匹配与排序。\n### 3) 多层“知识架构”：让 Agent 像老导演一样思考\n项目用三层知识把“能力清单”与“如何用好”分离开：\n- Layer 1（tools/ + pipeline_defs/）：可执行的工具与管道清单，解决“有什么能做”。\n- Layer 2（skills/）：OpenMontage 自己的规范与质量门，教 Agent 按什么顺序、什么标准、什么格式使用工具。\n- Layer 3（.agents/skills/）：对具体外部技术的“知识包”，例如某模型擅长的参数、风格与局限，供 Agent 在需要时深入参考。\n每阶段有“导演技能（stage director skill）”，用 Markdown 明确告诉 Agent 如何执行与自查；同时支持创意关卡（creative gate）与审核关卡（review gate），在人类确认前暂停，避免“生成后才发现走偏”。\n### 4) 多提供商 / 本地统一编排\n通过一个统一的“提供商选择层”，根据成本、质量、耗时、可用性等 7 个维度自动评分选择提供商，支持免费与付费、云端与本地混合使用。典型提供商与用途（节选）：\n- 免费/本地方案：Piper TTS（离线）、Archive.org/NASA/Wikimedia Commons（开放素材）、Remotion（React 合成）、HyperFrames（HTML/GSAP 合成）、FFmpeg（后处理）、本地 Whisper（字幕）、本地 Diffusion 与本地视频模型（WAN 2.1、Hunyuan、CogVideo、LTX）等。\n- 云端付费/额度方案：fal.ai（多模型网关，含 FLUX/Recraft/Kling/Veo/MiniMax）、Google（TTS 700+ 声音 + Imagen + Veo + Lyria 音乐）、OpenAI（TTS + GPT Image 2）、ElevenLabs、Runway Gen-4、Suno、HeyGen、阿里 DashScope（中文强项）、字节火山 Jimeng 3.0 Pro、xAI Grok 图/视频、Kling 官方直连等。\n### 5) 成本治理与质量门\n- 提案阶段给出成本预估；工具集成内部计价逻辑，避免盲目调用高价模型。\n- 预合成与渲染后多重检查：ffprobe 验证、帧采样、音频电平、字幕同步、合规性等。\n- Backlot“看板与回放”：可在本地浏览器实时查看每个生产状态，并在完成后进行“完整回放重演”，便于复盘与调试。\n### 6) AI 编程助手优先的操作设计\nREADME 里专门为“Agent”写了操作手册（AGENT_GUIDE），定义了：\n- 不要即兴改流程，优先从 pipeline_defs 与 skills/pipelines 驱动生产。\n- 使用工具注册表发现能力边界（support_envelope / provider_menu）。\n- 把每个视频请求当作“管道选择问题”而非“工具调用问题”。\n---\n## 目标人群与收益\n### 谁（最适合用）：\n- 独立创作者/小团队：希望低成本、快速产出高质量视频，同时又能深度控制风格与流程。\n- 技术型内容者：愿意用 AI 编程助手（Claude Code / Cursor / Copilot / Windsurf / Codex）来完成制作，并接受一定命令行与配置。\n- 教育与培训：需要大量解说视频、课程片段、Demo 录屏并希望风格统一、迭代迅速。\n- 多语言市场扩展：借助 Localization & Dub 管道，批量翻译与配音，快速覆盖多语种。\n### 能得到什么具体收益：\n- 效率提升：从“想法→成片”由 Agent 自动完成重复劳动，减少在不同工具间来回搬运素材与上下文。\n- 成本可控：零密钥也能做片；需要高质量时可“按需”开启付费模型，并在事前预估花费。\n- 质量可预期：通过结构化阶段与质量门，避免“一次生成毁所有”；并在关键创意节点由人类把控。\n- 风格可扩展：基于 YAML 的风格剧本（styles/）、React 场景栈与 HyperFrames 模板，可复用与定制品牌视觉。\n- 资产可审计：每步都有决策日志与回放，便于团队协作、复盘与合规审计。\n---\n## 竞品/同类对比（简要）\n| 对比维度 | OpenMontage | Runway / Pika 等 SaaS | Luma / Kling 等端到端文本生成视频 | 传统本地剪辑（PR/达芬奇）+ AI 插件 |\n|---------|-------------|-----------------------|-----------------------------------|------------------------------------|\n| 控制粒度 | 管道+工具+风格+质量门，高度可控 | 偏平台化控制，模版/参数调参 | 单次生成，迭代依赖“重试” | 人工主导，AI 插件作辅助 |\n| 工作流完整性 | 从调研→脚本→分镜→素材→剪辑→成片 | 往往偏视觉生成，脚本与叙事需外接 | 端到端生成，但剧本/逻辑不可拆 | 视觉主导，脚本与配音需外接 |\n| 本地/离线能力 | 支持离线 TTS、本地图/视频模型、开源渲染 | 纯云端 | 以云端为主，个别有本地接口 | 本地为主，插件依赖云端 |\n| 成本模式 | 零密钥起步；按需付费；有成本预估 | 订阅制/按量 | 按量，透明度不一 | 一次性买断，AI 插件按量 |\n| 扩展与集成 | 多提供商 + Python 工具生态 + Agent 原生设计 | 集成封闭 | 集成封闭 | 插件生态，但流程难以自动化 |\n| 学习曲线 | 中等（命令行+环境配置+Agent 操作） | 低，平台引导 | 低，但高级控制受限 | 较高（剪辑技能+工具链） |\n---\n## 局限与不足\n- 上手门槛：需要 Python 3.10+、FFmpeg、Node.js 18+，以及可用的 AI 编程助手；首次 `make setup` 包括 Python/ npm / Piper TTS 安装，对完全小白有挑战。Windows 下若 npm 报错需用 `npx --yes npm install` 绕过。\n- Agent 依赖：项目专为“Agentic 操作”设计，最佳体验需要配合 Claude Code / Cursor / Copilot / Windsurf / Codex 等使用，如果你不用这些工具，性价比降低。\n- 多云配置复杂性：虽然零密钥也能起步，但解锁完整能力需要配置多个 API Key，每家申请与计费方式不同，初次配置较繁琐。\n- 质量上限仍受底层模型限制：成片的美术与叙事质量取决于图像/视频模型、TTS 与脚本能力；框架本身不会“变出”不存在的品质。\n- 调试与排错成本：多阶段、多提供商、本地/云端混合的组合意味着问题来源众多，需要一定的命令行与 Python 排错能力。\n- 资源占用：若开启本地视频/图像生成，对 GPU 显存与算力有要求；渲染与后处理（FFmpeg、Remotion）也需要一定 CPU 与内存。\n---\n## 技术栈、架构与部署体验（面向开发者）\n- 语言与运行时：Python 为主，辅以 Node.js（Remotion 前端渲染）。\n- 渲染引擎：Remotion（React）+ HyperFrames（HTML/GSAP），可同时支撑数据驱动动效与排版/字符动画/产品推广类视频。\n- 后端基础：FFmpeg 完成编码/字幕烧录/音频混音/调色等后处理。内置 Whisper（本地）做字幕；也支持 Azure STT 等云端替代（含字级时间戳）。\n- 工具注册表：`tools/tool_registry.py` 自动发现并注册工具；提供 `support_envelope()` 与 `provider_menu()` 让 Agent 查询当前可用能力与菜单。\n- 配置与凭证：使用 `.env` 统一管理提供商密钥；每个 API Key 均为可选项，根据配置动态解锁功能。\n- 项目结构（简要）：\n  - `tools/`：按视频/音频/图形/增强/分析/头像/字幕子目录分类。\n  - `pipeline_defs/`：YAML 管道清单，即 Agent 的“剧本表”。\n  - `skills/`：Markdown 知识包，包含管道阶段导演、创意技巧、核心工具用法与元审核协议。\n  - `schemas/`：JSON Schema 合同校验。\n  - `styles/`：视觉风格 YAML 剧本。\n  - `remotion-composer/`：React/Remotion 合成引擎。\n  - `lib/`：核心基础设施（配置、检查点、管道加载）。\n- 部署与安装：\n  - 最小步骤：\n    - 安装前置依赖：Python 3.10+、FFmpeg、Node.js 18+。\n    - 执行：\n      - `git clone https://github.com/calesthio/OpenMontage.git`\n      - `cd OpenMontage`\n      - `make setup`\n  - GPU 路径：`make install-gpu` 并在 `.env` 设置 `VIDEO_GEN_LOCAL_ENABLED=true` 与模型选择（如 `wan2.1-1.3b`、`hunyuan-1.5` 等）。\n  - Demo：`make demo` 可一键渲染零密钥示例视频，便于快速体验完整流程。\n- Docker 一键部署：当前 README 未提供 Dockerfile 或 Compose 样例；建议有容器化需求的团队根据依赖自行构建，并监控 GPU 映射与 Node 版本兼容性。\n- 社区活跃度与生命力：\n  - Trendshift 数据显示：约 48.7k Stars、6.4k Forks，3 位贡献者，最近一次用户提交在 5 天内，创建约 5 个月，曾登上 GitHub Trending 日榜/周榜/月榜，并于 2026 年 6 月 20 日成为“当日第一”。\n  - Discussions 板块分区为 Show and Tell / Ideas / Q&A，利于作品展示、功能建议与问答。\n---\n## Demo / 代码示例（让开发者一眼看懂）\n### 1) 在 AI 编程助手里的最小示例\n- 安装与配置后，在 Claude Code / Cursor / Copilot / Windsurf / Codex 中直接对项目目录发送自然语言指令：\n  - 图像动画 explainer（零密钥）：\n    - “Make a 45-second animated explainer about why the sky is blue”\n  - 实拍纪录片（零密钥）：\n    - “Make a 90-second documentary montage about what a city feels like at 4am. Use real footage only, no narration, elegiac tone.”\n  - 付费模型生成（有密钥）：\n    - “Create a cinematic 30-second trailer for a sci-fi concept: humanity receives a warning from 1000 years in the future.”\n### 2) 检查可用能力与提供商菜单（开发者视角）\n- 打开 Python 环境进入项目根目录：\n  - `python -c \"from tools.tool_registry import registry; import json; registry.discover(); print(json.dumps(registry.support_envelope(), indent=2))\"`\n  - `python -c \"from tools.tool_registry import registry; import json; registry.discover(); print(json.dumps(registry.provider_menu(), indent=2))\"`\n### 3) 启动 Backlot 看板（可视化项目管理与回放）\n- 查看所有项目：\n  - `python -m backlot open`\n- 查看单个项目：\n  - `python -m backlot open <project-id>`\n- 无项目时可模拟运行：\n  - `python scripts/backlot_simulate_run.py`\n---\n## 结语与行动建议\nOpenMontage 把“视频制作”从手工工具链变成一套可被 Agent 执行与审计的“生产操作系统”，关键亮点在于：\n- 真实素材与图像动画双轨并进，不把“动图视频”当成唯一答案。\n- 从调研到合成全流程的结构化，配合多层知识，使 Agent 像“老导演”一样按规范工作。\n- 多提供商与本地化策略，把成本与质量的选择权还给用户。\n- 实时看板、回放与决策日志，让“黑盒”变透明、可协作。\n它不是“一键就能成大片”的魔法，而是一套给你“把控权”与“可扩展性”的开源流水线。如果你能接受命令行与多密钥配置的早期学习成本，并愿意与 AI 编程助手协同工作，OpenMontage 会极大提升你的内容产出效率与制作水平。\n行动建议：\n- 如果你追求“零配置、纯 UI 化”：暂不建议上手；Runway/Luma/Pika 等更适合快速尝试。\n- 如果你有技术背景且需要“规模化、可审计、低成本可控”的生产管线：立即 Clone 并执行 `make setup`，先跑 `make demo` 体验零密钥流程，再逐步解锁提供商与自定义管道。\n- 如果你做多语言/多风格内容：从 Localization & Dub 与 styles/ 入手，先做一套品牌模板，再用 Agent 做批量翻译与配音。\n---\n## 参考链接\n- OpenMontage 仓库（主 README）\n- Provider 指南（PROVIDERS.md，含定价与配置）\n- Pinggy：OpenMontage 深度上手与架构解读\n- tosea.ai：生产指南与成本案例\n- VisionStory：第三方介绍与对比\n- Trendshift：趋势与活跃度统计"
+}

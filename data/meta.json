@@ -2,38 +2,42 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 56
+      "count": 60
     },
     {
       "tag": "自动化",
-      "count": 37
+      "count": 40
     },
     {
       "tag": "GitHub",
-      "count": 35
+      "count": 37
     },
     {
       "tag": "Claude",
-      "count": 26
+      "count": 29
     },
     {
       "tag": "开源项目",
-      "count": 22
+      "count": 24
     },
     {
       "tag": "AI Agent",
-      "count": 18
+      "count": 19
     },
     {
       "tag": "本地部署",
-      "count": 16
+      "count": 17
     },
     {
       "tag": "隐私保护",
-      "count": 13
+      "count": 15
     },
     {
       "tag": "DevOps",
+      "count": 12
+    },
+    {
+      "tag": "工作流",
       "count": 12
     },
     {
@@ -41,20 +45,16 @@
       "count": 11
     },
     {
-      "tag": "工作流",
-      "count": 11
+      "tag": "Rust",
+      "count": 10
     },
     {
-      "tag": "Rust",
+      "tag": "知识管理",
       "count": 10
     },
     {
       "tag": "RAG",
       "count": 10
-    },
-    {
-      "tag": "知识管理",
-      "count": 9
     },
     {
       "tag": "插件生态",
@@ -84,27 +84,31 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 119
+      "count": 126
     },
     {
       "name": "AI 编程",
-      "count": 109
+      "count": 113
     },
     {
       "name": "效率工具",
-      "count": 38
+      "count": 40
     },
     {
       "name": "生活效率",
-      "count": 16
+      "count": 17
     },
     {
       "name": "开发者工具",
-      "count": 13
+      "count": 14
     },
     {
       "name": "开源社区",
       "count": 11
+    },
+    {
+      "name": "开源项目",
+      "count": 10
     },
     {
       "name": "隐私安全",
@@ -115,16 +119,20 @@
       "count": 8
     },
     {
-      "name": "开源项目",
-      "count": 7
-    },
-    {
       "name": "设计资源",
       "count": 7
     },
     {
       "name": "安全合规",
       "count": 7
+    },
+    {
+      "name": "人工智能",
+      "count": 7
+    },
+    {
+      "name": "资源合集",
+      "count": 6
     },
     {
       "name": "系统工具",
@@ -135,11 +143,7 @@
       "count": 6
     },
     {
-      "name": "人工智能",
-      "count": 6
-    },
-    {
-      "name": "资源合集",
+      "name": "安全工具",
       "count": 5
     },
     {
@@ -147,8 +151,8 @@
       "count": 5
     },
     {
-      "name": "安全工具",
-      "count": 5
+      "name": "开发资源",
+      "count": 4
     },
     {
       "name": "知识管理",
@@ -157,10 +161,6 @@
     {
       "name": "资源聚合",
       "count": 4
-    },
-    {
-      "name": "教育教学",
-      "count": 3
     }
   ],
   "topSuitable": [
@@ -169,11 +169,11 @@
       "count": 15
     },
     {
-      "name": "软件开发者",
-      "count": 13
+      "name": "技术团队负责人",
+      "count": 14
     },
     {
-      "name": "技术团队负责人",
+      "name": "软件开发者",
       "count": 13
     },
     {
@@ -182,7 +182,15 @@
     },
     {
       "name": "内容创作者",
-      "count": 10
+      "count": 11
+    },
+    {
+      "name": "数据科学家",
+      "count": 9
+    },
+    {
+      "name": "隐私敏感用户",
+      "count": 9
     },
     {
       "name": "个人开发者",
@@ -194,10 +202,6 @@
     },
     {
       "name": "插件创作者",
-      "count": 8
-    },
-    {
-      "name": "数据科学家",
       "count": 8
     },
     {
@@ -222,11 +226,7 @@
     },
     {
       "name": "开发者与工程师",
-      "count": 7
-    },
-    {
-      "name": "隐私敏感用户",
-      "count": 7
+      "count": 8
     },
     {
       "name": "安全研究员",
@@ -248,34 +248,38 @@
   "topTopics": [
     {
       "name": "llm",
-      "count": 35
+      "count": 36
     },
     {
       "name": "claude-code",
-      "count": 29
+      "count": 30
     },
     {
       "name": "ai-agents",
-      "count": 28
+      "count": 29
     },
     {
       "name": "ai",
-      "count": 24
+      "count": 25
     },
     {
       "name": "agent-skills",
-      "count": 20
+      "count": 21
     },
     {
       "name": "skills",
       "count": 20
     },
     {
-      "name": "agents",
-      "count": 15
+      "name": "python",
+      "count": 16
     },
     {
-      "name": "python",
+      "name": "claude",
+      "count": 16
+    },
+    {
+      "name": "agents",
       "count": 15
     },
     {
@@ -283,11 +287,11 @@
       "count": 15
     },
     {
-      "name": "typescript",
+      "name": "mcp",
       "count": 14
     },
     {
-      "name": "claude",
+      "name": "typescript",
       "count": 14
     },
     {
@@ -299,16 +303,16 @@
       "count": 14
     },
     {
-      "name": "mcp",
-      "count": 13
-    },
-    {
       "name": "rust",
       "count": 13
     },
     {
       "name": "codex",
-      "count": 11
+      "count": 12
+    },
+    {
+      "name": "developer-tools",
+      "count": 10
     },
     {
       "name": "prompt-engineering",
@@ -319,30 +323,26 @@
       "count": 10
     },
     {
-      "name": "developer-tools",
-      "count": 9
-    },
-    {
-      "name": "gpt-image-2",
-      "count": 9
+      "name": "workflow-automation",
+      "count": 10
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 60
+      "count": 66
     },
     {
       "name": "Rust",
-      "count": 26
+      "count": 27
     },
     {
       "name": "TypeScript",
-      "count": 25
+      "count": 27
     },
     {
       "name": "JavaScript",
-      "count": 15
+      "count": 17
     },
     {
       "name": "Shell",
@@ -357,6 +357,10 @@
       "count": 3
     },
     {
+      "name": "Go",
+      "count": 3
+    },
+    {
       "name": "CSS",
       "count": 2
     },
@@ -365,11 +369,19 @@
       "count": 2
     },
     {
-      "name": "Go",
-      "count": 2
+      "name": "PowerShell",
+      "count": 1
     },
     {
-      "name": "PowerShell",
+      "name": "Nim",
+      "count": 1
+    },
+    {
+      "name": "C++",
+      "count": 1
+    },
+    {
+      "name": "Clojure",
       "count": 1
     }
   ],
@@ -377,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471205,
+      "stars": 471351,
       "appearances": 0
     },
     {
@@ -431,69 +443,69 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 118913,
+      "stars": 119068,
       "appearances": 4
     }
   ],
   "topAppearances": [
     {
-      "repo": "tinyhumansai/openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38343,
-      "appearances": 5
-    },
-    {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2278,
+      "stars": 2344,
       "appearances": 5
     },
     {
       "repo": "VoltAgent/awesome-agent-skills",
       "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "stars": 32778,
-      "appearances": 5
-    },
-    {
-      "repo": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "stars": 32199,
+      "stars": 32858,
       "appearances": 5
     },
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 22035,
+      "stars": 22417,
+      "appearances": 5
+    },
+    {
+      "repo": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 32337,
+      "appearances": 5
+    },
+    {
+      "repo": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "stars": 38431,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50562,
+      "stars": 50700,
       "appearances": 5
-    },
-    {
-      "repo": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "stars": 3643,
-      "appearances": 4
     },
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 118913,
+      "stars": 119068,
+      "appearances": 4
+    },
+    {
+      "repo": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "stars": 3700,
       "appearances": 4
     },
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 49744,
+      "stars": 49869,
       "appearances": 3
     },
     {
-      "repo": "DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 113037,
+      "repo": "marin-community/marin",
+      "url": "https://github.com/marin-community/marin",
+      "stars": 2577,
       "appearances": 3
     }
   ]

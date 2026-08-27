@@ -1,0 +1,49 @@
+{
+  "id": "cb3d582e-c9f6-473e-95f7-0cfdc21cc5c3",
+  "dateAdded": "20260827",
+  "type": "github-daily",
+  "url": "https://github.com/JetBrains/go-modern-guidelines",
+  "repo": "JetBrains/go-modern-guidelines",
+  "description": "Help AI coding agents write modern Go",
+  "language": "Go",
+  "stars": 1828,
+  "forks": 53,
+  "starsAdded": 314,
+  "createdAt": "2026-08-27T11:00:02.077Z",
+  "githubData": {
+    "forks": "0",
+    "stars": "0"
+  },
+  "summaryData": {
+    "tags": [
+      "JetBrains",
+      "Go 语言",
+      "AI 助手",
+      "代码规范",
+      "开源项目"
+    ],
+    "cover": "",
+    "title": "JetBrains Modern Go Guidelines 深度评测",
+    "ability": [
+      "版本感知：自动适配项目 Go 版本",
+      "现代化重构：推荐最新惯用法",
+      "AI 技能集成：支持多平台 Agent",
+      "渐进披露：优化上下文占用",
+      "团队协同：统一代码风格"
+    ],
+    "summary": "JetBrains 官方出品的 AI 辅助编程指南，让 Go 代码根据版本自动拥抱现代语法，拒绝陈旧写法。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "Go 语言"
+    ],
+    "suitable": [
+      "Go 语言开发者",
+      "使用 AI 编程的程序员",
+      "技术团队负责人",
+      "代码质量追求者"
+    ],
+    "description": "这是一套专为 AI 代理设计的 Go 语言编写指南，通过读取项目的 go.mod 版本，让 AI 在生成代码时自动使用匹配的现代语法和标准库 API，减少后期重构成本，提升代码可读性与安全性，同时支持 JetBrains Junie、Claude Code 等多种开发环境。"
+  },
+  "contentDetail": "# Modern Go Guidelines\n## 一句话总结\n它是一套由 JetBrains 官方出品、专为“代码编写型 AI 代理”量身定制的“现代化 Go 写作指南”（以技能包/插件形式交付），让 AI 能根据项目的 Go 版本自动选用现代语法与标准库，避免写出旧时代样板代码。项目属于 Apache-2.0 开源，可直接商用与二次开发。\n## 背景与痛点\n### 为什么会有这个项目？\n- 训练数据滞后。许多大模型的训练截止时间早于 Go 的新版本发布，天然“没见过”像 errors.AsType[T]、new(42) 等较新的特性，导致不会用、不敢用。\n- 频率偏差。即使模型“知道”新语法，训练语料中旧代码的比例远高于新代码，模型更容易输出早年写法的片段，例如 for i := 0; i < n; i++ 而非 for i := range n。\n- 团队维护负担。如果 AI 常常写出“旧代码”，开发者需要用 modernize 这类静态分析工具不断重构/现代化代码库，返工成本高。Go 团队也在推进“modernize”方向，但更希望在写新代码时就能一步到位用上现代惯用法。\n### 它要解决的核心问题\n给 AI 代理一套“版本感知、可渐进披露的参考指南”，让它在新建/修改代码时：\n- 读取项目的 Go 版本（来自 go.mod）\n- 只使用该版本及之前已存在的语言特性与标准库 API\n- 偏好现代、可读性更好、性能更佳的惯用法，而非古老样板\n## 核心亮点与功能剖析\n### 亮点 1：版本感知（Version-aware）的能力\n- 技能激活时会自动读取 go.mod 中的 Go 版本号，并在会话中给出明确提示：“本项目使用 Go 1.24，我将遵循现代 Go 最佳实践，自由使用到该版本为止的特性。”\n- 这避免了“模型用上你的项目版本还不支持的语法”的兼容性灾难，尤其对长期维护的项目至关重要。\n### 亮点 2：覆盖 Go 1.0 至 Go 1.26 的惯用法清单\n项目以 FEATURES.md 形式系统梳理了“可现代化”的惯用法，按类别、诊断名、是否已被 go fix 的 modernizer 覆盖、所需 Go 版本、影响级别（Critical/High/Medium/Low）列明，便于团队对标与自查。\n示例覆盖包括：\n- Collections：用 slices.Contains、slices.Sort、slices.Max/Min、maps.Clone、maps.Keys/Values 等\n- Loops：用 for i := range n（rangeint）\n- Errors：errors.Is、errors.Join 等\n- Time/Context/HTTP/Testing/Sync 等领域的现代 API 使用\n这些清单与“modernize”静态分析器的目标高度一致，可视为“新代码侧的配套指南”。\n### 亮点 3：与多 Agent 生态的标准化接入\n- Junie（JetBrains 自家 AI 助手）：从 2xx.620.xx 版本开始，Modern Go Guidelines 已内置，开箱即用。配置位于 Settings → Tools → Junie → Project Settings → Go，默认启用“Provide modern Go guidelines”；可随时关闭。\n- Claude Code：提供插件化安装：\n  - /plugin marketplace add JetBrains/go-modern-guidelines\n  - /plugin install modern-go-guidelines\n  - 会话中执行 /use-modern-go 即可激活\n- 通用 skills.sh 生态：通过 npm npx skills add JetBrains/go-modern-guidelines，把技能包挂载到 Codex、OpenCode、Cursor 等通用代理，实现跨平台的统一能力注入。\n### 亮点 4：渐进披露（Progressive Disclosure）的设计\n- 技能包内部使用 list/explain 两层结构：先给“简短指令”，仅在需要时再给出详细示例与解释。这样能减少上下文占用，同时保证 AI 有足够细节来“落地”。\n### 亮点 5：Apache-2.0 许可与官方背书\n- 仓库标明“official JetBrains project”，许可证为 Apache-2.0，可商用、可修改、可分发，企业内部亦可自托管、定制扩展。\n## 目标人群与收益\n### 谁最适合用？\n- 日常用 Go + AI 助手写代码的个人开发者\n- 希望统一团队代码风格、减少“新旧代码混杂”的 Go 工程团队\n- 把 Claude Code、Cursor、Junie 这类“AI Agent”纳入工作流的研发组织\n- 需要维护多版本 Go 项目（遗留老项目、新项目并存）的技术负责人\n### 你能获得的实实在在收益\n- 降低返工：新代码一开始就用上现代惯用法，减少后续 modernize/重构的时间。\n- 提升可读性： slices.Contains、min/max、cmp.Or、maps.Clone 等让代码意图一目了然，逻辑更紧凑。\n- 降低缺陷率：标准库新 API 多做了边界检查与性能优化，手写循环易出错、性能不佳。\n- 版本安全：自动尊重 go.mod 版本，避免兼容问题。\n- 团队教育：FEATURES.md 本身就是一份很好的“团队培训材料”，能帮助成员快速掌握“可以写什么、优先写什么”。\n## 技术栈与架构解析（作为“GitHub 开源项目”的视角）\n### 技术栈\n- 语言：文档与技能以 Markdown 与结构化清单（SKILL.md 等）为主，不涉及编译型代码。仓库用于承载“知识/指南”而非可执行程序。\n- 交付形式：\n  - Claude Code Plugin：特定规范的插件配置与技能清单\n  - skills.sh Skill Package：跨代理的标准化技能包（npx skills add 安装）\n  - Junie 内置技能：直接打包到 IDE 插件中\n### 架构与组织\n- 核心：SKILL.md（skills/use-modern-go）定义技能的触发、上下文注入与版本决策逻辑；通过读取 go.mod 决定版本上限，并据此“裁剪”可推荐的现代化点。\n- 特性清单：FEATURES.md 以表格形式罗列所有“现代化点”与影响级别，既是文档，也可视为“内部知识图谱的基表”，便于后续生成提示与示例。\n- 版本化策略：按 Go 版本标注每个特性所需的最小版本（1.18、1.20、1.21、1.22、1.23、1.24、1.25、1.26 等），支持动态“过滤”。\n### 代码组织与清晰度（从可见文件结构推断）\n- README.md、LICENSE、FEATURES.md 各司其职：简介/协议/特性详表分离，便于查阅与维护。\n- claude/ 与 skills/ 两个目录分别针对不同接入形态，职责分明（插件适配 vs 通用技能包）。\n## 上手门槛与部署体验\n### 安装与激活示例\n- Junie：无需额外安装，只需升级插件并确认 Go 设置中“Provide modern Go guidelines”开启。\n- Claude Code（会话内命令示例）：\n  - 添加市场： /plugin marketplace add JetBrains/go-modern-guidelines\n  - 安装插件： /plugin install modern-go-guidelines\n  - 激活技能： /use-modern-go\n- 其他代理（skills.sh 生态）：\n  - npx skills add JetBrains/go-modern-guidelines\n  - （可选）--skill use-modern-go 仅安装本技能\n### 文档与部署评估\n- 官方 README 提供了清晰的“指令 + 示例输出”，包含会话中 /use-modern-go 返回的版本提示语，上手无歧义。\n- 不需要 Docker 或复杂依赖；本质是知识包的获取与挂载，对现有项目零侵入、不修改代码仓库。\n## 社区活跃度与生命力\n- 仓库指标：Star 数约 750+，Fork 27，Watch 14；在“AI + Go”小众领域具备可见度。Issues 数量较少（约 4），项目尚处于早期使用阶段。\n- JetBrains 官方博客在 2026 年连续发文介绍 Modern Go Guidelines，说明其产品整合与支持力度（Junie、Claude Code 集成）。\n- FEATURES.md 明确标记“Work in progress”，清单仍在扩展与完善中，显示项目处于持续演进。\n## Demo / 代码示例（开发者一眼能看懂的用法）\n### 使用场景：AI 会话中激活后，请求重构“旧写法”\n- 假设激活 /use-modern-go 后，项目 Go 版本为 1.21+，你可以这样让 AI 动手：\n- 用户输入示例：\n  - “把下面代码重构为更现代的 Go 写法，并解释变化点。”\n- 待重构旧代码示例（来自 FEATURES.md）：\n```go\nfound := false\nfor _, v := range s {\n    if v == needle {\n        found = true\n        break\n    }\n}\n```\n- 期望 AI 输出示例（现代化后）：\n```go\nfound := slices.Contains(s, needle)\n```\n### 另一例：排序（slices.SortFunc）\n- 旧写法：\n```go\nsort.Slice(users, func(i, j int) bool {\n    return users[i].Name < users[j].Name\n})\n```\n- 现代写法：\n```go\nslices.SortFunc(users, func(a, b User) int {\n    return cmp.Compare(a.Name, b.Name)\n})\n```\n以上示例直接来自 FEATURES.md 的“Before/After”对比，也是 AI 在技能激活后应遵循的转换方向。\n## 竞品/同类对比\n### 1) Go 官方 gopls modernize 分析器\n- 目标：对已有代码自动进行“现代化”重构（fix 模式）。\n- 不同点：Modern Go Guidelines 聚焦“新代码怎么写”，相当于“前置指南”；modernize 聚焦“旧代码怎么改”。二者互补而非替代。\n### 2) 社区最佳实践文档（如 Effective Go、Go Wiki）\n- 这些是“人读的指南”，不直接对 AI 暴露结构化、版本感知的技能清单。\n- Modern Go Guidelines 针对性更强：版本感知 + list/explain 结构，更容易被 Agent 消费。\n### 3) 其他 AI 驱动代码风格工具（如各种 Linter-AI 插件）\n- 往往仅做“事后检查”，无法在生成阶段就绑定版本与惯用法规则。\n- Modern Go Guidelines 把规则前置进“生成阶段”，从源头减少坏模式的出现。\n## 局限与不足\n- 生态依赖：需要你已在使用支持技能插件的 AI Agent（如 Claude Code、Junie、Cursor 等），否则其价值体现有限。\n- 覆盖不完整：FEATURES.md 标记为 Work in progress，部分条目尚未实现（例如 maps.Keys/Values、rangeoverindex 等），部分清单项还未在“modernizer”中落地，需要持续跟进与完善。\n- 不替代一切 Linter：静态分析（如 go vet、staticcheck、errcheck 等）仍然是必要保障；Modern Go Guidelines 主要解决“新旧惯用法选择”，不覆盖所有潜在问题。\n- 治理模型目前以 JetBrains 官方主导，社区 Issue/PR 活动尚不算活跃，长期演化速度取决于 JetBrains 与社区共建力度。\n## 风险与注意事项（潜在）\n- 版本判断逻辑依赖 go.mod 存在且规范；若项目未使用 modules 或版本标注异常，可能导致版本检测失灵。\n- 在“极端场景”中，AI 可能误判版本上下文，建议对关键生成代码仍进行人工 Review。\n- 企业如需自定义规则（比如强组织风格约束），需要在 Apache-2.0 许可下自行 Fork 并维护分支版本。\n## 结语与行动建议\n- 如果你已经是 Go + AI Agent 的重度使用者，Modern Go Guidelines 是一份“必备外挂”，能显著降低代码返工、提升可读性，并自然地将团队的 Go 版本升级与代码演进对齐。\n- 建议行动步骤：\n  1) 在你常用的 AI Agent 中（优先推荐 Claude Code 或 Junie）按 README 指引完成插件/技能安装与激活。\n  2) 在非生产项目中进行“重构测试”，让 AI 对旧代码进行现代化改写，观察改写质量与边界情况。\n  3) 将 FEATURES.md 纳入团队知识库/文档中，作为“可接受的惯用法白名单”，并在 Code Review 时对照使用。\n  4) 若企业有强定制需求，可在 Apache-2.0 许可下 Fork 并扩展自己的“企业版”技能包（例如补充安全、性能、错误处理等组织偏好）。\n总体来看，Modern Go Guidelines 在“AI 生成代码 + 语言快速演进”的夹缝中提供了务实解法，把“版本感知的现代惯用法”标准化、可复用化，是值得立即尝试的 Go 生态新基建。"
+}
