@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/rohitg00/ai-engineering-from-scratch)
 
-- **Stars**: 49965
+- **Stars**: 50011
 - **Language**: Python
 
 ## AI Engineering from Scratch：从零构建 AI 工程师的全栈指南

@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/JetBrains/go-modern-guidelines)
 
-- **Stars**: 1938
+- **Stars**: 1980
 - **Language**: Go
 
 ## JetBrains Modern Go Guidelines 深度评测

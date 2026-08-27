@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/anthropics/claude-plugins-community)
 
-- **Stars**: 2370
+- **Stars**: 2374
 - **Language**: Python
 
 ## Claude 插件社区市场（Claude Plugins Community）深度评测
