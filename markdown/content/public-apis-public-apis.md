@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/public-apis/public-apis)
 
-- **Stars**: 471524
+- **Stars**: 471652
 - **Language**: Python
 
 ## public-apis：从社区瑰宝到争议广告牌的深度评测
