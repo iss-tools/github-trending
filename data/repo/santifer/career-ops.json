@@ -6,11 +6,69 @@
   "repo": "santifer/career-ops",
   "description": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
   "language": "JavaScript",
-  "stars": 68753,
-  "forks": 13015,
+  "stars": 68771,
+  "forks": 13016,
   "starsAdded": 3061,
   "createdAt": "2026-08-27T11:00:03.758Z",
-  "githubData": null,
-  "summaryData": null,
-  "contentDetail": null
+  "githubData": {
+    "stars": "68764",
+    "forks": "13015",
+    "description": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…) - santifer/career-ops",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "anthropic",
+      "ats",
+      "automation",
+      "beginner-friendly",
+      "career",
+      "careerops",
+      "claude",
+      "claude-code",
+      "cli",
+      "first-timers-only",
+      "golang",
+      "good-first-issue",
+      "interview-prep",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "license": "MIT license",
+    "homepage": "https://career-ops.org"
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "Agent",
+      "CLI工具",
+      "求职",
+      "自动化"
+    ],
+    "cover": "",
+    "title": "career-ops：本地 AI 求职指挥中心",
+    "ability": [
+      "职位智能评估",
+      "ATS简历自动生成",
+      "求职流程追踪",
+      "面试故事库管理",
+      "本地化隐私保护"
+    ],
+    "summary": "这是一个跑在本地的 AI 求职工具，能自动分析职位、生成定制简历并追踪申请流程。",
+    "category": [
+      "AI 编程",
+      "效率工具",
+      "求职助手"
+    ],
+    "suitable": [
+      "技术开发求职者",
+      "命令行 CLI 用户",
+      "注重隐私的用户",
+      "求职效率优化者"
+    ],
+    "description": "career-ops 是一个基于本地 AI CLI 的开源求职助手。它能深度分析职位 JD 并打分，自动生成匹配的 ATS 简历，还能管理申请流水线和面试故事库。它像私人猎头一样帮你筛选高价值机会，全程数据本地化，兼顾效率与隐私。"
+  },
+  "contentDetail": "# career-ops 深度评测：把 AI 变成你的私人猎头（开源、本地、可脚本）\n---\n## 一句话总结\ncareer-ops 是一个跑在你本地 AI 编程 CLI 里的“求职指挥中心”：自动扫职位、按 A-H 结构化给出 1–5 分、为每条 JD 生成 ATS 化 PDF 简历、维护申请流水线与故事库——它把 AI 当成你的私人猎头，帮你筛出“值得你花时间”的机会，并由你拍板下一步。\n---\n## 背景与痛点：为何它会出现？\n- 海量信息与时间黑洞：资深与技术岗的 JD 动辄 800 字，每天看到 10 条就已是巨量阅读；还要查公司、调简历、写邮件，这些都碎片化到表格或笔记里，容易漏掉、难复盘。\n- 不对称的 AI 护城河：公司用 ATS/简历筛选与 AI 面试官来提高效率，候选人却只能用“手动+直觉”做选择——效率与信息不对等。\n- 求职流程难以“复利”：每次申请都从零开始，难以复用故事素材、谈判话术与职位调研结果，经验留不住。\n- 决策质量与体量难以兼顾：广撒水容易踩雷或被标记为“垃圾投递”；精挑细选又怕错过潜在好机会。\ncareer-ops 正是在这样的背景下诞生的：它不帮你“自动投递”，而是把 AI 放在“分析、准备、追踪”的位置，把“决策与提交”保留给你，提升整体决策质量与效率。\n---\n## 核心亮点与功能剖析\n### 1) 粘在 AI CLI 里的“技能入口”：多 CLI 适配与统一路由\n- 支持 Claude Code、Codex、OpenCode、Qwen、Antigravity、Grok Build 等主流 AI 编程 CLI；通过开放的“技能标准”(.agents/skills/career-ops/SKILL.md) 实现统一路由与别名，一处定义、多处生效。\n- 典型触发方式（在 CLI 项目目录里）：\n  - /career-ops {粘贴JD}：触发“全流程自动管线”（评估+PDF+追踪记录）。\n  - /career-ops scan：扫描预配置的公司门户与 ATS 源。\n  - /career-ops pdf / cover / email / tracker / batch / contacto / deep 等：分别拉起对应模式。\n- 对 Codex 这种不保证斜杠命令的 CLI，也提供了自然语言与 exec 两种调用方式，兼容性做得比较周全。\n### 2) A–H 结构化评估（含合法性检查与 1–5 综合分）\n- A–F 区块覆盖角色摘要、CV 匹配、职级策略、薪酬调研、个性化建议与面试准备（STAR+R）。\n- G 区块是“岗位合法性评估”，独立于评分之外，用来标记诈骗/鬼祟岗位；H 区块仅在 4.5+ 时才起草，避免过度打扰。\n- 最终给出 1.0–5.0 的综合分，建议不要投低于 4.0 的职位——这是一个“过滤器”而不是“刷量工具”。\n### 3) ATS 化 PDF 与求职素材库\n- 使用 Playwright + HTML/CSS（Space Grotesk + DM Sans）生成每条 JD 定制的简历，支持关键词注入、要点重排、区域化等 ATS 友好处理。\n- 自动维护“面试故事库”（STAR+Reflection），跨评估累积 5–10 条通用故事，应对各类行为面试；同时提供谈判话术框架、地域差价议价脚本等。\n### 4) 门户扫描与批量处理（含零成本扫描脚本）\n- 预置 100+ 公司与常用 ATS（Greenhouse、Ashby、Lever、Wellfound 等）的扫描规则，支持自定义查询；提供“零令牌门户扫描器 scan.mjs”直接爬取 73+ 公司 API，而不消耗 LLM 配额。\n- 批量模式支持并行评估 10+ 职位，结合 CLI 的 headless worker（claude -p / opencode run）实现多路并发。\n### 5) 跟踪、复盘与“求职运营”\n- 单一数据源（Markdown pipeline.md）记录每条评估、状态与归档材料；自动合并、去重、状态归一化与健康检查。\n- 提供 Dashboard TUI（终端 UI）浏览/过滤/排序；还提供模式分析（渠道转化率、被拒模式、鬼祟岗位检测等）与统计数据，帮助你优化“求职漏斗”。\n### 6) 本地优先与 CLI 不可知：成本低、隐私可控\n- 核心管线跑在你本地机器的 AI CLI 上下文中，可把 LLM 接到 OpenRouter 免费模型、Ollama 本地模型或任何 OpenAI 兼容端点，不必锁定在某个付费订阅；提供了 RUNNING_ON_A_BUDGET 与 FREE_TIER 文档详细指导省钱/零成本玩法。\n### 7) 合规与法律边界设计\n- 明确不替你点击提交或发送消息；只做“评估与草稿”，降低合规风险；要求用户遵守各门户 ToS，避免被视为“刷量/滥用”。\n- 许可证采用 MIT，代码可自由商用与分发；但“career-ops”名称与品牌有商标政策，商业产品命名需遵循。\n---\n## 目标人群与收益：谁适合用、能赚到什么？\n- 适合人群\n  - 正在认真找技术/产品/PM 等岗位，每天需要处理 10+ 条 JD 的人；\n  - 熟悉或愿意使用命令行与 AI 编程 CLI（Claude Code / Codex / OpenCode / Antigravity / Grok 等）；\n  - 希望系统化沉淀面试故事、谈判话术、公司调研笔记，把求职变成可运营的流程；\n  - 在意隐私与成本，想把更多流程留在本地、减少云端绑定的用户。\n- 可获得收益\n  - 时间与注意力节省：自动完成 JD 解读、薪酬调研、简历定制与草稿生成，你只需要做决策与微调。\n  - 决策质量提升：A–H 结构化评估与合法性检查帮助你避免“海投踩雷”，聚焦高质量机会。\n  - 素材复利：故事库与谈判脚本会随着评估越用越好用，下次求职不用从零开始。\n  - 流程可观测：pipeline 追踪、统计与 TUI 让你对“什么渠道最有效”有量化感知，从而优化策略。\n---\n## 竞品/同类对比：它处在什么位置？\n- 与传统表格/笔记工具相比\n  - career-ops 能自动拉取与解析 JD，把静态表格变成动态“流水线”，减少手工整理。\n  - 它的结构化评估与素材库是传统工具无法自动做到的。\n- 与“一键投递/刷子工具”相比\n  - 最大区别是“人类在环”：它不做提交、不做点击，只做分析与草稿，由你决定是否发、何时发。\n  - 这样更符合平台 ToS 与职业伦理，也避免了账号风险与黑名单。\n- 与 SaaS 求职助手（JobApplier 等）相比\n  - 本地优先：数据与模型调用由你掌控，可完全跑在本地或你信任的后端。\n  - CLI 不可知：不绑定某个供应商，可换模型、换 CLI；且 MIT 开源，可二次开发与定制。\n- 与其他开源“职位聚合/爬虫”相比\n  - career-ops 不只是聚合，而是“评估—准备—追踪”的一体化管线；更强调“决策质量”而非“数量”。\n---\n## 技术栈与架构解析（开发者视角）\n### 1) 技术选型\n- 语言与运行时：JavaScript/Node.js（MJS），要求 Node.js 18+，推荐 22.5+。安装方式使用 npx 或全局 npm 包，降低环境摩擦。\n- 浏览器自动化：Playwright（安装 chromium）用于 PDF 生成与门户爬取。\n- 配置与数据：YAML（profile.yml、portals.yml）、Markdown（cv.md、pipeline.md）、JSON 用于状态与中间结果。\n- AI 集成：依托于“AI 编程 CLI”的代理能力（如 Claude Code 的工具调用能力），项目本身通过统一的技能入口与路由器分发请求到各模式（modes/*.md）。\n### 2) 架构设计要点（来自 README 与公开资料）\n- 技能统一入口：.agents/skills/career-ops/SKILL.md 定义技能的元信息与命令路由；通过符号链接/引用适配 .claude/、.qwen/、.antigravitycli/、.grok/ 等不同 CLI 的技能目录，实现“一处写，到处可用”。\n- 模式驱动：核心能力封装在 modes/*.md（如 pipeline、scan、pdf、cover、email、tracker、deep、contacto 等），每个模式通过指令/提示词约定任务边界与输入输出。\n- 工具脚本：项目包含大量 .mjs 工具（如 scan.mjs、followup-cadence.mjs、salary-gap.mjs 等），负责与外部服务/数据交互、计算与格式转换。\n- 数据管线：职位数据、评估报告、跟踪状态都落地到 Markdown/YAML 文件；通过脚本做合并、去重与校验，保证“单一真相源”。\n- 插件系统：可选集成 Gmail、Notion、Apify 等，默认关闭，需用户显式开启，减少侵入性。\n### 3) 代码组织与 DX（开发者体验）\n- 目录结构清晰：根目录包含 modes/、docs/、config/、templates/、lib/ 等，职责分明；README 提供 Quick Start 与手动配置两条路径，适合不同习惯的开发者。\n- 文档齐全：SETUP、RUNNING_ON_A_BUDGET、FAQ、SUPPORTED_CLIS、PLUGINS、AUTOMATION 等，覆盖成本、部署、自动化与扩展问题。\n- npm run doctor 可做健康检查，减少“环境谜题”；全局安装与项目级初始化并行支持，灵活度高。\n### 4) Demo 与最小可复现示例\n- 最低门槛启动（推荐新手）：\n  1) npx @santifer/career-ops init\n  2) cd career-ops\n  3) claude（或你习惯的 AI CLI）——首次启动会交互式引导你填写 CV、目标角色、期望薪资与扫描公司，无需手改配置。\n- 手动配置路线（适合有定制需求的用户）：\n  ```bash\n  git clone https://github.com/santifer/career-ops.git\n  cd career-ops && npm install\n  npx playwright install chromium  # 生成 PDF 必需\n  npm run doctor\n  cp config/profile.example.yml config/profile.yml  # 编辑你的信息\n  cp templates/portals.example.yml portals.yml      # 定制目标公司\n  # 在根目录创建 cv.md 放入你的 Markdown 简历\n  claude  # 或 codex / opencode / agy / grok\n  # 在 CLI 中粘贴职位 URL 或直接粘贴 JD 文本，触发自动管线\n  ```\n- 常用命令示例（在 AI CLI 中）：\n  - /career-ops scan：运行扫描模式。\n  - /career-ops pdf：为最新评估的岗位生成 ATS 化简历。\n  - /career-ops cover：生成/补全求职信。\n  - /career-ops email：草拟申请邮件（只草稿，不发送）。\n  - /career-ops tracker：汇总当前流水线状态。\n---\n## 上手门槛与部署体验\n- 对非开发者：需要愿意打开终端运行几条命令；项目官网的“5 分钟快速开始”特意面向无需写代码的用户，但终端基础仍需具备。\n- 对开发者：Node.js 18+ + git + npx，一般机器都能满足；若使用 Dashboard TUI 或某些 CLI，需 Go 1.21+（按 SETUP 文档）。\n- 部署体验：\n  - 初始化向导体验流畅，首次启动会“对话式”收集必要信息，降低手工编辑配置的门槛。\n  - 文档路径清晰、FAQ 与“省钱/零成本”指南完善，能快速定位常见坑（如 API Key 优先级导致的计费问题）。\n- 可选复杂度：插件、自动化（AUTOMATION.md）、自定义 providers 等属于进阶玩法，可根据需要逐步解锁。\n---\n## 社区活跃度与生命力\n- Star 与热度：第三方聚合显示 career-ops 在 GitHub 拥有约 66–68K 星，属于 AI Agent 类别中的头部项目；作者案例研究也提到“63.5K+ 星，4400+ Discord 成员，并爆发出法/中/韩媒体关注”。\n- 更新节奏：GitHub Releases 显示最近版本（例如 web v0.5.0 与 career-ops v1.24.0）持续在 2026 年发布，涉及合规性校验、职位源扩展与 Bug 修复；讨论区中路线图与反馈讨论活跃。\n- Issue 与生态：Issue 板块持续开放“good first issue”，文档与模板化贡献指引（CONTRIBUTING）明确，说明社区参与与治理较成熟。\n- 语言与本地化：文档提到日语、韩语、巴西葡语等模式已上线，德语/法语在路线上，体现国际化投入。\n---\n## 真实案例与效果\n- 作者自述使用 career-ops 评估了 740+ 条职位、生成 100+ 定制简历，最终拿到 Head of Applied AI 的职位；这些数据在项目首页与案例研究文章中有明确记录。\n- Product Hunt 页面提到作者基于该系统在 631 次评估、68 次申请中拿到目标 offer，并把流程开放源码；可见在“高质量筛选”的前提下，成功转化是可观的。\n---\n## 局限与不足（客观视角）\n- 依赖 AI 编程 CLI 的成熟度与定价：你的体验会受所选 CLI 的能力限制（如长文上下文、工具调用稳定性）；若 CLI 调整收费策略或能力接口，career-ops 也可能受影响。\n- 首次使用“冷启动”效果一般：系统需要通过 CV 与对话逐步理解你，早期评估可能偏通用或不够精准；需要主动喂养背景与偏好。\n- 维护成本与提供商变化：门户扫描依赖 ATS/公司页面结构，若网站改版或接口关停，需要更新 providers；Issue 中也提到过某端点关闭导致相应 provider 失效的案例。\n- 操作心智成本：需要用户熟悉终端与 AI CLI 的交互模式；对“只点网页”的用户而言存在一定学习曲线。\n- 评估≠真理：LLM 可能出现幻觉（如误判技能或经验）；系统只给建议，最终决策与校验仍需你来承担，并且 README 与免责声明也明确“无保证”。\n---\n## 合规、安全与隐私\n- 不代发、不代提交：career-ops 只做分析与草稿，不触发点击与发送；设计上把“合规边界”留给用户控制，降低滥用风险。\n- 数据可本地：默认情况下数据留存在本地，可完全使用本地模型（如通过 Ollama）执行评估，控制隐私暴露面。\n- MIT 许可与商标政策：代码可自由商用与修改；但“career-ops”名称与商标有使用政策，商业产品命名需遵守。\n- 安全审计：第三方平台的自动化安全审计报告显示无高风险依赖或严重提示注入问题（SkillsLLM 汇总）。\n---\n## 结语与行动建议\n综合来看，career-ops 是“把 AI 编程 CLI 变成私人猎头与求职运营中台”的开源实现。它不追求“一键海投”，而是把分析、准备与追踪自动化，由你做最后的决策与提交，非常契合资深或技术岗求职者在“信息过载”与“质量筛选”之间的矛盾。\n- 如果你已经常用 Claude Code / Codex / OpenCode / Antigravity / Grok 等 CLI，且正在认真求职，career-ops 值得一试。建议从 npx @santifer/career-ops init 开始，先用几次“粘贴 JD 生成评估+PDF”，再根据需要开启扫描、批量与插件。\n- 若你更在意隐私与成本，可以按照 RUNNING_ON_A_BUDGET 指南，把它接到本地或免费模型，把“预算”降到最低甚至零成本。\n- 若你是开发者或想贡献：项目结构清晰、文档与 Issue 模板完善，适合作为首次开源贡献的练手场，同时也是简历上的亮点之一。\n一句话行动建议：今天就腾出 30 分钟，用“npx init + 粘贴一条真实 JD”跑一遍全流程，亲自感受一下“AI 猎头”的效率差异——再决定是否把它接入你的日常求职流水线。"
 }

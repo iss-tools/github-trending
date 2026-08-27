@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/chaitanyagiri/munder-difflin)
 
-- **Stars**: 4943
+- **Stars**: 4967
 - **Language**: JavaScript
 
 ## Munder Difflin 深度评测：本地多智能体协作控制台

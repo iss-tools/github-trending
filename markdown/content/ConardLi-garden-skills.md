@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/ConardLi/garden-skills)
 
-- **Stars**: 11146
+- **Stars**: 11178
 - **Language**: CSS
 
 ## Garden Skills：生产级 AI Agent 技能包深度评测

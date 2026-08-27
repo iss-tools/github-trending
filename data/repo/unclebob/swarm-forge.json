@@ -6,11 +6,49 @@
   "repo": "unclebob/swarm-forge",
   "description": "A simple tool for coordinating several AI agents.",
   "language": "Clojure",
-  "stars": 2895,
-  "forks": 297,
+  "stars": 2899,
+  "forks": 299,
   "starsAdded": 1579,
   "createdAt": "2026-08-27T11:00:05.761Z",
-  "githubData": null,
-  "summaryData": null,
-  "contentDetail": null
+  "githubData": {
+    "stars": "2899",
+    "forks": "299",
+    "description": "A simple tool for coordinating several AI agents. Contribute to unclebob/swarm-forge development by creating an account on GitHub.",
+    "topics": [],
+    "license": "",
+    "homepage": ""
+  },
+  "summaryData": {
+    "tags": [
+      "多智能体",
+      "TDD",
+      "Clean Code",
+      "Uncle Bob",
+      "开源"
+    ],
+    "cover": "",
+    "title": "SwarmForge：Uncle Bob 打造的“宪法驱动”多 AI 协同工程工具",
+    "ability": [
+      "宪法驱动的协作治理",
+      "多角色多工作流编排",
+      "Git Worktree 与 Tmux 隔离观测",
+      "本地优先与自托管",
+      "Handoff 协议消息传递"
+    ],
+    "summary": "基于 tmux 和 git worktrees 的多 AI 协作工具，通过“宪法”强制执行 TDD 和整洁代码规范。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "自动化"
+    ],
+    "suitable": [
+      "追求工程质量的开发者",
+      "敏捷开发与 TDD 实践者",
+      "熟悉命令行 (CLI) 的极客",
+      "需要多 AI 协作的小团队",
+      "开源项目维护者"
+    ],
+    "description": "SwarmForge 是由 Clean Code 之父 Uncle Bob 打造的开源工具，利用 tmux 和 git worktrees 实现多 AI 智能体协同开发。它通过“宪法”强制实施 TDD、重构等工程纪律，让 AI 像成熟的工程团队一样写代码，保证代码质量与可维护性。"
+  },
+  "contentDetail": "# 一句话总结\nSwarmForge（Uncle Bob 的 swarm-forge）是一个基于 tmux、git worktrees 和本地脚本、把“多智能体协同”做成一套“宪法驱动、角色分明、可观测”的工程师纪律的工具。它用轻量手段解决多 AI 共同写项目时“写得快、烂得也快”的痛点。\n---\n## 背景与痛点\n- 作者背景：Robert C. Martin（Uncle Bob）是 Clean Code/敏捷方法论的倡导者。SwarmForge 把他几十年强调的 TDD、重构与工程纪律，用一套可执行的“宪法”与流程脚本注入到每只 AI 的工作中。\n- 诞生背景：当下各类 Agent/Orchestrator 盛行，但大多偏“能跑就行”，质量与可维护性往往被牺牲。SwarmForge 想回答的问题是：如何让一群 AI 像成熟工程团队一样协作，而不是像一群各自为战的脚本小子。\n- 核心痛点：\n  - 多 Agent 抢改同一代码，冲突频发。\n  - 缺乏统一的质量门禁，TDD/重构/Review 等在实践中被绕过。\n  - 流程不可见，人工难以干预或审查每一步。\n  - 工作流与提示词混杂在项目里，难以复用和治理。\nSwarmForge 的解法是：把流程写成“宪法”，把角色写成 Prompt，把通信写在 handoff 协议，再用 tmux + git worktree 做隔离与可视化。\n---\n## 核心亮点与功能剖析\n### 1) 宪法驱动的协作治理\n- 宪法结构：每个可运行分支都有一个 `constitution.prompt` 作为入口，并由 `constitution/articles/` 下的多篇“文章”来约定工程规范与流程规则；main 分支存放共享默认文章，分支可通过同名文件覆盖，或用 `local-*.prompt` 增补。\n- 层层继承：共享的默认文章在 `main`，如 `engineering.prompt`、`handoffs.prompt`、`workflow.prompt`；分支可以增补 `local-engineering.prompt`、`local-workflow.prompt`，做到“组织规范+项目定制”两不误。\n- 作用：把 Clean Code/敏捷实践写成 Prompt 级约束，每个角色启动时都会读，相当于团队章程对每位成员可见并必须遵守。\n### 2) 多工作流（pack）设计\nSwarmForge 提供三种预设工作流，对应不同任务复杂度与质量要求：\n- two‑pack（快速后端流程）\n  - 角色：coder、cleaner。\n  - 适用：小任务，不需要 Gherkin/验收测试。\n  - 流程：coder → cleaner → coder， tight 实现/重构闭环。\n  - cleaner 负责批量 CRAP/DRY 评审、架构审、封装与关注点分离修复，以及语言变异加固。\n- four‑pack（紧凑规格流程）\n  - 角色：specifier、coder、refactorer、architect。\n  - 适用：需要 Gherkin 验收规格与一定架构考量的中型项目。\n  - specifier 把用户意图转化为 Gherkin 并等待审批；coder 按 TDD 写实现与验收测试；refactorer 做行为保持的清理、覆盖率提升、CRAP/DRY 审、变异位点扫描；architect 评估模块结构、依赖方向与变异加固。\n- six‑pack（完整流程）\n  - 角色：specifier、coder、cleaner、architect、hardender、QA。\n  - 适用：重大项目，需要完整规格、前置 QA、后端验证与显著架构考量。\n  - QA 把 specifier 的 QA 流程转化为可执行脚本并做 UI 验证与一致性检查；hardender 负责变异加固与双重验证。\n### 3) Git Worktree + tmux 的隔离与可观测性\n- 每个角色分配到独立的 git worktree（除非角色为 master/none），避免直接改同一分支。\n- 每个角色对应一个 tmux 会话，SwarmForge 能通过终端适配器在各终端（macOS Terminal、Windows Terminal、Ghostty、WezTerm 等）中自动打开窗口或标签页，实现“每角色一窗口”的实时观测。可自定义 `SWARMFORGE_TERMINAL` 或新增适配器。\n- 直观收益：你可以像看直播一样盯着不同角色的会话，人工随时介入或暂停。\n### 4) Handoff 协议与消息传递\n- 角色间通过守护进程投递的 handoff 文件通信，用 `swarm_handoff.sh`、`ready_for_next.sh`、`done_with_current.sh` 等脚本进行“写草稿—认领—完成”的闭环。\n- 提供了 `handoff-protocol.md` 明确协议规范，便于调试与扩展。\n### 5) 自托管、轻量、本地优先\n- 依赖：zsh、git、tmux、Babashka（bb）、至少一个配置好的 AI 后端（如 codex、claude、copilot、grok）。\n- 启动方式：在项目目录拉取可运行分支的压缩包并解压，然后执行 `./swarm`。首次运行会从 main 拉取共享脚本与宪法文章，后续运行复用本地文件。\n- 防睡眠：macOS 使用 `caffeinate`，Linux 使用 `systemd-inhibit` 避免机器休眠中断任务。\n---\n## 目标人群与收益\n- 最适合：\n  - 对工程质量有执念、常用 CLI/macOS/WSL 的个人开发者或小团队。\n  - 熟悉或愿意学习 TDD/重构/Gherkin 的工程师。\n  - 需要长时间无人值守完成多步骤任务，但依然要质量与审查闭环的人。\n- 能带来的具体收益：\n  - 把“Agent 写代码”从“野生拼凑”升级为“有流程可追踪、有宪法可执行、有角色可观测”的专业协作流水线。\n  - 通过角色隔离与 handoff 机制，减少多 Agent 并发修改导致的冲突与混乱。\n  - 内建 CRAP/DRY、覆盖率、变异测试、Gherkin 验收等质量门禁的 Prompt 级约束，避免“只求能跑”的滑坡。\n  - 全程本地运行，可自行换模型、换后端，数据与流程掌控在自己手里。\n---\n## 竞品/同类对比\n- 与通用多 Agent 框架对比：大多数竞品更注重“调度、工具调用、跨平台编排”，而 SwarmForge 聚焦在“软件工程纪律”的落地，强调 TDD/重构/规格/审查等质量活动的流程化与自动化，而非泛用任务编排。\n- 与 IDE 集成式 Copilot/Coder 对比：SwarmForge 不绑定 IDE，是“进程级、项目级”的编排，更适合在 tmux 下长时间运行的批处理式开发，而非单次补全或单文件编辑。\n- 与仅有 Prompt 模板的“Role Play 仓库”对比：SwarmForge 的独特之处在于：\n  - 提供可执行的脚本与终端适配器，真正驱动 tmux 会话与 git worktree。\n  - 提供可覆盖/增补的“宪法文章”体系，支持多项目、多组织复用与治理。\n  - 以分支为单位的“多 Pack”预设工作流，开箱即用。\n---\n## 局限与不足\n- 学习与配置门槛：\n  - 需要熟悉 zsh/tmux/git worktree，并至少掌握一种 CLI 式 AI 后端的使用与配置。\n  - 如需自定义终端适配器或增补宪法，需要编写 shell/适配器脚本与 Prompt，对小白不太友好。\n- 平台与生态：\n  - 当前对 macOS 与 WSL/Windows Terminal 的适配较完整，但对部分终端或桌面环境的窗口追踪能力有限，只能走“仅启动”模式。\n  - 没有看到现成的 Docker 一键部署或云端托管方案，需要自己打包和维护环境。\n- 社区与维护：\n  - 虽然有近 2.9k Star 与数百 Fork，但 Issues 与 PR 数量不算多，新人上手可能需要自己读源码与 README。\n  - README 明确提示不要购买名为 bankrbot 的 SWARM 代币，说明项目已被投机者盯上，需警惕周边风险。\n- 性能与资源：\n  - 多窗口 tmux 会话 + 多 worktree 会带来一定磁盘与进程开销，大量并行角色时需要注意机器资源。\n---\n## 上手门槛与部署体验\n- 先决条件安装：zsh、git、tmux、Babashka（bb），并配置一个后端（如 claude、copilot 等）。\n- 快速开始（以 four-pack 为例）：\n  - 在项目目录执行：\n    ```bash\n    BRANCH=four-pack\n    curl -L \"https://github.com/unclebob/swarm-forge/archive/refs/heads/${BRANCH}.tar.gz\" | tar -xz --strip-components=1\n    ```\n  - 然后启动：\n    ```bash\n    ./swarm\n    ```\n  - 停止：关闭 `swarmforge/swarmforge.conf` 中列出的首个“清理窗口”，它会自动关闭其余追踪窗口与 tmux 会话。\n- 文档体验：\n  - README 提供了分支说明、先决条件、Getting Started、终端行为、宪法结构与“如何添加终端后端”等章节，内容详实且结构清晰。\n  - 仓库中还包含 `handoff-protocol.md`、`issues.md`、`pack-ui*.md` 等补充文档，帮助理解协议与未来 UI 规划。\n---\n## 技术栈与架构解析\n- 技术栈：\n  - Shell（zsh）用于启动与编排。\n  - Babashka（Clojure Scripting Runtime）用于部分脚本逻辑与跨平台兼容（`bb.edn`）。\n  - tmux 用于会话管理。\n  - git worktrees 用于角色隔离。\n  - AppleScript/WSL 等用于终端窗口的自动化与追踪（通过适配器合约统一）。\n- 架构设计：\n  - main 分支“文档化”+共享脚本与默认宪法文章；可运行分支承载特定 Pack 的配置、角色 Prompt 与本地宪法。启动时由 `./swarm` wrapper 从 main 同步缺失的脚本与文章。\n  - 启动流程：读配置 → 复制脚本与宪法 → 校验角色与适配器 → 初始化 Git 仓库（如需要） → 创建角色 worktree → 同步脚本与文章到各 worktree → 创建 tmux 会话并打开终端 → 启动睡眠抑制。完成后由 handoff 脚本驱动角色流转。\n  - 终端适配器合约（扩展点）：提供五个函数（label、can_open_sessions、tracks_windows、open_session、window_exists、close_window），让不同终端在统一接口下接入。\n---\n## 代码/Demo 示例\n- 拉取并启动一个 Pack（four-pack）的命令：\n  ```bash\n  BRANCH=four-pack\n  curl -L \"https://github.com/unclebob/swarm-forge/archive/refs/heads/${BRANCH}.tar.gz\" | tar -xz --strip-components=1\n  ./swarm\n  ```\n- 指定终端后端（如 Ghostty）：\n  ```bash\n  SWARMFORGE_TERMINAL=ghostty ./swarm\n  ```\n- “如何添加终端后端”的适配器骨架示例：\n  ```bash\n  # swarmforge/scripts/terminal-adapters/wezterm.sh\n  terminal_backend_label() {\n    echo \"WezTerm\"\n  }\n  terminal_backend_can_open_sessions() { return 0; }\n  terminal_backend_tracks_windows() { return 0; }\n  terminal_open_session() {\n    local session=\"$1\" title=\"$2\" sibling_id=\"${3:-}\"\n    # 启动一个 tmux session 的窗口/标签，并输出稳定的 id\n  }\n  terminal_window_exists() {\n    local window_id=\"$1\"\n    # 返回 0 表示窗口仍存在\n  }\n  terminal_close_window() {\n    local window_id=\"$1\"\n    # 关闭指定窗口\n  }\n  ```\n---\n## 社区活跃度与生命力\n- 截至 2026‑08‑27，main 分支仍在持续提交（当天有多条 commit 记录），说明作者在积极维护。\n- Star 约 2.9k、Fork 近 300，Issues 与 PR 数量适中，反映项目有一定关注度但社区规模适中，生态以“脚本与 Prompt 为主”，暂未出现大量第三方插件或工具链扩展。\n---\n## 结语与行动建议\n- 终极评判：SwarmForge 是“工程纪律优先”的多智能体编排平台，非常适合追求可维护性与可观测性、且愿意接受 CLI/tmux 工作流的开发者。它不试图成为“万能自动化大脑”，而是做好“把 AI 们组织成工程师”这一件事。\n- 行动建议：\n  - 如果你是 macOS 或 WSL 用户、熟悉 tmux/CLI，且正在寻找能将 TDD/重构/规格/QA 等工程实践自动化到 Agent 流水线里的方案，值得一试。\n  - 建议从 two‑pack 开始跑通第一轮，熟悉 handoff 协议与角色工作方式，再尝试 four‑pack/six‑pack。\n  - 若你在企业/团队中落地，建议先在内网 fork 一份，统一维护“公司级宪法”与“终端适配器”，再按项目定制本地 `local-*.prompt`。\n  - 小白用户不妨先花半天补齐 tmux 与 git worktree 的基础知识，再按 README 的 Getting Started 一步步走，能避免大部分配置踩坑。\n一句话收尾：SwarmForge 不是“黑箱魔法”，而是一套可审计、可定制、可工程化落地的 AI 协作流水线。选不选它，取决于你愿不愿意把“纪律”也写进代码和流程里。"
 }

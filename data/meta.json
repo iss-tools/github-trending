@@ -2,11 +2,11 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 60
+      "count": 63
     },
     {
       "tag": "自动化",
-      "count": 40
+      "count": 42
     },
     {
       "tag": "GitHub",
@@ -30,11 +30,11 @@
     },
     {
       "tag": "隐私保护",
-      "count": 15
+      "count": 16
     },
     {
       "tag": "DevOps",
-      "count": 12
+      "count": 13
     },
     {
       "tag": "工作流",
@@ -84,35 +84,35 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 126
+      "count": 129
     },
     {
       "name": "AI 编程",
-      "count": 113
+      "count": 115
     },
     {
       "name": "效率工具",
-      "count": 40
+      "count": 41
     },
     {
       "name": "生活效率",
-      "count": 17
+      "count": 18
     },
     {
       "name": "开发者工具",
       "count": 14
     },
     {
+      "name": "开源项目",
+      "count": 13
+    },
+    {
       "name": "开源社区",
       "count": 11
     },
     {
-      "name": "开源项目",
-      "count": 10
-    },
-    {
       "name": "隐私安全",
-      "count": 8
+      "count": 9
     },
     {
       "name": "操作系统",
@@ -143,11 +143,11 @@
       "count": 6
     },
     {
-      "name": "安全工具",
+      "name": "团队协作",
       "count": 5
     },
     {
-      "name": "团队协作",
+      "name": "安全工具",
       "count": 5
     },
     {
@@ -166,7 +166,7 @@
   "topSuitable": [
     {
       "name": "开源项目维护者",
-      "count": 15
+      "count": 17
     },
     {
       "name": "技术团队负责人",
@@ -229,10 +229,6 @@
       "count": 8
     },
     {
-      "name": "安全研究员",
-      "count": 7
-    },
-    {
       "name": "开发者与产品经理",
       "count": 7
     },
@@ -243,6 +239,10 @@
     {
       "name": "数字营销与电商运营",
       "count": 7
+    },
+    {
+      "name": "AI Agent 构建者",
+      "count": 7
     }
   ],
   "topTopics": [
@@ -252,15 +252,15 @@
     },
     {
       "name": "claude-code",
-      "count": 30
+      "count": 32
     },
     {
       "name": "ai-agents",
-      "count": 29
+      "count": 31
     },
     {
       "name": "ai",
-      "count": 25
+      "count": 27
     },
     {
       "name": "agent-skills",
@@ -271,12 +271,12 @@
       "count": 20
     },
     {
-      "name": "python",
-      "count": 16
+      "name": "claude",
+      "count": 18
     },
     {
-      "name": "claude",
-      "count": 16
+      "name": "python",
+      "count": 17
     },
     {
       "name": "agents",
@@ -287,7 +287,11 @@
       "count": 15
     },
     {
-      "name": "mcp",
+      "name": "ai-agent",
+      "count": 15
+    },
+    {
+      "name": "local-first",
       "count": 14
     },
     {
@@ -295,11 +299,7 @@
       "count": 14
     },
     {
-      "name": "local-first",
-      "count": 14
-    },
-    {
-      "name": "ai-agent",
+      "name": "mcp",
       "count": 14
     },
     {
@@ -312,14 +312,14 @@
     },
     {
       "name": "developer-tools",
+      "count": 11
+    },
+    {
+      "name": "chatgpt",
       "count": 10
     },
     {
       "name": "prompt-engineering",
-      "count": 10
-    },
-    {
-      "name": "chatgpt",
       "count": 10
     },
     {
@@ -333,11 +333,11 @@
       "count": 66
     },
     {
-      "name": "Rust",
+      "name": "TypeScript",
       "count": 27
     },
     {
-      "name": "TypeScript",
+      "name": "Rust",
       "count": 27
     },
     {
@@ -373,15 +373,15 @@
       "count": 1
     },
     {
-      "name": "Nim",
-      "count": 1
-    },
-    {
       "name": "C++",
       "count": 1
     },
     {
       "name": "Clojure",
+      "count": 1
+    },
+    {
+      "name": "Nim",
       "count": 1
     }
   ],
@@ -389,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471351,
+      "stars": 471412,
       "appearances": 0
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119068,
+      "stars": 119102,
       "appearances": 4
     }
   ],
@@ -451,7 +451,13 @@
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2344,
+      "stars": 2354,
+      "appearances": 5
+    },
+    {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "stars": 22546,
       "appearances": 5
     },
     {
@@ -461,51 +467,45 @@
       "appearances": 5
     },
     {
-      "repo": "freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 22417,
-      "appearances": 5
-    },
-    {
       "repo": "basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "stars": 32337,
+      "stars": 32378,
       "appearances": 5
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38431,
+      "stars": 38452,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50700,
+      "stars": 50729,
       "appearances": 5
-    },
-    {
-      "repo": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "stars": 119068,
-      "appearances": 4
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 3700,
+      "stars": 3711,
       "appearances": 4
     },
     {
-      "repo": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 49869,
-      "appearances": 3
+      "repo": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "stars": 119102,
+      "appearances": 4
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2577,
+      "stars": 2598,
+      "appearances": 3
+    },
+    {
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "stars": 49911,
       "appearances": 3
     }
   ]
