@@ -65,19 +65,19 @@
       "count": 9
     },
     {
+      "tag": "插件生态",
+      "count": 8
+    },
+    {
+      "tag": "AI 工具",
+      "count": 8
+    },
+    {
+      "tag": "MCP",
+      "count": 8
+    },
+    {
       "tag": "Linux",
-      "count": 8
-    },
-    {
-      "tag": "Arch Linux",
-      "count": 8
-    },
-    {
-      "tag": "Hyprland",
-      "count": 8
-    },
-    {
-      "tag": "开发环境",
       "count": 8
     }
   ],
@@ -127,11 +127,11 @@
       "count": 8
     },
     {
-      "name": "资源合集",
+      "name": "安全合规",
       "count": 7
     },
     {
-      "name": "安全合规",
+      "name": "资源合集",
       "count": 7
     },
     {
@@ -159,7 +159,7 @@
       "count": 4
     },
     {
-      "name": "知识管理",
+      "name": "开发资源",
       "count": 4
     }
   ],
@@ -201,6 +201,14 @@
       "count": 9
     },
     {
+      "name": "AI 工具极客",
+      "count": 8
+    },
+    {
+      "name": "插件创作者",
+      "count": 8
+    },
+    {
       "name": "资深开发者与极客",
       "count": 8
     },
@@ -218,14 +226,6 @@
     },
     {
       "name": "DHH 的理念追随者",
-      "count": 8
-    },
-    {
-      "name": "AI 工具极客",
-      "count": 8
-    },
-    {
-      "name": "插件创作者",
       "count": 8
     },
     {
@@ -323,7 +323,7 @@
       "count": 12
     },
     {
-      "name": "prompt-engineering",
+      "name": "workflow-automation",
       "count": 12
     }
   ],
@@ -353,11 +353,11 @@
       "count": 4
     },
     {
-      "name": "CSS",
+      "name": "Mojo",
       "count": 3
     },
     {
-      "name": "Mojo",
+      "name": "CSS",
       "count": 3
     },
     {
@@ -389,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471652,
+      "stars": 471675,
       "appearances": 0
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119176,
+      "stars": 119191,
       "appearances": 4
     }
   ],
@@ -451,19 +451,13 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 22905,
+      "stars": 22958,
       "appearances": 6
-    },
-    {
-      "repo": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "stars": 32554,
-      "appearances": 5
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2393,
+      "stars": 2397,
       "appearances": 5
     },
     {
@@ -473,39 +467,45 @@
       "appearances": 5
     },
     {
+      "repo": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 32595,
+      "appearances": 5
+    },
+    {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38521,
+      "stars": 38533,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50817,
+      "stars": 50828,
       "appearances": 5
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 34621,
+      "stars": 34666,
       "appearances": 4
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2665,
-      "appearances": 4
-    },
-    {
-      "repo": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "stars": 119176,
+      "stars": 2687,
       "appearances": 4
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 3750,
+      "stars": 3758,
+      "appearances": 4
+    },
+    {
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "stars": 113981,
       "appearances": 4
     }
   ]

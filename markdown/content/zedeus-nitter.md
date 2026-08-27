@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/zedeus/nitter)
 
-- **Stars**: 13801
+- **Stars**: 13853
 - **Language**: Nim
 
 ## Nitter 开源项目评测：隐私优先的 Twitter 前端

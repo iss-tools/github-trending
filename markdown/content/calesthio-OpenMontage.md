@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/calesthio/OpenMontage)
 
-- **Stars**: 52221
+- **Stars**: 52310
 - **Language**: Python
 
 ## OpenMontage：全流程 AI 视频自动生成框架

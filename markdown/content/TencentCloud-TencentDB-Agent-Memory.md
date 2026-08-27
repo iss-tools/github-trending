@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/TencentCloud/TencentDB-Agent-Memory)
 
-- **Stars**: 24853
+- **Stars**: 24859
 - **Language**: TypeScript
 
 ## TencentDB Agent Memory 评测：为 AI 团队打造的记忆中台
