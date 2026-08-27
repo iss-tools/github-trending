@@ -6,12 +6,15 @@
 
 ## 最新榜单
 
-- [今日热门 (20260826)](markdown/daily/20260826.md)
+- [今日热门 (20260827)](markdown/daily/20260827.md)
 - [本周热门 (202635)](markdown/weekly/202635.md)
 - [本月热门 (202608)](markdown/monthly/202608.md)
 
 ## 历史榜单
 
-- [全部日榜索引](markdown/daily/20260826.md)
-- [全部周榜索引](markdown/weekly/202635.md)
-- [全部月榜索引](markdown/monthly/202608.md)
+### 2026年8月
+
+- 🏆 [2026年8月 月榜](markdown/monthly/202608.md)
+- 📅 **周榜**：[第35周](markdown/weekly/202635.md) · [第34周](markdown/weekly/202634.md)
+- 📝 **日榜**：[27日](markdown/daily/20260827.md) · [26日](markdown/daily/20260826.md) · [25日](markdown/daily/20260825.md) · [24日](markdown/daily/20260824.md) · [23日](markdown/daily/20260823.md)
+

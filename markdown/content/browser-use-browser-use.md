@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/browser-use/browser-use)
 
-- **Stars**: 110855
+- **Stars**: 111070
 - **Language**: Python
 
 ## browser-use 深度评测
