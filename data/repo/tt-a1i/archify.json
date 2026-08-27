@@ -1,0 +1,74 @@
+{
+  "id": "3948f2e9-491d-4ed2-a21b-5a0c6663c4e7",
+  "dateAdded": "20260827",
+  "type": "github-daily",
+  "url": "https://github.com/tt-a1i/archify",
+  "repo": "tt-a1i/archify",
+  "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+  "language": "HTML",
+  "stars": 18681,
+  "forks": 1293,
+  "starsAdded": 1035,
+  "createdAt": "2026-08-27T02:00:56.278Z",
+  "githubData": {
+    "stars": "18681",
+    "forks": "1293",
+    "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export. - tt-a1i/archify",
+    "topics": [
+      "agent-skills",
+      "architecture-as-code",
+      "architecture-diagram",
+      "claude-skill",
+      "code-visualization",
+      "codex",
+      "coding-agents",
+      "data-flow-diagram",
+      "deepseek-harness",
+      "developer-tools",
+      "diagram-as-code",
+      "diagrams",
+      "diagrams-as-code",
+      "dsh-plugin",
+      "mermaid-alternative",
+      "opencode",
+      "sequence-diagram",
+      "software-architecture",
+      "system-design",
+      "text-to-diagram"
+    ],
+    "license": "MIT license",
+    "homepage": "https://tt-a1i.github.io/archify/"
+  },
+  "summaryData": {
+    "tags": [
+      "GitHub 开源",
+      "架构图生成",
+      "AI Agent",
+      "可视化",
+      "CLI 工具"
+    ],
+    "cover": "",
+    "title": "Archify - AI 时代的可验证架构图生成工具",
+    "ability": [
+      "AI 生成架构图",
+      "结构化验证与对比",
+      "交互式图表查看",
+      "多平台 Agent 集成",
+      "多格式导出"
+    ],
+    "summary": "Archify 让 AI 生成结构化 JSON 并自动渲染为专业架构图，支持验证、版本对比和交互式查看，解决 AI 生成图表不可靠的问题。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "效率工具"
+    ],
+    "suitable": [
+      "AI 编程开发者",
+      "技术负责人/架构师",
+      "DevOps/SRE",
+      "技术文档撰写者"
+    ],
+    "description": "Archify 是一个面向 AI Agent 的开源工具，通过引导 AI 生成结构化 JSON 来绘制架构图、流程图等。它具备严格的校验机制、版本变更对比功能以及交互式查看器，能产出高质量、可分享的 HTML/SVG 图表，极大地提升了技术沟通与架构评审的效率。"
+  },
+  "contentDetail": "# Archify 深度评测\n一句话总结：Archify 把“画架构图/流程图/时序图/数据流/状态机”这件事，从手动绘图变成了“让 AI 代理先生成结构化 JSON，再自动校验、渲染成单文件 HTML + SVG”的一条稳定流水线，产出可验证、可分享、可导出（PNG/SVG/WebM/分享卡片）的专业技术地图，且支持对架构变更做“Before/Delta/After”结构化对比，是面向 Agent 时代的“可信赖技术沟通神器”。\n---\n## 背景与痛点\n### 为什么需要 Archify？\n- **沟通成本高**：架构评审、技术评审、需求对齐，大家常在 PPT/白板/画布工具间来回切换，版本对不上、细节不一致。\n- **AI 生成不可靠**：直接让大语言模型（LLM）生成 SVG/画布操作，经常会“看起来像”，但元素对齐、文本重叠、关系标注、可维护性都不好，且很难做“增量修改”而不崩坏整体。\n- **Mermaid/Diagram as Code 的局限**：语法学习门槛、自动化排版效果不可控、样式定制与主题切换繁琐，缺少面向演示（如深浅主题一键切换）和“验证与变更比对”的工程能力。\n- **多 Agent 生态的碎片化**：Raven、Cursor、Claude Code、Codex CLI、OpenCode 等各自为战，缺少一个“跨 Agent 可复用”的技能包，导致重复建设与口径不一致。\n### Archify 的解法思路\n- **把 AI 的输出从“最终图形”收束到“可验证的中间表达（Typed JSON IR）”**：由 Agent 生成符合 Schema 的 JSON；再用内置渲染器与校验器产出最终 HTML/SVG，确保输出是“确定性的、机器可检查的”，而非随意的绘图指令。\n- **围绕“可验证、可分享、可导出”设计**：生成的是单文件 HTML，内置 viewer（支持搜索、聚焦、上下游溯源、路径探查、演示模式、主题切换），导出 PNG/SVG/WebM/分享卡片时不再依赖第三方 SaaS，且产物可溯源到 Git 提交。\n- **做“Agent 的通用技能”**：通过开放技能规范（SKILL.md）与统一 CLI（bin/archify.mjs），把图表生成能力封装成可在多种 Agent 平台上安装、调用的 Skill，而不再与单一工具绑定。\n---\n## 核心亮点与功能剖析\n### 五类图、一条流水线：Architecture / Workflow / Sequence / Data-Flow / Lifecycle\n- **Architecture**：组件、服务、存储、云边界、安全边界；适合“运行时架构、部署拓扑、信任边界”等场景。Prompt 关键词：Scope、核心组件、主路径。\n- **Workflow**：CI/CD、审批、工具调用、运维手册；以泳道/轨道形式呈现主分支与次要分支。关键词：参与者、顺序、分支、异常。 \n- **Sequence**：API 调用链、缓存回退、认证、异步追踪、返回；强调时间轴与调用关系。关键词：调用方、被调用方、返回、时序。 \n- **Data-Flow**：数据管道、血缘、PII 边界、下游消费者；明确“从哪里到哪里的变换与边界”。关键词：来源、变换、存储、边界。 \n- **Lifecycle**：状态机、重试、等待、终态；区分“正常推进/等待/重试/终态”。关键词：状态、事件、重试与取消路径。 \n> 比喻：这好比“同一剧本的五种演出方式”。你是做架构设计师（Architecture）、导演流程（Workflow）、编剧对话（Sequence）、追踪物资流向（Data-Flow），还是为角色画人生状态（Lifecycle），选择对应“剧本类型”，Archify 会给出一套与场景契合的舞台布景。\n### 可验证的中间表达（Typed JSON IR）与多层校验\n- **Agent 生成 JSON IR**：SKILL.md 要求 Agent 先读取对应 schema 与示例，写出符合规范的候选 JSON，而非直接“画图”。\n- **Validate → Render → Check**：CLI 提供 validate / deliver / preview 等子命令，做“Schema 校验 → 布局校验 → HTML/SVG 校验 → 路由与标签重叠检查”，不合格会给出机器可读的“修复收据”（rule codes、定位 subject、支持修复建议）。\n- **Last-good 实时预览**：preview 模式只监听本地 127.0.0.1 随机端口，当且仅当新 JSON 通过全部门禁才刷新视图，否则保留上次“已验证”状态，防止迭代时“看错了版本”。\n### 单文件交付与导出体系\n- 产物是**一份 HTML**（内联 SVG，无外部依赖），可双击直接打开、发给同事或贴到文档系统；支持暗色/浅色主题切换（快捷键 T）与多种视觉预设（classic/signal-flow/blueprint 等）。\n- **导出**：支持一键复制 PNG 到剪贴板，以及 PNG/JPEG/WebP/SVG/WebM 与 1200×630 分享卡片（适合 README/社交分享）；SVG 包含深浅两套变量 + prefers-color-scheme，无需手动制作两图。 导出分辨率“原生最高 4×”，避免模糊插值。\n### 架构变更的“Before / Delta / After”对比\n- 对比两个已验证的 JSON 快照，生成结构化 delta（新增/删除/语义变化/移动/重路由），并以“机器收据”呈现，便于 PR/合并前评审。 CLI 示例：`node archify/bin/archify.mjs compare architecture base.json head.json architecture-delta.html --json`。\n- “Delta”与“Architecture Delta 模式”支持 Before/Delta/After 一页统一查看与“有限故事回放”，方便聚焦变更、不影响运行时环境（只读、不做推断）。\n### 交互式 viewer 能力（纯前端）\n- **搜索与聚焦（/ + 节点名）**：快速定位组件。 \n- **上下游溯源**：选中节点 → Upstream/Downstream，查看可达范围与精确路径，不编造拓扑。 \n- **路径探查（R 或 PATH）**：检查两点间最短“已撰写的有向路径”，用于“请求/数据链路”排查。 \n- **语义角色对比（L 或 LENS）**：对比不同语义角色之间的流量或关系。 \n- **全局雷达（M 或 MAP）**：可视化概览。 \n- **引导故事与章节切换（P / [ / ]）**：播放预设的“章节化叙事”，用于演示与文档化。 \n- **演示模式（F）**：进入“舞台模式”，聚焦内容。 \n- **URL 稳定链接**：通过 `#focus=...&reach=...` 等锚点恢复视角与过滤状态，方便分享“特定视角”的图表。 \n### 面向 Agent 的“零依赖 Skill 包”\n- 通过 `npx skills add tt-a1i/archify -g` 一键安装（依赖 Vercel Labs 的 skills CLI），支持 Claude Code、Codex CLI、OpenCode、Cursor、Raven 等平台；亦可上传 archify.zip 到 Claude.ai 的 Skills 或项目知识库。 DeepSeek Harness 提供社区插件，`dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`。 包内无需 npm install，完全“就绪可用”。\n> 比喻：Skill 像一张“随身菜单”，你只要问 Agent“使用 archify 把这个仓库的运行时架构画出来”，Agent 就按“菜单”一步步完成：选类型、读 schema、写 JSON、校验、交付 HTML。\n### Proof Lab 与真实仓库案例\n- 官方 Proof Lab 提供多组“已验证的案例”与对应 JSON 源文件，覆盖 workflow、sequence、dataflow、lifecycle、architecture 等，并支持“引导故事/路径探查/语义镜头”交互体验。 还有“从真实仓库生成”的 mco-org/mco 运行时架构案例，展示从 Git 提交到“已验证地图”的端到端能力。\n---\n## 目标人群与收益\n- **使用 AI 编码代理的一线开发者**：不用离开 IDE/聊天界面，就能把“架构图/流程图”交给 Agent 生成，并在 PR 阶段做架构变更的可视化审查。 收益：评审沟通更顺畅，减少“画图摆拍”。\n- **技术负责人/架构师**：需要产出可维护、可溯源、可分享的架构与技术流程文档，同时希望与团队快速对齐。 收益：版本可验证，变更可对比，沟通成本大幅降低。\n- **DevOps/SRE**：需要可视化 CI/CD、运维手册、状态机、重试与降级路径。 收益：把“剧本式流程”变成可回放、可导出的动态图，方便新人 onboarding。\n- **技术文档/布道师**：需要高质量、可导出（尤其是 SVG/分享卡片）、可主题切换的图表，并在 README、演讲幻灯片中复用。 收益：出图不再依赖设计团队，交付更专业。\n- **使用多种 Agent 的用户**：Raven、Cursor、Claude Code、Codex CLI、OpenCode、DeepSeek Harness 等平台可共享同一个 Skill，不必为每个平台重做图表。 收益：能力统一，减少重复投入。\n---\n## 竞品/同类对比\n| 项目 | 类型 | AI 集成 | 验证/变更对比 | 交付形态 | 多主题/导出 | 侧重点 |\n|---|---|---|---|---|---|---|\n| Archify | Agent Skill + CLI | 深度（SKILL 规范引导 Agent 生成 JSON） | 有（Before/Delta/After、机器收据） | 单文件 HTML（内联 SVG） | 主题切换、PNG/JPEG/WebP/SVG/WebM/分享卡片 | 可验证的技术沟通、交互式地图 |\n| Mermaid | DSL | 需第三方集成 | 无变更对比工具链 | 代码转 SVG/文本 | 有限（需主题/样式配置） | 文本即图，通用性高 |\n| PlantUML | DSL | 需第三方集成 | 无变更对比工具链 | 代码转图像/PDF | 可定制主题 | 企业级、图表类型多 |\n| Excalidraw / draw.io | 画布 | 需手动操作 | 版本 diff 较弱 | 在线/本地文件 | 阅读器侧主题 | 手绘感、自由度高 |\n| Kroki / 各种 Diagram-as-a-Code 服务 | 托管/CLI | 需脚本调用 | 无内置变更对比 | 图片/SVG | 视后端而定 | 统一入口、部署即用 |\n### Archify 的独特竞争力\n- **“验证优先 + 变更对比”**：从 JSON IR 到 HTML 经过多层校验，且提供结构化 delta 与机器可读收据，适合工程化、可审计的场景。 \n- **“单文件、离线可用”**：HTML 内联所有必要内容，不需要服务器或在线服务，便于在私有环境/离线环境分享。 \n- **“多 Agent 生态统一技能”**：通过 SKILL.md 与 CLI 提供标准化的 Agent 调用协议，将图表能力从特定工具中解耦。 \n---\n## 局限与不足\n### 不做“通用绘图编辑器”\n- Archify 明确表示不是 WYSIWYG 画布，也暂不提供 Mermaid 自动解析与通用自动布局（已在 Issues 中有“导入 Mermaid”的需求讨论，但仍在路线图中）。\n- 若你需要“自由拖拽摆放、像素级编辑、自由绘制”的体验，还是需要 Excalidraw/draw.io 等传统工具。\n### 上手有一定心智成本\n- 需要理解“JSON IR”与“Schema”的概念（虽然大部分工作由 Agent 完成，但调试或定制仍需阅读 schema 与示例）。\n- 初次使用需要熟悉 Agent 平台的 Skills 安装路径（Claude Code、Codex CLI、OpenCode 的目录布局各不相同），官方给出了路径表，但完全“小白”可能需要对照文档一步步来。 \n### 没有 Docker 一键部署（目前）\n- Issues 中曾有人询问 Docker 支持，但仓库目前并未提供 Dockerfile；项目以 Node.js + CLI 为主，Skill ZIP 也无需运行时依赖。 对于期望“容器化”的用户需要自行封装。\n### 当前功能边界\n- “自动布局”不是通用 DAG 布局，而是“Renderer 依据 Agent 指定的层级/端口/通道进行有约束的排版”，因此当 Agent 描述不够精确时，需要迭代修正（SKILL.md 给出了两轮修复策略）。\n- 不提供“托管分享平台”，需要通过 HTML/SVG/图片方式自行分发。 \n---\n## 技术栈与架构解析\n### 技术栈\n- **运行时**：Node.js（CLI 与 Skill 内核）。 README 提供的 doctor/demo 命令均通过 node bin/archify.mjs 调用，属于无 npm 依赖的“单体包”。 \n- **包管理与分发**：提供 npm 技能安装（skills CLI）与 archify.zip 两种形式；仓库包含 scripts/build-zip.sh 用于构建可复现的 ZIP（含 package.json 与锁文件）。\n- **语言**：从文件名 .mjs 与 JSON schema 分布可见，主要实现为 JavaScript（ESM），配合 JSON Schema 做类型与验证定义。 \n- **渲染与前端**：产物为 HTML + 内联 SVG，viewer 能力由嵌入的 JS/CSS 提供；无第三方前端依赖，使用本地字体回退。 \n### 架构与代码组织\n- 仓库划分为：\n  - **archify/**：核心 Skill 与 renderer/validator 等实现。\n  - **archify/schemas/**：各图表类型的 JSON Schema，是“Typed JSON IR”的契约。\n  - **examples/**：各类型示例 JSON 与对应的 HTML（含 workflow、sequence、dataflow、lifecycle、architecture、delta 等），覆盖常见场景并作为“AI 参考”。 \n  - **bin/archify.mjs**：统一 CLI 入口，提供 doctor/demo/guide/validate/deliver/preview/render/check/visual-check/brands/examples 等子命令。 \n  - **SKILL.md**：给 Agent 的“技能说明书”，定义何时使用、如何读 schema/示例、如何生成候选 JSON、如何验证与交付、Mermaid 导入与 viewer runtime 说明。 \n  - **CHANGELOG/ROADMAP/CONTRIBUTING**：版本演进、未来路线与贡献规范。 \n> 比喻：Archify 的架构像“剧本编辑部 + 剧团”。Schema 是剧本大纲与角色表，Agent 是编剧写出初稿 JSON，renderer 与 validator 是排练与审校，viewer 是剧团在舞台上按剧本演出；CLI 是总控与场记，确保每一幕都按“既定门禁”上戏。\n---\n## 上手门槛与部署体验\n### 最快上手（60 秒）\n- **安装**：`npx skills add tt-a1i/archify -g`\n- **使用（在支持的 Agent 中）**：`Use archify to map this repository's runtime architecture.` 或 `Use archify to draw this login flow: Browser -> Web App -> API -> JWT validation -> Redis session lookup -> PostgreSQL fallback. Make the cache-miss path secondary.`\n### 非安装试用\n- `npx skills use tt-a1i/archify@archify --agent codex`（可把 codex 替换为 claude-code 或 opencode）。 \n### CLI 本地使用\n- 克隆仓库后，执行：\n  - `node bin/archify.mjs doctor`（环境自检）\n  - `node bin/archify.mjs demo /tmp/archify-demo`（生成示例）\n  - `node bin/archify.mjs validate workflow examples/agent-tool-call.workflow.json --quality showcase --json`\n  - `node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase --open --json`\n  - 可选：`node bin/archify.mjs preview workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase`（本地实时预览）\n### 手动安装路径（不使用 skills CLI）\n- 按 README 提供的表，将 archify.zip 解压到对应平台目录：\n  - Raven：~/.raven/workspace/skills/archify\n  - Claude Code：~/.claude/skills/ 或项目内 .claude/skills/\n  - Codex CLI：~/.agents/skills/ 或项目内 .agents/skills/\n  - OpenCode：~/.config/opencode/skills/ 或 .opencode/skills/ 或 .agents/skills/\n  - Claude.ai：Settings → Capabilities → Skills 上传 archify.zip\n- DeepSeek Harness（社区插件，非官方）：`dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`\n### 文档质量\n- 提供中英文 README、Scenario Guide、Proof Lab、Schema 参考、Agent Cookbook 等，并给出 Scenario-first 提示词与 Prompt 模式；中文 README 更贴近国内用户。 \n- SKILL.md 对 Agent 足够明确，包含“类型路由、Mermaid 导入、作者不变量、交付与 viewer runtime”等章节，帮助 Agent 正确生成与交付。 \n---\n## 社区活跃度与生命力\n### 量化指标（快照）\n- GitHub Stars：约 17k+；Forks：约 1.1k+。 \n- Issues：十余个公开 issue（多为功能需求与已知 bug），Pull Requests：约 9 个开放、58 个已合并，最近的 PR 提交日期为 8 月 26 日。Issues 与 PR 中包含来自不同贡献者的修复与增强，显示持续迭代。 \n- 项目曾登上 GitHub Trending，并入选第三方趋势分析页面。 \n### 近期方向（从 Issues 与 PR 观察）\n- 社区 PR 涵盖“品牌捕获修复、仓库证据与校验 tighten、ZIP 构建可复原子、viewer 导航与 CLI 选项修复”等，并出现“导出为 draw.io”等功能性 PR。 \n- Issues 讨论了“Mermaid 导入”、“Docker 支持”、“多平台插件市场集成”等需求，部分已在路线图中。 \n### 维护节奏\n- CHANGELOG 与 ROADMAP 表明项目仍在活跃开发中，且维护者对“ breaking 变更、兼容性、新增平台集成”等保持谨慎态度（例如对 DeepSeek Harness 插件的兼容性与变更边界做了清晰限制）。 \n---\n## Demo / 代码示例\n### Prompt 示例（ Architecture）\n- “Analyze this repository, then use archify to create a high-level runtime architecture diagram. Show 8–12 core components, one primary request path, external dependencies, and trust boundaries. Put supporting detail in cards instead of adding more edges.”\n- “Use archify to draw this login flow: Browser -> Web App -> API -> JWT validation -> Redis session lookup -> PostgreSQL fallback. Make the cache-miss path secondary.”\n### CLI 快速体验\n- 健康检查与示例：\n  - `node bin/archify.mjs doctor`\n  - `node bin/archify.mjs demo /tmp/archify-demo`\n- 渲染与校验：\n  - `node bin/archify.mjs validate workflow examples/agent-tool-call.workflow.json --quality showcase --json`\n  - `node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tmp/workflow.html --quality showcase --open --json`\n- 比对架构变更（Before/Delta/After）：\n  - `node archify/bin/archify.mjs compare architecture base.json head.json architecture-delta.html --json`\n### 调用 archify 的最小示意（伪代码）\n- 在 Agent 的技能流程中，通常的调用链是：\n  - 步骤 1：Agent 读取对应 schema（例如 architecture.schema.json）与示例（examples/*.architecture.json）。\n  - 步骤 2：Agent 写出符合 schema 的候选 JSON（如 my-repo.architecture.json）。\n  - 步骤 3：Agent 调用 `validate` 进行校验并解析 diagnostics。\n  - 步骤 4：若未通过，根据“支持的修复”进行最多两轮定向修改；否则调用 `deliver` 生成最终 HTML。\n  - 步骤 5：返回 HTML 路径、类型、验证摘要与规格/产物收据给用户。\n> 由于篇幅与界面限制，完整的 JSON 示例请参考 examples/ 目录下的 *.architecture.json / *.workflow.json / *.sequence.json 等文件；CLI 输出包含 validation/diagnostics 的机器可读 JSON，便于集成到 CI/CD 或 PR 检查中。 \n---\n## 结语与行动建议\n### 终极评判\n- Archify 并非要取代传统绘图工具，而是瞄准“Agent 时代的可验证技术沟通”这一空白：把“对图的需求”结构化为 JSON IR，并通过验证与交付流程，把“画图”变成工程的一部分。其“Before/Delta/After、验证收据、单文件交付、多 Agent 生态集成”等特性，对需要频繁评审与协作的团队非常实用。 对于已经在使用 Claude Code/Cursor/Codex/OpenCode 等工具的开发者，值得将其纳入 Skill 箱，让“架构图/流程图”成为对话的天然产出。\n### 行动建议（适合不同角色）\n- **如果你是“用 AI 写代码的一线开发者”**：\n  - 先安装：`npx skills add tt-a1i/archify -g`。\n  - 在日常对话中尝试“用 archify 梳理当前仓库的运行时架构/登录流程/CI 流程”，并将生成的 HTML 贴到团队文档。\n- **如果你是“技术负责人/架构师”**：\n  - 在 PR 模板中增加“使用 archify 生成架构 delta 并附上收据”的步骤，用结构化对比提升评审质量。\n- **如果你是“DevOps/SRE”**：\n  - 用 workflow 与 lifecycle 图化简“审批、发布、重试与降级”流程，并通过引导故事为新人培训。\n- **如果你是“文档/布道”**：\n  - 利用 SVG 与分享卡片，把 README/发布会/社交媒体的图表提升到“高保真、自适应主题”的水准。\n- **如果你是“平台/工具作者”**：\n  - 参考 SKILL.md 中的“Agent 约定与交付合同”，将类似的“可验证中间表达 + 校验交付”模式应用到更多工具链。\n### 风险与预期管理\n- 不要把 Archify 当成“通用绘图工具”或“拖拽式编辑器”；它的价值在于“生成与验证”，而非自由绘制。\n- 在初次使用时，花 10–15 分钟阅读 Prompt 模式与 Scenario Guide，会显著提升 Agent 的第一次产出质量。 \n- 若你对“Docker 化部署”或“特定平台插件”有强需求，建议关注 Issues 与 ROADMAP，或参与贡献（项目欢迎 PR 与真实图例）。 \n总体而言，Archify 在“Agent 生成技术图”这个细分赛道上，做出了“可验证、可交付、可分享”的差异化路径，适合希望在 AI 工作流里把“图”当工程对待、而不仅是插图的团队和个人。"
+}

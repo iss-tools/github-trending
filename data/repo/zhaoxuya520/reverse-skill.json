@@ -1,0 +1,54 @@
+{
+  "id": "f21c8a1b-f274-444e-bcb4-b3ee263c3bdc",
+  "dateAdded": "202608",
+  "type": "github-monthly",
+  "url": "https://github.com/zhaoxuya520/reverse-skill",
+  "repo": "zhaoxuya520/reverse-skill",
+  "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+  "language": "PowerShell",
+  "stars": 29649,
+  "forks": 4043,
+  "starsAdded": 20811,
+  "createdAt": "2026-08-27T02:01:00.697Z",
+  "githubData": {
+    "stars": "29649",
+    "forks": "4043",
+    "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端 - zhaoxuya520/reverse-skill",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": ""
+  },
+  "summaryData": {
+    "tags": [
+      "逆向工程",
+      "渗透测试",
+      "Agent路由",
+      "自动化",
+      "GitHub开源"
+    ],
+    "cover": "",
+    "title": "reverse-skill：给 AI 装上逆向工程与渗透测试的“安全大脑”",
+    "ability": [
+      "AI 智能路由",
+      "工具链自动配置",
+      "经验自进化沉淀",
+      "全场景安全覆盖",
+      "合规授权门控"
+    ],
+    "summary": "面向 AI 编程助手的安全技能路由包，通过智能路由实现工具链自动调度与经验沉淀。",
+    "category": [
+      "AI 编程",
+      "安全工具",
+      "开发者工具"
+    ],
+    "suitable": [
+      "安全研究人员",
+      "渗透测试工程师",
+      "CTF 竞赛选手",
+      "甲方安全工程师",
+      "AI 开发者"
+    ],
+    "description": "reverse-skill 是一个专为 Claude Code、Cursor 等AI助手设计的安全技能路由包。它通过结构化规则精准分诊任务，自动配置逆向与渗透测试工具链，并能将分析经验自动沉淀为知识库，大幅提升安全研究效率与合规性。"
+  },
+  "contentDetail": "# 🛡️ reverse-skill：给 AI 装上逆向工程与渗透测试的“安全大脑”\n> 一句话总结：这是一个面向 AI 编程助手（如 Claude Code、Cursor）的**安全技能路由包**，它通过结构化规则和智能路由，让 AI 能够像资深安全研究员一样自主判断任务类型、调用正确工具链、沉淀可复用经验，并将操作流程标准化。\n---\n## 🔍 背景与痛点：AI 做安全的三大难题\n在逆向工程、渗透测试和安全研究中，AI 助手正变得日益强大，但它们普遍面临三大核心痛点：\n| 痛点 | 具体表现 | 影响 |\n| :--- | :--- | :--- |\n| **工具选择混乱** | 面对 APK，不知用 `jadx` 还是 `apktool`；面对 ELF，不知用 `radare2` 还是 `Ghidra`；遇到 JS 混淆，不知该上 `de4js` 还是 AST 分析。 | **效率低下**：反复试错，消耗大量时间在工具和环境配置上。 |\n| **方法论缺失** | 缺乏针对特定任务（如 APK 逆向、JS 解密、CTF 解题）的**标准化、可复用的工作流程**，每次都从零摸索。 | **经验无法复用**：踩过的坑、解过的题，下次遇到同类问题还得从头来过。 |\n| **授权与合规风险** | 传统 AI 工具缺乏强制性的**授权确认步骤**，容易在无意中对未授权目标执行操作，留下合规隐患。 | **法律风险**：可能触发安全法规红线，导致责任事故。 |\n`reverse-skill` 正是为了解决这些“最后一公里”问题而生的。它不提供新的工具，而是为 AI 提供了一套**决策中枢和流程引擎**，让 AI 先“想清楚再动手”。\n## ✨ 核心亮点与功能剖析\n### 1. AI 智能路由：从“猜命令”到“精准分诊”\n`reverse-skill` 的核心是其**路由系统**，它通过一套结构化的规则和脚本，将用户任务精准分发给最合适的技能模块。\n```mermaid\nflowchart LR\n    A[用户任务<br>如：逆向一个 APK] --> B[规则引擎<br>RULES.md 全局规则]\n    B --> C[主路由分诊<br>MASTER-ROUTING.md]\n    C --> D[授权确认<br>scope.md<br>未授权则终止]\n    D --> E[场景技能模块<br>如：skills/apk-reverse/]\n    E --> F[工具链调用与执行]\n    F --> G[证据链与报告生成<br>timeline + Evidence→Finding→Path]\n    G --> H[经验沉淀与自进化<br>field-journal]\n```\n其路由决策由 **`skills/config/routing.json`** 这份“**单一真相源（SSoT）**”驱动。它包含了 **41 条路由规则（R0-R40）**，将任务关键词映射到特定的技能模块，并通过 **163 个回归测试用例** 在 CI 环境中持续验证路由的准确性。这意味着路由不是隐式的 Prompt 描述，而是机器可读、可验证的契约。\n### 2. 按需工具链自举：环境配置自动化\n再也不用手动配置 `jadx`、`Frida`、`IDA Pro` 等工具的环境了。`reverse-skill` 提供了 **`master-route.ps1`** 等脚本，能够：\n*   **自动探测**：扫描本地已安装的安全工具，并生成工具索引（`skills/tool-index.md`）。\n*   **按需自举**：当发现缺失工具时，可以提供引导或自动下载、编译、链接所需工具，实现“缺啥补啥”。\n*   **跨平台兼容**：提供 Windows（PowerShell）、Linux/macOS（Bash）、Kali Linux 的原生支持脚本。\n<details>\n<summary><strong>🔧 工具索引示例（tool-index.md）</strong></summary>\n```markdown\n# 本地工具状态\n## 已检测到的工具\n- jadx: ✅ /usr/local/bin/jadx (v1.4.7)\n- apktool: ✅ /usr/local/bin/apktool (v2.6.1)\n- frida: ✅ /usr/local/bin/frida (v16.0.10)\n- ida64: ❌ 未找到 (请配置环境变量或下载)\n## 工具版本要求\n- Node.js: 需要 >= 22.12 ✅ (当前 v22.13.0)\n- Python: 需要 >= 3.8 ✅ (当前 3.10.12)\n```\n</details>\n### 3. 自进化经验库：知识资产自动沉淀\n`reverse-skill` 创新性地设计了 **`field-journal/`** 目录。每次完成安全任务后，其：\n*   **关键发现**：成功的工具组合、绕过手法、常见坑。\n*   **操作日志**：完整的命令执行记录和输出。\n*   **决策路径**：为什么选择了这条分析路径。\n都会被结构化地记录并归档。**下次遇到相似任务时，AI 可以直接检索这些经验，跳过重复的试错过程，实现“越用越聪明”**。这是“AI Agent 自进化”在垂直安全场景的具体落地。\n### 4. 全场景技能覆盖与合规门控\n`reverse-skill` 内置了 **40+ 个场景技能模块**，覆盖了逆向工程与渗透测试的绝大多数场景。其**授权门控（scope.md）** 是其最负责任的设计之一：**任何对目标进行实际操作的步骤前，都必须先确认授权范围**，确保所有操作都在合规框架内进行。\n以下是其主要技能模块的概览：\n| 技能领域 | 核心技能模块 | 主要工具 |\n| :--- | :--- | :--- |\n| **移动安全** | `apk-reverse`, `ios-reverse`, `mobile-reverse` | jadx, apktool, Frida, IDA Pro |\n| **二进制逆向** | `ida-reverse`, `radare2`, `dotnet-reverse`, `ollvm-deobfuscation` | Ghidra, radare2, dnSpy |\n| **Web/JS 安全** | `js-reverse`, `api-security`, `supply-chain-security` | Burp Suite, Chrome DevTools, AST tools |\n| **渗透测试** | `pentest-tools`, `attack-chain`, `edr-bypass-re` | Nmap, Metasploit, Custom scripts |\n| **CTF 竞赛** | `CTF-Sandbox-Orchestrator` (42个子技能) | 各类 CTF 工具与解题技巧 |\n| **恶意软件** | `malware-analysis`, `pwn-chain`, `patch-diff-exploit` | YARA, Ghidra, Frida |\n| **新兴领域** | `llm-security`, `firmware-pentest` | 专用分析框架 |\n## 🎯 目标人群与收益\n### 谁最适合使用？\n1.  **安全研究人员与渗透测试工程师**：希望**自动化和标准化**日常分析工作流，提升效率，减少重复劳动。\n2.  **CTF 竞赛选手与爱好者**：需要一个**强大的解题助手和知识库**，快速定位题型，匹配工具，记录解题思路。\n3.  **甲方安全工程师**：用于**自查、漏洞评估和安全审计**，其授权门控能有效确保所有操作在授权范围内。\n4.  **AI 开发者与爱好者**：希望深入理解**如何将领域知识、工作流和工具链与 AI Agent 结合**，构建垂直领域的智能助手。\n### 能获得什么具体收益？\n| 用户角色 | 收益 |\n| :--- | :--- |\n| **个人开发者** | **效率提升 50%+**：无需记忆复杂工具链，AI 自动分诊和执行；**技能快速提升**：通过 AI 的操作日志和经验库，高效学习前沿攻防技术。 |\n| **安全团队** | **知识资产沉淀**：团队的最佳实践和经验被结构化记录和复用，避免知识流失；**新人快速上手**：新成员通过 AI 导航，快速适应团队工作流和工具环境。 |\n| **企业客户** | **合规性保障**：内置的授权门控和证据链机制，满足安全审计和合规要求；**成本优化**：减少对昂贵安全专家的依赖，用 AI 扩充团队能力边界。 |\n## 🆚 竞品/同类对比\n| 特性 | **reverse-skill** | 传统安全工具链 (如 Burp Suite, IDA Pro) | 其他 AI 安全助手 |\n| :--- | :--- | :--- | :--- |\n| **核心定位** | **AI 能力路由器与流程引擎** | 具体安全功能的实现工具 | 通用代码助手，可能集成一些安全能力 |\n| **AI 集成深度** | **深度绑定**，为 AI Agent 设计，是 AI 的“神经系统” | 浅层集成，可能通过 API 或插件调用 | 可能缺乏专门的安全工作流和知识 |\n| **方法论** | **结构化、可复用的**工作流和路由规则 | 强大但依赖用户个人经验和知识库 | 依赖大模型本身的幻觉和通用提示 |\n| **工具链整合** | **按需自举**，自动探测、引导安装 | 用户需自行配置和管理环境 | 可能集成部分工具，但整合度不够 |\n| **经验沉淀** | **内置自进化知识库**，自动记录和复用经验 | 需用户手动记录和整理 | 通常缺乏系统化的经验管理 |\n| **合规性** | **内置授权门控**，流程强制合规 | 需用户自行把控合规性 | 可能缺乏针对性的合规约束 |\n| **学习曲线** | 中等，需理解路由概念，但 AI 降低操作门槛 | 高，需深入学习特定工具 | 低，但效果因人而异，稳定性差 |\n**独特竞争力**：`reverse-skill` 并不试图取代任何安全工具，而是**为 AI Agent 提供了一套“操作系统”级别的调度和管理框架**。它解决的是工具**选择、调用、管理和经验复用**这个更上游、更根本的问题，从而极大提升了整体安全研究工作的效率和可靠性。\n## ⚠️ 局限与不足\n1.  **客户端依赖性**：其能力高度依赖所对接的 AI 客户端（如 Claude Code、Cursor）的**功能限制和指令遵循能力**。如果模型本身能力不足或“偷懒”，效果会打折扣。\n2.  **并非真正的“安全边界”**：授权门控和操作规范依赖于 Markdown 文本和模型遵循，**并不等同于操作系统级别的强制安全隔离**。它更像是“安全协议”，而非“安全沙箱”。恶意用户仍可能绕过。\n3.  **初始配置与学习成本**：首次使用需要**克隆仓库、刷新工具索引**，并理解其路由和技能体系。对完全陌生的用户，仍需投入时间学习。\n4.  **部分工具依赖商业软件**：如 IDA Pro，虽然提供免费版替代品（如 Ghidra），但完全发挥其能力可能需要商业许可证。\n5.  **中国大陆网络环境**：由于依赖 `GitHub` 进行更新和部分工具下载，**在中国大陆的网络环境下使用可能会遇到连接缓慢或失败的问题**，需自行解决网络访问问题。\n## 🚀 上手指南与代码示例\n### 安装与配置\n<details>\n<summary><strong>📦 安装步骤（以 Linux/macOS 为例）</strong></summary>\n```bash\n# 1. 克隆仓库\ngit clone https://github.com/zhaoxuya520/reverse-skill.git\ncd reverse-skill\n# 2. 刷新工具索引（让路由系统知道本机有哪些工具）\nbash skills/scripts/refresh-tool-index.sh\n# 3. （可选）为 AI 客户端添加技能目录\n# 例如为 Claude Code 添加全局技能\nclaude --add-dir /path/to/reverse-skill\n```\n</details>\n### 代码示例：让 AI 分析一个 APK\n**用户输入**：\n```\n请帮我分析这个 /app/test.apk 文件，看看它的网络请求加密逻辑是什么？\n```\n**AI Agent 内部执行流程（简化）**：\n1.  **路由分诊**：Agent 读取 `RULES.md` 和 `MASTER-ROUTING.md`，判断任务类型为 `apk-reverse`，命中路由规则 Rxx。\n2.  **授权确认**：执行 `case-init`，检查 `scope.md`，确认用户已明确授权分析目标。\n3.  **工具探测**：查询 `tool-index.md`，确认本地已安装 `jadx`, `apktool`, `frida`。\n4.  **执行分析**：调用 `skills/apk-reverse/SKILL.md` 中定义的工作流：\n    *   用 `jadx` 反编译 APK。\n    *   分析 `classes.dex`，定位网络请求相关的类和方法。\n    *   使用 `frida` 动态 Hook 目标方法，抓取明文和密文数据。\n    *   输出分析报告：包含关键代码片段、Hook 脚本、加密算法推断。\n5.  **经验沉淀**：将此次成功的工具组合（`jadx + frida`）和发现记录到 `field-journal/`。\n**AI 输出摘要**：\n> ...经分析，该 APK 使用自定义的 AES-CBC 加密，密钥通过 JNI 层从 `native-lib.so` 中动态获取。我已生成以下产物：\n> *   **反编译源码**：`/output/test-apk-decompile/`\n> *   **Frida Hook 脚本**：`/output/frida_hook_encrypt.js` (可直接运行解密网络请求)\n> *   **分析报告**：`/output/analysis_report.md`\n>\n> 此次分析路径已记录至 `field-journal/2023-08-XX_apk_enc_analysis.md`。\n## 🔮 结语与行动建议\n### 综合评价\n`reverse-skill` 是一个**设计精巧、务实且极具前瞻性的项目**。它精准地抓住了 AI 在安全领域应用的瓶颈——**工具选择、流程管理和经验复用**，并给出了一套优雅的解决方案。\n*   **对小白和入门者**：它是一位**不知疲倦的“安全导师”**，手把手带你走完整个分析流程，并为你梳理清晰的思路和知识。\n*   **对资深专家和团队**：它是一个**强大的“自动化助手”和“知识管理器”**，能将你的经验标准化、自动化，并沉淀为团队资产。\n*   **对 AI 爱好者**：它是一个**绝佳的“学习范例”**，展示了如何将领域知识、工作流和工具链与 AI Agent 深度结合，是构建垂直领域智能应用的优秀参考。\n**它不是魔法，但却是连接 AI 原始计算能力与安全领域复杂实践的一座关键桥梁**。\n### 行动建议\n1.  **立即尝试**：如果你是安全领域从业者或爱好者，**立即克隆并安装它**。用一个简单的 APK 或 JS 加密任务开始，感受 AI 自动化路由的强大。\n2.  **深度定制**：不要止于使用。**深入阅读 `SKILL.md` 和 `routing.md`**，尝试为你的特定工作流添加新的技能模块或路由规则。它极具可扩展性。\n3.  **团队实践**：如果你在安全团队中，**将其纳入团队的标准工作流**。利用其 `field-journal` 机制，构建团队专属的安全知识库。\n4.  **社区贡献**：项目仍在快速迭代中。**分享你的使用经验、贡献新的技能模块或修复 Issue**，让这个社区生态更加繁荣。\n> **⚠️ 重要提醒**：请务必在**完全合法且已获得授权的环境下**使用此工具及其所有技能。其内置的授权门控机制旨在帮助你遵守合规性要求，但最终责任仍在你自己。安全研究始于合规，终于合规。\n**总而言之，`reverse-skill` 不仅仅是一个 GitHub 仓库，它代表了一种 AI 落地的新范式：不是让 AI 去替代人类，而是为 AI 装上领域的“大脑”和“神经系统”，让 AI 能更好地与人类专家协同作战，共同应对日益复杂的安全挑战。**"
+}

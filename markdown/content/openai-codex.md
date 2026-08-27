@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/openai/codex)
 
-- **Stars**: 118847
+- **Stars**: 118896
 - **Language**: Rust
 
 ## OpenAI Codex 深度评测：你的全能 AI 编程代理

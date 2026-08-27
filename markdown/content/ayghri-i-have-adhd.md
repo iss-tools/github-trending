@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/ayghri/i-have-adhd)
 
-- **Stars**: 24695
+- **Stars**: 24718
 - **Language**: Python
 
 ## 让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测

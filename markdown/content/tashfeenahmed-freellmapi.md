@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/tashfeenahmed/freellmapi)
 
-- **Stars**: 20726
+- **Stars**: 20756
 - **Language**: TypeScript
 
 ## FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池

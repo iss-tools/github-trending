@@ -1,0 +1,54 @@
+{
+  "id": "b87f23f6-9372-432a-95dd-c1e43660c448",
+  "dateAdded": "20260827",
+  "type": "github-daily",
+  "url": "https://github.com/anthropics/claude-plugins-community",
+  "repo": "anthropics/claude-plugins-community",
+  "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+  "language": "Python",
+  "stars": 2256,
+  "forks": 194,
+  "starsAdded": 538,
+  "createdAt": "2026-08-27T02:00:56.376Z",
+  "githubData": {
+    "stars": "2256",
+    "forks": "194",
+    "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
+    "topics": [],
+    "license": "Apache-2.0 license",
+    "homepage": ""
+  },
+  "summaryData": {
+    "tags": [
+      "Claude",
+      "插件生态",
+      "Anthropic",
+      "AI 工具",
+      "GitHub"
+    ],
+    "cover": "",
+    "title": "Claude 插件社区市场（Claude Plugins Community）深度评测",
+    "ability": [
+      "官方安全审核",
+      "统一安装分发",
+      "组件化插件设计",
+      "插件生态扩展",
+      "标准化工作流"
+    ],
+    "summary": "Anthropic 官方背书的安全 Claude 插件市场，提供审核、分发与标准化工具。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "开源社区"
+    ],
+    "suitable": [
+      "软件开发者",
+      "技术团队负责人",
+      "AI 工具极客",
+      "插件创作者",
+      "DevOps 工程师"
+    ],
+    "description": "这是一个由 Anthropic 官方维护的 GitHub 仓库，专门收录经过严格安全审核的 Claude 插件。它通过统一的标准和便捷的命令行工具，解决了插件安装难、安全风险高的问题，为 Claude Code 和 Cowork 用户提供高效的扩展能力。"
+  },
+  "contentDetail": "# Claude 插件社区市场（Claude Plugins Community）深度评测\n> 一句话总结：**Anthropic 官方背书、安全审核保障的 Claude 插件社区市场，为开发者提供可靠、规范的扩展生态，是提升 Claude 工作效率的必备宝库**。\n## 🔍 背景与痛点：为什么需要插件市场？\n随着 Claude Code 和 Claude Cowork 的普及，开发者迫切需要扩展 AI 的能力边界。但传统扩展方式存在**三大痛点**：\n1.  **安全信任危机**：从第三方安装脚本或插件存在恶意代码风险，尤其是当插件需要访问本地文件系统或 API 密钥时。\n2.  **分发与发现困难**：优秀的插件散落在 GitHub 各个角落，难以被其他开发者发现和复用，缺乏统一的检索和安装渠道。\n3.  **规范与兼容性差**：插件编写缺乏统一标准，导致安装体验参差不齐，难以实现“一键安装、开箱即用”。\nClaude 插件社区市场正是为了解决这些问题而生——它由 Anthropic 官方维护，提供**安全审核、统一分发、标准化打包**的插件生态。\n## ✨ 核心亮点与功能剖析\n### 1. **官方背书与安全审核**\n这个仓库是 Anthropic **官方维护的只读镜像**，所有插件都经过了严格的自动化安全扫描和人工审核流程。这意味着：\n-   ✅ **恶意代码拦截**：所有插件在收录前都经过安全扫描，降低了安装恶意插件的风险。\n-   ✅ **标准化流程**：插件提交需通过 `clau.de/plugin-directory-submission` 官方渠道进行审核，而非直接向仓库提交 PR（Pull Request 会被自动关闭）。\n-   ✅ **定期同步**：插件列表每晚从内部审核管道同步到 GitHub，确保数据更新及时。\n### 2. **统一的插件格式与组件**\nClaude 插件并非单一脚本，而是一个**包含多种功能组件的自包含目录**，可以全面扩展 Claude 的能力。一个插件可能包含：\n| 组件类型 | 功能描述 | 典型场景 |\n| :--- | :--- | :--- |\n| **技能 (Skills)** | 创建 `/name` 快捷命令，可由你或 Claude 直接调用 | 处理 PDF、代码审查、测试生成 |\n| **代理 (Agents)** | 自动化执行复杂多步骤任务 | 代码迁移、PR 审查、文档生成 |\n| **钩子 (Hooks)** | 在特定事件（如提交前）自动触发 | 代码质量检查、格式化 |\n| **MCP 服务器** | 提供外部工具和 API 集成 | 数据库查询、云服务操作 |\n| **LSP 服务器** | 提供语言特定的智能支持 | 语言特定的高级补全和诊断 |\n| **监控器 (Monitors)** | 持续监控项目状态 | 依赖更新、安全漏洞扫描 |\n这种**组件化设计**使得插件功能强大且灵活，远超传统简单的“脚本”概念。\n### 3. **便捷的安装与管理**\n安装社区插件非常简单，通过一条命令即可完成：\n```bash\n# 添加社区市场源\nclaude plugin marketplace add anthropics/claude-plugins-community\n# 安装指定插件\nclaude plugin install <plugin-name>@claude-community\n```\n对于 **Claude Cowork** 用户，则可以直接在 [claude.com/plugins](https://claude.com/plugins) 网页界面浏览和安装。\n### 4. **官方插件与社区插件共存**\nAnthropic 还维护了 `anthropics/claude-plugins-official` 仓库，提供**官方核心插件**（如模型迁移工具、开发工具等）。社区插件市场则作为官方生态的**有益补充**，专注于由社区驱动的、更垂直、更多样的创新工具。\n## 🎯 目标人群与收益\n### 谁最适合使用？\n| 角色 | 核心收益 |\n| :--- | :--- |\n| **开发者/程序员** | 获取开箱即用的开发工具链（如代码审查、测试生成、依赖管理），提升编码效率和代码质量。 |\n| **团队/企业** | 通过统一的插件市场，为团队部署标准化的工具和工作流，减少配置差异，提升协作效率。 |\n| **插件创作者** | 拥有官方认可的发布渠道，作品可获得更多曝光和用户，生态贡献者获得认可。 |\n| **技术决策者** | 拥有安全可信的插件来源，降低引入外部工具的安全风险，便于审计和管理。 |\n### 具体收益示例\n-   **效率飞跃**：使用 `code-review` 插件，可在 PR 创建时自动进行多维度代码审查，减少人工审查工作量。\n-   **流程自动化**：通过 `pre-commit` 钩子插件，在代码提交前自动运行测试和格式检查，防止低级错误进入仓库。\n-   **无缝集成**：MCP 服务器插件能让你在 Claude 中直接查询数据库、调用云服务 API，无需切换上下文。\n## 📊 竞品/同类对比\n| 特性 | Claude 插件社区市场 | GitHub Marketplace | 本地脚本/扩展 |\n| :--- | :--- | :--- | :--- |\n| **安全审核** | ✅ 官方严格审核 | ❌ 主要靠社区信任 | ❌ 完全无保障 |\n| **发现难度** | 🟢 官方集中展示，分类清晰 | 🟡 项目众多，需自行筛选 | 🔴 无法发现 |\n| **安装体验** | 🟢 一条命令，依赖自动处理 | 🟡 多数需手动配置 | 🔴 需手动编写、配置 |\n| **生态规范** | 🟢 官方标准，组件化 | 🟡 依赖工具自身 | 🔴 无标准 |\n| **适用场景** | Claude 生态专用 | 通用 | 临时、个人工具 |\n**核心竞争力**：Claude 插件市场是**专为 Claude 打造的、安全、标准化、易发现的生态系统**，它不是简单的仓库列表，而是经过审核、整合、打包的“应用商店”。\n## ⚠️ 局限与不足\n尽管强大，但也需认识到其局限性：\n1.  **审核流程可能延迟**：插件提交后需经过审核才能上架，无法实现实时发布。对于急需快速迭代和测试的用户来说，可能稍显缓慢。\n2.  **生态仍处早期**：相较于成熟的 VS Code 插件生态，Claude 插件生态的**数量和多样性**仍在快速成长中。一些非常小众或前沿的工具可能尚未被收录。\n3.  **发现功能待加强**：虽然提供了分类，但目前**标签、评分、用户评论**等高级筛选和排序功能尚不完善，精准找到所需插件有时仍需依赖关键词搜索和尝试。\n4.  **对 Claude 生态的强依赖**：插件的价值完全依赖于 Claude Code 或 Cowork 的使用。如果你不使用这些工具，这个市场对你而言就失去了意义。\n## 🛠️ 实战演示：安装与使用插件\n让我们通过一个实际例子来感受一下。假设你想安装一个代码审查插件来提升代码质量。\n```bash\n# 1. 首先添加社区市场源（只需运行一次）\nclaude plugin marketplace add anthropics/claude-plugins-community\n# 2. 搜索插件（这里用 code-review 作为示例）\nclaude plugin search code-review\n# 3. 安装插件（安装名为 'code-review' 的插件）\nclaude plugin install code-review@claude-community\n# 4. 使用插件 - 在 Claude Code 中，你现在可以调用 /code-review 命令了\n# 或者在 PR 创建时，配置的 agent 自动进行审查\n```\n<details>\n<summary><strong>🔧 插件核心结构解析（进阶）</strong></summary>\n一个典型的 Claude 插件目录结构如下所示：\n```\nmy-cool-plugin/\n├── .claude-plugin/          # 插件元数据\n│   └── manifest.json        # 插件清单文件（必需）\n├── skills/                  # 技能目录（可选）\n│   └── my-skill/\n│       ├── SKILL.md         # 技能定义（核心）\n│       ├── reference.md     # 参考文档（可选）\n│       └── scripts/         # 辅助脚本（可选）\n├── agents/                  # 代理目录（可选）\n│   └── my-agent.md          # 代理定义\n├── commands/                # 命令目录（可选）\n│   └── my-command.md        # 斜杠命令定义\n├── hooks/                   # 钩子目录（可选）\n│   └── pre-commit.sh        # 预提交钩子\n└── README.md                # 插件说明（可选但推荐）\n```\n核心是 **`manifest.json`** 和 **`SKILL.md`** 文件，它们定义了插件的基本信息、依赖关系以及它能为 Claude 增加什么具体能力。\n</details>\n## 🚀 结语与行动建议\n### 终极评判\nClaude 插件社区市场是 **Anthropic 官方构建的安全、规范的 Claude 扩展生态**，它解决了传统插件分发中的信任、发现和兼容性问题。对于深度使用 Claude Code 和 Cowork 的开发者而言，它是一个**不可或缺的资源宝库**，能显著提升工作效率和代码质量。\n虽然生态尚在成长中，但其**官方审核的机制和标准化的插件格式**为其未来的繁荣奠定了坚实基础。它不仅是工具的集合，更是构建 Claude 应用生态的重要基础设施。\n### 行动建议\n1.  **立即添加市场源**：无论你当前是否需要，先执行 `claude plugin marketplace add anthropics/claude-plugins-community`，将它添加到你的市场中。\n2.  **探索现有插件**：花15分钟浏览一下[官方插件市场](https://buildwithclaude.com)或 GitHub 仓库中的 `marketplace.json` 文件，了解都有哪些现成的工具可用，很可能发现能解决你当前痛点的工具。\n3.  **考虑贡献你的插件**：如果你有一些重复性、可自动化的开发任务，不妨尝试按照官方规范编写一个插件并提交。这不仅是对社区的回馈，也是提升个人技术影响力的好机会。\n4.  **保持关注**：这个生态发展非常快，定期关注是否有新的优质插件上架，能让你始终保持技术栈的先进性。\n> 💡 **最后建议**：将 Claude 插件社区市场视为你开发工具链中的“官方应用商店”，信任它、使用它，并最终为它添砖加瓦。这是融入 Claude 开发生态、最大化 AI 辅助编程价值的最佳路径。"
+}

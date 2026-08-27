@@ -1,0 +1,75 @@
+{
+  "id": "4f4389e5-1aff-4e5b-acd0-de5ec8c286ef",
+  "dateAdded": "202608",
+  "type": "github-monthly",
+  "url": "https://github.com/diegosouzapw/OmniRoute",
+  "repo": "diegosouzapw/OmniRoute",
+  "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors",
+  "language": "TypeScript",
+  "stars": 56349,
+  "forks": 7747,
+  "starsAdded": 25766,
+  "createdAt": "2026-08-27T02:01:00.794Z",
+  "githubData": {
+    "stars": "56350",
+    "forks": "7747",
+    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors - diegosouzapw/OmniRoute",
+    "topics": [
+      "a2a",
+      "ai-agents",
+      "ai-gateway",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "cline",
+      "codex",
+      "copilot",
+      "cursor",
+      "deepseek",
+      "free-ai",
+      "gemini",
+      "kimi",
+      "llm-gateway",
+      "mcp",
+      "openai",
+      "openai-proxy",
+      "qwen",
+      "token-saver"
+    ],
+    "license": "MIT license",
+    "homepage": "https://omniroute.online"
+  },
+  "summaryData": {
+    "tags": [
+      "AI网关",
+      "开源",
+      "成本优化",
+      "智能路由",
+      "自托管"
+    ],
+    "cover": "",
+    "title": "OmniRoute：免费开源的AI智能路由网关深度评测",
+    "ability": [
+      "整合全球340+AI模型",
+      "智能路由与自动故障转移",
+      "双层Token压缩技术",
+      "OpenAI兼容无缝集成",
+      "自托管保障数据隐私"
+    ],
+    "summary": "一款整合340+AI提供商、具备双层Token压缩与自动故障转移能力的开源AI网关工具。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "中间件"
+    ],
+    "suitable": [
+      "个人开发者",
+      "初创团队",
+      "DevOps运维人员",
+      "AI应用开发者",
+      "成本敏感型用户"
+    ],
+    "description": "OmniRoute 是一个强大的自托管AI网关，通过统一接口整合了海量AI模型。它具备智能路由、故障转移及创新的RTK+Caveman压缩技术，能显著降低API调用成本并提升稳定性，非常适合需要高效管理多模型资源的开发者和团队。"
+  },
+  "contentDetail": "# OmniRoute 深度评测：一款堪称“瑞士军刀”的免费AI网关\n> **一句话总结**：OmniRoute 是一个**免费、开源、自托管**的AI网关，它通过**单一统一接口**整合了**340+ AI提供商（90+免费）**和**1200+模型**，为开发者提供**智能路由、自动故障转移、Token压缩**等高级功能，能显著提升开发效率、降低AI调用成本，是个人开发者和小团队构建AI应用的强大基础设施。\n---\n## 🔍 背景与痛点：为何需要OmniRoute？\n在AI应用开发的浪潮中，开发者面临着一系列严峻挑战：\n1.  **API碎片化与复杂配置**：不同的AI服务提供商（OpenAI、Anthropic、Google等）拥有各自独特的API规范、认证方式和参数设置。集成多个模型意味着要学习和维护多套配置，这极大地增加了开发和维护成本。\n2.  **高昂的成本与资源浪费**：AI模型调用，特别是长上下文对话和工具调用，消耗Token极快。冗长的工具输出（如git diff、日志文件）直接推高了成本，但其中包含大量对模型而言可能不重要的冗余信息。\n3.  **稳定性与可靠性担忧**：依赖单一提供商存在单点故障风险。其服务中断、限流或故障都会直接导致应用不可用。手动实现故障转移和重试机制复杂且容易出错。\n4.  **访问与合规障碍**：某些地区网络环境可能无法直接访问部分AI服务提供商，存在合规或访问限制。\nOmniRoute 正是为了**系统性地解决这些痛点**而生的。它作为一个中间层，屏蔽了底层提供商的差异性，为开发者提供了一个**统一、稳定、高效且经济**的AI能力访问入口。\n## ⭐ 核心亮点与功能剖析\nOmniRoute 的强大远不止于“统一接口”。以下是其最核心、最具创新性的亮点：\n### 1. 🌐 全球最大AI模型聚合器：一个终点站，全世界\nOmniRoute 的核心价值在于其惊人的整合能力。它声称支持超过**340个AI提供商**（其中**90多个免费**）和**1200多个模型**，几乎囊括了当前主流的所有知名模型：\n*   **闭源模型**：OpenAI (GPT系列)、Anthropic (Claude系列)、Google (Gemini系列)、DeepSeek、MiniMax 等。\n*   **开源模型**：通过Hugging Face等渠道集成了大量开源模型，如Llama、Mistral、GLM等。\n*   **路由与别名**：内置智能路由别名，例如 `auto/best-coding` 会自动为你的编程任务选择最合适的模型，无需手动指定具体模型名称。\n**开发者收益**：无需维护多个API Key和集成点，只需配置一个统一端点，即可灵活切换和组合全球顶尖的AI能力，极大简化了技术栈。\n### 2. 🛠️ 智能路由与自动故障转移（Quota-Aware Auto-Fallback）\n这是 OmniRoute 的**“安全网”和“调度大脑”**。它并非简单地轮询，而是：\n*   **智能路由**：根据任务类型（如编程、聊天、图像生成）、成本、速度和可用性，自动将请求路由到最合适的模型。\n*   **自动故障转移（Auto-Fallback）**：如果当前提供商（如OpenAI）出现错误、超时或达到配额限制，OmniRoute 会**毫秒级**自动尝试下一个备选提供商（例如转向DeepSeek或Google Gemini），确保调用成功。\n*   **配额感知（Quota-Aware）**：它能跟踪和管理你各提供商的API配额使用情况，智能分配请求，避免因单一配额耗尽而中断服务。\n```mermaid\nflowchart LR\n    A[你的应用] --> B[OmniRoute<br>统一网关]\n    subgraph B [OmniRoute 核心处理]\n        direction LR\n        C[请求解析与路由决策]\n        D[故障转移与重试管理]\n        E[Token 压缩优化]\n    end\n    B --> F{智能路由与故障转移}\n    subgraph G [提供商 1: OpenAI]\n        H[状态: 正常]\n        I[配额: 充足]\n    end\n    subgraph J [提供商 2: DeepSeek]\n        K[状态: 正常]\n        L[配额: 充足]\n    end\n    subgraph M [提供商 3: Google Gemini]\n        N[状态: 异常/超时]\n        O[配额: 不足]\n    end\n    F -- 成功 --> G\n    F -- 失败/超时 --> J\n    F -- 配额耗尽 --> M\n    G & J --> P[返回统一响应]\n    M --> Q[自动尝试下一提供商<br>最终返回成功响应]\n```\n**开发者收益**：**极高的可用性和稳定性**。你的AI应用不再受制于单一服务提供商的波动，获得**企业级的容灾能力**，同时无需编写复杂的错误处理和重试逻辑。\n### 3. 📉 创新的双层数据压缩：RTK + Caveman（15-95% Token节省）\n这是 OmniRoute 的**王牌创新点**，能直接为你节省大量真金白银。它采用了两层叠加的压缩技术：\n| 压缩层 | 技术原理 | 压缩对象 | 预期节省 |\n| :--- | :--- | :--- | :--- |\n| **RTK (Real-Time Kompression)** | 在请求发送给模型前，**实时识别并移除**提示词中的冗余Token，如重复词语、空格、可省略的格式化字符。 | 任何文本提示词 | **20%-40%** |\n| **Caveman Compression** | 一种**更激进的压缩技术**，专门针对**工具输出（Tool Output）** 等结构化、高熵内容。它能将冗长的工具输出（如代码差异、日志文件）压缩成模型仍可理解但极简的表示。 | 工具调用输出（如git diff, grep结果） | **15%-95%** (视内容而定) |\n```javascript\n// 🧪 代码示例：体验压缩效果\n// 假设这是一个很长的git diff输出（实际可能数千行）\nconst gitDiff = `diff --git a/src/auth.ts b/src/auth.ts\n--- a/src/auth.ts\n+++ b/src/auth.ts\n@@ -45,12 +45,12 @@\n export async function login(username: string, password: string) {\n-  const user = await db.query('SELECT * FROM users WHERE username = ?', [username]);\n+  const user = await db.query('SELECT id, password_hash FROM users WHERE username = ?', [username]);\n   if (!user) throw new Error('User not found');\n-  const isValid = await bcrypt.compare(password, user.password);\n+  const isValid = await bcrypt.compare(password, user.password_hash);\n   if (!isValid) throw new Error('Invalid credentials');\n   return generateToken(user);\n }`;\n// 经过 OmniRoute Caveman 压缩后（概念性展示，实际压缩算法更复杂）\n// 可能会变成类似这样的结构化摘要，大幅减少Token数\nconst compressedOutput = {\n  file: \"src/auth.ts\",\n  changes: [\n    { line: 48, old: \"db.query('SELECT * FROM users WHERE username = ?', [username])\", new: \"db.query('SELECT id, password_hash FROM users WHERE username = ?', [username])\" },\n    // ... 其他变更点\n  ],\n  summary: \"优化SQL查询，只查询必要字段；修正字段引用\"\n};\n// 压缩后Token数可能从数千降至数百，节省成本非常可观\n```\n**开发者收益**：**显著降低API调用成本**。对于代码生成、日志分析等依赖大量工具输出的场景，节省幅度尤为惊人。相当于**白送了你一个“成本优化专家”**。\n### 4. 🧩 无缝集成与开发者友好（DX）\nOmniRoute 的开发者体验（DX）设计得非常出色：\n*   **OpenAI兼容协议**：它提供了与OpenAI API**完全兼容**的端点（`/v1/chat/completions`），这意味着你可以**无缝替换**现有应用中的OpenAI base URL，无需修改任何业务代码。\n*   **原生支持IDE与开发工具**：它为众多主流AI编码工具提供了内置配置支持，包括：\n    *   **Claude Code**\n    *   **Cursor**\n    *   **GitHub Copilot**\n    *   **OpenCode**\n    *   **Cline**\n    这意味着你可以在你喜欢的IDE或编辑器中直接使用OmniRoute，享受其强大的路由和压缩能力。\n*   **丰富的部署方式**：提供多种部署选择，满足不同需求：\n    *   **Docker**：推荐方式，一键启动。\n    *   **NPM**：作为Node.js模块全局安装。\n    *   **桌面客户端**：提供Windows、macOS、Linux的安装包，开箱即用。\n    *   **源码构建**：从源码编译运行。\n*   **功能强大的Dashboard**：提供了一个本地管理的Web仪表盘，可视化配置提供商、监控配额使用、查看请求日志、测试压缩效果等。\n### 5. 🔒 自托管与安全性\n*   **数据隐私**：你可以将 OmniRoute 部署在自己的服务器上，确保你的API密钥和对话数据**永远不会离开你的控制范围**，满足严格的数据合规要求。\n*   **TLS指纹伪装**：内置了TLS指纹伪装功能（如utls），有助于绕过某些网络环境对特定AI提供商的封锁或检测，提升访问稳定性。\n*   **代理支持**：支持通过代理服务器访问外部AI提供商，增强了网络灵活性。\n## 🎯 目标人群与收益\nOmniRoute 并非为所有人而生，但它为特定人群带来了**颠覆性的收益**：\n| 目标人群 | 核心痛点 | OmniRoute 解决方案 | 核心收益 |\n| :--- | :--- | :--- | :--- |\n| **个人开发者/独立创业者** | 成本敏感、技术栈复杂、稳定性要求高 | 统一接口、智能故障转移、**Token压缩**、免费提供商支持 | **大幅降低成本**、提升开发效率、获得企业级稳定性、**0成本起步** |\n| **小团队/初创公司** | 需要快速验证想法、管理多个API Key、预算有限 | 集中管理所有密钥、配额监控、按成本优化路由 | **简化运维**、控制成本、快速集成多模型能力、**节省宝贵资金** |\n| **企业开发团队/DevOps** | 需要高可用、可观测、合规的AI基础设施 | 自托管、日志审计、配额管理、TLS伪装、多级代理 | **满足合规要求**、增强系统韧性、**统一管控**、降低集成复杂度 |\n| **AI应用开发者** | 需要持续优化成本、提高用户体验、应对模型波动 | 自动选择最佳模型、**无感故障转移**、极致成本优化 | **显著降低运营成本**、提升服务可靠性、**专注业务逻辑**而非基础架构 |\n> 💡 **总结收益**：OmniRoute 让你以**极低的成本**（甚至0成本）和**极简的配置**，获得一个**功能强大、稳定可靠、高度可定制**的AI后端基础设施。它就像给AI应用开发配备了一支**专业的运维和成本优化团队**。\n## ⚔️ 竞品对比与独特竞争力\n在AI网关领域，OmniRoute并非独苗，但其竞争力极其突出。下表对比了它与主要竞品的差异：\n| 特性维度 | **OmniRoute** | **LiteLLM** | **9router** | **CLIProxyAPI** |\n| :--- | :--- | :--- | :--- | :--- |\n| **开源协议** | **MIT (完全自由)** | Apache 2.0 | MIT | MIT |\n| **核心功能** | **路由、故障转移、压缩、自托管** | 代理、虚拟密钥、负载均衡 | 路由、故障转移 | 代理、隧道 |\n| **提供商数量** | **340+ (90+免费)** | 100+ | 100+ | 数十个 |\n| **Token压缩** | **✅ RTK + Caveman (双层)** | ❌ | ✅ RTK (单层) | ❌ |\n| **故障转移** | **✅ 毫秒级、配额感知** | ✅ | ✅ | ✅ |\n| **自托管** | ✅ | ✅ | ✅ | ✅ |\n| **IDE工具集成** | **✅ 丰富 (Cursor, Copilot等)** | ⚠️ 有限 | ❌ | ❌ |\n| **TLS伪装** | ✅ | ❌ | ❌ | ✅ |\n| **部署难度** | ⭐⭐☆ (中等) | ⭐☆☆ (简单) | ⭐⭐☆ (中等) | ⭐☆☆ (简单) |\n| **学习曲线** | ⭐⭐☆ (中等) | ⭐☆☆ (简单) | ⭐⭐☆ (中等) | ⭐☆☆ (简单) |\n**🔥 OmniRoute 的独特竞争力**：\n1.  **独创的双层压缩技术**：这是其**最大的技术护城河**，带来的成本节省是实打实的，其他竞品无法匹敌。\n2.  **极致的提供商整合与免费模型支持**：免费提供商的广泛支持和智能路由，让个人开发者和小团队可以**零成本**构建强大的AI应用。\n3.  **出色的开发者体验（DX）**：对主流IDE工具的内置支持和OpenAI兼容协议，极大降低了集成门槛，让开发者能**立刻上手，立刻受益**。\n4.  **活跃的社区与快速迭代**：拥有超过450名贡献者，更新频繁，问题响应快，生态充满活力。\n## ⚠️ 局限、不足与潜在风险\n没有任何工具是完美的。在拥抱 OmniRoute 的同时，你也需要了解它的局限性：\n1.  **学习曲线与配置复杂度**：功能强大也意味着配置选项繁多。对于完全的新手，初次部署和配置（特别是理解路由规则、压缩策略、故障转移顺序）需要一些学习和摸索时间。文档虽然丰富，但信息量巨大。\n2.  **“Stacked”压缩的可靠性**：有用户反馈，其 `RTK -> Caveman` 堆叠压缩模式（`stacked`）**在某些情况下可能不可靠或记录的节省数据不准确**，有时甚至显示无压缩效果。这可能是项目中的一个已知或正在修复的BUG。\n3.  **资源占用与性能**：作为一个自托管服务，它本身会消耗一定的系统资源（CPU、内存）。虽然对于绝大多数个人和小团队场景完全足够，但在超高并发或极端资源受限的环境下，需要评估其性能影响。\n4.  **对提供商API的依赖**：它本质上是更高级的“中介”。如果底层某个提供商的API本身发生重大变更（如废弃旧版API、修改响应格式），虽然OmniRoute会尽力适配，但理论上存在短暂不兼容的风险。\n5.  **技术支持成本**：作为开源项目，官方技术支持依赖于社区。虽然社区非常活跃，但对于企业级关键业务，可能需要具备自行排查和解决问题的能力，或者考虑商业支持计划（如果未来推出）。\n## 🚀 快速上手：部署与配置实战\n让我带你用最简单的方式快速启动 OmniRoute 并体验其核心能力。\n### 方法一：Docker 一键部署（推荐）\n```bash\n# 1. 拉取并运行官方Docker镜像（默认映射到本机20128端口）\ndocker run -d --name omniroute -p 20128:20128 omniroute/omniroute:latest\n# 2. 等待数十秒让服务完全启动后，访问Dashboard\nopen http://localhost:20128/dashboard  # 或在浏览器中手动输入\n```\n### 方法二：NPM 全局安装\n```bash\n# 1. 全局安装\nnpm i -g omniroute\n# 2. 启动服务\nomniroute\n# 3. 访问Dashboard\nopen http://localhost:20128/dashboard\n```\n### 核心配置步骤\n1.  **添加你的API密钥**：在Dashboard的 `Providers` 页面，添加你已有的OpenAI、Anthropic、DeepSeek等API密钥。**你也可以先不添加，直接使用其内置的免费提供商池进行测试。**\n2.  **体验免费模型**：尝试调用一个免费模型，例如通过 `curl` 测试：\n    ```bash\n    # 列出所有可用模型（包含许多无需认证的免费模型）\n    curl http://localhost:20128/v1/models\n    # 使用一个免费的模型进行对话（例如Gemini Flash）\n    curl http://localhost:20128/v1/chat/completions \\\n      -H \"Content-Type: application/json\" \\\n      -d '{\n        \"model\": \"gemini-2.0-flash-exp\", # 一个快速且免费的模型\n        \"messages\": [{\"role\": \"user\", \"content\": \"用一句话解释量子纠缠\"}]\n      }'\n    ```\n3.  **配置你的IDE工具**：以Cursor为例，在Cursor的设置中，找到AI提供商配置，将Base URL设置为 `http://localhost:20128/v1`，API Key可以随意填写（如`dummy-key`），因为OmniRoute会使用你配置的提供商密钥。保存后，你就可以在Cursor中享受OmniRoute的智能路由和压缩了。\n> 💡 **小贴士**：首次配置时，不妨先只启用一个你最常用的提供商（如OpenAI）并测试，确保其工作正常后，再逐步添加其他提供商和设置复杂的路由规则。\n## 🎯 结语与行动建议\n### 综合评判：一个不可或缺的“瑞士军刀”\nOmniRoute 是一款**设计精良、功能强大、对开发者极其友好**的开源AI网关。它成功地将**复杂性封装**在背后，为开发者提供了一站式的AI能力管理解决方案。\n**👍 强烈推荐以下用户立即尝试并采用：**\n*   任何正在使用或计划集成多个AI模型的**个人开发者或独立创业者**。\n*   希望在**严格控制成本**的同时，构建稳定AI应用的**小团队和初创公司**。\n*   需要为团队或企业内部提供**统一、合规、可观测**的AI服务访问接口的**技术负责人或DevOps**。\n*   希望在**日常编码工具**（如Cursor, Copilot）中**降低Token消耗、提高稳定性**的每一位开发者。\n**🤔 可能需要再考虑一下的用户：**\n*   只需要调用**单一模型**（如仅用OpenAI）且**成本极不敏感**的用户。\n*   完全的**技术新手**，且没有时间和精力学习如何部署和配置一个自托管服务。\n*   对开源项目的**技术支持和服务级别协议（SLA）有极高要求**的企业。\n### 🚀 行动建议\n1.  **立即动手体验**：花10分钟时间，用Docker部署一个本地实例。不需要添加任何付费API Key，先体验其内置的免费模型和Dashboard功能，感受其开箱即用的强大。\n2.  **集成你的第一个项目**：将你当前正在开发的一个AI应用（或一个简单的聊天机器人）的API端点切换到OmniRoute，亲身感受一下智能故障转移和压缩带来的稳定性和成本变化。\n3.  **参与社区**：如果你遇到了问题或有新想法，不妨去它的[GitHub Discussions](https://github.com/diegosouzapw/OmniRoute/discussions)或Wiki看看，或者提问。一个活跃的社区意味着项目生命力和快速成长。\nOmniRoute 代表了开源社区在AI基础设施领域的一次**精彩创新**。它让强大的AI能力变得**更易得、更经济、更可靠**，为每一位开发者赋能。如果你正在寻找一个能提升你AI应用开发效率和稳定性的工具，那么 OmniRoute 无疑是当前最值得你投入时间的选择之一。"
+}
