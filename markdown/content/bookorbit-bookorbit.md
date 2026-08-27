@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/bookorbit/bookorbit)
 
-- **Stars**: 3295
+- **Stars**: 3301
 - **Language**: TypeScript
 
 ## BookOrbit：全能型自托管电子书管理与阅读平台

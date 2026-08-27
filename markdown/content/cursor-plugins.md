@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/cursor/plugins)
 
-- **Stars**: 5454
+- **Stars**: 5462
 - **Language**: TypeScript
 
 > # Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”
