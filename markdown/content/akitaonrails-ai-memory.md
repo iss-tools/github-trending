@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/akitaonrails/ai-memory)
 
-- **Stars**: 4993
+- **Stars**: 5020
 - **Language**: Rust
 
 ## ai-memory：AI Agent 的跨平台持久化记忆层

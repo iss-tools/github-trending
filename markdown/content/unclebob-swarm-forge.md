@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/unclebob/swarm-forge)
 
-- **Stars**: 2928
+- **Stars**: 2940
 - **Language**: Clojure
 
 ## SwarmForge：Uncle Bob 打造的“宪法驱动”多 AI 协同工程工具

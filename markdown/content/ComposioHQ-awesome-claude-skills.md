@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/ComposioHQ/awesome-claude-skills)
 
-- **Stars**: 73658
+- **Stars**: 73673
 - **Language**: Python
 
 ## Claude 技能生态的宝藏清单：awesome-claude-skills 评测
