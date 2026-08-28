@@ -148,7 +148,7 @@
       "starsAdded": 4993,
       "createdAt": "2026-08-23T13:02:00.503Z",
       "githubData": {
-        "stars": "17262",
+        "stars": "17285",
         "forks": "492",
         "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry. - AprilNEA/OpenLogi",
         "topics": [
@@ -214,7 +214,7 @@
       "starsAdded": 3447,
       "createdAt": "2026-08-23T13:14:24.535Z",
       "githubData": {
-        "stars": "34043",
+        "stars": "34056",
         "forks": "2584",
         "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. - volcengine/OpenViking",
         "topics": [
@@ -329,8 +329,8 @@
       "starsAdded": 3151,
       "createdAt": "2026-08-23T13:02:00.501Z",
       "githubData": {
-        "stars": "32892",
-        "forks": "3398",
+        "stars": "32931",
+        "forks": "3403",
         "description": "Beautiful, Modern & Opinionated Linux. Contribute to basecamp/omarchy development by creating an account on GitHub.",
         "topics": [],
         "license": "MIT license",
@@ -432,8 +432,8 @@
       "starsAdded": 2017,
       "createdAt": "2026-08-23T13:02:00.498Z",
       "githubData": {
-        "stars": "29277",
-        "forks": "3116",
+        "stars": "29281",
+        "forks": "3117",
         "description": "The Modular Platform (includes MAX & Mojo). Contribute to modular/modular development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -493,8 +493,8 @@
       "starsAdded": 1693,
       "createdAt": "2026-08-23T13:14:24.549Z",
       "githubData": {
-        "stars": "5818",
-        "forks": "470",
+        "stars": "5830",
+        "forks": "473",
         "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
         "topics": [],
         "license": "",
@@ -576,7 +576,7 @@
       "starsAdded": 810,
       "createdAt": "2026-08-23T13:14:24.550Z",
       "githubData": {
-        "stars": "3833",
+        "stars": "3843",
         "forks": "359",
         "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log. - apache/maka",
         "topics": [
@@ -643,7 +643,7 @@
       "starsAdded": 341,
       "createdAt": "2026-08-23T13:14:24.547Z",
       "githubData": {
-        "stars": "2480",
+        "stars": "2489",
         "forks": "210",
         "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
         "topics": [],
@@ -693,13 +693,13 @@
       "repo": "openai/codex",
       "description": "Lightweight coding agent that runs in your terminal",
       "language": "Rust",
-      "stars": 119434,
+      "stars": 119458,
       "forks": 18224,
       "starsAdded": 12358,
       "createdAt": "2026-08-27T02:00:58.616Z",
       "githubData": {
-        "stars": "119438",
-        "forks": "18225",
+        "stars": "119458",
+        "forks": "18224",
         "description": "Lightweight coding agent that runs in your terminal - openai/codex",
         "topics": [],
         "license": "Apache-2.0 license",
@@ -745,13 +745,13 @@
       "repo": "freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
-      "stars": 23932,
-      "forks": 2366,
+      "stars": 23980,
+      "forks": 2372,
       "starsAdded": 11300,
       "createdAt": "2026-08-27T02:00:58.527Z",
       "githubData": {
-        "stars": "23936",
-        "forks": "2366",
+        "stars": "23980",
+        "forks": "2372",
         "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 - freestylefly/awesome-gpt-image-2",
         "topics": [
           "agents",
@@ -801,6 +801,79 @@
       }
     },
     {
+      "id": "d50c5d2e-9d86-4140-8e6a-fcdd7f6be121",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/tt-a1i/archify",
+      "repo": "tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "stars": 25587,
+      "forks": 1643,
+      "starsAdded": 8530,
+      "createdAt": "2026-08-28T12:00:03.619Z",
+      "githubData": {
+        "stars": "25587",
+        "forks": "1643",
+        "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export. - tt-a1i/archify",
+        "topics": [
+          "agent-skills",
+          "architecture-as-code",
+          "architecture-diagram",
+          "claude-skill",
+          "code-visualization",
+          "codex",
+          "coding-agents",
+          "data-flow-diagram",
+          "deepseek-harness",
+          "developer-tools",
+          "diagram-as-code",
+          "diagrams",
+          "diagrams-as-code",
+          "dsh-plugin",
+          "mermaid-alternative",
+          "opencode",
+          "sequence-diagram",
+          "software-architecture",
+          "system-design",
+          "text-to-diagram"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tt-a1i.github.io/archify/"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub 开源",
+          "架构图生成",
+          "AI Agent",
+          "可视化",
+          "CLI 工具"
+        ],
+        "cover": "",
+        "title": "Archify - AI 时代的可验证架构图生成工具",
+        "ability": [
+          "AI 生成架构图",
+          "结构化验证与对比",
+          "交互式图表查看",
+          "多平台 Agent 集成",
+          "多格式导出"
+        ],
+        "summary": "Archify 让 AI 生成结构化 JSON 并自动渲染为专业架构图，支持验证、版本对比和交互式查看，解决 AI 生成图表不可靠的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程开发者",
+          "技术负责人/架构师",
+          "DevOps/SRE",
+          "技术文档撰写者"
+        ],
+        "description": "Archify 是一个面向 AI Agent 的开源工具，通过引导 AI 生成结构化 JSON 来绘制架构图、流程图等。它具备严格的校验机制、版本变更对比功能以及交互式查看器，能产出高质量、可分享的 HTML/SVG 图表，极大地提升了技术沟通与架构评审的效率。"
+      }
+    },
+    {
       "id": "501d0bca-e335-4f5d-bd94-75878b64cf58",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -808,12 +881,12 @@
       "repo": "AprilNEA/OpenLogi",
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "stars": 17260,
+      "stars": 17285,
       "forks": 492,
       "starsAdded": 5946,
       "createdAt": "2026-08-27T02:00:58.490Z",
       "githubData": {
-        "stars": "17262",
+        "stars": "17285",
         "forks": "492",
         "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry. - AprilNEA/OpenLogi",
         "topics": [
@@ -874,13 +947,13 @@
       "repo": "basecamp/omarchy",
       "description": "Beautiful, Modern & Opinionated Linux",
       "language": "Shell",
-      "stars": 32881,
-      "forks": 3396,
+      "stars": 32930,
+      "forks": 3403,
       "starsAdded": 5593,
       "createdAt": "2026-08-27T02:00:58.504Z",
       "githubData": {
-        "stars": "32892",
-        "forks": "3398",
+        "stars": "32931",
+        "forks": "3403",
         "description": "Beautiful, Modern & Opinionated Linux. Contribute to basecamp/omarchy development by creating an account on GitHub.",
         "topics": [],
         "license": "MIT license",
@@ -1054,6 +1127,72 @@
       }
     },
     {
+      "id": "7ae3235b-93f6-4cd1-ba1f-33f097283c61",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "repo": "MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 37446,
+      "forks": 12680,
+      "starsAdded": 4706,
+      "createdAt": "2026-08-28T12:00:03.776Z",
+      "githubData": {
+        "stars": "37446",
+        "forks": "12680",
+        "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "career",
+          "claude-code",
+          "cover-letter",
+          "cv",
+          "interview-preparation",
+          "job-application",
+          "job-hunting",
+          "job-search",
+          "latex",
+          "resume"
+        ],
+        "license": "MIT license",
+        "homepage": ""
+      },
+      "summaryData": {
+        "tags": [
+          "AI求职",
+          "自动化",
+          "简历生成",
+          "开源工具",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "ai-job-search：全栈本地化AI求职助手",
+        "ability": [
+          "智能岗位评估与匹配",
+          "定制化简历与求职信生成",
+          "结构化面试准备与模拟",
+          "全流程申请状态跟踪",
+          "本地优先保障数据隐私"
+        ],
+        "summary": "基于Claude Code的开源求职自动化框架，支持自动抓取、评估、定制简历及模拟面试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生活效率"
+        ],
+        "suitable": [
+          "程序员与AI工程师",
+          "技术岗位求职者",
+          "重视数据隐私的用户",
+          "有一定动手能力的技术爱好者",
+          "希望系统化求职的人"
+        ],
+        "description": "这是一个基于Claude Code的开源AI求职工具，通过本地运行的方式，自动抓取岗位、评估匹配度、生成定制化简历和求职信，并提供面试模拟。它采用双Agent协作模式，将重复性工作自动化，同时让用户保持对求职过程的完全掌控。"
+      }
+    },
+    {
       "id": "fb51619e-a305-414b-aec5-05171425ad22",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1061,13 +1200,13 @@
       "repo": "Alishahryar1/free-claude-code",
       "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 50986,
-      "forks": 8226,
+      "stars": 51019,
+      "forks": 8232,
       "starsAdded": 4657,
       "createdAt": "2026-08-27T11:00:03.775Z",
       "githubData": {
-        "stars": "50988",
-        "forks": "8227",
+        "stars": "51019",
+        "forks": "8232",
         "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code",
         "topics": [],
         "license": "MIT license",
@@ -1116,7 +1255,7 @@
       "starsAdded": 3078,
       "createdAt": "2026-08-27T02:00:58.660Z",
       "githubData": {
-        "stars": "34043",
+        "stars": "34056",
         "forks": "2584",
         "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. - volcengine/OpenViking",
         "topics": [
@@ -1160,6 +1299,79 @@
           "技术决策者"
         ],
         "description": "OpenViking 将 Agent 的记忆、知识抽象为虚拟文件系统，通过三层智能存储和递归检索机制，解决了传统 RAG 检索不可控、成本高的问题，让 Agent 拥有持久化记忆和可观察的思考能力。"
+      }
+    },
+    {
+      "id": "5b6e6556-c96d-45a2-aa74-cd199581ae0c",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 50462,
+      "forks": 8763,
+      "starsAdded": 2853,
+      "createdAt": "2026-08-28T12:00:03.799Z",
+      "githubData": {
+        "stars": "50462",
+        "forks": "8763",
+        "description": "Learn it. Build it. Ship it for others. Contribute to rohitg00/ai-engineering-from-scratch development by creating an account on GitHub.",
+        "topics": [
+          "agents",
+          "ai",
+          "ai-agents",
+          "ai-engineering",
+          "computer-vision",
+          "course",
+          "deep-learning",
+          "from-scratch",
+          "generative-ai",
+          "llm",
+          "machine-learning",
+          "mcp",
+          "nlp",
+          "python",
+          "reinforcement-learning",
+          "rust",
+          "swarm-intelligence",
+          "transformers",
+          "tutorial",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://aiengineeringfromscratch.com"
+      },
+      "summaryData": {
+        "tags": [
+          "从零实现",
+          "AI 全栈",
+          "LLM",
+          "Agent",
+          "深度学习"
+        ],
+        "cover": "",
+        "title": "AI Engineering from Scratch：从零构建 AI 工程师的全栈指南",
+        "ability": [
+          "20阶段全栈教学路线",
+          "Build It / Use It 双轨制深度学习法",
+          "每课产出可复用 Artifact (Prompt/Skill/Agent)",
+          "覆盖 Python/TS/Rust/Julia 四种语言",
+          "从底层算法到生产部署的完整闭环"
+        ],
+        "summary": "包含435节课程、从数学推导到工程落地的开源 AI 教程，旨在将开发者打造为能深度定制与构建 AI 系统的工程师。",
+        "category": [
+          "AI 编程",
+          "教育教学",
+          "开源项目"
+        ],
+        "suitable": [
+          "有理论基础缺工程实践的工程师",
+          "计算机专业学生或转行者",
+          "AI 产品经理与技术负责人",
+          "热衷于从零造轮子的技术爱好者"
+        ],
+        "description": "该项目是一个野心勃勃的免费开源课程，主张'先构建再使用'。它要求学习者从线性代数开始，亲手实现反向传播、Transformer、Agent 等核心算法，最终产出可直接部署的工具。它解决了知识碎片化和只会调包的痛点，适合追求深度理解和系统化学习的人群。"
       }
     },
     {
@@ -1236,6 +1448,72 @@
       }
     },
     {
+      "id": "3f72d3ad-b58b-4363-9f1f-6a5bb5da475c",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "repo": "VoltAgent/awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "language": "",
+      "stars": 32975,
+      "forks": 3481,
+      "starsAdded": 2324,
+      "createdAt": "2026-08-28T12:00:03.790Z",
+      "githubData": {
+        "stars": "32975",
+        "forks": "3481",
+        "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. - VoltAgent/awesome-agent-skills",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "awesome",
+          "awesome-list",
+          "claude-code",
+          "claude-code-skills",
+          "claude-skills",
+          "codex-skills",
+          "cursor-skills",
+          "gemini-skills",
+          "opencode-skills",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://officialskills.sh/"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Skills",
+          "MCP",
+          "GitHub",
+          "自动化",
+          "开发效率"
+        ],
+        "cover": "",
+        "title": "Awesome Agent Skills 深度评测：AI 编程时代的技能宝库",
+        "ability": [
+          "提供 1000+ 官方及社区验证的专业技能",
+          "兼容 Claude Code、Cursor、Copilot 等主流平台",
+          "自动同步更新，支持 MCP 协议",
+          "涵盖测试、安全、部署等全开发流程",
+          "通过分类和检索实现快速查找"
+        ],
+        "summary": "兼容主流 AI 编程工具的官方技能合集，能让 AI 助手执行专业、复杂且可靠的任务。",
+        "category": [
+          "开发者工具",
+          "AI 编程",
+          "资源合集"
+        ],
+        "suitable": [
+          "软件开发者",
+          "测试工程师",
+          "安全研究员",
+          "产品经理/技术主管",
+          "开源项目维护者"
+        ],
+        "description": "这是一个由顶级团队背书、包含超 1000 个精选技能的 AI 智能体技能库。它支持跨平台兼容，能将通用 AI 助手转变为专业开发伙伴，自动化处理测试、安全审计、文档编写等复杂任务，大幅提升开发效率。"
+      }
+    },
+    {
       "id": "752199bb-a8eb-4859-b64c-c383fb06b77a",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1243,12 +1521,12 @@
       "repo": "tinyhumansai/openhuman",
       "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "language": "Rust",
-      "stars": 38644,
+      "stars": 38652,
       "forks": 3794,
       "starsAdded": 2178,
       "createdAt": "2026-08-27T11:00:03.772Z",
       "githubData": {
-        "stars": "38646",
+        "stars": "38652",
         "forks": "3794",
         "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher. - tinyhumansai/openhuman",
         "topics": [],
@@ -1296,12 +1574,12 @@
       "repo": "anthropics/claude-plugins-community",
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
-      "stars": 2479,
+      "stars": 2489,
       "forks": 210,
       "starsAdded": 2069,
       "createdAt": "2026-08-27T02:00:58.485Z",
       "githubData": {
-        "stars": "2480",
+        "stars": "2489",
         "forks": "210",
         "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission. - anthropics/claude-plugins-community",
         "topics": [],
@@ -1349,13 +1627,13 @@
       "repo": "chaitanyagiri/munder-difflin",
       "description": "local multi-agent harness",
       "language": "JavaScript",
-      "stars": 5124,
-      "forks": 611,
+      "stars": 5141,
+      "forks": 615,
       "starsAdded": 2017,
       "createdAt": "2026-08-27T02:00:58.632Z",
       "githubData": {
-        "stars": "5126",
-        "forks": "611",
+        "stars": "5142",
+        "forks": "615",
         "description": "local multi-agent harness. Contribute to chaitanyagiri/munder-difflin development by creating an account on GitHub.",
         "topics": [
           "agents",
@@ -1409,13 +1687,13 @@
       "repo": "tashfeenahmed/freellmapi",
       "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
       "language": "TypeScript",
-      "stars": 21270,
-      "forks": 3033,
+      "stars": 21330,
+      "forks": 3036,
       "starsAdded": 2014,
       "createdAt": "2026-08-27T02:00:58.684Z",
       "githubData": {
-        "stars": "21278",
-        "forks": "3033",
+        "stars": "21330",
+        "forks": "3036",
         "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi",
         "topics": [],
         "license": "MIT license",
@@ -1462,12 +1740,12 @@
       "repo": "apache/maka",
       "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
       "language": "TypeScript",
-      "stars": 3831,
+      "stars": 3843,
       "forks": 359,
       "starsAdded": 1978,
       "createdAt": "2026-08-27T02:00:58.606Z",
       "githubData": {
-        "stars": "3833",
+        "stars": "3843",
         "forks": "359",
         "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log. - apache/maka",
         "topics": [
@@ -1585,13 +1863,13 @@
       "repo": "modular/modular",
       "description": "The Modular Platform (includes MAX & Mojo)",
       "language": "Mojo",
-      "stars": 29277,
-      "forks": 3116,
+      "stars": 29281,
+      "forks": 3117,
       "starsAdded": 1770,
       "createdAt": "2026-08-27T02:00:58.499Z",
       "githubData": {
-        "stars": "29277",
-        "forks": "3116",
+        "stars": "29281",
+        "forks": "3117",
         "description": "The Modular Platform (includes MAX & Mojo). Contribute to modular/modular development by creating an account on GitHub.",
         "topics": [
           "ai",
@@ -1646,13 +1924,13 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 5814,
-      "forks": 470,
+      "stars": 5830,
+      "forks": 473,
       "starsAdded": 1732,
       "createdAt": "2026-08-27T02:00:58.636Z",
       "githubData": {
-        "stars": "5818",
-        "forks": "470",
+        "stars": "5830",
+        "forks": "473",
         "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
         "topics": [],
         "license": "",
@@ -1721,13 +1999,13 @@
       "repo": "PostHog/posthog",
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
-      "stars": 39386,
-      "forks": 3302,
+      "stars": 39394,
+      "forks": 3304,
       "starsAdded": 1511,
       "createdAt": "2026-08-27T02:00:58.680Z",
       "githubData": {
-        "stars": "39386",
-        "forks": "3302",
+        "stars": "39394",
+        "forks": "3304",
         "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP. - PostHog/posthog",
         "topics": [
           "ab-testing",
@@ -1914,6 +2192,63 @@
       }
     },
     {
+      "id": "665c6977-d06f-46d2-862b-a5b3ec5ec3c6",
+      "dateAdded": "202635",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 34858,
+      "forks": 3926,
+      "starsAdded": 928,
+      "createdAt": "2026-08-28T12:00:03.786Z",
+      "githubData": {
+        "stars": "34858",
+        "forks": "3926",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
       "id": "80b334ae-69f1-4653-99db-65554b01dbbe",
       "dateAdded": "202635",
       "type": "github-weekly",
@@ -1995,12 +2330,12 @@
       "repo": "bookorbit/bookorbit",
       "description": "BookOrbit: Your Reading Space",
       "language": "TypeScript",
-      "stars": 3434,
+      "stars": 3443,
       "forks": 210,
       "starsAdded": 803,
       "createdAt": "2026-08-27T02:00:58.690Z",
       "githubData": {
-        "stars": "3434",
+        "stars": "3443",
         "forks": "210",
         "description": "BookOrbit: Your Reading Space. Contribute to bookorbit/bookorbit development by creating an account on GitHub.",
         "topics": [

@@ -1,0 +1,63 @@
+{
+  "id": "b8513859-abf7-4f6b-94f8-42d7ff318e9f",
+  "dateAdded": "20260828",
+  "type": "github-daily",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "repo": "ChromeDevTools/chrome-devtools-mcp",
+  "description": "Chrome DevTools for coding agents",
+  "language": "TypeScript",
+  "stars": 49866,
+  "forks": 3498,
+  "starsAdded": 61,
+  "createdAt": "2026-08-28T12:00:02.111Z",
+  "githubData": {
+    "stars": "49866",
+    "forks": "3498",
+    "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub.",
+    "topics": [
+      "browser",
+      "chrome",
+      "chrome-devtools",
+      "debugging",
+      "devtools",
+      "mcp",
+      "mcp-server",
+      "puppeteer"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://npmjs.org/package/chrome-devtools-mcp"
+  },
+  "summaryData": {
+    "tags": [
+      "Chrome",
+      "DevTools",
+      "MCP",
+      "Puppeteer",
+      "自动化测试"
+    ],
+    "cover": "",
+    "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+    "ability": [
+      "浏览器自动化操控",
+      "深度调试与性能分析",
+      "网络请求监控",
+      "Lighthouse 性能审计",
+      "MCP 协议标准集成"
+    ],
+    "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "测试工具"
+    ],
+    "suitable": [
+      "前端/全栈开发者",
+      "QA/SRE 工程师",
+      "自动化测试人员",
+      "性能优化专家",
+      "AI 编程深度用户"
+    ],
+    "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
+  },
+  "contentDetail": "# 一句话总结\nChrome DevTools MCP（chrome-devtools-mcp）是一个由 Google Chrome 官方团队提供的 MCP（Model Context Protocol）服务器，把 Chrome DevTools 的能力标准化地开放给 AI 编码助手；它让 Claude、Cursor、Copilot、Gemini 等 AI 能直接操控真实浏览器、读取页面与网络信息、进行性能与内存分析，从而把“只会写代码”的助手升级成“能真机调试的搭档”。\n## 背景与痛点\n它诞生的背景与两大趋势密不可分：\n- MCP 的兴起：MCP（Model Context Protocol）是 Anthropic 在 2024 年开源的、用于把大模型与外部系统打通的开放标准，类似“AI 的万能适配器”。它统一了工具与数据源的接入方式，避免为每个数据源重复造轮子。\n- 编码助手的“盲区”：长期以来，AI 编码助手只能看到代码本身，而无法看到页面渲染、控制台日志、网络请求、性能轨迹等“运行时的真相”。Addy Osmani 在官方博文中形象地比喻：编码助手就像“蒙着眼睛写代码”。\n这直接带来三大痛点：\n- 调试与修复必须人工介入：AI 无法自己在浏览器里验证假设，只能反复给出“猜测式”修复，导致迭代慢、误判多。\n- 自动化/回归测试难以“一键化”：要写 Puppeteer/Playwright 脚本再跑，门槛不低，维护成本高；AI 只能给脚本，但不能自己执行和验证。\n- 性能与内存问题的反馈链条太长：从 Lighthouse 报告到真正定位瓶颈，需要多次人机来回，无法形成闭环。\nChrome DevTools MCP 把 Chrome 的 CDP（Chrome DevTools Protocol）与自动化能力，通过 MCP 暴露为标准化工具，相当于给 AI 装上了“眼睛”和“双手”，直接在真实浏览器里观察和操作。\n## 核心亮点与功能剖析\n### 1) 能力矩阵：工具覆盖非常完整\n官方工具参考文档按功能把工具分成了若干大类，每一类都解决一个具体场景：\n- 输入自动化（10 个工具）：click、fill、fill_form、hover、drag、press_key、type_text、upload_file、click_at、handle_dialog（处理弹窗）。这些工具以页面快照中的元素 UID 为定位基准，AI 可以像人一样点击、填写表单、拖拽、上传等。\n- 导航自动化（6 个工具）：navigate_page、new_page、close_page、list_pages、select_page、wait_for。支持多标签管理、前后进、刷新、等待特定条件。\n- 调试与观测（8 个工具）：take_screenshot、take_snapshot、screencast_start/stop、list_console_messages、get_console_message、evaluate_script、lighthouse_audit 等。能读控制台（含 source-map 后的栈）、运行脚本、截图/录屏、做 Lighthouse 审计。\n- 网络（2 个工具）：list_network_requests、get_network_request。可以遍历和读取请求/响应，用于接口调试与Mock验证。\n- 性能（3 个工具）：performance_start_trace、performance_stop_trace、performance_analyze_insight。等价于在 DevTools Performance 面板录制 trace，并由 AI 自动提取关键指标与优化建议。\n- 内存（13 个工具）：take_heapsnapshot、close_heapsnapshot、compare_heapsnapshots、get_heapsnapshot_× 等。直接把堆快照分析暴露给 AI，适合做泄漏定位与内存布局检查。\n- 扩展与第三方（7 个工具）：install_extension、list_extensions、reload_extension、trigger_extension_action、uninstall_extension；execute_3p_developer_tool、list_3p_developer_tools。允许 AI 自动安装/重载扩展，甚至调用第三方开发者工具，为复杂调试场景留足空间。\n- WebMCP 与 PWA：execute_webmcp_tool、list_webmcp_tools；install_pwa、launch_pwa、uninstall_pwa、get_os_app_state。可交互支持 WebMCP 协议的页面，管理 PWA 的安装/启动/卸载与系统级状态。\n### 2) 架构与关键技术栈\n- 上层是 MCP 标准接口：AI 客户端调用 MCP 工具（如 navigate_page、take_snapshot），服务器返回结构化结果，便于模型消费与决策。\n- 内部使用 CDP + Puppeteer：它直接对接 Chrome DevTools Protocol，并由 Puppeteer 负责“稳态等待”与细节处理（例如自动等待网络空闲/元素出现），这是它比直接发 CDP 更可靠的关键设计。\n- 本地进程模型：服务器以 Node.js 进程运行（npm 包），支持 headless 与有界面两种模式；默认使用独立的用户数据目录以保证隔离，并提供 --isolated 选项使用临时配置、避免污染个人浏览环境。\n- 可选 CLI 模式：包内附带实验性 CLI，便于终端调试或让 AI 生成可执行脚本。CLI 通过后台守护进程复用浏览器状态，支持 JSON 输出用于程序化处理。\n### 3) “所见即所得”的快照驱动交互\n- 工具引用中频繁出现“uid 来自页面快照”，这意味其交互范式是：先取得页面的结构快照（snapshot），AI 根据快照中的元素 UID 产生稳定的点击/填写等操作，减少因选择器抖动导致的失败。对动态页面尤其关键。\n### 4) 与多个主流 MCP 客户端开箱即配\nREADME 提供了针对各类客户端的配置或命令示例，覆盖：\n- Claude Code（MCP-only / Plugin 两种方式）、Copilot CLI/VS Code（支持插件与 MCP Server）、Cursor、Gemini CLI/Code Assist、JetBrains AI Assistant & Junie、Warp、Windsurf、Katalon Studio（通过 MCP proxy）等。上手成本很低，基本是复制粘贴配置即可。\n### 5) 真实使用流程示例（含 Demo）\n- 配置 MCP 客户端（以 Claude Code 为例）：\n  - CLI 方式：claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest\n  - 插件方式：/plugin marketplace add ChromeDevTools/chrome-devtools-mcp；/plugin install chrome-devtools-mcp@chrome-devtools-plugins（重启后生效）。\n- 首次验证提示：在 MCP 客户端里输入“Check the performance of https://developers.chrome.com”。服务器会自动打开 Chrome、录制性能 trace 并返回分析。\n- CLI 示例（无需 MCP 客户端）：\n  - 安装：npm i chrome-devtools-mcp@latest -g；chrome-devtools status\n  - 跳转与截图：\n    - chrome-devtools new_page \"https://example.com\"\n    - chrome-devtools navigate_page 1 --url \"https://web.dev\"\n    - chrome-devtools take_screenshot 1 --filePath screenshot.png\n  - 交互与脚本执行：\n    - chrome-devtools click 1 \"element-uid-123\"\n    - chrome-devtools fill 1 \"input-uid-456\" \"search query\"\n    - chrome-devtools evaluate_script \"() => document.title\" --pageId 1\n## 目标人群与收益\n谁最适合：\n- 前端/全栈开发者：希望 AI 帮忙“真机调试”而不是只给代码片段。\n- QA/SRE：把用例直接交给 AI 在真实 Chrome 上执行与回归，并结合 Lighthouse 做性能兜底。\n- 自动化工程师：想快速产出可运行的浏览器操作脚本，而不想从零写选择器与等待逻辑。\n- 性能/内存调优：借助 AI 做性能 trace 与堆快照的初步筛选与洞察，缩短定位时间。\n具体收益：\n- 效率提升：AI 能自己执行并验证修复，减少人机来回；尤其对偶现的 UI 问题，可以在浏览器内反复跑。\n- 质量保障：内置 Lighthouse 与性能分析，让每次改动都能被快速“体检”。\n- 技能外化：把 DevTools 专家经验封装为“技能（Skills）”，插件化的方式让非资深用户也能享受到深度的调试能力。Addy Osmani 的博文与社区实践也印证了这一点。\n- 跨客户端可移植：一次配置，能在多个 MCP 客户端之间复用；团队可以根据 IDE/工具链灵活选择。\n## 竞品/同类对比\n- Playwright MCP：同为 MCP 服务器，但对接的是 Playwright。与 chrome-devtools-mcp 相比，前者在跨浏览器（Chromium/WebKit/Firefox）能力占优，但与 Chrome DevTools 面板的深度结合（如 performance trace、CrUX、堆快照等）方面不如 Chrome 官方的 MCP。\n- 社区版 chrome-devtools-mcp（如 benjaminr/chrome-devtools-mcp）：属于社区实现，更侧重与 Claude 的“一键扩展”式体验；官方版更新更及时、工具集更全面、文档与兼容性更有保障。\n- 传统框架（Puppeteer/Playwright/Selenium）+ 自定义 Agent：要自己构建工具调用、状态管理与恢复、重试策略。官方 MCP 直接把这些标准化，还能和多种 MCP 客户端无缝对接。\n总体定位：在 MCP 生态里，它是面向 Chrome 的“官方深度版”，性能/调试/内存分析最贴近 DevTools 原生体验；如果你需要跨浏览器，Playwright MCP 更合适；如果需要统一协议避免厂商锁定，MCP 本身就是那个通用标准。\n## 局限与不足\n- 浏览器兼容：官方仅承诺支持 Google Chrome 与 Chrome for Testing；其他 Chromium 浏览器未保证兼容。\n- 隐私与安全：服务会将浏览器内容暴露给 MCP 客户端，不慎让 AI 操作登录态页面会带来泄露风险；需要避免在含敏感信息的站点使用，并善用 --isolated 与自定义用户数据目录。\n- 数据上报与遥测：默认会收集使用统计（如工具调用成功率/延迟/环境信息）以及性能工具可能调用 CrUX API。可通过 --no-performance-crux 与 --no-usage-statistics 关闭，或设置环境变量禁用。需要在企业或合规环境里显式处理。\n- 上手门槛依赖 MCP 客户端认知：如果你还没用过 Claude/Cursor/Copilot 的 MCP 能力，需要先学习配置 MCP 客户端。整体操作链稍长。\n- CLI 仍属实验性：部分工具（如 wait_for、fill_form）未被 CLI 生成，命令行与 MCP 能力不完全对等。\n- 代理与防火墙环境：在受限网络下，插件安装或 npx 下载可能遇到问题；官方文档提供了故障指南，但有时需要改用纯 MCP Server 或本地镜像。\n## 上手门槛与部署体验\n- 环境要求：Node.js LTS、npm、Chrome 当前稳定版或更新版本。\n- 一键安装与启动：npx -y chrome-devtools-mcp@latest（由 MCP 客户端按配置拉起）。大量 MCP 客户端只需复制 JSON 配置即可，不需要手动管进程。\n- 文档与工具参考：README + tool-reference + CLI 文档 + 故障排除 + 设计原则，链接齐全且结构清晰，便于查阅参数与返回结构。\n- 多平台部署配置：Windows、macOS、Linux 均有示例；Windows 下还给出了配置环境与启动超时的注意事项。\n## 社区活跃度与生命力（基于可见信息）\n- 仓库与组织：归属 ChromeDevTools 官方组织，配套的 devtools-frontend 等仓库同样处于活跃维护状态。虽然本文未拉取具体 commit 频率，但从 README 对多客户端的详尽配置与更新检查机制来看，维护团队在保持同步与兼容。\n- 生态整合：已被 Claude、Copilot/VS Code（插件）、Gemini CLI/Code Assist、Cursor、JetBrains、Windsurf、Warp 等明确支持或通过 MCP proxy 兼容，说明其在 MCP 生态里已是“一等公民”。\n- 更新检查：默认会定期检查 npm 新版本并提示，用户可设置环境变量关闭。这体现了对持续迭代的重视。\n## 结语与行动建议（终极评判）\n- **终极评判**：Chrome DevTools MCP 把“浏览器深度调试与自动化”从手工领域搬进了 AI 助手的工具箱。它不是第一个把浏览器暴露给 AI 的尝试，但却是第一个与 Chrome DevTools 如此深度对齐、且以官方维护方式落地的 MCP 服务器。对于已经在使用 Claude、Cursor、Copilot、Gemini 等具备 MCP 能力的用户来说，它是值得立即配置的“增益插件”，能在性能、调试、自动化三个方向显著缩短反馈链。\n- **给小白的建议**：先确保你有一个 MCP 客户端（如 Claude Code、Cursor 或 VS Code + Copilot），按 README 复制最简配置，用“Check the performance of https://developers.chrome.com”做第一次验证；再结合 CLI 体验手工命令与截图，逐步熟悉快照与 UID 的交互方式。\n- **给团队/企业建议**：统一将 chrome-devtools-mcp 纳入 MCP 客户端配置，但在 CI/流水线与开发机中使用独立的用户数据目录与 --isolated 模式，明确禁用遥测与 CrUX（如有合规要求）；对回归测试与性能巡检场景，尝试把用例转述给 AI 执行与分析，把重心从“写脚本”转向“定义与校验结果”。\n## 附录：最简配置示例（复制即可用）\n在 MCP 客户端的 mcpServers 配置中添加（大多数客户端通用）：\n- 默认模式：\n  {\n    \"mcpServers\": {\n      \"chrome-devtools\": {\n        \"command\": \"npx\",\n        \"args\": [\"-y\", \"chrome-devtools-mcp@latest\"]\n      }\n    }\n  }\n- 轻量+无头模式（适用于只需要基础浏览器任务）：\n  {\n    \"mcpServers\": {\n      \"chrome-devtools\": {\n        \"command\": \"npx\",\n        \"args\": [\"-y\", \"chrome-devtools-mcp@latest\", \"--slim\", \"--headless\"]\n      }\n    }\n  }\n- 禁用遥测与 CrUX 的示例：\n  {\n    \"mcpServers\": {\n      \"chrome-devtools\": {\n        \"command\": \"npx\",\n        \"args\": [\"-y\", \"chrome-devtools-mcp@latest\", \"--no-performance-crux\", \"--no-usage-statistics\"]\n      }\n    }\n  }\n以上配置参考自官方 README 与工具文档，可直接用于支持 stdio MCP Server 的客户端。"
+}

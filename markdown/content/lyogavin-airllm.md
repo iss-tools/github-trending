@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/lyogavin/airllm)
 
-- **Stars**: 32902
+- **Stars**: 32911
 - **Language**: Jupyter Notebook
 
 ## AirLLM：让 2.8 万亿参数模型在 4GB 显存上运行的革命性工具
