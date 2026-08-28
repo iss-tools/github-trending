@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/tinyhumansai/openhuman)
 
-- **Stars**: 38673
-- **Language**: Rust
 
 ## OpenHuman 评测：你的本地优先、记忆超强的个人AI超级大脑
 

@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/eneskirca/nodeterm)
 
-- **Stars**: 1288
-- **Language**: TypeScript
 
 ## NodeTerm：无限画布上的节点化终端管理器
 

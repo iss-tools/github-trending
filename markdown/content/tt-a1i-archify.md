@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/tt-a1i/archify)
 
-- **Stars**: 26016
-- **Language**: JavaScript
 
 ## Archify - AI 时代的可验证架构图生成工具
 

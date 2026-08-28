@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/asciimoo/hister)
 
-- **Stars**: 2886
-- **Language**: Go
 
 ## Hister：打造你的私人互联网记忆库
 

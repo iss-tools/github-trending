@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/ruvnet/ruflo)
 
-- **Stars**: 69063
-- **Language**: TypeScript
 
 ## Ruflo: Claude Code 多智能体编排平台评测
 

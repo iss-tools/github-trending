@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/abhigyanpatwari/GitNexus)
 
-- **Stars**: 46060
-- **Language**: TypeScript
 
 ## GitNexus 深度评测：让 AI 看见代码结构的本地图引擎
 

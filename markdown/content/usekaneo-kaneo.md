@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/usekaneo/kaneo)
 
-- **Stars**: 8589
-- **Language**: TypeScript
 
 ## Kaneo：极简自托管项目管理平台
 

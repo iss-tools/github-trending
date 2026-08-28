@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/ripienaar/free-for-dev)
 
-- **Stars**: 134408
-- **Language**: HTML
 
 ## GitHub 项目 free-for-dev 深度评测：开发者免费资源宝库
 

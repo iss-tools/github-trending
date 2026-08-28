@@ -2,8 +2,8 @@
 
 [GitHub URL](https://github.com/cursor/plugins)
 
-- **Stars**: 5863
-- **Language**: TypeScript
+
+## Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creati
 
 > # Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”
 > > 2026年的编程已不再是单打独斗，Cursor 的插件系统正在将你的 IDE 变成一个能调用无数工具、遵循团队规范、自动执行复杂工作流的“超级开发者”。

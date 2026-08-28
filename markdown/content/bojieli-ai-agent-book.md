@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/bojieli/ai-agent-book)
 
-- **Stars**: 42279
-- **Language**: Python
 
 ## 《深入理解 AI Agent：设计原理与工程实践》深度评测
 

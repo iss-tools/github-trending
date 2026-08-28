@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/AgriciDaniel/claude-obsidian)
 
-- **Stars**: 14253
-- **Language**: Python
 
 ## claude-obsidian：深度融合 AI 的本地第二大脑构建系统
 

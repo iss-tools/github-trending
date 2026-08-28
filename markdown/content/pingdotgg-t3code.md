@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/pingdotgg/t3code)
 
-- **Stars**: 20847
-- **Language**: TypeScript
 
 ## T3Code：AI 编程时代的“统一指挥官”深度评测
 

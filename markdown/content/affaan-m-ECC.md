@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/affaan-m/ECC)
 
-- **Stars**: 242549
-- **Language**: JavaScript
 
 ## ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测
 

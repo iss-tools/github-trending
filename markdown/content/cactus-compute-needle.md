@@ -2,8 +2,8 @@
 
 [GitHub URL](https://github.com/cactus-compute/needle)
 
-- **Stars**: 9529
-- **Language**: Python
+
+## 14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/
 
 > # Needle 2：仅 14MB 的端侧智能代理模型，如何让万物皆可“思考”？
 > > 一颗 14MB 的“智能芯片”，能在手机、手表甚至单片机上运行，却能处理复杂工具调用与数据提取，这是边缘AI的下一个前沿。

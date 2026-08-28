@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/makeplane/plane)
 
-- **Stars**: 58024
-- **Language**: TypeScript
 
 ## Plane：开源项目管理领域的颠覆者，挑战 Jira 与 Linear
 

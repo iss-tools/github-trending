@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/openclaw/openclaw)
 
-- **Stars**: 387472
-- **Language**: TypeScript
 
 ## OpenClaw：开源个人 AI 助手与自动化工作流中枢
 

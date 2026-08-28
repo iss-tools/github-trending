@@ -1,0 +1,53 @@
+{
+  "id": "d9c63fef-a080-4e62-8ea4-bba7758df3d0",
+  "url": "https://github.com/swoole/typephp",
+  "domain": "github.com",
+  "repo": "swoole/typephp",
+  "description": "TypePHP 是 Swoole 团队推出的 PHP AOT 编译器，通过将 PHP 源码转换为 C++ 再编译为机器码，实现了“PHP 写，C++ 跑”。它解决了 PHP 启动慢和依赖运行时环境的痛点，适合需要极致性能和独立分发的场景，但上手门槛较高。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-28T16:04:06.873Z",
+  "metaData": {
+    "forks": "38",
+    "stars": "758",
+    "topics": [],
+    "license": "GPL-3.0 license",
+    "homepage": "https://swoole.com/aot/",
+    "description": "Compile PHP to Native Binaries. Contribute to swoole/typephp development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "PHP",
+      "Swoole",
+      "AOT",
+      "性能优化",
+      "开源项目"
+    ],
+    "cover": "",
+    "title": "TypePHP 深度评测：让 PHP 像 C++ 一样运行",
+    "ability": [
+      "AOT 编译",
+      "性能优化",
+      "独立打包",
+      "源码保护",
+      "C++ 生态集成"
+    ],
+    "summary": "Swoole 出品的 PHP AOT 编译器，将 PHP 代码编译成原生二进制程序，解决性能与分发痛点。",
+    "category": [
+      "开发工具",
+      "编译器"
+    ],
+    "suitable": [
+      "高性能服务开发者",
+      "CLI 工具作者",
+      "源码保护需求者",
+      "底层技术爱好者",
+      "桌面应用开发者"
+    ],
+    "description": "TypePHP 是 Swoole 团队推出的 PHP AOT 编译器，通过将 PHP 源码转换为 C++ 再编译为机器码，实现了“PHP 写，C++ 跑”。它解决了 PHP 启动慢和依赖运行时环境的痛点，适合需要极致性能和独立分发的场景，但上手门槛较高。"
+  },
+  "contentDetail": "# 一句话总结\n**TypePHP**是 Swoole 团队推出的「PHP → C++ → 原生二进制」AOT 编译器项目与官方入口仓库。它通过**把 PHP 源码提前编译为机器码**，消除解释执行开销，并在语言层面增加原生类型、高精度数学与零开销 C++ 互操作等特性，让 PHP 在保持开发体验的同时，进入密集计算与跨平台原生分发的赛道。\n---\n## 背景与痛点：它为什么出现？\n### 传统 PHP 的两个天花板\n- **解释执行开销：**请求到达后要“翻译再执行”，每次都要经历词法/语法分析、生成 opcode、执行在 ZendVM 上。这导致密集计算任务极其吃力，启动成本高。\n- **分发与部署成本：**要在生产环境跑 PHP，必须先安装整个运行时与大量扩展，还要保证版本一致；若要分发 CLI 工具给客户，几乎是不可完成的任务。\n### TypePHP 的解题思路\nTypePHP 采取 **AOT（Ahead‑Of‑Time）路线**：\n- 把 PHP 源码先翻译成 C++，再交给 GCC/Clang/MSVC 编译成原生可执行文件（ELF/Mach‑O/PE），甚至可以编译为 WebAssembly（WASM），从而彻底绕过 ZendVM，开机即运行。\n- 在 PHP 语法之上引入“现代化扩展语法”，如 `use native_types`、`use bigint_types`、`use decimal_types`，以及一套编译器级的关键词方法，保证静态类型检查与性能优化。\n---\n## 核心亮点与功能剖析\n### 1) 真·原生二进制输出与编译流程\n- 流程：PHP 源码 → C++ 代码 → 目标文件 → 原生二进制。官方提供了命令行工具 `tpc`，一键完成这条链路。\n- 不产生字节码/中间码，直接生成可执行的机器码，运行无虚拟机层开销，启动与执行都更快。\n### 2) 极致计算性能：`native_types` 与消除 zval\n- 默认 PHP 中数值都是 zval 容器包装，带来额外内存访问与分支判断。`use native_types` 将 `int/float/bool` 提升为 C++ 原生类型，消除 zval 开销，密集计算场景官方测试可达数十倍乃至百倍提升。\n- 官方基准（PHP 8.4 vs AOT -O3）：\n  - 斐波那契 fib(40)：从 14.82s → 0.11s，约 135 倍提升。\n  - PI 值计算（1 亿次迭代）：从 6.52s → 0.094s，约 69 倍提升。\n### 3) 高精度数学：`bigint_types` / `decimal_types`\n- 提供 `BigInt`、`Decimal`、`BigFloat` 三种内置类型，满足金融与科学计算对精度和溢出的严苛要求。\n- 使用文件级开关自动提升字面量类型，如 `use bigint_types` 后整数字面量即为 BigInt；`use decimal_types` 后浮点字面量为 Decimal，且避免 0.1+0.2 的二进制浮点误差。\n### 4) 零开销 C++ 互操作\n- 可直接在 PHP 文件中内联 C++ 代码，调用 C/C++ 库，类型自动映射，无需走 FFI 的间接调用层，实现“零开销”互操作。\n- 适合作为胶水，把现有高性能 C/C++ 生态快速接入到 PHP 代码中。\n### 5) 跨平台与多形态：Linux/macOS/Windows/WASM\n- 同一份源码可编译成不同平台的可执行文件；还能输出 WebAssembly，实现浏览器端运行或服务端边缘计算。\n- 同时支持“静态编译 + 动态解释”两种形态，为渐进式迁移与调试提供灵活性。\n### 6) 编译期类型安全与关键词方法\n- 编译阶段即可捕获类型错误、未定义函数、参数数量不匹配等问题，避免运行时“一泻千里”的崩溃，带来类似静态语言的安全性。\n- 编译器内置一套“关键词方法”，如 `toInt()/toFloat()/toString()/toStream()/toBigInt()/toDecimal()/toObject()` 等，优先级最高，用于显式类型接续与转换，显著提升类型推导与优化能力。\n### 7) 调试与性能工具链\n- 支持 GDB 调试、内置性能分析器，便于对热点函数进行定位与优化，适合需要精细调优的计算型服务或工具。\n---\n## 上手门槛与部署体验\n### 安装方式\n- 官方文档推荐直接使用 GitHub Releases 提供的预构建自托管 `tpc` 二进制，最快上手。\n- 也可从源编译，流程中涉及构建 PHPX 扩展（依赖 cmake 与本地 PHP/编译工具链）。\n### 最小 Hello 示例（官方风格）\n```bash\n# 安装 PHPX 扩展（仅从源构建时需要）\ncd vendor/swoole/phpx && cmake . && make -j$(nproc)\n# 编译你的第一个原生二进制\n./tpc hello.php -O2 -o hello\n# 运行\n./hello\n```\n### 示例：fib.php（展示 native_types 与编译前后对照）\n```php\n// fib.php\ndeclare(strict_types=1);\nuse native_types;\nfunction fib(int $n): int {\n    if ($n <= 1) return $n;\n    return fib($n - 1) + fib($n - 2);\n}\nfunction main(): void {\n    echo fib(40);\n}\n```\n编译后生成的 C++（编译器自动生成）：\n```cpp\n#include <phpx.h>\n#include <phpx_helper.h>\nphp::Int fib(php::Int n) {\n    if (n <= 1) return n;\n    return fib(n - 1) + fib(n - 2);\n}\nvoid main() {\n    php::echo(fib(40));\n}\n```\n### 示例：高精度 Decimal\n```php\ndeclare(strict_types=1);\nuse decimal_types;\nfunction main(): void {\n    $a = 0.1 + 0.2;\n    echo $a->toString(); // \"0.3\"（无二进制误差）\n    $price = 19.99;\n    $tax   = $price * 0.08;\n    $total = $price->add($tax);\n    echo $total->round(2)->toString(); // \"21.59\"\n}\n```\n### 文档质量\n- 官方站点（swoole.com/aot）提供安装、特性与语言特性的分栏文档，内容较为完整，覆盖了 `native_types/bigint_types/decimal_types` 与关键词方法等要点，便于检索与实践。\n---\n## 技术栈与架构解析\n### 编译管线\n- 前端：PHP 解析 → 类型推导 → 语义分析（对 declare/use/关键词方法进行特化处理）。\n- 中端：生成 C++ 代码，并将 PHP 类型映射到 C++ 类型体系；启用原生类型时，`int/float/bool` 对应 C++ 原生类型，其他通过 phpx 框架封装。\n- 后端：调用系统 C/C++ 编译器（GCC/Clang/MSVC），支持优化级别（-O2/-O3）与多平台目标格式，还可输出 WASM。\n### 运行时\n- 编译出的二进制依赖 phpx 运行时支撑（少量底层对象模型与助手），核心计算路径完全走原生代码；PHP 扩展函数/类通过兼容层调用。\n- 支持调试与性能分析，因此运行时并不只是裸二进制，还包含必要的符号与钩子。\n---\n## 目标人群与收益\n### 适合谁用\n- 运算密集型任务开发者（量化、金融、科学计算、游戏逻辑服务端、实时数据分析等）。\n- 需要把 PHP CLI 工具或小型服务打包为跨平台可执行文件的团队。\n- 有大量现成 C/C++ 库需要调用，又希望保持 PHP 开发效率的项目。\n- 对类型安全有高要求、希望在编译期发现问题的人。\n### 能获得什么\n- **大幅提升计算性能**：在开启 `native_types` 的场景下，官方基准给出数十到上百倍提升，生产环境需结合真实用例实测，但天花板已被显著抬高。\n- **跨平台原生分发**：无需在目标环境部署 PHP 运行时与扩展，减少部署复杂度与版本冲突风险。\n- **更安全、更可控**：编译期类型检查与错误拦截，减少运行时“冷不丁”的崩溃；同时分发的是二进制，保护源码，辅助 IP 防护（若配合商业版的加混淆，则能力更强）。\n---\n## 竞品/同类对比\n| 维度 | TypePHP（Swoole） | RoadRunner / Spiral | traditional PHP-FPM / OPcache | GraalVM/Truffle（其他语言） |\n|---|---|---|---|---|\n| 执行模型 | AOT 编译为原生机器码 | 进程池+常驻，通过 PHP-FPM 或专用 worker 解释执行 | 解释/字节码缓存（JIT 为辅助） | AOT+JIT（针对不同语言） |\n| 分发形态 | 原生可执行/WASM | 仍需 PHP 环境，外部常驻进程管理 | 需部署 PHP 运行时 | 原生二进制/镜像 |\n| 性能收益（计算密集） | 官方称数十至百倍；消除 zval | 中等，主要来自常驻与连接复用，纯计算增益有限 | 有限，JIT 对热点有提升但仍有 VM 层 | 视语言实现差异 |\n| 类型安全 | 编译期强类型检查、原生类型扩展 | 运行时为 PHP 原有动态类型系统 | 动态为主，类型声明有限 | 通常强类型 |\n| 学习与迁移成本 | 需学习 AOT 语法与工具链；渐进迁移可行 | 低，主要在部署层改动 | 无 | 高，需要改变语言与生态 |\n| 商业/开源情况 | AOT 文档公开，GitHub 仓库含示例与 Releases；Swoole Compiler 商业版提供加密/混淆等更高级功能 | 开源 | 开源（PHP ZendVM） | 多种许可证 |\n- **独特竞争力：**TypePHP 在“PHP 内”完成 AOT，且并未割裂现有 PHP 语法与扩展生态；相比重新换语言的方案，迁移成本更低；相比纯解释或进程池方案，计算天花板更高。\n---\n## 局限与不足（必须直白的点）\n### 成熟度与生态仍在早期\n- 仓库 Star 数约数百，Issues 与 PR 数量尚少，社区规模较小；从开源“名声”与“案例沉淀”角度看，仍处早期阶段，大规模生产实践案例有限。\n- 兼容性未完全覆盖全量 PHP 语法与生态库（尤其是动态特性丰富的框架与大量反射/eval 的项目），需要逐个验证。\n### 工具链与环境要求\n- 需要 C/C++ 编译器与构建环境，多平台交叉编译会增加 CI/CD 复杂度。\n- 调试方法与传统 PHP 不同，需要适配 GDB 等原生调试工具，对于只习惯 `var_dump`/Xdebug 的开发者有一定学习门槛。\n### 语义边界与类型约束\n- 大量动态特性（可变变量、动态方法名、`eval`/`create_function`、反射 API 等）在 AOT 场景下受限，需要逐步重构代码以符合静态推导要求。\n- `toAny()` 可退回到动态语义，但会丧失部分优化，滥用会拖累性能。\n### 调优与性能差异\n- 官方基准集中在纯计算循环（斐波那契、PI 计算），对于真实业务（I/O 占比大）的提升未必夸张，收益取决于任务本身的计算/IO 比例，需要实测评估。\n### 仓库与说明错位\n- GitHub 仓库当前 README 文本指向“Swoole Compiler”商业产品，而非 TypePHP AOT 的直接说明，需要跳转到官方文档站才能获得全面信息，体验上略显割裂。\n---\n## 结语与行动建议（终极评判）\n### 终极评判\nTypePHP 不是要“取代 PHP”，而是给 PHP 打开了一个**通往原生性能与跨平台分发的通道**。它非常适合：\n- 算法密集模块/CLI 工具/嵌入式逻辑；\n- 与 C/C++ 深度耦合的胶水层；\n- 想把 PHP 项目变为“单一可执行”分发但不想重写为 Go/Rust 的团队。\n如果你现在就在为 PHP 的计算与部署瓶颈发愁，TypePHP 是一条值得认真试验的“进化线”。\n### 立即可做的行动\n- **5 分钟上手：**使用官方预构建 `tpc` 二进制，把官方 `fib.php` 编译并运行，跑出第一个“原生程序”，直观感受编译与执行速度差异。\n- **类型开关实验：**在新项目中开启 `declare(strict_types=1)` 与 `use native_types`，配合 IDE 的类型提示，先让代码“更静态”，再逐步迁移到 AOT 编译。\n- **高精度场景试点：**在计费、对账等逻辑中用 `use decimal_types`，杜绝浮点误差；在科学计算中用 `use bigint_types` 做大数运算，避免溢出。\n### 风险控制与渐进路线\n- 不要一次性把整个巨型框架扔进 AOT。建议从“无状态 CLI 工具”“独立计算模块”“小型服务”做起，渐进验证与集成。\n- 在 CI 中为 AOT 目标构建独立 pipeline，确保多平台二进制的自动化构建与回归测试。\n---\n## 参考与延伸阅读\n- TypePHP 官方站与文档（AOT 入口、安装、语言特性、关键词方法）：\n- 安装与 Releases（GitHub Releases 用于获取预构建版本）：\n- 官方性能基准与“TypePHP 来了！”中文解读（含编译前后代码对照）：\n- GitHub 仓库（示例目录如 jni、tetris‑sdl、tetris‑win32、win32‑hello、hello.php 等）：",
+  "type": "project",
+  "dateAdded": "20260828"
+}

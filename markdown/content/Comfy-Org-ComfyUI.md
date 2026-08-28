@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/Comfy-Org/ComfyUI)
 
-- **Stars**: 129372
-- **Language**: Python
 
 ## ComfyUI 深度评测：节点式 AI 生成引擎
 

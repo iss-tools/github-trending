@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/Shubhamsaboo/awesome-llm-apps)
 
-- **Stars**: 134350
-- **Language**: Python
 
 ## Awesome LLM Apps 深度评测：100+ 开源 AI 应用与技能库
 

@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/earendil-works/pi)
 
-- **Stars**: 98667
-- **Language**: TypeScript
 
 ## Pi：极简主义 AI 编程 Agent 深度评测
 

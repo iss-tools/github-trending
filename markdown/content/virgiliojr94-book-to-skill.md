@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/virgiliojr94/book-to-skill)
 
-- **Stars**: 26551
-- **Language**: Python
 
 ## 把技术书变成 AI 超能力：book-to-skill 深度评测
 

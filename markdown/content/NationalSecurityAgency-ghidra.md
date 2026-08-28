@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/NationalSecurityAgency/ghidra)
 
-- **Stars**: 73183
-- **Language**: Java
 
 ## Ghidra: NSA开源的顶级逆向工程框架
 

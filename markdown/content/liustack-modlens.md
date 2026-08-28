@@ -2,8 +2,6 @@
 
 [GitHub URL](https://github.com/liustack/modlens)
 
-- **Stars**: 3619
-- **Language**: TypeScript
 
 ## ModLens：给纯文本模型装上“眼睛”的视觉插件评测
 
