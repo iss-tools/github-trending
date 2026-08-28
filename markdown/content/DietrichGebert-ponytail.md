@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/DietrichGebert/ponytail)
 
-- **Stars**: 114304
+- **Stars**: 114427
 - **Language**: JavaScript
 
 ## Ponytail：给 AI 写代码踩刹车的极简规则集

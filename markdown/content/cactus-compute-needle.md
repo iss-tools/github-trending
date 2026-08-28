@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/cactus-compute/needle)
 
-- **Stars**: 9469
+- **Stars**: 9481
 - **Language**: Python
 
 > # Needle 2：仅 14MB 的端侧智能代理模型，如何让万物皆可“思考”？
