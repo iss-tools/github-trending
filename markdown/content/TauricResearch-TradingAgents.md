@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/TauricResearch/TradingAgents)
 
-- **Stars**: 101230
+- **Stars**: 101309
 - **Language**: Python
 
 ## TradingAgents 深度评测

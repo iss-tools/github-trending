@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/anthropics/claude-plugins-official)
 
-- **Stars**: 34691
+- **Stars**: 34736
 - **Language**: Python
 
 ## Claude Plugins Official：Anthropic 官方插件目录评测

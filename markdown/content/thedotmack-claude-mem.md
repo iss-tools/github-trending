@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/thedotmack/claude-mem)
 
-- **Stars**: 92279
+- **Stars**: 92333
 - **Language**: JavaScript
 
 ## Claude Code 持久化记忆插件：claude-mem 深度评测

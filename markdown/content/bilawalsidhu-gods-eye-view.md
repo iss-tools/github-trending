@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/bilawalsidhu/gods-eye-view)
 
-- **Stars**: 8078
+- **Stars**: 8570
 - **Language**: JavaScript
 
 ## God’s Eye View 深度评测
