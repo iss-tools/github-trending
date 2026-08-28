@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/marin-community/marin)
 
-- **Stars**: 2756
+- **Stars**: 2764
 - **Language**: Python
 
 ## Marin：开放构建基础模型的新范式

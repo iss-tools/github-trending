@@ -77,7 +77,7 @@
       "count": 8
     },
     {
-      "tag": "Linux",
+      "tag": "GPT-Image2",
       "count": 8
     }
   ],
@@ -115,11 +115,11 @@
       "count": 10
     },
     {
-      "name": "操作系统",
+      "name": "设计资源",
       "count": 8
     },
     {
-      "name": "设计资源",
+      "name": "操作系统",
       "count": 8
     },
     {
@@ -143,11 +143,11 @@
       "count": 6
     },
     {
-      "name": "团队协作",
+      "name": "安全工具",
       "count": 5
     },
     {
-      "name": "安全工具",
+      "name": "团队协作",
       "count": 5
     },
     {
@@ -209,6 +209,22 @@
       "count": 8
     },
     {
+      "name": "开发者与产品经理",
+      "count": 8
+    },
+    {
+      "name": "UI/UX 设计师",
+      "count": 8
+    },
+    {
+      "name": "数字营销与电商运营",
+      "count": 8
+    },
+    {
+      "name": "AI Agent 构建者",
+      "count": 8
+    },
+    {
       "name": "资深开发者与极客",
       "count": 8
     },
@@ -226,22 +242,6 @@
     },
     {
       "name": "DHH 的理念追随者",
-      "count": 8
-    },
-    {
-      "name": "开发者与产品经理",
-      "count": 8
-    },
-    {
-      "name": "UI/UX 设计师",
-      "count": 8
-    },
-    {
-      "name": "数字营销与电商运营",
-      "count": 8
-    },
-    {
-      "name": "AI Agent 构建者",
       "count": 8
     }
   ],
@@ -279,11 +279,11 @@
       "count": 19
     },
     {
-      "name": "mcp",
+      "name": "agents",
       "count": 17
     },
     {
-      "name": "agents",
+      "name": "mcp",
       "count": 17
     },
     {
@@ -315,15 +315,15 @@
       "count": 14
     },
     {
-      "name": "workflow-automation",
-      "count": 12
-    },
-    {
       "name": "claude-skills",
       "count": 12
     },
     {
-      "name": "agent",
+      "name": "prompt-engineering",
+      "count": 12
+    },
+    {
+      "name": "workflow-automation",
       "count": 12
     }
   ],
@@ -369,11 +369,11 @@
       "count": 2
     },
     {
-      "name": "Nim",
+      "name": "C++",
       "count": 2
     },
     {
-      "name": "C++",
+      "name": "Nim",
       "count": 2
     },
     {
@@ -389,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471900,
+      "stars": 471939,
       "appearances": 0
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119363,
+      "stars": 119394,
       "appearances": 4
     }
   ],
@@ -451,13 +451,13 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 23662,
+      "stars": 23787,
       "appearances": 6
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2467,
+      "stars": 2473,
       "appearances": 5
     },
     {
@@ -469,43 +469,43 @@
     {
       "repo": "basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "stars": 32804,
+      "stars": 32833,
       "appearances": 5
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38626,
+      "stars": 38633,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50936,
+      "stars": 50953,
       "appearances": 5
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 34786,
+      "stars": 34807,
       "appearances": 4
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2756,
-      "appearances": 4
-    },
-    {
-      "repo": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "stars": 3816,
+      "stars": 2764,
       "appearances": 4
     },
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119363,
+      "stars": 119394,
+      "appearances": 4
+    },
+    {
+      "repo": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "stars": 3820,
       "appearances": 4
     }
   ]
