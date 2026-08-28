@@ -73,11 +73,11 @@
       "count": 8
     },
     {
-      "tag": "MCP",
+      "tag": "GPT-Image2",
       "count": 8
     },
     {
-      "tag": "GPT-Image2",
+      "tag": "提示词工程",
       "count": 8
     }
   ],
@@ -143,11 +143,11 @@
       "count": 6
     },
     {
-      "name": "安全工具",
+      "name": "团队协作",
       "count": 5
     },
     {
-      "name": "团队协作",
+      "name": "安全工具",
       "count": 5
     },
     {
@@ -279,11 +279,11 @@
       "count": 19
     },
     {
-      "name": "agents",
+      "name": "mcp",
       "count": 17
     },
     {
-      "name": "mcp",
+      "name": "agents",
       "count": 17
     },
     {
@@ -315,15 +315,15 @@
       "count": 14
     },
     {
-      "name": "claude-skills",
-      "count": 12
-    },
-    {
       "name": "prompt-engineering",
       "count": 12
     },
     {
       "name": "workflow-automation",
+      "count": 12
+    },
+    {
+      "name": "claude-skills",
       "count": 12
     }
   ],
@@ -389,7 +389,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 471939,
+      "stars": 472009,
       "appearances": 0
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119394,
+      "stars": 119434,
       "appearances": 4
     }
   ],
@@ -451,13 +451,13 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 23787,
+      "stars": 23932,
       "appearances": 6
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2473,
+      "stars": 2479,
       "appearances": 5
     },
     {
@@ -469,43 +469,43 @@
     {
       "repo": "basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "stars": 32833,
+      "stars": 32881,
       "appearances": 5
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38633,
+      "stars": 38644,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 50953,
+      "stars": 50986,
       "appearances": 5
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 34807,
+      "stars": 34835,
       "appearances": 4
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2764,
-      "appearances": 4
-    },
-    {
-      "repo": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "stars": 119394,
+      "stars": 2787,
       "appearances": 4
     },
     {
       "repo": "apache/maka",
       "url": "https://github.com/apache/maka",
-      "stars": 3820,
+      "stars": 3831,
+      "appearances": 4
+    },
+    {
+      "repo": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "stars": 119434,
       "appearances": 4
     }
   ]

@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/apache/maka)
 
-- **Stars**: 3820
+- **Stars**: 3831
 - **Language**: TypeScript
 
 ## Apache Maka (Incubating) 深度评测

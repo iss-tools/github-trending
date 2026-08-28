@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/citrolabs/ego-lite)
 
-- **Stars**: 14078
+- **Stars**: 14093
 - **Language**: JavaScript
 
 ## ego-lite评测：为AI Agent打造的并行浏览器自动化革命
