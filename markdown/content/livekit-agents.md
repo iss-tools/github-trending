@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/livekit/agents)
 
-- **Stars**: 13234
+- **Stars**: 13245
 - **Language**: Python
 
 ## LiveKit Agents 深度评测

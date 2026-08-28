@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 
-- **Stars**: 49887
+- **Stars**: 49892
 - **Language**: TypeScript
 
 ## Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛
