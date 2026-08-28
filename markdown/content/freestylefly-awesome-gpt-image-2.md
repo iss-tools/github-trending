@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/freestylefly/awesome-gpt-image-2)
 
-- **Stars**: 23540
+- **Stars**: 23662
 - **Language**: JavaScript
 
 ## awesome-gpt-image-2 深度评测：工业级 GPT 图像提示词工程库

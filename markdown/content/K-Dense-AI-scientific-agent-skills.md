@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/K-Dense-AI/scientific-agent-skills)
 
-- **Stars**: 35514
+- **Stars**: 35546
 - **Language**: Python
 
 ## Scientific Agent Skills：AI 科研领域的万能技能插件库

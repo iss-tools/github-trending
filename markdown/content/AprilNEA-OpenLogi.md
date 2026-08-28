@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/AprilNEA/OpenLogi)
 
-- **Stars**: 17204
+- **Stars**: 17222
 - **Language**: Rust
 
 ## OpenLogi 深度评测：本地优先的罗技设备开源替代方案

@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/harry0703/MoneyPrinterTurbo)
 
-- **Stars**: 117608
+- **Stars**: 117649
 - **Language**: Python
 
 ## MoneyPrinterTurbo深度评测：AI短视频自动生成效率神器
