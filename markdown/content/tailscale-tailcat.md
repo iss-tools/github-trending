@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/tailscale/tailcat)
 
-- **Stars**: 2318
+- **Stars**: 2357
 - **Language**: Go
 
 ## Tailcat：一条命令构建的 Tailscale 安全管道

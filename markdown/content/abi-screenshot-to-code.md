@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/abi/screenshot-to-code)
 
-- **Stars**: 75295
+- **Stars**: 75329
 - **Language**: Python
 
 ## Screenshot to Code 深度评测：从截图到代码的 AI 加速器
