@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/securo-finance/securo)
 
-- **Stars**: 2382
+- **Stars**: 2410
 - **Language**: Python
 
 ## Securo：隐私优先的自托管记账神器

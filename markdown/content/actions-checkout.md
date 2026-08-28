@@ -2,7 +2,7 @@
 
 [GitHub URL](https://github.com/actions/checkout)
 
-- **Stars**: 8710
+- **Stars**: 8728
 - **Language**: TypeScript
 
 ## actions/checkout 深度评测：GitHub Actions 生态的核心基石
