@@ -53,15 +53,19 @@
       "count": 11
     },
     {
-      "tag": "大模型",
-      "count": 10
-    },
-    {
       "tag": "Rust",
       "count": 10
     },
     {
+      "tag": "大模型",
+      "count": 10
+    },
+    {
       "tag": "Agent",
+      "count": 10
+    },
+    {
+      "tag": "自托管",
       "count": 10
     },
     {
@@ -70,10 +74,6 @@
     },
     {
       "tag": "效率工具",
-      "count": 10
-    },
-    {
-      "tag": "自托管",
       "count": 10
     },
     {
@@ -233,15 +233,15 @@
       "count": 8
     },
     {
+      "name": "开发者与工程师",
+      "count": 8
+    },
+    {
       "name": "极客/DIY爱好者",
       "count": 8
     },
     {
       "name": "Linux 桌面定制玩家",
-      "count": 8
-    },
-    {
-      "name": "追求高效工作流的创作者",
       "count": 8
     }
   ],
@@ -279,11 +279,11 @@
       "count": 24
     },
     {
-      "name": "agents",
+      "name": "python",
       "count": 22
     },
     {
-      "name": "python",
+      "name": "agents",
       "count": 22
     },
     {
@@ -311,15 +311,15 @@
       "count": 15
     },
     {
+      "name": "local-first",
+      "count": 14
+    },
+    {
       "name": "claude-skills",
       "count": 14
     },
     {
       "name": "prompt-engineering",
-      "count": 14
-    },
-    {
-      "name": "local-first",
       "count": 14
     },
     {
@@ -337,11 +337,11 @@
       "count": 38
     },
     {
-      "name": "JavaScript",
+      "name": "Rust",
       "count": 27
     },
     {
-      "name": "Rust",
+      "name": "JavaScript",
       "count": 27
     },
     {
@@ -353,11 +353,11 @@
       "count": 7
     },
     {
-      "name": "CSS",
+      "name": "Mojo",
       "count": 3
     },
     {
-      "name": "Mojo",
+      "name": "CSS",
       "count": 3
     },
     {
@@ -451,7 +451,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119513,
+      "stars": 119606,
       "appearances": 4
     }
   ],
@@ -459,61 +459,61 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 24126,
+      "stars": 24378,
       "appearances": 7
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2521,
+      "stars": 2606,
       "appearances": 5
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 34928,
+      "stars": 35082,
       "appearances": 5
     },
     {
       "repo": "marin-community/marin",
       "url": "https://github.com/marin-community/marin",
-      "stars": 2846,
+      "stars": 2916,
       "appearances": 5
     },
     {
       "repo": "VoltAgent/awesome-agent-skills",
       "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "stars": 33014,
-      "appearances": 5
-    },
-    {
-      "repo": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "stars": 33035,
+      "stars": 33086,
       "appearances": 5
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38687,
+      "stars": 38744,
+      "appearances": 5
+    },
+    {
+      "repo": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 33685,
       "appearances": 5
     },
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 115082,
+      "stars": 115503,
       "appearances": 5
     },
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 50539,
+      "stars": 50669,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 51123,
+      "stars": 51216,
       "appearances": 5
     }
   ]

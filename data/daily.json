@@ -8187,9 +8187,9 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 26503,
-      "forks": 1685,
-      "starsAdded": 4561,
+      "stars": 27943,
+      "forks": 1768,
+      "starsAdded": 4562,
       "createdAt": "2026-08-28T16:00:02.042Z",
       "metaData": {
         "forks": "1685",
@@ -8260,9 +8260,9 @@
       "repo": "bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 10532,
-      "forks": 2158,
-      "starsAdded": 1984,
+      "stars": 11248,
+      "forks": 2280,
+      "starsAdded": 3829,
       "createdAt": "2026-08-28T16:00:02.086Z",
       "metaData": {
         "forks": "2158",
@@ -8326,8 +8326,8 @@
       "repo": "freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
-      "stars": 24126,
-      "forks": 2388,
+      "stars": 24378,
+      "forks": 2405,
       "starsAdded": 1687,
       "createdAt": "2026-08-28T16:00:02.107Z",
       "metaData": {
@@ -8389,8 +8389,8 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 115082,
-      "forks": 6287,
+      "stars": 115503,
+      "forks": 6317,
       "starsAdded": 1396,
       "createdAt": "2026-08-28T16:00:02.156Z",
       "metaData": {
@@ -8452,8 +8452,8 @@
       "repo": "calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
-      "stars": 53114,
-      "forks": 6626,
+      "stars": 53409,
+      "forks": 6657,
       "starsAdded": 1144,
       "createdAt": "2026-08-28T16:00:02.100Z",
       "metaData": {
@@ -8524,9 +8524,9 @@
       "repo": "tailscale/tailcat",
       "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
       "language": "Go",
-      "stars": 2486,
-      "forks": 67,
-      "starsAdded": 986,
+      "stars": 2827,
+      "forks": 76,
+      "starsAdded": 965,
       "createdAt": "2026-08-28T16:00:02.109Z",
       "metaData": {
         "forks": "67",
@@ -8577,8 +8577,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 36198,
-      "forks": 3458,
+      "stars": 36784,
+      "forks": 3496,
       "starsAdded": 720,
       "createdAt": "2026-08-28T16:00:02.075Z",
       "metaData": {
@@ -8648,8 +8648,8 @@
       "repo": "rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 50539,
-      "forks": 8777,
+      "stars": 50669,
+      "forks": 8781,
       "starsAdded": 703,
       "createdAt": "2026-08-28T16:00:02.125Z",
       "metaData": {
@@ -8721,8 +8721,8 @@
       "repo": "JetBrains/go-modern-guidelines",
       "description": "Help AI coding agents write modern Go",
       "language": "Go",
-      "stars": 2522,
-      "forks": 76,
+      "stars": 2636,
+      "forks": 79,
       "starsAdded": 574,
       "createdAt": "2026-08-28T16:00:02.097Z",
       "metaData": {
@@ -8773,59 +8773,6 @@
       }
     },
     {
-      "id": "53f11953-4c96-4d6b-934e-da0f0c9bb5b0",
-      "dateAdded": "20260829",
-      "type": "github-daily",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "repo": "tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "stars": 21451,
-      "forks": 3042,
-      "starsAdded": 477,
-      "createdAt": "2026-08-28T16:00:02.120Z",
-      "metaData": {
-        "forks": "3042",
-        "stars": "21451",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://freellmapi.co",
-        "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi"
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "API 网关",
-          "免费算力",
-          "大模型",
-          "Docker"
-        ],
-        "cover": "",
-        "title": "FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池",
-        "ability": [
-          "统一 OpenAI 兼容接口",
-          "智能路由与自动故障切换",
-          "融合模型多专家合成",
-          "加密密钥统一管理",
-          "实时使用数据分析"
-        ],
-        "summary": "开源 API 网关，智能聚合 29 家 AI 厂商免费额度，提供统一接口与自动故障切换。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "个人开发者",
-          "学生/科研人员",
-          "AI 原型开发者",
-          "技术内容创作者",
-          "小型开源团队"
-        ],
-        "description": "FreeLLMAPI 是一个自托管的开源 API 网关，通过智能路由将 Google、Groq 等多家厂商的免费 API 层整合为一个稳定的推理服务。它支持统一接口、自动故障转移和加密密钥管理，极大降低个人实验与开发的算力成本。"
-      }
-    },
-    {
       "id": "65164c7b-0064-4033-b1d4-f47ca14000d8",
       "dateAdded": "20260829",
       "type": "github-daily",
@@ -8833,8 +8780,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 34928,
-      "forks": 3930,
+      "stars": 35082,
+      "forks": 3938,
       "starsAdded": 457,
       "createdAt": "2026-08-28T16:00:02.078Z",
       "metaData": {
@@ -8883,6 +8830,59 @@
       }
     },
     {
+      "id": "53f11953-4c96-4d6b-934e-da0f0c9bb5b0",
+      "dateAdded": "20260829",
+      "type": "github-daily",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "repo": "tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 21686,
+      "forks": 3069,
+      "starsAdded": 433,
+      "createdAt": "2026-08-28T16:00:02.120Z",
+      "metaData": {
+        "forks": "3042",
+        "stars": "21451",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://freellmapi.co",
+        "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "API 网关",
+          "免费算力",
+          "大模型",
+          "Docker"
+        ],
+        "cover": "",
+        "title": "FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池",
+        "ability": [
+          "统一 OpenAI 兼容接口",
+          "智能路由与自动故障切换",
+          "融合模型多专家合成",
+          "加密密钥统一管理",
+          "实时使用数据分析"
+        ],
+        "summary": "开源 API 网关，智能聚合 29 家 AI 厂商免费额度，提供统一接口与自动故障切换。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学生/科研人员",
+          "AI 原型开发者",
+          "技术内容创作者",
+          "小型开源团队"
+        ],
+        "description": "FreeLLMAPI 是一个自托管的开源 API 网关，通过智能路由将 Google、Groq 等多家厂商的免费 API 层整合为一个稳定的推理服务。它支持统一接口、自动故障转移和加密密钥管理，极大降低个人实验与开发的算力成本。"
+      }
+    },
+    {
       "id": "aa1d66ff-3e14-4463-808c-8de0d528fa38",
       "dateAdded": "20260829",
       "type": "github-daily",
@@ -8890,9 +8890,9 @@
       "repo": "abi/screenshot-to-code",
       "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
       "language": "Python",
-      "stars": 75430,
-      "forks": 9210,
-      "starsAdded": 309,
+      "stars": 75631,
+      "forks": 9223,
+      "starsAdded": 326,
       "createdAt": "2026-08-28T16:00:02.102Z",
       "metaData": {
         "forks": "9210",
@@ -8942,9 +8942,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 5885,
-      "forks": 475,
-      "starsAdded": 257,
+      "stars": 5994,
+      "forks": 478,
+      "starsAdded": 246,
       "createdAt": "2026-08-28T16:00:02.105Z",
       "metaData": {
         "forks": "475",
@@ -8969,8 +8969,8 @@
       "repo": "marin-community/marin",
       "description": "Open-source framework for the research and development of foundation models.",
       "language": "Python",
-      "stars": 2846,
-      "forks": 236,
+      "stars": 2916,
+      "forks": 240,
       "starsAdded": 236,
       "createdAt": "2026-08-28T16:00:02.115Z",
       "metaData": {
@@ -9015,6 +9015,59 @@
       }
     },
     {
+      "id": "9af6a29b-95bc-420e-b4c6-533d28010226",
+      "dateAdded": "20260829",
+      "type": "github-daily",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "repo": "abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "language": "TypeScript",
+      "stars": 46189,
+      "forks": 5103,
+      "starsAdded": 202,
+      "createdAt": "2026-08-28T16:00:02.090Z",
+      "metaData": {
+        "forks": "5092",
+        "stars": "46089",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://gitnexus.vercel.app",
+        "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration - abhigyanpatwari/GitNexus"
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "MCP",
+          "代码导航",
+          "隐私优先",
+          "GraphRAG"
+        ],
+        "cover": "",
+        "title": "GitNexus 深度评测：让 AI 看见代码结构的本地图引擎",
+        "ability": [
+          "零服务器本地索引与检索",
+          "代码知识图谱构建",
+          "MCP 集成与 AI 代理增强",
+          "Web 端可视化与 Graph RAG",
+          "影响面分析与跨仓库契约检测"
+        ],
+        "summary": "零服务器代码知识图谱引擎，通过图结构与 MCP 集成让 AI 代理精准分析代码依赖与影响面。",
+        "category": [
+          "AI 编程",
+          "代码分析",
+          "开发者工具"
+        ],
+        "suitable": [
+          "使用 AI 编码助手的个人开发者",
+          "需要做代码重构与审计的团队",
+          "追求代码隐私与本地优先的企业",
+          "新人快速上手旧项目的开发者",
+          "需要跨微仓库依赖分析的架构师"
+        ],
+        "description": "GitNexus 把代码库解析为依赖/调用/执行流的图结构，通过 MCP 与 Web UI 让 AI 与开发者快速看清代码结构，降低改动带来的隐性回归，支持本地优先与纯浏览器端运行，适配 Cursor、Claude Code、Windsurf 等。"
+      }
+    },
+    {
       "id": "4c014395-89fe-4ab0-8827-015d7b807d50",
       "dateAdded": "20260829",
       "type": "github-daily",
@@ -9022,9 +9075,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 73237,
-      "forks": 8005,
-      "starsAdded": 205,
+      "stars": 73376,
+      "forks": 8014,
+      "starsAdded": 191,
       "createdAt": "2026-08-28T16:00:02.111Z",
       "metaData": {
         "forks": "8005",
@@ -9071,59 +9124,6 @@
       }
     },
     {
-      "id": "9af6a29b-95bc-420e-b4c6-533d28010226",
-      "dateAdded": "20260829",
-      "type": "github-daily",
-      "url": "https://github.com/abhigyanpatwari/GitNexus",
-      "repo": "abhigyanpatwari/GitNexus",
-      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
-      "language": "TypeScript",
-      "stars": 46089,
-      "forks": 5092,
-      "starsAdded": 189,
-      "createdAt": "2026-08-28T16:00:02.090Z",
-      "metaData": {
-        "forks": "5092",
-        "stars": "46089",
-        "topics": [],
-        "license": "License",
-        "homepage": "https://gitnexus.vercel.app",
-        "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration - abhigyanpatwari/GitNexus"
-      },
-      "summaryData": {
-        "tags": [
-          "知识图谱",
-          "MCP",
-          "代码导航",
-          "隐私优先",
-          "GraphRAG"
-        ],
-        "cover": "",
-        "title": "GitNexus 深度评测：让 AI 看见代码结构的本地图引擎",
-        "ability": [
-          "零服务器本地索引与检索",
-          "代码知识图谱构建",
-          "MCP 集成与 AI 代理增强",
-          "Web 端可视化与 Graph RAG",
-          "影响面分析与跨仓库契约检测"
-        ],
-        "summary": "零服务器代码知识图谱引擎，通过图结构与 MCP 集成让 AI 代理精准分析代码依赖与影响面。",
-        "category": [
-          "AI 编程",
-          "代码分析",
-          "开发者工具"
-        ],
-        "suitable": [
-          "使用 AI 编码助手的个人开发者",
-          "需要做代码重构与审计的团队",
-          "追求代码隐私与本地优先的企业",
-          "新人快速上手旧项目的开发者",
-          "需要跨微仓库依赖分析的架构师"
-        ],
-        "description": "GitNexus 把代码库解析为依赖/调用/执行流的图结构，通过 MCP 与 Web UI 让 AI 与开发者快速看清代码结构，降低改动带来的隐性回归，支持本地优先与纯浏览器端运行，适配 Cursor、Claude Code、Windsurf 等。"
-      }
-    },
-    {
       "id": "ec20fb12-c131-4c9f-8a67-76af25373efe",
       "dateAdded": "20260829",
       "type": "github-daily",
@@ -9131,8 +9131,8 @@
       "repo": "swoole/typephp",
       "description": "Compile PHP to Native Binaries",
       "language": "PHP",
-      "stars": 758,
-      "forks": 38,
+      "stars": 828,
+      "forks": 39,
       "starsAdded": 188,
       "createdAt": "2026-08-28T16:00:02.113Z",
       "metaData": {
@@ -9183,8 +9183,8 @@
       "repo": "google/googletest",
       "description": "GoogleTest - Google Testing and Mocking Framework",
       "language": "C++",
-      "stars": 39146,
-      "forks": 10869,
+      "stars": 39194,
+      "forks": 10873,
       "starsAdded": 156,
       "createdAt": "2026-08-28T16:00:02.182Z",
       "metaData": {
@@ -9235,9 +9235,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 49918,
-      "forks": 3502,
-      "starsAdded": 61,
+      "stars": 50000,
+      "forks": 3503,
+      "starsAdded": 67,
       "createdAt": "2026-08-28T16:00:02.122Z",
       "metaData": {
         "forks": "3502",
@@ -9297,9 +9297,9 @@
       "repo": "livekit/agents",
       "description": "A framework for building realtime voice AI agents 🤖🎙️📹",
       "language": "Python",
-      "stars": 13265,
-      "forks": 3626,
-      "starsAdded": 14,
+      "stars": 13370,
+      "forks": 3631,
+      "starsAdded": 22,
       "createdAt": "2026-08-28T16:00:02.198Z",
       "metaData": {
         "forks": "3626",
