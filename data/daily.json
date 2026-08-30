@@ -3311,8 +3311,8 @@
       "starsAdded": 174,
       "createdAt": "2026-08-25T04:22:47.725Z",
       "metaData": {
-        "forks": "3128",
-        "stars": "22474",
+        "forks": "3136",
+        "stars": "22584",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -7407,8 +7407,8 @@
       "starsAdded": 405,
       "createdAt": "2026-08-28T12:00:02.106Z",
       "metaData": {
-        "forks": "3128",
-        "stars": "22474",
+        "forks": "3136",
+        "stars": "22584",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -7707,8 +7707,8 @@
       "starsAdded": 189,
       "createdAt": "2026-08-28T12:00:02.083Z",
       "metaData": {
-        "forks": "5120",
-        "stars": "46458",
+        "forks": "5121",
+        "stars": "46493",
         "topics": [],
         "license": "License",
         "homepage": "https://gitnexus.vercel.app",
@@ -8077,8 +8077,8 @@
       "starsAdded": 14,
       "createdAt": "2026-08-28T12:00:02.150Z",
       "metaData": {
-        "forks": "3647",
-        "stars": "13612",
+        "forks": "3651",
+        "stars": "13658",
         "topics": [
           "agents",
           "ai",
@@ -8653,8 +8653,8 @@
       "starsAdded": 612,
       "createdAt": "2026-08-28T16:00:02.120Z",
       "metaData": {
-        "forks": "3128",
-        "stars": "22474",
+        "forks": "3136",
+        "stars": "22584",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -9003,8 +9003,8 @@
       "starsAdded": 273,
       "createdAt": "2026-08-28T16:00:02.090Z",
       "metaData": {
-        "forks": "5120",
-        "stars": "46458",
+        "forks": "5121",
+        "stars": "46493",
         "topics": [],
         "license": "License",
         "homepage": "https://gitnexus.vercel.app",
@@ -9083,8 +9083,8 @@
       "starsAdded": 256,
       "createdAt": "2026-08-28T16:00:02.198Z",
       "metaData": {
-        "forks": "3647",
-        "stars": "13612",
+        "forks": "3651",
+        "stars": "13658",
         "topics": [
           "agents",
           "ai",
@@ -9983,8 +9983,8 @@
       "starsAdded": 517,
       "createdAt": "2026-08-29T20:00:02.208Z",
       "metaData": {
-        "forks": "1788",
-        "stars": "14920",
+        "forks": "1802",
+        "stars": "15000",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -10044,8 +10044,8 @@
       "starsAdded": 505,
       "createdAt": "2026-08-29T16:00:02.033Z",
       "metaData": {
-        "forks": "3128",
-        "stars": "22474",
+        "forks": "3136",
+        "stars": "22584",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -10677,8 +10677,8 @@
       "starsAdded": 181,
       "createdAt": "2026-08-29T16:00:02.008Z",
       "metaData": {
-        "forks": "5120",
-        "stars": "46458",
+        "forks": "5121",
+        "stars": "46493",
         "topics": [],
         "license": "License",
         "homepage": "https://gitnexus.vercel.app",
@@ -10892,8 +10892,8 @@
       "starsAdded": 147,
       "createdAt": "2026-08-30T12:00:02.447Z",
       "metaData": {
-        "forks": "123",
-        "stars": "676",
+        "forks": "131",
+        "stars": "729",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://pollen-robotics.com/microduck",
@@ -10944,8 +10944,8 @@
       "starsAdded": 131,
       "createdAt": "2026-08-29T16:00:02.075Z",
       "metaData": {
-        "forks": "3647",
-        "stars": "13612",
+        "forks": "3651",
+        "stars": "13658",
         "topics": [
           "agents",
           "ai",
@@ -11056,8 +11056,8 @@
       "starsAdded": 99,
       "createdAt": "2026-08-30T12:00:02.451Z",
       "metaData": {
-        "forks": "515",
-        "stars": "10795",
+        "forks": "519",
+        "stars": "10848",
         "topics": [],
         "license": "License",
         "homepage": "https://corsair.dev",
@@ -11433,8 +11433,8 @@
       "starsAdded": 38,
       "createdAt": "2026-08-30T12:00:02.449Z",
       "metaData": {
-        "forks": "692",
-        "stars": "5550",
+        "forks": "693",
+        "stars": "5596",
         "topics": [
           "chinese",
           "disclosure",
@@ -11623,7 +11623,7 @@
       "createdAt": "2026-08-30T12:00:02.456Z",
       "metaData": {
         "forks": "2154",
-        "stars": "43593",
+        "stars": "43612",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -11717,6 +11717,1127 @@
           "开源项目维护者"
         ],
         "description": "actions/checkout 是 GitHub 官方维护的核心 Action，负责将代码拉取到 Runner 环境。支持基础检出、分支/Tag 切换、多仓库并行、稀疏检出、子模块与 LFS 等功能，并通过持续的安全更新（如 v6/v7）保障 CI/CD 流水线的效率与安全。"
+      }
+    }
+  ],
+  "20260831": [
+    {
+      "id": "3bd3c72d-153a-4c97-a3fd-222eae3a7364",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/tt-a1i/archify",
+      "repo": "tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "stars": 33734,
+      "forks": 2140,
+      "starsAdded": 3730,
+      "createdAt": "2026-08-30T16:00:02.027Z",
+      "metaData": {
+        "forks": "2094",
+        "stars": "33243",
+        "topics": [
+          "agent-skills",
+          "architecture-as-code",
+          "architecture-diagram",
+          "claude-skill",
+          "code-visualization",
+          "codex",
+          "coding-agents",
+          "data-flow-diagram",
+          "deepseek-harness",
+          "developer-tools",
+          "diagram-as-code",
+          "diagrams",
+          "diagrams-as-code",
+          "dsh-plugin",
+          "mermaid-alternative",
+          "opencode",
+          "sequence-diagram",
+          "software-architecture",
+          "system-design",
+          "text-to-diagram"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tt-a1i.github.io/archify/",
+        "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export. - tt-a1i/archify"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub 开源",
+          "架构图生成",
+          "AI Agent",
+          "可视化",
+          "CLI 工具"
+        ],
+        "cover": "",
+        "title": "Archify - AI 时代的可验证架构图生成工具",
+        "ability": [
+          "AI 生成架构图",
+          "结构化验证与对比",
+          "交互式图表查看",
+          "多平台 Agent 集成",
+          "多格式导出"
+        ],
+        "summary": "Archify 让 AI 生成结构化 JSON 并自动渲染为专业架构图，支持验证、版本对比和交互式查看，解决 AI 生成图表不可靠的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程开发者",
+          "技术负责人/架构师",
+          "DevOps/SRE",
+          "技术文档撰写者"
+        ],
+        "description": "Archify 是一个面向 AI Agent 的开源工具，通过引导 AI 生成结构化 JSON 来绘制架构图、流程图等。它具备严格的校验机制、版本变更对比功能以及交互式查看器，能产出高质量、可分享的 HTML/SVG 图表，极大地提升了技术沟通与架构评审的效率。"
+      }
+    },
+    {
+      "id": "3f17f617-92c1-44a1-b0e3-f94bb74ad87d",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars": 38801,
+      "forks": 3633,
+      "starsAdded": 1113,
+      "createdAt": "2026-08-30T16:00:02.020Z",
+      "metaData": {
+        "forks": "3612",
+        "stars": "38555",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "license": "MIT license",
+        "homepage": "https://k-dense.ai",
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "开源",
+          "科研",
+          "自动化",
+          "生物信息"
+        ],
+        "cover": "",
+        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
+        "ability": [
+          "跨领域科研技能库",
+          "数据库与工具集成",
+          "标准化 Agent 技能配置",
+          "复杂科研工作流自动化",
+          "安全测试与合规扫描"
+        ],
+        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "科研工具"
+        ],
+        "suitable": [
+          "生命科学研究人员",
+          "AI 辅助编程用户",
+          "生物信息工程师",
+          "药企研发团队",
+          "AI 应用开发者"
+        ],
+        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。"
+      }
+    },
+    {
+      "id": "87a2fba1-4ba7-4dcf-8b36-f16f9adfcca8",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "repo": "THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "language": "TypeScript",
+      "stars": 23489,
+      "forks": 4448,
+      "starsAdded": 907,
+      "createdAt": "2026-08-30T16:00:02.008Z",
+      "metaData": {
+        "forks": "4417",
+        "stars": "23152",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click - THU-MAIC/OpenMAIC"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "在线教育",
+          "清华大学",
+          "课堂生成",
+          "LangGraph"
+        ],
+        "cover": "",
+        "title": "OpenMAIC：清华开源的多智能体互动课堂生成平台",
+        "ability": [
+          "一键生成互动课堂",
+          "多智能体角色扮演",
+          "多格式导出",
+          "本地化部署",
+          "多模型接入"
+        ],
+        "summary": "清华开源的“多智能体互动课堂”平台，一键生成包含AI老师、测验和模拟的完整课程。",
+        "category": [
+          "教育工具",
+          "AI 应用",
+          "开源项目"
+        ],
+        "suitable": [
+          "教育工作者",
+          "企业培训师",
+          "学生与自学者",
+          "AI 开发者",
+          "教育科技公司"
+        ],
+        "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。"
+      }
+    },
+    {
+      "id": "7db1569e-8dd5-47b5-adc7-4dd95d330d75",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/every-app/open-seo",
+      "repo": "every-app/open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "language": "TypeScript",
+      "stars": 14999,
+      "forks": 1802,
+      "starsAdded": 517,
+      "createdAt": "2026-08-30T16:00:02.060Z",
+      "metaData": {
+        "forks": "1802",
+        "stars": "15000",
+        "topics": [
+          "backlink-analysis",
+          "google-search-console-mcp",
+          "keyword-research",
+          "mcp",
+          "seo",
+          "seo-tools",
+          "site-audit"
+        ],
+        "license": "MIT license",
+        "homepage": "https://openseo.so",
+        "description": "Open source alternative to Semrush and Ahrefs. Contribute to every-app/open-seo development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "自托管",
+          "AI 协同",
+          "GitHub",
+          "降本增效"
+        ],
+        "cover": "",
+        "title": "OpenSEO：可自托管的开源 AI 协同 SEO 工具",
+        "ability": [
+          "关键词研究与分析",
+          "AI 协同与 MCP 集成",
+          "排名监控与竞品洞察",
+          "低成本自托管",
+          "站点审计"
+        ],
+        "summary": "一款可自托管、支持 AI 协同的开源 SEO 工具，旨在以按需付费模式替代昂贵的 Ahrefs/Semrush。",
+        "category": [
+          "开发工具",
+          "SEO 优化",
+          "AI 应用"
+        ],
+        "suitable": [
+          "个人站长",
+          "初创小团队",
+          "内容营销人员",
+          "开发与 AI 生态玩家",
+          "独立开发者"
+        ],
+        "description": "OpenSEO 是一款集成了 AI Agent 的开源 SEO 平台，支持 Docker 和 Cloudflare 自托管。它提供关键词研究、排名监控等核心功能，利用 MCP 协议让 AI 直接操作真实数据，通过按量付费模式大幅降低工具成本。"
+      }
+    },
+    {
+      "id": "955e1a03-377b-421f-a4fd-8cf384efc0c3",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "repo": "tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 22582,
+      "forks": 3135,
+      "starsAdded": 505,
+      "createdAt": "2026-08-30T16:00:02.064Z",
+      "metaData": {
+        "forks": "3136",
+        "stars": "22584",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://freellmapi.co",
+        "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only. - tashfeenahmed/freellmapi"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "API 网关",
+          "免费算力",
+          "大模型",
+          "Docker"
+        ],
+        "cover": "",
+        "title": "FreeLLMAPI：将零散的免费 LLM 资源整合为统一算力池",
+        "ability": [
+          "统一 OpenAI 兼容接口",
+          "智能路由与自动故障切换",
+          "融合模型多专家合成",
+          "加密密钥统一管理",
+          "实时使用数据分析"
+        ],
+        "summary": "开源 API 网关，智能聚合 29 家 AI 厂商免费额度，提供统一接口与自动故障切换。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学生/科研人员",
+          "AI 原型开发者",
+          "技术内容创作者",
+          "小型开源团队"
+        ],
+        "description": "FreeLLMAPI 是一个自托管的开源 API 网关，通过智能路由将 Google、Groq 等多家厂商的免费 API 层整合为一个稳定的推理服务。它支持统一接口、自动故障转移和加密密钥管理，极大降低个人实验与开发的算力成本。"
+      }
+    },
+    {
+      "id": "d099ac7a-bc4e-4803-b1d5-d27615b36ff6",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "repo": "Lakr233/vphone-cli",
+      "description": "",
+      "language": "Swift",
+      "stars": 9474,
+      "forks": 1279,
+      "starsAdded": 341,
+      "createdAt": "2026-08-30T16:00:02.023Z",
+      "metaData": {
+        "forks": "1276",
+        "stars": "9385",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to Lakr233/vphone-cli development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "iOS",
+          "虚拟化",
+          "越狱",
+          "Apple Silicon",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "vphone-cli：在 Apple Silicon Mac 上运行虚拟化 iOS 的开源神器",
+        "ability": [
+          "本地虚拟化 iOS",
+          "自动化越狱与修补",
+          "全流程 CLI 管理",
+          "Socket/MCP 自动化接口",
+          "多变体固件支持"
+        ],
+        "summary": "利用 Apple Silicon 虚拟化框架在本地运行真实 iOS，支持一键越狱与自动化控制。",
+        "category": [
+          "开发工具",
+          "安全工具",
+          "虚拟化"
+        ],
+        "suitable": [
+          "安全研究员",
+          "逆向工程师",
+          "自动化测试人员",
+          "AI 开发者",
+          "技术极客"
+        ],
+        "description": "vphone-cli 是一款能让 Apple Silicon Mac 本地运行虚拟化 iOS 的工具，支持自动越狱、固件打补丁及 AI 自动化控制，完美解决真机调试难题。"
+      }
+    },
+    {
+      "id": "5604f603-1b04-484a-9862-0ce31a148a9c",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 60399,
+      "forks": 5290,
+      "starsAdded": 271,
+      "createdAt": "2026-08-30T16:00:02.036Z",
+      "metaData": {
+        "forks": "5287",
+        "stars": "60314",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
+      "id": "1edb4d62-38a5-4a6c-ae0c-4d856718cae5",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "repo": "unclecode/crawl4ai",
+      "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+      "language": "Python",
+      "stars": 80103,
+      "forks": 8301,
+      "starsAdded": 229,
+      "createdAt": "2026-08-30T16:00:02.033Z",
+      "metaData": {
+        "forks": "8295",
+        "stars": "80018",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://crawl4ai.com",
+        "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN - unclecode/crawl4ai"
+      },
+      "summaryData": {
+        "tags": [
+          "网页爬虫",
+          "LLM",
+          "RAG",
+          "Python",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Crawl4AI 深度评测",
+        "ability": [
+          "LLM 友好输出",
+          "异步浏览器爬取",
+          "自适应深度爬取",
+          "Docker API 服务",
+          "高度可定制 Hooks"
+        ],
+        "summary": "专为 LLM 打造的开源异步网页爬取框架，提供干净的 Markdown 输出与自适应爬取能力。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "数据抓取"
+        ],
+        "suitable": [
+          "RAG/知识库开发者",
+          "AI 智能体开发者",
+          "高频数据提取团队",
+          "合规自托管需求方"
+        ],
+        "description": "Crawl4AI 是一个专为大模型设计的现代化异步网页爬取工具，能将网页转化为干净的 Markdown 或结构化数据。它具备自适应爬取、浏览器池、Docker API 服务及高度可定制的 Hooks，非常适合构建 RAG 管道和智能体数据源。"
+      }
+    },
+    {
+      "id": "3bb56d4a-23bd-4367-9780-47adb3f3b3aa",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 73768,
+      "forks": 8056,
+      "starsAdded": 196,
+      "createdAt": "2026-08-30T16:00:02.046Z",
+      "metaData": {
+        "forks": "8042",
+        "stars": "73687",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "licenses",
+        "homepage": "https://www.nsa.gov/ghidra",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
+      }
+    },
+    {
+      "id": "da817688-6954-4cdf-b967-4bd5bd82194a",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "repo": "abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "language": "TypeScript",
+      "stars": 46493,
+      "forks": 5121,
+      "starsAdded": 181,
+      "createdAt": "2026-08-30T16:00:02.068Z",
+      "metaData": {
+        "forks": "5121",
+        "stars": "46493",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://gitnexus.vercel.app",
+        "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration - abhigyanpatwari/GitNexus"
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "MCP",
+          "代码导航",
+          "隐私优先",
+          "GraphRAG"
+        ],
+        "cover": "",
+        "title": "GitNexus 深度评测：让 AI 看见代码结构的本地图引擎",
+        "ability": [
+          "零服务器本地索引与检索",
+          "代码知识图谱构建",
+          "MCP 集成与 AI 代理增强",
+          "Web 端可视化与 Graph RAG",
+          "影响面分析与跨仓库契约检测"
+        ],
+        "summary": "零服务器代码知识图谱引擎，通过图结构与 MCP 集成让 AI 代理精准分析代码依赖与影响面。",
+        "category": [
+          "AI 编程",
+          "代码分析",
+          "开发者工具"
+        ],
+        "suitable": [
+          "使用 AI 编码助手的个人开发者",
+          "需要做代码重构与审计的团队",
+          "追求代码隐私与本地优先的企业",
+          "新人快速上手旧项目的开发者",
+          "需要跨微仓库依赖分析的架构师"
+        ],
+        "description": "GitNexus 把代码库解析为依赖/调用/执行流的图结构，通过 MCP 与 Web UI 让 AI 与开发者快速看清代码结构，降低改动带来的隐性回归，支持本地优先与纯浏览器端运行，适配 Cursor、Claude Code、Windsurf 等。"
+      }
+    },
+    {
+      "id": "ac33dce6-dbda-4150-b2fc-cebdd676656e",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/p-e-w/heretic",
+      "repo": "p-e-w/heretic",
+      "description": "Fully automatic censorship removal for language models",
+      "language": "Python",
+      "stars": 29019,
+      "forks": 3192,
+      "starsAdded": 150,
+      "createdAt": "2026-08-30T16:00:02.030Z",
+      "metaData": {
+        "forks": "3182",
+        "stars": "28921",
+        "topics": [
+          "abliteration",
+          "llm",
+          "transformer"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://heretic-project.org",
+        "description": "Fully automatic censorship removal for language models - p-e-w/heretic"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "去审查",
+          "模型微调",
+          "CLI",
+          "HuggingFace"
+        ],
+        "cover": "",
+        "title": "Heretic：一键去审查 LLM 的自动化工具",
+        "ability": [
+          "自动去除模型审查",
+          "双目标参数优化",
+          "一键 CLI 部署",
+          "硬件感知量化支持",
+          "可视化研究分析"
+        ],
+        "summary": "自动移除大模型安全审查的命令行工具，无需重训即可生成更自由的模型。",
+        "category": [
+          "AI 模型工具",
+          "开发者工具",
+          "自动化脚本"
+        ],
+        "suitable": [
+          "本地 LLM 爱好者",
+          "AI 安全研究员",
+          "角色扮演开发者",
+          "内容创作者",
+          "模型微调工程师"
+        ],
+        "description": "Heretic 是一个基于方向性消融技术的 CLI 工具，能自动寻找最佳参数移除 LLM 的安全审查。它支持量化部署，降低显存需求，并包含可视化分析功能，适合研究和个人探索。"
+      }
+    },
+    {
+      "id": "a1c4883e-13b9-42e9-bd8b-da10131a58b6",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "repo": "pollen-robotics/microduck_rl",
+      "description": "RL training environments for Microduck (mjlab)",
+      "language": "Python",
+      "stars": 729,
+      "forks": 130,
+      "starsAdded": 147,
+      "createdAt": "2026-08-30T16:00:02.051Z",
+      "metaData": {
+        "forks": "131",
+        "stars": "729",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "RL training environments for Microduck (mjlab). Contribute to pollen-robotics/microduck_rl development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "sim2real",
+          "PPO训练",
+          "MuJoCo",
+          "ONNX部署"
+        ],
+        "cover": "",
+        "title": "microduck_rl：微型双足鸭形机器人强化学习训练环境评测",
+        "ability": [
+          "完整sim2real训练管线",
+          "GPU加速的高吞吐仿真",
+          "精细执行器与齿隙建模",
+          "统一61维观测接口",
+          "多技能策略热插拔"
+        ],
+        "summary": "面向Microduck双足机器人的端到端强化学习训练环境，支持GPU加速仿真训练、域随机化与真机ONNX部署",
+        "category": [
+          "机器人开发",
+          "强化学习",
+          "开发工具"
+        ],
+        "suitable": [
+          "机器人RL研究者与工程师",
+          "高校课程与教育工作者",
+          "创客与Microduck真机用户",
+          "AI编码与LLM工具链探索者"
+        ],
+        "description": "基于mjlab和PPO的开源强化学习环境，为微型双足机器人Microduck提供从仿真训练到真机部署的完整方案，包含丰富的任务（步行、踢球、起身、滑旱冰等），通过BAM执行器建模、域随机化和齿隙仿真缩小仿真-现实差距，支持本地GPU训练或Hugging Face Jobs远程训练，最终导出ONNX策略供真机运行。"
+      }
+    },
+    {
+      "id": "ff736016-8f95-4bc6-98f4-8e63983d374e",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/livekit/agents",
+      "repo": "livekit/agents",
+      "description": "A framework for building realtime voice AI agents 🤖🎙️📹",
+      "language": "Python",
+      "stars": 13658,
+      "forks": 3651,
+      "starsAdded": 131,
+      "createdAt": "2026-08-30T16:00:02.066Z",
+      "metaData": {
+        "forks": "3651",
+        "stars": "13658",
+        "topics": [
+          "agents",
+          "ai",
+          "openai",
+          "real-time",
+          "video",
+          "voice"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.livekit.io/agents",
+        "description": "A framework for building realtime voice AI agents 🤖🎙️📹  - GitHub - livekit/agents: A framework for building realtime voice AI agents 🤖🎙️📹"
+      },
+      "summaryData": {
+        "tags": [
+          "LiveKit",
+          "AI Agent",
+          "语音交互",
+          "WebRTC",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "LiveKit Agents 深度评测",
+        "ability": [
+          "实时语音交互",
+          "多模型管道编排",
+          "智能轮次检测",
+          "Agent 调度与交接",
+          "MCP 生态集成"
+        ],
+        "summary": "一套面向生产环境的实时 AI Agent 框架，解决语音与多模态智能体的低延迟交互难题。",
+        "category": [
+          "开发工具",
+          "AI 框架",
+          "实时通信"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "语音交互工程师",
+          "客服机器人团队",
+          "LiveKit 生态用户",
+          "全栈开发人员"
+        ],
+        "description": "基于 WebRTC 的实时 AI 框架，支持 Python/Node，封装了从音视频传输到大模型调用的全链路，助力快速构建生产级语音助手。"
+      }
+    },
+    {
+      "id": "47ea77ee-ef21-4bc0-b5f5-c7ad5fede7d7",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/corsairdev/corsair",
+      "repo": "corsairdev/corsair",
+      "description": "Connect your users to their apps",
+      "language": "TypeScript",
+      "stars": 10843,
+      "forks": 519,
+      "starsAdded": 99,
+      "createdAt": "2026-08-30T16:00:02.056Z",
+      "metaData": {
+        "forks": "519",
+        "stars": "10848",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://corsair.dev",
+        "description": "Connect your users to their apps. Contribute to corsairdev/corsair development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "认证集成",
+          "开源",
+          "MCP",
+          "开发者工具"
+        ],
+        "cover": "",
+        "title": "Corsair: AI 应用的统一集成层",
+        "ability": [
+          "安全凭证隔离与加密",
+          "多租户数据隔离",
+          "统一 API 接入主流服务",
+          "MCP 适配器兼容主流框架",
+          "开源自托管"
+        ],
+        "summary": "面向 AI 应用的第三方服务统一集成层，安全隔离凭证，支持多租户与 Agent 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI Agent 开发团队",
+          "SaaS/多租户产品开发者",
+          "个人开发者"
+        ],
+        "description": "Corsair 是面向 AI 应用的统一集成层，接管第三方服务认证与权限，通过加密库隔离敏感凭证。它支持多租户、兼容主流 Agent 框架，可自建或托管，大幅降低集成开发成本，提升安全性。"
+      }
+    },
+    {
+      "id": "9fc8fdc0-53db-484e-8312-f319c53e70eb",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/checkstyle/checkstyle",
+      "repo": "checkstyle/checkstyle",
+      "description": "Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly configurable. It can be invoked with an ANT task and a command line program.",
+      "language": "Java",
+      "stars": 9149,
+      "forks": 4193,
+      "starsAdded": 78,
+      "createdAt": "2026-08-30T16:00:02.044Z",
+      "metaData": {
+        "forks": "4190",
+        "stars": "9115",
+        "topics": [
+          "code-quality",
+          "command-line-tool",
+          "hacktoberfest",
+          "java",
+          "static-analysis",
+          "static-code-analysis"
+        ],
+        "license": "LGPL-2.1 license",
+        "homepage": "https://checkstyle.org",
+        "description": "Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly configurable. It can be invoked with an ANT task and a command line program. - checkstyle/checkstyle"
+      },
+      "summaryData": {
+        "tags": [
+          "Java",
+          "静态分析",
+          "代码规范",
+          "CI/CD",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Checkstyle 深度评测：Java 代码风格的自动交通警",
+        "ability": [
+          "代码风格自动检查",
+          "高度可配置的规则集",
+          "CI/CD 集成",
+          "支持主流编码规范",
+          "自定义规则扩展"
+        ],
+        "summary": "Java 生态最成熟的代码风格自动检查工具，帮助团队强制执行编码规范，提升代码质量。",
+        "category": [
+          "开发工具",
+          "代码质量"
+        ],
+        "suitable": [
+          "Java 开发者",
+          "技术团队负责人",
+          "代码审查员",
+          "质量保障工程师",
+          "开源项目维护者"
+        ],
+        "description": "Checkstyle 是一款强大的 Java 静态代码分析工具，能够自动检查代码风格和简单最佳实践。它支持通过 XML 高度定制规则，完美集成到 Maven/Gradle 及 CI 流水线中，帮助团队统一代码标准，减少人工审查成本。"
+      }
+    },
+    {
+      "id": "332e2e68-17db-4bab-81f1-017cee370a50",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "repo": "punkpeye/awesome-mcp-servers",
+      "description": "A collection of MCP servers.",
+      "language": "",
+      "stars": 93203,
+      "forks": 15290,
+      "starsAdded": 65,
+      "createdAt": "2026-08-30T16:00:02.042Z",
+      "metaData": {
+        "forks": "15271",
+        "stars": "93118",
+        "topics": [
+          "ai",
+          "mcp"
+        ],
+        "license": "MIT license",
+        "homepage": "https://glama.ai/mcp/servers",
+        "description": "A collection of MCP servers. Contribute to punkpeye/awesome-mcp-servers development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "MCP协议",
+          "AI工具",
+          "开源列表",
+          "GitHub精选",
+          "Agent开发"
+        ],
+        "cover": "",
+        "title": "Awesome MCP Servers 深度评测：80,000+ MCP 服务器的终极导航",
+        "ability": [
+          "80,000+服务器导航",
+          "多语言分类索引",
+          "质量评分系统",
+          "安全与合规标注",
+          "社区与教程联动"
+        ],
+        "summary": "这是一份收录8万+MCP服务器的开源列表，与Glama目录双向同步，是AI能力调用的终极黄页。",
+        "category": [
+          "AI工具",
+          "开发工具",
+          "资源合集"
+        ],
+        "suitable": [
+          "AI/Agent工程师",
+          "产品技术决策者",
+          "开源贡献者",
+          "技术小白",
+          "地理信息分析师"
+        ],
+        "description": "这是当前最大的MCP服务器列表，收录80,138个服务器，支持多语言分类，与Glama目录同步提供质量评分。覆盖数据库、文件系统、地理信息等全场景，既有官方实现也有社区创新，是找工具、学用法、参与生态的必选入口。"
+      }
+    },
+    {
+      "id": "d4b648d3-bde5-4511-8d1d-6f9df140d416",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/majd/ipatool",
+      "repo": "majd/ipatool",
+      "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store.",
+      "language": "Go",
+      "stars": 10102,
+      "forks": 872,
+      "starsAdded": 56,
+      "createdAt": "2026-08-30T16:00:02.040Z",
+      "metaData": {
+        "forks": "869",
+        "stars": "10042",
+        "topics": [
+          "apple",
+          "appstore",
+          "cli",
+          "command-line",
+          "command-line-tool",
+          "go",
+          "golang",
+          "golang-library",
+          "ios",
+          "ipa",
+          "itunes",
+          "macos",
+          "research",
+          "reverse-engineering",
+          "security",
+          "swift",
+          "tool"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store. - majd/ipatool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS",
+          "IPA下载",
+          "命令行工具",
+          "安全研究",
+          "App Store"
+        ],
+        "cover": "",
+        "title": "ipatool 深度评测：从 App Store 下载 IPA 的命令行神器",
+        "ability": [
+          "CLI 全流程覆盖",
+          "跨平台支持",
+          "多平台应用下载",
+          "自动化支持",
+          "安全性设计"
+        ],
+        "summary": "用 Go 编写的命令行工具，可直接从 App Store 搜索并下载 iOS/iPadOS/tvOS 应用的 IPA 包",
+        "category": [
+          "开发工具",
+          "安全工具"
+        ],
+        "suitable": [
+          "iOS 安全研究人员",
+          "逆向分析开发者",
+          "企业安全合规团队",
+          "老设备维护者",
+          "CI/CD 工程师"
+        ],
+        "description": "ipatool 是一个用 Go 编写的命令行工具，可以直接从 App Store 搜索并下载 iOS/iPadOS/tvOS 应用的 IPA 包，跨平台、易自动化、文档清晰，适合安全研究与版本归档等场景，但需注意合规使用和 Apple 认证机制限制。"
+      }
+    },
+    {
+      "id": "715c76d6-aed6-4886-816b-0997d820cc9f",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/handsomestWei/patent-disclosure-skill",
+      "repo": "handsomestWei/patent-disclosure-skill",
+      "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
+      "language": "Python",
+      "stars": 5596,
+      "forks": 693,
+      "starsAdded": 38,
+      "createdAt": "2026-08-30T16:00:02.054Z",
+      "metaData": {
+        "forks": "693",
+        "stars": "5596",
+        "topics": [
+          "chinese",
+          "disclosure",
+          "obsidian",
+          "patent",
+          "skill"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skillhub.cn/skills/patent-disclosure-skill",
+        "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。 - handsomestWei/patent-disclosure-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "专利撰写",
+          "AI Skill",
+          "自动化",
+          "知识产权",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "专利交底书自动生成神器：Patent Disclosure Skill 评测",
+        "ability": [
+          "自动生成专利交底书",
+          "技术方案结构化重组",
+          "多源信息输入整合",
+          "降低专利撰写门槛",
+          "提升IP申请效率"
+        ],
+        "summary": "基于 AI 自动生成高质量专利交底书的 Skill，助力研发人员与IP专家降本增效。",
+        "category": [
+          "AI Agent/Skill",
+          "知识产权工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "研发工程师",
+          "专利代理人",
+          "IP管理者",
+          "创业者/CTO",
+          "技术写作者"
+        ],
+        "description": "该项目是一款专注于专利领域的 AI 技能，通过结构化提示词引导大模型，将零散的技术创意转化为规范的专利交底书。它解决了传统专利撰写耗时长、专业性强的问题，是技术与法律结合的实用工具。"
+      }
+    },
+    {
+      "id": "85b54178-6079-475b-a849-cf0ca90a50ff",
+      "dateAdded": "20260831",
+      "type": "github-daily",
+      "url": "https://github.com/colinhacks/zod",
+      "repo": "colinhacks/zod",
+      "description": "TypeScript-first schema validation with static type inference",
+      "language": "TypeScript",
+      "stars": 43612,
+      "forks": 2154,
+      "starsAdded": 17,
+      "createdAt": "2026-08-30T16:00:02.062Z",
+      "metaData": {
+        "forks": "2154",
+        "stars": "43612",
+        "topics": [
+          "runtime-validation",
+          "schema-validation",
+          "static-types",
+          "type-inference",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zod.dev",
+        "description": "TypeScript-first schema validation with static type inference - colinhacks/zod"
+      },
+      "summaryData": {
+        "tags": [
+          "TypeScript",
+          "数据校验",
+          "Schema",
+          "前端开发",
+          "tRPC"
+        ],
+        "cover": "",
+        "title": "Zod：TypeScript 生态首选数据校验库深度评测",
+        "ability": [
+          "TypeScript-first 类型推导",
+          "零依赖小体积(约2KB)",
+          "丰富API与组合能力",
+          "完善的生态集成",
+          "JSON Schema 输出"
+        ],
+        "summary": "写一份 Schema，同时获得运行时校验与 TypeScript 类型定义，解决前后端数据一致性问题。",
+        "category": [
+          "开发工具",
+          "Web 开发"
+        ],
+        "suitable": [
+          "TypeScript 开发者",
+          "前端/全栈工程师",
+          "Node.js 后端开发者",
+          "库/框架作者"
+        ],
+        "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。"
       }
     }
   ]
