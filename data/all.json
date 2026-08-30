@@ -1,6 +1,311 @@
 {
   "all": [
     {
+      "id": "daea8fb3-7c4a-4e22-b7d5-769749eb08f1",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "domain": "github.com",
+      "repo": "punkpeye/awesome-mcp-servers",
+      "description": "这是当前最大的MCP服务器列表，收录80,138个服务器，支持多语言分类，与Glama目录同步提供质量评分。覆盖数据库、文件系统、地理信息等全场景，既有官方实现也有社区创新，是找工具、学用法、参与生态的必选入口。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:26:16.611Z",
+      "metaData": {
+        "forks": "15270",
+        "stars": "93112",
+        "topics": [
+          "ai",
+          "mcp"
+        ],
+        "license": "MIT license",
+        "homepage": "https://glama.ai/mcp/servers",
+        "description": "A collection of MCP servers. Contribute to punkpeye/awesome-mcp-servers development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "MCP协议",
+          "AI工具",
+          "开源列表",
+          "GitHub精选",
+          "Agent开发"
+        ],
+        "cover": "",
+        "title": "Awesome MCP Servers 深度评测：80,000+ MCP 服务器的终极导航",
+        "ability": [
+          "80,000+服务器导航",
+          "多语言分类索引",
+          "质量评分系统",
+          "安全与合规标注",
+          "社区与教程联动"
+        ],
+        "summary": "这是一份收录8万+MCP服务器的开源列表，与Glama目录双向同步，是AI能力调用的终极黄页。",
+        "category": [
+          "AI工具",
+          "开发工具",
+          "资源合集"
+        ],
+        "suitable": [
+          "AI/Agent工程师",
+          "产品技术决策者",
+          "开源贡献者",
+          "技术小白",
+          "地理信息分析师"
+        ],
+        "description": "这是当前最大的MCP服务器列表，收录80,138个服务器，支持多语言分类，与Glama目录同步提供质量评分。覆盖数据库、文件系统、地理信息等全场景，既有官方实现也有社区创新，是找工具、学用法、参与生态的必选入口。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "ea5bf19d-c2f1-4119-8b26-5eee7f5af2ed",
+      "url": "https://github.com/majd/ipatool",
+      "domain": "github.com",
+      "repo": "majd/ipatool",
+      "description": "ipatool 是一个用 Go 编写的命令行工具，可以直接从 App Store 搜索并下载 iOS/iPadOS/tvOS 应用的 IPA 包，跨平台、易自动化、文档清晰，适合安全研究与版本归档等场景，但需注意合规使用和 Apple 认证机制限制。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:21:38.676Z",
+      "metaData": {
+        "forks": "869",
+        "stars": "10036",
+        "topics": [
+          "apple",
+          "appstore",
+          "cli",
+          "command-line",
+          "command-line-tool",
+          "go",
+          "golang",
+          "golang-library",
+          "ios",
+          "ipa",
+          "itunes",
+          "macos",
+          "research",
+          "reverse-engineering",
+          "security",
+          "swift",
+          "tool"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store. - majd/ipatool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS",
+          "IPA下载",
+          "命令行工具",
+          "安全研究",
+          "App Store"
+        ],
+        "cover": "",
+        "title": "ipatool 深度评测：从 App Store 下载 IPA 的命令行神器",
+        "ability": [
+          "CLI 全流程覆盖",
+          "跨平台支持",
+          "多平台应用下载",
+          "自动化支持",
+          "安全性设计"
+        ],
+        "summary": "用 Go 编写的命令行工具，可直接从 App Store 搜索并下载 iOS/iPadOS/tvOS 应用的 IPA 包",
+        "category": [
+          "开发工具",
+          "安全工具"
+        ],
+        "suitable": [
+          "iOS 安全研究人员",
+          "逆向分析开发者",
+          "企业安全合规团队",
+          "老设备维护者",
+          "CI/CD 工程师"
+        ],
+        "description": "ipatool 是一个用 Go 编写的命令行工具，可以直接从 App Store 搜索并下载 iOS/iPadOS/tvOS 应用的 IPA 包，跨平台、易自动化、文档清晰，适合安全研究与版本归档等场景，但需注意合规使用和 Apple 认证机制限制。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "8be75949-10b0-4c1a-afde-cbc75aa73821",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "domain": "github.com",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:18:42.682Z",
+      "metaData": {
+        "forks": "5287",
+        "stars": "60296",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "3bf741a7-92be-48f5-af66-433d664d780d",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "domain": "github.com",
+      "repo": "unclecode/crawl4ai",
+      "description": "Crawl4AI 是一个专为大模型设计的现代化异步网页爬取工具，能将网页转化为干净的 Markdown 或结构化数据。它具备自适应爬取、浏览器池、Docker API 服务及高度可定制的 Hooks，非常适合构建 RAG 管道和智能体数据源。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:11:53.128Z",
+      "metaData": {
+        "forks": "8296",
+        "stars": "80005",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://crawl4ai.com",
+        "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN - unclecode/crawl4ai"
+      },
+      "summaryData": {
+        "tags": [
+          "网页爬虫",
+          "LLM",
+          "RAG",
+          "Python",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Crawl4AI 深度评测",
+        "ability": [
+          "LLM 友好输出",
+          "异步浏览器爬取",
+          "自适应深度爬取",
+          "Docker API 服务",
+          "高度可定制 Hooks"
+        ],
+        "summary": "专为 LLM 打造的开源异步网页爬取框架，提供干净的 Markdown 输出与自适应爬取能力。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "数据抓取"
+        ],
+        "suitable": [
+          "RAG/知识库开发者",
+          "AI 智能体开发者",
+          "高频数据提取团队",
+          "合规自托管需求方"
+        ],
+        "description": "Crawl4AI 是一个专为大模型设计的现代化异步网页爬取工具，能将网页转化为干净的 Markdown 或结构化数据。它具备自适应爬取、浏览器池、Docker API 服务及高度可定制的 Hooks，非常适合构建 RAG 管道和智能体数据源。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "f7db2740-d53a-4533-8858-ebd171340df5",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "domain": "github.com",
+      "repo": "Lakr233/vphone-cli",
+      "description": "vphone-cli 是一款能让 Apple Silicon Mac 本地运行虚拟化 iOS 的工具，支持自动越狱、固件打补丁及 AI 自动化控制，完美解决真机调试难题。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:04:54.283Z",
+      "metaData": {
+        "forks": "1274",
+        "stars": "9361",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to Lakr233/vphone-cli development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "iOS",
+          "虚拟化",
+          "越狱",
+          "Apple Silicon",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "vphone-cli：在 Apple Silicon Mac 上运行虚拟化 iOS 的开源神器",
+        "ability": [
+          "本地虚拟化 iOS",
+          "自动化越狱与修补",
+          "全流程 CLI 管理",
+          "Socket/MCP 自动化接口",
+          "多变体固件支持"
+        ],
+        "summary": "利用 Apple Silicon 虚拟化框架在本地运行真实 iOS，支持一键越狱与自动化控制。",
+        "category": [
+          "开发工具",
+          "安全工具",
+          "虚拟化"
+        ],
+        "suitable": [
+          "安全研究员",
+          "逆向工程师",
+          "自动化测试人员",
+          "AI 开发者",
+          "技术极客"
+        ],
+        "description": "vphone-cli 是一款能让 Apple Silicon Mac 本地运行虚拟化 iOS 的工具，支持自动越狱、固件打补丁及 AI 自动化控制，完美解决真机调试难题。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
       "id": "fea0f083-6754-46fa-9d66-904a5af235ca",
       "url": "https://github.com/THU-MAIC/OpenMAIC",
       "domain": "github.com",
@@ -11,8 +316,12 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "4388",
+        "stars": "22905",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click - THU-MAIC/OpenMAIC"
       },
       "summaryData": {
         "tags": [
@@ -434,8 +743,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3174",
-        "stars": "28796",
+        "forks": "3181",
+        "stars": "28908",
         "topics": [
           "abliteration",
           "llm",
@@ -1874,8 +2183,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3593",
-        "stars": "38160",
+        "forks": "3599",
+        "stars": "38387",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -2066,8 +2375,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2053",
-        "stars": "32599",
+        "forks": "2072",
+        "stars": "32897",
         "topics": [
           "agent-skills",
           "architecture-as-code",
