@@ -1,6 +1,514 @@
 {
   "all": [
     {
+      "id": "fea0f083-6754-46fa-9d66-904a5af235ca",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "domain": "github.com",
+      "repo": "THU-MAIC/OpenMAIC",
+      "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T07:16:01.931Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "在线教育",
+          "清华大学",
+          "课堂生成",
+          "LangGraph"
+        ],
+        "cover": "",
+        "title": "OpenMAIC：清华开源的多智能体互动课堂生成平台",
+        "ability": [
+          "一键生成互动课堂",
+          "多智能体角色扮演",
+          "多格式导出",
+          "本地化部署",
+          "多模型接入"
+        ],
+        "summary": "清华开源的“多智能体互动课堂”平台，一键生成包含AI老师、测验和模拟的完整课程。",
+        "category": [
+          "教育工具",
+          "AI 应用",
+          "开源项目"
+        ],
+        "suitable": [
+          "教育工作者",
+          "企业培训师",
+          "学生与自学者",
+          "AI 开发者",
+          "教育科技公司"
+        ],
+        "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "f23ecf11-0256-4412-bd8c-3897aa04f0f6",
+      "url": "https://github.com/omacom/omarchy",
+      "domain": "github.com",
+      "repo": "omacom/omarchy",
+      "description": "Omarchy 基于 Arch + Hyprland + Quickshell，提供统一菜单、剪贴板、主题与工作流。安装简单（支持全盘加密、无人值守），开发者环境开箱即用，适合想要减少配置折腾、统一桌面体验的用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T07:12:56.092Z",
+      "metaData": {
+        "forks": "3592",
+        "stars": "34995",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://omarchy.org",
+        "description": "Beautiful, Modern & Opinionated Linux. Contribute to omacom/omarchy development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Arch Linux",
+          "Hyprland",
+          "Quickshell",
+          "DHH",
+          "Linux 发行版"
+        ],
+        "cover": "",
+        "title": "Omarchy 深度评测：Arch + Hyprland 的“主厨发办”式 Linux 发行版",
+        "ability": [
+          "ISO 级别安装即完成",
+          "统一菜单与控制中心",
+          "统一剪贴板与历史",
+          "键盘优先工作流",
+          "开发者环境开箱即用"
+        ],
+        "summary": "Omarchy 是一套基于 Arch 与 Hyprland 的 Linux 发行版，强调“主厨发办”理念，统一菜单、剪贴板、主题与工作流，追求既美观又高效的桌面开发体验。",
+        "category": [
+          "操作系统",
+          "开发工具",
+          "桌面环境"
+        ],
+        "suitable": [
+          "追求高效美观桌面的开发者",
+          "键盘重度用户",
+          "需要统一基线的小团队",
+          "从 Mac/Win 迁移到 Linux 的用户",
+          "热衷主题美化的用户"
+        ],
+        "description": "Omarchy 基于 Arch + Hyprland + Quickshell，提供统一菜单、剪贴板、主题与工作流。安装简单（支持全盘加密、无人值守），开发者环境开箱即用，适合想要减少配置折腾、统一桌面体验的用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "041320d1-fffd-4fdd-b1db-465c2241a1ea",
+      "url": "https://github.com/workweave/router",
+      "domain": "github.com",
+      "repo": "workweave/router",
+      "description": "这是一个本地 AI 路由器，自动把简单请求分发给便宜的模型，复杂请求分发给高级模型，帮你大幅降低 AI 账单，同时支持 OpenAI、Claude 等多种协议。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T07:07:20.824Z",
+      "metaData": {
+        "forks": "82",
+        "stars": "2898",
+        "topics": [
+          "agentic-coding",
+          "ai-gateway",
+          "anthropic",
+          "claude-code",
+          "codex",
+          "model-router",
+          "openai-compatible"
+        ],
+        "license": "License",
+        "homepage": "https://weaveos.com/products/router",
+        "description": "Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change. - workweave/router"
+      },
+      "summaryData": {
+        "tags": [
+          "智能路由",
+          "降本增效",
+          "大模型",
+          "自托管",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Weave Router：智能多模型路由代理",
+        "ability": [
+          "智能模型路由",
+          "多协议统一代理",
+          "成本与质量优化",
+          "自托管与密钥管理",
+          "全链路可观测性"
+        ],
+        "summary": "智能分发 AI 请求至最优模型，省下 40%-70% 成本且不降质。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程工具用户",
+          "关注成本的开发团队",
+          "多模型架构工程师",
+          "企业级用户"
+        ],
+        "description": "这是一个本地 AI 路由器，自动把简单请求分发给便宜的模型，复杂请求分发给高级模型，帮你大幅降低 AI 账单，同时支持 OpenAI、Claude 等多种协议。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "5db3f14a-9b54-4db7-a74b-8a7301865011",
+      "url": "https://github.com/kaifcodec/user-scanner",
+      "domain": "github.com",
+      "repo": "kaifcodec/user-scanner",
+      "description": "User Scanner 以模块化架构支持在不同社交平台（如 GitHub、Instagram、X 等）上快速探测用户名的存在性。它提供丰富的配置选项（包括并发、代理、输出格式、自定义规则）和插件扩展能力，既能满足单机快速扫描，也能融入自动化工作流，是进行数字足迹分析与目标画像的轻量高效工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T07:02:14.477Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "用户名扫描",
+          "OSINT",
+          "开源安全工具",
+          "命令行工具",
+          "渗透测试"
+        ],
+        "cover": "",
+        "title": "User Scanner：一款模块化、可扩展的用户名跨平台 OSINT 扫描工具",
+        "ability": [
+          "多平台用户名扫描",
+          "模块化与插件扩展",
+          "跨平台支持",
+          "智能配置与规则管理",
+          "细粒度输出控制"
+        ],
+        "summary": "User Scanner 是一个开源的命令行工具，能够跨多平台扫描用户名，帮助安全研究员与渗透测试人员快速定位目标在各社交媒体平台的公开痕迹。",
+        "category": [
+          "开发工具",
+          "安全工具",
+          "OSINT 工具"
+        ],
+        "suitable": [
+          "安全研究员",
+          "渗透测试工程师",
+          "OSINT 爱好者",
+          "白帽子黑客",
+          "威胁情报分析师"
+        ],
+        "description": "User Scanner 以模块化架构支持在不同社交平台（如 GitHub、Instagram、X 等）上快速探测用户名的存在性。它提供丰富的配置选项（包括并发、代理、输出格式、自定义规则）和插件扩展能力，既能满足单机快速扫描，也能融入自动化工作流，是进行数字足迹分析与目标画像的轻量高效工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "db38f12d-6f6a-459c-a255-c4f349b624a5",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "domain": "github.com",
+      "repo": "addyosmani/agent-skills",
+      "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T06:50:42.348Z",
+      "metaData": {
+        "forks": "9713",
+        "stars": "90806",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "479edb9c-3ffd-4d19-bf85-6cbf260e429b",
+      "url": "https://github.com/bigskysoftware/htmx",
+      "domain": "github.com",
+      "repo": "bigskysoftware/htmx",
+      "description": "htmx 允许在 HTML 属性中直接发起 AJAX 请求并局部更新页面，让服务端返回 HTML 片段而非 JSON。它无需复杂构建步骤，体积仅 16KB，能显著降低开发复杂度，适合后端主导的 Web 应用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T06:46:35.098Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "htmx",
+          "HTML 增强",
+          "渐进增强",
+          "服务端渲染",
+          "GitHub 热门"
+        ],
+        "cover": "",
+        "title": "htmx 深度评测：让 HTML 重新强大的超媒体工具",
+        "ability": [
+          "AJAX 局部更新",
+          "渐进增强",
+          "服务端驱动 UI",
+          "无依赖轻量化",
+          "语义化交互"
+        ],
+        "summary": "通过属性扩展 HTML 能力，无需 JS 框架即可实现局部刷新与动态交互。",
+        "category": [
+          "前端开发",
+          "Web 框架",
+          "开发工具"
+        ],
+        "suitable": [
+          "后端开发者",
+          "全栈工程师",
+          "CRUD 系统构建者",
+          "追求极简开发的团队",
+          "注重 SEO 的项目"
+        ],
+        "description": "htmx 允许在 HTML 属性中直接发起 AJAX 请求并局部更新页面，让服务端返回 HTML 片段而非 JSON。它无需复杂构建步骤，体积仅 16KB，能显著降低开发复杂度，适合后端主导的 Web 应用。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "f4026387-0dcf-49a2-95c1-c21d534202fa",
+      "url": "https://github.com/Osmantic/ODS",
+      "domain": "github.com",
+      "repo": "Osmantic/ODS",
+      "description": "ODS 通过一条命令即可在 PC/Mac/Linux 上自动配置并启动包含聊天、语音、Agent、工作流等功能的本地 AI 环境，支持多平台 GPU 自动检测，默认数据不出域，极大降低了私有 AI 的部署门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T06:42:44.966Z",
+      "metaData": {
+        "forks": "743",
+        "stars": "5044",
+        "topics": [
+          "ai-agents",
+          "amd",
+          "comfyui",
+          "docker",
+          "llama-cpp",
+          "llm",
+          "local-ai",
+          "n8n",
+          "nvidia",
+          "open-webui",
+          "rag",
+          "self-hosted",
+          "speech-to-text",
+          "strix-halo",
+          "text-to-speech",
+          "workflow-automation"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://discord.gg/qGVygYada3",
+        "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation. - Osmantic/ODS"
+      },
+      "summaryData": {
+        "tags": [
+          "本地部署",
+          "AI Stack",
+          "Docker",
+          "隐私保护",
+          "自动化运维"
+        ],
+        "cover": "",
+        "title": "ODS：一键部署私有 AI 全栈，让本地 AI 变得简单",
+        "ability": [
+          "一键安装与部署",
+          "全栈组件集成",
+          "硬件自动检测与模型选型",
+          "混合云与本地模式切换",
+          "统一 CLI 与管理面板"
+        ],
+        "summary": "ODS 是一个开源项目，能一键在本地部署从推理、聊天 UI 到语音、Agent、工作流的全套 AI 堆栈。",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "系统运维"
+        ],
+        "suitable": [
+          "个人本地 AI 爱好者",
+          "需要私有 AI 环境的团队",
+          "想快速搭建 AI 基础设施的开发者",
+          "数据敏感型企业用户",
+          "实验与研究爱好者"
+        ],
+        "description": "ODS 通过一条命令即可在 PC/Mac/Linux 上自动配置并启动包含聊天、语音、Agent、工作流等功能的本地 AI 环境，支持多平台 GPU 自动检测，默认数据不出域，极大降低了私有 AI 的部署门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "85786a0b-9532-4a22-8fad-b5cb429ff4ff",
+      "url": "https://github.com/p-e-w/heretic",
+      "domain": "github.com",
+      "repo": "p-e-w/heretic",
+      "description": "Heretic 是一个基于方向性消融技术的 CLI 工具，能自动寻找最佳参数移除 LLM 的安全审查。它支持量化部署，降低显存需求，并包含可视化分析功能，适合研究和个人探索。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T06:39:14.397Z",
+      "metaData": {
+        "forks": "3174",
+        "stars": "28796",
+        "topics": [
+          "abliteration",
+          "llm",
+          "transformer"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://heretic-project.org",
+        "description": "Fully automatic censorship removal for language models - p-e-w/heretic"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "去审查",
+          "模型微调",
+          "CLI",
+          "HuggingFace"
+        ],
+        "cover": "",
+        "title": "Heretic：一键去审查 LLM 的自动化工具",
+        "ability": [
+          "自动去除模型审查",
+          "双目标参数优化",
+          "一键 CLI 部署",
+          "硬件感知量化支持",
+          "可视化研究分析"
+        ],
+        "summary": "自动移除大模型安全审查的命令行工具，无需重训即可生成更自由的模型。",
+        "category": [
+          "AI 模型工具",
+          "开发者工具",
+          "自动化脚本"
+        ],
+        "suitable": [
+          "本地 LLM 爱好者",
+          "AI 安全研究员",
+          "角色扮演开发者",
+          "内容创作者",
+          "模型微调工程师"
+        ],
+        "description": "Heretic 是一个基于方向性消融技术的 CLI 工具，能自动寻找最佳参数移除 LLM 的安全审查。它支持量化部署，降低显存需求，并包含可视化分析功能，适合研究和个人探索。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "b9c10692-6834-48fe-8790-4ac9b3504b47",
+      "url": "https://github.com/every-app/open-seo",
+      "domain": "github.com",
+      "repo": "every-app/open-seo",
+      "description": "OpenSEO 是一款集成了 AI Agent 的开源 SEO 平台，支持 Docker 和 Cloudflare 自托管。它提供关键词研究、排名监控等核心功能，利用 MCP 协议让 AI 直接操作真实数据，通过按量付费模式大幅降低工具成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T06:36:02.310Z",
+      "metaData": {
+        "forks": "1769",
+        "stars": "14748",
+        "topics": [
+          "backlink-analysis",
+          "google-search-console-mcp",
+          "keyword-research",
+          "mcp",
+          "seo",
+          "seo-tools",
+          "site-audit"
+        ],
+        "license": "MIT license",
+        "homepage": "https://openseo.so",
+        "description": "Open source alternative to Semrush and Ahrefs. Contribute to every-app/open-seo development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "自托管",
+          "AI 协同",
+          "GitHub",
+          "降本增效"
+        ],
+        "cover": "",
+        "title": "OpenSEO：可自托管的开源 AI 协同 SEO 工具",
+        "ability": [
+          "关键词研究与分析",
+          "AI 协同与 MCP 集成",
+          "排名监控与竞品洞察",
+          "低成本自托管",
+          "站点审计"
+        ],
+        "summary": "一款可自托管、支持 AI 协同的开源 SEO 工具，旨在以按需付费模式替代昂贵的 Ahrefs/Semrush。",
+        "category": [
+          "开发工具",
+          "SEO 优化",
+          "AI 应用"
+        ],
+        "suitable": [
+          "个人站长",
+          "初创小团队",
+          "内容营销人员",
+          "开发与 AI 生态玩家",
+          "独立开发者"
+        ],
+        "description": "OpenSEO 是一款集成了 AI Agent 的开源 SEO 平台，支持 Docker 和 Cloudflare 自托管。它提供关键词研究、排名监控等核心功能，利用 MCP 协议让 AI 直接操作真实数据，通过按量付费模式大幅降低工具成本。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
       "id": "d9c63fef-a080-4e62-8ea4-bba7758df3d0",
       "url": "https://github.com/swoole/typephp",
       "domain": "github.com",
@@ -63,8 +571,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:29:02.094Z",
       "metaData": {
-        "forks": "725",
-        "stars": "8641",
+        "forks": "728",
+        "stars": "8765",
         "topics": [
           "hono",
           "issue-management",
@@ -530,8 +1038,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:47:42.714Z",
       "metaData": {
-        "forks": "306",
-        "stars": "2984",
+        "forks": "326",
+        "stars": "3250",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -894,8 +1402,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:22:32.684Z",
       "metaData": {
-        "forks": "10873",
-        "stars": "39199",
+        "forks": "10879",
+        "stars": "39348",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://google.github.io/googletest/",
@@ -1333,8 +1841,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3501",
-        "stars": "36843",
+        "forks": "3593",
+        "stars": "38160",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -1356,7 +1864,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://k-dense.ai",
-        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
       },
       "summaryData": {
         "tags": [
@@ -1465,8 +1973,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:51:42.798Z",
       "metaData": {
-        "forks": "1423",
-        "stars": "11496",
+        "forks": "1450",
+        "stars": "11683",
         "topics": [
           "agent",
           "claude",
@@ -1525,8 +2033,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "1777",
-        "stars": "28091",
+        "forks": "2005",
+        "stars": "32044",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -1666,8 +2174,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
-        "forks": "3938",
-        "stars": "35095",
+        "forks": "3965",
+        "stars": "35510",
         "topics": [
           "claude-code",
           "mcp",
@@ -1956,8 +2464,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3071",
-        "stars": "21712",
+        "forks": "3115",
+        "stars": "22314",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -2009,8 +2517,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "8784",
-        "stars": "50685",
+        "forks": "8839",
+        "stars": "51064",
         "topics": [
           "agents",
           "ai",
@@ -2694,8 +3202,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "5006",
-        "stars": "20907",
+        "forks": "5030",
+        "stars": "20996",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://t3.codes",
@@ -2747,8 +3255,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52058",
-        "stars": "472016",
+        "forks": "52202",
+        "stars": "472936",
         "topics": [
           "api",
           "apis",
@@ -2937,8 +3445,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:45:31.220Z",
       "metaData": {
-        "forks": "3472",
-        "stars": "32973",
+        "forks": "3482",
+        "stars": "33090",
         "topics": [
           "chinese-llm",
           "chinese-nlp",
@@ -3059,8 +3567,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "214",
-        "stars": "2616",
+        "forks": "232",
+        "stars": "2771",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3112,8 +3620,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:35:22.295Z",
       "metaData": {
-        "forks": "3804",
-        "stars": "38749",
+        "forks": "3819",
+        "stars": "38892",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://tinyhumans.ai/openhuman",
@@ -3165,8 +3673,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1601",
-        "stars": "25388",
+        "forks": "1613",
+        "stars": "25624",
         "topics": [
           "adhd",
           "claude-",
@@ -3291,8 +3799,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:36:01.696Z",
       "metaData": {
-        "forks": "3490",
-        "stars": "33095",
+        "forks": "3514",
+        "stars": "33312",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -3357,8 +3865,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2326",
-        "stars": "25061",
+        "forks": "2350",
+        "stars": "25205",
         "topics": [
           "agent",
           "ai-agent",
@@ -3420,8 +3928,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:45:21.671Z",
       "metaData": {
-        "forks": "7933",
-        "stars": "57617",
+        "forks": "8045",
+        "stars": "58227",
         "topics": [
           "a2a",
           "ai-agents",
@@ -3614,8 +4122,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:35:38.445Z",
       "metaData": {
-        "forks": "8251",
-        "stars": "51225",
+        "forks": "8306",
+        "stars": "51623",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3664,8 +4172,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "12245",
-        "stars": "98833",
+        "forks": "12304",
+        "stars": "99176",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3907,8 +4415,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:45:19.816Z",
       "metaData": {
-        "forks": "18267",
-        "stars": "119620",
+        "forks": "18313",
+        "stars": "119902",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3959,8 +4467,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:40:46.877Z",
       "metaData": {
-        "forks": "2771",
-        "stars": "26757",
+        "forks": "2810",
+        "stars": "27125",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -4025,8 +4533,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "351",
-        "stars": "5045",
+        "forks": "355",
+        "stars": "5159",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4076,8 +4584,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3121",
-        "stars": "29311",
+        "forks": "3125",
+        "stars": "29343",
         "topics": [
           "ai",
           "language",
@@ -4197,8 +4705,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "364",
-        "stars": "3920",
+        "forks": "374",
+        "stars": "4086",
         "topics": [
           "agent-runtime",
           "ai",
@@ -4317,8 +4825,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
-        "forks": "1842",
-        "stars": "14402",
+        "forks": "1847",
+        "stars": "14432",
         "topics": [
           "ebay",
           "email",
@@ -4435,8 +4943,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2598",
-        "stars": "34166",
+        "forks": "2621",
+        "stars": "34354",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -4494,8 +5002,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4128",
-        "stars": "30168",
+        "forks": "4226",
+        "stars": "30977",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4749,8 +5257,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2410",
-        "stars": "24414",
+        "forks": "2480",
+        "stars": "25260",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -4812,8 +5320,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "501",
-        "stars": "17447",
+        "forks": "514",
+        "stars": "17713",
         "topics": [
           "dpi",
           "gpui",
@@ -4878,8 +5386,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "614",
-        "stars": "9591",
+        "forks": "626",
+        "stars": "9695",
         "topics": [
           "cactus",
           "gemini",
@@ -4962,8 +5470,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "480",
-        "stars": "6008",
+        "forks": "490",
+        "stars": "6205",
         "topics": [],
         "license": "",
         "homepage": "",

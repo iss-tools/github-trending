@@ -1,0 +1,71 @@
+{
+  "id": "f4026387-0dcf-49a2-95c1-c21d534202fa",
+  "url": "https://github.com/Osmantic/ODS",
+  "domain": "github.com",
+  "repo": "Osmantic/ODS",
+  "description": "ODS 通过一条命令即可在 PC/Mac/Linux 上自动配置并启动包含聊天、语音、Agent、工作流等功能的本地 AI 环境，支持多平台 GPU 自动检测，默认数据不出域，极大降低了私有 AI 的部署门槛。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T06:42:44.966Z",
+  "metaData": {
+    "forks": "743",
+    "stars": "5044",
+    "topics": [
+      "ai-agents",
+      "amd",
+      "comfyui",
+      "docker",
+      "llama-cpp",
+      "llm",
+      "local-ai",
+      "n8n",
+      "nvidia",
+      "open-webui",
+      "rag",
+      "self-hosted",
+      "speech-to-text",
+      "strix-halo",
+      "text-to-speech",
+      "workflow-automation"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://discord.gg/qGVygYada3",
+    "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation. - Osmantic/ODS"
+  },
+  "summaryData": {
+    "tags": [
+      "本地部署",
+      "AI Stack",
+      "Docker",
+      "隐私保护",
+      "自动化运维"
+    ],
+    "cover": "",
+    "title": "ODS：一键部署私有 AI 全栈，让本地 AI 变得简单",
+    "ability": [
+      "一键安装与部署",
+      "全栈组件集成",
+      "硬件自动检测与模型选型",
+      "混合云与本地模式切换",
+      "统一 CLI 与管理面板"
+    ],
+    "summary": "ODS 是一个开源项目，能一键在本地部署从推理、聊天 UI 到语音、Agent、工作流的全套 AI 堆栈。",
+    "category": [
+      "开发工具",
+      "AI 基础设施",
+      "系统运维"
+    ],
+    "suitable": [
+      "个人本地 AI 爱好者",
+      "需要私有 AI 环境的团队",
+      "想快速搭建 AI 基础设施的开发者",
+      "数据敏感型企业用户",
+      "实验与研究爱好者"
+    ],
+    "description": "ODS 通过一条命令即可在 PC/Mac/Linux 上自动配置并启动包含聊天、语音、Agent、工作流等功能的本地 AI 环境，支持多平台 GPU 自动检测，默认数据不出域，极大降低了私有 AI 的部署门槛。"
+  },
+  "contentDetail": "# 一句话总结  \nODS（Osmantic Deployment System）是一个“把你的 PC/Mac/Linux 变成私有 AI 服务器”的开源一体化本地 AI 堆栈：一条命令即可完成从推理、聊天 UI、语音、Agent、工作流、RAG 到图像生成的全套安装与配置，默认完全本地运行、数据不出域，适合想快速落地“私有 AI”的开发者、实验室与个人玩家。官方明确采用 Apache 2.0 许可证，并可兼容 Linux/macOS/Windows（需 Docker）。\n---\n## 背景与痛点：为什么会出现 ODS？  \n- 拼装困难：要做一套本地 AI，你通常要自己配 Ollama/llama.cpp、Open WebUI、向量库（如 Qdrant）、工作流（n8n）、图像生成（ComfyUI）、语音（Whisper/Kokoro），再写 Docker Compose、搞网络与端口、调模型参数、处理升级与回滚。这一套流程动辄花费整个周末，稍有改动就要反复试错。ODS 正是为了解决这种“手工拼装十几个服务”的体验问题而出现。  \n- 隐私与主权：大厂商把持了绝大多数 AI 流量，你的提示词、数据与业务情报都跑在他人基础设施上，且价格与可用性你说了不算。ODS 的愿景是“自托管本地 AI 应当是一项主权权利，而不是职业选择”，推动“不要租用，自己拥有”的理念。  \n- 门槛过高：懂 CUDA/ROCm、调试驱动、写脚本、调配置的门槛把很多想尝试本地 AI 的用户挡在门外。ODS 用一条命令完成 GPU 自动检测、模型选型与凭证生成，把两分钟内“可聊天”作为体验目标（Bootstrap 模式）。\n---\n## 核心亮点与功能剖析  \n### 1) 一键安装与硬件/模型自动识别  \n- 一行脚本（Linux/macOS）或 PowerShell 块（Windows）即可启动安装：自动检测 GPU（NVIDIA/AMD/Apple Silicon/Intel Arc），选择合适的量化模型，生成安全凭证，启动服务并在浏览器给出 UI（默认 http://localhost:3000）。  \n- 安装器内置“Bootstrap 模式”：先快速拉取一个约 1.5B 的小模型让你马上能聊；后台再继续下载你的“主力模型”，就绪后自动热切换，几乎零停机。对首次体验或网络环境一般的用户非常友好。  \n- 硬件分层与模型目录：安装器按显存/统一内存给硬件定级（Tier），并为每个 Tier 提供当前“默认推荐”的量化 GGUF 模型与上下文长度。不同芯片平台都有各自的 tier 表，便于“开箱即用”。如 NVIDIA 24GB VRAM 默认 Qwen3.5 27B（Q4_K_M），48GB 可选 DeepSeek R1 Distill Llama 70B 等；Apple Silicon 16GB 统一内存默认 Qwen3.5 9B；Intel Arc 8GB 默认 Qwen3.5 9B 等。  \n- 平台与发行版覆盖：目前明确支持 Linux（NVIDIA+AMD+Intel Arc）、Windows（NVIDIA+AMD，需 Docker Desktop + WSL2）、macOS Apple Silicon（M1+）。并在 Ubuntu、Debian、Fedora、Rocky、Arch、Manjaro、openSUSE 等发行版上列出了“测试通过”列表。  \n### 2) 全栈组件与“开箱即连”的能力  \nODS 的真正价值在于它不仅把各组件装好，还预先“织网”，让它们互相打通：  \n- 聊天与推理  \n  - Open WebUI：支持多语言、对话历史、网页搜索与文档上传的 ChatGPT 式界面（默认端口 3000）。  \n  - llama-server：高性能 LLM 推理服务，Linux Docker 默认对外 11434，macOS/Windows 本地模式默认 8080。  \n  - LiteLLM：多模型 API 网关，支持本地/云端/混合模式，方便统一路由与切换。  \n  - TEI Embeddings：文本嵌入服务，用于 RAG 与检索工作流。  \n- 语音  \n  - Whisper：语音转文字。  \n  - Kokoro：文字转语音。  \n- 代理与自动化  \n  - Hermes Agent：默认“本地优先”的自主/浏览器代理，带记忆、技能与魔法链接网关。  \n  - OpenClaw：旧版自主代理（已弃用，迁移期仍可选）。  \n  - n8n：400+ 集成的工作流自动化引擎。  \n  - APE（Agent Policy Engine）：对自主工具调用进行审计与治理。  \n  - OpenCode：基于浏览器的 AI 编码助手，接入本地推理栈。  \n  - Memory Shepherd：主机/systemd 辅助，负责代理记忆的生命周期管理。  \n- 知识与搜索  \n  - Qdrant：向量数据库，用于 RAG。  \n  - SearXNG：自托管网页搜索（无跟踪）。  \n  - Perplexica：深度研究引擎。  \n  - Brave Search：可选的付费 Brave Search API 桥接。  \n- 创意  \n  - ComfyUI：节点式图像生成。  \n- 隐私与运维  \n  - Privacy Shield：为 API 调用做 PII（个人身份信息）擦除的代理。  \n  - Dashboard：GPU 指标、服务健康、模型管理总览（端口 3001）。  \n  - Dashboard API：背后提供状态、指标与管理的 API（端口 3002）。  \n  - Token Spy：本地与被代理 LLM 流量的 Token 使用监控。  \n  - Langfuse：可观测性与链路追踪（可选）。  \n### 3) 扩展与可定制性：服务即扩展  \n- 每个服务都以“扩展”形式存在（extensions/services/xxx/manifest.yaml + compose.yaml），安装、启用、禁用都通过统一命令完成，便于增删改而不破坏整体结构。示例目录结构：  \n  - extensions/services/my-service/manifest.yaml（元数据：名称、端口、健康端点、GPU 后端等）  \n  - extensions/services/my-service/compose.yaml（Docker Compose 片段，自动合并到主栈）  \n- 命令行管理十分直观：  \n  - ods enable my-service / ods disable my-service  \n  - ods list（查看所有服务与状态）  \n### 4) 运维友好的 CLI（ods-cli）  \n- 常用指令示例：  \n  - ods status（健康检查 + GPU 状态）  \n  - ods logs llm（看推理日志；别名 stt、tts）  \n  - ods restart [service] / ods start / ods stop  \n  - ods mode cloud / local / hybrid（切换推理模式：云端/本地/混合）  \n  - ods model swap T3（切换到不同硬件 tier 的默认模型）  \n- 模型与配置：  \n  - ods model current / list / swap  \n  - ods config show（查看 .env，敏感信息会被掩码）  \n  - ods preset save gaming / load gaming（保存与恢复配置快照）  \n### 5) 模型管理与回滚机制  \n- 安装器会把选定模型的 LL M_MODEL、GGUF_FILE、MAX_CONTEXT 等写入 .env。你可以通过 Dashboard 或命令行切换模型，也可以直接把自己的 .gguf 放到 data/models/ 后从 Dashboard 加载；若加载失败会自动回滚到上一可用模型。预下载脚本 scripts/pre-download.sh 可提前拉取某 tier 的模型。  \n- 支持 MODEL_PROFILE 选用不同模型家族（如 qwen、gemma4、auto），或用 --tier 手动覆盖硬件 tier。这种“既自动又可控”的设计对有定制需求又不想从零搭栈的开发者很友好。  \n### 6) 架构与可扩展性  \n- 仓库根目录主要存放公开 README、安装脚本、安全策略、GitHub 工作流与协调文档；真正的“产品运行时”在 ods/ 目录中，包括服务、安装阶段、compose 覆盖、Dashboard、CLI、测试与运维文档。  \n- 安装器本身采用“模块化”的 19 个库模块、共享服务注册表与 13 个有序阶段；文档明确了安装架构、后端契约、前置检查引擎、Compose 解析契约、高风险变更映射、验证矩阵与“User Green”发布门禁，利于贡献者安全迭代与分支卫生。  \n---\n## 目标人群与收益  \n- 想要“私域 AI”的个人/家庭实验室玩家：只需一台带 GPU 的机器（或较好的 CPU+内存），一条命令就能得到可用的本地 ChatGPT 式体验、语音、检索与自动化，且提示与文档不出域。收益是显著降低时间与试错成本，并保护隐私。  \n- 中小团队/创业公司的工程负责人：希望快速搭建“可控、可审计、可混合云/本地”的 AI 基础设施，不想重复造轮子。ODS 的统一 Dashboard、API 网关、可观测性（Langfuse）与扩展体系，可加速从 demo 到可运营的落地。  \n- 研究者与实验爱好者：需要本地 RAG、Agent、多模型切换与 GPU 自动选型。ODS 的 tier 与模型目录、预下载与热切换、验证矩阵与离线/镜像支持，帮助在稳定环境下做可复现实验。文档索引清楚列出“从安装到贡献”各场景的权威入口。  \n- 开发者与运维人员：希望学习/复用一套“本地 AI 全栈”的最佳实践。ODS 的安装架构、扩展机制、CLI 与 Dashboard API 都是比较干净的教学范例。  \n小白收益：安装体验接近“软件向导”；进阶用户收益：可以自定义扩展、模型与运维策略；企业用户收益： Apache 2.0 许可便于内部分发与改造，且支持混合模式、可观测性与策略管控。\n---\n## 竞品/同类对比  \n### 对比维度（官方提供的“对比表”总结）  \n- 范围：ODS 覆盖“从推理到 Agent 再到工作流”的整套栈；Ollama + Open WebUI 主要是“LLM + 聊天界面”；LocalAI 主要是 LLM 服务。ODS 更接近“全功能私有 AI 家电”。  \n- 一键安装：ODS 可一站式安装并自动配置全栈；Ollama + Open WebUI 与 LocalAI 通常需要用户自行对接/配网。  \n- 硬件自动检测与模型选型：ODS 原生支持 NVIDIA、AMD Strix Halo、Apple Silicon、Intel Arc 的自动识别与 tier 对应；竞品大多不具备如此系统化的 tier/模型目录。  \n- 组件与能力：ODS 自带或预配置 Hermes Agent、n8n 工作流、Whisper+Kokoro 语音、ComfyUI 图像、Qdrant 向量库、SearXNG/Perplexica 搜索等，而竞品通常要用户自己拼。  \n- 扩展机制：ODS 提供基于 manifest.yaml + compose.yaml 的“服务即扩展”，可热插拔；竞品未提供同级别的统一扩展体系。  \n### 同类方案差异点（补充视角）  \n- 单一用途工具（如 Ollama/llama.cpp）：更轻量、更聚焦，适合只想跑推理的场景，但要获得完整体验需要额外付出大量集成成本。ODS 则把这种“集成成本”标准化且自动化。  \n- “全家桶”应用（如 LocalAI/部分 All-in-One 镜像）：通常功能有限、升级路径与可观测性不足，ODS 更偏“工程化堆栈”，强调验证矩阵、文档契约与可控升级。  \n- 商业 SaaS：提供稳定与托管但丧失数据主权与长期成本可控。ODS 提供本地优先，同时支持混合模式（云作为 fallback），让用户自主权衡。  \n---\n## 局限与不足  \n- 前置依赖与硬件门槛：需要 Docker（Linux/macOS/Windows 均），Windows 还要 Docker Desktop + WSL2；本地推理体验对 GPU/统一内存有硬性要求，低配机器只能用小模型或跑 CPU，流畅度会打折扣。  \n- 磁盘占用与带宽：一次安装会拉取多个服务镜像 + 模型文件，磁盘占用与首次下载带宽需求不小，尤其是使用高 tier 模型或多个模型时。Bootstrap 模式缓解了“等待体验”，但不能消除“存储与带宽”的现实。  \n- 安装器与平台特定的已知问题：Issue 列表显示近期存在 Windows/macOS/CLI 细节方面的 bug（如路径含空格时某些操作出错、健康检查对带空格的 compose -f 路径处理不当、某些清理例程对文件/目录类型判断不严谨等），表明在多平台的边缘场景下仍有打磨空间。部分问题已由社区指明，且针对安全问题也有公开讨论（例如私有漏洞报告通道的启用）。  \n- 学习曲线：虽然安装极简，但若要自定义扩展、修改模型路由、参与贡献或构建定制版本，需要熟悉 Docker Compose、Shell/PowerShell、YAML 配置等知识；不过项目提供了大量文档与路线索引来降低该门槛。  \n- 安全模型与治理：项目自带 Privacy Shield、APE 与 Dashboard API，但在生产/团队环境部署时，仍需根据自身安全策略做加固（如访问控制、网络隔离、密钥轮换、审计日志归档等）。尤其若开启混合模式使用云端 API，要明确哪些数据离域。  \n---\n## 技术栈与架构解析  \n- 控制面与运行时：核心是 Docker Compose 为“容器编排层”，llama-server/TEI/Qdrant/n8n/ComfyUI/Whisper/Kokoro/SearXNG/Perplexica/Langfuse 等作为服务容器；Dashboard + Dashboard API + CLI 构成统一控制平面，提供健康检查、GPU 监控、模型切换与扩展管理。Open WebUI 面向终端用户，LiteLLM 作为多模型 API 网关在底层路由。  \n- 扩展架构：每个扩展通过 manifest.yaml 描述元数据与契约，compose.yaml 提供片段；安装与运行时自动发现与合并。通过 ods enable/disable 可热插拔服务，便于做“版本化叠加”而非改主栈。  \n- 安装器架构：模块化分阶段执行，覆盖前置检查、依赖安装、GPU 检测与 tier 分配、模型选择、凭证生成、Compose 解析与合并、服务启动与健康校验。不同平台共享逻辑但各具平台脚本，并具备安装信任文档与支持矩阵文档，方便审计与复现。  \n- 验证与测试体系：项目强调“验证矩阵”与“User Green”发布门禁，并要求对高风险变更走“升级验证路径”，以提高发布稳定性。此外提供模拟安装、安装证据等机制，把“安装可复现性”当作一等公民。  \n---\n## 上手门槛与部署体验  \n- 小白：前提是会打开终端/PowerShell 并安装 Docker Desktop。Linux/macOS 一行命令 curl ... | bash 即可；Windows 按 README 提供的 PowerShell 块执行。装完打开 http://localhost:3000 就能聊，体验接近“开箱即用”。  \n- 进阶：可通过 .env 或 CLI 做细粒度配置（端口、模型、模式切换、扩展开关），并利用 Dashboard 进行可视化监控与模型管理。一旦熟悉 Docker Compose，也能直接在运行目录进行 docker compose 操作。  \n- 卸载：提供统一的卸载脚本与选项（--keep-data / --keep-models），以及 Windows 特殊情况下的恢复指南，降低“怕卸不干净”的顾虑。  \n---\n## 社区活跃度与生命力（概览）  \n- 项目仓库 Stars 数约 2.9k（近一年保持增长趋势），Issue 与 Discussions 板块有持续更新与社区参与，文档与契约层级清晰且在持续维护，说明项目处于“健康演进”阶段。  \n- 文档与治理：提供了“文档索引”与“状态标记”（Canonical contract / Operator guide / Implementation deep-dive 等），让参与者和运维者能快速定位权威依据，避免新旧文档冲突。  \n---\n## Demo / 代码示例  \n### 1) Linux/macOS 一行安装并启用（官方默认路径）  \n```bash\ncurl -fsSL https://install.osmantic.com/ods.sh | bash\n```  \n安装成功后，访问 http://localhost:3000 即可使用 Open WebUI 开始聊天；默认本地推理端口 Linux Docker 为 11434，macOS/Windows 本地模式为 8080。  \n### 2) macOS（Apple Silicon）手动克隆安装  \n```bash\ngit clone https://github.com/Osmantic/ODS.git\ncd ODS/ods\n./install.sh\n```  \n安装器会检测芯片，启动 Metal 加速的 llama-server（原生）并在 Docker 中启动其他服务；可用 ./ods-macos.sh status 管理状态。  \n### 3) Windows（PowerShell）安装块（官方示例）  \n```powershell\n$ProgressPreference = \"SilentlyContinue\"\n$odsSrc = Join-Path $env:TEMP (\"ods-install-\" + [guid]::NewGuid().ToString(\"N\"))\n$odsZip = Join-Path $odsSrc \"ods-main.zip\"\nNew-Item -ItemType Directory -Path $odsSrc | Out-Null\nInvoke-WebRequest \"https://github.com/Osmantic/ODS/archive/refs/heads/main.zip\" -OutFile $odsZip\nExpand-Archive -LiteralPath $odsZip -DestinationPath $odsSrc -Force\ncd (Get-ChildItem -LiteralPath $odsSrc -Directory | Select-Object -First 1).FullName\nSet-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass\n.\\install.ps1\n```  \n注意：需先安装 Docker Desktop 并启用 WSL2 后端，在普通 PowerShell（非管理员）中执行。  \n### 4) 常用 CLI 示例（运维与模型切换）  \n```bash\nods status                         # 查看健康与 GPU 状态\nods model list                     # 列出当前可用的 tiers\nods model swap T3                  # 切换到 Tier 3 的默认模型（下载未完成时会先拉取）\n./scripts/pre-download.sh --tier 3 # 提前下载 Tier 3 模型，再 swap 减少等待\nods mode hybrid                    # 切为“本地优先，云 fallback”\n```  \n若想跳过 Bootstrap 模式，首次安装可执行：./install.sh --no-bootstrap。  \n---\n## 模式与边界：适用场景与能力边界  \n- 最擅长：  \n  - 快速搭起“私有 AI 家电”：聊天、语音、检索、RAG、自动化与图像生成在本地打通。  \n  - 多模型与多平台统一管理：通过 CLI/Dashboard 切换模型与 tier，无须改各种服务配置。  \n  - 混合模式：本地为兜底或主力，云端为应急或补充，兼顾成本与可用性。  \n- 能力边界：  \n  - 不解决模型本身的训练/微调：ODS 偏部署与运维，训练任务仍需外部流水线。  \n  - 不负责“一键搞定所有硬件驱动”：你仍需保障基础 GPU/容器环境就绪，ODS 会在之上做自动检测与路由。  \n  - 在极端硬件条件下（极低内存或无 GPU），只能使用小模型或 CPU 模式，体验会受到物理约束。  \n---\n## 结语与行动建议  \nODS 的本质是“把本地 AI 的组装与运维工作标准化、自动化，并用清晰的扩展与验证体系保证稳定性”，对希望尽快落地“私有 AI”的人极具吸引力。若你只想体验聊天，轻量方案可能更简单；但若想长期经营自己的 AI 基础设施，ODS 的全栈与工程化优势非常明显。  \n- 如果你刚刚入门：先在测试环境跑一次默认安装（macOS/Linux 最顺滑），用 Bootstrap 模式快速体验“两分钟聊天”，再通过 Dashboard 换模型、试语音与搜索。  \n- 如果你已是“拼装老手”：重点看扩展架构、验证矩阵与模式切换（local/hybrid/cloud），尝试把你现有组件以扩展形式纳入 ODS，并用其 CLI/Dashboard 统一管理。  \n- 如果你打算用在团队/生产：阅读 INSTALLER_TRUST、RELEASE_VALIDATION、HIGH_RISK_CHANGE_MAP 等文档，按自己的安全与审计策略加固，再考虑分支锁定与离线/镜像方案。  \n一句话建议：选硬件、装 Docker、跑一条命令，然后立即开始用。ODS 会帮你把“运维的脏活”外包给自动化，让你把精力集中在构建真正有价值的 AI 应用与工作流上。",
+  "type": "project",
+  "dateAdded": "20260830"
+}

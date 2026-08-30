@@ -1,0 +1,50 @@
+{
+  "id": "fea0f083-6754-46fa-9d66-904a5af235ca",
+  "url": "https://github.com/THU-MAIC/OpenMAIC",
+  "domain": "github.com",
+  "repo": "THU-MAIC/OpenMAIC",
+  "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T07:16:01.931Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0"
+  },
+  "summaryData": {
+    "tags": [
+      "多智能体",
+      "在线教育",
+      "清华大学",
+      "课堂生成",
+      "LangGraph"
+    ],
+    "cover": "",
+    "title": "OpenMAIC：清华开源的多智能体互动课堂生成平台",
+    "ability": [
+      "一键生成互动课堂",
+      "多智能体角色扮演",
+      "多格式导出",
+      "本地化部署",
+      "多模型接入"
+    ],
+    "summary": "清华开源的“多智能体互动课堂”平台，一键生成包含AI老师、测验和模拟的完整课程。",
+    "category": [
+      "教育工具",
+      "AI 应用",
+      "开源项目"
+    ],
+    "suitable": [
+      "教育工作者",
+      "企业培训师",
+      "学生与自学者",
+      "AI 开发者",
+      "教育科技公司"
+    ],
+    "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。"
+  },
+  "contentDetail": "**一句话总结：** OpenMAIC 是清华大学 THU-MAIC 团队开源的“多智能体互动课堂”平台，能一键把任意主题或文档变成“有 AI 老师、有同学、有白板、有测验、有模拟实验”的全链路互动课堂，适合教师备课、学生自学与企业培训，并支持本地部署与多模型接入。它源于两年真实课堂验证，学术根基扎实，工程能力成熟，但**上手仍需配置 LLM 与运行环境**，生成质量也依赖模型选择与提示调优。\n---\n## 背景与痛点\n在线教育长期存在两大瓶颈：内容生产成本高、互动反馈弱。传统录播课/MOOC 往往“只看不问”，完课率常处于个位数，师生缺乏实时讨论与个性化反馈的闭环。教师制作课件与测验耗时耗力，学生遇到抽象概念缺乏直观演示与实时纠错，企业培训也面临课程标准化成本高、难以大规模交付的挑战。OpenMAIC 正是为此而生——通过多智能体协作与两阶段生成流水线，把“从资料到互动课堂”的全流程自动化，在几分钟内生成带有语音讲解、白板绘图、实时问答、测验与互动实验的完整课堂，显著降低备课/学习成本，强化互动感。\n## 核心亮点与功能剖析\n- 一键课堂生成与两阶段流水线： 输入主题或上传文档，系统先在大纲阶段生成结构化提纲，再在场景阶段为每个大纲条目生成幻灯片、测验、交互式仿真或 PBL 等内容。这种“先大纲、后场景”的两阶段设计，能有效规避长文本生成时的记忆漂移与格式崩塌，确保内容质量稳定，还支持在大纲阶段人工增删后继续生成，实现人机协同。\n- 多智能体编排与“真实感课堂”： 基于 LangGraph 构建的多智能体状态机，控制 AI 教师、助教与 AI 同学轮次发言，支持课堂讨论、圆桌辩论、白板实时作图等模式，场景推进不单调，且可被邀请参与或被点名提问。状态机还支持断点续传与失败恢复，工程上健壮可控。\n- 四种课堂场景与深度互动模式：\n  - 幻灯片讲课（Slides）：带语音讲解、聚光灯与激光笔动画。\n  - 互动测验（Quiz）：单选/多选/简答，AI 即时批改并给出反馈。\n  - 交互模拟（Interactive Simulation）：基于 HTML 的可操作实验、流程图、物理模拟等，直观展示抽象概念。\n  - 项目制学习（PBL）：可选择角色，与 AI 协作完成里程碑与交付物。\n  - 深度交互模式支持 3D 可视化、仿真、小游戏、思维导图、在线编程等，AI 老师还能在页面上高亮、设定条件与提示，增强动手探索。\n- 导出与离线/内网部署： 支持导出可编辑的 PPTX、独立的交互式 HTML，以及课堂 ZIP（包含结构+媒体）。导出时会将交互场景的外部资源（KaTeX、Three.js、字体、图片）内联为 data: URIs，可离线播放，便于内网部署与分发。导入时也兼容旧版本，并支持迁移。\n- 多模型、多 provider 与扩展性： 支持 OpenAI、Azure OpenAI、Anthropic、Amazon Bedrock、Google Gemini、DeepSeek、Qwen、Kimi、MiniMax、Grok、OpenRouter、Doubao、腾讯混元、小米 MiMo、智谱 GLM，以及 Ollama、Lemonade、FunASR 等本地或 OpenAI 兼容方案；也支持 MinerU 文档解析、VoxCPM2 语音合成、ComfyUI 图像生成等扩展，切换成本较低。并提供了 @openmaic/* SDK 家族（DSL、渲染器、存储、导入器），便于二次开发与集成。\n- OpenClaw 集成： 可在飞书、Slack、Telegram 等聊天应用中直接生成与查看课堂，降低使用门槛与上下文切换成本。通过 clawhub install openmaic 一键安装技能包，支持托管模式与自托管模式两种工作流。\n## 技术栈与架构解析（面向开发者）\n- 前端与全栈框架： 基于 Next.js（App Router）+ React 19 + TypeScript 5，使用 pnpm workspace 管理主应用与多包；样式采用 Tailwind CSS 4 + shadcn/ui，现代且易扩展；状态管理使用 Zustand + Immer，轻量高效。UI 部分包含幻灯片编辑器/渲染器、场景渲染器（Quiz/Interactive/PBL）等模块。\n- 多智能体与状态机： lib/orchestration 使用 LangGraph 管理多智能体轮次与讨论流程；lib/playback 实现课堂回放的状态机（idle → playing → live）；lib/action 执行 28+ 种动作（语音、白板绘图/文字/形状/图表、聚光灯、激光笔等），是所有 Agent 的统一“执行层”。\n- 生成与导入导出： lib/generation 为两阶段生成流水线；packages 内部定制了 PPTX 生成、数学公式转换（MathML→OMML）、DSL 规范与迁移、存储抽象等；导入导出支持 PPTX、HTML、ZIP、离线资源包等，多格式兼容。包架构强调边界清晰与可复用，整体符合“合同→导入→渲染→导出”的闭环。\n- 持久化与可选扩展： 默认浏览器持久化；可选启用 server-persistence（PostgreSQL），提供运行时 KV 与文档存储的 HTTP 接口；可选启用 render-service 进行 MP4 视频导出；可选接入 MinerU、VoxCPM2 等，满足高阶场景与本地化需求。部署上支持 Vercel 一键部署与 Docker Compose 一键启动，并内置 SSRF 防护等安全加固。\n## 上手门槛与部署体验\n- 官方文档清晰度： README 与 CHANGELOG 详细，中英双语，包含 Quick Start、模型配置、Docker/Compose 部署、持久化、MP4 导出、MinerU、VoxCPM2 等章节，流程对开发者友好。但对非技术用户，仍需理解环境变量、provider 配置与基本命令行操作。\n- 安装与运行示例（本地开发）： 前置要求 Node.js ≥ 20、pnpm ≥ 10。命令如下：\n  - 克隆与安装：\n    ```bash\n    git clone https://github.com/THU-MAIC/OpenMAIC.git\n    cd OpenMAIC\n    pnpm install\n    ```\n  - 复制并编辑配置（至少填写一个 LLM provider）：\n    ```bash\n    cp .env.example .env.local\n    # 编辑 .env.local，填入至少一个 API Key，例如：\n    # OPENAI_API_KEY=sk-...\n    # 或使用其他 provider\n    ```\n  - 启动开发服务器：\n    ```bash\n    pnpm dev  # 默认访问 http://localhost:3000\n    ```\n- Docker 一键部署与可选 profile：\n  - 默认 Docker Compose 启动：\n    ```bash\n    cp .env.example .env.local\n    # 编辑 .env.local 添加 API Keys\n    docker compose up --build\n    ```\n  - 启用 PostgreSQL 服务端持久化（适合多用户/服务端场景）：\n    ```bash\n    cp .env.example .env.local\n    printf '\\nDATABASE_URL=postgres://openmaic:openmaic-dev@postgres:5432/openmaic\\nPERSISTENCE_DEV_TOKEN=openmaic-local-dev\\n' >> .env.local\n    NEXT_PUBLIC_PERSISTENCE=1 NEXT_PUBLIC_PERSISTENCE_TOKEN=openmaic-local-dev docker compose --profile server-persistence up --build\n    ```\n  - 启用 MP4 视频导出：\n    ```bash\n    docker compose --profile video-export up --build\n    ```\n  提示：官方明确强调生产环境需替换 lib/persistence/server-auth.ts 的认证与授权逻辑，以避免未授权访问。\n## 目标人群与收益\n- 高校与中小学教师： 可快速生成复习课、概念讲解课或互动实验，将 AI 生成内容作为基础框架，再结合自身风格二次编辑，显著提升备课效率并丰富课堂呈现形式。\n- 学生与自学者： 输入主题即可生成“有人讲解、有人讨论、有测验”的互动课，支持个性化节奏与多模态学习，比单向视频更利于记忆与理解。\n- 企业与培训机构： 快速制作产品知识、合规培训、软技能课程，并能导出标准化 PPT/HTML 或内部部署，降低内容制作与分发成本。\n- 开发者与教育科技公司： 通过 @openmaic/* SDK 与 OpenClaw 技能集成，将课堂生成与多模态回放能力嵌入自家产品，或基于 OpenMAIC 定制垂直场景，显著缩短研发周期。\n## 竞品/同类对比与独特竞争力\n- 与通用 PPT 生成工具对比： 多数 AI 幻灯片工具止步于“单文件+单模态”，OpenMAIC 则构建“多场景+多智能体+回放与测验”，场景覆盖更全，互动性更强。\n- 与单一 LLM 聊天类辅导对比： 多智能体编排使课堂更像真实教室（老师+同学），而不是“独角戏”，并且能在白板、测验、交互实验间联动，体验层次更丰富。\n- 与封闭 SaaS 教课平台对比： OpenMAIC 完全开源（MIT 协议），可自托管、二次开发、接入自有模型或内网存储，数据与流量可控，适配学校与企业的合规与成本要求。\n- 与其他多智能体教育项目对比： 多数还停留在论文或原型阶段，OpenMAIC 已有近两年大规模课堂数据验证、国家智慧教育平台落地与持续版本迭代，工程成熟度与生态周边（MAIC-UI、OpenClaw 技能、包家族等）较为完善。\n## 局限与不足（客观）\n- 部署与配置门槛： 对技术小白而言，准备 Node.js/pnpm、配置 .env.local、管理 API Key 或部署 Docker 仍有一定学习成本；需要网络与基础调试能力。\n- 模型与费用依赖： 生成质量与响应速度依赖所选模型；多模态（图像、语音、视频）会显著增加 token 调用量与费用。建议合理选择模型与限制生成规模。\n- 生成质量仍需“人机协同”： 复杂知识点的讲解严谨度、数值细节、公式推演仍需教师审核与微调；测验题干与评分也可能需要抽查和修正。\n- 浏览器兼容与性能： 交互式 3D/代码/仿真组件依赖现代浏览器特性与设备性能，老旧设备可能出现卡顿。\n- 认证与授权需自行完善： 默认开发模式仅提供简单访问控制，生产环境必须实现真实会话与多租户隔离逻辑，否则存在未授权访问风险。\n## 社区活跃度与生命力\n- GitHub Star 与 Fork 数量与更新频率： 截至 2026-08，仓库 Star 约 1.97 万、Fork 约 3.9k，并且 2026 年 3 月至 7 月间持续发布 v0.1.x、v0.2.x、v0.3.x 版本，功能迭代频率较高（新增 MP4 导出、服务器持久化、编辑器直接操作、Edit with AI 升级、文档解析扩展等），社区参与度良好。\n- Issues 与生态周边： 仓库维护 Issues 与 PR 渠道，并有相关包（MAIC-UI、dsh-openmaic 等）与社区集成（OpenClaw 技能、ClawHub 列表），体现项目生态正在扩展。\n## 结语与行动建议（终极评判）\nOpenMAIC 是当前少有的“从真实课堂走出来的开源多智能体教育平台”，在互动丰富度、工程成熟度与二次开发空间上都处于领先位置。适合有一定技术基础的教育者、培训负责人与开发者尝试；若想快速体验，可先使用官方托管演示；若需要内网部署或深度集成，建议从 Docker 入手并选配合适模型与持久化方案。作为长期投入方向，把它作为“教学内容的‘生产线’”与“课堂回放引擎”，会带来显著的效率与体验提升。",
+  "type": "project",
+  "dateAdded": "20260830"
+}

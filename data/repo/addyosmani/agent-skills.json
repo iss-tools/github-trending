@@ -1,0 +1,61 @@
+{
+  "id": "db38f12d-6f6a-459c-a255-c4f349b624a5",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "domain": "github.com",
+  "repo": "addyosmani/agent-skills",
+  "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T06:50:42.348Z",
+  "metaData": {
+    "forks": "9713",
+    "stars": "90806",
+    "topics": [
+      "agent-skills",
+      "antigravity",
+      "claude-code",
+      "codex",
+      "cursor",
+      "skills"
+    ],
+    "license": "MIT license",
+    "homepage": "https://skills.addy.ie",
+    "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+  },
+  "summaryData": {
+    "tags": [
+      "GitHub开源",
+      "AI技能",
+      "TDD",
+      "代码审查",
+      "工作流"
+    ],
+    "cover": "",
+    "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+    "ability": [
+      "全生命周期流程覆盖",
+      "TDD自动化支持",
+      "多维度代码审查",
+      "跨AI工具兼容",
+      "反合理化机制"
+    ],
+    "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率提升"
+    ],
+    "suitable": [
+      "个人开发者",
+      "小型技术团队",
+      "AI编程重度用户",
+      "追求工程规范的开发者",
+      "AI工具集成商"
+    ],
+    "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+  },
+  "contentDetail": "# agent-skills 深度评测：把“资深工程师的流程”写进 AI 的执行脚本\n> **一句话总结：**agent-skills 把资深工程师的规范与质量门禁，做成 24 条可复用的 AI“技能（Markdown 流程）”，通过 8 个斜杠命令（/spec、/plan、/build、/test、/review、/code-simplify、/webperf、/ship）串联从需求到上线的全生命周期，能显著提升 AI 编码阶段的稳定性与可审查性。\n---\n## 一、背景与痛点：为什么我们需要“技能”而不是“提示词”？\n- 痛点一：AI 会“抄近道”。大多数 AI 编码代理会以最短路径给出一个能跑的版本，但少有主动写 PRD/Spec、补齐测试、执行安全与性能审查、准备发布前检查。资深工程师花了很多年培养的习惯（规范、测试、审查、可观测性），AI 默认跳过。\n- 痛点二：一次性“魔法提示词”难以复用与治理。把流程写在系统提示里难以迭代、难以对齐团队，也很难在不同工具间迁移。\n- 痛点三：没有统一的质量门禁，团队质量因人而异。新人、老手、AI 各做各的，缺乏共同的“怎么做才算完”的认知。\nagent-skills 的出发点：把“那些不出现在 diff 里的事”显式化——Spec、测试、审查、发布检查、可观测性等，变成 AI 必须执行的步骤，使其不再是可选项。与此同时，每个技能都包含“常见合理化（Common Rationalizations）”与“红色警示（Red Flags）”，直接预判并反驳 AI 可能用来跳步骤的借口。\n## 二、项目概况与技术/架构解析\n- 作者与团队：Addy Osmani（前 Chrome DevRel、现 Anthropic）牵头，合作者包括 Federico Bartoli 与 Joan León。项目在 GitHub 上开源、MIT 许可证，可商用、可修改、可分发。\n- 内容构成：\n  - 23 个生命周期技能 + 1 个元技能（using-agent-skills），每个技能是目录下的 SKILL.md，遵循统一结构：YAML 前置信息 → 概述 → 适用场景 → 步骤流程 → 示例 → 合理化反驳 → 红色警示 → 验证与退出标准。\n  - 四个评审专家“Persona”（agents/）：code-reviewer、test-engineer、security-auditor、web-performance-auditor，用于 /review、/webperf、/ship 等命令中的多视角审查。\n  - 参考检查清单（references/）：Definition of Done、Testing Patterns、Security Checklist、Performance Checklist、Accessibility Checklist、Observability Checklist、Orchestration Patterns 等。\n  - 工具集成文档：Claude Code（推荐）、Cursor、Antigravity CLI（agy）、Gemini CLI、Windsurf、OpenCode、GitHub Copilot、Kiro、Codex、Command Code 等，覆盖主流 AI 编码工具。\n- 架构设计亮点：\n  - “流程式技能”而非“参考文档”。每个技能都是可执行的步骤序列与验证检查点，方便 AI 直接照做，而不是泛泛而谈。\n  - 元技能路由：using-agent-skills 包含任务类型到技能的映射，让会话启动时自动判断该加载哪个技能，减少手动选择成本。\n  - 斜杠命令与生命周期的映射：8 条命令精准对应 DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP，心智模型统一；另有 /build auto 模式可在审批计划后批量执行任务，但每步仍做 TDD 与单步提交，不牺牲验证。\n  - 反“合理化”设计：每个技能带有一张“常见合理化（Common Rationalizations）”表，罗列 AI 可能的跳步借口（例如“这很简单不需要 spec”“我之后再加测试”），并给出反驳与理由。\n  - 三级评估框架（在 repo 内）：Tier 1 检查结构；Tier 2 检查技能描述与用户触发词的一致性、避免路由冲突；Tier 3 根据技能的预期行为校验 AI 的执行痕迹，用于 CI 中持续监控技能表现。这使其在同类集合中形成质量可控的差异化。\n## 三、上手门槛与部署体验\n- 最快路径（任意代理）：一条 npx 命令即可安装整套技能包到 70+ 工具：\n  ```bash\n  npx skills add addyosmani/agent-skills\n  npx skills add addyosmani/agent-skills --list  # 先浏览再安装\n  ```\n  也可按需单个技能安装：\n  ```bash\n  npx skills add addyosmani/agent-skills --skill code-review-and-quality\n  npx skills add addyosmani/agent-skills --skill test-driven-development\n  ```\n- Claude Code（推荐）：\n  ```bash\n  /plugin marketplace add addyosmani/agent-skills\n  /plugin install agent-skills@addy-agent-skills\n  ```\n  若遇到 SSH 错误，可通过改写 git URL 为 HTTPS 等方式解决。\n- Cursor：将 skills 同步到 .cursor/skills/，策略型短规则放在 .cursor/rules/*.mdc。\n- Antigravity CLI（agy）：\n  ```bash\n  agy plugin install https://github.com/addyosmani/agent-skills.git\n  ```\n- Gemini CLI：\n  ```bash\n  gemini skills install https://github.com/addyosmani/agent-skills.git --path skills\n  ```\n- Codex：\n  ```bash\n  codex plugin marketplace add addyosmani/agent-skills\n  codex plugin add agent-skills@agent-skills\n  ```\n- Command Code：\n  ```bash\n  cmd skills add addyosmani/agent-skills           # 项目级安装\n  cmd skills add addyosmani/agent-skills --global  # 全局安装\n  cmd skills add addyosmani/agent-skills -s spec-driven-development  # 单技能\n  ```\n- 文档与入门：\n  - Getting Started 阐述了“技能如何工作”、“通用快速开始”与“推荐的最小集合”（spec-driven-development、test-driven-development、code-review-and-quality）。\n  - Adoption Guide 分为“绿地项目全生命周期使用”与“棕地项目增量式验证优先”两种路径，降低既有代码库引入成本。\n- 体验小结：\n  - 优点：安装路径覆盖广，文档齐全；通用安装方式（npx skills、复制 Markdown）几乎适用任何接受指令的代理；设计上鼓励“按需加载技能”，避免上下文爆炸。\n  - 坑点：若只安装单个技能，references/ 中的共享检查清单不会跟随，导致部分引用不可用，需手动复制或整库集成；该问题已被记录。Windows 上部分工具的 SessionStart hook 存在 bash/jq 依赖问题，在 Issue 中有反馈。\n## 四、核心亮点与功能剖析（附示例）\n### 1. 全生命周期覆盖与 8 条斜杠命令\n- 6 阶段模型：DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP；斜杠命令逐个对应：/spec、/plan、/build、/test、/review、/ship，外加 /code-simplify、/webperf。\n- /build auto：一键生成计划，审批后自动执行所有任务，但仍要求每个任务 TDD、分别提交，遇到失败或风险步骤暂停；省的是任务间的人工反复确认，而非验证。\n### 2. 技能结构与“反合理化”机制（Demo：spec-driven-development）\n- 技能统一结构（SKILL.md）：YAML 前置信息 → 概述 → When to Use → 过程 → 示例 → 常见合理化反驳 → 红色警示 → 验证与退出标准。\n- 实例片段（spec-driven-development）：\n  - 触发场景：新项目/功能/重要变更、需求模糊、多模块拆分等。当不适用时也明确：单行修正、拼写/纯配置变更等。\n  - 四阶段工作流：Scope Check（多模块能力映射）→ Specify → Plan → Tasks → Implement，每个阶段有人工把关（Human reviews）。\n  - “ Capability Map（能力图）”示例：强调稳定模块 ID、依赖无环、接口在边界处定义，并以表格呈现模块职责与依赖顺序，再递归按模块写 SPEC-*.md。\n  - Spec 模板：Objective、Commands（带具体命令与参数）、Project Structure、Code Style（用代码示例讲清楚）、Testing Strategy、Boundaries（三档：Always/Ask first/Never）、Success Criteria、Open Questions。\n  - 常见合理化反驳：例如“简单不需要 spec”“我之后再写文档/测试”“Spec 会拖慢进度”等，均有简洁有力的反驳。核心是 15 分钟 Spec 可避免数小时返工。\n### 3. TDD 技能与“证明”文化（Demo：test-driven-development）\n- 核心：RED → GREEN → REFACTOR 循环；先写失败测试，再实现，再重构。\n- Prove-It 模式（Bug 修复）：先写一个能复现 bug 的测试 → 确认失败 → 修复 → 确认通过 → 跑全量回归测试。示例：completeTask 漏写 completedAt 的 bug 被测试显性化并守卫。\n- 测试金字塔与尺寸：单元/集成/E2E 比例约 80/15/5；按消耗资源分为 Small/Medium/Large，鼓励以小而快的测试为主。测试应“断言状态而非交互”、DAMP 胜于 DRY、用 Arrange-Act-Assert 模式。\n### 4. 专家 Persona 与 /ship 的多视角评审\n- /ship 会在发布前并行运行四个专家角色：code-reviewer、test-engineer、security-auditor、web-performance-auditor，随后合并成 go/no-go 决策，保证评审的多维度覆盖。\n- agents/ 目录给出各角色的视角与审查重点，例如 code-reviewer 强调“五轴审查”“员工级别标准”，security-auditor 对齐 OWASP Top 10 等。\n### 5. 参考清单与 Definition of Done\n- references/ 提供可复用清单：testing-patterns、security-checklist、performance-checklist、accessibility-checklist、observability-checklist、orchestration-patterns 等，与技能组合形成“证据化”的退出标准。\n### 6. 可移植性与通用性\n- 技能只是 Markdown，任何能接受系统提示/规则文件/会话引用的 AI 工具都可以使用。官方还提供了针对各工具的安装与配置指南，降低迁移与集成的摩擦。\n## 五、目标人群与收益：谁应该用，能得到什么？\n- 个人开发者/自由职业者：\n  - 收益：将资深实践落地到日常编码与 AI 协作中，减少返工与“事后补测试”的痛苦；学习规范的流程（Spec、TDD、评审、可观测性）并形成习惯。\n- 小型团队/初创公司：\n  - 收益：用统一的“技能”快速对齐团队质量规范，减少口头传达与个体差异；/review 与 /ship 帮助在发布前形成一致的质量与安全检查点。\n- 中大型团队：\n  - 收益：可将技能内化为组织流程，结合 CI、代码评审与文档规范，形成可审计的证据链；引用 agents/ 与 references/ 可定制自己的检查清单。\n- AI 工具制作者：\n  - 收益：可直接集成为内置技能包，提升产品在“工程化”层面的可信度；也可借鉴其技能结构、反合理化与评估框架，构建自有能力。\n## 六、竞品/同类对比：它在生态中的位置\n官方文档对比了两个主要同类：Superpowers（obra/superpowers）与 Matt Pocock’s skills。\n- agent-skills：\n  - 覆盖全生命周期（Define → Ship）；带反合理化与红色警示；斜杠命令与阶段 1:1 映射；/ship 并行多 Persona 评审；内置三级评估框架，在 repo 内可运行，可衡量技能路由与执行质量。\n  - 适合：端到端走完一个功能的“完整管道”，强调每个阶段有人工检查与多维度验证。\n- Superpowers：\n  - 强调“自主且重推理”的会话，采用严格的 pipeline（brainstorm → plan → execute → review）与子代理评审；使用 git worktree 隔离工作；有“技能自测（writing-skills）”等实践。\n  - 适合：需要长时间、高自主、可离手运行的探索性或复杂重构任务；偏重“内循环”构建方法论。\n- Matt Pocock’s skills：\n  - 以 Claude Code 为核心的日常工具箱，强调“Grill Me”（逐个提问式需求对齐）、TDD 等高频操作；有 in-progress 与 deprecated 目录，体现真实迭代过程。\n  - 适合：需要一套打磨过的日常命令集合，特别是需求对齐与 TDD 场景；主要面向 Claude Code 用户。\n评测小结：agent-skills 的差异化在于“全生命周期 + 质量门禁 + 评估框架”，适合需要从需求到上线都保持质量与可追溯性的场景；而 Superpowers 更偏重长时间自主推理，Matt 的技能则偏重高频日常操作与 Claude 深度绑定。\n## 七、局限与不足\n- 工具兼容差异：部分工具的斜杠命令尚未完全支持搜索或发现（如 Antigravity CLI 中 8 条命令虽通过 plugin validate，但 TUI 中不可检索），Issue 已有记录。\n- 单技能安装时的“清单不可达”：仅安装单个技能时，不会复制 references/ 共享清单，技能中的引用会不可用；需手动补齐或采用整库集成，这一点在文档中已标注为已知问题。\n- 平台与环境差异：Windows 原生环境下 Codex 的 SessionStart hook 存在 bash/jq 依赖问题，导致 hook 退出码异常；需要额外适配或改用 WSL 等环境。\n- 工具/平台绑定有限度：虽然技能是 Markdown 且“通用”，但 slash commands 与 agents/ 等高阶体验需要工具侧配合；对非主流工具的用户，需要手动集成与维护。\n- 学习与采纳成本：团队需要理解并接纳这套流程，尤其是“先 Spec 再写代码”“TDD”“多Persona评审”等文化；初期可能觉得“重”，但长期收益明显。\n## 八、社区活跃度与生命力（截至 2026-08）\n- Star/Fork：仓库 Star 数约 9 万、Fork 约 9.7k，显示出极高关注度与广泛使用基础。\n- 提交频率：最近一次合并提交为 2026-08-27，表明近期仍在积极合并与更新。\n- Issues 与 Pull Requests：当前 Issues 数约 60，PR 数约 61，包含关于“文档/代码漂移检测”“技能缺口提议（如 database-and-schema-design）”“各工具兼容性问题”等讨论，反映出社区积极参与与持续迭代；许多开放议题集中在 2026 年 7–8 月，说明讨论活跃。\n- 文章与外部报道：Addy 的个人博客、O’Reilly Radar、开发者社区等多篇文章系统阐述了项目理念与用法，外部生态对该项目认可度高。\n## 九、Demo/代码示例：如何在实际开发中用上 agent-skills\n- 场景：为现有项目新增一个“任务完成时间戳”的能力，并确保测试与审查到位。\n- 步骤示例（使用 Claude Code + agent-skills 插件）：\n  1) 启动会话，让 AI 按元技能路由：\n     - 使用 using-agent-skills 判定适用技能。\n  2) 先 Spec（/spec）：\n     - 按 spec-driven-development 模板生成 SPEC.md，明确 Commands、Project Structure、Code Style、Testing Strategy、Boundaries、Success Criteria 等；确认后保存至版本控制。\n  3) 再 Plan（/plan）：\n     - 按 planning-and-task-breakdown 将 SPEC 拆解为 tasks/plan.md 与 tasks/todo.md，每个任务含验收标准与依赖顺序。文档指出 /plan 的默认输出路径便于下游命令读取。\n  4) 构建（/build 或 /build auto）：\n     - 逐任务执行 incremental-implementation + test-driven-development：先写失败测试（RED）、再最小实现（GREEN）、再重构（REFACTOR），每步提交。\n  5) 验证（/test）：\n     - 跑全量测试与必要的集成/端到端测试，确保无回归。\n  6) 评审（/review）：\n     - 使用 code-reviewer persona 执行五轴审查（含变更规模控制在约 100 行、严重性分级、拆分策略等）；必要时调用 /code-simplify 清理复杂度。\n  7) 上线前检查（/ship）：\n     - 并行执行 code-reviewer、test-engineer、security-auditor、web-performance-auditor，合并结论给出 go/no-go；对照 shipping-and-launch 清单做预发布检查与回滚预案。\n## 十、结语与行动建议\n- 终极评判：\n  - 如果你正在用 AI 编码代理（无论 Claude Code、Cursor、Codex、Copilot 等）并希望把“资深工程师的习惯”变成可执行、可审计的脚本，agent-skills 是目前生态中最系统、工程化程度最高的技能包之一。它不是单一工具，而是一套可嵌入任何 AI 编码工作流的“流程操作系统”。\n  - 特别适合希望从需求到上线保持质量门禁、需要团队对齐、或准备在组织内落地 AI 编码规范与证据链的团队。\n- 给不同读者的行动建议：\n  - 完全小白：先用 npx skills add 安装一两个核心技能（如 spec-driven-development、test-driven-development），在一个小项目中跟着流程走一遍，体会“先 Spec/先测试”的习惯。\n  - 个人开发者：采用 Claude Code + 官方插件集成，每次非平凡变更前用 /spec，写代码时坚持 /test，合并前用 /review，发布前用 /ship。\n  - 团队/组织：从 Adoption Guide 选择增量路径（先验证优先），统一引入三个基础技能（spec、TDD、code-review）；随后逐步扩展到安全、性能、可观测性、发布等技能，并将 references/ 清单内化到团队文档与 CI 中。\n  - 工具制作者：参考其技能结构、反合理化设计与评估框架，将能力嵌入产品；或直接作为可插拔的技能包，提升用户在工程化层面的信任度。\n---\n- 本评测引用的官方资料：GitHub README、Getting Started、Comparison 与 Issues/Commits 页面；相关外部报道与示例。关键信息见文中引用标记。",
+  "type": "project",
+  "dateAdded": "20260830"
+}

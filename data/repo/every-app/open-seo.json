@@ -1,0 +1,62 @@
+{
+  "id": "b9c10692-6834-48fe-8790-4ac9b3504b47",
+  "url": "https://github.com/every-app/open-seo",
+  "domain": "github.com",
+  "repo": "every-app/open-seo",
+  "description": "OpenSEO 是一款集成了 AI Agent 的开源 SEO 平台，支持 Docker 和 Cloudflare 自托管。它提供关键词研究、排名监控等核心功能，利用 MCP 协议让 AI 直接操作真实数据，通过按量付费模式大幅降低工具成本。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T06:36:02.310Z",
+  "metaData": {
+    "forks": "1769",
+    "stars": "14748",
+    "topics": [
+      "backlink-analysis",
+      "google-search-console-mcp",
+      "keyword-research",
+      "mcp",
+      "seo",
+      "seo-tools",
+      "site-audit"
+    ],
+    "license": "MIT license",
+    "homepage": "https://openseo.so",
+    "description": "Open source alternative to Semrush and Ahrefs. Contribute to every-app/open-seo development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "自托管",
+      "AI 协同",
+      "GitHub",
+      "降本增效"
+    ],
+    "cover": "",
+    "title": "OpenSEO：可自托管的开源 AI 协同 SEO 工具",
+    "ability": [
+      "关键词研究与分析",
+      "AI 协同与 MCP 集成",
+      "排名监控与竞品洞察",
+      "低成本自托管",
+      "站点审计"
+    ],
+    "summary": "一款可自托管、支持 AI 协同的开源 SEO 工具，旨在以按需付费模式替代昂贵的 Ahrefs/Semrush。",
+    "category": [
+      "开发工具",
+      "SEO 优化",
+      "AI 应用"
+    ],
+    "suitable": [
+      "个人站长",
+      "初创小团队",
+      "内容营销人员",
+      "开发与 AI 生态玩家",
+      "独立开发者"
+    ],
+    "description": "OpenSEO 是一款集成了 AI Agent 的开源 SEO 平台，支持 Docker 和 Cloudflare 自托管。它提供关键词研究、排名监控等核心功能，利用 MCP 协议让 AI 直接操作真实数据，通过按量付费模式大幅降低工具成本。"
+  },
+  "contentDetail": "# OpenSEO（every-app/open-seo）深度评测\n## 一句话总结\nOpenSEO 是一款“给你用的 SEO 工具”——它把自己定位为 Semrush/Ahrefs 的开源替代品，支持自托管，主打按需付费（DataForAPI 作为数据源）、简洁现代 UI 与“你与 AI Agent 协同”的工作流，并且原生提供 MCP 服务器与 Agent Skills，让 Claude Code、OpenClaw、Hermes 等可以直接调用真实 SEO 数据做自动化研究。\n---\n## 背景与痛点：它为什么存在？\n### SEO 工具市场的现实\n主流商业 SEO 套件通常采用“按席订阅”模式，Ahrefs/Semrush 等的单席位起步价动辄每月 100 美元起，功能堆叠、导航臃肿；对个人站长、小团队或创业公司，是一笔不小的固定成本，且容易“买多不用”。\n### 数据源的症结\n真正值钱的不是 UI，而是“数据索引”：关键词、排名、外链、竞品可见度等。多数专业工具自建或采购大索引库。OpenSEO 选择了第三方 DataForSEO API 作为数据底座，把“数据成本”做成透明、按量计费，而非隐藏在订阅里。\n### AI 与 SEO 的协同需求\n大模型在 SEO 里常有“幻觉”：给出一套看起来很专业的策略，但底层数据并不真实。OpenSEO 提出“让 AI 使用真实 SEO 数据”，通过 MCP 协议把数据暴露给 Agent，且 Agent 可以把结果“写回” OpenSEO 的工作区（标签、聚类等），形成“人机共写”的闭环。\n### 诉求归纳\n- 不要无脑订阅：把钱花在真正用到的数据调用上。\n- UI 要清爽：流程导向而非功能罗列。\n- 与 Agent 深度协同：让 AI 替你做第一轮苦力活，你来审阅与决策。\n- 控制与可扩展：自托管、可 Fork、可写自己的 Agent Skills。\n---\n## 核心亮点与功能剖析\n### 一、六大工作流（核心 SEO 能力）\n项目 README 明确列出的主要工作流：关键词研究、排名监控、竞品洞察、外链分析、站点审计、AI 品牌可见度（含 AI 搜索提示词探索）。\n- 关键词研究：提供搜索量、难度（KD）、趋势与意图等维度；支持聚类与标签（Agent 可通过 MCP 写回）。\n- 排名监控：桌面/移动端 SERP 特性检测，按站点或关键词组追踪变化。\n- 竞品洞察：对比可见度变化、关键词重叠、外链差异。\n- 外链分析：引用域名分布、新增/丢失等基础链路数据。\n- 站点审计：基于 Lighthouse 的技术体检，返回可行动问题与优先级。\n- AI 品牌可见度：追踪在 ChatGPT、Google AI Overview 等的露出；并给出“AI 搜索提示词探索”，帮助理解用户向 AI 提什么问题（GEO/搜索场景扩充）。\n### 二、MCP 服务器 + Agent Skills（与 AI 深度协同）\n这是 OpenSEO 最独特的设计：它不仅是 UI，还是一个 MCP 服务器，让具备 MCP 能力的 Agent（Claude Code、OpenClaw、Hermes 等）直接调用 SEO 工具与数据。官方提供“Agent Skills”——可复用的任务工作流模板，如“关键词聚类、竞品关键词挖掘”等。\n- MCP 的价值：相当于把“SEO 工具的能力”变成 AI 的“插件”；AI 不需要“猜测”或自己写爬虫，而是调用经过验证的数据与接口。\n- Agent Skills：用声明式或程序式方式把任务标准化，避免每次都要重写 Prompt；也便于团队共享最佳实践。\n### 三、按需付费 & 自托管（成本与控制权）\n- 自托管路径：文档给出两种自托管方式。本地测试用 Docker；面向公网/多端推荐 Cloudflare（可免费计划跑）。\n- 数据成本：无论哪种方式都需要你提供 DataForSEO API Key，数据调用直接付费给 DataForSEO，官方在文档中说明按量计费、并公开定价信息；无中间差价。官方还推荐 $1 起步即可试用。\n- 避免订阅陷阱：不存在“席位费/阶梯费”，用多少付多少，个人使用或小团队的边际成本大幅下降。\n### 四、现代 UI 与“专注型工作流”\n- 官方主打“Modern, simple UI；Focused workflows instead of a bloated, complex SEO suite.” 实际体验以流程引导为主，减少菜单层级与无关按钮。对 SEO 从业者来说，上手更快、干扰更少。\n### 五、开源与可定制（Fork and vibe code）\n- 仓库采用 MIT 协议（LICENSE 文件存在），可以自由 Fork、修改与商用。\n- 有专门的 AGENTS.md 说明工程原则：保持扁平代码、优先可读性、避免过度抽象、产品数据保持规范化等，利于二次开发与维护。\n---\n## 目标人群与收益\n### 适合谁\n- 个人站长 / 独立开发者：不想付高昂月费，但需要可靠的 SEO 数据和站点体检。\n- 小团队或创业公司：预算有限，需要可自托管、可集成到内部系统的 SEO 平台。\n- 内容/增长黑客与营销人员：重视 AI 协同，希望用 Agent 做第一轮关键词/竞品研究，节省重复劳动。\n- 开发者与 MCP 生态玩家：希望把 SEO 工具接入自己的 Agent 工作流，或自研 MCP 工具时的参考实现。\n### 能带来的具体收益\n- 节省成本：把“工具订阅”变成“数据按量付费”，小规模使用成本远低于传统 SaaS；尤其适合阶段性项目。\n- 提升效率：借助 MCP 与 Skills，让 AI 自动完成“关键词挖掘与聚类、SERP 特性对比、外链差异列表”等重复性工作，你只需审阅与决策。\n- 数据质量可控：基于 DataForSEO（被业界视作数据标杆之一），数据更权威，避免 AI 凭空捏造的 SEO 策略。\n- 合规与隐私：自托管意味着数据留在你的环境，便于满足内部合规/客户数据留存要求。\n- 可扩展性：开源 + MIT 协议，允许按需定制、加多租户、接入内部系统或部署在 Cloudflare 上做轻量级 SaaS。\n---\n## 技术栈与架构解析（GitHub 项目视角）\n### 核心技术栈\n从 package.json 的依赖与配置可以看出：\n- 前端：React 19，Vite 7，Tailwind CSS 4.x，DaisyUI（UI 组件库），TanStack Router / Query / Form / Table（路由与状态管理）。\n- 后端与运行时：Cloudflare Workers + Cloudflare Vite 插件 + wrangler；支持 Cloudflare Access 认证模式。文档显示可以通过 AUTH_MODE 在“本地无认证”和“Cloudflare Access”之间切换。\n- 数据访问：dataforseo-client（DataForSEO SDK）；数据库 ORM 使用 drizzle-orm；驱动为 postgres。bindings 中预留 DATAFORSEO_API_KEY（Base64 的 email:password）。\n- MCP & AI：使用 @modelcontextprotocol/server/client/sdk 等实现 MCP；集成了 better-auth 与 workers-oauth-provider 处理 OAuth/KV 存储；AI SDK 相关包（@ai-sdk/react, ai, @cloudflare/ai-chat 等）。\n- 开发与测试：vitest + playwright + TypeScript；工程化还有 prettier/oxlint/knip 等。\n### 架构设计亮点\n- Workers-first、边缘友好：采用 Cloudflare Workers 作为运行环境，利于全球就近调用，也契合 Cloudflare 推荐的部署路径。\n- MCP 作为一等公民：内置 MCP 服务器，把 SEO 工具当作 MCP 暴露的 Tools；Agent Skills 则是其上的“编排层”。这更像“可编程工具”而非只有 Web UI。\n- 统一的数据模型与关系：AGENTS.md 强调“产品数据保持规范化、关系明确；避免在 JSON/文本里编码关系”，利于分析查询与长期维护。\n- UI 与业务分离：前端采用 TanStack 全家桶与 DaisyUI，组件化清晰；后端以 Workers + Drizzle 为核心，API 风格统一，便于后续扩展或拆分服务。\n### 代码组织结构（概览）\n仓库包含：\n- .agents、.claude-plugin、.claude/skills 等：为 MCP 与 Agent 提供的集成与技能定义。\n- docs/：Docker 自托管、Cloudflare 自托管、DataForSEO API Key 配置等说明文档。\n- AGENTS.md：工程规范与数据建模原则，便于社区贡献者理解设计思路。\n- compose.yaml 与 Dockerfile.selfhost：支持 Docker 本地运行与镜像构建。\n---\n## 上手门槛与部署体验\n### 自托管路径选择\n- Docker（个人本地测试）：推荐使用官方 GHCR 镜像 ghcr.io/every-app/open-seo:latest。关键步骤：\n  - 复制环境变量模板：cp .env.example .env\n  - 启动：docker compose up -d\n  - 设置 DATAFORSEO_API_KEY（Base64 的 email:password）后，访问 http://localhost:3001（默认 PORT=3001）。\n- Cloudflare（公网/团队使用）：官方文档推荐 Cloudflare 路由部署（支持免费计划）。需要配置 Cloudflare Access 团队域名与 AUD，并设置 AUTH_MODE=cloudflare_access。详见 docs/SELF_HOSTING_CLOUDFLARE.md。\n### 关键配置说明（.env 示例）\n以下是最关键的配置项示例（实际以仓库 .env.example 为准）：\n- DATAFORSEO_API_KEY=base64(email:password)\n- AUTH_MODE=local_noauth（Docker 模式默认；生产应改用 cloudflare_access 并置于反向代理/隧道后）。\n- ALLOWED_HOST=yourdomain.com（反向代理场景设置）。\n- PORT（默认 3001）、OPEN_SEO_IMAGE（可指定版本号或本地构建标签）。\n### 常见命令摘录\n- 验证环境变量：docker compose config\n- 更新镜像并重启：docker compose pull && docker compose up -d\n- 本地构建镜像：docker build -f Dockerfile.selfhost -t open-seo:local .；再设置 OPEN_SEO_IMAGE=open-seo:local docker compose up -d。\n### 部署体验评价\n- 优点：提供现成镜像与 compose.yaml；支持 Cloudflare 免费计划一键部署，对个人和小团队非常友好；文档清晰说明了环境变量的含义和注意事项。\n- 注意点：Docker 模式默认 AUTH_MODE=local_noauth，仅适合内网或受控环境；对外暴露需自行添加反向代理认证（如 Cloudflare Access、Nginx Basic Auth 或 SSH 隧道）。\n---\n## Demo / 代码示例\n### 1）Docker 自托管快速启动\n```bash\n# 克隆仓库\ngit clone https://github.com/every-app/open-seo.git\ncd open-seo\n# 复制并编辑环境变量\ncp .env.example .env\n# 在 .env 中设置：\n# DATAFORSEO_API_KEY=$(echo -n 'your_email:your_password' | base64)\n# （可选）PORT=3001 ALLOWED_HOST=yourdomain.com\n# 启动\ndocker compose up -d\n# 打开浏览器\nopen http://localhost:3001\n```\n### 2）MCP 与 Agent Skills 调用概念示例（关键词研究）\n通过 MCP，Agent 可以调用 OpenSEO 的工具。官方文档演示了类似如下调用（示意）：\n- 调用 openseo.keyword_research(seed: \"open source seo\")，返回包含 keyword/volume/kd 的列表，并保存到工作区。\n- Agent 再进行聚类与打标签，给出可查看链接：app.openseo.so/keywords（托管版地址）。\n在自托管场景，你只需要在 MCP 客户端配置指向你的 OpenSEO 实例，Skills 路径指向 .claude/skills 即可；具体 MCP 配置见官方文档的“Set up OpenSEO MCP”与“Set up OpenSEO Agent Skills”。\n---\n## 社区活跃度与生命力\n### 观察到的信号\n- 仓库热度：主页显示约 14.7k Stars、1.8k Forks，说明受到广泛关注；同时有 46 个 Issues 和 71 个 Pull Requests，表明社区有参与度。\n- 提交节奏：代码库显示 483 次提交，仍在持续迭代。\n- 文档维护：自托管文档（Docker/Cloudflare）、Agent Skills 说明、AGENTS.md 工程规范等均有维护与更新，表明项目在保持“可用性”与“可扩展性”。\n### 生态与周边\n- 官方站点 openseo.so 提供 Hosted 版本（可免费试用，支持订阅）与完整的文档、MCP 设置说明等，便于先试用再自托管。\n- MCP 生态：项目已在 MCP Registry 的语境中被提及（通过文档链接），说明其与 Claude Code、OpenClaw 等的集成路径是官方支持路线。\n---\n## 竞品/同类对比\n### 同领域的开源 SEO 工具\n- SerpBear：聚焦于自托管排名监控，避免“按席位”订阅，但在关键词研究、外链等维度覆盖较窄。\n- SEO Panel：提供较全的传统 SEO 工具集，但 UI 与架构偏传统，与 MCP/Agent 的整合能力弱。\n- Matomo/Plausible：偏分析与合规，非“专业 SEO 套件”。\n### 与 SaaS 主流对比（Semrush/Ahrefs）\n- 数据源：SaaS 通常自建索引；OpenSEO 依赖 DataForSEO 作为数据底座，质量与覆盖受第三方影响，但成本更透明。\n- 费用结构：SaaS 订阅制按席/按套餐；OpenSEO 自托管 + 按量付费，小规模下更便宜。\n- 协同与 AI：SaaS 正在加入 AI，但“Agent 可调用”的 MCP 通道是 OpenSEO 的显著差异点。\n- 本地化与合规：OpenSEO 自托管带来数据主权优势；SaaS 数据托管在服务商侧。\n---\n## 局限与不足\n### 学习与运维成本\n- 需要处理 DataForSEO 注册与 API Key；需理解 .env 与 Docker/KV/Workers 等基础运维知识，对完全小白有一定门槛。\n- 公网部署需要自行配置反向代理、HTTPS、认证（Cloudflare Access 或其他），否则存在安全风险。\n### 数据依赖\n- 所有 SEO 数据依赖 DataForSEO：若其服务出现波动、价格调整或地域限制，会直接影响 OpenSEO 的可用性与成本。\n- 某些长尾/新兴引擎或本地化特性，可能不及自建索引的 SaaS 灵活。\n### 功能成熟度\n- 产品处于快速演进中，部分高级分析功能、可视化或报表可能不如成熟 SaaS 丰富。\n- MCP 与 Agent Skills 的最佳实践仍在形成，初次接入需要阅读文档与少量配置。\n### 安全与认证\n- Docker 模式默认 local_noauth，如误放到公网且未加认证，会带来严重安全隐患；官方已明确提示仅用于内网或受控环境，需重视。\n---\n## 结语与行动建议\n### 终极评判\n- 如果你追求“自托管、按量付费、与 Agent 深度协同”的 SEO 工作流，并且愿意做一点基础运维，OpenSEO 是目前最具实战价值的开源选择之一。\n- 若你的团队已经重度投入 Semrush/Ahrefs 的全套功能且预算充足，迁移需评估数据与习惯成本；但即便如此，把它作为“Agent 可调用的 SEO 数据网关”仍然有价值。\n### 行动建议（按角色）\n- 个人/小团队：先在 openseo.so 试用托管版，确认工作流适合自己后再用 Docker 自托管；控制 DataForSEO 用量，把预算花在关键词研究/排名监控等关键环节。\n- 开发者：Fork 仓库，自定义 Agent Skills 或接入自己的 MCP 客户端；参考 AGENTS.md 的工程原则保持代码整洁与数据模型规范。\n- 营销/内容团队：配置 Claude Code 的 MCP，让 AI 先做一轮“关键词聚类+竞品对比”，再在 OpenSEO UI 中审阅与落地；把节省下来的时间花在内容质量与策略调整上。\n---\n**一句话收尾**：OpenSEO 不是要“做另一个 Ahrefs”，而是要“把 SEO 工具变成你与 AI 可共用的基础设施”。在 2026 年的 AI 驱动增长语境下，这个方向值得认真关注和尝试。",
+  "type": "project",
+  "dateAdded": "20260830"
+}

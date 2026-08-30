@@ -2,7 +2,7 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 84
+      "count": 85
     },
     {
       "tag": "自动化",
@@ -10,11 +10,11 @@
     },
     {
       "tag": "开源项目",
-      "count": 47
+      "count": 48
     },
     {
       "tag": "GitHub",
-      "count": 45
+      "count": 46
     },
     {
       "tag": "Claude",
@@ -26,11 +26,15 @@
     },
     {
       "tag": "隐私保护",
-      "count": 18
+      "count": 19
     },
     {
       "tag": "本地部署",
-      "count": 17
+      "count": 18
+    },
+    {
+      "tag": "工作流",
+      "count": 16
     },
     {
       "tag": "Anthropic",
@@ -41,16 +45,20 @@
       "count": 15
     },
     {
-      "tag": "工作流",
-      "count": 15
-    },
-    {
       "tag": "DevOps",
       "count": 15
     },
     {
       "tag": "大模型",
+      "count": 13
+    },
+    {
+      "tag": "自托管",
       "count": 12
+    },
+    {
+      "tag": "LLM",
+      "count": 11
     },
     {
       "tag": "知识管理",
@@ -65,46 +73,38 @@
       "count": 11
     },
     {
-      "tag": "LLM",
-      "count": 10
-    },
-    {
       "tag": "GPT-Image2",
       "count": 10
     },
     {
       "tag": "提示词工程",
       "count": 10
-    },
-    {
-      "tag": "生产力工具",
-      "count": 10
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 194
+      "count": 202
     },
     {
       "name": "AI 编程",
-      "count": 159
+      "count": 161
     },
     {
       "name": "效率工具",
-      "count": 59
+      "count": 60
     },
     {
       "name": "开源项目",
-      "count": 26
+      "count": 27
+    },
+    {
+      "name": "开发者工具",
+      "count": 20
     },
     {
       "name": "生活效率",
       "count": 20
-    },
-    {
-      "name": "开发者工具",
-      "count": 19
     },
     {
       "name": "开源社区",
@@ -123,12 +123,12 @@
       "count": 10
     },
     {
-      "name": "资源合集",
-      "count": 9
+      "name": "操作系统",
+      "count": 10
     },
     {
-      "name": "操作系统",
-      "count": 8
+      "name": "资源合集",
+      "count": 9
     },
     {
       "name": "人工智能",
@@ -159,7 +159,7 @@
       "count": 6
     },
     {
-      "name": "团队协作",
+      "name": "安全工具",
       "count": 6
     }
   ],
@@ -189,20 +189,20 @@
       "count": 13
     },
     {
+      "name": "内容创作者",
+      "count": 13
+    },
+    {
+      "name": "个人开发者",
+      "count": 13
+    },
+    {
       "name": "DevOps 工程师",
       "count": 12
     },
     {
-      "name": "内容创作者",
-      "count": 12
-    },
-    {
-      "name": "个人开发者",
-      "count": 12
-    },
-    {
       "name": "安全研究员",
-      "count": 11
+      "count": 12
     },
     {
       "name": "开发者与产品经理",
@@ -247,16 +247,16 @@
   ],
   "topTopics": [
     {
-      "name": "ai-agents",
-      "count": 46
+      "name": "claude-code",
+      "count": 47
     },
     {
-      "name": "claude-code",
-      "count": 45
+      "name": "ai-agents",
+      "count": 47
     },
     {
       "name": "llm",
-      "count": 44
+      "count": 46
     },
     {
       "name": "ai",
@@ -264,7 +264,7 @@
     },
     {
       "name": "agent-skills",
-      "count": 37
+      "count": 38
     },
     {
       "name": "claude",
@@ -272,11 +272,11 @@
     },
     {
       "name": "skills",
-      "count": 30
+      "count": 31
     },
     {
       "name": "mcp",
-      "count": 28
+      "count": 29
     },
     {
       "name": "agents",
@@ -295,11 +295,11 @@
       "count": 23
     },
     {
-      "name": "typescript",
-      "count": 19
+      "name": "codex",
+      "count": 21
     },
     {
-      "name": "codex",
+      "name": "typescript",
       "count": 19
     },
     {
@@ -307,23 +307,23 @@
       "count": 17
     },
     {
-      "name": "prompt-engineering",
-      "count": 16
-    },
-    {
       "name": "claude-skills",
       "count": 16
     },
     {
+      "name": "prompt-engineering",
+      "count": 16
+    },
+    {
       "name": "workflow-automation",
+      "count": 16
+    },
+    {
+      "name": "ai-agent",
       "count": 15
     },
     {
       "name": "agent",
-      "count": 15
-    },
-    {
-      "name": "ai-agent",
       "count": 15
     }
   ],
@@ -397,7 +397,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 472879,
+      "stars": 472923,
       "appearances": 0
     },
     {
@@ -451,7 +451,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119874,
+      "stars": 119897,
       "appearances": 4
     }
   ],
@@ -459,13 +459,13 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 25205,
+      "stars": 25253,
       "appearances": 8
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 35475,
+      "stars": 35507,
       "appearances": 6
     },
     {
@@ -483,37 +483,37 @@
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 51012,
+      "stars": 51054,
       "appearances": 6
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2762,
+      "stars": 2771,
       "appearances": 5
     },
     {
       "repo": "VoltAgent/awesome-agent-skills",
       "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "stars": 33294,
+      "stars": 33311,
       "appearances": 5
     },
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38881,
+      "stars": 38891,
       "appearances": 5
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "stars": 38070,
+      "stars": 38142,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 51544,
+      "stars": 51601,
       "appearances": 5
     }
   ]

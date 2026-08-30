@@ -1,0 +1,61 @@
+{
+  "id": "041320d1-fffd-4fdd-b1db-465c2241a1ea",
+  "url": "https://github.com/workweave/router",
+  "domain": "github.com",
+  "repo": "workweave/router",
+  "description": "这是一个本地 AI 路由器，自动把简单请求分发给便宜的模型，复杂请求分发给高级模型，帮你大幅降低 AI 账单，同时支持 OpenAI、Claude 等多种协议。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T07:07:20.824Z",
+  "metaData": {
+    "forks": "82",
+    "stars": "2898",
+    "topics": [
+      "agentic-coding",
+      "ai-gateway",
+      "anthropic",
+      "claude-code",
+      "codex",
+      "model-router",
+      "openai-compatible"
+    ],
+    "license": "License",
+    "homepage": "https://weaveos.com/products/router",
+    "description": "Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change. - workweave/router"
+  },
+  "summaryData": {
+    "tags": [
+      "智能路由",
+      "降本增效",
+      "大模型",
+      "自托管",
+      "开源项目"
+    ],
+    "cover": "",
+    "title": "Weave Router：智能多模型路由代理",
+    "ability": [
+      "智能模型路由",
+      "多协议统一代理",
+      "成本与质量优化",
+      "自托管与密钥管理",
+      "全链路可观测性"
+    ],
+    "summary": "智能分发 AI 请求至最优模型，省下 40%-70% 成本且不降质。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率工具"
+    ],
+    "suitable": [
+      "AI 编程工具用户",
+      "关注成本的开发团队",
+      "多模型架构工程师",
+      "企业级用户"
+    ],
+    "description": "这是一个本地 AI 路由器，自动把简单请求分发给便宜的模型，复杂请求分发给高级模型，帮你大幅降低 AI 账单，同时支持 OpenAI、Claude 等多种协议。"
+  },
+  "contentDetail": "<|assistant|>尝试打开仓库的 Code 页面，以获取目录结构、文件列表、Go 模块信息和最近提交记录，支持技术栈与架构解析。</think>\n# Weave Router（workweave/router）深度评测\n## 一句话总结\nWeave Router 是一个为“智能体（Agentic）工作流”专门打造的多模型智能路由代理：只改一个 Base URL，就能把你的每一次请求自动分发给“刚好够用”的模型；官方宣称在生产级流量中可实现 40%–70% 的成本下降，同时保持与单一前沿模型相近的质量，并对长对话中的缓存机制做了精细适配，是“成本敏感又不想牺牲质量”的团队的一个高性价比、低侵入的解决方案。\n---\n## 背景与痛点：为什么会需要一个“路由器”？\n在 Agentic / AI 编程助手场景里，大量请求并不复杂——比如简单的补全、短问答、格式化、轻量 lint——但绝大多数团队选择一个“默认前沿模型”打天下：全量上 GPT‑4/Claude‑Opus/Gemini‑Pro 这一类。这直接导致：\n- **成本被“均摊”放大：** 简单请求和复杂请求被同等计费，性价比极低。\n- **预算恐慌：** 想把 AI 做到“每击键都用”，但一想到账单就打退堂鼓，功能被保守使用。\n- **运维复杂：** 多供应商意味着多账号、多发票、多限流、多密钥轮换，财务与工程都不轻松。\n- **Naive 路由破坏缓存：** 盲目按“每轮（per‑turn）”挑模型，会使各上游的 Prompt Cache（缓存）频繁冷掉，反而抬高成本并拖慢首字延迟（ttft）。\nWeave 的观察很直白：这不是模型问题，而是路由问题。只要在每个“动作（action）”粒度上做一次决策，把“能被小模型等价处理”的请求分发出去，就能在不牺牲质量的前提下，把大模型变成“少数关键请求的特种部队”，从而大幅拉低平均成本。\n---\n## 核心亮点与功能剖析\n### 1. 一端点、多协议的“直替代理”\nWeave Router 以一个本地端口（默认 :8080）充当 Anthropic Messages、OpenAI Chat Completions、Gemini generateContent 的统一代理。你只需要把客户端的 Base URL 改到 localhost:8080，把 API Key 换成 Router 自签的 rk_... 即可，其余协议细节（流式、工具调用、视觉、缓存控制标记等）由 Router 负责透传或跨格式转译。\n这意味着：\n- Claude Code / Codex / opencode / Cursor 等 AI 工具几乎零改接入；\n- 现有代码不需要重写 SDK 调用，改一处全局配置即可。\n### 2. 按“动作（action）”而非“轮（turn）”智能路由\n这一点对 Agentic 场景至关重要。README 明确定义：Router 以“action”作为决策粒度，而非每次对话“turn”。一次“action”可能包含多轮对话（例如工具调用循环），同一 action 内保持模型选择不变，从而充分利用 Prompt Cache 的缓存命中（约一个数量级成本优势）。\n这就像：\n- 你“租一辆车”（一个 action）去一趟多站点行程（多轮对话），中途不换车；\n- 而不是每个站点都重新“叫车”（per‑turn），每次都重新付起步价并重走路线，反而费钱又费时。\n因此，Router 在保证质量前提下，不会因频繁切换模型而破坏缓存，避免了“越路由越贵”的反模式。\n### 3. 多目标打分：质量、成本、延迟、输出冗长度\n博客披露：Router 内部不是“只选质量最高”的那条路，而是“成本/延迟/冗长度”的复合最优，前提是“质量与头部候选相当”。这带来几个直接收益：\n- 成本：优先选择在“该意图簇”上与前沿模型表现持平但更便宜的模型；\n- 延迟：在质量相近的候选中，考虑首字延迟（ttft）提升交互体感；\n- 冗长度：避免“啰嗦模型”带来的额外计费和 UX 噪音，尤其在 Agent 循环中。\n### 4. 路由决策的“可见性”与可观测性\n- 决策只读端点 `/v1/route`：在不真正调用上游的前提下返回“本次会分发给哪个模型、理由是什么”，非常适合影子流量、评估管道和仪表盘查看；\n- 内置 OTLP 追踪与 Dashboard（/ui/dashboard），支持将遥测接入 Weave 自家面板或第三方（Honeycomb/Datadog/Grafana 等）。\n### 5. BYOK（自带密钥）加密托管与受管服务两种形态\n- 自托管：你的上游密钥（如 Anthropic、OpenAI、OpenRouter）存在本机 `.env.local`，静态加密存储，Router 不会把密钥外传；\n- 受管服务：由 Weave 代管所有上游账号与限流，给你统一一张账单，适合不想分散管理多供应商的团队。\n---\n## 技术栈与架构解析（开源项目视角）\n### 语言与运行时\n- 核心服务用 Go 编写（单二进制部署），非常适合高并发、低延迟的网络代理场景。\n### 路由策略来源\n- README 提及其集群打分器源自 Avengers‑Pro 研究线（该论文提出“Performance–Efficiency Optimized Routing”），在 6 个基准与 8 个模型上验证了在给定成本下达到更优表现，或以更低成本达到相当质量；Router 的策略是从该研究线演化而来，并在生产流量上持续再训练与版本化发布。\n### 架构关键设计（来自官方博客与文档）\n- 请求信封（envelope）是“懒反序列化”的：同协议透传时完全不进行 JSON 往返，降低开销；\n- 内置一个小体积 ONNX 嵌入模型，在进程内对 prompt 进行嵌入；\n- 将嵌入与“冻结的意图簇中心”打分，用 top‑p 缩小候选，然后在簇内选“成本/延迟/冗长度”综合最优的模型；\n- 可选“HMM 策略边车”（sidecars/hmm）作为更高级的策略模块，默认使用进程内打分器；HMM 属于 opt‑in，需额外 Google API Key，不改变默认策略。\n### 代码组织与文档（基于仓库视图与 README 链接）\n- `cmd/`：入口与服务启动；\n- `docs/`：包含配置参考（CONFIGURATION）、术语语义（SEMANTICS）、策略侧车说明（POLICY_ROUTER_HARNESS）、架构与合约（AGENTS）以及贡献指南（CONTRIBUTING）；\n- `install/`：提供 NPM 安装器与各客户端（Claude Code / Codex / opencode）的集成脚本，支持 `--local` 自托管模式与 `--scope project` 等作用域控制；\n- 提供 Makefile 目标如 `make full-setup` 一键启动 Postgres + Router，与 `make install-cc` 等快捷脚本；\n---\n## Demo / 配置与调用示例\n### 1) 本地自托管最简命令\n```bash\n# 1. 写入上游密钥（建议以 OpenRouter 为基线）\necho \"OPENROUTER_API_KEY=sk-or-v1-...\" >> .env.local\n# 2. 启动 Postgres + Router（:8080）并初始化 rk_... Router Key\nmake full-setup\n```\n完成后：`http://localhost:8080` 提供路由代理，`http://localhost:8080/ui/` 提供仪表盘（默认密码 admin），控制台会打印出 Router Key（以 rk_ 开头）。\n### 2) 以 Anthropic 协议调用（curl 示例）\n```bash\ncurl -sS http://localhost:8080/v1/messages \\\n  -H \"Authorization: Bearer rk_...\" \\\n  -d '{\n        \"model\":\"claude-sonnet-4-5\",\n        \"max_tokens\":256,\n        \"messages\":[{\"role\":\"user\",\"content\":\"hi\"}]\n      }'\n```\nRouter 会以 Anthropic Messages 协议接收请求，并根据路由策略决定真正转发给哪个上游/模型。\n### 3) 以 OpenAI 协议调用（curl 示例）\n```bash\ncurl -sS http://localhost:8080/v1/chat/completions \\\n  -H \"Authorization: Bearer rk_...\" \\\n  -d '{\n        \"model\":\"gpt-4o-mini\",\n        \"messages\":[{\"role\":\"user\",\"content\":\"hi\"}]\n      }'\n```\n这说明同一端点可兼容多客户端协议，适合从 OpenAI 迁移到异构供应商生态。\n### 4) 只看“路由决策”，不真正调用上游（eval/影子模式友好）\n```bash\ncurl -sS http://localhost:8080/v1/route \\\n  -H \"Authorization: Bearer rk_...\" \\\n  -d '{\"model\":\"...\",\"messages\":[...]}'\n```\n返回中将包含选中的模型、供应商及决策理由，便于构建 A/B 测试、成本模拟或决策审计。\n### 5) 一键接入 Claude Code / Codex / opencode（NPM 安装器）\n```bash\nnpx @workweave/router --claude          # 针对 Claude Code 自动配置\nnpx @workweave/router --codex           # 针对 OpenAI Codex CLI\nnpx @workweave/router --opencode        # 针对 opencode\nnpx @workweave/router --scope project   # 项目级配置（写 repo 里的配置文件）\nnpx @workweave/router --local           # 指向本地自托管 :8080\n```\n安装器会引导你选择工具与作用域，并自动修改对应配置文件中的 provider/weave 块；支持 `on/off/status` 切换，不需要删除配置即可恢复直连上游。\n---\n## 目标人群与收益：谁适合用、能得到什么？\n### 1) 使用 Claude Code / Codex / opencode / Cursor 等编程工具的个人与团队\n- 收益：在不改变工具使用习惯的前提下，自动将大部分简单补全和轻量操作路由到成本更低的模型（例如经由 OpenRouter 访问 DeepSeek/Kimi/GLM/Qwen/Llama/Mistral 等），仅在真正需要复杂推理时才调用前沿模型；官方给出的生产级成本降幅为 80%–85%，README 中保守描述为 40%–70%。\n### 2) 已有多供应商或多模型基础设施的工程团队\n- 收益：\n  - 将不同协议、不同供应商收束到同一个端点，减少客户端代码复杂度；\n  - 通过决策端点 `/v1/route` 与 OTLP 追踪，构建统一的“成本–质量–延迟”观测面板；\n  - 可自定义策略（通过 policy router harness），接入自家微调或私有集群。\n### 3) 需要数据驻留/离线环境的企业\n- 收益：同一二进制可在 VPC 或完全隔离环境下部署，密钥 BYOK 不出域，且具备适配生产级可观测性的能力（Helm/K8s 部署视具体实现而定）。\n### 4) 算成本账的团队 / 创业公司\n- 收益：\n  - 以低成本支撑更“高频”的 AI 特性（例如每击键触发补全、每页面做一次检索重算），而不再因单价而束手束脚；\n  - 受管模式下，仅 Weave 一张账单，省去多供应商分散对账的人力成本。\n---\n## 竞品/同类对比：它处在什么位置？\n### 常见方案类别\n- 单一前端网关（统一鉴权、限流、计费）：通常不具备多目标模型路由，只是“通道”；\n- 基于长度或规则的简易路由：把长/短、某些关键词的请求分开，容易误判且难以维护；\n- 通用 LLM 路由研究/项目：往往偏学术或专注于“质量最大化”，较少同时考虑“成本/延迟/冗长度/缓存行为”的复合目标；\n### Weave Router 的独特竞争力\n- 专为 Agentic 工作流设计：明确区分 action 与 turn，并在会话内“粘性”保持模型选择，保护 Prompt Cache 的经济性与性能；\n- 多目标打分：质量不降的前提下追求成本与延迟最优，且考虑输出冗长度；\n- 多协议一等对待并支持“跨格式翻译”时保留高级特性（如 cache_control、工具调用、thoughtSignature 等）；\n- 提供自托管与受管两种形态，满足数据驻留与运维便利的两种不同需求；\n- 与 Claude Code / Codex / opencode / Cursor 等主流开发工具有开箱即用的集成路径。\n---\n## 局限与不足（客观视角）\n### 1) 决策黑箱与可解释性权衡\n- 虽有 `/v1/route` 和 Dashboard 可查看单次决策理由，但打分模型与聚类中心来自“冻结的版本化产物”，自托管用户目前难以自行重训练或微调这些聚类；对于追求完全透明可控、要用自己的生产流水线闭环训练策略的团队，灵活性尚有提升空间。\n### 2) 自托管需要运营数据库（Postgres）\n- README 提到 `make full-setup` 会启动 Postgres + Router，这意味着你需要维护数据库（备份/迁移/升级等）。小团队若不愿引入额外运维负担，可能更倾向受管形态。\n### 3) 策略侧车（HMM）属于“进阶选项”，目前需要 Google API Key\n- 对于习惯全本地、避免依赖外部大厂 API 的部署，这可能引入额外的合规或依赖考量；默认策略不依赖 HMM，但如需更复杂策略则需评估此依赖。\n### 4) 多协议统一虽然好用，但特有行为可能有细微差异\n- 虽然官方强调保留 cache_control、工具调用等特性，跨格式转换的边界情形仍需要使用者关注（例如某些极新的特性可能需要适配期）。对于极端依赖某家独有特性的场景，建议先做小流量验证或影子测试。\n### 5) 社区与生态还处于较早期阶段\n- 仓库 Star 数约 2.9k、Fork 82、Issues 30、PR 82，作为新兴项目热度不低，但与一些成熟网关/代理项目相比，社区插件与第三方集成还在积累中；生产落地前建议结合自身 SLA 与灾备方案做好评估。\n---\n## 上手门槛与部署体验\n### 从 NPM 一键开始（零 Docker、零 Postgres）\n```bash\nnpx @workweave/router --claude --local\n```\n如果你有 Node ≥ 18（Claude Code / opencode 路径还需要 jq），几分钟即可完成对本地 Router 的注册与客户端配置，非常适合个人开发者或快速验证。`--scope project` 还能把配置写进项目里，便于团队协作。 \n### 自托管完整栈（Make + Postgres）\n- 优势：密钥完全自持，可集成到自有基础设施；\n- 缺点：需要维护 Postgres 及配置管理；`make full-setup` 提供了一键式启动，但生产环境仍建议配套容器编排与备份策略。\n### 文档与开发者体验（DX）\n- README 提供清晰的 30 秒快速开始与命令行参数说明；\n- `docs/` 下配置参考、语义术语、策略 harness 与架构文档齐全，有利于深度集成与二次开发；\n- 环境变量、BYOK 加密与 OTel 可观测性等都有明确文档指引（见 CONFIGURATION.md）。\n---\n## 安全与合规（BYOK 与开源协议）\n- 自托管模式下，上游密钥（sk-... / sk-ant-... / sk-or-...）存储在 `.env.local` 且静态加密；Router 不会将密钥外发；\n- Router Key（rk_...）用于客户端鉴权，应避免与上游密钥混淆；\n- 项目为 MIT 开源协议，可自由商用与修改；\n---\n## 结语与行动建议（通用：终极评判）\n### 终极评判\nWeave Router 把“路由当作基础设施”这件事做到了“少改动、可见性高、适配 Agentic 场景”的程度：它不只是帮你省一笔账，更是在让你的 AI 产品/工具敢于“更频繁地调用”而无需为每次点击焦虑成本。对于使用 Claude Code / Codex / opencode / Cursor 等工具的开发者与团队，以及已有多供应商模型的工程团队，Weave Router 是一个值得认真评估的“高 ROI 基础设施层”。\n### 行动建议（按角色）\n- 个人开发者 / 小团队：先用 NPM 安装器指向托管 Router 或本地 Router，跑一周影子或小流量对比成本与质量；从简单的“代码补全/短问答”切入，验证节省是否符合预期。\n- 中型工程团队：把 Router 作为“模型层”统一入口，统一可观测性；结合 `/v1/route` 构建自动化评估管道，逐步扩大覆盖。\n- 企业/数据敏感场景：采用自托管 + BYOK，将 Router 放入 VPC，配套 Postgres 高可用与备份；先在非生产环境跑通集成，再按渐进式灰度上线。\n> “把路由做到极致，比换更强的模型更划算。”——这正是 Weave Router 传递的核心实践。",
+  "type": "project",
+  "dateAdded": "20260830"
+}
