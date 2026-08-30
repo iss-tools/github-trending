@@ -1,0 +1,58 @@
+{
+  "id": "15c8f610-3559-48a8-8917-8e4094f22839",
+  "url": "https://github.com/colinhacks/zod",
+  "domain": "github.com",
+  "repo": "colinhacks/zod",
+  "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-08-30T12:44:07.910Z",
+  "metaData": {
+    "forks": "2154",
+    "stars": "43587",
+    "topics": [
+      "runtime-validation",
+      "schema-validation",
+      "static-types",
+      "type-inference",
+      "typescript"
+    ],
+    "license": "MIT license",
+    "homepage": "https://zod.dev",
+    "description": "TypeScript-first schema validation with static type inference - colinhacks/zod"
+  },
+  "summaryData": {
+    "tags": [
+      "TypeScript",
+      "数据校验",
+      "Schema",
+      "前端开发",
+      "tRPC"
+    ],
+    "cover": "",
+    "title": "Zod：TypeScript 生态首选数据校验库深度评测",
+    "ability": [
+      "TypeScript-first 类型推导",
+      "零依赖小体积(约2KB)",
+      "丰富API与组合能力",
+      "完善的生态集成",
+      "JSON Schema 输出"
+    ],
+    "summary": "写一份 Schema，同时获得运行时校验与 TypeScript 类型定义，解决前后端数据一致性问题。",
+    "category": [
+      "开发工具",
+      "Web 开发"
+    ],
+    "suitable": [
+      "TypeScript 开发者",
+      "前端/全栈工程师",
+      "Node.js 后端开发者",
+      "库/框架作者"
+    ],
+    "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。"
+  },
+  "contentDetail": "# 一句话总结\n**Zod 是一套“写一份 Schema，既获运行时校验，又自动推得 TypeScript 类型”的开源库；它体积极小（核心约 2KB gzip）、零依赖、对 TypeScript 深度友好，已成为 TS 生态里最主流的数据校验方案之一。**\n---\n## 背景与痛点\n- **TypeScript 的“盲区”：** TS 做的是编译时类型检查，但对外部数据（API 响应、表单提交、环境变量、用户输入等）一无所知——到了运行时，类型被抹除，数据依然可能“面目全非”。这让很多团队只能手动写校验逻辑：大量 if-else、嵌套判断，难以维护且容易遗漏边界条件。\n- **传统校验库的“断层”：** 像 Joi、Yup 等方案：\n  - 要么 API 优雅但缺少与 TS 类型系统深度联动（需手动维护两份定义）；\n  - 要么体积较大、依赖繁杂；\n  - 要么生态割裂，与框架的集成需额外编写胶水代码。\n- **作者经历催生设计理念：** Zod 的作者 Colin McDonnell 在做一个电子病历（EHR）产品时，要面对 200+ 张高度关联的表，数据结构的复杂度让他对“Schema/校验/状态管理”的痛点体会极深。他由此先后打造了 Zod（校验）、tRPC（端到端类型安全）、Standard Schema 等工具，试图用“类型即 Schema”的思维统一前后端的数据契约。\nZod 正是为了填补“运行时校验 + 编译时类型”的鸿沟而生的。\n---\n## 核心亮点与功能剖析\n### 1. TypeScript-first：一套 Schema，两份收益\n- 写一份 Zod Schema，自动推得 TS 类型，消除“两份定义”带来的不一致与维护负担。\n- 官方要求开启 strict 模式，最大限度发挥 TS 的静态检查能力。\n### 2. 核心能力集\n- 零外部依赖；在 Node 与现代浏览器都能运行。\n- 体积小：核心包约 2KB（gzip），便于 Treeshaking。\n- API 不可变（Immutability），方法返回新实例，便于复用和组合。\n- 内置 JSON Schema 输出，方便与 OpenAPI 等工具打通。\n- 强大生态：与 tRPC、React Hook Form、各类框架的深度集成，以及大量“Zod ↔ X”的双向转换工具。\n### 3. 典型使用场景（开发者视角）\n- API 入参/出参校验（尤其是前后端共享类型）。\n- 表单验证（配合 React Hook Form / Vue 生态等）。\n- 环境变量、配置文件校验。\n- 数据库 Payload 验证（ORM 输入层约束）。\n- 工具函数的参数契约（先 parse 再逻辑，提前失败）。\n### 4. 核心代码 Demo（最简示例）\n下面是一个让开发者能“一眼看懂”的完整用例：Schema 定义 → 校验与类型推导 → 错误处理。\n```ts\n// 安装\n// npm i zod\nimport * as z from \"zod\";\n// 1) 定义 Schema（同时获得运行时校验 + 类型推导）\nconst UserSchema = z.object({\n  id: z.string().uuid(),\n  name: z.string().min(1).max(100),\n  age: z.number().int().nonnegative(),\n  email: z.string().email(),\n  roles: z.array(z.enum([\"admin\", \"editor\", \"viewer\"])),\n  active: z.boolean().default(true),\n  createdAt: z.coerce.date().optional(), // coerce 会把 string/number 自动转为 date\n});\n// 2) 自动推导 TS 类型（一份 Schema，两份收益）\ntype User = z.infer<typeof UserSchema>;\n// 此时你可以在整个项目中安全地使用 User 类型，并与 Schema 保持同步\n// 3) 校验外部数据（API 响应 / 表单 / 环境变量 等）\nfunction parseUser(data: unknown): User {\n  return UserSchema.parse(data); // 校验失败则抛 ZodError\n}\n// 4) 更细粒度的错误处理（不抛异常）\nconst result = UserSchema.safeParse(someUntrustedData);\nif (!result.success) {\n  // result.error 是 ZodError，含格式化好的错误路径与消息\n  console.error(result.error.flatten()); // 方便展示给前端用户\n  // 也可以按字段逐条处理\n}\n// 5) 预处理与转换：transform / refine 演示\nconst TrimmedStringSchema = z.string().transform((val) => val.trim());\nconst PositiveNumberSchema = z\n  .number()\n  .refine((n) => n > 0, { message: \"必须大于 0\" });\n// 6) 更复杂结构示例（对象嵌套 + 联合）\nconst AddressSchema = z.object({\n  street: z.string(),\n  city: z.string(),\n  zip: z.string().regex(/^\\d{5}$/),\n});\nconst PersonSchema = z.object({\n  name: z.string(),\n  address: AddressSchema,\n  contacts: z.array(z.object({ type: z.string(), value: z.string() })),\n});\n// 联合类型示例：要么是 id，要么是 email 作为登录标识\nconst LoginInput = z.union([\n  z.object({ id: z.string().uuid() }),\n  z.object({ email: z.string().email() }),\n]);\n```\n### 5. 生态与集成案例\n- tRPC：前后端端到端类型安全，Zod 是官方推荐的 Schema 提供方。\n- React Hook Form：官方提供 Zod Resolver，表单校验与类型推导一键打通。\n- Standard Schema：Zod 参与的“统一 Schema 接口”计划，让不同校验库可以互换，降低集成成本。\n---\n## 目标人群与收益\n| 人群 | 适用度与收益 |\n|------|--------------|\n| 前端/全栈开发者（重度使用 TS） | ★★★★★ 消除外部数据类型焦虑，共享前后端类型，减少联调与 Bug。 |\n| 后端 Node.js 服务（NestJS/Express/Koa/Hono 等） | ★★★★☆ 在请求体/参数/环境变量上统一校验，配合 TS 代码可读性与可维护性明显提升。 |\n| 框架/库作者 | ★★★★★ Zod 作为 Schema 底座，可让自家生态天然获得类型推导与 JSON Schema 转换能力。 |\n| 对 TS 不熟/不使用的团队 | ★★☆☆☆ 依然可用，但最大优势（类型推导）难以发挥，可考虑 Yup/Joi 等更“JS 友好”的方案。 |\n具体收益：\n- 稳定性：在数据入口就拦截非法值，避免级联崩溃与莫名错误。\n- 可维护性：Schema 集中管理，修改一处即可同步到类型、校验与文档（配合 JSON Schema/OpenAPI）。\n- 开发体验：补全更靠谱，重构更安全，重构后类型/校验自动同步，减少手写重复代码。\n- 性能：核心体积小，利于 Treeshaking；校验本身是线性/可控的复杂度，对常见业务量不是瓶颈。\n---\n## 竞品/同类对比\n### Zod vs Yup vs Joi vs class-validator（简要）\n- Zod：\n  - 优势：TS-first、自动类型推导、体积小、零依赖、生态繁荣（tRPC/RHF 等）。\n  - 适合：深度 TS 项目、前后端类型共享、新项目。\n- Yup：\n  - 优势：成熟、简单直观、生态早、适合轻量校验。\n  - 不足：与 TS 的类型推导不如 Zod 强，需更多手动类型维护。\n  - 适合：已有 Yup 项目、纯 JS 或轻度 TS 场景。\n- Joi：\n  - 优势：API 表现力强、丰富校验规则与选项、历史久、Node 社区广泛。\n  - 不足：与 TS 整合不如 Zod 直接、体积偏大。\n  - 适合：后端 Node、传统 BFF/API 服务，TS 类型不是首要目标。\n- class-validator（装饰器风）：\n  - 优势：与 class-validator / class-transformer 生态结合紧密，配合 NestJS 等“类定义”架构顺滑。\n  - 不足：依赖装饰器与较重运行时，Treeshaking 相对不易，与 TS 类型推导仍需额外工作。\n  - 适合：重度使用装饰器与 DI 的后端框架。\n一句话定位：\n- 如果你把 TypeScript 当“一等公民”，Zod 是目前最舒服的通用校验方案。\n---\n## 局限与不足\n- 学习曲线：对刚接触“Schema = 类型”概念的开发者，需要一点心智切换；复杂组合（discriminated union、transform、refine 链式等）需要练习。\n- TS 依赖与配置：官方要求 TS 5.5+ 与 strict 模式，老项目可能有适配成本。\n- 某些高级特性需要组合使用：对于非常复杂的业务规则（依赖数据库/外部服务），需要在外层调用后再触发校验或结合自定义异步 refine。\n- 报错信息自定义：默认错误消息足够通用，但复杂场景下需要定制（利用 .errorMap 或国际化方案），初期需查阅文档。\n- 不是运行时“合约工具”：Zod 做的是数据校验与类型推导，并不直接提供“API 契约测试/文档生成”的完整流程，需配合 OpenAPI/JSON Schema 工具链。\n---\n## 上手门槛与部署体验（GitHub 开源项目视角）\n- 仓库地址：https://github.com/colinhacks/zod。\n- 安装简单：\n  - npm：npm install zod。\n  - JSR（新兴包清单）：@zod/zod，方便跨包管理工具集成。\n- 文档体验：\n  - 官方文档站（zod.dev）结构清晰，分 Intro / API / Ecosystem 等；另有“llms.txt”与 MCP server 方便 AI 工具检索。\n  - 社区教程丰富（BetterStack、LogRocket、Telerik 等多篇指南与对比）。\n- TypeScript 版本要求：\n  - 测试覆盖 TS 5.5 及以上；老版本可能能用但不保证。\n- 社区活跃度与生命力：\n  - 作者 Colin McDonnell 同时是 tRPC 等知名项目的作者，持续在 TS 领域深耕，Zod 生态持续演进。\n  - 生态页列出大量“Powered by Zod”与 Zod↔X 工具，反映其在社区中的事实标准地位。\n---\n## 技术栈与架构解析（开源框架/SDK 视角）\n- 核心技术栈：\n  - TypeScript 本身作为开发语言；\n  - 零外部运行时依赖，保证包体与稳定性。\n- 架构设计亮点：\n  - Schema 作为“不可变”对象：方法链式调用返回新 Schema，便于复用与组合，避免全局副作用。\n  - 类型推导与校验逻辑解耦但同源：同一段 Zod 定义既是运行时校验器，又是 TS 编译器眼中的“类型工厂”，核心机制是 TS 的条件类型与 infer 能力。\n  - 扩展性：通过 .refine / .transform / .union / .discriminatedUnion 等组合算子，可以表达任意复杂结构；第三方可以基于 Zod 构建更高阶 DSL。\n- DX（开发者体验）：\n  - API 设计统一、链式调用符合直觉；\n  - 错误对象结构清晰（包含 path、code、message），便于前端字段级展示。\n- 集成成本与侵入性：\n  - 无侵入：可以在任何函数/中间件/边界层引入，不必改写整个架构；\n  - 不绑定特定框架，但在与 tRPC/RHF/NestJS 等结合时最佳。\n- 性能与体积：\n  - 官方给出的核心 bundle 约 2KB（gzip），依赖极少，对前端体积非常友好。\n- 避坑指南（实战经验）：\n  - 对日期/时间等类型：优先用 .coerce.date()，避免时区与格式陷阱；注意输入来源的字符串格式。\n  - 对深层嵌套对象：错误信息会带完整路径，前端展示时要防止“过长路径信息”泄露细节。\n  - 对 async 校验：如需远程校验，应在外层业务流程中完成，再用 safeParse 校验结构；或配合自定义上下文与错误映射。\n  - 不要在循环里反复构造复杂 Schema：Schema 定义应放在模块顶层常量，避免重复创建的开销。\n---\n## 结语与行动建议\n终极评判：\n- 如果你使用 TypeScript 并且希望：\n  - 不再为外部数据“是不是符合类型”提心吊胆；\n  - 前后端/不同服务共享一套可执行、可推导、可文档化的数据契约；\n  - 生态成熟、集成路径清晰；\n  那么选 Zod 几乎不会后悔——它在 TypeScript-first 的校验方案里，已经成为事实标杆。\n行动建议：\n- 新项目（特别是全栈/前后端一体）：直接采用 Zod 作为统一 Schema 底座，与 tRPC 或你的 BFF 层配合。\n- 现有项目：\n  - 若已有 Yup/Joi：优先在新模块/新 API 上尝试 Zod，评估迁移成本（可以借助“Yup→Zod”等转换工具或手动逐步替换）。\n  - 若使用 class-validator：视项目架构决定是否转向，若团队更倾向于声明式 Schema 而非装饰器风格，可以渐进引入。\n- 团队协作层面：\n  - 把 Zod Schema 作为前后端联调的“单一真相源”，配合 JSON Schema/OpenAPI 自动生成文档与 Mock。\n  - 在 Code Review 中把“外部数据入口有无 Zod 校验”作为清单项。\n一句话：把数据校验当成一等公民，Zod 会是你用 TypeScript 时最趁手的“守门员”。",
+  "type": "project",
+  "dateAdded": "20260830"
+}

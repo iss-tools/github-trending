@@ -1,0 +1,118 @@
+# firecrawl/pdf-inspector
+
+[GitHub URL](https://github.com/firecrawl/pdf-inspector)
+
+
+## Firecrawl pdf-inspector 深度评测：Rust 驱动的智能 PDF 解析与 OCR 路由引擎
+
+> 一款用 Rust 编写的智能 PDF 处理工具，能快速判断文档类型并进行高质量 Markdown 转换，帮助用户省去不必要的 OCR 成本。
+
+- **Tags**: PDF处理, OCR, Rust, Markdown, 开源项目
+- **Category**: 开发工具, 数据处理
+
+## Details
+
+<|assistant|>点击仓库中的 Node.js 文档链接，了解 API 设计、使用示例与限制，以便在评测中给出对 Node 生态的集成建议和示例代码。</think>
+# 一句话总结
+pdf-inspector 是一款用 Rust 写的高性能 PDF 检测、文本提取与 Markdown 转换库，主打“智能分类 + 按需 OCR + 本地极快处理”，为大规模 PDF 管道省成本、降延迟，并提供 Python/Node.js/浏览器 WASM 多语言绑定与顺手 CLI。
+---
+## 背景与痛点
+- 行业现实：很多 PDF 已经自带可选中的“文本层”（研究报告、论文、发票、合同等），但传统管线往往采取“宁可误扫一千，不可放过一个”的全量 OCR 策略，把所有 PDF 都丢给 GPU 或云端 OCR。结果既慢（单文档 2–10 秒常见）又贵，且 OCR 结果时常比原文差。
+- pdf-inspector 的出身：由 Firecrawl 打造，与其云端爬取/解析管线深度协同；核心目标就是在本地几十毫秒判断“这份 PDF 到底需不需要 OCR”，并为文本型 PDF 直接完成高质量提取与 Markdown 转换。
+- 数据支撑：官方估算约 54% 的 PDF 不需要 OCR，如果能智能路由，就能显著降低算力与 API 费用、提升端到端响应速度。
+---
+## 核心亮点与功能剖析
+### 1) 智能分类与“按页 OCR 路由”
+- 在 10–50 ms 内判断 PDF 类型：TextBased（文本型）、Scanned（扫描件）、ImageBased（图版）、Mixed（混合），并给出置信度与需要 OCR 的页面清单。
+- 实现：不完整渲染页面，而是解析 PDF 内容流中的文本算子（如 Tj/TJ）与图像算子（Do），做“采样统计”，实现极快分类。对于超大 PDF，还支持 Sample(n) 或 Pages(vec) 等多种扫描策略。
+- 带来的管线价值：可在收到 PDF 时就做“路由决策”——文本型 PDF 直接本地提取；真正需要 OCR 的页面才调用昂贵服务。
+### 2) 文本提取与阅读顺序
+- 位置感知提取：保留每个文本块的坐标、字号、字体等信息，支持多栏布局检测与 RTL（从右到左）文本，做到“像人眼读”的顺序输出。
+- 单文档加载：设计上只对 PDF 做一次加载并共享给检测与提取，减少 I/O 与重复解析，非常适合高频调用的服务端场景。
+### 3) Markdown 转换质量
+- 按字号比例分层（H1–H4）、列表（项目/编号/字母）、代码块（等宽字体+关键字检测）、粗体/斜体、URL 转链接、表格（双模式：矩形绘制操作 + 对齐启发式）、脚注与跨页续表等都有识别与转换。
+- 细节打磨：过滤页码、合并跨行断词、处理“首字母大写（drop caps）”、压缩目录式点引导符（“...”），对 LLM 的“Token 友好”有专门考虑（--compact 等选项）。
+### 4) 字体与编码鲁棒性
+- 支持 CID/Type0/Identity-H 字体，通过 ToUnicode CMap 做解码；常见编码（UTF-16BE/UTF-8/Latin-1）都能处理；遇到乱码/破损编码时会自动标记，便于上层回退到 OCR。
+### 5) 选择性 OCR 与“可插拔”模式
+- 对 Rust/CLI/Python/Node 统一提供“选择性 OCR”能力：仅对被路由为需要 OCR 的页渲染并执行 PP-OCRv6 Small（本地），并保留每页“来源（native/OCR/fused）+ 置信度 + 警告 + 是否推荐云端处理”等可追溯信息。
+- 轻量设计：默认构建不嵌入 OCR 模型、PDFium 或 ONNX Runtime；OCR 仅在必要时按需触发，且这些外部依赖由环境变量（如 PDFIUM_LIB_PATH、ORT_DYLIB_PATH）和模型目录控制，支持离线模式与模型预热。
+### 6) 多生态与跨平台
+- Python：通过 PyO3 绑定，API 丰富，支持检测/提取/按页 Markdown/结构树元素/区域提取/OCR 等多条路径，并提供类型提示（.pyi）。
+- Node.js/Bun：napi-rs 提供原生性能，预构建二进制覆盖 Linux x64/ARM64（glibc 与 musl/Alpine）、macOS ARM64 与 Windows x64，包体积约 5–6 MB；主打“智能分类 + 区域提取”，适合混合 OCR 管道。
+- 浏览器 WASM：同一套 Rust 核心编译到 WASM，可在前端本地运行，无服务器往返；CMaps 内置，嵌入方式可控。
+- CLI：cargo install 即得；支持 pdf2md/detect-pdf 两个工具，输出 Markdown/JSON/TextItem JSON，支持页面选择、紧凑模式、插入分页标记、检测+布局分析等。
+### 7) 架构与代码组织（技术栈与架构解析）
+- 核心语言：Rust，通过 crates.io 分发；目录结构清晰：lib.rs（API）、detector.rs（快速分类）、extractor/（提取管线）、tables/（检测与格式化）、markdown/（转换）、bin/（CLI）等。
+- 多语言绑定：Python（PyO3）、Node/Bun（napi-rs）、浏览器（wasm-bindgen）各占一个目录，接口统一但形态贴合各生态习惯。
+- MIT 开源协议，便于在商业产品中集成与再分发。
+### 8) 性能与可复现基准
+- 在 OpenDataLoader Benchmark 的 200 份 PDF 语料上（Apple M4 Pro），pdf-inspector 在 Overall、Reading Order（NID）、Tables（TEDS）与 Speed 等关键指标上均优于多家常见本地引擎（pymupdf4llm、markitdown、opendataloader 等）。
+- 官方给出的“Best fit”定位很诚实：最适合“原生文本 PDF 且重视阅读顺序与表格结构”的场景，这点在实际体验中确实吻合。
+### 9) Demo 代码片段（入门即用）
+- Python（检测 + 提取 Markdown）
+  ```python
+  import pdf_inspector
+  result = pdf_inspector.process_pdf("document.pdf")
+  print(result.pdf_type)      # "text_based" | "scanned" | "image_based" | "mixed"
+  print(result.confidence)     # 0.0–1.0
+  print(result.markdown)       # Markdown 字符串（可能为 None）
+  ```
+- Node.js（智能分类与区域提取）
+  ```js
+  import { readFileSync } from 'fs'
+  import { classifyPdf, extractTextInRegions } from '@firecrawl/pdf-inspector'
+  const pdf = readFileSync('document.pdf')
+  const cls = classifyPdf(pdf)
+  console.log(cls.pdfType, cls.pagesNeedingOcr, cls.confidence)
+  const regionRes = extractTextInRegions(pdf, [{ page: 0, regions: [[0, 0, 300, 400], [300, 0, 612, 400]] }])
+  regionRes[0].regions.forEach(r => {
+    if (r.needsOcr) console.warn('[needs OCR]', r.ocrReason)
+    else console.log(r.text)
+  })
+  ```
+- CLI（快速检测 + Markdown 输出）
+  ```bash
+  # 仅检测（非常快）
+  detect-pdf document.pdf --json
+  # 转 Markdown（紧凑模式 + 插入分页标记）
+  pdf2md document.pdf --compact --pages
+  ```
+---
+## 目标人群与收益
+- 谁最适合用
+  - 需要批量处理 PDF 的后端/管道工程师（RAG/知识库/文档索引）。
+  - 想在前端预览或解析 PDF 而不想上传到服务器的 Web/移动端开发者（WASM）。
+  - 做数据产品或内容平台，需要把报表/合同/论文转成结构化 Markdown 的团队。
+  - Python/Node 生态的工程师，但不希望引入过重的依赖（如模型或大型库）。
+- 具体收益
+  - 成本：把约半数的“文本型 PDF”挡在 OCR 之前，省算力与 API 费。
+  - 延迟：从秒级降到百毫秒级，提升用户体验和系统吞吐。
+  - 质量：保留原文坐标与字体，阅读顺序与表格恢复更准确，避免 OCR 误识别。
+  - 集成简单：多语言绑定 + CLI，几行代码就能接入现有流水线；对 LLM 也有“Token 友好”输出模式。
+---
+## 竞品/同类对比
+- 与 PyMuPDF/PyMuPDF4LLM：pdf-inspector 在同等语料上整体与阅读顺序、表格得分更好，且速度显著快；但 PyMuPDF 生态更久、API 更通用，渲染与形态转换能力更广。
+- 与 MarkItDown：pdf-inspector 在表格与阅读顺序上占优，且速度更快；MarkItDown 是微软发布，生态整合度高，更适合 Office 生态与快速原型。
+- 与 LiteParse/OpenDataLoader：pdf-inspector 在表格和速度上表现更强，且有明确的“智能路由”与“选择性 OCR”设计；LiteParse 在标题得分上略有优势。
+- 与全量 OCR 方案（如 Tesseract、云端 OCR API）：pdf-inspector 不替代 OCR，而是决定“何时用、用在哪”，使整体管线更经济更可控。
+---
+## 局限与不足
+- OCR 并非“开箱即用”：若开启选择性 OCR，仍需自行部署 PDFium 与 ONNX Runtime，并配置环境变量与模型路径，对环境管理有一定门槛；新手容易在依赖配置上踩坑。
+- 复杂图形/公式布局：不依赖视觉模型，遇到非常规版式或手写内容时识别会吃力，需回退到 OCR 或专用版面分析模型。
+- 生态与依赖：虽然核心库是 MIT，但 OCR 部分依赖的模型与库各自有许可，商业方案需要逐项确认合规性。
+- 可定制化：当前对 Markdown 转换细节的钩子与回调相对有限，若要深度自定义输出样式可能要 Fork 或二次开发。
+---
+## 结语与行动建议
+- 终极评判：pdf-inspector 是“聪明的本地 PDF 路由与提取引擎”，在文本型 PDF 上又快又准，且多生态、易集成；对需要大规模处理 PDF 的团队来说，是一个值得在管线首层部署的高性价比“守门员”。
+- 行动建议
+  - 如果你的场景是“把很多报表、论文、合同喂给 LLM”：先在 Python 环境用 pip install pdf-inspector 并尝试 process_pdf 与 process_pdf_with_ocr，对比原有全量 OCR 的质量与耗时。
+  - 若你是 Node/Bun 后端：使用 @firecrawl/pdf-inspector 的 classifyPdf 与 extractTextInRegions 构建混合 OCR 路由；只在 needsOcr 为 true 的区域再调用视觉 OCR。
+  - 若你是前端/浏览器场景：用 @firecrawl/pdf-inspector-wasm 做本地预览与解析，避免上传完整 PDF，降低隐私风险。
+  - 生产落地的第一条检查清单：设置 PDFIUM_LIB_PATH 与 ORT_DYLIB_PATH，配置模型目录与缓存策略，并监控 pagesRoutedToOcr 指标，验证“路由收益”。
+---
+## 参考与延伸
+- 官方仓库与文档（含架构、Python/Node/WASM API、OCR 运行时配置、调试等）：README、docs/python.md、napi/README.md、wasm/README.md、docs/ocr-runtime.md、docs/rust-api.md、docs/benchmarking.md。
+- 外部评测与趋势汇总（daily.dev、Trendshift 等）：介绍了 pdf-inspector 的定位、性能、生态与在 GitHub Trending 上的表现。
+- Firecrawl 官方博客：讲解 AnyDoc/pdf-inspector 如何在其整体 PDF 管线中充当“本地提取与路由”的角色，进一步阐明其设计动机与端到端价值。
+- crates.io 页面：查看 Rust 包版本、发布周期与依赖声明，便于集成到 Rust 项目。

@@ -1,6 +1,346 @@
 {
   "all": [
     {
+      "id": "3fe5ceb3-2bbb-49d1-b496-c5b3d5d5933b",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "domain": "github.com",
+      "repo": "firecrawl/pdf-inspector",
+      "description": "pdf-inspector 是由 Firecrawl 推出的基于 Rust 的开源项目，旨在解决大规模 PDF 处理中的成本与效率问题。它能在毫秒级判断文档是否需要 OCR，对原生文本 PDF 实现精准的文本提取和表格还原，支持 Python、Node.js 和浏览器端运行，是构建高效文档管道的理想工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:48:28.610Z",
+      "metaData": {
+        "forks": "1178",
+        "stars": "16921",
+        "topics": [
+          "markdown",
+          "nodejs",
+          "ocr-routing",
+          "pdf",
+          "pdf-classification",
+          "pdf-extraction",
+          "pdf-parser",
+          "python",
+          "rust",
+          "text-extraction"
+        ],
+        "license": "MIT license",
+        "homepage": "https://firecrawl.github.io/pdf-inspector/",
+        "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. - firecrawl/pdf-inspector"
+      },
+      "summaryData": {
+        "tags": [
+          "PDF处理",
+          "OCR",
+          "Rust",
+          "Markdown",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Firecrawl pdf-inspector 深度评测：Rust 驱动的智能 PDF 解析与 OCR 路由引擎",
+        "ability": [
+          "智能文档检测与路由",
+          "高性能文本提取",
+          "高质量 Markdown 转换",
+          "选择性 OCR 集成",
+          "多语言与跨平台支持"
+        ],
+        "summary": "一款用 Rust 编写的智能 PDF 处理工具，能快速判断文档类型并进行高质量 Markdown 转换，帮助用户省去不必要的 OCR 成本。",
+        "category": [
+          "开发工具",
+          "数据处理"
+        ],
+        "suitable": [
+          "后端与数据工程师",
+          "RAG 与 AI 应用开发者",
+          "前端开发者 (WASM)",
+          "文档处理密集型团队",
+          "注重数据隐私的用户"
+        ],
+        "description": "pdf-inspector 是由 Firecrawl 推出的基于 Rust 的开源项目，旨在解决大规模 PDF 处理中的成本与效率问题。它能在毫秒级判断文档是否需要 OCR，对原生文本 PDF 实现精准的文本提取和表格还原，支持 Python、Node.js 和浏览器端运行，是构建高效文档管道的理想工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "15c8f610-3559-48a8-8917-8e4094f22839",
+      "url": "https://github.com/colinhacks/zod",
+      "domain": "github.com",
+      "repo": "colinhacks/zod",
+      "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:44:07.910Z",
+      "metaData": {
+        "forks": "2154",
+        "stars": "43587",
+        "topics": [
+          "runtime-validation",
+          "schema-validation",
+          "static-types",
+          "type-inference",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zod.dev",
+        "description": "TypeScript-first schema validation with static type inference - colinhacks/zod"
+      },
+      "summaryData": {
+        "tags": [
+          "TypeScript",
+          "数据校验",
+          "Schema",
+          "前端开发",
+          "tRPC"
+        ],
+        "cover": "",
+        "title": "Zod：TypeScript 生态首选数据校验库深度评测",
+        "ability": [
+          "TypeScript-first 类型推导",
+          "零依赖小体积(约2KB)",
+          "丰富API与组合能力",
+          "完善的生态集成",
+          "JSON Schema 输出"
+        ],
+        "summary": "写一份 Schema，同时获得运行时校验与 TypeScript 类型定义，解决前后端数据一致性问题。",
+        "category": [
+          "开发工具",
+          "Web 开发"
+        ],
+        "suitable": [
+          "TypeScript 开发者",
+          "前端/全栈工程师",
+          "Node.js 后端开发者",
+          "库/框架作者"
+        ],
+        "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "7d2fb6d8-e892-4856-8672-bf7f0b9c4a03",
+      "url": "https://github.com/corsairdev/corsair",
+      "domain": "github.com",
+      "repo": "corsairdev/corsair",
+      "description": "Corsair 是面向 AI 应用的统一集成层，接管第三方服务认证与权限，通过加密库隔离敏感凭证。它支持多租户、兼容主流 Agent 框架，可自建或托管，大幅降低集成开发成本，提升安全性。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:41:35.177Z",
+      "metaData": {
+        "forks": "515",
+        "stars": "10781",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://corsair.dev",
+        "description": "Connect your users to their apps. Contribute to corsairdev/corsair development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "认证集成",
+          "开源",
+          "MCP",
+          "开发者工具"
+        ],
+        "cover": "",
+        "title": "Corsair: AI 应用的统一集成层",
+        "ability": [
+          "安全凭证隔离与加密",
+          "多租户数据隔离",
+          "统一 API 接入主流服务",
+          "MCP 适配器兼容主流框架",
+          "开源自托管"
+        ],
+        "summary": "面向 AI 应用的第三方服务统一集成层，安全隔离凭证，支持多租户与 Agent 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI Agent 开发团队",
+          "SaaS/多租户产品开发者",
+          "个人开发者"
+        ],
+        "description": "Corsair 是面向 AI 应用的统一集成层，接管第三方服务认证与权限，通过加密库隔离敏感凭证。它支持多租户、兼容主流 Agent 框架，可自建或托管，大幅降低集成开发成本，提升安全性。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "db78ac5b-46b1-4f39-bee5-57b8ba1e2d44",
+      "url": "https://github.com/handsomestWei/patent-disclosure-skill",
+      "domain": "github.com",
+      "repo": "handsomestWei/patent-disclosure-skill",
+      "description": "该项目是一款专注于专利领域的 AI 技能，通过结构化提示词引导大模型，将零散的技术创意转化为规范的专利交底书。它解决了传统专利撰写耗时长、专业性强的问题，是技术与法律结合的实用工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:38:37.729Z",
+      "metaData": {
+        "forks": "691",
+        "stars": "5527",
+        "topics": [
+          "chinese",
+          "disclosure",
+          "obsidian",
+          "patent",
+          "skill"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skillhub.cn/skills/patent-disclosure-skill",
+        "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。 - handsomestWei/patent-disclosure-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "专利撰写",
+          "AI Skill",
+          "自动化",
+          "知识产权",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "专利交底书自动生成神器：Patent Disclosure Skill 评测",
+        "ability": [
+          "自动生成专利交底书",
+          "技术方案结构化重组",
+          "多源信息输入整合",
+          "降低专利撰写门槛",
+          "提升IP申请效率"
+        ],
+        "summary": "基于 AI 自动生成高质量专利交底书的 Skill，助力研发人员与IP专家降本增效。",
+        "category": [
+          "AI Agent/Skill",
+          "知识产权工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "研发工程师",
+          "专利代理人",
+          "IP管理者",
+          "创业者/CTO",
+          "技术写作者"
+        ],
+        "description": "该项目是一款专注于专利领域的 AI 技能，通过结构化提示词引导大模型，将零散的技术创意转化为规范的专利交底书。它解决了传统专利撰写耗时长、专业性强的问题，是技术与法律结合的实用工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "a9ad5367-8897-420f-a242-4ae59c1c148a",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "domain": "github.com",
+      "repo": "pollen-robotics/microduck_rl",
+      "description": "基于mjlab和PPO的开源强化学习环境，为微型双足机器人Microduck提供从仿真训练到真机部署的完整方案，包含丰富的任务（步行、踢球、起身、滑旱冰等），通过BAM执行器建模、域随机化和齿隙仿真缩小仿真-现实差距，支持本地GPU训练或Hugging Face Jobs远程训练，最终导出ONNX策略供真机运行。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:36:12.745Z",
+      "metaData": {
+        "forks": "120",
+        "stars": "654",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "RL training environments for Microduck (mjlab). Contribute to pollen-robotics/microduck_rl development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "sim2real",
+          "PPO训练",
+          "MuJoCo",
+          "ONNX部署"
+        ],
+        "cover": "",
+        "title": "microduck_rl：微型双足鸭形机器人强化学习训练环境评测",
+        "ability": [
+          "完整sim2real训练管线",
+          "GPU加速的高吞吐仿真",
+          "精细执行器与齿隙建模",
+          "统一61维观测接口",
+          "多技能策略热插拔"
+        ],
+        "summary": "面向Microduck双足机器人的端到端强化学习训练环境，支持GPU加速仿真训练、域随机化与真机ONNX部署",
+        "category": [
+          "机器人开发",
+          "强化学习",
+          "开发工具"
+        ],
+        "suitable": [
+          "机器人RL研究者与工程师",
+          "高校课程与教育工作者",
+          "创客与Microduck真机用户",
+          "AI编码与LLM工具链探索者"
+        ],
+        "description": "基于mjlab和PPO的开源强化学习环境，为微型双足机器人Microduck提供从仿真训练到真机部署的完整方案，包含丰富的任务（步行、踢球、起身、滑旱冰等），通过BAM执行器建模、域随机化和齿隙仿真缩小仿真-现实差距，支持本地GPU训练或Hugging Face Jobs远程训练，最终导出ONNX策略供真机运行。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
+      "id": "25863ab1-f6b5-4050-bc0e-a6fe1a14e2d4",
+      "url": "https://github.com/checkstyle/checkstyle",
+      "domain": "github.com",
+      "repo": "checkstyle/checkstyle",
+      "description": "Checkstyle 是一款强大的 Java 静态代码分析工具，能够自动检查代码风格和简单最佳实践。它支持通过 XML 高度定制规则，完美集成到 Maven/Gradle 及 CI 流水线中，帮助团队统一代码标准，减少人工审查成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-30T12:32:20.286Z",
+      "metaData": {
+        "forks": "4190",
+        "stars": "9115",
+        "topics": [
+          "code-quality",
+          "command-line-tool",
+          "hacktoberfest",
+          "java",
+          "static-analysis",
+          "static-code-analysis"
+        ],
+        "license": "LGPL-2.1 license",
+        "homepage": "https://checkstyle.org",
+        "description": "Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly configurable. It can be invoked with an ANT task and a command line program. - checkstyle/checkstyle"
+      },
+      "summaryData": {
+        "tags": [
+          "Java",
+          "静态分析",
+          "代码规范",
+          "CI/CD",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Checkstyle 深度评测：Java 代码风格的自动交通警",
+        "ability": [
+          "代码风格自动检查",
+          "高度可配置的规则集",
+          "CI/CD 集成",
+          "支持主流编码规范",
+          "自定义规则扩展"
+        ],
+        "summary": "Java 生态最成熟的代码风格自动检查工具，帮助团队强制执行编码规范，提升代码质量。",
+        "category": [
+          "开发工具",
+          "代码质量"
+        ],
+        "suitable": [
+          "Java 开发者",
+          "技术团队负责人",
+          "代码审查员",
+          "质量保障工程师",
+          "开源项目维护者"
+        ],
+        "description": "Checkstyle 是一款强大的 Java 静态代码分析工具，能够自动检查代码风格和简单最佳实践。它支持通过 XML 高度定制规则，完美集成到 Maven/Gradle 及 CI 流水线中，帮助团队统一代码标准，减少人工审查成本。"
+      },
+      "type": "project",
+      "dateAdded": "20260830"
+    },
+    {
       "id": "daea8fb3-7c4a-4e22-b7d5-769749eb08f1",
       "url": "https://github.com/punkpeye/awesome-mcp-servers",
       "domain": "github.com",
@@ -11,8 +351,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15270",
-        "stars": "93112",
+        "forks": "15271",
+        "stars": "93118",
         "topics": [
           "ai",
           "mcp"
@@ -68,7 +408,7 @@
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
         "forks": "869",
-        "stars": "10036",
+        "stars": "10042",
         "topics": [
           "apple",
           "appstore",
@@ -138,7 +478,7 @@
       "createdAt": "2026-08-30T12:18:42.682Z",
       "metaData": {
         "forks": "5287",
-        "stars": "60296",
+        "stars": "60314",
         "topics": [
           "ai-prompts",
           "ai-skill",
@@ -211,8 +551,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:11:53.128Z",
       "metaData": {
-        "forks": "8296",
-        "stars": "80005",
+        "forks": "8295",
+        "stars": "80018",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://crawl4ai.com",
@@ -263,8 +603,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1274",
-        "stars": "9361",
+        "forks": "1276",
+        "stars": "9385",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -316,8 +656,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "4388",
-        "stars": "22905",
+        "forks": "4403",
+        "stars": "23022",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -369,8 +709,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "3592",
-        "stars": "34995",
+        "forks": "3610",
+        "stars": "35154",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -743,8 +1083,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3181",
-        "stars": "28908",
+        "forks": "3182",
+        "stars": "28921",
         "topics": [
           "abliteration",
           "llm",
@@ -800,8 +1140,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "1769",
-        "stars": "14748",
+        "forks": "1786",
+        "stars": "14899",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -978,8 +1318,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:24:10.364Z",
       "metaData": {
-        "forks": "3634",
-        "stars": "13386",
+        "forks": "3646",
+        "stars": "13596",
         "topics": [
           "agents",
           "ai",
@@ -1100,8 +1440,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8015",
-        "stars": "73393",
+        "forks": "8042",
+        "stars": "73687",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -1209,8 +1549,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9278",
-        "stars": "76200",
+        "forks": "9279",
+        "stars": "76235",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -1261,8 +1601,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:04:10.067Z",
       "metaData": {
-        "forks": "5105",
-        "stars": "46200",
+        "forks": "5120",
+        "stars": "46444",
         "topics": [],
         "license": "License",
         "homepage": "https://gitnexus.vercel.app",
@@ -1380,8 +1720,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:47:42.714Z",
       "metaData": {
-        "forks": "326",
-        "stars": "3250",
+        "forks": "328",
+        "stars": "3308",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -1744,8 +2084,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:22:32.684Z",
       "metaData": {
-        "forks": "10879",
-        "stars": "39355",
+        "forks": "10881",
+        "stars": "39367",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://google.github.io/googletest/",
@@ -2183,8 +2523,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3599",
-        "stars": "38387",
+        "forks": "3604",
+        "stars": "38460",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -2315,8 +2655,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:51:42.798Z",
       "metaData": {
-        "forks": "1450",
-        "stars": "11683",
+        "forks": "1452",
+        "stars": "11716",
         "topics": [
           "agent",
           "claude",
@@ -2375,8 +2715,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2072",
-        "stars": "32897",
+        "forks": "2080",
+        "stars": "33048",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -2516,8 +2856,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
-        "forks": "3964",
-        "stars": "35536",
+        "forks": "3966",
+        "stars": "35566",
         "topics": [
           "claude-code",
           "mcp",
@@ -2806,8 +3146,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3115",
-        "stars": "22314",
+        "forks": "3128",
+        "stars": "22431",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -2859,8 +3199,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "8839",
-        "stars": "51064",
+        "forks": "8855",
+        "stars": "51134",
         "topics": [
           "agents",
           "ai",
@@ -3478,8 +3818,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T04:32:57.849Z",
       "metaData": {
-        "forks": "12796",
-        "stars": "37800",
+        "forks": "13008",
+        "stars": "38297",
         "topics": [
           "ai",
           "ai-agents",
@@ -3544,8 +3884,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "5030",
-        "stars": "20996",
+        "forks": "5040",
+        "stars": "21025",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://t3.codes",
@@ -3597,8 +3937,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52202",
-        "stars": "472936",
+        "forks": "52227",
+        "stars": "473059",
         "topics": [
           "api",
           "apis",
@@ -3787,8 +4127,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:45:31.220Z",
       "metaData": {
-        "forks": "3482",
-        "stars": "33090",
+        "forks": "3484",
+        "stars": "33121",
         "topics": [
           "chinese-llm",
           "chinese-nlp",
@@ -3909,8 +4249,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "232",
-        "stars": "2771",
+        "forks": "235",
+        "stars": "2802",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3962,8 +4302,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:35:22.295Z",
       "metaData": {
-        "forks": "3819",
-        "stars": "38892",
+        "forks": "3825",
+        "stars": "38919",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://tinyhumans.ai/openhuman",
@@ -4015,8 +4355,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1613",
-        "stars": "25624",
+        "forks": "1616",
+        "stars": "25671",
         "topics": [
           "adhd",
           "claude-",
@@ -4207,8 +4547,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2350",
-        "stars": "25205",
+        "forks": "2354",
+        "stars": "25224",
         "topics": [
           "agent",
           "ai-agent",
@@ -4270,8 +4610,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:45:21.671Z",
       "metaData": {
-        "forks": "8045",
-        "stars": "58227",
+        "forks": "8078",
+        "stars": "58371",
         "topics": [
           "a2a",
           "ai-agents",
@@ -4464,8 +4804,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:35:38.445Z",
       "metaData": {
-        "forks": "8306",
-        "stars": "51623",
+        "forks": "8323",
+        "stars": "51763",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4514,8 +4854,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "12304",
-        "stars": "99176",
+        "forks": "12311",
+        "stars": "99270",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4757,8 +5097,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:45:19.816Z",
       "metaData": {
-        "forks": "18313",
-        "stars": "119902",
+        "forks": "18328",
+        "stars": "119978",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4809,8 +5149,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:40:46.877Z",
       "metaData": {
-        "forks": "2810",
-        "stars": "27125",
+        "forks": "2817",
+        "stars": "27199",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -4875,8 +5215,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "355",
-        "stars": "5159",
+        "forks": "356",
+        "stars": "5178",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4927,7 +5267,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3125",
-        "stars": "29343",
+        "stars": "29350",
         "topics": [
           "ai",
           "language",
@@ -5047,8 +5387,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "374",
-        "stars": "4086",
+        "forks": "377",
+        "stars": "4115",
         "topics": [
           "agent-runtime",
           "ai",
@@ -5168,7 +5508,7 @@
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
         "forks": "1847",
-        "stars": "14432",
+        "stars": "14439",
         "topics": [
           "ebay",
           "email",
@@ -5285,8 +5625,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2621",
-        "stars": "34354",
+        "forks": "2625",
+        "stars": "34409",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -5344,8 +5684,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4226",
-        "stars": "30977",
+        "forks": "4259",
+        "stars": "31396",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5599,8 +5939,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2480",
-        "stars": "25260",
+        "forks": "2497",
+        "stars": "25409",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -5662,8 +6002,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "514",
-        "stars": "17713",
+        "forks": "517",
+        "stars": "17751",
         "topics": [
           "dpi",
           "gpui",
@@ -5729,7 +6069,7 @@
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
         "forks": "626",
-        "stars": "9695",
+        "stars": "9719",
         "topics": [
           "cactus",
           "gemini",
@@ -5812,8 +6152,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "490",
-        "stars": "6205",
+        "forks": "493",
+        "stars": "6225",
         "topics": [],
         "license": "",
         "homepage": "",

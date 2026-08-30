@@ -1,0 +1,144 @@
+# pollen-robotics/microduck_rl
+
+[GitHub URL](https://github.com/pollen-robotics/microduck_rl)
+
+
+## microduck_rl：微型双足鸭形机器人强化学习训练环境评测
+
+> 面向Microduck双足机器人的端到端强化学习训练环境，支持GPU加速仿真训练、域随机化与真机ONNX部署
+
+- **Tags**: 双足机器人, sim2real, PPO训练, MuJoCo, ONNX部署
+- **Category**: 机器人开发, 强化学习, 开发工具
+
+## Details
+
+# 一句话总结
+microduck_rl 是一套面向微型双足鸭形机器人 Microduck 的“端到端”强化学习训练环境与 recipe（方法集）：它基于 mjlab（MuJoCo Warp）与 PPO，在 GPU 加速的仿真中训练策略，并导出到 ONNX 供真机运行，把“学会走路、踢球、起身、滑旱冰”等复杂行为变成可复现、可定制的工程实践。
+---
+## 背景与痛点
+- 小型双足机器人的“动起来”非常难：传统控制依赖手工调参与状态机，开发周期长、鲁棒性差。强化学习能自动生成复杂策略，但有两个经典痛点：
+  - sim2real gap：仿真里练得好，到了真机就崩。
+  - 上手成本高：环境搭建、训练管线、真机部署分散在不同项目/框架之间，难以整合。
+- Microduck 是约 800 克、25 厘米高的开源双足小机器人，15 个伺服（每条腿 5 个、头/颈 4 个），带相机、深度与双 IMU。它定位于“物理 AI”与教育/创客场景，强调在仿真中训练、真机中部署的闭环。
+- microduck_rl 生来就是要解决上述两件事：把“精确物理建模（含伺服）+域随机化+PPO 训练+ONNX 导出”打包成一套可开箱即用的管线，并在 mjlab 的 GPU 加速仿真里跑得飞快。同时，它还内置了 Hugging Face Jobs 提交路径，方便没有本地 GPU 的用户远程训练。
+---
+## 技术栈与架构解析
+- 训练框架：mjlab（Isaac Lab 风格的 API，底层为 MuJoCo Warp）+ RSL-RL（PPO）。mjlab 的优势是把“观察/奖励/事件/场景”模块化，并利用 NVIDIA/Google DeepMind 的 MuJoCo Warp 在 GPU 上批跑数千并行环境，非常适合 RL 的高吞吐训练。
+- 物理与执行器建模：
+  - MJCF 机器人模型位于 `src/mjlab_microduck/robot/microduck/`，从 Onshape 导出，并按用途提供不同变体（`robot_walk.xml`、`robot_allcollisions.xml`、`roller` 等）。
+  - 执行器采用 BAM（Better Actuator Models）的 M6 模型，涵盖电压控制律、反电动势、Coulomb/Stribeck/负载相关摩擦等；并在每个环境做“域随机化”（电池电压、电压跌落、指令延迟、摩擦系数），以缩小仿真与真机差异。这是“缩小 sim2real gap”的关键之一。
+  - Backlash（齿隙）建模：每个伺服关节串联一个无驱动的 `passive_*_backlash` 铰链（±1°，共 2°），且观察/动作通过该“输出侧”读回，真机编码器也在输出侧，确保观测一致。同一任务的“Backlash”变体只需在任务 ID 中插入 `-Backlash` 即可，导出维度不变，真机 runtime 无改动。
+- 算法与策略：
+  - 默认 PPO，控制频率 50 Hz（同真机）。
+  - 所有策略共享 61 维观测约定（48 维本体感知 + 命令：twist(3) + head_pose(4) + body_pose(6)），即便某个任务不使用某个命令槽也会 zero‑pad，保证 runtime 可“热插拔”切换策略而不改变接口。
+- 代码组织：
+  - `src/mjlab_microduck/robot/`：MJCF 与配置、`add_backlash.py`、机器人常量等。
+  - `src/mjlab_microduck/actuator/friction_dr_bam.py`：集成 BAM + 域随机化 + backlash encoder 反馈。
+  - `src/mjlab_microduck/tasks/`：任务注册、奖励/观察/事件（`mdp.py`）、backlash 包装器与各任务族配置（每个任务一个 cfg 模块）。
+  - `train_cli.py` 与 `hf_jobs.py`：本地训练入口与 Hugging Face Jobs 提交脚本。
+- 输出与部署：
+  - 训练结束后，使用 `scripts/export.py` 将策略导出到 ONNX，导出过程会将观测归一化“烘焙”进图里；严禁手工转换 checkpoint，否则真机会看到未归一化的观测而异常。
+  - 真机 runtime 位于 pollen‑robotics/microduck 仓库，负责加载 ONNX 并以 50 Hz 控制循环驱动 15 个伺服与传感器。
+---
+## Demo / 核心使用示例
+- 本地训练（需要 CUDA GPU + uv）：
+```bash
+git clone https://github.com/pollen-robotics/microduck_rl
+cd microduck_rl
+# 训练“平地速度跟踪”步行策略（建议 4096 并行环境，1–2 小时可出可用步态）
+uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096
+```
+- 回放与本地推理（CPU MuJoCo + 键盘控制）：
+```bash
+# 用 WandB run 回放训练好的策略
+uv run play Mjlab-Velocity-Flat-MicroDuck --wandb-run-path <entity/project/run_id>
+# 导出为 ONNX
+uv run scripts/export.py Mjlab-Velocity-Flat-MicroDuck --wandb-run-path <...>
+# 键盘驱动导出的策略（CPU 上运行 MuJoCo）
+uv run scripts/infer_policy.py --walking output.onnx
+```
+- 热插拔多策略（在仿真中先演练真机模式）：
+```bash
+uv run scripts/infer_policy.py --walking walk.onnx --standing stand.onnx \
+    --sitstand sitstand.onnx --roulade roulade.onnx --new-cmd-obs
+```
+键盘可控制速度与触发招式（G：地面拾取、Y：坐/站、R：前滚翻、K/L：踢球），`--debug`/`--save-csv`/`--record` 方便做 sim2real 对比分析。
+- 恢复训练：
+```bash
+uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096 \
+    --agent.run-name resume --agent.load-checkpoint model_29999.pt --agent.resume True
+```
+- 无 GPU 时，使用 Hugging Face Jobs 远程训练（任意 `train` 命令加上 `--hf-jobs` 即可）：
+```bash
+uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096 --hf-jobs
+```
+详见 `scripts/hf/README.md`。
+---
+## 核心亮点与功能剖析
+### 1. 完整的 sim2real recipe（教科书级示例）
+- 明确指出三大关键：BAM actuator physics、domain randomization、backlash 仿真；并给出训练与导出/部署的完整路径。
+- 专门的 AGENTS.md 文档整理了环境构建与奖励设计的经验规则，甚至专门面向“AI 编码智能体”如何在该仓库中工作，适合“把 LLM 当作 RL 工程师”的人参考。
+### 2. 高质量任务集合与统一观测接口
+- 任务丰富且实用：Velocity 步行、VelStand（带跌倒恢复的步行）、StandUp（多姿态起身）、SitStand、GroundPick（喙尖触地拾取）、BallKick（踢球）、Roulade（前滚翻）、各种 Roller（滑旱冰：前进/减速/下坡/原地旋转）等。几乎所有任务都支持 Flat/Rough 地形变体；主流任务另有 Backlash 变体以进行鲁棒性训练。
+- 统一 61 维观测合约，使 runtime 可在多个 ONNX 策略间无缝切换（例如：从步行到起身再到前滚翻），对“行为状态机 + RL 策略库”的工程模式非常友好。
+### 3. 精细的执行器与齿隙建模
+- 使用 BAM M6 对 Dynamixel XL330 做物理层建模（电压控制、反电动势、高级摩擦），而非简单的 PD；通过域随机化覆盖电池、延迟、摩擦等不确定源；这是微小机器人伺服主导的系统中“缩小 sim2real gap”的最核心一环。
+- Backlash 变体提供了“带齿轮间隙”的训练路径，让策略学会容忍和利用机械间隙；且以观测维度不变的方式“透明”到导出/部署，工程上非常省心。
+### 4. GPU 加速与“本地/云端”双轨训练
+- 基于 MuJoCo Warp + mjlab 的高吞吐仿真，能轻松在单卡上跑 4096 并行环境；README 给出的时间线是 1–2 小时获得可用步态，对个人开发者非常友好。
+- 无本地 GPU 时，只需在命令行加 `--hf-jobs` 即可提交到 Hugging Face Jobs；mjlab 自身也提供了免安装的 demo 与 Colab 入口，降低试玩门槛。
+### 5. 工程化的部署与验证工具链
+- 导出脚本把归一化固化到 ONNX，并配合 `infer_policy.py` 在 CPU 上用键盘驱动与多种调试选项，可先在仿真里“演练部署”，再上真机；节省真机调试时间并减少损坏风险。
+- 内置回归测试（`uv run --with pytest pytest tests/`），锁定关节索引、奖励符号、NaN 保护等，减少重构与扩展带来的隐患。
+---
+## 上手门槛与部署体验
+- 必备条件：
+  - NVIDIA CUDA GPU（训练）；macOS 仅支持“评估”，不支持训练。
+  - Python 环境管理工具 uv（Astral 出品）。
+  - 在 ARM 板卡（如 Jetson）上首次同步时需要调大 `UV_HTTP_TIMEOUT`，避免大包下载超时中断。
+- 安装与起步：
+  - 官方 Quickstart 做得非常清楚：`git clone` + `uv run train` 一行命令即可开始训练；回放/导出/推理命令也是一行式。整体体验顺滑。
+- 文档质量：
+  - README 覆盖从任务清单、模型组织、观测约定、导出注意事项到 Backlash 变体与域随机化开关的位置。
+  - AGENTS.md 补充了奖励设计与环境构建的 distilled playbook，为进阶与“AI 辅助编程”提供指路。
+- 暂未看到现成的 Docker 一键部署；mjlab 的生态里有 Docker/Colab 等多种入口，若 microduck_rl 后续补上 Dockerfile，将进一步降低环境差异带来的踩坑。
+---
+## 目标人群与收益
+- 目标人群：
+  - 机器人/强化学习研究者与工程师：需要一套完整的 sim2real 案例、高质量任务和可扩展框架，作为研究或产品原型的基线。
+  - 教育工作者与高校课程：以“小鸭子学会走路/滑旱冰”为教学主线，覆盖仿真、RL、部署全流程，作业与实验可围绕任务改写、奖励设计、域随机化策略展开。
+  - 创客与硬件爱好者：持有 Microduck 真机，希望自定义技能并部署；通过 ONNX 导出与 runtime 对接，形成“训练—真机验证”闭环。
+  - AI 编码与 LLM 工具链探索者：AGENTS.md 的“为 AI 智能体准备”的设计思路，可作为“用 LLM 来改进/生成 RL 环境与策略”的试验场。
+- 核心收益：
+  - 显著提高效率：GPU 高吞吐训练 + 开箱任务 + 一键导出，让“新技能从想法到真机”的时间从数周缩短到小时级。
+  - 降低试错成本：先在仿真中迭代策略与奖励，再用 `infer_policy.py` 做准部署验证，最后上真机；减少硬件损坏与调试时间。
+  - 系统掌握 sim2real：项目把“执行器建模、域随机化、齿隙、统一观测、导出与部署”串成一套可复制的 recipe，既可照搬也可迁移到其他机器人。
+  - 教学与演示价值强：形象可爱的小鸭子、丰富的技能组合，非常适合课堂、工作坊与社区分享。
+---
+## 竞品/同类对比
+- 与 mjlab 的关系：microduck_rl 是 mjlab 生态里的“垂直应用库”； mjlab 提供通用框架，microduck_rl 则把框架能力收束到一个具体的双足机器人上，并给出真机部署路径与 best practices。
+- 与 RSL-RL 的关系：RSL-RL 提供轻量、多 GPU 的 PPO 等算法；mjlab 已集成 RSL-RL；microduck_rl 处于“下游使用者”位置，侧重环境与 recipe，而非算法创新。
+- 与 Isaac Lab/Isaac Gym 等大生态对比：
+  - mjlab/MuJoCo Warp 在“轻量化 + 直接访问原生数据结构”上有优势，且对 MuJoCo 用户更友好；Isaac Lab 生态庞大、硬件厂商支持广，但对小规模个人项目来说 mjlab 的门槛更低。
+- 与其他“双足/足式 RL”项目对比（一类是纯仿真无真机、一类是真机但缺乏统一任务栈与部署工具链）：
+  - microduck_rl 的独特竞争力在于：从物理层（BAM）、到随机化、到任务多样性、到统一观测、到 ONNX 导出与真机 runtime 的全链路打通，且以一个非常具体、易于获取的小机器人为载体。
+---
+## 局限与不足
+- GPU 硬件门槛：训练依赖 CUDA GPU，没有 GPU 需要借助 Hugging Face Jobs 或其他云资源；对没有 GPU 且不愿用云的用户来说门槛较高。
+- 平台兼容性：当前对 macOS 仅支持“评估”，训练仍需 NVIDIA 环境；多平台支持后续要看 mjlab 社区的发展方向。
+- 学习曲线仍不低：尽管 Quickstart 简单，但真正上手需理解 PPO、域随机化、观测/奖励设计、MJCF 基本概念与 ONNX 部署流程；完全的小白需要配合教程或课程。
+- 缺少“开箱即用”的预训练 ONNX 包：官方在产品页展示了多种预训练技能，但本仓库更侧重环境与 recipe；若能提供一些“可直接加载运行”的 ONNX 模型链接，会让第一次体验更顺畅（可结合 microduck 仓库或官网资料使用）。
+- 社区规模尚在早期：截至当前，仓库约 648 Star、120 Fork，Issues 与 PR 数量较少；项目更新与社区讨论的活跃度仍需观察，但作为刚刚发布/进入公众视野的项目，已具备良好起点。
+---
+## 结语与行动建议
+- 终极评判：microduck_rl 把“小机器人动起来”这件事，从手工艺术的范畴拉到了可复制、可教学、可扩展的工程层面。它在技术选型（mjlab + BAM + MuJoCo Warp）、工程实践（域随机化、Backlash、统一观测、ONNX 导出/部署）、与开发者体验（uv 一键起训、HF 远程训练、测试覆盖）上都做得相当成熟，是当前“足式/双足 RL + sim2real”领域里一份非常难得的开源“参考实现”。
+- 行动建议（按角色）：
+  - 如果你已有一块 NVIDIA GPU：
+    - 立刻照着 Quickstart 跑一遍 `train`，亲眼看到小鸭子在 4096 个并行环境里“从乱晃到走得稳”，再跑一遍 `play` 与 `infer_policy.py` 体验热插拔多策略。
+  - 如果你没有本地 GPU：
+    - 使用 `--hf-jobs` 提交训练任务，或在 Hugging Face Spaces 的 Microduck Sandbox 里先玩一下仿真，感受物理与 RL 的交互。
+  - 如果你持有或打算购买 Microduck 真机：
+    - 把 microduck_rl 当作“技能工厂”，先复刻官方技能，再尝试改写奖励与任务，用自己的技能替换出厂 ONNX。
+  - 如果你是课程讲师或团队 Lead：
+    - 把 microduck_rl 的 sim2real 拆解为若干实验：环境构建、奖励设计、域随机化、导出部署，让学生围绕小鸭子完成从仿真到真机的端到端项目。
+- 最后提醒：务必使用官方的 `scripts/export.py` 导出 ONNX，并确保 runtime 使用同一版本导出的模型，避免归一化不匹配导致策略表现异常；初次训练时建议先从 `Mjlab-Velocity-Flat-MicroDuck` 开始，拿到 baseline 再尝试更难的 Rough/Backlash/招式类任务。

@@ -2,15 +2,15 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 87
+      "count": 89
     },
     {
       "tag": "自动化",
-      "count": 63
+      "count": 64
     },
     {
       "tag": "开源项目",
-      "count": 48
+      "count": 49
     },
     {
       "tag": "GitHub",
@@ -22,7 +22,7 @@
     },
     {
       "tag": "AI Agent",
-      "count": 35
+      "count": 36
     },
     {
       "tag": "隐私保护",
@@ -33,19 +33,19 @@
       "count": 18
     },
     {
+      "tag": "MCP",
+      "count": 16
+    },
+    {
       "tag": "工作流",
       "count": 16
     },
     {
-      "tag": "Anthropic",
-      "count": 15
-    },
-    {
-      "tag": "MCP",
-      "count": 15
-    },
-    {
       "tag": "DevOps",
+      "count": 15
+    },
+    {
+      "tag": "Anthropic",
       "count": 15
     },
     {
@@ -65,6 +65,10 @@
       "count": 12
     },
     {
+      "tag": "Rust",
+      "count": 11
+    },
+    {
       "tag": "知识管理",
       "count": 11
     },
@@ -75,24 +79,20 @@
     {
       "tag": "RAG",
       "count": 11
-    },
-    {
-      "tag": "Rust",
-      "count": 10
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 207
+      "count": 212
     },
     {
       "name": "AI 编程",
-      "count": 163
+      "count": 164
     },
     {
       "name": "效率工具",
-      "count": 61
+      "count": 62
     },
     {
       "name": "开源项目",
@@ -111,11 +111,11 @@
       "count": 15
     },
     {
-      "name": "隐私安全",
+      "name": "AI 框架",
       "count": 10
     },
     {
-      "name": "AI 框架",
+      "name": "隐私安全",
       "count": 10
     },
     {
@@ -166,11 +166,11 @@
   "topSuitable": [
     {
       "name": "开源项目维护者",
-      "count": 20
+      "count": 21
     },
     {
       "name": "技术团队负责人",
-      "count": 17
+      "count": 18
     },
     {
       "name": "AI 应用开发者",
@@ -181,11 +181,15 @@
       "count": 14
     },
     {
+      "name": "UI/UX 设计师",
+      "count": 14
+    },
+    {
       "name": "内容创作者",
       "count": 14
     },
     {
-      "name": "UI/UX 设计师",
+      "name": "个人开发者",
       "count": 14
     },
     {
@@ -197,16 +201,8 @@
       "count": 13
     },
     {
-      "name": "个人开发者",
-      "count": 13
-    },
-    {
       "name": "DevOps 工程师",
       "count": 12
-    },
-    {
-      "name": "隐私敏感用户",
-      "count": 10
     },
     {
       "name": "开发者与产品经理",
@@ -218,6 +214,10 @@
     },
     {
       "name": "AI Agent 构建者",
+      "count": 10
+    },
+    {
+      "name": "隐私敏感用户",
       "count": 10
     },
     {
@@ -280,7 +280,7 @@
     },
     {
       "name": "python",
-      "count": 25
+      "count": 26
     },
     {
       "name": "agents",
@@ -300,22 +300,22 @@
     },
     {
       "name": "typescript",
-      "count": 19
+      "count": 20
     },
     {
       "name": "rust",
-      "count": 17
+      "count": 18
     },
     {
       "name": "claude-skills",
       "count": 16
     },
     {
-      "name": "workflow-automation",
+      "name": "prompt-engineering",
       "count": 16
     },
     {
-      "name": "prompt-engineering",
+      "name": "workflow-automation",
       "count": 16
     },
     {
@@ -401,7 +401,7 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 473043,
+      "stars": 473059,
       "appearances": 0
     },
     {
@@ -455,7 +455,7 @@
     {
       "repo": "openai/codex",
       "url": "https://github.com/openai/codex",
-      "stars": 119964,
+      "stars": 119978,
       "appearances": 4
     }
   ],
@@ -463,13 +463,13 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 25387,
+      "stars": 25409,
       "appearances": 8
     },
     {
       "repo": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 35563,
+      "stars": 35566,
       "appearances": 6
     },
     {
@@ -487,13 +487,13 @@
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 51122,
+      "stars": 51134,
       "appearances": 6
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 2797,
+      "stars": 2802,
       "appearances": 5
     },
     {
@@ -505,19 +505,19 @@
     {
       "repo": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 38917,
+      "stars": 38919,
       "appearances": 5
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "stars": 38387,
+      "stars": 38460,
       "appearances": 5
     },
     {
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "stars": 51740,
+      "stars": 51763,
       "appearances": 5
     }
   ]
