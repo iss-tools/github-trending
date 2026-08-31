@@ -1,6 +1,58 @@
 {
   "all": [
     {
+      "id": "54f55b6e-fbf7-4f06-9895-c7053e504643",
+      "url": "https://github.com/CodebuffAI/freebuff",
+      "domain": "github.com",
+      "repo": "CodebuffAI/freebuff",
+      "description": "Freebuff 是一套多智能体编程工具，提供 Desktop/CLI/Web/Cloud/Chat 五种形态，通过多智能体协作实现从自然语言到代码、测试与预览的闭环。支持免费使用、免 API Key，仓库以 Apache-2.0 协议开源。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-31T15:05:14.823Z",
+      "metaData": {
+        "forks": "1219",
+        "stars": "11320",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://freebuff.com",
+        "description": "The free coding agent. Contribute to CodebuffAI/freebuff development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "开源",
+          "免订阅",
+          "CLI",
+          "编程助手"
+        ],
+        "cover": "",
+        "title": "Freebuff 多智能体 AI 编程工具深度评测",
+        "ability": [
+          "多智能体协作",
+          "免订阅与免配置",
+          "五端覆盖",
+          "项目级理解与闭环执行",
+          "Apache-2.0 开源"
+        ],
+        "summary": "免订阅、免 API Key 的多智能体编程助手，大幅缩短自然语言到可运行代码的路径。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学生与自由职业者",
+          "终端工作流用户",
+          "远程团队与维护者",
+          "想二次开发/自建智能体的开发者"
+        ],
+        "description": "Freebuff 是一套多智能体编程工具，提供 Desktop/CLI/Web/Cloud/Chat 五种形态，通过多智能体协作实现从自然语言到代码、测试与预览的闭环。支持免费使用、免 API Key，仓库以 Apache-2.0 协议开源。"
+      },
+      "type": "project",
+      "dateAdded": "20260831"
+    },
+    {
       "id": "05214f20-4459-4479-a549-f511489210d2",
       "url": "https://github.com/jingyaogong/minimind",
       "domain": "github.com",
@@ -11,8 +63,15 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "7298",
+        "stars": "55855",
+        "topics": [
+          "artificial-intelligence",
+          "large-language-model"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://jingyaogong.github.io/minimind",
+        "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h! - jingyaogong/minimind"
       },
       "summaryData": {
         "tags": [
@@ -60,8 +119,19 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:04:52.859Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "59233",
+        "stars": "23188",
+        "topics": [
+          "csharp",
+          "wand",
+          "wand-enhancer",
+          "wand-pro",
+          "wemod",
+          "wpf"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://gitlab.com/kitbyte/wand-enhancer",
+        "description": "Advanced UX and interoperability extension for Wand (WeMod) app - k1tbyte/Wand-Enhancer"
       },
       "summaryData": {
         "tags": [
@@ -108,8 +178,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:48:28.610Z",
       "metaData": {
-        "forks": "1189",
-        "stars": "17161",
+        "forks": "1191",
+        "stars": "17217",
         "topics": [
           "markdown",
           "nodejs",
@@ -278,8 +348,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "722",
-        "stars": "6100",
+        "forks": "725",
+        "stars": "6133",
         "topics": [
           "chinese",
           "disclosure",
@@ -337,8 +407,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:36:12.745Z",
       "metaData": {
-        "forks": "179",
-        "stars": "1043",
+        "forks": "185",
+        "stars": "1067",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://pollen-robotics.com/microduck",
@@ -389,8 +459,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:32:20.286Z",
       "metaData": {
-        "forks": "4199",
-        "stars": "9292",
+        "forks": "4201",
+        "stars": "9333",
         "topics": [
           "code-quality",
           "command-line-tool",
@@ -504,8 +574,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
-        "forks": "888",
-        "stars": "10377",
+        "forks": "891",
+        "stars": "10436",
         "topics": [
           "apple",
           "appstore",
@@ -753,8 +823,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "4656",
-        "stars": "25834",
+        "forks": "4679",
+        "stars": "26136",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -806,8 +876,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "3712",
-        "stars": "35888",
+        "forks": "3718",
+        "stars": "35940",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -919,8 +989,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:02:14.477Z",
       "metaData": {
-        "forks": "435",
-        "stars": "3918",
+        "forks": "439",
+        "stars": "4021",
         "topics": [
           "cybersecurity",
           "cybersecurity-tools",
@@ -1110,8 +1180,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:42:44.966Z",
       "metaData": {
-        "forks": "760",
-        "stars": "5189",
+        "forks": "764",
+        "stars": "5279",
         "topics": [
           "ai-agents",
           "amd",
@@ -1180,8 +1250,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3227",
-        "stars": "29451",
+        "forks": "3231",
+        "stars": "29483",
         "topics": [
           "abliteration",
           "llm",
@@ -1237,8 +1307,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "1862",
-        "stars": "15506",
+        "forks": "1871",
+        "stars": "15559",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -1646,8 +1716,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9316",
-        "stars": "76603",
+        "forks": "9322",
+        "stars": "76628",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -1817,8 +1887,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:47:42.714Z",
       "metaData": {
-        "forks": "332",
-        "stars": "3393",
+        "forks": "337",
+        "stars": "3422",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -2181,8 +2251,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:22:32.684Z",
       "metaData": {
-        "forks": "10883",
-        "stars": "39401",
+        "forks": "10884",
+        "stars": "39403",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://google.github.io/googletest/",
@@ -2620,8 +2690,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3741",
-        "stars": "40378",
+        "forks": "3747",
+        "stars": "40445",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -2752,8 +2822,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:51:42.798Z",
       "metaData": {
-        "forks": "1458",
-        "stars": "11869",
+        "forks": "1459",
+        "stars": "11878",
         "topics": [
           "agent",
           "claude",
@@ -2812,8 +2882,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2376",
-        "stars": "37006",
+        "forks": "2409",
+        "stars": "37401",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -2885,8 +2955,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:15:48.702Z",
       "metaData": {
-        "forks": "154",
-        "stars": "3381",
+        "forks": "155",
+        "stars": "3396",
         "topics": [
           "browser-history",
           "go",
@@ -2953,8 +3023,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
-        "forks": "3981",
-        "stars": "35698",
+        "forks": "3982",
+        "stars": "35706",
         "topics": [
           "claude-code",
           "mcp",
@@ -3243,8 +3313,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3183",
-        "stars": "23192",
+        "forks": "3189",
+        "stars": "23234",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -3296,8 +3366,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "8910",
-        "stars": "51501",
+        "forks": "8915",
+        "stars": "51517",
         "topics": [
           "agents",
           "ai",
@@ -3915,8 +3985,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T04:32:57.849Z",
       "metaData": {
-        "forks": "13178",
-        "stars": "38864",
+        "forks": "13189",
+        "stars": "38927",
         "topics": [
           "ai",
           "ai-agents",
@@ -3981,8 +4051,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "5071",
-        "stars": "21107",
+        "forks": "5093",
+        "stars": "21151",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://t3.codes",
@@ -4034,8 +4104,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52251",
-        "stars": "473392",
+        "forks": "52288",
+        "stars": "473614",
         "topics": [
           "api",
           "apis",
@@ -4346,8 +4416,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "239",
-        "stars": "2993",
+        "forks": "240",
+        "stars": "3009",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4399,8 +4469,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:35:22.295Z",
       "metaData": {
-        "forks": "3846",
-        "stars": "39138",
+        "forks": "3847",
+        "stars": "39155",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://tinyhumans.ai/openhuman",
@@ -4452,8 +4522,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1623",
-        "stars": "25826",
+        "forks": "1630",
+        "stars": "25990",
         "topics": [
           "adhd",
           "claude-",
@@ -4644,8 +4714,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2359",
-        "stars": "25305",
+        "forks": "2368",
+        "stars": "25391",
         "topics": [
           "agent",
           "ai-agent",
@@ -4707,8 +4777,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:45:21.671Z",
       "metaData": {
-        "forks": "8149",
-        "stars": "58763",
+        "forks": "8204",
+        "stars": "59067",
         "topics": [
           "a2a",
           "ai-agents",
@@ -4951,8 +5021,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "12354",
-        "stars": "99564",
+        "forks": "12390",
+        "stars": "99875",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5246,8 +5316,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:40:46.877Z",
       "metaData": {
-        "forks": "2835",
-        "stars": "27374",
+        "forks": "2847",
+        "stars": "27510",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -5312,8 +5382,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "361",
-        "stars": "5259",
+        "forks": "364",
+        "stars": "5314",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5364,7 +5434,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3126",
-        "stars": "29386",
+        "stars": "29398",
         "topics": [
           "ai",
           "language",
@@ -5484,8 +5554,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "399",
-        "stars": "4284",
+        "forks": "402",
+        "stars": "4293",
         "topics": [
           "agent-runtime",
           "ai",
@@ -5604,8 +5674,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
-        "forks": "1849",
-        "stars": "14475",
+        "forks": "1850",
+        "stars": "14492",
         "topics": [
           "ebay",
           "email",
@@ -5722,8 +5792,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2636",
-        "stars": "34531",
+        "forks": "2646",
+        "stars": "34632",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -5781,8 +5851,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4404",
-        "stars": "32600",
+        "forks": "4440",
+        "stars": "32830",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5975,8 +6045,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37009",
-        "stars": "244921",
+        "forks": "37019",
+        "stars": "245022",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -6036,8 +6106,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2559",
-        "stars": "26192",
+        "forks": "2564",
+        "stars": "26238",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -6099,8 +6169,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "529",
-        "stars": "18044",
+        "forks": "531",
+        "stars": "18070",
         "topics": [
           "dpi",
           "gpui",
@@ -6165,8 +6235,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "630",
-        "stars": "9797",
+        "forks": "636",
+        "stars": "9852",
         "topics": [
           "cactus",
           "gemini",
@@ -6249,8 +6319,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "511",
-        "stars": "6329",
+        "forks": "515",
+        "stars": "6344",
         "topics": [],
         "license": "",
         "homepage": "",
