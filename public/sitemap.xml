@@ -66,6 +66,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/daily/20260901.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/weekly/202634.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -82,6 +87,11 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/monthly/202608.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/monthly/202609.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -621,12 +631,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE.html</loc>
+    <loc>https://trending.pptboard.com/tag/GitHub.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/GitHub.html</loc>
+    <loc>https://trending.pptboard.com/tag/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -651,6 +661,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/tag/LLM.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/tag/MCP.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -661,12 +676,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/LLM.html</loc>
+    <loc>https://trending.pptboard.com/tag/%E5%B7%A5%E4%BD%9C%E6%B5%81.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/%E5%B7%A5%E4%BD%9C%E6%B5%81.html</loc>
+    <loc>https://trending.pptboard.com/tag/Rust.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -676,17 +691,22 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/%E5%A4%A7%E6%A8%A1%E5%9E%8B.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trending.pptboard.com/tag/%E8%87%AA%E6%89%98%E7%AE%A1.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/Rust.html</loc>
+    <loc>https://trending.pptboard.com/tag/%E5%A4%A7%E6%A8%A1%E5%9E%8B.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/tag/RAG.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/tag/GitHub%20%E5%BC%80%E6%BA%90.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -697,16 +717,6 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/tag/Docker.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/tag/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/tag/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -746,22 +756,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trending.pptboard.com/category/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/AI%20%E6%A1%86%E6%9E%B6.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/category/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86.html</loc>
+    <loc>https://trending.pptboard.com/category/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -776,6 +776,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/category/AI%20%E6%A1%86%E6%9E%B6.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/category/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/category/%E5%AE%89%E5%85%A8%E5%90%88%E8%A7%84.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -786,17 +796,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E6%95%99%E8%82%B2%E6%95%99%E5%AD%A6.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/category/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/category/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8.html</loc>
+    <loc>https://trending.pptboard.com/category/AI%20%E5%BA%94%E7%94%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -807,6 +807,16 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/category/%E5%BC%80%E6%BA%90%E7%A1%AC%E4%BB%B6.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/category/%E6%95%99%E8%82%B2%E6%95%99%E5%AD%A6.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/category/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -841,12 +851,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/language/C%2B%2B.html</loc>
+    <loc>https://trending.pptboard.com/language/Java.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/language/Java.html</loc>
+    <loc>https://trending.pptboard.com/language/C%2B%2B.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -861,17 +871,22 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/language/HTML.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trending.pptboard.com/language/PowerShell.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/language/HTML.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/language/Jupyter%20Notebook.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/language/Clojure.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -887,11 +902,6 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/language/Swift.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/language/Clojure.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
