@@ -1,6 +1,103 @@
 {
   "all": [
     {
+      "id": "05214f20-4459-4479-a549-f511489210d2",
+      "url": "https://github.com/jingyaogong/minimind",
+      "domain": "github.com",
+      "repo": "jingyaogong/minimind",
+      "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-31T11:09:42.805Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "小模型",
+          "PyTorch",
+          "教学",
+          "大模型训练"
+        ],
+        "cover": "",
+        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
+        "ability": [
+          "全栈训练链路",
+          "原生 PyTorch 教学",
+          "极低成本训练",
+          "多后端部署支持",
+          "强化学习与智能体"
+        ],
+        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 初学者与入门者",
+          "算法研究工程师",
+          "教育培训讲师",
+          "边缘端开发团队",
+          "大模型技术爱好者"
+        ],
+        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
+      },
+      "type": "project",
+      "dateAdded": "20260831"
+    },
+    {
+      "id": "c372a102-6ea5-4c0e-ad9c-681bbf6c26ce",
+      "url": "https://github.com/k1tbyte/Wand-Enhancer",
+      "domain": "github.com",
+      "repo": "k1tbyte/Wand-Enhancer",
+      "description": "这是一款增强 WeMod Wand 客户端的开源工具，支持手机远程控制、自定义脚本注入和本地配置管理，适合懂技术的玩家进行深度定制。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-08-31T11:04:52.859Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "WeMod",
+          "开源项目",
+          "远程控制",
+          "脚本注入",
+          "C#"
+        ],
+        "cover": "",
+        "title": "Wand-Enhancer 深度评测：打造你的专属 WeMod 客户端",
+        "ability": [
+          "本地配置管理",
+          "远程 Web 面板控制",
+          "自定义脚本注入",
+          "自动化版本兼容",
+          "AI 功能集成"
+        ],
+        "summary": "为 WeMod Wand 提供本地增强、远程控制及脚本注入的开源神器。",
+        "category": [
+          "游戏辅助",
+          "效率工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "硬核游戏玩家",
+          "技术极客/开发者",
+          "WeMod 重度用户",
+          "需要远程控制工具的用户"
+        ],
+        "description": "这是一款增强 WeMod Wand 客户端的开源工具，支持手机远程控制、自定义脚本注入和本地配置管理，适合懂技术的玩家进行深度定制。"
+      },
+      "type": "project",
+      "dateAdded": "20260831"
+    },
+    {
       "id": "3fe5ceb3-2bbb-49d1-b496-c5b3d5d5933b",
       "url": "https://github.com/firecrawl/pdf-inspector",
       "domain": "github.com",
@@ -11,8 +108,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:48:28.610Z",
       "metaData": {
-        "forks": "1184",
-        "stars": "17050",
+        "forks": "1187",
+        "stars": "17116",
         "topics": [
           "markdown",
           "nodejs",
@@ -75,7 +172,7 @@
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
         "forks": "2160",
-        "stars": "43699",
+        "stars": "43707",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -132,7 +229,7 @@
       "createdAt": "2026-08-30T12:41:35.177Z",
       "metaData": {
         "forks": "529",
-        "stars": "11082",
+        "stars": "11096",
         "topics": [],
         "license": "License",
         "homepage": "https://corsair.dev",
@@ -181,8 +278,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "715",
-        "stars": "6005",
+        "forks": "718",
+        "stars": "6064",
         "topics": [
           "chinese",
           "disclosure",
@@ -240,8 +337,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:36:12.745Z",
       "metaData": {
-        "forks": "159",
-        "stars": "937",
+        "forks": "168",
+        "stars": "1006",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://pollen-robotics.com/microduck",
@@ -293,7 +390,7 @@
       "createdAt": "2026-08-30T12:32:20.286Z",
       "metaData": {
         "forks": "4199",
-        "stars": "9263",
+        "stars": "9292",
         "topics": [
           "code-quality",
           "command-line-tool",
@@ -351,8 +448,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15330",
-        "stars": "93500",
+        "forks": "15337",
+        "stars": "93542",
         "topics": [
           "ai",
           "mcp"
@@ -407,8 +504,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
-        "forks": "887",
-        "stars": "10339",
+        "forks": "888",
+        "stars": "10377",
         "topics": [
           "apple",
           "appstore",
@@ -477,8 +574,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:18:42.682Z",
       "metaData": {
-        "forks": "5305",
-        "stars": "60672",
+        "forks": "5307",
+        "stars": "60733",
         "topics": [
           "ai-prompts",
           "ai-skill",
@@ -552,7 +649,7 @@
       "createdAt": "2026-08-30T12:11:53.128Z",
       "metaData": {
         "forks": "8325",
-        "stars": "80445",
+        "stars": "80507",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://crawl4ai.com",
@@ -603,8 +700,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1297",
-        "stars": "9857",
+        "forks": "1300",
+        "stars": "9921",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -656,8 +753,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "4604",
-        "stars": "25363",
+        "forks": "4625",
+        "stars": "25582",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -822,8 +919,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:02:14.477Z",
       "metaData": {
-        "forks": "429",
-        "stars": "3794",
+        "forks": "435",
+        "stars": "3918",
         "topics": [
           "cybersecurity",
           "cybersecurity-tools",
@@ -1013,8 +1110,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:42:44.966Z",
       "metaData": {
-        "forks": "743",
-        "stars": "5044",
+        "forks": "760",
+        "stars": "5189",
         "topics": [
           "ai-agents",
           "amd",
@@ -1083,8 +1180,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3220",
-        "stars": "29347",
+        "forks": "3225",
+        "stars": "29407",
         "topics": [
           "abliteration",
           "llm",
@@ -1140,8 +1237,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "1838",
-        "stars": "15380",
+        "forks": "1852",
+        "stars": "15456",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -1318,8 +1415,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:24:10.364Z",
       "metaData": {
-        "forks": "3663",
-        "stars": "13866",
+        "forks": "3665",
+        "stars": "13894",
         "topics": [
           "agents",
           "ai",
@@ -1440,8 +1537,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8074",
-        "stars": "74054",
+        "forks": "8077",
+        "stars": "74097",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -1601,8 +1698,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:04:10.067Z",
       "metaData": {
-        "forks": "5130",
-        "stars": "46670",
+        "forks": "5133",
+        "stars": "46707",
         "topics": [],
         "license": "License",
         "homepage": "https://gitnexus.vercel.app",
@@ -2523,8 +2620,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3713",
-        "stars": "39993",
+        "forks": "3730",
+        "stars": "40215",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -2715,8 +2812,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2315",
-        "stars": "36168",
+        "forks": "2352",
+        "stars": "36674",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -3146,8 +3243,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3172",
-        "stars": "23069",
+        "forks": "3178",
+        "stars": "23135",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -5684,8 +5781,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4338",
-        "stars": "32232",
+        "forks": "4404",
+        "stars": "32600",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5878,8 +5975,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "36709",
-        "stars": "242395",
+        "forks": "37009",
+        "stars": "244921",
         "topics": [
           "ai-agents",
           "anthropic",

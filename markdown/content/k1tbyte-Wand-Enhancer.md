@@ -1,0 +1,126 @@
+# k1tbyte/Wand-Enhancer
+
+[GitHub URL](https://github.com/k1tbyte/Wand-Enhancer)
+
+
+## Wand-Enhancer 深度评测：打造你的专属 WeMod 客户端
+
+> 为 WeMod Wand 提供本地增强、远程控制及脚本注入的开源神器。
+
+- **Tags**: WeMod, 开源项目, 远程控制, 脚本注入, C#
+- **Category**: 游戏辅助, 效率工具, 开发工具
+
+## Details
+
+# 一句话总结
+Wand-Enhancer 是一款为 WeMod 的 Wand 客户端打造的开源增强工具（C#/.NET + 本地 Patcher + 可选远程 Web 面板），通过修补本地客户端（改写 Electron ASAR 完整性熔丝、注入 version.dll 代理）来实现本地配置管理、自动化版本兼容、高级主题与布局自定义、“AI 功能”以及手机远程控制，从而显著改善 Wand 的可用性与可定制性；它不提供官方预编译 .exe，需你自 Fork 并通过 GitHub Actions 构建，社区非常活跃但存在明显的安全与合规门槛。
+---
+## 背景与痛点
+- WeMod/Wand 的痛点：官方客户端功能集中但闭源，用户难以进行本地配置、主题/布局自定义，以及跨设备（如手机）远程控制 Trainer；官方更新频繁时，手动修补或第三方修改容易失效；缺乏可编程扩展接口，高级用户难以进行二次开发。Wand-Enhancer 正是为了解决这类“本地增强”需求而生。
+- 设计理念：把增强能力局限在“本地客户端侧”修改，不对服务端校验做绕过，也不分发任何受版权保护的代码。其实现关键在于改写 Electron 的 ASAR-integrity fuse 字节，从而让修补后的 app.asar 可被加载；并用 version.dll 代理在 Wand 自身进程内注入修改，而不是跨进程注入。这样的设计把“改动面”控制在用户自己机器上。
+---
+## 技术栈与架构解析
+- 技术栈（根据 README 与第三方统计）：
+  - 主要语言：C#（WPF 客户端与 Patcher 逻辑）。
+  - 前端/面板：Node.js + pnpm（远程 Web 面板）。
+  - 原生辅助：CMake + C++（编译 native helper）。
+  - 构建与运行时：MSBuild（Visual Studio 2022 / Build Tools）、.NET Framework 4.8 Desktop targeting pack。
+- 架构与关键组件：
+  - .NET Patcher：运行在用户机器上，负责修改本地 Wand 安装目录中的文件（如 app.asar、相关资源），不做联网更新或遥测。README 明确“不会联系更新或遥测服务”。
+  - version.dll 代理：被 Wand 进程加载，在其内部修改 Electron 的 ASAR-integrity fuse 字节，从而允许修改后的 asar 被接受；这种“自带进程内代理”的设计避免了跨进程注入风险与更多反作弊触点。
+  - Remote Web Panel（可选）：在 PC 上启动一个 HTTP/WebSocket 服务（默认端口 3223），为同一局域网内的设备提供 Web 控制面板；可扫码连接，但不走 HTTPS、无配对码，因此需仅在可信局域网/VPN 使用。面板会调用 Wand 官方 API/CDN 资源（例如训练器翻译与封面），但不含 Wand bearer token 与安装路径等敏感字段。
+  - 自定义脚本注入（JS）：在“打补丁”阶段将你提供的 .js 注入到 Wand 的渲染器进程（Electron renderer），拥有完整 DOM 与 Node require 能力；通过一个小型 WandEnhancer helper（如 WandEnhancer.log、WandEnhancer.remoteUrl 等）与宿主交互。示例强调脚本可能多次运行，需用 globalThis 做一次性守卫。
+- 代码组织与 CI/CD：
+  - 通过 README 可知构建入口为 build.cmd，会依次安装前端依赖、构建面板、用 CMake 编译原生助手、恢复 NuGet 包、构建 WPF 解决方案。构建整合度高，一条命令完成。
+  - 官方未提供 Docker 一键部署。这是一个典型的本地桌面端工具，面向 Windows 的 GUI 工作流，不需要容器化部署。
+---
+## 核心亮点与功能剖析
+- 本地环境配置管理：集中管理 Wand 客户端的本地配置，让用户可持久化、回滚与迁移环境，而不再依赖临时修改或零散的手动调整。这对频繁尝试不同 Trainer 或配置的用户尤为实用。
+- 自动化兼容性调整：当 Wand 更新时，Patcher 可自动适配新的客户端版本并打上对应补丁，避免每次更新都需重新手工修补。从 Release Notes 中可见针对“QR 码渲染桥接”、“ASAR 提取路径遍历与 Pickle payload 分配”等修复，表明维护者跟进及时。
+- 高级布局与主题自定义（纯客户端侧）：在不触碰服务端的前提下，增强布局和主题能力，官方描述为“Client-side only”。这意味着你能更好地定制界面而不破坏与服务端通信的完整性。
+- “AI Features”：README 标注了 AI 特性，但未细述其实现（推测可能为对 Wand 侧已有 AI 能力的集成、快捷调用或面板扩展）。因公开资料有限，我们把它作为一项潜在亮点看待，建议使用前亲自验证具体效果。
+- Remote Web Panel（远程 Web 面板）：PC 与手机在同一 Wi‑Fi 或同一 VPN（如 Tailscale）下时，可在手机浏览器打开控制面板，对正在运行的 Trainer 进行控制；痛点是安全模型较弱（明文 HTTP、无配对码、能访问该端口即可完全控制），因此必须避免暴露到公网。官方明确给出了端口放行与网络隔离（AP 隔离）的排错指南。
+- 自定义脚本注入与可编程性：允许在补丁阶段注入 .js，支持使用 DOM 与 Node require，可对 UI 做深度定制；官方示例演示了如何用 MutationObserver 监听弹窗的出现并打标。这种可编程性将 Wand 从“黑盒客户端”变成“可脚本化前端”。
+---
+## 上手门槛与部署体验
+- 官方强烈建议：不要下载任何“第三方 .exe”。Releases 页只有 Release Notes，不带 .exe；你需要 Fork 仓库，通过 Actions 的“Build executable”工作流自建产物。该策略源自“第三方恶意构建与误标”屡禁不止，也是避免被杀软误报、分发链被劫持的一种权衡。
+- 构建自用流程：
+  - GitHub 账号，Fork 仓库，每次构建前先 Sync Fork。
+  - 在 Fork 的 Actions 页面启用工作流，选择“Build executable”，Run workflow，完成后下载 Artifact 得到压缩包。
+  - 解压后运行 WandEnhancer.exe 完成本地打补丁。
+- 本地源码构建（开发者向）：
+  - 需要准备：CMake、Node.js + pnpm、Visual Studio 2022 或 Build Tools（含 MSBuild、Desktop development with C++ 工作负载）、.NET Framework 4.8 桌面构建工具/targeting pack。
+  - 执行 build.cmd 即可完成前端构建、原生编译、NuGet 恢复与 WPF 编译。
+- 安全与杀软提示：因产物未签名且为“非常规修改工具”，Windows Defender/SmartScreen 可能会弹窗提醒。官方建议：review 源码、检查工作流日志，仅运行自建的二进制。这既是“透明安全”，也抬高了普通用户的使用门槛。
+- Demo / 代码示例（自定义 JS 注入）：
+  - 如何添加：在打补丁对话框选择 .js 文件；或在与 patcher 同级目录放置 renderer-scripts/ 文件夹，放入 .js 即可。
+  - 运行环境：运行在 Wand 的 renderer（Electron 渲染进程），有 DOM 与 Node require；脚本被包裹以避免异常导致崩溃，但可能多次运行，需做 globalThis 守卫。
+  - 最小示例（来自 README）：
+  ```js
+  // 脚本可能多次运行，需做一次性守卫
+  if (!globalThis.__helloScriptInstalled) {
+    globalThis.__helloScriptInstalled = true;
+    WandEnhancer.log("Hello from my custom script!", WandEnhancer.remoteUrl);
+    new MutationObserver(() => {
+      const dialog = document.querySelector("ux-dialog:not([data-seen])");
+      if (dialog) {
+        dialog.setAttribute("data-seen", "1");
+        WandEnhancer.log("A dialog opened.");
+      }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+  }
+  ```
+  这段代码展示了如何在 Wand 的 UI 层监听 DOM 变化并做出自定义响应，非常直观易懂。
+---
+## 社区活跃度与生命力
+- 指标概览：
+  - Stars/Fork：从公开统计页面看，Star 数快速增长（近期在 C# 类目中十分靠前），Fork 数很高，显示大量用户进行了 Fork 并自建。
+  - PR：存在多个近期 PR（例如 2026 年 7-8 月间由贡献者 divya0795 提交的若干修复 PR），显示社区持续提交修复与改进。
+  - Release：1.0.9.4 等版本持续发布，每个版本包含明确的“修复”列表，如 QR 码、ASAR 提取与恢复、备份还原、静态链接 Visual C++ 运行时等，表明项目在积极跟进 bug 与兼容性问题。
+  - Issues/Discussions：Issues 数量不少，且 Discussions 板块有活跃互动；例如“按提示操作后仍不工作”等问题得到社区讨论。整体来看，问题响应与修复节奏在开源工具中属上游水平。
+- 生态与周边：项目本身提供了核心“补丁 + 面板 + 脚本注入”能力；自定义脚本生态依赖用户自行编写或社区分享，官方未运营脚本市场。安全性高度依赖“只信任你能理解来源的脚本”。
+---
+## 目标人群与收益
+- 最佳受众：
+  - 硬核玩家/多开用户：频繁使用 WeMod/Wand、希望在不同游戏/版本间快速切换与定制配置的用户。
+  - 懂一点技术的玩家：愿意按官方指引 Fork、跑 Actions、理解 Windows 安全提示，能阅读并简单修改 JavaScript 脚本。
+  - 开发者/极客：想把 Wand 当“可编程前端”来玩，注入自定义逻辑、UI 增强，甚至做实验性集成。
+- 带来的具体收益：
+  - 效率提升：集中管理本地配置、一键自动化版本兼容，减少因官方更新导致的“不能用”手忙脚乱。
+  - 可定制性增强：主题/布局与 JS 注入让你大幅优化 UI 与交互，把 Wand 改造成更趁手的工具。
+  - 远程控制能力：同一局域网/VPN 下手机访问 Trainer，提升“躺平/客厅模式”下的操作体验，避免来回切屏。
+  - 可编程能力：利用脚本注入与 WandEnhancer helper 做自动化（例如自动监测特定弹窗、按需执行命令）。
+---
+## 竞品/同类对比（相对位置与独特竞争力）
+- 同类工具：
+  - 直接替代品少，多数“修改客户端”的做法要么是零散的 Hex 补丁，要么是高度定制的单次脚本；Wand-Enhancer 的系统性“Patcher + version.dll 代理 + Web 面板 + 脚本注入”组合，在功能完整性与维护持续性上具备明显优势。
+  - 与通用游戏修改/模组工具对比：Wand-Enhancer 不针对具体游戏，而是增强“Trainer 客户端本身”，定位在“工具的工具”，这类定位的项目较少。
+- 独特竞争力：
+  - 安全设计意识：公开详细的安全声明、明确“无遥测”“无官方 exe”，引导用户自建，降低了被恶意篡改供应链的风险。
+  - 文档清晰：README 对安全边界、网络配置、脚本注入与构建步骤都有明确说明，包含“为什么没有 .exe”“是否会联网”等 Q&A，对新手友好。
+  - 社区活跃与快速迭代：从 Release 与 PR 可见维护者与贡献者快速跟进问题，Bug 修复与新版本节奏良好。
+---
+## 局限与不足
+- 上手门槛偏高：
+  - 必须理解 GitHub、Fork、Actions 工作流，还需自行处理杀软误报，对普通玩家来说是硬门槛。
+  - 不提供 Docker 或“一键安装包”，部署完全依赖 Windows 环境 + Visual Studio 生态，对非 Windows 用户不友好。
+- 安全与合规风险：
+  - 本地修改客户端可能涉及 ToS 边界；尽管官方声明“不绕过服务端校验、不分发受版权保护代码”，但此类第三方增强通常存在账号/封禁风险，需要用户自行评估。
+  - Remote Web Panel 使用明文 HTTP 且无配对码，端口一旦被暴露到公网即有被任意访问控制的风险；官方已提示切勿直接暴露到互联网，但错误配置仍可能发生。
+- 功能可见性与文档局限：
+  - “AI Features”缺乏详细说明与效果演示，具体能力边界需用户自测；文档未列出已知的客户端版本兼容矩阵，存在试错成本。
+- 误报与信任链：
+  - 自建二进制虽来源可控，但未签名，仍可能触发杀软；部分用户可能无法区分“官方方案”和“第三方恶意 .exe”，容易受骗。
+---
+## 结语与行动建议（通用：终极评判）
+如果你是重度 WeMod/Wand 用户、愿意折腾一点技术流程，并希望把客户端真正“做成自己的工具”，Wand-Enhancer 是当前生态里少有的成熟方案——它把“本地增强”这件事做得系统、可维护且透明。但若你只是偶尔使用 Wand，或不愿面对 GitHub/Actions/杀软这些门槛，那么它可能带来的摩擦会大于收益，需谨慎评估。
+行动建议（按角色）：
+- 普通玩家：
+  - 首先评估你是否需要“远程控制”“主题/脚本注入”这类进阶能力；如果否，建议继续使用官方客户端即可。
+  - 如决定使用，务必只从自己 Fork 的 Actions 下载产物，拒绝任何“第三方 .exe/网盘/YT 描述”下载。
+- 开发者/极客：
+  - 强烈建议先从最小 JS 注入示例上手，熟悉 WandEnhancer helper 与 DOM 环境，再逐步尝试更复杂的自动化与 UI 改造。
+  - 为安全起见，Remote Web Panel 仅在局域网或受控 VPN 下使用，并为 3223 端口设置防火墙白名单，避免公网暴露。
+- 风险与合规意识：
+  - 明确“本地修改不等于合规保证”，若账号对游戏平台尤为重要，建议在不重要账号/环境先做长时间稳定性与合规性测试。
+总体而言，Wand-Enhancer 是一个设计思路清晰、社区活跃、文档透明度很高的“本地增强”工具，但它的价值与风险都高度集中在“技术门槛”与“安全实践”上——你愿意为可控性与自由度付出这些学习与运维成本吗？这个问题的答案，将决定它是否适合你。
