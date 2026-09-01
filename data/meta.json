@@ -2,46 +2,46 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 125
+      "count": 133
     },
     {
       "tag": "自动化",
-      "count": 82
-    },
-    {
-      "tag": "GitHub",
-      "count": 63
+      "count": 86
     },
     {
       "tag": "开源项目",
-      "count": 63
+      "count": 65
+    },
+    {
+      "tag": "GitHub",
+      "count": 64
     },
     {
       "tag": "AI Agent",
-      "count": 54
+      "count": 57
     },
     {
       "tag": "Claude",
-      "count": 45
+      "count": 46
     },
     {
       "tag": "隐私保护",
-      "count": 27
+      "count": 28
     },
     {
       "tag": "本地部署",
-      "count": 24
+      "count": 25
     },
     {
       "tag": "LLM",
-      "count": 20
-    },
-    {
-      "tag": "MCP",
-      "count": 19
+      "count": 22
     },
     {
       "tag": "自托管",
+      "count": 21
+    },
+    {
+      "tag": "MCP",
       "count": 19
     },
     {
@@ -53,19 +53,23 @@
       "count": 18
     },
     {
+      "tag": "Rust",
+      "count": 18
+    },
+    {
       "tag": "工作流",
       "count": 18
     },
     {
-      "tag": "Rust",
+      "tag": "RAG",
       "count": 17
     },
     {
-      "tag": "RAG",
-      "count": 16
+      "tag": "GitHub 开源",
+      "count": 17
     },
     {
-      "tag": "GitHub 开源",
+      "tag": "Docker",
       "count": 16
     },
     {
@@ -75,36 +79,32 @@
     {
       "tag": "效率工具",
       "count": 15
-    },
-    {
-      "tag": "Docker",
-      "count": 15
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 289
+      "count": 298
     },
     {
       "name": "AI 编程",
-      "count": 216
+      "count": 223
     },
     {
       "name": "效率工具",
-      "count": 86
+      "count": 89
     },
     {
       "name": "开源项目",
-      "count": 38
+      "count": 41
     },
     {
       "name": "开发者工具",
-      "count": 30
+      "count": 32
     },
     {
       "name": "生活效率",
-      "count": 23
+      "count": 24
     },
     {
       "name": "开源社区",
@@ -120,10 +120,14 @@
     },
     {
       "name": "设计资源",
-      "count": 13
+      "count": 14
     },
     {
       "name": "资源合集",
+      "count": 12
+    },
+    {
+      "name": "科研工具",
       "count": 12
     },
     {
@@ -135,12 +139,8 @@
       "count": 11
     },
     {
-      "name": "科研工具",
-      "count": 10
-    },
-    {
       "name": "AI 应用",
-      "count": 10
+      "count": 11
     },
     {
       "name": "系统工具",
@@ -166,7 +166,7 @@
   "topSuitable": [
     {
       "name": "开源项目维护者",
-      "count": 27
+      "count": 28
     },
     {
       "name": "技术团队负责人",
@@ -174,19 +174,23 @@
     },
     {
       "name": "内容创作者",
-      "count": 21
+      "count": 22
+    },
+    {
+      "name": "AI 应用开发者",
+      "count": 20
     },
     {
       "name": "个人开发者",
       "count": 20
     },
     {
-      "name": "AI 应用开发者",
-      "count": 19
-    },
-    {
       "name": "安全研究员",
       "count": 18
+    },
+    {
+      "name": "DevOps 工程师",
+      "count": 17
     },
     {
       "name": "UI/UX 设计师",
@@ -197,7 +201,7 @@
       "count": 16
     },
     {
-      "name": "DevOps 工程师",
+      "name": "隐私敏感用户",
       "count": 16
     },
     {
@@ -205,7 +209,7 @@
       "count": 14
     },
     {
-      "name": "隐私敏感用户",
+      "name": "独立开发者",
       "count": 14
     },
     {
@@ -213,7 +217,7 @@
       "count": 13
     },
     {
-      "name": "独立开发者",
+      "name": "AI 开发者",
       "count": 13
     },
     {
@@ -233,61 +237,57 @@
       "count": 12
     },
     {
-      "name": "AI 开发者",
-      "count": 12
-    },
-    {
       "name": "DevOps/SRE",
       "count": 12
     },
     {
-      "name": "AI 编程开发者",
+      "name": "教育工作者",
       "count": 11
     }
   ],
   "topTopics": [
     {
       "name": "llm",
-      "count": 59
-    },
-    {
-      "name": "ai-agents",
-      "count": 57
+      "count": 60
     },
     {
       "name": "claude-code",
-      "count": 56
+      "count": 58
+    },
+    {
+      "name": "ai-agents",
+      "count": 58
     },
     {
       "name": "ai",
-      "count": 51
+      "count": 53
     },
     {
       "name": "agent-skills",
-      "count": 46
+      "count": 47
     },
     {
       "name": "claude",
-      "count": 44
+      "count": 47
     },
     {
       "name": "mcp",
-      "count": 41
+      "count": 42
+    },
+    {
+      "name": "python",
+      "count": 38
     },
     {
       "name": "skills",
       "count": 36
     },
     {
-      "name": "python",
-      "count": 36
+      "name": "developer-tools",
+      "count": 32
     },
     {
       "name": "dsh-plugin",
-      "count": 31
-    },
-    {
-      "name": "developer-tools",
       "count": 31
     },
     {
@@ -300,7 +300,7 @@
     },
     {
       "name": "rust",
-      "count": 24
+      "count": 25
     },
     {
       "name": "typescript",
@@ -308,6 +308,10 @@
     },
     {
       "name": "claude-skills",
+      "count": 22
+    },
+    {
+      "name": "local-first",
       "count": 21
     },
     {
@@ -315,34 +319,30 @@
       "count": 21
     },
     {
-      "name": "local-first",
+      "name": "prompt-engineering",
       "count": 20
     },
     {
-      "name": "prompt-engineering",
-      "count": 19
-    },
-    {
       "name": "ai-agent",
-      "count": 19
+      "count": 20
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 146
+      "count": 154
     },
     {
       "name": "TypeScript",
-      "count": 72
+      "count": 74
     },
     {
       "name": "JavaScript",
-      "count": 43
+      "count": 44
     },
     {
       "name": "Rust",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Shell",
@@ -365,15 +365,15 @@
       "count": 5
     },
     {
+      "name": "HTML",
+      "count": 5
+    },
+    {
       "name": "Mojo",
       "count": 4
     },
     {
       "name": "PowerShell",
-      "count": 4
-    },
-    {
-      "name": "HTML",
       "count": 4
     },
     {
@@ -393,16 +393,16 @@
       "count": 2
     },
     {
+      "name": "Crystal",
+      "count": 2
+    },
+    {
       "name": "Swift",
       "count": 2
     },
     {
       "name": "C#",
       "count": 2
-    },
-    {
-      "name": "Crystal",
-      "count": 1
     }
   ],
   "topStars": [
@@ -421,14 +421,14 @@
     {
       "repo": "donnemartin/system-design-primer",
       "url": "https://github.com/donnemartin/system-design-primer",
-      "stars": 367232,
+      "stars": 367263,
       "appearances": 0
     },
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 245579,
-      "appearances": 4
+      "stars": 245604,
+      "appearances": 5
     },
     {
       "repo": "mattpocock/skills",
@@ -471,19 +471,19 @@
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "stars": 26855,
+      "stars": 26877,
       "appearances": 8
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "stars": 41327,
-      "appearances": 7
+      "stars": 41361,
+      "appearances": 8
     },
     {
       "repo": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
-      "stars": 41216,
+      "stars": 41352,
       "appearances": 7
     },
     {
@@ -507,13 +507,13 @@
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 51764,
+      "stars": 51774,
       "appearances": 6
     },
     {
       "repo": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "stars": 3128,
+      "stars": 3133,
       "appearances": 5
     },
     {
