@@ -1,6 +1,405 @@
 {
   "all": [
     {
+      "id": "b94021e4-d8e2-4e9b-90bb-7281d59930ed",
+      "url": "https://github.com/averygan/reclip",
+      "domain": "github.com",
+      "repo": "averygan/reclip",
+      "description": "Reclip 是一个干净、轻量的自托管下载器，封装了 yt-dlp 的强大能力，支持 YouTube、TikTok 等主流平台的视频与音频下载。它架构简单、易于部署，并提供 API 以便集成，适合注重隐私和效率的个人与小团队使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:27:49.507Z",
+      "metaData": {
+        "forks": "1307",
+        "stars": "7344",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI. - averygan/reclip"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "媒体下载",
+          "自托管",
+          "Docker",
+          "yt-dlp"
+        ],
+        "cover": "",
+        "title": "Reclip：极简自托管媒体下载器深度评测",
+        "ability": [
+          "支持 1000+ 站点下载",
+          "一键批量下载与去重",
+          "极简架构与易部署",
+          "自动更新 yt-dlp",
+          "提供 API 接口"
+        ],
+        "summary": "一个基于 yt-dlp 的自托管媒体下载器，支持 1000+ 站点，提供极简 Web 界面，让下载完全可控。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "自托管服务"
+        ],
+        "suitable": [
+          "隐私敏感用户",
+          "内容创作者",
+          "自托管爱好者",
+          "开发运维人员"
+        ],
+        "description": "Reclip 是一个干净、轻量的自托管下载器，封装了 yt-dlp 的强大能力，支持 YouTube、TikTok 等主流平台的视频与音频下载。它架构简单、易于部署，并提供 API 以便集成，适合注重隐私和效率的个人与小团队使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "92859cab-1394-4dc7-9e8b-cec4caf56097",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "domain": "github.com",
+      "repo": "VoltAgent/awesome-design-md",
+      "description": "这是一个整理了知名产品 DESIGN.md 文档的开源项目，旨在让 AI 读取并模仿特定 UI 风格。它解决了 AI 生成 UI 时风格不一致的痛点，提供结构化的设计 Token 和直观的预览页，大幅降低设计与开发的协作成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:22:30.395Z",
+      "metaData": {
+        "forks": "12746",
+        "stars": "112219",
+        "topics": [
+          "awesome-list",
+          "design-md",
+          "design-system",
+          "design-tokens",
+          "figma",
+          "google-stitch",
+          "landing-page",
+          "vibe-coding",
+          "vibe-design",
+          "vibecoding"
+        ],
+        "license": "MIT license",
+        "homepage": "https://getdesign.md/",
+        "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI. - VoltAgent/awesome-design-md"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Design System",
+          "AI",
+          "UI设计",
+          "Prompt"
+        ],
+        "cover": "",
+        "title": "awesome-design-md 评测：给 AI 用的设计说明书大合集",
+        "ability": [
+          "真实设计文档收录",
+          "遵循 Google DESIGN.md 规范",
+          "可视化预览支持",
+          "AI 风格复刻",
+          "复古与现代风格全覆盖"
+        ],
+        "summary": "收录真实网站设计文档，让 AI 快速模仿 UI 风格的 GitHub 神器。",
+        "category": [
+          "AI 编程",
+          "设计资源",
+          "开发者工具"
+        ],
+        "suitable": [
+          "独立开发者",
+          "前端工程师",
+          "AI 编程爱好者",
+          "无设计团队的项目组",
+          "设计系统学习者"
+        ],
+        "description": "这是一个整理了知名产品 DESIGN.md 文档的开源项目，旨在让 AI 读取并模仿特定 UI 风格。它解决了 AI 生成 UI 时风格不一致的痛点，提供结构化的设计 Token 和直观的预览页，大幅降低设计与开发的协作成本。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "ec292d27-f7a8-4a0d-adb7-1ba81532b289",
+      "url": "https://github.com/browser-use/video-use",
+      "domain": "github.com",
+      "repo": "browser-use/video-use",
+      "description": "video-use 是一个面向 AI 智能体的开源视频剪辑技能。它利用音频转录将视频转化为“可读文本”，通过简单的自然语言指令即可完成去废话、调色、加字幕等复杂剪辑操作，大幅降低视频制作门槛，提升效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:19:21.939Z",
+      "metaData": {
+        "forks": "2789",
+        "stars": "22542",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Edit videos with coding agents. Contribute to browser-use/video-use development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "视频剪辑",
+          "AI Agent",
+          "自动化",
+          "ffmpeg",
+          "开源"
+        ],
+        "cover": "",
+        "title": "video-use：基于对话的 AI 自动视频剪辑技能",
+        "ability": [
+          "对话式剪辑",
+          "自动转录与生成字幕",
+          "自动化调色渲染",
+          "多 AI 平台兼容",
+          "质量自检修复"
+        ],
+        "summary": "通过对话指令让 AI 自动完成视频剪辑，生成字幕与成品，专为开发者打造的高效工具。",
+        "category": [
+          "AI 编程",
+          "视频工具",
+          "开发者工具"
+        ],
+        "suitable": [
+          "AI 编程工具用户",
+          "视频/播客创作者",
+          "技术型自媒体",
+          "需要批量剪辑的用户",
+          "极客开发者"
+        ],
+        "description": "video-use 是一个面向 AI 智能体的开源视频剪辑技能。它利用音频转录将视频转化为“可读文本”，通过简单的自然语言指令即可完成去废话、调色、加字幕等复杂剪辑操作，大幅降低视频制作门槛，提升效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "936feffb-f018-4b18-b361-c009e5e6335d",
+      "url": "https://github.com/3b1b/manim",
+      "domain": "github.com",
+      "repo": "3b1b/manim",
+      "description": "由 3Blue1Brown 打造的 Python 动画引擎，专为解释数学概念而生。它允许用户通过编写 Python 代码来精确控制几何图形和公式的变换，生成极高质量的数学可视化内容，是制作硬核科普视频的神器，但需要一定的编程基础。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:15:10.644Z",
+      "metaData": {
+        "forks": "7610",
+        "stars": "92364",
+        "topics": [
+          "3b1b-videos",
+          "animation",
+          "explanatory-math-videos",
+          "python"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Animation engine for explanatory math videos. Contribute to 3b1b/manim development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "数学可视化",
+          "LaTeX",
+          "开源项目",
+          "动画引擎"
+        ],
+        "cover": "",
+        "title": "Manim：数学动画可视化引擎",
+        "ability": [
+          "代码驱动动画生成",
+          "LaTeX 公式完美渲染",
+          "复杂数学逻辑可视化",
+          "4K 高清视频导出",
+          "灵活的动画控制"
+        ],
+        "summary": "3Blue1Brown 开源的 Python 引擎，用于通过代码生成高精度的数学动画和可视化视频。",
+        "category": [
+          "开发工具",
+          "视频制作",
+          "教育技术"
+        ],
+        "suitable": [
+          "数学教师",
+          "科普视频创作者",
+          "Python 开发者",
+          "理工科学生",
+          "算法可视化需求者"
+        ],
+        "description": "由 3Blue1Brown 打造的 Python 动画引擎，专为解释数学概念而生。它允许用户通过编写 Python 代码来精确控制几何图形和公式的变换，生成极高质量的数学可视化内容，是制作硬核科普视频的神器，但需要一定的编程基础。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "bd99bb87-ceb7-4e3b-8bc2-b651517bf418",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "domain": "github.com",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:13:56.525Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "71b9d88e-0807-44f2-b56d-e08924785b81",
+      "url": "https://github.com/iv-org/invidious",
+      "domain": "github.com",
+      "repo": "iv-org/invidious",
+      "description": "Invidious 是一个不依赖官方 API 的 YouTube 替代前端，主打无广告、无跟踪和隐私保护。它支持免 Google 账号订阅、无 JS 播放，并提供强大的 API 供开发者调用，适合自建或部署为公共实例。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:08:49.890Z",
+      "metaData": {
+        "forks": "2667",
+        "stars": "23616",
+        "topics": [
+          "agplv3",
+          "hacktoberfest",
+          "invidious",
+          "libre",
+          "video",
+          "watch",
+          "youtube",
+          "youtube-video"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://invidious.io",
+        "description": "Invidious is an alternative front-end to YouTube. Contribute to iv-org/invidious development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "YouTube",
+          "隐私保护",
+          "开源",
+          "自托管",
+          "API"
+        ],
+        "cover": "",
+        "title": "Invidious 深度评测：去广告、无追踪的开源 YouTube 替代品",
+        "ability": [
+          "无广告无追踪播放",
+          "独立订阅管理",
+          "REST API 接口",
+          "无JS支持",
+          "Docker一键部署"
+        ],
+        "summary": "无需 Google 账号、无广告追踪的开源 YouTube 前端，支持 API 调用与自建服务。",
+        "category": [
+          "开源项目",
+          "隐私工具",
+          "视频工具"
+        ],
+        "suitable": [
+          "隐私敏感用户",
+          "开发者与极客",
+          "第三方应用作者",
+          "家庭与内网用户"
+        ],
+        "description": "Invidious 是一个不依赖官方 API 的 YouTube 替代前端，主打无广告、无跟踪和隐私保护。它支持免 Google 账号订阅、无 JS 播放，并提供强大的 API 供开发者调用，适合自建或部署为公共实例。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "eb8c00c1-a8ce-4c22-9f63-60e23639aff2",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "domain": "github.com",
+      "repo": "Imbad0202/academic-research-skills",
+      "description": "Academic Research Skills 是一套基于 Claude Code 的开源技能包，通过多智能体协作将选题、文献调研、写作、审稿等环节结构化。它内置引用验证和完整性闸门机制，旨在辅助科研人员提升效率，确保学术诚信，是科研工作的得力 AI 副驾驶。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:04:54.939Z",
+      "metaData": {
+        "forks": "3537",
+        "stars": "44527",
+        "topics": [
+          "academic-pipeline",
+          "academic-writing",
+          "ai-research",
+          "claude",
+          "claude-code",
+          "literature-review",
+          "peer-review",
+          "prompt-engineering"
+        ],
+        "license": "License",
+        "homepage": "https://buymeacoffee.com/crucify020v",
+        "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize - Imbad0202/academic-research-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "学术写作",
+          "科研辅助",
+          "GitHub 开源",
+          "AI Agents"
+        ],
+        "cover": "",
+        "title": "Academic Research Skills (ARS) 深度评测",
+        "ability": [
+          "全流程科研编排",
+          "多智能体深度研究",
+          "学术论文写作与润色",
+          "模拟同行评审",
+          "引用验证与完整性检查"
+        ],
+        "summary": "面向 Claude 的学术研究全流程技能包，提供从选题、写作到审稿的结构化人机协作框架。",
+        "category": [
+          "科研工具",
+          "AI 编程",
+          "效率提升"
+        ],
+        "suitable": [
+          "硕博研究生",
+          "高校科研人员",
+          "期刊审稿人",
+          "学术写作新手",
+          "教育工作者"
+        ],
+        "description": "Academic Research Skills 是一套基于 Claude Code 的开源技能包，通过多智能体协作将选题、文献调研、写作、审稿等环节结构化。它内置引用验证和完整性闸门机制，旨在辅助科研人员提升效率，确保学术诚信，是科研工作的得力 AI 副驾驶。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
       "id": "54f55b6e-fbf7-4f06-9895-c7053e504643",
       "url": "https://github.com/CodebuffAI/freebuff",
       "domain": "github.com",
@@ -178,8 +577,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:48:28.610Z",
       "metaData": {
-        "forks": "1210",
-        "stars": "17623",
+        "forks": "1213",
+        "stars": "17653",
         "topics": [
           "markdown",
           "nodejs",
@@ -349,7 +748,7 @@
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
         "forks": "752",
-        "stars": "6541",
+        "stars": "6567",
         "topics": [
           "chinese",
           "disclosure",
@@ -718,8 +1117,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:11:53.128Z",
       "metaData": {
-        "forks": "8325",
-        "stars": "80507",
+        "forks": "8342",
+        "stars": "80657",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://crawl4ai.com",
@@ -823,8 +1222,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "4850",
-        "stars": "28060",
+        "forks": "4913",
+        "stars": "28719",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2690,8 +3089,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3797",
-        "stars": "41175",
+        "forks": "3798",
+        "stars": "41215",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -6045,8 +6444,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37064",
-        "stars": "245472",
+        "forks": "37068",
+        "stars": "245500",
         "topics": [
           "ai-agents",
           "anthropic",
