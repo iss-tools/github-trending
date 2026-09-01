@@ -1,6 +1,317 @@
 {
   "all": [
     {
+      "id": "b9318e26-47fc-4623-9626-76b9a0d27630",
+      "url": "https://github.com/youssofal/MTPLX",
+      "domain": "github.com",
+      "repo": "youssofal/MTPLX",
+      "description": "MTPLX 是专为 Mac 设计的本地大模型运行时，利用 MTP 技术无需额外草稿模型即可实现 2 倍提速。它提供图形界面和兼容 OpenAI 的 API 服务，集成了模型优化、嵌入和重排功能，让开发者能高效、私密地在本地部署 AI。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T12:17:39.184Z",
+      "metaData": {
+        "forks": "141",
+        "stars": "1866",
+        "topics": [
+          "anthropic-compatible",
+          "apple-silicon",
+          "inference-engine",
+          "local-ai",
+          "metal",
+          "mlx",
+          "mtp",
+          "mtplx",
+          "native-mtp",
+          "openai-compatible",
+          "qwen",
+          "qwen3-next",
+          "speculative-decoding",
+          "speculative-sampling"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mtplx.com",
+        "description": "3x faster speeds on MLX | Qwen 3.8 27B | Native MTP Speculative Decoding On Apple Silicon With No External Drafter. - youssofal/MTPLX"
+      },
+      "summaryData": {
+        "tags": [
+          "Apple Silicon",
+          "本地大模型",
+          "推理加速",
+          "MLX",
+          "Mac"
+        ],
+        "cover": "",
+        "title": "MTPLX：Apple Silicon 本地大模型加速引擎",
+        "ability": [
+          "原生 MTP 投机解码加速",
+          "OpenAI/Anthropic 兼容 API",
+          "可视化 GUI 与命令行工具",
+          "Forge 模型转换与优化",
+          "自动调优与风扇控制"
+        ],
+        "summary": "专为 Mac 打造的本地 LLM 加速工具，利用原生 MTP 技术实现倍速生成，兼容 OpenAI 接口。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "系统工具"
+        ],
+        "suitable": [
+          "苹果电脑开发者",
+          "本地 AI 爱好者",
+          "注重隐私的技术用户",
+          "RAG 应用构建者"
+        ],
+        "description": "MTPLX 是专为 Mac 设计的本地大模型运行时，利用 MTP 技术无需额外草稿模型即可实现 2 倍提速。它提供图形界面和兼容 OpenAI 的 API 服务，集成了模型优化、嵌入和重排功能，让开发者能高效、私密地在本地部署 AI。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "08f08d77-a5b5-4f4b-81ce-8343fa660ca3",
+      "url": "https://github.com/google/skills",
+      "domain": "github.com",
+      "repo": "google/skills",
+      "description": "这是 Google 推出的开源技能合集，整合了云平台、移动开发、数据分析等领域的官方最佳实践。它能被 Claude Code 等 AI 工具直接调用，让助手更懂 Google 产品，从而更精准地完成配置、排障和代码生成任务。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T12:12:09.537Z",
+      "metaData": {
+        "forks": "1541",
+        "stars": "19097",
+        "topics": [
+          "google",
+          "googlecloud",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Agent Skills for Google products and technologies. Contribute to google/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Google",
+          "AI Agent",
+          "GitHub",
+          "开源",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "Google 官方 Agent 技能包",
+        "ability": [
+          "提供 Google 生态预置技能",
+          "一键集成 Claude Code 等工具",
+          "覆盖开发运维数据全链路",
+          "官方权威与开源协议"
+        ],
+        "summary": "Google 官方提供的 AI 技能包，一键集成 GCP/Android 等知识到 AI 助手，提升开发效率。",
+        "category": [
+          "AI 编程",
+          "开发者工具",
+          "云服务"
+        ],
+        "suitable": [
+          "Google 技术栈工程师",
+          "数据/平台工程师",
+          "前端/客户端开发者",
+          "DevOps/SRE"
+        ],
+        "description": "这是 Google 推出的开源技能合集，整合了云平台、移动开发、数据分析等领域的官方最佳实践。它能被 Claude Code 等 AI 工具直接调用，让助手更懂 Google 产品，从而更精准地完成配置、排障和代码生成任务。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "35312cf1-b796-4b84-9176-ec83e3ab4be9",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "domain": "github.com",
+      "repo": "donnemartin/system-design-primer",
+      "description": "这是一份 GitHub 上 Star 数极高的开源项目，将分布式系统设计知识系统化整理，涵盖从核心组件原理到面试解题框架，并提供多语种翻译和记忆辅助，是系统设计入门与备考的首选。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T12:08:05.612Z",
+      "metaData": {
+        "forks": "58162",
+        "stars": "367164",
+        "topics": [
+          "design",
+          "design-patterns",
+          "design-system",
+          "development",
+          "interview",
+          "interview-practice",
+          "interview-questions",
+          "programming",
+          "python",
+          "system",
+          "web",
+          "web-application",
+          "webapp"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards. - donnemartin/system-design-primer"
+      },
+      "summaryData": {
+        "tags": [
+          "系统设计",
+          "开源项目",
+          "面试指南",
+          "后端架构",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "System Design Primer：GitHub 上的神级系统设计百科全书",
+        "ability": [
+          "知识图谱化整理",
+          "面试方法论与题库",
+          "多语言支持",
+          "Anki 记忆卡片辅助"
+        ],
+        "summary": "免费开源的系统设计圣经，涵盖从理论基础到面试实战的全套知识体系。",
+        "category": [
+          "学习资源",
+          "面试准备",
+          "开发基础"
+        ],
+        "suitable": [
+          "求职面试者",
+          "后端/全栈工程师",
+          "架构师初学者",
+          "开源贡献者"
+        ],
+        "description": "这是一份 GitHub 上 Star 数极高的开源项目，将分布式系统设计知识系统化整理，涵盖从核心组件原理到面试解题框架，并提供多语种翻译和记忆辅助，是系统设计入门与备考的首选。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "70239a5c-c1a0-44b0-b720-19fe113e3b81",
+      "url": "https://github.com/huangruiteng/loopx",
+      "domain": "github.com",
+      "repo": "huangruiteng/loopx",
+      "description": "LoopX 是专为长周期 AI 任务设计的开源控制层，通过目标追踪、门禁、配额和证据管理，将松散的 AI 轮次组织成可回溯、可治理的工程流程。它不绑定特定运行时，支持多 Agent 协作。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T12:04:50.467Z",
+      "metaData": {
+        "forks": "481",
+        "stars": "5374",
+        "topics": [
+          "agent-control-plane",
+          "agent-harness",
+          "agent-ops",
+          "ai-agents",
+          "codex",
+          "dsh-plugin",
+          "long-horizon",
+          "long-running-agents",
+          "loop-engineering",
+          "loopx",
+          "workflow-automation"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://my.feishu.cn/wiki/CaL5wMk9ui17ngkWzeUcMlAYnZg",
+        "description": "Long-horizon agent control plane for durable, governed work across Codex, Claude Code, and other harnesses. - huangruiteng/loopx"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "工作流自动化",
+          "任务管理",
+          "开源项目",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "LoopX：AI Agent 的长周期任务控制平面",
+        "ability": [
+          "Agent 无关控制平面",
+          "长周期任务治理",
+          "门禁与安全回退",
+          "配额管理与调度",
+          "可验证交接与证据"
+        ],
+        "summary": "LoopX 是一个开源的本地控制平面，用于治理长周期 AI Agent 任务，提供目标追踪、门禁控制和可验证交接能力。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "研发团队负责人",
+          "AI 研究人员",
+          "DevOps 运维人员",
+          "多工具协同团队"
+        ],
+        "description": "LoopX 是专为长周期 AI 任务设计的开源控制层，通过目标追踪、门禁、配额和证据管理，将松散的 AI 轮次组织成可回溯、可治理的工程流程。它不绑定特定运行时，支持多 Agent 协作。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
+      "id": "1bcb0973-b15c-47ff-a7bb-1c1a99daf81f",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "domain": "github.com",
+      "repo": "Gitlawb/openclaude",
+      "description": "OpenClaude 是一款强大的开源 CLI 工具，将多种云端与本地 AI 模型统一到终端工作流中。它支持工具调用、Agent 任务及 MCP 协议，配合 VS Code 扩展，让开发者在编辑器内无缝掌控 AI 编程体验。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-01T11:32:08.671Z",
+      "metaData": {
+        "forks": "8929",
+        "stars": "31006",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "ai-tools",
+          "cli",
+          "coding"
+        ],
+        "license": "License",
+        "homepage": "https://openclaude.gitlawb.com",
+        "description": "runs anywhere. uses anything. Contribute to Gitlawb/openclaude development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CLI",
+          "AI Agent",
+          "VS Code",
+          "本地模型",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenClaude：多后端统一的终端 AI 编程代理",
+        "ability": [
+          "多模型后端统一接入",
+          "内置工具链与Agent工作流",
+          "VS Code 项目感知扩展",
+          "智能路由与成本控制",
+          "终端会话管理"
+        ],
+        "summary": "一个连接云端与本地模型的终端 AI 编程代理，提供多后端支持与 VS Code 深度集成。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "终端重度开发者",
+          "需要数据合规的团队",
+          "VS Code 重度用户",
+          "成本敏感的独立开发者",
+          "DevOps 工程师"
+        ],
+        "description": "OpenClaude 是一款强大的开源 CLI 工具，将多种云端与本地 AI 模型统一到终端工作流中。它支持工具调用、Agent 任务及 MCP 协议，配合 VS Code 扩展，让开发者在编辑器内无缝掌控 AI 编程体验。"
+      },
+      "type": "project",
+      "dateAdded": "20260901"
+    },
+    {
       "id": "b94021e4-d8e2-4e9b-90bb-7281d59930ed",
       "url": "https://github.com/averygan/reclip",
       "domain": "github.com",
@@ -11,8 +322,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:27:49.507Z",
       "metaData": {
-        "forks": "1307",
-        "stars": "7344",
+        "forks": "1308",
+        "stars": "7390",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -63,8 +374,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:22:30.395Z",
       "metaData": {
-        "forks": "12746",
-        "stars": "112219",
+        "forks": "12749",
+        "stars": "112287",
         "topics": [
           "awesome-list",
           "design-md",
@@ -127,8 +438,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:19:21.939Z",
       "metaData": {
-        "forks": "2789",
-        "stars": "22542",
+        "forks": "2792",
+        "stars": "22600",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -181,7 +492,7 @@
       "createdAt": "2026-09-01T11:15:10.644Z",
       "metaData": {
         "forks": "7610",
-        "stars": "92364",
+        "stars": "92394",
         "topics": [
           "3b1b-videos",
           "animation",
@@ -238,8 +549,33 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "2011",
+        "stars": "13115",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "tauri",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
       },
       "summaryData": {
         "tags": [
@@ -287,8 +623,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:08:49.890Z",
       "metaData": {
-        "forks": "2667",
-        "stars": "23616",
+        "forks": "2669",
+        "stars": "23639",
         "topics": [
           "agplv3",
           "hacktoberfest",
@@ -348,8 +684,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3537",
-        "stars": "44527",
+        "forks": "3539",
+        "stars": "44594",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -462,8 +798,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7381",
-        "stars": "56656",
+        "forks": "7391",
+        "stars": "56772",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -577,8 +913,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:48:28.610Z",
       "metaData": {
-        "forks": "1213",
-        "stars": "17653",
+        "forks": "1215",
+        "stars": "17695",
         "topics": [
           "markdown",
           "nodejs",
@@ -747,8 +1083,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "752",
-        "stars": "6567",
+        "forks": "754",
+        "stars": "6596",
         "topics": [
           "chinese",
           "disclosure",
@@ -917,8 +1253,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15337",
-        "stars": "93542",
+        "forks": "15399",
+        "stars": "93645",
         "topics": [
           "ai",
           "mcp"
@@ -1117,8 +1453,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:11:53.128Z",
       "metaData": {
-        "forks": "8342",
-        "stars": "80657",
+        "forks": "8344",
+        "stars": "80673",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://crawl4ai.com",
@@ -1222,8 +1558,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "4913",
-        "stars": "28719",
+        "forks": "4925",
+        "stars": "28873",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1275,8 +1611,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "3772",
-        "stars": "36395",
+        "forks": "3800",
+        "stars": "36559",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -1649,8 +1985,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3265",
-        "stars": "29862",
+        "forks": "3273",
+        "stars": "29903",
         "topics": [
           "abliteration",
           "llm",
@@ -1706,8 +2042,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "1923",
-        "stars": "15969",
+        "forks": "1929",
+        "stars": "16001",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -2115,8 +2451,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9347",
-        "stars": "76768",
+        "forks": "9356",
+        "stars": "76842",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -2286,8 +2622,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:47:42.714Z",
       "metaData": {
-        "forks": "341",
-        "stars": "3478",
+        "forks": "342",
+        "stars": "3491",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -2469,8 +2805,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:33:52.984Z",
       "metaData": {
-        "forks": "8647",
-        "stars": "87678",
+        "forks": "8703",
+        "stars": "88260",
         "topics": [
           "editor",
           "oss",
@@ -2651,7 +2987,7 @@
       "createdAt": "2026-08-27T11:22:32.684Z",
       "metaData": {
         "forks": "10885",
-        "stars": "39420",
+        "stars": "39424",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://google.github.io/googletest/",
@@ -2702,8 +3038,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:18:49.756Z",
       "metaData": {
-        "forks": "8123",
-        "stars": "92448",
+        "forks": "8164",
+        "stars": "92820",
         "topics": [
           "ai",
           "ai-agents",
@@ -3089,8 +3425,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3798",
-        "stars": "41215",
+        "forks": "3802",
+        "stars": "41272",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -3221,8 +3557,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:51:42.798Z",
       "metaData": {
-        "forks": "1466",
-        "stars": "11943",
+        "forks": "1467",
+        "stars": "11970",
         "topics": [
           "agent",
           "claude",
@@ -3281,8 +3617,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2569",
-        "stars": "40589",
+        "forks": "2601",
+        "stars": "40972",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -3712,8 +4048,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3217",
-        "stars": "23420",
+        "forks": "3219",
+        "stars": "23492",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -3765,8 +4101,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "8943",
-        "stars": "51669",
+        "forks": "8957",
+        "stars": "51740",
         "topics": [
           "agents",
           "ai",
@@ -4384,8 +4720,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T04:32:57.849Z",
       "metaData": {
-        "forks": "13308",
-        "stars": "39304",
+        "forks": "13365",
+        "stars": "39480",
         "topics": [
           "ai",
           "ai-agents",
@@ -4450,8 +4786,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "5125",
-        "stars": "21259",
+        "forks": "5135",
+        "stars": "21304",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://t3.codes",
@@ -4815,8 +5151,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "245",
-        "stars": "3085",
+        "forks": "246",
+        "stars": "3118",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4921,8 +5257,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1643",
-        "stars": "26173",
+        "forks": "1649",
+        "stars": "26276",
         "topics": [
           "adhd",
           "claude-",
@@ -5113,8 +5449,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2377",
-        "stars": "25478",
+        "forks": "2379",
+        "stars": "25542",
         "topics": [
           "agent",
           "ai-agent",
@@ -5833,7 +6169,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3129",
-        "stars": "29418",
+        "stars": "29425",
         "topics": [
           "ai",
           "language",
@@ -5954,7 +6290,7 @@
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
         "forks": "406",
-        "stars": "4364",
+        "stars": "4381",
         "topics": [
           "agent-runtime",
           "ai",
@@ -6191,8 +6527,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2659",
-        "stars": "34798",
+        "forks": "2665",
+        "stars": "34868",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -6250,8 +6586,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4546",
-        "stars": "33597",
+        "forks": "4551",
+        "stars": "33647",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6444,8 +6780,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37068",
-        "stars": "245500",
+        "forks": "37075",
+        "stars": "245529",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -6505,8 +6841,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2593",
-        "stars": "26600",
+        "forks": "2608",
+        "stars": "26817",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -6568,8 +6904,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "539",
-        "stars": "18236",
+        "forks": "545",
+        "stars": "18300",
         "topics": [
           "dpi",
           "gpui",
@@ -6634,8 +6970,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "641",
-        "stars": "9917",
+        "forks": "643",
+        "stars": "9943",
         "topics": [
           "cactus",
           "gemini",
@@ -6718,8 +7054,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "522",
-        "stars": "6411",
+        "forks": "524",
+        "stars": "6451",
         "topics": [],
         "license": "",
         "homepage": "",

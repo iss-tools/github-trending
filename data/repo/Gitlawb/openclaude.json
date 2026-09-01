@@ -1,0 +1,60 @@
+{
+  "id": "1bcb0973-b15c-47ff-a7bb-1c1a99daf81f",
+  "url": "https://github.com/Gitlawb/openclaude",
+  "domain": "github.com",
+  "repo": "Gitlawb/openclaude",
+  "description": "OpenClaude 是一款强大的开源 CLI 工具，将多种云端与本地 AI 模型统一到终端工作流中。它支持工具调用、Agent 任务及 MCP 协议，配合 VS Code 扩展，让开发者在编辑器内无缝掌控 AI 编程体验。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-01T11:32:08.671Z",
+  "metaData": {
+    "forks": "8929",
+    "stars": "31006",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "cli",
+      "coding"
+    ],
+    "license": "License",
+    "homepage": "https://openclaude.gitlawb.com",
+    "description": "runs anywhere. uses anything. Contribute to Gitlawb/openclaude development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "CLI",
+      "AI Agent",
+      "VS Code",
+      "本地模型",
+      "开源"
+    ],
+    "cover": "",
+    "title": "OpenClaude：多后端统一的终端 AI 编程代理",
+    "ability": [
+      "多模型后端统一接入",
+      "内置工具链与Agent工作流",
+      "VS Code 项目感知扩展",
+      "智能路由与成本控制",
+      "终端会话管理"
+    ],
+    "summary": "一个连接云端与本地模型的终端 AI 编程代理，提供多后端支持与 VS Code 深度集成。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "效率工具"
+    ],
+    "suitable": [
+      "终端重度开发者",
+      "需要数据合规的团队",
+      "VS Code 重度用户",
+      "成本敏感的独立开发者",
+      "DevOps 工程师"
+    ],
+    "description": "OpenClaude 是一款强大的开源 CLI 工具，将多种云端与本地 AI 模型统一到终端工作流中。它支持工具调用、Agent 任务及 MCP 协议，配合 VS Code 扩展，让开发者在编辑器内无缝掌控 AI 编程体验。"
+  },
+  "contentDetail": "<|assistant|>我需要进入 VS Code 扩展目录 README 以了解扩展的功能与使用方法。\n</think>\n<|assistant|>我需要点击 VS Code Extension 部分中的链接或文件夹名称，以进入扩展的 README 页面，获取扩展的具体功能与使用方式。</think>\n<|assistant|>我需要进入 VS Code 扩展目录 README 以获取扩展的功能与使用方式。</think>\n<|assistant|>我需要点击 VS Code 扩展目录或其 README 链接，以查看扩展的功能与使用说明。</think>\n<|assistant|>我需要点击 VS Code 扩展目录或其 README 链接，以查看扩展的功能与使用说明。</think>\n<|assistant|>我需要进入 VS Code 扩展目录以查看 README，了解扩展的能力与使用方式。</think>\n<|assistant|>我需要点击 README 中的 VS Code Extension 链接，以进入扩展目录获取详细配置与功能说明。</think>\n## 一句话总结\nOpenClaude 是一个“到处能跑、啥都能用”的开源编码代理 CLI，把 OpenAI 兼容 API、Gemini、GitHub Models、Codex（OAuth）、Ollama 等云端/本地后端统一到同一套终端工作流里，并提供工具调用、Agent、MCP、斜杠命令与流式输出，适合希望掌控模型与数据的开发者与团队。\n---\n## 背景与痛点：它为什么存在？\n- 模型与工具太分散：每家模型都有自己的 Web UI、CLI 或 SDK，来回切换非常累。OpenClaude 想把“能用的后端”接进一条终端管线里，官方 README 列出了 OpenAI 兼容 API、Gemini、GitHub Models、Codex（OAuth）、Ollama、Atomic Chat 等多种后端；它还同步镜像到了 GitLawb 去中心化 git 网络，突出“可自托管、可审计”。\n- 定制化受限于 SaaS：很多在线产品的行为不可改，也难以与内部工具或安全规范无缝融合。OpenClaude 强调“你自己的规则”，可自定义 provider profile、技能（skills）、计划（plans）与任务（tasks）；文档还提醒它不会自动加载项目 .env，而是建议用 /provider 把配置保存到 .openclaude-profile.json，从而避免把敏感环境变量意外暴露到日志或别处。\n- 本地与云端都想用：有人想完全离线（Ollama 等），有人想按需调用云端模型且自动路由到最合适的后端。README 提供了“OpenAI 兼容网关 + Ollama 本地”两条快速路径，并支持 /provider 引导式配置与多 profile 切换，既满足隐私合规，也保留对强力云端模型的按需使用。\n打个比方：以前要在“餐厅 A、快餐 B、外卖 C”之间来回换 APP 才能吃饱；OpenClaude 想做一个“统一餐柜”的 CLI，把你冰箱（本地模型）和外卖（云端 API）都接到同一个点餐界面，按你的口味自动配送。\n---\n## 核心亮点与功能剖析\n### 1) 一条 CLI 管住所有后端\n- README 把“One CLI across cloud APIs and local model backends — no per-provider tooling”放在首屏，随之是 /provider 的引导式配置与保存 profile，这大幅减少了在不同供应商 CLI/网页之间来回切换的摩擦。\n### 2) 工具与 Agent 工作流一体化\n- 文档把 bash、file、grep、glob、agents、tasks、MCP 与 web 工具统一到同一 REPL 中，配合斜杠命令与流式输出，可以在一个终端会话完成“查项目—改文件—跑脚本—写测试”的闭环，对于频繁在 IDE 与终端之间切换的开发者非常友好。\n### 3) VS Code 扩展：项目感知的“控制面板”\n- VS Code 扩展提供：\n  - Control Center（活动栏状态）：是否检测到 openclaude 命令、启动命令、是否注入 OpenAI shim、当前工作区与启动目录、.openclaude-profile.json 是否存在、以及保守的 provider 摘要；\n  - 项目感知的启动：优先从当前编辑器所属工作区启动，避免在“不知名的目录”打开终端；\n  - 快捷侧边栏操作：Launch OpenClaude / Launch in Workspace Root / Open Workspace Profile / Open Repository / Open Setup Guide / Open Command Palette；\n  - 内置暗色主题：OpenClaude Terminal Black。\n- 扩展并不提供推理，只是可靠的“启动器 + 状态展示”，让习惯在 VS Code 里完成绝大部分操作的开发者拥有“平滑进入终端”的体验。\n### 4) 路由与成本意识\n- 从 Release Notes 看，项目持续引入多模型网关（Concentrate、OpenGateway、ApiSmart 等）与“自动路由（Smart Auto-Routing）”能力，并支持自定义模型价格与“精确计费”。对成本敏感的团队或个人，可以把简单/批量请求派发到便宜模型，把难题留给昂贵但强的模型，实现“按难度分层”的成本控制，这是单一订阅的 SaaS 很难做到的。\n### 5) 会话管理与后台任务\n- 支持 Resume/Fork 会话（--resume、--continue、--fork-session）和后台 detached 运行（--bg），并提供 ps/logs/kill 等命令管理长期任务，适合把 AI 代理嵌入到轻量流水线或周期性维护作业中，不需要额外守护进程。\n---\n## 目标人群与收益：你适不适合用？\n| 目标人群 | 典型痛点 | 使用 OpenClaude 的收益 |\n| --- | --- | --- |\n| 终端重度开发 / DevOps | 多个模型 CLI 切换，无法统一脚本化 | 用一套命令和配置管理所有后端；可把“编码 + 脚本 + 检索”合并到一个终端会话 |\n| 需要数据合规 / 自托管的团队 | 不能把代码或数据传到第三方 SaaS | 支持本地模型（如 Ollama）、自行决定什么发到云端；后台任务与日志留在自己的机器上 |\n| VS Code 重度用户 | 在编辑器和终端间反复跳转 | 扩展提供项目感知启动与控制中心，一键在正确工作区打开 OpenClaude |\n| 成本敏感的独立开发者 / 初创 | 订阅贵、计费不透明 | 通过多 provider 和自定义路由，把简单任务分发给廉价模型，节省开支 |\n一句话：如果你愿意“多花一点时间换来掌控权、统一工作流和可扩展工具链”，OpenClaude 的价值就很明显；如果你追求零配置、只想要“打开网页就聊天”，它可能不是最适合的入口。\n---\n## 竞品/同类对比：它在哪一层？\n- 官方 Claude Code（Anthropic）：README 的 Disclaimer 明确指出 OpenClaude “起源于 Claude Code 代码库，但已大幅修改以支持多提供商和开放使用”，并标注 MIT 许可仅适用于社区贡献的修改，衍生部分仍归 Anthropic。这意味着如果你需要“Claude 生态的多后端变体”，OpenClaude 是更灵活的一条路径，但你要接受其非官方定位与自行维护的成本。\n- 综合型 AI IDE/代理（如 Cursor、在线产品）：它们多为“全托管 UI + 封闭生态”，上手门槛低但可定制性有限。OpenClaude 坚持终端优先与本地/自托管友好，对合规、隐私与自定义工具链更友好，但对图形界面依赖较重的用户会有一定学习曲线。\n- 多模型路由/聊天 CLI：不少项目仅做“统一 API 路由”或“命令行聊天”，缺少项目级的文件操作、Agent 步骤控制、任务与后台管理。OpenClaude 把“项目上下文、bash 工具、grep/glob、Agent 步数限制、会话恢复/分支、后台任务”一体化，更贴近“真实编码工作流”，而不仅仅是聊天。\n---\n## 局限与不足：客观存在的坑\n- 操作门槛相对高：需要熟悉终端、npm、环境变量，并且要管理自己的配置（~/.openclaude）。高级功能（如 gRPC Server、Repo Map、Agent 步数限制、Android Install 等）需要花时间读文档与实验，对新手不太友好。\n- Windows 边缘问题仍存在：Issues 显示与 Windows 相关的问题仍在处理中，例如“会话查询超时等待用户决策时中断”等。如果你的主力环境是 Windows，要做好踩坑与等待修复的心理准备。\n- 运维与调试成本：它不会自己启动守护进程，而是通过本地子进程与会话日志运行；一旦遇到崩溃或超时，需要依赖 ps/logs/kill 等命令排查。Release Notes 中也提到 long-session 的 OOM 与自动压缩恢复等问题在持续改进，说明大任务场景下要关注内存与稳定性。\n- 非官方与商标风险：项目自述与免责声明强调，这是“独立社区项目，与 Anthropic 无关；Claude 与 Claude Code 是 Anthropic 商标”。对合规敏感的企业，需评估使用与命名是否满足内部政策；且 MIT 仅覆盖修改部分，原衍生部分仍归属上游。\n---\n## 社区活跃度与生命力：还在“活着”吗？\n- 发布频率：从 Release Notes 看，2026-07 中下旬到 8 月中旬接连发布 0.24–0.29 小版本，涵盖性能（减少缓存 bust、上下文优化）、新 provider（xAI、ApiSmart、Concentrate、Exa 等）、MCP 分页与 bug 修复，说明维护节奏不低。\n- Issues 与沟通：Issues 中既有 bug，也有公告型（如广告赞助、对另一项目的推广）和“欢迎加入 Discord”的招募帖，体现出社区驱动、有一定运营但也意味着 Issue 噪音；近期开放的 Issue 仍在数十量级。\n- 第三方评测：一篇 2026 年的第三方评测指出，OpenClaude 在有数据合规要求的团队中是“强候选”，并给出“重视控制与成本的开发者/团队值得认真考虑；追求零设置的 casual 用户更宜用官方在线界面”的判断，这与其产品定位基本一致。\n---\n## Demo / 代码示例：30 秒上手\n### 快速 OpenAI 设置（macOS / Linux）\n```bash\nexport CLAUDE_CODE_USE_OPENAI=1\nexport OPENAI_API_KEY=sk-your-key-here\nexport OPENAI_MODEL=gpt-4o\nopenclaude\n```\n### 快速本地 Ollama 设置（macOS / Linux）\n```bash\nexport CLAUDE_CODE_USE_OPENAI=1\nexport OPENAI_BASE_URL=http://localhost:11434/v1\nexport OPENAI_MODEL=qwen2.5-coder:7b\nopenclaude\n```\n### 后台会话（异步跑任务）\n```bash\nopenclaude --bg \"fix failing tests\"\nopenclaude ps\nopenclaude logs auth-refactor -f\nopenclaude kill auth-refactor\n```\n### VS Code 扩展核心配置（settings.json）\n- openclaude.launchCommand（默认 openclaude）\n- openclaude.terminalName（默认 OpenClaude）\n- openclaude.useOpenAIShim（默认 false；仅在启动终端注入 CLAUDE_CODE_USE_OPENAI=1）\n---\n## 结语与行动建议\n### 终极评判\nOpenClaude 不是“替代所有 GUI 的银弹”，但它为“终端重度用户、多模型多后端、需要自定义工具与合规/隐私”的场景，提供了一个相当成熟、活跃且可扩展的统一编码代理 CLI。配合 VS Code 扩展与多 provider 路由，可以在不牺牲编辑器体验的前提下，把“模型、工具、任务”统一在自己掌控的终端工作流里。\n### 给新手的行动路径\n1) 用 npm 全局安装 + OpenAI 兼容路径跑通第一条“帮我写单元测试”的对话；\n2) 练习 /provider 保存 profile 与 /model 切换，感受多后端切换的便利；\n3) 尝试后台会话、Resume/Fork 等会话管理能力，把长期任务“挂起来跑”。\n### 给团队的落地路径\n- 先在非生产项目试用，制定统一的 .openclaude-profile.json 模板与 provider 路由策略（便宜/昂贵模型分层）；\n- 把自家 MCP 工具接进来，把代码检索、内部文档检索、CI/CD 状态等纳入代理工作流；\n- 制定会话日志保留与敏感信息过滤策略，以满足合规与审计要求。\n如果你只想要“打开即用、全托管”的体验，官方产品或在线聚合会更省心；但如果你愿意投入一点时间换取“模型与数据的控制权、统一终端工作流与可扩展工具链”，OpenClaude 值得认真考虑。",
+  "type": "project",
+  "dateAdded": "20260901"
+}

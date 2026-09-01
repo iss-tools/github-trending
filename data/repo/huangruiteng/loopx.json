@@ -1,0 +1,66 @@
+{
+  "id": "70239a5c-c1a0-44b0-b720-19fe113e3b81",
+  "url": "https://github.com/huangruiteng/loopx",
+  "domain": "github.com",
+  "repo": "huangruiteng/loopx",
+  "description": "LoopX 是专为长周期 AI 任务设计的开源控制层，通过目标追踪、门禁、配额和证据管理，将松散的 AI 轮次组织成可回溯、可治理的工程流程。它不绑定特定运行时，支持多 Agent 协作。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-01T12:04:50.467Z",
+  "metaData": {
+    "forks": "481",
+    "stars": "5374",
+    "topics": [
+      "agent-control-plane",
+      "agent-harness",
+      "agent-ops",
+      "ai-agents",
+      "codex",
+      "dsh-plugin",
+      "long-horizon",
+      "long-running-agents",
+      "loop-engineering",
+      "loopx",
+      "workflow-automation"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://my.feishu.cn/wiki/CaL5wMk9ui17ngkWzeUcMlAYnZg",
+    "description": "Long-horizon agent control plane for durable, governed work across Codex, Claude Code, and other harnesses. - huangruiteng/loopx"
+  },
+  "summaryData": {
+    "tags": [
+      "AI Agent",
+      "工作流自动化",
+      "任务管理",
+      "开源项目",
+      "DevOps"
+    ],
+    "cover": "",
+    "title": "LoopX：AI Agent 的长周期任务控制平面",
+    "ability": [
+      "Agent 无关控制平面",
+      "长周期任务治理",
+      "门禁与安全回退",
+      "配额管理与调度",
+      "可验证交接与证据"
+    ],
+    "summary": "LoopX 是一个开源的本地控制平面，用于治理长周期 AI Agent 任务，提供目标追踪、门禁控制和可验证交接能力。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "效率工具"
+    ],
+    "suitable": [
+      "AI Agent 重度用户",
+      "研发团队负责人",
+      "AI 研究人员",
+      "DevOps 运维人员",
+      "多工具协同团队"
+    ],
+    "description": "LoopX 是专为长周期 AI 任务设计的开源控制层，通过目标追踪、门禁、配额和证据管理，将松散的 AI 轮次组织成可回溯、可治理的工程流程。它不绑定特定运行时，支持多 Agent 协作。"
+  },
+  "contentDetail": "# LoopX 深度评测：把会干活的 AI Agent 变成可管理、可复盘、可交接的“数字员工”\n---\n## 一句话总结\nLoopX 是一个“控制平面”级别的开源内核，负责为长周期、多回合的 AI Agent 工作流提供持久化目标、门禁、待办、证据、配额与可验证交接；它不替代你的 Agent 运行时，而是把松散的“轮次”组织成可回溯、可治理的“循环工程”，适合多天/多周/多 Agent 协同的真实项目使用。\n---\n## 背景与痛点：为什么需要“控制平面”？\n- 长任务难管理：Agent 常在一次会话里完成任务，但现实中的工程、研究和实验往往跨越多天、多轮迭代。目标会漂移、决策点会反复、证据会过时，Agent 之间需要交接。仅靠聊天记录和定时器不足以治理这些长程工作。\n- 状态脆弱与难以复盘：你很难一眼看出“上次做到哪、谁在做、接下来要做什么、还缺什么人类决策、哪段证据是可靠的”，这导致交接成本高、事故难追责、经验难沉淀。\n- 多 Agent/多工具协同缺乏统一信源：当 Codex、Claude Code、Cursor 或你自己写脚本各跑各的，很容易出现“谁改了什么、谁有权继续”的混乱；需要一个与运行时无关的“单一真相来源”来持续校准不同协作者。\n- 风险与权限控制含糊：哪些操作需要人类把关？哪些可以自动回退？谁来决定“继续还是停止”？这些问题往往写进 Prompt 却难以持久化执行。\nLoopX 把这些“治理与状态”的问题抽象为：目标 / 门禁 / 待办 / 范围 / 证据 / 配额 的本地控制层，保持稳定，而让具体 Agent 只执行“单回合有界操作”。\n---\n## 核心亮点与功能剖析\n### 1) Agent-agnostic 的本地控制平面（与运行时解耦）\n- 不绑定某家 Agent：统一支持 Codex（App/CLI/IDE）、Claude Code、Cursor，或任意 shell/自定义 Runner，LoopX 做控制层，他们干执行层的工作。\n- 执行与控制分离：Agent 负责规划、分析、工具调用和单步动作；LoopX 负责持久化的待办、门禁、监控、写回、配额、恢复与调度。\n心智模型：把 LoopX 想象成“看板内核”（Kanban kernel），卡片（任务）携带身份、权限、证据和后续行动；每次移动都是经过校验的操作，而看板只是视图，LoopX 状态才是权威。 \n### 2) “五个问题”驱动的一整套治理原语\nLoopX 把控制平面收敛为五个可见问题与对应数据：\n- 目标是什么？——活跃目标、明确范围与当前权威。\n- 接下来发生什么？——有序的用户与 Agent 待办、所有权、租约（claims/leases）。\n- 何时需要人类判断？——“具体用户门禁”取代模糊的“等Owner”。\n- 哪些证据变了？——紧凑的运行历史、验证、阻碍与已接受的写回。\n- 循环可以继续吗？——配额、能力、安全回退、调度提示与停止条件。\n对应的控制面命令：\n- 目标与状态：loopx status / loopx diagnose / loopx review-packet\n- 配额与交互契约：loopx quota should-run 与配额分配\n- 与运行时对齐：heartbeat-prompt / codex-cli-bootstrap-message / worker-bridge\n- 运维视图：loopx serve-status / dashboard\n- 外部投影：如 loopx lark-kanban（飞书/Lark 看板）\n### 3) 目标门禁与安全回退（gates & safe fallback）\n- “门禁”是具体的人类决策点，而不是泛泛的“等待审核”；能被清晰声明与检查。\n- 当某一路线被用户门禁阻塞时，可以启用另一条“经过审计的安全回退”路径继续（但不能绕过门禁）。\n比喻：门禁像红灯/绿灯，人类看板工会在路口决定；回退像是“掉头便道”，不会贸然闯红灯，但也不堵死所有路径。\n### 4) 配额与调度（quota & scheduler hints）\n- 配额不仅限制消耗，还决定“是否该执行下一轮”。核心 tick 序列是：先问 quota should-run，再 claim、执行、更新、refresh-state，最后 spend-slot。每一步都可见、可审计。\n- 调度节奏可由 quota should-run.scheduler_hint 来控制（例如 Codex App 心跳从 3 分钟起步，根据提示回退或自停）。\n好处：防止“空转浪费”和“无意义的重复轮次”，让 Agent 在无实质进展时静默/等待，而不是把预算/注意力烧光。\n### 5) 证据与可验证交接（evidence & handoff）\n- 每次有效写回都附带验证与紧凑的历史；新的 Agent 可以基于这些“被接受的证据”接手，而不是从零爬状态。\n- 交接不仅是“文本摘要”，而是带类型、带边界、带权威的“续做描述”（continuation），减少交接信息丢失。\n### 6) 领域能力与自动化工作流\n- 内置多条“可复用工作线”，如 issue-fix、content-ops、ml-experiment、benchmark 等，可直接用 loopx issue-fix / loopx preset list / loopx ready-score 等命令启动或预检。\n- “一键研究路径”可协调提议者 / 执行者 / 评估者 三个角色并行，配额与证据全程可见。适合自动化研究/实验流。\n### 7) CLI-first、终端亲和与可投影的仪表盘\n- 状态管理以 CLI 为“真相来源”，UI/面板/投影只是视图，避免“浏览器变成权威”。\n- 提供 read-first 多项目管理面板（loopx serve-status / dashboard），以及飞书/Lark 看板投影（loopx lark-kanban），方便非技术干系人查看。\n### 8) 真实长程轨迹案例\n- OpenViking Issue-Fix：公开的 200+ 小时贡献弧线，PR 交付与可复用修复知识同步演进。\n- Auto ML Experiment：200+ 小时所有者运行实验弧，假设、匹配证据、无效谱系、复现与 promote/stop 门禁始终在一个图中可见。\n- Auto Research：提议者、执行者与评估者并行迭代，待办、配额、证据与定向唤醒全程可见。\n---\n## 上手门槛与部署体验\n### 环境要求与安装\n- 要求：Python 3.11+，curl，tar，macOS 或 Linux；Git 仅在贡献/克隆工作流中需要。Python 包无外部运行时依赖（仅标准库），极大降低依赖冲突。\n- 安装（一条命令）：\n  - curl -fsSL https://raw.githubusercontent.com/huangruiteng/loopx/main/scripts/install-from-github.sh | bash\n  - export PATH=\"$HOME/.local/bin:$PATH\"\n  - loopx doctor\n- 也可以用 PyPI：python3 -m pip install --upgrade loopx && loopx workflow-skills --install\n### 项目连接与启动\n- 在你的项目根目录运行：\n  - cd /path/to/your-project\n  - loopx connect\n  - loopx status\n- 若未初始化，会提示你使用引导模式：\n  - loopx start-goal --guided --project . --goal-text \"Your long-running objective\"\n- 成功标志：loopx doctor 通过；项目存在 .loopx/registry.json；loopx status 能展示当前目标、用户门禁、下一待办；本地运行时状态被忽略而非提交。\n### 与不同 Agent 的“开局姿势”（精选）\n- Codex App：请 Agent“连接项目、运行 loopx doctor、保留已有状态并报告当前门禁与下一步待办”，随后可使用 $loopx <任务> 或 /skills 命令；循环驱动由 Codex App 心跳自动化实现。\n- Claude Code：安装适配器后，用 /loopx <任务>，随后用 /loop；原生 /loop 被 LoopX 门禁管控。\n- 自定义 Runner/Shell：自己用 loopx doctor + connect；再在脚本里调用 quota should-run / todo claim / update / refresh-state / quota spend-slot 这组“核心 tick”。\n### 文档与学习路径\n- README 是“产品着陆页”，hands-on 细节集中在 docs/guides/getting-started.md，并提供了“Newcomer 命令路径”与“Developer Book”两条学习路线。\n- 官方站点与文档门户（通过 README 链接）包含概念、FAQ、Showcase、Release Notes、架构、治理模式等，覆盖从入门到深度集成与治理。\n### CLI 设计与开发者体验（DX）\n- 命令语义清晰，如 start-goal / configure-goal / quota / todo claim / backup-state / slash-commands 等，便于“自解释”。\n- 提供无副作用的预览模式（如 --execute、--message-only 等），避免误操作；在变更前会“先预览、再执行”。\n- 运维友好：支持本地状态备份与回滚，备份会捕获共享运行时根、Codex App 自动化、技能、项目状态等，且可按项目范围过滤。\n---\n## Demo / 代码示例（核心 tick 命令）\n最小“核心 tick”（loop 的一个回合）可在任何脚本或 Agent hook 里使用：\n```bash\n# 1. 查询配额：当前是否有资格执行下一步\nloopx quota should-run\n# 2. 认领待办片段：声明谁来做这一段\nloopx todo claim\n# 3. 执行你的 bounded turn（调用工具/改代码/跑命令）\n# 4. 更新：写回变更与证据\nloopx todo update\n# 5. 刷新状态：确保下一轮看到的视图正确\nloopx refresh-state\n# 6. 消耗配额：完成且验证后计入一次“有效轮次”\nloopx quota spend-slot\n```\n---\n## 技术栈与架构解析（技术向）\n- 核心语言：Python（无第三方运行时依赖，标准库为主）。\n- 状态模型：目标是“有不变式”的终身目标（lifetime-goal invariant），kernel 持有待办、门禁、监控、已接受写回、配额、恢复与调度等权威状态。\n- 角色分工：\n  - Agent：规划、分析、使用工具、执行单步有界动作。\n  - Provider：调用外部系统并返回观察、效果与读回。\n  - Capability：定义调用结果、规范化 Provider 输出、验证并提出带类型的转移。\n  - Kernel：持有持久化待办、门禁、监控、写回、配额、恢复与调度。\n- 执行路径：Agent -> Capability -> Provider；控制路径：Provider readback -> Capability transition -> Kernel。\n- 扩展模型：Extension 本质是对 Capability/Provider 的封装管理，而不是新的控制层主人；LoopX 保持控制权威。\n---\n## 目标人群与收益\n### 谁最适合使用？\n- 多天/多周工程、研究、基准或实验负责人（需不断迭代、评审、回滚）。\n- Issue/PR 需要长期跟踪、保持范围与评审状态的维护者或团队 Lead。\n- 需要周期性心跳/监控/巡检的运维与运营角色。\n- 想在长周期任务里做“人机协作”而非“全自动黑箱”的开发者与决策者。\n- 多 Agent/多工具（Codex + Claude + Cursor + 自己脚本）协同跑任务的团队。\n- 需要向非技术干系人透明展示进展与证据线的项目（可与飞书/Lark 看板投影联动）。\n### 能带来什么收益？\n- 可治理的长程任务：防止目标漂移、资源空转、无节制执行；保留人类在关键决策点的否决权。\n- 可交接、可接管：新加入的 Agent/同事可以从“已知状态 + 已验证证据”起步，而不是从 0 重构理解。\n- 可复盘的知识沉淀：每轮决策、证据与变更都有紧凑的历史记录，便于事后回顾与改进。\n- 与运行时无关的统一控制：无论你换哪家 Agent，只需保持 LoopX 状态；控制面可平滑迁移与持续治理。\n- 降低风险与权限滥用：危险权限、发布动作、生产写入与最终所有权始终留在人类一侧；LoopX 不为用户凭证或未经验证的执行背书。\n---\n## 竞品/同类对比\n- LangGraph / LangChain 工作流：更偏“图式工作流编排”与“应用级路由”，通常需要将流程写死在代码里。LoopX 不做“通用工作流引擎”，而是聚焦“长程控制状态与治理”，更适合跨 Agent/跨工具的统一治理而非单应用编排。\n- 通用任务队列/调度（如 Celery/Temporal）：处理任务分发、重试与超时很强，但缺乏“AI 特定的门禁/证据/交接/人类决策点”语义。LoopX 做的是“AI 任务控制平面”，与队列可以协同而非替代。\n- 自建脚本或简单状态机：成本低但往往难以兼顾回滚、交接、审计与多 Agent 一致性；LoopX 提供标准化状态模型与命令族，可避免重复造轮子。\n- 仅 Prompt 内部记忆：难跨会话、难协作、难审计；LoopX 提供外部持久化控制层，配合 Prompt 使用形成互补。\n---\n## 局限与不足（客观视角）\n- 处于“早期可用”阶段：README 明示当前 v0.4.x 是“早期但可用的本地控制平面”，并非完整 Agent 平台或运行时，也非自动化生产控制器；许多高级能力为可选/实验性。\n- 概念相对厚重：目标/门禁/待办/证据/配额/调度/交接 等一套模型，对于简单的一次性任务可能有“杀鸡用牛刀”的感觉；上手需要一些认知成本。\n- CLI-first，UI 仍在增强：虽然有 dashboard 与外部投影，但核心治理仍依赖终端命令与阅读文档；对非命令行用户门槛较高。\n- 集成需一定的工程能力：要在你现有的 Agent 或 CI/CD 中接入 LoopX，需要按照命令契约编写 bridge/worker 并设计配额策略。\n- 并非“开箱即全自动”的平台：需要你在“编写能力/配置调度/设定门禁”等方面投入设计与维护；适合需要治理的长程任务，不适合“一闪而过”的简单调用。\n---\n## 社区活跃度与生命力（基于公开数据）\n- Stars 与生态：第三方统计显示约 5.4k stars、24 forks，主要语言为 Python；展示了一定影响力与关注度。\n- Issues：当前存在开放的 Feature/Bug/RFC/Task 类讨论，最近几天有新 Issue 打开，表明项目仍在持续迭代与路线规划中。\n- 发布节奏：Releases 页面显示最新版本为 v0.4.6，标注为“控制平面加固版本”，关注 replan 语义、配额/心跳通知正确性、refresh-state 写回保护与两份架构 RFC；说明迭代目标集中在稳定性与语义精细化。\n---\n## 结语与行动建议\nLoopX 的定位很清晰：不追求做“全能 Agent 平台”，而是做一个“轻量、长程、可控的控制平面内核”。对于真正需要把 AI Agent 当作“数字员工”来管理、交接、复盘的团队与个人，LoopX 提供了一整套有理论支撑、有实践案例、有命令行友好接口的治理工具链。如果你只是偶尔调一下 API，它未必适合；但若你已经在跑多天/多周/多 Agent 的复杂任务，LoopX 值得作为你“控制层”的首选候选。\n建议的入门行动：\n- 用 curl 一键安装，跑一遍 loopx doctor；在任意实验项目中用 start-goal --guided 创建一个短期目标，体验 status / quota should-run / todo claim / update 的闭环。\n- 阅读官方“Getting Started”与“User Manual”，选一条与你现有 Agent（Codex/Claude/Cursor/自定义）最贴合的集成路径进行接入。\n- 先在一个非生产项目里跑通“可控心跳 + 门禁 + 交接”的闭环，确认团队接受后再迁移到关键工作流。",
+  "type": "project",
+  "dateAdded": "20260901"
+}
