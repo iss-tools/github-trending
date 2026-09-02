@@ -2871,8 +2871,8 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 42941,
-      "forks": 2746,
+      "stars": 43102,
+      "forks": 2752,
       "starsAdded": 25469,
       "createdAt": "2026-08-30T19:00:04.703Z",
       "metaData": {
@@ -2937,6 +2937,72 @@
       }
     },
     {
+      "id": "24f4c7e8-a3e1-4e60-95cd-29317c667cfd",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 15530,
+      "forks": 3126,
+      "starsAdded": 12042,
+      "createdAt": "2026-09-02T12:00:04.479Z",
+      "metaData": {
+        "forks": "2290",
+        "stars": "11317",
+        "topics": [
+          "3d-globe",
+          "cesium",
+          "flight-tracking",
+          "geospatial",
+          "geospatial-intelligence",
+          "gis",
+          "osint",
+          "photogrammetry",
+          "satellite-tracking",
+          "spatial-intelligence",
+          "webgl",
+          "worldview"
+        ],
+        "license": "License",
+        "homepage": "https://maptheworld.ai/",
+        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+      },
+      "summaryData": {
+        "tags": [
+          "CesiumJS",
+          "Google Maps API",
+          "OpenAI Realtime",
+          "GEOINT",
+          "三维地球"
+        ],
+        "cover": "",
+        "title": "God’s Eye View 深度评测",
+        "ability": [
+          "三维地球可视化",
+          "13种实时图层叠加",
+          "电影化视觉风格切换",
+          "语音AI白板交互",
+          "多源OSINT数据集成"
+        ],
+        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "category": [
+          "数据可视化",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "地理空间爱好者",
+          "OSINT研究者",
+          "前端/3D开发者",
+          "应急可视化人员",
+          "技术好奇心强的用户"
+        ],
+        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
+      }
+    },
+    {
       "id": "c448eb57-af6d-4c1b-bc60-961ca42eb3f6",
       "dateAdded": "202636",
       "type": "github-weekly",
@@ -2944,8 +3010,8 @@
       "repo": "freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
-      "stars": 27211,
-      "forks": 2640,
+      "stars": 27245,
+      "forks": 2643,
       "starsAdded": 10669,
       "createdAt": "2026-08-30T19:00:04.694Z",
       "metaData": {
@@ -3007,8 +3073,8 @@
       "repo": "THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "stars": 30117,
-      "forks": 5037,
+      "stars": 30225,
+      "forks": 5050,
       "starsAdded": 8014,
       "createdAt": "2026-08-30T19:00:04.727Z",
       "metaData": {
@@ -3060,8 +3126,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 41922,
-      "forks": 3858,
+      "stars": 41978,
+      "forks": 3862,
       "starsAdded": 6962,
       "createdAt": "2026-08-30T19:00:04.720Z",
       "metaData": {
@@ -3131,8 +3197,8 @@
       "repo": "omacom/omarchy",
       "description": "Beautiful, Modern & Opinionated Linux",
       "language": "Shell",
-      "stars": 37068,
-      "forks": 3865,
+      "stars": 37108,
+      "forks": 3870,
       "starsAdded": 6006,
       "createdAt": "2026-08-30T19:00:04.705Z",
       "metaData": {
@@ -3229,6 +3295,78 @@
       }
     },
     {
+      "id": "03fed1a3-8215-4f22-b215-e3d590da1d9a",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "repo": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars": 55509,
+      "forks": 6938,
+      "starsAdded": 5232,
+      "createdAt": "2026-09-02T12:00:04.649Z",
+      "metaData": {
+        "forks": "6660",
+        "stars": "53438",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "claude",
+          "copilot",
+          "cursor",
+          "elevenlabs",
+          "ffmpeg",
+          "flux",
+          "image-generation",
+          "open-source",
+          "openai",
+          "python",
+          "remotion",
+          "stable-diffusion",
+          "text-to-speech",
+          "text-to-video",
+          "video-generation",
+          "video-production"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://www.openmontage.video/",
+        "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+      },
+      "summaryData": {
+        "tags": [
+          "自动化",
+          "视频剪辑",
+          "AI Agent",
+          "工作流",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenMontage：全流程 AI 视频自动生成框架",
+        "ability": [
+          "全流程自动制片",
+          "真实素材与动画双轨",
+          "多模型/本地化混合编排",
+          "成本控制与质量门",
+          "可视化项目管理回放"
+        ],
+        "summary": "一套让 AI 助手全自动完成从脚本调研到成片剪辑全流程的开源视频制作框架。",
+        "category": [
+          "AI 视频",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "独立视频创作者",
+          "技术型内容运营",
+          "教育培训机构",
+          "AI 极客与开发者"
+        ],
+        "description": "OpenMontage 将 Claude、Cursor 等编程助手转化为影视制作公司，支持从选题调研、脚本生成、素材检索到剪辑合成的全自动化。兼容本地与云端模型，提供成本预估与质量审核，是高效、低成本、可控的 AI 视频生产流水线。"
+      }
+    },
+    {
       "id": "b7c4775e-8426-4004-aff5-801a11915220",
       "dateAdded": "202636",
       "type": "github-weekly",
@@ -3236,8 +3374,8 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 40035,
-      "forks": 13570,
+      "stars": 40078,
+      "forks": 13580,
       "starsAdded": 4841,
       "createdAt": "2026-08-30T19:00:04.711Z",
       "metaData": {
@@ -3352,8 +3490,8 @@
       "repo": "tashfeenahmed/freellmapi",
       "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
       "language": "TypeScript",
-      "stars": 23732,
-      "forks": 3243,
+      "stars": 23765,
+      "forks": 3247,
       "starsAdded": 3452,
       "createdAt": "2026-08-30T19:00:04.709Z",
       "metaData": {
@@ -3405,8 +3543,8 @@
       "repo": "rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 51950,
-      "forks": 8998,
+      "stars": 51975,
+      "forks": 9001,
       "starsAdded": 3427,
       "createdAt": "2026-08-30T19:00:04.716Z",
       "metaData": {
@@ -3535,8 +3673,8 @@
       "repo": "every-app/open-seo",
       "description": "Open source alternative to Semrush and Ahrefs",
       "language": "TypeScript",
-      "stars": 16239,
-      "forks": 1979,
+      "stars": 16262,
+      "forks": 1984,
       "starsAdded": 2625,
       "createdAt": "2026-08-31T13:00:04.399Z",
       "metaData": {
@@ -3596,7 +3734,7 @@
       "repo": "abi/screenshot-to-code",
       "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
       "language": "Python",
-      "stars": 77099,
+      "stars": 77111,
       "forks": 9393,
       "starsAdded": 2485,
       "createdAt": "2026-08-30T19:00:04.728Z",
@@ -3817,6 +3955,62 @@
       }
     },
     {
+      "id": "f5fcef69-3eef-4cae-ab94-a7bd02056dd4",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/jingyaogong/minimind",
+      "repo": "jingyaogong/minimind",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "language": "Python",
+      "stars": 57599,
+      "forks": 7491,
+      "starsAdded": 1949,
+      "createdAt": "2026-09-02T12:00:04.627Z",
+      "metaData": {
+        "forks": "7488",
+        "stars": "57572",
+        "topics": [
+          "artificial-intelligence",
+          "large-language-model"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://jingyaogong.github.io/minimind",
+        "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h! - jingyaogong/minimind"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "小模型",
+          "PyTorch",
+          "教学",
+          "大模型训练"
+        ],
+        "cover": "",
+        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
+        "ability": [
+          "全栈训练链路",
+          "原生 PyTorch 教学",
+          "极低成本训练",
+          "多后端部署支持",
+          "强化学习与智能体"
+        ],
+        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 初学者与入门者",
+          "算法研究工程师",
+          "教育培训讲师",
+          "边缘端开发团队",
+          "大模型技术爱好者"
+        ],
+        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
+      }
+    },
+    {
       "id": "0ec27348-d9f9-4d94-9cef-88288f14c1ed",
       "dateAdded": "202636",
       "type": "github-weekly",
@@ -3824,8 +4018,8 @@
       "repo": "p-e-w/heretic",
       "description": "Fully automatic censorship removal for language models",
       "language": "Python",
-      "stars": 30084,
-      "forks": 3308,
+      "stars": 30100,
+      "forks": 3310,
       "starsAdded": 1874,
       "createdAt": "2026-08-31T13:00:04.417Z",
       "metaData": {
@@ -3881,7 +4075,7 @@
       "repo": "anthropics/claude-plugins-community",
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
-      "stars": 3229,
+      "stars": 3233,
       "forks": 249,
       "starsAdded": 1634,
       "createdAt": "2026-08-30T19:00:04.700Z",
@@ -3934,8 +4128,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 6592,
-      "forks": 544,
+      "stars": 6603,
+      "forks": 546,
       "starsAdded": 1377,
       "createdAt": "2026-08-30T19:00:04.718Z",
       "metaData": {
@@ -4229,8 +4423,8 @@
       "repo": "punkpeye/awesome-mcp-servers",
       "description": "A collection of MCP servers.",
       "language": "",
-      "stars": 93772,
-      "forks": 15462,
+      "stars": 93786,
+      "forks": 15467,
       "starsAdded": 919,
       "createdAt": "2026-09-01T12:00:04.119Z",
       "metaData": {
@@ -4278,6 +4472,118 @@
       }
     },
     {
+      "id": "8abe0af0-6f95-41e3-aa10-7fbe4658b284",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/google-research/timesfm",
+      "repo": "google-research/timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "language": "Python",
+      "stars": 28930,
+      "forks": 2821,
+      "starsAdded": 681,
+      "createdAt": "2026-09-02T12:00:04.658Z",
+      "metaData": {
+        "forks": "2821",
+        "stars": "28932",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+        "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. - google-research/timesfm"
+      },
+      "summaryData": {
+        "tags": [
+          "时间序列",
+          "Google Research",
+          "零样本学习",
+          "预测模型",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Google TimesFM：零样本时间序列预测大模型评测",
+        "ability": [
+          "零样本预测",
+          "多变量与协变量支持",
+          "超长上下文处理",
+          "概率分位数输出",
+          "简单易部署"
+        ],
+        "summary": "Google 发布的时间序列基础模型，无需训练即可精准预测未来趋势。",
+        "category": [
+          "AI 模型",
+          "开发工具",
+          "数据科学"
+        ],
+        "suitable": [
+          "数据科学家",
+          "算法工程师",
+          "业务分析师",
+          "时间序列研究者",
+          "平台开发团队"
+        ],
+        "description": "TimesFM 是 Google 推出的时间序列基础模型，支持零样本预测。3.0 版本原生支持多变量及协变量，在多项权威基准中名列前茅，能大幅降低跨场景预测的建模成本。"
+      }
+    },
+    {
+      "id": "1a3f71b8-7b36-4fa1-9f1f-add23a2a0373",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/zedeus/nitter",
+      "repo": "zedeus/nitter",
+      "description": "Alternative Twitter front-end",
+      "language": "Nim",
+      "stars": 14066,
+      "forks": 1284,
+      "starsAdded": 561,
+      "createdAt": "2026-09-02T12:00:04.544Z",
+      "metaData": {
+        "forks": "1170",
+        "stars": "14040",
+        "topics": [
+          "nim",
+          "privacy",
+          "self-hosted",
+          "twitter",
+          "x"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://nitter.net",
+        "description": "Alternative Twitter front-end. Contribute to zedeus/nitter development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Twitter前端",
+          "开源",
+          "隐私保护",
+          "RSS订阅",
+          "Docker部署"
+        ],
+        "cover": "",
+        "title": "Nitter 开源项目评测：隐私优先的 Twitter 前端",
+        "ability": [
+          "零 JS 无广告浏览",
+          "隐私保护代理",
+          "RSS 订阅功能",
+          "轻量级高性能",
+          "自建个人实例"
+        ],
+        "summary": "开源免费的 Twitter（X）隐私前端，去广告、无追踪，但面临平台封杀，更适合自建使用。",
+        "category": [
+          "开源项目",
+          "隐私工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "隐私敏感用户",
+          "RSS 资讯聚合者",
+          "开发者与运维",
+          "内容研究人员",
+          "开源爱好者"
+        ],
+        "description": "Nitter 是一个开源的 Twitter 前端，主打隐私保护和无广告浏览。它通过后端代理避免了平台的追踪和繁重的脚本，提供极致的轻量级体验。虽然面临 X 平台的封杀，公共实例大多不可用，但仍非常适合个人自建或作为 RSS 数据源使用。"
+      }
+    },
+    {
       "id": "777bc9e7-260d-44f3-887e-7b0154d2c664",
       "dateAdded": "202636",
       "type": "github-weekly",
@@ -4285,7 +4591,7 @@
       "repo": "google/googletest",
       "description": "GoogleTest - Google Testing and Mocking Framework",
       "language": "C++",
-      "stars": 39452,
+      "stars": 39454,
       "forks": 10886,
       "starsAdded": 492,
       "createdAt": "2026-08-30T19:00:04.723Z",
@@ -4327,6 +4633,63 @@
           "C++ 初学者与学习者"
         ],
         "description": "GoogleTest 是 C++ 生态最成熟、最被默认选择的测试框架，提供断言、测试套件、参数化测试及 gMock 模拟对象，深度兼容主流构建系统与 CI，适合从嵌入式到基础设施的各种 C++ 项目，帮助团队高效构建稳定可维护的测试体系。"
+      }
+    },
+    {
+      "id": "541524e5-72ac-4173-a4fd-da4aa857cdf8",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/colinhacks/zod",
+      "repo": "colinhacks/zod",
+      "description": "TypeScript-first schema validation with static type inference",
+      "language": "TypeScript",
+      "stars": 43759,
+      "forks": 2166,
+      "starsAdded": 238,
+      "createdAt": "2026-09-02T12:00:04.652Z",
+      "metaData": {
+        "forks": "2160",
+        "stars": "43707",
+        "topics": [
+          "runtime-validation",
+          "schema-validation",
+          "static-types",
+          "type-inference",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zod.dev",
+        "description": "TypeScript-first schema validation with static type inference - colinhacks/zod"
+      },
+      "summaryData": {
+        "tags": [
+          "TypeScript",
+          "数据校验",
+          "Schema",
+          "前端开发",
+          "tRPC"
+        ],
+        "cover": "",
+        "title": "Zod：TypeScript 生态首选数据校验库深度评测",
+        "ability": [
+          "TypeScript-first 类型推导",
+          "零依赖小体积(约2KB)",
+          "丰富API与组合能力",
+          "完善的生态集成",
+          "JSON Schema 输出"
+        ],
+        "summary": "写一份 Schema，同时获得运行时校验与 TypeScript 类型定义，解决前后端数据一致性问题。",
+        "category": [
+          "开发工具",
+          "Web 开发"
+        ],
+        "suitable": [
+          "TypeScript 开发者",
+          "前端/全栈工程师",
+          "Node.js 后端开发者",
+          "库/框架作者"
+        ],
+        "description": "Zod 是一套 TypeScript-first 的数据校验库，核心优势在于定义一份 Schema 即可同时获得运行时校验能力和自动推导的类型定义。它零依赖、体积小、生态繁荣，与 tRPC、React Hook Form 等深度集成，是目前 TS 生态解决外部数据校验痛点的首选方案。"
       }
     }
   ]

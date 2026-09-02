@@ -1,6 +1,468 @@
 {
   "all": [
     {
+      "id": "b28a1fa6-e6a1-49cc-abd1-6fe9b56fe24b",
+      "url": "https://github.com/vercel-labs/portless",
+      "domain": "github.com",
+      "repo": "vercel-labs/portless",
+      "description": "Portless 是 Vercel Labs 推出的本地开发代理工具。它通过将服务映射到固定的 .localhost 域名，彻底解决端口冲突和 EADDRINUSE 问题，并自动配置 HTTPS。支持 Monorepo 和 Git Worktree，极大提升了多服务并行开发的效率与体验。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:28:13.716Z",
+      "metaData": {
+        "forks": "378",
+        "stars": "11504",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://portless.sh",
+        "description": "Replace port numbers with stable, named local URLs. For humans and agents. - vercel-labs/portless"
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "本地开发",
+          "端口管理",
+          "HTTPS",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Portless：告别端口冲突的本地开发神器",
+        "ability": [
+          "命名本地域名",
+          "自动端口分配",
+          "开箱即用HTTPS",
+          "Monorepo多服务支持",
+          "远程协作共享"
+        ],
+        "summary": "用稳定命名的 HTTPS 域名替代随机端口，解决本地多项目管理痛点。",
+        "category": [
+          "开发工具",
+          "DevOps"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "Monorepo使用者",
+          "微服务开发者",
+          "多项目并行开发者",
+          "AI辅助开发爱好者"
+        ],
+        "description": "Portless 是 Vercel Labs 推出的本地开发代理工具。它通过将服务映射到固定的 .localhost 域名，彻底解决端口冲突和 EADDRINUSE 问题，并自动配置 HTTPS。支持 Monorepo 和 Git Worktree，极大提升了多服务并行开发的效率与体验。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "fd1331cf-2a35-4ffd-bf77-2544ac31a2b4",
+      "url": "https://github.com/protocolbuffers/protobuf",
+      "domain": "github.com",
+      "repo": "protocolbuffers/protobuf",
+      "description": "Google开源的二进制序列化协议，通过.proto定义数据结构，生成多语言代码，体积比JSON小50%，速度快，适合高并发场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:24:59.678Z",
+      "metaData": {
+        "forks": "16271",
+        "stars": "71880",
+        "topics": [
+          "marshalling",
+          "protobuf",
+          "protobuf-runtime",
+          "protoc",
+          "protocol-buffers",
+          "protocol-compiler",
+          "rpc",
+          "serialization"
+        ],
+        "license": "License",
+        "homepage": "http://protobuf.dev",
+        "description": "Protocol Buffers - Google's data interchange format - protocolbuffers/protobuf"
+      },
+      "summaryData": {
+        "tags": [
+          "序列化",
+          "gRPC",
+          "跨平台",
+          "二进制",
+          "Google开源"
+        ],
+        "cover": "",
+        "title": "Google Protocol Buffers 深度评测",
+        "ability": [
+          "高性能序列化",
+          "跨语言支持",
+          "Schema强类型",
+          "前后向兼容",
+          "数据体积压缩"
+        ],
+        "summary": "Google开源的跨语言二进制序列化工具，高效省流，是现代微服务通信的基石。",
+        "category": [
+          "开发工具",
+          "数据格式",
+          "中间件"
+        ],
+        "suitable": [
+          "后端工程师",
+          "微服务架构师",
+          "移动端开发者",
+          "跨语言团队",
+          "游戏开发者"
+        ],
+        "description": "Google开源的二进制序列化协议，通过.proto定义数据结构，生成多语言代码，体积比JSON小50%，速度快，适合高并发场景。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "2e4a7933-e197-4d1d-b022-0e3b350ed9d7",
+      "url": "https://github.com/zyronon/TypeWords",
+      "domain": "github.com",
+      "repo": "zyronon/TypeWords",
+      "description": "TypeWords是一款基于打字输入的开源英语学习工具，采用跟写、听写、默写等主动输出方式，并内置FSRS算法进行科学复习。它支持海量词库与自定义文章，界面清爽无广告，默认本地存储数据，可选自建Supabase同步，非常适合需要拼写准确度与隐私掌控的学习者。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:22:48.736Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "英语学习",
+          "打字练习",
+          "Docker部署",
+          "间隔重复"
+        ],
+        "cover": "",
+        "title": "TypeWords：开源主动输入式英语学习工具评测",
+        "ability": [
+          "单词拼写训练",
+          "FSRS间隔重复记忆",
+          "文章跟写默写",
+          "Docker私有部署",
+          "本地离线优先存储"
+        ],
+        "summary": "通过打字输入结合科学算法，彻底解决单词“只会认不会写”的痛点，支持Docker自建。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "教育学习"
+        ],
+        "suitable": [
+          "英语备考族",
+          "职场开发者",
+          "键盘打字爱好者",
+          "数据隐私敏感用户"
+        ],
+        "description": "TypeWords是一款基于打字输入的开源英语学习工具，采用跟写、听写、默写等主动输出方式，并内置FSRS算法进行科学复习。它支持海量词库与自定义文章，界面清爽无广告，默认本地存储数据，可选自建Supabase同步，非常适合需要拼写准确度与隐私掌控的学习者。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "d8ab5b7d-24aa-4dbd-bbd8-dead3b564e42",
+      "url": "https://github.com/pacifio/atlas",
+      "domain": "github.com",
+      "repo": "pacifio/atlas",
+      "description": "Atlas 是一款面向 AI 编程的桌面工具，通过本地统一的记忆层连接多个 AI 代理。它能自动记录会话并关联 Git 提交，让代码变更背后的决策逻辑清晰可查，兼顾高效协作与数据隐私保护。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:18:47.242Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agents",
+          "源码控制",
+          "本地优先",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "Atlas：AI 编程代理的协作与源码控制中枢",
+        "ability": [
+          "多代理并行协作",
+          "共享记忆与会话记录",
+          "Git 提交自动关联",
+          "本地隐私安全",
+          "知识库与研究集成"
+        ],
+        "summary": "专为 AI 编程代理设计的本地协作中枢，实现多代理共享记忆、会话记录与 Git 提交关联，确保代码决策可追溯。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 原生开发者",
+          "技术负责人/架构师",
+          "安全与合规团队",
+          "研究型开发者"
+        ],
+        "description": "Atlas 是一款面向 AI 编程的桌面工具，通过本地统一的记忆层连接多个 AI 代理。它能自动记录会话并关联 Git 提交，让代码变更背后的决策逻辑清晰可查，兼顾高效协作与数据隐私保护。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "b50d1d13-0f25-45ce-9abf-cbcc4e348484",
+      "url": "https://github.com/superlinked/sie",
+      "domain": "github.com",
+      "repo": "superlinked/sie",
+      "description": "SIE 将 Embedding、重排等 85+ 小模型整合到一个集群中，支持本地和 K8s 部署。它解决了模型碎片化和运维痛点，通过热加载机制提升 GPU 利用率，是企业构建自托管 AI 服务的理想底座。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:15:05.205Z",
+      "metaData": {
+        "forks": "297",
+        "stars": "2957",
+        "topics": [
+          "bge",
+          "colbert",
+          "data-pipeline",
+          "deep-learning",
+          "embeddings",
+          "inference",
+          "inference-server",
+          "information-retrieval",
+          "llm",
+          "ml",
+          "mlops",
+          "natural-language-processing",
+          "nlp",
+          "python",
+          "reranking",
+          "retrieval",
+          "retrieval-augmented-generation",
+          "semantic-search",
+          "splade",
+          "vector-search"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://superlinked.com",
+        "description": "Open-source inference server and production cluster for all the models your agent needs. - superlinked/sie"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "推理引擎",
+          "RAG",
+          "Agent",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "SIE (Superlinked Inference Engine) 深度评测",
+        "ability": [
+          "统一 API 接口",
+          "多模型热加载共享",
+          "生产级运维监控",
+          "文档处理管线",
+          "主流框架集成"
+        ],
+        "summary": "SIE 是一个统一管理多种 AI 小模型的开源推理集群，通过一套 API 提升 GPU 利用率并降低运维成本。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "服务器运维"
+        ],
+        "suitable": [
+          "Agent/RAG 开发者",
+          "后端平台团队",
+          "数据合规企业",
+          "独立开发者"
+        ],
+        "description": "SIE 将 Embedding、重排等 85+ 小模型整合到一个集群中，支持本地和 K8s 部署。它解决了模型碎片化和运维痛点，通过热加载机制提升 GPU 利用率，是企业构建自托管 AI 服务的理想底座。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "d61a6549-c529-45dc-8f4e-12ef5e02d470",
+      "url": "https://github.com/sngyai/Sequoia-X",
+      "domain": "github.com",
+      "repo": "sngyai/Sequoia-X",
+      "description": "Sequoia-X 是一个基于 Python 的开源量化选股系统。它利用免费数据源自动获取 A 股数据，运用向量化计算运行多种经典技术策略（如海龟交易），并支持通过飞书机器人实时推送选股结果，适合需要自动化盯盘的投资者。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:11:30.839Z",
+      "metaData": {
+        "forks": "1236",
+        "stars": "5898",
+        "topics": [
+          "a-shares",
+          "akshare",
+          "baostock",
+          "pandas",
+          "python",
+          "stock-screening",
+          "ta-lib",
+          "trading",
+          "turtle-trade"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书. Contribute to sngyai/Sequoia-X development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "量化交易",
+          "A股",
+          "Python",
+          "自动化",
+          "选股策略"
+        ],
+        "cover": "",
+        "title": "Sequoia-X：A股本地化量化选股系统评测",
+        "ability": [
+          "自动数据更新",
+          "向量化策略计算",
+          "飞书机器人通知",
+          "可扩展架构",
+          "本地化存储"
+        ],
+        "summary": "一款本地化部署、自动扫描A股形态并通过飞书推送结果的量化选股工具。",
+        "category": [
+          "金融理财",
+          "开源项目",
+          "效率工具"
+        ],
+        "suitable": [
+          "个人投资者",
+          "量化爱好者",
+          "小型投资团队",
+          "Python开发者"
+        ],
+        "description": "Sequoia-X 是一个基于 Python 的开源量化选股系统。它利用免费数据源自动获取 A 股数据，运用向量化计算运行多种经典技术策略（如海龟交易），并支持通过飞书机器人实时推送选股结果，适合需要自动化盯盘的投资者。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "c11f646b-3313-4383-a186-498f40f1d168",
+      "url": "https://github.com/google-research/timesfm",
+      "domain": "github.com",
+      "repo": "google-research/timesfm",
+      "description": "TimesFM 是 Google 推出的时间序列基础模型，支持零样本预测。3.0 版本原生支持多变量及协变量，在多项权威基准中名列前茅，能大幅降低跨场景预测的建模成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:07:29.181Z",
+      "metaData": {
+        "forks": "2821",
+        "stars": "28932",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+        "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. - google-research/timesfm"
+      },
+      "summaryData": {
+        "tags": [
+          "时间序列",
+          "Google Research",
+          "零样本学习",
+          "预测模型",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Google TimesFM：零样本时间序列预测大模型评测",
+        "ability": [
+          "零样本预测",
+          "多变量与协变量支持",
+          "超长上下文处理",
+          "概率分位数输出",
+          "简单易部署"
+        ],
+        "summary": "Google 发布的时间序列基础模型，无需训练即可精准预测未来趋势。",
+        "category": [
+          "AI 模型",
+          "开发工具",
+          "数据科学"
+        ],
+        "suitable": [
+          "数据科学家",
+          "算法工程师",
+          "业务分析师",
+          "时间序列研究者",
+          "平台开发团队"
+        ],
+        "description": "TimesFM 是 Google 推出的时间序列基础模型，支持零样本预测。3.0 版本原生支持多变量及协变量，在多项权威基准中名列前茅，能大幅降低跨场景预测的建模成本。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
+      "id": "3c0959e7-12e5-4bf8-9d4f-90e2b2f05dca",
+      "url": "https://github.com/fmtlib/fmt",
+      "domain": "github.com",
+      "repo": "fmtlib/fmt",
+      "description": "fmt 是一款高性能、安全的 C/C++ 格式化库，采用类 Python 语法，完美替代传统的 printf 和 iostream，大幅提升开发效率与运行性能。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-02T12:03:31.567Z",
+      "metaData": {
+        "forks": "2967",
+        "stars": "23775",
+        "topics": [
+          "c-plus-plus",
+          "chrono",
+          "cpp",
+          "cross-platform",
+          "floating-point",
+          "formatting",
+          "multiplatform",
+          "output",
+          "performance",
+          "printf",
+          "ranges",
+          "unicode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://fmt.dev",
+        "description": "A modern formatting library. Contribute to fmtlib/fmt development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "C++",
+          "格式化",
+          "开源",
+          "性能优化",
+          "std::format"
+        ],
+        "cover": "",
+        "title": "C++ 通用格式化库 fmt 深度评测",
+        "ability": [
+          "极致性能",
+          "类型安全",
+          "类Python语法",
+          "C++20标准兼容",
+          "跨平台Unicode支持"
+        ],
+        "summary": "C++ 生态中性能最强、最安全的现代格式化库， printf 与 iostream 的完美替代者。",
+        "category": [
+          "开发工具",
+          "C++库",
+          "系统编程"
+        ],
+        "suitable": [
+          "C++ 服务端开发者",
+          "嵌入式/系统级开发者",
+          "跨平台工具开发者",
+          "追求极致性能的程序员",
+          "C 语言开发者"
+        ],
+        "description": "fmt 是一款高性能、安全的 C/C++ 格式化库，采用类 Python 语法，完美替代传统的 printf 和 iostream，大幅提升开发效率与运行性能。"
+      },
+      "type": "project",
+      "dateAdded": "20260902"
+    },
+    {
       "id": "b9318e26-47fc-4623-9626-76b9a0d27630",
       "url": "https://github.com/youssofal/MTPLX",
       "domain": "github.com",
@@ -684,8 +1146,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3569",
-        "stars": "45330",
+        "forks": "3573",
+        "stars": "45355",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -2280,8 +2742,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3504",
-        "stars": "50004",
+        "forks": "3552",
+        "stars": "50506",
         "topics": [
           "browser",
           "chrome",
@@ -2293,7 +2755,7 @@
           "puppeteer"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://npmjs.org/package/chrome-devtools-mcp",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
         "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
       },
       "summaryData": {
@@ -3815,8 +4277,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6320",
-        "stars": "115557",
+        "forks": "6525",
+        "stars": "120641",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -5872,8 +6334,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "47268",
-        "stars": "234744",
+        "forks": "49028",
+        "stars": "239775",
         "topics": [
           "ai",
           "ai-agent",
@@ -6780,8 +7242,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37109",
-        "stars": "245971",
+        "forks": "37111",
+        "stars": "245997",
         "topics": [
           "ai-agents",
           "anthropic",

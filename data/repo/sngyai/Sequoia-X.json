@@ -1,0 +1,63 @@
+{
+  "id": "d61a6549-c529-45dc-8f4e-12ef5e02d470",
+  "url": "https://github.com/sngyai/Sequoia-X",
+  "domain": "github.com",
+  "repo": "sngyai/Sequoia-X",
+  "description": "Sequoia-X 是一个基于 Python 的开源量化选股系统。它利用免费数据源自动获取 A 股数据，运用向量化计算运行多种经典技术策略（如海龟交易），并支持通过飞书机器人实时推送选股结果，适合需要自动化盯盘的投资者。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-02T12:11:30.839Z",
+  "metaData": {
+    "forks": "1236",
+    "stars": "5898",
+    "topics": [
+      "a-shares",
+      "akshare",
+      "baostock",
+      "pandas",
+      "python",
+      "stock-screening",
+      "ta-lib",
+      "trading",
+      "turtle-trade"
+    ],
+    "license": "",
+    "homepage": "",
+    "description": "A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书. Contribute to sngyai/Sequoia-X development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "量化交易",
+      "A股",
+      "Python",
+      "自动化",
+      "选股策略"
+    ],
+    "cover": "",
+    "title": "Sequoia-X：A股本地化量化选股系统评测",
+    "ability": [
+      "自动数据更新",
+      "向量化策略计算",
+      "飞书机器人通知",
+      "可扩展架构",
+      "本地化存储"
+    ],
+    "summary": "一款本地化部署、自动扫描A股形态并通过飞书推送结果的量化选股工具。",
+    "category": [
+      "金融理财",
+      "开源项目",
+      "效率工具"
+    ],
+    "suitable": [
+      "个人投资者",
+      "量化爱好者",
+      "小型投资团队",
+      "Python开发者"
+    ],
+    "description": "Sequoia-X 是一个基于 Python 的开源量化选股系统。它利用免费数据源自动获取 A 股数据，运用向量化计算运行多种经典技术策略（如海龟交易），并支持通过飞书机器人实时推送选股结果，适合需要自动化盯盘的投资者。"
+  },
+  "contentDetail": "# Sequoia-X 深度评测\n## 一句话总结\n**Sequoia-X 是一个专为 A 股打造的、本地化可部署的量化选股系统：每日收盘后自动拉取并更新全市场日 K，运行多种经典技术形态策略，并通过飞书机器人把候选股推到群里；它以 OOP 分层架构、向量化计算与增量更新为核心，适合希望把“盯盘选股”自动化、且具备一定 Python 能力的个人或小团队使用。**\n---\n## 背景与痛点：它为什么诞生？\n- 痛点 1：手工筛选与盯盘成本极高。A 股标的多、消息杂，想在盘后从全市场里把符合形态的股票挑出来，要么用券商自带但不够灵活的选股器，要么人工翻 K 线，效率很低且容易漏掉机会。\n- 痛点 2：网络爬取与数据维护都很“反人类”。很多开源方案用东方财富等页面做数据源，容易遇到反爬、验证码、字段变更等问题；维护成本和时间成本都很高。\n- 痛点 3：缺乏可扩展、工程化落地的个人量化框架。很多个人量化方案停留在脚本级，难以复用、缺少日志与配置、多人协作不便。\nSequoia-X 的前身是 Sequoia 选股系统，使用 AKShare + 东方财富接口。新版本 Sequoia-X（V2，自称“王者回归”）基于现代 Python 工程化实践重构，改用 baostock 作为数据源，把数据、策略、通知分层，并强调向量化计算与增量更新，力求把“从数据到信号再到通知”的闭环做得简洁可靠。\n---\n## 核心亮点与功能剖析\n### 1) 两种运行模式，开箱即用\n- 日常模式：`python main.py`。用 8 进程增量补齐当日数据、跑所有策略、并通过飞书 Webhook 推送结果。官方给出参考时间：2~3 分钟完成全市场更新与选股。\n- 回填模式：`python main.py --backfill`。首次部署时一次性把全市场约 5200 只 A 股历史日 K（后复权）灌入本地 SQLite，预计约 12 分钟完成。\n#### 理解“增量更新”的比喻\n想象一个电子表格，每晚只需把今天的几行新数据“追加”进来，而不是每晚都把整个表格删除重建。增量更新就像只补今天的作业，避免每晚把整本课本重写一遍——省时又省 I/O。\n### 2) 内置策略组合：覆盖经典技术形态与事件驱动\nSequoia-X 内置策略覆盖趋势突破、旗形整理、涨停/跌停反包、相对强度，以及新增的定增公告监控。值得注意的是，这些策略在实现上采用了向量化操作（pandas），避免逐行迭代，效率与可读性都有保证。\n| 策略名 | 要点（通俗解释） |\n|---|---|\n| TurtleTrade | 20 日新高突破 + 成交额过亿 + 必须是“真阳线”（实体阳线且昨日收阳基础上继续涨），按流通市值排序，防“假突破诱多”。 |\n| MaVolume | 均线+放量突破：价格站上关键均线且成交量显著放大，常用于捕捉趋势启动的“右侧信号”。 |\n| HighTightFlag | “高而窄的旗形整理”突破：强势股进入窄幅震荡后再向上突破，典型欧奈尔式形态。适合捕捉主升浪前夜。 |\n| LimitUpShakeout | 涨停洗盘后回踩确认：强势涨停后缩量回踩不破关键位，再向上走。属于“强震后的上车机会”。 |\n| UptrendLimitDown | 上升趋势中的跌停反包：上升趋势中出现“突发跌停”，随后快速反包收复，常被解读为情绪宣泄后的“错杀修复”。 |\n| RpsBreakout | 欧奈尔 RPS 相对强度突破：在行业中表现相对强势的标的突破关键形态，选出“市场偏爱的强者”。 |\n| PrivatePlacement（定增公告监控） | 事件型策略：监控公告面的定增信息并推送，将技术面与消息面结合使用。 |\n### 3) 技术栈与架构设计：OOP + 向量化 + 工程化\n- 语言与生态：Python ≥3.10；依赖管理既支持传统的 pip，也推荐使用 uv（新一代快速包管理器）。工程配置与质量工具集成在 `pyproject.toml`（含 ruff 与 pytest 配置），便于维护与 CI。\n- 分层与模块化：\n  - `core/`：配置（`config.py`，基于 Pydantic-settings）与日志（`logger.py`，基于 rich），统一管理与结构化输出。\n  - `data/`：`engine.py` 封装数据引擎，负责从 baostock 拉取、增量同步与写入本地 SQLite；并提供给策略层统一的行情查询接口。\n  - `strategy/`：所有策略继承自 `BaseStrategy`，各策略实现自己的 `run()` 方法，返回候选股票代码列表；基类还支持按 `webhook_key` 路由到不同飞书机器人。\n  - `notify/`：`feishu.py` 负责飞书 Webhook 推送，可按策略路由到不同机器人。\n- 向量化与性能：策略实现（如 `TurtleTradeStrategy`）使用 pandas 滚动窗口与布尔索引做向量化判断，而不是 `iterrows` 逐行遍历，显著提升大规模扫描的效率；整体还用了多进程并行拉取增量数据。\n- 配置与密钥管理：通过 `.env` 管理数据库路径、起始日期、飞书 Webhook URL 等；模板 `.env.example` 提供默认值与多策略 Webhook 的占位符，避免硬编码敏感信息。`.env` 不入版本库，便于协作与安全。\n### 4) 数据层设计：免费、免注册、本地化\n- 数据源：baostock（免费、无需注册、无限流）。对于个人/小团队场景非常友好，避免频繁的认证与配额管理。\n- 复权方式：后复权（`hfq`）。作者解释这更适合增量存储，可避免因除权除息导致历史价格错位，便于稳定计算技术指标。\n- 存储：本地 SQLite（`data/sequoia_v2.db`），单文件可直接拷贝到其他机器使用，便于备份、迁移与离线分析。\n### 5) 飞书推送与多机器人路由\n- 默认 Webhook：配置 `FEISHU_WEBHOOK_URL` 作为全局 fallback。当策略未配置专属 Webhook 时使用。\n- 策略专属 Webhook：可通过 `STRATEGY_WEBHOOK_<策略标识>=<URL>` 为每个策略配置独立机器人（例如 `TURTLE`、`RPS`、`FLAG` 等），实现不同信号进不同群的灵活投递。`.env.example` 提供了清晰的模板与占位符。\n- 通知模块在源码中通过 `webhook_key` 映射到对应配置，把策略结果“按标签”投递，提升团队协作与信号管理效率。\n---\n## 目标人群与收益\n### 适合谁用\n- 具备基础 Python 能力的个人投资者/量化爱好者。\n- 有自己的技术形态偏好，希望“收盘就出清单”并推送到群的小型投资社群或学习小组。\n- 需要本地化数据存储，不想把持仓或选股逻辑上传到第三方云服务。\n### 能带来什么收益\n- 效率提升：从“人工翻 K”到“自动扫描+定时推送”，释放时间，避免漏掉符合条件的标的。\n- 工程经验：代码采用现代 Python 工程实践，阅读源码可学到 OOP 分层、向量化计算、配置管理、日志与通知集成等实用技能。\n- 可扩展性：通过继承 `BaseStrategy` 轻松增加自定义策略，复用数据层和通知层，快速形成个人工具箱。\n- 节省成本：数据源免费、本地化部署，无须付费数据终端；Webhook 通知借助飞书免费机器人即可完成闭环。\n---\n## 竞品/同类对比\n| 对比维度 | Sequoia-X | Qlib（微软） | Backtrader | Zipline（Quantopian 遗产） | 自写脚本（AKShare/Tushare） |\n|---|---|---|---|---|---|\n| 面向市场 | A 股（baostock） | 多市场，需自行数据对接 | 多市场，需自行数据对接 | 美股为主 | 取决于数据源 |\n| 定位 | 日度选股 + 飞书通知（生产导向） | 研究与回测框架（学术/工程） | 回测与实盘交易框架 | 回测框架 | 灵活但碎片化 |\n| 数据源 | 免费且本地化（baostock + SQLite） | 需自行准备 | 需自行准备 | 需自行准备 | 常用 AKShare/Tushare，需处理反爬与更新 |\n| 策略扩展 | 继承 `BaseStrategy`，自定义 `run()` | 复杂度高，需要学习框架 API | 编写 Strategy 子类 | 编写自定义算法 | 完全自写，无统一接口 |\n| 通知集成 | 飞书 Webhook 一键路由 | 无内置 | 无内置 | 无内置 | 需自己实现 |\n| 工程化与易用性 | 中高（现代 Python 工程栈、配置化、日志、多策略） | 高但陡峭 | 高但功能过重 | 高但生态与更新较慢 | 低，要自己搭轮子 |\n| 许可证 | MIT | MIT | 一般较宽松 | 较宽松 | 取决于个人 |\n一句话位置：Sequoia-X 在“把生产级选股自动化”这个细分场景上很实用，比传统回测框架轻，又比自写脚本更工程化、更“直接能落地”。\n---\n## 局限与不足\n### 1) 数据源依赖 baostock 的稳定与覆盖\n- Issues 页面多次出现“网络接收错误”“服务器连接失败”“首次回填很慢”等反馈，有用户反馈自己被 baostock 列为黑名单导致数据回填失败。\n- baostock 的数据覆盖与更新频率是项目能否稳定运行的前提；如遇服务波动、限流或风控，需准备替代数据源或退路方案。\n### 2) 首次回填需要时间与网络环境\n- 官方预估回填全市场数据约 12 分钟，但具体耗时依赖机器与网络环境；有用户反馈回填较慢。\n### 3) 当前仅支持日频与本地化部署\n- 若需要分钟/_tick/实时推送，或需要多机共享数据，需要扩展数据引擎与存储方案（例如改用 PostgreSQL/时序数据库，并做增量同步）。\n### 4) 策略层面不包含仓位/风控/回测\n- Sequoia-X 是“选股 + 通知”层，不会帮你下单、也不会做资金管理与止损。仓位管理与回测需要自建或对接其他框架。\n### 5) 学习成本仍需一定 Python 基础\n- 对完全不懂 Python 的小白而言，从环境配置到解决报错仍有一定门槛；但对已有 Python 基础的开发者来说，上手成本不高。\n---\n## 上手门槛与部署体验\n- 环境要求：Python ≥3.10。官方推荐使用 uv 快速安装依赖，或直接 `pip install .`。\n- 配置流程：\n  - 复制环境变量模板：`cp .env.example .env`\n  - 编辑 `.env`，至少填写 `FEISHU_WEBHOOK_URL`；需要为策略单独配置机器人的，再添加 `STRATEGY_WEBHOOK_<策略标识>` 对应 URL。\n- 首次运行：执行 `python main.py --backfill` 进行历史数据回填。回填完成后，后续只需运行日常模式即可增量更新。\n- 定时运行：建议用 crontab 在每个交易日收盘后自动触发（例如每日 19:15）。README 给出了示例条目。\n---\n## 社区活跃度与生命力\n- Star/Fork：页面上显示 5.9k Star、1.2k Fork，说明关注度与使用量都较为可观。\n- 近期提交：2026 年 4-5 月有连续提交与功能更新（如回填重试与自动重连、海龟策略按流通市值排序、新增定增公告监控策略），反映出项目仍在积极迭代。\n- Issues：当前存在多个 Open Issue，包含网络连接与 baostock 风控等问题，说明数据源稳定性是需要长期关注与改进的点。\n- 许可证：MIT，友好于个人与商业集成。\n---\n## Demo / 代码示例（极简上手）\n### 1) 环境变量配置示例（`.env`）\n```bash\n# 数据库路径（默认：data/sequoia_v2.db）\nDB_PATH=data/sequoia_v2.db\n# 数据起始日期（默认：2024-01-01）\nSTART_DATE=2024-01-01\n# 默认飞书 Webhook URL（必填，作为 fallback）\nFEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/your-default-token\n# 策略专属 Webhook（可选，格式：STRATEGY_WEBHOOK_<策略标识>=<URL>）\nSTRATEGY_WEBHOOK_TURTLE=https://open.feishu.cn/open-apis/bot/v2/hook/your-turtle-token\nSTRATEGY_WEBHOOK_RPS=https://open.feishu.cn/open-apis/bot/v2/hook/your-rps-token\n```\n### 2) 最简运行命令\n- 首次回填历史数据：\n```bash\npython main.py --backfill\n```\n- 日常模式（增量更新 + 选股 + 飞书推送）：\n```bash\npython main.py\n```\n### 3) 自定义策略示例（继承 `BaseStrategy`）\n基于源码中的基类与实现，新增策略只需三步：继承、实现 `run()`、设置 `webhook_key`。示例：\n```python\nfrom sequoia_x.strategy.base import BaseStrategy\nfrom sequoia_x.core.logger import get_logger\nlogger = get_logger(__name__)\nclass MyCustomStrategy(BaseStrategy):\n    webhook_key = \"custom\"  # 对应 .env 中 STRATEGY_WEBHOOK_CUSTOM\n    def run(self) -> list[str]:\n        candidates: list[str] = []\n        for symbol in self.engine.get_local_symbols():\n            try:\n                df = self.engine.get_ohlcv(symbol)\n                if len(df) < 20:\n                    continue\n                last = df.iloc[-1]\n                prev = df.iloc[-2]\n                # 示例条件：收盘价站上 20 日均线且成交量较昨日放大至少 1.2 倍\n                ma20 = df[\"close\"].rolling(20).mean().iloc[-1]\n                vol_yday = df[\"volume\"].iloc[-2]\n                cond1 = last[\"close\"] > ma20\n                cond2 = last[\"volume\"] > vol_yday * 1.2\n                if cond1 and cond2:\n                    candidates.append(symbol)\n            except Exception as exc:\n                logger.warning(f\"[{symbol}] MyCustomStrategy 计算失败：{exc}\")\n                continue\n        logger.info(f\"MyCustomStrategy 选出 {len(candidates)} 只股票\")\n        return candidates\n```\n### 4) 查看策略实现：海龟策略核心代码片段（节选自仓库）\n```python\n\"\"\"海龟交易策略：20日新高突破 + 成交额过亿 + 动量阳线过滤。\"\"\"\nimport pandas as pd\nfrom sequoia_x.core.logger import get_logger\nfrom sequoia_x.strategy.base import BaseStrategy\nlogger = get_logger(__name__)\nclass TurtleTradeStrategy(BaseStrategy):\n    webhook_key: str = \"turtle\"\n    _MIN_BARS: int = 21  # 至少需要 21 根 K 线（20日窗口 + 当日）\n    def run(self) -> list[str]:\n        symbols = self.engine.get_local_symbols()\n        candidates: list[str] = []\n        for symbol in symbols:\n            try:\n                df = self.engine.get_ohlcv(symbol)\n                if len(df) < self._MIN_BARS:\n                    continue\n                # 向量化：前20日 high 的滚动最大值（不含当日，shift(1) 后取 rolling(20)）\n                df[\"high_20\"] = df[\"high\"].shift(1).rolling(20).max()\n                last = df.iloc[-1]\n                prev = df.iloc[-2]\n                if pd.isna(last[\"high_20\"]):\n                    continue\n                breakout = last[\"close\"] > last[\"high_20\"]           # 突破前20天最高点\n                liquid = last[\"turnover\"] > 100_000_000             # 成交额过亿\n                is_yang = last[\"close\"] > last[\"open\"]              # 实体阳线\n                is_up = last[\"close\"] > prev[\"close\"]               # 相对昨日真涨\n                if breakout and liquid and is_yang and is_up:\n                    candidates.append(symbol)\n            except Exception as exc:\n                logger.warning(f\"[{symbol}] TurtleTradeStrategy 计算失败：{exc}\")\n                continue\n        if candidates:\n            market_caps = self._get_market_caps(candidates)  # 查询流通市值\n            candidates.sort(key=lambda s: market_caps.get(s, 0), reverse=True)\n        logger.info(f\"TurtleTradeStrategy 选出 {len(candidates)} 只股票\")\n        return candidates\n```\n---\n## 结语与行动建议\n- 总评：Sequoia-X 是一个定位清晰、工程化做得不错的 A 股量化选股工具，尤其适合想把“形态扫描+飞书通知”自动化的 Python 用户。它的 OOP 分层、向量化策略实现与多策略 Webhook 路由设计值得借鉴；同时，数据源依赖 baostock 也意味着你要关注其稳定性与可用性。\n- 值得一试的场景：你有明确的形态/事件偏好，习惯在盘后浏览筛选结果；你更倾向本地数据与代码掌控；希望把选股工具集成到团队飞书工作流中。\n- 行动建议：\n  1) 先做“沙盒试跑”：在本地或测试服务器上跑一次回填，确保网络与 baostock 连接正常。\n  2) 用默认 Webhook 测试飞书推送，再根据团队需要为不同策略配置独立 Webhook。\n  3) 选择一两个你最熟悉的策略（如 TurtleTrade 与 MaVolume），先运行一段观察期，评估信号质量与命中率，再决定是否增加仓位管理或实盘对接。\n  4) 有余力时，基于 `BaseStrategy` 写出自己的策略，把 Sequoia-X 当作你的个人量化“操作系统”，持续迭代你的方法论与工具箱。",
+  "type": "project",
+  "dateAdded": "20260902"
+}

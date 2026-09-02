@@ -5,6 +5,62 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>vercel-labs/portless</title>
+      <link>https://trending.pptboard.com/repo/vercel-labs/portless.html</link>
+      <description>用稳定命名的 HTTPS 域名替代随机端口，解决本地多项目管理痛点。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/vercel-labs/portless.html</guid>
+    </item>
+    <item>
+      <title>protocolbuffers/protobuf</title>
+      <link>https://trending.pptboard.com/repo/protocolbuffers/protobuf.html</link>
+      <description>Google开源的跨语言二进制序列化工具，高效省流，是现代微服务通信的基石。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/protocolbuffers/protobuf.html</guid>
+    </item>
+    <item>
+      <title>zyronon/TypeWords</title>
+      <link>https://trending.pptboard.com/repo/zyronon/TypeWords.html</link>
+      <description>通过打字输入结合科学算法，彻底解决单词“只会认不会写”的痛点，支持Docker自建。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/zyronon/TypeWords.html</guid>
+    </item>
+    <item>
+      <title>pacifio/atlas</title>
+      <link>https://trending.pptboard.com/repo/pacifio/atlas.html</link>
+      <description>专为 AI 编程代理设计的本地协作中枢，实现多代理共享记忆、会话记录与 Git 提交关联，确保代码决策可追溯。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/pacifio/atlas.html</guid>
+    </item>
+    <item>
+      <title>superlinked/sie</title>
+      <link>https://trending.pptboard.com/repo/superlinked/sie.html</link>
+      <description>SIE 是一个统一管理多种 AI 小模型的开源推理集群，通过一套 API 提升 GPU 利用率并降低运维成本。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/superlinked/sie.html</guid>
+    </item>
+    <item>
+      <title>sngyai/Sequoia-X</title>
+      <link>https://trending.pptboard.com/repo/sngyai/Sequoia-X.html</link>
+      <description>一款本地化部署、自动扫描A股形态并通过飞书推送结果的量化选股工具。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/sngyai/Sequoia-X.html</guid>
+    </item>
+    <item>
+      <title>google-research/timesfm</title>
+      <link>https://trending.pptboard.com/repo/google-research/timesfm.html</link>
+      <description>Google 发布的时间序列基础模型，无需训练即可精准预测未来趋势。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/google-research/timesfm.html</guid>
+    </item>
+    <item>
+      <title>fmtlib/fmt</title>
+      <link>https://trending.pptboard.com/repo/fmtlib/fmt.html</link>
+      <description>C++ 生态中性能最强、最安全的现代格式化库， printf 与 iostream 的完美替代者。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/fmtlib/fmt.html</guid>
+    </item>
+    <item>
       <title>youssofal/MTPLX</title>
       <link>https://trending.pptboard.com/repo/youssofal/MTPLX.html</link>
       <description>专为 Mac 打造的本地 LLM 加速工具，利用原生 MTP 技术实现倍速生成，兼容 OpenAI 接口。</description>
@@ -297,62 +353,6 @@
       <description>一款能将截图或视频直接转化为前端代码的开源 AI 工具，支持多模型与自托管，大幅提升开发效率。</description>
       <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/abi/screenshot-to-code.html</guid>
-    </item>
-    <item>
-      <title>abhigyanpatwari/GitNexus</title>
-      <link>https://trending.pptboard.com/repo/abhigyanpatwari/GitNexus.html</link>
-      <description>零服务器代码知识图谱引擎，通过图结构与 MCP 集成让 AI 代理精准分析代码依赖与影响面。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/abhigyanpatwari/GitNexus.html</guid>
-    </item>
-    <item>
-      <title>bilawalsidhu/gods-eye-view</title>
-      <link>https://trending.pptboard.com/repo/bilawalsidhu/gods-eye-view.html</link>
-      <description>浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/bilawalsidhu/gods-eye-view.html</guid>
-    </item>
-    <item>
-      <title>unclebob/swarm-forge</title>
-      <link>https://trending.pptboard.com/repo/unclebob/swarm-forge.html</link>
-      <description>基于 tmux 和 git worktrees 的多 AI 协作工具，通过“宪法”强制执行 TDD 和整洁代码规范。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/unclebob/swarm-forge.html</guid>
-    </item>
-    <item>
-      <title>santifer/career-ops</title>
-      <link>https://trending.pptboard.com/repo/santifer/career-ops.html</link>
-      <description>这是一个跑在本地的 AI 求职工具，能自动分析职位、生成定制简历并追踪申请流程。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/santifer/career-ops.html</guid>
-    </item>
-    <item>
-      <title>securo-finance/securo</title>
-      <link>https://trending.pptboard.com/repo/securo-finance/securo.html</link>
-      <description>支持 Docker 一键部署、多币种与 AI 助手的隐私优先自托管理财平台。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/securo-finance/securo.html</guid>
-    </item>
-    <item>
-      <title>OpenCut-app/OpenCut</title>
-      <link>https://trending.pptboard.com/repo/OpenCut-app/OpenCut.html</link>
-      <description>开源版剪映，浏览器内多轨剪辑，本地隐私优先，支持自托管。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/OpenCut-app/OpenCut.html</guid>
-    </item>
-    <item>
-      <title>actions/checkout</title>
-      <link>https://trending.pptboard.com/repo/actions/checkout.html</link>
-      <description>官方必备的代码检出 Action，为 CI/CD 提供安全、高效的代码拉取能力。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/actions/checkout.html</guid>
-    </item>
-    <item>
-      <title>ComposioHQ/awesome-claude-skills</title>
-      <link>https://trending.pptboard.com/repo/ComposioHQ/awesome-claude-skills.html</link>
-      <description>收录 1000+ Claude 技能的精华清单，助你一键提升 AI 自动化效率。</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/ComposioHQ/awesome-claude-skills.html</guid>
     </item>
   </channel>
 </rss>
