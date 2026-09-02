@@ -5,6 +5,41 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>cloudflare/computer</title>
+      <link>https://trending.pptboard.com/repo/cloudflare/computer.html</link>
+      <description>Cloudflare 推出的开源项目，给 AI Agent 配了台“虚拟电脑”，文件与计算分离，大幅降低运行成本。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/cloudflare/computer.html</guid>
+    </item>
+    <item>
+      <title>semantica-agi/semantica</title>
+      <link>https://trending.pptboard.com/repo/semantica-agi/semantica.html</link>
+      <description>用知识图谱构建 AI 的可审计“记忆层”，让每一次决策都有据可查。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/semantica-agi/semantica.html</guid>
+    </item>
+    <item>
+      <title>hugohe3/ppt-master</title>
+      <link>https://trending.pptboard.com/repo/hugohe3/ppt-master.html</link>
+      <description>一个能生成原生可编辑 PPTX 文件的开源 AI 助手，支持本地运行与模板复刻。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/hugohe3/ppt-master.html</guid>
+    </item>
+    <item>
+      <title>JuliusBrussee/caveman</title>
+      <link>https://trending.pptboard.com/repo/JuliusBrussee/caveman.html</link>
+      <description>通过压缩 AI 输出风格与本地代理处理上下文，大幅降低 Token 消耗并提升阅读效率的开源全家桶。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/JuliusBrussee/caveman.html</guid>
+    </item>
+    <item>
+      <title>blader/humanizer</title>
+      <link>https://trending.pptboard.com/repo/blader/humanizer.html</link>
+      <description>基于 Wikipedia AI 写作特征清单，系统性去除 LLM 输出中的“AI 味”，让文本读起来更像真人写的。</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/blader/humanizer.html</guid>
+    </item>
+    <item>
       <title>vercel-labs/portless</title>
       <link>https://trending.pptboard.com/repo/vercel-labs/portless.html</link>
       <description>用稳定命名的 HTTPS 域名替代随机端口，解决本地多项目管理痛点。</description>
@@ -318,41 +353,6 @@
       <description>Kaneo 是一个极简、开源且自托管的项目管理工具，主打轻量、快速与数据私有，支持 AI 原生集成。</description>
       <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/usekaneo/kaneo.html</guid>
-    </item>
-    <item>
-      <title>livekit/agents</title>
-      <link>https://trending.pptboard.com/repo/livekit/agents.html</link>
-      <description>一套面向生产环境的实时 AI Agent 框架，解决语音与多模态智能体的低延迟交互难题。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/livekit/agents.html</guid>
-    </item>
-    <item>
-      <title>ChromeDevTools/chrome-devtools-mcp</title>
-      <link>https://trending.pptboard.com/repo/ChromeDevTools/chrome-devtools-mcp.html</link>
-      <description>Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/ChromeDevTools/chrome-devtools-mcp.html</guid>
-    </item>
-    <item>
-      <title>NationalSecurityAgency/ghidra</title>
-      <link>https://trending.pptboard.com/repo/NationalSecurityAgency/ghidra.html</link>
-      <description>美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/NationalSecurityAgency/ghidra.html</guid>
-    </item>
-    <item>
-      <title>tailscale/tailcat</title>
-      <link>https://trending.pptboard.com/repo/tailscale/tailcat.html</link>
-      <description>复用 Tailscale 技术栈的去控制面安全管道，无需账号和 root 即可实现一键内网穿透与加密传输。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/tailscale/tailcat.html</guid>
-    </item>
-    <item>
-      <title>abi/screenshot-to-code</title>
-      <link>https://trending.pptboard.com/repo/abi/screenshot-to-code.html</link>
-      <description>一款能将截图或视频直接转化为前端代码的开源 AI 工具，支持多模型与自托管，大幅提升开发效率。</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/abi/screenshot-to-code.html</guid>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,111 @@
+# JuliusBrussee/caveman
+
+[GitHub URL](https://github.com/JuliusBrussee/caveman)
+
+
+## Caveman 项目评测：大模型 Token 压缩与成本优化神器
+
+> 通过压缩 AI 输出风格与本地代理处理上下文，大幅降低 Token 消耗并提升阅读效率的开源全家桶。
+
+- **Tags**: Token 节省, AI 助手, 成本优化, 开源, Claude
+- **Category**: 开发工具, AI 编程, 效率工具
+
+## Details
+
+# 为什么用 caveman？一句话总结：
+ Caveman 是一个“让 AI 少说废话、多读压缩”的插件与本地代理全家桶，适用于 Claude Code、Codex CLI、Gemini、Cursor、Windsurf、Cline、Copilot 等 30+ AI 编码助手。它通过风格压缩与本地压缩引擎，把模型的输出和输入大幅压缩，代码与错误信息保持原样，旨在在不降低质量的前提下减少 token 消耗、提升上下文利用率与阅读速度。官方与实测显示它在会话层面通常能带来约 4–10% 的总体 token 节省，在纯对话输出上可达 60% 以上的压缩。
+## 背景与痛点：为什么“多说话”越来越贵
+- 成本与上下窗双重压力。大模型按 token 计价，编码助手常因为冗长回复与重复上下文消耗大量 token。长上下文价格不菲，且一旦把关键信息挤到窗外，问答质量会明显劣化。
+- 冗长且格式化的输出。默认的编码助手爱给“Sure, I'd be happy to help”这类填充语；解释一大段理论后才给出实际可执行步骤；或在查看/引用代码时反复粘贴同一段上下文。
+- 多端分散与工具碎片化。开发者同时使用 Claude Code、Codex CLI、Cursor、Windsurf 等多个助手，难以统一管控 token 开销；各家的配置方式也不一样，一个改动要重复配置多遍。
+- 无法客观看到“钱花哪儿了”。很多工具缺乏本地、可审计的账单与效果复盘，只能以供应商账单为准，无法针对性优化。
+Caveman 的原点是把“输出风格”压缩到位；Caveman 2 则进一步在“输入侧”做本地代理压缩，形成统一的压缩引擎与协议，让不同 Agent 都用同一套“瘦身方案”。
+## 核心亮点与功能剖析
+### 1) 风格压缩：让模型“用尽量少的字把事说清楚”
+- 多档模式与语言保留：支持 lite/full/ultra 以及文言文（wenyan）等模式，仅压缩风格，不改动代码/命令/错误原文。多语言内容仍然以原语言输出，只是风格更紧凑。代码块保持字节一致，不误改。
+- 触发与切换自然：常见支持 Claude Code 的环境可自动激活；也可用 /caveman 切换模式，/caveman off 关闭，或用自然语言“be brief/less tokens/stop caveman”等触发。多个 slash 工具链：/caveman-commit（精简的 Conventional Commit）、/caveman-review（一行化的 PR 审查）、/caveman-compress（把项目记忆文件压缩以减少每回合输入）等。
+- 实测表现：官方 README 中对 10 个任务给出的输出 token 节省平均约 65%，范围 22–87%。JetBrains 官方博客在更贴近真实编码会话的评测中，给出的全会话节省约 8.5%，并指出质量无明显变化。第三方独立分析也指出：输出侧压缩可观，但输入与推理几乎不缩，因此全会话节省通常在 4–10% 区间。官方 docs/HONEST-NUMBERS 也专门澄清“65% 是输出侧数字”与技能本身带来约 1–1.5k 输入开销的“诚实数字”。
+### 2) 本地代理（Caveman Proxy）：在“读”的阶段就瘦身
+- 一条命令外挂任何 Agent：caveman claude（或 codex/gemini 等），将请求路由到本地压缩代理，再转发到供应商。对 Claude Pro/Max 的 OAuth 凭据透传，不落地。代理模式下无需 Caveman 账号，压缩在本地完成，recovery 备份保存在你自己的磁盘。官方在 54 次 Claude Code 基准中测得 33.2% 的“供应商报告的输入 token”减少，并通过 18 项“精确答案检查”。
+- 按内容类型路由的压缩策略：引擎会对载荷做类型识别（JSON、日志、代码、diff、搜索结果、HTML/文本），并对每类采取不同“保什么、删什么”的策略，目标是保持答案所需信息不变的前提下大幅缩减。例如：保留错误/堆栈与首尾行，丢弃 INFO 与进度噪音；保留导入、签名、类型，把函数体折叠但保持语法合法；仅保留变更行与 diff 头等。
+- 上下文打包与重排（contextwindow.Pack）：按 BM25 相关性、新近程度与错误信号，在预算内筛选并按原顺序返回候选上下文，既控制 token 又保留时间线。
+### 3) Pixel 模式：把“技能本身”也瘦身
+- 现象：每个技能（SKILL.md）每回合都会被完整加载作为提示正文，产生永久的“技能税”。
+- 思路：caveman convert 把技能正文转为分页 PNG，前面保持文本 frontmatter 以保证发现与触发逻辑不变；模型把正文当图片读，从而在许多场景下节省 token。官方自测：caveman 技能本身从约 1069 tokens 降到约 415 tokens（-61%）。仅在判断“页面比文本更省”时才会转换，失败则保持原样。新技能通过 caveman skills install 可默认自动 pixel（可 --no-pixel 禁用）。
+### 4) 覆盖 30+ Agent 的统一安装与“包裹”
+- 统一安装器（需要 Node ≥18）：一条 curl/sh 或 PowerShell 即可自动探测已安装的 Agent 并完成适配；支持 dry-run、重装、卸载等。安全方面，安装脚本对 hook 做完整性校验与固定版本（SHA-256、PINNED_REF），避免在 main 分支变动时引入不确定性。官方 release v1.9.0 明确将安装流程改为“安装时拉取固定 tag + 校验 checksum”。
+- Wrap 与 Profiles： caveman claude 等为持久化“包裹”；caveman wrap <agent> 为临时包裹。每增加一个 Agent 只需在 profiles/ 目录添加一个 JSON 描述，不修改原工具配置文件。已支持 Claude Code、OpenAI Codex CLI、Gemini CLI、Aider、opencode、Hermes Agent、OpenClaw、Pi 等。并且可以通过 baseURL 把任何使用 OpenAI 风格 SDK 的框架接入本地代理（Vercel AI SDK、LangChain 等）。
+### 5) 本地“审计”与优化：caveman learn 与 A/B 试跑
+- caveman learn：扫描本地历史会话，给出“Cave Score”、各 token 消耗来源排序与一行修复建议，并复现“如果当时用了 caveman，会省多少”的重放效果与 30 天按列表价计费的示意。数据完全本地、只读、无需账号。官方说明 telemetry 可关闭（caveman telemetry off 或 DO_NOT_TRACK=1）。
+- caveman learn implement：把计划交给你的 Agent（如 Claude Code 或 Codex），逐条作为 diff 提出修改，由你确认再执行并重新测量；无效更改会自动回滚，强调“不会为了省钱把模型变蠢”。
+- caveman trial -- claude：在真实会话做 A/B 试跑，再用 trial report 看结果，便于对比有无 caveman 的实际体验与开销变化。
+### 6) 小工具生态与 MCP
+- 压缩与记忆：shrink（压缩命令输出）、mem（持久记忆与 byte-exact 恢复）、browse（本地 Chrome 的可访问性树快照，官方给出一个 200 行操作表的查询用例：Playwright ARIA baseline 15,704 tokens vs caveman browse 的 121 tokens，约 129.8× 压缩）。
+- TOON 重编码器：caveman toon encode|decode，独立可用的重编码工具。
+- MCP 服务端：对外暴露 compress/retrieve/stats/toon_encode/toon_decode 五个工具，方便任何 MCP Host 接入使用。
+### 7) “诚实数字”与统计
+- /caveman-stats：在 Claude Code 中可看本回合与会话级的 token 使用、节省与 USD 估算；官方 v1.10.0 更新明确把技能的输入开销计入，算出“净节省”。
+- HONEST-NUMBERS：官方专文说明何时省钱、何时可能“更贵”，并提供自测路径；与 JetBrains、第三方独立评测口径一致，避免只宣传输出侧节省而忽略输入与推理成本。
+## 技术栈与架构解析（开发者视角）
+- 混合栈：CLI/SDK/表层工具（TS/Node）、核心引擎与代理/缓存/浏览/MCP 服务端（Go）；文档与前端示例使用 Markdown/静态页面。安装器为统一 Node 脚本（install.js），避免 bash/PowerShell 脚本漂移，且支持跨平台。官方强调 Node ≥18。依赖方面，使用 pxpipe（MIT）与字体素材（Spleen 5×8 与 GNU Unifont，分别为 BSD-2-Clause 与 OFL-1.1/GPLv2-with-font-exception），并在 NOTICE 里说明。
+- 代理模式：在 Agent 与供应商之间加一层“本地透传+压缩+恢复”，通常通过环境变量与 baseURL 重写接入；recovery 数据持久化在本地 SQLite/文件系统，不上云。核心思路是“不改变模型与能力，只在边缘压缩与解压”。
+- 类型驱动的压缩路由：以 detect() 做载荷类型识别，再交到对应压缩器；核心是每类的“保什么、删什么”策略与阈值，而不是单纯删字或截断。上下文打包引入 BM25 与错误信号，确保关键信息被优先保留，且保持原始顺序以便时序复原。
+- Pixel 模式：把 SKILL.md 正文渲染为图片，既保持了可读性又减少了 token；只在判定“图片更省”时触发，失败则回退，保证安全。这是对“技能税”的一次端到端优化闭环。
+## 上手门槛与部署体验
+- 前置要求：Node ≥18、常用 Agent（如 Claude Code、Codex CLI、Gemini CLI 等）已安装；browse 模式需要本地 Chrome。环境满足后一条安装命令即可，官方提供 bash 与 PowerShell 一键脚本，且支持跨平台、WSL、Git Bash。
+- 文档与示例：README 开头就是 Before/After 对比与极简安装示例；文档细分技术手册、安装矩阵、诚实数字、License、贡献指南、维护者指南、Issues。对开发者来说，官方 benchmarks 与 evals 有具体脚本与数据，方便复现与验证。
+- 集成侵入性：CLI/Proxy/SDK 接入通常只需改 baseURL 或环境变量，或由统一安装器自动配置 hooks；大部分情形不改原有 Agent 配置（wrap 模式只读原配置）。卸载/禁用也提供明确命令（caveman disable <agent>）。
+- 报错与诊断：官方在文档中提供了 SECURITY.md 与边界说明；telemetry 默认匿名统计但可关闭；stats 与 learn 让你本地审计开销，而不是黑盒。
+## Demo / 代码示例（开发者可跑）
+- 一键安装与启用（macOS/Linux 示例，需 Node ≥18）：
+  ```bash
+  # 安装 CLI（含 Proxy）
+  npm install -g @caveman-ai/cli && caveman setup --install
+  # 用 caveman 包裹 Claude Code 并启动
+  caveman claude
+  ```
+- 安装技能（skills 生态）：
+  ```bash
+  # 对 Claude Code
+  claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman
+  # 对 Gemini CLI
+  gemini extensions install https://github.com/JuliusBrussee/caveman
+  # 对 Cursor/Windsurf/Cline/Codex 等 30+ Agent（skills 生态）
+  npx skills add JuliusBrussee/caveman --skill '*' -a codex --yes  # 把 codex 换成你的 Agent profile
+  ```
+- 快速验证压缩效果（使用 stats 与 trial）：
+  ```bash
+  caveman stats          # 看压缩与节省的分类统计
+  caveman trial -- claude # 在真实会话做 A/B 对照
+  trial report           # 查看对比报告
+  ```
+- 使用本地审计与优化：本地扫描历史并给出可执行的优化方案，由你的 Agent 来执行并回滚无效改动。
+  ```bash
+  caveman learn               # 生成 Cave Score 与排序
+  caveman learn implement     # 交给 Claude Code/Codex 逐条修复（需你确认）
+  ```
+## 社区活跃度与生命力
+- 版本节奏：2026 年 8 月仍有 v1.10.0 与 v1.9.1 的持续发布，涵盖统计准确化、Windows 兼容、hook 健壮性、安全性（安装时拉取固定 tag+SHA256 校验）和文档完善。release 说明详尽，明确列出变更与已知问题。按 deps.dev 的记录，最近一次发布在 2026-08-19。这表明项目在持续维护中。
+- Issues 氛围：从 Issues 列表看，既有功能请求（Nix 包管理支持、Firefox 扩展、显示当前模式等），也有 bug 报告（Windows cp1252 兼容、stats 多块计数、语言漂移、brew 升级 node 后 hook 失效等），表明社区在用且反馈活跃。官方在 changelog 中明确回应了若干兼容与安全问题，反映出响应较快的态度。
+- 生态位置：作者 Julius Brussee 将 Caveman 定位为“一套压缩引擎，从技能到代理到 SDK 再到网关/企业”的家族，Skill 与表层以 MIT 为主，核心引擎采用 BSL-1.1（带转换到 Apache-2.0 的日落条款），对自托管友好，但对第三方托管/嵌入需要商业授权。这种模式既保证了开源可用性，又为可能的商业化与长期支持留下空间。官方在 License 中做了非常清晰的分目录说明，值得认真评估。
+## 竞品/同类对比与定位
+- 直接风格压缩类：主要通过 Prompt/系统指令把模型“说得简短”。Caveman 的独特之处在于“代码/命令/错误保持原样”且提供多档强度与语言支持，与 Agent 深度集成（hooks 与技能生态），并配套统计与审计。这比单纯手写一条“be brief”提示要可控且易维护得多。
+- 代理/缓存/压缩网关类：如 LiteLLM、各类 LLM Gateway 或 Caching 中间件。Caveman Proxy 的独特性是“以内容类型驱动的压缩+可恢复备份+本地审计与 A/B 试跑”，强调“字节级可恢复”，而不是粗暴截断或忽略语义。与纯网关比，它在“瘦身与语义保真”之间做了更细粒度权衡。
+- Agent 框架或技能生态：如 Cursor/Windsurf/Cline 的内置规则、LangChain/Eve/Mastra 等框架内置的提示策略。Caveman 提供 Agent SDK（MIT）可直接嵌入这些框架，统一策略，而不是每个框架各自实现一套。对多 Agent 团队很有吸引力。
+## 目标人群与收益
+- 重度使用 Claude Code/Cursor/Cline/Windsurf/Copilot 等编码助手的开发者：尤其当你习惯于频繁与助手交流、查代码、写代码时，Caveman 能明显提升阅读速度（输出更短、更快看完），并在长期使用中积累可观的“净节省”。
+- 多 Agent 并存的团队或个人：统一用 caveman wrap 包裹不同 Agent，通过统一安装器与 profiles 管理集成，能大幅降低多端配置与策略不一致的摩擦。
+- 注重隐私与可审计的组织：本地压缩与审计（learn/stats）、不落地到外部（除了供应商）、可关闭遥测，对合规要求高的环境更友好；recovery 数据都在本地磁盘。官方 SECURITY.md 与 honest numbers 文档也减少了黑盒感。
+- 想要“亲自测量与优化”的工程型用户：caveman learn 与 trial 提供可量化、可重放的评估与修复流程，而不是只相信营销数字。从长远看，它把“token 优化”变成工程实践，而不是一次性 hacks。
+## 局限与不足（客观视角）
+- 节省口径的“诚实陷阱”：官方与 JetBrains、独立评测都明确：65% 是输出侧的数字；全会话节省通常 4–10%。若你期望“整体账单对半砍”，会失望。对已经偏“简洁”的工作流，甚至可能出现净负（因为技能本身有 1–1.5k 输入开销）。docs/HONEST-NUMBERS 与 /caveman-stats 现在会明确显示净节省，建议以它为准。
+- 质量风险存在（但可观察）：任何压缩都存在改变模型行为的微小风险。官方通过“精确答案检查”与重放 A/B 来控制；但对需要长文解释或教学式内容的场景，压缩后的表达未必理想。建议先在非关键任务试用，并用 trial 对比。
+- 集成复杂度与多样性：30+ Agent 的集成难免有边界情况（例如 opencode 的 Bun 环境限制、hook 的兼容、Windows 的编码与路径问题）。官方 changelog 里记录了大量此类修复，说明在持续打磨，但作为用户仍需留意版本匹配与文档更新。
+- 许可模式与商业化边界：核心引擎使用 BSL-1.1，允许自托管但不允许第三方托管/嵌入/服务化，未来有转 Apache-2.0 的日落条款（2030-06-21 或版本首发后四年以较早者为准）。对于个人开发者或自用团队问题不大，但若想“把 caveman 作为自己产品的一部分”再对外提供服务，则需要评估商业授权。
+- 学习与调优成本：尽管官方尽量“一键安装”，但真正用好 learn/trial/shrink/browse 等能力，仍然需要一定的工程习惯与对 token 流的理解。对小用户来说，收益可能有限。
+## 结语与行动建议
+- 终极评判：Caveman 不是“省钱魔法”，而是一套工程化、可审计、可复现的“token 压缩与优化”全家桶。它在保持代码与错误精度的前提下，通过风格压缩、本地代理压缩与技能 pixel 化，显著提升阅读速度与上下文利用率；在全会话层面通常带来 4–10% 的节省，对高频用户累积可观。其“诚实数字”文档、本地审计（learn/stats）与 A/B（trial）设计，让它成为少数“可测量的基础设施”，而不是营销噱头。
+- 给“小白”的建议：从技能开始。先在你常用的 Agent 中安装技能，体验 /caveman 与 /caveman-stats，感受输出变短与阅读加速；不用急着上 Proxy 或 learn。注意看 stats 的“净节省”，不要被 65% 的数字迷惑。
+- 给团队与重度用户的建议：评估 Caveman Proxy 与 wrap 统一多 Agent，再引入 learn 与 trial 定期审计与优化。对于重日志/搜索/浏览的工作流，可以试用 browse 与 shrink；对项目记忆/说明文档可使用 /caveman-compress。把 Caveman 视为“可量化工程实践”，而不是“插件玩具”。
+- 风险与合规：如计划将 Caveman 打包进自家产品或作为服务提供给第三方，请认真阅读 BSL-1.1 与商业授权条款，并与官方确认边界。个人与团队自用通常没问题。
+- 最后的建议：无论是否采用 Caveman，它提出的“为什么用很多 token，用很少也能把事办成”的理念值得借鉴。即使你只用其中一部分（如技能或 Proxy），只要能帮你在关键场景下“看得更快、省得更多”，就是一笔划算的投入。
