@@ -1,0 +1,75 @@
+{
+  "id": "bfc36ecd-33e9-4f95-8a7a-2d58f3c64d51",
+  "url": "https://github.com/vitali87/code-graph-rag",
+  "domain": "github.com",
+  "repo": "vitali87/code-graph-rag",
+  "description": "Code-Graph-RAG 用 Tree-sitter 解析 14+ 语言代码构建统一图谱，通过自然语言驱动 RAG 检索与 Cypher 查询，支持 AST 级编辑、死代码检测和影响分析，并可作为 MCP 服务器接入 Claude Code，实现对话式代码理解与操作。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-03T11:44:12.644Z",
+  "metaData": {
+    "forks": "654",
+    "stars": "4928",
+    "topics": [
+      "ai",
+      "ast",
+      "claude-code",
+      "code-analysis",
+      "code-understanding",
+      "codebase-search",
+      "developer-tools",
+      "graph-database",
+      "knowledge-graph",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "memgraph",
+      "monorepo",
+      "multi-language",
+      "python",
+      "rag",
+      "retrieval-augmented-generation",
+      "semantic-search",
+      "tree-sitter"
+    ],
+    "license": "MIT license",
+    "homepage": "https://code-graph-rag.com",
+    "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs - vitali87/code-graph-rag"
+  },
+  "summaryData": {
+    "tags": [
+      "代码图谱",
+      "RAG",
+      "代码重构",
+      "Claude Code",
+      "多语言支持"
+    ],
+    "cover": "",
+    "title": "Code-Graph-RAG - 代码知识图谱 + RAG + 可执行编辑工具链",
+    "ability": [
+      "多语言代码图谱构建",
+      "自然语言生成 Cypher 查询",
+      "AST 级精准编辑与替换",
+      "死代码检测与影响分析",
+      "MCP 服务器集成 Claude Code"
+    ],
+    "summary": "面向多语言 monorepo 的代码图谱化 AI 工具，让自然语言查询与精准编辑代码库成为现实",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "代码分析"
+    ],
+    "suitable": [
+      "大型 monorepo 维护者",
+      "跨语言项目开发者",
+      "技术负责人与架构师",
+      "Claude Code 深度用户",
+      "需要做代码重构的工程师"
+    ],
+    "description": "Code-Graph-RAG 用 Tree-sitter 解析 14+ 语言代码构建统一图谱，通过自然语言驱动 RAG 检索与 Cypher 查询，支持 AST 级编辑、死代码检测和影响分析，并可作为 MCP 服务器接入 Claude Code，实现对话式代码理解与操作。"
+  },
+  "contentDetail": "# 一句话总结\nCode-Graph-RAG 是一套面向多语言 monorepo 的“代码知识图谱 + RAG + 可执行编辑”的开源工具链：用 Tree-sitter 把代码库解析成统一图谱（Memgraph），再由自然语言驱动的 RAG 代理生成 Cypher 查询、做结构化检索与 AST 级精准改写，并可作为 MCP 服务器直接接入 Claude Code，让“像用搜索引擎一样用你的代码库”成为现实。它适合需要做跨语言、跨仓库理解与维护的团队或个人。\n---\n## 背景与痛点\n- 传统 AI 编码助手多基于“局部上下文”，难以在大型/monorepo 中准确理解调用链、依赖和改动影响面，经常“答非所问”或漏掉关联文件。  \n- 做影响分析、死代码检测、跨语言重构时，静态分析工具的语言覆盖率与交互门槛又往往无法兼顾，还需要在不同语言/工具间来回切换。  \n- 团队希望用自然语言提问，但得到回答后仍要人工跳转定位、手动改代码、难以结构化地验证与回滚。\n这些痛点催生了 Code-Graph-RAG 的思路：先把“代码结构化成图谱”，再用图谱驱动自然语言检索与可执行编辑。官方与社区写作中也强调了“以图表示代码，让 repo 级推理成为可能”。\n---\n## 技术栈与架构解析\n- 多语言解析层：基于 Tree-sitter 的 AST 解析器，支持 14+ 语言，并统一到同一图模式（函数/类/模块/依赖/引用等），还能通过 ast-grep 插件层扩展更多语言的“结构支持”。\n- 图存储：Memgraph（兼容 OpenCypher）作为主图谱数据库，存储代码实体与关系（调用、引用、继承、导入、数据流边等）。\n- 向量/语义搜索：通过 Qdrant 做语义索引与检索，支持基于意图的函数/片段查找（semantic_search）。\n- RAG 与查询生成：CLI（codebase_rag/）负责将自然语言转为 Cypher，并驱动图谱检索与回答生成。用户输入会被送到你配置的模型（如 OpenAI、Anthropic 或 Google 等），用以生成/优化 Cypher 与解释结果。架构示意：“源代码 → Tree-sitter → AST 分析 → Memgraph 知识图谱；用户查询 → AI（生成 Cypher）→ 查询图 → 结果与回答”。\n- 编辑与替换：结合 AST 级定位与 diff 预览，提供“手术刀式”代码替换（surgical_replace_code）；同时集成 ast-grep 的结构化搜索与替换（structural_search/structural_replace）。\n- 运行时行为叠加：提供 cgr trace 能力，将测试运行或生产 eBPF 追踪的“真实调用”合并到图中，补齐静态分析看不到的动态调用链（FLOWS_TO 污点边）。\n- 交付形态：Python 3.12+ CLI 命令 cgr；官方推荐用 uv tool install 或 pipx 安装；依赖 Docker 来运行 Memgraph + Qdrant，同时需要 cmake、ripgrep 等前置工具。\n打个比方：  \n- 传统 LLM 代码助手就像“只读最近几页书的顾问”；  \n- Code-Graph-RAG 先为你整座图书馆建了“索引卡片与关系图谱”（谁引用谁、谁调用谁），再让顾问带着图谱来回答问题，还能直接帮你去书架上精准换页。\n---\n## 核心亮点与功能剖析\n### 1) 多语言 monorepo 友好的统一图谱\n- 官方支持的“全能力”语言包括：Python、TS/TSX、JS/JSX、Rust、Go、Java、C、C++、C#、PHP、Lua、Dart 等；Scala 在开发中；Ruby、Kotlin、Swift、Elixir、Haskell、Solidity、Bash、Nix 通过 ast-grep 提供结构级支持。这意味着在混合语言仓库下能保持统一查询与跨语言调用分析。\n### 2) 自然语言生成 Cypher 的 RAG 流程\n- 你用日常语言提问（如“哪些函数负责认证？”），系统由模型生成 Cypher 查询，检索对应节点/边并返回精确函数签名与文件行号，并在官方站点给出直观示例。\n- 与纯向量检索相比，它能结合结构路径（调用链、继承、引用等）来“过滤”候选子图，再由模型总结，减少“瞎编”。\n### 3) AST 级结构化搜索与替换（ast-grep 集成）\n- 不止于文本正则，而是按 AST 模式匹配（structural_search），并对变更提供 dry-run diff（structural_replace）。这为跨库重构提供安全与可审计性。\n### 4) 死代码与影响分析\n- 从入口点（如 HTTP 端点、CLI 入口、测试用例）沿调用/引用边遍历，找出“不可达”的函数/方法，并可在 CI 中以失败模式呈现。做影响分析时，也能从改动点逆向回溯“被谁调用”，识别潜在破坏面。\n### 5) 动态调用与数据流追踪\n- cgr trace 将运行时调用（或 eBPF profile）合并到图中，形成“真实发生的调用边”，支持 FLOWS_TO 污点传播追踪（从 source 到 sink 的数据流边），适用于安全审计与数据血缘场景。\n### 6) MCP 服务器与 Claude Code 深度集成\n- 作为 MCP Server，向 Claude Code 暴露 15 个工具（如 list_projects / query_code_graph / semantic_search / surgical_replace_code / ask_agent 等），让你在 IDE 里直接“对话图谱、检索函数、改代码、目录浏览、语义检索”，无需额外切窗口。官方站点给出了完整的 claude mcp add 示例。\n### 7) 增量更新与索引一致性\n- 支持增量更新（update_repository），而非每次全量重建；README 的“Latest News”中提到 Index Consistency、Exclude Set Handling、MCP Indexing 对 .cgrignore/.gitignore 的尊重等，增强大规模 monorepo 的稳定性与可重复性。\n---\n## Demo / 代码示例（上手体验）\n以下示例使用 CLI 方式（Mac/Linux）：\n1) 安装（依赖 Docker、Python 3.12+、cmake、ripgrep）：\n```bash\n# 推荐 uv\nuv tool install \"code-graph-rag[treesitter-full,semantic]\"\n# 或 pipx\npipx install \"code-graph-rag[treesitter-full,semantic]\"\n```\n2) 启动图数据库与向量栈：\n```bash\ncgr daemon up\n# 会启动 Memgraph + Qdrant 容器\n```\n3) 解析并索引一个仓库（首次可加 --clean）：\n```bash\ncgr start --repo-path /path/to/your-repo --update-graph\ncgr start --repo-path /path/to/your-repo\n# 重复对多个仓库执行，图共享；--clean 会清空所有项目并确认\n```\n4) 进入交互式查询与编辑（示意）：\n```bash\ncgr start --repo-path /path/to/your-repo\n# 交互模式后可直接用自然语言提问，模型会生成 Cypher 并返回结果。\n```\n5) 作为 MCP Server 集成 Claude Code（来自官网）：\n```bash\nuv tool install \"code-graph-rag[treesitter-full,semantic]\"\ncgr daemon up\n# 配置 MCP\nclaude mcp add --transport stdio code-graph-rag \\\n  --env TARGET_REPO_PATH=\"$(pwd)\" \\\n  --env CYPHER_PROVIDER=google \\\n  --env CYPHER_MODEL=gemini-2.5-flash \\\n  --env CYPHER_API_KEY=your-api-key \\\n  -- cgr mcp-server\n```\n---\n## 上手门槛与部署体验\n- 安装体验：用 uv tool install 或 pipx 一条命令安装本体，但前提是要有 Python 3.12+、Docker（Memgraph+Qdrant）、cmake、ripgrep。对小白来说，“Docker + 环境变量 + 模型 API Key”的配置有一定门槛；但有官方文档与 Quick Start 引导，问题可控。\n- 文档与示例：README 结构清晰，站点提供“Core Capabilities / Language Support / MCP Tools / See It In Action”等版块；文档目录覆盖 Getting Started、User Guide、Architecture、SDK、Advanced 等，基本形成闭环学习路径。\n- 多语言与 Docker 依赖：某些环境（如受限公司网络）拉取镜像或安装编译依赖可能需要代理或审批；Windows 也有专门的 Teardown 处理说明。\n---\n## 社区活跃度与生命力\n- 仓库：Star 数约 2k–4.9k 级别（页面视图存在缓存差异，可见关注度较高）；Fork 数百，Issues 与 PR 持续存在（Issues 数约 50+，PR 约 15–20），说明社区参与较积极。\n- Issue 状况：存在部分 open issue 涉及特定语言（Java、Rust）的细节问题与需求，以及数据库搜索范围、配置路径等；作者对“good first issue”有明确标注，适合新贡献者进入。整体看维护者在迭代，但响应速度会受工作负载影响。\n- 企业服务与可持续性：官网明确提供“托管云/本地/空气隔离部署、定制开发、SLA 支持、咨询与培训”等商业化服务，为项目长期维护与资金来源提供支撑，降低“突然停更”的风险。\n---\n## 目标人群与收益\n- 最适合：\n  - 大型 monorepo / 多语言仓库的维护者与平台工程团队；\n  - 频繁做影响分析、死代码清理与跨语言重构的技术负责人；\n  - 在 Claude Code/IDE 工作流中希望深度集成代码图谱的开发者。\n- 核心收益：\n  - 理解效率：用自然语言快速定位“谁能做什么、谁调用谁、改动会影响谁”，大幅降低新人 onboarding 成本与跨组协作成本。\n  - 重构与维护安全：AST 级搜索与 diff 预览，减少误改；结合死代码与影响分析，让重构有据可依。\n  - 一体化工作流：MCP + CLI，让问答、检索、编辑在同一上下文中完成，减少“来回跳”的认知开销。\n  - 安全与合规：动态调用与数据流边，支持做污点追踪、权限/PII 处理的溯源；可与企业合规映射、数据血缘等自定义关系结合。官网还提到合规追踪（SOX、HIPAA、PCI-DSS）等场景。\n---\n## 竞品/同类对比\n- Microsoft GraphRAG：通用文本/知识图谱 RAG 流程，更偏研究与管线工具，而非专门面向代码仓库的解析与编辑；维护模式以 bugfix 为主，不如本项目的“代码专用”生态聚焦。\n- 通用 Copilot/IDE 助手：多基于局部上下文/简单向量检索，对 repo 级调用链与结构化检索支持有限；Code-Graph-RAG 以图谱为统一表示，做结构+语义的联合检索，更适合跨语言/复杂依赖分析。\n- 传统静态分析工具：往往语言特化、交互门槛高，缺少自然语言查询与 AI 辅助解释；Code-Graph-RAG 试图将“结构分析”与“AI 问答/编辑”合一，降低使用门槛。\n---\n## 局限与不足\n- 基础设施门槛：需要 Docker、Memgraph、Qdrant、Python 3.12+ 等依赖，轻量使用者会觉得“重”；资源占用也会随仓库规模而增加（尤其是图谱和向量索引）。\n- 模型成本与质量：Cypher 生成与问答质量高度依赖所选模型（如 OpenAI/Anthropic/Google 等），复杂查询可能出错或需要多轮调优；对外网模型 API 的依赖也带来合规/隐私考量。\n- 语言覆盖与精确度：虽然语言列表长，但部分语言仍处于“结构支持”或开发中；Issues 中也出现特定语言的边缘 case（Java/CamelCase、Rust 枚举/接口节点类型等），需要持续打磨。\n- 学习与配置成本：合理利用需要了解 Cypher 与图谱建模思想（尽管由 AI 生成 Cypher，但调优复杂查询仍需理解图谱）；多环境部署、MCP 配置也需要一定的运维/DevOps 经验。\n- 并发与大规模性能：官方未公开大规模 monorepo 的性能基准与容量规划；对于超大仓库（百万级函数）的查询延迟、索引时间、图分片与冷热分离策略，仍需实际压测验证。\n---\n## 结语与行动建议\n- 终极评判：Code-Graph-RAG 把“代码图谱化 + 自然语言问答 + AST 级编辑 + MCP 集成”四者打通，是目前少见的、能真正落地到 monorepo 场景的“代码 RAG 工具链”。适合愿意投入一定基础设施与学习成本、追求“系统级理解与可执行改写”的团队或个人。\n- 适用情况：\n  - 你的代码库规模大、语言杂，影响分析困难，常有“漏改/连锁事故”；\n  - 你已经在使用 Claude Code/IDE MCP，希望把仓库理解与编辑能力集成进来；\n  - 团队有 DevOps/平台工程能力，可以托管 Memgraph+Qdrant 等组件。\n- 不太适合的情况：\n  - 只需要偶尔查几个函数的小项目，基础设施开销大于收益；\n  - 网络与策略不允许访问外部模型 API，且无法私有部署模型服务。\n- 实操建议：\n  - 从一个中小仓库试用 CLI + cgr daemon up 走通 Quick Start；\n  - 先玩熟自然语言查询与死代码检测，再尝试 MCP + Claude Code 集成；\n  - 评估中关注：解析耗时、查询延迟、模型 Token 消耗、误报/漏报情况；\n  - 若有合规要求，优先考虑“本地/空气隔离部署+自托管模型”方案（官方提供企业服务支持）。\n总体而言，Code-Graph-RAG 是一个面向“理解大型代码库并直接操作”的实用工具，如果你希望把“读代码—问问题—改代码—验证影响”串成闭环，值得投入时间试一试。",
+  "type": "project",
+  "dateAdded": "20260903"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "91eac7c3-eea3-48aa-a227-ff7265ab4d75",
+  "url": "https://github.com/obra/superpowers",
+  "domain": "github.com",
+  "repo": "obra/superpowers",
+  "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-03T11:23:00.008Z",
+  "metaData": {
+    "forks": "25181",
+    "stars": "281072",
+    "topics": [
+      "ai",
+      "brainstorming",
+      "coding",
+      "obra",
+      "sdlc",
+      "skills",
+      "subagent-driven-development",
+      "superpowers"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+  },
+  "summaryData": {
+    "tags": [
+      "GitHub开源",
+      "工作流自动化",
+      "TDD",
+      "代码质量",
+      "Prompt工程"
+    ],
+    "cover": "",
+    "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+    "ability": [
+      "标准化工程流程",
+      "强制测试驱动开发 (TDD)",
+      "跨 AI 工具兼容",
+      "自动化代码评审",
+      "环境隔离与管理"
+    ],
+    "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率工具"
+    ],
+    "suitable": [
+      "使用 AI 编程的开发者",
+      "追求代码质量的团队",
+      "技术负责人",
+      "工程化新手",
+      "多工具混合用户"
+    ],
+    "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+  },
+  "contentDetail": "# Superpowers（obra/superpowers）深度评测：把“好习惯”变成“AI 默认行为”的流程层框架\n---\n## 一句话总结\n它不是一个新的模型，而是一套给“编程 AI”用的“操作系统式”技能库与方法论，能在多款主流 AI 编码工具上统一、自动化地执行从需求澄清、设计、计划、测试驱动开发、子任务派发到代码评审与分支收尾的完整工程流程，让 AI 干活不“拍脑袋”，也不“只写不测”。\n---\n## 背景与痛点：为什么今天我们需要“流程层”？\n- 编程 AI 越来越多：Claude Code、Cursor、Codex、GitHub Copilot CLI、Gemini CLI、Grok Build CLI、Kimi Code、OpenCode、Hermes Agent 等，各自生态独立，你很难在一个团队里统一“怎么干活”。\n- 典型“失控”现象：\n  - 一上来就写代码，最后发现需求理解偏了；\n  - 测试滞后甚至缺失，Bug 不断回潮；\n  - 没有隔离分支/工作区，改动污染主分支；\n  - 缺少规范化的计划与评审，代码局部合理但整体不一致；\n  - 新人上手靠口传，流程不可复制、不可审计。\n- Superpowers 诞生的核心诉求：把经过验证的软件工程实践（TDD、设计先写、计划细拆、Git Worktree 隔离、子代理派发、代码评审、分支收尾等）变成“默认触发、不可跳过”的 AI 行为，而不是写在某份 Wiki 里然后被遗忘。\n---\n## 核心亮点与功能剖析\n### 1) 设计理念：技能化 + 方法论 + 跨 Harness 兼容\n- **技能（Skills）**：每个技能是一份“可复用、可组合”的指令包，规范 AI 在特定任务上该怎么思考、怎么验证、怎么输出。技能由 Markdown 定义，包含“何时使用、概述、步骤、反模式、示例”等（见 SKILL.md）。\n- **方法论**：README 明确列出“七步核心工作流”，形成自洽闭环：brainstorming → using-git-worktrees → writing-plans → subagent-driven-development/executing-plans → test-driven-development → requesting-code-review → finishing-a-development-branch。\n- **跨 Harness 兼容**：提供 Claude Code、Antigravity、Codex App/CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Hermes Agent 的安装方式，显著降低工具切换成本。\n### 2) 基础工作流：从“模糊点子”到“干净合并”的完整链路（按官方顺序）\n1. **brainstorming**：在写代码前先提问澄清、分解方案、按小节给出设计草稿供你确认；并保存设计文档，方便后续评审与回溯。\n2. **using-git-worktrees**：设计确认后，在新分支上创建隔离的 worktree 工作区，确保主线干净，并运行项目设置与测试基线检查。\n3. **writing-plans**：把设计拆解为“2–5 分钟可完成”的任务，每个任务给出精确文件路径、完整代码/命令、验证步骤，强调 DRY/YAGNI/TDD 等原则，并输出结构化计划文档（包含 Global Constraints、每任务的 Files/Interfaces/Step）。\n4. **subagent-driven-development / executing-plans**：基于计划执行。前者“每任务一个新子代理 + 两阶段评审”（先看是否符合 spec，再看代码质量）；后者“批量执行、定期人工检查点”。\n5. **test-driven-development**：在实现阶段强制“RED-GREEN-REFACTOR”，先写失败测试、再写最小实现、最后清理，且要求“看过测试失败再实现”，否则视为违背精神。特别强调“不能先写生产代码再补测试”。\n6. **requesting-code-review**：在任务之间穿插代码评审，对照计划与质量标准给出分级问题，严重问题阻断后续进度。\n7. **finishing-a-development-branch**：任务完成后验证测试、给出 merge/PR/保留/放弃选项并清理 worktree，形成“干净的闭环状态”。\n### 3) 技术栈与架构解析：用 Markdown + Hooks + Harness 适配实现“低侵入、高覆盖”\n- **技能定义**：以 Markdown 文本为中心（SKILL.md），提供元数据（name/description/触发时机）、步骤、示例与禁忌，方便人审读与 AI 机器阅读。\n- **触发机制**：通过各 Harness 的“插件/技能系统” + 会话启动时注入引导（bootstrap），让 AI 在任务前先检查可用技能并自动触发。例如 Pi 的包加载会在会话启动与 compaction 后重新注入 using-superpowers 引导；Hermes 因缺少 post-compaction hook 则需要在超长会话重启后再触发。\n- ** Harness 适配层**：\n  - 官方市场：Claude Code、Codex、Grok Build CLI 等提供官方市场直接安装；\n  - 自定义市场：superpowers-marketplace 支持 Claude Code 与 GitHub Copilot CLI 等；\n  - Git 原始仓库安装：Antigravity、Devin CLI、Factory Droid、Gemini CLI、OpenCode、Pi、Hermes 等提供 CLI 安装命令。\n- **测试与验证**：\n  - 技能行为测试使用 drill eval harness（superpowers-evals），仓库内 evals/ 子模块管理；\n  - 插件基础设施测试在 tests/ 目录，可通过 run-*.sh 或 npm test 执行。\n- **语言与工具**：仓库以 Shell 配置与 Markdown 为主，少量 Node/JS 测试；不绑定特定语言栈，可适配任何语言项目。\n### 4) 开发者体验（DX）：安装与更新路径清晰、文档与示例到位\n- **安装路径示例**：\n  - Claude Code：/plugin install superpowers@claude-plugins-official；也可注册 superpowers-marketplace 再安装。\n  - Cursor：在 Agent 聊天中从市场搜索“superpowers”安装即可。\n  - GitHub Copilot CLI：先注册市场 copilot plugin marketplace add obra/superpowers-marketplace，再安装 copilot plugin install superpowers@superpowers-marketplace。\n  - Codex CLI：在插件搜索界面搜索并选择“Install Plugin”。\n  - Hermes Agent：hermes plugins install obra/superpowers --enable；安装后重启会话生效。\n- **文档质量**：\n  - README 目录结构清晰（How it works、Getting Started、What’s Inside、Philosophy、Contributing、License 等），易于导航。\n  - SKILL.md 内部给出“何时使用、示例、禁忌、检查清单”等，非常实用。\n- **更新方式**：\n  - 不同 Harness 有不同更新路径（如 devin plugins update superpowers、gemini extensions update superpowers）；部分工具支持自动更新。\n### 5) 社区活跃度与生命力：超高人气 + 持续维护\n- **Stars 与贡献**：Star History 显示约 280k 星，全球排名第 13，属于顶级热度项目；有 44 位贡献者。\n- **最近提交**：2026-06-18 有 v6.0.3（SDD 工作区从 .git 迁移到 .superpowers/sdd）等多项提交，显示维护活跃且有针对实际问题的修复。\n- **Issue 与讨论**：Issue 页面可见近期的开放 issue（如 2026-08-26 的“finishing-a-development-branch 可静默删除 SDD 工作区”等），说明社区在密集反馈与跟进。\n- **社区渠道**：Discord、Issues、Release announcements 等渠道形成支持闭环。\n### 6) Demo / 核心技能示例：直接可用的模板与命令\n- **TDD 技能代码示例**（来自 test-driven-development/SKILL.md）：\n  - RED（写失败测试）：\n```typescript\ntest('retries failed operations 3 times', async () => {\n  let attempts = 0;\n  const operation = () => {\n    attempts++;\n    if (attempts < 3) throw new Error('fail');\n    return 'success';\n  };\n  const result = await retryOperation(operation);\n  expect(result).toBe('success');\n  expect(attempts).toBe(3);\n});\n```\n  - GREEN（最小实现）：\n```typescript\nasync function retryOperation(fn: () => Promise<any>): Promise<any> {\n  for (let i = 0; i < 3; i++) {\n    try {\n      return await fn();\n    } catch (e) {\n      if (i === 2) throw e;\n    }\n  }\n  throw new Error('unreachable');\n}\n```\n- **计划任务结构示例**（来自 writing-plans/SKILL.md）：\n  - 任务包含 Files/Interfaces/Steps，每个 Step 都给出可执行的代码/命令与验证方法，并强制“No Placeholders”，不允许 TBD/TODO 等占位。\n### 7) 哲学与边界：强调“证据优于宣称”“系统化优于随意”\n- 官方 Philosophy：TDD、Systematic over ad-hoc、Complexity reduction、Evidence over claims。\n- 技能文本中多处列出“常见借口 vs 真相”，例如“以后写测试”“已手动测过”“简单不用测”，清晰说明为何必须测试先行，帮助人机双方形成一致判断标准。\n---\n## 目标人群与收益：谁最适合用、能得到什么？\n### 目标人群\n- 已在日常工作中使用 AI 编码工具，但感到“不可控、容易偏航”的个人开发者；\n- 团队混用多种 AI 工具，想统一流程与质量的工程经理/ Tech Lead；\n- 高风险/高规范领域（金融、安全、生产运维等）需要更强可审计性与流程约束的团队；\n- 想系统学习与内化“TDD、计划拆解、子代理评审”等实践的工程师与 AI 实践者。\n### 收益（你能得到什么）\n- **质量与可维护性**：强制 TDD、两阶段评审、分支隔离，显著减少“线上回归”和“改一坏三”的情况。\n- **效率与连贯性**：需求澄清 → 计划 → 执行 → 评审 → 分支收尾一气呵成，减少来回折腾与“走回头路”。\n- **跨工具统一**：一套技能库，覆盖 Claude Code、Cursor、Codex、GitHub Copilot CLI、Gemini CLI、Grok、Kimi Code、OpenCode、Pi、Hermes Agent 等，降低团队切换与培训成本。\n- **新人更快上道**：流程被写在技能里，AI 也会按同一套路“教学”新人，避免“口传心授走样”。\n- **可审计与可改进**：每步都有文档/计划/评审痕迹，便于事后复盘与流程调优；写作规范与风格也容易复用到内部知识库。 \n---\n## 竞品/同类对比：在“AI 流程层”中的位置\n- **与 Prompt 模板库对比**：Superpowers 不仅提供“该怎么问”，还通过技能与 Harness 集成形成“自动触发 + 闭环步骤”，比纯提示库更工程化。\n- **与特定平台内置流程（如 Devin/Cursor 自带规划）对比**：Superpowers 跨平台、可定制、可审计，且更强调 TDD 与测试先行、评审隔离等硬核实践，适合对质量要求更高的场景。平台内置流程更“一键便利”，但通常可移植性与一致性较差。\n- **与传统工程规范文档对比**：Superpowers 把规范变成“AI 会主动执行的步骤”，而不是放在文档里的建议，大幅提升执行力。\n- **独特竞争力**：多 Harness 覆盖、强 TDD 约束、子代理/评审/分支收尾等一体化闭环、MIT 开源（允许内部分叉与定制）。\n---\n## 局限与不足：你需要知道的现实约束\n- **学习成本**：要吃透每个技能与七步工作流，团队需要一段时间磨合；尤其对不熟悉 TDD 或 Git Worktree 的成员，初期门槛不低。\n- **Harness 生态依赖**：需要你已在使用（或愿意引入）某个支持的 Harness；不在列表的则需要自行适配（有一定工程成本）。\n- **流程“硬度”与灵活性权衡**：技能强调“不可跳过的步骤”，在紧急场景（如纯验证型 Demo）下可能感觉偏重；虽然有“例外要征询人类”的条款，但如何平衡团队节奏需要实践摸索。\n- **版本与兼容性管理**：项目更新较频繁；建议生产团队在小仓库先验证再推广，避免技能语义变更对现有流程造成冲击。OpenCode 等文档也明确给出版本 Pin 指引。\n- **部分 Issue 反映的边界情况**：例如“finishing-a-development-branch 可能静默删除 SDD 工作区（因忽略文件不会让 worktree 变脏）”等，说明在边缘场景下仍需人工审核与二次防护。\n---\n## 结语与行动建议（通用总结）\nSuperpowers 把“好习惯”从“提醒”升级为“AI 默认行为”，用技能化、跨 Harness、闭环化、可审计的方式，给编程 AI 装上“工程操作系统”。它既适合个人开发者更放心地外包重复性编码，也适合团队统一多工具协作下的流程与质量。其 MIT 协议、超高人气与持续维护，意味着你可以在自己的环境里安心使用、分叉定制，并与社区共同演进。\n行动建议：\n- 如果你日常使用 Claude Code/Cursor/GitHub Copilot CLI/Gemini CLI 等：先用最小可行项目或一个真实特性，按照 README 对应 Harness 的安装命令引入 Superpowers，亲自走完一次“Brainstorm → Plan → TDD → Review → Finish”闭环，感受触发节奏与产出质量。\n- 团队层面：先选定一个 Harness + 一两条技能（如 writing-plans + test-driven-development）做试点，再逐步推广到更多技能与更多 Harness，配合内部分叉与定制，把团队自身最佳实践写进技能库。\n- 高风险行业：重点利用“文档可追溯、分支隔离、评审阻断”等特性，在关键路径强制执行 Superpowers 的流程，并定期审计计划与评审产出，构建合规与审计证据链。",
+  "type": "project",
+  "dateAdded": "20260903"
+}

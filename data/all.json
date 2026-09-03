@@ -1,6 +1,495 @@
 {
   "all": [
     {
+      "id": "bfc36ecd-33e9-4f95-8a7a-2d58f3c64d51",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "domain": "github.com",
+      "repo": "vitali87/code-graph-rag",
+      "description": "Code-Graph-RAG 用 Tree-sitter 解析 14+ 语言代码构建统一图谱，通过自然语言驱动 RAG 检索与 Cypher 查询，支持 AST 级编辑、死代码检测和影响分析，并可作为 MCP 服务器接入 Claude Code，实现对话式代码理解与操作。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:44:12.644Z",
+      "metaData": {
+        "forks": "654",
+        "stars": "4928",
+        "topics": [
+          "ai",
+          "ast",
+          "claude-code",
+          "code-analysis",
+          "code-understanding",
+          "codebase-search",
+          "developer-tools",
+          "graph-database",
+          "knowledge-graph",
+          "llm",
+          "mcp",
+          "mcp-server",
+          "memgraph",
+          "monorepo",
+          "multi-language",
+          "python",
+          "rag",
+          "retrieval-augmented-generation",
+          "semantic-search",
+          "tree-sitter"
+        ],
+        "license": "MIT license",
+        "homepage": "https://code-graph-rag.com",
+        "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs - vitali87/code-graph-rag"
+      },
+      "summaryData": {
+        "tags": [
+          "代码图谱",
+          "RAG",
+          "代码重构",
+          "Claude Code",
+          "多语言支持"
+        ],
+        "cover": "",
+        "title": "Code-Graph-RAG - 代码知识图谱 + RAG + 可执行编辑工具链",
+        "ability": [
+          "多语言代码图谱构建",
+          "自然语言生成 Cypher 查询",
+          "AST 级精准编辑与替换",
+          "死代码检测与影响分析",
+          "MCP 服务器集成 Claude Code"
+        ],
+        "summary": "面向多语言 monorepo 的代码图谱化 AI 工具，让自然语言查询与精准编辑代码库成为现实",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "代码分析"
+        ],
+        "suitable": [
+          "大型 monorepo 维护者",
+          "跨语言项目开发者",
+          "技术负责人与架构师",
+          "Claude Code 深度用户",
+          "需要做代码重构的工程师"
+        ],
+        "description": "Code-Graph-RAG 用 Tree-sitter 解析 14+ 语言代码构建统一图谱，通过自然语言驱动 RAG 检索与 Cypher 查询，支持 AST 级编辑、死代码检测和影响分析，并可作为 MCP 服务器接入 Claude Code，实现对话式代码理解与操作。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "db85a15a-c186-4eb4-a270-eb7b8ea1f2af",
+      "url": "https://github.com/cloudflare/cloudflare-os",
+      "domain": "github.com",
+      "repo": "cloudflare/cloudflare-os",
+      "description": "Cloudflare OS 不是传统操作系统，而是为企业提供的 AI Agent 工作台与应用运行环境。它支持通过对话生成可协作的全栈应用，并通过沙箱、能力型安全层和异步审批机制保障安全，适合需要高度定制化与合规性的企业使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:40:14.612Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Cloudflare",
+          "AI 生产力",
+          "安全治理",
+          "企业应用生成",
+          "开源平台"
+        ],
+        "cover": "",
+        "title": "Cloudflare OS 深度评测：企业级 AI 生产力与安全治理平台",
+        "ability": [
+          "AI 生成全栈应用（Gadgets）",
+          "能力型安全与治理（Gatekeepers）",
+          "组织上下文与技能共享",
+          "多人协作与 Blueprint 生态",
+          "基于 Cloudflare Workers 的高性能架构"
+        ],
+        "summary": "Cloudflare OS 是一个以公司为单位的 AI 生产力与安全治理平台，通过对话生成文档、幻灯片和小应用，并提供能力型安全模型与沙箱运行环境，解决企业 AI 应用中的安全、合规与协作痛点。",
+        "category": [
+          "企业级 AI 平台",
+          "开发工具",
+          "安全治理"
+        ],
+        "suitable": [
+          "企业安全与治理团队",
+          "非工程业务团队（销售、运营、市场等）",
+          "工程与平台团队",
+          "组织与流程管理者（PMO/内控）"
+        ],
+        "description": "Cloudflare OS 不是传统操作系统，而是为企业提供的 AI Agent 工作台与应用运行环境。它支持通过对话生成可协作的全栈应用，并通过沙箱、能力型安全层和异步审批机制保障安全，适合需要高度定制化与合规性的企业使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "91eac7c3-eea3-48aa-a227-ff7265ab4d75",
+      "url": "https://github.com/obra/superpowers",
+      "domain": "github.com",
+      "repo": "obra/superpowers",
+      "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:23:00.008Z",
+      "metaData": {
+        "forks": "25181",
+        "stars": "281072",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "eccb2237-18bb-48ef-8b3f-57279ba8d228",
+      "url": "https://github.com/f/prompts.chat",
+      "domain": "github.com",
+      "repo": "f/prompts.chat",
+      "description": "这是一个集提示词发现、管理、学习与集成于一体的开源平台。它拥有海量经过验证的提示词，支持Docker自托管以满足企业隐私需求，并通过MCP无缝接入各类开发工具，帮助个人和团队极大提升AI使用效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:19:41.218Z",
+      "metaData": {
+        "forks": "21747",
+        "stars": "168685",
+        "topics": [
+          "ai",
+          "artificial-intelligence",
+          "awesome-list",
+          "chatgpt",
+          "chatgpt-prompts",
+          "claude",
+          "gemini",
+          "gpt",
+          "gpt-4",
+          "llm",
+          "machine-learning",
+          "nextjs",
+          "open-source",
+          "openai",
+          "prompt-engineering",
+          "prompts",
+          "prompts-chat",
+          "typescript"
+        ],
+        "license": "CC0-1.0 license",
+        "homepage": "https://prompts.chat",
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy. - f/prompts.chat"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "Prompt工程",
+          "ChatGPT",
+          "自托管",
+          "生产力"
+        ],
+        "cover": "",
+        "title": "prompts.chat：全球最大的开源提示词库与管理平台",
+        "ability": [
+          "海量提示词浏览搜索",
+          "一键自托管私有部署",
+          "MCP协议IDE深度集成",
+          "团队提示词资产管理",
+          "交互式提示工程教学"
+        ],
+        "summary": "全球最大的免费开源提示词库，支持自托管、IDE集成及团队协作，是提升AI效率的终极工具。",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "知识管理"
+        ],
+        "suitable": [
+          "AI重度用户",
+          "开发者与工程团队",
+          "企业级合规用户",
+          "内容创作者",
+          "提示工程学习者"
+        ],
+        "description": "这是一个集提示词发现、管理、学习与集成于一体的开源平台。它拥有海量经过验证的提示词，支持Docker自托管以满足企业隐私需求，并通过MCP无缝接入各类开发工具，帮助个人和团队极大提升AI使用效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "4c661a68-3e5d-4640-adf7-a74a1e8ba7d2",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "domain": "github.com",
+      "repo": "magnitudedev/magnitude",
+      "description": "Magnitude 是一款“零成本、零密钥”的本地 AI 推理服务器。它利用 Rust + llama.cpp 引擎，自动根据你的硬件推荐并运行最优模型，无需云端 API 即可无缝驱动 Claude Code、Cline 等 Agent。支持完全离线，保障数据隐私，还能通过插件扩展浏览器和文档处理能力。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:14:46.033Z",
+      "metaData": {
+        "forks": "134",
+        "stars": "1736",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://magnitude.dev",
+        "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline. - magnitudedev/magnitude"
+      },
+      "summaryData": {
+        "tags": [
+          "本地大模型",
+          "AI Agent",
+          "开源项目",
+          "自动化",
+          "隐私保护"
+        ],
+        "cover": "",
+        "title": "Magnitude：自动适配硬件的本地AI推理服务器",
+        "ability": [
+          "自动硬件检测与模型推荐",
+          "高性能本地推理引擎",
+          "无缝集成主流AI Agent",
+          "隐私保护与离线运行",
+          "灵活扩展技能插件"
+        ],
+        "summary": "自动检测硬件并优化配置，无需API密钥即可在本地驱动主流AI Agent的智能工具。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "隐私安全"
+        ],
+        "suitable": [
+          "开发者与极客",
+          "关注隐私的办公族",
+          "AI Agent爱好者",
+          "合规敏感行业从业者",
+          "本地模型新手"
+        ],
+        "description": "Magnitude 是一款“零成本、零密钥”的本地 AI 推理服务器。它利用 Rust + llama.cpp 引擎，自动根据你的硬件推荐并运行最优模型，无需云端 API 即可无缝驱动 Claude Code、Cline 等 Agent。支持完全离线，保障数据隐私，还能通过插件扩展浏览器和文档处理能力。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "e2f5b529-6114-43e9-bcf0-ca49caf5bf7b",
+      "url": "https://github.com/ByteByteGoHq/system-design-101",
+      "domain": "github.com",
+      "repo": "ByteByteGoHq/system-design-101",
+      "description": "这是一个整理良好的系统设计知识库，通过可视化图表和通俗语言解释复杂概念，包含真实大厂案例和面试蓝图，是系统设计面试的绝佳起点。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:10:17.341Z",
+      "metaData": {
+        "forks": "9808",
+        "stars": "88068",
+        "topics": [
+          "aws",
+          "cloud-computing",
+          "coding-interviews",
+          "computer-science",
+          "interview-questions",
+          "software-architecture",
+          "software-development",
+          "software-engineering",
+          "system-design",
+          "system-design-interview"
+        ],
+        "license": "License",
+        "homepage": "https://bytebytego.com/guides",
+        "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews. - ByteByteGoHq/system-design-101"
+      },
+      "summaryData": {
+        "tags": [
+          "系统设计",
+          "面试",
+          "架构",
+          "GitHub",
+          "后端"
+        ],
+        "cover": "",
+        "title": "System Design 101：可视化系统设计知识图谱评测",
+        "ability": [
+          "可视化知识图谱",
+          "真实大厂案例解析",
+          "面试速查手册",
+          "系统架构导航",
+          "概念通俗讲解"
+        ],
+        "summary": "一份可视化系统设计知识图谱，通过图解和案例助你轻松搞定系统设计面试。",
+        "category": [
+          "技术学习",
+          "面试资料",
+          "开发工具"
+        ],
+        "suitable": [
+          "准备系统设计面试的工程师",
+          "寻求技术晋升的后端开发",
+          "系统架构初学者",
+          "技术写作者"
+        ],
+        "description": "这是一个整理良好的系统设计知识库，通过可视化图表和通俗语言解释复杂概念，包含真实大厂案例和面试蓝图，是系统设计面试的绝佳起点。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "f24d3fb0-16d3-4c3e-8dc0-a58ace3d87f6",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "domain": "github.com",
+      "repo": "bannedbook/fanqiang",
+      "description": "这是一套设定 AI 助手为项目评测专家的系统指令。它要求 AI 阅读输入的 Github 项目或文章内容，忽略多余信息，严格提取标题、摘要、核心能力、适用人群、详细描述、分类和标签，并以纯 JSON 格式输出。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:06:52.468Z",
+      "metaData": {
+        "forks": "8427",
+        "stars": "51857",
+        "topics": [
+          "brook",
+          "daze",
+          "fanqiang",
+          "goflyway",
+          "lightsocks",
+          "proxy",
+          "psiphon",
+          "shadowsocks",
+          "ssr",
+          "trojan",
+          "v2ray"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "翻墙-科学上网. Contribute to bannedbook/fanqiang development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "JSON",
+          "Github",
+          "自动化",
+          "Prompt"
+        ],
+        "cover": "",
+        "title": "Github 开源项目评测 AI 助手",
+        "ability": [
+          "内容摘要",
+          "核心能力提炼",
+          "受众分析",
+          "结构化数据输出"
+        ],
+        "summary": "一个用于自动提取开源项目或文章核心信息并生成 JSON 概要的 AI 指令模板。",
+        "category": [
+          "AI 工具",
+          "Prompt 工程"
+        ],
+        "suitable": [
+          "开发者",
+          "Prompt 工程师",
+          "技术博主",
+          "项目维护者"
+        ],
+        "description": "这是一套设定 AI 助手为项目评测专家的系统指令。它要求 AI 阅读输入的 Github 项目或文章内容，忽略多余信息，严格提取标题、摘要、核心能力、适用人群、详细描述、分类和标签，并以纯 JSON 格式输出。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
+      "id": "7a9b1b8f-5aa0-4785-b140-b98bbe7a9401",
+      "url": "https://github.com/anthropics/skills",
+      "domain": "github.com",
+      "repo": "anthropics/skills",
+      "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-03T11:03:57.986Z",
+      "metaData": {
+        "forks": "20587",
+        "stars": "173389",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260903"
+    },
+    {
       "id": "c82062de-a160-42dc-8a60-cace27513284",
       "url": "https://github.com/cloudflare/computer",
       "domain": "github.com",
@@ -11,8 +500,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:59:27.433Z",
       "metaData": {
-        "forks": "499",
-        "stars": "8940",
+        "forks": "500",
+        "stars": "8943",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -187,8 +676,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "5979",
-        "stars": "102846",
+        "forks": "5982",
+        "stars": "102862",
         "topics": [
           "ai",
           "anthropic",
@@ -251,8 +740,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3521",
-        "stars": "40916",
+        "forks": "3523",
+        "stars": "40969",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -687,7 +1176,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "2912",
-        "stars": "30482",
+        "stars": "30527",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -739,8 +1228,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "2997",
-        "stars": "24587",
+        "forks": "2999",
+        "stars": "24664",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -806,7 +1295,7 @@
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
         "forks": "146",
-        "stars": "1973",
+        "stars": "1978",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -873,13 +1362,13 @@
       "createdAt": "2026-09-01T12:12:09.537Z",
       "metaData": {
         "forks": "1551",
-        "stars": "19316",
+        "stars": "19329",
         "topics": [
           "google",
           "googlecloud",
           "skills"
         ],
-        "license": "Apache-2.0 license",
+        "license": "",
         "homepage": "",
         "description": "Agent Skills for Google products and technologies. Contribute to google/skills development by creating an account on GitHub."
       },
@@ -1058,7 +1547,7 @@
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
         "forks": "9008",
-        "stars": "32160",
+        "stars": "32179",
         "topics": [
           "ai",
           "ai-agent",
@@ -1116,8 +1605,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:27:49.507Z",
       "metaData": {
-        "forks": "1341",
-        "stars": "8052",
+        "forks": "1349",
+        "stars": "8133",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1343,8 +1832,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2156",
-        "stars": "15440",
+        "forks": "2163",
+        "stars": "15593",
         "topics": [
           "ai",
           "audiobook",
@@ -1478,8 +1967,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3591",
-        "stars": "45776",
+        "forks": "3596",
+        "stars": "45819",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -2352,8 +2841,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5108",
-        "stars": "30821",
+        "forks": "5112",
+        "stars": "30854",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2589,8 +3078,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "9714",
-        "stars": "90831",
+        "forks": "9799",
+        "stars": "91840",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -4609,8 +5098,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6623",
-        "stars": "122482",
+        "forks": "6632",
+        "stars": "122674",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -5946,7 +6435,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "257",
-        "stars": "3322",
+        "stars": "3326",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6243,8 +6732,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2405",
-        "stars": "25780",
+        "forks": "2407",
+        "stars": "25789",
         "topics": [
           "agent",
           "ai-agent",
@@ -6666,8 +7155,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49220",
-        "stars": "240399",
+        "forks": "49231",
+        "stars": "240466",
         "topics": [
           "ai",
           "ai-agent",
@@ -7083,8 +7572,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "430",
-        "stars": "4605",
+        "forks": "431",
+        "stars": "4612",
         "topics": [
           "agent-runtime",
           "ai",
@@ -7270,8 +7759,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "20887",
-        "stars": "245894",
+        "forks": "20890",
+        "stars": "245968",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -7321,8 +7810,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2701",
-        "stars": "35274",
+        "forks": "2703",
+        "stars": "35288",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -7574,8 +8063,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37175",
-        "stars": "246660",
+        "forks": "37176",
+        "stars": "246682",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -7635,8 +8124,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2668",
-        "stars": "27622",
+        "forks": "2670",
+        "stars": "27635",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -7698,8 +8187,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "563",
-        "stars": "18668",
+        "forks": "564",
+        "stars": "18683",
         "topics": [
           "dpi",
           "gpui",
@@ -7765,7 +8254,7 @@
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
         "forks": "655",
-        "stars": "10144",
+        "stars": "10147",
         "topics": [
           "cactus",
           "gemini",
