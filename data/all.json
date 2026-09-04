@@ -1,6 +1,75 @@
 {
   "all": [
     {
+      "id": "2f80c0fa-a8e5-4a1a-8d3c-4da2b4dd913f",
+      "url": "https://github.com/vorssaint/vorssaint-utils",
+      "domain": "github.com",
+      "repo": "vorssaint/vorssaint-utils",
+      "description": "Vorssaint 是一款模块化、本地优先的开源 macOS 菜单栏工具，集成系统监控、窗口布局、音频控制、剪贴板、截图录屏等 70+ 功能，支持按需安装，替代多款付费软件，适合追求统一体验与隐私的用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T18:05:06.498Z",
+      "metaData": {
+        "forks": "534",
+        "stars": "15202",
+        "topics": [
+          "alt-tab",
+          "app-uninstaller",
+          "appkit",
+          "finder",
+          "free",
+          "keep-awake",
+          "mac-os",
+          "menu-bar",
+          "menubar",
+          "open-source",
+          "swift",
+          "swift-ui",
+          "system-monitor",
+          "uninstaller",
+          "volume-mixer",
+          "window-switcher"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://vorssaint.com",
+        "description": "Free and open-source macOS menu bar toolkit. Contribute to vorssaint/vorssaint-utils development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "macOS",
+          "系统监控",
+          "窗口管理",
+          "音频工具",
+          "剪贴板管理"
+        ],
+        "cover": "",
+        "title": "Vorssaint: 一站式开源 macOS 菜单栏工具集评测",
+        "ability": [
+          "系统监控",
+          "窗口管理",
+          "音频路由",
+          "剪贴板历史",
+          "截图录屏"
+        ],
+        "summary": "一个图标搞定十几个付费 Mac 应用的事，开源、无账号、无遥测的本地效率全家桶。",
+        "category": [
+          "系统工具",
+          "效率软件",
+          "开源软件"
+        ],
+        "suitable": [
+          "Mac 效率党",
+          "隐私敏感用户",
+          "Apple Silicon 用户",
+          "快捷键重度用户"
+        ],
+        "description": "Vorssaint 是一款模块化、本地优先的开源 macOS 菜单栏工具，集成系统监控、窗口布局、音频控制、剪贴板、截图录屏等 70+ 功能，支持按需安装，替代多款付费软件，适合追求统一体验与隐私的用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
       "id": "b83ab281-dd80-4862-a856-48527a5e0243",
       "url": "https://github.com/denoland/celld",
       "domain": "github.com",
@@ -12,7 +81,7 @@
       "createdAt": "2026-09-04T12:01:11.932Z",
       "metaData": {
         "forks": "156",
-        "stars": "4470",
+        "stars": "4476",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://celld.dev",
@@ -65,7 +134,7 @@
       "createdAt": "2026-09-04T11:52:08.664Z",
       "metaData": {
         "forks": "2170",
-        "stars": "19815",
+        "stars": "19841",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -116,8 +185,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:46:43.104Z",
       "metaData": {
-        "forks": "896",
-        "stars": "6612",
+        "forks": "899",
+        "stars": "6669",
         "topics": [
           "ai",
           "anthropic",
@@ -185,8 +254,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:42:15.804Z",
       "metaData": {
-        "forks": "780",
-        "stars": "5217",
+        "forks": "783",
+        "stars": "5249",
         "topics": [
           "cli",
           "consumer-gpu",
@@ -259,8 +328,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "1965",
-        "stars": "30606",
+        "forks": "1975",
+        "stars": "30769",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -322,7 +391,7 @@
       "createdAt": "2026-09-04T11:19:16.566Z",
       "metaData": {
         "forks": "137",
-        "stars": "3429",
+        "stars": "3470",
         "topics": [
           "directx",
           "games",
@@ -377,8 +446,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:13:49.576Z",
       "metaData": {
-        "forks": "26589",
-        "stars": "203789",
+        "forks": "26618",
+        "stars": "203935",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://opencode.ai",
@@ -430,8 +499,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:08:06.642Z",
       "metaData": {
-        "forks": "439",
-        "stars": "2478",
+        "forks": "441",
+        "stars": "2511",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://miles.radixark.com",
@@ -483,8 +552,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:03:10.266Z",
       "metaData": {
-        "forks": "1236",
-        "stars": "4413",
+        "forks": "1238",
+        "stars": "4455",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -536,8 +605,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
-        "forks": "5358",
-        "stars": "32630",
+        "forks": "5359",
+        "stars": "32639",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -590,7 +659,7 @@
       "createdAt": "2026-09-03T11:44:12.644Z",
       "metaData": {
         "forks": "654",
-        "stars": "4967",
+        "stars": "4970",
         "topics": [
           "ai",
           "ast",
@@ -663,8 +732,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
-        "forks": "1129",
-        "stars": "9607",
+        "forks": "1131",
+        "stars": "9624",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -849,8 +918,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "152",
-        "stars": "2189",
+        "forks": "160",
+        "stars": "2283",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -965,8 +1034,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:06:52.468Z",
       "metaData": {
-        "forks": "8516",
-        "stars": "52636",
+        "forks": "8521",
+        "stars": "52721",
         "topics": [
           "brook",
           "daze",
@@ -1027,8 +1096,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
-        "forks": "20623",
-        "stars": "173944",
+        "forks": "20632",
+        "stars": "174021",
         "topics": [
           "agent-skills"
         ],
@@ -1136,7 +1205,7 @@
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
         "forks": "1349",
-        "stars": "11957",
+        "stars": "11979",
         "topics": [
           "agent-memory",
           "ai",
@@ -1258,8 +1327,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "6001",
-        "stars": "103396",
+        "forks": "6006",
+        "stars": "103481",
         "topics": [
           "ai",
           "anthropic",
@@ -1322,8 +1391,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3588",
-        "stars": "42216",
+        "forks": "3602",
+        "stars": "42478",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -1757,8 +1826,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "2951",
-        "stars": "30907",
+        "forks": "2952",
+        "stars": "30973",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -1810,8 +1879,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3028",
-        "stars": "25410",
+        "forks": "3032",
+        "stars": "25432",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -1876,8 +1945,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
-        "forks": "149",
-        "stars": "2036",
+        "forks": "151",
+        "stars": "2040",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -2128,8 +2197,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
-        "forks": "9036",
-        "stars": "32508",
+        "forks": "9041",
+        "stars": "32535",
         "topics": [
           "ai",
           "ai-agent",
@@ -2414,8 +2483,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2257",
-        "stars": "17091",
+        "forks": "2306",
+        "stars": "17494",
         "topics": [
           "ai",
           "audiobook",
@@ -2663,8 +2732,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7595",
-        "stars": "58436",
+        "forks": "7598",
+        "stars": "58472",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -2841,8 +2910,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
-        "forks": "2173",
-        "stars": "43827",
+        "forks": "2174",
+        "stars": "43830",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -2948,8 +3017,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "807",
-        "stars": "7335",
+        "forks": "810",
+        "stars": "7359",
         "topics": [
           "chinese",
           "disclosure",
@@ -3118,8 +3187,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15618",
-        "stars": "94092",
+        "forks": "15631",
+        "stars": "94124",
         "topics": [
           "ai",
           "mcp"
@@ -3175,7 +3244,7 @@
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
         "forks": "908",
-        "stars": "10840",
+        "stars": "10848",
         "topics": [
           "apple",
           "appstore",
@@ -3371,7 +3440,7 @@
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
         "forks": "1345",
-        "stars": "10415",
+        "stars": "10431",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3423,8 +3492,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5169",
-        "stars": "31340",
+        "forks": "5176",
+        "stars": "31411",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3476,8 +3545,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4005",
-        "stars": "37913",
+        "forks": "4024",
+        "stars": "37968",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -3850,8 +3919,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3362",
-        "stars": "30400",
+        "forks": "3365",
+        "stars": "30422",
         "topics": [
           "abliteration",
           "llm",
@@ -3907,14 +3976,18 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2090",
-        "stars": "16873",
+        "forks": "2097",
+        "stars": "16952",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
           "keyword-research",
           "mcp",
           "seo",
+          "seo-agent",
+          "seo-audit",
+          "seo-automation",
+          "seo-skills",
           "seo-tools",
           "site-audit"
         ],
@@ -4145,8 +4218,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3570",
-        "stars": "50889",
+        "forks": "3571",
+        "stars": "50909",
         "topics": [
           "browser",
           "chrome",
@@ -4316,8 +4389,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9441",
-        "stars": "77590",
+        "forks": "9446",
+        "stars": "77633",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -4421,8 +4494,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "3483",
-        "stars": "17266",
+        "forks": "3503",
+        "stars": "17373",
         "topics": [
           "3d-globe",
           "cesium",
@@ -5290,8 +5363,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3892",
-        "stars": "42546",
+        "forks": "3894",
+        "stars": "42589",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -5482,8 +5555,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3057",
-        "stars": "47257",
+        "forks": "3075",
+        "stars": "47690",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -5680,8 +5753,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6720",
-        "stars": "124609",
+        "forks": "6743",
+        "stars": "125128",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -7017,7 +7090,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "258",
-        "stars": "3389",
+        "stars": "3397",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -7737,8 +7810,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49451",
-        "stars": "241250",
+        "forks": "49496",
+        "stars": "241365",
         "topics": [
           "ai",
           "ai-agent",
@@ -8341,8 +8414,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21089",
-        "stars": "249137",
+        "forks": "21113",
+        "stars": "249786",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -8392,8 +8465,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2709",
-        "stars": "35452",
+        "forks": "2711",
+        "stars": "35477",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -8645,8 +8718,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37356",
-        "stars": "247909",
+        "forks": "37403",
+        "stars": "248180",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -8706,8 +8779,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2692",
-        "stars": "27964",
+        "forks": "2695",
+        "stars": "28007",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -8769,8 +8842,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "575",
-        "stars": "19144",
+        "forks": "576",
+        "stars": "19221",
         "topics": [
           "dpi",
           "gpui",
@@ -8835,8 +8908,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "658",
-        "stars": "10239",
+        "forks": "659",
+        "stars": "10253",
         "topics": [
           "cactus",
           "gemini",
