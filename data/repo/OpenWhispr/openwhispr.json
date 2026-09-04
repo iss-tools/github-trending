@@ -1,0 +1,70 @@
+{
+  "id": "3e27bb41-c305-493d-8240-a9730609b98c",
+  "url": "https://github.com/OpenWhispr/openwhispr",
+  "domain": "github.com",
+  "repo": "OpenWhispr/openwhispr",
+  "description": "OpenWhispr 是一款跨平台的开源桌面工具，支持 Whisper 等本地模型，提供全局语音听写、带说话人分离的实时会议记录及 AI 语音代理。它兼顾隐私保护与效率，并提供 API 供开发者深度集成。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-04T11:46:43.104Z",
+  "metaData": {
+    "forks": "894",
+    "stars": "6577",
+    "topics": [
+      "ai",
+      "anthropic",
+      "cross-platform",
+      "gemini",
+      "groq",
+      "linux",
+      "macos",
+      "nvidia",
+      "open-source",
+      "openai",
+      "parakeet",
+      "speech-to-text",
+      "transcribe",
+      "whisper",
+      "windows"
+    ],
+    "license": "MIT license",
+    "homepage": "https://openwhispr.com",
+    "description": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform. - OpenWhispr/openwhispr"
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "语音转文字",
+      "会议助手",
+      "隐私保护",
+      "跨平台"
+    ],
+    "cover": "",
+    "title": "OpenWhispr：全能开源 AI 语音助手与会议记录工具深度评测",
+    "ability": [
+      "全局语音听写",
+      "本地/云端双模转录",
+      "AI 语音代理",
+      "实时会议记录",
+      "开发者 API 集成"
+    ],
+    "summary": "一款支持本地听写、AI 助理和会议记录的跨平台开源语音神器。",
+    "category": [
+      "生活效率",
+      "AI 应用",
+      "开发工具"
+    ],
+    "suitable": [
+      "文字创作者",
+      "会议频繁的职场人",
+      "隐私敏感用户",
+      "开发者",
+      "AI 效率工具爱好者"
+    ],
+    "description": "OpenWhispr 是一款跨平台的开源桌面工具，支持 Whisper 等本地模型，提供全局语音听写、带说话人分离的实时会议记录及 AI 语音代理。它兼顾隐私保护与效率，并提供 API 供开发者深度集成。"
+  },
+  "contentDetail": "# OpenWhispr/openwhispr 深度评测\n## 一句话总结\nOpenWhispr 是一款“把语音直接变成文本、笔记与可执行动作”的桌面听写与会议记录工具，采用本地优先（Local-first）设计，支持 Whisper 与 NVIDIA Parakeet 等本地模型，也能接云端模型（BYOK）；同时提供 AI 语音代理、实时会议转写与说话人分离、笔记与语义检索、团队空间与分享、以及公网 API 与 MCP 服务端等开发者集成能力，开源且跨平台（macOS/Windows/Linux）。\n---\n## 背景与痛点\n### 诞生背景\n- 语音转写早已不是“新物种”，但主流方案往往在两难中摇摆：要么完全上云（速度与准确率占优，但隐私与合规压力巨大）；要么依赖本地命令行或极客向工具（Whisper 原生/Whisper.cpp 等），门槛高且与日常应用割裂。\n- 市场上涌现了一批面向桌面/移动端的商业听写与会议助手（如 Wispr Flow、Granola），体验流畅，但闭源、定价不菲，且对 Linux/自托管/企业管控不够友好。\n- OpenWhispr 以“开源、本地优先、跨平台、可自托管/云可选”的方式切入，把“语音输入”变成系统级、跨应用、跨设备的通用能力，同时满足个人隐私与企业合规需求。\n### 解决的核心痛点\n- “打字太慢、打断思路”——用语音比打字快 3–5 倍，无需切换窗口即可在任何文本输入处“按热键说话就出现文字”。\n- “敏感内容不能上云”——支持完全本地模型处理，音频不出设备（或使用带机密计算的 Tinfoil 等云方案）。\n- “会议纪要难整理”——自动检测 Zoom/Teams/FaceTime，实时转写、说话人区分、日历集成、会后 AI 摘要与笔记搜索。\n- “开发者想集成到自有工作流”——提供 REST API 与 MCP 服务器，可用 Claude/VS Code/Cursor 等连接，可二次开发与自托管。\n---\n## 核心亮点与功能剖析\n### 1) 一键听写与全局热键（全局可粘贴）\n- 按热键说话，文本自动粘贴到当前光标处；支持“翻译听写”热键，用一种语言说话，在目标语言中粘贴。\n- 可为不同操作绑定多个热键，适配不同习惯或不同应用环境。\n### 2) 本地/云端混合架构（Local/Cloud Toggle）\n- 本地处理模式：集成 Whisper（via whisper.cpp）、NVIDIA Parakeet、Nemotron、Cohere Transcribe 2B 等本地模型，可完全离线、数据不出设备；支持 GPU 加速（Metal/CUDA/Vulkan）覆盖 Apple/AMD/NVIDIA/Intel。\n- 云端处理模式（BYOK）：支持 OpenAI、Anthropic、Google、Groq、xAI、Mistral、Tinfoil、OpenRouter、Azure AI Foundry/ OpenAI Speech、AWS Bedrock 等提供商，适合对延迟与准确率敏感的场景。\n- 灵活切换：可在同一产品界面内选择本地或云端转录与清理，甚至将敏感录音走本地、普通文稿走云端，实现“隐私与速度”的平衡。\n### 3) AI 语音代理与命令模式（Voice Agent）\n- 对话式语音代理：通过语音直接与 GPT-5、Claude、Gemini、Groq、本地 LLM（llama.cpp）等对话，可带截图上下文，支持“把选中内容就地修改”等交互。\n- 命令模式：专用热键将语音直接作为“命令”发给 AI 助理，无唤醒词、无二次润色，适合快速触发动作（如“把这段改成礼貌邮件语气”）。\n### 4) 实时会议转写与说话人分离（Diarization）\n- 自动检测 Zoom/Teams/FaceTime；支持实时说话人标签与语音指纹，会议纪要自动归档、可搜索、可分享。\n- 日历集成：Google/Microsoft/Apple 日历；会议提醒与“一键加入并转写”。\n- 音频导入：拖拽本地音视频文件或粘贴 YouTube/音频链接批量转写，可选本地说话人识别。\n### 5) 笔记系统与团队空间（Notes & Team Spaces）\n- 文件夹组织、语义搜索、云同步、AI 动作（自动摘要、生成待办等）。\n- 团队空间与 web 分享：邀请成员、角色管理、域内链接公开或仅受邀可见；笔记仍以设备为源，后台同步，服务端进行权限校验。\n- 导出与会者信息、字幕时间轴优化、跨设备同步增强。\n### 6) 企业管控与安全合规\n- 企业 SSO 与 SCIM、集中管理 Bedrock/Azure OpenAI 等密钥、网络白名单与隐私保留策略（可设置录音与转写文本的保留时长，自动清理）。\n- 支持 GDPR、HIPAA 场景的合规选项与文档，适用于医疗/金融等敏感行业使用与安全审查流程。\n### 7) 开发者友好的 API 与 MCP 服务器\n- 提供 REST API 用于管理笔记、文件夹、转写与用量等；提供 MCP 服务器，可连接 Claude、Cursor、VS Code，将 OpenWhispr 作为语音/笔记/转录的后端。\n- 仓库包含“自定义 ASR shim”示例，用于接入非 OpenAI 兼容的 ASR API；可二次开发与自托管整体方案。\n---\n## 技术栈与架构解析\n### 技术栈\n- 前端与桌面框架：React 19 + TypeScript + Vite + Electron 41 + shadcn/ui + Tailwind CSS v4。\n- 核心语音/Native 组件：whisper.cpp（本地 Whisper 推理）、sherpa-onnx（Parakeet 等的跨平台 ONNX 运行时）、llama.cpp（本地 LLM 清理/推理）；better-sqlite3（本地存储）。\n- 平台适配脚本：独立编译各平台的 native 模块（macOS/Windows/Linux）——包括全局热键监听、快速粘贴、系统音频抓取、会议检测、麦克风与日历监听等，见 package.json 中的 compile:* 系列脚本。\n### 架构设计精妙点\n- 混合推理后端：同一个 UI 可选择本地/云端不同引擎，适配不同硬件与隐私诉求，且支持“流式本地 Nemotron”等加速方案。\n- 本地优先/云可选：笔记与录音优先存储于本地，云端仅负责同步与协作；可在企业内网/自托管环境下运行（BYOK + 企业管控）。\n- 热键与粘贴的跨平台抽象：针对 macOS/Windows/Linux 分别实现 native 模块，统一上层热键与自动粘贴体验，尤其在 Wayland 下有专门兼容处理。\n### 代码组织与可维护性\n- 单一仓库 monorepo（主要）风格：Electron 主进程与渲染进程协同；package.json 中为不同平台的 native 模块、下载依赖（whisper-cpp、llama-server、qdrant、embedding 模型等）提供明确脚本，工程化成熟。\n- 依赖明确：Node.js >=24；prestart/predev/prebuild 阶段自动拉取/编译必要依赖，提升开发与打包的自动化程度。\n---\n## 上手门槛与部署体验\n### 常规用户（下载安装）\n- 官网下载页面提供 macOS（Apple Silicon/Intel）、Windows（.exe）、Linux（AppImage/.deb/.rpm/.tar.gz）的一键安装包，直接安装即可使用；无需命令行。\n- 初次启动时引导设置麦克风、热键与模型（本地/云端），UI 提示清晰，小白也可 5 分钟内跑通“按热键说话、文字出现在光标处”的核心路径。\n### 开发者/自托管（从源构建）\n- 快速启动示例：\n  - git clone https://github.com/OpenWhispr/openwhispr.git\n  - cd openwhispr\n  - npm install\n  - npm run dev\n  - Requires Node.js 24+。\n- 官方文档包含 Getting Started、平台指南、API Reference、MCP 服务器搭建、故障排查等模块，降低二次开发与集成难度。\n### Docker/容器化\n- 截至本文信息检索，官方未提供“开箱即用”的 Docker 镜像/Compose 文档；若要在容器内运行，需基于源码自行打包；对于仅使用桌面客户端的用户而言这不是必要选项。（对比：常见的自托管方案多采用 Docker，但 OpenWhispr 更偏向桌面客户端 + 自选后端，而非容器化服务端。）\n---\n## 社区活跃度与生命力\n### Stars、Forks 与 Issues/PR\n- 仓库 Stars 约 6.6k、Forks 约 893；Issues 165、Pull Requests 154，体现较高的关注度与参与度。\n- 提交活跃：2026-09-01–09-03 仍有频繁提交（涉及剪贴板历史、Meeting 提示、Hyprland 热键、Cohere Transcribe 2B 本地 STT 等），维护处于高速迭代阶段。\n### 版本节奏与质量\n- 发布版本密集（1.7.4、1.7.5、1.7.6、1.8.1、1.8.2、1.9.2 等），每个版本都附带详细的 changelog，功能新增与修复清晰可见；例如 1.9.2 修复 Windows 登录与转录问题，1.8.1 修复笔记内容泄露问题等，显示快速响应与质量把控。\n### 生态与周边\n- 官方博客持续输出模型/技术对比（如 Parakeet vs Whisper vs Nemotron）与原理讲解（How Whisper AI Works），有助于理解选型与调优。\n- Neon 作为 serverless Postgres 提供商支撑其云端能力，并有明确的赞助与致谢信息，说明项目有商业支撑与可持续性。\n---\n## Demo / 代码示例（最简上手）\n### 1) 常规用户：最快体验\n- 步骤：\n  - 前往 Download 页面，下载对应平台安装包（如 macOS .dmg、Windows .exe、Linux .AppImage）。\n  - 安装并启动应用，按引导完成麦克风与热键设置。\n  - 在任意文本输入处（如微信、邮件、VS Code）按热键说话，松开后文字自动出现在光标处。\n### 2) 开发者：本地启动开发环境\n- 示例：\n  - git clone https://github.com/OpenWhispr/openwhispr.git && cd openwhispr\n  - npm install\n  - npm run dev\n  - Requires Node.js 24+。\n### 3) 开发者：接入 MCP 服务器（示例概览）\n- 按官方文档指引配置 MCP 服务器，以 Claude Desktop 为例（概念示例）：\n  - 在 Claude Desktop 的配置文件中添加 MCP 服务器条目，指向 OpenWhispr 的 MCP 服务端地址与鉴权信息。\n  - 在 Claude 对话中可直接引用/检索 OpenWhispr 笔记与转录，实现“语音 → 笔记 → AI 分析”的一体化工作流。\n---\n## 目标人群与收益\n### 目标人群\n- 经常需要长文本写作/回复、受“打字速度/手腕疲劳”困扰的知识工作者（产品经理、运营、顾问、记者、自媒体作者等）。\n- 需要记录会议、访谈、课程并希望自动出纪要与可检索笔记的团队/个人（培训、咨询、法务、医疗、投资等）。\n- 对隐私/合规有极高要求的行业与场景（律师、医生、政务、企业内网）；需要“数据不出本地/不出域”的能力。\n- 希望在自己的工具链中集成语音/转写能力的开发者与团队（与 Claude/VS Code/Cursor/自建系统打通）。\n### 能带来的具体收益\n- 效率：写作速度提升 3–5 倍，会议后省去人工整理时间（录音→转写→说话人→AI 摘要→导出一条龙）。\n- 成本：相比纯商业订阅产品，开源与本地模式可显著降低长期付费压力；企业可自建与 BYOK，按自有计费模型控制开销。\n- 隐私与合规：可选本地模型与 Tinfoil 等机密计算，结合企业 SSO、网络白名单、保留策略等，满足 GDPR/HIPAA 等审查要求。\n- 可扩展性：通过 API 与 MCP，可将 OpenWhispr 作为“语音中枢”接入自有工作流，而不仅仅是桌面应用。\n---\n## 竞品/同类对比\n| 维度             | OpenWhispr                                    | Wispr Flow                           | Granola                        | 自建 Whisper/whisper.cpp（命令行/WebUI）          |\n|------------------|-----------------------------------------------|--------------------------------------|--------------------------------|---------------------------------------------------|\n| 开源             | 是（MIT）                                     | 否                                   | 否                             | 是                                                |\n| 跨平台           | macOS/Windows/Linux                           | Mac/Windows/iOS/Android              | Mac/Windows                    | 视自建部署而定                                    |\n| 本地优先与隐私   | 完全本地可选 + 机密计算（Tinfoil 等）         | 上云为主                             | 上云为主                       | 完全本地可控                                      |\n| 会议集成与日历  | Zoom/Teams/FaceTime + 三家日历 + 说话人识别  | 部分集成                             | 侧重会议                       | 需自建                                            |\n| AI 代理/命令     | 语音代理 + 命令模式（本地/云端可选）          | 有                                   | 有                             | 需自建（LLM 接入）                                |\n| 开发者集成       | REST API + MCP 服务器                         | 少                                   | 少                             | 完全可控，但需自行封装                            |\n| 价格模式         | 开源 + 云端可选（免费/订阅/BYOK）             | Freemium（约 15 美元/月）            | 商业订阅                       | 免费（自行承担硬件与运维）                        |\n| 上手门槛         | 安装即可用；开发需 Node.js/Electron           | 低                                   | 中低                           | 较高（命令行、依赖与环境配置）                    |\n**独特竞争力**\n- “开源 + 本地优先 + 企业管控 + API/MCP”的组合，在同类中较为稀缺；既有面向终端用户的 polished UX，又留给开发者足够的定制与集成空间。\n- 模型中立：可接多种本地与云端模型，不绑定单一提供商，避免厂商锁定与成本失控。\n---\n## 局限与不足\n### 硬件门槛（本地模式）\n- 使用本地 Whisper/Parakeet/Nemotron 时，不同模型对 GPU 与内存要求差异较大；通常小模型（tiny/base）可在 CPU 跑通，追求高精度与大模型则对显存与算力有要求，老设备可能体验不佳。\n- Intel Mac 上的部分能力受限（如实时说话人识别与语音指纹，因 ONNX Runtime 停止 x86_64 macOS 二进制支持）。\n### 学习成本与配置复杂度\n- 虽然开箱可用，但若要最大化“本地 + 云端 + 多模型 + 企业管控 + MCP/API”，需要阅读文档、理解不同后端与权限模型，非小白可一次性掌握。对于完全不想碰配置的用户，纯 SaaS 产品可能更简单。\n### 某些平台体验细节\n- Linux 在 Wayland 下曾出现全局热键兼容性问题，后续版本有修复，但仍需关注发行版与桌面环境的差异反馈。\n- Windows 在特定版本中出现过登录失效/转录失败等 bug（已在 1.9.2 等版本修复），说明快速迭代偶尔会引入不稳定点。\n### 生态与插件扩展\n- 目前未看到“插件市场”式的生态体系，扩展主要通过 API/MCP 和源码 Fork 自研；对期望社区插件生态的用户可能有所局限。\n---\n## 结语与行动建议\n### 终极评判\n- 如果你需要一款“桌面全局语音输入 + 会议记录 + AI 代理 + 笔记管理 + 开发者集成”的一体化方案，并且重视本地/可控与合规，OpenWhispr 是当前开源生态中少有的、成熟且高速迭代的选择。\n- 适合作为“语音中枢”接入个人/团队工作流；尤其推荐给对隐私敏感、有自托管需求，或希望把语音与自家系统深度集成的团队与开发者。\n### 行动建议（分人群）\n- 极简尝鲜：直接下载对应平台安装包，体验“热键说话自动粘贴”与会议转写，验证在你常用应用中的兼容性与流畅度。\n- 个人创作者/写作者：把 OpenWhispr 设为默认输入方式，尝试“语音 → AI 润色 → 笔记/导出”的闭环，评估对日常写作效率的提升。\n- 团队与企业：从“会议录制 + 说话人标签 + 日历集成 + 笔记共享”切入，在合规与管控（SSO/SCIM/网络白名单）的基础上逐步推广，并与企业内部知识库/搜索打通。\n- 开发者与自建团队：阅读 docs.openwhispr.com 的 API 与 MCP 章节，基于源码跑 Dev 模式，尝试将 OpenWhispr 接入 Claude/VS Code/Cursor 或自研系统，验证集成成本与收益。\n### 风险提示\n- 本地模型会占用磁盘与算力，建议从 tiny/base 起步，再逐步升级模型；在低配机器上优先使用云端转录。\n- 若处理高度敏感内容，请严格使用“本地模式 + Tinfoil 等机密计算 + 保留策略 + 企业管控组合”，并结合组织内部的安全评估进行部署。\n---\n## 参考与延伸阅读\n- GitHub 仓库与 README（功能、下载、技术栈、快速开始）。\n- 官方文档（系统要求、平台指南、API/MCP、隐私与合规）。\n- GitHub Releases（版本历史、修复与新功能细节）。\n- 博客与对比文章（Parakeet vs Whisper vs Nemotron；How Whisper AI Works；与 Wispr Flow 的对比）。",
+  "type": "project",
+  "dateAdded": "20260904"
+}

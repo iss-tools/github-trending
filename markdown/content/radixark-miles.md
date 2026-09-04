@@ -1,0 +1,145 @@
+# radixark/miles
+
+[GitHub URL](https://github.com/radixark/miles)
+
+
+## Miles：面向大模型生产级强化学习的训练框架
+
+> 一套面向大模型与视觉模型后训练的生产级强化学习框架，通过系统工程解决大规模RL的稳定、可控与成本痛点。
+
+- **Tags**: RLHF, 大模型训练, MoE, 异步训练, 智能体
+- **Category**: 开发工具, AI训练, 开源框架
+
+## Details
+
+<|assistant|>我将继续向下浏览该 GitHub 仓库页面，查看是否有代码示例、文档链接、Issue/PR 活跃度、Release 记录等信息，以评估社区生态、上手门槛与维护状态。</think>
+# 一句话总结
+**Miles** 是一套面向大语言模型（LLM）与视觉语言模型（VLM）后训练的“生产级”强化学习框架，由 RadixArk（SGLang 团队）与社区联合开源，核心理念是：用极致的系统工程（统一低精度、异步训练、路由回放、快速权重同步）解决大规模 RL 在真实生产环境中的“稳定、可控与成本”三大痛点，让研究级算法真正能在企业级集群上可靠、高效地跑起来。
+## 背景与痛点
+- 从论文到生产：RLHF / RLAIF / Agent 训练在论文里表现惊艳，但一旦接到真实环境（多轮对话、工具调用、多模态输入、分布式集群），就会遇到“训练—推理不一致、MoE 不稳定、长尾任务拖垮吞吐、权重同步成瓶颈”等问题，导致实验难复现、训练崩坏、资源浪费。  
+- MoE 的敏感性：混合专家模型在 RL 中极其敏感，推理时与训练时的专家路由如果存在细微数值差异，就会造成梯度错位，最终引发训练崩溃。这个问题在 Qwen、DeepSeek 等大 MoE 上尤其明显。  
+- 精度与成本的矛盾：前沿模型的参数规模与上下文长度不断攀升，全 BF16/FP16 训练成本难以承受；而简单地换用低精度又会破坏“训练—推理一致性”，导致策略发散。  
+- 智能体工作流的复杂性：现代 Agent 场景涉及多轮交互、沙箱环境、工具调用与动态上下文，传统 RL 框架对此支持不足，数据收集（rollout）与环境接入成为工程黑洞。
+**Miles 的诞生：**  
+- 起源与血统：Miles 从 THUDM/slime 分叉而来，继承其简洁、模块化、训练与推理解耦的设计，并在 SGLang 推理引擎、Megatron-LM 训练框架、Ray 分布式调度等工程栈上做了大量“深度补丁”，把“研究原型”打磨成“生产就绪”。  
+- 背后团队与生态：项目由 InfiXAI、蚂蚁集团 AQ 团队、SGLang RL 团队及社区共同推动；官方还得到了 NVIDIA Transformer Engine 技术支持与算力赞助（DataCrunch）。  
+- 产业背书：RadixArk（SGLang/Miles 背后团队）在 2026 年完成 1 亿美元种子轮，估值 4 亿美金，投资方包括英伟达、AMD、英特尔等；Miles 已被超 20 支一线团队用于 MoE 等大模型强化学习训练，并在 DeepSeek-V4 发布当天实现“推理+RL”开箱即用支撑。  
+- 版本与开源协议：仓库已发布 v0.1.0 首个版本化 Release；项目采用 Apache-2.0 协议，可商用且对厂商友好。
+## 核心亮点与功能剖析
+### 1) 架构设计：解耦 Rollout 与 Trainer，统一训练后端
+- 基础循环（Miles RL Loop）：
+  1) Rollout：由 SGLang 引擎生成轨迹（支持多轮会话、工具调用、沙箱环境）。  
+  2) Training：由 Megatron-LM 或 PyTorch FSDP 消费轨迹，计算 RL 损失并更新策略。  
+  3) Weight Update：把新权重同步回所有 SGLang 推理引擎，尽量减少对飞行中 Rollout 的打扰。  
+- 训练后端统一接口：  
+  - Megatron-LM 为默认后端，支持张量/流水线/上下文/专家等多维并行，并支持 CPU 与 NVMe 优化器状态卸载、检查点对并行策略不敏感等工程特性。  
+  - FSDP 后端则直接使用 HuggingFace 模型定义与 FSDP2，免转换、易上手，适合数据并行为主的场景。  
+  - 两者在同一接口下切换，策略代码不改动。  
+- 分布式调度：使用 Ray 进行 Placement Group 与 Rollout Manager、Training Models 的编排，在代码入口 `train.py` 中清晰展示“资源分配—Rollout 初始化—模型创建—训练循环”的流程。
+### 2) 统一低精度（Unified Low-Precision）：精度“合约”打通全栈
+- 支持：NVFP4、MXFP4、MXFP8、FP8 的 rollout；支持 NVFP4、MXFP8、FP8 与 INT4 QAT（Quantization-Aware Training）的端到端训练配方。官方强调“低精度的 rollout 与训练必须达成逐比特一致的量化合约”，否则策略会发散。  
+- 关键设计：  
+  - MXFP8：采用硬件级块缩放，覆盖 rollout、前向与两次 GEMM（梯度）的全栈一致性。  
+  - NVFP4：针对 MoE 专家权重做按 token 的在线激活缩放，避免批次相关的量化伪影。  
+  - 细粒度控制：对敏感层保留 BF16，降低风险。  
+- 收益：在保证奖励曲线与 BF16 基本一致的前提下，显著降低 rollout 延迟与显存占用，让 Blackwell 等新硬件的吞吐潜力得以真正释放。
+### 3) 训练—推理一致性（Train-Inference Consistency）
+- 逐比特相同的 logprobs：通过 FlashAttention-3、DeepGEMM 等内核级优化，确保推理与训练的前向/ backward 在数值上逐比特一致，消除常见的数值漂移。  
+- Rollout Routing Replay（R3）：在 SGLang 推理时记录专家路由决策，训练时“回放”这些路由，消除 MoE 在不同阶段因路由抖动导致的不一致，有效缓解 Qwen3、DeepSeek-V3 等 MoE 模型的 RL 崩溃问题。  
+- Token-In-Token-Out（TITO）会话服务：多轮 Agent 流程中，消息解析、工具执行、模板重渲染会改变分词与上下文。TITO 保留模型实际生成的 token ID，新回合只增量分词并合并到前缀，训练时用“无损重组”的序列和原始 logprobs，确保 R3、On-Policy Distillation（OPD）与零-KL 对齐能真正生效。
+### 4) 极致性能：异步训练、权重同步与长尾优化
+- 全异步 RL：  
+  - Rollout 持续进行，训练与 rollout 互不阻塞，使用样本级调度与“有界数据缓冲”来解耦吞吐与训练节奏；对长尾任务（如某些极长会话）特别友好。  
+  - 三种评估模式：共享引擎、专用评估集群、外部评估服务，且结果与检查点/训练步严格对齐，避免“错把后当先”。  
+- P2P（RDMA）权重同步：  
+  - v0.1.0 官方数据：1T 参数模型的权重更新时间从 53.3 秒降到 7.2 秒；盘上增量更新（disk-delta）将载荷从 62.4 GB 压到 0.69–0.83 GB，大幅减少同步开销。  
+- Speculative RL（推测性 RL）：使用“在线 SFT 的草稿模型”，在 rollout 阶段获得 25%+ 的吞吐提升，且草稿策略会随 RL 更新，避免策略漂移。
+### 5) Agent 与多模态场景的一等公民支持
+- 沙箱与环境集成：提供 Harbor、HUD、NeMo Gym、OpenEnv、Prime Intellect Verifiers 等集成，支持 Daytona、E2B、Modal、AgentENV 等后端；每个回合可获得干净隔离的环境与验证器奖励，便于 coding agent、terminal agent 等复杂工作流训练。  
+- 多模态（VLM/LLM）多轮训练：统一 VLM/LLM 的多轮采样范式，开发者只需定制 rollout 函数即可开启多轮 RL，适合视觉问答、图文智能体等场景。  
+- Multi-Agent Co-Evolution（MrlX）：支持异步协同进化的多智能体框架，适用于医患模拟、深度研究管线等复杂协作任务。
+### 6) 内存与显存效率
+- NVMe 优化器状态流式加载：对于超大模型，优化器状态不必全部常驻 GPU，而是按 bucket 从 NVMe 流式读回，实测在 32×GB300 上可容纳 GLM-5.2 的优化器与训练引擎，节省数十 GB HBM 与数百 GB CPU 内存。  
+- 支持显存/内存的卸载与重载策略（`offload_rollout`/`offload_train` 等），在 `train.py` 中有明确调用路径，适配不同硬件预算。
+## 技术栈与架构解析（面向开发者）
+- 语言与依赖：Python ≥3.10，基于 PyTorch 生态，依赖 Ray、SGLang、Megatron-LM 或 FSDP2 等；提供额外依赖（fsdp、mlflow、cpu、gpu、training）的可选安装。官方 PyPI 包 `miles-rl` 已发布，支持 Docker 一键拉取。  
+- 分布式编排：使用 Ray 作为调度中枢，抽象出 Placement Group、Rollout Manager 与 Training Models，在训练循环中通过 `.remote()` 实现异步执行。`train.py` 展示了典型的“资源编排—初始化—循环—保存”的骨架，便于开发者插入自定义逻辑。  
+- 代码组织（从 README 与目录可见）：  
+  - `miles/` 核心模块（Ray、训练、工具、日志、追踪等）。  
+  - `examples/` 覆盖 Recipes（VLM、LoRA、PPO、工具环境）、Infra 特性（异步、低精度、权重传输、TITO、MIS/TIS）、实验性功能（多智能体、评估环境、可复现性等）。每个示例的 README 会自动同步到官方文档站。  
+  - `docs/` 用于开发者深入指南（需进一步浏览目录内容）。
+## Demo / 代码示例
+- 官方 Quick Start（最小可用示例）：FP8 GRPO 训练 Qwen3-30B-A3B
+  ```bash
+  docker pull radixark/miles:latest
+  # 或从源码安装：
+  # pip install -r requirements.txt
+  # pip install -e .
+  python train.py \
+      --advantage-estimator grpo \
+      --model-name qwen3-30b-a3b \
+      --hf-checkpoint /path/to/qwen3-30b-a3b-hf \
+      --rollout-batch-size 512 \
+      --n-samples-per-prompt 8
+  ```
+- 从 Docker 启动的训练入口明确，参数化控制算法（GRPO）、模型与检查点路径、 rollout 批次与采样数等；进一步的配置可参考文档站与 `examples/` 中对应 README。
+## 目标人群与收益
+- 企业与研究团队：  
+  - 收益：在大规模 MoE/超大模型上做 RLHF/Agent 训练时，获得“可复现、可审计、可监控”的流水线，减少训练崩溃与数值不确定性；同时通过低精度与异步训练显著降低算力成本与时间周期。  
+- 智能体与工具调用场景的研发者：  
+  - 收益：自带多轮会话、沙箱执行、奖励验证等工程能力，无需从零搭环境 pipeline，专注于奖励设计与策略迭代；examples 里也有现成的 SWE-Agent、Tau-bench、Search-R1 等端到端配方。  
+- 系统与基础设施工程师：  
+  - 收益：可作为“低精度、权重同步、异步训练”等先进工程的参考实现，学习如何把算法做成生产级；P2P 权重传输、TITO、R3 等都是可借鉴的模块化设计。  
+- 个人开发者/小团队（需理性评估）：  
+  - 收益：在资源充足（多卡/多机）的前提下，能以接近工业级的流程做前沿模型的后训练；但门槛较高，更适合作为学习与试验平台，而非日常小模型微调首选。
+## 竞品/同类对比
+- 与 slime（THUDM）：  
+  - Miles 从 slime 分叉并“共进化”，继承其模块化解耦设计，但更偏向企业级生产与前沿硬件适配，并增加了 R3、TITO、异步训练、低精度等系统工程能力。  
+- 与 RLlib、Stable-Baselines3 等传统 RL 框架：  
+  - 传统框架对超大模型与 Agent 工作流支持较弱；Miles 原生面向 LLM/VLM 与 MoE，强调“训练—推理一致性”与大规模资源编排，更适合前沿模型后训练。  
+- 与 vLLM + 自研 RL 脚本：  
+  - Miles 将推理（SGLang）、训练（Megatron/FSDP）、权重同步、环境与奖励封装成统一栈，减少集成成本；vLLM 生态偏推理端，RL 端需自建。
+## 局限与不足（客观视角）
+- 上手门槛与算力要求：  
+  - 主要面向多卡/多机环境，小规模单卡体验有限；需要熟悉 Ray、Megatron/FSDP、SGLang 等技术栈，对新手不友好。  
+- 文档与可探索性：  
+  - README 给出了清晰的功能概览与 Quick Start，但 `docs/` 目录当前在网页端未顺利展开，文档完整性、新手引导深度需进一步验证。Examples 的 README 会同步到文档站是一大亮点，但对非英文用户仍有语言成本。  
+- 硬件与模型依赖：  
+  - 低精度与某些高级特性依赖特定 GPU（H100/H200/GB200 等）与 CUDA 版本；INT4 QAT、MXFP8/NVFP4 等在新硬件上效果更佳，老硬件收益有限。  
+- 生态与社区：  
+  - 截至 2026-09，仓库 Star 数约 886，Fork 约 112；Issues 与 PR 数量较大，说明活跃度较高，但也反映出复杂系统难免的“磨合期”。中文社区资料在增长，但整体仍处于早期普及阶段。
+## 上手门槛与部署体验
+- 安装方式：  
+  - Docker（推荐）：`docker pull radixark/miles:latest`，并在 v0.1.0 提供 CUDA 13/12 镜像版本，便于与环境匹配。  
+  - 源码：`pip install -r requirements.txt && pip install -e .`，但需自行处理 CUDA、RDMA 等底层依赖。  
+- 启动体验：  
+  - 训练入口统一在 `train.py`，参数集中管理，便于脚本化；CLI 参数文档在 2026/02 已补齐，方便精细控制集群资源与算法超参。官方 Quick Start 指向更详细的环境与自定义奖励指南。  
+- 错误与调试：  
+  - 结合 Ray 的 Placement Group 与远程调用，错误定位可能需要一定的分布式调试经验；建议从 `examples/` 中简单配方起步，并善用日志与追踪模块（`tracking_utils`）。
+## 商业模式与性价比
+- 开源核心：  
+  - Miles 本身开源（Apache-2.0），核心功能免费；RadixArk 更像“Databricks/Elastic 模式”——开源与托管服务并行。SGLang 与 Miles 组成的开放 AI 基础设施是其商业叙事的重要支柱，企业服务与托管是变现路径之一。  
+- 对团队的价值判断：  
+  - 如果你的团队已在做或计划做大规模 RL/Agent 训练，Miles 能减少自研栈的重复建设与维护成本；但若只是在单卡或小模型上做轻量 SFT/RL，性价比未必最高。
+## 性能与硬件兼容性
+- 性能指标（官方示例）：  
+  - GLM-5.2 744B 在 64×GB300 上实现约 4.5 分钟的训练步长，前缀缓存命中率 96%；全异步 RL 与 NVMe 优化器状态流式是实现该性能的关键。  
+  - P2P 权重传输与 disk-delta 更新在 1T 参数模型上把权重同步耗时压缩到 7.2 秒，减少训练中断。  
+- 硬件支持：  
+  - 官方支持 NVIDIA H100/H200、B200/B300、GB200/GB300，以及 AMD MI300X/MI355X；低精度配方优先适配 Blackwell 与 Hopper。实际部署前务必核对驱动、CUDA 与镜像版本。
+## 数据隐私与开源协议
+- 协议：Apache-2.0，允许商用与二次开发，对厂商友好。  
+- 数据与隐私：  
+  - 训练过程通常在自有或租用的集群运行，数据不会流出；但在使用外部评估服务或云沙箱（Modal/E2B 等）时需注意合规与隐私策略。
+## 避坑指南（经验向）
+- 从小规模配方开始：先用 `examples/` 中的 PPO 或 FSDP 配方在单机多卡上跑通，再上 Megatron 与多机；优先验证“训练—推理 logprobs 一致性”。  
+- 低精度要“端到端”：避免只在推理侧启用低精度；务必按官方配方对应训练侧，否则数值误差会被策略更新放大。  
+- 权重同步监控：留意 `update_weights` 与 `check_weight_update_equal` 的日志，确保 RDMA 与 P2P 配置生效；超时/丢包会严重影响训练节奏。  
+- 异步训练的“缓冲策略”：根据任务长尾程度调整有界数据缓冲大小与“部分 rollout / 过采样”策略，避免缓冲爆炸或饥饿。  
+- 优先用 Docker：镜像已预设 CUDA、依赖与内核级优化，手动环境容易因版本差异出现难以排查的数值不一致。
+## 结语与行动建议
+- 终极评判：  
+  - Miles 是目前少数真正把“大规模 RL 训练”做成“生产级、可审计、可复现”的开源栈，尤其在 MoE、低精度、异步训练、Agent 工作流等方向做到了行业领先的工程深度。它不适合作为轻量入门，但对于“前沿模型后训练”与“复杂智能体训练”的团队而言，是一张高投入、高回报的入场券。  
+- 行动建议：  
+  - 如果你的团队在 2026–2027 年有 MoE/超大模型的 RL/Agent 训练计划，建议立即基于 Docker + 官方 `examples/` 跑一遍端到端流程，评估与现有管线（SGLang 推理、Megatron/FSDP 训练）的集成成本与收益。  
+  - 若目前只做单卡或小模型微调，建议先掌握 SGLang 推理端与基础 RL 算法，待资源与需求明确后再切入 Miles，以免陷入过高的部署与调试成本。

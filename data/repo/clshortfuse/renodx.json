@@ -1,0 +1,57 @@
+{
+  "id": "921dddfc-4320-4e0c-9159-7d09180fe881",
+  "url": "https://github.com/clshortfuse/renodx",
+  "domain": "github.com",
+  "repo": "clshortfuse/renodx",
+  "description": "RenoDX 是一套基于 ReShade 的开源游戏渲染增强工具，深入渲染管线重写着色器，有效解决游戏 HDR 发白、色调映射不准等问题。它支持超 150 款主流游戏，并提供完善的开发工具，让玩家能自由定制专属画质。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-04T11:19:16.566Z",
+  "metaData": {
+    "forks": "136",
+    "stars": "3405",
+    "topics": [
+      "directx",
+      "games",
+      "hdr",
+      "mod"
+    ],
+    "license": "MIT license",
+    "homepage": "https://renodx.com/",
+    "description": "Renovation Engine for DirectX Games. Contribute to clshortfuse/renodx development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "画质增强",
+      "ReShade",
+      "HDR",
+      "游戏Mod",
+      "DirectX"
+    ],
+    "cover": "",
+    "title": "RenoDX：游戏画质增强引擎深度评测",
+    "ability": [
+      "着色器级画质修复",
+      "精准 HDR 校正",
+      "广泛游戏兼容性",
+      "模块化插件架构",
+      "开发者 DevKit 工具链"
+    ],
+    "summary": "基于 ReShade 的开源渲染引擎，通过重写着色器为游戏提供精准 HDR 修复与画质增强。",
+    "category": [
+      "游戏工具",
+      "开源项目"
+    ],
+    "suitable": [
+      "追求极致画质的玩家",
+      "游戏 Mod 开发者",
+      "图形编程爱好者",
+      "HDR 显示器用户"
+    ],
+    "description": "RenoDX 是一套基于 ReShade 的开源游戏渲染增强工具，深入渲染管线重写着色器，有效解决游戏 HDR 发白、色调映射不准等问题。它支持超 150 款主流游戏，并提供完善的开发工具，让玩家能自由定制专属画质。"
+  },
+  "contentDetail": "<|assistant|>我要在仓库主页上找到并打开 Releases 页面，了解发布版本号、更新频率和产物下载链接。</think>\n# RenoDX（clshortfuse/renodx）深度评测\n## 一句话总结\nRenoDX 是一套基于 ReShade 插件机制的 DirectX 游戏渲染“装修”引擎，通过重写/注入着色器、升级交换链等方式，为大量游戏带来更靠谱的 HDR、色调映射与画质调整，且整体开源与可定制（MIT 协议），是追求画面精细调优玩家与图形开发者的强力工具箱。\n## 背景与痛点：它为何而生？\n### 想象这样的场景：\n- 你买了台 HDR 显示器，却发现有的游戏“假 HDR”（只是把 SDR 拉一拉），有的干脆没法开；  \n- 不同游戏的色调映射（HDR→SDR、HDR→HDR）逻辑不一致，导致色彩要么发灰、要么过爆；  \n- 想做一点后处理（胶片颗粒、锐化、色差），但既不想上通用型 ReShade 滤镜堆叠，又怕性能与兼容性问题。\nRenoDX 的初衷就是“修房子”而不是“刷墙纸”。它不只是在画面上叠一层滤镜，而是真正在渲染管线层面做“硬装修”：通过 ReShade 的 Addon API 钩入 DirectX，对游戏的着色器进行替换、注入与修改，从而解决色彩、HDR 与光效等原生问题。由于借助了 ReShade，兼容性可以覆盖大量 DirectX 游戏，且不需要为每个游戏的特定可执行文件打补丁。\n## 核心亮点与功能剖析\n- **基于 ReShade Addon 的“非侵入式”钩子**  \n  RenoDX 以 ReShade 6.5.1+ 的完整插件能力为底座，自动处理所需的 DirectX Hook；你只需把对应的 .addon64/.addon32 放到游戏目录即可，无需手动给 EXE 打补丁。\n- **“装修”式能力清单**  \n  官方 README 列举了当前核心能力：替换着色器、注入缓冲区、添加覆盖层（UI/信息）、升级交换链（为 HDR 提供基础）、升级纹理资源、将用户设置持久化到磁盘。\n- **广泛的“游戏清单”与生态**  \n  Wiki 的 Mods 页列出了超过 150 款受支持的游戏，如 Cyberpunk 2077、Elden Ring、FF7 Rebirth、Starfield、Baldur’s Gate 3、Silent Hill 2 Remake、Dragon’s Dogma 2 系列等；每条会标注维护者、链接（Nexus/Discord）与状态（✅=可用/🚧=进行中/👻=有问题），整体生态非常活跃。\n- **HDR 与色调映射的“外科手术”**  \n  RenoDX 不是简单调曲线，而是在管线里换掉/定制 Tonemapper 与色彩分级模块，从而为每个游戏做精细化“手术”。不少 MOD 页面都强调重写/修复 HDR，避免 AutoHDR/RTX HDR 的“双重色调映射”造成画面泛白，并给出针对性的曝光/高光/阴影/色温控制。\n- **原生开发者工具与反编译器**  \n  项目自带 `decomp.exe`（Shader Model 6.0+ 反编译器）与 `renodx-devkit.addon64`（开发套件）以及 FPS 限制器，为想要自己写插件/分析 shader 的人提供了一站式工具箱。\n## 技术栈与架构解析\n### 开发语言与构建系统\n- 以 C++14/17 为主，配合 HLSL（着色器）进行渲染管线层面的修改。  \n- 使用 CMake + `CMakeLists.txt` 与 `CMakePresets.json`，项目根目录提供 `make-sln.cmd` 与 `build.cmd` 脚本来生成 Visual Studio 解决方案并完成构建，上手路径对 Windows 开发者友好。\n### 代码组织（目录结构）\n从 `src/` 的子目录可以看出模块化思路：\n- `src/addons/`：插件本身的基础设施，如 renodx-fpslimiter、renodx-devkit 等。  \n- `src/games/`：按游戏划分的适配模块，每款游戏通常包含 addon.cpp 与 metadata.json（如 CS2 的 fork 就在 `src/games/counterstrike2`），便于维护者独立管理与快速新建适配。  \n- `src/shaders/`：通用着色器库（tonemap、colorgrade、lut 等），保证不同游戏复用同一套“画质算法”。  \n- `src/utils/`：工具库（device 管理、swapchain 管理、shader 编译器封装），提供跨 DX 版本的抽象能力。  \n- `src/reshadefx/`、`src/templates/`：处理 ReShade FX 相关与模块模板。  \n- `external/`：第三方依赖（Detours、DLSS、ReShade 等），方便集成与升级。\n### 设计理念\n- 高内聚、低耦合：游戏适配仅依赖通用组件与游戏元数据，新增一款游戏往往只需新增一个 `games/<title>/addon.cpp` 与配置。  \n- 依赖 ReShade 统一处理 Hook，降低对特定游戏 EXE 版本的耦合，从而提升兼容性与可维护性。\n## 上手门槛与部署体验\n### 作为“玩家”使用（零代码）\n- 最低门槛：先安装 ReShade 6.5.1+（勾选完整 Addon 支持），无需额外安装 Shader；接着从 Wiki 的 Mods 列表点 Snapshot 或 Releases 下载对应 `.addon64/.addon32`，放入游戏根目录（与 ReShade 所在处相同）。进游戏后按 Home 键唤出 ReShade 菜单即可调参。  \n- 关键提示：若画面“发白”，请务必关闭系统的 AutoHDR 与 RTX HDR，避免双重色调映射。\n### 作为“开发者/Mod 制作者”参与\n- 环境准备：Windows 10/11、Visual Studio 2019+（带 C++ 桌面组件）、CMake 3.16+、Git。推荐使用 `make-sln.cmd` 生成解决方案，然后用 VS 打开，并在 Release 配置下构建与测性能。  \n- 文档：项目有 CONTRIBUTING.md、DEVKIT_MCP.md 与 AGENTS.md，提供了贡献流程与 DevKit/MCP 工作流的指引。整体文档结构清晰，但有难度，适合已有一定图形编程基础的开发者。\n### Demo / 最简上手示例（玩家视角）\n- 步骤：\n  1) 安装 ReShade 6.5.1+（Addon 模式）；  \n  2) 从 Wiki Mods 页找到你的游戏，点击 Snapshot/Nexus 下载 addon；  \n  3) 把 `.addon64`（64 位游戏）复制到游戏目录；  \n  4) 启动游戏，按 Home 打开 ReShade 菜单，在对应分组调节参数（曝光/色调映射/锐化/颗粒等）。\n## 目标人群与收益\n- 对画质敏感、愿意微调参数的玩家：  \n  - 收益：在不修改游戏本体文件的前提下，获得更正确的 HDR 显示、更自然的色调映射与可控的后期参数，大幅改善观感与舒适度。  \n- Mod 开发者/图形爱好者：  \n  - 收益：统一框架与工具链，省去每款游戏重复造 Hook 的时间，专注于 shader 与调参本身；MIT 协议可自由修改与分发。  \n- HDR 体验重度用户（显示器/电视玩家）：  \n  - 收益：让不少原生无 HDR 或 HDR 实现不佳的游戏获得“类似原生”的 HDR 输出，减少发白/过爆/色彩偏差。\n## 竞品/同类对比与位置\n- 与纯 ReShade 预设对比：  \n  - ReShade 是通用后处理滤镜，在画面输出后“叠滤镜”；RenoDX 则在渲染管线内部做“改写与增强”，能从根源解决 HDR/色调映射问题，而非后期补救。  \n- 与 AutoHDR/RTX HDR 对比：  \n  - 系统级 HDR（AutoHDR/RTX HDR）对大部分游戏“一键开启”，但经常出现色调不准、发白、双重映射问题；RenoDX 针对每款游戏细调，质量更高，但需要手动安装与适配。  \n- 与单游戏 HDR Mod 对比：  \n  - 很多优秀 Mod（如 3DM/Nexus 上的 HDR/色调映射 Mod）正是基于 RenoDX 框架构建，可见其已成为社区“事实基础设施”。\n## 局限、不足与风险\n- 兼容性仍需“逐游戏适配”：  \n  虽然框架通用，但不同游戏的渲染管线与 shader 结构各异，效果与稳定性高度依赖对应游戏适配的质量。Wiki 也有“进行中/问题”状态，说明适配并非一劳永逸。  \n- 版本依赖与更新风险：  \n  - 依赖 ReShade 特定版本（6.5.1+），若 ReShade 大改接口可能需要适配；Snapshot 更新较快但不保证稳定性，适合想尝鲜的用户，而追求稳定可选用 Nexus 版本。  \n- 系统级 HDR 冲突：  \n  - 若未关闭 AutoHDR/RTX HDR，极易出现画面泛白与色调异常，这是“新手最容易踩”的坑。  \n- Linux/Proton 限制：  \n  - 官方提示 Linux 使用 DLSS 需谨慎，部分环境会有兼容问题，跨平台并不是“开箱即用”。  \n- 学习与调试成本：  \n  - 想要为新游戏写适配需要图形学与 HLSL 基础，调试不当可能造成崩溃或伪影；虽然提供了 devkit 与反编译器，但对普通玩家不友好。\n## 社区活跃度与生命力\n- GitHub：Star 约 3.4k、Fork 约 130+、Issue 与 PR 开放且持续更新，说明社区有一定规模与参与度。  \n- Wiki：Mods 列表频繁更新，新增游戏与维护者变更都会同步，覆盖面广泛。Nexus 与 Discord 作为“分发与讨论”主阵地，形成“代码仓+Wiki+社区”三位一体的生态。  \n- 第三方文章与教程：多家技术博客与社区（GitCode、CSDN 等）发布了 RenoDX 的安装与开发指南，说明其在图形与 MOD 圈层的影响力在上升。\n## 极简代码/配置示例（开发者视角）\n以下展示“为某游戏新增 RenoDX 适配”的极简模板（伪代码示意）：\n- 游戏元数据（metadata.json，路径通常为 `src/games/<title>/metadata.json`）：\n```json\n{\n  \"title\": \"Example Game\",\n  \"id\": \"examplegame\",\n  \"author\": \"YourName\",\n  \"description\": \"RenoDX adaptation for Example Game\",\n  \"version\": \"1.0.0\",\n  \"requires_reshade_version\": \"6.5.1\"\n}\n```\n- 插件入口（addon.cpp）：\n```cpp\n#include \"renodx/utils/device.hpp\"\n#include \"renodx/utils/swapchain.hpp\"\nextern \"C\" __declspec(dllexport) const char* NAME = \"RenoDX: Example Game\";\nextern \"C\" __declspec(dllexport) const char* DESCRIPTION = \"Example Game RenoDX addon\";\nBOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {\n  switch (ul_reason_for_call) {\n    case DLL_PROCESS_ATTACH:\n      renodx::utils::device::OnCreate([](renodx::utils::device::Device& device) {\n        // 在设备初始化时注入/替换 shader\n      });\n      renodx::utils::swapchain::OnPresent([](renodx::utils::swapchain::Swapchain& swapchain) {\n        // 在每帧呈现前进行后处理或 HDR 输出处理\n      });\n      break;\n    case DLL_PROCESS_DETACH:\n      break;\n  }\n  return TRUE;\n}\n```\n- 构建与部署（大致步骤）：\n- 运行 `make-sln.cmd` 生成解决方案；在 VS 中打开并构建 Release 版；将产出的 `.addon64` 放入游戏目录与 ReShade 同级；进游戏按 Home 打开菜单调参。\n## 结语与行动建议\n- 终极评判：  \n  RenoDX 不是“一键美化”的滤镜合集，而是“可编程、可定制、可复用”的渲染装修引擎。其最大的价值在于：把游戏 HDR/画质调优从“黑魔法”转变为“可工程化、可协作”的模块，并为大量 3A/独立游戏提供了统一的框架与工具链。\n- 给你的行动建议：\n  - 如果你只是想玩得更舒服：先在 Wiki Mods 里确认你常玩的游戏是否在支持列表，若有，按官方流程安装并关闭 AutoHDR/RTX HDR；遇到问题优先在 Discord 与 Nexus 评论区搜索与提问。  \n  - 如果你是 Mod 作者/图形开发：从克隆仓库、跑通 `make-sln.cmd` 与 `build.cmd` 开始，阅读 CONTRIBUTING.md 与 DEVKIT_MCP.md，参考 `src/games/` 下的现有适配与 `src/shaders/` 的通用组件，为缺少适配的游戏补完“最后一公里”。\n- 参考链接：\n  - 仓库主页与 README：clshortfuse/renodx（GitHub）  \n  - Wiki Mods 列表（安装与支持游戏）：GitHub Wiki  \n  - LICENSE（MIT 开源协议）：仓库文件",
+  "type": "project",
+  "dateAdded": "20260904"
+}

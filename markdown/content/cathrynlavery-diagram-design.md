@@ -1,0 +1,179 @@
+# cathrynlavery/diagram-design
+
+[GitHub URL](https://github.com/cathrynlavery/diagram-design)
+
+
+## Diagram Design：AI驱动的编辑级图表生成工具
+
+> 一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格
+
+- **Tags**: 图表生成, 可视化, 品牌适配, 开源工具, Claude插件
+- **Category**: AI编程, 开发工具, 设计工具
+
+## Details
+
+# Diagram Design（cathrynlavery/diagram-design）深度评测
+## 一句话总结
+Diagram Design 是一套为 Claude Code、Codex、Factory Droid 和 Pi 等智能体准备的“编辑级图表技能”：用自然语言一句话就能生成 39 种可直接发布的自包含 HTML+SVG 图表，并能在 60 秒内“吃透”你网站的配色与字体，让 AI 画出的图不再像通用模板。它并不替代 Figma/Draw.io 这类可交互编辑器，而是把“最后一公里”的视觉品质与品牌一致性，封装成 AI 能稳定复用的设计系统。先装再玩、有 MIT 许可、双击即用。
+---
+## 背景与痛点：它为什么会出现？
+### AI 画图的“最后一公里”坑位
+- 大模型已经能比较好地理解“系统里谁调用谁、数据怎么流转”的结构信息，但生成的视觉成果往往“能用但不好看”：要么是 Mermaid 默认的圆角框＋粗阴影，要么是各种奇怪重叠和不对齐，放在 PPT 或技术文档里显得格格不入。
+- 让 AI 生成 Mermaid/Draw.io 再导出，会引入“二次打磨”成本：调布局、配色、字体、去掉多余阴影，经常要花半小时左右在 Figma/Draw.io 里修修补补，甚至干脆放弃画图。
+### 作者背景与定位
+- 作者 Cathryn Lavery 本身就有设计背景，运营 BestSelf.co 并在 littlemight.com 持续写作。她做 Diagram Design 的初衷很直接：每次写博客需要架构草图、流程图或金字塔图时，让 Claude 画出来，得到的都是“通用圆角框盒子”，与自己站点风格完全不搭；要么跟 Figma 死磕，要么干脆不用图。于是她做了一个 Claude Code 的 skill，一次性把“设计系统的执行规则”打包给 AI，让生成的图自带品牌与编辑级质量。
+### 生态的演进信号
+- 过去一年，AI 编程助手生态（Claude Code、Codex 等）开始从“生成代码”进化到“交付可发布物”。diagram-design 的走红正好说明：大家不仅要求 Agent 理解系统结构，还要求产出符合品牌、可直接放稿的图表。这标志着“Agent 交付质量”的竞争维度从正确性转向视觉一致性、可用性与设计规范化。
+---
+## 核心亮点与功能剖析
+### 1) 39 种编辑级图表类型（三大风格变体）
+项目提供 39 种图表类型，覆盖从架构、流程、时序、状态机、数据模型、时间线、 quadrant、radar、Gantt、Sankey、鱼骨图、Wardley map、看板、用户旅程、部署、依赖图、UML 类、故事地图、数据库模式到极坐标等众多场景，每一类均提供三种静态变体：minimal light、minimal dark 与 full-editorial。
+- 用“比喻”理解 39 种类型：就像在一家餐厅，菜单上有 39 种“标准化做法”（牛排、意面、沙拉等），而同一道菜又有三种摆盘风格（简约浅盘、深盘、带注释的完整版）。你只需要说“给我来一份架构图”，Agent 就会自动选型、摆盘并上菜。
+### 2) 自包含 HTML + SVG，零依赖、易交付
+- 输出为单个 .html 文件，SVG 内联，没有 JS 依赖，没有外部图片，浏览器直接打开即可查看。没有构建步骤，不会出现“缺图”“样式散架”等问题。静态 HTML 仍为默认输出，同时支持可选的“可访问动效”用于按序解释。
+- 对比传统 Mermaid：Mermaid 更像是“草稿纸语法”，直接渲染经常出现文字折行异常、颜色组合不友好、暗色模式对比度不达标等问题；Diagram Design 则是“出版品质的版式”，真正可直接用于文档与幻灯片。
+### 3) 品牌自动适配（60 秒读取你的网站）
+- 你可以一句“onboard diagram-design to https://yoursite.com”，让 Agent 抓取首页，提取：
+  - 背景色（paper）、主文字色（ink）、次要文字（muted）、卡片/容器（paper-2）、品牌强调色（accent）；
+  - 标题、正文、代码的字体栈；
+  - 并在应用前自动检查 WCAG AA 对比度，不达标会给出调整建议。
+- 一旦“上船”，所有 39 种图表都会自动继承这些“语义化颜色/字体令牌”，而非写死的色值——改网站风格再也不用挨张图重调。对个人博客或公司品牌来说，这是巨大的时间节省与视觉一致性保障。
+### 4) 重绘 Mermaid / draw.io：不转译、而是“按新风格重画”
+- 项目明确指出：这是 redraw（重画），而非 render 或 convert（转译）。系统会：
+  - 解析 Mermaid/draw.io 的结构与关系；
+  - 按统一的“版式语法”与设计规则重新排版；
+  - 生成目标格式与细节等级，并给出“保真度账本”，告诉你哪些节点被合并/折叠了。
+- 这意味着你可以把历史图“无缝迁移”到新设计系统，尤其是在中文或多语言场景下，Mermaid 的换行与布局经常崩，而 diagram-design 可以一次重建结构、统一风格。
+### 5) 语义系统模式：行为与布局分离
+- v2.3 引入 semantic patterns，将“行为语义”与“视觉布局”解耦。例如队列、策略追踪、信任边界等模式可以映射到最接近的图表类型上，而不会因此爆炸式增加图表种类。这使得项目在类型数量上保持克制，同时又能覆盖复杂系统描述。
+### 6) 设计系统：克制而专业的编辑级规范
+- 核心原则包括：
+  - 一个强调色（accent），每张图只突出 1–2 个焦点；
+  - 三种字体角色：Instrument Serif（标题/标注）、Geist sans（节点名）、Geist Mono（技术标签）；
+  - 1px 细线边框、无阴影、圆角不大于 10px；
+  - 坐标、宽度、间隙都应能被 4 整除（4px 网格），避免“AI 感”的随意摆放；
+  - 目标信息密度约 4/10，不要把画布塞满。
+- 这些规则被写在 SKILL.md 与各类类型文档中，AI 会像“执行清单”一样遵守，使得不同时间、不同会话生成的图保持高度一致。
+### 7) 技术实现与工程质量（插件化 + CI）
+- 项目并非单体软件，而是插件化的“技能集合”，分别针对 Claude Code、Codex、Factory Droid、Pi 等 Agent 提供插件适配目录（.claude-plugin、.codex-plugin、.factory-plugin）。
+- 技能核心在 skills/diagram-design 目录下，包含：
+  - SKILL.md（技能主入口文档）；
+  - references/ 下的类型参考与语义原语（如 annotation、sketchy、terminal）；
+  - assets/ 中的示例与模板 HTML；
+  - scripts/ 下的提取脚本（drawio_extract.py、mermaid_extract.py）、自检、截图校验与 CI 检查器等。
+- CI 在 Linux、Windows、macOS 三个平台上运行，包含布局渲染检查（lint-render.py）、文档同步校验（verify-docs-sync.py）、自检逻辑测试等。整个流程旨在避免“产出裁切、内容错位、JS 报错、资源缺失”等问题，保证交付的静态文件健壮可查。
+---
+## 技术栈与架构解析
+- 技术栈：
+  - 主体为 HTML + SVG（图表输出）；
+  - 技能配置文档为 Markdown（SKILL.md、references/*.md）；
+  - 辅助脚本使用 Python（抽取、自检、CI 校验、截图生成、渲染验证）。
+- 架构设计要点：
+  - 技能入口（SKILL.md）作为“路由器”，让 Agent 只在需要时加载单个类型参考与必要的原语/导入逻辑，减少上下文噪声；
+  - 类型与原语（primitives）分离，可扩展性高：新增类型只需增加对应的参考文档，不破坏既有结构；
+  - 插件化适配层：同一套 skill 通过 manifest 与插件目录适配不同 Agent，保证“一套逻辑，多平台运行”。
+---
+## 上手门槛与部署体验
+### Claude Code：两命令即可装上插件市场版
+```bash
+/plugin marketplace add cathrynlavery/diagram-design
+/plugin install diagram-design@diagram-design
+```
+之后需在 /plugin → Marketplaces 中开启“自动更新”，并按提示 /reload-plugins。
+### 适用于“长期定制品牌”的克隆安装
+- 如果你要长期修改 style-guide 或品牌配置，官方推荐克隆后软链，以免插件更新覆盖本地改动：
+```bash
+git clone https://github.com/cathrynlavery/diagram-design.git ~/code/diagram-design
+ln -s ~/code/diagram-design/skills/diagram-design ~/.claude/skills/diagram-design
+```
+- Claude Code 重启后，skill 注册名为 diagram-design。Codex 等也有对应命令（见 README Install 段落）。
+### 可用性体验
+- 安装完成后，你可以直接用自然语言发出指令，例如：
+  - “帮我画一张系统架构图，包含前端、后端、PostgreSQL、Redis 缓存。”
+  - “把这份 Mermaid 流程图按我的品牌重画并输出为 HTML 与 PNG。”
+- 输出为单个 HTML 文件，双击离线打开，可导出 SVG 和 PNG（导出 PNG 需要额外安装 Playwright，使用其无头浏览器进行 raster 化）。
+---
+## 社区活跃度与生命力
+- 数据与趋势：
+  - GitHub 星标约 3 万，Fork 约 2k，显示极高的社区关注与采用度。统计页面显示约 134 条 commits，Issues 与 PR 数量较少且开放。项目的 README 清晰、文档结构完善（SKILL.md、类型参考、贡献指南、行为准则、安全策略、三方许可）。
+- 版本与迭代：
+  - README 中明确标注了 v2.0（Loop）、v2.3（语义模式、可选动效）、v2.5.10（新增 10 种布局语法）等版本变更；第三方榜单（周榜/日榜）也显示在 2026 年 8 月持续更新，维护节奏较稳定。
+- 开源协议：
+  - MIT License，可免费商用与修改，只需保留版权声明。对企业友好。
+---
+## 示例与触发：一句话让 Agent 动起来（供开发者直观感受）
+### 场景 A：首次使用（Claude Code）
+```bash
+/plugin marketplace add cathrynlavery/diagram-design
+/plugin install diagram-design@diagram-design
+```
+然后在对话中输入：
+```
+onboard diagram-design to https://yoursite.com
+```
+Agent 会抓取网站，给出颜色/字体差异预览，你确认后应用品牌令牌。之后即可：
+```
+“画一张应用架构图：前端、后端、PostgreSQL、Redis 缓存。”
+```
+生成 diagram.html，双击浏览器打开。
+### 场景 B：导入 Mermaid 并重绘（示例）
+```
+“把下面的 Mermaid 代码按照 diagram-design 的风格重画，输出为 HTML 和 SVG：”
+\`\`\`mermaid
+graph TD
+  A[用户] --> B[认证服务]
+  B --> C[业务服务]
+  C --> D[(数据库)]
+\`\`\`
+```
+Agent 会调用 type-flowchart（或其他合适的类型），并用你的品牌令牌渲染，生成 HTML/SVG。过程中你也能收到“保真度账本”，提示是否做了合并/折叠。
+---
+## 目标人群与收益
+- 最适合：
+  - 使用 Claude Code / Codex / Pi 等智能体进行技术文档、架构设计、PRD/用户旅程撰写、咨询材料制作者；
+  - 需要频繁产出“可直接发图”的架构/流程/时序/状态机/Gantt 等图的开发者与架构师；
+  - 拥有统一品牌站点或设计系统的内容团队与初创公司。
+- 收益：
+  - 省时间：把“从 Mermaid 草稿到可发布图”的半小时打磨缩短为一句话生成，特别适合高频产出；
+  - 品牌一致性：一次品牌 onboarding，所有图表自动继承配色/字体与对比度校验，避免风格杂乱；
+  - 可交付质量：静态 HTML+SVG、零依赖、无障碍友好（支持屏幕阅读、prefers-reduced-motion），可直接用于文档/幻灯片/网站；
+  - 可迁移性：能把存量 Mermaid/draw.io 图按新风格重画，降低迁移成本。
+---
+## 竞品/同类对比
+### Mermaid
+- 优点：生态成熟、语法简单、广泛集成在 Markdown/GitHub 等平台；
+- 缺点：视觉质量与布局稳定性不足，尤其在多语言与暗色模式下；需要手动调样式才能用于正式文档；
+- 与 diagram-design 的关系：diagram-design 可以“读 Mermaid、重画”，让你保留结构，但把视觉质量拉到出版级。
+### Draw.io / diagrams.net
+- 优点：交互式编辑器、能力全面、云/本地皆可用；
+- 缺点：需要手动调整排版、配色、字体；对团队设计规范依赖大，容易“风格跑偏”；
+- 与 diagram-design 的关系：可以把 draw.io 文件给 diagram-design 做一次“重绘统一风格”，适合存量资产迁移。
+### AI PPT/报表工具（各类“一键成片”“AI 自动选图表”的 SaaS）
+- 优点：强于数据报表、商业图表，通常带动效与模板市场；
+- 缺点：多为云端、订阅制、数据隐私与合规成本高；难以深入“系统架构/状态机/UML”等工程级图；
+- 定位差异：diagram-design 不做数据 BI，专注“系统与流程的可视化”，并与你的代码/文档工作流在本地/AI 编程助手内深度集成。
+---
+## 局限与不足（坦诚说明）
+- 生态绑定：目前主要面向 Claude Code、Codex、Factory Droid 与 Pi 等 Agent；如果你不用这些环境，很难直接享受其自动化能力；
+- 不是交互式编辑器：输出是静态的 HTML+SVG，若需微调，还是得改 HTML/SVG 或回 Figma/Draw.io；
+- 学习曲线在“调风格”阶段：若你想深度定制品牌令牌或新增类型，需要熟悉 SKILL.md、references/ 目录结构与 4px 网格等设计规则；
+- 部分语法/动效取舍：在导入 Mermaid/draw.io 时，部分样式指令会被丢弃（因为是重绘而非转译），这在希望“原样复刻”的场景下会成为限制；项目内置的“可选动效”用于按序解释，但静态仍是默认；
+- 社区与 Issue：Star 很多，但 Issue 与 PR 数量并不高，新用户可能需要先看文档、再尝试；此外，品牌 onboarding 依赖站点样式，如果你的站点 CSS 特别复杂或前端重度动态，提取可能不够稳健。
+---
+## 结语与行动建议
+### 终极评判
+Diagram Design 把“设计规范”变成了一种可编码、可复用、可自动执行的技能，让 AI 在画图这件事上，从“画个大概”进化到“按你的标准交付成品”。它不取代 Figma/Draw.io，而是成为“最后一公里”的收尾工具，把原本 30 分钟的视觉打磨压缩到一句自然语言 + 60 秒的品牌适配。对于 Claude Code/Codex 等智能体的重度用户，以及有统一品牌的内容团队，这是一份几乎必装的工具箱。
+### 行动建议
+- 如果你已经在用 Claude Code/Codex：
+  - 先用插件市场命令一键安装，尝试生成第一张图；再做品牌 onboarding，体验 60 秒适配；
+- 如果你需要长期维护品牌风格：
+  - 采用“克隆 + 软链”的安装方式，把 style-guide.md 与 profiles/ 放在自己的版本控制里，避免插件更新覆盖；
+- 如果你有大量 Mermaid/draw.io 存量图：
+  - 尝试用 diagram-design 重绘，关注“保真度账本”，评估迁移 ROI；
+- 如果你不用 Claude Code/Codex：
+  - 仍可将其设计规范与 HTML/SVG 模板当作静态资源复用，但自动化能力会打折扣。
+---
+## 参考与延伸阅读（有需要可深入）
+- GitHub 仓库与文档： cathrynlavery/diagram-design
+- 中文上手指南与功能详解：多篇 CSDN/技术社区实战指南，包含安装、品牌 onboarding、PNG 导出步骤与“什么时候别用它”的判断清单。
+- 实测案例（Mermaid 重绘、中文处理、日本语社区讨论）：Qiita 等社区分享了 Mermaid 导入后的效果与限制，强调了“redraw”的设计取舍与无障碍/安全性细节。

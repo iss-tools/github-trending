@@ -1,0 +1,227 @@
+# denoland/celld
+
+[GitHub URL](https://github.com/denoland/celld)
+
+
+## celld 深度评测：把 Cloudflare Workers/Durable Objects 从“厂商绑定”解放出来
+
+> celld 是 Deno 推出的开源工具，让你在自建服务器上运行 Cloudflare Workers 和 Durable Objects，实现数据主权与成本控制。
+
+- **Tags**: Deno, Durable Objects, Serverless, 开源, Rust
+- **Category**: 开发工具, 基础设施, Serverless
+
+## Details
+
+# celld 深度评测：把 Cloudflare Workers/Durable Objects 从“厂商绑定”解放出来，放到你自己的机器上跑
+## 一句话总结
+celld 是由 Deno 团队开源、用 Rust 编写的一个“可自托管、分布式的 Durable Objects 运行时”；它能把 Cloudflare Workers 与 Durable Objects 的代码几乎原封不动地迁到你自己的机器上跑，用你拥有的 S3 兼容对象存储做协调与持久化，帮你从厂商锁定中解套，并在规模化场景大幅压低成本。
+---
+## 背景与痛点：为什么需要 celld
+### Durable Objects：困在 Cloudflare 的“好东西”
+Durable Objects（DO）解决了 Serverless 经典的“状态在哪里”的难题：每个 DO 是一个有名字、有私有 SQLite 数据库、单线程执行的小服务器。它非常适合用来构建：
+- 聊天室、文档协作、多人游戏（每个房间一个对象，状态收敛在一处）
+- 分片 Web 应用（按用户/租户/设备分片）
+- 长连接、WebSocket 管理、定时闹钟等
+但它只跑在 Cloudflare 的专有云上。要迁到 AWS？要重写。要跑在自有机房？做不到。你与 Cloudflare 的生态紧耦合，五年期的架构风险显著上升。
+### Serverless 的另外两难：成本与可观测性
+- 在规模化时，Cloudflare DO 的“每对象计费”与“请求计费”会让账单线性放大，成本压力显著；而空闲对象在云上依然占有计费“份额”。
+- 出问题时，你通常只能依赖厂商的状态页，而不能直接看到节点上的 SQLite 文件、日志和租约记录，排查透明度有限。
+celld 正是在这两个痛点下诞生的：把 DO 这个“好原语”从单一厂商中“救出来”，交到你自己手中。
+---
+## 核心亮点与功能剖析
+### 1) 几乎“0 改动”兼容：Workers/DO 代码可直接迁移
+celld 的 JavaScript API 对齐 Cloudflare Workers 与 Durable Objects 的子集，你现有的 Worker/DO 代码，在多数情况下可以直接打包部署到 celld 上跑，而不用重写业务逻辑。
+兼容策略：
+- 支持 wrangler.toml 配置子集与 Worker 打包产物，`celld deploy` 能直接复用这些 bundle；部署需要环境中有 esbuild（纯静态资源项目则不需要）。
+- DO 的核心概念与生命周期（resident/hibernated/inactive 状态）都保持一致，代码逻辑无需大动。
+### 2) 架构设计精妙：用对象存储取代“共识层”
+celld 的“控制平面”就是一只对象存储桶（S3 / GCS / Azure Blob），节点之间不需要任何成员协议、故障检测器或共识服务：
+- 节点租约：用“条件写（compare-and-swap）”在桶里抢占一个 Cell 的所有权；若成功，则节点成为该 Cell 的当前主人；租约需不断续约，机器挂掉后租约自动过期，别的节点可接管。
+- 持久化：每个 Cell 对应一个 SQLite 文件，celld 把每个已提交的 SQLite 写事务捕获为 LTX（Litestream 的增量复制格式），并上传到桶里实现长期存储与恢复。
+- 仲裁：
+  - 单节点场景：每个写必须等待桶返回才算“持久化”（一次存储往返）。
+  - 多节点场景：节点先把写发到另一个节点落盘，再异步上传到桶，显著降低写入延迟。
+直观比喻：
+- 不要把 celld 想成一个“数据库集群”，更像是一群“带 SQLite 的小机器人”，它们每次抢活儿时都到“公告栏”（对象存储）上去挂一个条子；活儿干完就把日记（LTX 增量）贴回公告栏。
+### 3) 状态一致性与可用性保证：RPO=0
+celld 明确承诺“RPO=0”：一旦告诉你写入成功，则在节点崩溃后不会丢失这条写。实现方式：
+- 单节点：写先落桶再返回。
+- 多节点：写先发给一个对等节点落盘，再异步上传桶；返回时数据已至少存在于两个节点磁盘，保证了故障下的数据不丢。
+官网还给出了在区域本地桶下的实测指标（单节点写入约 90ms；多节点下可降到约 25ms），以及节点挂掉后约 20s 完成 Cell 接管。
+### 4) 成本与资源效率：规模化时省钱
+- 官网对比了“Cloudflare DO 收费 vs 自托管 8GB 节点（约 $48/月）”的成本模型，在规模增长时 celld 能带来数量级的成本优势（取决于流量/写入频率与桶计费）。
+- 内存占用极低：单个 resident Cell 仅约 0.47MB RAM；在一个 8GB 节点上可以驻留上千个 Cell；空闲 Cell 基本只产生对象存储的极少量操作费用。
+### 5) 运维与可观测性：证据全在你手里
+celld 把“证据”留在你自己的节点与桶上：
+- 你可以直接用 sqlite3 打开 Cell 对应的数据库文件，用 grep 看日志；租约记录、LTX 文件都在桶里可见，排查“某个 Cell 到底怎么了”不再是黑盒。 
+- 自带的运维命令：
+  - `celld diagnose --bucket ...`：对节点进行健康巡检，输出每个节点的 resident cell 数、WebSocket、RSS/CPU、文件描述符等粗粒度指标，并能识别过期/不安全/不可达 peer。
+  - `celld cell list --bucket ...`：列出所有 Durable Object 实例（Class:ID），支持按类过滤与 JSON 输出（每次查询最多 1000 条，可通过 `--after` 翻页或 `--all` 全量拉取）。
+  - `celld d1 migrations apply ...`、`celld kv bulk put ...`、`celld queue info/pause/resume ...`：让你像操作 Wrangler 生态那样管理 D1、KV、队列等资源。
+### 6) 安装与部署体验：二进制 + Docker 一键开始
+- 官方提供约 58MB 的静态可执行文件，一条命令即可安装；支持通过 GitHub Actions 的 attestation 进行来源校验 (`gh attestation verify`)。
+- Docker 镜像同时提供 Linux x86_64 与 ARM64，可搭配环境变量与卷持久化，快速启动一个节点。
+- 典型部署（以 S3 为例）：
+  - 部署 Worker 项目：
+    ```bash
+    celld deploy . --bucket s3://my-cells-bucket
+    ```
+  - 启动节点：
+    ```bash
+    celld --bucket s3://my-cells-bucket --listen 0.0.0.0:8080 \
+      --internal-listen 10.0.0.12:8081 --advertise 10.0.0.12:8081
+    ```
+  若用 Cloudflare R2，只需指定 `--endpoint` 即可；对 GCS（`gs://`）与 Azure Blob（`az://`）也分别给出了对应环境变量与命令示例。
+### 7) 多存储后端与云厂商中立
+- 支持 S3 兼容、Google Cloud Storage、Azure Blob Storage，并通过统一的“条件写 + 读后写一致性”要求对存储后端进行“合格性测试”。AWS S3、R2、GCS、Tigris、Azure Blob 明确“合格”；B2、Hetzner、DO Spaces 不符合；MinIO 社区版可以通过测试但未进入官方生产“资格名单”。
+- 桶支持 key 前缀，允许同一个桶承载多套 Fleet，只需在 `CELLD_BUCKET` 中指定 `s3://bucket-name/prefix` 即可。
+### 8) 社区与贡献政策：非常克制，但也意味着 PR 被关
+- 仓库明确说明“Pull requests are disabled”，理由是“编码代理太容易甩出低上下文的大改动，反而增加维护成本；建议把 patch 以 `git format-patch` 的形式发送邮件给维护者（ry@deno.com）”，并附上了贡献许可协议条款。
+- 这意味着社区通过 PR 贡献的路径被关闭，目前更接近“开放读、邮件补丁”的维护模式；生态插件与周边工具的发育速度可能受影响。
+---
+## 技术栈与架构解析（开源项目视角）
+- 语言与运行时：主体 Rust（67.5%），辅以少量 JavaScript 与 Shell；Apache-2.0 协议；以 GitHub Release 与 attestation 方式交付二进制。
+- 核心依赖：
+  - 内嵌 V8：执行 JavaScript Worker 代码；V8 隔离执行（Isolate），单线程事件循环语义保持与 Workers 一致。
+  - SQLite + LTX：每个 Cell 一个本地 SQLite 文件；写事务以 LTX 增量复制格式上传对象存储，便于恢复与增量同步。
+  - Tokio：异步运行时，处理大量并发连接与存储操作。
+- 代码与资源组织（从 crates 目录可见）：
+  - `crates/celld/protocol.rs`：定义部署、租约、Cell 元数据的格式，所有节点统一读 bucket 上的这些协议对象来发现 Owner 与 Peer。
+- 协议特点：
+  - Peer HTTP 用于节点间 RPC 和复制日志传输；`internal-listen` 与 `advertise` 要求运行在可信网络或加密覆盖网络（如 WireGuard/Tailscale），官方明确拒绝直接公开 IP（除非加 `--unsafe-public-advertise`）。
+- 资源控制：
+  - `CELLD_MAX_RESIDENT_CELLS`：限制节点上驻留 Cell 数量（默认 1000）。
+  - `CELLD_MAX_RSS_MB`：内存压力阈值（默认 80% 可用内存），达到后会“驱逐”最近最少使用的空闲 Cell，并在内存回落到 80% 阈值以下时恢复接收新 Cell。
+  - `CELLD_V8_HEAP_LIMIT_MB`：单个 Isolate 的 V8 堆上限（默认 128MB），与 Cloudflare DO 对齐；当超过 90% 时会拒绝新的 hibernatable WebSocket；当超过限制时将停止物化 SQL 结果集，直到回落到 75%。
+---
+## Demo / 核心代码示例（上手体验）
+### 快速开始（本地无桶）
+- 使用本地对象存储与本地 Worker 监听端口：
+  ```bash
+  celld dev  # 默认监听 http://127.0.0.1:9876
+  ```
+  - 状态保存在 `.celld/dev` 目录；支持文件变更时自动重建，若构建失败则保持当前应用继续运行。
+### 部署一个示例 Worker（counter）
+```bash
+# 需要先配置桶与认证（以 S3 为例）
+export CELLD_BUCKET=s3://my-cells-bucket
+export S3_ENDPOINT=...
+export AWS_ACCESS_KEY_ID=...
+export AWS_SECRET_ACCESS_KEY=...
+export AWS_REGION=auto
+# 从仓库示例部署
+git clone https://github.com/denoland/celld
+cd celld/examples/counter
+celld deploy . --bucket "$CELLD_BUCKET" --endpoint "$S3_ENDPOINT" --region "$AWS_REGION"
+```
+- 随后在每台机器上启动节点：
+  ```bash
+  celld --bucket "$CELLD_BUCKET" --listen 0.0.0.0:8080 \
+    --internal-listen 10.0.0.12:8081 --advertise node-a.internal:8081
+  ```
+- 容器化启动示例（配合 Docker volume 持久化）：
+  ```bash
+  docker volume create celld-state
+  docker run --rm --network host \
+    -e AWS_ACCESS_KEY_ID \
+    -e AWS_SECRET_ACCESS_KEY \
+    -e AWS_SESSION_TOKEN \
+    -e CELLD_WATCH=/var/lib/celld/state \
+    -v celld-state:/var/lib/celld \
+    ghcr.io/denoland/celld \
+    --bucket s3://my-cells-bucket \
+    --endpoint https://ACCOUNT.r2.cloudflarestorage.com \
+    --region auto \
+    --listen 0.0.0.0:8080 \
+    --internal-listen 10.0.0.12:8081 \
+    --advertise node-a.internal:8081
+  ```
+- 更多操作命令（示例）：
+  ```bash
+  celld diagnose --bucket s3://my-cells-bucket
+  celld cell list --bucket s3://my-cells-bucket
+  celld d1 migrations apply ledger --bucket s3://my-cells-bucket
+  celld kv bulk put sessions wrangler-export.json --bucket s3://my-cells-bucket
+  celld queue info jobs --bucket s3://my-cells-bucket
+  celld queue pause jobs --bucket s3://my-cells-bucket
+  celld queue resume jobs --bucket s3://my-cells-bucket
+  ```
+---
+## 目标人群与收益：谁应该关注，得到什么
+### 最适合的人群
+- 已经在使用或评估 Cloudflare Workers + Durable Objects，但希望：
+  - 控制成本、尤其是规模化时；
+  - 把数据放在自有存储（满足合规/数据主权要求）；
+  - 避免单一厂商锁定，实现多云或自托管迁移路径。
+- 想要构建“按对象分片”的有状态服务，但不愿维护一套复杂共识层（如 Raft/Paxos）的小团队或公司。
+### 具体收益
+- 成本收益：在规模化（多对象、高并发写、长连接）场景下，自托管节点 + 对象存储的总持有成本往往低于云平台“按对象+请求”的计费模型。
+- 架构自由度：同一套 Workers/DO 代码可以在不同云或自有基础设施间迁移，你只依赖标准 API 与 S3/GCS/Azure 这类“大宗”存储服务。 
+- 运维透明：你手里有 SQLite 文件、日志、租约记录；出问题时不必守着厂商状态页，可以自己排查。 
+- 生态复用：沿袭 Workers/DO 的开发经验与工具链（wrangler 配置、workers-types 类型定义），团队学习曲线低。 
+---
+## 竞品/同类对比：celld 在生态中的位置
+| 维度 | Cloudflare Durable Objects | celld | 自建 Raft + 自定义服务 |
+| --- | --- | --- | --- |
+| 部署位置 | Cloudflare 专有云 | 你自己的机器（多云/自有机房） | 完全自建 |
+| 数据持久化 | 云托管 SQLite（不可见） | SQLite + LTX，上传到你的对象存储 | 自己设计 |
+| 控制平面 | 云厂商封闭 | 对象存储（条件写），无共识协议 | 共识（Raft 等） |
+| API 一致性 | 官方第一手 | 兼容 Workers/DO API 子集 | 需自定 |
+| 计费模型 | 请求 + 对象数量计费 | 节点 + 存储计费（自控） | 完全自控 |
+| 成本与复杂度 | 低运维、高单价 | 中运维、较低单价 | 高运维、单价可控 |
+| 全球边缘能力 | 330+ PoP，低延迟优势 | 取决于你部署的区域与网络设计 | 你自己设计 |
+差异化竞争力：
+- celld 把“分布式协调”这个硬骨头转交给“成熟的对象存储”（S3/GCS/Azure），而自身只实现 Cell 级别的 SQLite 复制与租约逻辑；相比自己折腾 Raft，落地门槛更低。 
+- 与 Cloudflare DO 相比，celld 放弃了“全球边缘就近”的优势，换取成本可控与数据主权的主动权。
+---
+## 局限与不足：你必须知道的约束与风险
+- 产品阶段：目前仍处于早期（Alpha / 0.x 阶段），官方不建议将关键生产系统立即迁入；更适合实验与非关键业务，先积累运行经验。
+- 存储后端要求严格：只有部分存储服务满足“条件写 + 读后写一致性”要求；B2、Hetzner、DO Spaces 等明确不合格；MinIO 社区版需注意特定版本的问题。
+- 运维责任转移：原来由云厂商负责的节点可用性、租约管理、证书、加密通道等，现在需要你自己搞定：
+  - Peer HTTP 必须跑在可信内网或加密覆盖网络（WireGuard/Tailscale）上，不能直接暴露于公网。
+  - 你需要自己规划节点、网络与负载均衡策略。
+- 没有全球边缘：celld 不等同于 Cloudflare 的全球 PoP；如果你的业务非常依赖多地区低延迟接入，celld 需要你在多个区域自行部署节点并做好流量调度。
+- 贡献与生态：PR 被关闭，社区插件生态起步较晚；短期内周边工具和集成更多可能由官方主导或以独立项目形式生长。
+---
+## 上手门槛与部署体验（实战视角）
+- 安装：一条 `curl ... | sh` 就能拿到二进制，通过 `gh attestation verify` 校验来源，过程顺畅。
+- 文档：官网文档从“安装 → 存储配置 → 部署 → 启动节点 → 运维命令”都有明确步骤与示例，并清晰罗列了兼容/保证/限制/安全等页面入口。
+- 本地开发体验：`celld dev` 无需桶即可运行，状态保存在本地目录，文件变更时自动重建，适合快速迭代。 
+- 多节点扩容：只需在更多机器上启动 celld 进程并指向同一个桶，无需额外“加入集群”动作，节点通过桶互相发现；大大简化扩容流程。
+---
+## Demo / 核心代码示例（给开发者的直观感受）
+以下是最简部署和启动节点的示例（来自 README 与文档）：
+- 部署：
+  ```bash
+  celld deploy . --bucket s3://my-cells-bucket
+  ```
+- 启动节点：
+  ```bash
+  celld --bucket s3://my-cells-bucket --listen 0.0.0.0:8080 \
+    --internal-listen 10.0.0.12:8081 --advertise 10.0.0.12:8081
+  ```
+- 本地开发（无需桶）：
+  ```bash
+  celld dev
+  ```
+---
+## 社区活跃度与生命力
+- 发布后一度登上 GitHub Trending，Stars/Forks 增长迅速，说明社区对该话题兴趣高。
+- 但贡献方式以“邮件提交 patch”为主，PR 通道被关；短期内维护更像是“核心团队主导 + 社区试用反馈”的节奏。
+- 依赖生态目前较为“窄而深”：强绑定 Workers/DO 模型；对已经在该生态中的团队吸引力最大。
+---
+## 结语与行动建议
+### 终极评判
+celld 做了一件非常正确且不容易的事：把“Durable Objects”这个被云厂商独占的强力原语，用“对象存储 + SQLite + LTX + V8”的组合搬到了任何基础设施上，同时保持 RPO=0 的强一致性与低成本的规模化潜力。它不是要取代 Cloudflare 的全球边缘，而是给那些“需要数据主权、需要成本可控、愿意自己扛一点运维”的团队提供了一条务实的迁移与自托管路径。
+### 立即可行的行动建议
+- 如果你是：
+  - 已经在用 Workers/DO，且对厂商锁定和成本感到焦虑：不妨在一个非关键业务上试点迁移，跑一条 celld Fleet（两节点起步），验证性能与运维流程。
+  - 想尝试有状态 Serverless 但不想重写：直接按官方示例（如 counter）跑起 `celld dev`，把 DO 的“一个对象一个 SQLite”模型用在你的场景中（比如按用户分片的计数器、小聊天室）。
+  - 对基础设施敏感的团队：结合你现有的对象存储（S3/R2/GCS/Azure），先在测试环境把 celld 部署起来，用 `celld diagnose`、`celld cell list` 等命令熟悉可观测性与运维链路。
+- 需要注意：
+  - 留意文档中的“Limitations/Security/What celld guarantees”页面，明确它对存储后端、网络隔离与认证的硬要求，避免把敏感端口暴露到公网。
+  - 先不要把关键业务直接押上，等 1.x 稳定版并积累自己的压测与故障恢复经验后再扩大规模。
+### 参考与延伸阅读
+- 官方文档（含安装、存储配置、部署、运维与保证/限制/安全）：celld.dev/docs
+- GitHub 仓库与 README：denoland/celld
+- 媒体与社区对 celld 的背景解读与实测观点（供参考）：

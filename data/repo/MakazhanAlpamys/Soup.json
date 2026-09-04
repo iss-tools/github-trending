@@ -1,0 +1,75 @@
+{
+  "id": "299b649d-721a-4d24-b8c0-524294ed4cb8",
+  "url": "https://github.com/MakazhanAlpamys/Soup",
+  "domain": "github.com",
+  "repo": "MakazhanAlpamys/Soup",
+  "description": "Soup 是一个专注于本地大模型微调的工具，通过独创的层流式训练技术，大幅降低显存需求（4GB 也能跑 8B 模型）。它集成了数据处理、模型训练、评估、导出和部署等功能，只需一个 YAML 文件即可上手，非常适合追求隐私和成本控制的用户。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-04T11:42:15.804Z",
+  "metaData": {
+    "forks": "778",
+    "stars": "5204",
+    "topics": [
+      "cli",
+      "consumer-gpu",
+      "dpo",
+      "fine-tuning",
+      "gguf",
+      "huggingface",
+      "llm",
+      "llmops",
+      "local-ai",
+      "local-llm",
+      "lora",
+      "low-vram",
+      "machine-learning",
+      "ollama",
+      "peft",
+      "python",
+      "pytorch",
+      "qlora",
+      "sft",
+      "transformers"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://trysoup.dev",
+    "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. - MakazhanAlpamys/Soup"
+  },
+  "summaryData": {
+    "tags": [
+      "大模型",
+      "模型微调",
+      "低显存",
+      "CLI工具",
+      "开源"
+    ],
+    "cover": "",
+    "title": "Soup：本地大模型微调的一站式 CLI 工具",
+    "ability": [
+      "低显存微调",
+      "全流程自动化",
+      "多任务支持",
+      "数据工程治理",
+      "一键部署"
+    ],
+    "summary": "一条命令加 YAML 配置，让低显存设备也能轻松完成大模型微调、评估与部署的 CLI 工具。",
+    "category": [
+      "开发工具",
+      "AI 模型训练",
+      "DevOps"
+    ],
+    "suitable": [
+      "个人开发者",
+      "初创小团队",
+      "AI 研究者",
+      "数据科学家",
+      "大模型初学者"
+    ],
+    "description": "Soup 是一个专注于本地大模型微调的工具，通过独创的层流式训练技术，大幅降低显存需求（4GB 也能跑 8B 模型）。它集成了数据处理、模型训练、评估、导出和部署等功能，只需一个 YAML 文件即可上手，非常适合追求隐私和成本控制的用户。"
+  },
+  "contentDetail": "<|assistant|>我将点击“all measurements”，查看 Soup 官方整理的基准测试记录，以补充对性能、显存占用与稳定性的客观数据。</think>\n<|assistant|>我将点击 README 的“Docs”链接，查看详细的技术文档（尤其是 Layer Streaming、PEFT、性能、量化等），以支撑“技术栈与架构解析”和“核心亮点”部分。</think>\n<|assistant|>我将进入仓库的 Docs 页面，查找 Layer Streaming 与架构的更详细解释，用于技术原理与架构解析章节。</think>\n<|assistant|>我将点击“All measurements”链接，查看官方提供的基准测试条目与数值，以便更准确地描述性能与稳定性，并在评测中引用客观数据。</think>\n<|assistant|>我将进入 README 中“Docs”链接，查看 Layer Streaming 和架构的详细说明，以便在“技术原理与架构”章节进行准确解释。</think>\n<|assistant|>我将点击 README 中的“all measurements”，以查看官方提供的基准测试记录与可视化图表，从而在评测中准确引用客观数据。</think>\n抱歉，上一个“how it works”点击没有成功打开文档。我改为点击“all measurements”，查看官方的基准测试与测量记录，以获得性能与显存占用的客观数据。</think>\n抱歉，上一个“how it works”点击没有成功打开文档。我改为点击“all measurements”，查看官方的基准测试与测量记录，以获得性能与显存占用的客观数据。</think>\n抱歉，上一个点击“how it works”未成功跳转。我改为点击“all measurements”，查看官方基准测试条目与数据，以支撑性能与稳定性部分的评测。</think>\n我将点击 README 中的“All measurements”，获取官方基准测试与显存占用的测量记录，以支撑“性能与局限性”的客观描述。</think>\n我将点击 README 中的“All measurements”，查看官方整理的测量记录与基准测试数据，以便在评测中引用客观的性能和显存占用信息。</think>\n我将点击“All measurements”，查看官方发布的基准测试与显存测量记录，以支撑对性能与稳定性的客观描述。</think>\n我将点击“all measurements”，查看官方给出的基准测试与测量记录，以补充性能与显存占用的客观数据。</think>\n# Soup 深度评测\n## 一句话总结\n- 它是什么：**Soup = 一条命令 + 一份 YAML 就能把大模型微调、后训练、评估、导出、部署全做完的本地 CLI 工具链**。其核心是“层流式训练（Layer Streaming）”，实测在 4GB 笔记本 GPU 上就能微调 8B 模型（RTX 3050 Laptop 4GB，Llama-3.1-8B-Instruct + NF4，峰值 3.32 GB，119.6 tok/s；说明：该速度在 v0.72.2 测得，v0.73.0 做了正确性修复后有约 −4.8% 的速度损耗，且尚未在 4GB 卡上重新跑；官方说明也指出层流式训练当前仍为 BETA）。\n- 为什么值得关注：它把“训练大模型”从拼云 GPU、写脚本、调环境的专业门槛，压到“有 GPU 的个人开发者/小团队也能在家就能跑、能改、能发布”的水平，同时配套了数据工程、评估回归门、合规治理等企业级能力，是目前本地微调与后训练工作流的“瑞士军刀”。\n## 背景与痛点\n- 显存墙与成本墙：7B/8B 这类模型想用 LoRA 稳定微调，通常至少需要 16GB 显存起步，更别提 DPO 这类需要参考模型的偏好优化。普通笔记本根本扛不住，只能租云 GPU——按月按量计费，账单很快超过“试一试”的心理阈值。\n- 环境地狱：即使你有 GPU，要面对 CUDA 版本匹配、PyTorch/Transformers/PEFT/TRL 版本冲突、OOM 调参、多卡/分布式等一堆坑。官方 README 甚至直言：即便是熟练团队，也会把 30%–50% 的时间花在与基础设施较劲上，而不是改进模型本身。\n- 隐私与合规：把内部文档、用户对话、公司知识丢到云微调平台，存在数据出境与合规风险；很多团队干脆不训练，把通用模型当私有模型用，效果打折。\n- 流程碎片化：数据清洗/格式转换、多任务训练（SFT/DPO/GRPO/PPO/KTO/ORPO/SimPO/IPO/BCO）、模型评估、服务与导出、合规/物料清单（BOM）/审计，都散落在不同脚本与工具里，维护成本极高。\n## 核心亮点与功能剖析\n### 层流式训练（Layer Streaming）——为什么 4GB 就能训 8B\n- **原理（通俗版）**：就像搬家时只把“要改的那几件家具”搬进屋里，其余不动的先放楼道/车库，随用随取。Soup 把冻结的基座模型（frozen base）按逐层方式从主机内存或 NVMe 流式送入 GPU，只把 LoRA 适配器与少量激活留在显存里，把显存占用压到极低。官方解释为“keep the frozen base out of VRAM and feed it to the GPU one decoder layer at a time”，并配套“bit-exact”协议保证与常驻显存训练结果一致。\n- **实测数据与边界**：在 RTX 3050 Laptop 4GB 上，Llama-3.1-8B + NF4 + LoRA（batch=1，seq=512）峰值 3.32 GB，119.6 tok/s；该速度在 v0.72.2 测得，v0.73.0 做了正确性修复（向后兼容且改进了梯度正确性）后带来约 −4.8% 的速度损耗，且尚未在 4GB 卡上重新跑；层流式训练当前仍为 BETA，且默认不开启，需在配置中 `stream_layers: true` 显式打开。\n- **覆盖面**：v0.72.4 起将层流式能力扩展到偏好优化（DPO/ORPO/SimPO/KTO）；官方称使用“同一流式基座+关闭适配器”作为参考模型，实测内存约 0.914× SFT 峰值，对比强制加载第二份权重节省约 730MB；但时间成本会增加，DPO 每步读取层堆叠次数约为 1.52×。PPO/GRPO 仍在排除范围。\n- **性能与代价**：官方预印本指出，早前关于“瓶颈在主机到设备的传输”的推断被撤回——实际测量中，删除所有传输字节仅带来约 1.4% 提升，每步等待传输约 0.20%；真正的主要开销在于 NF4 逐层反量化（约 9.8%）。这意味着层流式训练并非“零成本”，但它确实把显存门槛压到了 4GB 的水平，且在相同显存占用下保持了吞吐。预印本也包含对 DeepSpeed 的对比，结论是八卡 ZeRO-3 反而比单卡常驻训练慢，提示“分片策略不是银弹”。\n### 一个 YAML，一条命令\n- **极简启动三步走**：`pip install \"soup-cli[train]\"` → `soup init --template chat` → `soup train`。绝大多数参数（批次、量化策略、设备检测等）自动推断，大幅减少样板代码与反复调参。\n- **最小可复现示例（Chat SFT）**：\n  - `soup.yaml` 示例（官方完整示例）：\n    ```yaml\n    base: meta-llama/Llama-3.1-8B-Instruct\n    task: sft\n    data:\n      train: ./data/train.jsonl\n      format: alpaca\n      val_split: 0.1\n    training:\n      epochs: 3\n      lr: 2e-5\n      batch_size: auto\n      lora:\n        r: 64\n        alpha: 16\n      quantization: 4bit\n    output: ./output\n    ```\n  - 训练与推理命令（开箱即用）：\n    ```bash\n    soup train --config soup.yaml\n    soup chat  --model ./output\n    soup push  --model ./output --repo you/my-model\n    soup merge  --adapter ./output\n    soup export --model ./output --format gguf --quant q4_k_m\n    ```\n### 多任务与后训练能力覆盖\n- **任务与方法**：支持 SFT、DPO/GRPO/PPO/KTO/ORPO/SimPO/IPO/BCO、工具调用、奖励模型（PRM）、预训练、蒸馏、分类、视觉/音频/TTS、遗忘（unlearning）、RAFT/RA-DIT、loop-hardening 探测器等；覆盖了现代后训练的主流与前沿范式。\n- **PEFT 与长上下文**：内置 DoRA、LoRA+、rsLoRA、VeRA、OLoRA、NEFTune、PiSSA、ReLoRA、LLaMA Pro、GaLore、YaRN/LongLoRA、packing、curriculum、auto-tuning 等选项。\n### 数据工程与治理（dbt for SFT）\n- **“dbt-for-SFT”风格**：v0.69.0 引入 `soup build`（数据构建）、`soup expect`（数据断言/质量门）、`soup data gen-magpie`、`soup data persona-mix`、`soup data brain-rot` 等命令，把数据清洗、混合、合成、检验做成第一类工程化流水线，改变“脚本 + 手工拼接”的旧模式。\n- **格式与来源**：支持 Alpaca、ShareGPT、ChatML、偏好对（DPO/ORPO/SimPO/IPO/KTO）、vision、audio、ASR、纯文本、embedding、RAFT 等，自动从 JSONL/JSON/CSV/Parquet/TXT 等格式识别；支持远程 URI、流式、分片与交错、词表扩展、文档摄入等。\n### 评估与回归门（soup ship）\n- **回归门**：`soup ship` 提供两段式评估（leg-1 任务指标，leg-2 回归检测），内置 7 个离线评测套件（MCQ、算术、工具调用、JSON 有效性、安全/拒绝等），对“任务指标提升但破坏通用能力”的情况给出 DON’T SHIP 判定；且可通过 `--push owner/repo#N` 把卡片直接推送到 PR。\n- **配套能力**：支持 A/B、Elo 竞技场、指标校准、漂移检测、可调性诊断、后训练 X-ray 探针等。\n### 导出、服务与治理\n- **导出与部署**：支持 GGUF（Ollama/llama.cpp）、ONNX、TensorRT、AWQ、GPTQ、BitNet 等多种导出目标；自带 OpenAI 兼容服务端与 Web UI，支持推测解码、部署自动巡航（deploy autopilot）、Agent Forge 等。\n- **治理与合规**：提供 HIPAA/SOC2/EU-AI-Act/SR-11-7 的 `init` 模板；支持 BOM、attestation、audit log、air-gap、模型卡自动生成（`soup card`）、CI gate（`soup ci init`）等合规与治理能力，适配受监管行业场景。\n### 开发者体验（DX）与可观测性\n- **命令矩阵**：常用命令覆盖完整闭环——`soup train`、`soup infer`、`soup chat`、`soup serve`、`soup merge`、`soup export`、`soup eval benchmark`、`soup data inspect`、`soup recipes list`、`soup autopilot`（零配置自动选择参数）、`soup doctor`（环境诊断）、`soup reward synth`（从参考输出合成奖励函数）等。\n- **诊断与调试**：`soup doctor` 一键检查 GPU、依赖、版本；`soup runs` 管理运行历史与状态；内置断言与日志、可复现证据（`--emit-evidence`、可提交的回归门策略）等。\n- **配置模式**：`config/schema.py` 作为单一真实来源，所有字段均有强类型约束；v0.75 起将拒绝“未知配置键”，避免因拼写错误导致配置静默失效。\n### 安全与执行治理\n- **MCP 执行控制**：`soup mcp serve --allow-execute` 提供服务器生成的单次确认令牌，绑定计划快照与受保护路径的内容摘要，避免“规划与执行之间模型被替换”这类 SSRF/投毒风险。\n- **修复案例**：针对 Windows 进程退出码与 STILL_ACTIVE(259) 冲突导致 liveness 判断错误的问题，进行了显式区分与统一封装，避免执行槽被永久占用。Apple Silicon 的 `quantization: 4bit` 曾被静默降级为 `none` 的问题也在新版中通过显式量化解析流程得到修复。\n### Docker 与多平台\n- 官方提供 Docker 镜像（GHCR），支持一键运行训练而无需本地安装 CUDA/PyTorch；支持 `docker compose` 集成。支持 Python 3.10–3.12，GPU（CUDA 推荐）、Apple Silicon（MPS）与 CPU（实验性，非常慢）。\n### 社区活跃与迭代\n- **版本节奏**：从 v0.73.3 到 v0.74.0，短短版本周期内包含数十项修复与改进；v0.73.3 所有 PR（24 个）均来自非维护者的贡献者，显示社区开始深度参与；v0.74.0 更是修复了“冻结基座一直被以 fp32 加载”的显存占坑问题，实测在 H100 上可将峰值显存从 48,241 MiB 压到 18,658 MiB（约 2.59×），且 120 个合并 PR 中有 116 个来自外部开发者。\n- **透明度**：官方文档与发布记录对“修了什么、为什么修、保留了哪些已知问题”写得非常细致，例如撤回预印本中不当推断、公开测量记录中的失败与废弃数据、明确层流式训练仍在 BETA 与未在 4GB 重新跑等，这种诚实与克制很难得。\n## 目标人群与收益\n- **最适合谁**：\n  - 个人开发者/极客：有 4–8GB 显存笔记本，想微调聊天/代码/垂直领域模型，不想在环境与云计费上浪费生命。\n  - 初创/小团队：需要快速验证产品（如本地客服、知识库问答、RAG + 模型适配），关注成本与隐私，无法承担专职 MLOps。\n  - 研究者/学生：需要复现 SFT/DPO 等基线，搭建自定义 pipeline，并希望把评测与治理做进流程。\n  - 企业合规与安全团队：需要审计日志、BOM、模型卡、air-gap 与 CI 门等治理能力，同时又不想被厂商绑定。\n- **你能得到的具体收益**：\n  - **成本省**：不再为每个 LoRA 实验租云 GPU；显存门槛压到 4GB，入门成本大幅降低。\n  - **时间省**：从“写 DataLoader → 调 batch → OOM 循环 → 多脚本串联”压缩成“改 YAML → 一条命令”；通过 `soup autopilot` 与自动 batch/量化检测进一步减少反复调参。\n  - **隐私与安全**：数据与模型训练都在本地/受控环境完成，配合 MCP 执行控制与文件摘要机制，降低模型投毒与 SSRF 风险。\n  - **质量与置信度**：`soup ship` 的回归门可防止“涨分但崩通用能力”的情况；内置多套离线评测与 drift 检测，让模型发布更可控。\n  - **工程化与治理**：数据工程流水线、配置 Schema 校验、BOM/attestation/模型卡/审计日志等一应俱全，适合建立可持续的模型迭代流程。\n## 竞品/同类对比\n- 与 Axolotl/LLaMA-Factory 等脚本式训练框架相比：Soup 更强调“单一 YAML + 统一 CLI”与层流式训练对显存的极致压榨，且有内置的回归门与治理能力；Axolotl 等生态成熟、插件多，但在显存极致压榨与治理上不如 Soup 聚焦。\n- 与 Unsloth 等加速后端相比：Soup 支持可选的 Unsloth 后端（`backend: unsloth`，需安装对应 extra），在追求速度时可获得 2–5× 提速；但 Soup 同时还做了流程层（数据、评测、导出、治理）的整合，形成一个完整闭环。二者可以结合使用。\n- 与 Ollama/llama.cpp 等推理工具相比：Soup 的重心在“训练/后训练”与“全流程”，而 Ollama/llama.cpp 更偏推理与部署；Soup 可以导出 GGUF 直接对接 Ollama/llama.cpp，形成“训-推”一体。\n## 局限与不足（客观陈述）\n- **硬件与兼容性**：\n  - 仅支持 Python 3.10–3.12，3.13+ 尚不支持（因为 PyTorch 生态未经验证）。\n  - Apple Silicon（MLX）路径存在已知挂起问题（如 #394 仍开放），并未完全稳定。\n- **BETA 功能与速度折损**：\n  - 层流式训练当前为 BETA，默认不开启；v0.73.0 做了正确性修复后带来约 −4.8% 的速度损耗（在 32B 上观测），且尚未在 4GB 卡上重新跑；对于极低显存场景是救命稻草，但追求吞吐/极致稳定时需谨慎评估。\n- **配置变更与迁移**：\n  - v0.75 起将拒绝“未知配置键”，现有配置若有拼写错误或遗留字段需提前清理；虽是好事，但升级需留意兼容性。\n- **学习曲线与抽象成本**：\n  - 想用好数据工程、评估门、治理、后端选择等进阶能力，仍需对训练流程与配置项有基本理解；新手可以从模板起步，但进阶需要读文档与实验。\n- **分布式与多卡场景**：\n  - 虽然文档提到 DeepSpeed/FSDP 等支持，但 README 的显存指南主要聚焦单卡场景；多卡与超大规模模型训练并非当前设计的“核心舒适区”。\n- **已知缺陷与未修复项**：\n  - Releases 明确列出若干已知问题（如 `data.interleave` 暂无训练时读取器、某些测试在负载下会 flaky 等），表明项目仍处于高速迭代与治理完善阶段。\n## 上手门槛与部署体验（针对 GitHub 项目）\n- 安装极简：支持分层的 pip extras（`train`、`all`、`fast`、`mlx`、`serve`、`eval`、`ui`、`vision`、`audio` 等），按需拉取依赖，避免臃肿。官方强调需用双引号安装（`\"soup-cli[train]\"`），兼容各平台 shell。\n- 配置向导：`soup init` 提供交互式向导与多模板（`chat`/`code`/`tool-calling`/`medical`/`reasoning`/`vision`/`kto`/`orpo`/`simpo`/`ipo`/`bco`/`rlhf`/`pretrain`/`moe`/`longcontext`/`embedding`/`audio` 等），降低冷启动门槛。\n- Docker 一键：提供 GHCR 镜像，支持 `docker run --gpus all ...` 与 `docker compose`，适合不想污染主机环境的用户。\n- 文档与可观测性：`config/schema.py` 为单一事实来源；Docs 覆盖训练、PEFT、性能与量化、数据工程、评估、服务与导出、适配器与注册表、合规与治理、后端与运维、命令参考、支持模型与 extras 矩阵等，结构清晰。\n## 技术栈与架构解析（简要）\n- 语言与框架：Python 为主，深度依赖 PyTorch 生态（torch、transformers、peft、trl、datasets 等）；提供多种后端（PyTorch/TRL、Unsloth、MLX）与量化策略（QAT、FP8、KV-cache、NVFP4、激活 offload 等）。\n- 架构要点：\n  - **配置驱动**：以 YAML 为单一入口，schema 校验 + 自动填充 + 历史重放（`train --replay`）保证可复现。\n  - **层流式执行**：通过显存外放 + 逐层加载 + LoRA 隔离，实现显存极低占用；伴随正确性协议与测量记录公开。\n  - **数据流水线**：支持多种格式自动检测、远程流、交错与混合、合成数据与质量打分。\n  - **评估与门控**：两层回归门与离线评测套件，防止“局部最优全局崩塌”。\n  - **治理与安全**：BOM/attestation、审计日志、air-gap、MCP 执行控制、Windows/Apple 等多平台适配与边界案例修复。\n## 社区活跃度与生命力\n- 版本发布频繁且内容扎实，每版都附带详细的变更、已知问题与贡献者列表。\n- v0.73.3 版本 24 个 PR 全部来自非维护者，v0.74.0 中 120 个合并 PR 有 116 个来自外部，显示社区开始贡献到核心功能与 bug 修复，项目生态与生命力良好。\n- Discord、Issues、Discussions 等渠道完善；贡献规范、安全报告、行为准则齐全。\n## 结语与行动建议\n- 终极评判：**Soup 把“微调大模型”从拼资源与拼运维的重活，变成“改 YAML + 一条命令”的轻量级工程实践；其在 4GB 显存上训练 8B 模型的能力是实打实的差异化亮点；同时配套了评估、治理、安全等企业级能力，是目前本地后训练工作流里少见的“一站式”解决方案。**\n- 行动建议（按场景）：\n  - **个人/小团队，首次上手**：从 `pip install \"soup-cli[train]\"` + `soup init --template chat` 开始，用小数据与 8B 模型跑通端到端，熟悉配置与 `soup doctor` 诊断。\n  - **需要极致显存**：在 `soup.yaml` 中显式开启 `stream_layers: true`，并关注 BETA 标记与官方测量记录；建议对照预印本了解适用范围与边界。\n  - **团队流水线**：把 `soup build`/`soup expect` 纳入数据工程，把 `soup ship` 纳入 CI/CD，用回归门守住上线质量。\n  - **合规与安全**：善用 BOM/attestation/模型卡/审计日志与 MCP 执行控制，建立可审计、可复现的模型迭代流程。\n- 风险提示：层流式训练仍在 BETA，升级前注意 changelog 与迁移说明；对关键生产场景，建议先在非生产环境做 A/B 与回归测试，再逐步切换。\n（完）",
+  "type": "project",
+  "dateAdded": "20260904"
+}

@@ -1,6 +1,531 @@
 {
   "all": [
     {
+      "id": "b83ab281-dd80-4862-a856-48527a5e0243",
+      "url": "https://github.com/denoland/celld",
+      "domain": "github.com",
+      "repo": "denoland/celld",
+      "description": "celld 是由 Deno 团队用 Rust 编写的开源项目，旨在解决 Cloudflare Durable Objects 的厂商锁定和高成本痛点。它允许你将 Workers/DO 代码几乎无改动地部署到自有机器，利用 S3 等对象存储协调状态，提供 RPO=0 的数据保证，是构建自托管、有状态 Serverless 应用的强力工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T12:01:11.932Z",
+      "metaData": {
+        "forks": "156",
+        "stars": "4464",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://celld.dev",
+        "description": "self-hosted, distributed Durable Objects. Contribute to denoland/celld development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Deno",
+          "Durable Objects",
+          "Serverless",
+          "开源",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "celld 深度评测：把 Cloudflare Workers/Durable Objects 从“厂商绑定”解放出来",
+        "ability": [
+          "兼容 Workers/DO 代码",
+          "对象存储持久化 SQLite",
+          "RPO=0 强一致性",
+          "低成本规模化部署",
+          "开放透明的运维诊断"
+        ],
+        "summary": "celld 是 Deno 推出的开源工具，让你在自建服务器上运行 Cloudflare Workers 和 Durable Objects，实现数据主权与成本控制。",
+        "category": [
+          "开发工具",
+          "基础设施",
+          "Serverless"
+        ],
+        "suitable": [
+          "Cloudflare Workers 用户",
+          "寻求摆脱云厂商绑定的开发者",
+          "需要自建 Serverless 的团队",
+          "关注数据存储合规的企业",
+          "后端架构师"
+        ],
+        "description": "celld 是由 Deno 团队用 Rust 编写的开源项目，旨在解决 Cloudflare Durable Objects 的厂商锁定和高成本痛点。它允许你将 Workers/DO 代码几乎无改动地部署到自有机器，利用 S3 等对象存储协调状态，提供 RPO=0 的数据保证，是构建自托管、有状态 Serverless 应用的强力工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "577df38b-4b76-451a-b42d-635f68a36ffe",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "domain": "github.com",
+      "repo": "PrimeIntellect-ai/prime-agent",
+      "description": "这是一个让 AI 在持久 Python 环境中写代码解决问题的工具，支持后台跑长任务、自我改进和跨模型调用，适合需要高可控性 AI 工作流的用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:52:08.664Z",
+      "metaData": {
+        "forks": "2171",
+        "stars": "19802",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks. - PrimeIntellect-ai/prime-agent"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI智能体",
+          "Python",
+          "自动化测试",
+          "长时程任务"
+        ],
+        "cover": "",
+        "title": "Prime Agent 深度评测：开源自编程 AI 智能体运行时",
+        "ability": [
+          "持久化 Python REPL 运行",
+          "长时程自主任务执行",
+          "多模型统一接入",
+          "技能与经验复用",
+          "后台守护进程"
+        ],
+        "summary": "一套把上下文变成变量、支持长时程任务与自我改进的开源 AI 编程智能体。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "自动化"
+        ],
+        "suitable": [
+          "需要复杂编码辅助的开发者",
+          "自动化评测研究团队",
+          "追求私有化部署的极客",
+          "多模型环境下的工程师"
+        ],
+        "description": "这是一个让 AI 在持久 Python 环境中写代码解决问题的工具，支持后台跑长任务、自我改进和跨模型调用，适合需要高可控性 AI 工作流的用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "3e27bb41-c305-493d-8240-a9730609b98c",
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "domain": "github.com",
+      "repo": "OpenWhispr/openwhispr",
+      "description": "OpenWhispr 是一款跨平台的开源桌面工具，支持 Whisper 等本地模型，提供全局语音听写、带说话人分离的实时会议记录及 AI 语音代理。它兼顾隐私保护与效率，并提供 API 供开发者深度集成。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:46:43.104Z",
+      "metaData": {
+        "forks": "894",
+        "stars": "6577",
+        "topics": [
+          "ai",
+          "anthropic",
+          "cross-platform",
+          "gemini",
+          "groq",
+          "linux",
+          "macos",
+          "nvidia",
+          "open-source",
+          "openai",
+          "parakeet",
+          "speech-to-text",
+          "transcribe",
+          "whisper",
+          "windows"
+        ],
+        "license": "MIT license",
+        "homepage": "https://openwhispr.com",
+        "description": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform. - OpenWhispr/openwhispr"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "语音转文字",
+          "会议助手",
+          "隐私保护",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "OpenWhispr：全能开源 AI 语音助手与会议记录工具深度评测",
+        "ability": [
+          "全局语音听写",
+          "本地/云端双模转录",
+          "AI 语音代理",
+          "实时会议记录",
+          "开发者 API 集成"
+        ],
+        "summary": "一款支持本地听写、AI 助理和会议记录的跨平台开源语音神器。",
+        "category": [
+          "生活效率",
+          "AI 应用",
+          "开发工具"
+        ],
+        "suitable": [
+          "文字创作者",
+          "会议频繁的职场人",
+          "隐私敏感用户",
+          "开发者",
+          "AI 效率工具爱好者"
+        ],
+        "description": "OpenWhispr 是一款跨平台的开源桌面工具，支持 Whisper 等本地模型，提供全局语音听写、带说话人分离的实时会议记录及 AI 语音代理。它兼顾隐私保护与效率，并提供 API 供开发者深度集成。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "299b649d-721a-4d24-b8c0-524294ed4cb8",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "domain": "github.com",
+      "repo": "MakazhanAlpamys/Soup",
+      "description": "Soup 是一个专注于本地大模型微调的工具，通过独创的层流式训练技术，大幅降低显存需求（4GB 也能跑 8B 模型）。它集成了数据处理、模型训练、评估、导出和部署等功能，只需一个 YAML 文件即可上手，非常适合追求隐私和成本控制的用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:42:15.804Z",
+      "metaData": {
+        "forks": "778",
+        "stars": "5204",
+        "topics": [
+          "cli",
+          "consumer-gpu",
+          "dpo",
+          "fine-tuning",
+          "gguf",
+          "huggingface",
+          "llm",
+          "llmops",
+          "local-ai",
+          "local-llm",
+          "lora",
+          "low-vram",
+          "machine-learning",
+          "ollama",
+          "peft",
+          "python",
+          "pytorch",
+          "qlora",
+          "sft",
+          "transformers"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://trysoup.dev",
+        "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. - MakazhanAlpamys/Soup"
+      },
+      "summaryData": {
+        "tags": [
+          "大模型",
+          "模型微调",
+          "低显存",
+          "CLI工具",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Soup：本地大模型微调的一站式 CLI 工具",
+        "ability": [
+          "低显存微调",
+          "全流程自动化",
+          "多任务支持",
+          "数据工程治理",
+          "一键部署"
+        ],
+        "summary": "一条命令加 YAML 配置，让低显存设备也能轻松完成大模型微调、评估与部署的 CLI 工具。",
+        "category": [
+          "开发工具",
+          "AI 模型训练",
+          "DevOps"
+        ],
+        "suitable": [
+          "个人开发者",
+          "初创小团队",
+          "AI 研究者",
+          "数据科学家",
+          "大模型初学者"
+        ],
+        "description": "Soup 是一个专注于本地大模型微调的工具，通过独创的层流式训练技术，大幅降低显存需求（4GB 也能跑 8B 模型）。它集成了数据处理、模型训练、评估、导出和部署等功能，只需一个 YAML 文件即可上手，非常适合追求隐私和成本控制的用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "7ec6ab48-bb74-4cfb-a8c2-a1c053561610",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "domain": "github.com",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:26:40.819Z",
+      "metaData": {
+        "forks": "1962",
+        "stars": "30517",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "921dddfc-4320-4e0c-9159-7d09180fe881",
+      "url": "https://github.com/clshortfuse/renodx",
+      "domain": "github.com",
+      "repo": "clshortfuse/renodx",
+      "description": "RenoDX 是一套基于 ReShade 的开源游戏渲染增强工具，深入渲染管线重写着色器，有效解决游戏 HDR 发白、色调映射不准等问题。它支持超 150 款主流游戏，并提供完善的开发工具，让玩家能自由定制专属画质。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:19:16.566Z",
+      "metaData": {
+        "forks": "136",
+        "stars": "3405",
+        "topics": [
+          "directx",
+          "games",
+          "hdr",
+          "mod"
+        ],
+        "license": "MIT license",
+        "homepage": "https://renodx.com/",
+        "description": "Renovation Engine for DirectX Games. Contribute to clshortfuse/renodx development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "画质增强",
+          "ReShade",
+          "HDR",
+          "游戏Mod",
+          "DirectX"
+        ],
+        "cover": "",
+        "title": "RenoDX：游戏画质增强引擎深度评测",
+        "ability": [
+          "着色器级画质修复",
+          "精准 HDR 校正",
+          "广泛游戏兼容性",
+          "模块化插件架构",
+          "开发者 DevKit 工具链"
+        ],
+        "summary": "基于 ReShade 的开源渲染引擎，通过重写着色器为游戏提供精准 HDR 修复与画质增强。",
+        "category": [
+          "游戏工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "追求极致画质的玩家",
+          "游戏 Mod 开发者",
+          "图形编程爱好者",
+          "HDR 显示器用户"
+        ],
+        "description": "RenoDX 是一套基于 ReShade 的开源游戏渲染增强工具，深入渲染管线重写着色器，有效解决游戏 HDR 发白、色调映射不准等问题。它支持超 150 款主流游戏，并提供完善的开发工具，让玩家能自由定制专属画质。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "d5593895-1d10-484b-8ab5-eb7f340820c7",
+      "url": "https://github.com/anomalyco/opencode",
+      "domain": "github.com",
+      "repo": "anomalyco/opencode",
+      "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:13:49.576Z",
+      "metaData": {
+        "forks": "26586",
+        "stars": "203734",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "b3e1a8d5-ea2e-4b90-8694-ea714c71f022",
+      "url": "https://github.com/radixark/miles",
+      "domain": "github.com",
+      "repo": "radixark/miles",
+      "description": "Miles是RadixArk（SGLang团队）开源的生产级RL框架，支持MoE、低精度、异步训练等高级特性，解决大模型强化学习在生产环境中的稳定性和成本问题，适合大规模模型后训练与复杂智能体开发。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:08:06.642Z",
+      "metaData": {
+        "forks": "438",
+        "stars": "2465",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://miles.radixark.com",
+        "description": "Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime. - radixark/miles"
+      },
+      "summaryData": {
+        "tags": [
+          "RLHF",
+          "大模型训练",
+          "MoE",
+          "异步训练",
+          "智能体"
+        ],
+        "cover": "",
+        "title": "Miles：面向大模型生产级强化学习的训练框架",
+        "ability": [
+          "统一低精度训练",
+          "MoE模型训练稳定化",
+          "异步训练与权重同步",
+          "智能体工作流支持",
+          "训练-推理一致性保证"
+        ],
+        "summary": "一套面向大模型与视觉模型后训练的生产级强化学习框架，通过系统工程解决大规模RL的稳定、可控与成本痛点。",
+        "category": [
+          "开发工具",
+          "AI训练",
+          "开源框架"
+        ],
+        "suitable": [
+          "企业与研究团队",
+          "智能体研发者",
+          "系统基础设施工程师",
+          "大模型训练工程师",
+          "资源充足的AI开发者"
+        ],
+        "description": "Miles是RadixArk（SGLang团队）开源的生产级RL框架，支持MoE、低精度、异步训练等高级特性，解决大模型强化学习在生产环境中的稳定性和成本问题，适合大规模模型后训练与复杂智能体开发。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
+      "id": "1762356b-2140-4923-8805-c8f66ec5c6b0",
+      "url": "https://github.com/bikini/exploitarium",
+      "domain": "github.com",
+      "repo": "bikini/exploitarium",
+      "description": "exploitarium 是一个集中归档公开漏洞 PoC 的 GitHub 仓库，覆盖 OpenVPN、FFmpeg、Docker 等常见软件。每个漏洞条目包含完整的研究附件、复现步骤和修复建议，是学习真实漏洞利用与防御的实战教材，但需在授权环境下使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T11:03:10.266Z",
+      "metaData": {
+        "forks": "1234",
+        "stars": "4380",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way. - bikini/exploitarium"
+      },
+      "summaryData": {
+        "tags": [
+          "漏洞利用",
+          "安全研究",
+          "PoC",
+          "渗透测试",
+          "开源安全"
+        ],
+        "cover": "",
+        "title": "exploitarium 开源 PoC 资料库评测",
+        "ability": [
+          "提供真实漏洞 PoC 代码",
+          "展示漏洞根因与修复建议",
+          "包含工程化复现脚本",
+          "覆盖多种开源组件漏洞",
+          "提供 AI 辅助的模糊测试流程"
+        ],
+        "summary": "收录真实漏洞利用代码的安全研究资料库，适合授权环境下的漏洞分析与防御演练。",
+        "category": [
+          "网络安全",
+          "开发工具",
+          "学习资源"
+        ],
+        "suitable": [
+          "渗透测试工程师",
+          "安全运维人员",
+          "漏洞研究者",
+          "CTF 玩家",
+          "开源维护者"
+        ],
+        "description": "exploitarium 是一个集中归档公开漏洞 PoC 的 GitHub 仓库，覆盖 OpenVPN、FFmpeg、Docker 等常见软件。每个漏洞条目包含完整的研究附件、复现步骤和修复建议，是学习真实漏洞利用与防御的实战教材，但需在授权环境下使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
       "id": "dfc4f741-3885-485b-b1a8-eb5b874ed8a9",
       "url": "https://github.com/xai-org/x-algorithm",
       "domain": "github.com",
@@ -11,8 +536,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
-        "forks": "5360",
-        "stars": "32615",
+        "forks": "5358",
+        "stars": "32625",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -65,7 +590,7 @@
       "createdAt": "2026-09-03T11:44:12.644Z",
       "metaData": {
         "forks": "654",
-        "stars": "4958",
+        "stars": "4964",
         "topics": [
           "ai",
           "ast",
@@ -138,8 +663,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
-        "forks": "1126",
-        "stars": "9592",
+        "forks": "1129",
+        "stars": "9601",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -190,8 +715,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25217",
-        "stars": "281560",
+        "forks": "25221",
+        "stars": "281591",
         "topics": [
           "ai",
           "brainstorming",
@@ -252,8 +777,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:19:41.218Z",
       "metaData": {
-        "forks": "21773",
-        "stars": "169219",
+        "forks": "21774",
+        "stars": "169246",
         "topics": [
           "ai",
           "artificial-intelligence",
@@ -325,7 +850,7 @@
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
         "forks": "150",
-        "stars": "2106",
+        "stars": "2151",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -377,8 +902,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:10:17.341Z",
       "metaData": {
-        "forks": "9838",
-        "stars": "88588",
+        "forks": "9839",
+        "stars": "88618",
         "topics": [
           "aws",
           "cloud-computing",
@@ -440,8 +965,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:06:52.468Z",
       "metaData": {
-        "forks": "8506",
-        "stars": "52518",
+        "forks": "8511",
+        "stars": "52599",
         "topics": [
           "brook",
           "daze",
@@ -502,8 +1027,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
-        "forks": "20613",
-        "stars": "173826",
+        "forks": "20616",
+        "stars": "173902",
         "topics": [
           "agent-skills"
         ],
@@ -558,7 +1083,7 @@
       "createdAt": "2026-09-02T12:59:27.433Z",
       "metaData": {
         "forks": "503",
-        "stars": "9005",
+        "stars": "9013",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -610,8 +1135,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1346",
-        "stars": "11912",
+        "forks": "1348",
+        "stars": "11945",
         "topics": [
           "agent-memory",
           "ai",
@@ -733,8 +1258,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "5997",
-        "stars": "103258",
+        "forks": "6000",
+        "stars": "103356",
         "topics": [
           "ai",
           "anthropic",
@@ -797,8 +1322,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3572",
-        "stars": "41903",
+        "forks": "3579",
+        "stars": "42127",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -1232,8 +1757,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "2944",
-        "stars": "30842",
+        "forks": "2945",
+        "stars": "30886",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -1286,7 +1811,7 @@
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
         "forks": "3025",
-        "stars": "25335",
+        "stars": "25399",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -1351,8 +1876,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
-        "forks": "148",
-        "stars": "2023",
+        "forks": "149",
+        "stars": "2032",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -1418,8 +1943,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:12:09.537Z",
       "metaData": {
-        "forks": "1560",
-        "stars": "19433",
+        "forks": "1561",
+        "stars": "19453",
         "topics": [
           "google",
           "googlecloud",
@@ -1539,7 +2064,7 @@
       "createdAt": "2026-09-01T12:04:50.467Z",
       "metaData": {
         "forks": "500",
-        "stars": "5584",
+        "stars": "5591",
         "topics": [
           "agent-control-plane",
           "agent-harness",
@@ -1603,8 +2128,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
-        "forks": "9028",
-        "stars": "32462",
+        "forks": "9030",
+        "stars": "32493",
         "topics": [
           "ai",
           "ai-agent",
@@ -1662,8 +2187,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:27:49.507Z",
       "metaData": {
-        "forks": "1377",
-        "stars": "8600",
+        "forks": "1381",
+        "stars": "8655",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1831,8 +2356,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:15:10.644Z",
       "metaData": {
-        "forks": "7637",
-        "stars": "92941",
+        "forks": "7641",
+        "stars": "93020",
         "topics": [
           "3b1b-videos",
           "animation",
@@ -1889,8 +2414,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2245",
-        "stars": "16834",
+        "forks": "2248",
+        "stars": "16990",
         "topics": [
           "ai",
           "audiobook",
@@ -2025,7 +2550,7 @@
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
         "forks": "3615",
-        "stars": "46159",
+        "stars": "46177",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -2138,8 +2663,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7588",
-        "stars": "58371",
+        "forks": "7592",
+        "stars": "58411",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -2316,8 +2841,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
-        "forks": "2173",
-        "stars": "43823",
+        "forks": "2172",
+        "stars": "43826",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -2423,8 +2948,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "802",
-        "stars": "7297",
+        "forks": "805",
+        "stars": "7321",
         "topics": [
           "chinese",
           "disclosure",
@@ -2593,8 +3118,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15603",
-        "stars": "94053",
+        "forks": "15609",
+        "stars": "94077",
         "topics": [
           "ai",
           "mcp"
@@ -2650,7 +3175,7 @@
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
         "forks": "908",
-        "stars": "10826",
+        "stars": "10834",
         "topics": [
           "apple",
           "appstore",
@@ -2845,8 +3370,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1300",
-        "stars": "9921",
+        "forks": "1346",
+        "stars": "10405",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2898,8 +3423,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5162",
-        "stars": "31253",
+        "forks": "5164",
+        "stars": "31304",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2951,8 +3476,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "3993",
-        "stars": "37839",
+        "forks": "3997",
+        "stars": "37883",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -3135,8 +3660,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "9822",
-        "stars": "92155",
+        "forks": "9823",
+        "stars": "92163",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -3325,8 +3850,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3359",
-        "stars": "30363",
+        "forks": "3361",
+        "stars": "30380",
         "topics": [
           "abliteration",
           "llm",
@@ -3382,8 +3907,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2077",
-        "stars": "16795",
+        "forks": "2086",
+        "stars": "16845",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -3620,8 +4145,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3560",
-        "stars": "50772",
+        "forks": "3568",
+        "stars": "50883",
         "topics": [
           "browser",
           "chrome",
@@ -3791,8 +4316,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9439",
-        "stars": "77537",
+        "forks": "9441",
+        "stars": "77565",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -3896,8 +4421,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "3457",
-        "stars": "17159",
+        "forks": "3472",
+        "stars": "17226",
         "topics": [
           "3d-globe",
           "cesium",
@@ -4523,8 +5048,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:08:28.168Z",
       "metaData": {
-        "forks": "87",
-        "stars": "3139",
+        "forks": "88",
+        "stars": "3150",
         "topics": [
           "ai-agents",
           "coding-agent",
@@ -4765,8 +5290,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3891",
-        "stars": "42492",
+        "forks": "3892",
+        "stars": "42524",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -4957,8 +5482,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3015",
-        "stars": "46827",
+        "forks": "3040",
+        "stars": "47083",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -5155,8 +5680,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6693",
-        "stars": "123999",
+        "forks": "6706",
+        "stars": "124340",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -5388,8 +5913,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3296",
-        "stars": "24199",
+        "forks": "3299",
+        "stars": "24210",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -5441,8 +5966,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9078",
-        "stars": "52359",
+        "forks": "9087",
+        "stars": "52370",
         "topics": [
           "agents",
           "ai",
@@ -6492,7 +7017,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "258",
-        "stars": "3374",
+        "stars": "3385",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6789,8 +7314,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2414",
-        "stars": "25891",
+        "forks": "2413",
+        "stars": "25903",
         "topics": [
           "agent",
           "ai-agent",
@@ -7212,8 +7737,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49412",
-        "stars": "241084",
+        "forks": "49439",
+        "stars": "241207",
         "topics": [
           "ai",
           "ai-agent",
@@ -7457,8 +7982,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "369",
-        "stars": "5380",
+        "forks": "401",
+        "stars": "5681",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -7508,8 +8033,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3145",
-        "stars": "29528",
+        "forks": "3146",
+        "stars": "29534",
         "topics": [
           "ai",
           "language",
@@ -7629,8 +8154,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "441",
-        "stars": "4668",
+        "forks": "445",
+        "stars": "4682",
         "topics": [
           "agent-runtime",
           "ai",
@@ -7649,7 +8174,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "",
-        "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log. - apache/maka"
+        "description": "Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete record of everything it did. - apache/maka"
       },
       "summaryData": {
         "tags": [
@@ -7816,8 +8341,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21032",
-        "stars": "248275",
+        "forks": "21068",
+        "stars": "248796",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -7867,8 +8392,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2708",
-        "stars": "35412",
+        "forks": "2709",
+        "stars": "35442",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -8120,8 +8645,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37307",
-        "stars": "247540",
+        "forks": "37341",
+        "stars": "247781",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -8181,8 +8706,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2688",
-        "stars": "27902",
+        "forks": "2692",
+        "stars": "27951",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -8244,8 +8769,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "573",
-        "stars": "19013",
+        "forks": "574",
+        "stars": "19090",
         "topics": [
           "dpi",
           "gpui",
@@ -8310,8 +8835,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "657",
-        "stars": "10215",
+        "forks": "658",
+        "stars": "10234",
         "topics": [
           "cactus",
           "gemini",
@@ -8394,8 +8919,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "561",
-        "stars": "6817",
+        "forks": "562",
+        "stars": "6820",
         "topics": [],
         "license": "",
         "homepage": "",
