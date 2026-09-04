@@ -1,6 +1,59 @@
 {
   "all": [
     {
+      "id": "dfc4f741-3885-485b-b1a8-eb5b874ed8a9",
+      "url": "https://github.com/xai-org/x-algorithm",
+      "domain": "github.com",
+      "repo": "xai-org/x-algorithm",
+      "description": "这是 X (原 Twitter) 官方托管的开源仓库，完整公开了推荐系统的核心代码，包括基于 Transformer 的 Phoenix 排序模型、召回系统、过滤规则和安全模块。使用 Rust + Python 技术栈重写，支持 Apache-2.0 协议商用复用，是超大规模推荐系统的教科书式范例。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-04T04:04:32.931Z",
+      "metaData": {
+        "forks": "5358",
+        "stars": "32599",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Algorithm powering the For You feed on X. Contribute to xai-org/x-algorithm development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "推荐算法",
+          "Rust",
+          "JAX",
+          "Twitter",
+          "Apache 2.0"
+        ],
+        "cover": "",
+        "title": "X 官方推荐算法开源项目深度评测",
+        "ability": [
+          "端到端推荐流水线",
+          "Phoenix 排序模型",
+          "可见性过滤系统",
+          "内容理解与安全",
+          "参数化实验框架"
+        ],
+        "summary": "X 官方开源完整推荐系统流水线代码，含召回、排序、过滤等核心模块",
+        "category": [
+          "推荐系统",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "推荐算法工程师",
+          "产品运营人员",
+          "研究者",
+          "监管机构",
+          "创作者与营销团队"
+        ],
+        "description": "这是 X (原 Twitter) 官方托管的开源仓库，完整公开了推荐系统的核心代码，包括基于 Transformer 的 Phoenix 排序模型、召回系统、过滤规则和安全模块。使用 Rust + Python 技术栈重写，支持 Apache-2.0 协议商用复用，是超大规模推荐系统的教科书式范例。"
+      },
+      "type": "project",
+      "dateAdded": "20260904"
+    },
+    {
       "id": "bfc36ecd-33e9-4f95-8a7a-2d58f3c64d51",
       "url": "https://github.com/vitali87/code-graph-rag",
       "domain": "github.com",
@@ -12,7 +65,7 @@
       "createdAt": "2026-09-03T11:44:12.644Z",
       "metaData": {
         "forks": "653",
-        "stars": "4939",
+        "stars": "4947",
         "topics": [
           "ai",
           "ast",
@@ -85,8 +138,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
-        "forks": "1123",
-        "stars": "9557",
+        "forks": "1126",
+        "stars": "9582",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -137,8 +190,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25203",
-        "stars": "281340",
+        "forks": "25210",
+        "stars": "281416",
         "topics": [
           "ai",
           "brainstorming",
@@ -199,8 +252,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:19:41.218Z",
       "metaData": {
-        "forks": "21763",
-        "stars": "168995",
+        "forks": "21768",
+        "stars": "169081",
         "topics": [
           "ai",
           "artificial-intelligence",
@@ -271,8 +324,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "142",
-        "stars": "1950",
+        "forks": "144",
+        "stars": "2015",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -324,8 +377,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:10:17.341Z",
       "metaData": {
-        "forks": "9822",
-        "stars": "88340",
+        "forks": "9825",
+        "stars": "88436",
         "topics": [
           "aws",
           "cloud-computing",
@@ -387,8 +440,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:06:52.468Z",
       "metaData": {
-        "forks": "8472",
-        "stars": "52155",
+        "forks": "8489",
+        "stars": "52346",
         "topics": [
           "brook",
           "daze",
@@ -449,8 +502,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
-        "forks": "20605",
-        "stars": "173651",
+        "forks": "20608",
+        "stars": "173728",
         "topics": [
           "agent-skills"
         ],
@@ -505,7 +558,7 @@
       "createdAt": "2026-09-02T12:59:27.433Z",
       "metaData": {
         "forks": "502",
-        "stars": "8971",
+        "stars": "8987",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -557,8 +610,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1331",
-        "stars": "11853",
+        "forks": "1341",
+        "stars": "11887",
         "topics": [
           "agent-memory",
           "ai",
@@ -680,8 +733,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "5994",
-        "stars": "103102",
+        "forks": "5996",
+        "stars": "103168",
         "topics": [
           "ai",
           "anthropic",
@@ -744,8 +797,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3549",
-        "stars": "41481",
+        "forks": "3560",
+        "stars": "41665",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -1179,8 +1232,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "2930",
-        "stars": "30700",
+        "forks": "2937",
+        "stars": "30758",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -1232,8 +1285,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3016",
-        "stars": "25106",
+        "forks": "3018",
+        "stars": "25178",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -1298,8 +1351,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
-        "forks": "147",
-        "stars": "1999",
+        "forks": "148",
+        "stars": "2014",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -1365,8 +1418,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:12:09.537Z",
       "metaData": {
-        "forks": "1556",
-        "stars": "19377",
+        "forks": "1560",
+        "stars": "19415",
         "topics": [
           "google",
           "googlecloud",
@@ -1485,8 +1538,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:04:50.467Z",
       "metaData": {
-        "forks": "492",
-        "stars": "5545",
+        "forks": "496",
+        "stars": "5570",
         "topics": [
           "agent-control-plane",
           "agent-harness",
@@ -1550,8 +1603,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
-        "forks": "9018",
-        "stars": "32345",
+        "forks": "9019",
+        "stars": "32389",
         "topics": [
           "ai",
           "ai-agent",
@@ -1609,8 +1662,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:27:49.507Z",
       "metaData": {
-        "forks": "1363",
-        "stars": "8368",
+        "forks": "1369",
+        "stars": "8462",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1836,8 +1889,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2206",
-        "stars": "16278",
+        "forks": "2223",
+        "stars": "16454",
         "topics": [
           "ai",
           "audiobook",
@@ -1971,8 +2024,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3603",
-        "stars": "45991",
+        "forks": "3608",
+        "stars": "46042",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -2085,8 +2138,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7565",
-        "stars": "58206",
+        "forks": "7573",
+        "stars": "58293",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -2264,7 +2317,7 @@
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
         "forks": "2173",
-        "stars": "43807",
+        "stars": "43819",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -2370,8 +2423,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "793",
-        "stars": "7191",
+        "forks": "798",
+        "stars": "7241",
         "topics": [
           "chinese",
           "disclosure",
@@ -2540,8 +2593,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15571",
-        "stars": "93986",
+        "forks": "15590",
+        "stars": "94031",
         "topics": [
           "ai",
           "mcp"
@@ -2596,8 +2649,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
-        "forks": "906",
-        "stars": "10789",
+        "forks": "908",
+        "stars": "10808",
         "topics": [
           "apple",
           "appstore",
@@ -2845,8 +2898,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5130",
-        "stars": "31000",
+        "forks": "5147",
+        "stars": "31131",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2898,8 +2951,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "3961",
-        "stars": "37658",
+        "forks": "3980",
+        "stars": "37770",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -3082,8 +3135,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "9812",
-        "stars": "92032",
+        "forks": "9813",
+        "stars": "92074",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -3272,8 +3325,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:39:14.397Z",
       "metaData": {
-        "forks": "3350",
-        "stars": "30283",
+        "forks": "3355",
+        "stars": "30335",
         "topics": [
           "abliteration",
           "llm",
@@ -3329,8 +3382,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2049",
-        "stars": "16616",
+        "forks": "2064",
+        "stars": "16705",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -3738,8 +3791,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:08:07.908Z",
       "metaData": {
-        "forks": "9426",
-        "stars": "77378",
+        "forks": "9436",
+        "stars": "77470",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://screenshottocode.com",
@@ -3843,8 +3896,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "3380",
-        "stars": "16855",
+        "forks": "3417",
+        "stars": "17021",
         "topics": [
           "3d-globe",
           "cesium",
@@ -4470,8 +4523,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:08:28.168Z",
       "metaData": {
-        "forks": "86",
-        "stars": "3096",
+        "forks": "87",
+        "stars": "3122",
         "topics": [
           "ai-agents",
           "coding-agent",
@@ -4529,8 +4582,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:04:17.051Z",
       "metaData": {
-        "forks": "1291",
-        "stars": "14092",
+        "forks": "1295",
+        "stars": "14097",
         "topics": [
           "nim",
           "privacy",
@@ -4712,8 +4765,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3884",
-        "stars": "42344",
+        "forks": "3889",
+        "stars": "42431",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -4904,8 +4957,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "2921",
-        "stars": "45522",
+        "forks": "2964",
+        "stars": "46215",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -5102,8 +5155,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6671",
-        "stars": "123432",
+        "forks": "6682",
+        "stars": "123683",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -5335,8 +5388,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3277",
-        "stars": "24076",
+        "forks": "3286",
+        "stars": "24146",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -5388,8 +5441,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9050",
-        "stars": "52252",
+        "forks": "9059",
+        "stars": "52314",
         "topics": [
           "agents",
           "ai",
@@ -6438,8 +6491,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "256",
-        "stars": "3341",
+        "forks": "257",
+        "stars": "3363",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6736,8 +6789,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:33:23.274Z",
       "metaData": {
-        "forks": "2409",
-        "stars": "25831",
+        "forks": "2414",
+        "stars": "25867",
         "topics": [
           "agent",
           "ai-agent",
@@ -7159,8 +7212,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49348",
-        "stars": "240843",
+        "forks": "49379",
+        "stars": "240945",
         "topics": [
           "ai",
           "ai-agent",
@@ -7455,8 +7508,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3142",
-        "stars": "29512",
+        "forks": "3144",
+        "stars": "29525",
         "topics": [
           "ai",
           "language",
@@ -7576,8 +7629,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "433",
-        "stars": "4642",
+        "forks": "438",
+        "stars": "4659",
         "topics": [
           "agent-runtime",
           "ai",
@@ -7763,8 +7816,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "20974",
-        "stars": "247407",
+        "forks": "21006",
+        "stars": "247771",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -7814,8 +7867,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2706",
-        "stars": "35337",
+        "forks": "2708",
+        "stars": "35385",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -8067,8 +8120,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37250",
-        "stars": "247194",
+        "forks": "37271",
+        "stars": "247319",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -8128,8 +8181,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2682",
-        "stars": "27717",
+        "forks": "2683",
+        "stars": "27797",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -8191,8 +8244,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "568",
-        "stars": "18738",
+        "forks": "571",
+        "stars": "18948",
         "topics": [
           "dpi",
           "gpui",
@@ -8258,7 +8311,7 @@
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
         "forks": "655",
-        "stars": "10172",
+        "stars": "10201",
         "topics": [
           "cactus",
           "gemini",
@@ -8341,8 +8394,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "553",
-        "stars": "6752",
+        "forks": "558",
+        "stars": "6792",
         "topics": [],
         "license": "",
         "homepage": "",
