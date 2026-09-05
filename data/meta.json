@@ -6,7 +6,7 @@
     },
     {
       "tag": "自动化",
-      "count": 104
+      "count": 105
     },
     {
       "tag": "开源项目",
@@ -14,23 +14,23 @@
     },
     {
       "tag": "GitHub",
-      "count": 74
+      "count": 76
     },
     {
       "tag": "AI Agent",
-      "count": 67
+      "count": 68
     },
     {
       "tag": "Claude",
-      "count": 55
+      "count": 56
+    },
+    {
+      "tag": "隐私保护",
+      "count": 34
     },
     {
       "tag": "本地部署",
       "count": 34
-    },
-    {
-      "tag": "隐私保护",
-      "count": 33
     },
     {
       "tag": "MCP",
@@ -62,7 +62,7 @@
     },
     {
       "tag": "DevOps",
-      "count": 19
+      "count": 20
     },
     {
       "tag": "GitHub 开源",
@@ -73,34 +73,34 @@
       "count": 19
     },
     {
-      "tag": "Docker",
+      "tag": "Claude Code",
       "count": 18
     },
     {
-      "tag": "Python",
-      "count": 16
+      "tag": "Docker",
+      "count": 18
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 385
+      "count": 389
     },
     {
       "name": "AI 编程",
-      "count": 274
+      "count": 277
     },
     {
       "name": "效率工具",
-      "count": 112
+      "count": 113
     },
     {
       "name": "开源项目",
-      "count": 54
+      "count": 55
     },
     {
       "name": "开发者工具",
-      "count": 36
+      "count": 37
     },
     {
       "name": "生活效率",
@@ -147,6 +147,10 @@
       "count": 10
     },
     {
+      "name": "效率提升",
+      "count": 10
+    },
+    {
       "name": "网络安全",
       "count": 10
     },
@@ -157,10 +161,6 @@
     {
       "name": "AI 工具",
       "count": 9
-    },
-    {
-      "name": "效率提升",
-      "count": 9
     }
   ],
   "topSuitable": [
@@ -170,7 +170,7 @@
     },
     {
       "name": "个人开发者",
-      "count": 29
+      "count": 31
     },
     {
       "name": "技术团队负责人",
@@ -190,11 +190,11 @@
     },
     {
       "name": "隐私敏感用户",
-      "count": 21
+      "count": 22
     },
     {
       "name": "DevOps 工程师",
-      "count": 20
+      "count": 21
     },
     {
       "name": "独立开发者",
@@ -205,11 +205,11 @@
       "count": 19
     },
     {
-      "name": "UI/UX 设计师",
-      "count": 17
+      "name": "开发者",
+      "count": 18
     },
     {
-      "name": "开发者",
+      "name": "UI/UX 设计师",
       "count": 17
     },
     {
@@ -248,7 +248,7 @@
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 87
+      "count": 88
     },
     {
       "name": "llm",
@@ -260,7 +260,7 @@
     },
     {
       "name": "ai-agents",
-      "count": 70
+      "count": 71
     },
     {
       "name": "claude",
@@ -280,14 +280,14 @@
     },
     {
       "name": "skills",
-      "count": 42
-    },
-    {
-      "name": "developer-tools",
-      "count": 42
+      "count": 43
     },
     {
       "name": "codex",
+      "count": 43
+    },
+    {
+      "name": "developer-tools",
       "count": 42
     },
     {
@@ -296,18 +296,18 @@
     },
     {
       "name": "dsh-plugin",
-      "count": 31
+      "count": 32
     },
     {
       "name": "agents",
-      "count": 29
-    },
-    {
-      "name": "ai-agent",
-      "count": 27
+      "count": 30
     },
     {
       "name": "typescript",
+      "count": 28
+    },
+    {
+      "name": "ai-agent",
       "count": 27
     },
     {
@@ -334,11 +334,11 @@
     },
     {
       "name": "TypeScript",
-      "count": 91
+      "count": 94
     },
     {
       "name": "JavaScript",
-      "count": 55
+      "count": 56
     },
     {
       "name": "Rust",
@@ -346,7 +346,7 @@
     },
     {
       "name": "Shell",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Go",
@@ -437,19 +437,19 @@
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 251129,
+      "stars": 251434,
       "appearances": 6
     },
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 248872,
+      "stars": 249042,
       "appearances": 8
     },
     {
       "repo": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 241681,
+      "stars": 241740,
       "appearances": 7
     },
     {
@@ -461,13 +461,13 @@
     {
       "repo": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 204343,
+      "stars": 204413,
       "appearances": 2
     },
     {
       "repo": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "stars": 174295,
+      "stars": 174358,
       "appearances": 3
     }
   ],
@@ -475,7 +475,7 @@
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 126865,
+      "stars": 127134,
       "appearances": 10
     },
     {
@@ -493,13 +493,13 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 248872,
+      "stars": 249042,
       "appearances": 8
     },
     {
       "repo": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 241681,
+      "stars": 241740,
       "appearances": 7
     },
     {
@@ -529,7 +529,7 @@
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 251129,
+      "stars": 251434,
       "appearances": 6
     }
   ]

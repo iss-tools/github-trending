@@ -1,0 +1,128 @@
+# humanlayer/skills
+
+[GitHub URL](https://github.com/humanlayer/skills)
+
+
+## humanlayer/skills：Claude Code 的“人机协同”治理技能集
+
+> 一套让 Claude Code 具备“可控+治理”能力的技能集合，固化指令与工作流。
+
+- **Tags**: Claude Code, Skills, HITL, GitHub Actions, TypeScript
+- **Category**: AI 编程, 开发工具
+
+## Details
+
+# 一句话总结
+humanlayer/skills 是一套“以人为中枢”的 Claude Code 技能集合（Skills），帮你把多步智能体工作流、可控代码变更与人工审阅门槛做成可复用的技能；一句话：**把 Agent 做成“可 governance 的脚本”**。
+## 背景与痛点
+- AI 编程助手（Claude Code 等）越用越爽，但持续在项目里协作时，会遇到三大现实痛点：
+  1) 指令总在漂移。项目级 CLAUDE.md 写了一大堆，但模型经常“听不到重点”，关键规则在长对话里被淹没。
+  2) 多步工作流难固化。从需求调研→设计→分步实现→回归验证，一套稳定流程在单次对话里写不透、也难重用。
+  3) 人工审批没地方挂。既想让 Agent 改代码，又需要在关键步骤“踩刹车”审阅，但 Chat 里天然不持久化。
+- HumanLayer 的团队长期深耕“上下文工程”与“多智能体编排”，提出 12-Factor Agents 方法论，强调用结构化流程与人机协同来降低 Agent 行为的不确定性，并维护一个面向复杂代码库的多玩家 Agent IDE/云服务。
+- 在 Claude Code 生态里，“Skills（技能）”就是把指令、脚本与模板打包成 SKILL.md 文件夹，按需加载、可通过 /skill-name 触发的开放标准。npx skills CLI 则是跨 Harness 的通用技能安装工具。
+- humanlayer/skills 就是在这些背景下诞生：把 HumanLayer 在“人在环中 Agent 工作流”中的最佳实践，做成 Claude Code 的可复用技能，从治理层解决指令漂移、工作流固化和审阅门槛问题。
+## 核心亮点与功能剖析
+### 一、improve-claude-md：让 CLAUDE.md“真的被听进去”
+- **问题**：项目级 CLAUDE.md 写得越长，越容易被模型“摘句式执行”，导致关键约束被忽略、分支逻辑走错。
+- **做法**：把长文本变成带条件的结构化块（`<important if>` 等），强制模型“先判断条件，再应用指令”，显著提升规则遵循度。
+- **为何重要**：相当于把项目规范从“平面说明书”变成“可执行的规则树”，减少反复纠正的损耗。
+### 二、narrow-react-prop-types：从 any 到“仅只需要的类型”
+- **问题**：React 组件的 Props 常为 any 或宽泛接口，随时间累积技术债务；靠人工收缩容易遗漏实际使用路径。
+- **做法**：分析真实代码路径（而非 Storybook/Mock/测试样例），把 Props 收窄为实际用到的集合，提升类型安全与可维护性。
+- **为何重要**：把“宽进严出”反向修正，让接口贴近实际消费，减少潜在 Bug 和重构阻力。
+### 三、design-control-loop：把控制论思维写入 Agent 工作流
+- **做法**：通过对话引导你设计一个“控制环”——传感器（Sensor）、控制器（Controller）、执行器（Actuator）与扰动（Disturbances）——然后生成可在本地运行的组件与定时 coding-agent 工作流（通常与 GitHub Actions 集成）。
+- **比喻**：就像为自动巡航系统设置“测速/测距→决策→刹车/油门→路噪干扰”的闭环，并把这套逻辑落地到你的代码仓库里。
+- **价值**：把“人的策略”转化为“可执行、可复现、带审批点的自动化闭环”。
+### 四、build-iterated-agentic-loop：一键生成“带检查站的 CI Agent”
+- **做法**：在仓库内创建一个本地的 Skill，并配套生成一个“迭代式 coding-agent”的 GitHub Actions 工作流、提示词模板、记忆文件与参考模板。简单理解：给 Agent 加上检查站（Checkpoints）和回滚能力。
+- **收益**：将一次性编码任务转成可被 CI 调度的自动化流程，并具备人工审阅/回滚的治理点。
+### 五、show-me：让 Agent“展示给你看，而不是直接就改”
+- **用法**：指导 Agent 把变更先渲染为可视化（图示、HTML 页面等），供你审阅批准，再执行真实变更。常用于前端/UI 类变更或架构图变更。
+- **收益**：把“人机协作”做成“预览→批准→执行”的漏斗，避免突兀的大面积改动。
+## 目标人群与收益
+- **Tech Lead / 架构师**：希望把团队的“编码纪律”固化到 Agent 能力里，减少因“Agent 随性发挥”带来的技术债。
+  - 收益：规范收敛、类型安全增强、多步流程可审计。
+- **AI-first 工程团队**：已经在用 Claude Code / Codex / Cursor 等，想走“可 governance 的 Agent 工作流”。
+  - 收益：Human-in-the-loop 可控、知识可复用、变更可回溯。
+- **React 前端开发者**：常年被 Props 宽泛所累，又不想逐个手改。
+  - 收益：自动收缩类型、减少运行时意外、提高 IDE 补全质量。
+- **DevOps / 平台工程师**：想把编码 Agent 嵌入 CI/CD，并在关键节点增加审批。
+  - 收益：一键生成带审批的 Actions 工作流、可嵌入现有管线。
+## 竞品/同类对比（生态定位）
+- 与官方 Anthropic Skills（如 /loop、/code-review）相比：本套技能更偏“治理与工程化”（人工审批点、类型收窄、控制环设计），属于官方能力的“工程实践补集”。
+- 与社区通用技能集（如 secondsky/claude-skills）相比：本套技能聚焦“HITL + 工程结构”，而非泛框架/多平台适配；更适合需要治理与可控性的团队。
+- 与手工编写 SKILL.md 相比：这里是“经过实战的模板”并配套可执行脚本，大幅降低从零搭建的成本。
+## 技术栈与架构解析
+- 语言与仓库形态：仓库以 TypeScript 为主（100% TS），目录组织为 `plugins/SKILL_NAME` 与根部的 `.claude-plugin/`（插件清单与 marketplace.json）。
+- Skills 插件清单：`.claude-plugin/marketplace.json` 负责把自然语言命令（如 `/improve-claude-md`）映射到插件实现目录，是“发现与路由”的入口。
+- 依托的生态标准：
+  - Agent Skills 开放标准（SKILL.md 前置元数据与正文指令）。
+  - npx skills CLI 负责跨 Harness 安装、定位、管理技能生命周期。
+- 与 GitHub Actions 的集成部分（尤其是 build-iterated-agentic-loop）会生成可组合的工作流 YAML，利用 Actions 的并发与条件执行能力来构建“迭代式+审批点”的流程。
+## 上手门槛与部署体验
+- 前置条件：
+  - Node.js 环境（能跑 npx）。
+  - 已安装并配置 Claude Code（Anthropic API Key 等）。
+- 安装命令（官方 README 方式）：
+  - 安装单个技能：`npx skills add humanlayer/skills --skill SKILLNAME`
+  - 示例：
+    - 安装 improve-claude-md：`npx skills add humanlayer/skills --skill improve-claude-md`
+    - 安装 narrow-react-prop-types：`npx skills add humanlayer/skills --skill narrow-react-prop-types`
+    - 安装 build-iterated-agentic-loop：`npx skills add humanlayer/skills --skill build-iterated-agentic-loop`
+    - 安装 design-control-loop：`npx skills add humanlayer/skills --skill design-control-loop`
+- 验证加载：重启 Claude Code 会话后，在对话中输入 `/skills` 确认技能已注册（官方 CLI 文档与第三方指南均提示需重启以确保索引刷新）。
+## 触发与使用：最简 Demo 与调用示例
+- Demo 1：优化项目级 CLAUDE.md（improve-claude-md）
+  - 安装：`npx skills add humanlayer/skills --skill improve-claude-md`
+  - 在 Claude Code 项目中触发：`/improve-claude-md`
+  - 行为：该技能会读取项目中的 CLAUDE.md 并按条件块重写，提升指令遵循度。
+- Demo 2：收缩 React Props（narrow-react-prop-types）
+  - 安装：`npx skills add humanlayer/skills --skill narrow-react-prop-types`
+  - 触发：`/narrow-react-prop-types`
+  - 行为：技能会遍历代码路径，识别并建议/应用更精确的 Props 类型。
+- Demo 3：设计并落地“控制环”（design-control-loop）
+  - 安装：`npx skills add humanlayer/skills --skill design-control-loop`
+  - 触发：`/design-control-loop`
+  - 行为：通过问答式对话收集“传感器/控制器/执行器/扰动”要素，随后生成本地组件与 GitHub Actions 工作流模版。
+- Demo 4：一键生成迭代式 Agent 工作流（build-iterated-agentic-loop）
+  - 安装：`npx skills add humanlayer/skills --skill build-iterated-agentic-loop`
+  - 触发：`/build-iterated-agentic-loop`
+  - 行为：在仓库内生成对应的 Skill、工作流配置、Prompt 模板与记忆文件，将多步任务封装进 CI。
+## Demo/代码示例（以 build-iterated-agentic-loop 为例）
+- 安装完成后，在 Claude Code 对话中触发技能（伪交互示例）：
+  - User: `/build-iterated-agentic-loop`
+  - Agent（由技能驱动）：
+    - 询问或推断任务边界与目标（如“针对此仓库实现小 bug 修复流程”）。
+    - 在 `.github/workflows/` 生成或更新一个 YAML 工作流，配置步骤如：
+      - Checkout 代码
+      - 运行指定技能/子Agent
+      - 等待人工审阅（可集成 HumanLayer SDK 的 approval gate，或通过 Issue/PR 审批）
+      - 若批准则合并/打标，否则回滚或重试。
+    - 在仓库内生成 `.claude/skills/your-loop/SKILL.md` 及配套模板与记忆文件，作为本地化、可编辑的技能包。
+- 说明：该技能的核心是脚手架与模板生成；具体 YAML 与 Prompt 内容可按项目需求二次定制。
+## 社区活跃度与生命力（基于公开信号）
+- 仓库数据与信号：在技能索引站点显示 Stars 约 130，最近更新时间为 2026-07-01；整体安装量约 573，其中 improve-claude-md 安装量最高（445）。
+- 生态可见度：在技能目录与评测平台被收录为 Beta 级，其中 show-me 为热门组件，安装量约 2K，并被评为 HITL 治理层的典型参考实现。
+- 上游组织：HumanLayer 团队持续在多智能体编排与人机协同领域输出（博客、演讲、开源），为本技能集提供了持续更新的工程语境与需求牵引。
+- 结论：项目处于早期但积极维护的状态，适合作为“工程化模板”吸纳与二次定制；不建议在没有 Review 的情况下直接用作生产级 gating。
+## 局限与不足
+- 依赖与学习成本：需要熟悉 Claude Code 与 Agent Skills 规范、以及基本 CI/CD（若使用 Actions 工作流）；对不常接触 CLI 的同学存在一定门槛。
+- 治理层需自行搭建：技能提供的是“结构+模板”，真正的人工审批界面（如 Slack、邮件或自建 Web 审阅）需要你接入 HumanLayer SDK 或自定义实现，技能不会直接开箱即提供完整 UI。
+- 生态专一性：目前与 Claude Code 和 npx skills 生态强耦合；若切换到其他 AI IDE 或 Harness，需要适配或转写。
+- 质量评级：第三方评估给出“中等质量”，提示“需要扩展权限（shell、子Agent），使用前需审查源码”；这是典型的“能打但需看源码再上”的项目。
+## 风险提示与安全建议
+- 权限与执行：技能可能涉及读写文件、调用 shell、触发子 Agent 等；建议在安装与首次使用前审查仓库与插件目录的源码（尤其是 `.claude-plugin/` 与 `plugins/*/skills/**/*.md`）。
+- 生产环境审阅：建议先在非生产仓库演练，特别是与 GitHub Actions 集成的“自动写代码+自动合并/打标签”能力，确保审批链路闭环。
+## 结语与行动建议
+- 如果你已经在用 Claude Code，并开始遇到“指令总漂移”“多步流程难重用”“人工审阅没地方挂”的三座大山，humanlayer/skills 是一套实用的“工程化模板库”：
+  - 用 improve-claude-md 把规范变成可执行的规则树；
+  - 用 narrow-react-prop-types 收紧类型，让接口更诚实；
+  - 用 design-control-loop 与 build-iterated-agentic-loop 把“人机协同+控制环+CI”落进仓库；
+  - 用 show-me 把“大变更”变成“先看再干”。
+- 建议的起步路线：
+  1) 在一个非主仓库里用 `npx skills add humanlayer/skills --skill improve-claude-md` 优化 CLAUDE.md，体验一下结构化块的效果；
+  2) 尝试 `/narrow-react-prop-types`，在 React 项目里收一两个组件的 Props，感受自动化带来的类型安全感；
+  3) 当你对 Agent 工作流有治理需求时，再引入 `design-control-loop` 与 `build-iterated-agentic-loop`，把审批点写进 CI/CD。
+- 终极评判：这不是“全能瑞士军刀”，而是一套“给想认真做治理的团队”的插件模板集；适合愿意为可控性与可复现性投入一点学习成本的开发者与团队。

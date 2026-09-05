@@ -1,0 +1,54 @@
+{
+  "id": "620fc2fa-6187-499d-8aca-529bcaf9b136",
+  "url": "https://github.com/WorldFlowAI/everything-claude-code",
+  "domain": "github.com",
+  "repo": "WorldFlowAI/everything-claude-code",
+  "description": "ECC 是一套经过实战打磨的 Claude Code 配置库，集成了 Agents、Skills、Hooks 等组件。它能为 AI 建立工程纪律、统一代码风格并提供安全防护，显著提升开发效率与代码质量。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-05T12:13:54.911Z",
+  "metaData": {
+    "forks": "353",
+    "stars": "2165",
+    "topics": [],
+    "license": "",
+    "homepage": "",
+    "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development - WorldFlowAI/everything-claude-code"
+  },
+  "summaryData": {
+    "tags": [
+      "Claude Code",
+      "AI Agent",
+      "GitHub",
+      "自动化",
+      "开发配置"
+    ],
+    "cover": "",
+    "title": "Everything Claude Code 深度评测：把 Claude 变成虚拟开发团队",
+    "ability": [
+      "六层流水线架构",
+      "工程规范与安全护栏",
+      "跨平台自动化脚本",
+      "MCP 与多 Agent 并行编排",
+      "降低 Token 成本"
+    ],
+    "summary": "一套将 Claude Code 升级为“虚拟开发团队”的工程化配置体系。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率提升"
+    ],
+    "suitable": [
+      "个人开发者",
+      "小型开发团队",
+      "技术负责/Leader",
+      "AI/Agent 爱好者",
+      "追求工程效率的极客"
+    ],
+    "description": "ECC 是一套经过实战打磨的 Claude Code 配置库，集成了 Agents、Skills、Hooks 等组件。它能为 AI 建立工程纪律、统一代码风格并提供安全防护，显著提升开发效率与代码质量。"
+  },
+  "contentDetail": "<|assistant|>继续向下滚动 GitHub README 页面，查看“Important Notes”“License”等信息，以及仓库目录与分支情况，确认许可证类型和更新节奏。</think>\n📋 # Everything Claude Code（ECC）深度评测：把 Claude Code 升级为“虚拟开发团队”的配置体系\n## 一句话总结\n它是一套来自 Anthropic 黑客松冠军的、经过 10+ 个月高强度实战打磨的 Claude Code 配置体系（agents/skills/commands/rules/hooks/MCP），能把 AI 助手从“聊天问答”升级为有工程纪律与安全护栏的“虚拟开发团队”。\n## 背景与痛点：为什么会有 ECC？\n- Claude Code 本体非常强，但开箱即用的配置偏基础，缺乏团队级的工程规范、质量门禁与流程自动化；真正要落地到生产项目，仍需大量手工配置与持续调优。\n- 常见痛点：\n  - 上下文随会话变长而“腐化”，AI 容易忘掉项目关键信息，导致重复解释与低效问答。\n  - 代码风格与质量不统一，团队之间缺乏统一规则；TDD、安全审查等最佳实践难以固化为可执行流程。\n  - AI 执行危险操作缺乏约束，存在无意引入漏洞或泄露凭证的风险。\n  - 多环境、多平台（Win/macOS/Linux）、多包管理器的适配与脚本可移植性差，踩坑率高。\n- ECC 的创作者 Affaan Mustafa 从 Claude Code 实验期开始重度使用，并在 2025 年 9 月凭这套配置在 8 小时内用 Claude Code 独立完成产品 zenith.chat，赢得 Anthropic x Forum Ventures 黑客松。这套配置就是他 10 个月日常开发与多产品实战的沉淀集合。\n## 核心亮点与功能剖析\n### 1) 六层“流水线”式架构（概念与落地）\nECC 背后的思想是：把用户请求依次经过 Token 优化→记忆持久化→技能匹配→验证循环→安全扫描→并行编排的串行管道，任一环节不过关则重试，从而形成工程化的“质量与成本控制闭环”。\n- 第 1 层：Token 优化层（降本提效）\n  - 按任务难度分配不同模型：探索/简单任务用 Haiku，日常用 Sonnet，复杂用 Opus，显著降低调用成本。\n  - 精简系统提示，将部分 MCP 能力转为内置 Skills/Commands，减少无谓的上下文消耗。\n- 第 2 层：记忆持久化层（让 AI 不再“健忘”）\n  - 通过 Hooks（session-start/session-end/pre-compact 等）跨会话自动保存与加载上下文，保留项目上下文与关键决策，使 AI 记住“我们上次决定这样干”。\n- 第 3 层：技能匹配层（避免重复探索）\n  - 大量 Skills 定义标准化工作流（TDD、安全审查、后端/前端模式等），通过命令或 Agent 自动匹配调用，做到“同类任务不重复发明轮子”。\n- 第 4 层：验证循环层（输出自带质检）\n  - 支持检查点评估（Checkpoint Eval）与持续评估（Continuous Eval），可定义 grader 与 pass@k 等量化指标，把“验证”纳入流程而不是事后补测。\n- 第 5 层：安全扫描层（AgentShield 保驾护航）\n  - 内置安全规则与检查清单，涵盖注入防护、敏感信息不落硬编码、CVE 集成与命令净化，形成“红蓝对抗”式审计能力。\n- 第 6 层：并行编排层（复杂任务被拆解与并行）\n  - 通过 Git worktrees、级联方法与多 Agent 协同，把大型任务拆解为可并行推进的子任务，提高整体吞吐。\n### 2) 一站式组件：Agents / Skills / Commands / Rules / Hooks / MCP\n- Agents：按角色与边界分工的“子专家”，如 planner、architect、code-reviewer、security-reviewer、build-error-resolver、e2e-runner 等，甚至细分到语言（Go/Python/Java/Kotlin/Rust/C++ 等）。\n- Skills：可被命令/代理调用的“工作流与领域知识包”，涵盖编码规范、前后端模式、TDD 流程、安全审查、持续学习、策略性压缩、验证循环等。\n- Commands：斜杠命令（/plan、/tdd、/code-review、/verify、/setup-pm 等），用自然语言即可触发标准化工作流；注意：插件路径下使用命名空间形式，如 /ecc:plan。\n- Rules：始终生效的开发准则（安全、编码风格、测试要求、Git 流程等），建议按需复制到 ~/.claude/rules/，支持“common + 语言目录”的结构，避免文件冲突与重复。\n- Hooks：基于事件（PreToolUse/PostToolUse/SessionStart/SessionEnd/Stop 等）触发的自动化脚本，如会话开始加载上下文、会话结束保存状态、压缩前持久化、Edit 后自动类型检查或清理 console.log 警告等。\n- MCP Configs：预置 GitHub、Supabase、Vercel、Railway 等 MCP 服务器配置模板；但官方强烈提醒：不要全部启用，以免上下文窗口被过载到 70k 以下。\n### 3) 跨平台与 DX（开发者体验）\n- 全平台脚本统一重写为 Node.js，支持 Windows/macOS/Linux；并提供包管理器自动检测（环境变量→项目配置→package.json→锁文件→全局配置→回退），同时支持 /setup-pm 命令交互式配置。\n- 提供 Hooks 运行时控制，可通过环境变量调整严格度或按需禁用特定钩子，便于“遇到卡点可临时降级”。\n- 包含测试套件（tests/lib、tests/hooks、run-all.js），可本地运行关键测试，减少改配置引入破坏的风险。\n### 4) 跨 Harness 通用性\nECC 不局限于 Claude Code，官方说明兼容 Codex、Cursor、OpenCode、Gemini 等多种 AI 开发工具，提供通用化打包与适配层，让同一套技能与规范在团队工具栈中“所见略同”。\n### 5) 安全与审计\n- ClawSecure 对本项目进行过 3-Layer 审计（覆盖 OWASP ASI Top 10），评分 90/100（Safe），仅两处中低风险（权限清单与 ReDoS），无严重/高危发现，安全水位较高。\n## 目标人群与收益\n- 最适合：\n  - 个人开发者：想把 Claude Code 当作“结对编程伙伴”，需要工程规范与质量门禁，以减少低级错误、提升长期可维护性。\n  - 小团队：希望在成员间统一 AI 助手的行为与代码风格，建立团队级的技能与规则仓库，避免“各用各的”导致产出不一致。\n  - 技术负责/Leader：需要给团队引入 AI 的同时设置安全护栏、TDD 与审查流程，确保“效率提升不牺牲质量与安全”。\n  - AI/Agent 爱好者：想研究“如何把 LLM 封装为有纪律的虚拟团队”，学习 Prompt/Agent/Hook 设计与上下文管理最佳实践。\n- 典型收益：\n  - 减少重复解释与上下文浪费，Token 成本显著下降（模型分层+提示精简）。\n  - 把 TDD、代码审查、安全检查等工程实践固化为命令/Agent，降低“想起来就做、想不起来就跳过”的人为疏漏。\n  - 通过 Hooks 与 MCP 模板实现“自动化小闭环”，如会话恢复、构建前自动类型检查、Edit 后清理遗留调试语句等。\n  - 形成可演进的知识库：持续学习技能可从会话中提炼模式，随着时间推移越用越懂团队习惯。\n## 竞品/同类对比\n| 维度 | ECC（Everything Claude Code） | 自建配置 | 各类 Prompt 仓库 / 仅有 Prompt 的集合 | 其他 AI 开发框架（如 Agency-Agents） |\n|---|---|---|---|---|\n| 覆盖面 | Agents/Skills/Commands/Rules/Hooks/MCP 六位一体，形成“系统级” | 可控，但需从零写与维护 | 通常仅提供 Agent 提示词与少量规则，缺乏 Hooks 与 MCP 集成 | 多聚焦 Agent 生命周期与编排，不一定包含 Claude Code 生态的“配置层” |\n| 工程成熟度 | 来自黑客松冠军 + 10 个月实战打磨，案例与文档齐备 | 取决于团队经验 | 往往停留在示例层面，不强调“跨平台/多包管理器”等工程细节 | 较强，但更偏通用 AI 流程，不一定紧密贴合 Claude Code 的具体能力 |\n| 开箱可用性 | 插件安装 + 手动规则即可快速跑通；同时提供完整手动安装路径 | 需要大量初始投入与试错 | 拷贝即用，但缺乏与工作流/工具的绑定，落地难 | 通常需要额外编写适配代码或脚手架，接入成本高 |\n| 可定制性 | 完全开源（MIT），鼓励修改与贡献；目录与文件结构清晰，增删改友好 | 自由度最大，但维护成本也最高 | 简单，但“改起来麻烦、容易与工具不兼容” | 依赖各框架的扩展点，定制粒度不一 |\n| 安全与合规 | 内置 AgentShield/安全规则与钩子，并有外部审计报告 | 需自行设计与审计 | 常缺乏系统化安全设计，更多是“提示词防御” | 可能自带安全层，但目标更偏“运行时”，不一定覆盖代码审查与 MCP 风险 |\n| 生态与语言 | 支持 12+ 语言生态，且跨 Harness（Claude Code/Cursor/Codex 等） | 取决于团队投入 | 一般语言覆盖少，且不一定与具体工具链适配 | 语言/框架取决于插件与扩展 |\n## 局限与不足\n- 入门门槛不低：\n  - 需要先熟悉 Claude Code 的配置结构（~/.claude/ 下的 agents/skills/commands/rules/hooks 等），否则很难进行有针对性的裁剪与定制。\n  - 官方建议“从共鸣的部分开始，按需增删”，这对新用户来说存在学习与试错成本。\n- 潜在“过重”与配置冲突：\n  - 组件较多（agents/skills/commands/rules/hooks/MCP），如果一次性全开，会面临上下文窗口被压缩与命令冲突的问题，尤其是与个人已有配置混用时。\n  - 插件安装与手动安装的路径要严格区分：插件路径不要再跑 full 安装脚本，否则会重复复制并导致运行时行为异常。\n- multi-* 命令需要额外运行时：\n  - /multi-plan、/multi-execute 等多 Agent 并行命令需另外安装 ccg-workflow 运行时，不满足“一键即走”的预期。\n- 文档分散、阅读量大：\n  - README 强调“仓库是原始代码，真相在 Shorthand/Longform 指南”，新用户需要投入一定时间阅读多篇文档才能充分释放价值。\n- 本质仍为“配置库”，不是一键式的应用：\n  - ECC 不替代 Claude Code 本身，也不能单靠安装就自动变强；需要结合项目需要定制与持续维护。\n## 技术栈与架构解析\n- 语言与运行时：\n  - 核心配置是 Markdown/JSON（Agents/Skills/Commands/Rules/Hooks/MCP），可读性强且易于版本控制。\n  - Hooks 与脚本已统一为 Node.js，实现跨平台与可测试性，并提供 lib/utils.js 与 lib/package-manager.js 等共享工具。\n- 目录结构与组织：\n  - .claude-plugin/：插件与自托管市场的元数据（plugin.json 与 marketplace.json），是作为 Claude Code 插件分发的基础。\n  - agents/：按角色组织的 .md 文件（含 frontmatter 与提示词内容），可直接被 Claude Code 加载为“子 Agent”。\n  - skills/：按领域/流程组织的技能目录，支持嵌套与相对引用，可被命令与 Agent 调用。\n  - commands/：斜杠命令的 .md 定义（含描述与触发逻辑），推荐通过插件路径按命名空间调用（如 /ecc:plan）。\n  - rules/：Always-follow 的规则，按 common + 语言目录组织，避免冲突；需要手动复制到 ~/.claude/rules/。注意官方提示应复制整个目录而非单个文件。\n  - hooks/：hooks.json 定义各类事件匹配与动作脚本；脚本存放在 scripts/hooks/（如 session-start.js、session-end.js）。\n  - scripts/：跨平台工具与测试入口（lib/、hooks/、run-all.js）。\n  - mcp-configs/：MCP 服务器配置模板，需要按需复制并替换占位符（API Keys）。\n  - contexts/：不同模式（dev/review/research）的上下文注入模板，可按需加载。\n  - examples/：项目与用户级配置示例（CLAUDE.md、user-CLAUDE.md），便于快速参考与改造。\n- 设计理念：\n  - 模块化：乐高式组合，只取所需；支持按目录复制，减少冗余与冲突。\n  - 声明式为主：配置驱动（Markdown/JSON/Hooks），行为可预期且可审计。\n  - 默认安全与可降级：提供多种运行时控制（ECC_HOOK_PROFILE、ECC_DISABLED_HOOKS），遇到问题可快速关闭特定钩子而不用改配置文件。\n## 上手门槛与部署体验\n- 推荐安装方式（插件）：\n```bash\n# 添加自托管市场\n/plugin marketplace add https://github.com/affaan-m/everything-claude-code\n# 安装插件\n/plugin install everything-claude-code@everything-claude-code\n```\n安装后将自动获得 agents/commands/skills/hooks 的访问能力；但 rules 需要按需手动复制（插件无法分发 rules）。\n- 仅复制规则（适用于插件路径）的命令：\n```bash\n# macOS/Linux\nmkdir -p ~/.claude/rules\ncp -R rules/common ~/.claude/rules/\ncp -R rules/typescript ~/.claude/rules/\n# Windows（PowerShell）\nNew-Item -ItemType Directory -Force -Path \"$HOME/.claude/rules\" | Out-Null\nCopy-Item -Recurse rules/common \"$HOME/.claude/rules/\"\nCopy-Item -Recurse rules/typescript \"$HOME/.claude/rules/\"\n```\n- 插件路径下的命令调用示例：\n```text\n/ecc:plan \"添加用户认证\"\n/ecc:tdd\n/ecc:code-review\n/ecc:verify\n```\n- 运行测试（可选）：\n```bash\nnode tests/run-all.js\n```\n## 社区活跃度与生命力（以所见页面为准）\n- Commits 显示：该仓库在 2026 年 1 月 18—23 日期间有多笔提交，涵盖功能（feat）、修复（fix）、文档（docs）与样式调整，处于持续迭代状态；包含跨平台 Node.js 脚本、插件打包、Hook 改进与内容补全等。\n- Issues/Pull Requests：该页面显示当前仓库有 1 个 Open Issue 与 1 个 Open Pull Request，表明有持续互动通道；但具体处理速度需参考 Issue 列表与 PR 时间线（此处未展开）。\n- License：仓库采用 MIT 许可证，可自由使用与修改，适合个人与企业集成。\n- 说明：不同镜像页面对 Star/Fork 数的统计口径存在差异（有的标注 140K+ stars / 21K+ forks 等），建议以 GitHub 仓库主页的实时数据为准；本文不以绝对数字作为价值判断依据，仅说明其受到广泛关注与大量使用。\n## Demo / 代码示例\n### Agent 示例（code-reviewer.md）：\n```yaml\n---\nname: code-reviewer\ndescription: Reviews code for quality, security, and maintainability\ntools: [Read, Grep, Glob, Bash]\nmodel: opus\n---\nYou are a senior code reviewer...\n```\n（仓库内继续包含审查要点与步骤，指导 AI 如何系统化执行审查。）\n### Skill 示例（TDD Workflow，简化）：\n```text\n1. Define interfaces first\n2. Write failing tests (RED)\n3. Implement minimal code (GREEN)\n4. Refactor (IMPROVE)\n5. Verify 80%+ coverage\n```\n可被 /tdd 命令或相关 Agent 调用，将“红-绿-重构”固化为可执行流程。\n### Hook 示例（Edit 后检测 console.log）：\n```json\n{\n  \"matcher\": \"tool == \\\"Edit\\\" && tool_input.file_path matches \\\"\\\\\\\\.(ts|tsx|js|jsx)$\\\"\",\n  \"hooks\": [{\n    \"type\": \"command\",\n    \"command\": \"#!/bin/bash\\ngrep -n 'console\\\\.log' \\\"$file_path\\\" && echo '[Hook] Remove console.log' >&2\"\n  }]\n}\n```\n通过 hooks.json 定义与脚本联动，实现“写入即检查”的自动化闭环。\n### MCP 配置提示（示例）：\n从 mcp-configs/mcp-servers.json 复制所需 MCP 后，需把 YOUR_*_HERE 替换为真实 API Keys，并在项目配置中按需启用/禁用，以避免上下文窗口爆炸。官方建议“单项目保持 10 个以内 MCP 启用，全局配置 20—30 个，工具总数控制在 80 以下”。\n## 避坑指南\n- 切记：插件安装不要再跑 full 安装脚本；建议只按需复制 rules/ 目录。\n- 复制规则时，按“整个语言目录”复制，避免相对路径断裂与文件名冲突。\n- MCP 不要全部启用，优先选用项目必须的几个，及时通过 disabledMcpServers 关闭不用的。\n- 初期不要一次性把所有 agents/commands/skills 全开，建议从与团队技术栈最契合的部分（如语言审查、TDD、安全规则）开始渐进式接入。\n- Hook 严格度与环境变量（ECC_HOOK_PROFILE、ECC_DISABLED_HOOKS）善用，遇到卡点可降级或临时关闭个别钩子排查问题。\n## 结语与行动建议\n- 终极评判：\n  - ECC 不是“安装就变强”的魔法，而是一套来自一线实战、经过生产检验的“工程化配置方法论”。它适合愿意花一点时间学习、并把 AI 助手当成团队成员来对待的开发者与团队。\n  - 对于真正想提升代码质量、降低 Token 成本、并为 AI 设立纪律与安全护栏的人，ECC 能带来可量化的长期收益；但对于偶尔用 AI 写几行代码的项目，投入产出比未必划算。\n- 行动建议（按场景）：\n  1) Claude Code 用户（小白/入门）：先用插件安装 + rules/common + 一门语言规则（如 TypeScript），先用 /ecc:plan 与 /ecc:code-review，感受“规范化命令”的差异。\n  2) 小团队：把 rules/common 与团队主要语言规则统一进成员环境，再按需选择 3—5 个核心 Agents 与 Commands（如 TDD、安全审查、verify），每周同步一次定制与效果。\n  3) 高阶/研究型：精读 Shorthand 与 Longform 指南，研究记忆持久化、验证循环与 multi-* 并行工作流，把 ECC 作为“Agent Harness 优化”的实验场。\n  4) 企业/安全敏感场景：结合 ClawSecure 报告与内部安全审计，对 MCP 与 Hooks 进行白名单管控，并定制 security/agents/rules 以满足合规要求。\n如果你决定“认真用好 Claude Code”，把 ECC 当作团队的“虚拟工程手册”来建设与迭代，会比单纯堆配置更有价值。先选共鸣的部分，边用边改，越打磨越顺手。",
+  "type": "project",
+  "dateAdded": "20260905"
+}

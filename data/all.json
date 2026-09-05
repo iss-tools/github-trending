@@ -1,6 +1,207 @@
 {
   "all": [
     {
+      "id": "2e020b6f-4d02-4502-93db-6e0d30302c4d",
+      "url": "https://github.com/nvm-sh/nvm",
+      "domain": "github.com",
+      "repo": "nvm-sh/nvm",
+      "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-05T12:18:30.639Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "版本管理",
+          "nvm",
+          "开发工具",
+          "Shell脚本"
+        ],
+        "cover": "",
+        "title": "Node 版本管理的“事实标准”：nvm-sh/nvm 深度评测",
+        "ability": [
+          "多版本共存与切换",
+          "项目级版本控制",
+          "LTS 版本支持",
+          "零侵入环境配置",
+          "镜像源定制"
+        ],
+        "summary": "macOS/Linux/WSL 上管理多版本 Node.js 的首选工具，轻量、稳定且生态成熟。",
+        "category": [
+          "开发工具",
+          "环境配置"
+        ],
+        "suitable": [
+          "前端/Node.js 开发者",
+          "DevOps 工程师",
+          "团队技术负责人"
+        ],
+        "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。"
+      },
+      "type": "project",
+      "dateAdded": "20260905"
+    },
+    {
+      "id": "620fc2fa-6187-499d-8aca-529bcaf9b136",
+      "url": "https://github.com/WorldFlowAI/everything-claude-code",
+      "domain": "github.com",
+      "repo": "WorldFlowAI/everything-claude-code",
+      "description": "ECC 是一套经过实战打磨的 Claude Code 配置库，集成了 Agents、Skills、Hooks 等组件。它能为 AI 建立工程纪律、统一代码风格并提供安全防护，显著提升开发效率与代码质量。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-05T12:13:54.911Z",
+      "metaData": {
+        "forks": "353",
+        "stars": "2165",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development - WorldFlowAI/everything-claude-code"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Agent",
+          "GitHub",
+          "自动化",
+          "开发配置"
+        ],
+        "cover": "",
+        "title": "Everything Claude Code 深度评测：把 Claude 变成虚拟开发团队",
+        "ability": [
+          "六层流水线架构",
+          "工程规范与安全护栏",
+          "跨平台自动化脚本",
+          "MCP 与多 Agent 并行编排",
+          "降低 Token 成本"
+        ],
+        "summary": "一套将 Claude Code 升级为“虚拟开发团队”的工程化配置体系。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型开发团队",
+          "技术负责/Leader",
+          "AI/Agent 爱好者",
+          "追求工程效率的极客"
+        ],
+        "description": "ECC 是一套经过实战打磨的 Claude Code 配置库，集成了 Agents、Skills、Hooks 等组件。它能为 AI 建立工程纪律、统一代码风格并提供安全防护，显著提升开发效率与代码质量。"
+      },
+      "type": "project",
+      "dateAdded": "20260905"
+    },
+    {
+      "id": "60485cc6-d45b-46a2-b042-3d94fb01df67",
+      "url": "https://github.com/BraveOPotato/FckSignups",
+      "domain": "github.com",
+      "repo": "BraveOPotato/FckSignups",
+      "description": "这是一个严格收录“无需注册、即开即用”工具的目录站，基于 React+Vite 构建，零追踪无广告。它不仅能帮普通用户快速找到好用的工具，还能为开发者提供高质量的项目参考和前端架构范本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-05T12:09:38.716Z",
+      "metaData": {
+        "forks": "191",
+        "stars": "2654",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "https://nosignups.net",
+        "description": "A list of tools that are open-source, in-browser, and require no-signups! - BraveOPotato/FckSignups"
+      },
+      "summaryData": {
+        "tags": [
+          "免注册",
+          "工具导航",
+          "隐私保护",
+          "React",
+          "TypeScript"
+        ],
+        "cover": "",
+        "title": "FckSignups：免注册开源工具导航站",
+        "ability": [
+          "免注册工具检索",
+          "零追踪隐私保护",
+          "开源数据聚合",
+          "快速分类搜索"
+        ],
+        "summary": "一个收录“免注册、即开即用”开源工具的零追踪导航站。",
+        "category": [
+          "效率工具",
+          "开发者工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "普通用户",
+          "开发者",
+          "开源项目作者",
+          "隐私敏感用户"
+        ],
+        "description": "这是一个严格收录“无需注册、即开即用”工具的目录站，基于 React+Vite 构建，零追踪无广告。它不仅能帮普通用户快速找到好用的工具，还能为开发者提供高质量的项目参考和前端架构范本。"
+      },
+      "type": "project",
+      "dateAdded": "20260905"
+    },
+    {
+      "id": "10a30090-a8b6-42b3-8a74-4fdcc827c0bd",
+      "url": "https://github.com/humanlayer/skills",
+      "domain": "github.com",
+      "repo": "humanlayer/skills",
+      "description": "humanlayer/skills 是一套 Claude Code 的技能集合，通过结构化指令、类型收缩与带审批点的工作流，把“人在环中”的多智能体协作工程化，让编码 Agent 更可控、可复用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-05T12:04:05.339Z",
+      "metaData": {
+        "forks": "71",
+        "stars": "2465",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to humanlayer/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Skills",
+          "HITL",
+          "GitHub Actions",
+          "TypeScript"
+        ],
+        "cover": "",
+        "title": "humanlayer/skills：Claude Code 的“人机协同”治理技能集",
+        "ability": [
+          "结构化 CLAUDE.md 提升规则遵循",
+          "自动收缩 React Props 类型",
+          "设计并落地控制环 Agent 工作流",
+          "生成带审批点的迭代式 CI Agent",
+          "可视化变更预览与人工审阅"
+        ],
+        "summary": "一套让 Claude Code 具备“可控+治理”能力的技能集合，固化指令与工作流。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "Tech Lead / 架构师",
+          "AI-first 工程团队",
+          "React 前端开发者",
+          "DevOps / 平台工程师"
+        ],
+        "description": "humanlayer/skills 是一套 Claude Code 的技能集合，通过结构化指令、类型收缩与带审批点的工作流，把“人在环中”的多智能体协作工程化，让编码 Agent 更可控、可复用。"
+      },
+      "type": "project",
+      "dateAdded": "20260905"
+    },
+    {
       "id": "2f80c0fa-a8e5-4a1a-8d3c-4da2b4dd913f",
       "url": "https://github.com/vorssaint/vorssaint-utils",
       "domain": "github.com",
@@ -328,8 +529,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2015",
-        "stars": "31254",
+        "forks": "2021",
+        "stars": "31353",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -446,8 +647,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:13:49.576Z",
       "metaData": {
-        "forks": "26655",
-        "stars": "204343",
+        "forks": "26664",
+        "stars": "204412",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://opencode.ai",
@@ -1096,8 +1297,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
-        "forks": "20647",
-        "stars": "174295",
+        "forks": "20649",
+        "stars": "174358",
         "topics": [
           "agent-skills"
         ],
@@ -1391,8 +1592,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3619",
-        "stars": "43000",
+        "forks": "3625",
+        "stars": "43103",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -1879,8 +2080,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3036",
-        "stars": "25515",
+        "forks": "3037",
+        "stars": "25527",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -5753,8 +5954,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6796",
-        "stars": "126865",
+        "forks": "6810",
+        "stars": "127134",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -7810,8 +8011,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49609",
-        "stars": "241681",
+        "forks": "49623",
+        "stars": "241740",
         "topics": [
           "ai",
           "ai-agent",
@@ -8414,8 +8615,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21223",
-        "stars": "251129",
+        "forks": "21245",
+        "stars": "251470",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -8645,8 +8846,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
-        "forks": "8266",
-        "stars": "68949",
+        "forks": "8406",
+        "stars": "70551",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -8718,8 +8919,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37501",
-        "stars": "248872",
+        "forks": "37535",
+        "stars": "249043",
         "topics": [
           "ai-agents",
           "anthropic",
