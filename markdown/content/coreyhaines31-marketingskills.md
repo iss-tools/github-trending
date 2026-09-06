@@ -1,0 +1,149 @@
+# coreyhaines31/marketingskills
+
+[GitHub URL](https://github.com/coreyhaines31/marketingskills)
+
+
+## Marketing Skills 深度评测：让 AI 掌握 SaaS 营销专家的实战技能库
+
+> Marketing Skills 是一套面向 Claude Code、Cursor 等 AI 代理的即插即用营销技能库，将 50+ 个 SaaS 营销框架与工作流封装成可执行组件，让 AI 像资深营销顾问一样干活。
+
+- **Tags**: Claude Code, Cursor, 营销自动化, SaaS 增长, AI 技能库
+- **Category**: AI 编程, 营销增长, 开源工具
+
+## Details
+
+# Marketing Skills（coreyhaines31/marketingskills）深度评测
+## 一句话总结
+**Marketing Skills** 是一套面向 Claude Code、Cursor、Windsurf 等主流 AI 代理的“即插即用”营销技能库：用 Markdown + 元数据封装了一套 SaaS 营销专家的框架与工作流，让 AI 能结构化地完成从 CRO、文案、SEO 到广告、RevOps、定价与营销计划等 50+ 个任务，本质上把“资深营销顾问”的隐性知识变成了代理的“肌肉记忆”。
+## 背景与痛点
+### 为什么会诞生
+- 创作者：Corey Haines 是 SaaS 营销圈有名的一线从业者，运营 Conversion Factory 增长代理、Swipe Files 文案订阅、AI Marketing Training 培训，并打造自动 CMO 产品 Magister。因此这套技能库天然带有“实战 SaaS 营销”的血统，不是学院派理论堆砌。
+- 背景：AI 编码代理（Claude Code、Cursor、Codex、Windsurf 等）写代码很在行，但进入“营销场景”时经常给出泛泛而谈的通用建议，缺乏可落地的检查清单、评估标准和成熟流程。这个项目要解决的就是“代理能干活、但不懂营销套路”的断层。
+### 解决的核心痛点
+- 不知从何入手：让代理“写文案”“做SEO审计”“优化落地页”，常规回答太泛，缺少行业框架与工序。
+- 知识碎裂难以复用：营销知识分散在书、课程、文章中，难以在代理层面形成“可引用、可组合”的知识组件。
+- 重复造轮子：团队里不同成员各自向 AI 提问，没有统一的“基准流程”，导致质量参差不齐、无法沉淀。
+## 核心亮点与功能剖析
+### 1) 技术栈与架构设计（以 Agent Skills spec 为基础）
+- 文件形态：每个技能本质是一个 Markdown 文件，配有 YAML frontmatter（触发条件、触发词、依赖关系等），严格遵循 Agent Skills 规范，便于多种代理自动识别与加载。
+- 依赖网络：设计了“中央上下文”product-marketing（产品/受众/定位）作为所有技能的基础依赖，其他技能优先读取；并明确技能间的交叉引用（如 copywriting ↔ cro ↔ ab-testing）。这种 DAG 化的知识结构让代理不盲猜，而是先读“统一的真相来源”，再执行。
+- 目录与分类：
+  - Conversion Optimization（cro、signup、onboarding、popups、paywalls 等）
+  - Content & Copy（copywriting、copy-editing、cold-email、emails、social、image、video、sms）
+  - SEO & Discovery（seo-audit、ai-seo、programmatic-seo、site-architecture、competitors、schema、aso）
+  - Paid & Distribution（ads、ad-creative、events）
+  - Measurement & Testing（analytics、ab-testing）
+  - Retention（churn-prevention）
+  - Growth Engineering（co-marketing、free-tools、referrals、community-marketing）
+  - Strategy & Monetization（marketing-ideas、marketing-psychology、launch、pricing、offers、content-strategy、customer-research、directory-submissions）
+  - Sales & RevOps（revops、sales-enablement、prospecting、competitor-profiling）
+- 工程化支持：
+  - 官方提供 CLI（npx skills、npx skillkit）安装，支持“全量/指定技能安装”，并智能检测本地已安装的代理，自动写入 .agents/skills/ 或 .claude/skills/；支持多代理统一管理。
+  - 支持 Claude Code 插件（/plugin marketplace add /plugin install）、Git 子模块、Fork 定制等多种接入方式，降低学习成本和迁移阻力。
+- 资源与扩展：项目内附 tools/PARTNERS.md，公开披露与第三方工具的集成（如 Converly 的服务端转化追踪/MCP），并强调“合作伙伴赞助不影响技能本身的中立推荐”。这种“ Funding + Transparency”的模式有助于可持续维护。
+### 2) 实战导向的技能深度与广度（以 v2.11.0 的 50 个技能为样本）
+- 新增 `events` 技能（v2.11.0）覆盖“主办/赞助/演讲/参会”四种角色，给出“20% 活动时间 + 80% 前后时间”的通用弧线与三层测量模型，并配套 webinar-funnel、sponsorship-ROI、speaking 等子参考文档。这并非简单的灵感清单，而是可量化评估的活动 ROI 计算与线索跟进范式。
+- `marketing-plan` 被做成“fractional CMO 交付物”，按 AARRR 结构化生成包含 13 个大节、约一万字的 Notion 可粘贴营销计划，含预算、阶段里程碑、工具栈、RACI 等高层与执行层内容，非常适合顾问/创始人快速产出治理级文档。
+- 从定价心理学到“learning price”、从模型选择到折扣陷阱（折扣可能导致约 2× churn），在 pricing、offers 等技能中给出可直接用于决策的参考。说明内容既涵盖“要不要打折扣”的定性决策，也涉及“LTV:CAC 为何具有误导性”这类定量认知更新。
+- 大量“参考文献/子模块”如 minimum-path-to-value、activation-models、payback-period、viral-mechanics 等，为技能提供精炼的、可直接引用的图表与计算方法，这些是对《Founding Marketing》一书的体系化抽取与再整理，体现了“知识浓缩”的工程能力。
+### 3) “中央上下文”模式：让代理先看说明书再做事
+- product-marketing 是所有技能的前置依赖。用户在 .agents/product-marketing.md 填入 ICP、差异化、价值主张、当前阶段等后，后续 cro/copywriting/launch 等动作都会据此定制，而非泛泛生成。这种“单点真相”模式大幅提升了 AI 输出的相关性，让“多任务协作”成为可能。】
+### 4) 开放协议与生态不绑定
+- 项目兼容 Claude Code、OpenAI Codex、Cursor、Windsurf 等主流“编码/Agent”环境，并宣称为任何支持 Agent Skills 规范的代理开放。这种非绑定的设计降低了厂商锁定风险，并带来跨工具的协同效应（你可以在 Cursor 写代码，在 Claude 做审核，技能两边共用）。
+## 目标人群与收益
+### 谁最适合用
+- SaaS 创始人/独立开发者：没有专职营销团队，但需快速产出落地页文案、SEO、定价、邮件序列、冷邮件线索挖掘。核心收益是“把专家方法论外包给 AI”，自己专注产品和渠道。
+- 技术型增长/营销负责人：希望把团队营销 SOP 与 AI 代理打通，减少重复劳动并标准化输出，形成可审计的“技能资产库”。
+- 小团队与自由顾问：需要快速为客户交付 CRO 报告、营销计划、定价建议等，技能库中的 marketing-plan、cro、pricing 等可直接用来“成单与交付”，同时 MIT 开源可定制化。
+- 学习营销的人：把技能当成“带注释的实战手册”，一边阅读技能结构，一边让 AI 演示工作流，极大降低知识获取门槛。
+### 具体收益
+- 提质：让代理基于检查清单和框架执行任务（SEO 审计、A/B 实验设计、文案改写），避免空洞建议。
+- 提效：通过 CLI/插件一键部署技能，避免每个项目重复喂 prompt；技能之间引用，可一键拉起相关任务链（如 cro → ab-testing → analytics）。
+- 复用与沉淀：团队只需维护一份 product-marketing.md 与技能版本，即可快速复制到新项目。
+- 成本：相比订阅一堆 SaaS 营销工具，这是“一次学习、长期可用”的知识资产，且无订阅费用。官网与 README 强调库本身免费且 MIT 许可，合作伙伴赞助仅限外部工具集成部分，不影响内容中立。
+## 上手门槛与部署体验
+### 安装体验（以 CLI 为例）
+```bash
+# 安装全部技能
+npx skills add coreyhaines31/marketingskills
+# 仅安装 cro 与 copywriting
+npx skills add coreyhaines31/marketingskills --skill cro copywriting
+# 列出可用技能
+npx skills add coreyhaines31/marketingskills --list
+```
+- CLI 会自动检测本地已安装的代理并询问安装位置；对于 Claude Code 推荐加 `-a claude-code` 确保写入 .claude/skills/，避免写入非读取目录。体验上是无侵入的、一次性的，不会破坏项目目录结构。
+- 如果使用 Claude Code 插件，两行命令即可：
+```bash
+/plugin marketplace add coreyhaines31/marketingskills
+/plugin install marketing-skills
+```
+- Git clone/子模块/Fork 等方式则适合有团队同步与二次开发需求的场景，README 给出清晰的路径与复制命令，适合有一定 Git 基础的用户。
+### 文档与体验细节
+- README 开篇直白地回答“What are Skills”和“How Skills Work Together”，并在 ASCII 依赖图中清晰呈现技能间的“血缘关系”，便于理解“为什么每次都要先填 product-marketing”。
+- v1.x → v2.0 升级路径详细到“旧目录名删除命令 + 上下文文件迁移”，并给出完整重命名对照表，极大降低升级的心理负担。同时明确向后兼容的回退机制（skills 仍检查旧路径），说明作者对 DX（开发者体验）的重视。
+- 缺少“官方一键 Docker 部署”对于这类纯 Markdown/CLI 项目并不构成问题。但从工程化角度看，缺少 CI/CD 自动化测试与技能变更的“回归评估”是潜在可补足点（可在 Contributing 或 workflows 中补充自动化 QA）。
+## 社区活跃度与生命力
+- 规模：GitHub API 显示约 1.96 万 stars、3045 forks，且项目为 2026 年初创建，短时间内获得极高关注度，说明切中了“AI + 营销”的强需求与传播点。
+- 迭代节奏：截至 2026 年 4 月，已发布 v2.11.0 等 50+ 技能版本，release notes 显示新技能增量、既有技能的“参考文献”补充（以《Founding Marketing》为蓝本）、以及与实战案例/外部作者内容的整合，体现“持续深耕”而非仅做数量堆砌。
+- Issue 与 PR：API 显示当前约 10 个 open issues，并允许 PR 参与；README 明确欢迎贡献并指引 CONTRIBUTING.md，表明社区具备参与通道。如果 PR 合并与 Issue 关闭速度较快，进一步证明其维护质量（需要到仓库页查看具体 PR/Issue 情况）。
+- 周边：项目已进入 Agent Skills 市场与第三方目录（如 agskills.dev、FreeMCPLab 等），并出现 Fork 与“预构建 .skill 文件”的二次发行项目，说明生态正在扩散，且规范易于适配。
+## 真实 Demo / 代码示例（上手即用）
+### 示例 1：用 npx skills 安装 cro 与 copywriting 技能
+```bash
+npx skills add coreyhaines31/marketingskills --skill cro copywriting
+```
+- 之后在 Claude Code / Cursor 中直接自然语言对话即可触发：
+  - “帮我优化这个落地页的转化率” → 自动调用 cro
+  - “为我的 SaaS 首页写一套文案” → 自动调用 copywriting
+### 示例 2：基本 product-marketing 上下文（位于 .agents/product-marketing.md）
+```markdown
+- **产品名称**：YourProduct
+- **一句话定位**：面向中小团队的即时协作白板
+- **目标受众（ICP）**：远程/混合办公的 5–50 人设计与产品团队
+- **核心卖点**：零上手成本、真实时、多平台客户端
+- **当前阶段**：0–10K MARR，寻找 PMF
+- **关键指标**：7 日留存、DAU/MAU、试用转付费
+```
+- 有了这个基础，后续 cro/copywriting 会优先读取该文件，据此定制输出。
+### 示例 3：用 marketing-plan 技能生成一份 Notion 可粘贴的营销计划（在代理中触发）
+- 触发句式（示例）：“为我们的产品写一份未来 12 个月的营销计划，需覆盖获客、激活、留存、推荐、营收、关键里程碑与预算分配。”
+- 预期输出（基于技能说明）：13 个大节（执行摘要、战略框架、现状评估、获客、激活、留存、推荐、营收、90 天路线图、12 个月展望、MarTech 栈、RACI），包含具体数字与里程碑可直接贴进 Notion/文档。
+## 竞品/同类对比
+### 与“Prompt 集合”的区别
+- Prompt 集合往往是一次性文本输入，缺乏结构化元数据、触发条件和依赖管理；而 marketingskills 的每个技能有显式的 frontmatter 与 Related Skills，可以被代理自动识别与串联。简单说：前者是“备忘录”，后者是“可执行的程序组件”。
+### 与“营销 SaaS（Jasper/Copy.ai 等）”的差异
+- SaaS 强在托管与易用性，但内容库闭源、模型与平台绑定、且持续付费；marketingskills 采用 MIT 开源，可本地修改和托管技能，与多种代理兼容，长期成本更低。但在“即时可用性”和“非技术用户”体验上，SaaS 产品更低门槛。
+### 与“Notion 营销模板”的差异
+- Notion 模板更多面向“人阅读和编辑”，缺乏程序化触发与交叉引用；marketingskills 专为“代理读取”设计，技能之间有明确的依赖图与调用链，可支持自动化工作流（如 marketing-loops 定义可自运行的循环营销任务）。
+### 与 MCP 营销工具的差异
+- MCP 通常接入外部 API（例如 GA4、PostHog、广告平台），重在数据采集与执行；而 marketingskills 偏“知识结构与决策流程”，两者是互补关系。官方也推荐与真实分析 MCP 结合，让 AI 基于真实数据而非“故事”做营销决策。
+## 局限与不足
+- 语言：当前技能主要以英语编写，对中文用户需要翻译或自行 Fork 改写；部分营销框架在中文语境下会需要微调（例如平台命名、广告渠道、社会证据的本地化）。
+- 上手仍需基础：
+  - 需要了解终端与基础 Git 操作（至少会用 npx 或 git clone）。
+  - 需要已经在使用 Claude Code/Cursor/Windsurf 等代理工具，否则“技能”无处可挂。
+- 边界与幻觉风险：
+  - 技能是“框架放大器”，不代表“全自动决策”。最终方案仍需人校对，尤其是涉及定价、合规、PR 等高风险话题。
+  - 代理会基于技能产出结构化内容，但事实准确性仍依赖于外部数据与 LLM 自身能力，需与真实分析工具（如 GA4、PostHog）结合验证。
+- 依赖治理：技能交叉引用与依赖图清晰，但随着版本演进，新旧技能命名与依赖变更（如 v1→v2 重命名）需要用户主动清理旧目录。README 给出了清理脚本，但对完全“不碰终端”的用户仍有学习成本。
+## 结语与行动建议
+### 终极评判
+如果你是技术型创始人/增长负责人/独立开发者，且正在用 Claude Code、Cursor 或 Windsurf 之类的 AI 代理，那么 Marketing Skills 属于“高杠杆、低成本”的基础设施级资产：它能大幅提升营销输出的专业度与一致性，把零散的营销知识转化为可调用、可组合的技能网络。对中文用户而言，需要接受“英文技能+本地化改写”的现实，但整体 ROI 仍然极高。
+### 行动建议
+- 最小上手路径：
+  1) 确保你至少在用 Claude Code 或 Cursor 其中之一。
+  2) 在项目目录运行：`npx skills add coreyhaines31/marketingskills --skill cro copywriting seo-audit pricing marketing-plan`（按需增减）。
+  3) 填写 .agents/product-marketing.md，作为所有任务的“中央上下文”。
+  4) 在代理中用自然语言触发任务，观察技能的调用与输出，再根据反馈微调上下文与技能内容。
+- 进阶玩法：
+  - Fork 仓库，根据品牌与渠道改写技能内容（特别是示例、语气、合规条款）。
+  - 为团队建立技能版本与变更日志（可参考 repo 的 VERSIONS.md/Contributing 思路），确保营销知识可以像代码一样评审和迭代。
+- 避坑提醒：
+  - 安装后先做一次“技能触发验证”，确认代理确实加载到了正确技能（可以通过输出内容中是否出现技能特有的检查项、结构与术语来判断）。
+  - 对 v1.x 老用户，务必按 README 升级说明删除旧目录并迁移 product-marketing 上下文文件，避免新旧技能混杂造成调用混乱。
+  - 首次用于生产前，由资深营销人员抽样审核 AI 输出的几件关键交付物（如营销计划、定价页、冷邮件序列），确保与品牌与合规要求一致。
+---
+## 附录：资源清单（便于你快速查看与深入）
+- GitHub 主仓库与 README（安装、技能列表、依赖图与升级说明）：
+- Releases（查看最新功能与参考文献更新，如 events、marketing-plan、Founding Marketing 注入）：
+- Agent Skills 市场与目录（展示兼容代理与第三方集成示例）：

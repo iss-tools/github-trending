@@ -121,6 +121,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/repo/Stremio/stremio-web.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/The-Swarm-Corporation/AutoHedge.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/aipoch/open-science.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/coreyhaines31/marketingskills.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/llvm/llvm-project.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/openai/skills.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/repo/nvm-sh/nvm.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -946,7 +976,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/tag/Claude%20Code.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/tag/Anthropic.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/tag/Rust.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -957,16 +997,6 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/tag/DevOps.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/tag/Rust.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/tag/Claude%20Code.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1016,12 +1046,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8.html</loc>
+    <loc>https://trending.pptboard.com/category/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7.html</loc>
+    <loc>https://trending.pptboard.com/category/%E9%9A%90%E7%A7%81%E5%AE%89%E5%85%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1031,12 +1061,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/category/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/category/%E8%AE%BE%E8%AE%A1%E8%B5%84%E6%BA%90.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7.html</loc>
+    <loc>https://trending.pptboard.com/category/AI%20%E5%BA%94%E7%94%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1051,22 +1086,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/category/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/category/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/AI%20%E5%BA%94%E7%94%A8.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trending.pptboard.com/category/AI%20%E6%A1%86%E6%9E%B6.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/category/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1136,17 +1166,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/language/Swift.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/language/Mojo.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://trending.pptboard.com/language/PowerShell.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/language/Swift.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

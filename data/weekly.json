@@ -700,8 +700,8 @@
       "starsAdded": 14875,
       "createdAt": "2026-08-28T12:00:03.619Z",
       "metaData": {
-        "forks": "3258",
-        "stars": "50200",
+        "forks": "3266",
+        "stars": "50323",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -888,8 +888,8 @@
       "starsAdded": 6475,
       "createdAt": "2026-08-29T16:00:03.552Z",
       "metaData": {
-        "forks": "4120",
-        "stars": "38464",
+        "forks": "4125",
+        "stars": "38475",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -1309,8 +1309,8 @@
       "starsAdded": 3642,
       "createdAt": "2026-08-29T21:00:03.977Z",
       "metaData": {
-        "forks": "3937",
-        "stars": "43165",
+        "forks": "3938",
+        "stars": "43195",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -1866,8 +1866,8 @@
       "starsAdded": 1946,
       "createdAt": "2026-08-30T12:00:03.880Z",
       "metaData": {
-        "forks": "5271",
-        "stars": "32225",
+        "forks": "5274",
+        "stars": "32264",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2871,13 +2871,13 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 50199,
-      "forks": 3258,
+      "stars": 50279,
+      "forks": 3261,
       "starsAdded": 19480,
       "createdAt": "2026-08-30T19:00:04.703Z",
       "metaData": {
-        "forks": "3258",
-        "stars": "50200",
+        "forks": "3266",
+        "stars": "50323",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -2937,6 +2937,69 @@
       }
     },
     {
+      "id": "4f271460-7335-4924-bad0-ea564395c982",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 128776,
+      "forks": 6899,
+      "starsAdded": 11730,
+      "createdAt": "2026-09-06T14:00:04.546Z",
+      "metaData": {
+        "forks": "6898",
+        "stars": "128812",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "claude",
+          "claude-code",
+          "claude-code-plugin",
+          "cursor-rules",
+          "developer-tools",
+          "llm",
+          "prompt-engineering",
+          "yagni"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ponytail.dev",
+        "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "开源项目",
+          "Claude Code",
+          "Cursor",
+          "YAGNI"
+        ],
+        "cover": "",
+        "title": "Ponytail：给 AI 写代码踩刹车的极简规则集",
+        "ability": [
+          "AI 代码精简",
+          "七步决策过滤",
+          "API 成本降低",
+          "安全底线保障",
+          "多平台集成"
+        ],
+        "summary": "通过七步决策阶梯防止 AI 过度工程化，减少代码量与 API 成本的开发工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "前端业务开发者",
+          "快速原型开发团队",
+          "技术成本控制者"
+        ],
+        "description": "Ponytail 是一款专为 AI 编程助手设计的插件或规则集，利用七级决策阶梯强制 AI 在写代码前判断任务必要性。实测可减少 54% 代码量和 20% API 成本，同时保留必要的安全校验，有效解决 AI“过度封装”痛点。"
+      }
+    },
+    {
       "id": "d46b0ab0-3ebc-48f4-af5e-e9cdb3c4d9a1",
       "dateAdded": "202636",
       "type": "github-weekly",
@@ -2944,13 +3007,13 @@
       "repo": "THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "stars": 32225,
-      "forks": 5271,
+      "stars": 32245,
+      "forks": 5274,
       "starsAdded": 10109,
       "createdAt": "2026-08-30T19:00:04.727Z",
       "metaData": {
-        "forks": "5271",
-        "stars": "32225",
+        "forks": "5274",
+        "stars": "32264",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2997,13 +3060,13 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 19413,
-      "forks": 2473,
+      "stars": 19457,
+      "forks": 2477,
       "starsAdded": 6761,
       "createdAt": "2026-09-03T11:00:04.452Z",
       "metaData": {
-        "forks": "2473",
-        "stars": "19413",
+        "forks": "2480",
+        "stars": "19490",
         "topics": [
           "ai",
           "audiobook",
@@ -3189,13 +3252,13 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 43164,
+      "stars": 43184,
       "forks": 3937,
       "starsAdded": 5491,
       "createdAt": "2026-08-30T19:00:04.720Z",
       "metaData": {
-        "forks": "3937",
-        "stars": "43165",
+        "forks": "3938",
+        "stars": "43195",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -3260,13 +3323,13 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 250527,
-      "forks": 37693,
+      "stars": 250577,
+      "forks": 37699,
       "starsAdded": 5445,
       "createdAt": "2026-09-05T15:00:21.997Z",
       "metaData": {
-        "forks": "37693",
-        "stars": "250527",
+        "forks": "37700",
+        "stars": "250628",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -3389,8 +3452,8 @@
       "starsAdded": 5296,
       "createdAt": "2026-08-30T19:00:04.705Z",
       "metaData": {
-        "forks": "4120",
-        "stars": "38464",
+        "forks": "4125",
+        "stars": "38475",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -3625,13 +3688,13 @@
       "repo": "jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 59007,
-      "forks": 7663,
+      "stars": 59030,
+      "forks": 7665,
       "starsAdded": 3649,
       "createdAt": "2026-09-02T12:00:04.627Z",
       "metaData": {
-        "forks": "7663",
-        "stars": "59007",
+        "forks": "7667",
+        "stars": "59043",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -3734,13 +3797,13 @@
       "repo": "tailscale/tailcat",
       "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
       "language": "Go",
-      "stars": 6452,
-      "forks": 246,
+      "stars": 6469,
+      "forks": 247,
       "starsAdded": 3187,
       "createdAt": "2026-09-05T15:00:21.971Z",
       "metaData": {
-        "forks": "246",
-        "stars": "6452",
+        "forks": "247",
+        "stars": "6478",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://tailscale.com/tailcat",
@@ -3787,13 +3850,13 @@
       "repo": "google-research/timesfm",
       "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
       "language": "Python",
-      "stars": 31454,
+      "stars": 31462,
       "forks": 3011,
       "starsAdded": 2968,
       "createdAt": "2026-09-02T12:00:04.658Z",
       "metaData": {
-        "forks": "3011",
-        "stars": "31455",
+        "forks": "3012",
+        "stars": "31469",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -3840,13 +3903,13 @@
       "repo": "every-app/open-seo",
       "description": "Open source alternative to Semrush and Ahrefs",
       "language": "TypeScript",
-      "stars": 17375,
-      "forks": 2188,
+      "stars": 17384,
+      "forks": 2189,
       "starsAdded": 2755,
       "createdAt": "2026-08-31T13:00:04.399Z",
       "metaData": {
-        "forks": "2188",
-        "stars": "17375",
+        "forks": "2192",
+        "stars": "17390",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -4025,6 +4088,68 @@
           "热衷于从零造轮子的技术爱好者"
         ],
         "description": "该项目是一个野心勃勃的免费开源课程，主张'先构建再使用'。它要求学习者从线性代数开始，亲手实现反向传播、Transformer、Agent 等核心算法，最终产出可直接部署的工具。它解决了知识碎片化和只会调包的痛点，适合追求深度理解和系统化学习的人群。"
+      }
+    },
+    {
+      "id": "c0c7ff5d-fbd2-481a-b667-24ee51df042b",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "repo": "Imbad0202/academic-research-skills",
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "language": "Python",
+      "stars": 46514,
+      "forks": 3647,
+      "starsAdded": 2293,
+      "createdAt": "2026-09-06T14:00:04.552Z",
+      "metaData": {
+        "forks": "3648",
+        "stars": "46518",
+        "topics": [
+          "academic-pipeline",
+          "academic-writing",
+          "ai-research",
+          "claude",
+          "claude-code",
+          "literature-review",
+          "peer-review",
+          "prompt-engineering"
+        ],
+        "license": "License",
+        "homepage": "https://buymeacoffee.com/crucify020v",
+        "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize - Imbad0202/academic-research-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "学术写作",
+          "科研辅助",
+          "GitHub 开源",
+          "AI Agents"
+        ],
+        "cover": "",
+        "title": "Academic Research Skills (ARS) 深度评测",
+        "ability": [
+          "全流程科研编排",
+          "多智能体深度研究",
+          "学术论文写作与润色",
+          "模拟同行评审",
+          "引用验证与完整性检查"
+        ],
+        "summary": "面向 Claude 的学术研究全流程技能包，提供从选题、写作到审稿的结构化人机协作框架。",
+        "category": [
+          "科研工具",
+          "AI 编程",
+          "效率提升"
+        ],
+        "suitable": [
+          "硕博研究生",
+          "高校科研人员",
+          "期刊审稿人",
+          "学术写作新手",
+          "教育工作者"
+        ],
+        "description": "Academic Research Skills 是一套基于 Claude Code 的开源技能包，通过多智能体协作将选题、文献调研、写作、审稿等环节结构化。它内置引用验证和完整性闸门机制，旨在辅助科研人员提升效率，确保学术诚信，是科研工作的得力 AI 副驾驶。"
       }
     },
     {
@@ -4320,13 +4445,13 @@
       "repo": "handsomestWei/patent-disclosure-skill",
       "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
       "language": "Python",
-      "stars": 7583,
-      "forks": 824,
+      "stars": 7616,
+      "forks": 826,
       "starsAdded": 1996,
       "createdAt": "2026-09-03T11:00:04.456Z",
       "metaData": {
-        "forks": "824",
-        "stars": "7583",
+        "forks": "827",
+        "stars": "7635",
         "topics": [
           "chinese",
           "disclosure",
@@ -4379,13 +4504,13 @@
       "repo": "Gitlawb/openclaude",
       "description": "runs anywhere. uses anything",
       "language": "TypeScript",
-      "stars": 32774,
+      "stars": 32782,
       "forks": 9066,
       "starsAdded": 1839,
       "createdAt": "2026-09-03T11:00:04.426Z",
       "metaData": {
         "forks": "9066",
-        "stars": "32774",
+        "stars": "32788",
         "topics": [
           "ai",
           "ai-agent",
@@ -4438,13 +4563,13 @@
       "repo": "fmtlib/fmt",
       "description": "A modern formatting library",
       "language": "C++",
-      "stars": 25611,
+      "stars": 25613,
       "forks": 3044,
       "starsAdded": 1809,
       "createdAt": "2026-09-03T11:00:04.462Z",
       "metaData": {
         "forks": "3044",
-        "stars": "25611",
+        "stars": "25613",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -4578,13 +4703,13 @@
       "repo": "Lakr233/vphone-cli",
       "description": "",
       "language": "Swift",
-      "stars": 10854,
+      "stars": 10867,
       "forks": 1387,
       "starsAdded": 1631,
       "createdAt": "2026-09-04T11:00:03.944Z",
       "metaData": {
         "forks": "1387",
-        "stars": "10854",
+        "stars": "10873",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4631,13 +4756,13 @@
       "repo": "magnitudedev/magnitude",
       "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
       "language": "TypeScript",
-      "stars": 3444,
-      "forks": 248,
+      "stars": 3467,
+      "forks": 251,
       "starsAdded": 1396,
       "createdAt": "2026-09-05T15:00:21.984Z",
       "metaData": {
-        "forks": "248",
-        "stars": "3444",
+        "forks": "252",
+        "stars": "3489",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -4744,13 +4869,13 @@
       "repo": "punkpeye/awesome-mcp-servers",
       "description": "A collection of MCP servers.",
       "language": "",
-      "stars": 94399,
-      "forks": 15736,
+      "stars": 94410,
+      "forks": 15739,
       "starsAdded": 1287,
       "createdAt": "2026-09-01T12:00:04.119Z",
       "metaData": {
-        "forks": "15736",
-        "stars": "94399",
+        "forks": "15744",
+        "stars": "94415",
         "topics": [
           "ai",
           "mcp"
@@ -4857,6 +4982,58 @@
           "个人开发者与极客"
         ],
         "description": "Apache Maka 是一个处于孵化阶段的本地优先 AI 智能体工作台。其核心采用“日志即运行时”设计，提供完整的操作回溯与审计能力，并内置强大的权限引擎和多模型支持，旨在解决 AI 应用的安全与可控痛点。"
+      }
+    },
+    {
+      "id": "0353a762-54d2-4a86-9060-5e3e59f2137b",
+      "dateAdded": "202636",
+      "type": "github-weekly",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "repo": "pollen-robotics/microduck_rl",
+      "description": "RL training environments for Microduck (mjlab)",
+      "language": "Python",
+      "stars": 1794,
+      "forks": 360,
+      "starsAdded": 1247,
+      "createdAt": "2026-09-06T14:00:03.868Z",
+      "metaData": {
+        "forks": "362",
+        "stars": "1795",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "RL training environments for Microduck (mjlab). Contribute to pollen-robotics/microduck_rl development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "sim2real",
+          "PPO训练",
+          "MuJoCo",
+          "ONNX部署"
+        ],
+        "cover": "",
+        "title": "microduck_rl：微型双足鸭形机器人强化学习训练环境评测",
+        "ability": [
+          "完整sim2real训练管线",
+          "GPU加速的高吞吐仿真",
+          "精细执行器与齿隙建模",
+          "统一61维观测接口",
+          "多技能策略热插拔"
+        ],
+        "summary": "面向Microduck双足机器人的端到端强化学习训练环境，支持GPU加速仿真训练、域随机化与真机ONNX部署",
+        "category": [
+          "机器人开发",
+          "强化学习",
+          "开发工具"
+        ],
+        "suitable": [
+          "机器人RL研究者与工程师",
+          "高校课程与教育工作者",
+          "创客与Microduck真机用户",
+          "AI编码与LLM工具链探索者"
+        ],
+        "description": "基于mjlab和PPO的开源强化学习环境，为微型双足机器人Microduck提供从仿真训练到真机部署的完整方案，包含丰富的任务（步行、踢球、起身、滑旱冰等），通过BAM执行器建模、域随机化和齿隙仿真缩小仿真-现实差距，支持本地GPU训练或Hugging Face Jobs远程训练，最终导出ONNX策略供真机运行。"
       }
     },
     {
@@ -5079,13 +5256,13 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 51113,
-      "forks": 3585,
+      "stars": 51122,
+      "forks": 3586,
       "starsAdded": 958,
       "createdAt": "2026-09-04T11:00:03.961Z",
       "metaData": {
-        "forks": "3585",
-        "stars": "51113",
+        "forks": "3586",
+        "stars": "51125",
         "topics": [
           "browser",
           "chrome",
@@ -5209,13 +5386,13 @@
       "repo": "majd/ipatool",
       "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store.",
       "language": "Go",
-      "stars": 10939,
+      "stars": 10940,
       "forks": 913,
       "starsAdded": 926,
       "createdAt": "2026-09-03T11:00:04.460Z",
       "metaData": {
         "forks": "913",
-        "stars": "10939",
+        "stars": "10942",
         "topics": [
           "apple",
           "appstore",
@@ -5284,8 +5461,8 @@
       "starsAdded": 794,
       "createdAt": "2026-09-04T11:00:03.966Z",
       "metaData": {
-        "forks": "909",
-        "stars": "6868",
+        "forks": "923",
+        "stars": "7043",
         "topics": [
           "ai",
           "anthropic",
@@ -5518,13 +5695,13 @@
       "repo": "colinhacks/zod",
       "description": "TypeScript-first schema validation with static type inference",
       "language": "TypeScript",
-      "stars": 43840,
-      "forks": 2175,
-      "starsAdded": 297,
+      "stars": 43850,
+      "forks": 2176,
+      "starsAdded": 304,
       "createdAt": "2026-09-02T12:00:04.652Z",
       "metaData": {
-        "forks": "2175",
-        "stars": "43840",
+        "forks": "2176",
+        "stars": "43851",
         "topics": [
           "runtime-validation",
           "schema-validation",

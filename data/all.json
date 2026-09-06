@@ -1,6 +1,322 @@
 {
   "all": [
     {
+      "id": "57c0673e-fa61-47ac-854f-b201dfc0e265",
+      "url": "https://github.com/Stremio/stremio-web",
+      "domain": "github.com",
+      "repo": "Stremio/stremio-web",
+      "description": "Stremio Web 是 Stremio 的官方开源前端，采用 React UI 与 Rust (WASM) 核心分离架构。它允许用户通过插件聚合各类影视资源，实现跨设备的库与进度同步。既适合作为浏览器内的观影工具，也适合开发者进行二次开发或自托管部署。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:29:31.990Z",
+      "metaData": {
+        "forks": "1539",
+        "stars": "13342",
+        "topics": [
+          "hacktoberfest",
+          "stremio"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://web.stremio.com",
+        "description": "Stremio - Freedom to Stream. Contribute to Stremio/stremio-web development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Stremio",
+          "流媒体",
+          "React",
+          "Rust",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "Stremio Web 深度评测：浏览器端的流媒体中枢",
+        "ability": [
+          "插件化内容聚合",
+          "跨设备进度同步",
+          "Web/PWA 一体化体验",
+          "支持 Docker 自托管",
+          "Chromecast 投屏支持"
+        ],
+        "summary": "基于 React 和 Rust 构建的开源浏览器端流媒体中心，支持插件聚合与跨设备同步，可自托管。",
+        "category": [
+          "生活效率",
+          "开源项目"
+        ],
+        "suitable": [
+          "普通观众",
+          "家庭媒体爱好者",
+          "开发者",
+          "NAS/自建服务玩家"
+        ],
+        "description": "Stremio Web 是 Stremio 的官方开源前端，采用 React UI 与 Rust (WASM) 核心分离架构。它允许用户通过插件聚合各类影视资源，实现跨设备的库与进度同步。既适合作为浏览器内的观影工具，也适合开发者进行二次开发或自托管部署。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
+      "id": "a4b116ca-2eb2-4498-99e7-38b359b2f2b7",
+      "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "domain": "github.com",
+      "repo": "The-Swarm-Corporation/AutoHedge",
+      "description": "AutoHedge 是基于 Python 的多智能体交易系统，通过 Director、Quant、Risk Manager 和 Execution 四个 AI 角色协作，实现分析、风控与下单的自动化闭环，适合量化实验与策略验证。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:25:34.463Z",
+      "metaData": {
+        "forks": "765",
+        "stars": "4506",
+        "topics": [
+          "ai",
+          "blackrock",
+          "finance",
+          "goldmansachs",
+          "hedgefund",
+          "jpmorgan",
+          "ml",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading",
+          "trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://swarms.xyz/",
+        "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution. - The-Swarm-Corporation/AutoHedge"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "自动化交易",
+          "Python",
+          "Solana",
+          "风控"
+        ],
+        "cover": "",
+        "title": "AutoHedge：四 AI 智能体自主交易台深度评测",
+        "ability": [
+          "多智能体协同交易",
+          "风险优先架构",
+          "企业级日志",
+          "一键 CLI 启动",
+          "Solana 链上实盘"
+        ],
+        "summary": "一个将四位 AI 专家组成自主交易台的开源框架，实现从市场分析到风控下单的全链路自动化。",
+        "category": [
+          "金融科技",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "量化研究员",
+          "策略工程师",
+          "AI 开发者",
+          "加密货币交易者",
+          "开源爱好者"
+        ],
+        "description": "AutoHedge 是基于 Python 的多智能体交易系统，通过 Director、Quant、Risk Manager 和 Execution 四个 AI 角色协作，实现分析、风控与下单的自动化闭环，适合量化实验与策略验证。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
+      "id": "17f3d2e5-10a4-4ab7-b92a-2f8a0cf20d78",
+      "url": "https://github.com/aipoch/open-science",
+      "domain": "github.com",
+      "repo": "aipoch/open-science",
+      "description": "这是一个本地优先的开源 AI 科研桌面应用，集成了多模型聊天、Python/R 代码执行、文献数据库查询及 SSH 远程计算。其核心特色在于产物溯源与安全评审机制，能大幅提升科研数据的可复现性与安全性，适合需要严苛数据管理的科研团队使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:21:25.132Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI 科研",
+          "本地优先",
+          "代码执行",
+          "溯源"
+        ],
+        "cover": "",
+        "title": "Open Science：本地优先的 AI 科研工作台",
+        "ability": [
+          "本地优先与模型无关",
+          "科研全流程闭环",
+          "产物溯源与安全评审",
+          "内置科研技能库",
+          "SSH远程计算支持"
+        ],
+        "summary": "本地优先、模型无关的开源 AI 科研工作台，集成聊天、代码执行、文献溯源等功能。",
+        "category": [
+          "科研工具",
+          "AI 应用",
+          "开发工具"
+        ],
+        "suitable": [
+          "科研人员与博后",
+          "生信/化学/材料计算者",
+          "AI4S 科研团队",
+          "合规与审计敏感场景"
+        ],
+        "description": "这是一个本地优先的开源 AI 科研桌面应用，集成了多模型聊天、Python/R 代码执行、文献数据库查询及 SSH 远程计算。其核心特色在于产物溯源与安全评审机制，能大幅提升科研数据的可复现性与安全性，适合需要严苛数据管理的科研团队使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
+      "id": "dedaf619-77d9-4184-8d0b-da23f637687f",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "domain": "github.com",
+      "repo": "coreyhaines31/marketingskills",
+      "description": "这个开源项目把资深营销顾问的隐性知识变成了 AI 代理的肌肉记忆。通过 Markdown + 元数据封装了 CRO、文案、SEO、广告、定价等 50+ 个技能，配合 CLI 一键部署到 Claude Code、Cursor 等环境，让 AI 能结构化完成专业营销任务，大幅提升输出质量与效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:17:31.978Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Cursor",
+          "营销自动化",
+          "SaaS 增长",
+          "AI 技能库"
+        ],
+        "cover": "",
+        "title": "Marketing Skills 深度评测：让 AI 掌握 SaaS 营销专家的实战技能库",
+        "ability": [
+          "50+ 营销技能覆盖",
+          "中央上下文统一管理",
+          "多代理兼容即插即用",
+          "实战营销框架封装",
+          "CLI/插件便捷部署"
+        ],
+        "summary": "Marketing Skills 是一套面向 Claude Code、Cursor 等 AI 代理的即插即用营销技能库，将 50+ 个 SaaS 营销框架与工作流封装成可执行组件，让 AI 像资深营销顾问一样干活。",
+        "category": [
+          "AI 编程",
+          "营销增长",
+          "开源工具"
+        ],
+        "suitable": [
+          "SaaS 创始人",
+          "独立开发者",
+          "增长营销负责人",
+          "营销自由顾问",
+          "想学营销的技术人员"
+        ],
+        "description": "这个开源项目把资深营销顾问的隐性知识变成了 AI 代理的肌肉记忆。通过 Markdown + 元数据封装了 CRO、文案、SEO、广告、定价等 50+ 个技能，配合 CLI 一键部署到 Claude Code、Cursor 等环境，让 AI 能结构化完成专业营销任务，大幅提升输出质量与效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
+      "id": "67af7902-8864-4564-9715-a6177746d8af",
+      "url": "https://github.com/llvm/llvm-project",
+      "domain": "github.com",
+      "repo": "llvm/llvm-project",
+      "description": "作为工业级编译器基础设施，LLVM 通过统一的中间表示（IR）让 C/C++、Rust、Swift 等语言共享强大的优化与后端能力。无论是构建新语言、开发高性能工具，还是深入代码底层优化，它都是不可或缺的核心库。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:11:42.252Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "LLVM",
+          "编译器",
+          "Clang",
+          "开源",
+          "系统编程"
+        ],
+        "cover": "",
+        "title": "llvm/llvm-project：现代编译器与工具链的工业级基石",
+        "ability": [
+          "统一中间表示(LLVM IR)",
+          "跨语言优化与代码生成",
+          "Clang/LLD/LLDB工具链",
+          "静态分析与代码检查",
+          "MLIR多级中间表示"
+        ],
+        "summary": "现代编程语言的基石，提供模块化中间表示与后端优化，是构建编译器和性能工具的工业级基础设施。",
+        "category": [
+          "开发工具",
+          "底层技术"
+        ],
+        "suitable": [
+          "编译器/语言开发者",
+          "系统/高性能库开发者",
+          "安全与逆向分析专家",
+          "对底层原理感兴趣的学习者",
+          "工具链工程师"
+        ],
+        "description": "作为工业级编译器基础设施，LLVM 通过统一的中间表示（IR）让 C/C++、Rust、Swift 等语言共享强大的优化与后端能力。无论是构建新语言、开发高性能工具，还是深入代码底层优化，它都是不可或缺的核心库。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
+      "id": "138ee18a-69b3-4b00-a48e-8e36528afeaf",
+      "url": "https://github.com/openai/skills",
+      "domain": "github.com",
+      "repo": "openai/skills",
+      "description": "OpenAI 官方发布的 AI 技能仓库，虽已废弃但定义了 Agent Skills 开放标准。它将复杂指令封装成可复用技能，让 AI 能像安装插件一样执行任务，适合开发者学习如何标准化 AI 工作流。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-06T14:06:54.560Z",
+      "metaData": {
+        "forks": "1725",
+        "stars": "25476",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "Skills Catalog for Codex. Contribute to openai/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI",
+          "Agent",
+          "工作流",
+          "技能封装",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "openai/skills 深度评测",
+        "ability": [
+          "标准化技能封装",
+          "自动化工作流",
+          "一键安装",
+          "跨平台复用",
+          "官方示例参考"
+        ],
+        "summary": "OpenAI 官方已废弃的 AI 技能仓库，通过 SKILL.md 标准封装工作流，实现 AI 能力的标准化与复用。",
+        "category": [
+          "GitHub 开源",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 开发者",
+          "AI 工具重度用户",
+          "DevOps 工程师",
+          "效率探索者"
+        ],
+        "description": "OpenAI 官方发布的 AI 技能仓库，虽已废弃但定义了 Agent Skills 开放标准。它将复杂指令封装成可复用技能，让 AI 能像安装插件一样执行任务，适合开发者学习如何标准化 AI 工作流。"
+      },
+      "type": "project",
+      "dateAdded": "20260906"
+    },
+    {
       "id": "2e020b6f-4d02-4502-93db-6e0d30302c4d",
       "url": "https://github.com/nvm-sh/nvm",
       "domain": "github.com",
@@ -179,8 +495,8 @@
       "forks": 0,
       "createdAt": "2026-09-05T12:04:05.339Z",
       "metaData": {
-        "forks": "85",
-        "stars": "2936",
+        "forks": "88",
+        "stars": "2971",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -404,8 +720,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:46:43.104Z",
       "metaData": {
-        "forks": "909",
-        "stars": "6868",
+        "forks": "923",
+        "stars": "7043",
         "topics": [
           "ai",
           "anthropic",
@@ -547,8 +863,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2060",
-        "stars": "31993",
+        "forks": "2064",
+        "stars": "32060",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -665,8 +981,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:13:49.576Z",
       "metaData": {
-        "forks": "26729",
-        "stars": "204959",
+        "forks": "26736",
+        "stars": "204990",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://opencode.ai",
@@ -1137,8 +1453,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "248",
-        "stars": "3444",
+        "forks": "252",
+        "stars": "3489",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -1423,8 +1739,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1368",
-        "stars": "12137",
+        "forks": "1370",
+        "stars": "12147",
         "topics": [
           "agent-memory",
           "ai",
@@ -2045,8 +2361,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3011",
-        "stars": "31455",
+        "forks": "3012",
+        "stars": "31469",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -2099,7 +2415,7 @@
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
         "forks": "3044",
-        "stars": "25611",
+        "stars": "25613",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -2417,7 +2733,7 @@
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
         "forks": "9066",
-        "stars": "32774",
+        "stars": "32788",
         "topics": [
           "ai",
           "ai-agent",
@@ -2702,8 +3018,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2473",
-        "stars": "19413",
+        "forks": "2480",
+        "stars": "19490",
         "topics": [
           "ai",
           "audiobook",
@@ -2837,8 +3153,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3615",
-        "stars": "46177",
+        "forks": "3648",
+        "stars": "46518",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -2951,8 +3267,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7663",
-        "stars": "59007",
+        "forks": "7667",
+        "stars": "59043",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -3129,8 +3445,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
-        "forks": "2175",
-        "stars": "43840",
+        "forks": "2176",
+        "stars": "43851",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -3236,8 +3552,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "824",
-        "stars": "7583",
+        "forks": "827",
+        "stars": "7635",
         "topics": [
           "chinese",
           "disclosure",
@@ -3295,8 +3611,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:36:12.745Z",
       "metaData": {
-        "forks": "226",
-        "stars": "1341",
+        "forks": "362",
+        "stars": "1795",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://pollen-robotics.com/microduck",
@@ -3406,8 +3722,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15736",
-        "stars": "94399",
+        "forks": "15744",
+        "stars": "94415",
         "topics": [
           "ai",
           "mcp"
@@ -3463,7 +3779,7 @@
       "createdAt": "2026-08-30T12:21:38.676Z",
       "metaData": {
         "forks": "913",
-        "stars": "10939",
+        "stars": "10942",
         "topics": [
           "apple",
           "appstore",
@@ -3659,7 +3975,7 @@
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
         "forks": "1387",
-        "stars": "10854",
+        "stars": "10873",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3711,8 +4027,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5271",
-        "stars": "32225",
+        "forks": "5274",
+        "stars": "32264",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3764,8 +4080,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4120",
-        "stars": "38464",
+        "forks": "4125",
+        "stars": "38475",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -4195,8 +4511,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2188",
-        "stars": "17375",
+        "forks": "2192",
+        "stars": "17390",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -4437,8 +4753,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3585",
-        "stars": "51113",
+        "forks": "3586",
+        "stars": "51125",
         "topics": [
           "browser",
           "chrome",
@@ -4555,8 +4871,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:12:23.083Z",
       "metaData": {
-        "forks": "246",
-        "stars": "6452",
+        "forks": "247",
+        "stars": "6478",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://tailscale.com/tailcat",
@@ -5582,8 +5898,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "3937",
-        "stars": "43165",
+        "forks": "3938",
+        "stars": "43195",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -5774,8 +6090,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3258",
-        "stars": "50200",
+        "forks": "3266",
+        "stars": "50323",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -5972,8 +6288,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6895",
-        "stars": "128702",
+        "forks": "6898",
+        "stars": "128812",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -8029,8 +8345,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49796",
-        "stars": "242269",
+        "forks": "49803",
+        "stars": "242293",
         "topics": [
           "ai",
           "ai-agent",
@@ -8633,8 +8949,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21408",
-        "stars": "253715",
+        "forks": "21423",
+        "stars": "253824",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -8937,8 +9253,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37693",
-        "stars": "250527",
+        "forks": "37700",
+        "stars": "250628",
         "topics": [
           "ai-agents",
           "anthropic",
