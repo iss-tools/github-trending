@@ -1,6 +1,286 @@
 {
   "all": [
     {
+      "id": "34f8bddc-5339-4214-8cc6-f209caf18a0a",
+      "url": "https://github.com/MoonTechLab/LunaTV",
+      "domain": "github.com",
+      "repo": "MoonTechLab/LunaTV",
+      "description": "LunaTV 是一个基于 Next.js 14 开发的自建影视聚合平台。它本身不提供资源，但允许用户接入多种影视源，实现统一搜索、播放进度云同步及收藏管理。支持 Docker 部署与 PWA 安装，适合搭建个人专属的跨设备影音中心。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:27:54.417Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "影视聚合",
+          "Next.js",
+          "Docker",
+          "自托管",
+          "影音站"
+        ],
+        "cover": "",
+        "title": "LunaTV 深度评测：自建跨平台影视聚合播放器",
+        "ability": [
+          "多源聚合搜索",
+          "跨端进度同步",
+          "收藏与历史记录管理",
+          "Docker 一键部署",
+          "PWA 响应式体验"
+        ],
+        "summary": "一个基于 Next.js 的开源影视聚合“壳”，支持多源搜索与跨端进度同步，需 Docker 部署并自配资源源。",
+        "category": [
+          "开源项目",
+          "生活效率",
+          "开发工具"
+        ],
+        "suitable": [
+          "有 Docker 基础的用户",
+          "需要自建私人影院的个人",
+          "多设备观影需求者",
+          "追求数据隐私与掌控力的极客"
+        ],
+        "description": "LunaTV 是一个基于 Next.js 14 开发的自建影视聚合平台。它本身不提供资源，但允许用户接入多种影视源，实现统一搜索、播放进度云同步及收藏管理。支持 Docker 部署与 PWA 安装，适合搭建个人专属的跨设备影音中心。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "ec459631-87f2-4a74-a4f7-bccc43bd52a7",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "domain": "github.com",
+      "repo": "jo-inc/camofox-browser",
+      "description": "基于Camoufox构建的AI专用无头浏览器服务器，提供C++级指纹伪造、REST API接口、MCP集成。能稳定穿透Cloudflare等反爬系统，通过可访问性快照大幅降低Token消耗，支持会话隔离和精细资源控制。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:24:15.180Z",
+      "metaData": {
+        "forks": "1003",
+        "stars": "9312",
+        "topics": [
+          "ai-agent",
+          "anti-bot",
+          "antidetect-browser",
+          "automation",
+          "bot-detection",
+          "browser-automation",
+          "cloudflare-bypass",
+          "headless-browser",
+          "javascript",
+          "nodejs",
+          "playwright",
+          "puppeteer",
+          "scraping",
+          "stealth-browser",
+          "web-scraping"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/jo-inc/camofox-browser#readme",
+        "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement. - jo-inc/camofox-browser"
+      },
+      "summaryData": {
+        "tags": [
+          "无头浏览器",
+          "AI Agent",
+          "反检测",
+          "Cloudflare穿透",
+          "REST API"
+        ],
+        "cover": "",
+        "title": "Camofox Browser 深度评测",
+        "ability": [
+          "C++级指纹伪造",
+          "元素引用系统",
+          "高效Token节省",
+          "会话隔离机制",
+          "代理与GeoIP支持"
+        ],
+        "summary": "为AI代理设计的隐身无头浏览器服务器，C++级反检测穿透Cloudflare",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "反爬虫"
+        ],
+        "suitable": [
+          "AI Agent开发者",
+          "反爬虫工程师",
+          "Web自动化开发者",
+          "需要穿透Cloudflare的团队",
+          "低配服务器运维者"
+        ],
+        "description": "基于Camoufox构建的AI专用无头浏览器服务器，提供C++级指纹伪造、REST API接口、MCP集成。能稳定穿透Cloudflare等反爬系统，通过可访问性快照大幅降低Token消耗，支持会话隔离和精细资源控制。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "922f2e2a-fe71-4dd4-ab26-ca813ea2dd29",
+      "url": "https://github.com/mksglu/context-mode",
+      "domain": "github.com",
+      "repo": "mksglu/context-mode",
+      "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:19:28.703Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "2c61fb0a-afc9-42b3-ac32-f31540fdba67",
+      "url": "https://github.com/microsoft/markitdown",
+      "domain": "github.com",
+      "repo": "microsoft/markitdown",
+      "description": "MarkItDown是微软开源的Python工具，支持PDF、Office、图片（OCR）、音频（转录）等多种格式转换为Markdown，旨在为大模型提供结构清晰、易于理解的输入。支持本地运行与Azure云端增强，具备插件化架构，MIT协议，非常适合需要处理非结构化文档的AI项目与数据管线。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:15:02.341Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "微软",
+          "Markdown",
+          "RAG",
+          "文档处理",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "MarkItDown：微软开源的万能文档转Markdown工具",
+        "ability": [
+          "多格式文档转换",
+          "保留文档结构",
+          "OCR与图像描述",
+          "Azure云端增强",
+          "插件化扩展"
+        ],
+        "summary": "微软开源的多格式转Markdown工具，为大模型RAG场景提供统一、结构化、模型友好的数据摄入方案。",
+        "category": [
+          "开发工具",
+          "数据处理",
+          "AI辅助"
+        ],
+        "suitable": [
+          "RAG/知识库开发者",
+          "数据工程师",
+          "企业IT团队",
+          "学术研究者",
+          "AI应用开发者"
+        ],
+        "description": "MarkItDown是微软开源的Python工具，支持PDF、Office、图片（OCR）、音频（转录）等多种格式转换为Markdown，旨在为大模型提供结构清晰、易于理解的输入。支持本地运行与Azure云端增强，具备插件化架构，MIT协议，非常适合需要处理非结构化文档的AI项目与数据管线。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "d1923727-4ec0-4348-b300-9d2dd77cc65d",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "domain": "github.com",
+      "repo": "heygen-com/hyperframes",
+      "description": "HyperFrames 让你用 HTML/CSS 描述视频，通过 data-* 属性标记时间线与轨道，用 headless Chrome 逐帧抓取并 FFmpeg 编码，输出确定性 MP4。支持 Agent 全流程自动化生产，适配多种动画库，提供 CLI、Catalog、Studio 与 AWS Lambda 渲染，适合将视频纳入代码与 CI/CD。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:11:56.883Z",
+      "metaData": {
+        "forks": "4262",
+        "stars": "44681",
+        "topics": [
+          "ai",
+          "animation",
+          "ffmpeg",
+          "framework",
+          "gsap",
+          "html",
+          "mcp",
+          "puppeteer",
+          "rendering",
+          "typescript",
+          "video"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Write HTML. Render video. Built for agents. Contribute to heygen-com/hyperframes development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "HTML to video",
+          "自动化视频",
+          "AI Agent",
+          "Puppeteer",
+          "GSAP"
+        ],
+        "cover": "",
+        "title": "HyperFrames 深度评测：用 HTML 写视频的“Agent 原生”框架",
+        "ability": [
+          "HTML 原生无构建渲染",
+          "Agent 友好工作流与 20+ 技能",
+          "逐帧确定性输出",
+          "集成多动画库（GSAP/Lottie/Three.js 等）",
+          "Apache 2.0 开源，支持云端渲染"
+        ],
+        "summary": "把 HTML/CSS 直接变成视频的“渲染原语”，适配 AI Agent，无构建、可回归、易批量生产。",
+        "category": [
+          "开源框架",
+          "视频工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "前端/动效工程师",
+          "重度使用 AI 编码 Agent 的用户",
+          "产品/营销/内容团队",
+          "DevOps/平台团队",
+          "视频自动化开发者"
+        ],
+        "description": "HyperFrames 让你用 HTML/CSS 描述视频，通过 data-* 属性标记时间线与轨道，用 headless Chrome 逐帧抓取并 FFmpeg 编码，输出确定性 MP4。支持 Agent 全流程自动化生产，适配多种动画库，提供 CLI、Catalog、Studio 与 AWS Lambda 渲染，适合将视频纳入代码与 CI/CD。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
       "id": "57c0673e-fa61-47ac-854f-b201dfc0e265",
       "url": "https://github.com/Stremio/stremio-web",
       "domain": "github.com",
@@ -65,8 +345,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:25:34.463Z",
       "metaData": {
-        "forks": "787",
-        "stars": "4974",
+        "forks": "791",
+        "stars": "5007",
         "topics": [
           "ai",
           "blackrock",
@@ -203,8 +483,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7409",
-        "stars": "47794",
+        "forks": "7413",
+        "stars": "47829",
         "topics": [
           "claude",
           "codex",
@@ -482,7 +762,7 @@
       "createdAt": "2026-09-05T12:09:38.716Z",
       "metaData": {
         "forks": "214",
-        "stars": "3557",
+        "stars": "3587",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://nosignups.net",
@@ -9290,8 +9570,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37861",
-        "stars": "252227",
+        "forks": "37871",
+        "stars": "252313",
         "topics": [
           "ai-agents",
           "anthropic",

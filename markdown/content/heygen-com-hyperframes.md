@@ -1,0 +1,218 @@
+# heygen-com/hyperframes
+
+[GitHub URL](https://github.com/heygen-com/hyperframes)
+
+
+## HyperFrames 深度评测：用 HTML 写视频的“Agent 原生”框架
+
+> 把 HTML/CSS 直接变成视频的“渲染原语”，适配 AI Agent，无构建、可回归、易批量生产。
+
+- **Tags**: HTML to video, 自动化视频, AI Agent, Puppeteer, GSAP
+- **Category**: 开源框架, 视频工具, AI 编程
+
+## Details
+
+<|assistant|>我需要查看仓库的 Releases 页面，了解版本发布节奏、最近更新内容和稳定性信息，以便评估项目活跃度。</think>
+# HyperFrames 深度评测：用 HTML 写视频的“Agent 原生”框架
+## 一句话总结
+HyperFrames 是一个“把 HTML 变成视频”的开源渲染框架：你用 HTML 描述视频（含时间线与轨道），它在本地用 headless Chrome 逐帧抓取并用 FFmpeg 编码出确定性 MP4；专为 AI 编码 Agent 设计，既可 CLI 跑，也可集成到云端渲染，整体采用 Apache 2.0 开源协议。它的价值在于：把视频这件事变成前端代码，可审查、可回归、可由 Agent 自动生产。出自 HeyGen 官方并已在生产使用， Stars 与 Forks 均在高位、生态与文档正在快速迭代。
+## 背景与痛点：它为什么要出现？
+视频创作一直“硬”，要自动化更是难上加难。传统 NLE/剪辑软件学习曲线陡，而且难以程序化控制；而用大模型直接生成视频又往往不可控、难以回归测试。
+HeyGen 团队在一篇官方研究文章里直言他们的探索路径：先让 LLM 写代码来做视频，但发现“大提示词+来回修补+大量手写胶水代码”并不是生产级解法；他们也曾尝试用 Remotion（React 组件式视频），但发现 React 的框架约束反而把模型的创造力“关进了笼子”——Guardrail 加得越多，产出越趋同、越保守；最后他们退回“纯 HTML/CSS/JS”，创造力回来了，但问题变成了“如何在自由态网页下仍能渲染出确定性的 MP4 视频”。HyperFrames 就是这个问题的答案：极简的“HTML + data-* 属性”的作者模型，可插拔的动画运行时，以及一个按帧索取的渲染管线。
+对开发者和创作者而言，痛点非常具体：
+- 想把前端已有的组件、动画、图表变成视频，却要在另一套 NLE 工具里重来一遍；
+- 希望视频像代码一样能进 Git、能做回归测试、能在 CI 里自动产出，但传统工具难以集成；
+- 想让 AI/Agent 帮忙批量做视频，但 Agent 对 NLE/剪辑软件的“图形界面”并不擅长，而它更擅长写代码（尤其是 HTML/JS）。
+HyperFrames 把这些痛点收拢，把“渲染层”做成一个稳定、可复用、AI 友好的基础构件，让上层可以用 Agent、Studio 或任意脚本来驱动。
+## 核心亮点与功能剖析
+### 1) HTML 原生，真正的“无构建”
+- 视频就是网页：你在 HTML 里用 data-* 属性标记“何时上屏、持续多久、在哪条轨道”，比如 data-start、data-duration、data-track-index、data-width、data-height；文件本身可以直接在浏览器打开预览，无需打包。  
+- 不强制 React：没有 JSX，也没有专有格式，保留“写网页即写视频”的直观性，降低了人机共写的门槛，也降低了 Agent 的理解成本。  
+- 动画库“拿来就用”：官方内置适配 GSAP、CSS Animation、Lottie、Three.js、Anime.js、WAAPI 等，还能自己写“帧适配器”接入任意动画库，但要保证“可 seek（可跳转到指定帧）”。
+比喻：就像把视频的时间轴写成了网页的“注释”，引擎逐帧按剧本翻书、拍照，而不是按“播放”来录像。
+### 2) Agent 原生：Skills 与工作流齐备
+- HyperFrames 不只提供一个 CLI，它官方带了 20+ 个“技能（skills）”，安装后，AI Agent 能学会“如何做视频”：从对齐需求、规划脚本、写 HTML/JS、放置媒体、做 lint、预览到渲染，是闭环生产流程。首选安装“Core Skills”，核心路由是 /hyperframes（意图路由），它会再按需拉取具体的工作流技能。  
+- 官方工作流覆盖常见场景：
+  - /product-launch-video：网站/产品发布视频、站点漫游、社媒切片（推荐时长 30–90 秒，最长约 3 分钟）。  
+  - /faceless-explainer：把任意文本变成“无人出镜”的说明视频（视觉由 Agent 自行创造，如排版、抽象图、数据可视化等）。  
+  - /pr-to-video：给出 PR URL/owner/repo#N 引用，通过 gh CLI 拉取信息，自动生成“变更讲解/功能揭秘/修复说明”的视频。  
+  - /embedded-captions：为现有“口播”视频添加嵌入式字幕/字幕轨，支持多种视觉风格（Verbatim rail、画面后嵌入、纯电影感嵌入等）。  
+  - /talking-head-recut：把采访/播客/口播视频“重新包装”成带设计图层的视频（下三分、数据高亮、动态标题、引用条、侧边栏、画中画）。  
+  - /motion-graphic：短时长、设计主导的无旁白动态图形（10 秒以内），输出 MP4 或透明通道覆盖层。  
+  - /music-to-video：给定音乐（音频文件/从视频提取/按情绪生成），生成与节拍对齐的视频（歌词视频、幻灯片、动感推广），音乐驱动节奏。  
+  - /slideshow：演示/宣讲/交互式幻灯片，输出为可导航的 Deck，不是视频。  
+  - /general-video：通用、多场景、长视频兜底工作流，并支持“Companion Mode”（与完整工具箱协同创作）。  
+  - /remotion-to-hyperframes：单向迁移，把 Remotion（React）组合迁移为 HyperFrames 的 HTML。  
+- 领域技能按需加载：
+  - /hyperframes-core：组合合约（composition contract）、data-* 属性语义、轨道/子组合/变量、框架持有的媒体播放、确定性规则。  
+  - /hyperframes-animation：所有动画原语与场景蓝图、转场、运行时适配（GSAP/Lottie/Three.js/Anime.js/CSS/WAAPI/TypeGPU）。  
+  - /hyperframes-keyframes：安全的“关键帧写作”，支持跨运行时的可 seek 关键帧、诊断命令。  
+  - /hyperframes-creative：非动画类的创意方向（frame.md/design.md、色板、字体、旁白、节拍规划、音频响应视觉、组合模式）。  
+  - /media-use：“媒体操作系统”——把“找素材/下载/生成/复用”一站式打通（BGM/SFX/图/图标/Logo/语音/调色/LUT）；当目录缺失时还能调用 TTS/音乐/图像模型生成，并支持转录、字幕、去背景与跨项目复用。  
+  - /hyperframes-cli：CLI 开发循环命令（init/lint/check/snapshot/preview/render/publish/doctor），以及 HeyGen 托管的 cloud render 与 AWS Lambda 渲染命令（lambda deploy/render/progress）。  
+  - /hyperframes-audio：组合内已放置音频的混音（人声对应的音乐“避让”carve、效果链 EQ/压缩/限制/门/饱和/延迟/混响/合唱/相位/比特粉碎、音量/效果参数的自动化包络、子混总线等）。  
+  - /hyperframes-registry：通过 hyperframes add 安装与连接注册表中的块/组件到组合中，也指引如何贡献新块/组件。  
+  - /figma：导入 Figma 资产/Token/组件/分镜段落，重建为运动状态（读取帧为状态而非静态切片），支持 Motion 动画（MCP）与着色器（MCP source/原生导出）到组合中。  
+比喻：Skills 就像是把“视频老导演的经验”拆成一张张可复用的卡片，Agent 拿着卡片按步骤执行；你只要告诉 Agent“要做一个什么视频”，它会调用对应技能完成剩下的事。
+### 3) 确定性渲染：帧准确，回归友好
+- 渲染原理：解析 HTML → 用 Puppeteer/Headless Chrome 逐帧“seek”到指定时间点 → 截图 → FFmpeg 编码视频与混音；因此同一输入必然得到同一输出，不受机器性能影响。  
+- 不依赖“真实时钟播放”：动画库的时间线被统一为“可暂停、可跳转”的库时钟；渲染时按帧驱动，避免了机器慢导致的掉帧或不一致。  
+- 天然适合 CI/CD 与自动化管线：你可以在每次发布时自动渲染“新版本发布视频”“PR 讲解视频”，做基线回归。文档中也提供了 test:regression 等脚本。
+比喻：它不是“录像”，而是“按页码翻书拍照”，每一页都由你精确指定，慢的机器只是翻慢一点，但每一页拍出来是一样的。
+### 4) 一整套 Stack：从 CLI 到云端、Catalog、Studio、社区 Playground
+- CLI：npx hyperframes init / preview / render / lint / snapshot / publish / doctor，完成从项目创建、预览、校验到渲染、发布的开发闭环。  
+- Core/Engine/Producer：解析、运行时、帧适配、生产管线（捕获+编码+混音）等核心能力分别打包，便于按需引入。  
+- Studio：浏览器端的可视化编辑/预览界面，与 CLI 共享同一项目格式；目前状态为“可用，仍在演进”。  
+- Catalog：一键安装的可复用块/组件（转场、覆盖层、字幕、图表、地图、特效），例如 flash-through-white、instagram-follow、data-chart 等；对应命令 npx hyperframes add <block>。  
+- AWS Lambda 渲染：CLI 内置 lambda deploy/render/progress，可以把渲染栈部署到云端，从本地或 CI 驱动。  
+- hyperframes.dev：社区 Playground，用于预览、迭代、分享和渲染 HTML 原生视频项目。
+### 5) frame.md：把设计系统“翻译成视频语言”
+- 大多数品牌都有 Web 向的 design.md，但它们不是为“摄像机”写的；frame.md 把这些 Token/规则“反转”成帧语境，使得 AI Agent 可以在不依赖浏览器 chrome 的情况下，按设计系统产出视频。输出是 DESIGN.md 的超集，整个工具链都能读。  
+- 文档中展示了一系列主题/样式模版，例如 Biennale Yellow / BlockFrame / Blue Professional / Bold Poster 等，可在 hyperframes.dev/design 预览与混剪。
+比喻：就像把品牌“设计规范”这本说明书，重写了一版“摄像机专用说明书”，让 Agent 知道文字大小/间距/对比度在视频里该怎么用。
+### 6) 开源协议友好：Apache 2.0
+- 仓库采用 Apache 2.0，可商用、无按次收费、无使用人数门槛，也允许修改与再分发（需保留声明）。
+### 7) 生态证据与示例丰富
+- 官方称 HyperFrames 已在 HeyGen 的产品发布视频生产中使用；ADOPTERS.md 列出了 tldraw、TanStack 等采用团队的示例，并欢迎提交 PR 加入名单。  
+- 官方文档“Showcase”展示了一系列实际案例：调色与媒体特效、同一素材多版本变量化输出、音乐节拍驱动剪辑、PR 讲解视频、在 Studio 中按时间轴可视化编辑、年度回顾数据卡片等，均可观看/阅读/运行/混剪。  
+- companion 仓库 hyperframes-launch-video 提供了一个“真正的生产项目”，你可以克隆、预览并自行渲染，包含 index.html（根组合）、compositions/（子组合）、assets/（媒体）、meta.json（时长/分辨率/帧率）与 SCRIPT.md/STORYBOARD.md/HANDOFF.md 等制作说明，是极佳的学习模版与参考案例。
+## 技术栈与架构解析（开发者视角）
+- 语言/运行时：TypeScript + Node.js 22+；使用 Bun 作为开发与包管理（monorepo：packages/*）。  
+- 渲染链路：Puppeteer/Headless Chrome 用于帧抓取 → FFmpeg 负责编码与混音。官方 README 给出了“逐帧抓取并编码”的明确描述。  
+- 动画生态：GSAP、CSS Animation、Lottie、Three.js、Anime.js、WAAPI 等，通过“帧适配器”抽象为可 seek 的运行时，保证与渲染管线对齐。  
+- 仓库结构（关键包）：
+  - hyperframes：CLI（命令：init/preview/render/lint 等）。  
+  - @hyperframes/core：类型、解析器、生成器、Linter、运行时、帧适配。  
+  - @hyperframes/engine：基于 Puppeteer + FFmpeg 的帧级页面→视频捕获引擎。  
+  - @hyperframes/producer：端到端渲染管线（捕获+编码+混音）。  
+  - @hyperframes/studio：浏览器编辑 UI。  
+  - @hyperframes/player：可嵌入的 Web Component（<hyperframes-player>）。  
+  - @hyperframes/shader-transitions：WebGL 转场库。  
+  - @hyperframes/aws-lambda：AWS Lambda 部署面与 SDK。  
+- 开发者体验相关：
+  - 根目录 package.json 包含 dev/build/test/lint/verify/sync-schemas 等脚本链，使用 oxlint/oxfmt/knip/lefthook/commitlint 等工具来保持代码质量与流程规范。  
+  - 使用 Git LFS 管理回归测试基准视频（约 240MB），并明确给出 LFS 安装与跳过 LFS 的 clone 方案，说明项目对 CI 与质量保障重视。  
+  - 支持多种 Agent/IDE 的插件集成目录结构：.agents/skills、.claude/、.codex/、.cursor-plugin/ 等，skills-manifest.json 定义清单，方便不同插件载入技能。
+核心设计理念（通俗化）
+- “每个元素都是 clip（片段）”：你给元素打上 data-start/data-duration/data-track-index，就像用笔在剧本上把每个“上镜”和“下镜”画出来，而不是在时间轴软件里拖拽。  
+- “适配器模式统一时钟”：所有动画库的时间线被统一成“seek(t)”接口；渲染时引擎按帧号去调用这些接口，保证无论你用什么库，每一帧都得到稳定一致的画面。
+## 上手门槛与部署体验
+最低门槛路径（完全不用写代码，靠 Agent）
+- 在已有编码 Agent 的目录执行：
+  - npx skills add heygen-com/hyperframes，并在交互选择器中选中“Core Skills”。  
+  - 向 Agent 提出需求，例如：
+    - 使用 /hyperframes，创建一个 10 秒的产品开场：淡入标题、背景视频、轻微背景音乐。  
+  - Agent 会自动规划脚本、生成 index.html 与相关素材引用，并运行 npx hyperframes preview 启动本地预览；迭代满意后，由 Agent 或你手动运行 npx hyperframes render 输出 MP4。  
+- 不需要理解 HTML/动画细节，适合产品/运营/内容人员；身边只要有一个编码 Agent 就能玩起来。
+本地 CLI 路径（写代码）
+- 环境要求：
+  - Node.js 22+（文档明确）。  
+  - FFmpeg 已安装并加入 PATH。  
+- 快速开始（官方 README 示例）：
+  - npx hyperframes init my-video && cd my-video  
+  - npx hyperframes preview（启动本地预览，浏览器热更）。  
+  - npx hyperframes render（输出 MP4）。  
+- 体验：无构建步骤，修改 HTML 即可在预览中看到结果；Linter 可以检查时间线与用法合规性，降低低级错误。
+部署与云端渲染
+- 本机渲染：直接使用 CLI，适合开发/迭代、小批量生产。  
+- Docker：仓库提供了 Dockerfile.test；社区 Issue 有关于“Docker 中导航超时”的讨论，说明 Docker 场景可用，但在复杂页面/长视频时可能需要调优 Puppeteer 超时/资源策略。  
+- 云端：官方支持 AWS Lambda 渲染，CLI 提供 lambda deploy/render/progress 子命令，便于将渲染任务放到云端弹性执行。
+文档与示例
+- 官方文档站结构清晰：从“什么是 HyperFrames”“快速开始”“选择工作流”到开发者 API 都有系统性指引，并包含 30 Days of HyperFrames、每周更新与 Changelog 等栏目，显示持续迭代与示例增量。  
+- 仓库内 examples/ 目录与 companion 仓库 hyperframes-launch-video 提供真实项目结构与制作文档，可直接克隆运行，便于学习与二次开发。
+## 社区活跃度与生命力
+- GitHub 数据（参考页面抓取时的快照）：Stars 约 3.8 万–4.4 万，Forks 约 3.6 千–4.3 千，Commits 超过 4200，Issues 与 PR 数量在两位数与三位数区间，说明项目受到广泛关注、有持续贡献与讨论。官方文档“Showcase”“Weekly updates”也显示出频繁的更新与内容补充。  
+- 质量保障与工程化：
+  - 使用 Git LFS 管理回归测试的“基准视频”（约 240MB），并提供明确的安装与跳过 LFS 的说明，项目对 CI 与回归有明确保障。  
+  - 大量测试相关脚本（producer:test:unit/test:integration/test:regression 等），在 package.json 中可见。  
+- 社区讨论：Issues 中常见 Docker 超时、与 Remotion 对比、特定动画库适配等话题，说明用户已在生产环境尝试各种用法，生态处于成长期。
+## Demo/代码示例（一眼看懂怎么用）
+示例 1：最小可运行的组合（官方 README 片段）
+- 总长 6 秒、分辨率 1920×1080，包含背景视频、主标题、背景音乐；标题在第 1 秒开始、持续 4 秒，并通过 GSAP 做淡入/上浮动画。
+```html
+<div id="stage" data-composition-id="launch" data-start="0" data-width="1920" data-height="1080">
+  <video
+    class="clip"
+    data-start="0"
+    data-duration="6"
+    data-track-index="0"
+    src="intro.mp4"
+    muted
+    playsinline
+  ></video>
+  <h1 id="title" class="clip" data-start="1" data-duration="4" data-track-index="1">Launch day</h1>
+  <audio
+    data-start="0"
+    data-duration="6"
+    data-track-index="2"
+    data-volume="0.5"
+    src="music.wav"
+  ></audio>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.from("#title", { opacity: 0, y: 40, duration: 0.8 }, 1);
+    window.__timelines = window.__timelines || {};
+    window.__timelines.launch = tl;
+  </script>
+</div>
+```
+- 使用 CLI 预览与渲染：
+  - npx hyperframes preview  
+  - npx hyperframes render --output demo.mp4  
+- 预览时直接在浏览器打开 index.html 即可；渲染时 Puppeteer 会逐帧 seek GSAP 时间轴并截图，FFmpeg 编码出视频，同一输入必然得到同一输出。
+示例 2：使用 Catalog 安装可复用块
+```bash
+npx hyperframes add flash-through-white   # shader 转场
+npx hyperframes add instagram-follow      # 社交覆盖层
+npx hyperframes add data-chart            # 动态图表
+```
+然后在 HTML 中按文档约定引入并配置即可使用。
+## 目标人群与收益（你能得到什么）
+- 前端/动效工程师：直接用 Web 技术产出视频，减少学习成本；可将现有组件/动画库/可视化库“视频化”，复用熟悉的调试工具（DevTools）。收益：技能复用、可维护、可回归。  
+- AI 编码 Agent 的重度用户：让 Agent 直接产出视频项目；skills 把视频生产模式固化成可重放、可审计的工作流；与 Claude Code、Cursor、Gemini CLI、Codex 等多平台 Agent 支持集成。收益：自动化、规模化、统一到代码工作流。  
+- 产品/营销/内容团队（与开发协作）：批量生产产品发布、站点漫游、数据视频与社交短视频；通过品牌级别的 frame.md 与 Catalog 组件保障风格一致性。收益：提效、降本、风格稳定、可 A/B 测试。  
+- DevOps/平台团队：把视频渲染纳入 CI/CD，在发布说明/站点更新/PR 合并后自动产出视频；结合 AWS Lambda 实现弹性渲染。收益：自动化流水线、可控质量、减少人工重复。
+## 竞品/同类对比
+### vs Remotion（最直接对标）
+- 相同点：都基于 headless Chrome + FFmpeg 做确定性视频渲染，输出质量在技术上基本一致。第三方评测也指出“底层渲染相同，质量基本打平”。  
+- 核心差异：
+  - 作者模型：HyperFrames = 纯 HTML/CSS + data-*；Remotion = React 组件。  
+  - 构建与预览：HyperFrames 无需构建，index.html 直接可预览；Remotion 需打包/构建（有开发服务器）。  
+  - Agent 友好度：HyperFrames 的 HTML 原生更适合 Agent 直接读写；Remotion 的 JSX/项目结构对“边改边跑”的 Agent 路径门槛更高；HeyGen 官方博客也坦言“React 框架把 Agent 管束住了”，退回 HTML 才让创意回来。  
+  - 分布式渲染：两者都支持云端渲染；Remotion Lambda 较成熟，HyperFrames 提供 AWS Lambda 路径，仍在迭代。  
+  - 许可：HyperFrames = Apache 2.0（可商用、宽松）；Remotion = Source-available Remotion License（非纯开源）。  
+- 官方文档提供了“HyperFrames or Remotion?”的页面，包含逐条对比与示例，建议做选型前阅读该页以便根据团队的技能栈与场景选择。
+### vs 传统 NLE 与 SaaS 工具（Premiere、剪映、Canva 等）
+- 可编程性：HyperFrames = 代码版本控制；传统 NLE = 项目文件/云工程，以人肉编辑为主。  
+- 批量与自动化：HyperFrames 易于接入 CI/CD 与 Agent；传统工具需要复杂插件或外部控制脚本。  
+- 非开发者门槛：NLE/SaaS 对视频创作者更直观；HyperFrames 需要前端/编码能力，或借助 Agent 降低门槛。
+### vs “AI 视频生成”（扩散模型）
+- 可控性与可修改性：HyperFrames 把视频表示为代码，易于修改、版本控制和局部调整；扩散生成是黑盒，难以做到“帧准确”和可重跑。  
+- 真实度：扩散模型强在生成逼真画面；HyperFrames 更适合“信息/叙事/动效/数据可视化”类内容，而非自然场景生成。第三方评测也指出 HyperFrames 更像“底层渲染原语”，而非“一站式生成平台”。
+## 局限与不足
+- 学习曲线：完全不走代码而仅用 Agent 路径较轻松；若要深度定制，仍需熟悉 HTML/CSS/动画库与调试技巧。  
+- 素材制作仍在链路外：HyperFrames 更像“剪辑/渲染引擎”，不提供脚本撰写、数字人生成、图像生成、分发发布的完整闭环；需要配合其他模型或服务完成素材生产。第三方评测也强调它的定位是“渲染原语”，而非“非技术创作者的一站式工具”。  
+- 渲染资源成本：逐帧抓取的渲染方式在长视频与高分辨率时消耗明显；本地渲染受制于单机算力，云端渲染需承担云服务成本。  
+- 社区成熟度：对比 Remotion 较成熟的组件生态与 Lambda，HyperFrames 的 Catalog 与 Studio 仍在快速演进中；部分场景（如复杂 3D 长序列）的最佳实践尚需沉淀。  
+- Docker 与复杂页面兼容：社区 Issue 反馈在 Docker 容器内可能出现“页面导航超时”等稳定性问题，需要合理配置 Puppeteer 的页面加载与超时策略，对运维不友好。说明在复杂环境下的生产落地仍需踩坑与调优。
+## 结语与行动建议
+- 终极评判：HyperFrames 把“视频”变成“代码”，让前端技术栈与 AI Agent 直接进入视频生产管线，是一个面向未来工作流的“渲染原语”。HTML 原生/无构建/Agent 友好/Apache 2.0 的组合，在同类方案中差异明显，非常适合开发者与重度 AI 用户。如果你团队已有前端能力与 Agent 工作流，引入 HyperFrames 能显著提升视频自动化与可维护性。  
+- 如何选择：
+  - 想用 Agent 大规模产出“信息类/动效类/产品宣发类”视频，优先选 HyperFrames。  
+  - 已有大量 React 组件库与团队熟悉 Remotion 生态，可继续沿 Remotion 或两者并存。  
+  - 完全不会写代码且目前也没打算用编码 Agent，HyperFrames 不是合适起点；宜先用可视化 NLE/SaaS 工具。  
+- 快速上手建议：
+  1) 有 Agent：在一个临时目录执行 npx skills add heygen-com/hyperframes，选择 Core Skills；然后发一条“用 /hyperframes 做一个 10 秒产品开场”的指令，跟着预览与迭代即可。  
+  2) 纯 CLI：npx hyperframes init demo && cd demo，把官方的 HTML 示例贴到 index.html，npx hyperframes preview 看效果，npx hyperframes render 输出 MP4。  
+  3) 看一个真实项目：克隆 hyperframes-launch-video，对照 index.html/compositions/meta.json/SCRIPT.md/STORYBOARD.md/HANDOFF.md，理解结构与流程。
+## 附：CLI 常用命令速览
+- npx hyperframes init my-video：初始化新项目。  
+- npx hyperframes preview：启动本地预览（浏览器热更）。  
+- npx hyperframes render：渲染当前项目为 MP4（可加 --output 路径）。  
+- npx hyperframes lint：检查项目结构与用法合规性。  
+- npx hyperframes add <block>：从 Catalog 安装组件（如 flash-through-white、instagram-follow、data-chart）。  
+- npx hyperframes doctor：诊断环境与配置问题。  
+- npx hyperframes lambda deploy/render/progress：云端渲染管理。
+---
+以上信息综合自 GitHub 仓库 README、官方文档站、设计背景文章、第三方评测、以及社区讨论与示例仓库。

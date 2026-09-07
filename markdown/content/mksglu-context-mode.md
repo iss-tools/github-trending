@@ -1,0 +1,146 @@
+# mksglu/context-mode
+
+[GitHub URL](https://github.com/mksglu/context-mode)
+
+
+## Context Mode 深度评测：AI 编程上下文管理神器
+
+> 一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。
+
+- **Tags**: MCP, Claude Code, Token 节省, 开源, 本地化
+- **Category**: AI 编程, 开发工具, 效率工具
+
+## Details
+
+# 以下是对 mksglu/context-mode 的深度评测与剖析（来源以 GitHub 仓库 README 与官方网站为主，辅以 MCP 目录条目）
+- 一句话总结：它是一个“在 MCP 协议层接管大量工具输出与会话状态”的本地服务器，能把 AI 编程代理原本会灌入上下文窗口的原始数据统统“挡在门外”，改用本地 SQLite + FTS5 做可检索、可复现的状态存储，从而把上下文消耗降低 90%+，并让会话在被压缩后仍能无损恢复上下文；配合对 17+ 平台的路由与 Hook 能力，已成高用量 AI 编程场景下的“省 token 护照”。
+## 背景与痛点：为什么要“管”上下文？
+- MCP 工具带来的“双头烧”：每次 MCP 工具调用既要在前把工具定义塞进上下文、又在后把原始输出塞回来，导致可用的“有效窗口”迅速被吃掉。官方 README 给了直观的数字：一次 Playwright 快照约 56 KB、20 条 GitHub issue 约 59 KB、一份访问日志约 45 KB——半小时内近 40% 的上下文就这样被消耗掉。
+- 会话被“抹记忆”的尴尬：当代理做上下文压缩以腾出空间时，它常会丢掉“在改哪些文件、做到哪一步、上次你定了什么决策”等信息；结果你经常要重复说明之前的上下文，打断思路、浪费成本。
+- 模型写废话：代理有时会用长篇大论的“客套话”或冗长解释来“凑字数”，反过来也从输出侧烧掉了本可用于代码/推理的上下文。
+- 朴素方案都不够用：
+  - 事后过滤：在上游已经把内容灌进上下文以后再截断，既浪费 token 又丢失信息。
+  - 强迫模型“少说点”：过于激进的精简提示词已被证明会损害编码/推理的基准表现（项目 README 引用了 Moonshot AI 在 kimi‑k2.5 的实验）。
+Context Mode 的定位是“解决上下文问题的另一半”：不仅压缩工具定义，更把“巨大的工具输出”与“会话记忆”统一在本地 MCP 层做可检索、可复现的治理，而不是让模型在对话里反复搬运与重述。
+## 核心亮点与功能剖析
+### 1) Context Saving：把“洪水”关进沙箱
+- MCP 服务器 + 沙箱工具：它注册了 11 个 MCP 工具。其中 6 个是“沙箱工具”（如 ctx_execute、ctx_batch_execute、ctx_execute_file、ctx_index、ctx_search、ctx_fetch_and_index），另外 5 个是“元工具”（stats/doctor/upgrade/purge/insight）。
+- 原理像“写个脚本再要结果”：与其把一整堆日志、HTML、CSV 都贴给模型，不如让模型在沙箱里写一小段代码，处理后再只返回结果。例如 README 里的经典对比：
+  - 以前：连续 47 次文件读取，约 700 KB。
+  - 以后：1 次 ctx_execute 写脚本统计，仅 3.6 KB。
+- 实测“省多少”：
+  - 官方基准给出，一个完整会话中 315 KB 的原始输出可被压缩到 5.4 KB，节省约 98%；会话有效时长从约 30 分钟延长到约 3 小时。
+  - 细分场景包括：Playwright 快照（56.2 KB → 299 B）、GitHub Issues（20 条，58.9 KB → 1.1 KB）、访问日志（500 条，45.1 KB → 155 B）、Git log（153 条，11.6 KB → 107 B）、测试输出（30 套，6.0 KB → 337 B）等，整体节省区间在 94%–100%。
+### 2) Session Continuity：把“被压缩抹掉的记忆”放进本地数据库
+- 一切事件都被存下来：文件编辑、Git 操作、任务、错误、用户决策等，都被写入“按项目隔离”的 SQLite。当会话被压缩，它并不会把这些历史再一股脑倒回上下文，而是用 FTS5 索引，按需做 BM25 检索，只把“相关的那些片段”还给模型，从而恢复到上一步的工作状态。
+- 恢复机制：继续会话（如 `--continue`、`--resume`、`/resume`）时，SessionStart hook 检测到当前会话的“事件表为空”，就从项目的 `session_resume` 表中取出最近的未消费快照进行“再水合”，模型几乎无感地回到上一次的进度。官方说明：路由与恢复需要 5 类 hook 协同工作（PreToolUse/PostToolUse/UserPromptSubmit/PreCompact/SessionStart/Stop 等）。
+- 划清边界：当你不以 `--continue` 继续而是开启一个全新的会话时，旧会话数据会立即被删除，保持“全新会话就是干净的一张白纸”的语义。
+### 3) Think in Code：让模型“写程序、不要当计算器”
+- 设计理念：LLM 更适合写分析代码，而不是在对话里做繁重的数据处理。Context Mode 强制一个范式：把耗上下文的工作写成沙箱脚本，只把结果拿回来。
+- 好处不仅是省 token：代码本身可被审查、可复用、可版本化；同时更贴合“模型是代码生成器，而不是数据处理器”的角色分工，这已成为其支持的全部 17 个客户端与 OpenClaw 网关集成的统一范式。
+### 4) 不“教模型怎么说话”，只“教数据往哪儿走”
+- 只管路由、不管风格：它并不强制模型用“精简体”回复，避免因过度压缩提示词而损害推理/编码质量。它专注于“哪些数据不要进上下文、需要时如何检索回来”。
+### 5) 工具与命令一体的“瑞士军刀”
+- 会话内，直接对模型说：
+  - `ctx stats`：查看节省统计与调用计数
+  - `ctx doctor`：诊断运行时、Hook、FTS5、版本等信息
+  - `ctx index`：把本地文件/目录索引到知识库
+  - `ctx search`：搜索已索引内容
+  - `ctx upgrade`：拉最新、重建、迁移缓存、修复 Hook
+  - `ctx purge`：永久清除所有已索引内容
+  - `ctx insight`：在浏览器打开托管的分析看板（官网的 Insight）。
+- 在终端里也能直接用 CLI 命令（如 `context-mode doctor`、`context-mode index .`、`context-mode search ...` 等），适合自动化脚本与运维诊断。
+## 技术栈与架构解析
+- 语言与运行时：TypeScript 为主；底层 SQLite 适配三种路径（Bun 时用 bun:sqlite、Node ≥22.5 用 node:sqlite、其他情况用 better-sqlite3），这让“原生平民 JS/TS 运行时”的能力被充分利用，并兼顾兼容性与性能。
+- MCP + Hooks：它作为 MCP 服务器存在，同时利用各平台提供的 Hook（SessionStart/PreCompact/PreToolUse/PostToolUse/Stop/UserPromptSubmit 等）来：
+  - 在工具调用前做“路由与拦截”
+  - 在工具调用后做“捕获与索引”
+  - 在压缩前做“快照与恢复准备”
+  - 在会话启动/结束时做注入/清理
+  Hook 的存在使得路由能够“自动化执行”，而不只是依赖一个静态指令文件，保证 ≈98% 的节省效果；而无 Hook 的平台则依赖手工复制路由指令文件，通常只能做到约 60% 的节省，且容易因为一次未拦截的大 `curl`/Playwright 调用而毁掉一整轮的节省成果。
+- 沙箱执行与多语言支持：
+  - `ctx_execute`/`ctx_execute_file`/`ctx_batch_execute` 都在隔离的子进程里运行，脚本之间彼此无法访问内存/状态，只把 stdout 打捞进对话上下文。
+  - 支持 12 种语言运行时：JavaScript/TypeScript/Python/Shell/Ruby/Go/Rust/PHP/Perl/R/Elixir/C#，并且会自动检测 Bun 以加速 JS/TS 执行。
+- 意图驱动过滤（Intent-driven filtering）：当输出超过 5 KB 且提供了 intent 时，系统会把全部输出索引进 SQLite FTS5，然后按意图检索相关片段返回，附带可供后续追问的检索词，从而避免“有查询意图却扔给模型一个巨大的 Blob”。
+- 知识库（FTS5 + BM25）：索引时按标题分段且保留代码块；检索时使用 BM25 排序（考虑词频/逆文档频率/长度归一化）并对标题/标题头给予 5 倍权重，索引时还对词汇做 Porter Stemming 以提升同词根匹配能力。
+- 安全模型：
+  - 继承与扩展你在 Claude Code `settings.json` 里的权限规则（deny/allow），并在沙箱内执行同样的校验，例如禁止在 `ctx_execute`/`ctx_execute_file`/`ctx_batch_execute` 里使用 `sudo` 或读取 `.env` 等。链条命令 `&&`/`;`/`|` 会被分段检查，只要有一段命中 deny 就整条拦截。默认不启用任何权限，只有当你显式配置后才激活； deny 优于 allow，项目级规则覆盖全局规则。
+  - 项目边界防护：`ctx_execute_file` 默认只允许在项目根内操作；超出边界的绝对路径、`../../` 跳转、或指向外部的项目内符号链接都会被拒绝，除非你在允许列表中显式放行（例如 `/var/log/**`）。
+## 上手门槛与部署体验
+- 最低要求：Node.js ≥22.5 或 Bun；部分平台需要特定版本（Claude Code ≥1.0.33、Copilot CLI 插件 ≥1.0.7 等）。
+- 平台适配化安装（按复杂度分组）：
+  - Claude Code：通过插件市场一键安装（`/plugin marketplace add ...` + `/plugin install ...`），重启后即可用斜杠命令（如 `/context-mode:ctx-doctor`）进行自检。路由、Hook、工具注册全自动，无需复制配置文件。
+  - Gemini CLI：全局安装 npm 包 + 修改 `~/.gemini/settings.json` 一份配置即可（含 MCP + 4 类 Hook），重启后验证 `/mcp list` 看到连接状态。
+  - VS Code Copilot / JetBrains Copilot / GitHub Copilot CLI / Cursor / Codex CLI / Kiro / Qwen Code / Antigravity CLI（agy）/ Pi / OMP 等均给出了具体 JSON 配置与 Hook 写法，按平台约定路径存放文件并重启即可；不少平台还支持“插件一键安装”路径（如 Copilot CLI 的 `copilot plugin install ...` 与 OMP 的 `omp plugin install context-mode`）。
+  - 对于无 Hook 的平台（如 Zed、Antigravity IDE），则需要手动复制路由指令文件到项目（例如 `.cursor/rules/context-mode.mdc`），可视为“一次性配置，后续无需维护”。
+- Docker 与 OpenClaw/Pi 场景：其 OpenClaw 网关插件安装说明中提到 Docker 环境下 `$OPENCLAW_STATE_DIR` 默认为 `/openclaw`，`npm run install:openclaw` 会自动处理依赖、构建、注册与重启。注意这并非“Docker 镜像一键跑起 context-mode 本身”，而是“在 OpenClaw 的 Docker 容器/运行时中作为插件安装”。
+- 文档与诊断：
+  - README 按平台详细拆解安装、验证与路由方式；并提供 CLI 命令与 `scripts/ctx-debug.sh` 用来生成完整的诊断报告（OS/运行时/FTS5/Hook/配置/进程/会话 DB 等），便于提 Issue 时提供可复制粘贴的现场信息。
+  - 内置 `ctx doctor` 命令可快速检查运行时/FTS5/注册状态等，上手友好。
+## 目标人群与收益（你能得到什么）
+- 深度使用 AI 编程代理的工程师（尤其是付费 API/按 token 计费场景）：每个会话节省 90%+ 的上下文，意味着同样预算下可用会话时长、复杂度与轮次显著增加；官方给出从 ~30 分钟延长到 ~3 小时的经验值，这对长时间“结对编程”尤为立竿见影。
+- 多平台/多 IDE 用户：支持 Claude Code、Gemini CLI、VS Code Copilot、JetBrains Copilot、GitHub Copilot CLI、Cursor、OpenCode、OpenClaw、Codex CLI、Kiro、Qwen Code、Antigravity（CLI/IDE）、Zed、Pi、OMP 等，可在不同环境复用同一套“上下文节俭模式”，避免每个平台重新学一次配置。
+- 在大型单体仓库/复杂项目工作的团队：频繁的日志读取、Git 历史、测试输出与文档检索既费 token 又容易丢失上下文；通过 `ctx_index` + `ctx_search` + `ctx_execute`，可把“读文件→翻页→记位置”的工作变成“写脚本→只看结果”，大幅降低认知负载与上下文开销。
+- 安全与合规敏感的组织：所有 SQLite 都在本地、无遥测、无账号、无云同步；只有当你主动打开托管看板 `ctx insight` 时才会涉及官网的站点，其余时候完全离线可控，满足“代码不出本地”的基本要求。
+- 收益小结：
+  - 钱：节省 token，降低按用量付费的账单。
+  - 时间：减少“重复解释上下文”“因上下文满而打断并开新会话”的次数。
+  - 质量：Think in Code 把大量处理写成可复用/可审查的脚本；按需检索让模型能拿到“它真正需要的片段”，而不是被“噪声淹没”。
+## 竞品/同类对比：它处于什么位置？
+- 仅 MCP 工具层的“输出后处理”方案：通常只做“把已进入上下文的内容截断/压缩”，丢失信息且已经支付了 token 成本；而 Context Mode 在“数据进入上下文之前”就拦截并转存到本地 FTS5，避免无谓的成本与信息损失。
+- 纯“提示词省字法”：通过 System Prompt 强迫模型“少说点”，但已被证实会损害编码/推理表现；Context Mode 不干预模型语气，只做路由与数据治理，将“如何说话”的决定权留给模型或用户配置。
+- 内置 RAG/知识库类方案：许多厂商提供“知识库 + 检索”的 SaaS，但通常需要联网、上传数据并按坐席计费；Context Mode 把类似能力“本地化、项目化”，且与各 IDE/CLI 的 Hook 深度耦合，形成自动路由与自动索引，无需额外维护一套在线知识库。
+- Hook-less 的 MCP 服务器：大部分 MCP 服务器仅提供“更多工具”，而不拦截/路由已有工具；Context Mode 的独特之处在于“工具 + Hook + 平台级路由文件”的三层组合，使“默认使用沙箱工具”成为可自动执行的策略，而不是每次都要提醒模型。
+## 局限与不足
+- 学习成本不算低：要理解 MCP、Hook、平台级配置、路由与意图过滤等概念，对纯“开箱即用”型用户有一定门槛；尤其是多平台混用时要避免 Hook 重复注册、路径冲突等问题。
+- 平台差异带来的体验落差：有 Hook 的平台（Claude Code、Copilot CLI、Cursor 等）可实现接近 98% 的节省；无 Hook 平台（如 Zed、Antigravity IDE）只能靠“路由文件”做到约 60% 的节省，且容易因为一次大输出而被“击穿”。
+- 生态与版本耦合：某些平台需要较新版本（如 Cursor 的 Hook 验证、OpenClaw 的生命周期修复等），若你的工具链版本较旧，要么升级要么面临“Hook 不生效”的降级体验。
+- 协议为 Elastic License 2.0（ELv2）：这是“源码可用，但不得作为托管/托管服务来转售”的许可证；适合个人或团队内部使用与定制，但若想把它包装成 SaaS 卖给第三方则不被允许。需要提前评估合规边界（README 也说明了选择 ELv2 的理由是防止被闭源 SaaS 重新打包）。
+- 调试与排错依赖对 MCP/Hook 模型的理解：当节省不如预期时，需要使用 `ctx stats` 与 `doctor` 检查 Hook 是否命中、路由是否生效、平台是否被正确识别；对于初次接触 MCP 的用户，排查思路不是那么直观。
+## Demo / 代码示例：一分钟尝鲜“Think in Code”
+以下演示在 Claude Code 或其他支持 context-mode 的环境中，模型会自动调用 `ctx_execute`；你也可手动让模型执行：
+- 场景：统计仓库 `src/` 下所有 `.ts` 文件的行数，而不是读 47 次文件。
+```js
+ctx_execute("javascript", `
+  const fs = require('fs');
+  const path = require('path');
+  const files = fs.readdirSync('src').filter(f => f.endsWith('.ts'));
+  files.forEach(f => {
+    const fp = path.join('src', f);
+    const lines = fs.readFileSync(fp, 'utf8').split('\\n').length;
+    console.log(f + ': ' + lines + ' lines');
+  });
+`);
+```
+- 效果：
+  - 以前：47 次 Read 工具调用 ≈ 700 KB。
+  - 以后：一次沙箱执行 ≈ 3.6 KB，上下文节省两个数量级，且你可以复用/版本控制这个脚本。
+- 对比“大 JSON 查询”的官方示例（在 README 中）：
+  - 原始：7.5 MB JSON 有 20,000 条记录，目标找出隐藏在第 13000 号的那条；若是直接 `curl` 再扔给模型，开销巨大。
+  - 使用 Context Mode：模型在沙箱里写脚本解析、定位并只把那条记录输出到上下文，实测从 7.5 MB → 0.9 KB（99% 节省）。
+## 结语与行动建议
+- 终极评判：Context Mode 把“上下文管理”从“事后救火”升级成“源头治理 + 本地记忆库 + 自动路由”，用 MCP + Hooks + SQLite FTS5 三板斧，让 AI 编程代理真正能够在长时间、多轮次、多工具的复杂任务里“记得住上下文、花得起 token、算得动数据”。对于高频、高用量场景，它几乎已成必装基础设施，而非锦上添花。
+- 如果你符合以下任意一项，建议立刻尝试：
+  - 每周都和 Claude Code/Cursor/Copilot 等结对编程，且经常遇到“上下文满了”的打断；
+  - 你的工作流包含大量日志/Git 历史/文档/CSV 的读取与检索；
+  - 团队有多个 IDE/CLI 工具，希望统一一套“节俭上下文”的策略；
+  - 对数据隐私敏感，不愿把任何代码与会话上传到外部知识库服务。
+- 推荐起步路线（以 Claude Code 为例）：
+  1) 确认版本 ≥1.0.33 并更新。
+  2) 在 Claude Code 里执行：
+     ```
+     /plugin marketplace add mksglu/context-mode
+     /plugin install context-mode@context-mode
+     ```
+  3) 重启或 `/reload-plugins`，然后运行：
+     ```
+     /context-mode:ctx-doctor
+     ```
+  4) 开一个多步骤任务（例如“创建一个带路由/测试/错误处理的 Express API”），在做几十次工具调用后，运行：
+     ```
+     /context-mode:ctx-stats
+     ```
+  5) 再触发一次上下文压缩，观察会话能否从你最后的提示继续而无须重复输入；根据需要，你还可以在 Claude Code 的 `settings.json` 中添加状态栏来实时看到“本会话节省/总节省/效率百分比”。
+- 如果你暂时不想 Commit 到全局，可以先从 MCP-only 安装开始（`claude mcp add context-mode -- npx -y context-mode`），体验“11 个工具 + 节省效果”，再按需求升级到 Hook + 自动路由的“完全体”。
+## 备注
+- 本评测基于 GitHub 仓库 README 与官网的公开说明；在尝试前请务必阅读仓库的 LICENSE 与 CONTRIBUTING 文档以了解合规与贡献方式。仓库目前 Star 约 20.5k、Fork 约 1.5k，说明项目已被广泛关注与采用。
