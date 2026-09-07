@@ -1,6 +1,371 @@
 {
   "all": [
     {
+      "id": "750e82b5-c411-4cc6-9eb5-4c0145e9fa87",
+      "url": "https://github.com/roboflow/rf-detr",
+      "domain": "github.com",
+      "repo": "roboflow/rf-detr",
+      "description": "RF-DETR 是 Roboflow 推出的实时检测 Transformer 模型，集成了 DINOv2 骨干网络，统一支持检测、分割和关键点任务。它在保持高精度的同时实现实时推理，提供简洁 API，适合工业落地与学术研究。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:54:42.681Z",
+      "metaData": {
+        "forks": "1184",
+        "stars": "9341",
+        "topics": [
+          "computer-vision",
+          "detr",
+          "instance-segmentation",
+          "machine-learning",
+          "object-detection",
+          "rf-detr",
+          "sota"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://rfdetr.roboflow.com",
+        "description": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026]  - GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026]"
+      },
+      "summaryData": {
+        "tags": [
+          "目标检测",
+          "Roboflow",
+          "深度学习",
+          "实时推理",
+          "Transformer"
+        ],
+        "cover": "",
+        "title": "Roboflow RF-DETR：新一代实时多任务视觉模型",
+        "ability": [
+          "实时目标检测",
+          "实时实例分割",
+          "关键点检测",
+          "极简训练推理API",
+          "多部署支持"
+        ],
+        "summary": "Roboflow 推出的实时检测 Transformer 模型，在精度与速度上超越 YOLO，统一支持检测、分割和关键点。",
+        "category": [
+          "AI 模型",
+          "计算机视觉",
+          "开源项目"
+        ],
+        "suitable": [
+          "计算机视觉开发者",
+          "工业部署团队",
+          "AI 研究人员",
+          "寻求高性能模型的用户"
+        ],
+        "description": "RF-DETR 是 Roboflow 推出的实时检测 Transformer 模型，集成了 DINOv2 骨干网络，统一支持检测、分割和关键点任务。它在保持高精度的同时实现实时推理，提供简洁 API，适合工业落地与学术研究。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "8f8ccb72-35b0-4a15-beb9-5698d14fbb21",
+      "url": "https://github.com/advaitpaliwal/feynman",
+      "domain": "github.com",
+      "repo": "advaitpaliwal/feynman",
+      "description": "Feynman 是一个基于多 Agent 架构的开源 AI 研究工具，支持通过命令行快速生成带引用的调研报告。它集成了 PaperRank 进行论文筛选，提供文献综述生成、代码审计及复现计划等功能，并内置本地工作台管理研究全流程，极大提升科研与工程调研效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:51:16.186Z",
+      "metaData": {
+        "forks": "1034",
+        "stars": "8910",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://feynman.is",
+        "description": "The open source AI research agent. Contribute to advaitpaliwal/feynman development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI 研究代理",
+          "文献综述",
+          "自动化科研",
+          "PaperRank"
+        ],
+        "cover": "",
+        "title": "Feynman：全能开源 AI 研究代理",
+        "ability": [
+          "多源检索与带引用简报",
+          "PaperRank 论文智能排序",
+          "文献综述与对照分析",
+          "研究审计与复现计划",
+          "本地科学工作台"
+        ],
+        "summary": "会读论文、会查网页、会写综述的开源 AI 研究代理，一条命令生成带引用的科研简报。",
+        "category": [
+          "开发工具",
+          "科研助手",
+          "AI 应用"
+        ],
+        "suitable": [
+          "科研人员",
+          "算法工程师",
+          "产品战略决策者",
+          "生物医药从业者",
+          "开源开发者"
+        ],
+        "description": "Feynman 是一个基于多 Agent 架构的开源 AI 研究工具，支持通过命令行快速生成带引用的调研报告。它集成了 PaperRank 进行论文筛选，提供文献综述生成、代码审计及复现计划等功能，并内置本地工作台管理研究全流程，极大提升科研与工程调研效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "5d787b8f-135a-4c43-99bb-f8b97efa830d",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude",
+      "domain": "github.com",
+      "repo": "zubair-trabzada/geo-seo-claude",
+      "description": "基于 Claude Code 的 AI 优化工具，通过评分、审计和报告生成，帮助用户提升网站在 AI 搜索引擎中的可见度，抢占流量红利。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:47:43.693Z",
+      "metaData": {
+        "forks": "1582",
+        "stars": "10342",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.skool.com/aiworkshop",
+        "description": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community - zubair-trabzada/geo-seo-claude"
+      },
+      "summaryData": {
+        "tags": [
+          "GEO",
+          "SEO",
+          "Claude",
+          "AI 搜索",
+          "流量优化"
+        ],
+        "cover": "",
+        "title": "Geo-seo-claude：AI 搜索时代的全方位 SEO 优化利器",
+        "ability": [
+          "AI 搜索可引用性评分",
+          "爬虫合规性检测",
+          "品牌提及扫描",
+          "平台就绪度评估",
+          "自动生成 PDF 报告"
+        ],
+        "summary": "专为 Claude 打造的 GEO-first SEO 技能包，助你提升网站在 AI 搜索中的可引用性与曝光率。",
+        "category": [
+          "SEO 工具",
+          "AI 应用",
+          "开发工具"
+        ],
+        "suitable": [
+          "SEO 顾问与营销机构",
+          "SaaS 与电商运营",
+          "内容创作者",
+          "本地商家",
+          "Claude Code 用户"
+        ],
+        "description": "基于 Claude Code 的 AI 优化工具，通过评分、审计和报告生成，帮助用户提升网站在 AI 搜索引擎中的可见度，抢占流量红利。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "36eaf490-1725-4f80-afa7-2221471d22fc",
+      "url": "https://github.com/pascalorg/editor",
+      "domain": "github.com",
+      "repo": "pascalorg/editor",
+      "description": "Pascal Editor 是一个基于 React Three Fiber 与 WebGPU 的开源 3D 建筑编辑器，支持插件化、本地持久化与 MCP 集成，适合用来构建在线户型/BIM 编辑器，并与 AI 工作流深度耦合。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:42:01.918Z",
+      "metaData": {
+        "forks": "2849",
+        "stars": "22094",
+        "topics": [
+          "3d",
+          "architecture",
+          "bim",
+          "cad",
+          "editor",
+          "floorplan",
+          "mcp",
+          "nextjs",
+          "parametric-design",
+          "react-three-fiber",
+          "threejs",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://editor.pascal.app",
+        "description": "Create and share 3D architectural projects. Contribute to pascalorg/editor development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "WebGPU",
+          "React Three Fiber",
+          "MCP",
+          "插件化",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Pascal Editor 深度评测",
+        "ability": [
+          "3D 建筑编辑",
+          "WebGPU 高性能渲染",
+          "插件化扩展",
+          "AI/Agent 集成",
+          "数据持久化与撤销重做"
+        ],
+        "summary": "基于 WebGPU 的开源 3D 建筑编辑器，适合构建 BIM、户型图及 AI 场景。",
+        "category": [
+          "开发工具",
+          "3D/BIM",
+          "AI 编程"
+        ],
+        "suitable": [
+          "建筑与室内设计师",
+          "BIM/Web 3D 开发者",
+          "AI/Agent 工程师",
+          "教育与创作者"
+        ],
+        "description": "Pascal Editor 是一个基于 React Three Fiber 与 WebGPU 的开源 3D 建筑编辑器，支持插件化、本地持久化与 MCP 集成，适合用来构建在线户型/BIM 编辑器，并与 AI 工作流深度耦合。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "407ec6fd-1ab4-474d-8f1f-2ec7cbd1f660",
+      "url": "https://github.com/lightpanda-io/browser",
+      "domain": "github.com",
+      "repo": "lightpanda-io/browser",
+      "description": "Lightpanda 是一款基于 Zig 构建的轻量级无头浏览器，摒弃了传统 Chrome 的图形渲染，专为 AI 代理和网页自动化设计。它通过 CDP 协议兼容 Playwright，并内置 Agent 模式和 MCP 服务，显著降低服务器资源占用，适合高并发爬取与自动化任务。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:37:31.821Z",
+      "metaData": {
+        "forks": "1642",
+        "stars": "34661",
+        "topics": [
+          "browser",
+          "browser-automation",
+          "cdp",
+          "headless",
+          "lightpanda",
+          "playwright",
+          "puppeteer",
+          "zig"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://lightpanda.io",
+        "description": "Lightpanda: the headless browser designed for AI and automation - lightpanda-io/browser"
+      },
+      "summaryData": {
+        "tags": [
+          "无头浏览器",
+          "AI Agent",
+          "自动化",
+          "Zig",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "Lightpanda：为 AI 与自动化而生的“极客”无头浏览器",
+        "ability": [
+          "极低资源占用",
+          "高并发高性能",
+          "CDP 协议兼容",
+          "AI Agent 原生支持",
+          "原生 MCP 服务"
+        ],
+        "summary": "用 Zig 写的高性能无头浏览器，专为 AI 和自动化设计，省资源、速度快。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 工具"
+        ],
+        "suitable": [
+          "AI Agent 开发者",
+          "高并发爬虫团队",
+          "自动化测试工程师",
+          "追求性能的极客",
+          "云服务成本敏感型团队"
+        ],
+        "description": "Lightpanda 是一款基于 Zig 构建的轻量级无头浏览器，摒弃了传统 Chrome 的图形渲染，专为 AI 代理和网页自动化设计。它通过 CDP 协议兼容 Playwright，并内置 Agent 模式和 MCP 服务，显著降低服务器资源占用，适合高并发爬取与自动化任务。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
+      "id": "74394fde-772c-4c68-830a-3d97b50e9a2f",
+      "url": "https://github.com/bytedance/deer-flow",
+      "domain": "github.com",
+      "repo": "bytedance/deer-flow",
+      "description": "DeerFlow 是字节跳动开源的 SuperAgent 运行底座，不仅支持聊天，更通过沙箱、记忆和子智能体编排，实现从资料研究到代码执行的长程任务自动化闭环，适合需要深度 AI 工作流落地的团队。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-07T12:32:55.578Z",
+      "metaData": {
+        "forks": "11283",
+        "stars": "81690",
+        "topics": [
+          "agent",
+          "agentic",
+          "agentic-framework",
+          "agentic-workflow",
+          "ai",
+          "ai-agents",
+          "deep-research",
+          "harness",
+          "langchain",
+          "langgraph",
+          "langmanus",
+          "llm",
+          "multi-agent",
+          "nodejs",
+          "podcast",
+          "python",
+          "superagent",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://deerflow.tech",
+        "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours. - bytedance/deer-flow"
+      },
+      "summaryData": {
+        "tags": [
+          "SuperAgent",
+          "Workflow",
+          "ByteDance",
+          "Sandbox",
+          "开源"
+        ],
+        "cover": "",
+        "title": "字节跳动 DeerFlow：开源 SuperAgent 运行底座",
+        "ability": [
+          "长程任务规划与执行",
+          "安全隔离沙箱环境",
+          "持久化记忆与检索",
+          "多智能体协作编排",
+          "可扩展技能与工具集"
+        ],
+        "summary": "字节跳动开源的 SuperAgent 运行底座，集成沙箱、记忆与子智能体编排，让 AI 完成长程任务。",
+        "category": [
+          "AI 工具",
+          "开发框架",
+          "自动化"
+        ],
+        "suitable": [
+          "研究与内容创作者",
+          "数据分析人员",
+          "开发者与研发团队",
+          "AI Agent 落地企业",
+          "开源技术爱好者"
+        ],
+        "description": "DeerFlow 是字节跳动开源的 SuperAgent 运行底座，不仅支持聊天，更通过沙箱、记忆和子智能体编排，实现从资料研究到代码执行的长程任务自动化闭环，适合需要深度 AI 工作流落地的团队。"
+      },
+      "type": "project",
+      "dateAdded": "20260907"
+    },
+    {
       "id": "34f8bddc-5339-4214-8cc6-f209caf18a0a",
       "url": "https://github.com/MoonTechLab/LunaTV",
       "domain": "github.com",
@@ -11,8 +376,12 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:27:54.417Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "8976",
+        "stars": "9601",
+        "topics": [],
+        "license": "License",
+        "homepage": "",
+        "description": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源 - MoonTechLab/LunaTV"
       },
       "summaryData": {
         "tags": [
@@ -128,8 +497,33 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "1513",
+        "stars": "20591",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
       },
       "summaryData": {
         "tags": [
@@ -177,8 +571,20 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "13224",
+        "stars": "179450",
+        "topics": [
+          "autogen",
+          "autogen-extension",
+          "langchain",
+          "markdown",
+          "microsoft-office",
+          "openai",
+          "pdf"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Python tool for converting files and office documents to Markdown. - microsoft/markitdown"
       },
       "summaryData": {
         "tags": [
@@ -226,8 +632,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4262",
-        "stars": "44681",
+        "forks": "4276",
+        "stars": "44944",
         "topics": [
           "ai",
           "animation",
@@ -346,7 +752,7 @@
       "createdAt": "2026-09-06T14:25:34.463Z",
       "metaData": {
         "forks": "791",
-        "stars": "5007",
+        "stars": "5040",
         "topics": [
           "ai",
           "blackrock",
@@ -483,8 +889,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7413",
-        "stars": "47829",
+        "forks": "7416",
+        "stars": "47879",
         "topics": [
           "claude",
           "codex",
@@ -592,8 +998,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
-        "forks": "1736",
-        "stars": "25787",
+        "forks": "1737",
+        "stars": "25844",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -762,7 +1168,7 @@
       "createdAt": "2026-09-05T12:09:38.716Z",
       "metaData": {
         "forks": "214",
-        "stars": "3587",
+        "stars": "3624",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://nosignups.net",
@@ -863,8 +1269,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "574",
-        "stars": "16424",
+        "forks": "577",
+        "stars": "16517",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -985,8 +1391,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:52:08.664Z",
       "metaData": {
-        "forks": "2196",
-        "stars": "20090",
+        "forks": "2197",
+        "stars": "20106",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1180,8 +1586,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2109",
-        "stars": "33025",
+        "forks": "2111",
+        "stars": "33074",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -1457,8 +1863,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
-        "forks": "5367",
-        "stars": "32823",
+        "forks": "5368",
+        "stars": "32833",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1511,7 +1917,7 @@
       "createdAt": "2026-09-03T11:44:12.644Z",
       "metaData": {
         "forks": "661",
-        "stars": "5055",
+        "stars": "5060",
         "topics": [
           "ai",
           "ast",
@@ -1770,8 +2176,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "281",
-        "stars": "3906",
+        "forks": "284",
+        "stars": "3940",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -2057,7 +2463,7 @@
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
         "forks": "1380",
-        "stars": "12236",
+        "stars": "12249",
         "topics": [
           "agent-memory",
           "ai",
@@ -2679,7 +3085,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "3037",
-        "stars": "31736",
+        "stars": "31772",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -2732,7 +3138,7 @@
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
         "forks": "3046",
-        "stars": "25636",
+        "stars": "25640",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -2797,8 +3203,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
-        "forks": "157",
-        "stars": "2110",
+        "forks": "158",
+        "stars": "2126",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -3050,7 +3456,7 @@
       "createdAt": "2026-09-01T11:32:08.671Z",
       "metaData": {
         "forks": "9062",
-        "stars": "32879",
+        "stars": "32892",
         "topics": [
           "ai",
           "ai-agent",
@@ -3277,8 +3683,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:15:10.644Z",
       "metaData": {
-        "forks": "7664",
-        "stars": "93336",
+        "forks": "7670",
+        "stars": "93359",
         "topics": [
           "3b1b-videos",
           "animation",
@@ -3335,8 +3741,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2553",
-        "stars": "20240",
+        "forks": "2562",
+        "stars": "20356",
         "topics": [
           "ai",
           "audiobook",
@@ -3470,8 +3876,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3656",
-        "stars": "46709",
+        "forks": "3657",
+        "stars": "46744",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -3584,8 +3990,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7697",
-        "stars": "59312",
+        "forks": "7705",
+        "stars": "59373",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -3762,8 +4168,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:44:07.910Z",
       "metaData": {
-        "forks": "2179",
-        "stars": "43874",
+        "forks": "2180",
+        "stars": "43876",
         "topics": [
           "runtime-validation",
           "schema-validation",
@@ -3869,8 +4275,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:38:37.729Z",
       "metaData": {
-        "forks": "873",
-        "stars": "8242",
+        "forks": "875",
+        "stars": "8321",
         "topics": [
           "chinese",
           "disclosure",
@@ -3928,8 +4334,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:36:12.745Z",
       "metaData": {
-        "forks": "367",
-        "stars": "1868",
+        "forks": "371",
+        "stars": "1879",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://pollen-robotics.com/microduck",
@@ -4291,8 +4697,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1412",
-        "stars": "11065",
+        "forks": "1414",
+        "stars": "11089",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4344,8 +4750,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5338",
-        "stars": "32753",
+        "forks": "5351",
+        "stars": "32856",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4397,8 +4803,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4167",
-        "stars": "38738",
+        "forks": "4176",
+        "stars": "38784",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -4828,8 +5234,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2224",
-        "stars": "17613",
+        "forks": "2226",
+        "stars": "17640",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -5188,8 +5594,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:12:23.083Z",
       "metaData": {
-        "forks": "260",
-        "stars": "6639",
+        "forks": "261",
+        "stars": "6656",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://tailscale.com/tailcat",
@@ -6407,8 +6813,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3383",
-        "stars": "51754",
+        "forks": "3399",
+        "stars": "52024",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -6605,8 +7011,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "6980",
-        "stars": "130287",
+        "forks": "6992",
+        "stars": "130493",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -7629,8 +8035,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52632",
-        "stars": "476720",
+        "forks": "52641",
+        "stars": "476814",
         "topics": [
           "api",
           "apis",
@@ -7942,7 +8348,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "273",
-        "stars": "3550",
+        "stars": "3552",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -8908,7 +9314,7 @@
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
         "forks": "418",
-        "stars": "5929",
+        "stars": "5948",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -8959,7 +9365,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3157",
-        "stars": "29588",
+        "stars": "29592",
         "topics": [
           "ai",
           "language",
@@ -9080,7 +9486,7 @@
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
         "forks": "461",
-        "stars": "4873",
+        "stars": "4892",
         "topics": [
           "agent-runtime",
           "ai",
@@ -9200,7 +9606,7 @@
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
         "forks": "1874",
-        "stars": "14688",
+        "stars": "14694",
         "topics": [
           "ebay",
           "email",
@@ -9317,8 +9723,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2734",
-        "stars": "35874",
+        "forks": "2738",
+        "stars": "35891",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -9497,8 +9903,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
-        "forks": "8449",
-        "stars": "71178",
+        "forks": "8448",
+        "stars": "71233",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -9570,8 +9976,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "37871",
-        "stars": "252313",
+        "forks": "37873",
+        "stars": "252378",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -9631,8 +10037,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2724",
-        "stars": "28413",
+        "forks": "2725",
+        "stars": "28435",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -9694,8 +10100,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "609",
-        "stars": "19812",
+        "forks": "611",
+        "stars": "19835",
         "topics": [
           "dpi",
           "gpui",
@@ -9761,7 +10167,7 @@
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
         "forks": "673",
-        "stars": "10441",
+        "stars": "10454",
         "topics": [
           "cactus",
           "gemini",

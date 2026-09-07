@@ -1,0 +1,144 @@
+# pascalorg/editor
+
+[GitHub URL](https://github.com/pascalorg/editor)
+
+
+## Pascal Editor 深度评测
+
+> 基于 WebGPU 的开源 3D 建筑编辑器，适合构建 BIM、户型图及 AI 场景。
+
+- **Tags**: WebGPU, React Three Fiber, MCP, 插件化, 开源
+- **Category**: 开发工具, 3D/BIM, AI 编程
+
+## Details
+
+以下是 GitHub 项目 pascalorg/editor（Pascal Editor）的深度评测文章。
+---
+# 一句话总结
+Pascal Editor 是一个基于 React Three Fiber 与 WebGPU 的**开源 3D 建筑编辑器**，既能直接当成线上三维建模工具使用，也提供可组合的 NPM 包与插件化能力，非常适合用来构建 BIM 类编辑器、户型图生成器，以及与 AI 工作流（如 MCP）深度集成的场景。
+---
+## 背景与痛点
+- 传统建筑/BIM 工具多为桌面端、重量级，学习曲线陡峭，协作与部署成本高。
+- Web 端三维编辑器普遍性能受限（依赖 WebGL），难以应对复杂建筑场景；且缺乏清晰的状态管理与可扩展能力。
+- AI/Agent 工作流需要“可控、可写”的 3D 场景接口与本地存储能力，现有方案要么封闭，要么集成成本高。
+Pascal Editor 在这些背景下应运而生：采用 WebGPU 提升渲染性能，用现代 React 生态与 Zustand 实现可预测的状态管理，并内置 MCP 服务与本地持久化，天然面向自动化与 AI 场景。
+---
+## 核心亮点与功能剖析
+### 1) 技术栈与架构设计（亮点：现代化、可组合）
+- 技术栈：React 19 + Next.js 16 + Three.js（WebGPU）+ React Three Fiber + Drei + Zustand + Zod + Zundo。
+- 架构：Turborepo monorepo。apps/editor 为独立 Next.js 应用；packages/ 将核心、查看器、编辑器、内置节点、CLI 与 MCP 拆分，既可整体使用也可按需集成。
+- 分工清晰：
+  - @pascal-app/core：Schema/场景状态（Zustand）、注册表契约、空间查询、事件总线。
+  - @pascal-app/viewer：3D 渲染与共享系统。
+  - @pascal-app/editor：编辑工具、面板、选择管理、直接操作 UI。
+  - @pascal-app/nodes：内置节点定义、渲染器与系统。
+  - @pascal-app/cli：本地持久化安装与进程管理。
+  - @pascal-app/mcp：对 MCP 主机暴露场景工具、资源与存储。
+> 通俗比喻：就像把一辆车拆为发动机、底盘、车身与内饰等“标准模块”，你想造“工具车”或“家用车”，都可以复用同一批零件。
+### 2) 数据模型与状态管理（亮点：节点化、可追踪）
+- 节点基类：BaseNode { id, type, parentId, visible, camera?, metadata? }，采用扁平字典存储（Record<id, AnyNode>），通过 parentId/children 建立层级。典型层级为 Site → Building → Level → Wall/Slab/Zone/Item/Scan/Guide 等。
+- 状态管理：
+  - useScene：场景数据（节点、rootIDs、脏节点、CRUD），持久化到 IndexedDB 并通过 Zundo 提供 50 步撤销/重做。
+  - useViewer：查看器状态（选择、楼层显示模式、相机模式）。
+  - useEditor：编辑器状态（当前工具、面板状态等）。
+- 模式：React 组件订阅状态，系统在渲染循环（useFrame）中处理“脏节点”并更新几何。
+> 通俗比喻：就像用“流水线账本”记录每个零件的增删改，所有操作都有据可查，并能随时回退。
+### 3) 渲染与“系统”驱动（亮点：高性能、易扩展）
+- 渲染器：React 组件为每种节点类型创建 Three.js 对象，并通过 useRegistry 注册到场景注册表；系统根据节点数据更新几何。
+- 系统：
+  - 核心系统：WallSystem（带斜接与 CSG 开洞）、SlabSystem、CeilingSystem、RoofSystem、ItemSystem（根据父对象定位）。
+  - 查看器系统：LevelSystem（楼层可见性与叠合/爆炸/单层模式）、ScanSystem、GuideSystem。
+- 数据流：用户操作 → 工具处理器 → useScene.createNode/updateNode → 标记脏节点 → NodeRenderer 重渲染与注册 → 系统检测脏节点并更新几何 → 清除脏标记。
+### 4) 工具与交互（亮点：开箱即用的编辑体验）
+- 工具栏驱动的工具集：
+  - SelectTool：选择与操作。
+  - WallTool：画墙。
+  - ZoneTool：创建区域。
+  - ItemTool：布置家具/设备。
+  - SlabTool：创建楼板。
+- 选择管理：支持层次导航（Site → Building → Level → Zone → Items），不同层级有独立的悬停/点击策略。
+### 5) 插件化（亮点：扩展不改动核心）
+- 插件可提供节点类型、3D/2D 渲染器、放置工具、参数化面板等，与内置插件使用同一 Plugin 契约，无需单独的“内部 API”。官方示例：pascalorg/plugin-trees（程序化树木、花草、草地与预设面板），可克隆作为起点。
+### 6) MCP 集成与本地持久化（亮点：面向 AI 工作流）
+- CLI 启动编辑器并在后台启动已认证的 MCP 服务，选择无冲突回环端口，并将项目持久化到 ~/.pascal/data/pascal.db；可让 Agent 调用 pascal mcp connect。
+- MCP 包暴露场景工具、资源、提示词与本地存储，便于 AI/Agent 直接读写场景数据、执行操作并持久化，满足自动化与“AI+3D”的集成需求。
+### 7) 可组合的 NPM 包（亮点：嵌入到你自己的应用）
+- 查看器与内置节点为独立包：
+  - 安装：npm install @pascal-app/core @pascal-app/viewer @pascal-app/editor @pascal-app/nodes
+  - 使用：await loadPlugin(builtinPlugin) 后即可挂载 <Viewer>，复用完整能力。
+---
+## 目标人群与收益
+- 建筑与室内设计师：快速构建三维建筑方案并导出，在浏览器中协同，无需安装重型软件。
+- 开发者（建筑/地产/家装/游戏）：
+  - 集成在线户型/楼栋编辑器。
+  - 搭建 BIM-like 编辑工具与自定义导出管线。
+  - 结合 AI/Agent 进行自动化建模或批量方案生成。
+- AI/Agent 工程师：通过 MCP 暴露标准接口与本地存储，让大模型可稳定“看图、改房、保存方案”，降低幻觉、增强可控性。
+- 教育与创作者：学习现代 Web 3D、状态管理与系统架构；利用插件机制进行二次开发。
+---
+## 竞品/同类对比
+- Sweet Home 3D：桌面为主，Web 端能力有限；Pascal 在性能与现代架构上更具优势，且提供 API 与插件扩展路径。
+- blender-browser/ArchViz Web 端方案：多为展示为主，编辑能力与“系统驱动”的几何生成不及 Pascal 的专注。
+- 各类户型图编辑器（多为 Canvas 2D）：Pascal 提供真 3D 与几何生成能力，更适合精细化设计。
+---
+## 上手门槛与部署体验
+### 快速本地运行（无需 clone）
+- npx @pascal-app/cli editor 即可启动本地持久化编辑器与 MCP 服务。
+### 开发环境（从源码）
+- 根目录运行 bun dev 启动所有包的监听（热重载）。编辑器默认在 localhost:3002。
+- 构建：turbo build；也可按包过滤构建与发布（如 @pascal-app/core/@pascal-app/viewer）。
+### 生态与文档
+- 官方站点 editor.pascal.app 提供入口与说明；仓库内提供开发指南、插件开发与贡献指南。
+- Discussions 中有“Docker 分发？”等社区问题，说明容器化部署是常见需求，但官方镜像未直接提供。
+---
+## 社区活跃度与生命力
+- Star/Fork：约 22.1k Stars / 2.8k Forks，热度极高。
+- Issues：约 27；PR：约 15；活跃 Discussions 板块（包括公告、问答、想法、展示等）。
+- 许可证：MIT，允许商用与衍生；官方站点强调“开放构建与可自托管”。
+---
+## 局限与不足
+- WebGPU 依赖：要求较新的浏览器与硬件，在兼容性受限的环境（某些企业内网或旧设备）可能无法正常使用。
+- 文档完整度：虽然 README 与开发者指南已在仓库中，但仍有社区在 Discussions 中请求“架构与代码库解释”，表明对新手来说上手资料可以更体系化。
+- Docker 官方镜像：社区已提出“Docker 分发”问题，目前未见官方镜像发布；需要自行封装。
+- AI 集成复杂度：MCP/Agent 集成需要一定的架构理解，对于不熟悉 MCP 的开发者存在学习成本。
+---
+## Demo / 代码示例（最简集成 viewer）
+```bash
+# 安装依赖
+npm install @pascal-app/core @pascal-app/viewer @pascal-app/editor @pascal-app/nodes
+```
+```tsx
+import { loadPlugin } from '@pascal-app/core'
+import { builtinPlugin } from '@pascal-app/nodes'
+import { Viewer } from '@pascal-app/viewer'
+// 加载内置插件
+await loadPlugin(builtinPlugin)
+// 在 React 组件中挂载 Viewer（示例）
+export default function App() {
+  return <Viewer />
+}
+```
+说明：在真实应用中，需根据场景数据与配置传递必要 props，该片段展示“最小可行集成”的调用链。
+---
+## 代码示例（本地持久化运行）
+```bash
+npx @pascal-app/cli editor
+```
+- 效果：启动编辑器并后台运行 MCP 服务；数据持久化至 ~/.pascal/data/pascal.db；端口自动选择避免冲突。
+---
+## 结语与行动建议
+- 综合判断：Pascal Editor 是“架构现代、扩展性强、对 AI 友好”的开源 3D 建筑编辑器，适合做嵌入型 BIM/户型编辑器以及与 Agent/MCP 联动的场景引擎。WebGPU 带来性能红利，但也带来兼容性权衡。
+- 如果你需要：
+  - 开箱即用：直接 npx @pascal-app/cli editor 体验本地持久化编辑器。
+  - 快速嵌入项目：安装 @pascal-app/* 相关包，用 <Viewer> + loadPlugin(builtinPlugin) 起步。
+  - 定制节点与工具：参考 pascalorg/plugin-trees 开发插件，避免改动核心仓库。
+- 行动清单：
+  - 优先运行本地 CLI，熟悉 UI/UX 与 MCP 工作流。
+  - 通读 README 的“Architecture/Key Files/Contributing”与官方文档，理解 stores/registry/systems 模型。
+  - 用最小的 Viewer 集成示例验证宿主集成可行性，再做深度定制。
+  - 若需生产环境容器部署，提前规划 Docker 打包与 CI 集成方案（社区已有相关讨论可供参考）。
+---
+## 来源
+- GitHub 仓库主页与 README（架构、栈、CLI、示例等）。
+- GitHub Discussions（Star/Fork、Issues/PR 统计与社区讨论）。
+- 官方站点与 LICENSE（MIT、自托管与开放构建）。

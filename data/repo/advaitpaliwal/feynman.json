@@ -1,0 +1,54 @@
+{
+  "id": "8f8ccb72-35b0-4a15-beb9-5698d14fbb21",
+  "url": "https://github.com/advaitpaliwal/feynman",
+  "domain": "github.com",
+  "repo": "advaitpaliwal/feynman",
+  "description": "Feynman 是一个基于多 Agent 架构的开源 AI 研究工具，支持通过命令行快速生成带引用的调研报告。它集成了 PaperRank 进行论文筛选，提供文献综述生成、代码审计及复现计划等功能，并内置本地工作台管理研究全流程，极大提升科研与工程调研效率。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-07T12:51:16.186Z",
+  "metaData": {
+    "forks": "1034",
+    "stars": "8910",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": "https://feynman.is",
+    "description": "The open source AI research agent. Contribute to advaitpaliwal/feynman development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "AI 研究代理",
+      "文献综述",
+      "自动化科研",
+      "PaperRank"
+    ],
+    "cover": "",
+    "title": "Feynman：全能开源 AI 研究代理",
+    "ability": [
+      "多源检索与带引用简报",
+      "PaperRank 论文智能排序",
+      "文献综述与对照分析",
+      "研究审计与复现计划",
+      "本地科学工作台"
+    ],
+    "summary": "会读论文、会查网页、会写综述的开源 AI 研究代理，一条命令生成带引用的科研简报。",
+    "category": [
+      "开发工具",
+      "科研助手",
+      "AI 应用"
+    ],
+    "suitable": [
+      "科研人员",
+      "算法工程师",
+      "产品战略决策者",
+      "生物医药从业者",
+      "开源开发者"
+    ],
+    "description": "Feynman 是一个基于多 Agent 架构的开源 AI 研究工具，支持通过命令行快速生成带引用的调研报告。它集成了 PaperRank 进行论文筛选，提供文献综述生成、代码审计及复现计划等功能，并内置本地工作台管理研究全流程，极大提升科研与工程调研效率。"
+  },
+  "contentDetail": "# 一句话总结\nFeynman 是一个“会读论文、会查网页、会写综述、还会做实验计划”的开源 AI 研究代理：一条命令即可输出带引用的结构化研究简报，并提供本地科学工作台（Web UI）来管理研究会话与产出。\n---\n## 背景与痛点\n- 信息爆炸：arXiv/预印本/会议论文与日常资讯爆炸，人工检索与筛选费时费力。  \n- 引用与溯源：LLM 输出常缺失真实出处或产生幻觉，学术与产品决策难以前置核验。  \n- 多源打转：论文、官方文档、代码库、临床试验、基因组/化合物等分散在不同门户，来回切换打断心流。  \n- 重复性劳动：找论文、抽要点、做对比表、整理参考文献这些重复流程，占用大量“真正思考”的时间。  \nFeynman 在这些背景下诞生：它通过多 Agent 协作、多源检索与本地化工作台，把“查–读–写–验–管”集成到一个闭环里，降低做深度研究的手工成本。\n---\n## 核心亮点与功能剖析\n### 终端一问即得，带引用的研究简报\n- `feynman \"what do we know about scaling laws\"`：检索论文与网页，产出带引用的研究简报，每条结论直连来源 URL。适合快速扫清一个陌生方向的关键结论与争议点。  \n- `feynman deepresearch \"mechanistic interpretability\"`：多 Agent 并行调研（Researcher + Writer + Reviewer + Verifier），再综合与核验，适合做系统性综述或提案前的背景调研。\n### PaperRank：用“读什么”代替“读不过来”\n- `feynman rank \"sparse autoencoders\"`：给出“先读哪几篇”的排序列表，评价维度包括引用、方法、可复现性与出处证据等，并提供可审计的评分表。配合 `--expand-citations`、`--full-text-top`、`--critique-top`、`--synthesize` 等选项，可扩展引用图、加入全文证据、生成批判性评述与模型综述。  \n- 实际价值：把“检索式刷论文”变成“指标驱动的高质量筛选链路”，非常适合为开题/综述/产品调研迅速缩小阅读清单。\n### 系统化文献综述与对照分析\n- `feynman lit \"RLHF alternatives\"`：从论文与一手资料构建共识、分歧与开放问题列表；若输入特定实验室/PI 名，还能映射其发表轨迹与原创性排序。  \n- `/compare <topic>`：给出多源对照矩阵（同意/冲突/无结论），方便快速定位不同方法/数据集/结论之间的“冲突点”与“共识区”。\n### 研究审计与复现计划\n- `feynman audit 2401.12345`：以 arXiv ID 等为输入，将论文 claims 与公开代码库做对齐审计，帮助识别“声称 vs 实现”的偏差，提升复现可信度。  \n- `feynman replicate \"chain-of-thought improves math\"`：先生成复现计划与环境选择，再按明确步骤执行（涉及 Docker/Modal/RunPod 等算力），避免“失控执行”的风险。适合论文复现、基准跑分与数据清洗脚本等流程化实验。\n### 可落地的 ML 训练“配方”\n- `feynman recipe \"fine-tune a small model for math reasoning\"`：基于论文、数据集、文档和代码，生成可落地、可排序的训练配方（含数据来源、方法、代码与核验状态）。  \n- 实际价值：把“读论文找配方”升级为“结构化配方库”，帮助团队快速启动 POC 或迁移到新任务。\n### 本地科学工作台（`feynman serve`）\n- `feynman serve`：启动本地 Web UI，统一管理项目、会话、帧（frame）与记录；提供 Pi 聊天、Bio Tools、笔记/算力/预览与源元数据（provenance）等模块。支持 `--no-auth` 做纯本地测试。  \n- 工作台包含多种科学文件预览与标注（PDF/表格/笔记本/LaTeX/化学结构/基因组/比对/树图等），并保留版本与血缘（lineage）与审计日志，满足“可审计研究记录”的需求。\n### 四大 Agent 协同，研究流程“分而治之”\n- Researcher：跨论文、网页、代码库、文档收集证据。  \n- Reviewer：给出严重度分级的内部评审与修订建议。  \n- Writer：把研究笔记结构化为简报、草稿、论文式输出。  \n- Verifier：核验内联引用与 URL有效性，清理死链。  \n这种“人机协作流水线”将单调工作分配给专门的子代理，提升整体输出的完整性与可信度。\n### 技能与工具生态：从 AlphaXiv 到 Bio Tools\n- AlphaXiv：论文搜索、Q&A、代码阅读与标注，是面向论文的“核心技能”。  \n- Feynman Bio Tools：聚合 PubMed/PMC/ bioRxiv/medRxiv/ ClinicalTrials.gov/ FDA/ ChEMBL/ PubChem/ KEGG/ Ensembl/ GTEx/ GWAS/ Human Protein Atlas/ STRING 等数十个生物医学与化学数据源的连接器，涵盖文献、基因组、化合物、临床试验等场景，可视为“一站式生物医学检索瑞士军刀”。  \n- Web search：通过 Exa/Perplexity/Gemini 等多源检索；支持“问题驱动的页面抓取”与外部内容缓存，保证可审计。  \n- Hugging Face Hub：数据集 Schema、小文本文件读取，用于模型/数据集调研与快速验证。  \n- Session search：跨历史会话的索引召回，把“之前的调研”变成可复用的知识资产。\n### 架构与技术栈（开发者视角）\n- 语言/运行时：TypeScript + Node.js；官方提供自带 Node 的独立打包，也支持通过 npm 安装与本地开发环境构建（`nvm use || nvm install; npm install; npm test; npm run typecheck; npm run build`）。  \n- 运行时：基于 Pi（Agent Runtime）的包/扩展/技能模型，技能可重用、可组合；Feynman 的技能与提示以 Pi 包形式交付。  \n- 部署/算力：支持 Docker/Modal/RunPod 等目标，用于实验的显式执行（而非服务部署）。适合在做复现或基准时，按需“上云”而不被硬绑定单一云厂商。  \n- 源链路：所有研究输出均链接到论文/文档/仓库的直接 URL，强调“source-grounded（源锚定）”，降低“幻觉与断链”的风险。\n### 安装与模型提供者（上手门槛）\n- 一键安装：  \n  - macOS/Linux：`curl -fsSL https://feynman.is/install | bash`  \n  - Windows（PowerShell）：`irm https://feynman.is/install.ps1 | iex`  \n- 本地模型支持：通过 LM Studio/LiteLLM/Ollama/vLLM 等 OpenAI 兼容接口接入本地模型（如 `openai-completions` + `/v1` 端点）。  \n- 托管模型认证：`feynman model login <provider>`，支持 OpenRouter 等 OAuth 流程；也支持环境变量密钥认证，适应无头/SSH 环境。  \n- 仅安装技能（无需完整终端）：支持将技能安装到 `~/.codex/skills/feynman`（Codex）、`.agents/skills/feynman`（Claude/Agent）、`.opencode/skills/feynman`（OpenCode），便于在第三方 Agent 生态复用。\n---\n## 目标人群与收益\n- 研究生/科研人员：快速扫清新方向、构建文献综述、核验关键结论；PaperRank 与 audit/replicate 工作流显著降低“读不完与跟不上”的焦虑。  \n- 算法工程师与 ML 从业者：用 recipe 获得可落地的训练配方；用 audit/replicate 做论文复现与基准验证；加快从论文到实验的闭环。  \n- 产品与战略决策者：用 deepresearch 与 compare 做竞品/技术趋势分析，输出带引用的简报与对照矩阵，支撑决策。  \n- 生物医学/化学/制药相关从业者：Bio Tools 带来从文献到临床试验、化合物与基因组的“一站式检索”，显著减少门户切换与重复查询。  \n- 开源开发者与社区维护者：技能生态与本地化工作台便于做“可复现的调研记录”和“可审计的方案对比”，为 RFC/设计文档提供可靠来源。\n---\n## 竞品/同类对比\n- Elicit/Consensus 等论文问答服务：更偏重“问答型 UI”，Feynman 的差异在于本地终端与工作台、多 Agent 协同、多源扩展（含 Bio Tools 与算力集成）以及可审计的源链路。适合希望把“研究动作”嵌入 CI/CD 与内部流程的团队。  \n- 纯 CLI Agent/编码类 Agent：更多面向代码生成与工程任务，Feynman 专注于“研究型”任务（文献/复现/配方/审计）。对于同时需要“写代码 + 做研究”的团队，可以作为互补：编码 Agent 写工程代码，Feynman 做背景调研与方法验证。  \n- 传统文献管理工具（Zotero/EndNote 等）：擅长元数据管理与参考文献编排，Feynman 更强在“检索–筛选–综合–核验”的前置环节；二者可以搭配使用：Feynman 搞定“找与读”，后者搞定“引与管”。\n---\n## 局限与不足\n- 学习成本：熟悉 `/deepresearch`、`/rank`、`/lit`、`/audit`、`/replicate`、`/recipe` 等工作流及其参数需要一定时间；适合研究型用户，但对仅需要轻量问答的用户略显重量。  \n- 本地模型调优：虽然支持本地模型，但不同接口（LM Studio/LiteLLM/Ollama/vLLM）需做合理配置与提示调优，否则可能影响任务稳定性与质量。  \n- 执行风险：复现与算力相关工作流仍需人工“确认环境”才能执行，避免失控，但这也意味着用户需要理解 Docker/Modal/RunPod 等基础设施的基础配置。  \n- 领域偏向：Bio Tools 极强于生物/医学/化学，但在工程/社会科学/人文领域，需要更多自定义技能与外部数据源。  \n- 语言与本地化：目前以英文为主要交互语言，中文/多语种检索与写作体验依赖底座模型能力；对非英语母语团队需要额外注意语料与提示。\n---\n## Demo / 代码示例（终端上手三连）\n- 安装（macOS/Linux）：  \n  `curl -fsSL https://feynman.is/install | bash`  \n- 快速调研（带引用简报）：  \n  `feynman \"what do we know about scaling laws\"`  \n- PaperRank 决定“先读什么”：  \n  `feynman rank \"sparse autoencoders\"`  \n- 多 Agent 深度调研（综述级）：  \n  `feynman deepresearch \"mechanistic interpretability\"`  \n- 文献综述与共识映射：  \n  `feynman lit \"RLHF alternatives\"`  \n- 启动本地工作台：  \n  `feynman serve`\n---\n## 社区活跃度与生命力（GitHub）\n- 仓库：companion-inc/feynman；MIT 许可证。  \n- 统计（来自 Trendshift 的近快照）：TypeScript；约 5.7k stars；707 forks；5 contributors；最近一次提交约 3 天前；仓库创建约 1 个月前。说明项目热度高且仍在频繁更新。  \n- 贡献流程：官方给出标准的 clone/npm test/npm run build 等步骤，文档与 Release Notes 分离，有利于新加入者快速上手。\n---\n## 结语与行动建议\n- 终极评判：Feynman 把“研究流水线”变成一条可自动执行、可审计、可扩展的本地 Agent 流程：PaperRank 解“读什么”，deepresearch 与 lit 解“怎么读”，audit 与 replicate 解“是否可信”，recipe 解“如何落地”，本地工作台解“管什么”。对科研与工程团队都有明确的效率与质量收益。  \n- 行动建议（按角色）：  \n  - 科研/算法：先从 `feynman \"你的研究方向关键词\"` 与 `feynman rank \"细分主题\"` 起手，一周内完成一份可交付的背景调研 PaperRank+简报。  \n  - 产品/战略：用 `feynman deepresearch` + `/compare` 做两轮竞品/趋势分析，沉淀为可复用模板。  \n  - 生物/医学/制药：把 Bio Tools 接入日常查询流程，把“跨门户查资料”的时间压缩到原来的 20–30%。  \n  - 开源/工程团队：结合技能仅安装模式，把 Feynman 的研究技能嵌入 Codex/Agent/OpenCode 等流程，形成“工程 + 研究”一体化能力。",
+  "type": "project",
+  "dateAdded": "20260907"
+}
