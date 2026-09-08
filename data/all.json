@@ -1,6 +1,127 @@
 {
   "all": [
     {
+      "id": "25e66bd4-287d-4c85-91da-c082f363096b",
+      "url": "https://github.com/openai/plugins",
+      "domain": "github.com",
+      "repo": "openai/plugins",
+      "description": "这是 OpenAI 官方维护的 GitHub 仓库，集成了 Codex 和 ChatGPT 的插件开发标准与示例。它提供了一整套从定义 Manifest 到编写 Skills 的规范，并收录了 Figma、Notion 等实战模板，帮助开发者快速、安全地将外部系统接入 AI 工作流，是构建 AI 插件生态的核心参考。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-08T11:10:49.174Z",
+      "metaData": {
+        "forks": "791",
+        "stars": "5529",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "OpenAI Plugins. Contribute to openai/plugins development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI",
+          "ChatGPT",
+          "Plugin",
+          "MCP",
+          "Codex"
+        ],
+        "cover": "",
+        "title": "OpenAI Plugins 官方示例与规范指南",
+        "ability": [
+          "统一插件打包规范",
+          "官方高质量示例",
+          "插件市场清单管理",
+          "MCP 与技能集成"
+        ],
+        "summary": "OpenAI 官方插件开发指南，包含 Figma、Notion 等集成示例。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "产品技术负责人",
+          "工具链集成工程师",
+          "独立开发者"
+        ],
+        "description": "这是 OpenAI 官方维护的 GitHub 仓库，集成了 Codex 和 ChatGPT 的插件开发标准与示例。它提供了一整套从定义 Manifest 到编写 Skills 的规范，并收录了 Figma、Notion 等实战模板，帮助开发者快速、安全地将外部系统接入 AI 工作流，是构建 AI 插件生态的核心参考。"
+      },
+      "type": "project",
+      "dateAdded": "20260908"
+    },
+    {
+      "id": "94ef2fa4-7982-49f2-9481-87522359bfb4",
+      "url": "https://github.com/viarotel-org/escrcpy",
+      "domain": "github.com",
+      "repo": "viarotel-org/escrcpy",
+      "description": "Escrcpy 是一款基于 Electron 的 Android 设备投屏控制工具，集成了 scrcpy 的核心能力。它提供多窗口设备管理、自动化操作、键盘映射及 AI 助手，解决了原生命令行操作复杂和多设备管理难痛点，适合开发测试和演示场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-08T11:06:29.721Z",
+      "metaData": {
+        "forks": "791",
+        "stars": "11170",
+        "topics": [
+          "android",
+          "genymobile",
+          "gnirehtet",
+          "gui",
+          "hacktoberfest",
+          "hacktoberfest2026",
+          "hacktoberfest2027",
+          "linux",
+          "macos",
+          "mapping",
+          "mirroring",
+          "recording",
+          "scrcpy",
+          "scrcpy-engine",
+          "scrcpy-gui",
+          "screensharing",
+          "screenshots",
+          "windows"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://viarotel.eu.org/",
+        "description": "📱 Display and control your Android device graphically with scrcpy. - viarotel-org/escrcpy"
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "投屏",
+          "开源",
+          "scrcpy",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Escrcpy 深度评测：Android 投屏与多机管理的最强 GUI 封装",
+        "ability": [
+          "多设备统一管理",
+          "低延迟投屏与控制",
+          "自动化脚本与键盘映射",
+          "AI Copilot 智能协同",
+          "反向网络共享"
+        ],
+        "summary": "开源免费的 Android 投屏神器，用 Electron 封装 scrcpy，支持多设备管理、自动化脚本与 AI 协同，完美替代命令行操作。",
+        "category": [
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Android 开发者",
+          "软件测试/QA",
+          "内容创作者/演示者",
+          "技术极客"
+        ],
+        "description": "Escrcpy 是一款基于 Electron 的 Android 设备投屏控制工具，集成了 scrcpy 的核心能力。它提供多窗口设备管理、自动化操作、键盘映射及 AI 助手，解决了原生命令行操作复杂和多设备管理难痛点，适合开发测试和演示场景。"
+      },
+      "type": "project",
+      "dateAdded": "20260908"
+    },
+    {
       "id": "9c3e6957-8378-4003-892b-02493bdd0352",
       "url": "https://github.com/shiaho777/web-to-app",
       "domain": "github.com",
@@ -421,8 +542,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:27:54.417Z",
       "metaData": {
-        "forks": "9027",
-        "stars": "10045",
+        "forks": "9029",
+        "stars": "10059",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -474,7 +595,7 @@
       "createdAt": "2026-09-07T12:24:15.180Z",
       "metaData": {
         "forks": "1039",
-        "stars": "10116",
+        "stars": "10151",
         "topics": [
           "ai-agent",
           "anti-bot",
@@ -543,7 +664,7 @@
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
         "forks": "1534",
-        "stars": "21158",
+        "stars": "21173",
         "topics": [
           "antigravity",
           "claude",
@@ -616,8 +737,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13308",
-        "stars": "181157",
+        "forks": "13310",
+        "stars": "181221",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -677,8 +798,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4368",
-        "stars": "47189",
+        "forks": "4370",
+        "stars": "47280",
         "topics": [
           "ai",
           "animation",
@@ -796,8 +917,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:25:34.463Z",
       "metaData": {
-        "forks": "828",
-        "stars": "5449",
+        "forks": "829",
+        "stars": "5461",
         "topics": [
           "ai",
           "blackrock",
@@ -934,8 +1055,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7463",
-        "stars": "48426",
+        "forks": "7465",
+        "stars": "48454",
         "topics": [
           "claude",
           "codex",
@@ -1043,8 +1164,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
-        "forks": "1759",
-        "stars": "26258",
+        "forks": "1760",
+        "stars": "26272",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -1632,7 +1753,7 @@
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
         "forks": "2147",
-        "stars": "33566",
+        "stars": "33602",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -2087,8 +2208,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25221",
-        "stars": "281591",
+        "forks": "25364",
+        "stars": "283030",
         "topics": [
           "ai",
           "brainstorming",
@@ -6737,8 +6858,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:55:01.353Z",
       "metaData": {
-        "forks": "12236",
-        "stars": "111528",
+        "forks": "12469",
+        "stars": "113034",
         "topics": [
           "ai-agents",
           "ai-tools",
@@ -7558,8 +7679,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:32:32.312Z",
       "metaData": {
-        "forks": "21146",
-        "stars": "207336",
+        "forks": "21441",
+        "stars": "211046",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -10021,8 +10142,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38017",
-        "stars": "253477",
+        "forks": "38030",
+        "stars": "253556",
         "topics": [
           "ai-agents",
           "anthropic",
