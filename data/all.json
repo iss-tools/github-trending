@@ -1,6 +1,184 @@
 {
   "all": [
     {
+      "id": "d19a62ec-87ee-4aee-a55b-1babe8eed13d",
+      "url": "https://github.com/unslothai/unsloth",
+      "domain": "github.com",
+      "repo": "unslothai/unsloth",
+      "description": "Unsloth 让你在消费级显卡上也能飞速微调大模型，提供桌面、Web 及代码三种体验，大幅降低技术门槛与硬件成本，是个人和小团队打造私有模型的高效利器。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-08T12:20:11.888Z",
+      "metaData": {
+        "forks": "6900",
+        "stars": "75814",
+        "topics": [
+          "agent",
+          "ai",
+          "chatgpt",
+          "deepseek",
+          "fine-tuning",
+          "gemma",
+          "image-generation",
+          "llama",
+          "llm",
+          "llms",
+          "openai",
+          "python",
+          "qwen",
+          "reinforcement-learning",
+          "self-hosted",
+          "stable-diffusion",
+          "text-to-speech",
+          "tts",
+          "ui",
+          "unsloth"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://unsloth.ai/docs",
+        "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more. - unslothai/unsloth"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM微调",
+          "本地部署",
+          "Unsloth",
+          "效率工具",
+          "AI"
+        ],
+        "cover": "",
+        "title": "Unsloth：极致性能的大模型本地微调工具",
+        "ability": [
+          "高效微调",
+          "显存优化",
+          "本地化部署",
+          "多模态支持",
+          "无缝兼容HF"
+        ],
+        "summary": "本地高效微调大模型，速度快显存低，兼容主流生态。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "个人开发者",
+          "AI研究人员",
+          "初创团队",
+          "算力受限用户"
+        ],
+        "description": "Unsloth 让你在消费级显卡上也能飞速微调大模型，提供桌面、Web 及代码三种体验，大幅降低技术门槛与硬件成本，是个人和小团队打造私有模型的高效利器。"
+      },
+      "type": "project",
+      "dateAdded": "20260908"
+    },
+    {
+      "id": "091ac812-32a0-42dc-b12d-054ca79becd3",
+      "url": "https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+      "domain": "github.com",
+      "repo": "MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+      "description": "这是一个专为NVIDIA DGX Spark双机集群优化的DeepSeek V4 Flash生产级推理配方，集成DSpark投机解码、NVFP4 KV Cache等技术，支持100万token上下文，提供完整的容器镜像、编排模板和基准数据，显著降低双节点复杂部署门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-08T12:16:22.274Z",
+      "metaData": {
+        "forks": "178",
+        "stars": "1283",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://x.com/MiaAI_lab",
+        "description": "DeepSeek-v4-Flash 0731 recipe for 2x DGX Sparks. Contribute to MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "DeepSeek-V4",
+          "DGX-Spark",
+          "长上下文",
+          "投机解码",
+          "vLLM"
+        ],
+        "cover": "",
+        "title": "DeepSeek-v4-Flash-DSpark-2x-DGX-Spark 深度评测",
+        "ability": [
+          "100万级上下文支持",
+          "NVFP4 MLA KV Cache",
+          "DSpark投机解码加速",
+          "双机TP=2部署",
+          "前缀缓存与chunked prefill"
+        ],
+        "summary": "专为DGX Spark双机集群打造的DeepSeek V4 Flash生产级推理配方，支持100万token上下文",
+        "category": [
+          "AI推理工具",
+          "GPU集群部署",
+          "大模型优化"
+        ],
+        "suitable": [
+          "拥有2×DGX Spark的企业/实验室",
+          "需要>128K上下文的开发者",
+          "本地化推理需求团队",
+          "数据隐私敏感机构",
+          "GPU集群运维工程师"
+        ],
+        "description": "这是一个专为NVIDIA DGX Spark双机集群优化的DeepSeek V4 Flash生产级推理配方，集成DSpark投机解码、NVFP4 KV Cache等技术，支持100万token上下文，提供完整的容器镜像、编排模板和基准数据，显著降低双节点复杂部署门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260908"
+    },
+    {
+      "id": "e2493907-9388-45f5-90d3-50c239d250c3",
+      "url": "https://github.com/facebook/zstd",
+      "domain": "github.com",
+      "repo": "facebook/zstd",
+      "description": "Zstandard是Meta开源的无损压缩算法，在速度与压缩比间取得极佳平衡。支持1-22级可调、字典优化、多线程压缩，已标准化为RFC 8878，被Linux内核、Kafka、RocksDB等广泛采用，是替换gzip/xz/lz4的理想通用压缩方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-08T12:05:02.057Z",
+      "metaData": {
+        "forks": "2587",
+        "stars": "27739",
+        "topics": [],
+        "license": "GPL-2.0 license",
+        "homepage": "http://www.zstd.net",
+        "description": "Zstandard - Fast real-time compression algorithm. Contribute to facebook/zstd development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "压缩算法",
+          "开源项目",
+          "性能优化",
+          "数据存储",
+          "系统工具"
+        ],
+        "cover": "",
+        "title": "Zstd压缩算法深度评测：平衡速度与空间的生产级解决方案",
+        "ability": [
+          "极速压缩与解压",
+          "高压缩比",
+          "多级别可配置",
+          "小数据字典优化",
+          "多线程并行处理"
+        ],
+        "summary": "Meta开源的通用压缩算法，兼具接近gzip的压缩比和接近LZ4的速度，是生产环境压缩方案的首选",
+        "category": [
+          "开发工具",
+          "系统工具",
+          "数据处理"
+        ],
+        "suitable": [
+          "后端工程师",
+          "数据库开发者",
+          "系统运维人员",
+          "平台架构师",
+          "存储系统开发者"
+        ],
+        "description": "Zstandard是Meta开源的无损压缩算法，在速度与压缩比间取得极佳平衡。支持1-22级可调、字典优化、多线程压缩，已标准化为RFC 8878，被Linux内核、Kafka、RocksDB等广泛采用，是替换gzip/xz/lz4的理想通用压缩方案。"
+      },
+      "type": "project",
+      "dateAdded": "20260908"
+    },
+    {
       "id": "25e66bd4-287d-4c85-91da-c082f363096b",
       "url": "https://github.com/openai/plugins",
       "domain": "github.com",
@@ -11,8 +189,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "791",
-        "stars": "5529",
+        "forks": "796",
+        "stars": "5597",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -62,8 +240,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:06:29.721Z",
       "metaData": {
-        "forks": "791",
-        "stars": "11170",
+        "forks": "792",
+        "stars": "11226",
         "topics": [
           "android",
           "genymobile",
@@ -542,8 +720,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:27:54.417Z",
       "metaData": {
-        "forks": "9029",
-        "stars": "10059",
+        "forks": "9035",
+        "stars": "10096",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -594,8 +772,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:24:15.180Z",
       "metaData": {
-        "forks": "1039",
-        "stars": "10151",
+        "forks": "1040",
+        "stars": "10237",
         "topics": [
           "ai-agent",
           "anti-bot",
@@ -663,8 +841,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1534",
-        "stars": "21173",
+        "forks": "1536",
+        "stars": "21223",
         "topics": [
           "antigravity",
           "claude",
@@ -737,8 +915,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13310",
-        "stars": "181221",
+        "forks": "13315",
+        "stars": "181344",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -798,8 +976,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4370",
-        "stars": "47280",
+        "forks": "4375",
+        "stars": "47410",
         "topics": [
           "ai",
           "animation",
@@ -917,8 +1095,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:25:34.463Z",
       "metaData": {
-        "forks": "829",
-        "stars": "5461",
+        "forks": "831",
+        "stars": "5523",
         "topics": [
           "ai",
           "blackrock",
@@ -1055,8 +1233,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7465",
-        "stars": "48454",
+        "forks": "7473",
+        "stars": "48535",
         "topics": [
           "claude",
           "codex",
@@ -1112,8 +1290,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:11:42.252Z",
       "metaData": {
-        "forks": "18566",
-        "stars": "40298",
+        "forks": "18586",
+        "stars": "40327",
         "topics": [],
         "license": "License",
         "homepage": "http://llvm.org",
@@ -1164,8 +1342,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
-        "forks": "1760",
-        "stars": "26272",
+        "forks": "1764",
+        "stars": "26326",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -1216,8 +1394,8 @@
       "forks": 0,
       "createdAt": "2026-09-05T12:18:30.639Z",
       "metaData": {
-        "forks": "10433",
-        "stars": "94995",
+        "forks": "10435",
+        "stars": "95025",
         "topics": [
           "bash",
           "install",
@@ -1435,8 +1613,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "585",
-        "stars": "16857",
+        "forks": "588",
+        "stars": "16963",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -1752,8 +1930,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2147",
-        "stars": "33602",
+        "forks": "2164",
+        "stars": "33943",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -2029,8 +2207,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
-        "forks": "5370",
-        "stars": "32898",
+        "forks": "5373",
+        "stars": "32908",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2208,8 +2386,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25364",
-        "stars": "283030",
+        "forks": "25372",
+        "stars": "283129",
         "topics": [
           "ai",
           "brainstorming",
@@ -2628,8 +2806,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1392",
-        "stars": "12354",
+        "forks": "1393",
+        "stars": "12369",
         "topics": [
           "agent-memory",
           "ai",
@@ -2815,8 +2993,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3699",
-        "stars": "44758",
+        "forks": "3726",
+        "stars": "45237",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -3250,8 +3428,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3053",
-        "stars": "31916",
+        "forks": "3055",
+        "stars": "31940",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -3304,7 +3482,7 @@
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
         "forks": "3046",
-        "stars": "25667",
+        "stars": "25672",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -3849,8 +4027,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:15:10.644Z",
       "metaData": {
-        "forks": "7676",
-        "stars": "93456",
+        "forks": "7677",
+        "stars": "93475",
         "topics": [
           "3b1b-videos",
           "animation",
@@ -3907,8 +4085,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2618",
-        "stars": "21023",
+        "forks": "2624",
+        "stars": "21114",
         "topics": [
           "ai",
           "audiobook",
@@ -4042,8 +4220,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3670",
-        "stars": "46945",
+        "forks": "3674",
+        "stars": "46978",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -4863,8 +5041,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1425",
-        "stars": "11214",
+        "forks": "1428",
+        "stars": "11240",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4916,8 +5094,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5405",
-        "stars": "33352",
+        "forks": "5406",
+        "stars": "33422",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4969,8 +5147,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4230",
-        "stars": "39190",
+        "forks": "4241",
+        "stars": "39250",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -5400,8 +5578,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2252",
-        "stars": "17794",
+        "forks": "2259",
+        "stars": "17832",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -5642,8 +5820,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3599",
-        "stars": "51252",
+        "forks": "3615",
+        "stars": "51338",
         "topics": [
           "browser",
           "chrome",
@@ -5918,8 +6096,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "3692",
-        "stars": "18261",
+        "forks": "3861",
+        "stars": "19151",
         "topics": [
           "3d-globe",
           "cesium",
@@ -6858,8 +7036,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:55:01.353Z",
       "metaData": {
-        "forks": "12469",
-        "stars": "113034",
+        "forks": "12475",
+        "stars": "113142",
         "topics": [
           "ai-agents",
           "ai-tools",
@@ -6979,8 +7157,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3533",
-        "stars": "53899",
+        "forks": "3553",
+        "stars": "54182",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -7177,8 +7355,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7048",
-        "stars": "131553",
+        "forks": "7055",
+        "stars": "131788",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -7679,8 +7857,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:32:32.312Z",
       "metaData": {
-        "forks": "21441",
-        "stars": "211046",
+        "forks": "21447",
+        "stars": "211149",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -8201,8 +8379,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52675",
-        "stars": "477287",
+        "forks": "52690",
+        "stars": "477385",
         "topics": [
           "api",
           "apis",
@@ -8513,8 +8691,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "279",
-        "stars": "3609",
+        "forks": "281",
+        "stars": "3615",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -8619,8 +8797,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1679",
-        "stars": "26841",
+        "forks": "1778",
+        "stars": "28490",
         "topics": [
           "adhd",
           "claude-",
@@ -9234,8 +9412,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "49946",
-        "stars": "242842",
+        "forks": "50131",
+        "stars": "243277",
         "topics": [
           "ai",
           "ai-agent",
@@ -9480,7 +9658,7 @@
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
         "forks": "422",
-        "stars": "6061",
+        "stars": "6085",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -9530,8 +9708,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3158",
-        "stars": "29617",
+        "forks": "3159",
+        "stars": "29620",
         "topics": [
           "ai",
           "language",
@@ -9651,8 +9829,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "469",
-        "stars": "5007",
+        "forks": "468",
+        "stars": "5026",
         "topics": [
           "agent-runtime",
           "ai",
@@ -9772,7 +9950,7 @@
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
         "forks": "1880",
-        "stars": "14746",
+        "stars": "14757",
         "topics": [
           "ebay",
           "email",
@@ -9838,8 +10016,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21533",
-        "stars": "255641",
+        "forks": "21619",
+        "stars": "256661",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -9889,8 +10067,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2746",
-        "stars": "36015",
+        "forks": "2747",
+        "stars": "36033",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -10069,8 +10247,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
-        "forks": "8464",
-        "stars": "71563",
+        "forks": "8470",
+        "stars": "71599",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -10142,8 +10320,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38030",
-        "stars": "253556",
+        "forks": "38061",
+        "stars": "253781",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -10203,8 +10381,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2770",
-        "stars": "28910",
+        "forks": "2777",
+        "stars": "29042",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -10266,8 +10444,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "618",
-        "stars": "20039",
+        "forks": "619",
+        "stars": "20072",
         "topics": [
           "dpi",
           "gpui",
@@ -10332,8 +10510,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
-        "forks": "674",
-        "stars": "10542",
+        "forks": "675",
+        "stars": "10553",
         "topics": [
           "cactus",
           "gemini",
@@ -10416,8 +10594,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "583",
-        "stars": "6964",
+        "forks": "611",
+        "stars": "7085",
         "topics": [],
         "license": "",
         "homepage": "",

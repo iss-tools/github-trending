@@ -1,0 +1,54 @@
+{
+  "id": "091ac812-32a0-42dc-b12d-054ca79becd3",
+  "url": "https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+  "domain": "github.com",
+  "repo": "MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+  "description": "这是一个专为NVIDIA DGX Spark双机集群优化的DeepSeek V4 Flash生产级推理配方，集成DSpark投机解码、NVFP4 KV Cache等技术，支持100万token上下文，提供完整的容器镜像、编排模板和基准数据，显著降低双节点复杂部署门槛。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-08T12:16:22.274Z",
+  "metaData": {
+    "forks": "178",
+    "stars": "1283",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": "https://x.com/MiaAI_lab",
+    "description": "DeepSeek-v4-Flash 0731 recipe for 2x DGX Sparks. Contribute to MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "DeepSeek-V4",
+      "DGX-Spark",
+      "长上下文",
+      "投机解码",
+      "vLLM"
+    ],
+    "cover": "",
+    "title": "DeepSeek-v4-Flash-DSpark-2x-DGX-Spark 深度评测",
+    "ability": [
+      "100万级上下文支持",
+      "NVFP4 MLA KV Cache",
+      "DSpark投机解码加速",
+      "双机TP=2部署",
+      "前缀缓存与chunked prefill"
+    ],
+    "summary": "专为DGX Spark双机集群打造的DeepSeek V4 Flash生产级推理配方，支持100万token上下文",
+    "category": [
+      "AI推理工具",
+      "GPU集群部署",
+      "大模型优化"
+    ],
+    "suitable": [
+      "拥有2×DGX Spark的企业/实验室",
+      "需要>128K上下文的开发者",
+      "本地化推理需求团队",
+      "数据隐私敏感机构",
+      "GPU集群运维工程师"
+    ],
+    "description": "这是一个专为NVIDIA DGX Spark双机集群优化的DeepSeek V4 Flash生产级推理配方，集成DSpark投机解码、NVFP4 KV Cache等技术，支持100万token上下文，提供完整的容器镜像、编排模板和基准数据，显著降低双节点复杂部署门槛。"
+  },
+  "contentDetail": "# DeepSeek-v4-Flash-DSpark-2x-DGX-Spark 深度评测\n## 一句话总结\n这是一个为 NVIDIA DGX Spark（GB10）双机集群“量身定制”的 DeepSeek V4 Flash 0731 生产级推理配方：以 vLLM 的 Tensor Parallelism（TP=2）为底座，集成 DSpark 投机解码、NVFP4 MLA KV Cache，支持到 100 万级上下文天花板，并提供可直接使用的容器镜像、编排模板与基准数据，显著降低“双卡双节点”复杂部署的上手与运维成本。\n---\n## 背景与痛点：为什么会有这个项目？\n### 模型侧：DeepSeek V4 Flash 的定位\n- 官方 DeepSeek-V4-Flash-0731 是 MoE 架构的文本因果语言模型，支持长上下文、工具调用、reasoning 等前沿能力。该仓库的文档明确指出本配方面向这一官方检查点的指定 revision，并采用其 FP8 权重量化元数据与 DSpark 投机结构。\n### 硬件侧：DGX Spark（GB10）的现实约束\n- DGX Spark（Grace Hopper，GB10）统一内存大、算力强，但要榨满性能需要精细的通信与显存规划，尤其是双节点 TP=2 的 NCCL/RoCE 网络配置并不“开箱即用”。\n### 工程侧：端到端部署的“最后一公里”问题\n常见痛点包括：\n- 如何在双节点间对齐镜像、HF 缓存、环境变量与 NCCL 配置？\n- 如何在不打断服务的前提下做配置变更与滚动重启？\n- 如何在长上下文场景下管理 KV Cache、前缀缓存、并发窗口与 GPU 内存占用？\n- 如何应对 CUDA Graph / JIT 缓存 / 超时等隐蔽坑点（例如重启重编译、超时杀 EngineCore 等）？\n这个项目恰恰聚焦在这些“部署与运维最后一公里”：把 vLLM+DSpark+NVFP4+RoCE 等复杂要素固化为一套可复用的脚本与编排模板，并给出 1M 上下文的实测与可观测指标。\n---\n## 核心亮点与功能剖析\n### 1) “配置即代码”的双机配方\n- 官方默认镜像：ghcr.io/anemll/dspark-vllm-gx10:0.1.1（开箱可用）。\n- 单一入口控制：在 head 节点执行 start/stop/status/logs 等脚本，协调两台机器的 docker-compose 与 NCCL 通信，无需分别登录两台机器手动启停。\n- 环境变量模板（.env.dspark.example）覆盖集群网络、缓存、并发上限、KV 利用、思考强度、Vision 侧车、热修复开关等，变更后由 launcher 同步到 worker 并触发双机重启策略，避免“配置不一致”的黑盒。\n### 2) 100 万 token 上下文与 KV 调度策略\n- 服务器端配置：MAX_MODEL_LEN=1048576，作为单请求“天花板”，允许个别会话在 KV 空间富余时成长到 1M。README 明确“不是 6 个 1M 并发”，而是由 KV 总池约束（当前默认下约 2.49M tokens）。\n- KV 利用率控制：通过 GPU_MEMORY_UTILIZATION_TEXT=0.835 等控制 KV 池大小；KV 池受限时，前缀缓存与并发窗口会自动调度。日志会打印“KV pool size”与“最大 1M 并发度”等实时指标，便于判断饱和与瓶颈。\n### 3) NVFP4 MLA KV Cache 与内存效率\n- 采用 NVFP4（NVIDIA FP4）与 DeepSeek V4 的 Multi-Head/Grouped/MLA 注意力配合，将 KV Cache 显存占用压到更低，从而在有限显存里塞进更长上下文与更多会话。实测中的 “text util ~0.835 ≈ 2.49M KV tokens” 也体现了这一点。\n### 4) DSpark 投机解码（MTP-5）\n- 仓库使用 MTP_NUM_TOKENS=5 的多令牌投机（Multi-Token Prediction），以小模型“草稿”加速主模型验证，提升生成吞吐。基准数据显示在默认配置下，多并发 aggregate decode 保持在 ~140–190 tok/s 区间，短提示场景下尤为明显。\n### 5) 前缀缓存与 Chunked Prefill\n- 集成了前缀缓存，可复用公共前缀，减轻长上下文场景下的重复计算。文档专门提到 Issue #26、#36 与 SWA（Sliding Window Attention）缓存间隔的调优，给出了 VLLM_PREFIX_CACHE_RETENTION_INTERVAL 的默认值与修改建议。\n- chunked prefill 策略结合异步调度，能减轻“巨大 prefill 把 decode 饿死”的问题，这在实测中“6 × 128K”场景下被清晰展示：在修复后采取串行化 huge prefill，避免吞吐塌陷。\n### 6) 可观测与热修复\n- 日志会实时打印 KV 池大小、1M 并发度等指标，并附带 smoke/status/benchmark 等脚本做健康检查与性能回放。README 给出 curl /v1/models 与 smoke 脚本的标准检查路径。boottime warmup 会在首次启动后按“token 梯度”预热关键 kernel，避免首次真请求遭遇编译卡顿。\n- 若干“热修复开关”与诊断环境变量集中在 ENVS.md，如 TORCH_NCCL_DUMP_ON_TIMEOUT、CUTE/Triton JIT 缓存挂载路径、前缀缓存清理间隔等，专门应对分布式推理中超时、缓存丢失与重启重编译等隐蔽问题。\n### 7) Thinking / Tooling / Vision 扩展点（侧车与 MCP）\n- .env 里提供 DEFAULT_THINKING（off/low/high/max）与请求级 chat_template_kwargs 穿透，与官方 V4 的 reasoning effort 对齐，并为“思考 token”预算与工具调用参数等做了兼容性补丁（Issue #21）与前置检查。\n- Vision 侧车（ENABLE_VL_SIDECAR）可在 :8889 起一个 Qwen3-VL 服务与 MCP harness，并把主服务 KV 占用切到 VISION 专用配置，从而实现“文+图”的多模态上下文能力（本配方默认不启用，需要按 env 开关）。\n---\n## 技术栈与架构（通俗易懂版）\n比喻一下：这就像把一道“大菜”（DeepSeek V4 Flash）放进一套专用厨房（DGX Spark 集群），厨房里预先调好了：\n- 食材切配与保鲜（NVFP4 MLA KV Cache 让你把更多“食材”存得更久）\n- 快炒档口（DSpark 投机解码，多口锅并行翻炒）\n- 中央备菜台（前缀缓存与 chunked prefill，减少重复洗切）\n- 智能排班（异步调度与 KV 池约束，不让某个超大订单把整条线卡死）\n- 消防与监控（超时/缓存/编译相关的环境变量与 flight recorder 转储）\n具体技术组合：\n- 容器编排：docker-compose + systemd 重启策略。\n- 通信与分发：NCCL/RoCE（通过 .env.dspark 指定 HCA 与 IF），Gloo（控制面），Tensor Parallelism=2。\n- 引擎：vLLM + DSpark 投机解码 + NVFP4 KV。\n- 额外能力：前缀缓存、chunked prefill、CUDA graphs（非 breakable）、FlashInfer 采样等，通过环境变量与启动参数组合控制。\n---\n## 目标人群与收益：谁最值得玩/用？\n### 明确适合\n- 拥有或计划采购 2× DGX Spark（GB10）用于自建推理服务的企业/实验室/团队。\n- 需要：\n  - >128K 上下文（如长代码库、长文档检索、法律/金融长文书）\n  - 本地化、可控推理（数据隐私/合规/成本）\n  - 高并发与稳定吞吐（多用户 agents/IDE 插件/内部平台）\n### 典型收益\n- 上下文自由：1M 天花板与约 2.49M KV 池，意味着常见任务很少“撞墙”，对“超大上下文”友好。\n- 吞吐与延迟兼顾：单流解码约 60–80 tok/s，小提示 1–6 并发下 aggregate decode 可达 ~150–190 tok/s；短提示 TTFT < 1s。实测表明默认 profile 在常规负载下表现稳定。\n- 运维减负：通过脚本统一拉起/停止/日志/检查，并给出环境变量矩阵与热修复建议，大幅减少“双节点配置漂移”和“默默失败”的风险。\n- 可观测：启动日志打印 KV 池、并发上限，并提供 benchmark 与 smoke 脚本，方便做容量规划与回归测试。\n---\n## 竞品/同类对比：它处于什么位置？\n### 与“单节点”配方对比\n- MiaAI-Lab 同样提供 DeepSeek-v4-Flash-One-DGX-Spark 的单机配方（EXL3/ExLlamaV3），主要面向单机极限上下文和性价比。本配方则是双机 TP=2，注重更高并发与冗余与多用户环境。两者在生态上是互补关系。\n### 与官方/社区镜像和通用 vLLM 部署对比\n- 通用方案通常需要你自行解决：\n  - TP=2 的 NCCL/RoCE 配置\n  - NVFP4/MLA KV 与前缀缓存的组合参数\n  - 长上下文的基准测试与可观测工具\n- 本配方把上述这些“实践知识”沉淀到 .env、脚本与文档里，并附带了日期化的 RESULTS 表格与历史 lane，可视为“已验证的参考架构”。\n### 与“云托管 API”对比\n- 云 API 更易上手，但\n  - 上下文往往受限或计费昂贵\n  - 数据与调度不可控，难以满足合规或内网约束\n- 本配方为“自有硬件+长上下文+工具化/思考”提供本地基座，适合对隐私与成本敏感、且有能力运维 GPU 集群的团队。\n---\n## 上手门槛与部署体验（含最小可运行示例）\n### 硬件要求（硬门槛）\n- 2× DGX Spark（GB10），RoCE/NCCL 互通。\n- 足够的本地磁盘用于 HF 缓存（建议预留几百 GB，取决于模型与扩展）。\n### 前置知识\n- 基本容器与 docker-compose 使用。\n- 理解 InfiniBand/RoCE 网卡命名与 IP 规划。\n- 对 NCCL 与 Tensor Parallelism 有基础认知即可，脚本会做大部分繁重配置。\n### 部署体验评估\n- 文档与模板清晰度：README + ENVS.md + 模板 .env 已覆盖大部分关键路径，首次部署主要时间会花在“填写 .env.dspark 里的网络与缓存路径”与“等待模型下载”上。\n- 运维友好度：提供 status/logs/stop/start/smoke/benchmark 等标准化脚本，并提示禁用 earlyoom 以避免 deep-context 下被系统 OOM killer 误杀；还给出了 systemd 集成建议（SuccessExitStatus=3）。\n- 扩展灵活性：支持切换 Anemll/Stage-C 路径、开启 Vision 侧车与 MCP，并通过环境变量控制 JIT 缓存挂载路径、超时、调试转储等。对于高阶用户，可按需“开关”。\n### 最小可运行示例（关键步骤）\n在 head 节点：\n- 1) 克隆仓库并准备环境：\n  - git clone https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark.git\n  - cd DeepSeek-v4-Flash-DSpark-2x-DGX-Spark\n  - cp .env.dspark.example .env.dspark\n- 2) 编辑 .env.dspark 至少设置：\n  - WORKER_HOST（worker 节点的 RoCE IP/主机名）\n  - MASTER_ADDR（head 节点的 RoCE IP）\n  - NCCL_IB_HCA、NCCL_SOCKET_IFNAME（按你的 IB 网卡与接口名填写）\n  - VLLM_HOST_IP、WORKER_VLLM_HOST_IP\n  - HF_CACHE、WORKER_HF_CACHE\n- 3) 拉取镜像（两台节点都需要）：\n  - docker pull ghcr.io/anemll/dspark-vllm-gx10:0.1.1\n- 4) 准备权重缓存（head 节点执行，脚本会负责 worker 同步）：\n  - ./prepare-dspark-model-cache.sh --official\n- 5) 先在 worker 执行启动脚本（略去），再在 head 节点：\n  - ./start-deepseek-v4-flash-dspark.sh\n- 6) 检查服务就绪：\n  - curl -fsS http://127.0.0.1:8888/v1/models\n  - ./smoke-deepseek-v4-flash-dspark.sh\n  - ./status-deepseek-v4-flash-dspark.sh\n### 健康检查与基准示例（命令）\n- 基准（来自 docs/benchmark 方法）：\n  - python3 scripts/benchmark-0731.py --base-url http://127.0.0.1:8888/v1 --model deepseek-v4-flash-0731 --output results/deepseek-v4-flash-0731.json\n---\n## 性能与基准：实测数据怎么看？\n### 关键数据摘录（Default profile）\n- 小提示（256 tok）1–6 并发：\n  - TTFT：0.63–1.42s；Prefill：447–197 tok/s；Decode：75.4–36.9 tok/s；Aggregate：69.1–191.2 tok/s。\n- 2K 提示 1–6 并发：\n  - TTFT：0.81–6.06s；Prefill：2563–342 tok/s；Decode：68.8–34.7 tok/s；Aggregate：62.0–143.7 tok/s。\n- 32K 提示 1–6 并发：\n  - TTFT：22.96–60.75s；Prefill：1428–550 tok/s；Decode：64.0–10.8 tok/s；Aggregate：16.6–27.9 tok/s。\n- 128K 提示 1–2 并发：\n  - TTFT：78.75–111.17s；Prefill：1665–1306 tok/s；Decode：65.2–30.9 tok/s；Aggregate：5.9–6.6 tok/s。\n- 900K 接受测试：约 90 万 prompt token，TTFT ≈ 1028.85s，Prefill ≈ 874.8 tok/s，说明 1M 上下文能力可以真实落地，而不仅是“配置上的数字”。\n### 如何解读\n- 单流解码（长上下文场景下）表现稳健（~60–70 tok/s），适合“每次一个大任务”模式。\n- 短提示多并发 aggregate decode 明显提升，适合多用户 agents/IDE 并发补全等。\n- 超大 prefill（128K+）在多并发时会遇到 prefill/decode 争抢问题，文档通过“chunked prefill 与 Issue #27 串行化 huge prefill”等方式做了缓解，实测 128K × 6 的 TTFT 约 282s。\n---\n## 社区活跃度与生命力（基于仓库页面）\n- 仓库 Stars：约 768；Fork：约 111；显示一定程度的社区关注与复用意愿。\n- Issues/PRs 数量与更新节奏（页面可见 11 Issues 与 8 Pull requests），说明项目在持续迭代与纠错（Issue #21/#26/#27/#36/#65/#87/#117 等在文档中被多次引用作为热fix依据）。\n- 作者组织 MiaAI-Lab 还有多个相关配方（单机、多机监控、Vision 变体），说明这是一个长期演进的产品矩阵的一部分，而非一次性实验项目。\n---\n## 模型与许可信息\n- 官方模型：deepseek-ai/DeepSeek-V4-Flash-0731，仓库锁定特定 revision 以保证可复现性。\n- 模型能力：文本因果语言模型，包含 encoding 包与 reasoning/tool 等语义，该配方默认文本-only 端口（:8888）。\n- 关于商用/许可：请在 Hugging Face 模型卡与 DeepSeek 官方说明中确认许可条款；本配方本身是脚本与配置组合，通常对容器镜像与脚本的复用需遵循各自仓库的 License（README 未在当前片段展示 LICENSE，请在仓库根文件确认）。\n---\n## 局限与不足（客观视角）\n### 硬件门槛极高\n- 需要 2× DGX Spark 与 RoCE/IB 网络，仅适合已具备或计划采购此类基础设施的团队。对单卡或非 DGX 场景并不适用（作者有单机配方，可按需切换）。\n### 学习与调试成本不低\n- 初次部署需要理解 NCCL、Gloo、IB 网卡、RoCEv2 GID 等网络细节与 TP=2 的通信模型；错误配置可能导致 NCCL 初始化卡死或超时。文档给出了环境变量与 watchdog/flight recorder 转储，但仍需运维者具备一定经验。\n### 并发与长上下文的权衡\n- 在“6 × 128K 等极端组合”下，实测 aggregate decode 会被压到 ~2–8 tok/s，说明若以“超大 prefill+高并发”为单一目标，需要显著降低并发上限或拆分集群。配置文件给出了 200K 高并发 profile 的建议路径（降低 MAX_MODEL_LEN、提升并发窗口），需要根据业务做取舍。\n### 某些依赖为预构建镜像\n- 默认使用 ghcr.io/anemll/dspark-vllm-gx10:0.1.1，如果你处于离线/内网环境或需满足供应链管控，需要自行构建/镜像、调整环境变量矩阵；文档给出了 Anemll vs Stage-C 的对比，但仍需工程落地与验证。\n---\n## 结语与行动建议\n### 最终评判\n这个项目是“把前沿模型（DeepSeek V4 Flash 0731）在特定高端硬件（2× DGX Spark）上跑好”的实用配方，通过对 vLLM+DSpark+NVFP4+长上下文、前缀缓存与热修复的封装，把复杂的工程经验转化为一套可复用、可观测的脚本与文档。对于“真正拥有 DGX Spark、需要 100 万级上下文与稳定推理服务”的团队，这是一个非常有价值的参考实现和运维起点。\n### 给不同读者的建议\n- 如果你是决策者/架构师：\n  - 将其视为“参考架构与基线”，评估在你的负载模型下 1M 上下文、并发吞吐与硬件投入是否匹配。\n  - 复用其环境变量矩阵与运维脚本，快速搭建内部推理平台的“第一版”。\n- 如果你是平台/运维工程师：\n  - 先在测试环境按 README/.env.dspark 跑通最小示例，理解 NCCL 与 RoCEv2 配置与 KV 池约束。\n  - 集成 status/logs/benchmark 到现有观测平台，形成日常巡检与回归能力。\n  - 根据实测调参（MAX_MODEL_LEN、MAX_NUM_SEQS、GPU_MEMORY_UTILIZATION_* 等），选择“长上下文优先”或“高并发优先”的不同 lane。\n- 如果你是算法/应用开发者：\n  - 利用 1M 上下文能力做长文档/长代码库的检索与总结，配合 tool calling 与 thinking 模式进行 agents 实验。\n  - 使用 benchmark 脚本做请求级的性能回放，评估你真实业务下的 TTFT 与 decode 吞吐，并与官方云 API 或其它模型做横向对比。\n- 如果你不具备 DGX Spark：\n  - 可关注同一组织的单机配方或其他社区配方，理解其思想与调优经验，然后迁移到你的硬件环境。\n### 立即可做的三件事\n1) 打开仓库，通读 README 与 .env.dspark.example，圈出你不懂的变量并在文档里逐一查证。\n2) 在有条件的情况下，跑通一次“最小示例”（docker pull + prepare + start + smoke + benchmark），亲手体验 KV 池打印与 bench 输出。具体的命令与参数参见 Quick start 与 docs/DEEPSEEK_V4_FLASH_0731.md。\n3) 根据 docs/ENVS.md，为你的环境准备一份“环境变量检查清单”（尤其是 RoCE/NCCL、缓存挂载、超时与 JIT 缓存），纳入下次变更评审与发布流程。\n这个项目的价值不仅在于“能跑通”，而在于它把“如何在高并发与超长上下文之间做取舍、如何让分布式推理可观测与可运维”的经验，沉淀为一套可读、可改、可复现的工程实践。如果你正好身处它所面向的那条窄而深的赛道，这份配方会为你节省大量试错成本。",
+  "type": "project",
+  "dateAdded": "20260908"
+}

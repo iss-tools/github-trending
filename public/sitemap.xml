@@ -136,6 +136,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/repo/unslothai/unsloth.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/facebook/zstd.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/repo/openai/plugins.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -1046,11 +1061,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/%E8%87%AA%E6%89%98%E7%AE%A1.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trending.pptboard.com/tag/Claude%20Code.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1061,12 +1071,17 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/LLM.html</loc>
+    <loc>https://trending.pptboard.com/tag/%E8%87%AA%E6%89%98%E7%AE%A1.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://trending.pptboard.com/tag/AI.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/tag/LLM.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1096,7 +1111,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/tag/Python.html</loc>
+    <loc>https://trending.pptboard.com/tag/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1276,6 +1291,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/language/LLVM.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/language/Jupyter%20Notebook.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1292,11 +1312,6 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/language/Vue.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/language/C%23.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
