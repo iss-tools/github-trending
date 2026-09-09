@@ -1,6 +1,130 @@
 {
   "all": [
     {
+      "id": "2914fd2c-8d82-4bea-9151-e700e0ebb30d",
+      "url": "https://github.com/titanwings/distilly",
+      "domain": "github.com",
+      "repo": "titanwings/distilly",
+      "description": "Distilly 是一款基于 AI 的信息聚合工具，旨在帮助用户快速消化大量信息。它支持从网页、YouTube 视频和 PDF 文档中提取关键内容，生成易于阅读的摘要。作为开源项目，它支持自托管，确保数据隐私，适合需要处理高密度信息的人群。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-09T13:17:41.636Z",
+      "metaData": {
+        "forks": "2135",
+        "stars": "24476",
+        "topics": [
+          "agent-skills",
+          "agentic-ai",
+          "ai-agent",
+          "ai-agents",
+          "ai-assistants",
+          "ai-persona",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "codex-skills",
+          "deepseek-harness",
+          "digital-human",
+          "dsh-plugin",
+          "hermes-agent",
+          "knowledge-distillation",
+          "llm-agent",
+          "meta-skill",
+          "openclaw",
+          "opencode"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）. - titanwings/distilly"
+      },
+      "summaryData": {
+        "tags": [
+          "Summarization",
+          "Next.js",
+          "Productivity",
+          "Self-hosted",
+          "OpenAI"
+        ],
+        "cover": "",
+        "title": "Distilly：开源的智能阅读与视频摘要工具",
+        "ability": [
+          "网页智能摘要",
+          "YouTube 视频总结",
+          "PDF 文档解析",
+          "本地化部署",
+          "多模型支持"
+        ],
+        "summary": "一键将长文和 YouTube 视频转化为精炼摘要的开源 AI 工具。",
+        "category": [
+          "开发工具",
+          "阅读效率",
+          "AI 应用"
+        ],
+        "suitable": [
+          "信息过载者",
+          "内容创作者",
+          "学术研究人员",
+          "开源爱好者",
+          "效率工具追求者"
+        ],
+        "description": "Distilly 是一款基于 AI 的信息聚合工具，旨在帮助用户快速消化大量信息。它支持从网页、YouTube 视频和 PDF 文档中提取关键内容，生成易于阅读的摘要。作为开源项目，它支持自托管，确保数据隐私，适合需要处理高密度信息的人群。"
+      },
+      "type": "project",
+      "dateAdded": "20260909"
+    },
+    {
+      "id": "7bcb072f-fefc-4284-91de-69ce7bb95f20",
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "domain": "github.com",
+      "repo": "petergyang/no-ai-slop",
+      "description": "no-ai-slop 是一个适用于 ChatGPT/Claude 的开源技能，旨在去除 AI 生成文本中的陈词滥调（如“Delve”、“Let's dive in”等）和机械感。它不仅能通过编辑模式优化文案，还能通过检测模式指出问题，确保文章既专业又保留人类的真实语气。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-09T13:09:32.184Z",
+      "metaData": {
+        "forks": "580",
+        "stars": "7713",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
+        "description": "Removes 20+ patterns of AI slop from any piece of writing. - petergyang/no-ai-slop"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub项目",
+          "AI写作优化",
+          "去AI味",
+          "Prompt技巧",
+          "ChatGPT插件"
+        ],
+        "cover": "",
+        "title": "no-ai-slop: 专治“AI 味”写作的清洗神器",
+        "ability": [
+          "识别并重写AI套话",
+          "保留作者个性化语气",
+          "文本检测与审计模式",
+          "支持多平台一键安装"
+        ],
+        "summary": "去除 AI 写作陈词滥调，还原人类自然语气的开源技能。",
+        "category": [
+          "AI 编程",
+          "效率工具",
+          "写作辅助"
+        ],
+        "suitable": [
+          "内容创作者",
+          "AI写作用户",
+          "文案策划人员",
+          "追求高质量写作的开发者"
+        ],
+        "description": "no-ai-slop 是一个适用于 ChatGPT/Claude 的开源技能，旨在去除 AI 生成文本中的陈词滥调（如“Delve”、“Let's dive in”等）和机械感。它不仅能通过编辑模式优化文案，还能通过检测模式指出问题，确保文章既专业又保留人类的真实语气。"
+      },
+      "type": "project",
+      "dateAdded": "20260909"
+    },
+    {
       "id": "427b62a9-0d3e-4934-be83-18a23f58f2d3",
       "url": "https://github.com/vastsa/PI-Desktop",
       "domain": "github.com",
@@ -11,8 +135,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:17:35.322Z",
       "metaData": {
-        "forks": "143",
-        "stars": "1419",
+        "forks": "144",
+        "stars": "1460",
         "topics": [
           "ai-agent",
           "coding-agent",
@@ -80,8 +204,22 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "1557",
+        "stars": "14856",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "A library of agent skills for CAD, CAE and CAM. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -129,8 +267,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:04:07.553Z",
       "metaData": {
-        "forks": "168",
-        "stars": "2612",
+        "forks": "169",
+        "stars": "2691",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -181,8 +319,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T06:05:27.141Z",
       "metaData": {
-        "forks": "3326",
-        "stars": "17448",
+        "forks": "3345",
+        "stars": "17566",
         "topics": [],
         "license": "",
         "homepage": "https://pagefy-blush.vercel.app/system-design/system-design-interview-by-alex-xu",
@@ -410,8 +548,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "812",
-        "stars": "6049",
+        "forks": "813",
+        "stars": "6067",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -742,8 +880,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:42:01.918Z",
       "metaData": {
-        "forks": "2884",
-        "stars": "22649",
+        "forks": "2885",
+        "stars": "22697",
         "topics": [
           "3d",
           "architecture",
@@ -1062,8 +1200,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1554",
-        "stars": "21571",
+        "forks": "1555",
+        "stars": "21603",
         "topics": [
           "antigravity",
           "claude",
@@ -1197,8 +1335,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4419",
-        "stars": "48171",
+        "forks": "4420",
+        "stars": "48229",
         "topics": [
           "ai",
           "animation",
@@ -1455,7 +1593,7 @@
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
         "forks": "7510",
-        "stars": "49098",
+        "stars": "49141",
         "topics": [
           "claude",
           "codex",
@@ -1511,8 +1649,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:11:42.252Z",
       "metaData": {
-        "forks": "18596",
-        "stars": "40356",
+        "forks": "18595",
+        "stars": "40360",
         "topics": [],
         "license": "License",
         "homepage": "http://llvm.org",
@@ -1564,7 +1702,7 @@
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
         "forks": "1793",
-        "stars": "26723",
+        "stars": "26737",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -2151,8 +2289,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2264",
-        "stars": "35960",
+        "forks": "2266",
+        "stars": "36042",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -2429,7 +2567,7 @@
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
         "forks": "5376",
-        "stars": "32962",
+        "stars": "32967",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2607,8 +2745,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25392",
-        "stars": "283674",
+        "forks": "25395",
+        "stars": "283732",
         "topics": [
           "ai",
           "brainstorming",
@@ -3027,8 +3165,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1398",
-        "stars": "12474",
+        "forks": "1400",
+        "stars": "12480",
         "topics": [
           "agent-memory",
           "ai",
@@ -3214,8 +3352,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3756",
-        "stars": "45688",
+        "forks": "3757",
+        "stars": "45760",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -3702,8 +3840,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3052",
-        "stars": "25692",
+        "forks": "3053",
+        "stars": "25693",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -4248,8 +4386,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:15:10.644Z",
       "metaData": {
-        "forks": "7685",
-        "stars": "93564",
+        "forks": "7686",
+        "stars": "93592",
         "topics": [
           "3b1b-videos",
           "animation",
@@ -4441,8 +4579,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:04:54.939Z",
       "metaData": {
-        "forks": "3691",
-        "stars": "47174",
+        "forks": "3693",
+        "stars": "47204",
         "topics": [
           "academic-pipeline",
           "academic-writing",
@@ -5262,8 +5400,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1437",
-        "stars": "11332",
+        "forks": "1438",
+        "stars": "11342",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5315,8 +5453,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5479",
-        "stars": "34061",
+        "forks": "5491",
+        "stars": "34152",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5799,8 +5937,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2267",
-        "stars": "18019",
+        "forks": "2268",
+        "stars": "18035",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -6041,8 +6179,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3614",
-        "stars": "51418",
+        "forks": "3615",
+        "stars": "51425",
         "topics": [
           "browser",
           "chrome",
@@ -7378,8 +7516,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3635",
-        "stars": "55434",
+        "forks": "3642",
+        "stars": "55593",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -7576,8 +7714,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7099",
-        "stars": "132781",
+        "forks": "7113",
+        "stars": "132937",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -7750,8 +7888,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "19921",
-        "stars": "103531",
+        "forks": "19927",
+        "stars": "103599",
         "topics": [
           "agent",
           "finance",
@@ -7862,8 +8000,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9342",
-        "stars": "53321",
+        "forks": "9348",
+        "stars": "53383",
         "topics": [
           "agents",
           "ai",
@@ -8600,8 +8738,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52748",
-        "stars": "477838",
+        "forks": "52762",
+        "stars": "477911",
         "topics": [
           "api",
           "apis",
@@ -9018,8 +9156,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1942",
-        "stars": "32544",
+        "forks": "1955",
+        "stars": "32891",
         "topics": [
           "adhd",
           "claude-",
@@ -9633,8 +9771,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "50251",
-        "stars": "243632",
+        "forks": "50269",
+        "stars": "243676",
         "topics": [
           "ai",
           "ai-agent",
@@ -10050,8 +10188,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "475",
-        "stars": "5103",
+        "forks": "476",
+        "stars": "5113",
         "topics": [
           "agent-runtime",
           "ai",
@@ -10170,8 +10308,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:58:47.589Z",
       "metaData": {
-        "forks": "1882",
-        "stars": "14802",
+        "forks": "1881",
+        "stars": "14808",
         "topics": [
           "ebay",
           "email",
@@ -10237,8 +10375,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21689",
-        "stars": "257382",
+        "forks": "21700",
+        "stars": "257489",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -10288,8 +10426,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2761",
-        "stars": "36201",
+        "forks": "2766",
+        "stars": "36227",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -10468,8 +10606,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
-        "forks": "8492",
-        "stars": "71734",
+        "forks": "8494",
+        "stars": "71744",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -10541,8 +10679,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38154",
-        "stars": "254717",
+        "forks": "38166",
+        "stars": "254778",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -10602,8 +10740,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2839",
-        "stars": "29564",
+        "forks": "2855",
+        "stars": "29695",
         "topics": [
           "agents",
           "ai-image-generation",
