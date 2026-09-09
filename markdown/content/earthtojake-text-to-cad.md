@@ -1,0 +1,133 @@
+# earthtojake/text-to-cad
+
+[GitHub URL](https://github.com/earthtojake/text-to-cad)
+
+
+## text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测
+
+> 让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路
+
+- **Tags**: CAD, AI代理, 机器人, 开源, 自动化制造
+- **Category**: 开发工具, AI编程, 工程工具
+
+## Details
+
+<|assistant|>我需要继续打开具体技能的 SKILL.md 与仓库的 CONTRIBUTING.md，以获取使用示例、参数定义与贡献工作流，确保评测包含代码示例和开发者体验细节。</think>
+<|assistant|>我需要继续打开具体技能的 SKILL.md 以获取参数定义和用法示例，便于给出可复现的 Demo 代码与更精确的使用说明。</think>
+# earthtojake/text-to-cad 深度评测
+## 一句话总结
+text-to-cad 是一套面向 AI 编码代理的“CAD/CAE/CAM 技能库”。它通过自然语言或图像指令，把参数化建模、机器人描述文件（URDF/SRDF/SDF）、仿真环境准备、2D 工程图（DXF）、3D 打印 G-code、云端制造预检（SendCutSend）与可制造性评估（DfAM Check）等整条链路，变成可被 AI 代理自动调用的本地工具集。它不是要取代传统 CAD 工具，而是把 CAD“机器人化、流程化”，写入你的 Git 工作流里。
+## 背景与痛点：为什么会出现它？
+传统 CAD/CAE/CAM 工作流有几个典型“断裂点”：
+- 文件与描述脱节：STEP/STL 等二进制模型无法像代码一样 diff、review，设计意图往往只存在于设计师脑子里或散落的截图里。
+- 生态破碎、转换手工：从建模（SolidWorks/Fusion360/FreeCAD）到仿真（Gazebo/MoveIt）再到制造（激光切割/FDM 打印），各环节工具不互通，人工转换繁琐且易出错。
+- AI 介入困难：直接调用桌面 GUI 或重度云服务不符合“代码即设计”的现代工程实践，想要让 Claude/Codex/Grok 这类 AI 编码代理真正“动手”，缺乏一组标准、可复现的本地“技能”。
+text-to-cad 的出现，就是为了把这些能力“技能化（Skills）”并开源分发：通过 Skills CLI 或 Agent 原生插件（Claude Code、Codex、Grok Build），让代理可以像调用 npm 包一样调用 CAD/CAE/CAM 能力，同时保持所有中间产物可源码管理、可审查。
+## 核心亮点与功能剖析
+### 亮点 1：技能化设计，Agent 开箱即用
+仓库把整个工作流拆成 11 个模块化“技能”，每个技能解决一个具体任务，可直接被代理发现与调用：
+- CAD：用自然语言或图像生成/编辑 CAD 模型，以 STEP 为主输出，可导出 STL、3MF、GLB。
+- CAD Viewer：本地浏览器内预览 CAD 与机器人描述文件（URDF/SDF），无须后端。
+- step.parts：自动查找螺丝、轴承、电机、连接器等现成 STEP 零件库。
+- DXF：从 Python 源码或 CAD 几何生成 2D DXF 工程图（轮廓、垫片、下料布局等）。
+- URDF：写入机器人结构文件（连杆 link、关节 joint、限位、惯量、网格等）。
+- SRDF：为 URDF 添加 MoveIt 规划组、末端执行器、位姿与碰撞规则。
+- SDF：创建包含坐标系、物理、传感器与灯光的仿真模型与世界文件。
+- SendCutSend：在上传到 SendCutSend 之前对 DXF/STEP 进行预检（合规性、材料厚度/服务可用性等）。
+- DfAM Check：面向增材制造的可制造性检测（壁厚、悬垂、支撑体积、摆放方向等）。
+- G-code：用真实切片器 CLI 对网格进行切片，输出经过校验的 FDM .gcode，并与打印机 profile 绑定。
+- Bambu Labs：对校验好的 .gcode 做本地干跑(dry-run)、上传并谨慎启动本地 Bambu 打印任务。
+> 把“技能”理解成对代理的“插件说明书”：每份 SKILL.md 告诉代理这个工具能干啥、要传什么参数、返回什么。安装后，Agent 就能自动按需调用，不再需要你手把手敲每个命令。
+### 亮点 2：CAD-as-Code：用 Python 描述几何，以 STEP 为“真理之源”
+与直接从文本到 STL 网格的方案不同，text-to-cad 采用“CAD-as-Code”思路：
+- 代理编辑的是 models/ 目录中的 Python 脚本，基于 build123d（CadQuery 生态）与 OpenCascade/OCP 后端生成参数化几何；变更可 diff、可回滚。
+- 核心输出格式是 STEP，中间衍生物（STL/DXF/GLB/URDF）均从 STEP/几何脚本生成，保证模型链路可追溯。
+- 支持用 @cad[…] 与快照引用：代理可以把某个设计版本像代码引用一样嵌入对话或文档，实现“带版本的设计评审”。
+> 比喻：就像用 HTML/CSS 描述网页而不是直接提供截图，text-to-cad 用 Python 脚本来描述零件与装配。好处是修改参数（改一个尺寸）就像改配置一样简单，历史记录就是 Git 记录。
+### 亮点 3：本地优先、可审计
+- 所有技能运行在本地或你可控的执行环境中，无需把设计图上传到第三方云服务（除显式使用 SendCutSend/Bambu 等特定服务外）。
+- 中间产物（几何脚本、生成的 STEP/STL/URDF 等）都可纳入版本控制，团队 review 像审代码一样审 CAD。
+### 亮点 4：深度嵌入 Agent 生态
+- Skills CLI 安装：`npx skills add earthtojake/text-to-cad` 可将技能直接安装到代理环境，更新也用同一命令（文档提示 `add` 会覆盖并安装新增技能，避免漏装）。
+- 插件市场集成：支持 Codex（0.142.0+）、Claude Code、Grok Build 的原生插件安装，方便在不同 IDE/代理中使用同一套技能集。
+### 亮点 5：机器人与仿真“打通链路”
+- URDF/SRDF/SDF 技能让同一个 CAD 模型可直接用于机器人结构描述、MoveIt 规划配置与 Gazebo 等仿真环境，减少手工二次建模与转换。
+- cad-viewer 技能在本地浏览器中统一查看 CAD 与机器人描述文件，减少在不同工具之间来回切换。
+## 目标人群与收益
+- 硬件初创/工程团队：用自然语言快速迭代零件/装配，并把模型直接推入仿真与制造链路。收益：从“想法到 STEP/URDF/G-code”的时间显著缩短，且整个流程可版本化。
+- 机器人开发者：统一从 CAD 源头生成 URDF/SRDF/SDF，降低“仿真与实物不一致”的风险。收益：避免手工编辑 URDF 的低效与易错，让团队聚焦算法而非几何转换。
+- AI 编码代理重度用户：把 CAD/CAE/CAM 加入代理能力边界，打造“会干设计活的 AI 同事”。收益：用对话驱动建模，减少重复性绘图与格式转换工作。
+- 制造与打样：利用 SendCutSend/Bambu Labs 技能做文件预检与打印任务的半自动化。收益：减少因格式/参数错误导致的返工与废料。
+## 技术栈与架构解析（GitHub 开源项目视角）
+- 技能元数据：使用 SKILL.md 等标准化技能描述（兼容 Claude Skills 等 Agent 技能生态），每个技能目录内自有 requirements.txt，pin 到对应 cadgen 发行版。
+- CAD 内核：基于 Python 的 build123d 与 OpenCascade/OCP 实现参数化建模，具备良好的可移植性与生态支持。
+- 安装与分发：优先使用 `npx skills add ...` 的 Skills CLI 方式安装与更新，并提供 Codex/Claude Code/Grok Build 插件入口。
+- 前端预览：cad-viewer 使用本地的 React/Vite CAD Explorer，实现无后端的浏览器内模型预览，与后端几何生成解耦。
+## 上手门槛与部署体验
+安装流程（示例）：
+```bash
+# 优先使用 Skills CLI
+npx skills add earthtojake/text-to-cad
+```
+在特定 Agent 中的插件安装示例：
+```bash
+# Codex（需要 0.142.0+）
+codex plugin marketplace add earthtojake/text-to-cad
+codex plugin add cad@text-to-cad
+# Claude Code
+claude plugin marketplace add earthtojake/text-to-cad
+claude plugin install cad@text-to-cad
+# Grok Build
+grok plugin install earthtojake/text-to-cad --trust
+grok plugin enable cad
+```
+安装后重启 Agent 以使其发现新技能。
+> 体验要点：
+- 无需配置复杂的 Docker 一键启动脚本（仓库未提供 Dockerfile），核心依赖由 Python 环境与 Skills CLI 管理。
+- 每个技能目录均有 requirements.txt，与 cadgen 版本绑定，避免隐式依赖漂移。
+- 文档中明确给出了更新与卸载命令，并指出 `npx skills update` 可能会漏装新增技能，这点对维护体验很重要。
+## Demo / 代码示例（在 Agent 中调用）
+Agent 场景示意（以“生成一个带 4 个 M3 螺孔的底板并导出 STEP、STL”为例）：
+- 安装技能（在终端执行）：
+```bash
+npx skills add earthtojake/text-to-cad
+```
+- 在 Claude Code / Codex / Grok Build 中用自然语言驱动：
+  - 用户（向 Agent）：“请生成一个 80×40×5 mm 的铝底板，四角各放一个 M3 螺孔，倒角 2 mm，并输出 STEP 与 STL。”
+  - Agent（自动调用 cad 技能）：
+    - 在 models/ 下创建/编辑 Python 脚本，用 build123d 描述底板与孔位。
+    - 调用本地几何生成管线产出 STEP/STL。
+  - Agent（可选调用 cad-viewer 技能）：
+    - 在浏览器中打开预览链接供你确认。
+  - 若需下料或打样：
+    - 调用 DXF 技能生成 2D 轮廓，或 SendCutSend 技能做文件合规性预检。
+- 机器人链路示例：
+  - 用户：“把当前 URDF 添加 MoveIt 规划组‘arm’与末端执行器‘gripper’，并生成 SRDF。”
+  - Agent：自动调用 URDF/SRDF 技能，读取现有 URDF，补充规划组/末端执行器/碰撞规则，输出 SRDF。
+> 注意：各技能的具体参数定义见对应 SKILL.md（仓库内 skills/* 目录）。仓库官网 texttocad.dev 提供了技能概览与入口，便于快速浏览。
+## 社区活跃度与生命力
+- 仓库公开数据显示 Star 数约 1.4 万级、Fork 数约 1.6 千级，表明在 CAD+Agent 交叉领域具有较高关注度。
+- Issues 与 PR 页面显示存在活跃讨论与合并记录，示例中有关于字体解析错误、CI 徽章和输出/源码漂移检查等讨论与变更，说明维护者持续在修 bug 与改善 CI。
+- 被多个第三方平台索引/收录（如 LobeHub Skills、Tessl Registry、技能导航等），表明生态入口多元，可发现性强。
+## 竞品/同类对比与独特竞争力
+- 与“纯文本到网格”的 Text-to-CAD 服务对比：
+  - text-to-cad 采用“Python 脚本+STEP 源头”的 CAD-as-Code 路线，天然适合工程迭代与版本控制；而许多在线 Text-to-CAD 仅输出 STL/GLB，难以继续修改与溯源。
+- 与桌面 CAD 的 AI 插件/宏相比：
+  - text-to-cad 不依赖特定 GUI，更适合 CI/CD 与远程环境，同时可与多个 Agent 平台（Claude/Codex/Grok）集成，形成统一技能库。
+- 与各类 G-code/切片工具对比：
+  - 它不重新造切片器，而是用“真实切片器 CLI”做校验输出，并配合 DfAM 检查与 Bambu 技能做打印干跑/上传，增强工程可靠性。
+## 局限与不足（客观且不避讳）
+- 入口门槛：当前安装方式依赖 Skills CLI 或特定 Agent 插件生态，对完全不接触 Node.js/AI IDE 的用户稍显陌生。需要先了解“技能/插件”的概念。
+- 技能粒度：技能较多（11 个），新用户需要一点时间熟悉每个技能的职责与用法，虽符合“做一件事并做好”的原则，但也增加了认知成本。
+- 平台兼容性：不同 Agent 的插件能力/权限模型有差异，技能在不同平台上的表现可能不完全一致（例如文件系统访问、浏览器打开预览的策略）。
+- 依赖链：依赖 OpenCascade/OCP/Python 环境，在不同系统上的安装与兼容性需要一定运维经验；首次环境搭建可能遇到依赖版本、字体解析等偶发问题（社区 issue 中可见相关讨论）。
+- 交互模式：它更适合“作为代理的一双手”，而不是独立运行的 CAD 前端。如果你更想要一个可拖拽的 3D 建模界面，传统 CAD 仍然更顺手。
+## 综合结论与行动建议
+- 适合谁：已经在用 Claude Code / Codex / Grok Build 这类 AI 编码代理、且工作涉及 CAD/机器人/制造的开发者与团队。它能显著降低从“想法”到“可仿真/可制造”的摩擦。
+- 不适合谁：只需要偶尔画个简单零件、不想折腾环境或完全不接受“用代码/对话驱动建模”的用户。传统 CAD 或在线服务会更直观。
+- 行动建议（一步步来）：
+  1) 用 `npx skills add earthtojake/text-to-cad` 把技能装到本地环境，熟悉 cad 与 cad-viewer 两个基础技能。
+  2) 用简单的自然语言指令（例如“创建一个 50×50×5 的板并开一个中心孔”）让 Agent 生成 STEP，再用 cad-viewer 预览。
+  3) 尝试 URDF/SRDF/SDF 技能，把同一零件导成机器人描述与仿真世界，打通 CAD 到机器人的链路。
+  4) 如需线下制造，试试 DXF、G-code 与 SendCutSend/Bambu 技能，感受“从代码到车间”的完整闭环。
+终极评判：text-to-cad 把“设计-仿真-制造”的硬核工程工作流变成了一套可被 AI 代理编排的技能库，是当前 CAD+Agent 交叉领域中少见的“工程级”解决方案。对于愿意拥抱“代码即设计、对话驱动建模”的团队而言，它是一个值得认真纳入工具链的高价值开源项目。

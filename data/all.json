@@ -1,6 +1,176 @@
 {
   "all": [
     {
+      "id": "427b62a9-0d3e-4934-be83-18a23f58f2d3",
+      "url": "https://github.com/vastsa/PI-Desktop",
+      "domain": "github.com",
+      "repo": "vastsa/PI-Desktop",
+      "description": "PI-Desktop 是一款以隐私为核心的 AI 编程助手，它不绑定云端账号，所有会话和密钥都在本地。支持接入 OpenAI、Ollama 等模型，提供 Agent、Plan、Goal 三种工作模式，并具备完善的文件写入审批和 Diff 对比功能，让你在享受 AI 带来的效率提升时，始终保持对代码的掌控权。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-09T11:17:35.322Z",
+      "metaData": {
+        "forks": "143",
+        "stars": "1419",
+        "topics": [
+          "ai-agent",
+          "coding-agent",
+          "desktop-app",
+          "electron",
+          "global",
+          "i18n",
+          "local-first",
+          "mcp",
+          "pi",
+          "pi-agent",
+          "pi-desktop",
+          "plugins",
+          "react",
+          "rust",
+          "typescript"
+        ],
+        "license": "LGPL-3.0 license",
+        "homepage": "https://pi-docs.aiuo.net/",
+        "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins - vastsa/PI-Desktop"
+      },
+      "summaryData": {
+        "tags": [
+          "本地优先",
+          "AI Agent",
+          "开源",
+          "Electron",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "PI-Desktop：本地优先的 AI 编码代理工作台",
+        "ability": [
+          "本地数据存储",
+          "多模型自由接入",
+          "代码审查与批准",
+          "插件生态扩展",
+          "多模式代理执行"
+        ],
+        "summary": "一款本地优先、数据完全自控的桌面端 AI 编码工作台，支持接入多种模型并提供精细化代码审查。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生产力工具"
+        ],
+        "suitable": [
+          "独立开发者",
+          "注重隐私的用户",
+          "工程团队负责人",
+          "插件开发者",
+          "本地大模型玩家"
+        ],
+        "description": "PI-Desktop 是一款以隐私为核心的 AI 编程助手，它不绑定云端账号，所有会话和密钥都在本地。支持接入 OpenAI、Ollama 等模型，提供 Agent、Plan、Goal 三种工作模式，并具备完善的文件写入审批和 Diff 对比功能，让你在享受 AI 带来的效率提升时，始终保持对代码的掌控权。"
+      },
+      "type": "project",
+      "dateAdded": "20260909"
+    },
+    {
+      "id": "c46a52fc-8100-452f-88d0-3c11d277d5ec",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "domain": "github.com",
+      "repo": "earthtojake/text-to-cad",
+      "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-09T11:11:26.710Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      },
+      "type": "project",
+      "dateAdded": "20260909"
+    },
+    {
+      "id": "2cb19c00-398a-4ad9-a7e2-a5a63dee8ad4",
+      "url": "https://github.com/Tencent/teamai-cli",
+      "domain": "github.com",
+      "repo": "Tencent/teamai-cli",
+      "description": "TeamAI-CLI 是腾讯开源的 CLI 工具，以 Git 为核心，把团队的 AI 技能、规则、钩子、MCP 与知识库变成可评审、可追溯的能力流，自动同步到 Claude Code、Cursor 等工具，提升一致性与协作效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-09T11:04:07.553Z",
+      "metaData": {
+        "forks": "168",
+        "stars": "2612",
+        "topics": [],
+        "license": "License",
+        "homepage": "",
+        "description": "Make Every Team AI Native. Contribute to Tencent/teamai-cli development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "TeamAI",
+          "AI 协作",
+          "MCP",
+          "GitHub",
+          "腾讯开源"
+        ],
+        "cover": "",
+        "title": "TeamAI-CLI：基于 Git 的团队 AI 能力管理平台",
+        "ability": [
+          "统一技能与规则分发",
+          "团队钩子自动注入",
+          "MCP 服务器集中配置",
+          "知识图谱与智能召回",
+          "会话数据与改进闭环"
+        ],
+        "summary": "用一条 Git 仓库统一管理团队的 AI 技能、规则、钩子与知识库，自动同步到每位成员的本地 AI 工具。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "软件工程团队",
+          "平台工程/DevOps/SRE",
+          "AI 效能负责人",
+          "使用 Claude Code/Cursor 的开发者",
+          "独立开发者"
+        ],
+        "description": "TeamAI-CLI 是腾讯开源的 CLI 工具，以 Git 为核心，把团队的 AI 技能、规则、钩子、MCP 与知识库变成可评审、可追溯的能力流，自动同步到 Claude Code、Cursor 等工具，提升一致性与协作效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260909"
+    },
+    {
       "id": "3781c6f9-13c1-443a-9d0a-1cddc0744c05",
       "url": "https://github.com/liquidslr/system-design-notes",
       "domain": "github.com",
@@ -11,8 +181,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T06:05:27.141Z",
       "metaData": {
-        "forks": "3269",
-        "stars": "17129",
+        "forks": "3326",
+        "stars": "17448",
         "topics": [],
         "license": "",
         "homepage": "https://pagefy-blush.vercel.app/system-design/system-design-interview-by-alex-xu",
@@ -240,8 +410,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "811",
-        "stars": "6035",
+        "forks": "812",
+        "stars": "6049",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -572,8 +742,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:42:01.918Z",
       "metaData": {
-        "forks": "2877",
-        "stars": "22571",
+        "forks": "2884",
+        "stars": "22649",
         "topics": [
           "3d",
           "architecture",
@@ -1981,8 +2151,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2259",
-        "stars": "35889",
+        "forks": "2264",
+        "stars": "35960",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -2437,8 +2607,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25385",
-        "stars": "283546",
+        "forks": "25392",
+        "stars": "283674",
         "topics": [
           "ai",
           "brainstorming",
@@ -7580,8 +7750,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "19500",
-        "stars": "101523",
+        "forks": "19921",
+        "stars": "103531",
         "topics": [
           "agent",
           "finance",
@@ -7692,8 +7862,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9087",
-        "stars": "52370",
+        "forks": "9342",
+        "stars": "53321",
         "topics": [
           "agents",
           "ai",
@@ -8848,8 +9018,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "1913",
-        "stars": "31715",
+        "forks": "1942",
+        "stars": "32544",
         "topics": [
           "adhd",
           "claude-",
@@ -10371,8 +10541,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38156",
-        "stars": "254693",
+        "forks": "38154",
+        "stars": "254717",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -10432,8 +10602,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2828",
-        "stars": "29512",
+        "forks": "2839",
+        "stars": "29564",
         "topics": [
           "agents",
           "ai-image-generation",
