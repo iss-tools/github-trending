@@ -1,0 +1,340 @@
+# vercel-labs/skills
+
+[GitHub URL](https://github.com/vercel-labs/skills)
+
+
+## vercel-labs/skills：AI编程代理的包管理器
+
+> 给Claude Code、Cursor等75+编程代理安装管理技能包的命令行工具
+
+- **Tags**: CLI工具, 技能管理, 开源项目, Vercel, 跨平台
+- **Category**: 开发工具, AI编程
+
+## Details
+
+<|assistant|>我需要查看仓库的文件树（例如 package.json、源码目录结构），以分析技术栈、架构、构建与发布方式，并了解项目维护状态。</think>
+<|assistant|>我需要查看仓库的文件列表与源码目录结构，以判断技术栈、代码组织、构建方式，从而进行架构解析与 DX 评估。</think>
+<|assistant|>我需要进入仓库的文件树以查看 package.json、源码目录结构等技术栈与架构信息。尝试点击仓库主仓库名链接或 Code 标签。</think>
+<|assistant|>我需要查看仓库的文件树（Code 标签页），以了解源码结构、技术栈（如 package.json、源码目录等），从而评估架构设计与开发体验。</think>
+# vercel-labs/skills：给 AI 编程代理加“插件”的生态级 CLI
+## 一句话总结
+它是什么，为什么值得关注？
+skills 是 Vercel Labs 推出的“开放 Agent Skills 生态”的命令行工具（CLI），用来给各类 AI 编程代理（Agent）安装/管理/发现“技能包”（Skills）。类似 npm/npm registry 之于 Node 生态，skills 把“针对特定任务的提示词与必要脚本”标准化为 SKILL.md，并统一分发给 Claude Code、Cursor、Windsurf、GitHub Copilot 等 75+ 编程代理。它让团队可以把编码规范、审计规则、外部工具集成等封装成可复用、可升级、可跨代理共享的“插件”，大幅减少重复提示词工程，并提升代理输出的一致性与可维护性。
+---
+## 背景与痛点：为什么要存在？
+- 提示词难以复用与版本化：不同团队、不同项目反复把“PR 规范”“审查清单”“风格手册”以不同写法塞给 Agent，难以统一维护。
+- 代理生态碎片化：Claude Code、Cursor、Windsurf、OpenHands、GitHub Copilot 等各有一套自定义配置路径与格式，人工适配成本高。
+- 场景化能力缺失：Agent 擅长“通用编码”，但对公司内网工具、审计口径、特定框架最佳实践等“领域知识”需要反复告知，易走形。
+- 团队协作与审计：难以证明“某次 AI 审查用的是哪条规则”，难以回溯与问责。
+skills 的定位：成为“Agent 能力的包管理器 + 统一技能格式”。它不运行 Agent 本身，而是把“如何做某事”的指令与必要脚本标准化（SKILL.md + 可选 scripts/、references/），并按约定的路径放到对应 Agent 的目录中，实现“一套技能，多处生效”。
+---
+## 核心亮点与功能剖析
+### 1) 统一的 Skill 格式（SKILL.md + YAML frontmatter）
+- 每个 Skill 是一个目录，包含 SKILL.md（YAML frontmatter + Markdown 指令），可选 scripts/ 与 references/。示例：skill 包含名称、描述与触发/步骤等结构化信息，便于 Agent 解读与 CLI 发现。
+- 能力边界：覆盖从代码审查、PR 规范、发布说明生成到外部工具（Linear/Notion 等）集成。它本质是“提示词 + 上下文包”，通过 YAML 元数据进行可发现与可安装。
+### 2) 跨代理覆盖广（75+ Agent）与路径适配表
+- 内置“Supported Agents”表：为每个 Agent 指定项目级与全局级的 skills 目录。例如 Claude Code 为 .claude/skills/ 与 ~/.claude/skills/；Cursor 为 .agents/skills/ 与 ~/.cursor/skills/；Windsurf 为 .windsurf/skills/ 与 ~/.codeium/windsurf/skills/ 等。CLI 自动检测已安装的 Agent 并按表放置文件，免手工复制。
+- 生态广度：从 Claude Code、Cursor、GitHub Copilot 到 OpenHands、Cline、Zed、AiderDesk、Replit 等，覆盖桌面、CLI、云端等场景，真正“一次定义，多处适配”。
+### 3) 源格式多样化与私有仓库支持
+- 支持多种来源：GitHub 短名（owner/repo）、完整 URL、GitLab、任意 git URL、本地路径、直接 SKILL.md 或压缩包下载 URL。下载/解压有合理的上限（如默认 10MB / 25MB / 1000 文件），可覆盖。
+- 私有仓库：通过 Git credential helper、GitHub CLI、SSH 等自动复用已有鉴权，避免单独配置密钥；必要时显式 GITHUB_TOKEN/GH_TOKEN 也能通过 GitHub API 完成私有资源拉取。
+### 4) 技能生命周期管理（安装/搜索/更新/移除/模板）
+- 安装：npx skills add <source> 支持选择 Agent、选择技能（--skill）、全局/项目级（-g）、批量（--all）、交互确认（-y 控制非交互），并可选择 symlink（推荐，单源真理）或 copy。安装路径遵循“Scope：Project/Global”与各 Agent 目录规范，可随项目提交分享给团队。
+- 搜索：npx skills find 支持交互式检索与关键字检索，并可限定 --owner，利于快速发现技能包。
+- 更新：npx skills update 支持按 scope 更新（-p/-g）、更新指定技能、非交互（-y），让团队保持技能版本一致。
+- 移除：npx skills remove/rm 支持按技能名、Agent、scope 与通配符进行精细化清理。避免“只增不减”的技能堆积。
+- 初始化模板：npx skills init 快速生成 SKILL.md 模板，降低创作门槛。
+### 5) “无需安装直接使用”（use）与 stdout 输出
+- npx skills use <source> 可直接生成提示词并输出到 stdout，适合管道（|）传给 claude 或其他 Shell 交互；使用 --agent 可直接启动对应的 Agent 会话。适合一次性任务或 CI 流水线里的 prompt 派发。
+### 6) 生态发现平台（skills.sh）与 Leaderboard
+- skills.sh 提供目录与排行榜（All Time / Trending / Hot），展示技能安装量与 8 周活跃度，方便甄选高质量技能。官方入口也明确“Skills are open source on GitHub”，与 CLI 和 agent-skills 官方集合形成闭环。
+### 7) 与 Claude 插件生态的兼容（Plugin Manifest Discovery）
+- 若仓库存在 .claude-plugin/marketplace.json 或 plugin.json，CLI 也会从中读取 skills，实现与 Claude Code 插件生态的兼容；manifest 指定的路径不受 depth-3 限制，更灵活。
+### 8) 安全性与边界控制（Compatibility 表）
+- CLI 提供兼容性矩阵，说明哪些 Agent 支持“basic skills / allowed-tools / context:fork / Hooks”等特性，避免假设各 Agent 行为一致，减少误用风险。
+---
+## 目标人群与收益
+### 适合人群
+- 一线开发者：使用 Claude Code / Cursor / Windsurf / Copilot 等 Agent 进行日常编码与审查，希望减少重复提示词输入。
+- 工程小组/团队：希望统一编码规范、PR 模板、发布说明风格，并把规则落实为可审计的 SKILL.md 源文件。
+- 平台与基础设施团队：希望把公司内部工具、审计口径、部署集成等“领域知识”封装为可分发的技能。
+- 插件/生态贡献者：想为 Agent 生态撰写并分享高质量技能，提升影响力与实用性。
+### 具体收益
+- 一致性：团队统一同一套技能，输出结果可预期、可审计，减少“同一个问题，每次问出来的不一样”的情况。
+- 效率：不用重复写长提示词；一键安装与更新，节省时间与心智负担。多人协作也减少对齐成本。
+- 可复用与组合：不同技能可以叠加使用（如 React 最佳实践 + 写作规范 + Vercel 优化），形成“Agent 工具链”。
+- 生态参与：skills.sh 的排行榜与发现机制让优质技能被看见，贡献者更容易获得反馈；团队也可将内部技能公开，形成品牌与技术影响力。
+---
+## Demo/代码示例（开发者最关心的“怎么用”）
+- 最小可用示例（安装官方集合并搜索可用技能）：
+```
+npx skills add vercel-labs/agent-skills --list
+```
+- 安装特定技能到指定 Agent（例如 Cursor 与 Claude Code，全局生效，非交互）：
+```
+npx skills add vercel-labs/agent-skills -s react-best-practices -s web-design-guidelines -a cursor -a claude-code -g -y
+```
+- 不安装直接使用（打印 prompt 到 stdout，可管道传递给 Agent）：
+```
+npx skills use vercel-labs/agent-skills@web-design-guidelines | claude
+```
+- 交互式搜索技能：
+```
+npx skills find typescript
+npx skills find react --owner vercel
+```
+- 列出已安装的技能（支持按 Agent 过滤）：
+```
+npx skills ls
+npx skills ls -g
+npx skills ls -a claude-code -a cursor
+```
+- 更新已安装技能：
+```
+npx skills update -g -y          # 非交互地更新全局技能
+npx skills update react-best-practices web-design-guidelines
+```
+- 移除技能：
+```
+npx skills remove web-design-guidelines -g
+npx skills rm --agent cursor --skill '*'
+```
+- 创建新的 Skill 模板：
+```
+npx skills init my-skill
+```
+- 创建一个 SKILL.md 示例（YAML frontmatter + 结构化说明）：
+```
+---
+name: release-notes-from-git
+description: Generate release notes from git history
+---
+# Release Notes from Git
+## When to Use
+When preparing a GitHub release or change log based on recent commits.
+## Steps
+1. Run `git log --pretty=format:"- %s" <tag>..HEAD` to collect commit messages.
+2. Group commits by theme (e.g., Features / Fixes / Changes).
+3. Summarize breaking changes explicitly.
+4. Output in Markdown with a version header.
+```
+---
+## 竞品/同类对比
+- 直接在 Agent 内粘贴提示词/规则：不统一、难以版本化、难以团队协作。skills 把规则变成“代码文件”，可 review、可 PR、可版本回溯。
+- 各 Agent 自带的“自定义规则/系统提示”：互不兼容，维护成本高。skills 以统一格式与路径适配表桥接多家生态，减少维护点。
+- 脚本式封装（如 Make/Shell 调用 LLM API）：需要自行鉴权、配额管理、prompt 组装。skills 不接管 LLM，专注“提示与脚本”的交付，灵活性更高。
+- MCP（Model Context Protocol）生态：侧重“工具调用与上下文注入”协议与数据传输。skills 侧重“提示词 + 可选脚本”的包管理与目录发现，两者可互补（一个管数据/工具，一个管“如何用”）。
+独特竞争力：
+- 官方背书与生态规模：skills CLI 与 skills.sh 由 Vercel Labs 维护，集成 75+ Agent，并提供公开排行榜，生态热度高。
+- SKILL.md 作为“可读、可写、可审查”的单一事实源：便于 Git 追踪与代码审查，降低团队采纳门槛。
+---
+## 局限与不足
+- 依赖 Agent 宿主路径与加载机制：若某 Agent 更改目录或加载策略，skills 需同步更新适配表，可能存在滞后或兼容断层。
+- 执行边界控制有限：skills 负责把内容放进 Agent 目录，但不保证 Agent 一定会/按期望使用该技能。合规性依赖 Agent 本身的技能加载逻辑。
+- 权限与安全信任链：从网络拉取压缩包或脚本并在本地执行（scripts/），需要信任源。文档虽给出下载/解压上限，但未提供沙箱或签名校验，建议企业内部先审计再全局安装。
+- 多 Agent 环境的“同步与一致性”仍需团队纪律：skills 能把同一技能拷贝到多处，但若 Agent 之间能力/格式差异大，技能需要针对性适配。
+- 遥测默认开启：CLI 默认收集匿名使用数据（仓库与技能标识符），可通过 DISABLE_TELEMETRY/DO_NOT_TRACK 关闭。对隐私敏感的组织需注意。
+- 刚需场景仍需学习与维护：编写高质量 SKILL.md 需要“提示工程 + 领域知识”，技能也需要根据产品迭代持续修订。
+---
+## 上手门槛与部署体验
+- 安装门槛：极低。有 Node/npx 环境即可一行命令体验：
+```
+npx skills use vercel-labs/agent-skills@web-design-guidelines | claude
+```
+- 环境要求：npm/npx 与 Git（用于拉取 GitHub/GitLab 等源）。需要目标 Agent 已安装并遵循约定目录结构。
+- 文档与引导：README 完整覆盖命令示例、源格式、私有仓库、环境变量、兼容矩阵与排错；skills.sh 补充发现与排行榜信息。上手与排错成本较低。
+- Docker 一键部署：未在 README 提供现成镜像，但基于 npm 的包模式本身易于打包到 Docker 镜像（团队可自行定制）。
+---
+## 社区活跃度与生命力
+- Stars：skills 仓库在 Vercel Labs 组织下热度较高，其姐妹仓库 agent-skills（官方技能集合）同样达到数万级 stars，显示生态受关注度。
+- 更新与反馈：README 明确许可证为 MIT，并给出故障排查与 telemetry 说明，体现维护细节与合规意识。
+- 生态繁荣：skills.sh 排行榜展示全时安装量与 8 周活跃，官方与多家组织持续发布技能（如微软 azure-skills、Feishu open.feishu.cn 技能包等）。
+---
+## 技术栈与架构解析（开发者工具视角）
+- 技术栈：TypeScript/JavaScript，npm/npx 分发；核心由 README/文档可见其依赖 Git、GitHub CLI、压缩包处理、YAML 解析与路径管理等基础能力。
+- 架构设计亮点：
+  - “技能格式 + 目录约定表”：将不同 Agent 的能力差异收敛为一张“路径与特性映射表”，CLI 仅按表行事，保持内核稳定与易扩展。
+  - 单一来源与 symlink 优先：安装方式默认为 symlink，保证“一改全改”，同时支持 copy 作为降级方案，兼顾灵活性与可维护性。
+  - 多源发现：除 skills/ 等固定目录外，兼容 Claude 插件 manifest，并支持递归兜底，降低迁移成本。
+---
+## 结语与行动建议
+- 适用场景：你有多个 Agent（Claude Code、Cursor、Windsurf、Copilot 等），希望统一与沉淀“编码规范/审计规则/外部工具集成/发布流水线”等提示词与脚本；或你打算为生态贡献高质量技能。
+- 决策建议：
+  - 先试用“use”流：管道式体验单技能输出，评估是否满足你的工作流。
+  - 再选“add”流：全局安装你高频使用的技能（如 react-best-practices、web-design-guidelines 等），让 Agent 自动加载。
+  - 团队/企业：在仓库中维护自己的 skills 集合，将内部规则沉淀为 SKILL.md，并按项目级或全局级纳入 CI/CD 代码审查流程。
+- 风险管控：对来自外部的技能先审计再全局安装；生产环境使用前建议在隔离环境验证；如需严控隐私，及时设置 DISABLE_TELEMETRY/DO_NOT_TRACK。
+- 终极评价：skills 把“提示词工程”与“插件分发”合二为一，为 AI 编程代理补上了“包管理”这一环。它在Agent碎片化严重的当下，提供了一个跨平台、可审计、可协作的统一能力层，值得团队认真评估并纳入工具链。
+</arg_value>---
+一句话总结
+---
+**vercel-labs/skills** 是 Vercel Labs 推出的“开放 Agent Skills 生态”的命令行工具（CLI），用来为 Claude Code、Cursor、Windsurf、GitHub Copilot 等 75+ 编程代理安装/管理/发现“技能包”（Skills）。它把“针对特定任务的提示词与必要脚本”标准化为 SKILL.md，通过统一的目录与格式约定，把“插件化能力”分发到不同 Agent，从而减少重复的提示词工程、提升团队协作的可维护性，是 AI 编程代理生态的“包管理器”。
+---
+## 背景与痛点：为什么需要这样的工具？
+- 提示词难以复用与版本化：不同团队、不同项目反复把“PR 规范”“审查清单”“风格手册”以不同写法塞给 Agent，难以统一维护和追溯。
+- 代理生态碎片化：Claude Code、Cursor、Windsurf、OpenHands、GitHub Copilot 等各有自己的自定义配置路径与格式，手工适配成本高。
+- 场景化能力缺失：Agent 擅长“通用编码”，但公司内网工具、特定审计口径、框架最佳实践等“领域知识”需要反复告知，且容易走形。
+- 团队协作与审计难：很难证明“某次 AI 审查用的是哪条规则”，难以版本管理与回溯。
+skills 的定位：成为“Agent 能力的包管理器 + 统一技能格式”。它不运行 Agent 本身，而是把“如何做某事”的指令与必要脚本标准化（SKILL.md + 可选 scripts/、references/），并按约定路径放到对应 Agent 的目录中，实现“一套技能，多处生效”。
+---
+## 核心亮点与功能剖析
+### 1) 统一的 Skill 格式（SKILL.md + YAML frontmatter）
+- 每个 Skill 是一个目录，包含 SKILL.md（YAML frontmatter + Markdown 指令），可选 scripts/ 与 references/。
+- YAML 必填字段：name（唯一标识）、description（简短说明）。可选 metadata.internal 用于隐藏未完成或内部专用技能。
+- 这套“可读、可写、可审查”的单一事实源让技能像代码一样进 Git，方便 review、PR 与版本回溯。
+### 2) 跨 75+ Agent 的覆盖与路径适配表
+- CLI 内置“Supported Agents”表，为每个 Agent 指定项目级与全局级的 skills 目录，例如：
+  - Claude Code：.claude/skills/ 与 ~/.claude/skills/
+  - Cursor：.agents/skills/ 与 ~/.cursor/skills/
+  - Windsurf：.windsurf/skills/ 与 ~/.codeium/windsurf/skills/
+  - GitHub Copilot、OpenHands、Cline 等也有各自路径。
+- 安装时自动检测已安装的 Agent 并按表写入文件，省去手工复制与路径记忆。
+### 3) 源格式多样与私有仓库支持
+- 支持多种来源：GitHub 短名（owner/repo）、完整 URL、GitLab、任意 git URL、本地路径、直接 SKILL.md 或压缩包下载 URL。
+- 对压缩包下载有默认安全限制：下载≤10 MiB，解压后≤25 MiB，文件数≤1000；可通过环境变量覆盖。
+- 私有仓库通过 Git credential helper、GitHub CLI（gh）、SSH 等自动复用鉴权；必要时可显式使用 GITHUB_TOKEN/GH_TOKEN 进行 GitHub API 访问。
+### 4) 技能生命周期管理
+- 安装：npx skills add <source>
+  - 可指定 --agent、--skill、--global（-g）、--all、--copy（默认为 symlink）、-y（非交互）。
+  - 安装分为 Project（随项目提交，团队共享）与 Global（用户目录，所有项目可用）。
+- 搜索：npx skills find
+  - 支持交互式搜索、关键词搜索与按 --owner 过滤。
+- 列出：npx skills list/ls
+  - 可按 -g 或 -a 过滤，类似 npm ls。
+- 更新：npx skills update
+  - 可按 scope（-p/-g）、非交互（-y）、更新指定技能，保证团队技能版本一致。
+- 移除：npx skills remove/rm
+  - 支持按技能名、Agent、scope 与通配符精确清理，避免“只增不减”的技能堆积。
+- 模板生成：npx skills init
+  - 快速生成 SKILL.md 模板，降低创作门槛。
+### 5) “无需安装直接使用”（use）
+- npx skills use <source> 会把技能文件写到临时目录，仅把生成的提示词打印到 stdout（除非带 --agent 启动具体 Agent）。
+- 适合一次性任务或 CI 流水线，例如：
+  ```
+  npx skills use vercel-labs/agent-skills@web-design-guidelines | claude
+  ```
+  或
+  ```
+  npx skills use vercel-labs/agent-skills --skill web-design-guidelines --agent claude-code
+  ```
+### 6) 生态发现平台（skills.sh）与 Leaderboard
+- skills.sh 提供“Skills 目录”与排行榜（All Time / Trending / Hot），展示技能安装量与 8 周活跃度，方便筛选高质量技能。
+- 官方标注“Skills are open source on GitHub”，与 CLI 和 agent-skills 官方集合形成闭环。
+### 7) 与 Claude 插件生态的兼容（Plugin Manifest Discovery）
+- 若仓库存在 .claude-plugin/marketplace.json 或 plugin.json，CLI 会从 manifest 中解析 skills，并按声明路径发现。
+- 这意味着已有的 Claude Code 插件生态可以顺滑接入 Skills 规范，不需要重复维护两套目录结构。
+### 8) 兼容性矩阵与风险控制
+- README 附带“Compatibility”表，标明各 Agent 对 basic skills、allowed-tools、context: fork、Hooks 等特性的支持情况，帮助用户选择特性组合，避免误用。
+---
+## 目标人群与收益
+### 适合人群
+- 一线开发者：使用 Claude Code / Cursor / Windsurf / Copilot 等编程 Agent，希望减少重复提示词输入。
+- 工程小组/团队：希望统一编码规范、PR 模板、发布说明风格，并把规则落实为可审计的 SKILL.md 源文件。
+- 平台与基础设施团队：希望把公司内部工具、审计口径、部署集成等“领域知识”封装为可分发的技能。
+- 插件/生态贡献者：想为 Agent 生态撰写并分享高质量技能，提升影响力与实用性。
+### 具体收益
+- 一致性：团队统一同一套技能，输出结果可预期、可审计，减少“同一个问题，每次问出来的不一样”的情况。
+- 效率：一键安装与更新，不用反复粘贴长提示词；节省时间与心智负担，多人协作也减少对齐成本。
+- 可复用与组合：不同技能可叠加使用（如 React 最佳实践 + 写作规范 + Vercel 优化），形成“Agent 工具链”。
+- 生态参与：skills.sh 的排行榜与发现机制让优质技能被看见；团队也可将内部技能公开，形成品牌与技术影响力。
+---
+## 竞品/同类对比
+- 直接在 Agent 内粘贴提示词/规则：不统一、难以版本化、难以团队协作。skills 把规则变成“代码文件”，可 review、可 PR、可版本回溯。
+- 各 Agent 自带的“自定义规则/系统提示”：互不兼容，维护成本高。skills 以统一格式与路径适配表桥接多家生态，减少维护点。
+- 脚本式封装（如 Make/Shell 调用 LLM API）：需要自行鉴权、配额管理、prompt 组装。skills 不接管 LLM，专注“提示与脚本”的交付，灵活性更高。
+- MCP（Model Context Protocol）生态：侧重“工具调用与上下文注入”协议与数据传输。skills 侧重“提示词 + 可选脚本”的包管理与目录发现，两者可互补（一个管数据/工具，一个管“如何用”）。
+独特竞争力：
+- 官方背书与生态规模：skills CLI 与 skills.sh 由 Vercel Labs 维护，集成 75+ Agent，并提供公开排行榜，生态热度高。
+- SKILL.md 作为“可读、可写、可审查”的单一事实源：便于 Git 追踪与代码审查，降低团队采纳门槛。
+---
+## 局限与不足
+- 依赖 Agent 宿主路径与加载机制：若某 Agent 更改目录或加载策略，skills 需同步更新适配表，可能存在滞后或兼容断层。
+- 执行边界控制有限：skills 负责把内容放进 Agent 目录，但不保证 Agent 一定会/按期望使用该技能。合规性依赖 Agent 本身的技能加载逻辑。
+- 权限与安全信任链：从网络拉取压缩包或脚本并在本地执行（scripts/），需要信任源。文档虽给出下载/解压上限，但未提供沙箱或签名校验，建议企业内部先审计再全局安装。
+- 多 Agent 环境的“同步与一致性”仍需团队纪律：skills 能把同一技能拷贝到多处，但若 Agent 之间能力/格式差异大，技能需要针对性适配。
+- 遥测默认开启：CLI 默认收集匿名使用数据（仓库与技能标识符），可通过 DISABLE_TELEMETRY/DO_NOT_TRACK 关闭。对隐私敏感的组织需注意。
+- 刚需场景仍需学习与维护：编写高质量 SKILL.md 需要“提示工程 + 领域知识”，技能也需要根据产品迭代持续修订。
+---
+## 上手门槛与部署体验
+- 安装门槛：极低。有 Node/npx 环境即可一行命令体验：
+  ```
+  npx skills use vercel-labs/agent-skills@web-design-guidelines | claude
+  ```
+- 环境要求：npm/npx 与 Git（用于拉取 GitHub/GitLab 等源）。需要目标 Agent 已安装并遵循约定目录结构。
+- 文档与引导：README 完整覆盖命令示例、源格式、私有仓库、环境变量、兼容矩阵与排错；skills.sh 补充发现与排行榜信息。上手与排错成本较低。
+- Docker 一键部署：README 未提供现成镜像，但基于 npm 的包模式本身易于打包到 Docker 镜像（团队可自行定制）。
+---
+## 社区活跃度与生命力
+- Stars：skills 与其姐妹仓库 agent-skills（官方技能集合）在 Vercel Labs 组织下均达到数万级 stars，显示生态受关注度与采用度。
+- 更新与反馈：README 明确许可证为 MIT，并给出故障排查与 telemetry 说明，体现维护细节与合规意识。
+- 生态繁荣：skills.sh 排行榜展示全时安装量与 8 周活跃，官方与多家组织持续发布技能（如微软 azure-skills、Feishu open.feishu.cn 技能包等）。
+---
+## 技术栈与架构解析（开发者工具视角）
+- 技术栈：TypeScript/JavaScript，npm/npx 分发；核心依赖 Git、GitHub CLI、压缩包处理、YAML 解析与路径管理等基础能力。
+- 架构设计亮点：
+  - “技能格式 + 目录约定表”：将不同 Agent 的能力差异收敛为一张“路径与特性映射表”，CLI 仅按表行事，保持内核稳定与易扩展。
+  - 单一来源与 symlink 优先：安装方式默认为 symlink，保证“一改全改”，同时支持 copy 作为降级方案，兼顾灵活性与可维护性。
+  - 多源发现：除 skills/ 等固定目录外，兼容 Claude 插件 manifest，并支持递归兜底，降低迁移成本。
+---
+## Demo/代码示例（开发者最关心的“怎么用”）
+- 最小可用示例（列出官方集合中的可用技能）：
+  ```
+  npx skills add vercel-labs/agent-skills --list
+  ```
+- 安装特定技能到指定 Agent（例如 Cursor 与 Claude Code，全局生效，非交互）：
+  ```
+  npx skills add vercel-labs/agent-skills -s react-best-practices -s web-design-guidelines -a cursor -a claude-code -g -y
+  ```
+- 不安装直接使用（打印 prompt 到 stdout，可管道传递给 Agent）：
+  ```
+  npx skills use vercel-labs/agent-skills@web-design-guidelines | claude
+  ```
+- 交互式搜索技能：
+  ```
+  npx skills find typescript
+  npx skills find react --owner vercel
+  ```
+- 列出已安装的技能（支持按 Agent 过滤）：
+  ```
+  npx skills ls
+  npx skills ls -g
+  npx skills ls -a claude-code -a cursor
+  ```
+- 更新已安装技能：
+  ```
+  npx skills update -g -y          # 非交互地更新全局技能
+  npx skills update react-best-practices web-design-guidelines
+  ```
+- 移除技能：
+  ```
+  npx skills remove web-design-guidelines -g
+  npx skills rm --agent cursor --skill '*'
+  ```
+- 创建新的 Skill 模板：
+  ```
+  npx skills init my-skill
+  ```
+- 创建一个 SKILL.md 示例（YAML frontmatter + 结构化说明）：
+  ```
+  ---
+  name: release-notes-from-git
+  description: Generate release notes from git history
+  ---
+  # Release Notes from Git
+  ## When to Use
+  When preparing a GitHub release or change log based on recent commits.
+  ## Steps
+  1. Run `git log --pretty=format:"- %s" <tag>..HEAD` to collect commit messages.
+  2. Group commits by theme (e.g., Features / Fixes / Changes).
+  3. Summarize breaking changes explicitly.
+  4. Output in Markdown with a version header.
+  ```
+---
+## 结语与行动建议
+- 适用场景：你有多个 Agent（Claude Code、Cursor、Windsurf、Copilot 等），希望统一与沉淀“编码规范/审计规则/外部工具集成/发布流水线”等提示词与脚本；或你打算为生态贡献高质量技能。
+- 行动建议：
+  - 先试用“use”流：管道式体验单技能输出，评估是否满足你的工作流。
+  - 再选“add”流：全局安装你高频使用的技能（如 react-best-practices、web-design-guidelines 等），让 Agent 自动加载。
+  - 团队/企业：在仓库中维护自己的 skills 集合，将内部规则沉淀为 SKILL.md，并按项目级或全局级纳入 CI/CD 代码审查流程。
+- 风险管控：对来自外部的技能先审计再全局安装；生产环境使用前建议在隔离环境验证；如需严控隐私，及时设置 DISABLE_TELEMETRY/DO_NOT_TRACK。
+- 终极评价：skills 把“提示词工程”与“插件分发”合二为一，为 AI 编程代理补上了“包管理”这一环。它在 Agent 碎片化严重的当下，提供了一个跨平台、可审计、可协作的统一能力层，值得团队认真评估并纳入工具链。
