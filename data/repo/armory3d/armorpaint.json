@@ -1,0 +1,60 @@
+{
+  "id": "f434d982-fca7-4c19-a110-dca0571b4fca",
+  "url": "https://github.com/armory3d/armorpaint",
+  "domain": "github.com",
+  "repo": "armory3d/armorpaint",
+  "description": "ArmorPaint 是一款开源的 3D 纹理绘制软件，全 GPU 管线带来高性能体验。它是 Substance 3D Painter 的强力平替，支持节点化材质、光线追踪烘焙及本地 AI，跨平台且成本极低，是独立开发者和预算有限团队的理想选择。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-10T12:20:32.854Z",
+  "metaData": {
+    "forks": "509",
+    "stars": "4248",
+    "topics": [
+      "3d",
+      "armorpaint",
+      "painting",
+      "texturing",
+      "tool"
+    ],
+    "license": "license.md",
+    "homepage": "https://armorpaint.org",
+    "description": "Graphics Creation Tools. Contribute to armory3d/armorpaint development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "3D",
+      "PBR",
+      "纹理绘制",
+      "开源",
+      "AI"
+    ],
+    "cover": "",
+    "title": "ArmorPaint 深度评测与上手指南",
+    "ability": [
+      "3D PBR 纹理绘制",
+      "全 GPU 加速与光线追踪",
+      "节点化材质编辑",
+      "本地 AI 纹理处理",
+      "跨平台与多引擎互联"
+    ],
+    "summary": "开源轻量的 3D PBR 纹理绘制工具，Substance 低成本替代方案。",
+    "category": [
+      "开发工具",
+      "图形图像",
+      "开源项目"
+    ],
+    "suitable": [
+      "独立游戏开发者",
+      "技术美术 (TA)",
+      "中小型工作室",
+      "3D 艺术家",
+      "开源软件爱好者"
+    ],
+    "description": "ArmorPaint 是一款开源的 3D 纹理绘制软件，全 GPU 管线带来高性能体验。它是 Substance 3D Painter 的强力平替，支持节点化材质、光线追踪烘焙及本地 AI，跨平台且成本极低，是独立开发者和预算有限团队的理想选择。"
+  },
+  "contentDetail": "<|assistant|>我将打开 GitHub 仓库中的 license.md 文件，确认 ArmorPaint 的开源协议类型（如 MIT、Zlib 等），以便准确说明商用与再分发限制。</think>\n<|assistant|>我将打开 CG Channel 关于 ArmorPaint 1.0 的新闻，以确认“用 C 重写”的细节、性能改进、新增功能（如基本雕刻、AI 纹理处理、时间轴支持等）和发布时间等关键信息。</think>\n# ArmorPaint 深度评测与上手指南\n## 一句话总结\nArmorPaint 是一款开源、跨平台、高度 GPU 加速的 3D PBR 纹理绘制软件，被视为 Adobe Substance 3D Painter 的低成本替代方案；支持节点化材质、光线追踪烘焙、Neural Nodes（本地 AI）与 Blender/Unreal/Unity Live Link，并提供 zlib 宽松开源协议与不到 $20 的官方编译包，兼具可扩展性与性价比。\n---\n## 背景与痛点：为什么需要它？\n- 在游戏、影视与动效工作流中，给 3D 模型“上妆”需要逐通道绘制基础色、法线、粗糙度、金属度、AO 等。传统做法要么在平面绘图软件中“盲画”后再投射，要么依赖商业 3D 纹理工具（如 Substance 3D Painter）。\n- 商业方案虽成熟，但订阅成本高、体积庞大，且对工作流的整合有时受到生态限制（插件策略、私有格式等）。\n- ArmorPaint 由 Armory3D 团队开发，早期自 2018 年以 Early Access 形式迭代，2026 年 9 月发布 1.0 正式版；其目标是提供一套可跨平台运行、完全 GPU 驱动、支持 PBR 与光线追踪烘焙、且可自建插件/节点的轻量级 3D 绘制环境，解决“高性能但低成本”的核心痛点。\n---\n## 技术栈与架构解析（开发者视角）\n- 渲染后端：采用 Direct3D 12、Vulkan、Metal 与 WebGPU 作为跨平台 GPU 后端；光线追踪支持 D3D12（Windows）、Vulkan（Linux/Android）、Metal（macOS/iOS），确保在不同平台上都能利用现代 GPU 能力进行烘焙与实时预览。\n- 核心语言演进：早期版本基于 Haxe 并依赖 V8；1.0 版本完全用 C 重写，不再依赖外部运行时与库。好处是：代码体积显著缩小、内存占用更低、可加载更大资产、支持更高分辨率与更多层级。官方甚至称“可装进两张 1.44MB 软盘”。\n- 仓库结构与组织：仓库顶层分为 base、paint 与配置文件，其中 paint 包含应用核心逻辑；构建脚本统一在 base/make 中完成，支持 Windows（生成 VS 工程）、Linux（直接 make）、macOS（Xcode）、Android/iOS（生成 Studio/Xcode 工程）以及 WASM（Emscripten）等多目标编译；体现了“一码多端”的架构思路。\n- 插件与节点系统：通过插件扩展任意部分，包括新的节点系统、材质节点；材质编辑器支持节点预览、折叠与命名、迷你地图与自动补全（脚本标签页），适合技术美术与开发团队深度定制。\n- 开源协议：使用 zlib/libpng License，非常宽松，允许商用、修改与再分发，仅需保留版权声明与不误传来源，适合企业二次开发与内部分发。\n---\n## 核心亮点与功能剖析\n### 1) 全 GPU 管线与高分辨率支持\n- 理论最高可进行“无缝”16K 绘制（推荐 RTX 2080 / 8GB 显存及以上）；4K 绘制在中等集显（如 Intel HD4000）级别也可流畅体验。\n- 比喻：就像把“3D 模型”和“多层壁画”完全放进显卡里，修改每一笔都在显卡内即时合成，避免频繁的 CPU-GPU 数据搬运，因而高分辨率下仍能保持流畅。\n### 2) 节点化材质与程序化填充\n- 支持基于节点（Node-based）的材质构建，包括 Fill Layers（填充层）与 Brush Nodes（笔刷节点），便于制作程序化笔刷与蒙版；可在 2D/3D 之间统一以节点链路控制复杂材质关系。\n- 实战收益：通过节点复用，快速在多个资产间统一风格修改；技术美术可构建“品牌材质节点库”，新人只需调整参数即可。\n### 3) 光线追踪烘焙与 Path Traced 视口\n- 可在 GPU 上进行烘焙（AO、Cavity、Thickness、Normal、ID、Lightmap 等）；视口支持路径追踪，实时光影更接近最终表现。\n- 典型用法：导入高模进行烘焙，生成基础贴图，再在 ArmorPaint 中进行细节手绘与修补；路径追踪视口下实时观察不同光照条件下的效果，避免“导出后才发现问题”。\n### 4) Live Link 与互操作性\n- 提供官方 Live Link 插件，可将 ArmorPaint 接入 Blender、Unreal Engine 与 Unity，实时同步与更新纹理；支持多种 3D 格式导入（OBJ、FBX、Blend、STL、GLTF/GLB 等），并可导出 GLB 与 EXR（最高 32bit）。\n### 5) Neural Nodes（本地 AI）\n- 1.0 版本新增 Neural Nodes，本地运行开源模型进行图像上采样、图转 PBR 材质、文生图等；官方明确所有 AI 推理在本地完成，模型下载后无需持续联网。推荐最低 6GB 显存。\n- 隐私与合规优势：企业内部敏感资产无须上传云端，适合有严格合规要求的场景。\n### 6) 新增基础雕刻与 UV 编辑、时间轴\n- 1.0 加入基础雕刻模式、UV 编辑器、网格修改器（Decimate、Subdivide、Smooth、Bevel）与时间轴面板，用于骨骼网格动画回放与简单动画编辑。\n- 收益：不必频繁在不同软件间来回切换，适合快速修型、补 UV、做动态贴图预览。\n### 7) 跨平台与便携性\n- 支持 Windows 10+、Linux、macOS（含 Apple Silicon）；iOS/Android 为实验版本；桌面端为无安装便携包，体积 <10MB，解压即用。\n---\n## 上手门槛与部署体验（含 Demo/示例）\n- 编译门槛：适合具备基础 C 编译能力的开发者；Windows 需 Visual Studio + clang 工具，Linux 需 clang + 依赖，macOS/iOS 需 Xcode，Android 需 Android Studio；构建命令集中统一在 base/make 中。\n- 一键部署体验：\n  - Windows（x64）：\n    - 下载官方编译包（约 $19，itch.io）；解压后直接运行 ArmorPaint.exe；首次运行若被系统拦截，选择“更多信息 - 仍要运行”。\n  - Linux：\n    - 解压后运行 ./ArmorPaint；如权限不足，可 chmod +x 再执行。\n  - macOS（arm64）：\n    - 解压后运行 ArmorPaint.app。\n  - WASM：\n    - 在仓库中执行：\n      ```bash\n      git clone https://github.com/armory3d/armorpaint\n      cd armorpaint/paint\n      ../base/make --target wasm --compile --embed\n      ```\n- 导入与导出示例（核心流程）：\n  - 导入：拖拽已 UV 的 OBJ/FBX/GLB 进入视口，可按 UDIM 拆分或应用蒙皮动画；在 Meshes 标签页中可计算法线、重置中心轴、自动生成 UV、进入基础 UV 编辑器、使用 Decimate/Smooth 等修改器。\n  - 导出：File → Export → Textures…；可设定分辨率、颜色深度（8/16/32bit）、格式（PNG/JPG/EXR），以及预设（Generic/Unreal/Unity/Minecraft 等）；支持通道打包与 Padding 设置以减少接缝。\n  - 保存/加载项目：Ctrl+S 保存为 .arm 工程（含网格、层、材质、笔刷）；可启用 Pack Assets 将外部贴图打包进 .arm，提升便携性。\n---\n## 社区活跃度与生命力\n- Stars/Forks 与贡献度：GitHub 约 4k Stars、约 445 Forks，Commit 数约 6k，说明项目具备一定历史沉淀与关注度；Issues/Pull Requests 数量显示仍有持续讨论与演进。\n- 1.0 版里程碑：2026 年 9 月正式发布 1.0，宣布结束 Early Access，并伴随 C 重写与性能大幅提升，证明团队在持续推进项目走向生产可用状态。\n- 生态与文档：官方站点与 Manual 提供基础到进阶说明；社区论坛（Armory/ArmorPaint）与 CG 媒体报道长期关注，对新手入门与经验分享有支撑。\n---\n## 目标人群与收益\n- 游戏美术/独立开发者：在低成本条件下获得接近 Substance 3D Painter 的 PBR 绘制与烘焙能力，适合预算有限的小团队与个人。\n- 技术美术（TA）：利用节点系统与插件接口，批量生产或维护材质/笔刷库；将 AI 节点与贴图后处理整合进管线，提升一致性。\n- 影视/动效从业者：借助光线追踪烘焙与路径追踪视口，在材质阶段即获得接近渲染器的预览效果，缩短迭代周期。\n- 有合规要求的企业团队：Neural Nodes 本地推理与 zlib 协议便于内部分发与二次开发，降低合规风险。\n---\n## 竞品/同类对比\n- Substance 3D Painter：生态成熟、插件与自动遮罩/材质库丰富；但订阅成本高且体积大；ArmorPaint 更轻量、本地 AI、开源、可定制，但生态体量尚有差距。\n- 3D Coat：功能涵盖雕刻、拓扑与绘制，体量较重；ArmorPaint 更聚焦于“绘制 + 节点 + 本地 AI”，工作流相对轻快。\n- Blender 内置纹理绘制与插件（如 BPainter）：与 Blender 集成深度好，但在高分辨率、大量图层时性能与体验常受限；ArmorPaint 的纯 GPU 管线在 4K/8K/16K 场景下更占优势。\n- 其他开源/社区项目（如 Material Maker）：更偏向程序化纹理生成而非 3D 模型直绘，可与 ArmorPaint 在管线中互补。\n---\n## 局限与不足\n- 生态与素材库：官方材质库/笔刷与社区生态体量不及商业竞品，许多效果需要自建或导入。\n- 功能覆盖：UV 编辑、雕刻等在 1.0 仍属“基础”级别，专业需求可能仍需返回 DCC 软件处理。\n- 学习曲线：节点与脚本能力意味着需要对管线与编程有一定理解，新人需投入时间熟悉。\n- 移动端实验性：iOS/Android 版本标记为实验，稳定性与性能可能因设备差异而异。\n- AI 节点门槛：使用 Neural Nodes 需约 6GB 显存，且需下载模型；对低显存设备不够友好。\n---\n## 商业模式与性价比\n- 开源：源码 zlib 许可，可自由商用与修改，鼓励企业定制。\n- 官方二进制：桌面端约 $19（itch.io），移动端约 $17.99–$19.99（App Store/Google Play），用于资助项目持续开发；相比长期订阅制，一次性成本更有吸引力。\n---\n## 结语与行动建议（通用）\n- 如果你需要一款轻量、高性价比且可深度定制的 3D PBR 绘制工具，ArmorPaint 1.0 值得认真上手。它在 GPU 性能、本地 AI 与节点化材质等方面具备独特竞争力，尤其在预算敏感或合规严格的场景下表现突出。\n- 建议行动：\n  - 优先选择官方编译包体验“开箱即用”的绘制、烘焙与 Live Link 流程；\n  - 若有二次开发需求，再基于源码与官方手册深入插件与节点系统；\n  - 将“Neural Nodes”作为贴图后处理（如上采样、图转 PBR）的本地方案纳入管线，以降低对云端服务的依赖。\n---\n## 补充：给开发者的“最小可用示例”（Linux 命令行编译与运行）\n```bash\ngit clone https://github.com/armory3d/armorpaint\ncd armorpaint/paint\n../base/make --run\n```\n（Windows/macOS 请参照上文的对应构建命令）\n---\n> 参考资料：GitHub 仓库与 README、Manual、CG Channel 对 1.0 的报道、官方站点特性页等。",
+  "type": "project",
+  "dateAdded": "20260910"
+}

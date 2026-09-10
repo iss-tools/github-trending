@@ -1,0 +1,154 @@
+# AlexsJones/llmfit
+
+[GitHub URL](https://github.com/AlexsJones/llmfit)
+
+
+## llmfit 深度评测：你的本地大模型选型神器
+
+> 一键检测硬件配置，精准推荐最适合你电脑跑的本地大模型。
+
+- **Tags**: GitHub, 大模型, 硬件检测, 模型推荐, Rust
+- **Category**: 开发工具, AI 编程, 系统工具
+
+## Details
+
+# llmfit 深度评测
+一句话总结：llmfit 是一条命令就能帮你筛出“在你的机器上真·能跑好的本地大模型”的终端工具，集硬件探测、多维评分与社区基准于一体；想省时、省硬盘、省试错成本的本地 LLM 玩家，值得一看。
+---
+## 一、背景与痛点：为什么需要“模型尺子”
+在本地跑大模型有三个典型迷魂阵：
+- 模型太多、流派太多：HuggingFace、Ollama、GGUF、GPTQ、AWQ、EXL2、MoE … 新名词层出不穷，选哪个都像开盲盒。
+- 硬件规格太抽象：参数量 7B/8B/14B、Q4_K_M/Q8_0、上下文 32k/128k，算到“我这台电脑到底能不能跑顺”，很难一次算对。
+- 上下文与算力二选一：同一个模型在不同量化与上下文组合下，内存占用差异巨大；一旦估错，要么 OOM 崩溃，要么把显存吃得只剩残渣。
+llmfit 就是为解决“选型难、估错多”而生的：自动探测你的 CPU、内存、GPU/VRAM 与加速器，再结合数百个模型的多维信息，给出可落地的“适配度评分”与推荐清单。它不做推理，只做“选型与规划”。
+---
+## 二、核心亮点与功能剖析
+### 1）一键安装、多包管理器 + Docker / 源码全覆盖
+- macOS/Linux：提供 Homebrew、MacPorts、curl 一键脚本、uv/pip，甚至还能从源码 `cargo build --release`，满足从“懒人一键”到“开发者自编”的需求。
+- Windows：支持 Scoop 安装；二进制通过 SignPath Foundation 的免费证书做 Authenticode 签名，提升可信度与防篡改能力。
+- 容器化：官方 OCI 镜像 `ghcr.io/alexsjones/llmfit`，支持交互式 TUI 与无头 Web/API 两种模式，给 CI/CD 或编排集成开了一扇大门。
+- 可作为 Python 包：通过 pip/uv 以工具形式安装或直接运行，降低非 Rust 用户的心智负担。
+示例：快速安装与首次运行（macOS/Linux）
+```bash
+# 安装（二进制）
+brew install AlexsJones/llmfit/llmfit
+# 或一键脚本（自动拉取最新 Release）
+curl -fsSL https://llmfit.axjns.dev/install.sh | sh
+# 运行 TUI 交互界面
+llmfit
+```
+### 2）硬件自动探测与多 GPU / 多加速器支持
+- 支持平台：macOS（Apple Silicon 与 Intel）、Linux（x86_64 与 ARM64）、Windows（x86_64）。
+- 支持后端与加速器：NVIDIA CUDA、Apple Silicon、AMD ROCm、Intel oneAPI；可探测多 GPU、统一内存架构等复杂拓扑。对多 GPU 场景，还会汇总 VRAM 做适配评估。
+这带来的直接好处是：不管是 Mac Mini、Windows 游戏本、Linux 工作站，还是带多卡的服务器，它都能给你一个“本机可跑”的模型清单，而不是那种理想环境的估算。
+### 3）多维评分体系：Fit / 速度 / 质量 / 上下文
+llmfit 对每条模型记录，会按四个维度打分，并形成综合分数（0–100）：
+- Fit（适配度）：结合 RAM/VRAM 与不同量化、上下文长度，估算内存占用与稳定性。简单理解：会不会爆显存、会不会挤爆系统内存。
+- Speed（速度）：基于内存带宽模型与社区实测数据，估算 Token/s（TPS）。粗略理解：每秒大概能吐多少个字。
+- Quality（质量）：利用公开基准与社区评价，给模型一个“品质分”，偏向于通用能力打分。
+- Context（上下文）：考量模型支持的上下文窗口与你的硬件预留，给长上下文场景一个可用性分。
+TUI 顶部会显示你的硬件信息，下方则以表格列出：Score / TPS / Quant（推荐量化） / Mode（GPU/CPU+GPU/等） / Mem（内存占用百分比） / Context（最大上下文）。
+### 4）交互式 TUI：浏览、筛选、规划、一键下载/基准
+- 核心交互：方向键或 `j/k` 滚动，`/` 搜索，`f` 循环过滤（All/Runnable/Perfect/Good/Marginal），`d` 调用 Ollama/llama.cpp/MLX 等提供方下载模型，`q` 退出。
+- 关键快捷键：
+  - `b`：打开社区基准（贡献的实测 tok/s）。
+  - `I`：打开实时推理基准，对正在运行的提供方做实测。
+  - `h`：显示帮助与键位说明。
+- 计划与模拟：可在 TUI 内切换不同上下文或量化进行“假设分析”，看看对评分/占用的影响，做容量规划。
+- 社区基准贡献：新版本的“benchmark & share”让你在本机跑完真实基准后，直接从 TUI 提交 PR 将结果回馈项目。本地会优先使用实测数据，合并后同硬件的用户也能享受“真实打勾值”。
+### 5）CLI 脚本友好：JSON 输出、REST API、`llmfit serve`
+- 常用子命令：
+  - `llmfit fit`：输出按适配度排序的模型表格（适合终端直接查看）。
+  - `llmfit recommend`：给出推荐列表；加 `--json` 则输出 JSON，给脚本与 Agent 食用。
+  - `llmfit info "<model>"`：单模型详解，给出适配分析、评分依据、验证命令等。
+  - `llmfit bench`：针对你正在运行的提供方做真实 TPS/TTFT 测量。
+  - `llmfit doctor`：输出硬件检测报告，方便提 Bug 或自查。
+  - `llmfit serve`：启动内建 HTTP API 服务器，也提供 Web UI（通过 Docker 更方便）。
+- REST API / Web UI 示例：
+```bash
+# Docker 起一个 API + Web UI 服务
+docker run -d -p 8787:8787 ghcr.io/alexsjones/llmfit serve
+# 调用健康检查
+curl http://localhost:8787/health
+```
+docker-compose 示例（官方也给出了一份完整样例，包含健康检查）。
+### 6）运行时提供方集成：Ollama、llama.cpp、MLX、Docker Model Runner、LM Studio
+llmfit 能识别与对接多种本地运行时，并在 TUI 中标出哪些模型已在本地安装（Inst 列有绿色 ✓）。你可以通过 TUI 直接触发下载、安装或通过对应提供方运行。
+---
+## 三、技术栈与架构概览
+- 编程语言：Rust（CLI/TUI 核心）；部分生态通过 Python 包分发（便于 pip/uv 安装）。
+- Workspace 结构：Cargo.toml 显示为 workspace，包含 `llmfit-core`、`llmfit-tui`、`llmfit-desktop` 等 crate，便于拆分核心逻辑与界面、桌面 GUI（如 Windows 的 llmfit-gui）。
+- 架构亮点（基于文档与 README 的归纳）：
+  - 硬件抽象层：负责 CPU、内存、GPU/VRAM、加速器与后端的检测与聚合。
+  - 模型数据库：以结构化数据保存各模型的参数量、量化格式、上下文长度、提供方链接与元信息。
+  - 评分与估算引擎：以内存带宽模型为基础，结合社区实测采样，估算 TPS，并计算出综合评分。
+  - 输出层：TUI（终端交互）、CLI（标准输出/JSON）、REST API（HTTP/JSON），多形态呈现。
+  - 提供方适配器：对接 Ollama、llama.cpp、MLX、Docker Model Runner、LM Studio 等，实现“可检测本地安装状态 + 触发下载”。
+整体架构呈现“核心逻辑 + 多前端 + 可扩展后端”的形态，比较清晰且易扩展。
+---
+## 四、Demo / 使用示例
+1) 最简 TUI 场景：我有一台 24GB 显存的 RTX 4090 机器，看看能跑啥
+```bash
+llmfit
+```
+TUI 顶部显示：System: 62GB RAM | 14 cores | NVIDIA RTX 4090 (24GB VRAM)（示例）
+下方列表中，可能会看到类似：
+- Qwen/Qwen2.5-Coder-7B Score: 94.5
+- Mistral-7B-Instruct Score: 92.1
+- Llama-3.1-8B-Instruct Score: 91.8
+每行还附有 TPS、推荐量化、运行模式与 Mem% 等信息。你可以：
+- 按 `f` 过滤出 Perfect/Good，快速锁定最稳妥的候选。
+- 按 `/` 搜索 “coding” 等关键字，按用例筛选。
+- 按 `d` 触发你偏好的提供方进行下载与安装。
+2) 脚本 / Agent 集成场景：我要自动化选一个适合编码的模型
+```bash
+llmfit recommend --json --use-case coding --limit 3 | jq '.models[].name'
+```
+这会返回 JSON 数组，包含按综合评分排序的推荐模型及其元数据，便于在你的脚本或 Agent 中自动选型或触发后续工作流。
+3) 容器化场景：在集群或 K8s 里做容量规划
+```bash
+docker run ghcr.io/alexsjones/llmfit recommend --use-case coding | jq '.models[].name'
+```
+也可以选择通过 `llmfit serve` 将 HTTP 服务跑起来，供编排系统查询本机（或该节点）的最佳模型与容量建议。
+---
+## 五、目标人群与收益
+- 本地 LLM 玩家/个人开发者：不想花大把时间下载一堆模型才发现跑不动；llmfit 能帮你一开始就锁定“适合自己机器”的少数高价值模型，省硬盘、省电、少崩溃。
+- 运维与 SRE：在服务器或集群上规划部署本地 LLM 时，需要评估每台节点最合适跑什么规格、多大上下文的模型；llmfit 可通过 API 或 CLI 快速输出“规划建议”，避免盲配。
+- AI Agent 与自动化工具开发者：需要根据硬件环境动态选择模型/量化；llmfit 的 JSON 推荐接口与 REST API 可以低成本嵌入你的工具链，实现“自适应选型”。
+- 创业团队/小公司：预算有限，买不起高端 GPU，想在有限硬件上“榨出最佳性能”，llmfit 能帮你把模型、量化与上下文组合优化到极致。
+实际收益：提升选型准确率、减少试错成本、让有限算力“用在刀刃”。
+---
+## 六、竞品/同类对比
+- llm-checker（项目 README 明确列出）：基于 Node.js、集成 Ollama 直接拉取并跑模型基准，走“真跑实测”的路线。优点是数据真实，缺点是需要已有 Ollama 环境，并且不支持 MoE 架构（把 Mixtral/DeepSeek-V3 等当作稠密模型估算，内存可能算大）。适合那些“不在乎时间成本、就想用真实测试说话”的用户。
+- HuggingFace 模型卡 + 手工估算：常见做法是查参数量、上下文、量化格式，再自己粗算显存。耗时且容易出错，对 MoE、统一内存等复杂场景尤其吃力。
+- 各模型托管平台（Ollama/LM Studio 内置推荐）：通常给出较为通用的推荐列表，难以结合你本机的具体拓扑与并发场景做个性化评估。
+llmfit 的独特竞争力：
+- “先评估、再跑”的估算模型 + 社区实测的混合：避免动辄几十分钟的逐一跑基准，又能在重要节点用真实验证。
+- 多维度评分与按用例过滤：质量、速度、上下文与适配度综合考量，而不仅是“能不能跑”。
+- 多 GPU、多加速器与多平台支持：覆盖面较宽，对统一内存与 MoE 等复杂场景有专门处理。
+- TUI/CLI/API/容器四种形态：从个人玩票到生产集成都有对应接口。
+---
+## 七、局限与不足（客观视角）
+- 估算模型有误差：基于内存带宽与采样数据的估算是近似值，实际 TPS 会受到后端实现、并发调度、系统负载等影响，只能当作“预期值”，不是“保证值”。
+- 某些平台/硬件检测仍有边界问题：Issues 中出现过 DGX 环境下 GPU 未被正确识别、AMD 统一内存检测问题等；说明新硬件/新驱动组合偶有适配滞后。
+- TUI 交互细节仍待打磨：有用户反馈过滤/排序的键位可用性问题、KV cache 过滤过于保守导致“Good/Runnable”列表为空等。这些易用性问题在 Issue 板里多有讨论，说明在 UX 上还有提升空间。
+- 学习曲线并非为零：对于完全不懂终端的新用户，TUI 键位与 CLI 参数仍需一点点学习；好在官方文档与 TUI 帮助（`h`键）都在逐步补齐。
+- 社区实测覆盖度有限：虽然“benchmark & share”机制允许贡献数据，但实测条目目前仍集中在部分热门硬件型号；在非常冷门的配置上，仍会更多依赖估算。
+---
+## 八、社区活跃度与生命力
+- Stars 与 Fork：截至当前，Star 数约为 3.5 万级、Fork 数约 2.3k，反映社区关注与参与度都比较可观。
+- 发布节奏：从 Tags 页看，2026 年 8–9 月频繁发布 1.1.7–1.1.15 等版本，平均一周内迭代甚至多次，维护力度较高。
+- Issue 与 PR：Issues 板中有较多 2026 年中后期的未关闭条目，包含 Bug 报告与功能需求；从 Release 频次看，许多问题在后续版本里陆续得到修复与增强。PR 活度也保持在正常水平。
+- 文档与生态：有独立的文档站、Docker 镜像与多个姊妹项目（如 llmserve、llama-panel、llmfit-gui），说明项目不是“单点工具”，而是朝着“本地 LLM 工具链生态”的方向在演进。
+---
+## 九、结语与行动建议
+如果你：
+- 经常在本地跑各种 LLM、试错成本高，
+- 需要给团队或集群做“跑什么模型、怎么配量化与上下文”的决策，
+- 想要一个既能在终端一键交互、又能被脚本/Agent 调用的“模型尺子”，
+那么 llmfit 是一个非常值得加入工具链的项目。它不是“一键启动推理”，而是“帮你选对启动参数与模型”的前置决策助手——尤其在模型和硬件组合越来越复杂的今天，这点非常值。
+行动建议（按场景）：
+- 个人玩家：先用 Homebrew 或脚本一键安装，跑一遍 `llmfit`，用 TUI 的过滤与搜索功能，找到你机器上“最合适的那几只模型”，再通过你偏好的提供方下载实测。
+- 开发者/脚本控：用 `llmfit recommend --json` 或 `llmfit serve` 接入你的自动化流程，实现按硬件环境动态选择模型/量化。
+- 运维/集群用户：在节点上跑 `llmfit doctor` 核对硬件检测，用 API 做容量规划；若愿意，可以参与“benchmark & share”，把你的实测回馈给社区，让同硬件的用户受益。
+从设计与实现看，llmfit 并没有“造一个新推理引擎”，而是聚焦在“硬件侧的理解与模型的适配评估”，这种定位务实且护城河明显——只要本地 LLM 继续热，它就会持续有用。

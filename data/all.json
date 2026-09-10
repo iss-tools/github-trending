@@ -1,6 +1,213 @@
 {
   "all": [
     {
+      "id": "90f275d6-f685-4627-ac15-cc557fc8ed05",
+      "url": "https://github.com/JustVugg/colibri",
+      "domain": "github.com",
+      "repo": "JustVugg/colibri",
+      "description": "Colibrì 是一款基于纯 C 语言的开源推理引擎，支持 GLM、DeepSeek 等多种模型。它创新性地利用分层存储技术，将硬盘、内存和显存统一调度，使得仅需消费级硬件即可运行高达 744B 参数的 MoE 模型，兼顾性能与成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-10T12:27:10.275Z",
+      "metaData": {
+        "forks": "2997",
+        "stars": "27291",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://justvugg.github.io/colibri",
+        "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+      },
+      "summaryData": {
+        "tags": [
+          "大模型",
+          "推理引擎",
+          "开源",
+          "C语言",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "Colibrì：让消费级设备运行 744B 大模型的纯 C 推理引擎",
+        "ability": [
+          "分层存储与 JIT 加载",
+          "多硬件异构计算",
+          "纯 C 语言高性能",
+          "多模型家族支持",
+          "OpenAI 兼容 API"
+        ],
+        "summary": "纯 C 语言开发的开源推理引擎，通过分层存储技术，让普通电脑也能跑起 700B+ 的超大规模 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI"
+        ],
+        "suitable": [
+          "系统架构师",
+          "本地部署爱好者",
+          "AI 研究人员",
+          "硬件资源受限的开发者"
+        ],
+        "description": "Colibrì 是一款基于纯 C 语言的开源推理引擎，支持 GLM、DeepSeek 等多种模型。它创新性地利用分层存储技术，将硬盘、内存和显存统一调度，使得仅需消费级硬件即可运行高达 744B 参数的 MoE 模型，兼顾性能与成本。"
+      },
+      "type": "project",
+      "dateAdded": "20260910"
+    },
+    {
+      "id": "f434d982-fca7-4c19-a110-dca0571b4fca",
+      "url": "https://github.com/armory3d/armorpaint",
+      "domain": "github.com",
+      "repo": "armory3d/armorpaint",
+      "description": "ArmorPaint 是一款开源的 3D 纹理绘制软件，全 GPU 管线带来高性能体验。它是 Substance 3D Painter 的强力平替，支持节点化材质、光线追踪烘焙及本地 AI，跨平台且成本极低，是独立开发者和预算有限团队的理想选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-10T12:20:32.854Z",
+      "metaData": {
+        "forks": "509",
+        "stars": "4248",
+        "topics": [
+          "3d",
+          "armorpaint",
+          "painting",
+          "texturing",
+          "tool"
+        ],
+        "license": "license.md",
+        "homepage": "https://armorpaint.org",
+        "description": "Graphics Creation Tools. Contribute to armory3d/armorpaint development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "3D",
+          "PBR",
+          "纹理绘制",
+          "开源",
+          "AI"
+        ],
+        "cover": "",
+        "title": "ArmorPaint 深度评测与上手指南",
+        "ability": [
+          "3D PBR 纹理绘制",
+          "全 GPU 加速与光线追踪",
+          "节点化材质编辑",
+          "本地 AI 纹理处理",
+          "跨平台与多引擎互联"
+        ],
+        "summary": "开源轻量的 3D PBR 纹理绘制工具，Substance 低成本替代方案。",
+        "category": [
+          "开发工具",
+          "图形图像",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立游戏开发者",
+          "技术美术 (TA)",
+          "中小型工作室",
+          "3D 艺术家",
+          "开源软件爱好者"
+        ],
+        "description": "ArmorPaint 是一款开源的 3D 纹理绘制软件，全 GPU 管线带来高性能体验。它是 Substance 3D Painter 的强力平替，支持节点化材质、光线追踪烘焙及本地 AI，跨平台且成本极低，是独立开发者和预算有限团队的理想选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260910"
+    },
+    {
+      "id": "2df17169-e50a-4ea4-a481-543638c2f96f",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "domain": "github.com",
+      "repo": "AlexsJones/llmfit",
+      "description": "llmfit 是一款智能的本地大模型选型工具。它能自动扫描电脑的 CPU、内存和显卡，结合模型性能数据，为你推荐既能跑得动又流畅的 AI 模型。支持命令行和图形化交互，助你告别试错，快速榨干硬件性能。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-10T12:12:02.694Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "大模型",
+          "硬件检测",
+          "模型推荐",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "llmfit 深度评测：你的本地大模型选型神器",
+        "ability": [
+          "硬件自动探测",
+          "多维模型评分",
+          "交互式 TUI 终端",
+          "本地模型推荐",
+          "跨平台支持"
+        ],
+        "summary": "一键检测硬件配置，精准推荐最适合你电脑跑的本地大模型。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "系统工具"
+        ],
+        "suitable": [
+          "本地 LLM 玩家",
+          "个人开发者",
+          "运维与 SRE",
+          "AI Agent 开发者",
+          "算力有限的小团队"
+        ],
+        "description": "llmfit 是一款智能的本地大模型选型工具。它能自动扫描电脑的 CPU、内存和显卡，结合模型性能数据，为你推荐既能跑得动又流畅的 AI 模型。支持命令行和图形化交互，助你告别试错，快速榨干硬件性能。"
+      },
+      "type": "project",
+      "dateAdded": "20260910"
+    },
+    {
+      "id": "b82890af-8323-4e67-bc97-67c807513a4d",
+      "url": "https://github.com/alsk1992/CloddsBot",
+      "domain": "github.com",
+      "repo": "alsk1992/CloddsBot",
+      "description": "CloddsBot 是一个基于 Node.js 开发的 Twitter 机器人，利用 OpenAI API 实现智能回复。它集成了 Bull 队列进行任务管理，支持多账号配置，适合用于社交媒体自动化运营或技术研究。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-10T12:04:33.159Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Twitter Bot",
+          "OpenAI",
+          "Node.js",
+          "自动化",
+          "社交媒体"
+        ],
+        "cover": "",
+        "title": "CloddsBot",
+        "ability": [
+          "Twitter 内容抓取",
+          "OpenAI 自动回复",
+          "多账号管理",
+          "任务队列调度",
+          "高可配置性"
+        ],
+        "summary": "基于 Node.js 和 OpenAI 的 Twitter 自动化回复机器人，支持多账号与任务队列管理。",
+        "category": [
+          "开发工具",
+          "自动化脚本",
+          "AI 应用"
+        ],
+        "suitable": [
+          "开发者",
+          "社交媒体运营",
+          "自动化爱好者",
+          "极客"
+        ],
+        "description": "CloddsBot 是一个基于 Node.js 开发的 Twitter 机器人，利用 OpenAI API 实现智能回复。它集成了 Bull 队列进行任务管理，支持多账号配置，适合用于社交媒体自动化运营或技术研究。"
+      },
+      "type": "project",
+      "dateAdded": "20260910"
+    },
+    {
       "id": "cd8ff84c-938c-4aba-84f0-dd67ee5fea12",
       "url": "https://github.com/jakubkrehel/skills",
       "domain": "github.com",
@@ -372,8 +579,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T06:05:27.141Z",
       "metaData": {
-        "forks": "3441",
-        "stars": "18336",
+        "forks": "3453",
+        "stars": "18422",
         "topics": [],
         "license": "",
         "homepage": "https://pagefy-blush.vercel.app/system-design/system-design-interview-by-alex-xu",
@@ -2347,8 +2554,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2355",
-        "stars": "37077",
+        "forks": "2367",
+        "stars": "37271",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -5511,8 +5718,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5585",
-        "stars": "34809",
+        "forks": "5597",
+        "stars": "34932",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -9469,8 +9676,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:45:21.671Z",
       "metaData": {
-        "forks": "8255",
-        "stars": "59443",
+        "forks": "8944",
+        "stars": "63826",
         "topics": [
           "a2a",
           "ai-agents",
@@ -10798,8 +11005,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "2949",
-        "stars": "30473",
+        "forks": "2964",
+        "stars": "30598",
         "topics": [
           "agents",
           "ai-image-generation",

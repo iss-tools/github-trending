@@ -773,8 +773,8 @@
       "starsAdded": 13141,
       "createdAt": "2026-08-27T02:00:58.527Z",
       "metaData": {
-        "forks": "2949",
-        "stars": "30473",
+        "forks": "2964",
+        "stars": "30598",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -1866,8 +1866,8 @@
       "starsAdded": 1946,
       "createdAt": "2026-08-30T12:00:03.880Z",
       "metaData": {
-        "forks": "5585",
-        "stars": "34809",
+        "forks": "5597",
+        "stars": "34932",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3012,8 +3012,8 @@
       "starsAdded": 10109,
       "createdAt": "2026-08-30T19:00:04.727Z",
       "metaData": {
-        "forks": "5585",
-        "stars": "34809",
+        "forks": "5597",
+        "stars": "34932",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3389,8 +3389,8 @@
       "starsAdded": 5425,
       "createdAt": "2026-08-30T19:00:04.694Z",
       "metaData": {
-        "forks": "2949",
-        "stars": "30473",
+        "forks": "2964",
+        "stars": "30598",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -5754,8 +5754,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 258218,
-      "forks": 21752,
+      "stars": 258348,
+      "forks": 21762,
       "starsAdded": 13143,
       "createdAt": "2026-09-08T12:00:05.097Z",
       "metaData": {
@@ -5805,8 +5805,8 @@
       "repo": "tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 56607,
-      "forks": 3693,
+      "stars": 56796,
+      "forks": 3706,
       "starsAdded": 12541,
       "createdAt": "2026-09-06T18:00:04.742Z",
       "metaData": {
@@ -5878,8 +5878,8 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 133994,
-      "forks": 7168,
+      "stars": 134184,
+      "forks": 7173,
       "starsAdded": 12431,
       "createdAt": "2026-09-06T18:00:04.820Z",
       "metaData": {
@@ -5941,8 +5941,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 255440,
-      "forks": 38248,
+      "stars": 255543,
+      "forks": 38262,
       "starsAdded": 9146,
       "createdAt": "2026-09-06T18:00:04.808Z",
       "metaData": {
@@ -6069,6 +6069,68 @@
       }
     },
     {
+      "id": "f5e65612-0cc0-41fb-b8d4-9d327143cc55",
+      "dateAdded": "202637",
+      "type": "github-weekly",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 37261,
+      "forks": 2367,
+      "starsAdded": 7192,
+      "createdAt": "2026-09-10T12:00:04.387Z",
+      "metaData": {
+        "forks": "2367",
+        "stars": "37271",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
       "id": "8e90319e-bac3-4c33-ad4c-9d0bcabfab98",
       "dateAdded": "202637",
       "type": "github-weekly",
@@ -6076,8 +6138,8 @@
       "repo": "ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 36018,
-      "forks": 2093,
+      "stars": 36539,
+      "forks": 2122,
       "starsAdded": 6581,
       "createdAt": "2026-09-09T13:00:04.953Z",
       "metaData": {
@@ -6135,8 +6197,8 @@
       "repo": "blader/humanizer",
       "description": "Agent skill that removes signs of AI-generated writing from text",
       "language": "Python",
-      "stars": 46177,
-      "forks": 3786,
+      "stars": 46244,
+      "forks": 3790,
       "starsAdded": 5925,
       "createdAt": "2026-09-08T12:00:04.856Z",
       "metaData": {
@@ -6186,6 +6248,72 @@
           "需要对事实负责的文案工作者"
         ],
         "description": "Humanizer 是一个开源的 AI 技能，通过对照 Wikipedia 归纳的 35 条 AI 写作特征，对文本进行“检测—改写—二次校验”，在保持原意的前提下，去除机器生成的僵硬感与套路化表达，适合博客、公告、技术文档等多种场景。"
+      }
+    },
+    {
+      "id": "510f3c6f-d50d-45cb-bb30-625ce95f6e6d",
+      "dateAdded": "202637",
+      "type": "github-weekly",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 22185,
+      "forks": 4731,
+      "starsAdded": 5199,
+      "createdAt": "2026-09-08T12:00:05.131Z",
+      "metaData": {
+        "forks": "4200",
+        "stars": "20296",
+        "topics": [
+          "3d-globe",
+          "cesium",
+          "flight-tracking",
+          "geospatial",
+          "geospatial-intelligence",
+          "gis",
+          "osint",
+          "photogrammetry",
+          "satellite-tracking",
+          "spatial-intelligence",
+          "webgl",
+          "worldview"
+        ],
+        "license": "License",
+        "homepage": "https://maptheworld.ai/",
+        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+      },
+      "summaryData": {
+        "tags": [
+          "CesiumJS",
+          "Google Maps API",
+          "OpenAI Realtime",
+          "GEOINT",
+          "三维地球"
+        ],
+        "cover": "",
+        "title": "God’s Eye View 深度评测",
+        "ability": [
+          "三维地球可视化",
+          "13种实时图层叠加",
+          "电影化视觉风格切换",
+          "语音AI白板交互",
+          "多源OSINT数据集成"
+        ],
+        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "category": [
+          "数据可视化",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "地理空间爱好者",
+          "OSINT研究者",
+          "前端/3D开发者",
+          "应急可视化人员",
+          "技术好奇心强的用户"
+        ],
+        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
       }
     },
     {
@@ -6267,8 +6395,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 48549,
-      "forks": 4445,
+      "stars": 48586,
+      "forks": 4452,
       "starsAdded": 4643,
       "createdAt": "2026-09-08T12:00:05.121Z",
       "metaData": {
@@ -6325,69 +6453,64 @@
       }
     },
     {
-      "id": "510f3c6f-d50d-45cb-bb30-625ce95f6e6d",
+      "id": "c0ff5eb1-5f48-499a-ba95-18c4e0595909",
       "dateAdded": "202637",
       "type": "github-weekly",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": "JavaScript",
-      "stars": 20284,
-      "forks": 4195,
-      "starsAdded": 4196,
-      "createdAt": "2026-09-08T12:00:05.131Z",
+      "url": "https://github.com/microsoft/markitdown",
+      "repo": "microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "language": "Python",
+      "stars": 182320,
+      "forks": 13400,
+      "starsAdded": 4549,
+      "createdAt": "2026-09-10T12:00:04.389Z",
       "metaData": {
-        "forks": "4200",
-        "stars": "20296",
+        "forks": "13361",
+        "stars": "181932",
         "topics": [
-          "3d-globe",
-          "cesium",
-          "flight-tracking",
-          "geospatial",
-          "geospatial-intelligence",
-          "gis",
-          "osint",
-          "photogrammetry",
-          "satellite-tracking",
-          "spatial-intelligence",
-          "webgl",
-          "worldview"
+          "autogen",
+          "autogen-extension",
+          "langchain",
+          "markdown",
+          "microsoft-office",
+          "openai",
+          "pdf"
         ],
-        "license": "License",
-        "homepage": "https://maptheworld.ai/",
-        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Python tool for converting files and office documents to Markdown. - microsoft/markitdown"
       },
       "summaryData": {
         "tags": [
-          "CesiumJS",
-          "Google Maps API",
-          "OpenAI Realtime",
-          "GEOINT",
-          "三维地球"
+          "微软",
+          "Markdown",
+          "RAG",
+          "文档处理",
+          "开源工具"
         ],
         "cover": "",
-        "title": "God’s Eye View 深度评测",
+        "title": "MarkItDown：微软开源的万能文档转Markdown工具",
         "ability": [
-          "三维地球可视化",
-          "13种实时图层叠加",
-          "电影化视觉风格切换",
-          "语音AI白板交互",
-          "多源OSINT数据集成"
+          "多格式文档转换",
+          "保留文档结构",
+          "OCR与图像描述",
+          "Azure云端增强",
+          "插件化扩展"
         ],
-        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "summary": "微软开源的多格式转Markdown工具，为大模型RAG场景提供统一、结构化、模型友好的数据摄入方案。",
         "category": [
-          "数据可视化",
-          "开源情报",
-          "开发工具"
+          "开发工具",
+          "数据处理",
+          "AI辅助"
         ],
         "suitable": [
-          "地理空间爱好者",
-          "OSINT研究者",
-          "前端/3D开发者",
-          "应急可视化人员",
-          "技术好奇心强的用户"
+          "RAG/知识库开发者",
+          "数据工程师",
+          "企业IT团队",
+          "学术研究者",
+          "AI应用开发者"
         ],
-        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
+        "description": "MarkItDown是微软开源的Python工具，支持PDF、Office、图片（OCR）、音频（转录）等多种格式转换为Markdown，旨在为大模型提供结构清晰、易于理解的输入。支持本地运行与Azure云端增强，具备插件化架构，MIT协议，非常适合需要处理非结构化文档的AI项目与数据管线。"
       }
     },
     {
@@ -6398,8 +6521,8 @@
       "repo": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stars": 244001,
-      "forks": 50402,
+      "stars": 244062,
+      "forks": 50422,
       "starsAdded": 4114,
       "createdAt": "2026-09-08T12:00:05.118Z",
       "metaData": {
@@ -6465,13 +6588,13 @@
       "repo": "THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "stars": 34809,
-      "forks": 5585,
+      "stars": 34911,
+      "forks": 5596,
       "starsAdded": 3948,
       "createdAt": "2026-09-06T18:00:04.756Z",
       "metaData": {
-        "forks": "5585",
-        "stars": "34809",
+        "forks": "5597",
+        "stars": "34932",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6620,6 +6743,59 @@
       }
     },
     {
+      "id": "7f5f94cd-f323-4d32-ac71-a96780deaa0b",
+      "dateAdded": "202637",
+      "type": "github-weekly",
+      "url": "https://github.com/anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 206300,
+      "forks": 26963,
+      "starsAdded": 3133,
+      "createdAt": "2026-09-10T12:00:04.400Z",
+      "metaData": {
+        "forks": "26796",
+        "stars": "205552",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
+      }
+    },
+    {
       "id": "d87bd24f-1819-4422-80aa-c61f56b6023a",
       "dateAdded": "202637",
       "type": "github-weekly",
@@ -6627,8 +6803,8 @@
       "repo": "coreyhaines31/marketingskills",
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
       "language": "JavaScript",
-      "stars": 49336,
-      "forks": 7527,
+      "stars": 49362,
+      "forks": 7530,
       "starsAdded": 2638,
       "createdAt": "2026-09-08T12:00:05.099Z",
       "metaData": {
@@ -6727,6 +6903,61 @@
           "本地模型新手"
         ],
         "description": "Magnitude 是一款“零成本、零密钥”的本地 AI 推理服务器。它利用 Rust + llama.cpp 引擎，自动根据你的硬件推荐并运行最优模型，无需云端 API 即可无缝驱动 Claude Code、Cline 等 Agent。支持完全离线，保障数据隐私，还能通过插件扩展浏览器和文档处理能力。"
+      }
+    },
+    {
+      "id": "ed0be6ba-90c3-4483-ba52-9c1690e8a551",
+      "dateAdded": "202637",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 175541,
+      "forks": 20776,
+      "starsAdded": 2316,
+      "createdAt": "2026-09-10T12:00:04.394Z",
+      "metaData": {
+        "forks": "20684",
+        "stars": "174765",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
       }
     },
     {
@@ -6970,7 +7201,7 @@
       "repo": "fmtlib/fmt",
       "description": "A modern formatting library",
       "language": "C++",
-      "stars": 25709,
+      "stars": 25712,
       "forks": 3057,
       "starsAdded": 1847,
       "createdAt": "2026-09-06T18:00:04.789Z",
@@ -7036,8 +7267,8 @@
       "repo": "every-app/open-seo",
       "description": "Open source alternative to Semrush and Ahrefs",
       "language": "TypeScript",
-      "stars": 18192,
-      "forks": 2295,
+      "stars": 18210,
+      "forks": 2300,
       "starsAdded": 1788,
       "createdAt": "2026-09-06T18:00:04.817Z",
       "metaData": {
@@ -7101,8 +7332,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 71883,
-      "forks": 8506,
+      "stars": 71905,
+      "forks": 8509,
       "starsAdded": 1618,
       "createdAt": "2026-09-08T12:00:05.141Z",
       "metaData": {
@@ -7227,7 +7458,7 @@
       "repo": "openai/skills",
       "description": "Skills Catalog for Codex",
       "language": "Python",
-      "stars": 26810,
+      "stars": 26820,
       "forks": 1796,
       "starsAdded": 1423,
       "createdAt": "2026-09-08T12:00:05.126Z",
@@ -7279,8 +7510,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 21847,
-      "forks": 1573,
+      "stars": 21877,
+      "forks": 1576,
       "starsAdded": 1331,
       "createdAt": "2026-09-08T12:00:05.114Z",
       "metaData": {
@@ -7513,8 +7744,8 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 51520,
-      "forks": 3617,
+      "stars": 51537,
+      "forks": 3618,
       "starsAdded": 962,
       "createdAt": "2026-09-06T18:00:04.805Z",
       "metaData": {
@@ -7697,7 +7928,7 @@
       "repo": "openai/plugins",
       "description": "OpenAI Plugins",
       "language": "JavaScript",
-      "stars": 6320,
+      "stars": 6342,
       "forks": 834,
       "starsAdded": 753,
       "createdAt": "2026-09-09T13:00:04.961Z",
