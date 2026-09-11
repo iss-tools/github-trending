@@ -1,0 +1,195 @@
+# github/spec-kit
+
+[GitHub URL](https://github.com/github/spec-kit)
+
+
+## GitHub Spec Kit - 意图驱动的 AI 开发规范工具
+
+> 把需求意图转化为可执行规范的 AI 编码辅助工具
+
+- **Tags**: GitHub, 工作流, 规范驱动, 开源, 自动化
+- **Category**: 开发工具, AI 编程, 项目管理
+
+## Details
+
+# GitHub Spec Kit 深度评测：把“意图”变成“可执行规范”的 AI 开发新范式
+---
+## 一句话总结
+GitHub Spec Kit 是一套“意图先行”的开放规范与工具包，把从需求到实现的全流程拆解为 Spec → Plan → Tasks → Implement，可与 30+ AI 编码代理协同，既适合个人小项目，也能组织化、离线、跨团队落地，是“从 vibe coding 到 spec-driven”的关键跃迁脚手架。
+---
+## 背景与痛点：为什么要有 Spec Kit？
+### 1) 传统“先写代码”的隐形成本
+- 需求在 PR/工单里散落，代码成为事实上的唯一“规格”。后续维护时，新人只能靠读代码猜“当年为什么要这样写”，重构和交接成本极高。
+- 团队反复因为需求误解返工，“改一点、崩一片”。
+### 2) AI 编码带来的新问题：“氛围式编码”
+- 面向大模型的“氛围式编码”让即时写代码变得很快，但缺少一致的上下文与文档沉淀，项目很快变成谁也看不懂的“AI 代码坟场”。
+- 大模型容易产生幻觉或部分遗漏，若无结构化流程与“真相来源”，质量和可维护性失控。
+### 3) 软件工程的本源：先想清楚“做什么与为什么”
+- 真正昂贵的是“决策成本”，而不是“打字成本”。 Spec Kit 的核心理念是：先在 Markdown 规格里把“什么/为什么”讲清楚，再由 AI 辅助完成“怎么做”。
+Spec Kit 就在这两个现实的交叉点上诞生：让 AI 不只是替你写代码，而是帮你管理“从意图到落地”的全链路信息与流程。
+---
+## 核心亮点与功能剖析
+### 1) 四阶段 SDD 流程：Spec → Plan → Tasks → Implement
+- 核心工作流被设计成一条清晰管线：
+  1) `/speckit.specify`：用自然语言写出“需求/用户故事”，专注“什么/为什么”，暂不谈技术选型。
+  2) `/speckit.plan`：给出技术栈、架构和边界条件，形成“技术方案”。
+  3) `/speckit.tasks`：把计划拆成可执行的任务清单。
+  4) `/speckit.implement`：让 AI 按任务逐项实现代码与相关修改。
+- 还有一个“收敛”阶段：
+  - `/speckit.converge`：对照规格/方案/任务检查现有代码，把剩余工作写成新任务，反复直到“收敛”。
+### 2) 任意 AI 编码代理“随插随用”（无锁定）
+- 支持 30+ 集成，包括 GitHub Copilot、Claude Code、Gemini CLI、Codex CLI 等，只需在 init 时指定 `--integration copilot/claude/gemini ...` 即可；未列出的可使用 `generic` 兜底。
+- 安装后，以斜杠命令（如 `/speckit.specify`）或技能（如 `speckit-specify`）的形式出现在你的 IDE/聊天界面中，一键调用。
+### 3) Extension + Preset + Bundle 三级可扩展体系
+- Extensions（扩展）：增加新命令/工作流，例如架构评审、CI 门禁、Jira/Confluence 同步等。由社区维护，官方仅做目录完整性校验，不背书功能安全。
+- Presets（预设）：改写“核心流程”的模板与术语，适配不同方法论（Agile/Kanban/Waterfall/合规流程等）。
+- Bundles（角色套装）：把一组扩展与预设打包成“角色套餐”，一条命令完成整团队装备（产品经理/分析师/安全/开发等）。
+- 覆盖堆叠与优先级：项目级覆盖 > 预设 > 扩展 > 核心，确保你总有“最后一公里”的定制空间。
+### 4) 两个常用“开箱即用”的子流程
+- Bug Fix 工作流（`bug` 扩展）：Assess（评估） → Fix（修复） → Test（验证），避免“拍脑袋补丁”，形成可追溯、可复现的缺陷处理闭环。
+- Idea 评估（`assess` 扩展）：Intake（录入） → Research（调研） → Define（定义） → Shape（成形） → Decide（决策），最终给出 go/needs-clarification/kill 决策，过滤掉无证据支撑的“好点子”。
+### 5) 企业/离线友好
+- 支持 Windows/macOS/Linux，可在防火墙后或完全离线环境运行，允许组织自建目录（catalog），内网分发自己的扩展/预设/Bundle。
+- 提供企业/离线安装指南，通过 `pip download` 制作可携带的 wheel 包，先在连网机打包，再导入内网机器完成安装。
+---
+## 技术栈与架构解析（面向开发者）
+### 1) 技术栈与依赖
+- 语言与运行时：Python 3.11+；CLI 工具名为 `specify-cli`，通过 `uv` 或 `pipx` 安装。仓库也明确标注“唯一官方包源自此 GitHub 仓库”，PyPI 同名包并非官方维护。
+- 包管理：强烈推荐 `uv`（高速 Python 包管理器），也支持 `pipx` 持久安装或 `uvx` 临时一次性运行。支持按版本安装，如 `@v1.0.3`。
+- 版本管理：已发布 1.0.x 系列，Releases 记录详细变更清单，说明版本节奏与维护状态。
+### 2) 安装与初始化体验
+- 持久安装：
+  - `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v1.0.3`
+  - 随后可用 `specify init my-project --integration copilot` 初始化项目。
+- 一次性运行（不安装）：
+  - `uvx --from git+https://github.com/github/spec-kit.git@v1.0.3 specify init my-project --integration copilot`。
+- 初始化到现有项目：
+  - `specify init --here --integration copilot`
+  - CI/Agent 环境可加 `--non-interactive --force` 避免交互卡顿。
+### 3) 项目结构和工作产物
+- CLI 会在项目根生成 `.specify/` 相关目录与模板，存放命令定义、覆盖模板、配置和目录栈信息。扩展/预设/Bundle 通过 manifest 定义与加载，遵循优先级解析规则。
+- 核心产物均为 Markdown 文件（规格/计划/任务/检查清单等），适合版本控制与协作评审。
+### 4) 开发者体验（DX）与脚手架
+- 命令设计清晰：`specify init/extension/preset/bundle` 系列命令便于发现、安装与管理生态组件；`specify self check/upgrade` 简化升级与校验。
+- 文档与示例丰富：提供安装/升级/现有项目接入/扩展发布/Bundle 构建等指南，降低二次开发门槛。
+### 5) 开源协议
+- MIT 协议：友好、宽松，适合个人与企业集成再分发。
+---
+## Demo / 代码示例：一分钟上手 SDD 工作流
+### 1) 安装与初始化
+- 持久安装（推荐）：
+  - 安装 uv 后（官方文档指引），运行：
+    - `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v1.0.3`
+- 初始化项目（以 Copilot 为例）：
+  - `specify init my-project --integration copilot`
+  - `cd my-project`
+### 2) 建立项目“宪法”（项目原则与边界）
+- 在 IDE/聊天中打开项目目录，使用 AI 助手，执行：
+  - `/speckit.constitution` Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
+- 该步骤一次性完成，后续各阶段均以此为“方针”。
+### 3) 写规格：只谈“什么与为什么”
+- `/speckit.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.`
+### 4) 制定技术方案：确定“如何实现”
+- `/speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.`
+### 5) 拆解任务与实现
+- `/speckit.tasks`：根据 Plan 生成任务清单。
+- `/speckit.implement`：按任务逐项实现代码与相关修改。
+### 6) 收敛检查与迭代
+- `/speckit.converge`：对照 Spec/Plan/Tasks 检查代码，把未完成工作补为新任务；循环直至“收敛”。
+### 7) 启用 Bug 修复工作流（示例）
+- 安装扩展：
+  - `specify extension add bug`
+- 在 AI 助手中：
+  - `/speckit-bug-assess "<bug report>" slug=login-crash`
+  - `/speckit-bug-fix slug=login-crash`
+  - `/speckit-bug-test slug=login-crash`
+---
+## 目标人群与收益：谁用、为什么值
+### 1) 小微团队与独立开发者
+- 痛点：需求记在脑子里或聊天记录里，改功能容易改崩；AI 写代码快但整体方向易漂移。
+- 收益：
+  - 用 Markdown 把“要做什么”说清楚，AI 不再“猜你要啥”，减少返工与争论。
+  - 四阶段流程让迭代有迹可循，规格/计划/任务都可直接进版本库，形成“可维护的知识资产”。
+### 2) 中大型团队与组织
+- 痛点：多团队协作、合规/审计要求高、新人上手周期长；AI 编码放大了“各自为战”的风险。
+- 收益：
+  - 自建目录与 Bundle：按角色/业务线提供标准工作流与模板，确保跨团队一致性。
+  - CI/PR 门禁与架构治理等扩展（如 CI Guard、Architecture Guard）将规格与代码联通，形成可审计的变更链。
+  - 离线/内网部署：满足安全与合规诉求。
+### 3) PM/PO/BA 等非技术角色
+- 痛点：写文档、写规格往往“没人看”，落地偏差大；缺乏一种低门槛的方式来管理需求证据链。
+- 收益：
+  - 通过“规格—计划—任务”的链路，把“业务语言”平滑地翻译成“工程语言”，减少转译损耗。
+  - Idea 评估工作流为决策提供结构化证据，提升决策质量与可追溯性。
+### 4) AI 重度用户与流程工程化者
+- 痛点：Prompt 碎片化、缺乏体系，难以规模化复用与升级；接入不同 AI 工具成本高。
+- 收益：
+  - Extension/Preset/Bundle 让你能“组合复用”最佳实践，形成可进化的 AI 流程库。
+  - 切换 AI 编码代理时，只需改 `--integration`，业务流程与知识资产不变。
+---
+## 竞品/同类对比：它处在什么位置？
+### 1) 与“传统需求管理工具”对比（如 Jira/Confluence/Notion）
+- 传统工具更侧重“记录与跟踪”，缺乏“与编码代理的直接桥接”，容易变成“写完就忘”。
+- Spec Kit 的规格/计划/任务天然与 AI 工作流同构，成为“可执行的上下文”，而不是死文档。
+### 2) 与“AI IDE 助手本身”对比（如 Copilot、Cursor、Zed）
+- 这些工具擅长“即时补全/局部重构”，但不负责“从产品场景到任务拆解”的治理。
+- Spec Kit 更像“工程层的方法论与规范层”，让这些 AI 工具在正确轨道上跑，避免局部最优但整体漂移。
+### 3) 与“内部工程规范/Playbook”对比
+- 内部规范常是 Wiki 或 PPT，离实际开发一线较远。
+- Spec Kit 将规范写进模板与命令文件，成为“每次 AI 调用都会被加载的上下文”，执行层面的约束远强于文档。
+---
+## 局限与不足：理性看待边界
+### 1) 上手仍有概念成本
+- 对完全未接触“规格先行”或结构化开发的同学，需要理解 Constitution/Spec/Plan/Tasks/Converge 的区别与顺序。
+- 虽然官方文档和社区 Walkthrough 降低了入门门槛，但初次接触仍需 1–2 小时学习与试跑。
+### 2) 生态组件质量参差
+- 官方已明确：社区扩展由各自作者维护，官方仅校验目录条目完整性与格式，不做代码审查或背书；使用前需自行审查源码与风险。
+- 组织级落地时，建议先自建目录与“白名单”，并建立扩展评审机制。
+### 3) 不负责“替你写好”业务逻辑
+- Spec Kit 是“脚手架 + 流程 + 模板”，真正的业务与架构判断仍需人来拍板。
+- 如果你把规格写得模糊或矛盾，AI 也只会产出“模糊而一致”的代码。
+### 4) 与现有流程的融合需要定制
+- 若你的团队已有一套成熟的需求/缺陷/发布流程，直接照搬 SDD 四阶段可能会冲突。
+- 好消息是，Preset/Bundle 提供了改写/裁剪流程的空间，但这需要投入设计与落地成本。
+### 5) 官方包仅从 GitHub 安装，PyPI 同名包并非官方
+- 官方明确提醒：PyPI 上的同名包并非官方维护，安装时务必用 GitHub 源。
+---
+## 社区活跃度与生命力
+### 1) 版本与发布节奏
+- 已发布 1.0.3（2026 年），1.0.0 发布日志中还对“版本号的意义”做了非常诚实的反思：在 AI 时代，版本号更多是一个“起点信号”，而不再是“永不破的契约”。
+- Releases 记录显示，更新频繁，涉及功能、修复、文档与社区生态更新，且积极集成社区扩展与预设，说明维护团队保持高速迭代与生态共建。
+### 2) 社区生态：扩展/预设/Bundle/演练
+- 文档站点列有扩展、预设、Bundle、Walkthrough、Friends 等板块，显示已有“社区扩展目录”，涵盖多个分类（docs/code/process/integration/visibility）与读写属性，提供多样能力（架构评审、CI Guard、Azure DevOps 同步、API 演进、Brownfield 老项目接入等）。
+- 官方也提供了扩展/预设/Bundle 的发布指南，说明项目意在打造长期可演进的生态，而非一次性工具。
+### 3) 沟通与支持渠道
+- 官方文档站点与 GitHub 仓库作为主阵地，并通过 GitHub Issue 接收反馈与问题报告。
+- 仓库 README 与文档多处显示“社区致谢”，体现贡献者文化的存在。
+---
+## 极简行动指南：如何立刻开始用起来
+### 1) 个人新项目（推荐起点）
+- 安装：
+  - 先安装 `uv`，然后：
+    - `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v1.0.3`
+- 初始化：
+  - `specify init demo-app --integration copilot`
+  - `cd demo-app`
+- 在 IDE/Agent 中按顺序调用：
+  - `/speckit.constitution`
+  - `/speckit.specify`（写需求）
+  - `/speckit.plan`（写技术方案）
+  - `/speckit.tasks`
+  - `/speckit.implement`
+  - `/speckit.converge`（循环直至收敛）
+### 2) 现有项目“渐进式”接入
+- 在现有仓库根目录执行：
+  - `specify init --here --integration copilot`
+- 先用 Bug/Assess 扩展跑起一个子流程，验证与现有 CI/PR 流程的兼容度，再逐步引入完整 SDD。
+### 3) 组织内网/离线落地
+- 在连网机使用 `pip download` 制作 wheel 包，按“企业/离线安装指南”完成内网安装与目录自建。
+- 自建 Bundle 与 Catalog，把内部规范封装成 Preset，分发给各团队使用。
+---
+## 结语与终极评判
+- **适用性：** 对“希望把 AI 编码纳入可治理流程”的个人与团队而言，Spec Kit 是目前少有且成熟的、开源的“意图到执行”的一站式脚手架。无论你用 Copilot/Claude/Gemini，它都能成为“上层规范层”，避免 AI 带来的混乱与漂移。
+- **学习成本：** 概念略多，但文档丰富、流程清晰，认真阅读 README 与文档后，1–2 小时即可跑通第一个 SDD 循环。
+- **风险点：** 社区扩展需自行审查；与既有流程融合需要做适配和裁剪（这也是 Spec Kit 设计的强项：可定制）。
+- **总体评价：** 如果你想把 AI 写代码从“单次技巧”提升为“团队可复用的工程能力”，Spec Kit 值得认真试用与沉淀。它不是银弹，但它提供了一套可演进、可离线、可组织化的“现代软件工程 2.0”底座。

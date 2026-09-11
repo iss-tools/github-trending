@@ -1,0 +1,135 @@
+# Tencent/WeKnora
+
+[GitHub URL](https://github.com/Tencent/WeKnora)
+
+
+## 腾讯 WeKnora：企业级 LLM 知识平台深度评测
+
+> WeKnora 是腾讯开源的企业级 LLM 知识平台，集 RAG 问答、ReAct 智能体与自动 Wiki 维护于一体。
+
+- **Tags**: RAG, Agent, 知识库, 开源, 腾讯
+- **Category**: 开发工具, 企业服务, AI 编程
+
+## Details
+
+# 一句话总结
+WeKnora 是腾讯开源的企业级 LLM 知识平台：以 RAG 快速问答、ReAct 智能体、自动维护 Wiki 三位一体，把散落文档变成可查询、可推理、能自我演进的知识资产；适合私有化部署与多渠道接入，但有一定上手与运维成本。
+---
+## 背景与痛点
+WeKnora 源自微信对话开放平台（IMA 知识库产品）的内部核心技术，并正式开源出来，为企业构建私有知识库与智能体提供系统化方案。目前该项目在 GitHub 已获得约 19.5k Star、2.8k Fork，处于高关注度与强活跃状态。
+企业/团队常见的四大痛点：
+- 知识散落：文档躺在飞书/Notion/语雀/GitLab/本地/邮件里，难以统一检索与沉淀。
+- 检索困难：关键词搜索不够智能，找不到真正相关的内容。
+- 想要可控：不能把敏感数据丢到公有云，需要私有化/离线部署。
+- 运维复杂：要把文档解析、向量化、检索、LLM 推理、IM 接入、权限审计等全部串起来，工程成本很高。
+WeKnora 的使命就是一次性解决上述问题，提供“从文档到知识”的端到端流水线，并支持企业级权限、审计与可观测性。
+## 核心亮点与功能剖析
+- RAG 快速问答：支持多路召回（BM25、Dense、GraphRAG、父子分块），并兼容多种向量数据库（pgvector/ES/OpenSearch/Milvus/Weaviate/Qdrant/Tencent VectorDB 等），能根据数据特性灵活组合检索策略，提高召回率与准确度。
+- ReAct 智能体：能自主规划步骤，先在知识库检索，必要时调用 MCP 工具、Web 搜索或沙箱执行代码，完成多步任务，并支持人在环路审批和并行工具调用，提升可控性与效率。
+- Wiki 模式（Auto-Wiki）：Agent 把原始文档自动转成结构化、相互链接的 Markdown 页面，并在 Web UI 提供知识图谱可视化与页面级版本历史（含行级 Diff 与一键回滚），让知识像维基一样持续演进、可治理。
+- 长期记忆：跨会话记忆用户画像、偏好、事实、任务与兴趣，并支持自动提取与人工确认，可按需检索记忆，带来更懂你的体验。
+- 知识管理：支持 FAQ/文档/Wiki 多类知识库；保留目录树状结构；支持分块编辑与版本历史；单次上传可自定义解析/分块/多模态（VLM/ASR）/图谱提取/问题生成等配置；支持批量重新解析与标签管理；内置端到端评估（召回率、BLEU/ROUGE 等）。
+- 文档与数据源：支持 PDF/Word/Txt/Markdown/HTML/EPUB/MHTML/图片/CSV/Excel/PPT/JSON/XMind 等 10+ 格式；可自动同步飞书/Lark/GitLab/IMA/Notion/语鹊/RSS 等来源，支持增量和全量同步。
+- 模型与基础设施集成：集成 20+ 家 LLM（OpenAI/Anthropic/DeepSeek/Qwen/智谱/混元/豆包/Gemini/MiniMax/NVIDIA/Novita/SiliconFlow/OpenRouter/Requesty/LiteLLM/Ollama 等）；Embedding 与检索链路高度可插拔；支持本地与私有云部署，确保数据主权；支持 Helm Chart 上 K8s，满足企业运维要求。
+- 多端交互与嵌入：Web UI/REST API/CLI（weknora）/Chrome 扩展/网站嵌入控件/微信小程序；IM 渠道覆盖企微/飞书/Lark/QQBot/Slack/Telegram/钉钉/Mattermost/微信/云之家，便于把问答能力嵌入到日常办公中。
+- 安全与可观测：
+  - AES-256-GCM 对 API Key 与凭证做静态加密，支持密钥轮换；gRPC 使用 TLS；Redis 支持 TLS；HTTP 客户端做 SSRF 防护；响应自动脱敏；技能沙箱隔离（可选 Docker/E2B/Cube）并支持网络策略；OIDC JWKS 验证；可选强密码策略。
+  - 集成 Langfuse 做全链路可观测（ReAct 循环、Token 追踪、工具调用、流水线追踪等），并提供文档解析的时间线与系统级任务队列监控（队列深度、并发、失败任务查看与重试）。
+- 企业级权限与治理：Workspace RBAC（Owner/Admin/Contributor/Viewer 四层角色矩阵）、每知识库所有权、每工作区审计日志；支持作用域 API Key（按能力+按 KB 限制+速率限制），便于外部系统集成；支持多实例存储后端（同一工作区多存储、按 KB 绑定）。
+## 技术栈与架构解析（简述）
+- 整体架构：完全模块化的流水线——从文档解析、向量化、检索到 LLM 推理，每层可替换。核心以 Go 编写，提供后端服务与 Worker 队列；前端 Web UI 采用现代框架构建；并通过 gRPC/HTTP 与内部 DocReader 服务交互解析文档。
+- 检索层：混合检索（BM25/Dense/GraphRAG/父子分块）与多向量数据库适配，支持 HNSW 加速（pgvector 1024 维等）以及多路召回、重排与优化。
+- 任务与队列：基于 MQ 的异步任务队列，对不同阶段（core/post-process/enrichment/maintenance、Wiki 池）配置独立 worker 池与并发控制；提供可视化面板监控与手动重试。
+- 数据存储：主库常见为关系型（支持 PostgreSQL 等），对象存储支持本地/MinIO/S3（含 IAM Role/IRSA）/火山 TOS/阿里 OSS/金山 KS3/华为 OBS；每工作区可挂多个存储实例，按 KB 绑定。
+- 扩展能力：
+  - MCP Server：官方 PyPI 包 tencent-weknora-mcp，提供 29 个工具（stdio/SSE/HTTP），便于与 Claude Desktop 等生态集成。
+  - CLI：weknora 命令行工具面向 API 与 Agent 友好设计，默认输出稳定 JSON，可与 CI/Headless 流程集成，并自带 MCP 工具表面与 Agent Skills。
+  - ClawHub Skill：官方 Skill，提供文档导入、混合搜索与知识条目管理能力。
+  - DeepSeek Harness 插件：官方插件让 dsh 的 Agent 直接调用 WeKnora 的 search/read_document/ask/list_knowledge_bases 工具。
+## 上手门槛与部署体验
+最低门槛（本地 Docker）：
+- 必备：Docker、Docker Compose、Git。
+- 安装与启动（官方命令摘录）：
+  - git clone https://github.com/Tencent/WeKnora.git
+  - cd WeKnora
+  - cp .env.example .env  # 根据注释修改配置
+  - docker compose pull
+  - docker compose up -d
+- 访问：http://localhost；后端 API http://localhost:8080；若启用 langfuse，可访问 http://localhost:3000。
+可选服务（Docker Compose Profiles）：
+- full：启用全部能力；neo4j（知识图谱）、minio（对象存储）、langfuse（追踪）等可按需组合使用。
+升级方式：
+- 在 .env 中设置 WEKNORA_VERSION（如 0.7.0）或保持 latest，执行 docker compose pull && docker compose up -d 即可，注意不 pull 可能导致 UI 版本不一致。
+常见坑与注意事项（经验向）：
+- 端口冲突：若本地已有服务占用 80/8080/3000 等端口，需在 .env 或 compose 文件中修改映射。
+- 模型配置：首次访问需在初始化页配置 LLM 与 Embedding。如使用本地 Ollama，需先启动 ollama serve。
+- 资源需求：文档解析、向量化和推理对 CPU 与内存有一定要求，建议至少 4C8G 起步；向量库检索性能随文档量与并发上升，需合理调优索引与并发参数。
+- 安全配置：公网部署务必启用 TLS（Nginx 反向代理）、设置强密码策略、启用 OIDC 等认证，并审慎配置作用域 API Key 与嵌入控件的域名白名单/速率限制。
+文档与社区：
+- 官方文档站（VitePress，约 6 章节、50 页，覆盖约 360 个 API 端点与约 150 个环境变量），并提供快速开始示例与 MCP 本地 Demo，显著降低上手成本。
+- 仓库首页内置多语言 README（简体中文/英文/日语/韩语），并给出详细功能矩阵与配置示例，对非英语用户友好。
+## Demo/代码示例（如何快速体验）
+场景：本地启动并提问已上传知识库
+```bash
+# 1) 克隆并启动
+git clone https://github.com/Tencent/WeKnora.git && cd WeKnora
+cp .env.example .env
+# 编辑 .env，填入你的 LLM/Embedding 配置（如 OpenAI 或本地 Ollama）
+docker compose pull && docker compose up -d
+# 2) 访问
+open http://localhost
+# 3) 在 Web 完成初始化（模型配置、管理员账号）
+# 4) 创建知识库，上传文档（支持拖拽或从飞书/语鹊/GitLab 同步）
+# 5) 在聊天界面提问，系统自动执行 RAG/Agent 并返回带引用的回答
+```
+使用 CLI 从终端提问（API 模式）：
+```bash
+# 前置：已通过 weknora auth login 完成认证，或设置 WEKNORA_API_KEY + WEKNORA_HOST
+weknora kb list
+weknora link --kb my-knowledge-base    # 把当前目录与知识库绑定
+weknora doc upload notes.md
+weknora chat "summarise the design doc"
+```
+（CLI 默认输出稳定 JSON，便于 AI Agent/CI 集成，使用 --format text 可读性更好。）
+MCP 集成示例（典型用法）：
+- 安装官方 MCP Server 包：pip install tencent-weknora-mcp
+- 按官方 MCP 配置指引连接 WeKnora 部署地址与 API Key，启用 stdio/SSE/HTTP 传输即可在 Claude Desktop 等 MCP 客户端中使用 29 个工具，进行搜索、问答与管理操作。
+## 目标人群与收益
+- 适合谁：
+  - 企业 IT/运维/平台团队：需要为业务部门搭建统一的内部知识库与问答入口。
+  - 产品/研发/合规/法务：需要向大量文档（技术文档/合同/合规/财务报表）快速提问并溯源。
+  - 创业团队：希望低成本获得一个“能落地”的 RAG+Agent+Wiki 平台，支持多 IM 与嵌入。
+- 能带来什么：
+  - 提高效率：把“翻文档”变成“问问题”，用 RAG 和 Agent 自动化信息检索与多步任务。
+  - 知识资产化：通过 Auto-Wiki 与知识图谱把一次性文档变成可维护、可链接的知识体系。
+  - 合规与可控：私有化部署、RBAC、审计日志、作用域 API Key 和沙箱隔离满足安全与治理要求。
+  - 多端嵌入：IM 接入与网站嵌入控件，把问答能力嵌入日常工作流与对外服务。
+## 竞品/同类对比（简要）
+WeKnora 更偏“企业级知识平台”而非单一 RAG 框架：
+- Dify/FastGPT：更强调低编排/应用发布与运营；WeKnora 在文档解析、Wiki、IM 与企业治理（RBAC/审计）上更贴近生产落地。
+- LightRAG：专注 GraphRAG 算法与图推理效率，适合做检索实验与算法研究；WeKnora 提供端到端工程与运维能力。
+- RAGFlow：擅长复杂版式文档解析与引用可解释性；WeKnora 则在 Agent、Wiki、IM 与可观测性上更全面。
+总体来说，如果你需要一个“真正能落到企业里”的知识平台（多租户、权限、IM、MCP、Wiki、可观测性），WeKnora 是非常合适的选择。
+## 局限与不足
+- 复杂度与运维成本：功能丰富也意味着组件多、配置项多（数百个环境变量），需要一定的 DevOps 能力来规划部署、监控与备份。
+- 学习曲线：企业级权限、作用域 API Key、MCP 与沙箱等概念需要时间消化；文档虽完善，但初次部署仍需耐心阅读。
+- 安全风险需持续关注：任何 AI 平台都会面临 SSRF、凭证泄露、沙箱逃逸等风险。WeKnora 在配置层面做了较多加固（SSRF 安全 HTTP、凭证加密、沙箱隔离等），但仍需根据组织安全策略评估与加固；历史上也有第三方披露过漏洞，应关注官方安全公告并及时升级。
+- 资源开销：本地全功能部署与大规模文档解析对 CPU/内存/磁盘都有要求；小团队在轻量化上可能需要裁剪或选择更精简的替代方案。
+- 模型与外部依赖：需要自行提供 LLM/Embedding 或接入本地模型（如 Ollama）；对向量数据库、对象存储等基础设施有一定依赖，需预先规划。
+## 安全性说明（更新）
+WeKnora 侧在实现层面持续做安全加固（例如 SSRF 防护、凭证加密、沙箱隔离等），并根据公开披露进行修复。企业使用时建议：只在内网/VPN/可信边界内暴露；强制 TLS；配置 RBAC 与审计；沙箱网络按需收紧；定期追踪 Release 与 Changelog 并及时升级。
+## 社区活跃度与生命力
+- Star/Fork：约 19.5k Star、2.8k Fork（高关注度）。
+- Release 节奏：从 v0.2.0 迭代到 v0.7.2，Changelog 详细记录了大量 Feature 与 Fix，PR/Issue 与 CI 检查持续演进，显示项目处于高频迭代阶段。
+- Issue/PR：仓库 Issues 数约 330、PR 约 203，表明社区参与度较高，开发者生态在持续形成。
+## 结语与行动建议
+- 终极评判：WeKnora 不是“最轻”的知识库框架，却是一个“最像企业产品”的开源方案。它把 RAG、Agent、Wiki、IM、权限与可观测性打包成完整平台，非常适合希望快速搭建私有知识库与智能体的团队；但前提是你愿意投入一定运维与学习成本。
+- 行动建议（分人群）：
+  - 想快速验证价值：先用 Docker 在本地起一个最小集，导入团队常用文档（如 Onboarding 文档、产品手册），通过 Web UI 体验问答与 Wiki，评估准确性 与体验。
+  - 企业技术决策者：结合安全与合规要求，评估与现有 IM/身份/存储集成的成本；安排 PoC，观察 Langfuse 追踪与审计日志是否满足运维与合规。
+  - 开发者/集成方：
+    - 先熟悉 CLI 与 API，并在 CI 中尝试 weknora 调用；
+    - 用 MCP Server 把 WeKnora 接入 Claude Desktop 等 MCP 客户端；
+    - 按需开发自定义 Skill 或接入内部系统（通过作用域 API Key）。
+  - 希望嵌入外部站点：使用“Website Embed Widget”，配置域名白名单与速率限制，把问答能力嵌入官网/帮助中心/客户支持页。
+如果你已经有一个“自研 RAG+Agent”的半成品，把 WeKnora 当作参考架构与现成组件，比从零堆栈开始往往会更稳、更快。

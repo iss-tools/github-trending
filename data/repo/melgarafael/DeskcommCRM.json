@@ -1,0 +1,75 @@
+{
+  "id": "821d6184-e963-4756-a5ef-09c3a7ac7cbe",
+  "url": "https://github.com/melgarafael/DeskcommCRM",
+  "domain": "github.com",
+  "repo": "melgarafael/DeskcommCRM",
+  "description": "DeskcommCRM 是一款开源、自托管 CRM，深度集成 WhatsApp（QR/官方API），内置 AI 代理与 RAG 知识库，提供多租户合规、审计日志与自动化引擎，适合中小团队以可控成本完成“线索—会话—成交—售后”闭环运营，支持一条命令部署与升级。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-11T11:12:33.943Z",
+  "metaData": {
+    "forks": "458",
+    "stars": "1048",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "chatbot",
+      "crm",
+      "customer-support",
+      "ecommerce",
+      "lgpd",
+      "mcp",
+      "multi-tenant",
+      "nextjs",
+      "nuvemshop",
+      "open-source",
+      "rag",
+      "sales-automation",
+      "self-hosted",
+      "supabase",
+      "typescript",
+      "waha",
+      "whatsapp",
+      "whatsapp-api"
+    ],
+    "license": "MIT license",
+    "homepage": "https://deskcomm.com.br",
+    "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD. - melgarafael/DeskcommCRM"
+  },
+  "summaryData": {
+    "tags": [
+      "CRM",
+      "WhatsApp",
+      "开源",
+      "AI Agent",
+      "自动化"
+    ],
+    "cover": "",
+    "title": "DeskcommCRM：开源自托管 CRM + AI 销售操作系统",
+    "ability": [
+      "开箱即用的自托管部署",
+      "WhatsApp 深度集成 (QR/官方API)",
+      "AI 代理与 RAG 知识库",
+      "多租户合规与审计日志",
+      "自动化 Kanban 与 Webhook"
+    ],
+    "summary": "深度集成 WhatsApp 的开源 CRM，内置 AI 代理与自动化引擎，适合中小团队自托管闭环运营。",
+    "category": [
+      "企业服务",
+      "开发工具",
+      "AI 应用"
+    ],
+    "suitable": [
+      "中小商家与服务团队",
+      "拉美/葡语市场用户",
+      "开发者与技术团队",
+      "数据敏感型企业",
+      "需要 AI 赋能的运营者"
+    ],
+    "description": "DeskcommCRM 是一款开源、自托管 CRM，深度集成 WhatsApp（QR/官方API），内置 AI 代理与 RAG 知识库，提供多租户合规、审计日志与自动化引擎，适合中小团队以可控成本完成“线索—会话—成交—售后”闭环运营，支持一条命令部署与升级。"
+  },
+  "contentDetail": "<|assistant|>我将点击仓库顶部导航的 Code 页签，以便查看文件树和仓库基本信息（语言、Star/Fork 数等），并找到技术栈相关线索。</think>\n# 一句话总结\nDeskcommCRM 是一款“开箱即用”的开源、自托管 CRM + AI 销售操作系统，深度集成 WhatsApp（支持 QR 与 Meta Cloud API），原生内置 RAG 型 AI 代理与自动化引擎（QUANDO/SE/ENTÃO），并为多租户与 LGPD 设计了 RBAC+RLS+审计日志，适合中小团队以自有服务器、可控成本完成“线索—会话—成交—售后”的闭环运营。\n---\n## 背景与痛点：为什么需要这样一个 CRM？\n- 私域流量（尤其是 WhatsApp）已成为大量拉美与海外商家的主战场，但主流 SaaS（Kommo、Octadesk、Intercom 等）按座席/按功能收费，月费不菲且数据不在自己手里，存在合规和成本的双重焦虑。\n- 通用 CRM 往往把 AI 当“彩蛋插件”：回答不够精准、不能真正操作 CRM、不能与人工协同，导致一线仍需大量手工搬运与跟进。\n- 自托管方案通常安装痛苦、更新有风险、迁移成本高：缺少可靠的安装/升级脚本、回滚与健康检查机制。\n- 法规环境日趋严格（如巴西 LGPD），但不少开源 CRM 未把多租户隔离、审计日志与数据脱敏当作一等公民，商业场景难以落地。\nDeskcommCRM 的诞生，就是把“AI 能写能改、WhatsApp 能接能发、多租户合规自托管”这三件事焊在一起，再通过一条命令部署、一条命令升级，把“痛苦”变成“可控”。\n---\n## 核心亮点与功能剖析\n### 1) 安装与升级：真·一条命令（外加一个可选的“一点即升”）\n- VPS 部署：推荐 4GB RAM 的 Docker VPS，先 SSH 登录，然后两步完成安装：\n  - git clone https://github.com/melgarafael/DeskcommCRM.git\n  - cd DeskcommCRM && bash hostgator-setup-kit/install.sh\n  安装脚本会自动检测并安装 Docker、生成技术性密钥、应用数据库 schema（baseline.sql）、建立首个管理员、配置 HTTPS 与自动化 cron，不要求用户手动配置 Node/pnpm 等开发依赖。\n- “没服务器也能先算一算”：在你的电脑（macOS/Linux/WSL）上可先运行 curl -fsSL https://raw.githubusercontent.com/melgarafael/DeskcommCRM/main/hostgator-setup-kit/comecar.sh | bash，脚本会提示你需要什么样的 VPS 配置，并给出对应命令，避免“拍脑袋选错机型”。\n- 升级体验：\n  - 界面内一键升级（推荐）：管理员在“设置 → 更新”触发，系统自动备份库 → 拉代码 → 迁移 schema → 切镜像 → 健康检查；若新版本异常，会自动回滚到上一镜像并记录到环境变量，避免重启后再次“掉坑”。\n  - 命令行兜底：bash hostgator-setup-kit/update.sh，流程与界面一致，适合 CI/场景或故障恢复。更新总是以已发布版本（vX.Y.Z）为目标，并以 CHANGELOG.md 为准，不盲追 main 的最新提交。\n- 运维脚本：\n  - backup.sh、restore.sh：库与 WhatsApp 会话的备份与恢复。\n  - reset-password.sh、reset-mfa.sh：密码与两步验证的应急恢复。\n  - healthcheck.sh：各服务的统一诊断入口。\n**为什么值得关注？**  \n“安装脚本也是产品的一部分”。DeskcommCRM 的 kit 把必须的手动步骤减到最少，且具备幂等性（反复执行不会二次破坏）、升级回滚与健康检查机制，大幅降低自托管的上手风险与运维成本。\n### 2) 技术栈与架构：现代且实用\n- 前端：Next.js 16 App Router（Turbopack）+ React 19 + TypeScript 6 严格模式；样式使用 Tailwind + shadcn/ui（new-york/neutral），利于定制且无 UI 锁定。\n- 数据与认证：Supabase（Postgres + RLS + pgvector），Auth 使用 @supabase/ssr，Cookie 做 SameSite=Strict、HttpOnly；Realtime 用于 postgres_changes 与 broadcast；Storage 用于 WhatsApp 媒体（签名 URL，私有 bucket）。\n- 通道与队列：\n  - WhatsApp：WAHA Plus（NOWEB 引擎）+ Meta Cloud API，支持 QR 快速上线与官方通道的规模化。\n  - 事件队列：不使用 DB trigger 直接连 HTTP，而是由 event_log 表 + cron 消费者（/api/v1/cron/event-log-drain）处理，确保可观测与可重试。\n  - 限流：Upstash Redis 的滑动窗口，免费层即可支撑常见用量。\n- AI 与可观测：Vercel AI SDK v7，可切换 OpenRouter/Anthropic/OpenAI/Google；Sentry 用于可观测，安装时可选择是否开启；验证采用 Zod；部署采用 VPS + Docker（官方合作 HostGator 在圣保罗的 DC）。\n**架构亮点：**\n- 真·多租户与隔离：所有租户感知表都采用 RLS 策略，CI 中有专门的 RLS 隔离测试（创建两组织，模拟 JWT，证明 A 不能看见 B 的 conversations/messages/contacts/crm_leads）。\n- 代码结构与治理：\n  - app/ 下按路由分组（admin、public、app、api/v1）；components/ 分 UI/业务组件；lib/ 承载核心业务（agent-engine、routing、channels、ai 等）。\n  - workers/ 消费 event_log，涵盖 IA/RAG/LGPD/媒体/例行任务，避免关键业务耦合到前端生命周期。\n  - CI 门禁：verify（类型检查 + lint + 单测 + shell 测试）、invariants（DB 迁移幂等性与关键行为不变性）、build-and-size、e2e（Playwright）、imagens-ok（三镜像可构建），合并 main 必须全部绿灯。\n### 3) AI 代理与 RAG：不只是“聊天机器人”\n- 租户级 RAG：每个租户有自己的知识库，使用 pgvector 做向量存储；AI 回复时可检索业务上下文、脚本与历史对话，减少“幻觉”。\n- Skills 与内存：AI 具备可执行“技能”（如根据对话更新字段、转移线索、打标签等），并有“组织级记忆”；系统还提供“演化面板”（Evolução da IA），展示 AI 的表现与改进空间，并可接受 AI 对自身的“建议（Propostas）”，经人审后纳入新版本，做到“有门禁的自演进”。\n- 意图路由与人工接管：基于号码/消息内容的路由；AI 可识别需要人工的场景并执行 handoff，工单会被标注且可审计。\n- 成本控制：可按组织设置 AI 支出上限，避免失控调用。\n**比喻一下：**  \n这不是一个“只会背诵 Q&A 的客服台”，而更像一个“带脑子的业务助理”：它能在会话中把信息写入 CRM 卡片、按流程把线索推到下一阶段、并在搞不定时“摇人”（转人工），同时把学到的经验反馈到知识库里。\n### 4) CRM 与 Kanban：多行业可适配\n- Kanban 可配置阶段与每阶段的词汇（如 lead → 客户/患者/买家；won → 已付/已预约/成交），适配电商、诊所、地产、信息产品等不同业务场景。\n- 支持自定义字段（每阶段最多约 50 个），AI 可识别对话中的关键信息并写入这些字段，字段变更会记录在时间线并标注作者。\n- Customer 360 与跟进雷达：Radar 视图列出“可能冷掉的线索”，支持时间自适应的跟进规则与触发器（按阶段或特定情形），减少“无声死亡”的商机。\n### 5) WhatsApp 通道：两条腿走路\n- QR（WAHA）：适合快速上线、中小规模；支持多号码；具备 anti-ban 机制（throttle + jitter + 时间窗）、STOP 检测。\n- 官方 Cloud API：用于规模化与合规场景；支持已审批的消息模板同步。\n- 媒体文件经 Supabase Storage 签名 URL 存储；连接状态与健康可监控，并支持自动/手动重连。\n### 6) 自动化与 Webhooks：QUANDO/SE/ENTÃO\n- 每个租户可创建“捕获源”：一个公开的 /api/v1/webhooks/in/<token>，支持 JSON 或 x-www-form-urlencoded，接收表单/LP/Zapier/n8n 等外部数据并自动进入指定阶段。\n- 在此之上构建“自动化规则”：事件（如消息到达、阶段变更、打标）作为 WHEN/IF；THEN 动作包括打标签、移动阶段、指派、发 WhatsApp 消息或调用外部 webhook。\n- 事件写入 event_log 表；不直接在 trigger 中发 HTTP 请求，而是由 cron 消费器定期拉取执行；UI 显示执行结果，失败可重试。\n### 7) 合规与安全：LGPD 与审计\n- 审计日志为仅追加（append-only），建议保留 5 年；多租户隔离用 RLS + CI 中的隔离测试做门禁；数据删除优先使用“匿名化”而非硬删。\n- 支持 LGPD 需求：导出与脱敏；用户作为自己实例的数据控制者，维护者不访问你的库、WhatsApp 或存储。安装时 Sentry 上报默认询问 opt-in，可关闭。\n- 认证：基于 Supabase Auth；管理后台可选 MFA（Google Authenticator/Authy），并支持恢复码；会话管理在 UI 中可见可控。\n---\n## 目标人群与收益：谁值得上手？\n| 角色 | 痛点 | 收益 |\n|---|---|---|\n| 中小商家/服务型团队（尤其是以 WhatsApp 为主阵地） | 线索散在手机/表格；跟进依赖记忆与“提醒贴纸”；无法衡量团队与 AI 的表现 | 一体化 Inbox + Kanban + 自动化，将线索、会话、成交、售后统一管理；AI 代理与雷达减少漏掉的机会 |\n| 拉美/葡语市场 | 主流 SaaS 费用高、数据托管在境外、合规风险 | 自托管、数据在自己 VPS；LGPD by-design；本地部署与 WhatsApp 连接更可控 |\n| 开发者/团队需要可嵌入的销售运营底座 | 需要可定制 UI/流程、需 API 与 Webhook 集成 | 前后端完全开源，技术栈现代；API/事件/Webhook/MCP 均开放；可二次开发与运营 |\n| 敏于数据隐私与成本控制的企业 | 禁止数据出境或强合规要求；但不想从零造 CRM | Self-host，Supabase 可选托管位置（你自己控制）；无月费锁定，只需承担 VPS 与 AI 调用成本 |\n---\n## 竞品/同类对比：它处于什么位置？\n- 与 SuiteCRM 等老牌开源 CRM 相比：DeskcommCRM 把“WhatsApp + AI Agent + 自动化”作为一等能力，而非通过插件拼装；技术栈更新（Next.js/React/TS），前端更现代。同时，多租户与 RLS 使其在服务商（为多家客户部署）场景更合适。\n- 与 Kommo/Octadesk/Intercom 等商业化 Chat-CRM 相比：免 SaaS 订阅、数据自持；但需要自己承担 VPS 与维护成本。DeskcommCRM 明确定位为“这些产品的开源替代方案”，并在 README 中直接对齐。\n- 与“轻量 WhatsApp 自动化脚本/库”相比：DeskcommCRM 提供完整 CRM UI、权限模型、审计与多通道管理；对只想做个简单机器人的团队来说可能偏重，对需要完整运营台面的团队则非常合适。\n---\n## 局限与不足：需要心里有数的点\n- 部署仍然需要“会一点服务器”：脚本简化了安装，但你仍需准备 VPS、域名、Supabase 项目与 AI Provider Key；第一次出错时需要能看日志、执行健康检查脚本。\n- WhatsApp 风险与责任：即便是 anti-ban 机制，消息发送仍受平台策略影响；你需要自行管理号码健康度并承担账号风险。官方 Cloud API 虽更稳定，但也有模板审核等额外流程。\n- 多通道目前优先 WhatsApp：其他主流即时通讯/邮件通道（如 Telegram/Email）并未在文档与 Roadmap 中作为核心，集成需自行扩展。\n- Supabase 依赖与计费：虽然免费层适用于不少场景，但业务量增长后（连接数、存储、API 调用）可能触及计费门槛；你需要自己规划。\n- AI 成本与质量：AI 回复质量取决于提示工程与知识库维护；虽然支持多厂商与预算控制，但高并发场景仍需关注 Token 成本与响应时延。\n- 社区支持 vs 商业 SLA：目前为开源社区维护（Issues + Discussions）；官方明确声明不提供 SLA，需视自身团队能力评估是否适合作为核心生产系统。\n---\n## 上手与 Demo（极简示例）\n### 本地开发环境（仅做体验/贡献）\n```bash\ngit clone https://github.com/melgarafael/DeskcommCRM.git\ncd DeskcommCRM\nnvm use  # Node 22\nnpm install -g pnpm && pnpm install\ncp .env.example .env.local  # 详见 docs/SETUP.md\ndocker compose up -d        # 本地 WAHA（可选）\n```\n准备 Supabase 项目与 DB_URL，先启用必要扩展并应用 schema：\n```bash\npsql \"$SUPABASE_DB_URL\" -v ON_ERROR_STOP=1 -c \\\n  'create extension if not exists vector with schema public;\n   create extension if not exists citext with schema public;\n   create extension if not exists pg_trgm with schema public;'\npsql \"$SUPABASE_DB_URL\" -v ON_ERROR_STOP=1 -f supabase/baseline.sql\npnpm dev\n```\n访问 http://localhost:3000，健康检查：http://localhost:3000/api/v1/health。\n### 生产 VPS 部署（核心命令）\n- 登录 VPS 后：\n```bash\ngit clone https://github.com/melgarafael/DeskcommCRM.git\ncd DeskcommCRM\nbash hostgator-setup-kit/install.sh\n```\n- 按提示准备：\n  - VPS（推荐 4GB RAM，Docker 支持）\n  - 域名 A 记录指向 VPS IP\n  - Supabase 项目（可由安装器自动创建）\n  - AI Provider Key（OpenRouter/Anthropic/OpenAI）\n  - WhatsApp 号（QR 或官方 Cloud API）\n### 典型自动化示例（QUANDO/SE/ENTÃO）\n- WHEN：新线索通过 Webhook 进入（例如表单提交）。\n- IF：来源为“Google Ads”且“城市=圣保罗”。\n- THEN：\n  - 打标签：“Paid/圣保罗”\n  - 分配给某个团队或队列\n  - 发送 WhatsApp 模板消息或欢迎语（符合合规要求）。\n---\n## 更新节奏与社区活跃度（截至 2026-09）\n- 版本发布：Releases 中最近版本包括 v1.18.0 与 v1.17.0，更新日志非常详细，涵盖交互体验、AI 行为（如“digit…”展示、字段自动填写、消息来源标注）、提醒功能（按类型和提前量发提醒）以及多项 Bug 修复，发布频率处于较活跃状态。\n- Issues 与互动：近期（9 月）有多条 Issue 被创建与标记，包括 UI、通道、安装校验、自动化与隐私等方面，显示社区与作者仍在持续跟进问题与优化；维护者在 Issues 中有标注与分类（area/ui/canal 等）。\n- 质量门禁：CI 中要求 verify、invariants、build-and-size、e2e、imagens-ok 全部通过，合并主分支有明确门禁，有助于提升稳定性与可控性。\n---\n## 结语与行动建议\n### 如果你是“商家/运营负责人”\n- 适合当你：\n  - 核心营收来自 WhatsApp；\n  - 希望团队与 AI 共同处理线索与跟进；\n  - 能接受一定的运维成本（VPS + 基本终端操作），并想掌控数据与成本。\n- 建议起步：\n  - 在本地用 dev 模式跑一遍，熟悉 UI 与 AI/自动化配置；\n  - 先以小范围试点（一个号码、少量渠道），验证 AI 回复质量与自动化效果后再扩容。\n### 如果你是“开发者/技术团队”\n- 适合当你：\n  - 需要“可嵌入”的销售运营底座；\n  - 想基于现代全栈技术做二次开发与扩展；\n  - 需要多租户、审计与合规等能力。\n- 建议起步：\n  - 通读 ARCHITECTURE.md 与 docs/SETUP.md；\n  - 熟悉 event_log + workers 的模型与 Webhook/Automation 的接入方式；\n  - 写自己的 MCP server 或自定义技能。\n总体评价：DeskcommCRM 在“开源、自托管、AI 赋能的 WhatsApp-CRM”细分赛道具备较高的完成度与工程严谨度，安装/升级脚本、CI 门禁与合规设计为商业落地提供了相对友好的起点；但需要你在运维、合规与 AI 成本上做好预期管理。如果你的业务高度依赖 WhatsApp 且需要可控成本与数据主权，它值得一试。",
+  "type": "project",
+  "dateAdded": "20260911"
+}

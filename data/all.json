@@ -1,6 +1,544 @@
 {
   "all": [
     {
+      "id": "070ec15e-8d57-45ae-8b5f-e6df5485d72c",
+      "url": "https://github.com/Tencent/WeKnora",
+      "domain": "github.com",
+      "repo": "Tencent/WeKnora",
+      "description": "WeKnora 源自微信对话开放平台，提供从文档到知识资产的端到端方案。支持私有化部署，集成长期记忆、知识图谱与全链路可观测性，适合企业构建可控的知识库与智能体。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:48:09.551Z",
+      "metaData": {
+        "forks": "3205",
+        "stars": "22244",
+        "topics": [
+          "agent",
+          "agentic",
+          "ai",
+          "chatbot",
+          "dsh-plugin",
+          "embeddings",
+          "evaluation",
+          "generative-ai",
+          "golang",
+          "knowledge-base",
+          "llm",
+          "multi-tenant",
+          "ollama",
+          "openai",
+          "question-answering",
+          "rag",
+          "reranking",
+          "semantic-search",
+          "vector-search",
+          "wiki"
+        ],
+        "license": "licenses",
+        "homepage": "https://weknora.weixin.qq.com",
+        "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki. - Tencent/WeKnora"
+      },
+      "summaryData": {
+        "tags": [
+          "RAG",
+          "Agent",
+          "知识库",
+          "开源",
+          "腾讯"
+        ],
+        "cover": "",
+        "title": "腾讯 WeKnora：企业级 LLM 知识平台深度评测",
+        "ability": [
+          "RAG 快速问答",
+          "ReAct 智能体",
+          "Wiki 自动维护",
+          "多端交互嵌入",
+          "企业级权限审计"
+        ],
+        "summary": "WeKnora 是腾讯开源的企业级 LLM 知识平台，集 RAG 问答、ReAct 智能体与自动 Wiki 维护于一体。",
+        "category": [
+          "开发工具",
+          "企业服务",
+          "AI 编程"
+        ],
+        "suitable": [
+          "企业 IT/运维/平台团队",
+          "产品/研发/合规/法务",
+          "需要私有化部署的团队"
+        ],
+        "description": "WeKnora 源自微信对话开放平台，提供从文档到知识资产的端到端方案。支持私有化部署，集成长期记忆、知识图谱与全链路可观测性，适合企业构建可控的知识库与智能体。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "2fc829ee-bcbd-4083-818d-c3c504ec5ab1",
+      "url": "https://github.com/github/spec-kit",
+      "domain": "github.com",
+      "repo": "github/spec-kit",
+      "description": "GitHub Spec Kit 是一套将产品意图转化为可执行规范的 AI 编码辅助工具，通过规范化的四阶段工作流，让需求、方案、任务与代码形成闭环，支持多种 AI 代理，适合个人到企业级团队落地。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:44:39.739Z",
+      "metaData": {
+        "forks": "12180",
+        "stars": "135485",
+        "topics": [
+          "ai",
+          "copilot",
+          "development",
+          "engineering",
+          "prd",
+          "spec",
+          "spec-driven"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.github.com/spec-kit/",
+        "description": "💫 Toolkit to help you get started with Spec-Driven Development - github/spec-kit"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "工作流",
+          "规范驱动",
+          "开源",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "GitHub Spec Kit - 意图驱动的 AI 开发规范工具",
+        "ability": [
+          "四阶段 SDD 工作流",
+          "支持 30+ AI 编码代理集成",
+          "扩展/预设/Bundle 可扩展体系",
+          "Bug 修复与 Idea 评估工作流",
+          "企业离线环境支持"
+        ],
+        "summary": "把需求意图转化为可执行规范的 AI 编码辅助工具",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "项目管理"
+        ],
+        "suitable": [
+          "独立开发者",
+          "小微团队",
+          "中大型研发团队",
+          "产品经理/需求分析师",
+          "AI 重度用户"
+        ],
+        "description": "GitHub Spec Kit 是一套将产品意图转化为可执行规范的 AI 编码辅助工具，通过规范化的四阶段工作流，让需求、方案、任务与代码形成闭环，支持多种 AI 代理，适合个人到企业级团队落地。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "701dfc2b-9697-48d6-99b1-b12100c8cef8",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "domain": "github.com",
+      "repo": "alphaXiv/OpenResearch",
+      "description": "OpenResearch将AI编码Agent与Git结合，提供本地优先的实验管理。支持多方向并行探索、全流程可复现，并能无缝调度本地及云端算力，是科研与AI开发的强力助手。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:41:11.206Z",
+      "metaData": {
+        "forks": "77",
+        "stars": "1045",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://openresearch.sh/",
+        "description": "Run parallel research agents with any model. Contribute to alphaXiv/OpenResearch development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "科研",
+          "实验管理",
+          "Agent",
+          "Git"
+        ],
+        "cover": "",
+        "title": "OpenResearch：本地优先的AI科研实验工作台",
+        "ability": [
+          "并行探索与隔离工作区",
+          "可复现的实验树",
+          "证据即上下文",
+          "Agent与模型可插拔",
+          "多环境计算调度"
+        ],
+        "summary": "一个本地优先、支持并行AI智能体与可复现实验树的开源科研工作台。",
+        "category": [
+          "开发工具",
+          "AI 辅助研发",
+          "效率工具"
+        ],
+        "suitable": [
+          "研究生/高校教师",
+          "机器学习工程师",
+          "数据科学家",
+          "自动化科研开发者",
+          "AI极客"
+        ],
+        "description": "OpenResearch将AI编码Agent与Git结合，提供本地优先的实验管理。支持多方向并行探索、全流程可复现，并能无缝调度本地及云端算力，是科研与AI开发的强力助手。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "8d8af332-9596-46d2-b124-fa51b7af6ab9",
+      "url": "https://github.com/jordan-gibbs/hyperresearch",
+      "domain": "github.com",
+      "repo": "jordan-gibbs/hyperresearch",
+      "description": "Hyperresearch 将 Claude Code 升级为深度研究专家，通过 16 步管线自动执行搜索、深度挖掘、对立观点分析与事实核查。它将所有原始材料存入本地 Vault，支持复用与检索，专为需要高可信度、长篇综述的专业人士打造。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:34:58.289Z",
+      "metaData": {
+        "forks": "239",
+        "stars": "2213",
+        "topics": [
+          "agents",
+          "agentskills",
+          "claude-code",
+          "deep-research",
+          "deep-research-agent"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Agent-driven research knowledge base. Agents collect, search, and synthesize web research into a persistent, searchable wiki. - jordan-gibbs/hyperresearch"
+      },
+      "summaryData": {
+        "tags": [
+          "深度研究",
+          "Claude Code",
+          "多智能体",
+          "学术辅助",
+          "知识库"
+        ],
+        "cover": "",
+        "title": "Hyperresearch：深度研究多智能体管线",
+        "ability": [
+          "16步自动化研究流程",
+          "本地持久化金库",
+          "引文核查与撤稿检测",
+          "对抗性评审机制",
+          "OA全文救援"
+        ],
+        "summary": "基于 Claude Code 的深度研究工具，通过多智能体协作自动完成从搜索、验证到成稿的全流程，并建立本地可溯源知识库。",
+        "category": [
+          "AI 编程",
+          "知识管理",
+          "效率工具"
+        ],
+        "suitable": [
+          "学术研究者",
+          "行业分析师",
+          "技术写作者",
+          "深度知识工作者",
+          "Claude Code重度用户"
+        ],
+        "description": "Hyperresearch 将 Claude Code 升级为深度研究专家，通过 16 步管线自动执行搜索、深度挖掘、对立观点分析与事实核查。它将所有原始材料存入本地 Vault，支持复用与检索，专为需要高可信度、长篇综述的专业人士打造。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "b8788178-375c-4a0a-9967-661887fbbbcf",
+      "url": "https://github.com/p1neappleXpress/OpenFlux",
+      "domain": "github.com",
+      "repo": "p1neappleXpress/OpenFlux",
+      "description": "智谱清言是基于智谱 AI 训练的 GLM 模型开发的 AI 助手。它具备强大的自然语言处理能力，能够协助用户进行复杂的问题解答、文本生成、代码编写及逻辑推理，是提升工作与学习效率的得力工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:30:08.849Z",
+      "metaData": {
+        "forks": "79",
+        "stars": "933",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Network stack research tool. TCP tunnel with pluggable transports. - p1neappleXpress/OpenFlux"
+      },
+      "summaryData": {
+        "tags": [
+          "GLM",
+          "人工智能",
+          "智能助手",
+          "大语言模型"
+        ],
+        "cover": "",
+        "title": "智谱清言 AI 助手",
+        "ability": [
+          "智能对话",
+          "内容创作",
+          "代码编写",
+          "逻辑分析",
+          "信息提取"
+        ],
+        "summary": "基于智谱 AI GLM 模型开发的智能语言助手，支持多场景交互。",
+        "category": [
+          "AI 应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "软件开发者",
+          "内容创作者",
+          "科研人员",
+          "学生",
+          "办公族"
+        ],
+        "description": "智谱清言是基于智谱 AI 训练的 GLM 模型开发的 AI 助手。它具备强大的自然语言处理能力，能够协助用户进行复杂的问题解答、文本生成、代码编写及逻辑推理，是提升工作与学习效率的得力工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "9be19889-b01b-4ccb-aae5-f299a88481c8",
+      "url": "https://github.com/jihe520/MathModelAgent",
+      "domain": "github.com",
+      "repo": "jihe520/MathModelAgent",
+      "description": "该项目通过多智能体协作与 RAG 技术，自动完成数学建模的建模、代码实验及论文排版。内置17套赛事模板与九步验收机制，能有效提升竞赛与写作效率，适合作为辅助工具而非全自动代劳。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:22:40.738Z",
+      "metaData": {
+        "forks": "382",
+        "stars": "4721",
+        "topics": [
+          "agent",
+          "llm",
+          "mathmodel",
+          "skills"
+        ],
+        "license": "License",
+        "homepage": "https://mathmodel.top/home",
+        "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission. - jihe520/MathModelAgent"
+      },
+      "summaryData": {
+        "tags": [
+          "数学建模",
+          "AutoGPT",
+          "Typst",
+          "论文自动化",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "MathModelAgent：数学建模全流程自动化与论文生成工具",
+        "ability": [
+          "多智能体协同工作流",
+          "自动论文生成与排版",
+          "代码自动运行与调试",
+          "RAG 知识库增强",
+          "人机协作审核"
+        ],
+        "summary": "一款基于多智能体的数学建模全流程自动化工具，实现从问题分析、建模、代码实验到论文排版与校验的闭环。",
+        "category": [
+          "AI 编程",
+          "学术辅助",
+          "效率工具"
+        ],
+        "suitable": [
+          "数学建模竞赛选手",
+          "科研写作新手",
+          "AI 应用开发者",
+          "效率工具爱好者"
+        ],
+        "description": "该项目通过多智能体协作与 RAG 技术，自动完成数学建模的建模、代码实验及论文排版。内置17套赛事模板与九步验收机制，能有效提升竞赛与写作效率，适合作为辅助工具而非全自动代劳。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "2b69d153-3496-4c11-9000-a7b850455897",
+      "url": "https://github.com/Sonarr/Sonarr",
+      "domain": "github.com",
+      "repo": "Sonarr/Sonarr",
+      "description": "Sonarr 是一款为追剧党打造的智能下载管家，能自动监控剧集更新、抓取资源、按质量升级并重命名整理文件。它支持跨平台部署，深度集成下载器与媒体服务器，是自建家庭媒体库的核心组件。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:17:53.126Z",
+      "metaData": {
+        "forks": "1942",
+        "stars": "15599",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "https://sonarr.tv",
+        "description": "Smart PVR for newsgroup and bittorrent users. Contribute to Sonarr/Sonarr development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Sonarr",
+          "剧集管理",
+          "Docker",
+          "家庭影院",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Sonarr 深度评测：智能剧集下载管家",
+        "ability": [
+          "自动发现与RSS监控",
+          "质量模板与自动升级",
+          "失败重试与自愈",
+          "智能重命名与媒体整理",
+          "多平台Docker一键部署"
+        ],
+        "summary": "免费开源的智能剧集下载与整理工具，自动监控、抓取、升级并整理美剧，适合自建家庭媒体库的用户。",
+        "category": [
+          "媒体管理",
+          "下载工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "家庭影院(HTPC)爱好者",
+          "Plex/Emby/Jellyfin用户",
+          "站点/PT刷流用户",
+          "多平台追剧者",
+          "隐私重视的Usenet用户"
+        ],
+        "description": "Sonarr 是一款为追剧党打造的智能下载管家，能自动监控剧集更新、抓取资源、按质量升级并重命名整理文件。它支持跨平台部署，深度集成下载器与媒体服务器，是自建家庭媒体库的核心组件。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "821d6184-e963-4756-a5ef-09c3a7ac7cbe",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "domain": "github.com",
+      "repo": "melgarafael/DeskcommCRM",
+      "description": "DeskcommCRM 是一款开源、自托管 CRM，深度集成 WhatsApp（QR/官方API），内置 AI 代理与 RAG 知识库，提供多租户合规、审计日志与自动化引擎，适合中小团队以可控成本完成“线索—会话—成交—售后”闭环运营，支持一条命令部署与升级。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:12:33.943Z",
+      "metaData": {
+        "forks": "458",
+        "stars": "1048",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "chatbot",
+          "crm",
+          "customer-support",
+          "ecommerce",
+          "lgpd",
+          "mcp",
+          "multi-tenant",
+          "nextjs",
+          "nuvemshop",
+          "open-source",
+          "rag",
+          "sales-automation",
+          "self-hosted",
+          "supabase",
+          "typescript",
+          "waha",
+          "whatsapp",
+          "whatsapp-api"
+        ],
+        "license": "MIT license",
+        "homepage": "https://deskcomm.com.br",
+        "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD. - melgarafael/DeskcommCRM"
+      },
+      "summaryData": {
+        "tags": [
+          "CRM",
+          "WhatsApp",
+          "开源",
+          "AI Agent",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "DeskcommCRM：开源自托管 CRM + AI 销售操作系统",
+        "ability": [
+          "开箱即用的自托管部署",
+          "WhatsApp 深度集成 (QR/官方API)",
+          "AI 代理与 RAG 知识库",
+          "多租户合规与审计日志",
+          "自动化 Kanban 与 Webhook"
+        ],
+        "summary": "深度集成 WhatsApp 的开源 CRM，内置 AI 代理与自动化引擎，适合中小团队自托管闭环运营。",
+        "category": [
+          "企业服务",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "中小商家与服务团队",
+          "拉美/葡语市场用户",
+          "开发者与技术团队",
+          "数据敏感型企业",
+          "需要 AI 赋能的运营者"
+        ],
+        "description": "DeskcommCRM 是一款开源、自托管 CRM，深度集成 WhatsApp（QR/官方API），内置 AI 代理与 RAG 知识库，提供多租户合规、审计日志与自动化引擎，适合中小团队以可控成本完成“线索—会话—成交—售后”闭环运营，支持一条命令部署与升级。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
+      "id": "b444c40f-d031-4af5-8c56-a8de3cffa65b",
+      "url": "https://github.com/nab138/iloader",
+      "domain": "github.com",
+      "repo": "nab138/iloader",
+      "description": "iloader 是一款基于 Tauri 构建的跨平台桌面工具，旨在简化 iOS 侧载流程。它通过图形化界面，让用户无需命令行操作即可轻松完成 SideStore 安装、证书管理及 IPA 导入，并提供智能错误提示，极大降低了新手的使用门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-11T11:06:11.064Z",
+      "metaData": {
+        "forks": "193",
+        "stars": "2777",
+        "topics": [
+          "idevice",
+          "ios",
+          "sideloading",
+          "sidestore"
+        ],
+        "license": "MIT license",
+        "homepage": "https://iloader.app",
+        "description": "User friendly sideloader. Contribute to nab138/iloader development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "iOS 侧载",
+          "SideStore",
+          "开源",
+          "Rust",
+          "Tauri"
+        ],
+        "cover": "",
+        "title": "iloader：小白也能用的 iOS 侧载神器",
+        "ability": [
+          "一键 SideStore 安装",
+          "自动配对文件管理",
+          "智能错误修复建议",
+          "跨平台支持",
+          "IPA 应用侧载"
+        ],
+        "summary": "跨平台 iOS 侧载神器，一键管理证书与配对文件，小白也能轻松搞定 SideStore 安装。",
+        "category": [
+          "开发工具",
+          "实用软件",
+          "iOS 工具"
+        ],
+        "suitable": [
+          "iOS 发烧友",
+          "侧载小白用户",
+          "iOS 应用开发者",
+          "测试人员",
+          "开源贡献者"
+        ],
+        "description": "iloader 是一款基于 Tauri 构建的跨平台桌面工具，旨在简化 iOS 侧载流程。它通过图形化界面，让用户无需命令行操作即可轻松完成 SideStore 安装、证书管理及 IPA 导入，并提供智能错误提示，极大降低了新手的使用门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260911"
+    },
+    {
       "id": "a33e8fc6-e6a1-4d49-a47f-7fde6cd83d73",
       "url": "https://github.com/NVIDIA-NeMo/Switchyard",
       "domain": "github.com",
@@ -11,8 +549,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:57:50.966Z",
       "metaData": {
-        "forks": "258",
-        "stars": "2848",
+        "forks": "259",
+        "stars": "2860",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -116,7 +654,7 @@
       "createdAt": "2026-09-10T12:33:47.671Z",
       "metaData": {
         "forks": "2114",
-        "stars": "18404",
+        "stars": "18424",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -219,8 +757,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:20:32.854Z",
       "metaData": {
-        "forks": "522",
-        "stars": "4562",
+        "forks": "524",
+        "stars": "4577",
         "topics": [
           "3d",
           "armorpaint",
@@ -278,8 +816,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:12:02.694Z",
       "metaData": {
-        "forks": "2273",
-        "stars": "35952",
+        "forks": "2275",
+        "stars": "35982",
         "topics": [
           "gguf",
           "llm",
@@ -338,8 +876,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:04:33.159Z",
       "metaData": {
-        "forks": "269",
-        "stars": "1903",
+        "forks": "271",
+        "stars": "1931",
         "topics": [
           "agi",
           "ai",
@@ -411,8 +949,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T09:07:14.164Z",
       "metaData": {
-        "forks": "212",
-        "stars": "6061",
+        "forks": "214",
+        "stars": "6132",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://jakub.kr/skills",
@@ -588,8 +1126,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:17:35.322Z",
       "metaData": {
-        "forks": "204",
-        "stars": "2555",
+        "forks": "205",
+        "stars": "2581",
         "topics": [
           "ai-agent",
           "coding-agent",
@@ -1001,8 +1539,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "843",
-        "stars": "6408",
+        "forks": "844",
+        "stars": "6418",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -1333,8 +1871,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:42:01.918Z",
       "metaData": {
-        "forks": "2911",
-        "stars": "23170",
+        "forks": "2919",
+        "stars": "23304",
         "topics": [
           "3d",
           "agent-skills",
@@ -1344,6 +1882,7 @@
           "cad",
           "editor",
           "floorplan",
+          "gemini-cli-extension",
           "local-first",
           "mcp",
           "mcp-server",
@@ -1658,8 +2197,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1591",
-        "stars": "22069",
+        "forks": "1593",
+        "stars": "22086",
         "topics": [
           "antigravity",
           "claude",
@@ -1732,8 +2271,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13418",
-        "stars": "182539",
+        "forks": "13422",
+        "stars": "182576",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -1793,8 +2332,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4471",
-        "stars": "48886",
+        "forks": "4478",
+        "stars": "48912",
         "topics": [
           "ai",
           "animation",
@@ -2051,7 +2590,7 @@
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
         "forks": "7535",
-        "stars": "49510",
+        "stars": "49529",
         "topics": [
           "claude",
           "codex",
@@ -2160,7 +2699,7 @@
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
         "forks": "1801",
-        "stars": "26883",
+        "stars": "26890",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -2379,8 +2918,8 @@
       "forks": 0,
       "createdAt": "2026-09-05T12:04:05.339Z",
       "metaData": {
-        "forks": "98",
-        "stars": "3360",
+        "forks": "110",
+        "stars": "3729",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2430,8 +2969,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "646",
-        "stars": "18191",
+        "forks": "645",
+        "stars": "18232",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -2747,8 +3286,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2419",
-        "stars": "38200",
+        "forks": "2422",
+        "stars": "38248",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -3024,8 +3563,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T04:04:32.931Z",
       "metaData": {
-        "forks": "5384",
-        "stars": "33095",
+        "forks": "5385",
+        "stars": "33105",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3203,8 +3742,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25491",
-        "stars": "285009",
+        "forks": "25492",
+        "stars": "285042",
         "topics": [
           "ai",
           "brainstorming",
@@ -3623,8 +4162,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1416",
-        "stars": "12647",
+        "forks": "1418",
+        "stars": "12657",
         "topics": [
           "agent-memory",
           "ai",
@@ -3810,8 +4349,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3815",
-        "stars": "46672",
+        "forks": "3819",
+        "stars": "46721",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -4298,8 +4837,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3060",
-        "stars": "25730",
+        "forks": "3061",
+        "stars": "25732",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -4902,8 +5441,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2757",
-        "stars": "22387",
+        "forks": "2763",
+        "stars": "22425",
         "topics": [
           "ai",
           "audiobook",
@@ -5858,8 +6397,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1467",
-        "stars": "11543",
+        "forks": "1468",
+        "stars": "11565",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5911,8 +6450,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5669",
-        "stars": "35678",
+        "forks": "5678",
+        "stars": "35723",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5964,8 +6503,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4413",
-        "stars": "40157",
+        "forks": "4421",
+        "stars": "40198",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -6396,7 +6935,7 @@
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
         "forks": "2316",
-        "stars": "18330",
+        "stars": "18344",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -6637,8 +7176,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3628",
-        "stars": "51619",
+        "forks": "3629",
+        "stars": "51633",
         "topics": [
           "browser",
           "chrome",
@@ -6913,8 +7452,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "5251",
-        "stars": "25636",
+        "forks": "5280",
+        "stars": "25812",
         "topics": [
           "3d-globe",
           "cesium",
@@ -7974,8 +8513,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3779",
-        "stars": "57912",
+        "forks": "3790",
+        "stars": "58067",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -8172,8 +8711,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7251",
-        "stars": "135229",
+        "forks": "7260",
+        "stars": "135373",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -9196,8 +9735,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52839",
-        "stars": "478785",
+        "forks": "52844",
+        "stars": "478841",
         "topics": [
           "api",
           "apis",
@@ -9509,7 +10048,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "284",
-        "stars": "3773",
+        "stars": "3781",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -9614,8 +10153,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2275",
-        "stars": "39719",
+        "forks": "2284",
+        "stars": "40000",
         "topics": [
           "adhd",
           "claude-",
@@ -10007,8 +10546,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:39:23.365Z",
       "metaData": {
-        "forks": "419",
-        "stars": "7211",
+        "forks": "520",
+        "stars": "8355",
         "topics": [
           "effect",
           "framework",
@@ -10229,8 +10768,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:52:29.286Z",
       "metaData": {
-        "forks": "50580",
-        "stars": "244361",
+        "forks": "50597",
+        "stars": "244419",
         "topics": [
           "ai",
           "ai-agent",
@@ -10474,8 +11013,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "447",
-        "stars": "6498",
+        "forks": "448",
+        "stars": "6506",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10647,7 +11186,7 @@
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
         "forks": "486",
-        "stars": "5220",
+        "stars": "5224",
         "topics": [
           "agent-runtime",
           "ai",
@@ -10833,8 +11372,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21848",
-        "stars": "259218",
+        "forks": "21859",
+        "stars": "259348",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -10884,8 +11423,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2807",
-        "stars": "36606",
+        "forks": "2809",
+        "stars": "36629",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -11065,7 +11604,7 @@
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
         "forks": "8521",
-        "stars": "72040",
+        "stars": "72062",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -11137,8 +11676,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38333",
-        "stars": "256100",
+        "forks": "38338",
+        "stars": "256189",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -11198,8 +11737,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3020",
-        "stars": "31205",
+        "forks": "3025",
+        "stars": "31246",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -11261,8 +11800,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "653",
-        "stars": "20601",
+        "forks": "654",
+        "stars": "20616",
         "topics": [
           "dpi",
           "gpui",
@@ -11328,7 +11867,7 @@
       "createdAt": "2026-08-23T13:51:56.271Z",
       "metaData": {
         "forks": "691",
-        "stars": "10793",
+        "stars": "10803",
         "topics": [
           "cactus",
           "gemini",
@@ -11411,8 +11950,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "647",
-        "stars": "7418",
+        "forks": "650",
+        "stars": "7430",
         "topics": [],
         "license": "",
         "homepage": "",

@@ -1,0 +1,60 @@
+{
+  "id": "8d8af332-9596-46d2-b124-fa51b7af6ab9",
+  "url": "https://github.com/jordan-gibbs/hyperresearch",
+  "domain": "github.com",
+  "repo": "jordan-gibbs/hyperresearch",
+  "description": "Hyperresearch 将 Claude Code 升级为深度研究专家，通过 16 步管线自动执行搜索、深度挖掘、对立观点分析与事实核查。它将所有原始材料存入本地 Vault，支持复用与检索，专为需要高可信度、长篇综述的专业人士打造。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-11T11:34:58.289Z",
+  "metaData": {
+    "forks": "239",
+    "stars": "2213",
+    "topics": [
+      "agents",
+      "agentskills",
+      "claude-code",
+      "deep-research",
+      "deep-research-agent"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "Agent-driven research knowledge base. Agents collect, search, and synthesize web research into a persistent, searchable wiki. - jordan-gibbs/hyperresearch"
+  },
+  "summaryData": {
+    "tags": [
+      "深度研究",
+      "Claude Code",
+      "多智能体",
+      "学术辅助",
+      "知识库"
+    ],
+    "cover": "",
+    "title": "Hyperresearch：深度研究多智能体管线",
+    "ability": [
+      "16步自动化研究流程",
+      "本地持久化金库",
+      "引文核查与撤稿检测",
+      "对抗性评审机制",
+      "OA全文救援"
+    ],
+    "summary": "基于 Claude Code 的深度研究工具，通过多智能体协作自动完成从搜索、验证到成稿的全流程，并建立本地可溯源知识库。",
+    "category": [
+      "AI 编程",
+      "知识管理",
+      "效率工具"
+    ],
+    "suitable": [
+      "学术研究者",
+      "行业分析师",
+      "技术写作者",
+      "深度知识工作者",
+      "Claude Code重度用户"
+    ],
+    "description": "Hyperresearch 将 Claude Code 升级为深度研究专家，通过 16 步管线自动执行搜索、深度挖掘、对立观点分析与事实核查。它将所有原始材料存入本地 Vault，支持复用与检索，专为需要高可信度、长篇综述的专业人士打造。"
+  },
+  "contentDetail": "📋 # jordan-gibbs/hyperresearch 深度评测\n## 一句话总结\nHyperresearch 把 Claude Code 变成一套深度研究“带兵打仗”的多智能体管线：一次研究指令就能自动完成从搜索、取证、对立观点挖掘、对抗审核、引文核查到最终成稿的全流程，并把所有原始材料存入持久、可搜索的“研究金库”，下次研究从已有素材起步，越用越聪明。适合研究者、分析师与重度知识工作者。⚠️ 前置门槛是要有 Claude Code 与 Anthropic 模型配额。\n## 背景与痛点：它为什么会出现？\n- 信息过载与浅层检索。面向一个复杂问题，普通搜索或通用 AI 往往给出“泛而浅”的摘要，缺乏系统性的广度与深度，也难以追溯每句话的出处。\n- 引文与可信度黑洞。自动生成的综述常常“声称有据但其实查不到”，或者引用摘要却假装读过全文；更严重的是引用已被撤稿的论文却不自知。\n- 研究工作流断裂。搜索、存档、批注、写初稿、交叉校验、格式润色等步骤分散在不同工具，重复劳动且版本混乱。\n- “每次从零开始”。会话级工具没法很好复用之前的搜索与阅读成果，一次重启就把之前投入的时间“白费”了。\nHyperresearch 正是围绕这些痛点设计：用多阶段流水线与持久化金库，把研究流程固化、可审计、可复用。\n## 核心亮点与功能剖析\n### 1) 16 步研究管线：从一条指令到可交付报告\n项目将一次研究拆解为 16 步，每一阶段由专门的子智能体执行，步骤按需加载上下文，避免长管线在中途“静默丢失任务”。\n- 阶段举例（节选）：\n  - Decompose：把用户查询拆为原子问题点与覆盖矩阵，并自动分档（light/full/dissertation）。\n  - Width Sweep：多视角搜索规划 + 多波次并行抓取，保证覆盖面。\n  - Contradiction Graph：成对抓取语料中的矛盾点并聚类排序，为后序论证提供“靶子”。\n  - Loci Analysis：锁定 1–8 个研究“焦点（loci）”，并分配源预算。\n  - Depth Investigation：并行深入每个焦点，形成带立场的中期笔记。\n  - Triple Draft：三个视角并行写草稿（light 模式单草稿），再由 Synthesizer 融合成最终稿。\n  - Critics：四位评审（辩证/深度/广度/指令贴合）并行找茬。\n  - Gap-Fetch：针对评审发现的“缺口”，定向补源。\n  - Cite-Check：逐句检查“引用—陈述”的匹配度，可疑处硬阻塞。\n  - Polish/Readability Audit：做卫生（删冗余、修齐）与可读性建议。\n> 通俗类比：就像一支研究团队：有图书员先搜一轮、有若干专家分头深挖不同角度、有“红队”专门找漏洞、有校对员逐句核对引文、还有编辑润色。你只下指令，团队按流程走完。\n### 2) 持久化“研究金库”（Vault）：素材只存不丢、越用越聪明\n每条抓取的内容都以 Markdown 存入本地 Vault，并用 SQLite 做索引；后续运行会优先在 Vault 中复用已有素材，避免重复抓取，也允许你用 CLI/MCP/Web UI 三种方式检索。\n- CLI 示例：\n  - 重建索引：`hyperresearch index build -j`\n  - 按质量分搜索：`hyperresearch search \"q\" --ranked -j`\n  - 检查引文独立性（去重转载/通稿）：`hyperresearch sources independence -j`\n- MCP 模式：安装额外依赖后 `hyperresearch mcp`，以 stdio 对接 Claude Desktop、Cursor 等 MCP 客户端，带来 13 个工具（搜索、读取、回链、抓取等）。\n- 本地 Web UI：`hyperresearch serve --open` 在 8080 端口起无前端依赖（纯 stdlib HTTP）的浏览与交互图界面。\n> 通俗类比：Vault 像一个“个人图书馆目录+全文检索+关联图谱”，随时间自动“变厚”。\n### 3) 来源质量与撤稿“硬控”\n- 质量分数：综合来源类型、抓取效用、引用权威（OpenAlex/Semantic Scholar）、以及 Vault 内 PageRank 等指标打分；Retraction（撤稿）会被“打到接近零分”。\n- 撤稿 sweep：出货前会再次检查每个 DOI 的撤稿状态，新出的撤稿也能被发现。\n- 引用独立性：聚合通稿/转载被聚类去重，避免“一稿多投”被错误视作多方共识。\n### 4) 开放获取（OA）全文“救援”\n对 DOI 识别出的付费墙页面，项目会依次尝试 Unpaywall、Europe PMC 等合法 OA 渠道抓取全文，并在多处明示来源变更；若原始站点完全不可读且存在 OA 副本，会标记为“救援（rescued）”，指明“正文并非来自原始 URL”。\n> 风险提示：救援到的可能是预印本或已接受版本，项目会在前元数据中标注版本类型，严谨引用前仍建议与发表版核对。\n### 5) 对抗构造与“只修补、不重写”原则\n- 四位批评家并行：针对初稿找“遗漏反例、深度不足、覆盖面偏窄、与原指令结构不匹配”等问题。\n- Patcher/Polish 被工具锁死只能用 Read/Edit，无法直接覆盖重写，避免“一键重写”把原稿结构洗掉；修补不下的严重问题会被上报为结构性问题。\n### 6) 学术 API 优先 + 登录态抓取\n- 先扫 Semantic Scholar、arXiv、OpenAlex、PubMed，再做 web 搜索与对抗性检索（“对 X 的批评”“X 的局限”）。\n- 支持登录态抓取：`hyperresearch setup` 会打开浏览器，手动登录 LinkedIn/Twitter 等后，后续抓取走可见浏览器通道；遇登录墙/机器人墙会自动入队“升级队列”，配合 Claude-in-Chrome 扩展进行“人工代理抓取”。CAPTCHA/2FA 不会自动破解，需人手介入。\n### 7) 三档规模与可配置齿轮、杠杆\n- Tiers（档位）：\n  - light：约 30–40 分钟，走简化 5 步路径（1→2→10→15→16），适合限定范围的事实型问题。\n  - full（默认）：1.5–2.5 小时，走完整 16 步+引文核查。\n  - dissertation：按章节分章节循环，可达 25K–80K 词、300–450 源，耗时 4–8 小时。\n- Gears（齿轮）：控制源数量、深度预算、字数目标等。CLI 示例：`hyperresearch profile use premier`（目标 100–130 源，深度预算加倍）、`hyperresearch profile use full` 回到默认 55–80 源。\n- Levers（杠杆）：如 register（语态：teach/survey/analyze/advocate）、domain_notes（领域约定）、inference_depth（挖多深）等，可中途动态调整并重渲染。\n### 8) “从一次崩溃中恢复”与预算管控\n- 每次运行有 manifest 与独立工作空间，`hyperresearch run resume` 可从断点续跑。\n- `run init --budget 50` 可设置预算上限，超限将阻断运行，防止费用失控。\n### 9) 对“恶意网页”的防御：把网页内容当“不可信数据”对待\n- 抓取的网页内容会被包裹在 `<untrusted-source>` 标记中，且附带前置提示，防止网页中的“指令注入”被当作系统指令执行；伪造标记会被转义或保留为取证信息。\n- 对第三方 API 返回的 URL 也做校验：scheme、凭据、公网可达性检查后再抓取。\n## 技术栈与架构解析\n- 语言/生态：Python，明确要求 3.11–3.13（3.14 尚不支持）；通过 PyPI 安装：`pip install hyperresearch && hyperresearch install`。安装后可在 Claude Code 内以 `/hyperresearch <prompt>` 调用。\n- 运行依赖：必须要有 Claude Code（具备 Skill 工具与 Read/Write/Edit 能力的编码 IDE 环境作为“执行宿主”）。\n- 子智能体模型映射：不同角色默认分配不同 Anthropic 模型（如 Sonnet 用于抓取/源分析/loci/深挖/批判；Opus 用于草稿与综合/四类批评等），并支持在 `.hyperresearch/config.toml` 中按 profile 覆盖。\n- 存储与索引：本地 Markdown + SQLite，有 CHECK 约束防止污染索引；CLI 支持导出 JSON、子集 vault、导入已有 MD 集合；支持与 Git 协作（`git changed`/`git log`）。\n- 模型边界：当前仅绑定 Anthropic 模型；README 明确欢迎 PR 移植到 Codex 等其他模型。\n> 通俗类比：Hyperresearch 更像一套“编排脚本 + 本地库 + Claude Code 插件”的组合，而非完整独立应用；Claude Code 是“引擎”，Hyperresearch 是“传动与控制系统”。\n## 目标人群与收益：谁最值得入坑？\n- 学术研究者/博士生：快速梳理文献，发现对立观点与热点分歧，生成带明确出处与 QA 检查的综述初稿，把时间从“搜索—存档—制表—核对引文”中解放出来。\n- 行业分析师/投资人/咨询顾问：进行行业扫描、竞品对比、政策影响评估时，系统化抓取与溯源比临时抓取更可复用、可审阅，并可通过 levers 定制语态（如 survey vs advocate）。\n- 技术写作者/内容团队：生成初稿、检查引用一致性、建立主题知识图谱与回链体系；团队间可以共享 vault（通过 Git 或目录导入导出）。\n- 个人知识管理重度用户：把日常研究与阅读沉淀为 Vault，用 CLI/MCP/Web UI 检索与回链，配合其他笔记/写作工具使用（vault 本质是 MD，不强绑定）。\n## 竞品/同类对比：它处在什么位置？\n- 对比通用搜索/聊天（如 Perplexity、传统搜索+LLM）：Hyperresearch 更强调流程透明、引用可审计、多轮对抗评审与持久化 Vault，而不是“单次问答”。\n- 对比研究型 Agent（如 GPT Researcher、各种 RAG/综述助手）：差异在于 16 步明确管线、patch-only 修改与 cite-check gate；且当前深度耦合 Claude Code 的能力（工具锁、Read/Edit 等）。\n- 对比专用文献综述技能（如 Scholarly Literature Review Claude Code Skill）：Hyperresearch 更“工作流化”，自带抓取、存储、去重、质量分、撤稿检查等全套能力；而前者更偏“工具化调用学术 API”与论文格式化。\n- 对比纯知识库/Obsidian-等笔记方案：Hyperresearch 的研究管线+自动抓取+ citation/质量分是“从无到有”的增量生产，而非“整理已有知识”。\n综合而言：Hyperresearch 定位更偏“研究管线+源头审计+长跑复用”，而不是“随手一搜即止”。对 Claude Code 用户来说是高阶扩展，对非 Claude Code 用户则门槛不低。\n## 局限与不足：冷静看待\n- 平台绑定：当前仅支持 Anthropic 模型，强依赖 Claude Code。如你主要用其他 LLM/IDE，迁移成本高；README 也提到待 PR 移植。\n- 费用与耗时：full/dissertation 档位涉及多轮并行调用、长上下文处理，费用会随源数量与深度增加；从官方给出的时间区间看（1.5–5 小时不等），不适合“立刻要结果”的场景。\n- 学习成本：需要理解 tiers/gears/levers、run 状态、resume、profile、MCP 集成等概念；对非技术用户有上手坡度。\n- 仍非“事实保真”：项目明确表示只能做结构性与引文完整性检查，不能保证事实准确；最终判断仍需人类把关。\n- 尚未看到明确的 Docker/一键部署说明（README 未提及），部署主要依赖 Python 环境与 Claude Code；对 DevOps 流程集成可能需要自封装。\n- 开源协议为 MIT，友好；但实际运行成本为外部 API 调用，需评估预算与合规。\n## 上手门槛与部署体验\n- 安装命令简单：`pip install hyperresearch && hyperresearch install`，然后在 Claude Code 里用 `/hyperresearch <prompt>` 触发；power user 可用 `--global` 把技能全局挂载。\n- CLI 能力丰富：状态查询、resume、profile 管理、levers 调整、sources/search/independence/claims 等均提供 ` -j` JSON 输出，便于脚本化与二次开发。\n- Web UI 无需构建：直接用 stdlib HTTP 起本地服务，方便快速浏览与关联图探索，对不熟悉 CLI 的用户更友好。\n## 代码示例 / Demo（核心用法）\n### 最小可用示例（Claude Code 内触发）\n- 安装与触发：\n  - `cd your-project`\n  - `pip install hyperresearch && hyperresearch install`\n  - 在 Claude Code 中输入：`/hyperresearch 深入对比检索增强生成（RAG）与向量数据库的主流方案与工程化实践，并给出可落地的建议与风险提示`\n- 调整档位与齿轮：\n  - `hyperresearch profile list`\n  - `hyperresearch profile use premier`\n  - `hyperresearch levers set <tag> inference_depth=deep --rerender`\n- 观察进度与恢复：\n  - `hyperresearch run status -j`\n  - 若中断，执行 `hyperresearch run resume -j`\n- 使用 Vault（事后）：\n  - `hyperresearch search \"RAG\" --ranked -j`\n  - `hyperresearch sources independence -j`\n  - `hyperresearch serve --open` 启 Web 浏览与图探索\n### MCP 集成示例（与 Claude Desktop/Cursor 等）\n- 安装额外依赖：`pip install hyperresearch[mcp]`\n- 启动 MCP 服务：`hyperresearch mcp`（stdio 模式）\n- 在 MCP 客户端配置中把该命令作为 MCP server 入口，即可调用 13 个工具对同一 vault 做读取/搜索/链接/抓取等操作。\n## 社区活跃度与生命力\n- 第三方目录 SkillsLLM 收录并标记为 deep-research / Claude Code 技能；该站点仅作索引与安全扫描提示，不维护仓库本身。\n- BeamforAI 统计显示项目处于“加速”状态（velocity 0.4/10），说明提交/活跃尚可，但具体 star/fork 需以 GitHub 页面实时信息为准。\n- README 链接了 DeepResearch Bench RACE 排行榜页面，说明作者在面向公开基准做调优与对标。\n## 结语与行动建议（终极评判）\n- 终极评价：Hyperresearch 是当前“深度研究 Agent”中极少数把流程审计、引文验证、对抗批评、撤稿检测、持久化 Vault 等端到端整合，并与 Claude Code 深度绑定的方案。它的价值不在于“省一次搜索”，而在于把研究从“拼手气”变成“可复用、可检查、可迭代”的工程化流程。\n- 适合现在入坑的人：\n  - 已经在用或准备深度使用 Claude Code 的研究者/分析师/内容团队。\n  - 对引用质量与来源可审计有强诉求，不能接受“黑盒生成”的场景。\n- 暂不建议：\n  - 不打算用 Claude Code 或 Anthropic 模型的用户。\n  - 只需要偶尔、轻量问答或资料搜集的场景（overkill）。\n- 行动建议：\n  - 第一步：确保有 Python 3.11–3.13 与 Claude Code 环境，按 README 做最小安装，先用 light 档位跑一个你熟悉的主题，观察输出结构。\n  - 第二步：把 vault 放入 Git，配置好 `.hyperresearch/config.toml` 中的 `[scholar]` 与 `profile`，锁定模型与预算。\n  - 第三步：逐步尝试 full 档位与自定义 gears/levers，把研究输出纳入团队的正式文稿管线，并人工审核 cite-check 与 critic 发现，形成人机闭环。\n- 风险提示：始终把“最终事实判断”留在人这边，将 Hyperresearch 视为“研究参谋”而非“最终裁决者”。",
+  "type": "project",
+  "dateAdded": "20260911"
+}
