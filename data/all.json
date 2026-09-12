@@ -1,6 +1,135 @@
 {
   "all": [
     {
+      "id": "0a4d8d95-1197-4860-8b28-1afde8f6828a",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "domain": "github.com",
+      "repo": "vxcontrol/pentagi",
+      "description": "PentAGI 利用多个 AI 代理在 Docker 沙箱中协同工作，自动化执行从侦察到利用的渗透测试流程。它集成 200+ 真实安全工具，支持知识图谱记忆和全流程观测，旨在解决传统扫描器误报高和人工测试效率低的问题。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:38:49.394Z",
+      "metaData": {
+        "forks": "3043",
+        "stars": "23139",
+        "topics": [
+          "ai-agents",
+          "ai-security-tool",
+          "anthropic",
+          "autonomous-agents",
+          "golang",
+          "gpt",
+          "graphql",
+          "multi-agent-system",
+          "offensive-security",
+          "open-source",
+          "openai",
+          "penetration-testing",
+          "penetration-testing-tools",
+          "react",
+          "security-automation",
+          "security-testing",
+          "security-tools",
+          "self-hosted"
+        ],
+        "license": "licenses",
+        "homepage": "https://pentagi.com",
+        "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks - vxcontrol/pentagi"
+      },
+      "summaryData": {
+        "tags": [
+          "自动化渗透测试",
+          "多智能体系统",
+          "开源安全",
+          "Docker",
+          "红队工具"
+        ],
+        "cover": "",
+        "title": "PentAGI：开源自动化渗透测试多智能体系统深度评测",
+        "ability": [
+          "多智能体协作",
+          "真实工具自动化调用",
+          "知识图谱与拓扑追踪",
+          "全链路可观测与审计",
+          "自托管与隐私保护"
+        ],
+        "summary": "PentAGI 是一个能调用真实黑客工具的自动化渗透测试多智能体系统，旨在通过 AI 协作实现可复用、可审计的红队流水线。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "信息安全从业者",
+          "DevSecOps 工程师",
+          "安全研究人员与学生",
+          "企业安全团队"
+        ],
+        "description": "PentAGI 利用多个 AI 代理在 Docker 沙箱中协同工作，自动化执行从侦察到利用的渗透测试流程。它集成 200+ 真实安全工具，支持知识图谱记忆和全流程观测，旨在解决传统扫描器误报高和人工测试效率低的问题。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
+      "id": "363f010e-627c-4d94-bed4-4eb5a8bc2478",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "domain": "github.com",
+      "repo": "max-sixty/worktrunk",
+      "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:33:36.964Z",
+      "metaData": {
+        "forks": "250",
+        "stars": "7045",
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
+        ],
+        "license": "License",
+        "homepage": "https://worktrunk.dev",
+        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
+      },
+      "summaryData": {
+        "tags": [
+          "Git",
+          "CLI",
+          "Worktree",
+          "效率工具",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "Worktrunk：Git 并行开发的效率加速器",
+        "ability": [
+          "Worktree 极简管理",
+          "AI 代理并行开发",
+          "自动化工作流 Hooks",
+          "可视化状态概览",
+          "构建缓存共享"
+        ],
+        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Git Worktree 重度用户",
+          "AI 辅助编程开发者",
+          "高频切换分支的开发者",
+          "追求终端效率的极客"
+        ],
+        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
       "id": "0dc6bf5d-008e-4b33-b199-436dee27735e",
       "url": "https://github.com/multimodal-art-projection/YuE",
       "domain": "github.com",
@@ -292,8 +421,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3230",
-        "stars": "22479",
+        "forks": "3236",
+        "stars": "22557",
         "topics": [
           "agent",
           "agentic",
@@ -831,7 +960,7 @@
       "createdAt": "2026-09-10T12:57:50.966Z",
       "metaData": {
         "forks": "262",
-        "stars": "2912",
+        "stars": "2924",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1097,8 +1226,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:12:02.694Z",
       "metaData": {
-        "forks": "2285",
-        "stars": "36142",
+        "forks": "2288",
+        "stars": "36180",
         "topics": [
           "gguf",
           "llm",
@@ -1356,8 +1485,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "593",
-        "stars": "7961",
+        "forks": "643",
+        "stars": "8530",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -1476,8 +1605,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "1570",
-        "stars": "15242",
+        "forks": "1591",
+        "stars": "15399",
         "topics": [
           "agents",
           "ai-agents",
@@ -2552,8 +2681,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13445",
-        "stars": "182813",
+        "forks": "13456",
+        "stars": "182961",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -2870,8 +2999,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7552",
-        "stars": "49693",
+        "forks": "7558",
+        "stars": "49734",
         "topics": [
           "claude",
           "codex",
@@ -3250,8 +3379,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "655",
-        "stars": "18422",
+        "forks": "658",
+        "stars": "18474",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -3567,8 +3696,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2453",
-        "stars": "38614",
+        "forks": "2460",
+        "stars": "38699",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -4023,8 +4152,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25545",
-        "stars": "285549",
+        "forks": "25557",
+        "stars": "285615",
         "topics": [
           "ai",
           "brainstorming",
@@ -4443,8 +4572,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
-        "forks": "1421",
-        "stars": "12716",
+        "forks": "1422",
+        "stars": "12733",
         "topics": [
           "agent-memory",
           "ai",
@@ -5184,8 +5313,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
-        "forks": "165",
-        "stars": "2230",
+        "forks": "167",
+        "stars": "2262",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -5722,8 +5851,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "2791",
-        "stars": "22687",
+        "forks": "2821",
+        "stars": "22983",
         "topics": [
           "ai",
           "audiobook",
@@ -6678,8 +6807,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1478",
-        "stars": "11670",
+        "forks": "1479",
+        "stars": "11698",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6731,8 +6860,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5715",
-        "stars": "35999",
+        "forks": "5725",
+        "stars": "36082",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6784,8 +6913,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4465",
-        "stars": "40416",
+        "forks": "4480",
+        "stars": "40472",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -7458,7 +7587,7 @@
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
         "forks": "3633",
-        "stars": "51715",
+        "stars": "51731",
         "topics": [
           "browser",
           "chrome",
@@ -8794,8 +8923,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3859",
-        "stars": "58927",
+        "forks": "3880",
+        "stars": "59198",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -10016,8 +10145,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52868",
-        "stars": "479147",
+        "forks": "52876",
+        "stars": "479217",
         "topics": [
           "api",
           "apis",
@@ -10329,7 +10458,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "285",
-        "stars": "3828",
+        "stars": "3838",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -10434,8 +10563,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2432",
-        "stars": "42786",
+        "forks": "2447",
+        "stars": "42988",
         "topics": [
           "adhd",
           "claude-",
@@ -10827,8 +10956,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:39:23.365Z",
       "metaData": {
-        "forks": "521",
-        "stars": "8387",
+        "forks": "522",
+        "stars": "8397",
         "topics": [
           "effect",
           "framework",
@@ -11294,8 +11423,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "449",
-        "stars": "6586",
+        "forks": "450",
+        "stars": "6603",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11345,8 +11474,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3167",
-        "stars": "29700",
+        "forks": "3168",
+        "stars": "29703",
         "topics": [
           "ai",
           "language",
@@ -11466,8 +11595,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "488",
-        "stars": "5260",
+        "forks": "490",
+        "stars": "5269",
         "topics": [
           "agent-runtime",
           "ai",
@@ -11653,8 +11782,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "21934",
-        "stars": "260055",
+        "forks": "21942",
+        "stars": "260218",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -11704,8 +11833,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2814",
-        "stars": "36763",
+        "forks": "2815",
+        "stars": "36784",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -12018,8 +12147,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3040",
-        "stars": "31414",
+        "forks": "3043",
+        "stars": "31451",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -12081,8 +12210,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "664",
-        "stars": "20730",
+        "forks": "666",
+        "stars": "20770",
         "topics": [
           "dpi",
           "gpui",
@@ -12232,7 +12361,7 @@
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
         "forks": "653",
-        "stars": "7482",
+        "stars": "7504",
         "topics": [],
         "license": "",
         "homepage": "",
