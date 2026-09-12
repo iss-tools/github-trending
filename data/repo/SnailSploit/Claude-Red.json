@@ -1,0 +1,61 @@
+{
+  "id": "3c6a1b9d-0f14-41b8-8ae4-e45a1bb50243",
+  "url": "https://github.com/SnailSploit/Claude-Red",
+  "domain": "github.com",
+  "repo": "SnailSploit/Claude-Red",
+  "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-12T13:22:11.914Z",
+  "metaData": {
+    "forks": "539",
+    "stars": "3378",
+    "topics": [
+      "claude-ai",
+      "claude-pt",
+      "claude-skills",
+      "redteam",
+      "redteam-tools",
+      "skills"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development. - SnailSploit/Claude-Red"
+  },
+  "summaryData": {
+    "tags": [
+      "渗透测试",
+      "Claude Skills",
+      "红队工具",
+      "自动化攻击",
+      "安全研究"
+    ],
+    "cover": "",
+    "title": "Claude-Red：AI 驱动的顶级红队攻击技能库",
+    "ability": [
+      "红队攻击技能化",
+      "全场景漏洞覆盖",
+      "AI 自动化渗透",
+      "结构化安全知识",
+      "一键式部署集成"
+    ],
+    "summary": "将专家级红队打法转化为 AI 技能，让 Claude 变身专业攻击操作员。",
+    "category": [
+      "网络安全",
+      "AI 编程",
+      "开发者工具"
+    ],
+    "suitable": [
+      "渗透测试工程师",
+      "红队攻防专家",
+      "漏洞赏金猎人",
+      "网络安全研究员",
+      "CTF 爱好者"
+    ],
+    "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。"
+  },
+  "contentDetail": "# 一句话总结\n**Claude-Red 是一套面向 Claude Skills 系统的「进攻安全技能库」（Drop‑in SKILL.md 文件），把专家级红队打法结构化为可按需触发的提示模块，让 Claude 在合法的红队/漏洞研究/CTF 等场景里成为即插即用的专业攻击操作员。**\n---\n## 背景与痛点：为什么会有 Claude-Red？\n- 经验门槛高：红队操作往往需要跨多个领域的长期实践（Web、AD、云、容器、无线、二进制利用等），一个人很难面面俱到。\n- 流程不统一：不同团队甚至同一团队不同成员的方法论差异巨大，漏测路径、漏过边缘情况是常态。\n- 传统「攻击脚本库」太脆：很多现成 PoC 只针对某个特定 demo 环境，目标稍一改动就失效，难以在真实战场复用。\n- AI 辅助却缺乏“领域专精”：大模型能写代码、解释概念，但缺少结构化、可反复调用的「作战手册」，每次都得重讲背景、重列工具，浪费上下文。\nClaude-Red 的思路是：把“如何做”拆成一个个短小、聚焦的 SKILL.md，由 Claude 在对话时按需“加载”相应方法论，既降低对经验依赖，又不把攻击逻辑写死。它由安全研究团体 SnailSploit 主导，其官方网站长期发布 AI 安全/对抗性 AI 研究与实战材料（如逆向 Claude 的 Memory 架构、SKILBin 概念等）。\n---\n## 核心亮点与功能剖析\n### 1) “技能即文件”的设计理念\n- 每个技能就是一个 SKILL.md 文件，通常 80–200 行，讲清：\n  - 何时触发（适用场景与条件）\n  - 看什么（观测点与成功指标）\n  - 怎么做（流程、工具、边缘案例）\n  - 失败时怎么收尾/降级\n- 技能本身不是攻击脚本，而是给 Agent 的一套“操作说明书”，让它根据你当前的具体目标现场写出脚本或命令。这和大量“预固化 payload”的库形成了本质差别。\n> 比喻：与其给士兵一本针对某个村庄的作战地图，不如给他一套「城市巷战作业规范」。换个村庄，规范仍然适用。\n### 2) 按需触发、渐进式披露（Progressive Disclosure）\n- 官方推荐接入方式是把仓库放到 Claude Skills 系统扫描目录（~/.claude/skills/claude-red），Claude 会根据对话关键词自动加载对应技能（如提到 SQL 注入就加载 offensive-sqli）。未触达的技能完全不消耗上下文 Token。\n- 也可以用 Claude Code 的 --system-file 管道注入，或在 Claude.ai Web 的 Project 系统提示中粘贴单个 SKILL.md。多入口满足不同工作流。\n### 3) 覆盖面极广的技能索引（持续扩张中）\n当前仓库 README 显示 23 个分类、78 个技能（注意官方站点与外部文章有 38/58 的版本说法，系不同时间点统计差异）。\n- Web 应用（16 个技能）：SQLi、XSS、SSRF、SSTI、XXE、IDOR、文件上传、RCE、反序列化、竞态、请求走私、开放重定向、参数污染、GraphQL、WAF 绕过、业务逻辑等。\n- 认证与身份（2）：JWT 攻击、OAuth/OIDC 滥用。\n- Active Directory（1）：AD 攻击方法论（Kerberoast、ASREProast、ACL、ADCS ESC1‑15、委派、混合 AAD）。\n- 无线（14）：802.11、WPA2/3、EAP、WPS、Evil‑Twin、BLE、经典蓝牙、Zigbee/Thread/Matter、Z‑Wave、LoRaWAN、sub‑GHz 等。\n- 云（1）、移动（1）、IoT 与嵌入式（1）、基础设施与红队（7）、漏洞利用开发（6）、Fuzzing/研究（4）、Recon（2）、API 安全（2）、容器与 K8s（2）、CI/CD 管道（2）、密码学（2）、提权（2）、后渗透（3）、取证与 C2（2）、供应链（2）、社工（2）、网络攻击（1）、AI 安全（1）、工具与报告（2）。\nRoadmap 显示计划扩展到约 130 个技能，覆盖 AD/Windows、云身份、IoT、Web 基础与高阶等新领域。\n### 4) 真实、结构化方法论（而非“命令清单”）\n以 offensive-sqli 为例，技能文件不只是 payload 大全，而是包含从探测到利用的全流程、数据库差异、WAF 绕过、云场景、ORM CVE 等多维度内容，非常适合让模型据此做“有逻辑”的输出。结构包括快速工作流、探测手法、自动化流水线（sqlmap、httpx、waybackurls、hakrawler、arjun、Ghauri 等）、DB 专项利用、NoSQL/Graph 注入、WAF 绕过与云元数据利用路径等。\n### 5) 一键安装与精选安装\n- 官方提供 install.sh，支持：\n  - 交互式安装\n  - 指定目标目录（如 ~/.claude/skills）\n  - 按分类单装（如 --category web），避免“全部拉下来”造成杂乱\n- 也支持 Git 的稀疏检出（sparse‑checkout）按需拉取类别目录，贴合最小必要原则。\n### 6) 安全与合规定位\n- README 明确标注适用于“授权红队演练、漏洞赏金、安全研究、CTF 准备、操作员培训与方法化攻击面探索”等用途。\n- 仓库采用 MIT 许可证，可自由使用并要求注明来源。\n---\n## 目标人群与收益：谁能从 Claude-Red 中获益？\n- 正规红队/渗透测试人员：在与 Claude 的工作流中获得即时的“打法对齐”，减少漏测路径与漏用工具，尤其在跨域场景（如 Web+容器+云）减少认知负荷。\n- 漏洞赏金猎人：在有限时间内快速覆盖多类漏洞点（SSTI、GraphQL、业务逻辑等），技能库中常见的边缘案例与绕过能提升挖掘效率与奖励转化率。\n- 安全研究员/漏洞挖掘者：在 Fuzzing、Bug 模式识别、Crash 分析、TOCTOU 等方向获得结构化方法与知识图谱，加速从现象到 root cause 的推导。\n- CTF 参赛者与训练者：技能中的方法论适合拆解题目与构造利用链，也能用于有组织地训练新人。\n- 防御方（蓝队/DevSecOps）：理解进攻路径有助于设计检测规则、加固点与演练红队场景；技能中的“规避/检测”与“报告模板”有直接参考价值。\n- AI Agent 开发者：可以把 SKILL.md 直接嵌入到自己的 harness 中，让模型获得“红队模块化能力”，用于自动化安全测试、Agent 能力测评等。\n直观收益\n- 时间：减少“从零构思打法”的时间，把更多精力花在对目标环境的精细调优上。\n- 覆盖：用结构化列表覆盖边缘案例（如不同数据库/云环境/绕过），避免漏测。\n- 教学价值：新人按技能逐条演练，能在 Claude 辅助下快速形成“思维框架”。\n---\n## 竞品/同类对比：它处在什么位置？\n- 传统安全 checklist/备忘录（如各种 PDF/Notion 模板）：知识完备但不够“机器友好”，需要人工二次整理，难以自动触发。\n- 通用 AI 提示词库（多为“越狱”或“角色扮演”）：攻击维度浅，缺乏工程化与可复用的方法论；很多只是“扮演黑客”，并不给出实战可操作的流程。\n- 其它 AI 安全 Skill 仓库（例如 Claude Code Guide 中的安全技能集）：侧重基础与安全审计，覆盖面和深度相对有限；Claude-Red 的特点是“覆盖广 + 单技能聚焦 + 持续更新”，面向真实红队场景。\n- 商业渗透平台：它们提供整套平台与编排，但不提供可读/可编辑的 SKILL.md，难以与自己的 Claude 工作流集成，也不利于内部化方法论。\n因此，Claude-Red 更像是“进攻安全领域的知识模块化”尝试，既可直接用于 Claude 生态，也可作为模板/范式移植到其他 Agent 系统。\n---\n## 局限与不足\n- 生态绑定：当前 README 重点面向 Claude Skills/Claude Code/Claude.ai；如需接入其它模型（如本地 LLM、其它厂商 API），需要自行实现“触发/加载”逻辑，或把 SKILL.md 作为系统提示注入。\n- 学习成本：SKILL.md 面向有一定安全基础的用户，新手需要先理解基本概念（如 SSRF、SSTI、ADCS ESC 等），否则容易停留在“复制 payload”的层面。\n- 质量一致性：不同技能由不同阶段/作者贡献，深度与更新节奏可能不均；尽管有 CONTRIBUTING.md 与 skill template，仍需用户按自己场景做裁剪与验证。\n- 依赖 Claude 的安全策略：模型自身的拒绝/过滤会限制某些内容的生成，即使技能写得再好，也可能被平台策略“截断”，需要通过合规渠道与企业版策略管理来解决。\n- 合规与误用风险：开源且面向“进攻安全”的库若被不当使用（未授权扫描、对外攻击），将带来法律与声誉风险。团队内部需要建立清晰的授权与审计机制。\n---\n## 上手门槛与部署体验（GitHub 项目视角）\n安装\n- Claude Skills System（推荐）：\n  - git clone https://github.com/SnailSploit/claude-red ~/.claude/skills/claude-red\n  - Claude 按关键词自动触发相应技能（如说“SQL 注入”会加载 offensive-sqli）。\n- 单类别安装（减少噪音）：\n  - git clone --filter=blob:none --sparse https://github.com/SnailSploit/claude-red\n  - cd claude-red && git sparse-checkout set Skills/web Skills/active-directory\n- Claude Code：\n  - cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -\n- Claude.ai Web（手动）：\n  - 将 SKILL.md 内容粘贴到 Project 的系统提示或对话前置。\n- 安装脚本：\n  - ./install.sh（交互式）\n  - ./install.sh --target ~/.claude/skills\n  - ./install.sh --category web\n评价\n- 零依赖、无需 Docker/复杂环境，适合本地环境或 Codespaces 直接使用。\n- 目录结构清晰（Skills/<category>/<skill>/SKILL.md），易于按需扩展或自定义。\n---\n## 社区活跃度与生命力（GitHub 项目视角）\n- Star/Fork：约 3.4k stars、539 forks；第三方趋势统计显示近 30 天增约 485 stars，仍在显著增长。\n- Issues/PRs：Issues 6、Pull Requests 5，说明体量可控、维护者能保持响应节奏；具体响应速度需以近期记录为准。\n- 版本与规划：CHANGELOG 与 Roadmap 清晰（Phase 1‑9），多个阶段标注为 Complete 或 Planned，显示项目有明确演进计划。\n- 许可证与贡献：MIT 协议；CONTRIBUTING 与 skill template 保障社区贡献质量。\n---\n## Demo / 代码示例（极简上手）\n以 SQL 注入技能 offensive-sqli 为例，展示 SKILL.md 的最简结构片段（已简化，仅作为示例理解）：\n- 使用 Claude Code 管道注入：\n  - cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -\n- SKILL.md 示例（前端片段与快速工作流，摘取自实际文件）：\n  - （见下方的“核心字段与结构”示意）\nSKILL.md 核心字段与结构（示意，非全文）\n```yaml\n---\nname: offensive-sqli\ndescription: \"SQL injection testing skill for offensive security assessments and bug bounty hunting. Covers error-based, UNION-based, boolean/time-based blind, out-of-band, second-order, NoSQL, GraphQL, WebSocket, and JSON-operator SQLi. Includes WAF bypass techniques, database-specific exploitation (MySQL, MSSQL, PostgreSQL, Oracle), cloud-native attack paths, ORM CVE tracking, and SQLmap automation. Use when performing web application SQL injection testing, database enumeration, privilege escalation via SQLi, or assessing injection vectors in APIs and modern stacks.\"\n---\n# SQL Injection — Offensive Testing Methodology\n## Quick Workflow\n1. Map all input vectors that reach the database (URL params, POST body, cookies, headers, API filters, WebSocket messages)\n2. Insert probe payloads to detect classic SQLi; fall back to inferential (boolean/time-based) if no visible error\n3. Identify database type and enumerate schema\n4. Exploit to extract data, escalate privileges, or achieve RCE where in scope\n5. Document findings and suggest remediation\n```\n（注：真实文件还包含探测、自动化流水线、数据库专项、NoSQL/Graph 注入、WAF 绕过与云攻击路径等详细章节，篇幅远超上述片段。）\n按需触发的使用示例（在对话中自然触发）\n- “帮我检查这个登录接口是否存在 SQL 注入，并给出验证步骤。”\n- “这个 GraphQL 接口里的用户查询参数有没有可能被 SQL 注入利用？”\n---\n## 结语与行动建议\n- 终极评判：Claude-Red 是目前把“红队打法”模块化做得最系统、最贴近 Agent 执行的开源项目之一，特别适合以 Claude 为主工作流的安全团队与研究者。它不是“一键生成漏洞”的魔杖，而是“可复用、可演进的作战手册”，大幅降低认知负担与漏测风险。\n- 行动建议（安全合规前提下）：\n  - 按需安装：优先拉取与你当前演练/项目直接相关的类别（如 web、container、cloud），避免一次性全装。\n  - 建立内部规范：在企业内建立“授权范围与日志留存”机制，把技能的使用纳入团队 SOP。\n  - 定期同步：关注 Roadmap 与 CHANGELOG，新类别与技能往往对应最新的攻击面（如 CI/CD、供应链、AI 安全）。\n  - 二次封装：根据团队经验，在 SKILL.md 基础上补充“内部最佳实践”与“检测规则”，形成自有知识库。\n---\n## 补充：用法合规性提示\nClaude-Red 包含进攻性安全知识，仅适用于在获得明确授权的合法场景使用（如渗透测试合同范围内的系统、自建靶场、CTF 赛题、漏洞研究实验室等）。未经授权对第三方系统进行扫描或利用，可能违反法律法规。建议在组织内部建立“审查与审计”机制，所有测试活动均需书面授权与日志留存。",
+  "type": "project",
+  "dateAdded": "20260912"
+}

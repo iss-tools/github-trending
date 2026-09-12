@@ -1,6 +1,287 @@
 {
   "all": [
     {
+      "id": "0dc6bf5d-008e-4b33-b199-436dee27735e",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "domain": "github.com",
+      "repo": "multimodal-art-projection/YuE",
+      "description": "YuE2 是一款强大的开源音乐生成模型，采用“先写谱再出歌”的流程，支持乐谱编辑与零样本翻唱，性能媲美 Suno，并支持本地化部署，适合需要高可控性和数据安全的音乐创作与研究。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:26:15.148Z",
+      "metaData": {
+        "forks": "810",
+        "stars": "7061",
+        "topics": [
+          "ai",
+          "audio-generation",
+          "deep-learning",
+          "foundation-models",
+          "gpt",
+          "huggingface",
+          "llama",
+          "llms",
+          "music-generation",
+          "style-transfers",
+          "voice-cloning"
+        ],
+        "license": "licenses",
+        "homepage": "https://map-yue2.github.io/",
+        "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
+      },
+      "summaryData": {
+        "tags": [
+          "YuE2",
+          "音乐生成",
+          "Suno替代",
+          "本地部署",
+          "乐谱编辑"
+        ],
+        "cover": "",
+        "title": "YuE / YuE2 深度评测",
+        "ability": [
+          "歌词生成整歌",
+          "可编辑乐谱",
+          "零样本翻唱",
+          "本地化部署",
+          "高质量渲染"
+        ],
+        "summary": "当前开源界最接近 Suno 的可编辑歌词到整歌生成模型",
+        "category": [
+          "AI",
+          "开源项目",
+          "音乐工具"
+        ],
+        "suitable": [
+          "独立音乐创作者",
+          "AI音乐研究者",
+          "产品工程团队",
+          "AI工具爱好者"
+        ],
+        "description": "YuE2 是一款强大的开源音乐生成模型，采用“先写谱再出歌”的流程，支持乐谱编辑与零样本翻唱，性能媲美 Suno，并支持本地化部署，适合需要高可控性和数据安全的音乐创作与研究。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
+      "id": "3c6a1b9d-0f14-41b8-8ae4-e45a1bb50243",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "domain": "github.com",
+      "repo": "SnailSploit/Claude-Red",
+      "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:22:11.914Z",
+      "metaData": {
+        "forks": "539",
+        "stars": "3378",
+        "topics": [
+          "claude-ai",
+          "claude-pt",
+          "claude-skills",
+          "redteam",
+          "redteam-tools",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development. - SnailSploit/Claude-Red"
+      },
+      "summaryData": {
+        "tags": [
+          "渗透测试",
+          "Claude Skills",
+          "红队工具",
+          "自动化攻击",
+          "安全研究"
+        ],
+        "cover": "",
+        "title": "Claude-Red：AI 驱动的顶级红队攻击技能库",
+        "ability": [
+          "红队攻击技能化",
+          "全场景漏洞覆盖",
+          "AI 自动化渗透",
+          "结构化安全知识",
+          "一键式部署集成"
+        ],
+        "summary": "将专家级红队打法转化为 AI 技能，让 Claude 变身专业攻击操作员。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "渗透测试工程师",
+          "红队攻防专家",
+          "漏洞赏金猎人",
+          "网络安全研究员",
+          "CTF 爱好者"
+        ],
+        "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
+      "id": "5cb55841-2561-4e54-b4c8-09bcefd35f79",
+      "url": "https://github.com/yuliskov/SmartTube",
+      "domain": "github.com",
+      "repo": "yuliskov/SmartTube",
+      "description": "SmartTube 是专为 Android TV 和盒子设计的开源 YouTube 客户端。它能屏蔽广告并利用 SponsorBlock 跳过赞助，支持 8K/HDR 播放、画中画及账号同步。无需 Google 服务框架，界面简洁，是替代官方应用的强力选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:18:08.798Z",
+      "metaData": {
+        "forks": "2009",
+        "stars": "33086",
+        "topics": [
+          "android",
+          "android-tv",
+          "android-tv-box",
+          "java",
+          "kotlin",
+          "retrofit2",
+          "rxjava-android"
+        ],
+        "license": "MIT license",
+        "homepage": "https://smarttubeapp.github.io",
+        "description": "Browse media content with your own rules on Android TV - yuliskov/SmartTube"
+      },
+      "summaryData": {
+        "tags": [
+          "YouTube",
+          "去广告",
+          "开源",
+          "Android TV",
+          "SponsorBlock"
+        ],
+        "cover": "",
+        "title": "SmartTube：Android TV 端最强开源 YouTube 客户端",
+        "ability": [
+          "无广告与 SponsorBlock",
+          "8K/HDR 高级播放",
+          "账号同步与订阅",
+          "不依赖 GMS 框架",
+          "投屏与画中画"
+        ],
+        "summary": "专为 Android TV 打造的开源 YouTube 客户端，无广告、支持 8K 播放与 SponsorBlock。",
+        "category": [
+          "媒体播放",
+          "开源软件",
+          "Android TV"
+        ],
+        "suitable": [
+          "Android TV 用户",
+          "广告敏感人群",
+          "极客与开源爱好者",
+          "电视盒子用户",
+          "追求画质体验者"
+        ],
+        "description": "SmartTube 是专为 Android TV 和盒子设计的开源 YouTube 客户端。它能屏蔽广告并利用 SponsorBlock 跳过赞助，支持 8K/HDR 播放、画中画及账号同步。无需 Google 服务框架，界面简洁，是替代官方应用的强力选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
+      "id": "b270ef30-1100-49fa-8561-f73634a314df",
+      "url": "https://github.com/Flowseal/zapret-discord-youtube",
+      "domain": "github.com",
+      "repo": "Flowseal/zapret-discord-youtube",
+      "description": "这是针对 Windows 平台的开源工具，封装了强大的 zapret 引擎。它通过修改本地数据包特征绕过 DPI 限制，解决 Discord 语音卡顿、视频无法播放等问题，并提供简易菜单和诊断功能，降低使用门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:14:25.733Z",
+      "metaData": {
+        "forks": "2537",
+        "stars": "33166",
+        "topics": [],
+        "license": "License",
+        "homepage": "",
+        "description": "Contribute to Flowseal/zapret-discord-youtube development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "DPI 绕过",
+          "网络加速",
+          "Discord",
+          "YouTube",
+          "WinDivert"
+        ],
+        "cover": "",
+        "title": "Discord/YouTube 网络修复神器：zapret-discord-youtube",
+        "ability": [
+          "DPI 流量绕过",
+          "自动化策略配置",
+          "一键服务管理",
+          "网络故障诊断",
+          "游戏端口过滤"
+        ],
+        "summary": "基于 zapret 的 Windows 工具，通过本地 DPI 绕过技术一键恢复 Discord 和 YouTube 访问。",
+        "category": [
+          "网络工具",
+          "系统工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "网络受限地区用户",
+          "Discord/YouTube 爱好者",
+          "极客与运维人员",
+          "游戏玩家",
+          "不想使用 VPN 的用户"
+        ],
+        "description": "这是针对 Windows 平台的开源工具，封装了强大的 zapret 引擎。它通过修改本地数据包特征绕过 DPI 限制，解决 Discord 语音卡顿、视频无法播放等问题，并提供简易菜单和诊断功能，降低使用门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
+      "id": "4eb3d71a-92e6-4b1a-af5c-5f7875643cb2",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "domain": "github.com",
+      "repo": "asgeirtj/system_prompts_leaks",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-12T13:10:42.513Z",
+      "metaData": {
+        "forks": "10690",
+        "stars": "65032",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-prompts",
+          "anthropic",
+          "chatbot",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "codex",
+          "cursor",
+          "gemini",
+          "generative-ai",
+          "google",
+          "grok",
+          "llm",
+          "openai",
+          "prompt",
+          "prompt-engineering",
+          "system-prompt",
+          "system-prompts"
+        ],
+        "license": "CC0-1.0 license",
+        "homepage": "",
+        "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly. - asgeirtj/system_prompts_leaks"
+      },
+      "summaryData": null,
+      "type": "project",
+      "dateAdded": "20260912"
+    },
+    {
       "id": "070ec15e-8d57-45ae-8b5f-e6df5485d72c",
       "url": "https://github.com/Tencent/WeKnora",
       "domain": "github.com",
@@ -256,8 +537,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:30:08.849Z",
       "metaData": {
-        "forks": "95",
-        "stars": "1261",
+        "forks": "99",
+        "stars": "1303",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "",
@@ -307,8 +588,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:22:40.738Z",
       "metaData": {
-        "forks": "396",
-        "stars": "4979",
+        "forks": "398",
+        "stars": "5019",
         "topics": [
           "agent",
           "llm",
@@ -364,8 +645,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:17:53.126Z",
       "metaData": {
-        "forks": "1948",
-        "stars": "15815",
+        "forks": "1949",
+        "stars": "15837",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://sonarr.tv",
@@ -417,8 +698,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "513",
-        "stars": "1523",
+        "forks": "520",
+        "stars": "1581",
         "topics": [
           "ai",
           "ai-agents",
@@ -491,8 +772,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:06:11.064Z",
       "metaData": {
-        "forks": "206",
-        "stars": "2980",
+        "forks": "207",
+        "stars": "2999",
         "topics": [
           "idevice",
           "ios",
@@ -757,8 +1038,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:20:32.854Z",
       "metaData": {
-        "forks": "538",
-        "stars": "4812",
+        "forks": "537",
+        "stars": "4832",
         "topics": [
           "3d",
           "armorpaint",
@@ -876,8 +1157,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:04:33.159Z",
       "metaData": {
-        "forks": "294",
-        "stars": "2286",
+        "forks": "298",
+        "stars": "2322",
         "topics": [
           "agi",
           "ai",
@@ -7452,8 +7733,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "5692",
-        "stars": "27817",
+        "forks": "5774",
+        "stars": "28260",
         "topics": [
           "3d-globe",
           "cesium",
@@ -8827,8 +9108,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:05:56.470Z",
       "metaData": {
-        "forks": "19751",
-        "stars": "134346",
+        "forks": "20217",
+        "stars": "137379",
         "topics": [
           "agents",
           "llms",

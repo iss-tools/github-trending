@@ -1,0 +1,65 @@
+{
+  "id": "0dc6bf5d-008e-4b33-b199-436dee27735e",
+  "url": "https://github.com/multimodal-art-projection/YuE",
+  "domain": "github.com",
+  "repo": "multimodal-art-projection/YuE",
+  "description": "YuE2 是一款强大的开源音乐生成模型，采用“先写谱再出歌”的流程，支持乐谱编辑与零样本翻唱，性能媲美 Suno，并支持本地化部署，适合需要高可控性和数据安全的音乐创作与研究。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-12T13:26:15.148Z",
+  "metaData": {
+    "forks": "810",
+    "stars": "7061",
+    "topics": [
+      "ai",
+      "audio-generation",
+      "deep-learning",
+      "foundation-models",
+      "gpt",
+      "huggingface",
+      "llama",
+      "llms",
+      "music-generation",
+      "style-transfers",
+      "voice-cloning"
+    ],
+    "license": "licenses",
+    "homepage": "https://map-yue2.github.io/",
+    "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
+  },
+  "summaryData": {
+    "tags": [
+      "YuE2",
+      "音乐生成",
+      "Suno替代",
+      "本地部署",
+      "乐谱编辑"
+    ],
+    "cover": "",
+    "title": "YuE / YuE2 深度评测",
+    "ability": [
+      "歌词生成整歌",
+      "可编辑乐谱",
+      "零样本翻唱",
+      "本地化部署",
+      "高质量渲染"
+    ],
+    "summary": "当前开源界最接近 Suno 的可编辑歌词到整歌生成模型",
+    "category": [
+      "AI",
+      "开源项目",
+      "音乐工具"
+    ],
+    "suitable": [
+      "独立音乐创作者",
+      "AI音乐研究者",
+      "产品工程团队",
+      "AI工具爱好者"
+    ],
+    "description": "YuE2 是一款强大的开源音乐生成模型，采用“先写谱再出歌”的流程，支持乐谱编辑与零样本翻唱，性能媲美 Suno，并支持本地化部署，适合需要高可控性和数据安全的音乐创作与研究。"
+  },
+  "contentDetail": "<|assistant|>我打开 YuE 的原始论文，以了解其发展脉络、模型架构（如是否基于 LLaMA2）、训练规模与关键技术，帮助完成“背景与设计理念”“技术栈与架构解析”部分。</think>\n# YuE / YuE2 深度评测\n## 一句话总结\nYuE2 是当前开源世界里最接近 Suno 级别的“歌词到整首歌”生成模型：它会先写出可编辑的旋律与和弦乐谱（ABC），再渲染成带人声与伴奏的完整歌曲；官方基准显示其综合表现已与 Suno v5/v6 相当甚至更优。代码与文档 Apache-2.0，但模型权重 CC BY-NC 4.0（仅限非商业用途），适合想做可控、可定制本地化音乐生成的开发者与创作者深度研究与集成。\n---\n## 背景与痛点\n音乐生成长期困在“不可控”的黑盒里。像 Suno、Udio 这类闭源服务确实能出成曲，但用户无法看见或修改“旋律/和弦”这样的内在结构，生成结果好不好全靠抽卡；想微调某一段的节奏、和声或把副歌改成 jazz-funk，要么反复重抽，要么动用昂贵的后期制作。更糟的是，闭源 SaaS 不把权重放出，无法在本地、私有云部署，数据与版权都有顾虑。\nYuE（一代）与 YuE2（二代）的出发点就是“可编辑+可部署”：先用符号化规划（旋律+和弦/ABC）做“白盒”，再渲染成高品质音频；同时把整套 pipeline 与权重公开（模型权重的非商用授权），让研究者和工程团队都能拿去跑 benchmark、做实验或做自家产品内脑。\n---\n## 核心亮点与功能剖析\n### 1) 先写谱、再出歌：符号化规划（Symbolic Planning）\n- YuE2 的独特之处在于，它会先生成“旋律+和弦”的 ABC 乐谱，再根据这份谱子生成音频与语义 token，最后用 VAE 还原成 48 kHz 立体声。这相当于“先作曲后编曲+混音”的工业化流程被压缩进一个模型 pipeline。你可以在渲染前修改 ABC，直接干预和声、旋律或结构（AABA/verse-chorus）。\n- 为什么这很重要：没有符号层，你改一句话就要重新抽一首；有了符号层，你只需改“谱”，模型继续按你的谱唱/编，这使得“可控音乐生成”首次变得真正可用。\n### 2) 端到端的一站式 pipeline 与“Agent 技能”\n官方提供了统一的 Python API，并暴露分阶段调用：\n- **流程概览**：\n  1) pipe.plan(...)：生成或加载 ABC 乐谱（可编辑）。\n  2) pipe.generate_semantic(plan)：根据谱子与歌词/风格生成语义 token。\n  3) pipe.synthesize(semantic)：合成声学 latent。\n  4) pipe.decode(latents)：解码到音频文件（flac）。\n- **Agent 技能**：内置 yue2-music 技能包，可以让具备 SKILL.md 能力的 Agent（如各类推理/对话型 Agent）学会“生成、转谱、改编、对比版本”等一整套音乐工作流，不再只停留在“会唱”而是能“会改”和“会听”。\n### 3) 零样本翻唱（Zero-shot Covers）与编辑\n- 只要拿到一段录音，用 SheetSage2（同一团队出品的音频到乐谱转录工具）转录出旋律 ABC，就可以用 YuE2 指定“新风格+（可选）新歌词”，把这首歌翻成完全不同的版本。Zero-shot 意味着不需针对性微调。官方在 SHS100K 上报告 CLEWS mAP 达到 0.647，而不提供谱只有音频时几乎为零（0.006）。\n- 编辑层面，除手动改 ABC 外，还支持“让 Agent 改和弦/旋律/结构后再渲染”，相当于有个虚拟编曲/制作人帮你迭代。\n### 4) 官方基准：已能和 Suno v5/v6 正面刚\n- 在 WildSongBench（192 条提示、自动评估）中，YuE2 的 SongBench Avg 达到 6.7316，Best-of-8 提升到 6.9632，在该指标上优于公开的 Suno v5（6.8721）、v6（6.5562）与 v6 Wild（6.4195），并在多项子项（如 AllMusicCaps、Q3O）上领先。\n- 值得强调：YuE2 的这些成绩是基于“符号规划 + 开源权重”实现的，而 Suno 属闭源商用系统；这体现了开源侧在可控音乐生成上的重大进展。\n### 5) 性能与工程优化\n- 官方给出明确性能数据：在 RTX 4090（24GB）上生成一首 3 分 36 秒歌曲约 71 秒，且使用 PyTorch、CUDA Graphs、FlashAttention 等优化，峰值显存约 11.18 GiB；本地单卡即可流畅出歌。\n- 面向服务器场景，官方还提供了基于 vLLM 0.19 的并发运行时，在 H800 80GB 上，并发上限为 16 时可达到 ~340 首歌/小时吞吐，为高并发业务部署提供了参考方案。\n### 6) 生态矩阵：MERT2 + SheetSage2 + WildSongBench\nYuE2 不是孤点，其团队同时维护多个上游/下游组件：\n- MERT2：大规模自监督的音乐理解模型，在 MARBLE 的 15 个指标中取得 14 项 SOTA，是音乐表征理解的基石。\n- SheetSage2：音频→乐谱（ABC）转录，在 RWC-Pop 等基准达到 SOTA，为 YuE2 的翻唱与编辑提供高质量“谱源”。\n- WildSongBench：完整评估基准（提示与评测脚本），可复现官方对比。\n---\n## 目标人群与收益\n### 适合谁\n- **创作者/独立音乐人**：需要高可控性的本地音乐生成，想要先写谱再唱、迭代和声与结构，并愿意折腾本地部署。\n- **AI 音乐研究员/学生**：希望对比 Suno 等闭源模型，做可复现的 benchmark，或在符号+音频混合 pipeline 上做研究。\n- **产品/工程团队**：需要“可自托管”的歌词→整曲生成能力，并愿意接受 CC BY-NC（非商用）授权限制（或与团队探讨商业授权）。\n- **Agent/AI 工具爱好者**：想把音乐生成集成到 Agent 中，做“对话式编曲”。\n### 实实在在的收益\n- **创作效率提升**：从零写一首歌（人声+编曲）的时间由天级压缩到分秒级，尤其是 Demo 阶段的快速试错与风格调研。\n- **可控性飞跃**：通过编辑 ABC 与风格提示，你可以精确改和声、改结构、改乐器组合（在 prompt 层面），而不是“重新抽一首”。\n- **本地化部署与数据安全**：无需上传歌词与创意到第三方 SaaS，权重与推理全在本地，更适合版权敏感或隐私敏感场景。\n- **可复现的研究与对比**：有了公开权重与官方 benchmark，你可以系统地对比不同方法/超参，也可以把 WildSongBench 作为统一标尺。\n---\n## 竞品/同类对比（开源 vs 闭源）\n| 维度 | YuE2 | Suno v5/v6 | MiniMax Music 3 | SongBloom |\n|------|------|------------|------------------|-----------|\n| **是否开源** | 代码 Apache-2.0；权重 CC BY-NC 4.0 | 闭源 SaaS | 闭源 SaaS | 开源 |\n| **是否可编辑谱子** | 是（ABC 谱） | 否 | 否 | 否 |\n| **本地部署** | 可（24GB GPU） | 否 | 否 | 可（但质量与功能有限） |\n| **长曲能力** | 可生成分钟级整曲 | 支持完整歌曲（视套餐） | 视计划而定 | 偏片段 |\n| **多语言人声** | 支持多语言（含中文） | 多语言支持 | 多语言支持 | 较弱 |\n| **基准表现（SongBench Avg）** | 6.7316（Bo8: 6.9632） | 6.8721/6.5562 | 6.2830 | 4.2350 |\n| **零样本翻唱** | 是（需 SheetSage2 提供 ABC） | 部分能力（视产品） | 有限/视产品 | 否 |\n| **Agent 技能** | 官方 SKILL 包 | 无官方包 | 无官方包 | 无 |\n小结：在“开源+可编辑谱子+本地部署+高性能”组合上，YuE2 处于稀缺且领先的位置。闭源的 Suno 在某些指标仍有优势，但你拿不到权重；SongBloom 等开源项目在质量与生态完整性上仍明显落后于 YuE2。\n---\n## 技术栈与架构解析（开源项目必看）\n- **主干**：AR–NAR Mixture-of-Transformers。先自回归生成谱子与语义 token，再用非自回归（NAR）方式生成声学 latent，最后通过 VAE 解码到立体声音频。\n- **符号表示**：ABC 记谱法（包含旋律与可选和弦），是可编辑的中间层；也可自行提供 ABC 作为“自定义谱子”。\n- **生成策略**：支持三种 CoT 模式——cot=\"full\"（旋律+和弦）、cot=\"melody\"（仅旋律，适合翻唱）、cot=\"off\"（不生成符号层，直接由歌词+风格出歌）。\n- **解码器**：YuE2-Vae（默认）与 YuE2-Vae-legacy（用于复现 benchmark）；二者均为 VAE，输出 48 kHz 立体声，无量化。\n- **依赖与运行时**：PyTorch、Transformers、CUDA Graphs、FlashAttention；提供 vLLM 0.19 的并发服务端方案；官方建议 Linux + Python 3.10+/3.12 + 24GB 显存 BF16 支持。\n- **生态与上游**：YuE 家族（论文显示一代基于 LLaMA2 架构演进），结合 MERT2 的音乐理解表征与 SheetSage2 的音频到谱能力，形成“理解—规划—生成”的闭环。\n---\n## 上手门槛与部署体验\n- **硬件门槛**：官方推荐 24GB 显存 GPU（如 RTX 4090）、24GB 系统内存；RTX 4090 上峰值约 11–12 GiB 显存，一张卡可跑。低于 24GB 的卡可能需要调整（如换用更低精度的 decoder 或裁 batch），但目前官方文档未给出 12GB/16GB 稳定方案，用户需自测或等社区补充。\n- **安装流程**：\n  1) 克隆仓库；python 3.12 建立虚拟环境；pip install . 安装；或直接用 Hugging Face 提供的 wheel 包安装推理依赖。\n  2) 首次运行自动从 Hugging Face 下载模型权重（YuE2-3B 与 VAE）。\n- **文档与体验**：README 与 Hugging Face 模型卡都较为完整，包含“创建/翻唱/编辑”三个用例的代码示例、速度与显存表、基准与复现指引；分阶段 API 文档也有示例，开发者体验（DX）良好。对新手来说，难点主要在环境配置与 GPU 驱动/CUDA 版本匹配。\n- **CLI 支持**：HF 模型卡给出 yue2 generate / yue2 batch 的用法，适合批量处理与脚本集成。\n- **社区与问题反馈**：截至 2026-09-12 仓库刚发布不久，Issue 与讨论仍在发酵；但从整体生态（MERT2/SheetSage2）与已有媒体/博主介绍来看，社区关注度较高，工具链与文档会持续跟进。\n---\n## Demo / 代码示例（极简上手）\n### 1) 创建：歌词 + 风格 → 整首歌（带 ABC 谱）\n```bash\n# 仓库方式\ngit clone https://github.com/multimodal-art-projection/YuE.git\ncd YuE\npython3.12 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --upgrade pip\npython -m pip install .\npython examples/generate.py --output outputs/first-song\n# 打开 outputs/first-song/audio.flac 聆听；该目录还包含 score.abc、tokens、latents 等中间产物\n```\n```python\n# Python API 方式（Hugging Face）\nimport json\nfrom pathlib import Path\nfrom huggingface_hub import hf_hub_download\nfrom yue2 import YuE2Pipeline\nrepo = \"m-a-p/YuE2-3B\"\nprompt_path = hf_hub_download(repo, \"examples/tonight-awake.json\")\ndemo = json.loads(Path(prompt_path).read_text(encoding=\"utf-8\"))\nstyle, lyrics = demo[\"style\"], demo[\"lyrics\"]\nwith YuE2Pipeline.from_pretrained(repo, device=\"cuda\") as pipe:\n    song = pipe(style=style, lyrics=lyrics, cot=\"full\", seed=demo[\"seed\"])\n    song.save(\"song.flac\")\n    song.save_artifacts(\"outputs/song\")  # 保存 ABC、tokens、latents、设置等\n```\n### 2) 翻唱：给定旋律 ABC + 新风格/歌词\n```python\nfrom pathlib import Path\nfrom yue2 import YuE2Pipeline\nwith YuE2Pipeline.from_pretrained(\"m-a-p/YuE2-3B\", device=\"cuda\") as pipe:\n    cover = pipe(\n        style=\"English, jazz-funk, warm lead vocal, Rhodes, bass and drums\",\n        lyrics=Path(\"cover-lyrics.txt\").read_text(encoding=\"utf-8\"),\n        abc=Path(\"cover-score/score.abc\").read_text(encoding=\"utf-8\"),\n        cot=\"melody\",\n        seed=42,\n    )\n    cover.save(\"cover.flac\")\n    cover.save_artifacts(\"outputs/cover\")\n```\n### 3) 编辑：先 plan→改 ABC→再渲染\n```python\nimport json\nfrom pathlib import Path\nfrom yue2 import YuE2Pipeline\nrequest = json.loads(Path(\"examples/song.json\").read_text(encoding=\"utf-8\"))\nwith YuE2Pipeline.from_pretrained(\"m-a-p/YuE2-3B\", device=\"cuda\") as pipe:\n    plan = pipe.plan(**request)\n    plan.save(\"outputs/plan\")\n# 把 outputs/plan/score.abc 复制出来，改完和弦或旋律后命名为 edited.abc，再生成新版本：\n# python examples/generate.py --request examples/song.json --abc-file edited.abc --cot full --output outputs/edited\n```\n---\n## 局限与不足\n- **硬件门槛不低**：24GB 显存 + 24GB 内存是官方建议；这意味着 12GB/16GB 显存的主流消费卡要么需要调降/裁剪，要么等社区量化方案。想做云服务则需考虑 GPU 成本与并发策略（官方 vLLM 方案主要面向 H800 这类数据中心卡）。\n- **商用授权限制**：代码 Apache-2.0 非常宽松，但模型权重为 CC BY-NC 4.0（非商用），若要直接商用需联系作者或等待后续商用许可方案。这会限制一些公司直接将其用于生产环境的速度。\n- **生态仍在早期**：虽然文档和 Demo 都不错，但目前 Docker 一键部署、低显存量化方案、与主流 AI Agent 平台的一键集成包等周边，可能需要社区逐步补齐。\n- **长曲一致性**：尽管 YuE 论文与 YuE2 benchmark 表明长曲结构与歌词对齐已明显提升，但在极端长曲目或复杂结构（如多次调性切换）上，仍可能出现结构松散或语义错位的情况，需通过人机交互（改 ABC/分多段生成）来缓解。\n---\n## 商业模式与性价比\n- **成本结构**：自建 GPU 算力是硬成本；以 24GB 显存卡为例，单卡在 4090 上可快速出单曲，适合个人/小团队；若做公开服务，需考虑 vLLM 并发方案与集群调度。\n- **与闭源 SaaS 的对比**：Suno 等采用订阅制，好处是免运维，但数据出域、不可编辑谱子、无法自托管；YuE2 前期投入较高（GPU + 工程），但长期可控且可按需自定义，灵活度更高。若你的业务不满足“单点 SaaS”而需要“深度集成”，YuE2 的长期 ROI 更好。\n- **许可策略**：对于研究、个人创作、内部 prototyping，CC BY-NC 4.0 友好；商业用途则需联系团队（邮箱见仓库 README）。\n---\n## 数据隐私与开源协议\n- 代码 Apache-2.0：可商用、可修改、需保留版权与许可声明。\n- 模型权重 CC BY-NC 4.0：非商用、需署名；第三方组件保留各自协议。\n- 隐私：本地部署意味着歌词与生成物不离开你的环境，对版权敏感或保密需求场景友好；若依赖外部 Agent/转录服务（例如用 Qwen3-ASR/其他 API 做歌词提取），需额外评估隐私与合规。\n---\n## 结语与行动建议\n### 终极评判\nYuE2 是开源音乐生成的一个里程碑：它把“可编辑乐谱”“高质量整曲生成”“本地部署”“Agent 化编辑”整合到了一条完整、可复现的 pipeline 中。基准与 Demo 证明它有实力与 Suno 级闭源产品正面竞争，尤其是对那些重视可控性与数据安全的人来说，这是目前最值得投入研究和工程化的开源选择。\n### 行动建议（按角色）\n- **创作者/音乐人**：先去官方 Demo 页面试听，确认风格/人声质量是否匹配你的审美；若要落地，准备一张 24GB 显存的 GPU（或云实例），从“创建→编辑→翻唱”三个范例逐步走一遍，将 ABC 编辑纳入你的创作流。\n- **研究人员**：用 WildSongBench 复现对比，探索符号层与音频层的联合训练/微调，尝试在 Agent 环境中调用 yue2-music skill 做“人机协作编曲”研究。\n- **工程/产品团队**：在非商用场景先做 POC，用官方 wheel 与 vLLM 方案搭一套小规模服务，评估用户留存与使用路径；若要商用，提前联系版权授权方，并为可能的量化/低显存方案预留工程时间。\n- **小白/极客入门**：用 Colab Pro 或按小时 GPU 云端租用 24GB 卡，照搬 README 与 HF 模型卡的最小示例，跑通第一首歌；再尝试改歌词/改风格/改 ABC，直观感受“符号化可控生成”的威力。\n---\n## 深度延伸（给想继续钻研的人）\n- 若对“理解—规划—生成”统一范式感兴趣，建议顺藤摸瓜研究 MERT2（理解）、SheetSage2（转录到谱）与 YuE2（谱到歌）三者如何串联成一条自动化音乐生产线。\n- 若想在 WildSongBench 上做对比研究，务必注意不同系统的候选采样与 ASR 通道策略差异，确保对比的公平性与复现性。\n- 对于 Agent 集成，SKILL.md 与 yue2-music 技能包提供了“技能标准化”的范本，可以参考将其他大模型能力包装成可复用的 Agent 技能。\n---\n📌 核心一句话：想在本地把“歌词+风格”变成“可编辑谱子+完整歌曲”，还希望和 Agent 深度协作——YuE2 是当前开源生态里最接近“工业级可用”的答案。",
+  "type": "project",
+  "dateAdded": "20260912"
+}
