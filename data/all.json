@@ -1,6 +1,383 @@
 {
   "all": [
     {
+      "id": "7e9c4319-c0bc-46e6-afe8-943a09f5f5e4",
+      "url": "https://github.com/Swordfish90/cool-retro-term",
+      "domain": "github.com",
+      "repo": "Swordfish90/cool-retro-term",
+      "description": "cool-retro-term 是一款基于 Qt/QML 的复古终端模拟器，提供高度可调的 CRT 特效与多风格主题，适合 Linux 与 macOS 用户。它主打视觉呈现与怀旧氛围，适合展示、直播与桌面美化，但性能与功能深度不如现代 GPU 终端，适合作为第二终端使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:27:21.009Z",
+      "metaData": {
+        "forks": "1014",
+        "stars": "26126",
+        "topics": [
+          "linux",
+          "macos",
+          "qml",
+          "qt",
+          "retro",
+          "terminal"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "A good looking terminal emulator which mimics the old cathode display... - Swordfish90/cool-retro-term"
+      },
+      "summaryData": {
+        "tags": [
+          "终端模拟器",
+          "CRT",
+          "复古",
+          "开源",
+          "Linux"
+        ],
+        "cover": "",
+        "title": "cool-retro-term：怀旧 CRT 终端模拟器深度评测",
+        "ability": [
+          "CRT 视觉效果调节",
+          "多风格内置主题切换",
+          "跨平台支持（Linux/macOS）",
+          "配置导入导出与分享",
+          "基于 Qt/QML 的可定制架构"
+        ],
+        "summary": "一款主打复古 CRT 视觉特效的终端模拟器，适合追求怀旧氛围与视觉展示的用户。",
+        "category": [
+          "开发工具",
+          "桌面美化"
+        ],
+        "suitable": [
+          "终端复古爱好者与桌面美化玩家",
+          "内容创作者/主播",
+          "演讲者/讲师",
+          "对计算历史好奇的新手",
+          "追求视觉差异化的轻度终端用户"
+        ],
+        "description": "cool-retro-term 是一款基于 Qt/QML 的复古终端模拟器，提供高度可调的 CRT 特效与多风格主题，适合 Linux 与 macOS 用户。它主打视觉呈现与怀旧氛围，适合展示、直播与桌面美化，但性能与功能深度不如现代 GPU 终端，适合作为第二终端使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
+      "id": "ad9b2719-2bf0-4b58-9978-39a2f3bdd3e6",
+      "url": "https://github.com/jiji262/douyin-downloader",
+      "domain": "github.com",
+      "repo": "jiji262/douyin-downloader",
+      "description": "这是一款基于 Python 的抖音下载工具，支持批量抓取主页、点赞、合集等内容。具备去水印、增量同步、去重、直播录制及评论/元数据采集功能。提供 CLI 和 Docker 部署方式，适合需要长期归档或进行数据分析的用户，但有一定配置门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:23:53.079Z",
+      "metaData": {
+        "forks": "1734",
+        "stars": "11188",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。 - jiji262/douyin-downloader"
+      },
+      "summaryData": {
+        "tags": [
+          "抖音下载",
+          "开源项目",
+          "批量下载",
+          "数据采集",
+          "Python"
+        ],
+        "cover": "",
+        "title": "jiji262/douyin-downloader 项目深度评测",
+        "ability": [
+          "批量下载",
+          "去水印",
+          "增量同步",
+          "直播录制",
+          "数据采集"
+        ],
+        "summary": "一款支持批量、去水印、增量同步及数据采集的抖音视频本地化下载与管理工具。",
+        "category": [
+          "开发工具",
+          "生活效率"
+        ],
+        "suitable": [
+          "内容创作者",
+          "数据分析师",
+          "个人归档党",
+          "自动化开发者"
+        ],
+        "description": "这是一款基于 Python 的抖音下载工具，支持批量抓取主页、点赞、合集等内容。具备去水印、增量同步、去重、直播录制及评论/元数据采集功能。提供 CLI 和 Docker 部署方式，适合需要长期归档或进行数据分析的用户，但有一定配置门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
+      "id": "98a4259e-ba0e-4d68-bddd-3ccfbd2dfc1e",
+      "url": "https://github.com/tonhowtf/omniget",
+      "domain": "github.com",
+      "repo": "tonhowtf/omniget",
+      "description": "OmniGet 是一款基于 Tauri 开发的开源桌面应用，整合 yt-dlp 等引擎，支持 1800+ 站点及 Udemy 等课程下载。它集成了本地播放器、阅读器和间隔重复笔记系统，并提供转码、OCR 等 108 款工具，全方位满足下载与学习需求。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:19:35.938Z",
+      "metaData": {
+        "forks": "983",
+        "stars": "11081",
+        "topics": [
+          "bilibili-downloader",
+          "course-downloader",
+          "download-manager",
+          "downloader",
+          "epub-reader",
+          "hotmart-downloader",
+          "instagram-downloader",
+          "media-downloader",
+          "reddit-downloader",
+          "spaced-repetition",
+          "subtitle-downloader",
+          "telegram-downloader",
+          "tiktok-downloader",
+          "twitch-downloader",
+          "twitter-downloader",
+          "udemy-downloader",
+          "video-downloader",
+          "youtube-downloader",
+          "yt-dlp",
+          "yt-dlp-gui"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://tonho.wtf",
+        "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer. - tonhowtf/omniget"
+      },
+      "summaryData": {
+        "tags": [
+          "视频下载",
+          "课程备份",
+          "隐私安全",
+          "全网通吃",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "OmniGet 深度评测：全能型开源下载与学习工作台",
+        "ability": [
+          "多平台资源下载",
+          "本地学习与笔记管理",
+          "内置 108 款实用工具",
+          "浏览器扩展一键抓取",
+          "BT 与批量任务处理"
+        ],
+        "summary": "集全网下载、课程备份、本地学习与媒体处理于一体的开源桌面神器。",
+        "category": [
+          "下载工具",
+          "学习效率",
+          "开源项目"
+        ],
+        "suitable": [
+          "内容创作者",
+          "在线课程学习者",
+          "社交媒体重度用户",
+          "追求本地隐私的用户",
+          "需要批量处理文件的开发者"
+        ],
+        "description": "OmniGet 是一款基于 Tauri 开发的开源桌面应用，整合 yt-dlp 等引擎，支持 1800+ 站点及 Udemy 等课程下载。它集成了本地播放器、阅读器和间隔重复笔记系统，并提供转码、OCR 等 108 款工具，全方位满足下载与学习需求。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
+      "id": "f2da6644-a3b7-4e3f-8f32-ac31db6b9450",
+      "url": "https://github.com/alibaba/open-code-review",
+      "domain": "github.com",
+      "repo": "alibaba/open-code-review",
+      "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:14:15.637Z",
+      "metaData": {
+        "forks": "1693",
+        "stars": "22848",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
+      "id": "51352d78-a942-4aca-b09a-713a25e8dd84",
+      "url": "https://github.com/tech-leads-club/agent-skills",
+      "domain": "github.com",
+      "repo": "tech-leads-club/agent-skills",
+      "description": "这是一个为 AI 编程代理设计的“技能应用商店”。它提供 CLI 工具和 MCP 服务，让开发者能安全地安装、管理和更新适用于 Cursor、Claude 等工具的技能包，具备严格的安全审查和团队协作能力，极大提升 AI 编程的规范性和安全性。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:09:15.331Z",
+      "metaData": {
+        "forks": "486",
+        "stars": "5377",
+        "topics": [
+          "agent",
+          "ai",
+          "antigravity",
+          "claude-code",
+          "copilot",
+          "cursor",
+          "skills"
+        ],
+        "license": "License",
+        "homepage": "https://agent-skills.techleads.club",
+        "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence. - tech-leads-club/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Agent",
+          "MCP",
+          "CLI",
+          "Skill-Management"
+        ],
+        "cover": "",
+        "title": "Agent Skills：安全可复用的 AI 编程技能库",
+        "ability": [
+          "统一技能管理与安装",
+          "安全审核与供应链防护",
+          "MCP 服务器集成",
+          "跨平台 IDE 支持",
+          "技能版本控制与审计"
+        ],
+        "summary": "一套带安全审核机制的 AI 编程技能统一管理与安装工具，让 Claude、Cursor 等助手拥有专业、可控的扩展能力。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "工程团队与 Tech Lead",
+          "开源贡献者",
+          "安全合规人员"
+        ],
+        "description": "这是一个为 AI 编程代理设计的“技能应用商店”。它提供 CLI 工具和 MCP 服务，让开发者能安全地安装、管理和更新适用于 Cursor、Claude 等工具的技能包，具备严格的安全审查和团队协作能力，极大提升 AI 编程的规范性和安全性。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
+      "id": "e77884f4-c94e-482d-bb70-dc6ef1e14c25",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "domain": "github.com",
+      "repo": "ever-co/ever-gauzy",
+      "description": "Ever Gauzy是一个功能全面的企业经营管理平台，覆盖人事、项目、销售、财务等核心场景，支持自托管与API集成。它特别适合希望减少多系统割裂、降低SaaS成本，且有能力进行Docker/K8s部署的团队。虽然学习曲线较陡，但提供了统一数据源与灵活扩展能力。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-13T11:03:47.559Z",
+      "metaData": {
+        "forks": "895",
+        "stars": "4503",
+        "topics": [
+          "accounting",
+          "billing",
+          "bookkeeping",
+          "crm",
+          "crm-platform",
+          "erp",
+          "expenses",
+          "hr",
+          "human-resources",
+          "invoices",
+          "invoicing",
+          "issue-tracker",
+          "payroll",
+          "productivity",
+          "project-management",
+          "salary",
+          "team-management",
+          "time-tracker",
+          "time-tracking",
+          "timetracking"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://gauzy.co",
+        "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co - ever-co/ever-gauzy"
+      },
+      "summaryData": {
+        "tags": [
+          "ERP",
+          "CRM",
+          "开源",
+          "自托管",
+          "工时管理"
+        ],
+        "cover": "",
+        "title": "Ever® Gauzy™ 深度评测",
+        "ability": [
+          "ERP/CRM/HRM/ATS/PM一体化管理",
+          "原生工时追踪与桌面计时器",
+          "Headless API与多形态部署",
+          "支持多种数据库与Docker/K8s",
+          "多组织多币种多语言支持"
+        ],
+        "summary": "一套开源的、全功能企业经营管理平台，支持Docker/K8s一键部署与多端集成，适合希望自托管、低成本统一管理“人—项目—钱—流程”的团队与企业。",
+        "category": [
+          "企业管理",
+          "开源工具",
+          "开发框架"
+        ],
+        "suitable": [
+          "需要统一管理企业核心流程的10-200人团队",
+          "在意数据主权与成本的中型企业",
+          "外包与远程工时审计需求团队",
+          "具备一定运维/开发能力的团队",
+          "需要多端集成或自建SaaS的团队"
+        ],
+        "description": "Ever Gauzy是一个功能全面的企业经营管理平台，覆盖人事、项目、销售、财务等核心场景，支持自托管与API集成。它特别适合希望减少多系统割裂、降低SaaS成本，且有能力进行Docker/K8s部署的团队。虽然学习曲线较陡，但提供了统一数据源与灵活扩展能力。"
+      },
+      "type": "project",
+      "dateAdded": "20260913"
+    },
+    {
       "id": "0a4d8d95-1197-4860-8b28-1afde8f6828a",
       "url": "https://github.com/vxcontrol/pentagi",
       "domain": "github.com",
@@ -11,8 +388,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:38:49.394Z",
       "metaData": {
-        "forks": "3076",
-        "stars": "23620",
+        "forks": "3078",
+        "stars": "23657",
         "topics": [
           "ai-agents",
           "ai-security-tool",
@@ -83,7 +460,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "258",
-        "stars": "7376",
+        "stars": "7391",
         "topics": [
           "agents",
           "claude-code",
@@ -140,8 +517,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:26:15.148Z",
       "metaData": {
-        "forks": "839",
-        "stars": "7459",
+        "forks": "844",
+        "stars": "7495",
         "topics": [
           "ai",
           "audio-generation",
@@ -204,8 +581,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:22:11.914Z",
       "metaData": {
-        "forks": "566",
-        "stars": "3787",
+        "forks": "567",
+        "stars": "3828",
         "topics": [
           "claude-ai",
           "claude-pt",
@@ -265,7 +642,7 @@
       "createdAt": "2026-09-12T13:18:08.798Z",
       "metaData": {
         "forks": "2019",
-        "stars": "33276",
+        "stars": "33299",
         "topics": [
           "android",
           "android-tv",
@@ -326,7 +703,7 @@
       "createdAt": "2026-09-12T13:14:25.733Z",
       "metaData": {
         "forks": "2543",
-        "stars": "33232",
+        "stars": "33233",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -378,8 +755,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:10:42.513Z",
       "metaData": {
-        "forks": "10770",
-        "stars": "65652",
+        "forks": "10774",
+        "stars": "65695",
         "topics": [
           "ai",
           "ai-agents",
@@ -422,7 +799,7 @@
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
         "forks": "3261",
-        "stars": "22742",
+        "stars": "22749",
         "topics": [
           "agent",
           "agentic",
@@ -554,8 +931,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:41:11.206Z",
       "metaData": {
-        "forks": "105",
-        "stars": "1483",
+        "forks": "130",
+        "stars": "1754",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://openresearch.sh/",
@@ -667,7 +1044,7 @@
       "createdAt": "2026-09-11T11:30:08.849Z",
       "metaData": {
         "forks": "107",
-        "stars": "1455",
+        "stars": "1461",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "",
@@ -718,7 +1095,7 @@
       "createdAt": "2026-09-11T11:22:40.738Z",
       "metaData": {
         "forks": "405",
-        "stars": "5227",
+        "stars": "5250",
         "topics": [
           "agent",
           "llm",
@@ -774,8 +1151,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:17:53.126Z",
       "metaData": {
-        "forks": "1954",
-        "stars": "15993",
+        "forks": "1955",
+        "stars": "15997",
         "topics": [],
         "license": "GPL-3.0 license",
         "homepage": "https://sonarr.tv",
@@ -827,8 +1204,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "567",
-        "stars": "1956",
+        "forks": "569",
+        "stars": "1987",
         "topics": [
           "ai",
           "ai-agents",
@@ -902,7 +1279,7 @@
       "createdAt": "2026-09-11T11:06:11.064Z",
       "metaData": {
         "forks": "218",
-        "stars": "3180",
+        "stars": "3184",
         "topics": [
           "idevice",
           "ios",
@@ -960,7 +1337,7 @@
       "createdAt": "2026-09-10T12:57:50.966Z",
       "metaData": {
         "forks": "264",
-        "stars": "2986",
+        "stars": "2988",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1168,7 +1545,7 @@
       "createdAt": "2026-09-10T12:20:32.854Z",
       "metaData": {
         "forks": "550",
-        "stars": "4960",
+        "stars": "4967",
         "topics": [
           "3d",
           "armorpaint",
@@ -1227,7 +1604,7 @@
       "createdAt": "2026-09-10T12:12:02.694Z",
       "metaData": {
         "forks": "2298",
-        "stars": "36339",
+        "stars": "36345",
         "topics": [
           "gguf",
           "llm",
@@ -1286,8 +1663,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:04:33.159Z",
       "metaData": {
-        "forks": "317",
-        "stars": "2612",
+        "forks": "318",
+        "stars": "2621",
         "topics": [
           "agi",
           "ai",
@@ -1485,8 +1862,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "655",
-        "stars": "8858",
+        "forks": "659",
+        "stars": "8885",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -1605,8 +1982,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "1602",
-        "stars": "15490",
+        "forks": "1603",
+        "stars": "15492",
         "topics": [
           "agents",
           "ai-agents",
@@ -1949,8 +2326,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "864",
-        "stars": "6565",
+        "forks": "867",
+        "stars": "6567",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -2608,7 +2985,7 @@
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
         "forks": "1616",
-        "stars": "22466",
+        "stars": "22476",
         "topics": [
           "antigravity",
           "claude",
@@ -2681,8 +3058,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13487",
-        "stars": "183372",
+        "forks": "13490",
+        "stars": "183382",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -2743,7 +3120,7 @@
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
         "forks": "4496",
-        "stars": "49281",
+        "stars": "49290",
         "topics": [
           "ai",
           "animation",
@@ -2999,8 +3376,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7574",
-        "stars": "49880",
+        "forks": "7575",
+        "stars": "49885",
         "topics": [
           "claude",
           "codex",
@@ -3329,7 +3706,7 @@
       "createdAt": "2026-09-05T12:04:05.339Z",
       "metaData": {
         "forks": "117",
-        "stars": "3939",
+        "stars": "3941",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -3380,7 +3757,7 @@
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
         "forks": "668",
-        "stars": "18613",
+        "stars": "18618",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -3696,8 +4073,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2475",
-        "stars": "38989",
+        "forks": "2476",
+        "stars": "39002",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -4152,8 +4529,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25585",
-        "stars": "285939",
+        "forks": "25588",
+        "stars": "285952",
         "topics": [
           "ai",
           "brainstorming",
@@ -4573,7 +4950,7 @@
       "createdAt": "2026-09-02T12:54:50.817Z",
       "metaData": {
         "forks": "1428",
-        "stars": "12782",
+        "stars": "12786",
         "topics": [
           "agent-memory",
           "ai",
@@ -4759,8 +5136,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3867",
-        "stars": "47452",
+        "forks": "3869",
+        "stars": "47463",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -5314,7 +5691,7 @@
       "createdAt": "2026-09-01T12:17:39.184Z",
       "metaData": {
         "forks": "169",
-        "stars": "2293",
+        "stars": "2294",
         "topics": [
           "anthropic-compatible",
           "apple-silicon",
@@ -5851,8 +6228,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3107",
-        "stars": "25126",
+        "forks": "3120",
+        "stars": "25284",
         "topics": [
           "ai",
           "audiobook",
@@ -6807,8 +7184,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1488",
-        "stars": "11778",
+        "forks": "1489",
+        "stars": "11783",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6860,8 +7237,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5752",
-        "stars": "36299",
+        "forks": "5755",
+        "stars": "36305",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -6913,8 +7290,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4525",
-        "stars": "40663",
+        "forks": "4528",
+        "stars": "40669",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -7587,7 +7964,7 @@
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
         "forks": "3641",
-        "stars": "51783",
+        "stars": "51789",
         "topics": [
           "browser",
           "chrome",
@@ -7862,8 +8239,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "6164",
-        "stars": "30702",
+        "forks": "6191",
+        "stars": "30871",
         "topics": [
           "3d-globe",
           "cesium",
@@ -8417,8 +8794,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:14:25.762Z",
       "metaData": {
-        "forks": "6975",
-        "stars": "55866",
+        "forks": "7316",
+        "stars": "58040",
         "topics": [
           "agent",
           "agentic-ai",
@@ -8923,8 +9300,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "3926",
-        "stars": "60071",
+        "forks": "3930",
+        "stars": "60101",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -9121,8 +9498,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7345",
-        "stars": "136865",
+        "forks": "7347",
+        "stars": "136887",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -9238,7 +9615,7 @@
       "createdAt": "2026-08-25T20:05:56.470Z",
       "metaData": {
         "forks": "20249",
-        "stars": "137780",
+        "stars": "137799",
         "topics": [
           "agents",
           "llms",
@@ -10146,7 +10523,7 @@
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
         "forks": "52907",
-        "stars": "479555",
+        "stars": "479572",
         "topics": [
           "api",
           "apis",
@@ -10457,8 +10834,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "289",
-        "stars": "3890",
+        "forks": "290",
+        "stars": "3893",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -10563,8 +10940,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2505",
-        "stars": "43716",
+        "forks": "2508",
+        "stars": "43742",
         "topics": [
           "adhd",
           "claude-",
@@ -10957,7 +11334,7 @@
       "createdAt": "2026-08-23T16:39:23.365Z",
       "metaData": {
         "forks": "526",
-        "stars": "8419",
+        "stars": "8421",
         "topics": [
           "effect",
           "framework",
@@ -11475,7 +11852,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3169",
-        "stars": "29718",
+        "stars": "29719",
         "topics": [
           "ai",
           "language",
@@ -11596,7 +11973,7 @@
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
         "forks": "497",
-        "stars": "5310",
+        "stars": "5311",
         "topics": [
           "agent-runtime",
           "ai",
@@ -11782,8 +12159,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "22001",
-        "stars": "260757",
+        "forks": "22005",
+        "stars": "260781",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -11833,8 +12210,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2829",
-        "stars": "36897",
+        "forks": "2830",
+        "stars": "36905",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -12086,8 +12463,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38501",
-        "stars": "257323",
+        "forks": "38502",
+        "stars": "257342",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -12148,7 +12525,7 @@
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
         "forks": "3053",
-        "stars": "31568",
+        "stars": "31574",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -12211,7 +12588,7 @@
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
         "forks": "671",
-        "stars": "20857",
+        "stars": "20861",
         "topics": [
           "dpi",
           "gpui",
@@ -12360,8 +12737,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "662",
-        "stars": "7568",
+        "forks": "663",
+        "stars": "7569",
         "topics": [],
         "license": "",
         "homepage": "",

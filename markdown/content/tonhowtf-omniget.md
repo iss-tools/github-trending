@@ -1,0 +1,164 @@
+# tonhowtf/omniget
+
+[GitHub URL](https://github.com/tonhowtf/omniget)
+
+
+## OmniGet 深度评测：全能型开源下载与学习工作台
+
+> 集全网下载、课程备份、本地学习与媒体处理于一体的开源桌面神器。
+
+- **Tags**: 视频下载, 课程备份, 隐私安全, 全网通吃, 本地化
+- **Category**: 下载工具, 学习效率, 开源项目
+
+## Details
+
+# OmniGet（tonhowtf/omniget）深度评测与上手指南
+## 一句话总结
+OmniGet 是一套“能干很多事情”的开源桌面应用：把 yt-dlp、FFmpeg、whisper.cpp、aria2、gallery-dl 等一线引擎封装到一个统一 GUI 里，既能下载 1800+ 站点与多平台课程，又能本地播放、阅读、转录、做笔记与批处理；配合浏览器扩展与全局快捷键，真正实现“复制即下载”，大幅降低命令行门槛。
+---
+## 背景与痛点：它为什么要存在？
+- 散落一地的下载工具：为了 Instagram 故事、X 视频、Pinterest 画板、课程、音乐、字幕和种子，往往要装一堆专用工具/脚本/扩展，且彼此互不相通，账号登录状态也不共享。
+- 命令行门槛高：yt-dlp 功能强大，但需要 Python、FFmpeg 环境与一长串参数；对于想“下好就行”的普通用户，这是一个明显门槛。OmniGet 把复杂命令收敛为“粘贴链接→选画质→点下载”。
+- 课程与资料的脆弱性：Udemy/Hotmart 等平台的课程一旦下架或账号受限，已购内容也可能“说没就没”；创作者或学习者希望把已购内容稳定地“落盘”与本地管理。OmniGet 的 Courses 插件与 Study 库正是为此而来。
+- 后续处理缺失：下了视频/音频后，还要单独做转码、剪辑、字幕编辑、转录与笔记整理，流程割裂。OmniGet 内置了“Tools（108 个工具）”与 Study（播放器+阅读器+笔记+间隔重复），在一处完成闭环。
+---
+## 核心亮点与功能剖析
+### 1) 技术栈与架构（为什么它既轻又快）
+- 前端与跨平台框架：Tauri 2 + SvelteKit（Svelte 5），构建出本地、小体积、安全性高的桌面应用；界面响应快，并支持深色与多主题切换。
+- 后端与内核：
+  - Rust 负责核心逻辑、插件系统与大量“Tools”（JSON-in/JSON-out 的隔离命令）。
+  - yt-dlp 作为通用解析引擎（覆盖约 1800+ 站点），OmniGet 在首次启动时自动下载与更新并做 SHA-256 校验，避免被篡改。
+  - FFmpeg 负责封装/转码/合成等音视频处理；aria2 负责多线程加速与断点续传；gallery-dl 负责图集站抓取；whisper.cpp 提供离线语音转录。所有依赖自动维护，用户无需操心。
+  - librqbit 作为内建 BT 客户端，直接处理磁力与种子，无需第三方下载器。
+- 数据存储与本地优先：使用 SQLite 存储元数据与设置；下载文件全在本机，无账号与云同步。只有更新与插件会从 GitHub 拉取、使用 AI 工具时才会与你配置的 AI 提供商通信，且 API Key 仅存本地。
+- 扩展与插件架构：
+  - 浏览器扩展（Chrome/Edge/Brave、Firefox）可将页面与 Cookie 一键发送给桌面端，实现“登录什么，就能下载什么”，扩展与桌面端通过本地端口与 Pairing Token 配对，数据不出本机。
+  - 插件为独立的 Rust 动态库（Courses、Study、Telegram、Convert），首装后自动更新，可在 Marketplace 页面查看与管理。插件声明权限，可见其可访问的能力（事件、通知、下载队列等）。
+  - 提供 omniget-cli（打包在 Release 中），适合脚本化与自动化场景。
+### 2) 下载能力与站点覆盖
+- 通用能力：依托 yt-dlp，覆盖约 1800+ 站点；同时内置对“高频平台”的原生提取器，体验更统一、可配置更细粒度。
+- 课程（Courses 插件）：支持 Udemy、Hotmart、Kiwify、Rocketseat、Meta-Analysis Academy 等登录获取课程大纲并批量下载课时与附件（会标注 DRM 并跳过）。
+- 视频/音频：YouTube（含 SponsorBlock、章节、直播），Instagram、TikTok、X/Twitter、Reddit、Twitch、Vimeo、Bluesky、Threads、Pinterest、抖音、B 站（登录后可拉 4K/HDR/杜比视界/Hi-Res/杜比全景声；支持导出弹幕 XML/ASS/JSON 与 NFO 元数据，适用于 Kodi/Jellyfin 等媒库）。
+- 图集与 bulk：通过 gallery-dl 支持 250+ 图站（DeviantArt、Pixiv、ArtStation、Flickr、Tumblr、Imgur、Kemono 等）；支持批量链接、.txt 清单、整子版块/整频道/整个人主页抓取。
+- BT 与直链：内置 BitTorrent（种子/磁力），支持 HTTP 直链、HLS/DASH 清单；还支持两台 OmniGet 间通过“短单词代码”的点对点传输，适合局域网快速互传。
+- Telegram（Telegram 插件）：扫码/手机号登录，浏览你所属的频道/群组，按类型过滤、搜索并批量下载；视频可直接导入 Study 库。
+### 3) 队列、规则与全局快捷键
+- 队列管理：支持断点续传、退避重试（遇 429 等限流自动降并发）、每个站点可定制并发策略（如 YouTube 最多 16 片段）。
+- 规则与关注：可为指定域名/频道设定默认质量与目标目录；Followed channels 可在后台轮询并自动下载新更新并弹出托盘通知。
+- 全局快捷键：
+  - Ctrl+Shift+D（Mac 为 Cmd+Shift+D）：读取剪贴板链接并立即开始下载（无需打开窗口）。
+  - Ctrl+Shift+M：仅抓取音频（如把 YouTube 链接一键转 MP3）。
+  - 可在设置里重新绑定，关闭即可禁用，避免误触。
+### 4) 浏览器扩展的“透明代理”能力
+扩展有两层工作方式：
+- 对已知站点（YouTube/Instagram/TikTok/X/Reddit/Twitch/Pinterest/Bluesky/Telegram/Vimeo/Udemy/Hotmart/Rocketseat/Bilibili/SoundCloud）：一键把页面、标题和 Cookie 发给 OmniGet，私域内容（如仅会员可见、课程、Instagram Story、好友圈等）只要你自己登录可见，OmniGet 就能下载。
+- 对未知页面：扩展监听网络流量，识别 MP4/HLS/DASH/WebM/音频流并在弹窗中列出，配合 Referer 与 Cookie，帮助捕获“不能右键保存”的视频流。
+### 5) Tools（108 工具）与自动化
+- YouTube 工具集（11）：下载、元数据、封面多分辨率、字幕（含双语合并）、评论/章节/直播聊天导出（CSV/JSON）、字幕工作坊（编辑/翻译/重新时间轴）、SponsorBlock、Return YouTube Dislike（显示点赞/踩）、“真缩略图”（25%/50%/75% 帧画面）、强制 H.264（适合老电脑）。
+- 语音与字幕（8）：whisper.cpp 离线转录、Edge TTS（带同步字幕）、AI 翻译字幕、基于字幕的配音（dub）、语音克隆/设计/人声隔离（依赖本机 VoiceStudio）、语音听写（全局快捷）。
+- 视频编辑（6）：切片段（结果进下载队列）、Convert 插件转码（容器/编码/分辨率/压缩）、自动字幕/语音调用、屏幕录制（含重播缓存）、时间轴编辑器（Planned）。
+- Instagram（24）：帖子/合集/Reel/IGTV 下载、Reel 提取音频、Story/Highlight 下载（含“仅好友”）、快拍查看列表（不被标记已读）、谁看了我的故事、主页高清头像、整个人主页备份、互粉/取粉/僵尸粉检测、数据导出（读取官方 ZIP）、账号分析、话题探索、评论导出、点赞列表、抽奖工具、发帖/定时（Beta）。
+- X/Twitter（10）：帖子媒体下载、长串展开为单页（导出 Markdown/HTML/文本）、帖子转图片卡片、Profile X-ray 分析、主页媒体导出、高级搜索、书签导出、互粉审计、X 数据包离线解析、Grok 对话（使用 xAI API 或会话）。
+- Pinterest（10）：单 Pin/整版/整个人备份、搜图去 AI/去广告、相似 Pin、找源头（含 Wayback/反向搜）、板内去重、取色板、离线画廊/PDF/CSV、关键词建议。
+- Spotify（2）：Spicetify 主题与扩展的安装管理（Beta）。
+- PDF（6）：合并/拆分/压缩/转换/OCR/安全化 PDF（剥离脚本与表单）。
+- 文档（5）：SlideShare 转 PDF、Google Docs/Slides/Sheets 公共导出、Calameo 页保存、图集批量（gallery-dl）、Scribd（Planned）。
+- 图片（3）：Real-ESRGAN 超分（Beta）、批量重设尺寸、OCR。工具还提供了重复文件查找、批量重命名、文件极速检索、防休眠等实用功能。
+- 系统（9，含仅 Windows）：缓存清理、磁盘分析、启动管理、卸载清理、隐私盾、加固（来自 hardentools）、去预装、注册表清理、批量软件更新（winget/Chocolatey/Scoop）。
+- 自动化（1）：自动点击器（全局快捷、限速、随机区间）。
+- AI（6）：跨供应商比价、本机 AI 支出台账（本地账本）、本地模型管理（Ollama）、文本“人味化”改写、API Key 本地保管与导出、MCP 服务器（将工具通过 Model Context Protocol 暴露给 Claude Code/Claude Desktop/Cursor/VS Code/Goose/Codex 等）。
+### 6) Study：本地学习闭环
+- 播放与阅读：指向你的课程文件夹（不复制/移动），播放器支持精确到秒的断点续播，时间戳笔记（按 N 键），可跳转回放；阅读器支持 PDF/EPUB/DJVU/MOBI/AZW3/FB2/CBZ/ CBR/TXT/RTF/HTML，高亮、书签、专注模式、纸感主题。封面/标题/作者从文件自动读取。
+- 笔记与间隔重复：Markdown + LaTeX 编辑器，双向链接、每日日志、标签、知识图谱、导出；任何笔记可转为抽认卡，支持 Anki 导入（.apkg/.txt/CSV）、过滤牌组、统计与回顾日志。番茄钟/深度工作计时器，结束时自动暂停播放；本机 XP 与年度热力图（无排行）。
+- 音乐：本地库（封面/艺术家/专辑），同步歌词、收藏/历史/歌单/流派，并可浏览 Spotify/SoundCloud/YouTube Music，把流媒体歌单与本地文件放到一起管理。
+### 7) 隐私、安全与伦理
+- 本地优先：无账号、无云，下载内容与 Cookies/Key 全部存储在本地；仅在你使用 AI 工具时才向配置的 AI 提供商发起请求。OmniGet 自身不对“你下载了什么”做遥测。
+- 不破坏 DRM/不走付费墙：只下载你已有权访问的内容（登录会话可见）；DRM 课程会被识别并跳过；需使用者自行遵守版权与平台条款。完整条款可见“About → Terms and ethics”。
+- SHA-256 校验：每次运行前对 yt-dlp 与 FFmpeg 做完整性校验，防范被替换。
+---
+## 上手门槛与部署体验
+### 安装（多平台一步到位）
+- Windows：提供 .exe 安装包、便携版（portable.exe）、与 .msi（适合 IT 批量部署）；还支持 winget install -e --id tonhowtf.OmniGet。首次运行可能触发 SmartScreen 警告，点“更多信息→仍要运行”即可。
+- macOS：提供 Apple Silicon 与 Intel 两版 .dmg；拖入 /Applications 后首次打开可能被 Gatekeeper 拦截，提示“已损坏”，可在终端执行 xattr -cr /Applications/omniget.app 与 codesign --force --deep --sign - /Applications/omniget.app 一次搞定。
+- Linux：提供 .deb/.rpm/.AppImage（含 x86_64 与 aarch64）；注意新版 Debian/Ubuntu 不再自带 FUSE 2，AppImage 若报错 libfuse，可 sudo apt install libfuse2 或改用 .deb。AppImage 支持 .zsync 自更新，.deb 开箱即用。
+- 便携模式（Windows）：在 exe 同目录创建空文件 portable.txt，重开应用后所有设置/数据库/cookies/插件/缓存/内核等都会写入旁边的 data 目录，可装进 U 盘随身带走。
+### 首次运行（一分钟上手）
+1) 打开应用，选择语言与主题，点击“一键安装” yt-dlp 与 FFmpeg（SHA-256 自动校验）。  
+2) 复制任意链接（YouTube/Instagram/X/磁力/m3u8/直链），粘贴到主页框内，识别后预览标题/封面与可选画质，按回车开始下载。下载页实时显示速度/阶段/ETA，遇到限流会自动退避重试，中断可续传。  
+3) 若要完全跳过窗口：复制链接 → Ctrl+Shift+D 即可在后台启动下载；Ctrl+Shift+M 仅抓音频。
+### 浏览器扩展配对（以 Chrome 为例）
+在应用内进入 Settings → Plugins → Browser extension，点击“Update/Install”，Chrome 打开 chrome://extensions 并开启开发者模式，加载 OmniGet 打开的文件夹；随后在 OmniGet 里点击“Pair extension”，几秒钟后状态变绿即可使用。扩展与 App 通过本地端口与 Token 配对，Token 随机生成且不出本机。
+### 从源码构建（开发者视角）
+- 需要环境：Rust（版本锁定在 rust-toolchain.toml）、Node.js 18+、pnpm；Linux 需安装 libwebkit2gtk-4.1-dev 等依赖（README 给出完整 apt 列表）。
+- 命令：
+  ```bash
+  git clone https://github.com/tonhowtf/omniget.git
+  cd omniget
+  pnpm install
+  pnpm tauri dev        # 开发模式
+  pnpm tauri build      # 生产构建（本地构建需禁用 updater 签名）
+  ```
+  插件位于独立仓库，pnpm plugins:deploy 可将同级插件编译并部署到本地数据目录。
+### Demo / 命令示例
+- 图形界面最简流程：复制链接 → 粘贴到主页框 → 选画质 → 回车。
+- omniget-cli 示例（打包在 Release 中，下载后可直接用）：
+  ```bash
+  omniget info <URL>                     # 查看标题/格式/大小，不下载
+  omniget download <URL> -q 1080 -o ~/Videos
+  omniget download <URL> --audio-only --subs en,pt
+  omniget batch links.txt -m 3           # 批量：每行一个 URL，3 并发
+  omniget import-cookies cookies.txt     # Netscape 格式 Cookie 导入
+  ```
+---
+## 目标人群与收益
+- 谁最适合用？
+  - 需要批量下载与管理课程、视频、音乐、电子书的学习者与知识工作者。
+  - 内容创作者（自媒体/UP 主）：需要批量采集素材、转录音频、批量处理图片、做字幕与备份社媒内容。
+  - B 站/YouTube/Instagram/Pinterest/X 等平台重度用户，希望一键备份/批量下载与元数据整理。
+  - 想把 yt-dlp/FFmpeg/whisper.cpp 等命令行神器“包装”成日常可用的 GUI 的开发者/运维。
+- 能带来什么具体收益？
+  - 提效：全局快捷键与规则自动分流、批量抓取、续传与退避重试，明显减少重复操作。
+  - 降本：完全免费，开源（GPL-3.0），无账号/广告/订阅；替代多个付费下载工具与单站脚本。
+  - 本地掌控：文件全在本地，无云同步与平台绑定，符合隐私与合规敏感场景。
+  - 一站式：下载 + 播放 + 阅读 + 转录 + 笔记 + 间隔重复 + PDF/图片/音视频工具都在同一 UI 中，减少工具切换成本。
+---
+## 竞品/同类对比
+- 与 yt-dlp 对比：yt-dlp 是“命令行之王”，覆盖极广、可定制性极强；OmniGet 不是替代，而是“上层壳 + 插件生态 + 工具箱 + 学习管理”，适合不常使用终端的用户和需要后处理/学习闭环的人。
+- 与单站/单平台下载器对比：专用工具往往对某个平台支持更深，但 OmniGet 强调“多合一”，对课程、Instagram、X、Pinterest、B 站、Telegram 与种子等有整合体验，内置队列与后处理功能。
+- 与付费课程下载器对比：许多付费工具对“你本来就有权的内容”仍按月收费，且黑盒不清；OmniGet 采用 GPL-3.0，无付费档，明确声明不破解 DRM/不走付费墙，仅协助下载你已登录可见的内容，更透明可控。
+- 与通用下载管理器（IDM 等传统软件）对比：传统软件擅长 HTTP/FTP 多线程与分段，但缺乏现代流媒体与课程平台的登录态与解析；OmniGet 在这方面明显更全，且自带播放器与学习组件。
+---
+## 局限与不足
+- 平台与覆盖的动态依赖：OmniGet 的覆盖很大程度上依赖 yt-dlp、gallery-dl、aria2 等上游的及时更新；平台反爬或接口变动时可能出现暂时不可用。官方会通过自动更新机制应对，但无法保证“永远稳如磐石”。
+- 学习曲线仍然存在：尽管比命令行友好，但插件、Tools、浏览器扩展配对、规则与 AI 提供商配置等内容较多，新用户可能需要花一两周熟悉。部分工具标为 Beta/Planned，成熟度不一。
+- 首次启动的系统级警告：未使用付费代码签名证书，各平台首次打开会触发 SmartScreen/Gatekeeper 等警告，需要按指引一次性放行，对非技术用户有一定门槛与心理负担。
+- Linux 的 FUSE 2 问题：新版 Debian/Ubuntu 不再自带 FUSE 2，AppImage 用户若遇到 libfuse 错误需要额外安装依赖或改用 .deb/.rpm，带来一点额外步骤。
+- 隐私与合规边界仍需使用者自律：虽然明确声明不绕过 DRM/不破坏付费墙，但工具本身仍可被滥用，使用者需自行确保行为合法合规。
+- 部分系统工具仅限 Windows：如启动管理、隐私盾、加固、去预装、注册表清理、批量软件更新等明确标注为 Windows-only。
+- Issues 列表显示存在开放 bug/功能请求（如 Linux 特定崩溃、格式选择、UI 状态等），说明项目在快速演进中，偶发问题在所难免；整体来看版本更新频繁（v0.9.1 于 2026-09-05 发布），维护积极。
+---
+## 开发者体验（DX）与集成
+- API 设计：CLI 命令清晰，常见参数（-q/-o/--audio-only/--subs）直观，便于集成脚本或 CI；图形界面下几乎所有操作对应的 yt-dlp 命令可见，可编辑重试，利于“从 GUI 迁移到命令行”的进阶用户。
+- 脚手架与构建：pnpm tauri dev 即可启动开发环境；官方列出完整的 Linux 构建依赖与 rust-toolchain 锁定版本，减少“环境不对”的坑。
+- 插件开发：插件为独立 Rust 库，官方提供 Courses/Telegram/Convert/Study 示例；可通过 Marketplace 做权限与可见性管理，有意愿做二次开发/定制功能的人有清晰路径。
+- 集成成本与侵入性：主要在“端到端”的下载与学习链路上使用，基本不侵入现有开发流程，可当作辅助工具引入；对浏览器端而言，扩展配对一次性完成，后续透明工作。
+- 性能与体积：基于 Tauri 的桌面应用体积极小，Release 中各平台安装包仅数十 MB；得益于 Rust 后端与内核级工具，下载与转码性能在主流配置上表现良好。
+---
+## 社区活跃度与生命力
+- 版本与发布：截至目前，最新版本为 v0.9.1（2026-09-05），Release 页列出了从 v0.8.x 到 v0.9.1 多个版本，显示持续迭代。各平台构建产物齐全，并提供 omniget-cli 与扩展包。
+- Star 与 Fork：仓库主页显示约 9.7k Star、816 Fork，可见社区关注与参与程度较高。
+- Issues 与 Pull requests：Issues 页存在近期开放的 bug 与功能请求，Pull requests 数量相对较少，整体仍以维护者主迭代为主；问题响应需要视具体情况而定，但从频繁发版看，并未停滞。
+- 翻译与贡献：翻译托管在 Weblate，可在线翻译并同步到仓库；贡献指引清晰，支持 PR 与 Issue 提交，Discord 用于快速问答。
+---
+## 结语与行动建议
+- 综合评判：OmniGet 是目前少数把“多站点下载 + 课程备份 + 本地播放/阅读/笔记 + 108 工具 + MCP 能力”整合在一处的开源桌面应用。技术上，它以 Tauri + Rust 为壳，以 yt-dlp/FFmpeg/whisper.cpp/aria2/gallery-dl 等为核，兼顾性能与安全；体验上，它把复杂的命令行操作转化为“粘贴链接 + 全局快捷键”，适合从“小白”到“开发者”的广泛人群。
+- 适合立刻上手的场景：
+  - 需要批量保存 YouTube/B 站/课程/社交媒体内容的创作者与学习者。
+  - 想统一管理本地音乐/视频/电子书并在同一界面完成播放、笔记、转录的人。
+  - 偶尔使用 yt-dlp 但不想维护环境的“半进阶用户”。
+- 建议的起步方式：
+  - 直接下载对应平台的安装包，按“首次运行”三步走，复制几个你常访问的链接试一下；启用全局快捷键并设置“规则”，为不同域名设定默认质量与目录。
+  - 安装浏览器扩展并完成配对，试试“一键发送页面+Cookie”到 OmniGet 的体验。
+  - 根据 Study 文档，把课程文件夹导入体验时间戳笔记与间隔重复。
+  - 若有脚本化需求，从 omniget-cli 的几个基础命令开始逐步集成到你的工作流。
+一句话收尾：如果你在寻找一款“能下、能看、能学、能转、还能扩展”的开源桌面应用，OmniGet 值得认真上手一试。

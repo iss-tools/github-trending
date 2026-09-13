@@ -1,0 +1,60 @@
+{
+  "id": "f2da6644-a3b7-4e3f-8f32-ac31db6b9450",
+  "url": "https://github.com/alibaba/open-code-review",
+  "domain": "github.com",
+  "repo": "alibaba/open-code-review",
+  "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-13T11:14:15.637Z",
+  "metaData": {
+    "forks": "1693",
+    "stars": "22848",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "code-review",
+      "code-review-assistant",
+      "harness",
+      "repository-level-context"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://open-codereview.ai",
+    "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+  },
+  "summaryData": {
+    "tags": [
+      "代码审查",
+      "阿里巴巴",
+      "开源",
+      "LLM",
+      "CLI"
+    ],
+    "cover": "",
+    "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+    "ability": [
+      "高精度代码审查",
+      "低Token成本",
+      "混合架构(工程+Agent)",
+      "委托模式",
+      "CI/CD集成"
+    ],
+    "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "DevOps"
+    ],
+    "suitable": [
+      "软件开发者",
+      "技术团队Leader",
+      "DevOps工程师",
+      "AI Agent开发者"
+    ],
+    "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+  },
+  "contentDetail": "<|assistant|>我将打开官方文档站点，查看“Quickstart、Installation、CI/CD Integration、Review Rules”等页面，以获取安装方式、配置示例、工作流与自定义规则的细节。</think>\n<|assistant|>我将进入仓库内具体的代码目录（如 cmd、pkg、internal），查看代码组织结构，推断架构设计（如流水线、规则引擎、Agent 调度器）。</think>\n# 一句话总结\n---\n- Open Code Review（OCR）是阿里巴巴把内部两年实战验证的 AI 代码审查助手开源成的“高精度、低Token成本”的命令行工具；它采用“确定性工程×LLM Agent”混合架构，专注解决通用 Agent 做代码审查时“覆盖不全、位置漂移、质量不稳”的三大痛点，适用于本地工作流、CI/CD 与各类 AI 编码 Agent 的集成场景。仓库采用 Apache-2.0 协议，主语言为 Go，GitHub Star 超 2.1 万。\n## 背景与痛点\n---\n- AI 写代码越快，代码审查越难：有报告统计，4,000 个团队、22,000 名开发者在两年内，任务完成度提高 34%，代码活动激增 210%，但代价是代码重写率飙升 861%，每个 PR 引发的生产事故比率上升 242.7%，PR 平均审查时间延长 441.5%，未经审查直接合并的 PR 比例上升 31.3%。\n- 通用 Agent（如 Claude Code + Skills）在代码审查中的典型问题：\n  - 覆盖不全：改动一大时 Agent 倾向“抄近路”，只挑部分文件审查，其他直接略过；\n  - 位置漂移：报出的行号/文件名对不上真实位置，增加反馈核对成本；\n  - 质量不稳：自然语言驱动技能难以调试，提示词轻微变动会带来结果剧烈波动；\n- OCR 的直接根源：阿里内部官方 AI 代码审查助手，服务数万名开发者、识别数百万缺陷后在 2026 年开源，定位在“用工程约束确保稳定性与覆盖率，让 LLM 专注决策与上下文理解”。\n## 核心亮点与功能剖析\n---\n- 混合架构：确定性工程（硬约束）× Agent（动态决策）\n  - 工程层负责：\n    - 文件筛选：精准确定“必须审”的文件，避免漏审；\n    - 智能打包（bundling）：将相关文件（如多语言资源文件）打包为子任务，分治处理，天然支持并发且对大规模改动保持稳定；\n    - 细粒度规则匹配：按文件特征精准匹配审查规则，从源头降低噪声；\n    - 外部定位与反思模块：独立模块改进评论位置准确性与内容准确性；\n  - Agent 层负责：\n    - 场景化提示模板：针对代码审查优化的提示，提高效果、降低 Token 消耗；\n    - 场景化工具集：基于大规模生产 trace 数据精炼出的工具调用策略，更稳定、可预测。\n- 基准与效果\n  - 基于真实 50 个热门开源仓库、200 个真实 PR、10 种编程语言、80+ 高级工程师交叉标注 1505 条问题构建 AACR-Bench；在相同底层模型下，相对通用 Agent（如 Claude Code）显著提升 Precision 与 F1，Token 消耗仅约 1/9；注意：Recall 略低是“为降低噪点、提升采纳率”的刻意取舍。\n- CLI 核心能力\n  - 工作区模式、分支范围、单提交审查；支持会话恢复与全量扫描（ocr scan），适用于审计不熟悉代码或目录；\n  - 可输出结构化结果与“agent 友好”格式（--format json --audience agent），方便上游系统消费；\n  - “委托模式（Delegation Mode）”：OCR 只做文件选择与规则解析，由宿主 Agent（如 Claude Code、Cursor 等）调用自身 LLM 执行审查，用户无需配置两套模型密钥；\n- 规则与合规\n  - 内置规则覆盖空指针风险（NPE）、SQL 注入、XSS、线程安全、参数校验缺失、Mapper SQL 配置错误等常见风险；支持项目级/用户级/自定义规则覆盖；\n  - 通过 Review Rules 文档支持路径过滤与目标化定制，便于落地团队规范。\n## 目标人群与收益\n---\n- 适合人群\n  - 开发者与团队 Lead：希望本地即获高精度代码审查意见，减少人工漏审与假阳性；\n  - 平台/DevOps 工程师：需将代码审查嵌入 CI/CD 流水线，关注稳定性、可观测与隐私合规；\n  - AI 编码 Agent 爱好者与研究者：希望把“文件选择+规则解析”与 LLM 解耦，做可控 Agent 技能或 RL 训练中的代码质量验证器。\n- 实际收益\n  - 提升审查稳定性：工程层保证覆盖率与定位精度，降低“位置漂移”与“漏审”；\n  - 降低 Token 成本与延迟：相对通用 Agent，Token 约为 1/9，审查更快，对 CI 友好；\n  - 数据完全本地化：只提供框架与工具，不触碰用户数据，LLM 端点由用户自选；适合企业内网与合规要求高的场景；\n  - 多宿主集成：支持 Claude Code、Cursor、OpenCode 等宿主与 MCP Server、可观测（OpenTelemetry）等扩展；\n## 竞品/同类对比\n---\n- 通用 AI 编码 Agent + 自定义技能（如 Claude Code + Skills）：上手直观，但缺少对审查流程的硬约束，易出现覆盖不全、位置漂移与质量不稳；OCR 以工程约束弥补这一点，定位为“审查能力补丁/插件”；\n- 传统静态分析（如 SonarQube、ESLint 等）：规则确定、性能可预期，但对语义与流程上下文理解有限；OCR 则依靠 LLM 做语义级审查，能与静态工具互补；\n- 商业 AI 代码审查平台：通常提供 SaaS 与托管托管，但数据需要出域且绑定特定供应商；OCR 的差异化在于数据完全本地、可接入任意 LLM 提供商与自建模型；\n## 局限与不足\n---\n- 侧重 diff/分支审查的线级精度，尚未在仓库页中显式展示“一键自动合并审查评论到 PR 平台”的标准化插件，需通过 CI/CD 输出或 Agent 插件转发（文档指出支持多家宿主与 CI，但集成仍需工程配置）；\n- Recall 偏向“宁可漏报不可多报”的设计，对希望“捕捉所有潜在问题”的场景需补充其他静态/动态测试手段；\n- 配置项丰富带来初次学习成本：需要理解 provider/model 设置、会话管理、委托模式、规则自定义等概念，好在文档与 Quickstart 较完善；\n- 需要外部 LLM API（除非采用委托模式），Token 成本与延迟仍取决于所选模型与网络状况；OCR 通过减少 Token 用量缓解，但并非“免模型”。\n## 技术栈与架构解析（面向 GitHub 开源项目）\n---\n- 技术栈：主语言 Go，发布为 NPM 包（@alibaba-group/open-code-review）与 CLI（ocr），同时也提供二进制与源码安装方式；文档站点独立；依赖 Git ≥2.41，Node ≥18 用于安装 CLI；\n- 架构思路：\n  - “流水线+Agent”分层：Git 操作、文件选择、打包、规则匹配、定位/反思模块由工程流程保证确定性；工具调用、提示与上下文理解由 Agent 动态完成；\n  - 分治与并发：智能打包与子任务隔离，既稳定又支持大改动集的并发审查；\n- 代码与生态：Go 组织与模块结构在仓库代码目录中体现（如 cmd/、internal/、pkg/），有利于扩展规则引擎与插件；文档中明确了 CI/CD 与 MCP、OpenTelemetry 等扩展路径。\n## 上手门槛与部署体验\n---\n- 安装：推荐 NPM 一行安装全局 CLI（npm install -g @alibaba-group/open-code-review）；也支持安装脚本、GitHub Release 二进制与源码编译，适合不同环境；\n- 配置：\n  - 交互式配置：ocr config provider / model，引导选择提供商、输入 Key、选择模型并自动测试连接；\n  - 非交互式配置适合 CI：ocr config set provider/model/providers.*.api_key，直接写配置文件；\n- 文档与示例：\n  - 官方文档站点清晰覆盖 Quickstart、Installation、CLI Reference、Configuration、Review Rules、Integrations、FAQ；\n- Demo / 核心代码示例\n  - 本地审查工作区变更：\n    - ocr review\n  - 分支范围审查（main 到 feature）：\n    - ocr review --from main --to feature-branch\n  - 单次提交审查：\n    - ocr review --commit abc123\n  - 输出为 JSON 以供上游系统/Agent：\n    - ocr review --format json --audience agent > review.json\n  - 委托模式（由宿主 Agent 执行审查，无需 OCR 的 LLM 配置）：\n    - ocr delegate preview\n    - ocr delegate rule src/main.go src/handler.go\n## 社区活跃度与生命力\n---\n- GitHub Star 超 2.1 万，Fork 约 1.6k，主要语言 Go，协议 Apache-2.0；仓库 Issue 与 PR 保持持续讨论与迭代，9 月仍有新特性与改进的 Issue 提出；\n- 官方文档站点与集成生态（多宿主、MCP、Telemetry、CI）持续更新；\n- 内外同源发布、大规模生产验证与 AACR-Bench 公开数据集加持，社区与厂商类文章与解读持续涌现，显示较强生命力与影响。\n## 软件应用/网站视角的补充\n---\n- 核心功能与使用场景：聚焦代码审查环节，而非编码助手；在 PR 合入前与 CI 阶段拦截缺陷，同时支持本地 diff 与全量扫描；\n- UI/UX：CLI 为主，提供进度 UI 与 JSON 两种输出模式（--audience agent），适合人工与自动化消费；\n- 商业模式与性价比：完全开源，无付费墙，成本仅来自外部 LLM；相对“通用 Agent 技能”方案，Token 更省、精度更高，性价比显著；\n- 跨平台与性能：支持 Windows/macOS/Linux，依赖 Git 与 Node（CLI 安装时），通过 Go 实现的流水线保证较高性能与并发能力；\n## 结语与行动建议\n---\n- 综合评价：OCR 在“AI 代码审查”这一细分场景做了非常务实的取舍——把“不能出错”的流程交给工程确定性、把“需要理解与决策”的部分交给 LLM；以实战打磨的规则与 pipeline 提升精度与稳定性、以委托模式与多宿主集成降低接入与配置成本，对需要“可控、私有、可观测”代码审查的团队极具吸引力。\n- 行动建议：\n  - 个人开发者：先用 npm 安装 CLI 并配置一个常用模型提供商，在工作区跑一次 ocr review 与 ocr scan，感受审查质量与输出格式；建议结合自己熟悉的 AI 编码 Agent 试用委托模式；\n  - 平台/DevOps：从 CI/CD 文档入手，选择 GitHub Actions/GitLab CI 模板接入，先用 JSON 输出验证流水线，再考虑集成到内部评论系统；\n  - 研究者：可基于 AACR-Bench 与 Session Viewer 做进一步评测与算法改进，或在其 Agent 生态中开发自定义技能与 MCP 工具。\n- 如果你正被“AI 写代码越快、审查越难”的痛点困扰，且重视数据隐私、审查稳定性和 Token 成本，Open Code Review 值得认真试用并纳入你的工具链。",
+  "type": "project",
+  "dateAdded": "20260913"
+}

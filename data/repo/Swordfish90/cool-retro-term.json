@@ -1,0 +1,60 @@
+{
+  "id": "7e9c4319-c0bc-46e6-afe8-943a09f5f5e4",
+  "url": "https://github.com/Swordfish90/cool-retro-term",
+  "domain": "github.com",
+  "repo": "Swordfish90/cool-retro-term",
+  "description": "cool-retro-term 是一款基于 Qt/QML 的复古终端模拟器，提供高度可调的 CRT 特效与多风格主题，适合 Linux 与 macOS 用户。它主打视觉呈现与怀旧氛围，适合展示、直播与桌面美化，但性能与功能深度不如现代 GPU 终端，适合作为第二终端使用。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-13T11:27:21.009Z",
+  "metaData": {
+    "forks": "1014",
+    "stars": "26126",
+    "topics": [
+      "linux",
+      "macos",
+      "qml",
+      "qt",
+      "retro",
+      "terminal"
+    ],
+    "license": "",
+    "homepage": "",
+    "description": "A good looking terminal emulator which mimics the old cathode display... - Swordfish90/cool-retro-term"
+  },
+  "summaryData": {
+    "tags": [
+      "终端模拟器",
+      "CRT",
+      "复古",
+      "开源",
+      "Linux"
+    ],
+    "cover": "",
+    "title": "cool-retro-term：怀旧 CRT 终端模拟器深度评测",
+    "ability": [
+      "CRT 视觉效果调节",
+      "多风格内置主题切换",
+      "跨平台支持（Linux/macOS）",
+      "配置导入导出与分享",
+      "基于 Qt/QML 的可定制架构"
+    ],
+    "summary": "一款主打复古 CRT 视觉特效的终端模拟器，适合追求怀旧氛围与视觉展示的用户。",
+    "category": [
+      "开发工具",
+      "桌面美化"
+    ],
+    "suitable": [
+      "终端复古爱好者与桌面美化玩家",
+      "内容创作者/主播",
+      "演讲者/讲师",
+      "对计算历史好奇的新手",
+      "追求视觉差异化的轻度终端用户"
+    ],
+    "description": "cool-retro-term 是一款基于 Qt/QML 的复古终端模拟器，提供高度可调的 CRT 特效与多风格主题，适合 Linux 与 macOS 用户。它主打视觉呈现与怀旧氛围，适合展示、直播与桌面美化，但性能与功能深度不如现代 GPU 终端，适合作为第二终端使用。"
+  },
+  "contentDetail": "<|assistant|>打开 Wiki 中的“Install”页面以获取各发行版的安装方式（包管理器、Snap、AppImage 等），评估部署体验。</think>\n# cool-retro-term 深度评测\n## 一句话总结\ncool-retro-term 是一款以“怀旧 CRT 终端”为卖点的终端模拟器，基于 Qt/QML 与 Konsole 的 qtermwidget 移植，主打高度可定制的视觉特效与可玩性；适合追求复古氛围、展示场景与轻度终端使用者，但并不以极致性能与现代工作流整合见长。适合 Linux 与 macOS，可通过发行版包管理器或官方 AppImage/dmg 快速上手，亦可从源码构建。项目以 GPL-3.0-or-later 开源，社区体量可观（2.6万 Star）但近年更新节奏放缓，需按需权衡。\n---\n## 背景与痛点\n- 诞生背景：在终端选择百花齐放、性能工具盛行的时代（Alacritty、Kitty、WezTerm 等），用户更在意速度、GPU 加速、多平台与现代特性。但“复古/怀旧”作为一个细分需求长期被忽视——老一辈计算机人曾面对绿色/琥珀色单色 CRT、扫描线与荧光余辉；新生代则好奇那时代的味道。cool-retro-term 正是为把这段历史“装进终端”而生的项目。它并非把终端性能做到极致，而是把“视觉体验”做到有辨识度。\n- 解决的核心痛点：常规终端缺少开箱即用的复古呈现（如 CRT 效果、扫描线、屏幕曲率与荧光辉光），而用户若通过第三方工具链（如 OBS 滤镜、着色器注入）实现则成本高、整合度差。cool-retro-term 在终端自身集成可调节特效，让用户一键回到 80/90 年代，便于：直播/录播营造氛围、桌面美化、现场演示等。\n## 核心亮点与功能剖析\n### 1) CRT 视觉效果的高度可玩性\n- 提供一系列内置主题（如 Default Amber、Default Green、IBM DOS、IBM 3278、Apple ][ 等），一键切换不同终端外观；每套主题都可以继续微调。你可以调出“绿屏+扫描线”“模糊+闪烁+辉光+屏幕曲率”等组合。整屏更像真实的 CRT 呈现，而不是简单的滤镜叠加。\n- 可调参数极多：包括但不限于发光强度（bloom）、扫描线粗细/透明度、屏幕曲率与畸变、闪烁（flicker）、余辉/辉光、色彩通道分离、焦外效果、边框/边框光泽等。这些参数通过右键菜单即可即时调整，所见即所得。\n### 2) 技术栈与架构设计（Qt/QML + qtermwidget）\n- 终端后端复用 Konsole 的 qtermwidget 的 QML 移植（qmltermwidget 子模块），保证了 VT 兼容性与文本渲染的可靠性；前端的 UI 与特效通过 Qt/QML 构建，易于加入动画与灵活的界面定制。项目采用 git submodules 组织依赖，整体结构清晰：app/ 应用主程序、qmltermwidget 子模块、packaging 与 snap 打包、scripts 构建辅助脚本等。核心逻辑与表现层的分离有利于维护与扩展。\n- 使用 qmake 构建系统，典型工程结构：.pro 文件描述模块与依赖，开发者可快速在 Linux/macOS 上完成编译。流程不复杂，但需要准备好 Qt 开发环境与编译工具链。\n### 3) 配置持久化与分享\n- 主题配置可保存为配置文件，并支持导出/导入 JSON 格式（配置目录可通过菜单访问），便于把调教好的“个人复古配方”分享给朋友或团队；也方便多设备间同步与备份。实践上很多人会把不同机器时代的配置打包成 profile，按需要一键切换。\n### 4) 跨平台与安装方式\n- Linux 与 macOS 均支持，并提供 AppImage（Linux）与 dmg（macOS）的官方打包；多数主流发行版（Ubuntu、Fedora、Arch 等）已收入官方软件源，可直接包管理器安装。Fedora 官方仓库当前为 1.2.0 系列，且显示为 GPL-3.0-or-later 许可；说明在主流发行版里有人维护与打包。\n- Snap 包也被广泛提供，适合想要“尝鲜但不想编译”的用户。\n### 5) 社区生态与第三方内容\n- Wiki 提供安装、构建（Linux/macOS）、更换主题、第三方主题等条目，帮助上手与扩展。\n- 玩家分享的第三方主题/配置（如模仿不同机型/年代的 CRT）在社区流传，通过“Third Party Themes”页面可索引到一部分。GitHub Issues 中也常见用户讨论配置与请求合并新配置。\n## 目标人群与收益\n- 终端复古爱好者与桌面美化玩家：获得高度可调的 CRT 视觉体验与多风格主题，轻松定制专属“复古终端”。\n- 内容创作者/主播：在直播/录屏时营造独特氛围（如模拟黑客电影场景、复古计算、文字冒险游戏等），提高辨识度与观看体验。\n- 演讲者/讲师：用复古风格做技术分享、代码演示，增加趣味性与记忆点。\n- 新手与好奇者：低门槛体验“历史上的终端”，激发对计算历史的兴趣，同时还是可用的命令行环境。\n- 收益：带来情绪价值与视觉差异化，兼具实用终端的基本功能；它更像“加一层有质感的滤镜”，而非完全替代主力终端。\n## 竞品/同类对比\n- 与 Konsole/GNOME Terminal 等传统终端相比：后者功能全面、成熟稳定，但缺少开箱即用的复古效果；需要通过插件或外部工具链才能勉强模拟 CRT。\n- 与 Alacritty/Kitty/WezTerm 等现代 GPU 终端相比：这些工具更关注性能、GPU 加速、多标签/分屏、Lua 配置等现代工作流，并不把复古特效作为重点。cool-retro-term 的渲染负载可能更高，不适合长时间、重负载的场景。\n- 专用复古方案（如 libretro 中的模拟器终端、CRT 着色器工具）相比：这些通常属于游戏/模拟器生态，与命令行工作流深度整合度不如一个原生终端模拟器。\n## 局限与不足\n- 性能与渲染开销：大量特效需要 GPU 与 CPU 资源，容易成为电耗与发热的来源；在轻薄本或老旧硬件上可能出现掉帧、卡顿。不适合需要极低延迟与高刷新的重度终端场景。\n- 功能覆盖有限：以“好看”为首要目标，而像复杂的快捷键体系、窗口管理、脚本化配置、Shell 集成等并非优先级；需要与 tmux、zsh 插件等工具搭配以满足复杂工作流。\n- 维护节奏与版本：1.2.0 之后发布过 2.0.0-beta1（迁移至 Qt6、多标签与多窗口支持、新边框与字体/配置更新等），但后续更新相对稀疏；近期多以“Rolling Release”形式存在。部分 Issue/PR 回应不及时，社区显出“维护者精力有限”的状态。若遇到兼容性或崩溃问题，可能需要自行解决。\n- 学习成本与可发现性：菜单项非常多，参数英文标签需要一定理解才能调出满意效果；新手初次可能感到无从下手。Wiki 提供基础指引，但对“每个参数含义”的详细说明尚可继续完善。\n- 平台支持：Linux 与 macOS 为主；对 Windows 原生支持有限，需要借助 WSL 或第三方封装方式才能运行，部署成本较高。\n## 上手门槛与部署体验\n- 安装难度：在主流发行版上极低——包管理器一行命令即可；也可直接下载 AppImage/dmg，免编译。新手亦可顺利安装。\n- 源码构建：需要准备好 Qt 环境与编译工具链；Wiki 给出 Ubuntu/Debian/Fedora/Arch 的依赖列表，并给出典型的 git clone --recursive + qmake && make 流程，不算复杂，但对完全不熟悉 Qt 的用户有一定门槛。注意：Wiki 目前仍显示 Qt5 依赖，而 2.0.0-beta1 已迁移 Qt6，构建时请留意版本匹配问题。\n- 文档与社区：官方 Wiki 涵盖安装、构建、主题更换、第三方主题等基础内容，社区 Issues 中有大量经验分享。遇到问题时，先搜索 Issue 往往能快速找到答案。\n## Demo / 配置示例（最简上手）\n- 安装（示例）：\n  - Ubuntu/Debian：sudo apt install cool-retro-term\n  - Fedora：sudo dnf install cool-retro-term\n  - Arch：yay -S cool-retro-term（或从 AUR cool-retro-term-git 安装）。\n  - AppImage（Linux）：去 Releases 下载 AppImage 后 chmod +x 即可运行。\n- 从源码构建（Linux，以 Ubuntu 22.04 为例）：\n```bash\nsudo apt install build-essential qmlscene qt5-qmake qtbase5-dev qtdeclarative5-dev \\\nqml-module-qtquick-controls2 qml-module-qtgraphicaleffects \\\nqml-module-qtquick-dialogs qml-module-qtquick-localstorage \\\nqml-module-qtquick-window2 qml-module-qt-labs-settings \\\nqml-module-qt-labs-folderlistmodel qml-module-qt-labs-platform qtquickcontrols2-5-dev\ngit clone --recursive https://github.com/Swordfish90/cool-retro-term.git\ncd cool-retro-term\nqmake && make\n./cool-retro-term\n```\n- 基本使用：右键菜单可切换主题、调整效果；偏好项可保存并导出；部分参数可在运行时实时调节。\n## 社区活跃度与生命力\n- 项目 Star 数约 2.6 万，Fork 数约 1,000，显示其曾在开源社区受到广泛关注。Issue 数量超过 500，Pull Request 数约 40+，说明有用户参与讨论与贡献。\n- 1.2.0 版本（稳定）修复大量 macOS 构建/渲染问题并加入闪烁光标、子像素渲染等改进；2.0.0-beta1 迁移 Qt6、增加多标签与多窗口、新边框/字体与配置更新。这表明项目曾经历重要的技术栈升级与功能扩展。但最近一段时间更新节奏放缓，维护者精力可能有限。\n- 发行版打包状态良好（如 Fedora 官方包），说明至少在包维护层面仍有人关注；社区也通过 AUR、Snap 等渠道提供新版本/打包。\n## 最终评判与行动建议\n- 如果你追求“视觉冲击与复古氛围”，cool-retro-term 几乎是同品类中最能打的选择之一。它不是用来“替代”你当前主力终端，而是用来“搭配”它——在演示、直播、桌面美化与怀旧体验等场景非常出色。\n- 行动建议：\n  - 如果你用 Linux/macOS：优先通过发行版包管理器安装，快速体验不同主题与参数；如果追求最新功能，可尝试 AppImage/dmg 或从源码构建（注意 Qt 版本）。\n  - 如果你内容创作者/主播：把 cool-retro-term 作为“第二终端”，专门用于需要复古风格的镜头；提前调好 1–2 套配置并导出，直播时一键切换。\n  - 如果你是重度终端用户/需要极低延迟：建议继续以 Alacritty/Kitty/WezTerm 等为主力，将 cool-retro-term 作为“氛围终端”使用，不要全程用它以免被性能问题困扰。\n  - 如果你使用 Windows：需通过 WSL/第三方封装实现，优先评估投入产出比；若只是短暂体验，可考虑虚拟机或远程 Linux 桌面。\n总体而言，cool-retro-term 是一款“把怀旧做成生产力/娱乐力”的终端模拟器，它成功地将技术细节（Qt/QML + qtermwidget）与视觉艺术融合。尽管维护节奏不再像当年那样密集，但对于有复古需求的用户来说，依然值得花时间把玩与调教。",
+  "type": "project",
+  "dateAdded": "20260913"
+}
