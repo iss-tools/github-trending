@@ -1,6 +1,259 @@
 {
   "all": [
     {
+      "id": "231efe10-4d9b-4528-b786-aede328019ef",
+      "url": "https://github.com/localsend/localsend",
+      "domain": "github.com",
+      "repo": "localsend/localsend",
+      "description": "支持全平台设备互传，基于HTTPS加密，无需账号和云服务器，在局域网内实现文件、文本的高速点对点传输，保障数据隐私安全。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:28:47.449Z",
+      "metaData": {
+        "forks": "5079",
+        "stars": "90998",
+        "topics": [
+          "dart",
+          "file-sharing",
+          "flutter",
+          "flutter-apps"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://localsend.org",
+        "description": "An open-source cross-platform alternative to AirDrop - localsend/localsend"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "跨平台",
+          "文件传输",
+          "局域网",
+          "隐私安全"
+        ],
+        "cover": "",
+        "title": "LocalSend: 开源跨平台局域网文件快传工具",
+        "ability": [
+          "全平台支持",
+          "离线加密传输",
+          "无账号无云",
+          "CLI自动化",
+          "多类型内容支持"
+        ],
+        "summary": "开源免费的跨平台局域网文件快传工具，AirDrop的完美替代。",
+        "category": [
+          "生活效率",
+          "开发工具"
+        ],
+        "suitable": [
+          "多设备用户",
+          "开发者",
+          "隐私敏感人士",
+          "企业团队"
+        ],
+        "description": "支持全平台设备互传，基于HTTPS加密，无需账号和云服务器，在局域网内实现文件、文本的高速点对点传输，保障数据隐私安全。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "6510e746-91b9-400f-afd9-7eb449770f60",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "domain": "github.com",
+      "repo": "rlaope/oh-my-hermes",
+      "description": "oh-my-hermes（OMH）是 Hermes Agent 的插件层，提供多模型路由、并行执行、证据边界、成本可视与可评审记忆，同时自动注入108+专家技能。实测成本可降到约1/6，时间压缩到1/4-1/5，适用于多项目、多模型、多团队协作的开发场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:22:06.479Z",
+      "metaData": {
+        "forks": "151",
+        "stars": "1822",
+        "topics": [
+          "agent",
+          "ai",
+          "ai-agent",
+          "ai-tools",
+          "claude-code",
+          "codex",
+          "hermes-agent",
+          "hermes-skill",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rlaope.github.io/oh-my-hermes/",
+        "description": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages - rlaope/oh-my-hermes"
+      },
+      "summaryData": {
+        "tags": [
+          "Hermes Agent",
+          "多模型路由",
+          "并行执行",
+          "证据边界",
+          "成本管理"
+        ],
+        "cover": "",
+        "title": "oh-my-hermes：Hermes Agent 的全能治理层",
+        "ability": [
+          "多模型混合路由",
+          "并行执行与证据边界",
+          "阶段化 TODO 与成本 HUD",
+          "可评审的长期记忆",
+          "108+ 专家技能自动注入"
+        ],
+        "summary": "为 Hermes Agent 装上多模型路由、并行执行、证据边界与可评审记忆，提升质量与降低成本。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Hermes Agent 用户",
+          "多模型开发者",
+          "成本与质量敏感型团队",
+          "终端重度使用者",
+          "追求可工程化工作流的工程角色"
+        ],
+        "description": "oh-my-hermes（OMH）是 Hermes Agent 的插件层，提供多模型路由、并行执行、证据边界、成本可视与可评审记忆，同时自动注入108+专家技能。实测成本可降到约1/6，时间压缩到1/4-1/5，适用于多项目、多模型、多团队协作的开发场景。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "cdf45b85-8780-47b5-b4ef-4a9e9097c228",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "domain": "github.com",
+      "repo": "Panniantong/Agent-Reach",
+      "description": "Agent Reach 是一套开源脚手架，通过统一选型和路由，让 AI Agent 轻松具备浏览网页、读取视频字幕、抓取社交媒体等能力，大幅降低接入门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:15:44.745Z",
+      "metaData": {
+        "forks": "7033",
+        "stars": "80765",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agent",
+          "ai-search",
+          "automation",
+          "bilibili",
+          "claude-code",
+          "cli",
+          "cursor",
+          "free-api",
+          "llm-tools",
+          "mcp",
+          "python",
+          "reddit-scraper",
+          "twitter-scraper",
+          "web-scraper",
+          "xiaohongshu",
+          "youtube-transcript"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. - Panniantong/Agent-Reach"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "Agent",
+          "自动化",
+          "爬虫",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Agent Reach：给你的 AI Agent 一键装上互联网能力的开源脚手架",
+        "ability": [
+          "一键接入多平台（Web, YouTube, Twitter 等）",
+          "多后端自动路由与故障转移",
+          "智能诊断与维护",
+          "本地化安全存储凭据",
+          "无缝集成 AI Agent (SKILL.md)"
+        ],
+        "summary": "这是一个能一键为 AI Agent 接入联网能力（读网页、搜推特、看视频）的强大开源工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI Agent 玩家/研究员",
+          "自动化与运营工程师",
+          "投研与内容创作者",
+          "开发者与极客"
+        ],
+        "description": "Agent Reach 是一套开源脚手架，通过统一选型和路由，让 AI Agent 轻松具备浏览网页、读取视频字幕、抓取社交媒体等能力，大幅降低接入门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "ce1498c7-c755-499b-8233-e65257893efe",
+      "url": "https://github.com/666ghj/MiroFish",
+      "domain": "github.com",
+      "repo": "666ghj/MiroFish",
+      "description": "MiroFish 是一个基于 GraphRAG 和 OASIS 引擎的开源群体智能系统。它构建数字平行世界，通过有记忆的 AI 智能体模拟真实人类互动，生成可解释的预测报告，帮助用户进行低成本决策沙盘推演。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:07:17.049Z",
+      "metaData": {
+        "forks": "11268",
+        "stars": "72826",
+        "topics": [
+          "agent-memory",
+          "financial-forecasting",
+          "future-prediction",
+          "knowledge-graph",
+          "llms",
+          "multi-agent-simulation",
+          "public-opinion-analysis",
+          "python3",
+          "social-prediction",
+          "swarm-intelligence"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://mirofish.ai",
+        "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物 - 666ghj/MiroFish"
+      },
+      "summaryData": {
+        "tags": [
+          "Multi-Agent",
+          "社会仿真",
+          "LLM",
+          "GraphRAG",
+          "舆情推演"
+        ],
+        "cover": "",
+        "title": "MiroFish 深度评测",
+        "ability": [
+          "多智能体社会仿真",
+          "GraphRAG知识图谱构建",
+          "长期记忆管理",
+          "自动化预测报告生成",
+          "上帝视角交互干预"
+        ],
+        "summary": "MiroFish：基于群体智能的AI社会仿真与预测引擎，让智能体在数字世界中推演未来。",
+        "category": [
+          "AI 编程",
+          "开源项目",
+          "决策辅助"
+        ],
+        "suitable": [
+          "舆情/公关团队",
+          "金融/市场研究人员",
+          "内容创作者",
+          "AI 研究者与开发者",
+          "政策制定者"
+        ],
+        "description": "MiroFish 是一个基于 GraphRAG 和 OASIS 引擎的开源群体智能系统。它构建数字平行世界，通过有记忆的 AI 智能体模拟真实人类互动，生成可解释的预测报告，帮助用户进行低成本决策沙盘推演。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
       "id": "c086665b-ec0b-4f09-a742-0924bae688e3",
       "url": "https://github.com/kunchenguid/firstmate",
       "domain": "github.com",
@@ -320,8 +573,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "1776",
-        "stars": "24140",
+        "forks": "1792",
+        "stars": "24398",
         "topics": [
           "agent",
           "agent-skills",
@@ -642,8 +895,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:26:15.148Z",
       "metaData": {
-        "forks": "883",
-        "stars": "8009",
+        "forks": "891",
+        "stars": "8069",
         "topics": [
           "ai",
           "audio-generation",
@@ -880,8 +1133,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:10:42.513Z",
       "metaData": {
-        "forks": "10839",
-        "stars": "66401",
+        "forks": "10844",
+        "stars": "66455",
         "topics": [
           "ai",
           "ai-agents",
@@ -1618,8 +1871,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3316",
-        "stars": "30865",
+        "forks": "3321",
+        "stars": "31017",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -6353,8 +6606,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3437",
-        "stars": "27946",
+        "forks": "3454",
+        "stars": "28131",
         "topics": [
           "ai",
           "audiobook",
@@ -9797,8 +10050,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "20001",
-        "stars": "104302",
+        "forks": "20247",
+        "stars": "105670",
         "topics": [
           "agent",
           "finance",
@@ -12037,8 +12290,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:32:13.360Z",
       "metaData": {
-        "forks": "3125",
-        "stars": "65901",
+        "forks": "3205",
+        "stars": "67419",
         "topics": [
           "bitwarden",
           "bitwarden-rs",

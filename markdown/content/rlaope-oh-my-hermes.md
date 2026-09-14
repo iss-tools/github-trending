@@ -1,0 +1,128 @@
+# rlaope/oh-my-hermes
+
+[GitHub URL](https://github.com/rlaope/oh-my-hermes)
+
+
+## oh-my-hermes：Hermes Agent 的全能治理层
+
+> 为 Hermes Agent 装上多模型路由、并行执行、证据边界与可评审记忆，提升质量与降低成本。
+
+- **Tags**: Hermes Agent, 多模型路由, 并行执行, 证据边界, 成本管理
+- **Category**: AI 编程, 开发工具, 效率工具
+
+## Details
+
+# 评测：oh-my-hermes（RLaope/oh-my-hermes）
+> 一句话总结：它是什么，为什么值得关注？  
+> oh-my-hermes（简称 OMH）是 Hermes Agent 的“操作系统层”插件。它在不取代 Hermes 的前提下，为你的日常开发会话加上：智能多模型路由（按任务类型/难度自动选模型与推理档位）、可并行的编码流水线、专家技能自动注入、带证据边界的执行状态、以及“可评审”的长期项目记忆。一句话：安装一次，继续用你熟悉的 Hermes，但在能力、质量与成本可见性上，获得一个明显的等级跃升。
+---
+## 背景与痛点
+- 它诞生于什么样的背景？解决了什么核心问题？  
+  Hermes Agent 是 Nous Research 的开源终端/网关型智能体生态，主打“多面接入、技能自增、长期记忆、多模型推理”，并自带 Mixture of Agents（MoA）等多模型编排能力。但在高强度、多轮次、多人协作的真实项目里，开发者会撞上几类痛点：
+  - 同一个模型“一把梭”：简单改个文案和复杂重构往往用同一款贵模型，成本飙升，还可能用错模型的长板。
+  - 并行与冲突难以控制：多文件改动时，代理可能并发修改同一文件，产生冲突与“假完成”的回退代价。
+  - 执行状态“报喜不报忧”：工具只报告“已完成”，却不会显式区分“进程说它完成了”和“确实通过检查/测试”。
+  - 记忆是“黑盒”堆积：代理的长期记忆往往静默写入，难以复核来源、清理过期或错误条目。
+  - 工作流靠经验拼凑：何时规划、何时代码实现、何时人工审阅，缺乏可见、可复用的阶段化 SOP。
+  
+  oh-my-hermes 就是在这些痛点之上设计的“操作层”：它在保留 Hermes 作为自然语言交互表面的同时，把“选哪条链、谁来执行、什么才算真做完了”这些决策显式化、可观测、可编辑。
+## 核心亮点与功能剖析
+### 1) 多模型混合路由（Mixture-of-Models Routing）
+- 概念：把“用哪个模型 + 推理力度”做成可配置、可回退的链路（chain），按任务类型与成本自动选择。想象“指挥台”：简单提问调度到“快速/低成本模型”，复杂架构与评审调度到“ultrabrain（超强推理）或 deep（强推理）”。
+- 现象级收益：官方 README 给出的一组实测（同一批编码任务，同一 GPT-6 Astra）：从 $4.29 降到 $0.66，时间从 23 分钟压缩到 5 分钟——核心是把任务切分并分发给合适的链路，避免“重型模型全包”。
+- 默认九大类别：ultrabrain、deep、architect、unspecified-high/low、quick、writing、visual-engineering、artistry。每条链都可编辑，且支持“ Provider 拒绝某模型则自动按链路回退”，而不是“悄悄降级”。
+### 2) 并行执行与证据边界（Evidence Before Claims）
+- 并行策略：ulw-work 把已接受的计划拆分为互不相交的单元（不同文件），各自在独立工作树里执行，再汇总；可安全并行，减少文件冲突。每个单元返回带状态的结果边车：进程退出、模式合法、验证通过、集成就绪。
+- 证据边界设计：UI 明确区分四类状态——Plan · not run（仅计划/尚未执行）、Code · running（正在执行）、Code · reported done（执行器声称完成，但尚未验证）、Test · verified（真实通过检查/测试/审阅）。这是“所见即真实”的可信度标识，避免把“口述完成”误作“已验收”。
+- 并行评估（Parallel Evals）：审阅与验证被独立子代理执行，结果交叉核对，而非自我评价；每个子代理在 HUD 独立一行，带轮次、成本、缓存指标。
+### 3) TUI 与成本可视化
+- OMH Dock（ HUD）：在 Hermes 提示区下方显示每条活动行的 model/effort、轮次、token、成本，实时更新；对于由 Maestro 转交到 Codex / Claude Code 的 lane 也会单独标注；成本来自引用来源的价目表，若无法计价则显示 unknown 而非 $0，避免误导。
+- 阶段化 TODO（Phase-structured TODO）：在会话开始即把工作拆成编号阶段与任务，在提示区上方呈现为“运行中清单”，支持子任务嵌套与折叠，任务列表不是事后总结，而是执行前置的可追踪进度板。
+### 4) 长期记忆“可评审化”
+- 写入流程：候选记忆从会话中提取后，生成“审核卡片”，可选择：写入、拒绝、暂缓并注明原因；每条获批记录包含来源与“复核到期时间”，确认后重置时钟，静默不访问则会从活跃→参考→归档老化。
+- 召回策略：新会话根据任务获取排序后的“召回包”，按 token 预算裁剪，并自动去重/消歧；Hermes 原生记忆完全不被读/改，OMH 自建文件型记忆仓库，与 Hermes 隔离，降低“记忆污染”风险。
+- 用户体验：当会话携带记忆时，Hermes 在各个输出面都会标注（如“🧠 OMH — recalled 2 memories”），让记忆来源透明可见。
+### 5) 专家技能自动注入
+- 108+ 项 omh-* 专家技能：前端、后端、Rust、本地调试、推理服务、设计质量门、验证门、安全审查、性能预算、重构计划等；当请求涉及这些领域，对应技能自动作为工具调用加入当前 run，而不是你手动指定“用哪个专家”。
+- 多语言技能路由：支持在英语/韩语等自然语言表达下，由路由器自动选择合适的专家技能，降低人脑需要记忆技能名的负担。
+### 6) 架构可视化与重构计划（codebase-uml / refactor-plan）
+- codebase-uml：根据真实代码绘制仓库级 UML 图（包/模块/导入依赖）并标记循环依赖；结果按优先级排序，便于识别结构债务。
+- refactor-plan：将高优先级问题转化为若干阶段，每个阶段对应一个 PR 且行为被测试锁定；一旦某阶段测试失败则中止，过程前后都有树状度量与可追踪执行记录。
+## 技术栈与架构解析
+- 语言与运行时：Python 3.11+；采用 pyproject.toml 作为现代打包配置，开发/测试使用 uv、pytest 与 ruff（静态分析）。
+- 安装与分发：
+  - 一键安装脚本（Shell 与 PowerShell）支持稳定/preview 通道，优先安装 2.7 MB 级的发布 wheel，不污染系统 Python（使用 venv 或 XDG 兼容路径）。
+  - 包管理器：Homebrew、Bun、npm 一条命令安装；命令为 `omh`，入口为 `omh.cli:main`。
+  - Hermes 技能 tap：也可作为 Hermes tap 安装（`hermes skills tap add rlaope/oh-my-hermes` 等），适用于仅以技能方式集成的场景。
+- 代码组织：从 pyproject.toml 可见，工程划分为 `capabilities`、`catalogs`、`codegraph`、`coding/maestro`、`evidence`、`profiles`、`quality`、`routing`、`runtime`、`workflows` 等模块，边界清晰；插件与配置以 YAML/JSON 管理在 plugin_bundle 与 skins 中；体量约 13.5 万行（依赖组注释中可见）。
+- 架构定位：作为 Hermes 之上的“操作层”——它不取代 Hermes，而是控制“什么进入循环、由谁执行、用什么模型/努力、何为完成”。工作流是“引擎”（ulw-*）、技能是“能力供给”（omh-*）、路由与证据是“治理层”。
+## 上手门槛与部署体验
+- 一条命令安装：macOS/Linux 下直接 `curl -fsSL https://raw.githubusercontent.com/rlaope/oh-my-hermes/main/install.sh | sh`；Windows 用 PowerShell 的 `irm ... | iex`。随后运行 `omh setup` 即可完成向 Hermes 的连接与初始配置。总体上手成本在 5–10 分钟级别（前提是 Hermes 已有环境）。
+- 多种安装路径：Homebrew/Bun/npm/tap/手动覆盖，升级/卸载都有对应命令；`omh update` 可自动识别当初的安装来源并升级，随后再刷新技能与插件注册。更新体验非常自动化。
+- 文档与检查点：官方提供文档站点与 GitHub Pages；`omh doctor` 用于验证安装与连接状态，帮助快速排错。
+- 配置模型链：核心在 `~/.omh/routing/model-chains.json`（可手动编辑），也可以用 CLI：`omh model-chains set <category> "<model>:<effort>,..."`，并随时 `omh model-chains show` 查看当前生效链路；交互式 `omh model`（在 CLI 与 TUI 中都可用）可图形化选择。
+## 目标人群与收益
+- 谁最适合使用/关注？
+  - 日常在终端使用 Hermes 的开发者，尤其是多项目、多团队、多语言栈的工程型角色。
+  - 对模型成本敏感、追求“对齐质量与价格”的个人或小团队。
+  - 对“证据边界”和执行透明度有高要求的人（需给团队/客户可复现、可审阅的工作流）。
+- 能得到什么具体的好处？
+  - 成本与时间：多模型混合路由与并行执行，实测成本可降到原先的约 1/6，时间压缩到 1/4–1/5（同等任务与模型前提下）。
+  - 质量与风险：证据边界与评审记忆减少“隐性失败”，架构 UML 与重构计划帮助系统化地偿还技术债。
+  - 体验与效率：阶段化 TODO 与成本 HUD 让你不再“黑盒飞车”，并行评估与专家技能提升单轮任务的交付质量与稳定性。
+## 竞品/同类对比
+- Hermes 原生 MoA（Mixture of Agents）：MoA 是 Hermes 的“虚拟模型提供方”，适合用一条指令完成多模型组合推理，但“任务类型路由、成本可见、并行执行编排、证据边界”等并不是 MoA 的主攻方向。OMH 可与 MoA 共生，把 MoA 当作其中一个提供方或 lane，二者并非互斥。
+- 通用多模型路由/编排框架（如各类 LangGraph、自定义 MoE/MoA 脚本）：它们更通用，但需要从零搭建工作流；OMH 的优势是“对 Hermes 原生”且自带 108+ 技能、终端 HUD、记忆与阶段 TODO，开箱即用。
+- 通用 MCP/工具集成（如 Composio 集合）：侧重外部 SaaS 工具连接，而 OMH 侧重“内部工作流治理与模型/技能编排”。两者可互补使用，解决不同层面的问题。
+## 局限与不足
+- 前置依赖：你必须已在用 Hermes。如果你不是 Hermes 用户，那么先需要评估整个 Hermes 生态是否匹配你的工作流，OMH 的价值才会兑现。
+- 学习曲线：理解九大类别、模型链、证据状态、并行拆分和阶段 TODO 需要一点磨合期；新手可能一开始面对“多行 HUD + 模型名/成本/档位”感到过载。官方的交互式 `omh setup` 与文档地图能有效缓解，但仍需要一些时间“建立心智模型”。
+- 配置与运维复杂度：`model-chains.json`、`providers.json`、记忆策略等可配置项较多，如果团队规模较大且有多台机器，需要一套“配置漂移管理”策略（如版本控制配置文件），否则不同环境可能出现不一致的路由结果。
+- 实测基线对模型版本敏感：README 提到的成本/时间提升基于特定模型（如 GPT-6 Astra）与配置；在实际场景中，你的模型版本、提供商策略与任务负载都会影响收益幅度，不能把“数字当承诺”。
+- 隐私与成本可见性边界：OMH 仅存储提供商 ID，不会存储凭证；价目表来源公开标注，但若你的提供商计价规则变更，需及时更新否则成本显示不准确。整体设计是对隐私友好的，但仍需运维配合。
+## 结语与行动建议（通用：总结你的终极评判）
+- 终极评判：oh-my-hermes 是“把 Hermes 从‘好用’提升到‘可工程化治理’”的关键插件。它在多模型路由、并行执行、证据边界与可评审记忆等维度上，提供了清晰可见、可配置、可度量的操作层，对成本与质量敏感的开发团队极具吸引力。
+- 行动建议：
+  - 已是 Hermes 用户：立刻在测试环境用脚本安装（`curl -fsSL ... | sh`），跑一遍 `omh setup` 与 `omh doctor`；先用默认配置体验 `ulw-*` 工作流与 HUD 视图；再根据你常用模型/提供商调整 `model-chains.json`。从单个仓库试点，验证成本/时间收益后再推广到团队。
+  - 潜在但未使用 Hermes 的用户：先了解 Hermes 自身定位（CLI/网关、技能生态、多平台接入），确认符合你的终端优先工作流；如果评估匹配，再把 OMH 当作“增强层”一并纳入技术栈。
+  - 团队协作场景：把 OMH 配置文件纳入版本控制，建立“统一链路 + 个性化覆盖”的模式；定期复盘 OMH HUD 的成本与阶段 TODO 完成度，作为工程效能的可观测输入。
+## 附录：代码与配置示例（便于上手）
+- 安装（macOS/Linux）：
+  - `curl -fsSL https://raw.githubusercontent.com/rlaope/oh-my-hermes/main/install.sh | sh`
+  - 随后运行 `omh setup`；再用 `omh doctor` 验证。
+- 安装（Windows PowerShell）：
+  - `irm https://raw.githubusercontent.com/rlaope/oh-my-hermes/main/install.ps1 | iex`
+- 模型链配置（CLI）：
+  - 查看：`omh model-chains show`
+  - 设置 quick 类别的链路（示例）：`omh model-chains set quick "kimi-k3-ultrafast:low, glm-5.2-ultrafast:low"`
+  - 在 TUI 或 CLI 中可使用交互式选择器：`omh model`
+- 模型链配置（JSON）：
+  - 编辑 `~/.omh/routing/model-chains.json`（示例片段）：
+```json
+{
+  "schema_version": "mixture_chain_overrides/v1",
+  "categories": {
+    "architect": [
+      {"model": "claude-fable-5-1", "reasoning_effort": "xhigh"},
+      {"model": "gpt-5.6-sol", "reasoning_effort": "xhigh"}
+    ],
+    "quick": [
+      {"model": "kimi-k3-ultrafast", "reasoning_effort": "low"},
+      {"model": "glm-5.2-ultrafast", "reasoning_effort": "low"}
+    ]
+  }
+}
+```
+- 安装与升级（包管理器）：
+  - Homebrew：`brew install rlaope/tap/omh`；升级 `brew upgrade rlaope/tap/omh`；卸载 `brew uninstall omh`。
+  - Bun：`bun install -g oh-my-hermes`；升级 `bun update -g --latest oh-my-hermes`；卸载 `bun remove -g oh-my-hermes`。
+  - npm：`npm install -g oh-my-hermes`；升级 `npm update -g oh-my-hermes`；卸载 `npm uninstall -g oh-my-hermes`。
+- 技能 tap 安装（Hermes 技能体系）：
+```bash
+hermes skills tap add rlaope/oh-my-hermes
+hermes skills install rlaope/oh-my-hermes/skills/omh-routing --yes
+```
+- 卸载与清理：
+  - `omh uninstall --all` 再执行对应包管理器的卸载命令，以移除状态与命令包。
+---
+以上评测基于该项目的官方 README、安装脚本、pyproject.toml、许可证（MIT）与文档站点内容汇总与解读；Hermes Agent 的特性来自其官网与第三方实践文章。
