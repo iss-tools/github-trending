@@ -1,6 +1,376 @@
 {
   "all": [
     {
+      "id": "0d8a8ca6-f869-4148-b51b-e1bc0b3097ec",
+      "url": "https://github.com/microsoft/data-formulator",
+      "domain": "github.com",
+      "repo": "microsoft/data-formulator",
+      "description": "Data Formulator 是微软研究院推出的 AI 原生数据可视化工具，支持对话式数据加载、自然语言生成交互式图表，通过 Data Thread 实现分析过程的可视化与分支管理，内置 Flint 语义化图表语言，可本地部署或集成到现有系统。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T13:10:06.778Z",
+      "metaData": {
+        "forks": "1670",
+        "stars": "17139",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://data-formulator.ai/",
+        "description": "🪄 Data Formulator is an interactive AI-powered data analysis system makes it easy to connect, explore and visualize data. - microsoft/data-formulator"
+      },
+      "summaryData": {
+        "tags": [
+          "微软",
+          "数据可视化",
+          "AI 分析",
+          "开源项目",
+          "Flint 语言"
+        ],
+        "cover": "",
+        "title": "Data Formulator 深度评测：微软 AI 原生数据可视化分析工作台",
+        "ability": [
+          "自然语言生成图表",
+          "多源数据连接",
+          "可视化分支历史",
+          "语义化图表语言",
+          "本地化部署"
+        ],
+        "summary": "微软推出的 AI 数据分析工具，通过自然语言对话生成交互式图表，支持多源数据连接与可视化分支探索。",
+        "category": [
+          "数据分析",
+          "可视化工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "数据分析师",
+          "业务分析师",
+          "产品经理",
+          "数据平台团队",
+          "开发者"
+        ],
+        "description": "Data Formulator 是微软研究院推出的 AI 原生数据可视化工具，支持对话式数据加载、自然语言生成交互式图表，通过 Data Thread 实现分析过程的可视化与分支管理，内置 Flint 语义化图表语言，可本地部署或集成到现有系统。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "36e90a9d-6b1d-4b70-8033-a6309804ef0b",
+      "url": "https://github.com/peetzweg/opendisplay",
+      "domain": "github.com",
+      "repo": "peetzweg/opendisplay",
+      "description": "OpenDisplay 是一套开源方案，通过 USB 或 Wi-Fi 将 iPhone、iPad 甚至旧 Mac 变成 macOS 的真实扩展屏。它支持 Retina 高清画质、低延迟传输及触摸交互，完全本地运行无需账号订阅，适合追求隐私和性价比的多屏办公需求。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T13:02:21.873Z",
+      "metaData": {
+        "forks": "242",
+        "stars": "3369",
+        "topics": [
+          "duet-display",
+          "external-display",
+          "ipad",
+          "iphone",
+          "macos",
+          "screen-extension",
+          "screencapturekit",
+          "second-monitor",
+          "sidecar",
+          "swift",
+          "videotoolbox",
+          "virtual-display"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://opendisplay.app",
+        "description": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input. - peetzweg/opendisplay"
+      },
+      "summaryData": {
+        "tags": [
+          "屏幕扩展",
+          "效率工具",
+          "开源",
+          "苹果生态",
+          "隐私保护"
+        ],
+        "cover": "",
+        "title": "OpenDisplay：把闲置苹果设备变副屏的开源方案",
+        "ability": [
+          "真扩展显示器",
+          "USB/Wi-Fi 低延迟",
+          "Retina 清晰度",
+          "触控输入支持",
+          "隐私安全/无订阅"
+        ],
+        "summary": "开源免费方案，将闲置苹果设备变为 macOS 低延迟扩展显示器，支持触控且无需订阅。",
+        "category": [
+          "实用工具",
+          "开源项目",
+          "效率软件"
+        ],
+        "suitable": [
+          "MacBook 用户",
+          "闲置 iOS 设备持有者",
+          "隐私敏感用户",
+          "开发者",
+          "拒绝订阅制用户"
+        ],
+        "description": "OpenDisplay 是一套开源方案，通过 USB 或 Wi-Fi 将 iPhone、iPad 甚至旧 Mac 变成 macOS 的真实扩展屏。它支持 Retina 高清画质、低延迟传输及触摸交互，完全本地运行无需账号订阅，适合追求隐私和性价比的多屏办公需求。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "3dcd13b7-ba45-4b7f-a06c-1a7894ce5986",
+      "url": "https://github.com/reconurge/flowsint",
+      "domain": "github.com",
+      "repo": "reconurge/flowsint",
+      "description": "Flowsint 是基于 Neo4j 的图式开源情报调查工具，通过 Docker 容器化部署，支持将域名、IP、邮箱等实体关系可视化。它采用插件式架构，可与 n8n 等 500+ 工具联动，实现数据采集到报告生成的自动化全流程，特别适合重视隐私与协作的一线分析师和小团队使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:56:24.764Z",
+      "metaData": {
+        "forks": "1016",
+        "stars": "8166",
+        "topics": [
+          "investigation",
+          "osint",
+          "python",
+          "recon"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://flowsint.io",
+        "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators. - reconurge/flowsint"
+      },
+      "summaryData": {
+        "tags": [
+          "图数据库",
+          "Neo4j",
+          "容器化部署",
+          "自动化集成",
+          "隐私保护"
+        ],
+        "cover": "",
+        "title": "Flowsint：开箱即用的图式 OSINT 调查工作台深度评测",
+        "ability": [
+          "可视化图探索与关联分析",
+          "可插拔数据源生态",
+          "Docker 一键部署",
+          "隐私优先的本地化存储",
+          "与 n8n 等自动化平台无缝集成"
+        ],
+        "summary": "一个可本地化部署的图式调查与 OSINT 工作台，通过可视化关联分析、插件化数据源和自动化集成，让情报调查更高效、更隐私",
+        "category": [
+          "安全工具",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "安全研究员/蓝队/CSIRT",
+          "红队/威胁狩猎人员",
+          "调查记者/研究机构",
+          "DevSecOps 与运维团队",
+          "自动化集成爱好者"
+        ],
+        "description": "Flowsint 是基于 Neo4j 的图式开源情报调查工具，通过 Docker 容器化部署，支持将域名、IP、邮箱等实体关系可视化。它采用插件式架构，可与 n8n 等 500+ 工具联动，实现数据采集到报告生成的自动化全流程，特别适合重视隐私与协作的一线分析师和小团队使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "336baedd-d2a0-4c90-86cd-ef3f0dee294e",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "domain": "github.com",
+      "repo": "Crosstalk-Solutions/project-nomad",
+      "description": "Project NOMAD 是一个离线优先的知识与教育服务器总控，通过 Docker 统一管理维基百科、Khan Academy、离线地图、本地 AI 等多种服务，提供一键安装与 Web 控制台，适合将旧机打造成离线生存电脑。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:50:55.274Z",
+      "metaData": {
+        "forks": "3674",
+        "stars": "36747",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.projectnomad.us",
+        "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required. - Crosstalk-Solutions/project-nomad"
+      },
+      "summaryData": {
+        "tags": [
+          "离线",
+          "Docker",
+          "本地AI",
+          "知识库",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "Project NOMAD：离线生存电脑的 Docker 聚合总控",
+        "ability": [
+          "统一Web控制台管理",
+          "离线百科与知识库",
+          "本地AI助手(RAG)",
+          "离线地图与教育平台",
+          "自动更新与容器编排"
+        ],
+        "summary": "一键打造离线知识中枢，集成百科、AI、地图、教育工具",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 应用"
+        ],
+        "suitable": [
+          "应急预备爱好者",
+          "教育机构与家庭",
+          "开发者与极客",
+          "离线环境工作者"
+        ],
+        "description": "Project NOMAD 是一个离线优先的知识与教育服务器总控，通过 Docker 统一管理维基百科、Khan Academy、离线地图、本地 AI 等多种服务，提供一键安装与 Web 控制台，适合将旧机打造成离线生存电脑。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "552582eb-fec3-4ea5-84e3-4b06e028dfec",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "domain": "github.com",
+      "repo": "OpenBMB/VoxCPM",
+      "description": "VoxCPM 是一款基于深度学习的开源语音合成与克隆工具。它通过端到端架构实现了高保真度的多语种语音生成，创新性地支持用文本描述捏声线，并提供完善的本地化部署方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:44:34.422Z",
+      "metaData": {
+        "forks": "4230",
+        "stars": "37225",
+        "topics": [
+          "audio",
+          "deeplearning",
+          "minicpm",
+          "multilingual",
+          "python",
+          "pytorch",
+          "speech",
+          "speech-synthesis",
+          "text-to-speech",
+          "tts",
+          "tts-model",
+          "voice-cloning",
+          "voice-design",
+          "voxcpm"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://voxcpm.com",
+        "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning - OpenBMB/VoxCPM"
+      },
+      "summaryData": {
+        "tags": [
+          "TTS",
+          "语音克隆",
+          "开源",
+          "多语种",
+          "VoxCPM"
+        ],
+        "cover": "",
+        "title": "VoxCPM：开源高保真多语种语音克隆系统",
+        "ability": [
+          "高保真语音合成",
+          "自然语言捏声线",
+          "多语种与方言支持",
+          "精准语音克隆",
+          "端侧与云端部署"
+        ],
+        "summary": "基于扩散自回归架构的开源 48kHz 高保真语音克隆系统，支持多语种及语音设计。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI应用开发者",
+          "内容创作者",
+          "语音技术研究员",
+          "产品技术团队"
+        ],
+        "description": "VoxCPM 是一款基于深度学习的开源语音合成与克隆工具。它通过端到端架构实现了高保真度的多语种语音生成，创新性地支持用文本描述捏声线，并提供完善的本地化部署方案。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
+      "id": "66b14cf1-c390-4a7c-8cf9-9d1d1ddb28df",
+      "url": "https://github.com/ruvnet/RuView",
+      "domain": "github.com",
+      "repo": "ruvnet/RuView",
+      "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-14T12:36:36.649Z",
+      "metaData": {
+        "forks": "12415",
+        "stars": "93656",
+        "topics": [
+          "awesome",
+          "claude",
+          "densepose",
+          "esp32",
+          "firmware",
+          "home-assistant",
+          "home-automation",
+          "iot",
+          "monitoring",
+          "networking",
+          "npm",
+          "pose-estimation",
+          "react",
+          "rf",
+          "self-learning",
+          "skills",
+          "spatial-intelligence",
+          "typescript",
+          "wifi",
+          "wifi-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One/RuView",
+        "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
+      },
+      "summaryData": {
+        "tags": [
+          "WiFi感知",
+          "ESP32",
+          "智能家居",
+          "隐私保护",
+          "人工智能"
+        ],
+        "cover": "",
+        "title": "RuView 开源评测：把 WiFi 变成雷达的智能家居感知平台",
+        "ability": [
+          "WiFi 人体感知",
+          "无视觉隐私保护",
+          "智能家居生态接入",
+          "生命体征监测",
+          "开源端到端方案"
+        ],
+        "summary": "无需摄像头的 WiFi 感知开源平台，能通过 ESP32 检测存在、姿态和生命体征。",
+        "category": [
+          "智能硬件",
+          "AI 应用",
+          "开源项目"
+        ],
+        "suitable": [
+          "智能家居玩家",
+          "算法研究者",
+          "隐私关注用户",
+          "DIY 爱好者",
+          "养老照护开发者"
+        ],
+        "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260914"
+    },
+    {
       "id": "231efe10-4d9b-4528-b786-aede328019ef",
       "url": "https://github.com/localsend/localsend",
       "domain": "github.com",
@@ -11,8 +381,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:28:47.449Z",
       "metaData": {
-        "forks": "5079",
-        "stars": "90998",
+        "forks": "5080",
+        "stars": "91019",
         "topics": [
           "dart",
           "file-sharing",
@@ -68,7 +438,7 @@
       "createdAt": "2026-09-14T12:22:06.479Z",
       "metaData": {
         "forks": "151",
-        "stars": "1822",
+        "stars": "1842",
         "topics": [
           "agent",
           "ai",
@@ -130,8 +500,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7033",
-        "stars": "80765",
+        "forks": "7043",
+        "stars": "80821",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -200,8 +570,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:07:17.049Z",
       "metaData": {
-        "forks": "11268",
-        "stars": "72826",
+        "forks": "11271",
+        "stars": "72865",
         "topics": [
           "agent-memory",
           "financial-forecasting",
@@ -264,8 +634,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T14:06:55.799Z",
       "metaData": {
-        "forks": "1802",
-        "stars": "5827",
+        "forks": "1807",
+        "stars": "5862",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -318,7 +688,7 @@
       "createdAt": "2026-09-13T11:32:39.784Z",
       "metaData": {
         "forks": "34568",
-        "stars": "165766",
+        "stars": "165810",
         "topics": [
           "audio",
           "deep-learning",
@@ -573,8 +943,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "1792",
-        "stars": "24398",
+        "forks": "1803",
+        "stars": "24576",
         "topics": [
           "agent",
           "agent-skills",
@@ -632,8 +1002,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
-        "forks": "506",
-        "stars": "5863",
+        "forks": "510",
+        "stars": "5913",
         "topics": [
           "agent",
           "ai",
@@ -692,8 +1062,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
-        "forks": "967",
-        "stars": "5595",
+        "forks": "973",
+        "stars": "5699",
         "topics": [
           "accounting",
           "billing",
@@ -838,7 +1208,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "271",
-        "stars": "7575",
+        "stars": "7613",
         "topics": [
           "agents",
           "claude-code",
@@ -896,7 +1266,7 @@
       "createdAt": "2026-09-12T13:26:15.148Z",
       "metaData": {
         "forks": "891",
-        "stars": "8069",
+        "stars": "8103",
         "topics": [
           "ai",
           "audio-generation",
@@ -959,8 +1329,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:22:11.914Z",
       "metaData": {
-        "forks": "607",
-        "stars": "4387",
+        "forks": "611",
+        "stars": "4472",
         "topics": [
           "claude-ai",
           "claude-pt",
@@ -1133,8 +1503,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:10:42.513Z",
       "metaData": {
-        "forks": "10844",
-        "stars": "66455",
+        "forks": "10845",
+        "stars": "66477",
         "topics": [
           "ai",
           "ai-agents",
@@ -1176,8 +1546,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3284",
-        "stars": "23026",
+        "forks": "3288",
+        "stars": "23089",
         "topics": [
           "agent",
           "agentic",
@@ -1248,8 +1618,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:44:39.739Z",
       "metaData": {
-        "forks": "12258",
-        "stars": "136580",
+        "forks": "12262",
+        "stars": "136647",
         "topics": [
           "ai",
           "copilot",
@@ -1871,8 +2241,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3321",
-        "stars": "31017",
+        "forks": "3326",
+        "stars": "31141",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -2240,8 +2610,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "676",
-        "stars": "9322",
+        "forks": "679",
+        "stars": "9392",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -2360,8 +2730,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "1619",
-        "stars": "15679",
+        "forks": "1620",
+        "stars": "15714",
         "topics": [
           "agents",
           "ai-agents",
@@ -2704,8 +3074,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "874",
-        "stars": "6648",
+        "forks": "875",
+        "stars": "6676",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -3362,8 +3732,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1642",
-        "stars": "22728",
+        "forks": "1647",
+        "stars": "22768",
         "topics": [
           "antigravity",
           "claude",
@@ -3436,8 +3806,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13526",
-        "stars": "183780",
+        "forks": "13531",
+        "stars": "183871",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -3497,8 +3867,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4545",
-        "stars": "49795",
+        "forks": "4554",
+        "stars": "49873",
         "topics": [
           "ai",
           "animation",
@@ -3754,8 +4124,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7597",
-        "stars": "50099",
+        "forks": "7602",
+        "stars": "50152",
         "topics": [
           "claude",
           "codex",
@@ -3864,7 +4234,7 @@
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
         "forks": "1811",
-        "stars": "27137",
+        "stars": "27150",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -4134,8 +4504,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "676",
-        "stars": "18849",
+        "forks": "677",
+        "stars": "18891",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -4451,8 +4821,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2501",
-        "stars": "39499",
+        "forks": "2513",
+        "stars": "39597",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -4907,8 +5277,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25621",
-        "stars": "286400",
+        "forks": "25629",
+        "stars": "286493",
         "topics": [
           "ai",
           "brainstorming",
@@ -5514,8 +5884,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3895",
-        "stars": "47865",
+        "forks": "3902",
+        "stars": "47943",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -5949,8 +6319,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3063",
-        "stars": "32081",
+        "forks": "3107",
+        "stars": "32440",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -6606,8 +6976,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3454",
-        "stars": "28131",
+        "forks": "3465",
+        "stars": "28262",
         "topics": [
           "ai",
           "audiobook",
@@ -7562,8 +7932,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1498",
-        "stars": "11876",
+        "forks": "1499",
+        "stars": "11895",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -7615,8 +7985,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5803",
-        "stars": "36663",
+        "forks": "5804",
+        "stars": "36708",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -7668,8 +8038,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4597",
-        "stars": "40954",
+        "forks": "4600",
+        "stars": "40983",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -8341,8 +8711,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3644",
-        "stars": "51882",
+        "forks": "3646",
+        "stars": "51909",
         "topics": [
           "browser",
           "chrome",
@@ -8617,8 +8987,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "6534",
-        "stars": "32762",
+        "forks": "6579",
+        "stars": "32971",
         "topics": [
           "3d-globe",
           "cesium",
@@ -9678,8 +10048,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4047",
-        "stars": "61443",
+        "forks": "4066",
+        "stars": "61688",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -9876,8 +10246,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7390",
-        "stars": "137754",
+        "forks": "7402",
+        "stars": "137961",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -10050,8 +10420,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "20247",
-        "stars": "105670",
+        "forks": "20252",
+        "stars": "105702",
         "topics": [
           "agent",
           "finance",
@@ -10900,8 +11270,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52907",
-        "stars": "479572",
+        "forks": "52944",
+        "stars": "479913",
         "topics": [
           "api",
           "apis",
@@ -11212,8 +11582,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "293",
-        "stars": "3970",
+        "forks": "294",
+        "stars": "3984",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -11318,8 +11688,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2582",
-        "stars": "44819",
+        "forks": "2596",
+        "stars": "45021",
         "topics": [
           "adhd",
           "claude-",
@@ -12178,8 +12548,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "455",
-        "stars": "6736",
+        "forks": "457",
+        "stars": "6757",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -12230,7 +12600,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3169",
-        "stars": "29736",
+        "stars": "29738",
         "topics": [
           "ai",
           "language",
@@ -12290,8 +12660,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:32:13.360Z",
       "metaData": {
-        "forks": "3205",
-        "stars": "67419",
+        "forks": "3206",
+        "stars": "67427",
         "topics": [
           "bitwarden",
           "bitwarden-rs",
@@ -12350,8 +12720,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "499",
-        "stars": "5375",
+        "forks": "498",
+        "stars": "5383",
         "topics": [
           "agent-runtime",
           "ai",
@@ -12588,8 +12958,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2853",
-        "stars": "37122",
+        "forks": "2856",
+        "stars": "37154",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -12841,8 +13211,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38571",
-        "stars": "257919",
+        "forks": "38597",
+        "stars": "258082",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -12902,8 +13272,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3071",
-        "stars": "31773",
+        "forks": "3073",
+        "stars": "31811",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -12965,8 +13335,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "674",
-        "stars": "20992",
+        "forks": "675",
+        "stars": "21025",
         "topics": [
           "dpi",
           "gpui",
@@ -13116,7 +13486,7 @@
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
         "forks": "677",
-        "stars": "7658",
+        "stars": "7684",
         "topics": [],
         "license": "",
         "homepage": "",

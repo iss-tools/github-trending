@@ -1,0 +1,68 @@
+{
+  "id": "552582eb-fec3-4ea5-84e3-4b06e028dfec",
+  "url": "https://github.com/OpenBMB/VoxCPM",
+  "domain": "github.com",
+  "repo": "OpenBMB/VoxCPM",
+  "description": "VoxCPM 是一款基于深度学习的开源语音合成与克隆工具。它通过端到端架构实现了高保真度的多语种语音生成，创新性地支持用文本描述捏声线，并提供完善的本地化部署方案。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-14T12:44:34.422Z",
+  "metaData": {
+    "forks": "4230",
+    "stars": "37225",
+    "topics": [
+      "audio",
+      "deeplearning",
+      "minicpm",
+      "multilingual",
+      "python",
+      "pytorch",
+      "speech",
+      "speech-synthesis",
+      "text-to-speech",
+      "tts",
+      "tts-model",
+      "voice-cloning",
+      "voice-design",
+      "voxcpm"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://voxcpm.com",
+    "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning - OpenBMB/VoxCPM"
+  },
+  "summaryData": {
+    "tags": [
+      "TTS",
+      "语音克隆",
+      "开源",
+      "多语种",
+      "VoxCPM"
+    ],
+    "cover": "",
+    "title": "VoxCPM：开源高保真多语种语音克隆系统",
+    "ability": [
+      "高保真语音合成",
+      "自然语言捏声线",
+      "多语种与方言支持",
+      "精准语音克隆",
+      "端侧与云端部署"
+    ],
+    "summary": "基于扩散自回归架构的开源 48kHz 高保真语音克隆系统，支持多语种及语音设计。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率工具"
+    ],
+    "suitable": [
+      "AI应用开发者",
+      "内容创作者",
+      "语音技术研究员",
+      "产品技术团队"
+    ],
+    "description": "VoxCPM 是一款基于深度学习的开源语音合成与克隆工具。它通过端到端架构实现了高保真度的多语种语音生成，创新性地支持用文本描述捏声线，并提供完善的本地化部署方案。"
+  },
+  "contentDetail": "# VoxCPM（OpenBMB/VoxCPM）深度评测与剖析\n## 一句话总结\nVoxCPM 是一套“去词表化、端到端扩散自回归”的 48kHz 高品质多语种 TTS/语音克隆系统，以 MiniCPM 为文本编码底座，支持“语音设计（自然语言描述捏声线）”“可控克隆”“终极克隆”三大核心能力，且提供从 Web Demo 到 vLLM-Omni、llama.cpp-omni 等全覆盖的生产/端侧部署路径。官方称训练数据超过 200 万小时，VoxCPM2 为 2B 规模，公开 Benchmark 的清晰度/相似度/指令遵循等多项表现跻身 SOTA 级别，但计算开销与可控稳定性仍需留意。\n---\n## 背景与痛点：为什么 VoxCPM 值得你关注？\n- TTS 的“离散 Token”时代正在过去。传统流水线（文本→音素/字 Token→声学 Token→波形）由于多阶段累积误差、声学信息损失，常常在语气、韵律与音色的细腻表现上打折扣。VoxCPM 走了一条更激进的路：直接在 AudioVAE V2 的连续潜空间里做扩散+自回归，无需离散声学 Token，把“说话”变成“在潜在空间的连续画布上用画笔一笔一笔生成”，因此能够保留更丰富的频谱细节与动态变化。\n- 多语种统一模型是刚需。过去常见做法是每种语言一套模型，维护与成本高。VoxCPM2 声称支持 30 种语言（含汉语四川话、粤语、吴语、东北话、河南话、陕西话、山东话、天津话、闽南话等方言），并且无需语言标签即可根据输入文本自动路由，真正“输入什么文本，就说哪种语言”。\n- “捏人级”的语音创造能力。此前做克隆通常只有“给一段参考音频”一种模式，而 VoxCPM2 新增 Voice Design：只需在文本开头用括号写出自然语言描述（例如“(年轻女性、温柔甜美、语速稍慢)”），就能凭空捏出一个目标声线，再结合可控克隆在保持音色的前提下调节情绪/节奏，极大降低了创意与量产的门槛。\n---\n## 核心亮点与功能剖析（含技术原理）\n### 1) 去词表化 Diffusion Autoregressive 架构与 AudioVAE V2\n- **设计理念**：把“文本到语音”视为一个“在连续潜空间上的条件生成问题”。模型全程不使用离散声学 Token，而是通过 AudioVAE V2 将音频压缩到高信息密度的潜空间，再用扩散自回归生成潜空间轨迹，最后由 AudioVAE V2 解码回 48kHz 波形。好比不再用乐谱（离散 Token）作曲，而是直接在“声音画布”上把声线一笔一笔画出来，保留了更细腻的纹理。\n- **四阶段管线**：LocEnc → TSLM → RALM → LocDiT（描述来自 README）。\n  - LocEnc：将参考音频编码为局部声纹表征，帮助模型“记住”说话人特质。\n  - TSLM（Time-Stepped Language Model）：基于 MiniCPM-4 的文本编码，负责语义、节奏和韵律规划。\n  - RALM（Regional Autoregressive Language Model）：在潜空间上进行自回归生成，把抽象规划一步步转化为连续声学轨迹。\n  - LocDiT：局部化的 DiT（Diffusion Transformer），进一步细化细节与韵律，提升表达力与音质。\n- **AudioVAE V2 的不对称编解码**：模型可接受 16kHz 参考音频，直接输出 48kHz 音频，内部自带“超分辨率”能力，无需后处理上采样。\n### 2) 三大能力：Voice Design / 可控克隆 / 终极克隆\n- **Voice Design（语言描述捏声线）**：无需参考音频，直接用自然语言描述生成目标声线。API 使用非常直观：\n```python\nfrom voxcpm import VoxCPM\nimport soundfile as sf\nmodel = VoxCPM.from_pretrained(\"openbmb/VoxCPM2\", load_denoiser=False)\nwav = model.generate(\n    text=\"(A young woman, gentle and sweet voice)Hello, welcome to VoxCPM2!\",\n    cfg_value=2.0, inference_timesteps=10, seed=42,\n)\nsf.write(\"voice_design.wav\", wav, model.tts_model.sample_rate)\n```\n- **可控克隆**：给一段参考音频，模型先学会音色，你可以继续用自然语言或参数对“速度/情绪/风格”进行微调。示例：\n```python\nwav = model.generate(\n    text=\"This is a cloned voice with style control.\",\n    reference_wav_path=\"path/to/voice.wav\",\n    cfg_value=2.0, inference_timesteps=10, seed=42,\n)\nsf.write(\"controllable_clone.wav\", wav, model.tts_model.sample_rate)\n```\n- **终极克隆**：同时给出参考音频与其精确转录，模型在“音频延续”的条件下，更大程度还原语速、停顿、语气、情绪等细节。实现要点是将同一参考片段同时传给 prompt_wav_path 与 reference_wav_path：\n```python\nwav = model.generate(\n    text=\"This is an ultimate cloning demonstration using VoxCPM2.\",\n    prompt_wav_path=\"path/to/voice.wav\",\n    prompt_text=\"The transcript of the reference audio.\",\n    reference_wav_path=\"path/to/voice.wav\",  # 可选，用于提升相似度\n)\nsf.write(\"hifi_clone.wav\", wav, model.tts_model.sample_rate)\n```\n### 3) 多语种与中文方言能力\n官方列出的 30 种语言覆盖常见语种，并特别包含多种汉语方言。无需语言标签即可根据文本识别语言。README 还给出了内部 30 语种 ASR Benchmark（CER/WER），平均错误率约 1.68%。在许多语种上表现良好，但个别语种与 Fish S2-Pro 相比仍有差距。\n### 4) 推理性能与工程化路线\n- **桌面/服务器**：推荐 RTX 4090，RTF（实时率）约 0.3；通过 Nano-vLLM 引擎可将 RTF 降至约 0.13，适合高并发服务。VRAM 需求约 8GB（2B 模型）。\n- **生产/多租户**：vLLM-Omni 官方原生支持，提供 OpenAI 兼容的 /v1/audio/speech 接口，方便从 ElevenLabs 等迁移。示例：\n```bash\nvllm serve openbmb/VoxCPM2 --omni --port 8000\ncurl http://localhost:8000/v1/audio/speech \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"openbmb/VoxCPM2\",\"input\":\"Hello from VoxCPM2 on vLLM-Omni!\",\"voice\":\"default\"}' \\\n  --output out.wav\n```\n- **端侧/无 Python 环境**：llama.cpp-omni 支持 GGUF 量化，在 Apple M4 Pro/Metal 上 RTF 约 1.76（Q8_0）。CLI 示例：\n```bash\n./build/bin/voxcpm2-cli \\\n    -t \"Cloned voice.\" -r speaker.wav -o clone.wav \\\n    VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf\n```\n### 5) 微调与生态\n- 微调支持 SFT 与 LoRA。官方说明“用 5–10 分钟音频即可完成特定说话人/语言/域的微调”。脚本与 WebUI 门槛不高：\n```bash\npython scripts/train_voxcpm_finetune.py \\\n    --config_path conf/voxcpm_v2/voxcpm_finetune_lora.yaml\npython lora_ft_webui.py  # 打开 Web UI 进行训练与推理\n```\n- 生态丰富：Nano-vLLM、vLLM-Omni、llama.cpp-omni、VoxCPM.cpp、audio.cpp、ONNX、ANE（VoxCPMANE）、Rust（voxcpm_rs），以及多个 ComfyUI 节点与视频翻译/配音项目（Video Dubbing Translator）等。这让 VoxCPM 更像一套“开放音频基础设施”，而不是单点模型。\n---\n## 目标人群与收益：谁能从 VoxCPM 获得真金白银的价值？\n- **内容创作者与 IP 运营**：用 Voice Design 快速捏出“角色专属声线”，避免人工录音周期；可控克隆让同一配音在不同情绪/语气间快速调整，利于 A/B 测试与矩阵号运营。潜在收益是缩短制作周期、降低录音与人员成本。\n- **开发者与产品团队**：需要自托管、商用友好的 TTS/克隆能力，VoxCPM 的 Apache-2.0 协议与 OpenAI 兼容接口极大降低了迁移与部署成本。通过 vLLM-Omni/Nano-vLLM 可搭建高并发服务，RTF 与 VRAM 的可控范围便于成本测算。收益是“摆脱对云 TTS 的绑定价、获得数据安全与定制空间”。\n- **研究员与极客**：需要研究多语种端到端 TTS、语音克隆与可控生成，VoxCPM 提供从代码、权重、技术报告到微调脚本的一揽子素材。可做复制实验、基线对比、或在其架构上改进。收益是“一个可复现、可扩展的研究起点”。\n- **企业/工作室的特定场景**：本地化多语种配音、按需克隆品牌声线、视频自动配音/翻译（如社区提供的 Video Dubbing Translator）。收益是自动化多语种制作、保持品牌一致性，且无须把原始音频送入第三方云端。\n---\n## 竞品/同类对比：VoxCPM2 处在什么位置？\n- **与 Fish Audio S2（4B 开源）对比**：在 Seed-TTS-eval 与 CV3-eval 等公开榜单上，VoxCPM2 在中英清晰度（WER/CER）和相似度（SIM）上与 Fish S2、LongCat 等大型模型处于同一梯队；某些任务略逊，某些任务相当。总体而言，以 2B 参数取得与更大模型可比的表现是亮点。\n- **与 CosyVoice 系列（半闭源/闭源 SOTA）对比**：CosyVoice3 在某些 Seed-TTS-eval 子项表现优异，但不开源权重。VoxCPM2 在开源生态内提供了“多语种+可控克隆+Voice Design”的综合能力，对希望私有部署的场景更友好。\n- **与 Qwen3-TTS/Qwen3-Omni 对比**：Qwen3-Omni 在某些英文 WER 上表现极好，但参数规模巨大；VoxCPM2 在多数中英/多语种指标上相当，且模型更小，部署成本相对可控。\n- **与老牌开源（F5-TTS、MaskGCT、CosyVoice2）对比**：VoxCPM2 在相似度（SIM）和可控能力上更具优势，尤其是在 Voice Design 与多语种统一建模上较老一代方案有明显升级。\n- **与闭源商业 TTS（ElevenLabs、Azure 等）对比**：商业 TTS 的优势在于开箱即用、低延迟与合规方案完善；VoxCPM2 的优势在于开源、可定制、可本地部署，适合对数据主权与成本敏感的场景。\n---\n## 局限与不足：避坑与风险提示\n- **计算门槛不低**：2B 模型推理在 RTX 4090 上才能做到约 0.3× RTF；端侧若要流畅体验，需要较新的 Apple 芯片或量化方案。老旧设备难以获得实时或准实时体验。\n- **可控生成存在随机性**：官方明确提到 Voice Design 与可控克隆“有时需要尝试 1–3 次才能得到期望的声音或风格”，说明控制力有改进空间。对强实时/强一致场景需要设计后处理或重试机制。\n- **语言覆盖盲区**：虽然支持 30 种语言，但在 MiniMax-MLS-test 的若干语种上（如阿拉伯语、乌克兰语等），VoxCPM2 与某些闭源或开源相比仍存在较明显差距。未覆盖语种的使用者需要自行微调。\n- **误用风险与合规要求**：高度逼真的语音克隆带来滥用风险。官方“严禁用于冒充、欺诈与虚假信息”，建议产品侧加入水印、审计与披露机制。法律与伦理风险需要使用者自担，仅靠技术无法解决。\n- **部署复杂度**：路径虽多（vLLM-Omni、llama.cpp-omni、Nano-vLLM、ONNX、ComfyUI 等），但每条路径都有自己的依赖与踩坑点，团队需要一定的工程与运维能力。\n---\n## 技术栈与架构解析（面向开发者）\n- **核心框架**：PyTorch（≥ 2.5.0），CUDA ≥12.0，Python ≥3.10（<3.13）。\n- **依赖与安装**：pip install voxcpm（含可选 timestamps 等额外依赖），或使用源码与 Conda 环境管理。建议按官方 Quick Start 文档一步步来，尤其是 CUDA 版本与依赖冲突。\n- **架构要点**：\n  - 文本编码层：MiniCPM-4 作为 TSLM 的骨干，对中英/多语种与长文本理解更友好。\n  - 音频潜空间：AudioVAE V2 的不对称编解码，实现 16kHz→48kHz 的超分与高效压缩。\n  - 扩散+自回归组合：通过 RALM 与 LocDiT 在潜空间进行条件扩散，使得每一步都对语气/韵律进行修正，细节更丰富。\n  - 模块化设计：便于微调、替换组件或扩展到新语种。\n- **模型版本对比**（摘取关键字段）：\n| 指标 | VoxCPM2 | VoxCPM1.5 | VoxCPM-0.5B |\n|---|---:|---:|---:|\n| 参数量 | 2B | 0.6B | 0.5B |\n| 采样率 | 48kHz | 44.1kHz | 16kHz |\n| 语种数 | 30 | 2 | 2 |\n| 克隆模式 | 独立参考+延续 | 延续 | 延续 |\n| Voice Design | ✔ | — | — |\n| RTF（RTX 4090） | ~0.30 | ~0.15 | ~0.17 |\n| VRAM | ~8GB | ~6GB | ~5GB |\n| 微调 | SFT/LoRA | SFT/LoRA | SFT/LoRA |\n| 协议 | Apache-2.0 | Apache-2.0 | Apache-2.0 |\n---\n## 上手门槛与部署体验：Docker、环境、命令一瞥\n- **环境准备**：\n```bash\n# Python 环境建议用 conda/mamba\nconda create -n voxcpm python=3.11 -y\nconda activate voxcpm\npip install \"torch>=2.5.0\" --index-url https://download.pytorch.org/whl/cu121\npip install \"voxcpm[timestamps]\"  # 按需安装 timestamps 等额外组件\n```\n- **最简 Python Demo（文本转语音）**：\n```python\nfrom voxcpm import VoxCPM\nimport soundfile as sf\nmodel = VoxCPM.from_pretrained(\"openbmb/VoxCPM2\", load_denoiser=False)\nwav = model.generate(\n    text=\"VoxCPM2 is the current recommended release for realistic multilingual speech synthesis.\",\n    cfg_value=2.0,\n    inference_timesteps=10,\n    seed=42,\n)\nsf.write(\"demo.wav\", wav, model.tts_model.sample_rate)\nprint(\"saved: demo.wav\")\n```\n- **Web Demo**：\n```bash\npython app.py --port 8808\n# 浏览器打开 http://localhost:8808\n# 可通过 --device 选择 auto/cpu/mps/cuda\n```\n- **Docker**（需自行编写 Dockerfile）：建议以官方依赖列表与 CUDA 基础镜像构建，注意内存与 GPU 显存限制，配合共享卷挂载模型权重。\n---\n## 社区活跃度与生命力\n- **发布节奏**：2025.09 发布 VoxCPM-0.5B；2025.12 开源 VoxCPM1.5；2026.04 发布 VoxCPM2。更迭节奏紧凑，持续迭代。\n- **生态与反馈**：官方提供 Discord、飞书社群与 Wiki，并有多个第三方集成（ComfyUI 节点、视频翻译/配音、多语言后端等），说明关注度与参与度较活跃。\n- **文档与支持**：Quick Start、Usage Guide、Cookbook、微调指南与 FAQ 在 voxcpm.readthedocs.io 集中，结构清晰；但第三方生态维护不一，需评估各自的稳定性。\n---\n## Demo 与代码示例（一手能跑的片段）\n- **Voice Design（自然语言捏声线）**：\n```python\nfrom voxcpm import VoxCPM\nimport soundfile as sf\nmodel = VoxCPM.from_pretrained(\"openbmb/VoxCPM2\", load_denoiser=False)\nwav = model.generate(\n    text=\"(A young woman, gentle and sweet voice)Hello, welcome to VoxCPM2!\",\n    cfg_value=2.0,\n    inference_timesteps=10,\n    seed=42,\n)\nsf.write(\"voice_design.wav\", wav, model.tts_model.sample_rate)\n```\n- **可控克隆（带风格指令）**：\n```python\nwav = model.generate(\n    text=\"(slightly faster, cheerful tone)This is a cloned voice with style control.\",\n    reference_wav_path=\"path/to/voice.wav\",\n    cfg_value=2.0,\n    inference_timesteps=10,\n    seed=42,\n)\nsf.write(\"controllable_clone.wav\", wav, model.tts_model.sample_rate)\n```\n- **流式生成（Streaming API）**：\n```python\nimport numpy as np\nchunks = []\nfor chunk in model.generate_streaming(\n    text=\"Streaming text to speech is easy with VoxCPM!\",\n):\n    chunks.append(chunk)\nwav = np.concatenate(chunks)\nsf.write(\"streaming.wav\", wav, model.tts_model.sample_rate)\n```\n---\n## 结语与行动建议\n- **如果你是产品/技术决策者**：VoxCPM2 提供了一套“高音质、多语种、可控、可自托管”的综合解决方案。在预算允许、有一定工程能力的前提下，值得投入 PoC 验证，尤其适合有多语种本地化与品牌声线克隆需求的场景。建议从 Web Demo 与本地 vLLM-Omni 部署两条线并行评估。\n- **如果你是内容创作者/小团队**：先跑通 Web Demo，尝试用 Voice Design 捏出你想要的声线，再用可控克隆做情绪变化测试。当需求扩展到批量/自动化时，再考虑 CLI/微调与云端部署。\n- **如果你是研究者/极客**：建议通读技术报告与 README 的“Architecture Design”章节，重现主要实验，并在可控性、语种泛化、计算效率等方向开展改进或基准研究。\n---\n## 参考链接与延伸阅读\n- GitHub 仓库（含代码、模型、示例与生态索引）：https://github.com/OpenBMB/VoxCPM\n- 官方文档站点（Quick Start、Cookbook、微调指南）：https://voxcpm.readthedocs.io\n- vLLM-Omni（官方多模态扩展，OpenAI 兼容 API）：README 中的安装与示例链接\n- llama.cpp-omni（端侧 C++ 推理引擎，GGUF 支持）：README 中的构建与运行示例\n- Demo 与音频样例页面：voxcpm.com / whisperweb.art 试用页面",
+  "type": "project",
+  "dateAdded": "20260914"
+}

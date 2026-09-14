@@ -1,0 +1,151 @@
+# Crosstalk-Solutions/project-nomad
+
+[GitHub URL](https://github.com/Crosstalk-Solutions/project-nomad)
+
+
+## Project NOMAD：离线生存电脑的 Docker 聚合总控
+
+> 一键打造离线知识中枢，集成百科、AI、地图、教育工具
+
+- **Tags**: 离线, Docker, 本地AI, 知识库, 自托管
+- **Category**: 开发工具, 生活效率, AI 应用
+
+## Details
+
+# Project NOMAD 深度评测：把维基百科、地图与 AI 装进一台“离线生存电脑”的 Docker 聚合体
+> 一句话总结：Project NOMAD 是一个“离线优先”的知识与教育服务器总控（Command Center）+ 容器化全家桶，把维基百科、Khan Academy、离线地图、笔记、数据工具、本地 AI（Ollama + Qdrant RAG）等统一到一个本地 Web 控制台里，一键安装、自动更新，适合把一台旧机或小服务器打造成“离线生存电脑”。
+## 背景与痛点：为什么要做“离线生存电脑”
+- 常见痛点：
+  - 网络不稳定/甚至完全断网（户外/应急/灾难场景）时，信息和资料无法访问。
+  - 在线服务几乎都有追踪与账号体系，数据不在自己手里。
+  - 自己搭建一套离线能力，需要分别折腾维基百科（Kiwix）、地图（ProtoMaps）、在线课程（Kolibri）、本地 LLM（Ollama）、笔记、密码管理等，每个都有独立的部署与配置，维护成本极高。
+  - 很多“离线生存电脑”方案偏极客化，依赖特定硬件或复杂手工步骤，体验对普通人不友好。
+- Project NOMAD 的解法：
+  - 作为“总控”（Command Center）与 API，用 Docker 编排一系列成熟组件，统一管理安装、配置与更新，全程通过浏览器 UI 完成操作，大幅降低上手门槛。仓库 README 明确写到 NOMAD 是“管理 UI（‘Command Center’）与 API，通过 Docker 编排容器化的工具与资源，处理安装、配置与更新”。
+## 核心亮点与功能剖析
+### 1) 统一 Web 控制台 + Docker 编排（架构设计）
+- 把 NOMAD 理解为“容器大管家”+ Web 控制台：
+  - 后端通过 Docker Compose 编排多个容器（管理应用本身、数据库、向量库 Qdrant、Ollama、Kiwix/Kolibri 等各组件）。
+  - 提供统一的 REST API 与前端界面，把原本分散的多个服务整合到“一个 localhost:8080”里。
+- 技术栈线索：
+  - README 中出现 `node ace` 命令，这是 AdonisJS（Node/TypeScript Web 框架）的 CLI 工具，表明主控应用采用 Node/TS 生态，便于自动化测试与“干跑（dry-run）”自动更新流程。
+  - 安装脚本会自动拉取 Docker（调用 get.docker.com）并检查 `docker compose`（v2）可用性，并可选配置 NVIDIA Container Toolkit，为本地 AI 做准备。
+### 2) 内置能力全家桶
+- AI 助手（本地 + RAG）：
+  - 默认用 Ollama 在本地跑 LLM；也支持 OpenAI API 兼容服务（如 LM Studio、llama.cpp）。
+  - 集成 Qdrant 向量库，支持文档上传与语义检索，可在“知识库”上做 RAG 问答。
+- 信息资料库：
+  - 通过 Kiwix 提供离线维基百科、医学参考、生存指南、电子书等 ZIM 资源，内置 ZIM 库管理与内容选择器。
+- 教育平台：
+  - 集成 Kolibri，可离线学习 Khan Academy 课程，并支持进度跟踪与多用户。
+- 离线地图：
+  - 集成 ProtoMaps 离线地图资源（可分区域下载），配合前端 MapLibre GL JS 渲染，支持搜索与浏览；官方另有 project-nomad-maps 仓库托管大体积地图文件。
+- 数据工具与笔记：
+  - 内嵌 CyberChef（加密、编码、哈希、数据分析等操作）。
+  - 内嵌 FlatNotes（支持 Markdown 的本地笔记）。
+- 系统基准与排行榜：
+  - 内置“系统基准”测试，对设备打分并上传到社区排行榜（benchmark.projectnomad.us）。
+- 应用仓库（Supply Depot）：
+  - 提供一键安装的“补给库”（PDF 工具、文件浏览器、电子书库、密码管理等），还支持你把自己的自定义 Docker 容器纳入进来。这意味着 NOMAD 是一个可扩展的“应用商店”式的本地平台。
+### 3) 自动更新与运维友好
+- 自动更新策略：
+  - 支持在设定的窗口内自动拉取 minor/patch 更新；有“冷却期”和预检查（磁盘、下载、任务队列）；大版本仍需手动升级。
+  - 提供了一套 `node ace auto-update:dry-run` 命令，可在不影响环境的情况下验证更新决策逻辑，适合接入 CI 或验证脚本。
+- 运维脚本：
+  - 安装到 `/opt/project-nomad`，提供 `start_nomad.sh`、`stop_nomad.sh`、`update_nomad.sh` 与卸载脚本，方便日常维护。
+### 4) 隐私与网络策略
+- 零遥测、离线优先：
+  - 默认不回传任何遥测数据；安装阶段需要联网下载依赖与镜像，之后可完全离线使用。
+- 联网检测机制：
+  - 默认先访问 Cloudflare 的 1.1.1.1/cdn-cgi/trace；若不可用则回退到 GitHub API 与项目自身的 API 作为“连通性”判断；用户可在 UI 或环境变量 `INTERNET_STATUS_TEST_URL` 自定义检测端点。
+## 上手门槛与部署体验
+### 1) 最快上手路径（Debian/Ubuntu）
+- 官方给出的“一键安装”示例（Debian/Ubuntu）：
+```bash
+sudo apt-get update && \
+sudo apt-get install -y curl && \
+curl -fsSL https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/install/install_nomad.sh \
+  -o install_nomad.sh && \
+sudo bash install_nomad.sh
+```
+- 安装完成后浏览器访问 `http://localhost:8080`（或 `http://DEVICE_IP:8080`）。
+### 2) 高级 Docker Compose 部署
+- 对于希望自定义配置的人，仓库提供了 Docker Compose 模板，可以直接复制为 `docker-compose.yml` 后修改，再执行 `docker compose up -d` 来启动控制台与依赖（需对 Docker 有一定经验）。
+### 3) 系统要求与硬件门槛
+- 最小规格（仅运行 NOMAD 自身控制台）：
+  - 双核 2 GHz+ CPU，4GB 内存，至少 5GB 可用磁盘空间；建议 Ubuntu 26.04/24.04 LTS 或 Debian 12，且安装阶段需联网。
+- 推荐规格（启用 AI 工具）：
+  - Ryzen 7 / i7 级别 CPU，32GB 内存，NVIDIA RTX 3060 或同等级 GPU（更大 VRAM 可跑更大的模型），至少 250GB SSD 空间。
+### 4) 用户体验与文档
+- 官网与文档：
+  - 提供 step-by-step 安装指南（projectnomad.us/install），还针对 WSL2 用户提供了社区维护的安装路径。
+- 硬件选购建议：
+  - 文档提供从 150 美元到 1000 美元+的构建推荐，帮助用户根据预算选择硬件。
+## 技术栈与架构解析
+### 1) 主控应用
+- 命令行出现 `node ace`，对应 AdonisJS 命令；自动更新干跑场景暗示主控采用了结构化发布、时钟窗口、预检查等工程实践，适合需要稳定可控的生产/离线环境。
+### 2) 容器化组件（来自 README 的“Powered By”表）
+- Kiwix（信息资料库）、Ollama + Qdrant（本地 AI 与向量检索）、Kolibri（教育平台）、ProtoMaps（离线地图）、CyberChef（数据工具）、FlatNotes（笔记）等。
+### 3) AI 能力边界
+- NOMAD 自身并不“直接提供”模型，而是负责编排 Ollama 或兼容服务，并通过 Qdrant 做 RAG；模型下载与运行由底层服务负责，NOMAD 仅在 UI/流程层面做集成。这意味着你可以灵活更换模型或远程推理服务，但需要具备对 Ollama/兼容服务的理解与维护能力。
+### 4) 安装脚本设计
+- 安装脚本会检测并安装 Docker（使用官方 get.docker.com）、检查 `docker compose`（v2）、可选配置 NVIDIA Container Toolkit（用于 GPU 透传到容器），并为 NOMAD 创建 `/opt/project-nomad` 目录，拉取配置文件与脚本。
+## 社区活跃度与生命力
+### 1) Star/Fork 与贡献
+- 仓库 Star 数约 36.7k，Fork 约 3.7k（Commits 页面可见）。
+- 最近的提交记录显示：
+  - 2026-09-13 有 CI 相关的提交；
+  - 2026-09-02 发布了 1.34.1；
+  - 2026-08-11/04 有功能更新与修复，包括“下载任务可恢复、ZIM 知识库修复、UI 改进”等。说明项目处于活跃维护状态。
+### 2) Issues 与 Pull Requests
+- 仓库显示 51 个 Issue、36 个 Pull Requests，反映出一定的社区参与与问题跟踪（页面可见）。
+### 3) 社区与生态
+- 官方提供：
+  - 网站（projectnomad.us）、Discord 社区、基准排行榜、FAQ、以及社区贡献的“社区插件”文档（admin/docs/community-add-ons.md）。
+- 地图资源：
+  - 单独维护 project-nomad-maps 仓库，托管较大型地图文件，便于按区域下载与导入，避免主仓库膨胀。
+## 竞品/同类对比（简要）
+- 与“自己逐个搭建 Kiwix/Ollama/Kolibri 等服务”相比：NOMAD 提供统一 UI 与自动化编排，大幅降低运维复杂度。
+- 与其他“离线知识”方案（如某些预装了 ZIM 的发行版或只专注维基百科的离线包）相比：NOMAD 的功能覆盖更广，囊括教育、地图、AI、笔记与应用商店，适合作为“个人/家庭/班级”的本地知识中枢。
+- 与只关注 AI 的本地平台（如 Ollama + RAG 的各种 starter）相比：NOMAD 把 AI 能力与知识资料库、教育平台等组合，打造的是一个更完整的“生存电脑”体验。
+## 局限与不足
+- 操作系统支持面：当前官方一键安装仅支持 Debian 系（Ubuntu 26.04/24.04 LTS、Debian 12），非 Debian 系需自行折腾 Docker Compose 部署；官方提供了 WSL2 的社区文档，但对纯 Windows/macOS 的原生支持仍有限。
+- 硬件门槛：要充分体验 AI 能力，推荐配置显著高于“最小规格”，对旧机或小型设备并不算“轻量”。
+- 安全模型：默认没有内置账号与权限系统，强调“开放可用”并建议通过网络层面的端口控制来限制访问；官方在 roadmap 上有“可选认证”的建议但尚未明确落地时间；不适合直接暴露到公网。若要放到多用户环境（学校/家庭），需要额外做网络或反向代理层面的访问控制。
+- 更新与依赖链：自动更新虽然方便，但在离线/受限网络环境下需要仔细规划更新窗口与下载行为；某些依赖（如 ZIM 目录、模型下载）仍依赖一次性的网络访问。
+- AI 模型管理：NOMAD 更偏“编排与体验”，模型的下载、版本管理、量化与调优仍需要你对 Ollama 或兼容服务有理解。
+## 目标人群与收益（谁值得用？）
+- 场景与人群：
+  - 应急/灾难预备、户外/车载离线环境：希望把关键知识、地图与本地 AI 全部装在自有的硬件上。
+  - 家庭/教育机构：需要离线的教育内容（Khan Academy）、百科与资料，并能在一台“本地服务器”上统一管理、跟踪进度。
+  - 开发者与极客：希望拥有一台“可控的、可扩展的”本地平台，用 Docker 把自己常用工具集中管理，并能在上面跑本地 LLM 与 RAG。
+- 收益：
+  - 效率提升：一次安装，统一控制台，后续安装/更新应用与资料库基本在 UI 内完成。
+  - 成本可控：基于自有硬件，无订阅与云费用；软件开源（Apache 2.0）。
+  - 数据主权：资料与模型全在本地，无云端追踪与账号绑定（默认零遥测）。
+  - 可扩展性：Supply Depot + 自定义 Docker 容器，让你按需扩展功能。
+## Demo/代码示例：30 秒尝鲜（Debian/Ubuntu）
+- 最小可用安装：
+```bash
+sudo apt-get update && \
+sudo apt-get install -y curl && \
+curl -fsSL https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/install/install_nomad.sh \
+  -o install_nomad.sh && \
+sudo bash install_nomad.sh
+```
+- 安装完成后，在同一设备或局域网设备浏览器中打开：
+  - `http://localhost:8080`
+  - 或 `http://DEVICE_IP:8080`
+- 随后在“Command Center”引导完成首次配置，即可在 UI 中启用/下载：
+  - AI 助手（选择 Ollama 模型）、信息资料库（ZIM 文件）、Kolibri 课程、离线地图与各类应用。
+## 结语与行动建议
+- 终极评判：Project NOMAD 是当前离线知识+AI 领域里难得的“工程化聚合平台”。它不是从零重造轮子，而是把成熟的离线组件（Kiwix、Kolibri、ProtoMaps、Ollama、Qdrant、CyberChef、FlatNotes 等）通过 Docker 与统一 UI 编排起来，降低运维与使用成本，同时保持了扩展性与自由度。如果你愿意拥有一台“自己的离线生存电脑”，它是最接近“开箱即用”的方案之一。
+- 行动建议（给不同人群）：
+  - 小白/一般用户：在一台较新的 Debian/Ubuntu 机器上，先按官方一键安装体验基础能力（维基百科、地图、笔记），逐步启用 AI 与教育模块。
+  - 开发者/极客：在“高级安装”中使用 Docker Compose 自定义配置，把 NOMAD 视为可编程的本地平台，结合自己的容器和自动化脚本。
+  - 机构/教室：在局域网内部署一台 NOMAD 节点，通过反向代理与网络访问控制构建多用户离线学习环境，关注 roadmap 的“可选认证”动态。
+- 官方入口与延伸阅读：
+  - GitHub 仓库：Crosstalk-Solutions/project-nomad
+  - 安装指南（详细步骤）：projectnomad.us/install
+  - 离线地图资源仓库：Crosstalk-Solutions/project-nomad-maps（按区域下载地图文件）
+  - 社区与基准：Discord（页面“Join the Community”链接）、benchmark.projectnomad.us 排行榜

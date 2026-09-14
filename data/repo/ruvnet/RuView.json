@@ -1,0 +1,75 @@
+{
+  "id": "66b14cf1-c390-4a7c-8cf9-9d1d1ddb28df",
+  "url": "https://github.com/ruvnet/RuView",
+  "domain": "github.com",
+  "repo": "ruvnet/RuView",
+  "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-14T12:36:36.649Z",
+  "metaData": {
+    "forks": "12415",
+    "stars": "93656",
+    "topics": [
+      "awesome",
+      "claude",
+      "densepose",
+      "esp32",
+      "firmware",
+      "home-assistant",
+      "home-automation",
+      "iot",
+      "monitoring",
+      "networking",
+      "npm",
+      "pose-estimation",
+      "react",
+      "rf",
+      "self-learning",
+      "skills",
+      "spatial-intelligence",
+      "typescript",
+      "wifi",
+      "wifi-security"
+    ],
+    "license": "MIT license",
+    "homepage": "https://Cognitum.One/RuView",
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
+  },
+  "summaryData": {
+    "tags": [
+      "WiFi感知",
+      "ESP32",
+      "智能家居",
+      "隐私保护",
+      "人工智能"
+    ],
+    "cover": "",
+    "title": "RuView 开源评测：把 WiFi 变成雷达的智能家居感知平台",
+    "ability": [
+      "WiFi 人体感知",
+      "无视觉隐私保护",
+      "智能家居生态接入",
+      "生命体征监测",
+      "开源端到端方案"
+    ],
+    "summary": "无需摄像头的 WiFi 感知开源平台，能通过 ESP32 检测存在、姿态和生命体征。",
+    "category": [
+      "智能硬件",
+      "AI 应用",
+      "开源项目"
+    ],
+    "suitable": [
+      "智能家居玩家",
+      "算法研究者",
+      "隐私关注用户",
+      "DIY 爱好者",
+      "养老照护开发者"
+    ],
+    "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。"
+  },
+  "contentDetail": "<|assistant|>我需要打开 RuView 在 GitHub 的 Releases 页面与 Issues 页面，用于评估版本节奏、更新频率与社区响应速度。</think>\n<|assistant|>我将打开 RuView 的在线 Demo 页与官方产品站，以核对其演示、功能边界与硬件需求，确保评测中的能力描述不夸大。</think>\n# 一句话总结\nRuView 是一套“把普通 WiFi 变成空间感知与生命体征传感器”的开源端到端平台：无需摄像头、无需穿戴，就能通过射频（CSI）做人在不在、姿态、呼吸心率等检测，并直接接入 Home Assistant、Matter（Apple Home/Google Home/Alexa/SmartThings）等主流智能家居生态。适合研究、智能家居与隐私敏感场景的非视觉感知需求。\n---\n## 背景与痛点：为什么需要“不看也能感知道”？\n- 隐私与侵入感：摄像头在卧室、卫生间、更衣室等场景难以接受；即便在公共空间，合规成本高、法规限制多。\n- 光线与遮挡：夜视、烟雾、隔墙、家具遮挡都会导致视觉系统失效；很多人也反感“被看”。\n- 部署成本：传统安防/传感器往往走有线、取电困难、多传感器融合布线复杂。\nRuView 的解法是：利用你家原本就存在的 WiFi 信号（物理上存在），通过 ESP32 等低成本硬件采集信道状态信息（CSI），再用 AI 把这些“射频扰动”翻译成“人在哪里、在做什么、是否正常”。这一类方向近年学术界称为 WiFi Sensing/WiFi Radar，而 RuView 把它做成了一套可上手、可部署、可集成的工程化平台。\n---\n## 技术栈与架构解析（由下到上）\n- 硬件与固件层：\n  - 优先支持 ESP32-S3/C6 等 MCU；README 明确不支持 ESP32-C3 与老 ESP32（单核、算力不足以支撑 CSI DSP）。\n  - 固件路径：firmware/esp32-csi-node；提供出厂/预编译镜像和 ESP-IDF 构建路线。\n  - 新增支持树莓派 5/4/3B+（CYW43455/BCM43455c0）的 nexmon_csi .pcap 作为多源输入之一（来自 rvCSI 边缘 RF 运行时）。\n- 边缘 RF 运行时（rvCSI）：\n  - Rust-first、TypeScript 可调用；提供“多源摄取 → 校验 → DSP → 类型化事件 → RuVector RF 记忆”的管线。已独立为 ruvnet/rvcsi 仓库并在 crates.io 与 npm 分发。\n- 模型与算法层（WiFi DensePose）：\n  - 核心网络：Transformer + GNN；输入 56 通道 WiFi 信号；输出 128 维环境指纹 + 17 关节人体姿态（Camera-free DensePose）。\n  - 支持“自监督 → 有监督 → 跨模态（WiFi+相机）”多种训练模式；提供环境指纹索引与异常检测能力。\n- 平台与应用层：\n  - HOMECORE：本地状态/历史/自动化/签名 Wasm 插件/语音钩子/HomeKit 支持。提供统一编排层。\n  - 边缘模块“Cog”市场：健康、安全、楼宇、零售、工业、研究、AI、Swarm 等八大类，总计 100+ 小模块（如 fall-detect、sleep-apnea、meeting-room、elevator-count 等）。\n  - MetaHarness（@ruvnet/ruview）：给 AI 代理与人类使用的引导式运维工具链；支持 doctor/guidance/agent/brain/verify 等子命令，并内置“MEASURED vs CLAIMED”诚实校验护栏。\n- 集成与生态：\n  - Home Assistant：MQTT 自动发现（HA-DISCO），21 个实体/节点，3 个 Blueprint，Lovelace 面板、隐私模式与阈值调优（ADR-115）。\n  - Matter：作为 Matter Bridge 接入 Apple Home/Google Home/Alexa/SmartThings；支持语音查询房间存在/生命体征（零自定义技能）。\n  - MCP 服务器 rvagent：将 RuView 的能力暴露给 Claude Code/Cursor/Ruflo 等代理（ruview.presence.now、ruview.vitals.get_* 等工具）。\n- 隐私与治理：\n  - BFLD（Beamforming Feedback Layer for Detection）：防止从 802.11ac/ax BFI 泄露身份；在代码级强制三条不变式（原始 BFI 永不出节点、身份嵌入仅 RAM、跨站点相关性不可行）。配套操作面与 HA Blueprint（ADR-118）。\n  - Witness/Governed evidence：给事件附加隐私策略、不确定性、来源与见证记录；支持审计与合规。\n---\n## 上手门槛与部署体验\n### 快速开始（无需硬件的 Docker 体验）\n来自 README 的 Quick Start 提供了一键 Docker Demo（仿真数据）：\n```bash\ndocker pull ruvnet/wifi-densepose:latest\ndocker run -p 3000:3000 ruvnet/wifi-densepose:latest\n# 浏览器打开 http://localhost:3000\n```\n适合快速跑通端到端管线、理解模型输出与 UI 交互，真实 CSI 数据在内置仿真集中。\n### ESP32-S3 真机部署（$9 级别成本）\n最小命令示例（Windows COM9 串口，需按实际情况替换）：\n```bash\n# 1) 烧录固件（bootloader、分区表、OTA、应用）\npython -m esptool --chip esp32s3 --port COM9 --baud 460800 \\\n  write_flash 0x0 bootloader.bin 0x8000 partition-table.bin \\\n  0xf000 ota_data_initial.bin 0x20000 esp32-csi-node.bin\n# 2) 写入 WiFi 凭证与目标后端 IP\npython firmware/esp32-csi-node/provision.py --port COM9 \\\n  --ssid \"YourWiFi\" --password \"secret\" --target-ip 192.168.1.20\n```\n部署后，节点开始采集 CSI 并上报到“sink/后端”，在 Home Assistant 或本地 Dashboard 即可见到“人在不在、呼吸心率、语义状态（如 someone-sleeping、bathroom-occupied）”等实体与事件。\n### ESP32-C6 科研向路径（Wi-Fi 6 + 802.15.4）\n```bash\ncd firmware/esp32-csi-node\nidf.py set-target esp32c6 && idf.py build\nidf.py -p COM6 flash\n```\nC6 特性包括 HE-LTF 子载标记、802.15.4 网络时间同步与可选 TWT，以及 RISC-V LP 核的“低功耗运动门控”（默认关闭）。\n### Claude Code / Codex 插件（强化开发者体验）\n仓库内置插件市场与命令套件，一键接入 Claude Code 或 OpenAI Codex：\n```bash\n# 在 Claude Code 中：\n/plugin marketplace add ruvnet/RuView\n/plugin install ruview@ruview\n# 常用命令：\n/ruview-start   # 上手向导（Docker/构建/真机）\n/ruview-flash   # 编译并烧录固件\n/ruview-provision   # 写入 WiFi/信道/MAC/目标 IP\n/ruview-app      # 运行 sensing 应用（presence/vitals/pose/sleep 等）\n/ruview-train    # 训练/评估/发布模型（含 GPU 云端）\n/ruview-verify   # 测试 + 确定性证明 + witness 包\n```\n对于 Codex 用户，把 prompts/*.md 复制到 ~/.codex/prompts 即可使用同一套提示集。插件代码位于 plugins/ruview/。\n### 文档与校准\nREADME 提供到 User Guide、Build Guide、Calibration & Room Training Guide 等文档的索引，解释 calibrate/enroll/train-room 等操作的最小帧数、质量门控、空房基线等落地细节。\n### 软件状态与限制（官方标注）\n- Beta 软件，API 与固件可能变更。\n- 不支持 ESP32-C3 与老 ESP32（单核、DSP 算力不足）。\n- 单节点空间分辨率有限；建议 2+ 节点或搭配 Cognitum Seed。\n- Camera-free pose 的当前精度有限（PCK@20≈2.5%）；相机 Ground Truth 训练目标为 ≥35%，数据收集与评估仍在进行中。该项目要求在对外宣传时应加“first-cut, below-target, runtime-stub”说明。ADR-079 / #645 追踪复现基准的进度。\n---\n## Demo / 代码示例（让开发者一眼看懂）\n### 1) Docker 一键体验（最小示例）\n```bash\ndocker pull ruvnet/wifi-densepose:latest\ndocker run -p 3000:3000 ruvnet/wifi-densepose:latest\n# 打开浏览器访问 http://localhost:3000 查看 UI 与输出\n```\n说明：使用仿真数据，不需任何硬件即可浏览 UI、模型输出格式与工作流，适合评估是否投入硬件采购与二次开发。\n### 2) 模型训练管线（自监督 + 环境指纹）\n```bash\n# Step 1：仅用原始 WiFi 数据自监督学习\ncargo run -p wifi-densepose-sensing-server -- \\\n  --pretrain --dataset data/csi/ --pretrain-epochs 50\n# Step 2：有标签微调（人体姿态）\ncargo run -p wifi-densepose-sensing-server -- \\\n  --train --dataset data/mmfi/ --epochs 100 --save-rvf model.rvf\n# Step 3：部署模型进行指纹提取\ncargo run -p wifi-densepose-sensing-server -- \\\n  --model model.rvf --embed\n# Step 4：构建环境指纹索引，用于“这是厨房还是卧室？”之类检索/异常检测\ncargo run -p wifi-densepose-sensing-server -- \\\n  --model model.rvf --build-index env\n```\n要点：整个过程统一为 Rust CLI，数据从 raw CSI → 模型 → 部署，无需辗转多个工具链。\n### 3) Home Assistant 集成（最简接入）\nREADME 明确“一条 --mqtt 标志即可接入 Home Assistant”；节点发布 21 个实体（11 个原始信号 + 10 个语义状态），并通过 HA-DISCO 自动发现。基础使用只需：\n- 保证 MQTT Broker（如 mosquitto）已运行；\n- 启动 RuView 时开启 MQTT 发布（参数见文档）；\n- HA 中自动发现实体与 Blueprint，直接用于自动化与面板。\n---\n## 社区活跃度与生命力\n- 仓库数据：Stars 92.7k、Forks 12.3k、Watchers 856；目录中包含 docs、docker、examples、tests、plugins、firmware、ADR（架构决策）等完整工程骨架，显示长期投入与专业化维护。\n- 更新与 ADR：README 提到 205 条 ADR，覆盖硬件、信号处理、ML、平台、基础设施等领域；并新增 BFLD、SENSE-BRIDGE、RuView-Unified 等方向，体现持续迭代与路线清晰。\n- 资源与生态：独立站点与文档、官方 Demo 页、Hugging Face 模型仓库、Affiliate 计划、Claude/Codex 插件与 MetaHarness npm 包，形成了“开源 + 产品 + 内容 + 商业”的闭环生态（见外部链接）。\n---\n## 核心亮点与功能剖析\n- 感知能力清单：存在与占用、呼吸与心率、活动与跌倒、环境指纹与睡眠阶段等；还能给出“有人睡着、可能痛苦、房间活跃、老人久坐未动、会议进行中、卫生间占用、跌倒风险升高、离床、无移动、跨房间过渡”等语义状态，极大减少上层二次开发的信号处理负担。\n- 非视觉姿态（WiFi DensePose）：17 关节姿态估计端到端实现，虽当前单机 ESP32 精度尚处 early stage（PCK@20≈2.5%），但管线与架构已就绪，具备可扩展到多节点与更高算力的路径（ADR-079）。\n- 可插拔的边缘模块市场：按领域分类（健康/安全/建筑/工业/研究/AI/Swarm），每个模块体积极小（KB 级），支持签名与 OTA 更新，便于按需组合（如呼吸同步、跌倒检测、入侵、玻璃破碎、队列长度、叉车接近、PPE 合规等）。\n- 隐私与合规工程化：BFLD 从代码级强制身份不泄露；Governed evidence 把事件与隐私策略/不确定性/来源/见证绑定，便于审计与合规留存；强调“raw RF structurally unexportable”的统一 RF 世界模型策略（ADR-118, 273–277）。\n- 统一 RF 世界模型（RuView-Unified）：兼容 WiFi CSI、FMCW 雷达、UWB、5G SRS 等多源 RF，提供统一的“RF Tensor”与空间记忆，并试图对齐 802.11bf/ETSI-ISAC 等行业标准（当前精度为合成数据驱动，强调“真实数据验证中”）。\n- AI 友好的 MetaHarness 与 MCP：把“上板→校准→训练→验证→证据”流程工具化、可编程，方便 Claude/Cursor/Ruflo 等 AI 代理直接参与运维与诊断；rvegent MCP 提供标准工具（presence.now、vitals.get_*、bfld.subscribe 等）。\n---\n## 目标人群与收益\n- 研究者与开发者：想快速验证 WiFi CSI/感知算法、原型新模型、部署实验节点；RuView 提供完整数据流、训练管线和丰富的模块/插件，避免从零造轮子。\n- 智能家庭发烧友与 DIY 用户：在不装摄像头的前提下实现“人在不在、老人活动监测、睡眠质量、宠物行动”等能力，并能直接接入 HA/Matter。\n- 医疗/养老/照护场景（非临床决策）：作为“辅助/趋势监测”，用于跌倒预警、久坐未动提醒、睡眠趋势等，但需注意其当前精度与合规边界（非医疗器械）。\n- 零售与楼宇运营：客流统计、停留热力、会议室占用、节能联动（HVAC/lighting-zones）等模块化能力，可按需安装与扩展。\n- 隐私敏感单位：监狱、病房、更衣室等不适合摄像头的场景；通过射频感知获取存在/活动信息，降低隐私风险。\n---\n## 竞品/同类对比\n- 传统 PIR/毫米波/超声波存在传感器：成本低、即插即用，但基本只有“有/无”二元信息，难以提供呼吸心率、语义状态或多人区分；RuView 提供更丰富的高层语义与多模态融合可能。\n- 纯视觉方案（摄像头 + 计算机视觉）：信息密度高但隐私与合规门槛高；光线/遮挡/弱光场景受限；部署成本高（布线/存储/算力）。RuView 提供无像素的替代路径。\n- WiFi 感知学术界项目（如 Wi-Fi 感知论文、DensePose 变体）：往往停留在代码片段/数据集层面，缺少工程化集成、OTA、模块市场与主流智能家居生态；RuView 更强调“平台 + 生态 + 文档 + 工具链”。（注：具体论文与竞品代码细节需依据外部资料逐一对照。）\n---\n## 局限与不足（需明确）\n- 硬件门槛：需要 ESP32-S3/C6 等特定 MCU；路由器/环境对 CSI 质量影响显著（信道拥堵、频段、天线布局等）。单节点分辨率有限，建议多节点或专用硬件。\n- 精度与可用性：姿态估计在单节点 ESP32 上尚属 early stage（PCK@20≈2.5%），官方明确不应作为“成熟能力”对外宣传；生命体征等指标受距离/姿态/环境干扰明显，适合趋势监测而非临床决策。\n- 学习成本：需要一定 WiFi/射频/嵌入式基础；理解 CSI、校准与训练曲线需要时间。建议先跑 Docker Demo、阅读 User Guide 与 Calibration Guide，再逐步上真机。\n- Beta 性质：API/固件可能变更；ADR 与 Issue 在持续演进，生产环境部署应做好版本锁定与变更管理。\n- 隐私与合规是“工程强化”而非“绝对保证”：BFLD 与 Governance 很重要，但部署时仍需结合组织安全与合规策略进行审查与测试。\n---\n## 商业模式与性价比（面向硬件/商业用户）\n- 开源核心（MIT License）：仓库主体采用 MIT 协议，可免费商用与二次开发（需遵守许可证与第三方库约束）。\n- 商业硬件与产品：Cognitum Seed/Appliance 等付费硬件提供更高算力、易用性与企业级特性；官方 Affiliate 计划显示创作者可获 25% 销售佣金，侧面印证其商业化路径。\n- 价值主张：对重度使用者，商业硬件可降低自研/运维成本；对个人/研究者，完全可走“开源 + 自备 ESP32 + Docker + 自训练”路线。\n---\n## 结语与行动建议\n### 终极评判\nRuView 是目前开源界在“WiFi 感知工程化”上走得最远的项目之一：从底层 CSI 采集、DSP、模型训练，到边缘模块市场、智能家居与 Matter 集成，再到 AI 友好的 MetaHarness/MCP 与隐私工程化，形成了较完整的技术栈与生态。它的亮点在于把前沿的 WiFi DensePose/RF Sensing 变成了“可玩、可集成、可治理”的平台，而不仅是论文复现。\n### 如何开始（行动建议）\n- 如果你是想快速看效果的“体验党”：先跑 Docker Demo（一条命令起服务，浏览器访问）。再读官方产品站与 Demo 页了解能力边界与硬件需求。\n- 如果你是智能家居玩家：确保你有 ESP32-S3/C6 与可用的 MQTT Broker，按 README 的 ESP32 固件烧录与 provisioning 流程上板；随后在 Home Assistant 开启 MQTT 自动发现，查看 21 实体与 3 Blueprint，把“房间存在/睡眠/卫生间占用”等语义状态接入自动化。\n- 如果你是研究者/算法工程师：从 Docker Demo 开始，走一遍“pretrain → train → embed → build-index”模型管线，再根据 docs/ADR 中的信号处理与架构文档定制自己的数据集与评估流程。注意当前 pose 精度限制与 ADR-079 的路线图。\n- 如果你是企业/集成商：先做小规模 PoC（2+ 节点 + HA/Matter），验证在你场景的真实精度与稳定性；同时评估 BFLD/Governance/Witness 在你合规框架下的适配度；再决定是否引入 Cognitum Seed/Appliance 缩减运维成本。\n---\n## 小白能带走的“三句话要点”\n1) RuView 让你用便宜的 WiFi 板子（比如 ESP32-S3）就实现“人在不在、呼吸心率、姿态估计”等能力，完全不装摄像头。  \n2) 它与 Home Assistant、Apple Home、Google Home、Alexa 等主流生态打通，可以一条命令接入智能家居，用语音查询房间状态。  \n3) 现在还是 Beta 状态，某些功能（如无相机姿态）精度还在打磨，适合尝鲜和实验性部署，生产环境要多节点、多验证后再大规模用。",
+  "type": "project",
+  "dateAdded": "20260914"
+}
