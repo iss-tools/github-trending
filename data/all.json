@@ -1,6 +1,153 @@
 {
   "all": [
     {
+      "id": "d3e8fed2-9db4-483a-aa30-36b114d98bc8",
+      "url": "https://github.com/MG1937/ASC",
+      "domain": "github.com",
+      "repo": "MG1937/ASC",
+      "description": "Droid ASC 打破传统反编译需全局索引的瓶颈，利用压缩流按需提取和R8布局特性，将大型APK的反编译速度提升至秒级，内存占用降至百MB级，是处理复杂样本的效率神器。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-15T11:17:15.276Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "逆向工程",
+          "静态分析",
+          "反编译",
+          "R8"
+        ],
+        "cover": "",
+        "title": "Droid ASC：毫秒级零索引的Android逆向引擎",
+        "ability": [
+          "零预处理/按需解压",
+          "毫秒级极速反编译",
+          "极低内存占用",
+          "利用R8特性加速",
+          "生成最小DEX"
+        ],
+        "summary": "零索引、按需解压的Android逆向工具，实现百毫秒级反编译与极低内存占用。",
+        "category": [
+          "开发工具",
+          "安全工具"
+        ],
+        "suitable": [
+          "移动安全研究员",
+          "Android逆向工程师",
+          "红蓝队人员",
+          "安全应急响应"
+        ],
+        "description": "Droid ASC 打破传统反编译需全局索引的瓶颈，利用压缩流按需提取和R8布局特性，将大型APK的反编译速度提升至秒级，内存占用降至百MB级，是处理复杂样本的效率神器。"
+      },
+      "type": "project",
+      "dateAdded": "20260915"
+    },
+    {
+      "id": "71976ef2-1f86-473d-ba75-de603616185e",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "domain": "github.com",
+      "repo": "danny-avila/LibreChat",
+      "description": "LibreChat 是一个强大的自托管 AI 平台，整合了多家大厂及本地模型。它支持代码运行、可视化构建 Agent 及 MCP 协议，适合个人搭建私有 AI 助手或企业构建统一可控的 AI 工作台。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-15T11:12:08.632Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "AI 聊天",
+          "Docker 部署",
+          "多模型管理",
+          "私有化",
+          "代码执行"
+        ],
+        "cover": "",
+        "title": "LibreChat：开源的一站式全能 AI 聊天工作台",
+        "ability": [
+          "多模型聚合",
+          "代码解释器",
+          "Agent 构建与 MCP",
+          "企业级权限管理",
+          "生成式 UI (Artifacts)"
+        ],
+        "summary": "自托管的全功能 AI 聊天平台，集多模型、Agent、代码执行与协作管理于一体。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "开发效率"
+        ],
+        "suitable": [
+          "个人 AI 爱好者",
+          "开发者与研究员",
+          "需要私有化部署的企业",
+          "IT 运维人员",
+          "小团队协作"
+        ],
+        "description": "LibreChat 是一个强大的自托管 AI 平台，整合了多家大厂及本地模型。它支持代码运行、可视化构建 Agent 及 MCP 协议，适合个人搭建私有 AI 助手或企业构建统一可控的 AI 工作台。"
+      },
+      "type": "project",
+      "dateAdded": "20260915"
+    },
+    {
+      "id": "7d2ca6f2-a5b7-44fb-8f82-624f0b9bdefe",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "domain": "github.com",
+      "repo": "Homebrew/BrewUI",
+      "description": "BrewUI 是 Homebrew 官方推出的原生 GUI 工具，旨在解决用户命令行操作痛点。它利用 SwiftUI 构建，支持直观的搜索与点击管理，同时保持与底层命令的透明同步，适合追求效率与安全的各类用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-15T11:04:09.550Z",
+      "metaData": {
+        "forks": "20",
+        "stars": "1009",
+        "topics": [],
+        "license": "AGPL-3.0 license",
+        "homepage": "",
+        "description": "📺 Homebrew's official macOS GUI. Contribute to Homebrew/BrewUI development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Homebrew",
+          "macOS",
+          "GUI",
+          "包管理",
+          "Swift"
+        ],
+        "cover": "",
+        "title": "Homebrew/BrewUI：官方出品的 macOS 包管理图形化神器",
+        "ability": [
+          "可视化包管理",
+          "官方原生支持",
+          "透明化命令展示",
+          "一键安装部署",
+          "严格安全审计"
+        ],
+        "summary": "Homebrew 官方出品的原生 macOS 图形界面，让包管理变得直观简单，一命令即可安装。",
+        "category": [
+          "开发工具",
+          "系统工具"
+        ],
+        "suitable": [
+          "终端恐惧症患者",
+          "macOS 习惯图形操作用户",
+          "开发环境运维人员",
+          "Swift 开发者"
+        ],
+        "description": "BrewUI 是 Homebrew 官方推出的原生 GUI 工具，旨在解决用户命令行操作痛点。它利用 SwiftUI 构建，支持直观的搜索与点击管理，同时保持与底层命令的透明同步，适合追求效率与安全的各类用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260915"
+    },
+    {
       "id": "0d8a8ca6-f869-4148-b51b-e1bc0b3097ec",
       "url": "https://github.com/microsoft/data-formulator",
       "domain": "github.com",
@@ -1062,8 +1209,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
-        "forks": "999",
-        "stars": "6199",
+        "forks": "1006",
+        "stars": "6263",
         "topics": [
           "accounting",
           "billing",
@@ -2241,8 +2388,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3446",
-        "stars": "32821",
+        "forks": "3459",
+        "stars": "32964",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -6976,8 +7123,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3617",
-        "stars": "29976",
+        "forks": "3638",
+        "stars": "30120",
         "topics": [
           "ai",
           "audiobook",
