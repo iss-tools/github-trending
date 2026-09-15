@@ -1,0 +1,73 @@
+{
+  "id": "fdaa064a-eedc-4367-9f33-b0c007082a48",
+  "url": "https://github.com/decolua/9router",
+  "domain": "github.com",
+  "repo": "decolua/9router",
+  "description": "把各类 AI 编程工具统一接入 40+ 家供应商，实现跨协议翻译、三层自动降级、多账号轮询与 OAuth 刷新，并通过 RTK 等策略降低 20–65% Token 消耗；本地控制台可视化配置，支持云端同步与多环境部署。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-15T13:05:23.733Z",
+  "metaData": {
+    "forks": "5297",
+    "stars": "28831",
+    "topics": [
+      "ai-agents",
+      "ai-gateway",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "cline",
+      "codex",
+      "copilot",
+      "cursor",
+      "deepseek",
+      "free-ai",
+      "gemini",
+      "gemini-cli",
+      "llm",
+      "llm-gateway",
+      "openai",
+      "openai-proxy",
+      "qwen",
+      "token-saver"
+    ],
+    "license": "MIT license",
+    "homepage": "https://9router.com",
+    "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. - decolua/9router"
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "本地网关",
+      "成本优化",
+      "协议转换",
+      "Node.js"
+    ],
+    "cover": "",
+    "title": "9router 深度评测：AI 编程的本地智能路由与省网关",
+    "ability": [
+      "AI 路由与降级",
+      "跨协议翻译",
+      "智能省 Token (RTK/Caveman/Ponytail)",
+      "可视化管控",
+      "云端同步"
+    ],
+    "summary": "本地 AI 路由与网关，统一接入 40+ 供应商并自动降级、省 Token 与可视化。",
+    "category": [
+      "开发工具",
+      "AI 编程"
+    ],
+    "suitable": [
+      "重度 AI 编程用户",
+      "预算敏感团队/个人",
+      "多供应商/账号管理需求者",
+      "自托管与隐私敏感用户"
+    ],
+    "description": "把各类 AI 编程工具统一接入 40+ 家供应商，实现跨协议翻译、三层自动降级、多账号轮询与 OAuth 刷新，并通过 RTK 等策略降低 20–65% Token 消耗；本地控制台可视化配置，支持云端同步与多环境部署。"
+  },
+  "contentDetail": "# 9router 深度评测：把“昂贵与受限”的 AI 编程，变为“几乎免费且永不断线”的本地路由层\n---\n## 一句话总结\n9router 是一个在本机运行的“智能 AI 路由器 + 开放 OpenAI 兼容网关”，它能把 Claude Code/Cursor/Cline/ Copilot 等主流 AI 编程工具，统一接入到 40+ 家供应商（含订阅、低价与免费档），并提供跨协议翻译、三层自动降级、多账号轮询、OAuth 自动刷新，以及“RTK Token Saver 等智能省Token”能力，帮助你在不改变原有客户端习惯的前提下，把成本压到最低、避免断线与限流。MIT 协议开源，npm 一装即用，本地控制台可视化配置。\n## 背景与痛点：它为何存在？\n### 典型痛点的三个“白花钱”场景\n- 订阅额度过期浪费：Claude/Copilot 等按月计费，当月没用完就清零。\n- 限流打断心流：写到一半触发速率限制/配额用完，被迫切工具/账号。\n- 工具调用烧钱快：git diff、grep、find、log 等工具输出常占到输入 Token 的 30–50%，大部分是“重复且可压缩”的结构化数据，按原样计费极其不划算。\n### 市场现状与用户心态\n- 多工具并存：你可能在终端用 Claude Code，在 VSCode 里用 Cursor，再配合 Cline。每家各自绑死自家接口，管理分散、体验割裂。\n- 多供应商崛起：Claude/OpenAI/Gemini 官方外，还有 GLM、MiniMax、Kiro、OpenCode Free、Vertex 等不同价格甚至免费档位。手动逐个配置与切换非常繁琐。\n- 开发者想要“路由器”：就像家中把光纤、机顶盒、NAS 接到路由器统一调度一样，大家希望有一个“AI 路由层”，帮我做协议翻译、流量调度与成本控制。\n## 核心亮点与功能剖析（技术视角 + 通俗类比）\n### 1) 架构定位：本地“AI 路由器” + OpenAI 兼容网关\n- 你把任意支持自定义 endpoint/key 的 AI 编程客户端的 API 指向 http://localhost:20128/v1；9router 在中间完成：\n  - 协议翻译（OpenAI ↔ Claude ↔ Gemini ↔ Cursor ↔ Kiro ↔ Vertex ↔ Antigravity ↔ Ollama 等）；\n  - 路由策略（订阅→低价→免费的三层降级，或自定义组合）；\n  - 账号轮询与 OAuth 自动刷新；\n  - Token 节省与用量统计。\n- 类比：就像 Wi‑Fi 路由器，家里电视、电脑、手机各自“语言”与“网速需求”不同，路由器负责统一适配与分配，而你只管连上 Wi‑Fi 就好。\n### 2) RTK Token Saver：智能压缩工具输出（20–40% 输入 Token 节省）\n- 工具输出很占“预算”：git diff、grep、ls、tree、log dump 等，往往结构化、重复度高。\n- RTK 会在发送到上游前，自动检测 tool_result 并针对常见模式应用有损/无损压缩（如 dedup-log、smart-truncate 等）；若压缩失败或结果变大，则回退原文，绝不破坏请求。\n- 默认开启；单次请求想关闭可设置 HTTP 头 X-9Router-Token-Saver: off。\n- 类比：就像给网页流量开了智能压缩；内容不变，但体积明显减小，账单也跟着下降。\n### 3) 三层智能降级（Auto Fallback）与多账号轮询\n- 3-Tier：订阅 → 便宜 → 免费。主通道配额/预算耗尽后自动切换，保持“零停工”。\n- Combo/策略：你可以把“订阅 + GLM + MiniMax + Kiro + OpenCode Free”等组合成名为 premium-coding 或 free-forever 的组合，按顺序或按策略（轮询/融合/容量优先）路由。\n- 多账号：同一供应商添加多个账号，按轮询/优先级分发，避免单账号集中触发限流；配合实时额度可视化与重置倒计时，把订阅“榨干”。\n### 4) 格式翻译与多模态支持\n- 支持 OpenAI ↔ Claude ↔ Gemini ↔ Cursor ↔ Kiro ↔ Vertex ↔ Antigravity ↔ Ollama ↔ OpenAI Responses 之间的无缝翻译，兼容任意“自定义 OpenAI 端点”的客户端。\n- 对多模态（图像、PDF、语音）提供了“容量自动切换”：先把请求路由到具备对应能力的模型，避免 4xx/5xx。\n- 兼容 Self-hosted 语音/嵌入服务（whisper.cpp/faster-whisper/Kokoro-FastAPI/llama-server/vLLM/Infinity 等）的 OpenAI 形态接入，并强调“Self-hosted Embedding 不会静默回退到云上”，以降低隐私与费用风险。\n### 5) “输出更少”的省 Token 能力：Caveman Mode 与 Ponytail\n- Caveman Mode：注入“简短、口语化”提示词，促使模型输出更简洁，官方称最多能节省 65% 输出 Token。\n- Ponytail：注入“懒惰资深开发”风格，优先 YAGNI（不过度设计），减少无用代码与后续重构，间接降低 Token 消耗与维护成本。\n- 类比：就像给 LLM 套上“少说废话”和“不写过度工程”的模板，既省字、又省未来修代码的时间。\n### 6) 使用与分析：控制台 + 用量与成本可视化\n- Dashboard：http://localhost:20128/dashboard，用于添加供应商（OAuth/API Key）、创建组合、查看实时额度与请求日志。\n- Usage Analytics：按供应商/模型统计 Token、费用趋势，帮助做用量优化与成本对比；官方强调“显示的费用只是估算对照，并非真实账单”，避免误解。\n- Request Logging：可开启调试模式，记录请求/响应以便排障；日志可导出分析。\n### 7) 云端同步与多端一致\n- Cloud Sync：可将供应商、组合与设置加密同步到多设备，保证在家/公司/云主机上的一致体验。\n- 部署灵活：支持本地、VPS、Docker 与 Cloudflare Workers 等多种环境。\n### 8) 安全与设计\n- 强调本地运行与可控；针对 Self-hosted Embedding 明确不会“静默回退”到云上，避免隐私外泄与意外计费。\n- Releases 中提到“硬化反向代理本地访问信任与 SSRF 防护”等安全改进，控制对外请求的合法性。\n## 技术栈与架构解析（面向开发者）\n### 技术栈\n- 运行时：Node.js 20+。\n- 框架：Next.js 16；UI：React 19 + Tailwind CSS 4；数据库：SQLite（含 better-sqlite3 / node:sqlite / sql.js 回退）。\n- 流式传输：Server-Sent Events (SSE)。\n- 认证：OAuth 2.0 PKCE + JWT + API Keys。\n### 上手门槛与部署体验\n- 最简路径：npm install -g 9router && 9router；随后 Dashboard 自动打开，按向导连接供应商并把客户端 endpoint 指向 localhost:20128/v1 即可。\n- 源码/Docker：提供 .env.example 与启动脚本；PORT/NEXT_PUBLIC_BASE_URL/HOSTNAME 等可配置，便于自托管与内网部署。\n- 注意：仓库说明提到该仓库的包为 private（9router-app），推荐通过源码或 Docker 运行；npm 的全局包 9router 为发布入口。实际体验属于“中低门槛”，但要处理 OAuth/自托管等高级玩法仍需一定网络与配置经验。\n### 代码组织与架构设计\n- 主体是一个带有 Web Dashboard 的 Next.js 应用，API 层提供 /v1/ 兼容 OpenAI 的网关接口；内部实现：\n  - Translator：负责不同协议间的字段与工具调用映射；\n  - Router/Combo：执行路由策略与容量/能力判断；\n  - Token Savers：RTK、Headroom、Caveman、Ponytail 等注入与压缩逻辑；\n  - Providers Adapters：封装各家 OAuth/API Key 与限流/重试；\n  - Usage/Quota：额度追踪与用量统计。\n- 生态插件：README 提及“OmniRoute”作为 TypeScript Fork，增加了更多供应商、4 层降级、电路熔断、语义缓存与评估等能力，说明项目具备一定的可扩展性。\n### 社区活跃度与生命力\n- 趋势：2026 年 5 月登上 GitHub Trending 并在 JavaScript/全语言分类中多次拿到 #1/#2，短期内获得大量关注。\n- 规模：约 25.9k Stars、5.1k Forks、138 位贡献者，最后一周在 6 天前仍有提交，属于高活跃度项目。\n- 版本迭代：从 v0.5.35 的 release notes 来看，最近数月持续新增 Grok Imagine 视频、Copilot/Claude 路由、Kiro 新模型、Token Saver 绕过头部、i18n（泰语/波斯语）、批量添加 API Key 不覆盖等多项功能与修复，更新节奏较快。\n- Issues：当前有不少 open issues（如 feature 请求与 bug 反馈），体现出活跃的用户反馈，但也意味着部分问题仍在排队解决。\n## Demo / 核心使用示例（让开发者 5 分钟上手）\n### 1) 安装与启动\n```bash\nnpm install -g 9router\n9router\n# 打开浏览器：http://localhost:20128/dashboard\n```\n### 2) 在客户端（示例）配置 OpenAI 兼容端点\n- Endpoint：http://localhost:20128/v1\n- API Key：从 Dashboard 复制显示的 Key\n- Model：kr/claude-sonnet-4.5（或任意组合中的模型名称）\n### 3) 创建一个“免费优先”的组合（free-forever）\n在 Dashboard → Combos 创建：\n1) kr/claude-sonnet-4.5（Kiro 免费档）  \n2) kr/glm-5（Kiro 免费档）  \n3) oc/<auto>（OpenCode Free 自动模型）\n### 4) 使用组合发起请求（curl 示例）\n```bash\ncurl http://localhost:20128/v1/chat/completions \\\n  -H \"Authorization: Bearer your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"free-forever\",\n    \"messages\": [{\"role\":\"user\",\"content\":\"用 TypeScript 写一个二叉树的中序遍历函数\"}],\n    \"stream\": true\n  }'\n```\n组合会按优先级路由，当前序耗尽或失败时自动下一条，保证“不中断”。\n### 5) 按需关闭 Token Saver（单次）\n在请求头中加入：\nX-9Router-Token-Saver: off\n## 目标人群与收益\n### 最适合的人群\n- 重度 AI 编程用户：Claude Code/Cursor/Cline/ Copilot 等多工具并用、希望统一管理与降本的开发者。\n- 预算敏感团队/个人：希望把 API 花费压到最低，利用免费档与低价档兜底的团队。\n- 多账号/多供应商重度用户：需要统一路由与自动 OAuth 刷新，减少手工维护成本。\n- 自托管与隐私敏感用户：希望把部分流量导向自建服务（llama.cpp/vLLM/whisper.cpp 等）并进行统一协议适配。\n### 具体收益\n- 降低成本：通过三层降级、RTK 节省与免费档利用，大量用户可实现“接近零成本”的日常编码；README 也给出了“0 美元组合”的范例。\n- 避免停工：自动切换与多账号轮询，把单点故障/限流影响降到最低。\n- 统一管理：一个 Dashboard 管多家供应商与组合，配合云端同步在多设备保持一致。\n- 透明可控：用量与费用估算、配额倒计时、请求日志等让你对“钱花在哪里”有清晰认知。\n## 竞品/同类对比\n### 与官方客户端直连相比\n- 官方直连：只绑定自家协议与账号，一旦配额或限流只能等或手动切账号。\n- 9router：通过中间层把“工具”与“供应商”解耦，协议、账号、策略都可统一调度；适合跨生态重度用户。\n### 与 OpenAI-compatible 代理类项目对比\n- 普通代理：通常只做“统一 Endpoint”和少量鉴权/限流，不支持跨协议翻译、Token 节省与多供应商组合。\n- 9router：在代理之上叠加了协议翻译、智能降级、省 Token 策略与可视化 Dashboard，更接近“AI 基础设施层”。\n### 与 OmniRoute（Fork）对比\n- OmniRoute：在 README 末尾被列为 Fork，采用 TypeScript 实现，新增更多供应商、4 层降级、多模态、电路熔断、语义缓存与评估能力，并提供较多单元测试，面向更复杂的工程场景。\n- 9router：保持相对主线与高频迭代，开箱即用（npm/Dashboard），社区热度更高，更适合快速上手与日常使用；若你需要更高级策略与企业级特性，OmniRoute 是备选路线。\n### 与 MCP/agents 技能类项目\n- MCP/agents 技能：多为“如何让 AI 使用工具/执行工作流”的上层能力。\n- 9router：处于更底层的“路由与网关”，可与 MCP/agents 协同工作，让不同技能背后共享同一套供应商与成本控制策略。\n## 局限与不足\n- 学习与维护成本：需要理解 OAuth/API Key、端点、组合策略、降级行为等；多供应商意味着多处可能的变更（免费档可能随时调整），需要持续关注项目更新与公告。\n- 运行依赖：需要本地 Node.js 20+ 环境，若在公司网络/代理环境下部署，还需解决网络访问与防火墙问题。\n- 稳定性与 Bug：高活项目意味着快速迭代，但 open issues 仍不少（如超时、特定模型报错、功能请求等），部分新特性可能处于磨合期。\n- “免费”是相对的：Kiro 等免费档存在配额上限（如每月 50 信用），且政策可能变动；OpenCode Free 的可用模型列表也会随时间变化；需合理设置预期。\n- 安全与隐私自控：项目本身开源可控，但你仍需信任所连接的各家供应商；对“Self-hosted Embedding”以外的流量，均会发到第三方，隐私敏感业务需审慎选择供应商与策略。\n## 结语与行动建议\n- 总体评价：9router 在“多供应商路由 + 协议翻译 + 省 Token + 可视化管理”的交叉点上给出了一个高完成度的解决方案，对重度 AI 编程用户是实打实的“省钱 + 保体验”工具。高频更新、社区规模与 MIT 开源协议，都是其加分项。\n- 行动建议（按阶段）：\n  1) 快速尝鲜：npm 一装 + 连接一个免费供应商（Kiro 或 OpenCode Free）+ 客户端 endpoint 改为 localhost:20128/v1，10 分钟内即可感受“零成本”编码。\n  2) 搭建组合：基于你已有订阅与预算，构建“订阅→低价→免费”三层组合，开启 RTK 与 Caveman/Ponytail，观察用量变化。\n  3) 深度集成：在公司或团队内部搭建自托管实例（Docker/VPS），结合自建推理服务（llama.cpp/vLLM 等）与云端供应商，形成混合基础设施。\n  4) 关注生态：持续跟踪 Releases 与 Issues，及时适配上游变更；若对测试覆盖率/高阶策略有更高要求，可评估 OmniRoute 等 Fork 方案。\n从“工具用起来”到“成本管起来”，再到“路由策略与基础设施化”，9router 的演进路径清晰。对希望把 AI 编程“吃干榨净”的开发者而言，它是值得投入时间研究与部署的关键一环。",
+  "type": "project",
+  "dateAdded": "20260915"
+}

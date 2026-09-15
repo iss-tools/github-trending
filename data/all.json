@@ -1,6 +1,152 @@
 {
   "all": [
     {
+      "id": "e45c440e-80d5-43d8-9d4e-8b48daded58d",
+      "url": "https://github.com/sergebulaev/linkedin-skills",
+      "domain": "github.com",
+      "repo": "sergebulaev/linkedin-skills",
+      "description": "这是一个面向 Claude 生态的 LinkedIn 运营工具集，包含 11 个核心技能。它通过 Python 工具层连接第三方服务，实现从内容起草、AI 检测、人设优化到自动发布或草稿审批的全流程自动化，兼顾效率与安全。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-15T13:12:03.935Z",
+      "metaData": {
+        "forks": "423",
+        "stars": "2447",
+        "topics": [
+          "agent-skill",
+          "agent-skills",
+          "ai-agents",
+          "ai-content",
+          "ai-marketing",
+          "anthropic",
+          "awesome-claude",
+          "claude-code",
+          "claude-skills",
+          "content-creation",
+          "content-engineering",
+          "linkedin",
+          "linkedin-automation",
+          "linkedin-engineering",
+          "llm-tools",
+          "openclaw-skill",
+          "personal-branding",
+          "prompt-engineering",
+          "skill-md",
+          "social-media-automation"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cccrafts.ai",
+        "description": "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your terminal. Content engineering by Creative Content Crafts. MIT. - sergebulaev/linkedin-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "LinkedIn",
+          "自动化",
+          "内容营销"
+        ],
+        "cover": "",
+        "title": "linkedin-skills：基于 Claude 的 LinkedIn 营销自动化技能包",
+        "ability": [
+          "自动起草帖子与评论",
+          "内容去 AI 味与审校",
+          "7天内容排期策划",
+          "互动监控与对象分类",
+          "支持多平台 Claude 集成"
+        ],
+        "summary": "一套基于 Claude 的 LinkedIn 营销技能包，支持自动发文、评论、审校及互动监控，助你高效构建个人品牌。",
+        "category": [
+          "社交媒体运营",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "创业者/独立开发者",
+          "市场与增长运营人员",
+          "习惯使用 Claude 的极客",
+          "需构建个人 IP 的博主",
+          "企业内容营销团队"
+        ],
+        "description": "这是一个面向 Claude 生态的 LinkedIn 运营工具集，包含 11 个核心技能。它通过 Python 工具层连接第三方服务，实现从内容起草、AI 检测、人设优化到自动发布或草稿审批的全流程自动化，兼顾效率与安全。"
+      },
+      "type": "project",
+      "dateAdded": "20260915"
+    },
+    {
+      "id": "fdaa064a-eedc-4367-9f33-b0c007082a48",
+      "url": "https://github.com/decolua/9router",
+      "domain": "github.com",
+      "repo": "decolua/9router",
+      "description": "把各类 AI 编程工具统一接入 40+ 家供应商，实现跨协议翻译、三层自动降级、多账号轮询与 OAuth 刷新，并通过 RTK 等策略降低 20–65% Token 消耗；本地控制台可视化配置，支持云端同步与多环境部署。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-15T13:05:23.733Z",
+      "metaData": {
+        "forks": "5297",
+        "stars": "28831",
+        "topics": [
+          "ai-agents",
+          "ai-gateway",
+          "anthropic",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "cline",
+          "codex",
+          "copilot",
+          "cursor",
+          "deepseek",
+          "free-ai",
+          "gemini",
+          "gemini-cli",
+          "llm",
+          "llm-gateway",
+          "openai",
+          "openai-proxy",
+          "qwen",
+          "token-saver"
+        ],
+        "license": "MIT license",
+        "homepage": "https://9router.com",
+        "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. - decolua/9router"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "本地网关",
+          "成本优化",
+          "协议转换",
+          "Node.js"
+        ],
+        "cover": "",
+        "title": "9router 深度评测：AI 编程的本地智能路由与省网关",
+        "ability": [
+          "AI 路由与降级",
+          "跨协议翻译",
+          "智能省 Token (RTK/Caveman/Ponytail)",
+          "可视化管控",
+          "云端同步"
+        ],
+        "summary": "本地 AI 路由与网关，统一接入 40+ 供应商并自动降级、省 Token 与可视化。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度 AI 编程用户",
+          "预算敏感团队/个人",
+          "多供应商/账号管理需求者",
+          "自托管与隐私敏感用户"
+        ],
+        "description": "把各类 AI 编程工具统一接入 40+ 家供应商，实现跨协议翻译、三层自动降级、多账号轮询与 OAuth 刷新，并通过 RTK 等策略降低 20–65% Token 消耗；本地控制台可视化配置，支持云端同步与多环境部署。"
+      },
+      "type": "project",
+      "dateAdded": "20260915"
+    },
+    {
       "id": "d3e8fed2-9db4-483a-aa30-36b114d98bc8",
       "url": "https://github.com/MG1937/ASC",
       "domain": "github.com",
@@ -11,8 +157,22 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:17:15.276Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "183",
+        "stars": "1027",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "android",
+          "decompilation",
+          "decompile",
+          "decompiler",
+          "mobile",
+          "reverse",
+          "reverse-engineering"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers. - MG1937/ASC"
       },
       "summaryData": {
         "tags": [
@@ -58,8 +218,33 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "9010",
+        "stars": "43643",
+        "topics": [
+          "ai",
+          "anthropic",
+          "artifacts",
+          "aws",
+          "azure",
+          "chatgpt",
+          "chatgpt-clone",
+          "claude",
+          "clone",
+          "deepseek",
+          "gemini",
+          "google",
+          "gpt-5",
+          "librechat",
+          "mcp",
+          "o1",
+          "openai",
+          "responses-api",
+          "vision",
+          "webui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://librechat.ai/",
+        "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active - danny-avila/LibreChat"
       },
       "summaryData": {
         "tags": [
@@ -107,8 +292,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:04:09.550Z",
       "metaData": {
-        "forks": "20",
-        "stars": "1009",
+        "forks": "22",
+        "stars": "1071",
         "topics": [],
         "license": "AGPL-3.0 license",
         "homepage": "",
@@ -1016,8 +1201,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:19:35.938Z",
       "metaData": {
-        "forks": "1048",
-        "stars": "12140",
+        "forks": "1081",
+        "stars": "12487",
         "topics": [
           "bilibili-downloader",
           "course-downloader",
@@ -1090,8 +1275,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "1926",
-        "stars": "26838",
+        "forks": "1953",
+        "stars": "27292",
         "topics": [
           "agent",
           "agent-skills",
@@ -1210,7 +1395,7 @@
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
         "forks": "1006",
-        "stars": "6263",
+        "stars": "6332",
         "topics": [
           "accounting",
           "billing",
@@ -1355,7 +1540,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "273",
-        "stars": "7719",
+        "stars": "7736",
         "topics": [
           "agents",
           "claude-code",
@@ -1693,8 +1878,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3323",
-        "stars": "23511",
+        "forks": "3344",
+        "stars": "23699",
         "topics": [
           "agent",
           "agentic",
@@ -1765,8 +1950,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:44:39.739Z",
       "metaData": {
-        "forks": "12271",
-        "stars": "136880",
+        "forks": "12272",
+        "stars": "136952",
         "topics": [
           "ai",
           "copilot",
@@ -1826,8 +2011,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:41:11.206Z",
       "metaData": {
-        "forks": "153",
-        "stars": "2335",
+        "forks": "201",
+        "stars": "2933",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://openresearch.sh/",
@@ -2099,8 +2284,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "611",
-        "stars": "2401",
+        "forks": "655",
+        "stars": "2615",
         "topics": [
           "ai",
           "ai-agents",
@@ -2388,8 +2573,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3459",
-        "stars": "32964",
+        "forks": "3470",
+        "stars": "33103",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -2757,8 +2942,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "691",
-        "stars": "9678",
+        "forks": "693",
+        "stars": "9735",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -2877,8 +3062,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "1638",
-        "stars": "15820",
+        "forks": "1646",
+        "stars": "15853",
         "topics": [
           "agents",
           "ai-agents",
@@ -3222,7 +3407,7 @@
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
         "forks": "883",
-        "stars": "6734",
+        "stars": "6749",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -3879,8 +4064,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1656",
-        "stars": "22953",
+        "forks": "1658",
+        "stars": "22993",
         "topics": [
           "antigravity",
           "claude",
@@ -3953,8 +4138,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13560",
-        "stars": "184130",
+        "forks": "13571",
+        "stars": "184206",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -4014,8 +4199,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4577",
-        "stars": "50187",
+        "forks": "4584",
+        "stars": "50268",
         "topics": [
           "ai",
           "animation",
@@ -4380,8 +4565,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:06:54.560Z",
       "metaData": {
-        "forks": "1815",
-        "stars": "27226",
+        "forks": "1820",
+        "stars": "27247",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -4651,8 +4836,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "681",
-        "stars": "19079",
+        "forks": "683",
+        "stars": "19140",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -4968,8 +5153,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2540",
-        "stars": "39990",
+        "forks": "2550",
+        "stars": "40089",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -5424,8 +5609,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25652",
-        "stars": "286844",
+        "forks": "25659",
+        "stars": "286958",
         "topics": [
           "ai",
           "brainstorming",
@@ -6031,8 +6216,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3929",
-        "stars": "48278",
+        "forks": "3933",
+        "stars": "48374",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -6265,8 +6450,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:18:47.242Z",
       "metaData": {
-        "forks": "196",
-        "stars": "3060",
+        "forks": "274",
+        "stars": "4474",
         "topics": [
           "ai",
           "ai-coding-assistant",
@@ -6466,8 +6651,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3115",
-        "stars": "32541",
+        "forks": "3117",
+        "stars": "32562",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -7123,8 +7308,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3638",
-        "stars": "30120",
+        "forks": "3647",
+        "stars": "30282",
         "topics": [
           "ai",
           "audiobook",
@@ -8079,8 +8264,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1537",
-        "stars": "12390",
+        "forks": "1549",
+        "stars": "12643",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -8132,8 +8317,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5834",
-        "stars": "36958",
+        "forks": "5844",
+        "stars": "37026",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -8185,8 +8370,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4633",
-        "stars": "41151",
+        "forks": "4647",
+        "stars": "41194",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -8369,8 +8554,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "9823",
-        "stars": "92163",
+        "forks": "10041",
+        "stars": "94522",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -8920,15 +9105,15 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8077",
-        "stars": "74097",
+        "forks": "8415",
+        "stars": "76310",
         "topics": [
           "disassembler",
           "reverse-engineering",
           "software-analysis"
         ],
         "license": "licenses",
-        "homepage": "https://www.nsa.gov/ghidra",
+        "homepage": "",
         "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
       },
       "summaryData": {
@@ -9134,8 +9319,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "6783",
-        "stars": "33985",
+        "forks": "6831",
+        "stars": "34225",
         "topics": [
           "3d-globe",
           "cesium",
@@ -10195,8 +10380,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4162",
-        "stars": "62757",
+        "forks": "4182",
+        "stars": "63053",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -10393,8 +10578,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7453",
-        "stars": "138799",
+        "forks": "7469",
+        "stars": "139018",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -10567,8 +10752,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "20343",
-        "stars": "106424",
+        "forks": "20357",
+        "stars": "106513",
         "topics": [
           "agent",
           "finance",
@@ -11729,8 +11914,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "297",
-        "stars": "4048",
+        "forks": "298",
+        "stars": "4059",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -11835,8 +12020,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2653",
-        "stars": "45735",
+        "forks": "2667",
+        "stars": "45927",
         "topics": [
           "adhd",
           "claude-",
@@ -12334,8 +12519,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "12441",
-        "stars": "100155",
+        "forks": "13256",
+        "stars": "105446",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -12695,8 +12880,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "460",
-        "stars": "6858",
+        "forks": "462",
+        "stars": "6874",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -12747,7 +12932,7 @@
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
         "forks": "3173",
-        "stars": "29754",
+        "stars": "29758",
         "topics": [
           "ai",
           "language",
@@ -12867,8 +13052,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "502",
-        "stars": "5430",
+        "forks": "503",
+        "stars": "5436",
         "topics": [
           "agent-runtime",
           "ai",
@@ -13105,8 +13290,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:53:20.321Z",
       "metaData": {
-        "forks": "2873",
-        "stars": "37339",
+        "forks": "2880",
+        "stars": "37416",
         "topics": [
           "agent-memory",
           "agent-plugins",
@@ -13358,8 +13543,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "38678",
-        "stars": "258578",
+        "forks": "38701",
+        "stars": "258793",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -13420,7 +13605,7 @@
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
         "forks": "3081",
-        "stars": "31986",
+        "stars": "32036",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -13482,8 +13667,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
-        "forks": "679",
-        "stars": "21122",
+        "forks": "681",
+        "stars": "21146",
         "topics": [
           "dpi",
           "gpui",
@@ -13632,8 +13817,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "690",
-        "stars": "7783",
+        "forks": "694",
+        "stars": "7799",
         "topics": [],
         "license": "",
         "homepage": "",
