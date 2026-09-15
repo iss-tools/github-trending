@@ -31240,7 +31240,7 @@
       "createdAt": "2026-09-13T11:00:02.045Z",
       "metaData": {
         "forks": "1086",
-        "stars": "12571",
+        "stars": "12613",
         "topics": [
           "bilibili-downloader",
           "course-downloader",
@@ -31780,8 +31780,8 @@
       "starsAdded": 438,
       "createdAt": "2026-09-13T11:00:02.038Z",
       "metaData": {
-        "forks": "1953",
-        "stars": "27292",
+        "forks": "2002",
+        "stars": "27765",
         "topics": [
           "agent",
           "agent-skills",
@@ -33258,7 +33258,7 @@
       "createdAt": "2026-09-13T18:00:02.036Z",
       "metaData": {
         "forks": "1086",
-        "stars": "12571",
+        "stars": "12613",
         "topics": [
           "bilibili-downloader",
           "course-downloader",
@@ -33506,8 +33506,8 @@
       "starsAdded": 443,
       "createdAt": "2026-09-13T18:00:02.029Z",
       "metaData": {
-        "forks": "1953",
-        "stars": "27292",
+        "forks": "2002",
+        "stars": "27765",
         "topics": [
           "agent",
           "agent-skills",
@@ -34645,8 +34645,8 @@
       "starsAdded": 2751,
       "createdAt": "2026-09-14T16:00:02.060Z",
       "metaData": {
-        "forks": "1953",
-        "stars": "27292",
+        "forks": "2002",
+        "stars": "27765",
         "topics": [
           "agent",
           "agent-skills",
@@ -35504,8 +35504,8 @@
       "starsAdded": 437,
       "createdAt": "2026-09-15T11:00:02.045Z",
       "metaData": {
-        "forks": "13267",
-        "stars": "105516",
+        "forks": "13269",
+        "stars": "105537",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -35742,7 +35742,7 @@
       "createdAt": "2026-09-15T11:00:02.037Z",
       "metaData": {
         "forks": "1086",
-        "stars": "12571",
+        "stars": "12613",
         "topics": [
           "bilibili-downloader",
           "course-downloader",
@@ -36497,6 +36497,887 @@
           "离线环境工作者"
         ],
         "description": "Project NOMAD 是一个离线优先的知识与教育服务器总控，通过 Docker 统一管理维基百科、Khan Academy、离线地图、本地 AI 等多种服务，提供一键安装与 Web 控制台，适合将旧机打造成离线生存电脑。"
+      }
+    }
+  ],
+  "20260916": [
+    {
+      "id": "163a465d-f31a-42bc-84da-1590a41f832c",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 27726,
+      "forks": 1999,
+      "starsAdded": 2751,
+      "createdAt": "2026-09-15T16:00:02.244Z",
+      "metaData": {
+        "forks": "2002",
+        "stars": "27765",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "ba446f1c-79e4-4f72-b1f7-6f917a94a2d9",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 30493,
+      "forks": 3665,
+      "starsAdded": 2081,
+      "createdAt": "2026-09-15T16:00:02.269Z",
+      "metaData": {
+        "forks": "3659",
+        "stars": "30425",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "tauri",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "170c0525-f816-4da1-811d-4be0a3ddfbcb",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/JustVugg/colibri",
+      "repo": "JustVugg/colibri",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "language": "C",
+      "stars": 33312,
+      "forks": 3491,
+      "starsAdded": 2035,
+      "createdAt": "2026-09-15T16:00:02.257Z",
+      "metaData": {
+        "forks": "3480",
+        "stars": "33245",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://justvugg.github.io/colibri",
+        "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+      },
+      "summaryData": {
+        "tags": [
+          "大模型",
+          "推理引擎",
+          "开源",
+          "C语言",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "Colibrì：让消费级设备运行 744B 大模型的纯 C 推理引擎",
+        "ability": [
+          "分层存储与 JIT 加载",
+          "多硬件异构计算",
+          "纯 C 语言高性能",
+          "多模型家族支持",
+          "OpenAI 兼容 API"
+        ],
+        "summary": "纯 C 语言开发的开源推理引擎，通过分层存储技术，让普通电脑也能跑起 700B+ 的超大规模 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI"
+        ],
+        "suitable": [
+          "系统架构师",
+          "本地部署爱好者",
+          "AI 研究人员",
+          "硬件资源受限的开发者"
+        ],
+        "description": "Colibrì 是一款基于纯 C 语言的开源推理引擎，支持 GLM、DeepSeek 等多种模型。它创新性地利用分层存储技术，将硬盘、内存和显存统一调度，使得仅需消费级硬件即可运行高达 744B 参数的 MoE 模型，兼顾性能与成本。"
+      }
+    },
+    {
+      "id": "4ee16bf2-2db4-4673-8f2f-5f65dc084142",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 76459,
+      "forks": 8433,
+      "starsAdded": 755,
+      "createdAt": "2026-09-15T16:00:02.280Z",
+      "metaData": {
+        "forks": "8428",
+        "stars": "76412",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "licenses",
+        "homepage": "",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
+      }
+    },
+    {
+      "id": "03ec964e-a3f0-4236-af72-24f08121e570",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "repo": "ever-co/ever-gauzy",
+      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
+      "language": "TypeScript",
+      "stars": 6402,
+      "forks": 1011,
+      "starsAdded": 632,
+      "createdAt": "2026-09-15T16:00:02.265Z",
+      "metaData": {
+        "forks": "1010",
+        "stars": "6384",
+        "topics": [
+          "accounting",
+          "billing",
+          "bookkeeping",
+          "crm",
+          "crm-platform",
+          "erp",
+          "expenses",
+          "hr",
+          "human-resources",
+          "invoices",
+          "invoicing",
+          "issue-tracker",
+          "payroll",
+          "productivity",
+          "project-management",
+          "salary",
+          "team-management",
+          "time-tracker",
+          "time-tracking",
+          "timetracking"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://gauzy.co",
+        "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co - ever-co/ever-gauzy"
+      },
+      "summaryData": {
+        "tags": [
+          "ERP",
+          "CRM",
+          "开源",
+          "自托管",
+          "工时管理"
+        ],
+        "cover": "",
+        "title": "Ever® Gauzy™ 深度评测",
+        "ability": [
+          "ERP/CRM/HRM/ATS/PM一体化管理",
+          "原生工时追踪与桌面计时器",
+          "Headless API与多形态部署",
+          "支持多种数据库与Docker/K8s",
+          "多组织多币种多语言支持"
+        ],
+        "summary": "一套开源的、全功能企业经营管理平台，支持Docker/K8s一键部署与多端集成，适合希望自托管、低成本统一管理“人—项目—钱—流程”的团队与企业。",
+        "category": [
+          "企业管理",
+          "开源工具",
+          "开发框架"
+        ],
+        "suitable": [
+          "需要统一管理企业核心流程的10-200人团队",
+          "在意数据主权与成本的中型企业",
+          "外包与远程工时审计需求团队",
+          "具备一定运维/开发能力的团队",
+          "需要多端集成或自建SaaS的团队"
+        ],
+        "description": "Ever Gauzy是一个功能全面的企业经营管理平台，覆盖人事、项目、销售、财务等核心场景，支持自托管与API集成。它特别适合希望减少多系统割裂、降低SaaS成本，且有能力进行Docker/K8s部署的团队。虽然学习曲线较陡，但提供了统一数据源与灵活扩展能力。"
+      }
+    },
+    {
+      "id": "a3f68079-fc7a-4528-9cd9-97d7e36b5b6d",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "repo": "alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "language": "Rust",
+      "stars": 3072,
+      "forks": 211,
+      "starsAdded": 593,
+      "createdAt": "2026-09-15T16:00:02.277Z",
+      "metaData": {
+        "forks": "209",
+        "stars": "3027",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://openresearch.sh/",
+        "description": "Turn your coding agents into research agents. Contribute to alphaXiv/OpenResearch development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "科研",
+          "实验管理",
+          "Agent",
+          "Git"
+        ],
+        "cover": "",
+        "title": "OpenResearch：本地优先的AI科研实验工作台",
+        "ability": [
+          "并行探索与隔离工作区",
+          "可复现的实验树",
+          "证据即上下文",
+          "Agent与模型可插拔",
+          "多环境计算调度"
+        ],
+        "summary": "一个本地优先、支持并行AI智能体与可复现实验树的开源科研工作台。",
+        "category": [
+          "开发工具",
+          "AI 辅助研发",
+          "效率工具"
+        ],
+        "suitable": [
+          "研究生/高校教师",
+          "机器学习工程师",
+          "数据科学家",
+          "自动化科研开发者",
+          "AI极客"
+        ],
+        "description": "OpenResearch将AI编码Agent与Git结合，提供本地优先的实验管理。支持多方向并行探索、全流程可复现，并能无缝调度本地及云端算力，是科研与AI开发的强力助手。"
+      }
+    },
+    {
+      "id": "67b1fcf2-d82a-4942-bf45-9b54f78e5d2e",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/earendil-works/pi",
+      "repo": "earendil-works/pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "language": "TypeScript",
+      "stars": 105535,
+      "forks": 13269,
+      "starsAdded": 437,
+      "createdAt": "2026-09-15T16:00:02.299Z",
+      "metaData": {
+        "forks": "13269",
+        "stars": "105537",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI - earendil-works/pi"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "CLI工具",
+          "开源",
+          "自动化",
+          "开发者工具"
+        ],
+        "cover": "",
+        "title": "Pi：极简主义 AI 编程 Agent 深度评测",
+        "ability": [
+          "极简核心工具集",
+          "多模型支持",
+          "高度可定制",
+          "低成本高性能",
+          "安全沙箱机制"
+        ],
+        "summary": "一款以透明性和控制力为核心的高效终端 AI 编程工具，为开发者提供极致的定制体验。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全栈开发者",
+          "DevOps 工程师",
+          "AI 研究员",
+          "开源贡献者",
+          "追求极致控制的极客"
+        ],
+        "description": "Pi 是一款终端原生的 AI 编程代理，仅通过 read、write、edit、bash 四个核心工具构建强大能力。它支持多种大模型，具有极高的任务通过率和极低的使用成本，允许用户通过脚本和插件深度定制工作流，是专业开发者理想的 AI 协作平台。"
+      }
+    },
+    {
+      "id": "ec0cf7f0-f80f-434f-a74c-b8143df4d1bb",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "repo": "Homebrew/BrewUI",
+      "description": "📺 Homebrew's official macOS GUI",
+      "language": "Swift",
+      "stars": 1164,
+      "forks": 23,
+      "starsAdded": 388,
+      "createdAt": "2026-09-15T16:00:02.271Z",
+      "metaData": {
+        "forks": "23",
+        "stars": "1130",
+        "topics": [],
+        "license": "AGPL-3.0 license",
+        "homepage": "",
+        "description": "📺 Homebrew's official macOS GUI. Contribute to Homebrew/BrewUI development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Homebrew",
+          "macOS",
+          "GUI",
+          "包管理",
+          "Swift"
+        ],
+        "cover": "",
+        "title": "Homebrew/BrewUI：官方出品的 macOS 包管理图形化神器",
+        "ability": [
+          "可视化包管理",
+          "官方原生支持",
+          "透明化命令展示",
+          "一键安装部署",
+          "严格安全审计"
+        ],
+        "summary": "Homebrew 官方出品的原生 macOS 图形界面，让包管理变得直观简单，一命令即可安装。",
+        "category": [
+          "开发工具",
+          "系统工具"
+        ],
+        "suitable": [
+          "终端恐惧症患者",
+          "macOS 习惯图形操作用户",
+          "开发环境运维人员",
+          "Swift 开发者"
+        ],
+        "description": "BrewUI 是 Homebrew 官方推出的原生 GUI 工具，旨在解决用户命令行操作痛点。它利用 SwiftUI 构建，支持直观的搜索与点击管理，同时保持与底层命令的透明同步，适合追求效率与安全的各类用户。"
+      }
+    },
+    {
+      "id": "bad1b015-c612-4272-85fe-96b72473e012",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 94594,
+      "forks": 10049,
+      "starsAdded": 354,
+      "createdAt": "2026-09-15T16:00:02.291Z",
+      "metaData": {
+        "forks": "10047",
+        "stars": "94570",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "da93f4b9-0050-4103-96f7-f25addefc981",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/tonhowtf/omniget",
+      "repo": "tonhowtf/omniget",
+      "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
+      "language": "Rust",
+      "stars": 12607,
+      "forks": 1086,
+      "starsAdded": 318,
+      "createdAt": "2026-09-15T16:00:02.296Z",
+      "metaData": {
+        "forks": "1086",
+        "stars": "12613",
+        "topics": [
+          "bilibili-downloader",
+          "course-downloader",
+          "download-manager",
+          "downloader",
+          "epub-reader",
+          "hotmart-downloader",
+          "instagram-downloader",
+          "media-downloader",
+          "reddit-downloader",
+          "spaced-repetition",
+          "subtitle-downloader",
+          "telegram-downloader",
+          "tiktok-downloader",
+          "twitch-downloader",
+          "twitter-downloader",
+          "udemy-downloader",
+          "video-downloader",
+          "youtube-downloader",
+          "yt-dlp",
+          "yt-dlp-gui"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://tonho.wtf",
+        "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer. - tonhowtf/omniget"
+      },
+      "summaryData": {
+        "tags": [
+          "视频下载",
+          "课程备份",
+          "隐私安全",
+          "全网通吃",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "OmniGet 深度评测：全能型开源下载与学习工作台",
+        "ability": [
+          "多平台资源下载",
+          "本地学习与笔记管理",
+          "内置 108 款实用工具",
+          "浏览器扩展一键抓取",
+          "BT 与批量任务处理"
+        ],
+        "summary": "集全网下载、课程备份、本地学习与媒体处理于一体的开源桌面神器。",
+        "category": [
+          "下载工具",
+          "学习效率",
+          "开源项目"
+        ],
+        "suitable": [
+          "内容创作者",
+          "在线课程学习者",
+          "社交媒体重度用户",
+          "追求本地隐私的用户",
+          "需要批量处理文件的开发者"
+        ],
+        "description": "OmniGet 是一款基于 Tauri 开发的开源桌面应用，整合 yt-dlp 等引擎，支持 1800+ 站点及 Udemy 等课程下载。它集成了本地播放器、阅读器和间隔重复笔记系统，并提供转码、OCR 等 108 款工具，全方位满足下载与学习需求。"
+      }
+    },
+    {
+      "id": "90697aa3-41f3-44d5-92b5-a5a91d7e3c4a",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "repo": "danny-avila/LibreChat",
+      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
+      "language": "TypeScript",
+      "stars": 43688,
+      "forks": 9014,
+      "starsAdded": 261,
+      "createdAt": "2026-09-15T16:00:02.283Z",
+      "metaData": {
+        "forks": "9012",
+        "stars": "43676",
+        "topics": [
+          "ai",
+          "anthropic",
+          "artifacts",
+          "aws",
+          "azure",
+          "chatgpt",
+          "chatgpt-clone",
+          "claude",
+          "clone",
+          "deepseek",
+          "gemini",
+          "google",
+          "gpt-5",
+          "librechat",
+          "mcp",
+          "o1",
+          "openai",
+          "responses-api",
+          "vision",
+          "webui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://librechat.ai/",
+        "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active - danny-avila/LibreChat"
+      },
+      "summaryData": {
+        "tags": [
+          "AI 聊天",
+          "Docker 部署",
+          "多模型管理",
+          "私有化",
+          "代码执行"
+        ],
+        "cover": "",
+        "title": "LibreChat：开源的一站式全能 AI 聊天工作台",
+        "ability": [
+          "多模型聚合",
+          "代码解释器",
+          "Agent 构建与 MCP",
+          "企业级权限管理",
+          "生成式 UI (Artifacts)"
+        ],
+        "summary": "自托管的全功能 AI 聊天平台，集多模型、Agent、代码执行与协作管理于一体。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "开发效率"
+        ],
+        "suitable": [
+          "个人 AI 爱好者",
+          "开发者与研究员",
+          "需要私有化部署的企业",
+          "IT 运维人员",
+          "小团队协作"
+        ],
+        "description": "LibreChat 是一个强大的自托管 AI 平台，整合了多家大厂及本地模型。它支持代码运行、可视化构建 Agent 及 MCP 协议，适合个人搭建私有 AI 助手或企业构建统一可控的 AI 工作台。"
+      }
+    },
+    {
+      "id": "e6752ab9-6400-42f0-9d9f-cbc98ad95b44",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "repo": "melgarafael/DeskcommCRM",
+      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "language": "TypeScript",
+      "stars": 2673,
+      "forks": 663,
+      "starsAdded": 205,
+      "createdAt": "2026-09-15T16:00:02.274Z",
+      "metaData": {
+        "forks": "660",
+        "stars": "2653",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "chatbot",
+          "crm",
+          "customer-support",
+          "ecommerce",
+          "lgpd",
+          "mcp",
+          "multi-tenant",
+          "nextjs",
+          "nuvemshop",
+          "open-source",
+          "rag",
+          "sales-automation",
+          "self-hosted",
+          "supabase",
+          "typescript",
+          "waha",
+          "whatsapp",
+          "whatsapp-api"
+        ],
+        "license": "MIT license",
+        "homepage": "https://deskcomm.com.br",
+        "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD. - melgarafael/DeskcommCRM"
+      },
+      "summaryData": {
+        "tags": [
+          "CRM",
+          "WhatsApp",
+          "开源",
+          "AI Agent",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "DeskcommCRM：开源自托管 CRM + AI 销售操作系统",
+        "ability": [
+          "开箱即用的自托管部署",
+          "WhatsApp 深度集成 (QR/官方API)",
+          "AI 代理与 RAG 知识库",
+          "多租户合规与审计日志",
+          "自动化 Kanban 与 Webhook"
+        ],
+        "summary": "深度集成 WhatsApp 的开源 CRM，内置 AI 代理与自动化引擎，适合中小团队自托管闭环运营。",
+        "category": [
+          "企业服务",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "中小商家与服务团队",
+          "拉美/葡语市场用户",
+          "开发者与技术团队",
+          "数据敏感型企业",
+          "需要 AI 赋能的运营者"
+        ],
+        "description": "DeskcommCRM 是一款开源、自托管 CRM，深度集成 WhatsApp（QR/官方API），内置 AI 代理与 RAG 知识库，提供多租户合规、审计日志与自动化引擎，适合中小团队以可控成本完成“线索—会话—成交—售后”闭环运营，支持一条命令部署与升级。"
+      }
+    },
+    {
+      "id": "09d6d1ab-9bd6-4884-a557-15f85af5bfbd",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/MG1937/ASC",
+      "repo": "MG1937/ASC",
+      "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
+      "language": "Python",
+      "stars": 1064,
+      "forks": 186,
+      "starsAdded": 122,
+      "createdAt": "2026-09-15T16:00:02.288Z",
+      "metaData": {
+        "forks": "186",
+        "stars": "1050",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "android",
+          "decompilation",
+          "decompile",
+          "decompiler",
+          "mobile",
+          "reverse",
+          "reverse-engineering"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers. - MG1937/ASC"
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "逆向工程",
+          "静态分析",
+          "反编译",
+          "R8"
+        ],
+        "cover": "",
+        "title": "Droid ASC：毫秒级零索引的Android逆向引擎",
+        "ability": [
+          "零预处理/按需解压",
+          "毫秒级极速反编译",
+          "极低内存占用",
+          "利用R8特性加速",
+          "生成最小DEX"
+        ],
+        "summary": "零索引、按需解压的Android逆向工具，实现百毫秒级反编译与极低内存占用。",
+        "category": [
+          "开发工具",
+          "安全工具"
+        ],
+        "suitable": [
+          "移动安全研究员",
+          "Android逆向工程师",
+          "红蓝队人员",
+          "安全应急响应"
+        ],
+        "description": "Droid ASC 打破传统反编译需全局索引的瓶颈，利用压缩流按需提取和R8布局特性，将大型APK的反编译速度提升至秒级，内存占用降至百MB级，是处理复杂样本的效率神器。"
+      }
+    },
+    {
+      "id": "aebf6089-84d0-40e9-b18f-1fe614b7fb46",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/pacifio/atlas",
+      "repo": "pacifio/atlas",
+      "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
+      "language": "Rust",
+      "stars": 4513,
+      "forks": 276,
+      "starsAdded": 102,
+      "createdAt": "2026-09-15T16:00:02.286Z",
+      "metaData": {
+        "forks": "275",
+        "stars": "4502",
+        "topics": [
+          "ai",
+          "ai-coding-assistant",
+          "claude-code",
+          "codex",
+          "coding-agents",
+          "git",
+          "gitops",
+          "kilo-code",
+          "mcp",
+          "mcp-client",
+          "opencode",
+          "opencode-ai",
+          "opencode-skills",
+          "self-hosted",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.tryatlas.cc/",
+        "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place - pacifio/atlas"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agents",
+          "源码控制",
+          "本地优先",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "Atlas：AI 编程代理的协作与源码控制中枢",
+        "ability": [
+          "多代理并行协作",
+          "共享记忆与会话记录",
+          "Git 提交自动关联",
+          "本地隐私安全",
+          "知识库与研究集成"
+        ],
+        "summary": "专为 AI 编程代理设计的本地协作中枢，实现多代理共享记忆、会话记录与 Git 提交关联，确保代码决策可追溯。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 原生开发者",
+          "技术负责人/架构师",
+          "安全与合规团队",
+          "研究型开发者"
+        ],
+        "description": "Atlas 是一款面向 AI 编程的桌面工具，通过本地统一的记忆层连接多个 AI 代理。它能自动记录会话并关联 Git 提交，让代码变更背后的决策逻辑清晰可查，兼顾高效协作与数据隐私保护。"
       }
     }
   ]
