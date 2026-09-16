@@ -1,0 +1,203 @@
+# cline/cline
+
+[GitHub URL](https://github.com/cline/cline)
+
+
+## Cline：不锁大模型的全能 AI 编程 Agent
+
+> 开源全能 AI 编程助手，支持跨文件编辑、命令执行及多模型接入。
+
+- **Tags**: 开源, AI 助手, 自动化, 编程工具, Agent
+- **Category**: AI 编程, 开发工具, 效率工具
+
+## Details
+
+# Cline（cline/cline）深度评测：一套代码库，打通 IDE、终端、桌面与 SDK 的“真正 Agent 化”编码助手
+---
+## 一句话总结
+Cline 是一个**开源的 AI 编码代理运行时**，既能以 VS Code/JetBrains 插件、桌面应用、终端 CLI 的形态直接用，又能作为 SDK 嵌入你的产品；它“能读、能写、能跑命令、能计划再执行”，且不锁模型、支持 MCP 与多智能体协作，是当下少见的“全栈 Agent 化开发工具”。
+---
+## 背景与痛点：从“补全”到“真 Agent”的跨越
+- **行业趋势：** 编码助手从“自动补全/单文件 Chat”进化到“跨文件规划、自动执行终端命令、拉通 CI 与沟通渠道”的 Agent 形态已是明显方向。不少竞品以“工作区/Agent 模式”跟进。
+- **新痛点出现：**
+  - 跨文件改动容易牵一发动全身，手动改一处、漏一处很常见（导入、类型、调用点不一致）。
+  - 工具割裂：AI 在 IDE 里聊天，改完代码还要切到终端去跑测试、看报错、再回到 IDE，来回摩擦。
+  - 上下文不足：很多助手只看当前窗口的几个文件，对项目结构依赖关系理解有限。
+  - 模型与供应商锁定：一旦工具绑死某一家，迁移成本极高。
+- **Cline 的解法：**
+  - “一个运行时，多端共用”：IDE 插件、桌面应用、CLI、SDK 共享同一核心能力，一致性高。
+  - 跨项目编辑与终端实时联动：读代码库 → 规划 → 改多处文件 → 跑命令 → 看输出 → 迭代修复，全程“人在环中审批”。
+  - Plan 与 Act 模式分离，避免盲目动手。支持自动审批开启“全自动飞行”。
+  - 模型/端点开放：Anthropic、OpenAI、Google、OpenRouter、Vercel AI Gateway、AWS Bedrock、Azure/GCP Vertex、Cerebras/Groq，以及本地 Ollama/LM Studio、任意 OpenAI 兼容 API。真正“不锁供应商、甚至可全本地”。
+  - 通过 MCP（Model Context Protocol）与插件系统扩展能力，对接数据库、API、云资源等。
+---
+## 核心亮点与功能剖析
+### 1) 跨项目编辑与“理解代码库”的能力
+- **官方强调：** Cline 能读取项目结构、理解文件关系、进行协调式多文件编辑，并监控 linter/编译错误，在你看不到前就修正缺失导入、类型不匹配、语法错误；在 VS Code/JetBrains 中每一步编辑都是 Diff，可审查/修改/回滚；所有变更通过 Checkpoints 追踪，方便 Undo。
+- **比喻：** 就像一位“能在整个工地上走动”的总工，看懂图纸、找出依赖关系，先做好全套计划再动工，每次改完都会在图纸上标出差异，方便你复核。
+### 2) Plan / Act 模式：从“先商量再动手”
+- **Plan 模式：** 探索代码库、向你提澄清问题、输出执行策略；用于达成共识。
+- **Act 模式：** 执行计划；默认每一步都需要你审批，确保可控。
+- **Auto-approve：** 可切换为自动审批，把重复性任务交由 Agent 自主完成（需谨慎使用）。
+### 3) 直接跑 Bash 命令并“看着输出长大”
+- **能力：** 在终端执行命令，并实时监视输出；能安装依赖、跑构建、执行测试、部署、管数据库；对于长期运行进程（如 dev server），它能继续在后台工作，当看到新的编译错误、测试失败、服务崩溃等输出时自动反应。
+- **类比：** 像一位“能看日志并自动补救”的值班工程师，而不是只会发指令的遥控器。
+### 4) Rules & Skills：用 .clinerules 把团队约定“写进 Agent”
+- **机制：** 在仓库里放 .clinerules 文件，定义编码标准、架构约定、部署流程、测试要求等；CLI、VS Code、JetBrains 会自动识别；Skill 可以让模型按需加载特定规则集。
+- **收益：** 团队规范变成“可执行知识”，新人更快对齐风格；避免反复在对话里“补背景知识”。
+### 5) 模型不锁：从云端到本地任选
+- **官方列出的支持方：** Anthropic（Opus/Sonnet/Haiku）、OpenAI（GPT 系列）、Google（Gemini）、OpenRouter、Vercel AI Gateway、AWS Bedrock、Azure/GCP Vertex、Cerebras/Groq、本地 Ollama/LM Studio、任意 OpenAI 兼容 API。
+- **好处：**
+  - 可按任务选择模型（需要强推理时上“大模型”，简单任务用“小模型”省成本/时）。
+  - 数据敏感场景可全本地跑（Ollama/LM Studio）。
+  - 不被单一供应商“绑架”。
+### 6) MCP 与插件：让 Agent 接入任何工具/系统
+- **MCP：** 用 MCP Servers 连接数据库、查询 API、管理基础设施、与外部系统交互；官方给出管理命令 `cline mcp`。
+- **插件（SDK）：** 注册工具与生命周期钩子，用于日志、审计、策略执行、领域能力等，并给出最小示例（见下方 Demo）。
+- **比喻：** 就像给这位总工配了各种“专用设备卡扣”，想接什么工具就插什么卡。
+### 7) 多智能体团队与定时任务
+- **多 Agent：** 由协调者（Coordinator）把任务拆解并派发给专长 Agent；每个 Agent 有各自的工具与上下文；团队状态在会话之间持久化，支持断点续干。
+- **定时 Agent：** 支持 cron 调度，比如工作日上午 9 点生成 PR 汇总、每周做依赖检查/代码健康报告；调度持久化，不受终端会话中断影响。
+- **使用示例：**
+```bash
+cline --team-name auth-sprint "Plan and implement user authentication with tests"
+cline schedule create "PR summary" \
+  --cron "0 9 * * MON-FRI" \
+  --prompt "List all open PRs and their review status" \
+  --workspace /path/to/repo
+```
+### 8) 消息平台集成与 Headless CLI
+- **平台：** Telegram、Slack、Discord、Google Chat、WhatsApp、Linear；每条对话线程映射到一个 Agent 会话，支持访问控制。
+- **Headless：** 零交互运行，适用于脚本与 CI/CD；支持管道输入、JSON 输出、链式调用。
+- **典型用法：**
+```bash
+cline "Run tests and fix any failures"
+git diff origin/main | cline "Review these changes for issues"
+cline --json "List all TODO comments" | jq -r 'select(.type == "agent_event" and .event.text) | .event.text'
+```
+### 9) SDK：把 Agent 嵌进你的产品
+- 官方定位：Node.js 可编程 Agent API 与扩展导出，位于 `sdk/` 目录。
+- 适用场景：企业自建工作流、SaaS 产品集成、定制工具链、内部平台等。
+- 最小插件工具注册示例（来自 README）：
+```javascript
+import { Agent, createTool } from "@cline/sdk"
+const deployTool = createTool({
+  name: "deploy",
+  description: "Deploy the current branch to staging.",
+  inputSchema: {
+    type: "object",
+    properties: { env: { type: "string" } },
+    required: ["env"]
+  },
+  execute: async (input) => {
+    // your deployment logic
+  },
+})
+const agent = new Agent({ tools: [deployTool], /* ... */ })
+```
+---
+## 目标人群与收益
+- **独立开发者/自由职业者：**
+  - 快速理解陌生代码库、跨文件重构、自动化重复任务（跑测试、提 PR 摘要）。
+  - 用 CLI 把日常脚本化，省去“切来切去”的时间。
+- **中小团队：**
+  - 用 .clinerules 规范代码风格与流程；新人能更快上手。
+  - MCP 接公司内部系统（如发布平台），将发布/回滚等操作变成“可授权的 Agent 任务”。
+- **企业/平台方：**
+  - 用 SDK 打造自有 Agent 产品，把 Cline 的能力集成到内部开发平台或对外 SaaS。
+  - 多 Agent + 定时任务 + 消息平台联动，自动化代码健康巡检与日报/周报生成。
+- **安全/合规敏感团队：**
+  - 选择自托管/本地模型，通过 MCP 与插件接入自有工具链，满足数据不出域等要求。
+  - 结合审批机制与审计日志，做“可控的自动化”。
+---
+## 竞品/同类对比（简要）
+- 与 GitHub Copilot：Copilot 更偏“内联补全+Chat 助手”；Cline 更偏“Agent 化的规划—执行—多文件修改—终端联动”。两者在不同场景下各有所长。
+- 与 Cursor/其他“带 Agent 的编辑器”：Cline 的差异化在于“同一运行时，覆盖 IDE/CLI/桌面/SDK 四端”、MCP 生态、以及对任何模型的开放接入。
+- 与纯 CLI 工具（如 aider、gpt-cli 等）：Cline CLI 的优势在于与 IDE 插件共享规则/上下文、支持多智能体与定时任务、对消息平台的集成。
+---
+## 技术栈与架构解析（面向开发者的要点）
+- **多端共享核心：** 官方在 README 中给出了产品索引——SDK 位于 `sdk/`、CLI 位于 `apps/cli/`、桌面 App 位于 `apps/examples/desktop-app/`（Tauri 外壳 + Bun 副进程 + Next.js UI）、VS Code 扩展（部分迁移中）、JetBrains 插件（客户端，暂未开源）。
+- **技术组合（从描述推断）：**
+  - Node.js（SDK 与扩展主机）。
+  - Bun（桌面 App 的侧边进程）。
+  - Next.js（桌面 UI）。
+  - Tauri（桌面跨平台外壳）。
+- **架构设计思路：**
+  - 核心逻辑抽象成共享的“Agent 引擎”，多端作为不同“交互外壳”，降低维护成本、保证行为一致。
+  - 工具注册、生命周期钩子、计划-执行循环、模型调用等抽象统一，有利于通过 SDK 做二次开发。
+---
+## 上手门槛与部署体验（简要）
+- **IDE：** 直接在市场安装扩展/插件，完成首次设置（模型与 API Key）即可使用。
+- **CLI：** 官方站点提供快速开始指引，支持 `npm install` 安装；命令设计与常见 CLI 风格贴近，上手难度低。
+- **桌面：** 提供 macOS/Windows 安装包，官方站点显示版本号与下载入口；适合不依赖特定 IDE 的场景。
+- **SDK：** 需要 Node.js/TypeScript 基础，适合有定制需求的团队；README 提供了最小示例。可按需参考官方 Contributing 文档与 Docs 站点深入。
+---
+## Demo / 代码示例：快速上手与“必须懂”的配置
+- 安装 CLI（示例，具体版本以官方文档为准）：
+```bash
+npm install -g cline
+```
+- 基础对话式使用（终端）：
+```bash
+cline "Add Jest to this project, write a test for src/utils.ts, and ensure it passes"
+```
+- 检查计划模式（先谈后做）：在 IDE 侧边栏中选择 Plan 模式，确认策略后再切换到 Act 执行。
+- 项目规则示例（`.clinerules`）：
+```yaml
+# .clinerules
+- 优先使用函数式风格，避免可变状态。
+- 所有导出函数必须有 JSDoc 注释。
+- 新增功能必须包含测试，覆盖率需通过 CI 门禁。
+- 部署前先在 staging 环境验证。
+```
+- CLI 连接消息平台示例（来自 README）：
+```bash
+cline connect telegram -k $BOT_TOKEN
+cline connect slack --bot-token $SLACK_TOKEN --signing-secret $SECRET --base-url $URL
+cline connect slack --bot-token $SLACK_TOKEN --app-token $SLACK_APP_TOKEN
+```
+- CLI 与管道、JSON 输出示例（来自 README）：
+```bash
+cline "Run tests and fix any failures"
+git diff origin/main | cline "Review these changes for issues"
+cline --json "List all TODO comments" | jq -r 'select(.type == "agent_event" and .event.text) | .event.text'
+```
+---
+## 局限、不足与风险（坦诚不回避）
+- **安全事件教训（Clinejection 与供应链攻击）：**
+  - 2026 年 2 月，安全社区披露涉及 Cline 的“Clinejection”与 CLI 某版本（cline@2.3.0）的 post-install 脚本供应链事件，显示出 Agent 类工具如果未对输入来源、依赖链、执行权限做严格治理，可能被滥用。相关分析来自多方安全研究者的报告与检测平台的复现。建议用户始终从官方渠道安装、锁定版本、定期 review 依赖，并遵循官方安全指南（若官网发布改进说明）。
+- **执行权限与误操作风险：**
+  - Cline 能跑 Bash 命令，一旦开启 auto-approve 或在脚本中无交互运行，存在误删/误改/误部署的可能。强烈建议：
+    - 对高风险操作保留审批；
+    - 在 CI 中配置受限环境与最小权限原则；
+    - 纳入审计日志与监控。
+- **模型质量与成本：**
+  - 效果高度依赖所选模型与 Prompt/工具规划；复杂任务仍需人工把关。
+  - 多次调用/长上下文会产生成本，需按团队预算合理选型与配额。
+- **学习与配置成本：**
+  - 要发挥 Rules/Skills/MCP/多 Agent 等进阶能力，需要一定学习与运维投入。
+- **生态与维护：**
+  - JetBrains 插件客户端暂未开源；部分功能尚在迁移中，需关注官方更新说明。
+  - 依赖与生态更新较快，建议定期关注 Changelog 与安全公告。
+---
+## 社区活跃度与生命力（客观数据与事实）
+- **官方站点数据（截至 2026-09-16）：** 11M+ 跨平台安装（marketplace + open vsx），68.2k GitHub stars；Apache 2.0 开源；250+ 贡献者；提供 Docs、Models、Blog、Enterprise、MCP Marketplace、Changelog 等完整入口。
+- **许可证：** Apache 2.0（Cline Bot Inc.），适合商业集成与二次开发。
+- **社区入口：** Discord、Reddit、GitHub Discussions、Issues、Feature Requests 页面等；官方 Contributing 文档引导新贡献者加入。
+---
+## 结语与行动建议（终极评判）
+- **整体评价：** Cline 是当前“Agent 化编码工具”里少有的“多端统一、开放模型、可扩展架构”的方案之一。它把编码助手从“看一段代码、给一点建议”提升为“理解项目—规划方案—执行命令—迭代修复”的工作流伙伴，适合希望将 AI 深度融入开发链路的团队和个人。
+- **何时优先考虑 Cline：**
+  - 你需要“一个 Agent 跑遍 IDE/终端/脚本/消息平台”的一致体验；
+  - 你希望接入自家模型/自有工具链（MCP/插件），不被供应商锁死；
+  - 你想通过 .clinerules、多智能体、定时任务把重复性工程工作自动化。
+- **何时暂缓或谨慎使用：**
+  - 你的团队对“让 AI 直接跑命令”尚有合规顾虑；
+  - 你只需要简单的代码补全与单文件对话，用主流 Copilot 类工具即可满足；
+  - 你没有资源做必要的安全治理（依赖审查、权限控制、审计），应先补齐这些基建再大规模引入自动化。
+- **行动清单（给不同角色）：**
+  - **小白/个人：** 先从 VS Code/桌面版开始，试用“理解代码库”与“重构/修复 bug”能力；在低风险项目上开启 Plan 模式，养成“先审再跑”的习惯。
+  - **团队负责人：** 尝试用 .clinerules 固化团队约定；在 CI 中引入 Headless CLI 做代码健康检查与自动化修复试点。
+  - **平台/企业：** 评估 SDK 与 MCP 集成，把 Cline 当作“Agent 引擎”嵌入内部开发平台；建立审计与最小权限机制，对接自有鉴权与日志系统。
+  - **安全/运维：** 严格执行依赖版本锁定与审查流程，避免安装来路不明的包或脚本；设置环境隔离与 RBAC，对 Agent 执行的命令做白名单/审计。
+一句话收尾：Cline 不是“魔法按钮”，而是一个“可扩展、可治理、可审计的编码代理运行时”。用好它，需要在效率、安全与治理之间找到平衡；一旦磨合得当，它能显著放大开发者的产出与创造力。
