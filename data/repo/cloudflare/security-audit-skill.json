@@ -1,0 +1,53 @@
+{
+  "id": "ce267001-5ff5-4805-a654-619e1c1624fb",
+  "url": "https://github.com/cloudflare/security-audit-skill",
+  "domain": "github.com",
+  "repo": "cloudflare/security-audit-skill",
+  "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-16T14:04:24.306Z",
+  "metaData": {
+    "forks": "350",
+    "stars": "5824",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+  },
+  "summaryData": {
+    "tags": [
+      "开源项目",
+      "安全审计",
+      "Cloudflare",
+      "AI Agent",
+      "DevSecOps"
+    ],
+    "cover": "",
+    "title": "Cloudflare Security Audit Skill 深度评测",
+    "ability": [
+      "多智能体并行审计",
+      "对抗验证防误报",
+      "结构化漏洞报告",
+      "增量式覆盖扫描",
+      "多类攻击库支持"
+    ],
+    "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+    "category": [
+      "开发工具",
+      "网络安全",
+      "AI 编程"
+    ],
+    "suitable": [
+      "AI 编程爱好者",
+      "安全研究人员",
+      "DevSecOps 工程师",
+      "全栈开发者"
+    ],
+    "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+  },
+  "contentDetail": "# Cloudflare security-audit-skill 深度评测：让 AI Agent 真正“抓到”可利用漏洞\n---\n## 一句话总结\n它不是一个命令行扫描器，而是一套为 AI Agent 编写的“安全审计剧本”。通过并行多智能体的六阶段流水线——侦察、狩猎、对抗验证、报告、结构化输出与独立复核——把编码型 AI 变成会“自己规划与自我挑战”的安全审计员，产出包含机器可读 findings.json 与人类可读报告的审计结果，适合融入既有工作流并反复增量覆盖。适合能接受模型调用成本、希望补强代码安全（尤其是 Web/LLM 相关）的团队或个人开发者尝鲜并逐步纳入 CI/CD。 \n---\n## 背景与痛点：为什么它现在出现？\n### 传统“AI 扫描”的尴尬：只会发“理论威胁”，很少给“可利用路径”\n很多团队的现实是：把代码丢给通用大模型，拿到的往往是“可能存在 SQL 注入”“建议校验输入”这类泛泛之谈——没有位置、没有复现路径、没有边界条件，更无法与缺陷跟踪系统联动。安全团队要么被大量噪音淹没，要么索性不信。痛点有三个：\n- 高误报/低价值：大量“理论上可能”的建议，缺乏可利用性证明与复现步骤。\n- 与流程割裂：输出是文本，无法自动与工单、风险看板或修复验证打通。\n- 模型不可控：不同工具、不同 Agent 写法千差万别，很难稳定复现与改进。\n### Cloudflare 的内部实践：从单仓库技能到全网级漏洞发现体系\nCloudflare 在官方介绍中写道，该 skill 是其“漏洞发现 harness”的起点，后来演变为面向全网的多阶段系统——这可以理解为：他们在生产中把这个“剧本”规模化、自动化，用于自己的代码与基础设施审计。 README 也提到，多次运行同一仓库是“增量式”的，每次读取已有 findings.json，跳过已知问题，专注未覆盖路径，说明其设计之初就瞄准了“可回归、可累积”的安全能力。 \n### 为什么值得关注？\n- 规范化的“AI 审计工作流”：不是简单把提示词丢给模型，而是明确的阶段、角色、验证与输出，容易被团队采纳、适配与治理。\n- 与 MCP/Skill 生态对齐：通过 Skills CLI 一键安装，与主流编码型 Agent（如 Claude Code 等）天然契合，降低接入摩擦。 \n- 内置“对抗验证”与“独立复核”：把“找漏洞的”和“证伪的”拆成两组智能体，抑制误报，增强信任度。 \n---\n## 核心亮点与功能剖析\n### 1. 六阶段流水线：从“盲搜”到“定案、复核”的闭环\n- 侦察（Recon）：并行研究智能体绘制架构、信任边界与输入面，生成 architecture.md——避免“从入口切入一刀切”，优先理解系统“谁信谁、谁调谁”。\n- 狩猎（Hunt）：多路通用智能体按“攻击类别”切入，如注入、访问控制、业务逻辑、密码学、特性滥用、链式攻击与通配；每路还能下钻子智能体，深挖特定调用链或分支。\n- 验证（Validate）：用另一组智能体“证伪”每个发现，对抗式地删掉不成立或难以利用的项——类比“红队与蓝队”同台演练，而非单一视角自证。 \n- 报告（Report）：产出人类可读 REPORT.md 与中高风险细节 FINDINGS-DETAIL.md，后者包含中风险（MEDIUM+）的详细追踪与证据链，便于复盘与修复。 \n- 结构化输出（Structured output）：输出符合 report-schema.json 的 findings.json，并通过零依赖的 validate-findings.cjs 校验，把审计结果变成可被下游（风险看板、工单系统、CD 阻断等）消费的机器数据。 \n- 独立复核（Independent verification）：再换“新面孔”智能体，逐条对照源码核验 findings.json 中的事实性声明——相当于自动的“第三方复核”，降低幻觉带来的“漏报/误报”。 \n### 2. 设计原则：只报“能打的”，不报“看起来不对的”\nREADME 明确了几条铁律，直接把审计质量“拉上去”： \n- 只报告“可利用”的：每个发现必须给出具体的攻击场景，拒绝“攻击者理论上可能…”式空话。\n- 对抗验证：查验者绝不能是发现者，打破自我确认偏差。\n- 严重程度看“影响”：Likelihood × Impact，而不是“是否偏离检查清单”。\n- 防御深度缺口不等于漏洞：如果 Layer A 拦得住，那缺少 Layer B 只作为“加固建议”。\n- 多次运行增益覆盖：实测单次运行大约只能发现多次运行总漏洞数的一半——说明它特意做了“随机化探索”，鼓励多跑、多轮、持续回归。 \n### 3. 分类攻击库：覆盖主流与新兴风险面\n项目把“攻击面知识”拆成多个专用 Markdown 文档，便于按需加载或本地定制： \n- ATTACK-CLASSES.md：通用核心与通配攻击提示，与“显眼错误”类检查。\n- MEMORY-SAFETY-AND-BINARY.md：针对原生目标的内存安全、二进制与内核类检查。\n- AI-AND-LLM.md：针对 LLM 背景目标的提示注入、工具/代理滥用与输出处理风险。\n- WEB-PROTOCOL-AND-AUTH.md：HTTP 请求构造、缓存与认证协议层攻击。\n- CLIENT-SIDE.md：DOM 注入、消息信任、UI 红向（Clickjacking）、原型污染等浏览器侧风险。\n**比喻：** 这一本本“战术手册”不是死板的规则库，而更像给智能体的“作战提示词”——智能体会基于这些提示去组织试探路径，而不是僵化逐条勾选。\n### 4. 并行子智能体编排：从单点“说话”变成“小队行动”\n技能本身并不提供模型，它假设宿主 Agent 支持“工具调用”与“并行子智能体”。它的价值在于编排：把一次大审计拆成多个小任务，分发给不同智能体并行推进，然后再聚合、验证与复核——这实质上是在 LLM 能力之上，叠加了一层“工程化”的流程与治理。 \n### 5. 机器可读的 findings.json 与零依赖校验器\n- report-schema.json：定义 findings.json 的字段与结构，包含已确认（confirmed）与已拒绝（rejected）两类条目的结构。 \n- validate-findings.cjs：无外部依赖的 Node.js 校验脚本，用来在本地立刻发现格式错误或缺失字段——这意味着你可以轻易在 CI 里加一步“结构是否合规”，而不必担心模型输出“变形”。 \n---\n## 技术栈与架构解析（按“开源框架/Skill”维度）\n### 技术栈\n- 语言/运行时：Node.js 用于结构化输出校验；技能本身以 Markdown 与 JSON 构成“剧本”，不绑定特定语言栈。 \n- 宿主要求：需要“支持工具调用与并行子智能体”的编码型 Agent（例如 Claude Code 等），并通过 Skills CLI 安装。 \n- 输出格式：Markdown（REPORT.md、FINDINGS-DETAIL.md）+ JSON（findings.json）+ JSON Schema（report-schema.json）。 \n### 架构设计\n- 以“文档+Schema”为核心：把流程、检查点与输出契约都写成文，易于人读、审阅与定制——对开源协作与内部审计都很友好。\n- 六阶段编排：把审计分解成可以并行与重试的阶段，减少单次失败的影响，提升吞吐与覆盖。\n- 增量式运行：通过读取前几轮的 findings.json，实现“去重+补盲”，适合放在定时/触发式流水线中持续回归。 \n### DX（开发者体验）\n- 一条命令安装：通过 Skills CLI npx skills add ... 集成，支持用户级与项目级安装。 \n- 自然语言触发：在 Agent 中直接说“security audit this codebase / find security vulnerabilities in ./src / do a security review...”即可激活，无需手动指定复杂参数。 \n- 默认输出路径可自定义：不指定时默认写入 ~/security-audit-skill/<repo-name>/run-<N>，既保证结果可追溯，又不污染项目目录。 \n---\n## 上手门槛与部署体验\n### 环境准备\n- 必备：一个“编码型 Agent”（支持工具使用与并行子智能体）、Node.js（用于 validate-findings.cjs 校验）。 \n- 可选：若要进阶定制，可修改 .md 提示词与 schema；但这些改动不需要编译，直接文本编辑即可。\n### 安装与基础用法（含最简 Demo/示例）\n- 安装：\n  - 在命令行执行（项目级）：\n    npx skills add cloudflare/security-audit-skill --skill security-audit\n  - 若需用户级全局安装：\n    npx skills add cloudflare/security-audit-skill --skill security-audit --global\n- 基础触发（在 Agent 中）：\n  - security audit this codebase\n  - find security vulnerabilities in ./src\n  - do a security review, output to ~/audits/my-project\n- 本地校验输出（命令行 Demo）：\n  - node validate-findings.cjs <审计输出目录>/findings.json\n### 部署集成建议\n- CI/CD 节点：在代码合并/部署前跑一轮“安全审计”，把 findings.json 的“高危”条目作为阻断条件。\n- 定时回归：每周/每月在主干分支追加一轮，把历史 findings.json 作为输入，实现增量覆盖。 \n---\n## 适用场景与能力边界（按“AI Skill/Agent”维度）\n### 适用场景\n- 代码安全评审与红队模拟：对 Web 应用、API、服务、CLI 工具、库、后台服务等做多维度审计。 \n- AI/LLM 系统的专项审计：借助 AI-AND-LLM.md 针对提示注入、工具滥用、输出处理风险进行检查。 \n- 客户端/浏览器安全审计：利用 CLIENT-SIDE.md 做 DOM 注入、消息信任、原型污染等检查。 \n### 能力边界（“盲区”与不宜期待）\n- 不替代静态分析（SAST）与依赖扫描：它擅长的是逻辑与组合型问题，而非供应链版本匹配、指纹识别等“规则强匹配”类任务。\n- 高度依赖宿主模型：模型的上下文窗口、推理深度与并行能力直接影响覆盖与精度，不能指望“低成本模型跑一遍”就万事大吉。\n- 不做“真实利用”的自动化执行：验证路径是“智能体模拟”，不等于真实环境发包、执行代码；对复杂链式利用仍需人工复核与复测。\n---\n## 目标人群与收益\n### 目标人群\n- 已在使用 Claude Code 等“编码型 Agent”的团队或个人开发者，希望在写代码的同时嵌入自动化安全审计。 \n- 安全工程师与红队人员，希望用 AI 做首轮侦察与疑似发现整理，把时间花在高价值的验证与利用上。\n- 平台/DevSecOps 工程师，希望把“机器可读的审计结果”直接接入内部风险平台或工单系统。\n### 收益\n- 提升安全覆盖：多轮运行可逐步覆盖不同代码路径，补充静态工具难以触及的业务逻辑与组合漏洞。 \n- 降低误报噪声：对抗验证与独立复核机制把“晃眼假阳性”前置清洗，减少安全工程师复核时间。 \n- 形成可回归资产：findings.json 可被版本管理与 diff，沉淀为企业安全知识库的一部分。\n- 普及安全意识：在开发侧“随手审计”，逐步让“可利用性”“影响面”等安全语言融入日常对话。\n---\n## 竞品/同类对比\n### 通用 Agent 编写“审计提示词”的自建方案\n- 优点：灵活，完全定制；缺点：难以稳定输出机器可读结果，缺乏对抗验证与结构化契约，复现性差。\n### 传统 SAST/规则类扫描器（如 CodeQL、Semgrep、SonarQube）\n- 强项：规则明确、可控、易接入 CI；短板：对业务逻辑与新型攻击（如 LLM 相关）难以覆盖。\n### LLM-native 安全扫描（如 Snyk 的 AI 安全层）\n- 这类产品通常提供“持续验证 AI 生成代码”或“AI 应用安全”的综合能力，多与 SCA/规则引擎集成。security-audit-skill 的独特点在于：它是开放的、可读可改的“技能剧本”，适合深度定制与生态集成，而不是一个“黑盒服务”。 \n### 定位小结\n它不是一个“拿来即跑”的扫描器，而是一个“AI 审计框架/剧本”。最适合做“安全左移”的补充与桥接：在 AI 辅助编码的阶段，前置一层可审计、可回归的安全能力。\n---\n## 局限与不足\n- 模型成本与性能：多阶段、多智能体并行，意味着 Token 消耗不小；对大仓库或多轮回归，需要明确预算与策略（如限制范围、分级运行）。\n- 依赖宿主 Agent 能力：如果当前 Agent 不支持并行子智能体或工具调用，技能无法发挥设计优势。 \n- 不提供“利用执行”：安全结论仍需人工在测试环境复现，高风险链式问题不能百分百依赖模型判定。\n- 学习与定制曲线：虽然文档齐全，但要让技能适配特定框架/业务，仍需理解各阶段的提示词与输出 schema，对团队有一定“审计工程化”的要求。\n- 社区可见度与第三方案例：公开的第三方深度实战案例与测评仍然有限，目前更多是官方描述与生态站点的介绍；期待社区贡献更多真实世界的经验总结。 \n---\n## 结语与行动建议（通用终极评判）\n### 终极评判\nsecurity-audit-skill 把“AI 做安全审计”从“试试看”提升为“可工程化、可回归、可治理”的工艺。它以清晰阶段、对抗验证与机器可读结果，解决了传统 LLM 审计的“不可控、不可读、不可累积”三大痛点。尽管它不替代传统扫描与人工验证，但在 AI 辅助编码普及的今天，这是一套很值得纳入安全工具箱的“剧本式”技能。\n### 行动建议\n- 如果你是开发者或小团队：先在非生产仓库跑一轮，体验 REPORT.md 与 findings.json 的产出质量；理解它在你常用 Agent 中的触发方式与耗时。 \n- 如果你是安全/DevSecOps：评估把 findings.json 接入你们的风险看板或工单系统，选一两个业务线做“试点”，制定“多轮回归 + 阻断规则”。 \n- 如果你是平台团队：考虑把技能封装成内部 MCP Server/Agent，并结合你们的 RBAC 与审计日志，确保“谁发起审计、审计谁、结果去哪”全程可追溯。 \n### 安装与开始（最简路径）\n- 安装：\n  npx skills add cloudflare/security-audit-skill --skill security-audit --global\n- 在你的 Agent 中对项目目录执行：\n  “security audit this codebase, output to ~/audits/your-project”\n- 跑完后本地校验：\n  node ~/security-audit-skill/your-project/run-1/validate-findings.cjs ~/security-audit-skill/your-project/run-1/findings.json\n只要你能接受模型调用成本、理解“模型结果需人复核”，security-audit-skill 是一个值得认真评估并逐步落地的 AI 安全基建。",
+  "type": "project",
+  "dateAdded": "20260916"
+}

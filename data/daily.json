@@ -27804,8 +27804,8 @@
       "starsAdded": 157,
       "createdAt": "2026-09-10T12:00:02.101Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -29469,8 +29469,8 @@
       "starsAdded": 98,
       "createdAt": "2026-09-10T16:00:02.106Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -31356,8 +31356,8 @@
       "starsAdded": 652,
       "createdAt": "2026-09-13T11:00:01.973Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -31780,8 +31780,8 @@
       "starsAdded": 438,
       "createdAt": "2026-09-13T11:00:02.038Z",
       "metaData": {
-        "forks": "2166",
-        "stars": "30453",
+        "forks": "2183",
+        "stars": "30638",
         "topics": [
           "agent",
           "agent-skills",
@@ -32899,8 +32899,8 @@
       "starsAdded": 868,
       "createdAt": "2026-09-13T18:00:01.971Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -33506,8 +33506,8 @@
       "starsAdded": 443,
       "createdAt": "2026-09-13T18:00:02.029Z",
       "metaData": {
-        "forks": "2166",
-        "stars": "30453",
+        "forks": "2183",
+        "stars": "30638",
         "topics": [
           "agent",
           "agent-skills",
@@ -34645,8 +34645,8 @@
       "starsAdded": 2751,
       "createdAt": "2026-09-14T16:00:02.060Z",
       "metaData": {
-        "forks": "2166",
-        "stars": "30453",
+        "forks": "2183",
+        "stars": "30638",
         "topics": [
           "agent",
           "agent-skills",
@@ -34778,8 +34778,8 @@
       "starsAdded": 2035,
       "createdAt": "2026-09-14T16:00:02.055Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -36509,13 +36509,13 @@
       "repo": "alibaba/open-code-review",
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 29836,
-      "forks": 2124,
-      "starsAdded": 2756,
+      "stars": 30638,
+      "forks": 2183,
+      "starsAdded": 3215,
       "createdAt": "2026-09-15T16:00:02.244Z",
       "metaData": {
-        "forks": "2166",
-        "stars": "30453",
+        "forks": "2183",
+        "stars": "30638",
         "topics": [
           "agent",
           "agent-skills",
@@ -36642,13 +36642,13 @@
       "repo": "JustVugg/colibri",
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
-      "stars": 34388,
-      "forks": 3594,
-      "starsAdded": 2026,
+      "stars": 34649,
+      "forks": 3634,
+      "starsAdded": 1532,
       "createdAt": "2026-09-15T16:00:02.257Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -36686,6 +36686,111 @@
       }
     },
     {
+      "id": "9d44ab96-82cc-4d6b-b95e-865b6fb561fa",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 5822,
+      "forks": 350,
+      "starsAdded": 1434,
+      "createdAt": "2026-09-16T14:00:02.439Z",
+      "metaData": {
+        "forks": "350",
+        "stars": "5824",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "b40a4d5c-dc69-4f2f-83fa-ad0da814c21e",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/abue-ammar/tinycast",
+      "repo": "abue-ammar/tinycast",
+      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+      "language": "Swift",
+      "stars": 5276,
+      "forks": 246,
+      "starsAdded": 1076,
+      "createdAt": "2026-09-16T14:00:02.452Z",
+      "metaData": {
+        "forks": "247",
+        "stars": "5280",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://abue-ammar.github.io/tinycast/",
+        "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history. - abue-ammar/tinycast"
+      },
+      "summaryData": {
+        "tags": [
+          "macOS",
+          "Raycast",
+          "启动器",
+          "剪贴板",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Tinycast：极致轻量的 macOS 启动器与剪贴板工具",
+        "ability": [
+          "应用启动",
+          "剪贴板历史",
+          "行内计算与汇率",
+          "代码片段管理",
+          "兼容Raycast扩展"
+        ],
+        "summary": "Swift 原生构建的极致轻量 macOS 启动器，零遥测，支持剪贴板管理与 Raycast 扩展。",
+        "category": [
+          "效率工具",
+          "开发工具",
+          "MacOS 软件"
+        ],
+        "suitable": [
+          "MacOS 重度用户",
+          "隐私敏感用户",
+          "Raycast 替代需求者",
+          "性能极致追求者",
+          "开发者"
+        ],
+        "description": "基于 SwiftUI 构建的 macOS 极致轻量启动器，无遥测、无 Electron，集应用启动、剪贴板历史与计算于一体，完美支持 Raycast 扩展迁移。"
+      }
+    },
+    {
       "id": "4ee16bf2-2db4-4673-8f2f-5f65dc084142",
       "dateAdded": "20260916",
       "type": "github-daily",
@@ -36693,9 +36798,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 77149,
-      "forks": 8517,
-      "starsAdded": 725,
+      "stars": 77395,
+      "forks": 8553,
+      "starsAdded": 1059,
       "createdAt": "2026-09-15T16:00:02.280Z",
       "metaData": {
         "forks": "8517",
@@ -36742,6 +36847,173 @@
       }
     },
     {
+      "id": "a9dc68d8-27c3-4307-b9c1-88f684d478f9",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 259791,
+      "forks": 38882,
+      "starsAdded": 1046,
+      "createdAt": "2026-09-16T14:00:02.496Z",
+      "metaData": {
+        "forks": "38871",
+        "stars": "259755",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
+      }
+    },
+    {
+      "id": "a3f68079-fc7a-4528-9cd9-97d7e36b5b6d",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "repo": "alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "language": "Rust",
+      "stars": 4020,
+      "forks": 256,
+      "starsAdded": 1036,
+      "createdAt": "2026-09-15T16:00:02.277Z",
+      "metaData": {
+        "forks": "241",
+        "stars": "3738",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://openresearch.sh/",
+        "description": "Turn your coding agents into research agents. Contribute to alphaXiv/OpenResearch development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "科研",
+          "实验管理",
+          "Agent",
+          "Git"
+        ],
+        "cover": "",
+        "title": "OpenResearch：本地优先的AI科研实验工作台",
+        "ability": [
+          "并行探索与隔离工作区",
+          "可复现的实验树",
+          "证据即上下文",
+          "Agent与模型可插拔",
+          "多环境计算调度"
+        ],
+        "summary": "一个本地优先、支持并行AI智能体与可复现实验树的开源科研工作台。",
+        "category": [
+          "开发工具",
+          "AI 辅助研发",
+          "效率工具"
+        ],
+        "suitable": [
+          "研究生/高校教师",
+          "机器学习工程师",
+          "数据科学家",
+          "自动化科研开发者",
+          "AI极客"
+        ],
+        "description": "OpenResearch将AI编码Agent与Git结合，提供本地优先的实验管理。支持多方向并行探索、全流程可复现，并能无缝调度本地及云端算力，是科研与AI开发的强力助手。"
+      }
+    },
+    {
+      "id": "c737b916-2fac-40e0-ac52-083d07516083",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "repo": "Lakr233/vphone-cli",
+      "description": "",
+      "language": "Swift",
+      "stars": 13178,
+      "forks": 1576,
+      "starsAdded": 907,
+      "createdAt": "2026-09-16T14:00:02.457Z",
+      "metaData": {
+        "forks": "1575",
+        "stars": "13156",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to Lakr233/vphone-cli development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "iOS",
+          "虚拟化",
+          "越狱",
+          "Apple Silicon",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "vphone-cli：在 Apple Silicon Mac 上运行虚拟化 iOS 的开源神器",
+        "ability": [
+          "本地虚拟化 iOS",
+          "自动化越狱与修补",
+          "全流程 CLI 管理",
+          "Socket/MCP 自动化接口",
+          "多变体固件支持"
+        ],
+        "summary": "利用 Apple Silicon 虚拟化框架在本地运行真实 iOS，支持一键越狱与自动化控制。",
+        "category": [
+          "开发工具",
+          "安全工具",
+          "虚拟化"
+        ],
+        "suitable": [
+          "安全研究员",
+          "逆向工程师",
+          "自动化测试人员",
+          "AI 开发者",
+          "技术极客"
+        ],
+        "description": "vphone-cli 是一款能让 Apple Silicon Mac 本地运行虚拟化 iOS 的工具，支持自动越狱、固件打补丁及 AI 自动化控制，完美解决真机调试难题。"
+      }
+    },
+    {
       "id": "03ec964e-a3f0-4236-af72-24f08121e570",
       "dateAdded": "20260916",
       "type": "github-daily",
@@ -36749,9 +37021,9 @@
       "repo": "ever-co/ever-gauzy",
       "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
       "language": "TypeScript",
-      "stars": 6964,
-      "forks": 1063,
-      "starsAdded": 634,
+      "stars": 7097,
+      "forks": 1078,
+      "starsAdded": 771,
       "createdAt": "2026-09-15T16:00:02.265Z",
       "metaData": {
         "forks": "1063",
@@ -36816,56 +37088,259 @@
       }
     },
     {
-      "id": "a3f68079-fc7a-4528-9cd9-97d7e36b5b6d",
+      "id": "e7689601-551c-475f-958d-1f1bdadea2a2",
       "dateAdded": "20260916",
       "type": "github-daily",
-      "url": "https://github.com/alphaXiv/OpenResearch",
-      "repo": "alphaXiv/OpenResearch",
-      "description": "Turn your coding agents into research agents",
-      "language": "Rust",
-      "stars": 3738,
-      "forks": 241,
-      "starsAdded": 531,
-      "createdAt": "2026-09-15T16:00:02.277Z",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "repo": "multimodal-art-projection/YuE",
+      "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
+      "language": "Python",
+      "stars": 9195,
+      "forks": 993,
+      "starsAdded": 701,
+      "createdAt": "2026-09-16T14:00:02.483Z",
       "metaData": {
-        "forks": "241",
-        "stars": "3738",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://openresearch.sh/",
-        "description": "Turn your coding agents into research agents. Contribute to alphaXiv/OpenResearch development by creating an account on GitHub."
+        "forks": "935",
+        "stars": "8727",
+        "topics": [
+          "ai",
+          "audio-generation",
+          "deep-learning",
+          "foundation-models",
+          "gpt",
+          "huggingface",
+          "llama",
+          "llms",
+          "music-generation",
+          "style-transfers",
+          "voice-cloning"
+        ],
+        "license": "licenses",
+        "homepage": "https://map-yue2.github.io/",
+        "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
       },
       "summaryData": {
         "tags": [
-          "开源",
-          "科研",
-          "实验管理",
-          "Agent",
-          "Git"
+          "YuE2",
+          "音乐生成",
+          "Suno替代",
+          "本地部署",
+          "乐谱编辑"
         ],
         "cover": "",
-        "title": "OpenResearch：本地优先的AI科研实验工作台",
+        "title": "YuE / YuE2 深度评测",
         "ability": [
-          "并行探索与隔离工作区",
-          "可复现的实验树",
-          "证据即上下文",
-          "Agent与模型可插拔",
-          "多环境计算调度"
+          "歌词生成整歌",
+          "可编辑乐谱",
+          "零样本翻唱",
+          "本地化部署",
+          "高质量渲染"
         ],
-        "summary": "一个本地优先、支持并行AI智能体与可复现实验树的开源科研工作台。",
+        "summary": "当前开源界最接近 Suno 的可编辑歌词到整歌生成模型",
         "category": [
-          "开发工具",
-          "AI 辅助研发",
-          "效率工具"
+          "AI",
+          "开源项目",
+          "音乐工具"
         ],
         "suitable": [
-          "研究生/高校教师",
-          "机器学习工程师",
-          "数据科学家",
-          "自动化科研开发者",
-          "AI极客"
+          "独立音乐创作者",
+          "AI音乐研究者",
+          "产品工程团队",
+          "AI工具爱好者"
         ],
-        "description": "OpenResearch将AI编码Agent与Git结合，提供本地优先的实验管理。支持多方向并行探索、全流程可复现，并能无缝调度本地及云端算力，是科研与AI开发的强力助手。"
+        "description": "YuE2 是一款强大的开源音乐生成模型，采用“先写谱再出歌”的流程，支持乐谱编辑与零样本翻唱，性能媲美 Suno，并支持本地化部署，适合需要高可控性和数据安全的音乐创作与研究。"
+      }
+    },
+    {
+      "id": "dbb6cc22-7b65-46ce-9da3-8cf6514cc370",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "repo": "SnailSploit/Claude-Red",
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+      "language": "Python",
+      "stars": 5566,
+      "forks": 718,
+      "starsAdded": 699,
+      "createdAt": "2026-09-16T14:00:02.481Z",
+      "metaData": {
+        "forks": "658",
+        "stars": "5063",
+        "topics": [
+          "claude-ai",
+          "claude-pt",
+          "claude-skills",
+          "redteam",
+          "redteam-tools",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development. - SnailSploit/Claude-Red"
+      },
+      "summaryData": {
+        "tags": [
+          "渗透测试",
+          "Claude Skills",
+          "红队工具",
+          "自动化攻击",
+          "安全研究"
+        ],
+        "cover": "",
+        "title": "Claude-Red：AI 驱动的顶级红队攻击技能库",
+        "ability": [
+          "红队攻击技能化",
+          "全场景漏洞覆盖",
+          "AI 自动化渗透",
+          "结构化安全知识",
+          "一键式部署集成"
+        ],
+        "summary": "将专家级红队打法转化为 AI 技能，让 Claude 变身专业攻击操作员。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "渗透测试工程师",
+          "红队攻防专家",
+          "漏洞赏金猎人",
+          "网络安全研究员",
+          "CTF 爱好者"
+        ],
+        "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。"
+      }
+    },
+    {
+      "id": "6f176cc0-2209-44ec-b266-1feff215d6eb",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/Tencent/WeKnora",
+      "repo": "Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "stars": 24920,
+      "forks": 3449,
+      "starsAdded": 696,
+      "createdAt": "2026-09-16T14:00:02.478Z",
+      "metaData": {
+        "forks": "3443",
+        "stars": "24884",
+        "topics": [
+          "agent",
+          "agentic",
+          "ai",
+          "chatbot",
+          "dsh-plugin",
+          "embeddings",
+          "evaluation",
+          "generative-ai",
+          "golang",
+          "knowledge-base",
+          "llm",
+          "multi-tenant",
+          "ollama",
+          "openai",
+          "question-answering",
+          "rag",
+          "reranking",
+          "semantic-search",
+          "vector-search",
+          "wiki"
+        ],
+        "license": "licenses",
+        "homepage": "https://weknora.weixin.qq.com",
+        "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki. - Tencent/WeKnora"
+      },
+      "summaryData": {
+        "tags": [
+          "RAG",
+          "Agent",
+          "知识库",
+          "开源",
+          "腾讯"
+        ],
+        "cover": "",
+        "title": "腾讯 WeKnora：企业级 LLM 知识平台深度评测",
+        "ability": [
+          "RAG 快速问答",
+          "ReAct 智能体",
+          "Wiki 自动维护",
+          "多端交互嵌入",
+          "企业级权限审计"
+        ],
+        "summary": "WeKnora 是腾讯开源的企业级 LLM 知识平台，集 RAG 问答、ReAct 智能体与自动 Wiki 维护于一体。",
+        "category": [
+          "开发工具",
+          "企业服务",
+          "AI 编程"
+        ],
+        "suitable": [
+          "企业 IT/运维/平台团队",
+          "产品/研发/合规/法务",
+          "需要私有化部署的团队"
+        ],
+        "description": "WeKnora 源自微信对话开放平台，提供从文档到知识资产的端到端方案。支持私有化部署，集成长期记忆、知识图谱与全链路可观测性，适合企业构建可控的知识库与智能体。"
+      }
+    },
+    {
+      "id": "bad1b015-c612-4272-85fe-96b72473e012",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 95171,
+      "forks": 10092,
+      "starsAdded": 656,
+      "createdAt": "2026-09-15T16:00:02.291Z",
+      "metaData": {
+        "forks": "10089",
+        "stars": "95146",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
       }
     },
     {
@@ -36921,63 +37396,65 @@
       }
     },
     {
-      "id": "bad1b015-c612-4272-85fe-96b72473e012",
+      "id": "384a1931-03f9-4c5d-a133-873d77c1afe0",
       "dateAdded": "20260916",
       "type": "github-daily",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "repo": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "stars": 95050,
-      "forks": 10080,
-      "starsAdded": 307,
-      "createdAt": "2026-09-15T16:00:02.291Z",
+      "url": "https://github.com/jamiepine/voicebox",
+      "repo": "jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "stars": 54128,
+      "forks": 6772,
+      "starsAdded": 409,
+      "createdAt": "2026-09-16T14:00:02.455Z",
       "metaData": {
-        "forks": "10089",
-        "stars": "95146",
+        "forks": "6773",
+        "stars": "54133",
         "topics": [
-          "agent-skills",
-          "antigravity",
-          "claude-code",
-          "codex",
-          "cursor",
-          "skills"
+          "ai",
+          "cuda",
+          "mlx",
+          "qwen3-tts",
+          "qwen3-tts-ui",
+          "voice-ai",
+          "voice-clone",
+          "whisper"
         ],
         "license": "MIT license",
-        "homepage": "https://skills.addy.ie",
-        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+        "homepage": "https://voicebox.sh",
+        "description": "The open-source AI voice studio. Clone, dictate, create. - jamiepine/voicebox"
       },
       "summaryData": {
         "tags": [
-          "GitHub开源",
-          "AI技能",
-          "TDD",
-          "代码审查",
-          "工作流"
+          "TTS",
+          "语音克隆",
+          "本地AI",
+          "MCP",
+          "开源"
         ],
         "cover": "",
-        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "title": "Voicebox：开源的本地 AI 语音全能工作室",
         "ability": [
-          "全生命周期流程覆盖",
-          "TDD自动化支持",
-          "多维度代码审查",
-          "跨AI工具兼容",
-          "反合理化机制"
+          "多引擎TTS合成",
+          "零样本语音克隆",
+          "本地高精度听写",
+          "AI智能体语音集成(MCP)",
+          "多轨音频编辑与后期"
         ],
-        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "summary": "开源本地AI语音工作室，集听写、多引擎TTS、克隆与音频编辑于一体，隐私无费。",
         "category": [
-          "AI 编程",
           "开发工具",
-          "效率提升"
+          "AI 编程",
+          "生产力工具"
         ],
         "suitable": [
-          "个人开发者",
-          "小型技术团队",
-          "AI编程重度用户",
-          "追求工程规范的开发者",
-          "AI工具集成商"
+          "内容创作者",
+          "AI Agent开发者",
+          "隐私敏感用户",
+          "有声书制作者",
+          "无障碍需求者"
         ],
-        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+        "description": "Voicebox 是一款本地优先的开源 AI 语音工具，整合了 Whisper 听写、7种 TTS 引擎和语音克隆。支持 MCP 协议让 AI 对话发声，提供多轨编辑功能，完全离线运行，保护隐私且无订阅费用。"
       }
     },
     {
@@ -37180,6 +37657,21 @@
       }
     },
     {
+      "id": "a4a4b5f6-1262-4011-b9a9-3561a83d9267",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/roboflow/supervision",
+      "repo": "roboflow/supervision",
+      "description": "We write your reusable computer vision tools. 💜",
+      "language": "Python",
+      "stars": 50453,
+      "forks": 4805,
+      "starsAdded": 217,
+      "createdAt": "2026-09-16T14:00:02.470Z",
+      "metaData": null,
+      "summaryData": null
+    },
+    {
       "id": "e6752ab9-6400-42f0-9d9f-cbc98ad95b44",
       "dateAdded": "20260916",
       "type": "github-daily",
@@ -37254,6 +37746,54 @@
       }
     },
     {
+      "id": "aae75ed2-282f-4b2d-92ff-15ef6ff76c7a",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-code",
+      "repo": "anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "stars": 145289,
+      "forks": 23414,
+      "starsAdded": 155,
+      "createdAt": "2026-09-16T14:00:02.467Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "智能体",
+          "CLI工具",
+          "自动化",
+          "Git集成"
+        ],
+        "cover": "",
+        "title": "Claude Code 深度评测：Anthropic 官方出品的终端型智能编程伙伴",
+        "ability": [
+          "终端原生CLI本地云双模式",
+          "多端统一引擎终端IDE桌面Web",
+          "智能理解项目与多文件编辑",
+          "从Issue到PR的自动化闭环",
+          "可扩展插件与指令系统"
+        ],
+        "summary": "用自然语言在终端/IDE/网页中直接改代码、跑命令、操办 Git，从 Issue 到 PR 一键完成。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "个人开发者/独立黑客",
+          "小团队/初创公司",
+          "开源维护者",
+          "新人/交接场景",
+          "习惯终端的开发者"
+        ],
+        "description": "Claude Code 是 Anthropic 官方出品的智能编程工具，通过自然语言在终端、IDE、网页中直接操作代码。它支持多文件联动编辑、Git 工作流自动化、从 Issue 到 PR 的完整闭环，并通过云端会话实现跨设备协作，是提升开发效率的强大助手。"
+      }
+    },
+    {
       "id": "09d6d1ab-9bd6-4884-a557-15f85af5bfbd",
       "dateAdded": "20260916",
       "type": "github-daily",
@@ -37312,6 +37852,89 @@
           "安全应急响应"
         ],
         "description": "Droid ASC 打破传统反编译需全局索引的瓶颈，利用压缩流按需提取和R8布局特性，将大型APK的反编译速度提升至秒级，内存占用降至百MB级，是处理复杂样本的效率神器。"
+      }
+    },
+    {
+      "id": "a53c77f9-cda5-4410-99dd-fd3740720f66",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/supabase/supabase",
+      "repo": "supabase/supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "language": "TypeScript",
+      "stars": 109431,
+      "forks": 13982,
+      "starsAdded": 118,
+      "createdAt": "2026-09-16T14:00:02.474Z",
+      "metaData": null,
+      "summaryData": null
+    },
+    {
+      "id": "773edff4-752b-469a-924f-afe3eafda2af",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/cline/cline",
+      "repo": "cline/cline",
+      "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+      "language": "TypeScript",
+      "stars": 68192,
+      "forks": 7375,
+      "starsAdded": 102,
+      "createdAt": "2026-09-16T14:00:02.489Z",
+      "metaData": null,
+      "summaryData": null
+    },
+    {
+      "id": "4cbda752-46cb-45e3-991f-d5b7acc89d2b",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 24164,
+      "forks": 2915,
+      "starsAdded": 96,
+      "createdAt": "2026-09-16T14:00:02.459Z",
+      "metaData": {
+        "forks": "2916",
+        "stars": "24168",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
       }
     },
     {
@@ -37378,6 +38001,118 @@
           "研究型开发者"
         ],
         "description": "Atlas 是一款面向 AI 编程的桌面工具，通过本地统一的记忆层连接多个 AI 代理。它能自动记录会话并关联 Git 提交，让代码变更背后的决策逻辑清晰可查，兼顾高效协作与数据隐私保护。"
+      }
+    },
+    {
+      "id": "c46ac168-c7bf-4cec-844f-6f15cf4a4ced",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "repo": "rlaope/oh-my-hermes",
+      "description": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
+      "language": "Python",
+      "stars": 2427,
+      "forks": 177,
+      "starsAdded": 74,
+      "createdAt": "2026-09-16T14:00:02.476Z",
+      "metaData": {
+        "forks": "171",
+        "stars": "2291",
+        "topics": [
+          "agent",
+          "ai",
+          "ai-agent",
+          "ai-tools",
+          "claude-code",
+          "codex",
+          "hermes-agent",
+          "hermes-skill",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rlaope.github.io/oh-my-hermes/",
+        "description": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages - rlaope/oh-my-hermes"
+      },
+      "summaryData": {
+        "tags": [
+          "Hermes Agent",
+          "多模型路由",
+          "并行执行",
+          "证据边界",
+          "成本管理"
+        ],
+        "cover": "",
+        "title": "oh-my-hermes：Hermes Agent 的全能治理层",
+        "ability": [
+          "多模型混合路由",
+          "并行执行与证据边界",
+          "阶段化 TODO 与成本 HUD",
+          "可评审的长期记忆",
+          "108+ 专家技能自动注入"
+        ],
+        "summary": "为 Hermes Agent 装上多模型路由、并行执行、证据边界与可评审记忆，提升质量与降低成本。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Hermes Agent 用户",
+          "多模型开发者",
+          "成本与质量敏感型团队",
+          "终端重度使用者",
+          "追求可工程化工作流的工程角色"
+        ],
+        "description": "oh-my-hermes（OMH）是 Hermes Agent 的插件层，提供多模型路由、并行执行、证据边界、成本可视与可评审记忆，同时自动注入108+专家技能。实测成本可降到约1/6，时间压缩到1/4-1/5，适用于多项目、多模型、多团队协作的开发场景。"
+      }
+    },
+    {
+      "id": "277ec6d5-538e-4343-8d88-8eca28f411a5",
+      "dateAdded": "20260916",
+      "type": "github-daily",
+      "url": "https://github.com/ankitects/anki",
+      "repo": "ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "language": "Rust",
+      "stars": 30657,
+      "forks": 3204,
+      "starsAdded": 50,
+      "createdAt": "2026-09-16T14:00:02.463Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "记忆工具",
+          "SRS",
+          "学习效率",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Anki：开源间隔重复记忆神器深度评测",
+        "ability": [
+          "智能间隔重复算法",
+          "高度定制与插件生态",
+          "跨平台数据同步",
+          "多模态卡片支持",
+          "本地数据完全掌控"
+        ],
+        "summary": "一款利用间隔重复算法帮你高效记忆知识的开源跨平台神器，支持高度定制与二次开发。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "教育"
+        ],
+        "suitable": [
+          "备考学生与语言学习者",
+          "需要掌握大量知识的专业人士",
+          "开发者与极客用户",
+          "追求学习效率的深度用户",
+          "注重数据隐私的学习者"
+        ],
+        "description": "Anki 是一款基于间隔重复算法（SRS）的开源记忆工具，采用先进的 Rust+Python 架构。它支持高度自定义的卡片模板、丰富的插件生态及多端同步，能帮助用户将知识转化为长期记忆，兼顾学习效率与数据掌控。"
       }
     }
   ]

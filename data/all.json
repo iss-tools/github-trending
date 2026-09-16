@@ -1,6 +1,323 @@
 {
   "all": [
     {
+      "id": "e79ec42a-a52c-4e14-80ad-8458b0dae05a",
+      "url": "https://github.com/anthropics/claude-code",
+      "domain": "github.com",
+      "repo": "anthropics/claude-code",
+      "description": "Claude Code 是 Anthropic 官方出品的智能编程工具，通过自然语言在终端、IDE、网页中直接操作代码。它支持多文件联动编辑、Git 工作流自动化、从 Issue 到 PR 的完整闭环，并通过云端会话实现跨设备协作，是提升开发效率的强大助手。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:28:42.991Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "智能体",
+          "CLI工具",
+          "自动化",
+          "Git集成"
+        ],
+        "cover": "",
+        "title": "Claude Code 深度评测：Anthropic 官方出品的终端型智能编程伙伴",
+        "ability": [
+          "终端原生CLI本地云双模式",
+          "多端统一引擎终端IDE桌面Web",
+          "智能理解项目与多文件编辑",
+          "从Issue到PR的自动化闭环",
+          "可扩展插件与指令系统"
+        ],
+        "summary": "用自然语言在终端/IDE/网页中直接改代码、跑命令、操办 Git，从 Issue 到 PR 一键完成。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "个人开发者/独立黑客",
+          "小团队/初创公司",
+          "开源维护者",
+          "新人/交接场景",
+          "习惯终端的开发者"
+        ],
+        "description": "Claude Code 是 Anthropic 官方出品的智能编程工具，通过自然语言在终端、IDE、网页中直接操作代码。它支持多文件联动编辑、Git 工作流自动化、从 Issue 到 PR 的完整闭环，并通过云端会话实现跨设备协作，是提升开发效率的强大助手。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
+      "id": "630a3c5e-f4a9-4edc-baf8-01010ceaff89",
+      "url": "https://github.com/ankitects/anki",
+      "domain": "github.com",
+      "repo": "ankitects/anki",
+      "description": "Anki 是一款基于间隔重复算法（SRS）的开源记忆工具，采用先进的 Rust+Python 架构。它支持高度自定义的卡片模板、丰富的插件生态及多端同步，能帮助用户将知识转化为长期记忆，兼顾学习效率与数据掌控。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:23:55.554Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "记忆工具",
+          "SRS",
+          "学习效率",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Anki：开源间隔重复记忆神器深度评测",
+        "ability": [
+          "智能间隔重复算法",
+          "高度定制与插件生态",
+          "跨平台数据同步",
+          "多模态卡片支持",
+          "本地数据完全掌控"
+        ],
+        "summary": "一款利用间隔重复算法帮你高效记忆知识的开源跨平台神器，支持高度定制与二次开发。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "教育"
+        ],
+        "suitable": [
+          "备考学生与语言学习者",
+          "需要掌握大量知识的专业人士",
+          "开发者与极客用户",
+          "追求学习效率的深度用户",
+          "注重数据隐私的学习者"
+        ],
+        "description": "Anki 是一款基于间隔重复算法（SRS）的开源记忆工具，采用先进的 Rust+Python 架构。它支持高度自定义的卡片模板、丰富的插件生态及多端同步，能帮助用户将知识转化为长期记忆，兼顾学习效率与数据掌控。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
+      "id": "8a7fcd45-046b-4a8e-bc9b-0870d66a22ee",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "domain": "github.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:18:40.872Z",
+      "metaData": {
+        "forks": "2916",
+        "stars": "24168",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
+      "id": "b1ce352f-c25e-47b1-9d4b-799b1d4109fe",
+      "url": "https://github.com/jamiepine/voicebox",
+      "domain": "github.com",
+      "repo": "jamiepine/voicebox",
+      "description": "Voicebox 是一款本地优先的开源 AI 语音工具，整合了 Whisper 听写、7种 TTS 引擎和语音克隆。支持 MCP 协议让 AI 对话发声，提供多轨编辑功能，完全离线运行，保护隐私且无订阅费用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:14:17.493Z",
+      "metaData": {
+        "forks": "6773",
+        "stars": "54133",
+        "topics": [
+          "ai",
+          "cuda",
+          "mlx",
+          "qwen3-tts",
+          "qwen3-tts-ui",
+          "voice-ai",
+          "voice-clone",
+          "whisper"
+        ],
+        "license": "MIT license",
+        "homepage": "https://voicebox.sh",
+        "description": "The open-source AI voice studio. Clone, dictate, create. - jamiepine/voicebox"
+      },
+      "summaryData": {
+        "tags": [
+          "TTS",
+          "语音克隆",
+          "本地AI",
+          "MCP",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Voicebox：开源的本地 AI 语音全能工作室",
+        "ability": [
+          "多引擎TTS合成",
+          "零样本语音克隆",
+          "本地高精度听写",
+          "AI智能体语音集成(MCP)",
+          "多轨音频编辑与后期"
+        ],
+        "summary": "开源本地AI语音工作室，集听写、多引擎TTS、克隆与音频编辑于一体，隐私无费。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生产力工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "AI Agent开发者",
+          "隐私敏感用户",
+          "有声书制作者",
+          "无障碍需求者"
+        ],
+        "description": "Voicebox 是一款本地优先的开源 AI 语音工具，整合了 Whisper 听写、7种 TTS 引擎和语音克隆。支持 MCP 协议让 AI 对话发声，提供多轨编辑功能，完全离线运行，保护隐私且无订阅费用。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
+      "id": "c69c7182-7de9-408d-9ae3-a58d9ccb52fd",
+      "url": "https://github.com/abue-ammar/tinycast",
+      "domain": "github.com",
+      "repo": "abue-ammar/tinycast",
+      "description": "基于 SwiftUI 构建的 macOS 极致轻量启动器，无遥测、无 Electron，集应用启动、剪贴板历史与计算于一体，完美支持 Raycast 扩展迁移。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:09:28.271Z",
+      "metaData": {
+        "forks": "247",
+        "stars": "5280",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://abue-ammar.github.io/tinycast/",
+        "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history. - abue-ammar/tinycast"
+      },
+      "summaryData": {
+        "tags": [
+          "macOS",
+          "Raycast",
+          "启动器",
+          "剪贴板",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Tinycast：极致轻量的 macOS 启动器与剪贴板工具",
+        "ability": [
+          "应用启动",
+          "剪贴板历史",
+          "行内计算与汇率",
+          "代码片段管理",
+          "兼容Raycast扩展"
+        ],
+        "summary": "Swift 原生构建的极致轻量 macOS 启动器，零遥测，支持剪贴板管理与 Raycast 扩展。",
+        "category": [
+          "效率工具",
+          "开发工具",
+          "MacOS 软件"
+        ],
+        "suitable": [
+          "MacOS 重度用户",
+          "隐私敏感用户",
+          "Raycast 替代需求者",
+          "性能极致追求者",
+          "开发者"
+        ],
+        "description": "基于 SwiftUI 构建的 macOS 极致轻量启动器，无遥测、无 Electron，集应用启动、剪贴板历史与计算于一体，完美支持 Raycast 扩展迁移。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
+      "id": "ce267001-5ff5-4805-a654-619e1c1624fb",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "domain": "github.com",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T14:04:24.306Z",
+      "metaData": {
+        "forks": "350",
+        "stars": "5824",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
       "id": "b640764a-5114-480d-b149-e2435c918bf4",
       "url": "https://github.com/home-assistant/core",
       "domain": "github.com",
@@ -1337,8 +1654,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2166",
-        "stars": "30453",
+        "forks": "2183",
+        "stars": "30638",
         "topics": [
           "agent",
           "agent-skills",
@@ -2635,8 +2952,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3594",
-        "stars": "34388",
+        "forks": "3634",
+        "stars": "34654",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",

@@ -1,0 +1,163 @@
+# abue-ammar/tinycast
+
+[GitHub URL](https://github.com/abue-ammar/tinycast)
+
+
+## Tinycast：极致轻量的 macOS 启动器与剪贴板工具
+
+> Swift 原生构建的极致轻量 macOS 启动器，零遥测，支持剪贴板管理与 Raycast 扩展。
+
+- **Tags**: macOS, Raycast, 启动器, 剪贴板, 开源
+- **Category**: 效率工具, 开发工具, MacOS 软件
+
+## Details
+
+# Tinycast 深度评测
+## 一句话总结
+- Tinycast 是一款“轻到令人发指、快到原生、没有账号/遥测/云端”的 macOS 启动器与剪贴板历史工具，使用 SwiftUI+AppKit 原生开发，甚至能以原生方式运行 Raycast 扩展，是追求本地优先与极致控制力用户的 Raycast 轻量替代品。
+---
+## 背景与痛点
+在 macOS 生态里，启动器/命令面板类工具已是效率刚需，但近几年主流方案越来越重、越来越“像浏览器”：
+- 典型产品走 Electron 路线，常驻内存动辄数百 MB，CPU 占用也不低，风扇跟着转。
+- 想用个基础功能也得注册/登录/配云同步， telemetry（遥测）几乎成标配，隐私边界模糊。
+- 插件生态繁荣，但为了一两个常用扩展被迫拖入整个大而全的运行时（Node.js、浏览器上下文、权限矩阵）。
+Tinycast 的设计直指这些“痛点反例”：
+- 5MB 左右磁盘体积、100MB 以内内存占用，不依赖 Electron/浏览器。开发者明确打出 “No Electron. No telemetry. No bullshit.” 的口号。
+- 本地优先设计：剪贴板历史、片段、汇率等数据都落在本机存储；即便从网络获取汇率，也在本地缓存与计算，流程完全可控。
+- 直接从 Raycast 导出配置（.rayconfig），一键迁移 Shortcuts/Favorites/Clipboard History/Emoji Skin Tone/启动登录等设置，大幅降低切换成本。
+## 核心亮点与功能剖析
+### 1) 原生 SwiftUI+AppKit，性能与资源控制“硬指标”
+- 核心技术栈：SwiftUI + AppKit，利用系统内置的 JavaScriptCore 来运行 Raycast 扩展，无需外挂 Node.js 或浏览器进程。
+- 官方指标：磁盘占用约 5MB、内存常驻 <100MB；并且贡献者准则甚至把“RAM <100MB”写入非妥协条款（Non-negotiables）。
+- 架构上采用清晰的四层分层：Pure（纯逻辑/Foundation）、Effect（平台 I/O）、Observable State（@MainActor 状态）、View（SwiftUI 薄视图），并坚持“Model 不导入 AppKit/SwiftUI”的可检查约束，保证逻辑可测、副作用隔离。
+> 比喻：如果把启动器比作一家“餐厅”，很多产品是把厨房、前厅、收银都塞进了集装箱（Electron），食客进来先穿雨衣。Tinycast 则是在 Mac 系统自带“街面铺位”里精装修，上菜直接从窗口递出，没有多余的中介。
+### 2) 功能密度高但聚焦：五大能力一套 Palette
+- 应用启动：模糊搜索所有应用、收藏、显示运行状态；可一键退出某个或所有应用。
+- 剪贴板历史：文本与图像，全文本可搜索，历史时长可设（甚至永久），直接粘贴回原应用。
+- 行内计算器：支持数学、单位转换、实时货币与加密货币汇率，查询结果有历史记录可回溯。
+- Snippets（片段）：支持 Markdown 模板、动态占位符、参数嵌套与可选的关键词触发扩展；适合邮件签名、代码片段、常用回复等。
+- Emoji & 符号：搜索完整 emoji/符号集，常用项自动排序靠前，支持肤色自定义。
+### 3) 全局/单应用热键与 Hyper Key
+- 全局热键：一个快捷键在任意应用（包括全屏）上调出命令面板，支持在 Compact 与 Expanded 模式之间切换。
+- 每个应用可绑定独立热键，实现“按下聚焦、再按隐藏”的 toggle 行为，对频繁在两三个应用之间来回切换的人非常友好。
+- Hyper Key：将 Caps Lock 映射为 ⌃⌥⇧⌘ 超级修饰键，作为一个额外快捷层，并在 UI 上以 ✦ 统一显示。系统级 remap（hidutil 状态），不在应用内持久化，退出一个 channel 会清除映射；这是平台级行为的取舍，需知悉。
+### 4) 与 Raycast 的“兼容+迁移”能力
+- 原生运行 Raycast 扩展：官方说明“它也能运行 Raycast 扩展——以原生 SwiftUI 渲染，不需要 Node.js/浏览器；JavaScriptCore 是系统自带，不增加二进制体积”。
+- 从 Raycast 一键导入：官方给出“导出 → 导入 → 挑选迁移内容”三步走，并明确支持迁移 Shortcuts、Favorites、Clipboard history、Emoji skin tone、Launch at login、Menu-bar preference 等内容。
+> 比喻：就像你从“大商城”搬出来，Tinycast 不光帮你把常用商品清单打印好，甚至连账本（片段/历史）一起带过去；更难得的是，你从前在旧商城办的一些“会员卡”（Raycast 扩展），在这家新铺子也能继续用。
+### 5) 本地优先与隐私设计
+- 零账号/零登录/零遥测：官网与 README 明确“No account. No telemetry. No bullshit.”；所有数据偏好落在本机，权限请求仅按需触发（如剪贴板/辅助功能）。
+- 权限说明明确：仅在需要“向其他应用粘贴/展开文本”时请求 Accessibility 权限；Snippets 默认关闭，且按键匹配在本地进行，不存储也不发送。
+### 6) 备份与恢复、配置导出
+- 一键导出所有快捷键、收藏、剪贴板、片段等为一个文件，并在其他 Mac 上恢复，便于多机同步与迁移。
+### 7) Homebrew 一键部署与自签名处理
+- 官方提供 Homebrew Cask 安装命令，并自动解除隔离标志（quarantine），省去手动执行 `xattr -dr`。若直接下载 DMG 需自行执行一次隔离清除，因其为自签名（非付费开发者 ID 公证）。
+- 多频道并行安装（stable/beta/Sequoia），互不干扰，便于尝鲜又不影响主力使用。
+### 8) 工程文化与文档深度
+- 仓库具备详尽的 docs（development.md、architecture.md、testing.md 等），并坚持“非妥协条款”：内存 <100MB、无泄漏、UI 严格遵循设计系统；提交 PR 需先有已批准的 issue，视觉变更必须提供前后对比视频。
+- Issue/PR 活跃度：在 OSSInsight 上显示约 3.6k stars、~199 forks、总 Issue 210、总 PR 161；近两个月 Trendshift 显示其曾在 Swift 日榜/周榜上榜，并在 2026-07-28 达到“#3 Repository Of The Day”。
+## 目标人群与收益
+- 目标人群：
+  - 追求极致“本地优先”与隐私的 macOS 重度用户；
+  - 长期使用 Raycast 但对其资源占用/账号体系/遥测有顾虑的人；
+  - 需要快速、无脑迁移现有 Raycast 配置并继续使用其扩展生态的人；
+  - 希望工具可审计、可自建、可贡献（AGPL-3.0）的开发者与团队。
+- 实际收益：
+  - 性能：内存占用 <100MB，磁盘约 5MB，使用感受接近系统原生；没有 Electron 常见的“启动慢、滚动卡顿、风扇狂转”。
+  - 隐私与合规：零遥测、零账号，适合对数据出境与隐私敏感的企业/个人环境；剪贴板/片段全部在本地存取。
+  - 迁移成本低：从 Raycast 一键导入，无须重配大量快捷键与片段；扩展兼容让切换“无痛”。
+  - 多设备/重装友好：配置一键备份与恢复，降低换机/重装带来的“配置焦虑”。
+  - 开源与可控：AGPL-3.0 许可；企业可以 fork、自建内部分发渠道，并根据内部安全策略做审计和定制。
+## 竞品/同类对比
+| 维度 | Tinycast | Raycast | Alfred（Powerpack 付费） | Spotlight（系统自带） |
+|---|---|---|---|---|
+| 架构与性能 | SwiftUI+AppKit，原生，5MB/<100MB，无 Electron | Electron，较重 | 原生，轻量但 UI 年代感 | 系统 Spotlight，轻量但功能有限 |
+| 隐私/遥测 | 无账号、无遥测，本地优先 | 需账号/登录，有云端同步与遥测（视配置） | 可选工作流/网络功能，基本可控 | 受系统隐私策略管控 |
+| 扩展生态 | 兼容部分 Raycast 扩展（原生 SwiftUI） | 丰富官方/社区扩展，插件市场成熟 | 强大 Workflow/脚本生态 | 仅基础系统功能 |
+| 剪贴板历史 | 文本+图像，可搜索、可永久保存 | 有剪贴板历史（需权限/配置） | 需 Powerpack 扩展 | 无 |
+| 配置迁移 | 可从 Raycast 导入 | 可导出，但不直接支持从 Tinycast 导入 | 支持导入/导出 sync 设置 | 无 |
+| 成本 | 免费（AGPL-3.0 开源） | 有免费与 Pro/Team 付费 | 一次性付费（Powerpack） | 系统自带，免费 |
+- 独特竞争力：
+  - “不牺牲性能与隐私的前提下，复用 Raycast 扩展资产”——这在当前竞品里几乎是独一份的差异化策略。
+  - 极致工程文化与硬性性能预算（内存 <100MB），对长期维护稳定度有帮助。
+## 局限与不足
+- 平台受限：仅支持 macOS；无 Windows/Linux/iOS 版本。
+- 自签名与首次启动提示：因采用自签名而非付费 Apple Developer ID 公证，首次打开会被 macOS 隔离，需通过 Homebrew 自动或手动执行 `xattr -dr com.apple.quarantine "/Applications/Tinycast.app"` 予以解除；小白用户可能被系统警告劝退。
+- Raycast 扩展兼容范围：并非“所有”扩展都能完美运行；复杂 UI/特权调用/网络行为可能会受限或不稳定。具体兼容清单与局限需参考扩展文档（docs/extensions.md），未见单一页面前置列出“完全支持列表”。
+- 无云同步：官方明确“本地优先、无账号”，多机同步需要通过导出/导入配置文件，或结合自建存储方案实现，对于习惯“无缝云同步”的用户来说有学习与维护成本。
+- 贡献门槛偏高：要求 PR 必须关联已批准的 issue、内存与泄漏测试、UI 变更需要前后视频、本地通过全套测试；对只想“随手修个小 bug”的新手有一定压力。
+- AGPL-3.0 对再分发的约束：如果你修改并分发了 Tinycast（例如面向内部分发或打包成商业产品），需要开源相关修改并提供源代码获取渠道；这在企业“闭源自用”场景下需要法务审视。
+- 系统级 remap 的副作用：Hyper Key 使用 hidutil 做系统级 Caps Lock remap，非 per-bundle，因此退出一个 channel 会清除映射，另一个 channel 需重绑/重启；多 channel（Dev/Beta/Stable）并存时需注意不要同时绑定同一全局快捷键。
+## 上手门槛与部署体验
+- 安装（推荐 Homebrew）：
+  - 稳定版：
+    - `brew trust --tap abue-ammar/tinycast`
+    - `brew install --cask abue-ammar/tinycast/tinycast`
+  - Beta 版：
+    - `brew install --cask abue-ammar/tinycast/tinycast@beta`
+  - Intel Mac 使用 universal 包：`abue-ammar/tinycast/tinycast-universal`。
+- 首次启动：
+  - Homebrew 安装会自动清除隔离标记；若直接下载 DMG，需运行一次：
+    - `xattr -dr com.apple.quarantine "/Applications/Tinycast.app"`
+  - 打开 Settings → General，记录一个全局快捷键即可使用。
+- 基础使用流程（来自 README）：
+  1) 按快捷键调出面板 → 浮窗。
+  2) 输入关键字过滤应用/剪贴板/片段等 → 回车执行。
+  3) Tab 在不同模式间切换，↑/↓ 移动选择，Esc 关闭。
+  4) 在 Settings → Shortcuts 中为应用/自定义命令绑定独立热键。
+  5) 在 Settings → Snippets 启用并配置片段模板与触发关键词。
+## 技术栈与架构解析
+- 技术栈：
+  - 语言：Swift。
+  - UI：SwiftUI + AppKit（NSPanel/NSHostingView 控制调色板与窗口）。
+  - 扩展运行时：JavaScriptCore（系统自带）。
+  - 工具链：Xcode 26，XcodeGen（项目生成），SwiftLint（Lint），swift-format（格式化），Node 仅用于生成数据与测试脚本（不参与应用构建）。
+- 架构分层：
+  - PURE（Model）：仅 Foundation，无 AppKit/网络/时钟/文件系统，环境事实通过依赖注入传入，便于单元测试与逻辑复用。
+  - EFFECT（Service）：负责所有平台 I/O（AXUIElement、CGEventTap、NSWorkspace、URLSession 等），即“做什么”的执行层。
+  - Observable State：39 个 @MainActor @Observable 的 stores/sessions，驱动 UI 响应式更新。
+  - VIEW（UI/Settings）：SwiftUI 声明式视图，保持“薄”，业务逻辑放在 Coordinator 中。
+  - 单例 AppCore：持有长生命周期对象（stores、managers、monitors、coordinators），并在 start() 中完成启动序列，使启动过程可读、可审计。
+- 测试与 CI：
+  - 套件包含多种 harness（测试用具）并通过 run-tests.sh 驱动，生成编译命令数据库用于 LSP（SourceKit-LSP）；CI 运行 lint 与测试，但不构建应用，要求本地构建验证。
+  - 要求每个 PR 附内存指标（idle/peak）与泄漏测试结果，可视化变更需附带前后对比视频。
+## 社区活跃度与生命力
+- 指标概览：
+  - Stars ~3.6k，Forks ~199；Issue ~210，PR ~161；语言 Swift；许可 AGPL-3.0。
+  - Trendshift 显示其在 2026-07-28 进入 Swift 日榜与周榜，并获“#3 Repository Of The Day”。
+- Release 节奏：
+  - 近期稳定版 0.10.23，Beta 频道迭代到 0.11.1-beta.96，更新较频繁；提交者与贡献者列表持续出现新面孔，说明社区有持续贡献。
+- 工程治理：
+  - 严格的贡献规范（Issue-First、Approved Issue 必填、UI 变更视频、内存/泄漏测试）等，有助于保持代码质量与性能底线，但也提高了新晋贡献者的进入门槛。
+## Demo / 代码示例
+### 安装命令（Homebrew）
+```bash
+# 一次性：信任作者 tap
+brew trust --tap abue-ammar/tinycast
+# 安装稳定版
+brew install --cask abue-ammar/tinycast/tinycast
+```
+### 若直接下载 DMG 则首次启动前需解除隔离
+```bash
+xattr -dr com.apple.quarantine "/Applications/Tinycast.app"
+```
+以上来自 README 与 Releases 页面。
+### 从 Raycast 导入配置（示例步骤）
+1) Raycast → Settings → Advanced → Export，并设置一个口令；
+2) 在 Tinycast 调出面板，执行 “Import from Raycast”，选择 .rayconfig 文件；
+3) 按需选择要迁移的内容（Shortcuts、Favorites、Clipboard history 等）。
+## 避坑指南（实战经验向）
+- 不要同时给 Dev/Beta/Stable 三个 channel 绑定完全相同的全局快捷键；注册先到先得，容易出现“按下去没反应”的困惑。
+- Hyper Key 的 Caps Lock remap 是系统级，并非 per-bundle；若从一个 channel 退出，另一个可能需要重新绑定或重启应用，否则按键映射失效。
+- 下载 DMG 安装前务必了解自签名与系统隔离策略；在企业环境下可能需要额外“白名单”或调整安全策略；优先使用 Homebrew 可减少首次启动的报错体验。
+- 扩展兼容性不要“照单全收”，先从轻量级扩展开始试用，涉及敏感权限（文件、网络、摄像头、日历等）的扩展要逐个审查请求与风险，因为 JavaScriptCore 沙盒与 AppKit 桥接虽有限制，但并不能完全消除恶意扩展的潜在风险。
+- 若要参与贡献，务必先读 docs/ 与 CONTRIBUTING.md，尤其关注内存预算与“Approved Issue”的前置要求，避免 PR 被自动关闭的尴尬。
+## 结语与行动建议
+- 如果你已经在用 Raycast，但对其资源占用/账号体系/云端遥测心存芥蒂，Tinycast 提供了一个“几乎无痛”的退出路径：一键导入配置，继续复用部分扩展，同时享受原生性能与本地优先隐私体验。
+- 如果你是 macOS 原生开发者或重度键盘流用户，想要一款“看得见摸得着、可审可改、不会悄悄传数据”的启动器，Tinycast 也是一个很好的开源参考实现与生产工具。
+- 行动建议：
+  - 先用 Homebrew 安装稳定版，把全局热key、剪贴板历史、计算器与 Snippets 这四项“核心能力”跑起来，形成日常手感；
+  - 若是 Raycast 老用户，立刻尝试“导入配置” workflow，验证常用快捷键与片段是否无感迁移；
+  - 对扩展生态保持理性：先从低权限、低复杂度的扩展开始试用，观察性能与行为变化；
+  - 若考虑企业内部分发，请提前评估 AGPL-3.0 的合规与分发要求，并据此决定是否 fork 自建渠道。
+总体来看，Tinycast 用“极简架构+硬性性能预算+严格的工程文化”换来了令人信服的轻量与本地可控性，是当前 macOS 启动器赛道里为数不多真正把“轻”与“隐私”做到一致的产品。
