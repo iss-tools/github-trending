@@ -1,6 +1,68 @@
 {
   "all": [
     {
+      "id": "b640764a-5114-480d-b149-e2435c918bf4",
+      "url": "https://github.com/home-assistant/core",
+      "domain": "github.com",
+      "repo": "home-assistant/core",
+      "description": "Home Assistant Core 是最成熟的开源智能家居系统，打破品牌壁垒，支持海量设备接入。它采用本地优先设计，保障隐私，通过 YAML 或 UI 实现强大的自动化逻辑，是打造“可编程家”的最佳选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-16T12:08:20.183Z",
+      "metaData": {
+        "forks": "38628",
+        "stars": "90535",
+        "topics": [
+          "asyncio",
+          "hacktoberfest",
+          "home-automation",
+          "internet-of-things",
+          "iot",
+          "mqtt",
+          "python",
+          "raspberry-pi"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.home-assistant.io",
+        "description": ":house_with_garden: Open source home automation that puts local control and privacy first. - home-assistant/core"
+      },
+      "summaryData": {
+        "tags": [
+          "IoT",
+          "自动化",
+          "HomeAssistant",
+          "隐私安全",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Home Assistant Core：开源智能家居最强中枢",
+        "ability": [
+          "海量设备集成",
+          "强大的自动化编排",
+          "本地优先与隐私保护",
+          "可视化仪表盘",
+          "家庭能源管理"
+        ],
+        "summary": "本地优先、隐私可控的开源智能家居中枢，统一管理各类设备与自动化。",
+        "category": [
+          "智能家居",
+          "开源项目",
+          "效率工具"
+        ],
+        "suitable": [
+          "极客/DIY爱好者",
+          "智能家居重度用户",
+          "注重隐私的用户",
+          "开发者",
+          "家庭能源管理者"
+        ],
+        "description": "Home Assistant Core 是最成熟的开源智能家居系统，打破品牌壁垒，支持海量设备接入。它采用本地优先设计，保障隐私，通过 YAML 或 UI 实现强大的自动化逻辑，是打造“可编程家”的最佳选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260916"
+    },
+    {
       "id": "e45c440e-80d5-43d8-9d4e-8b48daded58d",
       "url": "https://github.com/sergebulaev/linkedin-skills",
       "domain": "github.com",
@@ -966,8 +1028,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T14:06:55.799Z",
       "metaData": {
-        "forks": "1843",
-        "stars": "5999",
+        "forks": "1899",
+        "stars": "6114",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1540,7 +1602,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "272",
-        "stars": "7874",
+        "stars": "7885",
         "topics": [
           "agents",
           "claude-code",
@@ -1878,8 +1940,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3427",
-        "stars": "24708",
+        "forks": "3440",
+        "stars": "24841",
         "topics": [
           "agent",
           "agentic",
@@ -2942,8 +3004,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "704",
-        "stars": "9969",
+        "forks": "705",
+        "stars": "10008",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -4138,8 +4200,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13600",
-        "stars": "184592",
+        "forks": "13604",
+        "stars": "184646",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -5609,8 +5671,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25699",
-        "stars": "287356",
+        "forks": "25706",
+        "stars": "287430",
         "topics": [
           "ai",
           "brainstorming",
@@ -6216,8 +6278,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3963",
-        "stars": "48868",
+        "forks": "3972",
+        "stars": "48933",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -8554,8 +8616,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10080",
-        "stars": "95051",
+        "forks": "10087",
+        "stars": "95127",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -10578,8 +10640,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7511",
-        "stars": "139779",
+        "forks": "7518",
+        "stars": "139915",
         "topics": [
           "agent-skills",
           "ai-agents",
