@@ -1,6 +1,152 @@
 {
   "all": [
     {
+      "id": "faf4650a-5571-4b3c-9140-30827280b4ef",
+      "url": "https://github.com/stablyai/orca",
+      "domain": "github.com",
+      "repo": "stablyai/orca",
+      "description": "Orca是一款面向AI编码代理的开发环境，支持在同一界面运行多个CLI代理（Claude、Codex等），为每个代理提供隔离的Git Worktree、终端和浏览器，实现多智能体并行编码与远程协同。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T13:04:13.428Z",
+      "metaData": {
+        "forks": "4631",
+        "stars": "70743",
+        "topics": [
+          "ade",
+          "agent-ide",
+          "ai-agents",
+          "claude-code",
+          "cli",
+          "codex",
+          "cursor-agent",
+          "devtools",
+          "ghostty",
+          "ide",
+          "mobile-app",
+          "opencode",
+          "orchestration",
+          "parallel-agents",
+          "pi",
+          "terminal",
+          "worktrees",
+          "yc-backed"
+        ],
+        "license": "MIT license",
+        "homepage": "https://onOrca.dev",
+        "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+      },
+      "summaryData": {
+        "tags": [
+          "AI编程",
+          "CLI代理",
+          "多智能体",
+          "Git Worktree",
+          "远程协作"
+        ],
+        "cover": "",
+        "title": "Orca - 多智能体并行AI编程环境",
+        "ability": [
+          "多智能体并行编排",
+          "Git Worktree隔离管理",
+          "内嵌浏览器与终端",
+          "远程协同与移动伴侣",
+          "原生GitHub/Linear集成"
+        ],
+        "summary": "面向AI编码代理的新一代开发环境，支持多CLI代理并行运行与远程协同",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "协作工具"
+        ],
+        "suitable": [
+          "使用CLI代理的开发者",
+          "需要多分支并行的团队",
+          "远程协作用户",
+          "AI重度使用者",
+          "代码评审密集的项目"
+        ],
+        "description": "Orca是一款面向AI编码代理的开发环境，支持在同一界面运行多个CLI代理（Claude、Codex等），为每个代理提供隔离的Git Worktree、终端和浏览器，实现多智能体并行编码与远程协同。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
+      "id": "f9de8a18-0246-4b5c-9c17-f3ab1d871e10",
+      "url": "https://github.com/n8n-io/n8n",
+      "domain": "github.com",
+      "repo": "n8n-io/n8n",
+      "description": "n8n 是一款基于 Node.js 的 Fair-code 工作流自动化工具。它允许用户通过拖拽节点连接各种应用，支持在流程中直接编写 JavaScript/Python 代码。不仅拥有 1500+ 集成和强大的 AI 编排能力，还支持企业私有化部署，兼顾了易用性、灵活性与数据安全。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T11:32:14.145Z",
+      "metaData": {
+        "forks": "60728",
+        "stars": "204802",
+        "topics": [
+          "ai",
+          "apis",
+          "automation",
+          "cli",
+          "data-flow",
+          "development",
+          "integration-framework",
+          "integrations",
+          "ipaas",
+          "low-code",
+          "low-code-platform",
+          "mcp",
+          "mcp-client",
+          "mcp-server",
+          "n8n",
+          "no-code",
+          "self-hosted",
+          "typescript",
+          "workflow",
+          "workflow-automation"
+        ],
+        "license": "License",
+        "homepage": "https://n8n.io",
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. - n8n-io/n8n"
+      },
+      "summaryData": {
+        "tags": [
+          "自动化",
+          "开源",
+          "AI Agent",
+          "工作流",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "n8n：可自建、可编程的 AI 时代自动化神器",
+        "ability": [
+          "可视化工作流编排",
+          "内置代码节点",
+          "AI 原生集成",
+          "企业级安全与权限",
+          "自建与私有化部署"
+        ],
+        "summary": "兼顾可视化与代码能力的 Fair-code 工作流自动化平台，适合追求数据主权与 AI 落地的团队。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "SRE/运维人员",
+          "后端/全栈开发",
+          "AI 应用开发者",
+          "技术型产品/运营",
+          "需要数据安全的企业"
+        ],
+        "description": "n8n 是一款基于 Node.js 的 Fair-code 工作流自动化工具。它允许用户通过拖拽节点连接各种应用，支持在流程中直接编写 JavaScript/Python 代码。不仅拥有 1500+ 集成和强大的 AI 编排能力，还支持企业私有化部署，兼顾了易用性、灵活性与数据安全。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
       "id": "c61b1308-7fe9-4e71-a762-cbf4a2dfa084",
       "url": "https://github.com/coder/coder",
       "domain": "github.com",
@@ -11,8 +157,23 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:27:05.481Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "1480",
+        "stars": "14710",
+        "topics": [
+          "agents",
+          "dev-tools",
+          "development-environment",
+          "go",
+          "golang",
+          "ide",
+          "jetbrains",
+          "remote-development",
+          "terraform",
+          "vscode"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://coder.com",
+        "description": "Secure environments for developers and their agents - coder/coder"
       },
       "summaryData": {
         "tags": [
@@ -60,8 +221,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "338",
-        "stars": "3191",
+        "forks": "341",
+        "stars": "3230",
         "topics": [
           "agent",
           "agentic-ai",
@@ -121,7 +282,7 @@
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
         "forks": "4065",
-        "stars": "25254",
+        "stars": "25274",
         "topics": [
           "bpf",
           "cncf",
@@ -190,8 +351,16 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "254",
+        "stars": "3660",
+        "topics": [
+          "agent",
+          "browser-use",
+          "dsh-plugin"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent. - Tencent/BrowserSkill"
       },
       "summaryData": {
         "tags": [
@@ -238,8 +407,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7396",
-        "stars": "68493",
+        "forks": "7405",
+        "stars": "68554",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -364,8 +533,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:34:11.263Z",
       "metaData": {
-        "forks": "4821",
-        "stars": "50730",
+        "forks": "4823",
+        "stars": "50747",
         "topics": [
           "classification",
           "coco",
@@ -437,8 +606,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "23516",
-        "stars": "145748",
+        "forks": "23520",
+        "stars": "145780",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -542,8 +711,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "2929",
-        "stars": "24416",
+        "forks": "2930",
+        "stars": "24436",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -595,8 +764,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:14:17.493Z",
       "metaData": {
-        "forks": "6803",
-        "stars": "54709",
+        "forks": "6809",
+        "stars": "54744",
         "topics": [
           "ai",
           "cuda",
@@ -657,8 +826,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:09:28.271Z",
       "metaData": {
-        "forks": "274",
-        "stars": "5898",
+        "forks": "275",
+        "stars": "5948",
         "topics": [],
         "license": "License",
         "homepage": "https://abue-ammar.github.io/tinycast/",
@@ -710,8 +879,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "459",
-        "stars": "8245",
+        "forks": "500",
+        "stars": "9279",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -762,8 +931,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T12:08:20.183Z",
       "metaData": {
-        "forks": "38675",
-        "stars": "90599",
+        "forks": "38682",
+        "stars": "90618",
         "topics": [
           "asyncio",
           "hacktoberfest",
@@ -898,8 +1067,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T13:05:23.733Z",
       "metaData": {
-        "forks": "5318",
-        "stars": "28982",
+        "forks": "5360",
+        "stars": "29093",
         "topics": [
           "ai-agents",
           "ai-gateway",
@@ -1031,8 +1200,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
-        "forks": "9074",
-        "stars": "44300",
+        "forks": "9080",
+        "stars": "44366",
         "topics": [
           "ai",
           "anthropic",
@@ -1645,8 +1814,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7111",
-        "stars": "81726",
+        "forks": "7231",
+        "stars": "82738",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -1779,8 +1948,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T14:06:55.799Z",
       "metaData": {
-        "forks": "1926",
-        "stars": "6225",
+        "forks": "1938",
+        "stars": "6286",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2088,8 +2257,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2353",
-        "stars": "33116",
+        "forks": "2401",
+        "stars": "33691",
         "topics": [
           "agent",
           "agent-skills",
@@ -2147,8 +2316,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
-        "forks": "527",
-        "stars": "6393",
+        "forks": "528",
+        "stars": "6412",
         "topics": [
           "agent",
           "ai",
@@ -2207,8 +2376,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
-        "forks": "1100",
-        "stars": "7458",
+        "forks": "1108",
+        "stars": "7547",
         "topics": [
           "accounting",
           "billing",
@@ -2352,8 +2521,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
-        "forks": "272",
-        "stars": "7946",
+        "forks": "271",
+        "stars": "7974",
         "topics": [
           "agents",
           "claude-code",
@@ -2691,8 +2860,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3529",
-        "stars": "25904",
+        "forks": "3535",
+        "stars": "25986",
         "topics": [
           "agent",
           "agentic",
@@ -2825,7 +2994,7 @@
       "createdAt": "2026-09-11T11:41:11.206Z",
       "metaData": {
         "forks": "290",
-        "stars": "4812",
+        "stars": "4864",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://openresearch.sh/",
@@ -3097,8 +3266,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "697",
-        "stars": "2995",
+        "forks": "734",
+        "stars": "3114",
         "topics": [
           "ai",
           "ai-agents",
@@ -3386,8 +3555,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3721",
-        "stars": "35391",
+        "forks": "3727",
+        "stars": "35453",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -3755,8 +3924,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "713",
-        "stars": "10204",
+        "forks": "718",
+        "stars": "10274",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -4219,8 +4388,8 @@
       "forks": 0,
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
-        "forks": "897",
-        "stars": "6878",
+        "forks": "898",
+        "stars": "6890",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -4877,8 +5046,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1678",
-        "stars": "23286",
+        "forks": "1680",
+        "stars": "23332",
         "topics": [
           "antigravity",
           "claude",
@@ -4951,8 +5120,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13624",
-        "stars": "184929",
+        "forks": "13627",
+        "stars": "185019",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -6422,8 +6591,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25738",
-        "stars": "287742",
+        "forks": "25753",
+        "stars": "287913",
         "topics": [
           "ai",
           "brainstorming",
@@ -7029,8 +7198,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "3998",
-        "stars": "49317",
+        "forks": "4003",
+        "stars": "49427",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -7464,8 +7633,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3169",
-        "stars": "32910",
+        "forks": "3172",
+        "stars": "32958",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -8370,8 +8539,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "7986",
-        "stars": "61394",
+        "forks": "7995",
+        "stars": "61441",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -9183,8 +9352,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4721",
-        "stars": "41607",
+        "forks": "4727",
+        "stars": "41668",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -9367,8 +9536,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10122",
-        "stars": "95663",
+        "forks": "10130",
+        "stars": "95822",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -9918,8 +10087,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8652",
-        "stars": "78157",
+        "forks": "8657",
+        "stars": "78212",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -10132,8 +10301,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "7268",
-        "stars": "36296",
+        "forks": "7342",
+        "stars": "36594",
         "topics": [
           "3d-globe",
           "cesium",
@@ -10324,8 +10493,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:38:06.504Z",
       "metaData": {
-        "forks": "312",
-        "stars": "2479",
+        "forks": "442",
+        "stars": "3482",
         "topics": [
           "expense-tracker",
           "finance-management",
@@ -10941,8 +11110,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T16:04:21.758Z",
       "metaData": {
-        "forks": "974",
-        "stars": "7462",
+        "forks": "979",
+        "stars": "7490",
         "topics": [
           "agent-orchestration",
           "agents",
@@ -11205,8 +11374,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4328",
-        "stars": "65217",
+        "forks": "4363",
+        "stars": "65549",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -11636,8 +11805,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3652",
-        "stars": "26744",
+        "forks": "3658",
+        "stars": "26821",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -12845,8 +13014,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2738",
-        "stars": "47067",
+        "forks": "2754",
+        "stars": "47229",
         "topics": [
           "adhd",
           "claude-",
@@ -13756,8 +13925,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:34:47.183Z",
       "metaData": {
-        "forks": "3173",
-        "stars": "29787",
+        "forks": "3174",
+        "stars": "29793",
         "topics": [
           "ai",
           "language",
@@ -13877,8 +14046,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
-        "forks": "511",
-        "stars": "5525",
+        "forks": "512",
+        "stars": "5531",
         "topics": [
           "agent-runtime",
           "ai",
@@ -14368,8 +14537,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39033",
-        "stars": "260773",
+        "forks": "39039",
+        "stars": "260863",
         "topics": [
           "ai-agents",
           "anthropic",

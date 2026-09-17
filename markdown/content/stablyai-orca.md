@@ -1,0 +1,140 @@
+# stablyai/orca
+
+[GitHub URL](https://github.com/stablyai/orca)
+
+
+## Orca - 多智能体并行AI编程环境
+
+> 面向AI编码代理的新一代开发环境，支持多CLI代理并行运行与远程协同
+
+- **Tags**: AI编程, CLI代理, 多智能体, Git Worktree, 远程协作
+- **Category**: 开发工具, AI编程, 协作工具
+
+## Details
+
+<|assistant|>我将打开 onOrca.dev 官方文档站点，以了解功能详情、设计与架构说明、配置方法和最佳实践，为评测提供权威依据。</think>
+## Orca（stablyai/orca）深度评测
+---
+### 一句话总结
+Orca 是一款面向“AI 编码代理”的新一代开发环境（ADE，Agent Development Environment），主打**在同一界面里并行运行多个 CLI 代理（如 Claude Code、Codex、Cursor、GitHub Copilot 等）**，并为每个代理配备隔离的 Git Worktree、终端、内嵌浏览器与移动伴侣，实现真正的“多智能体并行编码与远程协同”。适合重度使用 CLI 代理与需要多分支并行开发、远程协同的团队与个人。
+---
+## 背景与痛点：它为什么会出现？
+- 智能体爆发但工具分散：Claude Code、Codex、Cursor、GitHub Copilot 等都提供 CLI，让代理可以读/写文件、跑测试、甚至直接调用浏览器；但它们各自为政，开发者需要在多个终端窗口与编辑器之间来回切换，多任务并行时极易混乱。  
+- 单一工作空间带来冲突：传统 IDE/编辑器通常绑定单一工作目录。多分支并行（同时修 bug、做特性、回溯问题）时，要么频繁 stash/checkout，要么开多窗口，心智负担大，容易误改。  
+- 远程/移动场景无法顺手跟进：在服务器跑任务、或在通勤路上想跟进代理进度，多数工具做不到“手机看终端、继续发指令”；要么 SSH 笨重，要么依赖第三方网页终端。  
+- 评审流程割裂：AI 生成改动的 diff 与代码评审在不同工具里，来回切换打断心流。
+Orca 把这些痛点打包成一套解决方案：**多智能体 + 每个任务独立 Git Worktree + 内嵌终端/浏览器 + 手机伴侣 + 原生集成 GitHub/Linear。**
+---
+## 技术栈与架构解析
+- 桌面客户端：Electron。AUR 包的描述明确写为“Electron-based agentic coding IDE”，说明采用 Electron 跨平台框架，打包为 macOS/Windows/Linux 三端桌面应用（AppImage/.exe/dmg）。  
+- 终端与 UI：基于 WebGL 的终端渲染（文档称“Ghostty-class terminals, with WebGL rendering”），支持多分屏（infinite splits）、重启恢复滚动历史等，终端体验接近 GPU 终端（如 Ghostty）。  
+- 内嵌浏览器：每个 Worktree 附带真实 Chromium 窗口，支持“Design Mode”——点击 UI 元素把 HTML/CSS + 截图自动注入到代理提示，便于 UI 调试与自动化测试。支持 CDP（Chrome DevTools Protocol）输入等，提高可靠性。  
+- 移动伴侣与配对（Relay）：仓库内含 cloud/ 目录，用于移动伴侣与桌面主机之间的配对中继；文档写明使用 pnpm workspace 管理 Relay 相关部分，说明其服务端生态基于 Node.js/pnpm。  
+- CLI 可编程与脚本化：Orca 自身提供 CLI（如 `orca worktree create` / `snapshot` / `click` / `fill`），可把工作流脚本化，适合自动化与 CI/CD 集成。  
+- 隔离与并发：核心抽象是“Worktree（Git Worktree）+ 代理 + 终端”三合一，每个任务相互隔离，并支持在远程服务器运行代理（SSH Worktrees），包括自动重连与端口转发。
+> 比喻：Orca 更像“为 AI 编写的 IDE 总控台”，就像指挥多台机械臂同时在不同工位操作；每个工位是独立的 Worktree，每台机械臂是一个 CLI 代理，而你可以从电脑或手机远程监控并下达指令。
+---
+## 核心亮点与功能剖析
+### 1) 并行 Worktrees（多智能体 + 多分支并行）
+- 每个任务拥有独立的 Git Worktree，无需 stash/branch 切换，不会互相污染。  
+- 可把同一个提示“扇出”给最多 5 个代理并行执行，对比结果、择优合并（“fan one prompt across five agents, compare and merge the winner”）。  
+- 典型场景：让 Claude 负责重构、让 Codex 补充测试、让 Cursor 改配置，多路并行加快迭代。
+### 2) 终端与编辑体验
+- WebGL 终端渲染，多分屏、滚动历史持久化，重启应用后恢复历史。  
+- 支持文件链接点击跳转、搜索、以及与工作区联动。  
+- Diff 可直接在 Orca 中“标注（annotate）”，在 diff 行上写评论并送回代理，再进行编辑与提交，无需离开应用。
+### 3) Design Mode（内嵌 Chromium + UI 截图注入）
+- 点击真实浏览器里的 UI 元素，自动把 HTML/CSS + 裁剪截图送到代理上下文，适合 UI 细节修复、视觉回归测试、E2E 自动化编写等。  
+- 内嵌 Chromium 每个Worktree一个窗口，避免cookie冲突与状态污染。
+### 4) GitHub / Linear 原生集成
+- 在应用内直接浏览 PR、Issues、Project Boards，从任务一键打开 Worktree 进行评审或开发。  
+- 支持从 PR/Issue 直接创建 Worktree，快速进入上下文。
+### 5) SSH Worktrees（远程算力与协同）
+- 把 Worktree 放在远程机器上跑，本地保留编辑、终端、git 与端口转发体验。  
+- 自动重连、SSH 密钥/口令缓存等细节已覆盖，适合“本机 thin client + 远端 heavy runner”模式。
+### 6) 移动伴侣（手机监控与控制）
+- 手机与桌面配对后，可监控代理运行状态、接收完成通知、发送后续指令，查看终端与进度，适合通勤/会议中继续跟进任务。  
+- iOS App Store / TestFlight、Android APK 0.0.48 可用。
+### 7) Orca CLI 与可编程性
+- 使用 `orca worktree create`、`snapshot`、`click`、`fill` 等命令脚本化常见流程，可以把复杂的多步骤操作固化为可复用脚本。
+### 8) “Computer Use” 与 AI Diff 标注
+- 文档显示支持 Computer Use，允许代理操作可见的桌面应用/界面，用于需要真实交互的工作流（例如填写表单、点按 UI 验证）。  
+- 可在 AI 生成的 diff 上逐行批注，把修改意见返给代理重试，构成“交互式评审-修正”闭环。
+### 9) 搜索与账户管理
+- Quick Open：跨 Worktrees、文件、代理、命令、仓库上下文的全局搜索。  
+- 账号切换与用量追踪：查看 Claude、Codex 等用量与配额重置时间，一键热换账号。
+---
+## 上手门槛与部署体验
+- 安装方式多样且简单：  
+  - 官网下载（macOS Apple Silicon/Intel、Windows .exe、Linux AppImage）。  
+  - 包管理器：Homebrew（`brew install --cask stablyai/orca/orca`）、Arch AUR（`stably-orca-bin` 或 `stably-orca-git`）。  
+- 文档站（onOrca.dev）提供官方文档，与仓库 README 互相指引，配置与概念都有覆盖。  
+- 仓库提供 CONTRIBUTING.md 与本地开发指引，cloud/ 目录有独立 pnpm workspace，说明贡献与自建环境路径清晰。  
+- 手机伴侣需要配对：App 提供配对流程，文档和 README 中均有指引；注意需要桌面端在线、网络可达。  
+- 对于完全没有用过“CLI 代理”或 Git Worktree 的开发者，概念有一定学习成本；但如果你熟悉 Git 与命令行，30–60 分钟即可跑通首个“Worktree + 代理”流程。
+---
+## 社区活跃度与生命力
+- 版本号与节奏：最新版本 v1.4.204，更迭号已到三位小数，说明频繁发布；Release Notes 详细列出 PR 号与贡献者，且明确“通常 48–72 小时从合入到发布（P0+ 修复除外）”。  
+- 变更内容丰富：涵盖 Agents & Chat、Workspaces & Mobile、Performance、Quality & Delivery、Reliability & Security 等，显示团队持续打磨性能与稳定性。  
+- 许可证：MIT 开源，对个人与企业都很友好。  
+- 社区渠道：Discord、Twitter/X（@orca_build）、微信群组等，便于反馈与交流。
+---
+## Demo / 代码示例
+### 1) 基础安装与启动（macOS）
+```bash
+# Homebrew 安装
+brew install --cask stablyai/orca/orca
+# 启动应用（GUI）
+open -a Orca
+```
+### 2) CLI 示例：创建 Worktree 并开始工作
+以下为仓库 README 与文档中呈现的核心命令模式（示意，参数以实际为准）：
+```bash
+# 创建新的 Worktree（从某仓库的某个分支开始）
+orca worktree create --repo git@github.com:myorg/myrepo.git --branch feature/checkout-flow-v2
+# 进入 Orca 应用后，在该 Worktree 的终端中调用你习惯的 CLI 代理，例如 Claude Code
+claude  # 然后在 Orca 的聊天/终端界面与代理交互
+# 使用 Orca CLI 脚本化常用流程
+orca snapshot           # 对当前 Worktree 做快照（便于回滚或对比）
+orca click <selector>   # 在 Design Mode 中点击某个元素
+orca fill <form>        # 自动填写表单（用于 UI 自动化场景）
+```
+说明：命令参数与确切用法以官方文档和 `orca --help` 为准，但上述示例能直观体现“Worktree + CLI 代理 + 脚本化”的工作流。
+---
+## 目标人群与收益
+- 适合谁：  
+  - 已在命令行使用 Claude Code、Codex、Cursor、GitHub Copilot、OpenCode、Pi 等 CLI 代理的开发者。  
+  - 需要多分支并行开发、代码评审密集、团队规模中大型、远程协作频繁的团队。  
+  - 需要在通勤/会议途中通过手机持续跟进自动化任务或长期运行测试的人群。  
+- 收益：  
+  - 提高并行效率：多智能体同时推进，减少等待与切换。  
+  - 降低出错风险：每个任务在独立 Worktree 里进行，避免误改。  
+  - 增强远程与移动协同：SSH Worktrees + 手机伴侣，让“随时跟进”成为可能。  
+  - 一站式评审与交互：在 diff 上批注、返给代理修正，减少上下文切换。
+---
+## 竞品/同类对比
+- VS Code + 多种 Copilot 插件：主流且生态极丰富，但不是为“多智能体并行 + Worktree 隔离”设计的；多分支并行需要多窗口，缺少统一的移动伴侣与 SSH Worktree 整合。  
+- Cursor IDE：深度集成 Copilot，适合单智能体场景；Orca 更侧重“多智能体编排 + Worktree 隔离 + 远程协同”，且对任意 CLI 代理开放。  
+- JetBrains 家族各 IDE：强在语言生态，但“多代理并行”并非原生能力；AI 能力通常通过插件提供，工作流与 Orca 的“Agent-first”理念不同。  
+- 纯终端/脚本方案（如 tmux + SSH + 自定义脚本）：灵活但门槛高，缺少图形化评审、浏览器 Design Mode、手机伴侣等体验。
+---
+## 局限与不足
+- 学习门槛：需要理解 Git Worktree 与 CLI 代理的运作方式，对完全新手有概念门槛。  
+- 资源占用：Electron + 内嵌终端/浏览器 + 多 Worktree 会带来一定内存与 CPU 开销，适合中高端配置机器。  
+- 代理订阅成本：Orca 本身开源，但仍然需要你已有各代理服务的订阅（Claude、Codex、Copilot 等），不过这是“BYO订阅”模式的必然结果。  
+- 移动端功能范围：当前定位为“伴侣”，主要监控与少量操作，复杂改动仍建议在桌面完成。  
+- 生态和插件：虽然支持“任意 CLI 代理”，但插件/扩展生态尚在演进，是否会出现第三方“技能/插件”市场还需观察。
+---
+## 结语与行动建议
+- 终极评判：Orca 是现阶段面向“AI 编码代理”的最完整编排层之一。如果你已经在用 CLI 代理，又苦于多任务并行、多分支评审与远程协同的割裂，它非常值得尝试。  
+- 行动建议：  
+  - 先用 Homebrew 或官方安装包在主力机上部署，跑通“Worktree + Claude Code/Codex”的闭环。  
+  - 对日常的多分支任务（如修 bug + 写特性 + 补测试）尝试扇出给多个代理并行，感受并行效率提升。  
+  - 若你有远程服务器，尝试 SSH Worktrees + 手机伴侣，体验“外出时手机看终端/发指令”的工作流。  
+  - 关注 Changelog 与 Discord，跟进版本迭代（团队承诺每日发布节奏）。
+---
+## 引用与来源
+- GitHub 仓库 stablyai/orca（README、特性、安装、支持代理列表等）。  
+- Orca 官方网站 onOrca.dev（产品介绍、功能与工作流）。  
+- GitHub Releases v1.4.204/v1.4.203（版本节奏与变更细节）。  
+- Arch User Repository（AUR）包描述：确认 Orca 为 Electron 桌面应用。
