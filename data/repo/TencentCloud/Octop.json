@@ -1,0 +1,61 @@
+{
+  "id": "970bea12-b70c-4313-b470-be47ca42e6bf",
+  "url": "https://github.com/TencentCloud/Octop",
+  "domain": "github.com",
+  "repo": "TencentCloud/Octop",
+  "description": "Octop 是腾讯云开源的 AI 助手平台，主打单进程自托管与多用户管理。它集成了 Web 控制台、CLI 及各类 IM 通道，支持 RAG 知识库和 ACP 协议，能帮用户在本地搭建安全可控的 AI 工作流，是打造私有 AI 工位的理想选择。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-17T11:20:05.068Z",
+  "metaData": {
+    "forks": "338",
+    "stars": "3191",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "local-first",
+      "long-term-memory"
+    ],
+    "license": "MIT license",
+    "homepage": "https://octop.cloud",
+    "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent. - TencentCloud/Octop"
+  },
+  "summaryData": {
+    "tags": [
+      "AI Agent",
+      "腾讯云开源",
+      "自托管",
+      "RAG",
+      "LLM 平台"
+    ],
+    "cover": "",
+    "title": "腾讯云 Octop：自托管多智能体 AI 助手平台",
+    "ability": [
+      "多智能体多用户管理",
+      "全通道 IM 集成",
+      "RAG 知识库与记忆",
+      "本地自托管安全合规",
+      "ACP 编程助手对接"
+    ],
+    "summary": "腾讯开源的单进程自托管 AI 平台，打通 IM 与 RAG，适合团队打造私有 AI 工位。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "团队协作"
+    ],
+    "suitable": [
+      "个人/家庭用户",
+      "小团队/初创公司",
+      "开发者/极客",
+      "需要私有化部署的企业"
+    ],
+    "description": "Octop 是腾讯云开源的 AI 助手平台，主打单进程自托管与多用户管理。它集成了 Web 控制台、CLI 及各类 IM 通道，支持 RAG 知识库和 ACP 协议，能帮用户在本地搭建安全可控的 AI 工作流，是打造私有 AI 工位的理想选择。"
+  },
+  "contentDetail": "# 深度评测：腾讯云 Octop — 自托管、多智能体 AI 助手平台（GitHub 项目）\n## 一句话总结\nOctop 是腾讯云开源的“自托管、多智能体、多用户”AI 助手平台：把 Web 控制台、CLI、IM 通道（飞书/钉钉/QQ/企微/Discord 等）、定时任务与 RAG 知识库等能力，全部收进一个单进程里运行，数据完全落在本机，非常适合小团队或家庭搭建自己的“私有大模型工位”。\n---\n## 背景与痛点：它为什么会出现？\n- 行业大背景。过去两年，各类“AI 助手/Agent 工具”爆发：有的偏对话、有的偏写代码、有的偏做研究，但常常面临几类共性问题：数据隐私担忧、工具碎片化、多人协作困难、自托管部署门槛高等。不少团队要么把数据上传到云端，要么要自己拼装一堆微服务与消息队列，运维成本不小。Octop 就是为了解决这些“散装”和“不可控”而生的。相关背景与早期官方文章也有提及。它源自腾讯内部项目 LightClaw ACE，于 2026 年 7 月开源、9 月发布 1.0 GA，定位为自托管的多用户、多智能体平台，并在开源后短时间内获得了上千星。\n- 核心设计目标。Octop 想做的是把“AI 助手”从一个聊天窗口升级为可长期使用、可持续扩展的个人与团队中枢：统一管理用户、记忆、工具与执行环境，数据不出域（默认本机 SQLite），同时还能多用户共享一个服务实例。官方 README 与操作文档也强调“单进程 + 自托管 + 本地数据”的设计理念。\n---\n## 核心亮点与功能剖析\n### 1) 多智能体、多用户，一进程搞定\n- 单进程架构。Web 面板、CLI、IM 通道、定时任务、WebSocket/SSE 等全部由一个 Python 进程承载，共享控制面数据库（默认 SQLite，可切 PostgreSQL），不需要外部消息队列或微服务，重启后从 DB 重建状态，运维简洁。\n- 多用户隔离。JWT 认证 + 多用户模型；每个用户可以创建多个“专家（Agent）”，各自有独立的工作区、配置、凭据与对话历史；管理员可统一管理用户与系统设置，互不干扰。官方架构概览也明确说明请求如何按用户/专家路由、处理与持久化。\n> 把它想象成给家里每个人都配了一个“私人数字秘书”，但大家共用一台设备，资料严格分家；管理员还能统一开门关门。\n### 2) IM 通道全打通，工作流“粘合剂”\n- 内置/官方支持飞书、钉钉、QQ、Discord、企微等。通过 harness-gateway 把不同通道的消息归一化到同一处理管线，任一通道进来的请求都会被路由到合适的专家并原路返回。部署与通道配置在 README 与操作文档中均有说明。\n- 流式与回退策略。例如 QQ 私聊默认走官方 stream_messages；失败或受限时自动回退到静态 markdown 消息，保证可用性；Release Notes 里对这些“兼容策略”有细节描述。\n> 现实收益是：在公司/团队群里直接 @ 专家就能完成日报生成、会议纪要、小任务调度等，无需切应用或暴露额外界面。\n### 3) RAG 知识库 + 可迁移记忆\n- 知识库（RAG）。上传文档后进行语义检索与引用，聊天内可直接预览引用与原文，支持更多文档格式与可选 OCR。Release Notes 提到了下载原文、按原排版预览、编辑保存等细节。这让 AI 能基于“你的语料”作答，而不是仅靠训练数据。\n- 便携记忆（harness-memory）。记忆层级化 + 全文检索，且“记忆随 workspace 迁移”；后续版本还加入了记忆树手动创建与修正、按日期统计 Token 并导出 Excel 等能力，方便复盘与成本管控。\n> 用大白话：助手不仅有“短期记忆”，还能把“长期知识”（你的文档库、过往决策）随身带着走。\n### 4) “专家”体系与 MBTI 人格\n- 专家。Octop 的核心工作单元，每个专家有独立的配置、技能、通道和定时任务；支持专家库扫描与“专家市场”，按场景切换。官方概览与文档中强调专家是你在 Octop 里的专属 AI 助手，可按角色赋予不同系统提示与人格。\n- MBTI 人格。内置 16 型人格模板与互动测试，为 AI 赋予可感知的性格，提升亲和力或风格一致性。README 的 Highlights 里也重点列出了这一特性。\n### 5) ACP（Agent Client Protocol）双向对接\n- 入站。通过 octop acp --agent main 以 stdio 协议把本地 Octop 专家暴露给支持 ACP 的 IDE/终端（如 Zed、OpenCode）。官方 README 给出了命令示例，并可到 docs/acp.md 查看完整指引。\n- 出站。在 Dashboard /acp 配置外部编码助手（OpenCode、Claude Code、CodeBuddy、Codex）作为 runner，聊天中可在权限门控下委派给这些“外部专家”，实现多编码助手协同。文档与 README 均有明确说明。\n> 对开发者来说，可以把 Octop 当成“路由网关”，统一分配任务给不同编码助手，并统一做日志、权限与审计。\n### 6) 终端 AI+ 与浏览器 AI+\n- 终端 AI+。浏览器中提供交互式 shell，支持 AI 辅助执行命令和排障，让远程运维和故障排查更顺畅。README 的 Features 区有介绍。\n- 浏览器 AI+。基于 CDP 的无头 Chromium，支持会话持久化、表单填写、截图、抓取公开信息等；路线图计划支持“录制工作流并回放为技能”，降低自动化门槛。这在 Core Technology 与 Roadmap 中都有描述。\n### 7) 安全与合规优先\n- 多层防护。JWT 隔离、工具审批、命令执行守卫（guardrails）、PII 脱敏；数据库默认落本地，工作区后端可选本地/Docker/COS/S3 等多种隔离方案。官方 README 把“Security built-in”列为 Highlight。\n- 备份与恢复。支持按需选择归档内容，旧备份在 schema 变更后仍可恢复，提升可运维性。Release Notes 提到了“备份可选择归档内容；旧备份在 schema 变更后可恢复”。\n---\n## 目标人群与收益：谁最适合用它？能得到什么？\n- 个人/家庭“数字管家”。场景包括日程管理、笔记整理、周报写作、家庭任务分配、孩子教育问答、作业批改与解释等。收益是：数据完全落在本机，隐私可控；多用户模型让家人各用各的专家，不互相干扰。\n- 小团队/创业公司。场景包括团队知识库沉淀、IM 群内任务调度、代码审查与问题定位（配合 ACP）、定时报告生成、简单爬取与情报收集。收益是：一套服务统一管理专家与通道，与飞书/钉钉/企微深度打通，协作无感；自托管降低数据外流风险。\n- 开发者与极客。把 Octop 作为本地 Agent Runtime，调试技能、对接 MCP、写插件；通过 ACP 将其接入 Zed/VS Code/终端；自建编码助手路由。CLI 覆盖面全（octop run/chat/acp/agent/cron/skills/plugin/backup 等），适合自动化脚本与二次开发；有交互式 API 文档（需在 config.json 中开启 enable_api_docs）。\n- 想要“私有化部署”的企业/机构。在金融、医疗、政府等对数据敏感的行业，希望有统一入口接入多家大模型、统一审计与权限控制。Octop 支持多家 LLM 提供商（OpenAI 兼容、通义千问、Ollama 等），可按专家/用户路由；连接器体系支持 OAuth+MCP 扩展边界；可替换 PostgreSQL 做高并发与备份策略。\n---\n## 技术栈与架构解析（面向开发者）\n- 技术栈总览。语言与运行时：Python 3.12+，采用 uv 管理，不污染系统 Python。Web 框架：FastAPI + uvicorn，提供 HTTP/SSE/WebSocket 与交互式 API 文档。前端：React 18 + TypeScript + Vite + Ant Design，构建现代化 Dashboard。调度：APScheduler 做定时任务（cron）与计划回合持久化。Harness 堆栈：harness-agent（模型路由/工具/技能/检查点）、harness-gateway（IM 桥接与消息归一化）、harness-memory（层级化记忆+全文检索）、harness-browser（基于 CDP 的浏览器自动化）。构建与质量：hatchling 打包、ruff 格式与 lint、mypy 静态检查、pytest 测试。\n- 架构设计亮点。单进程 + 单控制面数据库：所有“表面”（Web/IM/cron）统一由 in-process 的 HarnessProcessor 分发；进程重启后从数据库重建状态，简化运维与灾难恢复。默认 SQLite（WAL 模式），可选 PostgreSQL。官方“架构概览”清晰描述了请求流转：请求从 Web/IM/API/cron 进入，根据用户/专家路由到运行时，调用技能/连接器并流式返回，写入数据库。\n- 代码组织。从仓库目录与 README 可见，项目分为 infra、agents、docs、scripts、docker、desktop 等模块，文档化较好，支持从源码/PyPI/Docker/桌面/NSIS/FnOS 等多种方式部署。\n---\n## 上手门槛与部署体验：能不能一条命令跑起来？\n- 极速安装（官方推荐）。macOS/Linux 一行命令安装：\n```bash\ncurl -fsSL https://finnie-1258344699.cos.ap-guangzhou.myqcloud.com/octop/install.sh | bash\n```\nWindows PowerShell：\n```powershell\nirm https://finnie-1258344699.cos.ap-guangzhou.myqcloud.com/octop/install.ps1 | iex\n```\n安装脚本会将 octop 安装到 ~/.octop（独立 venv），并将 CLI 加入 PATH；新终端即可直接使用 octop 命令。README 与脚本源码均确认安装程序会复用系统 Chrome/Chromium，避免重复下载大型 Playwright 包。安装脚本在 COS 上托管，支持 --from-source、--extras、--mirror 等参数。\n- 初始化与运行。\n```bash\noctop init      # 向导式初始化（建数据库、JWT secret、管理员账户）\noctop run       # 前台启动（Web 默认 8088）\noctop run --host 0.0.0.0 --port 8088\noctop service start  # 注册为系统服务并启动\n```\n完成后访问 http://127.0.0.1:8088 即可进入 Web 面板。README 对初始化和运行有清晰步骤。\n- Docker 一键部署（生产更推荐）。\n```bash\ndocker compose -f docker/docker-compose.yml up -d\n# 或手动构建：\nbash docker/docker_build.sh\ndocker run -d \\\n  -p 8088:8088 \\\n  -v octop-data:/data/.octop \\\n  -e HOME=/data \\\n  -e OCTOP_DEFAULT_PASSWORD=\"<强密码或留空随机>\" \\\n  octop:latest\n```\n容器内首次运行若未设置 OCTOP_DEFAULT_PASSWORD，将生成随机密码并写入 /data/.octop/credential.txt；可通过 OCTOP_ADMIN_USERNAME 修改默认用户名；密码策略要求至少 8 位且含字母和数字。README 提供了 Docker 环境变量说明与 compose 示例。\n- 桌面应用。GitHub Releases 提供 Windows/macOS/Linux 的桌面安装包与便携包，以及 FnOS NAS 的 fpk 包（Docker 原生/非 Docker）。\n- 升级与备份。\n```bash\noctop update   # 仅替换 wheel/二进制，保留 ~/.octop 数据；启动时自动迁移 schema\noctop backup   # 导出备份\noctop clean    # 清理 CLI 状态或擦除 ~/.octop（谨慎使用）\n```\n官方建议跨版本升级前先备份。\n- 文档与 CLI DX。官方操作文档涵盖核心概念（专家、通道、连接器）、LLM 提供商、IM 通道、定时任务、备份恢复等，内容系统且细节充足。CLI 命令覆盖面全，参数清晰，适合脚本化与自动化运维；还提供 API 文档开关，便于集成与调试。\n---\n## 社区活跃度与生命力：刚到 1.0，热乎且势头好\n- Stars/Forks。约 283 Stars / 34 Forks（会持续变化）；考虑到 2026 年 7 月才开源、9 月发布 1.0，热度属新兴项目中较高。官方发布文也提到开源两个月 Star 涨到 1600+（可能统计口径不同）。\n- Releases。已发布 v1.0.0 与密集的 v0.9.x（至 0.9.35+），changelog 详细，每版都有新增/修复/变更说明，桌面与 FnOS 等多包同时发布，工程化成熟度较高。\n- Issues。当前公开 Issues 数量少且集中（如 UI 闪动、滚动卡顿等），多为体验类问题，未见致命性阻塞性 Bug 列表。\n- Pull Requests。活跃度高（近期大量 PR），涵盖功能、修复、文档、i18n、桌面与 polish，社区与团队都在持续投入。\n综合判断：项目处于快速迭代与收敛期，节奏紧凑，社区参与度尚可，适合作为近期投入的“可依赖自托管 Agent 平台”。\n---\n## Demo / 代码示例：从 0 到 1 的最小闭环\n- 示例 1：最简安装并启动（macOS/Linux）。\n```bash\ncurl -fsSL https://finnie-1258344699.cos.ap-guangzhou.myqcloud.com/octop/install.sh | bash\nsource ~/.zshrc   # 或 source ~/.bashrc\noctop init\noctop run --host 0.0.0.0 --port 8088\nopen http://127.0.0.1:8088\n```\n官方 README 的 Quick Start 给出了完全一致的安装与启动流程。\n- 示例 2：启用浏览器自动化（Playwright Chromium）。\n```bash\ncurl -fsSL https://finnie-1258344699.cos.ap-guangzhou.myqcloud.com/octop/install.sh | bash -s -- --extras browser\n```\n安装脚本会复用系统已存在的 Chrome/Chromium，否则下载 Playwright Chromium。\n- 示例 3：以 Docker 启动并挂载持久化卷。\n```bash\ndocker compose -f docker/docker-compose.yml up -d\n# 或手动 run\ndocker run -d -p 8088:8088 -v octop-data:/data/.octop -e HOME=/data octop:latest\n```\n首次运行可查看容器内 /data/.octop/credential.txt 获取初始密码（若未设 OCTOP_DEFAULT_PASSWORD）。\n- 示例 4：CLI 查看与配置模型、技能、定时任务（常用）。\n```bash\noctop models\noctop provider list\noctop skills list --agent main\noctop cron list\noctop cron create --help\n```\n大多数管理动作既可在 Web 面板完成，也可通过 CLI 批处理。README 提供了 CLI 参考。\n- 示例 5：ACP 入站（将 Octop 接入支持 ACP 的编辑器/终端）。\n```bash\noctop acp --agent main\n```\n通过 stdio 暴露 ACP 服务，连接到 IDE（如 Zed）或终端，完成编辑器内调用本地 Octop 专家的闭环。\n---\n## 竞品/同类对比：在自托管 Agent 平台里的位置\n- 与“纯聊天”自托管方案（如 text-generation-webui、Ollama 原生）对比。Octop 更偏“平台与生态”：统一的多用户、多专家、IM 通道、RAG 知识库、定时任务与 ACP；而 Ollama 等更偏“模型运行时”与单机 API。README 也强调 Octop 是平台/助手而不仅是对话工具。\n- 与“多 Agent 编排/编排工具”对比。一些工具（如 LangChain/AutoGen 等）更偏“库/框架”，需要自己写应用、管部署；Octop 直接给出“开箱即用的 Dashboard + CLI + IM + 权限体系”的一体化能力。\n- 与企业级 AI 网关/平台对比。企业级平台常强调多租户、细粒度审计与集成；Octop 目前更偏“小团队/家庭”，但在多用户隔离、工具审批、存储后端可插拔（COS/S3/PG）等方向已具备可扩展性，文档也提到 ADR 租户实体与资源隔离的设计讨论。\n---\n## 局限与不足：客观问题与未来风险\n- 单进程架构的扩展边界。单进程 + SQLite 适合中小规模场景，但要应对更高并发与 HA，仍需切换到 PostgreSQL、做进程多副本与负载均衡，当前生态文档中未提供详尽的“高可用生产方案”。\n- UI/UX 正在快速打磨。Issues 中有反馈滚动闪顿、长文本消息抖动等问题，团队在持续修复；但现阶段在极端长会话与复杂排版下可能仍有卡顿或体验瑕疵。\n- 依赖模型与配置复杂度。Octop 不提供模型，本身更偏“控制面与运行时”。首次接入不同 LLM 提供商、配置 MCP 与连接器仍需阅读文档和试错；对完全小白有一定学习成本。\n- 社区与插件生态尚处早期。虽然已有插件管理与 bundled 插件，但第三方插件与“专家市场”的丰富度仍需时间沉淀。Release Notes 提到插件与 MCP 相关能力正快速演进。\n- 桌面/移动端路线图未完全落地。原生桌面/移动客户端、浏览器技能录制、AgentTeams、自演化等仍在中长期路线图，存在计划变更的可能。\n---\n## 结语与行动建议\n### 综合评价\nOctop 在“自托管 Agent 平台”赛道属于定位清晰、工程化扎实、更新节奏很快的新锐选手。它把多智能体、多用户、IM 接入、RAG 知识库、终端/浏览器自动化与 ACP 等多项能力合为一体，且数据本地、安全可控，非常适合“小团队/家庭/开发者”在 1–2 台机器上搭建“自己的 AI 中台”。\n### 什么时候选择 Octop\n- 你希望数据不离本地、对隐私/合规敏感；\n- 你需要一个“统一入口”对接多家大模型与多个 IM，而不是一个个散落的 Bot；\n- 你打算长期运营个人/团队知识库，并希望记忆与技能可迁移。\n### 什么时候不建议 Octop\n- 你需要面向海量用户的高可用、多集群部署，且要有成熟的企业级多租户与审计体系——当前更适合作为定制化起点，而非开箱即用的大规模方案；\n- 你只需要极简的本地推理/聊天，不需要 IM、知识库、定时任务等复杂特性。\n### 给小白的行动清单\n1) 在一台 macOS/Linux 机器上执行一键安装，新终端后 octop init → 设置管理员密码 → octop run → 打开浏览器访问 http://127.0.0.1:8088。\n2) 在面板中完成首次 LLM 提供商配置（支持多家，选你常用的任一即可），创建一个“写作”或“日程”专家，上传几份常用文档，开启知识库检索。尝试在对话中提问“按知识库总结本周要点”。\n3) 如需在群里用，按文档配置一个飞书/钉钉/QQ 通道，把机器人拉入群，@ 专家发任务体验。\n### 给开发者的行动清单\n1) 从源码克隆并以 uv 启动，查看项目结构（infra/agents/experts/library、docs、docker、desktop 等），快速定位“专家库”与文档入口。\n2) 尝试写一个简单的“自定义技能”或“连接器”，并在专家工作区中启用。\n3) 通过 octop acp --agent main 接入你常用的编辑器或终端，体验编辑器内调用 Octop 专家的闭环。\n### 给团队的行动清单\n1) 在公司内网或家庭服务器上以 Docker 部署：docker compose -f docker/docker-compose.yml up -d。\n2) 为不同成员创建账号与专家，各司其职（如“代码专家、运营专家、行政专家”）。\n3) 上传团队规范文档到知识库，开启 RAG；设置定时任务，自动生成晨会简报或每日统计。\n4) 开启 ACP 出站，将敏感编码任务委派到本地运行的编码助手，并统一在 Octop 内记录与审计。\n如果你正在评估“自托管 AI 助手平台”，Octop 值得作为首选之一纳入 POC（概念验证）清单；它不是完美的万能钥匙，但在“数据可控、功能聚合、部署简单”这个三角里，给出了当前少有的平衡解。",
+  "type": "project",
+  "dateAdded": "20260917"
+}

@@ -1,6 +1,233 @@
 {
   "all": [
     {
+      "id": "c61b1308-7fe9-4e71-a762-cbf4a2dfa084",
+      "url": "https://github.com/coder/coder",
+      "domain": "github.com",
+      "repo": "coder/coder",
+      "description": "Coder 是一个自托管云开发环境平台，利用 Terraform 模板化工作空间，通过 WireGuard 确保安全，集成 AI 代码代理并提供成本控制与审计功能，适合需要统一治理与合规的企业团队。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T11:27:05.481Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "Terraform",
+          "CloudIDE",
+          "SelfHosted",
+          "AIAgents"
+        ],
+        "cover": "",
+        "title": "coder/coder：自托管云开发环境与 AI 代理平台",
+        "ability": [
+          "Terraform 统一环境管理",
+          "AI 代理治理与安全接入",
+          "自托管与合规审计",
+          "自动化成本控制",
+          "多 IDE 无缝接入"
+        ],
+        "summary": "基于 Terraform 的自托管云开发环境平台，统一管理环境与 AI 代码代理，注重安全与成本控制。",
+        "category": [
+          "开发工具",
+          "DevOps",
+          "AI 编程"
+        ],
+        "suitable": [
+          "平台/DevOps 团队",
+          "中大型技术团队",
+          "注重数据安全的企业",
+          "AI 治理需求方",
+          "追求开发环境标准化的团队"
+        ],
+        "description": "Coder 是一个自托管云开发环境平台，利用 Terraform 模板化工作空间，通过 WireGuard 确保安全，集成 AI 代码代理并提供成本控制与审计功能，适合需要统一治理与合规的企业团队。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
+      "id": "970bea12-b70c-4313-b470-be47ca42e6bf",
+      "url": "https://github.com/TencentCloud/Octop",
+      "domain": "github.com",
+      "repo": "TencentCloud/Octop",
+      "description": "Octop 是腾讯云开源的 AI 助手平台，主打单进程自托管与多用户管理。它集成了 Web 控制台、CLI 及各类 IM 通道，支持 RAG 知识库和 ACP 协议，能帮用户在本地搭建安全可控的 AI 工作流，是打造私有 AI 工位的理想选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T11:20:05.068Z",
+      "metaData": {
+        "forks": "338",
+        "stars": "3191",
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "ai-agent",
+          "ai-agents",
+          "local-first",
+          "long-term-memory"
+        ],
+        "license": "MIT license",
+        "homepage": "https://octop.cloud",
+        "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent. - TencentCloud/Octop"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "腾讯云开源",
+          "自托管",
+          "RAG",
+          "LLM 平台"
+        ],
+        "cover": "",
+        "title": "腾讯云 Octop：自托管多智能体 AI 助手平台",
+        "ability": [
+          "多智能体多用户管理",
+          "全通道 IM 集成",
+          "RAG 知识库与记忆",
+          "本地自托管安全合规",
+          "ACP 编程助手对接"
+        ],
+        "summary": "腾讯开源的单进程自托管 AI 平台，打通 IM 与 RAG，适合团队打造私有 AI 工位。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "团队协作"
+        ],
+        "suitable": [
+          "个人/家庭用户",
+          "小团队/初创公司",
+          "开发者/极客",
+          "需要私有化部署的企业"
+        ],
+        "description": "Octop 是腾讯云开源的 AI 助手平台，主打单进程自托管与多用户管理。它集成了 Web 控制台、CLI 及各类 IM 通道，支持 RAG 知识库和 ACP 协议，能帮用户在本地搭建安全可控的 AI 工作流，是打造私有 AI 工位的理想选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
+      "id": "db1f3964-a5c1-4d20-b023-6c69e1077511",
+      "url": "https://github.com/cilium/cilium",
+      "domain": "github.com",
+      "repo": "cilium/cilium",
+      "description": "基于 eBPF 的容器网络平台，整合网络、安全与可观测性，高性能替代 kube-proxy，适合对性能与安全要求高的 K8s 集群。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T11:11:47.422Z",
+      "metaData": {
+        "forks": "4065",
+        "stars": "25254",
+        "topics": [
+          "bpf",
+          "cncf",
+          "cni",
+          "containers",
+          "ebpf",
+          "k8s",
+          "kernel",
+          "kubernetes",
+          "kubernetes-networking",
+          "loadbalancing",
+          "monitoring",
+          "networking",
+          "observability",
+          "security",
+          "troubleshooting",
+          "xdp"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://cilium.io",
+        "description": "eBPF-based Networking, Security, and Observability - cilium/cilium"
+      },
+      "summaryData": {
+        "tags": [
+          "eBPF",
+          "Kubernetes",
+          "CNI",
+          "DevOps",
+          "Service Mesh"
+        ],
+        "cover": "",
+        "title": "Cilium 深度评测：基于 eBPF 的新一代容器网络与安全平台",
+        "ability": [
+          "eBPF 网络加速",
+          "L3-L7 安全策略",
+          "多集群互联",
+          "深度可观测性",
+          "无 Sidecar 网格"
+        ],
+        "summary": "基于 eBPF 的新一代 K8s 网络与安全方案，提供高性能替代 kube-proxy 及全方位可观测性。",
+        "category": [
+          "云原生",
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "Kubernetes 运维",
+          "云原生架构师",
+          "安全合规团队",
+          "后端开发者",
+          "大规模集群用户"
+        ],
+        "description": "基于 eBPF 的容器网络平台，整合网络、安全与可观测性，高性能替代 kube-proxy，适合对性能与安全要求高的 K8s 集群。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
+      "id": "750fe9c1-6097-49f3-84e0-ca188de38deb",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "domain": "github.com",
+      "repo": "Tencent/BrowserSkill",
+      "description": "BrowserSkill 是腾讯开源的本地化工具，通过 CLI 和浏览器扩展让 AI 代理安全接管你的真实浏览器。它解决了 AI 难以处理登录态和验证码的问题，支持人工介入，适合复杂网页自动化操作。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-17T11:06:58.870Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "浏览器自动化",
+          "腾讯开源",
+          "效率工具",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "腾讯 BrowserSkill：让 AI 安全接管真实浏览器的本地化工具",
+        "ability": [
+          "复用真实登录态",
+          "AI 自动化控制",
+          "人机协同介入",
+          "多框架兼容",
+          "安全隔离机制"
+        ],
+        "summary": "让 AI 代理复用你已登录的真实浏览器，实现自动化操作与人工介入协同。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "AI 工具重度用户",
+          "开发与测试工程师",
+          "数据采集专员",
+          "自动化办公人群"
+        ],
+        "description": "BrowserSkill 是腾讯开源的本地化工具，通过 CLI 和浏览器扩展让 AI 代理安全接管你的真实浏览器。它解决了 AI 难以处理登录态和验证码的问题，支持人工介入，适合复杂网页自动化操作。"
+      },
+      "type": "project",
+      "dateAdded": "20260917"
+    },
+    {
       "id": "69adad80-b69f-4ccb-a9dc-9a8f196bd5e9",
       "url": "https://github.com/cline/cline",
       "domain": "github.com",
@@ -137,8 +364,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:34:11.263Z",
       "metaData": {
-        "forks": "4816",
-        "stars": "50700",
+        "forks": "4821",
+        "stars": "50730",
         "topics": [
           "classification",
           "coco",
@@ -210,8 +437,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "23510",
-        "stars": "145693",
+        "forks": "23516",
+        "stars": "145748",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -315,8 +542,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "2928",
-        "stars": "24381",
+        "forks": "2929",
+        "stars": "24416",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -368,8 +595,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:14:17.493Z",
       "metaData": {
-        "forks": "6800",
-        "stars": "54609",
+        "forks": "6803",
+        "stars": "54709",
         "topics": [
           "ai",
           "cuda",
@@ -431,7 +658,7 @@
       "createdAt": "2026-09-16T14:09:28.271Z",
       "metaData": {
         "forks": "274",
-        "stars": "5818",
+        "stars": "5898",
         "topics": [],
         "license": "License",
         "homepage": "https://abue-ammar.github.io/tinycast/",
@@ -2464,8 +2691,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3516",
-        "stars": "25755",
+        "forks": "3529",
+        "stars": "25904",
         "topics": [
           "agent",
           "agentic",
@@ -2597,8 +2824,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:41:11.206Z",
       "metaData": {
-        "forks": "284",
-        "stars": "4692",
+        "forks": "290",
+        "stars": "4812",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://openresearch.sh/",
@@ -3159,8 +3386,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3708",
-        "stars": "35274",
+        "forks": "3721",
+        "stars": "35391",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -9691,8 +9918,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8640",
-        "stars": "78079",
+        "forks": "8652",
+        "stars": "78157",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -14141,8 +14368,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39009",
-        "stars": "260627",
+        "forks": "39033",
+        "stars": "260773",
         "topics": [
           "ai-agents",
           "anthropic",

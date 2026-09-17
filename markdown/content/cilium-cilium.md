@@ -1,0 +1,116 @@
+# cilium/cilium
+
+[GitHub URL](https://github.com/cilium/cilium)
+
+
+## Cilium 深度评测：基于 eBPF 的新一代容器网络与安全平台
+
+> 基于 eBPF 的新一代 K8s 网络与安全方案，提供高性能替代 kube-proxy 及全方位可观测性。
+
+- **Tags**: eBPF, Kubernetes, CNI, DevOps, Service Mesh
+- **Category**: 云原生, 开发工具, 网络安全
+
+## Details
+
+# Cilium 深度评测
+## 一句话总结
+Cilium 是基于 eBPF 的新一代容器网络、可观测性与安全解决方案，既能替代 kube-proxy 等传统组件，又能在 L3-L7 粒度实施基于身份的策略与可观测，几乎成为中大规模 Kubernetes 集群网络与安全的事实选项之一，值得关注但不低门槛。
+## 背景与痛点
+- 容器与 Kubernetes 把 IP 变得“临时且高频变动”，传统基于 IP 的网络策略与 ACL 难以维护。
+- iptables/IPVS 维护的 Service 与 NAT 表在大规模场景（大量 Service/Endpoint）下性能下降、规则更新慢，甚至成为集群扩容瓶颈。
+- 传统安全审计与故障排查黑盒：很难回答“哪个 Pod 在何时对哪个外部域名发起了 HTTP POST”“这个请求被谁拦截了，原因是什么”。
+- 服务网格方案多采用 sidecar 模式，带来资源占用、延迟升级和运维复杂度。
+Cilium 的设计目标就是：**用 eBPF 把网络与安全的逻辑下沉到内核里**，既提升性能，又获得细粒度的可观测与 L7 能力，同时尽量不引入复杂的 sidecar。
+## 核心亮点与功能剖析
+### 1) eBPF 数据平面：内核里的“可编程安检与疏导员”
+- Cilium 将 eBPF 程序挂载到网络 I/O、套接字、跟踪点等内核钩子，直接在内核里做转发、策略判定和可观测采集，减少用户态与内核态的来回切换，显著提升吞吐与降低延迟。
+- 比喻：好比在机场安检和登机口安插“聪明且动态可换规则”的自动化安检员，既高效又能实时更新规则，不必每次都由指挥中心（用户态代理）人工介入。
+### 2) 替代 kube-proxy 的分布式 LB
+- 用 eBPF 里的高效哈希表实现 Service 的负载均衡，并可在 connect() 层面做“socket 级”重写，彻底避免每包 NAT 开销；支持高密度 Service 场景，几乎“无上限扩展”。
+- 对外（南北向）支持 XDP 与 Direct Server Return（DSR）等高性能方案。
+- 价值：在大规模集群下可以移除 kube-proxy，减少控制面与数据面的开销。
+### 3) Cluster Mesh：多集群的一张网
+- 支持跨多 K8s 集群的安全连通与服务发现，策略基于身份而非 IP，在所有集群统一生效。
+- 适用于混合云/多云、容灾、多环境共享服务（如日志/认证/数据库）等场景。
+### 4) L3–L7 策略与 DNS/FQDN 支持
+- 支持基于标签/身份的 L3/L4 策略，也支持 HTTP/gRPC 等 L7 细粒度控制（例如：只允许 GET /public/*、要求存在某请求头）。
+- DNS/FQDN 策略：可按域名或通配域控制 Egress 流量，非常适合收紧对外部三方服务的访问（如仅允许 api.example.com 或 *.trusted.com）。
+### 5) 内置可观测：Hubble + 指标集成
+- Hubble 提供“实时服务拓扑、带身份与标签的流可视化、DNS 感知过滤、协议级洞察”，便于排障与审计。
+- 与 Prometheus/Grafana 等监控系统无缝对接，提供 metrics、drop reasons 等可观测数据。
+### 6) Service Mesh 能力（可选）
+- 基于同一数据平面提供 L7 流量管控、加密（IPsec 或 WireGuard）与可观测，但不需要传统 sidecar 代理模式带来的重负担。
+- 与 Kubernetes Gateway API 深度集成，可作为 Gateway API 兼容的数据平面使用，用 K8s 原生 CRD 管理入站/流量拆分/路由行为。
+### 7) 社区与生态
+- 仓库 Star 约 2 万+（ Contributors 页面显示约 20.4k；仓库首页页面显示约 22.7k，均为近期量级），在云原生网络类项目中属头部。
+- 官方文档站点提供从快速入门、网络/安全/可观测、系统要求、性能调优到升级与故障排查的完整路径，并有“互动教程”可在线上手。
+- 社区活动包括每周开发者会、APAC 会议、YouTube 直播 eCHO（eBPF & Cilium Office Hours）、Slack 与 SIG 工作组，治理和 Roadmap 对外公开，生态成熟度高。
+## 目标人群与收益
+- 运维/平台团队：想要提升集群网络性能与可观测，简化多集群与网络策略管理，降低 sidecar 网格带来的运维负担。
+- 安全/合规团队：需要基于身份的细粒度策略、DNS/FQDN 出访控制、TLS 可见性、审计与 Drop 原因追踪。
+- 开发者：通过 Hubble 等工具，能直观看到服务间调用与流量情况，缩短“网络不连通/被策略拦截”的定位时间。
+- 企业/多云场景：Cluster Mesh 让跨集群互通与统一策略变得可行，利于混合云架构落地。
+收益概括：**性能更高、可观测更细、策略更灵活、运维更集中**。但前提是愿意接受 eBPF 与内核版本的要求与一定的学习成本。
+## 竞品/同类对比（简要）
+- Calico：基于 BGP 与 iptables/IPVS 方案更成熟，但 L7 与 FQDN 策略能力相对薄弱，大规模 Service 性能与连接跟踪开销可能成为瓶颈；选择多（BGP、Overlay、AWS VPC CNI 等）。
+- Flannel：简单、overlay 多（VXLAN），但策略与可观测较弱，适合小型集群。
+- Cilium 差异化：eBPF 数据平面带来性能与可观测上限高，替代 kube-proxy、L7 策略与内置网格等一体化能力，适合对性能与安全要求更高的中大规模或复杂拓扑。
+## 技术栈与架构解析
+- 语言：组件主要由 Go 编写；数据平面核心为 eBPF（经 clang/LLVM 编译加载到内核）。
+- 架构要点（概念层）：
+  - 每节点运行 Cilium Agent（cilium-agent），负责加载/更新 eBPF 程序、同步与执行策略、上报可观测数据。
+  - Cilium Operator 处理集群级别的任务与状态同步，不限定单节点。
+  - 可选的 Hubble（Relay/UI）用于流可视化与服务拓扑。
+  - 可采用 etcd 作为 Key-Value 存储用于大规模集群的身份同步；但在 K8s 环境下默认使用 CRD 存储状态，新安装场景可直接用 CRD 模式。
+- eBPF 与内核：
+  - 通过 bpf() 系统调用加载 eBPF 程序与 maps，并利用 BTF（Type Format）等进行结构化数据读取，安全性与可维护性高。
+  - 可利用 XDP 做早期包丢弃与快速路径，提升吞吐与 DDoS 防护潜力。
+- 数据路径模式：
+  - Overlay：VXLAN/Geneve 封装，适配性广；要求节点间有 IP 连通即可。
+  - Native Routing（路由模式）：直接使用主机路由表，需网络能转发 Pod IP；可与云路由器/BGP 路由协议等协同。
+## 上手门槛与部署体验
+- 系统要求（关键）：
+  - 内核：建议 ≥5.10（或在 RHEL 8.10 上使用等效的 4.18）；部分高级特性需要更新版本（如 IPv6 BIG TCP ≥5.19；IPv4 BIG TCP ≥6.3；netkit 设备模式 ≥6.8）。
+  - 架构：AMD64、AArch64 官方提供镜像。
+  - 需要启用一系列内核配置项（如 BPF、CGROUP_BPF、VXLAN、GENEVE 等），多数主流发行版内核默认已启用；若开启 L7/FQDN 策略还需确保 TPROXY/xt_socket 等模块可用。
+  - 若不使用容器镜像运行 cilium-agent（即“原生方式”），需要 clang+LLVM ≥18.1。容器镜像已内置该工具链。
+- 安装体验：
+  - 官方推荐通过 Cilium CLI（cilium-cli）安装，支持对现有 K8s 集群自动探测并选择合适配置；也可通过 Helm 安装。文档提供从创建集群、安装 CLI、安装 Cilium 到验证的端到端路径。
+  - 常见发行版均有“已知可用”条目（Ubuntu ≥20.04、RHEL ≥8.6、CentOS ≥8.6 等）并附有个别系统的注意事项（如某些环境需要关闭 ENI 的 DHCP 等）。
+  - 对于在线学习，官方提供互动教程，可以在浏览器里直接体验，适合快速感知价值。
+## Demo / 代码示例（概念级示意）
+下面给出“安装 CLI 与安装 Cilium”的简化命令示例（以 Linux + 任意 K8s 集群为例，概念步骤取自官方文档片段）：
+```bash
+# 1) 安装 Cilium CLI（概念示例）
+CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
+CLI_ARCH=amd64
+if [ "$(uname -m)" = "aarch64" ]; then CLI_ARCH=arm64; fi
+curl -L --fail --remote-name-all https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+sha256sum --check cilium-linux-${CLI_ARCH}.tar.gz.sha256sum
+sudo tar xzvfC cilium-linux-${CLI_ARCH}.tar.gz /usr/local/bin
+rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+# 2) 安装 Cilium 到任意 K8s 集群（会自动探测合适配置）
+cilium install
+# 3) 查看状态
+cilium status
+```
+说明：上述是概念性步骤，具体参数与验证方法请以官方“Quick Installation”文档为准。
+## 社区活跃度与生命力（数据面）
+- Star/Fork：Contributors 页面显示约 20.4k Star / 3k Fork；项目首页统计页面显示约 22.7k Star / 3.4k Fork，说明近期仍保持较高关注度（两个页面时间与抓取范围略有不同）。
+- Issue 与 PR：首页可见活跃的 Issue 与 Pull Request 列表（数量以百计），显示持续的开发节奏。
+- 版本与维护：官方仓库首页显示当前维护三个小版本（v1.20、v1.19、v1.18），且在 2026-08-18 同日发布各自最新补丁，体现“维护窗口策略”和积极维护节奏。
+- 治理与会议：有明确的 Maintainers/Committers 治理文档，每周定期开发者会与 APAC 会议，Slack/SIG 与 YouTube 直播等渠道保证社区沟通与用户支持。
+## 局限与不足（客观风险）
+- 内核与平台依赖：eBPF 要求相对新的内核（5.10+），在老内核或自定义内核的嵌入式/私有云场景会受限；部分高级特性需要更新的内核版本。
+- 复杂度不低：功能非常丰富（多集群、L7 策略、网格、带宽管理等），但意味着配置项与决策点很多；新团队需要一定的学习与试错成本。
+- 故障排查难度：eBPF 处于内核深处，遇到问题时需要熟悉内核日志、BPF maps、Hubble 等工具链，门槛高于“纯 iptables”的方案。
+- 生产升级路径：需要按 Upgrade Guide 做好兼容性与版本间变更评估，特别是涉及内核特性与实验性功能的变更。
+## 结语与行动建议
+- 如果你所在团队在“寻找性能与可观测的上限、希望统一网络与安全策略、有较大规模或多集群场景”，Cilium 值得认真评估与 PoC；特别是替代 kube-proxy 与 L7 策略的价值明显。
+- 如果集群规模较小、内核版本老旧、团队对 Linux 内核与 eBPF 不熟悉，可以先从官方“互动教程”或“Quick Installation”入手，在测试环境验证功能与运维路径，再考虑生产迁移。
+- 行动建议：
+  1) 在 Kind/Minikube 等本地 K8s 按官方文档完成一次“端到端安装 + Hubble 可观测 + 一条 L7 策略”的闭环。
+  2) 选定一个非关键业务做小规模灰度，重点验证与现有监控/日志/安全策略的集成。
+  3) 对性能与可观测做基线测试（如吞吐、延迟、Service 规模、连接跟踪等），对比现有方案，作为迁移决策依据。
+  4) 建立“Cilium 最佳实践清单”（内核版本与 Kconfig、防火墙规则、备份与回滚策略、告警与 Dashboard）后再做大规模推广。
+总体评判：Cilium 是“把网络、安全与可观测放在 eBPF 上”的成熟实现，在云原生网络与安全领域已站稳第一梯队。对于愿意投入学习与验证的团队，其“性能上限+细粒度可观测+统一策略控制”的综合收益十分可观。

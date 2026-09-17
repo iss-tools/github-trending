@@ -1,0 +1,49 @@
+{
+  "id": "750fe9c1-6097-49f3-84e0-ca188de38deb",
+  "url": "https://github.com/Tencent/BrowserSkill",
+  "domain": "github.com",
+  "repo": "Tencent/BrowserSkill",
+  "description": "BrowserSkill 是腾讯开源的本地化工具，通过 CLI 和浏览器扩展让 AI 代理安全接管你的真实浏览器。它解决了 AI 难以处理登录态和验证码的问题，支持人工介入，适合复杂网页自动化操作。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-17T11:06:58.870Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0"
+  },
+  "summaryData": {
+    "tags": [
+      "AI Agent",
+      "浏览器自动化",
+      "腾讯开源",
+      "效率工具",
+      "Rust"
+    ],
+    "cover": "",
+    "title": "腾讯 BrowserSkill：让 AI 安全接管真实浏览器的本地化工具",
+    "ability": [
+      "复用真实登录态",
+      "AI 自动化控制",
+      "人机协同介入",
+      "多框架兼容",
+      "安全隔离机制"
+    ],
+    "summary": "让 AI 代理复用你已登录的真实浏览器，实现自动化操作与人工介入协同。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "浏览器自动化"
+    ],
+    "suitable": [
+      "AI 工具重度用户",
+      "开发与测试工程师",
+      "数据采集专员",
+      "自动化办公人群"
+    ],
+    "description": "BrowserSkill 是腾讯开源的本地化工具，通过 CLI 和浏览器扩展让 AI 代理安全接管你的真实浏览器。它解决了 AI 难以处理登录态和验证码的问题，支持人工介入，适合复杂网页自动化操作。"
+  },
+  "contentDetail": "<|assistant|>查看项目仓库的右侧边栏信息（Stars、Forks、最近提交、License 等），以评估社区活跃度与维护情况。</think>\n# Tencent/BrowserSkill 深度评测\n## 一句话总结\nBrowserSkill = 让各类 AI 代理（如 Cursor、Claude Code、WorkBuddy 等）安全地复用“你已经登录的真实浏览器”做自动化，而不干扰你自己的正常使用；它采用 CLI + 本地守护进程 + 浏览器扩展的本地化架构，并内置“人机协同/按需人工介入”机制，专门解决“登录态难搞、自动化容易翻车”的现实痛点。\n---\n## 背景与痛点\n### 痛点一：登录态与反爬/风控挡住自动化\n- 大多数需要自动化的系统（邮箱、后台、SaaS、电商后台、网银等）都要求登录；有些还会二次验证（短信/邮箱 OTP、扫码、人脸、CAPTCHA），并伴随设备指纹与风控检查。另开无头/干净浏览器往往过不了这些验证。  \n- 工程团队常被迫为自动化准备独立账号、维护测试环境，或者把账号密码硬编码进脚本——这既麻烦又危险。\n### 痛点二：传统“无头浏览器”成本高、不稳定\n- Selenium/Puppeteer/Playwright 等方案需要写、调、维护浏览器自动化脚本；页面结构或网络环境一变，脚本就容易挂。\n- 为稳定运行，还常需搭配代理池、指纹、验证码服务等，成本与复杂度陡增。\n### 痛点三：AI 代理“有脑子没手脚”\n- 能在 IDE/终端里写代码、提命令的 AI（如 Cursor、Claude Code、WorkBuddy、DeepSeek Harness 等）经常需要在真实网站操作（查资料、填表、抓数据、跑 E2E 测试），但它们缺一个稳定、可控、可复用登录态的“浏览器手臂”。  \n- 不少尝试用截图+多模态、或者内置浏览器窗口解决，但要么与真实登录态脱节，要么抢占你的浏览体验。\n### BrowserSkill 的切入点\n- 不再另起一份无头浏览器，而是直接“桥接”到你日常用的 Chrome/Edge（甚至你正在用的标签页），把登录态、Cookie、会话复用给 AI。  \n- 为安全与体验，它在浏览器里单独开一个“Agent Window（自动化窗口）”，AI 默认只在这里“乱点乱填”；你平时用的窗口默认只读，除非你主动“借标签页”给它。  \n- 任何“能调 Shell 的 Agent”都可以通过统一的 bsk CLI 来驱动浏览器，不被某一框架或模型锁定。  \n- 遇到验证码、二次确认等“只有人类能干”的事，扩展会弹框请求你接管，完成后再把控制权交还 Agent——这种人机协同显著提升可用性与安全性。\n---\n## 核心亮点与功能剖析\n### 1) 本地“桥接式”架构（CLI + Daemon + Extension）\n- bsk CLI：交给 Agent 调用的本地命令行工具；负责命令、会话与配置管理。  \n- bsk Daemon：本地守护进程，负责与浏览器扩展通信（本机 WebSocket 127.0.0.1）；会话管理、状态同步都由它承接。  \n- 浏览器扩展：真正控制页面的“手臂”；在 Agent Window 执行导航、点击、填写、截图、滚动等操作，并能与你常用的窗口隔离（只在需要时“借标签页”）。  \n- 架构图概览（官方）：Agent（Shell）→ bsk CLI → Daemon（本地 IPC）→ Extension（WebSocket）→ Agent Window；并仅在明确指令时“借用”你的窗口标签页。\n### 2) 安全与人机协同设计（亮点）\n- “只借必要的标签页”：需要用到你已打开的某个 Tab 时，Agent 需要明确请求“借用”，用完归还；其余时间你的窗口不受干扰。  \n- 内置“人工介入/人机协同”：遇到验证码、二次确认弹窗等人类步骤时，扩展会请求你接管；你处理后，Agent 继续执行后续步骤——这种“90% 自动 + 10% 人工”的模式非常适合生产落地。  \n- 扩展弹窗提供两个自动化策略开关：  \n  - 借用标签页前是否要你确认（Confirm before borrowing tabs）  \n  - 是否允许 Agent 请求人工帮助（Allow requests for human help）  \n  设置会保存并应用到新老会话，你可以按需切换（如无人值守时关闭确认）。  \n- 本地优先：Daemon 与扩展均在本机运行，不强制你的浏览数据上云；Remote Gateway 方案可按需用于服务器 Agent 与本机浏览器的配对。\n### 3) 多 Agent / 多框架 / 多系统兼容性\n- 官方原生支持（通过 skill 插件或深度集成）：Cursor、Claude Code、Codex、OpenClaw、CodeBuddy、WorkBuddy、Pi、Hermes Agent、DeepSeek Harness 等。  \n- 原则上任何“能调 Shell 的 Agent”都可以直接调用 bsk，实现框架无关、模型无关的浏览器能力。  \n- 系统与浏览器支持：  \n  - 操作系统：macOS（Apple Silicon & Intel）、Linux（x64 & ARM64）、Windows x64。  \n  - 浏览器：Chrome、Microsoft Edge；其他支持未打包 Chromium 扩展的浏览器也可尝试；Firefox 计划中。  \n- 国际化：扩展 UI 现已包含英文、简体中文与韩语本地化，对中文生态友好。\n### 4) 可观测性与调试能力（开发者视角）\n- bsk doctor：自检 CLI、daemon 与扩展的连通性与版本一致性，是排查问题的第一站。  \n- bsk status：查看 daemon 与扩展的连接状态、协议版本、交互策略（是否开启确认/人工介入）等。  \n- 任务执行历史：本地记录操作，便于事后回溯与审计。  \n- DeepSeek Harness 插件：提供 Web UI 中的实时会话面板与截图/状态同步，适合在服务器端跑 Agent、但在本机查看浏览器行为的场景。\n### 5) 针对“现代网页”的底层能力\n- 0.3.x 版本的演进集中体现工程深度：  \n  - 统一跨 Frame 的坐标与截图转换，解决页面嵌套时定位与截图错位问题。  \n  - DOM 处理与采集流程解耦，降低抓取失败率，提升稳定性与可维护性。  \n  - 对 Canvas 重度页面的“可见区域识别”与视觉定位（visual refs），为图像驱动型操作打基础。  \n  - 支持完整页面的截图与稳定滚动（处理卡顿与过期采集），适合长页归档与取证式截屏。  \n- 这些改进表明项目不满足于“能点能填”，而是奔着工程级、生产级可用去的。\n---\n## Demo/代码示例：如何快速上手（Agent 侧与命令行侧）\n以下示例基于官方 README 与社区实践整理。请在执行前确认你已遵守目标网站的使用条款与合规要求。\n### A. 安装 CLI 与扩展\n- macOS/Linux（一键脚本，写入 ~/.local/bin 并建议更新 PATH）：  \n  - bash/zsh：\n  ```bash\n  curl -fsSL https://raw.githubusercontent.com/Tencent/BrowserSkill/main/install.sh | sh\n  export PATH=\"${BSK_INSTALL_DIR:-$HOME/.local/bin}:$PATH\"\n  ```\n- Windows（PowerShell）：  \n  ```powershell\n  irm https://raw.githubusercontent.com/Tencent/BrowserSkill/main/install.ps1 | iex\n  ```\n- 安装浏览器扩展：在 Chrome Web Store 或 Edge Add-ons 搜索“BrowserSkill”并安装；或使用商店直达链接（见社区文章）。\n### B. 验证连通性\n```bash\nbsk doctor      # 自检 CLI、daemon 与扩展的连通性\nbsk --version   # 查看 CLI 版本\nbsk status      # 查看 daemon/扩展连接状态、协议版本与交互策略\n```\n扩展弹窗显示“已连接/绿色”且 doctor 通过即为就绪。\n### C. 在常用 Agent 中安装“Skill”并执行首个测试\n- 方法 1：把一句话发给你的 Agent（官方推荐），让它自检并安装：  \n  “Set up browser-skill on this machine by following https://raw.githubusercontent.com/Tencent/BrowserSkill/main/AGENT_INSTALL.md”\n- 方法 2：手动安装 Skill（以 Cursor 为例）：\n  ```bash\n  bsk install-skill   # 按提示选择 Harness（如 Cursor）\n  ```\n  DeepSeek Harness 用户使用其专用插件：\n  ```bash\n  dsh plugin --profile web add @wxg-prc-cpg/browser-skill-dsh-plugin\n  dsh --profile web\n  ```  \n- 首个测试（可在 Cursor/Claude Code/WorkBuddy 等的会话里输入）：  \n  “使用 browser-skill 打开 https://example.com，并用一句话概括页面内容。”\n### D. 命令行侧常见操作示例（供开发/调试与集成）\n注意：这些命令通常由 Agent 调用，你也可以手动调用用于调试。部分子命令可能在 0.3.x 中有变更，使用 bsk --help / 文档核对最新用法。\n- 启动会话（按需避免窗口抢占焦点）：  \n  ```bash\n  bsk session start [--no-focus]\n  ```\n- 在当前会话中导航并截图（示意）：\n  ```bash\n  bsk navigate https://example.com\n  bsk screenshot --session <id> --out page.png\n  ```\n- 全页截图（需要 CLI 与扩展版本匹配）：\n  ```bash\n  bsk screenshot --session <id> --full-page --out long-page.png\n  ```  \n- 借用你已打开的某个标签页（仅在需要时）：\n  ```bash\n  bsk tab borrow --url <pattern-or-url> [--timeout 60s]\n  ```\n  完成后记得归还（或在 Skill 里让 Agent 自动调用归还）。\n### E. 在 DeepSeek Harness 插件里的 Web UI 使用场景\n- 插件会在 DSH Web UI 中展示“会话列表”与实时缩略图，并注入 browser_* 工具供 Agent 调用，从而在服务器跑 Agent、在本机浏览器“远程执行”并可视化。\n---\n## 目标人群与收益\n- 开发者/工程师（尤其是经常用 Cursor、Claude Code、WorkBuddy、OpenClaw、DeepSeek Harness 等）：  \n  - 不再为每次自动化都配无头浏览器、维护登录态与脚本；让 AI 透过 bsk 与扩展直接在你已登录的系统里干活。  \n- 产品/运营/内容等非代码岗（但愿意用 AI 工作台）：  \n  - 通过 WorkBuddy 等图形化 Agent，用自然语言触发“打开后台 → 筛选 → 导出 → 汇总”这类流程，零代码即可完成常见报表与信息采集。  \n- QA/测试团队：  \n  - 用 Agent 编写或生成“冒烟测试/回归测试”，在真实登录态下执行，比纯 API 测试更贴近用户体验；遇到验证码/弹窗时由人确认，避免因“环境过度自动化”而漏测真实风控路径。  \n- 数据采集/科研人员：  \n  - 对于需要登录的数据源（如学术数据库、社区后台），可在遵守 ToS 的前提下用 BrowserSkill 进行结构化抓取与截屏归档，降低账号被封或数据污染风险。\n### 实际收益\n- 节省时间与人力成本：从“写脚本—调脚本—维护环境”变为“写清楚任务描述—AI 调用浏览器执行—人工抽查与介入关键环节”。  \n- 提升可复用性：一次任务描述即可在不同网站与不同 Agent 框架中复用（只要装了 bsk 与扩展）。  \n- 降低安全风险：不需要把凭证硬编码进脚本或配置文件，AI 也不直接接触你的 Token/Cookie；Daemon 与扩展在本地通信，且控制范围可受限在 Agent Window 与明确借用的标签页。  \n- 让人机协同成为“默认设置”：在验证码、二次确认、身份核验等必须人出面的环节自然接入，而不是事后补丁。\n---\n## 竞品/同类对比\n- agent-browser（Vercel 实验室）：面向 AI Agent 的浏览器自动化 CLI，侧重紧凑文本输出、50+ 导航/表单/截图/网络/存储/调试等命令，支持云端执行。  \n  - 定位上更偏“云优先”与“Agent 专用 CLI”；BrowserSkill 更偏“本地真实浏览器复用”与“人机协同”。  \n- BrowserAct：支持云托管与本地控制的混合模式，强调反 Bot 对抗（指纹、TLS 轮换、住宅代理、验证码解决），适合对匿名性与规模化采集有较强需求的场景。  \n  - BrowserSkill 更重视“日常工作流中与你自己浏览器共存”的场景，且以 MIT 本地化为主。  \n- 其他浏览器自动化技能/扩展（如 browser-use 生态）：\n  - 许多“GitHub Topic/browser-use”项目也在把网站做成 CLI 或用 Agent 驱动，但方案从纯 Python 到 Chrome 扩展、从无头到有头差异很大；BrowserSkill 的差异在于“复用真实登录态 + 官方多 Harness 支持 + 严格隔离与人工介入”。\n一句话：如果你想在“不登录第二遍、不打断自己工作”的前提下让 AI 顺手帮你操作浏览器，BrowserSkill 是一个贴近日常、工程化、并具备良好扩展性的本地方案。\n---\n## 局限与不足（客观视角）\n- 平台与浏览器覆盖仍有限：  \n  - 目前官方明确支持 Chrome/Edge，其他 Chromium 系“可能可用”但未承诺；Firefox 仍在计划中。非 Chromium 用户需要等待或自行承担兼容风险。  \n- 学习与心智成本：  \n  - 需要理解“CLI + daemon + 扩展 + Agent Skill + 会话 + 借用标签页”的概念链路；完全非技术用户建议从 WorkBuddy 等图形化 Agent 入手，并由 AI 代行安装。  \n- 版本与协议兼容：  \n  - 部分 0.3.x 的新能力（例如人工介入策略、全页截图等）要求 CLI、daemon 与扩展版本对齐，升级时需注意同步更新，否则可能出现特性不可用或警告。  \n- 生态与社区尚年轻：  \n  - 项目创建时间约 2 个月，最近一个月仍有活跃提交，但长期演进路径与社区规模仍需观察。Stars/Forks 增长快，但 Issue 有数条待解（如 Agent 窗口边框干扰 AI 视觉分析、长时闲置后连接断开等）。  \n- 合规与使用边界需要自律：  \n  - 虽然内置了人机协同与“借用标签页”机制，但工具不会阻止你去抓取或操作你不应触碰的网站；遵守目标网站 ToS、数据隐私与地区法规是使用者的责任。建议仅在内部测试/授权范围使用，并避免高频或对抗性采集。\n---\n## 社区活跃度与生命力（观察）\n- Stars/Forks：根据 Trendshift 统计，约 1200+ Stars、100+ Forks；GitHub Issues 页面也显示有 8 个开放 Issues 和若干 PR，说明项目被广泛关注并持续迭代。  \n- 版本节奏：从 0.1.x 到 0.3.0 的更新频次较快，最近 0.3.0 变更集中解决几何/观察/交互/国际化/远程连接/全页截图等关键工程问题，说明团队在打磨稳定性与细节。  \n- 趋势：项目曾登上 Trendshift 的 Rust 类目日榜，证明其在 AI Agent 与浏览器自动化交叉领域有话题度与吸引力。  \n- 许可证：MIT，对商业友好，便于个人与企业集成与二次开发。\n---\n## 结语与行动建议\n- 终极评判：BrowserSkill 不是“又一个无头浏览器”，而是一个面向“日常 AI Agent 工作流”的本地化浏览器自动化桥——它以最小侵入度复用你的真实登录态，并通过人机协同把自动化卡点降到最低。适合那些“已经在用 Cursor/Claude Code/WorkBuddy/DeepSeek Harness 等 Agent”并希望顺手让 AI 完成网页操作的用户，尤其是开发者与数据驱动团队。  \n- 如果你满足这些条件，建议的尝试路径：  \n  1) 先在非生产环境（个人账号、测试后台）试用；  \n  2) 使用“一句话安装”让 Agent 代为完成 CLI 与扩展的安装与 skill 部署；  \n  3) 用 bsk doctor 与简单测试任务验证连通性；  \n  4) 再逐步把报表、抓取、简单 E2E 测试等场景交给 Agent，人工介入关键步骤。  \n- 如果你已经有完善的云端浏览器自动化基础设施（如 Browserbase、BrowserAct 等），BrowserSkill 可以作为“本机补充”和“人机协同入口”，形成云本混合的工作流。  \n- 对完全不懂终端、但愿意用 AI 工作台的用户，建议从 WorkBuddy/DeepSeek Harness 的图形化界面和官方/社区教程入手，避免直接在裸 Shell 中折腾。\n---\n## 风险与合规提醒\n- 始终遵守目标网站的使用条款与当地法律法规；不要把 BrowserSkill 用于大规模采集、绕过风控或侵犯隐私等用途。  \n- 建议只在“你拥有明确授权”的账号与环境中运行，并定期审查 Agent 任务与日志。  \n- 对企业内部部署，建议统一管理 Daemon 版本与扩展策略（如是否开启确认与人工介入），并设置最小必要权限。\n---\n## 参考与延伸阅读\n- BrowserSkill 官方仓库（README、版本与架构图）  \n- 官方 Issues 与 Forks（社区互动与二次开发动态）  \n- Trendshift 统计与趋势  \n- WorkBuddy × BrowserSkill 使用指南（含 bsk doctor 与安装避坑）  \n- “AI Agent 实战”系列文章：从安装到电商后台抓取、博客数据汇总的实战案例  \n- 竞品/生态参考：agent-browser、Browserbase、browser-use 主题",
+  "type": "project",
+  "dateAdded": "20260917"
+}
