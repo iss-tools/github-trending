@@ -1,0 +1,119 @@
+# ahmedkhaleel2004/gitdiagram
+
+[GitHub URL](https://github.com/ahmedkhaleel2004/gitdiagram)
+
+
+## GitDiagram：一键将 GitHub 仓库转化为可视化架构图
+
+> 利用 AI 将 GitHub 仓库一键转化为交互式系统架构图，支持导出 Mermaid 和 PNG，极大提升代码理解效率。
+
+- **Tags**: GitHub, 架构可视化, Mermaid, 代码理解, AI辅助
+- **Category**: 开发工具, AI 编程, 效率工具
+
+## Details
+
+# GitDiagram
+## 一句话总结
+GitDiagram 把任意 GitHub 仓库一键变成“交互式系统架构图”（并可导出 Mermaid 源码/PNG），用 AI 将文件树与 README 转化为架构视角，尤其适合新人快速上手陌生项目、在代码评审/面试中直观讲解结构。
+## 背景与痛点
+- 新人进一个项目，先读 README 再翻目录，很难立刻建立“脑子里那张图”，常常迷失在依赖调用与模块关系里。
+- Code Review 或给他人讲解项目时，口头说明费时且容易漏掉关键路径。
+- 传统“目录树/文件树”只呈现层级而非架构；而手工画图既慢也难维护。
+- 私有仓库、公司内网项目，往往缺少可视化方案，且不想把敏感信息暴露到第三方。
+GitDiagram 在“浏览 GitHub 前就先看懂结构”的场景下很有价值：你可以把 GitHub URL 里的 hub 替换为 diagram，立刻看图，不再从零啃代码。
+## 核心亮点与功能剖析
+### 1) 架构优先，不是简单画文件夹
+- 优先产出系统级图：模块、组件、边、标签与解释，来自仓库树与 README 的综合理解，而不是机械罗列文件夹。
+- 便于看到“谁调用谁”“接口在哪”这种层次关系，快速定位入口与边界。
+### 2) 交互式源码链接
+- 点击图中的节点，直接跳转到对应文件/目录在 GitHub 的真实位置；不必另开标签手动翻找。
+### 3) 流式生成体验
+- 解释文字与图结构一边流式呈现，一边在后端规划并渲染图。不需要干等，过程中就能看到对架构的说明开始涌现。
+### 4) 支持私有仓库
+- 在浏览器中提供自己的 GitHub Token（仅用于当前请求的 same-origin 调用，不会嵌入到公共链接），即可拉取私有仓库并生成图。图也存储在单独的受保护命名空间。
+### 5) 导出 Mermaid / PNG
+- 可复制 Mermaid 源码，方便你把图嵌入自己的文档、README 或 Notion/Confluence 中。
+- 也支持下载 PNG，直接插入 PPT 或报告。
+### 6) Provider 可选：OpenAI / OpenRouter
+- 默认用 OpenAI；也支持 OpenRouter 用于自托管/替代供应商。通过环境变量 AI_PROVIDER 控制。
+### 7) 生产架构与可靠性设计（对开发者友好）
+- UI 与生成 API 都由 Next.js App Router 提供（同源 Route Handler），部署在 Vercel（Bun runtime），降低了多端不一致的风险。
+- 存储：Cloudflare R2 存放生成产物；Upstash Redis 做配额、取消锁与短期失败状态；PostHog 做分析。
+- 长运行生成利用 Vercel 的 300 秒函数预算；配合重试、心跳、分布式取消等机制，保证在并发/超频时的稳定性。
+- 即使 Railway/Docker 属于冷备（没有在线实例），也提供 Dockerfile 与 railway.json 作为灾备恢复配方，保证可复现与迁移。
+### 8) 安全与验证设计
+- 服务器端会对图 AST 做标识符、连通性、大小限制与路径合法性校验；无效结果会带反馈重试。
+- 浏览器端对 Mermaid 源码与渲染后 SVG 做双重清理，并强制执行白名单链接策略，降低 XSS 等风险。
+## 技术栈与架构解析（面向开发者的深度视角）
+- 前端：Next.js 16（App Router）、React 19、TypeScript、Tailwind CSS、Radix UI。兼顾开发效率与现代 UI 能力。
+- 后端 API：同源 Next.js Route Handlers，运行在 Vercel 的 Bun runtime。避免 FastAPI/Node 的异构多语言复杂度。
+- 存储：Cloudflare R2（图产物）、Upstash Redis（配额/锁/短状态）。无关系型数据库，降低运维负担。
+- AI：OpenAI 或 OpenRouter，通过 AI_PROVIDER 切换。
+- 部署：生产运行时仅 Vercel；Docker/Railway 作为离线灾备配方。
+生成流程（简述）：
+1) 通过 GitHub API 获取默认分支、递归树、README；超大输入会前置拦截。
+2) 第一阶段：流式输出“架构说明”的英文文本。
+3) 第二阶段：返回严格大小受限的图 AST（groups/nodes/edges/labels/descriptions/repo 路径）。
+4) 服务器验证 AST：标识符合法性、连通性、大小限制、路径有效性，否则反馈重试。
+5) 确定性编译器把 AST 转换为 Mermaid，并进行彻底的文本转义与链接白名单处理。
+6) 浏览器清理 Mermaid 源、严格安全模式渲染 SVG，再次执行链接白名单。
+7) 成功的图与终端审计状态持久化，后续访问可直接复用缓存。
+Demo/代码示例
+- 最快速使用：把 GitHub URL 里的 hub 替换为 diagram 即可。例如：https://github.com/ahmedkhaleel2004/gitdiagram → https://gitdiagram.com/ahmedkhaleel2004/gitdiagram
+- 本地开发（来自 README）：
+```bash
+git clone https://github.com/ahmedkhaleel2004/gitdiagram.git
+cd gitdiagram
+bun install
+cp .env.example .env
+# 至少配置 R2、Upstash 与一个 AI Provider（OpenAI/OpenRouter）
+bun run dev
+# 打开 http://localhost:3000
+```
+## 目标人群与收益
+- 谁最合适：
+  - 新人/实习生：快速建立对项目全貌的认知。
+  - 技术负责人/架构师：给团队或管理层讲解系统结构。
+  - 开源贡献者：评估是否值得投入，定位核心模块。
+  - 招聘/面试官：让候选人基于图讲解代码结构，提高沟通效率。
+  - 咨询/外包团队：快速理解客户代码库现状，不耽误方案设计。
+- 实实在在的收益：
+  - 时间成本：从“数小时啃目录”缩短到“几分钟看图+读说明”。
+  - 沟通成本：图示比口述更易达成共识，减少反复解释。
+  - 导入成本：支持私有仓库与本地部署，可适配企业合规与内网环境。
+  - 复用成本：导出 Mermaid 源码，可长期维护到项目文档中。
+## 竞品/同类对比（概览）
+- GitDiagram：专注把 GitHub 仓库（含 README）转化为交互式架构图；集成度高、开箱即用、可直接浏览器中生成并导出 Mermaid/PNG。
+- Mermaid / Mermaid Editor：手动写 DSL 生成图；适合精确控制，但需要手工维护与代码库的映射。
+- IDE 插件类“Git Graph / Dependency Graph”：多关注分支与提交历史可视化，而非项目系统结构。
+- 代码依赖分析工具（如依赖图/调用图 IDE 插件）：通常需要在本地构建索引、索引耗时、难以在浏览器分享。
+差异化：
+- 开箱即用：无需安装或本地索引，换 URL 即可看图。
+- 架构视角：结合 README 与仓库树给出系统级图，而非纯文件夹或纯分支图。
+- 可导出与私仓支持：既可在线分享也可导出到文档，且兼顾隐私方案。
+## 局限与不足
+- 准确性依赖模型与仓库：图是“解读”结果，不是静态索引；复杂/分层较多的仓库可能产生过度简化或误解节点关系。
+- 超大仓库或超大文件树：为了防止超时与成本失控，项目会对超大输入前置拦截，可能需要手动裁剪或聚焦子目录。
+- AI 成本与配额：大规模团队或高频率使用时需考虑 Token 成本与配额策略（依赖 Upstash Redis 与环境配置）。
+- 需要 GitHub API 访问：对极高频调用或组织级大规模检索，要注意 GitHub API 速率限制，并使用 PAT/GitHub App 提升。
+- 私有仓库 Token 管理：虽然 Token 仅在 same-origin 调用中使用且不会嵌入公共链接，但企业安全策略可能仍要求集中式的 Token 管理或审计机制。
+- 浏览器兼容性：依赖现代浏览器对 Mermaid/SVG 的渲染支持，旧环境可能存在兼容性差异。
+## 上手门槛与部署体验
+- 零门槛体验：访问 gitdiagram.com，输入公开仓库 URL 或替换 URL 中的 hub 为 diagram 即可，几乎无学习成本。
+- 本地开发门槛：
+  - 依赖 Bun、R2、Upstash 与 AI Provider 配置，需要具备一定云端服务与环境变量配置经验。
+  - 官方提供 docs/dev-setup.md 指导，且本地运行支持 lint/typecheck/test/build 的完整流水线，开发者体验良好。
+- 部署：
+  - 生产首选 Vercel；Docker/Railway 作为冷备灾备，可在 Vercel 不可用时重建服务。
+## 社区活跃度与生命力（当前可见信息）
+- 官网首页展示了“16k”星级，提示项目已获得较大关注与使用（数字随时间增长，请以最新为准）。
+- README 中明确欢迎贡献，并指引 Issue/PR 流程；同时也提到对测试与编译器契约（Mermaid parser）的维护，显示出较扎实的工程实践。
+- 项目设计上与主流基础设施（Vercel、Cloudflare R2、Upstash Redis、PostHog）深度集成，可持续性较强。
+## 结语与行动建议
+- 终极评判：GitDiagram 把“读懂一个 GitHub 仓库”这件事，从“人工啃目录+拼凑理解”升级为“交互式架构图+流式解释”，大幅降低了认知与沟通成本。其架构合理、安全设计到位、支持私有仓库与本地部署，是一个兼具易用性与工程质量的工具。
+- 行动建议：
+  - 零成本体验：立即把某个你关心的公开 GitHub 链接里的 hub 换成 diagram，看图并验证是否节省了理解时间。
+  - 团队落地：在技术分享、Code Review 或新人入职培训中，把 GitDiagram 图作为“起点图”，再逐步深挖代码细节。
+  - 持续复用：对关键项目，将导出的 Mermaid 源码纳入文档/README 维护，形成与代码同步更新的架构视图。
+  - 企业场景：评估私有仓库与本地部署方案，并与现有安全/审计流程整合。
+一句话收尾：当你下次需要快速向任何人“讲清楚这个仓库长什么样”时，GitDiagram 应成为你的第一反应工具，而不是“再让我先翻一下代码”。

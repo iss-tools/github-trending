@@ -1,6 +1,294 @@
 {
   "all": [
     {
+      "id": "1526f2be-99bb-4248-b8bb-acb5c763e55a",
+      "url": "https://github.com/ahmedkhaleel2004/gitdiagram",
+      "domain": "github.com",
+      "repo": "ahmedkhaleel2004/gitdiagram",
+      "description": "GitDiagram 是一款基于 AI 的开发工具，能自动分析 GitHub 仓库结构，生成交互式系统架构图。它解决了阅读代码时难以理清整体结构的痛点，适合新人快速上手及团队沟通，支持私有仓库和多种格式导出。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-18T11:25:06.982Z",
+      "metaData": {
+        "forks": "1250",
+        "stars": "16235",
+        "topics": [
+          "ai",
+          "code",
+          "github",
+          "system-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://gitdiagram.com",
+        "description": "Free, simple, fast interactive diagrams for any GitHub repository - ahmedkhaleel2004/gitdiagram"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "架构可视化",
+          "Mermaid",
+          "代码理解",
+          "AI辅助"
+        ],
+        "cover": "",
+        "title": "GitDiagram：一键将 GitHub 仓库转化为可视化架构图",
+        "ability": [
+          "一键生成架构图",
+          "交互式代码跳转",
+          "支持私有仓库",
+          "导出 Mermaid/PNG",
+          "AI 深度解读"
+        ],
+        "summary": "利用 AI 将 GitHub 仓库一键转化为交互式系统架构图，支持导出 Mermaid 和 PNG，极大提升代码理解效率。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "代码初学者",
+          "技术架构师",
+          "开源贡献者",
+          "代码审查员",
+          "技术面试官"
+        ],
+        "description": "GitDiagram 是一款基于 AI 的开发工具，能自动分析 GitHub 仓库结构，生成交互式系统架构图。它解决了阅读代码时难以理清整体结构的痛点，适合新人快速上手及团队沟通，支持私有仓库和多种格式导出。"
+      },
+      "type": "project",
+      "dateAdded": "20260918"
+    },
+    {
+      "id": "4077b9f1-0881-46ca-a109-f3fcdf91efdb",
+      "url": "https://github.com/rustfs/rustfs",
+      "domain": "github.com",
+      "repo": "rustfs/rustfs",
+      "description": "RustFS 是基于 Rust 的高性能 S3 兼容对象存储。支持加密、生命周期等企业功能，无遥测且采用 Apache 2.0 许可。它是 MinIO/Ceph 的理想替代方案，适合对数据主权和性能要求极高的场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-18T11:21:49.963Z",
+      "metaData": {
+        "forks": "1475",
+        "stars": "32914",
+        "topics": [
+          "ai-native",
+          "ai-storage",
+          "amazon-s3",
+          "bigdata",
+          "cloud-native",
+          "filesystem",
+          "minio",
+          "multi-cloud",
+          "object-storage",
+          "objectstorage",
+          "rust",
+          "s3"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://rustfs.com/download/",
+        "description": "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph. - rustfs/rustfs"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "S3存储",
+          "开源项目",
+          "高性能",
+          "云原生"
+        ],
+        "cover": "",
+        "title": "RustFS：高性能 Rust 编写的 S3 兼容对象存储",
+        "ability": [
+          "S3 兼容与高性能",
+          "企业级功能完备",
+          "多协议支持",
+          "内存安全与无遥测",
+          "Apache 2.0 许可证"
+        ],
+        "summary": "基于 Rust 的 S3 对象存储，性能优于 MinIO 且无 AGPL 限制。",
+        "category": [
+          "开发工具",
+          "基础设施",
+          "数据存储"
+        ],
+        "suitable": [
+          "自建存储的运维团队",
+          "追求极致性能的架构师",
+          "对合规敏感的企业",
+          "AI 与大数据开发者",
+          "边缘计算平台开发者"
+        ],
+        "description": "RustFS 是基于 Rust 的高性能 S3 兼容对象存储。支持加密、生命周期等企业功能，无遥测且采用 Apache 2.0 许可。它是 MinIO/Ceph 的理想替代方案，适合对数据主权和性能要求极高的场景。"
+      },
+      "type": "project",
+      "dateAdded": "20260918"
+    },
+    {
+      "id": "5cdba9f9-1ad7-4c84-8bba-ae024cf958fb",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp",
+      "domain": "github.com",
+      "repo": "tradesdontlie/tradingview-mcp",
+      "description": "这是一个连接 AI 与 TradingView 桌面端的本地工具。它让你能用自然语言让 AI 读取图表信息、自动编写并调试 Pine Script 代码，还能控制市场回放，是提升个人交易策略研发和复盘效率的得力助手。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-18T11:17:56.130Z",
+      "metaData": {
+        "forks": "2709",
+        "stars": "6334",
+        "topics": [],
+        "license": "License",
+        "homepage": "",
+        "description": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation - tradesdontlie/tradingview-mcp"
+      },
+      "summaryData": {
+        "tags": [
+          "TradingView",
+          "Pine Script",
+          "MCP",
+          "AI 编程",
+          "量化交易"
+        ],
+        "cover": "",
+        "title": "TradingView MCP Bridge 评测：AI 驱动的图表与策略开发助手",
+        "ability": [
+          "AI读控图表",
+          "Pine Script开发",
+          "策略回放模拟",
+          "多标的分析",
+          "本地CLI工具"
+        ],
+        "summary": "让 AI 读写你的 TradingView 图表，并自动编写调试 Pine Script 策略。",
+        "category": [
+          "AI 工具",
+          "交易辅助",
+          "开发者工具"
+        ],
+        "suitable": [
+          "股票/期货交易者",
+          "量化策略开发者",
+          "Pine Script 学习者",
+          "AI 与金融研究者",
+          "需要高效复盘的投资者"
+        ],
+        "description": "这是一个连接 AI 与 TradingView 桌面端的本地工具。它让你能用自然语言让 AI 读取图表信息、自动编写并调试 Pine Script 代码，还能控制市场回放，是提升个人交易策略研发和复盘效率的得力助手。"
+      },
+      "type": "project",
+      "dateAdded": "20260918"
+    },
+    {
+      "id": "e91500f6-9cc2-4008-8164-b8c80d6c403b",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "domain": "github.com",
+      "repo": "supermemoryai/supermemory",
+      "description": "Supermemory 是为 AI 打造的持久记忆层引擎，支持跨会话记住用户偏好和上下文，提供本地部署、多模态处理和统一 API，让 AI 应用更懂你。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-18T11:14:11.412Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "AI 记忆",
+          "RAG",
+          "开源项目",
+          "知识管理",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "Supermemory 深度评测：给 AI 安装持久大脑的开源记忆层",
+        "ability": [
+          "持久记忆存储",
+          "用户画像管理",
+          "混合检索（RAG+记忆）",
+          "多模态内容处理",
+          "本地部署与API集成"
+        ],
+        "summary": "Supermemory 是一套为 AI 打造的持久记忆层引擎，让 AI 跨会话记住用户偏好和上下文",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度AI使用者",
+          "AI应用开发者",
+          "需要个性化功能的企业",
+          "知识工作者",
+          "隐私敏感用户"
+        ],
+        "description": "Supermemory 是为 AI 打造的持久记忆层引擎，支持跨会话记住用户偏好和上下文，提供本地部署、多模态处理和统一 API，让 AI 应用更懂你。"
+      },
+      "type": "project",
+      "dateAdded": "20260918"
+    },
+    {
+      "id": "a50ea52f-4e8d-41fd-94df-8feda13ad6df",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "domain": "github.com",
+      "repo": "Fission-AI/OpenSpec",
+      "description": "OpenSpec 是一个轻量级开源框架，通过 Markdown 和 slash 命令，将需求规范、设计方案和任务清单统一管理在代码仓库中。支持 Cursor、Copilot、Amazon Q 等 30+ AI 工具协作，实现'先对齐规范，再 AI 实施代码'的工作流，减少返工，提升团队协作效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-18T11:08:46.288Z",
+      "metaData": {
+        "forks": "4736",
+        "stars": "69050",
+        "topics": [
+          "ai",
+          "context-engineering",
+          "engineering",
+          "planning",
+          "prd",
+          "sdd",
+          "sdlc",
+          "spec",
+          "spec-driven-development",
+          "specification"
+        ],
+        "license": "MIT license",
+        "homepage": "https://openspec.dev/",
+        "description": "Spec-driven development (SDD) for AI coding assistants. - Fission-AI/OpenSpec"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenSpec",
+          "Markdown",
+          "AI协作",
+          "规范驱动",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenSpec：AI 时代的 Markdown 规范驱动开发框架",
+        "ability": [
+          "Markdown 规范管理",
+          "30+ AI 工具集成",
+          "变更驱动工作流",
+          "跨仓库规范同步",
+          "零学习成本"
+        ],
+        "summary": "用纯 Markdown 把需求、设计、任务管起来，让 AI 编码助手先对齐再写代码",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 编码助手使用者",
+          "个人开发者",
+          "小型团队",
+          "多仓库产品团队",
+          "规范先行实践者"
+        ],
+        "description": "OpenSpec 是一个轻量级开源框架，通过 Markdown 和 slash 命令，将需求规范、设计方案和任务清单统一管理在代码仓库中。支持 Cursor、Copilot、Amazon Q 等 30+ AI 工具协作，实现'先对齐规范，再 AI 实施代码'的工作流，减少返工，提升团队协作效率。"
+      },
+      "type": "project",
+      "dateAdded": "20260918"
+    },
+    {
       "id": "faf4650a-5571-4b3c-9140-30827280b4ef",
       "url": "https://github.com/stablyai/orca",
       "domain": "github.com",
@@ -11,8 +299,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "4675",
-        "stars": "71430",
+        "forks": "4681",
+        "stars": "71514",
         "topics": [
           "ade",
           "agent-ide",
@@ -157,8 +445,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:27:05.481Z",
       "metaData": {
-        "forks": "1494",
-        "stars": "15014",
+        "forks": "1496",
+        "stars": "15035",
         "topics": [
           "agents",
           "dev-tools",
@@ -221,8 +509,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "392",
-        "stars": "3741",
+        "forks": "394",
+        "stars": "3756",
         "topics": [
           "agent",
           "agentic-ai",
@@ -351,8 +639,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "335",
-        "stars": "4788",
+        "forks": "338",
+        "stars": "4819",
         "topics": [
           "agent",
           "browser-use",
@@ -460,8 +748,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:38:08.647Z",
       "metaData": {
-        "forks": "14068",
-        "stars": "109921",
+        "forks": "14215",
+        "stars": "109953",
         "topics": [
           "ai",
           "alternative",
@@ -606,8 +894,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "23681",
-        "stars": "146020",
+        "forks": "23696",
+        "stars": "146045",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -711,8 +999,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "2958",
-        "stars": "24699",
+        "forks": "2957",
+        "stars": "24705",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -827,10 +1115,10 @@
       "createdAt": "2026-09-16T14:09:28.271Z",
       "metaData": {
         "forks": "290",
-        "stars": "6313",
+        "stars": "6337",
         "topics": [],
         "license": "License",
-        "homepage": "https://abue-ammar.github.io/tinycast/",
+        "homepage": "https://tinycast.dev",
         "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history. - abue-ammar/tinycast"
       },
       "summaryData": {
@@ -879,8 +1167,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "628",
-        "stars": "11606",
+        "forks": "635",
+        "stars": "11779",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -931,8 +1219,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T12:08:20.183Z",
       "metaData": {
-        "forks": "38690",
-        "stars": "90693",
+        "forks": "38692",
+        "stars": "90697",
         "topics": [
           "asyncio",
           "hacktoberfest",
@@ -1201,7 +1489,7 @@
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
         "forks": "9101",
-        "stars": "44275",
+        "stars": "44285",
         "topics": [
           "ai",
           "anthropic",
@@ -1814,8 +2102,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7258",
-        "stars": "82958",
+        "forks": "7260",
+        "stars": "82984",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -1948,8 +2236,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T14:06:55.799Z",
       "metaData": {
-        "forks": "1975",
-        "stars": "6460",
+        "forks": "1980",
+        "stars": "6468",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2257,8 +2545,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2546",
-        "stars": "35906",
+        "forks": "2568",
+        "stars": "36115",
         "topics": [
           "agent",
           "agent-skills",
@@ -2269,7 +2557,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://open-codereview.ai",
-        "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
       },
       "summaryData": {
         "tags": [
@@ -2317,7 +2605,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "532",
-        "stars": "6364",
+        "stars": "6367",
         "topics": [
           "agent",
           "ai",
@@ -2522,7 +2810,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "273",
-        "stars": "7971",
+        "stars": "7977",
         "topics": [
           "agents",
           "claude-code",
@@ -2860,8 +3148,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3603",
-        "stars": "26732",
+        "forks": "3605",
+        "stars": "26766",
         "topics": [
           "agent",
           "agentic",
@@ -3266,8 +3554,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "765",
-        "stars": "3117",
+        "forks": "767",
+        "stars": "3125",
         "topics": [
           "ai",
           "ai-agents",
@@ -3924,8 +4212,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "727",
-        "stars": "10455",
+        "forks": "726",
+        "stars": "10471",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -4389,7 +4677,7 @@
       "createdAt": "2026-09-08T11:10:49.174Z",
       "metaData": {
         "forks": "901",
-        "stars": "6938",
+        "stars": "6946",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -5046,8 +5334,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1688",
-        "stars": "23450",
+        "forks": "1689",
+        "stars": "23463",
         "topics": [
           "antigravity",
           "claude",
@@ -5120,8 +5408,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13636",
-        "stars": "185256",
+        "forks": "13635",
+        "stars": "185293",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -5181,8 +5469,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4635",
-        "stars": "50843",
+        "forks": "4664",
+        "stars": "51233",
         "topics": [
           "ai",
           "animation",
@@ -5819,7 +6107,7 @@
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
         "forks": "719",
-        "stars": "19721",
+        "stars": "19731",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -6135,8 +6423,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2618",
-        "stars": "40959",
+        "forks": "2620",
+        "stars": "40990",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -6591,8 +6879,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25784",
-        "stars": "288283",
+        "forks": "25785",
+        "stars": "288333",
         "topics": [
           "ai",
           "brainstorming",
@@ -7198,8 +7486,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "4022",
-        "stars": "49737",
+        "forks": "4025",
+        "stars": "49771",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -7634,7 +7922,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "3183",
-        "stars": "33062",
+        "stars": "33077",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -8291,7 +8579,7 @@
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
         "forks": "3874",
-        "stars": "32641",
+        "stars": "32675",
         "topics": [
           "ai",
           "audiobook",
@@ -8539,8 +8827,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8011",
-        "stars": "61542",
+        "forks": "8014",
+        "stars": "61560",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -9299,8 +9587,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5924",
-        "stars": "37704",
+        "forks": "5928",
+        "stars": "37730",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -9352,8 +9640,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4763",
-        "stars": "41797",
+        "forks": "4764",
+        "stars": "41822",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -9536,8 +9824,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10166",
-        "stars": "96109",
+        "forks": "10167",
+        "stars": "96145",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -9783,8 +10071,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2334",
-        "stars": "18477",
+        "forks": "2462",
+        "stars": "19142",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -10301,8 +10589,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "7512",
-        "stars": "37347",
+        "forks": "7532",
+        "stars": "37416",
         "topics": [
           "3d-globe",
           "cesium",
@@ -11374,8 +11662,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4430",
-        "stars": "66295",
+        "forks": "4433",
+        "stars": "66393",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -11447,8 +11735,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:15:48.702Z",
       "metaData": {
-        "forks": "157",
-        "stars": "3478",
+        "forks": "197",
+        "stars": "4638",
         "topics": [
           "browser-history",
           "go",
@@ -11805,8 +12093,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3691",
-        "stars": "27027",
+        "forks": "3695",
+        "stars": "27053",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -12909,7 +13197,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "308",
-        "stars": "4206",
+        "stars": "4211",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -13014,8 +13302,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2778",
-        "stars": "47694",
+        "forks": "2779",
+        "stars": "47763",
         "topics": [
           "adhd",
           "claude-",
@@ -14047,7 +14335,7 @@
       "createdAt": "2026-08-23T15:29:54.185Z",
       "metaData": {
         "forks": "515",
-        "stars": "5561",
+        "stars": "5566",
         "topics": [
           "agent-runtime",
           "ai",
@@ -14537,8 +14825,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39136",
-        "stars": "261474",
+        "forks": "39138",
+        "stars": "261523",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -14598,8 +14886,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3150",
-        "stars": "32594",
+        "forks": "3152",
+        "stars": "32620",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -14662,7 +14950,7 @@
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
         "forks": "697",
-        "stars": "21486",
+        "stars": "21489",
         "topics": [
           "dpi",
           "gpui",
@@ -14811,8 +15099,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "733",
-        "stars": "8064",
+        "forks": "734",
+        "stars": "8071",
         "topics": [],
         "license": "",
         "homepage": "",

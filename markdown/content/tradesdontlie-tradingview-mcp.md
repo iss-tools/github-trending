@@ -1,0 +1,132 @@
+# tradesdontlie/tradingview-mcp
+
+[GitHub URL](https://github.com/tradesdontlie/tradingview-mcp)
+
+
+## TradingView MCP Bridge 评测：AI 驱动的图表与策略开发助手
+
+> 让 AI 读写你的 TradingView 图表，并自动编写调试 Pine Script 策略。
+
+- **Tags**: TradingView, Pine Script, MCP, AI 编程, 量化交易
+- **Category**: AI 工具, 交易辅助, 开发者工具
+
+## Details
+
+# TradingView MCP Bridge（tradesdontlie/tradingview-mcp）深度评测
+## 一句话总结
+它是一个把 TradingView 桌面端“接上”大模型（尤其是 Claude Code）的本地 MCP（Model Context Protocol）服务器，用 Chrome DevTools Protocol（CDP）做桥接，让 AI 能读/控你的图表、写/改 Pine Script、设置回放与告警，更适合作为个人工作流自动化与研究的“隐形助手”，而非线上数据抓取或自动交易工具。
+## 背景与痛点
+- 问题一：懂交易但不想每次都手点 TradingView 图表和指标参数的人，希望用自然语言让 AI“帮我看看现在的 RSI、MACD 和关键价位”。
+- 问题二：写 Pine Script 反复改/编译/查错很费时，想把“写—测—改”的循环自动化。
+- 问题三：TradingView 本身官方并不提供面向第三方的桌面控制 API，社区里的自动化方案大多依赖 Web 端反向工程/抓包，容易被风控和版本更新打断。
+- 机会窗口：MCP 生态快速成长，让 AI 客户端（如 Claude Code）通过结构化工具协议调用本地/远程服务成为现实。本项目正是借势 MCP + CDP，为本地桌面应用“赋能 LLM 之手”。
+## 核心亮点与功能剖析
+- 本地优先的架构：Claude Code ↔ MCP Server（stdio）↔ CDP（本地 9222 端口）↔ TradingView Desktop（Electron）。所有数据处理发生在本地，不连接 TradingView 官方服务器，数据不上传外部。
+- 78 个 MCP 工具 / CLI 双模：每一类 MCP 工具都有对应的 `tv` 命令可用，输出 JSON，适合配合 `jq` 做脚本流水线。工具覆盖：图表状态、报价与 K 线、Pine 绘图（lines/labels/tables/boxes）、指标与输入、告警、回放、截图、多窗格/多标签页布局、UI 自动化（点击/滚动/键盘/eval）、Discovery 与健康检查等。
+- Pine Script 开发闭环：提供“写入代码—智能编译—读错误—读控制台—保存/新建/打开/列出脚本”的完整链路，并且支持离线静态分析与远端编译检查。
+- 读“画”在图表上的结构化信息：能够读取来自 Pine 指标的 line.new / label.new / table.new / box.new 的输出，并给出当前指标值、价位标签与区域（box）等信息，做结构化查询和过滤（study_filter）。
+- 回放（Replay）练习：支持从某天起进入回放、单步/自动推进、模拟买卖、查看仓位与盈亏状态、停止回到实时，对策略训练非常有用。
+- 上下文优化（针对 LLM 友好）：默认输出精简（如 summary 模式仅返回少量 K 线与统计），Pine lines/labels/tables/boxes 做去重/上限/剪裁，避免把整个 UI 状态塞进 LLM 上下文。可通过 `verbose: true` 获取原始数据。典型“分析我的图表”工作流总上下文约 5–10KB。
+- 跨平台支持：提供 macOS / Windows / Linux 三套启动脚本，自动检测系统中的 TradingView Desktop 安装路径并带上 CDP 标志启动；也支持手动指定路径。核心依赖仅 `@modelcontextprotocol/sdk` 与 `chrome-remote-interface`。
+- 风险与合规声明清晰：明确不绕过订阅、不改文件、不拦截流量、不执行真实交易，只是本地图表读写与控制；并提示使用要符合 TradingView ToU、数据提供商许可与本地法域。强调这是“研究性质、个人学习用途”。
+- 研究导向：README 说明了开放研究问题，涵盖 LLM 与专业金融 UI 的协作、延迟/上下文/可靠性约束、模糊 UI 状态的解释与失效模式，指向 RESEARCH.md 做进一步阅读。
+## 技术栈与架构解析
+- 语言/运行时：Node.js 18+（JavaScript/TypeScript 风格）。
+- 协议与传输：
+  - MCP（Model Context Protocol）：基于 stdio 的服务器端实现，工具声明在服务器侧，客户端（Claude Code）按 MCP 规范调用。
+  - CDP（Chrome DevTools Protocol）：与本地 TradingView Desktop（Electron）通信的标准调试接口，端口默认 9222。
+- 架构示意：Claude Code ←→ MCP Server（stdio）←→ CDP（localhost:9222）←→ TradingView Desktop（Electron）。
+- 关键依赖：
+  - `@modelcontextprotocol/sdk`：MCP 服务器开发支持。
+  - `chrome-remote-interface`：与 CDP 服务交互。
+  - 无额外重量级依赖，整体轻量、易安装（npm install 即可）。
+- 组织结构（推断）：
+  - `src/server.js`：MCP 服务器入口，工具注册与 CDP 连接管理。
+  - `src/cli/index.js`：CLI 命令实现，复用 MCP 工具逻辑，统一输出 JSON。
+  - `scripts/launch_tv_debug_*.sh/.bat`：跨平台启动脚本。
+  - `CLAUDE.md`：工具决策树与提示词适配，用于指导 Claude 使用工具。
+  - `RESEARCH.md`：研究问题与背景（未在当前视图展开，README 有提及）。
+## Demo / 代码示例
+- 快速安装与连接（命令行）：
+  - 克隆与安装：
+    - `git clone https://github.com/tradesdontlie/tradingview-mcp.git`
+    - `cd tradingview-mcp`
+    - `npm install`
+  - 启动 TradingView 并开启 CDP（macOS 示例）：
+    - `./scripts/launch_tv_debug_mac.sh`
+  - Claude Code MCP 配置（`~/.claude/.mcp.json`）：
+    ```json
+    {
+      "mcpServers": {
+        "tradingview": {
+          "command": "node",
+          "args": ["/path/to/tradingview-mcp/src/server.js"]
+        }
+      }
+    }
+    ```
+    将 `/path/to/tradingview-mcp` 替换为实际路径。
+  - 验证连接：在 Claude Code 中说“Use tv_health_check to verify TradingView is connected”。
+- CLI 快速用例：
+  - `tv status`：检查连接状态。
+  - `tv quote`：当前价格。
+  - `tv symbol AAPL`：切换标的。
+  - `tv ohlcv --summary`：获取价格摘要统计。
+  - `tv screenshot -r chart`：截取图表区。
+  - `tv pine compile`：编译当前 Pine Script。
+  - `tv pane layout 2x2`：设置 2x2 多窗格布局。
+  - `tv pane symbol 1 ES1!`：指定某窗格为标的产品。
+  - `tv stream quote | jq '.close'`：在命令行实时监控最新收盘价。
+- 自然语言→工具映射（示例）：
+  - “What’s on my chart?” → chart_get_state → data_get_study_values → quote_get。
+  - “Read the session table” → data_get_pine_tables（使用 study_filter）。
+  - “Switch to AAPL daily” → chart_set_symbol → chart_set_timeframe。
+  - “Write a Pine Script for ...” → pine_set_source → pine_smart_compile → pine_get_errors。
+## 上手门槛与部署体验
+- 先决条件门槛：
+  - 需要 TradingView Desktop 与有效订阅（获取实时数据）；免费版的功能与实时性可能受限。
+  - 需要 Node.js 18+。
+  - 需要 Claude Code（或支持 MCP 的客户端）来获得完整 AI 能力。
+  - 对命令行有基本认知（或按 README 的 Claude Code 自动安装指引操作）。
+- 部署体验：
+  - 安装路径清晰，且提供“让 Claude Code 自动完成”的提示，适合 AI 辅助完成。
+  - 启动脚本自动检测 TradingView 安装路径，减轻手动找路径的负担；若检测失败，README 也列出各平台常见路径用于手动指定。
+- 文档与引导：
+  - README 涵盖架构、原理、Quick Start、CLI 速查、Streaming、工具表、上下文优化、免责声明等，信息较完整。
+  - 指向 RESEARCH.md 拓展研究背景，但对故障排查与升级兼容的应对策略仍需依赖用户自行摸索或社区讨论。
+## 社区活跃度与生命力
+- 截至当前检索到的公开信息，README 显示工具清单、CLAUDE.md、测试等均处于可用状态，且提供了清晰的安装与使用流程，说明项目处于可用阶段。
+- README 提到 `npm test` 包含 29 个测试，覆盖 Pine Script 静态分析、服务端编译与 CLI 路由等，具备基础自动化测试保障质量。
+- 公共统计站点（如 OSSInsight）近期存在数据捕获问题，部分趋势指标暂不可靠，因此不建议仅依据三方统计网站判断活跃度，应以仓库主页面为准。建议在动手前查看仓库首页的 Issues、Pull Requests 与最新 Commit 时间以获得更准确判断。
+- 鉴于它通过 CDP 与 TradingView Desktop 的内部未公开 API 交互，版本兼容性是风险点之一。README 明确建议“如需稳定性，请固定 TradingView Desktop 版本”。
+## 目标人群与收益
+- 量化/策略开发者与 Pine Script 作者：能加速“写—测—改”的循环，让 AI 帮忙注入代码、解释错误、迭代指标逻辑。
+- 盘中研究与复盘用户：让 AI 帮你批量切换多标的/多周期、收集指标数值与标注，生成“快照报告”并截图归档，提升复盘效率。
+- 回放训练者：用 AI 控制回放进度、模拟交易、记录策略表现，构造个人“练习场”。
+- 金融/人机协作研究者：本项目正是为“LLM 与专业交易界面如何协作”的研究提供实验平台，对研究失效模式、自然语言与图表交互的约束等具有参考价值。
+- 受限人群：希望“一键自动交易”的用户、或寻求从 TradingView 抓取并大规模分发数据的用户，都不在其设计范围内。
+## 竞品/同类对比
+- 官方 TradingView Web/平台方案（Pine Editor、告警、Webhooks）：官方提供的自动化链条，适合云端触发与通知，但不具备“桌面端逆向读写与 UI 自动化”的能力。
+- Web 端抓包/第三方数据抓取项目：很多开源项目通过 HTTP API 或浏览器自动化抓取数据，通常存在 ToU 风险、反爬机制与更新维护成本；本项目明确不连接 TradingView 服务器，只操作本地桌面，把风险与合规责任交还用户。
+- 其他 MCP 类 TradingView 服务器：一些项目通过其他来源（如 Bright Data、Shyft 等）提供 TradingView 数据的 MCP 接口，通常偏向云端聚合与多数据源接入，更偏向“数据即服务（DaaS）”。tradingview-mcp 则专注于“本地桌面+AI 辅助工作流”的场景，定位不同。
+## 局限与不足
+- 依赖本地 TradingView Desktop 与订阅：没有账户与桌面就无法使用，无法作为独立数据源对外服务。
+- 版本兼容性风险：使用未公开的内部 Electron 调试接口，若 TradingView 更新内部结构，工具可能随时失效。需要“固定版本”作为稳定性兜底。
+- ToU 与数据合规风险：README 警告，对数据的程序化消费可能与 ToU 冲突；需用户自行评估，不得用于再分发/转售/自动化下单等用途。违规可能带来账号/法律风险。
+- 概念误解风险：容易被误解为“自动交易机器人”或“数据抓取外挂”，但实际上它是“个人工作流/研究辅助”，没有执行真实交易与对外分发的数据通道。误用会带来合规与声誉问题。
+- 配置与排查曲线：对于完全没有 CLI/Node/MCP 经验的用户，首次设置 CDP 端口、MCP 配置、调试连接仍有一定学习成本；建议先在受限环境/测试账户演练。
+- 社区生态尚处于早期：作为“研究型”项目，周边插件、集成案例和二次开发资料可能有限，复杂场景需自行扩展或等待社区沉淀。
+## 结语与行动建议
+- **综合评价**：TradingView MCP Bridge 把 LLM 的“通用推理能力”与 TradingView 的“专业图表与数据能力”通过 MCP+CDP 在本地安全地桥接起来，设计上克制、透明、合规意识强。适合有 TradingView 订阅、愿意用 AI 提升个人研究/开发效率的用户，以及探索“AI 与专业交易界面协作”的研究者。
+- **给新手的建议**：
+  - 从 CLI 入手，先跑通 `tv status / quote / symbol / ohlcv --summary / screenshot` 等基础命令，感受数据回流与 JSON 输出。
+  - 在隔离/测试环境练习，确保 CDP 端口不暴露在公网，避免误用与安全风险。
+  - 不用于对外数据分发、自动化下单或违反 ToU 的场景，严格限于个人学习与研究用途。
+- **给进阶用户的建议**：
+  - 结合 Claude Code 的自然语言决策树，构建自己的“每日复盘/策略回测/告警整理”脚本化流水线。
+  - 固定 TradingView Desktop 版本，并建立版本升级前的灰度测试流程，减少因内部接口变更导致的意外中断。
+  - 如有企业/团队使用场景，优先做法是内部法务/合规审查，评估 ToU 与数据许可后再落地。
+- **给研究者的建议**：
+  - 参考 README 与 RESEARCH.md 的开放问题，把项目作为“人机协作金融决策”的可控实验平台。
+  - 记录不同 LLM 工具调用组合的延迟、上下文占用与失败率，为 MCP 金融场景提供实证数据。
+> 重要提醒：本评测基于截至 2026-09-18 的公开 README 与相关资料，软件/合规情况可能变化，请在实际使用前以仓库最新页面与官方条款为准，并结合自身需求与法务意见审慎决策。

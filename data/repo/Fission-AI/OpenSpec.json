@@ -1,0 +1,64 @@
+{
+  "id": "a50ea52f-4e8d-41fd-94df-8feda13ad6df",
+  "url": "https://github.com/Fission-AI/OpenSpec",
+  "domain": "github.com",
+  "repo": "Fission-AI/OpenSpec",
+  "description": "OpenSpec 是一个轻量级开源框架，通过 Markdown 和 slash 命令，将需求规范、设计方案和任务清单统一管理在代码仓库中。支持 Cursor、Copilot、Amazon Q 等 30+ AI 工具协作，实现'先对齐规范，再 AI 实施代码'的工作流，减少返工，提升团队协作效率。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-18T11:08:46.288Z",
+  "metaData": {
+    "forks": "4736",
+    "stars": "69050",
+    "topics": [
+      "ai",
+      "context-engineering",
+      "engineering",
+      "planning",
+      "prd",
+      "sdd",
+      "sdlc",
+      "spec",
+      "spec-driven-development",
+      "specification"
+    ],
+    "license": "MIT license",
+    "homepage": "https://openspec.dev/",
+    "description": "Spec-driven development (SDD) for AI coding assistants. - Fission-AI/OpenSpec"
+  },
+  "summaryData": {
+    "tags": [
+      "OpenSpec",
+      "Markdown",
+      "AI协作",
+      "规范驱动",
+      "开源"
+    ],
+    "cover": "",
+    "title": "OpenSpec：AI 时代的 Markdown 规范驱动开发框架",
+    "ability": [
+      "Markdown 规范管理",
+      "30+ AI 工具集成",
+      "变更驱动工作流",
+      "跨仓库规范同步",
+      "零学习成本"
+    ],
+    "summary": "用纯 Markdown 把需求、设计、任务管起来，让 AI 编码助手先对齐再写代码",
+    "category": [
+      "AI 编程",
+      "开发工具"
+    ],
+    "suitable": [
+      "AI 编码助手使用者",
+      "个人开发者",
+      "小型团队",
+      "多仓库产品团队",
+      "规范先行实践者"
+    ],
+    "description": "OpenSpec 是一个轻量级开源框架，通过 Markdown 和 slash 命令，将需求规范、设计方案和任务清单统一管理在代码仓库中。支持 Cursor、Copilot、Amazon Q 等 30+ AI 工具协作，实现'先对齐规范，再 AI 实施代码'的工作流，减少返工，提升团队协作效率。"
+  },
+  "contentDetail": "# Fission-AI/OpenSpec 深度评测\n## 一句话总结\nOpenSpec 是一个用纯 Markdown 把“需求—设计—任务”管起来的开源规范框架，通过一套 slash 命令让人类与 AI 编码助手对齐“做什么”再动手写代码；尤其适合用 Cursor、Copilot、Amazon Q、Codex 等 AI 工具的开发者或团队，把“聊天式编程”升级为“规范驱动（SDD）协作”。\n---\n## 背景与痛点：它为什么出现？\n今天 AI 编码助手很强，但大家都在经历三个典型痛苦：\n- 需求只在聊天记录里：一拉长对话，上下文就混乱，改动一多容易跑偏。\n- “先写再看”的惯性强：连想清楚还没想清楚就让 AI 帮着填代码，结果不断重构。\n- 多人/多仓库的需求“失联”：需求散在 Jira、Notion、Wiki、口头会议，代码侧看不到唯一真实源。\nOpenSpec 的思路是：在代码仓库里加一个极轻量的规范层（openspec/），用你熟悉的 Markdown 把需求与场景、设计、任务清单结构化起来，再由 AI 协作生成和维护这些文件；人类在写代码前先“审阅规范”，AI 才去实施。这样既保留了快速迭代，又消除了“模糊—发散—返工”的循环。\n更关键的是，它不搞重型流程与专有语言，奉行“流动、迭代、简单、既适合老项目也适合新项目、可从个人扩展到企业”的哲学，避免把敏捷做回瀑布。\n---\n## 核心亮点与功能剖析\n### 1) 规范就是 Markdown（零学习成本）\n- 不用 YAML/JSON 等配置怪，也不用另学 DSL；需求与场景写成带 “SHALL/WHEN/THEN” 这样的 Markdown 就行：\n  - 例子：\n    - Requirement: Theme selection\n      - “The app SHALL let users switch between light and dark themes, defaulting to the system preference.”\n    - Scenario: User toggles dark mode\n      - WHEN: 用户点击主题切换\n      - THEN: 应用切换到暗色并持久化\n- 对小白：就像写“需求文档”的要点版；对机器：解析容易，模型也能稳定按结构产出。\n### 2) 以“变更（Change）”为核心的目录结构\nOpenSpec 会为每个特性建一个变更目录，典型结构：\n- openspec/changes/<change-name>/\n  - proposal.md — 做什么、为什么做\n  - specs/ — 需求与场景（Markdown）\n  - design.md — 技术方案/路线图\n  - tasks.md — 实施清单\n好处：\n- 变更原子化，每个特性一套“文件夹”，便于回溯/审计。\n- 人类可以只审 proposal 与 specs，再让 AI 按 tasks 逐步实施，中途还能改任何文件而不锁死流程。\n### 3) 核心工作流：Explore → Propose → Apply → Archive\nREADME 的示例非常直观（我们用“暗色模式”作为例子）：\n- /opsx:explore — “不确定怎么干，先问问”：AI 读代码，给建议，无副作用\n- /opsx:propose <idea> — 创建上述变更目录，生成规范与任务\n- /opsx:apply — 让 AI 按 tasks 逐项实施代码（通常逐文件或逐子任务），并打勾完成\n- /opsx:archive — 归档该变更到 openspec/changes/archive/<date>-<name>/，避免主干文件夹堆积，同时把变更吸收到主干规范里\n工作流本质：\n- 把“聊天记录 + 一次性生成”变成“规范的草稿与迭代 + 机器执行 + 版本化归档”。\n### 4) Slash 命令与 30+ AI 工具集成\nOpenSpec 提供统一的 slash 命令规范，主流 IDE/助手会适配自己的语法，例如：\n- /opsx:propose（规范写法）\n- /opsx-propose（Cursor、GitHub Copilot）\n- @opsx-propose（Amazon Q）\n- $openspec-propose（Codex）\n你的 AI 只要识别到这些指令，就会读取/更新 openspec/ 里的 Markdown 规范文件并执行相应动作，相当于给 AI 装上“规范驱动的技能”。官方标称支持 30+ AI 工具，重点在于“你用啥工具都行，工作流不变”。\n### 5) Stores：跨仓库的“规范中枢”（Beta）\n团队级痛点：一个特性会横跨服务端、前端、共享库，需求写在任何一个仓库都不对。OpenSpec 的 Stores 是一个独立仓库，统一存放 openspec/ 形态的规范与变更，通过 git 共享给其他仓库：\n- 跨仓库特性：一个变更计划，分发到多个代码仓库执行。\n- 共享需求：平台团队拥有规范的“写权限”，各产品团队只读引用，AI 能直接在同一位置读取。\n- 先规划、后代码：规范在 Store 中先演进，代码库按节奏“追上”。\n这是团队/企业场景中最硬核的特性之一，虽仍处 Beta，但解决的是很多“多仓库对齐”的老大难。\n### 6) 开箱即用的工作流与多 Profile\n- 默认 Profile：/opsx:explore 与 /opsx:propose 覆盖大部分“想点子—落地”场景。\n- 扩展 Profile：通过 openspec config profile 切换后启用更多命令：\n  - /opsx:new、/opsx:continue、/opsx:ff（快进）、/opsx:verify、/opsx:bulk-archive、/opsx:onboard 等\n- 这种设计允许渐进采用：先小试核心两三命令，需要更复杂工作流再升级 Profile。\n### 7) 文档体系与心智模型\n官方给出了完整的文档地图，包括：快速入门、工作流、Commands、CLI、Stores、多语言、定制化、社区展示、FAQ、故障排查、术语表等。\n- 核心思想是一页“Core Concepts at a Glance”先搞定心智模型，再通过 Recipes 与 Workflows 直接复用套路，这对新用户很友好。\n---\n## 上手门槛与部署体验（开源项目视角）\n### 环境与安装\n- 需要 Node.js 20.19.0+。\n- 一行全局安装：\n  - npm install -g @fission-ai/openspec@latest\n- 在项目里初始化：\n  - openspec init\n实测体验（按 README 流程）：\n- init 会在项目根创建 openspec/ 结构，并打印“如何在你的 AI 工具里调用 /opsx:propose”的提示，兼容你选的工具（Cursor/Copilot/Amazon Q/Codex）。\n### 更新与维护\n- 升级 CLI：\n  - npm install -g @fission-ai/openspec@latest\n- 在各项目中“刷新 AI 指令”：为仓库重新生成最新的 AI 提示词，保证新命令/变更逻辑生效（命令为 openspec update，具体见 CLI 文档页）。\n### Demo / 代码示例（给你一个最简闭环）\n以下是在一个 Web 前端项目里用 OpenSpec 走通“新功能—规范—实施—归档”的最小闭环示例：\n1) 安装与初始化\n```bash\nnpm install -g @fission-ai/openspec@latest\ncd my-webapp\nopenspec init\n```\n2) 在 IDE 的 AI 聊天中输入：\n- /opsx:explore\n  - 你：“我想给整个应用加上暗色模式，但不确定怎么弄。”\n  - AI 会阅读样式配置、给出推荐方案，并问你是否要“scope it”。\n3) 创建规范与任务：\n- /opsx:propose add-dark-mode\n  - AI 会生成：\n    - openspec/changes/add-dark-mode/proposal.md\n    - openspec/changes/add-dark-mode/specs/\n    - openspec/changes/add-dark-mode/design.md\n    - openspec/changes/add-dark-mode/tasks.md\n  - specs/ 内部将包含类似这样的 Markdown（示例见 README）：\n    - Requirement: Theme selection + Scenario: User toggles dark mode（WHEN/THEN 结构）。\n4) 人类审阅后实施：\n- /opsx:apply\n  - AI 按 tasks.md 逐项执行并打勾，例如：\n    - “1.1 Add theme context provider ✓”\n    - “1.2 Create toggle component ✓”\n    - “2.1 Add CSS variables ✓”\n    - “2.2 Wire up localStorage ✓”\n5) 归档变更：\n- /opsx:archive\n  - AI 将该变更归档到 openspec/changes/archive/2025-01-23-add-dark-mode/，并更新主干规范，为下次变更腾空 workspace。\n---\n## 目标人群与收益\n### 最适合谁？\n- 用 AI 编码助手写代码的个人开发者：希望让 AI 更“可控”、避免因为需求模糊反复返工。\n- 小型团队（3–20 人）：已经在用 Cursor/Copilot/Amazon Q/Codex 等，需要“团队可见”的规范层。\n- 多仓库/多团队产品：需要跨仓库对齐需求，且希望规范在代码库侧可见。\n- 做“规范先行”（SDD）但怕麻烦的人：不想上重型工具与复杂流程，想“先轻量做起来”。\n### 能带来什么实际收益？\n- 减少返工：规范先审、再写代码，把分歧提前暴露，节省重构时间。\n- 提高可预测性：AI 依据 tasks.md 逐项完成，执行过程可审阅、可打断、可重试。\n- 提升团队对齐：规范与变更都在 git 里，PR/Code Review 可以同时覆盖“规范”与“代码”，减少“口头需求”导致的不一致。\n- 降低切换成本：若你未来更换 AI 工具，openspec/ 与 slash 命令依然可用；知识沉淀在 Markdown 和 git，而非某家产品的聊天记录里。\n---\n## 竞品/同类对比\n- vs GitHub Spec Kit\n  - OpenSpec 对比结论是：更轻量、迭代更自由；Spec Kit 更重型、门禁严格、需要 Python 与大量 Markdown。\n- vs AWS Kiro\n  - OpenSpec 可与多种 AI 工具协作；而 Kiro 被描述为“强但锁定在他们的 IDE 里，且仅限 Claude 模型”。\n- vs “什么都不做”（纯聊天式 AI 编码）\n  - 没有规范层时，需求散落在聊天记录，极易遗漏和跑偏；OpenSpec 用最小成本建立“先对齐再实施”的机制，提升可控性。\n- vs 传统需求/项目管理工具（Jira/Notion/Wiki）\n  - 差异在于“与代码同在”：openspec/ 和变更目录在同一个 git 仓库里，AI 与开发者在同一位置读写。不必再在多个系统之间切换和同步。\n---\n## 技术栈与架构解析（开源项目视角）\n### 技术栈\n- CLI：Node.js（需 20.19.0+），通过 npm 全局安装 @fission-ai/openspec。\n- 仓库结构：\n  - openspec/（由 init 创建）\n    - changes/（在制品变更）\n    - changes/archive/（已归档变更）\n    - specs/（主干规范）\n  - CLI 与 AI 通过读取/写入这些 Markdown 文件协作。\n### 架构理念\n- 规范即文件（Markdown），变更即目录（proposal/specs/design/tasks），归档即移动与合并。\n- Slash 命令充当“触发器”：AI 根据命令在 openspec/ 中读取/写入、执行任务。\n- CLI 负责“初始化—配置更新—归档—生成 AI 指令”等工程动作，不直接生成代码。\n### DX（开发者体验）\n- API：开发者基本不直接写“API”，而是通过 slash 命令与 CLI 工作流交互。\n- 报错与反馈：官方提供了 Troubleshooting 文档与 FAQ；结合 Issues 活跃度看（近期有大量 Issue 提交与讨论），社区参与度高。\n- 集成成本：侵入性低，仅在仓库里增加 openspec/ 目录与少量 AI 指令配置。\n---\n## 社区活跃度与生命力\n### Issue/PR 活跃度（示例）\n- 近期 Issues 中有功能请求、Bug、反馈与提案，时间跨度在 2026 年 8 月下旬，且状态多为 Open，说明社区在持续使用与反馈问题：\n  - 需求质量门（EARS 合规性、歧义与一致性检查）提案\n  - Explore skill 行为异常（agent 在未明确请求时修改工作区文件）\n  - Stores + git worktrees 的反馈与改进建议\n  - 归档时代码块空行规范化策略\n  - 场景改名导致的归档阻塞 Bug 等\n### 发布与更新节奏\n- README 明确指出升级路径与刷新 AI 指令的方式，表明持续有版本迭代与功能演进。\n### 社区生态\n- 提到“社区 schemas”（第三方 schema 包），类似扩展生态，为不同工具提供工作流集成。\n- 文档中有“Community Showcase”，鼓励分享与展示项目与资源。\n### 许可证\n- MIT：可免费商用、修改与分发，对企业友好。\n---\n## 局限与不足\n- Stores 仍为 Beta：官方明确标注 Beta，文档和边界可能仍在变动，生产环境上需谨慎评估与试点。\n- 模型推荐与成本：官方建议高推理能力的模型（如 Codex 5.5、Opus 4.7），意味着若依赖强模型，调用成本会上升；且不同模型对 slash 命令的理解质量会参差，需要一定的调参/提示词管理。\n- 上下文卫生要求：对上下文长度与质量有要求，“需要在实施前清空历史并保持良好上下文卫生”，这对工作流是额外约束。\n- 遥测：默认开启匿名使用统计（仅命令名与版本），CI 中自动关闭；隐私敏感的环境需要手动设置环境变量或配置项来完全关闭。\n- 仍在快速演进：Issues 里可见多个 Bug 与改进提案，说明工具链与行为仍在打磨，短期内可能遇到兼容性与小问题，需要紧跟版本与文档。\n---\n## 结语与行动建议\n### 终极评判\nOpenSpec 做到了三件事：\n- 把“规范”从仪式感重、难落地的概念，变成你每天都在写的 Markdown 与一个 openspec/ 文件夹；\n- 把“AI 助手”从“聊天填代码”的工具，升级为“按你审核过的规范执行任务的协作伙伴”；\n- 把“团队需求管理”从多系统混乱，拉回“在 Git 中可见、可追溯、可 PR 评审”的单一事实来源。\n如果你正在用 AI 编码助手且感到“不可控、难对齐、难回溯”，OpenSpec 是一个低风险、易迁移的“规范驱动”切入点；对于团队或多仓库项目，Stores 的能力值得在 Beta 阶段就开始小范围试点。\n### 可执行的下一步\n- 小白/个人开发者：\n  - 在一个非生产项目上按 README 的 Quick Start 走一遍：安装 → init → /opsx:explore → /opsx:propose → /opsx:apply → /opsx:archive。\n  - 用 README 的“暗色模式”示例当模板，自己做一遍新功能。\n- 小型团队：\n  - 选一个正要上线的特性，用 OpenSpec 走规范先行流程，对比以前的“聊天式 AI 编码”在返工率、对齐成本上的差异。\n  - 在 PR Review 中一并检查“规范文件”与“代码改动”，把规范纳入代码审查流程。\n- 多仓库/平台团队：\n  - 先评估 Stores 的 Beta 文档，在少数仓库间试点“跨仓库特性”的统一规范仓库。\n  - 定义“平台团队维护规范—产品团队只读引用—AI 读取同一处”的协作流程。\n最后，OpenSpec 的价值不在于替代你现有的需求管理工具，而在于：在代码侧为“人与 AI 对齐需求”提供一个极低成本的事实来源。它让你和 AI 都在“同一页 Markdown”上工作，而不是在永远变长的聊天记录里追逐消失的上下文。",
+  "type": "project",
+  "dateAdded": "20260918"
+}
