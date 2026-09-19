@@ -1,0 +1,54 @@
+{
+  "id": "ea46ed38-2177-431d-8ec3-f9341aa8974d",
+  "url": "https://github.com/yynxxxxx/Codex-X",
+  "domain": "github.com",
+  "repo": "yynxxxxx/Codex-X",
+  "description": "Codex-X 是一款跨平台桌面应用，将 OpenAI Codex 的提示词模板、第三方 API、会话历史、Skills/MCP 以及配置文件统一纳入可视化 UI，支持一键切换、同步、备份与批量管理，大幅提升效率并降低配置出错风险。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-19T11:39:41.795Z",
+  "metaData": {
+    "forks": "440",
+    "stars": "3314",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": "https://codex-x.site",
+    "description": "OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML 配置可视化的跨平台工具。 - yynxxxxx/Codex-X"
+  },
+  "summaryData": {
+    "tags": [
+      "OpenAI Codex",
+      "提示词管理",
+      "Tauri",
+      "本地工具",
+      "效率"
+    ],
+    "cover": "",
+    "title": "Codex-X 深度评测：OpenAI Codex 可视化管理神器",
+    "ability": [
+      "提示词可视化注入与管理",
+      "第三方 Provider/API 一站式切换",
+      "会话同步与批量清理",
+      "Skills/MCP 可视化管理",
+      "TOML 与 Auth 统一配置编辑"
+    ],
+    "summary": "Codex-X 让你像管理插件一样，一键切换 Codex 的提示词、第三方 API 与会话，效率翻倍。",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "生产力"
+    ],
+    "suitable": [
+      "OpenAI Codex 桌面端/CLI 重度用户",
+      "安全研究与逆向工程师",
+      "多环境/多账号使用者",
+      "开发者与内容创作者",
+      "需要维护多人统一配置的团队"
+    ],
+    "description": "Codex-X 是一款跨平台桌面应用，将 OpenAI Codex 的提示词模板、第三方 API、会话历史、Skills/MCP 以及配置文件统一纳入可视化 UI，支持一键切换、同步、备份与批量管理，大幅提升效率并降低配置出错风险。"
+  },
+  "contentDetail": "# Codex-X 深度评测\n## 一句话总结\nCodex-X 是一款面向 OpenAI Codex 桌面端/CLI 的“可视化增强管理器”，它把提示词模板、第三方 API 切换、会话同步、Skills/MCP 管理和 TOML/Auth 配置编辑，全部收进了一个跨平台桌面应用，让你不再反复手改配置文件，像管插件一样一键切换与维护工作流。\n---\n## 背景与痛点\n- 配置散落各处。OpenAI Codex 的本地配置依赖 `~/.codex/config.toml` 和 `auth.json`，第三方 Provider、会话记录与 Skills/MCP 配置也可能分布在不同目录和文件。对多环境、多模型、多提示词模板的用户而言，来回修改和备份容易出错且效率低。  \n- 提示词模板难以版本化与切换。所谓“提示词注入（破甲）”本质是修改模型指令文件，但缺乏统一界面时，每次都要手动编辑文件并改 `config.toml` 路径，容易造成残留或冲突。  \n- 会话历史同步麻烦。当更换 Provider 或模型后，旧会话的元数据可能不一致，导致原生 Codex 难以打开/续聊；也没有直观方式按项目路径批量整理或删除会话。  \n- Skills/MCP 需要手工维护。安装、启用、禁用、检查更新分散在不同目录和文件里，缺少一站式可视化入口。  \nCodex-X 的出现正是为了把这些“高频且分散”的配置与动作，集中到一个可读可点的 UI 中，形成可视化管理中台。\n---\n## 技术栈与架构解析\n### 技术栈\n- 桌面框架：Tauri 2（利用 Web 前端 + Rust 原生后端的轻量跨端方案）。  \n- 前端：React 18 / TypeScript / Vite。  \n- 后端与本地能力：Rust（负责文件读写、TOML/JSON 编辑、SQLite 数据库操作、网络请求等）。  \n- 本地数据：SQLite / rusqlite（用于维护 Codex-X 自身的数据和索引）。  \n- 配置编辑：toml_edit、serde_json；网络：ureq 与 reqwest（支持 SOCKS、系统代理与 TLS）。  \n- 打包与分发：GitHub Actions + Releases，自动构建多平台安装包。  \n### 架构设计要点（通俗解读）\n可以把 Codex-X 想象成“控制面板（前端）+ 系统守护进程（Rust 后端）”的组合：\n- 前端负责：\n  - 展示并编辑 Provider、提示词模板、会话列表、Skills/MCP 等；\n  - 提供分类、搜索、开关与导入/导出等交互；\n  - 借助 Tauri 的 IPC（进程间通信）与 Rust 后端交换指令与数据。\n- Rust 后端负责：\n  - 对 Codex 配置目录（`~/.codex/config.toml`、`auth.json`）的读写与解析；\n  - 对 SQLite 会话库与 `rollout-*.jsonl` 的扫描、比对与同步；\n  - 与第三方 Provider 的连通性检测、模型列表获取；\n  - Skills/MCP 安装包（ZIP）解压与配置注入；\n  - 应用内更新、自动重启 Codex 进程等系统操作。\n- 配置路径与环境变量支持：\n  - 默认读取 `~/.codex/config.toml` 与 `auth.json`。  \n  - 支持通过 `CODEX_HOME`、`CODEXX_HOME`、`CC_SWITCH_HOME` 等环境变量自定义路径，方便多环境或测试部署。  \n### 代码组织与 DX（开发者体验）\n- Monorepo 风格：根目录 `package.json` 负责工作区脚本，`apps/desktop` 负责桌面端前端，`src-tauri` 为 Rust 后端与配置。  \n- 开发与构建脚本清晰：`pnpm dev` / `pnpm build`、`desktop:dev` / `desktop:build`，降低新贡献者上手门槛。  \n- Rust 依赖声明精细，显式锁定 Tauri 与插件版本（如 `tauri-plugin-updater`、`tauri-plugin-process` 等），保证打包与升级的可控性。  \n- 缺少 Docker 一键部署：本项目定位为本地桌面工具，不涉及服务端部署，因此在仓库中未提供 Dockerfile。  \n---\n## 核心亮点与功能剖析\n### 1. 可视化提示词注入与管理（核心卖点）\n- 内置多套模板并支持在线同步：安装包自带 5 套模板，应用启动后会从仓库 `examples/` 同步额外的软件开发与写作辅助模板（如 code-review、debugging、maintainer、三类写作模板）。在线版本会缓存到本地，离线可用，且模板更新不影响自定义提示词。  \n- 分类与自定义：支持按“破甲/逆向、软件开发、写作辅助”等分类，也允许导入自己的 `.md` 并编辑标题/说明，像管理插件一样管理提示词库。  \n- 两种写入模式：\n  - 保留原提示词：仅在现有内容基础上追加/移除当前模板，适合已有一套固定规则的用户；\n  - 替换原提示词：把所选模板作为主指令入口，适合完整切换“人设/能力边界”的场景。  \n- 安全机制：每次启用/禁用前自动创建备份，减少误操作导致的配置损坏。  \n通俗比喻：提示词模板就像“快捷指令集”，Codex-X 则是一个可以随时热插拔这些指令集的“控制台开关面板”，再也不用手改配置文件来换“人设”。\n### 2. Provider / API 一站式切换\n- 可视化添加、编辑、删除第三方 Provider，支持设置 Base URL、API Key、模型、Wire API，并直接编辑完整 TOML。  \n- 连接检测与模型测试：一键测试连通性、获取可用模型列表，降低配置错误率。  \n- 从 cc-switch 数据库导入：已有的 cc-switch 配置可批量导入，重复项自动识别（同 URL + Key 不再重复），便于迁移。  \n- 供应商复制：可复制同一平台的多个模型或配置项，适合同一平台不同模型/账号的快速建立与切换；最新版本已支持复制并正确保留启用状态。  \n- 路由故障切换与预设：最新提交与版本已加入路由故障切换（failover）与供应商预设，提升可用性与容错体验。  \n### 3. 会话管理（同步、整理与清理）\n- 同步与检查：扫描本地 SQLite 与 `rollout-*.jsonl`，识别会话的 Provider/模型元数据是否与当前配置一致，一键同步修复，不修改聊天内容。  \n- 按项目路径分组与搜索：适合多项目长时间使用后对历史会话进行归纳与检索。  \n- 精确删除：支持单选/多选，也可按项目级批量删除；删除作用于 Codex 自身存储，为“永久删除”。  \n- 避免误删与归档：新版本修复了归档会话被错误标记为“待同步”的问题，确保归档会话不参与同步与误删。  \n### 4. Skills / MCP 可视化管理\n- 集中查看与启用/禁用 Skills 和 MCP Server，不再需要在多个目录中逐项查找。  \n- 支持从 ZIP 安装 Skill，检查更新状态，并支持 MCP 导入前的预览，降低配置错误风险。  \n- 添加自定义备注：最新版本已支持为 MCP 与 Skills 添加自定义备注，方便识别与团队协作。  \n### 5. TOML 与官方 Auth 统一管理\n- 实时展示当前 Codex 使用的 `config.toml`，并提供深色语法高亮与编辑。  \n- 读取/编辑 `auth.json`，区分 ChatGPT 登录态与第三方 API Key，官方配置与第三方配置可在同一界面统一管理，避免混淆。  \n- 重要写入前自动备份，防止关键配置丢失。  \n### 6. 跨平台与自动更新\n- 支持的发布物：\n  - macOS Apple Silicon / Intel `.dmg`；\n  - Windows `.msi` 与 portable `.zip`；\n  - Linux `.deb` / `.rpm` / `.AppImage`。  \n- 安装版支持应用内检测与安装更新，便携版保持手动更新方式，兼顾稳定与灵活。  \n---\n## Demo：如何快速上手与最小配置示例\n### 端用户上手步骤（下载安装即用）\n- 下载：从 Releases 页面下载对应平台安装包。  \n- 首次启动：确保已安装 OpenAI Codex（桌面端/CLI）并已存在 `~/.codex` 目录；Codex-X 会自动读取 `config.toml` 与 `auth.json`。  \n- Provider 切换：进入“供应商/API”页面，添加第三方中转，填写 Base URL、API Key、Model，点击“检测连接/获取模型”，确认无误后点击启用。  \n- 提示词模板：进入“指令提示词”页面，选择需要的模板，点击“启用”，注意选择写入模式（保留/替换），必要时随时切换。  \n- 会话同步：进入“会话管理”，按项目路径查看会话，点击“同步”即可让历史会话适配当前 Provider。  \n### 环境变量配置示例（自定义路径）\n```bash\nexport CODEX_HOME=/path/to/.codex          # Codex 本体配置目录\nexport CODEXX_HOME=/path/to/codex-x-data   # Codex-X 自身数据库与缓存目录\nexport CC_SWITCH_HOME=/path/to/.cc-switch  # 从 cc-switch 导入时的路径\n```\n### 开发者构建命令示例\n- 开发：`pnpm dev` 或 `pnpm desktop:dev`。  \n- 构建：`pnpm build` 或 `pnpm desktop:build`。  \n### 内置提示词模板一览（examples/）\n- 逆向/安全研究向：`gpt5.4-unrestricted.md`、`gpt5.5-unrestricted.md`、`海鸥3.0破甲.md`、`gpt5.5-jeli.md`、`gpt-5.6-sol-unrestricted.md`。  \n- 软件开发向：code-review、debugging、maintainer。  \n- 写作辅助向：clarity-editor、structured-draft、technical-docs。  \n---\n## 目标人群与收益\n- 重度 Codex 用户（桌面端/CLI 混合使用）：收益最明显。一个界面统一管理提示词、Provider、会话与 Skills/MCP，大幅减少“切窗口 + 改文件 + 找目录”的低效操作。  \n- 安全研究与逆向工程师：通过内置的“破甲”模板与逆向 Skills 导航，快速搭建用于授权测试与研究的工作流，提升效率并降低手工编辑指令的错漏率。  \n- 多环境/多账号使用者：利用 Provider 复制与预设，结合故障切换，可以在同一客户端内快速在不同账号/中转/模型之间切换，减少登录与配置时间。  \n- 开发者与内容创作者：软件开发与写作辅助模板可以一键切换模型“角色”，在不重启客户端的情况下快速调整输出风格与深度，提升创作与代码评审的流程体验。  \n- 团队与小团队：通过版本化提示词模板、统一配置管理与会话归档，降低成员之间的配置差异和沟通成本。  \n---\n## 竞品/同类对比（位置与竞争力）\n- 与 cc-switch 对比：\n  - Codex-X 不仅是 Provider 切换工具，还覆盖提示词注入、会话同步、Skills/MCP 与 TOML/Auth 管理，属于“控制台型”一站式工具；\n  - cc-switch 更偏向纯粹的供应商切换库/数据库，Codex-X 支持从 cc-switch 导入，两者可互补。  \n- 与手动编辑 TOML/Auth/提示词文件对比：\n  - 手动编辑灵活度高，但容易出错且无法版本化与可视化；\n  - Codex-X 提供可视化、备份与分类管理，显著降低误删和配置冲突风险。  \n- 与浏览器内“提示词管理脚本/扩展”对比：\n  - 浏览器方案一般只对 Web 生效，而 Codex-X 直接作用于 Codex 桌面端/CLI，对本地会话与 Provider 元数据均可管理，集成度更深。  \n整体而言，Codex-X 在“本地 Codex 全栈配置可视化”这一细分赛道，处于功能最全面、更新节奏较快的一档。\n---\n## 局限与不足\n- 依赖与使用前提：必须已安装 OpenAI Codex 并存在本地配置目录。不适用于仅使用 Web 端的用户。  \n- 安全与合规风险：\n  - 内置的“破甲/无限制”提示词模板属于高敏感用法，可能触发模型策略或服务条款警告；仓库明确声明“仅用于学习研究，需在合法授权范围使用”，用户需自行承担使用边界与后果。  \n  - auth.json 与 API Key 均属敏感信息，尽管工具支持本地可视化编辑，但使用者仍需注意主机安全与权限管控。  \n- 潜在 Bug 与体验问题（来自 Issues）：\n  - 会话同步曾存在将 Subagent 内部会话暴露为普通会话，导致 Codex 左侧栏出现大量隐藏子会话的问题（当前仍 Open）。  \n  - 有用户反馈 Codex 更新后第三方 API 不可用，需等待项目跟进适配，第三方生态的兼容性是长期维护点。  \n  - 社区提出了“Provider 故障自动切换”的需求；新版本已加入故障切换与路由能力，但体验仍需持续验证与打磨。  \n- 学习与上手成本：\n  - 对完全不理解 TOML、Provider、模型指令文件机制的小白用户，仍需一定的概念理解，尽管 UI 大幅简化了操作。  \n  - macOS 用户如使用未签名/未公证的安装包，需要手动移除 `com.apple.quarantine` 属性（`xattr -dr com.apple.quarantine /Applications/Codex-X.app`）才能避免“已损坏”提示。  \n- 非服务端工具：不支持 Docker 一键部署，也不面向远程/无头环境，定位为“本地桌面中台”。  \n---\n## 社区活跃度与生命力\n- Star/Fork 与版本迭代：截至 2026-09，Star 约 3.3k，Fork 约 440；版本迭代频繁（v0.3.x 系列密集发布），最近的 v0.3.15 至 v0.3.20 之间持续修复 Bug、增加“官方额度/使用统计、路由故障切换、供应商预设与复制”等功能。  \n- 提交与 CI：Commit 历史显示近几个月持续提交与版本发布，GitHub Actions 负责自动化构建与发布多平台二进制。  \n- Issues 与 PR：当前存在 10+ 个 Open Issue，内容涵盖“会话同步、Provider 自动切换、额度显示、代理支持、MCP 配置”等需求与报错；Pull requests 数量较少，贡献仍以作者为主，社区参与空间较大。  \n总体判断：项目处于“活跃维护 + 快速迭代”阶段，功能性补强与 Bug 修复响应较及时，适合作为主力工具长期跟进。\n---\n## 结语与行动建议\n- 终极评判：Codex-X 把原本“手工改配置 + 散落各处”的 Codex 生态，统一进了一个设计现代、更新积极、功能丰富的桌面控制台。尤其适合需要频繁切换提示词、第三方 Provider、会话管理与 Skills/MCP 的用户。在细分赛道，它已成为当前最完整、最易用的解决方案之一。  \n- 行动建议（按需求）：\n  - 如果你已经是 Codex 桌面端/CLI 的重度用户：建议立刻下载最新版，先用“提示词中心”与“Provider 切换”两个页面，感受“一键切换人设/中转”的效率提升。  \n  - 如果你做安全研究/逆向工程：谨慎评估合规与授权边界，在合规范围内试用“破甲”模板与逆向 Skills 导航，搭配 Codex-X 的会话同步与 Skills 管理形成闭环工作流。  \n  - 如果你是开发者/写作者：直接启用“code-review / debugging / maintainer / 写作辅助”等模板，在不重启客户端的情况下切换模型输出风格，观察质量与一致性变化。  \n  - 如果你是团队/小团队维护者：建议把常用的提示词模板与 Provider 配置版本化到仓库，成员通过 Codex-X 的“导入/同步 + 分类管理”保持一致性，减少配置漂移。  \n> 风险与合规提醒：内置的“破甲/无限制”提示词具有高敏感度，任何使用都应在合法授权与合规框架内进行；Codex-X 本身不含破坏性功能，所有行为的责任由使用者自行承担。",
+  "type": "project",
+  "dateAdded": "20260919"
+}
