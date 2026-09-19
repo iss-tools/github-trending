@@ -1,0 +1,61 @@
+{
+  "id": "e9fb785f-31fd-423f-9e56-2caa157b638b",
+  "url": "https://github.com/Open-Dev-Society/OpenStock",
+  "domain": "github.com",
+  "repo": "Open-Dev-Society/OpenStock",
+  "description": "OpenStock 是一个基于 Next.js 15 构建的开源股票平台，支持 Docker 自托管。它集成了 Finnhub 和 TradingView 提供实时行情，允许用户自建监控列表，并通过 AI 发送邮件日报，是昂贵行情软件的免费替代方案。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-19T11:08:09.773Z",
+  "metaData": {
+    "forks": "2052",
+    "stars": "15683",
+    "topics": [
+      "coderabbit",
+      "inngest",
+      "nextjs",
+      "shadcn-ui",
+      "stock-market",
+      "tailwindcss"
+    ],
+    "license": "AGPL-3.0 license",
+    "homepage": "https://openstock-ods.vercel.app",
+    "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free. - Open-Dev-Society/OpenStock"
+  },
+  "summaryData": {
+    "tags": [
+      "股票行情",
+      "Next.js",
+      "自托管",
+      "TailwindCSS",
+      "Finnhub"
+    ],
+    "cover": "",
+    "title": "OpenStock：免费开源的自托管股票信息平台",
+    "ability": [
+      "自建监控列表",
+      "全球市场搜索",
+      "AI 邮件日报",
+      "TradingView 图表集成",
+      "一键自托管部署"
+    ],
+    "summary": "基于 Next.js 构建的开源股票平台，支持自托管、集成行情图表与 AI 资讯推送。",
+    "category": [
+      "开源项目",
+      "金融投资",
+      "开发工具"
+    ],
+    "suitable": [
+      "个人投资者",
+      "全栈开发者",
+      "创业团队",
+      "金融科技学习者",
+      "数据隐私关注者"
+    ],
+    "description": "OpenStock 是一个基于 Next.js 15 构建的开源股票平台，支持 Docker 自托管。它集成了 Finnhub 和 TradingView 提供实时行情，允许用户自建监控列表，并通过 AI 发送邮件日报，是昂贵行情软件的免费替代方案。"
+  },
+  "contentDetail": "# OpenStock 评测：开源、自托管、可定制的现代股票信息平台\n---\n- 一句话总结：OpenStock 是一个“**开箱即用、可自托管**”的现代股票行情与资讯平台，用 Next.js 15、MongoDB、Finnhub 和 TradingView 构成，支持自建监控列表、邮件日报和 AI 欢迎信，定位为昂贵行情软件/订阅的免费开源替代。\n## 背景与痛点\nOpenStock 诞生于三个现实痛点：\n- 信息与工具被付费墙锁定：专业级行情与图表往往绑定昂贵的平台或数据订阅。\n- 现有开源方案零散且难集成：数据源（Finnhub、Alpha Vantage、Polygon 等）与 UI 需要大量工程工作才能凑成完整产品。\n- 自建工具门槛高：个人或团队想自建一个私有看盘与资讯站点，往往在认证、持久化、后台任务、前端组件选择上花费大量时间。\nOpenStock 由 Open Dev Society 组织推动，其宣言强调：技术应属所有人，知识应开放免费，社区应对新手友好且不被“守门”。项目以 AGPL-3.0 授权，承诺“永远免费开放”，并明确不是券商，数据可能因供应商存在延迟，也非投资建议。\n## 技术栈与架构解析\n- 前端框架与路由：Next.js 15（App Router）、React 19、TypeScript（占比约 93.4%）。\n- UI 与样式：shadcn/ui（Radix UI 原语 + Tailwind CSS v4，设计令牌式配置）、cmdk 命令面板、next-themes（主题切换）、Lucide 图标。\n- 认证与授权：Better Auth（Email/Password，适配 MongoDB），在 Next.js 中间件层做会话校验与路由保护。\n- 数据存储：MongoDB（可用本地 Docker 或 Atlas），用 Mongoose 定义模型（如 watchlist.model.ts）。\n- 市场数据与图表：Finnhub 提供搜索、公司资料、新闻；TradingView 提供 K 线、市场概览、热点图等可嵌入组件。\n- 情绪/另类数据（可选）：Adanos API 提供 Reddit、X.com、新闻、Polymarket 的结构化情绪卡片（不取代主流数据源）。\n- 后台任务/自动化：Inngest 用于事件驱动与 Cron（如用户注册后发送 AI 欢迎信、每日新闻摘要邮件）。\n- 邮件：Nodemailer（支持 Gmail App Password，生产环境建议专用 SMTP）。\n架构上的精妙点：\n- 全栈但解耦：Next.js App Router + Server Actions 与 API 路由混合，对后端调用集中管理，避免前后端散乱。\n- 组件化与可组合性：UI 大量复用 shadcn/radix 原语，自定义组件集中在 components/ 目录（Header、Footer、SearchCommand、WatchlistButton 等），利于二次开发与换肤。\n- 开箱即用的后台工作流：Inngest 的函数与定义存放在 lib/inngest，欢迎信与日报逻辑已经写好，开发者只需替换环境变量与 AI 提示模版即可自定义。\n- 安全分层：敏感服务端字段避免 NEXT_PUBLIC_ 前缀暴露到浏览器；路由通过中间件统一保护；安全披露流程通过邮件通道闭环。\n---\n## 核心亮点与功能剖析\n### 1) 行情与市场概览\n- 全球搜索：命令面板支持 Cmd/Ctrl+K 快速唤出，后接 Finnhub 进行防抖搜索与热门标的展示。\n- 个股详情：集成 TradingView 图表（K 线/高级图表/技术指标），同时展示公司资料、财务等 Widget；可添加情绪卡片（需 Adanos）。\n- 市场总览：提供热点图、报价表与头条新闻的 TradingView 组件，用于快速扫描市场状态。\n### 2) 自建监控列表（Watchlist）\n- 每用户监控列表，存储于 MongoDB；单用户内标的唯一约束，避免重复添加。模型位置：database/models/watchlist.model.ts。\n### 3) 认证与用户管理\n- Email/Password 登录注册，Better Auth + MongoDB 适配器；中间件保护绝大多数路由（sign-in、sign-up、静态资源等例外）。\n- 提供个性化入职信息收集（国家、投资目标、风险偏好、偏好行业），可用于后续邮件/资讯的内容个性化。\n### 4) 自动化邮件与 AI 融合\n- 用户注册 → AI 个性化欢迎邮件（使用 Gemini 通过 Inngest 触发）。\n- Cron 每日新闻摘要邮件：按用户 Watchlist 生成，提升粘性与使用价值。\n- AI Provider 可选，支持 gemini、minimax、siray，环境变量 AI_PROVIDER 切换，并可配置 fallback。\n### 5) UI/UX 与开发者体验\n- 暗黑主题默认，采用 Tailwind v4 的 design tokens 管理样式；命令面板提供快速操作与搜索路径。\n- TypeScript 严格模式与统一脚本（dev/build/start/lint/test:db）让本地开发体验舒适；不依赖复杂配置文件链。\n---\n## 目标人群与收益\n- 个人投资者/学生：想免费、长期追踪自选标的，并控制数据隐私，同时愿意折腾一点技术（Docker/Node）的人。收益：自建看盘站 + 持续迭代学习全栈工程。\n- 创业团队/MVP：需要一个可二次开发的“行情+监控+资讯”底座，快速度过产品 0→1 阶段。收益：从零构建的成本显著降低，只需在现有代码上做定制。\n- 学习者（React/Next.js/全栈）：通过真实项目研究 App Router、Server Actions、Inngest、Better Auth 的集成方式。收益：可直接用仓库结构与脚手架做“影子练习”。\n- 机构/自合规团队：在数据许可与法规允许范围内，内网部署并自建监控与资讯流，避免外部 SaaS 数据外流。收益：内控与合规更好的掌控力（需自行评估数据源合规）。\n---\n## 上手门槛与部署体验\n- 先决条件：Node.js 20+、pnpm/npm、MongoDB（本地 Docker 或 Atlas）、Finnhub API Key（免费档支持，但可能有延迟）、Gmail/SMTP（邮件）、可选 Gemini/其他 AI Key。\n- 快速启动：克隆 → 安装 → 配置 .env → pnpm dev → 访问 http://localhost:3000；本地开发需要额外运行 Inngest CLI（npx inngest-cli@latest dev）。\n- Docker 一键：提供 docker-compose.yml 与示例 MongoDB 服务定义（含健康检查与持久卷），一条命令起堆栈；MONGODB_URI 需改为 docker 网络内地址。部署整体体验对熟悉 Docker 的开发者友好。\nDemo/代码示例（最简启动）\n- 克隆与安装\n```\ngit clone https://github.com/Open-Dev-Society/OpenStock.git\ncd OpenStock\npnpm install\n```\n- .env 示例（精简版，生产环境请补齐安全项）\n```\nMONGODB_URI=mongodb://root:example@mongodb:27017/openstock?authSource=admin\nBETTER_AUTH_SECRET=你的随机串\nBETTER_AUTH_URL=http://localhost:3000\nNEXT_PUBLIC_FINNHUB_API_KEY=你的Finnhub_Key\nFINNHUB_BASE_URL=https://finnhub.io/api/v1\nGEMINI_API_KEY=你的Gemini_Key（可选，用于欢迎邮件）\nINNGEST_SIGNING_KEY=你的Inngest签名密钥（Vercel部署需要）\nNODEMAILER_EMAIL=你的@gmail.com\nNODEMAILER_PASSWORD=Gmail应用专用密码\n```\n- 启动开发服务器与 Inngest（本地）\n```\npnpm dev           # Next.js（Turbopack）\nnpx inngest-cli@latest dev   # Inngest 本地开发服务\n```\n- Docker Compose 一键起应用 + MongoDB（精简版）\n```\ndocker compose up -d mongodb\ndocker compose up -d --build\n```\n---\n## 社区活跃度与生命力\n- README 展示了明确的贡献指南与“Good first issue/Help wanted”欢迎新人文化，并列出核心贡献者（含全栈开发、Docker 配置、设计与 Logo 等）。\n- 致谢部分提到 JavaScript Mastery 的 Stock Market App 教程，表明项目借鉴并改造了成熟教程内容，社区渊源清晰。\n- 安全披露提供专用邮箱，体现负责任的漏洞处理流程。\n- 许可证为 AGPL-3.0：强调“修改/再分发/部署（包括作为网络服务）需以同协议开放源码并署名”，这有助于形成强 Copyleft 生态，但对商业闭源部署形成约束，需要企业法务评估。\n---\n## 竞品/同类对比\n- TradingView（SaaS）：图表与社区生态极强，是行业标杆。OpenStock 直接嵌入 TradingView Widgets，以借力其前端能力，同时把用户数据与行为留在自己站内，实现“终端定制+数据隐私”的平衡。\n- Yahoo Finance/Google Finance：零成本但定制有限、广告多。OpenStock 提供“无广告、可自建与扩展”的替代体验，适合希望掌控 UI 与工作流的用户。\n- 自研行情站（从零）：开发周期长，需解决认证、数据对接、后台任务、组件与设计。OpenStock 提供一条“可运行、可定制”的基线，大幅降低时间成本。\n- 其他开源股票仪表盘：多数只覆盖部分功能（例如仅行情或仅图表），或技术栈老旧。OpenStock 以 Next.js 15+shadcn/Tailwind v4 组合，属于较现代的一站式方案。\n---\n## 局限与不足\n- 数据源依赖：核心数据来自 Finnhub 与 TradingView 免费档，非美市场可能出现 15 分钟以上延迟，新兴市场也可能受限。需要生产级实时数据的用户需评估付费或替代数据源接入成本。\n- AI 功能需额外 Key 与合规考量：AI 欢迎邮件与日报依赖 Gemini/第三方模型，需自行申请 Key 并评估隐私与合规；模型幻觉与成本不可忽视。\n- 运维与自托管成本：虽可用 Docker，但仍需自行维护 MongoDB、Inngest、SMTP、各 Key 的轮换与安全，中小团队需评估人力投入。\n- 授权限制：AGPL-3.0 要求网络服务也开源，闭源商用或内部 SaaS 化面临合规负担。\n- 功能边界：当前偏向“信息+监控+资讯提醒”，不提供交易、订单管理或回测等券商级能力，适合作为行情/资讯层，而非完整交易链路。\n---\n## 结语与行动建议\nOpenStock 不是要“取代”TradingView 或券商终端，而是为那些想“自建终端、掌握数据与 UI、在可控成本下构建 MVP”的开发者与团队，提供一套可开箱即用、可持续演进的基线。它的价值在于：\n- 降低从零到可部署的时间成本。\n- 提供现代全栈工程的最佳实践集合（App Router、Server Actions、Inngest、Better Auth、shadcn 等）。\n- 强社区文化与开放承诺，对学习者与想参与开源的人非常友好。\n行动建议：\n- 若你是个人投资者/学生，且能接受一点折腾（Docker/Node），可以用 Docker Compose 在家庭服务器或云主机起一套，作为私有“看盘+新闻摘要站”，再把 README 中的 MARKET_SUPPORT.md 读一遍，清楚所支持的交易所与限制。\n- 若你是做金融/财经方向的全栈学习者，可先本地跑通 demo，再对照项目结构（app/lib/components/database）逐块改造，练习集成自定义数据源与图表组件。\n- 若你是创业团队，想快速验证“行情+资讯+用户体系”的产品形态，可基于 OpenStock 做定制，预留数据源与授权的迁移路径，避免 AGPL 带来的长期约束。\nOpenStock 是一个“把数据与 UI 组合到一起”的组装式解决方案，虽然不完美，但在免费开源的世界里，它已经是一个能直接上手、持续成长的好起点。",
+  "type": "project",
+  "dateAdded": "20260919"
+}
