@@ -1,0 +1,50 @@
+{
+  "id": "fc66c492-e59d-4bf7-9e78-6264d5b6ea67",
+  "url": "https://github.com/BuilderIO/agent-native",
+  "domain": "github.com",
+  "repo": "BuilderIO/agent-native",
+  "description": "agent-native 是 Builder.io 团队推出的 MIT 开源 TypeScript 框架，核心解决「传统 SaaS 只能加聊天窗、裸 Agent 没有产品形态」的痛点。它通过 Action 单一定义、人机共享数据库状态、MCP+A2A 协议原生三大支柱，让 AI 和人类以同等地位操作同一个产品，并附带多个可直接 fork 的完整开源 SaaS 模板，被称为 Agent 原生应用目前最完整的开源答案。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-20T11:04:38.121Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0"
+  },
+  "summaryData": {
+    "tags": [
+      "Agent 原生",
+      "TypeScript",
+      "开源框架",
+      "MCP",
+      "Builder.io"
+    ],
+    "cover": "",
+    "title": "agent-native 深度评测：把「给 AI 造家」做成一套开源框架",
+    "ability": [
+      "Action 只需定义一次，UI、Agent、HTTP、MCP、CLI 自动全部复用",
+      "人与 AI 共享同一份数据库状态，AI 操作时界面实时同步刷新",
+      "内置 MCP 和 A2A 协议，Claude Code 等外部 Agent 可直接操作你的应用",
+      "提供 6 个可完整 fork 的开源 SaaS 模板（日历、笔记、幻灯片、数据分析等）",
+      "一行命令为编码 Agent 添加 /visual-plan 可视化计划能力"
+    ],
+    "summary": "Builder.io 出品的开源 TypeScript 框架，让你造出「人和 AI 操作同一个产品」的 Agent 原生应用",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "开源框架"
+    ],
+    "suitable": [
+      "想用 AI 能力替代付费 SaaS 的独立开发者和小团队",
+      "想从 Agent 原生架构起步的 AI 应用创业团队",
+      "使用 Claude Code、Cursor 的前端/全栈工程师",
+      "需要构建人机协作内部平台的企业工具团队",
+      "想研究 Agent 应用架构范式的技术人员"
+    ],
+    "description": "agent-native 是 Builder.io 团队推出的 MIT 开源 TypeScript 框架，核心解决「传统 SaaS 只能加聊天窗、裸 Agent 没有产品形态」的痛点。它通过 Action 单一定义、人机共享数据库状态、MCP+A2A 协议原生三大支柱，让 AI 和人类以同等地位操作同一个产品，并附带多个可直接 fork 的完整开源 SaaS 模板，被称为 Agent 原生应用目前最完整的开源答案。"
+  },
+  "contentDetail": "# BuilderIO/agent-native 深度评测：把\"给 AI 造家\"这件事，做成了一套框架\n**一句话总结：agent-native 是 Builder.io（Qwik、Mitosis 背后的团队）在 2026 年推出的一个 MIT 协议开源 TypeScript 框架，它的野心不是\"帮你调一个大模型\"，而是让你能造出那种\"人能点、AI 也能操作同一套产品\"的真正 Agent 应用——并且是通过一整套可 fork 的完整 SaaS 模板来交付。**如果你写过 Vercel AI SDK 的 Chat UI，或者用 LangChain 搭过 Agent 但总感觉\"AI 只是挂在外面的聊天窗\"，这个项目值得你认真看一遍。\n> 项目地址：github.com/BuilderIO/agent-native · 官方文档：agent-native.com · 协议：MIT\n---\n## 一、它要解决什么问题：AI 应用最普遍的\"半身不遂\"现状\nBuilder.io 团队在配套的架构文章《Agent-Native: The Next Architecture for Software》里，把现状描述得非常扎心：**今天几乎所有 AI 应用都处在两个极端之间，且都是半残的**。\n一边是**传统 SaaS 加了个聊天窗**。比如某项目管理工具的右上角有个 AI 助手，可以总结一下文档、起草一下回复，但它没法真正替你完成\"归档任务、改字段、跑审批\"这一整套操作——因为它的底层动作模型就没开放给 AI。Builder.io 把这种叫做\"bolt-on AI\"，比喻一下就是**在一条本来就给人类设计的楼梯上，临时焊一条轮椅坡道**，能凑合用但到处都是别扭。\n另一边是**Claude Code 这类裸 Agent**。能力很强但没产品形态，用户打开就是一个空白对话框，不知道能干什么，团队落地时也缺一套工作流锚点。Builder.io 称之为\"blank canvas problem\"（空白画布问题）。\nagent-native 想做的是第三条路：**让人类界面和 Agent 是同一个产品的两种操作方式**。你点击按钮归档邮件，或者你对 Agent 说\"把今天所有的广告邮件归档\"，背后走的是**同一个 Action、同一份数据库、同一套权限**——只是入口不同。\n这个思路有个非常贴切的历史类比，Builder.io 自己也用了：**mobile-native 的进化**。当年没人会把桌面网站直接缩到手机屏幕上就叫\"移动版\"，而是围绕触控、相机、GPS、碎片化注意力重新设计。今天的 Agent 应用也一样：它不是\"塞进聊天窗的 SaaS\"，而是围绕自然语言、工具调用、上下文共享、后台任务这些**Agent 的原生能力**重新设计的软件形态。\n---\n## 二、架构哲学：三个核心概念撑起整个框架\n要理解 agent-native 为什么和 LangChain 们不同，关键是看懂它的三大支柱。\n### 2.1 Actions：一次定义，处处可用\n这是整个框架最漂亮、也最像\"USB-C 接口\"的设计。传统全栈应用里，你要写一遍 UI 的 mutation、一遍 REST endpoint、一遍 LLM 的 tool 定义、可能还要一遍 CLI——四份代码，必然漂移。agent-native 的解法是**只定义一次 Action，UI、Agent、HTTP、MCP、A2A、CLI 全部自动复用**。\n来看官方 README 里的最小示例，这是理解整个框架的\"钥匙\"：\n```typescript\n// actions/reply-to-email.ts\nimport { defineAction } from \"@agent-native/core\";\nimport { z } from \"zod\";\nexport default defineAction({\n  description: \"Reply to an email thread\",\n  schema: z.object({\n    emailId: z.string(),\n    body: z.string(),\n  }),\n  run: async ({ emailId, body }) => {\n    await db.insert(replies).values({ emailId, body });\n  },\n});\n```\n短短几行代码，框架会自动帮你把它暴露成：React 组件可以直接调的 mutation、Agent 工具列表里的一项、HTTP 端点、MCP tool（Claude Code 能识别）、A2A tool（其他 Agent 能调用）、甚至 CLI 命令。**你写的是业务逻辑，框架负责把\"调用面\"全部铺好**。\n### 2.2 共享状态：数据库就是协调层\n这是很多人第一次看到 agent-native 演示时觉得\"哇\"的地方。框架没有发明什么复杂的 WebSocket 协议，反而故意做得很朴素：**Action 写入 SQL 数据库 → 版本号变更 → UI 轮询并失效对应缓存**。\n意义在于：**Agent 和人类是同一份数据库的\"双写者\"**。你正在看一封邮件，Agent 同时帮你打标签——UI 立即刷新；你选中一段文字按 Cmd+I 问\"帮我重写\"，Agent 知道你选的是哪一段——因为前端导航状态也写到了同一个库里。这种实时协作，更像\"Google Docs 里人和 AI 一起编辑一份文档\"，而不是\"你在用软件，AI 在旁边观察你\"。\n### 2.3 Agent Runtime + 协议原生：从单机到生态\n框架内置了 Agent 运行时，包括 chat、tools、skills、memory、jobs（后台任务）、observability、handoffs。而真正让它具备\"生态潜力\"的是两条协议：\n- **MCP（Model Context Protocol）**：让 Claude Code、Cursor、Codex、Gemini CLI 等外部 Agent 客户端可以直接操作你的应用；\n- **A2A（Agent-to-Agent）**：让你的应用里的 Agent 可以跨应用协作——比如日历 Agent 调用邮件 Agent 去找客户约定时间。\n对比一下就清楚了：**传统 AI 应用是\"孤岛\"，agent-native 想让你造的是\"软件节点\"**，可以被生态里的其他 Agent 发现并调用。这一步棋如果真的跑通，想象空间比\"又一个 Agent 框架\"大得多。\n---\n## 三、上手体验：从 npx 到一个能跑的完整 SaaS\n### 3.1 三种启动姿势\n```bash\nnpx @agent-native/core@latest create my-app\ncd my-app\npnpm install\npnpm dev\n```\n`create` 命令会问你想从哪种模式开始：\n| 模式 | 适合谁 | 拿到什么 |\n|---|---|---|\n| **Full template(s)** | 想直接造产品 | 一个或多个完整的可运行 SaaS，共享 auth |\n| **Chat** | 最简 Agent UI | 带浏览器 shell 的最小聊天应用 |\n| **Headless** | 纯 API / 后台 Agent | 没有 UI，纯 Action-first 架构 |\n也支持 `--template mail`、`--headless`、`--standalone` 这类 flag 跳过交互。\n### 3.2 模板是这个项目的\"王炸\"\nagent-native 模板仓库里的东西，不是脚手架，而是**完整的、可 fork 的、MIT 协议的 100% 开源 SaaS 应用**——这是它和市面上大多数\"starter template\"拉开身位的地方：\n| 模板 | 对标的付费产品 |\n|---|---|\n| **Calendar** | Google Calendar / Calendly（含公开订约页面 + AI 排程） |\n| **Content** | Obsidian / Notion（本地 MDX 编辑 + Agent 起草重写发布） |\n| **Plans** | Coding agent 的可视化计划模式（`/visual-plan` + `/visual-recap`） |\n| **Slides** | Google Slides / Pitch（React 幻灯片，prompt 或点选生成） |\n| **Analytics** | Amplitude / Mixpanel（连接数据源、prompt 生成图表、复用 dashboard） |\n| **Clips** | Loom（录屏 + 自动字幕 + Agent 剪辑摘要） |\n想最小成本感受框架威力，**推荐先跑 `--template mail` 或者 `--template calendar`**，用示例数据玩一圈，再决定要不要接自己的数据源。\n### 3.3 不想搭整个应用？试试 Skill 模式\n如果你只是想给自己的 Claude Code 或 Cursor 加点能力，不用搭整个应用，一条命令即可：\n```bash\nnpx @agent-native/core@latest skills add visual-plan\n```\n装完后你会获得两个斜杠命令：\n- **`/visual-plan`**：让编码 Agent 在写代码前先产出一份带线框图、文件级实现映射、可批注的\"计划文档\"给你确认；\n- **`/visual-recap`**：PR 合并后自动生成一份带图示的高维度变更摘要，而不是一个难读的 raw diff。\n这对\"Agent 产出一大坨代码你不敢合\"的场景，是个很实在的解法。相关的 VS Code 扩展 Agent-Native Plans 也已经上架 marketplace。\n---\n## 四、生态位与竞品对比：它不是 LangChain 的替代品\n这是评测必须说清楚的部分，因为很多人会拿它和 LangChain、Vercel AI SDK、CrewAI 直接比。**它们的赛道其实不一样**：\n| 维度 | LangChain / LlamaIndex | Vercel AI SDK | CrewAI / AutoGen | **agent-native** |\n|---|---|---|---|---|\n| 定位 | Agent 编排 + RAG 工具箱 | 聊天 UI + 流式生成 | 多 Agent 协作编排 | **完整 Agent 原生应用框架** |\n| 核心抽象 | Chain / Retriever | `useChat` / Stream | Agent / Task / Crew | **Action + 共享状态** |\n| UI 层 | 自己拼 | 提供 React 组件 | 基本没有 | **完整 UI + 模板 + Agent UI parity** |\n| 数据 / 状态 | 自己接 | 自己接 | 自己接 | **内置 Drizzle SQL 作为协调层** |\n| 协议 | 自定义 tool | 自定义 tool | 自定义 tool | **MCP + A2A 一等公民** |\n| 所有权 | 库 | 库 | 库 | **整个应用可 fork，MIT** |\n| 适合 | 算法/研究/复杂工作流 | 前端加聊天窗 | 多角色模拟 | **独立产品、SaaS 替代品、内部工具** |\n用一句话概括差异：**LangChain 们是\"工具箱\"，agent-native 是\"房子设计图纸 + 已建好的样板间\"**。前者自由度高但一切自己搭，后者上手就能住进去，代价是你得接受它的架构理念。\n从竞合角度看，**agent-native 并不排斥外部 Agent 客户端**——Claude Code、Codex、Cursor、Gemini CLI 都可以作为操作你应用的\"外部 Agent\"，通过 MCP 协议接入。这一点让它更像是\"AI 应用层的基础设施\"，而不是\"又一个 Agent 框架\"。\n---\n## 五、优势与局限：优点很亮，但也不是没有坑\n### 5.1 它真正的优势\n**① \"拥有代码\"这件事，被做到了极致**。不是给你一个 SDK，而是给你一个可以彻底 fork 的 SaaS 应用。Builder.io 在 README 里直接拿这个对标你正在付月费的 SaaS 工具，这是降维打击的思路。\n**② Action 单一定义解决了\"AI 能力永远比 UI 窄一截\"的老大难**。这一点看代码示例就能感受到，是个真正架构级的解法，不是营销概念。\n**③ 协议前瞻性强**。MCP 和 A2A 的支持不是 afterthought，而是架构属性。在 Agent 生态加速融合的 2026 年，这一步棋走得很靠前。\n**④ 技术栈现代且开放**：TypeScript + React + Drizzle + Nitro，不绑定数据库、不绑定主机、不绑定大模型厂商（README 明确写了\"Bring your own database, hosting provider, model stack\"）。\n**⑤ 模板质量在线**。六个模板覆盖了日历、笔记、幻灯片、数据分析、录屏、编码辅助——都是高频 SaaS 场景，且有真实产品可以对比。\n### 5.2 它的局限与风险\n**① 概念较新，学习成本真实存在**。Action / Skills / Jobs / Handoffs / MCP / A2A 这一整套抽象，对没接触过 Agent 开发的前端工程师来说有一定门槛。虽然官方文档架构清晰，但社区成熟度（教程、博客、Stack Overflow 答案）远不及 LangChain 或 Next.js。\n**② \"Agent-native\"是 Builder.io 提出的概念，不是行业标准**。整个框架的设计强烈反映 Builder.io 的架构品味。这既是好事（设计一致），也是潜在风险（生态被单一公司主导）。MIT 协议给了你 fork 的底气，但长期演进方向仍要看 Builder.io 的投入。\n**③ 模板是双刃剑**。直接 fork Calendar 模板很爽，但一旦你深度定制，后续同步上游更新就会变成合并噩梦。**建议把模板当作起点，而不是长期 fork 依赖**。\n**④ 项目尚处早期**。从 GitHub 仓库活动和 Builder.io 官方博客的发布节奏看，这个框架在 2026 年才逐步成型，还没经过大规模生产环境验证。**用在严肃业务前，建议先在内部工具或 side project 上跑一跑**。\n**⑤ 后端生态绑定 Drizzle + Nitro**。虽然号称\"agnostic\"，但实际抽象层是围绕这两个生态做的。如果你团队用的是 Prisma + Express，或者非要上 Django/Rails，就要评估适配成本。\n---\n## 六、适合谁，不适合谁\n**强烈建议你试试的场景**：\n- **独立开发者 / 小团队**，想用 AI 能力替代正在付费的 SaaS 工具（日历、笔记、分析、录屏）；\n- **AI 应用创业团队**，想直接从\"Agent 原生\"架构起步，避免后期从 bolt-on AI 重构；\n- **前端 / 全栈工程师**，已经在用 Claude Code、Cursor 等工具，想让 Agent 与 UI 深度协作而不是并列存在；\n- **企业内部工具团队**，想造一套\"人类和 AI 共同操作\"的内部平台。\n**可以暂时观望的场景**：\n- 你只是想给现有 Next.js 应用加一个聊天窗 → Vercel AI SDK 更轻；\n- 你在做纯算法研究、复杂 RAG 工作流 → LangChain / LlamaIndex 更合适；\n- 你的团队强绑定 Python 生态 → 目前 agent-native 是 TypeScript-first，Python 版还在路上；\n- 你需要经过大规模生产验证的稳定框架 → 现阶段它还在快速演进。\n---\n## 七、结语与行动建议\nagent-native 是 2026 年 Agent 应用赛道上一个**定位独特、野心不小、执行也相当扎实**的开源框架。它最大的价值不在于\"帮你写 Agent\"，而在于**给出了一套可以长期演进的架构范式**：Action 单一定义 + 共享状态 + 协议原生。这三件事合在一起，才让\"AI 和人类操作同一个产品\"从口号变成代码。\n给你三步行动建议：\n1. **5 分钟体验**：`npx @agent-native/core@latest skills add visual-plan`，把它作为 Claude Code 的 skill 装上，看看 `/visual-plan` 能不能改善你现在的 Agent 工作流——**零侵入，性价比最高的尝鲜方式**；\n2. **半天跑通模板**：用 `npx @agent-native/core@latest create my-app --template calendar` 起一个完整应用，重点感受\"AI 改状态时 UI 同步刷新\"和\"MCP 里能直接看到你的 Action\"这两件事——**这两个体验是 bolt-on AI 永远做不到的**；\n3. **决定投入深度**：如果你正在做一个 AI-first 的新产品，agent-native 值得作为架构底座认真评估；如果你只是好奇，跑完前两步就可以停了，等生态再长一长。\n一句话收尾：**在\"AI 应用\"和\"Agent 应用\"的分水岭上，agent-native 站在了后者这一边，并且给出了目前最完整的开源答案。**它不是唯一答案，但一定是 2026 年你研究 Agent 原生架构时绕不开的样本。",
+  "type": "project",
+  "dateAdded": "20260920"
+}

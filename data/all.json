@@ -1,6 +1,259 @@
 {
   "all": [
     {
+      "id": "0107e567-ee18-4eda-97c0-e3048a657d75",
+      "url": "https://github.com/vercel-labs/json-render",
+      "domain": "github.com",
+      "repo": "vercel-labs/json-render",
+      "description": "json-render 是 Vercel Labs 开源的 Generative UI 框架（16k Stars）。核心思路是：开发者先用 Zod 定义组件 Catalog 作为白名单，AI 只能在此范围内填 JSON，再由渲染器转成真实 UI。同一份 Spec 可渲染到 React/Vue/移动端/PDF/视频等 12 种媒介，支持流式输出和动态状态表达式。局限在于前置 Schema 化成本高、复杂交互表达力有限、生态尚新。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-20T11:24:16.597Z",
+      "metaData": {
+        "forks": "905",
+        "stars": "16954",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://json-render.dev",
+        "description": "The Generative UI framework. Contribute to vercel-labs/json-render development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Generative UI",
+          "Vercel",
+          "开源项目",
+          "AI Agent",
+          "JSON Schema"
+        ],
+        "cover": "",
+        "title": "json-render 深度评测：Vercel 开源 Generative UI 框架，让 AI 生成界面安全落地生产环境",
+        "ability": [
+          "Catalog 白名单机制：用 Zod Schema 定义组件和 props，从源头杜绝 AI 幻觉",
+          "一份 JSON Spec 渲染 12+ 种媒介（Web、移动端、PDF、视频、邮件、终端、3D 等）",
+          "流式渲染：AI 输出第一个字符即开始渲染，几乎零白屏等待",
+          "自动生成 System Prompt 并反向校验 AI 输出，无需手写复杂提示词",
+          "官方 Devtools 调试工具链，支持 Spec 树、状态编辑器和流日志"
+        ],
+        "summary": "json-render 让 AI 在预设组件白名单里填 JSON 来生成界面，而非直接写代码，解决了 AI 生成 UI 幻觉多、不敢上生产的痛点。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端框架"
+        ],
+        "suitable": [
+          "B 端 SaaS / 数据看板团队",
+          "AI Agent 产品开发者",
+          "需要多端交付（Web/移动/PDF/邮件）的团队",
+          "营销与运营工具团队",
+          "企业内部工具开发团队"
+        ],
+        "description": "json-render 是 Vercel Labs 开源的 Generative UI 框架（16k Stars）。核心思路是：开发者先用 Zod 定义组件 Catalog 作为白名单，AI 只能在此范围内填 JSON，再由渲染器转成真实 UI。同一份 Spec 可渲染到 React/Vue/移动端/PDF/视频等 12 种媒介，支持流式输出和动态状态表达式。局限在于前置 Schema 化成本高、复杂交互表达力有限、生态尚新。"
+      },
+      "type": "project",
+      "dateAdded": "20260920"
+    },
+    {
+      "id": "601bb710-1d3b-4562-acef-6e7c121664b4",
+      "url": "https://github.com/mihail911/modern-software-dev-assignments",
+      "domain": "github.com",
+      "repo": "mihail911/modern-software-dev-assignments",
+      "description": "斯坦福CS146S《The Modern Software Developer》课程官方作业仓库，由前Amazon Alexa技术负责人、YC孵化AI创业者Mihail Eric讲授。8周作业覆盖Prompt工程、MCP Server开发、AI Agent编排与代码安全，附脚手架代码与公开评分细则，配合Ollama本地推理零成本实战，已获3.9k Star。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-20T11:20:16.893Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Stanford CS146S",
+          "MCP",
+          "AI Agent",
+          "Prompt Engineering",
+          "开源课程"
+        ],
+        "cover": "",
+        "title": "斯坦福CS146S《现代软件开发》官方作业仓库深度评测：AI原生开发实战教材",
+        "ability": [
+          "系统化Prompt工程训练（K-shot、CoT、RAG、Reflexion等6大技术实操）",
+          "手把手MCP Server开发（含功能/可靠性/DX三维评分细则）",
+          "AI Coding Agent全链路实战（Cursor、Claude Code、Warp）",
+          "AI代码安全与审计（Semgrep、OWASP、Secure Vibe Coding）",
+          "零成本本地复现（Ollama本地推理+Poetry环境管理）"
+        ],
+        "summary": "斯坦福首开AI原生软件开发课程的官方开源作业库，8周实战覆盖Prompt工程、MCP、Agent与AI安全，完全免费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "学习教育"
+        ],
+        "suitable": [
+          "1-5年初中级软件工程师",
+          "技术管理者/工程经理（EM）",
+          "CS在校学生",
+          "AI产品经理/创业者",
+          "想系统转型AI原生开发的技术人"
+        ],
+        "description": "斯坦福CS146S《The Modern Software Developer》课程官方作业仓库，由前Amazon Alexa技术负责人、YC孵化AI创业者Mihail Eric讲授。8周作业覆盖Prompt工程、MCP Server开发、AI Agent编排与代码安全，附脚手架代码与公开评分细则，配合Ollama本地推理零成本实战，已获3.9k Star。"
+      },
+      "type": "project",
+      "dateAdded": "20260920"
+    },
+    {
+      "id": "d0b08ce7-e30d-400b-bfad-7ba5d8710256",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "domain": "github.com",
+      "repo": "paperless-ngx/paperless-ngx",
+      "description": "Paperless-ngx 是 GitHub 44k+ Star 的开源自托管文档管理系统，可将扫描件、PDF、邮箱附件自动 OCR 识别、打标归档，并支持全文检索秒找历史文档。Docker 一键部署，数据完全本地。注意：中文 OCR 识别较弱，数据明文存储，需自行做好备份与安全防护。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-20T11:14:52.874Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "文档管理",
+          "OCR",
+          "Docker",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "Paperless-ngx 深度评测：把纸质档案柜装进自托管服务器的开源文档管理系统",
+        "ability": [
+          "OCR 文字识别，扫描件也能全文搜索",
+          "机器学习自动打标签、分类归档",
+          "三种自动收件方式：监控文件夹、邮箱拉取、API 上传",
+          "Docker Compose 快速部署，数据完全本地自持",
+          "全文检索 + 标签/日期/对应人多维筛选，支持自定义字段与工作流"
+        ],
+        "summary": "开源自托管文档管理系统，用 OCR + 自动分类 + 全文检索，把散乱文档变成可秒搜的私人数字档案馆",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "自托管应用"
+        ],
+        "suitable": [
+          "想数字化家庭账单、合同、证件的个人用户",
+          "管理发票报销的自由职业者与小微团队",
+          "Homelab 自托管玩家",
+          "注重隐私、不愿把敏感文档上传云端的用户",
+          "想替代昂贵商业 DMS 的中小团队"
+        ],
+        "description": "Paperless-ngx 是 GitHub 44k+ Star 的开源自托管文档管理系统，可将扫描件、PDF、邮箱附件自动 OCR 识别、打标归档，并支持全文检索秒找历史文档。Docker 一键部署，数据完全本地。注意：中文 OCR 识别较弱，数据明文存储，需自行做好备份与安全防护。"
+      },
+      "type": "project",
+      "dateAdded": "20260920"
+    },
+    {
+      "id": "691593a9-487b-49b6-a951-64edeba23071",
+      "url": "https://github.com/anthropics/financial-services",
+      "domain": "github.com",
+      "repo": "anthropics/financial-services",
+      "description": "Anthropic 官方开源的金融行业参考实现，把 LLM 能力封装成可版本化、可审计的 Skills、Commands 和 MCP 连接器，覆盖投行、股权研究、私募基金和财富管理等高价值工作流。开箱即用但需 Claude 付费订阅及数据源授权，输出必须人工复核。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-20T11:10:51.535Z",
+      "metaData": {
+        "forks": "5232",
+        "stars": "35176",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to anthropics/financial-services development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "MCP",
+          "金融Agent",
+          "Anthropic",
+          "开源模板"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方金融 Agent 模板库深度评测：把 Claude 变成投行分析师",
+        "ability": [
+          "提供 10 个端到端金融 Agent（Pitchbook/财报/月结/KYC 等）一键部署",
+          "集成 FactSet、Moody's、PitchBook 等 11 个 MCP 数据连接器",
+          "用 Markdown 编写领域 Skills，业务专家可直接编辑方法论",
+          "支持 Cowork/Claude Code/云端 Managed Agents 三种部署形态",
+          "内置 /comps /dcf /earnings 斜杠命令快速触发分析工作流"
+        ],
+        "summary": "Anthropic 官方开源的金融行业 Agent 模板库，用 Skills + Plugins + MCP 让 Claude 自动完成 Pitchbook、财报分析、月结对账等金融工作流。",
+        "category": [
+          "开源项目",
+          "AI 工具",
+          "金融科技"
+        ],
+        "suitable": [
+          "金融服务领域开发者与技术负责人",
+          "投行/PE/券商分析师",
+          "基金会计与风控合规人员",
+          "想学习垂直 Agent 工程范式的 AI 爱好者",
+          "评估 AI 落地的金融企业决策者"
+        ],
+        "description": "Anthropic 官方开源的金融行业参考实现，把 LLM 能力封装成可版本化、可审计的 Skills、Commands 和 MCP 连接器，覆盖投行、股权研究、私募基金和财富管理等高价值工作流。开箱即用但需 Claude 付费订阅及数据源授权，输出必须人工复核。"
+      },
+      "type": "project",
+      "dateAdded": "20260920"
+    },
+    {
+      "id": "fc66c492-e59d-4bf7-9e78-6264d5b6ea67",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "domain": "github.com",
+      "repo": "BuilderIO/agent-native",
+      "description": "agent-native 是 Builder.io 团队推出的 MIT 开源 TypeScript 框架，核心解决「传统 SaaS 只能加聊天窗、裸 Agent 没有产品形态」的痛点。它通过 Action 单一定义、人机共享数据库状态、MCP+A2A 协议原生三大支柱，让 AI 和人类以同等地位操作同一个产品，并附带多个可直接 fork 的完整开源 SaaS 模板，被称为 Agent 原生应用目前最完整的开源答案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-20T11:04:38.121Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Agent 原生",
+          "TypeScript",
+          "开源框架",
+          "MCP",
+          "Builder.io"
+        ],
+        "cover": "",
+        "title": "agent-native 深度评测：把「给 AI 造家」做成一套开源框架",
+        "ability": [
+          "Action 只需定义一次，UI、Agent、HTTP、MCP、CLI 自动全部复用",
+          "人与 AI 共享同一份数据库状态，AI 操作时界面实时同步刷新",
+          "内置 MCP 和 A2A 协议，Claude Code 等外部 Agent 可直接操作你的应用",
+          "提供 6 个可完整 fork 的开源 SaaS 模板（日历、笔记、幻灯片、数据分析等）",
+          "一行命令为编码 Agent 添加 /visual-plan 可视化计划能力"
+        ],
+        "summary": "Builder.io 出品的开源 TypeScript 框架，让你造出「人和 AI 操作同一个产品」的 Agent 原生应用",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源框架"
+        ],
+        "suitable": [
+          "想用 AI 能力替代付费 SaaS 的独立开发者和小团队",
+          "想从 Agent 原生架构起步的 AI 应用创业团队",
+          "使用 Claude Code、Cursor 的前端/全栈工程师",
+          "需要构建人机协作内部平台的企业工具团队",
+          "想研究 Agent 应用架构范式的技术人员"
+        ],
+        "description": "agent-native 是 Builder.io 团队推出的 MIT 开源 TypeScript 框架，核心解决「传统 SaaS 只能加聊天窗、裸 Agent 没有产品形态」的痛点。它通过 Action 单一定义、人机共享数据库状态、MCP+A2A 协议原生三大支柱，让 AI 和人类以同等地位操作同一个产品，并附带多个可直接 fork 的完整开源 SaaS 模板，被称为 Agent 原生应用目前最完整的开源答案。"
+      },
+      "type": "project",
+      "dateAdded": "20260920"
+    },
+    {
       "id": "ea46ed38-2177-431d-8ec3-f9341aa8974d",
       "url": "https://github.com/yynxxxxx/Codex-X",
       "domain": "github.com",
@@ -296,8 +549,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:16:12.282Z",
       "metaData": {
-        "forks": "926",
-        "stars": "5087",
+        "forks": "929",
+        "stars": "5125",
         "topics": [
           "cluster-management",
           "deep-learning",
@@ -357,8 +610,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:08:09.773Z",
       "metaData": {
-        "forks": "2106",
-        "stars": "16365",
+        "forks": "2115",
+        "stars": "16426",
         "topics": [
           "coderabbit",
           "inngest",
@@ -794,8 +1047,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "4775",
-        "stars": "73016",
+        "forks": "4781",
+        "stars": "73121",
         "topics": [
           "ade",
           "agent-ide",
@@ -940,8 +1193,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:27:05.481Z",
       "metaData": {
-        "forks": "1529",
-        "stars": "15760",
+        "forks": "1532",
+        "stars": "15797",
         "topics": [
           "agents",
           "dev-tools",
@@ -1064,8 +1317,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
-        "forks": "4081",
-        "stars": "25334",
+        "forks": "4083",
+        "stars": "25362",
         "topics": [
           "bpf",
           "cncf",
@@ -1134,8 +1387,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "380",
-        "stars": "5500",
+        "forks": "416",
+        "stars": "5907",
         "topics": [
           "agent",
           "browser-use",
@@ -1190,8 +1443,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7421",
-        "stars": "68653",
+        "forks": "7454",
+        "stars": "68835",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -1243,8 +1496,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:38:08.647Z",
       "metaData": {
-        "forks": "14421",
-        "stars": "110374",
+        "forks": "14420",
+        "stars": "110382",
         "topics": [
           "ai",
           "alternative",
@@ -1389,8 +1642,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "23984",
-        "stars": "146856",
+        "forks": "23989",
+        "stars": "146886",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -1494,8 +1747,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3002",
-        "stars": "25218",
+        "forks": "3003",
+        "stars": "25241",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1662,8 +1915,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "941",
-        "stars": "17138",
+        "forks": "954",
+        "stars": "17375",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1714,8 +1967,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T12:08:20.183Z",
       "metaData": {
-        "forks": "38710",
-        "stars": "90844",
+        "forks": "38712",
+        "stars": "90854",
         "topics": [
           "asyncio",
           "hacktoberfest",
@@ -1983,8 +2236,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
-        "forks": "9126",
-        "stars": "44439",
+        "forks": "9129",
+        "stars": "44453",
         "topics": [
           "ai",
           "anthropic",
@@ -2597,8 +2850,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7329",
-        "stars": "83605",
+        "forks": "7335",
+        "stars": "83645",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -3040,8 +3293,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2702",
-        "stars": "37982",
+        "forks": "2712",
+        "stars": "38086",
         "topics": [
           "agent",
           "agent-skills",
@@ -3100,7 +3353,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "537",
-        "stars": "6497",
+        "stars": "6504",
         "topics": [
           "agent",
           "ai",
@@ -3305,7 +3558,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "283",
-        "stars": "8143",
+        "stars": "8152",
         "topics": [
           "agents",
           "claude-code",
@@ -3643,8 +3896,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3734",
-        "stars": "27738",
+        "forks": "3742",
+        "stars": "27795",
         "topics": [
           "agent",
           "agentic",
@@ -4707,8 +4960,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "733",
-        "stars": "10627",
+        "forks": "738",
+        "stars": "10722",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -5829,8 +6082,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1710",
-        "stars": "23710",
+        "forks": "1711",
+        "stars": "23729",
         "topics": [
           "antigravity",
           "claude",
@@ -5903,8 +6156,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13683",
-        "stars": "185778",
+        "forks": "13682",
+        "stars": "185811",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -5964,8 +6217,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4716",
-        "stars": "51756",
+        "forks": "4719",
+        "stars": "51788",
         "topics": [
           "ai",
           "animation",
@@ -6601,8 +6854,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "732",
-        "stars": "20093",
+        "forks": "734",
+        "stars": "20117",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -6918,8 +7171,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
-        "forks": "2656",
-        "stars": "41428",
+        "forks": "2658",
+        "stars": "41453",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -7981,8 +8234,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "4059",
-        "stars": "50412",
+        "forks": "4061",
+        "stars": "50453",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -8416,8 +8669,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3204",
-        "stars": "33268",
+        "forks": "3206",
+        "stars": "33277",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -9073,8 +9326,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3932",
-        "stars": "33304",
+        "forks": "3938",
+        "stars": "33335",
         "topics": [
           "ai",
           "audiobook",
@@ -9322,8 +9575,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8036",
-        "stars": "61748",
+        "forks": "8040",
+        "stars": "61774",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -10029,8 +10282,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1657",
-        "stars": "14018",
+        "forks": "1658",
+        "stars": "14024",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10082,8 +10335,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "5980",
-        "stars": "38081",
+        "forks": "5981",
+        "stars": "38102",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10135,8 +10388,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4860",
-        "stars": "42225",
+        "forks": "4863",
+        "stars": "42243",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -10319,8 +10572,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10263",
-        "stars": "97314",
+        "forks": "10272",
+        "stars": "97375",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -10566,8 +10819,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2517",
-        "stars": "19582",
+        "forks": "2519",
+        "stars": "19605",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -11084,8 +11337,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "7850",
-        "stars": "38873",
+        "forks": "7871",
+        "stars": "38973",
         "topics": [
           "3d-globe",
           "cesium",
@@ -12157,8 +12410,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4533",
-        "stars": "67794",
+        "forks": "4541",
+        "stars": "67891",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -13691,8 +13944,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
-        "forks": "310",
-        "stars": "4279",
+        "forks": "311",
+        "stars": "4285",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -13798,7 +14051,7 @@
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
         "forks": "2840",
-        "stars": "48929",
+        "stars": "48994",
         "topics": [
           "adhd",
           "claude-",
@@ -15320,8 +15573,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39378",
-        "stars": "263164",
+        "forks": "39389",
+        "stars": "263233",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -15381,8 +15634,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3174",
-        "stars": "32902",
+        "forks": "3175",
+        "stars": "32923",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -15445,7 +15698,7 @@
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
         "forks": "702",
-        "stars": "21687",
+        "stars": "21691",
         "topics": [
           "dpi",
           "gpui",
@@ -15597,8 +15850,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "753",
-        "stars": "8203",
+        "forks": "754",
+        "stars": "8209",
         "topics": [],
         "license": "",
         "homepage": "",
