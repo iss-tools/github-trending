@@ -42943,8 +42943,8 @@
       "starsAdded": 64,
       "createdAt": "2026-09-19T11:00:02.055Z",
       "metaData": {
-        "forks": "456",
-        "stars": "3620",
+        "forks": "457",
+        "stars": "3630",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://codex-x.site",
@@ -44028,8 +44028,8 @@
       "starsAdded": 89,
       "createdAt": "2026-09-20T11:00:01.894Z",
       "metaData": {
-        "forks": "526",
-        "stars": "5675",
+        "forks": "530",
+        "stars": "5703",
         "topics": [
           "agent-native",
           "agents",
@@ -44205,8 +44205,8 @@
       "starsAdded": 32,
       "createdAt": "2026-09-19T16:00:01.815Z",
       "metaData": {
-        "forks": "456",
-        "stars": "3620",
+        "forks": "457",
+        "stars": "3630",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://codex-x.site",
@@ -44677,8 +44677,8 @@
       "starsAdded": 607,
       "createdAt": "2026-09-20T16:00:01.821Z",
       "metaData": {
-        "forks": "526",
-        "stars": "5675",
+        "forks": "530",
+        "stars": "5703",
         "topics": [
           "agent-native",
           "agents",
@@ -45302,8 +45302,8 @@
       "starsAdded": 79,
       "createdAt": "2026-09-21T11:00:01.798Z",
       "metaData": {
-        "forks": "456",
-        "stars": "3620",
+        "forks": "457",
+        "stars": "3630",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://codex-x.site",
@@ -45465,6 +45465,711 @@
           "想替代昂贵商业 DMS 的中小团队"
         ],
         "description": "Paperless-ngx 是 GitHub 44k+ Star 的开源自托管文档管理系统，可将扫描件、PDF、邮箱附件自动 OCR 识别、打标归档，并支持全文检索秒找历史文档。Docker 一键部署，数据完全本地。注意：中文 OCR 识别较弱，数据明文存储，需自行做好备份与安全防护。"
+      }
+    }
+  ],
+  "20260922": [
+    {
+      "id": "f818602b-e101-407a-b981-7dfafc0b8702",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "repo": "Open-Dev-Society/OpenStock",
+      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "language": "TypeScript",
+      "stars": 17446,
+      "forks": 2173,
+      "starsAdded": 843,
+      "createdAt": "2026-09-21T16:00:01.856Z",
+      "metaData": {
+        "forks": "2169",
+        "stars": "17387",
+        "topics": [
+          "coderabbit",
+          "inngest",
+          "nextjs",
+          "shadcn-ui",
+          "stock-market",
+          "tailwindcss"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://openstock-ods.vercel.app",
+        "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free. - Open-Dev-Society/OpenStock"
+      },
+      "summaryData": {
+        "tags": [
+          "股票行情",
+          "Next.js",
+          "自托管",
+          "TailwindCSS",
+          "Finnhub"
+        ],
+        "cover": "",
+        "title": "OpenStock：免费开源的自托管股票信息平台",
+        "ability": [
+          "自建监控列表",
+          "全球市场搜索",
+          "AI 邮件日报",
+          "TradingView 图表集成",
+          "一键自托管部署"
+        ],
+        "summary": "基于 Next.js 构建的开源股票平台，支持自托管、集成行情图表与 AI 资讯推送。",
+        "category": [
+          "开源项目",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "个人投资者",
+          "全栈开发者",
+          "创业团队",
+          "金融科技学习者",
+          "数据隐私关注者"
+        ],
+        "description": "OpenStock 是一个基于 Next.js 15 构建的开源股票平台，支持 Docker 自托管。它集成了 Finnhub 和 TradingView 提供实时行情，允许用户自建监控列表，并通过 AI 发送邮件日报，是昂贵行情软件的免费替代方案。"
+      }
+    },
+    {
+      "id": "912e3e89-a9bd-4b77-b722-97870d1927a9",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/trycua/cua",
+      "repo": "trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "HTML",
+      "stars": 25559,
+      "forks": 1762,
+      "starsAdded": 609,
+      "createdAt": "2026-09-21T16:00:01.842Z",
+      "metaData": {
+        "forks": "1757",
+        "stars": "25541",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "apple",
+          "computer-use",
+          "computer-use-agent",
+          "containerization",
+          "cua",
+          "desktop-automation",
+          "hacktoberfest",
+          "lume",
+          "macos",
+          "manus",
+          "operator",
+          "swift",
+          "virtualization",
+          "virtualization-framework",
+          "windows",
+          "windows-sandbox"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cua.ai",
+        "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation. - trycua/cua"
+      },
+      "summaryData": {
+        "tags": [
+          "Computer-Use",
+          "AI Agents",
+          "开源",
+          "自动化",
+          "虚拟化"
+        ],
+        "cover": "",
+        "title": "Cua：AI 计算机操作基础设施栈",
+        "ability": [
+          "跨平台 UI 自动化",
+          "云端/本地隔离沙箱",
+          "后台无干扰操作",
+          "标准化 Agent 评测",
+          "虚拟化环境管理"
+        ],
+        "summary": "一套让 AI 控制真实/虚拟电脑的开源基础设施，打通驱动、沙箱与评测。",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 研究员",
+          "自动化开发工程师",
+          "AI 产品构建者",
+          "DevOps 与安全团队",
+          "技术极客"
+        ],
+        "description": "Cua 提供了一套完整的工具链，包括本地后台驱动、跨平台沙箱及评测基准。它能帮助开发者构建能操作 GUI 的 AI Agent，支持在安全隔离的环境中运行任务并生成训练数据。"
+      }
+    },
+    {
+      "id": "30328e10-de20-4de5-a4e9-0f1d7eb3cfc8",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "repo": "BuilderIO/agent-native",
+      "description": "A framework for building agentic apps",
+      "language": "TypeScript",
+      "stars": 5695,
+      "forks": 528,
+      "starsAdded": 607,
+      "createdAt": "2026-09-21T16:00:01.826Z",
+      "metaData": {
+        "forks": "530",
+        "stars": "5703",
+        "topics": [
+          "agent-native",
+          "agents",
+          "ai",
+          "react",
+          "typescript"
+        ],
+        "license": "",
+        "homepage": "https://www.agent-native.com",
+        "description": "A framework for building agentic apps. Contribute to BuilderIO/agent-native development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Agent 原生",
+          "TypeScript",
+          "开源框架",
+          "MCP",
+          "Builder.io"
+        ],
+        "cover": "",
+        "title": "agent-native 深度评测：把「给 AI 造家」做成一套开源框架",
+        "ability": [
+          "Action 只需定义一次，UI、Agent、HTTP、MCP、CLI 自动全部复用",
+          "人与 AI 共享同一份数据库状态，AI 操作时界面实时同步刷新",
+          "内置 MCP 和 A2A 协议，Claude Code 等外部 Agent 可直接操作你的应用",
+          "提供 6 个可完整 fork 的开源 SaaS 模板（日历、笔记、幻灯片、数据分析等）",
+          "一行命令为编码 Agent 添加 /visual-plan 可视化计划能力"
+        ],
+        "summary": "Builder.io 出品的开源 TypeScript 框架，让你造出「人和 AI 操作同一个产品」的 Agent 原生应用",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源框架"
+        ],
+        "suitable": [
+          "想用 AI 能力替代付费 SaaS 的独立开发者和小团队",
+          "想从 Agent 原生架构起步的 AI 应用创业团队",
+          "使用 Claude Code、Cursor 的前端/全栈工程师",
+          "需要构建人机协作内部平台的企业工具团队",
+          "想研究 Agent 应用架构范式的技术人员"
+        ],
+        "description": "agent-native 是 Builder.io 团队推出的 MIT 开源 TypeScript 框架，核心解决「传统 SaaS 只能加聊天窗、裸 Agent 没有产品形态」的痛点。它通过 Action 单一定义、人机共享数据库状态、MCP+A2A 协议原生三大支柱，让 AI 和人类以同等地位操作同一个产品，并附带多个可直接 fork 的完整开源 SaaS 模板，被称为 Agent 原生应用目前最完整的开源答案。"
+      }
+    },
+    {
+      "id": "3d4436d1-0c33-4145-869f-992f2b549be6",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/coder/coder",
+      "repo": "coder/coder",
+      "description": "Secure environments for developers and their agents",
+      "language": "Go",
+      "stars": 16316,
+      "forks": 1561,
+      "starsAdded": 461,
+      "createdAt": "2026-09-21T16:00:01.863Z",
+      "metaData": {
+        "forks": "1560",
+        "stars": "16302",
+        "topics": [
+          "agents",
+          "dev-tools",
+          "development-environment",
+          "go",
+          "golang",
+          "ide",
+          "jetbrains",
+          "remote-development",
+          "terraform",
+          "vscode"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://coder.com",
+        "description": "Secure environments for developers and their agents - coder/coder"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "Terraform",
+          "CloudIDE",
+          "SelfHosted",
+          "AIAgents"
+        ],
+        "cover": "",
+        "title": "coder/coder：自托管云开发环境与 AI 代理平台",
+        "ability": [
+          "Terraform 统一环境管理",
+          "AI 代理治理与安全接入",
+          "自托管与合规审计",
+          "自动化成本控制",
+          "多 IDE 无缝接入"
+        ],
+        "summary": "基于 Terraform 的自托管云开发环境平台，统一管理环境与 AI 代码代理，注重安全与成本控制。",
+        "category": [
+          "开发工具",
+          "DevOps",
+          "AI 编程"
+        ],
+        "suitable": [
+          "平台/DevOps 团队",
+          "中大型技术团队",
+          "注重数据安全的企业",
+          "AI 治理需求方",
+          "追求开发环境标准化的团队"
+        ],
+        "description": "Coder 是一个自托管云开发环境平台，利用 Terraform 模板化工作空间，通过 WireGuard 确保安全，集成 AI 代码代理并提供成本控制与审计功能，适合需要统一治理与合规的企业团队。"
+      }
+    },
+    {
+      "id": "7e6ddde0-2e95-4a40-8f43-85396ef4ff0b",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/financial-services",
+      "repo": "anthropics/financial-services",
+      "description": "",
+      "language": "Python",
+      "stars": 35683,
+      "forks": 5264,
+      "starsAdded": 425,
+      "createdAt": "2026-09-21T16:00:01.867Z",
+      "metaData": {
+        "forks": "5264",
+        "stars": "35669",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to anthropics/financial-services development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "MCP",
+          "金融Agent",
+          "Anthropic",
+          "开源模板"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方金融 Agent 模板库深度评测：把 Claude 变成投行分析师",
+        "ability": [
+          "提供 10 个端到端金融 Agent（Pitchbook/财报/月结/KYC 等）一键部署",
+          "集成 FactSet、Moody's、PitchBook 等 11 个 MCP 数据连接器",
+          "用 Markdown 编写领域 Skills，业务专家可直接编辑方法论",
+          "支持 Cowork/Claude Code/云端 Managed Agents 三种部署形态",
+          "内置 /comps /dcf /earnings 斜杠命令快速触发分析工作流"
+        ],
+        "summary": "Anthropic 官方开源的金融行业 Agent 模板库，用 Skills + Plugins + MCP 让 Claude 自动完成 Pitchbook、财报分析、月结对账等金融工作流。",
+        "category": [
+          "开源项目",
+          "AI 工具",
+          "金融科技"
+        ],
+        "suitable": [
+          "金融服务领域开发者与技术负责人",
+          "投行/PE/券商分析师",
+          "基金会计与风控合规人员",
+          "想学习垂直 Agent 工程范式的 AI 爱好者",
+          "评估 AI 落地的金融企业决策者"
+        ],
+        "description": "Anthropic 官方开源的金融行业参考实现，把 LLM 能力封装成可版本化、可审计的 Skills、Commands 和 MCP 连接器，覆盖投行、股权研究、私募基金和财富管理等高价值工作流。开箱即用但需 Claude 付费订阅及数据源授权，输出必须人工复核。"
+      }
+    },
+    {
+      "id": "8e9bd2a4-be2a-40bd-a0a9-72a657af77ec",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "repo": "Crosstalk-Solutions/project-nomad",
+      "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+      "language": "TypeScript",
+      "stars": 37678,
+      "forks": 3756,
+      "starsAdded": 360,
+      "createdAt": "2026-09-21T16:00:01.879Z",
+      "metaData": {
+        "forks": "3754",
+        "stars": "37658",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.projectnomad.us",
+        "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required. - Crosstalk-Solutions/project-nomad"
+      },
+      "summaryData": {
+        "tags": [
+          "离线",
+          "Docker",
+          "本地AI",
+          "知识库",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "Project NOMAD：离线生存电脑的 Docker 聚合总控",
+        "ability": [
+          "统一Web控制台管理",
+          "离线百科与知识库",
+          "本地AI助手(RAG)",
+          "离线地图与教育平台",
+          "自动更新与容器编排"
+        ],
+        "summary": "一键打造离线知识中枢，集成百科、AI、地图、教育工具",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 应用"
+        ],
+        "suitable": [
+          "应急预备爱好者",
+          "教育机构与家庭",
+          "开发者与极客",
+          "离线环境工作者"
+        ],
+        "description": "Project NOMAD 是一个离线优先的知识与教育服务器总控，通过 Docker 统一管理维基百科、Khan Academy、离线地图、本地 AI 等多种服务，提供一键安装与 Web 控制台，适合将旧机打造成离线生存电脑。"
+      }
+    },
+    {
+      "id": "0a440e8b-a105-4bce-abc3-e5333f562c7e",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "repo": "zhouxiaoka/autoclip",
+      "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
+      "language": "Python",
+      "stars": 8080,
+      "forks": 1561,
+      "starsAdded": 266,
+      "createdAt": "2026-09-21T16:00:01.873Z",
+      "metaData": {
+        "forks": "1557",
+        "stars": "8045",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-tools",
+          "ai-video",
+          "ai-video-editor",
+          "auto",
+          "auto-highlight",
+          "highlight",
+          "llm",
+          "video",
+          "video-editing",
+          "video-processing",
+          "videos"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+        "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具 - zhouxiaoka/autoclip"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI视频切片",
+          "通义千问",
+          "B站二创",
+          "FFmpeg"
+        ],
+        "cover": "",
+        "title": "AutoClip 深度评测：开源 AI 视频切片工具，粘贴链接自动提取高光片段",
+        "ability": [
+          "基于通义千问 LLM 分析视频字幕，自动提取高光片段并打分",
+          "支持 B 站和 YouTube 链接，一键下载并按时间戳切片输出 MP4",
+          "AI 自动生成吸引人的切片标题和主题合集推荐",
+          "本地化部署，视频数据不离开本机，隐私安全",
+          "提供 FastAPI + React 完整 Web 界面，WebSocket 实时进度推送"
+        ],
+        "summary": "一款开源本地部署的 AI 视频切片工具，粘贴 B 站/YouTube 链接即可自动识别精彩片段并剪成短视频。",
+        "category": [
+          "开源项目",
+          "AI 工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "有技术能力的 B 站切片 UP 主",
+          "视频二创工作室",
+          "在线教育机构",
+          "企业培训部门",
+          "想学习 LLM+视频处理落地的开发者"
+        ],
+        "description": "AutoClip 是一款 MIT 协议开源的 AI 视频切片工具，采用 yt-dlp + 通义千问 + FFmpeg 七步流水线架构，自动完成高光识别、评分、标题生成与切片。相比 OpusClip 等 SaaS，它免费且数据本地化，但部署需要 Docker、Redis 和 API Key，且强依赖视频字幕质量，适合有一定技术基础的创作者。"
+      }
+    },
+    {
+      "id": "bec46f36-dd7b-4ce8-b604-0c9b116c2907",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/ruanyf/weekly",
+      "repo": "ruanyf/weekly",
+      "description": "科技爱好者周刊，每周五发布",
+      "language": "",
+      "stars": 103848,
+      "forks": 4446,
+      "starsAdded": 221,
+      "createdAt": "2026-09-21T16:00:01.875Z",
+      "metaData": {
+        "forks": "4446",
+        "stars": "103834",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "科技爱好者周刊，每周五发布. Contribute to ruanyf/weekly development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "阮一峰",
+          "周刊",
+          "GitHub",
+          "技术精选",
+          "开发者"
+        ],
+        "cover": "",
+        "title": "科技爱好者周刊：中文技术圈的高质量信息策展",
+        "ability": [
+          "高质量资讯策展",
+          "程序员招聘信息",
+          "开源技术工具推荐",
+          "社区交流与投稿",
+          "稳定的周刊归档"
+        ],
+        "summary": "阮一峰维护的顶级技术周刊，用人工策展帮你从海量信息中筛选优质内容。",
+        "category": [
+          "技术资讯",
+          "开源社区",
+          "招聘求职"
+        ],
+        "suitable": [
+          "软件开发者",
+          "独立开发者",
+          "技术求职者",
+          "科技爱好者",
+          "在校学生"
+        ],
+        "description": "这是阮一峰在 GitHub 维护的纯静态周刊，每周五更新。它汇集了精选技术文章、实用工具、AI 资讯及高质量的程序员招聘信息，旨在通过人工策展为开发者提供高信噪比的阅读体验，完全免费且无广告。"
+      }
+    },
+    {
+      "id": "dbad81c6-74a4-4864-a17d-0f4940677811",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 7509,
+      "forks": 517,
+      "starsAdded": 217,
+      "createdAt": "2026-09-21T16:00:01.861Z",
+      "metaData": {
+        "forks": "516",
+        "stars": "7490",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
+      "id": "72961fd5-b65c-4a47-a7d4-8907d6fb4e59",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/mvt-project/mvt",
+      "repo": "mvt-project/mvt",
+      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
+      "language": "Python",
+      "stars": 13437,
+      "forks": 1316,
+      "starsAdded": 177,
+      "createdAt": "2026-09-21T16:00:01.871Z",
+      "metaData": {
+        "forks": "1315",
+        "stars": "13423",
+        "topics": [
+          "android",
+          "forensics",
+          "forensics-tools",
+          "ios",
+          "mobile",
+          "security"
+        ],
+        "license": "License",
+        "homepage": "https://mvt.re",
+        "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise. - mvt-project/mvt"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "移动取证",
+          "反间谍",
+          "iOS",
+          "Android"
+        ],
+        "cover": "",
+        "title": "MVT 深度评测：大赦国际开源的反间谍软件取证手术刀",
+        "ability": [
+          "基于 STIX2 威胁情报的 IOC 匹配检测",
+          "iOS 加密备份解密与扫描",
+          "Android ADB 直连取证分析",
+          "统一时间线取证报告生成",
+          "插件化架构支持自定义取证模块"
+        ],
+        "summary": "大赦国际开源的移动设备取证工具，专门检测 iPhone/Android 是否被植入 Pegasus 等国家级间谍软件。",
+        "category": [
+          "安全工具",
+          "开发者工具",
+          "隐私保护"
+        ],
+        "suitable": [
+          "调查记者与 NGO 人权工作者",
+          "数字取证研究员 / DFIR 工程师",
+          "企业安全团队（高管设备检测）",
+          "移动安全学习者 / CTF 选手",
+          "情报分析与威胁猎手"
+        ],
+        "description": "MVT 是大赦国际安全实验室开源的移动取证工具包，诞生于 2021 年 Pegasus 间谍软件丑闻。它通过比对公开的威胁指标库（STIX2 格式）扫描 iOS 备份、系统日志或 Android ADB 数据，判断设备是否被 Pegasus、Predator 等商业间谍软件盯上。它是一把面向专业取证员的手术刀，而非一键扫描的普通安全 App——结果解读与深度分析均需具备数字取证背景。"
+      }
+    },
+    {
+      "id": "62d8b7d5-858a-43a1-bc26-44eb62522d5e",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/yynxxxxx/Codex-X",
+      "repo": "yynxxxxx/Codex-X",
+      "description": "OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML 配置可视化的跨平台工具。",
+      "language": "Rust",
+      "stars": 3629,
+      "forks": 457,
+      "starsAdded": 79,
+      "createdAt": "2026-09-21T16:00:01.881Z",
+      "metaData": {
+        "forks": "457",
+        "stars": "3630",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://codex-x.site",
+        "description": "OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML 配置可视化的跨平台工具。 - yynxxxxx/Codex-X"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI Codex",
+          "提示词管理",
+          "Tauri",
+          "本地工具",
+          "效率"
+        ],
+        "cover": "",
+        "title": "Codex-X 深度评测：OpenAI Codex 可视化管理神器",
+        "ability": [
+          "提示词可视化注入与管理",
+          "第三方 Provider/API 一站式切换",
+          "会话同步与批量清理",
+          "Skills/MCP 可视化管理",
+          "TOML 与 Auth 统一配置编辑"
+        ],
+        "summary": "Codex-X 让你像管理插件一样，一键切换 Codex 的提示词、第三方 API 与会话，效率翻倍。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生产力"
+        ],
+        "suitable": [
+          "OpenAI Codex 桌面端/CLI 重度用户",
+          "安全研究与逆向工程师",
+          "多环境/多账号使用者",
+          "开发者与内容创作者",
+          "需要维护多人统一配置的团队"
+        ],
+        "description": "Codex-X 是一款跨平台桌面应用，将 OpenAI Codex 的提示词模板、第三方 API、会话历史、Skills/MCP 以及配置文件统一纳入可视化 UI，支持一键切换、同步、备份与批量管理，大幅提升效率并降低配置出错风险。"
+      }
+    },
+    {
+      "id": "e0c5787f-dda5-4dee-87d8-3fbaf88166ef",
+      "dateAdded": "20260922",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/quiche",
+      "repo": "cloudflare/quiche",
+      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
+      "language": "Rust",
+      "stars": 12232,
+      "forks": 1129,
+      "starsAdded": 69,
+      "createdAt": "2026-09-21T16:00:01.869Z",
+      "metaData": {
+        "forks": "1126",
+        "stars": "12212",
+        "topics": [
+          "http3",
+          "network-programming",
+          "protocol",
+          "quic",
+          "rust"
+        ],
+        "license": "BSD-2-Clause license",
+        "homepage": "https://docs.quic.tech/quiche/",
+        "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3 - cloudflare/quiche"
+      },
+      "summaryData": {
+        "tags": [
+          "QUIC",
+          "HTTP/3",
+          "Rust",
+          "网络编程",
+          "Cloudflare"
+        ],
+        "cover": "",
+        "title": "cloudflare/quiche：Rust 编写的高性能 QUIC/HTTP/3 协议库",
+        "ability": [
+          "QUIC/HTTP/3 协议实现",
+          "Sans-IO 设计（I/O 解耦）",
+          "跨平台与多语言支持（FFI）",
+          "高性能与内存安全",
+          "生产级可靠性验证"
+        ],
+        "summary": "Cloudflare 出品的 QUIC/HTTP/3 协议栈，采用 Rust 和 Sans-IO 设计，兼顾安全性与高性能，支持跨平台嵌入。",
+        "category": [
+          "网络协议",
+          "开发工具",
+          "基础设施"
+        ],
+        "suitable": [
+          "基础设施开发者",
+          "网络协议研究人员",
+          "需要深度定制的 Rust/C++ 开发者",
+          "边缘计算与网关架构师",
+          "网络性能敏感工程师"
+        ],
+        "description": "quiche 是 Cloudflare 用 Rust 编写的 QUIC 和 HTTP/3 协议栈。它采用 Sans-IO 设计，解耦了协议状态机与 I/O 操作，支持多平台部署和 FFI 嵌入。经受过 Cloudflare 全球边缘网络验证，是构建高性能网络服务的强大底层库。"
       }
     }
   ]
