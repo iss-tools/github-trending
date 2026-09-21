@@ -1,0 +1,61 @@
+{
+  "id": "f1f2c026-5ce1-4c67-b391-96004b38ac6a",
+  "url": "https://github.com/mvt-project/mvt",
+  "domain": "github.com",
+  "repo": "mvt-project/mvt",
+  "description": "MVT 是大赦国际安全实验室开源的移动取证工具包，诞生于 2021 年 Pegasus 间谍软件丑闻。它通过比对公开的威胁指标库（STIX2 格式）扫描 iOS 备份、系统日志或 Android ADB 数据，判断设备是否被 Pegasus、Predator 等商业间谍软件盯上。它是一把面向专业取证员的手术刀，而非一键扫描的普通安全 App——结果解读与深度分析均需具备数字取证背景。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-21T11:04:09.314Z",
+  "metaData": {
+    "forks": "1309",
+    "stars": "13344",
+    "topics": [
+      "android",
+      "forensics",
+      "forensics-tools",
+      "ios",
+      "mobile",
+      "security"
+    ],
+    "license": "License",
+    "homepage": "https://mvt.re",
+    "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise. - mvt-project/mvt"
+  },
+  "summaryData": {
+    "tags": [
+      "开源项目",
+      "移动取证",
+      "反间谍",
+      "iOS",
+      "Android"
+    ],
+    "cover": "",
+    "title": "MVT 深度评测：大赦国际开源的反间谍软件取证手术刀",
+    "ability": [
+      "基于 STIX2 威胁情报的 IOC 匹配检测",
+      "iOS 加密备份解密与扫描",
+      "Android ADB 直连取证分析",
+      "统一时间线取证报告生成",
+      "插件化架构支持自定义取证模块"
+    ],
+    "summary": "大赦国际开源的移动设备取证工具，专门检测 iPhone/Android 是否被植入 Pegasus 等国家级间谍软件。",
+    "category": [
+      "安全工具",
+      "开发者工具",
+      "隐私保护"
+    ],
+    "suitable": [
+      "调查记者与 NGO 人权工作者",
+      "数字取证研究员 / DFIR 工程师",
+      "企业安全团队（高管设备检测）",
+      "移动安全学习者 / CTF 选手",
+      "情报分析与威胁猎手"
+    ],
+    "description": "MVT 是大赦国际安全实验室开源的移动取证工具包，诞生于 2021 年 Pegasus 间谍软件丑闻。它通过比对公开的威胁指标库（STIX2 格式）扫描 iOS 备份、系统日志或 Android ADB 数据，判断设备是否被 Pegasus、Predator 等商业间谍软件盯上。它是一把面向专业取证员的手术刀，而非一键扫描的普通安全 App——结果解读与深度分析均需具备数字取证背景。"
+  },
+  "contentDetail": "# 深度评测：MVT（Mobile Verification Toolkit）—— 一款来自国际特赦组织的\"反间谍软件手术刀\"\n> 评测对象：https://github.com/mvt-project/mvt\n> 项目类型：GitHub 开源项目（数字取证 / 移动安全 / 反间谍工具）\n> 评测时间：2026 年 9 月\n---\n## 一句话总结\n**MVT 是由大赦国际安全实验室开源的移动设备取证工具包，专门用于检测 iPhone 和 Android 是否被植入过 Pegasus（飞马）级别的商业间谍软件——它是记者、人权工作者和数字取证研究员手中的\"法医手术刀\"，但对普通用户而言并不是一键扫描的安全 App。**\n如果你只想知道\"我的手机安全吗？\"，MVT 会告诉你：**请去找专业人士**；但如果你想问\"这台设备是否曾被国家级间谍软件盯上？\"，MVT 就是目前地球上少数几个能够给出严肃回答的公开工具。\n---\n## 背景与痛点：一个由全球最大丑闻催生的项目\n要理解 MVT 的价值，必须先理解它诞生的历史背景——**Pegasus Project（飞马计划）**。\n2021 年 7 月，由 Forbidden Stories 与大赦国际牵头、全球 17 家媒体联合参与的调查揭露：以色列 NSO Group 开发的 Pegasus 间谍软件被用于监控全球超过 5 万人的手机，受害者包括记者、反对派政客、人权律师、甚至国家元首。这种间谍软件最恐怖的地方在于\"**零点击（zero-click）**\"——你不需要点开任何链接，一条未接的 iMessage 就足以让攻击者完整控制你的手机：读取消息、打开麦克风、追踪 GPS、导出相册。\n**取证痛点由此凸显：**\n| 传统杀毒软件 | MVT 这类取证工具 |\n|---|---|\n| 面向消费级威胁（流氓 App、钓鱼链接） | 面向 APT 级攻击（国家级间谍软件） |\n| 依赖病毒库、特征码 | 依赖 Indicators of Compromise（IOC）+ 深度文件系统取证 |\n| 装在手机内，运行在受感染环境 | 从外部通过电脑分析设备备份/镜像 |\n| 给你\"看起来安全\"的绿灯 | 给你\"是否有已知 IOC 命中\"的证据链 |\n大赦国际安全实验室在调查 Pegasus 的过程中，沉淀了一套完整的取证方法论，并在 2021 年 7 月同步开源了这套工具——这就是 MVT。\n> **一个生动比喻**：如果说普通杀毒软件是\"小区保安巡逻\"，那 MVT 就像一位法医——它不负责阻止犯罪，但它能走进案发现场，用镊子夹起每一根头发、每一枚指纹，告诉你\"案发时间、案发手法、嫌疑人是谁\"。前提是，你得知道怎么请这位法医进门。\n---\n## 核心亮点与功能剖析\n### 1. 跨平台双引擎：`mvt-ios` 与 `mvt-android`\nMVT 的顶层 CLI 分为三条命令线，v3 版本后结构更加清晰：\n- **`mvt-ios`**：分析 iOS 设备的备份、文件系统转储、系统日志（crash/sysdiagnose/logarchive）、以及 Safari/WhatsApp 等应用的数据库。\n- **`mvt-android`**：通过 ADB 协议提取 Android 设备的已装应用、系统属性、广播接收器、服务、进程等信息，并分析 Bug Report。\n- **`mvt`**：承载平台无关的功能，如 `download-iocs`（拉取最新的公开 IOC）、`plugins`（插件管理）、shell 自动补全等。\n这种拆分让职责边界非常干净——iOS 和 Android 的取证路径本来就完全不同，强行合并只会让参数和文档变得晦涩。\n### 2. 基于 STIX2 的 IOC 匹配机制（这是 MVT 的灵魂）\nMVT 本身并不\"知道\"哪款间谍软件长什么样，它的工作模式是：\n```\n设备取证数据（JSON 记录）  +  IOC 指标文件（STIX2 格式）  →  匹配引擎  →  命中报告\n```\nSTIX2（Structured Threat Information eXchange）是国际标准的威胁情报交换格式，Amnesty、Citizen Lab、Microsoft 等机构在每次公开 Pegasus / Predator / Reign 间谍软件分析报告时，都会同步发布 STIX2 文件。用户只需运行：\n```bash\nmvt download-iocs\n```\n即可自动下载最新的公开指标，随后任何一次扫描都会自动比对这些指标。\n**好处显而易见**：MVT 是一个\"可持续进化的检测平台\"，新间谍软件出现时，不需要更新 MVT 本身，只需要更新 IOC 文件——这是典型的**数据与逻辑分离**架构设计。\n> **比喻**：MVT 像一台\"通用检测试剂机\"，而 STIX2 文件才是针对不同病毒的\"试纸\"。MVT 团队造机器，全球安全研究员提供试纸。\n### 3. 完整的 iOS 取证链路\niOS 的取证难度远高于 Android，因为苹果系统是封闭花园。MVT 提供了三档由浅入深的取证方式：\n| 取证方式 | 前置条件 | 数据深度 |\n|---|---|---|\n| **iTunes 备份检查**（`check-backup`） | 一根 USB 线 + 设置备份密码 | 中等：短信、通话、WhatsApp、Safari 历史、部分应用数据库 |\n| **加密备份解密**（`decrypt-backup` / `extract-key`） | 备份密码 | 解密后才可做后续分析 |\n| **文件系统转储**（`check-fs`） | **必须越狱** | 深度：完整的系统目录、进程崩溃日志、网络流量历史 |\n官方文档中给出的 iOS 完整流程示例非常直白：\n```bash\n# 1. 用 libimobiledevice 做加密备份\nidevicebackup2 backup encryption on -i\nidevicebackup2 backup --full <backup_path>\n# 2. 解密备份\nmvt-ios decrypt-backup --password <密码> --input <备份路径> --output <解密输出>\n# 3. 扫描并比对 IOC\nmvt-ios check-backup --iocs <STIX2文件> --output <报告路径> <解密路径>\n```\n### 4. Android 的 ADB 直连分析\nAndroid 端相对友好，**无需 root** 即可做大量基础分析：\n```bash\n# 设备开启 USB 调试后\nmvt-android check-adb -f --iocs <ioc_path> --output <report_path>\n```\n该命令会提取已安装应用列表、系统服务、接收器、活动、内容提供器等，并与 IOC 匹配。如果设备已 root，还能进一步做更深的文件系统检查。\n### 5. 输出格式对后续分析极其友好\nMVT 会输出两类 JSON：\n- **完整记录 JSON**：所有被解析到的记录（短信、通话、Wi-Fi 连接历史等），用于人工浏览。\n- **`_detected` 后缀 JSON**：仅包含命中 IOC 的可疑记录，用于快速研判。\n此外，v3 版本还提供**统一时间线**输出——把所有来源的事件按时间排序，方便取证员做\"案发时间轴还原\"。这是数字取证中极其关键的能力。\n### 6. 插件化架构（v3 重大更新）\nv3 版本引入了 breaking change，但换来的是**插件化扩展能力**：安全研究者可以打包自己的取证模块（如针对某款特定间谍软件的专用检测逻辑），通过 Python entry point 注册进 `check-*` 命令，**不需要修改 MVT 源码**。这是成熟的软件工程实践，让 MVT 可以承载整个生态的研究成果。\n### 7. 技术栈与架构\n- **语言**：纯 Python（3.10+），通过 `pip` 或 `uv` 即可安装\n- **核心依赖**：`click`（CLI 框架）、`iOSbackup` / 自研解析器（处理 iOS 备份格式）、`adb-shell`（Android 通信）、`stix2`（威胁情报格式解析）\n- **代码组织**：模块化清晰，每个 iOS 取证模块对应一个独立的 Python 类，便于社区贡献新模块\n- **安装方式**：支持 `pip install mvt`、`uv tool install mvt`，也支持源码安装；**没有官方 Docker 镜像**，但因为纯 Python 依赖简单，自己打包 Docker 镜像也很轻松\n---\n## 上手门槛与部署体验：一颗 \"高清\" 劝退提示牌\nMVT 项目 README 里有一段话非常显眼，值得原文摘录：\n> **MVT is a forensic research tool intended for technologists and investigators. It requires understanding digital forensics and using command-line tools. This is not intended for end-user self-assessment. If you are concerned with the security of your device please seek reputable expert assistance.**\n这段话不是免责套话，而是**严肃的使用边界**。体验下来，门槛主要在三个层面：\n### 门槛 1：命令行基础\n你需要熟悉终端、Python 虚拟环境、以及如何看懂 JSON 输出。\n### 门槛 2：取证背景知识\n你至少要知道什么叫\"备份\"、\"文件系统转储\"、\"系统日志\"、\"崩溃日志\"、\"Wi-Fi 漫游记录\"，以及**为什么某个进程名字出现在 crash 日志里可能是恶意的**。\n### 门槛 3：iOS 越狱（想深入分析的话）\n基础的 `check-backup` 只需要普通备份；但要看清 Pegasus 这种级别的间谍软件，往往需要**越狱后的文件系统完整转储**，这对普通用户几乎不可行。\n### 门槛 4：解读结果需要经验\nMVT 的输出是 JSON 文件，需要你自己打开来分析。社区曾有人在 GitHub Discussion #448 中抱怨：\"检查备份后，我需要手动翻输出文件夹里的文件，没有友好的报告界面。\"这是社区普遍的共识性痛点。\n> **结论**：MVT 的 DX（开发者体验）在\"取证工具\"这个品类里属于**良好偏上**——文档详实（docs.mvt.re）、命令语义清晰、JSON 输出规范；但和\"消费级软件\"比，它是**完全不可用**的。它从不假装自己是后者。\n---\n## 真实使用案例演示\n**场景**：你是一名调查记者，怀疑自己的 iPhone 被 Pegasus 盯上。\n**步骤一**：在干净的 Mac/Linux 电脑上安装 MVT\n```bash\nuv tool install mvt\n```\n**步骤二**：拉取最新的公开 IOC\n```bash\nmvt download-iocs\n```\n**步骤三**：做加密备份（使用 `idevicebackup2` 或 iTunes），然后用 MVT 解密并扫描：\n```bash\nMVT_IOS_BACKUP_PASSWORD=\"my_secret\" mvt-ios decrypt-backup \\\n    -d ./decrypted ./my_backup\nmvt-ios check-backup --iocs ./iocs/ --output ./report ./decrypted\n```\n**步骤四**：查看结果\n```bash\nls ./report/\n# com.apple.WebKit.WebContent.processes.json\n# contacts.json\n# calls.json\n# whatsapp.json\n# ...\n# safari_favicon.json_detected   ← 注意这个 _detected 后缀！\n```\n一旦看到带 `_detected` 后缀的文件，说明有 IOC 命中。打开文件会看到类似：\n```json\n{\n  \"indicator\": \"domain-name-val='webtest-lookip.net'\",\n  \"name\": \"Pegasus C2 domain\",\n  \"records\": [\n    {\"timestamp\": \"...\", \"source\": \"Safari Favicon DB\", \"value\": \"webtest-lookip.net\"}\n  ]\n}\n```\n这一行意味着：你的 Safari 图标缓存数据库里出现了 Pegasus 已知的 C2（命令与控制）服务器域名——**这是一个极其严肃的信号**，需要立即联系大赦国际安全实验室或 Access Now 数字安全热线。\n---\n## 目标人群与收益：谁真的需要 MVT？\n| 人群 | 是否适合 | 能获得什么 |\n|---|---|---|\n| **调查记者 / 人权工作者** | ⭐⭐⭐⭐⭐ | 评估自身是否被定向监控，决定是否升级设备/操作习惯 |\n| **数字取证研究员 / DFIR 工程师** | ⭐⭐⭐⭐⭐ | 标准化的移动取证工具链，可直接接入自己的工作流 |\n| **企业安全团队 / 红队** | ⭐⭐⭐ | 检测高管/敏感岗位员工的设备是否被植入商业间谍软件 |\n| **CTF 选手 / 移动安全学习者** | ⭐⭐⭐ | 学习 iOS/Android 内部数据结构、恶意行为模式的绝佳教材 |\n| **普通用户（担心隐私）** | ⭐ | 门槛过高，结果难以解读，**建议直接找专业机构** |\n**具体收益**：\n1. **用全球最权威的公开 IOC 库武装自己**——大赦国际、Citizen Lab 等机构的间谍软件研究都会同步成 STIX2 文件。\n2. **标准化流程**——不再\"凭感觉判断手机是否安全\"，而是有一份可归档、可复现的证据文件。\n3. **免费、开源、可审计**——相比商业取证工具（Cellebrite、GrayKey 等，动辄数万美元），MVT 完全免费。\n4. **学习价值**——即使不用于实战，阅读 MVT 的模块源码就能学到 iOS 备份格式、Plist 解析、SQLite 取证、Android 系统服务枚举等大量实战知识。\n---\n## 竞品/同类对比：MVT 在生态中的位置\n| 工具 | 定位 | 平台 | 是否需要 root/越狱 | 开源 | 适用场景 |\n|---|---|---|---|---|---|\n| **MVT** | 反间谍取证 | iOS + Android | iOS 深度分析需越狱，Android 基础分析不需要 | ✅（自定义许可证） | 检测定向间谍软件攻击 |\n| **MobSF** | 移动应用安全测试 | 静态分析 APK/IPA + 动态分析 | 动态分析需要模拟器 | ✅ | 评估 App 本身是否有漏洞 |\n| **AndroidQF**（同组织姊妹项目） | Android 取证数据采集 | Android | 需要 ADB | ✅ | 仅采集数据，分析交给 MVT |\n| **Cellebrite UFED** | 商业取证 | iOS + Android | 硬件配合 | ❌ | 执法机关物证提取 |\n| **Objectivity / GrayKey** | 商业破解工具 | iOS | — | ❌ | 执法机关解锁 iPhone |\n| **PiRogue** | 硬件+软件一体化 | iOS + Android | — | ✅ | 内置 MVT，即插即用 |\n**MVT 的独特竞争力**：\n- **唯一开源且专注\"间谍软件检测\"**——MobSF 管的是 App 开发安全，Cellebrite 是执法硬件，而 MVT 专注\"这台设备是否被 Pegasus/Predator 盯上\"。\n- **有真正的实战验证**——Pegasus Project、Citizen Lab 的多个报告都使用 MVT 作为分析工具，其可靠性经过真实世界检验。\n- **PiRogue 等硬件生态已将其预装**，形成了完整的\"取证工作台\"解决方案。\n**与 MobSF 的区别值得特别强调**（这是社区最常见的混淆）：\n> MobSF 回答的是\"**这个 App 有没有安全问题**\"；\n> MVT 回答的是\"**这台设备是否被高级间谍软件攻击过**\"。\n> 两者不是竞争关系，而是互补关系。\n---\n## 局限与不足：必须泼的三盆冷水\n### 1. 公开 IOC 存在天然的滞后性与覆盖盲区\nREADME 中有一段官方\"警告\"，用词相当克制但信息量巨大：\n> **Public indicators of compromise are insufficient to determine that a device is \"clean\", and not targeted with a particular spyware tool. Reliance on public indicators alone can miss recent forensic traces and give a false sense of security.**\n翻译成人话：**就算 MVT 扫描结果全绿，也不代表你的手机是干净的。** 原因有三：\n- 最新的间谍软件变种往往还没有对应的公开 IOC；\n- 真正强大的威胁情报（如 NSO Group 未公开的 C2 域名列表）掌握在大赦国际等机构手中，不对公众开放；\n- 某些间谍软件会主动清理痕迹。\n**这并非 MVT 的错**，而是整个反间谍领域的根本困境——但用户必须清醒地知道这一点。\n### 2. iOS 深度分析依赖越狱\n这是最现实的门槛。基础的备份检查能覆盖相当一部分场景（Pegasus 在备份中也会留痕），但**很多高级持久化机制只有完整文件系统转储才能看到**。而 iOS 越狱本身需要：特定 iOS 版本、特定机型、特定工具（如 checkra1n、palera1n），且会让设备安全性进一步下降。**这是一个\"为检查安全而破坏安全\"的悖论**。\n### 3. 输出不够友好，没有可视化界面\nMVT 的输出是散落的 JSON 文件，社区讨论 #448 中已经有人明确呼吁\"a more user-friendly backup check\"。目前要想生成漂亮的报告，需要自己写脚本或者借助 PiRogue 的 Web 界面。**对一个以技术人群为主的工具来说可以接受，但确实抬高了使用门槛。**\n### 4. 特殊的许可证限制了某些用法\nMVT 采用了**自定义许可证**（非标准 GPL/Apache/MIT），核心约束是：**禁止在未经设备所有者知情同意的情况下使用 MVT 提取/分析数据**。这是一个非常有人文关怀的设计——它从法律层面阻止了 MVT 被用于**亲密伴侣监控、雇主偷窥、家暴控制**等恶意场景。但对研究者来说，也意味着在做任何合规使用前都要仔细阅读许可证。\n### 5. v3 的 breaking change\nv3 分支合并后，输出格式发生了变化，**如果之前有脚本依赖 MVT 输出，可能会跑不通**。这是开源项目成长的正常代价，但对依赖旧版本的生产环境用户来说是一次不小的迁移成本。\n---\n## 社区活跃度与生命力\n- **Star 数**：约 13k（Star History 数据），在取证工具品类里属于头部。\n- **维护方**：大赦国际安全实验室持续投入，有专门的维护者团队，**不是个人 hobby 项目**。\n- **更新节奏**：v3 的大版本更新表明项目仍在活跃演进，插件化架构是长期规划的一部分。\n- **官方文档**：docs.mvt.re 内容完整，覆盖安装、iOS/Android 使用、结果解读、插件开发。\n- **生态配套**：MVT Project 组织下还有 AndroidQF（数据采集）、PiRogue（硬件）、Colander（IOC 管理）等姊妹项目，形成了一个完整的民间反间谍生态。\n- **学术与媒体认可度**：被 Forbidden Stories、Washington Post 等多家媒体在 Pegasus 相关报道中引用，也被 CCC（Chaos Communication Congress）作为议题分享。\n---\n## 结语与行动建议：终极评判\n### 综合评分（满分 10 分）\n| 维度 | 得分 | 评语 |\n|---|---|---|\n| 技术深度 | 9.5 | 真正对抗国家级间谍软件，不是玩具 |\n| 代码质量 | 9.0 | 模块化清晰，v3 插件架构现代化 |\n| 文档完备度 | 9.0 | docs.mvt.re 非常详实，有完整流程示例 |\n| DX（开发者体验） | 7.5 | CLI 设计合理，但输出需要自己解析 |\n| 用户友好度 | 5.0 | **明确不面向普通用户**，这是设计而非缺陷 |\n| 生态与生命力 | 9.0 | 大赦国际持续投入，姊妹项目完善 |\n| 独特性 | 10 | 在开源世界里**几乎没有等价替代品** |\n**总分：9.0 / 10**（在其目标品类内）\n### 行动建议\n**如果你是以下人群，请立刻把它加入工具箱：**\n- 👨‍💻 **DFIR 研究员 / 红队工程师**：作为标准化的移动取证工具链，配合 AndroidQF、Colander 使用。\n- 📰 **调查记者 / NGO 工作者**：把它作为**年度安全体检**的一部分，但**不要**自行解读结果——扫描后请把输出交给大赦国际或 Access Now 的专家。\n- 🎓 **移动安全学习者**：把它当作学习 iOS/Android 内部数据结构的\"活的教科书\"，每个取证模块的源码都是一堂课。\n- 🏢 **企业安全团队**：对高管和敏感岗位员工进行周期性检测，配合访问控制和设备管理策略。\n**如果你是普通用户，请记住这三件事：**\n1. **不要自己折腾 MVT 来\"检查手机\"**——结果你看不懂，操作错了反而可能损坏数据。\n2. 如果你真的怀疑被监控（例如：你是记者/活动家、手机异常发烫、收到奇怪短信后出现奇怪行为），**直接联系 Access Now Digital Security Helpline 或大赦国际安全实验室**，他们提供免费的专家支持。\n3. 与其担心 Pegasus，不如先把**系统更新到最新版本、开启双因素认证、不要点陌生链接**——这三件事能挡掉 99% 的攻击，包括大部分非定向攻击。\n> **最后一句话**：MVT 的存在本身就是一种胜利——**它让\"检测国家级间谍软件\"从一个只有政府和军火商才能玩的游戏，变成了任何一个拿着笔记本电脑的研究员都能参与的事业**。这就是开源的力量，也是大赦国际把它开源出来的真正意义。\n---\n### 相关资源\n- **官方仓库**：https://github.com/mvt-project/mvt\n- **官方文档**：https://docs.mvt.re\n- **官方站点**：https://mvt.re\n- **IOC 订阅命令**：`mvt download-iocs`\n- **大赦国际取证方法论报告**：《Forensic Methodology Report: How to Catch NSO Group's Pegasus》\n- **CCC 2021 演讲**：《Catching NSO Group's Pegasus spyware》\n- **姊妹项目**：AndroidQF（数据采集）、PiRogue（硬件取证平台）、Colander（IOC 管理）",
+  "type": "project",
+  "dateAdded": "20260921"
+}

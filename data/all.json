@@ -1,6 +1,195 @@
 {
   "all": [
     {
+      "id": "78142223-4e87-4d05-86ec-82a316845657",
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "domain": "github.com",
+      "repo": "FlashML-org/FreeToken",
+      "description": "由 UC Berkeley Sky Lab 与 MIT 韩松组联合开源的边缘 MoE 推理引擎，通过带宽自适应执行（q* 策略）、全层双缓冲 prefill 流水线和语义感知缓存三大核心技术，让 8GB 显存笔记本跑 35B、单张 RTX 5090 跑 284B 的 DeepSeek-V4-Flash，在真实 Agent 工作负载下对 llama.cpp、Ollama、KTransformers 取得 1.5-2.3 倍解码吞吐优势，且输出数值与原模型完全等价。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-21T11:13:52.031Z",
+      "metaData": {
+        "forks": "1319",
+        "stars": "13390",
+        "topics": [
+          "deepseek-v4",
+          "edge",
+          "glm",
+          "inference",
+          "minimax",
+          "moe",
+          "qwen",
+          "transformer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://flashml.ai",
+        "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. - FlashML-org/FreeToken"
+      },
+      "summaryData": {
+        "tags": [
+          "FreeToken",
+          "MoE推理",
+          "本地大模型",
+          "GPU加速",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "FreeToken 深度评测：让游戏显卡跑千亿 MoE 大模型的边缘推理引擎",
+        "ability": [
+          "消费级显卡运行超大 MoE 模型（最高 753B 的 GLM-5.2）",
+          "带宽自适应 CPU-GPU 协同调度，动态切分专家计算",
+          "语义感知缓存，Agent 多轮对话场景 TTFT 稳定",
+          "提供 OpenAI/Anthropic 兼容 API，无缝接入 Claude Code 等工具",
+          "支持 NVFP4/MXFP4 量化与 FTW 高效权重格式"
+        ],
+        "summary": "UC Berkeley 与 MIT 联合出品的边缘 MoE 推理引擎，让 8GB 显存游戏本也能流畅跑 35B 级大模型，Agent 实战比 llama.cpp 快 1.5-2.3 倍。",
+        "category": [
+          "开发工具",
+          "AI 推理引擎",
+          "本地部署"
+        ],
+        "suitable": [
+          "Agent 重度用户（Claude Code / Codex / OpenClaw）",
+          "数据隐私敏感的企业与专业人士",
+          "MoE 模型与系统方向的研究者",
+          "拥有 RTX 30/40/50 系显卡的本地部署玩家",
+          "想用一次性硬件成本替代付费 API 的独立开发者"
+        ],
+        "description": "由 UC Berkeley Sky Lab 与 MIT 韩松组联合开源的边缘 MoE 推理引擎，通过带宽自适应执行（q* 策略）、全层双缓冲 prefill 流水线和语义感知缓存三大核心技术，让 8GB 显存笔记本跑 35B、单张 RTX 5090 跑 284B 的 DeepSeek-V4-Flash，在真实 Agent 工作负载下对 llama.cpp、Ollama、KTransformers 取得 1.5-2.3 倍解码吞吐优势，且输出数值与原模型完全等价。"
+      },
+      "type": "project",
+      "dateAdded": "20260921"
+    },
+    {
+      "id": "33aa44a5-f680-4812-a56f-a98331cad62d",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "domain": "github.com",
+      "repo": "zhouxiaoka/autoclip",
+      "description": "AutoClip 是一款 MIT 协议开源的 AI 视频切片工具，采用 yt-dlp + 通义千问 + FFmpeg 七步流水线架构，自动完成高光识别、评分、标题生成与切片。相比 OpusClip 等 SaaS，它免费且数据本地化，但部署需要 Docker、Redis 和 API Key，且强依赖视频字幕质量，适合有一定技术基础的创作者。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-21T11:08:18.956Z",
+      "metaData": {
+        "forks": "1552",
+        "stars": "7969",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-tools",
+          "ai-video",
+          "ai-video-editor",
+          "auto",
+          "auto-highlight",
+          "highlight",
+          "llm",
+          "video",
+          "video-editing",
+          "video-processing",
+          "videos"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+        "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具 - zhouxiaoka/autoclip"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI视频切片",
+          "通义千问",
+          "B站二创",
+          "FFmpeg"
+        ],
+        "cover": "",
+        "title": "AutoClip 深度评测：开源 AI 视频切片工具，粘贴链接自动提取高光片段",
+        "ability": [
+          "基于通义千问 LLM 分析视频字幕，自动提取高光片段并打分",
+          "支持 B 站和 YouTube 链接，一键下载并按时间戳切片输出 MP4",
+          "AI 自动生成吸引人的切片标题和主题合集推荐",
+          "本地化部署，视频数据不离开本机，隐私安全",
+          "提供 FastAPI + React 完整 Web 界面，WebSocket 实时进度推送"
+        ],
+        "summary": "一款开源本地部署的 AI 视频切片工具，粘贴 B 站/YouTube 链接即可自动识别精彩片段并剪成短视频。",
+        "category": [
+          "开源项目",
+          "AI 工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "有技术能力的 B 站切片 UP 主",
+          "视频二创工作室",
+          "在线教育机构",
+          "企业培训部门",
+          "想学习 LLM+视频处理落地的开发者"
+        ],
+        "description": "AutoClip 是一款 MIT 协议开源的 AI 视频切片工具，采用 yt-dlp + 通义千问 + FFmpeg 七步流水线架构，自动完成高光识别、评分、标题生成与切片。相比 OpusClip 等 SaaS，它免费且数据本地化，但部署需要 Docker、Redis 和 API Key，且强依赖视频字幕质量，适合有一定技术基础的创作者。"
+      },
+      "type": "project",
+      "dateAdded": "20260921"
+    },
+    {
+      "id": "f1f2c026-5ce1-4c67-b391-96004b38ac6a",
+      "url": "https://github.com/mvt-project/mvt",
+      "domain": "github.com",
+      "repo": "mvt-project/mvt",
+      "description": "MVT 是大赦国际安全实验室开源的移动取证工具包，诞生于 2021 年 Pegasus 间谍软件丑闻。它通过比对公开的威胁指标库（STIX2 格式）扫描 iOS 备份、系统日志或 Android ADB 数据，判断设备是否被 Pegasus、Predator 等商业间谍软件盯上。它是一把面向专业取证员的手术刀，而非一键扫描的普通安全 App——结果解读与深度分析均需具备数字取证背景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-21T11:04:09.314Z",
+      "metaData": {
+        "forks": "1309",
+        "stars": "13344",
+        "topics": [
+          "android",
+          "forensics",
+          "forensics-tools",
+          "ios",
+          "mobile",
+          "security"
+        ],
+        "license": "License",
+        "homepage": "https://mvt.re",
+        "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise. - mvt-project/mvt"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "移动取证",
+          "反间谍",
+          "iOS",
+          "Android"
+        ],
+        "cover": "",
+        "title": "MVT 深度评测：大赦国际开源的反间谍软件取证手术刀",
+        "ability": [
+          "基于 STIX2 威胁情报的 IOC 匹配检测",
+          "iOS 加密备份解密与扫描",
+          "Android ADB 直连取证分析",
+          "统一时间线取证报告生成",
+          "插件化架构支持自定义取证模块"
+        ],
+        "summary": "大赦国际开源的移动设备取证工具，专门检测 iPhone/Android 是否被植入 Pegasus 等国家级间谍软件。",
+        "category": [
+          "安全工具",
+          "开发者工具",
+          "隐私保护"
+        ],
+        "suitable": [
+          "调查记者与 NGO 人权工作者",
+          "数字取证研究员 / DFIR 工程师",
+          "企业安全团队（高管设备检测）",
+          "移动安全学习者 / CTF 选手",
+          "情报分析与威胁猎手"
+        ],
+        "description": "MVT 是大赦国际安全实验室开源的移动取证工具包，诞生于 2021 年 Pegasus 间谍软件丑闻。它通过比对公开的威胁指标库（STIX2 格式）扫描 iOS 备份、系统日志或 Android ADB 数据，判断设备是否被 Pegasus、Predator 等商业间谍软件盯上。它是一把面向专业取证员的手术刀，而非一键扫描的普通安全 App——结果解读与深度分析均需具备数字取证背景。"
+      },
+      "type": "project",
+      "dateAdded": "20260921"
+    },
+    {
       "id": "0107e567-ee18-4eda-97c0-e3048a657d75",
       "url": "https://github.com/vercel-labs/json-render",
       "domain": "github.com",
@@ -11,8 +200,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:24:16.597Z",
       "metaData": {
-        "forks": "929",
-        "stars": "17684",
+        "forks": "930",
+        "stars": "17731",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://json-render.dev",
@@ -65,7 +254,7 @@
       "createdAt": "2026-09-20T11:20:16.893Z",
       "metaData": {
         "forks": "1019",
-        "stars": "4678",
+        "stars": "4690",
         "topics": [],
         "license": "",
         "homepage": "https://themodernsoftware.dev",
@@ -117,8 +306,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:14:52.874Z",
       "metaData": {
-        "forks": "3164",
-        "stars": "45742",
+        "forks": "3166",
+        "stars": "45760",
         "topics": [
           "ai",
           "angular",
@@ -183,8 +372,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5259",
-        "stars": "35564",
+        "forks": "5260",
+        "stars": "35601",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -236,8 +425,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:04:38.121Z",
       "metaData": {
-        "forks": "508",
-        "stars": "5494",
+        "forks": "512",
+        "stars": "5551",
         "topics": [
           "agent-native",
           "agents",
@@ -295,8 +484,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:39:41.795Z",
       "metaData": {
-        "forks": "453",
-        "stars": "3511",
+        "forks": "455",
+        "stars": "3583",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://codex-x.site",
@@ -400,8 +589,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:30:57.875Z",
       "metaData": {
-        "forks": "4433",
-        "stars": "103524",
+        "forks": "4441",
+        "stars": "103753",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -453,8 +642,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
-        "forks": "1123",
-        "stars": "12112",
+        "forks": "1124",
+        "stars": "12150",
         "topics": [
           "http3",
           "network-programming",
@@ -581,7 +770,7 @@
       "createdAt": "2026-09-19T11:16:12.282Z",
       "metaData": {
         "forks": "966",
-        "stars": "5530",
+        "stars": "5547",
         "topics": [
           "cluster-management",
           "deep-learning",
@@ -641,8 +830,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:08:09.773Z",
       "metaData": {
-        "forks": "2152",
-        "stars": "17146",
+        "forks": "2157",
+        "stars": "17227",
         "topics": [
           "coderabbit",
           "inngest",
@@ -701,8 +890,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1746",
-        "stars": "25396",
+        "forks": "1750",
+        "stars": "25438",
         "topics": [
           "agent",
           "ai-agent",
@@ -1078,8 +1267,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "4853",
-        "stars": "74071",
+        "forks": "4857",
+        "stars": "74167",
         "topics": [
           "ade",
           "agent-ide",
@@ -1224,8 +1413,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:27:05.481Z",
       "metaData": {
-        "forks": "1551",
-        "stars": "16223",
+        "forks": "1556",
+        "stars": "16257",
         "topics": [
           "agents",
           "dev-tools",
@@ -1349,7 +1538,7 @@
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
         "forks": "4085",
-        "stars": "25407",
+        "stars": "25412",
         "topics": [
           "bpf",
           "cncf",
@@ -1418,8 +1607,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "443",
-        "stars": "6189",
+        "forks": "445",
+        "stars": "6226",
         "topics": [
           "agent",
           "browser-use",
@@ -1474,8 +1663,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7467",
-        "stars": "68916",
+        "forks": "7468",
+        "stars": "68920",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -1527,8 +1716,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:38:08.647Z",
       "metaData": {
-        "forks": "14506",
-        "stars": "110467",
+        "forks": "14508",
+        "stars": "110475",
         "topics": [
           "ai",
           "alternative",
@@ -1673,8 +1862,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "24096",
-        "stars": "147336",
+        "forks": "24101",
+        "stars": "147377",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -1778,8 +1967,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3008",
-        "stars": "25310",
+        "forks": "3010",
+        "stars": "25317",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1946,8 +2135,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "1033",
-        "stars": "18466",
+        "forks": "1035",
+        "stars": "18555",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1999,7 +2188,7 @@
       "createdAt": "2026-09-16T12:08:20.183Z",
       "metaData": {
         "forks": "38718",
-        "stars": "90919",
+        "stars": "90926",
         "topics": [
           "asyncio",
           "hacktoberfest",
@@ -2267,8 +2456,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
-        "forks": "9142",
-        "stars": "44531",
+        "forks": "9144",
+        "stars": "44539",
         "topics": [
           "ai",
           "anthropic",
@@ -2569,8 +2758,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:50:55.274Z",
       "metaData": {
-        "forks": "3694",
-        "stars": "37064",
+        "forks": "3749",
+        "stars": "37550",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://www.projectnomad.us",
@@ -2881,8 +3070,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7375",
-        "stars": "84075",
+        "forks": "7379",
+        "stars": "84142",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -3324,8 +3513,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2767",
-        "stars": "38776",
+        "forks": "2774",
+        "stars": "38869",
         "topics": [
           "agent",
           "agent-skills",
@@ -3384,7 +3573,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "538",
-        "stars": "6569",
+        "stars": "6572",
         "topics": [
           "agent",
           "ai",
@@ -3589,7 +3778,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "284",
-        "stars": "8245",
+        "stars": "8253",
         "topics": [
           "agents",
           "claude-code",
@@ -3927,8 +4116,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3805",
-        "stars": "28283",
+        "forks": "3810",
+        "stars": "28335",
         "topics": [
           "agent",
           "agentic",
@@ -4622,8 +4811,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "3783",
-        "stars": "35949",
+        "forks": "3919",
+        "stars": "36690",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -4991,8 +5180,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T13:09:32.184Z",
       "metaData": {
-        "forks": "739",
-        "stars": "10900",
+        "forks": "740",
+        "stars": "10908",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
@@ -5042,8 +5231,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:17:35.322Z",
       "metaData": {
-        "forks": "227",
-        "stars": "2941",
+        "forks": "410",
+        "stars": "4868",
         "topics": [
           "ai-agent",
           "coding-agent",
@@ -6113,8 +6302,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1719",
-        "stars": "23823",
+        "forks": "1720",
+        "stars": "23831",
         "topics": [
           "antigravity",
           "claude",
@@ -6187,8 +6376,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:15:02.341Z",
       "metaData": {
-        "forks": "13701",
-        "stars": "186053",
+        "forks": "13703",
+        "stars": "186064",
         "topics": [
           "autogen",
           "autogen-extension",
@@ -6248,8 +6437,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4740",
-        "stars": "52047",
+        "forks": "4745",
+        "stars": "52066",
         "topics": [
           "ai",
           "animation",
@@ -6886,7 +7075,7 @@
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
         "forks": "740",
-        "stars": "20297",
+        "stars": "20309",
         "topics": [
           "alt-tab",
           "app-uninstaller",
@@ -7203,7 +7392,7 @@
       "createdAt": "2026-09-04T11:26:40.819Z",
       "metaData": {
         "forks": "2671",
-        "stars": "41708",
+        "stars": "41717",
         "topics": [
           "agent-skills",
           "claude-code",
@@ -7792,12 +7981,12 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "294",
-        "stars": "4142",
+        "forks": "367",
+        "stars": "4733",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
-        "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline. - magnitudedev/magnitude"
+        "description": "Open source inference engine optimized for consumer hardware. Profiles your machine, recommends the best models for it, then downloads, tunes, and runs them. Works on Apple Silicon, NVIDIA, AMD, or nothing but a CPU. - magnitudedev/magnitude"
       },
       "summaryData": {
         "tags": [
@@ -8265,8 +8454,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "4084",
-        "stars": "50817",
+        "forks": "4083",
+        "stars": "50854",
         "topics": [
           "agent-skills",
           "ai-writing",
@@ -8701,7 +8890,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "3221",
-        "stars": "33366",
+        "stars": "33371",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -9357,8 +9546,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "3976",
-        "stars": "33684",
+        "forks": "3977",
+        "stars": "33707",
         "topics": [
           "ai",
           "audiobook",
@@ -9606,8 +9795,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8056",
-        "stars": "61923",
+        "forks": "8064",
+        "stars": "61954",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -10314,7 +10503,7 @@
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
         "forks": "1669",
-        "stars": "14118",
+        "stars": "14126",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10366,8 +10555,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6004",
-        "stars": "38320",
+        "forks": "6009",
+        "stars": "38338",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10419,8 +10608,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4886",
-        "stars": "42433",
+        "forks": "4891",
+        "stars": "42447",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -10603,8 +10792,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10306",
-        "stars": "97916",
+        "forks": "10308",
+        "stars": "97966",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -10850,8 +11039,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2540",
-        "stars": "19769",
+        "forks": "2545",
+        "stars": "19787",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -11368,8 +11557,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "8101",
-        "stars": "40005",
+        "forks": "8119",
+        "stars": "40094",
         "topics": [
           "3d-globe",
           "cesium",
@@ -12441,8 +12630,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4602",
-        "stars": "68647",
+        "forks": "4607",
+        "stars": "68740",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -14081,8 +14270,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2862",
-        "stars": "49476",
+        "forks": "2866",
+        "stars": "49533",
         "topics": [
           "adhd",
           "claude-",
@@ -14941,8 +15130,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "470",
-        "stars": "7036",
+        "forks": "510",
+        "stars": "7379",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -15604,8 +15793,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39498",
-        "stars": "264182",
+        "forks": "39506",
+        "stars": "264294",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -15665,8 +15854,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3188",
-        "stars": "33079",
+        "forks": "3189",
+        "stars": "33089",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -15729,7 +15918,7 @@
       "createdAt": "2026-08-23T13:57:47.937Z",
       "metaData": {
         "forks": "713",
-        "stars": "21796",
+        "stars": "21810",
         "topics": [
           "dpi",
           "gpui",
@@ -15881,8 +16070,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "760",
-        "stars": "8260",
+        "forks": "762",
+        "stars": "8264",
         "topics": [],
         "license": "",
         "homepage": "",
