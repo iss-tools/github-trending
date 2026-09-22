@@ -1,0 +1,59 @@
+{
+  "id": "d68974cc-020e-4190-9098-675feee09c41",
+  "url": "https://github.com/davila7/claude-code-templates",
+  "domain": "github.com",
+  "repo": "davila7/claude-code-templates",
+  "description": "一个开源 CLI 工具，把 GitHub 上分散的 Claude Code 模板统一聚合，通过 npx 一行命令即可安装 Agent、斜杠命令、MCP 等乐高式组件，还附赠 Token 监控、聊天远程查看等官方未提供的工具。本质是 Claude Code 生态的应用商店，但模板质量依赖上游，建议按需安装、用完即删。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-22T11:11:52.572Z",
+  "metaData": {
+    "forks": "3522",
+    "stars": "30908",
+    "topics": [
+      "anthropic",
+      "anthropic-claude",
+      "claude",
+      "claude-code"
+    ],
+    "license": "MIT license",
+    "homepage": "https://aitmpl.com",
+    "description": "CLI tool for configuring and monitoring Claude Code - davila7/claude-code-templates"
+  },
+  "summaryData": {
+    "tags": [
+      "Claude Code",
+      "CLI 工具",
+      "模板聚合",
+      "AI 编程",
+      "开源"
+    ],
+    "cover": "",
+    "title": "claude-code-templates 深度评测：Claude Code 的一键式模板军火库",
+    "ability": [
+      "一键安装 Agents/Commands/MCPs/Skills 等六类组件",
+      "聚合多个上游仓库的千余个模板资源",
+      "实时监控 Token 消耗与 Claude 会话的 Analytics 仪表盘",
+      "支持手机远程查看 Claude 聊天记录",
+      "环境健康检查与插件管理面板"
+    ],
+    "summary": "把散落 GitHub 各处的 Claude Code 模板聚合成一条命令即装即用的开源 CLI 工具",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "开源项目"
+    ],
+    "suitable": [
+      "Claude Code 新手",
+      "独立开发者",
+      "团队 Tech Lead",
+      "重度 API 付费用户",
+      "开源贡献者"
+    ],
+    "description": "一个开源 CLI 工具，把 GitHub 上分散的 Claude Code 模板统一聚合，通过 npx 一行命令即可安装 Agent、斜杠命令、MCP 等乐高式组件，还附赠 Token 监控、聊天远程查看等官方未提供的工具。本质是 Claude Code 生态的应用商店，但模板质量依赖上游，建议按需安装、用完即删。"
+  },
+  "contentDetail": "# claude-code-templates 深度评测：Claude Code 的\"一键式军火库\"，还是资源的\"大杂烩\"？\n> **一句话总结**：这是一个由 Daniel Ávila（davila7）维护的开源 CLI 工具，把散落在 GitHub 各处的 Claude Code Agents、Slash Commands、MCP、Hooks、Skills 聚合成\"一条命令即装即用\"的生态入口，本质上是 **Claude Code 生态的\"应用商店 + 集成包管理器\"**，适合想让 AI 编码助手\"开箱即强\"的开发者，但你要接受\"聚合资源必然鱼龙混杂\"的代价。\n---\n## 一、背景与痛点：Claude Code 原生体验的\"配置真空\"\nAnthropic 的 Claude Code 是一款运行在终端里的 Agentic 编码工具，它本身只有\"裸框架\"，真正想把它用到飞起，你需要自己写 `CLAUDE.md`、定义 Subagent、注册 MCP、配置 Hooks——这个过程对老手是乐趣，对大多数人则是劝退门槛。\n社区其实早有答案：**anthropics/skills**（官方 21 个技能）、**obra/superpowers**、**wshobson/agents**、**awesome-claude-code**……但它们散落在十几个仓库里，格式各异、安装方式不一，想拼一套完整工作流，你得手动复制粘贴多个 YAML/Markdown 文件。这就是 claude-code-templates 要解决的核心痛点：**把\"多个仓库 + 手动配置\"收敛成\"一行 npx 命令\"**。\n作者 Daniel Ávila（GitHub ID: davila7）是一位活跃的开源贡献者，同时也在运营一个相关的提示工程仓库。这个项目从 2025 年中旬被 daily.dev 等渠道推荐后持续迭代，截至评测时 npm 上已发布 **155 个版本、最新版 1.29.2（约 18 天前更新）**，更新频率相当激进。\n---\n## 二、核心能力剖析：它到底给了你什么？\nclaude-code-templates 不只是\"复制粘贴模板\"，它本质是**三层架构**：\n### 2.1 组件目录（Catalog）—— 六大资产类型\n| 组件类型 | 作用 | 典型示例 |\n|---------|------|---------|\n| 🤖 **Agents** | 专业领域的 Subagent，让 Claude 用特定角色干活 | Security Auditor、React Performance Optimizer、Database Architect |\n| ⚡ **Commands** | 自定义斜杠命令，把高频操作固化为 `/xxx` | `/generate-tests`、`/optimize-bundle`、`/check-security` |\n| 🔌 **MCPs** | 外部服务集成（Model Context Protocol） | GitHub、PostgreSQL、Stripe、AWS、OpenAI |\n| ⚙️ **Settings** | Claude Code 全局/项目配置 | MCP 超时、内存设置、输出风格 |\n| 🪝 **Hooks** | 自动化触发器 | pre-commit 校验、任务完成后的自动动作 |\n| 🎨 **Skills** | 可复用能力包（渐进式披露架构） | PDF 处理、Excel 自动化、自定义工作流 |\n数据来源非常关键——它不是自己写的所有模板，而是**聚合了以下上游仓库**（README 里全部做了归属声明）：\n- **官方**：anthropics/skills（21 个）、anthropics/claude-code（10 个开发指南）\n- **科学技能**：K-Dense-AI/claude-scientific-skills（139 个生物/化学/医学技能）\n- **社区**：obra/superpowers（14 个工作流）、wshobson/agents（48 个 agent）、alirezarezvani/claude-skills（36 个角色技能）\n- **命令合集**：awesome-claude-code（hesreallyhim 维护的 21 个命令）\n**一句话理解**：它像 npm 之于 JavaScript、Homebrew 之于 macOS——把散装模板统一打包、统一安装、统一管理。\n### 2.2 附加开发工具——比\"模板\"更值钱的部分\n这部分是很多评测忽略的亮点，它不只是\"模板合集\"，还内置了四个运维/监控工具：\n- **Analytics（📊 实时监控）**：`npx claude-code-templates@latest --analytics` 启动仪表盘，追踪 Claude 会话、Token 消耗、性能指标——这对按量付费的 API 用户来说，是\"省钱的眼睛\"。\n- **Conversation Monitor（💬 移动端远程查看）**：`--chats` 本地查看，加 `--tunnel` 走 Cloudflare Tunnel 后可在手机上实时看 Claude 的响应，适合长时间挂着跑任务时\"躺床上监控\"。\n- **Health Check（🔍 体检）**：自动诊断你的 Claude Code 环境是否配置到位。\n- **Plugin Dashboard（🔌 插件面板）**：统一查看已安装插件、管理权限。\n**底层逻辑**：Claude Code 的会话数据以 JSONL 形式存放在本地 `~/.claude/projects/` 目录，这些工具其实是\"读 JSONL → 解析 → 可视化\"的轻量级 Dashboard，技术原理不复杂，但**官方一直没做**，社区自己填补了空缺。\n### 2.3 CLI 的巧妙设计——按\"目录路径\"组合安装\n它的 CLI 语法很聪明：**用 `--agent`、`--command`、`--mcp` 等标志 + `分类/名称` 路径，可以一行命令组合安装多个组件**：\n```bash\n# 一次性装齐前端开发的全套装备\nnpx claude-code-templates@latest \\\n  --agent development-team/frontend-developer \\\n  --command testing/generate-tests \\\n  --mcp development/github-integration \\\n  --yes\n```\n这种\"组合拳\"式的语法，本质上是把多个独立模板**原子化**，让用户像拼乐高一样搭自己的 AI 工作流——**这是它和\"Awesome List 纯索引\"最本质的区别**。\n---\n## 三、实战演示：5 分钟上手全流程\n这里给你一个最小可复现的流程，**无需任何配置**，只要装了 Node.js 18+ 和 Claude Code：\n```bash\n# 步骤 1：交互式浏览（新手推荐，会弹出 TUI 菜单）\nnpx claude-code-templates@latest\n# 步骤 2：定向安装一个代码审查 Agent\nnpx claude-code-templates@latest --agent development-tools/code-reviewer --yes\n# 步骤 3：安装 PostgreSQL 集成 MCP\nnpx claude-code-templates@latest --mcp database/postgresql-integration --yes\n# 步骤 4：打开健康检查，确认一切就绪\nnpx claude-code-templates@latest --health-check\n# 步骤 5：启动 Claude Code，斜杠命令已可用\nclaude\n> /check-security\n```\n安装完成后，组件会写到项目的 `.claude/` 目录或全局 `~/.claude/` 目录，Claude Code 重启后自动识别。**安装的本质就是\"下载 Markdown + YAML 到指定路径\"**，没有任何黑魔法，卸载也只需删文件。\n> **🤔 AI 能力演示：装了 `code-reviewer` Agent 之后，你在 Claude Code 里说\"帮我看看这段代码有没有问题\"，Claude 会自动启用该 Subagent，用专门的安全审计视角输出报告，而不是\"泛泛而谈的通用建议\"。** 触发逻辑：Claude Code 的 Task 工具会根据 Agent 描述的 `when_to_use` 字段自动路由。\n---\n## 四、适用人群与收益：谁最该装？\n| 人群 | 核心收益 | 推荐用法 |\n|------|---------|---------|\n| **Claude Code 新手** | 跳过\"配置地狱\"，5 分钟上手 | 交互式模式 + 一次装一套\"开发栈\" |\n| **独立开发者** | 省下写 CLAUDE.md/Agent 的时间，专注业务 | 按需挑选 2-3 个 Agent，别贪多 |\n| **团队 Tech Lead** | 统一团队 AI 工具链，新人 onboarding 快 | 把命令写进 `setup.sh`，团队一键对齐 |\n| **重度 API 用户** | Analytics 帮你看清 Token 都花在哪儿 | 每天 `--analytics` 一开，省钱立竿见影 |\n| **开源贡献者** | 有一套标准的模板贡献流程 | 提交自己的 Agent/Command 到目录 |\n**最大收益点**是**标准化**——原本每个团队成员写的 CLAUDE.md 五花八门，用这套模板可以让全组用同一套\"AI 工程化\"标准。\n---\n## 五、竞品对比：它在 Claude 生态里的坐标\n2026 年的 Claude Code 生态已经极度拥挤，claude-code-templates 并非唯一玩家。我们把主要玩家放在同一张桌子上比：\n| 项目 | Stars | 定位 | 优势 | 劣势 |\n|------|-------|------|------|------|\n| **davila7/claude-code-templates** | 中等 | **CLI 安装器 + 聚合目录** | 一键安装、附带监控工具 | 模板来自上游，质量依赖他人 |\n| **hesreallyhim/awesome-claude-code** | 36.8k+ | 手工精选 Awesome List | 策展质量高，是\"权威参考\" | 纯索引，装起来仍要手动 |\n| **affaan-m/everything-claude-code** | 141k | 全量聚合\"消防水管\" | 覆盖面最广 | 无筛选，信噪比低 |\n| **anthropics/skills** | 56.7k | 官方 Skills 仓库 | 质量保证、官方支持 | 数量少（21 个） |\n| **obra/superpowers** | 94k+ | 工作流方法论 | 已进入 Anthropic 官方市场 | 偏方法论，不是工具库 |\n| **ClaudeFast Code Kit** | 商业 | 预组装生产级套件 | 18 Agent + 167 Skill 预拼好 | 收费 |\n| **ConfigDeck** | 市场 | Claude 配置 marketplace | 反向查找 + 一键装 | 需描述需求匹配 |\n**claude-code-templates 的独特生态位**：它是**唯一一个把\"目录 + 安装器 + 监控\"做成完整闭环的开源 CLI**。Awesome List 只告诉你\"去哪找\"，affaan-m 的 everything-claude-code 是\"大杂烩\"，而 claude-code-templates 是**\"带安装按钮的目录\"**。\n---\n## 六、局限与不足：那些 README 不会告诉你的事\n### 6.1 聚合资源的\"信噪比\"困境\n由于核心模板来自 wshobson/agents、obra/superpowers、K-Dense-AI 等上游仓库，**它的质量上限取决于上游，下限则由上游决定**。一些上游模板已停止维护，但目录里仍能搜到。你想装\"代码审查 Agent\"，搜出来可能有 5 个，**哪个最好？README 不会告诉你**。\n### 6.2 Anthropic 政策风险\n2026 年 4 月 4 日，Anthropic 调整了政策，**禁止 Pro 和 Max 订阅用户使用第三方 Agent 框架**。虽然 claude-code-templates 主要是\"配置聚合\"而非\"绕过框架\"，但其中部分 hooks 和 agent 模式的边界，可能踩到条款红线。**API 用户影响不大，订阅制用户需要谨慎**。\n### 6.3 安装体验好，但\"卸载\"体验差\nCLI 没有提供 `--uninstall` 命令，装多了之后，`.claude/` 目录会积累一堆 Markdown 文件。当 Claude 的 system prompt 变得臃肿，**上下文窗口会被无效配置污染，反而拖慢响应**。建议**\"按需装、用完删\"**，别贪心一次性装 50 个 Agent。\n### 6.4 商业化痕迹明显\nREADME 顶部有 Bright Data 的赞助横幅（这是一个网页抓取 MCP 服务），`aitmpl.com` 也在收集用户安装数据以做\"趋势榜\"。**对个人用户无感，但企业用户应意识到这是一个带商业意图的项目，不是纯公益开源**。\n### 6.5 缺少版本锁定机制\n不像 npm 有 `package-lock.json`，它安装模板时是\"拉最新版\"，**今天装的和昨天装的可能行为不同**。对于追求可复现性的团队，这可能是隐患。\n---\n## 七、结语与行动建议：装之前先问自己 3 个问题\n**终极评判**：claude-code-templates 是 2026 年 Claude Code 生态里**最务实的\"效率放大器\"之一**——它没有发明新技术，只是把分散的社区智慧用 CLI 串联起来，外加做了一些官方该做没做的监控工具。它不值得你\"无脑全装\"，但绝对值得你**\"收藏 + 按需调用\"**。\n给三类读者的行动建议：\n**🟢 如果你还没用过 Claude Code**  \n先用官方 `claude` 命令跑两周，体会\"裸奔\"的痛点，再来装这个工具——**没痛点就没有收益**。\n**🟡 如果你是中度用户（每周用几次）**  \n推荐起步组合拳：\n```bash\nnpx claude-code-templates@latest \\\n  --agent development-tools/code-reviewer \\\n  --command testing/generate-tests \\\n  --mcp development/github-integration \\\n  --yes\n```\n这套组合覆盖\"写代码 → 测代码 → 连 GitHub\"的最小闭环。\n**🔴 如果你是重度用户/团队负责人**  \n1. 把常用模板写进团队的 `setup.sh`，作为 onboarding 标准  \n2. **每周跑一次 `--analytics`**，看看 Token 都烧在哪儿  \n3. **不要订阅制账户上装激进 Hooks**，Anthropic 政策正在收紧  \n4. 定期 `rm` 清理 `.claude/` 里不再用的模板，保持上下文清爽\n**最后一句吐槽**：它的价值不在于\"装了 1000 个模板\"这个数字，而在于**让你意识到\"AI 编码助手的上限 = 你给它配置的上限\"**。模板只是起点，真正的高手会用它作为参考，写出适合自己项目的 CLAUDE.md 和 Agent——**这才是从\"用模板\"到\"懂 Claude Code\"的跃迁路径**。\n> 📦 仓库地址：[github.com/davila7/claude-code-templates](https://github.com/davila7/claude-code-templates)  \n> 🌐 组件浏览：[aitmpl.com](https://www.aitmpl.com)  \n> 📖 官方文档：[docs.aitmpl.com](https://docs.aitmpl.com)  \n> 📄 许可证：MIT（可商用）",
+  "type": "project",
+  "dateAdded": "20260922"
+}
