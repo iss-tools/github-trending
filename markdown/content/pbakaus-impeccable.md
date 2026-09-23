@@ -1,0 +1,103 @@
+# pbakaus/impeccable
+
+[GitHub URL](https://github.com/pbakaus/impeccable)
+
+
+## Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能
+
+> 一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'
+
+- **Tags**: Claude Code, AI Skill, UI 设计, 开源项目, Cursor
+- **Category**: 开发工具, AI 编程, 前端设计
+
+## Details
+
+# Impeccable 深度评测：把"设计总监"塞进 Claude Code 的开源技能
+**一句话总结**：Impeccable 是一个让 AI 编程助手真正"懂设计"的开源 Skill——它不只是改改字体颜色，而是把前 Google 工程师、jQuery UI 之父 Paul Bakaus 十几年积累的设计品味，压缩成 24 条精准指令 + 61 条确定性检测规则，让 Claude Code、Cursor、Codex 生成的界面从"一眼 AI 味"进化到"能拿得出手"的水平。
+---
+## 一、背景与痛点：AI 会写代码，但不会"做设计"
+2025 年之后，Claude Code、Cursor、Codex 等 Agent 让"一句话生成一个 Web 应用"成为现实，但一个尴尬的问题浮出水面：**生成的界面全都长一个样**。
+所有大模型都在同样的 SaaS 模板数据上训练，于是它们写出来的前端整齐划一——Inter 字体、紫到蓝的渐变、卡片套卡片、彩色背景上叠灰字、每个标题上方一个圆角方块图标。社区给这种风格起了个名字叫 **"AI Slop"**（AI 味十足的设计垃圾）。
+Anthropic 官方在 2025 年推出了 `frontend-design` 这个 Skill 作为第一个公开的设计指引，Impeccable 就是从它分支出来的，但走得远得多。它想解决的不是"界面能跑"的问题，而是 **"AI 有 IQ 没有 EQ"** 的品味鸿沟——模型能正确写出 flexbox，却不知道什么时候该留白、什么时候该克制、什么时候该大胆。
+> "AI Can Build Your App. It Can't Make It Good." —— 这是 Paul Bakaus 在 2026 年 7 月接受 Solo Founders 播客时反复强调的主题，也几乎是 Impeccable 的产品宣言。
+## 二、作者背书：这个人有资格谈"品味"
+这一部分是很多同类工具不具备的护城河。
+**Paul Bakaus 不是普通的全栈开发者，而是 Web 历史上几位绕不开的工程人物之一**：他 2008 年创造了 jQuery UI，后来联合创办的游戏引擎公司被 Zynga 收购，随后在 Google 近十年，先后负责 Chrome DevTools、AMP 项目（他曾在访谈中为 AMP 的争议做过深度澄清）。
+2026 年他从 Google 出走、成为 Solo Founder，创立 Renaissance Geek，把 Impeccable 作为独立产品运营——也就是说，这不是某个大厂边角料项目，而是**一个技术老兵全身心投入的主营业务**，长期维护的动力比绝大多数开源 Skill 都要强。
+## 三、技术架构与设计哲学：怎么"教"AI 学会设计
+Impeccable 不是一个个独立提示词的堆砌，而是一套分层系统。看它的内部结构可以拆成三层：
+**第一层是"持久化产品档案"**。`/impeccable init` 会扫描项目、追问关键信息，然后生成两份文件：`PRODUCT.md`（记录受众、用途、运行上下文、约束、语气、证据——即"产品真相"）和 `DESIGN.md`（记录既有视觉系统）。后续所有指令都会先读这两份文件再行动，**避免每次都从零开始猜测你的产品定位**，这是大多数一次性 Skill 做不到的。
+**第二层是 24 条命名指令**。把模糊的"帮我做设计"拆解成设计总监才会用的术语——polish、critique、distill、bolder、quieter、harden 等。**这些名字本身就是一份设计词汇表**，让开发者能用专业语言和 Agent 对话，而不是靠运气写 prompt。
+**第三层是 61 条确定性检测器**。这部分是 Impeccable 最巧妙的设计：**它把"AI 味"的判断规则化成可以用纯代码跑的正则/AST 检查，无需 LLM、无需 API Key**，通过 CLI 或浏览器扩展就能跑。这相当于给"品味"装了一个 linter——AI 写完之后，先过一遍确定性规则，再让 LLM 做主观判断，两者互补。
+| 命令 | 用途 | 典型场景 |
+|---|---|---|
+| `/impeccable init` | 初始化项目档案 | 新项目开工第一步 |
+| `/impeccable craft` | 完整的形状→构建→迭代流程 | 从零做一个新页面 |
+| `/impeccable shape` | 写代码前先规划 UX/UI | 复杂功能立项 |
+| `/impeccable critique` | UX 审查（层级、清晰度、情感共鸣） | 上线前自查 |
+| `/impeccable audit` | 技术质量检查（a11y、性能、响应式） | 发布前质量门禁 |
+| `/impeccable polish` | 最后打磨 + 设计系统对齐 | 准备上线 |
+| `/impeccable distill` | 剥离到本质 | 界面太花哨 |
+| `/impeccable bolder` | 放大无聊的设计 | 太保守没记忆点 |
+| `/impeccable quieter` | 压制过度大胆的设计 | 视觉过载 |
+| `/impeccable harden` | 错误处理、i18n、文本溢出、边界情况 | 补漏 |
+| `/impeccable onboard` | 首次使用流程、空状态 | 新用户引导 |
+| `/impeccable animate` | 添加有目的的动效 | 增加质感 |
+| `/impeccable colorize` | 战略性引入色彩 | 单调的灰白界面 |
+| `/impeccable typeset` | 修字体、层级、字号 | 排版凌乱 |
+| `/impeccable layout` | 修布局、间距、节奏 | 界面松散 |
+| `/impeccable clarify` | 优化 UX 文案 | 文案含糊 |
+| `/impeccable overdrive` | 加入技术炫技效果 | 营销页想要冲击力 |
+| `/impeccable delight` | 加一点点愉悦感 | 让产品"有温度" |
+| `/impeccable live` / `generate` | 浏览器内可视化迭代变体 | 不想反复对话 |
+| `/impeccable document` / `extract` | 反向生成 DESIGN.md / 抽取组件 | 接手老项目 |
+资料来源：GitHub 主仓库 README
+**反模式黑名单**是另一个值得单说一嘴的设计。Impeccable 显式禁止这些"AI 味"特征：Arial / Inter / 系统默认字体、彩色背景上用灰字、纯黑纯灰（必须带色温）、卡片套卡片、弹跳或弹性缓动。**这些规则来自真实设计行业的审美共识，而不是某个人拍脑袋**——把它们写进确定性检测器，就等于给 AI 装了一个"风格下限"过滤器。
+## 四、真实演示：怎么用、效果如何
+**上手极其简单**，从项目根目录一条命令即可：
+```bash
+npx impeccable install
+# 然后在 Claude Code / Cursor / Codex 里执行：
+/impeccable init
+```
+之后日常用法：
+```
+/impeccable audit blog           # 审计博客中心 + 文章页
+/impeccable critique landing     # 对落地页做 UX 审查
+/impeccable polish settings      # 上线前最后一轮打磨
+/impeccable harden checkout      # 给结账流程补错误处理
+/impeccable redo this hero section  # 直接用自然语言描述
+```
+**官方的 Neo Mirai 案例研究**展示了一个真实项目在用 Impeccable 前后的对比，而主站 impeccable.style 上的交互 demo（用滑块对比命令前后的视觉差异）是最直观的"种草"入口——同一个定价页、同一份代码，套上 `/polish` 之后 **AI beige、italic serif、side-tab、pulsing dot 四种典型 AI 味被一次性清除**，且保留了原有的设计系统不被破坏。
+**GitHub Copilot 用户**还能通过 VS Code 插件市场直接装：`code --install-extension renaissance-geek.impeccable`，要求 VS Code 1.109.3+。
+## 五、目标人群与收益
+**最受益的是三类人**：
+1. **Solo Founder / 独立开发者**——没有设计师，却要让产品看起来"不廉价"。用 Impeccable + Claude Code 组合，**两小时从想法到上线落地页**是社区里真实出现的反馈（"Shipped a landing page in 2 hours using @conductor_build & @impeccable_ai"）。
+2. **全栈 / 前端工程师**——代码能力够，但设计判断力一般。Impeccable 提供了一套可以直接套用的设计词汇和底线规则，等于**随身带了一个廉价的设计导师**。
+3. **用 AI 做 MVP 的产品经理**——不需要懂 CSS，只需要会说"帮我 polish 这个页面"或"给我 distill 一下"就能得到显著更好的结果。
+**不适用的人群**也很明确：需要精细品牌系统的成熟企业设计团队、做非 Web UI（桌面端、游戏）的开发者、希望完全控制每个像素的设计师。
+## 六、竞品对比：在同类中处于什么位置
+| 维度 | Anthropic 官方 frontend-design | Impeccable | 其他第三方 Skill |
+|---|---|---|---|
+| 覆盖工具 | 仅 Claude Code | Claude Code、Cursor、Codex、Copilot、Gemini CLI、Grok、OpenCode、Hermes、DeepSeek 等 15+ | 多数仅 1-2 个 |
+| 命令数量 | 单文件指引 | **24 条命名命令** | 通常 1-5 条 |
+| 确定性检测 | 无 | **61 条，无需 LLM** | 几乎没有 |
+| 持久化设计档案 | 无 | PRODUCT.md + DESIGN.md | 少数有 |
+| 反模式黑名单 | 部分 | 显式完整 | 零散 |
+| 作者背书 | Anthropic 官方 | jQuery UI 之父 + ex-Google | 多为爱好者 |
+| 维护活跃度 | 间歇更新 | 高频更新，已迭代到 v4.0.x | 多为一次性项目 |
+第三方横向评测的结论也比较一致：**"在同一个模型上，Impeccable 的产出明显比官方 frontend-design 更有个性"**（React Japan 的 Steven Sacks 实测）；另有评测直言"Uninstall whatever frontend skill you're using. Replace it with Impeccable."
+社区口碑方面，impeccable.style 首页挂满了几十条真实用户推文，定位从独立开发者到 Google 工程师都有，目前主站月访问量约 68k。
+## 七、局限与不足：得说点不好听的
+- **强主观规则可能与你冲突**。Impeccable 明确禁止 Inter 字体和紫蓝渐变，但如果你的品牌指南就是 Inter，需要手动关闭或绕开部分规则，**它并不总是"听你的"**。
+- **前端专用，边界很清晰**。对纯后端 API、CLI 工具、移动原生 App、游戏界面基本无用。
+- **Cursor 用户接入成本偏高**：需要切到 Nightly 渠道并在 Rules 里手动启用 Agent Skills，不是开箱即用。
+- **Codex 更新后需重新批准 hook**，因为 Codex 按 hook 定义做信任追踪，每次 `.codex/hooks.json` 变更都可能要求再次授权，团队批量部署会有些摩擦。
+- **"品味"仍是单向输出**。Impeccable 把规则写得很死，某种程度上把 Paul Bakaus 的审美偏好"塞"给了你——这既是它的护城河，也是天花板：**如果你想要的设计语言和作者口味差别很大，会觉得束缚**。
+- **Skill 生态本身还年轻**。Skill 这种形式出现不到两年，Cursor、Claude、Codex 各家的 Skill 加载机制还在变动，未来可能需要适配工作（目前的版本已经多次重写架构，从扁平单文件到分层 lazy load 来回切）。
+## 八、结语与行动建议
+**Impeccable 是目前 AI 设计 Skill 这个赛道里最成熟、覆盖最广、工程化程度最高的开源项目**，没有之一。它的价值不在于"生成了更漂亮的界面"这种模糊宣传，而在于它把"设计品味"这件事工程化成了可执行、可检测、可复用的三件套：**持久化档案 + 专业命令词汇 + 确定性反 Slop 检测器**。
+行动建议按角色分两条线：
+- **如果你用 Claude Code 或 Codex**：直接 `npx impeccable install`，然后 `/impeccable init` 跑一次，你立刻能感受到差异，**成本几乎为零**。
+- **如果你用 Cursor**：先切 Nightly、开 Agent Skills，再用 Git Submodule 方式接入，更适合长期维护的团队项目。
+最后给一个心理预期校准：Impeccable 不能把一个平庸的产品经理变成设计师，但它能把**一个不擅长设计的开发者的产出，从"AI 味一眼假"提升到"客户愿意付钱"的水平**。这一段跃迁，对绝大多数独立开发者来说，就值回票价——何况它免费。

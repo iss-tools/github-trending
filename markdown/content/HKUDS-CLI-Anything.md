@@ -1,0 +1,130 @@
+# HKUDS/CLI-Anything
+
+[GitHub URL](https://github.com/HKUDS/CLI-Anything)
+
+
+## CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚
+
+> 港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化
+
+- **Tags**: GitHub开源, AI Agent, CLI, 深度评测, HKUDS
+- **Category**: 开发工具, AI 编程, 自动化
+
+## Details
+
+# CLI-Anything 深度评测：把"全世界的软件"变成 AI Agent 的手脚
+> **一句话总结**：CLI-Anything 是港大数据智能实验室（HKUDS）推出的"Agent 原生化"框架，它能用一条 `/cli-anything` 命令为任意软件（GIMP、Blender、LibreOffice、Zotero、Zoom……）自动生成一套结构化 Python CLI，让 Claude Code、Cursor、Codex 等 AI Agent 真正"亲手"驱动专业软件——不用截图点击、不用重写功能、不用碰脆弱的 RPA。截至目前 **49.6k Stars、4.6k Forks、885 commits**，是该领域当之无愧的现象级项目。
+---
+## 一、背景与痛点：Agent 看得懂世界，却用不了世界
+要理解 CLI-Anything 的价值，先看它瞄准的"三重鸿沟"。
+**鸿沟一：Agent 会推理，但不会用真软件。** 今天的 LLM Agent 堪称"最强大脑"，可一旦要它真正去 GIMP 里抠图、用 Blender 建模、在 Zotero 里整理文献，就立刻露馅。现有的方案要么是 **UI 自动化**（截图 + 鼠标点击，窗口一变就崩），要么是 **自研简化版**（用 Pillow 代替 GIMP、用自渲染器代替 Blender，丢掉 90% 专业功能），要么是 **等厂商开放 API**（遥遥无期）。
+**鸿沟二：MCP 很强，但 Token 贵、生态薄。** MCP（Model Context Protocol）解决了"Agent 调用工具"的标准化问题，但企业级评测显示：**MCP 单次调用的 Token 消耗是等价 CLI 调用的 4–32 倍**，且每种软件都要单独写一份 MCP Server，生态覆盖极慢。有 benchmark 测出，浏览器自动化场景下 CLI 比 MCP **Token 效率高 33%、任务完成度高 77 vs 60 分**。
+**鸿沟三：Agent 的世界缺少"通用接口"。** CLI-Anything 团队给出的答案是：**CLI 才是人与 AI 共通的语言**。它结构化、可组合、`--help` 自带文档、输出 JSON 即插即用，且 Claude Code 每天已经跑着成千上万条真实 CLI 工作流验证这条路可行。
+打个比方：如果 MCP 是给每个软件配一个"专属翻译官"（贵、慢、要挨个请），那 CLI-Anything 就是给所有软件装上一套"标准化脚踏板"——Agent 踩上去就能骑走，无论原来是汽车、自行车还是拖拉机。
+**背景彩蛋**：背后团队 HKUDS（Data Intelligence Lab @ HKU）是港大 Chao Huang 教授领衔的明星实验室，此前已贡献过 **LightRAG**（EMNLP 2025，34k+ Stars 的图增强 RAG 框架）和 **AutoAgent** 等爆款。做检索、做 Agent 框架、做 Agent 工具生态，HKUDS 一直在沿着"让 AI 真正干活"这条主线推进。
+---
+## 二、核心亮点与架构剖析
+### 2.1 技术架构：7-Phase HARNESS 方法论 + Python/Click
+CLI-Anything 的灵魂是 `HARNESS.md`——一份被 18+ 生产级 harness 反复打磨出来的 **"7 阶段 CLI 生成 SOP"**，由 Claude Code / Cursor / Codex 等 Agent 作为"施工队"自动执行。
+```
+输入：任意软件的源码仓库（本地路径或 GitHub 链接）
+   ↓
+7-Phase Pipeline：解析代码 → 识别能力面 → 设计命令树 
+   → 生成 Python Click CLI → 接入真实后端 → 测试 → 校验
+   ↓
+输出：cli-anything-<software> 包 + SKILL.md（AI 可读说明书）
+```
+**几个关键工程决策**，每一处都能看出"踩过坑"：
+| 设计 | 为什么聪明 |
+|---|---|
+| **强制调用真实后端** | HARNESS.md 第一条铁律："Use the real software"。GIMP CLI 走 GEGL/Script-Fu，Blender CLI 走 bpy，LibreOffice CLI 走 headless 模式——绝不重写功能，只做"遥控器"。 |
+| **统一 REPL Skin** | 每个生成的 CLI 共享 `repl_skin.py`，启动横幅、命令风格、状态提示完全一致，Agent 学一次就能开所有 CLI。 |
+| **双模输出** | 默认人类可读 + `--json` 参数切换机器可读，Agent 解析零成本。 |
+| **SKILL.md 内置** | 每个生成的包都附带 AI 可发现的"技能说明书"，`npx skills add` 一键注入到 Claude Code/Codex/Cursor。 |
+| **渲染间隙解决方案** | HARNESS.md 总结的 "Rendering Gap" 模式：GUI 软件的效果在渲染时才应用， naive 导出会静默丢失滤镜——通过"原生渲染器 → 滤镜翻译 → 渲染脚本"三步解决。 |
+### 2.2 双向使用：既能"造 CLI"，也能"用 CLI"
+这是项目容易被忽视的精妙设计，它其实是 **Generator（生成器）+ Consumer（消费者）+ Hub（市场）** 三位一体：
+**🛠️ 生成模式**（给开发者，造新 CLI）：
+```bash
+# 在 Claude Code / Cursor / Codex 里
+/cli-anything /home/user/gimp
+/cli-anything https://github.com/blender/blender
+/cli-anything:refine ./shotcut "picture-in-picture workflows"
+/cli-anything:test ./libreoffice
+/cli-anything:validate ./audacity
+```
+支持平台：**Claude Code、Cursor、Codex、OpenCode、Goose、Qodercli、OpenClaw、GitHub Copilot CLI、Hermes、Reasonix、Pi**，几乎覆盖 2026 年所有主流 Coding Agent。
+**📦 消费模式**（给终端用户，直接装现成 CLI）：
+```bash
+pip install cli-anything-hub
+cli-hub list              # 浏览市场
+cli-hub search image      # 搜索
+cli-hub install gimp      # 一键安装
+cli-hub launch gimp       # 直接启动
+```
+**🤖 Agent 自主模式**（最惊艳）：
+```bash
+npx skills add HKUDS/CLI-Anything --skill cli-hub-meta-skill -g -y
+```
+然后在 Claude Code 里直接说：*"*Find appropriate CLI software in CLI-Hub and complete the task: 帮我处理这批 PDF 转成 EPUB*"——Agent 会自己去 CLI-Hub 搜 Calibre、装、读 SKILL.md、干活。这是真正意义上的 **"Agent 自主装工具"**。
+### 2.3 真实 Demo 演示：不是 PPT 项目
+仓库里堆的不是"概念验证"，而是能跑出成品的实战案例：
+| Demo | 产出 |
+|---|---|
+| **FreeCAD – Curiosity 火星车** | Agent 通过 `preview live` + `trajectory` 逐步组装出火星车模型，每一步都有可视化回放。 |
+| **Blender – Orbital Relay Drone** | 硬表面无人机在真实预览循环下逐步生长，最后渲染成品。 |
+| **Draw.io – HTTPS 握手图** | Agent 纯 CLI 画出 TCP 三次握手 + TLS 协商 + 四次挥手完整时序图（4 分钟）。 |
+| **Slay the Spire II** | Agent 真的"打游戏"：读状态、选卡牌、走路径，全自动通关。 |
+| **VideoCaptioner** | 双语字幕自动生成并烧录到视频。 |
+| **ArcGIS Pro** | 通过 MCP 桥驱动**正在运行**的 Esri 商业软件做地理处理。 |
+### 2.4 覆盖广度：18+ 域，2400+ 测试
+仅仓库内已生产化的 harness 就覆盖 **创意（GIMP/Blender/Krita/Inkscape）、办公（LibreOffice/Calibre/Joplin）、视频剪辑、直播、GIS（QGIS/FreeCAD）、AI 推理、工作流自动化、通信、游戏引擎、科学计算** 等十余个领域，**累计 2280+ 单元与 E2E 测试**。
+**上手门槛评估**：
+- **消费者视角**：会 `pip install` 就能用，零门槛。
+- **Agent 用户视角**：装个 `npx skills` 即可，零门槛。
+- **开发者视角**：想给新软件生成 CLI，需要本机能装目标软件（毕竟是真调用），且要懂一点 Click/Python 才好 debug 生成结果——中等门槛。
+- **贡献者视角**：仓库提供 `CONTRIBUTING.md` + `PR Template`，社区已有 47 个 open PR 在排队，节奏很快。
+### 2.5 社区活跃度：健康的"造血循环"
+- **节奏**：News log 几乎每周都有 3–5 条实质性更新，仅 2026 年 5 月就合并了 Calibre、3MF、MiniMax、Rekordbox、UEAtelier 等多个 harness。
+- **治理**：Issue 53 / PR 47，有 `SECURITY.md` 和 CVE 响应记录（如 5 月 21 日修复 Sketch CLI 的路径穿越漏洞、5 月 19 日统一用 `defusedxml` 防注入），安全意识在开源项目里属于第一梯队。
+- **国际化**：README 提供 **中/日/德** 三语版本，Hub 前端在 SkillHub.cn 也有镜像。
+---
+## 三、目标人群与收益
+| 你是谁 | 你能拿到什么 | 推荐切入姿势 |
+|---|---|---|
+| **AI Agent 重度用户** | 让 Claude Code/Cursor 真正操作 Blender 剪视频、用 Zotero 管文献、跑 Ollama 推理，不用再手点 GUI | `npx skills add ...` + `cli-hub install <name>` |
+| **自动化工程师 / RPA 替代者** | 彻底告别脆弱的截图点击 RPA，用结构化命令 + JSON 反馈构建可靠流水线 | 直接 `pip install cli-anything-hub` 当 CLI 工具箱用 |
+| **开源软件开发者** | 一条命令给自己的项目生成 Agent 原生入口，让 AI Agent 能调用你的软件 | `/cli-anything ./your-repo` |
+| **数据 / 科研工作者** | 让 Agent 帮你跑 QGIS 地理处理、Uni-Mol 分子模拟、OpenRefine 数据清洗 | 装对应 harness，Prompt 描述任务即可 |
+| **企业 IT / 运维** | 用 `cli-anything-adguardhome`、`cli-anything-n8n` 等把企业软件变成可编排节点 | 结合自家自动化平台做集成 |
+**ROI 计算**：传统上为一个 GUI 软件做 Agent 适配，要么写 MCP Server（2–4 周 + 持续维护），要么写 UI 自动化脚本（脆、易碎、维护噩梦）。CLI-Anything 把这两件事压缩到 **"一条 Prompt + 一杯咖啡的时间"**，且生成产物自带测试基线。
+---
+## 四、竞品对比：它在生态里站在哪一格
+| 维度 | **CLI-Anything** | **MCP** | **传统 UI Agent** (SWE-Agent 类) | **原生 API / SDK** |
+|---|---|---|---|---|
+| 调用方式 | 结构化 CLI 命令 | JSON-RPC 工具调用 | 截图 + 鼠标键盘 | HTTP / 函数调用 |
+| **Token 成本** | ⭐⭐⭐⭐⭐ 最低 | ⭐⭐ 高 4–32x | ⭐ 极高（图像 token） | ⭐⭐⭐⭐ |
+| **功能完整度** | ⭐⭐⭐⭐⭐（调真实后端） | 取决于 Server 实现 | ⭐⭐ 容易丢功能 | ⭐⭐⭐ 受限于 API 暴露 |
+| **可靠性** | ⭐⭐⭐⭐⭐ 确定性 | ⭐⭐⭐⭐ | ⭐⭐ 脆弱易碎 | ⭐⭐⭐⭐⭐ |
+| **覆盖速度** | ⭐⭐⭐⭐ AI 自动生成，月增 10+ 软件 | ⭐⭐ 需手写 Server | 通用但慢 | ⭐ 取决于厂商 |
+| **生态成熟度** | 新兴但增速凶猛 | 行业标准，大厂押注 | 研究为主 | 成熟 |
+| **本质定位** | **软件 → Agent 的"翻译工厂"** | Agent ↔ 工具通信协议 | 屏幕级操作 | 点对点直连 |
+**关键洞察**：CLI-Anything 并不是要**替代** MCP，而是**与 MCP 互补**——MCP 解决"Agent 怎么调工具"的通信协议，CLI-Anything 解决"工具从哪来"的内容供给。事实上它自己也接入了 MCP 桥（如 ArcGIS Pro 的 live-Pro MCP bridge），两条路线是叠加而非对立。
+定位一句话：**如果 MCP 是"AI 时代的 HTTP"，那 CLI-Anything 就是"AI 时代的 npm"——一个能自己长出新包的包管理器。**
+---
+## 五、局限与不足：必须泼的三盆冷水
+1. **强依赖真实后端，环境是硬门槛。** 想用 `cli-anything-blender`，本机必须装好 Blender；想用 `cli-anything-arcgis-pro`，Windows + Esri 授权缺一不可。这是"调真软件"路线的天生代价——它没法像纯 API 方案那样在容器里轻量起服务。
+2. **生成质量依赖底层 Agent 能力。** `/cli-anything` 本质是让 Claude Code/Cursor 这类 Agent 跑 7 阶段流水线，Agent 的代码理解、架构抽象、测试编写能力直接决定产出 harness 的质量。小模型或弱 Agent 跑出来的 CLI 可能覆盖不全、API 设计别扭。**它是个"乘法器"，不是"无中生有的魔法"**。
+3. **生态仍是"长尾游戏"。** CLI-Hub 里质量较高的是核心团队 + 活跃贡献者维护的 ~50 个 harness（Blender 208 测试、Mailchimp 303 命令、s&box 244 测试），但 Public Registry 里不少第三方 CLI 测试薄弱甚至没有测试，质量参差。用前看一眼 `TESTS` 列是好习惯。
+4. **GUI 效果陷阱仍需人工盯。** HARNESS.md 自己都承认 "Filter Translation"（MLT→ffmpeg 滤镜翻译）存在参数空间差异、重复滤镜合并、不可映射效果等问题——也就是说，自动生成 ≠ 自动完美，复杂场景下仍需 refine 和人工验证。
+5. **商业软件适配是灰色地带。** ArcGIS Pro、Sketch、Zoom 这类闭源软件的 harness 走的是"包装官方 SDK/API"路线，合规但受限于官方能力；如果未来厂商收紧协议，部分 harness 可能失效。
+---
+## 六、结语与行动建议
+**终极评判：⭐⭐⭐⭐⭐（必藏级）**
+CLI-Anything 是 2026 年 Agent 生态里少见的"**架构级洞察**"项目——它没卷模型、没卷 Prompt，而是回答了一个更根本的问题：**Agent 与软件世界的接口到底应该是什么？** 答案朴素到让人拍大腿：CLI。然后它把这个洞察做成了可复用、可生长、有 SOP、有市场的基础设施。
+**给不同读者的行动清单**：
+- 🚀 **今天就试**：`pip install cli-anything-hub && cli-hub list`，挑一个你常用的软件装上，把"我来点 GUI"换成"让 Agent 跑命令"。
+- 🧠 **本周深挖**：精读 `HARNESS.md`——它不仅是一本 CLI 生成 SOP，更是写给所有"想让 AI 干真活"的开发者的方法论范本。
+- 🛠️ **本月贡献**：如果你维护着一个开源软件，跑 `/cli-anything ./your-repo` 给它生成 harness，再提个 PR 回上游——这可能是 2026 年性价比最高的"开源勋章"。
+- 🔭 **长期观察**：关注它和 MCP 生态的融合方向（CLI-as-MCP-bridge）、以及 HKUDS 后续是否会推出云端 harness 托管服务。
+一句话收尾：**Agent 时代的"瑞士军刀"不在模型里，而在它能不能拿起你电脑上的每一把刀——CLI-Anything 正在把这把把刀递过去。**

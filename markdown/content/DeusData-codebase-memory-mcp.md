@@ -1,0 +1,107 @@
+# DeusData/codebase-memory-mcp
+
+[GitHub URL](https://github.com/DeusData/codebase-memory-mcp)
+
+
+## codebase-memory-mcp 深度评测：给 AI 编程 Agent 一张零依赖的“代码地图”
+
+> 用 C 写成的单二进制 MCP 服务器，把代码库索引成知识图谱，让 AI Agent 查代码结构时省掉 99% 的 token。
+
+- **Tags**: MCP, 代码索引, tree-sitter, 知识图谱, AI 编程
+- **Category**: 开发工具, AI 编程, 开源项目
+
+## Details
+
+# codebase-memory-mcp 深度评测：给你的 AI 编程 Agent 一张"代码地图"
+> **一句话总结**：它是一个用 C 写成、单二进制、零依赖的开源 MCP Server——用 tree-sitter 把你的代码库索引成一张可查询的"知识图谱"，让 Claude Code、Codex、Cursor 这些 AI Agent 在回答"谁调用了这个函数""这个改动会波及哪些文件"这类结构性问题时，从"翻箱倒柜 grep 半天"变成"一次图查询、亚毫秒出结果"，token 消耗直接砍掉 99%。
+从名字就能看出它的底层逻辑：**codebase-memory-mcp = Codebase（代码库）+ Memory（记忆）+ MCP（Model Context Protocol）**——给本来"金鱼记忆"的 AI 编程 Agent，装上一份持久化的代码结构记忆。目前项目已攒下 **44.3k Star、3.6k Fork、3131 次提交、490 个开放 Issue**，是这个赛道现象级的项目。
+---
+## 一、背景与痛点：AI Agent 正在"重复读同一本书"
+只要用过 Claude Code 或 Codex CLI 处理过一个稍大的项目，你一定见过这种场面：你问它"谁调用了 `process_order`？"，它就开始 grep、读文件、再 grep、再读文件……像一个被丢进图书馆却没拿到索引卡的读者，**一个书架一个书架地翻**，最后找到了答案，但你账单上的 token 数字已经很难看。
+这背后是 AI 编程 Agent 的一个结构性缺陷：它们**没有跨会话的结构性记忆**。每次新会话，Agent 对你的代码库一无所知，只能靠"读文件"重建认知。而 LLM 的上下文窗口有限、token 又按量收费——探索性读文件既慢又贵，还容易在几百个文件之后"忘了开头"。
+codebase-memory-mcp 的设计者意识到：**Agent 缺的不是"读更多文件的能力"，而是一张已经画好的"地图"**。把函数、类、调用链、HTTP 路由、跨服务调用关系提前解析好、存成图，Agent 需要时直接查图，而不是重新走一遍迷宫。
+## 二、核心原理：tree-sitter + 知识图谱，一次解析、终身复用
+用大白话讲它的原理：**tree-sitter 是一个"代码语法 X 光机"**——它把源代码解析成抽象语法树（AST），能精确知道"这是个函数""这是个类""这里调用了那个函数"，而不像 grep 那样只会做字符串匹配。codebase-memory-mcp 在此基础上做了三件事：
+1. **多语言解析**：用 tree-sitter 解析 158–162 种语言（README 不同版本略有差异，最新 README 写 162 种），语法全部直接打进二进制里，无需另装运行时。
+2. **混合 LSP 语义增强**：对 Python、TypeScript/JS/JSX/TSX、Go、C/C++、C#、Java、Kotlin、Rust、PHP、Perl 这些主力语言，额外做 LSP 级别的类型推断（参数绑定、返回类型推断、泛型替换），让调用关系更精确。
+3. **持久化图数据库**：把所有符号和关系写入一个内嵌 SQLite（WAL 模式），缓存在 `~/.cache/codebase-memory-mcp/`，重启不丢，增量更新只重解析哈希变化的文件。
+**一个贴切的比喻**：如果说 Agent 之前的工作方式是"每次进厨房都重新闻一遍所有食材来猜菜谱"，那 codebase-memory-mcp 相当于**在厨房墙上钉了一张完整的菜谱关系图**——Agent 抬头看一眼就知道"番茄炒蛋需要番茄和鸡蛋，鸡蛋在冰箱第二层"。
+## 三、17 个 MCP 工具：把"结构性问题"变成一次查询
+这是它最有价值的地方——**不靠 prompt 模板，而是暴露一组真正的工具**给 Agent 调用。根据官方文档和第三方评测，核心工具包括：
+| 工具 | 作用 | 典型场景 |
+|---|---|---|
+| `index_repository` | 建立或增量更新索引 | 新项目首次接入 |
+| `trace_call_path` | BFS 追踪调用链（深度 5） | "谁调用了 `ProcessOrder`？" |
+| `search_graph` | 按标签、名称、文件模式搜索 | "找出所有 Handler 函数" |
+| `get_architecture` | 一次调用返回语言/包/入口/热点/聚类概览 | 接手陌生仓库 |
+| `detect_changes` | 把 git diff 映射到受影响符号 + 风险分级 | 改动前评估爆炸半径 |
+| `query_graph` | Cypher 风格图查询 | 多跳关系查询 |
+| `semantic_query` | 内置向量嵌入做语义搜索 | "找跟支付相关的模块" |
+| `manage_adr` | 架构决策记录的 CRUD | 让设计决策跨会话持久化 |
+| `get_code_snippet` | 拿到具体函数源码 | 查完图后精准读取 |
+| 死代码检测、近重复检测、ADR、ingest_traces… | Louvain 社区发现、MinHash 近克隆检测等 | 重构、清理遗留代码 |
+**所有处理 100% 本地完成，代码不离开你的机器**——这点对涉及合规或商业机密的团队尤其关键。
+## 四、真实使用示例：从安装到第一个查询
+安装是一行命令（macOS / Linux）：
+```bash
+curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash
+# 想要 3D 图可视化 UI 加 --ui 参数
+curl -fsSL .../install.sh | bash -s -- --ui
+```
+安装脚本会**自动检测你机器上装了哪些 AI Agent**（Claude Code、Codex CLI、Gemini CLI、Zed、OpenCode、Antigravity、Aider、KiloCode、VS Code、OpenClaw、Kiro 共 11 种），自动写入 MCP 配置、指令文件和 pre-tool hooks——重启 Agent 就能用。Windows 用户提供 PowerShell 安装器。
+之后你只要对 Agent 说一句：**"Index this project"**。几秒到几分钟后索引完成，就能问结构性问题了。
+博主 Russ McKendrick 在自己的博客项目上做了真实测试，问了一个典型问题，Agent 的反应是：**一次 `search_graph` 调用命中 16 条结果，再用 `get_code_snippet` 拿到实现，最后扫了几份相关文档**——总共"探索了 5 个文件、1 次搜索"，答案精准指出关键函数 `src/utils/cloudflare-images.ts` 第 32 行。
+他随后用 Token Use 仪表盘统计这次 Codex 会话的账单：**整个会话 £0.299，其中 198.3K/238.9K 输入 token 全部命中缓存，实际输出仅 3.5K**——这正是"Agent 少说话、多查图"理想工作模式的真实数据。
+**Benchmark 数据**：官方 arXiv 论文（arXiv:2603.27277）在 31 个真实仓库上对比，codebase-memory-mcp 答案质量 83%（纯文件探索 Agent 是 92%），但 **token 用量减少 10 倍、工具调用次数减少 2.1 倍**；5 次结构性查询约 3,400 token，对比文件逐个读的方式约 412,000 token——**99% 的削减**。
+## 五、性能实测：Linux 内核 3 分钟建图
+这是它最"硬核"的卖点之一。官方和第三方实测数据：
+- **Linux 内核**（2800 万行代码、75,000 个文件）：在 Apple M3 Pro 上**约 3 分钟**完成全量索引
+- **Django** 这种中型项目：**约 6 秒**
+- **单次图查询**：亚毫秒级响应
+- **索引后内存释放**：RAM 优先管线（LZ4 压缩 + 内存 SQLite + 一次性落盘），索引完立即把内存还给操作系统
+相比同类工具动辄需要 Docker、Node.js 运行时或外部图数据库（Neo4j），它的**单二进制、零依赖**设计意味着"下载、install、重启 Agent"三步搞定，部署摩擦几乎为零。
+## 六、竞品对比：它在"代码理解"赛道的定位
+| 工具 | 思路 | 是否需要服务/依赖 | 强项 |
+|---|---|---|---|
+| **codebase-memory-mcp** | tree-sitter + 知识图谱 + MCP | 单二进制，零依赖 | 速度、token 节省、多 Agent 自动配置 |
+| **Sourcegraph / Amp** | 代码搜索引擎 + 商业 SaaS | 需联网/付费 | 企业级搜索、跨仓库 |
+| **ctags / LSP** | 符号索引 | 本地工具 | 轻量，但缺乏跨文件关系图 |
+| **Serena** | LSP 语义工具 MCP | 需语言服务器 | 类型级精确，但启动慢 |
+| **Cursor / 内置索引** | IDE 私有向量索引 | 绑定 IDE | 体验流畅，但 Agent 不可通用 |
+codebase-memory-mcp 的独特竞争力在于：**它不绑定任何 IDE，也不要求你换 Agent**——只要你的 Agent 支持 MCP，就能插上这张"地图"，是一种"协议层"的补全而非"产品层"替代。
+## 七、目标人群与收益
+**最受益的三类人**：
+1. **大型 Monorepo 的开发者**——"这个函数在哪里被用了"是日常高频问题，节省的 token 直接反映在月底账单
+2. **AI 编程重度用户**（Claude Code / Codex / Aider 等）——尤其是订阅按 token 计费的人，单次会话可省 90% 以上探索成本
+3. **接手陌生代码库的新人**——`get_architecture` 一次调用就能拿到语言分布、包结构、热点函数、模块聚类，相当于自动生成一份"代码库导览"
+**收益量化**：按官方 benchmark 和第三方实测，一个中等项目的结构性问题查询，token 消耗从几十万降到几千；按 Claude Sonnet 单价粗算，**高频使用场景下每月可省数十到上百美元的 API 费用**。
+## 八、局限与不足：客观说说它的短板
+任何工具都不完美，codebase-memory-mcp 也有几处需要权衡的地方：
+**1. 只索引"结构"，不索引"文本内容"**。它擅长回答"谁调用谁""哪里定义了""改动影响哪些函数"，但**没法找到那个你三个月前写错拼的配置字符串**——这类文本搜索仍然要靠 grep。官方文档明确建议 Agent 保留 grep 用于字符串字面量、错误消息、配置值等场景。
+**2. Agent 需要被"教育"才会主动用它**。即使 MCP Server 接上了，Agent 默认习惯还是 grep+Read，需要通过 CLAUDE.md / AGENTS.md 中的指引或 pre-tool hooks 才会主动选图查询。好在 `install` 命令会自动写入这些提示，但如果你用的是不在 11 个自动配置列表里的 Agent，就得自己写。
+**3. 答案质量略低于纯文件探索**。arXiv 论文坦诚承认：83% vs 92% 的答案质量差距是真实存在的——图查询快而准，但在需要深度阅读上下文推理的复杂问题上，传统的"多读几遍文件"仍然更可靠。它是**效率工具**，不是**精度工具**。
+**4. 单二进制、C 语言实现的供应链透明度挑战**。虽然官方做了 Sigstore 签名、SLSA Level 3 构建溯源、SHA-256 校验、VirusTotal 预扫描（发布前 70+ 杀毒引擎），并把所有依赖 vendored 进二进制规避传递性供应链风险，但对安全要求极高的团队，仍然建议审阅源码或自行编译。
+**5. Issue 积压量较大**。截至本文撰写，开放 Issue 有 490 个、PR 114 个，相对于 44.3k Star 的热度，维护响应速度可能跟不上社区增长节奏。
+**6. 不同渠道语言数量口径不一**。README 说 162 种、官网写 158 种、早期 arXiv 论文写 66 种、第三方评测写 155 种——反映项目迭代很快，但官方文档的一致性还有提升空间。
+## 九、社区活跃度与生命力
+- **GitHub Star**: 44.3k，曾登顶 Trendshift 日榜 #1（全语言）和 C 语言日榜 #1
+- **提交频率**： 3131 次提交，更新非常活跃
+- **发布节奏**： 频繁发版，且每版均附带 VirusTotal 扫描报告、SLSA L3 溯源、SHA-256
+- **生态覆盖**： 自动支持 11 个 Agent、45 个客户端 surface（含条件启用）
+- **学术背书**： arXiv 论文公开 benchmark，可复现
+## 十、安全与隐私
+对一个"会读你整个代码库"的工具，信任问题必须严肃回答。codebase-memory-mcp 给出的方案相当完整：
+- **100% 本地处理**——代码不上传任何云端
+- **零运行时依赖**——所有库编译时 vendored，无传递性供应链
+- **发布前 VirusTotal 预扫描**（70+ 引擎），并在 Release Notes 公开每个候选二进制的报告链接
+- **Sigstore cosign 签名 + SLSA Level 3 构建溯源**，可用 `gh attestation verify` 验证
+- **SHA-256 校验和**发布
+- **完整源码公开**，鼓励审计
+## 十一、结语与行动建议
+**如果你每天用 AI 编程 Agent 超过 1 小时，并且项目代码量超过几万行——这个工具值得立刻装上试试。** 它不改变你的工作流，不强迫你换 IDE，只做一件事：**让 Agent 在你问"这个函数被谁用了"的时候，不再疯狂 grep，而是查一张已经画好的地图**。
+**三步上手路径**：
+1. **安装**（10 分钟）：跑一行 curl 命令，重启 Agent
+2. **建图**（1 分钟到 3 分钟）：对 Agent 说 "Index this project"
+3. **观察 token 账单**（1 周后）：对比装前装后的月度消耗，数字会替它说话
+**什么时候不要装**：如果你的项目只有几个小文件，或者你主要用 AI 做写代码而非读代码，收益边际有限。**如果你的代码库全是文本配置（YAML/JSON 主导），它也不是为这个场景设计的**。
+一句话收尾：**这是目前 MCP 生态里，"工程严谨度"和"实用价值"结合得最好的项目之一**——单二进制、零依赖、arXiv 论文背书、Sigstore 签名、100% 本地、44.3k Star 社区验证。它不是又一个"AI wrapper"，而是真正解决了 AI 编程 Agent 的一个结构性缺陷。

@@ -1,6 +1,352 @@
 {
   "all": [
     {
+      "id": "9b5a7069-7fdb-470a-a591-7dd9695a3238",
+      "url": "https://github.com/TNT-Likely/PanWatch",
+      "domain": "github.com",
+      "repo": "TNT-Likely/PanWatch",
+      "description": "PanWatch 是一个 MIT 协议的开源项目，核心亮点是把学术界的 TradingAgents 多智能体框架产品化：9 个 AI 角色以辩论方式输出个股决策书，单次成本约 0.05 美元，结论直接推送到手机。Docker 一条命令即可部署，持仓数据不出自己机器。目前约 1.3k stars，处于 v0.x 高强度迭代期，短板是纯中文文档、数据源依赖第三方接口、不支持券商自动同步，AI 输出仅供参考、不能替代人工决策。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:25:31.537Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI 盯盘",
+          "TradingAgents",
+          "自托管",
+          "A股工具"
+        ],
+        "cover": "",
+        "title": "PanWatch（盯盘侠）深度评测：把 TradingAgents 九智能体装进普通人的自托管 AI 盯盘助手",
+        "ability": [
+          "多智能体 AI 投研：4 分析师 + 多空辩论 + 风控 + 组合经理的九角色决策流水线",
+          "私有化持仓面板：多券商多账户汇总，数据全程留在本地 SQLite",
+          "全自动盯盘闭环：盘前策略 / 盘中异动 / 盘后复盘 / 新闻速递四类定时 Agent",
+          "精细化条件提醒：价格、涨跌幅、成交额、量比等组合条件，推送至 Telegram / 钉钉 / 企业微信",
+          "开发者友好：MIT 协议、MCP 端点、FastAPI + LangGraph 现代技术栈，可二次开发"
+        ],
+        "summary": "一个用 Docker 一键部署、让 9 个 AI 角色开会帮你分析 A 股持仓的开源盯盘工具。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "金融投资"
+        ],
+        "suitable": [
+          "有 NAS、家用服务器或云主机的 A 股个人投资者",
+          "持仓分散在多个券商、想统一看盘的用户",
+          "想用 AI 做深度个股研究但不会写代码的人",
+          "寻找高质量参考实现的开源开发者与二开党",
+          "同时关注 A 股、港股、美股的跨境市场观察者"
+        ],
+        "description": "PanWatch 是一个 MIT 协议的开源项目，核心亮点是把学术界的 TradingAgents 多智能体框架产品化：9 个 AI 角色以辩论方式输出个股决策书，单次成本约 0.05 美元，结论直接推送到手机。Docker 一条命令即可部署，持仓数据不出自己机器。目前约 1.3k stars，处于 v0.x 高强度迭代期，短板是纯中文文档、数据源依赖第三方接口、不支持券商自动同步，AI 输出仅供参考、不能替代人工决策。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
+      "id": "4f744a98-6dd7-4ccc-a068-c932f9aaa2d1",
+      "url": "https://github.com/harry7557558/spirula-studio",
+      "domain": "github.com",
+      "repo": "harry7557558/spirula-studio",
+      "description": "Spirula Studio 是多伦多大学学生 Harry C. 独立开发的开源 3D 高斯泼溅训练器，基于 Vulkan 计算着色器实现跨厂商 GPU 支持，将视频抽帧、AI 抠图、SfM、训练、网格导出整合进单个自包含二进制文件。支持 8GB 显存训练千万级高斯，内置 360°/鱼眼相机原生支持，2026 年迭代频繁，是该领域跨平台体验最佳的开源选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:20:21.176Z",
+      "metaData": {
+        "forks": "51",
+        "stars": "630",
+        "topics": [
+          "360-camera",
+          "3d-gaussian-splatting",
+          "3d-reconstruction",
+          "3dgs",
+          "3dgs-acceleration",
+          "computer-vision",
+          "cross-vendor",
+          "cuda",
+          "gaussian-splatting",
+          "mesh-generation",
+          "quantized-training",
+          "structure-from-motion",
+          "vram-optimization",
+          "vulkan"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Cross-vendor 3D Gaussian Splatting trainer - video to splat to mesh, Vulkan or CUDA. - harry7557558/spirula-studio"
+      },
+      "summaryData": {
+        "tags": [
+          "3DGS",
+          "Gaussian Splatting",
+          "Vulkan",
+          "开源项目",
+          "3D建模"
+        ],
+        "cover": "",
+        "title": "Spirula Studio 深度评测：把 3D 高斯泼溅训练塞进单个二进制文件的全能开源工具",
+        "ability": [
+          "跨厂商 GPU 训练：通过 Vulkan 计算着色器支持 NVIDIA、AMD、Intel、Apple Silicon 全平台，无需 CUDA 和 PyTorch",
+          "端到端一体化工作流：内置视频抽帧、SAM 抠图、SfM 相机位姿估计、训练、网格导出的完整链路",
+          "极限显存优化：通过量化训练技术，8GB 显存笔记本可训练 1000 万个 SH3 高斯",
+          "原生 360° 全景与鱼眼相机支持：无需 undistortion 预处理，直接训练全景素材",
+          "GUI 与 CLI 双形态：提供桌面图形界面和命令行两种使用方式，支持远程浏览器查看训练进度"
+        ],
+        "summary": "单人开发者打造的开源 3D 高斯泼溅训练器，单二进制文件即可完成从视频到 3D 模型的全流程，支持 NVIDIA/AMD/Intel/Apple 全平台 GPU。",
+        "category": [
+          "开发工具",
+          "3D 建模",
+          "图形学"
+        ],
+        "suitable": [
+          "AMD/Intel/Mac 用户（被主流 CUDA 训练器排除的群体）",
+          "全景摄影师与 VR 内容创作者",
+          "游戏开发者与 VFX 工作者（需导出资产进 Unreal/Unity）",
+          "3DGS 图形学研究者（Vulkan 实现参考）",
+          "想本地快速生成 3D 模型的摄影爱好者"
+        ],
+        "description": "Spirula Studio 是多伦多大学学生 Harry C. 独立开发的开源 3D 高斯泼溅训练器，基于 Vulkan 计算着色器实现跨厂商 GPU 支持，将视频抽帧、AI 抠图、SfM、训练、网格导出整合进单个自包含二进制文件。支持 8GB 显存训练千万级高斯，内置 360°/鱼眼相机原生支持，2026 年迭代频繁，是该领域跨平台体验最佳的开源选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
+      "id": "2dd3d6d0-91c7-45e7-b332-ad29773b06d4",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "domain": "github.com",
+      "repo": "DeusData/codebase-memory-mcp",
+      "description": "codebase-memory-mcp 是一个 44.3k Star 的开源 MCP 服务器，用 tree-sitter 把代码解析成存储在本地 SQLite 的知识图谱。AI Agent 问“谁调用了这个函数”时不再疯狂 grep，而是一次图查询出结果，token 消耗削减 99%，且有 arXiv 论文背书。短板：文本字符串搜索仍需 grep，答案精度略低于深度读文件。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:16:09.634Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "代码索引",
+          "tree-sitter",
+          "知识图谱",
+          "AI 编程"
+        ],
+        "cover": "",
+        "title": "codebase-memory-mcp 深度评测：给 AI 编程 Agent 一张零依赖的“代码地图”",
+        "ability": [
+          "用 tree-sitter 解析 162 种编程语言，构建可持久化的代码知识图谱",
+          "亚毫秒级图查询，Linux 内核 2800 万行代码约 3 分钟完成索引",
+          "提供 17 个 MCP 工具：调用链追踪、架构概览、变更影响分析、死代码检测等",
+          "100% 本地处理代码不上云，配备 Sigstore 签名与 SLSA L3 溯源",
+          "一行命令安装，自动配置 Claude Code、Codex 等 11 种 AI Agent"
+        ],
+        "summary": "用 C 写成的单二进制 MCP 服务器，把代码库索引成知识图谱，让 AI Agent 查代码结构时省掉 99% 的 token。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "大型 Monorepo 的日常开发者",
+          "Claude Code / Codex 等 AI 编程重度用户",
+          "接手陌生代码库的新成员",
+          "按 token 计费、关注 API 成本的用户",
+          "对代码隐私与合规有要求的团队"
+        ],
+        "description": "codebase-memory-mcp 是一个 44.3k Star 的开源 MCP 服务器，用 tree-sitter 把代码解析成存储在本地 SQLite 的知识图谱。AI Agent 问“谁调用了这个函数”时不再疯狂 grep，而是一次图查询出结果，token 消耗削减 99%，且有 arXiv 论文背书。短板：文本字符串搜索仍需 grep，答案精度略低于深度读文件。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
+      "id": "91d3e315-5aac-4542-a425-d50efa44bb21",
+      "url": "https://github.com/pbakaus/impeccable",
+      "domain": "github.com",
+      "repo": "pbakaus/impeccable",
+      "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:12:02.660Z",
+      "metaData": {
+        "forks": "4259",
+        "stars": "70069",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
+      "id": "66df0e6e-c20f-49fc-9ed7-84036acb39fb",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "domain": "github.com",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:08:00.601Z",
+      "metaData": {
+        "forks": "4591",
+        "stars": "49736",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
+      "id": "38de4db1-711b-403a-bb0d-abc110e9ee41",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "domain": "github.com",
+      "repo": "strands-agents/harness-sdk",
+      "description": "Strands Agents 是 AWS 内部孵化后开源的模型驱动 Agent 框架：只需提供目标、工具和模型，它自动完成推理循环与工具调用，同时通过 Hooks 机制让人类随时接管。支持 Python/TypeScript 双 SDK 与任意模型，是 LangGraph 之外的轻量生产级选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-23T12:04:10.689Z",
+      "metaData": {
+        "forks": "1189",
+        "stars": "7616",
+        "topics": [
+          "agent-framework",
+          "agentic",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "ai-agents",
+          "anthropic",
+          "autonomous-agents",
+          "bedrock",
+          "generative-ai",
+          "harness",
+          "llm",
+          "llm-agent",
+          "mcp",
+          "multi-agent-systems",
+          "openai",
+          "python",
+          "sdk",
+          "strands-agents",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "http://strandsagents.com/",
+        "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud. - strands-agents/harness-sdk"
+      },
+      "summaryData": {
+        "tags": [
+          "Agent框架",
+          "AWS",
+          "开源",
+          "AI Agent",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Strands Agents（harness-sdk）深度评测：AWS 开源的模型驱动 Agent 框架，给模型工具就能自己跑",
+        "ability": [
+          "模型驱动的 Agent Loop，5 行代码跑通，无需手写编排",
+          "Hooks 机制可拦截模型调用与工具执行的每一步，保留控制权",
+          "原生支持 MCP、多 Agent 模式（Swarm/Graph/A2A）与会话管理",
+          "多模型可移植：Bedrock/OpenAI/Anthropic/Ollama 一行切换",
+          "内置 Tracing、Guardrails、Token 预算等生产级能力"
+        ],
+        "summary": "AWS 开源的生产级 AI Agent 框架：你给模型工具和目标，它自己推理跑循环，你只握缰绳。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI Agent 应用开发者",
+          "被 LangGraph 复杂状态机折磨的工程师",
+          "AWS/Bedrock 生态深度用户",
+          "MCP 生态探索者",
+          "需要可观测性与审计的生产团队"
+        ],
+        "description": "Strands Agents 是 AWS 内部孵化后开源的模型驱动 Agent 框架：只需提供目标、工具和模型，它自动完成推理循环与工具调用，同时通过 Hooks 机制让人类随时接管。支持 Python/TypeScript 双 SDK 与任意模型，是 LangGraph 之外的轻量生产级选择。"
+      },
+      "type": "project",
+      "dateAdded": "20260923"
+    },
+    {
       "id": "9fb48270-3f8a-4842-9563-e22ce3fc2b71",
       "url": "https://github.com/superdesigndev/treg",
       "domain": "github.com",
@@ -11,8 +357,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "226",
-        "stars": "2352",
+        "forks": "230",
+        "stars": "2480",
         "topics": [
           "agents",
           "api-keys",
@@ -76,8 +422,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:16:06.897Z",
       "metaData": {
-        "forks": "370",
-        "stars": "8004",
+        "forks": "383",
+        "stars": "8313",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://agentexecutor.io",
@@ -129,8 +475,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
-        "forks": "3552",
-        "stars": "31241",
+        "forks": "3556",
+        "stars": "31316",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -187,8 +533,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1406",
-        "stars": "15867",
+        "forks": "1420",
+        "stars": "16049",
         "topics": [
           "board",
           "collaboration",
@@ -260,8 +606,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
-        "forks": "394",
-        "stars": "3144",
+        "forks": "397",
+        "stars": "3244",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -313,8 +659,8 @@
       "forks": 0,
       "createdAt": "2026-09-21T11:13:52.031Z",
       "metaData": {
-        "forks": "1341",
-        "stars": "13642",
+        "forks": "1344",
+        "stars": "13665",
         "topics": [
           "deepseek-v4",
           "edge",
@@ -442,8 +788,8 @@
       "forks": 0,
       "createdAt": "2026-09-21T11:04:09.314Z",
       "metaData": {
-        "forks": "1367",
-        "stars": "14249",
+        "forks": "1368",
+        "stars": "14297",
         "topics": [
           "android",
           "forensics",
@@ -674,8 +1020,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5346",
-        "stars": "36608",
+        "forks": "5360",
+        "stars": "36704",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -727,8 +1073,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:04:38.121Z",
       "metaData": {
-        "forks": "560",
-        "stars": "6213",
+        "forks": "575",
+        "stars": "6364",
         "topics": [
           "agent-native",
           "agents",
@@ -944,8 +1290,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
-        "forks": "1143",
-        "stars": "12507",
+        "forks": "1144",
+        "stars": "12522",
         "topics": [
           "http3",
           "network-programming",
@@ -1132,8 +1478,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:08:09.773Z",
       "metaData": {
-        "forks": "2264",
-        "stars": "18456",
+        "forks": "2270",
+        "stars": "18546",
         "topics": [
           "coderabbit",
           "inngest",
@@ -1569,8 +1915,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "4968",
-        "stars": "75878",
+        "forks": "4995",
+        "stars": "76189",
         "topics": [
           "ade",
           "agent-ide",
@@ -1779,8 +2125,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "542",
-        "stars": "4677",
+        "forks": "550",
+        "stars": "4709",
         "topics": [
           "agent",
           "agentic-ai",
@@ -1839,8 +2185,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
-        "forks": "4090",
-        "stars": "25467",
+        "forks": "4093",
+        "stars": "25474",
         "topics": [
           "bpf",
           "cncf",
@@ -1909,8 +2255,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "492",
-        "stars": "6723",
+        "forks": "494",
+        "stars": "6814",
         "topics": [
           "agent",
           "browser-use",
@@ -1965,8 +2311,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7491",
-        "stars": "69099",
+        "forks": "7495",
+        "stars": "69134",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -2018,8 +2364,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:38:08.647Z",
       "metaData": {
-        "forks": "14518",
-        "stars": "110669",
+        "forks": "14534",
+        "stars": "110684",
         "topics": [
           "ai",
           "alternative",
@@ -2164,8 +2510,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "24138",
-        "stars": "147696",
+        "forks": "24157",
+        "stars": "147740",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -2269,8 +2615,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3019",
-        "stars": "25456",
+        "forks": "3021",
+        "stars": "25470",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2437,8 +2783,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "1153",
-        "stars": "20339",
+        "forks": "1166",
+        "stars": "20497",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2489,8 +2835,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T12:08:20.183Z",
       "metaData": {
-        "forks": "38738",
-        "stars": "91092",
+        "forks": "38742",
+        "stars": "91114",
         "topics": [
           "asyncio",
           "hacktoberfest",
@@ -2758,8 +3104,8 @@
       "forks": 0,
       "createdAt": "2026-09-15T11:12:08.632Z",
       "metaData": {
-        "forks": "9176",
-        "stars": "44717",
+        "forks": "9184",
+        "stars": "44756",
         "topics": [
           "ai",
           "anthropic",
@@ -3372,8 +3718,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7455",
-        "stars": "84912",
+        "forks": "7462",
+        "stars": "84993",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -3815,8 +4161,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2862",
-        "stars": "39860",
+        "forks": "2873",
+        "stars": "39998",
         "topics": [
           "agent",
           "agent-skills",
@@ -3875,7 +4221,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "549",
-        "stars": "6669",
+        "stars": "6674",
         "topics": [
           "agent",
           "ai",
@@ -4418,8 +4764,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3919",
-        "stars": "29080",
+        "forks": "3935",
+        "stars": "29228",
         "topics": [
           "agent",
           "agentic",
@@ -4824,8 +5170,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "866",
-        "stars": "3536",
+        "forks": "871",
+        "stars": "3544",
         "topics": [
           "ai",
           "ai-agents",
@@ -5113,8 +5459,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "4014",
-        "stars": "37184",
+        "forks": "4023",
+        "stars": "37257",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -8149,8 +8495,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "25818",
-        "stars": "288652",
+        "forks": "25985",
+        "stars": "290429",
         "topics": [
           "ai",
           "brainstorming",
@@ -8283,8 +8629,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "371",
-        "stars": "4876",
+        "forks": "373",
+        "stars": "4888",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -9191,8 +9537,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3233",
-        "stars": "33515",
+        "forks": "3237",
+        "stars": "33534",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -9737,8 +10083,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:19:21.939Z",
       "metaData": {
-        "forks": "3132",
-        "stars": "26082",
+        "forks": "3143",
+        "stars": "26188",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -9848,8 +10194,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "4081",
-        "stars": "34565",
+        "forks": "4097",
+        "stars": "34660",
         "topics": [
           "ai",
           "audiobook",
@@ -10097,8 +10443,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8089",
-        "stars": "62233",
+        "forks": "8096",
+        "stars": "62267",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -10804,8 +11150,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1682",
-        "stars": "14267",
+        "forks": "1683",
+        "stars": "14278",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10857,8 +11203,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6046",
-        "stars": "38669",
+        "forks": "6053",
+        "stars": "38720",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10910,8 +11256,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4935",
-        "stars": "42742",
+        "forks": "4944",
+        "stars": "42778",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -11094,8 +11440,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10352",
-        "stars": "98515",
+        "forks": "10363",
+        "stars": "98605",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -11341,8 +11687,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2597",
-        "stars": "20178",
+        "forks": "2603",
+        "stars": "20284",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -12932,8 +13278,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4713",
-        "stars": "70114",
+        "forks": "4723",
+        "stars": "70281",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -13363,8 +13709,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "3852",
-        "stars": "28143",
+        "forks": "3861",
+        "stars": "28195",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -14467,7 +14813,7 @@
       "createdAt": "2026-08-24T04:37:41.079Z",
       "metaData": {
         "forks": "312",
-        "stars": "4398",
+        "stars": "4403",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -14572,8 +14918,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2904",
-        "stars": "50412",
+        "forks": "2912",
+        "stars": "50499",
         "topics": [
           "adhd",
           "claude-",
@@ -16095,8 +16441,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39699",
-        "stars": "265600",
+        "forks": "39723",
+        "stars": "265841",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -16156,8 +16502,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3208",
-        "stars": "33317",
+        "forks": "3211",
+        "stars": "33346",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -16372,8 +16718,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "785",
-        "stars": "8431",
+        "forks": "788",
+        "stars": "8446",
         "topics": [],
         "license": "",
         "homepage": "",
