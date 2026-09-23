@@ -9,8 +9,33 @@
   "forks": 0,
   "createdAt": "2026-09-23T12:16:09.634Z",
   "metaData": {
-    "forks": "0",
-    "stars": "0"
+    "forks": "3623",
+    "stars": "44325",
+    "topics": [
+      "aider",
+      "ast",
+      "claude-code",
+      "code-analysis",
+      "code-intelligence",
+      "codex",
+      "cursor",
+      "cypher",
+      "developer-tools",
+      "gemini-cli",
+      "graph-visualization",
+      "kilocode",
+      "knowledge-graph",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "opencode",
+      "sqlite",
+      "tree-sitter",
+      "windsurf"
+    ],
+    "license": "MIT license",
+    "homepage": "https://deusdata.github.io/codebase-memory-mcp/",
+    "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies. - DeusData/codebase-memory-mcp"
   },
   "summaryData": {
     "tags": [
