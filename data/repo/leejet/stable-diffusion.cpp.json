@@ -9,8 +9,32 @@
   "forks": 0,
   "createdAt": "2026-09-24T11:21:22.648Z",
   "metaData": {
-    "forks": "0",
-    "stars": "0"
+    "forks": "809",
+    "stars": "7145",
+    "topics": [
+      "ai",
+      "cplusplus",
+      "diffusion",
+      "flux",
+      "flux-dev",
+      "ggml",
+      "image-generation",
+      "image2image",
+      "img2img",
+      "latent-diffusion",
+      "ltx-video",
+      "qwen-image",
+      "stable-diffusion",
+      "text2image",
+      "txt2img",
+      "videogeneration",
+      "wan",
+      "z-image",
+      "z-image-turbo"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++ - leejet/stable-diffusion.cpp"
   },
   "summaryData": {
     "tags": [
