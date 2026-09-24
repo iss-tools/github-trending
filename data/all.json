@@ -1,6 +1,58 @@
 {
   "all": [
     {
+      "id": "8a32d9f0-ca6d-409b-a14a-cfa7d2589158",
+      "url": "https://github.com/LibreChat-AI/LibreChat",
+      "domain": "github.com",
+      "repo": "LibreChat-AI/LibreChat",
+      "description": "本次消息仅包含 JSON 字段说明，未附带需要分析的评测文章正文或项目链接，因此无法提炼标题、能力、人群、分类与标签。请重新发送包含完整评测内容的文本后，即可按约定字段生成结构化概要。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T05:10:37.487Z",
+      "metaData": {
+        "forks": "9186",
+        "stars": "44812",
+        "topics": [
+          "ai",
+          "anthropic",
+          "artifacts",
+          "aws",
+          "azure",
+          "chatgpt",
+          "chatgpt-clone",
+          "claude",
+          "clone",
+          "deepseek",
+          "gemini",
+          "google",
+          "gpt-5",
+          "librechat",
+          "mcp",
+          "o1",
+          "openai",
+          "responses-api",
+          "vision",
+          "webui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://librechat.ai/",
+        "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active - LibreChat-AI/LibreChat"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "待补充：未接收到评测文章正文",
+        "ability": [],
+        "summary": "提示中提到提供评测长文，但正文缺失，无法进行结构化信息提取。",
+        "category": [],
+        "suitable": [],
+        "description": "本次消息仅包含 JSON 字段说明，未附带需要分析的评测文章正文或项目链接，因此无法提炼标题、能力、人群、分类与标签。请重新发送包含完整评测内容的文本后，即可按约定字段生成结构化概要。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
       "id": "abe1bdf4-43bc-4d35-a153-de9a5688d461",
       "url": "https://github.com/pytorch/pytorch",
       "domain": "github.com",
@@ -11,8 +63,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "30094",
-        "stars": "103220",
+        "forks": "30104",
+        "stars": "103226",
         "topics": [
           "autograd",
           "deep-learning",
@@ -73,8 +125,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:25:31.537Z",
       "metaData": {
-        "forks": "301",
-        "stars": "1574",
+        "forks": "304",
+        "stars": "1607",
         "topics": [
           "a-share",
           "agent",
@@ -148,7 +200,7 @@
       "createdAt": "2026-09-23T12:20:21.176Z",
       "metaData": {
         "forks": "57",
-        "stars": "763",
+        "stars": "783",
         "topics": [
           "360-camera",
           "3d-gaussian-splatting",
@@ -215,8 +267,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:16:09.634Z",
       "metaData": {
-        "forks": "3642",
-        "stars": "44612",
+        "forks": "3644",
+        "stars": "44664",
         "topics": [
           "aider",
           "ast",
@@ -289,8 +341,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4273",
-        "stars": "70393",
+        "forks": "4277",
+        "stars": "70448",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -343,7 +395,7 @@
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
         "forks": "4603",
-        "stars": "49988",
+        "stars": "50015",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -395,8 +447,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:04:10.689Z",
       "metaData": {
-        "forks": "1205",
-        "stars": "7891",
+        "forks": "1209",
+        "stars": "7937",
         "topics": [
           "agent-framework",
           "agentic",
@@ -469,8 +521,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "243",
-        "stars": "2759",
+        "forks": "244",
+        "stars": "2809",
         "topics": [
           "agents",
           "api-keys",
@@ -534,8 +586,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:16:06.897Z",
       "metaData": {
-        "forks": "438",
-        "stars": "9133",
+        "forks": "447",
+        "stars": "9307",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://agentexecutor.io",
@@ -587,8 +639,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
-        "forks": "3580",
-        "stars": "31514",
+        "forks": "3585",
+        "stars": "31568",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -645,8 +697,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1436",
-        "stars": "16363",
+        "forks": "1454",
+        "stars": "16469",
         "topics": [
           "board",
           "collaboration",
@@ -718,8 +770,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
-        "forks": "418",
-        "stars": "3535",
+        "forks": "419",
+        "stars": "3566",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -900,8 +952,8 @@
       "forks": 0,
       "createdAt": "2026-09-21T11:04:09.314Z",
       "metaData": {
-        "forks": "1382",
-        "stars": "14500",
+        "forks": "1383",
+        "stars": "14518",
         "topics": [
           "android",
           "forensics",
@@ -1132,8 +1184,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5385",
-        "stars": "37025",
+        "forks": "5388",
+        "stars": "37048",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1185,8 +1237,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:04:38.121Z",
       "metaData": {
-        "forks": "587",
-        "stars": "6570",
+        "forks": "594",
+        "stars": "6628",
         "topics": [
           "agent-native",
           "agents",
@@ -1403,7 +1455,7 @@
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
         "forks": "1146",
-        "stars": "12537",
+        "stars": "12540",
         "topics": [
           "http3",
           "network-programming",
@@ -1590,8 +1642,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:08:09.773Z",
       "metaData": {
-        "forks": "2294",
-        "stars": "18888",
+        "forks": "2303",
+        "stars": "18933",
         "topics": [
           "coderabbit",
           "inngest",
@@ -1964,8 +2016,8 @@
       "forks": 0,
       "createdAt": "2026-09-18T11:08:46.288Z",
       "metaData": {
-        "forks": "4793",
-        "stars": "70060",
+        "forks": "4795",
+        "stars": "70087",
         "topics": [
           "ai",
           "context-engineering",
@@ -2027,8 +2079,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "5019",
-        "stars": "76637",
+        "forks": "5026",
+        "stars": "76755",
         "topics": [
           "ade",
           "agent-ide",
@@ -2237,8 +2289,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "563",
-        "stars": "4770",
+        "forks": "565",
+        "stars": "4787",
         "topics": [
           "agent",
           "agentic-ai",
@@ -2298,7 +2350,7 @@
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
         "forks": "4098",
-        "stars": "25495",
+        "stars": "25501",
         "topics": [
           "bpf",
           "cncf",
@@ -2368,7 +2420,7 @@
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
         "forks": "503",
-        "stars": "6938",
+        "stars": "6971",
         "topics": [
           "agent",
           "browser-use",
@@ -2423,8 +2475,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7498",
-        "stars": "69183",
+        "forks": "7502",
+        "stars": "69192",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -2622,8 +2674,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "24219",
-        "stars": "147817",
+        "forks": "24232",
+        "stars": "147833",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -2727,8 +2779,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3024",
-        "stars": "25503",
+        "forks": "3025",
+        "stars": "25509",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2895,8 +2947,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "1198",
-        "stars": "20934",
+        "forks": "1202",
+        "stars": "20984",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4273,8 +4325,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2889",
-        "stars": "40227",
+        "forks": "2898",
+        "stars": "40302",
         "topics": [
           "agent",
           "agent-skills",
@@ -4333,7 +4385,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "551",
-        "stars": "6718",
+        "stars": "6723",
         "topics": [
           "agent",
           "ai",
@@ -4876,8 +4928,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3953",
-        "stars": "29372",
+        "forks": "3962",
+        "stars": "29444",
         "topics": [
           "agent",
           "agentic",
@@ -5282,8 +5334,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "900",
-        "stars": "3617",
+        "forks": "906",
+        "stars": "3632",
         "topics": [
           "ai",
           "ai-agents",
@@ -5571,8 +5623,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "4038",
-        "stars": "37367",
+        "forks": "4039",
+        "stars": "37378",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -8607,8 +8659,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26013",
-        "stars": "290701",
+        "forks": "26023",
+        "stars": "290790",
         "topics": [
           "ai",
           "brainstorming",
@@ -8742,7 +8794,7 @@
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
         "forks": "374",
-        "stars": "4948",
+        "stars": "4958",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -9649,8 +9701,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3242",
-        "stars": "33582",
+        "forks": "3244",
+        "stars": "33589",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -10195,8 +10247,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:19:21.939Z",
       "metaData": {
-        "forks": "3168",
-        "stars": "26552",
+        "forks": "3169",
+        "stars": "26594",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -10306,8 +10358,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "4123",
-        "stars": "34917",
+        "forks": "4128",
+        "stars": "34981",
         "topics": [
           "ai",
           "audiobook",
@@ -10555,8 +10607,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8109",
-        "stars": "62351",
+        "forks": "8113",
+        "stars": "62377",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -11262,8 +11314,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1688",
-        "stars": "14311",
+        "forks": "1687",
+        "stars": "14317",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11316,7 +11368,7 @@
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
         "forks": "6065",
-        "stars": "38799",
+        "stars": "38819",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11368,8 +11420,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4967",
-        "stars": "42884",
+        "forks": "4971",
+        "stars": "42908",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -11553,7 +11605,7 @@
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
         "forks": "10371",
-        "stars": "98723",
+        "stars": "98744",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -11799,8 +11851,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2635",
-        "stars": "20572",
+        "forks": "2644",
+        "stars": "20615",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -12317,8 +12369,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "8533",
-        "stars": "41932",
+        "forks": "8550",
+        "stars": "42006",
         "topics": [
           "3d-globe",
           "cesium",
@@ -13004,7 +13056,7 @@
       "createdAt": "2026-08-27T11:04:17.051Z",
       "metaData": {
         "forks": "1366",
-        "stars": "14482",
+        "stars": "14484",
         "topics": [
           "nim",
           "privacy",
@@ -13198,8 +13250,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "4195",
-        "stars": "46355",
+        "forks": "4196",
+        "stars": "46385",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -13390,8 +13442,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4749",
-        "stars": "70633",
+        "forks": "4758",
+        "stars": "70749",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -15030,8 +15082,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2927",
-        "stars": "50714",
+        "forks": "2928",
+        "stars": "50753",
         "topics": [
           "adhd",
           "claude-",
@@ -16553,8 +16605,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39782",
-        "stars": "266209",
+        "forks": "39795",
+        "stars": "266277",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -16614,8 +16666,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:39:54.507Z",
       "metaData": {
-        "forks": "3216",
-        "stars": "33405",
+        "forks": "3218",
+        "stars": "33429",
         "topics": [
           "agents",
           "ai-image-generation",
@@ -16830,8 +16882,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "795",
-        "stars": "8503",
+        "forks": "798",
+        "stars": "8514",
         "topics": [],
         "license": "",
         "homepage": "",
