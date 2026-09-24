@@ -1,6 +1,290 @@
 {
   "all": [
     {
+      "id": "1c144d0f-ed17-4aab-ba96-2ece3cd5c28e",
+      "url": "https://github.com/leejet/stable-diffusion.cpp",
+      "domain": "github.com",
+      "repo": "leejet/stable-diffusion.cpp",
+      "description": "基于 ggml 引擎的纯 C/C++ 扩散模型推理器，像 llama.cpp 跑大语言模型一样跑 AI 绘画。通过 GGUF 量化与 CPU/GPU 混合推理，大幅降低硬件门槛；更新极快，新模型常当天适配。它不取代 ComfyUI，而是开辟了轻量、跨平台、可嵌入的独特赛道，是低配设备与二次开发场景的降维打击级工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T11:21:22.648Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "stable-diffusion",
+          "ggml",
+          "量化推理",
+          "本地部署",
+          "C/C++"
+        ],
+        "cover": "",
+        "title": "stable-diffusion.cpp 深度评测：让老设备也能跑 AI 绘画的轻量级推理引擎",
+        "ability": [
+          "零依赖纯 C/C++ 推理，支持 CPU/Metal/Vulkan/CUDA 多后端",
+          "GGUF 量化压缩模型，4GB 内存可跑 SD1.5、8GB 显存可跑 Flux",
+          "覆盖 SD/Flux/Qwen-Image/Wan 视频等主流模型，新模型常 Day-0 支持",
+          "CLI 极简上手，一行命令即可出图",
+          "提供 C API，可嵌入 App、插件与树莓派等嵌入式设备"
+        ],
+        "summary": "纯 C/C++ 实现的轻量级 AI 绘画推理引擎，无需 PyTorch 和高端显卡，一行命令在低配设备上运行 SD、Flux 等主流模型。",
+        "category": [
+          "开发工具",
+          "AI 绘画",
+          "开源项目"
+        ],
+        "suitable": [
+          "嵌入式/IoT 开发者",
+          "Mac 或无独显老笔记本用户",
+          "想集成 AI 绘画能力的应用开发者",
+          "追求极简命令行的尝鲜玩家",
+          "注重隐私的完全离线用户"
+        ],
+        "description": "基于 ggml 引擎的纯 C/C++ 扩散模型推理器，像 llama.cpp 跑大语言模型一样跑 AI 绘画。通过 GGUF 量化与 CPU/GPU 混合推理，大幅降低硬件门槛；更新极快，新模型常当天适配。它不取代 ComfyUI，而是开辟了轻量、跨平台、可嵌入的独特赛道，是低配设备与二次开发场景的降维打击级工具。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
+      "id": "bd41a651-936c-4ba5-b811-9f5ae9e9bd11",
+      "url": "https://github.com/julyx10/lap",
+      "domain": "github.com",
+      "repo": "julyx10/lap",
+      "description": "Lap 是基于 Tauri + Rust 的开源本地照片管理器（GPL-3.0），直接索引你现有的文件夹而不锁库，内置 CLIP 语义搜索和 InsightFace 人脸聚类，所有 AI 推理离线完成。支持 RAW、HEIC、Live Photos 等 60+ 格式，免费无订阅。短板：标签评分不写入 EXIF、暂无手机端、Windows 安装包未签名。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T11:17:04.437Z",
+      "metaData": {
+        "forks": "165",
+        "stars": "2666",
+        "topics": [
+          "desktop-app",
+          "digital-asset-manager",
+          "duplicate-detection",
+          "face-recognition",
+          "family-photos",
+          "image-search",
+          "large-photo-collections",
+          "linux-app",
+          "local-first",
+          "macos-app",
+          "offline",
+          "open-source",
+          "photo-library",
+          "photo-management",
+          "photo-organizer",
+          "privacy",
+          "windows-app"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://julyx10.github.io/lap/",
+        "description": "An offline-first photo manager for large local libraries - julyx10/lap"
+      },
+      "summaryData": {
+        "tags": [
+          "本地优先",
+          "AI 语义搜索",
+          "照片管理",
+          "隐私保护",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Lap 深度评测：把照片所有权还给用户的本地优先 AI 相册管理器",
+        "ability": [
+          "本地 AI 语义搜索：用自然语言（支持中文）搜照片，CLIP 模型完全离线运行",
+          "人脸检测与聚类：InsightFace 自动把同一个人的照片归到一组",
+          "文件夹原位管理：不导入、不锁库，照片始终是普通文件，卸载也不动原图",
+          "RAW+JPEG 成对管理、Live Photos 支持、四窗格对比选片，摄影师刚需一步到位",
+          "跨平台覆盖 Windows/macOS/Linux，支持 60+ 图片视频格式，双击即装无需 Docker"
+        ],
+        "summary": "Lap 是一款完全离线的开源照片管理器，用本地 AI 帮你像云端相册一样搜索和管理几十万张照片，却不上传任何一张到云。",
+        "category": [
+          "图片管理",
+          "开源软件",
+          "生活效率"
+        ],
+        "suitable": [
+          "有几万到几十万张本地照片的业余摄影爱好者",
+          "孩子照片视频堆满硬盘的家庭用户",
+          "隐私敏感、拒绝照片上云的极客",
+          "想逃离 Google Photos/iCloud 订阅费的用户",
+          "跨 Windows/Mac/Linux 多平台办公的人"
+        ],
+        "description": "Lap 是基于 Tauri + Rust 的开源本地照片管理器（GPL-3.0），直接索引你现有的文件夹而不锁库，内置 CLIP 语义搜索和 InsightFace 人脸聚类，所有 AI 推理离线完成。支持 RAW、HEIC、Live Photos 等 60+ 格式，免费无订阅。短板：标签评分不写入 EXIF、暂无手机端、Windows 安装包未签名。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
+      "id": "dd1b3f9c-e7ea-4166-8958-4bcecfb6b590",
+      "url": "https://github.com/FxEmbed/FxEmbed",
+      "domain": "github.com",
+      "repo": "FxEmbed/FxEmbed",
+      "description": "FxEmbed 是一个基于 TypeScript 和 Cloudflare Workers 的开源项目（GitHub 5.1k+ Stars）。只需把 x.com 换成 fixupx.com、twitter.com 换成 fxtwitter.com，即可让 X/Twitter/Bluesky 链接在 Discord、Telegram 等客户端显示带视频、多图、投票、引用的完整卡片，还附带免费的推文 JSON API 和媒体直链下载，是同类嵌入修复工具中的事实标准。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T11:13:00.613Z",
+      "metaData": {
+        "forks": "242",
+        "stars": "5251",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://docs.fxembed.com",
+        "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others - FxEmbed/FxEmbed"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Discord",
+          "Twitter/X",
+          "Cloudflare Workers",
+          "嵌入修复"
+        ],
+        "cover": "",
+        "title": "FxEmbed 深度评测：让 X/Twitter 链接在 Discord、Telegram 里“活过来”的开源神器",
+        "ability": [
+          "URL 前缀改写即可生成富媒体嵌入卡片（支持视频、多图、投票、引用推文、翻译）",
+          "提供免费公开 JSON API，无需 X 付费 API Key 即可获取推文数据",
+          "支持媒体直链下载（链接后加 .mp4/.jpg 直接获取原始文件）",
+          "同时覆盖 Twitter/X 与 Bluesky 双平台（fixupx.com / fxtwitter.com / fxbsky.app）",
+          "基于 Cloudflare Workers 与 Docker，可一键自托管部署保护隐私"
+        ],
+        "summary": "改一下链接前缀，就能让 X/Twitter/Bluesky 链接在 Discord 等聊天软件里完整显示视频、多图和投票。",
+        "category": [
+          "开发工具",
+          "社交媒体",
+          "效率工具"
+        ],
+        "suitable": [
+          "Discord / Telegram 群主与重度用户",
+          "内容创作者与自媒体搬运工",
+          "Bot / 爬虫 / 数据采集开发者",
+          "注重隐私的自托管爱好者",
+          "想学习 Cloudflare Workers 工程实践的技术学习者"
+        ],
+        "description": "FxEmbed 是一个基于 TypeScript 和 Cloudflare Workers 的开源项目（GitHub 5.1k+ Stars）。只需把 x.com 换成 fixupx.com、twitter.com 换成 fxtwitter.com，即可让 X/Twitter/Bluesky 链接在 Discord、Telegram 等客户端显示带视频、多图、投票、引用的完整卡片，还附带免费的推文 JSON API 和媒体直链下载，是同类嵌入修复工具中的事实标准。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
+      "id": "a5f8448c-07a4-451b-868a-1a099026106f",
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "domain": "github.com",
+      "repo": "NVIDIA/Model-Optimizer",
+      "description": "NVIDIA Model Optimizer（ModelOpt）是 NVIDIA 官方开源的模型优化统一工具库，集成了量化（PTQ/QAT）、剪枝、蒸馏、投机解码等能力，支持 FP8、INT8、INT4、NVFP4 等多种低精度格式。量化后的模型可无缝部署到 TensorRT-LLM、vLLM 等主流推理框架，实测推理加速 1.3-2.1 倍、显存节省最高 4 倍，是 NVIDIA 硬件上做大模型部署的官方首选工具链。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T11:08:49.633Z",
+      "metaData": {
+        "forks": "621",
+        "stars": "3870",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://nvidia.github.io/Model-Optimizer/",
+        "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed. - NVIDIA/Model-Optimizer"
+      },
+      "summaryData": {
+        "tags": [
+          "模型量化",
+          "NVIDIA",
+          "推理加速",
+          "大模型部署",
+          "TensorRT-LLM"
+        ],
+        "cover": "",
+        "title": "NVIDIA Model Optimizer 深度评测：一行代码让大模型显存减半、推理翻倍的官方量化神器",
+        "ability": [
+          "一行代码完成 FP8/INT8/INT4/NVFP4 训练后量化（PTQ）",
+          "支持量化感知训练（QAT）、剪枝、蒸馏、投机解码全链路优化",
+          "独家支持 Blackwell 架构 NVFP4 4-bit 浮点格式",
+          "量化结果无缝导出至 TensorRT-LLM / vLLM / SGLang 部署",
+          "兼容 HuggingFace/PyTorch 模型，覆盖 Llama、Qwen、DeepSeek 等主流模型"
+        ],
+        "summary": "NVIDIA 官方开源的大模型压缩优化工具库，一行代码完成 FP8/INT4 量化，推理加速最高 2.1 倍、显存节省 4 倍。",
+        "category": [
+          "开发工具",
+          "AI 模型优化",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业大模型推理服务团队",
+          "用消费级 GPU 跑大模型的个人玩家",
+          "追求极致吞吐与低成本的 AI 工程师",
+          "需要端侧/边缘部署模型的开发者",
+          "精度敏感场景的算法工程师（可用 QAT 补精度）"
+        ],
+        "description": "NVIDIA Model Optimizer（ModelOpt）是 NVIDIA 官方开源的模型优化统一工具库，集成了量化（PTQ/QAT）、剪枝、蒸馏、投机解码等能力，支持 FP8、INT8、INT4、NVFP4 等多种低精度格式。量化后的模型可无缝部署到 TensorRT-LLM、vLLM 等主流推理框架，实测推理加速 1.3-2.1 倍、显存节省最高 4 倍，是 NVIDIA 硬件上做大模型部署的官方首选工具链。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
+      "id": "999d4095-7659-4caa-a9b7-0d18ac25aa79",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "domain": "github.com",
+      "repo": "vectorize-io/hindsight",
+      "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-24T11:04:15.321Z",
+      "metaData": {
+        "forks": "2525",
+        "stars": "26891",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "ai-memory",
+          "memory"
+        ],
+        "license": "MIT license",
+        "homepage": "https://hindsight.vectorize.io/",
+        "description": "Hindsight: Agent Memory That Learns. Contribute to vectorize-io/hindsight development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Agent Memory",
+          "开源项目",
+          "LLM",
+          "GitHub",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Hindsight 深度评测：LongMemEval 94.6% 的开源 Agent 记忆系统",
+        "ability": [
+          "四层仿生记忆结构：事实、经历、观察、心智模型",
+          "TEMPR 四路并行检索：语义、关键词、图谱、时序融合排序",
+          "Observation 后台自动去重消化，支持反思与自我纠错",
+          "60+ 生态集成，wrap_openai 两行代码接入现有 Agent",
+          "内置 45 种 PII 脱敏护栏，Docker/Helm 一键部署"
+        ],
+        "summary": "一个让 AI Agent 拥有可长期记忆、自我反思能力的开源记忆层，基准准确率 94.6%。",
+        "category": [
+          "AI 基础设施",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI Agent 应用开发者",
+          "Claude Code / Cursor 等编码助手用户",
+          "企业 AI 中台与合规团队",
+          "Agent 记忆方向研究者",
+          "技术选型决策者"
+        ],
+        "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。"
+      },
+      "type": "project",
+      "dateAdded": "20260924"
+    },
+    {
       "id": "8a32d9f0-ca6d-409b-a14a-cfa7d2589158",
       "url": "https://github.com/LibreChat-AI/LibreChat",
       "domain": "github.com",
@@ -11,8 +295,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T05:10:37.487Z",
       "metaData": {
-        "forks": "9187",
-        "stars": "44828",
+        "forks": "9191",
+        "stars": "44843",
         "topics": [
           "ai",
           "anthropic",
@@ -63,8 +347,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "30146",
-        "stars": "103232",
+        "forks": "30177",
+        "stars": "103235",
         "topics": [
           "autograd",
           "deep-learning",
@@ -394,8 +678,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
-        "forks": "4607",
-        "stars": "50097",
+        "forks": "4609",
+        "stars": "50130",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -447,8 +731,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:04:10.689Z",
       "metaData": {
-        "forks": "1214",
-        "stars": "8011",
+        "forks": "1216",
+        "stars": "8056",
         "topics": [
           "agent-framework",
           "agentic",
@@ -521,8 +805,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "249",
-        "stars": "2887",
+        "forks": "250",
+        "stars": "2928",
         "topics": [
           "agents",
           "api-keys",
@@ -586,8 +870,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:16:06.897Z",
       "metaData": {
-        "forks": "469",
-        "stars": "9551",
+        "forks": "474",
+        "stars": "9645",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://agentexecutor.io",
@@ -639,8 +923,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
-        "forks": "3592",
-        "stars": "31651",
+        "forks": "3596",
+        "stars": "31678",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -697,8 +981,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1479",
-        "stars": "16578",
+        "forks": "1489",
+        "stars": "16846",
         "topics": [
           "board",
           "collaboration",
@@ -952,8 +1236,8 @@
       "forks": 0,
       "createdAt": "2026-09-21T11:04:09.314Z",
       "metaData": {
-        "forks": "1387",
-        "stars": "14564",
+        "forks": "1390",
+        "stars": "14594",
         "topics": [
           "android",
           "forensics",
@@ -1184,8 +1468,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5402",
-        "stars": "37139",
+        "forks": "5407",
+        "stars": "37185",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -1455,7 +1739,7 @@
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
         "forks": "1147",
-        "stars": "12549",
+        "stars": "12556",
         "topics": [
           "http3",
           "network-programming",
@@ -2016,8 +2300,8 @@
       "forks": 0,
       "createdAt": "2026-09-18T11:08:46.288Z",
       "metaData": {
-        "forks": "4796",
-        "stars": "70122",
+        "forks": "4797",
+        "stars": "70142",
         "topics": [
           "ai",
           "context-engineering",
@@ -2079,8 +2363,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "5042",
-        "stars": "76956",
+        "forks": "5051",
+        "stars": "77058",
         "topics": [
           "ade",
           "agent-ide",
@@ -2289,8 +2573,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "570",
-        "stars": "4811",
+        "forks": "572",
+        "stars": "4825",
         "topics": [
           "agent",
           "agentic-ai",
@@ -2350,7 +2634,7 @@
       "createdAt": "2026-09-17T11:11:47.422Z",
       "metaData": {
         "forks": "4099",
-        "stars": "25507",
+        "stars": "25513",
         "topics": [
           "bpf",
           "cncf",
@@ -2419,8 +2703,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "506",
-        "stars": "7021",
+        "forks": "509",
+        "stars": "7045",
         "topics": [
           "agent",
           "browser-use",
@@ -2475,8 +2759,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
-        "forks": "7504",
-        "stars": "69203",
+        "forks": "7505",
+        "stars": "69208",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -2780,7 +3064,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3024",
-        "stars": "25518",
+        "stars": "25526",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2947,8 +3231,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "1206",
-        "stars": "21067",
+        "forks": "1210",
+        "stars": "21113",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -4325,8 +4609,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2907",
-        "stars": "40421",
+        "forks": "2912",
+        "stars": "40479",
         "topics": [
           "agent",
           "agent-skills",
@@ -4385,7 +4669,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "550",
-        "stars": "6733",
+        "stars": "6738",
         "topics": [
           "agent",
           "ai",
@@ -4444,8 +4728,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
-        "forks": "1141",
-        "stars": "7692",
+        "forks": "1173",
+        "stars": "7861",
         "topics": [
           "accounting",
           "billing",
@@ -4928,8 +5212,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "3974",
-        "stars": "29533",
+        "forks": "3980",
+        "stars": "29583",
         "topics": [
           "agent",
           "agentic",
@@ -5334,8 +5618,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "909",
-        "stars": "3647",
+        "forks": "910",
+        "stars": "3656",
         "topics": [
           "ai",
           "ai-agents",
@@ -5623,8 +5907,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "4048",
-        "stars": "37420",
+        "forks": "4054",
+        "stars": "37446",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -8659,8 +8943,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26030",
-        "stars": "290916",
+        "forks": "26034",
+        "stars": "290965",
         "topics": [
           "ai",
           "brainstorming",
@@ -8793,8 +9077,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
-        "forks": "373",
-        "stars": "4976",
+        "forks": "374",
+        "stars": "4983",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -9702,7 +9986,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "3245",
-        "stars": "33598",
+        "stars": "33601",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -10358,8 +10642,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "4134",
-        "stars": "35038",
+        "forks": "4135",
+        "stars": "35068",
         "topics": [
           "ai",
           "audiobook",
@@ -10607,8 +10891,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8121",
-        "stars": "62408",
+        "forks": "8122",
+        "stars": "62426",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -11314,8 +11598,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
-        "forks": "1689",
-        "stars": "14329",
+        "forks": "1690",
+        "stars": "14334",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11367,8 +11651,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6068",
-        "stars": "38857",
+        "forks": "6070",
+        "stars": "38877",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11420,8 +11704,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:12:56.092Z",
       "metaData": {
-        "forks": "4975",
-        "stars": "42935",
+        "forks": "4977",
+        "stars": "42946",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://omarchy.org",
@@ -11604,8 +11888,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10376",
-        "stars": "98775",
+        "forks": "10381",
+        "stars": "98796",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -11851,8 +12135,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2652",
-        "stars": "20691",
+        "forks": "2656",
+        "stars": "20729",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -12369,8 +12653,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "8561",
-        "stars": "42106",
+        "forks": "8572",
+        "stars": "42152",
         "topics": [
           "3d-globe",
           "cesium",
@@ -12996,8 +13280,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:08:28.168Z",
       "metaData": {
-        "forks": "88",
-        "stars": "3150",
+        "forks": "122",
+        "stars": "3667",
         "topics": [
           "ai-agents",
           "coding-agent",
@@ -13251,7 +13535,7 @@
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
         "forks": "4198",
-        "stars": "46423",
+        "stars": "46444",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -13442,8 +13726,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4767",
-        "stars": "70894",
+        "forks": "4770",
+        "stars": "70961",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -13926,8 +14210,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9397",
-        "stars": "53973",
+        "forks": "9862",
+        "stars": "55859",
         "topics": [
           "agents",
           "ai",
@@ -15082,8 +15366,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2930",
-        "stars": "50802",
+        "forks": "2932",
+        "stars": "50837",
         "topics": [
           "adhd",
           "claude-",
@@ -15942,8 +16226,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:37:15.130Z",
       "metaData": {
-        "forks": "531",
-        "stars": "7922",
+        "forks": "562",
+        "stars": "8260",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -16883,7 +17167,7 @@
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
         "forks": "800",
-        "stars": "8531",
+        "stars": "8538",
         "topics": [],
         "license": "",
         "homepage": "",

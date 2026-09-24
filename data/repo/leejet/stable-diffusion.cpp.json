@@ -1,0 +1,50 @@
+{
+  "id": "1c144d0f-ed17-4aab-ba96-2ece3cd5c28e",
+  "url": "https://github.com/leejet/stable-diffusion.cpp",
+  "domain": "github.com",
+  "repo": "leejet/stable-diffusion.cpp",
+  "description": "基于 ggml 引擎的纯 C/C++ 扩散模型推理器，像 llama.cpp 跑大语言模型一样跑 AI 绘画。通过 GGUF 量化与 CPU/GPU 混合推理，大幅降低硬件门槛；更新极快，新模型常当天适配。它不取代 ComfyUI，而是开辟了轻量、跨平台、可嵌入的独特赛道，是低配设备与二次开发场景的降维打击级工具。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-24T11:21:22.648Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0"
+  },
+  "summaryData": {
+    "tags": [
+      "stable-diffusion",
+      "ggml",
+      "量化推理",
+      "本地部署",
+      "C/C++"
+    ],
+    "cover": "",
+    "title": "stable-diffusion.cpp 深度评测：让老设备也能跑 AI 绘画的轻量级推理引擎",
+    "ability": [
+      "零依赖纯 C/C++ 推理，支持 CPU/Metal/Vulkan/CUDA 多后端",
+      "GGUF 量化压缩模型，4GB 内存可跑 SD1.5、8GB 显存可跑 Flux",
+      "覆盖 SD/Flux/Qwen-Image/Wan 视频等主流模型，新模型常 Day-0 支持",
+      "CLI 极简上手，一行命令即可出图",
+      "提供 C API，可嵌入 App、插件与树莓派等嵌入式设备"
+    ],
+    "summary": "纯 C/C++ 实现的轻量级 AI 绘画推理引擎，无需 PyTorch 和高端显卡，一行命令在低配设备上运行 SD、Flux 等主流模型。",
+    "category": [
+      "开发工具",
+      "AI 绘画",
+      "开源项目"
+    ],
+    "suitable": [
+      "嵌入式/IoT 开发者",
+      "Mac 或无独显老笔记本用户",
+      "想集成 AI 绘画能力的应用开发者",
+      "追求极简命令行的尝鲜玩家",
+      "注重隐私的完全离线用户"
+    ],
+    "description": "基于 ggml 引擎的纯 C/C++ 扩散模型推理器，像 llama.cpp 跑大语言模型一样跑 AI 绘画。通过 GGUF 量化与 CPU/GPU 混合推理，大幅降低硬件门槛；更新极快，新模型常当天适配。它不取代 ComfyUI，而是开辟了轻量、跨平台、可嵌入的独特赛道，是低配设备与二次开发场景的降维打击级工具。"
+  },
+  "contentDetail": "# stable-diffusion.cpp 深度评测：把\"扩散模型\"塞进你老笔记本的那把瑞士军刀\n> **一句话总结**：stable-diffusion.cpp 是一个用纯 C/C++ 写成、基于 ggml 后端的轻量级扩散模型推理引擎，能让你在没有 PyTorch、没有 CUDA、甚至没有独立显卡的环境里，把 SD1.5、SDXL、Flux、Qwen-Image、Wan 视频模型全部跑起来——堪称\"AI 绘画界的 llama.cpp\"，是低配设备与嵌入式部署场景的**降维打击级工具**。\n---\n## 一、背景与痛点：为什么需要\"又一个\" SD 推理器？\n要理解 stable-diffusion.cpp（下文简称 sd.cpp）的价值，得先理解 AI 绘画工具生态的\"资源歧视\"。\n主流方案 ComfyUI 和 A1111 WebUI 都构建在 PyTorch 之上，这意味着每次启动都要拖一个 2GB+ 的 Python 运行时和 CUDA/cuDNN 依赖，显存门槛动辄 6GB 起。对于以下几类人群来说，这是难以逾越的墙：\n- **老笔记本 / 无独显用户**：只有集成显卡或核显，装完 PyTorch 就已捉襟见肘；\n- **Mac 用户（Intel 芯片或低配 M 系列）**：ComfyUI 在 MPS 后端上兼容性堪忧；\n- **嵌入式 / 边缘设备开发者**：树莓派、工控机、车载盒子，根本装不下 PyTorch；\n- **想给自家 App 集成画图能力的开发者**：你不可能要求用户先装 Python 再跑 SD。\nsd.cpp 的作者 leejet 给出的答案是：**别用 PyTorch 了，直接用 C/C++ 重写一遍推理逻辑**。它基于 Georgi Gerganov 开源的 **ggml** 张量库——和支撑了 llama.cpp、Whisper.cpp 的同一套底层引擎。ggml 的精髓在于\"零依赖 + 量化友好 + 跨后端\"：不依赖任何深度学习框架，靠手写 SIMD 指令集（AVX/AVX2/AVX512）与各平台原生加速 API（CUDA、Metal、Vulkan、OpenCL、SYCL）榨干硬件性能。\n可以这么理解：**如果 ComfyUI 是\"专业单反\"，sd.cpp 就是\"口袋相机\"——牺牲一点操控性，换来随时随地的可用性**。\n---\n## 二、核心亮点与功能剖析\n### 2.1 技术架构：ggml 哲学的完美继承\nsd.cpp 的架构哲学可以浓缩为一句话：**\"像 llama.cpp 跑大语言模型一样跑扩散模型\"**。它复用了 llama.cpp 的整套工程范式：\n- **权重格式统一为 GGUF**：把原本动辄 5GB+ 的 safetensors 模型量化到 Q4_K_M（约 4-bit）甚至 Q2_K，体积压缩到原来的 1/4~1/8，精度损失肉眼几乎不可见；\n- **CPU/GPU 混合推理**：支持 `--offload-to-cpu`，把 VAE 和 CLIP 文本编码器放到 CPU，仅保留 DiT 主干在 GPU，4GB 显存的卡也能跑 Flux；\n- **Flash Attention 集成**：开启 `--diffusion-fa` 后，Flux 768×768 显存占用可降低约 600MB，SD2 768×768 可降低约 1400MB；\n- **VAE Tiling**：把大图切块解码，避免解码阶段显存爆炸——这是跑 Wan2.2 视频模型的救命参数。\n这套架构让 sd.cpp 在硬件兼容性上做到了行业罕见的广度：**从树莓派的 ARM CPU，到苹果 M 系列的 Metal，再到 AMD 显卡的 Vulkan，甚至 Intel iGPU 的 SYCL 后端**，全都能吃。\n### 2.2 模型覆盖：2026 年已是\"全都要\"\n这是 sd.cpp 最让人惊喜的地方。很多老牌项目在 2024 年之后就停滞在 SDXL，而 sd.cpp 的更新速度堪称恐怖——仅 2026 年上半年就完成了以下模型的 Day-0/Day-1 支持：\n| 时间 | 新增模型 |\n|------|---------|\n| 2026/09/20 | **Qwen-Image-2.1**（Day-0 支持）|\n| 2026/08/20 | LTX-2.5 视频模型 |\n| 2026/08/04 | MiniMax-H3 |\n| 2026/06/25 | Krea2 |\n| 2026/06/04 | Ideogram4 |\n| 2026/05 | PiD、Lens、LTX-2.3 |\n| 2026/01/18 | FLUX.2-klein |\n| 2025/12/01 | Z-Image |\n| 2025/10 | Qwen-Image / Qwen-Image-Edit 系列 |\n| 2025/09 | Wan2.1 / Wan2.2 / Wan2.1 Vace 视频 |\n**图像、图像编辑、视频三类模型全覆盖**，甚至包括 PhotoMaker、IP-Adapter、ControlNet（SD1.5）、LoRA（与 webui 兼容）、LCM 加速、TAESD 快速解码、ESRGAN 放大等生态能力。\n对普通用户来说，这意味着一件事：**你可以在 ComfyUI 还在苦苦适配新模型的当天，就已经用 sd.cpp 在一台 8GB 内存的旧 Mac 上跑通了**。\n### 2.3 上手门槛：一行命令出图，两条命令出片\nsd.cpp 的 CLI 设计延续了 llama.cpp 的极简风格。最基础的使用方式简单到令人发指：\n```bash\n# 下载模型后，一行命令即可出图\n./bin/sd-cli -m ../models/v1-5-pruned-emaonly.safetensors -p \"a lovely cat\"\n```\n对于像 Qwen-Image-2512 这样需要三组件（扩散模型 + 文本编码器 + VAE）的复杂模型，命令也依然清晰：\n```bash\n./build/bin/sd-cli \\\n    --diffusion-model models/qwen-image-2512-Q4_K_M.gguf \\\n    --vae models/qwen_image_vae.safetensors \\\n    --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf \\\n    --cfg-scale 2.5 --sampling-method euler -v --steps 40 \\\n    -H 1024 -W 1024 --diffusion-fa --flow-shift 3 \\\n    -p 'Aerial drone photograph of a vast field of bright yellow wildflowers...' \\\n    --offload-to-cpu -o outputs/unsloth_diffusion.png\n```\n部署方式有两种：**直接从 Releases 下载预编译二进制**（推荐小白），或从源码编译（推荐折腾党）。Unsloth 官方教程给出的编译流程只有几行：\n```bash\ngit clone --recursive https://github.com/leejet/stable-diffusion.cpp\ncd stable-diffusion.cpp\nmkdir -p build && cd build\ncmake .. -DCMAKE_BUILD_TYPE=Release -DSD_CUDA=ON\ncmake --build . -j\"$(nproc)\"\n```\n**门槛评估**：装过 llama.cpp 的人几乎零成本上手；没装过的，跟着 README 走 10 分钟也能跑通第一个 SD1.5。\n### 2.4 性能与显存占用：量化才是灵魂\nsd.cpp 的杀手锏在**量化**。以 Qwen-Image 为例：\n| 精度 | 模型体积 | 推荐最低内存（RAM+VRAM）|\n|------|---------|----------------------|\n| FP16（原版）| ~50 GB | 64 GB+ |\n| Q8_0 | ~25 GB | 32 GB |\n| **Q4_K_M** | **13.1 GB** | **16 GB** |\n| Q2_K | ~7 GB | 8 GB |\n再叠加上文提到的 Flash Attention 和 VAE Tiling，**一台 16GB 内存的 M1 MacBook 就能跑 Qwen-Image，一台 8GB 显存的 RTX 3060 就能跑 Flux.1-dev**——这在一年前是不可想象的。\n学术论文《Open-Source Acceleration of Stable-Diffusion.cpp》甚至专门研究了它的 `ggml_conv_2d` 算子优化空间，用 Winograd 算法替换后能带来最高 **2.76× 端到端加速**，这从侧面印证了它在学界作为\"轻量推理基准\"的地位。\n---\n## 三、竞品对比：它在生态中的真实位置\n光说优点不客观。我们把 sd.cpp 放到主流 SD 工具栈里对比一下：\n| 维度 | **sd.cpp** | ComfyUI | A1111 / Forge | Fooocus |\n|------|-----------|---------|---------------|---------|\n| **定位** | 轻量推理引擎 / CLI | 节点式专业工作流 | 网格式生产工具 | 极简小白向 UI |\n| **依赖** | 零依赖（纯 C/C++）| Python + PyTorch | Python + PyTorch | Python + PyTorch |\n| **最低硬件** | 4GB 内存可跑 SD1.5 | 建议 8GB+ 显存 | 建议 8GB+ 显存 | 建议 12GB+ 显存 |\n| **Mac Intel 支持** | ✅（CPU/Metal）| ⚠️ 慢且不稳 | ⚠️ 不友好 | ❌ |\n| **Android** | ✅（Termux / Local Diffusion）| ❌ | ❌ | ❌ |\n| **新模型跟进** | Day-0 / Day-1 | 快 | 慢半拍 | 慢 |\n| **节点式灵活编排** | ❌ | ✅ 王者 | ⚠️ 有限 | ❌ |\n| **生态（LoRA/插件）** | 兼容 webui 格式 | 海量节点生态 | 海量插件 | 少 |\n| **适合人群** | 开发者 / 低配党 / 嵌入式 | 专业创作 / 工作流派 | 老牌玩家 | 小白尝鲜 |\n一句话定位：**sd.cpp 不是来取代 ComfyUI 的，而是开辟了一条 ComfyUI 完全触达不到的赛道——\"轻量、跨平台、可嵌入\"**。\n事实上，已经有大量项目把 sd.cpp 作为后端使用，包括 **GIMP 插件、KoboldCpp、LocalAI、sd.cpp-webui、Local Diffusion（Flutter 移动端）** 等。**如果你想给自己的 App、插件、或嵌入式设备加一个\"画图按钮\"，sd.cpp 几乎是唯一合理的选择**。\n---\n## 四、目标人群与真实收益\n| 人群 | 能获得的收益 |\n|------|------------|\n| **嵌入式 / IoT 开发者** | 在树莓派、工控机、车载设备上跑本地绘画，无需云依赖 |\n| **Mac 用户** | 终于有一个在 Intel Mac 和低配 M 芯片上稳定可用的 SD 工具 |\n| **老笔记本党** | 8GB 内存、无独显，也能玩上 SDXL 和 Flux |\n| **App / 插件开发者** | 通过 C API 或 Python/Rust/Go/C# 绑定，一行集成绘画能力 |\n| **Lora 训练师** | 用 CPU 快速验证 LoRA 效果，不占主力 GPU |\n| **隐私极客** | 完全离线运行，无网络回传，量化模型可放 U 盘 |\n---\n## 五、局限与不足：别把\"瑞士军刀\"当\"全套厨具\"\n客观来说，sd.cpp 并非银弹，它的短板和它的长板一样明显。\n### 5.1 文档质量远落后于代码速度\n这是社区抱怨最集中的地方。Issue #864 中，一位有 15 年技术文档经验的用户直言：**\"sd.cpp 是 ComfyUI 的反面，但正因为采用率低，更需要面向小白的深度文档\"**——目前对 Wan、Chroma 这类复杂模型的参数说明严重不足，很多关键参数（如 `--chroma-disable-dit-mask`、`--flow-shift`）的功能、取值范围、影响都需要用户去翻 PR 讨论链才能搞清楚。\n**实战避坑**：遇到新模型时，先去 README 的 `examples/` 目录找对应示例脚本，再去 Issues 里搜关键词，比看文档高效得多。\n### 5.2 生态成熟度不及 ComfyUI\n- **无节点式编排**：如果你想做\"文生图 → 图生图 → 放大 → 局部重绘 → 再放大\"的复杂流水线，ComfyUI 一个工作流搞定，sd.cpp 只能靠 shell 脚本串联；\n- **ControlNet 支持有限**：目前官方仅明确支持 SD1.5 的 ControlNet，SDXL 及以上模型的 ControlNet 生态还没跟上；\n- **LoRA 兼容性有坑**：官方声称\"same as stable-diffusion-webui\"，但实际使用中，部分新发布的 LoRA（尤其是基于 DoRA 或新训练框架的）可能不生效或效果异常，需要自己排查。\n### 5.3 速度并非绝对优势\n很多人误以为\"纯 C/C++ = 快\"。实际上，**在高端 GPU 上，sd.cpp 的速度通常慢于 ComfyUI 的 CUDA 后端**，因为后者享受了 PyTorch 生态多年的算子优化（xformers、Triton 等）。sd.cpp 的优势是**显存占用和硬件覆盖**，而不是绝对速度。\n一个真实的痛点案例：在 16GB 显存 GPU 上跑 Wan2.2 TI2V 5B 模型，由于 VAE 计算缓冲区需要 20GB+，必须 `--vae-on-cpu`，结果**生成 2 秒视频要 30 分钟**。视频模型在 sd.cpp 上仍是\"能跑\"而非\"能爽\"的状态。\n### 5.4 API 不稳定\nREADME 顶部就明确警告：**\"API and command-line option may change frequently\"**。如果你打算基于它做长期项目，最好锁定版本，每次升级前先跑回归测试。\n### 5.5 Release 频率过高是双刃剑\n从 Releases 页面可以看到，仅 2026 年 9 月 23 日一天就发布了 **master-901 到 master-908 共 8 个构建**。这种\"几乎每小时一个版本\"的节奏说明项目极度活跃，但也意味着**你下载的二进制可能今天能用、明天就报错**。\n---\n## 六、社区活跃度与生命力评估\n- **Star 数**：**7.1k**，Fork 807，在 C/C++ 工具类项目中属于中上水平；\n- **Issue 处理**：242 个开放 Issue，31 个 PR 等待合并，响应速度中等偏快，核心维护者 leejet 本人会亲自回复；\n- **更新频率**：**顶流**。2026 年几乎每天都有 commit，新模型发布（如 Qwen-Image-2.1）经常做到 Day-0 支持，这个响应速度甚至超过 ComfyUI；\n- **生态绑定**：已进入 KoboldCpp、LocalAI 等主流项目的依赖链，被淘汰的风险很低；\n- **风险点**：主要靠 leejet 一人和少量核心贡献者维护，bus factor 偏低。\n---\n## 七、结语与行动建议\n> **终极评判：sd.cpp 不是 ComfyUI 的替代品，而是 ComfyUI 永远覆盖不到的那块拼图。**\n如果你已经有一张 4090，享受着 ComfyUI 的节点流自由，那 sd.cpp 对你意义不大。但如果你属于以下任何一类，请立刻把它加入工具箱：\n1. **设备党**：手里只有老 Mac / 核显笔记本 / 树莓派 / Android；\n2. **造轮子党**：想给自己的产品加\"AI 画图\"能力，被 PyTorch 依赖地狱折磨过；\n3. **极简党**：受够了 ComfyUI 那张\"接线板\"和 A1111 的卡顿，只想一行命令出图；\n4. **尝鲜党**：新模型发布当天就想试跑，不想等生态适配。\n**具体行动路径**：\n- **第一次尝试**：从 [Releases](https://github.com/leejet/stable-diffusion.cpp/releases) 下载对应平台的预编译二进制，用 `sd-cli -m <model.safetensors> -p \"a lovely cat\"` 跑通 SD1.5，感受\"零依赖\"的爽感；\n- **进阶玩家**：去 [HuggingFace 搜 \"GGUF\"](https://huggingface.co) 找模型的 Q4_K_M 版本，体验 Flux / Qwen-Image 在你设备上的真实表现；\n- **开发者**：参考 `william-murray1204/stable-diffusion-cpp-python` 或 `newfla/diffusion-rs` 等绑定，把它嵌进你的应用；\n- **避坑提醒**：遇到复杂模型（Wan、Chroma）时，先去 Issues 搜相关关键词，社区里藏着大量文档没写的实战参数组合。\n在这个所有 AI 工具都在卷\"更大、更强、更贵\"的时代，sd.cpp 用一份纯 C/C++ 的执着告诉我们：**\"让 AI 跑在每一台设备上\"这件事，依然有人在乎**。这或许就是它最值得敬佩的地方。",
+  "type": "project",
+  "dateAdded": "20260924"
+}
