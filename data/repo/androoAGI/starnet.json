@@ -1,0 +1,67 @@
+{
+  "id": "ff3f5474-8cfb-4345-a8fd-f64224a1af39",
+  "url": "https://github.com/androoAGI/starnet",
+  "domain": "github.com",
+  "repo": "androoAGI/starnet",
+  "description": "StarNet 是 MIT 协议的开源桌面 Agent 框架（Tauri + Node Sidecar 架构），把 Agent 团队画成像素太空站：房间是权限受限的团队、道具是能力授权、传送带是任务流转，界面状态全部来自真实运行时。附带真实支出账本、预算硬顶、E-STOP 紧急停止与 Night Shift 无人值守，零遥测、可用 Ollama 完全免费离线运行。项目早期（87 stars），创意与工程纪律出色但生态尚小。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-25T11:11:06.646Z",
+  "metaData": {
+    "forks": "73",
+    "stars": "277",
+    "topics": [
+      "agent-harness",
+      "ai",
+      "ai-agents",
+      "byok",
+      "desktop-app",
+      "game-ui",
+      "llm",
+      "local-first",
+      "multi-agent",
+      "openrouter",
+      "pixel-art",
+      "tauri"
+    ],
+    "license": "MIT license",
+    "homepage": "https://github.com/androoAGI/starnet-releases/releases/latest",
+    "description": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run. - androoAGI/starnet"
+  },
+  "summaryData": {
+    "tags": [
+      "开源项目",
+      "AI Agent",
+      "本地优先",
+      "像素风",
+      "深度评测"
+    ],
+    "cover": "",
+    "title": "StarNet 深度评测：把 AI Agent 团队装进一台像素风“太空站”",
+    "ability": [
+      "像素空间站可视化编排：房间=权限受限团队，道具=真实能力授权，传送带=任务流转",
+      "真实执行契约：不模拟进度与花费，真实账本记录每次模型调用与实际支出",
+      "多模型 BYOK 接入：支持 18 个 Provider，Ollama 可全本地免费运行，密钥永不进前端",
+      "Night Shift 无人值守：带预算硬顶、动作拴绳与决策账本的过夜自动任务",
+      "跨工具互操作：MCP Bridge 可让 Claude Code / OpenClaw / Hermes 反向驱动空间站"
+    ],
+    "summary": "一个把 AI Agent 团队可视化为像素太空站、且“所见即真实执行”的本地优先开源桌面 Agent 框架。",
+    "category": [
+      "开发工具",
+      "AI 编排",
+      "效率工具"
+    ],
+    "suitable": [
+      "AI 应用开发者 / Agent Harness 研究者",
+      "重度 ChatGPT / Claude 用户",
+      "自动化与效率工具玩家",
+      "隐私敏感者 / 本地优先用户",
+      "独立开发者 / 内容创作者"
+    ],
+    "description": "StarNet 是 MIT 协议的开源桌面 Agent 框架（Tauri + Node Sidecar 架构），把 Agent 团队画成像素太空站：房间是权限受限的团队、道具是能力授权、传送带是任务流转，界面状态全部来自真实运行时。附带真实支出账本、预算硬顶、E-STOP 紧急停止与 Night Shift 无人值守，零遥测、可用 Ollama 完全免费离线运行。项目早期（87 stars），创意与工程纪律出色但生态尚小。"
+  },
+  "contentDetail": "# StarNet 深度评测：把 AI Agent 装进一台像素风\"太空站\"，然后让它真的干活\n> 评测对象：[github.com/androoAGI/starnet](https://github.com/androoAGI/starnet) · v0.10.13 · MIT License · JavaScript / Node / Rust (Tauri)\n---\n## 一句话总结\n**StarNet 是一个\"把 AI Agent 团队当作太空站经营\"的本地优先桌面端 Agent Harness**——你画出来的每一个房间就是一支有权限边界的团队，你摆的每一件道具就是一个真实授予的能力，画面上的每一次像素动画都对应一次真实的模型调用。它值得关注，不是因为它\"好看\"，而是因为它是目前**把\"可视化编排 = 真实运行时\"这个契约贯彻得最彻底**的开源 Agent 框架之一。\n---\n## 背景与痛点：为什么需要 StarNet？\n过去两年，AI Agent 的世界出现了两种极端：\n一种是**\"黑盒编排派\"**——LangChain、CrewAI、AutoGen 这类框架，强大但抽象：你在终端里写 YAML 和 Python，Agent 跑到哪一步、在调哪个工具、花了多少钱，全都藏在一串 log 里。新手上手像在读密码学。\n另一种是**\"演示玩具派\"**——大量带炫酷 UI 的 Agent Dashboard，画面上小人走来走去、进度条刷得飞起，但**底下跑的是模拟数据**，进度是假的、花费是编的、对话是排练好的。这种\"画皮 Agent\"在 2024-2025 年特别泛滥，作者在 README 里有一句话火力全开：\n> \"StarNet does not simulate revenue, completed work, model activity, or spend.\"\nStarNet 的设计哲学被官方表述为一条\"产品契约\"：\n> **The interface must never assert state the harness cannot prove.** ——界面永远不展示运行时无法证明的状态。\n这就是它诞生的核心动机：**在\"炫酷可视化\"和\"真实执行\"之间架一座桥，而不是用可视化骗你**。它是给那些已经用 ChatGPT/Claude 处理任务、但希望有一支\"具身化\"的 Agent 团队在本地持续运转的人，造的一台\"指挥控制台\"。\n---\n## 核心亮点与功能剖析\n### 1. \"所见即执行\"的像素风空间站——不是皮肤，是运行时投影\nStarNet 最反直觉的设计是把 Agent 团队画成一座像素太空站，但**它不是装饰**。官方把这三条写成了产品宪法：\n| 空间站元素 | 真实语义 |\n|---|---|\n| **一个房间 (Bay)** | 一支\"权限受限的团队\"，每间 Bay 是一次独立、有边界的 Agent 运行 |\n| **一条走廊** | 一条被授权的\"任务交接通道\" |\n| **一件放置的道具** | 一次**真实的能力授权**——信号锅=联网、柜子=文件系统、工作台=终端 |\n这意味着：**你拖拽出一张空间站地图，就等于画出了 Agent 的真实执行 DAG**。传送带、过滤器、分流器、合流器——你在画面上摆的管线，会被编译成 sidecar 真正执行的路由计划。官方原话：\"The box on the belt and the agent that picks it up are provably the same plan.\"（传送带上的箱子和捡起它的 Agent，可以被证明是同一份计划。）\n**用生活比喻理解**：传统 Agent 框架像一家只有\"调度室\"没有\"车间\"的工厂，你听调度员讲工人干活；StarNet 是把车间刷成像素风玻璃房，你看到的每一个在灯下坐着打字的像素小人，背后真的有一个进程在跑、真的有一次 API 调用在扣你的 token 额度。\n### 2. 架构解析：Tauri 壳 + Node Sidecar 的\"双引擎\"\n作者在架构选择上非常克制，没有卷 React 全家桶，而是做了一个相当古典但极其扎实的分层：\n```\nfrontend/    → 纯 Vanilla JS 的空间站世界与桌面 UI\nsidecar/     → 本地 Node Agent 运行时（providers / tools / 持久化 / 预算 / consent）\nshared/      → 跨边界的增量式事件与 Schema 契约\nsrc-tauri/   → Rust/Tauri 桌面外壳与捆绑运行时\ntest/ + qa/  → 单元 / 契约 / 集成 / 发布门禁 / QA 收据\n```\n几个**非常值得点赞的工程决策**：\n- **前后端隔离 + 密钥隔离**：API Key 只存在 OS Keychain 和 sidecar 里，**前端永远拿不到密钥**——这条被写在架构原则里，不是营销话术。\n- **通信走本地 HTTP + NDJSON + SSE**：前端订阅 sidecar 真实推送的事件流，所有 UI 状态都来自运行时——这就是\"所见即执行\"的技术底座。\n- **Sidecar 只用 Node 核心模块**：意味着你 `git clone` 后 `node sidecar/index.js` 就能跑，**不需要 npm install**，无依赖污染，适合用源码方式快速体验。\n- **Tauri 而非 Electron**：桌面壳更轻，启动快、内存占用小，对一台要长跑 Night Shift 的\"指挥台\"来说很重要。\n### 3. \"Let's-Be-Honest\"清单——一个非常罕见的诚实设计\nStarNet 的 README 里有一节叫 **\"What is real\"**，明确列出哪些是真的、哪些不是：\n- 真实：模型调用流经本地 Node sidecar、工具经过显式 capability+consent 检查、记忆/转录/支出账本持久化到磁盘、并发多 Agent 各自独立 workspace。\n- **不做**：不模拟收入、不伪造完成的工作、不假装模型活动、不虚报花费。\n配套的\"诚实机制\"还包括：\n- **Real Ledger（真实账本）**：每次运行的实际花费以 append-only 方式落盘，前端原样展示。\n- **预算硬限制**：每条传送带默认 $2/任务，全局上限 $50；BUDGET 面板可设 per-run、per-agent、per-day、global 四层硬顶，**由 sidecar 强制执行**，不是前端软约束。\n- **E-STOP（`Alt+H`）**：一键物理级暂停所有正在跑的 Agent，所有等待中的聊天都会被告知。\n- **Night Shift 的\"拴绳\"**：无人值守时严格限定\"每日最多几个任务、每个动作能伸多远\"，早晨生成一份 decision ledger，**记录每个过夜动作以及它为什么被触发**。\n这一整套设计让我想起航空业的\"黑匣子哲学\"——作者默认你不信任它，然后通过证据让你信任它。\n### 4. 生态位：BYOK、MCP Bridge、跨 Harness 互操作\nStarNet 对\"锁定\"这件事非常警惕：\n- **18 个 Provider**：OpenRouter 一把钥匙通吃；Anthropic、OpenAI、Google 支持 OAuth 一键登录（免 key）；**Ollama 走 `127.0.0.1:11434` 全程本地免费**——README 里老实提醒\"本地小模型在长任务上会更慢更粗糙\"，这种坦诚很少见。\n- **MCP Bridge + OpenAI 风格端点**：可以让 Claude Code、Hermes、OpenClaw **反过来驱动你的 StarNet 空间站**。\n- **无缝迁移**：从 OpenClaw 或 Hermes 过来？把它的家目录指向 StarNet，自动把 persona、instructions、memory、model 铸成一个 StarNet Agent（key 不迁移，需重填）。\n- **全渠道触达**：Telegram / Discord / Slack / Signal / Matrix 都能远程给你的空间站下指令。\n### 5. 其他亮点速览\n- **Task Briefs**：当指令含糊时，Agent 不会瞎猜，而是把模糊点转成\"一个具体问题+若干选项\"回问你，**任何已连接的渠道都能问**。\n- **OUTBOX 而非聊天回溯**：完成的交付物以**真实文件**形式落在 OUTBOX，不是让你去聊天记录里\"考古\"。\n- **真实浏览器驱动**：Agent 会真的导航、点击、输入，并报告\"页面上实际写了什么\"，不是从搜索摘要里猜。\n- **35 个职业类 + 20 个专家档案 + 36 套皮肤 + 101 个内置任务配方**——内容量已经接近一款独立游戏。\n- **记忆有\"半衰期\"**：每条记忆 30 天没用就衰减一半，避免上下文腐烂；你要逐条 keep/edit/discard。\n- **Live Voice 本地语音**：不需要 key、不需要账号，语音**不出本机**，且对所有 provider 表现一致。\n---\n## 上手门槛与部署体验\n### 三种启动姿势（从轻到重）\n**方式一：图形安装包（最推荐小白）**\n| 平台 | 安装包 |\n|---|---|\n| Windows 10/11 64-bit | `StarNet_<ver>_x64-setup.exe`（Authenticode 签名） |\n| macOS Apple Silicon | `StarNet_<ver>_aarch64.dmg`（Developer ID + 公证） |\n| macOS Intel | `StarNet_<ver>_x64.dmg` |\n**Apple Silicon 用户注意**：请用 `aarch64.dmg` 原生版，不要用 x64 版走 Rosetta——官方特别强调了这一点。\n**方式二：源码体验（最轻）**\n```bash\ngit clone https://github.com/androoAGI/starnet.git\ncd starnet\nnode sidecar/index.js\n# 打开 http://localhost:8787\n```\n`node sidecar/index.js` 这个命令的优雅之处在于：**sidecar 只用 Node 内置模块，零依赖**。装好 Node 18+ 就能跑，这是测试/调试/源码阅读的绝佳入口。\n**方式三：桌面开发模式**\n```bash\nnpm ci\nnpm run desktop:dev      # 开发壳\nnpm run desktop:build    # 本地构建安装包\n```\n需要 Rust + Tauri 前置依赖。\n### 完全免费跑起来的最短路径\n1. 装 [Ollama](https://ollama.com)\n2. `ollama pull llama3.1`\n3. StarNet 里把 Provider 切到 `OLLAMA`\n4. 完事，**0 元、0 注册、0 遥测**。\n### 一个可直接复刻的最小工作流\n> 场景：让一个\"研究员\"Agent 抓取某篇文章，一个\"作者\"Agent 改写成中文摘要，结果落到 OUTBOX。\n```\n1. 新建 Bay A：class=Researcher，装备=信号锅（联网能力）\n2. 新建 Bay B：class=Writer，装备=柜子（文件系统能力）\n3. 在 A→B 之间铺一条传送带（这就是授权的交接 lane）\n4. 对 A 说：\"抓取 <URL> 的核心观点\"\n5. A 完成后任务自动经走廊流转到 B，B 写完扔进 OUTBOX\n```\n你在屏幕上看到的，就是真实发生的事。\n---\n## 社区活跃度与生命力\n从 [trendshift.io](https://trendshift.io/repositories/209287) 拿到的硬数据（截至 2026 年 9 月）：\n| 指标 | 数值 |\n|---|---|\n| Stars | **87** |\n| Forks | 36 |\n| Contributors | 2 |\n| 仓库年龄 | 3 个月 |\n| 最近提交 | 13 天前 |\n| License | MIT |\n**客观评价**：这是个**非常年轻、非常早期**的项目。87 stars 在 GitHub 生态里属于\"刚冒头\"级别，还没进入大众视野；2 位核心贡献者意味着 bus factor = 1，一旦作者停更项目就停摆。但反向解读：3 个月内做到 v0.10.13、发布节奏稳定（13 天前仍在提交）、QA 体系异常完整（`qa:ready` 收据、release-ready 门禁、契约测试），说明**工程纪律是真人真做，不是 Paper Ship**。\nX 上已有第三方主动安利，例如 @DanKornas 的转发：*\"Your agent dashboard shouldn't be a simulation.\"*——这条 tagline 正中 StarNet 的核心差异化卖点。\n**结论**：处于\"**早期精品**\"阶段——值得现在就关注、试玩、提 issue，但不建议把关键生产流程只压在它身上。\n---\n## 目标人群与收益\n| 你是谁 | 用 StarNet 能得到什么 |\n|---|---|\n| **AI 应用开发者 / Harness 研究者** | 一份把\"可视化↔运行时\"契约做到极致的参考实现，sidecar 架构、capability 模型、consent 检查都是可借鉴的模式 |\n| **重度 ChatGPT/Claude 用户** | 从\"一个聊天框\"升级为\"一支可视化指挥的团队\"，多 Agent 并发、交付落文件、远程可触达 |\n| **自动化/效率玩家** | Night Shift + Cron Schedule + 预算硬顶 = 真正能挂机过夜的\"AI 员工\" |\n| **隐私敏感者 / 内网用户** | 本地优先 + 零遥测 + Ollama 全离线路径 + 密钥永不进前端 |\n| **独立开发者 / 内容创作者** | 把调研、写作、文件整理串成一条传送带，专注创意本身 |\n| **像素风爱好者 / 游戏化信仰者** | 这可能是目前最像\"游戏\"的严肃生产力工具——官方 tagline 就是 \"A videogame where the work is real\" |\n---\n## 竞品对比：它在 Agent Harness 生态里的位置\n这里需要区分几个容易混淆的赛道：\n| 工具 | 定位 | 与 StarNet 的差异 |\n|---|---|---|\n| **CrewAI / AutoGen** | Python 编排框架，跑在终端/Notebook | 无可视化、无桌面壳，面向工程师写代码；StarNet 反其道，面向\"看得见的指挥\" |\n| **OpenHands (原 OpenDevin)** | 浏览器驱动的 Coding Agent | 单一强场景（写代码）；StarNet 是通用任务 Harness，能力靠\"摆放道具\"授予 |\n| **Claude Code / Codex CLI** | 单 Agent 终端工具 | 命令行交互；StarNet 通过 MCP Bridge 可以**让它们反过来驱动空间站** |\n| **Hermes / OpenClaw** | 其他 Agent Harness | 定位相近，StarNet 提供双向互通 + 一键导入 |\n| **AgentGPT / 各类 Web Agent Demo** | 演示向、多为云托管 | StarNet 的核心差异化：**本地优先 + 真实执行 + 真实账本 + 零遥测** |\n| **Flowise / Langflow** | 可视化拖拽 LLM 编排 | 图形是**编辑器**，StarNet 的图形是**运行时投影**——前者画完去跑，后者画的就是正在跑的 |\n**StarNet 的独特竞争力一句话**：它是目前**唯一把\"空间站隐喻=运行时真相\"做成硬契约**的开源桌面 Agent Harness。Flowise 的画布是蓝图，StarNet 的空间站是**实况转播**。\n---\n## 局限与不足（毫不避讳版）\n1. **Stars 数还很小（87）**，社区生态几乎为零——没有第三方插件市场、没有丰富的社区 Recipes，一切靠官方 35 个职业和 101 个配方兜底。你踩到坑，大概率自己是第一个。\n2. **Bus Factor = 2**，单人主导的项目风险实在摆在那里。一旦作者精力转移，项目可能迅速降温。\n3. **不支持 Linux 公开发布**，官方明确说\"internal build artifacts only\"——对 Linux 用户是硬伤。\n4. **macOS 覆盖少于 Windows**，README 原话\"Windows is the most-tested desktop target. macOS has less real-world coverage.\"\n5. **本地模型明显落后**：用 Ollama 跑 Llama 3.1 在长任务上\"更慢更粗糙\"，官方自己承认——这意味着真正流畅体验仍需付费 API。\n6. **学习曲线不平滑**：35 个职业 + 传送带 + 能力道具 + 夜班拴绳 + 预算面板，**概念密度偏高**。虽然官方 FAQ 说\"用 COMMS 聊天不需要懂传送带\"，但要发挥 Night Shift + Workflow 的全部威力，仍需投入 1-2 小时读文档。\n7. **品牌与代码许可分离**：MIT 只覆盖代码，StarNet 名称、Logo、像素美术**不随 MIT 授权**——Fork 后必须改名换皮，对想二次发行的开发者是真实约束。\n8. **发布门禁虽严但只对官方构建**：官方明确说 pipeline 要求 ≠ 你那台机器上安装的那份就一定被测过——这种自我提醒是好事，但也意味着**你仍要自己核验**签名与公证。\n9. **中文生态薄弱**：文档、UI、社区讨论全英文，对国内小白有一道语言门槛。\n---\n## 结语与行动建议\nStarNet 是那种**让人眼前一亮的\"小而美\"项目**：它没有堆最炫的模型、没有追最火的 Multi-Agent 范式，而是死磕了一个非常具体、非常被忽视的问题——**怎么让\"看得见的 Agent\"和\"真实运行的 Agent\"是同一回事**。它的架构分层（Tauri + Node Sidecar + Vanilla JS）克制而扎实，它的\"诚实契约\"（Interface never asserts state harness cannot prove）甚至可以作为其他 Agent 产品的设计金句。\n**分场景行动建议**：\n- 🎮 **想尝鲜的效率玩家**：直接去 [starnetos.com](https://starnetos.com) 下载安装包，配一个 OpenRouter Key（充 $5 就够玩很久），从 COMMS 聊天开始，再逐步解锁传送带和 Night Shift。\n- 🔧 **想白嫖的开发者**：`ollama pull llama3.1` + `node sidecar/index.js`，10 分钟内零成本跑起来。\n- 🧠 **Harness 研究者 / 架构师**：重点读 `sidecar/` 的 capability/consent/ledger 实现，以及 `shared/` 的事件契约——这是这个项目**最值得 stealing like an artist** 的部分。\n- 👀 **观望派**：加个 Watch，等 Stars 破 500、贡献者超过 5 人再深度投入也不迟——但现在收藏它，半年后你会庆幸。\n**终极评分（满分 10）**：创意 **9.5** · 工程纪律 **9** · 生态成熟度 **4** · 跨平台覆盖 **6** · 综合推荐指数 **8**（早期高风险，但方向和执行力都值得押注）。\n> StarNet 目前不是\"最好用的 Agent 工具\"，但它可能是**最重要的一种尝试**：在一个被模拟和演示污染的赛道里，坚持做\"把真相画给你看\"的那一个。",
+  "type": "project",
+  "dateAdded": "20260925"
+}

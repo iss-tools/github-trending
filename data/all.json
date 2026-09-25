@@ -1,6 +1,272 @@
 {
   "all": [
     {
+      "id": "9d51a798-c133-4c8a-be0d-3ddfb3a2786d",
+      "url": "https://github.com/openbao/openbao",
+      "domain": "github.com",
+      "repo": "openbao/openbao",
+      "description": "OpenBao 是 2023 年 HashiCorp Vault 从 MPL 切换至 BSL 协议后，由 OpenSSF 牵头 fork 的开源项目。它完整继承 Vault 的密码学基础设施，并免费提供 Namespaces 多租户、横向读扩展、事务化 Raft 存储等原本付费的能力，采用 Go 编写、MPL 2.0 协议，CLI 命令为 bao 且兼容 vault 工具链，可平滑迁移。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:27:55.938Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenBao",
+          "Vault",
+          "机密管理",
+          "开源安全",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "OpenBao 深度评测：HashiCorp Vault 闭源风波后最强开源继任者",
+        "ability": [
+          "安全机密存储：所有数据内存加密后落盘，防磁盘泄露",
+          "动态凭证：为数据库/K8s 生成临时账号，到期自动吊销",
+          "Transit 加密即服务：密钥不出库的免费多云 KMS",
+          "Namespaces 多租户：Vault Enterprise 天价功能免费开放",
+          "PKI/SSH CA：内置企业级证书颁发与 SSH 签发引擎"
+        ],
+        "summary": "OpenBao 是 Linux 基金会接管的开源机密管理平台，从 Vault 1.14 fork 而来，把 Vault Enterprise 付费功能免费化，是自建机密管理基础设施的首选。",
+        "category": [
+          "开发工具",
+          "安全基础设施",
+          "开源项目"
+        ],
+        "suitable": [
+          "平台/基础设施团队",
+          "想摆脱 HashiCorp 依赖的企业",
+          "多租户 SaaS、银行、电信等强隔离场景",
+          "有 SOC 2 / ISO 27001 合规需求的团队",
+          "GitOps 与多云架构实践者"
+        ],
+        "description": "OpenBao 是 2023 年 HashiCorp Vault 从 MPL 切换至 BSL 协议后，由 OpenSSF 牵头 fork 的开源项目。它完整继承 Vault 的密码学基础设施，并免费提供 Namespaces 多租户、横向读扩展、事务化 Raft 存储等原本付费的能力，采用 Go 编写、MPL 2.0 协议，CLI 命令为 bao 且兼容 vault 工具链，可平滑迁移。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
+      "id": "2198fce4-c72f-4aa7-9423-22a4f94b226f",
+      "url": "https://github.com/shy3130/tick-stock-panel",
+      "domain": "github.com",
+      "repo": "shy3130/tick-stock-panel",
+      "description": "tick-stock-panel 是个人开发者 shy3130 于 2026 年 6 月开源的 A 股量化工作台，基于 FastAPI + React + Polars 构建，Docker 一键部署。它打通数据接入、指标计算、选股、因子研究、回测、盘中监控到 AI 复盘的完整闭环，且不提供 AI 荐股，强调工具属性。免费档可跑历史日 K 回测，实时数据需付费订阅。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:21:08.664Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "A股量化",
+          "开源项目",
+          "因子回测",
+          "Docker自托管",
+          "AI复盘"
+        ],
+        "cover": "",
+        "title": "tick-stock-panel 深度评测：A 股散户的第一套自托管量化全流程工具",
+        "ability": [
+          "多数据源插件化接入（TickFlow/同花顺等，能力路由自动调度）",
+          "25 个内置选股策略 + 68 列技术指标全市场毫秒级扫描",
+          "因子平台：IC/IR 检验、分层收益、点选式 DSL 因子编辑器",
+          "回测引擎：支持 T+1、费用滑点、分钟级回放、滚动样本外验证",
+          "AI 四维个股分析与盘后自动复盘（支持 DeepSeek/Ollama 等）"
+        ],
+        "summary": "一个开源自托管的 A 股量化工作台，把选股、因子回测、盘中监控、AI 复盘打包进一个 Docker 容器，三个月斩获 5k Star。",
+        "category": [
+          "开发工具",
+          "金融量化",
+          "AI 应用"
+        ],
+        "suitable": [
+          "有 Python 基础的 A 股散户研究者",
+          "想跑因子但被 Qlib 劝退的量化爱好者",
+          "需要完整 UI 和监控的个人量化开发者",
+          "想借鉴工程架构的全栈开发者",
+          "需要学术级因子检验口径的量化研究者"
+        ],
+        "description": "tick-stock-panel 是个人开发者 shy3130 于 2026 年 6 月开源的 A 股量化工作台，基于 FastAPI + React + Polars 构建，Docker 一键部署。它打通数据接入、指标计算、选股、因子研究、回测、盘中监控到 AI 复盘的完整闭环，且不提供 AI 荐股，强调工具属性。免费档可跑历史日 K 回测，实时数据需付费订阅。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
+      "id": "37473fa8-b029-49c6-afd3-642cfc43ce0a",
+      "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+      "domain": "github.com",
+      "repo": "kelseyhightower/kubernetes-the-hard-way",
+      "description": "Kelsey Hightower 出品的经典开源教程，通过 13 个 Lab 手工搭建 K8s 集群：手写证书、手配 etcd、手启 apiserver、手搭 CNI 网络。学习价值极高（9.2/10），投入 1-3 天可换来长年的生产排障直觉，但明确不支持生产环境，新手和纯应用开发者建议跳过。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:15:55.654Z",
+      "metaData": {
+        "forks": "15904",
+        "stars": "50005",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Bootstrap Kubernetes the hard way. No scripts. Contribute to kelseyhightower/kubernetes-the-hard-way development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Kubernetes",
+          "GitHub",
+          "底层原理",
+          "Kelsey Hightower",
+          "SRE进阶"
+        ],
+        "cover": "",
+        "title": "Kubernetes The Hard Way 深度评测：云原生世界的「手工发动机解剖课」",
+        "ability": [
+          "手工引导搭建 Kubernetes 集群（No Scripts）",
+          "深入拆解 TLS/PKI 证书信任链",
+          "etcd 集群手工部署与 systemd 配置",
+          "CNI Pod 网络跨节点路由原理实践",
+          "控制面与 Worker 节点组件裸机部署"
+        ],
+        "summary": "49.7k Star 的 K8s 手工搭建教程，无脚本、一条条命令敲，让你真正看懂 Kubernetes 的五脏六腑",
+        "category": [
+          "开源项目",
+          "技术教程",
+          "云原生"
+        ],
+        "suitable": [
+          "SRE / 平台工程师",
+          "K8s 集群管理员与运维",
+          "云原生方向后端工程师",
+          "CKA 考后进阶者",
+          "想从使用者升级为懂原理的工程师"
+        ],
+        "description": "Kelsey Hightower 出品的经典开源教程，通过 13 个 Lab 手工搭建 K8s 集群：手写证书、手配 etcd、手启 apiserver、手搭 CNI 网络。学习价值极高（9.2/10），投入 1-3 天可换来长年的生产排障直觉，但明确不支持生产环境，新手和纯应用开发者建议跳过。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
+      "id": "ff3f5474-8cfb-4345-a8fd-f64224a1af39",
+      "url": "https://github.com/androoAGI/starnet",
+      "domain": "github.com",
+      "repo": "androoAGI/starnet",
+      "description": "StarNet 是 MIT 协议的开源桌面 Agent 框架（Tauri + Node Sidecar 架构），把 Agent 团队画成像素太空站：房间是权限受限的团队、道具是能力授权、传送带是任务流转，界面状态全部来自真实运行时。附带真实支出账本、预算硬顶、E-STOP 紧急停止与 Night Shift 无人值守，零遥测、可用 Ollama 完全免费离线运行。项目早期（87 stars），创意与工程纪律出色但生态尚小。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:11:06.646Z",
+      "metaData": {
+        "forks": "73",
+        "stars": "277",
+        "topics": [
+          "agent-harness",
+          "ai",
+          "ai-agents",
+          "byok",
+          "desktop-app",
+          "game-ui",
+          "llm",
+          "local-first",
+          "multi-agent",
+          "openrouter",
+          "pixel-art",
+          "tauri"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/androoAGI/starnet-releases/releases/latest",
+        "description": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run. - androoAGI/starnet"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "本地优先",
+          "像素风",
+          "深度评测"
+        ],
+        "cover": "",
+        "title": "StarNet 深度评测：把 AI Agent 团队装进一台像素风“太空站”",
+        "ability": [
+          "像素空间站可视化编排：房间=权限受限团队，道具=真实能力授权，传送带=任务流转",
+          "真实执行契约：不模拟进度与花费，真实账本记录每次模型调用与实际支出",
+          "多模型 BYOK 接入：支持 18 个 Provider，Ollama 可全本地免费运行，密钥永不进前端",
+          "Night Shift 无人值守：带预算硬顶、动作拴绳与决策账本的过夜自动任务",
+          "跨工具互操作：MCP Bridge 可让 Claude Code / OpenClaw / Hermes 反向驱动空间站"
+        ],
+        "summary": "一个把 AI Agent 团队可视化为像素太空站、且“所见即真实执行”的本地优先开源桌面 Agent 框架。",
+        "category": [
+          "开发工具",
+          "AI 编排",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 应用开发者 / Agent Harness 研究者",
+          "重度 ChatGPT / Claude 用户",
+          "自动化与效率工具玩家",
+          "隐私敏感者 / 本地优先用户",
+          "独立开发者 / 内容创作者"
+        ],
+        "description": "StarNet 是 MIT 协议的开源桌面 Agent 框架（Tauri + Node Sidecar 架构），把 Agent 团队画成像素太空站：房间是权限受限的团队、道具是能力授权、传送带是任务流转，界面状态全部来自真实运行时。附带真实支出账本、预算硬顶、E-STOP 紧急停止与 Night Shift 无人值守，零遥测、可用 Ollama 完全免费离线运行。项目早期（87 stars），创意与工程纪律出色但生态尚小。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
+      "id": "035e917f-fcfd-4ee9-9ec0-51d92af91946",
+      "url": "https://github.com/paperclipai/paperclip",
+      "domain": "github.com",
+      "repo": "paperclipai/paperclip",
+      "description": "Paperclip 由 @dotta 于 2026 年 3 月开源，MIT 协议，3 周破 30k Stars。它不做 Agent 框架，而是做 Agent 之上的'组织层'：为每个 Agent 设岗位、发预算、走审批、留审计，配合 Goal-Aware 任务链与心跳调度，让 AI 团队像真公司一样运转。支持 Docker 一键部署、内嵌 Postgres、无需注册账号。缺点是学习曲线偏高、不省 token、适配器生态仍在成长，适合已跑通多 Agent 业务的人，不适合轻量单 Agent 用户。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:05:08.466Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多智能体编排",
+          "自托管",
+          "成本管控"
+        ],
+        "cover": "",
+        "title": "Paperclip 深度评测：把散装 AI Agent 拧成一家有组织、有预算的'虚拟公司'",
+        "ability": [
+          "多 Agent 组织化编排：以 CEO/CTO 等岗位建模，任务沿目标血缘链自动分发",
+          "预算硬停与多维成本追踪：按 Agent/项目/模型切分账单，超 80% 报警、100% 自动暂停",
+          "治理与审批闸门：招人、改配置、发布等高危动作需人类签字，全程审计日志可回滚",
+          "心跳调度与上下文延续：定时驱动任意 Agent 干活，会话可续用不丢失记忆",
+          "适配器架构（Bring Your Own Agent）：通过 process/http/WebSocket 接入任意现成 Agent，不锁定生态"
+        ],
+        "summary": "Paperclip 是一个开源自托管的'AI 公司操作系统'，用组织架构、预算管控和审批流程把 Claude Code、Codex 等多个 AI Agent 管理成一家可控的虚拟公司。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "同时开 10+ 个 Claude Code/Codex 终端的重度 AI 编程用户",
+          "想让 AI 团队 7×24 自主运转的 Solo 创业者/独立开发者",
+          "管理周期性自动化任务的运营与内容团队负责人",
+          "需要审计、RBAC、成本核算的企业 IT 与 SRE 团队",
+          "想借鉴多 Agent 系统设计模式的架构师与研究者"
+        ],
+        "description": "Paperclip 由 @dotta 于 2026 年 3 月开源，MIT 协议，3 周破 30k Stars。它不做 Agent 框架，而是做 Agent 之上的'组织层'：为每个 Agent 设岗位、发预算、走审批、留审计，配合 Goal-Aware 任务链与心跳调度，让 AI 团队像真公司一样运转。支持 Docker 一键部署、内嵌 Postgres、无需注册账号。缺点是学习曲线偏高、不省 token、适配器生态仍在成长，适合已跑通多 Agent 业务的人，不适合轻量单 Agent 用户。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
       "id": "1c144d0f-ed17-4aab-ba96-2ece3cd5c28e",
       "url": "https://github.com/leejet/stable-diffusion.cpp",
       "domain": "github.com",
@@ -261,8 +527,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "2836",
-        "stars": "28431",
+        "forks": "2844",
+        "stars": "28486",
         "topics": [
           "agentic-ai",
           "agents",
@@ -1006,7 +1272,7 @@
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
         "forks": "1548",
-        "stars": "18063",
+        "stars": "18104",
         "topics": [
           "board",
           "collaboration",
@@ -8968,7 +9234,7 @@
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
         "forks": "26071",
-        "stars": "291376",
+        "stars": "291397",
         "topics": [
           "ai",
           "brainstorming",
@@ -9279,8 +9545,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
-        "forks": "20796",
-        "stars": "175741",
+        "forks": "21096",
+        "stars": "178054",
         "topics": [
           "agent-skills"
         ],
@@ -13891,8 +14157,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
-        "forks": "3992",
-        "stars": "35761",
+        "forks": "4147",
+        "stars": "36736",
         "topics": [
           "claude-code",
           "mcp",
@@ -16609,8 +16875,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "22005",
-        "stars": "260781",
+        "forks": "22702",
+        "stars": "269357",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",

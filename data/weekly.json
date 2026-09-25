@@ -2161,8 +2161,8 @@
       "starsAdded": 1603,
       "createdAt": "2026-08-28T12:00:03.786Z",
       "metaData": {
-        "forks": "3992",
-        "stars": "35761",
+        "forks": "4147",
+        "stars": "36736",
         "topics": [
           "claude-code",
           "mcp",
@@ -4348,8 +4348,8 @@
       "starsAdded": 2024,
       "createdAt": "2026-08-30T19:00:04.712Z",
       "metaData": {
-        "forks": "3992",
-        "stars": "35761",
+        "forks": "4147",
+        "stars": "36736",
         "topics": [
           "claude-code",
           "mcp",
@@ -6032,8 +6032,8 @@
       "starsAdded": 8960,
       "createdAt": "2026-09-08T12:00:05.097Z",
       "metaData": {
-        "forks": "22005",
-        "stars": "260781",
+        "forks": "22702",
+        "stars": "269357",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -6592,7 +6592,7 @@
       "createdAt": "2026-09-12T13:00:04.127Z",
       "metaData": {
         "forks": "26071",
-        "stars": "291376",
+        "stars": "291397",
         "topics": [
           "ai",
           "brainstorming",
@@ -7053,8 +7053,8 @@
       "starsAdded": 2234,
       "createdAt": "2026-09-10T12:00:04.394Z",
       "metaData": {
-        "forks": "20796",
-        "stars": "175741",
+        "forks": "21096",
+        "stars": "178054",
         "topics": [
           "agent-skills"
         ],
@@ -9519,7 +9519,7 @@
       "createdAt": "2026-09-13T23:00:03.929Z",
       "metaData": {
         "forks": "26071",
-        "stars": "291376",
+        "stars": "291397",
         "topics": [
           "ai",
           "brainstorming",
@@ -11150,9 +11150,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 21068,
-      "forks": 1206,
-      "starsAdded": 15280,
+      "stars": 21454,
+      "forks": 1238,
+      "starsAdded": 11262,
       "createdAt": "2026-09-21T11:00:03.596Z",
       "metaData": {
         "forks": "1237",
@@ -11268,8 +11268,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 41056,
-      "forks": 2946,
+      "stars": 41073,
+      "forks": 2949,
       "starsAdded": 6920,
       "createdAt": "2026-09-20T18:00:03.629Z",
       "metaData": {
@@ -11327,8 +11327,8 @@
       "repo": "stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 77832,
-      "forks": 5095,
+      "stars": 77868,
+      "forks": 5097,
       "starsAdded": 6547,
       "createdAt": "2026-09-20T18:00:03.666Z",
       "metaData": {
@@ -11399,8 +11399,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 267147,
-      "forks": 39918,
+      "stars": 267174,
+      "forks": 39922,
       "starsAdded": 6193,
       "createdAt": "2026-09-20T18:00:03.646Z",
       "metaData": {
@@ -11635,7 +11635,7 @@
       "repo": "Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 29876,
+      "stars": 29887,
       "forks": 4015,
       "starsAdded": 3749,
       "createdAt": "2026-09-20T18:00:03.648Z",
@@ -11707,13 +11707,13 @@
       "repo": "vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 28431,
-      "forks": 2836,
+      "stars": 28481,
+      "forks": 2844,
       "starsAdded": 3363,
       "createdAt": "2026-09-24T11:00:04.462Z",
       "metaData": {
-        "forks": "2836",
-        "stars": "28431",
+        "forks": "2844",
+        "stars": "28486",
         "topics": [
           "agentic-ai",
           "agents",
@@ -11765,8 +11765,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 98955,
-      "forks": 10387,
+      "stars": 98963,
+      "forks": 10388,
       "starsAdded": 3345,
       "createdAt": "2026-09-20T18:00:03.651Z",
       "metaData": {
@@ -12075,6 +12075,73 @@
       }
     },
     {
+      "id": "e65a6de8-640f-4c9a-8155-2ee6a678398d",
+      "dateAdded": "202639",
+      "type": "github-weekly",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "repo": "bojieli/ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "language": "Python",
+      "stars": 50896,
+      "forks": 5709,
+      "starsAdded": 2481,
+      "createdAt": "2026-09-25T11:00:21.060Z",
+      "metaData": {
+        "forks": "4678",
+        "stars": "42279",
+        "topics": [
+          "agent",
+          "agent-memory",
+          "ai-agent",
+          "book",
+          "coding-agent",
+          "context-engineering",
+          "large-language-models",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "multimodal",
+          "rag",
+          "reinforcement-learning"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 - bojieli/ai-agent-book"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "RAG",
+          "开源书籍",
+          "实战教程"
+        ],
+        "cover": "",
+        "title": "《深入理解 AI Agent：设计原理与工程实践》深度评测",
+        "ability": [
+          "系统化理论构建",
+          "生产级工程实践",
+          "配套代码实验复现",
+          "多模态与多Agent协作",
+          "模型后训练与评估"
+        ],
+        "summary": "GitHub星标超2.7万的开源书籍，系统拆解AI Agent从原理到生产的完整路径，含95个实战代码实验。",
+        "category": [
+          "AI 编程",
+          "技术教程",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI应用开发者",
+          "AI产品经理",
+          "技术研究者",
+          "算法工程师",
+          "技术决策者"
+        ],
+        "description": "这是一本由华为“天才少年”撰写的开源教科书级资源，以“Agent=LLM+上下文+工具”为核心公式，通过10章内容和95个配套实验，深入讲解如何构建可靠、可扩展的生产级AI Agent系统，完美解决Demo到生产的鸿沟。"
+      }
+    },
+    {
       "id": "1cd92b6a-74d9-488e-8c39-d7c00749f2af",
       "dateAdded": "202639",
       "type": "github-weekly",
@@ -12082,8 +12149,8 @@
       "repo": "anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stars": 148012,
-      "forks": 24492,
+      "stars": 148020,
+      "forks": 24498,
       "starsAdded": 2384,
       "createdAt": "2026-09-20T18:00:03.642Z",
       "metaData": {
@@ -12134,8 +12201,8 @@
       "repo": "anthropics/financial-services",
       "description": "",
       "language": "Python",
-      "stars": 37462,
-      "forks": 5425,
+      "stars": 37476,
+      "forks": 5427,
       "starsAdded": 2382,
       "createdAt": "2026-09-22T11:00:03.547Z",
       "metaData": {
@@ -12177,6 +12244,55 @@
           "评估 AI 落地的金融企业决策者"
         ],
         "description": "Anthropic 官方开源的金融行业参考实现，把 LLM 能力封装成可版本化、可审计的 Skills、Commands 和 MCP 连接器，覆盖投行、股权研究、私募基金和财富管理等高价值工作流。开箱即用但需 Claude 付费订阅及数据源授权，输出必须人工复核。"
+      }
+    },
+    {
+      "id": "acfe4b18-1124-49d5-893b-02ed89d9d194",
+      "dateAdded": "202639",
+      "type": "github-weekly",
+      "url": "https://github.com/paperclipai/paperclip",
+      "repo": "paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "stars": 83244,
+      "forks": 15118,
+      "starsAdded": 2321,
+      "createdAt": "2026-09-25T11:00:21.027Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多智能体编排",
+          "自托管",
+          "成本管控"
+        ],
+        "cover": "",
+        "title": "Paperclip 深度评测：把散装 AI Agent 拧成一家有组织、有预算的'虚拟公司'",
+        "ability": [
+          "多 Agent 组织化编排：以 CEO/CTO 等岗位建模，任务沿目标血缘链自动分发",
+          "预算硬停与多维成本追踪：按 Agent/项目/模型切分账单，超 80% 报警、100% 自动暂停",
+          "治理与审批闸门：招人、改配置、发布等高危动作需人类签字，全程审计日志可回滚",
+          "心跳调度与上下文延续：定时驱动任意 Agent 干活，会话可续用不丢失记忆",
+          "适配器架构（Bring Your Own Agent）：通过 process/http/WebSocket 接入任意现成 Agent，不锁定生态"
+        ],
+        "summary": "Paperclip 是一个开源自托管的'AI 公司操作系统'，用组织架构、预算管控和审批流程把 Claude Code、Codex 等多个 AI Agent 管理成一家可控的虚拟公司。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "同时开 10+ 个 Claude Code/Codex 终端的重度 AI 编程用户",
+          "想让 AI 团队 7×24 自主运转的 Solo 创业者/独立开发者",
+          "管理周期性自动化任务的运营与内容团队负责人",
+          "需要审计、RBAC、成本核算的企业 IT 与 SRE 团队",
+          "想借鉴多 Agent 系统设计模式的架构师与研究者"
+        ],
+        "description": "Paperclip 由 @dotta 于 2026 年 3 月开源，MIT 协议，3 周破 30k Stars。它不做 Agent 框架，而是做 Agent 之上的'组织层'：为每个 Agent 设岗位、发预算、走审批、留审计，配合 Goal-Aware 任务链与心跳调度，让 AI 团队像真公司一样运转。支持 Docker 一键部署、内嵌 Postgres、无需注册账号。缺点是学习曲线偏高、不省 token、适配器生态仍在成长，适合已跑通多 Agent 业务的人，不适合轻量单 Agent 用户。"
       }
     },
     {
@@ -12289,8 +12405,8 @@
       "repo": "TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 4907,
-      "forks": 582,
+      "stars": 4909,
+      "forks": 583,
       "starsAdded": 1608,
       "createdAt": "2026-09-22T11:00:03.538Z",
       "metaData": {
@@ -12422,7 +12538,7 @@
       "repo": "Fission-AI/OpenSpec",
       "description": "Spec-driven development (SDD) for AI coding assistants.",
       "language": "TypeScript",
-      "stars": 70280,
+      "stars": 70288,
       "forks": 4809,
       "starsAdded": 1415,
       "createdAt": "2026-09-23T12:00:04.076Z",
@@ -12485,7 +12601,7 @@
       "repo": "superdesigndev/treg",
       "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
       "language": "Python",
-      "stars": 3280,
+      "stars": 3294,
       "forks": 273,
       "starsAdded": 1406,
       "createdAt": "2026-09-23T12:00:04.083Z",
@@ -12670,8 +12786,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 25576,
-      "forks": 3027,
+      "stars": 25575,
+      "forks": 3028,
       "starsAdded": 1118,
       "createdAt": "2026-09-20T18:00:03.653Z",
       "metaData": {
@@ -12797,7 +12913,7 @@
       "repo": "davila7/claude-code-templates",
       "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
-      "stars": 31756,
+      "stars": 31763,
       "forks": 3608,
       "starsAdded": 965,
       "createdAt": "2026-09-23T12:00:04.064Z",
@@ -12845,6 +12961,59 @@
           "开源贡献者"
         ],
         "description": "一个开源 CLI 工具，把 GitHub 上分散的 Claude Code 模板统一聚合，通过 npx 一行命令即可安装 Agent、斜杠命令、MCP 等乐高式组件，还附赠 Token 监控、聊天远程查看等官方未提供的工具。本质是 Claude Code 生态的应用商店，但模板质量依赖上游，建议按需安装、用完即删。"
+      }
+    },
+    {
+      "id": "91896cf6-30db-4a48-9325-6a531c1b3150",
+      "dateAdded": "202639",
+      "type": "github-weekly",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 50474,
+      "forks": 4621,
+      "starsAdded": 964,
+      "createdAt": "2026-09-25T11:00:21.051Z",
+      "metaData": {
+        "forks": "4621",
+        "stars": "50456",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
       }
     },
     {
@@ -12929,7 +13098,7 @@
       "repo": "cline/cline",
       "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
       "language": "TypeScript",
-      "stars": 69273,
+      "stars": 69275,
       "forks": 7514,
       "starsAdded": 855,
       "createdAt": "2026-09-20T18:00:03.677Z",
@@ -13092,7 +13261,7 @@
       "repo": "cloudflare/quiche",
       "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
       "language": "Rust",
-      "stars": 12587,
+      "stars": 12592,
       "forks": 1148,
       "starsAdded": 741,
       "createdAt": "2026-09-21T11:00:03.589Z",
@@ -13357,8 +13526,8 @@
       "repo": "pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 103284,
-      "forks": 30360,
+      "stars": 103287,
+      "forks": 30375,
       "starsAdded": 228,
       "createdAt": "2026-09-23T12:00:04.072Z",
       "metaData": {
@@ -13410,6 +13579,21 @@
         ],
         "description": "PyTorch 是 Meta 发起、Linux 基金会托管的深度学习框架，凭借动态图与 Python 优先设计成为学术界和大模型领域的事实标准。评测从架构原理、上手实战到竞品对比与局限全面剖析，附可运行代码示例。"
       }
+    },
+    {
+      "id": "af411fc3-5ee8-4646-9237-c5e9134d3c57",
+      "dateAdded": "202639",
+      "type": "github-weekly",
+      "url": "https://github.com/odoo/odoo",
+      "repo": "odoo/odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "language": "Python",
+      "stars": 54581,
+      "forks": 33829,
+      "starsAdded": 165,
+      "createdAt": "2026-09-25T11:00:21.058Z",
+      "metaData": null,
+      "summaryData": null
     }
   ]
 }

@@ -1,0 +1,178 @@
+# openbao/openbao
+
+[GitHub URL](https://github.com/openbao/openbao)
+
+
+## OpenBao 深度评测：HashiCorp Vault 闭源风波后最强开源继任者
+
+> OpenBao 是 Linux 基金会接管的开源机密管理平台，从 Vault 1.14 fork 而来，把 Vault Enterprise 付费功能免费化，是自建机密管理基础设施的首选。
+
+- **Tags**: OpenBao, Vault, 机密管理, 开源安全, DevOps
+- **Category**: 开发工具, 安全基础设施, 开源项目
+
+## Details
+
+# OpenBao 深度评测：一场在"密码学信任危机"后的开源逆袭
+> **一句话总结**：OpenBao 是 HashiCorp Vault 在 2023 年闭源换证事件后，由 Linux 基金会接管并延续下来的**真·开源** fork——它继承了 Vault 级别的密码学基础设施与动态凭证能力，却把 Vault Enterprise 六位数才卖的功能（Namespaces、横向扩展、动态密钥）做进了免费的核心，是当下自建机密管理基础设施最值得押注的项目。
+---
+## 一、背景与痛点：一个 fork 如何踩在"信任赤字"上起飞
+要理解 OpenBao 为什么值得关注，必须先回到 2023 年 8 月那个让整个 DevOps 圈哗然的时刻：HashiCorp 宣布将旗下所有产品（包括 Vault）从 **MPL 2.0** 切换到 **BSL 1.1（Business Source License）**——后者并非 OSI 认证的开源协议，它明确禁止任何公司基于该代码库提供竞争性的托管服务。
+这一刀切下去，受伤的不只是想要做托管 Vault 的厂商，还有一大批在合规部门把"必须使用 OSI 认证开源软件"写进采购流程的企业——一夜之间，他们的 Vault 部署变成了"合法但不在治理白名单内"的灰色地带。2025 年 2 月 IBM 完成对 HashiCorp 的收购后，"Vendor Lock-in"的担忧又被叠了一层地缘政治滤镜。
+于是 OpenSSF（Linux 基金会下属的开放源代码安全基金会）牵头，从 Vault 1.14.x（**最后一个 MPL 版本**）fork 出了 OpenBao，社区化运营，承诺"永远不会被任何单一厂商重新闭源"。换句话说，**OpenBao 的核心卖点不是技术，而是"未来十年不用担心这条主干道突然被拆掉"的工程确定性**。
+对小白读者做个类比：如果你的密码保险柜厂商某天突然说"以后这个柜子只能由我家物业来开，否则你别用"，你多半会想买一个锁具结构完全公开、任何锁匠都能维修的柜子——OpenBao 就是后者。
+---
+## 二、核心亮点与功能剖析：这不是"又一个 KMS"
+OpenBao 的能力栈远不止"存 KV 密码"那么浅。它真正对得起 "secrets infrastructure" 这个称呼的，是以下五张牌：
+### 1. Secure Secret Storage（静态加密存储）
+所有写入持久化存储的机密都会先在内存中加密——即便攻击者拿到了磁盘原始数据，没有主密钥也读不出任何内容。存储后端支持内置的 Integrated Storage（Raft）、PostgreSQL 等。
+> **类比**：想象你的保险柜里每一件珠宝都被单独封进一层密码盒，即便有人撬开了柜门，还得继续破解每个密码盒。
+### 2. Dynamic Secrets（动态凭证）—— 这是它真正的杀手锏
+传统做法是给每个应用一个"长期有效的数据库账号"，一旦泄露就是灾难。OpenBao 的做法是：应用需要访问数据库时，**临时向 OpenBao 申请一个 1 小时有效期的账号**，租约到期自动吊销，数据库里根本不会存在长期凭证。
+数据库（PostgreSQL/MySQL/Valkey 等）和 Kubernetes 的动态凭证引擎在核心包内直接可用，云平台（AWS/GCP/Azure）的引擎自 2.5.0 起以 OCI 镜像形式作为第一方外部插件安装。
+### 3. Transit Engine（加密即服务）
+应用可以把敏感数据发到 OpenBao，由它加密后再存回数据库——**密钥从不离开 OpenBao**。这相当于免费获得了一个多云 KMS，而 Infisical 的同等能力要付费。
+### 4. Lease & Revocation（租约与吊销）
+每一个机密都自带 TTL，到期自动作废；支持"批量吊销"——例如一键撤销"某个用户读过的所有机密"或"某一类型的全部机密"，在入侵响应时是救命的开关。
+### 5. Namespaces（多租户命名空间）—— 免费！
+这是 Vault Enterprise 卖出天价的功能。OpenBao 在 2.3 版本把 Namespaces 免费开放，2.6 又进一步加入了 **Namespace Sealing（按租户独立封印）**，让每个租户可以用独立的密码学材料封存自己的命名空间，互不影响。
+### 6. PKI 与 SSH CA 完整支持
+内置完整的企业级证书颁发引擎，支持 CEL 表达式做灵活的证书策略校验、多 issuer 轮换、IP SAN 过滤等，能直接替代一个中小型企业的内部 CA。
+---
+## 三、技术栈与架构解析
+### 技术栈
+| 维度 | 选型 |
+|---|---|
+| 主语言 | Go（与 Vault 同源，可复用其生态） |
+| 许可证 | MPL 2.0（OSI 认证） |
+| 治理 | Linux 基金会 / OpenSSF Stage One 项目 |
+| CLI 名称 | `bao`（与 `vault` 语义对齐，环境变量同时兼容 `BAO_ADDR` / `VAULT_ADDR`） |
+| 可复用 Go 库 | `github.com/openbao/openbao/api/v2` 和 `/sdk/v2` |
+| 存储引擎 | Integrated Storage（Raft，默认）、PostgreSQL 等 |
+| 高可用 | Raft 共识 + 主备节点自动切换 |
+| 多租户 | Namespaces（路径或 `X-Vault-Namespace` header 路由） |
+### 架构上的几处精妙设计
+- **事务化存储**：OpenBao 团队 2026 年专门发文对比了 Vault 与 OpenBao 在 Raft 上的事务语义差异，指出 Vault 存在"快照不可恢复/不一致"的边界情况，而 OpenBao 用事务机制解决了这类一致性问题。
+- **横向读扩展**：2.5 引入的 horizontal read scalability，允许在保留单一写入主节点的前提下，水平扩展读副本——这在传统 Vault 上是 Enterprise 才有的能力。
+- **插件化 Auto-Unseal**：2.6 把 Auto-Unseal 从"编译进主二进制"改造成"外置 KMS 插件"，云厂商专用 seal 将在 2.7 移出主干，转而通过声明式 `plugin "kms" "xxx" {}` 配置加载——这让社区可以维护自己的硬件 KMS 集成，不再受限于核心团队的开发带宽。
+- **声明式配置**：2.5/2.6 引入的 declarative configuration 和 workflows 系统，允许通过 HCL/JSON 描述"我要初始化成什么样"，OpenBao 自行收敛，让 GitOps 集成更自然。
+---
+## 四、上手门槛与部署体验：周一上线五分钟，生产就绪要三周
+这是评测必须坦诚说清楚的一段。OpenBao 的**开发体验（DX）和运维体验（Ops）是两个截然不同的故事**。
+### Demo 模式：5 分钟跑通
+```bash
+# 方式一：Docker 最快体验
+docker run -p 8200:8200 -e BAO_ADDR=http://127.0.0.1:8200 \
+  --cap-add=IPC_LOCK openbao/openbao server -dev
+# 方式二：源码编译
+git clone https://github.com/openbao/openbao.git
+cd openbao
+go build -o bin/bao .
+./bin/bao server -dev
+```
+`-dev` 模式下 OpenBao 会用临时内存存储 + 默认 root token 启动，你立刻就能在浏览器里看到 UI 并写入第一条 KV secret。这是它作为"开源基础设施"最友好的部分。
+### 生产模式：需要严肃对待
+一旦切到生产，你必须面对：
+1. **初始化与 Unseal 仪式**：首次启动会生成一份加密密钥的 Share，需要用 Shamir 分片算法拆给多名管理员共同解锁——这是一个有仪式感的"双人规则"流程。
+2. **Auto-Unseal 接入 KMS**：否则每次重启都需要人工解锁，云端场景推荐用 AWS KMS/GCP KMS/Azure Key Vault 作为外部 unseal 源。
+3. **Raft HA 集群**：生产至少 3 节点起步。
+4. **策略与 Auth 方法**：你要为每个应用写 ACL Policy（HCL），配置 AppRole/JWT/Kubernetes auth 等接入方式。
+5. **审计设备**：开启 audit log 后才能满足 SOC 2 / ISO 27001 / PCI DSS 等合规要求。
+6. **灾备演练**：Raft 快照、恢复 Runbook、密钥轮换流程，每一项都要写文档。
+用 Keyway 那篇对比文章的金句来说：**"如果'unseal ceremony'这个词让你的团队会心一笑，OpenBao 在你的选项里；如果它让所有人都脸色发白，那它就不在。"**
+---
+## 五、社区活跃度与生命力
+- **发布节奏**：2025 年 2 月 2.5（横向扩展）→ 2026 年 6-7 月 2.6 Beta → 2026 年 8 月 2.6 GA（含 2.6.1/2.6.2 紧随其后的安全修复）。基本保持**月级别小版本、季度级别大版本**的稳定节奏，社区公告里提到 2.7.x 即将跟进。
+- **贡献广度**：2.6 发布公告显示，**42 位首次贡献者、27 位多次贡献者、8 位贡献超过 10 次的用户**参与了这次发布——这对一个"fork 项目"来说是相当健康的多样性信号，说明它不是某个单一公司的一言堂。
+- **核心赞助方**：Adfinis（其 CTO Michael "Hofi" Hofer 现任技术指导委员会 TSC 主席）、ControlPlane（Head of OpenBao Development Alex Scheel 来自 HashiCorp Vault CryptoSec 团队）、Liquid Reply、Fermilab（参与 JWT/OIDC 认证模块）、Proton、GitLab、Blendbyte 等。
+- **商业支持生态**：Adfinis、ControlPlane 等已在 2025-2026 年间推出围绕 OpenBao 的支持订阅与托管服务，解决了"没有付费 SLA 不敢上生产"的顾虑。
+- **治理机构**：OpenSSF 沙箱项目，受 LF Projects 商标保护，工作组分专项推进（Namespaces、PKCS#11、Scalability、Supply-chain、UI）。
+---
+## 六、真实代码示例：从 0 到写出第一个机密
+以下是一段可以直接复制粘贴验证的极简 Demo 流程（假设已用 `docker run -d --name=bao -p 8200:8200 --cap-add=IPC_LOCK openbao/openbao server -dev` 启动）：
+```bash
+# 1. 设置环境变量
+export BAO_ADDR="http://127.0.0.1:8200"
+export BAO_TOKEN="root"          # dev 模式默认 root token
+# 2. 写入一条 KV secret
+bao kv put secret/myapp/db username=admin password=S3cr3t!
+# 3. 读取
+bao kv get secret/myapp/db
+# 4. 启用动态数据库凭证（PostgreSQL 示例）
+bao secrets enable database
+bao write database/config/mydb \
+    plugin_name=postgresql-database-plugin \
+    connection_url="postgresql://{{username}}:{{password}}@localhost:5432/mydb" \
+    allowed_roles="app-role"
+# 5. 应用现在可以随时申请一个临时账号
+bao read database/creds/app-role
+# 返回的 username/password 在 TTL 后自动被 OpenBao 吊销
+```
+对小白读者，可以类比成这样一件事：**过去你把每个应用的数据库密码写在便签上贴在显示器上；现在改成"每个应用每天早上来前台领一张当日有效的临时门禁卡，晚上自动作废"。**
+---
+## 七、目标人群与收益
+### 🟢 强烈推荐人群
+| 人群 | 你能拿到什么 |
+|---|---|
+| 平台/基础设施团队 | 把 Vault Enterprise 的 Namespaces、动态凭证、PKI 全部装进一个免费且 OSI 合规的包里 |
+| 想摆脱 HashiCorp/IBM 依赖的企业 | API 兼容 + `vault` 工具链无缝替换（CLI 别名、Env Var 双兼容） |
+| 多租户 SaaS / 银行 / 电信 | Namespace Sealing + 横向扩展，在自建场景下实现企业级隔离与吞吐 |
+| 有强合规要求的团队 | 完整 Audit 日志、SOC 2 / ISO 27001 / DORA / CRA 所需的可追溯能力 |
+| 用 GitOps 的团队 | Flux + SOPS + Transit 的工作负载身份集成，无需长期 BAO_TOKEN |
+### 🟡 观望人群
+- **5-20 人小团队**：你们真正需要的可能只是"安全地分享 .env 文件"，Infisical Cloud / Doppler / Keyway 这类工具能以更低的运维成本满足需求。
+- **全 Azure / 全 AWS 单云企业**：云厂商自带的 Key Vault / Secrets Manager 集成更顺滑、免运维，除非你有强烈的多云诉求，否则 OpenBao 的灵活性可能是过度设计。
+### 🔴 不推荐人群
+- 纯前端、纯消费级 App，且连"机密管理"这个概念都还没建立起来的团队
+- 没有专人值班、没有灾备演练流程的团队（强上 OpenBao 等于给自己埋雷）
+---
+## 八、竞品/同类对比
+| 维度 | OpenBao | HashiCorp Vault | Infisical | Azure Key Vault |
+|---|---|---|---|---|
+| **许可证** | MPL 2.0（OSI） | BSL 1.1（非 OSI） | MIT 核心 + `/ee` 闭源 | 专有 SaaS |
+| **治理** | Linux 基金会/OpenSSF | HashiCorp（IBM 旗下） | Infisical Inc. | Microsoft |
+| **Namespaces 多租户** | ✅ 免费（2.3+） | ❌ Enterprise 付费 | Enterprise 付费 | ❌ |
+| **动态数据库凭证** | ✅ 免费（核心内置） | ✅ 免费但运维繁重 | ❌ Enterprise 才有 | ❌ 原生不支持 |
+| **PKI 深度** | 完整 Vault 级 | 完整 | 较新/较浅 | 只做密钥存管 |
+| **Transit 加密即服务** | ✅ 免费 | ✅ 社区版可用 | KMS 产品，按层付费 | 密钥封装 |
+| **托管云版本** | ❌ 仅有第三方托管 | ✅ HCP Vault | ✅ Infisical Cloud | ✅ |
+| **UI/开发者体验** | 继承自 Vault 的运维向 UI（Ember → React 重写中） | 同左 | 现代 Web Dashboard | Azure 门户 |
+| **横向扩展** | ✅ 2.5 免费读扩展 | Enterprise | 依托 SaaS | 平台原生 |
+| **每用户成本** | 0 | Enterprise 报价 | $18/身份/月 起 | 按操作次数计费 |
+> 一句话定位：**OpenBao 是"能替代 Vault Enterprise 的免费基础设施"；Infisical 是"给开发者用的开源 1Password for Teams"；云厂商 KMS 是"在你已经在某朵云上时的顺路选择"。** 三者并不在同一竞技场。
+### 与 HashiCorp Vault 的迁移关系
+由于 OpenBao 从 Vault 1.14.x fork 而来，**CLI、API、HCL 配置、Auth 方法、大部分 Secrets Engine 都是兼容的**。已有 Vault 用户迁移的摩擦主要来自三点：
+1. Vault Enterprise 专有功能（如部分 DR Replication、HSM 集成的某些细节）需要在 OpenBao 中寻找替代方案
+2. 云厂商 seal 在 2.7 起改为外置插件加载，需要重新打包部署
+3. 两条主干的 roadmap 已分叉，新功能不再互通
+社区为此专门发布了 `openbao-vault-compat` RPM 包，Fedora/RHEL 系统甚至提供了专门的兼容层简化切换。
+---
+## 九、局限与不足（必读）
+评测必须诚实，OpenBao 并非没有短板：
+### 1. 运维复杂度依然是"Vault 级别"
+这一点没有因为开源化而改变。Raft 共识、unseal 仪式、ACL Policy、审计配置、快照备份、灾备演练——每一项都需要投入。**它不会让一个小团队"今天下午就能用上"**。
+### 2. 没有一方托管版本
+Infisical Cloud 一键可用，而 OpenBao 只能自建，或者去找 Adfinis、ControlPlane 这类第三方托管商——后者的生态还在成长期。
+### 3. UI 体验欠佳
+继承了 Vault 的 Ember.js 老化 UI，虽然 React 重写已在进行中，但截至 2.6.x 仍未完成。如果你希望给开发者一个" pleasant self-service 界面"，这不是它的强项。
+### 4. 云 Secrets Engine 需要单独安装插件
+2.5.0 起，AWS/GCP/Azure 的动态凭证引擎以 OCI 镜像形式外置安装，不再默认打包——这提升了灵活性但降低了开箱体验。
+### 5. 生态分叉的长期隐忧
+OpenBao 与 Vault 的 roadmap 已分道扬镳，社区的第三方工具、Terraform Provider、CI/CD 集成未来可能需要维护两个版本。对于深度依赖 Vault 特有 Enterprise 功能的团队，迁移并不"零成本"。
+### 6. 项目成熟度对比
+尽管贡献者多样、TSC 规范，OpenBao 仍然是一个相对年轻的项目（正式 GA 至今不过几年），对比 Vault 十年以上的生产打磨，某些极端边界场景下的表现还需要时间验证。不过它在 2025-2026 已修复了 6 个 CVE 级别的安全问题，安全响应是积极的。
+---
+## 十、结语与行动建议
+> **最终评判**：OpenBao 是 2023 年开源分叉潮中到目前为止**最成功、最完整、最有生命力**的成果之一。它没有停留在"续命 MPL 版 Vault"的姿态上，而是在 Namespaces 免费化、横向扩展、事务化存储、声明式插件生态等方向上做出了真实创新。**它不是"廉价的 Vault 替代品"，而是"把 Vault Enterprise 该有的样子做成了真开源"。**
+### 分场景行动建议
+- **如果你正在用 Vault 开源版**：建议在测试环境跑一遍 OpenBao，验证你的 Policy、Auth、Secrets Engine 是否兼容。MPL 协议下两套版本短期内共存是安全的，但长期看越早迁移，路径越顺滑。
+- **如果你在用 Vault Enterprise 且被 Namespaces / HSM / 横向扩展吃掉大量预算**：OpenBao 值得一次严肃的 POC，Namespaces + 横向读扩展的免费组合可能帮你省下六位数。
+- **如果你是小团队、初次接触机密管理**：别一上来就部署 OpenBao，先用 Infisical Cloud 或 Doppler 把 `.env` 文件的混乱治好；等业务真的长出动态凭证、PKI、多云 KMS 的需求时，再迁移到 OpenBao。
+- **如果你要做合规驱动的多云架构**：OpenBao + 完整 Audit 日志 + KMS Auto-Unseal 是目前免费方案中少见的、能同时满足 SOC 2 / ISO 27001 / DORA 的组合。
+- **如果你是 OSS 爱好者/研究者**：它的 TSC 治理模型、事务化 Raft、声明式插件架构、CEL 在 PKI 中的应用，都是值得研读的工程范本。
+---
+### 📚 延伸阅读
+- 官方仓库：[github.com/openbao/openbao](https://github.com/openbao/openbao)
+- 官方文档：[openbao.org/docs](https://openbao.org/docs)
+- 2.6 发布公告：[openbao.org/blog](https://openbao.org/blog)
+- 与 Infisical 的深度对比：[keyway.sh/articles/infisical-vs-openbao](https://keyway.sh/articles/infisical-vs-openbao)
+- 与 Vault 的迁移指南：[openlogic.com/blog/hashicorp-vault-alternatives-openbao-vs-vault](https://www.openlogic.com/blog/hashicorp-vault-alternatives-openbao-vs-vault)
