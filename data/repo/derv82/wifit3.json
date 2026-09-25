@@ -1,0 +1,59 @@
+{
+  "id": "adeada54-251e-4642-8c75-aadc55bd926e",
+  "url": "https://github.com/derv82/wifit3",
+  "domain": "github.com",
+  "repo": "derv82/wifit3",
+  "description": "wifit3 是 wifite 原作者 derv82 重出江湖的续作，把 Linux 内核的 C 驱动移植为 Python 用户态代码，通过 USB 直接与网卡通信，实现免依赖、跨平台的 WiFi 安全审计。支持 PMKID、握手捕获、WPS 爆破等完整攻击链，但仅支持约 19 种白名单芯片组（如 ALFA AWUS036NH），处于 Beta 阶段，需在授权网络内合法使用。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-25T12:06:16.907Z",
+  "metaData": {
+    "forks": "75",
+    "stars": "683",
+    "topics": [
+      "cross-platform",
+      "userland",
+      "wifi-scanner",
+      "wifi-security",
+      "wireless-security"
+    ],
+    "license": "GPL-2.0 license",
+    "homepage": "",
+    "description": "Wifite but USB-only & cross-platform. Contribute to derv82/wifit3 development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "无线安全",
+      "渗透测试",
+      "开源项目",
+      "WiFi审计",
+      "跨平台工具"
+    ],
+    "cover": "",
+    "title": "wifit3 深度评测：原作者回归之作，把 WiFi 审计从命令行炼狱中解放出来",
+    "ability": [
+      "跨平台无线审计：同一套 Python 代码在 Linux、Windows、macOS 原生运行，绕过操作系统无线栈限制",
+      "用户态 Mini-Drivers：直接通过 libusb 与网卡对话，仅依赖 PyUSB + Textual 三个库，替代 aircrack-ng 全家桶",
+      "完整攻击链覆盖：实时扫描、隐藏 AP 识别、PMKID 收割、WPA/WPA2 握手捕获、WPS PIN 爆破与 PixieDust、WEP 攻击一站式完成",
+      "多网卡并发：支持插多张兼容网卡自动分流扫描与捕获，提升抓包效率",
+      "Hashcat 直通输出：自动生成 .hc22000 格式文件，配合 Vault 功能管理捕获结果"
+    ],
+    "summary": "wifite 原作者 derv82 出品的新生代无线审计工具，用用户态 Mini-Drivers 架构实现 Linux/Windows/macOS 三端原生 WiFi 安全测试。",
+    "category": [
+      "网络安全",
+      "开发工具"
+    ],
+    "suitable": [
+      "红队与渗透测试工程师：需要在 Windows/macOS 环境临时做无线审计",
+      "安全研究者与 CTF 选手：想要轻量可定制的无线工具链",
+      "网络运维与蓝队：做 rogue AP 检测、企业 WiFi 自查与安全加固",
+      "想学习用户态驱动或 Agentic Coding 的开发者：Mini-Drivers 架构与 AI 移植工作流是宝藏范本",
+      "wifite 系列老用户：原作者回归之作，体验架构级升级"
+    ],
+    "description": "wifit3 是 wifite 原作者 derv82 重出江湖的续作，把 Linux 内核的 C 驱动移植为 Python 用户态代码，通过 USB 直接与网卡通信，实现免依赖、跨平台的 WiFi 安全审计。支持 PMKID、握手捕获、WPS 爆破等完整攻击链，但仅支持约 19 种白名单芯片组（如 ALFA AWUS036NH），处于 Beta 阶段，需在授权网络内合法使用。"
+  },
+  "contentDetail": "# wifit3 深度评测：一款把无线审计从\"命令行炼狱\"解放出来的新生代工具\n> **一句话定位**：wifit3 是 wifite 原作者 derv82 时隔多年重出江湖的\"续作\"，它把 wifite 系列从\"aircrack 命令链编排器\"进化成了**自带用户态驱动栈、原生跨平台（Linux/Windows/macOS）、UI 现代化**的 USB 无线审计一体机——仅用 PyUSB + libusb + Textual 三个依赖就完成了从前需要 aircrack-ng / hcxdumptool / reaver / bully 一整套工具链才能干的事。\n---\n## 一、背景与痛点：为什么它值得被写一篇长文\n要理解 wifit3 的价值，得先看懂它要解决的痛点有多深。\n**wifite 系列的祖传困境**。原版 wifite（2010 年前后）和 wifite2（2015 年 rewrite）本质上是 Python 写的\"自动化外壳\"——它们不直接操作无线网卡，而是依次拉起 `airmon-ng`、`airodump-ng`、`aireplay-ng`、`reaver`、`bully`、`hcxdumptool`、`hashcat` 等十几个独立二进制，替用户记忆并拼接它们的命令行参数。这种设计的代价是：\n1. **依赖地狱**：任何一项缺装、版本不对、PATH 没配好，整条链就崩。即便在 Kali Linux 上，`wifite2` 的 issue 区常年是\"驱动加载失败\"\"Monitor 模式起不来\"\"reaver 装不上\"这类环境问题。\n2. **被 OS 钳住喉咙**：Linux 靠内核驱动暴露 Monitor 模式，Windows 的 NDIS 栈则**根本不允许应用层做 Monitor Mode 和帧注入**——这就是为什么 wifite2 明确只支持 Kali/ParrotSec，Windows 用户想跑只能靠 WSL 里的各种折衷 hack。\n3. **作者早已退场**：derv82 在 README 里明确说\"original maintainer stepped away\"，wifite2 这几年由 **Christian \"kimo\" B.（@kimocoder）** 接手维护。原作者本人则在憋一个真正架构级别的新东西——这就是 wifit3。\n**wifit3 的诞生逻辑**：与其继续在 aircrack 生态上做粘合层，不如**绕过操作系统无线栈，直接用 USB 通信和无线网卡对话**。这听上去像\"重新发明轮子\"，实际上是这个领域十年来的第一次架构级跃迁。\n---\n## 二、核心突破：Mini-Drivers 架构（本文最值得读懂的一段）\nwifit3 最有含金量的不是功能列表，而是它背后的工程思路。把这个讲透，后面所有优点都水到渠成。\n### 2.1 什么是\"Mini-Drivers\"\n用个比喻：传统工具链像**通过翻译跟外国客户谈生意**——你的 Python 脚本（客户）→ aircrack 二进制（翻译）→ Linux 内核驱动（当地中介）→ 无线网卡（真正的外商）。任何一环翻车，整场生意就黄。\nwifit3 的 Mini-Drivers 则是**直接学会对方的母语**：作者把 Linux 内核里那些 C 语言写的驱动（Atheros ath9k、Ralink rt2x00、Realtek rtw88、MediaTek mt76 等）**逐条指令移植成了 Python 用户态代码**，通过 libusb 直接和网卡上的 USB 端点对话。操作系统这个\"中介\"被彻底绕开——Windows 的 NDIS 栈再也拦不住 Monitor Mode，因为 wifit3 根本没走 NDIS。\n> **金句总结**：Mini-Drivers 的本质是把\"驱动\"从内核空间拉到用户空间，让同一份 Python 代码在 Linux、Windows、macOS 上向网卡发送**完全相同的字节流**——这就是\"一套代码、三端原生\"的物理基础。\n### 2.2 用 AI 把 C 驱动逐行移植到 Python（2025 年最典型的 Agentic Coding 实战）\n这是整个项目里最前沿也最容易被低估的部分。把几十万行的 Linux C 驱动手工移植到 Python 几乎是不可能完成的任务，作者的做法是**让 Claude 编程代理（Coding Agent）驱动整个移植过程**，配合一套\"离线验证回放\"的闭环：\n1. **录制一次真实流量**：在 Linux 上加载原版内核驱动，用 `usbmon` + `tshark` 抓下 `airmon-ng`/`airodump-ng`/`aireplay-ng` 操作网卡时的完整 USB 指令流；\n2. **离线回放验证**：把录制的 PCAP 丢给 Python 移植版执行，`verify_pcap.py` 逐条比对，一旦发现第一条分歧指令就停下来；\n3. **让 Agent 修那条指令**：Agent 读原 C 源码、修正 Python 实现、重新回放、再发现下一条分歧……循环直到整段录制完美重现；\n4. **才允许碰真硬件**。\n这种\"**golden trace replay-driven agent porting**\"的模式，是当下 AI 辅助重写/移植遗留系统最成熟的范式之一，wifit3 把它落地得非常干净。对于想学习 Agentic Engineering 的开发者来说，这个 workflow 本身就是一份值得拆解的范本。\n### 2.3 多网卡\"交叉收割\"\nMini-Drivers 还带来一个衍生红利：**多网卡并发**。插上 2 张、3 张受支持的 USB 网卡，wifit3 会自动\"分流\"——一张做主 TX（发 deauth），其余在后台跨信道扫描/捕获，把抓到 handshake 或 PMKID 的概率成倍提升。这在传统 aircrack 工具链下需要手动开多个 terminal、手动 `airodump-ng -c` 各自指定信道，体验差距非常明显。\n---\n## 三、功能全景：从扫描到 Hashcat 一条龙\nwifit3 目前处于 **Beta 状态（v0.3.3）**，最新一次 Release 刚加了\"Vault\"功能用于管理和回放已捕获的 hash 文件。功能覆盖完整审计流程：\n| 能力 | 说明 | 价值 |\n|------|------|------|\n| **实时扫描** | 跳信道列出 AP，含信号、加密、WPS 状态、WPA3/SAE 识别 | 替代 `airodump-ng` |\n| **VAP 去隐藏** | 识别并标记隐藏的 Virtual AP，关联到物理 AP | 对抗\"隐藏 SSID\"战术 |\n| **实时仪表盘** | 目标 AP 的 beacon/data/inject/deauth 实时 sparkline | 替代 `airodump-ng` 的统计视图 |\n| **PMKID** | 被动捕获 + 主动收割，输出 `.hc22000` 直接喂 Hashcat | 不需要等客户端连接、不需要 deauth |\n| **WPA/WPA2 握手** | 被动 4-way 捕获 + 主动 deauth 触发，自动校验握手完整性 | 替代 `airodump-ng` + `aireplay-ng` |\n| **WPS 按钮提取** | 检测到 WPS 按钮按下时自动提取 PSK | 冷门但杀伤力极强 |\n| **WPS PIN 爆破** | 可断点续传，v0.2.0 重写了 PIN 算法引擎 | 替代 `reaver`/`bully` |\n| **PixieDust** | v0.3.0 新增 Phase 1 & 2 原生实现 | 替代 `reaver -K` |\n| **WEP 全套** | ARP replay、ChopChop、fake auth、PTW | 给老古董路由器留了后门 |\n| **AP 识别子系统** | OUI + WSC 元数据 + 品牌规范化，能识别\"路由器型号\" | 高密度环境下快速定位目标 |\n特别提一下 WPS PIN 引擎的重构：v0.2.0 引入了 **6 层确定性优先级管线**（Model → OUI → OUI Algo → SSID Pattern → Vendor Fallback → Broad Chipsets），并整合了 airgeddon 和 Default-WPS-PINs 的实证数据库——**605 个静态 OUI + 235 个算法映射 OUI**，内置 ComputePIN 24/28/32、D-Link devttys0、ASUS、Airocon/Realtek、InvNIC、Trendnet 等一系列数学生成器。这个数据库覆盖度和工程化程度，已经超越了不少单一用途的 WPS 爆破工具。\n---\n## 四、与 wifite2 / aircrack-ng 工具链的横向对比\n| 维度 | **wifite2**（经典方案） | **wifit3**（本次评测对象） |\n|------|----------------------|--------------------------|\n| **架构** | 编排 aircrack/reaver/hcxdumptool 等二进制 | 用户态 Mini-Drivers 直连 USB |\n| **依赖** | 十几个外部工具 + Python | 仅 PyUSB/libusb + Textual/Rich |\n| **平台** | 主要 Kali Linux、ParrotSec | Linux / Windows / macOS（Intel + Apple Silicon）原生 |\n| **驱动** | 依赖内核驱动（易冲突） | 自带驱动栈，绕过 NDIS/内核冲突 |\n| **多网卡** | 手动多终端 | 原生多卡并发 |\n| **UI** | 终端字符 UI | Textual TUI（支持主题、鼠标选中复制、Ctrl+P 偏好面板） |\n| **输出** | 手动处理 cap/pcap | 自动汇总为 `.hc22000`，配套 Vault 管理 |\n| **sudo 权限** | 全程 root | 仅首次安装 udev/modprobe / WinUSB 时提权，之后用户态跑 |\n| **硬件范围** | 几乎所有支持 Monitor 的卡 | **仅限约 19 种白名单芯片组** |\n| **成熟度** | 稳定、Kali 官方仓库收录 | Beta，\"Works On My Machine\" 状态 |\n| **维护者** | kimocoder（原作者已退场） | derv82（原作者回归）+ 少量贡献者 |\n**结论**：wifit3 不是 wifite2 的\"升级版\"，而是**对同一问题的不同解法**——用更高的工程门槛换取了更低的用户使用门槛。它牺牲了硬件兼容广度（白名单制），换来了跨平台、可移植、免依赖的体验飞跃。\n---\n## 五、硬件白名单：进入门槛与\"推荐配置\"\nwifit3 的硬性门槛是**必须使用受支持的 USB 网卡**。如果不在列表里，工具直接不工作。主流可选型号包括：\n- **入门首选（2.4GHz）**：ALFA AWUS036NH（Ralink RT3070）、TP-Link TL-WN722N V1（Atheros AR9271）——这两张卡是业内公认的\"性价比之王\"，二手市场价常常不到百元。\n- **进阶双频（2.4/5GHz）**：ALFA AWUS036ACHM（MediaTek MT7610U）、ALFA AWUS036ACM（MT7612U）。\n- **Wi-Fi 6E 旗舰**：ALFA AWUS036AXML（MT7921AU）、Netgear A9000（MT7925U）、ASUS USB-BE93（RTL8922AU）。\n- **WEP 怀旧专用**：ALFA AWUS036H（RTL8187L）——\"For anyone trapped in 2006\"，README 的原话。\n购买前务必对照官方 *Supported Hardware* 表格核对**具体型号版本号**——同名不同版的差异极大（例如 TL-WN722N V1 是 AR9271 可用，V2/V3 则是 RTL8188EUS 才能用）。\n---\n## 六、上手体验：三分钟跑起来的安装流程\n### 6.1 下载二进制（推荐）\n```bash\n# Linux x64\nwget https://github.com/derv82/wifit3/releases/download/v0.3.3/wifit3-linux-x64\nchmod +x wifit3-linux-x64\n./wifit3-linux-x64\n```\nWindows 直接下载 `wifit3-windows-x64.exe` 运行；macOS（Apple Silicon + Intel universal2）需要绕过 quarantine：`xattr -d com.apple.quarantine wifit3-macos-universal2 && chmod +x wifit3-macos-universal2`。\n### 6.2 首次运行 Setup（一次性）\n- **Linux**：工具会请求 sudo 创建 udev 规则 + modprobe 黑名单（让内核放开网卡），之后**无需再提权**；\n- **Windows**：弹一次 UAC 安装 WinUSB 驱动，之后同样用户态运行；\n- **macOS**：无需装驱动，系统弹窗点 \"Allow\" 即可。\n### 6.3 从源码运行\n项目用 `uv` 作为包管理器，拉依赖和跑起来都很现代：\n```bash\ngit clone https://github.com/derv82/wifit3\ncd wifit3\nuv run wifit3\n```\n打包构建也一条命令：`uv run pyinstaller wifit3.spec --noconfirm --clean`。\n### 6.4 卸载体验（加分项）\nSplash 界面有红色 **Uninstall 按钮**，一键把 WinUSB 驱动或 udev 规则清干净，把网卡控制权还给系统内核——对\"我想试试但不想污染系统\"的用户非常友好。\n---\n## 七、社区活跃度与项目健康度\n- **迭代节奏**：从 Releases 历史看，v0.1.x → v0.2.0 → v0.3.0 → v0.3.1 → v0.3.2 → v0.3.3 推进很快，每个版本都有实质性功能更新而非纯 cosmetic。\n- **贡献者涌现**：@xxcosita3czxx 独立贡献了 RTL8822BU/8821AU/8922AU 适配 + PixieDust 攻击 + AP 识别子系统；@laxdog 处理 AR9271 固件稳定性；@pzlabuda 处理 WPS 和 CPython 3.14 兼容。说明项目已经从\"一人项目\"过渡到\"小核心团队\"阶段。\n- **发布渠道**：已被 KitPloit 等主流安全工具聚合站收录，KSEC 社区也有讨论帖，在业内已有可见度。\n- **状态坦诚**：作者自己在 README 里把状态标注为 **Beta（\"Works On My Machine\"）**，并主动征集 bug report。这种坦诚比\"打广告式 README\"更能赢得专业用户信任。\n---\n## 八、局限与不足（不吹的部分）\n客观来看，wifit3 目前有几个明确的短板：\n1. **硬件白名单是双刃剑**。Mini-Drivers 架构决定了每一款新卡都要\"从 Linux C 驱动移植到 Python\"一次，扩展成本极高。想用不在列表里的网卡？**直接没戏**。相比 wifite2 那种\"只要内核驱动支持就跑\"的广度，wifit3 是深度换广度。\n2. **Beta 阶段稳定性不可靠**。作者原话：\"Thoroughly tested only on my own machine, with the cards I physically own. Other wireless cards with a supported chipset may not behave as expected.\" 即便同芯片不同批次的产品也可能翻车。\n3. **不能替代 aircrack-ng 全家桶**。Mini-Drivers 只实现了 Monitor Mode 的 RX/TX，**没有 AP/STA 模式**。你没法用 wifit3 起一个假 AP（ Evil Twin 场景仍需要 hostapd 等工具），也没法当普通网卡上网用。\n4. **PixieDust 攻击仍标注为\"Phase 1 & 2 base implementations\"**，意味着虽然能跑，但对某些厂商的变体可能不如 reaver/one-shot 成熟。\n5. **对非英语用户文档较少**。目前 README 与 Release Notes 基本全英文，中文资料稀缺，遇到坑基本要自己啃 issue。\n6. **没有正式许可证文件明示**（至少在主页可见部分未突出展示），商用/二开前需要自行联系作者确认。\n7. **macOS 支持是\"能跑\"而非\"跑爽\"**。macOS 无需装驱动，但部分平台（Apple Silicon）上的 USB 事务在系统节能策略下可能出现莫名断连，需要手动调整 USB 电源设置——这部分官方文档着墨不多。\n---\n## 九、谁最适合用？谁应该绕道？\n**强烈推荐人群**：\n- **红队 / 渗透测试工程师**：需要在客户 Windows 环境里临时做无线审计，不想拖一台 Kali 笔记本。\n- **安全研究者 / CTF 选手**：想要一个轻量、快速、可定制的无线工具链。\n- **运维 / 网络工程师**：做企业 Wi-Fi 信号普查、 rogue AP 检测、隐藏 VAP 排查——这些防御性场景 wifit3 同样胜任。\n- **想学习\"用户态驱动\"或\"Agentic Coding\"的开发者**：这个仓库的 Mini-Drivers 架构和 AI 移植 workflow 本身就是一份宝藏级开源资料。\n- **wifite 系列老用户**：原作者回归，诚意之作。\n**不适合的人群**：\n- **只想用自家普通笔记本内置网卡试一试的小白**——大概率芯片不在白名单内，装完发现根本没反应，体验极差。\n- **需要\"开箱即用\"企业级方案**的人——Beta 状态+单开发者主导+有限测试范围，不适合直接用于生产关键场景。\n- **对合法合规边界认识模糊的人**——见下一条。\n---\n## 十、法律与伦理：这把刀要放在刀鞘里\n无线审计工具天然踩在\"安全研究\"和\"违法行为\"的边界线上，这里必须把话说清楚：\n- **仅在你拥有、或获得了明确书面授权的网络**上使用。对公司而言是 IT 部门的授权书，对 CTF 是比赛规则允许的频段，对自宅是你自己的路由器。\n- 在中国，《刑法》285 条（非法侵入计算机信息系统罪）、《网络安全法》第 27 条，以及《治安管理处罚法》相关条款，都明确禁止未经授权侵入或干扰他人网络系统。**抓别人 handshake、爆别人 WPS PIN 是违法行为，无论你技术多炫**。\n- 在欧美，Computer Fraud and Abuse Act（CFAA）、Computer Misuse Act（UK）同样适用，\"只是玩玩\"不构成抗辩。\n- 防御视角：这款工具也是蓝队理解攻击面的最佳教材——知道自己家 WPS 按钮一按就会被抓 PSK，就该在管理后台关掉 WPS；知道自己 WPA2 handshake 容易被 Passive Capture，就该强制 WPA3-SAE。\n把它当成**理解无线安全攻防的工具**，而不是\"邻居 WiFi 密码破解器\"，是这个开源项目的正确打开方式。\n---\n## 十一、结语与行动建议\nwifit3 是 2025 年无线安全领域最让我眼前一亮的项目之一。它不是又一个 aircrack 的 wrapper，而是**敢于重写底层、并善用 AI 把不可完成的工程变成现实的架构级重构**。Mini-Drivers + Agentic Porting 的组合，让\"同一份 Python 代码在 Linux/Windows/macOS 上直接对无线网卡说母语\"从幻想变成现实。\n**给你的建议**：\n- 如果你是**红队 / 研究者**：从 Release 页面拉一个二进制 + 买一张 ALFA AWUS036NH（百元级）开始玩，投入小、收获大。\n- 如果你是**开发者**：把仓库 clone 下来，重点读 `mini-drivers/` 下的 Python 移植代码和 `verify_pcap.py` 的回放逻辑——这是你能在 GitHub 上找到的最完整的\"AI 驱动移植 C 驱动\"实战范本。\n- 如果你是**蓝队**：用它在自家办公室里做一次自测，看自家 AP 在 Passive Capture 下几秒钟就漏 handshake——然后把 WPS 关掉、把 PMKID 缓存策略收紧。\n- 如果你只是**好奇**：看一遍 README 的 Mini-Drivers 部分和 Credits 列表，理解一项开源驱动工作背后有多少人默默贡献，就值回票价。\n> **一句话总结**：wifit3 是无线审计领域的**架构级续作**——如果你有一张 ALFA 或 TP-Link 兼容卡，给它半小时安装时间，它会还你一个跨平台、零依赖、AI 加持的现代化无线审计体验；如果你只是想破解邻居 WiFi，请直接关掉这个页面，谢谢你。",
+  "type": "project",
+  "dateAdded": "20260925"
+}

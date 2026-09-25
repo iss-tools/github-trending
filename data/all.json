@@ -1,6 +1,125 @@
 {
   "all": [
     {
+      "id": "adeada54-251e-4642-8c75-aadc55bd926e",
+      "url": "https://github.com/derv82/wifit3",
+      "domain": "github.com",
+      "repo": "derv82/wifit3",
+      "description": "wifit3 是 wifite 原作者 derv82 重出江湖的续作，把 Linux 内核的 C 驱动移植为 Python 用户态代码，通过 USB 直接与网卡通信，实现免依赖、跨平台的 WiFi 安全审计。支持 PMKID、握手捕获、WPS 爆破等完整攻击链，但仅支持约 19 种白名单芯片组（如 ALFA AWUS036NH），处于 Beta 阶段，需在授权网络内合法使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T12:06:16.907Z",
+      "metaData": {
+        "forks": "75",
+        "stars": "683",
+        "topics": [
+          "cross-platform",
+          "userland",
+          "wifi-scanner",
+          "wifi-security",
+          "wireless-security"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "",
+        "description": "Wifite but USB-only & cross-platform. Contribute to derv82/wifit3 development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "无线安全",
+          "渗透测试",
+          "开源项目",
+          "WiFi审计",
+          "跨平台工具"
+        ],
+        "cover": "",
+        "title": "wifit3 深度评测：原作者回归之作，把 WiFi 审计从命令行炼狱中解放出来",
+        "ability": [
+          "跨平台无线审计：同一套 Python 代码在 Linux、Windows、macOS 原生运行，绕过操作系统无线栈限制",
+          "用户态 Mini-Drivers：直接通过 libusb 与网卡对话，仅依赖 PyUSB + Textual 三个库，替代 aircrack-ng 全家桶",
+          "完整攻击链覆盖：实时扫描、隐藏 AP 识别、PMKID 收割、WPA/WPA2 握手捕获、WPS PIN 爆破与 PixieDust、WEP 攻击一站式完成",
+          "多网卡并发：支持插多张兼容网卡自动分流扫描与捕获，提升抓包效率",
+          "Hashcat 直通输出：自动生成 .hc22000 格式文件，配合 Vault 功能管理捕获结果"
+        ],
+        "summary": "wifite 原作者 derv82 出品的新生代无线审计工具，用用户态 Mini-Drivers 架构实现 Linux/Windows/macOS 三端原生 WiFi 安全测试。",
+        "category": [
+          "网络安全",
+          "开发工具"
+        ],
+        "suitable": [
+          "红队与渗透测试工程师：需要在 Windows/macOS 环境临时做无线审计",
+          "安全研究者与 CTF 选手：想要轻量可定制的无线工具链",
+          "网络运维与蓝队：做 rogue AP 检测、企业 WiFi 自查与安全加固",
+          "想学习用户态驱动或 Agentic Coding 的开发者：Mini-Drivers 架构与 AI 移植工作流是宝藏范本",
+          "wifite 系列老用户：原作者回归之作，体验架构级升级"
+        ],
+        "description": "wifit3 是 wifite 原作者 derv82 重出江湖的续作，把 Linux 内核的 C 驱动移植为 Python 用户态代码，通过 USB 直接与网卡通信，实现免依赖、跨平台的 WiFi 安全审计。支持 PMKID、握手捕获、WPS 爆破等完整攻击链，但仅支持约 19 种白名单芯片组（如 ALFA AWUS036NH），处于 Beta 阶段，需在授权网络内合法使用。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
+      "id": "4a156b48-526f-4b01-874e-279ec5c46b36",
+      "url": "https://github.com/odoo/odoo",
+      "domain": "github.com",
+      "repo": "odoo/odoo",
+      "description": "Odoo 是基于 Python + PostgreSQL 的开源 ERP 套件，GitHub 3.2 万 Star、700 万用户。社区版免费但财务功能较弱，企业版约 $31/用户/月。相比 SAP 便宜一个数量级，比金蝶用友更开放，但存在跨版本升级昂贵、中文资料断层、生产环境性能调优门槛高等坑，适合有 IT 能力的团队。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-25T11:37:52.672Z",
+      "metaData": {
+        "forks": "33830",
+        "stars": "54584",
+        "topics": [
+          "apps",
+          "business",
+          "erp",
+          "management",
+          "odoo",
+          "odoo-apps",
+          "python"
+        ],
+        "license": "License",
+        "homepage": "https://www.odoo.com",
+        "description": "Odoo. Open Source Apps To Grow Your Business. Contribute to odoo/odoo development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Odoo",
+          "开源ERP",
+          "Python",
+          "企业数字化",
+          "PostgreSQL"
+        ],
+        "cover": "",
+        "title": "Odoo 深度评测：全球最完整的开源一体化 ERP，中小企业绕开 SAP 的务实之选",
+        "ability": [
+          "70+ 业务模块一体化覆盖 CRM、库存、生产、财务、HR、网站全链路",
+          "继承式模块化架构，二次开发通常不到 20 行代码",
+          "LGPL 开源免费，支持 Docker 5 分钟一键部署",
+          "原生支持多语言、多币种、多公司，覆盖 180+ 国家本地化",
+          "OWL 前端框架 + PostgreSQL，架构先进、生态超 3 万扩展模块"
+        ],
+        "summary": "全球最完整的开源一体化 ERP，70+ 业务模块像乐高一样拼装，评分 9/10 但上手门槛不低",
+        "category": [
+          "开发工具",
+          "企业管理",
+          "开源项目"
+        ],
+        "suitable": [
+          "跨境电商与外贸工厂",
+          "50-500 人的离散制造中型企业",
+          "想自建技术团队、需要源码自主的企业",
+          "Python 开发者与技术学习者",
+          "预算敏感的初创团队"
+        ],
+        "description": "Odoo 是基于 Python + PostgreSQL 的开源 ERP 套件，GitHub 3.2 万 Star、700 万用户。社区版免费但财务功能较弱，企业版约 $31/用户/月。相比 SAP 便宜一个数量级，比金蝶用友更开放，但存在跨版本升级昂贵、中文资料断层、生产环境性能调优门槛高等坑，适合有 IT 能力的团队。"
+      },
+      "type": "project",
+      "dateAdded": "20260925"
+    },
+    {
       "id": "9d51a798-c133-4c8a-be0d-3ddfb3a2786d",
       "url": "https://github.com/openbao/openbao",
       "domain": "github.com",
@@ -11,8 +130,16 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:27:55.938Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "580",
+        "stars": "7516",
+        "topics": [
+          "go",
+          "secret-management",
+          "security"
+        ],
+        "license": "MPL-2.0 license",
+        "homepage": "https://openbao.org/",
+        "description": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys. - openbao/openbao"
       },
       "summaryData": {
         "tags": [
@@ -60,8 +187,33 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:21:08.664Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "1245",
+        "stars": "5033",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "backtesting",
+          "daily",
+          "duckdb",
+          "fastapi",
+          "llm",
+          "polars",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading",
+          "react",
+          "screener",
+          "self-hosted",
+          "stock",
+          "stock-analysis",
+          "tdx",
+          "tickflow",
+          "tsp"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源 - shy3130/tick-stock-panel"
       },
       "summaryData": {
         "tags": [
@@ -109,8 +261,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:15:55.654Z",
       "metaData": {
-        "forks": "15904",
-        "stars": "50005",
+        "forks": "15905",
+        "stars": "50013",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -163,7 +315,7 @@
       "createdAt": "2026-09-25T11:11:06.646Z",
       "metaData": {
         "forks": "73",
-        "stars": "277",
+        "stars": "289",
         "topics": [
           "agent-harness",
           "ai",
@@ -228,8 +380,12 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0"
+        "forks": "15123",
+        "stars": "83315",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://paperclip.ing",
+        "description": "The open-source app everyone uses to manage agents at work - paperclipai/paperclip"
       },
       "summaryData": {
         "tags": [
@@ -474,8 +630,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:08:49.633Z",
       "metaData": {
-        "forks": "637",
-        "stars": "4216",
+        "forks": "640",
+        "stars": "4247",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://nvidia.github.io/Model-Optimizer/",
@@ -527,8 +683,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "2844",
-        "stars": "28486",
+        "forks": "2861",
+        "stars": "28547",
         "topics": [
           "agentic-ai",
           "agents",
@@ -637,8 +793,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "30360",
-        "stars": "103284",
+        "forks": "30381",
+        "stars": "103290",
         "topics": [
           "autograd",
           "deep-learning",
@@ -915,8 +1071,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4278",
-        "stars": "70556",
+        "forks": "4306",
+        "stars": "70921",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -969,7 +1125,7 @@
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
         "forks": "4621",
-        "stars": "50456",
+        "stars": "50477",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -1096,7 +1252,7 @@
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
         "forks": "273",
-        "stars": "3281",
+        "stars": "3297",
         "topics": [
           "agents",
           "api-keys",
@@ -1160,8 +1316,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:16:06.897Z",
       "metaData": {
-        "forks": "532",
-        "stars": "10968",
+        "forks": "534",
+        "stars": "11066",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://agentexecutor.io",
@@ -1271,8 +1427,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1548",
-        "stars": "18104",
+        "forks": "1550",
+        "stars": "18121",
         "topics": [
           "board",
           "collaboration",
@@ -1758,8 +1914,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5425",
-        "stars": "37462",
+        "forks": "5427",
+        "stars": "37477",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2029,7 +2185,7 @@
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
         "forks": "1148",
-        "stars": "12587",
+        "stars": "12592",
         "topics": [
           "http3",
           "network-programming",
@@ -2591,7 +2747,7 @@
       "createdAt": "2026-09-18T11:08:46.288Z",
       "metaData": {
         "forks": "4809",
-        "stars": "70280",
+        "stars": "70293",
         "topics": [
           "ai",
           "context-engineering",
@@ -2863,8 +3019,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "582",
-        "stars": "4907",
+        "forks": "583",
+        "stars": "4911",
         "topics": [
           "agent",
           "agentic-ai",
@@ -2993,8 +3149,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "516",
-        "stars": "7171",
+        "forks": "518",
+        "stars": "7182",
         "topics": [
           "agent",
           "browser-use",
@@ -3050,7 +3206,7 @@
       "createdAt": "2026-09-16T14:44:53.859Z",
       "metaData": {
         "forks": "7514",
-        "stars": "69273",
+        "stars": "69275",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://cline.bot",
@@ -3468,8 +3624,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:09:28.271Z",
       "metaData": {
-        "forks": "313",
-        "stars": "6744",
+        "forks": "366",
+        "stars": "7439",
         "topics": [],
         "license": "License",
         "homepage": "https://tinycast.dev",
@@ -4959,7 +5115,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "549",
-        "stars": "6783",
+        "stars": "6788",
         "topics": [
           "agent",
           "ai",
@@ -5019,7 +5175,7 @@
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
         "forks": "1181",
-        "stars": "7945",
+        "stars": "7949",
         "topics": [
           "accounting",
           "billing",
@@ -5502,8 +5658,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4015",
-        "stars": "29876",
+        "forks": "4016",
+        "stars": "29898",
         "topics": [
           "agent",
           "agentic",
@@ -5909,7 +6065,7 @@
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
         "forks": "932",
-        "stars": "3742",
+        "stars": "3745",
         "topics": [
           "ai",
           "ai-agents",
@@ -9233,8 +9389,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26071",
-        "stars": "291397",
+        "forks": "26073",
+        "stars": "291420",
         "topics": [
           "ai",
           "brainstorming",
@@ -9546,7 +9702,7 @@
       "createdAt": "2026-09-03T11:03:57.986Z",
       "metaData": {
         "forks": "21096",
-        "stars": "178054",
+        "stars": "178072",
         "topics": [
           "agent-skills"
         ],
@@ -10276,7 +10432,7 @@
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
         "forks": "3248",
-        "stars": "33669",
+        "stars": "33673",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -11182,7 +11338,7 @@
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
         "forks": "8130",
-        "stars": "62526",
+        "stars": "62532",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -12425,8 +12581,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2691",
-        "stars": "20979",
+        "forks": "2692",
+        "stars": "20994",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -14158,7 +14314,7 @@
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
         "forks": "4147",
-        "stars": "36736",
+        "stars": "36747",
         "topics": [
           "claude-code",
           "mcp",
@@ -14214,8 +14370,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7551",
-        "stars": "140691",
+        "forks": "7812",
+        "stars": "145728",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -14500,8 +14656,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "9975",
-        "stars": "57007",
+        "forks": "9983",
+        "stars": "57093",
         "topics": [
           "agents",
           "ai",
@@ -15715,8 +15871,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T17:38:20.694Z",
       "metaData": {
-        "forks": "4678",
-        "stars": "42279",
+        "forks": "5710",
+        "stars": "50904",
         "topics": [
           "agent",
           "agent-memory",
@@ -16875,8 +17031,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "22702",
-        "stars": "269357",
+        "forks": "22706",
+        "stars": "269378",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -17457,7 +17613,7 @@
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
         "forks": "809",
-        "stars": "8593",
+        "stars": "8596",
         "topics": [],
         "license": "",
         "homepage": "",
