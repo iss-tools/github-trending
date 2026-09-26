@@ -1,6 +1,318 @@
 {
   "all": [
     {
+      "id": "4193d54c-b307-47ab-af6b-d8459131e02b",
+      "url": "https://github.com/vercel/next.js",
+      "domain": "github.com",
+      "repo": "vercel/next.js",
+      "description": "Next.js 是 Vercel 主导的 React 全栈框架，拥有 14 万+ GitHub Stars，被 Netflix、TikTok、Notion 等用于生产。它通过 App Router、RSC、Server Actions 等能力让一个项目搞定前端+后端+API+部署，学习曲线陡峭但生态最大、招聘容易。适合全栈应用，纯静态站可考虑 Astro 等更轻方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:29:20.189Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Next.js",
+          "React",
+          "全栈框架",
+          "开源项目",
+          "服务端渲染"
+        ],
+        "cover": "",
+        "title": "Next.js 深度评测：React 全栈框架的「六边形战士」与它的隐秘代价",
+        "ability": [
+          "五种渲染模式自由切换（SSG/SSR/ISR/PPR/CSR）",
+          "React Server Components 服务端组件，代码不发货到浏览器",
+          "Server Actions 全栈数据操作，无需手写 API",
+          "Turbopack 默认构建，开发与生产速度大幅提升",
+          "Vercel 一键部署与自托管 Docker 双方案支持"
+        ],
+        "summary": "基于 React 的全栈元框架，把 SSR/SSG/RSC 等现代渲染能力打包成开箱即用的开发体验",
+        "category": [
+          "开发工具",
+          "前端框架",
+          "Web 开发"
+        ],
+        "suitable": [
+          "独立开发者 / Indie Hacker",
+          "初创团队 / SaaS 创业者",
+          "企业级前端团队",
+          "需要 SEO 的内容站点开发者",
+          "React 技术栈的全栈工程师"
+        ],
+        "description": "Next.js 是 Vercel 主导的 React 全栈框架，拥有 14 万+ GitHub Stars，被 Netflix、TikTok、Notion 等用于生产。它通过 App Router、RSC、Server Actions 等能力让一个项目搞定前端+后端+API+部署，学习曲线陡峭但生态最大、招聘容易。适合全栈应用，纯静态站可考虑 Astro 等更轻方案。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
+      "id": "3eeffd7e-fae0-42ee-9e48-4e2121304564",
+      "url": "https://github.com/mobile-next/mobile-mcp",
+      "domain": "github.com",
+      "repo": "mobile-next/mobile-mcp",
+      "description": "mobile-mcp 是 Mobile Next 团队开源的 MCP 服务器，把手机屏幕交互抽象成 50 多个工具暴露给大模型。它采用 Accessibility-first 架构，不依赖截图识别，让 AI 快速且确定性地完成点击、输入、装应用、抓崩溃日志等操作。适合做探索性测试、Agentic QA 和自动化工作流，但不适合游戏类或屏蔽无障碍服务的 App。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:24:20.732Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "移动自动化",
+          "Claude",
+          "开源项目",
+          "测试"
+        ],
+        "cover": "",
+        "title": "mobile-mcp 深度评测：让 AI 像人一样操作 iOS 和 Android 手机",
+        "ability": [
+          "通过 MCP 协议让 AI 客户端（Claude Code、Cursor 等）用自然语言操作 iOS/Android 真机与模拟器",
+          "基于 Accessibility Tree 的结构化定位，无需视觉模型，省 token、速度快、定位准",
+          "提供 50+ 原子化工具：点击、滑动、安装/启动 App、抓日志、读崩溃报告、GPS 伪造等",
+          "跨平台统一架构，一套工具同时覆盖 iOS 和 Android，无需为两端分别写脚本",
+          "支持 stdio 与 HTTP 两种接入模式，可部署到 CI/CD 并通过 Bearer Token 鉴权"
+        ],
+        "summary": "一个开源 MCP 服务器，让 Claude、Cursor 等 AI 客户端通过自然语言直接控制真机和模拟器，自动完成手机上的点按、输入、装 App 等操作。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "软件测试"
+        ],
+        "suitable": [
+          "移动端开发者与独立开发者",
+          "QA / 测试工程师",
+          "AI Agent 应用开发者",
+          "RPA / 自动化爱好者",
+          "想快速上手 MCP 生态的技术尝鲜者"
+        ],
+        "description": "mobile-mcp 是 Mobile Next 团队开源的 MCP 服务器，把手机屏幕交互抽象成 50 多个工具暴露给大模型。它采用 Accessibility-first 架构，不依赖截图识别，让 AI 快速且确定性地完成点击、输入、装应用、抓崩溃日志等操作。适合做探索性测试、Agentic QA 和自动化工作流，但不适合游戏类或屏蔽无障碍服务的 App。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
+      "id": "4adc1127-0b6a-46bb-a41b-26dc24e799bf",
+      "url": "https://github.com/actions/runner-images",
+      "domain": "github.com",
+      "repo": "actions/runner-images",
+      "description": "actions/runner-images 是 GitHub Actions 官方托管 Runner 虚拟机镜像的源码仓库，采用 Packer + 分层脚本架构构建，覆盖 Linux/macOS/Windows 全平台与 x64/ARM64 双架构。仓库完全开源、每周滚动更新，README 逐行列出预装软件版本。读懂它就能搞懂 CI 为什么挂、为什么慢，还能 fork 出企业私有镜像。13.1k Star，社区极活跃。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:20:03.888Z",
+      "metaData": {
+        "forks": "3857",
+        "stars": "13207",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "GitHub Actions runner images. Contribute to actions/runner-images development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub Actions",
+          "CI/CD",
+          "开源项目",
+          "DevOps",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "actions/runner-images 深度评测：GitHub Actions 官方 Runner 镜像的“藏宝图”",
+        "ability": [
+          "提供 Ubuntu/Windows/macOS 全平台 CI 镜像的完整构建源码",
+          "预装数百种开发工具（Python/Node/Java/Docker/浏览器驱动等）开箱即用",
+          "README 透明列明每个软件的具体版本，可逐行审计 CI 环境",
+          "支持通过 Packer 自建或克隆企业级私有 Runner 镜像",
+          "通过 Issue 公告镜像变更、弃用计划与 Brownout 时间表"
+        ],
+        "summary": "GitHub Actions 官方托管 Runner 虚拟机镜像的开源构建仓库，是排查 CI 故障和优化构建环境的“真相之源”。",
+        "category": [
+          "开发工具",
+          "DevOps",
+          "云服务"
+        ],
+        "suitable": [
+          "CI 突然挂掉想找根因的工程师",
+          "编写 GitHub Actions workflow 的开发者",
+          "需要自建 Runner 的 DevOps 平台团队",
+          "想精简 CI 配置的开源维护者",
+          "想节省 Actions 分钟数的私有仓库用户"
+        ],
+        "description": "actions/runner-images 是 GitHub Actions 官方托管 Runner 虚拟机镜像的源码仓库，采用 Packer + 分层脚本架构构建，覆盖 Linux/macOS/Windows 全平台与 x64/ARM64 双架构。仓库完全开源、每周滚动更新，README 逐行列出预装软件版本。读懂它就能搞懂 CI 为什么挂、为什么慢，还能 fork 出企业私有镜像。13.1k Star，社区极活跃。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
+      "id": "869ba76f-65f6-471d-87ac-5d5feb8b2a34",
+      "url": "https://github.com/anthropics/claude-code-action",
+      "domain": "github.com",
+      "repo": "anthropics/claude-code-action",
+      "description": "Anthropic 官方开源的 GitHub Action，基于 Claude Code SDK，把 AI 编程 Agent 接入 GitHub 工作流。在 Issue 或 PR 中 @claude，它就能读懂代码库、修复 Bug、审查 PR 并直接提交改动。按 API 用量计费，重度使用需注意成本，部署前建议配置工具白名单。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:15:37.867Z",
+      "metaData": {
+        "forks": "2155",
+        "stars": "8957",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to anthropics/claude-code-action development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "GitHub Action",
+          "AI Code Review",
+          "Anthropic",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Claude Code Action 深度评测：把 Claude 变成 GitHub 仓库里的常驻 AI 工程师",
+        "ability": [
+          "在 Issue/PR 中 @claude 即可触发，自动完成代码审查、Bug 修复与文档生成",
+          "Agent 式自主工作：读代码库、改文件、执行命令、迭代到任务完成后提交 PR",
+          "支持结构化 JSON 输出，可作为 CI/CD 工作流节点联动后续自动化",
+          "支持 Anthropic API、AWS Bedrock、Google Vertex 等多后端认证",
+          "代码运行在自有 Runner 上，工具白名单与权限可控，支持 commit signing"
+        ],
+        "summary": "Anthropic 官方开源的 GitHub Action，在 Issue 或 PR 里 @一下 Claude，它就能自动审查代码、修 Bug、跑测试并直接提交 PR。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps 自动化"
+        ],
+        "suitable": [
+          "开源项目 Maintainer",
+          "独立开发者与小团队",
+          "企业 DevOps / 平台工程团队",
+          "重度 Claude Code 用户",
+          "API / SDK 仓库维护者"
+        ],
+        "description": "Anthropic 官方开源的 GitHub Action，基于 Claude Code SDK，把 AI 编程 Agent 接入 GitHub 工作流。在 Issue 或 PR 中 @claude，它就能读懂代码库、修复 Bug、审查 PR 并直接提交改动。按 API 用量计费，重度使用需注意成本，部署前建议配置工具白名单。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
+      "id": "e897bb01-8a68-47ec-84b5-cef8834ddbc5",
+      "url": "https://github.com/microsoft/vscode",
+      "domain": "github.com",
+      "repo": "microsoft/vscode",
+      "description": "VS Code 是微软 2015 年开源的代码编辑器，采用 Electron + TypeScript 架构，核心亮点是进程隔离的扩展宿主和自研 LSP 协议。它免费、上手快、插件生态庞大，兼容 AI 编码浪潮；但内存占用偏高（空闲 200-800MB），大型企业级项目仍不敌 JetBrains，官方版含遥测且插件质量参差。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:10:55.192Z",
+      "metaData": {
+        "forks": "43467",
+        "stars": "192950",
+        "topics": [
+          "editor",
+          "electron",
+          "microsoft",
+          "typescript",
+          "visual-studio-code"
+        ],
+        "license": "cglicenses.json",
+        "homepage": "https://code.visualstudio.com",
+        "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "VS Code",
+          "微软",
+          "代码编辑器",
+          "插件生态",
+          "开源"
+        ],
+        "cover": "",
+        "title": "VS Code 深度评测：把插件生态做成操作系统级的代码编辑器",
+        "ability": [
+          "跨平台代码编辑，Win/Mac/Linux 全覆盖",
+          "全球最大插件生态 Marketplace",
+          "集成 Copilot 的 AI 智能编码与 Agent 模式",
+          "Remote-SSH/Codespaces 远程云开发",
+          "基于 LSP 协议的多语言智能补全与调试"
+        ],
+        "summary": "微软开源的免费代码编辑器，靠轻量内核加插件生态成为全球5000万开发者的默认工具。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编辑器"
+        ],
+        "suitable": [
+          "编程新手",
+          "全栈工程师",
+          "数据科学家",
+          "远程/云开发工程师",
+          "插件开发者"
+        ],
+        "description": "VS Code 是微软 2015 年开源的代码编辑器，采用 Electron + TypeScript 架构，核心亮点是进程隔离的扩展宿主和自研 LSP 协议。它免费、上手快、插件生态庞大，兼容 AI 编码浪潮；但内存占用偏高（空闲 200-800MB），大型企业级项目仍不敌 JetBrains，官方版含遥测且插件质量参差。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
+      "id": "4a8f4f1e-066d-4948-9a46-6ad0f0616402",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "domain": "github.com",
+      "repo": "tensorflow/tensorflow",
+      "description": "TensorFlow 是 Google Brain 于 2015 年开源的深度学习框架，GitHub Star 长期位居 AI 项目前列。评测深入剖析其 XLA 编译器、Keras 3 多后端架构与全家桶生态（Serving/TFLite/TF.js/TFX），并与 PyTorch、JAX 横向对比。核心结论：学术界份额下滑至约 15%，但工业界仍以 38% 份额领先，是端侧部署与生产落地几乎无替代的选择。文章附版本演进表、避坑指南与四阶段学习路径。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-26T11:06:49.677Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "TensorFlow",
+          "深度学习",
+          "开源项目",
+          "Google",
+          "机器学习"
+        ],
+        "cover": "",
+        "title": "TensorFlow 深度评测：从工业霸主到 Keras 3 多后端时代的转型之路",
+        "ability": [
+          "全链路生产部署：训练、量化、TF Serving 服务化一条龙",
+          "Keras 3 多后端：一套代码可切换 TensorFlow/PyTorch/JAX",
+          "端侧全覆盖：移动端 TFLite、微控制器 TFLite Micro、浏览器 TF.js",
+          "XLA 编译器：算子融合与 JIT 编译，推理提速 1.3-2 倍",
+          "TPU 原生一等公民支持，适合大规模分布式训练"
+        ],
+        "summary": "Google 开源的端到端机器学习平台，虽在学术界被 PyTorch 反超，但仍是工业级部署与端侧 AI 的最完整解决方案。",
+        "category": [
+          "开发工具",
+          "AI 机器学习",
+          "深度学习框架"
+        ],
+        "suitable": [
+          "工业级 AI 工程师",
+          "移动端/嵌入式开发者（TinyML）",
+          "MLOps 平台工程师",
+          "计算机视觉工程师",
+          "技术选型决策者"
+        ],
+        "description": "TensorFlow 是 Google Brain 于 2015 年开源的深度学习框架，GitHub Star 长期位居 AI 项目前列。评测深入剖析其 XLA 编译器、Keras 3 多后端架构与全家桶生态（Serving/TFLite/TF.js/TFX），并与 PyTorch、JAX 横向对比。核心结论：学术界份额下滑至约 15%，但工业界仍以 38% 份额领先，是端侧部署与生产落地几乎无替代的选择。文章附版本演进表、避坑指南与四阶段学习路径。"
+      },
+      "type": "project",
+      "dateAdded": "20260926"
+    },
+    {
       "id": "adeada54-251e-4642-8c75-aadc55bd926e",
       "url": "https://github.com/derv82/wifit3",
       "domain": "github.com",
@@ -131,7 +443,7 @@
       "createdAt": "2026-09-25T11:27:55.938Z",
       "metaData": {
         "forks": "587",
-        "stars": "7855",
+        "stars": "7871",
         "topics": [
           "go",
           "secret-management",
@@ -380,8 +692,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "15273",
-        "stars": "85456",
+        "forks": "15310",
+        "stars": "85869",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -683,8 +995,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "3278",
-        "stars": "30441",
+        "forks": "3296",
+        "stars": "30572",
         "topics": [
           "agentic-ai",
           "agents",
@@ -793,8 +1105,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "30496",
-        "stars": "103336",
+        "forks": "30525",
+        "stars": "103342",
         "topics": [
           "autograd",
           "deep-learning",
@@ -1124,8 +1436,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
-        "forks": "4628",
-        "stars": "50565",
+        "forks": "4630",
+        "stars": "50576",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -1251,8 +1563,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "280",
-        "stars": "3419",
+        "forks": "281",
+        "stars": "3433",
         "topics": [
           "agents",
           "api-keys",
@@ -1370,7 +1682,7 @@
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
         "forks": "3624",
-        "stars": "31855",
+        "stars": "31878",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -1427,8 +1739,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1613",
-        "stars": "18894",
+        "forks": "1615",
+        "stars": "18936",
         "topics": [
           "board",
           "collaboration",
@@ -1914,8 +2226,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5438",
-        "stars": "37588",
+        "forks": "5440",
+        "stars": "37611",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -2185,7 +2497,7 @@
       "createdAt": "2026-09-19T11:26:10.201Z",
       "metaData": {
         "forks": "1149",
-        "stars": "12615",
+        "stars": "12617",
         "topics": [
           "http3",
           "network-programming",
@@ -2809,8 +3121,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "5135",
-        "stars": "78504",
+        "forks": "5141",
+        "stars": "78611",
         "topics": [
           "ade",
           "agent-ide",
@@ -3019,8 +3331,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "591",
-        "stars": "4986",
+        "forks": "596",
+        "stars": "5030",
         "topics": [
           "agent",
           "agentic-ai",
@@ -3149,8 +3461,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:06:58.870Z",
       "metaData": {
-        "forks": "523",
-        "stars": "7276",
+        "forks": "524",
+        "stars": "7307",
         "topics": [
           "agent",
           "browser-use",
@@ -3404,8 +3716,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "24643",
-        "stars": "148132",
+        "forks": "24674",
+        "stars": "148154",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -3510,7 +3822,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3033",
-        "stars": "25641",
+        "stars": "25650",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3624,8 +3936,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:09:28.271Z",
       "metaData": {
-        "forks": "367",
-        "stars": "7490",
+        "forks": "368",
+        "stars": "7511",
         "topics": [],
         "license": "License",
         "homepage": "https://tinycast.dev",
@@ -3677,8 +3989,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:04:24.306Z",
       "metaData": {
-        "forks": "1254",
-        "stars": "21732",
+        "forks": "1258",
+        "stars": "21817",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -5055,8 +5367,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "2977",
-        "stars": "41422",
+        "forks": "2981",
+        "stars": "41491",
         "topics": [
           "agent",
           "agent-skills",
@@ -5115,7 +5427,7 @@
       "createdAt": "2026-09-13T11:09:15.331Z",
       "metaData": {
         "forks": "551",
-        "stars": "6825",
+        "stars": "6832",
         "topics": [
           "agent",
           "ai",
@@ -5175,7 +5487,7 @@
       "createdAt": "2026-09-13T11:03:47.559Z",
       "metaData": {
         "forks": "1183",
-        "stars": "8019",
+        "stars": "8036",
         "topics": [
           "accounting",
           "billing",
@@ -5658,8 +5970,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4052",
-        "stars": "30159",
+        "forks": "4059",
+        "stars": "30214",
         "topics": [
           "agent",
           "agentic",
@@ -6064,8 +6376,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:12:33.943Z",
       "metaData": {
-        "forks": "962",
-        "stars": "3918",
+        "forks": "969",
+        "stars": "3945",
         "topics": [
           "ai",
           "ai-agents",
@@ -8293,8 +8605,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:11:42.252Z",
       "metaData": {
-        "forks": "18603",
-        "stars": "40393",
+        "forks": "18809",
+        "stars": "40680",
         "topics": [],
         "license": "License",
         "homepage": "http://llvm.org",
@@ -8859,8 +9171,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T11:42:15.804Z",
       "metaData": {
-        "forks": "796",
-        "stars": "5334",
+        "forks": "1151",
+        "stars": "7229",
         "topics": [
           "cli",
           "consumer-gpu",
@@ -9524,7 +9836,7 @@
       "createdAt": "2026-09-03T11:14:46.033Z",
       "metaData": {
         "forks": "375",
-        "stars": "5126",
+        "stars": "5141",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://magnitude.dev",
@@ -10431,8 +10743,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:07:29.181Z",
       "metaData": {
-        "forks": "3247",
-        "stars": "33722",
+        "forks": "3248",
+        "stars": "33738",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
@@ -11088,8 +11400,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "4178",
-        "stars": "35574",
+        "forks": "4182",
+        "stars": "35634",
         "topics": [
           "ai",
           "audiobook",
@@ -11337,8 +11649,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8140",
-        "stars": "62596",
+        "forks": "8141",
+        "stars": "62617",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -12045,7 +12357,7 @@
       "createdAt": "2026-08-30T12:04:54.283Z",
       "metaData": {
         "forks": "1696",
-        "stars": "14432",
+        "stars": "14443",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -12097,8 +12409,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6083",
-        "stars": "39075",
+        "forks": "6085",
+        "stars": "39093",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -12334,8 +12646,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10410",
-        "stars": "99142",
+        "forks": "10417",
+        "stars": "99172",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -12581,8 +12893,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2703",
-        "stars": "21122",
+        "forks": "2707",
+        "stars": "21157",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -13099,8 +13411,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "8787",
-        "stars": "43191",
+        "forks": "8806",
+        "stars": "43275",
         "topics": [
           "3d-globe",
           "cesium",
@@ -14172,8 +14484,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4840",
-        "stars": "71919",
+        "forks": "4849",
+        "stars": "72011",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -14370,8 +14682,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7838",
-        "stars": "146109",
+        "forks": "7846",
+        "stars": "146208",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -14656,8 +14968,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "10055",
-        "stars": "57829",
+        "forks": "10058",
+        "stars": "57860",
         "topics": [
           "agents",
           "ai",
@@ -15812,8 +16124,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2955",
-        "stars": "51262",
+        "forks": "2958",
+        "stars": "51297",
         "topics": [
           "adhd",
           "claude-",
@@ -16911,8 +17223,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:27:22.838Z",
       "metaData": {
-        "forks": "3999",
-        "stars": "31324",
+        "forks": "4586",
+        "stars": "34667",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -17141,8 +17453,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:52:12.026Z",
       "metaData": {
-        "forks": "4604",
-        "stars": "33977",
+        "forks": "5240",
+        "stars": "37699",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -17335,8 +17647,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "39975",
-        "stars": "267611",
+        "forks": "39986",
+        "stars": "267710",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -17612,8 +17924,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "811",
-        "stars": "8672",
+        "forks": "812",
+        "stars": "8692",
         "topics": [],
         "license": "",
         "homepage": "",

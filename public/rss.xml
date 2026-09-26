@@ -5,6 +5,48 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>vercel/next.js</title>
+      <link>https://trending.pptboard.com/repo/vercel/next.js.html</link>
+      <description>基于 React 的全栈元框架，把 SSR/SSG/RSC 等现代渲染能力打包成开箱即用的开发体验</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/vercel/next.js.html</guid>
+    </item>
+    <item>
+      <title>mobile-next/mobile-mcp</title>
+      <link>https://trending.pptboard.com/repo/mobile-next/mobile-mcp.html</link>
+      <description>一个开源 MCP 服务器，让 Claude、Cursor 等 AI 客户端通过自然语言直接控制真机和模拟器，自动完成手机上的点按、输入、装 App 等操作。</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/mobile-next/mobile-mcp.html</guid>
+    </item>
+    <item>
+      <title>actions/runner-images</title>
+      <link>https://trending.pptboard.com/repo/actions/runner-images.html</link>
+      <description>GitHub Actions 官方托管 Runner 虚拟机镜像的开源构建仓库，是排查 CI 故障和优化构建环境的“真相之源”。</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/actions/runner-images.html</guid>
+    </item>
+    <item>
+      <title>anthropics/claude-code-action</title>
+      <link>https://trending.pptboard.com/repo/anthropics/claude-code-action.html</link>
+      <description>Anthropic 官方开源的 GitHub Action，在 Issue 或 PR 里 @一下 Claude，它就能自动审查代码、修 Bug、跑测试并直接提交 PR。</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/anthropics/claude-code-action.html</guid>
+    </item>
+    <item>
+      <title>microsoft/vscode</title>
+      <link>https://trending.pptboard.com/repo/microsoft/vscode.html</link>
+      <description>微软开源的免费代码编辑器，靠轻量内核加插件生态成为全球5000万开发者的默认工具。</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/microsoft/vscode.html</guid>
+    </item>
+    <item>
+      <title>tensorflow/tensorflow</title>
+      <link>https://trending.pptboard.com/repo/tensorflow/tensorflow.html</link>
+      <description>Google 开源的端到端机器学习平台，虽在学术界被 PyTorch 反超，但仍是工业级部署与端侧 AI 的最完整解决方案。</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/tensorflow/tensorflow.html</guid>
+    </item>
+    <item>
       <title>derv82/wifit3</title>
       <link>https://trending.pptboard.com/repo/derv82/wifit3.html</link>
       <description>wifite 原作者 derv82 出品的新生代无线审计工具，用用户态 Mini-Drivers 架构实现 Linux/Windows/macOS 三端原生 WiFi 安全测试。</description>
@@ -311,48 +353,6 @@
       <description>让 AI 读写你的 TradingView 图表，并自动编写调试 Pine Script 策略。</description>
       <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/tradesdontlie/tradingview-mcp.html</guid>
-    </item>
-    <item>
-      <title>supermemoryai/supermemory</title>
-      <link>https://trending.pptboard.com/repo/supermemoryai/supermemory.html</link>
-      <description>Supermemory 是一套为 AI 打造的持久记忆层引擎，让 AI 跨会话记住用户偏好和上下文</description>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/supermemoryai/supermemory.html</guid>
-    </item>
-    <item>
-      <title>Fission-AI/OpenSpec</title>
-      <link>https://trending.pptboard.com/repo/Fission-AI/OpenSpec.html</link>
-      <description>用纯 Markdown 把需求、设计、任务管起来，让 AI 编码助手先对齐再写代码</description>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/Fission-AI/OpenSpec.html</guid>
-    </item>
-    <item>
-      <title>stablyai/orca</title>
-      <link>https://trending.pptboard.com/repo/stablyai/orca.html</link>
-      <description>面向AI编码代理的新一代开发环境，支持多CLI代理并行运行与远程协同</description>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/stablyai/orca.html</guid>
-    </item>
-    <item>
-      <title>n8n-io/n8n</title>
-      <link>https://trending.pptboard.com/repo/n8n-io/n8n.html</link>
-      <description>兼顾可视化与代码能力的 Fair-code 工作流自动化平台，适合追求数据主权与 AI 落地的团队。</description>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/n8n-io/n8n.html</guid>
-    </item>
-    <item>
-      <title>coder/coder</title>
-      <link>https://trending.pptboard.com/repo/coder/coder.html</link>
-      <description>基于 Terraform 的自托管云开发环境平台，统一管理环境与 AI 代码代理，注重安全与成本控制。</description>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/coder/coder.html</guid>
-    </item>
-    <item>
-      <title>TencentCloud/Octop</title>
-      <link>https://trending.pptboard.com/repo/TencentCloud/Octop.html</link>
-      <description>腾讯开源的单进程自托管 AI 平台，打通 IM 与 RAG，适合团队打造私有 AI 工位。</description>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/TencentCloud/Octop.html</guid>
     </item>
   </channel>
 </rss>
