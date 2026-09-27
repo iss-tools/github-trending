@@ -1,0 +1,182 @@
+# InfinityLoop1308/PipePipe
+
+[GitHub URL](https://github.com/InfinityLoop1308/PipePipe)
+
+
+## PipePipe 深度评测：一个让 NewPipe「觉醒」的开源视频聚合客户端
+
+> PipePipe 是从 NewPipe 硬分叉的 Android 开源视频客户端，一个 App 无广告地聚合 YouTube、B 站和 NicoNico。
+
+- **Tags**: PipePipe, NewPipe, 开源, 视频客户端, SponsorBlock
+- **Category**: 开源项目, 视频工具, 开发工具
+
+## Details
+
+# PipePipe 深度评测：一个让 NewPipe「觉醒」的硬分叉项目
+> 本篇为开源 Android 项目深度评测，面向开发者和追求「无广告、多平台、重隐私」的重度视频用户。
+---
+## 一句话总结
+**PipePipe 是一个从 NewPipe 硬分叉（Hard Fork）而生的 Android 开源视频聚合客户端，用「更快的迭代、更广的平台覆盖、SponsorBlock 原生集成、弹幕式直播聊天」这四张牌，把 NewPipe 留下的"功能守旧"和"修复滞后"两大痛点一次打包解决。** 它目前同时支持 YouTube、Bilibili、NicoNico，是 F-Droid 与 IzzyOnDroid 仓库中增长最快的 NewPipe 系分支之一。
+---
+## 背景与痛点：为什么要"再造一个 NewPipe"
+要理解 PipePipe，得先理解它要对抗的那条"生态链"——
+主流视频平台的商业逻辑决定了它们的官方 App 必然是**重广告、强算法、闭环生态**：开屏广告、贴片广告、信息流推荐、登录墙、地区锁。NewPipe 在 2015 年给出了漂亮解法——它不走任何官方 API，而是通过逆向工程的 `NewPipeExtractor` 直接抓取网页数据，做到零账号、零追踪、零广告。
+但 NewPipe 有两个长期被诟病的顽疾：
+1. **迭代节奏慢**。主项目对 SponsorBlock、弹幕、登录等"高需求功能"的态度非常保守，许多 Issue 一挂就是两三年。
+2. **多平台乏力**。Bilibili、NicoNico 等非英语平台的支持一直处于"能用但体验粗糙"的状态。
+2022 年初，开发者 **InfinityLoop1308（仓库 ID 为 InfinityLoop1308，F-Droid 包名为 InfinityLoop1309.NewPipeEnhanced）** 决定不再等待，直接 **Hard Fork** ——这不是普通的"跟着上游跑"的分叉，而是**彻底脱离 NewPipe 主线、独立演进**。
+作者在 README 里写得很清楚：
+> "Due to differences in development philosophy, I forked NewPipe in early 2022 and began independent development based on it. PipePipe neither receives updates from NewPipe nor pushes updates to NewPipe."
+这与另一个知名分支 Tubular 形成鲜明对比——Tubular 会持续跟踪上游 NewPipe，而 PipePipe 走的是"自研自走"路线，换来的是**更激进的决策权与更快的修复速度**。
+---
+## 核心亮点与功能剖析：四张"王牌"
+### 王牌 1：SponsorBlock 原生集成（且同时覆盖 YouTube 和 Bilibili）
+这是 PipePipe 最具"杀手锏"气质的功能。SponsorBlock 是一个由社区众包标注的数据库，用于自动跳过视频中的"恰饭片段"、"自我推销"、"非音乐部分"等内容。NewPipe 官方迟迟未集成，而 PipePipe **在 YouTube 和 Bilibili 双平台都打通了**这一能力，相当于给 B 站用户也装上了"广告快进键"。
+### 王牌 2：弹幕式直播聊天
+这一功能是 PipePipe 的"血统"体现——它吸纳了 AioiLight 贡献的 NicoNico 相关代码，把**YouTube 直播、Bilibili 的弹幕、NicoNico 的评论**统一渲染为从右向左飘过的"弹幕流"。对于从 B 站 / N 站过来的用户，这是一个"终于像样的"体验，也是 YouTube 直播原生不支持的。
+> 💡 用大白话说：你在 YouTube 上看直播，评论区是侧边栏一列列表；PipePipe 把它变成横穿屏幕的弹幕——就像把 YouTube 直播"驯化"成了 B 站直播间。
+### 王牌 3：登录 Cookie 的"手术刀式"使用
+大多数第三方客户端要么干脆不支持登录（功能阉割），要么全面登录（隐私失控）。PipePipe 给出了第三种解法——**"Cookie Functions" 配置项**，你可以指定 Cookie 仅在哪些场景被使用，例如"仅在获取播放流时使用 YouTube Cookie"。这是对"隐私 vs 功能"两难问题的工程学解法。
+### 王牌 4：与"NewPipe 生态"原生兼容的功能清单
+把官方 README 里散落的功能串一遍，你会发现几乎每一条都对应着一个真实痛点：
+- **ReturnYouTubeDislike**：恢复 YouTube 踩数显示
+- **AV1 / VP9 编解码器支持**：相同画质下更省流量
+- **音乐播放器模式 + 后台播放**：视频后台变成"网易云音乐式"封面
+- **Sleep Timer（睡眠定时器）**：睡前听播客党的刚需
+- **高级过滤**：按关键词/频道/Shorts/付费视频拉黑内容
+- **本地播放列表搜索与排序**：解决官方播放列表"没法找东西"的问题
+- **整列表下载 + 批量下载频道**
+**这些功能没有一个需要付费，也没有任何一个需要广告位**——全部来自开源社区自发贡献。
+---
+## 技术栈与架构解析：NewPipeExtractor 的抽象艺术
+PipePipe 继承了 NewPipe 的整体架构，理解它要抓住三个关键层次：
+### 1. NewPipeExtractor：逆向工程的"协议层"
+这是整个项目的核心抽象层。它把 YouTube、Bilibili、NicoNico、SoundCloud、PeerTube 等平台的**网页 HTML / 内部 API**，统一抽象成 `StreamingService` 接口。每个平台实现一个 `Service` 类，对外暴露统一的 `getSearchExtractor`、`getStreamExtractor`、`getChannelExtractor` 等方法。
+**打个比方**：这就像插线板的标准 —— 不管后面接的是 YouTube 还是 Bilibili 的"电"，前面的 App 只需要认识"插头形状"就够了。这也是为什么 PipePipe 能快速添加新平台、新功能而不必重写底层。
+### 2. Android 客户端层：Java + Kotlin 混合
+PipePipe 主 App 是 Java 与 Kotlin 混合的项目，构建系统为 Gradle，UI 采用 Android 原生 View 体系（非 Compose）。这种"保守"选择让它在低端设备上运行更流畅，但也意味着代码可读性不如纯 Kotlin 项目。
+### 3. 关键第三方依赖：ExoPlayer + OkHttp + Jsoup
+- **ExoPlayer**（Google 官方媒体播放器）负责实际的视频渲染，支持 AV1/VP9 硬解
+- **OkHttp** 处理 HTTP 请求与 Cookie 管理
+- **Jsoup** 用于解析 HTML 页面（NewPipeExtractor 的底层工具）
+### 4. SABR 支持：技术深度的证明
+2025 年 YouTube 引入了 SABR（Server ABR，一种新的流协议加密），大量第三方客户端瞬间"失明"。PipePipe 的贡献者 **Priveetee 专门研究并实现了 SABR 支持**，这是 PipePipe 能在同类项目中"活着"的关键。这也侧面说明它**不是简单的"套壳项目"，而是有真实的逆向工程能力**。
+---
+## 上手门槛与部署体验：小白 5 分钟跑通
+PipePipe 是一个**终端用户 App 而非开发框架**，"部署"的含义就是"装到手机上"。三条路径：
+### 路径 A：F-Droid 主仓库（最推荐）
+```
+1. 安装 F-Droid 客户端：https://f-droid.org
+2. 搜索 "PipePipe"
+3. 点击安装，完事
+```
+优点是**自动更新**，且 F-Droid 会从源码重新编译，供应链安全有保障。
+### 路径 B：IzzyOnDroid 仓库（更新更快）
+在 F-Droid 客户端中手动添加仓库 `https://apt.izzysoft.de/fdroid/repo` 后搜索安装。**新版本上线比主仓库快几天到几周**。
+### 路径 C：GitHub Releases 直装 APK
+从 `https://github.com/InfinityLoop1308/PipePipe/releases` 下载 APK 直装。适合追最新版的用户，但要自己负责后续更新。
+### 开发者：从源码构建
+```bash
+git clone https://github.com/InfinityLoop1308/PipePipe.git
+cd PipePipe
+./gradlew assembleDebug
+# 输出 APK 位于 app/build/outputs/apk/debug/
+```
+前置要求是 Android Studio + JDK 17，**不需要 Firebase、不需要任何 API Key**——这体现了它"零云依赖"的架构哲学。
+### 新增一个平台 Service 的代码骨架（给开发者）
+```java
+public class MySiteService extends StreamingService {
+    @Override
+    public String getServiceInfo() {
+        return "MySite";
+    }
+    @Override
+    public Extractor getStreamExtractor(String url) {
+        return new MySiteStreamExtractor(url);
+    }
+    @Override
+    public SearchExtractor getSearchExtractor(SearchQueryHandler query) {
+        return new MySiteSearchExtractor(query);
+    }
+    // ...
+}
+```
+这是 NewPipeExtractor 的标准扩展模式，**作者明确表示"不接服务请求"但欢迎社区自己 Fork 后扩展**。
+---
+## 目标人群与收益：三类用户画像
+| 用户类型 | 核心痛点 | PipePipe 带来的收益 |
+|---------|---------|-------------------|
+| **隐私极客 / GrapheneOS 用户** | 讨厌官方 App 的追踪与广告 | 零 Google 服务依赖、零追踪、开源可审计 |
+| **多平台重度用户** | YouTube + B 站 + N 站要装 3 个 App，每个都带广告 | 一个 App 统一体验，且 B 站也享受 SponsorBlock |
+| **B 站老用户** | B 站官方 App 越来越重、播放体验臃肿 | 轻量客户端 + SponsorBlock + 弹幕 + 后台播放，"用 YouTube 的方式刷 B 站" |
+| **开发者 / 研究者** | 想了解逆向工程与 Android 架构 | 现成的 `NewPipeExtractor` 抽象案例 + 活跃的 PR/Issue 讨论 |
+---
+## 竞品对比：它在"NewPipe 生态圈"里的位置
+这是一个需要认真梳理的赛道，我做了横向对比：
+| 项目 | 与上游关系 | SponsorBlock | 多平台 | 登录支持 | 更新节奏 | 定位 |
+|------|----------|-------------|--------|---------|---------|------|
+| **NewPipe** | 原版 | ❌ 未集成 | YouTube/PeerTube/SoundCloud 等 6+ | ❌ | 稳定但慢 | 保守派经典 |
+| **Tubular** | 软分叉（跟踪上游） | ✅ | 同 NewPipe | ❌ | **已明显滞后** | NewPipe + SponsorBlock |
+| **PipePipe** | **硬分叉（独立演进）** | ✅（含 B 站） | YouTube/B 站/N 站 | ✅（可选） | **高频** | 功能激进派 |
+| **LibreTube** | 独立项目（基于 Piped） | ✅ | YouTube 为主 | ❌ | 快 | 服务端代理架构 |
+| **Grayjay** | 独立闭源项目 | ✅ | 20+ 平台 | ✅ | 快 | 功能最强，但闭源 |
+| **ReVanced** | 补丁方式改造官方 App | ✅（插件） | YouTube 官方 | ✅ | 快 | 改造官方 App |
+**选型建议**：
+- **"我就是要 SponsorBlock + 纯净体验，还要 B 站"** → **PipePipe**
+- **"我要最激进的 YouTube 功能，愿意用闭源 App"** → **Grayjay**
+- **"我想把官方 App 保留原样，只是去掉广告"** → **ReVanced**
+- **"我想走 Piped 服务端代理，多设备同步"** → **LibreTube**
+- **"我最求稳定，不追求新功能"** → **NewPipe 原版**
+2025 年 YouTube 多次"收紧"导致 Tubular 更新滞后时，大量 Tubular 用户在 GitHub Issue 中公开宣布转向 PipePipe，且反馈"几乎所有我日常用的功能都能正常工作"——这是 PipePipe 竞争力最真实的一手注脚。
+---
+## 社区活跃度与生命力
+- **更新频率**：从 F-Droid 构建日志看，PipePipe 保持月度级别的版本迭代，2025 年已发布到 v5.x 系列
+- **Issue 响应**：从 GitHub Discussion 看，作者对 YouTube 破坏性变更（如 SABR 加密）会发布公告和临时 Workaround，响应积极
+- **贡献者生态**：至少有 Priveetee（SABR 研究）、AioiLight（NicoNico 代码）等长期贡献者
+- **文档**：由社区成员 @Priveetee 维护独立 Wiki（PipePipe Wiki）
+- **资金**：Ko-Fi + Liberapay 双渠道捐赠，非商业化项目
+**生命力评级**：⭐⭐⭐⭐（4/5）——活跃但仍是单核心维护者模式，比 NewPipe 主项目的社区规模小一个量级，抗风险能力较弱。
+---
+## 局限与不足：客观的"坏话"
+一个负责任的评测必须把短板摆到台面上：
+### 1. **抗"平台打击"能力有限**
+YouTube 在 2025 年推行 SABR + 登录态加密后，PipePipe 在**登录态下的提取曾出现故障**。虽然 Priveetee 快速修复，但这暴露了一个残酷现实：**逆向工程客户端永远活在平台的"猫鼠游戏"里**，任何一次 YouTube 改版都可能让你"一夜回到解放前"。这是所有 NewPipe 系项目的宿命。
+### 2. **无 Chromecast / 远程投屏**
+NewPipe 系架构决定了它不走官方 API，因此**无法使用 Chromecast、DLNA 投屏**。家里有电视盒子的用户会感到明显的功能缺失。
+### 3. **无 iOS 版本**
+纯 Android 项目，iPhone 用户彻底无缘。
+### 4. **社区规模小于 NewPipe 主项目**
+遇到 Bug 时，能搜索到的中文/英文讨论、StackOverflow 答案都比 NewPipe 少。新人踩坑成本相对高。
+### 5. **Hard Fork 的代价：不再兼容 NewPipe 生态**
+PipePipe 不接受来自 NewPipe 的上游更新，意味着 **NewPipe 未来添加的新平台、新优化，PipePipe 需要自己重新实现**。这是一把双刃剑——短期看是"自由"，长期看可能造成"重复造轮子"。
+### 6. **单核心维护者风险**
+虽然有社区贡献者，但**核心决策权仍集中在 InfinityLoop1308 一人手上**。如果作者哪天弃坑，项目可能瞬间停滞（这在开源界太常见了）。
+### 7. **部分功能在中国大陆网络环境下不稳定**
+YouTube / NicoNico 在中国大陆需要代理才能访问，PipePipe 本身不内置 VPN 功能，这需要用户自己解决网络环境。
+---
+## 结语与行动建议：终极评判
+**PipePipe 是当前 NewPipe 生态里"功能 × 活跃度 × 多平台支持"综合分最高的分支之一。** 它不是一个"炫技项目"，而是一个"解决真问题"的工程作品——从 SponsorBlock 的双平台集成，到 SABR 协议的逆向支持，再到弹幕式直播聊天的统一渲染，每一处都能看出作者是真正的"重度用户"。
+**给你的三个行动建议**：
+1. **如果你只用 YouTube 且不想折腾** → 直接装 NewPipe 原版就够了
+2. **如果你是 B 站重度用户 + YouTube 用户** → PipePipe 几乎是"唯一解"级别的推荐，一个 App 替代三个
+3. **如果你想为开源做贡献** → PipePipe 的 Issue 列表比 NewPipe 主项目友好得多，从修一个翻译 Bug 入手是不错的起点
+**一句话送给犹豫的人**：PipePipe 不会让你惊艳，但会让你"离不开"。它属于那种**装完一周之后你才会意识到它有多好**的工具类开源软件——就像当年第一次用 uBlock Origin 的感觉。
+> 🔗 项目主页：https://github.com/InfinityLoop1308/PipePipe
+> 🔗 官网：https://pipepipe.dev
+> 🔗 F-Droid：https://f-droid.org/en/packages/InfinityLoop1309.NewPipeEnhanced
+---
+<details>
+<summary>📖 附录：常见问题 FAQ（点击展开）</summary>
+**Q1：PipePipe 合法吗？**
+PipePipe 本身是 GPL v3 开源软件，完全合法。它通过逆向网页接口访问公开内容，类似于浏览器访问网页，灰色地带但长期未被追究。个别地区（如德国）已有过针对 YouTube 逆向客户端的法律讨论，使用前请了解本地法规。
+**Q2：登录后会封号吗？**
+理论上有风险。PipePipe 的 Cookie 设计已经把使用范围最小化（仅获取播放流），但任何第三方客户端访问平台都存在轻微的账号风险。**建议用小号登录**，主号慎用。
+**Q3：和 ReVanced 哪个好？**
+- ReVanced 是"给官方 App 打补丁"，保留官方全部功能（含推荐算法），但闭源+改造流程较复杂
+- PipePipe 是"全新客户端"，无推荐算法干扰、更纯净，但功能上（如 Chromecast）有缺失
+- 重隐私选 PipePipe，重"官方体验"选 ReVanced
+**Q4：为什么不能像 NewPipe 一样直接从官方仓库拉取上游更新？**
+因为 Hard Fork 意味着两条代码线已经分叉得太远，合并上游会产生大量冲突。这是 PipePipe 为了"快速迭代"付出的长期代价。
+**Q5：iOS 用户有什么替代？**
+目前 iOS 侧没有完全对等的项目。可关注 **Yattee**（支持 Invidious/Piped 后端）和 **uYou+**（越狱/侧载方案），但都远不如 PipePipe 完整。
+</details>

@@ -1,0 +1,113 @@
+# willfaust/Madeira
+
+[GitHub URL](https://github.com/willfaust/Madeira)
+
+
+## Madeira 深度评测：未越狱 iPhone 跑通 Windows PC 游戏的开源炼金术
+
+> 首个在未越狱 iPhone 上跑通原生 x86-64 Windows 游戏的 GPL-3.0 开源研究项目，曾登顶 GitHub Trending。
+
+- **Tags**: iOS, Wine, 二进制翻译, 游戏模拟, GitHub Trending
+- **Category**: 开源项目, 开发工具, 系统研究
+
+## Details
+
+# Madeira 深度评测：在未越狱 iPhone 上跑通 Windows PC 游戏的"炼金术"
+**一句话总结：Madeira 是一个 GPL-3.0 开源研究项目，通过 FEX-Emu 二进制翻译 + Wine（ARM64EC）+ DXMT 图形转译的三层"炼金术"，首次在完全未越狱的 iPhone 上跑通了原生 x86-64 Windows PC 游戏，并于 2026 年 9 月 27 日登上 GitHub Trending 第 1 位——它还不是一个"能装上就玩游戏"的产品，但它是一座活的底层技术教科书。**
+---
+## 一、背景与痛点：为什么"iPhone 玩 PC 游戏"这么难？
+在过去二十年里，苹果的 iOS 生态对"运行别人的代码"设了三道几乎无法逾越的墙：
+1. **沙箱 + JIT 禁用**：iOS 默认禁止应用在运行时生成并执行机器码，而任何模拟器、JVM、JavaScript 引擎、二进制翻译器都离不开 JIT。
+2. **架构鸿沟**：iPhone 是 ARM64，Windows PC 游戏几乎全部是 x86-64 指令集，且调用 DirectX（D3D9/11/12）图形栈——而 iOS 只有 Metal。
+3. **进程模型限制**：经典 Wine 依赖 `wineserver` 作为独立进程跑 Win32 同步原语，iOS 的 App Sandbox 不允许一个应用内部再起一个独立进程。
+过去的妥协方案各有硬伤：UTM 在 iOS 上是全系统虚拟机，没有 GPU 加速只能跑极老的系统；PlayCover 只能跑 ARM 版 Mac Catalyst 应用，跑不了 x86 Windows 游戏；越狱方案（如 odysseyra1n）让一部分极客能跑 Wine，但把绝大多数用户挡在门外。
+Madeira 解决的核心问题就是：**不越狱、不虚拟机、不依赖商业闭源组件，把"x86-64 Windows PE + D3D11"这条完整链路，在 iOS 应用的沙箱内以单 Mach 进程的方式原生跑起来。**
+---
+## 二、核心亮点与技术剖析
+### 亮点 1：三重"炼金术"的精妙组合
+用一个比喻理解 Madeira 的核心栈：
+- **FEX-Emu 是"实时口译员"**：把 x86-64 指令流即时翻译成 ARM64。它的精妙之处在于"用户态翻译 + JIT 缓存"，让翻译开销可控。
+- **Wine（ARM64EC 模式）是"文化适配官"**：Windows PE 中的 ARM64EC 模块是微软为"ARM Windows 设备跑 x86 程序"设计的 ABI，Wine 把 Win32 API 调用翻译成对 iOS 侧原语（Mach、POSIX）的调用。
+- **DXMT 是"画笔翻译器"**：把 D3D11 的绘图调用翻译成 Metal 命令缓冲。DXMT 原本是 3Shain 面向 macOS/Wine 写的，Madeira 把它 fork 后移植到 iOS。
+### 亮点 2：单 Mach 进程 + wineserver 线程化
+经典 Wine 是多进程架构（每个 Windows 进程对应一个 Unix 进程，wineserver 单独跑）。iOS 不允许，于是 Madeira 做了一次**架构级的"关节置换"**：整个 Windows 用户态 + wineserver 都被塞进一个 Mach 进程，wineserver 降级为线程。这是理论上可行、工程上极其罕见的改造，也是它能"装进"iOS App 沙箱的关键前提。
+### 亮点 3：Remote Metal —— 把 iPhone 变成 Metal 终端
+`research/remote-metal` 是仓库里最富想象力的一个子项目：在虚拟化 iOS 环境（vphone VM）中，把 guest 侧的 Metal 调用通过自定义线缆协议**转发到 macOS 主机的真实 GPU**（比如 M4 Max）上渲染，再回传帧。
+它的工程严谨度值得专门称赞：
+- `winemetal` 的 117 个 C 函数被作为"语义接缝"，但作者识别出 Obj-C 指针不能跨机传输，改为**代际标记的句柄表索引**，stale 句柄会被明确拒绝而不是错拿复用对象。
+- 用 `schema/wire_schema.py` 作为**单一真相源**生成两端共用的 `wmt_wire.h`，每一行记录布局都带 `_Static_assert`，避免"只有一端升级"导致的字节级错位。
+- 加上 **Floyd 环检测**遍历 guest 的指针链表，防止被破坏的 `next` 指针造成死循环。
+- 实测：**1000 次 draw 的开销与 1 次几乎一致**（0.23 → 0.28 ms），证明"命令数不是瓶颈，往返才是"，这为批量化设计提供了量化依据。
+### 亮点 4：madeira-d3d12 —— 原生 D3D12 到 Metal 的探索
+这是仓库里另一条前瞻线：不依赖 Apple 商业的 D3DMetal，而是用 Apple 官方的 **Metal Shader Converter**（MSC）在运行时把 DXIL 转成 Metal，并根据应用真实创建的根签名进行解析（从 DXBC 中的 RTS0 chunk 剥离，而不是瞎猜）。
+截至仓库最新提交，M0 到 M5 里程碑全部通过：26/26 macOS、26/26 iOS VM、27/27 物理机 A15、90/90 运行时 DXIL 转换，一个可滚动的立方体已经在两台设备上跑起来。这份研究文档还记录了几个非常实战的"踩坑笔记"——比如 **Apple9 与 Metal3 在 macOS 上字节一致，但在 iOS 上字节不同**，如果作者只凭 macOS 观察就"裁剪缓存键"，后面就会埋雷。
+### 亮点 5：作者 Will Faust 的"真实力"
+翻一下作者的仓库列表能看出这不是一个 NPM 用户随手写的小项目：
+- **TouchSynthesis**（Swift，20 星）：在 iOS 上做"触摸合成"的实验，这是让 Windows 游戏"读到"屏幕点击的关键配套研究；
+- 曾 fork 并维护 **Skyline**（Switch 模拟器）以及配套的 title-meta 可玩性数据库——说明作者有模拟器生态的实战经验；
+- **Boxedwine**（x86 模拟器）的 fork 也在列表里，说明对 x86 解释执行这条路有长期思考。
+一个独立开发者，同时要搞定 Wine、FEX-Emu、DXMT、Metal、Xcode codesign、StikDebug JIT 触发……这是**极少数人能凑齐的技能栈**。
+### 亮点 6：对"AI 辅助开发"的诚实标注
+README 专门写了一段值得所有开源维护者抄作业的话："The forks here contain substantial AI-assisted work. FEX-Emu's contribution policy states that AI must not be used to generate code for contributions to that project, so **do not submit AI-generated changes from this fork upstream**."
+作者不仅承认代码里大量使用了 AI（研究文档中出现了 "Codex, 2026-09-08" 的署名），还主动遵守上游 FEX-Emu 的"禁止 AI 生成代码"贡献政策，避免污染上游。在 2026 年"AI 写代码是不是原创"的争议背景下，这种边界感非常专业。
+---
+## 三、上手门槛与部署体验
+### 构建一条龙（不简单，但自洽）
+Madeira 的构建被切分成多条链路，每条链在 `build/<name>/build.sh` 里：
+- `crypto-unix` / `gnutls-ios` / `freetype-ios`：Unix 侧依赖
+- `fex-ios` / `fex-arm64ec`：FEX 两种模式
+- `dxmt-ios` / `dxmt-tests`：DXMT 移植
+- `wine-pe` / `ntdll-unix` / `win32u-unix` / `wineios-drv` / `wineserver`：Wine 全家桶
+- `madeira-d3d12` / `madsync` / `tftrace`：Madeira 自研组件
+- `host-tests` / `proc-tests` / `x64-tests` / `net-tests`：测试
+克隆命令是：
+```bash
+git clone --recurse-submodules https://github.com/willfaust/Madeira
+```
+注意：**`FEX`、`wine`、`research/dxmt` 都是指向 fork 的 submodule**，clone 上游原版是编译不过的。
+### 运行侧的硬要求
+- **非越狱 iPhone**，作者开发机是 A15（iPhone 13 Pro）
+- **JIT 必须通过调试器附加**来启用，用的是 [StikDebug](https://stikdebug.xyz)，它需要一次配对文件、LocalDevVPN 回环 VPN、以及 SideStore/AltStore 做侧载。
+- **免费 Apple ID 签名 7 天过期**，需要每周重签；好消息是 App 容器数据在重装后保留，所以 Wine prefix 和存档不会丢。
+- **不能上架 App Store**，因为 JIT + 调试器附加这条路径就是苹果明令禁止的。这是结构性限制，不是"以后会优化"的问题。
+### Microsoft Visual C++ 运行库要自备
+出于版权原因，MSVC 运行库 DLL **不随仓库分发**，用户需要按 `tools/fetch-vcruntime.md` 自行下载并注入 Wine prefix。
+---
+## 四、目标人群与收益
+| 人群 | 能得到什么 | 现在该不该上 |
+|---|---|---|
+| **系统级 / 模拟器研究者** | 一份"如何在 iOS 上做二进制翻译 + 图形转译"的端到端活教材，比论文可操作 | 强烈推荐 |
+| **iOS 逆向 / 底层开发者** | JIT 启用、codesign、Mach-O、Metal IPC、ARM64EC ABI 的一手实践 | 推荐 |
+| **AI 辅助开发实践者** | 一个大规模使用 Codex 完成系统工程的公开样本，能看到 AI 的真实边界 | 值得研读 |
+| **普通游戏玩家** | "iPhone 玩 PC 游戏"的体验 | **暂时不建议**——只有少数游戏能玩 |
+| **开源项目维护者** | 一份教科书级的 LICENSE / THIRD-PARTY-NOTICES / fork 许可证管理实践 | 推荐借鉴 |
+---
+## 五、竞品对比：它在 iOS"跑别家代码"图谱中的位置
+| 维度 | **Madeira** | UTM (iOS) | PlayCover | Whisky / CrossOver (macOS) |
+|---|---|---|---|---|
+| 目标平台 | iPhone（未越狱） | iPhone/iPad 虚拟机 | iPhone/iPad | macOS |
+| 运行架构 | x86-64 Windows → ARM64 iOS | x86/x64 整机虚拟化 | ARM Mac 应用 | ARM Windows |
+| 图形栈 | D3D11 via DXMT → Metal | 无 GPU 加速（无 GPU 虚拟化） | MetalKit，兼容性有限 | D3DMetal（商业、闭源） |
+| JIT 需求 | 必须（StikDebug） | 必须 | 不需要 | 不需要 |
+| 完成度 | 研究级 | 成熟（但 iOS 性能受限） | 成熟但场景窄 | 商业级 |
+| 开源 | **GPL-3.0 全链路** | GPL-3.0 | AGPL-3.0 | 闭源（CrossOver） |
+**Madeira 的独特竞争力**在于它是**唯一一个在未越狱 iPhone 上跑原生 x86-64 Windows 游戏的开源方案**，并且**不依赖任何商业闭源组件**（比如 Apple 的 D3DMetal），这条链路每一层都可以被独立审计和复用。
+---
+## 六、局限与不足（必须说清楚）
+1. **游戏兼容性仍然极窄**：官方 README 明确写了 Thumper 和 ULTRAKILL 可玩，Marvel Cosmic Invasion 偶发 unexplained termination 且控制不稳，其他游戏多为"能进游戏但帧率很低"。这不是"调调设置就能跑"的产品。
+2. **研究仓 ≠ 产品仓**：作者本人在 README 里写"**This is a research project, not a product: expect rough edges, per-title quirks and breaking changes**"。指望它像 CrossOver 一样一键开游戏会失望。
+3. **JIT 依赖链脆弱**：StikDebug 需要配对文件 + 回环 VPN，iOS 26 之后的兼容性被反复打破，目前只有 UTM、MeloNX、DolphiniOS 等少数应用在官方支持列表里。
+4. **免费签名 7 天过期**：没有付费开发者账号，就得每周重签一次。容器数据不丢是底线，但操作成本真实存在。
+5. **构建复杂度极高**：多链路编译、submodule 指向 fork、PE 模块和 Unix 模块交叉编译、Xcode 签名…… 对没做过交叉编译的人来说，第一晚大概率跑不起来。
+6. **fork 分叉的长期隐患**：FEX-Emu 禁止 AI 生成代码上游，Madeira 的 fork 含大量 AI 代码，**永远无法合并回上游**。这意味着 Wine / FEX / DXMT 的每次演进，都要手动 rebase 到 Madeira fork 里——长期维护成本会被指数级放大。
+7. **法律与合规灰色**：运行商业 Windows 游戏涉及反编译与 DRM 规避的灰色地带；MSVC 运行库不能分发，也是法律现实。
+8. **触控输入方案还不成熟**：TouchSynthesis 只是"实验"，Windows 游戏的键鼠输入映射到触屏尚无杀手级方案，但这是日常可玩性的真正瓶颈。
+---
+## 七、结语与行动建议
+**客观评价：Madeira 是 2026 年 iOS 模拟生态里最具技术含金量的开源项目之一，它证明了"不越狱 iPhone 原生跑 x86 Windows 游戏"不是幻想而是工程问题。但它距离"日常可用的 PC 游戏模拟器"至少还有 1–2 年——期间它更像一座活的实验室，而不是一件商品。**
+**分角色的行动建议：**
+- **系统 / 图形研究者**：直接 `git clone --recurse-submodules`，优先读 `research/remote-metal/README` 和 `research/madeira-d3d12/README`——这两份文档本身就是两篇高质量的工程报告，无论你是否参与 Madeira，里面的设计决策（句柄代际、缓存键、Floyd 环检测、_Static_assert 布局断言）都能直接迁移到任何 IPC / GPU 转译项目。
+- **iOS 开发者 / 学生**：从 `TouchSynthesis` 入手更容易，它独立、短小、Swift，可以学会"在沙箱内伪造 iOS 事件"这一稀缺技能。
+- **玩家**：关注但不安装。等 ULTRAKILL / Thumper 之外出现第二款"可完整通关"的 3A 游戏，或者等一个整合好的 .ipa，再上手。
+- **想贡献者**：看清楚 README 的许可证矩阵，**不要把 Madeira fork 里的改动提回 FEX-Emu 上游**——那是作者明确写出的红线。
+如果说 Deep Link 的时代是"苹果决定什么能跑"，那 Madeira 代表的是另一种未来：**在沙箱的缝隙里，用工程把"x86 + D3D11"这块异乡的土壤整个移植到 iPhone 上。**它现在只开出了两朵花（Thumper、ULTRAKILL），但根系已经扎到了所有该到的地方。

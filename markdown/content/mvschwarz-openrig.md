@@ -1,0 +1,159 @@
+# mvschwarz/openrig
+
+[GitHub URL](https://github.com/mvschwarz/openrig)
+
+
+## OpenRig 深度评测：用一份 YAML 把 Claude Code 和 Codex 编成常驻团队的多 Agent 编排控制平面
+
+> OpenRig 是一个开源的本地多 Agent 编排工具，用 YAML 声明式地把 Claude Code、Codex 等会话组织成可持久化、可恢复、可共享记忆的团队拓扑。
+
+- **Tags**: OpenRig, 多Agent编排, Claude Code, Codex, 开源工具
+- **Category**: AI 编程, 开发工具, 开源项目
+
+## Details
+
+# OpenRig 深度评测：把散落一地的 AI Agent 会话，拧成一支"不散伙的团队"
+## 一句话定位
+**OpenRig 是一个本地化的多 Agent 编排控制平面——它管不住模型，但管得住你的整个 Agent 编队。** 如果说 tmux 是终端的复用器、Kubernetes 是容器的调度器，那 OpenRig 想做的就是 AI Coding Agent 界的 K8s：用一份 YAML 把 Claude Code 和 Codex 的"散兵游勇"编成有编制、有岗位、可关机、可复活的常备团队，一条 `rig up` 命令整队开拔，一条 `rig down` 整队休战，重启之后队伍原样归位。
+它刚刚冲上 GitHub Trending TypeScript #6（2026 年 9 月 25/26 日，单日 +80~86 stars），截至 9 月 27 日约 **609 stars / 79 forks / 3 contributors**，最新版本 v0.5.17 与主仓库当天同步推送，处于典型的"早期爆发期"。
+---
+## 背景与痛点：被终端标签页淹没的 Agent 打工人
+2026 年被称为 "meta-harness summer"——圈子的争论焦点从"哪个 Agent 最强"转向了"谁来做它们之上那一层"。这个转变背后的真实痛点是：
+- **会话是易失的，工作不该是**。Claude Code 和 Codex 的每个会话都是一个 tmux 终端，关闭即丢上下文。第二天上班，Agent 要从零认识你的项目。
+- **跨 Agent 交接是个人肉拷贝**。Claude 写完方案要贴给 Codex 执行、再贴给另一个 Claude 评审——你是这套流水线上唯一的"人肉剪贴板"，状态在每次交接中蒸发。
+- **多会话并行就是一场熵增灾难**。你打开 6 个终端，3 个 Claude Code 在写代码、2 个 Codex 在跑测试、1 个在等 Review，你不敢关任何一个，因为关了就找不回。
+Anthropic 自己给出了云端解法：**Claude Managed Agents**，按 $0.08/session-hour 计费，Claude-only，必须连云。OpenRig 的开源社区版作者对此的回应写在仓库对比段落里——本地、跨 harness、零订阅费，数据不出机器。
+**仓库信息速览**：
+| 维度 | 信息 |
+|---|---|
+| 作者 | mvschwarz（公开资料有限，未查到完整履历，博客见 openrig.dev/blog） |
+| 首次提交 | 2026-04-01，仍高度活跃，最新 push 2026-09-27 |
+| 语言/协议 | TypeScript · Apache-2.0 |
+| 体量 | ~609★ / 79 fork / 3 contributors / 68 issues+PRs |
+| 当下热度 | GitHub Trending TS #6，日均 +80 stars，~22 fork/day |
+---
+## 核心架构与功能剖析：为什么它不只是又一个 tmux 包装器
+OpenRig 的技术栈相当朴素——Hono HTTP 守护进程 + SQLite + tmux + React/TUI + MCP Server（17 个工具）——但抽象层设计有真正的工程判断力。用一个比喻：**它把 Agent 当成 K8s 里的 Pod 来管理，而不是当成一条命令来调用。**
+### 1. RigSpec：用 Terraform 的方式管理 Agent 团队
+RigSpec 是 OpenRig 的灵魂。它把"团队"声明成 YAML 文件——谁在哪个 Pod、Pod 之间怎么连线、某个节点挂了怎么办——而不是写一堆命令把它们粘起来。这意味着你可以像提交 `docker-compose.yml` 一样，把 Agent 团队的拓扑**纳入版本控制、跨机器分发、Code Review**。
+```yaml
+# RigSpec 骨架示意
+pods:
+  - name: planner
+    member: chatgpt / claude-code
+  - name: implementer
+    member: claude-code
+  - name: reviewer
+    member: codex
+edges:
+  - planner → implementer → reviewer → planner
+continuity:
+  on_failure: pause_and_notify
+  state_persist: sqlite
+```
+### 2. Pod + 共享记忆：上下文是团队的，不是会话的
+Pod 是 OpenRig 的关键抽象——**有界上下文组**。同一 Pod 内的 Agent 共享外部化状态，当其中一个的上下文窗口被打满压缩时，其他成员可以恢复它的工作现场。翻译成人话：**Claude 在周五压缩掉的方案，Codex 周一照样能接着说下去**。这是"持久身份"（Persistent Identity）+ "共享记忆"（Shared Memory）这对组合拳，官方文档用一句话概括：*"Sessions end. The agent doesn't."*
+### 3. 快照/恢复：给团队装上了"存档点"
+- `rig down product-team` → 自动快照整个拓扑
+- `rig up product-team` → 按名字从快照恢复，并**逐节点报告**恢复结果（resumed / fresh / failed）
+这是当前同类工具里少见的"原子化生命周期"设计——关机不是丢失，是临时休眠。
+### 4. MCP：让 Agent 自己管理自己的编队
+OpenRig 内置 17 个 MCP 工具（`rig_up`、`rig_ps`、`rig_send`、`rig_chatroom_send` 等），意味着**你可以让 Claude Code 自己来指挥整个 rig**。CLI 的每个变更命令都会在结尾输出"发生了什么 + 当前状态 + 下一步建议"——这是为"作为同事的 Agent"精心设计的 DX，README 甚至直接写明：*"The CLI is designed for this user — a 10x staff engineer at the terminal"*，只不过这个 10x staff engineer 现在是个模型。
+### 5. 双向开发中的差异化能力
+- **Discovery / Adopt**：`rig discover` 会指纹识别你 tmux 里已有的 Claude Code / Codex 会话，起草候选 RigSpec，一键收编进管理。老会话不用关，直接"招安"。
+- **CULTURE.md**：给整个团队写一份"团队文化"——研究型 rig 用探索性文化、实现型 rig 用"trust-but-verify"保守文化。这是把 Anthropic 的 CLAUDE.md 思想推广到了**整个拓扑**而非单个 Agent。
+- **RigBundle**：便携归档格式，内嵌 vendored AgentSpecs 和 SHA-256 完整性校验，可以跨机器分享整套团队拓扑——某种意义上是 Agent 时代的 Helm Chart。
+- **Agent-Managed Software**：附带的 `secrets-manager` starter 让一个" specialists Agent"去运维一个真正的 HashiCorp Vault 实例（需 Docker）——AI 不只是写代码，还能当 SRE。
+---
+## 上手体验与部署门槛：4 条命令上车，但"暗坑"不少
+### Demo：从零到整队开拔，最短路径
+```bash
+# 1. 全局安装 CLI
+npm install -g @openrig/cli
+# 2. 环境体检（推荐先 --dry-run 看看它会动你什么）
+rig setup --dry-run
+rig setup
+# 3. 预览 + 启动 4 席位轻量版（避免单账号被 Claude 限流）
+rig specs preview conveyor
+rig up conveyor
+# 4. 看看跑了啥
+rig ps --nodes
+rig tui --shared   # Ctrl-b 再按 d 可以脱离
+```
+派任务、跨 Agent 通信的核心指令：
+```bash
+# 给 dev-owner 这个席位发一条任务
+rig send dev-owner@first-project \
+  'Implement <one useful change>. Track the task in the queue ... \
+   ask dev-check@first-project to check the exact candidate.'
+# 查看任务队列
+rig queue list --destination dev-owner@first-project --limit 1000
+# 广播 / 聊天室
+rig broadcast product-team "Sprint goal: ship the billing PR"
+rig chatroom product-team
+```
+### 环境要求
+- **Node.js 20/22/24**（官方明确说 25 这种奇数版本缺 native addon 预编译，会翻车）
+- **tmux** 必装
+- 可选：Docker（跑 secrets-manager 等服务型 rig）、cmux（额外的终端控制面）
+- 已通过 Bun 安装也可行，但会阻断 postinstall 脚本，需要补装 Node 22
+### ⚠️ 必读：它会在你机器上写哪些东西
+这是评测中我特别想敲黑板的部分。OpenRig 的 README 用整节诚实披露了"启动即写入"的文件清单，包括：
+- `~/.tmux.conf`（注入 OpenRig 块）
+- `~/.claude.json` 和 `~/.claude/settings.json`（写 workspace trust、statusLine 命令、onboarding 标记）
+- `~/.codex/config.toml`（启用 hooks、预写 trust hash、把 workspace 标记为 trusted）
+- 项目侧的 `.claude/settings.local.json`、`.mcp.json`
+- 默认权限模式是 `acceptEdits`，Codex 沙箱是 `workspace-write`
+**翻译一下：你 `rig up` 的瞬间，OpenRig 会替你预先信任这些 Agent 在你的工作区里动文件。** YOLO 模式（`--dangerously-skip-permissions` / `-s danger-full-access`）默认关闭，需要显式设置 `OPENRIG_YOLO=1`。但 `rig setup --dry-run` 并不能预览"之后每次启动"的所有副作用，官方自己也提醒：**备份再上**。
+### 文档质量
+openrig.dev 的 docs/specs 拆得很专业： Getting Started / CLI / Concepts / Spec Library，还有独立成页的 RigSpec 0.2、AgentSpec 1.0、RigBundle schema 2 规范。官网首页甚至用 Remotion 生成了可播放的 CLI 演示视频，这种对"开发者第一印象"的投入在小体量早期项目里很少见。
+---
+## 目标用户与收益：谁该上车，谁先观望
+| 用户类型 | 收益 | 推荐度 |
+|---|---|---|
+| **重度多会话 Claude Code / Codex 用户** | 直接终结"不敢关终端"的焦虑，团队上下文可长期复用 | ★★★★★ |
+| **想体验多 Agent 协作的个人开发者** | 几条命令拿到现成的 product-team / conveyor / research-team 起步 | ★★★★ |
+| **本地化优先、反感云端计费的团队** | 数据全在本地、无 API key 要求、Apache 2.0 可商用 | ★★★★★ |
+| **想给 Agent 团队做 CI / 自动化运维的工程化玩家** | MCP 17 个工具 + `--json` 输出，天然适合让 Claude 自己管自己 | ★★★★ |
+| **Windows 用户 / 不会 tmux 的小白** | 硬依赖 tmux，Windows 只能 WSL2 里跑；学习曲线存在 | ★★ |
+| **追求多模型异构编排（Gemini / Llama / DeepSeek）** | 目前 runtime 适配器只有 Claude Code、Codex、Terminal；Pi 和 OpenCode 适配器在开发中 | ★★ |
+**给小白的一个比喻**：如果 Claude Code 是一个外包程序员，OpenRig 就是你雇来的人力资源主管 + 会议室 + 考勤机 + 备份系统的组合体——它不写代码，但让这些"程序员"可以被点名、被布置工作、被叫去开会、被放假后召回原岗位。
+---
+## 横向对比：在 Agent Orchestration 的"动物园"里，它占哪一格
+2026 年这个赛道已经挤满了玩家，我挑了几个最容易被混淆的对手：
+| 项目 | 核心定位 | 部署形态 | 模型支持 | 差异化 |
+|---|---|---|---|---|
+| **OpenRig** | 拓扑级多 Agent 控制平面 | 本地守护进程 + SQLite + tmux | Claude Code + Codex（Pi/OpenCode 开发中） | YAML RigSpec、Pod 共享记忆、快照/恢复、MCP 自治 |
+| **Anthropic Managed Agents** | 云端托管 Agent 运行时 | 云（SaaS） | Claude-only | $0.08/session-hour，零运维，但被锁定在 Anthropic 生态 |
+| **Claude Squad / Mux / tmux 直用** | 单机多会话并行 | 本地 tmux | 任意 | 纯会话管理，无拓扑、无共享记忆、无恢复 |
+| **Paperclip** | AI Agent 团队管理平台（组织架构 / 预算 / 工单） | Node.js + React 自托管 | Claude / Codex / Cursor 等 | 偏企业化管理视角（预算、审计、OKR），体量更大，88K★ |
+| **Open Engine** | 跨 Vendor 的任务交接协议 | 协议/库 | Claude / ChatGPT / Codex | 解决"任务记录"本身，不做编排，与 OpenRig 可互补 |
+| **Omnigent（Databricks）** | 企业级 Meta-Harness + Agent 身份 | 企业平台 | 多 | Agent 独立身份与权限治理，面向合规场景 |
+OpenRig 独特的生态位置是：**它在 tmux 这种"最朴素的现实"之上，搭建了一套"最像 Kubernetes 的抽象"**。比 Claude Squad 这类工具多了一整套声明式拓扑、持久化和自治能力；比 Paperclip 更轻、更专注"工程编排"而非"组织管理"；比 Anthropic Managed Agents 更开放、更便宜、更自由。
+---
+## 局限与风险：别被 star 数冲昏头脑
+客观说，它仍然是一个** APR-2026 出生的婴儿期项目**，风险点非常明确：
+1. **Runtime 生态过窄**。当前只稳定支持 Claude Code 和 Codex，其他 harness（Pi、OpenCode）还在"开发中"。如果你押注的是 Gemini CLI 或 DeepSeek，现在用不上 OpenRig 的核心价值。
+2. **并发限流现实**。README 直白承认：product-team 这种 7 席位 starter 会同时跑 4 个 Claude，**单账号订阅用户大概率会被 Anthropic 限流**，推荐用 conveyor 这种 4 席位轻量版起步。
+3. **侵入性写入**。前文已提：`rig up` 会动你的 `~/.claude.json`、`~/.codex/config.toml`、`~/.tmux.conf`，并且 `--dry-run` 不保证预览所有后续启动副作用。对配置洁癖用户不友好。
+4. **单人项目风险**。3 个 contributors、68 个 issues+PRs，主要维护者单点。issue 响应目标是"一天内 ack"，但**没有 SLA**。一旦作者精力转移，项目可能停滞——这在 star 起飞的早期项目里是常态风险。
+5. **tmux 硬依赖 + macOS 体验最佳**。Linux/macOS 用户顺手，Windows 只有 WSL2 这条路，体验打折。
+6. **概念栈偏重**。RigSpec / AgentSpec / Pod / Edge / Culture / RigBundle——对小白有真实的学习成本，"读 README 看似简单、上手心智负担不小"是这类基础设施项目的通病。
+7. **YAML 拓扑 ≠ 智能编排**。它管的是"会话之间的关系"，但 Agent 之间到底能不能真的产生高质量的协同（而不是互相干扰）依然取决于你写的 CULTURE.md 和 prompt 工程——OpenRig 给的是基础设施，不是魔法。
+---
+## 结语与行动建议
+OpenRig 是 2026 年 Agent 基础设施里**思路最像"下一层"的项目之一**——它没有去追"更聪明的模型"，而是回答了一个更工程化的问题：*"当模型够聪明之后，谁来当它们的项目经理？"* 用 YAML 声明 Agent 团队、用 SQLite 做状态持久化、用 tmux 承接现实、用 MCP 让 Agent 自治，这一整套组合拳在目前的开源生态里是独一份的。
+**给不同读者的行动建议**：
+- **如果你已经是 Claude Code / Codex 的重度用户，且主要在 macOS / Linux**：**直接装**，从 `conveyor` starter 开始，跑一个真实的小需求（一个 PR / 一个 refactor），用一周再判断。建议第一时间 `rig setup --dry-run` 并备份关键配置文件。
+- **如果你是观望型工程团队**：可以 Fork 一份读读 RigSpec 的 YAML 结构，它对"如何声明 Agent 拓扑"这个问题的回答有很强的参考价值，即便不用这个工具，思路也值得借鉴。
+- **如果你是多模型/异构派**：等 Pi / OpenCode 适配器落地再上，或者把它当"思路参考"去自研。
+- **如果你不想折腾任何基础设施**：Anthropic Managed Agents 是云端省心版，代价是锁定和 $0.08/session-hour。
+**一句话终评**：OpenRig 不是"Agent 编排的终点"，但它可能是当前把"多 Agent 长期团队化"这个抽象做得最完整、最开源、最不打扰你钱包的起点。早期上车的风险是项目稳定性，回报是能亲眼看着一个基础设施项目从 v0.5 走向 v1.0——以及，再也不用对着一屏幕不敢关的终端标签页发呆。
+---
+### 附录 · 信息来源
+- 项目主仓库 README 与 GitHub 页面
+- openrig.dev 官网首页与 docs/specs
+- GitHub Trending 数据（Trendshift / Gitnova，2026-09-27）
+- 跨 Vendor Agent 编排生态综述
+- AI Infra Brief 2026-04-14
+- 同赛道项目 Paperclip 生态信号

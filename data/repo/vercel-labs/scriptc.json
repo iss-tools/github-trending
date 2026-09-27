@@ -1,0 +1,54 @@
+{
+  "id": "67a198b2-e584-42b3-ac95-ff03ece4b8f0",
+  "url": "https://github.com/vercel-labs/scriptc",
+  "domain": "github.com",
+  "repo": "vercel-labs/scriptc",
+  "description": "scriptc 是 Vercel Labs 刚开源的实验性编译器，基于 tsc 类型检查与 LLVM 后端，将 TypeScript 直接 AOT 编译为不打包 Node、不内置 V8 的原生二进制。它采用三态编译模型显式处理静态与动态代码边界，提供 coverage 静态化诊断、800+ 用例差分测试保障 JS 语义一致，并支持 comptime、FFI 和 WASM 目标，是继 Bun、Deno、Node SEA 之后第一条真正绕开 JS 引擎的 TS 编译路线。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-27T13:10:47.755Z",
+  "metaData": {
+    "forks": "134",
+    "stars": "5212",
+    "topics": [],
+    "license": "Apache-2.0 license",
+    "homepage": "https://scriptc.dev",
+    "description": "TypeScript-to-Native Compiler. Contribute to vercel-labs/scriptc development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "TypeScript",
+      "LLVM",
+      "原生编译",
+      "Vercel",
+      "CLI开发"
+    ],
+    "cover": "",
+    "title": "scriptc 深度评测：把 TypeScript 直接编译成原生二进制的实验性编译器",
+    "ability": [
+      "将 TypeScript AOT 编译为 170-200KB 的自包含原生二进制，启动仅需约 2ms",
+      "三态编译模型：静态编译、内嵌 quickjs-ng 的动态执行、以及带错误码和改写建议的拒绝编译",
+      "coverage 诊断命令，编译前即可查看代码静态化程度与阻塞点",
+      "800+ 差分测试保障编译产物与 Node 行为逐字节一致",
+      "提供 comptime 编译期执行、FFI 绑定 C 库、WebAssembly 输出等逃生舱能力"
+    ],
+    "summary": "Vercel Labs 开源的实验性编译器 scriptc，用 tsc + LLVM 把 .ts 文件直接编译成约 200KB、2ms 启动的原生可执行文件，全程不依赖任何 JS 引擎。",
+    "category": [
+      "开发工具",
+      "编译器技术",
+      "前端工程化"
+    ],
+    "suitable": [
+      "CLI 工具开发者",
+      "边缘计算与轻量后端服务开发者",
+      "追求小体积、快启动分发的工程师",
+      "对编译器和 LLVM 技术感兴趣的开发者",
+      "希望摆脱 Node/V8 运行时依赖的 TypeScript 用户"
+    ],
+    "description": "scriptc 是 Vercel Labs 刚开源的实验性编译器，基于 tsc 类型检查与 LLVM 后端，将 TypeScript 直接 AOT 编译为不打包 Node、不内置 V8 的原生二进制。它采用三态编译模型显式处理静态与动态代码边界，提供 coverage 静态化诊断、800+ 用例差分测试保障 JS 语义一致，并支持 comptime、FFI 和 WASM 目标，是继 Bun、Deno、Node SEA 之后第一条真正绕开 JS 引擎的 TS 编译路线。"
+  },
+  "contentDetail": "# scriptc 深度评测：把 TypeScript 编译成原生二进制的\"胆大之作\"\n> 一句话总结：**scriptc 是 Vercel Labs 刚刚开源的实验性编译器，它用\"真正的 TypeScript 编译器 + LLVM\"把你手写的 .ts 文件直接编译成 200KB 左右、约 2ms 启动的原生可执行文件——不打包 Node、不内置 V8，也不用任何 JS 引擎**。这是继 Bun 单文件编译、Deno compile、Node SEA 之后，第一条真正意义上\"绕开 JS 引擎\"的 TS 路线，值得所有做 CLI、边缘部署、轻量后端服务的开发者认真关注。\n---\n## 一、背景与痛点：JS 生态的\"三十年之痒\"\nNode.js 让 JavaScript 走进了服务器和命令行，但代价是：**每一个用 TS 写的 CLI 工具，最终都要拖着 60–100MB 的 V8 引擎一起发布**。Node SEA（Single Executable Application）、`bun build --compile`、`deno compile` 本质上都是把整个运行时塞进二进制里——启动慢、内存占用高、分发体积感人。\nscriptc 的思路截然不同：**与其让 TS 跑在 JS 引擎里，不如让它编译成真正的机器码**。Vercel 团队观察到一件被社区长期忽视的事实——大多数 TypeScript 代码其实远比生态假设的更\"静态\"：没有 `eval`、没有动态 `require`、没有大量 `any`。这些代码完全可以像 Go 或 Rust 一样被 AOT 编译。\n这就好比：过去所有\"打包 TS 程序\"的工具都在做**把一台完整的机床塞进行李箱**的工作，而 scriptc 选择的是**直接把零件重铸成一把瑞士军刀**——只带走真正需要的部分。\n## 二、核心亮点与功能剖析\n### 1. 三态编译：把\"能不能跑\"讲清楚\nscriptc 最有辨识度的设计是它的\"三态模型\"，每一行代码的去向都是显式的，绝不悄悄降级：\n| 状态 | 行为 | 代价 |\n|---|---|---|\n| **静态编译** | 默认模式，编译为纯机器码 | 无 JS 引擎，170–200KB |\n| **动态执行**（`--dynamic`） | 内嵌 quickjs-ng（约 620KB）执行无法静态化的部分 | 二进制约 3MB，但**不会**在运行时读 node_modules |\n| **拒绝编译** | 直接报错，给错误码 + 代码框 + 改写建议 | 不存在\"悄悄编译错误\" |\n边界处的类型是**运行时校验**的——`--dynamic` 模式下任何从动态侧回流到静态侧的值都会被检查，类型撒谎会抛出可捕获的 `TypeError`，而不是让内存被悄悄写坏。\n### 2. `scriptc coverage`：静态化程度看得见\n这是工具链层面非常聪明的一招。Vercel 提供了一个诊断命令，让你在动手改代码之前就能看到：\n```bash\n$ scriptc coverage app.ts\n  statements analyzed   4481\n  compile statically    4451  (99%)\n  blockers:\n      ×2  functions with optional parameters as values   SC1090\n      ×1  Promise.reject                                 SC2020\n```\n每一处无法静态编译的代码都有**具体错误码和改写提示**。这意味着迁移成本是可预估的，而不是\"试一下然后踩坑\"。\n### 3. 编译粒度覆盖惊人地完整\n不要以为它只能处理\"hello world\"。静态层覆盖的语义包括：\n- **语言层**：带单继承与真实动态派发的类、闭包的 JS 捕获语义、泛型单态化、判别联合、async/await（基于栈式 fiber，调度语义与 JS 完全一致）、`finally`、正则（内嵌 QuickJS 的 ECMAScript 精确字节码解释器）。\n- **标准库**：UTF-16 精确语义的字符串、JS 精确排序的数组/Map/Set、`JSON`、`Buffer`、`Math`、`Error` 层级。\n- **Node API**：`fs`、`path`、`process`、`child_process`、`crypto`、`zlib`、`net`/`http`/`https`/`tls`（内置 mbedTLS）、`dns`、`fs.watch`、`readline`——**真正的代理服务器能编译出来**。\n- **`fetch`**：走同一套原生 net/TLS 栈，无 libcurl，无系统 HTTP 依赖。\n- **npm 依赖**（`--dynamic` 模式）：按 Node 自己的解析算法定位，按 `.d.ts` 类型检查，构建时把 JS 嵌入二进制。\n### 4. 差分测试：把\"JS 语义\"焊死\nscriptc 最硬核的工程保障是**800+ 用例的差分测试**：每一条测试用例同时在 Node 和编译后的原生二进制中运行，stdout/stderr/退出码必须**逐字节一致**。数字格式化采用 JS 的 shortest-roundtrip 算法，并对一百万个双精度浮点做模糊验证。此外整个语料库还会在 AddressSanitizer 下重跑，配合引用计数审计，任何内存泄漏或 use-after-free 都是构建失败。\n这与 Vercel 一贯的\"体验优先\"文化高度一致：**实验性项目也要带上生产级的正确性护栏**。\n### 5. 逃生舱设计：comptime 与 FFI\n- **`comptime(() => ...)`**：在编译期于隔离 VM 中执行 TS 代码，把结果作为字面量烤进二进制。\n- **`--ffi`**：用\"仅签名\"的 TypeScript 声明直接绑定 C ABI，可链接 manifest 声明的系统库。\n- **`--dynamic`**：上面提过，不动静态主路径。\n这套\"逃生舱\"设计意味着你不必为了编译一个原生二进制而放弃整个 npm 生态。\n## 三、Demo：30 秒跑通\n**最小示例：**\n```bash\n$ cat fib.ts\nfunction fib(n: number): number {\n  return n < 2 ? n : fib(n - 1) + fib(n - 2);\n}\nconsole.log(fib(30));\n$ scriptc build fib.ts && ls -la fib\n-rwxr-xr-x  178K  fib        # 自包含原生二进制，~2ms 启动\n$ ./fib\n832040\n```\n**带 HTTP 服务器：**\n```ts\n// server.ts\nimport { createServer } from \"node:http\";\nconst server = createServer((req, res) => {\n  res.setHeader(\"content-type\", \"application/json\");\n  res.end(JSON.stringify({ path: req.url }));\n});\nserver.listen(8080, () => console.log(\"listening on :8080\"));\n```\n```bash\n$ scriptc build server.ts -o server && ./server\nlistening on :8080\n```\n**WebAssembly 输出（需要 Zig）：**\n```bash\n$ SCRIPTC_CC=zigcc SCRIPTC_TARGET=wasm32-wasi scriptc build hello.ts -o hello.wasm\n$ file hello.wasm\nhello.wasm: WebAssembly (wasm) binary module version 0x1 (MVP)\n```\nWASI 目标支持与原生目标完全相同的语言能力层级（async/await、generators、timers、fs、readline 等），但网络 socket、fetch、子进程、OS 信号、文件监听会以 `SC3002` 在链接前明确报错。\n## 四、技术栈与架构解析\n编译流水线：\n```\nTypeScript → tsc 解析+类型检查 → 类型化 IR → LLVM IR（默认）/ 可读 C → clang → 原生可执行文件\n```\n仓库结构干净得像是教科书：\n- **`packages/compiler`**：前端（tsc API → IR）、带校验器和序列化器的 IR、LLVM 和 C 两个后端。**IR 是前后端唯一接口**——这意味着后端可替换、可演进。\n- **`packages/runtime`**：C 运行时，包含带循环收集器的引用计数、栈式 fiber 与基于 kqueue 的事件循环、服务器栈、JS 精确的数字格式化。**特性单元按需链接**——二进制只为自己用到的功能买单。\n- **`packages/cli`**：`scriptc build | run | coverage` 三个子命令。\n几个值得点名的技术决策：\n1. **复用 tsc 做类型检查**，不重造轮子，保证 TS 语义 100% 一致。\n2. **LLVM 作为主后端，可读 C 作为永久参考后端**——`--backend c` 输出的代码带源码行号注解，出问题时可以肉眼调试。\n3. **编译器自己用 Vercel Sandbox 跑测试**：8 个 8-vCPU 沙箱并发跑语料库，用\"构建产物即测试环境\"的思路自举。\n## 五、性能数据（官方基准）\n在 Apple M 系列芯片上与 Node、Go、Rust、Zig 同 workload 对比（输出字节一致才作数）：\n| 维度 | scriptc | 参照 |\n|---|---|---|\n| 启动时间 | **~2.4ms** | Node ~47ms；与 Zig 持平，优于 Go/Rust |\n| 二进制体积 | 170–200KB（静态）/ ~3MB（含 dynamic + 依赖） | Go ~2MB；Node SEA 60–100MB |\n| 内存 RSS | **1–4MB** | Node 67–116MB |\n| 运行时性能 | JS 精确的 f64 语义，多数 workload 与系统级语言接近 | 整数推断和所有权分析在路线图上 |\n这些数字如果站得住，对 CLI 工具、边缘函数、Serverless 冷启动场景是**量级级别的改善**。\n## 六、目标人群与收益\n| 人群 | 能得到什么 |\n|---|---|\n| **CLI 工具开发者** | 从\"40MB 可执行文件 + 47ms 启动\"降到\"200KB + 2ms\"，分发体验彻底改观 |\n| **边缘 / Serverless 工程师** | WASI 输出可直接跑在支持 WASI Preview 1 的运行时上，冷启动趋近于零 |\n| **写轻量后端 / 代理 / 网关的人** | `http`/`tls`/`net` 全套可用，\"真代理服务器能编译\"是 README 原话 |\n| **想\"TS 写底层\"的探索者** | `--ffi` + `comptime` 让 TS 第一次有了真正意义上的\"系统语言\"逃生舱 |\n| **前端工程师做副业工具** | 不用学 Go/Rust，用熟悉的 TS 就能写出启动毫秒级的命令行工具 |\n## 七、竞品对比\n| 方案 | 原理 | 产物体积 | 启动 | 引擎依赖 | 语义保真 |\n|---|---|---|---|---|---|\n| **Node SEA** | 把 Node 运行时塞进二进制 | 60–100MB | ~50ms | V8 全量 | 100% |\n| **Bun compile** | 把 Bun 运行时塞进二进制 | ~90MB | 快于 Node | JavaScriptCore 全量 | 100%（Bun 语义） |\n| **Deno compile** | 把 Deno 运行时塞进二进制 | ~80MB+ | 快于 Node | V8 全量 | 100% |\n| **pkg / nexe** | 把 node_modules + 运行时打包 | 40–80MB | 中 | V8 全量 | 100% |\n| **AssemblyScript** | TS 子集 → Wasm | KB 级 | 极快 | 无 | **放弃**（子集） |\n| **scriptc** | tsc → IR → LLVM/C → 原生 | **170–200KB** | **~2ms** | **无**（或仅 620KB quickjs-ng） | **JS-exact（差分测试保障）** |\nscriptc 的独特位置在于：**它是唯一在\"产物体积/启动速度\"上对标 Go/Zig，同时在\"语义保真度\"上仍对标 Node 的方案**。AssemblyScript 牺牲了 JS 语义换取性能，scriptc 选择用工程手段（差分测试 + 运行时校验）把 JS 语义\"焊\"进原生代码。\n## 八、局限与不足（必须说清楚）\n1. **官方明确标注 experimental**。README 原话是 \"scriptc is experimental\"，生产环境慎用，API 和错误码都可能变。\n2. **静态覆盖率不是 100%**。大量动态特性的代码（重度 `any`、动态 `require`、`eval`、`Proxy`、`with` 语句等）会直接被拒绝或被推到 `--dynamic`。实际工程代码的覆盖率要靠 `scriptc coverage` 自己跑一遍才知道。\n3. **构建依赖 clang 和 Node.js 24+**。虽然产物不需要 Node，但**编译过程需要**——CI 镜像、Dockerfile 都得调整。\n4. **WASI Preview 1 能力有限**。网络 socket、fetch、子进程、信号、fs.watch 在 WASI 目标下直接 `SC3002` 拒绝，意味着\"边缘部署\"这条路目前只适合纯计算型负载。\n5. **与 Node 存在少量\"有意为之\"的差异**（几十处，主要在 timing 内部和错误对象属性）。README 承诺这些差异全部编号文档化、不静默，但对存量代码仍是潜在雷区。\n6. **社区尚处于早期**。仓库公开时间较短，Issue 积累、生态插件、第三方教程都还需要时间沉淀。目前主要由 Vercel Labs 团队推进。\n7. **`--dynamic` 模式的 quickjs-ng 边界**：虽然每次跨界都校验，但动态部分的性能仍受限于解释器——对性能敏感的代码要尽量留在静态侧。\n## 九、结语与行动建议\n**终极评判：这是 2026 年 JS 生态里最有想象力、也最有工程诚意的编译器实验之一。**\n它的技术路线并不新鲜（TypeScript→IR→LLVM 在学术圈有人做过），但 Vercel 做对了几件关键的事：**不重造类型检查器、用差分测试锁死 JS 语义、用 `coverage` 命令把不确定性显性化、用三态模型保住 npm 生态兼容**。这几件事叠加起来，让一个\"看起来像 PR stunt\"的项目变成了一个真的能跑真代码的工具。\n**给不同读者的行动建议：**\n- 🔭 **观望派**：Star 这个仓库，订阅 release。它未来 6–12 个月的演进会揭示 TS 原生化的真实天花板。\n- 🛠️ **尝鲜派**：拿一个自己的小 CLI 工具跑一遍 `scriptc coverage`，看看静态覆盖率——这个数字本身就有信息量。\n- ⚡ **实战派**：如果是新项目、对体积和启动敏感、代码风格偏静态（少用 `any` 和动态 import），可以试着在内部工具链上先行验证，**暂时别碰线上关键路径**。\n- 🧠 **研究派**：阅读 `packages/compiler` 里 IR 的定义和 LLVM 后端的 lowering 逻辑，是理解\"现代编译器如何处理动态语言语义\"的极佳教材。\n如果你觉得\"TS 写的一切最终都拖着 V8\"是一件天经地义的事，scriptc 值得让你停下来重新想一想。\n---\n*项目地址：https://github.com/vercel-labs/scriptc *\n*首发报道：InfoQ, 2026-09-25 \"Vercel Labs Ships scriptc, a TypeScript-to-Native Compiler That Leaves the JavaScript Engine Behind\"*",
+  "type": "project",
+  "dateAdded": "20260927"
+}
