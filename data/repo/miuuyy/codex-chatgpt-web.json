@@ -1,0 +1,63 @@
+{
+  "id": "79aa4526-2a08-421b-a783-074708212cd3",
+  "url": "https://github.com/miuuyy/codex-chatgpt-web",
+  "domain": "github.com",
+  "repo": "miuuyy/codex-chatgpt-web",
+  "description": "一个 MIT 协议的开源工具，通过内嵌浏览器登录和 outbound MCP 隧道，把 ChatGPT 网页版的模型（含 Pro 档）注入 Codex 官方模型选择器，让编码任务消耗 ChatGPT 订阅额度而非 Codex 配额。提供全自动和手动两种模式，工程细节用心，但本质处于灰色地带，存在被 OpenAI 风控或网页改版失效的风险。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-09-27T13:33:45.708Z",
+  "metaData": {
+    "forks": "950",
+    "stars": "11917",
+    "topics": [
+      "chatgpt",
+      "chatgpt-pro",
+      "codex",
+      "free-ai",
+      "mcp",
+      "openai",
+      "playwright",
+      "quickstart",
+      "responses-api",
+      "typescript"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex quota. - miuuyy/codex-chatgpt-web"
+  },
+  "summaryData": {
+    "tags": [
+      "Codex",
+      "ChatGPT",
+      "浏览器自动化",
+      "MCP",
+      "开源工具"
+    ],
+    "cover": "",
+    "title": "codex-chatgpt-web 深度评测：把 ChatGPT 订阅额度“借”给 Codex 用的开源神器",
+    "ability": [
+      "将 ChatGPT 网页版模型伪装成 Codex 原生模型，绕开 Codex 配额限制",
+      "通过 MCP 隧道让 ChatGPT 网页版调用本地工具，实现完整 Agent 体验",
+      "Zero Risk 手动模式，关闭自动化降低封号风险",
+      "上下文自动压缩，单轮最高可用约 25 万 token",
+      "一条命令安装，免装 Node/Bun/Chrome，支持五大语言"
+    ],
+    "summary": "通过浏览器自动化和 MCP 隧道，把 ChatGPT 网页版模型注入 Codex，写代码不消耗 Codex 官方配额",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "开源项目"
+    ],
+    "suitable": [
+      "ChatGPT Plus/Pro 订阅且重度使用 Codex 的开发者",
+      "Codex 配额经常不够用的个人用户",
+      "愿意折腾开源工具的技术爱好者"
+    ],
+    "description": "一个 MIT 协议的开源工具，通过内嵌浏览器登录和 outbound MCP 隧道，把 ChatGPT 网页版的模型（含 Pro 档）注入 Codex 官方模型选择器，让编码任务消耗 ChatGPT 订阅额度而非 Codex 配额。提供全自动和手动两种模式，工程细节用心，但本质处于灰色地带，存在被 OpenAI 风控或网页改版失效的风险。"
+  },
+  "contentDetail": "# 把 ChatGPT Pro \"塞进\" Codex 里：一个用浏览器自动化硬刚官方配额的野路子神器\n**一句话总结：这是一个 MIT 协议的开源工具，它通过\"内嵌浏览器 + MCP 隧道\"的组合拳，把你 ChatGPT 网页版（包括 Pro）里能用的模型，伪装成 Codex 模型选择器里的原生模型，让你在写代码时不消耗 Codex 的官方配额。** 它本质上是在\"官方订阅的灰色地带\"跳舞——用得爽，但用之前你得知道自己在冒什么险。\n---\n## 背景与痛点：被配额追着跑的开发者\n2026 年 8 月，OpenAI 把 Plus 用户的 Codex 和 ChatGPT Work 5 小时使用限额重新收紧，Codex 配额重新变成\"用一会儿就歇菜\"的稀缺资源。一边是你每月真金白银付的 ChatGPT Plus / Pro 订阅，明明有 GPT-5.6 Sol Pro、GPT-6 Astra 这些旗舰模型和大量剩余额度；另一边是 Codex 接连弹出\"今日额度已用完\"。**两套配额体系互不相通，这是 Codex 用户最真实的痛。**\n`codex-chatgpt-web` 的作者 miuuyy 看准的就是这个缝隙——**它不帮你把 ChatGPT 配额\"转换\"成 Codex 配额，而是给 Codex 修了一条旁路**，让 Codex 调用模型时绕开官方 API、直接走你已登录的 ChatGPT Web 会话。官方文档里那个 `Before / After` 图说得非常直白：\n```\nBefore: Codex → Codex Built-in Models → 消耗 Codex 配额\nAfter:  Codex → ChatGPT Web Models    → 消耗 ChatGPT Web 配额（Codex 配额 0 消耗）\n```\n---\n## 核心亮点与架构剖析\n### 1. 三档模式，把\"激进\"到\"保命\"全给你想好了\n项目最有意思的设计不是某个炫技功能，而是**它把风险和收益做成了一根可调滑杆**，让你自己选立场：\n| 模式 | 怎么发消息 | 本地 Codex 工具 | 适合谁 |\n|---|---|---|---|\n| **Browser-only** | 全自动 | 无 | 只想拿 ChatGPT 当\"对话模型\"的轻用户 |\n| **Full harness（With Automation）** | 全自动 | ✅ 通过 MCP 完整打通 | 想要完整 agent 体验的硬核用户 |\n| **Zero Risk（V5 新增）** | 你手动复制粘贴 | ✅ 独立 MCP 连接器 | 公司电脑、怕封号、合规敏感场景 |\n**Zero Risk 模式是整个项目最聪明的一步棋**：启动器只负责把 Codex 的 prompt 准备好并复制到剪贴板，浏览器自动化完全关闭，由你亲自粘贴进 ChatGPT、亲自点\"已发送\"。这种模式下，它不再读取、不再操作 ChatGPT 页面，特征几乎就是一个普通用户在打字，**在\"是否会被 OpenAI 判定为自动化滥用\"这个核心风险上，它给你留了一条退路**。\n### 2. MCP 隧道：让 ChatGPT 网页版\"长出手脚\"\n打个比方，这就像**给一个只会说话的客服（ChatGPT Web）装了一只机械臂**：\n- ChatGPT 网页版原本只会回文本，它不知道你本地有哪些文件、也跑不了命令。\n- 这个项目通过 OpenAI 官方的 **Tunnel client + Developer Mode + MCP 连接器**，在 ChatGPT 里创建一个叫 `Codex Native2` 的连接器，让 ChatGPT 调用工具时，请求经 outbound 隧道回到本地 Codex 进程。\n- Codex 收到工具调用后去读文件、跑命令，把结果通过隧道回传给 ChatGPT，ChatGPT 再继续推理。\n**关键在于它是 outbound 连接**——不暴露公网 IP、不开入站端口、不需要路由器转发，安全性比自建 Webhook 好得多。审批策略也是 fail-closed，除非你显式加 `--auto-approve-tool-calls`，否则所有写入类操作都会弹窗等你点头，且**永远只点\"Allow once\"，绝不静默申请永久授权**。\n### 3. 上下文压缩：突破 Web 版对话长度天花板\nWeb 版对话拖太长会被截断，但 Codex 任务往往上下文巨大。V4 引入的 **Native context compaction** 是这个项目的硬功夫：当逼近上下文边界时，Codex 通过 MCP 隧道让 Web 端的那个 agent 自己生成一份\"检查点摘要\"，然后开一个全新会话从摘要继续，全程不丢任务上下文。实测 Plus Medium/High 能跑出约 **9 万 token 的可用窗口**，开启实验性的 3× context 后可达 **27 万 token**；V5 的 Zero Risk Pro 档位甚至号称单轮可用约 25 万 token。\n### 4. 工程细节里藏着\"作者是个较真的老哥\"\n翻 release note 你会发现这不是一个玩具：\n- **五语种 launcher**（英 / 简中 / 繁中 / 日 / 韩），连 ChatGPT 网页的本地化\"Stopped thinking\"标签都做了识别；\n- **SHA-256 manifest 校验**、CI 三平台门禁，虽然还没做平台签名，但至少包是可校验的；\n- Issue 编号已经跑到 **#500+**，社区贡献者从中文本地化到子代理修复都有名单，明显是一个活跃项目而不是一人 POC；\n- V6 已经在 4 天前发布，引入新的模型选择器和 Pro 用量追踪。\n### 5. 上手门槛：一条命令就能装起来\n官方把 README 写得极其克制——**不要求装 Node、不要求装 Bun、不要求装 Chrome**，所有运行时都打包在 launcher 里。\nmacOS / Linux：\n```bash\ncurl -fsSL https://github.com/miuuyy/codex-chatgpt-web/releases/latest/download/install-launcher.sh | sh\n```\nWindows（PowerShell）：\n```powershell\nirm https://github.com/miuuyy/codex-chatgpt-web/releases/latest/download/install-launcher.ps1 | iex\n```\n装完后流程只有三步：**内嵌浏览器登录 ChatGPT → 跑 Browser Smoke Test → 点 \"Install Models\" 并彻底重启 Codex**。第三方教程估算整个流程大概 10 分钟。想从源码跑也只要：\n```bash\ngit clone https://github.com/miuuyy/codex-chatgpt-web.git\ncd codex-chatgpt-web && bun run app\n```\n注意源码路径要求 Bun 1.4.0。\n### 6. 模型选择器长什么样\n装完重启 Codex，你的模型下拉框里会多出这些条目：\n- Free/Go 账号 → `ChatGPT Web — Luna / Think`\n- 带推理档位的账号 → `ChatGPT Web — instant / medium / high`\n- Pro 账号额外 → `ChatGPT Web — Extra High`、`ChatGPT Web — Pro`\n- 可选 → `ChatGPT Web — Zero Risk Pro`（约 25 万 token 的手动模式）\n启动器会自动探测你的账号能用哪几档，用不了的档位不会出现。\n---\n## 竞品对比：它在\"套壳\"生态里是个什么段位\n把 ChatGPT 网页版当 API 用的开源项目并不少，常见的有 reverse-engineered API 代理、Pandora 类自建网关、以及 `cursor-chatgpt-web` 这类针对其他编辑器的同思路移植。`codex-chatgpt-web` 的差异化主要在三处：\n1. **它是\"接入\"而不是\"替代\"**——不是给你再开一个 ChatGPT 网页客户端，而是直接把模型注入 Codex 的官方模型选择器，你依旧用 Codex 的任务流、流式输出、图片、审批 UI，界面零学习成本；\n2. **MCP Full Harness 的工具回环**——大多数\"网页当 API\"的项目只能拿来聊天，这个项目能把 ChatGPT 的工具调用真的接到本地 Codex，做到\"ChatGPT 在网上思考、Codex 在本地干活\"，这是同类项目里少见的能力；\n3. **Zero Risk 这种降险模式**——同类项目普遍是一刀切的浏览器自动化，它主动做了\"半自动档\"，这种自我克制在\"灰产\"里相当罕见。\n代价是它只服务于 **OpenAI Codex** 这一个宿主。如果你主力编辑器是 Cursor / Claude Code / Cline，这个项目救不了你，得去找各自的桥接方案。\n---\n## 局限与风险：把话说透\n**客观地说，这不是\"白嫖\"，而是\"用另一种方式花你自己付过的钱\"。** 以下几条你必须心里有数：\n### 1. 它本身就是个灰色地带\n官方 README 白纸黑字写着：\"**这是非官方的浏览器自动化，不是 OpenAI API**\"，并且明确要求你\"仅在自己的账号上使用、遵守适用的服务条款\"。**作者自己都担心这个玩法被 OpenAI 打成\"abuse\"**，专门开了 Discussion #188，请求用户发布真实工作流视频或提及，以\"降低被广泛限制的风险\"。换句话说——**这个项目能活多久，取决于 OpenAI 什么时候认真起来**。突发封号、限流、Web UI 改版导致全量失效，都是真实可能。\n### 2. UI 改版随时会把它打断\n它靠选择器定位 ChatGPT 的 DOM 元素，ChatGPT 网页一改版就崩。好在它承诺\"**drift fails explicitly**\"——失败会显式报错而不是静默降级到别的模型或通道，至少不会让你以为用的是 GPT-5.6 其实悄悄给你切成了别的东西。\n### 3. 浏览器登录态就是你的\"皇冠\"\n内嵌浏览器里存着 ChatGPT 的完整登录态，这是高价值资产。README 明确警告：**回环监听端口对同一本地用户的所有进程可达**，所以别在共享机、可疑环境里跑，别共享 launcher profile。这个项目本身没爆出漏洞，但 BeyondTrust 2025 年披露的 Codex 命令注入链说明：**AI 编码工具的攻击面本身就很广**，多一个桥接层就多一份风险。\n### 4. 未平台签名\nmacOS 会弹 Gatekeeper、Windows 会弹 SmartScreen。安装脚本会校验 SHA-256 manifest，所以文件没被篡改的可能性较低，但这个门槛对小白确实不友好。\n### 5. 写操作有额外门槛\nFull harness 的写入/修改动作要求 ChatGPT workspace 和管理员策略都允许 Developer Mode + MCP Apps，公司账号大概率装不上。这既是限制也是保护。\n### 6. 它救不了\"没有订阅\"的人\n它只是**重新分配你已有的订阅额度**，不是凭空给你 GPT-5.6 Pro 用。免费档最多能拿到 Luna/Think 两个模型，能力上限跟你正常在网页版用一样。\n---\n## 目标人群与收益\n| 你是谁 | 值不值得上 |\n|---|---|\n| ChatGPT Plus/Pro 订阅 + Codex 重度用户 | **强烈推荐**，等于把 Codex 配额变相扩容 2–5 倍 |\n| 只有 Codex API key、没买 ChatGPT 订阅 | 收益有限，去研究纯 API 方案更划算 |\n| 公司合规敏感环境 | 用 **Zero Risk 模式**，或干脆别上 |\n| 机器上有敏感凭据、来路不明的环境 | 别上，登录态风险不小 |\n| 想要 100% 官方支持、能找客服 | 别上，出问题没人兜底 |\n---\n## 结语与行动建议\n**`codex-chatgpt-web` 是那种典型的\"聪明人做的聪明事\"——它精准地挖到了一个真实痛点（Codex 配额和 ChatGPT 订阅割裂），用一套相对克制的工程方案（outbound MCP 隧道 + 可选降险模式）把它填上了，并且诚实到在 README 里把所有风险都告诉你。**\n但它本质上是一个**赌注项目**：赌 OpenAI 不会立刻把这个桥断掉。你今天用得很爽，明天可能因为一次网页改版或一次政策收紧就全盘归零。把它当 **\"配额紧张时的应急通道\"** 而不是 **\"生产环境的主力依赖\"**，是最健康的使用姿势。\n具体给你的行动建议：\n1. **个人开发机 + 已有 Plus/Pro 订阅** → 从 **Zero Risk 模式**起步，玩顺了再考虑开 Full harness；\n2. **工作电脑或公司账号** → 先看看你司管理员是否允许 Developer Mode + MCP Apps，不允许就直接放弃 Full harness，只考虑 Zero Risk；\n3. **装之前先去 Discussion #188 蹲一下**，看看社区有没有新的风控动向；\n4. **永远别把这个 launcher profile 共享出去**，登录态比你的 API key 还敏感；\n5. **保持 launcher 更新**，UI 改版后的热修一般 24 小时内就会出，老版本卡住别以为是永久故障。\n一句话收尾：**这是一个把\"订阅价值最大化\"做到极致的工具，聪明、克制、坦诚，但它的命运不由它自己决定——用之前想清楚，用的时候留后路。**",
+  "type": "project",
+  "dateAdded": "20260927"
+}
