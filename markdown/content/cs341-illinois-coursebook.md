@@ -1,0 +1,127 @@
+# cs341-illinois/coursebook
+
+[GitHub URL](https://github.com/cs341-illinois/coursebook)
+
+
+## UIUC Coursebook 深度评测：GitHub 上的免费系统编程黄金教材
+
+> UIUC 官方开源的系统编程免费教材，C 语言 + Linux 学习者从入门到进阶的高性价比路线图
+
+- **Tags**: 系统编程, C语言, Linux, 开源教材, UIUC
+- **Category**: 编程学习, 开源项目, 教育资源
+
+## Details
+
+# UIUC Coursebook 深度评测：一本被严重低估的、藏在 GitHub 里的"系统编程黄金教材"
+> **一句话总结**：这是伊利诺伊大学香槟分校（UIUC）CS 341《系统编程》课程的官方开源教材，由 Lawrence Angrave 教授领衔维护、以 LaTeX 为底座、通过 CI 自动构建出 PDF/EPUB/HTML 三种形态，把传统出版级教科书和众包社区力量揉进了一个 GitHub 仓库——**它是 C 语言 + Linux/POSIX 系统编程世界里，性价比最高的免费路线图之一**。
+---
+## 一、背景与痛点：它要解决什么问题？
+要理解 Coursebook 的价值，得先理解系统编程这门课的"教材荒"。
+长期以来，这个领域只有几本公认的经典：CSAPP（《深入理解计算机系统》）、APUE（《UNIX 环境高级编程》）、K&R（《C 程序设计语言》）。它们写得极好，但共同痛点是——**厚、贵、抽象、缺代码**。CSAPP 700 多页，APUE 接近 1000 页，读者常常在第三章就被虚拟内存的图论淹死，还没摸到一行能跑的 `fork()`。
+Coursebook 的前身，是 Angrave 教授在 CS 241 上发起的 **Crowd-Sourced Wikibook 实验**（也就是 GitHub 上 5.6k stars 的 `angrave/SystemProgramming`）。但 wikibook 这种形态很快暴露了短板：章节零散、质量参差、引用缺失、没有术语表。于是 UIUC 团队在仓库里明确写下了重写目标：
+> "Improve the quality and rigour of the original wikibook while maintaining openness... Improve the factualness by including citations, footnotes, extended reading, and a glossary."
+换句话说，Coursebook 想同时做到两件通常互相打架的事：**保持 wiki 的开放免费 + 达到出版级教科书的严谨**。从现状看，它做到了。
+---
+## 二、核心亮点与功能剖析
+### 亮点 1：内容编排——一条"小白到能写系统软件"的清晰路径
+如果把 CSAPP 比作一张精密的系统全景地图，那 Coursebook 就更像一本**跟着教练一步步上手的登山手册**——每一章都告诉你"现在你能跑什么命令、能写什么程序"。
+全书 15 个核心章节，从 C 语言速成起步，依次爬过：
+| 章节阶段 | 内容 | 你能做什么 |
+|---------|------|-----------|
+| 入门 | Background（架构、GDB、Valgrind）→ C 语言 | 会调试，会写指针 |
+| 进程 | Processes、fork-exec-wait 模式 | 写一个迷你 Shell |
+| 内存 | Memory Allocators（含 Buddy/SLUB 案例） | 自己实现一个 malloc |
+| 并发 | Threads、Synchronization、Deadlock | 写出线程安全的数据结构 |
+| 深水区 | IPC、Scheduling、Networking、Filesystems、Signals | 理解 Linux 内核行为 |
+| 综合篇 | Security、Review、Honors（内核/容器化） | 读懂 CVE 与真实事故 |
+最让我眼前一亮的是 **Post Mortems（事故复盘）章节**——它把 Shellshock、Heartbleed、Dirty COW、Meltdown、Spectre、Mars Pathfinder 重启死循环、2003 年东北大停电、索尼 Rootkit 等十几起真实的系统级灾难，逐一拆解成因。**这种"用真实事故反推知识点"的写法，在免费教材里几乎绝无仅有**——你读完 Heartbleed 的复盘，对 `malloc`/`free` 的边界条件理解会立刻立体起来。
+### 亮点 2：工程化程度——教科书界的"CI/CD 先锋"
+大多数教科书是"一锤子买卖"——写完出版，五年不动。而 Coursebook 把教科书当代码来管理：
+- **LaTeX 作为源码**：每个章节一个 `.tex` 文件，由 `order.yaml` 统一编排章节顺序
+- **一键多端输出**：`make` 一条命令，同时产出完整 PDF、分章 PDF、EPUB、HTML 站点
+- **Travis/GitHub Actions 自动构建**：写作者只管推代码，CI 负责编译和部署到 GitHub Pages
+- **写作规范文档**：`CONTRIBUTING.md` 里甚至规定了"哪些词不能用"、"代词怎么指代"、"数字何时拼写"——这种对文字一致性的执念，比很多出版社都专业
+用一句话形容：**它不是一本书，它是一个把书作为"产品"持续迭代的软件工程实践**。
+### 亮点 3：活跃度——到现在还在高频更新
+这是很多开源教材的"死穴"——项目早就不动了。而 Coursebook 截至 2026 年 9 月 26 日（也就是评测前两天）仍在合并 PR，最新的提交由 Angrave 本人与 **Claude（Anthropic 的 AI）联合作者**完成，集中清理了一大批 `future-concerns-for-review.md` 里标注的事实错误、模糊句式、图文不一致的问题，还专门**重画了 6 张图文矛盾的示意图，并为 45 张图补齐了无障碍替代文本**。
+- Stars：约 **2.2k**
+- Forks：**217**
+- Commits：**705+**
+- 主维护者：Lawrence Angrave（UIUC 教授，本人活跃在 commits 里）
+**这种维护强度，放眼整个 GitHub 开源教材领域都算得上第一梯队。**
+### 亮点 4：许可证友好——三重许可，学术与商用都照顾到
+仓库采用了清晰的三层许可结构：
+| 内容类型 | 许可证 | 意味着什么 |
+|---------|--------|-----------|
+| 代码贡献 | **NCSA**（University of Illinois/Open Source License） | 可商用、可修改、可闭源衍生 |
+| 原始 Wikibook 内容 | LICENSE.original（Angrave 原仓库继承） | 兼容上游 |
+| 生成的 PDF/Markdown | **CC-BY 4.0** | 可自由转载/印刷/商用，只需署名 |
+对学生、老师、企业内部培训来说，这份许可几乎"零门槛"——你可以把它打印成内部讲义、塞进公司新人手册、甚至二次改写成自己的课程教材，都不侵权。
+### 亮点 5：示例代码风格——"短、准、狠"
+Coursebook 的代码哲学在 `CONTRIBUTING.md` 里写得明明白白：
+> "Opt for small snippets of code and explanations around them. We want people who are learning to craft their own functions."
+下面是一段示意性的 `fork-exec-wait` 模式，也是全书最核心的惯用法之一（真实书中有更详细的错误处理）：
+```c
+#include <unistd.h>
+#include <sys/wait.h>
+#include <stdio.h>
+int main() {
+    pid_t pid = fork();           // 复制出一个子进程
+    if (pid == 0) {
+        // 子进程：用 exec 替换成新程序
+        execlp("ls", "ls", "-l", NULL);
+        perror("exec failed");    // 只有 exec 失败才会到这里
+        return 1;
+    } else {
+        // 父进程：等待子进程结束，避免僵尸进程
+        int status;
+        waitpid(pid, &status, 0);
+        printf("Child exited with %d\n", WEXITSTATUS(status));
+    }
+    return 0;
+}
+```
+短短十几行，就把进程复制、程序替换、状态回收三个系统编程最核心的概念串了起来——这正是 Coursebook 一贯的教学风格。
+---
+## 三、目标人群与收益：谁该立刻去 fork 这个仓库？
+| 人群 | 具体收益 | 推荐阅读方式 |
+|------|---------|-------------|
+| **CS 本科生**（学 OS / 系统编程） | 免费、带习题、有 GDB/Valgrind 实战，替代昂贵教材 | 按章节顺序精读 + 跑 Homework 0 |
+| **转型后端的工程师** | 补齐进程/线程/IPC/信号盲区，看懂线上诡异 Bug | 重点读 Threads/Sync/Signals/Post Mortems |
+| **面试准备者**（大厂系统岗） | Buddy Allocator、SLUB、Banker's Algorithm、Dining Philosophers 都是高频面试题 | 直接跳到对应章节 + Questions |
+| **自学者 / 跨专业转行** | 比 CSAPP 门槛低，比 APUE 轻量，有完整学习路径 | 从第 3 章 C 语言速成起步 |
+| **高校教师** | CC-BY 许可下可直接改成自己的讲义 | Fork + LaTeX 修改 |
+| **开源爱好者** | 仓库明文欢迎新人 PR，是练手 LaTeX + 一次真实贡献的好项目 | 从 Issues 里挑简单的做 |
+---
+## 四、竞品对比：它凭什么挤进"必读书单"？
+| 维度 | **Coursebook** | **CSAPP**（深入理解计算机系统） | **APUE**（UNIX 环境高级编程） | **Angrave Wikibook**（原版） |
+|------|---------------|--------------------------------|--------------------------------|-----------------------------|
+| 价格 | **免费** | ~¥139 | ~¥199 | 免费 |
+| 篇幅 | ~600 页 PDF | 736 页 | 960+ 页 | 分散 wiki 条目 |
+| 侧重 | C + Linux/POSIX 系统编程 | 软硬件全栈视角 | 纯 UNIX API 手册 | 同 Coursebook 但粗糙 |
+| 实战代码 | 短小、可运行、紧贴章节 | 较抽象，Demo 偏架构 | API 手册式，案例少 | 零散 |
+| 习题 | 每章末 Questions/Exercises | 经典 Homework + Lab | 有，但无配套判题 | 无系统习题 |
+| 更新频率 | **持续更新中（2026.9）** | 3 年一大版 | 多年未再版 | 基本停更 |
+| 学习曲线 | 友好，渐进式 | 陡峭 | 陡峭 | 碎片化 |
+| 适合场景 | **入门到进阶的主教材** | 计算机系统全景 | API 查询手册 | 参考 |
+| 开源协议 | NCSA + CC-BY 4.0 | 商业版权 | 商业版权 | GPL 类 |
+**结论**：Coursebook 不试图取代 CSAPP 的"全景深度"，也不对标 APUE 的"API 百科"定位。它卡在中间——**是一本"可以一页页读下去"的系统编程主教材**，CSAPP 当参考书，APUE 当字典，Coursebook 当课本，三者组合食用效果最佳。
+---
+## 五、局限与不足：这些坑你必须提前知道
+客观说，Coursebook 并非完美。以下痛点在使用前要有心理准备：
+1. **纯英文，无中文翻译**。目前只有英文版，对英语阅读有硬性要求。技术英语相对直白，但节奏慢的读者需要适应。
+2. **强绑定 Linux/POSIX**。全书代码、系统调用、调试工具（GDB、Valgrind）都以 Linux 为准。如果你是 Windows 主力开发，需要先装好 WSL2 或虚拟机，否则代码一行都跑不起来。
+3. **有前置门槛**。仓库 README 明确写道："assumes that you have taken a programming language course and are familiar with assembly instructions"。**零基础 C 语言小白不建议从这里起步**，先过完 K&R 或 C Primer Plus 再来。
+4. **配套作业不完全开放**。CS 341 课程的真实 MP（Machine Problem，编程大作业）托管在课程平台上，GitHub 仓库里只有教材正文，缺少可以独立跑的判题环境。自学者需要自己找类似的 lab 来练手（比如 MIT 6.S081 的 xv6 lab 可作为补充）。
+5. **部分主题深度有限**。像 `io_uring`、`epoll` 高级用法、现代 eBPF 等较新的 Linux 特性，Coursebook 覆盖较浅或完全没有。它更适合打地基，不适合追新。
+6. **LaTeX 本地构建较重**。想自己编译 PDF，需要安装 `texlive-full`（几个 GB）。如果只是想读书，直接下载仓库根目录的 `main.pdf` 就够了，不必折腾环境。
+---
+## 六、结语与行动建议
+**它值得每一个想把 C/系统编程真正搞明白的开发者放进书签栏。** 在一个动辄上百美元的教材市场里，UIUC 团队用 GitHub + LaTeX + CI，交付了一本由顶尖教授持续打磨、带真实事故复盘、完全免费开放的系统编程教材——这件事本身，就是开源精神的最佳注脚。
+**给你的具体行动清单**：
+- 🟢 **如果你是学生/转行者**：直接下载 [`main.pdf`](https://github.com/cs341-illinois/coursebook) 从第 3 章开始读，配上 Ubuntu 虚拟机，每章末的 Questions 至少做一半
+- 🟡 **如果你是工程师**：直接跳到第 7 章 Synchronization、第 13 章 Signals、第 18 章 Post Mortems，一晚就能补掉长期的知识盲区
+- 🔵 **如果你想给开源做贡献**：仓库的 [Issues 区](https://github.com/cs341-illinois/coursebook/issues)有 48 个开放议题，从修错别字到补图示都欢迎，`CONTRIBUTING.md` 写得极其友好
+- ⚪ **如果你英语吃力**：可以拿 CSAPP 中文版当平行参考，读不懂的段落两边对照，效果反而比单读更好
+GitHub 地址再放一次：**github.com/cs341-illinois/coursebook** 
+读完你会发现，系统编程并不神秘——它只是一群前人踩过的坑，被人认真写了下来，供你免费翻阅。
