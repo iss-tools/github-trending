@@ -1,0 +1,131 @@
+# pollen-robotics/microduck
+
+[GitHub URL](https://github.com/pollen-robotics/microduck)
+
+
+## Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'
+
+> 399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。
+
+- **Tags**: 双足机器人, 强化学习, Rust, sim2real, 具身智能
+- **Category**: 机器人与具身智能, 开发工具, AI/机器学习
+
+## Details
+
+# Microduck 仓库深度评测：一只 25 厘米高、会用强化学习走路的"纸面大脑"
+> **一句话总结**：这是 Hugging Face 旗下机器人团队 Pollen Robotics 为其 399 美元桌面级双足机器人 **Microduck** 开源的"大脑"仓库——Rust 写的嵌入式运行时 + 50 Hz 神经策略控制循环 + 完整 sim2real 链路，是迄今**工程完成度最高的小型消费级双足机器人软件栈之一**，但强"软件开源"≠"整机开源硬件"，这是它最需要被澄清的一件事。
+---
+## 先讲结论
+如果你只用一个比喻去理解 microduck 这个仓库，可以把它想成**一只装了"大脑与小脑"的鸭子：`microduck` 是小脑（负责 50 Hz 实时运动控制、舵机总线、电源、更新、蓝牙、摄像头这些命脉），隔壁的 `microduck_rl` 是大脑皮层（在 MuJoCo 里用 PPO 训练出走路、起身、滑轮等策略，再以 ONNX 形式喂给小脑执行）**。
+它的稀缺性来自三个关键词的交集：**双足 + 强化学习 + $399 桌面级**。在 2026 年之前，这三者几乎不可能同时出现在同一台 800 克的机器人上——Unitree G1 最小 9.9 万元起，开源可行走的项目要么是 5 万美元级 Stanford Dog/OP 系列，要么是 R&D 状态、跑不动的 hobby 项目。Microduck 的出现，本质上是把 Hugging Face 的"模型即代码、社区可复现"那一套**搬进了物理 AI（Physical AI）世界**。
+但也要先说清楚一件事：**官方文档和 press kit 都明确声明，"开源"仅覆盖软件栈，机械和电子设计文件并不开源，请不要把它描述为"open-source hardware"**。这条边界，决定了它适合谁、不适合谁。
+---
+## 项目档案速览
+| 维度 | 内容 | 备注 |
+|---|---|---|
+| **定位** | Microduck 双足机器人的官方运行时仓库（"the duck's brain"） | 与 `microduck_rl`（策略训练）配套使用 |
+| **语言/技术栈** | Rust（单一 workspace，无框架） | 7 个 daemon 各司其职，通过 Unix socket + JSON-RPC 通信 |
+| **目标硬件** | 自家的 Microduck 机器人（RK3566 + 1 GB RAM + 32 GB 存储 + 15 个 XL330 舵机） | 非通用平台，与硬件强耦合 |
+| **开源协议** | Apache 2.0 | 可商用、可修改、可再分发 |
+| **架构核心** | `robotd` / `updaterd` / `configd` / `btd` / `padd` / `mediad` / `tofd` 七个守护进程 | 单一 JSON-RPC 合约，App / 控制台 / 手柄 / 你的脚本用同一套调用 |
+| **控制频率** | 50 Hz 神经策略控制循环 | 与 RL 训练频率严格对齐，这是 sim2real 能成功的前提之一 |
+| **策略来源** | `microduck_rl`（MuJoCo Warp + PPO + mjlab） | 输出 ONNX，运行时热切换 |
+| **文档质量** | `docs/design/`（架构设计）、`docs/project/`（事后复盘）、`docs/ideas/`（待定想法） | **罕见的高水准**，每个机制只有一个"唯一真源"页面，其他页面只链接不重复 |
+| **社区生态** | 已出现第三方策略分享站 duckio.net | 早期但活跃，Hacker News / X 上讨论热度高 |
+| **商业模式** | 硬件 $399（首批发货 2026 圣诞前，仅北美/欧洲/英国） | 软件 100% 免费，24 小时内预购额突破 $260 万 |
+---
+## 背景与痛点：Hugging Face 为什么要造一只鸭子
+要理解 microduck 仓库，必须先看它背后的团队。
+**Pollen Robotics** 2016 年由前 Inria 研究员在波尔多创立，2025 年 4 月被 Hugging Face 收购，成为其官方机器人部门。此前代表作是 7 万美元级的人形机器人 **Reachy 2**（被 CMU、Cornell、CNRS 等机构采用）和 2025 年底开售的桌面机器人 **Reachy Mini**（10,000+ 台出货）。
+Microduck 是他们的**第二款消费级机器人**，而它的立项动机，官方博客说得很清楚：
+> "Reachy Mini 是为**交互**而生的 AI 平台——它看、听、说。Microduck 从物理 AI 的另一侧切入——**行动**。怎么教一个机器人移动？怎么在仿真里训练行为、迁移到真机、看到哪里出问题、再来一遍？"
+这句话背后的痛点是：**在大型人形机器人上做 RL 实验，每次失败都昂贵、难复位、甚至不安全**。把机器人做小做轻到 800 g，"一次失败通常只是小机器人摔倒在地上，而不是一场事故"。这就是为什么 Microduck 选择 25 cm / 800 g / 桌面级——它本质上是**给"具身智能研究者"准备的一台可以随意摔的实验机**。
+而 microduck 这个仓库要解决的软件痛点同样清晰：**如何让一个 $399 的消费级硬件，具备实验室级机器人的可靠性？**答案写在它的架构里。
+---
+## 核心亮点与架构剖析：这不是一个玩具，这是一台小型"航天器"
+### 1. 七个 daemon 的解耦架构——把"机器人操作系统"做小做对
+仓库的 Rust workspace 里有 7 个独立 daemon，每个只管一件事：
+- **`robotd`**：50 Hz 控制循环 + Dynamixel 舵机总线 + 模型推理 + 安全护栏（系统的"心脏"）
+- **`updaterd`**：签名发布验证、原子切换、健康检查、自动回滚（**"让机器人不被刷砖"是它的存在意义**）
+- **`configd`**：WiFi 与设备身份
+- **`btd`**：手机通过 BLE 配置机器人的通道
+- **`padd`**：读取游戏手柄输入
+- **`mediad`**：通过 WebRTC 串流摄像头画面
+- **`tofd`**：服务 8×8 ToF 深度传感器
+**它们通过统一的 JSON-RPC 合约在 Unix socket 上通信**，意味着无论你是 App、浏览器控制台、游戏手柄还是自己写的 Python 脚本，**调用方式完全一致**。这是非常干净的 API 设计哲学——避免了大多数机器人项目里"官方 App 一套 API、开发者脚本另一套 API"的精神分裂。
+> **形象比喻**：传统机器人项目往往像一锅粥——控制、网络、UI 代码缠在一起，改一个地方全身抖。microduck 更像**人体器官系统**：心脏管跳动、肺管呼吸、胃管消化，各司其职，通过神经信号（JSON-RPC）通信。哪一个器官坏了，可以单独换掉。
+### 2. 设计决策文档——开源机器人项目里的"少数派"
+README 里有一句令人刮目相看的话：
+> "The interesting decisions are written down: `docs/design/` is why things are the way they are, and `docs/project/` is what has gone wrong and what would close it."
+`docs/design/` 里每一个机制都有唯一权威文档：`robotd-design.md`（控制循环）、`updater-design.md`（更新引擎）、`app-path-design.md`（BLE 路径）、`remote-webrtc.md`（远程操控）、`boot-recovery-net.md`（降级到 golden 固件的机制）……而且明确规定**"一个事实只写在一处，其他地方只链接不重复；如果两份文档冲突，不拥有该机制的那份是 bug"**。
+`docs/project/` 里则坦白地写着"**四个 install-path bug 是怎么溜到真机上的，以及规则如何被修补**"。这种把"事故复盘"开源出来的做法，在 GitHub 上比 Star 数本身更稀有。
+### 3. 模拟器优先——没有鸭子也能开发
+`scripts/duck-sim` 允许**用真机的 daemon 跑 MuJoCo 里的仿真鸭子**——可以单只开一个窗口，也可以同时跑 4 只当作远程机器登录。这解决了一个开源硬件项目最致命的门槛问题：**没买到硬件、排队等发货的开发者，也能立刻写代码**。
+### 4. 配套的 `microduck_rl`：一行命令就能训练一只走路鸭子
+隔壁 `microduck_rl` 仓库封装了完整的 sim2real 配方：mjlab（MuJoCo Warp）+ PPO，4096 个并行环境、单张 4090 级 GPU 训练 **1–2 小时就能得到可用步态**；没有 GPU 可以加 `--hf-jobs` 直接在 Hugging Face Jobs 上训练。
+值得特别强调的是它的**执行器建模精细度**：用的是 **BAM M6 模型**——按 Dynamixel XL330 舵机的电压控制律、反电动势、Coulomb/Stribeck 摩擦建模，而不是理想 PD 控制器。官方说得非常清楚：
+> "At this scale — tiny servos driving a ~800 g biped — actuator fidelity is most of the sim2real gap."
+甚至每个主任务都有 **Backlash 变体**——在模型里为 14 个舵机各串联 ±1° 的齿轮间隙，且观测值会**穿过间隙读取**，让训练环境更贴近真实物理。这种精细度，是把它跟"随便跑个 MuJoCo + PPO 就号称 sim2real"的玩具项目区分开的分水岭。
+---
+## 实操演示：核心代码片段长什么样
+### 示例 1：在仿真里训练走路策略（microduck_rl 仓库）
+```bash
+git clone https://github.com/pollen-robotics/microduck_rl
+cd microduck_rl
+# 一行命令在本地 GPU 训练行走策略，约 1-2 小时
+uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096
+# 在查看器里回放训练好的策略
+uv run play Mjlab-Velocity-Flat-MicroDuck --wandb-run-path <entity/project/run_id>
+# 导出为 ONNX，部署到真机
+uv run scripts/export.py Mjlab-Velocity-Flat-MicroDuck --wandb-run-path <...>
+# 没有 GPU？直接丢到 Hugging Face Jobs 上跑
+uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096 --hf-jobs
+```
+### 示例 2：一次仿真同时跑 4 个策略做对比
+```bash
+uv run scripts/infer_policy.py --walking walk.onnx --standing stand.onnx \
+    --sitstand sitstand.onnx --roulade roulade.onnx --new-cmd-obs
+```
+键盘控制：`G` 触发地面抓取、`Y` 坐/站切换、`R` 前滚翻、`K`/`L` 踢球。
+### 示例 3：通过运行时热切换策略
+61 维观测合约是**所有策略共享的接口**——行走策略检测到跌倒 → `robotd` 在 50 Hz 循环里热切换到 `standup` 策略 → 起身后切回 `walk`。这个过程对开发者透明，写自己的新策略时也遵循同一合约即可无缝接入。
+---
+## 目标人群与收益：谁应该关注这个仓库
+| 人群 | 能得到什么 | 门槛 |
+|---|---|---|
+| **具身智能 / RL 研究者** | 一个**完整可复现的 sim2real 流水线**——从 MuJoCo 训练到真机部署全部开源，可用于论文 baseline 或课程项目 | 中等，需 RL 基础 |
+| **机器人/嵌入式工程师** | 学习一份**教科书级的 Rust 嵌入式架构**：多 daemon 解耦、签名更新、健康检查、JSON-RPC IPC 设计，很多经验可直接迁移到自家硬件项目 | 中高，需 Rust 基础 |
+| **Hugging Face 生态开发者** | 把"训练一个策略"当成"微调一个模型"：用 HF Jobs、发布到 Hub、社区分享 ONNX | 低-中 |
+| **教育者 / STEAM 老师** | 一台 399 美元、自带游戏手柄、开机即玩、还能进阶到写代码的双足机器人，是理想的"具身 AI 教学"教具 | 低 |
+| **机器人爱好者 / 创客** | 拿到即可开箱走路/滑轮/起身，进阶可改策略；但注意**机械结构不开源，不能自己 3D 打印复制一台** | 低 |
+| **想"白嫖开源代码避开硬件"的人** | ❌ 不合适——这是一个**硬件绑定的运行时**，没有 Microduck 真机就只能玩仿真 | — |
+---
+## 竞品对比：在桌面级 RL 机器人里，它站在哪里
+| 产品 | 价格 | 形态 | RL 训练能力 | 真机 sim2real | 开源程度 |
+|---|---|---|---|---|---|
+| **Microduck**（Pollen / HF） | $399 | 25 cm 双足 | ✅ mjlab + PPO 完整配方 | ✅ 完整闭环 | 软件全开源，**硬件不开源** |
+| **Reachy Mini**（Pollen / HF） | ~$299 起 | 桌面交互机器人（无腿） | ❌ 主打交互/语音 | ❌ | 软件 Apache 2.0 |
+| **Unitree Go2 / B2** | $1,600–$60,000+ | 四足/人形 | 部分开源（lerobot 生态） | 部分支持 | SDK 开源，内部闭源 |
+| **Robotis OP3 / OP5** | ~$12,000+ | 人形 | 需自建训练栈 | 罕见 | 硬件+软件全开源 |
+| **OP3 junior / Poppy / 小型 hobby 双足** | $500–$3,000 | 双足 | ❌ 多为手工 CPG 控制 | ❌ | 硬件软件都开源 |
+| **Stanford Pupper / Doggo 类** | $1,000–$3,000 | 四足 | 部分支持 | 部分支持 | 硬件软件全开源 |
+**Microduck 的独特竞争力**：它是目前**唯一一个把"399 美元消费级价格 + 完整 RL sim2real 闭环 + HF 生态级训练工具链"三者同时凑齐**的桌面双足机器人。如果一定要挑对手，最像的是 **Unitree G1**（开源 SDK + RL 训练），但 G1 起步价约 9.9 万元，完全不在同一预算段。
+---
+## 局限与不足：这本书必须诚实翻过去
+1. **不是开源硬件**。官方 press kit 用加粗大写字明确警告："The open-source statement covers the software stack. The mechanical and electronic design files are not"。想自己 3D 打印、复刻、维修改装的用户会被挡住——这一点宣传时常被模糊化，值得注意。
+2. **仓库与硬件强绑定**。README 明确写着"This repo is the duck's brain"——`robotd` 里对 Dynamixel XL330 总线、RK3566 NPU、ToF 矩阵的调用都是针对 Microduck 的。想把它移植到自研机器人，能借鉴的是架构思想，但**不能直接拿来当通用运行时**。
+3. **硬件尚未大规模发售**。2026 年 8 月 27 日开启预购，首批目标 2026 圣诞前发货，**且仅北美、欧洲和英国**——中国大陆用户目前不在首发区。
+4. **策略库覆盖面还很小**。当前 microduck_rl 有 14 个任务（走路、起身、抓取、滑轮等），官方自己也承认：" shipping 的行为不是 Microduck 永远能做到的终点，它们只是起点"。比起 Boston Dynamics 那种打磨数年的步态库，鸭子现在的动作还比较"萌系"。
+5. **对完全没有 RL 背景的开发者仍有学习曲线**。虽然训练一行命令就能跑起来，但要真正读懂 `robotd-design.md`、自己改 reward 函数、调 domain randomization，需要理解 PPO、MuJoCo、sim2real 这些概念。
+6. **文档偏英文且密度高**。`docs/design/` 那种"单页唯一真源"的风格对资深工程师极其友好，但对只想开箱玩的用户反而是认知负担——好在这部分用户根本不用读它，直接拿手柄开玩就行。
+---
+## 行动建议：三类人各自该怎么做
+**如果你是具身智能研究者** → 现在就可以 clone `microduck_rl` 跑 `uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096`，用 `scripts/duck-sim` 做仿真，甚至不用等硬件到货就能产出成果。把它当**论文 baseline 或课程大作业**都够格。
+**如果你是 Rust/嵌入式工程师** → 重点读 `docs/design/architecture.md` 和 `robotd-design.md`，那份"单一真源 + 多 daemon + JSON-RPC IPC + 签名更新 + 健康门控回滚"的架构设计，可以原样搬到你自己的嵌入式产品里。这是这个仓库**比"能跑一只鸭子"更值钱**的部分。
+**如果你是普通爱好者/家长/老师** → 直接去 [store.pollen-robotics.com](https://store.pollen-robotics.com/products/microduck) 预订（$399，圣诞前发货），到手插上手柄就能玩走路/踢球/滑轮。想深入代码再回来 clone 仓库。
+**如果你想在硬件到手前围观/预研** → 直接读 `docs/project/` 里的**事故复盘**——这比任何"10 分钟看懂 XX 架构"的二手文章都更有信息量。
+---
+## 结语与终极评判
+Microduck 仓库最有价值的地方，**不是那只鸭子有多萌，而是 Pollen Robotics 把"机器人操作系统该怎么做"用开源、文档化、可复现的方式完整展示了一遍**。从 `docs/design/` 里那些细致到"哪一行有 bug、为什么会产生、规则如何修补"的工程笔记，到 `microduck_rl` 里把 BAM 执行器建模精确到电压控制律和齿轮间隙的 sim2real 配方——这个项目在**工程素养上已经超过绝大多数 GitHub 星标破万的"机器人框架"**。
+它的短板也很明确：硬件不开源、生态刚起步、动作库尚浅、暂无大陆首发。**如果你把它当"开源硬件的 Arduino 时刻"，会失望；如果你把它当"物理 AI 时代的 transformers 库 + 一台能摔的实验鸭子"，它绝对值得下单或至少认真读一遍代码。**
+用官方博客里的一句话收尾：*Reachy Mini 是一个让 AI 交互的平台，Microduck 是一个让 AI 行动的平台*。而 microduck 这个仓库，就是让后者成为可能的那个"行动的大脑"。
