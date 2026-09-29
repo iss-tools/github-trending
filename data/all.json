@@ -1,6 +1,491 @@
 {
   "all": [
     {
+      "id": "8aea1eca-25f3-4b96-bc15-bd89dc9df7e6",
+      "url": "https://github.com/ahujasid/mcp-for-blender",
+      "domain": "github.com",
+      "repo": "ahujasid/mcp-for-blender",
+      "description": "这是一个 2.9 万 Star 的开源 MCP 服务器，通过 socket 通信把 Blender 的 Python API 暴露给 Claude、Cursor 等 AI 客户端，让大模型直接操作 3D 软件。三条命令即可完成安装，MIT 协议免费商用，把 3D 创作门槛从'学三年'降到'会打字'，但复杂精雕建模和安全风险仍需注意。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:53:31.578Z",
+      "metaData": {
+        "forks": "2700",
+        "stars": "29599",
+        "topics": [
+          "3d-modeling",
+          "ai",
+          "blender",
+          "blender-addon",
+          "blender-mcp",
+          "claude",
+          "generative-ai",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "python"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.mcp-for-blender.com/",
+        "description": "Community plugin to control Blender 3D with any LLM of your choice - ahujasid/mcp-for-blender"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Blender",
+          "开源项目",
+          "AI 建模",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "mcp-for-blender 深度评测：用自然语言让 AI 帮你操控 Blender 建 3D 场景",
+        "ability": [
+          "通过自然语言对话驱动 Blender 完成建模、材质、灯光等 3D 操作",
+          "一键接入 Poly Haven、Sketchfab、Poly Pizza 三大免费素材库",
+          "调用 Hyper3D Rodin / Hunyuan3D 实现一句话生成 3D 模型",
+          "支持 AI 执行任意 bpy Python 代码，突破预置工具边界",
+          "内置安全模式与 localhost 隔离，支持 Docker 一键部署"
+        ],
+        "summary": "一根把自然语言插进 Blender 的'USB线'，打字就能让 AI 建模、上材质、打灯光",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "3D 创作"
+        ],
+        "suitable": [
+          "3D 建模小白与学生",
+          "独立游戏开发者",
+          "Blender 老手与技术美术",
+          "建筑/产品可视化从业者",
+          "想学习 MCP 开发的程序员"
+        ],
+        "description": "这是一个 2.9 万 Star 的开源 MCP 服务器，通过 socket 通信把 Blender 的 Python API 暴露给 Claude、Cursor 等 AI 客户端，让大模型直接操作 3D 软件。三条命令即可完成安装，MIT 协议免费商用，把 3D 创作门槛从'学三年'降到'会打字'，但复杂精雕建模和安全风险仍需注意。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "c88f00cd-1e23-4398-8426-d4d549baf938",
+      "url": "https://github.com/longbridge/gpui-kit",
+      "domain": "github.com",
+      "repo": "longbridge/gpui-kit",
+      "description": "GPUI Kit 是香港券商 Longbridge 开源的 Rust GUI 组件库，将 Zed 编辑器的 GPUI 渲染引擎封装成 75+ 个致敬 shadcn/ui 风格的现成组件，已在自家商业交易终端 Longbridge Pro 中生产验证。它支持明暗主题、无障碍访问、UI 测试，是目前 Rust 生态中最完整的桌面 UI 解决方案，但仍处于 0.x 版本且社区沉淀较薄。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:48:58.520Z",
+      "metaData": {
+        "forks": "941",
+        "stars": "15008",
+        "topics": [
+          "desktop-application",
+          "gpui",
+          "rust",
+          "uikit"
+        ],
+        "license": "CC BY 4.0 license",
+        "homepage": "http://gpui-kit.com",
+        "description": "Rust GUI components for building fantastic cross-platform desktop application by using GPUI. - longbridge/gpui-kit"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "GPUI",
+          "GUI组件库",
+          "桌面开发",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "GPUI Kit 深度评测：Rust 桌面开发的 shadcn/ui",
+        "ability": [
+          "提供 75+ 生产级 UI 组件（表格、Dock 面板、图表等）",
+          "GPU 加速渲染达 120FPS，虚拟滚动流畅处理几十万行数据",
+          "内置代码编辑器组件，支持 Tree-sitter 语法高亮与 LSP",
+          "三层架构（base/component/shell），既能开箱即用也能自建设计系统",
+          "内建无障碍支持（AccessKit）与 UI 自动化测试能力"
+        ],
+        "summary": "Longbridge 开源的 Rust 桌面 UI 组件库，基于 Zed 编辑器的 GPUI 引擎，提供 75+ 开箱即用组件，让 Rust 桌面开发像搭积木一样简单。",
+        "category": [
+          "开发工具",
+          "GUI 框架",
+          "Rust 生态"
+        ],
+        "suitable": [
+          "需要开发交易终端、量化看板的 Rust 开发者",
+          "想做 IDE、SQL 客户端、日志分析等数据密集型工具的开发者",
+          "被 egui 样式简陋或 Iced 生态不成熟劝退的 Rust 学习者",
+          "想构建自有设计系统的前端/桌面团队",
+          "需要为应用添加 JS 插件扩展能力的软件架构师"
+        ],
+        "description": "GPUI Kit 是香港券商 Longbridge 开源的 Rust GUI 组件库，将 Zed 编辑器的 GPUI 渲染引擎封装成 75+ 个致敬 shadcn/ui 风格的现成组件，已在自家商业交易终端 Longbridge Pro 中生产验证。它支持明暗主题、无障碍访问、UI 测试，是目前 Rust 生态中最完整的桌面 UI 解决方案，但仍处于 0.x 版本且社区沉淀较薄。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "d2653c3a-cc2c-4b7b-9ab3-723096c4bff9",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "domain": "github.com",
+      "repo": "NVIDIA/SkillSpector",
+      "description": "SkillSpector 是 NVIDIA 2026 年开源的 Agent Skill 安全扫描器。研究显示超四分之一社区 Skill 存在漏洞，它通过静态分析加 LLM 语义三层审查，在安装前识别 Prompt 注入、凭证窃取、恶意软件等风险并输出 0-100 风险评分，还能以 MCP 形式常驻 Agent，成为安装 Skill 前的自动安全守门员。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:44:19.590Z",
+      "metaData": {
+        "forks": "1620",
+        "stars": "18572",
+        "topics": [
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "ai-security",
+          "claude-code",
+          "mcp",
+          "prompt-injection",
+          "security-scanner",
+          "security-tools",
+          "security-workflow",
+          "supply-chain-security"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/scanning-agent-skills",
+        "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them. - NVIDIA/SkillSpector"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "AI Agent",
+          "安全扫描",
+          "开源项目",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "NVIDIA SkillSpector 深度评测：AI Agent 时代的“杀毒软件”",
+        "ability": [
+          "71 种规则静态扫描 Agent Skill，覆盖 Prompt 注入、数据外传、供应链攻击等 17 大类风险",
+          "LLM 三层语义分析，识别藏在 SKILL.md 里的“散文式恶意指令”，Meta-Analyzer 自带反越狱加固",
+          "一行命令扫描本地目录、GitHub 仓库、Zip 包，支持 Terminal/JSON/SARIF 等多种输出并接入 CI/CD",
+          "MCP Server 模式嵌入 Claude Code 等 Agent，变成安装 Skill 前的运行时守门员",
+          "支持 Ollama/vLLM 本地离线推理，敏感代码不出网，Apache 2.0 免费商用"
+        ],
+        "summary": "NVIDIA 开源的 AI Agent Skill 安全扫描器，在你安装 Skill 之前揪出恶意指令和数据窃取风险。",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "Claude Code / Codex CLI / Gemini CLI 等 AI Agent 重度用户",
+          "企业安全与平台工程师",
+          "Skill / MCP 生态开发者与贡献者",
+          "需要私有化部署和合规审计的团队",
+          "开发 AI Agent 应用的厂商"
+        ],
+        "description": "SkillSpector 是 NVIDIA 2026 年开源的 Agent Skill 安全扫描器。研究显示超四分之一社区 Skill 存在漏洞，它通过静态分析加 LLM 语义三层审查，在安装前识别 Prompt 注入、凭证窃取、恶意软件等风险并输出 0-100 风险评分，还能以 MCP 形式常驻 Agent，成为安装 Skill 前的自动安全守门员。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "b0585dc2-b1a3-4a65-a911-2f1159e40587",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+      "domain": "github.com",
+      "repo": "PrismML-Eng/Bonsai-demo",
+      "description": "Bonsai-demo 是加州理工背景初创公司 PrismML 的官方开源仓库，提供三元量化大模型的运行时与部署脚本。其核心技术是量化感知训练，从训练阶段就让模型适配 {−1,0,+1} 三元权重，使 27B 模型体积仅 5.9GB，支持 RTX 5090 上 143 tok/s 吞吐与 262K 上下文，采用 Apache 2.0 许可可免费商用。需注意其依赖 PrismML fork 版 llama.cpp，1-bit 版本工具调用能力下降明显，做 Agent 建议选 ternary 版本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:39:43.087Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "大模型量化",
+          "本地部署",
+          "三元量化",
+          "开源项目",
+          "边缘计算"
+        ],
+        "cover": "",
+        "title": "PrismML Bonsai-demo 深度评测：让 27B 大模型跑进 6GB 内存的本地部署工具包",
+        "ability": [
+          "三元/一比特极端量化，27B 模型压缩至 5.9GB 仍保留 98.2% 智能度",
+          "一键脚本部署，自动适配 Metal/CUDA/Vulkan/ROCm/CPU 多平台",
+          "262K 超长上下文处理，支持 4-bit KV cache 省显存",
+          "多模态视觉理解 + 原生 Agent 工具调用 + MCP 支持",
+          "OpenAI 兼容 API，可无缝接入 Open WebUI、Cline 等现有应用"
+        ],
+        "summary": "官方开源的本地大模型部署工具，用三元量化把 54GB 的 27B 多模态模型压到 5.9GB，普通笔记本和手机就能跑出云端级推理能力。",
+        "category": [
+          "开发工具",
+          "AI 模型",
+          "本地部署"
+        ],
+        "suitable": [
+          "隐私敏感的专业用户（律师/医生/咨询）",
+          "Agent 应用开发者",
+          "边缘设备与移动端创业者",
+          "成本敏感的 AI 应用团队",
+          "本地大模型爱好者"
+        ],
+        "description": "Bonsai-demo 是加州理工背景初创公司 PrismML 的官方开源仓库，提供三元量化大模型的运行时与部署脚本。其核心技术是量化感知训练，从训练阶段就让模型适配 {−1,0,+1} 三元权重，使 27B 模型体积仅 5.9GB，支持 RTX 5090 上 143 tok/s 吞吐与 262K 上下文，采用 Apache 2.0 许可可免费商用。需注意其依赖 PrismML fork 版 llama.cpp，1-bit 版本工具调用能力下降明显，做 Agent 建议选 ternary 版本。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "117bdf59-1df1-47cf-bda8-d4aa37b5b54b",
+      "url": "https://github.com/rakyll/hey",
+      "domain": "github.com",
+      "repo": "rakyll/hey",
+      "description": "hey 是 Google 前资深工程师 rakyll 用 Go 编写的开源压测工具，拥有 20k+ Star。它继承 ab 的极简理念又补齐现代化能力：一条命令即可压测接口，输出包含延迟直方图、p99 分位数和 DNS/建连/响应分段计时，被 CNCF 项目 Flagger 内置采用。适合快速摸底接口性能，但不支持脚本编排，且存在协调遗漏问题。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:26:43.285Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "HTTP压测",
+          "性能测试",
+          "Go开源项目",
+          "命令行工具",
+          "后端开发"
+        ],
+        "cover": "",
+        "title": "hey：一行命令搞定 HTTP 接口压测的轻量级神器",
+        "ability": [
+          "一行命令快速压测 HTTP 接口，30 秒拿到 QPS 和错误分布",
+          "输出延迟直方图与 p90/p95/p99 分位数报告，直击长尾问题",
+          "支持 HTTP/2、自定义 Header、POST 请求体、Basic 认证",
+          "通过 -q 参数实现恒速压测，精准触发限流阈值",
+          "单二进制零依赖部署，支持 CSV 导出便于 CI 集成"
+        ],
+        "summary": "一个用 Go 编写的轻量级 HTTP 压测工具，一条命令十秒出报告，是 ab 的现代接班人。",
+        "category": [
+          "开发工具"
+        ],
+        "suitable": [
+          "后端工程师",
+          "SRE / 运维人员",
+          "DevOps / CI 集成开发",
+          "架构师 / 技术选型者",
+          "学生 / 面试准备者"
+        ],
+        "description": "hey 是 Google 前资深工程师 rakyll 用 Go 编写的开源压测工具，拥有 20k+ Star。它继承 ab 的极简理念又补齐现代化能力：一条命令即可压测接口，输出包含延迟直方图、p99 分位数和 DNS/建连/响应分段计时，被 CNCF 项目 Flagger 内置采用。适合快速摸底接口性能，但不支持脚本编排，且存在协调遗漏问题。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "5fa8bf32-4231-4fa1-ae13-536696e2e46f",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "domain": "github.com",
+      "repo": "VectifyAI/PageIndex",
+      "description": "PageIndex 是 Vectify AI 开源（MIT 协议）的下一代 RAG 框架，核心理念是抛弃 chunking + embedding 的传统范式，用一棵 LLM 可直接导航的文档结构树取代向量数据库。在金融文档基准 FinanceBench 上达到 98.7% 准确率，特别适合财报、合同等技术手册等结构化长文档，但查询延迟和 LLM 调用成本较高，多文档扩展能力仍在演进。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:20:51.279Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "RAG",
+          "LLM",
+          "文档检索",
+          "向量数据库替代",
+          "Agent 集成"
+        ],
+        "cover": "",
+        "title": "PageIndex 深度评测：抛弃向量数据库的推理式 RAG，98.7% 准确率刷新 SOTA",
+        "ability": [
+          "树状文档索引：不切块、不建向量，直接按章节层级生成 JSON 目录树",
+          "推理式检索：让 LLM 像人一样翻目录、选分支、读原文自主定位答案",
+          "可审计检索路径：每条答案带完整推理轨迹和页码引用",
+          "跨文档引用追踪：遇到'详见附录G'能自动跳转引用页面",
+          "MCP/SDK 集成：支持本地模式与 Claude、Cursor 等 Agent 工具链接入"
+        ],
+        "summary": "一个无向量、纯推理的开源 RAG 框架，用 LLM 可导航的文档树取代向量数据库，金融基准准确率达 98.7%",
+        "category": [
+          "开发工具",
+          "AI 检索",
+          "开源框架"
+        ],
+        "suitable": [
+          "金融/法律/合规从业者（需处理财报、合同、招股书）",
+          "企业知识库架构师（想省掉向量数据库成本）",
+          "Agent 开发者（需要给模型接入读长文档能力）",
+          "学术/技术文档重度读者",
+          "RAG 技术研究者"
+        ],
+        "description": "PageIndex 是 Vectify AI 开源（MIT 协议）的下一代 RAG 框架，核心理念是抛弃 chunking + embedding 的传统范式，用一棵 LLM 可直接导航的文档结构树取代向量数据库。在金融文档基准 FinanceBench 上达到 98.7% 准确率，特别适合财报、合同等技术手册等结构化长文档，但查询延迟和 LLM 调用成本较高，多文档扩展能力仍在演进。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "e5c1e4a9-adef-4575-8c46-4a0471e68afa",
+      "url": "https://github.com/oblien/openship",
+      "domain": "github.com",
+      "repo": "oblien/openship",
+      "description": "Openship 是 2026 年开源、半年收获 11.7k Star 的自托管部署平台（PaaS）。它首创桌面 App 形态，通过本地构建 + SSH 直推的方式部署到任意 VPS，服务器上无需安装任何 agent，还能一键'领养'已在运行的容器，实现零成本迁移、无厂商锁定。内建 Postgres、邮件服务器、CDN、监控等能力，Apache-2.0 协议免费商用。不足在于项目较新、文档不全、多节点集群尚未落地。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:16:09.870Z",
+      "metaData": {
+        "forks": "1211",
+        "stars": "13566",
+        "topics": [
+          "agents",
+          "ai",
+          "deployments",
+          "self-hosted"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://openship.io",
+        "description": "Self-hosted deployment platform. Contribute to oblien/openship development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "自托管",
+          "PaaS",
+          "部署平台",
+          "DevOps",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Openship 深度评测：像 Vercel 一样一键部署，数据却握在自己手里",
+        "ability": [
+          "桌面 App + 自托管 + 云三种部署形态，控制面可跑在自己电脑上",
+          "本地构建后经 SSH 直推部署，生产服务器零 agent、零负担",
+          "一键领养服务器上已运行的容器，迁移零成本、无退出税",
+          "内建数据库、邮件服务器、CDN、边缘规则、监控等 42 项能力",
+          "支持 MCP，Claude/Cursor 等 AI Agent 可直接调用部署能力"
+        ],
+        "summary": "开源自托管部署平台，让你像用 Vercel 一样 git push 上线，却把服务器、数据和成本的控制权全部拿回自己手中。",
+        "category": [
+          "开发工具",
+          "部署运维",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / Side Project 党",
+          "不想养 DevOps 的小型创业团队",
+          "想让 AI Agent 自动化部署的程序员",
+          "想从 Vercel/Railway 出逃省钱的用户",
+          "需要平滑迁移存量容器的运维人员"
+        ],
+        "description": "Openship 是 2026 年开源、半年收获 11.7k Star 的自托管部署平台（PaaS）。它首创桌面 App 形态，通过本地构建 + SSH 直推的方式部署到任意 VPS，服务器上无需安装任何 agent，还能一键'领养'已在运行的容器，实现零成本迁移、无厂商锁定。内建 Postgres、邮件服务器、CDN、监控等能力，Apache-2.0 协议免费商用。不足在于项目较新、文档不全、多节点集群尚未落地。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "a6e31831-421b-4c65-818c-6666bad2d97d",
+      "url": "https://github.com/t8y2/dbx",
+      "domain": "github.com",
+      "repo": "t8y2/dbx",
+      "description": "DBX 是基于 Tauri 2 + Rust 打造的跨平台开源数据库客户端（Apache-2.0 协议），以约 25MB 的体积覆盖 MySQL、PostgreSQL、Redis、MongoDB 及 90+ 种数据库，内置 AI SQL 助手与 MCP Server，可让 AI 编程代理直接操作已配置的连接，并提供 SQL 拦截、凭证加密等安全机制，是对 DBeaver、Navicat 的轻量化挑战者。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:10:35.202Z",
+      "metaData": {
+        "forks": "2071",
+        "stars": "21642",
+        "topics": [
+          "ai",
+          "cli",
+          "clickhouse",
+          "database",
+          "database-client",
+          "database-management",
+          "docker",
+          "gui",
+          "mcp",
+          "mongodb",
+          "mysql",
+          "postgresql",
+          "redis",
+          "rust",
+          "sql-server",
+          "sqlite",
+          "tauri",
+          "vue"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://dbxio.com",
+        "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。 - t8y2/dbx"
+      },
+      "summaryData": {
+        "tags": [
+          "数据库客户端",
+          "开源项目",
+          "Rust",
+          "MCP",
+          "Tauri"
+        ],
+        "cover": "",
+        "title": "DBX 深度评测：25MB 的 Rust 数据库客户端，用 AI 原生能力挑战 DBeaver",
+        "ability": [
+          "一个客户端管理 90+ 种数据库，含达梦、人大金仓、OceanBase 等信创数据库",
+          "安装包仅约 25MB，秒级启动，零 Java/Node 运行时依赖",
+          "AI SQL 助手：自然语言生成、解释、优化 SQL，支持本地 Ollama",
+          "MCP Server 让 Claude Code、Cursor 等 AI 编程代理安全读写数据库",
+          "细粒度安全闸门：CLI 默认只读，写操作需逐级解锁"
+        ],
+        "summary": "一个仅 25MB 的开源数据库客户端，能管理 90+ 种数据库，还内置 AI 助手让 Claude、Cursor 直接帮你查库。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "数据库"
+        ],
+        "suitable": [
+          "独立开发者与小团队（摆脱 Navicat 授权合规隐患）",
+          "需要同时管理多种数据库的运维/后端工程师",
+          "信创/政企项目的开发工程师",
+          "想把数据库接入 AI 工作流的 AI 编程用户",
+          "使用低配电脑、在意软件体积和内存占用的用户"
+        ],
+        "description": "DBX 是基于 Tauri 2 + Rust 打造的跨平台开源数据库客户端（Apache-2.0 协议），以约 25MB 的体积覆盖 MySQL、PostgreSQL、Redis、MongoDB 及 90+ 种数据库，内置 AI SQL 助手与 MCP Server，可让 AI 编程代理直接操作已配置的连接，并提供 SQL 拦截、凭证加密等安全机制，是对 DBeaver、Navicat 的轻量化挑战者。"
+      },
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
+      "id": "59553b67-5433-4865-9b00-99f5fb5ad796",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "domain": "github.com",
+      "repo": "NVIDIA/OpenShell",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-29T12:05:17.550Z",
+      "metaData": {
+        "forks": "1367",
+        "stars": "9923",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
+      },
+      "summaryData": null,
+      "type": "project",
+      "dateAdded": "20260929"
+    },
+    {
       "id": "02f646e6-a9ee-4125-856e-9078590b57c1",
       "url": "https://github.com/pollen-robotics/microduck",
       "domain": "github.com",
@@ -65,7 +550,7 @@
       "createdAt": "2026-09-28T14:03:42.716Z",
       "metaData": {
         "forks": "26097",
-        "stars": "78087",
+        "stars": "78093",
         "topics": [
           "elasticsearch",
           "java",
@@ -407,8 +892,8 @@
       "forks": 0,
       "createdAt": "2026-09-27T13:16:03.509Z",
       "metaData": {
-        "forks": "150",
-        "stars": "2015",
+        "forks": "155",
+        "stars": "2079",
         "topics": [
           "agent-harness",
           "agent-orchestration",
@@ -1311,8 +1796,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "15971",
-        "stars": "93778",
+        "forks": "15984",
+        "stars": "93938",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -1509,7 +1994,7 @@
       "createdAt": "2026-09-24T11:13:00.613Z",
       "metaData": {
         "forks": "263",
-        "stars": "5564",
+        "stars": "5569",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://docs.fxembed.com",
@@ -1614,8 +2099,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5613",
-        "stars": "41828",
+        "forks": "5637",
+        "stars": "42018",
         "topics": [
           "agentic-ai",
           "agents",
@@ -2183,7 +2668,7 @@
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
         "forks": "310",
-        "stars": "3783",
+        "stars": "3793",
         "topics": [
           "agents",
           "api-keys",
@@ -2845,8 +3330,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5495",
-        "stars": "38144",
+        "forks": "5498",
+        "stars": "38165",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3363,8 +3848,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1882",
-        "stars": "27001",
+        "forks": "1886",
+        "stars": "27076",
         "topics": [
           "agent",
           "ai-agent",
@@ -4440,8 +4925,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3037",
-        "stars": "25791",
+        "forks": "3041",
+        "stars": "25827",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -5986,8 +6471,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3048",
-        "stars": "42461",
+        "forks": "3051",
+        "stars": "42496",
         "topics": [
           "agent",
           "agent-skills",
@@ -6250,8 +6735,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
-        "forks": "290",
-        "stars": "8324",
+        "forks": "302",
+        "stars": "8462",
         "topics": [
           "agents",
           "claude-code",
@@ -6589,8 +7074,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4159",
-        "stars": "31136",
+        "forks": "4165",
+        "stars": "31166",
         "topics": [
           "agent",
           "agentic",
@@ -8775,8 +9260,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1722",
-        "stars": "23917",
+        "forks": "1749",
+        "stars": "24206",
         "topics": [
           "antigravity",
           "claude",
@@ -8910,8 +9395,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4745",
-        "stars": "52066",
+        "forks": "4929",
+        "stars": "54082",
         "topics": [
           "ai",
           "animation",
@@ -11415,8 +11900,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:03:31.567Z",
       "metaData": {
-        "forks": "3061",
-        "stars": "25749",
+        "forks": "3071",
+        "stars": "25824",
         "topics": [
           "c-plus-plus",
           "chrono",
@@ -12019,8 +12504,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5224",
-        "stars": "45981",
+        "forks": "5259",
+        "stars": "46325",
         "topics": [
           "ai",
           "audiobook",
@@ -13028,8 +13513,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6129",
-        "stars": "39484",
+        "forks": "6130",
+        "stars": "39497",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -13512,8 +13997,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:36:02.310Z",
       "metaData": {
-        "forks": "2776",
-        "stars": "21666",
+        "forks": "2778",
+        "stars": "21684",
         "topics": [
           "backlink-analysis",
           "google-search-console-mcp",
@@ -14030,8 +14515,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9135",
-        "stars": "44808",
+        "forks": "9150",
+        "stars": "44857",
         "topics": [
           "3d-globe",
           "cesium",
@@ -15103,8 +15588,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "4976",
-        "stars": "73878",
+        "forks": "4983",
+        "stars": "73950",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -15301,8 +15786,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7944",
-        "stars": "147822",
+        "forks": "7946",
+        "stars": "147893",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -16743,8 +17228,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "2993",
-        "stars": "52006",
+        "forks": "2995",
+        "stars": "52034",
         "topics": [
           "adhd",
           "claude-",
@@ -18266,8 +18751,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40130",
-        "stars": "268616",
+        "forks": "40250",
+        "stars": "269327",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -18543,8 +19028,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "840",
-        "stars": "8939",
+        "forks": "841",
+        "stars": "8951",
         "topics": [],
         "license": "",
         "homepage": "",

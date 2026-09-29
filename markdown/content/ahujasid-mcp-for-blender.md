@@ -1,0 +1,132 @@
+# ahujasid/mcp-for-blender
+
+[GitHub URL](https://github.com/ahujasid/mcp-for-blender)
+
+
+## mcp-for-blender 深度评测：用自然语言让 AI 帮你操控 Blender 建 3D 场景
+
+> 一根把自然语言插进 Blender 的'USB线'，打字就能让 AI 建模、上材质、打灯光
+
+- **Tags**: MCP, Blender, 开源项目, AI 建模, Claude
+- **Category**: AI 编程, 开发工具, 3D 创作
+
+## Details
+
+# mcp-for-blender 深度评测：当 Claude 学会用 Blender 造世界
+> 评测对象：[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender)（原名 `blender-mcp`）
+> 项目类型：MCP 服务器 + Blender 插件 | 许可证：MIT | 作者：Siddharth Ahuja
+> 仓库创建：2025 年 3 月 | 截至 2026 年 9 月 Star 数约 2.9 万+
+---
+## 一句话总结
+它是一根**把"自然语言"插进 Blender 建模管线的"USB 线"**：你用中文或英文描述想要什么，Claude / Cursor / Codex 等 AI 客户端通过 MCP 协议直接驱动 Blender 的 Python API 去建几何、上材质、打灯光、拖 HDRI，甚至调用 Hyper3D Rodin / Hunyuan3D 从一句话生成 3D 模型——让"3D 建模门槛"从"要学三年"变成"会打字就行"，而代价是你必须时刻盯着它别把场景搞崩。
+---
+## 背景与痛点：3D 的"手工艺人困境"遇上大模型的"API 荒"
+Blender 是这个星球上最强大的开源 3D 软件，但它有一个原罪：**操作复杂度极高**。建一个"地牢里一只金盆旁守着龙的低多边形场景"，传统流程要切十几个工作区、记几百个快捷键、拖几十次节点，对小白来说是一道近乎绝望的门槛。即便你是老手，做"批量改名 200 个对象""给所有金属材质统一加菲涅尔""把灯光统一换成工作室三点布光"这类重复劳动，依然是在消耗美术生命。
+与此同时，2024–2025 年 MCP（Model Context Protocol）标准横空出世——它本质上是给大模型装了一个"统一插座"，让任何 AI 客户端都能通过标准化工具接口调用外部软件。但当时 MCP 生态里编程类工具扎堆，3D 创作领域几乎是一片荒地：**大模型会写 Python，但没人给它接上 Blender 的 bpy API**。
+Siddharth Ahuja（GitHub ID `ahujasid`）抓住了这个空白。2025 年 3 月他用 Python 写了两段胶水代码——一个跑在 Blender 里的 socket 插件，一个实现了 MCP 协议的 Python 服务器——把两者用 JSON-over-TCP 串起来。项目上线后迅速引爆，Star 数一路涨到 2.9 万+，官方 PyPI 包也从 `blender-mcp` 更名为 `mcp-for-blender`（老命令 `uvx blender-mcp` 仍然向后兼容）。更有意思的是，作者用同一套思路做了 `ableton-mcp`，证明这是一条可复制的"AI 驱动专业软件"通用范式。
+> **一句话点破本质**：mcp-for-blender 的革命性不在于"AI 很聪明"，而在于它把 Blender 那个庞大到吓人的 Python API（`bpy`），用一个 ~40 个工具的精简接口暴露给了大模型——AI 不再需要"猜菜单在哪"，它直接调用 `create_object` / `set_material` / `execute_blender_code` 这些原子能力，剩下的就交给推理。
+---
+## 核心亮点与功能剖析：五个真正值得你为之装一个 Blender 的能力
+### 1. 架构：两段式"水路"，把 AI 与 3D 引擎彻底解耦
+项目的架构是它最值得开发者学习的部分：
+```
+MCP 客户端 (Claude/Cursor) ⇄ stdio ⇄ MCP 服务器 ⇄ TCP socket (默认 9876) ⇄ Blender 插件 ⇄ bpy API
+```
+- **Blender 插件** 在 Blender 进程内启动一个 socket 服务，接收 JSON 命令并用 `bpy` 执行；
+- **MCP 服务器** 通过 `uvx` 启动一个独立 Python 进程，向前暴露 MCP 工具接口，向后用 TCP 连到插件；
+- 通信协议极简：命令是 `{"type": ..., "params": {...}}`，响应是 `{"status": ..., "result": ...}`。
+这种设计带来三个隐藏好处：Blender 崩了不会拖垮 AI 客户端；MCP 服务器可以放进 Docker 容器里跑（README 给了完整 docker 镜像方案）；甚至可以让两个 MCP 服务器监听不同端口（9876 / 9877），用同一个 Claude 客户端同时操控两台 Blender 实例。
+### 2. 能力清单：从"几何生成"到"AI 3D 模型生成"的完整链路
+根据 README 的 Capabilities 区块，它能在对话里做到的事包括：
+- **场景操作**：增删改对象、改材质、改灯光、查场景信息；
+- **任意 Python 执行**（`execute_blender_code`）：AI 写 bpy 代码并立刻在 Blender 里运行，这是它最强的"逃生通道"——预置工具不够用时，AI 自己现写代码；
+- **节点/bpy API 查询**：AI 可以先查 shader 节点的 socket 顺序和枚举名再生成，减少幻觉；
+- **场景导出**：把选中对象或整个场景导出 GLB/FBX；
+- **素材接入四大金刚**：
+  - **Poly Haven**（约 2400 个 CC0 HDRI / 贴图 / 模型，免 key 免登录）
+  - **Sketchfab**（需 API Key）
+  - **Poly Pizza**（约 10,600 个低模，包含被救回的 Google Poly 档案，需 API Key）
+  - **Hyper3D Rodin / Hunyuan3D / Tripo**：文生 3D 模型，直接掉进场景里
+最后一条尤其值得点名——**"Generate a 3D model of a garden gnome through Hyper3D"** 这种命令，等于让 AI 在对话里现场给你"造"了一个本来看起来要靠 ZBrush 雕半天的资产。
+### 3. 真实案例演示：这是它最能"唬人"也最能"干活"的地方
+README 提供了带视频链接的官方示例（均为真实演示，可在仓库对照观看）：
+| 用户输入（自然语言） | AI 实际做的事 |
+| --- | --- |
+| "Create a low poly scene in a dungeon, with a dragon guarding a pot of gold" | 调用 Poly Pizza / Sketchfab 搜索 low poly dragon 与 pot of gold 模型，摆进一个手搭的地牢几何里，配灯光 |
+| "Create a beach vibe using HDRIs, textures, and models like rocks and vegetation from Poly Haven" | `search_polyhaven_assets` 搜阴天海滩 HDRI → 预览 → 导入世界节点；再搜 rock 与 vegetation 贴图和模型，逐一上材质 |
+| "Generate a 3D model of a garden gnome through Hyper3D" | 调用 Hyper3D Rodin API 文生 3D，等待返回后导入场景 |
+| "Fill this room with low-poly furniture from Poly Pizza" | 多次 `search_polypizza_models(query="chair", licence="CC0")` → `download_polypizza_model(...)` → 按空间分布摆放 |
+**聪明的 Prompt 写法**也很讲究——README 推荐了"意图式搜索"的用法，比如你直接说 *"'Light the scene with an overcast afternoon HDRI and put a rusty metal texture on the wall'"*，AI 会先调 `get_polyhaven_categories` 拿到可过滤的属性（HDR 的天气、时段，贴图的表面用途、磨损程度），再做语义化搜索，而不是傻傻地关键字匹配。
+### 4. 一键安装体验：开发者的 DX 做得相当用心
+整个安装流程被压缩到 **三条命令**：装 `uv` → 把 MCP 服务器地址写进 Claude 配置 → `uvx mcp-for-blender install-addon` 自动把插件写进 Blender 目录。仓库对**最容易踩的坑都做了预案**：
+- `uvx` 在 GUI 应用里找不到 PATH（`spawn uvx ENOENT`）？README 直接给出 Windows `cmd /c uvx` 和 macOS 绝对路径两种方案；
+- 机器上有 conda / pyenv 抢 Python 解释器？提供了 `--python 3.11` + `UV_PYTHON_PREFERENCE=only-managed` 的标准写法；
+- 锁死的内网机器装不了 uv？提供 `pipx` 替代；
+- 全流程支持 Docker 容器化（macOS/Windows 默认 `host.docker.internal`，Linux 用 `--network=host`）；
+- 还有 `install-addon` 子命令会自动备份 `.bak`，防止覆盖你已有的插件。
+这套 DX 设计放在 MCP 生态里属于第一梯队——很多同类项目还停留在"自己 pip install 然后 debug 三小时"的水平。
+### 5. 安全模式与遥测：作者把"避坑按钮"做成了环境变量
+它有两个容易被忽略但极其重要的开关：
+- **`BLENDER_MCP_SAFE_MODE=1`**：开启后 AI 写的每一段 Python 都会被校验，阻止读写文件、跑子进程、联网、装持久化代码这类"危险动作"，但正常的建模 / 材质 / 渲染 / 导入导出照常工作。被拦截的脚本会把原因回传给 AI，让它自己改写重试——这是非常优雅的设计；
+- **遥测默认关闭**，只有最小匿名统计（安装 ID / 工具名 / 耗时 / 版本号）。要开启内容采集需手动勾选，且可用 `DISABLE_TELEMETRY=true` 环境变量彻底关掉。这一点在"AI 工具都在偷数据"的当下难能可贵。
+---
+## 目标人群与收益：四类人应该立刻把它装上
+| 人群 | 它能帮你解决什么 | 收益程度 |
+| --- | --- | --- |
+| **3D 纯小白 / 学生** | "我脑子里有画面但不会建"——一句话生成场景，理解建模概念 | ⭐⭐⭐⭐⭐ |
+| **独立游戏开发者** | 快速搭建概念场景、批量摆资产、导入 Poly Pizza 低模做灰盒原型 | ⭐⭐⭐⭐⭐ |
+| **Blender 老手 / TA** | 批量改名、统一材质参数、自动化灯光/相机配置、API 探索 | ⭐⭐⭐⭐ |
+| ** architects / 产品可视化** | 生成概念稿、按参考图搭空间、用 HDRI 快速打光 | ⭐⭐⭐⭐ |
+| **VFX 高阶流水线 / 工业级建模** | 不适合——它替代不了精雕、拓扑、UV、绑定的专业环节 | ⭐⭐ |
+**最务实的用法**是把它当"第二双手"用：你自己做创意决策，让它干体力活——批量重命名、铺场景、调灯光参数、生成占位模型、导出 FBX。StraySpark 那篇 2026 年的对比文章把这条最佳实践总结得非常精辟：**MCP 处理"多步骤编排"工作，传统插件处理"单点专精"任务，两者并用，而非互斥。**
+---
+## 竞品对比：它在 2026 年 Blender AI 生态里的位置
+| 项目 | 类型 | 开源 | 工具数 | 定位 | 适合 |
+| --- | --- | --- | --- | --- | --- |
+| **mcp-for-blender**（本项目） | MCP 服务器 | ✅ MIT | ~40 个原子工具 + 任意 Python | 通用、可扩展、模型无关 | 个人 / 小团队 / 玩家 |
+| **StraySpark Blender MCP Server** | 商业 MCP 服务器 | ❌ | 556 个，默认开 22 个 | 生产级、确定性校验、离线 bpy 搜索 | 商业团队 / 工作室 |
+| **3D-Agent** | 闭源商业插件 | ❌ | 内置 | 自带 AI、开箱即用、付费订阅 | 不想配 MCP 的美术 |
+| **BlenderGPT** | 传统插件 | ✅ | 较少 | 早期尝试，调用 OpenAI 直连 | 仅作历史参照 |
+| **Dream Textures / AI Material Factory** | 传统 AI 插件 | ✅/❌ | 单点 | 本地 Stable Diffusion 贴图 | 一次性贴图生成 |
+**mcp-for-blender 的独特竞争力**是三句话能说清的：
+1. **模型无关**——它不在乎你接的是 Claude、GPT、Gemini 还是本地 Ollama，这是商业插件给不了的自由度；
+2. **可组合**——同一个 Claude 客户端里，Blender MCP 可以和文件系统 MCP、Unreal MCP、Godot MCP 在一次会话里协作，"在 Blender 里建资产 → 导出 FBX → 进 UE 摆场景"一条龙；
+3. **零成本试错**——MIT 协议 + 纯 Python + 极简架构，想二开、想 fork 成 "mcp-for-Unity" 都没有门槛（事实上 ableton-mcp、unreal-mcp 等一系列项目都是受它启发的同源思路）。
+而 StraySpark 的 556 工具商业版相比之下胜在**生产级稳定性**：上下文占用控制（9.5K tokens 开门 vs 全目录 273K）、确定性校验、离线 API 搜索、会话记忆——这些是个人项目短时间补不齐的差距。
+---
+## 局限与不足：卖点背后，这些坑你必须知道
+这一节不是唱反调，而是希望你在按下 `Start MCP Server` 之前，心里有本账。
+### 1. 安全：socket 端口裸奔 + 任意 Python 执行是双刃剑
+README 自己写得明明白白：
+> "The addon's socket server has **no authentication or encryption**, so anyone who can reach that port can run Python inside Blender."
+默认配置下，任何能连到你 9876 端口的进程都能在 Blender 里跑任意 Python——意味着可以读写文件、删工程、甚至反弹 shell。**务必**保持监听 `localhost`，别在公共 Wi-Fi 下开项目。此外 `execute_blender_code` 是把双刃剑：AI 幻觉产生的 `bpy.ops.object.delete()` 可能一波清空你三小时的工作。**重要工程一定要手动 `Ctrl+S` 之后再让 AI 动手**，必要时打开 `BLENDER_MCP_SAFE_MODE=1`。
+### 2. 上下文消耗：Blender 场景信息是 token 大户
+每次对话中 AI 都要"看一眼"场景状态（对象列表、材质、层级）。小场景没事，一旦你导入了几百个对象的资产库，每一轮对话的上下文消耗都会暴涨，Token 费用和响应延迟都会明显上去。复杂工程建议**分块处理**：让 AI 只关注选中的对象，或先用 `get_scene_info` 做定向查询。
+### 3. 复杂建模能力有限，它不是 ZBrush 替代品
+让它"造一只金色的龙守着金盆"，它给你的是**低多边形占位模型**+ Poly Pizza / Sketchfab 的现成资产。让它"雕刻一张写实人脸""做服装拓扑""布料模拟"，你会拿到一堆错误的 bpy 代码或者直接超时。README 自己也承认：**复杂操作需要拆成多个小步骤**，一次让 AI 做 5 件事失败率会陡增。
+### 4. 主线程阻塞：Poly Haven 大资源导入会让 Blender 卡住
+官方 FAQ 直说：素材下载是在 Blender 主线程上跑的，UI 会假死直到传输完成，且 HDRI 分辨率每升一档体积翻 4 倍。**建议用 1k–2k 分辨率**，除非资源贴着相机。
+### 5. 并发限制与偶发连接失败
+同时跑 Cursor 和 Claude Desktop 两个客户端连同一个 Blender 会冲突，只能开一个。首次连接有时命令不响应，"关掉再开"仍然是玄学解法。
+### 6. 强依赖 Blender 正在运行 + AI 客户端订阅费
+这工具本身 MIT 免费，但它的实际成本是：Blender 免费但占内存；MCP 客户端侧 Claude Pro / Cursor Pro 是订阅制；调用 Hyper3D / Hunyuan3D / Tripo 还需要各自的 API Key 与计费。如果你只是想试试"AI 建模"，本地跑个 Ollama + 免费素材库（Poly Haven）确实能压到接近零成本，但生成式 3D 那块免不了要烧点云服务费。
+### 7. 命名变更带来的一点混乱
+PyPI 包从 `blender-mcp` 更名为 `mcp-for-blender`，虽然老命令向后兼容，但你在社区搜教程时会看到新旧两套写法混着出现，初学者容易懵。
+---
+## 避坑指南（来自实战的三条建议）
+- **Prompt 要"任务化"，不要"目标化"**。别一次说"做一个完整的森林场景"——拆成"1. 建 50×50 平面；2. 从 Poly Pizza 拉 5 棵 low poly 树；3. 散布；4. 配阴天 HDRI"。每步一个 prompt，成功率从 30% 升到 90%；
+- **永远先让 AI"汇报"再"动手"**。在让它执行危险操作（删除、覆盖文件）前，先问"列出你准备执行的代码"。`execute_blender_code` 是黑盒，但你可以让它把代码先贴出来；
+- **保存节奏**。每完成一个阶段手动 `Ctrl+S`，或者让 AI 每步结束调用一次 `save_file`。Blender 的撤销栈在 AI 长链路操作下并不总是可靠。
+---
+## 结语与行动建议
+**mcp-for-blender 是 2025–2026 年"AI 驱动专业软件"范式在 3D 领域的开山之作**——它的代码量不大（核心就是两段 Python），但它精准踩中了一个真实痛点：Blender 的操作复杂度把 90% 的普通人挡在门外，而大模型又苦于没有 API 入口。这根"USB 线"插上之后，AI 从"会写 bpy 代码"升级成了"能操作 Blender"，这条路径后来被 Unreal、Ableton、Godot 等项目反复复刻，足以证明其范式价值。
+如果你属于以下情况，**强烈建议今天就装一个试试**：
+- ✅ 你是 3D 小白，想用最低成本"玩"出概念场景；
+- ✅ 你是独立开发者，需要快速做灰盒原型或批量操作；
+- ✅ 你是开发者，想研究 MCP 服务器到底怎么写、怎么和桌面软件通信——这个仓库的架构是你能找到的最干净的学习样本。
+如果你属于以下情况，可以**暂时观望**：
+- ⚠️ 你是 VFX / 高端建模从业者，需要精雕和拓扑级控制；
+- ⚠️ 你担心任意 Python 执行的安全风险且不愿折腾 Safe Mode；
+- ⚠️ 你需要生产级 556 工具的稳定性，那 StraySpark 的商业版可能更对味（但价格不便宜）。
+**终极评分（主观）：9 / 10**——扣掉的那 1 分给"任意 Python 执行的安全隐患"和"复杂建模能力上限"，而不是给创意本身。
+下一步行动建议，按顺序做三件事：① 装 uv 和 Blender 3.0+；② 按上面 Quickstart 三条命令接入 Claude Desktop；③ 从 README 里的 *"Create a low poly scene in a dungeon, with a dragon guarding a pot of gold"* 这条 prompt 开始，30 秒后你会明白为什么这个项目能拿 2.9 万颗 Star。

@@ -1,0 +1,179 @@
+# NVIDIA/OpenShell
+
+[GitHub URL](https://github.com/NVIDIA/OpenShell)
+
+
+## Details
+
+# NVIDIA OpenShell 深度评测：把"信任边界"还给操作系统，而不是提示词
+> 一句话总结：**OpenShell 是 NVIDIA 在 2026 年 9 月 GTC 上开源的"自主 AI Agent 安全运行时"——它用内核级隔离 + YAML 声明式策略 + 凭证注入 + 形式化验证，让 Agent 能干活，但干不了"你没批准的事"。** 如果你正在跑 Claude Code、Codex、OpenCode 这类需要真实文件、真实密钥、真实网络的编码 Agent，这可能是 2026 年下半年最值得关注的一块基础设施拼图。
+---
+## 一、背景与痛点：Agent 已经拿到钥匙，但房子还没装门禁
+要理解 OpenShell 的价值，得先看清它要解决的问题有多尴尬。
+过去一年，自主 Agent 从"演示玩具"进化成了"能干活的同事"。它们会读你的代码仓库、装依赖、调第三方 API、持有你的 OpenAI/Anthropic 密钥，甚至自我改写代码。**但绝大多数 Agent 框架的安全模型，还停留在"在系统提示里写一句：请不要泄露密钥"**。这在 Tigera 的分析里被一针见血地点破：让被保护的对象自己负责保护自己，本身就是逻辑悖论——一个被 prompt injection 攻陷的 Agent，能轻而易举地"说服自己"绕过它读到的任何指令。
+具体痛点可以列一排：
+- **密钥裸奔**：API key 塞在环境变量里，Agent 一被注入就能读出来外传。
+- **权限继承失控**：主 Agent 能写 `/etc`，子 Agent 就默认也能——权限像家族遗产一样代代相传。
+- **第三方 Skill/MCP 投毒**：Agent 装了一个看起来正常的 Skill，里面藏着"把 `.env` 内容 POST 到 attacker.com"的指令。
+- **合规审计空白**：GDPR、SOX、HIPAA 要求你回答"上周二那个 Agent 到底访问了哪些客户数据"，而多数框架只能给出模糊的对话日志。
+业界现有的应对大致分三派：**模型层**（对齐、护栏 prompt）、**应用层**（guardrail 库、输出过滤）、**沙盒即服务**（E2B、Daytona、Modal 把 Agent 扔进云端一次性容器）。前两派被 NVIDIA 明确判定为"不可靠"，因为它们都在 Agent 进程内做决策——可被说服；第三派解决了隔离，但把策略编排、凭证治理、审计留给了你自己拼装。
+**OpenShell 的核心赌注是：把安全从"Agent 的脑子"挪到"操作系统和内核"，让 Agent 连谈判的对象都没有。** 你在 YAML 里写清楚它能碰什么，内核在每次文件读取、系统调用、网络出站时强制执行——Agent 想绕？它根本不知道门在哪里。
+顺带说一句定位：OpenShell 不是"又一个沙盒工具"，而是 NVIDIA **Open Agent Safety Platform** 的开源基石，硬件侧配套了 BlueField-4 DPU 的 in-silicon 强制执行，合作名单包括 Cisco、CrowdStrike、Google Cloud、Microsoft Security、Baseten 等——这是一个刻意构建的生态位，而不是单点产品。
+---
+## 二、核心亮点：四层策略 + 三个组件，拼出"内核级免疫系统"
+### 2.1 架构速览：一个心智图
+```
+        ┌─────────────────────────────────────────┐
+        │            Gateway（控制平面）            │
+        │   认证 / 策略下发 / 沙盒生命周期 / 凭证托管 │
+        └────────────┬────────────────────────────┘
+                     │  策略 + 一次性凭证
+        ┌────────────▼────────────┐
+        │  Supervisor（沙盒外）    │
+        │  逐条审计网络请求         │
+        │  按 binary/dest/method/  │
+        │  path 决策 + 注入凭证     │
+        └────────────┬────────────┘
+                     │  唯一安全通道
+        ┌────────────▼────────────┐
+        │  Sandbox（Agent 进程）   │
+        │  Landlock 限文件         │
+        │  seccomp 限系统调用       │
+        │  网络默认拒绝 → 走 Supervisor│
+        └─────────────────────────┘
+                     ▲
+        ┌────────────┴────────────┐
+        │  Policy Prover          │
+        │  形式化验证"新策略会不会  │
+        │  放开危险的新访问"        │
+        └─────────────────────────┘
+```
+这四个组件的分工值得单独说清楚：
+- **Agent Sandboxes**：每个 Agent 一个沙盒，无特权运行、无直接出站网络。文件访问由 Linux 内核的 **Landlock** 机制在沙盒创建时锁定，系统调用由 **seccomp** 白名单约束。Agent 能调用的每一个 syscall 都被内核盯着。
+- **Supervisor**：住在沙盒外面的"守门人"。所有出站网络请求都要经过它，它会按**二进制指纹、目标地址、HTTP 方法、路径**四维度逐条裁决，合规的请求由它注入凭证后放行——这意味着 Agent 进程里从头到尾都没有真实 API key。
+- **Gateway**：控制平面，管认证、管沙盒生命周期、管策略分发。生产部署可以用 Helm 上 Kubernetes。
+- **Policy Prover**：这是整个项目最"论文味"的部分。它用**形式化验证**（formal verification）在策略变更生效前，推理出这次修改会不会"无意间放大权限"——比如"允许访问 github.com" 这条规则，会不会让 Agent 能带着凭证访问到某个敏感的 GitHub 端点。Prover 会把这类"风险增量"标出来，等人审。
+> **打个比方**：传统 Agent 安全像是给酒店客人（Agent）发一张写着"请勿进入 1801 房"的便签；OpenShell 是把 1801 的门锁物理拆掉、电梯按钮上 18 层的按键也抠掉，并且走廊里有一个保安（Supervisor）记下你敲过的每一扇门。
+### 2.2 四层策略：文件、进程、网络、推理
+YAML 策略分四层，每一层对应一类真实攻击面：
+| 层 | 内核机制 | 防什么 |
+|---|---|---|
+| **Filesystem** | Landlock（创建时锁定） | Agent 偷读 `.env`、`~/.ssh`、生产数据库配置 |
+| **Process** | seccomp 白名单 | Agent 执行未审计的二进制、调用危险 syscall |
+| **Network** | 默认拒绝出站，HTTP 方法+路径级拦截，支持热重载 | 数据外传、未授权 API 调用 |
+| **Inference** | Privacy Router：按策略决定每次 LLM 调用走本地模型还是前沿模型，凭证在路由器侧交换 | 上下文泄漏到外部模型、API key 进入沙盒 |
+**Inference 层是这个设计里最精妙的差异点。** 一般沙盒只管"Agent 能不能联网"，OpenShell 进一步管"Agent 的哪一段上下文被哪个模型处理"。敏感内容可以强制路由到本地 Nemotron 等模型，只有被明确批准的低敏请求才放行到前沿模型。这相当于把"数据分级"变成了基础设施能力，而不是靠 Agent 自觉。
+### 2.3 凭证与审计：从"密钥在哪"到"密钥根本不在"
+一个可以立刻落地的心理转变：**别再问"怎么安全地存 API key"，开始问"能不能让 Agent 根本不接触它"**。OpenShell 的答案是把密钥托管在 Gateway，Supervisor 在代理请求时注入 `Authorization` 头——沙盒内进程的 `/proc/self/environ` 里永远查不到那串字符。即使 Agent 被 prompt injection 完全控制，它面对的也是"一堵不存在的墙"：想偷，没有东西可偷。
+审计侧，每一次 allow/deny 都带时间戳、策略版本、请求上下文，可导出到 Splunk/Datadog/Grafana——合规团队问"上周那个 Agent 到底干了什么"，答案是一条 SQL 查询，而不是翻对话日志。
+### 2.4 形式化验证：少见的"学院派"工程
+这是 OpenShell 区别于其他 Agent 沙盒的最独特一笔。改策略在生产环境是高危动作：你随手给 `network.allow` 加一条 `*.internal.corp`，可能在不知情的情况下让 Agent 拿着凭证踩进 CRM 内网。**Policy Prover 用形式化方法在变更落地前推理"新策略相对旧策略，多放开了什么访问"**，把"意外提权"提前到 PR review 阶段拦截。这在开源 Agent 工具里几乎找不到第二个案例，也体现了 NVIDIA 把传统形式化方法学沉淀到 LLM 时代的认真程度。
+---
+## 三、上手体验与代码示例
+### 3.1 安装：两条命令，没有更多
+```bash
+# 官方推荐的一键安装（装 CLI + 本地 Gateway）
+curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh
+# 创建你的第一个沙盒
+openshell sandbox create --name demo
+```
+**运行环境**：Linux、macOS（Apple Silicon）、Windows WSL 2（实验性）；底层需要 Docker 或 Podman 做镜像管理。默认沙盒镜像是个极简 Ubuntu，里面没装 Agent——想跑真家伙得跟官方教程 **Run Your First Agent**，它会用 OpenCode 接 OpenRouter 的免费模型，把"Agent 申请权限 → 人类批准 → 策略热更新"的完整闭环走一遍。
+**给 AI Agent 用的 Skill** 也已经准备好了：
+```bash
+npx skills add NVIDIA/OpenShell
+```
+装上之后 Claude Code / Codex 这些 Agent 自己就会调 `openshell` CLI、写策略、调试 Gateway——NVIDIA 自己就在用 agent-first 工作流开发这个项目，算是吃自家狗粮。
+### 3.2 SDK：接入现有应用的四门语言
+OpenShell 提供了 **Python / TypeScript / Go / Rust** 四种 SDK，用于让应用连到 Gateway，而不是装 CLI：
+```bash
+# Python
+uv add openshell
+# TypeScript
+npm install @nvidia/openshell-sdk   # GitHub Packages
+# Go
+go get github.com/NVIDIA/OpenShell/sdk/go@latest
+# Rust
+cargo add openshell-sdk --git https://github.com/NVIDIA/OpenShell --tag <release-tag>
+```
+社区里已经有 `langchain-nvidia-openshell` 这样的 PyPI 包在出现，说明生态开始往外长。
+### 3.3 策略文件长什么样
+虽然官方仓库没有在 README 里直接贴 YAML 样例，但从 Tigera 和 Mindstudio 的拆解可以还原出一个典型策略的骨架：
+```yaml
+# sandbox-policy.yaml（示意，非官方一字不差版本）
+filesystem:
+  read:
+    - /workspace/**
+  write:
+    - /workspace/src/**
+  deny:
+    - /workspace/.env
+    - ~/.ssh/**
+process:
+  allow_binaries:
+    - /usr/bin/python3
+    - /usr/bin/git
+  seccomp_profile: default-coding-agent
+network:
+  default: deny
+  allow:
+    - host: api.github.com
+      methods: [GET, POST]
+      paths: ["/repos/*"]
+    - host: pypi.org
+      methods: [GET]
+inference:
+  privacy_router:
+    - match: { contains: ["customer_pii"] }
+      route: local-nemotron
+    - default:
+      route: frontier
+      provider: openrouter
+      credential_ref: openrouter-key   # 密钥托管在 Gateway，沙盒内不可见
+```
+写好之后丢给 Prover 跑一遍，它会告诉你"这条规则相对当前基线，多放开了哪些访问"——有疑虑就挂起等人审，这个交互体验像是给基础设施加了个"CI for security policy"。
+---
+## 四、目标人群与收益
+**优先级从高到低：**
+- **本地跑编码 Agent 的开发者**（Claude Code / Codex / Cursor / OpenCode）：核心收益是**密钥永不进 Agent 进程** + 出站默认拒绝。装上之后，你终于可以放心让 Agent `pip install` 陌生包而不用担心它顺手把 `.env` 发出去。
+- **平台工程 / DevOps 团队**：需要给组织的 Agent 部署提供统一治理层。Gateway + Helm + K8s（实验）让策略可以作为代码进 Git、走 PR review、自动回滚——这是安全治理的工程化形态。
+- **安全与合规团队**：结构化审计日志 + 可验证的策略 + Prover 的形式化证明，让"证明 Agent 没越权"从玄学变成可交付物。金融、医疗、政企等强合规行业尤其对口。
+- **在隔离/离线环境部署 Agent 的企业**：OpenShell 明确支持 air-gapped 基础设施，Gateway 可以部署在私有云、本地机房甚至完全断网的环境里。
+- **SDK 集成者**：想在自家 Agent 框架里嵌入"策略执行层"，Rust/Go/Python/TS 四门语言的 SDK 让胶水层的工作量可控。
+**对纯小白用户的提醒**：这不是一个"装完就能变快"的工具。它解决的是**风险与合规**，不是吞吐或延迟。如果你的 Agent 只在内网跑、不接触真实凭证，OpenShell 的边际收益会很小。
+---
+## 五、竞品对比：OpenShell 在版图上的位置
+Agent 沙盒/安全这个赛道 2026 年突然拥挤起来，但仔细看会发现大家其实站在不同的抽象层。下表挑几个最有代表性的对手：
+| 维度 | **NVIDIA OpenShell** | **E2B** | **Daytona** | **Docker / gVisor / Firecracker** | **Tigera Lynx** |
+|---|---|---|---|---|---|
+| **定位** | 本地/私有 Agent 运行时 + 策略层 | 云端沙盒即服务（托管执行） | 云端沙盒 + 自管混合 | 通用容器/microVM 隔离 | 跨集群 Agent 治理与身份 |
+| **部署形态** | 本地、自托管、K8s、air-gapped | SaaS / 自托管企业版 | SaaS / BYOC | 基础设施组件 | SaaS / 集群侧网关 |
+| **策略粒度** | 文件/进程/网络/推理 四层，HTTP 方法+路径 | API 级别（沙盒生命周期） | 沙盒资源配额 | 无内置策略语义 | Cedar 跨 Agent/MCP/LLM 策略 |
+| **凭证治理** | **Gateway 托管，密钥不进沙盒** | 用户自行管理 | 用户自行管理 | 用户自行管理 | 集中化凭证 + 身份绑定 |
+| **形式化验证** | **有** | 无 | 无 | 无 | 无 |
+| **数据隐私路由** | **Privacy Router（本地 vs 前沿模型）** | 无 | 无 | 无 | 通过 LLM Gateway 部分实现 |
+| **当前成熟度** | 0.1.0 Alpha | 生产可用 | 生产可用 | 生产可用 | 生产可用 |
+| **许可证** | Apache 2.0 | 商业 + OSS 核心 | 商业 + OSS | Apache/MIT 等多样 | 商业 |
+**几个关键结论：**
+1. **vs E2B / Daytona**：这两个是"帮你跑沙盒"的托管服务，主打"把生成代码扔进一次性容器里跑"的开发体验；OpenShell 是"在你自己的机器上跑 Agent，但加一层策略治理"。资源上限上 E2B 默认给到 8 vCPU / 8 GiB，Daytona 默认 4 vCPU / 8 GB。**它们是执行基础设施，OpenShell 是治理运行时**——实际上你完全可以在 E2B 的沙盒里跑 OpenShell，两者不互斥。
+2. **vs Docker / gVisor / Firecracker**：OpenShell 底层就建在 Linux 内核的 Landlock + seccomp 上，通过 Docker/Podman 管镜像。它**不是替代品，而是叠加品**——通用容器只回答"这个进程跑在哪"，OpenShell 回答"这个 Agent 被允许做什么"。
+3. **vs Tigera Lynx**：这是最诚实的一对互补关系，Tigera 自己发了博客把边界讲得很清楚——OpenShell 管**单机单 Agent**，Lynx 管**跨集群的 Agent 身份、A2A/MCP 流量治理**。两边甚至给出了三种集成模式（"沙盒唯一出口走 Lynx Gateway"、"API key 只存在 Lynx"、"沙盒创建时注册身份"）。
+4. **vs NeMo Guardrails**：NVIDIA 自家的 Guardrails 在**对话/模型层**做输出过滤，OpenShell 在**执行/环境层**做行为拦截——同一个生态里的两块拼图，一个拦"模型说什么"，一个拦"Agent 做什么"。
+**独特竞争力总结**：在这个赛道上，OpenShell 是**唯一同时具备"凭证不出沙盒 + 推理流量分级路由 + 策略形式化验证 + Apache 2.0 完全开源"**这四张牌的玩家。E2B 有体验但没策略深度，Lynx 有治理但闭源且偏集群，Docker 系有隔离但没语义。这个组合在 2026 年 9 月是独一份。
+---
+## 六、局限与不足：先泼三盆冷水
+评测要客观，这部分不能含糊。
+**第一，它还很年轻。** 0.1.0 版本被 NVIDIA 自己定义为 **alpha、proof of life**，发布至今只有几周。API 可能变、bug 还没被生产流量磨平、Kubernetes Helm chart 明确标注"not for production"。**现在就把它塞进生产环境，是给自己埋雷。**
+**第二，边界画得刻意清晰，但也是最容易被误读的地方。** NVIDIA 技术文档明确说 OpenShell **不解决**：
+- Agent 之间的通信治理（A2A）
+- Agent 身份与认证（没有 SPIFFE/SPIRE 级别的一等身份）
+- 跨沙盒的协调与可视化
+换句话说，它回答的是"**这个 Agent 在这台机器上能干什么**"，不回答"**我组织里那两百个 Agent 谁有权限调支付 MCP、用了哪个模型、在谁的授权下**"。如果你的痛点是后者，需要 OpenShell + Lynx（或类似方案）组合，而不是 OpenShell 单打独斗。
+**第三，学习成本和平台限制真实存在。** 要用好它得理解 Landlock 的语义、seccomp profile 怎么写、YAML 策略四层怎么组合——这是平台工程师的技能栈，不是"前端小哥下班跑个 Agent"的范畴。原生支持仅限 Linux 和 Apple Silicon 的 macOS，Windows 得走 WSL 2 且标注实验性；GPU 直通给沙盒目前还在 Sandboxes 文档里单独讨论，不是开箱即用。另外默认开启匿名遥测（运营计数，不含 prompt 或文件路径），对数据极其敏感的企业需要主动关闭或编译剔除。
+**第四，一个尚未被验证的风险**：Kernel-level interception 的性能开销在官方文档里被描述为"毫秒级"，但缺少第三方基准数据。高频系统调用的工作负载（比如编译大型项目）真实损耗多少，需要自己压测。
+---
+## 七、结语与行动建议
+**给不同读者的三段话：**
+**如果你是个人开发者**，本周就可以做的事：`curl` 装一下，跑官方的 Run Your First Agent，把 OpenCode 在沙盒里跑起来，感受一次"Agent 请求写文件 → 系统弹窗 → 你点批准"的交互。**这一步的收益是建立直觉**——用过之后你会突然意识到，过去那些"Agent 直接读我 `.env`"的默认行为有多危险。生产项目先别上，留观察一两个小版本。
+**如果你是平台/安全团队**，把它当**2027 财年预算季的重要候选**来跟踪。现在可以做的三件事：fork 仓库读 Policy Prover 的实现（这是整个项目最有学习价值的部分）、跑通 Helm chart 的 staging 环境评估、把它和 Tigera Lynx 或类似的集群治理方案做 PoC 组合测试。**策略即代码（policy-as-code）+ 形式化验证**这个思路大概率会成为企业 Agent 治理的标配，早半年内化就早半年占位。
+**如果你是投资/观察者**，把 OpenShell 看作 NVIDIA 在 AI 基础设施版图上的又一步棋——从 GPU 到 CUDA 到 NIM 到 NeMo，现在补上了"Agent 运行时与治理"这一环，和 BlueField-4 硬件安全形成软硬件闭环。Apache 2.0 完全开源 + 合作伙伴名单的量级（Cisco、CrowdStrike、Google Cloud、Microsoft Security、Baseten）说明这不是实验性尝试，而是一次认真的生态站位。
+**一句话终极评判**：OpenShell 不完美、还很年轻、学习曲线陡，但它第一次把"Agent 安全"从提示词工程和道德呼吁，拉回到了操作系统与形式化方法可以严肃讨论的层面。**在这个意义上，它值得你花一个下午。**

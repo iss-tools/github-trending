@@ -5,6 +5,69 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>ahujasid/mcp-for-blender</title>
+      <link>https://trending.pptboard.com/repo/ahujasid/mcp-for-blender.html</link>
+      <description>一根把自然语言插进 Blender 的'USB线'，打字就能让 AI 建模、上材质、打灯光</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/ahujasid/mcp-for-blender.html</guid>
+    </item>
+    <item>
+      <title>longbridge/gpui-kit</title>
+      <link>https://trending.pptboard.com/repo/longbridge/gpui-kit.html</link>
+      <description>Longbridge 开源的 Rust 桌面 UI 组件库，基于 Zed 编辑器的 GPUI 引擎，提供 75+ 开箱即用组件，让 Rust 桌面开发像搭积木一样简单。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/longbridge/gpui-kit.html</guid>
+    </item>
+    <item>
+      <title>NVIDIA/SkillSpector</title>
+      <link>https://trending.pptboard.com/repo/NVIDIA/SkillSpector.html</link>
+      <description>NVIDIA 开源的 AI Agent Skill 安全扫描器，在你安装 Skill 之前揪出恶意指令和数据窃取风险。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/NVIDIA/SkillSpector.html</guid>
+    </item>
+    <item>
+      <title>PrismML-Eng/Bonsai-demo</title>
+      <link>https://trending.pptboard.com/repo/PrismML-Eng/Bonsai-demo.html</link>
+      <description>官方开源的本地大模型部署工具，用三元量化把 54GB 的 27B 多模态模型压到 5.9GB，普通笔记本和手机就能跑出云端级推理能力。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/PrismML-Eng/Bonsai-demo.html</guid>
+    </item>
+    <item>
+      <title>rakyll/hey</title>
+      <link>https://trending.pptboard.com/repo/rakyll/hey.html</link>
+      <description>一个用 Go 编写的轻量级 HTTP 压测工具，一条命令十秒出报告，是 ab 的现代接班人。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/rakyll/hey.html</guid>
+    </item>
+    <item>
+      <title>VectifyAI/PageIndex</title>
+      <link>https://trending.pptboard.com/repo/VectifyAI/PageIndex.html</link>
+      <description>一个无向量、纯推理的开源 RAG 框架，用 LLM 可导航的文档树取代向量数据库，金融基准准确率达 98.7%</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/VectifyAI/PageIndex.html</guid>
+    </item>
+    <item>
+      <title>oblien/openship</title>
+      <link>https://trending.pptboard.com/repo/oblien/openship.html</link>
+      <description>开源自托管部署平台，让你像用 Vercel 一样 git push 上线，却把服务器、数据和成本的控制权全部拿回自己手中。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/oblien/openship.html</guid>
+    </item>
+    <item>
+      <title>t8y2/dbx</title>
+      <link>https://trending.pptboard.com/repo/t8y2/dbx.html</link>
+      <description>一个仅 25MB 的开源数据库客户端，能管理 90+ 种数据库，还内置 AI 助手让 Claude、Cursor 直接帮你查库。</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/t8y2/dbx.html</guid>
+    </item>
+    <item>
+      <title>NVIDIA/OpenShell</title>
+      <link>https://trending.pptboard.com/repo/NVIDIA/OpenShell.html</link>
+      <description></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/NVIDIA/OpenShell.html</guid>
+    </item>
+    <item>
       <title>pollen-robotics/microduck</title>
       <link>https://trending.pptboard.com/repo/pollen-robotics/microduck.html</link>
       <description>399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。</description>
@@ -290,69 +353,6 @@
       <description>Google 开源的 Agent 执行运行时，用少量沙箱以 30 倍密度承载数百个有状态 Agent 会话，挂起恢复仅需亚秒级。</description>
       <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/agent-substrate/substrate.html</guid>
-    </item>
-    <item>
-      <title>FlashML-org/FreeToken</title>
-      <link>https://trending.pptboard.com/repo/FlashML-org/FreeToken.html</link>
-      <description>UC Berkeley 与 MIT 联合出品的边缘 MoE 推理引擎，让 8GB 显存游戏本也能流畅跑 35B 级大模型，Agent 实战比 llama.cpp 快 1.5-2.3 倍。</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/FlashML-org/FreeToken.html</guid>
-    </item>
-    <item>
-      <title>zhouxiaoka/autoclip</title>
-      <link>https://trending.pptboard.com/repo/zhouxiaoka/autoclip.html</link>
-      <description>一款开源本地部署的 AI 视频切片工具，粘贴 B 站/YouTube 链接即可自动识别精彩片段并剪成短视频。</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/zhouxiaoka/autoclip.html</guid>
-    </item>
-    <item>
-      <title>mvt-project/mvt</title>
-      <link>https://trending.pptboard.com/repo/mvt-project/mvt.html</link>
-      <description>大赦国际开源的移动设备取证工具，专门检测 iPhone/Android 是否被植入 Pegasus 等国家级间谍软件。</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/mvt-project/mvt.html</guid>
-    </item>
-    <item>
-      <title>vercel-labs/json-render</title>
-      <link>https://trending.pptboard.com/repo/vercel-labs/json-render.html</link>
-      <description>json-render 让 AI 在预设组件白名单里填 JSON 来生成界面，而非直接写代码，解决了 AI 生成 UI 幻觉多、不敢上生产的痛点。</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/vercel-labs/json-render.html</guid>
-    </item>
-    <item>
-      <title>mihail911/modern-software-dev-assignments</title>
-      <link>https://trending.pptboard.com/repo/mihail911/modern-software-dev-assignments.html</link>
-      <description>斯坦福首开AI原生软件开发课程的官方开源作业库，8周实战覆盖Prompt工程、MCP、Agent与AI安全，完全免费。</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/mihail911/modern-software-dev-assignments.html</guid>
-    </item>
-    <item>
-      <title>paperless-ngx/paperless-ngx</title>
-      <link>https://trending.pptboard.com/repo/paperless-ngx/paperless-ngx.html</link>
-      <description>开源自托管文档管理系统，用 OCR + 自动分类 + 全文检索，把散乱文档变成可秒搜的私人数字档案馆</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/paperless-ngx/paperless-ngx.html</guid>
-    </item>
-    <item>
-      <title>anthropics/financial-services</title>
-      <link>https://trending.pptboard.com/repo/anthropics/financial-services.html</link>
-      <description>Anthropic 官方开源的金融行业 Agent 模板库，用 Skills + Plugins + MCP 让 Claude 自动完成 Pitchbook、财报分析、月结对账等金融工作流。</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/anthropics/financial-services.html</guid>
-    </item>
-    <item>
-      <title>BuilderIO/agent-native</title>
-      <link>https://trending.pptboard.com/repo/BuilderIO/agent-native.html</link>
-      <description>Builder.io 出品的开源 TypeScript 框架，让你造出「人和 AI 操作同一个产品」的 Agent 原生应用</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/BuilderIO/agent-native.html</guid>
-    </item>
-    <item>
-      <title>yynxxxxx/Codex-X</title>
-      <link>https://trending.pptboard.com/repo/yynxxxxx/Codex-X.html</link>
-      <description>Codex-X 让你像管理插件一样，一键切换 Codex 的提示词、第三方 API 与会话，效率翻倍。</description>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/yynxxxxx/Codex-X.html</guid>
     </item>
   </channel>
 </rss>
