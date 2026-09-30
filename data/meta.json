@@ -2,31 +2,31 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 431
+      "count": 435
     },
     {
       "tag": "自动化",
-      "count": 231
+      "count": 234
     },
     {
       "tag": "开源项目",
-      "count": 214
+      "count": 219
     },
     {
       "tag": "AI Agent",
-      "count": 191
+      "count": 193
     },
     {
       "tag": "GitHub",
-      "count": 160
+      "count": 163
     },
     {
       "tag": "Claude",
-      "count": 109
+      "count": 111
     },
     {
       "tag": "MCP",
-      "count": 96
+      "count": 100
     },
     {
       "tag": "自托管",
@@ -34,15 +34,15 @@
     },
     {
       "tag": "本地部署",
-      "count": 75
+      "count": 76
     },
     {
       "tag": "Claude Code",
-      "count": 68
+      "count": 71
     },
     {
       "tag": "LLM",
-      "count": 65
+      "count": 66
     },
     {
       "tag": "Agent",
@@ -50,6 +50,10 @@
     },
     {
       "tag": "Rust",
+      "count": 58
+    },
+    {
+      "tag": "工作流",
       "count": 57
     },
     {
@@ -57,12 +61,8 @@
       "count": 56
     },
     {
-      "tag": "工作流",
-      "count": 55
-    },
-    {
       "tag": "RAG",
-      "count": 53
+      "count": 54
     },
     {
       "tag": "Python",
@@ -70,7 +70,7 @@
     },
     {
       "tag": "Anthropic",
-      "count": 49
+      "count": 50
     },
     {
       "tag": "AI",
@@ -84,27 +84,27 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1010
+      "count": 1020
     },
     {
       "name": "AI 编程",
-      "count": 667
+      "count": 676
     },
     {
       "name": "效率工具",
-      "count": 250
+      "count": 254
     },
     {
       "name": "开源项目",
-      "count": 230
+      "count": 235
     },
     {
       "name": "开发者工具",
-      "count": 74
+      "count": 76
     },
     {
       "name": "生活效率",
-      "count": 58
+      "count": 59
     },
     {
       "name": "AI 应用",
@@ -120,7 +120,7 @@
     },
     {
       "name": "AI 工具",
-      "count": 34
+      "count": 35
     },
     {
       "name": "AI编程",
@@ -128,11 +128,11 @@
     },
     {
       "name": "生产力工具",
-      "count": 30
+      "count": 31
     },
     {
       "name": "开源框架",
-      "count": 27
+      "count": 29
     },
     {
       "name": "DevOps",
@@ -141,6 +141,10 @@
     {
       "name": "隐私安全",
       "count": 25
+    },
+    {
+      "name": "科研工具",
+      "count": 24
     },
     {
       "name": "效率提升",
@@ -155,22 +159,18 @@
       "count": 24
     },
     {
-      "name": "科研工具",
+      "name": "AI应用",
       "count": 23
-    },
-    {
-      "name": "开源社区",
-      "count": 22
     }
   ],
   "topSuitable": [
     {
-      "name": "个人开发者",
-      "count": 68
+      "name": "独立开发者",
+      "count": 69
     },
     {
-      "name": "独立开发者",
-      "count": 67
+      "name": "个人开发者",
+      "count": 68
     },
     {
       "name": "开源项目维护者",
@@ -198,7 +198,7 @@
     },
     {
       "name": "技术团队负责人",
-      "count": 39
+      "count": 40
     },
     {
       "name": "DevOps 工程师",
@@ -210,7 +210,7 @@
     },
     {
       "name": "开发者与极客",
-      "count": 35
+      "count": 36
     },
     {
       "name": "软件开发者",
@@ -233,70 +233,70 @@
       "count": 27
     },
     {
+      "name": "AI 编程重度用户",
+      "count": 25
+    },
+    {
       "name": "专业开发团队",
       "count": 25
     },
     {
       "name": "企业技术负责人",
       "count": 25
-    },
-    {
-      "name": "技术极客",
-      "count": 24
     }
   ],
   "topTopics": [
     {
       "name": "ai",
-      "count": 234
+      "count": 240
     },
     {
       "name": "claude-code",
-      "count": 203
+      "count": 207
     },
     {
       "name": "llm",
-      "count": 180
+      "count": 183
     },
     {
       "name": "ai-agents",
-      "count": 169
+      "count": 172
     },
     {
       "name": "mcp",
-      "count": 162
+      "count": 166
     },
     {
       "name": "claude",
-      "count": 139
+      "count": 142
     },
     {
       "name": "agent-skills",
-      "count": 127
+      "count": 130
     },
     {
       "name": "codex",
-      "count": 117
+      "count": 119
     },
     {
       "name": "python",
-      "count": 105
+      "count": 106
     },
     {
       "name": "skills",
-      "count": 102
+      "count": 103
     },
     {
       "name": "typescript",
-      "count": 99
+      "count": 101
     },
     {
       "name": "agents",
-      "count": 97
+      "count": 98
     },
     {
       "name": "developer-tools",
-      "count": 93
+      "count": 95
     },
     {
       "name": "agent",
@@ -316,7 +316,7 @@
     },
     {
       "name": "local-first",
-      "count": 61
+      "count": 62
     },
     {
       "name": "dsh-plugin",
@@ -324,25 +324,25 @@
     },
     {
       "name": "prompt-engineering",
-      "count": 60
+      "count": 61
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 437
+      "count": 441
     },
     {
       "name": "TypeScript",
-      "count": 306
+      "count": 311
     },
     {
       "name": "JavaScript",
-      "count": 154
+      "count": 156
     },
     {
       "name": "Rust",
-      "count": 98
+      "count": 100
     },
     {
       "name": "Go",
@@ -350,7 +350,7 @@
     },
     {
       "name": "Shell",
-      "count": 46
+      "count": 47
     },
     {
       "name": "HTML",
@@ -358,11 +358,11 @@
     },
     {
       "name": "C++",
-      "count": 23
+      "count": 24
     },
     {
       "name": "C",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Java",
@@ -401,11 +401,11 @@
       "count": 4
     },
     {
-      "name": "Vue",
+      "name": "PLSQL",
       "count": 4
     },
     {
-      "name": "Kotlin",
+      "name": "Vue",
       "count": 4
     }
   ],
@@ -419,8 +419,8 @@
     {
       "repo": "openclaw/openclaw",
       "url": "https://github.com/openclaw/openclaw",
-      "stars": 390852,
-      "appearances": 2
+      "stars": 390878,
+      "appearances": 3
     },
     {
       "repo": "donnemartin/system-design-primer",
@@ -437,8 +437,8 @@
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 272640,
-      "appearances": 11
+      "stars": 272746,
+      "appearances": 12
     },
     {
       "repo": "affaan-m/ECC",
@@ -487,25 +487,25 @@
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 148690,
-      "appearances": 13
+      "stars": 148806,
+      "appearances": 14
     },
     {
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "stars": 49842,
-      "appearances": 13
+      "stars": 49970,
+      "appearances": 14
+    },
+    {
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 272746,
+      "appearances": 12
     },
     {
       "repo": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
       "stars": 33457,
-      "appearances": 11
-    },
-    {
-      "repo": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "stars": 272640,
       "appearances": 11
     },
     {
