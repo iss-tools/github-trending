@@ -1,6 +1,257 @@
 {
   "all": [
     {
+      "id": "dbbbeb1f-e973-491e-851f-022008593f80",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "domain": "github.com",
+      "repo": "alirezarezvani/claude-skills",
+      "description": "由柏林医疗科技公司CTO Alireza Rezvani个人维护的Claude Skills生态仓库，获26.5K Stars。它通过标准化SKILL.md协议组织388个技能，每个技能配套零依赖Python脚本，并提供convert.sh脚本将同一套技能自动转换为Cursor、Codex、Aider等13款工具的格式。亮点包括反幻觉编程五步法、四层Agent记忆系统、书籍编译成技能等。适合按需安装，注意避免装满全部技能导致Token成本膨胀。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-30T13:05:21.972Z",
+      "metaData": {
+        "forks": "3816",
+        "stars": "26978",
+        "topics": [
+          "agent-plugins",
+          "agent-skills",
+          "agentic-ai",
+          "ai-coding-agent",
+          "anthropic-claude",
+          "claude-ai",
+          "claude-code",
+          "claude-code-plugins",
+          "claude-code-skills",
+          "claude-skills",
+          "codex-skills",
+          "coding-agent-plugins",
+          "cursor-skills",
+          "developer-tools",
+          "gemini-cli-skills",
+          "openai-codex",
+          "openclaw",
+          "openclaw-plugins",
+          "openclaw-skills",
+          "prompt-engineering"
+        ],
+        "license": "MIT license",
+        "homepage": "https://alirezarezvani.medium.com/",
+        "description": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills. - alirezarezvani/claude-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "开源项目",
+          "AI Skills",
+          "跨平台兼容",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "alirezarezvani/claude-skills：388个技能弹药库，一套代码通吃13款AI编程工具",
+        "ability": [
+          "提供388个生产级Skill，覆盖工程、营销、合规（MDR/FDA/ISO 27001）、高管咨询等场景",
+          "内置727个仅用Python标准库的CLI工具，零依赖开箱即跑",
+          "跨13个AI编程平台一键格式转换，反供应商锁定",
+          "自带Skill安全审计器，扫描命令注入与Prompt注入风险",
+          "Book-to-skill能力：把一本书或文档集编译成可安装的AI技能"
+        ],
+        "summary": "目前规模最大、覆盖最广的Claude Code开源技能库，388个生产级技能+727个零依赖Python工具，一套代码适配Claude Code、Cursor、Codex等13款AI编程助手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率资源"
+        ],
+        "suitable": [
+          "独立开发者 / Solo创始人",
+          "企业工程团队 / 架构师",
+          "产品 / 市场 / 增长从业者",
+          "合规与质量管理人员（医疗/金融方向）",
+          "研究者 / 学术党"
+        ],
+        "description": "由柏林医疗科技公司CTO Alireza Rezvani个人维护的Claude Skills生态仓库，获26.5K Stars。它通过标准化SKILL.md协议组织388个技能，每个技能配套零依赖Python脚本，并提供convert.sh脚本将同一套技能自动转换为Cursor、Codex、Aider等13款工具的格式。亮点包括反幻觉编程五步法、四层Agent记忆系统、书籍编译成技能等。适合按需安装，注意避免装满全部技能导致Token成本膨胀。"
+      },
+      "type": "project",
+      "dateAdded": "20260930"
+    },
+    {
+      "id": "981b109c-f06b-41fc-8d87-dcf4f1b800aa",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "domain": "github.com",
+      "repo": "colbymchenry/codegraph",
+      "description": "CodeGraph 是开源的本地代码知识图谱工具，基于 Rust + SQLite 构建，通过 MCP 协议接入 Claude Code、Cursor 等主流 AI 编程 Agent。它预建整仓符号与调用关系图，把 Agent 原本数十次 grep/read 的架构探索压缩到 1-4 次调用，官方双臂实测省 62% Token、快 53%、省 44% 成本。100% 本地运行保护隐私，但长会话残留上下文偏高，需正确配置才能发挥最大效用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-30T12:14:44.510Z",
+      "metaData": {
+        "forks": "4655",
+        "stars": "72453",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://colbymchenry.github.io/codegraph/",
+        "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local - colbymchenry/codegraph"
+      },
+      "summaryData": {
+        "tags": [
+          "CodeGraph",
+          "MCP",
+          "代码知识图谱",
+          "AI 编程",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "CodeGraph 深度评测：让 AI 编程 Agent「秒懂代码库」的本地知识图谱",
+        "ability": [
+          "通过 MCP 接入 AI Agent，一次调用替代数十次 grep/read 的代码探索",
+          "支持 20 种编程语言的符号与调用关系解析，Rust 内核高性能增量索引",
+          "跨语言桥接（Swift↔ObjC、RN JS↔Native）打通混合栈完整调用链",
+          "识别 17+ Web 框架路由，URL 一跳直达 Handler，支持影响面分析",
+          "100% 本地运行（SQLite 存储），数据不出机器，文件变更自动同步"
+        ],
+        "summary": "开源的本地代码知识图谱 MCP 工具，让 Claude Code、Cursor 等 AI Agent 秒懂大型代码库，实测省 62% Token、快 53%。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "接手大型遗留代码库、需要快速理清架构的工程师",
+          "iOS / React Native 混合栈开发团队",
+          "注重代码隐私、需要纯本地化方案的企业与个人",
+          "希望显著降低 AI 编程 Token 开销的独立开发者与小团队"
+        ],
+        "description": "CodeGraph 是开源的本地代码知识图谱工具，基于 Rust + SQLite 构建，通过 MCP 协议接入 Claude Code、Cursor 等主流 AI 编程 Agent。它预建整仓符号与调用关系图，把 Agent 原本数十次 grep/read 的架构探索压缩到 1-4 次调用，官方双臂实测省 62% Token、快 53%、省 44% 成本。100% 本地运行保护隐私，但长会话残留上下文偏高，需正确配置才能发挥最大效用。"
+      },
+      "type": "project",
+      "dateAdded": "20260930"
+    },
+    {
+      "id": "94f1d62d-a0a7-47b9-b279-1a90109c14c0",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "domain": "github.com",
+      "repo": "modelcontextprotocol/servers",
+      "description": "这是 Anthropic 官方维护的 MCP（Model Context Protocol）参考服务器合集，用多种语言示范标准协议写法。2025 年仓库瘦身改造后仅保留 7 个活跃 Server（Fetch、Filesystem、Git、Memory、Sequential Thinking 等），其余明星工具已归档移交各厂商维护。定位是协议教科书而非生产工具箱，官方明确声明仅供学习参考，不建议直接用于生产环境。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-30T12:08:35.134Z",
+      "metaData": {
+        "forks": "11717",
+        "stars": "90712",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://modelcontextprotocol.io",
+        "description": "Model Context Protocol Servers. Contribute to modelcontextprotocol/servers development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Anthropic",
+          "AI Agent",
+          "Claude",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "MCP 官方参考服务器合集深度评测：学协议必读，用工具另寻他处",
+        "ability": [
+          "提供 10 种语言的 MCP 协议标准实现范本（TS/Python/Go 等）",
+          "一行 npx/uvx 命令即可启动 7 个官方参考 Server",
+          "Filesystem Server 提供路径白名单安全设计教科书",
+          "Sequential Thinking 实现动态反思式多步推理",
+          "Memory Server 基于知识图谱实现跨会话持久记忆"
+        ],
+        "summary": "Anthropic 官方的 MCP 协议参考实现仓库——学 MCP 必读，用 MCP 另寻他处。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "想自己开发 MCP Server 的工程师",
+          "AI Agent 工具链架构师",
+          "想理解 MCP 协议底层原理的开发者",
+          "需要给 Claude Desktop 接工具的进阶用户",
+          "研究 AI 工具安全设计的技术人员"
+        ],
+        "description": "这是 Anthropic 官方维护的 MCP（Model Context Protocol）参考服务器合集，用多种语言示范标准协议写法。2025 年仓库瘦身改造后仅保留 7 个活跃 Server（Fetch、Filesystem、Git、Memory、Sequential Thinking 等），其余明星工具已归档移交各厂商维护。定位是协议教科书而非生产工具箱，官方明确声明仅供学习参考，不建议直接用于生产环境。"
+      },
+      "type": "project",
+      "dateAdded": "20260930"
+    },
+    {
+      "id": "950ede3a-1912-4549-9d4a-d9cb04e177bc",
+      "url": "https://github.com/firebase/firebase-ios-sdk",
+      "domain": "github.com",
+      "repo": "firebase/firebase-ios-sdk",
+      "description": "Google 官方为 Apple 平台打造的开源移动后端 SDK，以模块化方式提供认证、Firestore 数据库、崩溃收集、推送通知、远程配置和 AI 调用等能力，让 iOS 工程师无需自建后端即可快速上线 App。SPM 已成首选安装方式，使用时需注意隐私合规配置与 Google 生态锁定风险。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-09-30T12:04:40.996Z",
+      "metaData": {
+        "forks": "1797",
+        "stars": "6709",
+        "topics": [
+          "ai",
+          "analytics",
+          "authentication",
+          "crash-reporting",
+          "database",
+          "database-as-a-service",
+          "firebase",
+          "firebase-auth",
+          "firebase-authentication",
+          "firebase-database",
+          "firebase-messaging",
+          "firebase-storage",
+          "gemini",
+          "ios-sdk",
+          "objective-c",
+          "push-notifications",
+          "storage-service"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://firebase.google.com",
+        "description": "Firebase SDK for Apple App Development. Contribute to firebase/firebase-ios-sdk development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Firebase",
+          "iOS",
+          "Swift",
+          "BaaS",
+          "Google"
+        ],
+        "cover": "",
+        "title": "Firebase iOS SDK 深度评测：iOS 开发者的「全家桶」到底值不值得用",
+        "ability": [
+          "一行代码接入多渠道用户认证",
+          "Firestore 云数据库支持离线缓存与实时同步",
+          "Crashlytics 崩溃收集与性能监控",
+          "远程配置、A/B 测试、推送等增长能力",
+          "Firebase AI Logic 直接调用 Gemini，免管 API Key"
+        ],
+        "summary": "Google 官方开源的 iOS 后端全家桶 SDK，一个库搞定登录、数据库、推送、崩溃收集和 Gemini AI 调用。",
+        "category": [
+          "开发工具",
+          "移动开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者",
+          "初创公司小团队",
+          "C 端 App 开发者",
+          "想快速上线 MVP 的 iOS 工程师",
+          "需要增长与监控工具链的移动团队"
+        ],
+        "description": "Google 官方为 Apple 平台打造的开源移动后端 SDK，以模块化方式提供认证、Firestore 数据库、崩溃收集、推送通知、远程配置和 AI 调用等能力，让 iOS 工程师无需自建后端即可快速上线 App。SPM 已成首选安装方式，使用时需注意隐私合规配置与 Google 生态锁定风险。"
+      },
+      "type": "project",
+      "dateAdded": "20260930"
+    },
+    {
       "id": "8aea1eca-25f3-4b96-bc15-bd89dc9df7e6",
       "url": "https://github.com/ahujasid/mcp-for-blender",
       "domain": "github.com",
@@ -76,8 +327,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:48:58.520Z",
       "metaData": {
-        "forks": "948",
-        "stars": "15174",
+        "forks": "949",
+        "stars": "15195",
         "topics": [
           "desktop-application",
           "gpui",
@@ -135,7 +386,7 @@
       "createdAt": "2026-09-29T12:44:19.590Z",
       "metaData": {
         "forks": "1630",
-        "stars": "18705",
+        "stars": "18713",
         "topics": [
           "agent-security",
           "agent-skills",
@@ -310,8 +561,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:20:51.279Z",
       "metaData": {
-        "forks": "3285",
-        "stars": "37780",
+        "forks": "3288",
+        "stars": "37824",
         "topics": [
           "agentic-ai",
           "agents",
@@ -434,8 +685,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:10:35.202Z",
       "metaData": {
-        "forks": "2120",
-        "stars": "22737",
+        "forks": "2124",
+        "stars": "22813",
         "topics": [
           "ai",
           "cli",
@@ -506,8 +757,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
-        "forks": "1464",
-        "stars": "11125",
+        "forks": "1474",
+        "stars": "11342",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -582,7 +833,7 @@
       "createdAt": "2026-09-28T14:03:42.716Z",
       "metaData": {
         "forks": "26095",
-        "stars": "78145",
+        "stars": "78149",
         "topics": [
           "elasticsearch",
           "java",
@@ -638,8 +889,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T12:14:11.606Z",
       "metaData": {
-        "forks": "6556",
-        "stars": "65324",
+        "forks": "6620",
+        "stars": "66137",
         "topics": [
           "chinese",
           "english-learning",
@@ -756,8 +1007,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T12:06:59.170Z",
       "metaData": {
-        "forks": "5908",
-        "stars": "25990",
+        "forks": "5960",
+        "stars": "26302",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -924,8 +1175,8 @@
       "forks": 0,
       "createdAt": "2026-09-27T13:16:03.509Z",
       "metaData": {
-        "forks": "189",
-        "stars": "2661",
+        "forks": "195",
+        "stars": "2715",
         "topics": [
           "agent-harness",
           "agent-orchestration",
@@ -1285,8 +1536,8 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:15:37.867Z",
       "metaData": {
-        "forks": "2170",
-        "stars": "9192",
+        "forks": "2176",
+        "stars": "9252",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1828,8 +2079,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16120",
-        "stars": "94962",
+        "forks": "16131",
+        "stars": "95029",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -2026,7 +2277,7 @@
       "createdAt": "2026-09-24T11:13:00.613Z",
       "metaData": {
         "forks": "265",
-        "stars": "5596",
+        "stars": "5597",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://docs.fxembed.com",
@@ -2131,8 +2382,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5817",
-        "stars": "43459",
+        "forks": "5819",
+        "stars": "43523",
         "topics": [
           "agentic-ai",
           "agents",
@@ -2241,8 +2492,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "31021",
-        "stars": "103543",
+        "forks": "31023",
+        "stars": "103544",
         "topics": [
           "autograd",
           "deep-learning",
@@ -2519,8 +2770,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4394",
-        "stars": "72783",
+        "forks": "4396",
+        "stars": "72808",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -2573,7 +2824,7 @@
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
         "forks": "4661",
-        "stars": "51077",
+        "stars": "51083",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -2699,8 +2950,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "323",
-        "stars": "3885",
+        "forks": "324",
+        "stars": "3894",
         "topics": [
           "agents",
           "api-keys",
@@ -2817,8 +3068,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
-        "forks": "3655",
-        "stars": "32211",
+        "forks": "3657",
+        "stars": "32216",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -2875,8 +3126,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1863",
-        "stars": "22066",
+        "forks": "1865",
+        "stars": "22115",
         "topics": [
           "board",
           "collaboration",
@@ -3362,8 +3613,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5515",
-        "stars": "38309",
+        "forks": "5516",
+        "stars": "38319",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -3880,8 +4131,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1925",
-        "stars": "27479",
+        "forks": "1930",
+        "stars": "27494",
         "topics": [
           "agent",
           "ai-agent",
@@ -4257,8 +4508,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "5324",
-        "stars": "81998",
+        "forks": "5327",
+        "stars": "82048",
         "topics": [
           "ade",
           "agent-ide",
@@ -4467,8 +4718,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "750",
-        "stars": "5975",
+        "forks": "752",
+        "stars": "5992",
         "topics": [
           "agent",
           "agentic-ai",
@@ -4852,8 +5103,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "24901",
-        "stars": "148414",
+        "forks": "25101",
+        "stars": "148653",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -4958,7 +5209,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3047",
-        "stars": "25900",
+        "stars": "25902",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6503,8 +6754,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3071",
-        "stars": "42769",
+        "forks": "3077",
+        "stars": "42795",
         "topics": [
           "agent",
           "agent-skills",
@@ -6768,7 +7019,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "304",
-        "stars": "8529",
+        "stars": "8534",
         "topics": [
           "agents",
           "claude-code",
@@ -7106,8 +7357,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4198",
-        "stars": "31410",
+        "forks": "4200",
+        "stars": "31431",
         "topics": [
           "agent",
           "agentic",
@@ -9292,8 +9543,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1756",
-        "stars": "24282",
+        "forks": "1758",
+        "stars": "24307",
         "topics": [
           "antigravity",
           "claude",
@@ -9427,8 +9678,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "4946",
-        "stars": "54388",
+        "forks": "4949",
+        "stars": "54428",
         "topics": [
           "ai",
           "animation",
@@ -12536,8 +12787,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5519",
-        "stars": "49588",
+        "forks": "5536",
+        "stars": "49776",
         "topics": [
           "ai",
           "audiobook",
@@ -12785,8 +13036,8 @@
       "forks": 0,
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
-        "forks": "8150",
-        "stars": "62723",
+        "forks": "8181",
+        "stars": "62941",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -13545,8 +13796,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6147",
-        "stars": "39631",
+        "forks": "6148",
+        "stars": "39635",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -14547,8 +14798,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9253",
-        "stars": "45324",
+        "forks": "9268",
+        "stars": "45381",
         "topics": [
           "3d-globe",
           "cesium",
@@ -14906,8 +15157,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:27:14.888Z",
       "metaData": {
-        "forks": "8453",
-        "stars": "73770",
+        "forks": "8867",
+        "stars": "75963",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -15620,8 +15871,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5022",
-        "stars": "74783",
+        "forks": "5027",
+        "stars": "74858",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -15818,8 +16069,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "7991",
-        "stars": "148572",
+        "forks": "7998",
+        "stars": "148645",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -16104,8 +16355,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "10592",
-        "stars": "61938",
+        "forks": "10600",
+        "stars": "61991",
         "topics": [
           "agents",
           "ai",
@@ -16663,8 +16914,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T04:41:58.197Z",
       "metaData": {
-        "forks": "81351",
-        "stars": "387475",
+        "forks": "82207",
+        "stars": "390839",
         "topics": [
           "ai",
           "assistant",
@@ -16676,7 +16927,7 @@
         ],
         "license": "License",
         "homepage": "https://openclaw.ai",
-        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞  - GitHub - openclaw/openclaw: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞"
+        "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞  - GitHub - openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞"
       },
       "summaryData": {
         "tags": [
@@ -17260,8 +17511,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3013",
-        "stars": "52285",
+        "forks": "3014",
+        "stars": "52297",
         "topics": [
           "adhd",
           "claude-",
@@ -18479,8 +18730,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "22744",
-        "stars": "269932",
+        "forks": "22934",
+        "stars": "272588",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -18642,8 +18893,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "18900",
-        "stars": "122355",
+        "forks": "19905",
+        "stars": "127268",
         "topics": [
           "ai-video-generator",
           "content-creation",
@@ -18783,8 +19034,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40335",
-        "stars": "269887",
+        "forks": "40344",
+        "stars": "269941",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -19060,8 +19311,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "850",
-        "stars": "9070",
+        "forks": "853",
+        "stars": "9092",
         "topics": [],
         "license": "",
         "homepage": "",
