@@ -1,0 +1,54 @@
+{
+  "id": "a2f6284f-eac6-45e3-bef4-55829c10170c",
+  "url": "https://github.com/pablostanley/yoinks",
+  "domain": "github.com",
+  "repo": "pablostanley/yoinks",
+  "description": "yoinks 是设计师 Pablo Stanley 开发的开源终端视频下载器，用 Ink（React for Terminal）打造精美全屏界面，底层调用 yt-dlp 引擎，覆盖 1800+ 站点。无需 Python 环境，粘链接即可下载。但播放列表批量下载、npm 正式发布等仍在路线图中，且为个人维护项目，需留意其功能边界。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-01T12:08:07.937Z",
+  "metaData": {
+    "forks": "245",
+    "stars": "2589",
+    "topics": [],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "yoink any video from your terminal. no shady ads. Contribute to pablostanley/yoinks development by creating an account on GitHub."
+  },
+  "summaryData": {
+    "tags": [
+      "yt-dlp",
+      "终端工具",
+      "视频下载",
+      "开源项目",
+      "TUI"
+    ],
+    "cover": "",
+    "title": "yoinks 深度评测：粘链接即下载的终端视频神器",
+    "ability": [
+      "支持 YouTube、TikTok、Instagram、X 等 1800+ 网站的视频下载",
+      "基于 Ink（React for Terminal）构建全屏终端界面，支持鼠标点击与键盘快捷键",
+      "首次运行自动下载 yt-dlp 二进制，无需配置 Python 和 ffmpeg 环境",
+      "交互式格式选择器，上下键或数字键挑选清晰度",
+      "极简三步操作：粘链接→选清晰度→回车，下载后输出文件绝对路径"
+    ],
+    "summary": "一个基于 yt-dlp 的终端视频下载器，粘链接、选清晰度、按回车，三步从 1800+ 网站保存视频。",
+    "category": [
+      "开发工具",
+      "效率工具",
+      "视频下载"
+    ],
+    "suitable": [
+      "终端党与 macOS/Linux 开发者",
+      "经常保存视频素材或学习资料的创作者",
+      "想要轻量级 yt-dlp 图形化前端的用户",
+      "被网页下载器弹窗广告困扰的下载重度用户",
+      "对 Ink/TUI 技术方案感兴趣的开发者"
+    ],
+    "description": "yoinks 是设计师 Pablo Stanley 开发的开源终端视频下载器，用 Ink（React for Terminal）打造精美全屏界面，底层调用 yt-dlp 引擎，覆盖 1800+ 站点。无需 Python 环境，粘链接即可下载。但播放列表批量下载、npm 正式发布等仍在路线图中，且为个人维护项目，需留意其功能边界。"
+  },
+  "contentDetail": "> 💡 **深度研究说明**：本文信息综合自 GitHub 仓库（pablostanley/yoinks）、作者主页、Trendshift 趋势数据、社区 Issue 记录以及第三方 yt-dlp 前端对比评测，数据截至 2026 年 10 月。文中引用的安装命令以官方 README 为准，npm 发布状态、Star 数等请以仓库实时数据为准。\n---\n# yoinks 深度评测：把\"网页下载器\"那点破事，钉进一个终端窗口\n## 🎯 一句话总结\n**yoinks 是一个用 Ink（React for Terminal）写的终端视频下载器，底层拉起 yt-dlp，让你从 YouTube、X、Instagram、TikTok 等 1,800+ 站点\"粘链接 → 选清晰度 → 回车\"三步把视频落进本地，全程无弹窗、无假按钮、无跳转广告。** 它值得关注，不是因为它比 yt-dlp 更强大——而是因为它把一个丑陋但强大的内核，包装成了一件用起来很舒服的\"小家电\"。\n---\n## 🌫️ 背景与痛点：为什么是 yoinks，为什么是 Pablo Stanley\n### 痛点：下载视频这件事，被搞得一地鸡毛\n如果你在过去几年里试图从一个社交平台把视频存到本地，大概率经历过下面两种路径之一：\n- **路径 A：网上搜\"XX 视频下载器\"**——弹进一个满屏垃圾广告的网站，假下载按钮比真按钮多三倍，点错一次就开始跳转博彩或者色情页。\n- **路径 B：直接用 yt-dlp**——功能确实无敌（1,000+ 站点、字幕、SponsorBlock、Cookies 注入一应俱全），但它是纯 CLI。命令参数像咒语：`-f \"bv*[height<=1080]+ba/b\"` 这种格式字符串，小白看到就想关掉终端。\nys  yoinks 卡的就是这两头之间的空档：**比网页下载器干净，比裸 yt-dlp 好用。**\n### 创作者背景：一个\"会写代码的顶级设计师\"\nPablo Stanley 这个名字，对做设计的人来说可能比做开发的人更熟悉：\n- 他画出了 **Avataaars、Humaaans、Open Peeps、Open Doodles**——这几套插画库几乎承包了过去十年互联网产品的默认头像和落地页插图。\n- 联合创立过 **Blush**（Figma 里的插画平台）、**Lummi**（AI 图像平台，2025 年被 Udemy 收购）。\n- 目前在 **Vercel 的 v0 团队**（生成式 UI 产品）做创意方向，业余还在折腾 Efecto、Hilos、Pixabots 等一堆小工具。\n简单说，这是一个**典型的\"设计师 + 一把梭开发者\"复合型选手**。理解这一点，你就能理解为什么 yoinks 会是一个如此\"规整、有审美、不堆功能\"的工具——它更像一件设计作品，而不是工程师炫技的产物。\n---\n## ⚙️ 核心亮点与技术剖析：一个漂亮的\"包装层\"，没有再多点什么——这正是它的优点\n### 技术栈一览\n| 层次 | 技术选型 | 说明 |\n|---|---|---|\n| 语言 | TypeScript | 类型安全，开发体验现代 |\n| 终端 UI | **Ink**（React for Terminal） | 用 JSX 写终端组件，渲染成 ANSI 字符 |\n| 下载内核 | **yt-dlp**（首次运行自动拉二进制） | 无需 Python，落到 `~/.yoinks/bin` |\n| 流合并 / MP3 提取 | ffmpeg（优先 PATH 中已有版本） | 缺失时用 `ffmpeg-static` 兜底 |\n| 打包 | tsup → `dist/cli.js` | 单文件 bundle |\n| 协议 | MIT | 完全自由商用与修改 |\n### 亮点一：Ink 的\"终端像素级设计\"——稀缺且惊艳\nInk 是一个很冷门的框架——它让你**用 React 组件的思路写终端 UI**。Pablo 用它做了一个全屏居中的界面：进入时接管整个终端窗口，退出时恢复你的 scrollback（滚动缓冲区）。\n更关键的是交互设计：**↑/↓、j/k、数字键都能选格式；鼠标可以点击按钮、点击 Logo 回到首页**。一个真正的终端工具支持鼠标点击，这件事在开源圈里做的人不多。\n打个比方：如果说 yt-dlp 是一辆功能齐全但仪表盘全是英文字母的手动挡赛车，yoinks 就是把同一台发动机装进了一台自动挡小钢炮——**发动机没变，但你愿意天天开了。**\n### 亮点二：把\"依赖地狱\"彻底埋掉\nyt-dlp 最劝退新手的不是命令难记，而是**Python 环境 + pip + ffmpeg 三件套**的安装成本。yoinks 的做法是：\n```\n首次运行 → 自动下载 yt-dlp 独立二进制到 ~/.yoinks/bin\nffmpeg   → 优先用系统 PATH 里的，找不到就用 ffmpeg-static 兜底\n```\n你唯一需要自备的就是 Node 18+。这就把上手门槛从\"会装 Python 环境\"拉到了\"会装 Node\"——后者对任何开发者来说基本是零成本。\n### 亮点三：克制的功能边界（这是优点不是缺点）\n看它的 Roadmap 你会发现，**它刻意拒绝做\"全能下载器\"**：\n- `-o <dir>` 选输出目录——还在 Roadmap\n- 播放列表 / 推文串批量下载——还在 Roadmap\n- `--best` / `--mp3` 跳过选择器的脚本模式——还在 Roadmap\n- 剪贴板自动检测链接——还在 Roadmap\n- 发布到 npm——**还在 Roadmap**（意味着目前 npm 上可能还不是它的正式包）\n这种\"功能不贪多\"的取舍，让 yoinks 的 UX 极其干净——但它也是一把双刃剑，后面局限性部分会讲。\n---\n## 🚀 上手体验：三步搞定，配最小可运行示例\n### 安装\n> ⚠️ **注意**：截至本文撰写时，\"Publish to npm\" 仍在 Roadmap 中，**yoinks 可能还没有发布到 npm 官方源**。最稳妥的安装方式是从 GitHub 直接安装或本地构建：\n```bash\n# 方式一：直接从 GitHub 装（需要 Node 18+）\nnpm i -g github:pablostanley/yoinks\n# 方式二：克隆仓库本地构建\ngit clone https://github.com/pablostanley/yoinks\ncd yoinks && npm install && npm run build\nnpm link          # 挂成全局命令 yoinks\n```\n如果你已经全局装过 yt-dlp，yoinks 会自动复用你的版本，不会重复下载。\n### 三种典型用法\n```bash\n# 1. 直接给链接 → 进入格式选择器\nyoinks https://youtu.be/dQw4w9WgXcQ\n# 2. 不带参数启动 → 会提示你粘链接\nyoinks\n# 3. 退出 / 返回\n#    esc = 返回上一级\n#    ^c  = 退出程序\n```\n文件默认保存到 `~/Downloads`，下载完成后终端会打印出**文件的绝对路径**，方便你立刻复制或 `open`。\n### 一句话总结上手成本\n**如果你能装 Node，你就能用 yoinks。剩下的就是粘链接、按回车。**\n---\n## 📊 社区生命力：短期爆发，但仍是\"一人项目\"\n来自 Trendshift 与仓库 Issue 区的数据：\n| 维度 | 数据 |\n|---|---|\n| GitHub Stars | **约 2.6k**（创建约 2 个月） |\n| Forks | 245 |\n| 贡献者 | **2 人** |\n| Open Issues | 9 |\n| Open PRs | 8 |\n| 最近提交 | 约 2 个月前 |\n| 协议 | MIT |\n| 衍生 Fork | 已出现（如 MediaDL-CLI） |\n**解读**：\n- **热度真实**：两个月冲到 2.6k stars，说明确实踩中了社区痛点（中文推友的评价是\"能把体验做这么干净，是真懂痛点\"）\n- **维护风险明显**：只有 2 个贡献者，最近一次提交已是约两个月前。Issue 里 7 月提出的 Docker 部署请求（#10）到 10 月仍未被处理。**bus factor（巴士系数）非常低**——如果 Pablo 忙别的事，这个项目可能很快进入\"好用但停滞\"的状态。\n- **生态已有反应**：出现衍生 Fork（MediaDL-CLI）说明社区认可这个架构的方向。\n---\n## 🎯 目标人群与收益：谁该装它，谁别装\n| 用户类型 | 是否推荐 | 理由 |\n|---|---|---|\n| 终端党 / macOS、Linux 开发者 | ⭐⭐⭐⭐⭐ | 就是为你们做的，体验丝滑 |\n| 经常保存视频做素材 / 学习资料的创作者 | ⭐⭐⭐⭐ | 三步搞定，比网页下载器省心 |\n| 想给 yt-dlp 加一层友好外壳的轻度用户 | ⭐⭐⭐⭐ | 比 GUI 前端更轻，不占资源 |\n| Windows 小白 / 不开终端的用户 | ⭐⭐ | 终端本身就是门槛，可能更适合 Stacher |\n| 需要批量下载播放列表 / 频道订阅 | ⭐⭐ | 功能还在 Roadmap，建议用 yt-dlp 原生或 Tartube |\n| 企业自动化流水线 | ⭐⭐ | 缺少脚本化 flag，建议直接用 yt-dlp |\n**它能为你解决的具体收益**：\n1. **省时间**：告别\"搜下载器 → 关弹窗 → 找真按钮 → 忍跳转\"的心智消耗\n2. **省心**：不用记任何 yt-dlp 参数，覆盖 1,800+ 站点的能力完全继承\n3. **省系统资源**：一个几 MB 的 CLI 工具，对比 Electron GUI 动辄几百 MB 内存\n4. ** aesthetically 愉悦**：Ink 做的全屏界面 + 鼠标交互，让\"下载视频\"这件事多了一点仪式感\n---\n## 🥊 竞品对比：yoinks 在 yt-dlp 生态里的位置\nyt-dlp 前端生态非常拥挤，我用主流方案横向对比一下（数据综合自 DownKingo 2026 年的对比评测与各仓库）：\n| 工具 | 类型 | 平台 | 界面风格 | 批量/播放列表 | 适合人群 |\n|---|---|---|---|---|---|\n| **yt-dlp 原生** | CLI | 全平台 | 纯命令行 | ✅ 完整 | 硬核玩家、脚本自动化 |\n| **yoinks** | TUI | macOS/Linux/Windows（需 Node） | 全屏 Ink UI，可鼠标点击 | ❌ Roadmap | 终端党，要\"轻\"和\"美\" |\n| **Stacher** | Electron GUI | 全平台 | 图形界面 | ✅ 基础 | Windows 用户，闭源 |\n| **VidBee** | Electron GUI（开源） | 全平台 | 图形界面 | ✅ 含 RSS 订阅 | 想要持续归档的用户 |\n| **Open Video Downloader** | Tauri + Vue | 全平台 | 图形界面 | ✅ 完整 | 平衡型选择 |\n| **Parabolic** | GTK4 | 仅 Linux | GNOME 原生 | 基础 | Linux 桌面党 |\n| **Tartube** | Python/GTK | 全平台 | 功能密集 | ✅ 频道订阅 | 视频库管理者 |\n**yoinks 的独特定位**：它是这张表里**唯一一个 TUI（终端 UI）**——比 GUI 更轻、比 CLI 更友好，卡在一个非常微妙但确实有需求的空位。如果你是\"我讨厌 GUI 臃肿，但也懒得记 yt-dlp 参数\"的人，它几乎是为你量身定做的。\n---\n## ⚠️ 局限与避坑指南：别把它当\"yt-dlp 完全体\"\n作为一篇负责任的评测，这些坑必须讲清楚：\n### 1. 功能不完整，别拿它替代 yt-dlp\n播放列表批量下载、`-o` 指定输出目录、脚本化 flag、剪贴板检测——这些**全都在 Roadmap 里没做**。如果你需要任何高级能力，直接用 yt-dlp 原生命令，别绕这一圈。\n### 2. 目前尚未正式发布到 npm\nRoadmap 里明确写着 \"Publish to npm\"。所以你现在可能需要从 GitHub 直接安装。这意味着：\n- **没有版本锁定**，安装的可能是最新 main 分支\n- 升级需要手动 `npm update -g` 或重新安装\n### 3. Windows 用户会遇到下载路径问题\nIssue #22 反馈了一个真实痛点：**即使用户改了下载文件夹，yoinks 默认还是会往 C 盘 Downloads 存**。Windows 党在用之前要心里有数。\n### 4. 不支持 Docker / 服务器部署\nIssue #10 提出希望支持 Docker，至今仍是 Open 状态。如果你想在 NAS、服务器、容器里跑，**yoinks 不是答案**——它就是为个人桌面设计的。\n### 5. 一个人的项目，bus factor 极低\n2 个贡献者，约 2 个月前最后一次提交。Pablo 是\"多线开花\"的创作者（Vercel、Efecto、Hilos、Remoto 同时推进），yoinks 大概率是\"心情之作\"。**它可能不会死，但也可能不会进化。** fork 它或者换工具，都是合理的心理预期。\n### 6. 法律风险：合规边界你要自己扛\nREADME 里有一段非常诚恳的 Fair Use 提示：**\"Downloading content may violate a platform's terms of service\"**。翻译一下：\n- YouTube、Instagram、TikTok 等平台的用户协议基本都禁止未授权下载\n- 下载自己上传的内容、CC 协议内容、或用于个人留档，多数司法辖区问题不大\n- 二次分发、规避付费墙、搬运牟利——**法律风险完全自负**\nyoinks 只是个工具，它不替你做道德判断。用它下载，等同于用它下载任何东西——别怪工具。\n### 7. 没有病毒式更新的站点适配\nyt-dlp 本身需要频繁更新来应对 YouTube 等平台的反爬升级。yoinks 依赖 yt-dlp 二进制，但**\"self-update\"功能也在 Roadmap 中**，意味着如果某天 YouTube 改了接口，你需要手动更新 yt-dlp 或等 yoinks 出新版。\n---\n## 🏁 结语与行动建议：值得一试，但别过度神化\n### 终极评判\n> **yoinks 是一个典型的\"设计师做工程\"作品——工程上没有惊喜（因为内核是 yt-dlp），但体验上做到了克制与优雅，在 yt-dlp 前端生态里找到了一个真实存在的空位。**\n它**不是**要替代 yt-dlp，也不是要做最强大的下载器。它就想做一件事：**让你下次想保存一条视频时，第一反应不再是打开浏览器搜下载网站，而是切到终端敲三个字母。**这个目标，它达成了。\n### 行动建议（按人群）\n- **如果你是终端党**：立刻装，5 分钟内你会喜欢上它。装完把 `alias y=\"yoinks\"` 加进 shell 配置，体验再上一个台阶。\n- **如果你是 Windows 小白**：先确认你愿意开终端。不愿意就选 Stacher 或 VidBee，yoinks 不是为你设计的。\n- **如果你需要批量下载播放列表**：直接学 yt-dlp 原生命令，`yt-dlp -f best \"playlist_url\"` 就够了，不用绕。\n- **如果你担心项目停滞**：star 它、fork 它，或者干脆用 MediaDL-CLI 这类衍生版。开源的好处就是这条路走不通，隔壁还有路。\n- **如果你只是好奇**：去仓库看一眼 README 和截图就够了，yoinks 的核心价值是\"用\"，不是\"看\"。\n### 一个小建议给 Pablo（如果你在看）\n把 npm 发布和 `--mp3` / `--best` 两个 flag 提前做完——前者是获取新用户的最低门槛，后者是让脚本党愿意把它写进 shell script 的关键。这两件事做完，yoinks 的\"实用价值\"会瞬间翻倍。\n**最终推荐指数：⭐⭐⭐⭐（4.2/5）**——扣掉的那 0.8 分，给功能未完成的 Roadmap、给一个人的维护团队、给那个还卡在 C 盘 Downloads 的 Windows 用户。",
+  "type": "project",
+  "dateAdded": "20261001"
+}

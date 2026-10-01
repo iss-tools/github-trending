@@ -1,6 +1,213 @@
 {
   "all": [
     {
+      "id": "334361ba-be4d-4d7a-a21c-eb29ffd33636",
+      "url": "https://github.com/Friedrich-M/UniMate",
+      "domain": "github.com",
+      "repo": "Friedrich-M/UniMate",
+      "description": "UniMate 是 SIGGRAPH Asia 2026 的开源科研项目，核心创新是把骨架当作图结构（而非固定向量槽位）输入扩散 Transformer，实现文本驱动的任意骨架动画生成。代码 MIT 协议、文档清晰，但预训练权重尚未发布，训练数据含商业资产需注意许可边界，目前更适合学习研究而非直接商用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-01T12:16:08.221Z",
+      "metaData": {
+        "forks": "91",
+        "stars": "934",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://linzhanmou.com/unimate/",
+        "description": "[SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons - Friedrich-M/UniMate"
+      },
+      "summaryData": {
+        "tags": [
+          "3D动画",
+          "动作生成",
+          "扩散模型",
+          "SIGGRAPH",
+          "GitHub开源"
+        ],
+        "cover": "",
+        "title": "UniMate 深度评测：一个模型让任意 3D 骨架动起来（SIGGRAPH Asia 2026）",
+        "ability": [
+          "文本驱动任意拓扑骨架生成动画（人形、四足、昆虫、游鱼、台灯等均可）",
+          "零样本泛化到训练集中从未见过的骨架结构",
+          "支持动作补全、动作编辑、动作扩展、跨骨架动作迁移四种下游应用",
+          "开源 UniML3D 跨拓扑动作数据集（超 1.3 万条序列、7400+ 骨架）",
+          "推理速度快（约 50 FPS，单个模型动画仅需 1.2 秒）"
+        ],
+        "summary": "普林斯顿等名校联合开源的 3D 动画基础模型，一句话就能让任意拓扑骨架动起来。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "3D 动画"
+        ],
+        "suitable": [
+          "3D 动作生成 / 计算机视觉方向的学术研究者",
+          "独立游戏开发者（尤其是异形生物动画需求）",
+          "VFX / 动画工作室技术指导（TD）",
+          "机器人仿真工程师",
+          "研究图 Transformer 架构的 AI 研究员"
+        ],
+        "description": "UniMate 是 SIGGRAPH Asia 2026 的开源科研项目，核心创新是把骨架当作图结构（而非固定向量槽位）输入扩散 Transformer，实现文本驱动的任意骨架动画生成。代码 MIT 协议、文档清晰，但预训练权重尚未发布，训练数据含商业资产需注意许可边界，目前更适合学习研究而非直接商用。"
+      },
+      "type": "project",
+      "dateAdded": "20261001"
+    },
+    {
+      "id": "6d0e30ac-9074-4194-b9cc-10dc179a87c8",
+      "url": "https://github.com/HunxByts/GhostTrack",
+      "domain": "github.com",
+      "repo": "HunxByts/GhostTrack",
+      "description": "GhostTrack 是印尼开发者 HunxByts 打造的开源 Python 工具，仅 300 行代码就把 IP 查询、手机号解析、社媒用户名嗅探三大公开信息查询装进一个终端菜单。它是 OSINT 入门教学和 CTF 侦察的轻量利器，但本质是 API 包装器，定位精度有限，误报率高，且无开源许可证，不适合专业生产环境，使用时需严守法律红线。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-01T12:11:08.117Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "OSINT",
+          "开源项目",
+          "网络安全",
+          "Python",
+          "信息收集"
+        ],
+        "cover": "",
+        "title": "GhostTrack 深度评测：8 个月狂揽 16k Star 的 OSINT 入门神器",
+        "ability": [
+          "IP 地理位置与 ISP 信息查询",
+          "手机号归属地与运营商解析",
+          "25+ 社媒平台用户名批量嗅探",
+          "菜单式极简终端交互，5 分钟上手",
+          "可与 Seeker 联动进行深度侦察"
+        ],
+        "summary": "一款把 IP 定位、手机号解析、社媒用户名嗅探三合一的 Python 命令行 OSINT 入门工具。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "OSINT 初学者",
+          "CTF 选手与红队入门者",
+          "安全意识培训讲师",
+          "网络安全爱好者",
+          "想了解自身信息暴露面的普通用户"
+        ],
+        "description": "GhostTrack 是印尼开发者 HunxByts 打造的开源 Python 工具，仅 300 行代码就把 IP 查询、手机号解析、社媒用户名嗅探三大公开信息查询装进一个终端菜单。它是 OSINT 入门教学和 CTF 侦察的轻量利器，但本质是 API 包装器，定位精度有限，误报率高，且无开源许可证，不适合专业生产环境，使用时需严守法律红线。"
+      },
+      "type": "project",
+      "dateAdded": "20261001"
+    },
+    {
+      "id": "a2f6284f-eac6-45e3-bef4-55829c10170c",
+      "url": "https://github.com/pablostanley/yoinks",
+      "domain": "github.com",
+      "repo": "pablostanley/yoinks",
+      "description": "yoinks 是设计师 Pablo Stanley 开发的开源终端视频下载器，用 Ink（React for Terminal）打造精美全屏界面，底层调用 yt-dlp 引擎，覆盖 1800+ 站点。无需 Python 环境，粘链接即可下载。但播放列表批量下载、npm 正式发布等仍在路线图中，且为个人维护项目，需留意其功能边界。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-01T12:08:07.937Z",
+      "metaData": {
+        "forks": "245",
+        "stars": "2589",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "yoink any video from your terminal. no shady ads. Contribute to pablostanley/yoinks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "yt-dlp",
+          "终端工具",
+          "视频下载",
+          "开源项目",
+          "TUI"
+        ],
+        "cover": "",
+        "title": "yoinks 深度评测：粘链接即下载的终端视频神器",
+        "ability": [
+          "支持 YouTube、TikTok、Instagram、X 等 1800+ 网站的视频下载",
+          "基于 Ink（React for Terminal）构建全屏终端界面，支持鼠标点击与键盘快捷键",
+          "首次运行自动下载 yt-dlp 二进制，无需配置 Python 和 ffmpeg 环境",
+          "交互式格式选择器，上下键或数字键挑选清晰度",
+          "极简三步操作：粘链接→选清晰度→回车，下载后输出文件绝对路径"
+        ],
+        "summary": "一个基于 yt-dlp 的终端视频下载器，粘链接、选清晰度、按回车，三步从 1800+ 网站保存视频。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "视频下载"
+        ],
+        "suitable": [
+          "终端党与 macOS/Linux 开发者",
+          "经常保存视频素材或学习资料的创作者",
+          "想要轻量级 yt-dlp 图形化前端的用户",
+          "被网页下载器弹窗广告困扰的下载重度用户",
+          "对 Ink/TUI 技术方案感兴趣的开发者"
+        ],
+        "description": "yoinks 是设计师 Pablo Stanley 开发的开源终端视频下载器，用 Ink（React for Terminal）打造精美全屏界面，底层调用 yt-dlp 引擎，覆盖 1800+ 站点。无需 Python 环境，粘链接即可下载。但播放列表批量下载、npm 正式发布等仍在路线图中，且为个人维护项目，需留意其功能边界。"
+      },
+      "type": "project",
+      "dateAdded": "20261001"
+    },
+    {
+      "id": "7c85851e-29b8-491a-a55e-6778b86f0843",
+      "url": "https://github.com/tile-ai/tilelang",
+      "domain": "github.com",
+      "repo": "tile-ai/tilelang",
+      "description": "TileLang 是基于 TVM 的 Tile 级 Python DSL，由北京大学与微软研究院联合打造。它既保留 Triton 的简洁，又把内存布局、流水线等底层控制权交还开发者，80 行 Python 即可实现匹敌手写 CUTLASS 的 FlashMLA，在 H100 上比 Triton 快 4~10 倍，已被 SGLang 等生产框架落地采用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-01T12:04:43.199Z",
+      "metaData": {
+        "forks": "805",
+        "stars": "7973",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://tilelang.com/",
+        "description": " Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels - tile-ai/tilelang"
+      },
+      "summaryData": {
+        "tags": [
+          "GPU",
+          "Kernel 编程",
+          "TVM",
+          "高性能计算",
+          "编译器"
+        ],
+        "cover": "",
+        "title": "TileLang 深度评测：用 80 行 Python 写出匹敌 CUTLASS 的 GPU 高性能算子",
+        "ability": [
+          "用简洁 Python DSL 编写高性能 GPU Kernel，保留 Triton 的易用性",
+          "显式控制共享内存、寄存器等内存层级，兼顾可读性与极致性能",
+          "自动 Layout 推断与软件流水线，80 行代码实现 FlashMLA",
+          "多后端支持：NVIDIA、AMD、Apple Metal、昇腾、摩尔线程等",
+          "内置 autotune 自动调优、LSP 代码提示与 IR 可视化调试工具"
+        ],
+        "summary": "TileLang 是北大与微软联合开源的 GPU Kernel 编程语言，用 Python 语法写出接近 CUTLASS 手写性能的算子。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "大模型推理框架开发者（vLLM/SGLang 等）",
+          "AI 框架算子研发工程师",
+          "量化/反量化 Kernel 研究者",
+          "国产算力等非 NVIDIA 平台开发者",
+          "HPC 与体系结构研究者"
+        ],
+        "description": "TileLang 是基于 TVM 的 Tile 级 Python DSL，由北京大学与微软研究院联合打造。它既保留 Triton 的简洁，又把内存布局、流水线等底层控制权交还开发者，80 行 Python 即可实现匹敌手写 CUTLASS 的 FlashMLA，在 H100 上比 Triton 快 4~10 倍，已被 SGLang 等生产框架落地采用。"
+      },
+      "type": "project",
+      "dateAdded": "20261001"
+    },
+    {
       "id": "dbbbeb1f-e973-491e-851f-022008593f80",
       "url": "https://github.com/alirezarezvani/claude-skills",
       "domain": "github.com",
@@ -11,8 +218,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T13:05:21.972Z",
       "metaData": {
-        "forks": "3827",
-        "stars": "27084",
+        "forks": "3831",
+        "stars": "27095",
         "topics": [
           "agent-plugins",
           "agent-skills",
@@ -86,7 +293,7 @@
       "createdAt": "2026-09-30T12:14:44.510Z",
       "metaData": {
         "forks": "4666",
-        "stars": "72711",
+        "stars": "72718",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://colbymchenry.github.io/codegraph/",
@@ -138,8 +345,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T12:08:35.134Z",
       "metaData": {
-        "forks": "11733",
-        "stars": "90899",
+        "forks": "11736",
+        "stars": "90906",
         "topics": [],
         "license": "License",
         "homepage": "https://modelcontextprotocol.io",
@@ -192,7 +399,7 @@
       "createdAt": "2026-09-30T12:04:40.996Z",
       "metaData": {
         "forks": "1801",
-        "stars": "6799",
+        "stars": "6805",
         "topics": [
           "ai",
           "analytics",
@@ -327,8 +534,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:48:58.520Z",
       "metaData": {
-        "forks": "953",
-        "stars": "15384",
+        "forks": "956",
+        "stars": "15407",
         "topics": [
           "desktop-application",
           "gpui",
@@ -385,8 +592,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:44:19.590Z",
       "metaData": {
-        "forks": "1643",
-        "stars": "18842",
+        "forks": "1645",
+        "stars": "18859",
         "topics": [
           "agent-security",
           "agent-skills",
@@ -561,8 +768,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:20:51.279Z",
       "metaData": {
-        "forks": "3320",
-        "stars": "38298",
+        "forks": "3322",
+        "stars": "38314",
         "topics": [
           "agentic-ai",
           "agents",
@@ -685,8 +892,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:10:35.202Z",
       "metaData": {
-        "forks": "2169",
-        "stars": "23552",
+        "forks": "2171",
+        "stars": "23596",
         "topics": [
           "ai",
           "cli",
@@ -757,8 +964,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
-        "forks": "1578",
-        "stars": "13295",
+        "forks": "1599",
+        "stars": "13653",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -832,8 +1039,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T14:03:42.716Z",
       "metaData": {
-        "forks": "26097",
-        "stars": "78173",
+        "forks": "26100",
+        "stars": "78177",
         "topics": [
           "elasticsearch",
           "java",
@@ -889,8 +1096,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T12:14:11.606Z",
       "metaData": {
-        "forks": "6647",
-        "stars": "66541",
+        "forks": "6648",
+        "stars": "66557",
         "topics": [
           "chinese",
           "english-learning",
@@ -1007,8 +1214,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T12:06:59.170Z",
       "metaData": {
-        "forks": "5983",
-        "stars": "26495",
+        "forks": "5985",
+        "stars": "26497",
         "topics": [],
         "license": "License",
         "homepage": "",
@@ -1175,8 +1382,8 @@
       "forks": 0,
       "createdAt": "2026-09-27T13:16:03.509Z",
       "metaData": {
-        "forks": "225",
-        "stars": "3266",
+        "forks": "227",
+        "stars": "3329",
         "topics": [
           "agent-harness",
           "agent-orchestration",
@@ -1192,7 +1399,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://openrig.dev",
-        "description": "Multi-agent harness that runs Claude Code and Codex together as one system - mvschwarz/openrig"
+        "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work. - mvschwarz/openrig"
       },
       "summaryData": {
         "tags": [
@@ -1352,7 +1559,7 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:29:20.189Z",
       "metaData": {
-        "forks": "33551",
+        "forks": "33549",
         "stars": "142961",
         "topics": [
           "blog",
@@ -1537,7 +1744,7 @@
       "createdAt": "2026-09-26T11:15:37.867Z",
       "metaData": {
         "forks": "2181",
-        "stars": "9297",
+        "stars": "9304",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2079,8 +2286,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16197",
-        "stars": "95483",
+        "forks": "16204",
+        "stars": "95528",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -2277,7 +2484,7 @@
       "createdAt": "2026-09-24T11:13:00.613Z",
       "metaData": {
         "forks": "269",
-        "stars": "5618",
+        "stars": "5620",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://docs.fxembed.com",
@@ -2382,8 +2589,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5853",
-        "stars": "44050",
+        "forks": "5857",
+        "stars": "44095",
         "topics": [
           "agentic-ai",
           "agents",
@@ -2492,8 +2699,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "31024",
-        "stars": "103578",
+        "forks": "31025",
+        "stars": "103588",
         "topics": [
           "autograd",
           "deep-learning",
@@ -2770,8 +2977,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4422",
-        "stars": "73186",
+        "forks": "4423",
+        "stars": "73239",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -2824,7 +3031,7 @@
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
         "forks": "4665",
-        "stars": "51149",
+        "stars": "51158",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -2951,7 +3158,7 @@
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
         "forks": "328",
-        "stars": "3960",
+        "stars": "3964",
         "topics": [
           "agents",
           "api-keys",
@@ -3069,7 +3276,7 @@
       "createdAt": "2026-09-22T11:11:52.572Z",
       "metaData": {
         "forks": "3663",
-        "stars": "32253",
+        "stars": "32255",
         "topics": [
           "anthropic",
           "anthropic-claude",
@@ -3127,7 +3334,7 @@
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
         "forks": "1869",
-        "stars": "22200",
+        "stars": "22202",
         "topics": [
           "board",
           "collaboration",
@@ -3613,8 +3820,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5526",
-        "stars": "38405",
+        "forks": "5528",
+        "stars": "38420",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4131,8 +4338,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1945",
-        "stars": "27613",
+        "forks": "1946",
+        "stars": "27632",
         "topics": [
           "agent",
           "ai-agent",
@@ -4508,8 +4715,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T13:04:13.428Z",
       "metaData": {
-        "forks": "5363",
-        "stars": "82620",
+        "forks": "5366",
+        "stars": "82726",
         "topics": [
           "ade",
           "agent-ide",
@@ -4718,8 +4925,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "777",
-        "stars": "6146",
+        "forks": "780",
+        "stars": "6163",
         "topics": [
           "agent",
           "agentic-ai",
@@ -5103,8 +5310,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "25117",
-        "stars": "148760",
+        "forks": "25118",
+        "stars": "148773",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -5209,7 +5416,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3049",
-        "stars": "25948",
+        "stars": "25953",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6754,8 +6961,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3095",
-        "stars": "43013",
+        "forks": "3098",
+        "stars": "43045",
         "topics": [
           "agent",
           "agent-skills",
@@ -7018,8 +7225,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
-        "forks": "305",
-        "stars": "8574",
+        "forks": "306",
+        "stars": "8580",
         "topics": [
           "agents",
           "claude-code",
@@ -7358,7 +7565,7 @@
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
         "forks": "4211",
-        "stars": "31563",
+        "stars": "31584",
         "topics": [
           "agent",
           "agentic",
@@ -9543,8 +9750,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1775",
-        "stars": "24621",
+        "forks": "1776",
+        "stars": "24645",
         "topics": [
           "antigravity",
           "claude",
@@ -9679,7 +9886,7 @@
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
         "forks": "4998",
-        "stars": "54971",
+        "stars": "55015",
         "topics": [
           "ai",
           "animation",
@@ -11088,8 +11295,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26116",
-        "stars": "291811",
+        "forks": "26271",
+        "stars": "293663",
         "topics": [
           "ai",
           "brainstorming",
@@ -12787,8 +12994,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5643",
-        "stars": "50938",
+        "forks": "5651",
+        "stars": "50991",
         "topics": [
           "ai",
           "audiobook",
@@ -13037,7 +13244,7 @@
       "createdAt": "2026-08-31T11:09:42.805Z",
       "metaData": {
         "forks": "8184",
-        "stars": "62995",
+        "stars": "63008",
         "topics": [
           "artificial-intelligence",
           "large-language-model"
@@ -13796,8 +14003,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6155",
-        "stars": "39701",
+        "forks": "6157",
+        "stars": "39715",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -14798,8 +15005,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9377",
-        "stars": "45843",
+        "forks": "9388",
+        "stars": "45910",
         "topics": [
           "3d-globe",
           "cesium",
@@ -15158,7 +15365,7 @@
       "createdAt": "2026-08-27T11:27:14.888Z",
       "metaData": {
         "forks": "8886",
-        "stars": "76259",
+        "stars": "76274",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -15871,8 +16078,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5071",
-        "stars": "75447",
+        "forks": "5077",
+        "stars": "75526",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -16069,8 +16276,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "8040",
-        "stars": "149643",
+        "forks": "8047",
+        "stars": "149774",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -16355,8 +16562,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "10639",
-        "stars": "62214",
+        "forks": "10650",
+        "stars": "62248",
         "topics": [
           "agents",
           "ai",
@@ -16914,8 +17121,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T04:41:58.197Z",
       "metaData": {
-        "forks": "82236",
-        "stars": "391102",
+        "forks": "82238",
+        "stars": "391112",
         "topics": [
           "ai",
           "assistant",
@@ -17511,8 +17718,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3028",
-        "stars": "52517",
+        "forks": "3030",
+        "stars": "52552",
         "topics": [
           "adhd",
           "claude-",
@@ -18010,8 +18217,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "13339",
-        "stars": "106046",
+        "forks": "14105",
+        "stars": "110916",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -18730,8 +18937,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "22973",
-        "stars": "273329",
+        "forks": "22976",
+        "stars": "273401",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -18893,8 +19100,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "19985",
-        "stars": "127779",
+        "forks": "19987",
+        "stars": "127803",
         "topics": [
           "ai-video-generator",
           "content-creation",
@@ -19034,8 +19241,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40412",
-        "stars": "270340",
+        "forks": "40422",
+        "stars": "270399",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -19311,8 +19518,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "865",
-        "stars": "9209",
+        "forks": "870",
+        "stars": "9233",
         "topics": [],
         "license": "",
         "homepage": "",
