@@ -276,6 +276,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://trending.pptboard.com/repo/Effect-TS/effect.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/repo/getsentry/sentry.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://trending.pptboard.com/repo/flutter/flutter.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2051,12 +2061,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/AI%E7%BC%96%E7%A8%8B.html</loc>
+    <loc>https://trending.pptboard.com/category/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6.html</loc>
+    <loc>https://trending.pptboard.com/category/AI%E7%BC%96%E7%A8%8B.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2067,6 +2077,11 @@
   </url>
   <url>
     <loc>https://trending.pptboard.com/category/DevOps.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trending.pptboard.com/category/%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2086,17 +2101,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trending.pptboard.com/category/%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7.html</loc>
+    <loc>https://trending.pptboard.com/category/AI%E5%BA%94%E7%94%A8.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://trending.pptboard.com/category/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trending.pptboard.com/category/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
