@@ -1,6 +1,67 @@
 {
   "all": [
     {
+      "id": "d5e57523-2fe4-4623-843c-d2110df03ca4",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "domain": "github.com",
+      "repo": "boykopovar/AnyPS5",
+      "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-03T22:04:55.415Z",
+      "metaData": {
+        "forks": "271",
+        "stars": "3209",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      },
+      "type": "project",
+      "dateAdded": "20261003"
+    },
+    {
       "id": "d1bda0aa-d2e1-4997-acba-6e0c956b7bb2",
       "url": "https://github.com/meituan-longcat/LongCat-Video",
       "domain": "github.com",
@@ -11,8 +72,8 @@
       "forks": 0,
       "createdAt": "2026-10-03T11:11:40.126Z",
       "metaData": {
-        "forks": "1522",
-        "stars": "8710",
+        "forks": "1523",
+        "stars": "8720",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -64,8 +125,8 @@
       "forks": 0,
       "createdAt": "2026-10-03T11:05:47.050Z",
       "metaData": {
-        "forks": "2067",
-        "stars": "9377",
+        "forks": "2068",
+        "stars": "9389",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -117,8 +178,8 @@
       "forks": 0,
       "createdAt": "2026-10-02T11:08:45.862Z",
       "metaData": {
-        "forks": "812",
-        "stars": "16783",
+        "forks": "813",
+        "stars": "16798",
         "topics": [
           "cli",
           "clustering",
@@ -184,8 +245,8 @@
       "forks": 0,
       "createdAt": "2026-10-02T11:04:30.557Z",
       "metaData": {
-        "forks": "4897",
-        "stars": "45184",
+        "forks": "4898",
+        "stars": "45196",
         "topics": [
           "apm",
           "crash-reporting",
@@ -253,8 +314,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T13:05:04.378Z",
       "metaData": {
-        "forks": "32908",
-        "stars": "179300",
+        "forks": "32915",
+        "stars": "179302",
         "topics": [
           "android",
           "app-framework",
@@ -380,7 +441,7 @@
       "createdAt": "2026-10-01T12:11:08.117Z",
       "metaData": {
         "forks": "2299",
-        "stars": "16822",
+        "stars": "16825",
         "topics": [
           "cybersecurity",
           "fyp",
@@ -451,8 +512,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:08:07.937Z",
       "metaData": {
-        "forks": "335",
-        "stars": "3805",
+        "forks": "337",
+        "stars": "3814",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -505,7 +566,7 @@
       "createdAt": "2026-10-01T12:04:43.199Z",
       "metaData": {
         "forks": "834",
-        "stars": "8286",
+        "stars": "8287",
         "topics": [],
         "license": "License",
         "homepage": "https://tilelang.com/",
@@ -557,8 +618,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T13:05:21.972Z",
       "metaData": {
-        "forks": "3870",
-        "stars": "27467",
+        "forks": "3871",
+        "stars": "27472",
         "topics": [
           "agent-plugins",
           "agent-skills",
@@ -873,8 +934,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:48:58.520Z",
       "metaData": {
-        "forks": "973",
-        "stars": "15829",
+        "forks": "974",
+        "stars": "15831",
         "topics": [
           "desktop-application",
           "gpui",
@@ -932,7 +993,7 @@
       "createdAt": "2026-09-29T12:44:19.590Z",
       "metaData": {
         "forks": "1684",
-        "stars": "19252",
+        "stars": "19257",
         "topics": [
           "agent-security",
           "agent-skills",
@@ -1303,8 +1364,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
-        "forks": "1676",
-        "stars": "14650",
+        "forks": "1677",
+        "stars": "14655",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -1898,8 +1959,8 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:29:20.189Z",
       "metaData": {
-        "forks": "33749",
-        "stars": "143065",
+        "forks": "33754",
+        "stars": "143068",
         "topics": [
           "blog",
           "browser",
@@ -2625,8 +2686,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16378",
-        "stars": "96702",
+        "forks": "16383",
+        "stars": "96714",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -2928,8 +2989,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5893",
-        "stars": "45049",
+        "forks": "5894",
+        "stars": "45069",
         "topics": [
           "agentic-ai",
           "agents",
@@ -3038,8 +3099,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "31215",
-        "stars": "103671",
+        "forks": "31222",
+        "stars": "103673",
         "topics": [
           "autograd",
           "deep-learning",
@@ -3316,8 +3377,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4508",
-        "stars": "75171",
+        "forks": "4515",
+        "stars": "75253",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -3746,7 +3807,7 @@
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
         "forks": "499",
-        "stars": "4200",
+        "stars": "4204",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4160,7 +4221,7 @@
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
         "forks": "5547",
-        "stars": "38629",
+        "stars": "38633",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4678,7 +4739,7 @@
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
         "forks": "1974",
-        "stars": "27930",
+        "stars": "27934",
         "topics": [
           "agent",
           "ai-agent",
@@ -5265,7 +5326,7 @@
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
         "forks": "810",
-        "stars": "6570",
+        "stars": "6574",
         "topics": [
           "agent",
           "agentic-ai",
@@ -5649,8 +5710,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "25335",
-        "stars": "149177",
+        "forks": "25351",
+        "stars": "149208",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -5755,7 +5816,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3054",
-        "stars": "26028",
+        "stars": "26030",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6857,8 +6918,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7888",
-        "stars": "89698",
+        "forks": "7895",
+        "stars": "89750",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -7301,7 +7362,7 @@
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
         "forks": "3140",
-        "stars": "43500",
+        "stars": "43504",
         "topics": [
           "agent",
           "agent-skills",
@@ -7565,7 +7626,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "315",
-        "stars": "8726",
+        "stars": "8732",
         "topics": [
           "agents",
           "claude-code",
@@ -7904,7 +7965,7 @@
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
         "forks": "4255",
-        "stars": "31883",
+        "stars": "31886",
         "topics": [
           "agent",
           "agentic",
@@ -10090,7 +10151,7 @@
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
         "forks": "1807",
-        "stars": "25224",
+        "stars": "25237",
         "topics": [
           "antigravity",
           "claude",
@@ -10225,7 +10286,7 @@
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
         "forks": "5058",
-        "stars": "56274",
+        "stars": "56288",
         "topics": [
           "ai",
           "animation",
@@ -10811,7 +10872,7 @@
       "createdAt": "2026-09-05T12:04:05.339Z",
       "metaData": {
         "forks": "157",
-        "stars": "4877",
+        "stars": "4878",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11583,7 +11644,7 @@
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
         "forks": "1283",
-        "stars": "10526",
+        "stars": "10548",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -11635,7 +11696,7 @@
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
         "forks": "26354",
-        "stars": "294866",
+        "stars": "294897",
         "topics": [
           "ai",
           "brainstorming",
@@ -12177,8 +12238,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "6331",
-        "stars": "109487",
+        "forks": "6334",
+        "stars": "109515",
         "topics": [
           "ai",
           "anthropic",
@@ -13333,8 +13394,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5852",
-        "stars": "52506",
+        "forks": "5854",
+        "stars": "52530",
         "topics": [
           "ai",
           "audiobook",
@@ -14579,8 +14640,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10590",
-        "stars": "100804",
+        "forks": "10593",
+        "stars": "100821",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -15344,8 +15405,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9594",
-        "stars": "46995",
+        "forks": "9597",
+        "stars": "47010",
         "topics": [
           "3d-globe",
           "cesium",
@@ -15593,8 +15654,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:33:52.984Z",
       "metaData": {
-        "forks": "9054",
-        "stars": "91549",
+        "forks": "9055",
+        "stars": "91588",
         "topics": [
           "editor",
           "oss",
@@ -15826,8 +15887,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:18:49.756Z",
       "metaData": {
-        "forks": "8453",
-        "stars": "95504",
+        "forks": "8458",
+        "stars": "95550",
         "topics": [
           "ai",
           "ai-agents",
@@ -16417,8 +16478,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5168",
-        "stars": "76712",
+        "forks": "5171",
+        "stars": "76727",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -16615,8 +16676,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "8218",
-        "stars": "153199",
+        "forks": "8220",
+        "stars": "153264",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -16848,8 +16909,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "4255",
-        "stars": "30371",
+        "forks": "4257",
+        "stars": "30377",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -16901,8 +16962,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "10787",
-        "stars": "63072",
+        "forks": "10788",
+        "stars": "63099",
         "topics": [
           "agents",
           "ai",
@@ -17586,8 +17647,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "6419",
-        "stars": "24613",
+        "forks": "6436",
+        "stars": "24658",
         "topics": [],
         "license": "third-party-licenses.config.json",
         "homepage": "https://t3.codes",
@@ -18057,8 +18118,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3060",
-        "stars": "53160",
+        "forks": "3061",
+        "stars": "53164",
         "topics": [
           "adhd",
           "claude-",
@@ -18556,8 +18617,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "14223",
-        "stars": "112105",
+        "forks": "14228",
+        "stars": "112132",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -19276,8 +19337,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "23100",
-        "stars": "275299",
+        "forks": "23104",
+        "stars": "275334",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -19439,8 +19500,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "20061",
-        "stars": "128241",
+        "forks": "20064",
+        "stars": "128247",
         "topics": [
           "ai-video-generator",
           "content-creation",
@@ -19580,8 +19641,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40641",
-        "stars": "272137",
+        "forks": "40646",
+        "stars": "272204",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -19858,7 +19919,7 @@
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
         "forks": "912",
-        "stars": "9642",
+        "stars": "9644",
         "topics": [],
         "license": "",
         "homepage": "",
