@@ -1,6 +1,108 @@
 {
   "all": [
     {
+      "id": "d1bda0aa-d2e1-4997-acba-6e0c956b7bb2",
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "domain": "github.com",
+      "repo": "meituan-longcat/LongCat-Video",
+      "description": "美团LongCat团队开源的13.6B参数稠密视频生成基础模型，采用DiT架构与块稀疏注意力，原生支持视频续写预训练，可稳定生成5分钟720p长视频，推理较传统方法提速10倍，在开源阵营属SOTA水平。但I2V综合表现略逊于Wan 2.2，且显存门槛极高（推荐80GB级A100/H100），无ComfyUI官方节点，训练代码暂未开源。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-03T11:11:40.126Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "视频生成",
+          "开源模型",
+          "美团",
+          "DiT",
+          "长视频"
+        ],
+        "cover": "",
+        "title": "LongCat-Video 深度评测：美团开源13.6B长视频生成模型，分钟级AI视频的开源答卷",
+        "ability": [
+          "单模型统一文生视频、图生视频、视频续写三大任务",
+          "支持生成5分钟720p/30fps长视频且画面稳定不崩坏",
+          "块稀疏注意力+粗到精生成+蒸馏加速，推理提速10倍",
+          "MIT协议开源权重与代码，可免费商用",
+          "附带音频驱动数字人分支LongCat-Video-Avatar"
+        ],
+        "summary": "美团开源的13.6B参数视频生成模型，单模型搞定文生视频、图生视频、视频续写，主打5分钟级720p长视频生成",
+        "category": [
+          "AI 视频生成",
+          "开源模型",
+          "AIGC"
+        ],
+        "suitable": [
+          "AI短剧/长视频内容团队",
+          "数字人/虚拟主播开发者",
+          "视频生成研究者",
+          "电商/广告批量内容生产方",
+          "AIGC工具开发者"
+        ],
+        "description": "美团LongCat团队开源的13.6B参数稠密视频生成基础模型，采用DiT架构与块稀疏注意力，原生支持视频续写预训练，可稳定生成5分钟720p长视频，推理较传统方法提速10倍，在开源阵营属SOTA水平。但I2V综合表现略逊于Wan 2.2，且显存门槛极高（推荐80GB级A100/H100），无ComfyUI官方节点，训练代码暂未开源。"
+      },
+      "type": "project",
+      "dateAdded": "20261003"
+    },
+    {
+      "id": "479535b6-f07d-49ec-9088-0a2d5b831699",
+      "url": "https://github.com/jamwithai/production-agentic-rag-course",
+      "domain": "github.com",
+      "repo": "jamwithai/production-agentic-rag-course",
+      "description": "这是Jam With AI出品的7周开源课程，用Docker+FastAPI+OpenSearch+Ollama+LangGraph完整技术栈，从基础设施、数据管道、BM25检索、混合检索到Agentic RAG层层递进。反共识地先教BM25再教向量检索，Week7的Agent具备文档打分与查询改写能力，配套博客详实，被业内专家Star背书，是当前GitHub上少见的工业级RAG教学资源。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-03T11:05:47.050Z",
+      "metaData": {
+        "forks": "2055",
+        "stars": "9268",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to jamwithai/production-agentic-rag-course development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "RAG",
+          "Agentic AI",
+          "LangGraph",
+          "LLM应用",
+          "开源课程"
+        ],
+        "cover": "",
+        "title": "7周造出生产级Agentic RAG系统：jamwithai/production-agentic-rag-course 深度评测",
+        "ability": [
+          "BM25+向量混合检索（RRF融合），解决专有名词与语义查询双场景",
+          "LangGraph构建Agentic RAG：文档打分、查询改写、越界检测、决策回环",
+          "Airflow自动化数据摄取+Docling解析复杂学术PDF",
+          "Langfuse全链路监控追踪+Redis查询缓存，生产可观测",
+          "Docker Compose一键拉起8个服务的完整技术栈，支持按周tag跳级学习"
+        ],
+        "summary": "一套7周开源实战课程，以arXiv论文问答助手为载体，带你从BM25基础检索一路学到LangGraph驱动的生产级Agentic RAG系统。",
+        "category": [
+          "AI 工程",
+          "开源项目",
+          "技术教程"
+        ],
+        "suitable": [
+          "想转型AI工程的后端/数据工程师",
+          "1-3年经验的NLP/ML工程师",
+          "需要搭建企业知识库/文档问答的团队",
+          "想补可观测性与混合检索盲区的资深AI工程师",
+          "有Python+Docker基础的进阶学习者"
+        ],
+        "description": "这是Jam With AI出品的7周开源课程，用Docker+FastAPI+OpenSearch+Ollama+LangGraph完整技术栈，从基础设施、数据管道、BM25检索、混合检索到Agentic RAG层层递进。反共识地先教BM25再教向量检索，Week7的Agent具备文档打分与查询改写能力，配套博客详实，被业内专家Star背书，是当前GitHub上少见的工业级RAG教学资源。"
+      },
+      "type": "project",
+      "dateAdded": "20261003"
+    },
+    {
       "id": "7688ed60-ec2c-4159-9c67-b19fea5f5ada",
       "url": "https://github.com/Effect-TS/effect",
       "domain": "github.com",
@@ -11,8 +113,8 @@
       "forks": 0,
       "createdAt": "2026-10-02T11:08:45.862Z",
       "metaData": {
-        "forks": "804",
-        "stars": "16613",
+        "forks": "808",
+        "stars": "16672",
         "topics": [
           "cli",
           "clustering",
@@ -78,8 +180,8 @@
       "forks": 0,
       "createdAt": "2026-10-02T11:04:30.557Z",
       "metaData": {
-        "forks": "4894",
-        "stars": "45065",
+        "forks": "4895",
+        "stars": "45109",
         "topics": [
           "apm",
           "crash-reporting",
@@ -147,8 +249,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T13:05:04.378Z",
       "metaData": {
-        "forks": "32851",
-        "stars": "179255",
+        "forks": "32868",
+        "stars": "179275",
         "topics": [
           "android",
           "app-framework",
@@ -273,8 +375,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:11:08.117Z",
       "metaData": {
-        "forks": "2272",
-        "stars": "16601",
+        "forks": "2289",
+        "stars": "16754",
         "topics": [
           "cybersecurity",
           "fyp",
@@ -345,8 +447,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:08:07.937Z",
       "metaData": {
-        "forks": "316",
-        "stars": "3622",
+        "forks": "320",
+        "stars": "3690",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -398,8 +500,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:04:43.199Z",
       "metaData": {
-        "forks": "832",
-        "stars": "8265",
+        "forks": "833",
+        "stars": "8275",
         "topics": [],
         "license": "License",
         "homepage": "https://tilelang.com/",
@@ -451,8 +553,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T13:05:21.972Z",
       "metaData": {
-        "forks": "3853",
-        "stars": "27317",
+        "forks": "3857",
+        "stars": "27382",
         "topics": [
           "agent-plugins",
           "agent-skills",
@@ -525,8 +627,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T12:14:44.510Z",
       "metaData": {
-        "forks": "4686",
-        "stars": "73018",
+        "forks": "4688",
+        "stars": "73075",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://colbymchenry.github.io/codegraph/",
@@ -767,8 +869,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:48:58.520Z",
       "metaData": {
-        "forks": "971",
-        "stars": "15744",
+        "forks": "974",
+        "stars": "15761",
         "topics": [
           "desktop-application",
           "gpui",
@@ -825,8 +927,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:44:19.590Z",
       "metaData": {
-        "forks": "1667",
-        "stars": "19159",
+        "forks": "1671",
+        "stars": "19182",
         "topics": [
           "agent-security",
           "agent-skills",
@@ -1197,8 +1299,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
-        "forks": "1666",
-        "stars": "14502",
+        "forks": "1671",
+        "stars": "14585",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -1615,8 +1717,8 @@
       "forks": 0,
       "createdAt": "2026-09-27T13:16:03.509Z",
       "metaData": {
-        "forks": "301",
-        "stars": "4435",
+        "forks": "309",
+        "stars": "4531",
         "topics": [
           "agent-harness",
           "agent-orchestration",
@@ -1792,8 +1894,8 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:29:20.189Z",
       "metaData": {
-        "forks": "33696",
-        "stars": "143004",
+        "forks": "33717",
+        "stars": "143032",
         "topics": [
           "blog",
           "browser",
@@ -1977,7 +2079,7 @@
       "createdAt": "2026-09-26T11:15:37.867Z",
       "metaData": {
         "forks": "2184",
-        "stars": "9389",
+        "stars": "9396",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -2519,8 +2621,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16329",
-        "stars": "96416",
+        "forks": "16343",
+        "stars": "96495",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -2822,8 +2924,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5875",
-        "stars": "44819",
+        "forks": "5885",
+        "stars": "44866",
         "topics": [
           "agentic-ai",
           "agents",
@@ -2932,8 +3034,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "31176",
-        "stars": "103634",
+        "forks": "31175",
+        "stars": "103643",
         "topics": [
           "autograd",
           "deep-learning",
@@ -3210,8 +3312,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4489",
-        "stars": "74496",
+        "forks": "4492",
+        "stars": "74608",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -3390,8 +3492,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "336",
-        "stars": "4066",
+        "forks": "337",
+        "stars": "4076",
         "topics": [
           "agents",
           "api-keys",
@@ -3455,8 +3557,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:16:06.897Z",
       "metaData": {
-        "forks": "644",
-        "stars": "12940",
+        "forks": "648",
+        "stars": "12954",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://agentexecutor.io",
@@ -3639,8 +3741,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
-        "forks": "490",
-        "stars": "4134",
+        "forks": "496",
+        "stars": "4170",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4053,8 +4155,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5537",
-        "stars": "38580",
+        "forks": "5540",
+        "stars": "38601",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4571,8 +4673,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1964",
-        "stars": "27859",
+        "forks": "1966",
+        "stars": "27881",
         "topics": [
           "agent",
           "ai-agent",
@@ -5158,8 +5260,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "795",
-        "stars": "6446",
+        "forks": "799",
+        "stars": "6490",
         "topics": [
           "agent",
           "agentic-ai",
@@ -5543,8 +5645,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "25286",
-        "stars": "149006",
+        "forks": "25289",
+        "stars": "149028",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -5649,7 +5751,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3052",
-        "stars": "25999",
+        "stars": "26010",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -6751,8 +6853,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "7839",
-        "stars": "89016",
+        "forks": "7862",
+        "stars": "89323",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -7194,8 +7296,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3127",
-        "stars": "43405",
+        "forks": "3132",
+        "stars": "43431",
         "topics": [
           "agent",
           "agent-skills",
@@ -7458,8 +7560,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
-        "forks": "310",
-        "stars": "8695",
+        "forks": "312",
+        "stars": "8706",
         "topics": [
           "agents",
           "claude-code",
@@ -7797,8 +7899,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4247",
-        "stars": "31809",
+        "forks": "4249",
+        "stars": "31827",
         "topics": [
           "agent",
           "agentic",
@@ -9983,8 +10085,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1803",
-        "stars": "25105",
+        "forks": "1804",
+        "stars": "25149",
         "topics": [
           "antigravity",
           "claude",
@@ -10118,8 +10220,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "5044",
-        "stars": "56008",
+        "forks": "5048",
+        "stars": "56104",
         "topics": [
           "ai",
           "animation",
@@ -10375,8 +10477,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:17:31.978Z",
       "metaData": {
-        "forks": "7883",
-        "stars": "52482",
+        "forks": "7885",
+        "stars": "52551",
         "topics": [
           "claude",
           "codex",
@@ -10704,8 +10806,8 @@
       "forks": 0,
       "createdAt": "2026-09-05T12:04:05.339Z",
       "metaData": {
-        "forks": "123",
-        "stars": "4036",
+        "forks": "156",
+        "stars": "4853",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -11476,8 +11578,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
-        "forks": "1136",
-        "stars": "9660",
+        "forks": "1275",
+        "stars": "10372",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -11528,8 +11630,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26330",
-        "stars": "294571",
+        "forks": "26332",
+        "stars": "294667",
         "topics": [
           "ai",
           "brainstorming",
@@ -12071,8 +12173,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "6320",
-        "stars": "109215",
+        "forks": "6322",
+        "stars": "109287",
         "topics": [
           "ai",
           "anthropic",
@@ -12756,8 +12858,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:12:09.537Z",
       "metaData": {
-        "forks": "1725",
-        "stars": "20807",
+        "forks": "1726",
+        "stars": "20852",
         "topics": [
           "google",
           "googlecloud",
@@ -13227,8 +13329,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5778",
-        "stars": "51909",
+        "forks": "5815",
+        "stars": "52160",
         "topics": [
           "ai",
           "audiobook",
@@ -14236,8 +14338,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T07:16:01.931Z",
       "metaData": {
-        "forks": "6167",
-        "stars": "39845",
+        "forks": "6168",
+        "stars": "39863",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -14473,8 +14575,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10432",
-        "stars": "99372",
+        "forks": "10580",
+        "stars": "100647",
         "topics": [
           "agent-skills",
           "antigravity",
@@ -15238,8 +15340,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9545",
-        "stars": "46700",
+        "forks": "9552",
+        "stars": "46781",
         "topics": [
           "3d-globe",
           "cesium",
@@ -15720,8 +15822,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:18:49.756Z",
       "metaData": {
-        "forks": "8178",
-        "stars": "92974",
+        "forks": "8433",
+        "stars": "95218",
         "topics": [
           "ai",
           "ai-agents",
@@ -16311,8 +16413,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5135",
-        "stars": "76394",
+        "forks": "5149",
+        "stars": "76476",
         "topics": [
           "agent-skills",
           "architecture-as-code",
@@ -16509,8 +16611,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "8161",
-        "stars": "152088",
+        "forks": "8174",
+        "stars": "152311",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -16742,8 +16844,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "4235",
-        "stars": "30225",
+        "forks": "4239",
+        "stars": "30266",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -16795,8 +16897,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "10716",
-        "stars": "62702",
+        "forks": "10732",
+        "stars": "62784",
         "topics": [
           "agents",
           "ai",
@@ -17480,10 +17582,10 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "5217",
-        "stars": "21532",
+        "forks": "6382",
+        "stars": "24413",
         "topics": [],
-        "license": "MIT license",
+        "license": "third-party-licenses.config.json",
         "homepage": "https://t3.codes",
         "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
       },
@@ -17951,8 +18053,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3051",
-        "stars": "53012",
+        "forks": "3052",
+        "stars": "53050",
         "topics": [
           "adhd",
           "claude-",
@@ -18450,8 +18552,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:58:24.845Z",
       "metaData": {
-        "forks": "14149",
-        "stars": "111516",
+        "forks": "14200",
+        "stars": "111925",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -19170,8 +19272,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "23070",
-        "stars": "274869",
+        "forks": "23078",
+        "stars": "274987",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -19333,8 +19435,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "20045",
-        "stars": "128132",
+        "forks": "20050",
+        "stars": "128168",
         "topics": [
           "ai-video-generator",
           "content-creation",
@@ -19474,8 +19576,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40568",
-        "stars": "271554",
+        "forks": "40583",
+        "stars": "271728",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -19751,8 +19853,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "902",
-        "stars": "9555",
+        "forks": "906",
+        "stars": "9586",
         "topics": [],
         "license": "",
         "homepage": "",
