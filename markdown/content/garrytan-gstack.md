@@ -1,0 +1,196 @@
+# garrytan/gstack
+
+[GitHub URL](https://github.com/garrytan/gstack)
+
+
+## gstack 深度评测：Garry Tan 开源 AI 工程兵团，把 Claude Code 变成虚拟研发团队
+
+> YC 总裁 Garry Tan 开源的 Claude Code 斜杠命令包，把一个 AI 助手拆成 30+ 角色组成的虚拟工程团队，覆盖从规划到部署的完整研发流水线。
+
+- **Tags**: Claude Code, AI 编码, Garry Tan, 工作流, 开源
+- **Category**: AI 编程, 开发工具, 开源项目
+
+## Details
+
+# gstack 深度评测：Garry Tan 开源的“AI 工程兵团”，把 Claude Code 从一个通用助手拆成一支虚拟团队
+> **一句话总结**：gstack 是 Y Combinator 总裁 Garry Tan 在 2026 年 3 月开源的一套 MIT 协议斜杠命令包，把 Claude Code 从“一个什么都想干好的通用助手”重塑为**由 30+ 个角色化 AI 专家组成的虚拟工程团队**——上线数周即冲到 66k Stars，如今已突破 **133k Stars**，是当前 AI 编码工作流领域最重量级的开源实践。
+---
+## 一、背景与痛点：为什么一个“提示词合集”能炸出 13 万颗星？
+### 1.1 Garry Tan 是谁——这不是普通的“造轮子”
+在评价 gstack 之前，必须先理解作者。Garry Tan 现任YC 总裁兼 CEO，早期是 Palantir 的第一批“工程 + 产品 + 设计三栖员工”，之后联合创办 Posterous（被 Twitter 收购），还为 YC 内部搭建了社交网络 Bookface。换句话说，他既是技术合伙人出身、又见过成千上万家早期公司从 0 到 1，**他做的工具天然带着“创业者单人干翻一支团队”的基因**。
+他在 README 里的自述数字颇具冲击力：过去 60 天，他用 gstack **兼职发布了 3 个生产服务、40+ 个功能**；以"逻辑代码变更"归一化统计，2026 年他的产出速度达到 2013 年的 **~810 倍**（每天 11,417 行 vs 14 行）。这些数字当然存在争议（下文会专门讨论），但至少说明一件事——**gstack 是 Garry Tan 本人每天都在用、而不是发完就扔的“炫技项目”**。
+### 1.2 它解决的核心痛点：AI 编码工具的“人格分裂”
+当前所有 AI 编码工具（Claude Code、Cursor、Copilot 等）面临一个结构性问题：**一个 AI 助手，被要求同时扮演 12 种互相冲突的角色**。
+举个例子：你让 Claude 给一个功能写代码，它既要在产品层面帮你判断"该不该做"（CEO 视角），又要在架构层面设计数据流（技术负责人视角），又要写代码，又要自己测试，又要部署，又要写文档。但**大脑里塞了 12 套互相冲突的指令，结果哪套都做不精**。
+Garry Tan 的解法非常直接，也非常巧妙——**用斜杠命令把 AI 切换成不同角色**。就像一支军队里指挥官一声令下就能调出"情报部门""工程部队""后勤部队"一样，gstack 让你在 Claude Code 里用一个 `/review`、一个 `/qa`、一个 `/ship` 就能切换 AI 的"人格"，**每个角色只负责做一件事，并把它做到极致**。
+这个思路非常像 Unix 哲学的"小而精"原则——**工具不追求大而全，只追求单一职责下的极致**。Anthropic 的 Skills 系统给了技术铺垫，gstack 把这套机制用到了"工程管理"级别的深度。
+---
+## 二、核心亮点与功能剖析：30+ 个角色如何协同成一条"AI 流水线"
+### 2.1 全景定位
+gstack 不是一个 Agent 框架，也不是 LangChain 那种编排平台，它本质上是一套**结构化的 Claude Code Skill（Markdown 文件）+ 配套命令行工具**。安装后你会得到一个由以下"职业角色"组成的虚拟团队：
+> **Think → Plan → Build → Review → Test → Ship → Reflect**
+每个角色都有明确的"人格设定 + 工作守则 + 输出格式"，关键的部分我整理成了一张角色对照表：
+### 2.2 核心角色清单（精选关键项）
+| 阶段 | 命令 | 角色身份 | 它为你做什么 |
+|---|---|---|---|
+| **想清楚** | `/office-hours` | YC Office Hours 顾问 | 用 6 个"强推式问题"逼你重新审视产品假设，**反推出你真正想做的产品** |
+| **规划** | `/plan-ceo-review` | CEO/创始人 | 挑战范围、找"10 星产品"隐藏在需求中 |
+| **规划** | `/plan-eng-review` | 工程经理 | 锁定架构、数据流、错误路径、测试矩阵 |
+| **规划** | `/plan-design-review` | 资深设计师 | 每个设计维度打 0–10 分，并自动修订方案 |
+| **规划** | `/autoplan` | 审查流水线 | 一条命令串联 CEO → 设计 → DX → 工程评审 |
+| **写码** | `/design-html` | 设计工程师 | 把 mockup 转成 30KB 零依赖的生产级 HTML |
+| **审码** | `/review` | 资深工程师 | 找出"能过 CI 却在生产爆炸"的 bug，**自动修复简单问题** |
+| **调试** | `/investigate` | 调查员 | 铁律：不查清根因就不修复，3 次失败自动停 |
+| **测试** | `/qa` | QA 负责人 | 打开真实浏览器点点点，**发现 bug 自动修，生成回归测试** |
+| **安全** | `/cso` | 首席安全官 | 跑 OWASP + STRIDE 审计，独立质疑式分析 |
+| **发布** | `/ship` | 发布工程师 | 同步 main、跑测试、审计覆盖率、开 PR |
+| **部署** | `/land-and-deploy` | 发布工程师 | 合并 → 等 CI → 等 deploy → 验证生产健康 |
+| **监控** | `/canary` | SRE | 部署后监控 console error、性能回归 |
+| **复盘** | `/retro` | 工程经理 | 周度复盘：个人表现、测试健康趋势 |
+### 2.3 三个最值得称道的设计巧思
+**巧思 1：角色之间的"自动传递文件"机制**
+这是 gstack 区别于普通"提示词合集"的核心。`/office-hours` 会输出一份设计文档（design doc），这份文档会被 `/plan-ceo-review` **自动读取并挑战**；`/plan-eng-review` 会输出测试计划，会被 `/qa` **自动接收执行**。每个环节的产出自动成为下一环节的输入，**整个 sprint 是一条真正流转的流水线，而不是一堆孤立的命令**。
+打个比方：传统提示词合集就像一堆散落的乐高零件，你得自己拼接；gstack 是一套预装好齿轮的机械装置，按一下启动键整条线就能跑起来。
+**巧思 2：`/investigate` 的"三次失败铁律"**
+这条规则看起来简单，但极其实用——**禁止 AI 在没有定位根因的情况下胡乱改代码；如果连续 3 次修复失败，强制停下来重新思考**。这精准命中了 AI 编码最致命的坏毛病："哪里不对改哪里，越改越烂"。
+**巧思 3：`/learn` 的"经验累积"机制**
+gstack 会在你的项目里维护一个"记忆库"，记录这个项目特有的模式、陷阱、偏好。**下次跑 gstack，AI 就知道"上次你在这个项目里踩过这个坑"**。这种跨 session 的经验复利，让 AI 从"每次都从零开始"进化成"越来越懂你"。
+### 2.4 跨平台支持：不只是 Claude Code
+这是一个被很多人忽略但极为关键的特性。gstack 用 `--host` 参数支持了 10 个 AI 编码代理：
+| 代理 | 安装标志 |
+|---|---|
+| OpenAI Codex CLI | `--host codex` |
+| OpenCode | `--host opencode` |
+| Cursor | `--host cursor` |
+| Factory Droid | `--host factory` |
+| Kiro | `--host kiro` |
+| Slate | `--host slate` |
+| OpenClaw | `--host openclaw` |
+| Hermes | `--host hermes` |
+| GBrain | `--host gbrain` |
+对 Zed、Amp、Jules 这类不识别 Skills 目录的工具，还提供了一个 2KB 的 "instruction-only digest"，可以拷到任何能读 Markdown 的地方。
+---
+## 三、上手体验：30 秒安装与一行命令触发
+### 3.1 安装（一行命令搞定）
+```bash
+git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup
+```
+依赖要求：Claude Code、Git、Bun v1.0+（Windows 还需要 Node.js）。`./setup` 会自动检测你装了哪些 AI 代理，并一键为它们分别安装。
+**团队模式**（推荐给协作仓库）：
+```bash
+(cd ~/.claude/skills/gstack && ./setup --team) && \
+~/.claude/skills/gstack/bin/gstack-team-init required && \
+git add .claude/ CLAUDE.md && git commit -m "require gstack for AI-assisted work"
+```
+这一模式会**自动为整个团队推送升级**，避免版本漂移。
+### 3.2 触发逻辑：斜杠命令即"角色切换"
+没有花哨的配置文件，所有触发就是一个斜杠命令。最核心的 4 条：
+```text
+/office-hours      # 最强起点：让 AI 用 YC 风格审问你"到底想做什么"
+/plan-ceo-review   # 让 CEO 视角挑战这个规划
+/review            # 让资深工程师审当前分支
+/qa                # 让 QA 用真实浏览器测你的 staging URL
+```
+### 3.3 真实案例演示（README 官方给的最典型场景）
+这是 gstack README 里最著名的一段对话，我原样搬运——**它精准展示了"角色切换"到底带来了什么**：
+```text
+你：    我想做一个我的日历的每日简报 App。
+你：    /office-hours
+Claude：[先问你真实痛点——要具体例子，不要假设]
+你：    多个 Google 日历、过期的日程信息、错误的位置。
+        每天准备太花时间，效果还不好...
+Claude：我要反驳一下你的定位。你说想做"每日简报 App"，
+        但你描述的其实是一个"个人 AI 秘书/参谋长"。
+        [提炼出 5 个你没意识到的能力需求]
+        [挑战 4 个前提假设——你可以同意/不同意/调整]
+        [生成 3 种实现方案，附工作量估算]
+        建议：明天就发布"最窄的楔子"，从真实使用中学习。
+        完整愿景是 3 个月项目——先做"真的能用的每日简报"。
+你：    /plan-ceo-review
+        [读设计文档、挑战范围、跑 10 节审查]
+你：    /plan-eng-review
+        [ASCII 图表：数据流、状态机、错误路径]
+        [测试矩阵、失败模式、安全关注点]
+你：    同意计划，退出规划模式。
+        [跨 11 个文件写了 2400 行代码，耗时约 8 分钟]
+你：    /review
+        [自动修复 2 个问题] [询问：一个 race condition → 你批准修复]
+你：    /qa https://staging.myapp.com
+        [打开真实浏览器，点击流程，找到并修了一个 bug]
+你：    /ship
+        测试：42 → 51 (+9 新增)。PR: github.com/you/app/pull/42
+```
+注意 `Claude` 的第一句回复：**"我要反驳一下你的定位"**——这是 gstack 通过 prompt 设计强加给 Claude 的反问姿态，跟默认的"你说什么我都顺着做"的 Claude 完全是两种性格。
+---
+## 四、目标人群与收益：谁最该立刻装上？
+根据 README 自述和社区反馈，gstack 适配度从高到低排序：
+**1. 技术型创始人和 CEO（最高适配）**
+痛点：懂代码、想亲自参与产品，但日常运营占满时间。**gstack 让他们能"兼职开发"出生产级服务**——Garry Tan 本人就是最大招牌。
+**2. Claude Code 新手**
+痛点：打开 Claude Code 后面对一个空 prompt 无从下手。gstack 用结构化角色**给了新手一个"工作流脚手架"**，知道每一步该问什么。
+**3. Tech Lead / Staff Engineer**
+痛点：review 和 QA 环节极其耗时。gstack 的 `/review` + `/qa` + `/cso` 把资深工程师的日常审查工作**自动化到可接受的水平**，让人能聚焦真正的架构决策。
+**4. 独立开发者 / Solopreneur**
+痛点：没有团队，什么都得自己干。gstack 是最接近"你一个人 + AI = 一支完整研发团队"的落地工具。
+**5. 对 AI 编码持怀疑态度的资深工程师**
+gstack 的价值更多是"理解工作流的最佳实践"——即便你不用它，把每个 Skill 的 SKILL.md 当作"AI 时代如何写好工程 prompt"的教科书来读，也是极大收获。
+---
+## 五、竞品对比：gstack 在 AI Coding 生态中的位置
+gstack 并不是孤立的，我把它放进当前主流 AI 编码工作流工具中对比：
+| 维度 | gstack | Claude Code 原生 | Cursor | OpenClaw | Anthropic Skills 官方 |
+|---|---|---|---|---|---|
+| **本质** | Skill 合集 + 流水线 | 通用 Agent | AI-first IDE | 多 Agent 编排 | Skill 规范/示例 |
+| **角色化程度** | ★★★★★ | ★★ | ★★ | ★★★ | ★★★ |
+| **覆盖生命周期** | 想→规划→写→审→测→部署→复盘 | 写→测 | 写→测 | 跨任务编排 | 单任务 |
+| **跨代理支持** | 10+ 代理 | 仅 Claude | 仅 Cursor | 任意 ACP 兼容 | 官方 Skill 格式 |
+| **协议** | MIT | — | 闭源 | 开源 | — |
+| **学习曲线** | 低（斜杠命令） | 低 | 中 | 高 | 低 |
+| **作者背景** | YC 总裁 | Anthropic | Cursor 团队 | Peter Steinberger | Anthropic |
+| **GitHub Stars** | 133k+ | — | — | 247k | — |
+Garry Tan 在 README 里明确提到，他受 Peter Steinberger 用 AI 独立做出 **247k Stars 的 OpenClaw** 这件事的启发。
+跟 Anthropic 官方 Skills 的关系则是"**青出于蓝**"——gstack 本质是使用 Anthropic Skill 规范，但把官方那种"教你怎么用"的示例库升级成了"**一条完整软件研发流水线**"。用一句话总结差异：**官方 Skills 教你"怎么和 AI 单点协作"，gstack 教你"怎么用 AI 重构整个研发流程"**。
+---
+## 六、客观局限与不足：有几个槽点必须直说
+好的评测不能只夸。gstack 存在以下**实实在在的短板**：
+### 6.1 "这不就是一堆 prompt 吗？"——技术本质的争议
+社区里最尖锐的批评来自这里：**gstack 的"技术含量"其实是一堆精心调优过的 Markdown 文件**。它没有新的模型、没有新的推理引擎、没有复杂的 Agent 框架，本质上是"**高级 prompt 工程 + 命令行封装**"。
+这个批评对也不对。**对**的是，从"技术深度"角度看，gstack 确实是纯 prompt 层面的创新；**不对**的是，Garry Tan 的洞察在于——**工程实践的价值不在于代码复杂度，而在于是否真的解决了问题**。就像 ".gitignore" 只是个文本文件，但它解决了协作里的大麻烦。从这个角度，gstack 是"**用最朴素的技术（Markdown）承载了最深度的工程方法论**"。
+### 6.2 LOC 数据的争议性
+Garry Tan 声称的 "~810× productivity" 和 "60 天 60 万行代码"引发了巨大争议。反对者指出 AI 时代代码行数本身会"通胀"，AI 会生成大量冗余行。Garry Tan 在 README 里专门写了一节《On the LOC Controversy》进行辩护，强调自己用的是"逻辑代码变更"而非原始 LOC，并提供了复现脚本。
+**客观评价**：绝对数字（810×、240×）应该打个折扣看——**它反映的是量级差异，不是精确倍数**。一个更务实的参考是："AI 辅助下，单人产出相比传统模式提升 10–50 倍"应该是一个更可信的区间。
+### 6.3 环境依赖较重
+- **macOS 之外的浏览器体验打折**：官方推荐使用 Aside 浏览器（macOS 15+），非 macOS 用户会 fallback 到 gstack 自带的 Chromium，功能完整但体验略逊。
+- **Windows 支持是后妈**：`/cso`（安全审计）在 Windows 上报 `not assessed`，多个 CLI 工具（如 `gstack-memorable`、private paid CSO evaluation）标注 "Not available on Windows yet"。
+- **iOS QA 需要 USB 连接真实 iPhone**：好东西，但门槛摆在那里。
+### 6.4 Skill 数量庞大，学习曲线陡
+30+ 个斜杠命令，对新手可能有点 overwhelm。**建议不要一次性学完，按 `/office-hours` → `/plan-ceo-review` → `/review` → `/qa` 这 4 条主线切入**，其他用到时再学。
+### 6.5 强依赖 Claude Code 生态
+尽管支持 10 个代理，但**核心体验是围绕 Claude Code 构建的**。在 Cursor 或 Codex 上跑，某些 Skill 的深度集成（如浏览器控制、iOS QA）会打折。如果你不是 Claude Code 用户，价值要打八折。
+### 6.6 Token 成本不可忽视
+gstack 的每个 Skill 都会在触发时消耗额外 token，跑一整套 `/autoplan` 流水线的 token 花费不小。官方贴心地提供了 `gstack-context-bill` 工具让你**审计每个 skill 的 token 成本**，算是自省到位，但成本本身不能忽略。
+---
+## 七、社区生命力与长期风险
+**活跃度（截至 2026 年 10 月）：**
+- ⭐ 133k Stars，🔱 19.9k Forks
+- 33 contributors，500+ 个 PR
+- 数周内从 0 冲到 33k，6 周 66k，现在破 133k——**这是 2026 年开源圈最病毒式增长的项目之一**。
+**风险提示：**
+- **依赖单一作者的"个人工作流"**——如果 Garry Tan 哪天不再维护，社区能否接住还有待观察。
+- **AI 编码范式迭代极快**——今天按"角色切换"设计的 prompt 明天可能因为模型能力跃迁而过时。gstack 的 `--host` 抽象层一定程度上缓解了这个问题，但**本质是"对当前模型能力的最佳实践封装"**，有被时代抛下的可能。
+- **MIT 协议 + 强调 fork**——作者本人开放态度积极，社区 fork 和二创预计会大量出现。
+---
+## 八、结语与行动建议：终极评判
+gstack 不是又一个"AI 工具玩具"，它是一次**对"AI 时代个人开发者生产力上限"的严肃实验**。Garry Tan 把自己二十年工程经验和 YC 面对数千家早期公司的方法论，全部编码进 30+ 个 Markdown 文件里——**你在读这些 Skill 文件时，几乎就是在读一本"YC 式软件工程手册"**。
+**三句话终极评价：**
+- 对**技术创始人和 solo 开发者**：这是 2026 年你必须装上的工具，没有之一。
+- 对**经验丰富的工程师**：即便不用它，把每个 SKILL.md 读一遍也是一次"如何写好 AI 编码 prompt"的顶级培训。
+- 对**怀疑论者**：不必神化它，也不必贬低它——**把它当作"一份来自顶级工程老兵的开源工作流文档"来研究**，收益就足够大。
+**行动建议（按优先级）：**
+1. **今天就装**：一行 git clone 命令，30 秒完成，零风险。
+2. **首周只学 4 条命令**：`/office-hours` → `/plan-ceo-review` → `/review` → `/qa`，覆盖 80% 场景。
+3. **读懂一个 Skill 文件**：打开 `~/.claude/skills/gstack/office-hours/SKILL.md`，看 Garry Tan 是如何用 prompt 把 Claude 调教成"YC 办公时间合伙人"的。
+4. **在真实项目上跑一次完整 sprint**：从 `/office-hours` 一路到 `/ship`，亲身体验"AI 流水线"和"AI 单点工具"的差距。
+5. **持续关注 `/learn` 的记忆累积效果**：这是 gstack 最有长期价值的机制。
+最后，用 Garry Tan 在 README 里的那句话收尾，也作为这篇文章的精神注脚：
+> **"Fork it. Improve it. Make it yours."** — Garry Tan
+工具会过时，工作流会迭代，但"用结构化的 AI 角色重新设计个人研发流程"这一思想，值得被永远记住。
