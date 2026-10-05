@@ -1,6 +1,69 @@
 {
   "all": [
     {
+      "id": "73d11115-b060-46de-b8c9-4a40eaf561e9",
+      "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+      "domain": "github.com",
+      "repo": "M-Abozaid/esp32-c3-adblock",
+      "description": "esp32-c3-adblock是一个开源固件项目，把原本需要树莓派才能搭的Pi-hole式DNS去广告方案压缩进一颗5美元的ESP32-C3单片机。它用40位哈希指纹存Flash替代明文进RAM，53.7万域名仅占约4MB闪存、50KB内存，被Tom's Hardware等媒体报道。作为主力过滤器功能偏简，但作为零功耗兜底DNS或嵌入式学习教材极为出色，适合周末动手党。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-05T20:04:08.124Z",
+      "metaData": {
+        "forks": "119",
+        "stars": "1305",
+        "topics": [
+          "adblocker",
+          "arduino",
+          "dns",
+          "dns-sinkhole",
+          "esp32",
+          "esp32-c3",
+          "iot",
+          "pi-hole",
+          "platformio"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Pi-hole-class DNS ad-blocker on a $2 ESP32-C3 (no PSRAM): 537k domains as 40-bit FNV-1a hashes in flash, binary-searched. UDP DNS sinkhole + web dashboard. https://youtube.com/shorts/RaxszOUMi8E?feature=share - M-Abozaid/esp32-c3-adblock"
+      },
+      "summaryData": {
+        "tags": [
+          "ESP32",
+          "DNS去广告",
+          "开源硬件",
+          "Pi-hole平替",
+          "嵌入式"
+        ],
+        "cover": "",
+        "title": "用5美元芯片实现全屋去广告：esp32-c3-adblock 深度评测",
+        "ability": [
+          "在无PSRAM的廉价ESP32-C3上运行完整DNS沉井过滤",
+          "40位FNV-1a哈希存Flash，仅需50KB内存即可承载53万域名",
+          "支持WiFi配网、Web Dashboard管理和OTA无线升级",
+          "黑名单定时自动更新，支持多设备同步",
+          "仅约10ms查询延迟，功耗极低可插路由器USB口常驻"
+        ],
+        "summary": "一颗5美元的ESP32-C3芯片，靠40位哈希+二分查找把53万条广告黑名单塞进4MB闪存，做成零月费的全屋DNS去广告器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "智能家居"
+        ],
+        "suitable": [
+          "想低成本实现全屋去广告的普通家庭用户",
+          "已有Pi-hole需要备用DNS的自托管爱好者",
+          "想给智能电视/IoT设备断广告的智能家居用户",
+          "想学习哈希、二分查找、Flash分区等嵌入式技巧的开发者",
+          "预算极紧但想要零月费广告拦截方案的玩家"
+        ],
+        "description": "esp32-c3-adblock是一个开源固件项目，把原本需要树莓派才能搭的Pi-hole式DNS去广告方案压缩进一颗5美元的ESP32-C3单片机。它用40位哈希指纹存Flash替代明文进RAM，53.7万域名仅占约4MB闪存、50KB内存，被Tom's Hardware等媒体报道。作为主力过滤器功能偏简，但作为零功耗兜底DNS或嵌入式学习教材极为出色，适合周末动手党。"
+      },
+      "type": "project",
+      "dateAdded": "20261005"
+    },
+    {
       "id": "89b93d87-1ba8-494c-9aa3-1375f20f0f3c",
       "url": "https://github.com/Gaurav-Gosain/tuios",
       "domain": "github.com",
@@ -11,8 +74,8 @@
       "forks": 0,
       "createdAt": "2026-10-05T11:13:33.699Z",
       "metaData": {
-        "forks": "209",
-        "stars": "4768",
+        "forks": "212",
+        "stars": "4820",
         "topics": [
           "ai-agents",
           "bubbletea",
@@ -85,8 +148,8 @@
       "forks": 0,
       "createdAt": "2026-10-05T11:08:37.744Z",
       "metaData": {
-        "forks": "25356",
-        "stars": "157115",
+        "forks": "25361",
+        "stars": "157205",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -138,8 +201,8 @@
       "forks": 0,
       "createdAt": "2026-10-05T11:04:40.814Z",
       "metaData": {
-        "forks": "622",
-        "stars": "3887",
+        "forks": "643",
+        "stars": "4104",
         "topics": [
           "bodyweight",
           "docker",
@@ -294,8 +357,8 @@
       "forks": 0,
       "createdAt": "2026-10-04T12:15:44.429Z",
       "metaData": {
-        "forks": "149",
-        "stars": "1382",
+        "forks": "152",
+        "stars": "1404",
         "topics": [
           "agent-plugin",
           "agent-skills",
@@ -304,8 +367,8 @@
           "chatgpt",
           "claude",
           "claude-code",
-          "claude-code-plugin",
           "claude-code-skills",
+          "claude-plugin",
           "claude-skills",
           "code-review",
           "codex",
@@ -368,8 +431,8 @@
       "forks": 0,
       "createdAt": "2026-10-04T12:10:44.254Z",
       "metaData": {
-        "forks": "5068",
-        "stars": "76971",
+        "forks": "5073",
+        "stars": "77064",
         "topics": [
           "acme",
           "automatic-https",
@@ -437,8 +500,8 @@
       "forks": 0,
       "createdAt": "2026-10-04T12:05:43.999Z",
       "metaData": {
-        "forks": "184",
-        "stars": "4372",
+        "forks": "193",
+        "stars": "4629",
         "topics": [
           "e2e",
           "e2e-testing",
@@ -498,8 +561,8 @@
       "forks": 0,
       "createdAt": "2026-10-03T22:04:55.415Z",
       "metaData": {
-        "forks": "359",
-        "stars": "4727",
+        "forks": "364",
+        "stars": "4874",
         "topics": [
           "anyps5",
           "dynamic-library",
@@ -665,8 +728,8 @@
       "forks": 0,
       "createdAt": "2026-10-02T11:08:45.862Z",
       "metaData": {
-        "forks": "823",
-        "stars": "17026",
+        "forks": "826",
+        "stars": "17037",
         "topics": [
           "cli",
           "clustering",
@@ -999,8 +1062,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:08:07.937Z",
       "metaData": {
-        "forks": "406",
-        "stars": "4578",
+        "forks": "410",
+        "stars": "4626",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
@@ -1052,8 +1115,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T12:04:43.199Z",
       "metaData": {
-        "forks": "848",
-        "stars": "8405",
+        "forks": "850",
+        "stars": "8418",
         "topics": [],
         "license": "License",
         "homepage": "https://tilelang.com/",
@@ -1105,8 +1168,8 @@
       "forks": 0,
       "createdAt": "2026-09-30T13:05:21.972Z",
       "metaData": {
-        "forks": "3895",
-        "stars": "27664",
+        "forks": "3893",
+        "stars": "27696",
         "topics": [
           "agent-plugins",
           "agent-skills",
@@ -1852,7 +1915,7 @@
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
         "forks": "1703",
-        "stars": "14935",
+        "stars": "14984",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -2269,8 +2332,8 @@
       "forks": 0,
       "createdAt": "2026-09-27T13:16:03.509Z",
       "metaData": {
-        "forks": "380",
-        "stars": "5139",
+        "forks": "385",
+        "stars": "5202",
         "topics": [
           "agent-harness",
           "agent-orchestration",
@@ -3173,8 +3236,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16484",
-        "stars": "97499",
+        "forks": "16499",
+        "stars": "97623",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -3476,8 +3539,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5922",
-        "stars": "45810",
+        "forks": "5928",
+        "stars": "45904",
         "topics": [
           "agentic-ai",
           "agents",
@@ -3865,7 +3928,7 @@
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
         "forks": "4589",
-        "stars": "76898",
+        "stars": "77025",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -4044,8 +4107,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:20:45.141Z",
       "metaData": {
-        "forks": "348",
-        "stars": "4162",
+        "forks": "350",
+        "stars": "4178",
         "topics": [
           "agents",
           "api-keys",
@@ -4293,8 +4356,8 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
-        "forks": "507",
-        "stars": "4319",
+        "forks": "511",
+        "stars": "4355",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4707,8 +4770,8 @@
       "forks": 0,
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
-        "forks": "5560",
-        "stars": "38771",
+        "forks": "5562",
+        "stars": "38788",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -5225,8 +5288,8 @@
       "forks": 0,
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
-        "forks": "1994",
-        "stars": "28102",
+        "forks": "1997",
+        "stars": "28190",
         "topics": [
           "agent",
           "ai-agent",
@@ -5812,8 +5875,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "859",
-        "stars": "6935",
+        "forks": "864",
+        "stars": "6991",
         "topics": [
           "agent",
           "agentic-ai",
@@ -6197,8 +6260,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "25547",
-        "stars": "149459",
+        "forks": "25574",
+        "stars": "149518",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -6302,8 +6365,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
-        "forks": "3057",
-        "stars": "26122",
+        "forks": "3059",
+        "stars": "26172",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -7405,8 +7468,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "8054",
-        "stars": "91704",
+        "forks": "8061",
+        "stars": "91818",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -7848,8 +7911,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3158",
-        "stars": "43828",
+        "forks": "3161",
+        "stars": "43854",
         "topics": [
           "agent",
           "agent-skills",
@@ -8112,8 +8175,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
-        "forks": "315",
-        "stars": "8823",
+        "forks": "321",
+        "stars": "8848",
         "topics": [
           "agents",
           "claude-code",
@@ -8451,8 +8514,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
-        "forks": "4278",
-        "stars": "32105",
+        "forks": "4287",
+        "stars": "32169",
         "topics": [
           "agent",
           "agentic",
@@ -9635,8 +9698,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
-        "forks": "1760",
-        "stars": "17270",
+        "forks": "1768",
+        "stars": "17366",
         "topics": [
           "agents",
           "ai-agents",
@@ -10637,8 +10700,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
-        "forks": "1822",
-        "stars": "25440",
+        "forks": "1827",
+        "stars": "25470",
         "topics": [
           "antigravity",
           "claude",
@@ -10772,8 +10835,8 @@
       "forks": 0,
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
-        "forks": "5118",
-        "stars": "57126",
+        "forks": "5130",
+        "stars": "57276",
         "topics": [
           "ai",
           "animation",
@@ -10837,8 +10900,8 @@
       "forks": 0,
       "createdAt": "2026-09-06T14:29:31.990Z",
       "metaData": {
-        "forks": "1624",
-        "stars": "14206",
+        "forks": "1627",
+        "stars": "14261",
         "topics": [
           "hacktoberfest",
           "stremio"
@@ -12130,8 +12193,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:40:14.612Z",
       "metaData": {
-        "forks": "1302",
-        "stars": "10916",
+        "forks": "1306",
+        "stars": "10976",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://os.cloudflare.app",
@@ -13881,8 +13944,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "5974",
-        "stars": "53554",
+        "forks": "5994",
+        "stars": "53713",
         "topics": [
           "ai",
           "audiobook",
@@ -15678,8 +15741,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
-        "forks": "8975",
-        "stars": "80690",
+        "forks": "8976",
+        "stars": "80801",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -15892,8 +15955,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9747",
-        "stars": "47796",
+        "forks": "9761",
+        "stars": "47937",
         "topics": [
           "3d-globe",
           "cesium",
@@ -16374,8 +16437,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:18:49.756Z",
       "metaData": {
-        "forks": "8519",
-        "stars": "96511",
+        "forks": "8520",
+        "stars": "96594",
         "topics": [
           "ai",
           "ai-agents",
@@ -16447,8 +16510,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:14:25.762Z",
       "metaData": {
-        "forks": "8111",
-        "stars": "63811",
+        "forks": "8121",
+        "stars": "63945",
         "topics": [
           "agent",
           "agentic-ai",
@@ -16965,8 +17028,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5231",
-        "stars": "77826",
+        "forks": "5245",
+        "stars": "78073",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -17396,8 +17459,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "4318",
-        "stars": "30775",
+        "forks": "4333",
+        "stars": "30932",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -17449,8 +17512,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "11081",
-        "stars": "64532",
+        "forks": "11132",
+        "stars": "64728",
         "topics": [
           "agents",
           "ai",
@@ -18134,8 +18197,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "6581",
-        "stars": "25510",
+        "forks": "6590",
+        "stars": "25573",
         "topics": [],
         "license": "third-party-licenses.config.json",
         "homepage": "https://t3.codes",
@@ -18605,8 +18668,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3090",
-        "stars": "53836",
+        "forks": "3092",
+        "stars": "53908",
         "topics": [
           "adhd",
           "claude-",
@@ -19987,8 +20050,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "20118",
-        "stars": "128587",
+        "forks": "20114",
+        "stars": "128629",
         "topics": [
           "ai-video-generator",
           "content-creation",
@@ -20128,8 +20191,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40798",
-        "stars": "273404",
+        "forks": "40822",
+        "stars": "273584",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -20405,8 +20468,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "935",
-        "stars": "9918",
+        "forks": "938",
+        "stars": "9951",
         "topics": [],
         "license": "",
         "homepage": "",
