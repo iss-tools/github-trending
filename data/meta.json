@@ -2,39 +2,39 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 482
+      "count": 487
     },
     {
       "tag": "开源项目",
-      "count": 272
+      "count": 275
     },
     {
       "tag": "自动化",
-      "count": 256
+      "count": 258
     },
     {
       "tag": "AI Agent",
-      "count": 222
+      "count": 226
     },
     {
       "tag": "GitHub",
-      "count": 188
+      "count": 191
     },
     {
       "tag": "Claude",
-      "count": 122
+      "count": 123
+    },
+    {
+      "tag": "Claude Code",
+      "count": 107
     },
     {
       "tag": "MCP",
       "count": 107
     },
     {
-      "tag": "Claude Code",
-      "count": 105
-    },
-    {
       "tag": "自托管",
-      "count": 94
+      "count": 95
     },
     {
       "tag": "本地部署",
@@ -46,15 +46,15 @@
     },
     {
       "tag": "Agent",
-      "count": 69
+      "count": 70
     },
     {
       "tag": "工作流",
-      "count": 67
+      "count": 68
     },
     {
       "tag": "Rust",
-      "count": 62
+      "count": 63
     },
     {
       "tag": "隐私保护",
@@ -66,7 +66,7 @@
     },
     {
       "tag": "AI",
-      "count": 58
+      "count": 59
     },
     {
       "tag": "Python",
@@ -84,19 +84,19 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1153
+      "count": 1164
     },
     {
       "name": "AI 编程",
-      "count": 773
+      "count": 779
     },
     {
       "name": "效率工具",
-      "count": 304
+      "count": 307
     },
     {
       "name": "开源项目",
-      "count": 272
+      "count": 276
     },
     {
       "name": "开发者工具",
@@ -104,7 +104,7 @@
     },
     {
       "name": "生活效率",
-      "count": 60
+      "count": 61
     },
     {
       "name": "AI 应用",
@@ -123,12 +123,12 @@
       "count": 36
     },
     {
-      "name": "开源框架",
+      "name": "AI编程",
       "count": 35
     },
     {
-      "name": "AI编程",
-      "count": 34
+      "name": "开源框架",
+      "count": 35
     },
     {
       "name": "生产力工具",
@@ -186,7 +186,7 @@
     },
     {
       "name": "开发者",
-      "count": 50
+      "count": 51
     },
     {
       "name": "数据科学家",
@@ -197,11 +197,11 @@
       "count": 44
     },
     {
-      "name": "技术团队负责人",
-      "count": 43
+      "name": "开发者与极客",
+      "count": 44
     },
     {
-      "name": "开发者与极客",
+      "name": "技术团队负责人",
       "count": 43
     },
     {
@@ -221,6 +221,10 @@
       "count": 35
     },
     {
+      "name": "AI 编程重度用户",
+      "count": 35
+    },
+    {
       "name": "AI 开发者",
       "count": 35
     },
@@ -229,30 +233,26 @@
       "count": 35
     },
     {
-      "name": "AI 编程重度用户",
-      "count": 34
-    },
-    {
       "name": "安全研究员",
       "count": 28
     },
     {
-      "name": "专业开发团队",
+      "name": "技术极客",
       "count": 28
     },
     {
-      "name": "企业技术负责人",
+      "name": "专业开发团队",
       "count": 28
     }
   ],
   "topTopics": [
     {
       "name": "ai",
-      "count": 264
+      "count": 266
     },
     {
       "name": "claude-code",
-      "count": 259
+      "count": 262
     },
     {
       "name": "llm",
@@ -260,27 +260,27 @@
     },
     {
       "name": "ai-agents",
-      "count": 205
+      "count": 207
     },
     {
       "name": "mcp",
-      "count": 188
+      "count": 190
     },
     {
       "name": "claude",
-      "count": 169
+      "count": 172
     },
     {
       "name": "agent-skills",
-      "count": 149
+      "count": 150
     },
     {
       "name": "codex",
-      "count": 135
+      "count": 136
     },
     {
       "name": "python",
-      "count": 126
+      "count": 128
     },
     {
       "name": "typescript",
@@ -292,23 +292,23 @@
     },
     {
       "name": "developer-tools",
-      "count": 112
+      "count": 113
     },
     {
       "name": "agents",
-      "count": 105
+      "count": 106
     },
     {
       "name": "agent",
-      "count": 90
+      "count": 91
     },
     {
       "name": "anthropic",
-      "count": 85
+      "count": 87
     },
     {
       "name": "ai-agent",
-      "count": 74
+      "count": 75
     },
     {
       "name": "prompt-engineering",
@@ -316,7 +316,7 @@
     },
     {
       "name": "openai",
-      "count": 68
+      "count": 69
     },
     {
       "name": "local-first",
@@ -324,21 +324,21 @@
     },
     {
       "name": "cli",
-      "count": 64
+      "count": 65
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 486
+      "count": 489
     },
     {
       "name": "TypeScript",
-      "count": 370
+      "count": 374
     },
     {
       "name": "JavaScript",
-      "count": 186
+      "count": 189
     },
     {
       "name": "Rust",
@@ -346,18 +346,18 @@
     },
     {
       "name": "Go",
-      "count": 87
+      "count": 88
     },
     {
       "name": "Shell",
-      "count": 56
-    },
-    {
-      "name": "HTML",
-      "count": 28
+      "count": 57
     },
     {
       "name": "C++",
+      "count": 29
+    },
+    {
+      "name": "HTML",
       "count": 28
     },
     {
@@ -443,7 +443,7 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 273275,
+      "stars": 273402,
       "appearances": 21
     },
     {
@@ -475,19 +475,19 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 273275,
+      "stars": 273402,
       "appearances": 21
     },
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 155514,
+      "stars": 155718,
       "appearances": 18
     },
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 64283,
+      "stars": 64522,
       "appearances": 15
     },
     {
@@ -505,7 +505,7 @@
     {
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "stars": 53421,
+      "stars": 53554,
       "appearances": 14
     },
     {
@@ -527,9 +527,9 @@
       "appearances": 9
     },
     {
-      "repo": "dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "stars": 22283,
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 63811,
       "appearances": 9
     }
   ]
