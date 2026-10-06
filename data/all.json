@@ -1,6 +1,133 @@
 {
   "all": [
     {
+      "id": "f41fdace-e2d6-4299-99e0-06234208ebd3",
+      "url": "https://github.com/deepseek-ai/DeepGEMM",
+      "domain": "github.com",
+      "repo": "deepseek-ai/DeepGEMM",
+      "description": "DeepSeek 开源周推出的 FP8/FP4/BF16 矩阵乘法内核库，核心代码仅约 300 行，原生支持细粒度缩放量化与 JIT 编译，在 H800 上大矩阵场景可反超 CUTLASS 1.74 倍。已集成至 SGLang/vLLM，可显著降低大模型推理成本；但仅支持 Hopper/Blackwell 架构，CUDA 版本要求较高。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-06T12:09:30.525Z",
+      "metaData": {
+        "forks": "1361",
+        "stars": "8534",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "DeepGEMM: clean and efficient BLAS kernel library on GPU - deepseek-ai/DeepGEMM"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepSeek",
+          "FP8",
+          "GPU加速",
+          "CUDA",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "DeepGEMM 深度评测：DeepSeek 开源的 1550 TFLOPS FP8 矩阵乘法内核库",
+        "ability": [
+          "FP8/FP4/BF16 高性能矩阵乘法加速，H800 实测 1550 TFLOPS",
+          "支持细粒度缩放量化（1×128 / 128×128），大幅降低 FP8 精度损失",
+          "JIT 运行时编译，安装即用，任意矩阵形状按需生成内核",
+          "覆盖 MoE 分组 GEMM（contiguous/masked）及 Mega MoE 融合内核",
+          "核心代码仅约 300 行，是 Hopper TMA/WGMMA 架构的实战教学范本"
+        ],
+        "summary": "DeepSeek 开源的高性能 FP8 矩阵乘法 GPU 内核库，H800 上实测 1550 TFLOPS，是大模型训练推理的底层加速神器。",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "深度学习"
+        ],
+        "suitable": [
+          "大模型推理服务工程师（SRE / ML Infra）",
+          "GPU Kernel / CUDA 开发者与学习者",
+          "自研大模型与训练框架团队",
+          "AI 学术研究者（FP8 量化 / MoE 优化方向）",
+          "拥有 H100/H800/Blackwell 硬件资源的企业"
+        ],
+        "description": "DeepSeek 开源周推出的 FP8/FP4/BF16 矩阵乘法内核库，核心代码仅约 300 行，原生支持细粒度缩放量化与 JIT 编译，在 H800 上大矩阵场景可反超 CUTLASS 1.74 倍。已集成至 SGLang/vLLM，可显著降低大模型推理成本；但仅支持 Hopper/Blackwell 架构，CUDA 版本要求较高。"
+      },
+      "type": "project",
+      "dateAdded": "20261006"
+    },
+    {
+      "id": "ee178be0-34bd-4f77-944f-d8a602f3636a",
+      "url": "https://github.com/morluto/rea",
+      "domain": "github.com",
+      "repo": "morluto/rea",
+      "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-06T12:05:28.337Z",
+      "metaData": {
+        "forks": "756",
+        "stars": "6855",
+        "topics": [
+          "agent-skills",
+          "ai-agent-tools",
+          "ai-agents",
+          "binary-analysis",
+          "cli",
+          "coding-agents",
+          "cordis",
+          "ctf",
+          "decompiler",
+          "disassembler",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "reverse-engineering",
+          "reverse-engineering-tools",
+          "static-analysis"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      },
+      "type": "project",
+      "dateAdded": "20261006"
+    },
+    {
       "id": "73d11115-b060-46de-b8c9-4a40eaf561e9",
       "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
       "domain": "github.com",
@@ -201,8 +328,8 @@
       "forks": 0,
       "createdAt": "2026-10-05T11:04:40.814Z",
       "metaData": {
-        "forks": "708",
-        "stars": "4796",
+        "forks": "718",
+        "stars": "4889",
         "topics": [
           "bodyweight",
           "docker",
@@ -561,8 +688,8 @@
       "forks": 0,
       "createdAt": "2026-10-03T22:04:55.415Z",
       "metaData": {
-        "forks": "392",
-        "stars": "5299",
+        "forks": "394",
+        "stars": "5362",
         "topics": [
           "anyps5",
           "dynamic-library",
@@ -1914,8 +2041,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:05:17.550Z",
       "metaData": {
-        "forks": "1711",
-        "stars": "15050",
+        "forks": "1712",
+        "stars": "15056",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/openshell/latest/",
@@ -2046,8 +2173,8 @@
       "forks": 0,
       "createdAt": "2026-09-28T12:14:11.606Z",
       "metaData": {
-        "forks": "6648",
-        "stars": "66557",
+        "forks": "6688",
+        "stars": "67414",
         "topics": [
           "chinese",
           "english-learning",
@@ -3236,8 +3363,8 @@
       "forks": 0,
       "createdAt": "2026-09-25T11:05:08.466Z",
       "metaData": {
-        "forks": "16537",
-        "stars": "97868",
+        "forks": "16539",
+        "stars": "97883",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://paperclip.ing",
@@ -3539,8 +3666,8 @@
       "forks": 0,
       "createdAt": "2026-09-24T11:04:15.321Z",
       "metaData": {
-        "forks": "5942",
-        "stars": "46130",
+        "forks": "5943",
+        "stars": "46158",
         "topics": [
           "agentic-ai",
           "agents",
@@ -3927,8 +4054,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:12:02.660Z",
       "metaData": {
-        "forks": "4604",
-        "stars": "77313",
+        "forks": "4606",
+        "stars": "77350",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://impeccable.style",
@@ -4357,7 +4484,7 @@
       "createdAt": "2026-09-22T11:04:13.268Z",
       "metaData": {
         "forks": "514",
-        "stars": "4396",
+        "stars": "4397",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -4771,7 +4898,7 @@
       "createdAt": "2026-09-20T11:10:51.535Z",
       "metaData": {
         "forks": "5561",
-        "stars": "38831",
+        "stars": "38833",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -5289,7 +5416,7 @@
       "createdAt": "2026-09-19T11:04:50.261Z",
       "metaData": {
         "forks": "2011",
-        "stars": "28323",
+        "stars": "28344",
         "topics": [
           "agent",
           "ai-agent",
@@ -5875,8 +6002,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:20:05.068Z",
       "metaData": {
-        "forks": "885",
-        "stars": "7175",
+        "forks": "891",
+        "stars": "7228",
         "topics": [
           "agent",
           "agentic-ai",
@@ -6260,8 +6387,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:28:42.991Z",
       "metaData": {
-        "forks": "25622",
-        "stars": "149565",
+        "forks": "25635",
+        "stars": "149567",
         "topics": [],
         "license": "License",
         "homepage": "https://code.claude.com/docs/en/overview",
@@ -6366,7 +6493,7 @@
       "createdAt": "2026-09-16T14:18:40.872Z",
       "metaData": {
         "forks": "3066",
-        "stars": "26236",
+        "stars": "26241",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",
@@ -7468,8 +7595,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:15:44.745Z",
       "metaData": {
-        "forks": "8096",
-        "stars": "92318",
+        "forks": "8098",
+        "stars": "92351",
         "topics": [
           "agent-infrastructure",
           "ai-agent",
@@ -7911,8 +8038,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:14:15.637Z",
       "metaData": {
-        "forks": "3168",
-        "stars": "43948",
+        "forks": "3169",
+        "stars": "43960",
         "topics": [
           "agent",
           "agent-skills",
@@ -8176,7 +8303,7 @@
       "createdAt": "2026-09-12T13:33:36.964Z",
       "metaData": {
         "forks": "323",
-        "stars": "8882",
+        "stars": "8888",
         "topics": [
           "agents",
           "claude-code",
@@ -8515,7 +8642,7 @@
       "createdAt": "2026-09-11T11:48:09.551Z",
       "metaData": {
         "forks": "4297",
-        "stars": "32249",
+        "stars": "32252",
         "topics": [
           "agent",
           "agentic",
@@ -9209,8 +9336,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:27:10.275Z",
       "metaData": {
-        "forks": "4072",
-        "stars": "37599",
+        "forks": "4391",
+        "stars": "39895",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://justvugg.github.io/colibri",
@@ -9699,7 +9826,7 @@
       "createdAt": "2026-09-09T11:11:26.710Z",
       "metaData": {
         "forks": "1783",
-        "stars": "17678",
+        "stars": "17703",
         "topics": [
           "agents",
           "ai-agents",
@@ -10701,7 +10828,7 @@
       "createdAt": "2026-09-07T12:19:28.703Z",
       "metaData": {
         "forks": "1831",
-        "stars": "25513",
+        "stars": "25518",
         "topics": [
           "antigravity",
           "claude",
@@ -10836,7 +10963,7 @@
       "createdAt": "2026-09-07T12:11:56.883Z",
       "metaData": {
         "forks": "5149",
-        "stars": "57558",
+        "stars": "57611",
         "topics": [
           "ai",
           "animation",
@@ -15742,7 +15869,7 @@
       "createdAt": "2026-08-28T12:16:35.109Z",
       "metaData": {
         "forks": "8995",
-        "stars": "80945",
+        "stars": "80958",
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -15955,8 +16082,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T20:02:53.602Z",
       "metaData": {
-        "forks": "9798",
-        "stars": "48140",
+        "forks": "9799",
+        "stars": "48167",
         "topics": [
           "3d-globe",
           "cesium",
@@ -16437,8 +16564,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:18:49.756Z",
       "metaData": {
-        "forks": "8540",
-        "stars": "96850",
+        "forks": "8542",
+        "stars": "96874",
         "topics": [
           "ai",
           "ai-agents",
@@ -17028,8 +17155,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:46:04.634Z",
       "metaData": {
-        "forks": "5267",
-        "stars": "78398",
+        "forks": "5271",
+        "stars": "78432",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -17226,8 +17353,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:10:46.207Z",
       "metaData": {
-        "forks": "8397",
-        "stars": "156369",
+        "forks": "8400",
+        "stars": "156406",
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -17459,8 +17586,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:43:40.725Z",
       "metaData": {
-        "forks": "4353",
-        "stars": "31092",
+        "forks": "4355",
+        "stars": "31112",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://freellmapi.co",
@@ -18668,8 +18795,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:33:11.181Z",
       "metaData": {
-        "forks": "3105",
-        "stars": "54076",
+        "forks": "3108",
+        "stars": "54117",
         "topics": [
           "adhd",
           "claude-",
@@ -19887,8 +20014,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:56:22.056Z",
       "metaData": {
-        "forks": "23121",
-        "stars": "275625",
+        "forks": "23254",
+        "stars": "277480",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://aihero.dev/skills",
@@ -20191,8 +20318,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:43:42.229Z",
       "metaData": {
-        "forks": "40874",
-        "stars": "273916",
+        "forks": "40878",
+        "stars": "273955",
         "topics": [
           "ai-agents",
           "anthropic",
@@ -20468,8 +20595,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T12:37:10.053Z",
       "metaData": {
-        "forks": "947",
-        "stars": "10026",
+        "forks": "948",
+        "stars": "10033",
         "topics": [],
         "license": "",
         "homepage": "",

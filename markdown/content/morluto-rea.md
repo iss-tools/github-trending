@@ -1,0 +1,184 @@
+# morluto/rea
+
+[GitHub URL](https://github.com/morluto/rea)
+
+
+## REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词
+
+> 一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。
+
+- **Tags**: 逆向工程, MCP, AI Agent, 开源项目, 反编译
+- **Category**: 开发工具, AI 编程, 安全研究
+
+## Details
+
+# REA 深度评测：当逆向工程遇上 AI Agent——把"看穿一个 App"变成一句话提示词
+**一句话总结**：REA（Reverse Engineer Anything）是一个把 Hopper/Ghidra 这类专业逆向工具"翻译"给 AI Agent 用的 TypeScript CLI + MCP 框架，让你只需对 Claude Code、Cursor、Codex 说一句"研究一下这个 App 的搜索功能，并用我的技术栈给我复刻一个"，它就能真的反编译、跟代码、给证据、产实现——这是"AI 时代逆向工程工作流"的一次范式重构。
+---
+## 一、背景与痛点：逆向工程的"四个推磨的和尚"
+传统逆向工程的工作流是这样的：你要看懂一个没源码的 App 里某个功能怎么实现，得同时开着 **Hopper 或 Ghidra**（反编译器）、**一个终端**（跑脚本）、**一个抓包工具**（看网络）、**一个 ChatGPT 窗口**（问问题），然后像个考古学家一样在汇编代码、字符串表、伪代码之间来回切换，把 LLM 的答案手动复制粘贴回反编译器里验证。
+这套流程有三个致命摩擦：**第一**，LLM 看不到你的二进制，只能靠你口述伪代码来猜；**第二**，反编译器的 API 都是给人设计的，Agent 无法稳定调用；**第三**，结论散落在聊天记录里，下次分析另一个 App 又得从零开始。
+REA 的核心洞察正在于此——**它把"逆向工程"拆成了 Agent 能稳定调用的工具调用链，而不是让人手工搬运证据**。从这个角度看，它更像是逆向工程界的 Playwright MCP：底层引擎（Hopper/Ghidra）早已存在，但它给引擎装上了一层 Agent 友好的方向盘。
+作者署名 morluto 在公开社区里并无显著前作，但从仓库的工程化程度看（CI 验证生成文档、结构化 Evidence 契约、多语言 README、防御性的卸载逻辑），这是一个**明显按照"长期维护产品"而非"周末玩具"标准打磨的项目**。仓库创建于 2026 年 4 月，最后一次推送就在评测截稿前几天（2026-10-03），目前 v3.x 版本，Star 数在数百到小几千之间快速爬升，已在多个 MCP 插件聚合站（如 cheatcode、DSH、mcp.market）被主动收录。
+---
+## 二、核心亮点与功能剖析
+### 2.1 "Decompile → Understand → Recreate" 的三段式调查模型
+这是 REA 的灵魂。官方把它抽象成三个动词：
+| 阶段 | Agent 在做什么 | REA 提供的工具 |
+|---|---|---|
+| **Decompile** | 打开二进制，恢复可读代码、字符串、符号 | `open_binary`、`binary_overview` |
+| **Understand** | 跨函数追踪数据流和调用图，直到能解释"这个功能怎么工作" | `xrefs`、`get_call_graph`、`procedure_pseudo_code` |
+| **Recreate** | 把学到的东西改写成你技术栈里的实现 | 由 Agent 自己的文件编辑工具完成 |
+关键设计在于 **REA 不掺和第 6 步写代码，只负责第 1–5 步的"取证"**，写代码交给 Agent 本身的编辑能力。这种"研究"与"实现"的清晰分层，避免了市面上很多"一键克隆 App"产品那种虚假承诺。
+### 2.2 Evidence 机制：让"AI 的判断"变成"可审计的工件"
+这是我认为 REA 最具工程品味的一点。**所有结论都被封装成带 artifact 标识、provider 来源、代码位置、置信度、已知局限的 Evidence Bundle**，可以导入、导出、规范化、两两 diff。
+```bash
+rea evidence-import /path/to/bundle.json
+rea evidence-export /path/to/bundle.json /path/to/canonical.json
+rea compare /path/to/left.json /path/to/right.json
+```
+这意味着你可以把"上周对这个 App 的分析结论"保存下来，下周 App 升级后再 `compare` 一次，就能直接看到行为差异——这是把逆向工作从"一次性考古"升级为**可复现、可评审、可版本化的工程流程**。在安全审计、合规报告、互操作性研究场景下，这一项价值远超工具本身。
+### 2.3 多 Provider 架构：Hopper 与 Ghidra 双引擎
+REA 的架构图值得贴在这里：
+```
+Agent / Terminal
+      ↓
+REA (CLI + MCP)
+      ↓
+Session Router → Deep-Provider Registry
+      ↓
+┌─────┴─────┬──────────┬─────────┬──────────┐
+Hopper     Ghidra    Native    Artifact
+provider   provider  macOS     graph
+(深度分析)  (只读)    provider  provider
+                     └───── Browser CDP / Process Capture
+```
+- **Hopper Provider**：可以做标注、改名、加注释，是"全功能模式"
+- **Ghidra Provider**：22 个只读操作，要求 Ghidra 12.1.4 + 64-bit JDK 21，分析临时副本、会话结束即销毁，**不污染原文件**
+- **Native macOS Provider**：Mach-O 元数据、代码签名、plist、Swift demangling，这些不用启动 Hopper 就能跑
+- **Artifact Graph Provider**：APK、IPA、ASAR、plist、Interface Builder、Asset Catalog 的目录级清点
+- **Browser CDP Provider**：通过 loopback CDP 连 Chrome，被动观察页面结构、网络元数据、脚本、截图
+- **Process Capture Provider**：声明式场景运行目标进程，捕获文件系统、终端、退出码等行为证据
+这种设计让你能**为不同深度的问题选不同深度的工具**：看一个 ASAR 包的模块结构用 Artifact 就够，反编译一个 Objective-C 函数才需要 Hopper。
+### 2.4 工具目录的广度
+REA 目前暴露给 Agent 的 MCP 工具覆盖了 9 大家族，合计 **116+ 个工具**：
+| 工具家族 | 数量 | 典型用途 |
+|---|---|---|
+| 原生二进制检查 | 39 | 函数、伪代码、汇编、字符串、交叉引用 |
+| 调查工作流 | 14 | App 全景、函数 dossier、批量反编译 |
+| macOS 原生工具 | 7 | Mach-O 元数据、Swift demangling（无需 Hopper）|
+| Artifact 图 | 5 | 目录清点、IB 文件、Asset Catalog |
+| 托管 PE/CLI | 7 | .NET 元数据、CIL 指令 |
+| 浏览器观察 | 9 | 页面结构、网络元数据、截图 |
+| Electron 分析 | 5 | 渲染器观察、静态/运行时对账 |
+| JS 运行时 | 2 | V8 Inspector 接入 |
+| 工作区与观察 | 21 | 会话、Evidence、流程比较 |
+这个广度在同类 MCP 项目里相当罕见——多数竞品只覆盖原生二进制这一个维度。
+### 2.5 安全模型的克制
+REA 的几个表态非常值得点赞：
+- **本地优先**：分析全部在你机器上跑，没有任何"上传到我们的服务器分析"的后门。这对处理私有软件、恶意样本、未发布版本至关重要。
+- **Setup 的同意机制**：检测到 Agent ≠ 自动接入。每个能力单独勾选、备份原配置、写完回读验证，甚至 `--dry-run` 可以先看计划再决定。这在 MCP 生态里属于罕见的"防御性 setup"。
+- **卸载干净**：`rea uninstall --purge-data` 只删自己拥有的文件，"拒绝格式错误的客户端配置"和"永不跟随 purge-data 软链接"这两条防御，看得出来作者认真思考过对抗场景。
+---
+## 三、上手门槛与部署体验
+REA 的安装是我用过 MCP 项目里最丝滑的之一，但**前置依赖需要重点说明**。
+### 3.1 一行启动
+```bash
+# 方式 A：不装全局，跑一次
+npx --yes rea-agents@latest setup
+# 方式 B：全局安装
+npm install --global rea-agents
+rea setup
+```
+Setup 向导会自动检测你机器上的 Claude Code、Claude Desktop、Codex、Cursor、Gemini CLI、Windsurf、OpenCode、Antigravity、GitHub Copilot CLI、VS Code，**但不会自动选中任何一个**——你必须显式勾选。Devin 虽然会被检测到，但 REA 拒绝自动配置它，因为 Devin 缺少文档化的本地 MCP 配置边界，这种"我不确定就宁可不做"的克制很加分。
+### 3.2 原生分析需要"引擎"
+REA 本身只是个协调层，**真正的反编译引擎需要额外装**：
+- **Hopper**：Setup 可以帮你装（macOS 装到 `~/Applications`，Linux 用 apt/dnf/pacman），免费 Demo 模式可用但有厂商定义的限制；正式许可证需单独购买。
+- **Ghidra**：需要你自己先装 Ghidra 12.1.4 + JDK 21，REA 只读取路径，不帮你装。
+如果你只做 JavaScript/Electron/.NET/浏览器分析，可以**完全不装 Hopper/Ghidra**，直接用 Artifact 和静态 JS Provider。
+### 3.3 最小可用示例
+安装完成后，对着你的 Agent 说一句：
+```
+Understand how search works in the Notes app, show me the evidence,
+and build a similar feature for my project.
+```
+背后 Agent 会自动串起这条调用链：
+```bash
+# 不用 Agent，也可以直接在终端里这么玩
+npx -y rea-agents@latest analyze /Applications/Notes.app
+npx -y rea-agents@latest search /Applications/Notes.app "offline"
+npx -y rea-agents@latest function /Applications/Notes.app 0x1000
+npx -y rea-agents@latest trace /Applications/Notes.app "offline"
+```
+或者手动写 MCP 配置（任何支持 MCP 的客户端都能用）：
+```json
+{
+  "mcpServers": {
+    "rea": {
+      "command": "npx",
+      "args": ["-y", "rea-agents@4.0.0", "mcp"]
+    }
+  }
+}
+```
+官方建议持久注册用**精确的版本号**而非 `@latest`，避免自动升级造成行为漂移——这种细节能看出作者被坑过。
+### 3.4 出问题怎么办
+```bash
+npx -y rea-agents@latest doctor
+rea doctor --json   # 机器可读诊断
+```
+`doctor` 是只读的，会区分"不支持的主机 / 缺依赖 / 缺分析引擎 / 配置漂移 / 健康"五种状态，比大多数 MCP 项目的"报错就报错"友好得多。
+---
+## 四、社区活跃度与生命力
+- **仓库**：morluto/rea，2026-04-14 创建，2026-10-03 仍在推送，从 1.0 到 3.x 只用了半年，迭代速度极快
+- **License**：MIT，可商用
+- **文档**：英文/简体中文/日文/韩文/阿拉伯语五语 README，PR CI 会校验生成式文档与 TypeDoc
+- **被收录情况**：cheatcode、DSH、mcp.market、AI/TLDR、OffSec Blog 均有评测或收录，OffSec 的评价是"**epistemic honesty is rare in this category**"（这类工具里少见的认知诚实）
+- **独立安全审计**：暂无，Socket.dev 已建立包分析页但无标记异常
+需要指出，社区规模仍处于早期，Issue 数量、第三方教程、问题讨论贴都不算丰富，遇到边缘问题大概率要自己读源码。
+---
+## 五、目标人群与收益
+| 人群 | 具体能解决什么痛点 |
+|---|---|
+| **产品开发者** | 看到竞品某个功能"哇这怎么做的"，REA 可以扒出实现思路，然后让 Agent 用你的技术栈写一版 |
+| **逆向工程师 / 安全研究员** | 把 Ghidra/Hopper 的手工流程外包给 Agent，自己专注判断 Evidence 是否可信 |
+| **互操作 / 合规工程师** | 需要为未文档化的格式、协议、私有接口写对接代码时，Evidence Bundle 直接变成报告素材 |
+| **恶意样本分析员** | 本地分析 + 受控 Process Capture，样本不出机器 |
+| **前端 / Electron 开发者** | 对竞品 ASAR 做静态分析、模块映射、构建对比，不需要反编译原生层 |
+| **技术博主 / 教学者** | 用"Notes App 搜索是怎么实现的"这类案例做教学，Evidence 可以直接放 PPT |
+**共同的收益**是把"我猜这个功能大概是这样"升级为"**这里有反编译出的伪代码、交叉引用、调用图和 Evidence 编号可以查证**"。
+---
+## 六、竞品/同类对比
+这个赛道目前在 MCP 生态里有几位玩家，各占一个生态位：
+| 维度 | **REA** | GhidraMCP (LaurieWired) | IDA Pro MCP (mrexodia) | 传统 GUI + LLM 手工流 |
+|---|---|---|---|---|
+| **底座引擎** | Hopper 或 Ghidra（可选）| 仅 Ghidra | 仅 IDA Pro | Ghidra/IDA GUI |
+| **成本** | 免费（Hopper demo 限制 / 许可证可选） | 免费 | 需 IDA Pro 商业许可（数千美元） | Ghidra 免费 / IDA 贵 |
+| **Agent 接入** | 引导式 Setup，自动配置 10+ Agent | 手动 MCP 配置 | 手动 MCP 配置 | 手动复制粘贴 |
+| **目标广度** | 原生 + JS/Electron + .NET + 浏览器 + Process Capture | 仅原生二进制 | 仅原生二进制 | 取决于人的能力 |
+| **Evidence / 可审计** | ✅ 内置 Evidence v2 + import/export/compare | ❌ | ❌ | ❌ |
+| **本地执行** | ✅ 完全本地 | ✅ | ✅ | ✅ |
+| **Windows 支持** | 弱（Ghidra x64 PE 实验性） | ✅ | ✅ | ✅ |
+| **学习曲线** | 低（Agent 时代友好） | 中 | 中 | 高 |
+| **适合** | 想让 Agent 全流程主导的人 | Ghidra 重度用户 | 企业 IDA 持有者 | 老派逆向工程师 |
+**REA 的独特竞争力**在于：它是唯一一个**从设计之初就按"Agent 工作流"而非"工具 API 包装"思路来做的项目**——Evidence 机制、引导式 Setup、能力声明、Provider 注册表都是为此服务。GhidraMCP 更像一个"轻量桥"，REA 更像一个"工作流框架"。
+---
+## 七、局限与不足
+评测不能只说好话，以下是实打实的短板：
+1. **Windows 支持几乎不存在**：Ghidra-only PE P0 还在"实验性且当前不可用"状态，缺进程所有权、私有目录权限、安全路径检查。Windows 重度用户短期别考虑。
+2. **强依赖外部引擎**：Hopper 不是免费的（许可证单机约 129 美元），Demo 模式有厂商限制；Ghidra 路径**版本锁死在 12.1.4 + JDK 21**，未来升级一定会带来兼容性漂移。
+3. **无法恢复原始源码**：REA 官方自己反复强调这一点。反编译只能拿到伪代码 + 符号 + 元数据，**别指望它一键克隆一个 App**——README 把这个预期管理得非常清楚。
+4. **Hopper UI 会被顶到前台**：macOS 上 REA 请求后台启动，但 Hopper 的 Launcher 仍会激活窗口，可能打断你的工作流。
+5. **学习曲线并非为零**：你不需要会写汇编，但要理解"什么是调用图、什么是交叉引用、伪代码和源码的差别"才能真正看懂 Evidence。
+6. **Roadmap 中大量能力未交付**：API/协议/移动端/固件分析、Frida/LLDB 运行时观察、IDA/Binary Ninja 支持，都还在 "Later" 列表里，**别按 Roadmap 做采购决策**。
+7. **法律与伦理边界**：逆向工程在多数司法辖区只对"拥有授权的目标"合法。REA 把工具交到 Agent 手里，**不代表把法律许可也交到了你手里**——互操作研究、安全审计、自有软件诊断是安全区，绕过 DRM、破解商业软件、分析他人未授权产品不是。
+---
+## 八、结语与行动建议
+**REA 是 MCP 生态里少见的"诚意之作"**——它没有在宣传里吹"AI 一键克隆 App"，反而用大量篇幅解释"我能做什么、不能做什么、每个结论的证据在哪"；它的 Setup 向导比多数 MCP 服务器都谨慎，卸载逻辑甚至考虑了对抗性文件系统状态；它的 Evidence 机制把逆向工作从"聊天记录考古"升级为可复现的工程工件。
+**终极判断**：如果你属于以下任一情况，值得立刻花 20 分钟上手——
+- 你是产品开发者，需要"参考"竞品某功能的实现思路（合法授权范围内）
+- 你是安全研究员，想让 Agent 帮你跑完反编译 + 交叉引用的第一遍粗筛
+- 你是 Electron/JS 开发者，想研究 ASAR 静态分析的工作流
+- 你在为公司做合规评估，需要产出可审计的分析记录
+**推荐路径**：先用 `npx --yes rea-agents@latest setup` 接入你最常用的 Agent，找一个你拥有合法分析权限的中等复杂度 macOS App（比如自家的构建产物）跑一遍 `rea analyze`，看看 Evidence 的形态是否符合你预期，再决定是否购买 Hopper 许可证或配置 Ghidra。**不要直接拿商业闭源软件开测**——技术能力上它能做，法律层面你需要自己兜底。
+这个项目最值得关注的不是"今天能干什么"，而是它验证了一个方向：**当专业工具暴露成结构化的 MCP 工具时，Agent 真的能接管那些原本需要十年经验才能完成的工作流的 80%**。从这个角度看，REA 是这个范式的一次优秀示范。
