@@ -65813,5 +65813,807 @@
         "description": "cmux 由 Manaflow 团队开源，基于 Ghostty 渲染引擎（GPU 加速）用 Swift 原生构建，专为并行调度多个 AI Coding Agent 设计。它不重造 Agent 也不做编排器，只提供可视化侧边栏、语义化通知环和开放的通知协议，把组合自由留给用户，项目上线 8 个月收获 27k stars。"
       }
     }
+  ],
+  "20261008": [
+    {
+      "id": "26259caa-72bc-4cf8-b44b-70899c6c8515",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 12878,
+      "forks": 1368,
+      "starsAdded": 4666,
+      "createdAt": "2026-10-07T16:00:01.939Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agent-tools",
+          "ai-agents",
+          "binary-analysis",
+          "cli",
+          "coding-agents",
+          "cordis",
+          "ctf",
+          "decompiler",
+          "disassembler",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "reverse-engineering",
+          "reverse-engineering-tools",
+          "static-analysis"
+        ],
+        "license": "MIT license",
+        "homepage": "https://morluto.github.io/rea/",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "2f158a9c-7418-4ed0-a899-34c7970855b1",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "repo": "boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 9083,
+      "forks": 674,
+      "starsAdded": 2725,
+      "createdAt": "2026-10-07T16:00:01.968Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://discord.gg/BHFztBPUe",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
+      "id": "3819883d-fd05-4d98-adb4-906b616c9e2b",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 6561,
+      "forks": 879,
+      "starsAdded": 1494,
+      "createdAt": "2026-10-07T16:00:02.006Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.duarte-santos.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
+      "id": "15271af9-48aa-4701-bdbf-84871ea5973d",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 279130,
+      "forks": 23384,
+      "starsAdded": 1406,
+      "createdAt": "2026-10-07T16:00:01.955Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "07b651dc-980c-47e5-968c-80cba9ba1d62",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/tester-army/e2e",
+      "repo": "tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars": 7103,
+      "forks": 314,
+      "starsAdded": 1391,
+      "createdAt": "2026-10-07T16:00:02.002Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "e2e",
+          "e2e-testing",
+          "end-to-end-testing",
+          "mobile",
+          "mobile-testing",
+          "playwright",
+          "web"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tester.army/e2e",
+        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "E2E测试",
+          "Playwright",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
+        "ability": [
+          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
+          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
+          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
+          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
+          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
+        ],
+        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化测试"
+        ],
+        "suitable": [
+          "独立开发者与小团队",
+          "前端/全栈工程师",
+          "React Native 等移动端开发团队",
+          "QA 测试工程师",
+          "AI Native 创业团队"
+        ],
+        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
+      }
+    },
+    {
+      "id": "e9363e9c-dfce-4f91-9e1f-fdd51cae8435",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 44650,
+      "forks": 2869,
+      "starsAdded": 828,
+      "createdAt": "2026-10-07T16:00:01.984Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
+      "id": "13885d7f-ccad-489d-957a-18328effa475",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "repo": "ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars": 54857,
+      "forks": 3146,
+      "starsAdded": 620,
+      "createdAt": "2026-10-07T16:00:01.977Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "adhd",
+          "claude-",
+          "claude-code-plugin",
+          "claude-skills",
+          "developer-tools",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Prompt优化",
+          "开发者工具",
+          "效率提升",
+          "ADHD友好"
+        ],
+        "cover": "",
+        "title": "让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测",
+        "ability": [
+          "行动优先输出",
+          "编号步骤引导",
+          "提供时间估算",
+          "过滤社交废话",
+          "降低认知负荷"
+        ],
+        "summary": "通过10条规则让 AI 编程助手从“话痨”变“效率机器”，输出答案优先、无废话的指令。",
+        "category": [
+          "AI 编程",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "开发者",
+          "ADHD人群",
+          "技术团队",
+          "编程初学者"
+        ],
+        "description": "i-have-adhd 是一个轻量级 AI 技能插件，通过 10 条规则重构 AI 输出格式，解决传统 AI 回答冗长、信息密度低的问题。它适用于 Claude、Copilot 等主流工具，能显著提升阅读效率并减少用户烦躁情绪。"
+      }
+    },
+    {
+      "id": "817fa28b-48a6-43c1-b25d-2f6678cd37e9",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 97518,
+      "forks": 8584,
+      "starsAdded": 578,
+      "createdAt": "2026-10-07T16:00:01.992Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "b35b3655-6117-4e87-9617-50b98e33bda5",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 25775,
+      "forks": 1549,
+      "starsAdded": 538,
+      "createdAt": "2026-10-07T16:00:01.999Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "e7799fd4-ea82-4f13-916d-e0da21492ee1",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 102525,
+      "forks": 10744,
+      "starsAdded": 453,
+      "createdAt": "2026-10-07T16:00:01.987Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "b0cd699b-9da0-4d26-83cc-b026047d6859",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/trycua/cua",
+      "repo": "trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "Rust",
+      "stars": 28634,
+      "forks": 2034,
+      "starsAdded": 229,
+      "createdAt": "2026-10-07T16:00:01.997Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "apple",
+          "computer-use",
+          "computer-use-agent",
+          "containerization",
+          "cua",
+          "desktop-automation",
+          "hacktoberfest",
+          "lume",
+          "macos",
+          "manus",
+          "operator",
+          "swift",
+          "virtualization",
+          "virtualization-framework",
+          "windows",
+          "windows-sandbox"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cua.ai",
+        "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation. - trycua/cua"
+      },
+      "summaryData": {
+        "tags": [
+          "Computer-Use",
+          "AI Agents",
+          "开源",
+          "自动化",
+          "虚拟化"
+        ],
+        "cover": "",
+        "title": "Cua：AI 计算机操作基础设施栈",
+        "ability": [
+          "跨平台 UI 自动化",
+          "云端/本地隔离沙箱",
+          "后台无干扰操作",
+          "标准化 Agent 评测",
+          "虚拟化环境管理"
+        ],
+        "summary": "一套让 AI 控制真实/虚拟电脑的开源基础设施，打通驱动、沙箱与评测。",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 研究员",
+          "自动化开发工程师",
+          "AI 产品构建者",
+          "DevOps 与安全团队",
+          "技术极客"
+        ],
+        "description": "Cua 提供了一套完整的工具链，包括本地后台驱动、跨平台沙箱及评测基准。它能帮助开发者构建能操作 GUI 的 AI Agent，支持在安全隔离的环境中运行任务并生成训练数据。"
+      }
+    },
+    {
+      "id": "fef691bb-e4c3-4cc1-b082-2a3c559c8bf7",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 7762,
+      "forks": 378,
+      "starsAdded": 82,
+      "createdAt": "2026-10-07T16:00:01.989Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      }
+    },
+    {
+      "id": "8fff194c-6c99-47d4-868b-1d8e6fb10f40",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "repo": "manaflow-ai/cmux",
+      "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+      "language": "Swift",
+      "stars": 27747,
+      "forks": 2458,
+      "starsAdded": 50,
+      "createdAt": "2026-10-07T16:00:01.994Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "amp",
+          "claude-code",
+          "cli",
+          "codex",
+          "coding-agents",
+          "gemini",
+          "ghostty",
+          "macos",
+          "multiplexer",
+          "multitasking",
+          "opencode",
+          "organization",
+          "parallel-agents",
+          "programmability",
+          "terminal",
+          "terminal-multiplexer",
+          "tmux",
+          "workspace-manager"
+        ],
+        "license": "License",
+        "homepage": "https://cmux.com",
+        "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability. - manaflow-ai/cmux"
+      },
+      "summaryData": {
+        "tags": [
+          "macOS",
+          "开源项目",
+          "AI Agent",
+          "终端工具",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "cmux 深度评测：专为 AI Agent 并行调度而生的 macOS 原生终端",
+        "ability": [
+          "垂直侧边栏展示每个 Agent 的 git 分支、PR、端口与最新通知",
+          "Agent 等待输入时 Pane 亮蓝环，⌘⇧U 一键跳转到最新未读",
+          "一条命令为 Claude Code/Codex/OpenCode 安装 hooks 深度集成",
+          "内嵌可编程浏览器，Agent 可自主打开网页验证代码改动",
+          "完整 CLI 与 Unix Socket API，所有操作均可脚本化"
+        ],
+        "summary": "cmux 是一款基于 Ghostty 引擎的开源 macOS 终端，让你同时管理多个 AI Coding Agent，谁在等你一眼就知道",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "同时运行多个 AI Coding Agent 的 macOS 开发者",
+          "Claude Code / Codex 重度用户",
+          "已在用 Ghostty 想零成本升级的工程师",
+          "喜欢用 CLI 和脚本自动化一切的老派开发者",
+          "想借鉴产品设计理念的开发者工具从业者"
+        ],
+        "description": "cmux 由 Manaflow 团队开源，基于 Ghostty 渲染引擎（GPU 加速）用 Swift 原生构建，专为并行调度多个 AI Coding Agent 设计。它不重造 Agent 也不做编排器，只提供可视化侧边栏、语义化通知环和开放的通知协议，把组合自由留给用户，项目上线 8 个月收获 27k stars。"
+      }
+    }
   ]
 }
