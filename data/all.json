@@ -1,6 +1,80 @@
 {
   "all": [
     {
+      "id": "292bfebf-4951-4947-af31-c5f03f945f60",
+      "url": "https://github.com/Anil-matcha/open-dots",
+      "domain": "github.com",
+      "repo": "Anil-matcha/open-dots",
+      "description": "Open Dots 是开发者 Anil Matcha 于 2026 年 10 月发布的开源自托管 AI Agent 工作区，采用 FastAPI + Next.js + SQLite 极简架构，发布 24 小时获约 4.5k Star。它最大亮点是把企业级的 deny-by-default 动作网关、审批流与全量审计以可读开源代码实现。但目前为单用户原型，仅支持 Responses 协议、连接器生态薄弱、无持久记忆，更适合当学习范本而非生产工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-07T08:05:51.575Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "ai-agent",
+          "ai-assistant",
+          "ai-workspace",
+          "chatgpt-agent",
+          "claude-cowork",
+          "computer-use",
+          "computer-use-agent",
+          "grok-bot",
+          "grok-bot-alternative",
+          "instinct",
+          "manus-cue",
+          "meta-muse",
+          "open-source",
+          "open-source-alternative",
+          "openai-dots",
+          "openclaw",
+          "personal-ai-agent",
+          "self-hosted",
+          "self-hosted-ai"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Open-source, self-hosted AI agent workspace and alternative to OpenAI Dots, Meta Muse, Grok Bot, Instinct, Manus Cue, Claude Cowork, and ChatGPT agent. MIT-licensed; includes chat, connectors, approvals, and optional computer use. Early prototype. - Anil-matcha/open-dots"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "开源",
+          "自托管",
+          "Agent 治理",
+          "数据隐私"
+        ],
+        "cover": "",
+        "title": "Open Dots 深度评测：4.5k Star 的开源 AI Agent 工作区，核心价值是一套可读的 Agent 治理网关",
+        "ability": [
+          "deny-by-default 动作网关：所有敏感操作统一走网关，默认拒绝、高风险动作需人工审批",
+          "全量审计日志：每次工具调用留痕，凭据用 Fernet 加密存本地 SQLite，数据不出门",
+          "模型无关的推理适配器：兼容 OpenAI Responses 协议，模型、API Key、自定义 Header 均可配置",
+          "三档计算机运行时：fake 本地调试 / Docker+Playwright 只读沙箱 / 远程计算机服务",
+          "Composio 连接器接入与内置 Web 搜索（You.com MCP），MIT 协议可自由魔改商用"
+        ],
+        "summary": "开源自托管的 AI Agent 工作区，用「默认拒绝网关+审批流+审计日志」对标 OpenAI Dots、Manus 等闭源产品，MIT 协议、数据全本地。",
+        "category": [
+          "开源项目",
+          "AI Agent",
+          "开发工具"
+        ],
+        "suitable": [
+          "想学习 Agent 网关、审批流、审计设计的工程师",
+          "隐私敏感、希望聊天记录和凭据全留本地的个人用户",
+          "需要开源参考实现做合规评审的企业 IT / 安全人员",
+          "想 fork 后改造自家 Agent 原型的独立开发者",
+          "关注 OpenAI Dots / Meta Muse / Manus 赛道的 AI 研究者"
+        ],
+        "description": "Open Dots 是开发者 Anil Matcha 于 2026 年 10 月发布的开源自托管 AI Agent 工作区，采用 FastAPI + Next.js + SQLite 极简架构，发布 24 小时获约 4.5k Star。它最大亮点是把企业级的 deny-by-default 动作网关、审批流与全量审计以可读开源代码实现。但目前为单用户原型，仅支持 Responses 协议、连接器生态薄弱、无持久记忆，更适合当学习范本而非生产工具。"
+      },
+      "type": "project",
+      "dateAdded": "20261007"
+    },
+    {
       "id": "f41fdace-e2d6-4299-99e0-06234208ebd3",
       "url": "https://github.com/deepseek-ai/DeepGEMM",
       "domain": "github.com",
@@ -89,7 +163,7 @@
           "static-analysis"
         ],
         "license": "MIT license",
-        "homepage": "",
+        "homepage": "https://morluto.github.io/rea/",
         "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
       },
       "summaryData": {
