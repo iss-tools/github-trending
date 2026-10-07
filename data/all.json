@@ -1,6 +1,184 @@
 {
   "all": [
     {
+      "id": "cabe1e9f-e384-4a6a-b642-5c21b45b0fda",
+      "url": "https://github.com/spotify/portal-ai-plugins",
+      "domain": "github.com",
+      "repo": "spotify/portal-ai-plugins",
+      "description": "Spotify 官方开源的 Claude Code 插件仓库，核心插件 shunt 通过 PreToolUse Hook 拦截超 350 行的大文件读取，把 I/O 重活委托给 Gemini 2.5 Flash 等廉价模型，Java 单体仓库实测节省 82-94% token 成本。需依赖 Portal 实例，不能委托编辑和推理，更像是给现有 AI 编码工具打补丁省钱的基础设施。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-07T11:28:57.159Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to spotify/portal-ai-plugins development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Spotify",
+          "Claude Code",
+          "Token优化",
+          "Backstage",
+          "AI插件"
+        ],
+        "cover": "",
+        "title": "Spotify Portal AI Plugins 深度评测：让便宜模型替 Claude Code 打工的官方省钱方案",
+        "ability": [
+          "Token 成本分流：将大文件阅读、样板代码生成等 I/O 重活自动转包给 Gemini Flash 等廉价模型",
+          "企业软件目录 AI 前台：让 Claude Code 直接查询服务的 Owner、文档、健康状态与 Incident",
+          "声明式 Agent 配置：AiKA Modes 让模型路由从系统工程问题变成一份 YAML 配置",
+          "多层强制拦截：PreToolUse Hook 强制大文件读取走省钱通道，不靠 prompt 恳请",
+          "多工具兼容：支持 Claude Code、Codex、Cursor 三大主流 AI 编码工具一键安装"
+        ],
+        "summary": "Spotify 官方开源的 AI 编码插件市场，把大文件阅读等烧钱任务路由给廉价模型，实测节省 82-94% 的 token 成本。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "Spotify Portal 企业客户",
+          "被 token 账单困扰的工程负责人",
+          "Backstage 自建企业的平台工程团队",
+          "Claude Code 重度用户",
+          "AI Agent 工具开发者"
+        ],
+        "description": "Spotify 官方开源的 Claude Code 插件仓库，核心插件 shunt 通过 PreToolUse Hook 拦截超 350 行的大文件读取，把 I/O 重活委托给 Gemini 2.5 Flash 等廉价模型，Java 单体仓库实测节省 82-94% token 成本。需依赖 Portal 实例，不能委托编辑和推理，更像是给现有 AI 编码工具打补丁省钱的基础设施。"
+      },
+      "type": "project",
+      "dateAdded": "20261007"
+    },
+    {
+      "id": "1435bb09-f3c8-4de4-b667-f33965fb2b8b",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "domain": "github.com",
+      "repo": "manaflow-ai/cmux",
+      "description": "cmux 由 Manaflow 团队开源，基于 Ghostty 渲染引擎（GPU 加速）用 Swift 原生构建，专为并行调度多个 AI Coding Agent 设计。它不重造 Agent 也不做编排器，只提供可视化侧边栏、语义化通知环和开放的通知协议，把组合自由留给用户，项目上线 8 个月收获 27k stars。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-07T11:12:27.387Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "amp",
+          "claude-code",
+          "cli",
+          "codex",
+          "coding-agents",
+          "gemini",
+          "ghostty",
+          "macos",
+          "multiplexer",
+          "multitasking",
+          "opencode",
+          "organization",
+          "parallel-agents",
+          "programmability",
+          "terminal",
+          "terminal-multiplexer",
+          "tmux",
+          "workspace-manager"
+        ],
+        "license": "License",
+        "homepage": "https://cmux.com",
+        "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability. - manaflow-ai/cmux"
+      },
+      "summaryData": {
+        "tags": [
+          "macOS",
+          "开源项目",
+          "AI Agent",
+          "终端工具",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "cmux 深度评测：专为 AI Agent 并行调度而生的 macOS 原生终端",
+        "ability": [
+          "垂直侧边栏展示每个 Agent 的 git 分支、PR、端口与最新通知",
+          "Agent 等待输入时 Pane 亮蓝环，⌘⇧U 一键跳转到最新未读",
+          "一条命令为 Claude Code/Codex/OpenCode 安装 hooks 深度集成",
+          "内嵌可编程浏览器，Agent 可自主打开网页验证代码改动",
+          "完整 CLI 与 Unix Socket API，所有操作均可脚本化"
+        ],
+        "summary": "cmux 是一款基于 Ghostty 引擎的开源 macOS 终端，让你同时管理多个 AI Coding Agent，谁在等你一眼就知道",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "同时运行多个 AI Coding Agent 的 macOS 开发者",
+          "Claude Code / Codex 重度用户",
+          "已在用 Ghostty 想零成本升级的工程师",
+          "喜欢用 CLI 和脚本自动化一切的老派开发者",
+          "想借鉴产品设计理念的开发者工具从业者"
+        ],
+        "description": "cmux 由 Manaflow 团队开源，基于 Ghostty 渲染引擎（GPU 加速）用 Swift 原生构建，专为并行调度多个 AI Coding Agent 设计。它不重造 Agent 也不做编排器，只提供可视化侧边栏、语义化通知环和开放的通知协议，把组合自由留给用户，项目上线 8 个月收获 27k stars。"
+      },
+      "type": "project",
+      "dateAdded": "20261007"
+    },
+    {
+      "id": "3fe17c76-8e6b-4434-a948-04c05e4cfa1c",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "domain": "github.com",
+      "repo": "EpicGames/raddebugger",
+      "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-07T11:05:42.871Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      },
+      "type": "project",
+      "dateAdded": "20261007"
+    },
+    {
       "id": "292bfebf-4951-4947-af31-c5f03f945f60",
       "url": "https://github.com/Anil-matcha/open-dots",
       "domain": "github.com",
@@ -15395,8 +15573,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T06:50:42.348Z",
       "metaData": {
-        "forks": "10628",
-        "stars": "101360",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
           "antigravity",
