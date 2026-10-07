@@ -64799,9 +64799,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 11281,
-      "forks": 1219,
-      "starsAdded": 2956,
+      "stars": 11855,
+      "forks": 1268,
+      "starsAdded": 4666,
       "createdAt": "2026-10-06T16:00:02.052Z",
       "metaData": {
         "forks": "0",
@@ -64866,117 +64866,6 @@
       }
     },
     {
-      "id": "edd142bd-4d9f-4afe-bf37-7e95446f5831",
-      "dateAdded": "20261007",
-      "type": "github-daily",
-      "url": "https://github.com/tester-army/e2e",
-      "repo": "tester-army/e2e",
-      "description": "Next generation e2e testing framework for web and mobile apps.",
-      "language": "TypeScript",
-      "stars": 6836,
-      "forks": 303,
-      "starsAdded": 1725,
-      "createdAt": "2026-10-06T16:00:01.944Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "e2e",
-          "e2e-testing",
-          "end-to-end-testing",
-          "mobile",
-          "mobile-testing",
-          "playwright",
-          "web"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://tester.army/e2e",
-        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "AI Agent",
-          "E2E测试",
-          "Playwright",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
-        "ability": [
-          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
-          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
-          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
-          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
-          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
-        ],
-        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化测试"
-        ],
-        "suitable": [
-          "独立开发者与小团队",
-          "前端/全栈工程师",
-          "React Native 等移动端开发团队",
-          "QA 测试工程师",
-          "AI Native 创业团队"
-        ],
-        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
-      }
-    },
-    {
-      "id": "3b0c653a-6592-4b9c-ae78-e9f5f045da81",
-      "dateAdded": "20261007",
-      "type": "github-daily",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 6281,
-      "forks": 844,
-      "starsAdded": 1419,
-      "createdAt": "2026-10-06T16:00:02.069Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.duarte-santos.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
-      }
-    },
-    {
       "id": "b8c6abba-e209-4efe-b4b1-a00d71ab3f53",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -64984,9 +64873,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 7961,
-      "forks": 598,
-      "starsAdded": 949,
+      "stars": 8474,
+      "forks": 630,
+      "starsAdded": 2725,
       "createdAt": "2026-10-06T16:00:02.014Z",
       "metaData": {
         "forks": "0",
@@ -65038,6 +64927,56 @@
       }
     },
     {
+      "id": "3b0c653a-6592-4b9c-ae78-e9f5f045da81",
+      "dateAdded": "20261007",
+      "type": "github-daily",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 6410,
+      "forks": 858,
+      "starsAdded": 1494,
+      "createdAt": "2026-10-06T16:00:02.069Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.duarte-santos.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
       "id": "cac7d2a8-5355-431c-aea4-93ac5c4b1fef",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -65045,9 +64984,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 278747,
-      "forks": 23348,
-      "starsAdded": 889,
+      "stars": 278895,
+      "forks": 23362,
+      "starsAdded": 1406,
       "createdAt": "2026-10-06T16:00:01.974Z",
       "metaData": {
         "forks": "0",
@@ -65086,6 +65025,129 @@
           "AI 编程工具深度用户"
         ],
         "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "edd142bd-4d9f-4afe-bf37-7e95446f5831",
+      "dateAdded": "20261007",
+      "type": "github-daily",
+      "url": "https://github.com/tester-army/e2e",
+      "repo": "tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars": 6960,
+      "forks": 310,
+      "starsAdded": 1391,
+      "createdAt": "2026-10-06T16:00:01.944Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "e2e",
+          "e2e-testing",
+          "end-to-end-testing",
+          "mobile",
+          "mobile-testing",
+          "playwright",
+          "web"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tester.army/e2e",
+        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "E2E测试",
+          "Playwright",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
+        "ability": [
+          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
+          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
+          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
+          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
+          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
+        ],
+        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化测试"
+        ],
+        "suitable": [
+          "独立开发者与小团队",
+          "前端/全栈工程师",
+          "React Native 等移动端开发团队",
+          "QA 测试工程师",
+          "AI Native 创业团队"
+        ],
+        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
+      }
+    },
+    {
+      "id": "a9e25cdc-2147-4c77-bc97-dbc946ac533e",
+      "dateAdded": "20261007",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 44502,
+      "forks": 2862,
+      "starsAdded": 828,
+      "createdAt": "2026-10-06T16:00:02.074Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
       }
     },
     {
@@ -65139,6 +65201,65 @@
           "Claude Code / Cursor 重度用户"
         ],
         "description": "由连续创业者 Michael Sitarzewski 维护的开源项目，用 230+ 份高度结构化的 Markdown 提示词，把前端工程师、UI 设计师、Reddit 社区运营、投放审计师等虚拟团队打包进 AI 编程工具。每个 Agent 不是简单人设，而是包含行业老炮的认知框架、行为边界与验收标准，让 AI 从「通用全才」变成「行业专家」。局限在于全量安装会撑爆系统提示、部分长尾 Agent 质量参差、本质是提示词角色扮演而非真多智能体并行。"
+      }
+    },
+    {
+      "id": "53a8df27-a39b-4ea2-aa8e-4e9beb8cd9ec",
+      "dateAdded": "20261007",
+      "type": "github-daily",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "repo": "ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars": 54740,
+      "forks": 3141,
+      "starsAdded": 620,
+      "createdAt": "2026-10-06T16:00:02.042Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "adhd",
+          "claude-",
+          "claude-code-plugin",
+          "claude-skills",
+          "developer-tools",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Prompt优化",
+          "开发者工具",
+          "效率提升",
+          "ADHD友好"
+        ],
+        "cover": "",
+        "title": "让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测",
+        "ability": [
+          "行动优先输出",
+          "编号步骤引导",
+          "提供时间估算",
+          "过滤社交废话",
+          "降低认知负荷"
+        ],
+        "summary": "通过10条规则让 AI 编程助手从“话痨”变“效率机器”，输出答案优先、无废话的指令。",
+        "category": [
+          "AI 编程",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "开发者",
+          "ADHD人群",
+          "技术团队",
+          "编程初学者"
+        ],
+        "description": "i-have-adhd 是一个轻量级 AI 技能插件，通过 10 条规则重构 AI 输出格式，解决传统 AI 回答冗长、信息密度低的问题。它适用于 Claude、Copilot 等主流工具，能显著提升阅读效率并减少用户烦躁情绪。"
       }
     },
     {
@@ -65258,58 +65379,6 @@
       }
     },
     {
-      "id": "e66b9022-a6ed-43be-bd6b-74b5f0770842",
-      "dateAdded": "20261007",
-      "type": "github-daily",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "repo": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars": 25563,
-      "forks": 1535,
-      "starsAdded": 538,
-      "createdAt": "2026-10-07T11:00:02.130Z",
-      "metaData": {
-        "forks": "1365",
-        "stars": "23321",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "安全审计",
-          "Cloudflare",
-          "AI Agent",
-          "DevSecOps"
-        ],
-        "cover": "",
-        "title": "Cloudflare Security Audit Skill 深度评测",
-        "ability": [
-          "多智能体并行审计",
-          "对抗验证防误报",
-          "结构化漏洞报告",
-          "增量式覆盖扫描",
-          "多类攻击库支持"
-        ],
-        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
-        "category": [
-          "开发工具",
-          "网络安全",
-          "AI 编程"
-        ],
-        "suitable": [
-          "AI 编程爱好者",
-          "安全研究人员",
-          "DevSecOps 工程师",
-          "全栈开发者"
-        ],
-        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
-      }
-    },
-    {
       "id": "86d1b5c2-fa04-45f0-87fe-ce7d3c09c460",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -65317,9 +65386,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 97391,
-      "forks": 8581,
-      "starsAdded": 534,
+      "stars": 97441,
+      "forks": 8584,
+      "starsAdded": 578,
       "createdAt": "2026-10-06T16:00:02.035Z",
       "metaData": {
         "forks": "0",
@@ -65383,6 +65452,58 @@
       }
     },
     {
+      "id": "e66b9022-a6ed-43be-bd6b-74b5f0770842",
+      "dateAdded": "20261007",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 25645,
+      "forks": 1543,
+      "starsAdded": 538,
+      "createdAt": "2026-10-07T11:00:02.130Z",
+      "metaData": {
+        "forks": "1365",
+        "stars": "23321",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
       "id": "13e12615-9a3e-4b27-a707-9b29ec08d72f",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -65390,8 +65511,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 102308,
-      "forks": 10722,
+      "stars": 102397,
+      "forks": 10728,
       "starsAdded": 453,
       "createdAt": "2026-10-07T11:00:02.117Z",
       "metaData": {
@@ -65443,65 +65564,6 @@
       }
     },
     {
-      "id": "53a8df27-a39b-4ea2-aa8e-4e9beb8cd9ec",
-      "dateAdded": "20261007",
-      "type": "github-daily",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "repo": "ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars": 54668,
-      "forks": 3136,
-      "starsAdded": 326,
-      "createdAt": "2026-10-06T16:00:02.042Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "adhd",
-          "claude-",
-          "claude-code-plugin",
-          "claude-skills",
-          "developer-tools",
-          "productivity"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Prompt优化",
-          "开发者工具",
-          "效率提升",
-          "ADHD友好"
-        ],
-        "cover": "",
-        "title": "让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测",
-        "ability": [
-          "行动优先输出",
-          "编号步骤引导",
-          "提供时间估算",
-          "过滤社交废话",
-          "降低认知负荷"
-        ],
-        "summary": "通过10条规则让 AI 编程助手从“话痨”变“效率机器”，输出答案优先、无废话的指令。",
-        "category": [
-          "AI 编程",
-          "效率工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "开发者",
-          "ADHD人群",
-          "技术团队",
-          "编程初学者"
-        ],
-        "description": "i-have-adhd 是一个轻量级 AI 技能插件，通过 10 条规则重构 AI 输出格式，解决传统 AI 回答冗长、信息密度低的问题。它适用于 Claude、Copilot 等主流工具，能显著提升阅读效率并减少用户烦躁情绪。"
-      }
-    },
-    {
       "id": "91600567-734b-4294-9fac-0eb266e8300b",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -65509,8 +65571,8 @@
       "repo": "trycua/cua",
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "Rust",
-      "stars": 28546,
-      "forks": 2030,
+      "stars": 28577,
+      "forks": 2032,
       "starsAdded": 229,
       "createdAt": "2026-10-07T11:00:02.128Z",
       "metaData": {
@@ -65574,68 +65636,6 @@
       }
     },
     {
-      "id": "a9e25cdc-2147-4c77-bc97-dbc946ac533e",
-      "dateAdded": "20261007",
-      "type": "github-daily",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "repo": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars": 44393,
-      "forks": 2856,
-      "starsAdded": 228,
-      "createdAt": "2026-10-06T16:00:02.074Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "claude-code",
-          "codex",
-          "data-visualization",
-          "diagrams",
-          "drawio",
-          "mermaid",
-          "svg"
-        ],
-        "license": "MIT license",
-        "homepage": "https://cathrynlavery.github.io/diagram-design/",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
-      },
-      "summaryData": {
-        "tags": [
-          "图表生成",
-          "可视化",
-          "品牌适配",
-          "开源工具",
-          "Claude插件"
-        ],
-        "cover": "",
-        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
-        "ability": [
-          "39种图表类型生成",
-          "自动品牌配色适配",
-          "HTML+SVG零依赖输出",
-          "Mermaid/draw.io重绘",
-          "语义化设计系统"
-        ],
-        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
-        "category": [
-          "AI编程",
-          "开发工具",
-          "设计工具"
-        ],
-        "suitable": [
-          "Claude Code/Codex用户",
-          "技术文档作者",
-          "系统架构师",
-          "内容创作团队",
-          "需要高频出图的开发者"
-        ],
-        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
-      }
-    },
-    {
       "id": "d30959fe-b2f7-446c-a3ab-1b594333d9cc",
       "dateAdded": "20261007",
       "type": "github-daily",
@@ -65696,8 +65696,8 @@
       "repo": "EpicGames/raddebugger",
       "description": "A native, user-mode, multi-process, graphical debugger.",
       "language": "C",
-      "stars": 7690,
-      "forks": 373,
+      "stars": 7724,
+      "forks": 376,
       "starsAdded": 82,
       "createdAt": "2026-10-07T11:00:02.122Z",
       "metaData": {
@@ -65749,7 +65749,7 @@
       "repo": "manaflow-ai/cmux",
       "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
       "language": "Swift",
-      "stars": 27682,
+      "stars": 27715,
       "forks": 2454,
       "starsAdded": 50,
       "createdAt": "2026-10-07T11:00:02.126Z",
