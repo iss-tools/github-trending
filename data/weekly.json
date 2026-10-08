@@ -16705,64 +16705,6 @@
       }
     },
     {
-      "id": "e06bf049-4b08-4a98-896b-5dbdb9cfd251",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/vectorize-io/hindsight",
-      "repo": "vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "language": "Python",
-      "stars": 46130,
-      "forks": 5942,
-      "starsAdded": 6565,
-      "createdAt": "2026-10-04T16:00:03.673Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agentic-ai",
-          "agents",
-          "ai-memory",
-          "memory"
-        ],
-        "license": "MIT license",
-        "homepage": "https://hindsight.vectorize.io/",
-        "description": "Hindsight: Agent Memory That Learns. Contribute to vectorize-io/hindsight development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Agent Memory",
-          "开源项目",
-          "LLM",
-          "GitHub",
-          "AI Agent"
-        ],
-        "cover": "",
-        "title": "Hindsight 深度评测：LongMemEval 94.6% 的开源 Agent 记忆系统",
-        "ability": [
-          "四层仿生记忆结构：事实、经历、观察、心智模型",
-          "TEMPR 四路并行检索：语义、关键词、图谱、时序融合排序",
-          "Observation 后台自动去重消化，支持反思与自我纠错",
-          "60+ 生态集成，wrap_openai 两行代码接入现有 Agent",
-          "内置 45 种 PII 脱敏护栏，Docker/Helm 一键部署"
-        ],
-        "summary": "一个让 AI Agent 拥有可长期记忆、自我反思能力的开源记忆层，基准准确率 94.6%。",
-        "category": [
-          "AI 基础设施",
-          "开发工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "AI Agent 应用开发者",
-          "Claude Code / Cursor 等编码助手用户",
-          "企业 AI 中台与合规团队",
-          "Agent 记忆方向研究者",
-          "技术选型决策者"
-        ],
-        "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。"
-      }
-    },
-    {
       "id": "0839ffbb-fcd7-446b-a5e6-71f6cdecc0ce",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16770,9 +16712,9 @@
       "repo": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "stars": 93195,
-      "forks": 8163,
-      "starsAdded": 6454,
+      "stars": 93371,
+      "forks": 8175,
+      "starsAdded": 6912,
       "createdAt": "2026-10-04T16:00:03.776Z",
       "metaData": {
         "forks": "0",
@@ -16833,6 +16775,125 @@
       }
     },
     {
+      "id": "e06bf049-4b08-4a98-896b-5dbdb9cfd251",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "repo": "vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars": 46130,
+      "forks": 5942,
+      "starsAdded": 6565,
+      "createdAt": "2026-10-04T16:00:03.673Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "ai-memory",
+          "memory"
+        ],
+        "license": "MIT license",
+        "homepage": "https://hindsight.vectorize.io/",
+        "description": "Hindsight: Agent Memory That Learns. Contribute to vectorize-io/hindsight development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Agent Memory",
+          "开源项目",
+          "LLM",
+          "GitHub",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Hindsight 深度评测：LongMemEval 94.6% 的开源 Agent 记忆系统",
+        "ability": [
+          "四层仿生记忆结构：事实、经历、观察、心智模型",
+          "TEMPR 四路并行检索：语义、关键词、图谱、时序融合排序",
+          "Observation 后台自动去重消化，支持反思与自我纠错",
+          "60+ 生态集成，wrap_openai 两行代码接入现有 Agent",
+          "内置 45 种 PII 脱敏护栏，Docker/Helm 一键部署"
+        ],
+        "summary": "一个让 AI Agent 拥有可长期记忆、自我反思能力的开源记忆层，基准准确率 94.6%。",
+        "category": [
+          "AI 基础设施",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI Agent 应用开发者",
+          "Claude Code / Cursor 等编码助手用户",
+          "企业 AI 中台与合规团队",
+          "Agent 记忆方向研究者",
+          "技术选型决策者"
+        ],
+        "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。"
+      }
+    },
+    {
+      "id": "51c71f1e-8cf9-404d-8e2d-440e2321aab1",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "repo": "boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 10913,
+      "forks": 831,
+      "starsAdded": 6075,
+      "createdAt": "2026-10-06T12:00:03.564Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://discord.gg/BHFztBPUe",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
       "id": "ec97fe7a-fcc3-496b-9b0a-ffad1e8eb45d",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16886,28 +16947,6 @@
       }
     },
     {
-      "id": "e40b6797-1d69-4dfe-86f5-bc95272cf568",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "repo": "NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "language": "Rust",
-      "stars": 15285,
-      "forks": 1724,
-      "starsAdded": 5228,
-      "createdAt": "2026-10-04T16:00:03.792Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/openshell/latest/",
-        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
-      },
-      "summaryData": null
-    },
-    {
       "id": "1da11db3-822e-42f1-aff6-9ccd14362eeb",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16958,6 +16997,56 @@
           "想提升 AI 产出界面质感的普通用户"
         ],
         "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
+      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 7066,
+      "forks": 921,
+      "starsAdded": 4906,
+      "createdAt": "2026-10-06T12:00:03.562Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.duarte-santos.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
       }
     },
     {
@@ -17041,9 +17130,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 58504,
-      "forks": 5207,
-      "starsAdded": 3614,
+      "stars": 58616,
+      "forks": 5217,
+      "starsAdded": 3908,
       "createdAt": "2026-10-04T16:00:03.724Z",
       "metaData": {
         "forks": "0",
@@ -17099,6 +17188,28 @@
       }
     },
     {
+      "id": "e40b6797-1d69-4dfe-86f5-bc95272cf568",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 15324,
+      "forks": 1729,
+      "starsAdded": 3690,
+      "createdAt": "2026-10-04T16:00:03.792Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
+      },
+      "summaryData": null
+    },
+    {
       "id": "615dff19-969b-46a8-a290-af28cd47bfa3",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17106,9 +17217,9 @@
       "repo": "mvschwarz/openrig",
       "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars": 5760,
-      "forks": 428,
-      "starsAdded": 3327,
+      "stars": 5821,
+      "forks": 429,
+      "starsAdded": 2912,
       "createdAt": "2026-10-04T16:00:03.796Z",
       "metaData": {
         "forks": "0",
@@ -17164,117 +17275,6 @@
       }
     },
     {
-      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 6840,
-      "forks": 900,
-      "starsAdded": 3318,
-      "createdAt": "2026-10-06T12:00:03.562Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.duarte-santos.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
-      }
-    },
-    {
-      "id": "51c71f1e-8cf9-404d-8e2d-440e2321aab1",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/boykopovar/AnyPS5",
-      "repo": "boykopovar/AnyPS5",
-      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
-      "language": "C++",
-      "stars": 10343,
-      "forks": 785,
-      "starsAdded": 3073,
-      "createdAt": "2026-10-06T12:00:03.564Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "anyps5",
-          "dynamic-library",
-          "game-porting",
-          "ps5",
-          "ps5-tools",
-          "spir-v",
-          "vulkan"
-        ],
-        "license": "GPL-2.0 license",
-        "homepage": "https://discord.gg/BHFztBPUe",
-        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
-      },
-      "summaryData": {
-        "tags": [
-          "PS5",
-          "模拟器",
-          "Relinker",
-          "Vulkan",
-          "开源"
-        ],
-        "cover": "",
-        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
-        "ability": [
-          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
-          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
-          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
-          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
-          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
-        ],
-        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
-        "category": [
-          "开源项目",
-          "开发工具",
-          "游戏兼容层"
-        ],
-        "suitable": [
-          "C++ 系统级开发者",
-          "逆向工程与模拟圈爱好者",
-          "关注 PS5 兼容层的极客玩家",
-          "游戏保存（Preservation）研究者",
-          "想学习底层架构的学生"
-        ],
-        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
-      }
-    },
-    {
       "id": "ac2f32b5-a4fb-460e-aaad-84ae360b5139",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17282,9 +17282,9 @@
       "repo": "pablostanley/yoinks",
       "description": "yoink any video from your terminal. no shady ads.",
       "language": "TypeScript",
-      "stars": 5081,
-      "forks": 439,
-      "starsAdded": 2947,
+      "stars": 5138,
+      "forks": 448,
+      "starsAdded": 2732,
       "createdAt": "2026-10-04T16:00:03.794Z",
       "metaData": {
         "forks": "0",
@@ -17325,6 +17325,79 @@
           "对 Ink/TUI 技术方案感兴趣的开发者"
         ],
         "description": "yoinks 是设计师 Pablo Stanley 开发的开源终端视频下载器，用 Ink（React for Terminal）打造精美全屏界面，底层调用 yt-dlp 引擎，覆盖 1800+ 站点。无需 Python 环境，粘链接即可下载。但播放列表批量下载、npm 正式发布等仍在路线图中，且为个人维护项目，需留意其功能边界。"
+      }
+    },
+    {
+      "id": "4a522f68-3e1e-4908-8a71-aaaa431dbe58",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 97797,
+      "forks": 8607,
+      "starsAdded": 2607,
+      "createdAt": "2026-10-06T12:00:03.556Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
       }
     },
     {
@@ -17510,79 +17583,6 @@
       }
     },
     {
-      "id": "4a522f68-3e1e-4908-8a71-aaaa431dbe58",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "repo": "thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "language": "TypeScript",
-      "stars": 97680,
-      "forks": 8601,
-      "starsAdded": 2104,
-      "createdAt": "2026-10-06T12:00:03.556Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-agents",
-          "ai-memory",
-          "anthropic",
-          "artificial-intelligence",
-          "chromadb",
-          "claude",
-          "claude-agent-sdk",
-          "claude-agents",
-          "claude-code",
-          "claude-code-plugin",
-          "claude-skills",
-          "embeddings",
-          "long-term-memory",
-          "mem0",
-          "memory-engine",
-          "openmemory",
-          "rag",
-          "sqlite",
-          "supermemory"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://claude-mem.ai",
-        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Claude",
-          "记忆管理",
-          "知识库",
-          "上下文增强"
-        ],
-        "cover": "",
-        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
-        "ability": [
-          "持久化记忆存储",
-          "自动上下文注入",
-          "语义化搜索",
-          "隐私数据保护",
-          "多模式与多语言支持"
-        ],
-        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "AI 编程重度用户",
-          "Claude Code 开发者",
-          "技术团队",
-          "长周期项目维护者"
-        ],
-        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
-      }
-    },
-    {
       "id": "9225ab4f-deec-40e2-808c-7c1086b03eef",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17646,78 +17646,6 @@
           "RAG 技术研究者"
         ],
         "description": "PageIndex 是 Vectify AI 开源（MIT 协议）的下一代 RAG 框架，核心理念是抛弃 chunking + embedding 的传统范式，用一棵 LLM 可直接导航的文档结构树取代向量数据库。在金融文档基准 FinanceBench 上达到 98.7% 准确率，特别适合财报、合同等技术手册等结构化长文档，但查询延迟和 LLM 调用成本较高，多文档扩展能力仍在演进。"
-      }
-    },
-    {
-      "id": "e3a3f629-337c-4b71-b385-f218848ee1f3",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/HunxByts/GhostTrack",
-      "repo": "HunxByts/GhostTrack",
-      "description": "Useful tool to track location or mobile number",
-      "language": "Python",
-      "stars": 17378,
-      "forks": 2355,
-      "starsAdded": 2017,
-      "createdAt": "2026-10-04T16:00:03.797Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "cybersecurity",
-          "fyp",
-          "hacking",
-          "hacking-tool",
-          "indonesia",
-          "information",
-          "information-gathering",
-          "ip-geolocation",
-          "linux",
-          "osint",
-          "osint-python",
-          "osint-tool",
-          "pentesting",
-          "phone-number",
-          "python",
-          "python-hacking",
-          "termux",
-          "termux-hacks",
-          "termux-tool"
-        ],
-        "license": "",
-        "homepage": "",
-        "description": "Useful tool to track location or mobile number. Contribute to HunxByts/GhostTrack development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "OSINT",
-          "开源项目",
-          "网络安全",
-          "Python",
-          "信息收集"
-        ],
-        "cover": "",
-        "title": "GhostTrack 深度评测：8 个月狂揽 16k Star 的 OSINT 入门神器",
-        "ability": [
-          "IP 地理位置与 ISP 信息查询",
-          "手机号归属地与运营商解析",
-          "25+ 社媒平台用户名批量嗅探",
-          "菜单式极简终端交互，5 分钟上手",
-          "可与 Seeker 联动进行深度侦察"
-        ],
-        "summary": "一款把 IP 定位、手机号解析、社媒用户名嗅探三合一的 Python 命令行 OSINT 入门工具。",
-        "category": [
-          "开发工具",
-          "网络安全"
-        ],
-        "suitable": [
-          "OSINT 初学者",
-          "CTF 选手与红队入门者",
-          "安全意识培训讲师",
-          "网络安全爱好者",
-          "想了解自身信息暴露面的普通用户"
-        ],
-        "description": "GhostTrack 是印尼开发者 HunxByts 打造的开源 Python 工具，仅 300 行代码就把 IP 查询、手机号解析、社媒用户名嗅探三大公开信息查询装进一个终端菜单。它是 OSINT 入门教学和 CTF 侦察的轻量利器，但本质是 API 包装器，定位精度有限，误报率高，且无开源许可证，不适合专业生产环境，使用时需严守法律红线。"
       }
     },
     {
@@ -17835,6 +17763,78 @@
       }
     },
     {
+      "id": "e3a3f629-337c-4b71-b385-f218848ee1f3",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/HunxByts/GhostTrack",
+      "repo": "HunxByts/GhostTrack",
+      "description": "Useful tool to track location or mobile number",
+      "language": "Python",
+      "stars": 17416,
+      "forks": 2357,
+      "starsAdded": 1534,
+      "createdAt": "2026-10-04T16:00:03.797Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cybersecurity",
+          "fyp",
+          "hacking",
+          "hacking-tool",
+          "indonesia",
+          "information",
+          "information-gathering",
+          "ip-geolocation",
+          "linux",
+          "osint",
+          "osint-python",
+          "osint-tool",
+          "pentesting",
+          "phone-number",
+          "python",
+          "python-hacking",
+          "termux",
+          "termux-hacks",
+          "termux-tool"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Useful tool to track location or mobile number. Contribute to HunxByts/GhostTrack development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "OSINT",
+          "开源项目",
+          "网络安全",
+          "Python",
+          "信息收集"
+        ],
+        "cover": "",
+        "title": "GhostTrack 深度评测：8 个月狂揽 16k Star 的 OSINT 入门神器",
+        "ability": [
+          "IP 地理位置与 ISP 信息查询",
+          "手机号归属地与运营商解析",
+          "25+ 社媒平台用户名批量嗅探",
+          "菜单式极简终端交互，5 分钟上手",
+          "可与 Seeker 联动进行深度侦察"
+        ],
+        "summary": "一款把 IP 定位、手机号解析、社媒用户名嗅探三合一的 Python 命令行 OSINT 入门工具。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "OSINT 初学者",
+          "CTF 选手与红队入门者",
+          "安全意识培训讲师",
+          "网络安全爱好者",
+          "想了解自身信息暴露面的普通用户"
+        ],
+        "description": "GhostTrack 是印尼开发者 HunxByts 打造的开源 Python 工具，仅 300 行代码就把 IP 查询、手机号解析、社媒用户名嗅探三大公开信息查询装进一个终端菜单。它是 OSINT 入门教学和 CTF 侦察的轻量利器，但本质是 API 包装器，定位精度有限，误报率高，且无开源许可证，不适合专业生产环境，使用时需严守法律红线。"
+      }
+    },
+    {
       "id": "a96d94ae-1288-4734-bee1-1cc3fe86e35c",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17902,9 +17902,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 10250,
-      "forks": 972,
-      "starsAdded": 1106,
+      "stars": 10271,
+      "forks": 974,
+      "starsAdded": 1109,
       "createdAt": "2026-10-05T11:00:03.978Z",
       "metaData": {
         "forks": "0",
@@ -18280,59 +18280,6 @@
       }
     },
     {
-      "id": "a21724e9-1dcc-41cf-8990-91c4d06516c0",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/tile-ai/tilelang",
-      "repo": "tile-ai/tilelang",
-      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
-      "language": "Python",
-      "stars": 8471,
-      "forks": 856,
-      "starsAdded": 675,
-      "createdAt": "2026-10-04T16:00:03.784Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "License",
-        "homepage": "https://tilelang.com/",
-        "description": " Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels - tile-ai/tilelang"
-      },
-      "summaryData": {
-        "tags": [
-          "GPU",
-          "Kernel 编程",
-          "TVM",
-          "高性能计算",
-          "编译器"
-        ],
-        "cover": "",
-        "title": "TileLang 深度评测：用 80 行 Python 写出匹敌 CUTLASS 的 GPU 高性能算子",
-        "ability": [
-          "用简洁 Python DSL 编写高性能 GPU Kernel，保留 Triton 的易用性",
-          "显式控制共享内存、寄存器等内存层级，兼顾可读性与极致性能",
-          "自动 Layout 推断与软件流水线，80 行代码实现 FlashMLA",
-          "多后端支持：NVIDIA、AMD、Apple Metal、昇腾、摩尔线程等",
-          "内置 autotune 自动调优、LSP 代码提示与 IR 可视化调试工具"
-        ],
-        "summary": "TileLang 是北大与微软联合开源的 GPU Kernel 编程语言，用 Python 语法写出接近 CUTLASS 手写性能的算子。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "大模型推理框架开发者（vLLM/SGLang 等）",
-          "AI 框架算子研发工程师",
-          "量化/反量化 Kernel 研究者",
-          "国产算力等非 NVIDIA 平台开发者",
-          "HPC 与体系结构研究者"
-        ],
-        "description": "TileLang 是基于 TVM 的 Tile 级 Python DSL，由北京大学与微软研究院联合打造。它既保留 Triton 的简洁，又把内存布局、流水线等底层控制权交还开发者，80 行 Python 即可实现匹敌手写 CUTLASS 的 FlashMLA，在 H100 上比 Triton 快 4~10 倍，已被 SGLang 等生产框架落地采用。"
-      }
-    },
-    {
       "id": "6f9bc7e7-66ad-4f40-9842-1cab84c9204d",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -18382,6 +18329,59 @@
           "组织与流程管理者（PMO/内控）"
         ],
         "description": "Cloudflare OS 不是传统操作系统，而是为企业提供的 AI Agent 工作台与应用运行环境。它支持通过对话生成可协作的全栈应用，并通过沙箱、能力型安全层和异步审批机制保障安全，适合需要高度定制化与合规性的企业使用。"
+      }
+    },
+    {
+      "id": "a21724e9-1dcc-41cf-8990-91c4d06516c0",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/tile-ai/tilelang",
+      "repo": "tile-ai/tilelang",
+      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+      "language": "Python",
+      "stars": 8483,
+      "forks": 856,
+      "starsAdded": 639,
+      "createdAt": "2026-10-04T16:00:03.784Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://tilelang.com/",
+        "description": " Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels - tile-ai/tilelang"
+      },
+      "summaryData": {
+        "tags": [
+          "GPU",
+          "Kernel 编程",
+          "TVM",
+          "高性能计算",
+          "编译器"
+        ],
+        "cover": "",
+        "title": "TileLang 深度评测：用 80 行 Python 写出匹敌 CUTLASS 的 GPU 高性能算子",
+        "ability": [
+          "用简洁 Python DSL 编写高性能 GPU Kernel，保留 Triton 的易用性",
+          "显式控制共享内存、寄存器等内存层级，兼顾可读性与极致性能",
+          "自动 Layout 推断与软件流水线，80 行代码实现 FlashMLA",
+          "多后端支持：NVIDIA、AMD、Apple Metal、昇腾、摩尔线程等",
+          "内置 autotune 自动调优、LSP 代码提示与 IR 可视化调试工具"
+        ],
+        "summary": "TileLang 是北大与微软联合开源的 GPU Kernel 编程语言，用 Python 语法写出接近 CUTLASS 手写性能的算子。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "大模型推理框架开发者（vLLM/SGLang 等）",
+          "AI 框架算子研发工程师",
+          "量化/反量化 Kernel 研究者",
+          "国产算力等非 NVIDIA 平台开发者",
+          "HPC 与体系结构研究者"
+        ],
+        "description": "TileLang 是基于 TVM 的 Tile 级 Python DSL，由北京大学与微软研究院联合打造。它既保留 Triton 的简洁，又把内存布局、流水线等底层控制权交还开发者，80 行 Python 即可实现匹敌手写 CUTLASS 的 FlashMLA，在 H100 上比 Triton 快 4~10 倍，已被 SGLang 等生产框架落地采用。"
       }
     },
     {
