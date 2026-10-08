@@ -65823,9 +65823,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 14725,
-      "forks": 1542,
-      "starsAdded": 4666,
+      "stars": 15170,
+      "forks": 1576,
+      "starsAdded": 4655,
       "createdAt": "2026-10-07T16:00:01.939Z",
       "metaData": {
         "forks": "0",
@@ -65897,9 +65897,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 10343,
-      "forks": 785,
-      "starsAdded": 2725,
+      "stars": 10618,
+      "forks": 801,
+      "starsAdded": 2716,
       "createdAt": "2026-10-07T16:00:01.968Z",
       "metaData": {
         "forks": "0",
@@ -65958,9 +65958,9 @@
       "repo": "DuarteSantos8/openGym",
       "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
       "language": "JavaScript",
-      "stars": 6840,
-      "forks": 900,
-      "starsAdded": 1494,
+      "stars": 6906,
+      "forks": 907,
+      "starsAdded": 1493,
       "createdAt": "2026-10-07T16:00:02.006Z",
       "metaData": {
         "forks": "0",
@@ -66008,9 +66008,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 279519,
-      "forks": 23419,
-      "starsAdded": 1406,
+      "stars": 279606,
+      "forks": 23429,
+      "starsAdded": 1403,
       "createdAt": "2026-10-07T16:00:01.955Z",
       "metaData": {
         "forks": "0",
@@ -66059,9 +66059,9 @@
       "repo": "tester-army/e2e",
       "description": "Next generation e2e testing framework for web and mobile apps.",
       "language": "TypeScript",
-      "stars": 7379,
-      "forks": 332,
-      "starsAdded": 1391,
+      "stars": 7451,
+      "forks": 340,
+      "starsAdded": 1390,
       "createdAt": "2026-10-07T16:00:02.002Z",
       "metaData": {
         "forks": "0",
@@ -66120,9 +66120,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 44913,
-      "forks": 2883,
-      "starsAdded": 828,
+      "stars": 44974,
+      "forks": 2888,
+      "starsAdded": 825,
       "createdAt": "2026-10-07T16:00:01.984Z",
       "metaData": {
         "forks": "0",
@@ -66182,9 +66182,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 102761,
-      "forks": 10766,
-      "starsAdded": 693,
+      "stars": 102817,
+      "forks": 10771,
+      "starsAdded": 677,
       "createdAt": "2026-10-07T16:00:01.987Z",
       "metaData": {
         "forks": "0",
@@ -66242,9 +66242,9 @@
       "repo": "ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 55065,
-      "forks": 3158,
-      "starsAdded": 620,
+      "stars": 55121,
+      "forks": 3160,
+      "starsAdded": 619,
       "createdAt": "2026-10-07T16:00:01.977Z",
       "metaData": {
         "forks": "0",
@@ -66294,58 +66294,6 @@
       }
     },
     {
-      "id": "b35b3655-6117-4e87-9617-50b98e33bda5",
-      "dateAdded": "20261008",
-      "type": "github-daily",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "repo": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars": 26006,
-      "forks": 1564,
-      "starsAdded": 617,
-      "createdAt": "2026-10-07T16:00:01.999Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "安全审计",
-          "Cloudflare",
-          "AI Agent",
-          "DevSecOps"
-        ],
-        "cover": "",
-        "title": "Cloudflare Security Audit Skill 深度评测",
-        "ability": [
-          "多智能体并行审计",
-          "对抗验证防误报",
-          "结构化漏洞报告",
-          "增量式覆盖扫描",
-          "多类攻击库支持"
-        ],
-        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
-        "category": [
-          "开发工具",
-          "网络安全",
-          "AI 编程"
-        ],
-        "suitable": [
-          "AI 编程爱好者",
-          "安全研究人员",
-          "DevSecOps 工程师",
-          "全栈开发者"
-        ],
-        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
-      }
-    },
-    {
       "id": "817fa28b-48a6-43c1-b25d-2f6678cd37e9",
       "dateAdded": "20261008",
       "type": "github-daily",
@@ -66353,8 +66301,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 97680,
-      "forks": 8601,
+      "stars": 97725,
+      "forks": 8605,
       "starsAdded": 578,
       "createdAt": "2026-10-07T16:00:01.992Z",
       "metaData": {
@@ -66419,6 +66367,58 @@
       }
     },
     {
+      "id": "b35b3655-6117-4e87-9617-50b98e33bda5",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 26056,
+      "forks": 1564,
+      "starsAdded": 576,
+      "createdAt": "2026-10-07T16:00:01.999Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
       "id": "b0cd699b-9da0-4d26-83cc-b026047d6859",
       "dateAdded": "20261008",
       "type": "github-daily",
@@ -66426,9 +66426,9 @@
       "repo": "trycua/cua",
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "Rust",
-      "stars": 28721,
-      "forks": 2038,
-      "starsAdded": 229,
+      "stars": 28751,
+      "forks": 2039,
+      "starsAdded": 228,
       "createdAt": "2026-10-07T16:00:01.997Z",
       "metaData": {
         "forks": "0",
@@ -66491,6 +66491,59 @@
       }
     },
     {
+      "id": "fef691bb-e4c3-4cc1-b082-2a3c559c8bf7",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 7860,
+      "forks": 382,
+      "starsAdded": 90,
+      "createdAt": "2026-10-07T16:00:01.989Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      }
+    },
+    {
       "id": "8fff194c-6c99-47d4-868b-1d8e6fb10f40",
       "dateAdded": "20261008",
       "type": "github-daily",
@@ -66498,9 +66551,9 @@
       "repo": "manaflow-ai/cmux",
       "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
       "language": "Swift",
-      "stars": 27822,
-      "forks": 2460,
-      "starsAdded": 96,
+      "stars": 27841,
+      "forks": 2461,
+      "starsAdded": 44,
       "createdAt": "2026-10-07T16:00:01.994Z",
       "metaData": {
         "forks": "0",
@@ -66560,59 +66613,6 @@
           "想借鉴产品设计理念的开发者工具从业者"
         ],
         "description": "cmux 由 Manaflow 团队开源，基于 Ghostty 渲染引擎（GPU 加速）用 Swift 原生构建，专为并行调度多个 AI Coding Agent 设计。它不重造 Agent 也不做编排器，只提供可视化侧边栏、语义化通知环和开放的通知协议，把组合自由留给用户，项目上线 8 个月收获 27k stars。"
-      }
-    },
-    {
-      "id": "fef691bb-e4c3-4cc1-b082-2a3c559c8bf7",
-      "dateAdded": "20261008",
-      "type": "github-daily",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "repo": "EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars": 7843,
-      "forks": 381,
-      "starsAdded": 82,
-      "createdAt": "2026-10-07T16:00:01.989Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
-      },
-      "summaryData": {
-        "tags": [
-          "调试器",
-          "C/C++",
-          "开源",
-          "游戏开发",
-          "性能优化"
-        ],
-        "cover": "",
-        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
-        "ability": [
-          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
-          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
-          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
-          "原生支持多进程与子进程同时调试",
-          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
-        ],
-        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
-        "category": [
-          "开发工具",
-          "游戏开发",
-          "开源项目"
-        ],
-        "suitable": [
-          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
-          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
-          "想研读生产级调试器源码的工具链爱好者",
-          "JAI、Odin 等小众语言用户",
-          "关注软件性能工程的进阶学习者"
-        ],
-        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
       }
     }
   ]
