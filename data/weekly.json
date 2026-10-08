@@ -3077,8 +3077,8 @@
       "starsAdded": 6761,
       "createdAt": "2026-09-03T11:00:04.452Z",
       "metaData": {
-        "forks": "6043",
-        "stars": "54034",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "audiobook",
@@ -6144,8 +6144,8 @@
       "starsAdded": 7916,
       "createdAt": "2026-09-06T18:00:04.795Z",
       "metaData": {
-        "forks": "6043",
-        "stars": "54034",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "audiobook",
@@ -13927,8 +13927,8 @@
       "starsAdded": 16775,
       "createdAt": "2026-09-28T14:00:03.835Z",
       "metaData": {
-        "forks": "6043",
-        "stars": "54034",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "audiobook",
@@ -16580,8 +16580,8 @@
       "starsAdded": 12036,
       "createdAt": "2026-10-04T16:00:03.705Z",
       "metaData": {
-        "forks": "6043",
-        "stars": "54034",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "audiobook",
@@ -16712,8 +16712,8 @@
       "repo": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "stars": 93708,
-      "forks": 8198,
+      "stars": 93803,
+      "forks": 8203,
       "starsAdded": 6912,
       "createdAt": "2026-10-04T16:00:03.776Z",
       "metaData": {
@@ -16772,6 +16772,57 @@
           "开发者与极客"
         ],
         "description": "Agent Reach 是一套开源脚手架，通过统一选型和路由，让 AI Agent 轻松具备浏览网页、读取视频字幕、抓取社交媒体等能力，大幅降低接入门槛。"
+      }
+    },
+    {
+      "id": "eddc9d04-bbea-487f-a3d8-334fda2eafc9",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 280460,
+      "forks": 23498,
+      "starsAdded": 6869,
+      "createdAt": "2026-10-08T11:00:03.332Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
       }
     },
     {
@@ -16840,8 +16891,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 12091,
-      "forks": 922,
+      "stars": 12569,
+      "forks": 954,
       "starsAdded": 6075,
       "createdAt": "2026-10-06T12:00:03.564Z",
       "metaData": {
@@ -17007,8 +17058,8 @@
       "repo": "DuarteSantos8/openGym",
       "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
       "language": "JavaScript",
-      "stars": 7515,
-      "forks": 970,
+      "stars": 7617,
+      "forks": 976,
       "starsAdded": 4906,
       "createdAt": "2026-10-06T12:00:03.562Z",
       "metaData": {
@@ -17130,8 +17181,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 58812,
-      "forks": 5233,
+      "stars": 58877,
+      "forks": 5236,
       "starsAdded": 3908,
       "createdAt": "2026-10-04T16:00:03.724Z",
       "metaData": {
@@ -17195,8 +17246,8 @@
       "repo": "NVIDIA/OpenShell",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars": 15386,
-      "forks": 1736,
+      "stars": 15399,
+      "forks": 1737,
       "starsAdded": 3690,
       "createdAt": "2026-10-04T16:00:03.792Z",
       "metaData": {
@@ -17217,8 +17268,8 @@
       "repo": "mvschwarz/openrig",
       "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars": 5934,
-      "forks": 435,
+      "stars": 5974,
+      "forks": 438,
       "starsAdded": 2912,
       "createdAt": "2026-10-04T16:00:03.796Z",
       "metaData": {
@@ -17282,8 +17333,8 @@
       "repo": "pablostanley/yoinks",
       "description": "yoink any video from your terminal. no shady ads.",
       "language": "TypeScript",
-      "stars": 5225,
-      "forks": 453,
+      "stars": 5249,
+      "forks": 455,
       "starsAdded": 2732,
       "createdAt": "2026-10-04T16:00:03.794Z",
       "metaData": {
@@ -17335,8 +17386,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 97968,
-      "forks": 8615,
+      "stars": 98029,
+      "forks": 8616,
       "starsAdded": 2607,
       "createdAt": "2026-10-06T12:00:03.556Z",
       "metaData": {
@@ -17649,6 +17700,69 @@
       }
     },
     {
+      "id": "ff8bdc2c-bc85-40d5-9008-d71826be78ad",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 18351,
+      "forks": 1823,
+      "starsAdded": 1800,
+      "createdAt": "2026-10-08T11:00:03.346Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
       "id": "3ed5f6cf-8664-48f1-af12-ea59de719253",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17770,7 +17884,7 @@
       "repo": "HunxByts/GhostTrack",
       "description": "Useful tool to track location or mobile number",
       "language": "Python",
-      "stars": 17494,
+      "stars": 17504,
       "forks": 2362,
       "starsAdded": 1534,
       "createdAt": "2026-10-04T16:00:03.797Z",
@@ -17902,7 +18016,7 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 10306,
+      "stars": 10312,
       "forks": 979,
       "starsAdded": 1109,
       "createdAt": "2026-10-05T11:00:03.978Z",
@@ -18339,8 +18453,8 @@
       "repo": "tile-ai/tilelang",
       "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
       "language": "Python",
-      "stars": 8509,
-      "forks": 859,
+      "stars": 8512,
+      "forks": 862,
       "starsAdded": 639,
       "createdAt": "2026-10-04T16:00:03.784Z",
       "metaData": {
@@ -18450,6 +18564,59 @@
           "React 技术栈的全栈工程师"
         ],
         "description": "Next.js 是 Vercel 主导的 React 全栈框架，拥有 14 万+ GitHub Stars，被 Netflix、TikTok、Notion 等用于生产。它通过 App Router、RSC、Server Actions 等能力让一个项目搞定前端+后端+API+部署，学习曲线陡峭但生态最大、招聘容易。适合全栈应用，纯静态站可考虑 Astro 等更轻方案。"
+      }
+    },
+    {
+      "id": "b7de60de-63f7-4286-86ae-d2b13fffe384",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 7977,
+      "forks": 389,
+      "starsAdded": 257,
+      "createdAt": "2026-10-08T11:00:03.325Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
       }
     }
   ]

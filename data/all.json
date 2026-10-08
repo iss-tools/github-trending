@@ -1,6 +1,65 @@
 {
   "all": [
     {
+      "id": "f75d48df-8823-4ae6-a32c-e8d011a223a0",
+      "url": "https://github.com/storytold/artcraft",
+      "domain": "github.com",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-08T11:04:40.751Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "License",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      },
+      "type": "project",
+      "dateAdded": "20261008"
+    },
+    {
       "id": "cabe1e9f-e384-4a6a-b642-5c21b45b0fda",
       "url": "https://github.com/spotify/portal-ai-plugins",
       "domain": "github.com",
@@ -10196,8 +10255,8 @@
       "forks": 0,
       "createdAt": "2026-09-09T06:05:27.141Z",
       "metaData": {
-        "forks": "3518",
-        "stars": "19153",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "https://pagefy-blush.vercel.app/system-design/system-design-interview-by-alex-xu",
@@ -14327,8 +14386,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T11:13:56.525Z",
       "metaData": {
-        "forks": "6043",
-        "stars": "54034",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "audiobook",
