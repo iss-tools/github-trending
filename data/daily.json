@@ -63586,24 +63586,24 @@
         "stars": "0",
         "topics": [
           "agent-skills",
-          "ai-agent-tools",
           "ai-agents",
           "binary-analysis",
+          "claude-code",
           "cli",
-          "coding-agents",
+          "codex",
           "cordis",
           "ctf",
           "decompiler",
+          "developer-tools",
           "disassembler",
           "dsh",
           "dsh-plugin",
           "ghidra",
           "hopper",
+          "llm",
           "mcp",
-          "mcp-server",
           "model-context-protocol",
           "reverse-engineering",
-          "reverse-engineering-tools",
           "static-analysis"
         ],
         "license": "MIT license",
@@ -64808,24 +64808,24 @@
         "stars": "0",
         "topics": [
           "agent-skills",
-          "ai-agent-tools",
           "ai-agents",
           "binary-analysis",
+          "claude-code",
           "cli",
-          "coding-agents",
+          "codex",
           "cordis",
           "ctf",
           "decompiler",
+          "developer-tools",
           "disassembler",
           "dsh",
           "dsh-plugin",
           "ghidra",
           "hopper",
+          "llm",
           "mcp",
-          "mcp-server",
           "model-context-protocol",
           "reverse-engineering",
-          "reverse-engineering-tools",
           "static-analysis"
         ],
         "license": "MIT license",
@@ -65823,33 +65823,33 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 18995,
-      "forks": 1995,
-      "starsAdded": 4655,
+      "stars": 19550,
+      "forks": 2058,
+      "starsAdded": 7744,
       "createdAt": "2026-10-07T16:00:01.939Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
           "agent-skills",
-          "ai-agent-tools",
           "ai-agents",
           "binary-analysis",
+          "claude-code",
           "cli",
-          "coding-agents",
+          "codex",
           "cordis",
           "ctf",
           "decompiler",
+          "developer-tools",
           "disassembler",
           "dsh",
           "dsh-plugin",
           "ghidra",
           "hopper",
+          "llm",
           "mcp",
-          "mcp-server",
           "model-context-protocol",
           "reverse-engineering",
-          "reverse-engineering-tools",
           "static-analysis"
         ],
         "license": "MIT license",
@@ -65897,9 +65897,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 12568,
-      "forks": 954,
-      "starsAdded": 2716,
+      "stars": 13105,
+      "forks": 999,
+      "starsAdded": 4640,
       "createdAt": "2026-10-07T16:00:01.968Z",
       "metaData": {
         "forks": "0",
@@ -65948,6 +65948,57 @@
           "想学习底层架构的学生"
         ],
         "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
+      "id": "15271af9-48aa-4701-bdbf-84871ea5973d",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 280617,
+      "forks": 23504,
+      "starsAdded": 1770,
+      "createdAt": "2026-10-07T16:00:01.955Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
       }
     },
     {
@@ -66008,8 +66059,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 5851,
-      "forks": 759,
+      "stars": 6169,
+      "forks": 806,
       "starsAdded": 1465,
       "createdAt": "2026-10-08T11:00:01.871Z",
       "metaData": {
@@ -66057,57 +66108,6 @@
           "Rust 开发者"
         ],
         "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
-      }
-    },
-    {
-      "id": "15271af9-48aa-4701-bdbf-84871ea5973d",
-      "dateAdded": "20261008",
-      "type": "github-daily",
-      "url": "https://github.com/mattpocock/skills",
-      "repo": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 280460,
-      "forks": 23498,
-      "starsAdded": 1403,
-      "createdAt": "2026-10-07T16:00:01.955Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://aihero.dev/skills",
-        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "GitHub",
-          "AI 技能",
-          "TDD",
-          "工作流"
-        ],
-        "cover": "",
-        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
-        "ability": [
-          "需求精准对齐",
-          "测试驱动开发 (TDD)",
-          "生成技术规范与工单",
-          "代码架构优化",
-          "系统化Bug诊断"
-        ],
-        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
-        "category": [
-          "AI 编程",
-          "开发者工具"
-        ],
-        "suitable": [
-          "追求代码质量的软件工程师",
-          "技术团队负责人",
-          "独立开发者",
-          "AI 编程工具深度用户"
-        ],
-        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
       }
     },
     {
@@ -66179,9 +66179,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 45537,
-      "forks": 2917,
-      "starsAdded": 825,
+      "stars": 45646,
+      "forks": 2923,
+      "starsAdded": 1163,
       "createdAt": "2026-10-07T16:00:01.984Z",
       "metaData": {
         "forks": "0",
@@ -66241,8 +66241,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 27249,
-      "forks": 3182,
+      "stars": 27278,
+      "forks": 3183,
       "starsAdded": 766,
       "createdAt": "2026-10-08T11:00:01.867Z",
       "metaData": {
@@ -66347,65 +66347,6 @@
       }
     },
     {
-      "id": "13885d7f-ccad-489d-957a-18328effa475",
-      "dateAdded": "20261008",
-      "type": "github-daily",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "repo": "ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars": 55544,
-      "forks": 3170,
-      "starsAdded": 619,
-      "createdAt": "2026-10-07T16:00:01.977Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "adhd",
-          "claude-",
-          "claude-code-plugin",
-          "claude-skills",
-          "developer-tools",
-          "productivity"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Prompt优化",
-          "开发者工具",
-          "效率提升",
-          "ADHD友好"
-        ],
-        "cover": "",
-        "title": "让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测",
-        "ability": [
-          "行动优先输出",
-          "编号步骤引导",
-          "提供时间估算",
-          "过滤社交废话",
-          "降低认知负荷"
-        ],
-        "summary": "通过10条规则让 AI 编程助手从“话痨”变“效率机器”，输出答案优先、无废话的指令。",
-        "category": [
-          "AI 编程",
-          "效率工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "开发者",
-          "ADHD人群",
-          "技术团队",
-          "编程初学者"
-        ],
-        "description": "i-have-adhd 是一个轻量级 AI 技能插件，通过 10 条规则重构 AI 输出格式，解决传统 AI 回答冗长、信息密度低的问题。它适用于 Claude、Copilot 等主流工具，能显著提升阅读效率并减少用户烦躁情绪。"
-      }
-    },
-    {
       "id": "817fa28b-48a6-43c1-b25d-2f6678cd37e9",
       "dateAdded": "20261008",
       "type": "github-daily",
@@ -66413,9 +66354,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 98029,
-      "forks": 8616,
-      "starsAdded": 578,
+      "stars": 98097,
+      "forks": 8620,
+      "starsAdded": 662,
       "createdAt": "2026-10-07T16:00:01.992Z",
       "metaData": {
         "forks": "0",
@@ -66479,6 +66420,65 @@
       }
     },
     {
+      "id": "13885d7f-ccad-489d-957a-18328effa475",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "repo": "ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars": 55544,
+      "forks": 3170,
+      "starsAdded": 619,
+      "createdAt": "2026-10-07T16:00:01.977Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "adhd",
+          "claude-",
+          "claude-code-plugin",
+          "claude-skills",
+          "developer-tools",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Prompt优化",
+          "开发者工具",
+          "效率提升",
+          "ADHD友好"
+        ],
+        "cover": "",
+        "title": "让 AI 说话“不弯弯绕绕”的魔法：i-have-adhd 项目评测",
+        "ability": [
+          "行动优先输出",
+          "编号步骤引导",
+          "提供时间估算",
+          "过滤社交废话",
+          "降低认知负荷"
+        ],
+        "summary": "通过10条规则让 AI 编程助手从“话痨”变“效率机器”，输出答案优先、无废话的指令。",
+        "category": [
+          "AI 编程",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "开发者",
+          "ADHD人群",
+          "技术团队",
+          "编程初学者"
+        ],
+        "description": "i-have-adhd 是一个轻量级 AI 技能插件，通过 10 条规则重构 AI 输出格式，解决传统 AI 回答冗长、信息密度低的问题。它适用于 Claude、Copilot 等主流工具，能显著提升阅读效率并减少用户烦躁情绪。"
+      }
+    },
+    {
       "id": "b35b3655-6117-4e87-9617-50b98e33bda5",
       "dateAdded": "20261008",
       "type": "github-daily",
@@ -66538,8 +66538,8 @@
       "repo": "liquidslr/system-design-notes",
       "description": "Notes of the book System Desgin Interview - An Insider's Guide",
       "language": "",
-      "stars": 24157,
-      "forks": 4569,
+      "stars": 24220,
+      "forks": 4575,
       "starsAdded": 398,
       "createdAt": "2026-10-08T11:00:01.873Z",
       "metaData": {
@@ -66579,6 +66579,59 @@
           "架构设计初学者"
         ],
         "description": "这是一个基于知名书籍整理的精良系统设计笔记库，涵盖28个经典面试题（如URL短链、YouTube架构）及大量业界扩展阅读。它提供清晰的目录结构、线上阅读链接及版本控制支持，帮助用户高效备考面试，也可作为构建团队技术知识底座的优秀模板。"
+      }
+    },
+    {
+      "id": "fef691bb-e4c3-4cc1-b082-2a3c559c8bf7",
+      "dateAdded": "20261008",
+      "type": "github-daily",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 7989,
+      "forks": 389,
+      "starsAdded": 283,
+      "createdAt": "2026-10-07T16:00:01.989Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
       }
     },
     {
@@ -66651,59 +66704,6 @@
           "技术极客"
         ],
         "description": "Cua 提供了一套完整的工具链，包括本地后台驱动、跨平台沙箱及评测基准。它能帮助开发者构建能操作 GUI 的 AI Agent，支持在安全隔离的环境中运行任务并生成训练数据。"
-      }
-    },
-    {
-      "id": "fef691bb-e4c3-4cc1-b082-2a3c559c8bf7",
-      "dateAdded": "20261008",
-      "type": "github-daily",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "repo": "EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars": 7977,
-      "forks": 389,
-      "starsAdded": 90,
-      "createdAt": "2026-10-07T16:00:01.989Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
-      },
-      "summaryData": {
-        "tags": [
-          "调试器",
-          "C/C++",
-          "开源",
-          "游戏开发",
-          "性能优化"
-        ],
-        "cover": "",
-        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
-        "ability": [
-          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
-          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
-          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
-          "原生支持多进程与子进程同时调试",
-          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
-        ],
-        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
-        "category": [
-          "开发工具",
-          "游戏开发",
-          "开源项目"
-        ],
-        "suitable": [
-          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
-          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
-          "想研读生产级调试器源码的工具链爱好者",
-          "JAI、Odin 等小众语言用户",
-          "关注软件性能工程的进阶学习者"
-        ],
-        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
       }
     },
     {
