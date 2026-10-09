@@ -5,6 +5,27 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>twostraws/SwiftUI-Agent-Skill</title>
+      <link>https://trending.pptboard.com/repo/twostraws/SwiftUI-Agent-Skill.html</link>
+      <description>Paul Hudson 开源的 SwiftUI Agent Skill，让 Claude Code、Cursor 等 AI 助手按 Swift 圈顶级最佳实践写代码。</description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/twostraws/SwiftUI-Agent-Skill.html</guid>
+    </item>
+    <item>
+      <title>Robbyant/lingbot-map</title>
+      <link>https://trending.pptboard.com/repo/Robbyant/lingbot-map.html</link>
+      <description>蚂蚁开源的实时 3D 重建模型，普通摄像头视频边拍边生成点云地图，约 20 帧/秒，GitHub 已超 1.6 万 Star。</description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/Robbyant/lingbot-map.html</guid>
+    </item>
+    <item>
+      <title>BerriAI/litellm</title>
+      <link>https://trending.pptboard.com/repo/BerriAI/litellm.html</link>
+      <description>用一套 OpenAI 格式的统一接口，调用 OpenAI、Claude、Gemini 等 100+ 家大模型，还能管密钥、控预算、做故障切换的开源 AI 网关。</description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/BerriAI/litellm.html</guid>
+    </item>
+    <item>
       <title>storytold/artcraft</title>
       <link>https://trending.pptboard.com/repo/storytold/artcraft.html</link>
       <description>一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。</description>
@@ -332,27 +353,6 @@
       <description>OpenRig 是一个开源的本地多 Agent 编排工具，用 YAML 声明式地把 Claude Code、Codex 等会话组织成可持久化、可恢复、可共享记忆的团队拓扑。</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/mvschwarz/openrig.html</guid>
-    </item>
-    <item>
-      <title>vercel-labs/scriptc</title>
-      <link>https://trending.pptboard.com/repo/vercel-labs/scriptc.html</link>
-      <description>Vercel Labs 开源的实验性编译器 scriptc，用 tsc + LLVM 把 .ts 文件直接编译成约 200KB、2ms 启动的原生可执行文件，全程不依赖任何 JS 引擎。</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/vercel-labs/scriptc.html</guid>
-    </item>
-    <item>
-      <title>InfinityLoop1308/PipePipe</title>
-      <link>https://trending.pptboard.com/repo/InfinityLoop1308/PipePipe.html</link>
-      <description>PipePipe 是从 NewPipe 硬分叉的 Android 开源视频客户端，一个 App 无广告地聚合 YouTube、B 站和 NicoNico。</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/InfinityLoop1308/PipePipe.html</guid>
-    </item>
-    <item>
-      <title>vercel/next.js</title>
-      <link>https://trending.pptboard.com/repo/vercel/next.js.html</link>
-      <description>基于 React 的全栈元框架，把 SSR/SSG/RSC 等现代渲染能力打包成开箱即用的开发体验</description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/vercel/next.js.html</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,182 @@
 {
   "all": [
     {
+      "id": "28e839cd-ab45-4b47-903a-4fc489ada51f",
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "domain": "github.com",
+      "repo": "twostraws/SwiftUI-Agent-Skill",
+      "description": "这是 Hacking with Swift 创始人 Paul Hudson 开源的 SwiftUI 专家经验包，采用 Anthropic Agent Skills 标准封装。安装后，AI 助手写 SwiftUI 时会自动规避软弃用 API、无障碍缺陷和性能陷阱，输出带修改前后对比和严重性分级的审查报告。MIT 协议完全开源，一条命令即可安装。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-09T12:13:44.874Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools. - twostraws/SwiftUI-Agent-Skill"
+      },
+      "summaryData": {
+        "tags": [
+          "SwiftUI",
+          "Agent Skill",
+          "Claude Code",
+          "iOS 开发",
+          "Paul Hudson"
+        ],
+        "cover": "",
+        "title": "SwiftUI-Agent-Skill 深度评测：把 Paul Hudson 的 SwiftUI 专家经验装进 AI 编程助手",
+        "ability": [
+          "自动审查并修复 AI 生成的 SwiftUI 反模式代码",
+          "内置 11 大模块最佳实践知识库（API 替换、无障碍、性能、本地化等）",
+          "跨 Agent 通用，支持 Claude Code、Codex、Cursor、Xcode 智能体",
+          "渐进式按需加载知识文件，节省 Token 开销",
+          "紧跟 iOS 27、Xcode 27 等最新 Apple API 规范"
+        ],
+        "summary": "Paul Hudson 开源的 SwiftUI Agent Skill，让 Claude Code、Cursor 等 AI 助手按 Swift 圈顶级最佳实践写代码。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 AI 编程助手写 SwiftUI 的 iOS 开发者",
+          "需要统一团队 AI 代码风格的技术 Lead",
+          "SwiftUI 初学者（边写边学最佳实践）",
+          "Xcode 智能体用户",
+          "关注 AI Skill 生态的技术爱好者"
+        ],
+        "description": "这是 Hacking with Swift 创始人 Paul Hudson 开源的 SwiftUI 专家经验包，采用 Anthropic Agent Skills 标准封装。安装后，AI 助手写 SwiftUI 时会自动规避软弃用 API、无障碍缺陷和性能陷阱，输出带修改前后对比和严重性分级的审查报告。MIT 协议完全开源，一条命令即可安装。"
+      },
+      "type": "project",
+      "dateAdded": "20261009"
+    },
+    {
+      "id": "7009574d-8157-4200-b646-34be49568d37",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "domain": "github.com",
+      "repo": "Robbyant/lingbot-map",
+      "description": "LingBot-Map 是蚂蚁灵波开源的前馈式流式 3D 重建基础模型，ECCV 2026 Oral 论文。仅凭一颗 RGB 摄像头即可实时输出相机轨迹与稠密点云，首创借鉴 LLM KV Cache 的几何记忆架构，解决长序列漂移难题，13 分钟视频也能稳定重建，但只输出点云、不导出 Mesh。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-09T12:09:30.239Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction - Robbyant/lingbot-map"
+      },
+      "summaryData": {
+        "tags": [
+          "3D重建",
+          "开源",
+          "计算机视觉",
+          "SLAM",
+          "ECCV 2026"
+        ],
+        "cover": "",
+        "title": "LingBot-Map 深度评测：把 3D 重建从离线作业变成实时直播的开源基础模型",
+        "ability": [
+          "实时流式 3D 重建：单目 RGB 视频输入，实时输出相机轨迹与稠密点云（约 20 FPS）",
+          "长序列抗漂移：GCA 选择性记忆架构，万帧序列显存 token 压缩近 80 倍",
+          "精度领先：性能超越 VGGT、CUT3R 等离线与流式竞品，ECCV 2026 Oral",
+          "部署友好：提供三个预训练权重、完整评测 pipeline，社区已有 8GB 显存优化版和一键启动脚本",
+          "生态扩展：可作为 NeRF/3DGS 的位姿初始化工具，兼容 NVIDIA Cosmos 等世界模型"
+        ],
+        "summary": "蚂蚁开源的实时 3D 重建模型，普通摄像头视频边拍边生成点云地图，约 20 帧/秒，GitHub 已超 1.6 万 Star。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "三维视觉"
+        ],
+        "suitable": [
+          "机器人与具身智能开发者",
+          "无人机航拍与测绘爱好者",
+          "3D 内容创作者（NeRF/Gaussian Splatting）",
+          "AR/VR 应用开发者",
+          "AI 极客与技术尝鲜者"
+        ],
+        "description": "LingBot-Map 是蚂蚁灵波开源的前馈式流式 3D 重建基础模型，ECCV 2026 Oral 论文。仅凭一颗 RGB 摄像头即可实时输出相机轨迹与稠密点云，首创借鉴 LLM KV Cache 的几何记忆架构，解决长序列漂移难题，13 分钟视频也能稳定重建，但只输出点云、不导出 Mesh。"
+      },
+      "type": "project",
+      "dateAdded": "20261009"
+    },
+    {
+      "id": "d5b2e109-cda1-4fa2-be31-58dd765078e4",
+      "url": "https://github.com/BerriAI/litellm",
+      "domain": "github.com",
+      "repo": "BerriAI/litellm",
+      "description": "LiteLLM 是 BerriAI（YC 孵化）开源的大模型统一网关，55K+ stars、MIT 协议，像「万能插座」一样把各家 LLM API 转成统一格式。提供 Python SDK 和 Proxy Server 双形态，支持负载均衡、故障切换、密钥管理、预算控制和成本追踪，Netflix 等大厂在用。但需注意 2026 年供应链投毒事件（锁定 1.83.0+ 版本）以及自建运维、企业级 SSO 付费等门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-09T12:03:46.601Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-gateway",
+          "anthropic",
+          "azure-openai",
+          "bedrock",
+          "gateway",
+          "langchain",
+          "litellm",
+          "llm",
+          "llm-gateway",
+          "llmops",
+          "mcp-gateway",
+          "openai",
+          "openai-proxy",
+          "rust",
+          "rust-ai",
+          "vertex-ai"
+        ],
+        "license": "license_cache.json",
+        "homepage": "https://docs.litellm.ai/docs/",
+        "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM] - BerriAI/litellm"
+      },
+      "summaryData": {
+        "tags": [
+          "LiteLLM",
+          "AI网关",
+          "大模型",
+          "开源",
+          "LLM"
+        ],
+        "cover": "",
+        "title": "LiteLLM 深度评测：一个接口调用 100+ 大模型的万能网关",
+        "ability": [
+          "统一 API：一套代码调用 100+ 提供商、1800+ 模型，换模型只改一个字符串",
+          "智能路由：多端点负载均衡、429/5xx 自动重试、故障自动降级切换",
+          "成本管控：虚拟密钥分发、按团队/项目设预算上限、逐次调用记账",
+          "Docker 一键部署：自带管理后台 UI，点鼠标即可接模型、发密钥",
+          "生态兼容：支持 MCP、Agent、LangChain、Cursor、Cline 等主流工具接入"
+        ],
+        "summary": "用一套 OpenAI 格式的统一接口，调用 OpenAI、Claude、Gemini 等 100+ 家大模型，还能管密钥、控预算、做故障切换的开源 AI 网关。",
+        "category": [
+          "开发工具",
+          "AI 网关",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人开发者/学生：5 分钟跑通任意大模型",
+          "AI 应用创业团队：一处管所有模型的成本和权限",
+          "企业平台/中台团队：给全公司提供统一 AI 网关",
+          "Agent/MCP 开发者：模型+工具+Agent 统一鉴权和日志",
+          "重度 Cursor/Cline 用户：AI 编程走自己的计费池"
+        ],
+        "description": "LiteLLM 是 BerriAI（YC 孵化）开源的大模型统一网关，55K+ stars、MIT 协议，像「万能插座」一样把各家 LLM API 转成统一格式。提供 Python SDK 和 Proxy Server 双形态，支持负载均衡、故障切换、密钥管理、预算控制和成本追踪，Netflix 等大厂在用。但需注意 2026 年供应链投毒事件（锁定 1.83.0+ 版本）以及自建运维、企业级 SSO 付费等门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20261009"
+    },
+    {
       "id": "f75d48df-8823-4ae6-a32c-e8d011a223a0",
       "url": "https://github.com/storytold/artcraft",
       "domain": "github.com",
@@ -18639,10 +18815,10 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:36:32.612Z",
       "metaData": {
-        "forks": "6634",
-        "stars": "25769",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
-        "license": "third-party-licenses.config.json",
+        "license": "MIT license",
         "homepage": "https://t3.codes",
         "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
       },
