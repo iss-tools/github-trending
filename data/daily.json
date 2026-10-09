@@ -67612,5 +67612,662 @@
         "description": "这是 Hacking with Swift 创始人 Paul Hudson 开源的 SwiftUI 专家经验包，采用 Anthropic Agent Skills 标准封装。安装后，AI 助手写 SwiftUI 时会自动规避软弃用 API、无障碍缺陷和性能陷阱，输出带修改前后对比和严重性分级的审查报告。MIT 协议完全开源，一条命令即可安装。"
       }
     }
+  ],
+  "20261010": [
+    {
+      "id": "ede98275-746a-4a4f-b8a7-946a426cc51b",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 38664,
+      "forks": 5809,
+      "starsAdded": 15335,
+      "createdAt": "2026-10-09T16:00:01.985Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "ctf",
+          "decompiler",
+          "developer-tools",
+          "disassembler",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "reverse-engineering",
+          "static-analysis"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rea.tools",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "7178c332-cb7b-445f-8eae-79f5818bfe89",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "repo": "boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 20148,
+      "forks": 1609,
+      "starsAdded": 5925,
+      "createdAt": "2026-10-09T16:00:02.008Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://discord.gg/BHFztBPUe",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
+      "id": "d67abe9d-4825-40aa-9382-01631a88c8dd",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/storytold/artcraft",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 10405,
+      "forks": 1553,
+      "starsAdded": 3723,
+      "createdAt": "2026-10-09T16:00:02.044Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "License",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      }
+    },
+    {
+      "id": "ce016ffb-c477-421c-a0e9-90c8cbca0426",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 47551,
+      "forks": 3015,
+      "starsAdded": 1744,
+      "createdAt": "2026-10-09T16:00:02.019Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
+      "id": "0ff39943-ed01-4b6b-b23b-28887071af61",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 282251,
+      "forks": 23645,
+      "starsAdded": 1696,
+      "createdAt": "2026-10-09T16:00:02.016Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "9f92ac12-fa3b-4622-a270-e3d1cac11395",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 103759,
+      "forks": 10851,
+      "starsAdded": 751,
+      "createdAt": "2026-10-09T16:00:02.041Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "3a0b0b3d-331d-4032-aaa7-31e019eda10d",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 28072,
+      "forks": 3236,
+      "starsAdded": 714,
+      "createdAt": "2026-10-09T16:00:02.031Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
+      "id": "083ed339-2168-414d-872e-ef41a2ae8a57",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 44943,
+      "forks": 3252,
+      "starsAdded": 323,
+      "createdAt": "2026-10-09T16:00:02.024Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "9b886d7f-32e8-4eb6-8d16-a13ca740d0d7",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "repo": "Robbyant/lingbot-map",
+      "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
+      "language": "Python",
+      "stars": 17595,
+      "forks": 1944,
+      "starsAdded": 109,
+      "createdAt": "2026-10-09T16:00:02.046Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction - Robbyant/lingbot-map"
+      },
+      "summaryData": {
+        "tags": [
+          "3D重建",
+          "开源",
+          "计算机视觉",
+          "SLAM",
+          "ECCV 2026"
+        ],
+        "cover": "",
+        "title": "LingBot-Map 深度评测：把 3D 重建从离线作业变成实时直播的开源基础模型",
+        "ability": [
+          "实时流式 3D 重建：单目 RGB 视频输入，实时输出相机轨迹与稠密点云（约 20 FPS）",
+          "长序列抗漂移：GCA 选择性记忆架构，万帧序列显存 token 压缩近 80 倍",
+          "精度领先：性能超越 VGGT、CUT3R 等离线与流式竞品，ECCV 2026 Oral",
+          "部署友好：提供三个预训练权重、完整评测 pipeline，社区已有 8GB 显存优化版和一键启动脚本",
+          "生态扩展：可作为 NeRF/3DGS 的位姿初始化工具，兼容 NVIDIA Cosmos 等世界模型"
+        ],
+        "summary": "蚂蚁开源的实时 3D 重建模型，普通摄像头视频边拍边生成点云地图，约 20 帧/秒，GitHub 已超 1.6 万 Star。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "三维视觉"
+        ],
+        "suitable": [
+          "机器人与具身智能开发者",
+          "无人机航拍与测绘爱好者",
+          "3D 内容创作者（NeRF/Gaussian Splatting）",
+          "AR/VR 应用开发者",
+          "AI 极客与技术尝鲜者"
+        ],
+        "description": "LingBot-Map 是蚂蚁灵波开源的前馈式流式 3D 重建基础模型，ECCV 2026 Oral 论文。仅凭一颗 RGB 摄像头即可实时输出相机轨迹与稠密点云，首创借鉴 LLM KV Cache 的几何记忆架构，解决长序列漂移难题，13 分钟视频也能稳定重建，但只输出点云、不导出 Mesh。"
+      }
+    },
+    {
+      "id": "aee01970-2a55-45c9-b394-61754c9bd228",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/BerriAI/litellm",
+      "repo": "BerriAI/litellm",
+      "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+      "language": "Python",
+      "stars": 60514,
+      "forks": 12176,
+      "starsAdded": 95,
+      "createdAt": "2026-10-09T16:00:02.033Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-gateway",
+          "anthropic",
+          "azure-openai",
+          "bedrock",
+          "gateway",
+          "langchain",
+          "litellm",
+          "llm",
+          "llm-gateway",
+          "llmops",
+          "mcp-gateway",
+          "openai",
+          "openai-proxy",
+          "rust",
+          "rust-ai",
+          "vertex-ai"
+        ],
+        "license": "license_cache.json",
+        "homepage": "https://docs.litellm.ai/docs/",
+        "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM] - BerriAI/litellm"
+      },
+      "summaryData": {
+        "tags": [
+          "LiteLLM",
+          "AI网关",
+          "大模型",
+          "开源",
+          "LLM"
+        ],
+        "cover": "",
+        "title": "LiteLLM 深度评测：一个接口调用 100+ 大模型的万能网关",
+        "ability": [
+          "统一 API：一套代码调用 100+ 提供商、1800+ 模型，换模型只改一个字符串",
+          "智能路由：多端点负载均衡、429/5xx 自动重试、故障自动降级切换",
+          "成本管控：虚拟密钥分发、按团队/项目设预算上限、逐次调用记账",
+          "Docker 一键部署：自带管理后台 UI，点鼠标即可接模型、发密钥",
+          "生态兼容：支持 MCP、Agent、LangChain、Cursor、Cline 等主流工具接入"
+        ],
+        "summary": "用一套 OpenAI 格式的统一接口，调用 OpenAI、Claude、Gemini 等 100+ 家大模型，还能管密钥、控预算、做故障切换的开源 AI 网关。",
+        "category": [
+          "开发工具",
+          "AI 网关",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人开发者/学生：5 分钟跑通任意大模型",
+          "AI 应用创业团队：一处管所有模型的成本和权限",
+          "企业平台/中台团队：给全公司提供统一 AI 网关",
+          "Agent/MCP 开发者：模型+工具+Agent 统一鉴权和日志",
+          "重度 Cursor/Cline 用户：AI 编程走自己的计费池"
+        ],
+        "description": "LiteLLM 是 BerriAI（YC 孵化）开源的大模型统一网关，55K+ stars、MIT 协议，像「万能插座」一样把各家 LLM API 转成统一格式。提供 Python SDK 和 Proxy Server 双形态，支持负载均衡、故障切换、密钥管理、预算控制和成本追踪，Netflix 等大厂在用。但需注意 2026 年供应链投毒事件（锁定 1.83.0+ 版本）以及自建运维、企业级 SSO 付费等门槛。"
+      }
+    },
+    {
+      "id": "1fe10545-956f-4d5a-822e-8fd666eb192c",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "repo": "twostraws/SwiftUI-Agent-Skill",
+      "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+      "language": "",
+      "stars": 5295,
+      "forks": 191,
+      "starsAdded": 88,
+      "createdAt": "2026-10-09T16:00:02.050Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools. - twostraws/SwiftUI-Agent-Skill"
+      },
+      "summaryData": {
+        "tags": [
+          "SwiftUI",
+          "Agent Skill",
+          "Claude Code",
+          "iOS 开发",
+          "Paul Hudson"
+        ],
+        "cover": "",
+        "title": "SwiftUI-Agent-Skill 深度评测：把 Paul Hudson 的 SwiftUI 专家经验装进 AI 编程助手",
+        "ability": [
+          "自动审查并修复 AI 生成的 SwiftUI 反模式代码",
+          "内置 11 大模块最佳实践知识库（API 替换、无障碍、性能、本地化等）",
+          "跨 Agent 通用，支持 Claude Code、Codex、Cursor、Xcode 智能体",
+          "渐进式按需加载知识文件，节省 Token 开销",
+          "紧跟 iOS 27、Xcode 27 等最新 Apple API 规范"
+        ],
+        "summary": "Paul Hudson 开源的 SwiftUI Agent Skill，让 Claude Code、Cursor 等 AI 助手按 Swift 圈顶级最佳实践写代码。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 AI 编程助手写 SwiftUI 的 iOS 开发者",
+          "需要统一团队 AI 代码风格的技术 Lead",
+          "SwiftUI 初学者（边写边学最佳实践）",
+          "Xcode 智能体用户",
+          "关注 AI Skill 生态的技术爱好者"
+        ],
+        "description": "这是 Hacking with Swift 创始人 Paul Hudson 开源的 SwiftUI 专家经验包，采用 Anthropic Agent Skills 标准封装。安装后，AI 助手写 SwiftUI 时会自动规避软弃用 API、无障碍缺陷和性能陷阱，输出带修改前后对比和严重性分级的审查报告。MIT 协议完全开源，一条命令即可安装。"
+      }
+    }
   ]
 }
