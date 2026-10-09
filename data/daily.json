@@ -67622,8 +67622,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 38664,
-      "forks": 5809,
+      "stars": 39644,
+      "forks": 6088,
       "starsAdded": 15335,
       "createdAt": "2026-10-09T16:00:01.985Z",
       "metaData": {
@@ -67696,8 +67696,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 20148,
-      "forks": 1609,
+      "stars": 20438,
+      "forks": 1639,
       "starsAdded": 5925,
       "createdAt": "2026-10-09T16:00:02.008Z",
       "metaData": {
@@ -67757,8 +67757,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 10405,
-      "forks": 1553,
+      "stars": 10561,
+      "forks": 1588,
       "starsAdded": 3723,
       "createdAt": "2026-10-09T16:00:02.044Z",
       "metaData": {
@@ -67816,8 +67816,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 47551,
-      "forks": 3015,
+      "stars": 47592,
+      "forks": 3017,
       "starsAdded": 1744,
       "createdAt": "2026-10-09T16:00:02.019Z",
       "metaData": {
@@ -67878,8 +67878,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 282251,
-      "forks": 23645,
+      "stars": 282301,
+      "forks": 23650,
       "starsAdded": 1696,
       "createdAt": "2026-10-09T16:00:02.016Z",
       "metaData": {
@@ -67922,6 +67922,59 @@
       }
     },
     {
+      "id": "3a0b0b3d-331d-4032-aaa7-31e019eda10d",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 28090,
+      "forks": 3237,
+      "starsAdded": 714,
+      "createdAt": "2026-10-09T16:00:02.031Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
       "id": "9f92ac12-fa3b-4622-a270-e3d1cac11395",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -67929,9 +67982,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 103759,
-      "forks": 10851,
-      "starsAdded": 751,
+      "stars": 103780,
+      "forks": 10853,
+      "starsAdded": 523,
       "createdAt": "2026-10-09T16:00:02.041Z",
       "metaData": {
         "forks": "0",
@@ -67982,59 +68035,6 @@
       }
     },
     {
-      "id": "3a0b0b3d-331d-4032-aaa7-31e019eda10d",
-      "dateAdded": "20261010",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "repo": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars": 28072,
-      "forks": 3236,
-      "starsAdded": 714,
-      "createdAt": "2026-10-09T16:00:02.031Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Anthropic",
-          "GitHub",
-          "AI插件",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
-        "ability": [
-          "岗位专家定制",
-          "企业 SOP 固化",
-          "工具链连接",
-          "无代码维护",
-          "团队协作标准化"
-        ],
-        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "企业服务"
-        ],
-        "suitable": [
-          "知识型团队管理者",
-          "企业职能人员",
-          "开发者与平台团队",
-          "Claude 深度用户",
-          "AI 工具运营者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
-      }
-    },
-    {
       "id": "083ed339-2168-414d-872e-ef41a2ae8a57",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -68042,8 +68042,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 44943,
-      "forks": 3252,
+      "stars": 44984,
+      "forks": 3254,
       "starsAdded": 323,
       "createdAt": "2026-10-09T16:00:02.024Z",
       "metaData": {
@@ -68101,8 +68101,8 @@
       "repo": "Robbyant/lingbot-map",
       "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
       "language": "Python",
-      "stars": 17595,
-      "forks": 1944,
+      "stars": 17607,
+      "forks": 1945,
       "starsAdded": 109,
       "createdAt": "2026-10-09T16:00:02.046Z",
       "metaData": {
@@ -68154,8 +68154,8 @@
       "repo": "BerriAI/litellm",
       "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
       "language": "Python",
-      "stars": 60514,
-      "forks": 12176,
+      "stars": 60538,
+      "forks": 12178,
       "starsAdded": 95,
       "createdAt": "2026-10-09T16:00:02.033Z",
       "metaData": {
@@ -68224,7 +68224,7 @@
       "repo": "twostraws/SwiftUI-Agent-Skill",
       "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
       "language": "",
-      "stars": 5295,
+      "stars": 5313,
       "forks": 191,
       "starsAdded": 88,
       "createdAt": "2026-10-09T16:00:02.050Z",
