@@ -1,6 +1,61 @@
 {
   "all": [
     {
+      "id": "23748a0d-78bc-4270-891b-faa926da2c3a",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "domain": "github.com",
+      "repo": "ranxianglei/billion-context",
+      "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-10T12:04:13.120Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "稳定可用 A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      },
+      "type": "project",
+      "dateAdded": "20261010"
+    },
+    {
       "id": "28e839cd-ab45-4b47-903a-4fc489ada51f",
       "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
       "domain": "github.com",
@@ -1478,8 +1533,8 @@
       "forks": 0,
       "createdAt": "2026-10-01T13:05:04.378Z",
       "metaData": {
-        "forks": "32987",
-        "stars": "179330",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "android",
           "app-framework",
@@ -2098,8 +2153,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:48:58.520Z",
       "metaData": {
-        "forks": "983",
-        "stars": "15978",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "desktop-application",
           "gpui",
@@ -3423,8 +3478,8 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:06:49.677Z",
       "metaData": {
-        "forks": "77685",
-        "stars": "200545",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "deep-learning",
           "deep-neural-networks",
@@ -4267,8 +4322,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:31:30.155Z",
       "metaData": {
-        "forks": "31328",
-        "stars": "103734",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "autograd",
           "deep-learning",
@@ -8273,8 +8328,8 @@
       "forks": 0,
       "createdAt": "2026-09-13T11:32:39.784Z",
       "metaData": {
-        "forks": "34641",
-        "stars": "166432",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deep-learning",
@@ -13358,7 +13413,22 @@
       "createdAt": "2026-09-02T12:41:21.538Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "ai-agent",
+          "aippt",
+          "office",
+          "powerpoint",
+          "powerpoint-generation",
+          "ppt",
+          "pptx",
+          "presentation",
+          "slide",
+          "slides"
+        ],
+        "license": "MIT license",
+        "homepage": "https://hugohe3.github.io/ppt-master-examples/",
+        "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He - hugohe3/ppt-master"
       },
       "summaryData": {
         "tags": [
@@ -18346,8 +18416,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:32:32.312Z",
       "metaData": {
-        "forks": "21478",
-        "stars": "211637",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "",

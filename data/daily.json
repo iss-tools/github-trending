@@ -2629,8 +2629,8 @@
       "starsAdded": 828,
       "createdAt": "2026-08-25T04:22:47.636Z",
       "metaData": {
-        "forks": "21478",
-        "stars": "211637",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -4119,8 +4119,8 @@
       "starsAdded": 830,
       "createdAt": "2026-08-26T02:08:48.825Z",
       "metaData": {
-        "forks": "21478",
-        "stars": "211637",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -15806,7 +15806,22 @@
       "createdAt": "2026-09-02T12:00:02.624Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "ai-agent",
+          "aippt",
+          "office",
+          "powerpoint",
+          "powerpoint-generation",
+          "ppt",
+          "pptx",
+          "presentation",
+          "slide",
+          "slides"
+        ],
+        "license": "MIT license",
+        "homepage": "https://hugohe3.github.io/ppt-master-examples/",
+        "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He - hugohe3/ppt-master"
       },
       "summaryData": {
         "tags": [
@@ -24917,8 +24932,8 @@
       "starsAdded": 325,
       "createdAt": "2026-09-08T11:00:02.225Z",
       "metaData": {
-        "forks": "21478",
-        "stars": "211637",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -26569,8 +26584,8 @@
       "starsAdded": 333,
       "createdAt": "2026-09-08T17:00:02.252Z",
       "metaData": {
-        "forks": "21478",
-        "stars": "211637",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "",
         "homepage": "",
@@ -32441,8 +32456,8 @@
       "starsAdded": 102,
       "createdAt": "2026-09-13T11:00:02.064Z",
       "metaData": {
-        "forks": "34641",
-        "stars": "166432",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deep-learning",
@@ -34337,8 +34352,8 @@
       "starsAdded": 152,
       "createdAt": "2026-09-13T18:00:02.042Z",
       "metaData": {
-        "forks": "34641",
-        "stars": "166432",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deep-learning",
@@ -35372,8 +35387,8 @@
       "starsAdded": 536,
       "createdAt": "2026-09-14T16:00:02.107Z",
       "metaData": {
-        "forks": "34641",
-        "stars": "166432",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deep-learning",
@@ -51647,8 +51662,8 @@
       "starsAdded": 31,
       "createdAt": "2026-09-26T11:00:38.396Z",
       "metaData": {
-        "forks": "77685",
-        "stars": "200545",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "deep-learning",
           "deep-neural-networks",
@@ -52727,8 +52742,8 @@
       "starsAdded": 216,
       "createdAt": "2026-09-26T16:00:02.215Z",
       "metaData": {
-        "forks": "77685",
-        "stars": "200545",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "deep-learning",
           "deep-neural-networks",
@@ -67622,9 +67637,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 56952,
-      "forks": 11075,
-      "starsAdded": 14927,
+      "stars": 60529,
+      "forks": 12086,
+      "starsAdded": 25784,
       "createdAt": "2026-10-09T16:00:01.985Z",
       "metaData": {
         "forks": "0",
@@ -67696,9 +67711,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 23787,
-      "forks": 1968,
-      "starsAdded": 5868,
+      "stars": 24440,
+      "forks": 2017,
+      "starsAdded": 5831,
       "createdAt": "2026-10-09T16:00:02.008Z",
       "metaData": {
         "forks": "0",
@@ -67757,9 +67772,9 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 12498,
-      "forks": 1912,
-      "starsAdded": 3752,
+      "stars": 12903,
+      "forks": 1986,
+      "starsAdded": 3217,
       "createdAt": "2026-10-09T16:00:02.044Z",
       "metaData": {
         "forks": "0",
@@ -67809,6 +67824,57 @@
       }
     },
     {
+      "id": "0ff39943-ed01-4b6b-b23b-28887071af61",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 283611,
+      "forks": 23753,
+      "starsAdded": 1737,
+      "createdAt": "2026-10-09T16:00:02.016Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
       "id": "ce016ffb-c477-421c-a0e9-90c8cbca0426",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -67816,9 +67882,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 48325,
-      "forks": 3057,
-      "starsAdded": 1739,
+      "stars": 48453,
+      "forks": 3059,
+      "starsAdded": 1189,
       "createdAt": "2026-10-09T16:00:02.019Z",
       "metaData": {
         "forks": "0",
@@ -67871,57 +67937,6 @@
       }
     },
     {
-      "id": "0ff39943-ed01-4b6b-b23b-28887071af61",
-      "dateAdded": "20261010",
-      "type": "github-daily",
-      "url": "https://github.com/mattpocock/skills",
-      "repo": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 283387,
-      "forks": 23738,
-      "starsAdded": 1687,
-      "createdAt": "2026-10-09T16:00:02.016Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://aihero.dev/skills",
-        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "GitHub",
-          "AI 技能",
-          "TDD",
-          "工作流"
-        ],
-        "cover": "",
-        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
-        "ability": [
-          "需求精准对齐",
-          "测试驱动开发 (TDD)",
-          "生成技术规范与工单",
-          "代码架构优化",
-          "系统化Bug诊断"
-        ],
-        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
-        "category": [
-          "AI 编程",
-          "开发者工具"
-        ],
-        "suitable": [
-          "追求代码质量的软件工程师",
-          "技术团队负责人",
-          "独立开发者",
-          "AI 编程工具深度用户"
-        ],
-        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
-      }
-    },
-    {
       "id": "3a0b0b3d-331d-4032-aaa7-31e019eda10d",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -67929,9 +67944,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 28497,
-      "forks": 3258,
-      "starsAdded": 709,
+      "stars": 28577,
+      "forks": 3266,
+      "starsAdded": 626,
       "createdAt": "2026-10-09T16:00:02.031Z",
       "metaData": {
         "forks": "0",
@@ -68035,6 +68050,70 @@
       }
     },
     {
+      "id": "a21edc81-913d-46c8-84f8-28e29789e456",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "repo": "hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "language": "Python",
+      "stars": 58981,
+      "forks": 4657,
+      "starsAdded": 372,
+      "createdAt": "2026-10-10T12:00:02.261Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agent",
+          "aippt",
+          "office",
+          "powerpoint",
+          "powerpoint-generation",
+          "ppt",
+          "pptx",
+          "presentation",
+          "slide",
+          "slides"
+        ],
+        "license": "MIT license",
+        "homepage": "https://hugohe3.github.io/ppt-master-examples/",
+        "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He - hugohe3/ppt-master"
+      },
+      "summaryData": {
+        "tags": [
+          "PPT 生成",
+          "AI 助手",
+          "PowerPoint",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "PPT Master：深度评测开源 AI PPT 生成神器",
+        "ability": [
+          "原生 PPTX 生成",
+          "本地隐私运行",
+          "模板母版复刻",
+          "多格式输入",
+          "深度可编辑"
+        ],
+        "summary": "一个能生成原生可编辑 PPTX 文件的开源 AI 助手，支持本地运行与模板复刻。",
+        "category": [
+          "AI 生成工具",
+          "办公效率",
+          "开源项目"
+        ],
+        "suitable": [
+          "咨询顾问",
+          "市场运营",
+          "PPT 重度用户",
+          "开发者",
+          "注重隐私人士"
+        ],
+        "description": "PPT Master 是一款开源的 AI Agent 工作流，能将 PDF、Word 等文档转换为真正可编辑的 PowerPoint 原生文件（而非图片）。它支持自定义模板、本地运行保障数据隐私，并能通过 AI 进行多轮修改与美化，是追求专业性与可编辑性用户的高效工具。"
+      }
+    },
+    {
       "id": "083ed339-2168-414d-872e-ef41a2ae8a57",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -68091,6 +68170,131 @@
           "AI Agent开发者"
         ],
         "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "b7c836a8-8845-4371-93a1-e31327eb9cbf",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "stars": 217862,
+      "forks": 21962,
+      "starsAdded": 279,
+      "createdAt": "2026-10-10T12:00:02.271Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "Cursor",
+          "代码规范",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
+        "ability": [
+          "纠正 AI 错误假设与沉默猜测",
+          "抑制过度设计与代码膨胀",
+          "实施精准的手术式代码修改",
+          "目标驱动的闭环验证机制"
+        ],
+        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code 或 Cursor 重度用户",
+          "追求高质量代码的开发者",
+          "技术团队负责人",
+          "需要规范 AI 输出的用户"
+        ],
+        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
+      }
+    },
+    {
+      "id": "b686522f-e4c5-4459-b574-4496e23ad357",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 26047,
+      "forks": 1879,
+      "starsAdded": 178,
+      "createdAt": "2026-10-10T12:00:02.251Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
       }
     },
     {
@@ -68217,6 +68421,140 @@
       }
     },
     {
+      "id": "12574f95-a00c-433d-82e3-8c64fce88631",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "language": "Python",
+      "stars": 166988,
+      "forks": 34783,
+      "starsAdded": 94,
+      "createdAt": "2026-10-10T12:00:02.267Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "audio",
+          "deep-learning",
+          "deepseek",
+          "gemma",
+          "glm",
+          "hacktoberfest",
+          "llm",
+          "machine-learning",
+          "model-hub",
+          "natural-language-processing",
+          "nlp",
+          "pretrained-models",
+          "python",
+          "pytorch",
+          "pytorch-transformers",
+          "qwen",
+          "speech-recognition",
+          "transformer",
+          "vlm"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://huggingface.co/transformers",
+        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.  - GitHub - huggingface/transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+      },
+      "summaryData": {
+        "tags": [
+          "深度学习",
+          "NLP",
+          "HuggingFace",
+          "预训练模型",
+          "Python"
+        ],
+        "cover": "",
+        "title": "深度评测 Hugging Face Transformers：AI 生态的“瑞士军刀”",
+        "ability": [
+          "多模态任务统一接口",
+          "极简 Pipeline 推理",
+          "一站式训练脚手架",
+          "跨框架互通",
+          "深度生态集成"
+        ],
+        "summary": "统一模型定义的 AI 生态中枢，让多模态任务开发变得极简。",
+        "category": [
+          "开发工具",
+          "人工智能"
+        ],
+        "suitable": [
+          "AI 研究人员",
+          "机器学习工程师",
+          "应用开发者",
+          "数据科学家",
+          "算法初学者"
+        ],
+        "description": "Transformers 是 Hugging Face 推出的开源库，统一了文本、图像、音频和多模态的模型接口。它提供 Pipeline 快速推理、Trainer 训练脚手架，并与 Hub 深度打通，极大降低了 AI 开发门槛。"
+      }
+    },
+    {
+      "id": "4f5d3986-5c33-48b6-bb4e-c3ec64e0ed6d",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "stars": 104028,
+      "forks": 31887,
+      "starsAdded": 81,
+      "createdAt": "2026-10-10T12:00:02.265Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "autograd",
+          "deep-learning",
+          "gpu",
+          "machine-learning",
+          "neural-network",
+          "numpy",
+          "python",
+          "tensor"
+        ],
+        "license": "License",
+        "homepage": "https://pytorch.org",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch"
+      },
+      "summaryData": {
+        "tags": [
+          "PyTorch",
+          "深度学习",
+          "GitHub",
+          "开源框架",
+          "AI"
+        ],
+        "cover": "",
+        "title": "PyTorch 深度评测：为什么它能统治 AI 时代",
+        "ability": [
+          "动态图 + 录音带式自动求导，像写 Python 一样写神经网络",
+          "torch.compile 一行代码加速训练与推理",
+          "覆盖 NVIDIA/AMD/Intel/TPU 等全硬件后端",
+          "FSDP/DDP 原生分布式训练支持",
+          "HuggingFace、Lightning 等繁荣生态的底层基座"
+        ],
+        "summary": "GitHub 上的“炼丹神器”，以动态图设计成为学术界与大模型领域的事实标准。",
+        "category": [
+          "AI 开发",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 研究员与 PhD",
+          "大模型算法工程师",
+          "深度学习入门学生",
+          "生产部署工程师",
+          "框架底层贡献者"
+        ],
+        "description": "PyTorch 是 Meta 发起、Linux 基金会托管的深度学习框架，凭借动态图与 Python 优先设计成为学术界和大模型领域的事实标准。评测从架构原理、上手实战到竞品对比与局限全面剖析，附可运行代码示例。"
+      }
+    },
+    {
       "id": "1fe10545-956f-4d5a-822e-8fd666eb192c",
       "dateAdded": "20261010",
       "type": "github-daily",
@@ -68267,6 +68605,141 @@
           "关注 AI Skill 生态的技术爱好者"
         ],
         "description": "这是 Hacking with Swift 创始人 Paul Hudson 开源的 SwiftUI 专家经验包，采用 Anthropic Agent Skills 标准封装。安装后，AI 助手写 SwiftUI 时会自动规避软弃用 API、无障碍缺陷和性能陷阱，输出带修改前后对比和严重性分级的审查报告。MIT 协议完全开源，一条命令即可安装。"
+      }
+    },
+    {
+      "id": "6c5117e9-736e-4f5f-b412-10deedb5b706",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/flutter/flutter",
+      "repo": "flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "stars": 179285,
+      "forks": 33527,
+      "starsAdded": 39,
+      "createdAt": "2026-10-10T12:00:02.256Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "android",
+          "app-framework",
+          "cross-platform",
+          "dart",
+          "dart-platform",
+          "desktop",
+          "flutter",
+          "flutter-package",
+          "fuchsia",
+          "ios",
+          "linux-desktop",
+          "macos",
+          "material-design",
+          "mobile",
+          "mobile-development",
+          "skia",
+          "web",
+          "web-framework",
+          "windows"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://flutter.dev",
+        "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond - flutter/flutter"
+      },
+      "summaryData": {
+        "tags": [
+          "Flutter",
+          "跨平台",
+          "Google",
+          "Dart",
+          "开源框架"
+        ],
+        "cover": "",
+        "title": "Flutter 深度评测：一套代码打天下的野心、实力与代价",
+        "ability": [
+          "一套代码跨 iOS/Android/Web/桌面/鸿蒙多端开发",
+          "Impeller 自绘渲染引擎，复杂动画稳定 120FPS 无卡顿",
+          "有状态热重载，代码保存后毫秒级预览 UI 变化",
+          "像素级 UI 一致性，不受系统碎片化影响",
+          "Dart AOT 编译为原生机器码，性能逼近原生"
+        ],
+        "summary": "Google 开源的多平台 UI 框架，用一套 Dart 代码同时构建 iOS、Android、Web、桌面甚至鸿蒙应用，性能逼近原生。",
+        "category": [
+          "开发工具",
+          "跨平台开发",
+          "开源框架"
+        ],
+        "suitable": [
+          "需要快速上线双端 MVP 的创业团队",
+          "对 UI 一致性敏感的产品（品牌/金融/工具类）",
+          "需要覆盖折叠屏/桌面/Web 多端的产品团队",
+          "有前端经验想转型跨平台开发的工程师",
+          "需要一套代码覆盖鸿蒙生态的国内团队"
+        ],
+        "description": "Flutter 是 Google 开源的跨平台 UI 框架，GitHub Star 超 17.8 万。它用 Dart 语言加 Impeller 自绘引擎直接绘制像素，绕过原生控件，实现像素级一致与逼近原生的性能，BMW、阿里、Google Pay 等均在生产使用。短板是包体积偏大、无官方热更新、Dart 生态相对小众。"
+      }
+    },
+    {
+      "id": "17ae6b16-03f6-4a75-aebb-75d130d4ea02",
+      "dateAdded": "20261010",
+      "type": "github-daily",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "repo": "tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "stars": 200590,
+      "forks": 78881,
+      "starsAdded": 24,
+      "createdAt": "2026-10-10T12:00:02.259Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "deep-learning",
+          "deep-neural-networks",
+          "distributed",
+          "machine-learning",
+          "ml",
+          "neural-network",
+          "python",
+          "tensorflow"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tensorflow.org",
+        "description": "An Open Source Machine Learning Framework for Everyone - tensorflow/tensorflow"
+      },
+      "summaryData": {
+        "tags": [
+          "TensorFlow",
+          "深度学习",
+          "开源项目",
+          "Google",
+          "机器学习"
+        ],
+        "cover": "",
+        "title": "TensorFlow 深度评测：从工业霸主到 Keras 3 多后端时代的转型之路",
+        "ability": [
+          "全链路生产部署：训练、量化、TF Serving 服务化一条龙",
+          "Keras 3 多后端：一套代码可切换 TensorFlow/PyTorch/JAX",
+          "端侧全覆盖：移动端 TFLite、微控制器 TFLite Micro、浏览器 TF.js",
+          "XLA 编译器：算子融合与 JIT 编译，推理提速 1.3-2 倍",
+          "TPU 原生一等公民支持，适合大规模分布式训练"
+        ],
+        "summary": "Google 开源的端到端机器学习平台，虽在学术界被 PyTorch 反超，但仍是工业级部署与端侧 AI 的最完整解决方案。",
+        "category": [
+          "开发工具",
+          "AI 机器学习",
+          "深度学习框架"
+        ],
+        "suitable": [
+          "工业级 AI 工程师",
+          "移动端/嵌入式开发者（TinyML）",
+          "MLOps 平台工程师",
+          "计算机视觉工程师",
+          "技术选型决策者"
+        ],
+        "description": "TensorFlow 是 Google Brain 于 2015 年开源的深度学习框架，GitHub Star 长期位居 AI 项目前列。评测深入剖析其 XLA 编译器、Keras 3 多后端架构与全家桶生态（Serving/TFLite/TF.js/TFX），并与 PyTorch、JAX 横向对比。核心结论：学术界份额下滑至约 15%，但工业界仍以 38% 份额领先，是端侧部署与生产落地几乎无替代的选择。文章附版本演进表、避坑指南与四阶段学习路径。"
       }
     }
   ]

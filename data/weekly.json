@@ -10381,8 +10381,8 @@
       "starsAdded": 1290,
       "createdAt": "2026-09-19T12:00:20.573Z",
       "metaData": {
-        "forks": "34641",
-        "stars": "166432",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deep-learning",
@@ -13734,8 +13734,8 @@
       "starsAdded": 295,
       "createdAt": "2026-09-23T12:00:04.072Z",
       "metaData": {
-        "forks": "31328",
-        "stars": "103734",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "autograd",
           "deep-learning",
@@ -15611,8 +15611,8 @@
       "starsAdded": 960,
       "createdAt": "2026-10-03T11:00:04.342Z",
       "metaData": {
-        "forks": "983",
-        "stars": "15978",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "desktop-application",
           "gpui",
@@ -16326,8 +16326,8 @@
       "starsAdded": 346,
       "createdAt": "2026-09-27T16:00:04.340Z",
       "metaData": {
-        "forks": "31328",
-        "stars": "103734",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "autograd",
           "deep-learning",
@@ -16388,8 +16388,8 @@
       "starsAdded": 266,
       "createdAt": "2026-10-01T13:00:04.388Z",
       "metaData": {
-        "forks": "32987",
-        "stars": "179330",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "android",
           "app-framework",
@@ -16575,8 +16575,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 23787,
-      "forks": 1968,
+      "stars": 24440,
+      "forks": 2017,
       "starsAdded": 15539,
       "createdAt": "2026-10-06T12:00:03.564Z",
       "metaData": {
@@ -16773,8 +16773,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 283387,
-      "forks": 23738,
+      "stars": 283611,
+      "forks": 23753,
       "starsAdded": 8156,
       "createdAt": "2026-10-08T11:00:03.332Z",
       "metaData": {
@@ -16894,8 +16894,8 @@
       "repo": "DuarteSantos8/openGym",
       "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
       "language": "JavaScript",
-      "stars": 8884,
-      "forks": 1099,
+      "stars": 8965,
+      "forks": 1108,
       "starsAdded": 6749,
       "createdAt": "2026-10-06T12:00:03.562Z",
       "metaData": {
@@ -16934,6 +16934,67 @@
         "category": [],
         "suitable": [],
         "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
+      "id": "c3deeb60-cd7f-4e1c-99d2-5729404ba967",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/tester-army/e2e",
+      "repo": "tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars": 8563,
+      "forks": 408,
+      "starsAdded": 6566,
+      "createdAt": "2026-10-10T12:00:03.974Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "e2e",
+          "e2e-testing",
+          "end-to-end-testing",
+          "mobile",
+          "mobile-testing",
+          "playwright",
+          "web"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tester.army/e2e",
+        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "E2E测试",
+          "Playwright",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
+        "ability": [
+          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
+          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
+          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
+          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
+          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
+        ],
+        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化测试"
+        ],
+        "suitable": [
+          "独立开发者与小团队",
+          "前端/全栈工程师",
+          "React Native 等移动端开发团队",
+          "QA 测试工程师",
+          "AI Native 创业团队"
+        ],
+        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
       }
     },
     {
@@ -17181,8 +17242,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 60004,
-      "forks": 5359,
+      "stars": 60092,
+      "forks": 5366,
       "starsAdded": 4003,
       "createdAt": "2026-10-04T16:00:03.724Z",
       "metaData": {
@@ -17246,8 +17307,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 99071,
-      "forks": 8676,
+      "stars": 99104,
+      "forks": 8678,
       "starsAdded": 3850,
       "createdAt": "2026-10-06T12:00:03.556Z",
       "metaData": {
@@ -17394,8 +17455,8 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 26700,
-      "forks": 6977,
+      "stars": 26728,
+      "forks": 6989,
       "starsAdded": 2379,
       "createdAt": "2026-10-04T16:00:03.780Z",
       "metaData": {
@@ -17447,8 +17508,8 @@
       "repo": "mvschwarz/openrig",
       "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars": 6572,
-      "forks": 483,
+      "stars": 6613,
+      "forks": 484,
       "starsAdded": 2338,
       "createdAt": "2026-10-04T16:00:03.796Z",
       "metaData": {
@@ -17641,8 +17702,8 @@
       "repo": "earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars": 18858,
-      "forks": 1862,
+      "stars": 18891,
+      "forks": 1863,
       "starsAdded": 2125,
       "createdAt": "2026-10-08T11:00:03.346Z",
       "metaData": {
@@ -18016,8 +18077,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 10654,
-      "forks": 1010,
+      "stars": 10682,
+      "forks": 1013,
       "starsAdded": 1125,
       "createdAt": "2026-10-05T11:00:03.978Z",
       "metaData": {
@@ -18453,8 +18514,8 @@
       "repo": "EpicGames/raddebugger",
       "description": "A native, user-mode, multi-process, graphical debugger.",
       "language": "C",
-      "stars": 8296,
-      "forks": 395,
+      "stars": 8304,
+      "forks": 396,
       "starsAdded": 654,
       "createdAt": "2026-10-08T11:00:03.325Z",
       "metaData": {
@@ -18617,6 +18678,134 @@
           "React 技术栈的全栈工程师"
         ],
         "description": "Next.js 是 Vercel 主导的 React 全栈框架，拥有 14 万+ GitHub Stars，被 Netflix、TikTok、Notion 等用于生产。它通过 App Router、RSC、Server Actions 等能力让一个项目搞定前端+后端+API+部署，学习曲线陡峭但生态最大、招聘容易。适合全栈应用，纯静态站可考虑 Astro 等更轻方案。"
+      }
+    },
+    {
+      "id": "b19fca74-ab07-44f2-8321-b908078083d3",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/flutter/flutter",
+      "repo": "flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "stars": 179285,
+      "forks": 33527,
+      "starsAdded": 259,
+      "createdAt": "2026-10-10T12:00:03.964Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "android",
+          "app-framework",
+          "cross-platform",
+          "dart",
+          "dart-platform",
+          "desktop",
+          "flutter",
+          "flutter-package",
+          "fuchsia",
+          "ios",
+          "linux-desktop",
+          "macos",
+          "material-design",
+          "mobile",
+          "mobile-development",
+          "skia",
+          "web",
+          "web-framework",
+          "windows"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://flutter.dev",
+        "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond - flutter/flutter"
+      },
+      "summaryData": {
+        "tags": [
+          "Flutter",
+          "跨平台",
+          "Google",
+          "Dart",
+          "开源框架"
+        ],
+        "cover": "",
+        "title": "Flutter 深度评测：一套代码打天下的野心、实力与代价",
+        "ability": [
+          "一套代码跨 iOS/Android/Web/桌面/鸿蒙多端开发",
+          "Impeller 自绘渲染引擎，复杂动画稳定 120FPS 无卡顿",
+          "有状态热重载，代码保存后毫秒级预览 UI 变化",
+          "像素级 UI 一致性，不受系统碎片化影响",
+          "Dart AOT 编译为原生机器码，性能逼近原生"
+        ],
+        "summary": "Google 开源的多平台 UI 框架，用一套 Dart 代码同时构建 iOS、Android、Web、桌面甚至鸿蒙应用，性能逼近原生。",
+        "category": [
+          "开发工具",
+          "跨平台开发",
+          "开源框架"
+        ],
+        "suitable": [
+          "需要快速上线双端 MVP 的创业团队",
+          "对 UI 一致性敏感的产品（品牌/金融/工具类）",
+          "需要覆盖折叠屏/桌面/Web 多端的产品团队",
+          "有前端经验想转型跨平台开发的工程师",
+          "需要一套代码覆盖鸿蒙生态的国内团队"
+        ],
+        "description": "Flutter 是 Google 开源的跨平台 UI 框架，GitHub Star 超 17.8 万。它用 Dart 语言加 Impeller 自绘引擎直接绘制像素，绕过原生控件，实现像素级一致与逼近原生的性能，BMW、阿里、Google Pay 等均在生产使用。短板是包体积偏大、无官方热更新、Dart 生态相对小众。"
+      }
+    },
+    {
+      "id": "8113474c-4de1-44ae-a3c0-6c339a70a924",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "稳定可用 A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 735,
+      "forks": 73,
+      "starsAdded": 246,
+      "createdAt": "2026-10-10T12:00:03.968Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "稳定可用 A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
       }
     }
   ]

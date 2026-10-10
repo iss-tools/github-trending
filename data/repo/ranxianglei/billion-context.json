@@ -1,0 +1,56 @@
+{
+  "id": "23748a0d-78bc-4270-891b-faa926da2c3a",
+  "url": "https://github.com/ranxianglei/billion-context",
+  "domain": "github.com",
+  "repo": "ranxianglei/billion-context",
+  "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-10T12:04:13.120Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "dsh-plugin"
+    ],
+    "license": "License",
+    "homepage": "",
+    "description": "稳定可用 A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+  },
+  "summaryData": {
+    "tags": [
+      "上下文压缩",
+      "开源项目",
+      "AI Agent",
+      "API 代理",
+      "Claude Code"
+    ],
+    "cover": "",
+    "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+    "ability": [
+      "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+      "T1→T2→T3 三层递进式摘要，长会话不失忆",
+      "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+      "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+      "Web 仪表盘与缓存健康诊断，可观测性强"
+    ],
+    "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+    "category": [
+      "开发工具",
+      "AI 编程",
+      "效率工具"
+    ],
+    "suitable": [
+      "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+      "API 按量付费、心疼账单的开发者",
+      "使用无缓存中转站/公益站的用户",
+      "想做工具链整合的团队",
+      "想突破上下文窗口限制的极客"
+    ],
+    "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+  },
+  "contentDetail": "# billion-context 深度评测：把\"AI 失忆\"变成\"AI 学会自己折叠记忆\"\n> 一句话定调：**billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的\"上下文压缩代理\"，让大模型自己决定何时、以何种粒度折叠历史对话**——官方宣称能把单次会话从几十万 token 的天花板拉到\"月级、累计数十亿 token\"，并节省约 5 倍 token 开销。它是当前中文开源圈最受关注的\"上下文工程\"项目之一，但也是 README 自己标注为\"Early\"的高频迭代期产品，需要带着清晰的判断去使用。\n---\n## 一、背景与痛点：长会话的\"三重诅咒\"\n任何重度使用 AI 编码 Agent（Claude Code、Codex、OpenCode、Kimi Code、Aider 等）的开发者，几乎都被同一组问题反复折磨过：\n1. **窗口硬上限**：上下文一满，会话要么报错、要么触发内置的\"自动摘要\"，把前面几十轮细节一口气压成一段总结——文件路径、报错字符串、关键决策全被抹掉。\n2. **成本失控**：每轮对话都要把整段历史重发一遍，越往后越贵，一个长会话跑下来账单直冲云霄。\n3. **前缀缓存失效**：一旦触发内置压缩或切换模型，Provider 侧的 prefix cache 全部作废，稳定前缀被重新计费，命中率从 95%+ 一夜跌到几成。\n主流模型的上下文窗口从 100K 到 1M、10M 不等，但\"窗口更大\"是模型厂的解题思路，本质是**让你能塞进去更多东西再被截断**。billion-context 反其道而行——**问题不是窗口不够大，而是模型没学会\"垃圾分类\"**。\n作者 ranxianglei 是一位独立开发者，GitHub 主页下挂着 44 个仓库，围绕同一个想法已经孵化出 **billion-context（通用代理）、billion-context-pi（Pi 专用）、opencode-acp（OpenCode 专用）、acp-kernel（独立压缩内核，零运行时依赖）** 四个兄弟项目，可见这是一条持续耕耘的路线而非一次性实验。\n---\n## 二、核心亮点与技术剖析\n### 2.1 架构本质：一个\"懂压缩\"的中间人代理\nbillion-context 的核心形态是一个 TypeScript 写成的本地代理，**架在 Agent 与真实模型 API 之间**，对 Anthropic / OpenAI 兼容协议的请求和响应流进行实时重写：\n```\nAgent (Claude Code / Codex / Cursor / Aider ...)\n        │  你把 Agent 的 baseURL 指向这个代理\n        ▼\n┌──────────────────────┐\n│  billion-context     │  1. 解析请求（Anthropic/OpenAI 格式）\n│      proxy           │  2. 用 acp-kernel 压缩历史对话\n│                      │  3. 注入 compress 工具 + 压缩哲学\n│                      │  4. 转发给真实模型 API\n│                      │  5. 重写流式响应\n└──────────────────────┘\n        ▼\n   真实模型 API\n```\n这套设计的精妙之处在于：**不改 Agent 的代码，不改模型本身，所有魔法都发生在传输层**。任何能改 baseURL 的客户端都能直接接入。\n### 2.2 最关键的设计决策：让模型自己按\"压缩键\"\n与\"到点强制截断\"不同，billion-context 向会话注入四个上下文管理工具，**把\"何时压缩、压缩什么\"的决定权交给 LLM 自己**：\n- **`compress`** — 把指定消息区间折叠成详细摘要\n- **`decompress`** — 需要原始细节时按需还原\n- **`search_context`** — 关键字搜索，不用解压就能查到已折叠内容\n- **`acp_status`** — 查看当前上下文占用和可压缩区间\n配合模型可见的隐形引用标签（`<acp>` + `m00001`、`m00002`…），模型能精确指定要折叠的范围；代理在上下文增长约 50K token 时轻轻\"催\"一下，并在输入即将超窗时作为硬性兜底触发 preflight。\n> **打个比方**：传统方案像给员工一个越来越大的文件夹，塞满了就整箱丢掉重抄一份摘要；billion-context 更像给员工配备了一个\"归档助理\"——他自己判断哪些旧邮件该装订成卷宗（compress），需要时能随时翻回去，还能先搜索引再决定是否拆封。\n### 2.3 三层递进式摘要：T1 → T2 → T3\n被压缩的内容并非一次性拍扁，而是**分层蒸馏**：当更早的摘要本身也变得过时，它会被进一步提炼进更高层级的摘要，形成\"备忘录→章节摘要→全书大纲\"的金字塔结构。这是项目配套论文《Model-Driven Incremental Hierarchical Compression》的核心思想——**Training-Free 的多代际上下文管理**，而且论文本身以 MIT 协议开源在仓库 `paper/` 目录下，接受社区 PR 修订。\n### 2.4 Prefix Cache 友好：省钱的\"暗功夫\"\n这是这个项目最容易被低估的亮点。**传统自动摘要会一次性重写整个历史，把 provider 侧的 prefix cache 全部打爆**；billion-context 的摘要按小区间增量写入，缓存前缀保持稳定，官方给出的健康指标是——**单次会话的 prefix-cache 命中率保持在 95–97%，压缩本身的开销 ≤2%**。\n更难得的是它的**可观测性**：`/acp-cache` 命令能在客户端里直接打印一份缓存健康报告，把异常归因到具体原因（上游缓存 TTL 过期、切换了模型、还是 bili 自身的 bug），甚至单独追踪\"密钥轮换\"事件——这种\"把账算清楚\"的设计在同类工具中相当罕见。\n### 2.5 实测数据（官方自述，需自行验证）\n项目附带的纵向生产研究给出的数字颇为震撼：\n| 指标 | 数值 |\n|---|---|\n| 观测时长 | 4.5 个月 |\n| 主机数 | 3 |\n| 模型调用次数 | 174,327 |\n| 累计输入 token | 18.76B（三主机共约 24.7B） |\n| 在 204,800 token 模型上的窗口违规 | 0 |\n| 最长\"马拉松\"会话 | 8,584–12,049 次调用 |\n---\n## 三、上手体验：三种接入姿势，按\"侵入度\"自选\n安装只有一行：\n```bash\nnpm install -g billion-context\n```\n随后有三种接入方式，侵入度从低到高：\n```bash\n# 方式 A：Launcher（推荐新手，零配置文件改动）\nbili claude\nbili codex\nbili opencode\nbili pi\n# 方式 B：URL 前缀（最通用，只改 baseURL）\n# 把客户端 baseURL 从\n#   https://api.anthropic.com\n# 改成\n#   http://localhost:8787/bili/https://api.anthropic.com\n# 方式 C：原生插件（最贴合客户端）\nbili plugin install opencode\nbili plugin install claude\n```\n验证是否生效：\n```bash\ncurl -s http://localhost:8787/__bili/health\n# {\"ok\":true,\"upstream\":\"https://api.anthropic.com\"}\ncurl -s http://localhost:8787/__bili/stats\n```\n**客户端覆盖广度是这个项目最令人印象深刻的工程成果**：README 的支持矩阵里列出了 20+ 个客户端，从 Claude Code、Codex、Cursor 相关生态，到 Kimi Code、Qwen Code、iFlow、Antigravity、CodeBuddy、Aider、Copilot CLI、Amp、Goose 等一长串。对于那些**没有插件接口的封闭 Go/Rust 二进制**（Copilot、Amp、Aider），billion-context 通过证书 MITM 或 `/bili/` URL 前缀强行介入；对 rustls 不读 CA 文件的 Goose，它甚至准备了路径重写方案——这种\"见招拆招\"的工程诚意肉眼可见。\n---\n## 四、目标人群与收益测算\n### 4.1 谁最该试？\n- **重度长会话编码用户**：一天里在 Claude Code / Codex 里跑数小时大型重构、逐步调试、反复补丁迭代的人，是最大受益者。\n- **API 按量付费、心疼账单的开发者**：5× 的 token 节省直接换算成真金白银。\n- **用\"无缓存公益站 / 中转商\"的用户**：社区反馈这类场景下节省尤其明显——因为按次计费的套餐反而无法享受 token 缩减红利。\n- **工具链整合者**：想把上下文管理外包到代理层、而不在每个 Agent 内部各自写适配器的团队。\n### 4.2 收益是什么？\n- **记忆韧性**：跑几个月的\"单会话\"成为可能，远处的文件路径、关键决策、签名不会被静默丢弃。\n- **成本骤降**：上下文长期维持在 150K 以下，相比让上下文膨胀到 1M 的传统方案，单会话成本约为 1/5。\n- **可视化掌控**：Web UI（`http://localhost:8787`）提供仪表盘、会话列表、实时日志、配置编辑器、上游连通性测试，所有数据也以纯 JSON 暴露供脚本调用。\n---\n## 五、竞品对比：它到底解决的是谁没解决的问题？\n| 维度 | 主流 Agent 内置 Auto-Compact | 外挂记忆框架（MemGPT 类） | billion-context |\n|---|---|---|---|\n| 触发方式 | 到点硬触发，一次性重写整段 | 应用层显式调用 | **模型自主决定，增量触发** |\n| 结构保留 | ❌ 折叠成单段摘要 | ⚠️ 依赖应用显式管理 | ✅ 分层块状，可单独解压 |\n| 可逆性 | ❌ | ⚠️ | ✅ `decompress` 按需还原 |\n| 可搜索性 | ❌ | ✅ | ✅ `search_context` |\n| 接入成本 | 0（但效果差） | 需改应用代码 | **改一行 baseURL 即可** |\n| 跨客户端 | 每家各一套 | 需逐家适配 | 一个代理通吃 20+ 客户端 |\n**差异化定位一句话**：内置 Auto-Compact 是\"末日销毁\"，billion-context 是\"图书馆式归档\"；相比 MemGPT 这类需要侵入应用代码的记忆框架，它把同样的思想搬到了**协议层**，用更小的侵入性换来了跨客户端的普适性。\n---\n## 六、局限与不足：必须直面的四道坎\n### 6.1 安全姿态激进，信任成本高\n第三方安全评测（greenlitbooks，2026-09-28）给出的结论非常克制但也非常刺眼：**\"It's a middleman by design\"**——它能看到你所有的 prompt、工具输出和 API 密钥。具体风险点：\n- **Launcher 模式会生成一张有效期 10 年的根证书**放在你的 home 目录下，用于 MITM 解密 HTTPS。\n- **默认每 3 分钟自动检查 npm 并自更新**；即使关闭 autoUpdate，一个伴随的 advisories 频道仍能在后台推送指定版本——供应链风险不小。\n- **会话文件默认明文落盘**在 `~/.local/share/billion-context/`，需要主动设置 `BILI_ENCRYPTION_KEY` 才加密；清理（GC）默认关闭。\n- `--host 0.0.0.0` 模式下**没有任何鉴权**，README 只能警告你\"仅在可信内网使用\"。\n评测给出的\"sane setup\"值得原样搬过来：保持 127.0.0.1、锁版本并关掉 autoUpdate 与 advisoryCheck、设置 `BILI_ENCRYPTION_KEY` 和 `BILI_SESSION_GC=1`、不用 launcher 模式时删除其证书目录。\n### 6.2 许可证并非纯 MIT\n**论文是 MIT，但主代码的 LICENSE 在 GitHub 上被归类为\"Other\"**——附带额外的署名条款，属于自定义许可，商用前需仔细阅读原文条款，不能默认等同于 MIT。\n### 6.3 Bug 密度高，但修复速度同样惊人\nNodeSeek 社区用户（2026-09）的真实评价很典型：\"好用是很好用，但是现在 bug 是真的有点多\"，但同一楼主在两周后又补刀\"最近这个项目的作者修了很多 Bug，我使用没出什么问题\"。Issue 编号已推进到 #2100+，README 里几乎每个特性后面都挂着具体 Issue 号——**这是双刃剑：说明项目在飞速成长，也说明它尚未沉淀成稳定版本**。\n### 6.4 插件生态的\"互斥陷阱\"\n如果客户端同时装了多个上下文压缩插件（或 billion-context 的原生模式与独立插件模式并存），会**双重压缩**——上下文被改写两次，token 白白多花，嵌套摘要还会污染历史。Pi 甚至没有插件优先级机制，多个扩展对同一事件的执行顺序取决于文件系统发现顺序，可能造成不可预测的干扰。**上插件前先把家里收拾干净，是使用它的前置课。**\n### 6.5 其他小坑\n- 对硬编码端点、无法改 baseURL 的客户端，必须走 MITM 透明代理，门槛和风险都上一个台阶。\n- 对\"未识别端点\"会直接透传不压缩，意味着**冷门模型/自建网关可能拿不到收益**。\n- 项目自称 \"Early\"，生产关键业务建议谨慎。\n---\n## 七、结语与行动建议\nbillion-context 是一个**工程诚意远超其 Star 数的项目**：它把\"上下文工程\"这个最近才被业界认真对待的命题，用一行 npm install 变成了任何 Agent 都能吃到的小甜品。三层递进摘要、模型自主压缩、prefix-cache 友好、可观测的缓存归因，每一项设计都直指真实痛点；20+ 客户端的适配矩阵和活跃到近乎\"日更\"的迭代节奏，也让人看到一个真正的长期主义者在做事。\n但它同时也是一个**用信任换便利**的工具：中间人架构、激进自更新、明文落盘——任何一项单独拿出来都值得你三思。\n**分级行动建议**：\n- 🟢 **普通开发者（API 按量付费 + 长会话）**：值得试，但请按\"sane setup\"配置——锁版本、开加密、绑定 127.0.0.1、关掉自动更新。\n- 🟡 **团队/生产环境**：再等一等。等项目从 \"Early\" 走出来、许可证条款被更广泛审计、社区沉淀出更清晰的版本边界后再评估。\n- 🔴 **处理敏感/合规数据的场景**：现阶段直接绕开。一个能看到所有 prompt 与密钥的中间人，本身就是过不了安全评审的。\n**一句话收束**：billion-context 让我们看到了\"上下文即记忆、记忆可编程\"的雏形——它可能不是终局答案，但一定是这个方向上目前最完整、最便宜、也最值得一试的开源实现。",
+  "type": "project",
+  "dateAdded": "20261010"
+}
