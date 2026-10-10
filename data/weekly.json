@@ -16568,6 +16568,67 @@
   ],
   "202641": [
     {
+      "id": "51c71f1e-8cf9-404d-8e2d-440e2321aab1",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "repo": "boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 22216,
+      "forks": 1812,
+      "starsAdded": 15539,
+      "createdAt": "2026-10-06T12:00:03.564Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://discord.gg/BHFztBPUe",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
       "id": "bfd8f6a6-90c4-4f85-afca-fd6b47cddef9",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16642,67 +16703,6 @@
       }
     },
     {
-      "id": "51c71f1e-8cf9-404d-8e2d-440e2321aab1",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/boykopovar/AnyPS5",
-      "repo": "boykopovar/AnyPS5",
-      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
-      "language": "C++",
-      "stars": 21281,
-      "forks": 1717,
-      "starsAdded": 10243,
-      "createdAt": "2026-10-06T12:00:03.564Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "anyps5",
-          "dynamic-library",
-          "game-porting",
-          "ps5",
-          "ps5-tools",
-          "spir-v",
-          "vulkan"
-        ],
-        "license": "GPL-2.0 license",
-        "homepage": "https://discord.gg/BHFztBPUe",
-        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
-      },
-      "summaryData": {
-        "tags": [
-          "PS5",
-          "模拟器",
-          "Relinker",
-          "Vulkan",
-          "开源"
-        ],
-        "cover": "",
-        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
-        "ability": [
-          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
-          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
-          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
-          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
-          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
-        ],
-        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
-        "category": [
-          "开源项目",
-          "开发工具",
-          "游戏兼容层"
-        ],
-        "suitable": [
-          "C++ 系统级开发者",
-          "逆向工程与模拟圈爱好者",
-          "关注 PS5 兼容层的极客玩家",
-          "游戏保存（Preservation）研究者",
-          "想学习底层架构的学生"
-        ],
-        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
-      }
-    },
-    {
       "id": "44ab952c-dbcd-4236-963d-149b67ca03f8",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16773,9 +16773,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 282433,
-      "forks": 23659,
-      "starsAdded": 7448,
+      "stars": 282647,
+      "forks": 23679,
+      "starsAdded": 8156,
       "createdAt": "2026-10-08T11:00:03.332Z",
       "metaData": {
         "forks": "0",
@@ -16824,9 +16824,9 @@
       "repo": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "stars": 94782,
-      "forks": 8283,
-      "starsAdded": 6987,
+      "stars": 94877,
+      "forks": 8295,
+      "starsAdded": 7084,
       "createdAt": "2026-10-04T16:00:03.776Z",
       "metaData": {
         "forks": "0",
@@ -16887,6 +16887,56 @@
       }
     },
     {
+      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 8654,
+      "forks": 1078,
+      "starsAdded": 6749,
+      "createdAt": "2026-10-06T12:00:03.562Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
       "id": "e06bf049-4b08-4a98-896b-5dbdb9cfd251",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16942,56 +16992,6 @@
           "技术选型决策者"
         ],
         "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。"
-      }
-    },
-    {
-      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 8543,
-      "forks": 1070,
-      "starsAdded": 6086,
-      "createdAt": "2026-10-06T12:00:03.562Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
       }
     },
     {
@@ -17181,9 +17181,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 59707,
-      "forks": 5323,
-      "starsAdded": 3996,
+      "stars": 59780,
+      "forks": 5335,
+      "starsAdded": 4003,
       "createdAt": "2026-10-04T16:00:03.724Z",
       "metaData": {
         "forks": "0",
@@ -17239,28 +17239,6 @@
       }
     },
     {
-      "id": "e40b6797-1d69-4dfe-86f5-bc95272cf568",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "repo": "NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "language": "Rust",
-      "stars": 15399,
-      "forks": 1737,
-      "starsAdded": 3690,
-      "createdAt": "2026-10-04T16:00:03.792Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/openshell/latest/",
-        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
-      },
-      "summaryData": null
-    },
-    {
       "id": "4a522f68-3e1e-4908-8a71-aaaa431dbe58",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17268,9 +17246,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 98947,
-      "forks": 8669,
-      "starsAdded": 3153,
+      "stars": 98980,
+      "forks": 8670,
+      "starsAdded": 3850,
       "createdAt": "2026-10-06T12:00:03.556Z",
       "metaData": {
         "forks": "0",
@@ -17334,6 +17312,28 @@
       }
     },
     {
+      "id": "e40b6797-1d69-4dfe-86f5-bc95272cf568",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 15399,
+      "forks": 1737,
+      "starsAdded": 3690,
+      "createdAt": "2026-10-04T16:00:03.792Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
+      },
+      "summaryData": null
+    },
+    {
       "id": "ac2f32b5-a4fb-460e-aaad-84ae360b5139",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17387,6 +17387,59 @@
       }
     },
     {
+      "id": "3ed5f6cf-8664-48f1-af12-ea59de719253",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 26623,
+      "forks": 6951,
+      "starsAdded": 2379,
+      "createdAt": "2026-10-04T16:00:03.780Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
       "id": "615dff19-969b-46a8-a290-af28cd47bfa3",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17394,9 +17447,9 @@
       "repo": "mvschwarz/openrig",
       "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars": 6383,
-      "forks": 465,
-      "starsAdded": 2693,
+      "stars": 6441,
+      "forks": 473,
+      "starsAdded": 2338,
       "createdAt": "2026-10-04T16:00:03.796Z",
       "metaData": {
         "forks": "0",
@@ -17449,59 +17502,6 @@
           "研究 Agent 基础设施和编排协议的技术极客"
         ],
         "description": "OpenRig 是一个 TypeScript 开源项目（Apache-2.0），定位为 AI Coding Agent 的本地控制平面。它像 Kubernetes 管理容器一样管理 Agent 团队：用 RigSpec YAML 声明 Pod 拓扑，通过 tmux + SQLite + Hono 守护进程实现会话持久化、共享记忆和快照恢复，让散落的 Agent 会话变成可关机、可复活的常备团队。目前热度上升快，但仅支持 Claude Code 和 Codex，且有写入系统配置的侵入性。"
-      }
-    },
-    {
-      "id": "3ed5f6cf-8664-48f1-af12-ea59de719253",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/pingdotgg/t3code",
-      "repo": "pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 26582,
-      "forks": 6937,
-      "starsAdded": 2317,
-      "createdAt": "2026-10-04T16:00:03.780Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://t3.codes",
-        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "GitHub",
-          "TypeScript",
-          "开发者工具",
-          "代码审查"
-        ],
-        "cover": "",
-        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
-        "ability": [
-          "多代理统一控制",
-          "线程化会话管理",
-          "代码差异实时审查",
-          "深度 Git 集成",
-          "代码本地化存储"
-        ],
-        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "多 AI 编程工具重度用户",
-          "团队开发与代码审查者",
-          "注重数据安全的开发者",
-          "追求极致开发体验者",
-          "AI 编程初学者"
-        ],
-        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
       }
     },
     {
@@ -17634,6 +17634,69 @@
       }
     },
     {
+      "id": "ff8bdc2c-bc85-40d5-9008-d71826be78ad",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 18746,
+      "forks": 1856,
+      "starsAdded": 2125,
+      "createdAt": "2026-10-08T11:00:03.346Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
       "id": "a7bd82b8-dac8-452f-a136-b90fe792f141",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17750,69 +17813,6 @@
           "RAG 技术研究者"
         ],
         "description": "PageIndex 是 Vectify AI 开源（MIT 协议）的下一代 RAG 框架，核心理念是抛弃 chunking + embedding 的传统范式，用一棵 LLM 可直接导航的文档结构树取代向量数据库。在金融文档基准 FinanceBench 上达到 98.7% 准确率，特别适合财报、合同等技术手册等结构化长文档，但查询延迟和 LLM 调用成本较高，多文档扩展能力仍在演进。"
-      }
-    },
-    {
-      "id": "ff8bdc2c-bc85-40d5-9008-d71826be78ad",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "repo": "earthtojake/text-to-cad",
-      "description": "Give your agent CAD superpowers.",
-      "language": "Python",
-      "stars": 18708,
-      "forks": 1852,
-      "starsAdded": 1898,
-      "createdAt": "2026-10-08T11:00:03.346Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "ai-agents",
-          "cad",
-          "mechanical-engineering",
-          "robotics",
-          "step",
-          "stl",
-          "stp",
-          "text-to-cad"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.texttocad.dev",
-        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "CAD",
-          "AI代理",
-          "机器人",
-          "开源",
-          "自动化制造"
-        ],
-        "cover": "",
-        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
-        "ability": [
-          "自然语言生成CAD模型",
-          "机器人文件自动生成",
-          "仿真环境配置",
-          "工程图与G-code输出",
-          "制造文件预检"
-        ],
-        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
-        "category": [
-          "开发工具",
-          "AI编程",
-          "工程工具"
-        ],
-        "suitable": [
-          "硬件初创团队",
-          "机器人开发者",
-          "AI编码代理重度用户",
-          "制造打样工程师",
-          "技术极客"
-        ],
-        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
       }
     },
     {
@@ -18016,9 +18016,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 10552,
-      "forks": 994,
-      "starsAdded": 1109,
+      "stars": 10579,
+      "forks": 1001,
+      "starsAdded": 1125,
       "createdAt": "2026-10-05T11:00:03.978Z",
       "metaData": {
         "forks": "0",
@@ -18446,6 +18446,59 @@
       }
     },
     {
+      "id": "b7de60de-63f7-4286-86ae-d2b13fffe384",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 8263,
+      "forks": 394,
+      "starsAdded": 654,
+      "createdAt": "2026-10-08T11:00:03.325Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      }
+    },
+    {
       "id": "a21724e9-1dcc-41cf-8990-91c4d06516c0",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -18564,59 +18617,6 @@
           "React 技术栈的全栈工程师"
         ],
         "description": "Next.js 是 Vercel 主导的 React 全栈框架，拥有 14 万+ GitHub Stars，被 Netflix、TikTok、Notion 等用于生产。它通过 App Router、RSC、Server Actions 等能力让一个项目搞定前端+后端+API+部署，学习曲线陡峭但生态最大、招聘容易。适合全栈应用，纯静态站可考虑 Astro 等更轻方案。"
-      }
-    },
-    {
-      "id": "b7de60de-63f7-4286-86ae-d2b13fffe384",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "repo": "EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars": 8245,
-      "forks": 394,
-      "starsAdded": 448,
-      "createdAt": "2026-10-08T11:00:03.325Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
-      },
-      "summaryData": {
-        "tags": [
-          "调试器",
-          "C/C++",
-          "开源",
-          "游戏开发",
-          "性能优化"
-        ],
-        "cover": "",
-        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
-        "ability": [
-          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
-          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
-          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
-          "原生支持多进程与子进程同时调试",
-          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
-        ],
-        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
-        "category": [
-          "开发工具",
-          "游戏开发",
-          "开源项目"
-        ],
-        "suitable": [
-          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
-          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
-          "想研读生产级调试器源码的工具链爱好者",
-          "JAI、Odin 等小众语言用户",
-          "关注软件性能工程的进阶学习者"
-        ],
-        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
       }
     }
   ]
