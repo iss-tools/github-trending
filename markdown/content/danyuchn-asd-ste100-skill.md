@@ -1,0 +1,155 @@
+# danyuchn/asd-ste100-skill
+
+[GitHub URL](https://github.com/danyuchn/asd-ste100-skill)
+
+
+## asd-ste100-skill 深度评测：把航空业的“保命写作规范”搬进 AI Agent 时代
+
+> 一个把航空业 ASD-STE100 防误读写作标准做成 Claude Code Skill 的开源项目，专治 AI Agent 之间“看起来像人话、却容易被另一个 AI 误读”的英文。
+
+- **Tags**: Claude Code Skill, ASD-STE100, Prompt 工程, AI Agent, 开源项目
+- **Category**: AI 编程, 开发工具, 文本处理
+
+## Details
+
+# asd-ste100-skill 深度评测：把航空业的"保命写作规范"搬进 AI Agent 时代
+> 评测对象：[danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill)
+> 项目类型：Claude Code Skill（AI 提示词工程包 + Python 确定性 Linter）
+> 核心数据：⭐ 2,408 Stars / 🍴 131 Forks / MIT 协议 / Python / 创建于 2026 年 7 月，最后一次提交 2026 年 9 月
+---
+## 一句话总结
+**这是一个把航空航天业的"防误读写作标准" ASD-STE100 改造成 Claude Code Skill 的开源项目，专门用来把 AI Agent 之间那些"看起来像人话、却容易被另一个 AI 误读"的英文（工具描述、错误消息、系统提示词）改写成一句话只有一个意思的"机器友好英语"。** 它解决的是当下多智能体系统里最隐蔽也最致命的痛点——**下游 Agent 读错了上游 Agent 的输出，而且没人能立刻发现**。
+如果你写过 MCP 工具描述、Agent 系统提示词，或维护过任何会被另一个 LLM 解析的英文文本，这个项目值得你花 10 分钟安装试用；如果你只是写博客和文档，它的价值有限，但背后的"受控语言"思想仍然值得了解。
+---
+## 背景与痛点：为什么"防误读英语"突然变得重要
+要理解这个项目的价值，得先理解它借用的母体——**ASD-STE100（Simplified Technical English，简化技术英语）**。
+这是一个由欧洲航空航天与防务工业协会（ASD）主导制定的受控自然语言标准，最早于 1986 年发布（当时叫 AECMA PSC-85-16598），最新版本是 **Issue 9（2025 年 1 月）**，包含 **53 条写作规则、9 个章节、约 900 个"一词一义"的认可词、约 1200 个禁用词及其替换建议**。它的诞生场景非常具体：欧洲航空公司的维修人员大多是**非英语母语者**，拿着说明书在停机坪上拧螺丝，**没有人可以打电话问作者"这句到底什么意思"**——读错一条扭矩规范，是会死人的。
+**你看，这个场景是不是有点眼熟？** 项目的 README 一针见血地点出了这种类比：
+> "An LLM agent parsing another agent's output is in a strikingly similar position — no back-channel, no way to ask 'did you mean X or Y?'"
+一个 Agent 在解析另一个 Agent 的输出时，处于**和停机坪上的技师一模一样的处境**：没有追问的渠道、没有上下文的补充、必须一次读对。而当下主流的 Agent 输出英文恰恰充满歧义——被动语态（"the file is deleted"——谁删的？）、短语动词（"spin up the job"——非母语模型可能按字面理解成"旋转起来"）、堆叠的名词短语（"the agent task queue priority handler"——这四个名词到底怎么组合？）。
+传统的"让 GPT 帮我改通顺"方案有个致命缺陷：**没有可验证的标准**。改完之后你说不清它到底哪里变好了、有没有丢掉关键信息、下次能不能复现。asd-ste100-skill 的核心创新就在这里——**它把一个被验证了 40 年的工业级写作规范，变成了一个可以机械触发的 Agent Skill**。
+---
+## 核心亮点与功能剖析
+### 亮点 1：把"模糊的改写请求"变成"可枚举的规则集"
+项目没有简单地把 STE100 当成一句 system prompt，而是做了一次关键的**工程化拆分**：
+| 规则类型 | 能否机械检查 | 代表规则 |
+|---|---|---|
+| **结构性规则**（Structural） | ✅ 可以指到具体的词或标点 | 主动语态、每句一个指令、句子 ≤20/25 词、禁用分号、名词簇 ≤3 词、不省略主语/冠词 |
+| **词汇性规则**（Lexical） | ⚠️ 只能做"方向性引导" | 一词一义、一词一性——这两条必须查 ASD 的官方词典 |
+这个拆分直接源于一个**法律边界**：ASD-STE100 Issue 9 虽然可以免费申请获取，但**不允许未经 ASD 书面授权再分发**，只有 8 类指定组织（ASD/AIA 成员协会、成员国防部、航空适航机构等）享有自由复制权，这个开源项目不在其中。所以作者做了一个非常诚实的选择——**只借用"原则"（用最朴素、最常用的词，且每个词始终表达同一个意思），不复制词典**。SKILL.md 里明确写道：*"When exact ASD-approved wording matters, get the standard and check word-by-word against the real dictionary."*
+**这种"法律洁癖"反而是亮点**——很多同类项目会直接把受版权保护的标准内容塞进 prompt 里埋雷，这个项目把边界讲得清清楚楚，对企业使用者非常友好。
+### 亮点 2：双模式设计，避免"一刀切"毁掉所有文体
+Skill 提供了两种模式，应对完全不同的写作场景：
+- **Strict 模式**：用于过程说明、错误消息、工具/函数描述、Agent 间指令——**任何"读错就有代价"的场景**。启用全部规则，包括硬性长度上限。
+- **STE-flavored 模式**：用于 README、PR 描述、变更日志、解释性散文。保留结构性规则，但把词汇性规则降级为建议。SKILL.md 里有一句相当有人味儿的解释：*"a strict rewrite of prose reads as a personality transplant rather than a clarification"*——严格改写散文就像给人做了人格移植手术，清晰了，但也不再是原来那个人了。
+### 亮点 3：对"模糊限定词"的执念，是整个项目最专业的部分
+绝大多数"文本简化"工具都会犯同一个错误：**把"may have failed"简化成"failed"，把"could be caused by X"简化成"X is the cause"**——句子变短了、读起来更爽了，但**意思已经变了**，因为 hedge（模糊限定词）承载的是作者的置信度，**置信度本身就是内容**。
+SKILL.md 把这条规则放在了最显眼的位置：*"Check modality before you commit to a rewrite... A shorter sentence that upgrades a hedge to a fact is not a simplification — it is a different claim."*
+在官方示例文件里，作者甚至自我披露了一次踩坑经历：
+> *"An earlier version of this file rewrote the first sentence as 'The request failed'... Both read better. Both are wrong: the first asserts a failure the system only suspects."*
+这种**在规则冲突时明确排序**（情态规则 > 时态规则）的设计，是把一个"提示词"真正当成"工程规格说明书"来写的态度。
+### 亮点 4：确定性 Linter，让规则可以脱离 LLM 独立运行
+项目附带一个 Python 脚本 `scripts/ste-lint.py`，可以**不依赖任何大模型**地对文本做机械检查，覆盖：分号、软性短语动词（spin up、reach out、dive into 等）、名词化、营销形容词、被动语态、现在完成时、超长句、同义词轮换、悬空连接词。
+作者对这个 Linter 的**能力边界同样毫不遮掩**：
+- 不检查名词簇长度（需要词性标注工具）
+- 不认识列表之外的短语动词（"take off the panel" 会通过检查）
+- **从不标记 hedge 或情态**——因为这需要语义理解
+- 一个有点自嘲的细节：*"The repo's own prose does not lint clean: the rule tables quote the patterns they forbid"*——这个仓库自己的文档也没法通过自己的 Linter，因为规则表里要引用违规样例
+能把自己的局限性写在 README 第一屏的项目，比绝大多数"零缺点"营销页可信得多。
+### 亮点 5：Before / After 示例即战力极强
+来看最典型的**工具描述改写案例**：
+**改写前（55 词，一句塞了三个意思）：**
+> "This tool will attempt to synchronize state across the various backends that have been configured, and if a conflict is detected it may resolve it automatically depending on the strategy that has been set, or otherwise it will surface the conflict for manual review."
+**改写后（拆成四句，每句一个分支）：**
+> "The tool tries to synchronize state across the configured backends. If it finds a conflict, it reads the configured strategy. If the strategy allows automatic resolution, the tool may resolve the conflict without a user. If the tool does not resolve the conflict, it reports the conflict for manual review."
+**注意**：*"will attempt to"* 和 *"may resolve"* 被原样保留——因为它们是 hedge，不是违规。这是很多简化工具做不到的克制。
+### 亮点 6：默认输出极其克制
+**默认只输出改写后的文本，别无他物**——没有开场白、没有模式宣告、没有违规统计、没有"还需要我帮你做什么吗"。这条设计对 Agent 场景至关重要：下游 Agent 要的是可以直接粘贴进工具描述的字符串，不是一篇解释改写过程的散文。想看规则分析，必须显式说 *"show the diff"* 才会返回一张"违规规则 / 原文 / 改写"对照表。
+**这是对"Skill 工程学"的深刻理解**——很多 prompt 工程师会把所有信息一股脑塞进输出里，却忘了调用方（很可能是另一个 Agent）要的是最小可用载荷。
+---
+## 技术架构与上手体验
+### 技术栈与结构
+项目本质是**"一份精心打磨的 Markdown 规范 + 一个 Python 静态检查器"**：
+```
+asd-ste100-skill/
+├── SKILL.md                        # Skill 主入口（Claude Code 读取的说明书）
+├── references/writing-rules.md     # STE100 规则类别总结与引用来源
+├── examples/before-after.md        # 8 个 Before / After 工作示例
+├── scripts/ste-lint.py             # 确定性 Linter（纯 Python，无依赖）
+└── examples/linter-edge-cases.md   # Linter 测试夹具（故意违规）
+```
+这正好符合 Anthropic 在 2025 年 12 月开放的 **Agent Skills 标准**：Skill 是一个包含说明、脚本、资源的文件夹，Claude 通过**渐进式披露**（progressive disclosure）机制按需加载——SKILL.md 进入上下文，脚本只返回输出结果不占 token。
+### 安装部署体验
+**安装堪称丝滑**，两种方式：
+**方式一：npx 一键安装（推荐）**
+```bash
+cd your-project-root
+npx skills add danyuchn/asd-ste100-skill
+```
+（CLI 会向 skills.sh 发送匿名遥测，可用 `DISABLE_TELEMETRY=1` 关闭）
+**方式二：克隆到全局 Skill 目录**
+```bash
+git clone https://github.com/danyuchn/asd-ste100-skill ~/.claude/skills/asd-ste100
+```
+适合想 `git pull` 跟进更新的用户。
+### 触发方式
+触发关键词相当自然，不需要刻意记忆：
+```
+Disambiguate this tool description
+Rewrite this error message so an agent can't misparse it
+Apply ASD-STE100 to this instruction
+```
+或者直接粘贴文本说 *"disambiguate this"* / *"reduce ambiguity in this output"*。想看推理过程就追加 *"show the diff"*。
+**上手门槛极低**——如果你已经会用 Claude Code，这个 Skill 的学习成本接近零。唯一的"学习成本"是**理解它的边界**：它不是语法检查器、不是翻译工具、不是营销文案润色器。
+---
+## 目标人群与收益
+### 最该用它的人
+| 人群 | 具体收益 |
+|---|---|
+| **MCP 工具 / Function Calling 开发者** | 工具描述更精确，下游 LLM 选错工具、传错参数的概率显著下降 |
+| **多 Agent 系统开发者** | Agent 间消息不再因为被动语态或短语动词被误解析，减少"幽灵 Bug" |
+| **Prompt 工程师** | 系统提示词里隐藏的歧义被系统性清除，模型行为更稳定 |
+| **非英语母语的技术写作者** | 有一套可机械检查的规则对照，比"凭感觉写"可靠得多 |
+| **翻译流水线工程师** | 受控语言是机器翻译质量的已知加速器——输入越规范，输出越稳定 |
+### 收益有多大？一个具体场景
+假设你在写一个 MCP 工具的 `description` 字段。没改写之前，LLM 可能这样理解 *"The tool will attempt to synchronize state"*——"attempt" 是不是意味着有时会失败？失败时要不要重试？*"depending on the strategy that has been set"*——哪个策略？在哪里设置？改写之后，这四个分支被拆成四个独立陈述，每个陈述的主语、动作、条件都唯一确定。**这就是把"LLM 猜谜"变成"LLM 读规格书"**。
+---
+## 竞品 / 同类方案对比
+| 方案 | 与 asd-ste100-skill 的差异 | 适合谁 |
+|---|---|---|
+| **直接让 Claude "make this clearer"** | 零规则、零可复现性、每次改写可能不同、可能丢失 hedge | 偶尔改邮件、改博客的非技术用户 |
+| **美国 Plain Language 标准**（Digital.gov、OPM 等） | 面向"公众可读性"，规则宽松得多，没有受控词汇约束 | 政府公文、面向公众的说明文档 |
+| **直接采购 ASD-STE100 标准原文** | 权威、包含完整 900 词词典，但绑定航空维修场景，且需申请获取，不适合 Agent 输出改写 | 航空/防务行业技术作者 |
+| **结构化输出** | 完全消除歧义，但仅适用于可以 JSON 化的数据，不适用于自然语言描述 | API 响应、配置文件 |
+| **Anthropic 官方捆绑 Skill**（如 `/code-review`） | 面向代码任务，与文本清晰化无关 | — |
+| **asd-ste100-skill** | **唯一一个把受控语言标准工程化为 Agent Skill 的开源实现**，规则可机械检查，输出默认最小化 | AI 工具/Agent 开发者 |
+**它的独特生态位**：不是最强大的改写工具，但**是唯一一个把"规则可枚举、改写可解释、边界可披露"三者同时做到的项目**。
+---
+## 局限与不足：必须坦白告诉你的几点
+### 1. 本质上不包含官方词典，词汇规则是"打折"的
+这是最核心的硬约束。没有那 900 词词典，"one word, one meaning" 只能变成"在一篇文档内保持一致"，无法保证用的是 STE 认可的那个词。**对航空/防务领域的合规文档，这个 Skill 不能替代真正的 STE 认证工具**——SKILL.md 自己也明确写了 *"Will not... Guarantee an aerospace/defense-grade STE-compliant document"*。
+### 2. 对英文文本有效，中文无效
+整个规则集建立在英语语法之上（被动语态、现在完成时、短语动词、名词簇、分号……），**对中文写作毫无帮助**。如果你的 Agent 链路用中文通信，这个 Skill 目前帮不上忙。
+### 3. 不能修复"空洞的内容"
+项目原文有一句非常清醒的免责声明：*"A paragraph with nothing to say comes out short, clean, and still empty."* **STE 修的是"形"，不是"神"**。如果你的工具描述本来就逻辑混乱、信息缺失，改写之后只会是一段更整洁的废话。
+### 4. 不适用于所有文体
+README 里明确说 *"Not built for: creative writing, marketing copy, or anything where voice and nuance are the point"*。别拿它去改品牌故事、产品广告——STE 是刻意"扁平、字面化"的，改完会彻底失去人味。
+### 5. 项目相当年轻，长期维护需观察
+仓库创建于 2026 年 7 月，距今只有约 3 个月。当前有 2 个 open issue（10 月初提出，涉及 ste-lint.py 的分句失败和列号漂移、以及一个新功能建议），作者 danyuchn 是一位位于曼谷的独立开发者，同时维护着 pii-guard、fire-planner、cc-audit 等多个 Claude Code Skill。**单人维护 + 快速迭代期**意味着 API 可能变动，生产环境依赖时要有心理准备。
+### 6. 确定性 Linter 的覆盖面有限
+Linter 不检查名词簇（需要 POS 标注）、不识别完整短语动词表、从不标记 hedge——**这些都被作者坦诚写在 README 里**。所以 Linter 的"零违规"只代表"结构检查通过"，不等于语义无歧义。
+---
+## 社区活跃度
+- **⭐ 2,408 Stars / 🍴 131 Forks**（3 个月内）——对一个垂类工具 Skill 来说热度相当高
+- **开源协议 MIT**，可自由商用、集成到内部工具
+- **Issue 数量少但质量高**——最近的 issue 都是具体的 Linter bug 报告，说明社区里真的有人在把它用在生产
+- 作者同时在 skills-hub.ai 等第三方 Skill 市场活跃，分发渠道多元
+---
+## 结语与行动建议
+**终极评判：这是 2026 年 Claude Code Skill 生态里少见的"小而精、小而诚实"作品**。它没有试图做一个万能改写器，而是把一个验证了 40 年的工业标准做了恰到好处的工程化裁剪，把**能机械检查的规则交给 Linter、需要语义理解的规则交给 LLM、超出授权范围的词典明确声明不做**——这种边界感本身就是对 AI 工程最好的示范。
+**给你的行动建议：**
+- **如果你在做 MCP 工具 / Agent 系统**：今天就装上，把你项目里最复杂的那个工具 description 丢进去跑一遍 Strict 模式，再要求 *"show the diff"*，你会立刻看到有多少潜在歧义。这一步几乎零成本。
+- **如果你是 Prompt 工程师**：即使不装这个 Skill，也强烈建议把 SKILL.md 里那张"Structural rules"表格抄进你自己的写作 checklist——它是最短路径的 STE100 精华。
+- **如果你只是写英文博客或文档**：STE-flavored 模式可以帮你清掉营销腔和堆叠 hedge，但对中文写作没用。
+- **如果你要做航空/防务合规文档**：老老实实去 [asd-ste100.org](https://www.asd-ste100.org) 申请官方 Issue 9 标准，这个 Skill 不能替代它。
+**一句话送给你**：AI 时代的沟通质量，取决于你能把歧义从系统里挤出多少——而 asd-ste100-skill 告诉我们，这个"挤出"的动作，其实可以像代码 Lint 一样标准化。

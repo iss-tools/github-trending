@@ -1,6 +1,59 @@
 {
   "all": [
     {
+      "id": "8ac7f73d-301a-4451-959d-c71b1c8ade21",
+      "url": "https://github.com/danyuchn/asd-ste100-skill",
+      "domain": "github.com",
+      "repo": "danyuchn/asd-ste100-skill",
+      "description": "由独立开发者 danyuchn 维护的开源 Claude Code Skill（MIT 协议，约 2400 Star），把验证了 40 年的航空业 ASD-STE100 简化技术英语标准工程化，清除 AI Agent 间英文通信里的被动语态、短语动词、名词堆叠等歧义，降低下游模型误读风险。npx 一键安装，规则可机械检查，局限边界披露透明。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-11T12:04:10.276Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "ASD-STE100 Simplified Technical English rules, repurposed as a Claude Code skill for rewriting ambiguous agent-facing English. - danyuchn/asd-ste100-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code Skill",
+          "ASD-STE100",
+          "Prompt 工程",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "asd-ste100-skill 深度评测：把航空业的“保命写作规范”搬进 AI Agent 时代",
+        "ability": [
+          "基于 ASD-STE100 规则改写英文工具描述、错误消息和 Agent 指令，消除歧义",
+          "提供 Strict 与 STE-flavored 双模式，分别适配说明书类文本和 README 等散文",
+          "自带纯 Python 确定性 Linter，不依赖大模型即可机械检查被动语态、短语动词、超长句等 9 类问题",
+          "保留 hedge 模糊限定词，只改形式不改原意，避免把“可能失败”简化成“失败”",
+          "默认最小化输出，仅返回改写文本，说 show the diff 可查看违规规则对照表"
+        ],
+        "summary": "一个把航空业 ASD-STE100 防误读写作标准做成 Claude Code Skill 的开源项目，专治 AI Agent 之间“看起来像人话、却容易被另一个 AI 误读”的英文。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "文本处理"
+        ],
+        "suitable": [
+          "MCP 工具 / Function Calling 开发者",
+          "多 Agent 系统开发者",
+          "Prompt 工程师",
+          "非英语母语的技术写作者",
+          "翻译流水线工程师"
+        ],
+        "description": "由独立开发者 danyuchn 维护的开源 Claude Code Skill（MIT 协议，约 2400 Star），把验证了 40 年的航空业 ASD-STE100 简化技术英语标准工程化，清除 AI Agent 间英文通信里的被动语态、短语动词、名词堆叠等歧义，降低下游模型误读风险。npx 一键安装，规则可机械检查，局限边界披露透明。"
+      },
+      "type": "project",
+      "dateAdded": "20261011"
+    },
+    {
       "id": "4a0c7397-ded2-465a-9924-5240f2c761f5",
       "url": "https://github.com/chrislgarry/Apollo-11",
       "domain": "github.com",

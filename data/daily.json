@@ -68752,9 +68752,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 84844,
-      "forks": 18388,
-      "starsAdded": 25793,
+      "stars": 86236,
+      "forks": 18752,
+      "starsAdded": 25585,
       "createdAt": "2026-10-10T16:00:02.085Z",
       "metaData": {
         "forks": "0",
@@ -68826,9 +68826,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 28163,
-      "forks": 2387,
-      "starsAdded": 5805,
+      "stars": 28299,
+      "forks": 2404,
+      "starsAdded": 3977,
       "createdAt": "2026-10-10T16:00:02.099Z",
       "metaData": {
         "forks": "0",
@@ -68887,9 +68887,9 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 15705,
-      "forks": 2521,
-      "starsAdded": 3222,
+      "stars": 15843,
+      "forks": 2552,
+      "starsAdded": 2956,
       "createdAt": "2026-10-10T16:00:02.108Z",
       "metaData": {
         "forks": "0",
@@ -68997,9 +68997,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 49484,
-      "forks": 3137,
-      "starsAdded": 1190,
+      "stars": 49542,
+      "forks": 3141,
+      "starsAdded": 1083,
       "createdAt": "2026-10-10T16:00:02.117Z",
       "metaData": {
         "forks": "0",
@@ -69059,8 +69059,8 @@
       "repo": "bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 50688,
-      "forks": 10236,
+      "stars": 50744,
+      "forks": 10246,
       "starsAdded": 872,
       "createdAt": "2026-10-11T11:00:01.811Z",
       "metaData": {
@@ -69178,8 +69178,8 @@
       "repo": "lyogavin/airllm",
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 36088,
-      "forks": 3788,
+      "stars": 36105,
+      "forks": 3789,
       "starsAdded": 541,
       "createdAt": "2026-10-11T11:00:01.820Z",
       "metaData": {
@@ -69245,8 +69245,8 @@
       "repo": "chrislgarry/Apollo-11",
       "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
       "language": "Assembly",
-      "stars": 73845,
-      "forks": 8082,
+      "stars": 73867,
+      "forks": 8085,
       "starsAdded": 496,
       "createdAt": "2026-10-11T11:00:01.823Z",
       "metaData": {
@@ -69357,6 +69357,68 @@
           "注重隐私人士"
         ],
         "description": "PPT Master 是一款开源的 AI Agent 工作流，能将 PDF、Word 等文档转换为真正可编辑的 PowerPoint 原生文件（而非图片）。它支持自定义模板、本地运行保障数据隐私，并能通过 AI 进行多轮修改与美化，是追求专业性与可编辑性用户的高效工具。"
+      }
+    },
+    {
+      "id": "c4189046-9b4a-447c-9bf7-8838a84aa236",
+      "dateAdded": "20261011",
+      "type": "github-daily",
+      "url": "https://github.com/pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "stars": 104263,
+      "forks": 32024,
+      "starsAdded": 314,
+      "createdAt": "2026-10-10T16:00:02.140Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "autograd",
+          "deep-learning",
+          "gpu",
+          "machine-learning",
+          "neural-network",
+          "numpy",
+          "python",
+          "tensor"
+        ],
+        "license": "License",
+        "homepage": "https://pytorch.org",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch"
+      },
+      "summaryData": {
+        "tags": [
+          "PyTorch",
+          "深度学习",
+          "GitHub",
+          "开源框架",
+          "AI"
+        ],
+        "cover": "",
+        "title": "PyTorch 深度评测：为什么它能统治 AI 时代",
+        "ability": [
+          "动态图 + 录音带式自动求导，像写 Python 一样写神经网络",
+          "torch.compile 一行代码加速训练与推理",
+          "覆盖 NVIDIA/AMD/Intel/TPU 等全硬件后端",
+          "FSDP/DDP 原生分布式训练支持",
+          "HuggingFace、Lightning 等繁荣生态的底层基座"
+        ],
+        "summary": "GitHub 上的“炼丹神器”，以动态图设计成为学术界与大模型领域的事实标准。",
+        "category": [
+          "AI 开发",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 研究员与 PhD",
+          "大模型算法工程师",
+          "深度学习入门学生",
+          "生产部署工程师",
+          "框架底层贡献者"
+        ],
+        "description": "PyTorch 是 Meta 发起、Linux 基金会托管的深度学习框架，凭借动态图与 Python 优先设计成为学术界和大模型领域的事实标准。评测从架构原理、上手实战到竞品对比与局限全面剖析，附可运行代码示例。"
       }
     },
     {
@@ -69627,68 +69689,6 @@
           "需要一套代码覆盖鸿蒙生态的国内团队"
         ],
         "description": "Flutter 是 Google 开源的跨平台 UI 框架，GitHub Star 超 17.8 万。它用 Dart 语言加 Impeller 自绘引擎直接绘制像素，绕过原生控件，实现像素级一致与逼近原生的性能，BMW、阿里、Google Pay 等均在生产使用。短板是包体积偏大、无官方热更新、Dart 生态相对小众。"
-      }
-    },
-    {
-      "id": "c4189046-9b4a-447c-9bf7-8838a84aa236",
-      "dateAdded": "20261011",
-      "type": "github-daily",
-      "url": "https://github.com/pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "language": "Python",
-      "stars": 104251,
-      "forks": 32015,
-      "starsAdded": 84,
-      "createdAt": "2026-10-10T16:00:02.140Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "autograd",
-          "deep-learning",
-          "gpu",
-          "machine-learning",
-          "neural-network",
-          "numpy",
-          "python",
-          "tensor"
-        ],
-        "license": "License",
-        "homepage": "https://pytorch.org",
-        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch"
-      },
-      "summaryData": {
-        "tags": [
-          "PyTorch",
-          "深度学习",
-          "GitHub",
-          "开源框架",
-          "AI"
-        ],
-        "cover": "",
-        "title": "PyTorch 深度评测：为什么它能统治 AI 时代",
-        "ability": [
-          "动态图 + 录音带式自动求导，像写 Python 一样写神经网络",
-          "torch.compile 一行代码加速训练与推理",
-          "覆盖 NVIDIA/AMD/Intel/TPU 等全硬件后端",
-          "FSDP/DDP 原生分布式训练支持",
-          "HuggingFace、Lightning 等繁荣生态的底层基座"
-        ],
-        "summary": "GitHub 上的“炼丹神器”，以动态图设计成为学术界与大模型领域的事实标准。",
-        "category": [
-          "AI 开发",
-          "开源项目",
-          "开发工具"
-        ],
-        "suitable": [
-          "AI 研究员与 PhD",
-          "大模型算法工程师",
-          "深度学习入门学生",
-          "生产部署工程师",
-          "框架底层贡献者"
-        ],
-        "description": "PyTorch 是 Meta 发起、Linux 基金会托管的深度学习框架，凭借动态图与 Python 优先设计成为学术界和大模型领域的事实标准。评测从架构原理、上手实战到竞品对比与局限全面剖析，附可运行代码示例。"
       }
     },
     {
