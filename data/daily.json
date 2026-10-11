@@ -69753,5 +69753,516 @@
         "description": "TensorFlow 是 Google Brain 于 2015 年开源的深度学习框架，GitHub Star 长期位居 AI 项目前列。评测深入剖析其 XLA 编译器、Keras 3 多后端架构与全家桶生态（Serving/TFLite/TF.js/TFX），并与 PyTorch、JAX 横向对比。核心结论：学术界份额下滑至约 15%，但工业界仍以 38% 份额领先，是端侧部署与生产落地几乎无替代的选择。文章附版本演进表、避坑指南与四阶段学习路径。"
       }
     }
+  ],
+  "20261012": [
+    {
+      "id": "2f8ab5b5-0a80-4814-bfdc-05f396fbe989",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 94522,
+      "forks": 21105,
+      "starsAdded": 25585,
+      "createdAt": "2026-10-11T17:00:02.075Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "ctf",
+          "decompiler",
+          "developer-tools",
+          "disassembler",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "reverse-engineering",
+          "static-analysis"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rea.tools",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "8b472b40-2b35-438c-bed8-86a85f7e52ae",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "repo": "boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 29041,
+      "forks": 2493,
+      "starsAdded": 3977,
+      "createdAt": "2026-10-11T17:00:02.083Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://discord.gg/BHFztBPUe",
+        "description": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5"
+      },
+      "summaryData": {
+        "tags": [
+          "PS5",
+          "模拟器",
+          "Relinker",
+          "Vulkan",
+          "开源"
+        ],
+        "cover": "",
+        "title": "AnyPS5 深度评测：用重链接而非模拟的方式让 PS5 游戏跑上 PC",
+        "ability": [
+          "将 PS5 ELF 可执行文件重链接为 Windows/Linux 原生程序（Relinker）",
+          "在 core/libs/prx 下用 PC 原生 API 重实现 PS5 系统库（PRX 翻译层）",
+          "内置 PS5 着色器重编译器，把 GPU 字节码转成 Vulkan 可用的 SPIR-V",
+          "通过 SDL2 开箱支持 DualSense 手柄摇杆与扳机，可自定义键鼠映射",
+          "采用 fail-fast 严格错误处理，遇未知状态直接抛 std::runtime_error 便于调试"
+        ],
+        "summary": "AnyPS5 是一个开源项目，把 PS5 游戏的可执行文件'重新链接'成 Windows/Linux 原生程序，思路类似 Wine 而非传统模拟器，目前已在 2D 独立游戏上跑通，但距离 3A 大作还很遥远。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "游戏兼容层"
+        ],
+        "suitable": [
+          "C++ 系统级开发者",
+          "逆向工程与模拟圈爱好者",
+          "关注 PS5 兼容层的极客玩家",
+          "游戏保存（Preservation）研究者",
+          "想学习底层架构的学生"
+        ],
+        "description": "AnyPS5 由个人开发者 boykopovar 于 2026 年 9 月开源，押注 PS5 与 PC 共享 x86-64 指令集这一硬件巧合，绕开传统模拟器路线，用'重链接 + PRX 翻译 + 着色器重编译'三件套把 PS5 游戏变成 PC 原生程序。目前官方验证 Dreaming Sarah 稳定 60 FPS、Dead Cells 可由第三方成功启动，但仍未发布任何 Release 二进制。GPL-2.0 协议，思路新颖上限高，但工程量巨大且存在法律灰色地带。"
+      }
+    },
+    {
+      "id": "90e6751c-f4ce-4029-a8f4-cd8ce5d3aad4",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/storytold/artcraft",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 16782,
+      "forks": 2724,
+      "starsAdded": 2956,
+      "createdAt": "2026-10-11T17:00:02.088Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      }
+    },
+    {
+      "id": "8fe5d580-54a4-4570-9404-0654bbc4335c",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 49917,
+      "forks": 3167,
+      "starsAdded": 1083,
+      "createdAt": "2026-10-11T17:00:02.093Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://cathrynlavery.github.io/diagram-design/",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
+      "id": "14a77d39-3ec3-4205-a2bb-bc5119378ed7",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 51118,
+      "forks": 10290,
+      "starsAdded": 872,
+      "createdAt": "2026-10-11T17:00:02.105Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-globe",
+          "cesium",
+          "flight-tracking",
+          "geospatial",
+          "geospatial-intelligence",
+          "gis",
+          "osint",
+          "photogrammetry",
+          "satellite-tracking",
+          "spatial-intelligence",
+          "webgl",
+          "worldview"
+        ],
+        "license": "License",
+        "homepage": "https://maptheworld.ai/",
+        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+      },
+      "summaryData": {
+        "tags": [
+          "CesiumJS",
+          "Google Maps API",
+          "OpenAI Realtime",
+          "GEOINT",
+          "三维地球"
+        ],
+        "cover": "",
+        "title": "God’s Eye View 深度评测",
+        "ability": [
+          "三维地球可视化",
+          "13种实时图层叠加",
+          "电影化视觉风格切换",
+          "语音AI白板交互",
+          "多源OSINT数据集成"
+        ],
+        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "category": [
+          "数据可视化",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "地理空间爱好者",
+          "OSINT研究者",
+          "前端/3D开发者",
+          "应急可视化人员",
+          "技术好奇心强的用户"
+        ],
+        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
+      }
+    },
+    {
+      "id": "03fedfdb-09d7-4730-9e9f-b26f596badf1",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/lyogavin/airllm",
+      "repo": "lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 36254,
+      "forks": 3802,
+      "starsAdded": 541,
+      "createdAt": "2026-10-11T17:00:02.113Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "chinese-llm",
+          "chinese-nlp",
+          "finetune",
+          "generative-ai",
+          "instruct-gpt",
+          "instruction-set",
+          "llama",
+          "llm",
+          "lora",
+          "open-models",
+          "open-source",
+          "open-source-models",
+          "qlora"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "AirLLM 70B inference with single 4GB GPU. Contribute to lyogavin/airllm development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "大模型推理",
+          "低显存",
+          "GitHub开源",
+          "MoE模型",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "AirLLM：让 2.8 万亿参数模型在 4GB 显存上运行的革命性工具",
+        "ability": [
+          "层流式加载技术",
+          "专家级流式加载（支持 MoE）",
+          "极致低显存占用",
+          "广泛的模型兼容性",
+          "跨平台支持（含 CPU/Mac）"
+        ],
+        "summary": "AirLLM 是一个能突破显存瓶颈，在消费级显卡（甚至 4GB 显存）上运行超大模型的推理库。",
+        "category": [
+          "开发工具",
+          "人工智能",
+          "系统优化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学术研究人员",
+          "预算有限的初创团队",
+          "学生党",
+          "AI 爱好者"
+        ],
+        "description": "AirLLM 通过创新的层流式加载和专家流式加载技术，打破了传统大模型推理对显存的高昂需求。它无需复杂的模型量化，即可让单张 4GB 显卡运行 70B 模型，甚至让 2.8T 参数的 Kimi K3 在不到 4GB 显存上跑起来，非常适合资源受限的本地实验与离线评估。"
+      }
+    },
+    {
+      "id": "0ea168d7-e06e-46ec-9b72-19a5d8e4543e",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "repo": "chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "stars": 74021,
+      "forks": 8090,
+      "starsAdded": 496,
+      "createdAt": "2026-10-11T17:00:02.116Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agc",
+          "apollo",
+          "hacktoberfest",
+          "nasa"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules. - chrislgarry/Apollo-11"
+      },
+      "summaryData": {
+        "tags": [
+          "Apollo-11",
+          "汇编语言",
+          "航天科技",
+          "GitHub",
+          "计算机史"
+        ],
+        "cover": "",
+        "title": "Apollo-11：把人类登月飞船的原始代码搬上GitHub的'电子标本'",
+        "ability": [
+          "提供阿波罗11号指令舱与登月舱完整原始源码（Comanche055/Luminary099）",
+          "代码注释密度极高，像读工程文档一样读汇编",
+          "展示早期实时操作系统（RTOS）优先级调度与内存管理的设计雏形",
+          "保存Margaret Hamilton团队亲笔签署的原始技术档案",
+          "可配合Virtual AGC工具链汇编并模拟真实登月流程"
+        ],
+        "summary": "阿波罗11号登月计算机4万行原始汇编源码的开源仓库，人类软件史上最珍贵的'活化石'。",
+        "category": [
+          "开源项目",
+          "技术史料",
+          "编程学习"
+        ],
+        "suitable": [
+          "嵌入式/航天/RTOS工程师",
+          "计算机专业学生与技术爱好者",
+          "技术写作者与科技史爱好者",
+          "想了解软件工程起源的开发者",
+          "对硬核开源项目感兴趣的普通读者"
+        ],
+        "description": "由前NASA实习生Chris Garry于2016年上传，完整收录MIT仪器实验室为阿波罗11号编写的AGC制导计算机全部汇编源码，Star超7万。代码注释详尽如散文，是研究早期嵌入式系统与软件工程史的第一手资料。注意：它只是源码标本，需配合Virtual AGC工具链才能编译运行。"
+      }
+    },
+    {
+      "id": "5d5b7ab3-3d7f-4002-b2a5-3050ec33fec2",
+      "dateAdded": "20261012",
+      "type": "github-daily",
+      "url": "https://github.com/pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "stars": 104369,
+      "forks": 32074,
+      "starsAdded": 314,
+      "createdAt": "2026-10-11T17:00:02.109Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "autograd",
+          "deep-learning",
+          "gpu",
+          "machine-learning",
+          "neural-network",
+          "numpy",
+          "python",
+          "tensor"
+        ],
+        "license": "License",
+        "homepage": "https://pytorch.org",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch"
+      },
+      "summaryData": {
+        "tags": [
+          "PyTorch",
+          "深度学习",
+          "GitHub",
+          "开源框架",
+          "AI"
+        ],
+        "cover": "",
+        "title": "PyTorch 深度评测：为什么它能统治 AI 时代",
+        "ability": [
+          "动态图 + 录音带式自动求导，像写 Python 一样写神经网络",
+          "torch.compile 一行代码加速训练与推理",
+          "覆盖 NVIDIA/AMD/Intel/TPU 等全硬件后端",
+          "FSDP/DDP 原生分布式训练支持",
+          "HuggingFace、Lightning 等繁荣生态的底层基座"
+        ],
+        "summary": "GitHub 上的“炼丹神器”，以动态图设计成为学术界与大模型领域的事实标准。",
+        "category": [
+          "AI 开发",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 研究员与 PhD",
+          "大模型算法工程师",
+          "深度学习入门学生",
+          "生产部署工程师",
+          "框架底层贡献者"
+        ],
+        "description": "PyTorch 是 Meta 发起、Linux 基金会托管的深度学习框架，凭借动态图与 Python 优先设计成为学术界和大模型领域的事实标准。评测从架构原理、上手实战到竞品对比与局限全面剖析，附可运行代码示例。"
+      }
+    }
   ]
 }
