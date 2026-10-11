@@ -68752,9 +68752,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 71056,
-      "forks": 14903,
-      "starsAdded": 25784,
+      "stars": 71927,
+      "forks": 15095,
+      "starsAdded": 25793,
       "createdAt": "2026-10-10T16:00:02.085Z",
       "metaData": {
         "forks": "0",
@@ -68826,9 +68826,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 26618,
-      "forks": 2223,
-      "starsAdded": 5831,
+      "stars": 26761,
+      "forks": 2240,
+      "starsAdded": 5805,
       "createdAt": "2026-10-10T16:00:02.099Z",
       "metaData": {
         "forks": "0",
@@ -68887,9 +68887,9 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 14340,
-      "forks": 2258,
-      "starsAdded": 3217,
+      "stars": 14429,
+      "forks": 2278,
+      "starsAdded": 3222,
       "createdAt": "2026-10-10T16:00:02.108Z",
       "metaData": {
         "forks": "0",
@@ -68946,9 +68946,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 284393,
-      "forks": 23807,
-      "starsAdded": 1737,
+      "stars": 284457,
+      "forks": 23808,
+      "starsAdded": 1736,
       "createdAt": "2026-10-10T16:00:02.127Z",
       "metaData": {
         "forks": "0",
@@ -68997,9 +68997,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 48886,
-      "forks": 3090,
-      "starsAdded": 1189,
+      "stars": 48923,
+      "forks": 3091,
+      "starsAdded": 1190,
       "createdAt": "2026-10-10T16:00:02.117Z",
       "metaData": {
         "forks": "0",
@@ -69059,9 +69059,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 28789,
-      "forks": 3276,
-      "starsAdded": 626,
+      "stars": 28810,
+      "forks": 3277,
+      "starsAdded": 625,
       "createdAt": "2026-10-10T16:00:02.148Z",
       "metaData": {
         "forks": "0",
@@ -69112,9 +69112,9 @@
       "repo": "hugohe3/ppt-master",
       "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "language": "Python",
-      "stars": 59384,
-      "forks": 4676,
-      "starsAdded": 515,
+      "stars": 59417,
+      "forks": 4679,
+      "starsAdded": 461,
       "createdAt": "2026-10-10T16:00:02.134Z",
       "metaData": {
         "forks": "0",
@@ -69176,9 +69176,9 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 218224,
-      "forks": 21979,
-      "starsAdded": 279,
+      "stars": 218256,
+      "forks": 21980,
+      "starsAdded": 278,
       "createdAt": "2026-10-10T16:00:02.155Z",
       "metaData": {
         "forks": "0",
@@ -69227,8 +69227,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 26291,
-      "forks": 1890,
+      "stars": 26306,
+      "forks": 1891,
       "starsAdded": 178,
       "createdAt": "2026-10-10T16:00:02.124Z",
       "metaData": {
@@ -69294,6 +69294,78 @@
       }
     },
     {
+      "id": "55f60538-02f7-4a4b-ad55-2e4f8ed88769",
+      "dateAdded": "20261011",
+      "type": "github-daily",
+      "url": "https://github.com/huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "language": "Python",
+      "stars": 167241,
+      "forks": 34797,
+      "starsAdded": 96,
+      "createdAt": "2026-10-10T16:00:02.142Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "audio",
+          "deep-learning",
+          "deepseek",
+          "gemma",
+          "glm",
+          "hacktoberfest",
+          "llm",
+          "machine-learning",
+          "model-hub",
+          "natural-language-processing",
+          "nlp",
+          "pretrained-models",
+          "python",
+          "pytorch",
+          "pytorch-transformers",
+          "qwen",
+          "speech-recognition",
+          "transformer",
+          "vlm"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://huggingface.co/transformers",
+        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.  - GitHub - huggingface/transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+      },
+      "summaryData": {
+        "tags": [
+          "深度学习",
+          "NLP",
+          "HuggingFace",
+          "预训练模型",
+          "Python"
+        ],
+        "cover": "",
+        "title": "深度评测 Hugging Face Transformers：AI 生态的“瑞士军刀”",
+        "ability": [
+          "多模态任务统一接口",
+          "极简 Pipeline 推理",
+          "一站式训练脚手架",
+          "跨框架互通",
+          "深度生态集成"
+        ],
+        "summary": "统一模型定义的 AI 生态中枢，让多模态任务开发变得极简。",
+        "category": [
+          "开发工具",
+          "人工智能"
+        ],
+        "suitable": [
+          "AI 研究人员",
+          "机器学习工程师",
+          "应用开发者",
+          "数据科学家",
+          "算法初学者"
+        ],
+        "description": "Transformers 是 Hugging Face 推出的开源库，统一了文本、图像、音频和多模态的模型接口。它提供 Pipeline 快速推理、Trainer 训练脚手架，并与 Hub 深度打通，极大降低了 AI 开发门槛。"
+      }
+    },
+    {
       "id": "fd171a4a-9718-42fd-83fb-8fd0412345c3",
       "dateAdded": "20261011",
       "type": "github-daily",
@@ -69301,9 +69373,9 @@
       "repo": "flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "language": "Dart",
-      "stars": 179497,
-      "forks": 33595,
-      "starsAdded": 164,
+      "stars": 179512,
+      "forks": 33597,
+      "starsAdded": 88,
       "createdAt": "2026-10-10T16:00:02.130Z",
       "metaData": {
         "forks": "0",
@@ -69367,78 +69439,6 @@
       }
     },
     {
-      "id": "55f60538-02f7-4a4b-ad55-2e4f8ed88769",
-      "dateAdded": "20261011",
-      "type": "github-daily",
-      "url": "https://github.com/huggingface/transformers",
-      "repo": "huggingface/transformers",
-      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
-      "language": "Python",
-      "stars": 167226,
-      "forks": 34796,
-      "starsAdded": 94,
-      "createdAt": "2026-10-10T16:00:02.142Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "audio",
-          "deep-learning",
-          "deepseek",
-          "gemma",
-          "glm",
-          "hacktoberfest",
-          "llm",
-          "machine-learning",
-          "model-hub",
-          "natural-language-processing",
-          "nlp",
-          "pretrained-models",
-          "python",
-          "pytorch",
-          "pytorch-transformers",
-          "qwen",
-          "speech-recognition",
-          "transformer",
-          "vlm"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://huggingface.co/transformers",
-        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.  - GitHub - huggingface/transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
-      },
-      "summaryData": {
-        "tags": [
-          "深度学习",
-          "NLP",
-          "HuggingFace",
-          "预训练模型",
-          "Python"
-        ],
-        "cover": "",
-        "title": "深度评测 Hugging Face Transformers：AI 生态的“瑞士军刀”",
-        "ability": [
-          "多模态任务统一接口",
-          "极简 Pipeline 推理",
-          "一站式训练脚手架",
-          "跨框架互通",
-          "深度生态集成"
-        ],
-        "summary": "统一模型定义的 AI 生态中枢，让多模态任务开发变得极简。",
-        "category": [
-          "开发工具",
-          "人工智能"
-        ],
-        "suitable": [
-          "AI 研究人员",
-          "机器学习工程师",
-          "应用开发者",
-          "数据科学家",
-          "算法初学者"
-        ],
-        "description": "Transformers 是 Hugging Face 推出的开源库，统一了文本、图像、音频和多模态的模型接口。它提供 Pipeline 快速推理、Trainer 训练脚手架，并与 Hub 深度打通，极大降低了 AI 开发门槛。"
-      }
-    },
-    {
       "id": "c4189046-9b4a-447c-9bf7-8838a84aa236",
       "dateAdded": "20261011",
       "type": "github-daily",
@@ -69446,9 +69446,9 @@
       "repo": "pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 104130,
+      "stars": 104137,
       "forks": 31955,
-      "starsAdded": 81,
+      "starsAdded": 84,
       "createdAt": "2026-10-10T16:00:02.140Z",
       "metaData": {
         "forks": "0",
@@ -69508,9 +69508,9 @@
       "repo": "tensorflow/tensorflow",
       "description": "An Open Source Machine Learning Framework for Everyone",
       "language": "C++",
-      "stars": 200715,
+      "stars": 200721,
       "forks": 78963,
-      "starsAdded": 24,
+      "starsAdded": 26,
       "createdAt": "2026-10-10T16:00:02.132Z",
       "metaData": {
         "forks": "0",
