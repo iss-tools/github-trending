@@ -1,6 +1,64 @@
 {
   "all": [
     {
+      "id": "4a0c7397-ded2-465a-9924-5240f2c761f5",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "domain": "github.com",
+      "repo": "chrislgarry/Apollo-11",
+      "description": "由前NASA实习生Chris Garry于2016年上传，完整收录MIT仪器实验室为阿波罗11号编写的AGC制导计算机全部汇编源码，Star超7万。代码注释详尽如散文，是研究早期嵌入式系统与软件工程史的第一手资料。注意：它只是源码标本，需配合Virtual AGC工具链才能编译运行。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-11T11:05:50.282Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agc",
+          "apollo",
+          "hacktoberfest",
+          "nasa"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules. - chrislgarry/Apollo-11"
+      },
+      "summaryData": {
+        "tags": [
+          "Apollo-11",
+          "汇编语言",
+          "航天科技",
+          "GitHub",
+          "计算机史"
+        ],
+        "cover": "",
+        "title": "Apollo-11：把人类登月飞船的原始代码搬上GitHub的'电子标本'",
+        "ability": [
+          "提供阿波罗11号指令舱与登月舱完整原始源码（Comanche055/Luminary099）",
+          "代码注释密度极高，像读工程文档一样读汇编",
+          "展示早期实时操作系统（RTOS）优先级调度与内存管理的设计雏形",
+          "保存Margaret Hamilton团队亲笔签署的原始技术档案",
+          "可配合Virtual AGC工具链汇编并模拟真实登月流程"
+        ],
+        "summary": "阿波罗11号登月计算机4万行原始汇编源码的开源仓库，人类软件史上最珍贵的'活化石'。",
+        "category": [
+          "开源项目",
+          "技术史料",
+          "编程学习"
+        ],
+        "suitable": [
+          "嵌入式/航天/RTOS工程师",
+          "计算机专业学生与技术爱好者",
+          "技术写作者与科技史爱好者",
+          "想了解软件工程起源的开发者",
+          "对硬核开源项目感兴趣的普通读者"
+        ],
+        "description": "由前NASA实习生Chris Garry于2016年上传，完整收录MIT仪器实验室为阿波罗11号编写的AGC制导计算机全部汇编源码，Star超7万。代码注释详尽如散文，是研究早期嵌入式系统与软件工程史的第一手资料。注意：它只是源码标本，需配合Virtual AGC工具链才能编译运行。"
+      },
+      "type": "project",
+      "dateAdded": "20261011"
+    },
+    {
       "id": "23748a0d-78bc-4270-891b-faa926da2c3a",
       "url": "https://github.com/ranxianglei/billion-context",
       "domain": "github.com",
@@ -19128,8 +19186,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T04:45:31.220Z",
       "metaData": {
-        "forks": "3488",
-        "stars": "33230",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "chinese-llm",
           "chinese-nlp",

@@ -68752,8 +68752,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 80839,
-      "forks": 17464,
+      "stars": 84844,
+      "forks": 18388,
       "starsAdded": 25793,
       "createdAt": "2026-10-10T16:00:02.085Z",
       "metaData": {
@@ -68826,8 +68826,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 27693,
-      "forks": 2343,
+      "stars": 28163,
+      "forks": 2387,
       "starsAdded": 5805,
       "createdAt": "2026-10-10T16:00:02.099Z",
       "metaData": {
@@ -68887,8 +68887,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 15302,
-      "forks": 2451,
+      "stars": 15705,
+      "forks": 2521,
       "starsAdded": 3222,
       "createdAt": "2026-10-10T16:00:02.108Z",
       "metaData": {
@@ -68946,8 +68946,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 284974,
-      "forks": 23854,
+      "stars": 285167,
+      "forks": 23864,
       "starsAdded": 1736,
       "createdAt": "2026-10-10T16:00:02.127Z",
       "metaData": {
@@ -68997,8 +68997,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 49310,
-      "forks": 3122,
+      "stars": 49484,
+      "forks": 3137,
       "starsAdded": 1190,
       "createdAt": "2026-10-10T16:00:02.117Z",
       "metaData": {
@@ -69052,6 +69052,72 @@
       }
     },
     {
+      "id": "d2137745-ff72-4b5c-aeb5-bde46e255aa0",
+      "dateAdded": "20261011",
+      "type": "github-daily",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 50688,
+      "forks": 10236,
+      "starsAdded": 872,
+      "createdAt": "2026-10-11T11:00:01.811Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-globe",
+          "cesium",
+          "flight-tracking",
+          "geospatial",
+          "geospatial-intelligence",
+          "gis",
+          "osint",
+          "photogrammetry",
+          "satellite-tracking",
+          "spatial-intelligence",
+          "webgl",
+          "worldview"
+        ],
+        "license": "License",
+        "homepage": "https://maptheworld.ai/",
+        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+      },
+      "summaryData": {
+        "tags": [
+          "CesiumJS",
+          "Google Maps API",
+          "OpenAI Realtime",
+          "GEOINT",
+          "三维地球"
+        ],
+        "cover": "",
+        "title": "God’s Eye View 深度评测",
+        "ability": [
+          "三维地球可视化",
+          "13种实时图层叠加",
+          "电影化视觉风格切换",
+          "语音AI白板交互",
+          "多源OSINT数据集成"
+        ],
+        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "category": [
+          "数据可视化",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "地理空间爱好者",
+          "OSINT研究者",
+          "前端/3D开发者",
+          "应急可视化人员",
+          "技术好奇心强的用户"
+        ],
+        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
+      }
+    },
+    {
       "id": "bddcb2a4-afdf-45f4-9762-6bcab31322b6",
       "dateAdded": "20261011",
       "type": "github-daily",
@@ -69059,8 +69125,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 28945,
-      "forks": 3287,
+      "stars": 28974,
+      "forks": 3288,
       "starsAdded": 625,
       "createdAt": "2026-10-10T16:00:02.148Z",
       "metaData": {
@@ -69105,6 +69171,131 @@
       }
     },
     {
+      "id": "4e0f06ab-fede-4ce2-a33a-f7c07d0d2f58",
+      "dateAdded": "20261011",
+      "type": "github-daily",
+      "url": "https://github.com/lyogavin/airllm",
+      "repo": "lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 36088,
+      "forks": 3788,
+      "starsAdded": 541,
+      "createdAt": "2026-10-11T11:00:01.820Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "chinese-llm",
+          "chinese-nlp",
+          "finetune",
+          "generative-ai",
+          "instruct-gpt",
+          "instruction-set",
+          "llama",
+          "llm",
+          "lora",
+          "open-models",
+          "open-source",
+          "open-source-models",
+          "qlora"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "AirLLM 70B inference with single 4GB GPU. Contribute to lyogavin/airllm development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "大模型推理",
+          "低显存",
+          "GitHub开源",
+          "MoE模型",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "AirLLM：让 2.8 万亿参数模型在 4GB 显存上运行的革命性工具",
+        "ability": [
+          "层流式加载技术",
+          "专家级流式加载（支持 MoE）",
+          "极致低显存占用",
+          "广泛的模型兼容性",
+          "跨平台支持（含 CPU/Mac）"
+        ],
+        "summary": "AirLLM 是一个能突破显存瓶颈，在消费级显卡（甚至 4GB 显存）上运行超大模型的推理库。",
+        "category": [
+          "开发工具",
+          "人工智能",
+          "系统优化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学术研究人员",
+          "预算有限的初创团队",
+          "学生党",
+          "AI 爱好者"
+        ],
+        "description": "AirLLM 通过创新的层流式加载和专家流式加载技术，打破了传统大模型推理对显存的高昂需求。它无需复杂的模型量化，即可让单张 4GB 显卡运行 70B 模型，甚至让 2.8T 参数的 Kimi K3 在不到 4GB 显存上跑起来，非常适合资源受限的本地实验与离线评估。"
+      }
+    },
+    {
+      "id": "a3530ba8-bc0a-4b61-8871-06dba132f476",
+      "dateAdded": "20261011",
+      "type": "github-daily",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "repo": "chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "stars": 73845,
+      "forks": 8082,
+      "starsAdded": 496,
+      "createdAt": "2026-10-11T11:00:01.823Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agc",
+          "apollo",
+          "hacktoberfest",
+          "nasa"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules. - chrislgarry/Apollo-11"
+      },
+      "summaryData": {
+        "tags": [
+          "Apollo-11",
+          "汇编语言",
+          "航天科技",
+          "GitHub",
+          "计算机史"
+        ],
+        "cover": "",
+        "title": "Apollo-11：把人类登月飞船的原始代码搬上GitHub的'电子标本'",
+        "ability": [
+          "提供阿波罗11号指令舱与登月舱完整原始源码（Comanche055/Luminary099）",
+          "代码注释密度极高，像读工程文档一样读汇编",
+          "展示早期实时操作系统（RTOS）优先级调度与内存管理的设计雏形",
+          "保存Margaret Hamilton团队亲笔签署的原始技术档案",
+          "可配合Virtual AGC工具链汇编并模拟真实登月流程"
+        ],
+        "summary": "阿波罗11号登月计算机4万行原始汇编源码的开源仓库，人类软件史上最珍贵的'活化石'。",
+        "category": [
+          "开源项目",
+          "技术史料",
+          "编程学习"
+        ],
+        "suitable": [
+          "嵌入式/航天/RTOS工程师",
+          "计算机专业学生与技术爱好者",
+          "技术写作者与科技史爱好者",
+          "想了解软件工程起源的开发者",
+          "对硬核开源项目感兴趣的普通读者"
+        ],
+        "description": "由前NASA实习生Chris Garry于2016年上传，完整收录MIT仪器实验室为阿波罗11号编写的AGC制导计算机全部汇编源码，Star超7万。代码注释详尽如散文，是研究早期嵌入式系统与软件工程史的第一手资料。注意：它只是源码标本，需配合Virtual AGC工具链才能编译运行。"
+      }
+    },
+    {
       "id": "448c1564-501a-44d2-a7e8-8c3772c4802c",
       "dateAdded": "20261011",
       "type": "github-daily",
@@ -69112,8 +69303,8 @@
       "repo": "hugohe3/ppt-master",
       "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "language": "Python",
-      "stars": 59832,
-      "forks": 4715,
+      "stars": 59946,
+      "forks": 4722,
       "starsAdded": 461,
       "createdAt": "2026-10-10T16:00:02.134Z",
       "metaData": {
@@ -69176,8 +69367,8 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 218507,
-      "forks": 22004,
+      "stars": 218588,
+      "forks": 22005,
       "starsAdded": 278,
       "createdAt": "2026-10-10T16:00:02.155Z",
       "metaData": {
@@ -69227,8 +69418,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 26477,
-      "forks": 1904,
+      "stars": 26522,
+      "forks": 1905,
       "starsAdded": 178,
       "createdAt": "2026-10-10T16:00:02.124Z",
       "metaData": {
@@ -69301,8 +69492,8 @@
       "repo": "huggingface/transformers",
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
       "language": "Python",
-      "stars": 167415,
-      "forks": 34812,
+      "stars": 167470,
+      "forks": 34816,
       "starsAdded": 96,
       "createdAt": "2026-10-10T16:00:02.142Z",
       "metaData": {
@@ -69373,8 +69564,8 @@
       "repo": "flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "language": "Dart",
-      "stars": 179658,
-      "forks": 33643,
+      "stars": 179703,
+      "forks": 33664,
       "starsAdded": 88,
       "createdAt": "2026-10-10T16:00:02.130Z",
       "metaData": {
@@ -69446,8 +69637,8 @@
       "repo": "pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 104214,
-      "forks": 31982,
+      "stars": 104251,
+      "forks": 32015,
       "starsAdded": 84,
       "createdAt": "2026-10-10T16:00:02.140Z",
       "metaData": {
@@ -69508,8 +69699,8 @@
       "repo": "tensorflow/tensorflow",
       "description": "An Open Source Machine Learning Framework for Everyone",
       "language": "C++",
-      "stars": 200801,
-      "forks": 79009,
+      "stars": 200847,
+      "forks": 79034,
       "starsAdded": 26,
       "createdAt": "2026-10-10T16:00:02.132Z",
       "metaData": {
