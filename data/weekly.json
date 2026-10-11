@@ -16575,9 +16575,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 26618,
-      "forks": 2223,
-      "starsAdded": 15539,
+      "stars": 26879,
+      "forks": 2262,
+      "starsAdded": 21365,
       "createdAt": "2026-10-06T12:00:03.564Z",
       "metaData": {
         "forks": "0",
@@ -16703,6 +16703,57 @@
       }
     },
     {
+      "id": "eddc9d04-bbea-487f-a3d8-334fda2eafc9",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 284506,
+      "forks": 23812,
+      "starsAdded": 9179,
+      "createdAt": "2026-10-08T11:00:03.332Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
       "id": "44ab952c-dbcd-4236-963d-149b67ca03f8",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -16766,54 +16817,53 @@
       }
     },
     {
-      "id": "eddc9d04-bbea-487f-a3d8-334fda2eafc9",
+      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
       "dateAdded": "202641",
       "type": "github-weekly",
-      "url": "https://github.com/mattpocock/skills",
-      "repo": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 284393,
-      "forks": 23807,
-      "starsAdded": 8156,
-      "createdAt": "2026-10-08T11:00:03.332Z",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 9243,
+      "forks": 1148,
+      "starsAdded": 7369,
+      "createdAt": "2026-10-06T12:00:03.562Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://aihero.dev/skills",
-        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
       },
       "summaryData": {
-        "tags": [
-          "开源项目",
-          "GitHub",
-          "AI 技能",
-          "TDD",
-          "工作流"
-        ],
+        "tags": [],
         "cover": "",
-        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
-        "ability": [
-          "需求精准对齐",
-          "测试驱动开发 (TDD)",
-          "生成技术规范与工单",
-          "代码架构优化",
-          "系统化Bug诊断"
-        ],
-        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
-        "category": [
-          "AI 编程",
-          "开发者工具"
-        ],
-        "suitable": [
-          "追求代码质量的软件工程师",
-          "技术团队负责人",
-          "独立开发者",
-          "AI 编程工具深度用户"
-        ],
-        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
       }
     },
     {
@@ -16887,117 +16937,6 @@
       }
     },
     {
-      "id": "b2395218-e2f1-49f0-b006-9ec5ff9974f2",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 9208,
-      "forks": 1144,
-      "starsAdded": 6749,
-      "createdAt": "2026-10-06T12:00:03.562Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
-      }
-    },
-    {
-      "id": "c3deeb60-cd7f-4e1c-99d2-5729404ba967",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/tester-army/e2e",
-      "repo": "tester-army/e2e",
-      "description": "Next generation e2e testing framework for web and mobile apps.",
-      "language": "TypeScript",
-      "stars": 8707,
-      "forks": 421,
-      "starsAdded": 6566,
-      "createdAt": "2026-10-10T12:00:03.974Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "e2e",
-          "e2e-testing",
-          "end-to-end-testing",
-          "mobile",
-          "mobile-testing",
-          "playwright",
-          "web"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://tester.army/e2e",
-        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "AI Agent",
-          "E2E测试",
-          "Playwright",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
-        "ability": [
-          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
-          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
-          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
-          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
-          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
-        ],
-        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化测试"
-        ],
-        "suitable": [
-          "独立开发者与小团队",
-          "前端/全栈工程师",
-          "React Native 等移动端开发团队",
-          "QA 测试工程师",
-          "AI Native 创业团队"
-        ],
-        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
-      }
-    },
-    {
       "id": "e06bf049-4b08-4a98-896b-5dbdb9cfd251",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17053,6 +16992,67 @@
           "技术选型决策者"
         ],
         "description": "Hindsight 是 Vectorize 开源（MIT 协议）的 Agent 记忆系统，通过四层仿生记忆与四路混合检索，让 AI 能跨会话记住用户偏好、自动消化事实并反思纠错。LongMemEval 基准经第三方独立复现达 94.6%，部署简单、生态丰富，是 Agent 记忆赛道当前最值得关注的开源项目。"
+      }
+    },
+    {
+      "id": "c3deeb60-cd7f-4e1c-99d2-5729404ba967",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/tester-army/e2e",
+      "repo": "tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars": 8729,
+      "forks": 423,
+      "starsAdded": 6564,
+      "createdAt": "2026-10-10T12:00:03.974Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "e2e",
+          "e2e-testing",
+          "end-to-end-testing",
+          "mobile",
+          "mobile-testing",
+          "playwright",
+          "web"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tester.army/e2e",
+        "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "E2E测试",
+          "Playwright",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "e2e 深度评测：用自然语言写测试的 YC 开源 Agentic 测试框架",
+        "ability": [
+          "自然语言驱动测试：用 agent.act('一句话') 让 AI 自动完成页面操作",
+          "兼容 Playwright 写法心智，传统断言与 AI 混合编排无缝衔接",
+          "已验证的 Agent 步骤自动缓存重放，二次运行不消耗 token",
+          "支持 iOS/Android 移动端模拟器测试，Web 与 Mobile 双端开箱即用",
+          "灵活接入多种模型：ChatGPT Plus 订阅、GitHub Copilot、本地模型均可"
+        ],
+        "summary": "YC 团队开源的 AI 端到端测试框架：用一句自然语言描述测试目标，AI Agent 替你点按钮、填表单、跑完整用户流程。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化测试"
+        ],
+        "suitable": [
+          "独立开发者与小团队",
+          "前端/全栈工程师",
+          "React Native 等移动端开发团队",
+          "QA 测试工程师",
+          "AI Native 创业团队"
+        ],
+        "description": "e2e 是 YC S26 团队 TesterArmy 开源的 AI 端到端测试框架。用自然语言描述测试意图，AI Agent 自动完成页面操作，再配合传统断言精确验证结果；已验证步骤可缓存重放以节省 token，兼容 Playwright 写法心智，支持 Web 与 iOS/Android 双端测试。"
       }
     },
     {
@@ -17242,9 +17242,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 60337,
-      "forks": 5389,
-      "starsAdded": 4003,
+      "stars": 60369,
+      "forks": 5390,
+      "starsAdded": 4081,
       "createdAt": "2026-10-04T16:00:03.724Z",
       "metaData": {
         "forks": "0",
@@ -17307,9 +17307,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 99219,
-      "forks": 8692,
-      "starsAdded": 3850,
+      "stars": 99259,
+      "forks": 8694,
+      "starsAdded": 4035,
       "createdAt": "2026-10-06T12:00:03.556Z",
       "metaData": {
         "forks": "0",
@@ -17448,6 +17448,69 @@
       }
     },
     {
+      "id": "ff8bdc2c-bc85-40d5-9008-d71826be78ad",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 18994,
+      "forks": 1872,
+      "starsAdded": 2369,
+      "createdAt": "2026-10-08T11:00:03.346Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
       "id": "3ed5f6cf-8664-48f1-af12-ea59de719253",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17455,9 +17518,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 26807,
-      "forks": 7025,
-      "starsAdded": 2379,
+      "stars": 26821,
+      "forks": 7031,
+      "starsAdded": 2367,
       "createdAt": "2026-10-04T16:00:03.780Z",
       "metaData": {
         "forks": "0",
@@ -17498,71 +17561,6 @@
           "AI 编程初学者"
         ],
         "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
-      }
-    },
-    {
-      "id": "615dff19-969b-46a8-a290-af28cd47bfa3",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/mvschwarz/openrig",
-      "repo": "mvschwarz/openrig",
-      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
-      "language": "TypeScript",
-      "stars": 6727,
-      "forks": 497,
-      "starsAdded": 2338,
-      "createdAt": "2026-10-04T16:00:03.796Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-harness",
-          "agent-orchestration",
-          "agent-skills",
-          "ai-coding",
-          "claude-code",
-          "cli",
-          "codex-cli",
-          "multi-agent",
-          "multi-agent-systems",
-          "tmux",
-          "typescript"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://openrig.dev",
-        "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work. - mvschwarz/openrig"
-      },
-      "summaryData": {
-        "tags": [
-          "OpenRig",
-          "多Agent编排",
-          "Claude Code",
-          "Codex",
-          "开源工具"
-        ],
-        "cover": "",
-        "title": "OpenRig 深度评测：用一份 YAML 把 Claude Code 和 Codex 编成常驻团队的多 Agent 编排控制平面",
-        "ability": [
-          "用 RigSpec YAML 声明式定义多 Agent 团队拓扑，支持版本控制和一键启停",
-          "Pod 共享记忆机制：上下文窗口打满后团队成员可恢复工作现场",
-          "快照/恢复能力：rig down 自动快照，rig up 按名字原样复活整个团队",
-          "内置 17 个 MCP 工具，可让 AI Agent 自主管理自己的编队",
-          "rig discover 可指纹识别并收编 tmux 中已有的 Claude/Codex 会话"
-        ],
-        "summary": "OpenRig 是一个开源的本地多 Agent 编排工具，用 YAML 声明式地把 Claude Code、Codex 等会话组织成可持久化、可恢复、可共享记忆的团队拓扑。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "重度多会话使用 Claude Code / Codex 的开发者",
-          "想低成本体验多 Agent 协作的个人程序员",
-          "数据本地化优先、不想付云端托管费的团队",
-          "想给 Agent 团队做 CI 自动化的工程化玩家",
-          "研究 Agent 基础设施和编排协议的技术极客"
-        ],
-        "description": "OpenRig 是一个 TypeScript 开源项目（Apache-2.0），定位为 AI Coding Agent 的本地控制平面。它像 Kubernetes 管理容器一样管理 Agent 团队：用 RigSpec YAML 声明 Pod 拓扑，通过 tmux + SQLite + Hono 守护进程实现会话持久化、共享记忆和快照恢复，让散落的 Agent 会话变成可关机、可复活的常备团队。目前热度上升快，但仅支持 Claude Code 和 Codex，且有写入系统配置的侵入性。"
       }
     },
     {
@@ -17695,69 +17693,6 @@
       }
     },
     {
-      "id": "ff8bdc2c-bc85-40d5-9008-d71826be78ad",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "repo": "earthtojake/text-to-cad",
-      "description": "Give your agent CAD superpowers.",
-      "language": "Python",
-      "stars": 18978,
-      "forks": 1872,
-      "starsAdded": 2125,
-      "createdAt": "2026-10-08T11:00:03.346Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "ai-agents",
-          "cad",
-          "mechanical-engineering",
-          "robotics",
-          "step",
-          "stl",
-          "stp",
-          "text-to-cad"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.texttocad.dev",
-        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "CAD",
-          "AI代理",
-          "机器人",
-          "开源",
-          "自动化制造"
-        ],
-        "cover": "",
-        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
-        "ability": [
-          "自然语言生成CAD模型",
-          "机器人文件自动生成",
-          "仿真环境配置",
-          "工程图与G-code输出",
-          "制造文件预检"
-        ],
-        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
-        "category": [
-          "开发工具",
-          "AI编程",
-          "工程工具"
-        ],
-        "suitable": [
-          "硬件初创团队",
-          "机器人开发者",
-          "AI编码代理重度用户",
-          "制造打样工程师",
-          "技术极客"
-        ],
-        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
-      }
-    },
-    {
       "id": "a7bd82b8-dac8-452f-a136-b90fe792f141",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -17874,6 +17809,71 @@
           "RAG 技术研究者"
         ],
         "description": "PageIndex 是 Vectify AI 开源（MIT 协议）的下一代 RAG 框架，核心理念是抛弃 chunking + embedding 的传统范式，用一棵 LLM 可直接导航的文档结构树取代向量数据库。在金融文档基准 FinanceBench 上达到 98.7% 准确率，特别适合财报、合同等技术手册等结构化长文档，但查询延迟和 LLM 调用成本较高，多文档扩展能力仍在演进。"
+      }
+    },
+    {
+      "id": "615dff19-969b-46a8-a290-af28cd47bfa3",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/mvschwarz/openrig",
+      "repo": "mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "stars": 6735,
+      "forks": 498,
+      "starsAdded": 2068,
+      "createdAt": "2026-10-04T16:00:03.796Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-harness",
+          "agent-orchestration",
+          "agent-skills",
+          "ai-coding",
+          "claude-code",
+          "cli",
+          "codex-cli",
+          "multi-agent",
+          "multi-agent-systems",
+          "tmux",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://openrig.dev",
+        "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work. - mvschwarz/openrig"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenRig",
+          "多Agent编排",
+          "Claude Code",
+          "Codex",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "OpenRig 深度评测：用一份 YAML 把 Claude Code 和 Codex 编成常驻团队的多 Agent 编排控制平面",
+        "ability": [
+          "用 RigSpec YAML 声明式定义多 Agent 团队拓扑，支持版本控制和一键启停",
+          "Pod 共享记忆机制：上下文窗口打满后团队成员可恢复工作现场",
+          "快照/恢复能力：rig down 自动快照，rig up 按名字原样复活整个团队",
+          "内置 17 个 MCP 工具，可让 AI Agent 自主管理自己的编队",
+          "rig discover 可指纹识别并收编 tmux 中已有的 Claude/Codex 会话"
+        ],
+        "summary": "OpenRig 是一个开源的本地多 Agent 编排工具，用 YAML 声明式地把 Claude Code、Codex 等会话组织成可持久化、可恢复、可共享记忆的团队拓扑。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "重度多会话使用 Claude Code / Codex 的开发者",
+          "想低成本体验多 Agent 协作的个人程序员",
+          "数据本地化优先、不想付云端托管费的团队",
+          "想给 Agent 团队做 CI 自动化的工程化玩家",
+          "研究 Agent 基础设施和编排协议的技术极客"
+        ],
+        "description": "OpenRig 是一个 TypeScript 开源项目（Apache-2.0），定位为 AI Coding Agent 的本地控制平面。它像 Kubernetes 管理容器一样管理 Agent 团队：用 RigSpec YAML 声明 Pod 拓扑，通过 tmux + SQLite + Hono 守护进程实现会话持久化、共享记忆和快照恢复，让散落的 Agent 会话变成可关机、可复活的常备团队。目前热度上升快，但仅支持 Claude Code 和 Codex，且有写入系统配置的侵入性。"
       }
     },
     {
@@ -18077,9 +18077,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 10751,
-      "forks": 1025,
-      "starsAdded": 1125,
+      "stars": 10760,
+      "forks": 1026,
+      "starsAdded": 1110,
       "createdAt": "2026-10-05T11:00:03.978Z",
       "metaData": {
         "forks": "0",
@@ -18312,6 +18312,59 @@
       }
     },
     {
+      "id": "b7de60de-63f7-4286-86ae-d2b13fffe384",
+      "dateAdded": "202641",
+      "type": "github-weekly",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 8331,
+      "forks": 404,
+      "starsAdded": 740,
+      "createdAt": "2026-10-08T11:00:03.325Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      }
+    },
+    {
       "id": "bdf573eb-e175-4e2e-b6f7-8a9f3469abc8",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -18507,59 +18560,6 @@
       }
     },
     {
-      "id": "b7de60de-63f7-4286-86ae-d2b13fffe384",
-      "dateAdded": "202641",
-      "type": "github-weekly",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "repo": "EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars": 8326,
-      "forks": 403,
-      "starsAdded": 654,
-      "createdAt": "2026-10-08T11:00:03.325Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
-      },
-      "summaryData": {
-        "tags": [
-          "调试器",
-          "C/C++",
-          "开源",
-          "游戏开发",
-          "性能优化"
-        ],
-        "cover": "",
-        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
-        "ability": [
-          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
-          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
-          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
-          "原生支持多进程与子进程同时调试",
-          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
-        ],
-        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
-        "category": [
-          "开发工具",
-          "游戏开发",
-          "开源项目"
-        ],
-        "suitable": [
-          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
-          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
-          "想研读生产级调试器源码的工具链爱好者",
-          "JAI、Odin 等小众语言用户",
-          "关注软件性能工程的进阶学习者"
-        ],
-        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
-      }
-    },
-    {
       "id": "a21724e9-1dcc-41cf-8990-91c4d06516c0",
       "dateAdded": "202641",
       "type": "github-weekly",
@@ -18688,9 +18688,9 @@
       "repo": "flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "language": "Dart",
-      "stars": 179497,
-      "forks": 33595,
-      "starsAdded": 259,
+      "stars": 179523,
+      "forks": 33600,
+      "starsAdded": 263,
       "createdAt": "2026-10-10T12:00:03.964Z",
       "metaData": {
         "forks": "0",
@@ -18761,9 +18761,9 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
       "language": "TypeScript",
-      "stars": 773,
+      "stars": 782,
       "forks": 74,
-      "starsAdded": 246,
+      "starsAdded": 259,
       "createdAt": "2026-10-10T12:00:03.968Z",
       "metaData": {
         "forks": "0",
