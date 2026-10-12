@@ -70646,8 +70646,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 141376,
-      "forks": 32437,
+      "stars": 146999,
+      "forks": 34074,
       "starsAdded": 45495,
       "createdAt": "2026-10-12T16:00:02.031Z",
       "metaData": {
@@ -70720,8 +70720,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 20608,
-      "forks": 3337,
+      "stars": 21070,
+      "forks": 3423,
       "starsAdded": 4106,
       "createdAt": "2026-10-12T16:00:02.057Z",
       "metaData": {
@@ -70779,8 +70779,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 52062,
-      "forks": 3279,
+      "stars": 52267,
+      "forks": 3298,
       "starsAdded": 2100,
       "createdAt": "2026-10-12T16:00:02.064Z",
       "metaData": {
@@ -70841,8 +70841,8 @@
       "repo": "bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 53014,
-      "forks": 10532,
+      "stars": 53248,
+      "forks": 10573,
       "starsAdded": 1903,
       "createdAt": "2026-10-12T16:00:02.037Z",
       "metaData": {
@@ -70907,8 +70907,8 @@
       "repo": "lyogavin/airllm",
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 37211,
-      "forks": 3855,
+      "stars": 37341,
+      "forks": 3859,
       "starsAdded": 886,
       "createdAt": "2026-10-12T16:00:02.066Z",
       "metaData": {
@@ -70974,8 +70974,8 @@
       "repo": "Alishahryar1/free-claude-code",
       "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 58580,
-      "forks": 9270,
+      "stars": 58792,
+      "forks": 9288,
       "starsAdded": 705,
       "createdAt": "2026-10-12T16:00:02.072Z",
       "metaData": {
@@ -71024,8 +71024,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 26984,
-      "forks": 1932,
+      "stars": 27110,
+      "forks": 1937,
       "starsAdded": 394,
       "createdAt": "2026-10-12T16:00:02.041Z",
       "metaData": {
@@ -71091,59 +71091,6 @@
       }
     },
     {
-      "id": "78f057b8-306f-4fe3-b702-ffa2ffb92344",
-      "dateAdded": "20261013",
-      "type": "github-daily",
-      "url": "https://github.com/microsoft/BitNet",
-      "repo": "microsoft/BitNet",
-      "description": "Official inference framework for 1-bit LLMs",
-      "language": "C++",
-      "stars": 40796,
-      "forks": 3801,
-      "starsAdded": 195,
-      "createdAt": "2026-10-12T16:00:02.068Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "BitNet",
-          "1-bit LLM",
-          "微软开源",
-          "本地部署",
-          "模型量化"
-        ],
-        "cover": "",
-        "title": "微软 BitNet 深度评测：无需 GPU，让大模型跑在普通 CPU 上的 1-bit 推理框架",
-        "ability": [
-          "1.58-bit 三元权重量化推理（权重仅取 -1/0/+1）",
-          "纯 CPU 高效推理，支持 x86 与 ARM 平台",
-          "内存占用降低约 95%，x86 推理加速最高 6.17 倍",
-          "能耗降低 71.9%~82.2%，适合低功耗边缘场景",
-          "支持官方 BitNet-b1.58-2B-4T 及 Falcon、Llama 等社区 1-bit 模型"
-        ],
-        "summary": "微软开源的 1.58-bit 大模型推理框架，用三元权重让 LLM 在普通 CPU 上跑出接近全精度的效果",
-        "category": [
-          "开发工具",
-          "AI 模型推理",
-          "边缘计算"
-        ],
-        "suitable": [
-          "边缘 AI / 端侧部署开发者",
-          "嵌入式 / IoT 工程师",
-          "AI 推理与模型压缩方向研究者",
-          "追求极致本地部署的 LLM 极客",
-          "关注大模型前沿架构的技术人"
-        ],
-        "description": "BitNet 是微软研究院开源的官方 1-bit LLM 推理框架，其核心理念是通过量化感知训练（QAT）让模型权重从训练起就是三元值，而非训练后再压缩。基于 llama.cpp 深度改造的 bitnet.cpp 引擎可在无 GPU 的普通电脑上运行官方 2B 模型，实现数倍加速和大幅节能，是边缘智能与低功耗场景的前沿方案，但模型生态薄弱、部署有一定编译门槛。"
-      }
-    },
-    {
       "id": "cb75a0b8-a2f6-4a1e-9e3a-c5a693e89928",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -71151,8 +71098,8 @@
       "repo": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "language": "Python",
-      "stars": 154633,
-      "forks": 22621,
+      "stars": 154770,
+      "forks": 22627,
       "starsAdded": 142,
       "createdAt": "2026-10-12T16:00:02.059Z",
       "metaData": {
@@ -71210,6 +71157,59 @@
           "需要对比评测模型的 AI 开发者"
         ],
         "description": "Open WebUI 是 GitHub 约 14 万星的自托管 AI 平台，基于 SvelteKit + FastAPI 构建。它本身不运行模型，而是为 Ollama、云端 API 等提供统一的 ChatGPT 式界面，支持文档问答（RAG）、多模型对比、插件扩展和多用户权限管理。个人与小团队免费，但注意其自定义许可证含品牌保护条款，白标分发需购买企业许可或联系项目方授权。"
+      }
+    },
+    {
+      "id": "78f057b8-306f-4fe3-b702-ffa2ffb92344",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/microsoft/BitNet",
+      "repo": "microsoft/BitNet",
+      "description": "Official inference framework for 1-bit LLMs",
+      "language": "C++",
+      "stars": 40829,
+      "forks": 3803,
+      "starsAdded": 134,
+      "createdAt": "2026-10-12T16:00:02.068Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "BitNet",
+          "1-bit LLM",
+          "微软开源",
+          "本地部署",
+          "模型量化"
+        ],
+        "cover": "",
+        "title": "微软 BitNet 深度评测：无需 GPU，让大模型跑在普通 CPU 上的 1-bit 推理框架",
+        "ability": [
+          "1.58-bit 三元权重量化推理（权重仅取 -1/0/+1）",
+          "纯 CPU 高效推理，支持 x86 与 ARM 平台",
+          "内存占用降低约 95%，x86 推理加速最高 6.17 倍",
+          "能耗降低 71.9%~82.2%，适合低功耗边缘场景",
+          "支持官方 BitNet-b1.58-2B-4T 及 Falcon、Llama 等社区 1-bit 模型"
+        ],
+        "summary": "微软开源的 1.58-bit 大模型推理框架，用三元权重让 LLM 在普通 CPU 上跑出接近全精度的效果",
+        "category": [
+          "开发工具",
+          "AI 模型推理",
+          "边缘计算"
+        ],
+        "suitable": [
+          "边缘 AI / 端侧部署开发者",
+          "嵌入式 / IoT 工程师",
+          "AI 推理与模型压缩方向研究者",
+          "追求极致本地部署的 LLM 极客",
+          "关注大模型前沿架构的技术人"
+        ],
+        "description": "BitNet 是微软研究院开源的官方 1-bit LLM 推理框架，其核心理念是通过量化感知训练（QAT）让模型权重从训练起就是三元值，而非训练后再压缩。基于 llama.cpp 深度改造的 bitnet.cpp 引擎可在无 GPU 的普通电脑上运行官方 2B 模型，实现数倍加速和大幅节能，是边缘智能与低功耗场景的前沿方案，但模型生态薄弱、部署有一定编译门槛。"
       }
     }
   ]
