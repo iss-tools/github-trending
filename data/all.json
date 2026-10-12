@@ -1,6 +1,128 @@
 {
   "all": [
     {
+      "id": "af0155c8-b09a-4e7d-919f-05ceb0f3e797",
+      "url": "https://github.com/microsoft/BitNet",
+      "domain": "github.com",
+      "repo": "microsoft/BitNet",
+      "description": "BitNet 是微软研究院开源的官方 1-bit LLM 推理框架，其核心理念是通过量化感知训练（QAT）让模型权重从训练起就是三元值，而非训练后再压缩。基于 llama.cpp 深度改造的 bitnet.cpp 引擎可在无 GPU 的普通电脑上运行官方 2B 模型，实现数倍加速和大幅节能，是边缘智能与低功耗场景的前沿方案，但模型生态薄弱、部署有一定编译门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-12T12:08:33.014Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "BitNet",
+          "1-bit LLM",
+          "微软开源",
+          "本地部署",
+          "模型量化"
+        ],
+        "cover": "",
+        "title": "微软 BitNet 深度评测：无需 GPU，让大模型跑在普通 CPU 上的 1-bit 推理框架",
+        "ability": [
+          "1.58-bit 三元权重量化推理（权重仅取 -1/0/+1）",
+          "纯 CPU 高效推理，支持 x86 与 ARM 平台",
+          "内存占用降低约 95%，x86 推理加速最高 6.17 倍",
+          "能耗降低 71.9%~82.2%，适合低功耗边缘场景",
+          "支持官方 BitNet-b1.58-2B-4T 及 Falcon、Llama 等社区 1-bit 模型"
+        ],
+        "summary": "微软开源的 1.58-bit 大模型推理框架，用三元权重让 LLM 在普通 CPU 上跑出接近全精度的效果",
+        "category": [
+          "开发工具",
+          "AI 模型推理",
+          "边缘计算"
+        ],
+        "suitable": [
+          "边缘 AI / 端侧部署开发者",
+          "嵌入式 / IoT 工程师",
+          "AI 推理与模型压缩方向研究者",
+          "追求极致本地部署的 LLM 极客",
+          "关注大模型前沿架构的技术人"
+        ],
+        "description": "BitNet 是微软研究院开源的官方 1-bit LLM 推理框架，其核心理念是通过量化感知训练（QAT）让模型权重从训练起就是三元值，而非训练后再压缩。基于 llama.cpp 深度改造的 bitnet.cpp 引擎可在无 GPU 的普通电脑上运行官方 2B 模型，实现数倍加速和大幅节能，是边缘智能与低功耗场景的前沿方案，但模型生态薄弱、部署有一定编译门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20261012"
+    },
+    {
+      "id": "a131e093-0627-4e84-829e-91fc2869f9a0",
+      "url": "https://github.com/open-webui/open-webui",
+      "domain": "github.com",
+      "repo": "open-webui/open-webui",
+      "description": "Open WebUI 是 GitHub 约 14 万星的自托管 AI 平台，基于 SvelteKit + FastAPI 构建。它本身不运行模型，而是为 Ollama、云端 API 等提供统一的 ChatGPT 式界面，支持文档问答（RAG）、多模型对比、插件扩展和多用户权限管理。个人与小团队免费，但注意其自定义许可证含品牌保护条款，白标分发需购买企业许可或联系项目方授权。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-12T12:04:29.568Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "llm",
+          "llm-ui",
+          "llm-webui",
+          "llms",
+          "mcp",
+          "ollama",
+          "ollama-webui",
+          "open-webui",
+          "openai",
+          "openapi",
+          "rag",
+          "self-hosted",
+          "ui",
+          "webui"
+        ],
+        "license": "License",
+        "homepage": "https://openwebui.com",
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...) - open-webui/open-webui"
+      },
+      "summaryData": {
+        "tags": [
+          "Open WebUI",
+          "Ollama",
+          "自托管",
+          "RAG",
+          "本地大模型"
+        ],
+        "cover": "",
+        "title": "Open WebUI 深度评测：一行命令搭建私有 AI 对话平台",
+        "ability": [
+          "多模型统一接入：Ollama、vLLM 及任意 OpenAI 兼容 API 集中管理",
+          "开箱即用的 RAG 文档问答：上传 PDF 即可基于自己的资料提问",
+          "插件生态：Functions/Tools/Pipelines/MCP 四层扩展机制",
+          "免费企业级特性：RBAC、SSO、LDAP、审计日志全内置",
+          "多模型并行对话与竞技场评测，一键对比不同模型表现"
+        ],
+        "summary": "最流行的开源自托管 AI 界面，一行 Docker 命令给本地大模型套上 ChatGPT 式体验",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "开源项目"
+        ],
+        "suitable": [
+          "Ollama 本地模型用户",
+          "NAS / Homelab 自托管玩家",
+          "小团队 IT 管理员（50 人内免费商用）",
+          "律师、医生等数据敏感行业从业者",
+          "需要对比评测模型的 AI 开发者"
+        ],
+        "description": "Open WebUI 是 GitHub 约 14 万星的自托管 AI 平台，基于 SvelteKit + FastAPI 构建。它本身不运行模型，而是为 Ollama、云端 API 等提供统一的 ChatGPT 式界面，支持文档问答（RAG）、多模型对比、插件扩展和多用户权限管理。个人与小团队免费，但注意其自定义许可证含品牌保护条款，白标分发需购买企业许可或联系项目方授权。"
+      },
+      "type": "project",
+      "dateAdded": "20261012"
+    },
+    {
       "id": "8ac7f73d-301a-4451-959d-c71b1c8ade21",
       "url": "https://github.com/danyuchn/asd-ste100-skill",
       "domain": "github.com",
@@ -18311,8 +18433,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T05:40:56.363Z",
       "metaData": {
-        "forks": "11200",
-        "stars": "65011",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agents",
           "ai",
@@ -18337,7 +18459,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://aiengineeringfromscratch.com",
-        "description": "Learn it. Build it. Ship it for others. Contribute to rohitg00/ai-engineering-from-scratch development by creating an account on GitHub."
+        "description": "Learn AI Engineering! Learn it. Build it. Ship it for others. - rohitg00/ai-engineering-from-scratch"
       },
       "summaryData": {
         "tags": [
@@ -19916,12 +20038,12 @@
       "forks": 0,
       "createdAt": "2026-08-23T16:35:38.445Z",
       "metaData": {
-        "forks": "8374",
-        "stars": "52011",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
-        "license": "MIT license",
+        "license": "License",
         "homepage": "",
-        "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
+        "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
       },
       "summaryData": {
         "tags": [
