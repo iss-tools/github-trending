@@ -70646,9 +70646,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 184132,
-      "forks": 44558,
-      "starsAdded": 45327,
+      "stars": 186400,
+      "forks": 45217,
+      "starsAdded": 54706,
       "createdAt": "2026-10-12T16:00:02.031Z",
       "metaData": {
         "forks": "0",
@@ -70720,9 +70720,9 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 23799,
-      "forks": 3778,
-      "starsAdded": 4095,
+      "stars": 23980,
+      "forks": 3808,
+      "starsAdded": 4078,
       "createdAt": "2026-10-12T16:00:02.057Z",
       "metaData": {
         "forks": "0",
@@ -70772,68 +70772,6 @@
       }
     },
     {
-      "id": "642209ae-0949-406d-983e-4a6b769a9714",
-      "dateAdded": "20261013",
-      "type": "github-daily",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "repo": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars": 53324,
-      "forks": 3374,
-      "starsAdded": 2081,
-      "createdAt": "2026-10-12T16:00:02.064Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "claude-code",
-          "codex",
-          "data-visualization",
-          "diagrams",
-          "drawio",
-          "mermaid",
-          "svg"
-        ],
-        "license": "MIT license",
-        "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
-      },
-      "summaryData": {
-        "tags": [
-          "图表生成",
-          "可视化",
-          "品牌适配",
-          "开源工具",
-          "Claude插件"
-        ],
-        "cover": "",
-        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
-        "ability": [
-          "39种图表类型生成",
-          "自动品牌配色适配",
-          "HTML+SVG零依赖输出",
-          "Mermaid/draw.io重绘",
-          "语义化设计系统"
-        ],
-        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
-        "category": [
-          "AI编程",
-          "开发工具",
-          "设计工具"
-        ],
-        "suitable": [
-          "Claude Code/Codex用户",
-          "技术文档作者",
-          "系统架构师",
-          "内容创作团队",
-          "需要高频出图的开发者"
-        ],
-        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
-      }
-    },
-    {
       "id": "c41c2fbf-9172-4949-bf9d-ee57e54cc2fa",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -70841,9 +70779,9 @@
       "repo": "bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 54480,
-      "forks": 10716,
-      "starsAdded": 1895,
+      "stars": 54552,
+      "forks": 10721,
+      "starsAdded": 1961,
       "createdAt": "2026-10-12T16:00:02.037Z",
       "metaData": {
         "forks": "0",
@@ -70900,6 +70838,68 @@
       }
     },
     {
+      "id": "642209ae-0949-406d-983e-4a6b769a9714",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 53401,
+      "forks": 3384,
+      "starsAdded": 1813,
+      "createdAt": "2026-10-12T16:00:02.064Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://diagramdesign.dev",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
       "id": "06676f48-011e-4283-a1fe-6f77fc131a11",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -70907,8 +70907,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 61261,
-      "forks": 6868,
+      "stars": 61424,
+      "forks": 6883,
       "starsAdded": 1691,
       "createdAt": "2026-10-13T11:00:02.078Z",
       "metaData": {
@@ -70974,66 +70974,6 @@
       }
     },
     {
-      "id": "e1740c61-c50f-4ad7-8d25-201f3caaaf2b",
-      "dateAdded": "20261013",
-      "type": "github-daily",
-      "url": "https://github.com/xtool-org/xtool",
-      "repo": "xtool-org/xtool",
-      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
-      "language": "Swift",
-      "stars": 8517,
-      "forks": 350,
-      "starsAdded": 936,
-      "createdAt": "2026-10-13T11:00:02.094Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ios",
-          "linux",
-          "swift",
-          "swift-package-manager",
-          "windows",
-          "xcode"
-        ],
-        "license": "MIT license",
-        "homepage": "https://xtool.sh",
-        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
-      },
-      "summaryData": {
-        "tags": [
-          "iOS开发",
-          "Swift",
-          "开源项目",
-          "CI/CD",
-          "跨平台"
-        ],
-        "cover": "",
-        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
-        "ability": [
-          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
-          "一条命令完成构建→签名→安装→启动的完整闭环",
-          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
-          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
-          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
-        ],
-        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
-        "category": [
-          "开发工具",
-          "iOS 开发",
-          "跨平台工具"
-        ],
-        "suitable": [
-          "CI/CD 工程师 / 移动 DevOps",
-          "Flutter / React Native 跨平台开发者",
-          "AI Agent / Claude Code / Codex 重度用户",
-          "只有 Windows/Linux 设备的学生党与兴趣开发者",
-          "想轻量开发、脱离 Xcode 的 macOS 老手"
-        ],
-        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
-      }
-    },
-    {
       "id": "2c4556a2-24e8-4e43-a8fe-3a043b445f82",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -71041,9 +70981,9 @@
       "repo": "lyogavin/airllm",
       "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 37933,
-      "forks": 3892,
-      "starsAdded": 879,
+      "stars": 37973,
+      "forks": 3895,
+      "starsAdded": 1004,
       "createdAt": "2026-10-12T16:00:02.066Z",
       "metaData": {
         "forks": "0",
@@ -71101,56 +71041,6 @@
       }
     },
     {
-      "id": "360784a4-b789-452c-b078-21b667f38a56",
-      "dateAdded": "20261013",
-      "type": "github-daily",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "repo": "Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-      "language": "Python",
-      "stars": 59659,
-      "forks": 9368,
-      "starsAdded": 626,
-      "createdAt": "2026-10-12T16:00:02.072Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "License",
-        "homepage": "",
-        "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "降本增效",
-          "API 代理",
-          "Claude",
-          "GitHub 项目"
-        ],
-        "cover": "",
-        "title": "Free Claude Code：零成本复现顶级 AI 编程助手",
-        "ability": [
-          "多模型智能路由与容错",
-          "代码输出智能降噪",
-          "多终端与语音交互支持",
-          "Token 消耗大幅优化"
-        ],
-        "summary": "通过本地代理路由技术，将昂贵请求转发至免费模型，实现低成本、高可用的 AI 编程体验。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "预算有限的个人开发者",
-          "追求极致性价比的学生",
-          "需要灵活切换模型的极客"
-        ],
-        "description": "Free Claude Code 是一个开源本地代理工具，能拦截 Claude Code 的请求并重定向到 NVIDIA 等免费模型。它具备智能路由、流量过滤和多端支持功能，在大幅降低 API 成本的同时，保障了开发工作流的连续性和稳定性。"
-      }
-    },
-    {
       "id": "694b8f59-839e-4a28-a6d1-93a8ab294fb2",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -71158,9 +71048,9 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 27734,
-      "forks": 1967,
-      "starsAdded": 246,
+      "stars": 27767,
+      "forks": 1971,
+      "starsAdded": 978,
       "createdAt": "2026-10-12T16:00:02.041Z",
       "metaData": {
         "forks": "0",
@@ -71225,6 +71115,116 @@
       }
     },
     {
+      "id": "e1740c61-c50f-4ad7-8d25-201f3caaaf2b",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/xtool-org/xtool",
+      "repo": "xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "stars": 8586,
+      "forks": 352,
+      "starsAdded": 936,
+      "createdAt": "2026-10-13T11:00:02.094Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ios",
+          "linux",
+          "swift",
+          "swift-package-manager",
+          "windows",
+          "xcode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://xtool.sh",
+        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS开发",
+          "Swift",
+          "开源项目",
+          "CI/CD",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
+        "ability": [
+          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
+          "一条命令完成构建→签名→安装→启动的完整闭环",
+          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
+          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
+          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
+        ],
+        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
+        "category": [
+          "开发工具",
+          "iOS 开发",
+          "跨平台工具"
+        ],
+        "suitable": [
+          "CI/CD 工程师 / 移动 DevOps",
+          "Flutter / React Native 跨平台开发者",
+          "AI Agent / Claude Code / Codex 重度用户",
+          "只有 Windows/Linux 设备的学生党与兴趣开发者",
+          "想轻量开发、脱离 Xcode 的 macOS 老手"
+        ],
+        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      }
+    },
+    {
+      "id": "360784a4-b789-452c-b078-21b667f38a56",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "repo": "Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "stars": 59659,
+      "forks": 9368,
+      "starsAdded": 626,
+      "createdAt": "2026-10-12T16:00:02.072Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "License",
+        "homepage": "",
+        "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "降本增效",
+          "API 代理",
+          "Claude",
+          "GitHub 项目"
+        ],
+        "cover": "",
+        "title": "Free Claude Code：零成本复现顶级 AI 编程助手",
+        "ability": [
+          "多模型智能路由与容错",
+          "代码输出智能降噪",
+          "多终端与语音交互支持",
+          "Token 消耗大幅优化"
+        ],
+        "summary": "通过本地代理路由技术，将昂贵请求转发至免费模型，实现低成本、高可用的 AI 编程体验。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "预算有限的个人开发者",
+          "追求极致性价比的学生",
+          "需要灵活切换模型的极客"
+        ],
+        "description": "Free Claude Code 是一个开源本地代理工具，能拦截 Claude Code 的请求并重定向到 NVIDIA 等免费模型。它具备智能路由、流量过滤和多端支持功能，在大幅降低 API 成本的同时，保障了开发工作流的连续性和稳定性。"
+      }
+    },
+    {
       "id": "364a5677-fd14-4627-b144-4e69872f250d",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -71232,8 +71232,8 @@
       "repo": "vercel-labs/skills",
       "description": "The open agent skills tool - npx skills",
       "language": "TypeScript",
-      "stars": 34102,
-      "forks": 2926,
+      "stars": 34142,
+      "forks": 2930,
       "starsAdded": 187,
       "createdAt": "2026-10-13T11:00:02.088Z",
       "metaData": {
