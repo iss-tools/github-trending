@@ -1,6 +1,65 @@
 {
   "all": [
     {
+      "id": "23582c0b-82a0-4869-b707-ef55bb1ed381",
+      "url": "https://github.com/google/artemis",
+      "domain": "github.com",
+      "repo": "google/artemis",
+      "description": "ARTEMIS 是 Google 2026 年开源的 Android 真机自动化智能体，借助视觉语言模型把自然语言指令翻译成真实点击、滑动与输入，提供 CLI、Web 控制台、MCP Server 和 Python SDK 四种形态。UI 变更无需重写脚本，但核心定位能力强依赖 Google ER 系列模型，99.1% 跑分未经独立验证，且曾卷入开源署名争议。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-13T18:04:57.535Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "android",
+          "google",
+          "test-automation",
+          "testing"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code.  It also achieves 99%+ success rate on AndroidWorld Benchmark. - google/artemis"
+      },
+      "summaryData": {
+        "tags": [
+          "Google开源",
+          "Android自动化",
+          "AI Agent",
+          "MCP",
+          "Gemini"
+        ],
+        "cover": "",
+        "title": "Google ARTEMIS 深度评测：用自然语言操控真机的 Android AI 自动化智能体",
+        "ability": [
+          "自然语言驱动真机：一句话让 AI 在 Android 真机上点击、滑动、输入，UI 改版无需重写脚本",
+          "MCP 协议一键接入 Claude Code、Cursor、Antigravity 等 8+ 个 AI IDE",
+          "Flash/Pro 双智能体架构：快速冒烟测试与深度探索式回归（含计划、校验、报告）两档可选",
+          "Web 控制台可视化调试：实时投屏、推理流展示与执行轨迹回放",
+          "Python SDK 可嵌入 pytest 与 CI/CD，返回强类型断言结果"
+        ],
+        "summary": "Google 开源的 Android 真机 AI 自动化框架，用一句自然语言替代传统 UI 自动化脚本。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化测试"
+        ],
+        "suitable": [
+          "Android QA 测试工程师",
+          "AI IDE 重度用户（Claude Code/Cursor 等）",
+          "缺乏专职 QA 的独立开发者与小团队",
+          "移动端 AI Agent 研究者",
+          "饱受脆弱 UI 脚本维护之苦的自动化团队"
+        ],
+        "description": "ARTEMIS 是 Google 2026 年开源的 Android 真机自动化智能体，借助视觉语言模型把自然语言指令翻译成真实点击、滑动与输入，提供 CLI、Web 控制台、MCP Server 和 Python SDK 四种形态。UI 变更无需重写脚本，但核心定位能力强依赖 Google ER 系列模型，99.1% 跑分未经独立验证，且曾卷入开源署名争议。"
+      },
+      "type": "project",
+      "dateAdded": "20261013"
+    },
+    {
       "id": "05cf034a-12a7-44f2-b283-be0a7ffea20a",
       "url": "https://github.com/xtool-org/xtool",
       "domain": "github.com",
