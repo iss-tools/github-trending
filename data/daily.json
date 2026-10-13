@@ -71397,5 +71397,594 @@
         "description": "BitNet 是微软研究院开源的官方 1-bit LLM 推理框架，其核心理念是通过量化感知训练（QAT）让模型权重从训练起就是三元值，而非训练后再压缩。基于 llama.cpp 深度改造的 bitnet.cpp 引擎可在无 GPU 的普通电脑上运行官方 2B 模型，实现数倍加速和大幅节能，是边缘智能与低功耗场景的前沿方案，但模型生态薄弱、部署有一定编译门槛。"
       }
     }
+  ],
+  "20261014": [
+    {
+      "id": "65f3b244-a1ed-4886-8f2b-3c31818c0e2f",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 195919,
+      "forks": 47862,
+      "starsAdded": 54706,
+      "createdAt": "2026-10-13T16:00:01.890Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "ctf",
+          "decompiler",
+          "developer-tools",
+          "disassembler",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "reverse-engineering",
+          "static-analysis"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rea.tools",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "09ff94a6-7b95-4a30-ab34-55d771e807bd",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/storytold/artcraft",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 24654,
+      "forks": 3889,
+      "starsAdded": 4078,
+      "createdAt": "2026-10-13T16:00:02.007Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      }
+    },
+    {
+      "id": "7aeaf029-9b42-4bb7-91a4-bac81329a796",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 54848,
+      "forks": 10762,
+      "starsAdded": 1961,
+      "createdAt": "2026-10-13T16:00:01.909Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-globe",
+          "cesium",
+          "flight-tracking",
+          "geospatial",
+          "geospatial-intelligence",
+          "gis",
+          "osint",
+          "photogrammetry",
+          "satellite-tracking",
+          "spatial-intelligence",
+          "webgl",
+          "worldview"
+        ],
+        "license": "License",
+        "homepage": "https://maptheworld.ai/",
+        "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. - bilawalsidhu/gods-eye-view"
+      },
+      "summaryData": {
+        "tags": [
+          "CesiumJS",
+          "Google Maps API",
+          "OpenAI Realtime",
+          "GEOINT",
+          "三维地球"
+        ],
+        "cover": "",
+        "title": "God’s Eye View 深度评测",
+        "ability": [
+          "三维地球可视化",
+          "13种实时图层叠加",
+          "电影化视觉风格切换",
+          "语音AI白板交互",
+          "多源OSINT数据集成"
+        ],
+        "summary": "浏览器里的“间谍卫星模拟器”，实时融合多源地球数据。",
+        "category": [
+          "数据可视化",
+          "开源情报",
+          "开发工具"
+        ],
+        "suitable": [
+          "地理空间爱好者",
+          "OSINT研究者",
+          "前端/3D开发者",
+          "应急可视化人员",
+          "技术好奇心强的用户"
+        ],
+        "description": "God’s Eye View（GEV）是一个运行在浏览器的开源指挥中心应用，将航班、船舶、地震、摄像头等实时公开数据融合到三维地球上，并提供电影级视觉效果与语音AI交互，适合作为地理空间情报与OSINT的学习沙箱和开发基座。"
+      }
+    },
+    {
+      "id": "23991861-a341-4344-bcb1-34751931ece9",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 53683,
+      "forks": 3402,
+      "starsAdded": 1813,
+      "createdAt": "2026-10-13T16:00:01.959Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://diagramdesign.dev",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
+      "id": "0b34a715-19f2-4462-a6c9-e2dcc3edda3e",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 62116,
+      "forks": 6937,
+      "starsAdded": 1691,
+      "createdAt": "2026-10-13T16:00:01.922Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "tauri",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "b4baac65-4e17-426d-bfcc-9d49cb272f0d",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/lyogavin/airllm",
+      "repo": "lyogavin/airllm",
+      "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 38107,
+      "forks": 3900,
+      "starsAdded": 1004,
+      "createdAt": "2026-10-13T16:00:01.991Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "chinese-llm",
+          "chinese-nlp",
+          "finetune",
+          "generative-ai",
+          "instruct-gpt",
+          "instruction-set",
+          "llama",
+          "llm",
+          "lora",
+          "open-models",
+          "open-source",
+          "open-source-models",
+          "qlora"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "AirLLM 2.8T LLM inference with single 4GB GPU. Contribute to lyogavin/airllm development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "大模型推理",
+          "低显存",
+          "GitHub开源",
+          "MoE模型",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "AirLLM：让 2.8 万亿参数模型在 4GB 显存上运行的革命性工具",
+        "ability": [
+          "层流式加载技术",
+          "专家级流式加载（支持 MoE）",
+          "极致低显存占用",
+          "广泛的模型兼容性",
+          "跨平台支持（含 CPU/Mac）"
+        ],
+        "summary": "AirLLM 是一个能突破显存瓶颈，在消费级显卡（甚至 4GB 显存）上运行超大模型的推理库。",
+        "category": [
+          "开发工具",
+          "人工智能",
+          "系统优化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "学术研究人员",
+          "预算有限的初创团队",
+          "学生党",
+          "AI 爱好者"
+        ],
+        "description": "AirLLM 通过创新的层流式加载和专家流式加载技术，打破了传统大模型推理对显存的高昂需求。它无需复杂的模型量化，即可让单张 4GB 显卡运行 70B 模型，甚至让 2.8T 参数的 Kimi K3 在不到 4GB 显存上跑起来，非常适合资源受限的本地实验与离线评估。"
+      }
+    },
+    {
+      "id": "a99f601a-4a8e-45b2-bb14-4ef7cecb7386",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 27934,
+      "forks": 1978,
+      "starsAdded": 978,
+      "createdAt": "2026-10-13T16:00:01.941Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      }
+    },
+    {
+      "id": "b7e0dfda-b6d6-40e1-967e-a1b9efd45ed1",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/xtool-org/xtool",
+      "repo": "xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "stars": 8854,
+      "forks": 367,
+      "starsAdded": 936,
+      "createdAt": "2026-10-13T16:00:02.022Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ios",
+          "linux",
+          "swift",
+          "swift-package-manager",
+          "windows",
+          "xcode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://xtool.sh",
+        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS开发",
+          "Swift",
+          "开源项目",
+          "CI/CD",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
+        "ability": [
+          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
+          "一条命令完成构建→签名→安装→启动的完整闭环",
+          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
+          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
+          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
+        ],
+        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
+        "category": [
+          "开发工具",
+          "iOS 开发",
+          "跨平台工具"
+        ],
+        "suitable": [
+          "CI/CD 工程师 / 移动 DevOps",
+          "Flutter / React Native 跨平台开发者",
+          "AI Agent / Claude Code / Codex 重度用户",
+          "只有 Windows/Linux 设备的学生党与兴趣开发者",
+          "想轻量开发、脱离 Xcode 的 macOS 老手"
+        ],
+        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      }
+    },
+    {
+      "id": "b4dd199a-9afe-4306-b100-cffb6018452c",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/skills",
+      "repo": "vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "stars": 34266,
+      "forks": 2938,
+      "starsAdded": 187,
+      "createdAt": "2026-10-13T16:00:01.978Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://skills.sh",
+        "description": "The open agent skills tool - npx skills. Contribute to vercel-labs/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CLI工具",
+          "技能管理",
+          "开源项目",
+          "Vercel",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "vercel-labs/skills：AI编程代理的包管理器",
+        "ability": [
+          "跨代理技能分发",
+          "统一技能格式标准化",
+          "技能生命周期管理",
+          "私有仓库支持",
+          "生态发现与排行榜"
+        ],
+        "summary": "给Claude Code、Cursor等75+编程代理安装管理技能包的命令行工具",
+        "category": [
+          "开发工具",
+          "AI编程"
+        ],
+        "suitable": [
+          "使用AI编程代理的开发者",
+          "工程团队",
+          "平台基础设施团队",
+          "插件生态贡献者"
+        ],
+        "description": "Vercel Labs推出的AI编程代理包管理工具，将提示词与脚本标准化为SKILL.md格式，统一分发到Claude Code、Cursor、Windsurf等75+代理，实现技能的复用、版本化和团队协作。"
+      }
+    }
   ]
 }
