@@ -1,6 +1,66 @@
 {
   "all": [
     {
+      "id": "05cf034a-12a7-44f2-b283-be0a7ffea20a",
+      "url": "https://github.com/xtool-org/xtool",
+      "domain": "github.com",
+      "repo": "xtool-org/xtool",
+      "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-13T11:04:29.908Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ios",
+          "linux",
+          "swift",
+          "swift-package-manager",
+          "windows",
+          "xcode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://xtool.sh",
+        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS开发",
+          "Swift",
+          "开源项目",
+          "CI/CD",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
+        "ability": [
+          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
+          "一条命令完成构建→签名→安装→启动的完整闭环",
+          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
+          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
+          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
+        ],
+        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
+        "category": [
+          "开发工具",
+          "iOS 开发",
+          "跨平台工具"
+        ],
+        "suitable": [
+          "CI/CD 工程师 / 移动 DevOps",
+          "Flutter / React Native 跨平台开发者",
+          "AI Agent / Claude Code / Codex 重度用户",
+          "只有 Windows/Linux 设备的学生党与兴趣开发者",
+          "想轻量开发、脱离 Xcode 的 macOS 老手"
+        ],
+        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      },
+      "type": "project",
+      "dateAdded": "20261013"
+    },
+    {
       "id": "af0155c8-b09a-4e7d-919f-05ceb0f3e797",
       "url": "https://github.com/microsoft/BitNet",
       "domain": "github.com",
@@ -10032,8 +10092,8 @@
       "forks": 0,
       "createdAt": "2026-09-10T12:44:46.477Z",
       "metaData": {
-        "forks": "2672",
-        "stars": "31357",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://skills.sh",

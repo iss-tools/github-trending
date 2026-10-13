@@ -27870,8 +27870,8 @@
       "starsAdded": 125,
       "createdAt": "2026-09-10T12:00:02.115Z",
       "metaData": {
-        "forks": "2672",
-        "stars": "31357",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://skills.sh",
@@ -29374,8 +29374,8 @@
       "starsAdded": 122,
       "createdAt": "2026-09-10T16:00:02.143Z",
       "metaData": {
-        "forks": "2672",
-        "stars": "31357",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://skills.sh",
@@ -70646,8 +70646,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 179486,
-      "forks": 43256,
+      "stars": 184132,
+      "forks": 44558,
       "starsAdded": 45327,
       "createdAt": "2026-10-12T16:00:02.031Z",
       "metaData": {
@@ -70720,8 +70720,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 23461,
-      "forks": 3742,
+      "stars": 23799,
+      "forks": 3778,
       "starsAdded": 4095,
       "createdAt": "2026-10-12T16:00:02.057Z",
       "metaData": {
@@ -70779,8 +70779,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 53202,
-      "forks": 3364,
+      "stars": 53324,
+      "forks": 3374,
       "starsAdded": 2081,
       "createdAt": "2026-10-12T16:00:02.064Z",
       "metaData": {
@@ -70841,8 +70841,8 @@
       "repo": "bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 54338,
-      "forks": 10691,
+      "stars": 54480,
+      "forks": 10716,
       "starsAdded": 1895,
       "createdAt": "2026-10-12T16:00:02.037Z",
       "metaData": {
@@ -70900,6 +70900,140 @@
       }
     },
     {
+      "id": "06676f48-011e-4283-a1fe-6f77fc131a11",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 61261,
+      "forks": 6868,
+      "starsAdded": 1691,
+      "createdAt": "2026-10-13T11:00:02.078Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "tauri",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "e1740c61-c50f-4ad7-8d25-201f3caaaf2b",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/xtool-org/xtool",
+      "repo": "xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "stars": 8517,
+      "forks": 350,
+      "starsAdded": 936,
+      "createdAt": "2026-10-13T11:00:02.094Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ios",
+          "linux",
+          "swift",
+          "swift-package-manager",
+          "windows",
+          "xcode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://xtool.sh",
+        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS开发",
+          "Swift",
+          "开源项目",
+          "CI/CD",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
+        "ability": [
+          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
+          "一条命令完成构建→签名→安装→启动的完整闭环",
+          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
+          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
+          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
+        ],
+        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
+        "category": [
+          "开发工具",
+          "iOS 开发",
+          "跨平台工具"
+        ],
+        "suitable": [
+          "CI/CD 工程师 / 移动 DevOps",
+          "Flutter / React Native 跨平台开发者",
+          "AI Agent / Claude Code / Codex 重度用户",
+          "只有 Windows/Linux 设备的学生党与兴趣开发者",
+          "想轻量开发、脱离 Xcode 的 macOS 老手"
+        ],
+        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      }
+    },
+    {
       "id": "2c4556a2-24e8-4e43-a8fe-3a043b445f82",
       "dateAdded": "20261013",
       "type": "github-daily",
@@ -70907,8 +71041,8 @@
       "repo": "lyogavin/airllm",
       "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 37858,
-      "forks": 3891,
+      "stars": 37933,
+      "forks": 3892,
       "starsAdded": 879,
       "createdAt": "2026-10-12T16:00:02.066Z",
       "metaData": {
@@ -71024,8 +71158,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 27650,
-      "forks": 1960,
+      "stars": 27734,
+      "forks": 1967,
       "starsAdded": 246,
       "createdAt": "2026-10-12T16:00:02.041Z",
       "metaData": {
@@ -71088,6 +71222,57 @@
           "注重数据隐私的团队"
         ],
         "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      }
+    },
+    {
+      "id": "364a5677-fd14-4627-b144-4e69872f250d",
+      "dateAdded": "20261013",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/skills",
+      "repo": "vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "stars": 34102,
+      "forks": 2926,
+      "starsAdded": 187,
+      "createdAt": "2026-10-13T11:00:02.088Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://skills.sh",
+        "description": "The open agent skills tool - npx skills. Contribute to vercel-labs/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CLI工具",
+          "技能管理",
+          "开源项目",
+          "Vercel",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "vercel-labs/skills：AI编程代理的包管理器",
+        "ability": [
+          "跨代理技能分发",
+          "统一技能格式标准化",
+          "技能生命周期管理",
+          "私有仓库支持",
+          "生态发现与排行榜"
+        ],
+        "summary": "给Claude Code、Cursor等75+编程代理安装管理技能包的命令行工具",
+        "category": [
+          "开发工具",
+          "AI编程"
+        ],
+        "suitable": [
+          "使用AI编程代理的开发者",
+          "工程团队",
+          "平台基础设施团队",
+          "插件生态贡献者"
+        ],
+        "description": "Vercel Labs推出的AI编程代理包管理工具，将提示词与脚本标准化为SKILL.md格式，统一分发到Claude Code、Cursor、Windsurf等75+代理，实现技能的复用、版本化和团队协作。"
       }
     },
     {

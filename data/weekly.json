@@ -19008,8 +19008,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 33502,
-      "forks": 2897,
+      "stars": 33849,
+      "forks": 2927,
       "starsAdded": 27263,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
@@ -19069,8 +19069,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 288496,
-      "forks": 24221,
+      "stars": 288750,
+      "forks": 24237,
       "starsAdded": 11139,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
@@ -19110,6 +19110,68 @@
           "AI 编程工具深度用户"
         ],
         "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "7d19a6ab-beb1-4f2d-9f15-70f2692e4fc0",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 53324,
+      "forks": 3374,
+      "starsAdded": 9237,
+      "createdAt": "2026-10-13T11:00:05.007Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://diagramdesign.dev",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
       }
     },
     {
@@ -19170,8 +19232,8 @@
       "repo": "tester-army/e2e",
       "description": "Next generation e2e testing framework for web and mobile apps.",
       "language": "TypeScript",
-      "stars": 9759,
-      "forks": 469,
+      "stars": 9852,
+      "forks": 475,
       "starsAdded": 5582,
       "createdAt": "2026-10-11T17:00:03.712Z",
       "metaData": {
@@ -19231,8 +19293,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 62067,
-      "forks": 5558,
+      "stars": 62176,
+      "forks": 5567,
       "starsAdded": 4482,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
@@ -19296,8 +19358,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 100204,
-      "forks": 8785,
+      "stars": 100251,
+      "forks": 8786,
       "starsAdded": 3762,
       "createdAt": "2026-10-11T17:00:03.733Z",
       "metaData": {
@@ -19369,8 +19431,8 @@
       "repo": "earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars": 19757,
-      "forks": 1943,
+      "stars": 19805,
+      "forks": 1944,
       "starsAdded": 2441,
       "createdAt": "2026-10-11T17:00:03.745Z",
       "metaData": {
@@ -19497,8 +19559,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11119,
-      "forks": 1082,
+      "stars": 11144,
+      "forks": 1084,
       "starsAdded": 1144,
       "createdAt": "2026-10-11T17:00:03.740Z",
       "metaData": {
@@ -19570,6 +19632,59 @@
       }
     },
     {
+      "id": "8add4c53-6096-40e5-bd43-1e991971641f",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "repo": "EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 8454,
+      "forks": 409,
+      "starsAdded": 845,
+      "createdAt": "2026-10-11T17:00:03.735Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+      },
+      "summaryData": {
+        "tags": [
+          "调试器",
+          "C/C++",
+          "开源",
+          "游戏开发",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "ability": [
+          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
+          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
+          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
+          "原生支持多进程与子进程同时调试",
+          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+        ],
+        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "category": [
+          "开发工具",
+          "游戏开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
+          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
+          "想研读生产级调试器源码的工具链爱好者",
+          "JAI、Odin 等小众语言用户",
+          "关注软件性能工程的进阶学习者"
+        ],
+        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+      }
+    },
+    {
       "id": "b3b35ba7-125f-42a2-96a8-4110bf946ca0",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19577,8 +19692,8 @@
       "repo": "flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "language": "Dart",
-      "stars": 180012,
-      "forks": 33859,
+      "stars": 180025,
+      "forks": 33882,
       "starsAdded": 806,
       "createdAt": "2026-10-11T17:00:03.742Z",
       "metaData": {
@@ -19643,56 +19758,77 @@
       }
     },
     {
-      "id": "8add4c53-6096-40e5-bd43-1e991971641f",
+      "id": "03444c1a-98e2-410a-b67a-ce587976f5a9",
       "dateAdded": "202642",
       "type": "github-weekly",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "repo": "EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars": 8419,
-      "forks": 407,
-      "starsAdded": 794,
-      "createdAt": "2026-10-11T17:00:03.735Z",
+      "url": "https://github.com/michael-denyer/pstack-claude",
+      "repo": "michael-denyer/pstack-claude",
+      "description": "Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses.",
+      "language": "JavaScript",
+      "stars": 1902,
+      "forks": 204,
+      "starsAdded": 393,
+      "createdAt": "2026-10-13T11:00:05.016Z",
       "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
+        "forks": "155",
+        "stars": "1476",
+        "topics": [
+          "agent-plugin",
+          "agent-skills",
+          "agentic-ai",
+          "anthropic",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "claude-code-skills",
+          "claude-plugin",
+          "claude-skills",
+          "code-review",
+          "codex",
+          "codex-cli",
+          "codex-plugin",
+          "codex-skills",
+          "coding-agent",
+          "developer-tools",
+          "gemini-cli",
+          "opencode",
+          "pstack"
+        ],
         "license": "MIT license",
         "homepage": "",
-        "description": "A native, user-mode, multi-process, graphical debugger. - EpicGames/raddebugger"
+        "description": "Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses. - michael-denyer/pstack-claude"
       },
       "summaryData": {
         "tags": [
-          "调试器",
-          "C/C++",
-          "开源",
-          "游戏开发",
-          "性能优化"
+          "Claude Code",
+          "AI Agent",
+          "代码质量",
+          "开源插件",
+          "工程效率"
         ],
         "cover": "",
-        "title": "RAD Debugger 深度评测：Epic 开源的高性能图形化调试器，让调试告别漫长等待",
+        "title": "pstack-claude 深度评测：把 Cursor 大神的 Agent 工程纪律搬到 Claude Code",
         "ability": [
-          "RDI 自定义调试信息格式，巨型 PDB 加载从十几秒降到亚秒级",
-          "万物皆 Watch Window：断点、调用栈、内存等面板统一为可编程监视窗口",
-          "变量富可视化：滑块、取色器、位图查看、3D 几何预览",
-          "原生支持多进程与子进程同时调试",
-          "架构清晰的分层 C 代码库，附赠高性能开源链接器 RAD Linker"
+          "poteto-mode 意图路由：一句话自动匹配 bug 修复、重构、新功能等工作流",
+          "内置 24 个 Skill 与 21 个流程：/how /why /architect /tdd 等工程纪律",
+          "arena 多模型并行竞标方案，swarm 批量并行任务调度",
+          "23 条命名原则（如最小 diff、穷举设计空间）可随时敲入纠偏 agent",
+          "跨平台支持 Claude Code、Codex CLI、Pi、OpenCode、Gemini CLI，三条命令即装"
         ],
-        "summary": "Epic Games 用 C 语言从零手写的开源图形化调试器，专治 Windows 上 Visual Studio 调试加载慢的顽疾。",
+        "summary": "把 Lauren Tan 的 Cursor『agent 作风规范包』pstack 移植到 Claude Code 等主流编程 Agent 的开源插件，让 AI 少写代码、写对代码。",
         "category": [
+          "AI 编程",
           "开发工具",
-          "游戏开发",
           "开源项目"
         ],
         "suitable": [
-          "Windows 平台 C/C++ 游戏引擎与 3A 游戏开发者",
-          "被 Visual Studio 符号加载卡顿折磨的系统程序员",
-          "想研读生产级调试器源码的工具链爱好者",
-          "JAI、Odin 等小众语言用户",
-          "关注软件性能工程的进阶学习者"
+          "Claude Code / Codex CLI 重度用户",
+          "想并行开多个 AI Agent 的开发者",
+          "没有团队做 code review 的独立开发者",
+          "ML / 生物信息 / 数据工程背景的工程师",
+          "被 AI 生成代码质量差、review 成本高折磨的工程团队"
         ],
-        "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
+        "description": "pstack-claude 是 Michael Denyer 将 poteto（Lauren Tan）为 Cursor 打造的 agent 工程规范包移植到 Claude Code 等平台的开源插件。它不是新框架，而是 20 多份 Markdown 指令加路由逻辑，强制 agent 先理解、再设计、再实现、最后验证，把『敢并行开多个 Agent』变成现实。适合中大型改动，小任务略显杀鸡用牛刀。"
       }
     },
     {
