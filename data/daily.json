@@ -72468,5 +72468,786 @@
         "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。"
       }
     }
+  ],
+  "20261015": [
+    {
+      "id": "96b450d6-c7af-405e-bdd5-73cfd2095c01",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 234388,
+      "forks": 58489,
+      "starsAdded": 41187,
+      "createdAt": "2026-10-14T16:00:02.368Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "decompiler",
+          "developer-tools",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "rea",
+          "reverse-engineering",
+          "static-analysis",
+          "touhou"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rea.tools",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "af042bb8-771b-40ca-8731-9ce220f8cea2",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 65515,
+      "forks": 7247,
+      "starsAdded": 3547,
+      "createdAt": "2026-10-14T16:00:02.379Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "0cdddafa-fcf2-4b5f-a5e8-ae9f6cdc1404",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/ifixai-ai/iFixAi",
+      "repo": "ifixai-ai/iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "language": "Python",
+      "stars": 26961,
+      "forks": 1490,
+      "starsAdded": 2143,
+      "createdAt": "2026-10-14T16:00:02.394Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "ai",
+          "ai-alignment",
+          "ai-evaluation",
+          "ai-governance",
+          "ai-safety",
+          "cli",
+          "diagnostic-tool",
+          "eu-ai-act",
+          "hallucination-detection",
+          "iso-42001",
+          "llm-evaluation",
+          "llm-security",
+          "nist-ai-rmf",
+          "owasp-llm",
+          "prompt-injection",
+          "python",
+          "responsible-ai",
+          "risk-assessment",
+          "risk-management"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.ifixai.ai",
+        "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds. - ifixai-ai/iFixAi"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "审计工具",
+          "开源",
+          "安全合规",
+          "Evals"
+        ],
+        "cover": "",
+        "title": "iFixAi 深度评测：AI Agent 时代的独立审计官",
+        "ability": [
+          "45 项核心对齐性检查，覆盖编造、越权、欺骗、不可预测、不透明五大支柱",
+          "A–F 评分卡输出，权重加权 + 强制红线一票否决机制",
+          "被测系统与裁判模型强制跨厂商分离，保证审计独立性",
+          "Fixture 驱动设计，同一引擎适配不同行业 Agent，支持一键 CLI 向导与 CI 集成",
+          "自动映射 EU AI Act、NIST AI RMF、OWASP Top 10 等合规框架"
+        ],
+        "summary": "开源的 AI Agent 行为审计工具，上线前帮你揪出 Agent 的越权、编造与欺骗行为",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业 CTO/CIO（Agent 上线前独立体检）",
+          "Agent 开发者（CI 回归测试）",
+          "风控与合规团队",
+          "AI 安全研究者",
+          "Agent 采购与验收方"
+        ],
+        "description": "iFixAi 是一款 Apache 2.0 开源的 AI Agent 行为审计工具。它不测 Agent 有多聪明，而是审计它是否守规矩：会不会编造数据、偷偷越权、欺骗用户。提供 45 项核心检查、五套测试套件与 A–F 评分卡，约两分钟生成带证据链的报告，支持 CLI、插件与主流 AI 编程工具集成。单次审计裁判调用成本约 10-18 美元。"
+      }
+    },
+    {
+      "id": "073b7360-16e8-4922-916f-23a044d82789",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/xtool-org/xtool",
+      "repo": "xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "stars": 10374,
+      "forks": 452,
+      "starsAdded": 1510,
+      "createdAt": "2026-10-14T16:00:02.403Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ios",
+          "linux",
+          "swift",
+          "swift-package-manager",
+          "windows",
+          "xcode"
+        ],
+        "license": "MIT license",
+        "homepage": "https://xtool.sh",
+        "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. - xtool-org/xtool"
+      },
+      "summaryData": {
+        "tags": [
+          "iOS开发",
+          "Swift",
+          "开源项目",
+          "CI/CD",
+          "跨平台"
+        ],
+        "cover": "",
+        "title": "xtool 深度评测：不装 Xcode，在 Linux/Windows 上构建并部署 iOS 应用",
+        "ability": [
+          "跨平台构建 iOS 应用，支持 Linux/WSL/macOS",
+          "一条命令完成构建→签名→安装→启动的完整闭环",
+          "基于 SwiftPM 声明式项目管理，告别 pbxproj 合并冲突",
+          "提供 XKit 库，可编程化操作 Apple Developer Services 与设备通信",
+          "全 CLI 可脚本化，天然适配 CI/CD 与 AI Agent 工作流"
+        ],
+        "summary": "开源命令行工具，无需 Mac 和 Xcode，就能在 Linux/Windows 上用 Swift 构建、签名并部署 iOS 应用到真机。",
+        "category": [
+          "开发工具",
+          "iOS 开发",
+          "跨平台工具"
+        ],
+        "suitable": [
+          "CI/CD 工程师 / 移动 DevOps",
+          "Flutter / React Native 跨平台开发者",
+          "AI Agent / Claude Code / Codex 重度用户",
+          "只有 Windows/Linux 设备的学生党与兴趣开发者",
+          "想轻量开发、脱离 Xcode 的 macOS 老手"
+        ],
+        "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      }
+    },
+    {
+      "id": "40174683-113f-4423-a876-333a07d9c56c",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "repo": "vxcontrol/pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "language": "Go",
+      "stars": 29042,
+      "forks": 4369,
+      "starsAdded": 1070,
+      "createdAt": "2026-10-14T16:00:02.397Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-security-tool",
+          "anthropic",
+          "autonomous-agents",
+          "golang",
+          "gpt",
+          "graphql",
+          "multi-agent-system",
+          "offensive-security",
+          "open-source",
+          "openai",
+          "penetration-testing",
+          "penetration-testing-tools",
+          "react",
+          "security-automation",
+          "security-testing",
+          "security-tools",
+          "self-hosted"
+        ],
+        "license": "MIT license",
+        "homepage": "https://pentagi.com",
+        "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks - vxcontrol/pentagi"
+      },
+      "summaryData": {
+        "tags": [
+          "自动化渗透测试",
+          "多智能体系统",
+          "开源安全",
+          "Docker",
+          "红队工具"
+        ],
+        "cover": "",
+        "title": "PentAGI：开源自动化渗透测试多智能体系统深度评测",
+        "ability": [
+          "多智能体协作",
+          "真实工具自动化调用",
+          "知识图谱与拓扑追踪",
+          "全链路可观测与审计",
+          "自托管与隐私保护"
+        ],
+        "summary": "PentAGI 是一个能调用真实黑客工具的自动化渗透测试多智能体系统，旨在通过 AI 协作实现可复用、可审计的红队流水线。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "信息安全从业者",
+          "DevSecOps 工程师",
+          "安全研究人员与学生",
+          "企业安全团队"
+        ],
+        "description": "PentAGI 利用多个 AI 代理在 Docker 沙箱中协同工作，自动化执行从侦察到利用的渗透测试流程。它集成 200+ 真实安全工具，支持知识图谱记忆和全流程观测，旨在解决传统扫描器误报高和人工测试效率低的问题。"
+      }
+    },
+    {
+      "id": "8f19b6ce-2642-49db-8857-5d8d6ab922ce",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 87105,
+      "forks": 9732,
+      "starsAdded": 1002,
+      "createdAt": "2026-10-14T16:00:02.418Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
+      }
+    },
+    {
+      "id": "7ae93016-370d-478a-bd8e-f477dacdee3a",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 28893,
+      "forks": 2030,
+      "starsAdded": 946,
+      "createdAt": "2026-10-14T16:00:02.384Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      }
+    },
+    {
+      "id": "14b21e93-93a5-47a1-b338-f8855b531fdb",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/rust-lang/rust",
+      "repo": "rust-lang/rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "language": "Rust",
+      "stars": 119861,
+      "forks": 18685,
+      "starsAdded": 205,
+      "createdAt": "2026-10-14T16:00:02.400Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "language",
+          "rust"
+        ],
+        "license": "license-metadata.json",
+        "homepage": "https://www.rust-lang.org",
+        "description": "Empowering everyone to build reliable and efficient software. - rust-lang/rust"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "系统编程",
+          "内存安全",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Rust 深度评测：连续十年霸榜最受喜爱的系统级编程语言",
+        "ability": [
+          "编译期内存安全：所有权+借用检查器把内存错误从运行时炸弹变成编译报错",
+          "零成本抽象：高级语法编译后与手写低级代码性能一致",
+          "无 GC 高性能：运行时零开销，可深入内核、嵌入式等极端场景",
+          "工业级工具链：Cargo/rustup/Clippy/rust-analyzer 全链路开箱即用",
+          "成熟生态治理：RFC 流程演进 + crates.io 超 15 万个库"
+        ],
+        "summary": "用'所有权'机制在无 GC 前提下实现内存安全的系统级编程语言，已落地 Linux 内核与 Cloudflare 等顶级生产环境。",
+        "category": [
+          "编程语言",
+          "开发工具",
+          "系统编程"
+        ],
+        "suitable": [
+          "后端与系统开发者（高并发服务、数据库、中间件）",
+          "嵌入式/区块链/密码学领域工程师",
+          "WebAssembly 与前端工具链开发者",
+          "有 C/C++ 背景想摆脱内存问题折磨的程序员",
+          "想构建长期竞争力的年轻工程师"
+        ],
+        "description": "Rust 以独特的所有权模型，在无垃圾回收的前提下实现编译期内存安全，化解了 C/C++ 不安全、带 GC 语言有停顿的古老矛盾。如今已进入 Linux 内核、Windows 内核、Cloudflare（日处理万亿请求）等生产环境，并连续十年蝉联 Stack Overflow'最受喜爱语言'。主要短板是学习曲线陡峭、编译速度偏慢、异步生态略有碎片化。"
+      }
+    },
+    {
+      "id": "c3e292d6-9862-4321-939c-854717129a22",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/ntdevlabs/tiny11builder",
+      "repo": "ntdevlabs/tiny11builder",
+      "description": "WinUI app for building smaller, customized Windows 11 images.",
+      "language": "C#",
+      "stars": 20110,
+      "forks": 1548,
+      "starsAdded": 194,
+      "createdAt": "2026-10-14T16:00:02.409Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "WinUI app for building smaller, customized Windows 11 images. - ntdevlabs/tiny11builder"
+      },
+      "summaryData": {
+        "tags": [
+          "Windows 11",
+          "系统精简",
+          "开源工具",
+          "PowerShell",
+          "装机必备"
+        ],
+        "cover": "",
+        "title": "Tiny11Builder 深度评测：给 Windows 11 瘦身的开源瑞士刀",
+        "ability": [
+          "一键移除 Copilot、Edge、OneDrive 等预装组件",
+          "跳过强制微软账户登录的开箱设置流程",
+          "提供 Tiny11 / Core / 自定义三种瘦身档位",
+          "全程只用微软官方 DISM 工具，产物可正常激活与更新",
+          "支持 WinUI 图形界面、ARM64 架构与自定义配置保存"
+        ],
+        "summary": "一款开源工具，能把正版 Windows 11 官方 ISO 重打包成无广告、无强制微软账户的轻量精简镜像",
+        "category": [
+          "开发工具",
+          "系统工具"
+        ],
+        "suitable": [
+          "老电脑与低配机用户",
+          "虚拟机与开发测试者",
+          "注重隐私、讨厌预装广告的用户",
+          "IT 管理员与装机商",
+          "想要纯净 Win11 的极客玩家"
+        ],
+        "description": "GitHub 约 2 万 Star 的开源工具，调用微软官方 DISM 与 oscdimg，把正版 Windows 11 ISO 重打包成轻量镜像：可移除 Copilot、Edge 等预装组件，ISO 体积可缩至 2-3 GB，系统激活与更新不受影响。但无法解决遥测与 Office 弹窗问题，Core 模式仅适合虚拟机测试。"
+      }
+    },
+    {
+      "id": "4927b17c-50da-44d4-939a-412e62679bf3",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars": 49102,
+      "forks": 4404,
+      "starsAdded": 146,
+      "createdAt": "2026-10-14T16:00:02.390Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "license": "MIT license",
+        "homepage": "https://arxiv.org/abs/2609.00065",
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "开源",
+          "科研",
+          "自动化",
+          "生物信息"
+        ],
+        "cover": "",
+        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
+        "ability": [
+          "跨领域科研技能库",
+          "数据库与工具集成",
+          "标准化 Agent 技能配置",
+          "复杂科研工作流自动化",
+          "安全测试与合规扫描"
+        ],
+        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "科研工具"
+        ],
+        "suitable": [
+          "生命科学研究人员",
+          "AI 辅助编程用户",
+          "生物信息工程师",
+          "药企研发团队",
+          "AI 应用开发者"
+        ],
+        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。"
+      }
+    },
+    {
+      "id": "24e003e6-9ad5-400d-bc39-250ff7c7b18f",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 52317,
+      "forks": 4764,
+      "starsAdded": 94,
+      "createdAt": "2026-10-14T16:00:02.392Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      }
+    },
+    {
+      "id": "92c110dd-025b-4e0c-9153-d846cff8aaef",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/nvm-sh/nvm",
+      "repo": "nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "stars": 95403,
+      "forks": 10510,
+      "starsAdded": 45,
+      "createdAt": "2026-10-14T16:00:02.388Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bash",
+          "install",
+          "lts",
+          "node",
+          "node-js",
+          "nodejs",
+          "nvm",
+          "nvmrc",
+          "posix",
+          "posix-compliant",
+          "shell",
+          "version-manager",
+          "zsh"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. - nvm-sh/nvm"
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "版本管理",
+          "nvm",
+          "开发工具",
+          "Shell脚本"
+        ],
+        "cover": "",
+        "title": "Node 版本管理的“事实标准”：nvm-sh/nvm 深度评测",
+        "ability": [
+          "多版本共存与切换",
+          "项目级版本控制",
+          "LTS 版本支持",
+          "零侵入环境配置",
+          "镜像源定制"
+        ],
+        "summary": "macOS/Linux/WSL 上管理多版本 Node.js 的首选工具，轻量、稳定且生态成熟。",
+        "category": [
+          "开发工具",
+          "环境配置"
+        ],
+        "suitable": [
+          "前端/Node.js 开发者",
+          "DevOps 工程师",
+          "团队技术负责人"
+        ],
+        "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。"
+      }
+    }
   ]
 }
