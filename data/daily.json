@@ -71392,8 +71392,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 226431,
-      "forks": 56199,
+      "stars": 229571,
+      "forks": 57111,
       "starsAdded": 41187,
       "createdAt": "2026-10-13T16:00:01.890Z",
       "metaData": {
@@ -71525,8 +71525,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 64886,
-      "forks": 7191,
+      "stars": 65115,
+      "forks": 7210,
       "starsAdded": 3547,
       "createdAt": "2026-10-13T16:00:01.922Z",
       "metaData": {
@@ -71598,8 +71598,8 @@
       "repo": "ifixai-ai/iFixAi",
       "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
       "language": "Python",
-      "stars": 26599,
-      "forks": 1474,
+      "stars": 26715,
+      "forks": 1476,
       "starsAdded": 2143,
       "createdAt": "2026-10-14T11:00:02.005Z",
       "metaData": {
@@ -71738,8 +71738,8 @@
       "repo": "vxcontrol/pentagi",
       "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "language": "Go",
-      "stars": 28701,
-      "forks": 4320,
+      "stars": 28850,
+      "forks": 4337,
       "starsAdded": 1819,
       "createdAt": "2026-10-14T11:00:02.015Z",
       "metaData": {
@@ -71864,62 +71864,6 @@
       }
     },
     {
-      "id": "fef4ee96-0b2a-46c5-953c-9945ce71fa66",
-      "dateAdded": "20261014",
-      "type": "github-daily",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "repo": "NationalSecurityAgency/ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "language": "Java",
-      "stars": 86802,
-      "forks": 9691,
-      "starsAdded": 1550,
-      "createdAt": "2026-10-14T11:00:02.034Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "disassembler",
-          "reverse-engineering",
-          "software-analysis"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
-      },
-      "summaryData": {
-        "tags": [
-          "逆向工程",
-          "开源安全",
-          "反编译",
-          "Ghidra",
-          "二进制分析"
-        ],
-        "cover": "",
-        "title": "Ghidra: NSA开源的顶级逆向工程框架",
-        "ability": [
-          "企业级反编译器",
-          "多架构二进制分析",
-          "团队协作与版本跟踪",
-          "自动化脚本与插件扩展",
-          "内置调试器集成"
-        ],
-        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
-        "category": [
-          "开发工具",
-          "网络安全"
-        ],
-        "suitable": [
-          "安全研究员",
-          "CTF/二进制安全玩家",
-          "漏洞挖掘专家",
-          "开发与运维团队",
-          "计算机专业学生"
-        ],
-        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
-      }
-    },
-    {
       "id": "b7e0dfda-b6d6-40e1-967e-a1b9efd45ed1",
       "dateAdded": "20261014",
       "type": "github-daily",
@@ -71927,8 +71871,8 @@
       "repo": "xtool-org/xtool",
       "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
       "language": "Swift",
-      "stars": 10058,
-      "forks": 430,
+      "stars": 10167,
+      "forks": 436,
       "starsAdded": 1510,
       "createdAt": "2026-10-13T16:00:02.022Z",
       "metaData": {
@@ -71977,6 +71921,62 @@
           "想轻量开发、脱离 Xcode 的 macOS 老手"
         ],
         "description": "xtool 是用 Swift 编写的开源命令行工具（5.6k+ Star，MIT 协议），由越狱社区出身的开发者 Kabir Oberai 打造。它让用户无需 Xcode 和 Mac，即可在 Linux/Windows 上完成 iOS 应用的构建、签名、安装与启动。但目前暂不支持 App Store 提交、LLDB 真机调试和 Asset Catalog，适合与 Xcode 主辅搭配使用。"
+      }
+    },
+    {
+      "id": "fef4ee96-0b2a-46c5-953c-9945ce71fa66",
+      "dateAdded": "20261014",
+      "type": "github-daily",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 86907,
+      "forks": 9707,
+      "starsAdded": 1002,
+      "createdAt": "2026-10-14T11:00:02.034Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
       }
     },
     {
@@ -72054,8 +72054,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 28702,
-      "forks": 2017,
+      "stars": 28780,
+      "forks": 2019,
       "starsAdded": 946,
       "createdAt": "2026-10-13T16:00:01.941Z",
       "metaData": {
@@ -72128,8 +72128,8 @@
       "repo": "rust-lang/rust",
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
-      "stars": 119985,
-      "forks": 18643,
+      "stars": 120049,
+      "forks": 18655,
       "starsAdded": 205,
       "createdAt": "2026-10-14T11:00:02.018Z",
       "metaData": {
@@ -72236,8 +72236,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 48864,
-      "forks": 4390,
+      "stars": 48962,
+      "forks": 4394,
       "starsAdded": 146,
       "createdAt": "2026-10-14T11:00:01.986Z",
       "metaData": {
@@ -72307,7 +72307,7 @@
       "repo": "ntdevlabs/tiny11builder",
       "description": "WinUI app for building smaller, customized Windows 11 images.",
       "language": "C#",
-      "stars": 20023,
+      "stars": 20058,
       "forks": 1544,
       "starsAdded": 132,
       "createdAt": "2026-10-14T11:00:02.031Z",
@@ -72359,8 +72359,8 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 52171,
-      "forks": 4757,
+      "stars": 52235,
+      "forks": 4760,
       "starsAdded": 94,
       "createdAt": "2026-10-14T11:00:01.998Z",
       "metaData": {
@@ -72412,8 +72412,8 @@
       "repo": "nvm-sh/nvm",
       "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
       "language": "Shell",
-      "stars": 95364,
-      "forks": 10506,
+      "stars": 95376,
+      "forks": 10508,
       "starsAdded": 45,
       "createdAt": "2026-10-14T11:00:01.983Z",
       "metaData": {
