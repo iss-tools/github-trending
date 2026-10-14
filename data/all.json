@@ -1,6 +1,189 @@
 {
   "all": [
     {
+      "id": "fb49aec3-814b-4ee6-88da-8ed85ab13202",
+      "url": "https://github.com/ntdevlabs/tiny11builder",
+      "domain": "github.com",
+      "repo": "ntdevlabs/tiny11builder",
+      "description": "GitHub 约 2 万 Star 的开源工具，调用微软官方 DISM 与 oscdimg，把正版 Windows 11 ISO 重打包成轻量镜像：可移除 Copilot、Edge 等预装组件，ISO 体积可缩至 2-3 GB，系统激活与更新不受影响。但无法解决遥测与 Office 弹窗问题，Core 模式仅适合虚拟机测试。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-14T11:12:07.973Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "WinUI app for building smaller, customized Windows 11 images. - ntdevlabs/tiny11builder"
+      },
+      "summaryData": {
+        "tags": [
+          "Windows 11",
+          "系统精简",
+          "开源工具",
+          "PowerShell",
+          "装机必备"
+        ],
+        "cover": "",
+        "title": "Tiny11Builder 深度评测：给 Windows 11 瘦身的开源瑞士刀",
+        "ability": [
+          "一键移除 Copilot、Edge、OneDrive 等预装组件",
+          "跳过强制微软账户登录的开箱设置流程",
+          "提供 Tiny11 / Core / 自定义三种瘦身档位",
+          "全程只用微软官方 DISM 工具，产物可正常激活与更新",
+          "支持 WinUI 图形界面、ARM64 架构与自定义配置保存"
+        ],
+        "summary": "一款开源工具，能把正版 Windows 11 官方 ISO 重打包成无广告、无强制微软账户的轻量精简镜像",
+        "category": [
+          "开发工具",
+          "系统工具"
+        ],
+        "suitable": [
+          "老电脑与低配机用户",
+          "虚拟机与开发测试者",
+          "注重隐私、讨厌预装广告的用户",
+          "IT 管理员与装机商",
+          "想要纯净 Win11 的极客玩家"
+        ],
+        "description": "GitHub 约 2 万 Star 的开源工具，调用微软官方 DISM 与 oscdimg，把正版 Windows 11 ISO 重打包成轻量镜像：可移除 Copilot、Edge 等预装组件，ISO 体积可缩至 2-3 GB，系统激活与更新不受影响。但无法解决遥测与 Office 弹窗问题，Core 模式仅适合虚拟机测试。"
+      },
+      "type": "project",
+      "dateAdded": "20261014"
+    },
+    {
+      "id": "e952ae1f-5280-4447-8010-7a21d23f2c5c",
+      "url": "https://github.com/rust-lang/rust",
+      "domain": "github.com",
+      "repo": "rust-lang/rust",
+      "description": "Rust 以独特的所有权模型，在无垃圾回收的前提下实现编译期内存安全，化解了 C/C++ 不安全、带 GC 语言有停顿的古老矛盾。如今已进入 Linux 内核、Windows 内核、Cloudflare（日处理万亿请求）等生产环境，并连续十年蝉联 Stack Overflow'最受喜爱语言'。主要短板是学习曲线陡峭、编译速度偏慢、异步生态略有碎片化。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-14T11:08:14.361Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "language",
+          "rust"
+        ],
+        "license": "license-metadata.json",
+        "homepage": "https://www.rust-lang.org",
+        "description": "Empowering everyone to build reliable and efficient software. - rust-lang/rust"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "系统编程",
+          "内存安全",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Rust 深度评测：连续十年霸榜最受喜爱的系统级编程语言",
+        "ability": [
+          "编译期内存安全：所有权+借用检查器把内存错误从运行时炸弹变成编译报错",
+          "零成本抽象：高级语法编译后与手写低级代码性能一致",
+          "无 GC 高性能：运行时零开销，可深入内核、嵌入式等极端场景",
+          "工业级工具链：Cargo/rustup/Clippy/rust-analyzer 全链路开箱即用",
+          "成熟生态治理：RFC 流程演进 + crates.io 超 15 万个库"
+        ],
+        "summary": "用'所有权'机制在无 GC 前提下实现内存安全的系统级编程语言，已落地 Linux 内核与 Cloudflare 等顶级生产环境。",
+        "category": [
+          "编程语言",
+          "开发工具",
+          "系统编程"
+        ],
+        "suitable": [
+          "后端与系统开发者（高并发服务、数据库、中间件）",
+          "嵌入式/区块链/密码学领域工程师",
+          "WebAssembly 与前端工具链开发者",
+          "有 C/C++ 背景想摆脱内存问题折磨的程序员",
+          "想构建长期竞争力的年轻工程师"
+        ],
+        "description": "Rust 以独特的所有权模型，在无垃圾回收的前提下实现编译期内存安全，化解了 C/C++ 不安全、带 GC 语言有停顿的古老矛盾。如今已进入 Linux 内核、Windows 内核、Cloudflare（日处理万亿请求）等生产环境，并连续十年蝉联 Stack Overflow'最受喜爱语言'。主要短板是学习曲线陡峭、编译速度偏慢、异步生态略有碎片化。"
+      },
+      "type": "project",
+      "dateAdded": "20261014"
+    },
+    {
+      "id": "e90a3470-f4d8-41d3-a11c-b247dce5ad7a",
+      "url": "https://github.com/ifixai-ai/iFixAi",
+      "domain": "github.com",
+      "repo": "ifixai-ai/iFixAi",
+      "description": "iFixAi 是一款 Apache 2.0 开源的 AI Agent 行为审计工具。它不测 Agent 有多聪明，而是审计它是否守规矩：会不会编造数据、偷偷越权、欺骗用户。提供 45 项核心检查、五套测试套件与 A–F 评分卡，约两分钟生成带证据链的报告，支持 CLI、插件与主流 AI 编程工具集成。单次审计裁判调用成本约 10-18 美元。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-14T11:03:56.812Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "ai",
+          "ai-alignment",
+          "ai-evaluation",
+          "ai-governance",
+          "ai-safety",
+          "cli",
+          "diagnostic-tool",
+          "eu-ai-act",
+          "hallucination-detection",
+          "iso-42001",
+          "llm-evaluation",
+          "llm-security",
+          "nist-ai-rmf",
+          "owasp-llm",
+          "prompt-injection",
+          "python",
+          "responsible-ai",
+          "risk-assessment",
+          "risk-management"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.ifixai.ai",
+        "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds. - ifixai-ai/iFixAi"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "审计工具",
+          "开源",
+          "安全合规",
+          "Evals"
+        ],
+        "cover": "",
+        "title": "iFixAi 深度评测：AI Agent 时代的独立审计官",
+        "ability": [
+          "45 项核心对齐性检查，覆盖编造、越权、欺骗、不可预测、不透明五大支柱",
+          "A–F 评分卡输出，权重加权 + 强制红线一票否决机制",
+          "被测系统与裁判模型强制跨厂商分离，保证审计独立性",
+          "Fixture 驱动设计，同一引擎适配不同行业 Agent，支持一键 CLI 向导与 CI 集成",
+          "自动映射 EU AI Act、NIST AI RMF、OWASP Top 10 等合规框架"
+        ],
+        "summary": "开源的 AI Agent 行为审计工具，上线前帮你揪出 Agent 的越权、编造与欺骗行为",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业 CTO/CIO（Agent 上线前独立体检）",
+          "Agent 开发者（CI 回归测试）",
+          "风控与合规团队",
+          "AI 安全研究者",
+          "Agent 采购与验收方"
+        ],
+        "description": "iFixAi 是一款 Apache 2.0 开源的 AI Agent 行为审计工具。它不测 Agent 有多聪明，而是审计它是否守规矩：会不会编造数据、偷偷越权、欺骗用户。提供 45 项核心检查、五套测试套件与 A–F 评分卡，约两分钟生成带证据链的报告，支持 CLI、插件与主流 AI 编程工具集成。单次审计裁判调用成本约 10-18 美元。"
+      },
+      "type": "project",
+      "dateAdded": "20261014"
+    },
+    {
       "id": "23582c0b-82a0-4869-b707-ef55bb1ed381",
       "url": "https://github.com/google/artemis",
       "domain": "github.com",
@@ -968,7 +1151,6 @@
           "cli",
           "codex",
           "cordis",
-          "ctf",
           "decompiler",
           "developer-tools",
           "dsh",
@@ -980,7 +1162,8 @@
           "model-context-protocol",
           "rea",
           "reverse-engineering",
-          "static-analysis"
+          "static-analysis",
+          "touhou"
         ],
         "license": "MIT license",
         "homepage": "https://rea.tools",
@@ -5026,8 +5209,8 @@
       "forks": 0,
       "createdAt": "2026-09-23T12:08:00.601Z",
       "metaData": {
-        "forks": "4677",
-        "stars": "51282",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "https://clianything.cc/",
@@ -9150,8 +9333,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:38:49.394Z",
       "metaData": {
-        "forks": "3117",
-        "stars": "24311",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai-agents",
           "ai-security-tool",
@@ -9172,7 +9355,7 @@
           "security-tools",
           "self-hosted"
         ],
-        "license": "licenses",
+        "license": "MIT license",
         "homepage": "https://pentagi.com",
         "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks - vxcontrol/pentagi"
       },
@@ -12299,8 +12482,8 @@
       "forks": 0,
       "createdAt": "2026-09-05T12:18:30.639Z",
       "metaData": {
-        "forks": "10441",
-        "stars": "95047",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "bash",
           "install",
@@ -12318,7 +12501,7 @@
         ],
         "license": "MIT license",
         "homepage": "",
-        "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. $nvm: 3ArcxqLtXMmBnWbbtfwQgVL3MNnDsggzgGDtXMnjpump - nvm-sh/nvm"
+        "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. - nvm-sh/nvm"
       },
       "summaryData": {
         "tags": [
@@ -17896,8 +18079,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:59:10.410Z",
       "metaData": {
-        "forks": "4209",
-        "stars": "46616",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
           "ai-scientist",
@@ -17919,7 +18102,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://arxiv.org/abs/2609.00065",
-        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
       },
       "summaryData": {
         "tags": [
