@@ -73699,5 +73699,820 @@
         "description": "TokenSpeed 是 LightSeek Foundation 于 2026 年开源（MIT 协议）的 LLM 推理引擎，采用 C++ 有限状态机调度器加 Python 执行层的混合架构，专为长上下文、高并发的 Agent 工作负载优化。它在 NVIDIA B200 上性能超越 TensorRT-LLM，MLA 内核被 vLLM 采纳，并获 PyTorch Foundation 收编。但需要数据中心级 GPU（CUDA 13 / ROCm 7.2），不适合消费级硬件用户，且仍处预览期。"
       }
     }
+  ],
+  "20261016": [
+    {
+      "id": "6b33a6c3-cbb9-4f96-becf-5c58421390c5",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/morluto/rea",
+      "repo": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 263173,
+      "forks": 66199,
+      "starsAdded": 32282,
+      "createdAt": "2026-10-15T16:00:02.498Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "decompiler",
+          "developer-tools",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "rea",
+          "reverse-engineering",
+          "static-analysis",
+          "touhou"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rea.tools",
+        "description": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "MCP",
+          "AI Agent",
+          "开源项目",
+          "反编译"
+        ],
+        "cover": "",
+        "title": "REA 深度评测：把逆向工程交给 AI Agent 的一句话提示词",
+        "ability": [
+          "多引擎反编译分析，支持 Hopper 与 Ghidra 双 Provider",
+          "Evidence 证据链机制，结论可导入导出、对比、审计",
+          "一行命令接入 Claude Code、Cursor 等 10+ 主流 AI Agent",
+          "116+ 工具覆盖原生二进制、Electron、.NET、浏览器等分析场景",
+          "完全本地执行，无数据上传，隐私安全"
+        ],
+        "summary": "一个让 AI Agent 自动反编译 App 并复刻功能的逆向工程 MCP 框架。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "安全研究"
+        ],
+        "suitable": [
+          "想研究竞品功能实现思路的产品开发者",
+          "安全研究员与逆向工程师",
+          "需要产出可审计报告的互操作/合规工程师",
+          "恶意样本分析员",
+          "Electron 与前端开发者"
+        ],
+        "description": "REA 是一个 TypeScript CLI + MCP 框架，把 Hopper/Ghidra 等专业逆向工具翻译给 AI Agent 使用。它提供 116+ 个工具，覆盖反编译、交叉引用、调用图追踪等能力，所有结论封装成可审计的 Evidence 证据包，分析完全本地执行，支持一行命令接入主流 AI 编程助手，把逆向工程从手工考古升级为可复现的工程流程。"
+      }
+    },
+    {
+      "id": "65d3547d-2b0f-4465-9bd8-2e13366e15c1",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 68313,
+      "forks": 7475,
+      "starsAdded": 3027,
+      "createdAt": "2026-10-15T16:00:02.528Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "cf741c56-aba6-49c9-b670-88df3c0847c2",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 88351,
+      "forks": 9854,
+      "starsAdded": 1366,
+      "createdAt": "2026-10-15T16:00:02.549Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
+      }
+    },
+    {
+      "id": "d97171ce-c3ae-4090-a184-40b9e0e9da26",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars": 50170,
+      "forks": 4467,
+      "starsAdded": 1091,
+      "createdAt": "2026-10-15T16:00:02.514Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "license": "MIT license",
+        "homepage": "https://arxiv.org/abs/2609.00065",
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "开源",
+          "科研",
+          "自动化",
+          "生物信息"
+        ],
+        "cover": "",
+        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
+        "ability": [
+          "跨领域科研技能库",
+          "数据库与工具集成",
+          "标准化 Agent 技能配置",
+          "复杂科研工作流自动化",
+          "安全测试与合规扫描"
+        ],
+        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "科研工具"
+        ],
+        "suitable": [
+          "生命科学研究人员",
+          "AI 辅助编程用户",
+          "生物信息工程师",
+          "药企研发团队",
+          "AI 应用开发者"
+        ],
+        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。"
+      }
+    },
+    {
+      "id": "1125840d-7b9b-4e7b-b775-d7bc3a645ebb",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 280029,
+      "forks": 41654,
+      "starsAdded": 1015,
+      "createdAt": "2026-10-15T16:00:02.552Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
+      }
+    },
+    {
+      "id": "692889e2-a36d-4b0a-a266-f223aff67f9a",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 29661,
+      "forks": 2067,
+      "starsAdded": 902,
+      "createdAt": "2026-10-15T16:00:02.545Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      }
+    },
+    {
+      "id": "2cbef3e9-9f43-4051-8bf0-6f2447fd120a",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/xerj-org/xerj",
+      "repo": "xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "language": "Rust",
+      "stars": 5325,
+      "forks": 299,
+      "starsAdded": 725,
+      "createdAt": "2026-10-15T16:00:02.561Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-search",
+          "ai-search-algorithms",
+          "ai-search-engine",
+          "ai-search-free",
+          "ai-search-module",
+          "ai-search-optimization",
+          "ai-searchengine",
+          "bm25-search",
+          "elastic-search",
+          "elasticsearch",
+          "elasticstack",
+          "graph-search",
+          "graph-semantic-search",
+          "hybrid-search",
+          "hybrid-semantic-search",
+          "search-api",
+          "search-engine",
+          "semantic-search",
+          "vector-database",
+          "vector-search"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://xerj.org",
+        "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work. - xerj-org/xerj"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "AI Agent",
+          "Elasticsearch兼容",
+          "代码搜索",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "XERJ 深度评测：让 AI Agent 从啃文件进化到查索引的 Rust 搜索引擎",
+        "ability": [
+          "一条命令 autoindex 自动索引任意文件夹，覆盖 34 种编程语言、PDF、Office、日志、邮件等 25+ 种格式",
+          "基于 tree-sitter 的 AST-aware 代码索引，支持函数定义精准定位（file:line + 函数签名）",
+          "与 Elasticsearch REST API 完全兼容，Kibana 和官方 ES 客户端可直接连接使用",
+          "内置 MCP Server，开箱即用接入 Claude Code / Cursor 等 AI Agent，提供搜索与长期记忆工具",
+          "内置向量检索 + BM25 混合查询与 Agent 长期记忆存储，单二进制替代多个组件"
+        ],
+        "summary": "XERJ 是一个用 Rust 编写的 AI 原生搜索引擎，一个静态二进制即可索引代码、文档、日志并供 AI Agent 查询，实测可为 Claude Code 节省约 52% 的 token 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "搜索引擎"
+        ],
+        "suitable": [
+          "Claude Code / Cursor 等 AI 编码工具的重度用户",
+          "维护私有代码库、内部系统的开发者",
+          "想搭建本地 RAG 而不想运维多个组件的工程师",
+          "做 AI 安全审计、渗透测试的安全研究人员",
+          "需要给 AI Agent 添加长期记忆能力的开发者"
+        ],
+        "description": "XERJ 旨在解决 AI Agent 上下文窗口太小、token 费用高昂的痛点：它把读文件变成查索引，通过 AST 代码索引、多格式自动索引和 Elasticsearch 兼容 API，让 Agent 用千字节级 token 精准定位代码片段。官方实测同任务成本从 3.27 美元降至 1.58 美元，但高并发写入延迟是其已知短板。"
+      }
+    },
+    {
+      "id": "c16c10dd-8bdc-43c7-8944-3dd30cba00cb",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 299631,
+      "forks": 26763,
+      "starsAdded": 534,
+      "createdAt": "2026-10-15T16:00:02.535Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
+      "id": "17f0836f-89a1-4e7c-b9f3-58d980d2bcf2",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 38603,
+      "forks": 4297,
+      "starsAdded": 525,
+      "createdAt": "2026-10-15T16:00:02.508Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
+      "id": "17e53a73-c205-4338-ad7e-7f393b3bdd81",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "repo": "JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "language": "Go",
+      "stars": 112270,
+      "forks": 6509,
+      "starsAdded": 398,
+      "createdAt": "2026-10-15T16:00:02.521Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "anthropic",
+          "caveman",
+          "claude",
+          "claude-code",
+          "llm",
+          "meme",
+          "prompt-engineering",
+          "skill",
+          "tokens"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.caveman.so/caveman",
+        "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. - JuliusBrussee/caveman"
+      },
+      "summaryData": {
+        "tags": [
+          "Token 节省",
+          "AI 助手",
+          "成本优化",
+          "开源",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "Caveman 项目评测：大模型 Token 压缩与成本优化神器",
+        "ability": [
+          "风格压缩",
+          "本地代理压缩",
+          "多端统一适配",
+          "技能图片化",
+          "本地审计优化"
+        ],
+        "summary": "通过压缩 AI 输出风格与本地代理处理上下文，大幅降低 Token 消耗并提升阅读效率的开源全家桶。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度 AI 编程用户",
+          "多 Agent 开发者",
+          "注重隐私的团队",
+          "成本敏感型开发者",
+          "追求极致效率的极客"
+        ],
+        "description": "Caveman 是一个适配 Claude、Cursor 等 30+ 助手的插件与本地代理。它通过精简 AI 输出风格、压缩上下文输入、将技能文档转为图片等方式，在不降低代码质量的前提下，有效减少 Token 消耗，并提供本地审计功能帮助用户清晰掌握成本。"
+      }
+    },
+    {
+      "id": "393dc9bc-755c-4478-90e3-b03bd56ccca9",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/ruvnet/ruflo",
+      "repo": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 74888,
+      "forks": 8907,
+      "starsAdded": 224,
+      "createdAt": "2026-10-15T16:00:02.541Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One",
+        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Multi-Agent",
+          "DevOps",
+          "GitHub",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "Ruflo: Claude Code 多智能体编排平台评测",
+        "ability": [
+          "多智能体蜂群协作",
+          "跨会话持久化记忆",
+          "智能路由与成本优化",
+          "企业级安全与联邦通信",
+          "自动化测试与代码审计"
+        ],
+        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Claude Code 重度用户",
+          "追求高效的开发团队",
+          "DevOps 与运维工程师",
+          "技术架构师",
+          "个人开发者"
+        ],
+        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
+      }
+    },
+    {
+      "id": "e9b07163-d4c1-47a6-999e-a2846797e040",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "repo": "lightseekorg/tokenspeed",
+      "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+      "language": "Python",
+      "stars": 2369,
+      "forks": 331,
+      "starsAdded": 25,
+      "createdAt": "2026-10-15T16:00:02.557Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "b200",
+          "b300",
+          "blackwell",
+          "deepseek",
+          "gb200",
+          "gb300",
+          "glm",
+          "gpt-oss",
+          "inkling",
+          "kimi",
+          "lightseek",
+          "llm",
+          "mi355x",
+          "mi455x",
+          "minimax",
+          "qwen",
+          "rubin",
+          "speed-of-light",
+          "tokenspeed",
+          "vlm"
+        ],
+        "license": "MIT license",
+        "homepage": "https://lightseek.org/blog/lightseek-tokenspeed.html",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine. - lightseekorg/tokenspeed"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM推理",
+          "开源项目",
+          "Agentic AI",
+          "GPU优化",
+          "C++/Python"
+        ],
+        "cover": "",
+        "title": "TokenSpeed 深度评测：为 Agentic 推理而生的光速级开源引擎",
+        "ability": [
+          "Agentic 长上下文高并发推理，吞吐比 TensorRT-LLM 高约 11%、单请求延迟低约 9%",
+          "C++ 有限状态机调度器与 Python 执行层分离，编译期保证 KV Cache 管理安全",
+          "可插拔 GPU 内核架构，其 MLA 内核已被 vLLM 官方上游采纳",
+          "OpenAI 兼容 API，Kimi K3、Qwen3.8 等前沿模型 Day-0 即刻支持",
+          "同时支持 NVIDIA Blackwell 与 AMD CDNA4/CDNA5 多芯片平台"
+        ],
+        "summary": "TokenSpeed 是一个专为 Agentic 工作负载打造的开源 LLM 推理引擎，在 Blackwell GPU 上跑出超越 TensorRT-LLM 的性能。",
+        "category": [
+          "AI 基础设施",
+          "开发工具",
+          "大模型推理"
+        ],
+        "suitable": [
+          "AI 基础设施与平台工程师",
+          "自建 Agent 服务的技术团队",
+          "推理内核与系统方向研究员",
+          "追求新模型快速上线的ql企业",
+          "希望降低 GPU 推理成本的项目方"
+        ],
+        "description": "TokenSpeed 是 LightSeek Foundation 于 2026 年开源（MIT 协议）的 LLM 推理引擎，采用 C++ 有限状态机调度器加 Python 执行层的混合架构，专为长上下文、高并发的 Agent 工作负载优化。它在 NVIDIA B200 上性能超越 TensorRT-LLM，MLA 内核被 vLLM 采纳，并获 PyTorch Foundation 收编。但需要数据中心级 GPU（CUDA 13 / ROCm 7.2），不适合消费级硬件用户，且仍处预览期。"
+      }
+    }
   ]
 }
