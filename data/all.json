@@ -1,6 +1,154 @@
 {
   "all": [
     {
+      "id": "37823010-9515-4bf9-98f7-8de35ec090a0",
+      "url": "https://github.com/xerj-org/xerj",
+      "domain": "github.com",
+      "repo": "xerj-org/xerj",
+      "description": "XERJ 旨在解决 AI Agent 上下文窗口太小、token 费用高昂的痛点：它把读文件变成查索引，通过 AST 代码索引、多格式自动索引和 Elasticsearch 兼容 API，让 Agent 用千字节级 token 精准定位代码片段。官方实测同任务成本从 3.27 美元降至 1.58 美元，但高并发写入延迟是其已知短板。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-15T12:07:33.882Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-search",
+          "ai-search-algorithms",
+          "ai-search-engine",
+          "ai-search-free",
+          "ai-search-module",
+          "ai-search-optimization",
+          "ai-searchengine",
+          "bm25-search",
+          "elastic-search",
+          "elasticsearch",
+          "elasticstack",
+          "graph-search",
+          "graph-semantic-search",
+          "hybrid-search",
+          "hybrid-semantic-search",
+          "search-api",
+          "search-engine",
+          "semantic-search",
+          "vector-database",
+          "vector-search"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://xerj.org",
+        "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work. - xerj-org/xerj"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "AI Agent",
+          "Elasticsearch兼容",
+          "代码搜索",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "XERJ 深度评测：让 AI Agent 从啃文件进化到查索引的 Rust 搜索引擎",
+        "ability": [
+          "一条命令 autoindex 自动索引任意文件夹，覆盖 34 种编程语言、PDF、Office、日志、邮件等 25+ 种格式",
+          "基于 tree-sitter 的 AST-aware 代码索引，支持函数定义精准定位（file:line + 函数签名）",
+          "与 Elasticsearch REST API 完全兼容，Kibana 和官方 ES 客户端可直接连接使用",
+          "内置 MCP Server，开箱即用接入 Claude Code / Cursor 等 AI Agent，提供搜索与长期记忆工具",
+          "内置向量检索 + BM25 混合查询与 Agent 长期记忆存储，单二进制替代多个组件"
+        ],
+        "summary": "XERJ 是一个用 Rust 编写的 AI 原生搜索引擎，一个静态二进制即可索引代码、文档、日志并供 AI Agent 查询，实测可为 Claude Code 节省约 52% 的 token 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "搜索引擎"
+        ],
+        "suitable": [
+          "Claude Code / Cursor 等 AI 编码工具的重度用户",
+          "维护私有代码库、内部系统的开发者",
+          "想搭建本地 RAG 而不想运维多个组件的工程师",
+          "做 AI 安全审计、渗透测试的安全研究人员",
+          "需要给 AI Agent 添加长期记忆能力的开发者"
+        ],
+        "description": "XERJ 旨在解决 AI Agent 上下文窗口太小、token 费用高昂的痛点：它把读文件变成查索引，通过 AST 代码索引、多格式自动索引和 Elasticsearch 兼容 API，让 Agent 用千字节级 token 精准定位代码片段。官方实测同任务成本从 3.27 美元降至 1.58 美元，但高并发写入延迟是其已知短板。"
+      },
+      "type": "project",
+      "dateAdded": "20261015"
+    },
+    {
+      "id": "8abc2467-bd14-4f3e-aa0e-63c7cb64daec",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "domain": "github.com",
+      "repo": "lightseekorg/tokenspeed",
+      "description": "TokenSpeed 是 LightSeek Foundation 于 2026 年开源（MIT 协议）的 LLM 推理引擎，采用 C++ 有限状态机调度器加 Python 执行层的混合架构，专为长上下文、高并发的 Agent 工作负载优化。它在 NVIDIA B200 上性能超越 TensorRT-LLM，MLA 内核被 vLLM 采纳，并获 PyTorch Foundation 收编。但需要数据中心级 GPU（CUDA 13 / ROCm 7.2），不适合消费级硬件用户，且仍处预览期。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-15T12:03:48.652Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "b200",
+          "b300",
+          "blackwell",
+          "deepseek",
+          "gb200",
+          "gb300",
+          "glm",
+          "gpt-oss",
+          "inkling",
+          "kimi",
+          "lightseek",
+          "llm",
+          "mi355x",
+          "mi455x",
+          "minimax",
+          "qwen",
+          "rubin",
+          "speed-of-light",
+          "tokenspeed",
+          "vlm"
+        ],
+        "license": "MIT license",
+        "homepage": "https://lightseek.org/blog/lightseek-tokenspeed.html",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine. - lightseekorg/tokenspeed"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM推理",
+          "开源项目",
+          "Agentic AI",
+          "GPU优化",
+          "C++/Python"
+        ],
+        "cover": "",
+        "title": "TokenSpeed 深度评测：为 Agentic 推理而生的光速级开源引擎",
+        "ability": [
+          "Agentic 长上下文高并发推理，吞吐比 TensorRT-LLM 高约 11%、单请求延迟低约 9%",
+          "C++ 有限状态机调度器与 Python 执行层分离，编译期保证 KV Cache 管理安全",
+          "可插拔 GPU 内核架构，其 MLA 内核已被 vLLM 官方上游采纳",
+          "OpenAI 兼容 API，Kimi K3、Qwen3.8 等前沿模型 Day-0 即刻支持",
+          "同时支持 NVIDIA Blackwell 与 AMD CDNA4/CDNA5 多芯片平台"
+        ],
+        "summary": "TokenSpeed 是一个专为 Agentic 工作负载打造的开源 LLM 推理引擎，在 Blackwell GPU 上跑出超越 TensorRT-LLM 的性能。",
+        "category": [
+          "AI 基础设施",
+          "开发工具",
+          "大模型推理"
+        ],
+        "suitable": [
+          "AI 基础设施与平台工程师",
+          "自建 Agent 服务的技术团队",
+          "推理内核与系统方向研究员",
+          "追求新模型快速上线的ql企业",
+          "希望降低 GPU 推理成本的项目方"
+        ],
+        "description": "TokenSpeed 是 LightSeek Foundation 于 2026 年开源（MIT 协议）的 LLM 推理引擎，采用 C++ 有限状态机调度器加 Python 执行层的混合架构，专为长上下文、高并发的 Agent 工作负载优化。它在 NVIDIA B200 上性能超越 TensorRT-LLM，MLA 内核被 vLLM 采纳，并获 PyTorch Foundation 收编。但需要数据中心级 GPU（CUDA 13 / ROCm 7.2），不适合消费级硬件用户，且仍处预览期。"
+      },
+      "type": "project",
+      "dateAdded": "20261015"
+    },
+    {
       "id": "fb49aec3-814b-4ee6-88da-8ed85ab13202",
       "url": "https://github.com/ntdevlabs/tiny11builder",
       "domain": "github.com",
@@ -13474,8 +13622,8 @@
       "forks": 0,
       "createdAt": "2026-09-03T11:23:00.008Z",
       "metaData": {
-        "forks": "26370",
-        "stars": "295055",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "brainstorming",
@@ -14032,8 +14180,8 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:35:22.011Z",
       "metaData": {
-        "forks": "6344",
-        "stars": "109676",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "anthropic",
@@ -14047,7 +14195,7 @@
           "tokens"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://docs.caveman.so/docs/quickstart",
+        "homepage": "https://docs.caveman.so/caveman",
         "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. - JuliusBrussee/caveman"
       },
       "summaryData": {
@@ -18412,8 +18560,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:13:04.579Z",
       "metaData": {
-        "forks": "4160",
-        "stars": "37028",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "claude-code",
           "mcp",
@@ -21360,8 +21508,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:46:42.654Z",
       "metaData": {
-        "forks": "8539",
-        "stars": "72186",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -21371,7 +21519,7 @@
           "ai-assistant",
           "ai-skills",
           "autonomous-agents",
-          "claude-code",
+          "claude",
           "codex",
           "dsh-plugin",
           "harness",

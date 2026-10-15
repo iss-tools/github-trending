@@ -2160,8 +2160,8 @@
       "starsAdded": 1603,
       "createdAt": "2026-08-28T12:00:03.786Z",
       "metaData": {
-        "forks": "4160",
-        "stars": "37028",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "claude-code",
           "mcp",
@@ -4345,8 +4345,8 @@
       "starsAdded": 2024,
       "createdAt": "2026-08-30T19:00:04.712Z",
       "metaData": {
-        "forks": "4160",
-        "stars": "37028",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "claude-code",
           "mcp",
@@ -6587,8 +6587,8 @@
       "starsAdded": 3938,
       "createdAt": "2026-09-12T13:00:04.127Z",
       "metaData": {
-        "forks": "26370",
-        "stars": "295055",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "brainstorming",
@@ -7411,8 +7411,8 @@
       "starsAdded": 1726,
       "createdAt": "2026-09-08T12:00:05.141Z",
       "metaData": {
-        "forks": "8539",
-        "stars": "72186",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -7422,7 +7422,7 @@
           "ai-assistant",
           "ai-skills",
           "autonomous-agents",
-          "claude-code",
+          "claude",
           "codex",
           "dsh-plugin",
           "harness",
@@ -9514,8 +9514,8 @@
       "starsAdded": 3573,
       "createdAt": "2026-09-13T23:00:03.929Z",
       "metaData": {
-        "forks": "26370",
-        "stars": "295055",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "brainstorming",
@@ -18925,8 +18925,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 254495,
-      "forks": 63938,
+      "stars": 258125,
+      "forks": 64888,
       "starsAdded": 214837,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
@@ -18999,8 +18999,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 37623,
-      "forks": 3327,
+      "stars": 37801,
+      "forks": 3343,
       "starsAdded": 28240,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
@@ -19060,8 +19060,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 291885,
-      "forks": 24470,
+      "stars": 292098,
+      "forks": 24490,
       "starsAdded": 12292,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
@@ -19111,8 +19111,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 55573,
-      "forks": 3514,
+      "stars": 55656,
+      "forks": 3517,
       "starsAdded": 10706,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
@@ -19166,56 +19166,6 @@
       }
     },
     {
-      "id": "dbaf6334-43ea-49e2-a23d-bdc67b2169e8",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 10743,
-      "forks": 1300,
-      "starsAdded": 6621,
-      "createdAt": "2026-10-12T13:00:03.876Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
-      }
-    },
-    {
       "id": "6e4e62f7-a2ae-4408-a19a-c8203de77481",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19223,8 +19173,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 87979,
-      "forks": 9819,
+      "stars": 88146,
+      "forks": 9835,
       "starsAdded": 5613,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
@@ -19272,6 +19222,56 @@
       }
     },
     {
+      "id": "dbaf6334-43ea-49e2-a23d-bdc67b2169e8",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 12071,
+      "forks": 1472,
+      "starsAdded": 5132,
+      "createdAt": "2026-10-12T13:00:03.876Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
       "id": "3a36010e-3091-47a3-80d9-4dcb9cb38c39",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19279,8 +19279,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 64004,
-      "forks": 5745,
+      "stars": 64116,
+      "forks": 5759,
       "starsAdded": 5123,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
@@ -19543,8 +19543,8 @@
       "repo": "earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars": 20521,
-      "forks": 2024,
+      "stars": 20559,
+      "forks": 2031,
       "starsAdded": 1994,
       "createdAt": "2026-10-11T17:00:03.745Z",
       "metaData": {
@@ -19606,9 +19606,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11282,
-      "forks": 1098,
-      "starsAdded": 1141,
+      "stars": 11502,
+      "forks": 1128,
+      "starsAdded": 1155,
       "createdAt": "2026-10-11T17:00:03.740Z",
       "metaData": {
         "forks": "0",
@@ -19759,7 +19759,7 @@
       "repo": "twostraws/SwiftUI-Agent-Skill",
       "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
       "language": "",
-      "stars": 6016,
+      "stars": 6029,
       "forks": 220,
       "starsAdded": 930,
       "createdAt": "2026-10-14T12:00:03.973Z",
@@ -19858,6 +19858,61 @@
       }
     },
     {
+      "id": "883f01f5-fa73-44dd-97d8-8348e542f254",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 1308,
+      "forks": 112,
+      "starsAdded": 628,
+      "createdAt": "2026-10-11T17:00:03.758Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      }
+    },
+    {
       "id": "03444c1a-98e2-410a-b67a-ce587976f5a9",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19929,61 +19984,6 @@
           "被 AI 生成代码质量差、review 成本高折磨的工程团队"
         ],
         "description": "pstack-claude 是 Michael Denyer 将 poteto（Lauren Tan）为 Cursor 打造的 agent 工程规范包移植到 Claude Code 等平台的开源插件。它不是新框架，而是 20 多份 Markdown 指令加路由逻辑，强制 agent 先理解、再设计、再实现、最后验证，把『敢并行开多个 Agent』变成现实。适合中大型改动，小任务略显杀鸡用牛刀。"
-      }
-    },
-    {
-      "id": "883f01f5-fa73-44dd-97d8-8348e542f254",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "repo": "ranxianglei/billion-context",
-      "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
-      "language": "TypeScript",
-      "stars": 1015,
-      "forks": 87,
-      "starsAdded": 337,
-      "createdAt": "2026-10-11T17:00:03.758Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "dsh-plugin"
-        ],
-        "license": "License",
-        "homepage": "",
-        "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
-      },
-      "summaryData": {
-        "tags": [
-          "上下文压缩",
-          "开源项目",
-          "AI Agent",
-          "API 代理",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
-        "ability": [
-          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
-          "T1→T2→T3 三层递进式摘要，长会话不失忆",
-          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
-          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
-          "Web 仪表盘与缓存健康诊断，可观测性强"
-        ],
-        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
-          "API 按量付费、心疼账单的开发者",
-          "使用无缓存中转站/公益站的用户",
-          "想做工具链整合的团队",
-          "想突破上下文窗口限制的极客"
-        ],
-        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
       }
     }
   ]

@@ -1,0 +1,178 @@
+# xerj-org/xerj
+
+[GitHub URL](https://github.com/xerj-org/xerj)
+
+
+## XERJ 深度评测：让 AI Agent 从啃文件进化到查索引的 Rust 搜索引擎
+
+> XERJ 是一个用 Rust 编写的 AI 原生搜索引擎，一个静态二进制即可索引代码、文档、日志并供 AI Agent 查询，实测可为 Claude Code 节省约 52% 的 token 成本。
+
+- **Tags**: Rust, AI Agent, Elasticsearch兼容, 代码搜索, MCP
+- **Category**: 开发工具, AI 编程, 搜索引擎
+
+## Details
+
+# XERJ 深度评测：让 AI Agent 从"啃文件"进化到"查索引"的 Rust 搜索引擎
+> **一句话总结**：XERJ 是一个用 Rust 写的"AI 原生搜索引擎"，一个静态二进制文件搞定代码/文档/日志/PDF 的自动索引和查询，与 Elasticsearch 完全兼容，但专为 AI Agent 的"省 token、找得准"而生——在官方实测中，让 Claude Code 用 **2.7 倍更少的输出 token** 完成同样的编码任务，是目前"Agent 上下文经济学"赛道上最完整、最诚实的开源方案之一。
+---
+## 一、背景与痛点：Agent 烧的不是电，是 context window
+要理解 XERJ 为什么存在，得先看清楚当下 AI 编码 Agent 的真实痛点。
+**想象一下这个场景**：你让 Claude Code 修复一个 WordPress 插件的 bug。WordPress 核心的 PHP 代码约有 **520 万 token**，相当于 26 个完整的上下文窗口——Agent 根本装不下。它能怎么办？
+两条老路，都有硬伤：
+- **凭记忆硬写**：模型对没见过的 API 会"编造方法名 → 编译失败 → 重试 → 再编造"，每次重试都在烧昂贵的 output token。官方案例里，一个从未见过的 Rust 库，纯记忆模式 **9 道题 0 答对**。
+- **grep 兜底**：grep 只告诉你"哪一行有这个关键字"，要判断上下文还得把整个文件读进来。实测中 grep-driven agent 在某个语料上烧掉了 **106 万 input token**。
+XERJ 的解法思路简单粗暴却精准：**把"读文件"变成"查索引"**。查一次索引只花千字节的 token，却能把确切的代码片段、含 `file:line` 定位和函数签名直接喂给 Agent。同样的 WordPress 安全审计，Agent 只需读约 **26,000 token**——全树的 **0.5%**。
+> **用一个比喻**：过去 Agent 像在图书馆里靠翻书自学（grep 是帮你找页码），XERJ 则是给 Agent 配了一个"会说话的图书管理员"，你问一句，它递过来正确的那一页，还用荧光笔画好了重点。
+---
+## 二、核心亮点：它不是"又一个向量数据库"
+XERJ 最容易被误解的地方在于：表面上看它是"Elasticsearch 平替"，骨子里它是一个**为 Agent 工作流量身定制的检索原语**。下面按技术含金量拆解。
+### 2.1 AST-aware 代码索引：tree-sitter 加持
+这是 XERJ 与"普通全文搜索"拉开差距的关键。源代码不是当作纯文本切的，而是通过 **tree-sitter**（支持 34 种语言）解析成抽象语法树，把**符号、类型、行号、函数签名**一并写入索引。
+```bash
+xerj def "euler_to_rotationmatrix"
+# 返回：定义所在的 file:line + 完整函数签名
+```
+这意味着 Agent 问"这个函数在哪、契约是什么"时，拿到的是**一个函数**，而不是一串"看起来相关的行"。在 80 题跨文件基准测试中，这种"定义优先"搜索把正确文件排第一的概率是 **94%**，而普通正文搜索只有 **38%**——差距是压倒性的。
+> **比喻**：普通搜索像在一本没有目录的书里"翻到含关键词的那一行"；AST 索引像直接查这本代码书自带的"人物表 + 章节目录"。
+### 2.2 `autoindex`：一条命令索引任何文件夹
+这是 XERJ 最能打的产品化能力。无需写 schema、无需配 pipeline：
+```bash
+xerj autoindex ~/my-project
+```
+引擎会**嗅探每个文件的内容**（扩展名会说谎）、推断字段类型、自动写 mapping、流式入库。支持的格式覆盖相当扎实：
+| 类别 | 覆盖 |
+|---|---|
+| 结构化 | JSON / JSONL / 方言嗅探的 CSV / XML / YAML / SQL dump / SQLite |
+| 办公文档 | PDF / DOCX / PPTX（每 slide 一条记录）/ XLSX（每 sheet 一个索引）|
+| 代码 | 34 种语言（tree-sitter）|
+| 其他 | HTML / man page（roff）/ .eml & mbox 邮件（含 Google Takeout 导出）/ 常见日志格式 / gzip |
+| 冷门彩蛋 | **Unity 项目一等公民**：场景/prefab 一 GameObject 一记录，`.meta` 文件变成 GUID-to-path 表 |
+在一个 518 MB、25 种格式混合的语料上，autoindex 用 **38 秒**完成了 200 多万条记录的摄入，通过了 80/81 的"ground-truth exam"（唯一失败的是一个 Shift-JIS 编码文件被当 mojibake 索引了）——这种**诚实记录自己短板**的姿态，在开源项目里并不多见。
+### 2.3 Elasticsearch 兼容：成熟的"老/client 即插即用"
+XERJ 实现了 ES 的 REST API：indices、documents、bulk、search、aggregations、mappings、kNN、scroll、reindex、`_cat`。**Kibana 和官方 ES 客户端库可以直接连**。一致性测试套件每次 CI 都跑，当前 **1366/1369 通过**，剩余的 gap 明明白白列在仓库里（如 scroll 是有界快照而非游标，超大结果集要求用 `search_after`）。
+对既有用户而言，这意味着**迁移成本几乎为零**——把连接串从 `your-es-host:9200` 改成 `localhost:9200`，代码不动。
+### 2.4 官方 Benchmark：赢面很大，但败仗也敢贴
+XERJ 团队直接把自家引擎和 Elasticsearch 8.13.4 在 5 个维度上跑 closed-loop 对比，最新一轮结果是 **55 胜 / 26 平 / 4 负**：
+- **1.72×** 摄入吞吐量
+- **1.61×** 更小的磁盘占用
+- 4 场败仗全是同一场景：**高并发写入下的读 p99 延迟**
+更难得的是，他们的原话是 *"Treat any number you cannot reproduce with skepticism, including ours"*（包括我们自己的数字，请保持怀疑）——benchmark harness 在 `demo/playbooks` 全部公开，可复跑。
+### 2.5 内置 MCP Server：给 Claude Code / Cursor 的"开箱即用"
+这是 XERJ 在 2026 年这个时间点最贴合潮流的设计。**同一个二进制文件本身就是 MCP 服务器**：
+```bash
+xerj --insecure --data-dir ./data &   # 启动节点
+xerj mcp                              # 启动 MCP stdio 服务
+```
+MCP 客户端配置片段（可直接粘进 Claude Desktop / Cursor）：
+```json
+{
+  "mcpServers": {
+    "xerj": {
+      "command": "/home/you/.local/bin/xerj",
+      "args": ["mcp"],
+      "env": { "XERJ_URL": "http://localhost:9200" }
+    }
+  }
+}
+```
+通过 MCP 暴露 10 个工具：`xerj_search`、`xerj_semantic_search`、`xerj_vector_search`、`xerj_hybrid_search`、`xerj_memory_store/recall`（Agent 长期记忆），以及一组 `xerj_brain_*`（"第二大脑"知识图谱链接操作）。MCP 工具 schema 是从运行中的 `tools/list` **机器生成**的，CI 里有脚本防止文档与实际漂移——这种细节处理相当专业。
+---
+## 三、上手体验：从安装到看到效果，5 分钟够吗？
+**结论：够，而且是我近期用过上手最顺的开发者工具之一。**
+### 3.1 安装：一行命令，一个静态二进制
+```bash
+# Linux / macOS
+curl -fsSL https://xerj.org/get | sh
+# Windows PowerShell
+irm https://xerj.org/get.ps1 | iex
+```
+无 JVM、无依赖、**静态 musl 编译**（连 Alpine 都能跑），预构建覆盖 Linux/macOS/Windows × x86_64/arm64。SHA-256 校验，fail-closed。对比一下：装一套 Elasticsearch 至少要 JVM + 堆内存调优 + 配置文件理解，XERJ 一个文件搞定。
+### 3.2 最小可运行示例
+```bash
+# 1. 启动（本地开发模式）
+xerj --insecure --data-dir ./data &
+# 2. 索引一个项目
+xerj autoindex ~/my-project
+# 3. 用任何 ES 客户端查询
+curl "localhost:9200/ax-*/_search?q=checkout+error"
+# 4. 定义跳转
+xerj def "euler_to_rotationmatrix"
+```
+### 3.3 一句话接入 Claude Code（最惊艳的设计）
+XERJ 官网首页顶端给了一个可以直接粘给 Agent 的 prompt：
+```
+Install XERJ (docs: https://xerj.org/llms.txt) index this project's sources,
+and set up reference coding: clone and index the open-source repos closest
+to what we're building, and search how they solved a problem before writing code.
+```
+他们专门做了一个 `llms.txt`（一个新兴的"给 LLM 看的说明书"规范），引导 Agent 自己完成安装、启动、索引、查询的完整链路。**这是典型的"Agent 时代产品思维"——你的用户不光是人，还是 Claude Code 本身。**
+### 3.4 离线/气隙部署
+默认 embedder 是**离线的**（词法 feature-hashing），不联网就能跑完整套索引+搜索。神经模式的三个模型文件需要手动 staging，但这是**可选升级**，不是必需品。
+---
+## 四、目标人群与收益
+| 你是谁 | 收益 | 推荐指数 |
+|---|---|---|
+| **AI 编码重度用户**（Claude Code / Cursor / Codex） | 显著降低 token 账单，减少重试循环，参考编码（reference coding）直接提速 | ⭐⭐⭐⭐⭐ |
+| **私有代码库 / 内部系统开发者** | 模型没记住你的代码？XERJ 让 Agent 用检索替代记忆，效果接近降维打击 | ⭐⭐⭐⭐⭐ |
+| **想搭本地 RAG 的工程师** | 一个二进制同时承担 向量库 + 全文检索 + 结构化查询，不用拼 Milvus + ES + ETL 管道 | ⭐⭐⭐⭐ |
+| **做 AI 安全审计 / 渗透测试** | AST-aware 索引可以查 sink 模式、危险调用、跨文件污点路径 | ⭐⭐⭐⭐ |
+| **运维 / SRE** | 混合格式日志自动 typed indexing，带 ES 风格 aggregation | ⭐⭐⭐ |
+| **想给 Agent 加长期记忆的开发者** | `/_memory/{namespace}` + 语义召回，零外部依赖 | ⭐⭐⭐⭐ |
+| **纯 Elasticsearch 生产用户** | 可以试用，但除非对 p99 极不敏感，否则替换决策需谨慎（见局限） | ⭐⭐ |
+**最直接的经济账**：官方实测中，同样的 16 题，grep-driven Claude Code 花 **$3.27**，XERJ 辅助只花 **$1.58**（省 52%）；如果对比"纯记忆硬写"模式（$11.18），是 **7 倍成本差**。对高频使用 Agent 的团队，这些省下来的都是真金白银。
+---
+## 五、竞品对比：它在赛道里的位置
+XERJ 处在一个非常有趣的位置——它同时踩着三条赛道。
+### 5.1 vs Elasticsearch / OpenSearch
+| 维度 | Elasticsearch | OpenSearch | XERJ |
+|---|---|---|---|
+| 部署重量 | JVM，重 | JVM，重 | **一个静态二进制** |
+| 资源占用 | 高（堆内存调优）| 高 | 低（1.61× 更小磁盘）|
+| API 兼容 | 标准 | 近似 ES | **实现 ES REST API** |
+| 生态成熟度 | 极成熟（Kibana/Lucene 深耕）| 中等 | 新兴（1366/1369 兼容性）|
+| AI-native 设计 | 附加能力 | 附加能力 | **核心设计** |
+| 高并发写下的读 p99 | 优 | 中 | **弱项**（官方承认 4 场败仗）|
+| 适用场景 | 企业级、大规模集群 | AWS 生态 | 单机 / Agent 本地 / 中小团队 |
+**结论**：XERJ 不是来"取代"ES 生产集群的，是来吃掉 **"个人开发机 / Agent 后端 / 小团队本地搜索"** 这个 ES 一直太重的细分市场。
+### 5.2 vs 传统代码搜索引擎（Sourcegraph / Zoekt）
+Sourcegraph 企业版昂贵，Zoekt 专注代码但缺通用性。XERJ 的 **AST-aware + 一键 autoindex + 多格式统一**（代码/日志/PDF/邮件同引擎）是它的差异化卖点。
+### 5.3 vs 专用向量库（Milvus / Qdrant / Chroma）
+XERJ 把向量作为**索引的一种字段类型**而非独立系统，BM25+kNN 融合（RRF）在**同一个查询树**里完成，不用在两套系统之间粘合数据。对"想搭本地 RAG 但不想运维 3 个组件"的独立开发者，这是显著的优势。
+### 5.4 vs 同类"Agent 检索/记忆"工具（如 CocoIndex Code）
+CocoIndex Code 等新工具也在做"给 Agent 提供代码地图"的事，但 XERJ 的护城河在于：**ES 兼容性带来的生态复用** + **诚实的基准文化** + **更完整的格式覆盖**。
+---
+## 六、社区与开源健康度
+- **技术栈**：纯 Rust，tree-sitter 全家桶，无运行时依赖
+- **协议**：Apache 2.0，**可商用**
+- **规模**：约 3k star（截至 2026 年 10 月），xerj-org 下还有几个作为参考语料库的法律/代码镜像仓库
+- **更新**：活跃，GitHub Topics 上 2026 年 9 月仍在更新
+- **社区模式（最独特）**：XERJ 的"会员卡"是**提交一份 field report**——用一次，写一个 markdown 文件描述你索引了什么、用来干了啥、真实评价（负反馈也是好反馈），通过 `gh pr create` 提交到 `user-feedback/16-agent-field-reports/`。**CLA 豁免**，人类和 AI Agent 都欢迎。
+- **诚实文化**：整个项目贯穿着一条 "honest-claims" 原则——所有公开数字都必须可溯源到具体 run，"users report ~5×" 这类说法必须明确标注是**用户证词**而非**受控测量**，并且在旁边放上实测数字。
+> **一个引用值得原样贴出**（来自他们的 field reports 文件）：
+> *"A negative verdict is a good report."*（负面的评价也是好报告。）
+这种对"真实性"的偏执，在我评测过的开源项目里属于稀缺品。
+---
+## 七、局限与不足：别忘了这些坑
+**1. `--insecure` 不是装饰品，是真正的信任边界**
+文档反复强调：`--insecure` 关闭 TLS 和 API-key 认证，**任何能访问端口的人都是超级用户**，可以读取甚至删除所有索引（包括 `/_memory` 命名空间）。默认绑定 `127.0.0.1` 算一道护栏，但在共享主机 / Docker 暴露端口 / 家庭局域网场景下，务必要用 auth-on 模式，并正确管理 `<data-dir>/admin.key`。
+**2. 高并发写下的读 p99 是已知短板**
+官方自己承认 4 场败仗全是这个场景。**不要把 XERJ 当作 ES 生产集群的 drop-in 替换**——尤其是写多读少、延迟敏感的业务。
+**3. 默认 embedder 是词法的，不是神经的**
+这点很多营销文案会模糊掉，XERJ 自己倒是诚实：内置 embedder 是 **feature-hashing（词法）**，所谓"semantic search"其实是**词法混合检索**，不是真正的神经语义理解。要上神经模式需要额外 staging 三个模型文件。别以为 `semantic: true` 就等于"懂语义"。
+**4. Rerank 功能依赖外部服务**
+`rerank: {}` 会把 top 结果文本**发送到 TypeSafe AI 的 Jev 服务器**，默认关闭，需要在配置里显式打开。对隐私敏感的场景要么不开，要么用本地的 `/v1/systemone`（但那个要求有已标注样本）。
+**5. 对"模型已经记住的公共库"收益有限**
+官方明确说：XERJ 的优势被"模型记忆度"调制。**对私有、内部、小众、cutoff 之后的代码是大杀器；对 PyTorch、React 这种公共大库，效果中性甚至有害**（因为多了一次查询开销）。这是使用时的核心判断依据。
+**6. Scroll 的行为差异**
+scroll 是有界快照，不是游走式游标——结果集超过快照窗口会直接返回 400 而非静默截断。从 ES 迁移过来的代码如果依赖 scroll 大批量导出，要改用 `search_after`。
+**7. 二进制大小和内存占用**
+静态 musl 二进制方便，但 500+ MB 级别语料的 autoindex 过程中客户端内存约 **250 MB**（官方实测），对非常低配的机器仍需留意。
+---
+## 八、结语与行动建议
+XERJ 不是又一个"Rust 重写一切"的炫技项目，而是**少数几个真正理解"AI Agent 时代基础设施长什么样"的工程实践**。它的核心洞察极其清晰：**当你的主要"用户"是 Claude Code、Cursor 或你自己写的 Agent，检索层就必须按"省 token + 返回结构化事实"重新设计**——不是把 ES 改改凑合用，而是从根上把 AST、记忆、多格式、MCP、诚实基准全部纳入产品本体。
+**给你的行动建议，按场景排序：**
+1. **如果你是 Claude Code / Cursor 重度用户**：今天就装一次，用那条官方 prompt 让 Agent 自己配置 reference coding，跑一个你正在做的真实任务，对比 token 账单——这是最直接的收益验证方式。
+2. **如果你在搭本地 RAG**：把 XERJ 当作"ES + 向量库 + memory"三合一的候选，省掉至少两个组件的运维。
+3. **如果你在跑 ES 生产集群**：先别替换，把它装在本地做 Agent 后端 / 私有搜索，观察 3 个月再评估。
+4. **如果你只是好奇**：用 5 分钟跑一遍 `curl ... | sh` → `xerj autoindex ~/some-project` → `xerj search "..."`，你会立刻明白它和 grep 的区别。
+**终极评判**：在"AI Agent 基础设施"这个还在快速成型的赛道上，XERJ 是我近半年评测过的**完成度最高、最诚实的开源项目之一**。它的局限性都写在明面上，它的优势都能被复现。这不是一个"你会不会用"的问题，而是"你什么时候开始用"的问题——尤其当你的 Agent 每个月都在为 context token 买单的时候。

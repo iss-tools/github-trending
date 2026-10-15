@@ -1,0 +1,117 @@
+# lightseekorg/tokenspeed
+
+[GitHub URL](https://github.com/lightseekorg/tokenspeed)
+
+
+## TokenSpeed 深度评测：为 Agentic 推理而生的光速级开源引擎
+
+> TokenSpeed 是一个专为 Agentic 工作负载打造的开源 LLM 推理引擎，在 Blackwell GPU 上跑出超越 TensorRT-LLM 的性能。
+
+- **Tags**: LLM推理, 开源项目, Agentic AI, GPU优化, C++/Python
+- **Category**: AI 基础设施, 开发工具, 大模型推理
+
+## Details
+
+# TokenSpeed 深度评测：把"Agentic 推理"做成一等公民的开源引擎
+> 评测对象：`github.com/lightseekorg/tokenspeed` · 类型：开源 LLM 推理引擎 · 评级：**Strong Bet（早期激进型）**
+---
+## 一句话总结
+**TokenSpeed 是一个由非营利组织 LightSeek Foundation 于 2026 年 5 月开源（MIT 协议）、专为 Agentic 工作负载打造的"光速级"LLM 推理引擎，用 C++ 有限状态机调度器 + Python 执行层的混合架构，在 NVIDIA Blackwell 上做出了比 TensorRT-LLM 更低延迟、比 vLLM 更高吞吐的激进成绩单，并且首个上线就获得了 PyTorch Foundation 官方收编。**
+> 需要先澄清一个事实：网络上流传的部分资料把另一个同名项目（一个面向消费级硬件的 GGUF 部署工具）的数据误套在了 TokenSpeed 上——两者毫无关系。**本文聚焦的 lightseekorg/tokenspeed 是面向数据中心级 GPU 集群的生产级推理引擎，与 Ollama/llama.cpp 完全不在同一赛道**，普通用户"在自己 Mac 上跑个 Qwen"请绕行。
+---
+## 背景与痛点：为什么"Agent 推理"是一类全新的难题
+要理解 TokenSpeed 的存在意义，得先看清楚它要解决的不是"普通聊天"问题。
+当 Claude Code、Cursor、Codex 这类编程 Agent 成为基础设施时，传统的推理基准已经失真：**Agent 会话的上下文动辄突破 50K token，一次任务要跨越几十轮对话**，这同时对两个指标构成挤兑——单 GPU 的 TPM（决定能服务多少用户）和单用户的 TPS（决定用户体验是否流畅）。多数公开 Benchmark 没有真正刻画这种"长上下文 + 高并发 + 长前缀 KV"的复合压力。
+TensorRT-LLM 性能天花板最高，但闭源、模型覆盖窄、调参地狱；vLLM 易用、生态广，但为通用场景设计，在长前缀 Agent 流量下不能压榨硬件；SGLang 介于两者之间。**TokenSpeed 的目标是在 Agentic 这一子场景下同时拿到 TRT-LLM 的性能和 vLLM 的可用性**，并且用"开源 + 中立基金会"的身份避开商业引擎的平台绑定。
+值得注意的背景是：开发周期极短——**官方博客自述项目 2026 年 3 月中旬才动工，5 月 7 日发布**，背后是 NVIDIA DevTech、AMD Triton、Qwen Inference、Together AI、Mooncake、LongCat、FluentLLM 等多家厂商的联合共创，算力由 OpenAI、NVIDIA、AMD、Verda、Nebius 赞助。这不是某个独行侠的开源项目，而是一次"基金会牵头 + 芯片厂背书"的合纵连横。
+---
+## 核心架构剖析：五个相互咬合的子系统
+TokenSpeed 的差异化不是"调得更快"，而是**用一套不同的工程范式去逼近光速**。以下五点是读懂它的钥匙。
+### 1. C++ 控制平面 + Python 执行平面：调度器 = 有限状态机
+这是 PyTorch Foundation 在收编 TokenSpeed 时专门点名的创新：**首个把控制平面与执行平面分离的推理引擎**。
+> 一个类比：传统引擎像一家厨房里厨师（Python）既炒菜又记账又派单，忙起来就乱；TokenSpeed 把"接单-派单-对账"抽出来交给一位只会按流程办事、且写错流程会被编译器当场拒绝的柜员（C++ FSM），厨师则继续用 Python 保持灵活创新。
+具体地，请求生命周期、KV Cache 的所有权转移、CPU/GPU 重叠时序都被编码为**显式的 FSM 状态转移**，由 C++ 类型系统在**编译期**就拒绝非法状态——这把 LLM 服务中最容易出 bug 的 KV Cache 管理从"运行时祈祷"变成了"编译期保证"。执行层保留 Python，研究者仍能用熟悉的高层 API 快速迭代。
+### 2. 编译器加持的 SPMD 建模层
+传统框架写分布式模型，需要手动塞 `all_reduce`、`all_gather` 等通信原语，错一个就死锁。TokenSpeed 让开发者只在模块边界标注"这个 Tensor 应该放在哪"，由一个轻量静态编译器在模型构建时**自动生成所需的集合通信算子**——对写新模型的人是巨大的减负。
+### 3. TokenSpeed-Kernel：把 GPU 算子做成"可插拔外设"
+内核从引擎核心里彻底剥离，形成**可移植的公共 API + 集中注册表 + 异构加速器插件机制**。这才是它能同时打 NVIDIA Blackwell 和 AMD CDNA4/CDNA5 的工程基础。
+其中最亮眼的是 **MLA（Multi-head Latent Attention）内核**：在 decode 阶段把 `q_seqlen` 折叠进 `num_heads` 轴以填满 Tensor Core 的 M tile；prefill 阶段则用 NVIDIA 内部 knob 微调 softmax。结果是**在长前缀 KV + 投机解码的典型 Agent 负载下，相对 TensorRT-LLM 的 MLA 接近减半延迟**——而且这套 MLA 内核已被 vLLM 官方上游采纳，成为 Blackwell 上的 fallback 后端之一。
+### 4. SMG-AsyncLLM：低开销的 CPU 侧入口
+SMG（Shepherd Model Gateway，同基金会的姊妹项目）作为生产级网关被直接集成，使 CPU 侧的请求分发开销被压到极低——这点对高并发 Agent 流量尤其关键，因为调度抖动会直接体现为长尾延迟。
+### 5. 中立基金会的"瑞士"身份
+LightSeek Foundation 是 501(c)(3) 非营利组织、PyTorch Foundation 银牌会员，**不隶属于任何一家云厂商或芯片厂**。对担心 vLLM（Red Hat 系）或 TensorRT-LLM（NVIDIA 系）站队的团队而言，这是 TokenSpeed 在治理结构上的独特筹码。
+---
+## 性能数据：把官方博客的数字翻译成"人话"
+官方与 EvalScope 团队合作，用 **SWE-smith 真实编程 Agent 轨迹**作为压测负载（而不是合成 prompt），对比对象是当时 Blackwell 上的 SoTA——TensorRT-LLM。测试模型为 Kimi K2.5，硬件 NVIDIA B200。
+| 指标 | TokenSpeed vs TRT-LLM | 说明 |
+|---|---|---|
+| 最小延迟（batch=1） | **约低 9%** | 单用户体感"打字更快" |
+| 吞吐（~100 TPS/user 工作点） | **约高 11%** | 同样硬件能多扛约 11% 用户 |
+| MLA decode（batch 4/8/16，长前缀 + 投机解码） | **接近减半延迟** | 长会话 Agent 体感差异显著 |
+| MLA prefill（5 种典型长前缀负载） | 全部超越 TRT-LLM | 直接影响 Agent 首 token 响应时间 |
+更激进的近期成绩：**2026 年 10 月官方博客报告在 NVIDIA GB300 NVL72 上跑 Qwen3.8-Flash-Next，单用户可达 685 tokens/s**；同月 AMD 官方博客确认 Kimi K3 在 Instinct MI355X 上的推理由 TokenSpeed 承担。
+> 客观注脚：这些数字是**单机（未 PD 分离）**的 Pareto 曲线对比，PD 分离（Prefill-Decode disaggregation）当时仍在清理中。此外所有数字均由 LightSeek 团队自报，第三方独立复测数据尚不充分，参考 Spheron、Jarvis Labs 等外部评测能得出"TokenSpeed 在 Agentic 子场景下确实领先"的定性结论，但具体百分比会因配置不同而漂移。
+---
+## 上手体验：从 0 到 1 跑起来
+TokenSpeed 当前定位是"开发者预览"，主要走 Docker + nightly wheel 路线，**对硬件要求相当硬核**：需要 NVIDIA GPU（CUDA 13 或 Hopper 的 CUDA 12.9 源码编译）或 AMD ROCm 7.2 主机。
+**最小化启动三步：**
+```bash
+# 1. 拉起 runner 容器
+docker pull lightseekorg/tokenspeed-runner:latest
+docker run -itd --shm-size 32g --gpus all \
+  -v /raid/cache:/home/runner/.cache \
+  --ipc=host --network=host --pid=host --privileged \
+  --name tokenspeed lightseekorg/tokenspeed-runner:latest /bin/bash
+# 2. 容器内安装 nightly wheel（Python 3.11–3.13）
+pip install --upgrade tokenspeed \
+  --extra-index-url https://lightseek.org/whl/nightly
+# 3. 起一个 OpenAI 兼容服务
+tokenspeed serve openai/gpt-oss-20b \
+  --host 0.0.0.0 --port 8000 \
+  --tensor-parallel-size 1
+```
+对 AMD RDNA4（如 Radeon AI PRO R9700）这类消费级卡，目前只能走"小模型 + Triton attention + eager"的最保守路径，且仅支持 Dense BF16——这从侧面印证了它仍是数据中心工具，不是端侧玩具。
+**API 形态是 OpenAI 兼容的**，意味着你现有调用 OpenAI SDK 的代码几乎不用改，只要换 base_url 即可——这一点继承自 vLLM 系的工程默契。
+**Day-0 模型覆盖**是它另一张王牌：Kimi K3、Qwen3.8 / 3.8-Flash-Next、GLM 5.3 Flash、DeepSeek V4、Minimax M2.7、GPT-OSS、TML Inkling 都在发布周内拿到适配——对追前沿模型的企业来说，省下了"等社区适配"的时间窗口。
+---
+## 目标人群与真实收益
+| 人群 | 能拿到什么 | 是否推荐 |
+|---|---|---|
+| **AI 基础设施 / 平台工程师** | Agentic 流量下 ~10% 的成本节省；规模化后是真金白银的 GPU 容量差 | ⭐⭐⭐⭐⭐ 值得立刻 POC |
+| **自建 Agent 服务的中小团队** | OpenAI 兼容 API + Day-0 新模型支持，省适配时间 | ⭐⭐⭐⭐ 建议先灰度 |
+| **推理内核 / 系统研究员** | 可插拔内核 API + 类型安全的调度器源码，是极好的学习材料 | ⭐⭐⭐⭐⭐ |
+| **ML 应用开发者（调用方）** | 几乎无感知，base_url 一换就走 | ⭐⭐⭐ |
+| **消费级 GPU / Mac 用户** | 完全不适用，请用 Ollama / llama.cpp / LM Studio | ❌ |
+对工程师最实在的两条收益：**一是 GPU 账单减少约 10%**（在动辄百万美元级的推理集群上并非小数）；**二是新模型发布当天就能上线**，无需等第三方适配 PR 合并。
+---
+## 竞品对比：一张表看懂生态位
+| 维度 | TokenSpeed | vLLM | SGLang | TensorRT-LLM |
+|---|---|---|---|---|
+| **首版时间** | 2026-05 | 2023-06 | 2024-01 | 2023-10 |
+| **协议** | MIT | Apache 2.0 | Apache 2.0 | Apache 2.0（部分闭源组件） |
+| **治理** | 非营利基金会 | Red Hat 主导 | LMSYS 社区 | NVIDIA |
+| **核心优化场景** | Agentic 长上下文 | 通用高吞吐 | 共享前缀/RAG | 固定模型极限吞吐 |
+| **MLA 内核** | ✅ 业界最快之一（被 vLLM 采纳） | 复用 TokenSpeed MLA | 自研 | 自研 |
+| **AMD 支持** | CDNA4/CDNA5 + RDNA4（部分） | ✅ | ✅ | ❌ |
+| **模型覆盖广度** | 偏前沿 MoE | 最广 | 广 | 较窄 |
+| **生态成熟度** | 早期（8 个月） | 最成熟 | 成熟 | 成熟 |
+| **冷启动时间** | 中 | ~62 秒 | ~58 秒 | ~28 分钟（需编译） |
+数据综合自官方与第三方基准（B200 / H100 场景）。
+**选型口径建议**：追求最快上线和最广模型支持选 vLLM；前缀共享重的 RAG/聊天场景选 SGLang；模型固定且追求绝对吞吐可考虑 TRT-LLM；**如果你的负载是 Claude Code / Cursor 类的编程 Agent 或长会话 Agent，TokenSpeed 值得作为首选 POC 对象**。
+---
+## 局限与不足：要把丑话说在前面
+**1. 仍处于"预览期"，生产加固进行中。** 官方在 5 月发布时明确说"引擎与内核仍在活跃开发，生产加固计划在下月完成"，到 10 月的 GB300 博客仍在持续做 MTP、稀疏注意力的深度优化。把 TokenSpeed 直接推到无灰度的生产流量，风险自负。
+**2. Issue 区对外贡献受限。** 仓库的 Issue 创建是受限的（非维护者不能开新 issue），公开 open issue 仅 8 个，社区讨论主要流向 X 和博客。**对独立开发者而言，报 bug 的门槛比 vLLM/SGLang 高得多**，遇到问题时可能要靠读源码或去 SMG/TorchSpec 仓库找线索。
+**3. 硬件门槛极高。** 没有 CUDA 13 或 Hopper + CUDA 12.9 的环境基本只能源码编译；ROCm 路径要求 ROCm 7.2 nightly PyTorch，且 RDNA4 仅支持 Dense BF16。消费级 4090/5090 用户不在目标射程内。
+**4. 已知正确性问题尚未收口。** 例如 issue #904 报告 **gfx950 上的 MLA decode 不是 batch-invariant**，会破坏 greedy 解码的可复现性和投机解码的目标等价性——对金融/科学计算等需要确定性输出的场景这是硬伤。VLM 的跨节点 TP 也在补齐中。
+**5. 第三方独立基准稀缺。** 几乎所有亮眼数字都来自 LightSeek 团队自报。虽然 EvalScope 是知名第三方、PyTorch Foundation 也背书了其架构价值，但**缺少像 Artificial Analysis 那类纯外部机构的横向复测**，选型前务必用自家流量自己压测。
+**6. 生态半径小。** 没有像 vLLM 那样庞大的量化后端库、LoRA 服务、多模态流水线；如果业务依赖这些"周边"，迁移成本会超出预期。
+---
+## 结语与行动建议
+TokenSpeed 是 2026 年 LLM 推理赛道最值得跟踪的新变量之一：**它赌对了"Agentic 工作负载将成为主流流量"这一趋势，并用控制平面/执行平面分离 + 可插拔内核这套工程范式，在 8 个月内追平甚至局部超越了一年的 TRT-LLM 优化成果**。基金会治理 + 多芯片厂共创的身份，让它在"技术领先"之外多了一层"治理中立"的稀缺筹码。
+**给你的三步行动路径：**
+- **如果你是平台/AI Infra 工程师**：在 staging 集群用 SWE-smith 风格的真实 Agent 轨迹压测一次 TokenSpeed vs vLLM/SGLang，重点看 P99 TTFT 和单位 TPM 成本，而不是看平均数。
+- **如果你是应用开发者**：暂时只需要知道它存在，等你的供应商（Together AI、DeepInfra 等）接入后再消费即可——API 是 OpenAI 兼容的，切换零成本。
+- **如果你是系统/内核研究员**：直接 clone `tokenspeed-kernel` 和 `tokenspeed-scheduler` 两个子仓库读源码，C++ 类型系统建模 KV Cache 所有权这套写法，在开源推理引擎里是独一份的教科书级范例。
+**一句话终极评判**：它现在还不是"vLLM 杀手"，但极有可能是"Agentic 推理时代的第一块基石"——在它变成下一个 vLLM 之前上车，是少数还能在开源 AI 基础设施里捡到早期红利的机会窗口。
+> 项目地址：`github.com/lightseekorg/tokenspeed` · 协议 MIT · 文档 `lightseek.org/tokenspeed` · 最新 nightly 2026-09-30

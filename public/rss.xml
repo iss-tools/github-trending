@@ -5,6 +5,20 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>xerj-org/xerj</title>
+      <link>https://trending.pptboard.com/repo/xerj-org/xerj.html</link>
+      <description>XERJ 是一个用 Rust 编写的 AI 原生搜索引擎，一个静态二进制即可索引代码、文档、日志并供 AI Agent 查询，实测可为 Claude Code 节省约 52% 的 token 成本。</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/xerj-org/xerj.html</guid>
+    </item>
+    <item>
+      <title>lightseekorg/tokenspeed</title>
+      <link>https://trending.pptboard.com/repo/lightseekorg/tokenspeed.html</link>
+      <description>TokenSpeed 是一个专为 Agentic 工作负载打造的开源 LLM 推理引擎，在 Blackwell GPU 上跑出超越 TensorRT-LLM 的性能。</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/lightseekorg/tokenspeed.html</guid>
+    </item>
+    <item>
       <title>ntdevlabs/tiny11builder</title>
       <link>https://trending.pptboard.com/repo/ntdevlabs/tiny11builder.html</link>
       <description>一款开源工具，能把正版 Windows 11 官方 ISO 重打包成无广告、无强制微软账户的轻量精简镜像</description>
@@ -339,20 +353,6 @@
       <description>一个用 Go 编写的轻量级 HTTP 压测工具，一条命令十秒出报告，是 ab 的现代接班人。</description>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/rakyll/hey.html</guid>
-    </item>
-    <item>
-      <title>VectifyAI/PageIndex</title>
-      <link>https://trending.pptboard.com/repo/VectifyAI/PageIndex.html</link>
-      <description>一个无向量、纯推理的开源 RAG 框架，用 LLM 可导航的文档树取代向量数据库，金融基准准确率达 98.7%</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/VectifyAI/PageIndex.html</guid>
-    </item>
-    <item>
-      <title>oblien/openship</title>
-      <link>https://trending.pptboard.com/repo/oblien/openship.html</link>
-      <description>开源自托管部署平台，让你像用 Vercel 一样 git push 上线，却把服务器、数据和成本的控制权全部拿回自己手中。</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/oblien/openship.html</guid>
     </item>
   </channel>
 </rss>
