@@ -73709,8 +73709,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 263173,
-      "forks": 66199,
+      "stars": 264218,
+      "forks": 66436,
       "starsAdded": 32282,
       "createdAt": "2026-10-15T16:00:02.498Z",
       "metaData": {
@@ -73783,8 +73783,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 68313,
-      "forks": 7475,
+      "stars": 68409,
+      "forks": 7484,
       "starsAdded": 3027,
       "createdAt": "2026-10-15T16:00:02.528Z",
       "metaData": {
@@ -73856,8 +73856,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 88351,
-      "forks": 9854,
+      "stars": 88409,
+      "forks": 9859,
       "starsAdded": 1366,
       "createdAt": "2026-10-15T16:00:02.549Z",
       "metaData": {
@@ -73912,8 +73912,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 50170,
-      "forks": 4467,
+      "stars": 50213,
+      "forks": 4473,
       "starsAdded": 1091,
       "createdAt": "2026-10-15T16:00:02.514Z",
       "metaData": {
@@ -73983,8 +73983,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 280029,
-      "forks": 41654,
+      "stars": 280077,
+      "forks": 41659,
       "starsAdded": 1015,
       "createdAt": "2026-10-15T16:00:02.552Z",
       "metaData": {
@@ -74044,8 +74044,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 29661,
-      "forks": 2067,
+      "stars": 29678,
+      "forks": 2070,
       "starsAdded": 902,
       "createdAt": "2026-10-15T16:00:02.545Z",
       "metaData": {
@@ -74118,7 +74118,7 @@
       "repo": "xerj-org/xerj",
       "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "language": "Rust",
-      "stars": 5325,
+      "stars": 5371,
       "forks": 299,
       "starsAdded": 725,
       "createdAt": "2026-10-15T16:00:02.561Z",
@@ -74192,9 +74192,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 299631,
-      "forks": 26763,
-      "starsAdded": 534,
+      "stars": 299672,
+      "forks": 26765,
+      "starsAdded": 688,
       "createdAt": "2026-10-15T16:00:02.535Z",
       "metaData": {
         "forks": "0",
@@ -74247,63 +74247,6 @@
       }
     },
     {
-      "id": "17f0836f-89a1-4e7c-b9f3-58d980d2bcf2",
-      "dateAdded": "20261016",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 38603,
-      "forks": 4297,
-      "starsAdded": 525,
-      "createdAt": "2026-10-15T16:00:02.508Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "mcp",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://code.claude.com/docs/en/plugins",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件系统",
-          "官方生态",
-          "自动化",
-          "Anthropic"
-        ],
-        "cover": "",
-        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
-        "ability": [
-          "官方策展与安全审核",
-          "插件一键安装与集成",
-          "命令/代理/技能等多种类型",
-          "深度嵌入 Claude 工作流",
-          "标准化与生态规范"
-        ],
-        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "Claude Code/Cowork 重度用户",
-          "开发团队负责人",
-          "企业安全合规部门",
-          "插件开发者",
-          "AI 工作流极客"
-        ],
-        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
-      }
-    },
-    {
       "id": "17e53a73-c205-4338-ad7e-7f393b3bdd81",
       "dateAdded": "20261016",
       "type": "github-daily",
@@ -74311,9 +74254,9 @@
       "repo": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
       "language": "Go",
-      "stars": 112270,
-      "forks": 6509,
-      "starsAdded": 398,
+      "stars": 112303,
+      "forks": 6511,
+      "starsAdded": 530,
       "createdAt": "2026-10-15T16:00:02.521Z",
       "metaData": {
         "forks": "0",
@@ -74368,6 +74311,63 @@
       }
     },
     {
+      "id": "17f0836f-89a1-4e7c-b9f3-58d980d2bcf2",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 38669,
+      "forks": 4303,
+      "starsAdded": 525,
+      "createdAt": "2026-10-15T16:00:02.508Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
       "id": "393dc9bc-755c-4478-90e3-b03bd56ccca9",
       "dateAdded": "20261016",
       "type": "github-daily",
@@ -74375,8 +74375,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 74888,
-      "forks": 8907,
+      "stars": 74915,
+      "forks": 8911,
       "starsAdded": 224,
       "createdAt": "2026-10-15T16:00:02.541Z",
       "metaData": {
@@ -74448,7 +74448,7 @@
       "repo": "lightseekorg/tokenspeed",
       "description": "TokenSpeed is a speed-of-light LLM inference engine.",
       "language": "Python",
-      "stars": 2369,
+      "stars": 2383,
       "forks": 331,
       "starsAdded": 25,
       "createdAt": "2026-10-15T16:00:02.557Z",
