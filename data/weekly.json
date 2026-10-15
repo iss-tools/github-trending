@@ -18925,9 +18925,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 238635,
-      "forks": 59402,
-      "starsAdded": 183758,
+      "stars": 241105,
+      "forks": 59976,
+      "starsAdded": 214837,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
         "forks": "0",
@@ -18999,9 +18999,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 36958,
-      "forks": 3261,
-      "starsAdded": 28663,
+      "stars": 37116,
+      "forks": 3279,
+      "starsAdded": 28240,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
         "forks": "0",
@@ -19060,9 +19060,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 291070,
-      "forks": 24415,
-      "starsAdded": 11955,
+      "stars": 291212,
+      "forks": 24426,
+      "starsAdded": 12292,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
         "forks": "0",
@@ -19111,9 +19111,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 55252,
-      "forks": 3494,
-      "starsAdded": 9867,
+      "stars": 55307,
+      "forks": 3497,
+      "starsAdded": 10706,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
         "forks": "0",
@@ -19223,9 +19223,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 87321,
-      "forks": 9754,
-      "starsAdded": 4986,
+      "stars": 87457,
+      "forks": 9765,
+      "starsAdded": 5613,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
         "forks": "0",
@@ -19279,9 +19279,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 63609,
-      "forks": 5704,
-      "starsAdded": 4732,
+      "stars": 63681,
+      "forks": 5715,
+      "starsAdded": 5123,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
         "forks": "0",
@@ -19344,9 +19344,9 @@
       "repo": "tester-army/e2e",
       "description": "Next generation e2e testing framework for web and mobile apps.",
       "language": "TypeScript",
-      "stars": 10464,
-      "forks": 509,
-      "starsAdded": 4426,
+      "stars": 10492,
+      "forks": 510,
+      "starsAdded": 3505,
       "createdAt": "2026-10-11T17:00:03.712Z",
       "metaData": {
         "forks": "0",
@@ -19405,9 +19405,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 100733,
-      "forks": 8827,
-      "starsAdded": 3587,
+      "stars": 100756,
+      "forks": 8828,
+      "starsAdded": 3371,
       "createdAt": "2026-10-11T17:00:03.733Z",
       "metaData": {
         "forks": "0",
@@ -19468,69 +19468,6 @@
           "长周期项目维护者"
         ],
         "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
-      }
-    },
-    {
-      "id": "4390d1b8-ff8d-4906-b0f8-e868010b5cb3",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "repo": "earthtojake/text-to-cad",
-      "description": "Give your agent CAD superpowers.",
-      "language": "Python",
-      "stars": 20313,
-      "forks": 1999,
-      "starsAdded": 2173,
-      "createdAt": "2026-10-11T17:00:03.745Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "ai-agents",
-          "cad",
-          "mechanical-engineering",
-          "robotics",
-          "step",
-          "stl",
-          "stp",
-          "text-to-cad"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.texttocad.dev",
-        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "CAD",
-          "AI代理",
-          "机器人",
-          "开源",
-          "自动化制造"
-        ],
-        "cover": "",
-        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
-        "ability": [
-          "自然语言生成CAD模型",
-          "机器人文件自动生成",
-          "仿真环境配置",
-          "工程图与G-code输出",
-          "制造文件预检"
-        ],
-        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
-        "category": [
-          "开发工具",
-          "AI编程",
-          "工程工具"
-        ],
-        "suitable": [
-          "硬件初创团队",
-          "机器人开发者",
-          "AI编码代理重度用户",
-          "制造打样工程师",
-          "技术极客"
-        ],
-        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
       }
     },
     {
@@ -19599,6 +19536,69 @@
       }
     },
     {
+      "id": "4390d1b8-ff8d-4906-b0f8-e868010b5cb3",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 20344,
+      "forks": 2006,
+      "starsAdded": 1994,
+      "createdAt": "2026-10-11T17:00:03.745Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
       "id": "6bd80691-7d5b-4e93-b0a3-564249e72ace",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19633,9 +19633,9 @@
       "repo": "flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
       "language": "Dart",
-      "stars": 180153,
-      "forks": 34109,
-      "starsAdded": 967,
+      "stars": 180168,
+      "forks": 34106,
+      "starsAdded": 1117,
       "createdAt": "2026-10-11T17:00:03.742Z",
       "metaData": {
         "forks": "0",
@@ -19759,9 +19759,9 @@
       "repo": "twostraws/SwiftUI-Agent-Skill",
       "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
       "language": "",
-      "stars": 5947,
+      "stars": 5967,
       "forks": 218,
-      "starsAdded": 911,
+      "starsAdded": 930,
       "createdAt": "2026-10-14T12:00:03.973Z",
       "metaData": {
         "forks": "0",
@@ -19812,9 +19812,9 @@
       "repo": "EpicGames/raddebugger",
       "description": "A native, user-mode, multi-process, graphical debugger.",
       "language": "C",
-      "stars": 8527,
-      "forks": 415,
-      "starsAdded": 857,
+      "stars": 8535,
+      "forks": 416,
+      "starsAdded": 814,
       "createdAt": "2026-10-11T17:00:03.735Z",
       "metaData": {
         "forks": "0",

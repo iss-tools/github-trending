@@ -72463,9 +72463,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 238635,
-      "forks": 59402,
-      "starsAdded": 41187,
+      "stars": 241105,
+      "forks": 59976,
+      "starsAdded": 41034,
       "createdAt": "2026-10-14T16:00:02.368Z",
       "metaData": {
         "forks": "0",
@@ -72537,9 +72537,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 65956,
-      "forks": 7283,
-      "starsAdded": 3547,
+      "stars": 66271,
+      "forks": 7312,
+      "starsAdded": 3538,
       "createdAt": "2026-10-14T16:00:02.379Z",
       "metaData": {
         "forks": "0",
@@ -72610,9 +72610,9 @@
       "repo": "ifixai-ai/iFixAi",
       "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
       "language": "Python",
-      "stars": 27247,
-      "forks": 1500,
-      "starsAdded": 2143,
+      "stars": 27359,
+      "forks": 1502,
+      "starsAdded": 2109,
       "createdAt": "2026-10-14T16:00:02.394Z",
       "metaData": {
         "forks": "0",
@@ -72684,9 +72684,9 @@
       "repo": "xtool-org/xtool",
       "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
       "language": "Swift",
-      "stars": 10612,
-      "forks": 468,
-      "starsAdded": 1510,
+      "stars": 10772,
+      "forks": 485,
+      "starsAdded": 1502,
       "createdAt": "2026-10-14T16:00:02.403Z",
       "metaData": {
         "forks": "0",
@@ -72744,9 +72744,9 @@
       "repo": "vxcontrol/pentagi",
       "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "language": "Go",
-      "stars": 29263,
-      "forks": 4398,
-      "starsAdded": 1070,
+      "stars": 29410,
+      "forks": 4419,
+      "starsAdded": 1025,
       "createdAt": "2026-10-14T16:00:02.397Z",
       "metaData": {
         "forks": "0",
@@ -72815,9 +72815,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 87321,
-      "forks": 9754,
-      "starsAdded": 1002,
+      "stars": 87457,
+      "forks": 9765,
+      "starsAdded": 1008,
       "createdAt": "2026-10-14T16:00:02.418Z",
       "metaData": {
         "forks": "0",
@@ -72871,9 +72871,9 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 29004,
-      "forks": 2039,
-      "starsAdded": 946,
+      "stars": 29096,
+      "forks": 2044,
+      "starsAdded": 947,
       "createdAt": "2026-10-14T16:00:02.384Z",
       "metaData": {
         "forks": "0",
@@ -72945,9 +72945,9 @@
       "repo": "rust-lang/rust",
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
-      "stars": 119946,
-      "forks": 18699,
-      "starsAdded": 205,
+      "stars": 120011,
+      "forks": 18700,
+      "starsAdded": 207,
       "createdAt": "2026-10-14T16:00:02.400Z",
       "metaData": {
         "forks": "0",
@@ -72995,58 +72995,6 @@
       }
     },
     {
-      "id": "c3e292d6-9862-4321-939c-854717129a22",
-      "dateAdded": "20261015",
-      "type": "github-daily",
-      "url": "https://github.com/ntdevlabs/tiny11builder",
-      "repo": "ntdevlabs/tiny11builder",
-      "description": "WinUI app for building smaller, customized Windows 11 images.",
-      "language": "C#",
-      "stars": 20169,
-      "forks": 1552,
-      "starsAdded": 194,
-      "createdAt": "2026-10-14T16:00:02.409Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "",
-        "homepage": "",
-        "description": "WinUI app for building smaller, customized Windows 11 images. - ntdevlabs/tiny11builder"
-      },
-      "summaryData": {
-        "tags": [
-          "Windows 11",
-          "系统精简",
-          "开源工具",
-          "PowerShell",
-          "装机必备"
-        ],
-        "cover": "",
-        "title": "Tiny11Builder 深度评测：给 Windows 11 瘦身的开源瑞士刀",
-        "ability": [
-          "一键移除 Copilot、Edge、OneDrive 等预装组件",
-          "跳过强制微软账户登录的开箱设置流程",
-          "提供 Tiny11 / Core / 自定义三种瘦身档位",
-          "全程只用微软官方 DISM 工具，产物可正常激活与更新",
-          "支持 WinUI 图形界面、ARM64 架构与自定义配置保存"
-        ],
-        "summary": "一款开源工具，能把正版 Windows 11 官方 ISO 重打包成无广告、无强制微软账户的轻量精简镜像",
-        "category": [
-          "开发工具",
-          "系统工具"
-        ],
-        "suitable": [
-          "老电脑与低配机用户",
-          "虚拟机与开发测试者",
-          "注重隐私、讨厌预装广告的用户",
-          "IT 管理员与装机商",
-          "想要纯净 Win11 的极客玩家"
-        ],
-        "description": "GitHub 约 2 万 Star 的开源工具，调用微软官方 DISM 与 oscdimg，把正版 Windows 11 ISO 重打包成轻量镜像：可移除 Copilot、Edge 等预装组件，ISO 体积可缩至 2-3 GB，系统激活与更新不受影响。但无法解决遥测与 Office 弹窗问题，Core 模式仅适合虚拟机测试。"
-      }
-    },
-    {
       "id": "4927b17c-50da-44d4-939a-412e62679bf3",
       "dateAdded": "20261015",
       "type": "github-daily",
@@ -73054,9 +73002,9 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 49219,
-      "forks": 4415,
-      "starsAdded": 146,
+      "stars": 49308,
+      "forks": 4420,
+      "starsAdded": 163,
       "createdAt": "2026-10-14T16:00:02.390Z",
       "metaData": {
         "forks": "0",
@@ -73118,6 +73066,58 @@
       }
     },
     {
+      "id": "c3e292d6-9862-4321-939c-854717129a22",
+      "dateAdded": "20261015",
+      "type": "github-daily",
+      "url": "https://github.com/ntdevlabs/tiny11builder",
+      "repo": "ntdevlabs/tiny11builder",
+      "description": "WinUI app for building smaller, customized Windows 11 images.",
+      "language": "C#",
+      "stars": 20204,
+      "forks": 1553,
+      "starsAdded": 139,
+      "createdAt": "2026-10-14T16:00:02.409Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "WinUI app for building smaller, customized Windows 11 images. - ntdevlabs/tiny11builder"
+      },
+      "summaryData": {
+        "tags": [
+          "Windows 11",
+          "系统精简",
+          "开源工具",
+          "PowerShell",
+          "装机必备"
+        ],
+        "cover": "",
+        "title": "Tiny11Builder 深度评测：给 Windows 11 瘦身的开源瑞士刀",
+        "ability": [
+          "一键移除 Copilot、Edge、OneDrive 等预装组件",
+          "跳过强制微软账户登录的开箱设置流程",
+          "提供 Tiny11 / Core / 自定义三种瘦身档位",
+          "全程只用微软官方 DISM 工具，产物可正常激活与更新",
+          "支持 WinUI 图形界面、ARM64 架构与自定义配置保存"
+        ],
+        "summary": "一款开源工具，能把正版 Windows 11 官方 ISO 重打包成无广告、无强制微软账户的轻量精简镜像",
+        "category": [
+          "开发工具",
+          "系统工具"
+        ],
+        "suitable": [
+          "老电脑与低配机用户",
+          "虚拟机与开发测试者",
+          "注重隐私、讨厌预装广告的用户",
+          "IT 管理员与装机商",
+          "想要纯净 Win11 的极客玩家"
+        ],
+        "description": "GitHub 约 2 万 Star 的开源工具，调用微软官方 DISM 与 oscdimg，把正版 Windows 11 ISO 重打包成轻量镜像：可移除 Copilot、Edge 等预装组件，ISO 体积可缩至 2-3 GB，系统激活与更新不受影响。但无法解决遥测与 Office 弹窗问题，Core 模式仅适合虚拟机测试。"
+      }
+    },
+    {
       "id": "24e003e6-9ad5-400d-bc39-250ff7c7b18f",
       "dateAdded": "20261015",
       "type": "github-daily",
@@ -73125,9 +73125,9 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 52403,
-      "forks": 4770,
-      "starsAdded": 94,
+      "stars": 52471,
+      "forks": 4773,
+      "starsAdded": 103,
       "createdAt": "2026-10-14T16:00:02.392Z",
       "metaData": {
         "forks": "0",
@@ -73178,9 +73178,9 @@
       "repo": "nvm-sh/nvm",
       "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
       "language": "Shell",
-      "stars": 95433,
-      "forks": 10515,
-      "starsAdded": 70,
+      "stars": 95446,
+      "forks": 10517,
+      "starsAdded": 52,
       "createdAt": "2026-10-14T16:00:02.388Z",
       "metaData": {
         "forks": "0",
