@@ -18925,9 +18925,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 268189,
-      "forks": 67266,
-      "starsAdded": 214837,
+      "stars": 269434,
+      "forks": 67540,
+      "starsAdded": 239477,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
         "forks": "0",
@@ -18999,9 +18999,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 38536,
-      "forks": 3427,
-      "starsAdded": 28240,
+      "stars": 38643,
+      "forks": 3436,
+      "starsAdded": 25174,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
         "forks": "0",
@@ -19060,9 +19060,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 292747,
-      "forks": 24538,
-      "starsAdded": 12292,
+      "stars": 292822,
+      "forks": 24541,
+      "starsAdded": 12147,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
         "forks": "0",
@@ -19111,9 +19111,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 55870,
-      "forks": 3528,
-      "starsAdded": 10706,
+      "stars": 55903,
+      "forks": 3531,
+      "starsAdded": 10237,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
         "forks": "0",
@@ -19173,9 +19173,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 88647,
-      "forks": 9895,
-      "starsAdded": 5613,
+      "stars": 88718,
+      "forks": 9901,
+      "starsAdded": 6614,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
         "forks": "0",
@@ -19222,56 +19222,6 @@
       }
     },
     {
-      "id": "dbaf6334-43ea-49e2-a23d-bdc67b2169e8",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "repo": "DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars": 12313,
-      "forks": 1510,
-      "starsAdded": 5132,
-      "createdAt": "2026-10-12T13:00:03.876Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
-          "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://opengym.ch",
-        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
-      },
-      "summaryData": {
-        "tags": [],
-        "cover": "",
-        "title": "未收到待分析的评测内容",
-        "ability": [],
-        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
-        "category": [],
-        "suitable": [],
-        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
-      }
-    },
-    {
       "id": "3a36010e-3091-47a3-80d9-4dcb9cb38c39",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19279,9 +19229,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 64471,
-      "forks": 5791,
-      "starsAdded": 5123,
+      "stars": 64531,
+      "forks": 5797,
+      "starsAdded": 5318,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
         "forks": "0",
@@ -19334,6 +19284,56 @@
           "视频自动化开发者"
         ],
         "description": "HyperFrames 让你用 HTML/CSS 描述视频，通过 data-* 属性标记时间线与轨道，用 headless Chrome 逐帧抓取并 FFmpeg 编码，输出确定性 MP4。支持 Agent 全流程自动化生产，适配多种动画库，提供 CLI、Catalog、Studio 与 AWS Lambda 渲染，适合将视频纳入代码与 CI/CD。"
+      }
+    },
+    {
+      "id": "dbaf6334-43ea-49e2-a23d-bdc67b2169e8",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "repo": "DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+      "language": "JavaScript",
+      "stars": 12338,
+      "forks": 1511,
+      "starsAdded": 4471,
+      "createdAt": "2026-10-12T13:00:03.876Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bodyweight",
+          "docker",
+          "fitness",
+          "fitness-tracker",
+          "gym",
+          "health",
+          "mcp",
+          "nodejs",
+          "passkeys",
+          "progressive-web-applications",
+          "pwa",
+          "react",
+          "self-hosted",
+          "self-hosting",
+          "vite",
+          "webauthn",
+          "weightlifting",
+          "workout-tracker"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://opengym.ch",
+        "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server. - DuarteSantos8/openGym"
+      },
+      "summaryData": {
+        "tags": [],
+        "cover": "",
+        "title": "未收到待分析的评测内容",
+        "ability": [],
+        "summary": "消息中未提供评测长文正文，无法提取结构化信息",
+        "category": [],
+        "suitable": [],
+        "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
       }
     },
     {
@@ -19471,6 +19471,69 @@
       }
     },
     {
+      "id": "4390d1b8-ff8d-4906-b0f8-e868010b5cb3",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 20699,
+      "forks": 2049,
+      "starsAdded": 2244,
+      "createdAt": "2026-10-11T17:00:03.745Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.texttocad.dev",
+        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "CAD",
+          "AI代理",
+          "机器人",
+          "开源",
+          "自动化制造"
+        ],
+        "cover": "",
+        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
+        "ability": [
+          "自然语言生成CAD模型",
+          "机器人文件自动生成",
+          "仿真环境配置",
+          "工程图与G-code输出",
+          "制造文件预检"
+        ],
+        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "工程工具"
+        ],
+        "suitable": [
+          "硬件初创团队",
+          "机器人开发者",
+          "AI编码代理重度用户",
+          "制造打样工程师",
+          "技术极客"
+        ],
+        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
       "id": "66023212-a083-44f3-baa7-52e1e457399d",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19536,69 +19599,6 @@
       }
     },
     {
-      "id": "4390d1b8-ff8d-4906-b0f8-e868010b5cb3",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "repo": "earthtojake/text-to-cad",
-      "description": "Give your agent CAD superpowers.",
-      "language": "Python",
-      "stars": 20684,
-      "forks": 2047,
-      "starsAdded": 1994,
-      "createdAt": "2026-10-11T17:00:03.745Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "ai-agents",
-          "cad",
-          "mechanical-engineering",
-          "robotics",
-          "step",
-          "stl",
-          "stp",
-          "text-to-cad"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.texttocad.dev",
-        "description": "Give your agent CAD superpowers. Contribute to earthtojake/text-to-cad development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "CAD",
-          "AI代理",
-          "机器人",
-          "开源",
-          "自动化制造"
-        ],
-        "cover": "",
-        "title": "text-to-cad：AI驱动的CAD/CAE/CAM技能库深度评测",
-        "ability": [
-          "自然语言生成CAD模型",
-          "机器人文件自动生成",
-          "仿真环境配置",
-          "工程图与G-code输出",
-          "制造文件预检"
-        ],
-        "summary": "让AI代理像写代码一样做CAD设计，打通从建模到制造的全链路",
-        "category": [
-          "开发工具",
-          "AI编程",
-          "工程工具"
-        ],
-        "suitable": [
-          "硬件初创团队",
-          "机器人开发者",
-          "AI编码代理重度用户",
-          "制造打样工程师",
-          "技术极客"
-        ],
-        "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
-      }
-    },
-    {
       "id": "6bd80691-7d5b-4e93-b0a3-564249e72ace",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19606,9 +19606,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11611,
-      "forks": 1134,
-      "starsAdded": 1155,
+      "stars": 11633,
+      "forks": 1136,
+      "starsAdded": 1214,
       "createdAt": "2026-10-11T17:00:03.740Z",
       "metaData": {
         "forks": "0",
@@ -19759,9 +19759,9 @@
       "repo": "twostraws/SwiftUI-Agent-Skill",
       "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
       "language": "",
-      "stars": 6083,
+      "stars": 6094,
       "forks": 221,
-      "starsAdded": 930,
+      "starsAdded": 900,
       "createdAt": "2026-10-14T12:00:03.973Z",
       "metaData": {
         "forks": "0",
@@ -19865,9 +19865,9 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
       "language": "TypeScript",
-      "stars": 1368,
+      "stars": 1373,
       "forks": 115,
-      "starsAdded": 628,
+      "starsAdded": 659,
       "createdAt": "2026-10-11T17:00:03.758Z",
       "metaData": {
         "forks": "0",
