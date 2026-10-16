@@ -73709,8 +73709,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 271814,
-      "forks": 68309,
+      "stars": 275419,
+      "forks": 69365,
       "starsAdded": 32314,
       "createdAt": "2026-10-15T16:00:02.498Z",
       "metaData": {
@@ -73783,8 +73783,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 69194,
-      "forks": 7571,
+      "stars": 69466,
+      "forks": 7606,
       "starsAdded": 3024,
       "createdAt": "2026-10-15T16:00:02.528Z",
       "metaData": {
@@ -73856,8 +73856,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 88826,
-      "forks": 9916,
+      "stars": 88971,
+      "forks": 9934,
       "starsAdded": 1369,
       "createdAt": "2026-10-15T16:00:02.549Z",
       "metaData": {
@@ -73912,8 +73912,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 50533,
-      "forks": 4493,
+      "stars": 50700,
+      "forks": 4503,
       "starsAdded": 1091,
       "createdAt": "2026-10-15T16:00:02.514Z",
       "metaData": {
@@ -73983,8 +73983,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 280443,
-      "forks": 41710,
+      "stars": 280569,
+      "forks": 41721,
       "starsAdded": 1013,
       "createdAt": "2026-10-15T16:00:02.552Z",
       "metaData": {
@@ -74037,6 +74037,67 @@
       }
     },
     {
+      "id": "c9325e44-b2af-448f-a8bc-39b1677c8027",
+      "dateAdded": "20261016",
+      "type": "github-daily",
+      "url": "https://github.com/LibreSpark/LibreTV",
+      "repo": "LibreSpark/LibreTV",
+      "description": "一分钟搭建影视站，支持Docker等部署方式",
+      "language": "TypeScript",
+      "stars": 18202,
+      "forks": 28783,
+      "starsAdded": 978,
+      "createdAt": "2026-10-16T05:00:02.209Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "css",
+          "film",
+          "html",
+          "movie-web-app",
+          "movies-and-cinemas",
+          "nextjs",
+          "tv"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://libretv.is-an.org",
+        "description": "一分钟搭建影视站，支持Docker等部署方式. Contribute to LibreSpark/LibreTV development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "LibreTV",
+          "开源项目",
+          "影视聚合",
+          "Next.js",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "LibreTV 深度评测：18K Star 的开源影视聚合搜索播放框架",
+        "ability": [
+          "聚合搜索与跨源同名合并，一次搜索并行请求多个采集站",
+          "换源测速与一键切换，保留集数和播放进度",
+          "源健康度自动停用，连续失败的源按阶梯时长淘汰",
+          "内置 IPTV 直播模块，支持 M3U 订阅、EPG 节目单与批量测活",
+          "服务端代理搜索与 SSRF 双层防护，隐藏用户真实 IP"
+        ],
+        "summary": "一个不内置任何片源的开源影视聚合搜索播放器，自填采集源即可实现跨源搜索、测速换源、坏源自动停用的私人观影站。",
+        "category": [
+          "开发工具",
+          "影音娱乐",
+          "自托管应用"
+        ],
+        "suitable": [
+          "NAS / Homelab 自托管玩家",
+          "追剧重度用户",
+          "隐私敏感型用户",
+          "独立开发者（学习 Next.js 15 实战架构）",
+          "想搭建私人观影入口的技术爱好者"
+        ],
+        "description": "LibreTV 是基于 Next.js 15 + ArtPlayer + hls.js 的开源影视聚合搜索播放框架（AGPL-3.0 协议），自身不存储任何片源。它通过并行搜索多个苹果 CMS 采集站实现跨源聚合、自动测速换源、坏源自动停用，播放进度存本地 IndexedDB。支持 Docker / Vercel / Cloudflare Pages 一分钟部署，但需自行添加片源、配置 HTTPS 反代，仅供个人学习使用，不建议公开运营或商用。"
+      }
+    },
+    {
       "id": "692889e2-a36d-4b0a-a266-f223aff67f9a",
       "dateAdded": "20261016",
       "type": "github-daily",
@@ -74044,8 +74105,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 29814,
-      "forks": 2083,
+      "stars": 29882,
+      "forks": 2087,
       "starsAdded": 904,
       "createdAt": "2026-10-15T16:00:02.545Z",
       "metaData": {
@@ -74118,8 +74179,8 @@
       "repo": "xerj-org/xerj",
       "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "language": "Rust",
-      "stars": 5728,
-      "forks": 310,
+      "stars": 5877,
+      "forks": 318,
       "starsAdded": 715,
       "createdAt": "2026-10-15T16:00:02.561Z",
       "metaData": {
@@ -74192,8 +74253,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 299940,
-      "forks": 26787,
+      "stars": 300078,
+      "forks": 26800,
       "starsAdded": 582,
       "createdAt": "2026-10-15T16:00:02.535Z",
       "metaData": {
@@ -74254,8 +74315,8 @@
       "repo": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
       "language": "Go",
-      "stars": 112598,
-      "forks": 6524,
+      "stars": 112717,
+      "forks": 6529,
       "starsAdded": 433,
       "createdAt": "2026-10-15T16:00:02.521Z",
       "metaData": {
@@ -74318,8 +74379,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 39170,
-      "forks": 4331,
+      "stars": 39330,
+      "forks": 4342,
       "starsAdded": 307,
       "createdAt": "2026-10-15T16:00:02.508Z",
       "metaData": {
@@ -74375,8 +74436,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 75155,
-      "forks": 8930,
+      "stars": 75242,
+      "forks": 8941,
       "starsAdded": 147,
       "createdAt": "2026-10-15T16:00:02.541Z",
       "metaData": {
@@ -74448,8 +74509,8 @@
       "repo": "lightseekorg/tokenspeed",
       "description": "TokenSpeed is a speed-of-light LLM inference engine.",
       "language": "Python",
-      "stars": 2511,
-      "forks": 337,
+      "stars": 2551,
+      "forks": 342,
       "starsAdded": 30,
       "createdAt": "2026-10-15T16:00:02.557Z",
       "metaData": {

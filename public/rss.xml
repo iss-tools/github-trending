@@ -5,6 +5,13 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>LibreSpark/LibreTV</title>
+      <link>https://trending.pptboard.com/repo/LibreSpark/LibreTV.html</link>
+      <description>一个不内置任何片源的开源影视聚合搜索播放器，自填采集源即可实现跨源搜索、测速换源、坏源自动停用的私人观影站。</description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/LibreSpark/LibreTV.html</guid>
+    </item>
+    <item>
       <title>xerj-org/xerj</title>
       <link>https://trending.pptboard.com/repo/xerj-org/xerj.html</link>
       <description>XERJ 是一个用 Rust 编写的 AI 原生搜索引擎，一个静态二进制即可索引代码、文档、日志并供 AI Agent 查询，实测可为 Claude Code 节省约 52% 的 token 成本。</description>
@@ -346,13 +353,6 @@
       <description>官方开源的本地大模型部署工具，用三元量化把 54GB 的 27B 多模态模型压到 5.9GB，普通笔记本和手机就能跑出云端级推理能力。</description>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/PrismML-Eng/Bonsai-demo.html</guid>
-    </item>
-    <item>
-      <title>rakyll/hey</title>
-      <link>https://trending.pptboard.com/repo/rakyll/hey.html</link>
-      <description>一个用 Go 编写的轻量级 HTTP 压测工具，一条命令十秒出报告，是 ab 的现代接班人。</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/rakyll/hey.html</guid>
     </item>
   </channel>
 </rss>
