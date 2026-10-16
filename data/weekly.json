@@ -18925,8 +18925,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 279976,
-      "forks": 70573,
+      "stars": 284353,
+      "forks": 71629,
       "starsAdded": 239477,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
@@ -18999,8 +18999,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 39122,
-      "forks": 3493,
+      "stars": 39412,
+      "forks": 3527,
       "starsAdded": 25174,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
@@ -19053,6 +19053,65 @@
       }
     },
     {
+      "id": "1b8d4e91-a7d5-4391-89f3-d78341c21725",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/storytold/artcraft",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 30051,
+      "forks": 4770,
+      "starsAdded": 22319,
+      "createdAt": "2026-10-16T14:00:03.661Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      }
+    },
+    {
       "id": "24790175-65dc-4d18-981c-3c70ad5c4c47",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19060,8 +19119,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 293350,
-      "forks": 24593,
+      "stars": 293648,
+      "forks": 24617,
       "starsAdded": 12147,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
@@ -19111,8 +19170,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 56129,
-      "forks": 3556,
+      "stars": 56233,
+      "forks": 3561,
       "starsAdded": 10237,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
@@ -19173,8 +19232,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 89148,
-      "forks": 9958,
+      "stars": 89345,
+      "forks": 9982,
       "starsAdded": 6614,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
@@ -19229,8 +19288,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 64857,
-      "forks": 5838,
+      "stars": 65025,
+      "forks": 5852,
       "starsAdded": 5318,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
@@ -19334,6 +19393,80 @@
         "category": [],
         "suitable": [],
         "description": "您的消息在提示'下面是我为你提供的一篇评测长文'后即结束，未附带任何实际评测内容（如 GitHub 项目介绍、软件说明或文章正文），因此无法按照要求的 JSON 字段结构进行信息抽取。请补充粘贴待分析的评测长文后再发送。"
+      }
+    },
+    {
+      "id": "3bbd1f59-db8d-469a-84e9-c3486bb70c05",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30041,
+      "forks": 2114,
+      "starsAdded": 4038,
+      "createdAt": "2026-10-16T14:00:03.673Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ],
+        "license": "License",
+        "homepage": "https://context-mode.com",
+        "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks. - mksglu/context-mode"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Claude Code",
+          "Token 节省",
+          "开源",
+          "本地化"
+        ],
+        "cover": "",
+        "title": "Context Mode 深度评测：AI 编程上下文管理神器",
+        "ability": [
+          "上下文拦截与压缩",
+          "会话记忆恢复",
+          "沙箱脚本执行",
+          "本地知识库检索",
+          "多平台 MCP 集成"
+        ],
+        "summary": "一个能帮 AI 编程代理节省 90% 上下文 Token、并在本地恢复会话记忆的 MCP 服务器。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度使用 AI 编程的开发者",
+          "处理大型代码库的工程师",
+          "关注 API Token 成本的用户",
+          "多 IDE/CLI 协同工作者",
+          "注重数据隐私的团队"
+        ],
+        "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
       }
     },
     {
@@ -19478,8 +19611,8 @@
       "repo": "earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars": 20820,
-      "forks": 2056,
+      "stars": 20884,
+      "forks": 2063,
       "starsAdded": 2244,
       "createdAt": "2026-10-11T17:00:03.745Z",
       "metaData": {
@@ -19531,6 +19664,63 @@
           "技术极客"
         ],
         "description": "一套面向AI代理的开源CAD技能库，通过自然语言驱动参数化建模，自动生成STEP/URDF/SDF等工程文件，支持从设计、仿真到制造的完整工作流，让CAD像代码一样可版本管理。"
+      }
+    },
+    {
+      "id": "e19369b4-d19a-4297-8819-5d04e5253c72",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 39949,
+      "forks": 4365,
+      "starsAdded": 2217,
+      "createdAt": "2026-10-16T14:00:03.677Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
       }
     },
     {
@@ -19865,8 +20055,8 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
       "language": "TypeScript",
-      "stars": 1448,
-      "forks": 116,
+      "stars": 1486,
+      "forks": 117,
       "starsAdded": 659,
       "createdAt": "2026-10-11T17:00:03.758Z",
       "metaData": {

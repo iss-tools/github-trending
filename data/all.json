@@ -1,6 +1,134 @@
 {
   "all": [
     {
+      "id": "e113d103-9a09-48f7-ab43-9debcaae75f6",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "domain": "github.com",
+      "repo": "hmjz100/LinkSwift",
+      "description": "LinkSwift 是基于油小猴原版脚本二次开发的开源油猴脚本，通过调用网盘官方公开 API 在本地解析文件真实下载地址，再交给专业下载器多线程下载。它不破解限速，速度上限取决于账号权限，但能让你摆脱官方客户端、用上 NAS 远程下载。需注意接口易变和单人维护的风险。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-16T12:10:26.574Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "123pan",
+          "aliyun-drive",
+          "aliyunpan",
+          "aria2",
+          "baidu",
+          "baidu-netdisk",
+          "baidunetdisk",
+          "baidupan",
+          "baiduyun",
+          "guangya-netdisk",
+          "motrix",
+          "quark-netdisk",
+          "tampermonkey",
+          "tampermonkey-script",
+          "tampermonkey-userscript",
+          "tianyi-netdisk",
+          "uc-netdisk",
+          "userscript",
+          "xunlei-netdisk",
+          "yidong-netdisk"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js",
+        "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 - hmjz100/LinkSwift"
+      },
+      "summaryData": {
+        "tags": [
+          "油猴脚本",
+          "网盘直链",
+          "Aria2",
+          "NAS下载",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "LinkSwift 深度评测：GitHub 22.9k Star 的网盘直链下载助手油猴脚本",
+        "ability": [
+          "支持百度、阿里、夸克、天翼等九大主流网盘直链提取",
+          "对接 IDM、Aria2、Motrix、cURL 等多种下载器",
+          "支持 RPC 推送实现 NAS/服务器远程下载",
+          "全本地运行不经过第三方服务器，隐私安全",
+          "开源免费（AGPL-3.0），持续活跃更新"
+        ],
+        "summary": "一个开源油猴脚本，覆盖国内九大网盘，网页端一键提取真实下载直链并推送给 IDM/Aria2 等下载器，摆脱官方客户端绑架。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "浏览器插件"
+        ],
+        "suitable": [
+          "NAS 玩家与资源囤积者",
+          "重度多网盘用户",
+          "开发者与极客",
+          "不想装网盘客户端的学生党和职场人"
+        ],
+        "description": "LinkSwift 是基于油小猴原版脚本二次开发的开源油猴脚本，通过调用网盘官方公开 API 在本地解析文件真实下载地址，再交给专业下载器多线程下载。它不破解限速，速度上限取决于账号权限，但能让你摆脱官方客户端、用上 NAS 远程下载。需注意接口易变和单人维护的风险。"
+      },
+      "type": "project",
+      "dateAdded": "20261016"
+    },
+    {
+      "id": "8344dd9d-d604-4bd3-9c41-ff50022a77e1",
+      "url": "https://github.com/android/skills",
+      "domain": "github.com",
+      "repo": "android/skills",
+      "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-16T12:04:47.274Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to android/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "AI Agent",
+          "Claude Code",
+          "Google官方",
+          "开发效率"
+        ],
+        "cover": "",
+        "title": "android/skills 深度评测：Google 官方给 AI 编程助手的 Android 技能包",
+        "ability": [
+          "提供 13+ 个官方技能，专治 AI 编程短板（R8 优化、AGP 9 升级、CameraX/Nav3 迁移等）",
+          "采用渐进式披露机制按需加载知识，大幅降低 Token 消耗",
+          "跨平台兼容 Claude Code、Cursor、Gemini CLI、Codex 等主流 AI 编码工具",
+          "严格约束 AI 输出格式与行为，输出结构化审计报告且不乱改代码",
+          "支持 android CLI 一键安装、指定 agent 安装与版本更新管理"
+        ],
+        "summary": "Google 官方开源的 AI Agent 技能包，把 AI 最容易写错的 Android 最佳实践封装成可按需加载的 SKILL.md 模块，实测提效 3 倍、省 70% Token。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "用 Claude Code/Cursor 等 AI 工具写 Android 代码的开发者",
+          "维护老项目需迁移升级的 Android 团队",
+          "负责 AGP/Play Billing 大版本升级的工程师",
+          "关注 App 体积与性能优化的团队",
+          "研究 AI Agent 技能体系的技术爱好者"
+        ],
+        "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
+      },
+      "type": "project",
+      "dateAdded": "20261016"
+    },
+    {
       "id": "f8b00a43-2576-4a6c-bae2-b33cd205bb1c",
       "url": "https://github.com/LibreSpark/LibreTV",
       "domain": "github.com",
