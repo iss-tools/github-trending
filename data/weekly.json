@@ -9328,7 +9328,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://orca.dev",
-        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
       },
       "summaryData": {
         "tags": [
@@ -11305,7 +11305,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://orca.dev",
-        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
       },
       "summaryData": {
         "tags": [
@@ -14181,7 +14181,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://orca.dev",
-        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
       },
       "summaryData": {
         "tags": [
@@ -18936,8 +18936,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 302618,
-      "forks": 76565,
+      "stars": 304137,
+      "forks": 76998,
       "starsAdded": 248962,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
@@ -19010,8 +19010,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 40942,
-      "forks": 3678,
+      "stars": 41141,
+      "forks": 3699,
       "starsAdded": 20518,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
@@ -19071,8 +19071,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 31425,
-      "forks": 4979,
+      "stars": 31533,
+      "forks": 4994,
       "starsAdded": 20267,
       "createdAt": "2026-10-16T14:00:03.661Z",
       "metaData": {
@@ -19130,8 +19130,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 294754,
-      "forks": 24720,
+      "stars": 294847,
+      "forks": 24732,
       "starsAdded": 11937,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
@@ -19181,8 +19181,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 56813,
-      "forks": 3613,
+      "stars": 56875,
+      "forks": 3616,
       "starsAdded": 9024,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
@@ -19243,8 +19243,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 90062,
-      "forks": 10074,
+      "stars": 90118,
+      "forks": 10084,
       "starsAdded": 7510,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
@@ -19299,8 +19299,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 65746,
-      "forks": 5934,
+      "stars": 65815,
+      "forks": 5939,
       "starsAdded": 5601,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
@@ -19414,8 +19414,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 30455,
-      "forks": 2184,
+      "stars": 30470,
+      "forks": 2185,
       "starsAdded": 4207,
       "createdAt": "2026-10-16T14:00:03.673Z",
       "metaData": {
@@ -19622,8 +19622,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 41343,
-      "forks": 4446,
+      "stars": 41458,
+      "forks": 4448,
       "starsAdded": 2328,
       "createdAt": "2026-10-16T14:00:03.677Z",
       "metaData": {
@@ -20066,7 +20066,7 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
       "language": "TypeScript",
-      "stars": 1657,
+      "stars": 1677,
       "forks": 136,
       "starsAdded": 779,
       "createdAt": "2026-10-11T17:00:03.758Z",
