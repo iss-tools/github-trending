@@ -74874,9 +74874,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 71986,
-      "forks": 7865,
-      "starsAdded": 2301,
+      "stars": 72367,
+      "forks": 7908,
+      "starsAdded": 2135,
       "createdAt": "2026-10-16T16:00:02.144Z",
       "metaData": {
         "forks": "0",
@@ -74940,6 +74940,262 @@
       }
     },
     {
+      "id": "619f0710-e574-47d9-8db9-1c48245e7b08",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "repo": "MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 49421,
+      "forks": 16779,
+      "starsAdded": 1397,
+      "createdAt": "2026-10-16T16:00:02.147Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "career",
+          "claude-code",
+          "cover-letter",
+          "cv",
+          "interview-preparation",
+          "job-application",
+          "job-hunting",
+          "job-search",
+          "latex",
+          "resume"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search"
+      },
+      "summaryData": {
+        "tags": [
+          "AI求职",
+          "自动化",
+          "简历生成",
+          "开源工具",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "ai-job-search：全栈本地化AI求职助手",
+        "ability": [
+          "智能岗位评估与匹配",
+          "定制化简历与求职信生成",
+          "结构化面试准备与模拟",
+          "全流程申请状态跟踪",
+          "本地优先保障数据隐私"
+        ],
+        "summary": "基于Claude Code的开源求职自动化框架，支持自动抓取、评估、定制简历及模拟面试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生活效率"
+        ],
+        "suitable": [
+          "程序员与AI工程师",
+          "技术岗位求职者",
+          "重视数据隐私的用户",
+          "有一定动手能力的技术爱好者",
+          "希望系统化求职的人"
+        ],
+        "description": "这是一个基于Claude Code的开源AI求职工具，通过本地运行的方式，自动抓取岗位、评估匹配度、生成定制化简历和求职信，并提供面试模拟。它采用双Agent协作模式，将重复性工作自动化，同时让用户保持对求职过程的完全掌控。"
+      }
+    },
+    {
+      "id": "e991ffb6-4bbd-459c-b117-d906b92a86bc",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 41237,
+      "forks": 4436,
+      "starsAdded": 1383,
+      "createdAt": "2026-10-16T16:00:02.107Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
+      "id": "8b489048-23b6-4bd8-9d51-b83816629971",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 282018,
+      "forks": 41940,
+      "starsAdded": 1145,
+      "createdAt": "2026-10-16T16:00:02.117Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
+      }
+    },
+    {
+      "id": "b866dbed-a117-424c-97ab-523d5efd7686",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/stablyai/orca",
+      "repo": "stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars": 94940,
+      "forks": 6079,
+      "starsAdded": 1102,
+      "createdAt": "2026-10-17T14:00:20.466Z",
+      "metaData": {
+        "forks": "5366",
+        "stars": "82726",
+        "topics": [
+          "ade",
+          "agent-ide",
+          "ai-agents",
+          "claude-code",
+          "cli",
+          "codex",
+          "cursor-agent",
+          "devtools",
+          "ghostty",
+          "ide",
+          "mobile-app",
+          "opencode",
+          "orchestration",
+          "parallel-agents",
+          "pi",
+          "terminal",
+          "worktrees",
+          "yc-backed"
+        ],
+        "license": "MIT license",
+        "homepage": "https://onOrca.dev",
+        "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+      },
+      "summaryData": {
+        "tags": [
+          "AI编程",
+          "CLI代理",
+          "多智能体",
+          "Git Worktree",
+          "远程协作"
+        ],
+        "cover": "",
+        "title": "Orca - 多智能体并行AI编程环境",
+        "ability": [
+          "多智能体并行编排",
+          "Git Worktree隔离管理",
+          "内嵌浏览器与终端",
+          "远程协同与移动伴侣",
+          "原生GitHub/Linear集成"
+        ],
+        "summary": "面向AI编码代理的新一代开发环境，支持多CLI代理并行运行与远程协同",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "协作工具"
+        ],
+        "suitable": [
+          "使用CLI代理的开发者",
+          "需要多分支并行的团队",
+          "远程协作用户",
+          "AI重度使用者",
+          "代码评审密集的项目"
+        ],
+        "description": "Orca是一款面向AI编码代理的开发环境，支持在同一界面运行多个CLI代理（Claude、Codex等），为每个代理提供隔离的Git Worktree、终端和浏览器，实现多智能体并行编码与远程协同。"
+      }
+    },
+    {
       "id": "dea8734a-a6c5-418e-b1cc-22caece11db6",
       "dateAdded": "20261017",
       "type": "github-daily",
@@ -74947,9 +75203,9 @@
       "repo": "xerj-org/xerj",
       "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "language": "Rust",
-      "stars": 7284,
-      "forks": 375,
-      "starsAdded": 1648,
+      "stars": 7428,
+      "forks": 383,
+      "starsAdded": 1102,
       "createdAt": "2026-10-16T16:00:02.152Z",
       "metaData": {
         "forks": "0",
@@ -75011,195 +75267,6 @@
           "需要给 AI Agent 添加长期记忆能力的开发者"
         ],
         "description": "XERJ 旨在解决 AI Agent 上下文窗口太小、token 费用高昂的痛点：它把读文件变成查索引，通过 AST 代码索引、多格式自动索引和 Elasticsearch 兼容 API，让 Agent 用千字节级 token 精准定位代码片段。官方实测同任务成本从 3.27 美元降至 1.58 美元，但高并发写入延迟是其已知短板。"
-      }
-    },
-    {
-      "id": "e991ffb6-4bbd-459c-b117-d906b92a86bc",
-      "dateAdded": "20261017",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 41047,
-      "forks": 4429,
-      "starsAdded": 1552,
-      "createdAt": "2026-10-16T16:00:02.107Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "mcp",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://code.claude.com/docs/en/plugins",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件系统",
-          "官方生态",
-          "自动化",
-          "Anthropic"
-        ],
-        "cover": "",
-        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
-        "ability": [
-          "官方策展与安全审核",
-          "插件一键安装与集成",
-          "命令/代理/技能等多种类型",
-          "深度嵌入 Claude 工作流",
-          "标准化与生态规范"
-        ],
-        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "Claude Code/Cowork 重度用户",
-          "开发团队负责人",
-          "企业安全合规部门",
-          "插件开发者",
-          "AI 工作流极客"
-        ],
-        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
-      }
-    },
-    {
-      "id": "510fb164-905d-4dcd-b1b1-d92208fc98a7",
-      "dateAdded": "20261017",
-      "type": "github-daily",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "repo": "K-Dense-AI/scientific-agent-skills",
-      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "language": "Python",
-      "stars": 51844,
-      "forks": 4592,
-      "starsAdded": 1158,
-      "createdAt": "2026-10-16T16:00:02.113Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-scientist",
-          "bioinformatics",
-          "chemoinformatics",
-          "claude",
-          "claude-skills",
-          "claudecode",
-          "clinical-research",
-          "computational-biology",
-          "data-analysis",
-          "drug-discovery",
-          "genomics",
-          "materials-science",
-          "metabolomics",
-          "proteomics",
-          "scientific-computing",
-          "scientific-visualization"
-        ],
-        "license": "MIT license",
-        "homepage": "https://arxiv.org/abs/2609.00065",
-        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "AI Agent",
-          "开源",
-          "科研",
-          "自动化",
-          "生物信息"
-        ],
-        "cover": "",
-        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
-        "ability": [
-          "跨领域科研技能库",
-          "数据库与工具集成",
-          "标准化 Agent 技能配置",
-          "复杂科研工作流自动化",
-          "安全测试与合规扫描"
-        ],
-        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "科研工具"
-        ],
-        "suitable": [
-          "生命科学研究人员",
-          "AI 辅助编程用户",
-          "生物信息工程师",
-          "药企研发团队",
-          "AI 应用开发者"
-        ],
-        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。"
-      }
-    },
-    {
-      "id": "8b489048-23b6-4bd8-9d51-b83816629971",
-      "dateAdded": "20261017",
-      "type": "github-daily",
-      "url": "https://github.com/affaan-m/ECC",
-      "repo": "affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars": 281855,
-      "forks": 41910,
-      "starsAdded": 1057,
-      "createdAt": "2026-10-16T16:00:02.117Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "anthropic",
-          "claude",
-          "claude-code",
-          "developer-tools",
-          "llm",
-          "mcp",
-          "productivity"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ecc.tools",
-        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
-      },
-      "summaryData": {
-        "tags": [
-          "AI",
-          "编程",
-          "自动化",
-          "安全",
-          "开源"
-        ],
-        "cover": "",
-        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
-        "ability": [
-          "跨平台统一配置",
-          "内置工程化工作流",
-          "自动化安全扫描",
-          "模块化技能库",
-          "会话记忆机制"
-        ],
-        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "专业开发团队",
-          "AI 工具重度用户",
-          "开源项目维护者",
-          "企业技术负责人"
-        ],
-        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
       }
     },
     {
@@ -75265,142 +75332,127 @@
       }
     },
     {
-      "id": "619f0710-e574-47d9-8db9-1c48245e7b08",
+      "id": "510fb164-905d-4dcd-b1b1-d92208fc98a7",
       "dateAdded": "20261017",
       "type": "github-daily",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "repo": "MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 49030,
-      "forks": 16716,
-      "starsAdded": 898,
-      "createdAt": "2026-10-16T16:00:02.147Z",
+      "stars": 51990,
+      "forks": 4604,
+      "starsAdded": 879,
+      "createdAt": "2026-10-16T16:00:02.113Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "ai",
-          "ai-agents",
-          "career",
-          "claude-code",
-          "cover-letter",
-          "cv",
-          "interview-preparation",
-          "job-application",
-          "job-hunting",
-          "job-search",
-          "latex",
-          "resume"
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
         ],
         "license": "MIT license",
-        "homepage": "",
-        "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search"
+        "homepage": "https://arxiv.org/abs/2609.00065",
+        "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard. - K-Dense-AI/scientific-agent-skills"
       },
       "summaryData": {
         "tags": [
-          "AI求职",
+          "AI Agent",
+          "开源",
+          "科研",
           "自动化",
-          "简历生成",
-          "开源工具",
-          "Claude"
+          "生物信息"
         ],
         "cover": "",
-        "title": "ai-job-search：全栈本地化AI求职助手",
+        "title": "Scientific Agent Skills：AI 科研领域的万能技能插件库",
         "ability": [
-          "智能岗位评估与匹配",
-          "定制化简历与求职信生成",
-          "结构化面试准备与模拟",
-          "全流程申请状态跟踪",
-          "本地优先保障数据隐私"
+          "跨领域科研技能库",
+          "数据库与工具集成",
+          "标准化 Agent 技能配置",
+          "复杂科研工作流自动化",
+          "安全测试与合规扫描"
         ],
-        "summary": "基于Claude Code的开源求职自动化框架，支持自动抓取、评估、定制简历及模拟面试。",
+        "summary": "内置 163+ 项经过验证的科研技能，一键安装即可将通用 AI 变成生物医药与化学领域的专家助手。",
         "category": [
-          "开发工具",
           "AI 编程",
-          "生活效率"
+          "开发工具",
+          "科研工具"
         ],
         "suitable": [
-          "程序员与AI工程师",
-          "技术岗位求职者",
-          "重视数据隐私的用户",
-          "有一定动手能力的技术爱好者",
-          "希望系统化求职的人"
+          "生命科学研究人员",
+          "AI 辅助编程用户",
+          "生物信息工程师",
+          "药企研发团队",
+          "AI 应用开发者"
         ],
-        "description": "这是一个基于Claude Code的开源AI求职工具，通过本地运行的方式，自动抓取岗位、评估匹配度、生成定制化简历和求职信，并提供面试模拟。它采用双Agent协作模式，将重复性工作自动化，同时让用户保持对求职过程的完全掌控。"
+        "description": "这是一个包含 163+ 个经过严格验证的 AI 技能集合。它将生物医药、化学等领域的专业知识和数据库操作封装成标准化插件，通过简单的安装命令即可赋予 AI 强大的科研能力，极大提升数据分析与文献综述效率。"
       }
     },
     {
-      "id": "8e024489-c955-44b1-86fd-bc1e405709a0",
+      "id": "c74fe563-3719-4bb8-8656-bef9d6dfb794",
       "dateAdded": "20261017",
       "type": "github-daily",
-      "url": "https://github.com/ruvnet/ruflo",
-      "repo": "ruvnet/ruflo",
-      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-      "language": "TypeScript",
-      "stars": 75780,
-      "forks": 8979,
-      "starsAdded": 672,
-      "createdAt": "2026-10-16T16:00:02.127Z",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 53824,
+      "forks": 4886,
+      "starsAdded": 580,
+      "createdAt": "2026-10-16T16:00:02.120Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "agentic-ai",
-          "agentic-framework",
-          "agentic-workflow",
-          "agents",
-          "ai-agents",
-          "ai-assistant",
-          "ai-skills",
-          "autonomous-agents",
-          "claude",
-          "codex",
-          "dsh-plugin",
-          "harness",
-          "mcp-server",
-          "multi-agent",
-          "multi-agent-systems",
-          "npm",
-          "skills",
-          "swarm",
-          "swarm-intelligence",
-          "typescript"
-        ],
-        "license": "MIT license",
-        "homepage": "https://Cognitum.One",
-        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
       },
       "summaryData": {
         "tags": [
-          "Claude",
-          "Multi-Agent",
-          "DevOps",
-          "GitHub",
-          "效率工具"
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
         ],
         "cover": "",
-        "title": "Ruflo: Claude Code 多智能体编排平台评测",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
         "ability": [
-          "多智能体蜂群协作",
-          "跨会话持久化记忆",
-          "智能路由与成本优化",
-          "企业级安全与联邦通信",
-          "自动化测试与代码审计"
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
         ],
-        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
         "category": [
           "开发工具",
-          "AI 编程"
+          "AI 编程",
+          "自动化"
         ],
         "suitable": [
-          "Claude Code 重度用户",
-          "追求高效的开发团队",
-          "DevOps 与运维工程师",
-          "技术架构师",
-          "个人开发者"
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
         ],
-        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
       }
     },
     {
@@ -75474,6 +75526,59 @@
           "不想装网盘客户端的学生党和职场人"
         ],
         "description": "LinkSwift 是基于油小猴原版脚本二次开发的开源油猴脚本，通过调用网盘官方公开 API 在本地解析文件真实下载地址，再交给专业下载器多线程下载。它不破解限速，速度上限取决于账号权限，但能让你摆脱官方客户端、用上 NAS 远程下载。需注意接口易变和单人维护的风险。"
+      }
+    },
+    {
+      "id": "48ea7965-ac43-4904-a370-c85ce108eeeb",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 214695,
+      "forks": 28812,
+      "starsAdded": 488,
+      "createdAt": "2026-10-17T14:00:20.504Z",
+      "metaData": {
+        "forks": "27015",
+        "stars": "206599",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
       }
     },
     {
@@ -75551,83 +75656,76 @@
       }
     },
     {
-      "id": "c74fe563-3719-4bb8-8656-bef9d6dfb794",
+      "id": "8e024489-c955-44b1-86fd-bc1e405709a0",
       "dateAdded": "20261017",
       "type": "github-daily",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 53713,
-      "forks": 4876,
-      "starsAdded": 281,
-      "createdAt": "2026-10-16T16:00:02.120Z",
+      "url": "https://github.com/ruvnet/ruflo",
+      "repo": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 75852,
+      "forks": 8989,
+      "starsAdded": 406,
+      "createdAt": "2026-10-16T16:00:02.127Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One",
+        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
       },
       "summaryData": {
         "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
+          "Claude",
+          "Multi-Agent",
+          "DevOps",
+          "GitHub",
+          "效率工具"
         ],
         "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "title": "Ruflo: Claude Code 多智能体编排平台评测",
         "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
+          "多智能体蜂群协作",
+          "跨会话持久化记忆",
+          "智能路由与成本优化",
+          "企业级安全与联邦通信",
+          "自动化测试与代码审计"
         ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
         "category": [
           "开发工具",
-          "AI 编程",
-          "自动化"
+          "AI 编程"
         ],
         "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
+          "Claude Code 重度用户",
+          "追求高效的开发团队",
+          "DevOps 与运维工程师",
+          "技术架构师",
+          "个人开发者"
         ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
-      }
-    },
-    {
-      "id": "10384556-f6a5-4939-a367-a639b131d69b",
-      "dateAdded": "20261017",
-      "type": "github-daily",
-      "url": "https://github.com/cursor/plugins",
-      "repo": "cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "stars": 12133,
-      "forks": 1178,
-      "starsAdded": 278,
-      "createdAt": "2026-10-16T16:00:02.142Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "",
-        "homepage": "",
-        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "cover": "",
-        "title": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creati",
-        "summary": "# Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”\n> 2026年的编程已不再是单打独斗，Cursor 的插件系统正在将你的 IDE 变成一个能调用无数工具、遵循团队规范、自动执行复杂工作流的“超级开发者”。\n## 🧠 一句话总结\nCursor 的插件系统是其 AI 原生 IDE 的核心扩展能力，它通过**模块化打包规则、技能、代理、命令、MCP 服务器和钩子**，将通用 AI 转化为**能理解你团队内部工具、工作流和代码规范的专属智能助手**，从根本上解决了 AI 编程工具“懂技术但不懂团队”的痛点。\n## 🔍 背景与痛点：为什么需要插件系统？\n### AI 编程的“最后一公里”问题\n目前的 AI 编程工具（如 Cursor, GitHub Copilot）大多基于通用模型训练，它们就像一位才华横溢但刚入职的“通用型程序员”：\n-   **懂语言但不懂行话**：精通各种编程语言的语法和算法，但对你们团队特有的**内部工具链、缩写、代码规范、部署流程**一无所知。\n-   **能写代码但无法协同**：可以生成单个文件或函数，但难以理解**跨文件、跨服务的复杂业务逻辑**，更别提自动触发你们团队的 CI/CD 流程或通知系统。\n-   **是助手而非队员**：需要你手动描述每一个细节，无法像真正的团队成员那样**主动感知项目状态、执行预定义的工作流**。\n### Cursor 插件：团队专属的“入职培训脚本”\nCursor 的插件系统正是为了解决这些问题而生。它提供了一种结构化、可分发的方式，将你团队的**“入职培训手册”** 自动化并注入到 Cursor 的 AI 能力中。通过插件，你可以：\n-   **固化最佳实践**：将代码风格、架构模式、安全审查规则等硬编码为 AI 永久遵循的规则。\n-   **集成内部工具**：让 AI 能够直接与你们自建的 API、数据库、服务总线等“对话”，生成真正可用的代码。\n-   **自动化工作流**：将复杂的、多步骤的任务（如“从设计稿生成代码并部署到预发环境”）封装成 AI 可一键执行的命令。\n```mermaid\nflowchart TD\n    A[通用AI编程工具] --> B[痛点: 懂技术但不懂团队]\n    B --> C[Cursor插件系统]\n    \n    subgraph D [插件核心能力]\n        D1[规则<br>固化代码规范与审查标准]\n        D2[技能<br>封装领域专用能力]\n        D3[代理<br>定制化AI行为与流程]\n        D4[命令<br>一键执行复杂任务]\n        D5[MCP服务器<br>连接外部工具与数据源]\n        D6[钩子<br>响应事件自动化]\n    end\n    \n    C --> D\n    \n    D --> E[收益: 打造专属智能开发团队]\n    \n    subgraph F [实际应用场景]\n        F1[代码审查与安全审计]\n        F2[设计稿转代码]\n        F3[自动化测试与部署]\n        F4[数据查询与分析]\n    end\n    \n    E --> F\n```\n## ⚡ 核心亮点与功能剖析\nCursor 的插件系统并非简单的功能扩展，而是对 AI 能力的深度定制和编排。其核心亮点在于其**模块化设计**和**开放标准**。\n### 1. 模块化组件：构建插件的积木块\n一个 Cursor 插件是一个目录，其中包含一个**清单文件 (`plugin.json`)** 和任意数量的以下组件：\n| 组件 | 格式支持 | 描述 | 典型应用场景 |\n| :--- | :--- | :--- | :--- |\n| **规则 (Rules)** | Cursor Plugins | 持久化的 AI 指导和编码标准 (`.mdc` 文件) | 代码风格、命名规范、安全审查检查项 |\n| **技能 (Skills)** | 两者皆可 | 代理用于复杂任务的专业化能力 | 解析特定日志格式、调用内部API生成代码、自动化测试 |\n| **代理 (Agents)** | Cursor Plugins | 定制的代理配置和提示词 | 设置一个专门用于“性能优化”或“安全审计”的专属AI代理 |\n| **命令 (Commands)** | Cursor Plugins | 代理可执行的命令文件 | 一键“部署到预发环境”、“生成API文档并发布” |\n| **MCP 服务器** | 两者皆可 | 将 Cursor 连接到外部工具或数据源的服务 | 连接公司内部的知识库、数据库、CI/CD系统 |\n| **钩子 (Hooks)** | Cursor Plugins | 用于观察和代理行为的自动化脚本 | 代码提交前自动运行测试、合并PR后自动通知团队 |\n这种设计使得你可以**按需组合**这些组件，构建出从简单的代码规范增强到复杂的多步骤自动化工作流的插件。\n### 2. Agent Plugins 开放标准：生态繁荣的基石\nCursor 支持 **Agent Plugins 开放标准**。这意味着：\n-   **跨平台兼容**：符合该标准的技能和 MCP 服务器不仅能在 Cursor 中使用，理论上也能在其他支持该标准的 AI 工具中运行，促进了生态的繁荣和资源的共享。\n-   **社区生态**：你可以从 [cursor.directory](https://cursor.directory) 浏览和安装由社区贡献的插件和 MCP 服务器，极大地扩展了 Cursor 的能力边界。\n### 3. 开箱即用的官方与第三方插件库\nCursor 提供了丰富的官方插件和与第三方工具的集成，覆盖了开发的全生命周期：\n-   **规划与设计**：Linear (任务管理)、Figma (设计转代码)\n-   **基础设施与服务**：AWS, Cloudflare, Vercel (部署与管理)、Stripe (支付集成)\n-   **数据与分析**：Databricks, Snowflake, Amplitude (查询数据与洞察)\n-   **日常办公**：**Google Workspace** (Gmail, Drive, Calendar) 、GitHub、Zoom、Salesforce 等\n这些插件让你无需离开 IDE，就能调用各种工具，**将编程、沟通、部署、数据分析等流程无缝串联**。\n## 🎯 目标人群与收益：谁最适合用，能得到什么？\n### 核心目标人群\n1.  **中大型团队的技术负责人/架构师**\n    -   **痛点**：团队规模大，代码规范难统一；新员工上手慢，最佳实践难以传承；重复性工作多（如代码审查、部署流程）。\n    -   **收益**：通过插件固化团队标准，让 AI 自动审查代码、生成符合架构的新代码、自动化重复流程，**将个人经验转化为团队资产**，大幅提升整体开发效率和代码质量。\n2.  **有特定技术栈或领域知识的独立开发者/小团队**\n    -   **痛点**：通用 AI 对你使用的冷门框架或业务领域（如区块链、游戏开发、量化交易）不熟悉，生成代码需要大量修改。\n    -   **收益**：开发自己的技能插件，将领域知识“教”给 AI，让 Cursor 成为你专属的领域专家，**大幅减少调试和修改时间**。\n3.  **追求极致效率的全栈开发者/自动化爱好者**\n    -   **痛点**：在多个工具间频繁切换（如 IDE、终端、浏览器、设计工具），工作流被打断。\n    -   **收益**：通过插件将所有工具集成到 IDE 中，用自然语言命令触发一系列自动化操作，**打造个人专属的“开发流水线”**。\n### 具体收益\n| 收益维度 | 说明 | 量化示例（预估） |\n| :--- | :--- | :--- |\n| **开发效率提升** | 自动化重复任务、减少上下文切换、AI 生成更精准的代码。 | **代码生成效率提升 40-60%**，跨文件修改时间从小时级降至分钟级。 |\n| **代码质量与规范统一** | AI 持续遵循规则，自动进行审查和检测。 | **代码规范符合率提升至 95%+**，潜在安全漏洞在生成阶段就被拦截。 |\n| **知识沉淀与传承** | 将最佳实践、业务逻辑、内部工具使用方法固化到插件中。 | **新员工上手时间缩短 50-70%**，团队知识流失风险降低。 |\n| **工作流自动化** | 将复杂、多步骤的任务封装成命令，一键执行。 | 将“从设计稿到预发环境部署”的流程从**数小时缩短至数分钟**。 |\n## ⚖️ 竞品/同类对比：Cursor 插件系统的独特竞争力\n| 特性 | Cursor 插件系统 | GitHub Copilot Extensions | VS Code 插件 (传统) | Claude Code Projects |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **AI 原生深度集成**，旨在从根本上增强 AI 能力本身。 | **功能扩展**，在 AI 补全/聊天基础上增加外部工具调用能力。 | **IDE 功能扩展**，与 AI 能力是两套独立体系。 | **项目级上下文管理**，侧重于让 AI 理解整个项目。 |\n| **AI 能力定制化深度** | ⭐⭐⭐⭐⭐<br>**最深**。可定制系统提示词、注入规则、改变代理行为，**从“根”上定制 AI**。 | ⭐⭐⭐☆<br>较深。可通过 Extensions 调用工具，但核心 AI 模型行为定制能力有限。 | ⭐☆☆☆☆<br>无。传统插件无法改变 AI 模型的输出和行为。 | ⭐⭐⭐⭐☆<br>深。可通过 `.claude` 文件和配置进行项目级定制，但插件化分发机制不如 Cursor 成熟。 |\n| **与 IDE 的集成度** | ⭐⭐⭐⭐⭐<br>**最高**。基于 VS Code 但深度重构，插件与 AI 能力、编辑器UI无缝融合。 | ⭐⭐⭐⭐☆<br>高。作为 VS Code 插件，集成度很高。 | ⭐⭐⭐☆☆<br>中高。是 VS Code 的原生扩展方式，但与 AI 能力割裂。 | ⭐⭐☆☆☆<br>低。主要在终端中运行，与图形化 IDE 集成度较弱。 |\n| **工作流自动化能力** | ⭐⭐⭐⭐⭐<br>**最强**。支持命令、钩子、MCP，可构建复杂的多步骤自动化流程。 | ⭐⭐⭐☆☆<br>中等。可通过触发命令或聊天进行简单操作，但编排复杂工作流能力较弱。 | ⭐⭐☆☆☆<br>弱。传统插件主要提供功能点，难以编排跨工具的复杂流程。 | ⭐⭐⭐☆☆<br>中等。擅长处理代码任务，但与外部工具的自动化集成能力有限。 |\n| **学习曲线与开发门槛** | ⭐⭐⭐☆☆<br>中等。需理解插件结构和各组件概念，开发有一定门槛。 | ⭐⭐☆☆☆<br>较低。Extensions 开发相对简单，但定制 AI 能力深度有限。 | ⭐⭐☆☆☆<br>低。VS Code 插件生态成熟，开发文档完善，入门容易。 | ⭐⭐⭐☆☆<br>中等。需要理解其配置文件和命令行交互方式。 |\n| **独特优势** | **最彻底的 AI 能力定制化**和**最强的 IDE 内工作流自动化**。 | **生态庞大**，与 GitHub 深度集成，补全体验流畅。 | **生态最成熟**，插件数量最多，几乎能找到任何功能扩展。 | **强大的代码库理解能力**，对大型项目维护和重构非常友好。 |\n**🏆 总结：** Cursor 插件系统的**核心竞争力**在于它不是在 IDE 上“贴”一个 AI，而是将 AI **深度融合进 IDE 的每一寸肌理**，并提供了**无与伦比的定制化深度和自动化能力**。它更适合那些希望**深度定制 AI 以符合自身团队规范和工作流**的开发者和团队。\n## ⚠️ 局限与不足：客观存在的挑战\n1.  **学习与开发门槛**：\n    -   要开发一个功能完善的插件，需要理解 **Cursor 的插件架构、各种组件（Rules, Skills, Agents, etc.）的概念和用法**，这对非技术背景或刚入门的开发者来说有一定挑战。\n    -   虽然有官方文档和示例，但社区资源和教程（尤其是中文）相比 VS Code 生态还不够丰富。\n2.  **生态成熟度**：\n    -   Cursor 插件生态仍处于快速发展期，**高质量、经过广泛验证的第三方插件数量**远不如 VS Code 传统插件生态丰富。\n    -   部分插件可能存在**兼容性问题**（如与特定 Cursor 版本或操作系统的兼容性），或者文档不够详尽。\n3.  **对 Cursor IDE 的依赖**：\n    -   插件系统是 Cursor **独有的**，无法在其他 IDE（如 VS Code、JetBrains）上使用。这意味着如果你选择了 Cursor 的插件生态，就必须**完全迁移到 Cursor IDE**。虽然 Cursor 基于 VS Code，配置迁移相对容易，但这是一个重要的决策点。\n4.  **性能与稳定性考虑**：\n    -   过多或复杂的插件（尤其是涉及频繁外部 API 调用的 MCP 服务器）可能会对 IDE 的**性能和响应速度产生一定影响**。\n    -   插件的稳定性依赖于其开发者的维护质量，一个“有毒”的插件可能会导致 IDE 崩溃或行为异常。\n5.  **企业级安全与治理**：\n    -   目前 Cursor 插件主要针对个人和小团队。对于大型企业，**缺乏内置的、细粒度的插件管理和安全控制机制**（如插件市场访问控制、插件审计流程、私有插件分发）。Cursor 官方表示正在构建**私有团队插件市场**以解决此问题，但这目前仍是一个“即将推出”的功能。\n## 🛠️ 上手指南与代码示例：如何创建你的第一个插件\n### 最小化插件结构\n创建一个最基本的插件只需一个目录和一个清单文件。\n```bash\nmy-awesome-plugin/\n├── .cursor-plugin/\n│   └── plugin.json      # 插件清单（必填）\n└── rules/\n    └── my-rule.mdc      # 一个规则文件（示例）\n```\n### 1. 创建清单文件 `plugin.json`\n这是插件的“身份证”，告诉 Cursor 插件叫什么、是谁做的、有什么内容。\n```json\n{\n  \"name\": \"my-awesome-plugin\",\n  \"displayName\": \"我的超棒插件\",\n  \"description\": \"这是我的第一个 Cursor 插件，用于演示规则文件。\",\n  \"author\": \"Your Name\",\n  \"version\": \"0.0.1\",\n  \"license\": \"MIT\",\n  \"categories\": [\"Developer Tools\"],\n  \"contributes\": {\n    \"rules\": [\n      {\n        \"id\": \"my-rule\",\n        \"path\": \"rules/my-rule.mdc\"\n      }\n    ]\n  }\n}\n```\n### 2. 创建规则文件 `rules/my-rule.mdc`\n规则文件使用 Markdown 格式，用于告诉 AI 在编写代码时应该遵循什么规范。\n```markdown\n---\nid: my-rule\nname: 我的代码规范\ndescription: 确保生成的代码符合我的编码风格\n---\n# 代码风格指南\n请遵循以下规范编写所有代码：\n1.  **函数命名**: 使用 camelCase，例如 `getUserData`。\n2.  **变量命名**: 使用 camelCase，例如 `userName`。\n3.  **常量命名**: 使用 UPPER_SNAKE_CASE，例如 `MAX_RETRY_COUNT`。\n4.  **类命名**: 使用 PascalCase，例如 `UserService`。\n5.  **注释**: 所有公共函数必须添加 JSDoc 注释说明其用途、参数和返回值。\n6.  **错误处理**: 所有异步操作必须包含 try-catch 块进行错误处理。\n## 示例\n**不好的示例**:\n```javascript\nfunction get_data(u) {\n  return db.find(u);\n}\n```\n**好的示例**:\n```javascript\n/**\n * 根据用户ID获取用户数据\n * @param {string} userId - 用户ID\n * @returns {Promise<Object>} 用户数据对象\n */\nasync function getUserData(userId) {\n  try {\n    const userData = await db.find({ id: userId });\n    return userData;\n  } catch (error) {\n    console.error('获取用户数据失败:', error);\n    throw error; // 重新抛出错误，由调用方处理\n  }\n}\n```\n```\n### 3. 安装与测试\n1.  在 Cursor 中，打开 `Customize` 页面（快捷键 `Cmd/Ctrl + ,`）。\n2.  在 \"Plugins\" 部分，点击 \"...\" 菜单，选择 \"Install from Directory...\"。\n3.  选择你的 `my-awesome-plugin` 文件夹。\n4.  Cursor 会自动加载插件。你可以在插件列表中看到它。\n5.  **测试规则**：打开一个新文件，用自然语言告诉 Cursor：“帮我写一个获取用户列表的函数”。Cursor 生成的代码应该会遵循你 `my-rule.mdc` 中定义的规范。\n## 🚀 结语与行动建议：终极评判\nCursor 的插件系统是一项**极具前瞻性和颠覆性**的创新。它远不止于“添加功能”，而是开创了一种 **“通过定制化 AI 来重塑和增强整个开发工作流”** 的新范式。\n### ✅ 最终评价\n-   **创新性**：⭐⭐⭐⭐⭐ (前所未有地将 AI 深度定制化与 IDE 工作流自动化融合)\n-   **实用性**：⭐⭐⭐⭐☆ (对中大型团队和追求效率的开发者价值巨大，但对个人小项目可能有些“杀鸡用牛刀”)\n-   **易用性**：⭐⭐⭐☆☆ (开发插件有门槛，但使用和安装官方/社区插件相对简单)\n-   **生态成熟度**：⭐⭐⭐☆☆ (处于快速发展期，潜力巨大，但目前数量和质量有待提升)\n-   **推荐度**：⭐⭐⭐⭐☆ (强烈推荐给技术负责人、团队骨干和追求极致效率的开发者)\n### 🎯 行动建议\n1.  **如果你是个人开发者或小团队**：\n    -   **从使用开始**：先探索 Cursor 插件市场，安装一些官方插件（如 Google Workspace、GitHub）和社区插件，体验一下无缝集成带来的效率提升。\n    -   **创建简单规则**：从写一个 `.cursorrules` 文件或简单的规则插件开始，固化你个人的代码风格，让 AI 更懂你。\n2.  **如果你是技术负责人或架构师**：\n    -   **评估团队价值**：思考团队中最重复、最易出错、最需要传承知识的环节。这些是插件能发挥最大价值的领域。\n    -   **启动试点项目**：选择一个非核心项目或新功能，尝试开发一个团队插件（例如，自动化代码审查流程、集成内部 API）。让一两位经验丰富的开发者主导。\n    -   **规划长期策略**：随着 Cursor 插件生态的成熟，考虑将**插件开发纳入团队的技术基础设施规划**，将其作为提升团队整体研发效能的关键投资。\n3.  **如果你是插件开发者**：\n    -   **贡献社区**：尝试将你开发的高质量插件提交到 [cursor.directory](https://cursor.directory)，丰富社区生态。\n    -   **探索标准**：深入研究 Agent Plugins 开放标准，开发可跨平台使用的技能和 MCP 服务器，提升插件的通用价值。\n> **💡 未来展望**：随着 Cursor 官方对**私有团队插件市场**和更强大的**Agent 编排能力**的投入，我们可以预见，未来的 IDE 将不再只是一个代码编辑器，而是一个**集成了无数AI微智能体、能自动执行复杂工作流的“开发操作中心”**。Cursor 的插件系统正在引领这场变革。\n---\n**💎 总结一下**：Cursor 插件系统是为那些**不满足于通用AI，希望将AI深度定制并融入自己团队DNA的开发者和团队**准备的。它需要一定的学习成本，但一旦驾驭，它将成为你手中最强大的“效率武器”，彻底改变你的编程方式。",
-        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
+        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
       }
     },
     {
@@ -75638,9 +75736,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 8203,
-      "forks": 540,
-      "starsAdded": 36,
+      "stars": 8287,
+      "forks": 547,
+      "starsAdded": 368,
       "createdAt": "2026-10-16T16:00:02.133Z",
       "metaData": {
         "forks": "0",
@@ -75683,6 +75781,136 @@
           "研究 AI Agent 技能体系的技术爱好者"
         ],
         "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
+      }
+    },
+    {
+      "id": "10384556-f6a5-4939-a367-a639b131d69b",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/cursor/plugins",
+      "repo": "cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 12133,
+      "forks": 1178,
+      "starsAdded": 278,
+      "createdAt": "2026-10-16T16:00:02.142Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "cover": "",
+        "title": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creati",
+        "summary": "# Cursor 插件生态深度评测：将 AI 原生 IDE 变成你专属的“开发团队外挂”\n> 2026年的编程已不再是单打独斗，Cursor 的插件系统正在将你的 IDE 变成一个能调用无数工具、遵循团队规范、自动执行复杂工作流的“超级开发者”。\n## 🧠 一句话总结\nCursor 的插件系统是其 AI 原生 IDE 的核心扩展能力，它通过**模块化打包规则、技能、代理、命令、MCP 服务器和钩子**，将通用 AI 转化为**能理解你团队内部工具、工作流和代码规范的专属智能助手**，从根本上解决了 AI 编程工具“懂技术但不懂团队”的痛点。\n## 🔍 背景与痛点：为什么需要插件系统？\n### AI 编程的“最后一公里”问题\n目前的 AI 编程工具（如 Cursor, GitHub Copilot）大多基于通用模型训练，它们就像一位才华横溢但刚入职的“通用型程序员”：\n-   **懂语言但不懂行话**：精通各种编程语言的语法和算法，但对你们团队特有的**内部工具链、缩写、代码规范、部署流程**一无所知。\n-   **能写代码但无法协同**：可以生成单个文件或函数，但难以理解**跨文件、跨服务的复杂业务逻辑**，更别提自动触发你们团队的 CI/CD 流程或通知系统。\n-   **是助手而非队员**：需要你手动描述每一个细节，无法像真正的团队成员那样**主动感知项目状态、执行预定义的工作流**。\n### Cursor 插件：团队专属的“入职培训脚本”\nCursor 的插件系统正是为了解决这些问题而生。它提供了一种结构化、可分发的方式，将你团队的**“入职培训手册”** 自动化并注入到 Cursor 的 AI 能力中。通过插件，你可以：\n-   **固化最佳实践**：将代码风格、架构模式、安全审查规则等硬编码为 AI 永久遵循的规则。\n-   **集成内部工具**：让 AI 能够直接与你们自建的 API、数据库、服务总线等“对话”，生成真正可用的代码。\n-   **自动化工作流**：将复杂的、多步骤的任务（如“从设计稿生成代码并部署到预发环境”）封装成 AI 可一键执行的命令。\n```mermaid\nflowchart TD\n    A[通用AI编程工具] --> B[痛点: 懂技术但不懂团队]\n    B --> C[Cursor插件系统]\n    \n    subgraph D [插件核心能力]\n        D1[规则<br>固化代码规范与审查标准]\n        D2[技能<br>封装领域专用能力]\n        D3[代理<br>定制化AI行为与流程]\n        D4[命令<br>一键执行复杂任务]\n        D5[MCP服务器<br>连接外部工具与数据源]\n        D6[钩子<br>响应事件自动化]\n    end\n    \n    C --> D\n    \n    D --> E[收益: 打造专属智能开发团队]\n    \n    subgraph F [实际应用场景]\n        F1[代码审查与安全审计]\n        F2[设计稿转代码]\n        F3[自动化测试与部署]\n        F4[数据查询与分析]\n    end\n    \n    E --> F\n```\n## ⚡ 核心亮点与功能剖析\nCursor 的插件系统并非简单的功能扩展，而是对 AI 能力的深度定制和编排。其核心亮点在于其**模块化设计**和**开放标准**。\n### 1. 模块化组件：构建插件的积木块\n一个 Cursor 插件是一个目录，其中包含一个**清单文件 (`plugin.json`)** 和任意数量的以下组件：\n| 组件 | 格式支持 | 描述 | 典型应用场景 |\n| :--- | :--- | :--- | :--- |\n| **规则 (Rules)** | Cursor Plugins | 持久化的 AI 指导和编码标准 (`.mdc` 文件) | 代码风格、命名规范、安全审查检查项 |\n| **技能 (Skills)** | 两者皆可 | 代理用于复杂任务的专业化能力 | 解析特定日志格式、调用内部API生成代码、自动化测试 |\n| **代理 (Agents)** | Cursor Plugins | 定制的代理配置和提示词 | 设置一个专门用于“性能优化”或“安全审计”的专属AI代理 |\n| **命令 (Commands)** | Cursor Plugins | 代理可执行的命令文件 | 一键“部署到预发环境”、“生成API文档并发布” |\n| **MCP 服务器** | 两者皆可 | 将 Cursor 连接到外部工具或数据源的服务 | 连接公司内部的知识库、数据库、CI/CD系统 |\n| **钩子 (Hooks)** | Cursor Plugins | 用于观察和代理行为的自动化脚本 | 代码提交前自动运行测试、合并PR后自动通知团队 |\n这种设计使得你可以**按需组合**这些组件，构建出从简单的代码规范增强到复杂的多步骤自动化工作流的插件。\n### 2. Agent Plugins 开放标准：生态繁荣的基石\nCursor 支持 **Agent Plugins 开放标准**。这意味着：\n-   **跨平台兼容**：符合该标准的技能和 MCP 服务器不仅能在 Cursor 中使用，理论上也能在其他支持该标准的 AI 工具中运行，促进了生态的繁荣和资源的共享。\n-   **社区生态**：你可以从 [cursor.directory](https://cursor.directory) 浏览和安装由社区贡献的插件和 MCP 服务器，极大地扩展了 Cursor 的能力边界。\n### 3. 开箱即用的官方与第三方插件库\nCursor 提供了丰富的官方插件和与第三方工具的集成，覆盖了开发的全生命周期：\n-   **规划与设计**：Linear (任务管理)、Figma (设计转代码)\n-   **基础设施与服务**：AWS, Cloudflare, Vercel (部署与管理)、Stripe (支付集成)\n-   **数据与分析**：Databricks, Snowflake, Amplitude (查询数据与洞察)\n-   **日常办公**：**Google Workspace** (Gmail, Drive, Calendar) 、GitHub、Zoom、Salesforce 等\n这些插件让你无需离开 IDE，就能调用各种工具，**将编程、沟通、部署、数据分析等流程无缝串联**。\n## 🎯 目标人群与收益：谁最适合用，能得到什么？\n### 核心目标人群\n1.  **中大型团队的技术负责人/架构师**\n    -   **痛点**：团队规模大，代码规范难统一；新员工上手慢，最佳实践难以传承；重复性工作多（如代码审查、部署流程）。\n    -   **收益**：通过插件固化团队标准，让 AI 自动审查代码、生成符合架构的新代码、自动化重复流程，**将个人经验转化为团队资产**，大幅提升整体开发效率和代码质量。\n2.  **有特定技术栈或领域知识的独立开发者/小团队**\n    -   **痛点**：通用 AI 对你使用的冷门框架或业务领域（如区块链、游戏开发、量化交易）不熟悉，生成代码需要大量修改。\n    -   **收益**：开发自己的技能插件，将领域知识“教”给 AI，让 Cursor 成为你专属的领域专家，**大幅减少调试和修改时间**。\n3.  **追求极致效率的全栈开发者/自动化爱好者**\n    -   **痛点**：在多个工具间频繁切换（如 IDE、终端、浏览器、设计工具），工作流被打断。\n    -   **收益**：通过插件将所有工具集成到 IDE 中，用自然语言命令触发一系列自动化操作，**打造个人专属的“开发流水线”**。\n### 具体收益\n| 收益维度 | 说明 | 量化示例（预估） |\n| :--- | :--- | :--- |\n| **开发效率提升** | 自动化重复任务、减少上下文切换、AI 生成更精准的代码。 | **代码生成效率提升 40-60%**，跨文件修改时间从小时级降至分钟级。 |\n| **代码质量与规范统一** | AI 持续遵循规则，自动进行审查和检测。 | **代码规范符合率提升至 95%+**，潜在安全漏洞在生成阶段就被拦截。 |\n| **知识沉淀与传承** | 将最佳实践、业务逻辑、内部工具使用方法固化到插件中。 | **新员工上手时间缩短 50-70%**，团队知识流失风险降低。 |\n| **工作流自动化** | 将复杂、多步骤的任务封装成命令，一键执行。 | 将“从设计稿到预发环境部署”的流程从**数小时缩短至数分钟**。 |\n## ⚖️ 竞品/同类对比：Cursor 插件系统的独特竞争力\n| 特性 | Cursor 插件系统 | GitHub Copilot Extensions | VS Code 插件 (传统) | Claude Code Projects |\n| :--- | :--- | :--- | :--- | :--- |\n| **核心定位** | **AI 原生深度集成**，旨在从根本上增强 AI 能力本身。 | **功能扩展**，在 AI 补全/聊天基础上增加外部工具调用能力。 | **IDE 功能扩展**，与 AI 能力是两套独立体系。 | **项目级上下文管理**，侧重于让 AI 理解整个项目。 |\n| **AI 能力定制化深度** | ⭐⭐⭐⭐⭐<br>**最深**。可定制系统提示词、注入规则、改变代理行为，**从“根”上定制 AI**。 | ⭐⭐⭐☆<br>较深。可通过 Extensions 调用工具，但核心 AI 模型行为定制能力有限。 | ⭐☆☆☆☆<br>无。传统插件无法改变 AI 模型的输出和行为。 | ⭐⭐⭐⭐☆<br>深。可通过 `.claude` 文件和配置进行项目级定制，但插件化分发机制不如 Cursor 成熟。 |\n| **与 IDE 的集成度** | ⭐⭐⭐⭐⭐<br>**最高**。基于 VS Code 但深度重构，插件与 AI 能力、编辑器UI无缝融合。 | ⭐⭐⭐⭐☆<br>高。作为 VS Code 插件，集成度很高。 | ⭐⭐⭐☆☆<br>中高。是 VS Code 的原生扩展方式，但与 AI 能力割裂。 | ⭐⭐☆☆☆<br>低。主要在终端中运行，与图形化 IDE 集成度较弱。 |\n| **工作流自动化能力** | ⭐⭐⭐⭐⭐<br>**最强**。支持命令、钩子、MCP，可构建复杂的多步骤自动化流程。 | ⭐⭐⭐☆☆<br>中等。可通过触发命令或聊天进行简单操作，但编排复杂工作流能力较弱。 | ⭐⭐☆☆☆<br>弱。传统插件主要提供功能点，难以编排跨工具的复杂流程。 | ⭐⭐⭐☆☆<br>中等。擅长处理代码任务，但与外部工具的自动化集成能力有限。 |\n| **学习曲线与开发门槛** | ⭐⭐⭐☆☆<br>中等。需理解插件结构和各组件概念，开发有一定门槛。 | ⭐⭐☆☆☆<br>较低。Extensions 开发相对简单，但定制 AI 能力深度有限。 | ⭐⭐☆☆☆<br>低。VS Code 插件生态成熟，开发文档完善，入门容易。 | ⭐⭐⭐☆☆<br>中等。需要理解其配置文件和命令行交互方式。 |\n| **独特优势** | **最彻底的 AI 能力定制化**和**最强的 IDE 内工作流自动化**。 | **生态庞大**，与 GitHub 深度集成，补全体验流畅。 | **生态最成熟**，插件数量最多，几乎能找到任何功能扩展。 | **强大的代码库理解能力**，对大型项目维护和重构非常友好。 |\n**🏆 总结：** Cursor 插件系统的**核心竞争力**在于它不是在 IDE 上“贴”一个 AI，而是将 AI **深度融合进 IDE 的每一寸肌理**，并提供了**无与伦比的定制化深度和自动化能力**。它更适合那些希望**深度定制 AI 以符合自身团队规范和工作流**的开发者和团队。\n## ⚠️ 局限与不足：客观存在的挑战\n1.  **学习与开发门槛**：\n    -   要开发一个功能完善的插件，需要理解 **Cursor 的插件架构、各种组件（Rules, Skills, Agents, etc.）的概念和用法**，这对非技术背景或刚入门的开发者来说有一定挑战。\n    -   虽然有官方文档和示例，但社区资源和教程（尤其是中文）相比 VS Code 生态还不够丰富。\n2.  **生态成熟度**：\n    -   Cursor 插件生态仍处于快速发展期，**高质量、经过广泛验证的第三方插件数量**远不如 VS Code 传统插件生态丰富。\n    -   部分插件可能存在**兼容性问题**（如与特定 Cursor 版本或操作系统的兼容性），或者文档不够详尽。\n3.  **对 Cursor IDE 的依赖**：\n    -   插件系统是 Cursor **独有的**，无法在其他 IDE（如 VS Code、JetBrains）上使用。这意味着如果你选择了 Cursor 的插件生态，就必须**完全迁移到 Cursor IDE**。虽然 Cursor 基于 VS Code，配置迁移相对容易，但这是一个重要的决策点。\n4.  **性能与稳定性考虑**：\n    -   过多或复杂的插件（尤其是涉及频繁外部 API 调用的 MCP 服务器）可能会对 IDE 的**性能和响应速度产生一定影响**。\n    -   插件的稳定性依赖于其开发者的维护质量，一个“有毒”的插件可能会导致 IDE 崩溃或行为异常。\n5.  **企业级安全与治理**：\n    -   目前 Cursor 插件主要针对个人和小团队。对于大型企业，**缺乏内置的、细粒度的插件管理和安全控制机制**（如插件市场访问控制、插件审计流程、私有插件分发）。Cursor 官方表示正在构建**私有团队插件市场**以解决此问题，但这目前仍是一个“即将推出”的功能。\n## 🛠️ 上手指南与代码示例：如何创建你的第一个插件\n### 最小化插件结构\n创建一个最基本的插件只需一个目录和一个清单文件。\n```bash\nmy-awesome-plugin/\n├── .cursor-plugin/\n│   └── plugin.json      # 插件清单（必填）\n└── rules/\n    └── my-rule.mdc      # 一个规则文件（示例）\n```\n### 1. 创建清单文件 `plugin.json`\n这是插件的“身份证”，告诉 Cursor 插件叫什么、是谁做的、有什么内容。\n```json\n{\n  \"name\": \"my-awesome-plugin\",\n  \"displayName\": \"我的超棒插件\",\n  \"description\": \"这是我的第一个 Cursor 插件，用于演示规则文件。\",\n  \"author\": \"Your Name\",\n  \"version\": \"0.0.1\",\n  \"license\": \"MIT\",\n  \"categories\": [\"Developer Tools\"],\n  \"contributes\": {\n    \"rules\": [\n      {\n        \"id\": \"my-rule\",\n        \"path\": \"rules/my-rule.mdc\"\n      }\n    ]\n  }\n}\n```\n### 2. 创建规则文件 `rules/my-rule.mdc`\n规则文件使用 Markdown 格式，用于告诉 AI 在编写代码时应该遵循什么规范。\n```markdown\n---\nid: my-rule\nname: 我的代码规范\ndescription: 确保生成的代码符合我的编码风格\n---\n# 代码风格指南\n请遵循以下规范编写所有代码：\n1.  **函数命名**: 使用 camelCase，例如 `getUserData`。\n2.  **变量命名**: 使用 camelCase，例如 `userName`。\n3.  **常量命名**: 使用 UPPER_SNAKE_CASE，例如 `MAX_RETRY_COUNT`。\n4.  **类命名**: 使用 PascalCase，例如 `UserService`。\n5.  **注释**: 所有公共函数必须添加 JSDoc 注释说明其用途、参数和返回值。\n6.  **错误处理**: 所有异步操作必须包含 try-catch 块进行错误处理。\n## 示例\n**不好的示例**:\n```javascript\nfunction get_data(u) {\n  return db.find(u);\n}\n```\n**好的示例**:\n```javascript\n/**\n * 根据用户ID获取用户数据\n * @param {string} userId - 用户ID\n * @returns {Promise<Object>} 用户数据对象\n */\nasync function getUserData(userId) {\n  try {\n    const userData = await db.find({ id: userId });\n    return userData;\n  } catch (error) {\n    console.error('获取用户数据失败:', error);\n    throw error; // 重新抛出错误，由调用方处理\n  }\n}\n```\n```\n### 3. 安装与测试\n1.  在 Cursor 中，打开 `Customize` 页面（快捷键 `Cmd/Ctrl + ,`）。\n2.  在 \"Plugins\" 部分，点击 \"...\" 菜单，选择 \"Install from Directory...\"。\n3.  选择你的 `my-awesome-plugin` 文件夹。\n4.  Cursor 会自动加载插件。你可以在插件列表中看到它。\n5.  **测试规则**：打开一个新文件，用自然语言告诉 Cursor：“帮我写一个获取用户列表的函数”。Cursor 生成的代码应该会遵循你 `my-rule.mdc` 中定义的规范。\n## 🚀 结语与行动建议：终极评判\nCursor 的插件系统是一项**极具前瞻性和颠覆性**的创新。它远不止于“添加功能”，而是开创了一种 **“通过定制化 AI 来重塑和增强整个开发工作流”** 的新范式。\n### ✅ 最终评价\n-   **创新性**：⭐⭐⭐⭐⭐ (前所未有地将 AI 深度定制化与 IDE 工作流自动化融合)\n-   **实用性**：⭐⭐⭐⭐☆ (对中大型团队和追求效率的开发者价值巨大，但对个人小项目可能有些“杀鸡用牛刀”)\n-   **易用性**：⭐⭐⭐☆☆ (开发插件有门槛，但使用和安装官方/社区插件相对简单)\n-   **生态成熟度**：⭐⭐⭐☆☆ (处于快速发展期，潜力巨大，但目前数量和质量有待提升)\n-   **推荐度**：⭐⭐⭐⭐☆ (强烈推荐给技术负责人、团队骨干和追求极致效率的开发者)\n### 🎯 行动建议\n1.  **如果你是个人开发者或小团队**：\n    -   **从使用开始**：先探索 Cursor 插件市场，安装一些官方插件（如 Google Workspace、GitHub）和社区插件，体验一下无缝集成带来的效率提升。\n    -   **创建简单规则**：从写一个 `.cursorrules` 文件或简单的规则插件开始，固化你个人的代码风格，让 AI 更懂你。\n2.  **如果你是技术负责人或架构师**：\n    -   **评估团队价值**：思考团队中最重复、最易出错、最需要传承知识的环节。这些是插件能发挥最大价值的领域。\n    -   **启动试点项目**：选择一个非核心项目或新功能，尝试开发一个团队插件（例如，自动化代码审查流程、集成内部 API）。让一两位经验丰富的开发者主导。\n    -   **规划长期策略**：随着 Cursor 插件生态的成熟，考虑将**插件开发纳入团队的技术基础设施规划**，将其作为提升团队整体研发效能的关键投资。\n3.  **如果你是插件开发者**：\n    -   **贡献社区**：尝试将你开发的高质量插件提交到 [cursor.directory](https://cursor.directory)，丰富社区生态。\n    -   **探索标准**：深入研究 Agent Plugins 开放标准，开发可跨平台使用的技能和 MCP 服务器，提升插件的通用价值。\n> **💡 未来展望**：随着 Cursor 官方对**私有团队插件市场**和更强大的**Agent 编排能力**的投入，我们可以预见，未来的 IDE 将不再只是一个代码编辑器，而是一个**集成了无数AI微智能体、能自动执行复杂工作流的“开发操作中心”**。Cursor 的插件系统正在引领这场变革。\n---\n**💎 总结一下**：Cursor 插件系统是为那些**不满足于通用AI，希望将AI深度定制并融入自己团队DNA的开发者和团队**准备的。它需要一定的学习成本，但一旦驾驭，它将成为你手中最强大的“效率武器”，彻底改变你的编程方式。",
+        "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub."
+      }
+    },
+    {
+      "id": "19a318c7-2aed-420d-a9fd-aeeb04a6f43a",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 9718,
+      "forks": 699,
+      "starsAdded": 208,
+      "createdAt": "2026-10-17T14:00:20.449Z",
+      "metaData": {
+        "forks": "582",
+        "stars": "8615",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
+      "id": "e4c75473-1f1a-4b22-aeb8-d43305c5eaad",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-code",
+      "repo": "anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "stars": 151413,
+      "forks": 26862,
+      "starsAdded": 168,
+      "createdAt": "2026-10-17T14:00:20.481Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "License",
+        "homepage": "https://code.claude.com/docs/en/overview",
+        "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. - anthropics/claude-code"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "智能体",
+          "CLI工具",
+          "自动化",
+          "Git集成"
+        ],
+        "cover": "",
+        "title": "Claude Code 深度评测：Anthropic 官方出品的终端型智能编程伙伴",
+        "ability": [
+          "终端原生CLI本地云双模式",
+          "多端统一引擎终端IDE桌面Web",
+          "智能理解项目与多文件编辑",
+          "从Issue到PR的自动化闭环",
+          "可扩展插件与指令系统"
+        ],
+        "summary": "用自然语言在终端/IDE/网页中直接改代码、跑命令、操办 Git，从 Issue 到 PR 一键完成。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "个人开发者/独立黑客",
+          "小团队/初创公司",
+          "开源维护者",
+          "新人/交接场景",
+          "习惯终端的开发者"
+        ],
+        "description": "Claude Code 是 Anthropic 官方出品的智能编程工具，通过自然语言在终端、IDE、网页中直接操作代码。它支持多文件联动编辑、Git 工作流自动化、从 Issue 到 PR 的完整闭环，并通过云端会话实现跨设备协作，是提升开发效率的强大助手。"
       }
     }
   ]
