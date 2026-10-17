@@ -74874,8 +74874,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 70669,
-      "forks": 7745,
+      "stars": 71128,
+      "forks": 7778,
       "starsAdded": 2301,
       "createdAt": "2026-10-16T16:00:02.144Z",
       "metaData": {
@@ -74947,9 +74947,9 @@
       "repo": "xerj-org/xerj",
       "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "language": "Rust",
-      "stars": 6748,
-      "forks": 341,
-      "starsAdded": 1647,
+      "stars": 6913,
+      "forks": 352,
+      "starsAdded": 1648,
       "createdAt": "2026-10-16T16:00:02.152Z",
       "metaData": {
         "forks": "0",
@@ -75021,8 +75021,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 40269,
-      "forks": 4386,
+      "stars": 40520,
+      "forks": 4401,
       "starsAdded": 1552,
       "createdAt": "2026-10-16T16:00:02.107Z",
       "metaData": {
@@ -75078,8 +75078,8 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 51321,
-      "forks": 4550,
+      "stars": 51483,
+      "forks": 4560,
       "starsAdded": 1158,
       "createdAt": "2026-10-16T16:00:02.113Z",
       "metaData": {
@@ -75149,8 +75149,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 281248,
-      "forks": 41819,
+      "stars": 281485,
+      "forks": 41849,
       "starsAdded": 1057,
       "createdAt": "2026-10-16T16:00:02.117Z",
       "metaData": {
@@ -75210,8 +75210,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 300554,
-      "forks": 26839,
+      "stars": 300675,
+      "forks": 26843,
       "starsAdded": 973,
       "createdAt": "2026-10-16T16:00:02.140Z",
       "metaData": {
@@ -75272,9 +75272,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 48191,
-      "forks": 16576,
-      "starsAdded": 879,
+      "stars": 48486,
+      "forks": 16628,
+      "starsAdded": 898,
       "createdAt": "2026-10-16T16:00:02.147Z",
       "metaData": {
         "forks": "0",
@@ -75331,79 +75331,6 @@
       }
     },
     {
-      "id": "21ad11d1-599d-4bed-9ede-06bc7a3317c9",
-      "dateAdded": "20261017",
-      "type": "github-daily",
-      "url": "https://github.com/hmjz100/LinkSwift",
-      "repo": "hmjz100/LinkSwift",
-      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
-      "language": "JavaScript",
-      "stars": 23577,
-      "forks": 1431,
-      "starsAdded": 702,
-      "createdAt": "2026-10-16T16:00:02.150Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "123pan",
-          "aliyun-drive",
-          "aliyunpan",
-          "aria2",
-          "baidu",
-          "baidu-netdisk",
-          "baidunetdisk",
-          "baidupan",
-          "baiduyun",
-          "guangya-netdisk",
-          "motrix",
-          "quark-netdisk",
-          "tampermonkey",
-          "tampermonkey-script",
-          "tampermonkey-userscript",
-          "tianyi-netdisk",
-          "uc-netdisk",
-          "userscript",
-          "xunlei-netdisk",
-          "yidong-netdisk"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js",
-        "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 - hmjz100/LinkSwift"
-      },
-      "summaryData": {
-        "tags": [
-          "油猴脚本",
-          "网盘直链",
-          "Aria2",
-          "NAS下载",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "LinkSwift 深度评测：GitHub 22.9k Star 的网盘直链下载助手油猴脚本",
-        "ability": [
-          "支持百度、阿里、夸克、天翼等九大主流网盘直链提取",
-          "对接 IDM、Aria2、Motrix、cURL 等多种下载器",
-          "支持 RPC 推送实现 NAS/服务器远程下载",
-          "全本地运行不经过第三方服务器，隐私安全",
-          "开源免费（AGPL-3.0），持续活跃更新"
-        ],
-        "summary": "一个开源油猴脚本，覆盖国内九大网盘，网页端一键提取真实下载直链并推送给 IDM/Aria2 等下载器，摆脱官方客户端绑架。",
-        "category": [
-          "开发工具",
-          "效率工具",
-          "浏览器插件"
-        ],
-        "suitable": [
-          "NAS 玩家与资源囤积者",
-          "重度多网盘用户",
-          "开发者与极客",
-          "不想装网盘客户端的学生党和职场人"
-        ],
-        "description": "LinkSwift 是基于油小猴原版脚本二次开发的开源油猴脚本，通过调用网盘官方公开 API 在本地解析文件真实下载地址，再交给专业下载器多线程下载。它不破解限速，速度上限取决于账号权限，但能让你摆脱官方客户端、用上 NAS 远程下载。需注意接口易变和单人维护的风险。"
-      }
-    },
-    {
       "id": "8e024489-c955-44b1-86fd-bc1e405709a0",
       "dateAdded": "20261017",
       "type": "github-daily",
@@ -75411,8 +75338,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 75536,
-      "forks": 8959,
+      "stars": 75623,
+      "forks": 8965,
       "starsAdded": 672,
       "createdAt": "2026-10-16T16:00:02.127Z",
       "metaData": {
@@ -75477,6 +75404,79 @@
       }
     },
     {
+      "id": "21ad11d1-599d-4bed-9ede-06bc7a3317c9",
+      "dateAdded": "20261017",
+      "type": "github-daily",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "repo": "hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 23661,
+      "forks": 1435,
+      "starsAdded": 538,
+      "createdAt": "2026-10-16T16:00:02.150Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "123pan",
+          "aliyun-drive",
+          "aliyunpan",
+          "aria2",
+          "baidu",
+          "baidu-netdisk",
+          "baidunetdisk",
+          "baidupan",
+          "baiduyun",
+          "guangya-netdisk",
+          "motrix",
+          "quark-netdisk",
+          "tampermonkey",
+          "tampermonkey-script",
+          "tampermonkey-userscript",
+          "tianyi-netdisk",
+          "uc-netdisk",
+          "userscript",
+          "xunlei-netdisk",
+          "yidong-netdisk"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js",
+        "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 - hmjz100/LinkSwift"
+      },
+      "summaryData": {
+        "tags": [
+          "油猴脚本",
+          "网盘直链",
+          "Aria2",
+          "NAS下载",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "LinkSwift 深度评测：GitHub 22.9k Star 的网盘直链下载助手油猴脚本",
+        "ability": [
+          "支持百度、阿里、夸克、天翼等九大主流网盘直链提取",
+          "对接 IDM、Aria2、Motrix、cURL 等多种下载器",
+          "支持 RPC 推送实现 NAS/服务器远程下载",
+          "全本地运行不经过第三方服务器，隐私安全",
+          "开源免费（AGPL-3.0），持续活跃更新"
+        ],
+        "summary": "一个开源油猴脚本，覆盖国内九大网盘，网页端一键提取真实下载直链并推送给 IDM/Aria2 等下载器，摆脱官方客户端绑架。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "浏览器插件"
+        ],
+        "suitable": [
+          "NAS 玩家与资源囤积者",
+          "重度多网盘用户",
+          "开发者与极客",
+          "不想装网盘客户端的学生党和职场人"
+        ],
+        "description": "LinkSwift 是基于油小猴原版脚本二次开发的开源油猴脚本，通过调用网盘官方公开 API 在本地解析文件真实下载地址，再交给专业下载器多线程下载。它不破解限速，速度上限取决于账号权限，但能让你摆脱官方客户端、用上 NAS 远程下载。需注意接口易变和单人维护的风险。"
+      }
+    },
+    {
       "id": "e3b0f7f6-228b-4a13-9faa-552216b088d6",
       "dateAdded": "20261017",
       "type": "github-daily",
@@ -75484,8 +75484,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 30137,
-      "forks": 2124,
+      "stars": 30221,
+      "forks": 2125,
       "starsAdded": 449,
       "createdAt": "2026-10-16T16:00:02.123Z",
       "metaData": {
@@ -75558,9 +75558,9 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 53369,
-      "forks": 4837,
-      "starsAdded": 323,
+      "stars": 53484,
+      "forks": 4843,
+      "starsAdded": 281,
       "createdAt": "2026-10-16T16:00:02.120Z",
       "metaData": {
         "forks": "0",
@@ -75611,9 +75611,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11865,
-      "forks": 1155,
-      "starsAdded": 282,
+      "stars": 11939,
+      "forks": 1161,
+      "starsAdded": 278,
       "createdAt": "2026-10-16T16:00:02.142Z",
       "metaData": {
         "forks": "0",
@@ -75638,9 +75638,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 7987,
-      "forks": 530,
-      "starsAdded": 35,
+      "stars": 8058,
+      "forks": 535,
+      "starsAdded": 36,
       "createdAt": "2026-10-16T16:00:02.133Z",
       "metaData": {
         "forks": "0",
