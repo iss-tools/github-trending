@@ -75925,9 +75925,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 73216,
-      "forks": 8009,
-      "starsAdded": 2135,
+      "stars": 73301,
+      "forks": 8020,
+      "starsAdded": 2125,
       "createdAt": "2026-10-17T16:00:02.212Z",
       "metaData": {
         "forks": "0",
@@ -75991,6 +75991,63 @@
       }
     },
     {
+      "id": "376fa2b9-894e-462e-865a-717d851933bf",
+      "dateAdded": "20261018",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 41721,
+      "forks": 4463,
+      "starsAdded": 1397,
+      "createdAt": "2026-10-17T16:00:02.066Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
       "id": "07f12f56-86a1-4fbd-9ac6-93a7ec634fec",
       "dateAdded": "20261018",
       "type": "github-daily",
@@ -75998,9 +76055,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 50288,
-      "forks": 16921,
-      "starsAdded": 1397,
+      "stars": 50354,
+      "forks": 16926,
+      "starsAdded": 1365,
       "createdAt": "2026-10-17T16:00:02.097Z",
       "metaData": {
         "forks": "0",
@@ -76057,124 +76114,6 @@
       }
     },
     {
-      "id": "376fa2b9-894e-462e-865a-717d851933bf",
-      "dateAdded": "20261018",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 41683,
-      "forks": 4461,
-      "starsAdded": 1383,
-      "createdAt": "2026-10-17T16:00:02.066Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "mcp",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://code.claude.com/docs/en/plugins",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件系统",
-          "官方生态",
-          "自动化",
-          "Anthropic"
-        ],
-        "cover": "",
-        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
-        "ability": [
-          "官方策展与安全审核",
-          "插件一键安装与集成",
-          "命令/代理/技能等多种类型",
-          "深度嵌入 Claude 工作流",
-          "标准化与生态规范"
-        ],
-        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "Claude Code/Cowork 重度用户",
-          "开发团队负责人",
-          "企业安全合规部门",
-          "插件开发者",
-          "AI 工作流极客"
-        ],
-        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
-      }
-    },
-    {
-      "id": "5b04a3c2-0789-4486-acba-6e4dbebe2d06",
-      "dateAdded": "20261018",
-      "type": "github-daily",
-      "url": "https://github.com/affaan-m/ECC",
-      "repo": "affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars": 282443,
-      "forks": 41979,
-      "starsAdded": 1145,
-      "createdAt": "2026-10-17T16:00:02.111Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "anthropic",
-          "claude",
-          "claude-code",
-          "developer-tools",
-          "llm",
-          "mcp",
-          "productivity"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ecc.tools",
-        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
-      },
-      "summaryData": {
-        "tags": [
-          "AI",
-          "编程",
-          "自动化",
-          "安全",
-          "开源"
-        ],
-        "cover": "",
-        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
-        "ability": [
-          "跨平台统一配置",
-          "内置工程化工作流",
-          "自动化安全扫描",
-          "模块化技能库",
-          "会话记忆机制"
-        ],
-        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "专业开发团队",
-          "AI 工具重度用户",
-          "开源项目维护者",
-          "企业技术负责人"
-        ],
-        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
-      }
-    },
-    {
       "id": "d8028bdb-450f-47b1-abac-941caefe3160",
       "dateAdded": "20261018",
       "type": "github-daily",
@@ -76182,9 +76121,9 @@
       "repo": "xerj-org/xerj",
       "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "language": "Rust",
-      "stars": 7754,
-      "forks": 411,
-      "starsAdded": 1102,
+      "stars": 7779,
+      "forks": 415,
+      "starsAdded": 1160,
       "createdAt": "2026-10-17T16:00:02.236Z",
       "metaData": {
         "forks": "0",
@@ -76249,6 +76188,67 @@
       }
     },
     {
+      "id": "5b04a3c2-0789-4486-acba-6e4dbebe2d06",
+      "dateAdded": "20261018",
+      "type": "github-daily",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 282484,
+      "forks": 41984,
+      "starsAdded": 1145,
+      "createdAt": "2026-10-17T16:00:02.111Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
+      }
+    },
+    {
       "id": "ee971647-a2fa-4cd3-b2b1-71412ae749fa",
       "dateAdded": "20261018",
       "type": "github-daily",
@@ -76256,9 +76256,9 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 52211,
-      "forks": 4622,
-      "starsAdded": 879,
+      "stars": 52233,
+      "forks": 4625,
+      "starsAdded": 878,
       "createdAt": "2026-10-17T16:00:02.147Z",
       "metaData": {
         "forks": "0",
@@ -76327,9 +76327,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 95347,
-      "forks": 6106,
-      "starsAdded": 829,
+      "stars": 95385,
+      "forks": 6109,
+      "starsAdded": 830,
       "createdAt": "2026-10-17T16:00:02.206Z",
       "metaData": {
         "forks": "0",
@@ -76401,9 +76401,9 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 54029,
-      "forks": 4904,
-      "starsAdded": 580,
+      "stars": 54043,
+      "forks": 4905,
+      "starsAdded": 574,
       "createdAt": "2026-10-17T16:00:02.129Z",
       "metaData": {
         "forks": "0",
@@ -76454,9 +76454,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 215225,
-      "forks": 28861,
-      "starsAdded": 576,
+      "stars": 215281,
+      "forks": 28863,
+      "starsAdded": 438,
       "createdAt": "2026-10-17T16:00:02.218Z",
       "metaData": {
         "forks": "0",
@@ -76507,9 +76507,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 76029,
+      "stars": 76052,
       "forks": 9001,
-      "starsAdded": 406,
+      "starsAdded": 420,
       "createdAt": "2026-10-17T16:00:02.227Z",
       "metaData": {
         "forks": "0",
@@ -76580,9 +76580,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 8400,
-      "forks": 554,
-      "starsAdded": 368,
+      "stars": 8415,
+      "forks": 555,
+      "starsAdded": 355,
       "createdAt": "2026-10-17T16:00:02.203Z",
       "metaData": {
         "forks": "0",
@@ -76628,57 +76628,6 @@
       }
     },
     {
-      "id": "6d955806-cb2e-467f-91aa-94384064fe5e",
-      "dateAdded": "20261018",
-      "type": "github-daily",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "repo": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars": 9893,
-      "forks": 715,
-      "starsAdded": 208,
-      "createdAt": "2026-10-17T16:00:02.196Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Rust",
-          "MCP",
-          "AI-Agent",
-          "效率工具"
-        ],
-        "cover": "",
-        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
-        "ability": [
-          "长期记忆存储",
-          "跨 Agent 上下文共享",
-          "语义检索与回溯",
-          "高性能数据处理",
-          "MCP 协议标准集成"
-        ],
-        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "开发者与开发团队",
-          "技术主管与架构师",
-          "AI 工具集成商",
-          "AI 研究爱好者"
-        ],
-        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
-      }
-    },
-    {
       "id": "bb3eb827-a997-414f-b99b-1a7e583f780b",
       "dateAdded": "20261018",
       "type": "github-daily",
@@ -76686,9 +76635,9 @@
       "repo": "anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stars": 151691,
-      "forks": 26875,
-      "starsAdded": 168,
+      "stars": 151721,
+      "forks": 26877,
+      "starsAdded": 179,
       "createdAt": "2026-10-17T16:00:02.210Z",
       "metaData": {
         "forks": "0",
@@ -76728,6 +76677,57 @@
           "习惯终端的开发者"
         ],
         "description": "Claude Code 是 Anthropic 官方出品的智能编程工具，通过自然语言在终端、IDE、网页中直接操作代码。它支持多文件联动编辑、Git 工作流自动化、从 Issue 到 PR 的完整闭环，并通过云端会话实现跨设备协作，是提升开发效率的强大助手。"
+      }
+    },
+    {
+      "id": "6d955806-cb2e-467f-91aa-94384064fe5e",
+      "dateAdded": "20261018",
+      "type": "github-daily",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 9909,
+      "forks": 716,
+      "starsAdded": 178,
+      "createdAt": "2026-10-17T16:00:02.196Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
       }
     }
   ]

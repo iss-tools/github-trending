@@ -18936,9 +18936,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 306617,
-      "forks": 77565,
-      "starsAdded": 248962,
+      "stars": 307438,
+      "forks": 77786,
+      "starsAdded": 239923,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
         "forks": "0",
@@ -19003,6 +19003,65 @@
       }
     },
     {
+      "id": "1b8d4e91-a7d5-4391-89f3-d78341c21725",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/storytold/artcraft",
+      "repo": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 31755,
+      "forks": 5028,
+      "starsAdded": 18479,
+      "createdAt": "2026-10-16T14:00:03.661Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://getartcraft.com",
+        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "Rust",
+          "AI 生成",
+          "影视创作",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
+        "ability": [
+          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
+          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
+          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
+          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
+          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
+        ],
+        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
+        "category": [
+          "开发工具",
+          "AI 创作",
+          "设计软件"
+        ],
+        "suitable": [
+          "独立电影人 / 短剧导演",
+          "概念设计师 / 原画师",
+          "AI 短视频创作者",
+          "游戏独立开发者",
+          "Rust 开发者"
+        ],
+        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
+      }
+    },
+    {
       "id": "9ea486c3-f95c-4faf-9496-dfb6454fdf28",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19010,9 +19069,9 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 41579,
-      "forks": 3741,
-      "starsAdded": 20518,
+      "stars": 41701,
+      "forks": 3758,
+      "starsAdded": 16250,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
         "forks": "0",
@@ -19064,65 +19123,6 @@
       }
     },
     {
-      "id": "1b8d4e91-a7d5-4391-89f3-d78341c21725",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/storytold/artcraft",
-      "repo": "storytold/artcraft",
-      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "language": "Rust",
-      "stars": 31701,
-      "forks": 5017,
-      "starsAdded": 20267,
-      "createdAt": "2026-10-16T14:00:03.661Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "3d-graphics",
-          "ai",
-          "aivideo",
-          "filmmaking",
-          "imagegeneration"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://getartcraft.com",
-        "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers - storytold/artcraft"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "Rust",
-          "AI 生成",
-          "影视创作",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "ArtCraft 深度评测：用 Rust 打造的开源 AI 创作 IDE，让 AI 出图从'抽卡'变'导演'",
-        "ability": [
-          "Image to Location：一张图变 3D 场景，多角色同空间换镜头保持一致",
-          "聚合 62+ 主流模型：图像/视频/音乐/3D 一站式调用，无需多平台搬运",
-          "3D 构图与角色摆姿：先定机位走位，再让 AI 上色生成",
-          "角色一致性迁移：用姿势人偶解决 AI 生成'换脸'难题",
-          "本地优先架构：Rust + SQLite，资产存本地不被云锁定"
-        ],
-        "summary": "一款用 Rust 打造的开源 AI 创作 IDE，让你像搭片场一样先构图再生成，聚合 62+ 主流 AI 模型。",
-        "category": [
-          "开发工具",
-          "AI 创作",
-          "设计软件"
-        ],
-        "suitable": [
-          "独立电影人 / 短剧导演",
-          "概念设计师 / 原画师",
-          "AI 短视频创作者",
-          "游戏独立开发者",
-          "Rust 开发者"
-        ],
-        "description": "ArtCraft 是用 Rust 打造的开源 AI 创作 IDE，核心理念是'Show, Don't Tell'：先在 2D/3D 空间搭场景、摆机位，再调用 Nano Banana、FLUX、Sora 等 60+ 模型生成，解决 AI 生成中角色不一致、构图不可控的痛点。软件免费，生成按点数付费，姊妹项目 PhotoCraft 等剑指 Adobe 全家桶。"
-      }
-    },
-    {
       "id": "24790175-65dc-4d18-981c-3c70ad5c4c47",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19130,9 +19130,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 295023,
-      "forks": 24743,
-      "starsAdded": 11937,
+      "stars": 295084,
+      "forks": 24755,
+      "starsAdded": 11272,
       "createdAt": "2026-10-11T17:00:03.730Z",
       "metaData": {
         "forks": "0",
@@ -19181,9 +19181,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 56957,
-      "forks": 3620,
-      "starsAdded": 9024,
+      "stars": 56993,
+      "forks": 3625,
+      "starsAdded": 8382,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
         "forks": "0",
@@ -19243,9 +19243,9 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 90210,
-      "forks": 10096,
-      "starsAdded": 7510,
+      "stars": 90254,
+      "forks": 10100,
+      "starsAdded": 7608,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
         "forks": "0",
@@ -19299,9 +19299,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 65932,
-      "forks": 5951,
-      "starsAdded": 5601,
+      "stars": 65986,
+      "forks": 5956,
+      "starsAdded": 5639,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
         "forks": "0",
@@ -19414,9 +19414,9 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 30497,
-      "forks": 2207,
-      "starsAdded": 4207,
+      "stars": 30512,
+      "forks": 2210,
+      "starsAdded": 4438,
       "createdAt": "2026-10-16T14:00:03.673Z",
       "metaData": {
         "forks": "0",
@@ -19478,6 +19478,63 @@
           "注重数据隐私的团队"
         ],
         "description": "Context Mode 是一个基于 MCP 协议的本地服务器，通过拦截工具输出、利用 SQLite 存储会话状态，实现“Think in Code”范式。它能显著降低 Token 消耗，防止因上下文压缩丢失记忆，是 AI 编程场景下的省流增效利器。"
+      }
+    },
+    {
+      "id": "e19369b4-d19a-4297-8819-5d04e5253c72",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 41721,
+      "forks": 4463,
+      "starsAdded": 3581,
+      "createdAt": "2026-10-16T14:00:03.677Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
       }
     },
     {
@@ -19612,63 +19669,6 @@
           "长周期项目维护者"
         ],
         "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
-      }
-    },
-    {
-      "id": "e19369b4-d19a-4297-8819-5d04e5253c72",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 41647,
-      "forks": 4455,
-      "starsAdded": 2328,
-      "createdAt": "2026-10-16T14:00:03.677Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "mcp",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://code.claude.com/docs/en/plugins",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件系统",
-          "官方生态",
-          "自动化",
-          "Anthropic"
-        ],
-        "cover": "",
-        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
-        "ability": [
-          "官方策展与安全审核",
-          "插件一键安装与集成",
-          "命令/代理/技能等多种类型",
-          "深度嵌入 Claude 工作流",
-          "标准化与生态规范"
-        ],
-        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "Claude Code/Cowork 重度用户",
-          "开发团队负责人",
-          "企业安全合规部门",
-          "插件开发者",
-          "AI 工作流极客"
-        ],
-        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
       }
     },
     {
@@ -20006,6 +20006,61 @@
       }
     },
     {
+      "id": "883f01f5-fa73-44dd-97d8-8348e542f254",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 1716,
+      "forks": 137,
+      "starsAdded": 888,
+      "createdAt": "2026-10-11T17:00:03.758Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      }
+    },
+    {
       "id": "8add4c53-6096-40e5-bd43-1e991971641f",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -20056,61 +20111,6 @@
           "关注软件性能工程的进阶学习者"
         ],
         "description": "RAD Debugger 是 Epic Games 旗下 RAD Game Tools（Casey Muratori 团队）开源的原生图形化调试器，采用 MIT 协议。它通过自研 RDI 调试信息格式和统一 Watch Window 设计，实现极速符号加载与深度变量可视化，目前 Windows x64 可用，Linux Alpha 刚于 2026 年 10 月发布。项目仍处 Alpha 阶段，适合尝鲜体验与源码学习，尚不宜替换生产主力工具。"
-      }
-    },
-    {
-      "id": "883f01f5-fa73-44dd-97d8-8348e542f254",
-      "dateAdded": "202642",
-      "type": "github-weekly",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "repo": "ranxianglei/billion-context",
-      "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
-      "language": "TypeScript",
-      "stars": 1706,
-      "forks": 137,
-      "starsAdded": 779,
-      "createdAt": "2026-10-11T17:00:03.758Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "dsh-plugin"
-        ],
-        "license": "License",
-        "homepage": "",
-        "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
-      },
-      "summaryData": {
-        "tags": [
-          "上下文压缩",
-          "开源项目",
-          "AI Agent",
-          "API 代理",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
-        "ability": [
-          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
-          "T1→T2→T3 三层递进式摘要，长会话不失忆",
-          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
-          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
-          "Web 仪表盘与缓存健康诊断，可观测性强"
-        ],
-        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
-          "API 按量付费、心疼账单的开发者",
-          "使用无缓存中转站/公益站的用户",
-          "想做工具链整合的团队",
-          "想突破上下文窗口限制的极客"
-        ],
-        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
       }
     },
     {
