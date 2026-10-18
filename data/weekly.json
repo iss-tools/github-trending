@@ -18936,8 +18936,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 313755,
-      "forks": 79524,
+      "stars": 315723,
+      "forks": 80045,
       "starsAdded": 239923,
       "createdAt": "2026-10-12T13:00:03.873Z",
       "metaData": {
@@ -19010,8 +19010,8 @@
       "repo": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 32167,
-      "forks": 5099,
+      "stars": 32284,
+      "forks": 5114,
       "starsAdded": 18479,
       "createdAt": "2026-10-16T14:00:03.661Z",
       "metaData": {
@@ -19069,8 +19069,8 @@
       "repo": "boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars": 42327,
-      "forks": 3832,
+      "stars": 42531,
+      "forks": 3852,
       "starsAdded": 16250,
       "createdAt": "2026-10-11T17:00:03.696Z",
       "metaData": {
@@ -19181,8 +19181,8 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 57298,
-      "forks": 3652,
+      "stars": 57384,
+      "forks": 3659,
       "starsAdded": 8382,
       "createdAt": "2026-10-13T11:00:05.007Z",
       "metaData": {
@@ -19243,8 +19243,8 @@
       "repo": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars": 90487,
-      "forks": 10132,
+      "stars": 90548,
+      "forks": 10140,
       "starsAdded": 7608,
       "createdAt": "2026-10-14T12:00:04.007Z",
       "metaData": {
@@ -19299,8 +19299,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 66230,
-      "forks": 5986,
+      "stars": 66365,
+      "forks": 5996,
       "starsAdded": 5639,
       "createdAt": "2026-10-11T17:00:03.738Z",
       "metaData": {
@@ -19414,8 +19414,8 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 30586,
-      "forks": 2237,
+      "stars": 30622,
+      "forks": 2244,
       "starsAdded": 4438,
       "createdAt": "2026-10-16T14:00:03.673Z",
       "metaData": {
@@ -19481,6 +19481,72 @@
       }
     },
     {
+      "id": "7acf70ce-f6f1-4617-9cf5-027abbf50fbd",
+      "dateAdded": "202642",
+      "type": "github-weekly",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "repo": "MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 51547,
+      "forks": 17095,
+      "starsAdded": 4200,
+      "createdAt": "2026-10-18T13:00:03.820Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "career",
+          "claude-code",
+          "cover-letter",
+          "cv",
+          "interview-preparation",
+          "job-application",
+          "job-hunting",
+          "job-search",
+          "latex",
+          "resume"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. - MadsLorentzen/ai-job-search"
+      },
+      "summaryData": {
+        "tags": [
+          "AI求职",
+          "自动化",
+          "简历生成",
+          "开源工具",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "ai-job-search：全栈本地化AI求职助手",
+        "ability": [
+          "智能岗位评估与匹配",
+          "定制化简历与求职信生成",
+          "结构化面试准备与模拟",
+          "全流程申请状态跟踪",
+          "本地优先保障数据隐私"
+        ],
+        "summary": "基于Claude Code的开源求职自动化框架，支持自动抓取、评估、定制简历及模拟面试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "生活效率"
+        ],
+        "suitable": [
+          "程序员与AI工程师",
+          "技术岗位求职者",
+          "重视数据隐私的用户",
+          "有一定动手能力的技术爱好者",
+          "希望系统化求职的人"
+        ],
+        "description": "这是一个基于Claude Code的开源AI求职工具，通过本地运行的方式，自动抓取岗位、评估匹配度、生成定制化简历和求职信，并提供面试模拟。它采用双Agent协作模式，将重复性工作自动化，同时让用户保持对求职过程的完全掌控。"
+      }
+    },
+    {
       "id": "e19369b4-d19a-4297-8819-5d04e5253c72",
       "dateAdded": "202642",
       "type": "github-weekly",
@@ -19488,8 +19554,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 42197,
-      "forks": 4498,
+      "stars": 42303,
+      "forks": 4507,
       "starsAdded": 3581,
       "createdAt": "2026-10-16T14:00:03.677Z",
       "metaData": {
@@ -19807,9 +19873,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11732,
-      "forks": 1142,
-      "starsAdded": 1214,
+      "stars": 12520,
+      "forks": 1228,
+      "starsAdded": 1536,
       "createdAt": "2026-10-11T17:00:03.740Z",
       "metaData": {
         "forks": "0",

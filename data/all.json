@@ -1,6 +1,118 @@
 {
   "all": [
     {
+      "id": "948e0a1b-5377-44aa-97f6-691cfa9d94f0",
+      "url": "https://github.com/Kruk2/jasna",
+      "domain": "github.com",
+      "repo": "Kruk2/jasna",
+      "description": "Jasna 是一款 AGPL 协议开源的视频马赛克修复工具，在 Lada 的修复模型基础上重构工程框架，通过 TensorRT 加速实现 3-4 倍速度提升与更低显存占用，并独有 VR 支持、流媒体和二次修复流水线。应用完全免费，但部分增强模型需累计赞助 15 美元解锁；需 NVIDIA 显卡，首次运行需等待 15-60 分钟引擎编译。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-18T13:07:23.583Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPL-3.0 license",
+        "homepage": "",
+        "description": "Video restoration tool. Contribute to Kruk2/jasna development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "视频修复",
+          "深度学习",
+          "TensorRT",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Jasna 深度评测：速度碾压 Lada 的开源视频马赛克修复工具",
+        "ability": [
+          "基于 RF-DETR 检测 + BasicVSR++ 修复双模型，恢复视频被打码区域",
+          "TensorRT 加速推理，处理速度达同类工具 3-4 倍，显存占用低至 4GB",
+          "原生支持 VR180 视频逐眼修复，含 VR 专用检测模型",
+          "提供 GUI + CLI 双形态，支持流媒体播放、Stash 对接与队列处理",
+          "内置 Segment Editor 可视化标记片段与掩码优化"
+        ],
+        "summary": "一款用深度学习恢复视频马赛克的开源工具，速度比同类 Lada 快 3-4 倍。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "视频处理"
+        ],
+        "suitable": [
+          "拥有 NVIDIA 16 系以上显卡的用户",
+          "需要批量处理 4K/8K 视频的重度收藏者",
+          "VR 内容爱好者",
+          "Stash 媒体库用户",
+          "喜欢调参折腾的硬核玩家"
+        ],
+        "description": "Jasna 是一款 AGPL 协议开源的视频马赛克修复工具，在 Lada 的修复模型基础上重构工程框架，通过 TensorRT 加速实现 3-4 倍速度提升与更低显存占用，并独有 VR 支持、流媒体和二次修复流水线。应用完全免费，但部分增强模型需累计赞助 15 美元解锁；需 NVIDIA 显卡，首次运行需等待 15-60 分钟引擎编译。"
+      },
+      "type": "project",
+      "dateAdded": "20261018"
+    },
+    {
+      "id": "9418147c-9ac7-4d5b-9051-4c0b253a3b20",
+      "url": "https://github.com/mlabonne/llm-course",
+      "domain": "github.com",
+      "repo": "mlabonne/llm-course",
+      "description": "由 Liquid AI 训练负责人 Maxime Labonne 维护的开源课程，以三段式路径串联从数学基础、微调对齐到 RAG、Agent、生产部署的全链路知识，每个知识点配有可在免费 Colab 上直接运行的 Notebook。它是一张持续更新的导航地图而非教材，适合作为 LLM 自学的主干路线，搭配外部资料深挖。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-18T13:03:54.784Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "course",
+          "large-language-models",
+          "llm",
+          "machine-learning",
+          "roadmap"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mlabonne.github.io/blog/",
+        "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. - mlabonne/llm-course"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "学习路线图",
+          "GitHub",
+          "模型微调",
+          "免费课程"
+        ],
+        "cover": "",
+        "title": "mlabonne/llm-course 深度评测：8万Star的免费大模型学习路线图",
+        "ability": [
+          "提供 LLM Fundamentals → Scientist → Engineer 三段式系统学习路线图",
+          "内置十余个免费 Colab 可直接运行的微调、量化、模型合并实战 Notebook",
+          "内容持续更新至 2025 前沿技术栈（DPO、GRPO、RAG、Agent、MCP）",
+          "配套 LLM AutoEval、LazyMergekit、AutoQuant 等一键式效率工具",
+          "覆盖 Prompt Injection、越狱测试等安全红队必修知识"
+        ],
+        "summary": "GitHub 83k+ Stars 的免费 LLM 学习地图，三阶段路线串联全链路知识，配可直接运行的实战 Notebook。",
+        "category": [
+          "AI 学习",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "想系统入门 LLM 的 AI 工程师",
+          "求职或转行大模型方向的开发者",
+          "想发布自己开源模型的研究者",
+          "需要理解技术栈的 AI 产品经理",
+          "做微调/RAG/Agent 落地的业务工程师"
+        ],
+        "description": "由 Liquid AI 训练负责人 Maxime Labonne 维护的开源课程，以三段式路径串联从数学基础、微调对齐到 RAG、Agent、生产部署的全链路知识，每个知识点配有可在免费 Colab 上直接运行的 Notebook。它是一张持续更新的导航地图而非教材，适合作为 LLM 自学的主干路线，搭配外部资料深挖。"
+      },
+      "type": "project",
+      "dateAdded": "20261018"
+    },
+    {
       "id": "e113d103-9a09-48f7-ab43-9debcaae75f6",
       "url": "https://github.com/hmjz100/LinkSwift",
       "domain": "github.com",
