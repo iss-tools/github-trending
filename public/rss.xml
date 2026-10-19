@@ -5,6 +5,27 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>shiyu-coder/Kronos</title>
+      <link>https://trending.pptboard.com/repo/shiyu-coder/Kronos.html</link>
+      <description>清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/shiyu-coder/Kronos.html</guid>
+    </item>
+    <item>
+      <title>withmarbleapp/os-taxonomy</title>
+      <link>https://trending.pptboard.com/repo/withmarbleapp/os-taxonomy.html</link>
+      <description>把英美小学课程拆解成1590个微知识点和3221条先修关系的开放数据集，是AI教育产品的开源底层脚手架</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/withmarbleapp/os-taxonomy.html</guid>
+    </item>
+    <item>
+      <title>headroomlabs-ai/headroom</title>
+      <link>https://trending.pptboard.com/repo/headroomlabs-ai/headroom.html</link>
+      <description>一个跑在本地的 AI Agent 上下文压缩代理，在 token 抵达大模型前先挤一遍水分，重度 Agent 用户实测可省 20%+ 账单。</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/headroomlabs-ai/headroom.html</guid>
+    </item>
+    <item>
       <title>YuJunZhiXue/dsh-purge</title>
       <link>https://trending.pptboard.com/repo/YuJunZhiXue/dsh-purge.html</link>
       <description>一款能剥离 DeepSeek Harness 宿主安全策略、为不同模型注入越狱提示词的争议性开源插件。</description>
@@ -332,27 +353,6 @@
       <description>TileLang 是北大与微软联合开源的 GPU Kernel 编程语言，用 Python 语法写出接近 CUTLASS 手写性能的算子。</description>
       <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/tile-ai/tilelang.html</guid>
-    </item>
-    <item>
-      <title>alirezarezvani/claude-skills</title>
-      <link>https://trending.pptboard.com/repo/alirezarezvani/claude-skills.html</link>
-      <description>目前规模最大、覆盖最广的Claude Code开源技能库，388个生产级技能+727个零依赖Python工具，一套代码适配Claude Code、Cursor、Codex等13款AI编程助手。</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/alirezarezvani/claude-skills.html</guid>
-    </item>
-    <item>
-      <title>colbymchenry/codegraph</title>
-      <link>https://trending.pptboard.com/repo/colbymchenry/codegraph.html</link>
-      <description>开源的本地代码知识图谱 MCP 工具，让 Claude Code、Cursor 等 AI Agent 秒懂大型代码库，实测省 62% Token、快 53%。</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/colbymchenry/codegraph.html</guid>
-    </item>
-    <item>
-      <title>modelcontextprotocol/servers</title>
-      <link>https://trending.pptboard.com/repo/modelcontextprotocol/servers.html</link>
-      <description>Anthropic 官方的 MCP 协议参考实现仓库——学 MCP 必读，用 MCP 另寻他处。</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/modelcontextprotocol/servers.html</guid>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,147 @@
+# shiyu-coder/Kronos
+
+[GitHub URL](https://github.com/shiyu-coder/Kronos)
+
+
+## Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学
+
+> 清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。
+
+- **Tags**: 金融大模型, K线预测, 时间序列, 量化交易, 开源项目
+- **Category**: AI 模型, 开源项目, 金融量化
+
+## Details
+
+# Kronos 深度评测：把 K 线当成一门"语言"的清华系金融基础模型
+> 评测对象：**shiyu-coder/Kronos**（https://github.com/shiyu-coder/Kronos）
+> 项目类型：AI 模型 / 开源框架（金融时序 Foundation Model）
+> 论文：arXiv 2508.02739，已被 **AAAI 2026** 接收
+---
+## 一句话总结
+**Kronos 是全球首个面向金融 K 线数据、用"GPT 式自回归"训练出来的开源基础模型，用 120 亿根 K 线教会机器读懂"市场的语言"，零样本即可预测价格、波动率并生成合成行情——但它不是炒股印钞机，而是一块真正的金融 AI 底座砖。**
+---
+## 背景与痛点：为什么通用时序模型搞不定 K 线
+过去两年，"时间序列基础模型"（TSFM）赛道出了不少明星：Google 的 TimesFM、Amazon 的 Chronos、Salesforce 的 Moirai。它们在电力负荷、零售销量、天气预测上表现亮眼，但一放到金融 K 线上，效果往往还不如一个精心调参的 LSTM。原因有三：
+1. **训练数据里金融几乎为零**。TimesFM、Chronos 的预训练语料以能源、天气、网页流量为主，金融 K 线占比不足 1%，甚至不到 0.01%——它们的统计特征（轻尾、弱自相关、低波动聚集）和金融的重尾分布、波动率聚集、杠杆效应完全是两码事。
+2. **K 线不是一条序列，是五维压缩快照**。每根 K 线包含 open/high/low/close/volume（有的还有 amount），且满足 `low ≤ open, close ≤ high` 这类硬约束。通用模型要么压成一维丢信息，要么当普通多元序列丢约束。
+3. **金融任务远不止点预测**。波动率预测、合成 K 线生成、跨资产风格迁移——这些量化研究的刚需任务，通用 TSFM 基本不覆盖。
+Kronos 团队（清华交叉信息研究院 IIIS 的 Yu Shi 等，通讯作者含徐葳、李建、张长水教授）把这些痛点正面打了一轮，思路很 GPT：**别把 K 线当数字序列，把它当语言**。
+---
+## 核心亮点与技术剖析
+### 1. 两阶段架构：Tokenizer + 自回归 Transformer
+可以这样打比方：通用时序模型像在"看心电图猜下一步波形"，Kronos 则是先**把心电图翻译成文字**，再像学一门外语一样学它的"语法"。
+- **第一阶段：Kronos Tokenizer**。它把连续的 OHLCVA 五维数据量化成**层次化的离散 token**。核心量化方法是 **BSQ（Binary Spherical Quantization）**——把嵌入向量投影到单位球面再二值化，压缩成两层 token：s1 负责**趋势和幅度**（粗粒度），s2 负责**细节和波动**（细粒度）。BSQ 还有一个漂亮的数学性质：量化重建误差有严格上界 `E|u - û| < √2`，意味着极端值不会被 tokenizer 失真地压碎。
+- **第二阶段：Decoder-only Transformer**。在离散 token 序列上做自回归预训练，和 GPT 学下一句话的逻辑一模一样，只不过它学的是"下一根 K 线"。
+### 2. 数据规模是真金白银的硬通货
+**120 亿条 K 线记录，覆盖 45+ 全球交易所，7 种采样频率**，覆盖股票、加密货币、商品期货等多种资产类别。这是它能零样本泛化的根本原因——见过足够多的"市场方言"，遇到新标的就能上手。
+### 3. Benchmark 成绩：碾压级领先，但请冷静看指标
+| 任务 | Kronos vs 最强通用 TSFM | Kronos vs 最强非预训练 baseline |
+|---|---|---|
+| 价格序列预测 **RankIC** | **+93%** | +87% |
+| 波动率预测 **MAE** | **−9%**（更低） | — |
+| 合成 K 线生成保真度 | **+22%** | — |
+注意一个细节：**RankIC 是横截面排序相关系数**，衡量的是"预测出的收益排序"与"真实收益排序"的相关性，常用于多因子选股；它**不等于**单资产收益率、更不等于实盘盈利。这一点后面局限部分会展开。
+### 4. 四档模型家族，从笔电到机构全覆盖
+| 模型 | 参数量 | 上下文长度 | 显存（粗略） | 开源状态 |
+|---|---|---|---|---|
+| Kronos-mini | 4.1M | **2048** | ~1GB | ✅ |
+| Kronos-small | 24.7M | 512 | ~1.5GB | ✅ |
+| Kronos-base | 102.3M | 512 | ~2GB | ✅ |
+| Kronos-large | 499.2M | 512 | ~4GB | ❌（需邮件申请） |
+最小的 mini 版普通笔记本就能跑，large 版需要向作者申请学术访问（Issue #347 已有多位研究者申请）。
+### 5. 上手门槛：四行代码出预测
+`KronosPredictor` 封装了预处理、归一化、预测、反归一化全流程，HuggingFace 自动拉权重：
+```python
+from model import Kronos, KronosTokenizer, KronosPredictor
+import pandas as pd
+# 1. 加载 tokenizer 和模型（必须配对）
+tokenizer = KronosTokenizer.from_pretrained("NeoQuasar/Kronos-Tokenizer-base")
+model = Kronos.from_pretrained("NeoQuasar/Kronos-small")
+# 2. 初始化预测器
+predictor = KronosPredictor(model, tokenizer, max_context=512)
+# 3. 准备数据：DataFrame 必须含 open/high/low/close，volume/amount 可选
+df = pd.read_csv("./data/XSHG_5min_600977.csv")
+df['timestamps'] = pd.to_datetime(df['timestamps'])
+lookback, pred_len = 400, 120
+x_df = df.loc[:lookback-1, ['open','high','low','close','volume','amount']]
+x_ts = df.loc[:lookback-1, 'timestamps']
+y_ts = df.loc[lookback:lookback+pred_len-1, 'timestamps']
+# 4. 出预测
+pred_df = predictor.predict(
+    df=x_df, x_timestamp=x_ts, y_timestamp=y_ts,
+    pred_len=pred_len,
+    T=1.0,           # 采样温度
+    top_p=0.9,       # 核采样
+    sample_count=1   # 采样路径数（自动平均）
+)
+```
+输出是一个和输入同样式的 DataFrame，包含未来 `pred_len` 步的 open/high/low/close/volume/amount。
+**批量多资产预测**用 `predict_batch` 一行搞定，GPU 并行、自动归一化，对全市场扫描场景非常友好。
+### 6. 微调流水线：Qlib + A股示例一应俱全
+2025 年 8 月官方放出了完整微调脚本，四步走：
+1. 改 `finetune/config.py`（路径、超参、预训练模型位置）
+2. `python finetune/qlib_data_preprocess.py` 处理数据（基于微软 Qlib，A股日频示例）
+3. `torchrun ... finetune/train_tokenizer.py` → `train_predictor.py` 两阶段微调
+4. 回测评估
+官方在 README 里明确**免责声明**：这是演示流程，不是生产级量化系统，稳健策略还需要组合优化、风险中性化等后续步骤。
+### 7. 社区与生命力
+- GitHub 星标从上线几天的 15k 一路冲到 30k+，fork 数千，18+ 贡献者。
+- 更新节奏：2025.08 论文发布 → 08 月底放微调脚本 → 11 月 AAAI 2026 接收 → 2026 上半年持续修复 batch 维度、SDPA、numpy 依赖等 PR，Issue 响应较活跃。
+- 提供了**Live Demo**：`shiyu-coder.github.io/Kronos-demo`，实时抓 BTC/USDT 数据预测未来 24 小时 K 线，零代码可以直接看效果。
+---
+## 目标人群与真实收益
+| 人群 | 能得到什么 | 怎么开始 |
+|---|---|---|
+| **量化研究员** | 一个可跨市场、跨频率迁移的金融表征提取器，用于构建 Alpha 因子 | 用 Kronos-base 做零样本 RankIC 筛选，再在自己的池子上微调 |
+| **FinTech 工程师** | 一个比 LSTM/XGBoost 更强baseline，能快速验证想法 | mini/small 本地跑通，再决定是否上 base |
+| **学生 / 研究者** | AAAI 2026 已收录的论文 + 全套代码，复现门槛低 | 跟 `examples/prediction_example.py` 顺一遍 |
+| **散户 / 独立开发者** | 笔电可跑的 mini 模型 + Live Demo 直接体验 | 先看 Demo，再 clone 仓库 |
+| **合成数据需求方** | 高保真合成 K 线，规避回测的幸存者偏差、历史窗口不足问题 | 用生成模式批量造数据 |
+---
+## 同类对比：Kronos 在 TSFM 生态里的位置
+| 维度 | **Kronos** | Chronos (Amazon) | TimesFM (Google) | 传统量化模型 |
+|---|---|---|---|---|
+| 训练数据 | **100% 金融**（120亿K线） | 通用时序，金融<1% | 通用时序，金融<0.01% | 自备数据 |
+| 架构 | BSQ Tokenizer + Decoder-only | 连续值量化 + T5 | Patch + Decoder | LSTM/XGBoost/因子模型 |
+| 零样本跨市场 | **强** | 一般（金融弱） | 弱 | 无（每品种要重训） |
+| 金融任务覆盖 | 价格/波动/合成K线/跨资产 | 点预测为主 | 点预测为主 | 视具体策略 |
+| 学术认可 | **AAAI 2026** | ICML 2024 | ICML 2024 | — |
+| 协议 | **MIT** | Apache 2.0 | Apache 2.0 | 多为闭源 |
+一个值得记录的第三方观点：mental-momentum 的研究显示，**通用 TSFM 做 zero-shot 金融交易在扣掉交易成本和滑点后往往转为负收益**，而 Kronos、FinCast 这类金融专用模型因为做了跨资产波动率归一化，信号质量明显更稳，但也**不能作为独立交易 agent**，最佳定位是"信号生成引擎"。
+---
+## 局限与不足：把话说透
+这一节是我认为**所有准备把 Kronos 拿去实盘的人必须读完的部分**。
+### 1. 它只能看 K 线，"瞎"得很彻底
+Kronos 的输入**只有 OHLCVA**。财报、新闻、公告、订单簿深度、资金流向、龙虎榜、政策变化——全都不在视野内。A股这种政策市、消息市，纯 K 线模型在关键事件节点（如重大政策发布前后）的鲁棒性会显著打折。
+### 2. RankIC ≠ 赚钱，量化链路还很长
+论文自己写得清清楚楚："our method focuses on predictive accuracy, not trading profitability"。从 **预测信号 → Alpha 因子 → 横截面选股 → 组合优化 → 风险控制 → 交易执行 → 净收益**，Kronos 只证明了第一步。社区里"和 MACD 差不多""横截面很拉"这类尖锐反馈，本质是大家混淆了"预测能力"和"赚钱能力"两个不同层级的指标。
+### 3. 未来信息泄露风险不容忽视
+预训练语料覆盖 45 交易所、多种频率，如果论文 benchmark 的测试窗口和训练语料时间上没有严格隔离，就存在 look-ahead bias。mental-momentum 的研究特别强调，金融 TSFM 必须**用 purged cross-validation** 才能排除模型"背题"的可能。这一点 Kronos 论文有处理，但使用者在自建回测时极易踩坑。
+### 4. Kronos-large 未完全开源
+499M 参数的 large 版本需要邮件申请学术访问，想把它塞进商业产品的团队需要单独沟通。
+### 5. 体制切换仍是硬骨头
+BSQ 的 √2 误差上界保证的是**量化环节的保真度**，不等于模型对**闪崩、熔断、政策突变**这类极端 regime shift 的预测鲁棒性——后者受限于纯 K 线输入的固有无知。
+### 6. 上下文窗口的取舍
+small/base/large 都是 512，要看更长历史请用 mini（2048），但 mini 参数量最小、表征能力最弱，这里有个鱼和熊掌的权衡。
+---
+## 避坑指南（实战经验向）
+- **Tokenizer 和 Predictor 必须配对**：`Kronos-Tokenizer-base` 对应 small/base/large，`Kronos-Tokenizer-2k` 对应 mini，混搭会报维度错误。
+- **lookback 不要超过 max_context**：超过会自动截断，但默认行为可能不符合你的预期，显式传参更稳。
+- **首次运行需要联网**：模型从 HuggingFace Hub 下载，国内网络需要镜像或提前 `from_pretrained` 缓存到本地。
+- **`sample_count` 是隐藏性价比之王**：设成 5–10 做概率平均，预测稳定性会明显提升，代价是推理时间线性增长。
+- **微调时**先微调 tokenizer 再微调 predictor，顺序不能反，因为 predictor 吃的是 tokenizer 的输出分布。
+- **别把回测结果当实盘预期**：Qlib 示例的回测不含滑点、手续费、冲击成本的完整建模，自己补上再说话。
+---
+## 结语与行动建议
+**Kronos 的真正价值，不在"它能不能帮你明天赚钱"，而在于它验证了一个范式：金融数据需要专属的表示学习。**
+在它之前，金融 ML 的主流是两种做法——要么直接把连续价格喂给 LSTM/XGBoost，要么靠人工因子（Alpha158、Alpha360）做特征工程。Kronos 第一次把 "K 线是一门语言" 这个想法跑通了 benchmark，并附上了完整的开源代码、模型和微调 pipeline，这是它拿下 AAAI 2026 和 30k+ star 的根本原因。
+给三类人的具体建议：
+- **如果你是研究者**：直接 clone 仓库复现论文 benchmark，重点看 BSQ Tokenizer 那一节，这是整篇论文最值得借鉴的设计思想，可以迁移到任何"多维度连续信号"的领域（医疗波形、传感器数据、网络日志）。
+- **如果你是工程师**：把 Kronos 当成一个**新的强 baseline** 而非终局方案，放在你现有模型的对照组里跑一跑 RankIC，能跑赢再考虑深度集成。
+- **如果你是散户/爱好者**：先去 Live Demo 看一圈感受下能力边界，再用 mini 版在自己熟悉的标的上做研究——**研究可以，实盘请三思**，更不要因为一个 star 数就重仓押注。
+一句话给这个项目打分：**学术贡献 9/10，工程完成度 8/10，作为"炒股外挂" 4/10，作为"金融 AI 基建" 9/10。**
+> 论文与资源：
+> - GitHub：https://github.com/shiyu-coder/Kronos
+> - arXiv：https://arxiv.org/abs/2508.02739
+> - Live Demo：https://shiyu-coder.github.io/Kronos-demo
+> - HuggingFace 模型：https://huggingface.co/NeoQuasar

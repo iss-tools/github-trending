@@ -1,6 +1,186 @@
 {
   "all": [
     {
+      "id": "e6846402-3e43-4034-963e-82210aa7be4a",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "domain": "github.com",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-19T11:12:58.063Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+      },
+      "type": "project",
+      "dateAdded": "20261019"
+    },
+    {
+      "id": "301ed579-6f4c-4776-85d9-3f012834cc46",
+      "url": "https://github.com/withmarbleapp/os-taxonomy",
+      "domain": "github.com",
+      "repo": "withmarbleapp/os-taxonomy",
+      "description": "Marble团队开源的小学课程知识图谱数据集，将英美课标拆解为1590个微知识点与3221条先修依赖关系，附掌握证据和评估提示词，采用ODbL协议可免费商用。适配AI教育产品、自适应学习系统与Agent开发，社区已衍生出MCP Server、3D可视化等生态。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-19T11:09:05.431Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "ODbL-1.0 license",
+        "homepage": "",
+        "description": "Contribute to withmarbleapp/os-taxonomy development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "开源数据集",
+          "AI教育",
+          "自适应学习",
+          "EdTech"
+        ],
+        "cover": "",
+        "title": "Marble os-taxonomy：小学教育界的开源知识图谱基础设施",
+        "ability": [
+          "微知识点拆解：1590个可教学的最小知识单元，每个都附掌握证据标准",
+          "知识依赖图谱：3221条先修关系构成DAG，每条边附带教学法理由",
+          "AI评估就绪：自带assessmentPrompt提示词，可直接喂给大模型做个性化评估",
+          "多课标对齐：覆盖CCSS、NGSS、英国国家课程等7套课程框架",
+          "开放许可：ODbL 1.0协议，可商用可闭源，仅需署名"
+        ],
+        "summary": "把英美小学课程拆解成1590个微知识点和3221条先修关系的开放数据集，是AI教育产品的开源底层脚手架",
+        "category": [
+          "开源数据集",
+          "AI 教育",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI教育/EdTech创业者",
+          "AI Agent与LLM应用开发者",
+          "教师与教研人员",
+          "关注孩子学习路径的家长",
+          "教育研究者"
+        ],
+        "description": "Marble团队开源的小学课程知识图谱数据集，将英美课标拆解为1590个微知识点与3221条先修依赖关系，附掌握证据和评估提示词，采用ODbL协议可免费商用。适配AI教育产品、自适应学习系统与Agent开发，社区已衍生出MCP Server、3D可视化等生态。"
+      },
+      "type": "project",
+      "dateAdded": "20261019"
+    },
+    {
+      "id": "f727779e-2c0d-4b51-aa9f-1908a9ea5664",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "domain": "github.com",
+      "repo": "headroomlabs-ai/headroom",
+      "description": "Headroom 是 Apache 2.0 开源的本地上下文压缩层，通过内容路由、SmartCrusher、AST 代码压缩与可逆缓存，在数据抵达 LLM 前削减冗余 token。独立实测显示其对 JSON 工具调用、大日志场景收益最大（官方数据 57%），轻量对话场景节省有限，建议先跑 headroom savings 验证自己工作流的真实 ROI 再上生产。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-19T11:04:48.487Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai",
+          "anthropic",
+          "claude-code",
+          "compression",
+          "context-engineering",
+          "context-window",
+          "cursor",
+          "fastapi",
+          "langchain",
+          "llm",
+          "mcp",
+          "openai",
+          "prompt-engineering",
+          "proxy",
+          "python",
+          "rag",
+          "token-optimization",
+          "tokens",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.headroomlabs.ai/docs",
+        "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server. - headroomlabs-ai/headroom"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "Token 省钱",
+          "AI Agent",
+          "Claude Code",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Headroom 深度评测：本地 AI Agent 上下文压缩层，省 Token 省钱的真香与陷阱",
+        "ability": [
+          "智能压缩工具输出、日志、代码与 RAG 内容，JSON 密集场景可省 60%-95%",
+          "可逆压缩（CCR）：原文本地缓存，模型可通过 headroom_retrieve 随时取回",
+          "缓存对齐（CacheAligner）：冻结前缀保住厂商 Prompt Cache 一折折扣",
+          "headroom learn 自动分析历史失败会话，生成 Agent 修正笔记写入 CLAUDE.md",
+          "一键 wrap 主流 Agent（Claude Code 等 20+），零代码改动接入，数据全程不出本地"
+        ],
+        "summary": "一个跑在本地的 AI Agent 上下文压缩代理，在 token 抵达大模型前先挤一遍水分，重度 Agent 用户实测可省 20%+ 账单。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "重度 Claude Code / Codex / Cursor 用户（每天 4 小时以上）",
+          "跑 RAG 或多 Agent 管道的工程师",
+          "用 AI Agent 排查故障的 SRE / DevOps",
+          "同时使用多个 AI Agent、需要共享记忆的团队",
+          "被月度 API 账单压得喘不过气的开源爱好者"
+        ],
+        "description": "Headroom 是 Apache 2.0 开源的本地上下文压缩层，通过内容路由、SmartCrusher、AST 代码压缩与可逆缓存，在数据抵达 LLM 前削减冗余 token。独立实测显示其对 JSON 工具调用、大日志场景收益最大（官方数据 57%），轻量对话场景节省有限，建议先跑 headroom savings 验证自己工作流的真实 ROI 再上生产。"
+      },
+      "type": "project",
+      "dateAdded": "20261019"
+    },
+    {
       "id": "ff7faf22-4254-475f-988c-acf1d225835c",
       "url": "https://github.com/YuJunZhiXue/dsh-purge",
       "domain": "github.com",
