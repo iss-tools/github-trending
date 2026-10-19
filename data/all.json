@@ -1,6 +1,66 @@
 {
   "all": [
     {
+      "id": "ff7faf22-4254-475f-988c-acf1d225835c",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "domain": "github.com",
+      "repo": "YuJunZhiXue/dsh-purge",
+      "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-19T08:05:33.419Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "deepseek",
+          "deepseek-harness",
+          "dsh-plugin",
+          "dsh-plugins",
+          "harness-jailbreak",
+          "jailbreak",
+          "llm-jailbreak"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分 - YuJunZhiXue/dsh-purge"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepSeek",
+          "越狱插件",
+          "DSH",
+          "红队评测",
+          "提示词注入"
+        ],
+        "cover": "",
+        "title": "dsh-purge 深度评测：游走在安全评测与模型破限边界的争议插件",
+        "ability": [
+          "剥离 DSH 宿主层安全策略（审批门、沙箱、默认提示词）",
+          "为不同模型切换越狱提示词，注入最高优先级会话覆盖",
+          "补丁自动备份可回滚（.dshpurge.bak），支持一键还原卸载",
+          "提供 CLI、聊天斜杠命令、模型工具三通道操作",
+          "启动时自动重应用补丁，适应 DSH 版本升级"
+        ],
+        "summary": "一款能剥离 DeepSeek Harness 宿主安全策略、为不同模型注入越狱提示词的争议性开源插件。",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI 安全研究者 / 红队工程师",
+          "DSH 插件开发者（学习插件体系架构）",
+          "Prompt 工程师（研究提示词注入机制）",
+          "受默认策略束缚的 DSH 重度用户（需自担风险）"
+        ],
+        "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。"
+      },
+      "type": "project",
+      "dateAdded": "20261019"
+    },
+    {
       "id": "948e0a1b-5377-44aa-97f6-691cfa9d94f0",
       "url": "https://github.com/Kruk2/jasna",
       "domain": "github.com",

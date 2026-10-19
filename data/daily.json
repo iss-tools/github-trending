@@ -76939,8 +76939,8 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 54107,
-      "forks": 17536,
+      "stars": 54513,
+      "forks": 17616,
       "starsAdded": 2232,
       "createdAt": "2026-10-18T16:00:02.268Z",
       "metaData": {
@@ -77005,8 +77005,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 76011,
-      "forks": 8319,
+      "stars": 76242,
+      "forks": 8340,
       "starsAdded": 2082,
       "createdAt": "2026-10-18T16:00:02.343Z",
       "metaData": {
@@ -77078,8 +77078,8 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 216856,
-      "forks": 29026,
+      "stars": 216975,
+      "forks": 29028,
       "starsAdded": 1414,
       "createdAt": "2026-10-18T16:00:02.306Z",
       "metaData": {
@@ -77131,8 +77131,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 42865,
-      "forks": 4540,
+      "stars": 42939,
+      "forks": 4548,
       "starsAdded": 1175,
       "createdAt": "2026-10-18T16:00:02.285Z",
       "metaData": {
@@ -77188,7 +77188,7 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 97065,
+      "stars": 97225,
       "forks": 6198,
       "starsAdded": 1146,
       "createdAt": "2026-10-18T16:00:02.335Z",
@@ -77262,8 +77262,8 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 54770,
-      "forks": 4955,
+      "stars": 54832,
+      "forks": 4958,
       "starsAdded": 589,
       "createdAt": "2026-10-18T16:00:02.341Z",
       "metaData": {
@@ -77315,8 +77315,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 76682,
-      "forks": 9065,
+      "stars": 76744,
+      "forks": 9068,
       "starsAdded": 513,
       "createdAt": "2026-10-18T16:00:02.330Z",
       "metaData": {
@@ -77388,8 +77388,8 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 10681,
-      "forks": 755,
+      "stars": 10743,
+      "forks": 760,
       "starsAdded": 512,
       "createdAt": "2026-10-18T16:00:02.333Z",
       "metaData": {
@@ -77432,6 +77432,66 @@
       }
     },
     {
+      "id": "9976ab0f-2fb3-412e-8835-535a20c949e6",
+      "dateAdded": "20261019",
+      "type": "github-daily",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "repo": "YuJunZhiXue/dsh-purge",
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "language": "JavaScript",
+      "stars": 7272,
+      "forks": 1097,
+      "starsAdded": 423,
+      "createdAt": "2026-10-19T08:00:02.282Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "deepseek",
+          "deepseek-harness",
+          "dsh-plugin",
+          "dsh-plugins",
+          "harness-jailbreak",
+          "jailbreak",
+          "llm-jailbreak"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分 - YuJunZhiXue/dsh-purge"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepSeek",
+          "越狱插件",
+          "DSH",
+          "红队评测",
+          "提示词注入"
+        ],
+        "cover": "",
+        "title": "dsh-purge 深度评测：游走在安全评测与模型破限边界的争议插件",
+        "ability": [
+          "剥离 DSH 宿主层安全策略（审批门、沙箱、默认提示词）",
+          "为不同模型切换越狱提示词，注入最高优先级会话覆盖",
+          "补丁自动备份可回滚（.dshpurge.bak），支持一键还原卸载",
+          "提供 CLI、聊天斜杠命令、模型工具三通道操作",
+          "启动时自动重应用补丁，适应 DSH 版本升级"
+        ],
+        "summary": "一款能剥离 DeepSeek Harness 宿主安全策略、为不同模型注入越狱提示词的争议性开源插件。",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI 安全研究者 / 红队工程师",
+          "DSH 插件开发者（学习插件体系架构）",
+          "Prompt 工程师（研究提示词注入机制）",
+          "受默认策略束缚的 DSH 重度用户（需自担风险）"
+        ],
+        "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。"
+      }
+    },
+    {
       "id": "7631f4cf-44a4-4444-8cab-bb688d46f689",
       "dateAdded": "20261019",
       "type": "github-daily",
@@ -77439,8 +77499,8 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 8882,
-      "forks": 569,
+      "stars": 8923,
+      "forks": 572,
       "starsAdded": 375,
       "createdAt": "2026-10-18T16:00:02.345Z",
       "metaData": {
@@ -77494,8 +77554,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 12841,
-      "forks": 1264,
+      "stars": 12887,
+      "forks": 1266,
       "starsAdded": 350,
       "createdAt": "2026-10-18T16:00:02.328Z",
       "metaData": {
@@ -77521,8 +77581,8 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 138864,
-      "forks": 16513,
+      "stars": 138960,
+      "forks": 16514,
       "starsAdded": 154,
       "createdAt": "2026-10-18T16:00:02.377Z",
       "metaData": {
@@ -77581,8 +77641,8 @@
       "repo": "Kruk2/jasna",
       "description": "Video restoration tool",
       "language": "Python",
-      "stars": 2560,
-      "forks": 197,
+      "stars": 2617,
+      "forks": 198,
       "starsAdded": 115,
       "createdAt": "2026-10-18T16:00:02.365Z",
       "metaData": {
@@ -77634,8 +77694,8 @@
       "repo": "mlabonne/llm-course",
       "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
       "language": "",
-      "stars": 84192,
-      "forks": 9792,
+      "stars": 84248,
+      "forks": 9799,
       "starsAdded": 81,
       "createdAt": "2026-10-18T16:00:02.351Z",
       "metaData": {
