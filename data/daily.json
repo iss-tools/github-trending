@@ -76939,9 +76939,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 52861,
-      "forks": 17314,
-      "starsAdded": 2213,
+      "stars": 53080,
+      "forks": 17352,
+      "starsAdded": 2232,
       "createdAt": "2026-10-18T16:00:02.268Z",
       "metaData": {
         "forks": "0",
@@ -77005,9 +77005,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 75117,
-      "forks": 8219,
-      "starsAdded": 2098,
+      "stars": 75290,
+      "forks": 8240,
+      "starsAdded": 2082,
       "createdAt": "2026-10-18T16:00:02.343Z",
       "metaData": {
         "forks": "0",
@@ -77078,9 +77078,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 216476,
-      "forks": 28980,
-      "starsAdded": 1417,
+      "stars": 216550,
+      "forks": 28992,
+      "starsAdded": 1414,
       "createdAt": "2026-10-18T16:00:02.306Z",
       "metaData": {
         "forks": "0",
@@ -77131,9 +77131,9 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 42617,
-      "forks": 4526,
-      "starsAdded": 1187,
+      "stars": 42660,
+      "forks": 4531,
+      "starsAdded": 1175,
       "createdAt": "2026-10-18T16:00:02.285Z",
       "metaData": {
         "forks": "0",
@@ -77188,8 +77188,8 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 96518,
-      "forks": 6171,
+      "stars": 96603,
+      "forks": 6174,
       "starsAdded": 1146,
       "createdAt": "2026-10-18T16:00:02.335Z",
       "metaData": {
@@ -77262,9 +77262,9 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 54540,
-      "forks": 4941,
-      "starsAdded": 582,
+      "stars": 54577,
+      "forks": 4946,
+      "starsAdded": 589,
       "createdAt": "2026-10-18T16:00:02.341Z",
       "metaData": {
         "forks": "0",
@@ -77308,57 +77308,6 @@
       }
     },
     {
-      "id": "c494e46b-cb57-4569-b85b-45c0d10dda6e",
-      "dateAdded": "20261019",
-      "type": "github-daily",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "repo": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars": 10427,
-      "forks": 748,
-      "starsAdded": 513,
-      "createdAt": "2026-10-18T16:00:02.333Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Rust",
-          "MCP",
-          "AI-Agent",
-          "效率工具"
-        ],
-        "cover": "",
-        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
-        "ability": [
-          "长期记忆存储",
-          "跨 Agent 上下文共享",
-          "语义检索与回溯",
-          "高性能数据处理",
-          "MCP 协议标准集成"
-        ],
-        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "开发者与开发团队",
-          "技术主管与架构师",
-          "AI 工具集成商",
-          "AI 研究爱好者"
-        ],
-        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
-      }
-    },
-    {
       "id": "2bc87019-5f63-4735-9b64-8093159f74dd",
       "dateAdded": "20261019",
       "type": "github-daily",
@@ -77366,9 +77315,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 76457,
-      "forks": 9039,
-      "starsAdded": 502,
+      "stars": 76504,
+      "forks": 9047,
+      "starsAdded": 513,
       "createdAt": "2026-10-18T16:00:02.330Z",
       "metaData": {
         "forks": "0",
@@ -77432,6 +77381,57 @@
       }
     },
     {
+      "id": "c494e46b-cb57-4569-b85b-45c0d10dda6e",
+      "dateAdded": "20261019",
+      "type": "github-daily",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 10462,
+      "forks": 749,
+      "starsAdded": 512,
+      "createdAt": "2026-10-18T16:00:02.333Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
       "id": "7631f4cf-44a4-4444-8cab-bb688d46f689",
       "dateAdded": "20261019",
       "type": "github-daily",
@@ -77439,9 +77439,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 8732,
-      "forks": 567,
-      "starsAdded": 381,
+      "stars": 8759,
+      "forks": 568,
+      "starsAdded": 375,
       "createdAt": "2026-10-18T16:00:02.345Z",
       "metaData": {
         "forks": "0",
@@ -77494,9 +77494,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 12704,
-      "forks": 1251,
-      "starsAdded": 351,
+      "stars": 12732,
+      "forks": 1254,
+      "starsAdded": 350,
       "createdAt": "2026-10-18T16:00:02.328Z",
       "metaData": {
         "forks": "0",
@@ -77521,9 +77521,9 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 138557,
-      "forks": 16498,
-      "starsAdded": 155,
+      "stars": 138589,
+      "forks": 16502,
+      "starsAdded": 154,
       "createdAt": "2026-10-18T16:00:02.377Z",
       "metaData": {
         "forks": "0",
@@ -77581,8 +77581,8 @@
       "repo": "Kruk2/jasna",
       "description": "Video restoration tool",
       "language": "Python",
-      "stars": 2362,
-      "forks": 183,
+      "stars": 2386,
+      "forks": 187,
       "starsAdded": 115,
       "createdAt": "2026-10-18T16:00:02.365Z",
       "metaData": {
@@ -77634,8 +77634,8 @@
       "repo": "mlabonne/llm-course",
       "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
       "language": "",
-      "stars": 83983,
-      "forks": 9779,
+      "stars": 84007,
+      "forks": 9780,
       "starsAdded": 81,
       "createdAt": "2026-10-18T16:00:02.351Z",
       "metaData": {
