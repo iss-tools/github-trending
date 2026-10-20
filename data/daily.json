@@ -78015,9 +78015,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 58912,
-      "forks": 18517,
-      "starsAdded": 3856,
+      "stars": 59069,
+      "forks": 18542,
+      "starsAdded": 3890,
       "createdAt": "2026-10-19T16:00:02.241Z",
       "metaData": {
         "forks": "0",
@@ -78081,9 +78081,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 98979,
-      "forks": 6304,
-      "starsAdded": 1590,
+      "stars": 99039,
+      "forks": 6308,
+      "starsAdded": 1559,
       "createdAt": "2026-10-19T16:00:02.292Z",
       "metaData": {
         "forks": "0",
@@ -78155,9 +78155,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 218329,
-      "forks": 29161,
-      "starsAdded": 1311,
+      "stars": 218377,
+      "forks": 29165,
+      "starsAdded": 1256,
       "createdAt": "2026-10-19T16:00:02.253Z",
       "metaData": {
         "forks": "0",
@@ -78201,6 +78201,66 @@
       }
     },
     {
+      "id": "4546b547-04f5-49da-9d86-e82ec8bdaa8f",
+      "dateAdded": "20261020",
+      "type": "github-daily",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "repo": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars": 140325,
+      "forks": 16623,
+      "starsAdded": 1201,
+      "createdAt": "2026-10-19T16:00:02.279Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://www.comfy.org/",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
+      },
+      "summaryData": {
+        "tags": [
+          "Stable Diffusion",
+          "节点式编辑",
+          "AI 绘画",
+          "工作流自动化",
+          "AIGC"
+        ],
+        "cover": "",
+        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
+        "ability": [
+          "节点式工作流编排",
+          "高性能异步队列",
+          "广泛的模型生态支持",
+          "灵活的部署与集成",
+          "自定义节点开发"
+        ],
+        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "生产力工具"
+        ],
+        "suitable": [
+          "专业视觉创作者",
+          "AI 研究者与发烧友",
+          "后端开发与工程师",
+          "企业级生产团队",
+          "追求可控性的技术极客"
+        ],
+        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
+      }
+    },
+    {
       "id": "ff2171e5-a7c1-4b95-8dec-89fcbb2663c8",
       "dateAdded": "20261020",
       "type": "github-daily",
@@ -78208,8 +78268,8 @@
       "repo": "YuJunZhiXue/dsh-purge",
       "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
       "language": "JavaScript",
-      "stars": 10307,
-      "forks": 2150,
+      "stars": 10428,
+      "forks": 2198,
       "starsAdded": 1168,
       "createdAt": "2026-10-20T11:00:02.323Z",
       "metaData": {
@@ -78261,66 +78321,6 @@
       }
     },
     {
-      "id": "4546b547-04f5-49da-9d86-e82ec8bdaa8f",
-      "dateAdded": "20261020",
-      "type": "github-daily",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "repo": "Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "language": "Python",
-      "stars": 140282,
-      "forks": 16621,
-      "starsAdded": 1011,
-      "createdAt": "2026-10-19T16:00:02.279Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "comfy",
-          "comfyui",
-          "python",
-          "pytorch",
-          "stable-diffusion"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://www.comfy.org/",
-        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
-      },
-      "summaryData": {
-        "tags": [
-          "Stable Diffusion",
-          "节点式编辑",
-          "AI 绘画",
-          "工作流自动化",
-          "AIGC"
-        ],
-        "cover": "",
-        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
-        "ability": [
-          "节点式工作流编排",
-          "高性能异步队列",
-          "广泛的模型生态支持",
-          "灵活的部署与集成",
-          "自定义节点开发"
-        ],
-        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
-        "category": [
-          "AI 工具",
-          "开源项目",
-          "生产力工具"
-        ],
-        "suitable": [
-          "专业视觉创作者",
-          "AI 研究者与发烧友",
-          "后端开发与工程师",
-          "企业级生产团队",
-          "追求可控性的技术极客"
-        ],
-        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
-      }
-    },
-    {
       "id": "ead978bf-52be-47d4-bc71-f920d1614827",
       "dateAdded": "20261020",
       "type": "github-daily",
@@ -78328,8 +78328,8 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 168594,
-      "forks": 9166,
+      "stars": 168691,
+      "forks": 9169,
       "starsAdded": 1007,
       "createdAt": "2026-10-20T11:00:02.314Z",
       "metaData": {
@@ -78391,8 +78391,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 33019,
-      "forks": 2065,
+      "stars": 33090,
+      "forks": 2073,
       "starsAdded": 849,
       "createdAt": "2026-10-20T11:00:02.297Z",
       "metaData": {
@@ -78443,8 +78443,8 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 129474,
-      "forks": 12482,
+      "stars": 129524,
+      "forks": 12483,
       "starsAdded": 751,
       "createdAt": "2026-10-20T11:00:02.320Z",
       "metaData": {
@@ -78507,6 +78507,132 @@
           "对代码隐私与合规有严格要求的团队"
         ],
         "description": "Graphify 是 YC S26 孵化的开源 CLI 工具，用 tree-sitter 将代码库解析为真实知识图谱而非向量索引，支持 25+ AI 助手一键接入，纯本地运行、零 token 成本，并生成 HTML 可视化、分析报告和图数据三件套。适合大型代码库理解与团队协作，但小项目性价比低，超大 monorepo 存在性能瓶颈，且 AI 有时会绕过它直接用 grep。"
+      }
+    },
+    {
+      "id": "6e690295-e628-426b-883e-7fb76a24f127",
+      "dateAdded": "20261020",
+      "type": "github-daily",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 42039,
+      "forks": 6968,
+      "starsAdded": 719,
+      "createdAt": "2026-10-19T16:00:02.317Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+      }
+    },
+    {
+      "id": "4e2dceb1-8bce-4772-8274-bedf9df5a4ee",
+      "dateAdded": "20261020",
+      "type": "github-daily",
+      "url": "https://github.com/ruvnet/ruflo",
+      "repo": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 77512,
+      "forks": 9124,
+      "starsAdded": 683,
+      "createdAt": "2026-10-19T16:00:02.284Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One",
+        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Multi-Agent",
+          "DevOps",
+          "GitHub",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "Ruflo: Claude Code 多智能体编排平台评测",
+        "ability": [
+          "多智能体蜂群协作",
+          "跨会话持久化记忆",
+          "智能路由与成本优化",
+          "企业级安全与联邦通信",
+          "自动化测试与代码审计"
+        ],
+        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Claude Code 重度用户",
+          "追求高效的开发团队",
+          "DevOps 与运维工程师",
+          "技术架构师",
+          "个人开发者"
+        ],
+        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
       }
     },
     {
@@ -78621,8 +78747,8 @@
       "repo": "msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
-      "stars": 161960,
-      "forks": 26217,
+      "stars": 161980,
+      "forks": 26222,
       "starsAdded": 590,
       "createdAt": "2026-10-20T11:00:02.330Z",
       "metaData": {
@@ -78667,185 +78793,6 @@
       }
     },
     {
-      "id": "4e2dceb1-8bce-4772-8274-bedf9df5a4ee",
-      "dateAdded": "20261020",
-      "type": "github-daily",
-      "url": "https://github.com/ruvnet/ruflo",
-      "repo": "ruvnet/ruflo",
-      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-      "language": "TypeScript",
-      "stars": 77489,
-      "forks": 9123,
-      "starsAdded": 564,
-      "createdAt": "2026-10-19T16:00:02.284Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agentic-ai",
-          "agentic-framework",
-          "agentic-workflow",
-          "agents",
-          "ai-agents",
-          "ai-assistant",
-          "ai-skills",
-          "autonomous-agents",
-          "claude",
-          "codex",
-          "dsh-plugin",
-          "harness",
-          "mcp-server",
-          "multi-agent",
-          "multi-agent-systems",
-          "npm",
-          "skills",
-          "swarm",
-          "swarm-intelligence",
-          "typescript"
-        ],
-        "license": "MIT license",
-        "homepage": "https://Cognitum.One",
-        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Multi-Agent",
-          "DevOps",
-          "GitHub",
-          "效率工具"
-        ],
-        "cover": "",
-        "title": "Ruflo: Claude Code 多智能体编排平台评测",
-        "ability": [
-          "多智能体蜂群协作",
-          "跨会话持久化记忆",
-          "智能路由与成本优化",
-          "企业级安全与联邦通信",
-          "自动化测试与代码审计"
-        ],
-        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "Claude Code 重度用户",
-          "追求高效的开发团队",
-          "DevOps 与运维工程师",
-          "技术架构师",
-          "个人开发者"
-        ],
-        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
-      }
-    },
-    {
-      "id": "0b40734d-b2d0-43f6-b73f-c432fa8d645d",
-      "dateAdded": "20261020",
-      "type": "github-daily",
-      "url": "https://github.com/Kruk2/jasna",
-      "repo": "Kruk2/jasna",
-      "description": "Video restoration tool",
-      "language": "Python",
-      "stars": 3146,
-      "forks": 230,
-      "starsAdded": 498,
-      "createdAt": "2026-10-19T16:00:02.304Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPL-3.0 license",
-        "homepage": "",
-        "description": "Video restoration tool. Contribute to Kruk2/jasna development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "视频修复",
-          "深度学习",
-          "TensorRT",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "Jasna 深度评测：速度碾压 Lada 的开源视频马赛克修复工具",
-        "ability": [
-          "基于 RF-DETR 检测 + BasicVSR++ 修复双模型，恢复视频被打码区域",
-          "TensorRT 加速推理，处理速度达同类工具 3-4 倍，显存占用低至 4GB",
-          "原生支持 VR180 视频逐眼修复，含 VR 专用检测模型",
-          "提供 GUI + CLI 双形态，支持流媒体播放、Stash 对接与队列处理",
-          "内置 Segment Editor 可视化标记片段与掩码优化"
-        ],
-        "summary": "一款用深度学习恢复视频马赛克的开源工具，速度比同类 Lada 快 3-4 倍。",
-        "category": [
-          "开发工具",
-          "AI 应用",
-          "视频处理"
-        ],
-        "suitable": [
-          "拥有 NVIDIA 16 系以上显卡的用户",
-          "需要批量处理 4K/8K 视频的重度收藏者",
-          "VR 内容爱好者",
-          "Stash 媒体库用户",
-          "喜欢调参折腾的硬核玩家"
-        ],
-        "description": "Jasna 是一款 AGPL 协议开源的视频马赛克修复工具，在 Lada 的修复模型基础上重构工程框架，通过 TensorRT 加速实现 3-4 倍速度提升与更低显存占用，并独有 VR 支持、流媒体和二次修复流水线。应用完全免费，但部分增强模型需累计赞助 15 美元解锁；需 NVIDIA 显卡，首次运行需等待 15-60 分钟引擎编译。"
-      }
-    },
-    {
-      "id": "6e690295-e628-426b-883e-7fb76a24f127",
-      "dateAdded": "20261020",
-      "type": "github-daily",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "repo": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "stars": 42005,
-      "forks": 6961,
-      "starsAdded": 363,
-      "createdAt": "2026-10-19T16:00:02.317Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
-      },
-      "summaryData": {
-        "tags": [
-          "金融大模型",
-          "K线预测",
-          "时间序列",
-          "量化交易",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
-        "ability": [
-          "零样本K线价格预测，跨市场、跨频率泛化",
-          "波动率预测（MAE 较通用模型降低9%）",
-          "高保真合成K线生成，可用于回测数据增强",
-          "量化Alpha因子/交易信号特征提取",
-          "支持Python微调，附Qlib A股完整流水线"
-        ],
-        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
-        "category": [
-          "AI 模型",
-          "开源项目",
-          "金融量化"
-        ],
-        "suitable": [
-          "量化研究员",
-          "FinTech 工程师",
-          "机器学习/金融方向学生与研究者",
-          "独立开发者与 AI 爱好者",
-          "需要合成行情数据的团队"
-        ],
-        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
-      }
-    },
-    {
       "id": "c35f93e7-a2d6-46f7-9c59-13e6f478dcf4",
       "dateAdded": "20261020",
       "type": "github-daily",
@@ -78853,9 +78800,9 @@
       "repo": "headroomlabs-ai/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": 76495,
-      "forks": 5938,
-      "starsAdded": 310,
+      "stars": 76515,
+      "forks": 5939,
+      "starsAdded": 555,
       "createdAt": "2026-10-19T16:00:02.298Z",
       "metaData": {
         "forks": "0",
@@ -78920,6 +78867,59 @@
       }
     },
     {
+      "id": "0b40734d-b2d0-43f6-b73f-c432fa8d645d",
+      "dateAdded": "20261020",
+      "type": "github-daily",
+      "url": "https://github.com/Kruk2/jasna",
+      "repo": "Kruk2/jasna",
+      "description": "Video restoration tool",
+      "language": "Python",
+      "stars": 3146,
+      "forks": 230,
+      "starsAdded": 498,
+      "createdAt": "2026-10-19T16:00:02.304Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPL-3.0 license",
+        "homepage": "",
+        "description": "Video restoration tool. Contribute to Kruk2/jasna development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "视频修复",
+          "深度学习",
+          "TensorRT",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Jasna 深度评测：速度碾压 Lada 的开源视频马赛克修复工具",
+        "ability": [
+          "基于 RF-DETR 检测 + BasicVSR++ 修复双模型，恢复视频被打码区域",
+          "TensorRT 加速推理，处理速度达同类工具 3-4 倍，显存占用低至 4GB",
+          "原生支持 VR180 视频逐眼修复，含 VR 专用检测模型",
+          "提供 GUI + CLI 双形态，支持流媒体播放、Stash 对接与队列处理",
+          "内置 Segment Editor 可视化标记片段与掩码优化"
+        ],
+        "summary": "一款用深度学习恢复视频马赛克的开源工具，速度比同类 Lada 快 3-4 倍。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "视频处理"
+        ],
+        "suitable": [
+          "拥有 NVIDIA 16 系以上显卡的用户",
+          "需要批量处理 4K/8K 视频的重度收藏者",
+          "VR 内容爱好者",
+          "Stash 媒体库用户",
+          "喜欢调参折腾的硬核玩家"
+        ],
+        "description": "Jasna 是一款 AGPL 协议开源的视频马赛克修复工具，在 Lada 的修复模型基础上重构工程框架，通过 TensorRT 加速实现 3-4 倍速度提升与更低显存占用，并独有 VR 支持、流媒体和二次修复流水线。应用完全免费，但部分增强模型需累计赞助 15 美元解锁；需 NVIDIA 显卡，首次运行需等待 15-60 分钟引擎编译。"
+      }
+    },
+    {
       "id": "b9704a9e-f954-4f52-9f66-c070fe37f0e4",
       "dateAdded": "20261020",
       "type": "github-daily",
@@ -78980,8 +78980,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 30600,
-      "forks": 3453,
+      "stars": 30613,
+      "forks": 3455,
       "starsAdded": 262,
       "createdAt": "2026-10-20T11:00:02.334Z",
       "metaData": {
@@ -79085,13 +79085,38 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 94215,
-      "forks": 23636,
+      "stars": 94235,
+      "forks": 23639,
       "starsAdded": 98,
       "createdAt": "2026-10-20T11:00:02.343Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "amd",
+          "blackwell",
+          "cuda",
+          "deepseek",
+          "deepseek-v3",
+          "gpt",
+          "gpt-oss",
+          "inference",
+          "kimi",
+          "llama",
+          "llm",
+          "llm-serving",
+          "model-serving",
+          "moe",
+          "openai",
+          "pytorch",
+          "qwen",
+          "qwen3",
+          "tpu",
+          "transformer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://vllm.ai",
+        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs - vllm-project/vllm"
       },
       "summaryData": {
         "tags": [
@@ -79134,13 +79159,38 @@
       "repo": "sickn33/agentic-awesome-skills",
       "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
       "language": "Python",
-      "stars": 47988,
-      "forks": 7008,
+      "stars": 48005,
+      "forks": 7009,
       "starsAdded": 58,
       "createdAt": "2026-10-20T11:00:02.336Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "agentic-skills",
+          "ai-agent-skills",
+          "ai-agents",
+          "ai-coding",
+          "ai-workflows",
+          "antigravity",
+          "antigravity-skills",
+          "claude-code",
+          "claude-code-skills",
+          "codex-cli",
+          "codex-skills",
+          "cursor",
+          "cursor-skills",
+          "developer-tools",
+          "gemini-cli",
+          "gemini-skills",
+          "kiro",
+          "mcp",
+          "skill-library"
+        ],
+        "license": "MIT license",
+        "homepage": "https://aaskills.tech/",
+        "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench. - sickn33/agentic-awesome-skills"
       },
       "summaryData": {
         "tags": [
