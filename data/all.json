@@ -1,6 +1,178 @@
 {
   "all": [
     {
+      "id": "a7085430-a203-4903-8276-dcd8a81ebd38",
+      "url": "https://github.com/vllm-project/vllm",
+      "domain": "github.com",
+      "repo": "vllm-project/vllm",
+      "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-20T11:13:54.958Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "vLLM",
+          "大模型推理",
+          "开源项目",
+          "PagedAttention",
+          "GPU 优化"
+        ],
+        "cover": "",
+        "title": "vLLM 深度评测：把 GPU 显存利用率从 40% 提到 96% 的大模型推理引擎",
+        "ability": [
+          "PagedAttention 分页注意力：借鉴操作系统虚拟内存思想管理显存，浪费率从 60-80% 降到 4% 以下",
+          "Continuous Batching 连续批处理：GPU 常年满负荷，新请求随到随处理",
+          "完全兼容 OpenAI API：改一行 base_url 即可无缝切换自托管模型",
+          "支持 400+ 模型架构：新模型发布当天即可运行",
+          "多硬件支持：覆盖 NVIDIA/AMD/TPU/Intel/CPU，Apple Silicon 也有社区方案"
+        ],
+        "summary": "vLLM 是让大模型推理吞吐量提升 2-24 倍的开源引擎，企业自托管大模型部署的事实标准",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "大模型推理"
+        ],
+        "suitable": [
+          "企业 AI 平台团队（同等流量可省一半以上 GPU）",
+          "需要自托管大模型的应用开发者",
+          "独立开发者与小团队（一张卡即可跑模型服务）",
+          "算法研究者（新模型最快落地路径）",
+          "数据工程师（离线批量推理场景）"
+        ],
+        "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      },
+      "type": "project",
+      "dateAdded": "20261020"
+    },
+    {
+      "id": "117b4e7c-620f-4b64-8919-ee468f240e79",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "domain": "github.com",
+      "repo": "sickn33/agentic-awesome-skills",
+      "description": "该项目把散落在数千个仓库里的 AI Agent 技能（SKILL.md）统一聚合，配上 npm 安装器、本地 MCP 控制平面、Stack 校验与 Plan 预览，形成类似技能应用商店的发行渠道。Star 超 4.4 万，是 Agent Skills 赛道体量最大的第三方聚合仓，但需注意质量良莠不齐、部分技能依赖付费 API，且存在 prompt injection 等安全风险，建议按需精准安装而非全量引入。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-20T11:09:11.098Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Agent Skills",
+          "Claude Code",
+          "Cursor",
+          "MCP",
+          "GitHub 开源"
+        ],
+        "cover": "",
+        "title": "agentic-awesome-skills 深度评测：2705+ 个 AI Agent 技能的聚合应用商店",
+        "ability": [
+          "聚合 2705+ 个覆盖开发、安全、测试等领域的 Agent 技能，并标注原始出处与许可证",
+          "提供 npx CLI 一键安装器，跨 11+ 个 Agent 宿主（Claude Code/Cursor/Codex/Gemini CLI 等）分发技能",
+          "内置 AAS Core 本地 MCP 控制平面，支持 Agent 自动检索技能、生成 Stack 计划并供人工审批",
+          "提供 12 个按岗位打包的插件（Web 开发、安全工程师、QA、DevOps 等）与风险分级过滤",
+          "支持 --dry-run 预览、--risk 安全过滤和按需精准安装，防止 Agent 上下文过载"
+        ],
+        "summary": "一个聚合了 2705+ 个标准化 AI Agent 技能（SKILL.md）的 GitHub 仓库，一条 npx 命令即可把技能装进 Claude Code、Cursor、Codex 等主流编程 Agent。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 Claude Code、Cursor、Codex CLI 等 AI 编程工具的独立开发者",
+          "想快速搭建 Side Project / SaaS 的个人开发者与创业者",
+          "负责 Agent 工具链治理与安全准入的团队 Tech Lead",
+          "关注 Agent Skills 生态与安全合规的安全工程师",
+          "想体验 AI 编程工作流的编程小白与学生"
+        ],
+        "description": "该项目把散落在数千个仓库里的 AI Agent 技能（SKILL.md）统一聚合，配上 npm 安装器、本地 MCP 控制平面、Stack 校验与 Plan 预览，形成类似技能应用商店的发行渠道。Star 超 4.4 万，是 Agent Skills 赛道体量最大的第三方聚合仓，但需注意质量良莠不齐、部分技能依赖付费 API，且存在 prompt injection 等安全风险，建议按需精准安装而非全量引入。"
+      },
+      "type": "project",
+      "dateAdded": "20261020"
+    },
+    {
+      "id": "2b16452d-e337-40a6-826c-1fa00c16153b",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "domain": "github.com",
+      "repo": "Graphify-Labs/graphify",
+      "description": "Graphify 是 YC S26 孵化的开源 CLI 工具，用 tree-sitter 将代码库解析为真实知识图谱而非向量索引，支持 25+ AI 助手一键接入，纯本地运行、零 token 成本，并生成 HTML 可视化、分析报告和图数据三件套。适合大型代码库理解与团队协作，但小项目性价比低，超大 monorepo 存在性能瓶颈，且 AI 有时会绕过它直接用 grep。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-20T11:05:10.135Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "antigravity",
+          "ast",
+          "claude-code",
+          "code-analysis",
+          "code-search",
+          "codex",
+          "cursor",
+          "developer-tools",
+          "gemini",
+          "graphify",
+          "graphrag",
+          "knowledge-graph",
+          "leiden",
+          "llm",
+          "mcp",
+          "openclaw",
+          "rag",
+          "skills",
+          "tree-sitter"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.graphify.com",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. - Graphify-Labs/graphify"
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "tree-sitter",
+          "AI 编码助手",
+          "代码分析",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Graphify 深度评测：把代码库变成 AI 编码助手能“读懂”的知识图谱",
+        "ability": [
+          "用 tree-sitter 纯本地解析 36+ 编程语言，构建真实代码知识图谱（非向量检索）",
+          "每条关系边带 EXTRACTED/INFERRED 来源标签，可解释、可追溯",
+          "一条命令接入 Claude Code、Cursor、Codex 等 25+ AI 编码助手",
+          "支持文档、PDF、SQL、Terraform、视频等多源数据汇入同一张图",
+          "零 API 调用、零遥测，支持 Ollama 全本地运行，隐私友好"
+        ],
+        "summary": "一个开源 CLI 工具，把代码库解析成知识图谱，让 Claude Code、Cursor 等 AI 助手更懂你的项目、更省 token。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "接手陌生大型代码库、需要快速摸清架构的工程师",
+          "带 AI 助手日常开发、想省 token 的独立开发者",
+          "需要评估 PR 影响面的 Tech Lead",
+          "负责新人 onboarding 的架构师 / Mentor",
+          "对代码隐私与合规有严格要求的团队"
+        ],
+        "description": "Graphify 是 YC S26 孵化的开源 CLI 工具，用 tree-sitter 将代码库解析为真实知识图谱而非向量索引，支持 25+ AI 助手一键接入，纯本地运行、零 token 成本，并生成 HTML 可视化、分析报告和图数据三件套。适合大型代码库理解与团队协作，但小项目性价比低，超大 monorepo 存在性能瓶颈，且 AI 有时会绕过它直接用 grep。"
+      },
+      "type": "project",
+      "dateAdded": "20261020"
+    },
+    {
       "id": "e6846402-3e43-4034-963e-82210aa7be4a",
       "url": "https://github.com/shiyu-coder/Kronos",
       "domain": "github.com",
@@ -12759,16 +12931,20 @@
         "stars": "0",
         "topics": [
           "ai",
+          "ai-agents",
           "animation",
+          "claude-code",
           "ffmpeg",
           "framework",
           "gsap",
           "html",
+          "html-to-video",
           "mcp",
+          "motion-graphics",
           "puppeteer",
           "rendering",
           "typescript",
-          "video"
+          "video-editor"
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://hyperframes.dev",
