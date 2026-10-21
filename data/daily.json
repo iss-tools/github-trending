@@ -79235,9 +79235,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 60415,
-      "forks": 18863,
-      "starsAdded": 3890,
+      "stars": 60599,
+      "forks": 18895,
+      "starsAdded": 3861,
       "createdAt": "2026-10-20T17:00:02.785Z",
       "metaData": {
         "forks": "0",
@@ -79301,9 +79301,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 34042,
-      "forks": 2125,
-      "starsAdded": 1680,
+      "stars": 34238,
+      "forks": 2137,
+      "starsAdded": 1712,
       "createdAt": "2026-10-20T17:00:02.797Z",
       "metaData": {
         "forks": "0",
@@ -79353,9 +79353,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 99673,
+      "stars": 99752,
       "forks": 6318,
-      "starsAdded": 1559,
+      "starsAdded": 1565,
       "createdAt": "2026-10-20T17:00:02.808Z",
       "metaData": {
         "forks": "0",
@@ -79420,6 +79420,59 @@
       }
     },
     {
+      "id": "215b5ceb-ed4d-4242-86c0-847d964aefe2",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 218931,
+      "forks": 29212,
+      "starsAdded": 1240,
+      "createdAt": "2026-10-20T17:00:02.833Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
+      }
+    },
+    {
       "id": "ceb770d7-242c-486b-9d38-84ffbdcb9adf",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79427,9 +79480,9 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 169557,
-      "forks": 9222,
-      "starsAdded": 1396,
+      "stars": 169671,
+      "forks": 9228,
+      "starsAdded": 1208,
       "createdAt": "2026-10-20T17:00:02.811Z",
       "metaData": {
         "forks": "0",
@@ -79483,59 +79536,6 @@
       }
     },
     {
-      "id": "215b5ceb-ed4d-4242-86c0-847d964aefe2",
-      "dateAdded": "20261021",
-      "type": "github-daily",
-      "url": "https://github.com/anomalyco/opencode",
-      "repo": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "language": "TypeScript",
-      "stars": 218864,
-      "forks": 29201,
-      "starsAdded": 1256,
-      "createdAt": "2026-10-20T17:00:02.833Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://opencode.ai",
-        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "AI Agent",
-          "Terminal",
-          "OpenSource",
-          "Privacy",
-          "GitHub Actions"
-        ],
-        "cover": "",
-        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
-        "ability": [
-          "终端TUI双模式",
-          "多模型提供商兼容",
-          "GitHub深度集成与自动化",
-          "隐私友好可自托管",
-          "多平台桌面支持"
-        ],
-        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
-        "category": [
-          "AI编程",
-          "开发工具",
-          "GitHub自动化"
-        ],
-        "suitable": [
-          "个人开发者",
-          "终端重度用户",
-          "隐私合规团队",
-          "开源项目维护者",
-          "Server/云用户"
-        ],
-        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
-      }
-    },
-    {
       "id": "2d52b27b-cee0-4fb0-a15f-a1ab6eec4e1a",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79543,9 +79543,9 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 140713,
-      "forks": 16657,
-      "starsAdded": 1201,
+      "stars": 140771,
+      "forks": 16664,
+      "starsAdded": 1206,
       "createdAt": "2026-10-20T17:00:02.820Z",
       "metaData": {
         "forks": "0",
@@ -79603,9 +79603,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 130168,
-      "forks": 12536,
-      "starsAdded": 906,
+      "stars": 130246,
+      "forks": 12543,
+      "starsAdded": 802,
       "createdAt": "2026-10-20T17:00:02.831Z",
       "metaData": {
         "forks": "0",
@@ -79677,9 +79677,9 @@
       "repo": "shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 42326,
-      "forks": 7008,
-      "starsAdded": 719,
+      "stars": 42356,
+      "forks": 7013,
+      "starsAdded": 733,
       "createdAt": "2026-10-20T17:00:02.849Z",
       "metaData": {
         "forks": "0",
@@ -79730,9 +79730,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 77806,
-      "forks": 9152,
-      "starsAdded": 683,
+      "stars": 77849,
+      "forks": 9160,
+      "starsAdded": 684,
       "createdAt": "2026-10-20T17:00:02.829Z",
       "metaData": {
         "forks": "0",
@@ -79803,9 +79803,9 @@
       "repo": "msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
-      "stars": 162296,
-      "forks": 26224,
-      "starsAdded": 590,
+      "stars": 162357,
+      "forks": 26230,
+      "starsAdded": 562,
       "createdAt": "2026-10-20T17:00:02.835Z",
       "metaData": {
         "forks": "0",
@@ -79856,9 +79856,9 @@
       "repo": "headroomlabs-ai/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": 76727,
-      "forks": 5956,
-      "starsAdded": 555,
+      "stars": 76758,
+      "forks": 5958,
+      "starsAdded": 549,
       "createdAt": "2026-10-20T17:00:02.841Z",
       "metaData": {
         "forks": "0",
@@ -79930,9 +79930,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 30773,
-      "forks": 3463,
-      "starsAdded": 262,
+      "stars": 30794,
+      "forks": 3464,
+      "starsAdded": 267,
       "createdAt": "2026-10-20T17:00:02.846Z",
       "metaData": {
         "forks": "0",
@@ -79983,9 +79983,9 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 94417,
-      "forks": 23665,
-      "starsAdded": 98,
+      "stars": 94437,
+      "forks": 23673,
+      "starsAdded": 128,
       "createdAt": "2026-10-20T17:00:02.852Z",
       "metaData": {
         "forks": "0",
@@ -80047,6 +80047,154 @@
           "数据工程师（离线批量推理场景）"
         ],
         "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      }
+    },
+    {
+      "id": "e92bf5a4-f296-400d-8ebc-207eb2644c70",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/wshobson/agents",
+      "repo": "wshobson/agents",
+      "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "language": "Python",
+      "stars": 41254,
+      "forks": 4393,
+      "starsAdded": 93,
+      "createdAt": "2026-10-21T01:00:02.254Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "agentic-ai",
+          "ai-agents",
+          "anthropic",
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-marketplace",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "cursor-rules",
+          "github-copilot",
+          "mcp",
+          "multi-agent",
+          "opencode",
+          "pi-coding-agent",
+          "subagents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://sethhobson.com",
+        "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi - wshobson/agents"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Agent",
+          "插件市场",
+          "开源项目",
+          "编程效率"
+        ],
+        "cover": "",
+        "title": "wshobson/agents 深度评测：4 万 Star 的多工具链 AI 编程插件市场",
+        "ability": [
+          "跨工具分发：一套配置同步 Claude Code、Cursor、Codex、Copilot 等 7 大编程工具",
+          "海量专家资源：202 个 Agent、185 个 Skill、105 个命令、94 个插件，按需安装卸载",
+          "三档模型路由：按任务复杂度自动分配 Opus/Sonnet/Haiku，把成本当一等公民",
+          "plugin-eval 评测框架：静态分析 + LLM 评审 + Monte Carlo 统计的 Agent 质量打分",
+          "治理与审计：protect-mcp 签名回执、block-no-verify 防呆钩子，满足合规审计需求"
+        ],
+        "summary": "一个把 202 个专家 Agent 打包成跨 7 大 AI 编程工具统一插件市场的开源仓库，是 Claude Code 生态最具工程化也最容易装错的资源合集。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "资源合集"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Cursor 的开发者",
+          "需要在多个 AI 编程工具间切换的工程师",
+          "需要为团队建立 Agent 质量门槛的 Tech Lead",
+          "金融、医疗等有合规审计需求的行业开发者",
+          "想研究 Agent 工程化与插件分发的 AI 爱好者"
+        ],
+        "description": "由前 Apple 工程师 Seth Hobson 维护的开源项目，采用适配器架构实现一次编写、到处安装：把提示词、工具权限、模型路由打包成可版本化的插件，通过 marketplace 命令装进 7 种编程工具。亮点是多 Harness 分发和评测体系，但需警惕装太多导致上下文膨胀和 Opus 成本飙升，建议按需精选 2-3 个插件使用。"
+      }
+    },
+    {
+      "id": "3502c092-3175-4393-9e94-8263e2b99bb0",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "repo": "sickn33/agentic-awesome-skills",
+      "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+      "language": "Python",
+      "stars": 48093,
+      "forks": 7021,
+      "starsAdded": 83,
+      "createdAt": "2026-10-21T01:00:02.257Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "agentic-skills",
+          "ai-agent-skills",
+          "ai-agents",
+          "ai-coding",
+          "ai-workflows",
+          "antigravity",
+          "antigravity-skills",
+          "claude-code",
+          "claude-code-skills",
+          "codex-cli",
+          "codex-skills",
+          "cursor",
+          "cursor-skills",
+          "developer-tools",
+          "gemini-cli",
+          "gemini-skills",
+          "kiro",
+          "mcp",
+          "skill-library"
+        ],
+        "license": "MIT license",
+        "homepage": "https://aaskills.tech/",
+        "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench. - sickn33/agentic-awesome-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Agent Skills",
+          "Claude Code",
+          "Cursor",
+          "MCP",
+          "GitHub 开源"
+        ],
+        "cover": "",
+        "title": "agentic-awesome-skills 深度评测：2705+ 个 AI Agent 技能的聚合应用商店",
+        "ability": [
+          "聚合 2705+ 个覆盖开发、安全、测试等领域的 Agent 技能，并标注原始出处与许可证",
+          "提供 npx CLI 一键安装器，跨 11+ 个 Agent 宿主（Claude Code/Cursor/Codex/Gemini CLI 等）分发技能",
+          "内置 AAS Core 本地 MCP 控制平面，支持 Agent 自动检索技能、生成 Stack 计划并供人工审批",
+          "提供 12 个按岗位打包的插件（Web 开发、安全工程师、QA、DevOps 等）与风险分级过滤",
+          "支持 --dry-run 预览、--risk 安全过滤和按需精准安装，防止 Agent 上下文过载"
+        ],
+        "summary": "一个聚合了 2705+ 个标准化 AI Agent 技能（SKILL.md）的 GitHub 仓库，一条 npx 命令即可把技能装进 Claude Code、Cursor、Codex 等主流编程 Agent。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 Claude Code、Cursor、Codex CLI 等 AI 编程工具的独立开发者",
+          "想快速搭建 Side Project / SaaS 的个人开发者与创业者",
+          "负责 Agent 工具链治理与安全准入的团队 Tech Lead",
+          "关注 Agent Skills 生态与安全合规的安全工程师",
+          "想体验 AI 编程工作流的编程小白与学生"
+        ],
+        "description": "该项目把散落在数千个仓库里的 AI Agent 技能（SKILL.md）统一聚合，配上 npm 安装器、本地 MCP 控制平面、Stack 校验与 Plan 预览，形成类似技能应用商店的发行渠道。Star 超 4.4 万，是 Agent Skills 赛道体量最大的第三方聚合仓，但需注意质量良莠不齐、部分技能依赖付费 API，且存在 prompt injection 等安全风险，建议按需精准安装而非全量引入。"
       }
     }
   ]

@@ -1,6 +1,80 @@
 {
   "all": [
     {
+      "id": "5674527f-2748-446e-8690-3f6ec8ed7939",
+      "url": "https://github.com/wshobson/agents",
+      "domain": "github.com",
+      "repo": "wshobson/agents",
+      "description": "由前 Apple 工程师 Seth Hobson 维护的开源项目，采用适配器架构实现一次编写、到处安装：把提示词、工具权限、模型路由打包成可版本化的插件，通过 marketplace 命令装进 7 种编程工具。亮点是多 Harness 分发和评测体系，但需警惕装太多导致上下文膨胀和 Opus 成本飙升，建议按需精选 2-3 个插件使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-21T01:05:22.415Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "agentic-ai",
+          "ai-agents",
+          "anthropic",
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-marketplace",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "cursor-rules",
+          "github-copilot",
+          "mcp",
+          "multi-agent",
+          "opencode",
+          "pi-coding-agent",
+          "subagents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://sethhobson.com",
+        "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi - wshobson/agents"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Agent",
+          "插件市场",
+          "开源项目",
+          "编程效率"
+        ],
+        "cover": "",
+        "title": "wshobson/agents 深度评测：4 万 Star 的多工具链 AI 编程插件市场",
+        "ability": [
+          "跨工具分发：一套配置同步 Claude Code、Cursor、Codex、Copilot 等 7 大编程工具",
+          "海量专家资源：202 个 Agent、185 个 Skill、105 个命令、94 个插件，按需安装卸载",
+          "三档模型路由：按任务复杂度自动分配 Opus/Sonnet/Haiku，把成本当一等公民",
+          "plugin-eval 评测框架：静态分析 + LLM 评审 + Monte Carlo 统计的 Agent 质量打分",
+          "治理与审计：protect-mcp 签名回执、block-no-verify 防呆钩子，满足合规审计需求"
+        ],
+        "summary": "一个把 202 个专家 Agent 打包成跨 7 大 AI 编程工具统一插件市场的开源仓库，是 Claude Code 生态最具工程化也最容易装错的资源合集。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "资源合集"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Cursor 的开发者",
+          "需要在多个 AI 编程工具间切换的工程师",
+          "需要为团队建立 Agent 质量门槛的 Tech Lead",
+          "金融、医疗等有合规审计需求的行业开发者",
+          "想研究 Agent 工程化与插件分发的 AI 爱好者"
+        ],
+        "description": "由前 Apple 工程师 Seth Hobson 维护的开源项目，采用适配器架构实现一次编写、到处安装：把提示词、工具权限、模型路由打包成可版本化的插件，通过 marketplace 命令装进 7 种编程工具。亮点是多 Harness 分发和评测体系，但需警惕装太多导致上下文膨胀和 Opus 成本飙升，建议按需精选 2-3 个插件使用。"
+      },
+      "type": "project",
+      "dateAdded": "20261021"
+    },
+    {
       "id": "a7085430-a203-4903-8276-dcd8a81ebd38",
       "url": "https://github.com/vllm-project/vllm",
       "domain": "github.com",
