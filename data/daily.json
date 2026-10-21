@@ -37947,8 +37947,8 @@
       "starsAdded": 118,
       "createdAt": "2026-09-16T14:00:02.474Z",
       "metaData": {
-        "forks": "14534",
-        "stars": "110684",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "alternative",
@@ -39561,8 +39561,8 @@
       "starsAdded": 120,
       "createdAt": "2026-09-16T16:00:02.305Z",
       "metaData": {
-        "forks": "14534",
-        "stars": "110684",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "alternative",
@@ -41397,8 +41397,8 @@
       "starsAdded": 128,
       "createdAt": "2026-09-18T11:00:01.971Z",
       "metaData": {
-        "forks": "14534",
-        "stars": "110684",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "alternative",
@@ -42767,8 +42767,8 @@
       "starsAdded": 120,
       "createdAt": "2026-09-18T16:00:02.085Z",
       "metaData": {
-        "forks": "14534",
-        "stars": "110684",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "alternative",
@@ -79235,9 +79235,9 @@
       "repo": "MadsLorentzen/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "stars": 61892,
-      "forks": 19136,
-      "starsAdded": 3861,
+      "stars": 62484,
+      "forks": 19297,
+      "starsAdded": 3131,
       "createdAt": "2026-10-20T17:00:02.785Z",
       "metaData": {
         "forks": "0",
@@ -79294,6 +79294,69 @@
       }
     },
     {
+      "id": "ceb770d7-242c-486b-9d38-84ffbdcb9adf",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 170921,
+      "forks": 9298,
+      "starsAdded": 2051,
+      "createdAt": "2026-10-20T17:00:02.811Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "claude",
+          "claude-code",
+          "claude-code-plugin",
+          "cursor-rules",
+          "developer-tools",
+          "llm",
+          "prompt-engineering",
+          "yagni"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ponytail.dev",
+        "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "开源项目",
+          "Claude Code",
+          "Cursor",
+          "YAGNI"
+        ],
+        "cover": "",
+        "title": "Ponytail：给 AI 写代码踩刹车的极简规则集",
+        "ability": [
+          "AI 代码精简",
+          "七步决策过滤",
+          "API 成本降低",
+          "安全底线保障",
+          "多平台集成"
+        ],
+        "summary": "通过七步决策阶梯防止 AI 过度工程化，减少代码量与 API 成本的开发工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "前端业务开发者",
+          "快速原型开发团队",
+          "技术成本控制者"
+        ],
+        "description": "Ponytail 是一款专为 AI 编程助手设计的插件或规则集，利用七级决策阶梯强制 AI 在写代码前判断任务必要性。实测可减少 54% 代码量和 20% API 成本，同时保留必要的安全校验，有效解决 AI“过度封装”痛点。"
+      }
+    },
+    {
       "id": "f10890df-c551-403f-96b8-90f65ecef968",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79301,9 +79364,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 34933,
-      "forks": 2196,
-      "starsAdded": 1712,
+      "stars": 35296,
+      "forks": 2220,
+      "starsAdded": 1997,
       "createdAt": "2026-10-20T17:00:02.797Z",
       "metaData": {
         "forks": "0",
@@ -79353,9 +79416,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 100395,
-      "forks": 6351,
-      "starsAdded": 1565,
+      "stars": 100726,
+      "forks": 6367,
+      "starsAdded": 1543,
       "createdAt": "2026-10-20T17:00:02.808Z",
       "metaData": {
         "forks": "0",
@@ -79420,182 +79483,6 @@
       }
     },
     {
-      "id": "215b5ceb-ed4d-4242-86c0-847d964aefe2",
-      "dateAdded": "20261021",
-      "type": "github-daily",
-      "url": "https://github.com/anomalyco/opencode",
-      "repo": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "language": "TypeScript",
-      "stars": 219401,
-      "forks": 29269,
-      "starsAdded": 1240,
-      "createdAt": "2026-10-20T17:00:02.833Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://opencode.ai",
-        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "AI Agent",
-          "Terminal",
-          "OpenSource",
-          "Privacy",
-          "GitHub Actions"
-        ],
-        "cover": "",
-        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
-        "ability": [
-          "终端TUI双模式",
-          "多模型提供商兼容",
-          "GitHub深度集成与自动化",
-          "隐私友好可自托管",
-          "多平台桌面支持"
-        ],
-        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
-        "category": [
-          "AI编程",
-          "开发工具",
-          "GitHub自动化"
-        ],
-        "suitable": [
-          "个人开发者",
-          "终端重度用户",
-          "隐私合规团队",
-          "开源项目维护者",
-          "Server/云用户"
-        ],
-        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
-      }
-    },
-    {
-      "id": "ceb770d7-242c-486b-9d38-84ffbdcb9adf",
-      "dateAdded": "20261021",
-      "type": "github-daily",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "repo": "DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "language": "JavaScript",
-      "stars": 170543,
-      "forks": 9278,
-      "starsAdded": 1208,
-      "createdAt": "2026-10-20T17:00:02.811Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "claude",
-          "claude-code",
-          "claude-code-plugin",
-          "cursor-rules",
-          "developer-tools",
-          "llm",
-          "prompt-engineering",
-          "yagni"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ponytail.dev",
-        "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "开源项目",
-          "Claude Code",
-          "Cursor",
-          "YAGNI"
-        ],
-        "cover": "",
-        "title": "Ponytail：给 AI 写代码踩刹车的极简规则集",
-        "ability": [
-          "AI 代码精简",
-          "七步决策过滤",
-          "API 成本降低",
-          "安全底线保障",
-          "多平台集成"
-        ],
-        "summary": "通过七步决策阶梯防止 AI 过度工程化，减少代码量与 API 成本的开发工具。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "AI 编程重度用户",
-          "前端业务开发者",
-          "快速原型开发团队",
-          "技术成本控制者"
-        ],
-        "description": "Ponytail 是一款专为 AI 编程助手设计的插件或规则集，利用七级决策阶梯强制 AI 在写代码前判断任务必要性。实测可减少 54% 代码量和 20% API 成本，同时保留必要的安全校验，有效解决 AI“过度封装”痛点。"
-      }
-    },
-    {
-      "id": "2d52b27b-cee0-4fb0-a15f-a1ab6eec4e1a",
-      "dateAdded": "20261021",
-      "type": "github-daily",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "repo": "Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "language": "Python",
-      "stars": 141136,
-      "forks": 16695,
-      "starsAdded": 1206,
-      "createdAt": "2026-10-20T17:00:02.820Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "comfy",
-          "comfyui",
-          "python",
-          "pytorch",
-          "stable-diffusion"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://www.comfy.org/",
-        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
-      },
-      "summaryData": {
-        "tags": [
-          "Stable Diffusion",
-          "节点式编辑",
-          "AI 绘画",
-          "工作流自动化",
-          "AIGC"
-        ],
-        "cover": "",
-        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
-        "ability": [
-          "节点式工作流编排",
-          "高性能异步队列",
-          "广泛的模型生态支持",
-          "灵活的部署与集成",
-          "自定义节点开发"
-        ],
-        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
-        "category": [
-          "AI 工具",
-          "开源项目",
-          "生产力工具"
-        ],
-        "suitable": [
-          "专业视觉创作者",
-          "AI 研究者与发烧友",
-          "后端开发与工程师",
-          "企业级生产团队",
-          "追求可控性的技术极客"
-        ],
-        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
-      }
-    },
-    {
       "id": "8b52ec07-e6bb-40e8-9ed9-1368d4344573",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79603,9 +79490,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 130791,
-      "forks": 12570,
-      "starsAdded": 802,
+      "stars": 131110,
+      "forks": 12600,
+      "starsAdded": 1434,
       "createdAt": "2026-10-20T17:00:02.831Z",
       "metaData": {
         "forks": "0",
@@ -79670,56 +79557,167 @@
       }
     },
     {
-      "id": "3412651c-2bfd-44b2-bc73-3c47b9fc3c28",
+      "id": "215b5ceb-ed4d-4242-86c0-847d964aefe2",
       "dateAdded": "20261021",
       "type": "github-daily",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "repo": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://github.com/anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 219401,
+      "forks": 29269,
+      "starsAdded": 1240,
+      "createdAt": "2026-10-20T17:00:02.833Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
+      }
+    },
+    {
+      "id": "2d52b27b-cee0-4fb0-a15f-a1ab6eec4e1a",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "repo": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 42539,
-      "forks": 7036,
-      "starsAdded": 733,
-      "createdAt": "2026-10-20T17:00:02.849Z",
+      "stars": 141280,
+      "forks": 16706,
+      "starsAdded": 914,
+      "createdAt": "2026-10-20T17:00:02.820Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://www.comfy.org/",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
+      },
+      "summaryData": {
+        "tags": [
+          "Stable Diffusion",
+          "节点式编辑",
+          "AI 绘画",
+          "工作流自动化",
+          "AIGC"
+        ],
+        "cover": "",
+        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
+        "ability": [
+          "节点式工作流编排",
+          "高性能异步队列",
+          "广泛的模型生态支持",
+          "灵活的部署与集成",
+          "自定义节点开发"
+        ],
+        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "生产力工具"
+        ],
+        "suitable": [
+          "专业视觉创作者",
+          "AI 研究者与发烧友",
+          "后端开发与工程师",
+          "企业级生产团队",
+          "追求可控性的技术极客"
+        ],
+        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
+      }
+    },
+    {
+      "id": "118c0a2e-fc7a-4a97-9ffb-ebbcc2923d6d",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 12088,
+      "forks": 855,
+      "starsAdded": 810,
+      "createdAt": "2026-10-21T12:00:02.333Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
         "license": "MIT license",
         "homepage": "",
-        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
       },
       "summaryData": {
         "tags": [
-          "金融大模型",
-          "K线预测",
-          "时间序列",
-          "量化交易",
-          "开源项目"
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
         ],
         "cover": "",
-        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
         "ability": [
-          "零样本K线价格预测，跨市场、跨频率泛化",
-          "波动率预测（MAE 较通用模型降低9%）",
-          "高保真合成K线生成，可用于回测数据增强",
-          "量化Alpha因子/交易信号特征提取",
-          "支持Python微调，附Qlib A股完整流水线"
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
         ],
-        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
         "category": [
-          "AI 模型",
-          "开源项目",
-          "金融量化"
+          "开发工具",
+          "AI 编程"
         ],
         "suitable": [
-          "量化研究员",
-          "FinTech 工程师",
-          "机器学习/金融方向学生与研究者",
-          "独立开发者与 AI 爱好者",
-          "需要合成行情数据的团队"
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
         ],
-        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
       }
     },
     {
@@ -79796,6 +79794,59 @@
       }
     },
     {
+      "id": "3412651c-2bfd-44b2-bc73-3c47b9fc3c28",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 42647,
+      "forks": 7048,
+      "starsAdded": 570,
+      "createdAt": "2026-10-20T17:00:02.849Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+      }
+    },
+    {
       "id": "04d312ec-7451-4b8a-afaf-78ab678920fa",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79849,6 +79900,79 @@
       }
     },
     {
+      "id": "40d7a798-d0f9-40ef-9905-9c55c02e765f",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/supabase/supabase",
+      "repo": "supabase/supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "language": "TypeScript",
+      "stars": 112711,
+      "forks": 16850,
+      "starsAdded": 509,
+      "createdAt": "2026-10-21T12:00:02.321Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "alternative",
+          "auth",
+          "database",
+          "deno",
+          "embeddings",
+          "example",
+          "firebase",
+          "nextjs",
+          "oauth2",
+          "pgvector",
+          "postgis",
+          "postgres",
+          "postgresql",
+          "postgrest",
+          "realtime",
+          "supabase",
+          "vectors",
+          "websockets"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://supabase.com",
+        "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications. - supabase/supabase"
+      },
+      "summaryData": {
+        "tags": [
+          "PostgreSQL",
+          "Firebase替代",
+          "BaaS",
+          "实时数据库",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Supabase: 开源界的 Firebase，全能型后端开发平台",
+        "ability": [
+          "PostgreSQL 托管",
+          "身份认证",
+          "自动 API 生成",
+          "实时订阅",
+          "对象存储"
+        ],
+        "summary": "开源版 Firebase + Postgres，提供数据库、认证和 API 的一站式后端服务。",
+        "category": [
+          "开发工具",
+          "后端服务",
+          "开源项目"
+        ],
+        "suitable": [
+          "全栈开发者",
+          "初创团队",
+          "个人开发者",
+          "移动端开发者",
+          "AI 应用开发者"
+        ],
+        "description": "它将 PostgreSQL 的强大与 Firebase 般的开发体验结合，提供数据库、认证、实时 API、存储和边缘函数，无需编写后端代码即可快速构建全栈应用。"
+      }
+    },
+    {
       "id": "acddc623-b02d-4ebe-9654-df62515b1b19",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79856,9 +79980,9 @@
       "repo": "headroomlabs-ai/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": 76942,
-      "forks": 5972,
-      "starsAdded": 549,
+      "stars": 77060,
+      "forks": 5981,
+      "starsAdded": 477,
       "createdAt": "2026-10-20T17:00:02.841Z",
       "metaData": {
         "forks": "0",
@@ -79923,59 +80047,6 @@
       }
     },
     {
-      "id": "96630c82-3a24-4c0c-9f3f-98fcd1164273",
-      "dateAdded": "20261021",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "repo": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars": 30955,
-      "forks": 3474,
-      "starsAdded": 267,
-      "createdAt": "2026-10-20T17:00:02.846Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Anthropic",
-          "GitHub",
-          "AI插件",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
-        "ability": [
-          "岗位专家定制",
-          "企业 SOP 固化",
-          "工具链连接",
-          "无代码维护",
-          "团队协作标准化"
-        ],
-        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "企业服务"
-        ],
-        "suitable": [
-          "知识型团队管理者",
-          "企业职能人员",
-          "开发者与平台团队",
-          "Claude 深度用户",
-          "AI 工具运营者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
-      }
-    },
-    {
       "id": "2bdaebd5-7abe-4ca3-a189-5e54c3ab6bda",
       "dateAdded": "20261021",
       "type": "github-daily",
@@ -79983,9 +80054,9 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 94625,
-      "forks": 23704,
-      "starsAdded": 128,
+      "stars": 94728,
+      "forks": 23722,
+      "starsAdded": 439,
       "createdAt": "2026-10-20T17:00:02.852Z",
       "metaData": {
         "forks": "0",
@@ -80047,6 +80118,204 @@
           "数据工程师（离线批量推理场景）"
         ],
         "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      }
+    },
+    {
+      "id": "9c414198-2970-4847-a420-3ef1ec6c540b",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/strelov1/freehire",
+      "repo": "strelov1/freehire",
+      "description": "freehire — the open-source search engine for job seekers",
+      "language": "Go",
+      "stars": 2094,
+      "forks": 230,
+      "starsAdded": 405,
+      "createdAt": "2026-10-21T12:00:02.329Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ats",
+          "career",
+          "careers",
+          "golang",
+          "hiring",
+          "job-aggregator",
+          "job-board",
+          "job-portal",
+          "job-scraper",
+          "job-search",
+          "jobs",
+          "langchain",
+          "llm",
+          "meilisearch",
+          "postgresql",
+          "recruitment",
+          "remote-jobs",
+          "self-hosted",
+          "svelte",
+          "sveltekit"
+        ],
+        "license": "MIT license",
+        "homepage": "https://freehire.me",
+        "description": "freehire — the open-source search engine for job seekers - strelov1/freehire"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "求职搜索",
+          "Go",
+          "AI简历",
+          "Agent"
+        ],
+        "cover": "",
+        "title": "freehire 深度评测：直连 ATS 的开源求职搜索引擎",
+        "ability": [
+          "直连 Workday、Greenhouse 等 114 个 ATS 平台，聚合 486 万+ 去重标准化岗位",
+          "幽灵岗位信号识别，投递前过滤僵尸 JD",
+          "AI 反幻觉简历定制，只能引用用户真实经历不能编造",
+          "端到端求职闭环：搜索、匹配打分、投递、追踪、模拟面试",
+          "Agent 原生设计：免鉴权 API、CLI、MCP server、Chrome 扩展"
+        ],
+        "summary": "一个用 Go 写的开源求职搜索引擎，绕过 LinkedIn/Indeed 中间商，直接从 114 个企业 ATS 系统聚合 486 万真实岗位，MIT 协议可自部署。",
+        "category": [
+          "开发工具",
+          "求职效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "海外求职者与远程工作者",
+          "程序员、数据岗等技术类求职者",
+          "AI Agent 重度用户（Claude Code/Cursor 玩家）",
+          "注重数据主权的求职者",
+          "Go 工程师与架构学习者"
+        ],
+        "description": "freehire 是一个 Go 编写的开源求职搜索引擎，绕过传统聚合平台，直接从 387,000 家公司的招聘系统抓取约 486 万条真实岗位，提供幽灵岗位识别、AI 反幻觉简历定制、投递追踪与模拟面试等完整闭环。支持 Docker 一键自部署，Pro 版每月仅 5 美元。主要覆盖欧美市场，对国内求职帮助有限。"
+      }
+    },
+    {
+      "id": "96630c82-3a24-4c0c-9f3f-98fcd1164273",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 30955,
+      "forks": 3474,
+      "starsAdded": 267,
+      "createdAt": "2026-10-20T17:00:02.846Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
+      "id": "87ee359b-1666-4416-bc51-b1db7a8ac623",
+      "dateAdded": "20261021",
+      "type": "github-daily",
+      "url": "https://github.com/twentyhq/twenty",
+      "repo": "twentyhq/twenty",
+      "description": "The open alternative to Salesforce, designed for AI.",
+      "language": "TypeScript",
+      "stars": 58886,
+      "forks": 9646,
+      "starsAdded": 105,
+      "createdAt": "2026-10-21T12:00:02.324Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "crm",
+          "crm-system",
+          "customer",
+          "good-first-issue",
+          "graphql",
+          "hacktoberfest",
+          "javascript",
+          "marketing",
+          "monorepo",
+          "nestjs",
+          "open-source",
+          "postgresql",
+          "react",
+          "reactjs",
+          "sales",
+          "typescript",
+          "web"
+        ],
+        "license": "License",
+        "homepage": "https://twenty.com",
+        "description": "The open alternative to Salesforce, designed for AI. - twentyhq/twenty"
+      },
+      "summaryData": {
+        "tags": [
+          "开源CRM",
+          "Salesforce替代",
+          "自托管",
+          "TypeScript",
+          "AI原生"
+        ],
+        "cover": "",
+        "title": "Twenty CRM 深度评测：58k Star 的开源 Salesforce 替代品",
+        "ability": [
+          "客户关系管理：联系人、公司、商机看板一站式管理",
+          "「对象即代码」SDK：像写代码一样定义业务对象并纳入 Git 版本控制",
+          "Docker 四容器一键自托管，数据 100% 私有可控",
+          "AI 原生设计：Agent 嵌入工作流，支持 Claude Code / Cursor 深度集成",
+          "REST + GraphQL API 与 Webhooks，自动化扩展能力强"
+        ],
+        "summary": "GitHub 58.5k Star 的开源 CRM，可自托管、代码级定制、AI 原生，自托管全功能免费，是 Salesforce 的高性价比替代方案。",
+        "category": [
+          "开发工具",
+          "企业服务",
+          "AI 工具"
+        ],
+        "suitable": [
+          "预算有限的技术型创业团队",
+          "需要深度定制数据模型的开发团队",
+          "金融/医疗等重视数据主权的企业",
+          "想给 AI Agent 搭建工作记忆库的开发者",
+          "受够 Salesforce/HubSpot 高价订阅的用户"
+        ],
+        "description": "Twenty 是 YC 孵化、获 500 万美元融资的开源 CRM，基于 TypeScript 全栈（NestJS + React）构建，GitHub Star 数居开源 CRM 第一。支持 Docker 自托管（全功能免费）、SDK 代码级定制业务对象、AI Agent 深度集成；云端版 $9/人/月起。10 人团队自托管年成本仅约 240 美元，但缺乏营销自动化套件，更适合有开发能力的团队。"
       }
     },
     {

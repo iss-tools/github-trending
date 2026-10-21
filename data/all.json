@@ -1,6 +1,151 @@
 {
   "all": [
     {
+      "id": "7eca1125-99e4-44ec-9e39-46fc93266780",
+      "url": "https://github.com/strelov1/freehire",
+      "domain": "github.com",
+      "repo": "strelov1/freehire",
+      "description": "freehire 是一个 Go 编写的开源求职搜索引擎，绕过传统聚合平台，直接从 387,000 家公司的招聘系统抓取约 486 万条真实岗位，提供幽灵岗位识别、AI 反幻觉简历定制、投递追踪与模拟面试等完整闭环。支持 Docker 一键自部署，Pro 版每月仅 5 美元。主要覆盖欧美市场，对国内求职帮助有限。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-21T12:13:15.878Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ats",
+          "career",
+          "careers",
+          "golang",
+          "hiring",
+          "job-aggregator",
+          "job-board",
+          "job-portal",
+          "job-scraper",
+          "job-search",
+          "jobs",
+          "langchain",
+          "llm",
+          "meilisearch",
+          "postgresql",
+          "recruitment",
+          "remote-jobs",
+          "self-hosted",
+          "svelte",
+          "sveltekit"
+        ],
+        "license": "MIT license",
+        "homepage": "https://freehire.me",
+        "description": "freehire — the open-source search engine for job seekers - strelov1/freehire"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "求职搜索",
+          "Go",
+          "AI简历",
+          "Agent"
+        ],
+        "cover": "",
+        "title": "freehire 深度评测：直连 ATS 的开源求职搜索引擎",
+        "ability": [
+          "直连 Workday、Greenhouse 等 114 个 ATS 平台，聚合 486 万+ 去重标准化岗位",
+          "幽灵岗位信号识别，投递前过滤僵尸 JD",
+          "AI 反幻觉简历定制，只能引用用户真实经历不能编造",
+          "端到端求职闭环：搜索、匹配打分、投递、追踪、模拟面试",
+          "Agent 原生设计：免鉴权 API、CLI、MCP server、Chrome 扩展"
+        ],
+        "summary": "一个用 Go 写的开源求职搜索引擎，绕过 LinkedIn/Indeed 中间商，直接从 114 个企业 ATS 系统聚合 486 万真实岗位，MIT 协议可自部署。",
+        "category": [
+          "开发工具",
+          "求职效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "海外求职者与远程工作者",
+          "程序员、数据岗等技术类求职者",
+          "AI Agent 重度用户（Claude Code/Cursor 玩家）",
+          "注重数据主权的求职者",
+          "Go 工程师与架构学习者"
+        ],
+        "description": "freehire 是一个 Go 编写的开源求职搜索引擎，绕过传统聚合平台，直接从 387,000 家公司的招聘系统抓取约 486 万条真实岗位，提供幽灵岗位识别、AI 反幻觉简历定制、投递追踪与模拟面试等完整闭环。支持 Docker 一键自部署，Pro 版每月仅 5 美元。主要覆盖欧美市场，对国内求职帮助有限。"
+      },
+      "type": "project",
+      "dateAdded": "20261021"
+    },
+    {
+      "id": "aee39c1e-637c-4860-8eea-746606515ce2",
+      "url": "https://github.com/twentyhq/twenty",
+      "domain": "github.com",
+      "repo": "twentyhq/twenty",
+      "description": "Twenty 是 YC 孵化、获 500 万美元融资的开源 CRM，基于 TypeScript 全栈（NestJS + React）构建，GitHub Star 数居开源 CRM 第一。支持 Docker 自托管（全功能免费）、SDK 代码级定制业务对象、AI Agent 深度集成；云端版 $9/人/月起。10 人团队自托管年成本仅约 240 美元，但缺乏营销自动化套件，更适合有开发能力的团队。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-21T12:07:49.606Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "crm",
+          "crm-system",
+          "customer",
+          "good-first-issue",
+          "graphql",
+          "hacktoberfest",
+          "javascript",
+          "marketing",
+          "monorepo",
+          "nestjs",
+          "open-source",
+          "postgresql",
+          "react",
+          "reactjs",
+          "sales",
+          "typescript",
+          "web"
+        ],
+        "license": "License",
+        "homepage": "https://twenty.com",
+        "description": "The open alternative to Salesforce, designed for AI. - twentyhq/twenty"
+      },
+      "summaryData": {
+        "tags": [
+          "开源CRM",
+          "Salesforce替代",
+          "自托管",
+          "TypeScript",
+          "AI原生"
+        ],
+        "cover": "",
+        "title": "Twenty CRM 深度评测：58k Star 的开源 Salesforce 替代品",
+        "ability": [
+          "客户关系管理：联系人、公司、商机看板一站式管理",
+          "「对象即代码」SDK：像写代码一样定义业务对象并纳入 Git 版本控制",
+          "Docker 四容器一键自托管，数据 100% 私有可控",
+          "AI 原生设计：Agent 嵌入工作流，支持 Claude Code / Cursor 深度集成",
+          "REST + GraphQL API 与 Webhooks，自动化扩展能力强"
+        ],
+        "summary": "GitHub 58.5k Star 的开源 CRM，可自托管、代码级定制、AI 原生，自托管全功能免费，是 Salesforce 的高性价比替代方案。",
+        "category": [
+          "开发工具",
+          "企业服务",
+          "AI 工具"
+        ],
+        "suitable": [
+          "预算有限的技术型创业团队",
+          "需要深度定制数据模型的开发团队",
+          "金融/医疗等重视数据主权的企业",
+          "想给 AI Agent 搭建工作记忆库的开发者",
+          "受够 Salesforce/HubSpot 高价订阅的用户"
+        ],
+        "description": "Twenty 是 YC 孵化、获 500 万美元融资的开源 CRM，基于 TypeScript 全栈（NestJS + React）构建，GitHub Star 数居开源 CRM 第一。支持 Docker 自托管（全功能免费）、SDK 代码级定制业务对象、AI Agent 深度集成；云端版 $9/人/月起。10 人团队自托管年成本仅约 240 美元，但缺乏营销自动化套件，更适合有开发能力的团队。"
+      },
+      "type": "project",
+      "dateAdded": "20261021"
+    },
+    {
       "id": "5674527f-2748-446e-8690-3f6ec8ed7939",
       "url": "https://github.com/wshobson/agents",
       "domain": "github.com",
@@ -8330,8 +8475,8 @@
       "forks": 0,
       "createdAt": "2026-09-16T14:38:08.647Z",
       "metaData": {
-        "forks": "14534",
-        "stars": "110684",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "alternative",
