@@ -80542,8 +80542,8 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 172334,
-      "forks": 9381,
+      "stars": 172497,
+      "forks": 9385,
       "starsAdded": 2079,
       "createdAt": "2026-10-21T16:00:02.860Z",
       "metaData": {
@@ -80605,8 +80605,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 37689,
-      "forks": 2352,
+      "stars": 37950,
+      "forks": 2372,
       "starsAdded": 2012,
       "createdAt": "2026-10-21T16:00:02.803Z",
       "metaData": {
@@ -80657,8 +80657,8 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 101920,
-      "forks": 6442,
+      "stars": 102007,
+      "forks": 6446,
       "starsAdded": 1541,
       "createdAt": "2026-10-21T16:00:02.844Z",
       "metaData": {
@@ -80731,8 +80731,8 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 132105,
-      "forks": 12667,
+      "stars": 132224,
+      "forks": 12678,
       "starsAdded": 1433,
       "createdAt": "2026-10-21T16:00:02.911Z",
       "metaData": {
@@ -80805,8 +80805,8 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 141795,
-      "forks": 16755,
+      "stars": 141827,
+      "forks": 16757,
       "starsAdded": 939,
       "createdAt": "2026-10-21T16:00:02.866Z",
       "metaData": {
@@ -80865,8 +80865,8 @@
       "repo": "shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 43026,
-      "forks": 7094,
+      "stars": 43044,
+      "forks": 7096,
       "starsAdded": 575,
       "createdAt": "2026-10-21T16:00:02.886Z",
       "metaData": {
@@ -80918,8 +80918,8 @@
       "repo": "supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "language": "TypeScript",
-      "stars": 113214,
-      "forks": 16987,
+      "stars": 113256,
+      "forks": 16988,
       "starsAdded": 504,
       "createdAt": "2026-10-21T16:00:02.875Z",
       "metaData": {
@@ -80991,8 +80991,8 @@
       "repo": "headroomlabs-ai/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": 77454,
-      "forks": 6015,
+      "stars": 77477,
+      "forks": 6017,
       "starsAdded": 474,
       "createdAt": "2026-10-21T16:00:02.853Z",
       "metaData": {
@@ -81065,8 +81065,8 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 95063,
-      "forks": 23785,
+      "stars": 95087,
+      "forks": 23789,
       "starsAdded": 441,
       "createdAt": "2026-10-21T16:00:02.828Z",
       "metaData": {
@@ -81132,6 +81132,108 @@
       }
     },
     {
+      "id": "39f9b983-615d-463e-ab16-5ad39394356d",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "repo": "luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "stars": 42587,
+      "forks": 5348,
+      "starsAdded": 428,
+      "createdAt": "2026-10-22T11:00:02.454Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "GitHub 开源",
+          "AI 编程",
+          "教程",
+          "模板库"
+        ],
+        "cover": "",
+        "title": "claude-howto：GitHub 上最系统的 Claude Code 学习指南（41k+ Stars）",
+        "ability": [
+          "提供 10 个循序渐进的学习模块，覆盖斜杠命令、记忆、Hooks、MCP、子代理等全部核心机制",
+          "内置 120+ 生产级模板，复制粘贴即可在项目中直接使用",
+          "使用 Mermaid 架构图可视化底层事件流与工具设计逻辑",
+          "提供 /self-assessment 自测命令，可生成个性化学习路径",
+          "支持中/英/越/乌/日 5 种语言，并可一键构建 EPUB 离线阅读"
+        ],
+        "summary": "GitHub 上最系统化、最具可执行性的 Claude Code 教程仓库，10 个模块 + 120 余份即用模板，带你从新手进阶到 Agent 编排高手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "教程学习"
+        ],
+        "suitable": [
+          "刚安装 Claude Code、不知从何入手的开发者",
+          "用了一段时间但感觉没发挥威力的中级用户",
+          "想给团队搭建 AI 编码工作流的 Tech Lead",
+          "想要速查手册的资深 Claude Code 用户",
+          "计划撰写 Claude Code 相关教程的博主"
+        ],
+        "description": "GitHub 上最系统化的 Claude Code 学习指南，由巴黎安全工程师 Luong Nguyen 打造。用 10 个循序渐进的模块、120 余份可直接复制的模板、Mermaid 可视化架构图和自测机制，带你从基础命令一路进阶到编排 Agent 团队，并随 Claude Code 版本持续同步更新。"
+      }
+    },
+    {
+      "id": "63e820ca-fd48-4935-a64d-ad1982fb53d7",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 31265,
+      "forks": 3501,
+      "starsAdded": 389,
+      "createdAt": "2026-10-22T11:00:02.429Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
       "id": "6e59bcd8-b23c-4aab-9074-f68cf17de611",
       "dateAdded": "20261022",
       "type": "github-daily",
@@ -81139,8 +81241,8 @@
       "repo": "strelov1/freehire",
       "description": "freehire — the open-source search engine for job seekers",
       "language": "Go",
-      "stars": 2625,
-      "forks": 260,
+      "stars": 2667,
+      "forks": 263,
       "starsAdded": 360,
       "createdAt": "2026-10-21T16:00:02.894Z",
       "metaData": {
@@ -81213,8 +81315,8 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 12566,
-      "forks": 889,
+      "stars": 12595,
+      "forks": 890,
       "starsAdded": 286,
       "createdAt": "2026-10-21T16:00:02.897Z",
       "metaData": {
@@ -81257,6 +81359,55 @@
       }
     },
     {
+      "id": "09e1f917-2ef2-4533-90e1-ccd3ab4ace8b",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/Meloong-Git/PCL",
+      "repo": "Meloong-Git/PCL",
+      "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+      "language": "Visual Basic .NET",
+      "stars": 8516,
+      "forks": 1173,
+      "starsAdded": 115,
+      "createdAt": "2026-10-22T11:00:02.457Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Minecraft",
+          "启动器",
+          "开源项目",
+          "WPF",
+          "游戏工具"
+        ],
+        "cover": "",
+        "title": "PCL2 深度评测：把启动器做成基础设施的国民级 Minecraft 工具",
+        "ability": [
+          "多线程多源下载引擎，针对国内网络优化，实测可达 10MB/s",
+          "智能崩溃分析，自动诊断 Mod 冲突与 Java 版本问题，中文小白可读",
+          "全链路模组与整合包管理，支持 Forge/Fabric/NeoForge 及 CurseForge/Modrinth 搜索",
+          "Java 环境自动扫描与版本智能匹配，开箱即用",
+          "高度个性化界面：自定义背景、音乐、主页布局与隐藏主题"
+        ],
+        "summary": "一款仅 15MB、免费无广告、为国内网络深度优化的 Windows 版 Minecraft 启动器，中文 MC 圈的国民级选择。",
+        "category": [
+          "开发工具",
+          "游戏工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "Windows 平台的 Minecraft 新手玩家",
+          "模组与整合包重度玩家",
+          "联机玩家（社区版内置 EasyTier 组网）",
+          "想学习 WPF 桌面应用架构的开发者",
+          "整合包作者与内容创作者"
+        ],
+        "description": "PCL2 是龙腾猫跃用 VB.NET + WPF 独立开发的免费 Minecraft 启动器，以极小体积实现了下载引擎、模组管理、崩溃诊断、联机组网等完整能力，持续迭代 7 年，是国内使用人数最多的第三方启动器之一。注意：仅支持 Windows、非标准开源许可，且 2026 年 10 月起因合规原因下架了游戏本体在线下载功能，山寨版泛滥需认准官方 Releases。"
+      }
+    },
+    {
       "id": "14873e43-9971-435b-9d29-64f396e23e0e",
       "dateAdded": "20261022",
       "type": "github-daily",
@@ -81264,8 +81415,8 @@
       "repo": "twentyhq/twenty",
       "description": "The open alternative to Salesforce, designed for AI.",
       "language": "TypeScript",
-      "stars": 59436,
-      "forks": 9682,
+      "stars": 59461,
+      "forks": 9680,
       "starsAdded": 112,
       "createdAt": "2026-10-21T16:00:02.883Z",
       "metaData": {
@@ -81325,6 +81476,129 @@
           "受够 Salesforce/HubSpot 高价订阅的用户"
         ],
         "description": "Twenty 是 YC 孵化、获 500 万美元融资的开源 CRM，基于 TypeScript 全栈（NestJS + React）构建，GitHub Star 数居开源 CRM 第一。支持 Docker 自托管（全功能免费）、SDK 代码级定制业务对象、AI Agent 深度集成；云端版 $9/人/月起。10 人团队自托管年成本仅约 240 美元，但缺乏营销自动化套件，更适合有开发能力的团队。"
+      }
+    },
+    {
+      "id": "b9b75e65-1357-4ab5-bf00-f5880bc0e446",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/php/php-src",
+      "repo": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 40745,
+      "forks": 8284,
+      "starsAdded": 110,
+      "createdAt": "2026-10-22T11:00:02.416Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "开源项目",
+          "C语言",
+          "虚拟机",
+          "源码解析"
+        ],
+        "cover": "",
+        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
+        "ability": [
+          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
+          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
+          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
+          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
+          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
+        ],
+        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编程语言"
+        ],
+        "suitable": [
+          "PHP 业务开发者（想理解性能调优原理）",
+          "扩展与中间件作者（必修课）",
+          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
+          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
+          "学生与转行者（通过读源码理解解释型语言本质）"
+        ],
+        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
+      }
+    },
+    {
+      "id": "50a6ec60-7fc4-4821-9d1b-a14c2d02428a",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/fastapi/fastapi",
+      "repo": "fastapi/fastapi",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "language": "Python",
+      "stars": 103375,
+      "forks": 10074,
+      "starsAdded": 96,
+      "createdAt": "2026-10-22T11:00:02.451Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "api",
+          "async",
+          "asyncio",
+          "fastapi",
+          "framework",
+          "json",
+          "json-schema",
+          "openapi",
+          "openapi3",
+          "pydantic",
+          "python",
+          "python-types",
+          "python3",
+          "redoc",
+          "rest",
+          "starlette",
+          "swagger",
+          "swagger-ui",
+          "uvicorn",
+          "web"
+        ],
+        "license": "MIT license",
+        "homepage": "https://fastapi.tiangolo.com/",
+        "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production - fastapi/fastapi"
+      },
+      "summaryData": {
+        "tags": [
+          "FastAPI",
+          "Python",
+          "API开发",
+          "异步编程",
+          "开源框架"
+        ],
+        "cover": "",
+        "title": "FastAPI 深度评测：让 Python 类型标注变成生产力的现代 Web 框架",
+        "ability": [
+          "类型标注驱动：声明参数类型即自动完成数据校验与错误返回",
+          "自动生成交互式 Swagger UI 和 ReDoc 接口文档，代码即文档",
+          "依赖注入系统（Depends）：支持嵌套依赖、自动缓存和 yield 资源清理",
+          "原生 async/await 异步支持，性能对齐 Node.js 和 Go",
+          "同步/异步混用：普通 def 自动丢线程池，不强迫全栈迁移异步"
+        ],
+        "summary": "FastAPI 是一个基于 Python 类型标注的现代 Web 框架，写函数签名即得参数校验、自动文档和高并发性能。",
+        "category": [
+          "开发工具",
+          "Web 开发",
+          "后端框架"
+        ],
+        "suitable": [
+          "需要快速把模型包装成 API 的机器学习和数据科学家",
+          "构建微服务后端的后端开发者",
+          "追求开发效率的初创团队与独立开发者",
+          "想从 Flask 升级迁移的团队",
+          "开发 AI Agent / LLM 应用服务的工程师"
+        ],
+        "description": "FastAPI 站在 Pydantic v2（Rust 核心）和 Starlette 两位巨人肩上，用标准 Python 类型提示把参数校验、接口文档、IDE 补全和高性能打包成免费大礼包。GitHub 超十万 Star，被 Microsoft、Uber、Netflix 等大厂采用，已成为 Python API 开发的事实首选，但需注意异步阻塞陷阱和 0.x 版本号的兼容风险。"
       }
     }
   ]
