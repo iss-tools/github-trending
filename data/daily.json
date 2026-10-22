@@ -80535,6 +80535,58 @@
       }
     },
     {
+      "id": "28350a17-a8e5-4f1b-a0c6-a4ff72e2f0bf",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 38076,
+      "forks": 2378,
+      "starsAdded": 2979,
+      "createdAt": "2026-10-21T16:00:02.803Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
       "id": "7bda05ac-e115-4702-bc9c-af092181ba44",
       "dateAdded": "20261022",
       "type": "github-daily",
@@ -80542,9 +80594,9 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 172497,
-      "forks": 9385,
-      "starsAdded": 2079,
+      "stars": 172580,
+      "forks": 9384,
+      "starsAdded": 1949,
       "createdAt": "2026-10-21T16:00:02.860Z",
       "metaData": {
         "forks": "0",
@@ -80595,58 +80647,6 @@
           "技术成本控制者"
         ],
         "description": "Ponytail 是一款专为 AI 编程助手设计的插件或规则集，利用七级决策阶梯强制 AI 在写代码前判断任务必要性。实测可减少 54% 代码量和 20% API 成本，同时保留必要的安全校验，有效解决 AI“过度封装”痛点。"
-      }
-    },
-    {
-      "id": "28350a17-a8e5-4f1b-a0c6-a4ff72e2f0bf",
-      "dateAdded": "20261022",
-      "type": "github-daily",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "repo": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars": 37950,
-      "forks": 2372,
-      "starsAdded": 2012,
-      "createdAt": "2026-10-21T16:00:02.803Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "安全审计",
-          "Cloudflare",
-          "AI Agent",
-          "DevSecOps"
-        ],
-        "cover": "",
-        "title": "Cloudflare Security Audit Skill 深度评测",
-        "ability": [
-          "多智能体并行审计",
-          "对抗验证防误报",
-          "结构化漏洞报告",
-          "增量式覆盖扫描",
-          "多类攻击库支持"
-        ],
-        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
-        "category": [
-          "开发工具",
-          "网络安全",
-          "AI 编程"
-        ],
-        "suitable": [
-          "AI 编程爱好者",
-          "安全研究人员",
-          "DevSecOps 工程师",
-          "全栈开发者"
-        ],
-        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
       }
     },
     {
@@ -80731,9 +80731,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 132224,
-      "forks": 12678,
-      "starsAdded": 1433,
+      "stars": 132287,
+      "forks": 12680,
+      "starsAdded": 1407,
       "createdAt": "2026-10-21T16:00:02.911Z",
       "metaData": {
         "forks": "0",
@@ -80858,59 +80858,6 @@
       }
     },
     {
-      "id": "a71e799a-eb86-412e-9ca7-7c41c9cd2263",
-      "dateAdded": "20261022",
-      "type": "github-daily",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "repo": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "stars": 43044,
-      "forks": 7096,
-      "starsAdded": 575,
-      "createdAt": "2026-10-21T16:00:02.886Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
-      },
-      "summaryData": {
-        "tags": [
-          "金融大模型",
-          "K线预测",
-          "时间序列",
-          "量化交易",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
-        "ability": [
-          "零样本K线价格预测，跨市场、跨频率泛化",
-          "波动率预测（MAE 较通用模型降低9%）",
-          "高保真合成K线生成，可用于回测数据增强",
-          "量化Alpha因子/交易信号特征提取",
-          "支持Python微调，附Qlib A股完整流水线"
-        ],
-        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
-        "category": [
-          "AI 模型",
-          "开源项目",
-          "金融量化"
-        ],
-        "suitable": [
-          "量化研究员",
-          "FinTech 工程师",
-          "机器学习/金融方向学生与研究者",
-          "独立开发者与 AI 爱好者",
-          "需要合成行情数据的团队"
-        ],
-        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
-      }
-    },
-    {
       "id": "1dd9d5a2-34ae-4d98-a9c8-5b1424df680a",
       "dateAdded": "20261022",
       "type": "github-daily",
@@ -80918,9 +80865,9 @@
       "repo": "supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "language": "TypeScript",
-      "stars": 113256,
-      "forks": 16988,
-      "starsAdded": 504,
+      "stars": 113270,
+      "forks": 16987,
+      "starsAdded": 683,
       "createdAt": "2026-10-21T16:00:02.875Z",
       "metaData": {
         "forks": "0",
@@ -80981,6 +80928,59 @@
           "AI 应用开发者"
         ],
         "description": "它将 PostgreSQL 的强大与 Firebase 般的开发体验结合，提供数据库、认证、实时 API、存储和边缘函数，无需编写后端代码即可快速构建全栈应用。"
+      }
+    },
+    {
+      "id": "a71e799a-eb86-412e-9ca7-7c41c9cd2263",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 43044,
+      "forks": 7096,
+      "starsAdded": 575,
+      "createdAt": "2026-10-21T16:00:02.886Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
       }
     },
     {
@@ -81139,13 +81139,21 @@
       "repo": "luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
       "language": "Python",
-      "stars": 42587,
-      "forks": 5348,
+      "stars": 42623,
+      "forks": 5349,
       "starsAdded": 428,
       "createdAt": "2026-10-22T11:00:02.454Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "guide",
+          "tutorial"
+        ],
+        "license": "MIT license",
+        "homepage": "http://luongnv.com/claude-howto/",
+        "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value. - luongnv89/claude-howto"
       },
       "summaryData": {
         "tags": [
@@ -81178,59 +81186,6 @@
           "计划撰写 Claude Code 相关教程的博主"
         ],
         "description": "GitHub 上最系统化的 Claude Code 学习指南，由巴黎安全工程师 Luong Nguyen 打造。用 10 个循序渐进的模块、120 余份可直接复制的模板、Mermaid 可视化架构图和自测机制，带你从基础命令一路进阶到编排 Agent 团队，并随 Claude Code 版本持续同步更新。"
-      }
-    },
-    {
-      "id": "63e820ca-fd48-4935-a64d-ad1982fb53d7",
-      "dateAdded": "20261022",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "repo": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars": 31265,
-      "forks": 3501,
-      "starsAdded": 389,
-      "createdAt": "2026-10-22T11:00:02.429Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Anthropic",
-          "GitHub",
-          "AI插件",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
-        "ability": [
-          "岗位专家定制",
-          "企业 SOP 固化",
-          "工具链连接",
-          "无代码维护",
-          "团队协作标准化"
-        ],
-        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "企业服务"
-        ],
-        "suitable": [
-          "知识型团队管理者",
-          "企业职能人员",
-          "开发者与平台团队",
-          "Claude 深度用户",
-          "AI 工具运营者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
       }
     },
     {
@@ -81308,6 +81263,59 @@
       }
     },
     {
+      "id": "63e820ca-fd48-4935-a64d-ad1982fb53d7",
+      "dateAdded": "20261022",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 31295,
+      "forks": 3507,
+      "starsAdded": 303,
+      "createdAt": "2026-10-22T11:00:02.429Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
       "id": "4c0b5c90-1874-4b38-99b0-ea5a763d1edc",
       "dateAdded": "20261022",
       "type": "github-daily",
@@ -81366,13 +81374,21 @@
       "repo": "Meloong-Git/PCL",
       "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
       "language": "Visual Basic .NET",
-      "stars": 8516,
-      "forks": 1173,
+      "stars": 8537,
+      "forks": 1177,
       "starsAdded": 115,
       "createdAt": "2026-10-22T11:00:02.457Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "launcher",
+          "minecraft",
+          "minecraft-launcher"
+        ],
+        "license": "License",
+        "homepage": "https://meloong.com/PCL",
+        "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。. Contribute to Meloong-Git/PCL development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -81486,13 +81502,17 @@
       "repo": "php/php-src",
       "description": "The PHP Interpreter",
       "language": "C",
-      "stars": 40745,
-      "forks": 8284,
+      "stars": 40779,
+      "forks": 8271,
       "starsAdded": 110,
       "createdAt": "2026-10-22T11:00:02.416Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://www.php.net",
+        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -81535,8 +81555,8 @@
       "repo": "fastapi/fastapi",
       "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "language": "Python",
-      "stars": 103375,
-      "forks": 10074,
+      "stars": 103407,
+      "forks": 10066,
       "starsAdded": 96,
       "createdAt": "2026-10-22T11:00:02.451Z",
       "metaData": {
