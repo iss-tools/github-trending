@@ -81631,8 +81631,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 38605,
-      "forks": 2408,
+      "stars": 39231,
+      "forks": 2445,
       "starsAdded": 2979,
       "createdAt": "2026-10-22T16:00:02.545Z",
       "metaData": {
@@ -81683,8 +81683,8 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 172917,
-      "forks": 9411,
+      "stars": 173260,
+      "forks": 9429,
       "starsAdded": 1949,
       "createdAt": "2026-10-22T16:00:02.531Z",
       "metaData": {
@@ -81746,8 +81746,8 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 132545,
-      "forks": 12698,
+      "stars": 132816,
+      "forks": 12713,
       "starsAdded": 1407,
       "createdAt": "2026-10-22T16:00:02.550Z",
       "metaData": {
@@ -81820,7 +81820,7 @@
       "repo": "supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "language": "TypeScript",
-      "stars": 113347,
+      "stars": 113428,
       "forks": 16993,
       "starsAdded": 683,
       "createdAt": "2026-10-22T16:00:02.555Z",
@@ -81886,6 +81886,59 @@
       }
     },
     {
+      "id": "bfbd8951-6a15-4735-a131-227c1b55e6d6",
+      "dateAdded": "20261023",
+      "type": "github-daily",
+      "url": "https://github.com/php/php-src",
+      "repo": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41087,
+      "forks": 8302,
+      "starsAdded": 423,
+      "createdAt": "2026-10-22T16:00:02.521Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://www.php.net",
+        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "开源项目",
+          "C语言",
+          "虚拟机",
+          "源码解析"
+        ],
+        "cover": "",
+        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
+        "ability": [
+          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
+          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
+          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
+          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
+          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
+        ],
+        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编程语言"
+        ],
+        "suitable": [
+          "PHP 业务开发者（想理解性能调优原理）",
+          "扩展与中间件作者（必修课）",
+          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
+          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
+          "学生与转行者（通过读源码理解解释型语言本质）"
+        ],
+        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
+      }
+    },
+    {
       "id": "4101b2cd-62e4-4418-8686-48b90f401880",
       "dateAdded": "20261023",
       "type": "github-daily",
@@ -81893,8 +81946,8 @@
       "repo": "luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
       "language": "Python",
-      "stars": 42822,
-      "forks": 5365,
+      "stars": 43047,
+      "forks": 5377,
       "starsAdded": 370,
       "createdAt": "2026-10-22T16:00:02.566Z",
       "metaData": {
@@ -81950,8 +82003,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 31395,
-      "forks": 3517,
+      "stars": 31515,
+      "forks": 3528,
       "starsAdded": 303,
       "createdAt": "2026-10-22T16:00:02.527Z",
       "metaData": {
@@ -82003,8 +82056,8 @@
       "repo": "Meloong-Git/PCL",
       "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
       "language": "Visual Basic .NET",
-      "stars": 8619,
-      "forks": 1192,
+      "stars": 8656,
+      "forks": 1197,
       "starsAdded": 115,
       "createdAt": "2026-10-22T16:00:02.570Z",
       "metaData": {
@@ -82053,59 +82106,6 @@
       }
     },
     {
-      "id": "bfbd8951-6a15-4735-a131-227c1b55e6d6",
-      "dateAdded": "20261023",
-      "type": "github-daily",
-      "url": "https://github.com/php/php-src",
-      "repo": "php/php-src",
-      "description": "The PHP Interpreter",
-      "language": "C",
-      "stars": 40953,
-      "forks": 8291,
-      "starsAdded": 110,
-      "createdAt": "2026-10-22T16:00:02.521Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "BSD-3-Clause license",
-        "homepage": "https://www.php.net",
-        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "PHP",
-          "开源项目",
-          "C语言",
-          "虚拟机",
-          "源码解析"
-        ],
-        "cover": "",
-        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
-        "ability": [
-          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
-          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
-          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
-          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
-          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
-        ],
-        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
-        "category": [
-          "开发工具",
-          "开源项目",
-          "编程语言"
-        ],
-        "suitable": [
-          "PHP 业务开发者（想理解性能调优原理）",
-          "扩展与中间件作者（必修课）",
-          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
-          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
-          "学生与转行者（通过读源码理解解释型语言本质）"
-        ],
-        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
-      }
-    },
-    {
       "id": "7ace46d3-2752-4910-88bb-89dac533d80c",
       "dateAdded": "20261023",
       "type": "github-daily",
@@ -82113,8 +82113,8 @@
       "repo": "fastapi/fastapi",
       "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "language": "Python",
-      "stars": 103536,
-      "forks": 10077,
+      "stars": 103659,
+      "forks": 10084,
       "starsAdded": 96,
       "createdAt": "2026-10-22T16:00:02.563Z",
       "metaData": {
