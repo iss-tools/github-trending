@@ -1,6 +1,69 @@
 {
   "all": [
     {
+      "id": "7bad2ff3-d8af-4db3-9638-7923c56e9162",
+      "url": "https://github.com/elie222/rakazo",
+      "domain": "github.com",
+      "repo": "elie222/rakazo",
+      "description": "Rakazo 是 Elie Steinbock（Inbox Zero 作者）用 TypeScript 打造的开源 AI Agent 平台，Apache-2.0 协议。每个 Bot 配备独立沙盒电脑、持久记忆和审批门控，可自托管运行。作为 Grok Bot 和 Lindy AI 的开源替代品，发布两个月获 4400+ star。目前仍处 Beta 阶段，每个 Bot 占用约 2GB 内存，需要一定 Docker 运维基础。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-23T14:03:13.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "chatgpt",
+          "docker",
+          "electron",
+          "expo",
+          "grok",
+          "llm",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://rakazo.com",
+        "description": "Open-source Grok Bot alternative. Choose your own model and sandbox. - elie222/rakazo"
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "自托管",
+          "开源",
+          "沙盒",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "Rakazo 深度评测：把自己请来的 AI 员工，养在自己服务器上",
+        "ability": [
+          "自托管部署，凭据和数据完全掌控在自己机器上",
+          "每个 Bot 拥有独立沙盒电脑（图形桌面+浏览器+终端）",
+          "模型任意切换，支持 Claude/GPT/Grok 甚至本地 Ollama",
+          "工作流程保存为 Markdown 例程，可审计可版本化",
+          "自带 8 个开箱即用的 Bot 模板（邮件、销售、报销、编程等）"
+        ],
+        "summary": "开源自托管的 AI Agent 平台，让你在自己服务器上养出拥有独立电脑、记忆和日程的 AI 员工",
+        "category": [
+          "开发工具",
+          "AI Agent",
+          "开源项目"
+        ],
+        "suitable": [
+          "开发者与独立开发者",
+          "隐私合规敏感的团队（金融/医疗/律所）",
+          "想省订阅费的创业公司",
+          "AI Agent 平台架构学习者",
+          "有 Docker 基础的技术爱好者"
+        ],
+        "description": "Rakazo 是 Elie Steinbock（Inbox Zero 作者）用 TypeScript 打造的开源 AI Agent 平台，Apache-2.0 协议。每个 Bot 配备独立沙盒电脑、持久记忆和审批门控，可自托管运行。作为 Grok Bot 和 Lindy AI 的开源替代品，发布两个月获 4400+ star。目前仍处 Beta 阶段，每个 Bot 占用约 2GB 内存，需要一定 Docker 运维基础。"
+      },
+      "type": "project",
+      "dateAdded": "20261023"
+    },
+    {
       "id": "03ccdfbc-f5dd-4fa0-b8de-f64122e8a29a",
       "url": "https://github.com/nodejs/node",
       "domain": "github.com",
