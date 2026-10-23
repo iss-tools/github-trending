@@ -20287,9 +20287,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 363878,
-      "forks": 91241,
-      "starsAdded": 129417,
+      "stars": 366082,
+      "forks": 91728,
+      "starsAdded": 106341,
       "createdAt": "2026-10-18T16:00:03.993Z",
       "metaData": {
         "forks": "0",
@@ -20361,9 +20361,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 81383,
-      "forks": 8987,
-      "starsAdded": 15125,
+      "stars": 81736,
+      "forks": 9027,
+      "starsAdded": 13581,
       "createdAt": "2026-10-19T11:00:03.897Z",
       "metaData": {
         "forks": "0",
@@ -20620,9 +20620,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 102457,
-      "forks": 6469,
-      "starsAdded": 8705,
+      "stars": 102728,
+      "forks": 6485,
+      "starsAdded": 9401,
       "createdAt": "2026-10-21T12:00:04.284Z",
       "metaData": {
         "forks": "0",
@@ -20694,9 +20694,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 220046,
-      "forks": 29406,
-      "starsAdded": 6545,
+      "stars": 220201,
+      "forks": 29430,
+      "starsAdded": 6750,
       "createdAt": "2026-10-21T12:00:04.277Z",
       "metaData": {
         "forks": "0",
@@ -20740,62 +20740,6 @@
       }
     },
     {
-      "id": "7216ed01-bf95-417d-afce-0c70963b4806",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "repo": "NationalSecurityAgency/ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "language": "Java",
-      "stars": 92985,
-      "forks": 10426,
-      "starsAdded": 5769,
-      "createdAt": "2026-10-18T16:00:04.026Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "disassembler",
-          "reverse-engineering",
-          "software-analysis"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
-      },
-      "summaryData": {
-        "tags": [
-          "逆向工程",
-          "开源安全",
-          "反编译",
-          "Ghidra",
-          "二进制分析"
-        ],
-        "cover": "",
-        "title": "Ghidra: NSA开源的顶级逆向工程框架",
-        "ability": [
-          "企业级反编译器",
-          "多架构二进制分析",
-          "团队协作与版本跟踪",
-          "自动化脚本与插件扩展",
-          "内置调试器集成"
-        ],
-        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
-        "category": [
-          "开发工具",
-          "网络安全"
-        ],
-        "suitable": [
-          "安全研究员",
-          "CTF/二进制安全玩家",
-          "漏洞挖掘专家",
-          "开发与运维团队",
-          "计算机专业学生"
-        ],
-        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
-      }
-    },
-    {
       "id": "b80f38ee-1a94-4549-87e2-976942b96986",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -20803,9 +20747,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 69779,
-      "forks": 6314,
-      "starsAdded": 5740,
+      "stars": 69999,
+      "forks": 6334,
+      "starsAdded": 5669,
       "createdAt": "2026-10-18T16:00:04.029Z",
       "metaData": {
         "forks": "0",
@@ -20872,9 +20816,9 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 43804,
-      "forks": 4614,
-      "starsAdded": 5703,
+      "stars": 43886,
+      "forks": 4623,
+      "starsAdded": 5649,
       "createdAt": "2026-10-18T16:00:04.016Z",
       "metaData": {
         "forks": "0",
@@ -20984,6 +20928,122 @@
       }
     },
     {
+      "id": "7216ed01-bf95-417d-afce-0c70963b4806",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "repo": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 93148,
+      "forks": 10450,
+      "starsAdded": 4892,
+      "createdAt": "2026-10-18T16:00:04.026Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Ghidra is a software reverse engineering (SRE) framework - NationalSecurityAgency/ghidra"
+      },
+      "summaryData": {
+        "tags": [
+          "逆向工程",
+          "开源安全",
+          "反编译",
+          "Ghidra",
+          "二进制分析"
+        ],
+        "cover": "",
+        "title": "Ghidra: NSA开源的顶级逆向工程框架",
+        "ability": [
+          "企业级反编译器",
+          "多架构二进制分析",
+          "团队协作与版本跟踪",
+          "自动化脚本与插件扩展",
+          "内置调试器集成"
+        ],
+        "summary": "美国国家安全局（NSA）开源的免费逆向工程神器，具备媲美IDA Pro的强大分析能力。",
+        "category": [
+          "开发工具",
+          "网络安全"
+        ],
+        "suitable": [
+          "安全研究员",
+          "CTF/二进制安全玩家",
+          "漏洞挖掘专家",
+          "开发与运维团队",
+          "计算机专业学生"
+        ],
+        "description": "由美国国家安全局（NSA）研发的开源软件逆向工程框架。它提供媲美商业软件的企业级反编译器，支持多架构与多格式，具备强大的自动化脚本和团队协作能力，是恶意代码分析和漏洞研究的利器。"
+      }
+    },
+    {
+      "id": "1477d233-53c8-4af6-9be5-591847276126",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "repo": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars": 142010,
+      "forks": 16744,
+      "starsAdded": 4375,
+      "createdAt": "2026-10-22T11:00:04.475Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://www.comfy.org/",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
+      },
+      "summaryData": {
+        "tags": [
+          "Stable Diffusion",
+          "节点式编辑",
+          "AI 绘画",
+          "工作流自动化",
+          "AIGC"
+        ],
+        "cover": "",
+        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
+        "ability": [
+          "节点式工作流编排",
+          "高性能异步队列",
+          "广泛的模型生态支持",
+          "灵活的部署与集成",
+          "自定义节点开发"
+        ],
+        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "生产力工具"
+        ],
+        "suitable": [
+          "专业视觉创作者",
+          "AI 研究者与发烧友",
+          "后端开发与工程师",
+          "企业级生产团队",
+          "追求可控性的技术极客"
+        ],
+        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
+      }
+    },
+    {
       "id": "900a9242-ca40-453a-be57-acfe72c618b0",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -20991,9 +21051,9 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 53836,
-      "forks": 4748,
-      "starsAdded": 4719,
+      "stars": 53886,
+      "forks": 4753,
+      "starsAdded": 3967,
       "createdAt": "2026-10-19T11:00:03.885Z",
       "metaData": {
         "forks": "0",
@@ -21055,119 +21115,6 @@
       }
     },
     {
-      "id": "1477d233-53c8-4af6-9be5-591847276126",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "repo": "Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "language": "Python",
-      "stars": 141944,
-      "forks": 16732,
-      "starsAdded": 3948,
-      "createdAt": "2026-10-22T11:00:04.475Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "comfy",
-          "comfyui",
-          "python",
-          "pytorch",
-          "stable-diffusion"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://www.comfy.org/",
-        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
-      },
-      "summaryData": {
-        "tags": [
-          "Stable Diffusion",
-          "节点式编辑",
-          "AI 绘画",
-          "工作流自动化",
-          "AIGC"
-        ],
-        "cover": "",
-        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
-        "ability": [
-          "节点式工作流编排",
-          "高性能异步队列",
-          "广泛的模型生态支持",
-          "灵活的部署与集成",
-          "自定义节点开发"
-        ],
-        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
-        "category": [
-          "AI 工具",
-          "开源项目",
-          "生产力工具"
-        ],
-        "suitable": [
-          "专业视觉创作者",
-          "AI 研究者与发烧友",
-          "后端开发与工程师",
-          "企业级生产团队",
-          "追求可控性的技术极客"
-        ],
-        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
-      }
-    },
-    {
-      "id": "094a4e2b-6888-4f3b-902b-5903a7903e9e",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 56153,
-      "forks": 5062,
-      "starsAdded": 3681,
-      "createdAt": "2026-10-21T12:00:04.271Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
-        ],
-        "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
-        "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
-        ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
-        ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
-      }
-    },
-    {
       "id": "a13f6f61-8cab-49a8-b2cc-1d6969105eff",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21175,9 +21122,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 78378,
-      "forks": 9213,
-      "starsAdded": 3590,
+      "stars": 78483,
+      "forks": 9226,
+      "starsAdded": 3708,
       "createdAt": "2026-10-19T11:00:03.904Z",
       "metaData": {
         "forks": "0",
@@ -21238,6 +21185,110 @@
           "个人开发者"
         ],
         "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
+      }
+    },
+    {
+      "id": "f2a0150c-0a74-42e7-9511-5ae2a05c6c39",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 12773,
+      "forks": 897,
+      "starsAdded": 3322,
+      "createdAt": "2026-10-21T12:00:04.273Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
+      "id": "094a4e2b-6888-4f3b-902b-5903a7903e9e",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 56229,
+      "forks": 5065,
+      "starsAdded": 3275,
+      "createdAt": "2026-10-21T12:00:04.271Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
       }
     },
     {
@@ -21305,6 +21356,66 @@
       }
     },
     {
+      "id": "5f7d1ce2-4717-4ad6-9a92-ac6c400c8cbf",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "repo": "YuJunZhiXue/dsh-purge",
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "language": "JavaScript",
+      "stars": 10832,
+      "forks": 2393,
+      "starsAdded": 2933,
+      "createdAt": "2026-10-19T11:00:03.899Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "deepseek",
+          "deepseek-harness",
+          "dsh-plugin",
+          "dsh-plugins",
+          "harness-jailbreak",
+          "jailbreak",
+          "llm-jailbreak"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分 - YuJunZhiXue/dsh-purge"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepSeek",
+          "越狱插件",
+          "DSH",
+          "红队评测",
+          "提示词注入"
+        ],
+        "cover": "",
+        "title": "dsh-purge 深度评测：游走在安全评测与模型破限边界的争议插件",
+        "ability": [
+          "剥离 DSH 宿主层安全策略（审批门、沙箱、默认提示词）",
+          "为不同模型切换越狱提示词，注入最高优先级会话覆盖",
+          "补丁自动备份可回滚（.dshpurge.bak），支持一键还原卸载",
+          "提供 CLI、聊天斜杠命令、模型工具三通道操作",
+          "启动时自动重应用补丁，适应 DSH 版本升级"
+        ],
+        "summary": "一款能剥离 DeepSeek Harness 宿主安全策略、为不同模型注入越狱提示词的争议性开源插件。",
+        "category": [
+          "开发工具",
+          "AI 安全",
+          "开源项目"
+        ],
+        "suitable": [
+          "AI 安全研究者 / 红队工程师",
+          "DSH 插件开发者（学习插件体系架构）",
+          "Prompt 工程师（研究提示词注入机制）",
+          "受默认策略束缚的 DSH 重度用户（需自担风险）"
+        ],
+        "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。"
+      }
+    },
+    {
       "id": "f4ecfb3a-66dc-43d6-9069-f5fa03c05db5",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21312,9 +21423,9 @@
       "repo": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 31791,
-      "forks": 2189,
-      "starsAdded": 2968,
+      "stars": 31827,
+      "forks": 2194,
+      "starsAdded": 2271,
       "createdAt": "2026-10-18T16:00:04.019Z",
       "metaData": {
         "forks": "0",
@@ -21379,117 +21490,6 @@
       }
     },
     {
-      "id": "5f7d1ce2-4717-4ad6-9a92-ac6c400c8cbf",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/YuJunZhiXue/dsh-purge",
-      "repo": "YuJunZhiXue/dsh-purge",
-      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
-      "language": "JavaScript",
-      "stars": 10832,
-      "forks": 2393,
-      "starsAdded": 2933,
-      "createdAt": "2026-10-19T11:00:03.899Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "deepseek",
-          "deepseek-harness",
-          "dsh-plugin",
-          "dsh-plugins",
-          "harness-jailbreak",
-          "jailbreak",
-          "llm-jailbreak"
-        ],
-        "license": "License",
-        "homepage": "",
-        "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分 - YuJunZhiXue/dsh-purge"
-      },
-      "summaryData": {
-        "tags": [
-          "DeepSeek",
-          "越狱插件",
-          "DSH",
-          "红队评测",
-          "提示词注入"
-        ],
-        "cover": "",
-        "title": "dsh-purge 深度评测：游走在安全评测与模型破限边界的争议插件",
-        "ability": [
-          "剥离 DSH 宿主层安全策略（审批门、沙箱、默认提示词）",
-          "为不同模型切换越狱提示词，注入最高优先级会话覆盖",
-          "补丁自动备份可回滚（.dshpurge.bak），支持一键还原卸载",
-          "提供 CLI、聊天斜杠命令、模型工具三通道操作",
-          "启动时自动重应用补丁，适应 DSH 版本升级"
-        ],
-        "summary": "一款能剥离 DeepSeek Harness 宿主安全策略、为不同模型注入越狱提示词的争议性开源插件。",
-        "category": [
-          "开发工具",
-          "AI 安全",
-          "开源项目"
-        ],
-        "suitable": [
-          "AI 安全研究者 / 红队工程师",
-          "DSH 插件开发者（学习插件体系架构）",
-          "Prompt 工程师（研究提示词注入机制）",
-          "受默认策略束缚的 DSH 重度用户（需自担风险）"
-        ],
-        "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。"
-      }
-    },
-    {
-      "id": "f2a0150c-0a74-42e7-9511-5ae2a05c6c39",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "repo": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars": 12678,
-      "forks": 892,
-      "starsAdded": 2833,
-      "createdAt": "2026-10-21T12:00:04.273Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Rust",
-          "MCP",
-          "AI-Agent",
-          "效率工具"
-        ],
-        "cover": "",
-        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
-        "ability": [
-          "长期记忆存储",
-          "跨 Agent 上下文共享",
-          "语义检索与回溯",
-          "高性能数据处理",
-          "MCP 协议标准集成"
-        ],
-        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "开发者与开发团队",
-          "技术主管与架构师",
-          "AI 工具集成商",
-          "AI 研究爱好者"
-        ],
-        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
-      }
-    },
-    {
       "id": "641e14e7-8dc3-4480-9e80-bfd7bddb4478",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21497,9 +21497,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 13551,
-      "forks": 1348,
-      "starsAdded": 2049,
+      "stars": 13606,
+      "forks": 1350,
+      "starsAdded": 2046,
       "createdAt": "2026-10-18T16:00:04.031Z",
       "metaData": {
         "forks": "0",
@@ -21587,9 +21587,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 9212,
-      "forks": 592,
-      "starsAdded": 1332,
+      "stars": 9243,
+      "forks": 593,
+      "starsAdded": 1384,
       "createdAt": "2026-10-20T11:00:04.731Z",
       "metaData": {
         "forks": "0",

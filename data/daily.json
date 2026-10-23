@@ -81631,8 +81631,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 39231,
-      "forks": 2445,
+      "stars": 39514,
+      "forks": 2459,
       "starsAdded": 2979,
       "createdAt": "2026-10-22T16:00:02.545Z",
       "metaData": {
@@ -81683,9 +81683,9 @@
       "repo": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 173260,
-      "forks": 9429,
-      "starsAdded": 1949,
+      "stars": 173426,
+      "forks": 9436,
+      "starsAdded": 1948,
       "createdAt": "2026-10-22T16:00:02.531Z",
       "metaData": {
         "forks": "0",
@@ -81746,9 +81746,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 132816,
-      "forks": 12713,
-      "starsAdded": 1407,
+      "stars": 132919,
+      "forks": 12720,
+      "starsAdded": 1408,
       "createdAt": "2026-10-22T16:00:02.550Z",
       "metaData": {
         "forks": "0",
@@ -81820,9 +81820,9 @@
       "repo": "supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "language": "TypeScript",
-      "stars": 113428,
-      "forks": 16993,
-      "starsAdded": 683,
+      "stars": 113472,
+      "forks": 16999,
+      "starsAdded": 693,
       "createdAt": "2026-10-22T16:00:02.555Z",
       "metaData": {
         "forks": "0",
@@ -81886,6 +81886,59 @@
       }
     },
     {
+      "id": "2d80161a-34b9-4984-b97c-00e984986068",
+      "dateAdded": "20261023",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 31570,
+      "forks": 3530,
+      "starsAdded": 303,
+      "createdAt": "2026-10-22T16:00:02.527Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
       "id": "bfbd8951-6a15-4735-a131-227c1b55e6d6",
       "dateAdded": "20261023",
       "type": "github-daily",
@@ -81893,9 +81946,9 @@
       "repo": "php/php-src",
       "description": "The PHP Interpreter",
       "language": "C",
-      "stars": 41087,
-      "forks": 8302,
-      "starsAdded": 423,
+      "stars": 41139,
+      "forks": 8305,
+      "starsAdded": 287,
       "createdAt": "2026-10-22T16:00:02.521Z",
       "metaData": {
         "forks": "0",
@@ -81946,9 +81999,9 @@
       "repo": "luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
       "language": "Python",
-      "stars": 43047,
-      "forks": 5377,
-      "starsAdded": 370,
+      "stars": 43173,
+      "forks": 5386,
+      "starsAdded": 177,
       "createdAt": "2026-10-22T16:00:02.566Z",
       "metaData": {
         "forks": "0",
@@ -81996,59 +82049,6 @@
       }
     },
     {
-      "id": "2d80161a-34b9-4984-b97c-00e984986068",
-      "dateAdded": "20261023",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "repo": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars": 31515,
-      "forks": 3528,
-      "starsAdded": 303,
-      "createdAt": "2026-10-22T16:00:02.527Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Anthropic",
-          "GitHub",
-          "AI插件",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
-        "ability": [
-          "岗位专家定制",
-          "企业 SOP 固化",
-          "工具链连接",
-          "无代码维护",
-          "团队协作标准化"
-        ],
-        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "企业服务"
-        ],
-        "suitable": [
-          "知识型团队管理者",
-          "企业职能人员",
-          "开发者与平台团队",
-          "Claude 深度用户",
-          "AI 工具运营者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
-      }
-    },
-    {
       "id": "438999db-197c-4c18-844a-e73dff2bfbd2",
       "dateAdded": "20261023",
       "type": "github-daily",
@@ -82056,9 +82056,9 @@
       "repo": "Meloong-Git/PCL",
       "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
       "language": "Visual Basic .NET",
-      "stars": 8656,
-      "forks": 1197,
-      "starsAdded": 115,
+      "stars": 8682,
+      "forks": 1198,
+      "starsAdded": 119,
       "createdAt": "2026-10-22T16:00:02.570Z",
       "metaData": {
         "forks": "0",
@@ -82113,9 +82113,9 @@
       "repo": "fastapi/fastapi",
       "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "language": "Python",
-      "stars": 103659,
-      "forks": 10084,
-      "starsAdded": 96,
+      "stars": 103727,
+      "forks": 10086,
+      "starsAdded": 101,
       "createdAt": "2026-10-22T16:00:02.563Z",
       "metaData": {
         "forks": "0",
