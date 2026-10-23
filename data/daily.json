@@ -82455,5 +82455,441 @@
         "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
       }
     }
+  ],
+  "20261024": [
+    {
+      "id": "5c471eaf-4fac-4642-8d54-5248885ba07d",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 41661,
+      "forks": 2607,
+      "starsAdded": 2706,
+      "createdAt": "2026-10-23T19:00:01.918Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "e126b8ab-d141-48ee-b95a-441c2b2d2cd4",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 18619,
+      "forks": 1872,
+      "starsAdded": 1240,
+      "createdAt": "2026-10-23T19:00:01.958Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
+      },
+      "summaryData": null
+    },
+    {
+      "id": "f1f7ea7c-7dcb-4169-985f-b29698fe7372",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/php/php-src",
+      "repo": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41520,
+      "forks": 8352,
+      "starsAdded": 722,
+      "createdAt": "2026-10-23T19:00:01.935Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://www.php.net",
+        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "开源项目",
+          "C语言",
+          "虚拟机",
+          "源码解析"
+        ],
+        "cover": "",
+        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
+        "ability": [
+          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
+          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
+          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
+          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
+          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
+        ],
+        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编程语言"
+        ],
+        "suitable": [
+          "PHP 业务开发者（想理解性能调优原理）",
+          "扩展与中间件作者（必修课）",
+          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
+          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
+          "学生与转行者（通过读源码理解解释型语言本质）"
+        ],
+        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
+      }
+    },
+    {
+      "id": "88bc5445-7e98-4ff9-9352-c7e5ff111ddc",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 32105,
+      "forks": 3565,
+      "starsAdded": 643,
+      "createdAt": "2026-10-23T19:00:01.951Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
+      "id": "5f57c3e2-789b-4d3b-b448-028920ae9176",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 6807,
+      "forks": 1402,
+      "starsAdded": 547,
+      "createdAt": "2026-10-23T19:00:01.971Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
+      "id": "09083436-9377-4117-b62a-c69e548c8d73",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "repo": "SnailSploit/Claude-Red",
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+      "language": "Python",
+      "stars": 8298,
+      "forks": 1086,
+      "starsAdded": 209,
+      "createdAt": "2026-10-23T19:00:01.976Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-ai",
+          "claude-pt",
+          "claude-skills",
+          "redteam",
+          "redteam-tools",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development. - SnailSploit/Claude-Red"
+      },
+      "summaryData": {
+        "tags": [
+          "渗透测试",
+          "Claude Skills",
+          "红队工具",
+          "自动化攻击",
+          "安全研究"
+        ],
+        "cover": "",
+        "title": "Claude-Red：AI 驱动的顶级红队攻击技能库",
+        "ability": [
+          "红队攻击技能化",
+          "全场景漏洞覆盖",
+          "AI 自动化渗透",
+          "结构化安全知识",
+          "一键式部署集成"
+        ],
+        "summary": "将专家级红队打法转化为 AI 技能，让 Claude 变身专业攻击操作员。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "渗透测试工程师",
+          "红队攻防专家",
+          "漏洞赏金猎人",
+          "网络安全研究员",
+          "CTF 爱好者"
+        ],
+        "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。"
+      }
+    },
+    {
+      "id": "36eeca3d-4475-42a5-904c-837d777b7b2c",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "repo": "OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "language": "Python",
+      "stars": 40157,
+      "forks": 4564,
+      "starsAdded": 144,
+      "createdAt": "2026-10-23T19:00:01.981Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "audio",
+          "deeplearning",
+          "minicpm",
+          "multilingual",
+          "python",
+          "pytorch",
+          "speech",
+          "speech-synthesis",
+          "text-to-speech",
+          "tts",
+          "tts-model",
+          "voice-cloning",
+          "voice-design",
+          "voxcpm"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://voxcpm.com",
+        "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning - OpenBMB/VoxCPM"
+      },
+      "summaryData": {
+        "tags": [
+          "TTS",
+          "语音克隆",
+          "开源",
+          "多语种",
+          "VoxCPM"
+        ],
+        "cover": "",
+        "title": "VoxCPM：开源高保真多语种语音克隆系统",
+        "ability": [
+          "高保真语音合成",
+          "自然语言捏声线",
+          "多语种与方言支持",
+          "精准语音克隆",
+          "端侧与云端部署"
+        ],
+        "summary": "基于扩散自回归架构的开源 48kHz 高保真语音克隆系统，支持多语种及语音设计。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI应用开发者",
+          "内容创作者",
+          "语音技术研究员",
+          "产品技术团队"
+        ],
+        "description": "VoxCPM 是一款基于深度学习的开源语音合成与克隆工具。它通过端到端架构实现了高保真度的多语种语音生成，创新性地支持用文本描述捏声线，并提供完善的本地化部署方案。"
+      }
+    },
+    {
+      "id": "98b4d596-a472-4c49-8da3-4b03334e33e6",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/nodejs/node",
+      "repo": "nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "stars": 122747,
+      "forks": 39882,
+      "starsAdded": 93,
+      "createdAt": "2026-10-23T19:00:01.988Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "javascript",
+          "js",
+          "linux",
+          "macos",
+          "mit",
+          "node",
+          "nodejs",
+          "runtime",
+          "windows"
+        ],
+        "license": "License",
+        "homepage": "https://nodejs.org",
+        "description": "Node.js JavaScript runtime ✨🐢🚀✨. Contribute to nodejs/node development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "JavaScript",
+          "运行时",
+          "开源项目",
+          "后端开发"
+        ],
+        "cover": "",
+        "title": "Node.js 深度评测：定义服务端 JavaScript 的开源巨头",
+        "ability": [
+          "事件驱动 + 非阻塞 I/O，轻松支撑数万并发连接",
+          "内置测试运行器 node:test，零依赖替代 Jest",
+          "v24 起原生稳定支持 TypeScript，直接运行 .ts 文件",
+          "依托 npm 庞大生态，超 200 万可复用包",
+          "提供 worker_threads / cluster 等多核扩展方案"
+        ],
+        "summary": "Node.js 是用事件循环重新定义服务端开发的 JavaScript 运行时，是生产环境的默认答案。",
+        "category": [
+          "开发工具",
+          "后端开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "后端工程师与架构师",
+          "想转型全栈的前端开发者",
+          "希望进入大厂的开源贡献者",
+          "DevOps / SRE 运维人员",
+          "JavaScript 初学者"
+        ],
+        "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
+      }
+    }
   ]
 }
