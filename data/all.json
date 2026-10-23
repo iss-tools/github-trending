@@ -1,6 +1,133 @@
 {
   "all": [
     {
+      "id": "03ccdfbc-f5dd-4fa0-b8de-f64122e8a29a",
+      "url": "https://github.com/nodejs/node",
+      "domain": "github.com",
+      "repo": "nodejs/node",
+      "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-23T12:07:34.759Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "javascript",
+          "js",
+          "linux",
+          "macos",
+          "mit",
+          "node",
+          "nodejs",
+          "runtime",
+          "windows"
+        ],
+        "license": "License",
+        "homepage": "https://nodejs.org",
+        "description": "Node.js JavaScript runtime ✨🐢🚀✨. Contribute to nodejs/node development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "JavaScript",
+          "运行时",
+          "开源项目",
+          "后端开发"
+        ],
+        "cover": "",
+        "title": "Node.js 深度评测：定义服务端 JavaScript 的开源巨头",
+        "ability": [
+          "事件驱动 + 非阻塞 I/O，轻松支撑数万并发连接",
+          "内置测试运行器 node:test，零依赖替代 Jest",
+          "v24 起原生稳定支持 TypeScript，直接运行 .ts 文件",
+          "依托 npm 庞大生态，超 200 万可复用包",
+          "提供 worker_threads / cluster 等多核扩展方案"
+        ],
+        "summary": "Node.js 是用事件循环重新定义服务端开发的 JavaScript 运行时，是生产环境的默认答案。",
+        "category": [
+          "开发工具",
+          "后端开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "后端工程师与架构师",
+          "想转型全栈的前端开发者",
+          "希望进入大厂的开源贡献者",
+          "DevOps / SRE 运维人员",
+          "JavaScript 初学者"
+        ],
+        "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
+      },
+      "type": "project",
+      "dateAdded": "20261023"
+    },
+    {
+      "id": "b95d8bba-7bc5-47f7-b47b-6927c6d2046e",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "domain": "github.com",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-23T12:03:35.728Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      },
+      "type": "project",
+      "dateAdded": "20261023"
+    },
+    {
       "id": "f189cc78-9171-4703-a2ae-5e60fa43b3b4",
       "url": "https://github.com/Meloong-Git/PCL",
       "domain": "github.com",
@@ -9810,8 +9937,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:44:34.422Z",
       "metaData": {
-        "forks": "4257",
-        "stars": "37506",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "audio",
           "deeplearning",
@@ -10899,8 +11026,8 @@
       "forks": 0,
       "createdAt": "2026-09-12T13:22:11.914Z",
       "metaData": {
-        "forks": "753",
-        "stars": "5921",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "claude-ai",
           "claude-pt",
