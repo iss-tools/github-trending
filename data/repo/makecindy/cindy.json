@@ -1,0 +1,68 @@
+{
+  "id": "47e0e088-1b25-45b1-8b9f-d9e714a9ed2f",
+  "url": "https://github.com/makecindy/cindy",
+  "domain": "github.com",
+  "repo": "makecindy/cindy",
+  "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-24T13:14:53.600Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "ai-assistant",
+      "android",
+      "claude-code",
+      "codex",
+      "electron",
+      "ios",
+      "llm",
+      "macos",
+      "react-native",
+      "typescript",
+      "windows"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://cindy.app",
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 - makecindy/cindy"
+  },
+  "summaryData": {
+    "tags": [
+      "开源",
+      "AI Agent",
+      "心动网络",
+      "跨端协作",
+      "TapTap"
+    ],
+    "cover": "",
+    "title": "Cindy 深度评测：心动网络开源 AI Agent 客户端，是真兑现还是漂亮话术？",
+    "ability": [
+      "多 Harness 混跑：Claude Code / Codex / Pi 任务中途自由切换，上下文无缝交接",
+      "复用已有 Coding Plan 订阅或自带 API Key（支持 DeepSeek、GLM 等国产模型），不重复计费",
+      "桌面满血 + 手机接力：可从飞书/Slack 派活，移动端远程查看、审批、接管会话",
+      "内置记忆（Memory）、技能（Skill）、MCP 和定时任务，开箱即用",
+      "隔离工作区 + 逐条审批 + 检查点回退，保障代码安全可控"
+    ],
+    "summary": "Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "效率协作"
+    ],
+    "suitable": [
+      "已付费 Claude Code 或 Codex 订阅、想一份订阅两个工具用的开发者",
+      "经常在电脑和手机间切换的重度 AI 用户",
+      "想用 AI 做小工具小游戏的非技术岗（产品、设计、运营）",
+      "希望从开发到一键上架 TapTap 的独立游戏开发者",
+      "需要 MCP 接内部系统和团队额度管理的企业团队"
+    ],
+    "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。"
+  },
+  "contentDetail": "# Cindy 深度评测：心动网络那句\"想到，就能做到\"，是真兑现还是漂亮话术？\n> **一句话总结**：Cindy 是心动网络（XD Inc.，TapTap 母公司）于 2026 年 7 月 TDW 开发者沙龙上发布的开源 AI Agent 客户端，它最聪明的一步棋不是造模型，而是把 Claude Code、Codex、Pi 这些\"别人的手脚\"套进一个统一的、有记忆、能跨端接力、还能用你已经付过费的 Coding Plan 的工作台——**这是一次典型的\"平台级收编\"：自己不写引擎，但把驾驶舱造得让所有人愿意坐进来**。\n---\n## 一、背景与痛点：它为什么会出现\n要理解 Cindy，得先看清它踩中的三层痛点。\n**第一层是用户的痛**。如果你同时用过 Claude Code 和 Codex，一定会经历这种崩溃：在 Claude Code 里写到一半，发现这个子任务 Codex 更擅长，但切换过去意味着丢上下文、丢记忆、丢工具、丢工作现场——一切从头再来。当前的 Agent 生态是割裂的，每个 harness 都想把你锁死在自己的世界里。\n**第二层是心动自己的痛**。黄一孟在 TDW 2026 演讲中透露了 Cindy 的真实出身：它原本只是心动内部一个\"三无项目\"——没立项、没预算、没专属团队，初衷是让公司里非技术岗的同事也能用上 AI。他观察到一个反常识现象：**AI 让个体的编程和制作效率提升了成百上千倍，但回到团队协作里，效率却没对等增长**——因为传统协作是\"接力式\"的，策划等程序、程序等美术、美术等 QA，一个人 AI 干三天的活，团队还是被最慢的那一环卡住。Cindy 想验证的是\"以结果为单位并行\"的新协作范式。\n**第三层是 TapTap 的商业算盘**。2026 年上半年 TapTap 新发行可玩游戏达到 5002 款，是去年同期的 10 倍，其中超 4000 款借助 AI 制作。TapTap 制造（TapTapMaker）已经验证了\"用浏览器的人也能做游戏\"，Cindy 要做的是把门槛再压一档——**连本地安装 Codex、Claude Code 这一步都替你省掉**，并且把 TapTapMaker 作为原生插件内置，让\"做完游戏一键上架\"这条路径变得丝滑。这是一招典型的\"工具即入口\"。\n---\n## 二、核心亮点与功能剖析：它到底强在哪\n### 1. 多 Harness 混跑：把\"手脚\"和\"大脑\"彻底解耦\nCindy 最核心的设计是 **Harness（智能体运行时）与模型自由组合、任务中途可切换**。打个比方：如果 Claude Code 和 Codex 是两位各有绝活的工程师，Cindy 就是那个能让这两位在同个项目里交接棒的项目经理——交接的不是 PPT，是完整的工作现场、记忆、Skill 和工具箱。\n首批接入的是 Claude Code 与 Codex，发稿前社区反馈新版本已经把 Pi 也接了进来。更激进的是多 Agent 协作：**同一个任务可以拆成\"规划—并行执行—独立 Review\"三段，分别由不同的 Harness × 模型组合承担**，上下文和验收标准由 Cindy 统一持有。这个设计比单纯\"换个模型聊天\"要深一层，它本质上是把软件开发里的 Plan/Code/Review 流水线抽象成了 Agent 协议。\n### 2. 四条模型接入路线：不强迫你交钱\n这是 Cindy 商业设计上最值得点赞的地方。它给你留了四条路，且每条都不坑：\n- **官方托管服务**：登录即用，按量计费透明；\n- **复用你已有的 Claude Code / Codex Coding Plan**：一键授权，**不重复计费**——这一手很聪明，相当于\"我不赚模型的钱，我赚生态的钱\"；\n- **自带 API Key**：Claude、GPT、Grok、Gemini、DeepSeek、Kimi、GLM、Qwen 通通支持；\n- **本地模型**：支持 OpenAI-compatible 端点、Ollama、vLLM 和 VPC 内自部署。\n付费方案分 Free / Plus $20 / Super $100 / Ultra $200 四档，但**软件本身永久免费**，这一点 README 写得很清楚。\n### 3. 真正做到了\"桌面满血 + 移动端接力\"\n这一点是国内开发者社区评价最集中的亮点。一位深度用户的对比很能说明问题：他试遍了 Hermes Agent、Claude Code、Codex、workbuddy、trae、qoder、minimax code、zcode 这类 harness，普遍问题要么是移动端没有会话同步、要么是没有深色模式、要么是后台恢复要等十几秒。Cindy 的**移动端同步\"就跟收微信一样快\"**，可以在飞书或 Slack 里 @ 她派活，手机端可远程查看、追问、审批授权，甚至接管电脑上正在运行的会话。\n### 4. 记忆、Skill、MCP、定时任务：把这些\"老三样\"做成了默认配置\n- **Memory**：纠正一次，长期生效，且跨 Harness 共享；\n- **Skill**：把一套工作方法教她一遍，到处复用（团队级分享\"在打造中\"）；\n- **MCP**：接内部业务系统；\n- **Automation**：周期任务自己排班、自己跑、结果推送到 IM。\n单独看每一项都不是新鲜事，但**这些能力在 Cindy 里是开箱即有的默认状态**，而不是需要你翻三篇博客才配明白的\"高级特性\"。\n### 5. 安全设计：隔离工作区 + 逐条审批 + 检查点回退\n代码和文件改动默认先在隔离工作区完成，用户逐条批准后才会落到真实分支，且支持回退到检查点。这一点对生产环境至关重要，也是它区别于\"放任 Agent 乱改文件\"的竞品的核心差异。\n---\n## 三、上手体验与代码示例\n如果你只想当普通用户，**直接去 cindy.app 或 cindy.cn 下载安装包就行**，支持 macOS（Apple 芯片 / Intel）、Windows x64、Linux（Ubuntu / Arch / Omarchy 有专门指南）和 Android，iOS/iPadOS 用于远程查看与接管。\n如果你想读源码或贡献，最小上手路径是这样的：\n```bash\n# 前置要求：Node.js 22.x、pnpm 10.x（v11 暂不支持）、Git LFS\ngit clone https://github.com/makecindy/cindy.git\ncd cindy\ngit submodule update --init --recursive cindy-protocol\ngit lfs pull\npnpm install\n# 启动桌面端（中国账号）\npnpm restart:desktop:remote --region=cn\n# 启动桌面端（全球账号）\npnpm restart:desktop:remote --region=global\n```\n几个值得注意的细节：claude-code、codex、ripgrep 这些工具二进制**不会提交进仓库**，而是在 `pnpm install` 时按平台下载；Android platform-tools 在 Windows 打包前会按固定版本拉取并做 SHA256 校验。这套工程化处理方式能看出团队在供应链安全上是动过脑子的。\n登录界面有个 **\"Skip Sign-In\"** 按钮，可以不登录 Cindy 账号直接跑本地 Agent，但注意：这**不是**连接本地服务器，只是本地模式，服务端能力（云同步、跨设备、移动端接力）都不可用。\n---\n## 四、目标人群与收益\n| 人群 | 能拿到什么 |\n|------|-----------|\n| **已经付费 Claude Code / Codex 的开发者** | 一个客户端用两份订阅，不用重复掏钱，还能中途切 harness |\n| **多设备切换的重度用户** | 桌面满血 + 手机接力 + IM 派活，随时随地追进度 |\n| **非技术岗但有产出需求的人**（产品、设计、运营） | 说需求就能跑通\"做 Demo—改页面—发版本\"闭环 |\n| **独立游戏开发者** | TapTapMaker 内置，从开发到 TapTap/Steam 一键上架 |\n| **企业团队** | MCP 接内部系统 + 模型额度管理 + 团队 Skill 治理 |\n| **想读源码学习的工程师** | Apache-2.0、pnpm monorepo、Orca 多 Agent 编排文档齐全 |\n---\n## 五、竞品对比：它在生态里的真实位置\n| 维度 | **Cindy** | 直接用 Claude Code / Codex | OpenCode | Superset |\n|------|-----------|---------------------------|----------|----------|\n| 定位 | 通用 Agent 工作台（不止编程） | 单一编程 harness | 终端优先的编程 Agent | 开发者专用 Agent 工作区 |\n| 多 harness | ✅ 可中途切换 | ❌ 各自独立 | ⚠️ 单一 | ✅ 任意 CLI Agent |\n| 移动端接力 | ✅ Android + iOS/iPadOS | ❌ | ❌ | ✅ iPhone/iPad |\n| 记忆共享 | ✅ 跨 harness 共享 | ❌ | ⚠️ | ⚠️ |\n| 后端是否开源 | ❌ 仅客户端 | — | ✅ MIT | 源可见（ELv2） |\n| License | Apache-2.0 | Apache-2.0（CLI 开源） | MIT | ELv2 |\n| IM 集成 | 飞书、Slack、Telegram 等 | ❌ | ❌ | Slack |\n| 中文生态 | ✅ 国内直连、TapTap 集成 | ❌ | ❌ | ❌ |\n横向看，Cindy 的独特生态位是：**它不是更聪明的模型，也不是更锋利的编程 harness，它是那个把所有人黏在一起的工作台**。在这个位点上，真正能对位的对手目前几乎没有——OpenCode 和 Cline 是编程工具，Hermes Agent 体验粗糙，Superset 是给开发者用的 worktree 隔离工具而非通用 Agent。**Cindy 抢的是一个还没被填满的\"跨端通用 Agent 客户端\"赛道，并且靠心动的大厂背景 + 开源 + 免费三件套，几乎是用降维打击的姿态进场**。\n---\n## 六、局限与不足：这些坑你需要知道\n### 1. 最核心的硬伤：只有客户端开源，后端是黑盒\nREADME 写得很坦诚：\"the backend service lives in a separate repository and is not part of this monorepo\"。这意味着**你想完全自部署整套 Cindy 服务是不可能的**。服务端能力（云同步、移动端接力、官方模型托管）100% 依赖心动云。如果服务下线、改定价或改协议，你的移动端接力体验会瞬间失效。对追求\"我的基础设施我做主\"的企业来说，这是最需要掂量的一点。\n### 2. \"本地优先\"是个相对概念\n文件和对话默认存在本地，但**只要你用云端模型，prompt 和上下文必然要发到模型供应商**。官方构建版还内置了 TapDB 埋点（设备、OS、版本元数据，登录后会关联账号 ID；承诺不采集聊天内容和文件内容）。好消息是从源码编译时可以完全剥离埋点：删掉 `apps/desktop/src/renderer/index.tsx` 里的 `initTapdb()` 调用即可，移动端则默认不开启。对隐私敏感的用户，**建议自己从源码编译一个\"无埋点\"版本**。\n### 3. Skip Sign-In 模式功能严重缩水\n不登录就只能跑本地 Agent，云同步、IM 派活、跨设备接力全没有。如果你抱着\"我不用心动账号也能用全套\"的预期来，会失望。\n### 4. 工程上有些小坑\n- **pnpm v11 不支持**，必须锁在 10.x；\n- **cindy-protocol 作为 submodule 存在**，漏了 `git submodule update --init --recursive` 会编译失败；\n- **工具二进制要联网下载**（claude-code、codex、ripgrep），国内网络需要稳定的代理或镜像；\n- **插件市场和团队 Skill 分享还在\"打造中\"**，目前是期货。\n### 5. 架构上的\"套壳\"争议\n社区里一位用户指出得很到位：Cindy 并不是传统的 CC 套壳或 ACP，**更像是在 Claude Code / Codex 之上做了一层网关**，Computer Use 用的是开源项目 cua，相当于把 CC 和 Codex 的\"手脚\"拆出来换成 Cindy 自己的。这种\"魔改式套壳\"是双刃剑：好处是能用第三方模型不报错、能做深度定制；风险是**上游 Claude Code / Codex 一旦改协议或反爬，Cindy 就要追着适配**。这是一条比自研 harness 短期跑得快、长期充满不确定性的路。\n### 6. 独立第三方评分并不高\nFollowAgents 用 FARS-2.1 框架给 Cindy 打了 **52/100（不推荐）**，主要扣分项是：缺少用户确认机制和权限最小化证据、依赖漏洞扫描证据不足、缺乏独立可验证性、版本 changelog 缺失。需要说明的是，这个评分基于 2026 年 8 月的代码版本，且是纯静态分析；但作为参考，它提醒我们 **Cindy 仍是一个迭代极快的年轻项目**（发稿前版本号还在 0.1.x 阶段），生产环境谨慎用，个人尝鲜没问题。\n### 7. 团队维护依赖是潜在风险\nCindy 是心动内部\"三无项目\"演化而来，这种出身意味着它能不能长期拿到公司级投入，本质上取决于黄一孟个人的兴趣和 TapTap 生态战略的延续性。社区里已经有人在担心\"工具太五花八门，怕不维护了\"。这是所有大厂副业开源项目的通病，需要时间验证。\n---\n## 七、避坑指南（来自社区实战）\n结合 locdd 论坛用户的真实使用反馈，几条实用建议：\n1. **如果你重度使用 Codex**：Cindy 的国内直连体验比 Codex 官方快得多，移动端同步几乎是\"收微信\"级别，强烈推荐作为 Codex 的移动端补充；\n2. **如果你只用 Claude Code**：先想清楚你是否真的需要跨 harness 切换，否则直接用 Claude Code 原生体验更纯粹；\n3. **模型选择**：接自定义 baseurl 的兼容性比想象中好，社区反馈\"用第三方模型没什么报错\"；\n4. **手机端是杀手锏**：把手机 App 和桌面端配对之后，你才真正体会到这个产品的价值——**只装桌面端等于只用了半个 Cindy**；\n5. **关注 Pi 的接入进度**：Pi 到现在都没有一个好用的 Web UI 或 App，Cindy 把它接进来之后，等于给了 Pi 用户第一个像样的客户端。\n---\n## 八、结语与终极评判\n**该不该试？分三档说。**\n- **如果你是已有 Claude Code 或 Codex 订阅的开发者，或有跨设备工作需求**：直接去 cindy.app 下载试试，门槛为零，软件免费，复用订阅不重复扣费，**这是一笔稳赚不赔的买卖**。\n- **如果你是非技术岗、想做小工具或小游戏**：Cindy + TapTapMaker 的组合是目前国内门槛最低的\"想法 → 上架\"路径之一，值得认真研究。\n- **如果你是企业IT、要自部署、或对数据主权极度敏感**：先观望。后端不开源 + 强依赖心动云这两条，会让你的议价权和退出成本都很被动。\n**它最值得肯定的，不是某个具体功能，而是产品设计哲学的清醒**：在所有人都想造\"更聪明的模型\"的时代，Cindy 选择做\"更顺手的驾驶舱\"，并且用 Apache-2.0 + 四条模型接入路线 + 不重复计费这三板斧，把自己定位成了**生态的黏合剂而非垄断者**。这套思路在 2026 年的 Agent 浪潮里，比大多数\"又一个套壳 ChatGPT\"要高明得多。\n至于它能走多远——**短期看 Claude Code / Codex 们给不给面子，长期看心动愿不愿意把这场\"三无实验\"养成真业务**。目前这两个变量都还没到下定论的时候，但至少现在，它值得你花一个晚上装上玩一玩。",
+  "type": "project",
+  "dateAdded": "20261024"
+}

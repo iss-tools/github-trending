@@ -1,0 +1,172 @@
+# Nutlope/hallmark
+
+[GitHub URL](https://github.com/Nutlope/hallmark)
+
+
+## Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀
+
+> 一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。
+
+- **Tags**: Claude Code, 反 AI Slop, Vibe Coding, UI 设计, 开源 Skill
+- **Category**: 开发工具, AI 编程, 开源项目
+
+## Details
+
+# Nutlope/hallmark 深度评测：给 AI 编程助手装上"反 AI 味"设计过滤器的那把刀
+---
+## 一句话总结
+**Hallmark 是一个由 Together AI 出品、GitHub 近 3 万 Star 的"反 AI-slop 设计 Skill"，专门给 Claude Code、Cursor、Codex 这类 AI 编程助手注入一整套"拒绝像 AI 生成"的设计纪律——让你用 Vibe Coding 写出来的页面不再一眼假。**
+如果你曾被 AI 生成的"紫色渐变 Hero + Inter 字体 + 三列等宽特性卡片 + Aurora 流动背景"羞辱过眼睛，这就是 2026 年最值得立刻装进工作流的那一刀。
+> 项目地址：https://github.com/Nutlope/hallmark  
+> 在线演示：https://www.usehallmark.com/  
+> Star / Fork / License：约 29.7k ⭐ / 1.5k 🍴 / MIT  
+> 作者背景：Nutlope（Hassan El Mghari），Together AI 开发者关系负责人，此前打造过 roomGPT（10 万+ Star）、Together AI Playground 等现象级开源项目
+---
+## 背景与痛点：为什么需要它
+### AI 写 UI 的"三大结构性原罪"
+Hassan 在 SKILL.md 开篇就把问题钉死了：**AI 生成的 UI，视觉上千人千面，结构上却千人一面。** 他总结的 AI 指纹不是某个具体颜色，而是背后那套"Hero → 三特性 → CTA → Footer"的节奏。
+把这层洞察翻译成人话，AI 一键生成的页面有三大原罪：
+- **视觉陈词滥调**：紫蓝渐变 Hero、`background-clip: text` 渐变标题、Aurora 极光 Blob、漂浮 3D 光球、Inter 字体全局铺满、纯黑纯白底色；
+- **结构性同质**：永远 3 列等宽、图标在上标题在下、卡片里再嵌卡片、每节一个 `01 / EXAMPLES` 的 Eyebrow 小标、每个 Hero 必须居中 100vh；
+- **内容造假**：随口编"+47% 转化率""10× 提速""50,000+ teams trust us"，配色、间距、动效随机拍脑袋。
+这不是模型不够聪明，而是模型是从同一锅 SaaS 训练数据里熬出来的——**它只会输出"分布内"的东西，而"分布内"恰恰就是 slop 的定义**。
+### Hallmark 的破解思路
+与其抱怨模型，不如给它装一台"反模式过滤器"。Hallmark 的本质是**一套精心编码的 Markdown 规则集**，被注入到 Coding Agent 的系统上下文里，让模型在每次生成 UI 之前强制走一条"反直觉"的决策链。
+一个形象的比喻：**LLM 是个被喂了十年"流水线设计"的设计学院毕业生，Hallmark 就是雇在他旁边那个嘴里叼着笔、随时把打印稿甩回去重做的创意总监。**
+---
+## 核心亮点与功能剖析
+### 亮点 1：四大动词，覆盖设计的全生命周期
+Hallmark 不只是一个"Prompt 包装器"，它把自己定义成有明确动词接口的工具：
+| 动词 | 作用 | 典型场景 |
+|---|---|---|
+| **(default)** | 构建新 UI，自动挑宏观结构 + 主题 + 跑 Slop Test | "给我做个 Coffeebox 订阅咖啡的落地页" |
+| **`hallmark audit <target>`** | 给现有代码打分，输出反模式清单，**不修改任何代码** | 评估手头那个看起来有点假的老项目 |
+| **`hallmark redesign <target>`** | 保留文案 + IA + 品牌，**推翻结构**用新指纹重建 | 客户说"感觉太模板化" |
+| **`hallmark study <screenshot\|URL>`** | 从你欣赏的设计里提取 DNA（宏观结构、字体对、色锚），可选产出可携带的 `design.md` | 看到好看的网站，想复用它的"灵魂"而不是像素 |
+`study` 这一条尤其巧妙：它拒绝像素级抄袭和模板市场 URL，要求用户对自己来源做声明，**提取的是"结构 DNA"而非"截图搬运"**。
+### 亮点 2：21 个命名主题 × 多种宏观结构，绝不让你审美疲劳
+这是它和市面上同类 Skill 最关键的区别——**主张"结构多样性"，不只是"视觉多样性"**。
+- **宏观结构（Macrostructures）**：Bento Grid、Long Document、Marquee Hero、Stat-Led、Workbench、Conversational FAQ、Manifesto、Photographic、Quote-Led、Specimen、Letter、Catalogue、Index-First……每一种都是不同的页面骨架；
+- **命名主题（Themes）**：Bubble、Distil、Cold Snap、Cinder、Ferns & Fathom、Hollowback Apiary、Off-Register、Press Quaternary、Tally、Wayfare、NAJM、Hyperlane，共 21 个，每个都是一套 OKLCH 色板 + 字体对 + 装饰语言；
+- **Custom 分支**：当 brief 里带有目录主题装不下的创意信号（用户指定品牌色、多维度 vibe），自动切换到从零定制的 Custom 模式，依然走完 60 道 Slop Gate。
+为防止"默认吸引子"作祟（模型总爱挑列表里的第一个），作者甚至在 `structure.md` 里明确写了"主题表按字母序排列以中和'第一行 = 默认'的偏见"，这种细节见功力。
+### 亮点 3：60 道 Slop Gate + 6 维预发自查（Pre-emit Self-critique）
+这是 Hallmark 的硬核所在。在每次把代码交回用户之前，模型必须先对自己打 6 个维度的分（1-5），**任何一项 < 3 都触发重写**：
+| 维度 | 在问什么 |
+|---|---|
+| **A Philosophy** | 这个页面有没有一个明确的"立场"？还是只是个排版？ |
+| **B Hierarchy** | 读者能在 2 秒内分清主次吗？ |
+| **C Execution** | 细节到位了吗？（rule 粗细、accent 占比、focus ring） |
+| **D Specificity** | 看起来像"这个 brief 专属"还是"谁的都行"？ |
+| **E Restraint** | 有没有把所有不挣它位置的元素删干净？ |
+| **F Variety** | 跟项目里上一次 Hallmark 输出，结构指纹差别够大吗？ |
+然后再过 60 道具体 Gate，比如：
+- **Gate 1**：是否用了 Inter / Roboto / Open Sans / Poppins / Lato 作为展示字体？
+- **Gate 2**：有没有紫到蓝的渐变？
+- **Gate 11**：是否用了 `transition: all`？（必须指明具体属性）
+- **Gate 24**：中性色是不是 `oklch(..., 0, ...)`？零饱和度的灰要向锚点色调 tint 至少 0.005 chroma；
+- **Gate 28**：交互元素是否同时有 default + hover + focus-visible + active + disabled 五态（组件模式必须 8 态齐）；
+- **Gate 56**：**没有真实数据是否虚构了 "+47% conversion"？**
+- **Gate 57**：有没有自己手绘假的浏览器 chrome / 手机边框 / IDE 边框？
+- **Gate 59**：移动端按钮、导航、CTA 文本是否可能折成两行？
+- **Gate 62**：root 必须用 `overflow-x: clip` 而不是 `hidden`（hidden 会破坏 `position: sticky`）。
+### 亮点 4：六大纪律 —— 把"设计哲学"写进工程约束
+整个 SKILL.md 最让人眼前一亮的是它把抽象的"设计品味"翻译成了**可执行、可检查的工程纪律**：
+1. **Pre-emit self-critique**：写完先自评 6 维，低于 3 必须重写，分数以注释形式盖章：`/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`；
+2. **诚实文案**：用户没给的数字，绝不编。要么用 `—` + 灰色占位块标注"metric to confirm"，要么换宏观结构；
+3. **Token 锁定**：所有颜色和字体必须引用命名变量（`var(--color-accent)`），禁止渲染中途 inline 出 `#7c3aed` 这种"魔数"；
+4. **禁止重绘 chrome**：不要手画假的浏览器窗口边框，用户的浏览器本身就是 chrome；
+5. **移动端硬性底线**：在 320/375/414/768px 四档宽度下必须完美渲染，这是 hard floor 不是 wish list；
+6. **`design.md` 项目记忆**：一次 redesign 产出的设计系统会被锁进 `design.md`，下次自动沿用，多页间反而要求"共享系统"而不是"互不相同"。
+### 亮点 5：组件级 vs 页面级的智能分流
+SKILL.md 里有大量对"边界场景"的精细处理。比如当用户的 brief 是"做一个 button"而不是"做一个落地页"时，它会自动切换到 **Component-scope flow**：跳过 macrostructure / Nav / Footer / Hero 那些页面级机制，但**收紧 8 状态纪律**（default、hover、focus-visible、active、disabled、loading、error、success）。
+产物是两个文件：组件本体 + 一个 `.preview.html` 演示包装器，垂直堆叠渲染所有 8 个状态，让用户看完即删。这种"临时演示文件"的设计非常懂一线开发者。
+### 真实案例演示（必看）
+来看 Hallmark 官方给出的"canonical try-it prompt"——一段粘进 Claude Code / Cursor 就能立刻验证装没装好的 brief：
+> **用户输入（原样粘贴）：**
+> *"Build me a landing page for Coffeebox — a small-batch coffee subscription. Roast on Sunday, ship on Monday, drink Tuesday. Audience: people who already buy good coffee and want fewer trips to the shop. Tone: warm, hand-set, editorial — like a small café's chalkboard."*
+**普通 LLM（无 Hallmark）大概率会输出：**
+紫色到蓝色渐变的 Hero，中央居中一个 "Artisan Coffee, Delivered to Your Door" 大标题，下面是 Inter 字体的副标题，再来一张"咖啡师拉花"的 mockup 图，配上三个 icon 卡片写 "Fresh Roast / Fast Delivery / Cancel Anytime"，最后 CTA 是 "Get Started →"。
+**Hallmark 推理后：**
+推断 trio（audience = 资深咖啡爱好者 · use = 订阅 · tone = editorial-warm）→ 选宏观结构 **Long Document** + 主题 **Linen**（暖纸罗马衬线）→ 装饰走 Tier-B 手绘 SVG（一颗咖啡豆图标，可选）。产出摘录：
+> *"Coffeebox · est. 2026 · n.º 12.* The first roast leaves the drum at 6:14 a.m. Sunday. By Monday morning it's in a paper bag in your post box. By Tuesday the kitchen smells like a café. Subscribe, skip a week, change the roast — all from the email. We bake what we baked yesterday. We ship what shipped well. We answer the email ourselves."
+这是**一页像"小咖啡馆手写黑板报"的长文叙事落地页**，不是一张带渐变 Hero 的 SaaS 模板。对比鲜明，差距一目了然。
+官方仓库的 `docs/recipes.md` 里还有 8 个这种成对的 brief 范例：Tide 播客（Letter · Salon）、Streampipe CLI（Long Document · Terminal）、Maple Street 面包店（Catalogue · Almanac）、Meridian 宣言（Quote-Led · Brutal）、Tracejam SaaS（Workbench · Midnight）、Anya 个人页（Index-First · Plain）。每个都附上推断过程和"为什么这样选"，是学设计语言本身极好的教材。
+---
+## 技术栈与架构解析
+Hallmark 本身**不是运行时代码，而是一套 Prompt-as-System 的 Markdown 知识库**：
+- **入口文件 `SKILL.md`**：包含元数据 frontmatter（name / description / version），描述何时触发；这是 Claude Code Skills 规范的标准格式，Cursor / Codex 各有对应文件位置；
+- **`references/` 目录**：拆成 anti-patterns（25KB）、component-cookbook（28KB）、custom-craft（34KB）、assets（25KB）、structure、typography、color、copy、motion、slop-test、macrostructures、responsive 等十多个按需加载的模块文件。**模型不会一开始就吃下所有内容，只在相关分支触发时按需加载**——这是把上下文窗口当资源管理的聪明设计；
+- **`docs/recipes.md`** + **`docs/study-examples.md`**：八组 worked examples，既是 few-shot 教材也是回归测试；
+- **`site/_tests/`**：21+ 个主题的真实 HTML 输出，每个页面顶部 CSS 注释里盖章了自己的 macrostructure，可供人眼 review 和模型 cross-reference；
+- **`.hallmark/log.json`**：项目本地"多样化账本"，记录每次输出的结构指纹，下次构建时强制避开相同指纹。
+整个仓库 90MB、语言标注为 CSS——这是因为 90% 体积是 `site/_tests/` 下那些完整的主题示例 HTML 文件。
+---
+## 上手门槛与部署体验
+### 安装：一行命令搞定
+```bash
+npx skills add nutlope/hallmark
+```
+或者手动复制 `SKILL.md` + `references/` 到对应位置：
+- **Claude Code**：`~/.claude/skills/hallmark/`
+- **Cursor**：`.cursor/rules/hallmark.mdc`（取 SKILL.md 正文，去掉 frontmatter）
+- **Codex**：`~/.codex/skills/hallmark/`（个人）或 `.codex/skills/hallmark/`（项目级）
+### 验证安装
+把官方那段 Coffeebox prompt 粘进新会话，**如果模型吐出的是"Linen 暖纸罗马衬线 + 长文叙事"，说明加载成功；如果是紫色渐变 Hero，说明 Skill 没被识别**。
+### 使用建议
+- 优先在**新建项目**或**重大改版**时使用，效果最炸；
+- 老项目里它会先做 **Pre-flight scan**：自动读 `package.json`、`tailwind.config.*`、现有 tokens、字体栈，**优先适配已有体系而不是踩上去**；
+- 想给现有项目"治 slop"但不让它乱改代码：用 `hallmark audit` 拿一份只读诊断；
+- 想给团队沉淀设计系统：用 `hallmark study <url>` 输出 `design.md`，锁进项目根目录，以后所有页面共享体系。
+---
+## 社区活跃度与生命力
+- **29.7k Star / 1.5k Fork**，2026 年 4 月底创建、8 月仍在频繁推送，**不到半年冲上 GitHub Trending 长期榜首**——这个增长速度对一个"纯 Markdown 规则集"来说是现象级的；
+- 49 个 open issues，61 位 watch，MIT License 完全开放；
+- 仓库带 `ROADMAP.md`，作者公开列出后续计划，迭代节奏清晰；
+- 由 **Together AI** 公司背书，作者 Hassan El Mghari 是 Together AI 的 DevRel 负责人，开源社群影响力极强（roomGPT 100k+ Star 就出自他手），**不会是"玩票"项目**；
+- 它已经反向影响生态：SKILL.md 开头明确说自己的规则是"anti-AI-slop 设计领域共识"的汇编——包括 `impeccable`、`kami`、Anthropic 自家的 `frontend-design skill`、`taste-skill`、Claude 官方 cookbook 的前端审美指南、以及 2026 年的"tactile rebellion"运动。**它既是集大成者，也在成为新的参照系。**
+---
+## 目标人群与收益
+| 人群 | 核心痛点 | Hallmark 能带来什么 |
+|---|---|---|
+| **独立开发者 / 独立 SaaS** | 用 Vibe Coding 半天出 MVP，但落地页一眼 AI 味，转化率低 | 让 "build me a landing page" 直接产出一页有立场、有品味、能打的落地页，**省掉请设计师的几千美金** |
+| **前端工程师** | Design System 维护累、设计师改稿慢、想快速出高保真稿 | `design.md` 机制把团队品味沉淀为工程资产，AI 自动对齐 tokens |
+| **设计师** | 想用 AI 提效但 AI 输出不可控 | 把 Hallmark 当**反 AI 默认**的护栏，用 `study` 提取参考站的 DNA 来快速探索方向 |
+| **Agency / 外包团队** | 客户总说"太模板化了" | `hallmark redesign` 一个动词搞定整个页面的结构级重构，且自动规避抄袭嫌疑 |
+| **Cursor / Claude Code 重度用户** | 每个项目都要重复写一大段"别用紫色渐变 / 别用 Inter"的 System Prompt | **一次安装，全局生效**，无需在每次会话里重新调教 |
+---
+## 竞品/同类对比
+| 工具 | 定位 | 优势 | 劣势 |
+|---|---|---|---|
+| **Hallmark** | 反 AI-slop 设计规则集（Skill 形态） | 规则最完备（60 Gate + 6 轴自评），多 Agent 兼容，结构多样性强 | 只管"设计"不管"代码质量"，有学习成本 |
+| **Anthropic 官方 frontend-design skill** | Claude 官方前端审美指南 | 官方背书、最简 | 规则深度不及 Hallmark，结构多样性弱 |
+| **impeccable / kami / taste-skill** | 同一领域的前身项目 | 思路开创者 | 更新慢，缺乏多主题 / 多宏观结构机制 |
+| **v0.dev / Lovable** | AI 生成全栈应用 | 一键出产品 | 输出风格仍偏向 React + shadcn 主流模板，结构趋同 |
+| **纯手写 System Prompt** | 自己给 Cursor 写规则 | 完全可控 | 维护成本高、不如 Hallmark 成体系 |
+**一句话定位：Hallmark 不是 v0 的替代品，而是 v0 / Cursor / Claude Code 的"化妆师"——它们负责"造出来"，Hallmark 负责"造得不丑"。**
+---
+## 局限与不足（毫不避讳）
+1. **只管前端 UI，不管业务逻辑**。Hallmark 不会让生成的 React 代码更健壮、不会补全 API、不会优化性能。**它是设计 Skill，不是 Vibe Coding 全能药**。
+2. **有明显的"编辑器审美偏好"倾向**。SKILL.md 里明确警告过：作者自己承认"Specimen（编号 + 大衬线 + 不对称）是 Hallmark 最容易反复输出的形状，因此专门加了 Gate 23 + Gate 66 禁止它做默认 fall-through"。也就是说，**Hallmark 的"反 AI 味"本质上是从"AI 味"切换到"Hallmark 味"**——你能感觉到这是"精心设计过的反对派"，而非"自然生长的设计"。
+3. **规则复杂度本身就是学习成本**。60 个 Gate + 6 轴自评 + 21 主题 + 21 宏观结构 + 8 状态纪律 + 多样化账本……对于只想快速出一个页面的轻度用户来说，模型推理时间明显变长，token 消耗也显著增加。**对复杂度敏感的人会嫌它啰嗦**。
+4. **对既有设计系统要求高**。如果你的项目已有 `tailwind.config` 自定义 token，Hallmark 会尽量适配，但深度集成仍可能踩坑——**最好在 Pre-flight Scan 之前先备份**。
+5. **"诚实文案"规则在某些场景下反效率**。做 Demo / Pitch Deck 时，你可能恰恰想让它"编几个好看的数据占位"，而 Hallmark 会硬顶回去给你灰色占位块。需要用"这是 Demo，可以用虚构数据"的明确指令绕开。
+6. **Cursor 集成体验不如 Claude Code 原生**。Cursor 需要手动把 SKILL.md 拷成 `.cursor/rules/hallmark.mdc` 并去掉 frontmatter，**升级时要重新执行**，不如 `npx skills add` 那么省心。
+7. **模型兼容性依赖 Agent 能力**。6 轴自评这种"自我评分"高度依赖模型是否真的会认真执行。Claude Sonnet 4.5 / Opus 执行得比较到位，弱一点的模型可能就"糊弄过关"，输出打回原形。**用 Hallmark 的同时请用最好的模型**。
+---
+## 结语与行动建议
+**Hallmark 是 2026 年 Vibe Coding 生态里最值得立刻安装的一个 Skill，没有之一。**
+它的真正价值不只是"让 AI 写的 UI 更好看"，而是**第一次有人把"设计品味"用工程化的方式写成了一套可执行、可审计、可沉淀的规则系统**。这种把主观审美翻译为可验证约束的尝试，对整个 AI Coding 行业都有方法论上的示范意义。
+如果你每月产出超过 1 个 Web 项目，安装它只需要 60 秒，省下的设计来回就是几小时起步：
+```bash
+npx skills add nutlope/hallmark
+```
+装好后，去 `https://www.usehallmark.com/` 按 T 键翻完那 21 个主题示范页，再粘一段 Coffeebox prompt 验证流程——**只要看到第一页输出的瞬间没有那种"唉又是紫色渐变"的失落，你就明白这 3 万 Star 不是白来的。**
+**推荐的使用姿势：**
+- **新建项目** → 默认动词，让它从宏观结构开始自由发挥；
+- **改版旧站** → 先 `hallmark audit` 拿诊断，确认方向后再 `hallmark redesign`；
+- **看到好参考** → `hallmark study <url>` 提取 DNA，产出 `design.md` 锁进仓库；
+- **只调一个按钮** → 直接说 "just the button"，让它走 Component-scope，8 状态齐活；
+- **团队协作** → 把 `design.md` commit 进 repo，所有人共享同一套品味基线。
+**Hallmark 不是终点。它是一个信号：AI Coding 的下一个战场，正在从"能不能生成"转向"生成得像不像人亲手做的"。**
+而 Hassan El Mghari 和 Together AI，已经把这条赛道的第一杆旗插好了。

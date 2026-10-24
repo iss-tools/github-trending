@@ -18522,14 +18522,13 @@
           "bubbletea",
           "charm",
           "claude-code",
-          "cli",
           "codex",
           "coding-agents",
           "developer-tools",
           "go",
           "golang",
           "multiplexer",
-          "pty",
+          "omarchy",
           "ssh",
           "terminal",
           "terminal-emulator",
@@ -18537,11 +18536,12 @@
           "tiling-window-manager",
           "tmux-alternative",
           "tui",
-          "window-manager"
+          "window-manager",
+          "zellij-alternative"
         ],
         "license": "MIT license",
         "homepage": "https://tuios.dev",
-        "description": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent. - Gaurav-Gosain/tuios"
+        "description": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent. Official only at tuios.dev and this repo. tuios has no X/Twitter account. - Gaurav-Gosain/tuios"
       },
       "summaryData": {
         "tags": [
@@ -20287,8 +20287,8 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 375453,
-      "forks": 93853,
+      "stars": 375956,
+      "forks": 93972,
       "starsAdded": 88243,
       "createdAt": "2026-10-18T16:00:03.993Z",
       "metaData": {
@@ -20493,6 +20493,58 @@
       }
     },
     {
+      "id": "a5f24f63-d307-439e-a2fa-950257102fe5",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 43118,
+      "forks": 2691,
+      "starsAdded": 11223,
+      "createdAt": "2026-10-24T13:00:03.787Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
       "id": "29fcf11a-1480-43dc-b002-2503f402d9f9",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -20620,8 +20672,8 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 104361,
-      "forks": 6590,
+      "stars": 104475,
+      "forks": 6599,
       "starsAdded": 9545,
       "createdAt": "2026-10-21T12:00:04.284Z",
       "metaData": {
@@ -20687,6 +20739,80 @@
       }
     },
     {
+      "id": "99818319-390d-4400-83f2-bed598ec4488",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "repo": "Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars": 134159,
+      "forks": 12809,
+      "starsAdded": 6875,
+      "createdAt": "2026-10-24T13:00:03.820Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "antigravity",
+          "ast",
+          "claude-code",
+          "code-analysis",
+          "code-search",
+          "codex",
+          "cursor",
+          "developer-tools",
+          "gemini",
+          "graphify",
+          "graphrag",
+          "knowledge-graph",
+          "leiden",
+          "llm",
+          "mcp",
+          "openclaw",
+          "rag",
+          "skills",
+          "tree-sitter"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.graphify.com",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. - Graphify-Labs/graphify"
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "tree-sitter",
+          "AI 编码助手",
+          "代码分析",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Graphify 深度评测：把代码库变成 AI 编码助手能“读懂”的知识图谱",
+        "ability": [
+          "用 tree-sitter 纯本地解析 36+ 编程语言，构建真实代码知识图谱（非向量检索）",
+          "每条关系边带 EXTRACTED/INFERRED 来源标签，可解释、可追溯",
+          "一条命令接入 Claude Code、Cursor、Codex 等 25+ AI 编码助手",
+          "支持文档、PDF、SQL、Terraform、视频等多源数据汇入同一张图",
+          "零 API 调用、零遥测，支持 Ollama 全本地运行，隐私友好"
+        ],
+        "summary": "一个开源 CLI 工具，把代码库解析成知识图谱，让 Claude Code、Cursor 等 AI 助手更懂你的项目、更省 token。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "接手陌生大型代码库、需要快速摸清架构的工程师",
+          "带 AI 助手日常开发、想省 token 的独立开发者",
+          "需要评估 PR 影响面的 Tech Lead",
+          "负责新人 onboarding 的架构师 / Mentor",
+          "对代码隐私与合规有严格要求的团队"
+        ],
+        "description": "Graphify 是 YC S26 孵化的开源 CLI 工具，用 tree-sitter 将代码库解析为真实知识图谱而非向量索引，支持 25+ AI 助手一键接入，纯本地运行、零 token 成本，并生成 HTML 可视化、分析报告和图数据三件套。适合大型代码库理解与团队协作，但小项目性价比低，超大 monorepo 存在性能瓶颈，且 AI 有时会绕过它直接用 grep。"
+      }
+    },
+    {
       "id": "6acb811f-4746-4c8a-b68f-7656e3afb92e",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -20694,8 +20820,8 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 220894,
-      "forks": 29530,
+      "stars": 220915,
+      "forks": 29533,
       "starsAdded": 6765,
       "createdAt": "2026-10-21T12:00:04.277Z",
       "metaData": {
@@ -20747,8 +20873,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 71092,
-      "forks": 6421,
+      "stars": 71141,
+      "forks": 6425,
       "starsAdded": 5553,
       "createdAt": "2026-10-18T16:00:04.029Z",
       "metaData": {
@@ -20878,7 +21004,7 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 142481,
+      "stars": 142503,
       "forks": 16803,
       "starsAdded": 4531,
       "createdAt": "2026-10-22T11:00:04.475Z",
@@ -20938,7 +21064,7 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 44239,
+      "stars": 44260,
       "forks": 4648,
       "starsAdded": 4250,
       "createdAt": "2026-10-18T16:00:04.016Z",
@@ -21051,7 +21177,7 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 13154,
+      "stars": 13163,
       "forks": 918,
       "starsAdded": 3449,
       "createdAt": "2026-10-21T12:00:04.273Z",
@@ -21102,8 +21228,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 78890,
-      "forks": 9264,
+      "stars": 78906,
+      "forks": 9265,
       "starsAdded": 3349,
       "createdAt": "2026-10-19T11:00:03.904Z",
       "metaData": {
@@ -21175,7 +21301,7 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 56721,
+      "stars": 56743,
       "forks": 5087,
       "starsAdded": 3303,
       "createdAt": "2026-10-21T12:00:04.271Z",
@@ -21416,6 +21542,59 @@
       }
     },
     {
+      "id": "3564160d-77d8-4558-a555-4c7c2f8808df",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 32510,
+      "forks": 3590,
+      "starsAdded": 2625,
+      "createdAt": "2026-10-24T13:00:03.811Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
       "id": "f4ecfb3a-66dc-43d6-9069-f5fa03c05db5",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21560,8 +21739,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 13847,
-      "forks": 1368,
+      "stars": 13860,
+      "forks": 1370,
       "starsAdded": 1946,
       "createdAt": "2026-10-18T16:00:04.031Z",
       "metaData": {
@@ -21587,8 +21766,8 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 9518,
-      "forks": 614,
+      "stars": 9532,
+      "forks": 615,
       "starsAdded": 1471,
       "createdAt": "2026-10-20T11:00:04.731Z",
       "metaData": {
@@ -21632,6 +21811,80 @@
           "研究 AI Agent 技能体系的技术爱好者"
         ],
         "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
+      }
+    },
+    {
+      "id": "9196362b-5d32-46bf-a7ec-2c7ee0a753c5",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "stars": 95287,
+      "forks": 23880,
+      "starsAdded": 1363,
+      "createdAt": "2026-10-24T13:00:03.824Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "amd",
+          "blackwell",
+          "cuda",
+          "deepseek",
+          "deepseek-v3",
+          "gpt",
+          "gpt-oss",
+          "inference",
+          "kimi",
+          "llama",
+          "llm",
+          "llm-serving",
+          "model-serving",
+          "moe",
+          "openai",
+          "pytorch",
+          "qwen",
+          "qwen3",
+          "tpu",
+          "transformer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://vllm.ai",
+        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs - vllm-project/vllm"
+      },
+      "summaryData": {
+        "tags": [
+          "vLLM",
+          "大模型推理",
+          "开源项目",
+          "PagedAttention",
+          "GPU 优化"
+        ],
+        "cover": "",
+        "title": "vLLM 深度评测：把 GPU 显存利用率从 40% 提到 96% 的大模型推理引擎",
+        "ability": [
+          "PagedAttention 分页注意力：借鉴操作系统虚拟内存思想管理显存，浪费率从 60-80% 降到 4% 以下",
+          "Continuous Batching 连续批处理：GPU 常年满负荷，新请求随到随处理",
+          "完全兼容 OpenAI API：改一行 base_url 即可无缝切换自托管模型",
+          "支持 400+ 模型架构：新模型发布当天即可运行",
+          "多硬件支持：覆盖 NVIDIA/AMD/TPU/Intel/CPU，Apple Silicon 也有社区方案"
+        ],
+        "summary": "vLLM 是让大模型推理吞吐量提升 2-24 倍的开源引擎，企业自托管大模型部署的事实标准",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "大模型推理"
+        ],
+        "suitable": [
+          "企业 AI 平台团队（同等流量可省一半以上 GPU）",
+          "需要自托管大模型的应用开发者",
+          "独立开发者与小团队（一张卡即可跑模型服务）",
+          "算法研究者（新模型最快落地路径）",
+          "数据工程师（离线批量推理场景）"
+        ],
+        "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
       }
     },
     {

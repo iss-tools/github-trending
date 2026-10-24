@@ -82465,9 +82465,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 42900,
-      "forks": 2677,
-      "starsAdded": 2716,
+      "stars": 43118,
+      "forks": 2691,
+      "starsAdded": 2271,
       "createdAt": "2026-10-23T19:00:01.918Z",
       "metaData": {
         "forks": "0",
@@ -82510,6 +82510,63 @@
       }
     },
     {
+      "id": "4682c190-0f0a-4c6c-956b-1c0e948c541a",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "repo": "luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "stars": 44183,
+      "forks": 5468,
+      "starsAdded": 1053,
+      "createdAt": "2026-10-24T13:00:01.985Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "guide",
+          "tutorial"
+        ],
+        "license": "MIT license",
+        "homepage": "http://luongnv.com/claude-howto/",
+        "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value. - luongnv89/claude-howto"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "GitHub 开源",
+          "AI 编程",
+          "教程",
+          "模板库"
+        ],
+        "cover": "",
+        "title": "claude-howto：GitHub 上最系统的 Claude Code 学习指南（41k+ Stars）",
+        "ability": [
+          "提供 10 个循序渐进的学习模块，覆盖斜杠命令、记忆、Hooks、MCP、子代理等全部核心机制",
+          "内置 120+ 生产级模板，复制粘贴即可在项目中直接使用",
+          "使用 Mermaid 架构图可视化底层事件流与工具设计逻辑",
+          "提供 /self-assessment 自测命令，可生成个性化学习路径",
+          "支持中/英/越/乌/日 5 种语言，并可一键构建 EPUB 离线阅读"
+        ],
+        "summary": "GitHub 上最系统化、最具可执行性的 Claude Code 教程仓库，10 个模块 + 120 余份即用模板，带你从新手进阶到 Agent 编排高手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "教程学习"
+        ],
+        "suitable": [
+          "刚安装 Claude Code、不知从何入手的开发者",
+          "用了一段时间但感觉没发挥威力的中级用户",
+          "想给团队搭建 AI 编码工作流的 Tech Lead",
+          "想要速查手册的资深 Claude Code 用户",
+          "计划撰写 Claude Code 相关教程的博主"
+        ],
+        "description": "GitHub 上最系统化的 Claude Code 学习指南，由巴黎安全工程师 Luong Nguyen 打造。用 10 个循序渐进的模块、120 余份可直接复制的模板、Mermaid 可视化架构图和自测机制，带你从基础命令一路进阶到编排 Agent 团队，并随 Claude Code 版本持续同步更新。"
+      }
+    },
+    {
       "id": "e126b8ab-d141-48ee-b95a-441c2b2d2cd4",
       "dateAdded": "20261024",
       "type": "github-daily",
@@ -82517,9 +82574,9 @@
       "repo": "NVIDIA/OpenShell",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars": 19088,
-      "forks": 1903,
-      "starsAdded": 1119,
+      "stars": 19148,
+      "forks": 1909,
+      "starsAdded": 893,
       "createdAt": "2026-10-23T19:00:01.958Z",
       "metaData": {
         "forks": "0",
@@ -82638,6 +82695,59 @@
       }
     },
     {
+      "id": "4951b44a-4355-410e-a880-087cb2bccde9",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 31546,
+      "forks": 1626,
+      "starsAdded": 567,
+      "createdAt": "2026-10-24T13:00:01.978Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
       "id": "5f57c3e2-789b-4d3b-b448-028920ae9176",
       "dateAdded": "20261024",
       "type": "github-daily",
@@ -82702,6 +82812,179 @@
       }
     },
     {
+      "id": "08fc99db-90e7-4901-955c-a3af200bd95b",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 85894,
+      "forks": 5137,
+      "starsAdded": 541,
+      "createdAt": "2026-10-24T13:00:01.989Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
+      "id": "b0c6e737-e97c-459e-8e80-242b5ef33e8f",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/makecindy/cindy",
+      "repo": "makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 3779,
+      "forks": 565,
+      "starsAdded": 471,
+      "createdAt": "2026-10-24T13:00:02.022Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "ai-assistant",
+          "android",
+          "claude-code",
+          "codex",
+          "electron",
+          "ios",
+          "llm",
+          "macos",
+          "react-native",
+          "typescript",
+          "windows"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://cindy.app",
+        "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 - makecindy/cindy"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI Agent",
+          "心动网络",
+          "跨端协作",
+          "TapTap"
+        ],
+        "cover": "",
+        "title": "Cindy 深度评测：心动网络开源 AI Agent 客户端，是真兑现还是漂亮话术？",
+        "ability": [
+          "多 Harness 混跑：Claude Code / Codex / Pi 任务中途自由切换，上下文无缝交接",
+          "复用已有 Coding Plan 订阅或自带 API Key（支持 DeepSeek、GLM 等国产模型），不重复计费",
+          "桌面满血 + 手机接力：可从飞书/Slack 派活，移动端远程查看、审批、接管会话",
+          "内置记忆（Memory）、技能（Skill）、MCP 和定时任务，开箱即用",
+          "隔离工作区 + 逐条审批 + 检查点回退，保障代码安全可控"
+        ],
+        "summary": "Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率协作"
+        ],
+        "suitable": [
+          "已付费 Claude Code 或 Codex 订阅、想一份订阅两个工具用的开发者",
+          "经常在电脑和手机间切换的重度 AI 用户",
+          "想用 AI 做小工具小游戏的非技术岗（产品、设计、运营）",
+          "希望从开发到一键上架 TapTap 的独立游戏开发者",
+          "需要 MCP 接内部系统和团队额度管理的企业团队"
+        ],
+        "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。"
+      }
+    },
+    {
+      "id": "c9fc2ea6-b25f-4f03-a6e6-b2c9c7370e65",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "repo": "pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 10649,
+      "forks": 1381,
+      "starsAdded": 421,
+      "createdAt": "2026-10-24T13:00:01.993Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "强化学习",
+          "Rust",
+          "sim2real",
+          "具身智能"
+        ],
+        "cover": "",
+        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
+        "ability": [
+          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
+          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
+          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
+          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
+          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
+        ],
+        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
+        "category": [
+          "机器人与具身智能",
+          "开发工具",
+          "AI/机器学习"
+        ],
+        "suitable": [
+          "具身智能与强化学习研究者",
+          "机器人/嵌入式工程师",
+          "Hugging Face 生态开发者",
+          "教育者与 STEAM 教师",
+          "机器人爱好者与创客"
+        ],
+        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
+      }
+    },
+    {
       "id": "09083436-9377-4117-b62a-c69e548c8d73",
       "dateAdded": "20261024",
       "type": "github-daily",
@@ -82759,6 +83042,59 @@
           "CTF 爱好者"
         ],
         "description": "Claude-Red 是一套面向 Claude 的开源红队技能库，将 Web、内网、云安全等攻击手法模块化。通过简单的 SKILL.md 文件，它能让 AI 掌握专家级渗透流程，帮助安全人员合法高效地完成漏洞挖掘与红队演练。"
+      }
+    },
+    {
+      "id": "198c34b3-5b2c-4759-8ca6-c6e61663db5b",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "repo": "jbiaojerry/ebook-treasure-chest",
+      "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
+      "language": "Python",
+      "stars": 22316,
+      "forks": 3171,
+      "starsAdded": 220,
+      "createdAt": "2026-10-24T13:00:02.009Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。 - jbiaojerry/ebook-treasure-chest"
+      },
+      "summaryData": {
+        "tags": [
+          "电子书",
+          "GitHub开源项目",
+          "资源索引",
+          "阅读工具",
+          "Kindle"
+        ],
+        "cover": "",
+        "title": "电子书下载宝库：2万Stars的中文电子书搜索索引仓库深度评测",
+        "ability": [
+          "在线实时搜索24000+条中文电子书记录",
+          "1000+分类标签覆盖小众长尾主题",
+          "支持EPUB/MOBI/AZW3三种格式适配多设备",
+          "纯静态页面可克隆到本地离线使用",
+          "无广告无强制关注公众号的干净找书体验"
+        ],
+        "summary": "一个将散落各平台的中文电子书链接整理成可实时搜索、按千级标签分类的GitHub索引仓库，找书效率提升数十倍但存在版权灰色风险。",
+        "category": [
+          "学习资源",
+          "生活效率",
+          "开发工具"
+        ],
+        "suitable": [
+          "Kindle/Kobo等电子书阅读器用户",
+          "学生和购书预算有限的人群",
+          "需要做主题式阅读的研究者",
+          "喜欢写脚本折腾本地书库的开发者",
+          "编辑记者等内容查证从业者"
+        ],
+        "description": "jbiaojerry/ebook-treasure-chest是一个20.6K Stars的中文电子书链接索引仓库，收录约24000条书目（去重后约1.1万本），提供GitHub Pages实时搜索页，支持多关键词AND搜索和本地离线部署。核心优势是干净无套路，缺点是不存储文件、链接依赖网盘、更新放缓、无开源协议、处于版权灰色地带，建议作为找书入口配合正版渠道使用。"
       }
     },
     {
@@ -82889,6 +83225,120 @@
           "JavaScript 初学者"
         ],
         "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
+      }
+    },
+    {
+      "id": "187be5c3-fdc8-44ea-8e4b-a7a6f3c89feb",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "repo": "google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "language": "TypeScript",
+      "stars": 107623,
+      "forks": 14779,
+      "starsAdded": 38,
+      "createdAt": "2026-10-24T13:00:01.999Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "cli",
+          "gemini",
+          "gemini-api",
+          "mcp-client",
+          "mcp-server"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://geminicli.com",
+        "description": "An open-source AI agent that brings the power of Gemini directly into your terminal. - google-gemini/gemini-cli"
+      },
+      "summaryData": {
+        "tags": [
+          "Gemini",
+          "谷歌",
+          "AI Agent",
+          "命令行工具",
+          "代码评审"
+        ],
+        "cover": "",
+        "title": "Gemini CLI 深度评测：谷歌开源终端 AI 编程助手的巅峰与陨落",
+        "ability": [
+          "1M 超长上下文，可一次性理解整个代码仓库",
+          "终端内完成文件读写、Shell 执行、联网搜索等任务",
+          "支持 MCP 和 A2A 协议，可接入任意外部工具与子代理",
+          "提供官方 GitHub Action，可自动化 PR 评审和 Issue 分诊",
+          "通过 GEMINI.md 和自定义命令沉淀项目规则与工作流"
+        ],
+        "summary": "谷歌开源的终端 AI 编程 Agent，曾以免费额度爆火，2026 年免费层已被砍，现主要面向企业与 CI 场景。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "已购买 Code Assist 的企业开发团队",
+          "需要 AI 自动化 PR 评审的 CI/CD 工程师",
+          "维护大型 Monorepo 项目的架构师",
+          "想学习 Agent 架构设计的开发者",
+          "需要多模型交叉验证代码的资深工程师"
+        ],
+        "description": "Gemini CLI 是谷歌基于 Apache 2.0 协议开源的终端 AI 编程助手，曾凭每日 1000 次免费请求和 1M 上下文成为现象级工具，GitHub 星标超 10 万。但 2026 年免费层被逐步取消并迁移至闭源 Antigravity，如今主要价值在于企业付费使用、CI 自动化集成，以及作为 Claude Code 的第二意见评审员。其代码仍是学习 Agent 架构的优秀教材。"
+      }
+    },
+    {
+      "id": "d5e95596-eece-4d2a-851e-7ab972c768ba",
+      "dateAdded": "20261024",
+      "type": "github-daily",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "repo": "aws/agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "language": "Python",
+      "stars": 2979,
+      "forks": 392,
+      "starsAdded": 11,
+      "createdAt": "2026-10-24T13:00:01.967Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS - aws/agent-toolkit-for-aws"
+      },
+      "summaryData": {
+        "tags": [
+          "AWS",
+          "MCP",
+          "AI Agent",
+          "Claude Code",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "AWS Agent Toolkit for AWS 深度评测：让 AI 编码智能体按 AWS 最佳实践干活的官方工具链",
+        "ability": [
+          "托管 MCP Server 统一接入 300+ AWS 服务与最新文档",
+          "40+ 经端到端评估的官方 Skills 最佳实践知识库",
+          "Plugins 一键集成 Claude Code/Cursor/Kiro/Devin 等主流智能体",
+          "IAM 条件键 + CloudTrail 实现智能体专属权限管控与审计",
+          "Rules 文件约束智能体行为，避免凭过时训练数据编造 API"
+        ],
+        "summary": "AWS 官方智能体工具箱，让 Claude Code、Cursor 等编码智能体不再瞎猜 AWS API，而是按官方最佳实践写代码",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "云服务"
+        ],
+        "suitable": [
+          "用 AI 编码工具开发 AWS 后端/IaC 的全栈工程师",
+          "数据工程师与数据平台团队",
+          "DevSecOps 与 SRE 运维人员",
+          "初创公司技术负责人",
+          "AI Agent 产品开发者"
+        ],
+        "description": "AWS 于 2026 年 5 月 GA 的官方智能体工具链，由托管 MCP Server、40+ Skills、Plugins 和 Rules 四层组件组成。它能让编码智能体实时查阅最新 AWS 文档、按官方最佳实践做架构决策，并通过 IAM 条件键和 CloudTrail 提供企业级权限管控与审计，是 awslabs/mcp 社区项目的官方收编升级版。"
       }
     }
   ]

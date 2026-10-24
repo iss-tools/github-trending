@@ -5,6 +5,41 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>makecindy/cindy</title>
+      <link>https://trending.pptboard.com/repo/makecindy/cindy.html</link>
+      <description>Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/makecindy/cindy.html</guid>
+    </item>
+    <item>
+      <title>jbiaojerry/ebook-treasure-chest</title>
+      <link>https://trending.pptboard.com/repo/jbiaojerry/ebook-treasure-chest.html</link>
+      <description>一个将散落各平台的中文电子书链接整理成可实时搜索、按千级标签分类的GitHub索引仓库，找书效率提升数十倍但存在版权灰色风险。</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/jbiaojerry/ebook-treasure-chest.html</guid>
+    </item>
+    <item>
+      <title>google-gemini/gemini-cli</title>
+      <link>https://trending.pptboard.com/repo/google-gemini/gemini-cli.html</link>
+      <description>谷歌开源的终端 AI 编程 Agent，曾以免费额度爆火，2026 年免费层已被砍，现主要面向企业与 CI 场景。</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/google-gemini/gemini-cli.html</guid>
+    </item>
+    <item>
+      <title>Nutlope/hallmark</title>
+      <link>https://trending.pptboard.com/repo/Nutlope/hallmark.html</link>
+      <description>一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/Nutlope/hallmark.html</guid>
+    </item>
+    <item>
+      <title>aws/agent-toolkit-for-aws</title>
+      <link>https://trending.pptboard.com/repo/aws/agent-toolkit-for-aws.html</link>
+      <description>AWS 官方智能体工具箱，让 Claude Code、Cursor 等编码智能体不再瞎猜 AWS API，而是按官方最佳实践写代码</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/aws/agent-toolkit-for-aws.html</guid>
+    </item>
+    <item>
       <title>elie222/rakazo</title>
       <link>https://trending.pptboard.com/repo/elie222/rakazo.html</link>
       <description>开源自托管的 AI Agent 平台，让你在自己服务器上养出拥有独立电脑、记忆和日程的 AI 员工</description>
@@ -318,41 +353,6 @@
       <description>一颗5美元的ESP32-C3芯片，靠40位哈希+二分查找把53万条广告黑名单塞进4MB闪存，做成零月费的全屋DNS去广告器。</description>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/M-Abozaid/esp32-c3-adblock.html</guid>
-    </item>
-    <item>
-      <title>Gaurav-Gosain/tuios</title>
-      <link>https://trending.pptboard.com/repo/Gaurav-Gosain/tuios.html</link>
-      <description>用 Go 打造的终端窗口管理器兼复用器，融合 tmux 的会话持久化与 i3 的平铺理念，号称 tmux meets modern window manager。</description>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/Gaurav-Gosain/tuios.html</guid>
-    </item>
-    <item>
-      <title>msitarzewski/agency-agents</title>
-      <link>https://trending.pptboard.com/repo/msitarzewski/agency-agents.html</link>
-      <description>一个 MIT 开源的 230+ AI Agent 人格提示词合集，把工程师、设计师、营销、投放等一整个虚拟 Agency 团队装进 Claude Code 等 AI 编程工具。</description>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/msitarzewski/agency-agents.html</guid>
-    </item>
-    <item>
-      <title>DuarteSantos8/openGym</title>
-      <link>https://trending.pptboard.com/repo/DuarteSantos8/openGym.html</link>
-      <description>消息中未提供评测长文正文，无法提取结构化信息</description>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/DuarteSantos8/openGym.html</guid>
-    </item>
-    <item>
-      <title>antirez/ds4</title>
-      <link>https://trending.pptboard.com/repo/antirez/ds4.html</link>
-      <description>Redis 创造者 antirez 用一周写出的单文件 C 语言推理引擎，让消费级 Mac 本地流畅运行 DeepSeek V4 Flash 等准前沿开源大模型</description>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/antirez/ds4.html</guid>
-    </item>
-    <item>
-      <title>garrytan/gstack</title>
-      <link>https://trending.pptboard.com/repo/garrytan/gstack.html</link>
-      <description>YC 总裁 Garry Tan 开源的 Claude Code 斜杠命令包，把一个 AI 助手拆成 30+ 角色组成的虚拟工程团队，覆盖从规划到部署的完整研发流水线。</description>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/garrytan/gstack.html</guid>
     </item>
   </channel>
 </rss>
