@@ -83351,8 +83351,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 43493,
-      "forks": 2714,
+      "stars": 43944,
+      "forks": 2739,
       "starsAdded": 2271,
       "createdAt": "2026-10-24T16:00:01.939Z",
       "metaData": {
@@ -83396,63 +83396,6 @@
       }
     },
     {
-      "id": "910667f4-345d-4884-b271-1e3d0dee4bd8",
-      "dateAdded": "20261025",
-      "type": "github-daily",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "repo": "luongnv89/claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "language": "Python",
-      "stars": 44291,
-      "forks": 5478,
-      "starsAdded": 1053,
-      "createdAt": "2026-10-24T16:00:01.979Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "guide",
-          "tutorial"
-        ],
-        "license": "MIT license",
-        "homepage": "http://luongnv.com/claude-howto/",
-        "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value. - luongnv89/claude-howto"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "GitHub 开源",
-          "AI 编程",
-          "教程",
-          "模板库"
-        ],
-        "cover": "",
-        "title": "claude-howto：GitHub 上最系统的 Claude Code 学习指南（41k+ Stars）",
-        "ability": [
-          "提供 10 个循序渐进的学习模块，覆盖斜杠命令、记忆、Hooks、MCP、子代理等全部核心机制",
-          "内置 120+ 生产级模板，复制粘贴即可在项目中直接使用",
-          "使用 Mermaid 架构图可视化底层事件流与工具设计逻辑",
-          "提供 /self-assessment 自测命令，可生成个性化学习路径",
-          "支持中/英/越/乌/日 5 种语言，并可一键构建 EPUB 离线阅读"
-        ],
-        "summary": "GitHub 上最系统化、最具可执行性的 Claude Code 教程仓库，10 个模块 + 120 余份即用模板，带你从新手进阶到 Agent 编排高手。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "教程学习"
-        ],
-        "suitable": [
-          "刚安装 Claude Code、不知从何入手的开发者",
-          "用了一段时间但感觉没发挥威力的中级用户",
-          "想给团队搭建 AI 编码工作流的 Tech Lead",
-          "想要速查手册的资深 Claude Code 用户",
-          "计划撰写 Claude Code 相关教程的博主"
-        ],
-        "description": "GitHub 上最系统化的 Claude Code 学习指南，由巴黎安全工程师 Luong Nguyen 打造。用 10 个循序渐进的模块、120 余份可直接复制的模板、Mermaid 可视化架构图和自测机制，带你从基础命令一路进阶到编排 Agent 团队，并随 Claude Code 版本持续同步更新。"
-      }
-    },
-    {
       "id": "efa80231-8148-4f49-9360-df86e7e1f909",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -83460,8 +83403,8 @@
       "repo": "NVIDIA/OpenShell",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars": 19244,
-      "forks": 1915,
+      "stars": 19344,
+      "forks": 1924,
       "starsAdded": 893,
       "createdAt": "2026-10-24T16:00:01.967Z",
       "metaData": {
@@ -83475,59 +83418,6 @@
       "summaryData": null
     },
     {
-      "id": "0fe34701-c878-4b83-8f5a-fc1450175b33",
-      "dateAdded": "20261025",
-      "type": "github-daily",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 31707,
-      "forks": 1633,
-      "starsAdded": 567,
-      "createdAt": "2026-10-24T16:00:01.976Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
-        ],
-        "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
-        "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
-        ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
-        ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
-      }
-    },
-    {
       "id": "6731a7c1-90c6-41d5-ac8a-3b33797d559b",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -83535,9 +83425,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 86046,
-      "forks": 5141,
-      "starsAdded": 541,
+      "stars": 86207,
+      "forks": 5146,
+      "starsAdded": 733,
       "createdAt": "2026-10-24T16:00:01.982Z",
       "metaData": {
         "forks": "0",
@@ -83581,6 +83471,59 @@
       }
     },
     {
+      "id": "0fe34701-c878-4b83-8f5a-fc1450175b33",
+      "dateAdded": "20261025",
+      "type": "github-daily",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 31908,
+      "forks": 1640,
+      "starsAdded": 570,
+      "createdAt": "2026-10-24T16:00:01.976Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
       "id": "d4ac3fd6-a29b-4fa4-93b4-5c39f6aee4c6",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -83588,8 +83531,8 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 3880,
-      "forks": 568,
+      "stars": 3976,
+      "forks": 575,
       "starsAdded": 471,
       "createdAt": "2026-10-24T16:00:02.002Z",
       "metaData": {
@@ -83648,6 +83591,63 @@
       }
     },
     {
+      "id": "910667f4-345d-4884-b271-1e3d0dee4bd8",
+      "dateAdded": "20261025",
+      "type": "github-daily",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "repo": "luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "stars": 44385,
+      "forks": 5484,
+      "starsAdded": 442,
+      "createdAt": "2026-10-24T16:00:01.979Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "guide",
+          "tutorial"
+        ],
+        "license": "MIT license",
+        "homepage": "http://luongnv.com/claude-howto/",
+        "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value. - luongnv89/claude-howto"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "GitHub 开源",
+          "AI 编程",
+          "教程",
+          "模板库"
+        ],
+        "cover": "",
+        "title": "claude-howto：GitHub 上最系统的 Claude Code 学习指南（41k+ Stars）",
+        "ability": [
+          "提供 10 个循序渐进的学习模块，覆盖斜杠命令、记忆、Hooks、MCP、子代理等全部核心机制",
+          "内置 120+ 生产级模板，复制粘贴即可在项目中直接使用",
+          "使用 Mermaid 架构图可视化底层事件流与工具设计逻辑",
+          "提供 /self-assessment 自测命令，可生成个性化学习路径",
+          "支持中/英/越/乌/日 5 种语言，并可一键构建 EPUB 离线阅读"
+        ],
+        "summary": "GitHub 上最系统化、最具可执行性的 Claude Code 教程仓库，10 个模块 + 120 余份即用模板，带你从新手进阶到 Agent 编排高手。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "教程学习"
+        ],
+        "suitable": [
+          "刚安装 Claude Code、不知从何入手的开发者",
+          "用了一段时间但感觉没发挥威力的中级用户",
+          "想给团队搭建 AI 编码工作流的 Tech Lead",
+          "想要速查手册的资深 Claude Code 用户",
+          "计划撰写 Claude Code 相关教程的博主"
+        ],
+        "description": "GitHub 上最系统化的 Claude Code 学习指南，由巴黎安全工程师 Luong Nguyen 打造。用 10 个循序渐进的模块、120 余份可直接复制的模板、Mermaid 可视化架构图和自测机制，带你从基础命令一路进阶到编排 Agent 团队，并随 Claude Code 版本持续同步更新。"
+      }
+    },
+    {
       "id": "2ad63c86-cd63-4137-bf8e-afc2053822f5",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -83655,9 +83655,9 @@
       "repo": "pollen-robotics/microduck",
       "description": "A Tiny biped duck robot 🦆",
       "language": "Rust",
-      "stars": 10761,
-      "forks": 1387,
-      "starsAdded": 421,
+      "stars": 10846,
+      "forks": 1393,
+      "starsAdded": 381,
       "createdAt": "2026-10-24T16:00:01.985Z",
       "metaData": {
         "forks": "0",
@@ -83708,8 +83708,8 @@
       "repo": "jbiaojerry/ebook-treasure-chest",
       "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
       "language": "Python",
-      "stars": 22448,
-      "forks": 3180,
+      "stars": 22519,
+      "forks": 3183,
       "starsAdded": 220,
       "createdAt": "2026-10-24T16:00:01.997Z",
       "metaData": {
@@ -83761,8 +83761,8 @@
       "repo": "google-gemini/gemini-cli",
       "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "language": "TypeScript",
-      "stars": 107757,
-      "forks": 14788,
+      "stars": 107885,
+      "forks": 14797,
       "starsAdded": 38,
       "createdAt": "2026-10-24T16:00:01.989Z",
       "metaData": {
@@ -83822,8 +83822,8 @@
       "repo": "aws/agent-toolkit-for-aws",
       "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
       "language": "Python",
-      "stars": 3020,
-      "forks": 393,
+      "stars": 3059,
+      "forks": 395,
       "starsAdded": 11,
       "createdAt": "2026-10-24T16:00:01.972Z",
       "metaData": {
