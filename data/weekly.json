@@ -20287,9 +20287,9 @@
       "repo": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 378482,
-      "forks": 94545,
-      "starsAdded": 88243,
+      "stars": 378983,
+      "forks": 94701,
+      "starsAdded": 78562,
       "createdAt": "2026-10-18T16:00:03.993Z",
       "metaData": {
         "forks": "0",
@@ -20420,6 +20420,58 @@
       }
     },
     {
+      "id": "a5f24f63-d307-439e-a2fa-950257102fe5",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 44670,
+      "forks": 2771,
+      "starsAdded": 12680,
+      "createdAt": "2026-10-24T13:00:03.787Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
       "id": "e032d9ef-1fe3-4d82-97c8-62578e9be829",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -20490,58 +20542,6 @@
           "高用量语音需求者"
         ],
         "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
-      }
-    },
-    {
-      "id": "a5f24f63-d307-439e-a2fa-950257102fe5",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "repo": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars": 44428,
-      "forks": 2765,
-      "starsAdded": 11223,
-      "createdAt": "2026-10-24T13:00:03.787Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "安全审计",
-          "Cloudflare",
-          "AI Agent",
-          "DevSecOps"
-        ],
-        "cover": "",
-        "title": "Cloudflare Security Audit Skill 深度评测",
-        "ability": [
-          "多智能体并行审计",
-          "对抗验证防误报",
-          "结构化漏洞报告",
-          "增量式覆盖扫描",
-          "多类攻击库支持"
-        ],
-        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
-        "category": [
-          "开发工具",
-          "网络安全",
-          "AI 编程"
-        ],
-        "suitable": [
-          "AI 编程爱好者",
-          "安全研究人员",
-          "DevSecOps 工程师",
-          "全栈开发者"
-        ],
-        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
       }
     },
     {
@@ -20672,9 +20672,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 104925,
+      "stars": 104993,
       "forks": 6626,
-      "starsAdded": 9545,
+      "starsAdded": 9828,
       "createdAt": "2026-10-21T12:00:04.284Z",
       "metaData": {
         "forks": "0",
@@ -20746,9 +20746,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 134423,
-      "forks": 12836,
-      "starsAdded": 6875,
+      "stars": 134494,
+      "forks": 12838,
+      "starsAdded": 6868,
       "createdAt": "2026-10-24T13:00:03.820Z",
       "metaData": {
         "forks": "0",
@@ -20820,9 +20820,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 221073,
-      "forks": 29560,
-      "starsAdded": 6765,
+      "stars": 221103,
+      "forks": 29566,
+      "starsAdded": 6857,
       "createdAt": "2026-10-21T12:00:04.277Z",
       "metaData": {
         "forks": "0",
@@ -20873,9 +20873,9 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 71462,
-      "forks": 6455,
-      "starsAdded": 5553,
+      "stars": 71514,
+      "forks": 6461,
+      "starsAdded": 5633,
       "createdAt": "2026-10-18T16:00:04.029Z",
       "metaData": {
         "forks": "0",
@@ -21004,9 +21004,9 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 142620,
-      "forks": 16819,
-      "starsAdded": 4531,
+      "stars": 142647,
+      "forks": 16823,
+      "starsAdded": 4648,
       "createdAt": "2026-10-22T11:00:04.475Z",
       "metaData": {
         "forks": "0",
@@ -21054,63 +21054,6 @@
           "追求可控性的技术极客"
         ],
         "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
-      }
-    },
-    {
-      "id": "3af228c5-cffc-4a1b-a21d-1f755c50fd33",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 44342,
-      "forks": 4653,
-      "starsAdded": 4250,
-      "createdAt": "2026-10-18T16:00:04.016Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "claude-code",
-          "mcp",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://code.claude.com/docs/en/plugins",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "插件系统",
-          "官方生态",
-          "自动化",
-          "Anthropic"
-        ],
-        "cover": "",
-        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
-        "ability": [
-          "官方策展与安全审核",
-          "插件一键安装与集成",
-          "命令/代理/技能等多种类型",
-          "深度嵌入 Claude 工作流",
-          "标准化与生态规范"
-        ],
-        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "Claude Code/Cowork 重度用户",
-          "开发团队负责人",
-          "企业安全合规部门",
-          "插件开发者",
-          "AI 工作流极客"
-        ],
-        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
       }
     },
     {
@@ -21177,9 +21120,9 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 13264,
-      "forks": 934,
-      "starsAdded": 3449,
+      "stars": 13286,
+      "forks": 937,
+      "starsAdded": 3541,
       "createdAt": "2026-10-21T12:00:04.273Z",
       "metaData": {
         "forks": "0",
@@ -21218,132 +21161,6 @@
           "AI 研究爱好者"
         ],
         "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
-      }
-    },
-    {
-      "id": "a13f6f61-8cab-49a8-b2cc-1d6969105eff",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/ruvnet/ruflo",
-      "repo": "ruvnet/ruflo",
-      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-      "language": "TypeScript",
-      "stars": 79032,
-      "forks": 9283,
-      "starsAdded": 3349,
-      "createdAt": "2026-10-19T11:00:03.904Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agentic-ai",
-          "agentic-framework",
-          "agentic-workflow",
-          "agents",
-          "ai-agents",
-          "ai-assistant",
-          "ai-skills",
-          "autonomous-agents",
-          "claude",
-          "codex",
-          "dsh-plugin",
-          "harness",
-          "mcp-server",
-          "multi-agent",
-          "multi-agent-systems",
-          "npm",
-          "skills",
-          "swarm",
-          "swarm-intelligence",
-          "typescript"
-        ],
-        "license": "MIT license",
-        "homepage": "https://Cognitum.One",
-        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude",
-          "Multi-Agent",
-          "DevOps",
-          "GitHub",
-          "效率工具"
-        ],
-        "cover": "",
-        "title": "Ruflo: Claude Code 多智能体编排平台评测",
-        "ability": [
-          "多智能体蜂群协作",
-          "跨会话持久化记忆",
-          "智能路由与成本优化",
-          "企业级安全与联邦通信",
-          "自动化测试与代码审计"
-        ],
-        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "Claude Code 重度用户",
-          "追求高效的开发团队",
-          "DevOps 与运维工程师",
-          "技术架构师",
-          "个人开发者"
-        ],
-        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
-      }
-    },
-    {
-      "id": "094a4e2b-6888-4f3b-902b-5903a7903e9e",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 56846,
-      "forks": 5094,
-      "starsAdded": 3303,
-      "createdAt": "2026-10-21T12:00:04.271Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
-        ],
-        "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
-        "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
-        ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
-        ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
       }
     },
     {
@@ -21408,6 +21225,136 @@
           "注重隐私人士"
         ],
         "description": "PPT Master 是一款开源的 AI Agent 工作流，能将 PDF、Word 等文档转换为真正可编辑的 PowerPoint 原生文件（而非图片）。它支持自定义模板、本地运行保障数据隐私，并能通过 AI 进行多轮修改与美化，是追求专业性与可编辑性用户的高效工具。"
+      }
+    },
+    {
+      "id": "a13f6f61-8cab-49a8-b2cc-1d6969105eff",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/ruvnet/ruflo",
+      "repo": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 79058,
+      "forks": 9284,
+      "starsAdded": 3241,
+      "createdAt": "2026-10-19T11:00:03.904Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One",
+        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Multi-Agent",
+          "DevOps",
+          "GitHub",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "Ruflo: Claude Code 多智能体编排平台评测",
+        "ability": [
+          "多智能体蜂群协作",
+          "跨会话持久化记忆",
+          "智能路由与成本优化",
+          "企业级安全与联邦通信",
+          "自动化测试与代码审计"
+        ],
+        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Claude Code 重度用户",
+          "追求高效的开发团队",
+          "DevOps 与运维工程师",
+          "技术架构师",
+          "个人开发者"
+        ],
+        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
+      }
+    },
+    {
+      "id": "3af228c5-cffc-4a1b-a21d-1f755c50fd33",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 44368,
+      "forks": 4656,
+      "starsAdded": 3232,
+      "createdAt": "2026-10-18T16:00:04.016Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
       }
     },
     {
@@ -21482,6 +21429,59 @@
       }
     },
     {
+      "id": "094a4e2b-6888-4f3b-902b-5903a7903e9e",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 56859,
+      "forks": 5095,
+      "starsAdded": 3069,
+      "createdAt": "2026-10-21T12:00:04.271Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      }
+    },
+    {
       "id": "5f7d1ce2-4717-4ad6-9a92-ac6c400c8cbf",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21549,9 +21549,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 32608,
-      "forks": 3602,
-      "starsAdded": 2625,
+      "stars": 32648,
+      "forks": 3605,
+      "starsAdded": 2631,
       "createdAt": "2026-10-24T13:00:03.811Z",
       "metaData": {
         "forks": "0",
@@ -21739,9 +21739,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 13908,
-      "forks": 1384,
-      "starsAdded": 1946,
+      "stars": 13917,
+      "forks": 1386,
+      "starsAdded": 1729,
       "createdAt": "2026-10-18T16:00:04.031Z",
       "metaData": {
         "forks": "0",
@@ -21759,61 +21759,6 @@
       }
     },
     {
-      "id": "4ba59ece-964b-4ab6-9f51-6d2211bd7114",
-      "dateAdded": "202643",
-      "type": "github-weekly",
-      "url": "https://github.com/android/skills",
-      "repo": "android/skills",
-      "description": "",
-      "language": "Kotlin",
-      "stars": 9591,
-      "forks": 619,
-      "starsAdded": 1471,
-      "createdAt": "2026-10-20T11:00:04.731Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Contribute to android/skills development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Android",
-          "AI Agent",
-          "Claude Code",
-          "Google官方",
-          "开发效率"
-        ],
-        "cover": "",
-        "title": "android/skills 深度评测：Google 官方给 AI 编程助手的 Android 技能包",
-        "ability": [
-          "提供 13+ 个官方技能，专治 AI 编程短板（R8 优化、AGP 9 升级、CameraX/Nav3 迁移等）",
-          "采用渐进式披露机制按需加载知识，大幅降低 Token 消耗",
-          "跨平台兼容 Claude Code、Cursor、Gemini CLI、Codex 等主流 AI 编码工具",
-          "严格约束 AI 输出格式与行为，输出结构化审计报告且不乱改代码",
-          "支持 android CLI 一键安装、指定 agent 安装与版本更新管理"
-        ],
-        "summary": "Google 官方开源的 AI Agent 技能包，把 AI 最容易写错的 Android 最佳实践封装成可按需加载的 SKILL.md 模块，实测提效 3 倍、省 70% Token。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "用 Claude Code/Cursor 等 AI 工具写 Android 代码的开发者",
-          "维护老项目需迁移升级的 Android 团队",
-          "负责 AGP/Play Billing 大版本升级的工程师",
-          "关注 App 体积与性能优化的团队",
-          "研究 AI Agent 技能体系的技术爱好者"
-        ],
-        "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
-      }
-    },
-    {
       "id": "9196362b-5d32-46bf-a7ec-2c7ee0a753c5",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21821,9 +21766,9 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 95340,
-      "forks": 23900,
-      "starsAdded": 1363,
+      "stars": 95351,
+      "forks": 23903,
+      "starsAdded": 1371,
       "createdAt": "2026-10-24T13:00:03.824Z",
       "metaData": {
         "forks": "0",
@@ -21885,6 +21830,61 @@
           "数据工程师（离线批量推理场景）"
         ],
         "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      }
+    },
+    {
+      "id": "4ba59ece-964b-4ab6-9f51-6d2211bd7114",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/android/skills",
+      "repo": "android/skills",
+      "description": "",
+      "language": "Kotlin",
+      "stars": 9602,
+      "forks": 620,
+      "starsAdded": 1317,
+      "createdAt": "2026-10-20T11:00:04.731Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to android/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "AI Agent",
+          "Claude Code",
+          "Google官方",
+          "开发效率"
+        ],
+        "cover": "",
+        "title": "android/skills 深度评测：Google 官方给 AI 编程助手的 Android 技能包",
+        "ability": [
+          "提供 13+ 个官方技能，专治 AI 编程短板（R8 优化、AGP 9 升级、CameraX/Nav3 迁移等）",
+          "采用渐进式披露机制按需加载知识，大幅降低 Token 消耗",
+          "跨平台兼容 Claude Code、Cursor、Gemini CLI、Codex 等主流 AI 编码工具",
+          "严格约束 AI 输出格式与行为，输出结构化审计报告且不乱改代码",
+          "支持 android CLI 一键安装、指定 agent 安装与版本更新管理"
+        ],
+        "summary": "Google 官方开源的 AI Agent 技能包，把 AI 最容易写错的 Android 最佳实践封装成可按需加载的 SKILL.md 模块，实测提效 3 倍、省 70% Token。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "用 Claude Code/Cursor 等 AI 工具写 Android 代码的开发者",
+          "维护老项目需迁移升级的 Android 团队",
+          "负责 AGP/Play Billing 大版本升级的工程师",
+          "关注 App 体积与性能优化的团队",
+          "研究 AI Agent 技能体系的技术爱好者"
+        ],
+        "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
       }
     },
     {
