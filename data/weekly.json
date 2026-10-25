@@ -22128,5 +22128,856 @@
         "description": "由前 Apple 工程师 Seth Hobson 维护的开源项目，采用适配器架构实现一次编写、到处安装：把提示词、工具权限、模型路由打包成可版本化的插件，通过 marketplace 命令装进 7 种编程工具。亮点是多 Harness 分发和评测体系，但需警惕装太多导致上下文膨胀和 Opus 成本飙升，建议按需精选 2-3 个插件使用。"
       }
     }
+  ],
+  "202644": [
+    {
+      "id": "cde30818-ebc6-42e1-b2e8-2c4fdea25dc8",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 46205,
+      "forks": 2868,
+      "starsAdded": 12680,
+      "createdAt": "2026-10-25T16:00:03.697Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "fbe1667a-4cbd-4c19-9beb-a60cfd403de1",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/stablyai/orca",
+      "repo": "stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars": 105501,
+      "forks": 6671,
+      "starsAdded": 9828,
+      "createdAt": "2026-10-25T16:00:03.716Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ade",
+          "agent-ide",
+          "ai-agents",
+          "automation",
+          "bot",
+          "claude-code",
+          "codex",
+          "ghostty",
+          "grok-bot",
+          "hermes-agent",
+          "mobile-app",
+          "muse",
+          "openclaw",
+          "opencode",
+          "orchestration",
+          "pi",
+          "runtime",
+          "terminal",
+          "worktrees",
+          "yc-backed"
+        ],
+        "license": "MIT license",
+        "homepage": "https://orca.dev",
+        "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. - stablyai/orca"
+      },
+      "summaryData": {
+        "tags": [
+          "AI编程",
+          "CLI代理",
+          "多智能体",
+          "Git Worktree",
+          "远程协作"
+        ],
+        "cover": "",
+        "title": "Orca - 多智能体并行AI编程环境",
+        "ability": [
+          "多智能体并行编排",
+          "Git Worktree隔离管理",
+          "内嵌浏览器与终端",
+          "远程协同与移动伴侣",
+          "原生GitHub/Linear集成"
+        ],
+        "summary": "面向AI编码代理的新一代开发环境，支持多CLI代理并行运行与远程协同",
+        "category": [
+          "开发工具",
+          "AI编程",
+          "协作工具"
+        ],
+        "suitable": [
+          "使用CLI代理的开发者",
+          "需要多分支并行的团队",
+          "远程协作用户",
+          "AI重度使用者",
+          "代码评审密集的项目"
+        ],
+        "description": "Orca是一款面向AI编码代理的开发环境，支持在同一界面运行多个CLI代理（Claude、Codex等），为每个代理提供隔离的Git Worktree、终端和浏览器，实现多智能体并行编码与远程协同。"
+      }
+    },
+    {
+      "id": "b51b7ea1-a41b-4c0a-b73f-c414a74120e2",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "repo": "Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars": 134898,
+      "forks": 12878,
+      "starsAdded": 6868,
+      "createdAt": "2026-10-25T16:00:03.733Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "antigravity",
+          "ast",
+          "claude-code",
+          "code-analysis",
+          "code-search",
+          "codex",
+          "cursor",
+          "developer-tools",
+          "gemini",
+          "graphify",
+          "graphrag",
+          "knowledge-graph",
+          "leiden",
+          "llm",
+          "mcp",
+          "openclaw",
+          "rag",
+          "skills",
+          "tree-sitter"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.graphify.com",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. - Graphify-Labs/graphify"
+      },
+      "summaryData": {
+        "tags": [
+          "知识图谱",
+          "tree-sitter",
+          "AI 编码助手",
+          "代码分析",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Graphify 深度评测：把代码库变成 AI 编码助手能“读懂”的知识图谱",
+        "ability": [
+          "用 tree-sitter 纯本地解析 36+ 编程语言，构建真实代码知识图谱（非向量检索）",
+          "每条关系边带 EXTRACTED/INFERRED 来源标签，可解释、可追溯",
+          "一条命令接入 Claude Code、Cursor、Codex 等 25+ AI 编码助手",
+          "支持文档、PDF、SQL、Terraform、视频等多源数据汇入同一张图",
+          "零 API 调用、零遥测，支持 Ollama 全本地运行，隐私友好"
+        ],
+        "summary": "一个开源 CLI 工具，把代码库解析成知识图谱，让 Claude Code、Cursor 等 AI 助手更懂你的项目、更省 token。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "接手陌生大型代码库、需要快速摸清架构的工程师",
+          "带 AI 助手日常开发、想省 token 的独立开发者",
+          "需要评估 PR 影响面的 Tech Lead",
+          "负责新人 onboarding 的架构师 / Mentor",
+          "对代码隐私与合规有严格要求的团队"
+        ],
+        "description": "Graphify 是 YC S26 孵化的开源 CLI 工具，用 tree-sitter 将代码库解析为真实知识图谱而非向量索引，支持 25+ AI 助手一键接入，纯本地运行、零 token 成本，并生成 HTML 可视化、分析报告和图数据三件套。适合大型代码库理解与团队协作，但小项目性价比低，超大 monorepo 存在性能瓶颈，且 AI 有时会绕过它直接用 grep。"
+      }
+    },
+    {
+      "id": "5b3c8dc3-e5be-48b3-85d9-ac772951b65e",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 221433,
+      "forks": 29632,
+      "starsAdded": 6857,
+      "createdAt": "2026-10-25T16:00:03.712Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://opencode.ai",
+        "description": "The open source coding agent. Contribute to anomalyco/opencode development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Terminal",
+          "OpenSource",
+          "Privacy",
+          "GitHub Actions"
+        ],
+        "cover": "",
+        "title": "OpenCode：开源AI编程代理，终端优先，模型无关",
+        "ability": [
+          "终端TUI双模式",
+          "多模型提供商兼容",
+          "GitHub深度集成与自动化",
+          "隐私友好可自托管",
+          "多平台桌面支持"
+        ],
+        "summary": "一款开源的AI编程代理，主打终端优先、模型无关与隐私友好，支持本地/TUI/GitHub自动化。",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "GitHub自动化"
+        ],
+        "suitable": [
+          "个人开发者",
+          "终端重度用户",
+          "隐私合规团队",
+          "开源项目维护者",
+          "Server/云用户"
+        ],
+        "description": "OpenCode在终端提供Plan只读与Build执行双模式，支持75+模型提供商，可与GitHub App联动实现评论/PR自动修复，代码不出自有基础设施，适合重视隐私与不被单一模型锁定的开发团队。"
+      }
+    },
+    {
+      "id": "abc93ec1-c17d-44dd-b680-5ce23ff4f34a",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "repo": "heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 71931,
+      "forks": 6497,
+      "starsAdded": 5633,
+      "createdAt": "2026-10-25T16:00:03.721Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "animation",
+          "claude-code",
+          "ffmpeg",
+          "framework",
+          "gsap",
+          "html",
+          "html-to-video",
+          "mcp",
+          "motion-graphics",
+          "puppeteer",
+          "rendering",
+          "typescript",
+          "video-editor"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://hyperframes.dev",
+        "description": "Write HTML. Render video. Built for agents. Contribute to heygen-com/hyperframes development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "HTML to video",
+          "自动化视频",
+          "AI Agent",
+          "Puppeteer",
+          "GSAP"
+        ],
+        "cover": "",
+        "title": "HyperFrames 深度评测：用 HTML 写视频的“Agent 原生”框架",
+        "ability": [
+          "HTML 原生无构建渲染",
+          "Agent 友好工作流与 20+ 技能",
+          "逐帧确定性输出",
+          "集成多动画库（GSAP/Lottie/Three.js 等）",
+          "Apache 2.0 开源，支持云端渲染"
+        ],
+        "summary": "把 HTML/CSS 直接变成视频的“渲染原语”，适配 AI Agent，无构建、可回归、易批量生产。",
+        "category": [
+          "开源框架",
+          "视频工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "前端/动效工程师",
+          "重度使用 AI 编码 Agent 的用户",
+          "产品/营销/内容团队",
+          "DevOps/平台团队",
+          "视频自动化开发者"
+        ],
+        "description": "HyperFrames 让你用 HTML/CSS 描述视频，通过 data-* 属性标记时间线与轨道，用 headless Chrome 逐帧抓取并 FFmpeg 编码，输出确定性 MP4。支持 Agent 全流程自动化生产，适配多种动画库，提供 CLI、Catalog、Studio 与 AWS Lambda 渲染，适合将视频纳入代码与 CI/CD。"
+      }
+    },
+    {
+      "id": "2e0e9cfc-5c22-4ec0-a3d3-441328bc48fd",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "repo": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars": 142849,
+      "forks": 16857,
+      "starsAdded": 4648,
+      "createdAt": "2026-10-25T16:00:03.739Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://www.comfy.org/",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. - Comfy-Org/ComfyUI"
+      },
+      "summaryData": {
+        "tags": [
+          "Stable Diffusion",
+          "节点式编辑",
+          "AI 绘画",
+          "工作流自动化",
+          "AIGC"
+        ],
+        "cover": "",
+        "title": "ComfyUI 深度评测：节点式 AI 生成引擎",
+        "ability": [
+          "节点式工作流编排",
+          "高性能异步队列",
+          "广泛的模型生态支持",
+          "灵活的部署与集成",
+          "自定义节点开发"
+        ],
+        "summary": "ComfyUI 是一个基于节点式界面的模块化 AI 生成引擎，提供极致控制力与工作流复用能力。",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "生产力工具"
+        ],
+        "suitable": [
+          "专业视觉创作者",
+          "AI 研究者与发烧友",
+          "后端开发与工程师",
+          "企业级生产团队",
+          "追求可控性的技术极客"
+        ],
+        "description": "ComfyUI 将 AI 生成过程拆解为可视化节点，允许用户像搭积木一样构建复杂的生产流水线。它不仅支持最新的开源模型，还具备强大的性能优化和 Docker 部署能力，是追求高标准、可复现与私有化部署用户的终极利器。"
+      }
+    },
+    {
+      "id": "8eb83d21-659f-4081-81d7-900456611cf4",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 13442,
+      "forks": 950,
+      "starsAdded": 3541,
+      "createdAt": "2026-10-25T16:00:03.735Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
+      "id": "cca9a59e-45e9-4645-bad2-9cc26279e36b",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/ruvnet/ruflo",
+      "repo": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 79206,
+      "forks": 9298,
+      "starsAdded": 3241,
+      "createdAt": "2026-10-25T16:00:03.705Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ],
+        "license": "MIT license",
+        "homepage": "https://Cognitum.One",
+        "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated - ruvnet/ruflo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Multi-Agent",
+          "DevOps",
+          "GitHub",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "Ruflo: Claude Code 多智能体编排平台评测",
+        "ability": [
+          "多智能体蜂群协作",
+          "跨会话持久化记忆",
+          "智能路由与成本优化",
+          "企业级安全与联邦通信",
+          "自动化测试与代码审计"
+        ],
+        "summary": "Ruflo 是一个为 Claude Code 打造的企业级多智能体编排平台，通过蜂群协作与持久化记忆显著提升开发效率并降低 API 成本。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Claude Code 重度用户",
+          "追求高效的开发团队",
+          "DevOps 与运维工程师",
+          "技术架构师",
+          "个人开发者"
+        ],
+        "description": "Ruflo 通过协调 100+ 专业智能体并行处理任务，解决了 AI 辅助开发中的协作与记忆缺失痛点。它具备自学习能力，可将 API 成本降低 75%，并内置企业级安全防护，适合复杂项目的全流程开发。"
+      }
+    },
+    {
+      "id": "a16078f2-2477-418c-ad76-df5d65af7a03",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 44486,
+      "forks": 4659,
+      "starsAdded": 3232,
+      "createdAt": "2026-10-25T16:00:03.742Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://code.claude.com/docs/en/plugins",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins. - anthropics/claude-plugins-official"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "插件系统",
+          "官方生态",
+          "自动化",
+          "Anthropic"
+        ],
+        "cover": "",
+        "title": "Claude Plugins Official：Anthropic 官方插件目录评测",
+        "ability": [
+          "官方策展与安全审核",
+          "插件一键安装与集成",
+          "命令/代理/技能等多种类型",
+          "深度嵌入 Claude 工作流",
+          "标准化与生态规范"
+        ],
+        "summary": "Anthropic 官方维护的 Claude 插件精选目录，提供安全、稳定的高质量插件以扩展 AI 能力。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Claude Code/Cowork 重度用户",
+          "开发团队负责人",
+          "企业安全合规部门",
+          "插件开发者",
+          "AI 工作流极客"
+        ],
+        "description": "该项目是 Anthropic 官方维护的 Claude 插件索引目录。通过严格审核的插件大幅提升 Claude 的开发与知识处理效率，支持自动触发和命令调用，是构建高效、安全 AI 工作流的核心资源。"
+      }
+    },
+    {
+      "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "stars": 223653,
+      "forks": 22398,
+      "starsAdded": 2981,
+      "createdAt": "2026-10-25T16:00:03.748Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "Cursor",
+          "代码规范",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
+        "ability": [
+          "纠正 AI 错误假设与沉默猜测",
+          "抑制过度设计与代码膨胀",
+          "实施精准的手术式代码修改",
+          "目标驱动的闭环验证机制"
+        ],
+        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code 或 Cursor 重度用户",
+          "追求高质量代码的开发者",
+          "技术团队负责人",
+          "需要规范 AI 输出的用户"
+        ],
+        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
+      }
+    },
+    {
+      "id": "2ded2a1e-1120-4a15-b33a-462430dd474b",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 32889,
+      "forks": 3628,
+      "starsAdded": 2631,
+      "createdAt": "2026-10-25T16:00:03.710Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude",
+          "Anthropic",
+          "GitHub",
+          "AI插件",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "ability": [
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
+        ],
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "企业服务"
+        ],
+        "suitable": [
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+      }
+    },
+    {
+      "id": "e2553922-6f5d-4f69-9af6-66558aca2df4",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 30004,
+      "forks": 8051,
+      "starsAdded": 1778,
+      "createdAt": "2026-10-25T16:00:03.751Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
+      "id": "9811e2fa-fc5c-43c4-85ce-75d042a02cd5",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "stars": 95453,
+      "forks": 23934,
+      "starsAdded": 1371,
+      "createdAt": "2026-10-25T16:00:03.744Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "amd",
+          "blackwell",
+          "cuda",
+          "deepseek",
+          "deepseek-v3",
+          "gpt",
+          "gpt-oss",
+          "inference",
+          "kimi",
+          "llama",
+          "llm",
+          "llm-serving",
+          "model-serving",
+          "moe",
+          "openai",
+          "pytorch",
+          "qwen",
+          "qwen3",
+          "tpu",
+          "transformer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://vllm.ai",
+        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs - vllm-project/vllm"
+      },
+      "summaryData": {
+        "tags": [
+          "vLLM",
+          "大模型推理",
+          "开源项目",
+          "PagedAttention",
+          "GPU 优化"
+        ],
+        "cover": "",
+        "title": "vLLM 深度评测：把 GPU 显存利用率从 40% 提到 96% 的大模型推理引擎",
+        "ability": [
+          "PagedAttention 分页注意力：借鉴操作系统虚拟内存思想管理显存，浪费率从 60-80% 降到 4% 以下",
+          "Continuous Batching 连续批处理：GPU 常年满负荷，新请求随到随处理",
+          "完全兼容 OpenAI API：改一行 base_url 即可无缝切换自托管模型",
+          "支持 400+ 模型架构：新模型发布当天即可运行",
+          "多硬件支持：覆盖 NVIDIA/AMD/TPU/Intel/CPU，Apple Silicon 也有社区方案"
+        ],
+        "summary": "vLLM 是让大模型推理吞吐量提升 2-24 倍的开源引擎，企业自托管大模型部署的事实标准",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "大模型推理"
+        ],
+        "suitable": [
+          "企业 AI 平台团队（同等流量可省一半以上 GPU）",
+          "需要自托管大模型的应用开发者",
+          "独立开发者与小团队（一张卡即可跑模型服务）",
+          "算法研究者（新模型最快落地路径）",
+          "数据工程师（离线批量推理场景）"
+        ],
+        "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      }
+    },
+    {
+      "id": "70b299d7-6cd0-45ed-896f-56abd45cd3bf",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/android/skills",
+      "repo": "android/skills",
+      "description": "",
+      "language": "Kotlin",
+      "stars": 9680,
+      "forks": 624,
+      "starsAdded": 1317,
+      "createdAt": "2026-10-25T16:00:03.728Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to android/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Android",
+          "AI Agent",
+          "Claude Code",
+          "Google官方",
+          "开发效率"
+        ],
+        "cover": "",
+        "title": "android/skills 深度评测：Google 官方给 AI 编程助手的 Android 技能包",
+        "ability": [
+          "提供 13+ 个官方技能，专治 AI 编程短板（R8 优化、AGP 9 升级、CameraX/Nav3 迁移等）",
+          "采用渐进式披露机制按需加载知识，大幅降低 Token 消耗",
+          "跨平台兼容 Claude Code、Cursor、Gemini CLI、Codex 等主流 AI 编码工具",
+          "严格约束 AI 输出格式与行为，输出结构化审计报告且不乱改代码",
+          "支持 android CLI 一键安装、指定 agent 安装与版本更新管理"
+        ],
+        "summary": "Google 官方开源的 AI Agent 技能包，把 AI 最容易写错的 Android 最佳实践封装成可按需加载的 SKILL.md 模块，实测提效 3 倍、省 70% Token。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "用 Claude Code/Cursor 等 AI 工具写 Android 代码的开发者",
+          "维护老项目需迁移升级的 Android 团队",
+          "负责 AGP/Play Billing 大版本升级的工程师",
+          "关注 App 体积与性能优化的团队",
+          "研究 AI Agent 技能体系的技术爱好者"
+        ],
+        "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
+      }
+    }
   ]
 }

@@ -84265,5 +84265,683 @@
         "description": "AWS 于 2026 年 5 月 GA 的官方智能体工具链，由托管 MCP Server、40+ Skills、Plugins 和 Rules 四层组件组成。它能让编码智能体实时查阅最新 AWS 文档、按官方最佳实践做架构决策，并通过 IAM 条件键和 CloudTrail 提供企业级权限管控与审计，是 awslabs/mcp 社区项目的官方收编升级版。"
       }
     }
+  ],
+  "20261026": [
+    {
+      "id": "74efd1a0-390d-4640-89cf-1a3b2a04ba01",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 46205,
+      "forks": 2868,
+      "starsAdded": 2874,
+      "createdAt": "2026-10-25T16:00:01.992Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "af3df735-d94b-4014-88e9-bc3c001c5e24",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 86127,
+      "forks": 9547,
+      "starsAdded": 1588,
+      "createdAt": "2026-10-25T16:00:01.887Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://voicestudio.sh",
+        "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/VoiceStudio"
+      },
+      "summaryData": {
+        "tags": [
+          "语音克隆",
+          "TTS",
+          "ASR",
+          "开源",
+          "本地部署"
+        ],
+        "cover": "",
+        "title": "VoiceStudio：开源本地语音克隆与配音工作台",
+        "ability": [
+          "本地零样本语音克隆",
+          "视频自动配音与字幕",
+          "多语种实时转写",
+          "OpenAI 兼容本地 API",
+          "隐私安全与离线运行"
+        ],
+        "summary": "一款集语音克隆、配音、转写于一体的本地化全能语音工作台，隐私安全且开源免费。",
+        "category": [
+          "开发工具",
+          "AI应用",
+          "生产力工具"
+        ],
+        "suitable": [
+          "视频博主与UP主",
+          "开发者与极客",
+          "隐私敏感型企业用户",
+          "播客与有声书创作者",
+          "高用量语音需求者"
+        ],
+        "description": "VoiceStudio 是一款完全本地优先的桌面语音工作台，整合了多种TTS和ASR引擎。它支持零样本声音克隆、视频配音、实时听写，并提供OpenAI兼容的本地API，确保数据隐私且无需订阅费用。"
+      }
+    },
+    {
+      "id": "148e7363-5f16-4603-8d04-693f230402e5",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 33203,
+      "forks": 1725,
+      "starsAdded": 1359,
+      "createdAt": "2026-10-25T16:00:01.864Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
+      "id": "1ffc036a-b5d6-4aa1-a50d-8bb9a040c7d6",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 87269,
+      "forks": 5215,
+      "starsAdded": 1113,
+      "createdAt": "2026-10-25T16:00:01.903Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
+      "id": "35b6f373-c83f-42ff-a74c-6fb273da2bbb",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/makecindy/cindy",
+      "repo": "makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 4607,
+      "forks": 647,
+      "starsAdded": 677,
+      "createdAt": "2026-10-25T16:00:01.837Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "ai-assistant",
+          "android",
+          "claude-code",
+          "codex",
+          "electron",
+          "ios",
+          "llm",
+          "macos",
+          "react-native",
+          "typescript",
+          "windows"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://cindy.app",
+        "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 - makecindy/cindy"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI Agent",
+          "心动网络",
+          "跨端协作",
+          "TapTap"
+        ],
+        "cover": "",
+        "title": "Cindy 深度评测：心动网络开源 AI Agent 客户端，是真兑现还是漂亮话术？",
+        "ability": [
+          "多 Harness 混跑：Claude Code / Codex / Pi 任务中途自由切换，上下文无缝交接",
+          "复用已有 Coding Plan 订阅或自带 API Key（支持 DeepSeek、GLM 等国产模型），不重复计费",
+          "桌面满血 + 手机接力：可从飞书/Slack 派活，移动端远程查看、审批、接管会话",
+          "内置记忆（Memory）、技能（Skill）、MCP 和定时任务，开箱即用",
+          "隔离工作区 + 逐条审批 + 检查点回退，保障代码安全可控"
+        ],
+        "summary": "Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率协作"
+        ],
+        "suitable": [
+          "已付费 Claude Code 或 Codex 订阅、想一份订阅两个工具用的开发者",
+          "经常在电脑和手机间切换的重度 AI 用户",
+          "想用 AI 做小工具小游戏的非技术岗（产品、设计、运营）",
+          "希望从开发到一键上架 TapTap 的独立游戏开发者",
+          "需要 MCP 接内部系统和团队额度管理的企业团队"
+        ],
+        "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。"
+      }
+    },
+    {
+      "id": "8209b9ab-60d4-4c21-8fb0-ad3b9508b8e5",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "repo": "pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 11433,
+      "forks": 1461,
+      "starsAdded": 657,
+      "createdAt": "2026-10-25T16:00:01.934Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "强化学习",
+          "Rust",
+          "sim2real",
+          "具身智能"
+        ],
+        "cover": "",
+        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
+        "ability": [
+          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
+          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
+          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
+          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
+          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
+        ],
+        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
+        "category": [
+          "机器人与具身智能",
+          "开发工具",
+          "AI/机器学习"
+        ],
+        "suitable": [
+          "具身智能与强化学习研究者",
+          "机器人/嵌入式工程师",
+          "Hugging Face 生态开发者",
+          "教育者与 STEAM 教师",
+          "机器人爱好者与创客"
+        ],
+        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
+      }
+    },
+    {
+      "id": "460220d0-f8c4-4a1d-8537-8e8dd2e1c5e4",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 7460,
+      "forks": 1529,
+      "starsAdded": 489,
+      "createdAt": "2026-10-25T16:00:01.960Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
+      "id": "17bc9759-9b00-442f-a7a3-b16a6ac36423",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 114165,
+      "forks": 22094,
+      "starsAdded": 309,
+      "createdAt": "2026-10-25T16:00:01.951Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
+      "id": "acb23fa6-6e07-4e19-88a9-021a9fb5f3aa",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/coollabsio/coolify",
+      "repo": "coollabsio/coolify",
+      "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
+      "language": "PHP",
+      "stars": 64028,
+      "forks": 5759,
+      "starsAdded": 192,
+      "createdAt": "2026-10-25T16:00:01.987Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "coolify",
+          "databases",
+          "deployment",
+          "docker",
+          "docker-compose",
+          "inertiajs",
+          "laravel",
+          "mariadb",
+          "mysql",
+          "nextjs",
+          "nodejs",
+          "php",
+          "postgres",
+          "redis",
+          "self-hosted",
+          "self-hosting",
+          "server",
+          "static-site",
+          "svelte",
+          "svelte5"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://coolify.io",
+        "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers. - coollabsio/coolify"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "PaaS",
+          "自托管",
+          "Docker",
+          "自动部署"
+        ],
+        "cover": "",
+        "title": "Coolify 深度评测：60K Star 的开源自托管 PaaS，一台 VPS 拥有 Vercel 体验",
+        "ability": [
+          "一条命令安装：5 分钟在任意 VPS/树莓派上搭建图形化部署面板",
+          "Git 自动部署：push 即上线，支持 PR 预览环境、自动构建和一键回滚",
+          "300+ 一键服务模板：N8n、Supabase、WordPress 等自托管应用开箱即用",
+          "自动 HTTPS 与域名管理：内置 Traefik 反代，Let's Encrypt 证书自动签发",
+          "原生 MCP Server：可接入 Claude/Cursor 等 AI 助手执行部署和运维操作"
+        ],
+        "summary": "开源自托管 PaaS 平台，一条命令在 VPS 上搭建属于自己的 Vercel/Heroku 平替，代码数据完全自主可控。",
+        "category": [
+          "开发工具",
+          "云服务与自托管",
+          "DevOps 运维"
+        ],
+        "suitable": [
+          "独立开发者 / Indie Hacker",
+          "小团队 / 初创公司",
+          "自托管爱好者",
+          "接外包需多环境交付的 Agency",
+          "想学 DevOps 的新手"
+        ],
+        "description": "Coolify 是一个开源自托管 PaaS 平台，定位为 Vercel/Heroku/Railway 的平替，GitHub Star 超 60K。基于 Laravel + Docker + Traefik 构建，只需一条命令即可在 5 美元 VPS 上安装，通过图形界面完成 CI/CD、域名绑定、自动 HTTPS、数据库管理和 S3 备份。核心优势是成本极低（约 8 美元/月跑多个应用）且数据完全自主；不足是安全漏洞补丁频繁需及时更新、内存占用偏高（500MB+）、多服务器仅支持管理而非自动调度编排。"
+      }
+    },
+    {
+      "id": "1be9dfec-3a85-4d00-9773-11b69168220d",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 20436,
+      "forks": 2924,
+      "starsAdded": 179,
+      "createdAt": "2026-10-25T16:00:01.996Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
+        ],
+        "cover": "",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
+        "ability": [
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
+        ],
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "SEO 营销"
+        ],
+        "suitable": [
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
+        ],
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
+      }
+    },
+    {
+      "id": "1ce46aff-9de5-4e3e-a029-1aded0a23545",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "repo": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 1227,
+      "forks": 86,
+      "starsAdded": 52,
+      "createdAt": "2026-10-25T16:00:01.970Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://thinkrail.ai/",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "AI IDE",
+          "多智能体",
+          "Git Worktree",
+          "开源"
+        ],
+        "cover": "",
+        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
+        "ability": [
+          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
+          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
+          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
+          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
+          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
+        ],
+        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "需要同时跑多个 AI Agent 干活的重度开发者",
+          "长期维护大型代码仓库的工程师",
+          "注重隐私、想自托管或内网使用的用户",
+          "想研究 AI IDE 架构的技术爱好者",
+          "已有的 pi 生态用户"
+        ],
+        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
+      }
+    }
   ]
 }
