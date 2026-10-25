@@ -83351,8 +83351,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 45805,
-      "forks": 2840,
+      "stars": 45995,
+      "forks": 2855,
       "starsAdded": 2874,
       "createdAt": "2026-10-24T16:00:01.939Z",
       "metaData": {
@@ -83403,8 +83403,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 85668,
-      "forks": 9500,
+      "stars": 85902,
+      "forks": 9523,
       "starsAdded": 1588,
       "createdAt": "2026-10-25T11:00:02.066Z",
       "metaData": {
@@ -83476,8 +83476,8 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 32844,
-      "forks": 1704,
+      "stars": 33023,
+      "forks": 1716,
       "starsAdded": 1359,
       "createdAt": "2026-10-24T16:00:01.976Z",
       "metaData": {
@@ -83529,8 +83529,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 86968,
-      "forks": 5191,
+      "stars": 87125,
+      "forks": 5204,
       "starsAdded": 1113,
       "createdAt": "2026-10-24T16:00:01.982Z",
       "metaData": {
@@ -83604,8 +83604,8 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 4417,
-      "forks": 628,
+      "stars": 4516,
+      "forks": 636,
       "starsAdded": 677,
       "createdAt": "2026-10-24T16:00:02.002Z",
       "metaData": {
@@ -83671,8 +83671,8 @@
       "repo": "pollen-robotics/microduck",
       "description": "A Tiny biped duck robot 🦆",
       "language": "Rust",
-      "stars": 11292,
-      "forks": 1443,
+      "stars": 11368,
+      "forks": 1451,
       "starsAdded": 657,
       "createdAt": "2026-10-24T16:00:01.985Z",
       "metaData": {
@@ -83724,8 +83724,8 @@
       "repo": "Renhuai123/ziwei-doushu",
       "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
       "language": "TypeScript",
-      "stars": 7371,
-      "forks": 1510,
+      "stars": 7420,
+      "forks": 1521,
       "starsAdded": 489,
       "createdAt": "2026-10-25T11:00:02.094Z",
       "metaData": {
@@ -83845,8 +83845,8 @@
       "repo": "TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 113918,
-      "forks": 22062,
+      "stars": 114043,
+      "forks": 22078,
       "starsAdded": 309,
       "createdAt": "2026-10-25T11:00:02.088Z",
       "metaData": {
@@ -83950,67 +83950,6 @@
       }
     },
     {
-      "id": "0602b0b3-8aaf-4a96-91ff-7fb69d9d3b64",
-      "dateAdded": "20261025",
-      "type": "github-daily",
-      "url": "https://github.com/AgriciDaniel/claude-seo",
-      "repo": "AgriciDaniel/claude-seo",
-      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-      "language": "Python",
-      "stars": 20210,
-      "forks": 2910,
-      "starsAdded": 179,
-      "createdAt": "2026-10-25T11:00:02.113Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-seo",
-          "claude-code",
-          "claude-code-skill",
-          "marketing-automation",
-          "open-source",
-          "seo"
-        ],
-        "license": "MIT license",
-        "homepage": "https://skool.com/ai-marketing-hub-pro",
-        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "SEO 审计",
-          "开源项目",
-          "AI Agent",
-          "GEO/AEO"
-        ],
-        "cover": "",
-        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
-        "ability": [
-          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
-          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
-          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
-          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
-          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
-        ],
-        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "SEO 营销"
-        ],
-        "suitable": [
-          "管理多个客户站点的 SEO Agency 从业者",
-          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
-          "独立 SEO 顾问（用于现场谈单和交付）",
-          "已有 Claude Code 订阅的独立开发者",
-          "想做 GEO/AEO 优化的内容创作者"
-        ],
-        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
-      }
-    },
-    {
       "id": "44234bad-b3dd-49f0-b966-f0a7e4d96d92",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -84018,9 +83957,9 @@
       "repo": "coollabsio/coolify",
       "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
       "language": "PHP",
-      "stars": 63837,
-      "forks": 5749,
-      "starsAdded": 150,
+      "stars": 63932,
+      "forks": 5755,
+      "starsAdded": 192,
       "createdAt": "2026-10-25T11:00:02.105Z",
       "metaData": {
         "forks": "0",
@@ -84085,6 +84024,67 @@
       }
     },
     {
+      "id": "0602b0b3-8aaf-4a96-91ff-7fb69d9d3b64",
+      "dateAdded": "20261025",
+      "type": "github-daily",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 20318,
+      "forks": 2919,
+      "starsAdded": 179,
+      "createdAt": "2026-10-25T11:00:02.113Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
+        ],
+        "cover": "",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
+        "ability": [
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
+        ],
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "SEO 营销"
+        ],
+        "suitable": [
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
+        ],
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
+      }
+    },
+    {
       "id": "42a049f4-0f34-4b03-bebf-23da3ccad7a4",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -84092,8 +84092,8 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 1126,
-      "forks": 82,
+      "stars": 1177,
+      "forks": 85,
       "starsAdded": 52,
       "createdAt": "2026-10-25T11:00:02.102Z",
       "metaData": {
