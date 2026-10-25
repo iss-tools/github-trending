@@ -83351,9 +83351,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 45708,
-      "forks": 2832,
-      "starsAdded": 2264,
+      "stars": 45805,
+      "forks": 2840,
+      "starsAdded": 2874,
       "createdAt": "2026-10-24T16:00:01.939Z",
       "metaData": {
         "forks": "0",
@@ -83403,8 +83403,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 85575,
-      "forks": 9487,
+      "stars": 85668,
+      "forks": 9500,
       "starsAdded": 1588,
       "createdAt": "2026-10-25T11:00:02.066Z",
       "metaData": {
@@ -83469,26 +83469,57 @@
       }
     },
     {
-      "id": "efa80231-8148-4f49-9360-df86e7e1f909",
+      "id": "0fe34701-c878-4b83-8f5a-fc1450175b33",
       "dateAdded": "20261025",
       "type": "github-daily",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "repo": "NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "language": "Rust",
-      "stars": 19700,
-      "forks": 1948,
-      "starsAdded": 896,
-      "createdAt": "2026-10-24T16:00:01.967Z",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 32844,
+      "forks": 1704,
+      "starsAdded": 1359,
+      "createdAt": "2026-10-24T16:00:01.976Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/openshell/latest/",
-        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
       },
-      "summaryData": null
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
     },
     {
       "id": "6731a7c1-90c6-41d5-ac8a-3b33797d559b",
@@ -83498,9 +83529,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 86882,
-      "forks": 5185,
-      "starsAdded": 619,
+      "stars": 86968,
+      "forks": 5191,
+      "starsAdded": 1113,
       "createdAt": "2026-10-24T16:00:01.982Z",
       "metaData": {
         "forks": "0",
@@ -83544,68 +83575,26 @@
       }
     },
     {
-      "id": "ed1ef583-a29b-4d42-8505-ff891523a766",
+      "id": "efa80231-8148-4f49-9360-df86e7e1f909",
       "dateAdded": "20261025",
       "type": "github-daily",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "repo": "Renhuai123/ziwei-doushu",
-      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-      "language": "TypeScript",
-      "stars": 7351,
-      "forks": 1508,
-      "starsAdded": 489,
-      "createdAt": "2026-10-25T11:00:02.094Z",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 19700,
+      "forks": 1948,
+      "starsAdded": 896,
+      "createdAt": "2026-10-24T16:00:01.967Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "bazi",
-          "chinese-astrology",
-          "divination",
-          "fortune-telling",
-          "nextjs",
-          "open-source",
-          "purple-star-astrology",
-          "typescript",
-          "zi-wei-dou-shu",
-          "ziwei-doushu"
-        ],
-        "license": "MIT license",
-        "homepage": "https://metisziwei.com/?from=gh-about",
-        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "description": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell"
       },
-      "summaryData": {
-        "tags": [
-          "紫微斗数",
-          "开源项目",
-          "AI训练数据",
-          "Next.js",
-          "排盘引擎"
-        ],
-        "cover": "",
-        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
-        "ability": [
-          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
-          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
-          "三部紫微斗数古籍全文数字化与在线阅读器",
-          "完整可一键部署的Next.js排盘网站前端",
-          "马云、乔布斯等名人命盘样本库供对照学习"
-        ],
-        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
-        "category": [
-          "开发工具",
-          "AI 数据集",
-          "传统文化"
-        ],
-        "suitable": [
-          "想微调命理垂直小模型的AI开发者",
-          "紫微斗数研究者与命理老师",
-          "需要现成产品原型的前端/全栈开发者",
-          "紫微斗数初学者",
-          "命理类内容创作者"
-        ],
-        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
-      }
+      "summaryData": null
     },
     {
       "id": "d4ac3fd6-a29b-4fa4-93b4-5c39f6aee4c6",
@@ -83615,9 +83604,9 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 4385,
-      "forks": 622,
-      "starsAdded": 477,
+      "stars": 4417,
+      "forks": 628,
+      "starsAdded": 677,
       "createdAt": "2026-10-24T16:00:02.002Z",
       "metaData": {
         "forks": "0",
@@ -83675,56 +83664,120 @@
       }
     },
     {
-      "id": "0fe34701-c878-4b83-8f5a-fc1450175b33",
+      "id": "2ad63c86-cd63-4137-bf8e-afc2053822f5",
       "dateAdded": "20261025",
       "type": "github-daily",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 32754,
-      "forks": 1693,
-      "starsAdded": 455,
-      "createdAt": "2026-10-24T16:00:01.976Z",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "repo": "pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 11292,
+      "forks": 1443,
+      "starsAdded": 657,
+      "createdAt": "2026-10-24T16:00:01.985Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
+          "双足机器人",
+          "强化学习",
+          "Rust",
+          "sim2real",
+          "具身智能"
         ],
         "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
         "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
+          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
+          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
+          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
+          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
         ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
         "category": [
+          "机器人与具身智能",
           "开发工具",
-          "AI 编程",
-          "开源项目"
+          "AI/机器学习"
         ],
         "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
+          "具身智能与强化学习研究者",
+          "机器人/嵌入式工程师",
+          "Hugging Face 生态开发者",
+          "教育者与 STEAM 教师",
+          "机器人爱好者与创客"
         ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
+      }
+    },
+    {
+      "id": "ed1ef583-a29b-4d42-8505-ff891523a766",
+      "dateAdded": "20261025",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 7371,
+      "forks": 1510,
+      "starsAdded": 489,
+      "createdAt": "2026-10-25T11:00:02.094Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
       }
     },
     {
@@ -83785,59 +83838,6 @@
       }
     },
     {
-      "id": "2ad63c86-cd63-4137-bf8e-afc2053822f5",
-      "dateAdded": "20261025",
-      "type": "github-daily",
-      "url": "https://github.com/pollen-robotics/microduck",
-      "repo": "pollen-robotics/microduck",
-      "description": "A Tiny biped duck robot 🦆",
-      "language": "Rust",
-      "stars": 11258,
-      "forks": 1439,
-      "starsAdded": 319,
-      "createdAt": "2026-10-24T16:00:01.985Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://pollen-robotics.com/microduck",
-        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "双足机器人",
-          "强化学习",
-          "Rust",
-          "sim2real",
-          "具身智能"
-        ],
-        "cover": "",
-        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
-        "ability": [
-          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
-          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
-          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
-          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
-          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
-        ],
-        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
-        "category": [
-          "机器人与具身智能",
-          "开发工具",
-          "AI/机器学习"
-        ],
-        "suitable": [
-          "具身智能与强化学习研究者",
-          "机器人/嵌入式工程师",
-          "Hugging Face 生态开发者",
-          "教育者与 STEAM 教师",
-          "机器人爱好者与创客"
-        ],
-        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
-      }
-    },
-    {
       "id": "2070a09b-9598-440a-822b-8a8449732672",
       "dateAdded": "20261025",
       "type": "github-daily",
@@ -83845,8 +83845,8 @@
       "repo": "TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 113866,
-      "forks": 22057,
+      "stars": 113918,
+      "forks": 22062,
       "starsAdded": 309,
       "createdAt": "2026-10-25T11:00:02.088Z",
       "metaData": {
@@ -83957,8 +83957,8 @@
       "repo": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 20163,
-      "forks": 2907,
+      "stars": 20210,
+      "forks": 2910,
       "starsAdded": 179,
       "createdAt": "2026-10-25T11:00:02.113Z",
       "metaData": {
@@ -84018,8 +84018,8 @@
       "repo": "coollabsio/coolify",
       "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
       "language": "PHP",
-      "stars": 63804,
-      "forks": 5750,
+      "stars": 63837,
+      "forks": 5749,
       "starsAdded": 150,
       "createdAt": "2026-10-25T11:00:02.105Z",
       "metaData": {
@@ -84092,8 +84092,8 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 1111,
-      "forks": 81,
+      "stars": 1126,
+      "forks": 82,
       "starsAdded": 52,
       "createdAt": "2026-10-25T11:00:02.102Z",
       "metaData": {

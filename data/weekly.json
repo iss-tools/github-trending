@@ -20427,8 +20427,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 45567,
-      "forks": 2826,
+      "stars": 45805,
+      "forks": 2840,
       "starsAdded": 12680,
       "createdAt": "2026-10-24T13:00:03.787Z",
       "metaData": {
@@ -20672,8 +20672,8 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 105238,
-      "forks": 6648,
+      "stars": 105316,
+      "forks": 6653,
       "starsAdded": 9828,
       "createdAt": "2026-10-21T12:00:04.284Z",
       "metaData": {
@@ -20746,8 +20746,8 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 134667,
-      "forks": 12855,
+      "stars": 134722,
+      "forks": 12860,
       "starsAdded": 6868,
       "createdAt": "2026-10-24T13:00:03.820Z",
       "metaData": {
@@ -20820,8 +20820,8 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 221317,
-      "forks": 29618,
+      "stars": 221353,
+      "forks": 29624,
       "starsAdded": 6857,
       "createdAt": "2026-10-21T12:00:04.277Z",
       "metaData": {
@@ -20873,8 +20873,8 @@
       "repo": "heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 71723,
-      "forks": 6473,
+      "stars": 71789,
+      "forks": 6485,
       "starsAdded": 5633,
       "createdAt": "2026-10-18T16:00:04.029Z",
       "metaData": {
@@ -21004,8 +21004,8 @@
       "repo": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
-      "stars": 142761,
-      "forks": 16842,
+      "stars": 142786,
+      "forks": 16846,
       "starsAdded": 4648,
       "createdAt": "2026-10-22T11:00:04.475Z",
       "metaData": {
@@ -21120,8 +21120,8 @@
       "repo": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 13361,
-      "forks": 945,
+      "stars": 13390,
+      "forks": 946,
       "starsAdded": 3541,
       "createdAt": "2026-10-21T12:00:04.273Z",
       "metaData": {
@@ -21235,7 +21235,7 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 79127,
+      "stars": 79147,
       "forks": 9290,
       "starsAdded": 3241,
       "createdAt": "2026-10-19T11:00:03.904Z",
@@ -21308,8 +21308,8 @@
       "repo": "anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars": 44432,
-      "forks": 4659,
+      "stars": 44453,
+      "forks": 4658,
       "starsAdded": 3232,
       "createdAt": "2026-10-18T16:00:04.016Z",
       "metaData": {
@@ -21482,6 +21482,57 @@
       }
     },
     {
+      "id": "489f420a-fcf8-4866-be3d-b4a85979853d",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "stars": 223536,
+      "forks": 22390,
+      "starsAdded": 2981,
+      "createdAt": "2026-10-25T12:00:04.064Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "Cursor",
+          "代码规范",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
+        "ability": [
+          "纠正 AI 错误假设与沉默猜测",
+          "抑制过度设计与代码膨胀",
+          "实施精准的手术式代码修改",
+          "目标驱动的闭环验证机制"
+        ],
+        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code 或 Cursor 重度用户",
+          "追求高质量代码的开发者",
+          "技术团队负责人",
+          "需要规范 AI 输出的用户"
+        ],
+        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
+      }
+    },
+    {
       "id": "5f7d1ce2-4717-4ad6-9a92-ac6c400c8cbf",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21549,8 +21600,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 32774,
-      "forks": 3618,
+      "stars": 32810,
+      "forks": 3622,
       "starsAdded": 2631,
       "createdAt": "2026-10-24T13:00:03.811Z",
       "metaData": {
@@ -21732,6 +21783,59 @@
       }
     },
     {
+      "id": "a8b69dd4-bb31-4836-b885-91418708828d",
+      "dateAdded": "202643",
+      "type": "github-weekly",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 29936,
+      "forks": 8042,
+      "starsAdded": 1778,
+      "createdAt": "2026-10-25T12:00:04.082Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
       "id": "641e14e7-8dc3-4480-9e80-bfd7bddb4478",
       "dateAdded": "202643",
       "type": "github-weekly",
@@ -21766,8 +21870,8 @@
       "repo": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "language": "Python",
-      "stars": 95410,
-      "forks": 23918,
+      "stars": 95425,
+      "forks": 23924,
       "starsAdded": 1371,
       "createdAt": "2026-10-24T13:00:03.824Z",
       "metaData": {
@@ -21840,8 +21944,8 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 9644,
-      "forks": 623,
+      "stars": 9654,
+      "forks": 624,
       "starsAdded": 1317,
       "createdAt": "2026-10-20T11:00:04.731Z",
       "metaData": {
