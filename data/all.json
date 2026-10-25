@@ -1,6 +1,208 @@
 {
   "all": [
     {
+      "id": "b4d83fbb-49ea-4f17-a75b-af85986fedf8",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "domain": "github.com",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-25T11:13:04.581Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
+        ],
+        "cover": "",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
+        "ability": [
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
+        ],
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "SEO 营销"
+        ],
+        "suitable": [
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
+        ],
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
+      },
+      "type": "project",
+      "dateAdded": "20261025"
+    },
+    {
+      "id": "219f4611-cc6d-4750-8b7c-b1191ce55b7e",
+      "url": "https://github.com/coollabsio/coolify",
+      "domain": "github.com",
+      "repo": "coollabsio/coolify",
+      "description": "Coolify 是一个开源自托管 PaaS 平台，定位为 Vercel/Heroku/Railway 的平替，GitHub Star 超 60K。基于 Laravel + Docker + Traefik 构建，只需一条命令即可在 5 美元 VPS 上安装，通过图形界面完成 CI/CD、域名绑定、自动 HTTPS、数据库管理和 S3 备份。核心优势是成本极低（约 8 美元/月跑多个应用）且数据完全自主；不足是安全漏洞补丁频繁需及时更新、内存占用偏高（500MB+）、多服务器仅支持管理而非自动调度编排。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-25T11:07:54.273Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "coolify",
+          "databases",
+          "deployment",
+          "docker",
+          "docker-compose",
+          "inertiajs",
+          "laravel",
+          "mariadb",
+          "mysql",
+          "nextjs",
+          "nodejs",
+          "php",
+          "postgres",
+          "redis",
+          "self-hosted",
+          "self-hosting",
+          "server",
+          "static-site",
+          "svelte",
+          "svelte5"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://coolify.io",
+        "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers. - coollabsio/coolify"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "PaaS",
+          "自托管",
+          "Docker",
+          "自动部署"
+        ],
+        "cover": "",
+        "title": "Coolify 深度评测：60K Star 的开源自托管 PaaS，一台 VPS 拥有 Vercel 体验",
+        "ability": [
+          "一条命令安装：5 分钟在任意 VPS/树莓派上搭建图形化部署面板",
+          "Git 自动部署：push 即上线，支持 PR 预览环境、自动构建和一键回滚",
+          "300+ 一键服务模板：N8n、Supabase、WordPress 等自托管应用开箱即用",
+          "自动 HTTPS 与域名管理：内置 Traefik 反代，Let's Encrypt 证书自动签发",
+          "原生 MCP Server：可接入 Claude/Cursor 等 AI 助手执行部署和运维操作"
+        ],
+        "summary": "开源自托管 PaaS 平台，一条命令在 VPS 上搭建属于自己的 Vercel/Heroku 平替，代码数据完全自主可控。",
+        "category": [
+          "开发工具",
+          "云服务与自托管",
+          "DevOps 运维"
+        ],
+        "suitable": [
+          "独立开发者 / Indie Hacker",
+          "小团队 / 初创公司",
+          "自托管爱好者",
+          "接外包需多环境交付的 Agency",
+          "想学 DevOps 的新手"
+        ],
+        "description": "Coolify 是一个开源自托管 PaaS 平台，定位为 Vercel/Heroku/Railway 的平替，GitHub Star 超 60K。基于 Laravel + Docker + Traefik 构建，只需一条命令即可在 5 美元 VPS 上安装，通过图形界面完成 CI/CD、域名绑定、自动 HTTPS、数据库管理和 S3 备份。核心优势是成本极低（约 8 美元/月跑多个应用）且数据完全自主；不足是安全漏洞补丁频繁需及时更新、内存占用偏高（500MB+）、多服务器仅支持管理而非自动调度编排。"
+      },
+      "type": "project",
+      "dateAdded": "20261025"
+    },
+    {
+      "id": "9b6351c9-b544-4407-b870-a82859a86c4d",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "domain": "github.com",
+      "repo": "JetBrains/thinkrail",
+      "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-25T11:04:35.099Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://thinkrail.ai/",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "AI IDE",
+          "多智能体",
+          "Git Worktree",
+          "开源"
+        ],
+        "cover": "",
+        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
+        "ability": [
+          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
+          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
+          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
+          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
+          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
+        ],
+        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "需要同时跑多个 AI Agent 干活的重度开发者",
+          "长期维护大型代码仓库的工程师",
+          "注重隐私、想自托管或内网使用的用户",
+          "想研究 AI IDE 架构的技术爱好者",
+          "已有的 pi 生态用户"
+        ],
+        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261025"
+    },
+    {
       "id": "47e0e088-1b25-45b1-8b9f-d9e714a9ed2f",
       "url": "https://github.com/makecindy/cindy",
       "domain": "github.com",
@@ -20497,8 +20699,8 @@
       "forks": 0,
       "createdAt": "2026-08-25T20:03:06.293Z",
       "metaData": {
-        "forks": "20464",
-        "stars": "107137",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent",
           "finance",
