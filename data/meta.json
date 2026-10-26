@@ -2,39 +2,39 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 572
+      "count": 574
     },
     {
       "tag": "开源项目",
-      "count": 393
+      "count": 400
     },
     {
       "tag": "AI Agent",
-      "count": 320
+      "count": 325
     },
     {
       "tag": "自动化",
-      "count": 309
+      "count": 312
     },
     {
       "tag": "GitHub",
-      "count": 273
+      "count": 274
     },
     {
       "tag": "Claude",
-      "count": 180
+      "count": 181
     },
     {
       "tag": "Claude Code",
-      "count": 171
+      "count": 175
     },
     {
       "tag": "MCP",
-      "count": 147
+      "count": 148
     },
     {
       "tag": "自托管",
-      "count": 104
+      "count": 105
     },
     {
       "tag": "本地部署",
@@ -58,11 +58,15 @@
     },
     {
       "tag": "Agent",
-      "count": 74
+      "count": 75
     },
     {
       "tag": "Anthropic",
       "count": 72
+    },
+    {
+      "tag": "AI",
+      "count": 69
     },
     {
       "tag": "开源工具",
@@ -73,34 +77,30 @@
       "count": 67
     },
     {
-      "tag": "AI",
-      "count": 67
-    },
-    {
       "tag": "Cursor",
-      "count": 65
+      "count": 66
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1542
+      "count": 1551
     },
     {
       "name": "AI 编程",
-      "count": 1005
+      "count": 1012
     },
     {
       "name": "开源项目",
-      "count": 372
+      "count": 373
     },
     {
       "name": "效率工具",
-      "count": 363
+      "count": 367
     },
     {
       "name": "开发者工具",
-      "count": 93
+      "count": 94
     },
     {
       "name": "生活效率",
@@ -116,7 +116,7 @@
     },
     {
       "name": "AI 应用",
-      "count": 56
+      "count": 57
     },
     {
       "name": "生产力工具",
@@ -148,7 +148,7 @@
     },
     {
       "name": "效率提升",
-      "count": 36
+      "count": 37
     },
     {
       "name": "视频工具",
@@ -174,15 +174,15 @@
     },
     {
       "name": "开源项目维护者",
-      "count": 79
+      "count": 80
     },
     {
       "name": "AI 应用开发者",
-      "count": 67
+      "count": 68
     },
     {
       "name": "开发者与极客",
-      "count": 58
+      "count": 59
     },
     {
       "name": "开发者",
@@ -190,7 +190,7 @@
     },
     {
       "name": "技术团队负责人",
-      "count": 55
+      "count": 56
     },
     {
       "name": "内容创作者",
@@ -213,11 +213,11 @@
       "count": 44
     },
     {
-      "name": "DevOps 工程师",
-      "count": 43
+      "name": "AI 工具重度用户",
+      "count": 44
     },
     {
-      "name": "AI 工具重度用户",
+      "name": "DevOps 工程师",
       "count": 43
     },
     {
@@ -248,35 +248,35 @@
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 394
+      "count": 400
     },
     {
       "name": "ai",
-      "count": 336
+      "count": 337
     },
     {
       "name": "ai-agents",
-      "count": 314
+      "count": 317
     },
     {
       "name": "llm",
-      "count": 288
+      "count": 290
     },
     {
       "name": "mcp",
-      "count": 262
+      "count": 266
     },
     {
       "name": "claude",
-      "count": 234
+      "count": 236
     },
     {
       "name": "codex",
-      "count": 218
+      "count": 221
     },
     {
       "name": "agent-skills",
-      "count": 210
+      "count": 213
     },
     {
       "name": "skills",
@@ -284,15 +284,15 @@
     },
     {
       "name": "python",
-      "count": 154
+      "count": 155
     },
     {
       "name": "developer-tools",
-      "count": 147
+      "count": 148
     },
     {
       "name": "typescript",
-      "count": 144
+      "count": 146
     },
     {
       "name": "agents",
@@ -300,27 +300,27 @@
     },
     {
       "name": "anthropic",
-      "count": 110
+      "count": 112
     },
     {
       "name": "agent",
-      "count": 106
+      "count": 107
     },
     {
       "name": "claude-skills",
-      "count": 96
+      "count": 98
     },
     {
       "name": "dsh-plugin",
       "count": 91
     },
     {
-      "name": "ai-agent",
-      "count": 86
+      "name": "cursor",
+      "count": 88
     },
     {
-      "name": "cursor",
-      "count": 85
+      "name": "ai-agent",
+      "count": 87
     },
     {
       "name": "openai",
@@ -330,15 +330,15 @@
   "topLanguages": [
     {
       "name": "Python",
-      "count": 632
+      "count": 637
     },
     {
       "name": "TypeScript",
-      "count": 472
+      "count": 474
     },
     {
       "name": "JavaScript",
-      "count": 235
+      "count": 236
     },
     {
       "name": "Rust",
@@ -358,7 +358,7 @@
     },
     {
       "name": "HTML",
-      "count": 39
+      "count": 40
     },
     {
       "name": "C",
@@ -449,8 +449,8 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 289048,
-      "appearances": 25
+      "stars": 289194,
+      "appearances": 26
     },
     {
       "repo": "NousResearch/hermes-agent",
@@ -461,13 +461,13 @@
     {
       "repo": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 224028,
-      "appearances": 6
+      "stars": 224108,
+      "appearances": 7
     },
     {
       "repo": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 221673,
+      "stars": 221728,
       "appearances": 9
     }
   ],
@@ -475,19 +475,19 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 289048,
-      "appearances": 25
+      "stars": 289194,
+      "appearances": 26
     },
     {
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "stars": 87517,
+      "stars": 87824,
       "appearances": 23
     },
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 174247,
+      "stars": 176566,
       "appearances": 22
     },
     {
@@ -517,19 +517,19 @@
     {
       "repo": "mksglu/context-mode",
       "url": "https://github.com/mksglu/context-mode",
-      "stars": 32310,
+      "stars": 32350,
       "appearances": 16
     },
     {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 73942,
+      "stars": 74054,
       "appearances": 15
     },
     {
       "repo": "cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "stars": 47478,
+      "stars": 47750,
       "appearances": 15
     }
   ]

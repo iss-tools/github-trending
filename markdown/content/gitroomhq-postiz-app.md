@@ -1,0 +1,307 @@
+# gitroomhq/postiz-app
+
+[GitHub URL](https://github.com/gitroomhq/postiz-app)
+
+
+## Postiz 深度评测：37k Star 的开源社媒调度神器，AI Agent 时代的发布中枢
+
+> 开源免费的社媒定时发布平台，一张日历管理30+平台，还能让AI Agent帮你自动发帖
+
+- **Tags**: 开源项目, 社媒运营, 自托管, MCP, AI Agent
+- **Category**: 开发工具, 效率工具, AI 应用
+
+## Details
+
+# Postiz 深度评测：把"社媒调度器"重新发明一遍的开源黑马，AI Agent 时代的最大赢家
+**Postiz 是目前最值得关注的开源社媒调度平台——它不只填上了 Buffer/Hootsuite 在开源侧的空白，更用 MCP + Agent 原生架构把"发帖"这件事从按钮点击升级成了一句自然语言指令。**如果你正在被 5 个以上社媒账号折磨、被商业工具按频道计费的价格刺客刺痛，或者想把社媒发布接进自己的 AI Agent 工作流，这个 37k+ star 的项目几乎是为你这批人量身打造的。
+下面是这份评测的结构地图：项目档案 → 诞生背景 → 核心亮点 → 技术架构 → 部署实操 → 社区生命力 → SaaS 商业模式 → 三类用户收益 → 竞品对比 → 真实局限 → 终极判断。
+---
+## 一、项目档案速查表
+| 维度 | 信息 |
+|---|---|
+| 项目定位 | 开源、自托管的社媒调度与 AI Agent 发布平台 |
+| GitHub 地址 | `gitroomhq/postiz-app` |
+| Star 数（2026.10） | 约 37k |
+| 月下载量 | 700 万+，每月 2 万次仓库访问 |
+| 创始人 | Nevo David（Gitroom 创始人，前 Novu 增长负责人） |
+| 首次发布 | 2024 年 9 月 1 日 |
+| 协议 | AGPL-3.0（早期为 Apache-2.0，后切换） |
+| 覆盖平台 | 30+（X、LinkedIn、Instagram、TikTok、YouTube、Threads、Bluesky、Mastodon、Reddit、Pinterest、Discord、Telegram、Slack、WordPress、Dev.to 等） |
+| 技术栈 | Pnpm Monorepo + Next.js + NestJS + Prisma + PostgreSQL + Redis + Temporal + Resend |
+| SaaS 定价 | $29 / $39 / $49 / $99 每月，按频道数分档 |
+| 商业数据 | MRR 已突破 $17k |
+| 部署方式 | Docker Compose / Coolify / Railway / 任意 VPS |
+一句话概括它的处境：**在 Buffer 按频道收费、Hootsuite 企业级溢价的格局下，Postiz 用"代码开源 + SaaS 托管"的双轨模式重新做了一遍同一个产品，并加了一层其他家都没有的 Agent 原生能力。**
+---
+## 二、诞生背景：一个被验证过的开源增长老手，挑中了一片空白
+理解 Postiz，要先看懂它的创始人 Nevo David 的履历——这不是一个新人试水，而是一次开源增长方法论的复用。
+Nevo 此前在开源通知基础设施项目 **Novu** 负责增长，帮它两年内冲到 31k star；之后创办了 Gitroom，专门教开源项目做增长。2024 年 9 月 1 日他正式启动 Postiz，理由相当清醒：**社媒调度工具这个品类已经存在近 20 年，市场上却几乎没有像样的开源替代品**——这正是开源项目的经典机会窗口。
+产品上线后的运营路径教科书级别：
+- **Product Hunt 三杀**：拿到 Product of the Day / Week / Month，单次投票超 2000 人。
+- **三个月从 3k 涨到 14k star**：靠的是付费 KOL 转发、Slack 社群精准投放和 viral 视频，方法论在 Gitroom 博客里完整复盘过。
+- **MRR 破 $17k**：在 2026 年已被多家媒体报道为开源 SaaS 的标杆案例。
+- **协议从 Apache-2.0 切到 AGPL-3.0**：这是个大动作，意味着任何修改过 Postiz 的衍生服务也必须开源，防止有人拿它直接套壳卖钱。
+**真正让 Postiz 区别于所有前辈的，是它在 2025–2026 年押对了"AI Agent"这个风口**。当所有竞品还在把 AI 当成"文案润色按钮"时，Postiz 直接把产品改名为"the ultimate **agentic** social media scheduling tool"，把 MCP Server、CLI Skill、公共 API 做成所有套餐的标配，让 Claude、ChatGPT、Cursor、Codex 等 20 个 AI Agent 直接接管排期和发布。
+---
+## 三、核心亮点：四个真正的护城河
+### 亮点 1：MCP Server + 20 个 Agent 集成——把发布变成一句话
+这是 Postiz 最锋利的一把刀，也是它和 Buffer、Hootsuite 拉开身位的地方。
+理解它的价值，先得理解 MCP（Model Context Protocol）——你可以把它想象成 **AI 世界的 USB-C 接口**：以前每个工具都要为每个 AI 写一套插件，现在只要实现一次 MCP 协议，所有支持 MCP 的 AI 都能即插即用。
+Postiz 做的事情是：把"列出频道""发布帖子""查询排期""读分析数据""生成配图""剪辑视频"全部封装成 MCP 工具，托管在 `https://mcp.postiz.com/mcp-oauth-dynamic` 这个端点上，**用 OAuth 登录就行，连 API key 都不用管**。
+真实操作流程长这样：
+```
+1. 在 Claude Code 里跑一行命令：
+   claude mcp add --transport http postiz https://mcp.postiz.com/mcp-oauth-dynamic
+2. 浏览器跳出来 → 用 Postiz 账号 OAuth 登录 → 完成绑定
+3. 之后你就可以用自然语言发布：
+   "把这周的内容排到 X 和 LinkedIn，明天早 9 点发，
+    各平台文案帮我改一版，配图用 AI 生成"
+```
+官方支持的 Agent 包括 Claude（含 Claude Code、Claude Cowork）、ChatGPT、Cursor、Codex、Grok、Gemini、DeepSeek、Kimi、Manus、Perplexity Computer 等整整 20 个，每个都有专属接入指南。这种覆盖广度在目前所有 SaaS 里都是少见的。
+更狠的是**自托管版也能玩 MCP**：最新 v2.25.0 加入了"Self-hosted MCP Connector"，云端的 Claude Connector 可以通过 API key 反向代理到你自己的实例，**自托管用户也能享受官方 Claude 目录连接器**的便利。
+### 亮点 2：30+ 平台一张日历 + 分平台变体
+这是"老本行"，但 Postiz 做得足够细。
+**一张日历管所有频道**：从主流的 X、LinkedIn、Instagram、TikTok、YouTube、Threads，到去中心化阵营的 Bluesky、Mastodon、Nostr、Warpcast、Lemmy，再到技术社区的 Dev.to、Hashnode、Medium、WordPress，甚至 VK、Dribbble、Skool、Kick、Whop 这种长尾平台都在列。
+**真正解决痛点的是"每平台独立变体"**：你写一条主文案，系统会按 LinkedIn/X/Threads 的字数限制和媒体规格分别生成预览，**hashtag、@提及、配图都能分平台定制**，不再是"一刀切地群发同一条"。
+写代码的人会对这个机制特别熟悉——Postiz 把"一条内容 × N 个平台"建模成了"父 post + 子 variant"，每个 provider 是一个独立的适配层。这个设计直接让"在 X 上发短版、在 LinkedIn 上发长文、在 IG 上发图文"变成一次操作。
+### 亮点 3：完整的内容生产线，不只是"定时发帖"
+Postiz 把"写—改—排—发—看"整条链路都收进了产品里：
+- **AI Copilot 写文案** + **AI 生成图片** + **AI 生成短视频** + **AI 长视频切片 Shorts**，自托管版用自己的 OpenAI/Anthropic key 即可解锁，没有套餐配额限制。
+- **常青内容循环**（Evergreen Recycling）：爆款可以设定周期自动重发，让日历不至于断更。
+- **RSS 自动发帖**：博客一更新就自动分发到社媒，配合 Webhook 能搭出"写作 → 发布 → 推送"的无人值守流水线。
+- **团队协作 + 审批流**：Admin/Member 角色区分，让"写稿的人"和"批准的人"分开，Agency 多客户场景是刚需。
+- **每频道 / 每帖分析**：曝光、互动率、触达都有，够判断哪天哪类内容有效，虽不及 Sprout Social 的企业级分析但完全够用。
+### 亮点 4：面向开发者的"全通道"输出
+Postiz 不只服务鼠标党，它给程序员准备了完整的输出接口：
+- **公共 REST API + Webhook**：从脚本里 `POST` 一条排期、用 `GET` 拉一份状态面板都没问题。
+- **NodeJS SDK**：npm 一装就能用。
+- **n8n 自定义节点 + Make.com + Zapier 集成**：把 Postiz 拼进任何自动化工作流都行。
+- **Postiz Agents CLI**：`npx skills add gitroomhq/postiz-agent` 一条命令，让任何能跑 shell 的 Agent 都能用。
+---
+## 四、技术栈与架构：现代 TypeScript 全家桶 + 一个被低估的关键依赖
+Postiz 的架构在开源 SaaS 里算是教科书级别：
+| 层 | 技术 | 角色 |
+|---|---|---|
+| Monorepo | Pnpm Workspaces | 前后端 + 共享类型统一管理 |
+| 前端 | Next.js (React) | 日历、Composer、看板 |
+| 后端 | NestJS | 业务逻辑 + 嵌入 Temporal Worker |
+| ORM | Prisma | 默认 PostgreSQL |
+| 任务调度 | **Temporal** | 长事务、重试、补偿 |
+| 队列/缓存 | Redis | 短队列 + Session |
+| 邮件 | Resend | 通知 |
+值得专门讲一下 **Temporal 这个选择**——大部分同类项目用 BullMQ 或简单的 cron 就完事了，Postiz 从 v2.12.0 起切换到 Temporal，是个有得有失的决定。
+**好处是**：社媒发布天然是"长事务 + 跨天重试"场景，比如一条 TikTok 视频可能要等容器处理 5 分钟再二次提交，Temporal 的工作流引擎能保证失败自动重试且状态可追溯，这在 hot patch 时代比裸 cron 靠谱得多。
+**代价是**：Temporal 自身要 PostgreSQL + Elasticsearch，**整个部署栈从"一个 Docker 容器"膨胀成"7-8 个容器"**，对新手极不友好。这是后面部署章节重点要讲的坑。
+**OAuth 适配层架构**也很优雅：每个平台是一个独立的 provider 模块，统一处理 OAuth 授权、token 刷新、API 调用、错误码映射。最新版本的 changelog 里有大量"把 X 的 4xx 错误映射成可读消息"的提交，说明团队在持续打磨这个"用户最容易卡壳的环节"。
+**代码组织**上，monorepo 拆分清晰：`apps/`（前端、后端）、`libraries/`（共享类型、工具）、`apps/providers/`（每个社媒平台一个独立模块），加一个新的社媒平台只需要新增一个 provider 文件夹，对二次开发者相当友好。
+---
+## 五、上手门槛与部署体验：一行命令 vs 一份运维清单
+### 5.1 理论上的极简启动
+官方提供了 docker-compose 仓库，**理论上一行命令启动**：
+```bash
+git clone https://github.com/gitroomhq/postiz-docker-compose
+cd postiz-docker-compose
+docker compose up -d
+```
+核心 `docker-compose.yaml` 长这样（精简版）：
+```yaml
+services:
+  postiz:
+    image: ghcr.io/gitroomhq/postiz-app:latest
+    restart: always
+    ports:
+      - "4007:5000"
+    environment:
+      MAIN_URL: 'http://localhost:4007'
+      FRONTEND_URL: 'http://localhost:4007'
+      NEXT_PUBLIC_BACKEND_URL: 'http://localhost:4007/api'
+      JWT_SECRET: '改成你自己的随机字符串'
+      DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local'
+      REDIS_URL: 'redis://postiz-redis:6379'
+      TEMPORAL_ADDRESS: "temporal:7233"
+      STORAGE_PROVIDER: 'local'
+      UPLOAD_DIRECTORY: '/uploads'
+    depends_on:
+      postiz-postgres: { condition: service_healthy }
+      postiz-redis: { condition: service_healthy }
+      temporal: { condition: service_healthy }
+  postiz-postgres:
+    image: postgres:17
+    # ...
+  postiz-redis:
+    image: redis:7
+    # ...
+  temporal:
+    image: temporalio/auto-setup
+    # ...
+```
+启动后访问 `http://localhost:4007` 即可。
+### 5.2 真实的部署成本——这是你必须看清的另一面
+**理论一行命令，实际有四个真实的坑**，这是 Postiz 在 Reddit/Discord 出现频率最高的"劝退点"：
+#### 坑 1：Temporal 启动竞态 → 502 Bad Gateway
+这是社区反馈最多的 fresh install 失败原因。NestJS 后端启动时会**立刻**尝试连接 Temporal（`temporal:7233`），如果 Temporal 容器还没就绪，后端直接退出。**解决方法**是后端容器加 `restart: always` + `depends_on: temporal: condition: service_healthy`，让 Docker 自动重试。
+#### 坑 2：OAuth 分离域名 → "Invalid state"
+如果 `FRONTEND_URL` 和 `NEXT_PUBLIC_BACKEND_URL` 不在同一个父域名下（比如 `app.example.com` 和 `api.example.com`），浏览器会把后端 cookie 当第三方 cookie 处理，**所有社交平台连接都会报"Invalid state"**。官方解法是：**用同一个反代、同一个父域名**。
+#### 坑 3：JWT_SECRET 一次定终身
+`JWT_SECRET` 一旦轮换，**所有用户会话立即失效**。必须一开始就写进 secret manager（Docker/K8s secret、AWS Secret Manager、Doppler、1Password），**绝不能提交到 Git 仓库**。
+#### 坑 4：内存炸裂的 `pnpm install`
+Postiz 的 monorepo 足够大，**2 GB 的小 VM 在构建时会 OOM**。解法：
+```bash
+NODE_OPTIONS="--max-old-space-size=4096" pnpm install
+# 或干脆不在小机器上构建，用预构建镜像
+```
+**真正的硬件底线**：
+| 场景 | CPU | RAM | 磁盘 |
+|---|---|---|---|
+| 单人轻用 | 2 vCPU | 2 GB | 20 GB |
+| 20 人小团队（推荐） | 4 vCPU | **8 GB** | 50 GB + 媒体卷 |
+### 5.3 比 Docker 更难的：OAuth App 审批
+这是 Postiz 文档承认的"自托管劝退第一名"。
+每个社媒平台你都得**自己去开发者后台申请一个 OAuth App**，并且审核速度天差地别：
+| 平台 | 难度 | 真实情况 |
+|---|---|---|
+| Mastodon / Bluesky | 🟢 5 分钟 | 自己后台拿 token 即可 |
+| YouTube | 🟡 中 | **Google OAuth App 在"Testing"状态下 refresh token 7 天过期**，必须在 Auth Platform 把 Publishing status 改为 "In production" |
+| LinkedIn 公司页 | 🟠 慢 | 需要 App Review，数天到数周 |
+| Instagram | 🔴 难 | 必须是 Business/Creator 账号 + 关联 FB Page + Meta App Review，审核数周 |
+| Facebook Page | 🔴 难 | 要 Pages 权限 + 可能触发 Meta 商业验证（上传公司文档） |
+| TikTok | 🔴 难 | Content Posting API scope 要过审计，未通过前只能 sandbox 模式发给自己 |
+**结论**：Mastodon/Bluesky/YouTube 这类"开放"平台，Postiz 自托管 5 分钟搞定；**Instagram/Facebook/TikTok 这类大平台，是"账号类型 + 商业验证 + App Review"的三重关卡，跟 Postiz 无关但完全躲不开**。
+### 5.4 缓解方式：一页式部署
+如果实在不想自己折腾，**Coolify、Railway、Hostinger VPS** 都提供了一键模板，由 host 帮你处理 Temporal 栈和 SSL。Cloud 版则完全托管，但要回到按频道订阅的定价模式。
+---
+## 六、社区活跃度与生命力：热度、节奏与更新质量
+Postiz 的社区数据是开源 SaaS 里的第一梯队：
+| 指标 | 数据 |
+|---|---|
+| GitHub Star | 37.1k |
+| 开放 Issue | 135 个 |
+| 发布频率 | 最近 v2.25.0 → v2.25.1，**每周都有重要功能** |
+| 创始人响应 | 在 DEV.to 评论区亲自回复每一条 |
+| 安全响应 | 近期 PSA-2026-4QX1WG、PSA-2026-WWFR8X、PSA-2026-Q3TCPK 等漏洞**第一时间发布修复版本并强制推荐升级** |
+从最近 changelog 看得到的东西，比 star 数更有说服力：
+- **真实功能在持续加**：预览评论（含匿名评论 + reCAPTCHA）、自托管 MCP Connector、整站响应式布局、频道重命名、RTL 自动排版。
+- **Provider 修复铺得极广**：Instagram 容器错误、Facebook Graph API 5 个 subcode、X 的 rate limit 重试、Threads 容器未就绪重试、Pinterest 数字 board id 校验、Reddit RATELIMIT 重试、Telegram 400 错误、Nostr 私钥 hex 转换、VK API 错误透传、Lemmy 社区搜索……**几乎每个平台都在持续打磨**。
+- **可靠性工程**：媒体读卡死不再阻塞发布、上传失败不吞整批、Stripe 重复订阅守卫、Sentry SDK 锁版本拿修复。
+- **对 MCP 的持续投入**：schedule-post 工具返回 `previewUrl`、`GET /public/v1/me` 新端点、媒体上传和列表 API 对齐、Canva App Origin 支持。
+唯一要提醒的：**活跃度集中于 Nevo David + giladresisi + egelhaus 等少数核心贡献者**，bus factor 不算高。不过 AGPL-3.0 协议保证了就算团队出问题，社区也可以 fork 接管。
+---
+## 七、商业模式：用"开源获客 + SaaS 变现"的两条腿走路
+Postiz 是典型的 **open-core** 模式，但有几个值得点出的细节：
+### 7.1 云端订阅定价（2026 年 10 月）
+| 套餐 | 月价 | 频道数 | 团队 | AI 配额 |
+|---|---|---|---|---|
+| Standard | $29 | 5 | 单人 | AI Copilot + 3 AI 视频 |
+| Team | $39 | 10 | 无限成员 | +100 AI 图/月 + 10 AI 视频/月 |
+| Pro | $49 | 30 | 无限 | +300 AI 图 + 更多剪辑分钟 |
+| Ultimate | $99 | 100 | 无限 | +500 AI 图 + 顶配剪辑 |
+所有套餐都**无限发帖**、都包含 **MCP + CLI + API**。7 天免费试用，**没有永久免费档**（这是和 Buffer 的显著差异）。
+### 7.2 开源版给到了什么
+关键的一句话在 README 里：**"We do not 'gate' features or limit the license"**。
+自托管版和云端的核心功能**几乎一比一对齐**——频道无限、帖子无限、团队成员无限、AI 配额改成 BYOK（自带 OpenAI/Anthropic key，无配额）、MCP/CLI/Canva App 都有。**真正差的是基础设施、OAuth 预审批、优先客服**这三件事，全部都是"运维成本"而非"产品功能"。
+这种"不阉割开源版"的策略让 Postiz 在开源社区声誉很好，也是它 star 增长和 MRR 增长能并行的根本原因——**用户信任开源版的诚意，才愿意为托管服务付费**。
+### 7.3 值得算的一笔账
+以 10 频道场景为例：
+- **Buffer Team**：$10/频道 × 10 = **$100/月**
+- **Postiz Cloud Team**：**$39/月**（10 频道）
+- **Postiz 自托管**：VPS + 域名 + 备份 ≈ **$15–65/月**，但要自己当 ops
+**当频道数超过 5–8 个，Postiz 的成本优势开始压倒性**。这也是为什么 Agency 是它最重要的目标用户。
+---
+## 八、目标人群与收益：三类人，三种打开方式
+### 👤 画像一：自媒体创作者 / 个人 KOL
+**痛点**：同时在 X、LinkedIn、Instagram、TikTok、小红书（手动）、Threads 上运营，每天在 6 个后台之间复制粘贴改格式，1–2 小时被机械操作吃掉。
+**Postiz 能给到的**：
+- **一张日历管 5+ 平台**，省下每天 1–2 小时。
+- **分平台变体**让"X 上发短版、LinkedIn 上发长文"变成一次动作。
+- **AI Copilot 写文案 + AI 配图**，让一个人也能跑出团队产能。
+- **常青内容循环**让假期也能保持更新。
+- **Cloud $29/月**（5 频道）即可上车，**不用碰 Docker**。
+**最佳选择**：**Cloud Standard**（$29/月）或 **Cloud Team**（$39/月，需要 10 频道 + AI 图）。
+### 👨‍💻 画像二：程序员 / 独立开发者 / 开源项目作者
+**痛点**：维护开源项目、写技术博客，需要把"代码发布 → 推特公告 → LinkedIn 长文 → Dev.to/Hashnode 文章"串成自动化。
+**Postiz 能给到的**：
+- **MCP 接入 Claude Code/Cursor**，让 Agent 直接发版本公告。
+- **公共 API + n8n 节点**，把"GitHub tag → 博客 → 社媒"做成全自动工作流。
+- **自托管**让 token 和草稿都在自己服务器，不担心第三方平台限制。
+- **TypeScript 代码完全可读**，二开加自定义平台只需新建一个 provider。
+- **AGPL-3.0** 允许商用和修改，只需保持开源。
+**最佳选择**：**自托管**（一台 $10–20/月的 VPS 即可）。
+### 🏢 画像三：中小营销团队 / Agency
+**痛点**：管 10+ 客户、50+ 频道，Buffer 按频道计费天价，又怕 Hootsuite 买不起；客户数据不敢放第三方云。
+**Postiz 能给到的**：
+- **自托管版无频道上限**，50 个频道也只付一台服务器钱。
+- **RBAC 角色 + 审批流**，让写稿和批准分离。
+- **数据驻留可控**，可部署在任意 region，甚至 air-gapped 环境。
+- **预览评论 + 匿名评论**让客户能直接在预览上标注意见，不用登录 Postiz。
+**最佳选择**：**自托管**（一台 8 GB VPS）或 **Cloud Pro/Ultimate**（$49–99/月，懒得运维）。
+---
+## 九、竞品对比：Postiz 在开源和商业阵营里到底是什么位置
+| 维度 | **Postiz** | **Buffer** | **Hootsuite** | **Mixpost** |
+|---|---|---|---|---|
+| 模式 | 开源自托管 + SaaS | 纯 SaaS | 纯 SaaS | 开源自托管 + 付费 Pro |
+| 协议 | AGPL-3.0 | 闭源 | 闭源 | 自定义开源协议 |
+| 起步价 | **$29/月**（5 频道） | $6/频道（Essentials） | Standard $99/人/月 | 一次性买断 Pro |
+| 10 频道月费 | $39（Team） | **~$60** | $99+ | Pro 一次性 |
+| 30 频道月费 | $49（Pro） | ~$120–180 | $399+ | 一次性 |
+| 频道覆盖 | **30+** | ~10 | ~13 | ~10 |
+| 团队成员 | 自托管无限 | 按频道 | 按人 | 一次性无限 |
+| MCP / Agent 原生 | ✅ **业界最完整** | ❌ | ❌ | ❌ |
+| 公共 API | ✅ | ✅（限流） | ✅ | ✅ |
+| AI 能力 | ✅ 文案 + 图 + 视频 + 切片 | AI Assistant（无限） | 有限 | 无 |
+| 永久免费档 | ❌（仅自托管免费） | ✅ 3 频道 | ❌ | 部分免费 |
+| 数据主权 | ✅ 自托管完全自控 | ❌ | ❌ | ✅ |
+| 上手难度 | 🔴 自托管难 / 🟢 云端易 | 🟢 极易 | 🟢 易 | 🟡 中 |
+| 学习曲线 | 🟡 中（自托管）/ 🟢 低（云） | 🟢 低 | 🟡 中 | 🟡 中 |
+数据来源：Buffer 官方定价、Postiz 官方定价、Mixpost 对比文章。
+**结论提炼**：
+- **比覆盖广度和 Agent 能力，Postiz 是开源/商业阵营里的一档**，30+ 频道 + MCP Server 几乎没有对手。
+- **比价格**，10 频道以上场景下，Postiz 显著便宜于 Buffer 和 Hootsuite。
+- **比上手难度**，云端版和 Buffer 打平，自托管版有真实的运维成本。
+- **比 free tier**，Buffer 3 频道免费档更适合轻度用户，Postiz 不打这场仗。
+- **对比 Mixpost**：Postiz 在"频道覆盖 + 免费 + Agent"上占优，Mixpost 在"多级审批流 + 商用支持"上占优，团队审批重的场景 Mixpost 更合适。
+---
+## 十、局限与不足：你必须知道的 6 个真相
+评测如果不能直击缺点就是软文，下面这些是 Postiz 真实存在的问题：
+### 局限 1：自托管的"OAuth 地狱"
+这是 Postiz 文档自己承认的"最大劝退点"。每个平台都要自己去开发者后台申请 App、等审核、配回调，**Meta 系和 TikTok 可能要等数周**。对只想"开箱即用"的用户来说，这一步的痛苦程度经常被低估。
+### 局限 2：Temporal 让部署栈膨胀
+从 v2.12.0 起强制要求 Temporal，意味着 Postiz 从"一个容器"变成"Postgres + Redis + Temporal (含自身 Postgres + Elasticsearch) + Postiz 主服务"的多容器栈。**2 GB 小 VM 跑不动**，推荐配置直接拉到 8 GB。
+### 局限 3：**没有中国大陆平台支持**
+**微信公众号、小红书、抖音、知乎、B 站都不在 30+ 平台列表里**。原因很客观：这些平台不开放 API 给第三方排程工具。如果你的核心阵地是国内社媒，Postiz **不能**替代你的手动运营。**出海内容 + 国内内容需要双工具组合**（Postiz 管海外，国内手动或用其他工具）。
+### 局限 4：公共 API 是"有限 API"
+很多用户发现 API key 调不动某些路由。**Postiz 实际有两套 API**：
+- 公共 API（`/api/public/v1/*`）：API key 认证，但只有"创建、删除、查询、上传"这种 90% 场景。
+- 内部 API（`/api/*`）：UI 自己用的完整接口，要用 session token（auth cookie）。
+**两套系统的凭证不互通**，而且内部 API 的 session token 是**无过期时间的 JWT**——安全性上有争议，但对开发者反而方便。想用 API 实现"重排日期"这类操作，得抓 auth cookie 当永久 token 用，**不是优雅的官方支持**。
+### 局限 5：HTTPS 是硬要求
+生产环境**必须**配反代做 SSL 终结，Postiz 设置 secure cookies。对没玩过 Nginx/Caddy 的新手是额外一道坎。
+### 局限 6：平台 API 变更风险由你承担
+商业 SaaS 的好处是"平台改 API，厂商一晚上修复，用户无感"。自托管 Postiz 意味着**每次 Instagram/X/TikTok 改接口，你都要自己拉新版本镜像**。Postiz 的更新频率很高是好事，但**"高频升级"对生产环境也是一种运维负担**。
+### 一个细节上的权衡：AGPL-3.0 协议
+对个人和小团队没影响，**但如果你想把 Postiz 二次封装成自己的 SaaS 卖给客户，AGPL 要求你必须开源你的修改**。企业用户在合规审查时也要注意这个协议的传染性。
+---
+## 十一、结语与行动建议
+### 终极判断
+**Postiz 是 2026 年开源社媒赛道里最值得押注的项目**，没有之一。它做对了三件事：
+1. **找准了市场空白**：Buffer/Hootsuite 统治了 20 年，开源侧却一直没人做出对标产品。
+2. **做对了开源策略**：AGPL-3.0 + 不阉割开源版，换来了社区的真心实意。
+3. **押中了 Agent 风口**：MCP Server + 20 个 Agent 集成让它从"又一个 Buffer 替代品"跃迁到"Agent 时代的发布中枢"。
+它不是完美的：Temporal 让部署变重、OAuth 申请仍然痛苦、国内平台完全缺席、bus factor 集中在创始团队。但在"**5+ 频道、月费 <$100、需要 Agent 集成、看重数据主权**"这四个条件同时成立的场景下，Postiz 是当前性价比最高的选择。
+### 三条路径，按需选择
+**🚀 路径 A：懒人/小白**（不想碰 Docker、频道 ≤ 5）
+→ 直接注册 **Postiz Cloud Standard**（$29/月，7 天试用），5 分钟连接频道开干。
+**🔧 路径 B：开发者/独立 hacker**（有 VPS、想自己掌控）
+→ 走 **自托管** 路线：
+```bash
+git clone https://github.com/gitroomhq/postiz-docker-compose
+cd postiz-docker-compose && docker compose up -d
+# 记得改 JWT_SECRET、配 HTTPS 反代、准备好 OAuth App
+```
+**🤖 路径 C：AI Agent 重度用户**
+→ 无论云端还是自托管，**第一件事是把 MCP 链接加进 Claude/ChatGPT**：
+```
+claude mcp add --transport http postiz https://mcp.postiz.com/mcp-oauth-dynamic
+```
+然后把"每周排期 7 条内容"这种脏活交给 Agent，你只做最终审批。
+### 一句话总结
+**如果你在用一个以上社媒账号，且还没有把发布工作交给 Agent——Postiz 是目前最值得你花一个周末研究透彻的项目。**

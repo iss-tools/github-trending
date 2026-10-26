@@ -1,0 +1,65 @@
+{
+  "id": "c89a09af-6741-49c8-bea0-623f9226405e",
+  "url": "https://github.com/alchaincyf/huashu-design",
+  "domain": "github.com",
+  "repo": "alchaincyf/huashu-design",
+  "description": "huashu-design 是独立开发者花叔开源的 AI 设计 Skill（约 2.6 万 Star，MIT 协议），安装到 Claude Code、Cursor 等终端 Agent 后，用自然语言对话即可产出可点击原型、可编辑 PPTX、带配乐 MP4 动画和印刷级信息图，3-30 分钟交付，全程无需打开 Figma 或 After Effects，被誉为把真实设计工作室工作流翻译成 Agent 可执行协议的标杆项目。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-26T11:11:33.519Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "agent-skills",
+      "ai-design",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "cursor",
+      "design",
+      "html",
+      "pptx",
+      "prototype"
+    ],
+    "license": "MIT license",
+    "homepage": "",
+    "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent - alchaincyf/huashu-design"
+  },
+  "summaryData": {
+    "tags": [
+      "Claude Code",
+      "Agent Skill",
+      "AI 设计",
+      "开源项目",
+      "原型设计"
+    ],
+    "cover": "",
+    "title": "花叔 huashu-design 深度评测：让 AI 设计能直接交付的 2.6 万 Star 开源神器",
+    "ability": [
+      "一句话生成可点击的 App/Web 高保真原型（真 iPhone 机框、Playwright 自动验证）",
+      "导出真文本框可编辑的 PPTX 演示文稿，双击即可改字",
+      "生成带 BGM 和音效的 MP4/GIF 产品发布动画",
+      "品牌资产协议 + 三方向盲选 + 反 AI 味规则，杜绝紫渐变 emoji 风的 AI Slop 设计",
+      "五维专家评审出雷达图和可操作修复清单，越用越懂你的审美"
+    ],
+    "summary": "在 Claude Code 里说一句话，10-30 分钟拿到可点击原型、可编辑 PPT、带配乐动画等能直接交付的高保真设计，全程不用打开 Figma。",
+    "category": [
+      "AI 编程",
+      "设计工具",
+      "开发工具"
+    ],
+    "suitable": [
+      "独立开发者与创业者（快速做原型给投资人看）",
+      "Vibe Coder（需要设计力但非设计专业出身）",
+      "技术演讲者（做不像默认模板的幻灯片）",
+      "产品经理（多方向设计探索与交互 Demo）",
+      "内容创作者与自媒体（封面、信息图、发布动画）"
+    ],
+    "description": "huashu-design 是独立开发者花叔开源的 AI 设计 Skill（约 2.6 万 Star，MIT 协议），安装到 Claude Code、Cursor 等终端 Agent 后，用自然语言对话即可产出可点击原型、可编辑 PPTX、带配乐 MP4 动画和印刷级信息图，3-30 分钟交付，全程无需打开 Figma 或 After Effects，被誉为把真实设计工作室工作流翻译成 Agent 可执行协议的标杆项目。"
+  },
+  "contentDetail": "# 花叔 huashu-design 深度评测：把 AI 设计从「凑合能用」拉到「能直接交付」\n> **一句话总结**：huashu-design 是国内独立开发者花叔（alchaincyf）开源的一个 Agent Skill，让你在 Claude Code、Cursor、Codex 这类终端 Agent 里说一句话，3 到 30 分钟内拿到**能直接交付**的高保真设计——可点击的 App 原型、可编辑的 PPTX、带配乐的 MP4 发布动画、印刷级信息图，全程不用打开 Figma 或 After Effects。它不是\"又一个 AI 生图工具\"，而是把真实设计工作室的工作流（品牌资产协议、三方向盲选、五维评审、反 AI Slop 规则）翻译成了 Agent 可执行的协议，是目前 Skill 生态里**最完整、最克制、也最像\"真设计师\"的设计生产力工具**。\n---\n## 一、项目档案：先认识它，再谈它\n| 维度 | 信息 |\n| --- | --- |\n| 项目名 | huashu-design（花叔 Design） |\n| 作者 | 花叔（GitHub: alchaincyf，全网 ID AlchainHust） |\n| 当前版本 | 3.0 |\n| License | **MIT 协议**（2026-05-14 起从「个人免费、商用授权」改为完全开源） |\n| Star 数 | 约 **26,100**（截至 2026-10-25，单周新增 1,000+，月增 1,600+） |\n| 主语言 | HTML / CSS / JS（纯前端，无后端） |\n| 跨 Agent 支持 | Claude Code、Cursor、Codex、OpenClaw、Hermes、Kimi Code 等 |\n| 仓库地址 | https://github.com/alchaincyf/huashu-design |\n**作者花叔的背景非常关键**。他自我介绍是\"一个不会写代码的创造者\"——但正是这位\"不会写代码\"的独立开发者，做出了 App Store 付费榜第一的「小猫补光灯」、1.6 万 Star 的「女娲.skill」（蒸馏乔布斯/马斯克/张雪峰思维的项目）、9 本开源的橙皮书系列，以及这个 2.6 万 Star 的 huashu-design。他的团队据说只有 3 个人，构建了\"开源引流 → 内容变现 → 产品收费\"的清晰闭环。\n这个背景解释了 huashu-design 一切设计的出发原点：**作者本人就是\"没有设计背景、没有大厂资源、但需要高质量设计\"的那一类用户**。这不是设计师写给设计师的工具，而是一个\"外行闯入者\"写给所有外行的设计总监。\n---\n## 二、痛点定位：它到底在解决什么问题\n理解 huashu-design 的价值，需要先看清它面对的三个叠加痛点：\n### 1. AI 生成设计的「Slop 困境」\n任何用过 AI 做过设计的人都有这种感受：紫蓝渐变、emoji 当图标、圆角卡片加左侧 accent border、Inter 字体、SVG 画出来的人脸——**配色协调但信息层级混乱，排版整齐但没有品牌辨识度，动画流畅但完全不符合产品调性**。看起来像 AI 做的，但没法交付。\n### 2. 设计工具的高门槛与低灵活性\nFigma 学习成本高、After Effects 门槛更高；而 Claude Design（Anthropic 官方产品）虽然优秀，但**用量限制极其苛刻**——第三方实测显示，作者在 $200/月的最高档订阅下，实际工作不到一小时就撞上了周配额。\n### 3. 「vibe coder」对设计判断力的缺失\n设计是\"你不知道你不知道什么\"的领域。你可以让 AI 生成一百个 landing page，但**选哪个、改哪个、怎么让它看起来像专业团队做的**——这些判断需要设计知识。\nhuashu-design 的诞生路径本身就说明了它的针对性：Anthropic 发布 Claude Design 那天，花叔玩到凌晨四点，几天后发现自己再没点开过——**不是它不好，是他宁愿让 agent 在终端里干活，也不愿打开图形界面**。于是让 agent 拆解 Claude Design 本身（包括社区流传的系统提示词、品牌资产协议、组件机制），蒸馏成结构化 spec，再写成 skill 装进自己的 Claude Code。\n---\n## 三、核心机制拆解：为什么它不是「又一个 Prompt 堆砌」\n这个项目的价值，不在于 SKILL.md 那一个文件，而在于**它把\"设计大师的判断力\"编码成了 Agent 可执行的硬约束**。下面四个机制是它的灵魂。\n### 🎯 机制一：品牌资产协议（5 步硬流程 + 5-10-2-8 原则）\n这是 skill 里**最硬的一段规则**。涉及具体品牌（Stripe、Linear、自家公司等）时强制执行 5 步：\n| 步骤 | 动作 | 目的 |\n| --- | --- | --- |\n| 1 · 问 | 用户有 brand guidelines 吗？ | 尊重已有资源 |\n| 2 · 搜官方品牌页 | `<brand>.com/brand` · `brand.<brand>.com` | 抓权威色值 |\n| 3 · 下载资产 | SVG → 官网 HTML → 产品截图 | 三条兜底 |\n| 4 · grep 提取色值 | 抓所有 `#xxxxxx`，按频率排序，过滤黑白灰 | **绝不从记忆猜品牌色** |\n| 5 · 固化 spec | 写 `brand-spec.md` + CSS 变量 | 不固化就会忘 |\n**为什么这样做**：作者做过 A/B 测试（v1 vs v2，各跑 6 agent），加了这套流程的版本，**稳定性方差比 v1 低 5 倍**——做出来的东西每次都靠谱，不会今天好明天崩。这是 skill 真正的护城河。\n配套的「5-10-2-8」素材门槛（搜 5 轮、找 10 个、选 2 个、每个 8 分以上）本质是在保护设计底线：**宁缺毋滥，滥竽充数的素材比没有更糟**。\n### 🎯 机制二：三方向硬门控（3.0 的\"敢\"）\n3.0 的最重要架构变化：在**任何设计工作开始之前**，skill 必须先产出三版差异化方向——这套门控**100% 强制**，即使你提供了品牌名或风格参考也不豁免。\n3.0 的具体流程是：\n- **三套互补逻辑各出两个候选，共六个**：① 最佳设计师（预算无上限时最适合的设计师）② 现实参照（同媒介的获奖作品，`ref_board.py` 先截图亲眼看）③ 秒数轮盘（`date +%S` 取秒，在 84 种风格库里随机抽，打破 AI 总爱选\"安全极简\"的惯性）\n- **六张缩略图 → 挑三版做成真实视觉**让你看着选，另外三张作为备选一起给你\n- **绝不让你在没看到视觉时盲选风格**——摆出来就停\n**为什么这样做**：作者做了三轮改前改后盲选。第一轮强制每版套一个大隐喻，页面被做成道具，4 题只赢 1 题；第二轮为了躲 AI 默认外观加了一堆禁令，三版一起变得\"太规整，太无聊\"，2 题全输；第三轮改成**加选项、不加禁令**——多出候选、给看得见的样张、看真参考——同两道题都赢了。这种\"用数据否定自己\"的设计迭代，是开源项目里少见的专业态度。\n### 🎯 机制三：反 AI Slop 规则\n明确列出的视觉黑名单：\n- 紫渐变、emoji 图标、圆角+左 border accent\n- SVG 画人脸、Inter 做 display\n- 2026 年新一代模板装饰：每个标题上一行全大写小标签、「A · B · C」中点连接、按钮尾巴的「→」、标题只给一个词换色\n- 不编造数据、评价和 logo 墙\n**注意它克制的边界**：暖纸衬线、深底单点缀这类\"外观家族\"**不在禁令里**——盲选里被用户认可的几版，恰好就有这两类。真正要避免的是三版挤在同一个家族、每个项目都长一个样。这种\"禁令要少，候选要多\"的哲学，比大多数 AI 设计工具\"全禁止\"或\"全放飞\"的极端做法高明得多。\n### 🎯 机制四：越用越懂你（外观账本 + 设计体检）\n3.0 新增的本地记录系统：\n- **经验**（`learn.py`）：记下你说过的品味原话（\"太素了\"、\"A 的结构加 C 的颜色\"）和过去的教训\n- **外观账本**：每次交付记一笔\"长什么样\"（底色、色板、字体、版式骨架），下个项目主动避开——单个项目看都不错、放在一起却长得像，这种单调靠它管\n- **设计体检**（`design_lint.py`）：只量能核对的事实——图裂了、字小到读不了、对比度不够、控制台报错是红灯；全大写小标签是黄灯；三版是不是换皮、和最近的项目撞没撞，靠 `compare` 和 `ledger check` 来查\n**设计哲学很清晰**：\"好不好看归你判断，它不打分。\" 数据全部存在本机 `~/.huashu-design/`，不随 skill 分发，删掉文件夹就全部忘记。\n---\n## 四、能力矩阵：它到底能做什么\n| 能力 | 交付物 | 典型耗时 |\n| --- | --- | --- |\n| **交互原型**（App / Web） | 单文件 HTML · 真 iPhone 15 Pro bezel（灵动岛/状态栏/Home Indicator）· 可点击 · Playwright 自动验证 | 10–15 min |\n| **演讲幻灯片** | HTML deck（浏览器演讲）+ 可编辑 PPTX（真文本框，双击可改字） | 15–25 min |\n| **时间轴动画** | MP4（25fps / 60fps 插帧）+ GIF（palette 优化）+ BGM + SFX | 8–12 min |\n| **设计变体** | 3+ 并排对比 · Tweaks 实时调参 · 跨维度探索 | 10 min |\n| **信息图 / 可视化** | 印刷级排版 · 可导 PDF/PNG/SVG | 10 min |\n| **设计方向顾问** | 三套逻辑各出两个候选 → 六张缩略图挑三版真实视觉 | 10 min |\n| **5 维度专家评审** | 雷达图 + Keep/Fix/Quick Wins · 可操作修复清单 | 3 min |\n**几个值得强调的亮点**：\n- **HTML Slides → 可编辑 PPTX**：`html2pptx.js` 读 DOM 的 computedStyle 逐元素翻译成 PowerPoint 对象，导出的是**真文本框**，PPT 里双击即可编辑——这是绝大多数 AI PPT 工具做不到的\n- **Motion Design 引擎**：Stage + Sprite 时间片段模型 · `useTime` / `useSprite` / `interpolate` / `Easing` 四 API 覆盖所有动画需求\n- **Junior Designer 工作流**：不闷头做大招，先写 assumptions + placeholders + reasoning，尽早 show 给你，再迭代——\"理解错了早改比晚改便宜 100 倍\"\n- **核心原则 #0 · 事实验证先于假设**：涉及具体产品/版本时，强制 WebSearch 验证，禁止凭训练语料做断言\n---\n## 五、上手体验：从安装到出第一份稿\n### 安装（一行命令）\n```bash\nnpx skills add alchaincyf/huashu-design\n```\n**⚠️ 关键避坑**：装完先自检——这个 skill 不只是 SKILL.md 一个文件，`references/`、`assets/`、`scripts/`、`demos/` 四个子目录里有 **99 处被引用的配方、脚本、素材，缺一不可**。\n如果装完只有 SKILL.md，说明 `skills` CLI 版本太旧（≤1.5.15 有个只同步单文件的 bug，已在 1.5.19 修复）。修复方法：\n```bash\nnpm i -g skills@latest\n# 或者直接 git clone 兜底：\ngit clone https://github.com/alchaincyf/huashu-design.git ~/.claude/skills/huashu-design\n```\n### 触发方式（用户无需记 skill 名）\n作者的设计理念是**\"用户不该记 skill 名称，只该描述需求\"**。三种典型场景：\n**场景一：需求模糊（最常用）**\n```\n「做个好看的 SaaS landing page，推荐几个风格让我选」\n→ 自动进入设计顾问模式，出 6 候选 → 3 真实视觉给你挑\n```\n**场景二：有明确想法**\n```\n「做个 iOS 番茄钟原型，4 个核心屏幕要真能点击」\n「把这段逻辑做成 60 秒动画，导出 MP4 和 GIF」\n「做一份 AI 心理学的演讲 PPT」\n「给葛饰北斋的《富岳三十六景》做一个线上展览网站」\n```\n**场景三：做完了不满意**\n```\n「review 这个设计」\n→ 自动进入 5 维评审，给雷达图 + Keep/Fix/Quick Wins\n```\n### 真实案例对照\nREADME 里的所有案例都是 3.0 跑出来的，作者声明\"每道只给一句话需求，方向是 agent 自己挑的，作者没插手\"：\n- **网页 · 《富岳三十六景》线上展**：三版分别是 Rijksmuseum 官网式的暗场展厅、田中一光式的三角窗、民国书衣式的题签框。**设计体检报过一次撞车**：两版首屏都用了《神奈川冲浪里》，它就把暗场那版换成了《山下白雨》\n- **App · 鸣迹（观鸟记录）**：现实参照找的是拿了 2025 年苹果设计奖的 CapWords，`ref_board.py` 先把它截成参考板，agent 亲眼看过再动手\n- **App · 今晚吃啥（家常菜谱）**：秒数轮盘抽到吕敬人书籍设计，最后做成了一本菜谱——一道菜一页方子，切口旁边留旁注栏，朱砂只给「开做」这一方印。**外观账本看到最近 6 个交付里 5 个是无衬线标题，这一版挑了宋体**\n---\n## 六、竞品对比：它在哪个生态位\n### vs Claude Design（Anthropic 官方产品）\n这是最有意思的对比——**huashu-design 的哲学就是从 Claude Design 蒸馏而来**。作者大方承认：\"品牌资产协议的哲学是从 Claude Design 流传出来的提示词里偷师的。\"\n| 维度 | Claude Design | huashu-design |\n| --- | --- | --- |\n| 形态 | 网页产品（浏览器里用） | Skill（Claude Code 里用） |\n| 配额 | 订阅 quota（**极其紧**） | API 消耗 · 并行跑 agent 不受 quota 限 |\n| 交付物 | 画布内 + 可导 Figma | HTML / MP4 / GIF / 可编辑 PPTX / PDF |\n| 操作方式 | GUI（点、拖、改） | 对话（说话、等 agent 做完） |\n| 复杂动画 | 有限 | Stage + Sprite 时间轴 · 60fps 导出 |\n| 直接操控（点击/拖/评论） | ✅ 强项 | ❌ 只能文字 prompt |\n| 团队协作 | ✅ 支持 | ❌ 单人本地 |\n| 跨 agent | 专属 Claude.ai | 任意 skill 兼容 agent |\n**第三方实测数据**（Chase AI 主理人实测）：\n- 同样一小时工作量，Claude Design 烧掉 **15%** 周配额，huashu-design 只烧掉约 **1%** 的 Claude Code 配额\n- 从零做 landing page：两者质量几乎打平，Claude Design 的 editorial 风格略微更精致\n- 复用设计系统：Claude Design 3 分钟出高质量结果（强项），huashu-design 11 分钟、约 7 万 token，达到约 80% 质量\n- **第三方总结**：\"对个人创作者来说，Claude Design 成了在最高 stakes 的交付上才拿出来的精密工具。\"\n### vs 原生 Claude Code / Cursor 自带的 front-end-design skill\n原生 front-end-design skill 只是几段指导文字，而 huashu-design 包含 **20+ 深度 markdown 文件、组件库、可执行工具链（HTML-to-MP4、Playwright 验证）、84 种风格样张**。第三方评价：\"它在能力上是 clear step up\"。\n### vs Midjourney / DALL-E / GPT-image 等生图工具\n这些工具产出的是**像素图**——好看但改不了字、不能交互、不能导 PPTX。huashu-design 走的是**HTML 原生**路线：所有产物先是结构化 HTML，才能有\"可点击原型\"、\"可编辑 PPTX\"、\"矢量 PDF\"这些下游能力。**HTML 不是网页技术，而是通用设计媒介**——这是花叔对这个项目最核心的洞察。\n### vs Figma / After Effects / Canva\n这些是**人肉操作的 GUI 工具**，学习成本高但操控精细。huashu-design 不是要取代它们，而是**让\"打开图形工具\"这一步从大多数场景中消失**——你对着 agent 说话，它替你用 HTML 完成绝大多数工作。正如作者的话：\"Claude Design 是更好的图形工具，huashu-design 是让图形工具这层消失。\"\n---\n## 七、社区表现与数据可信度\n- **Star 增长曲线**：从 2026 年 4 月创建到 10 月冲到 2.6 万 Star，月均新增 1,600+，仍在上升通道\n- **Skills.sh 安装量**：约 45,602 次（截至 2026 年 9 月数据）\n- **社区翻译**：英文、韩文、越南语版本已有社区维护者自发 fork\n- **作者亲录教程**：YouTube 有完整新手教程，花叔本人讲解\n- **数据透明度**：README 里的所有数字（如\"稳定性方差低 5 倍\"、\"三轮盲选结果\"）都注明了测试方式，这是开源项目里少见的实事求是态度\n- **安全审计**：官方声明核心链路 100% 本地运行，零网络零 key，云能力（豆包 TTS、AI 看片评审）全部隔离在 `scripts/cloud/` 可选使用，无 telemetry，SECURITY.md 穷举了出站域名、密钥处理、删除边界\n---\n## 八、局限与不足：必须诚实说的部分\n作者自己在 README 的 Limitations 部分写得很清楚，这是它赢得信任的方式之一，评测也照实转述：\n### 1. 不支持图层级可编辑的 PPTX → Figma\n产出 HTML 可截图、录屏、导图，**不能拖进 Keynote/Figma 改文字位置**。需要深度二次编辑的设计师还是会回 Figma。\n### 2. Framer Motion 级别的复杂动画不行\n3D、物理模拟、粒子系统超出 skill 边界。如果你需要复杂的 WebGL 效果，这不是它的战场。\n### 3. 完全空白的品牌从零设计，质量会掉到 60-65 分\n\"凭空画 hi-fi 本来就是 last resort。\" 给它 logo、色板、UI 截图，它能读懂你的品牌气质；什么都不给，只能靠风格库兜底。\n### 4. 缺乏 GUI 的直接操控\n可以点击某个元素、拖动几像素、在画布上画一下、留个评论吗？**不能**。所有微调都要靠文字 prompt 描述。Chase AI 的实测指出：\"one prompt away from more tweaks——但你确实要问\"。\n### 5. 团队协作缺失\nSkill 运行在单人本地 Claude Code session 里，多人同改一个设计文件不支持。**团队场景需要 Claude Design 或 Figma**。\n### 6. 安装的版本坑\n`skills` CLI ≤1.5.15 有同步 bug，会缺关键子目录，新手容易在第一步就栽跟头。\n### 7. Token 消耗不小\n虽然比 Claude Design 配额友好，但一个复杂任务动辄几万到十几万 token（实测复用设计系统时约 70,000 tokens）。如果你用 API 按 token 计费，单次成本可能不便宜。\n### 8. 不适合\"生产级 Web App\"\nSkill 明确列出\"不适用场景：生产级 Web App、SEO 网站、需要后端的动态系统\"。它产出的是**高保真原型和视觉交付物**，不是可上线跑业务的代码。\n### 9. 作者对自己定位很清醒\n\"**这是一个 80 分的 skill，不是 100 分的产品。对不愿意打开图形界面的人，80 分的 skill 比 100 分的产品好用。**\"这句话值得所有人记住——如果你追求\"100 分的精细操控\"，它不是你的菜。\n---\n## 九、目标人群与收益\n### 🎯 强烈推荐（收益极大）\n| 人群 | 收益 |\n| --- | --- |\n| **独立开发者 / 创业者** | 临时要做可点击原型给投资人看，没有设计师，没有 Figma——10 分钟出稿 |\n| **vibe coder** | 需要设计推动项目但非设计专业出身，它在你和 AI 之间加了一层\"设计总监\" |\n| **技术演讲者** | 做一套看起来不像 PowerPoint 默认模板的幻灯片，导出真可编辑 PPTX |\n| **产品经理** | 设计探索、多方向对比、快速出交互 demo |\n| **内容创作者 / 自媒体** | 发布动画、信息图、公众号封面、BGM 视频，外包两周的活一杯咖啡工夫 |\n| **市场 / 运营** | 产品发布会物料、宣传动画、印刷级数据可视化 |\n### 🤔 需要谨慎评估（可能不合适）\n- **专业 UI 设计师**做高精度交付：你们要的是图层、贝塞尔曲线、精确对齐——Figma 仍是主场\n- **多人设计团队**：缺少协作功能\n- **需要复杂 3D/WebGL 动效**：超出能力边界\n- **完全没接触过 AI Coding Agent 的人**：需要先理解 Claude Code / Cursor 是什么，学习曲线不算为零\n---\n## 十、结语：终极评判与行动建议\n**如果用一句话定性 huashu-design**：它是 AI 时代设计民主化的**最佳实践样本**——不是因为它让 AI 变得更强，而是因为它让\"专业设计工作流的判断力\"第一次变成了普通人可以调用的东西。\n### 它真正打动人的三个点\n1. **克制**：禁令要少、候选要多、不编数据、不打\"美学分\"——每一条规则都来自作者用盲选数据否定自己的迭代\n2. **诚实**：Limitations 直接写在 README 里，\"80 分的 skill 不是 100 分的产品\"这种话别人不愿写\n3. **架构决策清晰**：HTML 作为统一载体、单文件产物、Skill 跨 agent 兼容——每一步都在为\"可移植、可复用、可持续\"服务\n### 行动建议\n**如果你已经在用 Claude Code / Cursor**：直接装，一行命令，几分钟搞定：\n```bash\nnpx skills add alchaincyf/huashu-design\n```\n装完先按官方说明检查 `~/.claude/skills/huashu-design/` 是否有完整子目录。然后随便挑一个模糊需求（\"做个好看 XX 网站让我选风格\"）试水，**六张缩略图那一步的视觉冲击会立刻让你明白它的价值**。\n**如果你还没用过 AI Coding Agent**：先把 Claude Code 或 Cursor 用熟，再回来。这个 skill 的能力是叠加在 Agent 之上的，不是独立的 App。\n**如果你是设计师**：别把它当替代品，把它当\"起草稿、跑多变体、做 demo 的高效助理\"。它不会取代你对最终品质的判断，但能把你的时间从\"重复劳动\"解放出来。\n**如果你只想\"看看热闹\"**：去 README 里把那些 3.0 案例（富岳三十六景、鸣迹、今晚吃啥、千里江山图）挨个看一遍——它们是作者自己用这个工具做出来的真实作品，**每一个都比任何评测文章更有说服力**。\n### 最后一个判断\nhuashu-design 的出现标志着一个拐点：**AI 编程工具的战场正在从\"生成代码\"扩展到\"生成交付物\"**。Skill 这种形态（把领域专家的工作流编码成 Agent 可执行的协议）未来会成为标准操作，而 huashu-design 是目前这条赛道上**最完整、最克制、最具设计哲学**的一个样本。无论你是否会直接使用它，把它作为\"如何设计一个优秀 Skill\"的参考架构读一遍，都绝对值得。\n> **\"80 分的 skill 比 100 分的产品好用\"——花叔这句话，可能就是这一代 AI 工具设计的真正心法。**",
+  "type": "project",
+  "dateAdded": "20261026"
+}

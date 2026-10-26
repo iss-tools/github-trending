@@ -1,6 +1,196 @@
 {
   "all": [
     {
+      "id": "c89a09af-6741-49c8-bea0-623f9226405e",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "domain": "github.com",
+      "repo": "alchaincyf/huashu-design",
+      "description": "huashu-design 是独立开发者花叔开源的 AI 设计 Skill（约 2.6 万 Star，MIT 协议），安装到 Claude Code、Cursor 等终端 Agent 后，用自然语言对话即可产出可点击原型、可编辑 PPTX、带配乐 MP4 动画和印刷级信息图，3-30 分钟交付，全程无需打开 Figma 或 After Effects，被誉为把真实设计工作室工作流翻译成 Agent 可执行协议的标杆项目。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-26T11:11:33.519Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-design",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "cursor",
+          "design",
+          "html",
+          "pptx",
+          "prototype"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent - alchaincyf/huashu-design"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Agent Skill",
+          "AI 设计",
+          "开源项目",
+          "原型设计"
+        ],
+        "cover": "",
+        "title": "花叔 huashu-design 深度评测：让 AI 设计能直接交付的 2.6 万 Star 开源神器",
+        "ability": [
+          "一句话生成可点击的 App/Web 高保真原型（真 iPhone 机框、Playwright 自动验证）",
+          "导出真文本框可编辑的 PPTX 演示文稿，双击即可改字",
+          "生成带 BGM 和音效的 MP4/GIF 产品发布动画",
+          "品牌资产协议 + 三方向盲选 + 反 AI 味规则，杜绝紫渐变 emoji 风的 AI Slop 设计",
+          "五维专家评审出雷达图和可操作修复清单，越用越懂你的审美"
+        ],
+        "summary": "在 Claude Code 里说一句话，10-30 分钟拿到可点击原型、可编辑 PPT、带配乐动画等能直接交付的高保真设计，全程不用打开 Figma。",
+        "category": [
+          "AI 编程",
+          "设计工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "独立开发者与创业者（快速做原型给投资人看）",
+          "Vibe Coder（需要设计力但非设计专业出身）",
+          "技术演讲者（做不像默认模板的幻灯片）",
+          "产品经理（多方向设计探索与交互 Demo）",
+          "内容创作者与自媒体（封面、信息图、发布动画）"
+        ],
+        "description": "huashu-design 是独立开发者花叔开源的 AI 设计 Skill（约 2.6 万 Star，MIT 协议），安装到 Claude Code、Cursor 等终端 Agent 后，用自然语言对话即可产出可点击原型、可编辑 PPTX、带配乐 MP4 动画和印刷级信息图，3-30 分钟交付，全程无需打开 Figma 或 After Effects，被誉为把真实设计工作室工作流翻译成 Agent 可执行协议的标杆项目。"
+      },
+      "type": "project",
+      "dateAdded": "20261026"
+    },
+    {
+      "id": "c368e190-eb6e-47b8-8228-9547d21114f1",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "domain": "github.com",
+      "repo": "gitroomhq/postiz-app",
+      "description": "Postiz 是一个 37k Star 的开源社媒调度平台，一张日历统一管理 X、LinkedIn、Instagram 等 30+ 平台的排期发布，支持云端订阅（$29/月起）与 Docker 自托管两种模式且开源版不阉割功能，并率先内置 MCP Server，可让 Claude 等 AI Agent 用自然语言自动发帖。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-26T11:08:04.248Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "nextjs",
+          "open-source",
+          "open-source-social-media-scheduling-tool",
+          "oss",
+          "postiz-cloud",
+          "postiz-hosted",
+          "redis",
+          "scheduling-tool",
+          "social-media-scheduling-tool",
+          "typescript"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://postiz.com",
+        "description": "📨 The ultimate agentic social media scheduling tool 🤖 - gitroomhq/postiz-app"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "社媒运营",
+          "自托管",
+          "MCP",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Postiz 深度评测：37k Star 的开源社媒调度神器，AI Agent 时代的发布中枢",
+        "ability": [
+          "一张日历管理 30+ 社媒平台，支持分平台内容变体",
+          "内置 MCP Server，可接入 Claude 等 20 个 AI Agent 自然语言发布",
+          "AI 文案撰写、配图生成与短视频自动剪辑",
+          "支持 Docker 自托管，数据完全自主可控无功能阉割",
+          "提供公共 API、Webhook、n8n 节点等开发者集成通道"
+        ],
+        "summary": "开源免费的社媒定时发布平台，一张日历管理30+平台，还能让AI Agent帮你自动发帖",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "多平台运营的自媒体创作者",
+          "想自动化发布流程的程序员/独立开发者",
+          "管理多客户频道的营销团队与 Agency",
+          "AI Agent 工作流重度用户",
+          "注重数据主权需私有化部署的企业"
+        ],
+        "description": "Postiz 是一个 37k Star 的开源社媒调度平台，一张日历统一管理 X、LinkedIn、Instagram 等 30+ 平台的排期发布，支持云端订阅（$29/月起）与 Docker 自托管两种模式且开源版不阉割功能，并率先内置 MCP Server，可让 Claude 等 AI Agent 用自然语言自动发帖。"
+      },
+      "type": "project",
+      "dateAdded": "20261026"
+    },
+    {
+      "id": "d5bbadde-d96a-48a8-afd9-0f2dbd3aa6fb",
+      "url": "https://github.com/nightly-labs/openbot",
+      "domain": "github.com",
+      "repo": "nightly-labs/openbot",
+      "description": "OpenBot 是一个用 Electron + TypeScript 打造的开源桌面应用，把各类 AI CLI 工具编排成有名字、有独立工作区的持久 Agent 团队，数据全部存在本地 SQLite。项目迭代凶猛但仅诞生一个月，默认全权限运行存在安全风险，且采用 PolyForm 非商业许可证，商用需单独授权。综合推荐 7.5/10，适合个人尝鲜，企业部署暂缓。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-26T11:04:07.809Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "bun",
+          "codex",
+          "electron",
+          "local-first",
+          "macos",
+          "solidjs",
+          "typescript"
+        ],
+        "license": "licenses@openbot.run",
+        "homepage": "https://openbot.run/",
+        "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. - nightly-labs/openbot"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "AI Agent",
+          "开源项目",
+          "本地优先",
+          "工作流自动化"
+        ],
+        "cover": "",
+        "title": "OpenBot 深度评测：把 Codex、Claude Code 变成你的本地 AI 员工团队",
+        "ability": [
+          "聚合多厂商 AI Agent（Codex/Claude/Grok/Gemini/Cursor 等），支持 ACP 协议扩展",
+          "Agent 拥有独立工作目录、持久对话历史和可编辑的岗位说明书，切换模型不丢上下文",
+          "支持 Agent 间消息传递、共享频道、任务队列和定时任务 Routines",
+          "内置持久化浏览器与 Computer Use，可自动操作网页并安全调用 1Password 凭据",
+          "支持桌面端、无头服务器、Docker 隔离部署和 iPhone 远程连接"
+        ],
+        "summary": "本地优先的多智能体工作台，让多个 AI CLI 工具变成能持久协作、互相沟通的 AI 同事",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "已付费 ChatGPT/Claude/Grok 等多家订阅的重度 AI 用户",
+          "同时并行多个 AI CLI 的开发者",
+          "想跑 7×24 自动化任务的独立开发者",
+          "需要研究/写作流水线的内容工作者",
+          "非商业用途的技术爱好者"
+        ],
+        "description": "OpenBot 是一个用 Electron + TypeScript 打造的开源桌面应用，把各类 AI CLI 工具编排成有名字、有独立工作区的持久 Agent 团队，数据全部存在本地 SQLite。项目迭代凶猛但仅诞生一个月，默认全权限运行存在安全风险，且采用 PolyForm 非商业许可证，商用需单独授权。综合推荐 7.5/10，适合个人尝鲜，企业部署暂缓。"
+      },
+      "type": "project",
+      "dateAdded": "20261026"
+    },
+    {
       "id": "b4d83fbb-49ea-4f17-a75b-af85986fedf8",
       "url": "https://github.com/AgriciDaniel/claude-seo",
       "domain": "github.com",
@@ -4796,8 +4986,8 @@
       "forks": 0,
       "createdAt": "2026-09-29T12:44:19.590Z",
       "metaData": {
-        "forks": "1690",
-        "stars": "19329",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-security",
           "agent-skills",
@@ -14136,7 +14326,7 @@
           "video-editor"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://hyperframes.dev",
+        "homepage": "https://hyperframes.heygen.com",
         "description": "Write HTML. Render video. Built for agents. Contribute to heygen-com/hyperframes development by creating an account on GitHub."
       },
       "summaryData": {
