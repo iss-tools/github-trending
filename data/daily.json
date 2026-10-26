@@ -84327,9 +84327,9 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 87824,
-      "forks": 9683,
-      "starsAdded": 1592,
+      "stars": 87925,
+      "forks": 9694,
+      "starsAdded": 2292,
       "createdAt": "2026-10-25T16:00:01.887Z",
       "metaData": {
         "forks": "0",
@@ -84400,9 +84400,9 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 34958,
-      "forks": 1821,
-      "starsAdded": 1317,
+      "stars": 35057,
+      "forks": 1828,
+      "starsAdded": 2235,
       "createdAt": "2026-10-25T16:00:01.864Z",
       "metaData": {
         "forks": "0",
@@ -84453,9 +84453,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 88393,
-      "forks": 5277,
-      "starsAdded": 1092,
+      "stars": 88441,
+      "forks": 5279,
+      "starsAdded": 1551,
       "createdAt": "2026-10-25T16:00:01.903Z",
       "metaData": {
         "forks": "0",
@@ -84499,6 +84499,199 @@
       }
     },
     {
+      "id": "17bc9759-9b00-442f-a7a3-b16a6ac36423",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 115273,
+      "forks": 22189,
+      "starsAdded": 1376,
+      "createdAt": "2026-10-25T16:00:01.951Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
+      "id": "35b6f373-c83f-42ff-a74c-6fb273da2bbb",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/makecindy/cindy",
+      "repo": "makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 5694,
+      "forks": 725,
+      "starsAdded": 1268,
+      "createdAt": "2026-10-25T16:00:01.837Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai-agent",
+          "ai-assistant",
+          "android",
+          "claude-code",
+          "codex",
+          "electron",
+          "ios",
+          "llm",
+          "macos",
+          "react-native",
+          "typescript",
+          "windows"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://cindy.app",
+        "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 - makecindy/cindy"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI Agent",
+          "心动网络",
+          "跨端协作",
+          "TapTap"
+        ],
+        "cover": "",
+        "title": "Cindy 深度评测：心动网络开源 AI Agent 客户端，是真兑现还是漂亮话术？",
+        "ability": [
+          "多 Harness 混跑：Claude Code / Codex / Pi 任务中途自由切换，上下文无缝交接",
+          "复用已有 Coding Plan 订阅或自带 API Key（支持 DeepSeek、GLM 等国产模型），不重复计费",
+          "桌面满血 + 手机接力：可从飞书/Slack 派活，移动端远程查看、审批、接管会话",
+          "内置记忆（Memory）、技能（Skill）、MCP 和定时任务，开箱即用",
+          "隔离工作区 + 逐条审批 + 检查点回退，保障代码安全可控"
+        ],
+        "summary": "Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率协作"
+        ],
+        "suitable": [
+          "已付费 Claude Code 或 Codex 订阅、想一份订阅两个工具用的开发者",
+          "经常在电脑和手机间切换的重度 AI 用户",
+          "想用 AI 做小工具小游戏的非技术岗（产品、设计、运营）",
+          "希望从开发到一键上架 TapTap 的独立游戏开发者",
+          "需要 MCP 接内部系统和团队额度管理的企业团队"
+        ],
+        "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。"
+      }
+    },
+    {
+      "id": "1ce46aff-9de5-4e3e-a029-1aded0a23545",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "repo": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 2289,
+      "forks": 130,
+      "starsAdded": 1156,
+      "createdAt": "2026-10-25T16:00:01.970Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://thinkrail.ai/",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "AI IDE",
+          "多智能体",
+          "Git Worktree",
+          "开源"
+        ],
+        "cover": "",
+        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
+        "ability": [
+          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
+          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
+          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
+          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
+          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
+        ],
+        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "需要同时跑多个 AI Agent 干活的重度开发者",
+          "长期维护大型代码仓库的工程师",
+          "注重隐私、想自托管或内网使用的用户",
+          "想研究 AI IDE 架构的技术爱好者",
+          "已有的 pi 生态用户"
+        ],
+        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
+      }
+    },
+    {
       "id": "c1f61e01-c602-42cf-9ab2-5a1d93f3c5e0",
       "dateAdded": "20261026",
       "type": "github-daily",
@@ -84506,7 +84699,7 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 289194,
+      "stars": 289229,
       "forks": 42859,
       "starsAdded": 853,
       "createdAt": "2026-10-26T11:00:02.248Z",
@@ -84560,6 +84753,59 @@
       }
     },
     {
+      "id": "8209b9ab-60d4-4c21-8fb0-ad3b9508b8e5",
+      "dateAdded": "20261026",
+      "type": "github-daily",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "repo": "pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 12122,
+      "forks": 1523,
+      "starsAdded": 844,
+      "createdAt": "2026-10-25T16:00:01.934Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://pollen-robotics.com/microduck",
+        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "双足机器人",
+          "强化学习",
+          "Rust",
+          "sim2real",
+          "具身智能"
+        ],
+        "cover": "",
+        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
+        "ability": [
+          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
+          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
+          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
+          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
+          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
+        ],
+        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
+        "category": [
+          "机器人与具身智能",
+          "开发工具",
+          "AI/机器学习"
+        ],
+        "suitable": [
+          "具身智能与强化学习研究者",
+          "机器人/嵌入式工程师",
+          "Hugging Face 生态开发者",
+          "教育者与 STEAM 教师",
+          "机器人爱好者与创客"
+        ],
+        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
+      }
+    },
+    {
       "id": "8c251d12-89fa-4319-b7b4-f036c2cf7079",
       "dateAdded": "20261026",
       "type": "github-daily",
@@ -84567,8 +84813,8 @@
       "repo": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "stars": 102829,
-      "forks": 9126,
+      "stars": 102888,
+      "forks": 9128,
       "starsAdded": 723,
       "createdAt": "2026-10-26T11:00:02.266Z",
       "metaData": {
@@ -84630,126 +84876,6 @@
       }
     },
     {
-      "id": "35b6f373-c83f-42ff-a74c-6fb273da2bbb",
-      "dateAdded": "20261026",
-      "type": "github-daily",
-      "url": "https://github.com/makecindy/cindy",
-      "repo": "makecindy/cindy",
-      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-      "language": "TypeScript",
-      "stars": 5634,
-      "forks": 723,
-      "starsAdded": 675,
-      "createdAt": "2026-10-25T16:00:01.837Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "ai-agent",
-          "ai-assistant",
-          "android",
-          "claude-code",
-          "codex",
-          "electron",
-          "ios",
-          "llm",
-          "macos",
-          "react-native",
-          "typescript",
-          "windows"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://cindy.app",
-        "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 - makecindy/cindy"
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "AI Agent",
-          "心动网络",
-          "跨端协作",
-          "TapTap"
-        ],
-        "cover": "",
-        "title": "Cindy 深度评测：心动网络开源 AI Agent 客户端，是真兑现还是漂亮话术？",
-        "ability": [
-          "多 Harness 混跑：Claude Code / Codex / Pi 任务中途自由切换，上下文无缝交接",
-          "复用已有 Coding Plan 订阅或自带 API Key（支持 DeepSeek、GLM 等国产模型），不重复计费",
-          "桌面满血 + 手机接力：可从飞书/Slack 派活，移动端远程查看、审批、接管会话",
-          "内置记忆（Memory）、技能（Skill）、MCP 和定时任务，开箱即用",
-          "隔离工作区 + 逐条审批 + 检查点回退，保障代码安全可控"
-        ],
-        "summary": "Cindy 是心动网络开源的 AI Agent 工作台，把 Claude Code、Codex 等智能体装进一个统一界面，支持跨端接力且不重复收费。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率协作"
-        ],
-        "suitable": [
-          "已付费 Claude Code 或 Codex 订阅、想一份订阅两个工具用的开发者",
-          "经常在电脑和手机间切换的重度 AI 用户",
-          "想用 AI 做小工具小游戏的非技术岗（产品、设计、运营）",
-          "希望从开发到一键上架 TapTap 的独立游戏开发者",
-          "需要 MCP 接内部系统和团队额度管理的企业团队"
-        ],
-        "description": "Cindy 是心动网络（TapTap 母公司）开源的 AI Agent 客户端，采用 Apache-2.0 协议、软件永久免费。它不造模型，而是把 Claude Code、Codex 等智能体运行时统一收编，支持任务中途切换、跨设备接力、团队级记忆复用，并内置 TapTapMaker 实现'想法到上架'闭环。亮点是移动端同步体验丝滑、模型接入路线自由；短板是后端服务不开源、强依赖心动云，适合个人尝鲜，企业自部署需谨慎。"
-      }
-    },
-    {
-      "id": "8209b9ab-60d4-4c21-8fb0-ad3b9508b8e5",
-      "dateAdded": "20261026",
-      "type": "github-daily",
-      "url": "https://github.com/pollen-robotics/microduck",
-      "repo": "pollen-robotics/microduck",
-      "description": "A Tiny biped duck robot 🦆",
-      "language": "Rust",
-      "stars": 12086,
-      "forks": 1519,
-      "starsAdded": 647,
-      "createdAt": "2026-10-25T16:00:01.934Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://pollen-robotics.com/microduck",
-        "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "双足机器人",
-          "强化学习",
-          "Rust",
-          "sim2real",
-          "具身智能"
-        ],
-        "cover": "",
-        "title": "Microduck 深度评测：Hugging Face 旗下 399 美元双足机器人的开源'大脑'",
-        "ability": [
-          "50Hz 神经策略实时控制循环，驱动 15 个舵机实现双足行走、起身等动作",
-          "七大 Rust 守护进程解耦架构，通过统一 JSON-RPC 合约通信，架构文档质量极高",
-          "配套 microduck_rl 仓库，一行命令用 MuJoCo+PPO 训练步态并导出 ONNX 热切换部署",
-          "支持 duck-sim 仿真开发，没有硬件也能跑通全部流程",
-          "签名更新、原子切换与健康检查回滚机制，保障消费级硬件不被'刷砖'"
-        ],
-        "summary": "399 美元桌面级双足机器人 Microduck 的官方开源'大脑'：Rust 实时控制运行时 + 完整强化学习 sim2real 训练链路。",
-        "category": [
-          "机器人与具身智能",
-          "开发工具",
-          "AI/机器学习"
-        ],
-        "suitable": [
-          "具身智能与强化学习研究者",
-          "机器人/嵌入式工程师",
-          "Hugging Face 生态开发者",
-          "教育者与 STEAM 教师",
-          "机器人爱好者与创客"
-        ],
-        "description": "microduck 是 Hugging Face 旗下 Pollen Robotics 为 399 美元桌面级双足机器人 Microduck 开源的官方运行时仓库（Apache 2.0），采用 Rust 编写，含 7 个解耦守护进程、50Hz 控制循环与完整 sim2real 工具链，甚至公开了工程事故复盘文档。但需注意：仅软件开源，机械电子设计不开源，且与自有硬件强绑定，首批仅北美/欧洲/英国发售。"
-      }
-    },
-    {
       "id": "da4e4fde-437a-4772-b692-a01a7767742f",
       "dateAdded": "20261026",
       "type": "github-daily",
@@ -84757,8 +84883,8 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 224108,
-      "forks": 22427,
+      "stars": 224136,
+      "forks": 22430,
       "starsAdded": 457,
       "createdAt": "2026-10-26T11:00:02.280Z",
       "metaData": {
@@ -84801,65 +84927,6 @@
       }
     },
     {
-      "id": "17bc9759-9b00-442f-a7a3-b16a6ac36423",
-      "dateAdded": "20261026",
-      "type": "github-daily",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 115202,
-      "forks": 22183,
-      "starsAdded": 381,
-      "createdAt": "2026-10-25T16:00:01.951Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
-      }
-    },
-    {
       "id": "12afe101-d324-4815-aea6-c0fbb47652c3",
       "dateAdded": "20261026",
       "type": "github-daily",
@@ -84867,8 +84934,8 @@
       "repo": "NVIDIA/SkillSpector",
       "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "language": "Python",
-      "stars": 21678,
-      "forks": 1911,
+      "stars": 21708,
+      "forks": 1912,
       "starsAdded": 203,
       "createdAt": "2026-10-26T11:00:02.255Z",
       "metaData": {
@@ -85057,8 +85124,8 @@
       "repo": "alchaincyf/huashu-design",
       "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
       "language": "HTML",
-      "stars": 26397,
-      "forks": 2945,
+      "stars": 26436,
+      "forks": 2947,
       "starsAdded": 177,
       "createdAt": "2026-10-26T11:00:02.277Z",
       "metaData": {
@@ -85195,8 +85262,8 @@
       "repo": "gitroomhq/postiz-app",
       "description": "📨 The ultimate agentic social media scheduling tool 🤖",
       "language": "TypeScript",
-      "stars": 37889,
-      "forks": 7402,
+      "stars": 37932,
+      "forks": 7404,
       "starsAdded": 146,
       "createdAt": "2026-10-26T11:00:02.274Z",
       "metaData": {
@@ -85259,8 +85326,8 @@
       "repo": "nightly-labs/openbot",
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "language": "TypeScript",
-      "stars": 1048,
-      "forks": 162,
+      "stars": 1081,
+      "forks": 163,
       "starsAdded": 86,
       "createdAt": "2026-10-26T11:00:02.264Z",
       "metaData": {
@@ -85311,73 +85378,6 @@
           "非商业用途的技术爱好者"
         ],
         "description": "OpenBot 是一个用 Electron + TypeScript 打造的开源桌面应用，把各类 AI CLI 工具编排成有名字、有独立工作区的持久 Agent 团队，数据全部存在本地 SQLite。项目迭代凶猛但仅诞生一个月，默认全权限运行存在安全风险，且采用 PolyForm 非商业许可证，商用需单独授权。综合推荐 7.5/10，适合个人尝鲜，企业部署暂缓。"
-      }
-    },
-    {
-      "id": "1ce46aff-9de5-4e3e-a029-1aded0a23545",
-      "dateAdded": "20261026",
-      "type": "github-daily",
-      "url": "https://github.com/JetBrains/thinkrail",
-      "repo": "JetBrains/thinkrail",
-      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-      "language": "TypeScript",
-      "stars": 2256,
-      "forks": 129,
-      "starsAdded": 51,
-      "createdAt": "2026-10-25T16:00:01.970Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "agentic-ai",
-          "agentic-workflow",
-          "ai-coding",
-          "ai-tools",
-          "pi-agent",
-          "pi-agent-extension",
-          "spec-driven",
-          "spec-driven-coding",
-          "spec-driven-development",
-          "vibe-coding",
-          "vibecoding"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://thinkrail.ai/",
-        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
-      },
-      "summaryData": {
-        "tags": [
-          "JetBrains",
-          "AI IDE",
-          "多智能体",
-          "Git Worktree",
-          "开源"
-        ],
-        "cover": "",
-        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
-        "ability": [
-          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
-          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
-          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
-          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
-          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
-        ],
-        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "需要同时跑多个 AI Agent 干活的重度开发者",
-          "长期维护大型代码仓库的工程师",
-          "注重隐私、想自托管或内网使用的用户",
-          "想研究 AI IDE 架构的技术爱好者",
-          "已有的 pi 生态用户"
-        ],
-        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
       }
     }
   ]
