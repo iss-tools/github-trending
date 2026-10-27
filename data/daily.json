@@ -86432,8 +86432,8 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 38540,
-      "forks": 2010,
+      "stars": 38902,
+      "forks": 2026,
       "starsAdded": 2859,
       "createdAt": "2026-10-27T16:00:02.111Z",
       "metaData": {
@@ -86485,8 +86485,8 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 45520,
-      "forks": 5726,
+      "stars": 45763,
+      "forks": 5745,
       "starsAdded": 1587,
       "createdAt": "2026-10-27T16:00:02.162Z",
       "metaData": {
@@ -86548,8 +86548,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 90244,
-      "forks": 5365,
+      "stars": 90438,
+      "forks": 5373,
       "starsAdded": 1458,
       "createdAt": "2026-10-27T16:00:02.143Z",
       "metaData": {
@@ -86601,8 +86601,8 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 7321,
-      "forks": 874,
+      "stars": 7431,
+      "forks": 885,
       "starsAdded": 1446,
       "createdAt": "2026-10-27T16:00:02.147Z",
       "metaData": {
@@ -86661,6 +86661,59 @@
       }
     },
     {
+      "id": "425ab33c-a416-4481-96a6-c977b524e734",
+      "dateAdded": "20261028",
+      "type": "github-daily",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "repo": "elayadesign/ai-design-skills",
+      "description": "",
+      "language": "",
+      "stars": 9223,
+      "forks": 663,
+      "starsAdded": 1395,
+      "createdAt": "2026-10-27T23:00:02.001Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to elayadesign/ai-design-skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SKILL.md",
+          "设计规范",
+          "Landing Page",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ai-design-skills 深度评测：把设计师的品味灌进 AI 编程工具的 SKILL 规则文档",
+        "ability": [
+          "强制 AI 先做战略问诊再动手写代码（双 PART 架构）",
+          "提供可直接落到 Tailwind class 的设计硬规则（字体白名单、封闭间距表、嵌套圆角公式、动效参数）",
+          "强制输出结构化协议：页面大纲、文案、FAQ、布局推荐等 7 项先行",
+          "内容真实性约束：禁占位文案、禁 AI 黑话、禁虚假数据",
+          "支持 fork 替换 Design Values 区段，把他人品味换成自己的品牌规范"
+        ],
+        "summary": "一份写给 Claude Code、Cursor 等 AI 编程工具的落地页设计军规（SKILL.md），用可执行的硬规则消除网页的'一眼 AI 味'。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计资源"
+        ],
+        "suitable": [
+          "独立开发者 / indie hacker",
+          "SaaS 创业团队 / 增长团队",
+          "前端工程师与设计师协作团队",
+          "AI Skill / Prompt 开发者（可当 SKILL.md 写作范本）",
+          "Framer / Webflow 设计师"
+        ],
+        "description": "设计师 Elaya 开源的 MIT 协议规则文档（1.3k star），专供 AI 编程工具加载。它把 8 年 B 端 SaaS 实战审美编译成硬规则：字体白名单、封闭间距 token、嵌套圆角公式、动效物理曲线等，强制 AI 先问诊、再按协议分段构建 landing page，从根源上消除 AI 生成的通用廉价感。局限是立场专断、深度绑定 Tailwind、仅覆盖营销页场景。"
+      }
+    },
+    {
       "id": "7719296c-519e-4736-bd93-6f86e891da41",
       "dateAdded": "20261028",
       "type": "github-daily",
@@ -86668,8 +86721,8 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 3784,
-      "forks": 199,
+      "stars": 3928,
+      "forks": 209,
       "starsAdded": 1211,
       "createdAt": "2026-10-27T16:00:02.174Z",
       "metaData": {
@@ -86735,8 +86788,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 290614,
-      "forks": 43052,
+      "stars": 290836,
+      "forks": 43073,
       "starsAdded": 1183,
       "createdAt": "2026-10-27T16:00:02.159Z",
       "metaData": {
@@ -86796,8 +86849,8 @@
       "repo": "gitroomhq/postiz-app",
       "description": "📨 The ultimate agentic social media scheduling tool 🤖",
       "language": "TypeScript",
-      "stars": 39123,
-      "forks": 7482,
+      "stars": 39308,
+      "forks": 7507,
       "starsAdded": 953,
       "createdAt": "2026-10-27T16:00:02.151Z",
       "metaData": {
@@ -86860,8 +86913,8 @@
       "repo": "togg53192-cmd/jailbreaks",
       "description": "LIST OF ALL MY JAILBREAKS",
       "language": "",
-      "stars": 5233,
-      "forks": 803,
+      "stars": 5444,
+      "forks": 815,
       "starsAdded": 890,
       "createdAt": "2026-10-27T16:00:02.183Z",
       "metaData": {
@@ -86913,8 +86966,8 @@
       "repo": "nightly-labs/openbot",
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "language": "TypeScript",
-      "stars": 2193,
-      "forks": 234,
+      "stars": 2365,
+      "forks": 245,
       "starsAdded": 794,
       "createdAt": "2026-10-27T16:00:02.120Z",
       "metaData": {
@@ -86975,8 +87028,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 306209,
-      "forks": 27265,
+      "stars": 306385,
+      "forks": 27276,
       "starsAdded": 608,
       "createdAt": "2026-10-27T16:00:02.135Z",
       "metaData": {

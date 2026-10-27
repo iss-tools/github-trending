@@ -1,6 +1,59 @@
 {
   "all": [
     {
+      "id": "01229575-6ba8-431e-9072-60a4a388263e",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "domain": "github.com",
+      "repo": "elayadesign/ai-design-skills",
+      "description": "设计师 Elaya 开源的 MIT 协议规则文档（1.3k star），专供 AI 编程工具加载。它把 8 年 B 端 SaaS 实战审美编译成硬规则：字体白名单、封闭间距 token、嵌套圆角公式、动效物理曲线等，强制 AI 先问诊、再按协议分段构建 landing page，从根源上消除 AI 生成的通用廉价感。局限是立场专断、深度绑定 Tailwind、仅覆盖营销页场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-27T23:25:13.931Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Contribute to elayadesign/ai-design-skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SKILL.md",
+          "设计规范",
+          "Landing Page",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ai-design-skills 深度评测：把设计师的品味灌进 AI 编程工具的 SKILL 规则文档",
+        "ability": [
+          "强制 AI 先做战略问诊再动手写代码（双 PART 架构）",
+          "提供可直接落到 Tailwind class 的设计硬规则（字体白名单、封闭间距表、嵌套圆角公式、动效参数）",
+          "强制输出结构化协议：页面大纲、文案、FAQ、布局推荐等 7 项先行",
+          "内容真实性约束：禁占位文案、禁 AI 黑话、禁虚假数据",
+          "支持 fork 替换 Design Values 区段，把他人品味换成自己的品牌规范"
+        ],
+        "summary": "一份写给 Claude Code、Cursor 等 AI 编程工具的落地页设计军规（SKILL.md），用可执行的硬规则消除网页的'一眼 AI 味'。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计资源"
+        ],
+        "suitable": [
+          "独立开发者 / indie hacker",
+          "SaaS 创业团队 / 增长团队",
+          "前端工程师与设计师协作团队",
+          "AI Skill / Prompt 开发者（可当 SKILL.md 写作范本）",
+          "Framer / Webflow 设计师"
+        ],
+        "description": "设计师 Elaya 开源的 MIT 协议规则文档（1.3k star），专供 AI 编程工具加载。它把 8 年 B 端 SaaS 实战审美编译成硬规则：字体白名单、封闭间距 token、嵌套圆角公式、动效物理曲线等，强制 AI 先问诊、再按协议分段构建 landing page，从根源上消除 AI 生成的通用廉价感。局限是立场专断、深度绑定 Tailwind、仅覆盖营销页场景。"
+      },
+      "type": "project",
+      "dateAdded": "20261027"
+    },
+    {
       "id": "1bde00d6-dc45-4e2b-b3da-009d851019bb",
       "url": "https://github.com/togg53192-cmd/jailbreaks",
       "domain": "github.com",
