@@ -1,6 +1,122 @@
 {
   "all": [
     {
+      "id": "1bde00d6-dc45-4e2b-b3da-009d851019bb",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "domain": "github.com",
+      "repo": "togg53192-cmd/jailbreaks",
+      "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-27T13:07:10.853Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "越狱提示词",
+          "系统提示词抽取",
+          "AI安全",
+          "红队测试",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
+        "ability": [
+          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
+          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
+          "提供 AGENTS.md 工作区级指令注入样本",
+          "提供 Ollama 本地越狱 Modelfile 一键打包",
+          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
+        ],
+        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
+        "category": [
+          "AI 安全",
+          "开源项目",
+          "大模型研究"
+        ],
+        "suitable": [
+          "AI 安全与红队工程师",
+          "AI 产品开发者",
+          "Agent 工具（Cursor/OpenCode）开发者",
+          "模型厂商对齐团队",
+          "AI 安全方向研究者"
+        ],
+        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
+      },
+      "type": "project",
+      "dateAdded": "20261027"
+    },
+    {
+      "id": "cb945e59-ca1c-483f-b311-7ed635a9c0f0",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "domain": "github.com",
+      "repo": "HKUDS/DeepTutor",
+      "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-27T13:03:35.036Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-tutor",
+          "clawbot",
+          "cli-tool",
+          "deepresearch",
+          "interactive-learning",
+          "learning",
+          "multi-agent-systems",
+          "rag"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "http://arxiv.org/abs/2604.26962",
+        "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepTutor",
+          "开源项目",
+          "AI私教",
+          "本地部署",
+          "RAG知识库"
+        ],
+        "cover": "",
+        "title": "DeepTutor 深度评测：港大开源 43k Star 的 Agent 原生 AI 私教学习工作台",
+        "ability": [
+          "统一 Agent 运行时：Chat、解题、测验、研究、笔记等模块共享上下文，学习体验不割裂",
+          "三层可审计记忆系统（Trace Forest），持续追踪用户薄弱点，且结论可追溯来源",
+          "页码级引用溯源的知识库 RAG，支持 LightRAG、GraphRAG、Obsidian 等 6 种检索引擎插拔",
+          "Partners AI 私教可接入飞书、微信、Telegram 等 15+ 即时通讯软件",
+          "全本地部署（Docker/PyPI 一键启动），学习数据不出本机"
+        ],
+        "summary": "港大数据智能实验室开源的 Agent 原生终身学习工作台，把读资料、问问题、解题、刷题、研究、笔记全链路整合进同一套 AI 架构，支持本地部署保护隐私。",
+        "category": [
+          "开源项目",
+          "AI 学习工具",
+          "教育科技"
+        ],
+        "suitable": [
+          "需要长期消化教材与论文的大学生、研究生",
+          "考研/雅思/公考等刷题备考人群",
+          "需要文献综述与深度调研的科研工作者",
+          "想制作可交互活教材的教师与课程设计者",
+          "想学习工业级多 Agent 记忆架构的 AI 开发者"
+        ],
+        "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。"
+      },
+      "type": "project",
+      "dateAdded": "20261027"
+    },
+    {
       "id": "c89a09af-6741-49c8-bea0-623f9226405e",
       "url": "https://github.com/alchaincyf/huashu-design",
       "domain": "github.com",

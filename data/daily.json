@@ -85383,6 +85383,59 @@
   ],
   "20261027": [
     {
+      "id": "1b1b9716-ef5d-4d31-8be1-76a9f2136fb5",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 38011,
+      "forks": 1978,
+      "starsAdded": 2859,
+      "createdAt": "2026-10-26T16:00:02.208Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
       "id": "957973ed-8a28-47ab-9d61-abe58fac8e9f",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85390,8 +85443,8 @@
       "repo": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 90291,
-      "forks": 9950,
+      "stars": 90399,
+      "forks": 9959,
       "starsAdded": 2297,
       "createdAt": "2026-10-26T16:00:02.257Z",
       "metaData": {
@@ -85456,56 +85509,66 @@
       }
     },
     {
-      "id": "1b1b9716-ef5d-4d31-8be1-76a9f2136fb5",
+      "id": "864a2157-f83c-4c3b-ba67-c0f31d995213",
       "dateAdded": "20261027",
       "type": "github-daily",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 37632,
-      "forks": 1961,
-      "starsAdded": 2244,
-      "createdAt": "2026-10-26T16:00:02.208Z",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "repo": "HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 44961,
+      "forks": 5676,
+      "starsAdded": 1587,
+      "createdAt": "2026-10-27T13:00:02.097Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+        "topics": [
+          "ai-agents",
+          "ai-tutor",
+          "clawbot",
+          "cli-tool",
+          "deepresearch",
+          "interactive-learning",
+          "learning",
+          "multi-agent-systems",
+          "rag"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "http://arxiv.org/abs/2604.26962",
+        "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor"
       },
       "summaryData": {
         "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
+          "DeepTutor",
+          "开源项目",
+          "AI私教",
+          "本地部署",
+          "RAG知识库"
         ],
         "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "title": "DeepTutor 深度评测：港大开源 43k Star 的 Agent 原生 AI 私教学习工作台",
         "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+          "统一 Agent 运行时：Chat、解题、测验、研究、笔记等模块共享上下文，学习体验不割裂",
+          "三层可审计记忆系统（Trace Forest），持续追踪用户薄弱点，且结论可追溯来源",
+          "页码级引用溯源的知识库 RAG，支持 LightRAG、GraphRAG、Obsidian 等 6 种检索引擎插拔",
+          "Partners AI 私教可接入飞书、微信、Telegram 等 15+ 即时通讯软件",
+          "全本地部署（Docker/PyPI 一键启动），学习数据不出本机"
         ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "summary": "港大数据智能实验室开源的 Agent 原生终身学习工作台，把读资料、问问题、解题、刷题、研究、笔记全链路整合进同一套 AI 架构，支持本地部署保护隐私。",
         "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
+          "开源项目",
+          "AI 学习工具",
+          "教育科技"
         ],
         "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
+          "需要长期消化教材与论文的大学生、研究生",
+          "考研/雅思/公考等刷题备考人群",
+          "需要文献综述与深度调研的科研工作者",
+          "想制作可交互活教材的教师与课程设计者",
+          "想学习工业级多 Agent 记忆架构的 AI 开发者"
         ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+        "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。"
       }
     },
     {
@@ -85516,9 +85579,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "Rust",
-      "stars": 89743,
-      "forks": 5334,
-      "starsAdded": 1506,
+      "stars": 89915,
+      "forks": 5344,
+      "starsAdded": 1458,
       "createdAt": "2026-10-26T16:00:02.237Z",
       "metaData": {
         "forks": "0",
@@ -85562,65 +85625,6 @@
       }
     },
     {
-      "id": "8700cd3c-2e15-42f5-b999-6e0ec0b0a6e0",
-      "dateAdded": "20261027",
-      "type": "github-daily",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 116821,
-      "forks": 22376,
-      "starsAdded": 1395,
-      "createdAt": "2026-10-26T16:00:02.219Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
-      }
-    },
-    {
       "id": "97567e78-b160-4727-93a3-2beb6853775f",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85628,9 +85632,9 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 7035,
-      "forks": 844,
-      "starsAdded": 1296,
+      "stars": 7160,
+      "forks": 859,
+      "starsAdded": 1446,
       "createdAt": "2026-10-26T16:00:02.225Z",
       "metaData": {
         "forks": "0",
@@ -85688,6 +85692,65 @@
       }
     },
     {
+      "id": "8700cd3c-2e15-42f5-b999-6e0ec0b0a6e0",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 116903,
+      "forks": 22388,
+      "starsAdded": 1395,
+      "createdAt": "2026-10-26T16:00:02.219Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
       "id": "9365a583-93de-459f-b541-7a34c891a8d9",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85695,9 +85758,9 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 3402,
-      "forks": 180,
-      "starsAdded": 1173,
+      "stars": 3549,
+      "forks": 188,
+      "starsAdded": 1211,
       "createdAt": "2026-10-26T16:00:02.222Z",
       "metaData": {
         "forks": "0",
@@ -85762,9 +85825,9 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 290234,
-      "forks": 43011,
-      "starsAdded": 896,
+      "stars": 290392,
+      "forks": 43022,
+      "starsAdded": 1183,
       "createdAt": "2026-10-26T16:00:02.227Z",
       "metaData": {
         "forks": "0",
@@ -85816,6 +85879,123 @@
       }
     },
     {
+      "id": "a0cad3db-6114-4454-82f8-8877650202ca",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "repo": "gitroomhq/postiz-app",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "language": "TypeScript",
+      "stars": 38919,
+      "forks": 7473,
+      "starsAdded": 953,
+      "createdAt": "2026-10-26T16:00:02.259Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "nextjs",
+          "open-source",
+          "open-source-social-media-scheduling-tool",
+          "oss",
+          "postiz-cloud",
+          "postiz-hosted",
+          "redis",
+          "scheduling-tool",
+          "social-media-scheduling-tool",
+          "typescript"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://postiz.com",
+        "description": "📨 The ultimate agentic social media scheduling tool 🤖 - gitroomhq/postiz-app"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "社媒运营",
+          "自托管",
+          "MCP",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Postiz 深度评测：37k Star 的开源社媒调度神器，AI Agent 时代的发布中枢",
+        "ability": [
+          "一张日历管理 30+ 社媒平台，支持分平台内容变体",
+          "内置 MCP Server，可接入 Claude 等 20 个 AI Agent 自然语言发布",
+          "AI 文案撰写、配图生成与短视频自动剪辑",
+          "支持 Docker 自托管，数据完全自主可控无功能阉割",
+          "提供公共 API、Webhook、n8n 节点等开发者集成通道"
+        ],
+        "summary": "开源免费的社媒定时发布平台，一张日历管理30+平台，还能让AI Agent帮你自动发帖",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "多平台运营的自媒体创作者",
+          "想自动化发布流程的程序员/独立开发者",
+          "管理多客户频道的营销团队与 Agency",
+          "AI Agent 工作流重度用户",
+          "注重数据主权需私有化部署的企业"
+        ],
+        "description": "Postiz 是一个 37k Star 的开源社媒调度平台，一张日历统一管理 X、LinkedIn、Instagram 等 30+ 平台的排期发布，支持云端订阅（$29/月起）与 Docker 自托管两种模式且开源版不阉割功能，并率先内置 MCP Server，可让 Claude 等 AI Agent 用自然语言自动发帖。"
+      }
+    },
+    {
+      "id": "e7a8dc96-92b7-40f6-8b65-d395012f1db4",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "repo": "togg53192-cmd/jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "language": "",
+      "stars": 4930,
+      "forks": 783,
+      "starsAdded": 890,
+      "createdAt": "2026-10-27T13:00:02.105Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "越狱提示词",
+          "系统提示词抽取",
+          "AI安全",
+          "红队测试",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
+        "ability": [
+          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
+          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
+          "提供 AGENTS.md 工作区级指令注入样本",
+          "提供 Ollama 本地越狱 Modelfile 一键打包",
+          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
+        ],
+        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
+        "category": [
+          "AI 安全",
+          "开源项目",
+          "大模型研究"
+        ],
+        "suitable": [
+          "AI 安全与红队工程师",
+          "AI 产品开发者",
+          "Agent 工具（Cursor/OpenCode）开发者",
+          "模型厂商对齐团队",
+          "AI 安全方向研究者"
+        ],
+        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
+      }
+    },
+    {
       "id": "59da99ae-0790-4de9-a6de-fa234ea9030b",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85823,8 +86003,8 @@
       "repo": "pollen-robotics/microduck",
       "description": "A Tiny biped duck robot 🦆",
       "language": "Rust",
-      "stars": 12650,
-      "forks": 1564,
+      "stars": 12677,
+      "forks": 1567,
       "starsAdded": 843,
       "createdAt": "2026-10-26T16:00:02.248Z",
       "metaData": {
@@ -85869,6 +86049,68 @@
       }
     },
     {
+      "id": "da50b747-cc65-4480-b9b3-8bc72b786f99",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/nightly-labs/openbot",
+      "repo": "nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+      "language": "TypeScript",
+      "stars": 1922,
+      "forks": 218,
+      "starsAdded": 794,
+      "createdAt": "2026-10-26T16:00:02.251Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "bun",
+          "codex",
+          "electron",
+          "local-first",
+          "macos",
+          "solidjs",
+          "typescript"
+        ],
+        "license": "licenses@openbot.run",
+        "homepage": "https://openbot.run/",
+        "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. - nightly-labs/openbot"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "AI Agent",
+          "开源项目",
+          "本地优先",
+          "工作流自动化"
+        ],
+        "cover": "",
+        "title": "OpenBot 深度评测：把 Codex、Claude Code 变成你的本地 AI 员工团队",
+        "ability": [
+          "聚合多厂商 AI Agent（Codex/Claude/Grok/Gemini/Cursor 等），支持 ACP 协议扩展",
+          "Agent 拥有独立工作目录、持久对话历史和可编辑的岗位说明书，切换模型不丢上下文",
+          "支持 Agent 间消息传递、共享频道、任务队列和定时任务 Routines",
+          "内置持久化浏览器与 Computer Use，可自动操作网页并安全调用 1Password 凭据",
+          "支持桌面端、无头服务器、Docker 隔离部署和 iPhone 远程连接"
+        ],
+        "summary": "本地优先的多智能体工作台，让多个 AI CLI 工具变成能持久协作、互相沟通的 AI 同事",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "已付费 ChatGPT/Claude/Grok 等多家订阅的重度 AI 用户",
+          "同时并行多个 AI CLI 的开发者",
+          "想跑 7×24 自动化任务的独立开发者",
+          "需要研究/写作流水线的内容工作者",
+          "非商业用途的技术爱好者"
+        ],
+        "description": "OpenBot 是一个用 Electron + TypeScript 打造的开源桌面应用，把各类 AI CLI 工具编排成有名字、有独立工作区的持久 Agent 团队，数据全部存在本地 SQLite。项目迭代凶猛但仅诞生一个月，默认全权限运行存在安全风险，且采用 PolyForm 非商业许可证，商用需单独授权。综合推荐 7.5/10，适合个人尝鲜，企业部署暂缓。"
+      }
+    },
+    {
       "id": "187093f4-55aa-4d92-ab24-5d2efea57b09",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85876,8 +86118,8 @@
       "repo": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "stars": 104366,
-      "forks": 9251,
+      "stars": 104426,
+      "forks": 9255,
       "starsAdded": 746,
       "createdAt": "2026-10-26T16:00:02.255Z",
       "metaData": {
@@ -85946,8 +86188,8 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 225090,
-      "forks": 22501,
+      "stars": 225140,
+      "forks": 22504,
       "starsAdded": 638,
       "createdAt": "2026-10-26T16:00:02.272Z",
       "metaData": {
@@ -85990,6 +86232,68 @@
       }
     },
     {
+      "id": "54af856b-bad1-4966-9edf-58c889e35551",
+      "dateAdded": "20261027",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 305946,
+      "forks": 27248,
+      "starsAdded": 608,
+      "createdAt": "2026-10-27T13:00:02.066Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
       "id": "7750ca5f-96ef-4c1f-a98e-12f0abb564bf",
       "dateAdded": "20261027",
       "type": "github-daily",
@@ -85997,8 +86301,8 @@
       "repo": "alchaincyf/huashu-design",
       "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
       "language": "HTML",
-      "stars": 27541,
-      "forks": 3002,
+      "stars": 27592,
+      "forks": 3006,
       "starsAdded": 251,
       "createdAt": "2026-10-26T16:00:02.261Z",
       "metaData": {
@@ -86061,8 +86365,8 @@
       "repo": "NVIDIA/SkillSpector",
       "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "language": "Python",
-      "stars": 22586,
-      "forks": 1961,
+      "stars": 22619,
+      "forks": 1963,
       "starsAdded": 214,
       "createdAt": "2026-10-26T16:00:02.245Z",
       "metaData": {
@@ -86116,132 +86420,6 @@
           "开发 AI Agent 应用的厂商"
         ],
         "description": "SkillSpector 是 NVIDIA 2026 年开源的 Agent Skill 安全扫描器。研究显示超四分之一社区 Skill 存在漏洞，它通过静态分析加 LLM 语义三层审查，在安装前识别 Prompt 注入、凭证窃取、恶意软件等风险并输出 0-100 风险评分，还能以 MCP 形式常驻 Agent，成为安装 Skill 前的自动安全守门员。"
-      }
-    },
-    {
-      "id": "a0cad3db-6114-4454-82f8-8877650202ca",
-      "dateAdded": "20261027",
-      "type": "github-daily",
-      "url": "https://github.com/gitroomhq/postiz-app",
-      "repo": "gitroomhq/postiz-app",
-      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
-      "language": "TypeScript",
-      "stars": 38794,
-      "forks": 7470,
-      "starsAdded": 188,
-      "createdAt": "2026-10-26T16:00:02.259Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "nextjs",
-          "open-source",
-          "open-source-social-media-scheduling-tool",
-          "oss",
-          "postiz-cloud",
-          "postiz-hosted",
-          "redis",
-          "scheduling-tool",
-          "social-media-scheduling-tool",
-          "typescript"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://postiz.com",
-        "description": "📨 The ultimate agentic social media scheduling tool 🤖 - gitroomhq/postiz-app"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "社媒运营",
-          "自托管",
-          "MCP",
-          "AI Agent"
-        ],
-        "cover": "",
-        "title": "Postiz 深度评测：37k Star 的开源社媒调度神器，AI Agent 时代的发布中枢",
-        "ability": [
-          "一张日历管理 30+ 社媒平台，支持分平台内容变体",
-          "内置 MCP Server，可接入 Claude 等 20 个 AI Agent 自然语言发布",
-          "AI 文案撰写、配图生成与短视频自动剪辑",
-          "支持 Docker 自托管，数据完全自主可控无功能阉割",
-          "提供公共 API、Webhook、n8n 节点等开发者集成通道"
-        ],
-        "summary": "开源免费的社媒定时发布平台，一张日历管理30+平台，还能让AI Agent帮你自动发帖",
-        "category": [
-          "开发工具",
-          "效率工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "多平台运营的自媒体创作者",
-          "想自动化发布流程的程序员/独立开发者",
-          "管理多客户频道的营销团队与 Agency",
-          "AI Agent 工作流重度用户",
-          "注重数据主权需私有化部署的企业"
-        ],
-        "description": "Postiz 是一个 37k Star 的开源社媒调度平台，一张日历统一管理 X、LinkedIn、Instagram 等 30+ 平台的排期发布，支持云端订阅（$29/月起）与 Docker 自托管两种模式且开源版不阉割功能，并率先内置 MCP Server，可让 Claude 等 AI Agent 用自然语言自动发帖。"
-      }
-    },
-    {
-      "id": "da50b747-cc65-4480-b9b3-8bc72b786f99",
-      "dateAdded": "20261027",
-      "type": "github-daily",
-      "url": "https://github.com/nightly-labs/openbot",
-      "repo": "nightly-labs/openbot",
-      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-      "language": "TypeScript",
-      "stars": 1785,
-      "forks": 211,
-      "starsAdded": 176,
-      "createdAt": "2026-10-26T16:00:02.251Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "bun",
-          "codex",
-          "electron",
-          "local-first",
-          "macos",
-          "solidjs",
-          "typescript"
-        ],
-        "license": "licenses@openbot.run",
-        "homepage": "https://openbot.run/",
-        "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. - nightly-labs/openbot"
-      },
-      "summaryData": {
-        "tags": [
-          "多智能体",
-          "AI Agent",
-          "开源项目",
-          "本地优先",
-          "工作流自动化"
-        ],
-        "cover": "",
-        "title": "OpenBot 深度评测：把 Codex、Claude Code 变成你的本地 AI 员工团队",
-        "ability": [
-          "聚合多厂商 AI Agent（Codex/Claude/Grok/Gemini/Cursor 等），支持 ACP 协议扩展",
-          "Agent 拥有独立工作目录、持久对话历史和可编辑的岗位说明书，切换模型不丢上下文",
-          "支持 Agent 间消息传递、共享频道、任务队列和定时任务 Routines",
-          "内置持久化浏览器与 Computer Use，可自动操作网页并安全调用 1Password 凭据",
-          "支持桌面端、无头服务器、Docker 隔离部署和 iPhone 远程连接"
-        ],
-        "summary": "本地优先的多智能体工作台，让多个 AI CLI 工具变成能持久协作、互相沟通的 AI 同事",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "已付费 ChatGPT/Claude/Grok 等多家订阅的重度 AI 用户",
-          "同时并行多个 AI CLI 的开发者",
-          "想跑 7×24 自动化任务的独立开发者",
-          "需要研究/写作流水线的内容工作者",
-          "非商业用途的技术爱好者"
-        ],
-        "description": "OpenBot 是一个用 Electron + TypeScript 打造的开源桌面应用，把各类 AI CLI 工具编排成有名字、有独立工作区的持久 Agent 团队，数据全部存在本地 SQLite。项目迭代凶猛但仅诞生一个月，默认全权限运行存在安全风险，且采用 PolyForm 非商业许可证，商用需单独授权。综合推荐 7.5/10，适合个人尝鲜，企业部署暂缓。"
       }
     }
   ]
