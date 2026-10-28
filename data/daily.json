@@ -86432,9 +86432,9 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 38902,
-      "forks": 2026,
-      "starsAdded": 2859,
+      "stars": 39012,
+      "forks": 2036,
+      "starsAdded": 2830,
       "createdAt": "2026-10-27T16:00:02.111Z",
       "metaData": {
         "forks": "0",
@@ -86485,9 +86485,9 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 45763,
-      "forks": 5745,
-      "starsAdded": 1587,
+      "stars": 45913,
+      "forks": 5759,
+      "starsAdded": 1598,
       "createdAt": "2026-10-27T16:00:02.162Z",
       "metaData": {
         "forks": "0",
@@ -86541,59 +86541,6 @@
       }
     },
     {
-      "id": "65a960a1-45e1-4979-a938-566e8ad8e635",
-      "dateAdded": "20261028",
-      "type": "github-daily",
-      "url": "https://github.com/pbakaus/impeccable",
-      "repo": "pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "language": "Rust",
-      "stars": 90438,
-      "forks": 5373,
-      "starsAdded": 1458,
-      "createdAt": "2026-10-27T16:00:02.143Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://impeccable.style",
-        "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "AI Skill",
-          "UI 设计",
-          "开源项目",
-          "Cursor"
-        ],
-        "cover": "",
-        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
-        "ability": [
-          "24 条专业设计指令（polish/critique/distill/bolder 等）",
-          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
-          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
-          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
-          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
-        ],
-        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端设计"
-        ],
-        "suitable": [
-          "Solo Founder / 独立开发者",
-          "全栈 / 前端工程师",
-          "用 AI 做 MVP 的产品经理",
-          "没有设计师的创业团队",
-          "想提升 AI 产出界面质感的普通用户"
-        ],
-        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
-      }
-    },
-    {
       "id": "add7ae05-ba73-405d-9723-f341c11a8d5b",
       "dateAdded": "20261028",
       "type": "github-daily",
@@ -86601,9 +86548,9 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 7431,
-      "forks": 885,
-      "starsAdded": 1446,
+      "stars": 7469,
+      "forks": 886,
+      "starsAdded": 1465,
       "createdAt": "2026-10-27T16:00:02.147Z",
       "metaData": {
         "forks": "0",
@@ -86661,6 +86608,59 @@
       }
     },
     {
+      "id": "65a960a1-45e1-4979-a938-566e8ad8e635",
+      "dateAdded": "20261028",
+      "type": "github-daily",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 90536,
+      "forks": 5376,
+      "starsAdded": 1449,
+      "createdAt": "2026-10-27T16:00:02.143Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
       "id": "425ab33c-a416-4481-96a6-c977b524e734",
       "dateAdded": "20261028",
       "type": "github-daily",
@@ -86668,8 +86668,8 @@
       "repo": "elayadesign/ai-design-skills",
       "description": "",
       "language": "",
-      "stars": 9223,
-      "forks": 663,
+      "stars": 9352,
+      "forks": 672,
       "starsAdded": 1395,
       "createdAt": "2026-10-27T23:00:02.001Z",
       "metaData": {
@@ -86721,9 +86721,9 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 3928,
-      "forks": 209,
-      "starsAdded": 1211,
+      "stars": 4011,
+      "forks": 215,
+      "starsAdded": 1204,
       "createdAt": "2026-10-27T16:00:02.174Z",
       "metaData": {
         "forks": "0",
@@ -86788,9 +86788,9 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 290836,
-      "forks": 43073,
-      "starsAdded": 1183,
+      "stars": 290896,
+      "forks": 43076,
+      "starsAdded": 1165,
       "createdAt": "2026-10-27T16:00:02.159Z",
       "metaData": {
         "forks": "0",
@@ -86849,9 +86849,9 @@
       "repo": "gitroomhq/postiz-app",
       "description": "📨 The ultimate agentic social media scheduling tool 🤖",
       "language": "TypeScript",
-      "stars": 39308,
-      "forks": 7507,
-      "starsAdded": 953,
+      "stars": 39383,
+      "forks": 7519,
+      "starsAdded": 951,
       "createdAt": "2026-10-27T16:00:02.151Z",
       "metaData": {
         "forks": "0",
@@ -86913,9 +86913,9 @@
       "repo": "togg53192-cmd/jailbreaks",
       "description": "LIST OF ALL MY JAILBREAKS",
       "language": "",
-      "stars": 5444,
-      "forks": 815,
-      "starsAdded": 890,
+      "stars": 5545,
+      "forks": 822,
+      "starsAdded": 902,
       "createdAt": "2026-10-27T16:00:02.183Z",
       "metaData": {
         "forks": "0",
@@ -86966,9 +86966,9 @@
       "repo": "nightly-labs/openbot",
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "language": "TypeScript",
-      "stars": 2365,
-      "forks": 245,
-      "starsAdded": 794,
+      "stars": 2446,
+      "forks": 252,
+      "starsAdded": 777,
       "createdAt": "2026-10-27T16:00:02.120Z",
       "metaData": {
         "forks": "0",
@@ -87028,9 +87028,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 306385,
-      "forks": 27276,
-      "starsAdded": 608,
+      "stars": 306444,
+      "forks": 27279,
+      "starsAdded": 617,
       "createdAt": "2026-10-27T16:00:02.135Z",
       "metaData": {
         "forks": "0",
