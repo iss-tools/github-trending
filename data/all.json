@@ -1,6 +1,71 @@
 {
   "all": [
     {
+      "id": "2a8fd38f-47e5-4bfe-8509-531fd9f4bfad",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "domain": "github.com",
+      "repo": "Leonxlnx/taste-skill",
+      "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-28T19:04:51.097Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "anti-slop",
+          "claude-code",
+          "codex",
+          "cursor",
+          "design-system",
+          "frontend",
+          "landing-page",
+          "ui-design",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tasteskill.dev",
+        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Agent Skill",
+          "UI 设计",
+          "反 AI 味",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
+        "ability": [
+          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
+          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
+          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
+          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
+          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
+        ],
+        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
+        "category": [
+          "开源项目",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "独立开发者和创业者：不请设计师也能做出非模板感官网",
+          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
+          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
+          "自由职业设计师：想把个人设计规则产品化交付",
+          "想做个人品牌或作品集的非技术人员"
+        ],
+        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
+      },
+      "type": "project",
+      "dateAdded": "20261028"
+    },
+    {
       "id": "f7066567-14a3-4393-8164-5e491b89d527",
       "url": "https://github.com/xiaolai/the-craft-of-selfteaching",
       "domain": "github.com",
