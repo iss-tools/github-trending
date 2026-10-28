@@ -1,6 +1,186 @@
 {
   "all": [
     {
+      "id": "f7066567-14a3-4393-8164-5e491b89d527",
+      "url": "https://github.com/xiaolai/the-craft-of-selfteaching",
+      "domain": "github.com",
+      "repo": "xiaolai/the-craft-of-selfteaching",
+      "description": "李笑来2019年开源的免费电子书，开源一周即登GitHub Trending第一。全书以Python为练手项目，核心传授'自学这门手艺'：通过学练用造循环掌握任何技能。亮点是'过早引用''刚需幻觉'等原创概念，以及中文圈罕见的正则与BNF深度讲解。局限是鸡汤浓度偏高、无实战项目、采用CC BY-NC-ND协议禁止商用和演绎。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-28T13:08:49.660Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "CC-BY-NC-ND license",
+        "homepage": "",
+        "description": "One has no future if one couldn't teach themself. Contribute to xiaolai/the-craft-of-selfteaching development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "李笑来",
+          "Python",
+          "自学方法论",
+          "开源电子书",
+          "Jupyter Notebook"
+        ],
+        "cover": "",
+        "title": "《自学是门手艺》深度评测：披着Python教程外衣的自学方法论",
+        "ability": [
+          "提供'学练用造'四步自学方法论闭环",
+          "原创独家概念：过早引用、刚需幻觉",
+          "用'语言视角'深度讲解正则表达式与BNF语法",
+          "Jupyter Notebook交互式阅读，代码可边读边跑",
+          "教你如何读懂官方文档而非依赖二手教程"
+        ],
+        "summary": "一本GitHub 16.8K Star的开源免费电子书，表面教Python，实则教你'如何自学任何技能'的方法论。",
+        "category": [
+          "学习资源",
+          "编程教程",
+          "开源书籍"
+        ],
+        "suitable": [
+          "想自学新技能但总是半途而废的人",
+          "刚接触编程、被教程地狱淹没的小白",
+          "想读懂英文官方文档的中级开发者",
+          "被正则表达式劝退过的程序员",
+          "教育工作者与知识内容创作者"
+        ],
+        "description": "李笑来2019年开源的免费电子书，开源一周即登GitHub Trending第一。全书以Python为练手项目，核心传授'自学这门手艺'：通过学练用造循环掌握任何技能。亮点是'过早引用''刚需幻觉'等原创概念，以及中文圈罕见的正则与BNF深度讲解。局限是鸡汤浓度偏高、无实战项目、采用CC BY-NC-ND协议禁止商用和演绎。"
+      },
+      "type": "project",
+      "dateAdded": "20261028"
+    },
+    {
+      "id": "65638f53-2b7b-4fbf-a31e-491c7cc17277",
+      "url": "https://github.com/expo/skills",
+      "domain": "github.com",
+      "repo": "expo/skills",
+      "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-28T13:06:45.818Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services - expo/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Expo",
+          "React Native",
+          "AI 编程助手",
+          "Agent Skills",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "expo/skills 深度评测：让 AI 编程助手真正“懂”Expo 的官方知识包",
+        "ability": [
+          "提供 20+ 份官方 SKILL.md 知识包，覆盖 Expo SDK 与 EAS 全链路",
+          "expo-overview 入口路由，自动把模糊任务分发到对应知识模块",
+          "与 Expo MCP Server 联动，AI 既能懂规则又能动手执行",
+          "一条命令安装，支持 Claude Code、Cursor、Codex 等主流工具",
+          "显著降低 AI 幻觉，避免推荐过时 API 与祖传代码"
+        ],
+        "summary": "Expo 官方推出的 SKILL.md 知识包，把 Expo 最佳实践直接灌进 Claude Code、Cursor 等 AI 编程工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 Claude Code/Cursor 做 Expo 开发的工程师",
+          "想从 React Web 跨界到 Native 的开发者",
+          "维护老 Expo 项目、需要 SDK 升级的团队",
+          "搭建 EAS CI/CD 的 DevOps 工程师",
+          "研究 Agent Skills 生态的 AI 工具爱好者"
+        ],
+        "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261028"
+    },
+    {
+      "id": "ae1dff11-82f4-445d-b4ae-12929d669865",
+      "url": "https://github.com/macro-inc/macro",
+      "domain": "github.com",
+      "repo": "macro-inc/macro",
+      "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-28T13:02:41.347Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai",
+          "ai-agents",
+          "all-in-one",
+          "crm",
+          "crm-system",
+          "email",
+          "linear",
+          "mcp",
+          "messaging",
+          "notes",
+          "notion",
+          "office",
+          "rust",
+          "slack",
+          "slack-alternative",
+          "startup",
+          "startup-tools",
+          "typescript",
+          "workspace"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://macro.com",
+        "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. - macro-inc/macro"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "统一工作台",
+          "Rust",
+          "AI Agent",
+          "AGPL-3.0"
+        ],
+        "cover": "",
+        "title": "Macro 深度评测：把整个公司装进一个可计算系统的开源统一工作台",
+        "ability": [
+          "统一收件箱与多合一工作区：整合 Email、Chat、Docs、Tasks、CRM 等 10 个 Block",
+          "双向链接图：所有跨模块引用原生互链，权限自动跟随频道",
+          "团队级共享记忆：每日自动汇总全部沟通与任务为 Markdown 记忆，可喂给任意 AI",
+          "Agent 原生架构：Agent 作为一等公民，基于 CRDT 与人协同实时编辑文档",
+          "MCP 一行接入：可无缝对接 Claude Code、Cursor 等 AI 客户端，无速率限制"
+        ],
+        "summary": "Macro 是一款用 Rust + SolidJS 打造的开源'公司操作系统'，把邮件、聊天、文档、任务、CRM 和 AI Agent 统一到一个可计算的工作台里。",
+        "category": [
+          "开发工具",
+          "协同办公",
+          "AI 编程"
+        ],
+        "suitable": [
+          "被 Slack+Notion+Linear+HubSpot 多工具割裂折磨的 5-30 人初创团队",
+          "希望 AI 真正理解公司上下文的 AI-Forward 工程团队",
+          "对数据主权敏感、需要源码可审计的技术团队",
+          "想研究现代协作软件架构（CRDT、Rust 微服务）的开发者",
+          "想用统一收件箱替代 Superhuman 的重度邮件用户"
+        ],
+        "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。"
+      },
+      "type": "project",
+      "dateAdded": "20261028"
+    },
+    {
       "id": "01229575-6ba8-431e-9072-60a4a388263e",
       "url": "https://github.com/elayadesign/ai-design-skills",
       "domain": "github.com",
@@ -10921,8 +11101,8 @@
       "forks": 0,
       "createdAt": "2026-09-14T12:36:36.649Z",
       "metaData": {
-        "forks": "12442",
-        "stars": "94028",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "awesome",
           "claude",
@@ -13098,12 +13278,12 @@
       "forks": 0,
       "createdAt": "2026-09-10T09:07:14.164Z",
       "metaData": {
-        "forks": "225",
-        "stars": "6364",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "MIT license",
         "homepage": "https://jakub.kr/skills",
-        "description": "A collection of agent skills that help you build a great interface. - jakubkrehel/skills"
+        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
       },
       "summaryData": {
         "tags": [

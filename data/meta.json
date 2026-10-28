@@ -2,15 +2,15 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 582
+      "count": 585
     },
     {
       "tag": "开源项目",
-      "count": 412
+      "count": 421
     },
     {
       "tag": "AI Agent",
-      "count": 332
+      "count": 336
     },
     {
       "tag": "自动化",
@@ -22,7 +22,7 @@
     },
     {
       "tag": "Claude Code",
-      "count": 182
+      "count": 189
     },
     {
       "tag": "Claude",
@@ -38,23 +38,23 @@
     },
     {
       "tag": "本地部署",
-      "count": 101
+      "count": 102
     },
     {
       "tag": "Rust",
-      "count": 90
+      "count": 92
     },
     {
       "tag": "工作流",
       "count": 81
     },
     {
-      "tag": "LLM",
+      "tag": "GitHub开源",
       "count": 80
     },
     {
-      "tag": "GitHub开源",
-      "count": 79
+      "tag": "LLM",
+      "count": 80
     },
     {
       "tag": "Agent",
@@ -70,11 +70,11 @@
     },
     {
       "tag": "Cursor",
-      "count": 69
+      "count": 71
     },
     {
       "tag": "TDD",
-      "count": 69
+      "count": 70
     },
     {
       "tag": "开源工具",
@@ -84,19 +84,19 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1576
+      "count": 1592
     },
     {
       "name": "AI 编程",
-      "count": 1030
+      "count": 1044
     },
     {
       "name": "开源项目",
-      "count": 382
+      "count": 391
     },
     {
       "name": "效率工具",
-      "count": 376
+      "count": 380
     },
     {
       "name": "开发者工具",
@@ -116,7 +116,7 @@
     },
     {
       "name": "AI 应用",
-      "count": 59
+      "count": 61
     },
     {
       "name": "生产力工具",
@@ -182,7 +182,7 @@
     },
     {
       "name": "开发者与极客",
-      "count": 61
+      "count": 63
     },
     {
       "name": "技术团队负责人",
@@ -233,62 +233,62 @@
       "count": 35
     },
     {
+      "name": "AI 编程爱好者",
+      "count": 35
+    },
+    {
       "name": "AI 开发者",
       "count": 35
     },
     {
       "name": "专业开发团队",
       "count": 35
-    },
-    {
-      "name": "企业技术负责人",
-      "count": 35
     }
   ],
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 407
+      "count": 408
     },
     {
       "name": "ai",
-      "count": 359
+      "count": 364
     },
     {
       "name": "ai-agents",
-      "count": 323
+      "count": 327
     },
     {
       "name": "llm",
-      "count": 295
+      "count": 296
     },
     {
       "name": "mcp",
-      "count": 270
+      "count": 272
     },
     {
       "name": "claude",
-      "count": 238
+      "count": 240
     },
     {
       "name": "agent-skills",
-      "count": 236
+      "count": 239
     },
     {
       "name": "codex",
-      "count": 226
+      "count": 228
     },
     {
       "name": "skills",
-      "count": 168
+      "count": 171
+    },
+    {
+      "name": "typescript",
+      "count": 158
     },
     {
       "name": "python",
       "count": 157
-    },
-    {
-      "name": "typescript",
-      "count": 152
     },
     {
       "name": "developer-tools",
@@ -299,12 +299,12 @@
       "count": 123
     },
     {
-      "name": "anthropic",
-      "count": 114
+      "name": "agent",
+      "count": 116
     },
     {
-      "name": "agent",
-      "count": 112
+      "name": "anthropic",
+      "count": 114
     },
     {
       "name": "claude-skills",
@@ -316,7 +316,7 @@
     },
     {
       "name": "ai-agent",
-      "count": 90
+      "count": 91
     },
     {
       "name": "cursor",
@@ -324,25 +324,25 @@
     },
     {
       "name": "agentic-ai",
-      "count": 86
+      "count": 87
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 644
+      "count": 645
     },
     {
       "name": "TypeScript",
-      "count": 482
+      "count": 485
     },
     {
       "name": "JavaScript",
-      "count": 238
+      "count": 240
     },
     {
       "name": "Rust",
-      "count": 147
+      "count": 153
     },
     {
       "name": "Go",
@@ -350,7 +350,7 @@
     },
     {
       "name": "Shell",
-      "count": 75
+      "count": 78
     },
     {
       "name": "C++",
@@ -374,15 +374,15 @@
     },
     {
       "name": "CSS",
-      "count": 10
+      "count": 12
+    },
+    {
+      "name": "Jupyter Notebook",
+      "count": 11
     },
     {
       "name": "Kotlin",
       "count": 10
-    },
-    {
-      "name": "Jupyter Notebook",
-      "count": 9
     },
     {
       "name": "PowerShell",
@@ -437,8 +437,8 @@
     {
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "stars": 306844,
-      "appearances": 20
+      "stars": 307141,
+      "appearances": 21
     },
     {
       "repo": "mattpocock/skills",
@@ -449,7 +449,7 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 291255,
+      "stars": 291485,
       "appearances": 28
     },
     {
@@ -461,13 +461,13 @@
     {
       "repo": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 225698,
+      "stars": 225825,
       "appearances": 8
     },
     {
       "repo": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 222536,
+      "stars": 222654,
       "appearances": 9
     }
   ],
@@ -475,19 +475,19 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 291255,
+      "stars": 291485,
       "appearances": 28
     },
     {
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "stars": 92123,
+      "stars": 92573,
       "appearances": 24
     },
     {
       "repo": "DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 178544,
+      "stars": 178865,
       "appearances": 22
     },
     {
@@ -499,13 +499,19 @@
     {
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "stars": 306844,
-      "appearances": 20
+      "stars": 307141,
+      "appearances": 21
     },
     {
       "repo": "addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
       "stars": 107984,
+      "appearances": 17
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": 91951,
       "appearances": 17
     },
     {
@@ -515,15 +521,9 @@
       "appearances": 17
     },
     {
-      "repo": "pbakaus/impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "stars": 91182,
-      "appearances": 16
-    },
-    {
       "repo": "mksglu/context-mode",
       "url": "https://github.com/mksglu/context-mode",
-      "stars": 32614,
+      "stars": 32655,
       "appearances": 16
     },
     {

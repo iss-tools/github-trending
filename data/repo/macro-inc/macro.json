@@ -1,0 +1,75 @@
+{
+  "id": "ae1dff11-82f4-445d-b4ae-12929d669865",
+  "url": "https://github.com/macro-inc/macro",
+  "domain": "github.com",
+  "repo": "macro-inc/macro",
+  "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-28T13:02:41.347Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agents",
+      "all-in-one",
+      "crm",
+      "crm-system",
+      "email",
+      "linear",
+      "mcp",
+      "messaging",
+      "notes",
+      "notion",
+      "office",
+      "rust",
+      "slack",
+      "slack-alternative",
+      "startup",
+      "startup-tools",
+      "typescript",
+      "workspace"
+    ],
+    "license": "AGPL-3.0 license",
+    "homepage": "https://macro.com",
+    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. - macro-inc/macro"
+  },
+  "summaryData": {
+    "tags": [
+      "开源项目",
+      "统一工作台",
+      "Rust",
+      "AI Agent",
+      "AGPL-3.0"
+    ],
+    "cover": "",
+    "title": "Macro 深度评测：把整个公司装进一个可计算系统的开源统一工作台",
+    "ability": [
+      "统一收件箱与多合一工作区：整合 Email、Chat、Docs、Tasks、CRM 等 10 个 Block",
+      "双向链接图：所有跨模块引用原生互链，权限自动跟随频道",
+      "团队级共享记忆：每日自动汇总全部沟通与任务为 Markdown 记忆，可喂给任意 AI",
+      "Agent 原生架构：Agent 作为一等公民，基于 CRDT 与人协同实时编辑文档",
+      "MCP 一行接入：可无缝对接 Claude Code、Cursor 等 AI 客户端，无速率限制"
+    ],
+    "summary": "Macro 是一款用 Rust + SolidJS 打造的开源'公司操作系统'，把邮件、聊天、文档、任务、CRM 和 AI Agent 统一到一个可计算的工作台里。",
+    "category": [
+      "开发工具",
+      "协同办公",
+      "AI 编程"
+    ],
+    "suitable": [
+      "被 Slack+Notion+Linear+HubSpot 多工具割裂折磨的 5-30 人初创团队",
+      "希望 AI 真正理解公司上下文的 AI-Forward 工程团队",
+      "对数据主权敏感、需要源码可审计的技术团队",
+      "想研究现代协作软件架构（CRDT、Rust 微服务）的开发者",
+      "想用统一收件箱替代 Superhuman 的重度邮件用户"
+    ],
+    "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。"
+  },
+  "contentDetail": "# Macro（macro-inc/macro）深度评测：一款想把\"整个公司塞进一个可计算系统\"的开源统一工作台\n**一句话总结**：Macro 是一款用 Rust + SolidJS 打造、以 AGPL-3.0 完全开源的\"公司操作系统\"，它把 Email、Chat、Docs、Tasks、Calls、CRM、文件存储和 AI Agent 装进同一个后端，并用双向链接图和团队级共享记忆把它们串联起来——它的野心不是再造一个 Notion 或 Slack，而是让一家 20 人以内的公司第一次变得\"可计算\"。截至 2026 年 10 月，仓库约 5.2k stars、7,464 commits、446 forks，曾登顶 GitHub Trending 榜首。它值得关注，但**目前更适合作为\"尝鲜+自托管参考架构\"而非\"立刻替换全家桶\"的方案**。\n---\n## 一、背景与痛点：为什么\"又造了个工作台\"？\nMacro 的诞生故事非常具体：创始团队把上一个创业公司做到了约 20 人规模，但很快发现\"每个团队都有自己的工具\"——销售活在 HubSpot/Salesforce、工程师活在 Linear、Notion 沦为无人维护的坟场。创始人在官方 FAQ 中把它叫作 **\"Notion 的巴尔干化\"（Notion Balkanization）**。\n团队为此付出的代价是用一堆 MCP 连接器和 Zapier 工作流把各个 SaaS 缝起来，但**公司依然\"不可计算\"**——你没法问一个 AI：\"Project Alamo 最新进展是什么？\"它需要分别去 Slack、Notion、Gmail、Drive 里翻找，还可能漏掉那个真正有最新结论但没被记录下来的 Zoom 会议。\nMacro 的设计哲学因此非常激进：**不做\"再加一个连接器\"，而是从零开始把所有工作面做成同一个系统的不同\"Block\"**。它的 15 人团队已经在内部吃了两年狗粮（dogfooding），于 2026 年 8 月登顶 GitHub Trending，并完成由 a16z 领投的约 3000 万美元融资。\n如果你也曾经历过\"客户邮件 → Slack 截图 → Notion 链接 → Linear 工单 → 再回去 Slack 通知\"这种荒诞流程，你会立刻理解它在解什么痛。\n---\n## 二、核心亮点与技术架构\n### 1. 双向链接图：一切皆为\"Block\"\nMacro 把自己拆成 10 个 Block：Email、Messages、Tasks、Docs、Canvas、Agents、Calls、File storage、Pull requests、CRM。每个 Block 都是针对其场景**专门构造**的（不是 Notion 那种\"数据库 + Markdown 通用原语\"），但所有 Block 共享同一个后端，**任何跨 Block 的引用都以双向图（bidirectional graph）原生存储**。\n这个设计带来一个很微妙但极其重要的体验差异：当你在频道里 @ 了一个客户记录，这条消息就永久双向关联到那条 CRM 数据——之后任何人打开客户记录都能倒查当初是谁在哪个语境下提到的它。这种\"权限跟随频道\"的模型也是 Macro 的特色：**@ 到频道里的东西自动对所有频道成员可见，新人加入即获得全部历史，离开即失去**，从机制上消灭了 Slack + Notion 组合里\"请给我开放权限\"的尴尬。\n### 2. 团队级共享记忆：让 Agent 拥有\"公司大脑\"\n这是 Macro 最具野心、也最容易被低估的设计。大多数 AI 助手的记忆只来自\"你跟它的聊天历史\"，而 Macro **每天跑一个 cron 任务，把你所有 DM、频道、收发的邮件、创建和完成的任务一次性合成到一份 Markdown 形式的团队记忆里**，并与昨天的记忆合并。\n因为记忆是纯 Markdown 存储，你可以导出、手动让 AI 修改，也可以喂给任何模型或通过 MCP 暴露给外部 Agent。这份记忆的核心价值不是\"AI 更聪明\"，而是**让 AI 第一次拥有\"公司上下文\"而不只是\"个人对话上下文\"**。\n### 3. Agent-native：一等公民而非补丁\n绝大多数工具的 AI 是后装的——加个 Copilot 按钮、加个 MCP 插件。Macro 则把 Agent 当作和人类用户**完全同等的一等公民**：它们继承用户的权限，可以 @ 任何工作区对象，可以**作为 CRDT 协作系统里的\"对等编辑者\"实时修改打开或关闭中的文档**，冲突由与人相同的机制处理。\n官方文档里有个很可爱的例子：Macro 团队有一个 Automation，每天自动扫描所有频道看谁赢了办公室 Pool Games，然后更新一个 Pool Games.md 文档——如果有人已经手工编辑过，Agent 会感知并放弃更新，冲突由 CRDT 自动消化。\n### 4. 技术栈硬核度：Rust + SolidJS + CRDT + Cloudflare Durable Objects\nMacro 的工程栈相当重：\n- **前端**：SolidJS（比 React 更细粒度响应、性能更好）\n- **后端**：Rust 服务集群，仓库结构里**有 42 个可部署服务和 167 个 Rust 库**\n- **协同编辑**：基于 CRDT（无冲突复制数据类型）+ Cloudflare Durable Objects，官方宣称\"编辑几乎瞬时同步，不像 Google Docs 那样 ka-chunk 卡顿\"\n- **Agent 框架**：基于 0xPlaygrounds 的 rig（Rust LLM 应用框架）的 fork\n选 Rust 而不是 Node/Go 是个有趣信号：这说明团队把\"性能+可靠性\"当作产品差异化的一部分，而不是抢 MVP 速度。代价就是 contributor 门槛远高于 TypeScript 项目。\n---\n## 三、上手门槛与部署体验（这是它最大的软肋之一）\n### 托管版：15 分钟起步\n最简单的路径是直接用 [macro.com](https://macro.com) 的托管版：注册 → 连接 Google 账号 → 进入统一收件箱。官方估算约 15 分钟完成。免费个人版有存储和 AI 用量限制，并强制\"Sent with Macro\"签名；**付费版 $40/席位/月**，企业版单独报价，**团队版没有免费计划**。\n### 自托管：**这是一项严肃的工程，不是\"一键 docker up\"**\n仓库使用 **Nix + Docker Compose + Pulumi** 的组合，本地栈需要拉起 Postgres、Redis、LocalStack、OpenSearch、Kafka、FusionAuth 等一整套依赖。开发环境可以用 stub 凭证起，但要跑通真实 Gmail、GitHub、Stripe 等集成，需要自己去申请对应的审批凭证。\n官方 FAQ 也坦率承认：截至 2026 年 6 月，自托管**并不是他们的首要关注点**，托管版才拥有 iOS 应用、Apple 审批、Google Mail 审批、GitHub PR 集成、SOC 2 Type II 等完整能力。FedRAMP 等需要独立部署的客户需要联系 self-host@macro.com。\n**一句话避坑**：如果你的团队没有一位能维护 Kafka + OpenSearch + FusionAuth 全栈的运维工程师，自托管路径可以先放弃，把它当作\"读源码学习这套架构\"的资料库价值更高。\n### MCP 接入：一行命令\n如果只是想把 Macro 当作你 Claude Code / Codex / Cursor 的\"公司上下文大脑\"，倒是非常丝滑：\n```bash\nclaude mcp add --transport http macro https://mcp-server.macro.com/mcp\n```\n官方宣称 MCP 和工具面**几乎覆盖了 UI 能做的一切**，且对 MCP 没有速率限制，还暴露了能直接搜邮件附件 PDF 的统一搜索工具（不需要 Agent 先拉 thread 再拉 attachment）。这是目前体验 ROI 最高的接入方式。\n---\n## 四、社区活跃度与生命力\n截至 2026 年 10 月 28 日的数据：\n- **Stars**：约 5.2k（曾在 8 月单日新增 1,180 颗 star）\n- **Forks**：446，**Commits**：7,464+\n- **仓库年龄**：约 9 个月，最近一次 commit 在几小时前\n- **Open Issues**：31（相对体量很克制），**Open PRs**：207（合并节奏很快）\n- **最新版本**：v2026.8.14.0\n- **官方欢迎 PR**：monorepo 直接接受社区贡献，提供 teo@macro.com 引导新人\n更值得关注的是 macro-inc 组织下的生态仓库：他们维护着 Tauri、rig（Rust LLM 框架）、LibreOfficeKit、pdf.js 等多个 fork，说明这家公司不只是发了个仓库蹭热点，而是**真的在围绕自己的产品做底层技术投入**。\n风险信号也要看到：约 15 人使用两年是真实但偏小的样本，仓库存在\"请给我们 star\"的引导，部分增长带有推广属性。\n---\n## 五、竞品对比：它在协作软件版图里处于什么位置？\n| 维度 | **Macro** | Notion | Slack + Linear | Obsidian |\n|---|---|---|---|---|\n| 核心定位 | 公司级统一工作台 | 通用文档/数据库 | 沟通 + 工程任务 | 个人知识库 |\n| 邮件能力 | ✅ 原生（Gmail/Workspace） | ❌（收购 Skiff 后勉强） | ❌ | ❌ |\n| CRM | ✅ 原生双向链接 | 需要拼数据库 | 需外挂 HubSpot | ❌ |\n| 协同编辑 | ✅ CRDT + Agent 对等编辑 | ✅ 但非 CRDT | ✅ 但碎片化 | ❌（默认单人） |\n| Agent 原生 | ✅ 一等公民 + MCP 全量暴露 | 较弱（Notion AI 补丁式） | 较弱 | 插件生态 |\n| 开源协议 | **AGPL-3.0 全开源** | 闭源 | 闭源 | 闭源 |\n| 自托管 | ✅ 但工程量大 | ❌ | ❌ | ✅ |\n| Android | ❌（规划中） | ✅ | ✅ | ✅ |\n| 学习曲线 | 中等偏陡 | 低 | 低 | 中等 |\n| 适合团队规模 | 5–30 人 | 不限 | 不限 | 个人/小团队 |\n**关键差异化**：Macro 官方对 Notion 的批评很尖锐——\"Notion 基于数据库和 Markdown 的抽象是错误层级，实际你需要到代码层；而有了 Agent 之后，这正是你想要的\"。它没有试图做\"功能等价\"，而是赌**整合本身**就是产品：聊天比 Slack 更聚焦、任务比 Linear 更轻、文档比 Notion 更 markdown-native、CRM 比 HubSpot 更简单，但它们共享同一个后端和双向图。\n---\n## 六、目标人群与真实收益\n**非常适合**：\n- 正在被\"Slack + Linear + Notion + HubSpot + Superhuman\"五件套折磨的 **5–30 人早期创业公司**\n- 想让 Claude Code / Codex 真正理解公司上下文、而不仅仅是读代码的 **AI-Forward 团队**\n- 已有销售/工程/产品多角色协作需求，但还没到需要 Salesforce 这种重 CRM 的阶段\n- 对数据主权敏感、希望源码可控的团队（哪怕只是审计）\n**收益很实在**：统一收件箱 + j/k/e 快捷键可以替代 Superhuman 的 30 美元/月；CRM + 邮件聚合可以替代早期 HubSpot；文档 + 任务 + 频道一体化可以省掉一套 Zapier 连接器费用；MCP 端点免费用，相当于免费送了一份\"团队上下文记忆\"给所有 AI 客户端。\n**不建议**：\n- **重度依赖 Outlook / Microsoft 365 的企业**（官方文档说\"计划支持\"，但 FAQ 还写着\"coming soon\"，文档内部不一致，下单前务必确认）\n- **Android 用户刚需**（尚未发布）\n- **需要成熟企业管控**（SSO/合规/审计深度）的大型组织\n- **只需要一个简单 AI 聊天机器人**的个人用户（Overkill）\n---\n## 七、局限与不足（认真评估，不粉饰）\n1. **AGPL-3.0 的网络条款传染性**。从 2026 年 5 月 31 日起，Macro 从 BSL 切到 AGPLv3，明确\"不是 open core\"。如果你基于它做修改并通过网络对外提供服务，**你也要开源你的修改**；想闭源商用需要单独谈商业授权（licensing@macro.com）。这对想拿它做 SaaS 二次包装的团队是**红线**，对纯内部使用则无影响。\n2. **自托管运营成本被严重低估**。42 个服务 + Kafka + OpenSearch + FusionAuth + Pulumi 的栈，相当于你要维护一个小型 SaaS 公司的基础设施。官方 FAQ 的坦诚值得点赞，但\"今年晚些时候我们会专注改进自托管\"翻译过来就是：**现在很难**。\n3. **AI 记忆的\"先进性\"没有 benchmark**。README 说\"Macro 拥有最好的工作记忆\"，但这是没有第三方基准支持的营销话术，需要自己实测。\n4. **Agent 权限面极大且无速率限制**。MCP 几乎覆盖全 UI 能力 + 无 rate limit，意味着一个跑偏的 Agent 可能造成大范围破坏。官方自己都建议先用 \"draft, don't send\" 跑一段时间建立信任。\n5. **强观点设计**。\"issue tracking 从来就没工作过\"是官方明确立场——他们做的是轻量任务而非完整项目管理。如果你的工程流程依赖 Linear 那种 Cycle、Triage、Roadmap，会很难受。\n6. **文档与产品迭代速度略错位**。OSSNav 的评测指出，最新 release notes 提到 Outlook 已上线，但 public pricing FAQ 还写\"coming soon\"，说明文档跟不上开发节奏。\n---\n## 八、行动建议\n如果你被这个项目吸引，**按以下顺序尝试，不要直接 all-in**：\n1. **第一周**：用托管版免费个人计划连一个 Gmail，把统一收件箱 + j/k/e 快捷键用熟，看是否真的能替代 Superhuman 体验。\n2. **第二周**：把一个真实的小项目从 Notion/Linear 搬过来，重点测试\"邮件 → 任务 → 文档 → 频道\"的双向链路是否流畅，这是它的核心承诺。\n3. **第三周**：用一行 MCP 命令把 Macro 接到 Claude Code 或 Cursor，问它几个\"项目最新进展\"类问题，对比你过去用 Slack + Notion 搜出来的答案质量——这是判断\"团队级记忆\"是否真有用的最直接方法。\n4. **判断点**：如果统一收件箱为你省了切窗时间、Agent 能正确回答项目状态问题，再考虑付费；如果感受到的是集成缺口和治理成本大于整合收益，那这一次实验就足够了，不用勉强迁移。\n**最终评判**：Macro 不是又一个 Notion 替代品，它是协作软件领域少有的\"重新发问\"——\"如果 Agent 是团队的一等成员，工作软件应该长什么样？\"即便你不打算迁移，**它的源码也是过去一年里最值得研究的工作流软件架构参考之一**：一个把\"双向图 + 团队记忆 + Agent 原生权限\"当作设计原点的系统，会在未来几年被反复引用。给它一个 star，给它一个周末，都值得。",
+  "type": "project",
+  "dateAdded": "20261028"
+}
