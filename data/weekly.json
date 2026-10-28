@@ -22150,9 +22150,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 50054,
-      "forks": 3142,
-      "starsAdded": 16593,
+      "stars": 50449,
+      "forks": 3180,
+      "starsAdded": 16388,
       "createdAt": "2026-10-25T16:00:03.697Z",
       "metaData": {
         "forks": "0",
@@ -22202,9 +22202,9 @@
       "repo": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 107986,
-      "forks": 6825,
-      "starsAdded": 9241,
+      "stars": 108247,
+      "forks": 6846,
+      "starsAdded": 8802,
       "createdAt": "2026-10-25T16:00:03.716Z",
       "metaData": {
         "forks": "0",
@@ -22276,9 +22276,9 @@
       "repo": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars": 136919,
-      "forks": 13069,
-      "starsAdded": 7183,
+      "stars": 137120,
+      "forks": 13083,
+      "starsAdded": 7268,
       "createdAt": "2026-10-25T16:00:03.733Z",
       "metaData": {
         "forks": "0",
@@ -22412,6 +22412,65 @@
       }
     },
     {
+      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 117438,
+      "forks": 22481,
+      "starsAdded": 4882,
+      "createdAt": "2026-10-26T11:00:04.786Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
       "id": "5b3c8dc3-e5be-48b3-85d9-ac772951b65e",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22419,9 +22478,9 @@
       "repo": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 222343,
-      "forks": 29752,
-      "starsAdded": 5070,
+      "stars": 222458,
+      "forks": 29773,
+      "starsAdded": 4334,
       "createdAt": "2026-10-25T16:00:03.712Z",
       "metaData": {
         "forks": "0",
@@ -22525,65 +22584,6 @@
       }
     },
     {
-      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 117263,
-      "forks": 22459,
-      "starsAdded": 3437,
-      "createdAt": "2026-10-26T11:00:04.786Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
-      }
-    },
-    {
       "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22591,9 +22591,9 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 225443,
-      "forks": 22524,
-      "starsAdded": 3286,
+      "stars": 225591,
+      "forks": 22533,
+      "starsAdded": 4039,
       "createdAt": "2026-10-25T16:00:03.748Z",
       "metaData": {
         "forks": "0",
@@ -22635,54 +22635,64 @@
       }
     },
     {
-      "id": "8eb83d21-659f-4081-81d7-900456611cf4",
+      "id": "b56753b4-3bdc-42bf-8256-c67fdfa8476c",
       "dateAdded": "202644",
       "type": "github-weekly",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "repo": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars": 14059,
-      "forks": 1003,
-      "starsAdded": 2838,
-      "createdAt": "2026-10-25T16:00:03.735Z",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 22846,
+      "forks": 3105,
+      "starsAdded": 3081,
+      "createdAt": "2026-10-26T11:00:04.794Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
         "license": "MIT license",
-        "homepage": "",
-        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
       },
       "summaryData": {
         "tags": [
-          "GitHub",
-          "Rust",
-          "MCP",
-          "AI-Agent",
-          "效率工具"
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
         ],
         "cover": "",
-        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
         "ability": [
-          "长期记忆存储",
-          "跨 Agent 上下文共享",
-          "语义检索与回溯",
-          "高性能数据处理",
-          "MCP 协议标准集成"
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
         ],
-        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
         "category": [
           "开发工具",
-          "AI 编程"
+          "AI 编程",
+          "SEO 营销"
         ],
         "suitable": [
-          "开发者与开发团队",
-          "技术主管与架构师",
-          "AI 工具集成商",
-          "AI 研究爱好者"
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
         ],
-        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
       }
     },
     {
@@ -22693,9 +22703,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 33404,
-      "forks": 3673,
-      "starsAdded": 2822,
+      "stars": 33480,
+      "forks": 3676,
+      "starsAdded": 2789,
       "createdAt": "2026-10-25T16:00:03.710Z",
       "metaData": {
         "forks": "0",
@@ -22746,9 +22756,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 79767,
-      "forks": 9361,
-      "starsAdded": 2683,
+      "stars": 79827,
+      "forks": 9365,
+      "starsAdded": 2296,
       "createdAt": "2026-10-25T16:00:03.705Z",
       "metaData": {
         "forks": "0",
@@ -22812,67 +22822,6 @@
       }
     },
     {
-      "id": "b56753b4-3bdc-42bf-8256-c67fdfa8476c",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/AgriciDaniel/claude-seo",
-      "repo": "AgriciDaniel/claude-seo",
-      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-      "language": "Python",
-      "stars": 22691,
-      "forks": 3099,
-      "starsAdded": 2546,
-      "createdAt": "2026-10-26T11:00:04.794Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-seo",
-          "claude-code",
-          "claude-code-skill",
-          "marketing-automation",
-          "open-source",
-          "seo"
-        ],
-        "license": "MIT license",
-        "homepage": "https://skool.com/ai-marketing-hub-pro",
-        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "SEO 审计",
-          "开源项目",
-          "AI Agent",
-          "GEO/AEO"
-        ],
-        "cover": "",
-        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
-        "ability": [
-          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
-          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
-          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
-          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
-          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
-        ],
-        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "SEO 营销"
-        ],
-        "suitable": [
-          "管理多个客户站点的 SEO Agency 从业者",
-          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
-          "独立 SEO 顾问（用于现场谈单和交付）",
-          "已有 Claude Code 订阅的独立开发者",
-          "想做 GEO/AEO 优化的内容创作者"
-        ],
-        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
-      }
-    },
-    {
       "id": "a16078f2-2477-418c-ad76-df5d65af7a03",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22930,6 +22879,57 @@
       }
     },
     {
+      "id": "8eb83d21-659f-4081-81d7-900456611cf4",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "repo": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 14131,
+      "forks": 1007,
+      "starsAdded": 2239,
+      "createdAt": "2026-10-25T16:00:03.735Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors - akitaonrails/ai-memory"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Rust",
+          "MCP",
+          "AI-Agent",
+          "效率工具"
+        ],
+        "cover": "",
+        "title": "ai-memory：AI Agent 的跨平台持久化记忆层",
+        "ability": [
+          "长期记忆存储",
+          "跨 Agent 上下文共享",
+          "语义检索与回溯",
+          "高性能数据处理",
+          "MCP 协议标准集成"
+        ],
+        "summary": "为 AI 编程助手提供长期记忆和跨工具上下文共享的 Rust 开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "开发者与开发团队",
+          "技术主管与架构师",
+          "AI 工具集成商",
+          "AI 研究爱好者"
+        ],
+        "description": "ai-memory 是一个基于 Rust 和 MCP 协议的开源项目，专为 AI 编程 Agent 打造。它能持久化存储对话历史与决策，支持 Claude、Cursor 等不同工具间共享记忆，有效解决 AI“健忘”问题，大幅提升协作与开发效率。"
+      }
+    },
+    {
       "id": "e2553922-6f5d-4f69-9af6-66558aca2df4",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22937,9 +22937,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 30807,
-      "forks": 8237,
-      "starsAdded": 1881,
+      "stars": 30904,
+      "forks": 8265,
+      "starsAdded": 1988,
       "createdAt": "2026-10-25T16:00:03.751Z",
       "metaData": {
         "forks": "0",
@@ -23064,9 +23064,9 @@
       "repo": "fastapi/fastapi",
       "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "language": "Python",
-      "stars": 104154,
+      "stars": 104201,
       "forks": 10132,
-      "starsAdded": 1066,
+      "starsAdded": 1089,
       "createdAt": "2026-10-27T13:00:04.861Z",
       "metaData": {
         "forks": "0",
@@ -23138,9 +23138,9 @@
       "repo": "android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars": 9905,
-      "forks": 640,
-      "starsAdded": 823,
+      "stars": 9930,
+      "forks": 641,
+      "starsAdded": 873,
       "createdAt": "2026-10-25T16:00:03.728Z",
       "metaData": {
         "forks": "0",
