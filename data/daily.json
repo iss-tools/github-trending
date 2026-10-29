@@ -87515,8 +87515,8 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 48800,
-      "forks": 6046,
+      "stars": 48957,
+      "forks": 6057,
       "starsAdded": 2371,
       "createdAt": "2026-10-28T16:00:02.114Z",
       "metaData": {
@@ -87578,8 +87578,8 @@
       "repo": "elayadesign/ai-design-skills",
       "description": "",
       "language": "",
-      "stars": 11563,
-      "forks": 833,
+      "stars": 11671,
+      "forks": 846,
       "starsAdded": 2139,
       "createdAt": "2026-10-28T16:00:02.038Z",
       "metaData": {
@@ -87757,8 +87757,8 @@
       "repo": "togg53192-cmd/jailbreaks",
       "description": "LIST OF ALL MY JAILBREAKS",
       "language": "",
-      "stars": 7703,
-      "forks": 1088,
+      "stars": 7844,
+      "forks": 1110,
       "starsAdded": 1477,
       "createdAt": "2026-10-28T16:00:02.165Z",
       "metaData": {
@@ -87810,8 +87810,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 93789,
-      "forks": 5541,
+      "stars": 94052,
+      "forks": 5558,
       "starsAdded": 1472,
       "createdAt": "2026-10-28T16:00:02.132Z",
       "metaData": {
@@ -87862,6 +87862,72 @@
       }
     },
     {
+      "id": "03e98efa-8f47-4bc8-bd1a-e2bdf3d44839",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 6999,
+      "forks": 1075,
+      "starsAdded": 1190,
+      "createdAt": "2026-10-29T11:00:02.125Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "expo",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.openmausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
       "id": "79f3616e-8a2f-4257-a959-ef576c81389b",
       "dateAdded": "20261029",
       "type": "github-daily",
@@ -87869,8 +87935,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 307782,
-      "forks": 27373,
+      "stars": 307860,
+      "forks": 27379,
       "starsAdded": 1095,
       "createdAt": "2026-10-28T16:00:02.105Z",
       "metaData": {
@@ -87931,8 +87997,8 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 5528,
-      "forks": 280,
+      "stars": 5605,
+      "forks": 289,
       "starsAdded": 1068,
       "createdAt": "2026-10-28T16:00:02.011Z",
       "metaData": {
@@ -87998,8 +88064,8 @@
       "repo": "nightly-labs/openbot",
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "language": "TypeScript",
-      "stars": 3511,
-      "forks": 335,
+      "stars": 3569,
+      "forks": 338,
       "starsAdded": 1054,
       "createdAt": "2026-10-28T16:00:02.156Z",
       "metaData": {
@@ -88191,6 +88257,206 @@
           "养老照护开发者"
         ],
         "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。"
+      }
+    },
+    {
+      "id": "cf346759-a888-4053-a82e-4e0fb3f68354",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "repo": "Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "language": "Shell",
+      "stars": 28575,
+      "forks": 4014,
+      "starsAdded": 538,
+      "createdAt": "2026-10-29T11:00:02.203Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-assisted-development",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "game-design",
+          "game-development",
+          "gamedev",
+          "godot",
+          "indie-game-dev",
+          "unity",
+          "unreal-engine"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. - Donchitos/Claude-Code-Game-Studios"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "游戏开发",
+          "AI Agent",
+          "开源模板",
+          "独立开发"
+        ],
+        "cover": "",
+        "title": "Claude-Code-Game-Studios 深度评测：把 Claude Code 变成一家虚拟游戏工作室",
+        "ability": [
+          "三层 Agent 架构（总监-部门负责人-专员）模拟真实工作室协作",
+          "74 个覆盖游戏全生命周期的 Slash Skill 命令（设计到发行）",
+          "15 个自动化 Hook 拦截魔法数字、危险操作并保护上下文",
+          "三档严格度旋钮（minimal/standard/full）灵活控制流程重量",
+          "路径级编码规则：写到哪个目录自动启用哪套规范"
+        ],
+        "summary": "一个开源 Claude Code 模板仓库，用 49 个分层 Agent、74 个 Skill 和 15 个 Hook 把 AI 对话升级为带创意总监、主程、QA 的完整游戏工作室流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "游戏开发"
+        ],
+        "suitable": [
+          "有引擎基础的独立游戏开发者",
+          "Game Jam 参赛者",
+          "想学游戏工作室 SOP 的开发者",
+          "2-5 人小型游戏团队",
+          "AI Agent 框架研究者"
+        ],
+        "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
+      }
+    },
+    {
+      "id": "42eeada2-48b4-4a32-9967-62912a07f4c6",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 104161,
+      "forks": 9190,
+      "starsAdded": 324,
+      "createdAt": "2026-10-29T11:00:02.184Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "7672e4db-66e1-4591-be45-64deab087ad0",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "repo": "CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 7739,
+      "forks": 1028,
+      "starsAdded": 240,
+      "createdAt": "2026-10-29T11:00:02.193Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui",
+          "agent-governance",
+          "ai-agents",
+          "browser-automation",
+          "copilotkit",
+          "generative-ui",
+          "mcp"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.copilotkit.ai/openbot",
+        "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent. - CopilotKit/OpenBot"
+      },
+      "summaryData": {
+        "tags": [
+          "CopilotKit",
+          "AG-UI",
+          "Agent治理",
+          "自托管",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenBot 深度评测：给每个 AI Agent 一间带保险门的独立工位",
+        "ability": [
+          "每个 Bot 独立 Docker 容器 + 专属 Chromium 浏览器 + 隔离文件工作区",
+          "CEL 策略治理网关：先决策、后执行、必留痕，fail-closed 安全语义",
+          "通过 AG-UI 协议接入任意 Agent（LangGraph/Mastra/CrewAI/手写均可）",
+          "Take the Wheel 人工实时接管浏览器，接管期间 Bot 动作直接拒绝",
+          "Generative UI 组件式输出 + 内置 Slack/Notion/Drive 等治理型 MCP 连接器"
+        ],
+        "summary": "CopilotKit 开源的 AI 数字同事平台，为每个 Agent 提供独立容器、专属浏览器和 fail-closed 治理网关，MIT 协议可完全自托管。",
+        "category": [
+          "开发工具",
+          "AI Agent",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业平台/安全团队",
+          "AG-UI 生态开发者",
+          "企业内部工具负责人",
+          "Agent 安全研究工程师",
+          "自托管与开源爱好者"
+        ],
+        "description": "OpenBot 是 CopilotKit 团队 2026 年 8 月开源（MIT 协议）的企业级 AI 数字同事平台。它为每个 Agent 分配独立 Docker 容器与专属浏览器，所有动作必须经过 fail-closed 治理网关并强制审计，支持接入任意 AG-UI 协议 Agent，可完全自托管。目前处于 Alpha 阶段，GitHub Star 超 7k，是开源界少见的敢交给安全团队的 Agent 治理参考实现。"
       }
     },
     {
