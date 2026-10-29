@@ -87515,9 +87515,9 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 47845,
-      "forks": 5939,
-      "starsAdded": 2376,
+      "stars": 47988,
+      "forks": 5950,
+      "starsAdded": 2371,
       "createdAt": "2026-10-28T16:00:02.114Z",
       "metaData": {
         "forks": "0",
@@ -87571,59 +87571,6 @@
       }
     },
     {
-      "id": "479f4e93-2e8c-4474-81ad-1c3ecabb8d49",
-      "dateAdded": "20261029",
-      "type": "github-daily",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 40597,
-      "forks": 2106,
-      "starsAdded": 2109,
-      "createdAt": "2026-10-28T16:00:02.126Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
-        ],
-        "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
-        "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
-        ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
-        ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
-      }
-    },
-    {
       "id": "30fcf62a-84d6-498e-af49-2526c7c07280",
       "dateAdded": "20261029",
       "type": "github-daily",
@@ -87631,9 +87578,9 @@
       "repo": "elayadesign/ai-design-skills",
       "description": "",
       "language": "",
-      "stars": 11013,
-      "forks": 787,
-      "starsAdded": 1938,
+      "stars": 11124,
+      "forks": 798,
+      "starsAdded": 2139,
       "createdAt": "2026-10-28T16:00:02.038Z",
       "metaData": {
         "forks": "0",
@@ -87677,115 +87624,56 @@
       }
     },
     {
-      "id": "723b7dd8-92ec-40a8-a84c-df5250616c28",
+      "id": "479f4e93-2e8c-4474-81ad-1c3ecabb8d49",
       "dateAdded": "20261029",
       "type": "github-daily",
-      "url": "https://github.com/togg53192-cmd/jailbreaks",
-      "repo": "togg53192-cmd/jailbreaks",
-      "description": "LIST OF ALL MY JAILBREAKS",
-      "language": "",
-      "stars": 6985,
-      "forks": 1002,
-      "starsAdded": 1478,
-      "createdAt": "2026-10-28T16:00:02.165Z",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 40726,
+      "forks": 2111,
+      "starsAdded": 2110,
+      "createdAt": "2026-10-28T16:00:02.126Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "",
-        "homepage": "",
-        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "越狱提示词",
-          "系统提示词抽取",
-          "AI安全",
-          "红队测试",
-          "大模型"
-        ],
-        "cover": "",
-        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
-        "ability": [
-          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
-          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
-          "提供 AGENTS.md 工作区级指令注入样本",
-          "提供 Ollama 本地越狱 Modelfile 一键打包",
-          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
-        ],
-        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
-        "category": [
-          "AI 安全",
-          "开源项目",
-          "大模型研究"
-        ],
-        "suitable": [
-          "AI 安全与红队工程师",
-          "AI 产品开发者",
-          "Agent 工具（Cursor/OpenCode）开发者",
-          "模型厂商对齐团队",
-          "AI 安全方向研究者"
-        ],
-        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
-      }
-    },
-    {
-      "id": "0c3ebbf9-88ca-4332-af52-acadd95eac79",
-      "dateAdded": "20261029",
-      "type": "github-daily",
-      "url": "https://github.com/pbakaus/impeccable",
-      "repo": "pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "language": "Rust",
-      "stars": 92461,
-      "forks": 5468,
-      "starsAdded": 1471,
-      "createdAt": "2026-10-28T16:00:02.132Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai",
-          "anti-slop",
-          "design",
-          "slop"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://impeccable.style",
-        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
       },
       "summaryData": {
         "tags": [
           "Claude Code",
-          "AI Skill",
+          "反 AI Slop",
+          "Vibe Coding",
           "UI 设计",
-          "开源项目",
-          "Cursor"
+          "开源 Skill"
         ],
         "cover": "",
-        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
         "ability": [
-          "24 条专业设计指令（polish/critique/distill/bolder 等）",
-          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
-          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
-          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
-          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
         ],
-        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
         "category": [
           "开发工具",
           "AI 编程",
-          "前端设计"
+          "开源项目"
         ],
         "suitable": [
-          "Solo Founder / 独立开发者",
-          "全栈 / 前端工程师",
-          "用 AI 做 MVP 的产品经理",
-          "没有设计师的创业团队",
-          "想提升 AI 产出界面质感的普通用户"
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
         ],
-        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
       }
     },
     {
@@ -87796,9 +87684,9 @@
       "repo": "hmjz100/LinkSwift",
       "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
       "language": "JavaScript",
-      "stars": 34373,
-      "forks": 2430,
-      "starsAdded": 1380,
+      "stars": 34691,
+      "forks": 2453,
+      "starsAdded": 1616,
       "createdAt": "2026-10-28T16:00:02.168Z",
       "metaData": {
         "forks": "0",
@@ -87862,6 +87750,118 @@
       }
     },
     {
+      "id": "723b7dd8-92ec-40a8-a84c-df5250616c28",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "repo": "togg53192-cmd/jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "language": "",
+      "stars": 7121,
+      "forks": 1021,
+      "starsAdded": 1477,
+      "createdAt": "2026-10-28T16:00:02.165Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "越狱提示词",
+          "系统提示词抽取",
+          "AI安全",
+          "红队测试",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
+        "ability": [
+          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
+          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
+          "提供 AGENTS.md 工作区级指令注入样本",
+          "提供 Ollama 本地越狱 Modelfile 一键打包",
+          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
+        ],
+        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
+        "category": [
+          "AI 安全",
+          "开源项目",
+          "大模型研究"
+        ],
+        "suitable": [
+          "AI 安全与红队工程师",
+          "AI 产品开发者",
+          "Agent 工具（Cursor/OpenCode）开发者",
+          "模型厂商对齐团队",
+          "AI 安全方向研究者"
+        ],
+        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
+      }
+    },
+    {
+      "id": "0c3ebbf9-88ca-4332-af52-acadd95eac79",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 92684,
+      "forks": 5480,
+      "starsAdded": 1472,
+      "createdAt": "2026-10-28T16:00:02.132Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "anti-slop",
+          "design",
+          "slop"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
       "id": "79f3616e-8a2f-4257-a959-ef576c81389b",
       "dateAdded": "20261029",
       "type": "github-daily",
@@ -87869,9 +87869,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 307364,
-      "forks": 27345,
-      "starsAdded": 1096,
+      "stars": 307446,
+      "forks": 27348,
+      "starsAdded": 1095,
       "createdAt": "2026-10-28T16:00:02.105Z",
       "metaData": {
         "forks": "0",
@@ -87931,9 +87931,9 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 4968,
-      "forks": 254,
-      "starsAdded": 1075,
+      "stars": 5058,
+      "forks": 260,
+      "starsAdded": 1068,
       "createdAt": "2026-10-28T16:00:02.011Z",
       "metaData": {
         "forks": "0",
@@ -87998,9 +87998,9 @@
       "repo": "nightly-labs/openbot",
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "language": "TypeScript",
-      "stars": 3175,
-      "forks": 311,
-      "starsAdded": 1053,
+      "stars": 3256,
+      "forks": 316,
+      "starsAdded": 1054,
       "createdAt": "2026-10-28T16:00:02.156Z",
       "metaData": {
         "forks": "0",
@@ -88060,9 +88060,9 @@
       "repo": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
-      "stars": 8025,
-      "forks": 940,
-      "starsAdded": 740,
+      "stars": 8105,
+      "forks": 946,
+      "starsAdded": 728,
       "createdAt": "2026-10-28T16:00:02.141Z",
       "metaData": {
         "forks": "0",
@@ -88127,9 +88127,9 @@
       "repo": "ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
-      "stars": 100957,
-      "forks": 13157,
-      "starsAdded": 596,
+      "stars": 101060,
+      "forks": 13162,
+      "starsAdded": 557,
       "createdAt": "2026-10-28T16:00:02.173Z",
       "metaData": {
         "forks": "0",
@@ -88201,9 +88201,9 @@
       "repo": "xiaolai/the-craft-of-selfteaching",
       "description": "One has no future if one couldn't teach themself.",
       "language": "Jupyter Notebook",
-      "stars": 18459,
-      "forks": 17882,
-      "starsAdded": 295,
+      "stars": 18509,
+      "forks": 17886,
+      "starsAdded": 148,
       "createdAt": "2026-10-28T16:00:02.176Z",
       "metaData": {
         "forks": "0",
@@ -88247,59 +88247,6 @@
       }
     },
     {
-      "id": "f6f0815a-c37e-4b8f-970b-eadb899f0de5",
-      "dateAdded": "20261029",
-      "type": "github-daily",
-      "url": "https://github.com/expo/skills",
-      "repo": "expo/skills",
-      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
-      "language": "Shell",
-      "stars": 3535,
-      "forks": 223,
-      "starsAdded": 216,
-      "createdAt": "2026-10-28T16:00:02.170Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services - expo/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Expo",
-          "React Native",
-          "AI 编程助手",
-          "Agent Skills",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "expo/skills 深度评测：让 AI 编程助手真正“懂”Expo 的官方知识包",
-        "ability": [
-          "提供 20+ 份官方 SKILL.md 知识包，覆盖 Expo SDK 与 EAS 全链路",
-          "expo-overview 入口路由，自动把模糊任务分发到对应知识模块",
-          "与 Expo MCP Server 联动，AI 既能懂规则又能动手执行",
-          "一条命令安装，支持 Claude Code、Cursor、Codex 等主流工具",
-          "显著降低 AI 幻觉，避免推荐过时 API 与祖传代码"
-        ],
-        "summary": "Expo 官方推出的 SKILL.md 知识包，把 Expo 最佳实践直接灌进 Claude Code、Cursor 等 AI 编程工具。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "使用 Claude Code/Cursor 做 Expo 开发的工程师",
-          "想从 React Web 跨界到 Native 的开发者",
-          "维护老 Expo 项目、需要 SDK 升级的团队",
-          "搭建 EAS CI/CD 的 DevOps 工程师",
-          "研究 Agent Skills 生态的 AI 工具爱好者"
-        ],
-        "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。"
-      }
-    },
-    {
       "id": "0f20874b-2bb0-46fb-82be-e1b9621a1dcb",
       "dateAdded": "20261029",
       "type": "github-daily",
@@ -88307,9 +88254,9 @@
       "repo": "macro-inc/macro",
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
       "language": "Rust",
-      "stars": 5375,
+      "stars": 5423,
       "forks": 518,
-      "starsAdded": 106,
+      "starsAdded": 117,
       "createdAt": "2026-10-28T16:00:02.120Z",
       "metaData": {
         "forks": "0",
@@ -88371,6 +88318,59 @@
           "想用统一收件箱替代 Superhuman 的重度邮件用户"
         ],
         "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。"
+      }
+    },
+    {
+      "id": "f6f0815a-c37e-4b8f-970b-eadb899f0de5",
+      "dateAdded": "20261029",
+      "type": "github-daily",
+      "url": "https://github.com/expo/skills",
+      "repo": "expo/skills",
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+      "language": "Shell",
+      "stars": 3581,
+      "forks": 228,
+      "starsAdded": 90,
+      "createdAt": "2026-10-28T16:00:02.170Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services - expo/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Expo",
+          "React Native",
+          "AI 编程助手",
+          "Agent Skills",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "expo/skills 深度评测：让 AI 编程助手真正“懂”Expo 的官方知识包",
+        "ability": [
+          "提供 20+ 份官方 SKILL.md 知识包，覆盖 Expo SDK 与 EAS 全链路",
+          "expo-overview 入口路由，自动把模糊任务分发到对应知识模块",
+          "与 Expo MCP Server 联动，AI 既能懂规则又能动手执行",
+          "一条命令安装，支持 Claude Code、Cursor、Codex 等主流工具",
+          "显著降低 AI 幻觉，避免推荐过时 API 与祖传代码"
+        ],
+        "summary": "Expo 官方推出的 SKILL.md 知识包，把 Expo 最佳实践直接灌进 Claude Code、Cursor 等 AI 编程工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 Claude Code/Cursor 做 Expo 开发的工程师",
+          "想从 React Web 跨界到 Native 的开发者",
+          "维护老 Expo 项目、需要 SDK 升级的团队",
+          "搭建 EAS CI/CD 的 DevOps 工程师",
+          "研究 Agent Skills 生态的 AI 工具爱好者"
+        ],
+        "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。"
       }
     }
   ]
