@@ -22150,8 +22150,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 51920,
-      "forks": 3313,
+      "stars": 52377,
+      "forks": 3351,
       "starsAdded": 16002,
       "createdAt": "2026-10-25T16:00:03.697Z",
       "metaData": {
@@ -22276,8 +22276,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 93336,
-      "forks": 5508,
+      "stars": 94435,
+      "forks": 5578,
       "starsAdded": 7283,
       "createdAt": "2026-10-28T13:00:04.647Z",
       "metaData": {
@@ -22478,8 +22478,8 @@
       "repo": "TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 117993,
-      "forks": 22568,
+      "stars": 118153,
+      "forks": 22597,
       "starsAdded": 5322,
       "createdAt": "2026-10-26T11:00:04.786Z",
       "metaData": {
@@ -22530,6 +22530,68 @@
       }
     },
     {
+      "id": "8ce8f998-c039-40f4-868c-4f0adf6a2eff",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 308031,
+      "forks": 27395,
+      "starsAdded": 4655,
+      "createdAt": "2026-10-29T14:00:04.583Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
       "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22537,8 +22599,8 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 226062,
-      "forks": 22581,
+      "stars": 226245,
+      "forks": 22594,
       "starsAdded": 4293,
       "createdAt": "2026-10-25T16:00:03.748Z",
       "metaData": {
@@ -22648,8 +22710,8 @@
       "repo": "Leonxlnx/taste-skill",
       "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "language": "JavaScript",
-      "stars": 104745,
-      "forks": 7085,
+      "stars": 105137,
+      "forks": 7110,
       "starsAdded": 3940,
       "createdAt": "2026-10-28T19:00:03.898Z",
       "metaData": {
@@ -22713,8 +22775,8 @@
       "repo": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 23515,
-      "forks": 3168,
+      "stars": 23759,
+      "forks": 3190,
       "starsAdded": 3516,
       "createdAt": "2026-10-26T11:00:04.794Z",
       "metaData": {
@@ -22827,8 +22889,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 33695,
-      "forks": 3708,
+      "stars": 33769,
+      "forks": 3714,
       "starsAdded": 2612,
       "createdAt": "2026-10-25T16:00:03.710Z",
       "metaData": {
@@ -23041,8 +23103,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 80019,
-      "forks": 9386,
+      "stars": 80075,
+      "forks": 9395,
       "starsAdded": 1930,
       "createdAt": "2026-10-25T16:00:03.705Z",
       "metaData": {
@@ -23178,6 +23240,59 @@
           "数据工程师（离线批量推理场景）"
         ],
         "description": "vLLM 由 UC Berkeley 于 2023 年开源并登上 SOSP 顶会，核心是把操作系统中的虚拟内存分页思想搬到 GPU 上管理 KV Cache，配合连续批处理技术，将大模型服务吞吐量提升 2-24 倍。GitHub 星数约 94k、贡献者 3800 人，Stripe、LinkedIn、Amazon 等公司生产环境在用，是自托管大模型最不会选错的默认答案。"
+      }
+    },
+    {
+      "id": "44d3f901-212f-4da9-9b0f-edc76b44ed56",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/php/php-src",
+      "repo": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41710,
+      "forks": 8482,
+      "starsAdded": 1201,
+      "createdAt": "2026-10-29T14:00:04.477Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://www.php.net",
+        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "开源项目",
+          "C语言",
+          "虚拟机",
+          "源码解析"
+        ],
+        "cover": "",
+        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
+        "ability": [
+          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
+          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
+          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
+          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
+          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
+        ],
+        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编程语言"
+        ],
+        "suitable": [
+          "PHP 业务开发者（想理解性能调优原理）",
+          "扩展与中间件作者（必修课）",
+          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
+          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
+          "学生与转行者（通过读源码理解解释型语言本质）"
+        ],
+        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
       }
     },
     {
@@ -23317,8 +23432,8 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 9035,
-      "forks": 344,
+      "stars": 9111,
+      "forks": 347,
       "starsAdded": 776,
       "createdAt": "2026-10-28T13:00:04.658Z",
       "metaData": {
