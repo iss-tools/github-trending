@@ -89738,5 +89738,923 @@
         "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。"
       }
     }
+  ],
+  "20261031": [
+    {
+      "id": "4624673d-3765-4c3f-bd95-12c2fd00bcec",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 96642,
+      "forks": 5691,
+      "starsAdded": 2299,
+      "createdAt": "2026-10-30T16:00:18.799Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "anti-slop",
+          "design",
+          "slop"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
+      "id": "f18c01b3-7159-4690-aea3-3933be3d9814",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "repo": "HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 51497,
+      "forks": 6307,
+      "starsAdded": 2282,
+      "createdAt": "2026-10-30T16:00:18.832Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-tutor",
+          "clawbot",
+          "cli-tool",
+          "deepresearch",
+          "interactive-learning",
+          "learning",
+          "multi-agent-systems",
+          "rag"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "http://arxiv.org/abs/2604.26962",
+        "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepTutor",
+          "开源项目",
+          "AI私教",
+          "本地部署",
+          "RAG知识库"
+        ],
+        "cover": "",
+        "title": "DeepTutor 深度评测：港大开源 43k Star 的 Agent 原生 AI 私教学习工作台",
+        "ability": [
+          "统一 Agent 运行时：Chat、解题、测验、研究、笔记等模块共享上下文，学习体验不割裂",
+          "三层可审计记忆系统（Trace Forest），持续追踪用户薄弱点，且结论可追溯来源",
+          "页码级引用溯源的知识库 RAG，支持 LightRAG、GraphRAG、Obsidian 等 6 种检索引擎插拔",
+          "Partners AI 私教可接入飞书、微信、Telegram 等 15+ 即时通讯软件",
+          "全本地部署（Docker/PyPI 一键启动），学习数据不出本机"
+        ],
+        "summary": "港大数据智能实验室开源的 Agent 原生终身学习工作台，把读资料、问问题、解题、刷题、研究、笔记全链路整合进同一套 AI 架构，支持本地部署保护隐私。",
+        "category": [
+          "开源项目",
+          "AI 学习工具",
+          "教育科技"
+        ],
+        "suitable": [
+          "需要长期消化教材与论文的大学生、研究生",
+          "考研/雅思/公考等刷题备考人群",
+          "需要文献综述与深度调研的科研工作者",
+          "想制作可交互活教材的教师与课程设计者",
+          "想学习工业级多 Agent 记忆架构的 AI 开发者"
+        ],
+        "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。"
+      }
+    },
+    {
+      "id": "cfdf1c44-0b28-4f02-a8e7-b709a9f301e7",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "repo": "togg53192-cmd/jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "language": "",
+      "stars": 10317,
+      "forks": 1491,
+      "starsAdded": 2053,
+      "createdAt": "2026-10-30T16:00:18.863Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "越狱提示词",
+          "系统提示词抽取",
+          "AI安全",
+          "红队测试",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
+        "ability": [
+          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
+          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
+          "提供 AGENTS.md 工作区级指令注入样本",
+          "提供 Ollama 本地越狱 Modelfile 一键打包",
+          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
+        ],
+        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
+        "category": [
+          "AI 安全",
+          "开源项目",
+          "大模型研究"
+        ],
+        "suitable": [
+          "AI 安全与红队工程师",
+          "AI 产品开发者",
+          "Agent 工具（Cursor/OpenCode）开发者",
+          "模型厂商对齐团队",
+          "AI 安全方向研究者"
+        ],
+        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
+      }
+    },
+    {
+      "id": "dd03aabd-cea4-464f-8acd-e55a88da391a",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 309222,
+      "forks": 27504,
+      "starsAdded": 1255,
+      "createdAt": "2026-10-30T16:00:18.868Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
+      "id": "13ddaa14-3bb7-4b26-84ef-d583a0d4000c",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 10997,
+      "forks": 2203,
+      "starsAdded": 1146,
+      "createdAt": "2026-10-30T16:00:18.806Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
+      "id": "6e7aa3ef-4632-4d94-8e25-1289a75249e8",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 105685,
+      "forks": 9312,
+      "starsAdded": 1145,
+      "createdAt": "2026-10-30T16:00:18.781Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "c1e5d3c9-6b25-4d58-90d9-98ff6f53994b",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 32460,
+      "forks": 8592,
+      "starsAdded": 920,
+      "createdAt": "2026-10-30T16:00:18.827Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
+      "id": "72981ac7-c253-4f06-b2f1-3a3c4e4d867e",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 8177,
+      "forks": 1171,
+      "starsAdded": 899,
+      "createdAt": "2026-10-30T16:00:18.794Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "expo",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.openmausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
+      "id": "b4b3f188-9e3f-46a1-919e-12f691751dac",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 307185,
+      "forks": 25846,
+      "starsAdded": 882,
+      "createdAt": "2026-10-30T16:00:18.821Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "093961f8-c400-4145-b5e2-3cc348109c97",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "repo": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 6437,
+      "forks": 352,
+      "starsAdded": 717,
+      "createdAt": "2026-10-30T16:00:18.851Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://thinkrail.ai/",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "AI IDE",
+          "多智能体",
+          "Git Worktree",
+          "开源"
+        ],
+        "cover": "",
+        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
+        "ability": [
+          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
+          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
+          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
+          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
+          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
+        ],
+        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "需要同时跑多个 AI Agent 干活的重度开发者",
+          "长期维护大型代码仓库的工程师",
+          "注重隐私、想自托管或内网使用的用户",
+          "想研究 AI IDE 架构的技术爱好者",
+          "已有的 pi 生态用户"
+        ],
+        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
+      }
+    },
+    {
+      "id": "8eaa7418-85e5-47ca-9032-09cba1cad595",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "repo": "CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 8565,
+      "forks": 1087,
+      "starsAdded": 707,
+      "createdAt": "2026-10-30T16:00:18.803Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui",
+          "agent-governance",
+          "ai-agents",
+          "browser-automation",
+          "copilotkit",
+          "generative-ui",
+          "mcp"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.copilotkit.ai/openbot",
+        "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent. - CopilotKit/OpenBot"
+      },
+      "summaryData": {
+        "tags": [
+          "CopilotKit",
+          "AG-UI",
+          "Agent治理",
+          "自托管",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenBot 深度评测：给每个 AI Agent 一间带保险门的独立工位",
+        "ability": [
+          "每个 Bot 独立 Docker 容器 + 专属 Chromium 浏览器 + 隔离文件工作区",
+          "CEL 策略治理网关：先决策、后执行、必留痕，fail-closed 安全语义",
+          "通过 AG-UI 协议接入任意 Agent（LangGraph/Mastra/CrewAI/手写均可）",
+          "Take the Wheel 人工实时接管浏览器，接管期间 Bot 动作直接拒绝",
+          "Generative UI 组件式输出 + 内置 Slack/Notion/Drive 等治理型 MCP 连接器"
+        ],
+        "summary": "CopilotKit 开源的 AI 数字同事平台，为每个 Agent 提供独立容器、专属浏览器和 fail-closed 治理网关，MIT 协议可完全自托管。",
+        "category": [
+          "开发工具",
+          "AI Agent",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业平台/安全团队",
+          "AG-UI 生态开发者",
+          "企业内部工具负责人",
+          "Agent 安全研究工程师",
+          "自托管与开源爱好者"
+        ],
+        "description": "OpenBot 是 CopilotKit 团队 2026 年 8 月开源（MIT 协议）的企业级 AI 数字同事平台。它为每个 Agent 分配独立 Docker 容器与专属浏览器，所有动作必须经过 fail-closed 治理网关并强制审计，支持接入任意 AG-UI 协议 Agent，可完全自托管。目前处于 Alpha 阶段，GitHub Star 超 7k，是开源界少见的敢交给安全团队的 Agent 治理参考实现。"
+      }
+    },
+    {
+      "id": "3c6981e6-1cc6-494c-b047-2b5b834fa638",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/lightpanda-io/browser",
+      "repo": "lightpanda-io/browser",
+      "description": "Lightpanda: the headless browser designed for AI and automation",
+      "language": "Zig",
+      "stars": 38036,
+      "forks": 1853,
+      "starsAdded": 559,
+      "createdAt": "2026-10-30T16:00:18.871Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "browser-automation",
+          "cdp",
+          "headless",
+          "lightpanda",
+          "playwright",
+          "puppeteer",
+          "zig"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://lightpanda.io",
+        "description": "Lightpanda: the headless browser designed for AI and automation - lightpanda-io/browser"
+      },
+      "summaryData": {
+        "tags": [
+          "无头浏览器",
+          "AI Agent",
+          "自动化",
+          "Zig",
+          "性能优化"
+        ],
+        "cover": "",
+        "title": "Lightpanda：为 AI 与自动化而生的“极客”无头浏览器",
+        "ability": [
+          "极低资源占用",
+          "高并发高性能",
+          "CDP 协议兼容",
+          "AI Agent 原生支持",
+          "原生 MCP 服务"
+        ],
+        "summary": "用 Zig 写的高性能无头浏览器，专为 AI 和自动化设计，省资源、速度快。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 工具"
+        ],
+        "suitable": [
+          "AI Agent 开发者",
+          "高并发爬虫团队",
+          "自动化测试工程师",
+          "追求性能的极客",
+          "云服务成本敏感型团队"
+        ],
+        "description": "Lightpanda 是一款基于 Zig 构建的轻量级无头浏览器，摒弃了传统 Chrome 的图形渲染，专为 AI 代理和网页自动化设计。它通过 CDP 协议兼容 Playwright，并内置 Agent 模式和 MCP 服务，显著降低服务器资源占用，适合高并发爬取与自动化任务。"
+      }
+    },
+    {
+      "id": "ef809a1f-f0a2-4613-ba22-ac8b142f48b0",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 185063,
+      "forks": 21880,
+      "starsAdded": 287,
+      "createdAt": "2026-10-30T16:00:18.836Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
+      "id": "8f99e910-349f-4f78-b263-b3afa4d5444d",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/expo/skills",
+      "repo": "expo/skills",
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+      "language": "Shell",
+      "stars": 3820,
+      "forks": 243,
+      "starsAdded": 233,
+      "createdAt": "2026-10-30T16:00:18.809Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services - expo/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Expo",
+          "React Native",
+          "AI 编程助手",
+          "Agent Skills",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "expo/skills 深度评测：让 AI 编程助手真正“懂”Expo 的官方知识包",
+        "ability": [
+          "提供 20+ 份官方 SKILL.md 知识包，覆盖 Expo SDK 与 EAS 全链路",
+          "expo-overview 入口路由，自动把模糊任务分发到对应知识模块",
+          "与 Expo MCP Server 联动，AI 既能懂规则又能动手执行",
+          "一条命令安装，支持 Claude Code、Cursor、Codex 等主流工具",
+          "显著降低 AI 幻觉，避免推荐过时 API 与祖传代码"
+        ],
+        "summary": "Expo 官方推出的 SKILL.md 知识包，把 Expo 最佳实践直接灌进 Claude Code、Cursor 等 AI 编程工具。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "使用 Claude Code/Cursor 做 Expo 开发的工程师",
+          "想从 React Web 跨界到 Native 的开发者",
+          "维护老 Expo 项目、需要 SDK 升级的团队",
+          "搭建 EAS CI/CD 的 DevOps 工程师",
+          "研究 Agent Skills 生态的 AI 工具爱好者"
+        ],
+        "description": "Expo 官方开源的 Agent Skills 知识包，通过 20 多份结构化 SKILL.md 文件，把 Expo/React Native/EAS 的最佳实践、版本避坑指南和 API 取舍规则注入 AI 编程助手，配合入口路由与 MCP Server 联动，让 AI 生成代码一次写对，大幅减少幻觉与试错成本。"
+      }
+    },
+    {
+      "id": "ac3dfe3a-44a5-40c2-8f69-1642f6152120",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/macro-inc/macro",
+      "repo": "macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "stars": 5751,
+      "forks": 537,
+      "starsAdded": 117,
+      "createdAt": "2026-10-30T16:00:18.814Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai",
+          "ai-agents",
+          "all-in-one",
+          "crm",
+          "crm-system",
+          "email",
+          "linear",
+          "mcp",
+          "messaging",
+          "notes",
+          "notion",
+          "office",
+          "rust",
+          "slack",
+          "slack-alternative",
+          "startup",
+          "startup-tools",
+          "typescript",
+          "workspace"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://macro.com",
+        "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. - macro-inc/macro"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "统一工作台",
+          "Rust",
+          "AI Agent",
+          "AGPL-3.0"
+        ],
+        "cover": "",
+        "title": "Macro 深度评测：把整个公司装进一个可计算系统的开源统一工作台",
+        "ability": [
+          "统一收件箱与多合一工作区：整合 Email、Chat、Docs、Tasks、CRM 等 10 个 Block",
+          "双向链接图：所有跨模块引用原生互链，权限自动跟随频道",
+          "团队级共享记忆：每日自动汇总全部沟通与任务为 Markdown 记忆，可喂给任意 AI",
+          "Agent 原生架构：Agent 作为一等公民，基于 CRDT 与人协同实时编辑文档",
+          "MCP 一行接入：可无缝对接 Claude Code、Cursor 等 AI 客户端，无速率限制"
+        ],
+        "summary": "Macro 是一款用 Rust + SolidJS 打造的开源'公司操作系统'，把邮件、聊天、文档、任务、CRM 和 AI Agent 统一到一个可计算的工作台里。",
+        "category": [
+          "开发工具",
+          "协同办公",
+          "AI 编程"
+        ],
+        "suitable": [
+          "被 Slack+Notion+Linear+HubSpot 多工具割裂折磨的 5-30 人初创团队",
+          "希望 AI 真正理解公司上下文的 AI-Forward 工程团队",
+          "对数据主权敏感、需要源码可审计的技术团队",
+          "想研究现代协作软件架构（CRDT、Rust 微服务）的开发者",
+          "想用统一收件箱替代 Superhuman 的重度邮件用户"
+        ],
+        "description": "Macro 由 a16z 领投约 3000 万美元，采用 AGPL-3.0 全开源，后端为 Rust 微服务集群（42 个服务），前端 SolidJS，协同编辑基于 CRDT + Cloudflare Durable Objects。核心卖点是双向链接图与团队级共享记忆，让 AI 拥有'公司大脑'。托管版 15 分钟上手（付费 40 美元/席位/月），但自托管需维护 Kafka、OpenSearch 等重型依赖，工程量大，且暂不支持 Outlook 和 Android。"
+      }
+    }
   ]
 }
