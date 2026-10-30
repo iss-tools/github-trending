@@ -22150,9 +22150,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 52789,
-      "forks": 3385,
-      "starsAdded": 16002,
+      "stars": 52869,
+      "forks": 3388,
+      "starsAdded": 14320,
       "createdAt": "2026-10-25T16:00:03.697Z",
       "metaData": {
         "forks": "0",
@@ -22192,6 +22192,65 @@
           "全栈开发者"
         ],
         "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "cab37625-386f-43c3-b89c-2c37c824449e",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 95336,
+      "forks": 5621,
+      "starsAdded": 9713,
+      "createdAt": "2026-10-28T13:00:04.647Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "anti-slop",
+          "design",
+          "slop"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
       }
     },
     {
@@ -22269,65 +22328,6 @@
       }
     },
     {
-      "id": "cab37625-386f-43c3-b89c-2c37c824449e",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/pbakaus/impeccable",
-      "repo": "pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "language": "Rust",
-      "stars": 95208,
-      "forks": 5610,
-      "starsAdded": 7283,
-      "createdAt": "2026-10-28T13:00:04.647Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai",
-          "anti-slop",
-          "design",
-          "slop"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://impeccable.style",
-        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "AI Skill",
-          "UI 设计",
-          "开源项目",
-          "Cursor"
-        ],
-        "cover": "",
-        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
-        "ability": [
-          "24 条专业设计指令（polish/critique/distill/bolder 等）",
-          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
-          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
-          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
-          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
-        ],
-        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端设计"
-        ],
-        "suitable": [
-          "Solo Founder / 独立开发者",
-          "全栈 / 前端工程师",
-          "用 AI 做 MVP 的产品经理",
-          "没有设计师的创业团队",
-          "想提升 AI 产出界面质感的普通用户"
-        ],
-        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
-      }
-    },
-    {
       "id": "b51b7ea1-a41b-4c0a-b73f-c414a74120e2",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22402,6 +22402,65 @@
       }
     },
     {
+      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 118331,
+      "forks": 22633,
+      "starsAdded": 5557,
+      "createdAt": "2026-10-26T11:00:04.786Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
       "id": "abc93ec1-c17d-44dd-b680-5ce23ff4f34a",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22471,65 +22530,6 @@
       }
     },
     {
-      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 118306,
-      "forks": 22627,
-      "starsAdded": 5322,
-      "createdAt": "2026-10-26T11:00:04.786Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
-      }
-    },
-    {
       "id": "51b53e4d-2325-43fe-b64f-2b616facd2a4",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22537,8 +22537,8 @@
       "repo": "hugohe3/ppt-master",
       "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "language": "Python",
-      "stars": 70811,
-      "forks": 5526,
+      "stars": 70830,
+      "forks": 5527,
       "starsAdded": 4980,
       "createdAt": "2026-10-29T23:00:03.749Z",
       "metaData": {
@@ -22601,9 +22601,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 308485,
-      "forks": 27436,
-      "starsAdded": 4655,
+      "stars": 308551,
+      "forks": 27443,
+      "starsAdded": 4894,
       "createdAt": "2026-10-29T14:00:04.583Z",
       "metaData": {
         "forks": "0",
@@ -22656,6 +22656,71 @@
       }
     },
     {
+      "id": "f2144101-3bb1-4865-8ec2-db74bf1257d3",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "repo": "Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "language": "JavaScript",
+      "stars": 105556,
+      "forks": 7129,
+      "starsAdded": 4359,
+      "createdAt": "2026-10-28T19:00:03.898Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "anti-slop",
+          "claude-code",
+          "codex",
+          "cursor",
+          "design-system",
+          "frontend",
+          "landing-page",
+          "ui-design",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tasteskill.dev",
+        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Agent Skill",
+          "UI 设计",
+          "反 AI 味",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
+        "ability": [
+          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
+          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
+          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
+          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
+          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
+        ],
+        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
+        "category": [
+          "开源项目",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "独立开发者和创业者：不请设计师也能做出非模板感官网",
+          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
+          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
+          "自由职业设计师：想把个人设计规则产品化交付",
+          "想做个人品牌或作品集的非技术人员"
+        ],
+        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
+      }
+    },
+    {
       "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22663,9 +22728,9 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 226408,
-      "forks": 22610,
-      "starsAdded": 4293,
+      "stars": 226444,
+      "forks": 22611,
+      "starsAdded": 4250,
       "createdAt": "2026-10-25T16:00:03.748Z",
       "metaData": {
         "forks": "0",
@@ -22704,6 +22769,67 @@
           "需要规范 AI 输出的用户"
         ],
         "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
+      }
+    },
+    {
+      "id": "b56753b4-3bdc-42bf-8256-c67fdfa8476c",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 24008,
+      "forks": 3224,
+      "starsAdded": 4110,
+      "createdAt": "2026-10-26T11:00:04.794Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
+        ],
+        "cover": "",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
+        "ability": [
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
+        ],
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "SEO 营销"
+        ],
+        "suitable": [
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
+        ],
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
       }
     },
     {
@@ -22767,132 +22893,6 @@
       }
     },
     {
-      "id": "f2144101-3bb1-4865-8ec2-db74bf1257d3",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "repo": "Leonxlnx/taste-skill",
-      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-      "language": "JavaScript",
-      "stars": 105485,
-      "forks": 7124,
-      "starsAdded": 3940,
-      "createdAt": "2026-10-28T19:00:03.898Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "anti-slop",
-          "claude-code",
-          "codex",
-          "cursor",
-          "design-system",
-          "frontend",
-          "landing-page",
-          "ui-design",
-          "web-design"
-        ],
-        "license": "MIT license",
-        "homepage": "https://tasteskill.dev",
-        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "Agent Skill",
-          "UI 设计",
-          "反 AI 味",
-          "开源工具"
-        ],
-        "cover": "",
-        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
-        "ability": [
-          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
-          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
-          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
-          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
-          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
-        ],
-        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
-        "category": [
-          "开源项目",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "独立开发者和创业者：不请设计师也能做出非模板感官网",
-          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
-          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
-          "自由职业设计师：想把个人设计规则产品化交付",
-          "想做个人品牌或作品集的非技术人员"
-        ],
-        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
-      }
-    },
-    {
-      "id": "b56753b4-3bdc-42bf-8256-c67fdfa8476c",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/AgriciDaniel/claude-seo",
-      "repo": "AgriciDaniel/claude-seo",
-      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-      "language": "Python",
-      "stars": 23969,
-      "forks": 3221,
-      "starsAdded": 3516,
-      "createdAt": "2026-10-26T11:00:04.794Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-seo",
-          "claude-code",
-          "claude-code-skill",
-          "marketing-automation",
-          "open-source",
-          "seo"
-        ],
-        "license": "MIT license",
-        "homepage": "https://skool.com/ai-marketing-hub-pro",
-        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "SEO 审计",
-          "开源项目",
-          "AI Agent",
-          "GEO/AEO"
-        ],
-        "cover": "",
-        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
-        "ability": [
-          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
-          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
-          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
-          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
-          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
-        ],
-        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "SEO 营销"
-        ],
-        "suitable": [
-          "管理多个客户站点的 SEO Agency 从业者",
-          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
-          "独立 SEO 顾问（用于现场谈单和交付）",
-          "已有 Claude Code 订阅的独立开发者",
-          "想做 GEO/AEO 优化的内容创作者"
-        ],
-        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
-      }
-    },
-    {
       "id": "5b3c8dc3-e5be-48b3-85d9-ac772951b65e",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22953,9 +22953,9 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 33837,
-      "forks": 3721,
-      "starsAdded": 2612,
+      "stars": 33852,
+      "forks": 3723,
+      "starsAdded": 2504,
       "createdAt": "2026-10-25T16:00:03.710Z",
       "metaData": {
         "forks": "0",
@@ -23167,9 +23167,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 80136,
+      "stars": 80151,
       "forks": 9400,
-      "starsAdded": 1930,
+      "starsAdded": 1854,
       "createdAt": "2026-10-25T16:00:03.705Z",
       "metaData": {
         "forks": "0",
@@ -23307,59 +23307,6 @@
       }
     },
     {
-      "id": "44d3f901-212f-4da9-9b0f-edc76b44ed56",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/php/php-src",
-      "repo": "php/php-src",
-      "description": "The PHP Interpreter",
-      "language": "C",
-      "stars": 41718,
-      "forks": 8490,
-      "starsAdded": 1201,
-      "createdAt": "2026-10-29T14:00:04.477Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "BSD-3-Clause license",
-        "homepage": "https://www.php.net",
-        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "PHP",
-          "开源项目",
-          "C语言",
-          "虚拟机",
-          "源码解析"
-        ],
-        "cover": "",
-        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
-        "ability": [
-          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
-          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
-          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
-          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
-          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
-        ],
-        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
-        "category": [
-          "开发工具",
-          "开源项目",
-          "编程语言"
-        ],
-        "suitable": [
-          "PHP 业务开发者（想理解性能调优原理）",
-          "扩展与中间件作者（必修课）",
-          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
-          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
-          "学生与转行者（通过读源码理解解释型语言本质）"
-        ],
-        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
-      }
-    },
-    {
       "id": "3a8f8e77-38c3-4041-835e-267068b66af9",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -23434,6 +23381,112 @@
       }
     },
     {
+      "id": "c4830104-dda9-456a-93ff-e27dc31fca4a",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/jakubkrehel/skills",
+      "repo": "jakubkrehel/skills",
+      "description": "A collection of agent skills that help you build great interfaces.",
+      "language": "Markdown",
+      "stars": 9176,
+      "forks": 348,
+      "starsAdded": 980,
+      "createdAt": "2026-10-28T13:00:04.658Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://jakub.kr/skills",
+        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "UI 审查",
+          "前端自动化",
+          "Design Systems",
+          "开源"
+        ],
+        "cover": "",
+        "title": "全能型 AI 设计工程助手：jakubkrehel/skills 深度评测",
+        "ability": [
+          "全链路界面审查",
+          "排版与色彩优化",
+          "无障碍性检查",
+          "复杂交互解释",
+          "组件变体生成"
+        ],
+        "summary": "专为前端与UI设计打造的高质量 AI 技能合集，一键提升界面打磨与代码审查效率。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计辅助"
+        ],
+        "suitable": [
+          "前端开发",
+          "UI/UX 设计师",
+          "AI 编程爱好者",
+          "产品团队",
+          "技术初学者"
+        ],
+        "description": "这是一个将资深设计工程经验固化为 AI 技能的开源项目。它能自动评审 UI、排版、色彩和无障碍性，帮助开发者快速发现设计瑕疵，提升代码与视觉的一致性。"
+      }
+    },
+    {
+      "id": "44d3f901-212f-4da9-9b0f-edc76b44ed56",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/php/php-src",
+      "repo": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41721,
+      "forks": 8490,
+      "starsAdded": 960,
+      "createdAt": "2026-10-29T14:00:04.477Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://www.php.net",
+        "description": "The PHP Interpreter. Contribute to php/php-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "开源项目",
+          "C语言",
+          "虚拟机",
+          "源码解析"
+        ],
+        "cover": "",
+        "title": "php-src 深度评测：驱动全球 78% 网站的 PHP 语言发动机源码全解析",
+        "ability": [
+          "提供 PHP 语言核心实现（Zend Engine 虚拟机、编译器、JIT 即时编译）",
+          "内置数百个官方扩展（PDO、curl、json、mbstring 等）",
+          "支持多运行模式 SAPI（CLI、FPM、CGI、embed）",
+          "提供 C 扩展开发框架，可用 C 编写 PHP 原生函数",
+          "采用 RFC 公开治理 + PHP Foundation 基金会资助模式持续演进"
+        ],
+        "summary": "php-src 是 PHP 语言本体的官方 C 语言源码仓库，是真正在服务器上执行 PHP 代码的'发动机'，支撑着 WordPress、Wikipedia 等全球大量网站。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "编程语言"
+        ],
+        "suitable": [
+          "PHP 业务开发者（想理解性能调优原理）",
+          "扩展与中间件作者（必修课）",
+          "SRE / DevOps 工程师（优化 FPM 与 OPcache 部署）",
+          "编译器 / 虚拟机爱好者（工业级 VM 学习样本）",
+          "学生与转行者（通过读源码理解解释型语言本质）"
+        ],
+        "description": "php-src 是 PHP 语言的官方 C 语言源码仓库，包含 Zend 引擎、虚拟机、JIT 编译器及全部内置扩展，仓库拥有 4 万+ Stars、8000+ Forks，迭代近三十年。文章深入解析其目录架构、执行流水线、构建方法与扩展开发示例，同时客观指出入门曲线陡峭、文档断层、Windows 支持薄弱等不足。"
+      }
+    },
+    {
       "id": "70b299d7-6cd0-45ed-896f-56abd45cd3bf",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -23486,59 +23539,6 @@
           "研究 AI Agent 技能体系的技术爱好者"
         ],
         "description": "Google Android 官方团队开源的 AI Agent 技能仓库，将 developer.android.com 中大模型最容易记错、编错的 Android 最佳实践（如 R8 规则优化、AGP 9 升级、Navigation 3 迁移等）打包成标准化 SKILL.md 模块。AI 编程助手可按需自动加载，一套技能多端通用，实测任务完成速度提升约 3 倍、Token 消耗降低 70% 以上。"
-      }
-    },
-    {
-      "id": "c4830104-dda9-456a-93ff-e27dc31fca4a",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/jakubkrehel/skills",
-      "repo": "jakubkrehel/skills",
-      "description": "A collection of agent skills that help you build great interfaces.",
-      "language": "Markdown",
-      "stars": 9163,
-      "forks": 348,
-      "starsAdded": 776,
-      "createdAt": "2026-10-28T13:00:04.658Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://jakub.kr/skills",
-        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Skills",
-          "UI 审查",
-          "前端自动化",
-          "Design Systems",
-          "开源"
-        ],
-        "cover": "",
-        "title": "全能型 AI 设计工程助手：jakubkrehel/skills 深度评测",
-        "ability": [
-          "全链路界面审查",
-          "排版与色彩优化",
-          "无障碍性检查",
-          "复杂交互解释",
-          "组件变体生成"
-        ],
-        "summary": "专为前端与UI设计打造的高质量 AI 技能合集，一键提升界面打磨与代码审查效率。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "设计辅助"
-        ],
-        "suitable": [
-          "前端开发",
-          "UI/UX 设计师",
-          "AI 编程爱好者",
-          "产品团队",
-          "技术初学者"
-        ],
-        "description": "这是一个将资深设计工程经验固化为 AI 技能的开源项目。它能自动评审 UI、排版、色彩和无障碍性，帮助开发者快速发现设计瑕疵，提升代码与视觉的一致性。"
       }
     },
     {
