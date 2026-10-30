@@ -7055,8 +7055,8 @@
       "starsAdded": 2234,
       "createdAt": "2026-09-10T12:00:04.394Z",
       "metaData": {
-        "forks": "21121",
-        "stars": "178474",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills"
         ],
@@ -22150,8 +22150,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 53192,
-      "forks": 3417,
+      "stars": 53422,
+      "forks": 3434,
       "starsAdded": 14320,
       "createdAt": "2026-10-25T16:00:03.697Z",
       "metaData": {
@@ -22202,8 +22202,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 96020,
-      "forks": 5654,
+      "stars": 96424,
+      "forks": 5675,
       "starsAdded": 9713,
       "createdAt": "2026-10-28T13:00:04.647Z",
       "metaData": {
@@ -22402,6 +22402,67 @@
       }
     },
     {
+      "id": "0793e7aa-405d-4848-8191-4e7e52d8c1b0",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 293063,
+      "forks": 43361,
+      "starsAdded": 6594,
+      "createdAt": "2026-10-30T13:00:04.123Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
+      }
+    },
+    {
       "id": "65a553ce-8654-4280-9e99-5b4317017d74",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22409,8 +22470,8 @@
       "repo": "TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 118456,
-      "forks": 22654,
+      "stars": 118540,
+      "forks": 22666,
       "starsAdded": 5557,
       "createdAt": "2026-10-26T11:00:04.786Z",
       "metaData": {
@@ -22601,8 +22662,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 308915,
-      "forks": 27477,
+      "stars": 309109,
+      "forks": 27487,
       "starsAdded": 4894,
       "createdAt": "2026-10-29T14:00:04.583Z",
       "metaData": {
@@ -22663,8 +22724,8 @@
       "repo": "Leonxlnx/taste-skill",
       "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "language": "JavaScript",
-      "stars": 105808,
-      "forks": 7151,
+      "stars": 106002,
+      "forks": 7164,
       "starsAdded": 4359,
       "createdAt": "2026-10-28T19:00:03.898Z",
       "metaData": {
@@ -22728,8 +22789,8 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 226575,
-      "forks": 22627,
+      "stars": 226650,
+      "forks": 22635,
       "starsAdded": 4250,
       "createdAt": "2026-10-25T16:00:03.748Z",
       "metaData": {
@@ -22779,8 +22840,8 @@
       "repo": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 24150,
-      "forks": 3237,
+      "stars": 24254,
+      "forks": 3244,
       "starsAdded": 4110,
       "createdAt": "2026-10-26T11:00:04.794Z",
       "metaData": {
@@ -22953,8 +23014,8 @@
       "repo": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 33910,
-      "forks": 3730,
+      "stars": 33952,
+      "forks": 3731,
       "starsAdded": 2504,
       "createdAt": "2026-10-25T16:00:03.710Z",
       "metaData": {
@@ -23114,9 +23175,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 30952,
-      "forks": 8286,
-      "starsAdded": 1988,
+      "stars": 32329,
+      "forks": 8568,
+      "starsAdded": 2142,
       "createdAt": "2026-10-25T16:00:03.751Z",
       "metaData": {
         "forks": "0",
@@ -23160,6 +23221,61 @@
       }
     },
     {
+      "id": "a2382974-e8f9-426a-9b0b-d392ab09fbfc",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 184985,
+      "forks": 21874,
+      "starsAdded": 1877,
+      "createdAt": "2026-10-30T13:00:04.125Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
       "id": "cca9a59e-45e9-4645-bad2-9cc26279e36b",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -23167,8 +23283,8 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 80198,
-      "forks": 9403,
+      "stars": 80237,
+      "forks": 9409,
       "starsAdded": 1854,
       "createdAt": "2026-10-25T16:00:03.705Z",
       "metaData": {
@@ -23388,8 +23504,8 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 9249,
-      "forks": 349,
+      "stars": 9283,
+      "forks": 350,
       "starsAdded": 980,
       "createdAt": "2026-10-28T13:00:04.658Z",
       "metaData": {
