@@ -89748,9 +89748,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 96898,
-      "forks": 5706,
-      "starsAdded": 2299,
+      "stars": 97026,
+      "forks": 5713,
+      "starsAdded": 2300,
       "createdAt": "2026-10-30T16:00:18.799Z",
       "metaData": {
         "forks": "0",
@@ -89807,8 +89807,8 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 51674,
-      "forks": 6328,
+      "stars": 51752,
+      "forks": 6338,
       "starsAdded": 2282,
       "createdAt": "2026-10-30T16:00:18.832Z",
       "metaData": {
@@ -89870,9 +89870,9 @@
       "repo": "togg53192-cmd/jailbreaks",
       "description": "LIST OF ALL MY JAILBREAKS",
       "language": "",
-      "stars": 10777,
-      "forks": 1569,
-      "starsAdded": 2053,
+      "stars": 10964,
+      "forks": 1594,
+      "starsAdded": 2055,
       "createdAt": "2026-10-30T16:00:18.863Z",
       "metaData": {
         "forks": "0",
@@ -89923,9 +89923,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 309348,
-      "forks": 27518,
-      "starsAdded": 1255,
+      "stars": 309411,
+      "forks": 27521,
+      "starsAdded": 1259,
       "createdAt": "2026-10-30T16:00:18.868Z",
       "metaData": {
         "forks": "0",
@@ -89978,70 +89978,6 @@
       }
     },
     {
-      "id": "13ddaa14-3bb7-4b26-84ef-d583a0d4000c",
-      "dateAdded": "20261031",
-      "type": "github-daily",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "repo": "Renhuai123/ziwei-doushu",
-      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-      "language": "TypeScript",
-      "stars": 11145,
-      "forks": 2228,
-      "starsAdded": 1146,
-      "createdAt": "2026-10-30T16:00:18.806Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bazi",
-          "chinese-astrology",
-          "divination",
-          "fortune-telling",
-          "nextjs",
-          "open-source",
-          "purple-star-astrology",
-          "typescript",
-          "zi-wei-dou-shu",
-          "ziwei-doushu"
-        ],
-        "license": "MIT license",
-        "homepage": "https://metisziwei.com/?from=gh-about",
-        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
-      },
-      "summaryData": {
-        "tags": [
-          "紫微斗数",
-          "开源项目",
-          "AI训练数据",
-          "Next.js",
-          "排盘引擎"
-        ],
-        "cover": "",
-        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
-        "ability": [
-          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
-          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
-          "三部紫微斗数古籍全文数字化与在线阅读器",
-          "完整可一键部署的Next.js排盘网站前端",
-          "马云、乔布斯等名人命盘样本库供对照学习"
-        ],
-        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
-        "category": [
-          "开发工具",
-          "AI 数据集",
-          "传统文化"
-        ],
-        "suitable": [
-          "想微调命理垂直小模型的AI开发者",
-          "紫微斗数研究者与命理老师",
-          "需要现成产品原型的前端/全栈开发者",
-          "紫微斗数初学者",
-          "命理类内容创作者"
-        ],
-        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
-      }
-    },
-    {
       "id": "6e7aa3ef-4632-4d94-8e25-1289a75249e8",
       "dateAdded": "20261031",
       "type": "github-daily",
@@ -90049,9 +89985,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 106042,
-      "forks": 9340,
-      "starsAdded": 1145,
+      "stars": 106204,
+      "forks": 9349,
+      "starsAdded": 1140,
       "createdAt": "2026-10-30T16:00:18.781Z",
       "metaData": {
         "forks": "0",
@@ -90115,6 +90051,70 @@
       }
     },
     {
+      "id": "13ddaa14-3bb7-4b26-84ef-d583a0d4000c",
+      "dateAdded": "20261031",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 11191,
+      "forks": 2232,
+      "starsAdded": 1126,
+      "createdAt": "2026-10-30T16:00:18.806Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://metisziwei.com/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
       "id": "c1e5d3c9-6b25-4d58-90d9-98ff6f53994b",
       "dateAdded": "20261031",
       "type": "github-daily",
@@ -90122,9 +90122,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 32625,
-      "forks": 8638,
-      "starsAdded": 920,
+      "stars": 32722,
+      "forks": 8652,
+      "starsAdded": 930,
       "createdAt": "2026-10-30T16:00:18.827Z",
       "metaData": {
         "forks": "0",
@@ -90175,9 +90175,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 8474,
-      "forks": 1189,
-      "starsAdded": 899,
+      "stars": 8608,
+      "forks": 1196,
+      "starsAdded": 895,
       "createdAt": "2026-10-30T16:00:18.794Z",
       "metaData": {
         "forks": "0",
@@ -90241,9 +90241,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 307378,
-      "forks": 25865,
-      "starsAdded": 889,
+      "stars": 307457,
+      "forks": 25878,
+      "starsAdded": 876,
       "createdAt": "2026-10-30T16:00:18.821Z",
       "metaData": {
         "forks": "0",
@@ -90292,9 +90292,9 @@
       "repo": "JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars": 6510,
-      "forks": 356,
-      "starsAdded": 717,
+      "stars": 6566,
+      "forks": 357,
+      "starsAdded": 722,
       "createdAt": "2026-10-30T16:00:18.851Z",
       "metaData": {
         "forks": "0",
@@ -90359,9 +90359,9 @@
       "repo": "CopilotKit/OpenBot",
       "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
       "language": "TypeScript",
-      "stars": 8693,
-      "forks": 1100,
-      "starsAdded": 707,
+      "stars": 8767,
+      "forks": 1106,
+      "starsAdded": 706,
       "createdAt": "2026-10-30T16:00:18.803Z",
       "metaData": {
         "forks": "0",
@@ -90420,9 +90420,9 @@
       "repo": "lightpanda-io/browser",
       "description": "Lightpanda: the headless browser designed for AI and automation",
       "language": "Zig",
-      "stars": 38244,
-      "forks": 1866,
-      "starsAdded": 559,
+      "stars": 38344,
+      "forks": 1869,
+      "starsAdded": 626,
       "createdAt": "2026-10-30T16:00:18.871Z",
       "metaData": {
         "forks": "0",
@@ -90482,9 +90482,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 185208,
-      "forks": 21886,
-      "starsAdded": 287,
+      "stars": 185294,
+      "forks": 21895,
+      "starsAdded": 295,
       "createdAt": "2026-10-30T16:00:18.836Z",
       "metaData": {
         "forks": "0",
@@ -90537,9 +90537,9 @@
       "repo": "macro-inc/macro",
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
       "language": "Rust",
-      "stars": 5830,
-      "forks": 538,
-      "starsAdded": 117,
+      "stars": 5861,
+      "forks": 537,
+      "starsAdded": 57,
       "createdAt": "2026-10-30T16:00:18.814Z",
       "metaData": {
         "forks": "0",
@@ -90611,9 +90611,9 @@
       "repo": "expo/skills",
       "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
       "language": "Shell",
-      "stars": 3859,
-      "forks": 245,
-      "starsAdded": 108,
+      "stars": 3890,
+      "forks": 247,
+      "starsAdded": 38,
       "createdAt": "2026-10-30T16:00:18.809Z",
       "metaData": {
         "forks": "0",

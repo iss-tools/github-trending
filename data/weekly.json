@@ -22150,9 +22150,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 53955,
-      "forks": 3477,
-      "starsAdded": 14320,
+      "stars": 54098,
+      "forks": 3495,
+      "starsAdded": 12838,
       "createdAt": "2026-10-25T16:00:03.697Z",
       "metaData": {
         "forks": "0",
@@ -22202,9 +22202,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 96898,
-      "forks": 5706,
-      "starsAdded": 9713,
+      "stars": 97026,
+      "forks": 5713,
+      "starsAdded": 11323,
       "createdAt": "2026-10-28T13:00:04.647Z",
       "metaData": {
         "forks": "0",
@@ -22409,9 +22409,9 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 293333,
-      "forks": 43404,
-      "starsAdded": 6594,
+      "stars": 293395,
+      "forks": 43417,
+      "starsAdded": 6506,
       "createdAt": "2026-10-30T13:00:04.123Z",
       "metaData": {
         "forks": "0",
@@ -22460,65 +22460,6 @@
           "企业技术负责人"
         ],
         "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
-      }
-    },
-    {
-      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 118670,
-      "forks": 22691,
-      "starsAdded": 5557,
-      "createdAt": "2026-10-26T11:00:04.786Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
       }
     },
     {
@@ -22591,6 +22532,127 @@
       }
     },
     {
+      "id": "65a553ce-8654-4280-9e99-5b4317017d74",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 118700,
+      "forks": 22695,
+      "starsAdded": 5490,
+      "createdAt": "2026-10-26T11:00:04.786Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
+      "id": "8ce8f998-c039-40f4-868c-4f0adf6a2eff",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 309411,
+      "forks": 27521,
+      "starsAdded": 5474,
+      "createdAt": "2026-10-29T14:00:04.583Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
       "id": "51b53e4d-2325-43fe-b64f-2b616facd2a4",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22655,68 +22717,6 @@
       }
     },
     {
-      "id": "8ce8f998-c039-40f4-868c-4f0adf6a2eff",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/obra/superpowers",
-      "repo": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 309348,
-      "forks": 27518,
-      "starsAdded": 4894,
-      "createdAt": "2026-10-29T14:00:04.583Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "工作流自动化",
-          "TDD",
-          "代码质量",
-          "Prompt工程"
-        ],
-        "cover": "",
-        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
-        "ability": [
-          "标准化工程流程",
-          "强制测试驱动开发 (TDD)",
-          "跨 AI 工具兼容",
-          "自动化代码评审",
-          "环境隔离与管理"
-        ],
-        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "使用 AI 编程的开发者",
-          "追求代码质量的团队",
-          "技术负责人",
-          "工程化新手",
-          "多工具混合用户"
-        ],
-        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
-      }
-    },
-    {
       "id": "f2144101-3bb1-4865-8ec2-db74bf1257d3",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22724,9 +22724,9 @@
       "repo": "Leonxlnx/taste-skill",
       "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "language": "JavaScript",
-      "stars": 106254,
-      "forks": 7184,
-      "starsAdded": 4359,
+      "stars": 106324,
+      "forks": 7191,
+      "starsAdded": 4712,
       "createdAt": "2026-10-28T19:00:03.898Z",
       "metaData": {
         "forks": "0",
@@ -22782,57 +22782,6 @@
       }
     },
     {
-      "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "repo": "multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "stars": 226787,
-      "forks": 22646,
-      "starsAdded": 4250,
-      "createdAt": "2026-10-25T16:00:03.748Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "",
-        "homepage": "",
-        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Claude",
-          "Cursor",
-          "代码规范",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
-        "ability": [
-          "纠正 AI 错误假设与沉默猜测",
-          "抑制过度设计与代码膨胀",
-          "实施精准的手术式代码修改",
-          "目标驱动的闭环验证机制"
-        ],
-        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率提升"
-        ],
-        "suitable": [
-          "Claude Code 或 Cursor 重度用户",
-          "追求高质量代码的开发者",
-          "技术团队负责人",
-          "需要规范 AI 输出的用户"
-        ],
-        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
-      }
-    },
-    {
       "id": "b56753b4-3bdc-42bf-8256-c67fdfa8476c",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -22840,9 +22789,9 @@
       "repo": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 24441,
-      "forks": 3259,
-      "starsAdded": 4110,
+      "stars": 24506,
+      "forks": 3260,
+      "starsAdded": 4478,
       "createdAt": "2026-10-26T11:00:04.794Z",
       "metaData": {
         "forks": "0",
@@ -22891,6 +22840,57 @@
           "想做 GEO/AEO 优化的内容创作者"
         ],
         "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
+      }
+    },
+    {
+      "id": "dc5ed193-8567-401b-8f9c-5bd6e408915c",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "stars": 226845,
+      "forks": 22650,
+      "starsAdded": 4178,
+      "createdAt": "2026-10-25T16:00:03.748Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "Cursor",
+          "代码规范",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
+        "ability": [
+          "纠正 AI 错误假设与沉默猜测",
+          "抑制过度设计与代码膨胀",
+          "实施精准的手术式代码修改",
+          "目标驱动的闭环验证机制"
+        ],
+        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code 或 Cursor 重度用户",
+          "追求高质量代码的开发者",
+          "技术团队负责人",
+          "需要规范 AI 输出的用户"
+        ],
+        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
       }
     },
     {
@@ -23007,56 +23007,56 @@
       }
     },
     {
-      "id": "2ded2a1e-1120-4a15-b33a-462430dd474b",
+      "id": "e2553922-6f5d-4f69-9af6-66558aca2df4",
       "dateAdded": "202644",
       "type": "github-weekly",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "repo": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars": 34010,
-      "forks": 3746,
-      "starsAdded": 2504,
-      "createdAt": "2026-10-25T16:00:03.710Z",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 32722,
+      "forks": 8652,
+      "starsAdded": 2775,
+      "createdAt": "2026-10-25T16:00:03.751Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "Claude",
-          "Anthropic",
+          "开源",
           "GitHub",
-          "AI插件",
-          "自动化"
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
         ],
         "cover": "",
-        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
         "ability": [
-          "岗位专家定制",
-          "企业 SOP 固化",
-          "工具链连接",
-          "无代码维护",
-          "团队协作标准化"
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
         ],
-        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
         "category": [
-          "AI 编程",
           "开发工具",
-          "企业服务"
+          "AI 编程",
+          "效率工具"
         ],
         "suitable": [
-          "知识型团队管理者",
-          "企业职能人员",
-          "开发者与平台团队",
-          "Claude 深度用户",
-          "AI 工具运营者"
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
         ],
-        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
       }
     },
     {
@@ -23168,56 +23168,56 @@
       }
     },
     {
-      "id": "e2553922-6f5d-4f69-9af6-66558aca2df4",
+      "id": "2ded2a1e-1120-4a15-b33a-462430dd474b",
       "dateAdded": "202644",
       "type": "github-weekly",
-      "url": "https://github.com/pingdotgg/t3code",
-      "repo": "pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 32625,
-      "forks": 8638,
-      "starsAdded": 2142,
-      "createdAt": "2026-10-25T16:00:03.751Z",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 34035,
+      "forks": 3749,
+      "starsAdded": 2083,
+      "createdAt": "2026-10-25T16:00:03.710Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "MIT license",
-        "homepage": "https://t3.codes",
-        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork - anthropics/knowledge-work-plugins"
       },
       "summaryData": {
         "tags": [
-          "开源",
+          "Claude",
+          "Anthropic",
           "GitHub",
-          "TypeScript",
-          "开发者工具",
-          "代码审查"
+          "AI插件",
+          "自动化"
         ],
         "cover": "",
-        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "title": "Anthropic 官方插件集：一键定制你的岗位 AI 专家",
         "ability": [
-          "多代理统一控制",
-          "线程化会话管理",
-          "代码差异实时审查",
-          "深度 Git 集成",
-          "代码本地化存储"
+          "岗位专家定制",
+          "企业 SOP 固化",
+          "工具链连接",
+          "无代码维护",
+          "团队协作标准化"
         ],
-        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "summary": "Anthropic 官方开源插件集，让 Claude 变身懂业务、连工具、守规范的岗位数字专家。",
         "category": [
-          "开发工具",
           "AI 编程",
-          "效率工具"
+          "开发工具",
+          "企业服务"
         ],
         "suitable": [
-          "多 AI 编程工具重度用户",
-          "团队开发与代码审查者",
-          "注重数据安全的开发者",
-          "追求极致开发体验者",
-          "AI 编程初学者"
+          "知识型团队管理者",
+          "企业职能人员",
+          "开发者与平台团队",
+          "Claude 深度用户",
+          "AI 工具运营者"
         ],
-        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+        "description": "这是一个由 Anthropic 官方维护的开源插件集合，覆盖销售、法务、产品等 11 个岗位。它通过 Markdown 和 JSON 文件将企业知识、工作流和工具连接打包，无需编写复杂代码即可实现 Claude 的企业级定制，大幅提升团队协作效率与输出一致性。"
       }
     },
     {
@@ -23228,9 +23228,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 185208,
-      "forks": 21886,
-      "starsAdded": 1877,
+      "stars": 185294,
+      "forks": 21895,
+      "starsAdded": 1888,
       "createdAt": "2026-10-30T13:00:04.125Z",
       "metaData": {
         "forks": "0",
@@ -23283,9 +23283,9 @@
       "repo": "ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 80279,
-      "forks": 9414,
-      "starsAdded": 1854,
+      "stars": 80298,
+      "forks": 9416,
+      "starsAdded": 1723,
       "createdAt": "2026-10-25T16:00:03.705Z",
       "metaData": {
         "forks": "0",
@@ -23423,6 +23423,59 @@
       }
     },
     {
+      "id": "c4830104-dda9-456a-93ff-e27dc31fca4a",
+      "dateAdded": "202644",
+      "type": "github-weekly",
+      "url": "https://github.com/jakubkrehel/skills",
+      "repo": "jakubkrehel/skills",
+      "description": "A collection of agent skills that help you build great interfaces.",
+      "language": "Markdown",
+      "stars": 9366,
+      "forks": 357,
+      "starsAdded": 1107,
+      "createdAt": "2026-10-28T13:00:04.658Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://jakub.kr/skills",
+        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "UI 审查",
+          "前端自动化",
+          "Design Systems",
+          "开源"
+        ],
+        "cover": "",
+        "title": "全能型 AI 设计工程助手：jakubkrehel/skills 深度评测",
+        "ability": [
+          "全链路界面审查",
+          "排版与色彩优化",
+          "无障碍性检查",
+          "复杂交互解释",
+          "组件变体生成"
+        ],
+        "summary": "专为前端与UI设计打造的高质量 AI 技能合集，一键提升界面打磨与代码审查效率。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计辅助"
+        ],
+        "suitable": [
+          "前端开发",
+          "UI/UX 设计师",
+          "AI 编程爱好者",
+          "产品团队",
+          "技术初学者"
+        ],
+        "description": "这是一个将资深设计工程经验固化为 AI 技能的开源项目。它能自动评审 UI、排版、色彩和无障碍性，帮助开发者快速发现设计瑕疵，提升代码与视觉的一致性。"
+      }
+    },
+    {
       "id": "3a8f8e77-38c3-4041-835e-267068b66af9",
       "dateAdded": "202644",
       "type": "github-weekly",
@@ -23494,59 +23547,6 @@
           "开发 AI Agent / LLM 应用服务的工程师"
         ],
         "description": "FastAPI 站在 Pydantic v2（Rust 核心）和 Starlette 两位巨人肩上，用标准 Python 类型提示把参数校验、接口文档、IDE 补全和高性能打包成免费大礼包。GitHub 超十万 Star，被 Microsoft、Uber、Netflix 等大厂采用，已成为 Python API 开发的事实首选，但需注意异步阻塞陷阱和 0.x 版本号的兼容风险。"
-      }
-    },
-    {
-      "id": "c4830104-dda9-456a-93ff-e27dc31fca4a",
-      "dateAdded": "202644",
-      "type": "github-weekly",
-      "url": "https://github.com/jakubkrehel/skills",
-      "repo": "jakubkrehel/skills",
-      "description": "A collection of agent skills that help you build great interfaces.",
-      "language": "Markdown",
-      "stars": 9325,
-      "forks": 356,
-      "starsAdded": 980,
-      "createdAt": "2026-10-28T13:00:04.658Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://jakub.kr/skills",
-        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Skills",
-          "UI 审查",
-          "前端自动化",
-          "Design Systems",
-          "开源"
-        ],
-        "cover": "",
-        "title": "全能型 AI 设计工程助手：jakubkrehel/skills 深度评测",
-        "ability": [
-          "全链路界面审查",
-          "排版与色彩优化",
-          "无障碍性检查",
-          "复杂交互解释",
-          "组件变体生成"
-        ],
-        "summary": "专为前端与UI设计打造的高质量 AI 技能合集，一键提升界面打磨与代码审查效率。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "设计辅助"
-        ],
-        "suitable": [
-          "前端开发",
-          "UI/UX 设计师",
-          "AI 编程爱好者",
-          "产品团队",
-          "技术初学者"
-        ],
-        "description": "这是一个将资深设计工程经验固化为 AI 技能的开源项目。它能自动评审 UI、排版、色彩和无障碍性，帮助开发者快速发现设计瑕疵，提升代码与视觉的一致性。"
       }
     },
     {
