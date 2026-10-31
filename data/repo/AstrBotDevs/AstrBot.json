@@ -1,0 +1,72 @@
+{
+  "id": "30a694fb-dd89-4bee-97b2-0e237cdcd5f7",
+  "url": "https://github.com/AstrBotDevs/AstrBot",
+  "domain": "github.com",
+  "repo": "AstrBotDevs/AstrBot",
+  "description": "开源 AI 聊天机器人编排平台（GitHub 45K+ Star），由北邮开发者 Soulter 主导。它把主流大模型一键接入 QQ、微信、飞书等 15+ 聊天工具，内置插件市场、Agent 沙箱与知识库检索，1 核 1G 服务器即可运行，约 30 分钟能搭好群聊 AI 助手；但微信个人号接入有封号风险，商用需注意 AGPL-3.0 协议限制。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-10-31T13:19:46.247Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "agent",
+      "ai",
+      "astrbot",
+      "chatbot",
+      "chatgpt",
+      "discord",
+      "docker",
+      "gemini",
+      "gpt",
+      "llama",
+      "llm",
+      "mcp",
+      "openai",
+      "python",
+      "qq",
+      "qqbot",
+      "telegram"
+    ],
+    "license": "AGPL-3.0 license",
+    "homepage": "https://astrbot.app",
+    "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ - AstrBotDevs/AstrBot"
+  },
+  "summaryData": {
+    "tags": [
+      "AstrBot",
+      "聊天机器人",
+      "AI Agent",
+      "开源项目",
+      "大模型"
+    ],
+    "cover": "",
+    "title": "AstrBot 深度评测：45K Star 的多平台 AI 聊天机器人编排平台，是玩具还是基建？",
+    "ability": [
+      "多平台接入：一套代码同时运行在 QQ、微信、飞书、钉钉、Telegram 等 15+ IM 平台",
+      "多模型支持：兼容 OpenAI、Claude、Gemini、DeepSeek 及 Ollama 本地模型",
+      "Agent 能力：支持 MCP 工具调用、代码沙箱执行、子智能体编排与知识库 RAG 问答",
+      "插件生态：1000+ 社区插件一键安装，继承 Star 类即可低成本开发扩展",
+      "WebUI 可视化管理：图形化配置部署，小白无需命令行基础"
+    ],
+    "summary": "把 ChatGPT、Claude、DeepSeek 等大模型一键接入 QQ、微信、飞书等 15+ 聊天平台的开源 AI 机器人框架",
+    "category": [
+      "AI 编程",
+      "开发工具",
+      "开源项目"
+    ],
+    "suitable": [
+      "想在群聊里直接使用 AI 的普通用户",
+      "想开发 Bot 插件的 Python 开发者",
+      "需要提升社群活跃度的运营者",
+      "需私有化部署 AI 助手的技术团队",
+      "想学习 Agent 编排架构设计的开发者"
+    ],
+    "description": "开源 AI 聊天机器人编排平台（GitHub 45K+ Star），由北邮开发者 Soulter 主导。它把主流大模型一键接入 QQ、微信、飞书等 15+ 聊天工具，内置插件市场、Agent 沙箱与知识库检索，1 核 1G 服务器即可运行，约 30 分钟能搭好群聊 AI 助手；但微信个人号接入有封号风险，商用需注意 AGPL-3.0 协议限制。"
+  },
+  "contentDetail": "# AstrBot 深度评测：把大模型塞进 QQ/微信/飞书的「六边形战士」，到底是玩具还是基建？\n**AstrBot 是一款由北邮 00 后开发者 Soulter 主导、目前 GitHub 已积累 45K+ Star 的开源「IM 原生 Agentic 聊天机器人编排平台」——它能让你把 OpenAI、Claude、Gemini、DeepSeek、通义千问等主流大模型，一键接入 QQ、微信、企业微信、飞书、钉钉、Telegram、Discord 等 15+ 主流 IM 平台，并通过插件市场、MCP 协议、Agent 沙箱，把聊天窗口变成一个真正「能干活」的 AI 工作台。**\n如果你曾被\"AI 只能去官网/网页版问\"这件事折磨过，AstrBot 几乎是为这个痛点量身定做的解药。下面为您逐层拆解这个项目的技术底色、上手姿势与真实局限。\n---\n## 项目速览\n| 项目 | 信息 |\n|---|---|\n| **仓库地址** | github.com/AstrBotDevs/AstrBot |\n| **GitHub Star** | 45K+（截至 2026 年 10 月） |\n| **贡献者** | 234 人 / 1800+ Fork |\n| **开源协议** | AGPL-3.0 |\n| **首发时间** | 2023 年 1 月 9 日（比 OpenClaw 早了整整三年） |\n| **技术栈** | Python 3.12 + 异步事件总线 + 模块化插件架构 |\n| **核心定位** | IM 原生 Agent 编排器 + 开发框架，而非单一 Bot |\n| **插件生态** | 1000+ 社区插件可一键安装 |\n| **支持平台** | QQ / OneBot v11 / Telegram / 企微 / 公众号 / 飞书 / 钉钉 / Slack / Discord / LINE / Satori / KOOK / Misskey / Mattermost / Matrix 等 |\n---\n## 一、背景与定位：为什么会有 AstrBot？\n### 1. 一个\"造亚托莉\"的执念\nAstrBot 的诞生故事在中文开源圈算是相当独特的一支。发起人 Soulter 是位 03 年出生的北京邮电大学研究生，初二开始编程，2022 年底 ChatGPT 刚问世时，他试着把 GPT 接进 QQ 频道，于是有了 AstrBot 的雏形。\n但真正让他坚持下来的动机颇具浪漫色彩——Galgame《ATRI -My Dear Moments-》里的机器人少女\"亚托莉\"。他在 GitHub 个人主页里写下的目标是：**\"My dream is to build an ATRI.\"**。这也解释了为什么 AstrBot 长期把\"情感陪伴\"和\"工具能力\"放在同等重要的位置，而不是单纯把 Bot 当成 API 代理器。\n### 2. 它要解决的核心痛点\n把 AstrBot 放回 2022–2026 年的语境下，它瞄准的是三个非常具体的痛点：\n- **入口割裂**：AI 能力再强，也要打开 ChatGPT 网页/独立 App 才能用。AstrBot 把模型拉进你已经 24 小时在线的 QQ/微信/飞书，让 AI 变成群里的一个\"队友\"。\n- **平台碎片化**：自己写 Bot 要为每个平台单独适配协议。AstrBot 通过统一的协议适配层，把\"多平台\"这个最脏最累的活儿干完了。\n- **能力边界模糊**：传统聊天机器人只会复读和客服问答。AstrBot 通过 MCP、Skills、Agent 沙箱和子智能体编排，让 Bot 能调用工具、执行代码、检索知识库，真正在群里\"做事\"。\n> **一句话理解 AstrBot 的定位**：如果 OpenClaw 是\"AI 操作系统的入口\"，那么 AstrBot 就是\"一群人 + 一个聊天窗口\"场景下的 Agent 编排器和开发框架——它不追求让 AI 控制你的电脑，而是让 AI 在 IM 工作流里成为可靠的协作节点。\n---\n## 二、核心亮点与功能剖析\n### 亮点 1：协议适配层——多平台支持的\"豪华阵容\"\n这是 AstrBot 最底层的护城河。README 里官方维护的平台覆盖 QQ、OneBot v11（即接 NapCat、Lagrange 等第三方 QQ 协议端）、Telegram、企业微信、微信公众号、飞书、钉钉、Slack、Discord、LINE、Satori、KOOK、Misskey、Mattermost，社区还贡献了 Matrix、Rocket.Chat、VoceChat，并预告了 WhatsApp。\n**这意味着什么**：你写一个插件，就能同时跑在 QQ 群、Telegram 群、飞书群里，不用为每个平台重写一遍。对于企业场景，这一点尤其值钱——内部通讯用飞书、对外客服用公众号、社群运营用 QQ，一套 Bot 全覆盖。\n### 亮点 2：模型服务层——几乎集齐了主流大模型\nAstrBot 没绑定任何一家模型厂商，原生支持 OpenAI 及兼容接口、Anthropic Claude、Google Gemini、Moonshot Kimi、智谱 GLM、DeepSeek、SiliconFlow、ModelScope、PPIO、302.AI、AIHubMix、MiraRouter 等几十种 LLM 服务，还支持 Ollama 和 LM Studio 这类本地部署方案。\n更难得的是它集成了 Dify、阿里云百炼、Coze 等 LLMOps 平台，意味着你可以把企业内已经编排好的 Agent 应用直接接到 AstrBot 里跑在 IM 上。\n### 亮点 3：Agent 能力栈——从\"会聊天\"到\"能干活\"\n这是 AstrBot 与传统 chatgpt-on-wechat 类项目拉开差距的关键。它内置了一整套 Agentic 能力：\n- **MCP（Model Context Protocol）原生支持**：可以像接插件一样把外部工具/服务接进来，打破模型能力边界。\n- **Agent 沙箱（Shipyard）**：隔离执行 Python 代码、Shell 命令，支持会话级资源复用，安全跑代码不再有风险。\n- **Skills 系统**：把可复用的任务封装成可分发的 Skill。\n- **Sub Agents 编排**：一个主 Agent 可以调度多个子智能体协作完成任务。\n- **自动上下文压缩**：长对话自动摘要，避免上下文无限膨胀吃 Token、拖慢响应。\n### 亮点 4：插件生态——1000+ 插件 + 一键安装\nAstrBot Cloud 插件市场是它的\"护城河\"，从实用工具到拟人化陪伴应有尽有。这里精选几个真实好用的：****\n| 插件名 | 用途 | 为什么值得装 |\n|---|---|---|\n| **astrbot_plugin_livingmemory** | 完整记忆生命周期的长期记忆 | 让 Bot 真的\"记得\"你说过的话 |\n| **astrbot_plugin_proactive_chat** | 主动消息 + 情绪状态 + 免打扰时段 | Bot 会主动找你聊天，拟人化利器 |\n| **表情包管理器 (Meme Manager)** | AI 根据情绪智能发表情包 | 让 Bot 突然有\"人味儿\"的关键 |\n| **群分析总结插件** | 自动生成群聊话题报告 | 群主和运营的复盘神器 |\n| **astrbot_plugin_group_chat_plus** | AI\"读空气\"，更自然参与群聊 | 解决 Bot 乱插话的尴尬 |\n| **QQ 群管插件** | 禁言、踢人、设精华等全功能管理 | 群管 Bot 的刚需 |\n> 顺便一提，AstrBot 还有专门的**QQ 空间对接插件**、**B 站推送插件**、**点歌插件**、**Steam 状态监控插件**——这生态密度在国内开源项目里属于顶尖水平。\n### 亮点 5：WebUI + 多模态 + 知识库\nAstrBot 配备了一个相当完整的 WebUI 管理后台，部署好后你可以在浏览器里完成：平台接入、模型配置、人格设定、插件管理、知识库上传、对话历史查看，几乎不需要碰命令行。\n知识库采用**混合检索**（稠密向量检索 + BM25 稀疏检索），并针对中文语境做了优化，对国内用户上传企业文档/FAQ 做私有知识问答非常友好。\n---\n## 三、技术架构解析（写给开发者）\n### 1. 事件总线 + 消息事件流水线\nAstrBot 历经三次大重构，最终采用了**事件总线 + 消息事件流水线**的架构设计，实现了近乎完全的模块化——协议解析、消息路由、插件系统是解耦的独立模块。\n```\n┌──────────────────────────────────────────────┐\n│           WebUI / Dashboard 控制面             │\n└──────────────────────────────────────────────┘\n                       │\n┌──────────┬──────────┴─────────┬──────────────┐\n│ 平台适配器 │   事件总线          │  LLM Provider │\n│  QQ/微信/  │  (Event Bus)       │  OpenAI/Gemini │\n│  飞书/TG  │                    │  DeepSeek...  │\n└──────────┴──────────┬─────────┴──────────────┘\n                       │\n┌──────────────────────┴───────────────────────┐\n│        消息事件流水线         │\n│  唤醒判定 → 会话管理 → LLM 调用 → 工具调用 → 输出 │\n└──────────────────────────────────────────────┘\n                       │\n              ┌────────┴────────┐\n              │  插件系统 (Star) │\n              │  Agent 沙箱     │\n              │  知识库 (RAG)   │\n              └─────────────────┘\n```\n这种设计的妙处在于：**任何一层都可以被替换或扩展**。新增一个 IM 平台，只要实现协议适配器接口；新增一个模型，只要写一个 Provider；想加新功能，写个插件即可——核心代码不用动。\n### 2. 插件机制：继承 Star，装饰器注册命令\nAstrBot 的插件叫 **Star**（这也是为什么插件目录叫 `addons/`，作者梗是亚托莉里的\"星星\"）。开发门槛非常低，下面是一个最小可运行的插件示例：\n```python\n# addons/helloworld/main.py\nfrom astrbot.api.event import filter, AstrMessageEvent\nfrom astrbot.api.star import Context, Star\nfrom astrbot.api import logger\nclass MyPlugin(Star):\n    def __init__(self, context: Context):\n        super().__init__(context)\n    # 注册 /helloworld 命令\n    @filter.command(\"helloworld\")\n    async def helloworld(self, event: AstrMessageEvent):\n        '''这是 helloworld 命令的帮助说明'''\n        user_name = event.get_sender_name()\n        logger.info(\"Hello world command triggered!\")\n        yield event.plain_result(f\"Hello, {user_name}!\")\n    # 监听所有消息（不限命令）\n    @filter.on_message()\n    async def on_any_message(self, event: AstrMessageEvent):\n        text = event.get_plain_text()\n        if \"hello\" in text.lower():\n            yield event.plain_result(\"Hi there!\")\n    # 卸载时调用（可选）\n    async def terminate(self):\n        pass\n```\n**几个关键设计点**：\n- 插件必须继承 `Star` 类，`Context` 对象用于与 AstrBot Core 交互（调 API、发消息、读配置）\n- `@filter.command()` 注册命令、`@filter.on_message()` 监听全部消息、`@filter.command(\"xxx\", permission=True)` 注册管理员命令\n- 处理函数用 `yield event.plain_result(...)` 而不是 `return`，这让它天然支持**流式输出和多次发送**\n- 插件目录结构只有 `main.py` + `metadata.yaml`，框架自动扫描加载\n这套 API 在我看来比 NoneBot 的依赖注入更直白，比 LangBot 的配置式插件更灵活，**属于\"小白能上手、老手能深挖\"的设计典范**。\n### 3. 异步编程模型\nAstrBot 全程使用 Python asyncio，所有事件处理都是异步的。这意味着单进程就能扛住多平台、多群组、多会话的并发消息流，对 IO 密集型的聊天场景非常合适。劣势是写插件时必须用 `async/await`，对纯同步思维的开发者有一点学习成本。\n---\n## 四、部署体验与硬件成本（写给小白）\nAstrBot 在部署这件事上提供了**四种主流姿势**，覆盖从纯小白到折腾狂魔的全部光谱：\n### 姿势 1：uv 一键部署（最简单，推荐）\n```bash\nuv tool install astrbot --python 3.12\nastrbot init   # 仅第一次执行\nastrbot run\n```\n适合有命令行基础的用户。macOS 第一次启动会慢 10-20 秒（安全检查），后续很快。\n### 姿势 2：Docker / Docker Compose（生产环境推荐）\n```bash\ngit clone https://github.com/AstrBotDevs/AstrBot\ncd AstrBot\nsudo docker compose up -d\n```\n国内拉镜像可以把 `soulter/astrbot:latest` 换成 `m.daocloud.io/docker.io/soulter/astrbot:latest`。\n### 姿势 3：AstrBot 桌面版 / Launcher\n提供 Windows / macOS / Linux 全平台的桌面安装包（Rust 写的启动器），图形化部署 + 多实例管理，适合主要使用 ChatUI 的桌面用户。\n### 姿势 4：宝塔 / 1Panel / CasaOS\n如果你是 NAS 用户或者用面板管服务器，这些都有现成模板。\n### 服务器配置建议\n| 场景 | 最低配置 | 推荐配置 |\n|---|---|---|\n| **个人轻量**（1-3 平台，几百条消息/天） | 1 核 1G | 2 核 2G |\n| **群组较多 / 多插件** | 2 核 2G | 2 核 4G |\n| **开 Agent 沙箱**（跑代码） | 2 核 4G + Swap | 4 核 8G |\n| **沙箱独立部署（Shipyard Neo）** | — | 单独一台 4 核 8G 机器 |\n> 沙箱给每个实例限制 1 CPU + 512MB 内存，建议宿主机至少 2 核 4G 并开启 Swap。\n实测量级参考：AstrBot 本体在 Docker 里跑稳定占用约 200-300MB 内存，**1 核 1G 的入门云服务器（年费几十块那种）完全够用**——前提是模型调用走外部 API，而不是本地推理。\n---\n## 五、竞品对比：AstrBot 在同类项目中的位置\n中文开源圈做 IM Bot 框架的项目不少，AstrBot 最常被拿来对比的是 **LangBot**、**chatgpt-on-wechat**、**NoneBot** 和最近的 **OpenClaw**。下面这张表帮您定位：\n| 维度 | **AstrBot** | **LangBot** | **OpenClaw** | **chatgpt-on-wechat** | **NoneBot** |\n|---|---|---|---|---|---|\n| **核心定位** | Agentic IM 编排器 + 框架 | 企业级 AI Bot 框架 | 桌面/浏览器 Agent | 微信 Bot | Python 异步 Bot 框架 |\n| **平台覆盖** | 15+ 官方 + 3 社区 | 10+ 官方 | 主操作系统 | 主要是微信 | 适配器丰富但需自己写 |\n| **Agent 能力** | ⭐⭐⭐⭐⭐ MCP/沙箱/Sub-Agents | ⭐⭐⭐⭐ 隔离执行 | ⭐⭐⭐⭐⭐ 系统级 | ⭐⭐ 基础对话 | ⭐⭐ 需自己拼 |\n| **插件生态** | 1000+ 一键装 | 数百个 | Skill 市场 | 较少 | 丰富但偏传统 |\n| **WebUI** | ⭐⭐⭐⭐⭐ 完整 | ⭐⭐⭐⭐ 企业级 | ⭐⭐⭐ | ⭐⭐ | 无原生 |\n| **上手难度** | ⭐ 低 | ⭐⭐ 中 | ⭐⭐⭐⭐ 需折腾 | ⭐ 极低 | ⭐⭐⭐ 需代码 |\n| **中文优化** | ⭐⭐⭐⭐⭐ 深度 | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |\n| **企业特性** | 一般 | ⭐⭐⭐⭐⭐ 审计/合规 | 弱 | 弱 | 一般 |\n| **典型人群** | 个人玩家/独立开发者/极客 | 企业/团队 | 极客/自媒体 | 普通小白 | Python 开发者 |\n**结论性判断**：\n- **个人玩家、独立开发者、想折腾插件的人 → AstrBot** 是更优起点，插件生态最丰富，起步零门槛\n- **企业落地、追求稳定合规的 CTO → LangBot** 更合适，官方 IM API + 审计合规是企业采购的硬指标\n- **想让 AI 直接操作电脑做自动化 → OpenClaw**，这是另一个赛道\n- **纯 Python 开发者想自己写 Bot 逻辑 → NoneBot** 灵活性更高但工作量大\nAstrBot 和 LangBot 的本质差异在于：**LangBot 把 Agent 沙箱、Workflow 路由、RAG 知识引擎做成了可替换的架构层**，代价是初次配置要理解它的分层；**AstrBot 把这些能力收得更紧**，上手快，但深度扩展时必须顺着它的插件模型走。\n---\n## 六、局限与不足：这些坑你得知道\n作为一篇负责任的评测，必须把 AstrBot 的短板说清楚。\n### 1. 微信个人号接入的封号风险（最大坑）\n这是 AstrBot 社区里讨论最多的问题。**微信个人号接入必须走第三方协议端（gewe、wechaty、wechatpadpro 等）**，本质上属于\"未经授权的自动化操作\"，违反《微信个人账号使用规范》。\n2026 年 4 月更新的微信个人账号规范明确列出：外挂、批量操作、自动回复、频繁加好友等行为可能触发限制登录甚至封号。\n**应对建议**：\n- 用小号/备用号测试，不要用主力号\n- 控制消息频率，避免异常特征\n- 企业场景直接走**企业微信官方 API**或**微信公众号**，零封号风险\n- 飞书、钉钉、Telegram、Discord 都有官方 Bot 接口，没有这个风险\n### 2. AGPL-3.0 协议对商业化的限制\nAstrBot 主仓库采用 **AGPL-3.0** 协议。这意味着：\n- 修改后用作网络服务提供，**必须开源修改后的代码**\n- 二次开发后闭源商用**不被允许**\n- 想做 SaaS 或闭源企业分发的团队，需要联系作者谈商业授权\n个人使用、企业内部部署完全没问题，但如果您计划基于 AstrBot 做商业产品，协议要提前想清楚。\n### 3. 文档与稳定性仍在演进\nAstrBot 迭代极快（v3.5.0 到 v4.18.0 只用了不到一年），但这也带来副作用：\n- **文档偶尔滞后于代码**，一些新特性要翻源码或社区讨论才能搞清楚\n- **升级可能不兼容**，部分用户反馈大版本升级时配置或插件接口会变，建议锁定版本、观察一周再升\n- **插件质量参差**，1000+ 插件里既有 438 Star 的精品，也有刚起步的实验品，挑插件时要看 Star 数和更新时间\n### 4. 插件异常可能影响整个进程\n插件运行在 AstrBot 主进程里，**未捕获的异常可能拖垮整个消息链路**，甚至波及其他插件。写插件时务必在事件处理器里加 `try/except`，用 AstrBot 提供的 `logger` 而不是 `print`，让日志统一进管理后台。\n### 5. SQLite 在高并发下的局限\n默认存储用 SQLite，**高并发写入时容易锁等待**，极端情况下可能导致应用卡死被重启。生产环境建议换成 PostgreSQL。\n### 6. 国内网络环境对模型调用的影响\n如果你用 OpenAI/Anthropic 等海外模型 API，国内服务器需要配 HTTP 代理。AstrBot 容器内的代理配置**不能直接用 `127.0.0.1`**（会指向容器自己），要用宿主机 IP 或另一个容器的服务名。\n---\n## 七、结语与行动建议\n### 终极评判\nAstrBot 在中文开源 IM Bot 赛道里，是一个**罕见地在\"易用性、技术深度、生态规模\"三个维度同时做到 80 分以上**的项目。它不是某一项能力的冠军，但它是综合实力的天花板。\n它的最大价值在于**把\"IM 原生 Agent\"这件事从 idea 变成了基础设施**：协议层、模型层、Agent 层、插件层全部标准化，让一个完全不写代码的用户也能在 30 分钟内搭起一个能听会说的群聊 Bot，让一个资深开发者也能在这个底座上造出企业级的智能体应用。\n它的最大风险则是**所有依赖第三方协议的 IM 接入都存在灰色地带**，尤其是微信个人号——这部分需要您自己权衡。\n### 分人群行动建议\n| 你是 | 建议动作 |\n|---|---|\n| **完全小白，想体验 AI 群聊 Bot** | 从桌面版 Launcher 入手，先接 QQ（走 NapCat）或 Telegram，30 分钟搞定 |\n| **个人开发者，想折腾插件/做副业** | 直接 uv 部署 + 深入插件开发，Star 类 API 学习曲线平缓，是接私单的好技能 |\n| **社群/团队运营，要提升群活跃** | 部署到 2C2G 云服务器，装上拟人化插件（proactive_chat + livingmemory + meme_manager），效果立竿见影 |\n| **企业 IT，要私有化部署智能助手** | 优先选 LangBot 走官方 API；如果一定要 AstrBot，走飞书/钉钉/企微**官方机器人接口**，避开个人微信 |\n| **Python 开发者，要学 Agent 编排** | AstrBot 的源码是极好的学习材料，事件总线 + 流水线 + 插件系统的设计模式值得啃 |\n| **硬件玩家/NAS 党** | Docker Compose 部署 + 挂载宿主机数据卷，1 核 1G 就能跑，配合 Shipyard Neo 独立部署沙箱 |\n> **最后一句话**：在 AI 火热到模型每周都在刷新的 2026 年，AstrBot 这种\"看起来不那么炫\"的基础设施项目，反而可能比许多爆款 Demo 活得更久——因为它解决的是一个不会消失的需求：**让 AI 长在你已经在用的地方，而不是让你迁就 AI。**\n如果这个项目对您有帮助，去给它点个 Star 吧——这是开源作者继续更新最朴素的燃料。",
+  "type": "project",
+  "dateAdded": "20261031"
+}

@@ -1,6 +1,180 @@
 {
   "all": [
     {
+      "id": "30a694fb-dd89-4bee-97b2-0e237cdcd5f7",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "domain": "github.com",
+      "repo": "AstrBotDevs/AstrBot",
+      "description": "开源 AI 聊天机器人编排平台（GitHub 45K+ Star），由北邮开发者 Soulter 主导。它把主流大模型一键接入 QQ、微信、飞书等 15+ 聊天工具，内置插件市场、Agent 沙箱与知识库检索，1 核 1G 服务器即可运行，约 30 分钟能搭好群聊 AI 助手；但微信个人号接入有封号风险，商用需注意 AGPL-3.0 协议限制。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-31T13:19:46.247Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "ai",
+          "astrbot",
+          "chatbot",
+          "chatgpt",
+          "discord",
+          "docker",
+          "gemini",
+          "gpt",
+          "llama",
+          "llm",
+          "mcp",
+          "openai",
+          "python",
+          "qq",
+          "qqbot",
+          "telegram"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://astrbot.app",
+        "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ - AstrBotDevs/AstrBot"
+      },
+      "summaryData": {
+        "tags": [
+          "AstrBot",
+          "聊天机器人",
+          "AI Agent",
+          "开源项目",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "AstrBot 深度评测：45K Star 的多平台 AI 聊天机器人编排平台，是玩具还是基建？",
+        "ability": [
+          "多平台接入：一套代码同时运行在 QQ、微信、飞书、钉钉、Telegram 等 15+ IM 平台",
+          "多模型支持：兼容 OpenAI、Claude、Gemini、DeepSeek 及 Ollama 本地模型",
+          "Agent 能力：支持 MCP 工具调用、代码沙箱执行、子智能体编排与知识库 RAG 问答",
+          "插件生态：1000+ 社区插件一键安装，继承 Star 类即可低成本开发扩展",
+          "WebUI 可视化管理：图形化配置部署，小白无需命令行基础"
+        ],
+        "summary": "把 ChatGPT、Claude、DeepSeek 等大模型一键接入 QQ、微信、飞书等 15+ 聊天平台的开源 AI 机器人框架",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "想在群聊里直接使用 AI 的普通用户",
+          "想开发 Bot 插件的 Python 开发者",
+          "需要提升社群活跃度的运营者",
+          "需私有化部署 AI 助手的技术团队",
+          "想学习 Agent 编排架构设计的开发者"
+        ],
+        "description": "开源 AI 聊天机器人编排平台（GitHub 45K+ Star），由北邮开发者 Soulter 主导。它把主流大模型一键接入 QQ、微信、飞书等 15+ 聊天工具，内置插件市场、Agent 沙箱与知识库检索，1 核 1G 服务器即可运行，约 30 分钟能搭好群聊 AI 助手；但微信个人号接入有封号风险，商用需注意 AGPL-3.0 协议限制。"
+      },
+      "type": "project",
+      "dateAdded": "20261031"
+    },
+    {
+      "id": "97afbc7e-7710-4254-b1f1-bad1fb9ecedb",
+      "url": "https://github.com/bregman-arie/devops-exercises",
+      "domain": "github.com",
+      "repo": "bregman-arie/devops-exercises",
+      "description": "本次会话中没有找到任何已生成的长文内容、GitHub 项目链接或文章教程素材，因此无法生成有效概要。请粘贴需要分析的项目介绍、README、文章正文或链接内容，我将严格按照指定格式为您输出评测概要。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-31T13:15:55.521Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "待补充内容"
+        ],
+        "cover": "",
+        "title": "暂无可分析的内容",
+        "ability": [],
+        "summary": "当前会话中未接收到待分析的项目、软件或文章内容，请先提供素材。",
+        "category": [],
+        "suitable": [],
+        "description": "本次会话中没有找到任何已生成的长文内容、GitHub 项目链接或文章教程素材，因此无法生成有效概要。请粘贴需要分析的项目介绍、README、文章正文或链接内容，我将严格按照指定格式为您输出评测概要。"
+      },
+      "type": "project",
+      "dateAdded": "20261031"
+    },
+    {
+      "id": "343ce3ac-cb37-4aac-a3d1-cdfa116636c2",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "domain": "github.com",
+      "repo": "Orkas-AI/Orkas",
+      "description": "Orkas 是 2026 年下半年爆火的开源多智能体桌面客户端（约 4900+ Star），由 Commander 把用户目标拆成计划，调度多个专家 Agent 并行或串行执行，还能把 Claude Code、Codex 等外部 CLI Agent 纳入同一对话流。支持本地优先、自带 API Key、离线可用。架构理念（上下文切片、单一调度原语、自我进化）颇有洞见，但代码成熟度与安全审计尚浅，适合尝鲜学习，暂不建议押上生产环境。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-10-31T13:04:38.377Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-collaboration",
+          "agent-harness",
+          "agent-orchestration",
+          "agent-team",
+          "agent-workflow",
+          "ai-assistant",
+          "ai-automation",
+          "ai-employee",
+          "ai-productivity",
+          "ai-team",
+          "ai-workflow",
+          "autonomous-agents",
+          "claude-code-gui",
+          "claude-cowork",
+          "desktop-agent",
+          "local-first",
+          "multi-agent",
+          "multi-agent-system",
+          "self-evolving-agents",
+          "task-automation"
+        ],
+        "license": "MIT license",
+        "homepage": "https://orkas.ai?source=gh-orkas",
+        "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys. - Orkas-AI/Orkas"
+      },
+      "summaryData": {
+        "tags": [
+          "多智能体",
+          "Agent编排",
+          "本地优先",
+          "开源项目",
+          "桌面应用"
+        ],
+        "cover": "",
+        "title": "Orkas 深度评测：把一支 AI 团队装进桌面的开源多智能体客户端",
+        "ability": [
+          "多 Agent 编排调度：Commander 自动拆解目标并派发任务给专家 Agent",
+          "外接 CLI Agent：可指挥 Claude Code、Codex 等作为本地子进程协同工作",
+          "本地优先 + BYOK：会话、文件、API Key 全本地存储并 AES-256 加密",
+          "Agent 自我进化：通过反思笔记和私有技能结晶持续积累经验",
+          "可见性切片：Agent 间上下文隔离，节省 token 且防止信息串扰"
+        ],
+        "summary": "MIT 开源的本地优先桌面 AI 客户端，用一个'指挥官'调度一群专家 Agent 协作干活，数据全留本地。",
+        "category": [
+          "AI 工具",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者与一人公司",
+          "产品经理（拆解 PRD 生成任务）",
+          "内容创作者与市场团队",
+          "处理敏感本地文件的财务/法务人群",
+          "Windows 上的多 CLI Agent 重度用户"
+        ],
+        "description": "Orkas 是 2026 年下半年爆火的开源多智能体桌面客户端（约 4900+ Star），由 Commander 把用户目标拆成计划，调度多个专家 Agent 并行或串行执行，还能把 Claude Code、Codex 等外部 CLI Agent 纳入同一对话流。支持本地优先、自带 API Key、离线可用。架构理念（上下文切片、单一调度原语、自我进化）颇有洞见，但代码成熟度与安全审计尚浅，适合尝鲜学习，暂不建议押上生产环境。"
+      },
+      "type": "project",
+      "dateAdded": "20261031"
+    },
+    {
       "id": "7a7a5163-6246-4021-bb15-ffc85bdbd6fd",
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
       "domain": "github.com",
@@ -2360,7 +2534,7 @@
           "jailbreak",
           "llm-jailbreak"
         ],
-        "license": "License",
+        "license": "Apache-2.0 license",
         "homepage": "",
         "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分 - YuJunZhiXue/dsh-purge"
       },
@@ -15560,8 +15734,8 @@
       "forks": 0,
       "createdAt": "2026-09-04T18:05:06.498Z",
       "metaData": {
-        "forks": "751",
-        "stars": "20461",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "alt-tab",
           "app-uninstaller",
