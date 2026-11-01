@@ -2,39 +2,39 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 606
+      "count": 611
     },
     {
       "tag": "开源项目",
-      "count": 456
+      "count": 462
     },
     {
       "tag": "AI Agent",
-      "count": 357
+      "count": 360
     },
     {
       "tag": "自动化",
-      "count": 323
+      "count": 324
     },
     {
       "tag": "GitHub",
-      "count": 290
+      "count": 293
     },
     {
       "tag": "Claude Code",
-      "count": 212
+      "count": 213
     },
     {
       "tag": "Claude",
-      "count": 193
+      "count": 194
     },
     {
       "tag": "MCP",
-      "count": 155
+      "count": 156
     },
     {
       "tag": "自托管",
-      "count": 112
+      "count": 114
     },
     {
       "tag": "本地部署",
@@ -42,7 +42,7 @@
     },
     {
       "tag": "Rust",
-      "count": 95
+      "count": 96
     },
     {
       "tag": "GitHub开源",
@@ -57,11 +57,11 @@
       "count": 80
     },
     {
-      "tag": "Anthropic",
-      "count": 77
+      "tag": "Agent",
+      "count": 78
     },
     {
-      "tag": "Agent",
+      "tag": "Anthropic",
       "count": 77
     },
     {
@@ -84,19 +84,19 @@
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1674
+      "count": 1688
     },
     {
       "name": "AI 编程",
-      "count": 1102
+      "count": 1106
     },
     {
       "name": "开源项目",
-      "count": 430
+      "count": 436
     },
     {
       "name": "效率工具",
-      "count": 405
+      "count": 408
     },
     {
       "name": "开发者工具",
@@ -104,7 +104,7 @@
     },
     {
       "name": "生活效率",
-      "count": 75
+      "count": 77
     },
     {
       "name": "AI编程",
@@ -112,7 +112,7 @@
     },
     {
       "name": "网络安全",
-      "count": 70
+      "count": 71
     },
     {
       "name": "AI 应用",
@@ -120,7 +120,7 @@
     },
     {
       "name": "AI 工具",
-      "count": 54
+      "count": 57
     },
     {
       "name": "生产力工具",
@@ -198,15 +198,15 @@
     },
     {
       "name": "全栈开发者",
-      "count": 53
+      "count": 54
     },
     {
       "name": "AI 编程重度用户",
-      "count": 51
+      "count": 52
     },
     {
       "name": "数据科学家",
-      "count": 48
+      "count": 49
     },
     {
       "name": "AI 工具重度用户",
@@ -248,15 +248,15 @@
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 434
+      "count": 437
     },
     {
       "name": "ai",
-      "count": 386
+      "count": 388
     },
     {
       "name": "ai-agents",
-      "count": 358
+      "count": 362
     },
     {
       "name": "llm",
@@ -264,19 +264,19 @@
     },
     {
       "name": "mcp",
-      "count": 286
+      "count": 289
+    },
+    {
+      "name": "claude",
+      "count": 255
     },
     {
       "name": "agent-skills",
       "count": 254
     },
     {
-      "name": "claude",
-      "count": 253
-    },
-    {
       "name": "codex",
-      "count": 237
+      "count": 238
     },
     {
       "name": "skills",
@@ -284,11 +284,11 @@
     },
     {
       "name": "typescript",
-      "count": 171
+      "count": 173
     },
     {
       "name": "python",
-      "count": 161
+      "count": 162
     },
     {
       "name": "developer-tools",
@@ -296,11 +296,11 @@
     },
     {
       "name": "anthropic",
-      "count": 126
+      "count": 128
     },
     {
       "name": "agents",
-      "count": 125
+      "count": 126
     },
     {
       "name": "agent",
@@ -308,7 +308,7 @@
     },
     {
       "name": "claude-skills",
-      "count": 105
+      "count": 106
     },
     {
       "name": "cursor",
@@ -324,17 +324,17 @@
     },
     {
       "name": "agentic-ai",
-      "count": 91
+      "count": 92
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 666
+      "count": 671
     },
     {
       "name": "TypeScript",
-      "count": 520
+      "count": 525
     },
     {
       "name": "JavaScript",
@@ -342,7 +342,7 @@
     },
     {
       "name": "Rust",
-      "count": 161
+      "count": 163
     },
     {
       "name": "Go",
@@ -350,11 +350,11 @@
     },
     {
       "name": "Shell",
-      "count": 91
+      "count": 92
     },
     {
       "name": "C++",
-      "count": 44
+      "count": 45
     },
     {
       "name": "HTML",
@@ -378,7 +378,7 @@
     },
     {
       "name": "Jupyter Notebook",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Kotlin",
@@ -398,7 +398,7 @@
     },
     {
       "name": "Zig",
-      "count": 6
+      "count": 7
     },
     {
       "name": "TeX",
@@ -413,8 +413,8 @@
     {
       "repo": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 494147,
-      "appearances": 1
+      "stars": 494207,
+      "appearances": 2
     },
     {
       "repo": "openclaw/openclaw",
