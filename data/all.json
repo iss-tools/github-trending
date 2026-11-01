@@ -1,6 +1,59 @@
 {
   "all": [
     {
+      "id": "b06d2bb6-0d96-4908-8e55-047917b4fed6",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "domain": "github.com",
+      "repo": "ghostty-org/ghostty",
+      "description": "Ghostty 是 HashiCorp 联合创始人 Mitchell Hashimoto 离职后用 Zig 语言打造的开源终端，2024 年底发布，GitHub 星标超 2.5 万。它解决了终端圈'快、功能、原生'不可兼得的老难题：GPU 渲染带来极致性能，SwiftUI/GTK4 保证平台原生感，libghostty 引擎可被第三方应用嵌入。最新 1.4 版本由 172 位贡献者共同完成。缺点是暂无 Windows 官方版、无 AI 功能。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T14:04:18.598Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://ghostty.org",
+        "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration. - ghostty-org/ghostty"
+      },
+      "summaryData": {
+        "tags": [
+          "终端模拟器",
+          "Zig语言",
+          "开源项目",
+          "GPU渲染",
+          "macOS工具"
+        ],
+        "cover": "",
+        "title": "Ghostty 深度评测：HashiCorp 创始人用 Zig 打造的 GPU 加速终端，快、功能、原生三者兼得",
+        "ability": [
+          "GPU 加速渲染，冷启动 0.08 秒、输入延迟仅 1.8ms，性能碾压 iTerm2 和 Warp",
+          "深度原生体验：macOS 用 SwiftUI、Linux 用 GTK4 打造，像系统自带应用一样顺滑",
+          "零配置开箱即用，纯文本配置文件支持 100+ 内置主题和自定义快捷键",
+          "libghostty 可嵌入引擎，已被 137+ 项目集成，可扩展到 iOS、Android 等平台",
+          "内置 Terminal Inspector 调试工具和 Kitty Graphics 协议，支持 TUI 内看图"
+        ],
+        "summary": "一款由 HashiCorp 联合创始人用 Zig 语言打造的开源终端模拟器，同时做到了速度快、功能全、原生感强，被誉为终端界的 WebKit。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "macOS 重度命令行用户（想从 iTerm2 或 Terminal.app 升级）",
+          "Neovim / tmux / CLI 工具重度使用者",
+          "dotfiles 爱好者和喜欢折腾配置的开发者",
+          "TUI 应用开发者（需要调试终端行为）",
+          "注重隐私、偏好零遥测开源软件的用户"
+        ],
+        "description": "Ghostty 是 HashiCorp 联合创始人 Mitchell Hashimoto 离职后用 Zig 语言打造的开源终端，2024 年底发布，GitHub 星标超 2.5 万。它解决了终端圈'快、功能、原生'不可兼得的老难题：GPU 渲染带来极致性能，SwiftUI/GTK4 保证平台原生感，libghostty 引擎可被第三方应用嵌入。最新 1.4 版本由 172 位贡献者共同完成。缺点是暂无 Windows 官方版、无 AI 功能。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
       "id": "c7b8f1da-7277-44d0-97bb-ffa9a2561067",
       "url": "https://github.com/hyprwm/Hyprland",
       "domain": "github.com",
@@ -331,7 +384,16 @@
       "createdAt": "2026-11-01T11:06:58.268Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "accessibility",
+          "cross-platform",
+          "speech-to-text",
+          "tauri-v2"
+        ],
+        "license": "MIT license",
+        "homepage": "https://handy.computer",
+        "description": "A free, open source, and extensible speech-to-text application that works completely offline. - cjpais/Handy"
       },
       "summaryData": {
         "tags": [
@@ -22918,8 +22980,8 @@
       "forks": 0,
       "createdAt": "2026-08-24T06:32:19.452Z",
       "metaData": {
-        "forks": "52988",
-        "stars": "480358",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "api",
           "apis",
