@@ -1,6 +1,374 @@
 {
   "all": [
     {
+      "id": "c7b8f1da-7277-44d0-97bb-ffa9a2561067",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "domain": "github.com",
+      "repo": "hyprwm/Hyprland",
+      "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:26:43.192Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compositor",
+          "cpp26",
+          "wayland",
+          "wayland-compositor"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://hypr.land",
+        "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. - hyprwm/Hyprland"
+      },
+      "summaryData": {
+        "tags": [
+          "Wayland",
+          "Linux桌面",
+          "窗口管理器",
+          "平铺WM",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Hyprland 深度评测：把 Linux 桌面雕琢成作品的 Wayland 合成器",
+        "ability": [
+          "动态平铺窗口管理，键盘驱动的高效工作流",
+          "丰富视觉特效：模糊、发光、贝塞尔曲线动画、果冻窗口",
+          "hyprctl 与 IPC 控制，可脚本化远程操控桌面",
+          "插件系统与 Lua 配置，高度可定制扩展",
+          "工作区级屏幕共享，演示协作更安全"
+        ],
+        "summary": "一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。",
+        "category": [
+          "开发工具",
+          "操作系统桌面",
+          "开源项目"
+        ],
+        "suitable": [
+          "追求键盘效率的开发者与运维工程师",
+          "Linux 桌面美化玩家",
+          "追求流畅体验的笔记本用户",
+          "想学习 Wayland 协议的极客",
+          "需要精准屏幕共享的内容创作者"
+        ],
+        "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
+      "id": "c3ce80d4-c888-42d6-ac9a-21f227fb5f3a",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "domain": "github.com",
+      "repo": "patchy631/ai-engineering-hub",
+      "description": "由知名数据科学创作者 Avi Chawla 主理的开源仓库，累计 37k+ Star。它把 RAG、Agent、MCP、多模态等前沿 AI 概念打包成 90+ 个可运行的 Jupyter 项目，每周更新，能将'从看文档到跑通 Demo'的时间从几天压缩到几小时。需注意：代码为教程级、不适合直接上生产，且部分项目依赖商业 API 工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:22:58.853Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai",
+          "llms",
+          "machine-learning",
+          "mcp",
+          "rag"
+        ],
+        "license": "MIT license",
+        "homepage": "https://join.dailydoseofds.com",
+        "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications. - patchy631/ai-engineering-hub"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源项目",
+          "AI工程",
+          "RAG",
+          "Agent",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "AI Engineering Hub 深度评测：37k Star 的 AI 工程实战 Notebook 宝库",
+        "ability": [
+          "提供 90+ 个可直接运行的 AI 工程 Jupyter 实战项目，按初/中/高三档难度分类",
+          "覆盖 RAG、Agent、MCP、语音、OCR、模型评测、微调等全领域",
+          "更新极快，新模型发布 1-2 周内即出配套实战教程",
+          "拥有全网最全的 MCP 实操代码集（10+ 个项目）",
+          "内置多家大模型（DeepSeek、Llama 4、Qwen3 等）横向对比评测代码"
+        ],
+        "summary": "一个 37k+ Star 的开源 AI 工程实战项目合集，90+ 个可一键运行的 Notebook，帮你把 RAG、Agent、MCP 等前沿概念从'看得懂'变成'跑得通'。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "学习资源"
+        ],
+        "suitable": [
+          "想转行 AI 工程的后端/全栈开发者",
+          "正在做 AI 产品的独立开发者",
+          "需要做技术选型的工程师",
+          "准备 AI 工程师面试的求职者",
+          "MCP 生态开发者"
+        ],
+        "description": "由知名数据科学创作者 Avi Chawla 主理的开源仓库，累计 37k+ Star。它把 RAG、Agent、MCP、多模态等前沿 AI 概念打包成 90+ 个可运行的 Jupyter 项目，每周更新，能将'从看文档到跑通 Demo'的时间从几天压缩到几小时。需注意：代码为教程级、不适合直接上生产，且部分项目依赖商业 API 工具。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
+      "id": "0a622101-b1b1-4c3c-a62a-f11e909b8e91",
+      "url": "https://github.com/anomalyco/hex",
+      "domain": "github.com",
+      "repo": "anomalyco/hex",
+      "description": "HEX 是用 Rust 重写的 macOS 本地语音听写应用，首次启动后下载 Parakeet V3 或 Whisper 模型即可完全离线使用，识别速度快、不存音频、不传云端，且免费无订阅。相比 Wispr Flow、SuperWhisper 等竞品，它在隐私、成本和可编程性上优势明显，但仅支持 Apple Silicon + macOS 15+，Windows/Linux 尚在 Beta。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:18:01.404Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dictation",
+          "linux",
+          "local-first",
+          "macos",
+          "rust",
+          "speech-recognition",
+          "speech-to-text",
+          "voice-control"
+        ],
+        "license": "MIT license",
+        "homepage": "https://anoma.ly/hex",
+        "description": "Local-first voice dictation for macOS. Hold a shortcut, speak, and paste into any app. Native Rust, on-device speech recognition, and a Linux beta. - anomalyco/hex"
+      },
+      "summaryData": {
+        "tags": [
+          "语音听写",
+          "本地优先",
+          "开源",
+          "macOS",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "HEX 深度评测：免费开源的本地语音听写神器",
+        "ability": [
+          "按住说话松开即出字的极简听写交互",
+          "100% 本地离线语音识别（Parakeet/Whisper 模型）",
+          "Modes 自定义纠错词典与文本变换规则",
+          "可选 AI 语音指令与后处理润色",
+          "MIT 开源可审计，支持 TypeScript 自定义命令"
+        ],
+        "summary": "HEX 是一款本地优先的语音听写工具，按住快捷键说话、松开即得文字，全程离线、免费开源、保护隐私。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "写作与内容创作者",
+          "程序员与开源贡献者",
+          "远程办公重度沟通者",
+          "律师医生等隐私敏感从业者",
+          "爱折腾的 macOS 折腾党"
+        ],
+        "description": "HEX 是用 Rust 重写的 macOS 本地语音听写应用，首次启动后下载 Parakeet V3 或 Whisper 模型即可完全离线使用，识别速度快、不存音频、不传云端，且免费无订阅。相比 Wispr Flow、SuperWhisper 等竞品，它在隐私、成本和可编程性上优势明显，但仅支持 Apple Silicon + macOS 15+，Windows/Linux 尚在 Beta。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
+      "id": "009d172c-6fc9-43b4-97aa-d3a8953dfb0a",
+      "url": "https://github.com/beenuar/AiSOC",
+      "domain": "github.com",
+      "repo": "beenuar/AiSOC",
+      "description": "AiSOC 是由 Cyble 资助、MIT 协议开源的 AI 安全运营中心，把 EDR、SIEM、云日志统一接入，用本地 LLM 多 Agent 自动分诊告警并执行响应动作。最大亮点是「调查账本」——AI 的每一步推理与证据引用都可回放审计，支持完全离线的 air-gap 部署，数据不出自建机房。缺点是内置小模型能力有限、资源门槛不低、社区生态尚早期。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:14:30.242Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "ai-security",
+          "alert-triage",
+          "blue-team",
+          "cybersecurity",
+          "detection-engineering",
+          "incident-response",
+          "langgraph",
+          "llm-agents",
+          "mcp",
+          "mitre-attack",
+          "model-context-protocol",
+          "purple-team",
+          "security-operations",
+          "self-hosted",
+          "siem",
+          "soar",
+          "soc",
+          "threat-detection",
+          "threat-intelligence"
+        ],
+        "license": "MIT license",
+        "homepage": "https://beenuar.github.io/AiSOC/",
+        "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. - beenuar/AiSOC"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI SOC",
+          "网络安全",
+          "LLM Agent",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "AiSOC 深度评测：可自托管的开源 AI 安全运营中心，让 AI 决策全程可审计",
+        "ability": [
+          "AI 告警分诊：本地 LLM 多 Agent 自动调查告警并判定真阳/误报",
+          "调查账本：每一步 prompt、工具调用与证据引用可重放、可导出审计",
+          "检测引擎：2535 条已验证可触发的规则，接入 87 个数据源连接器",
+          "响应 Playbook：三道开关默认全关，人工审批通过后才执行动作",
+          "内置 MCP Server，可在 Claude/Cursor 中直接查询和操控 SOC"
+        ],
+        "summary": "开源可自托管的 AI 安全运营中心：本地 LLM 自动分诊安全告警，AI 每一步调查都有可回放审计的账本。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI Agent"
+        ],
+        "suitable": [
+          "中小企业的安全团队",
+          "MSSP 托管安全服务提供商",
+          "合规要求高的金融/政企机构",
+          "安全研究者与蓝队工程师",
+          "AI Agent 工程师"
+        ],
+        "description": "AiSOC 是由 Cyble 资助、MIT 协议开源的 AI 安全运营中心，把 EDR、SIEM、云日志统一接入，用本地 LLM 多 Agent 自动分诊告警并执行响应动作。最大亮点是「调查账本」——AI 的每一步推理与证据引用都可回放审计，支持完全离线的 air-gap 部署，数据不出自建机房。缺点是内置小模型能力有限、资源门槛不低、社区生态尚早期。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
+      "id": "6dafd6b6-b3ed-4f11-9154-3d91d5117e9e",
+      "url": "https://github.com/kornia/kornia",
+      "domain": "github.com",
+      "repo": "kornia/kornia",
+      "description": "Kornia 是基于 PyTorch 的开源可微计算机视觉库（Apache 2.0 可商用），解决了 OpenCV 梯度断裂、torchvision 几何能力缺失的痛点。它让 Canny、单应变换、RANSAC 等传统算子变成可反向传播的神经网络层，支持 GPU 批量计算与 ONNX 导出，是端到端训练与 CV+深度学习融合场景的理想选择，但在单图 CPU 性能与半精度支持上仍不如 OpenCV。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:10:30.009Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "artificial-intelligence",
+          "computer-vision",
+          "deep-learning",
+          "hacktoberfest",
+          "image-processing",
+          "machine-learning",
+          "neural-network",
+          "python",
+          "pytorch",
+          "robotics",
+          "spatial-ai"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://kornia.readthedocs.io",
+        "description": "🐍 Geometric Computer Vision Library for Spatial AI - kornia/kornia"
+      },
+      "summaryData": {
+        "tags": [
+          "PyTorch",
+          "计算机视觉",
+          "可微编程",
+          "开源库",
+          "深度学习"
+        ],
+        "cover": "",
+        "title": "Kornia 深度评测：让计算机视觉真正可微的 PyTorch 瑞士军刀",
+        "ability": [
+          "1200+ 可微 CV 算子，支持梯度反传与端到端训练",
+          "原生 GPU 批处理，一次调用处理整个 batch 的异构参数",
+          "完整的几何视觉生态：对极几何、PnP、RANSAC、Lie 群全部可微",
+          "内置 LoFTR、LightGlue、DISK 等 SOTA 特征匹配模型",
+          "AugmentationSequential 同步变换图像/mask/框/关键点，1000+ 算子可导出 ONNX"
+        ],
+        "summary": "Kornia 是一个构建在 PyTorch 之上的可微计算机视觉库，把传统 CV 算子变成能反向传播、能跑 GPU、能批处理的神经网络零件。",
+        "category": [
+          "开发工具",
+          "AI / 机器学习",
+          "开源项目"
+        ],
+        "suitable": [
+          "深度学习研究员",
+          "SLAM / 三维重建工程师",
+          "算法工程师（部署向）",
+          "多模态 / 生成模型从业者",
+          "计算机视觉方向的学生与入门者"
+        ],
+        "description": "Kornia 是基于 PyTorch 的开源可微计算机视觉库（Apache 2.0 可商用），解决了 OpenCV 梯度断裂、torchvision 几何能力缺失的痛点。它让 Canny、单应变换、RANSAC 等传统算子变成可反向传播的神经网络层，支持 GPU 批量计算与 ONNX 导出，是端到端训练与 CV+深度学习融合场景的理想选择，但在单图 CPU 性能与半精度支持上仍不如 OpenCV。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
+      "id": "c37e7afc-5d47-42e5-b6d9-492dc187076b",
+      "url": "https://github.com/cjpais/Handy",
+      "domain": "github.com",
+      "repo": "cjpais/Handy",
+      "description": "Handy 是一款基于 Tauri + Rust 构建的免费开源语音听写工具，支持 Mac/Windows/Linux 三平台，所有转写完全在本地完成、音频不上传云端。它内置 Whisper/Parakeet 模型实现高精度识别，还支持接入云端或本地 LLM 做二次润色，是 Wispr Flow 的最佳免费替代品，GitHub 已获 3.5 万 Star。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-01T11:06:58.268Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "语音转文字",
+          "本地离线",
+          "Whisper",
+          "Wispr Flow 替代品"
+        ],
+        "cover": "",
+        "title": "Handy 深度评测：35k Star 的完全本地化开源语音听写工具",
+        "ability": [
+          "完全本地离线的语音转文字，隐私零上传",
+          "全局快捷键随处听写，松手自动粘贴到任意输入框",
+          "可插拔 LLM 后处理管道，支持润色/翻译/口语转要点",
+          "跨平台支持 macOS/Windows/Linux",
+          "高度可扩展：自定义词典、CLI 控制、Raycast 集成"
+        ],
+        "summary": "免费开源、完全离线的跨平台语音转文字工具，按住快捷键说话松手即出文字，音频永不离开你的电脑。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "跨平台重度文字工作者",
+          "律师/医生等隐私敏感岗位人士",
+          "开发者、写作者、学生",
+          "Linux/Wayland 用户",
+          "不想付订阅费的预算敏感型用户"
+        ],
+        "description": "Handy 是一款基于 Tauri + Rust 构建的免费开源语音听写工具，支持 Mac/Windows/Linux 三平台，所有转写完全在本地完成、音频不上传云端。它内置 Whisper/Parakeet 模型实现高精度识别，还支持接入云端或本地 LLM 做二次润色，是 Wispr Flow 的最佳免费替代品，GitHub 已获 3.5 万 Star。"
+      },
+      "type": "project",
+      "dateAdded": "20261101"
+    },
+    {
       "id": "30a694fb-dd89-4bee-97b2-0e237cdcd5f7",
       "url": "https://github.com/AstrBotDevs/AstrBot",
       "domain": "github.com",
@@ -8689,8 +9057,8 @@
       "forks": 0,
       "createdAt": "2026-09-21T11:13:52.031Z",
       "metaData": {
-        "forks": "1344",
-        "stars": "13665",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "deepseek-v4",
           "edge",

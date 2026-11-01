@@ -90974,6 +90974,59 @@
   ],
   "20261101": [
     {
+      "id": "fa103a20-b765-41c6-a82e-30f217c81bdb",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "repo": "togg53192-cmd/jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "language": "",
+      "stars": 12483,
+      "forks": 1883,
+      "starsAdded": 1924,
+      "createdAt": "2026-11-01T11:00:02.133Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "LIST OF ALL MY JAILBREAKS. Contribute to togg53192-cmd/jailbreaks development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "越狱提示词",
+          "系统提示词抽取",
+          "AI安全",
+          "红队测试",
+          "大模型"
+        ],
+        "cover": "",
+        "title": "jailbreaks：覆盖 25+ 主流大模型的越狱提示词与系统提示词抽取合集",
+        "ability": [
+          "抽取主流模型（GLM、DeepSeek、Kimi 等）的产品系统提示词",
+          "提供 Claude Opus/Sonnet 人格锁类越狱提示词",
+          "提供 AGENTS.md 工作区级指令注入样本",
+          "提供 Ollama 本地越狱 Modelfile 一键打包",
+          "覆盖 OpenCode/Cursor 等 Agent Harness 攻击面"
+        ],
+        "summary": "一份纯 Markdown 的提示词合集，收录针对 25+ 主流大模型的越狱提示词、系统提示词抽取样本和 Agent 注入模板，适合 AI 安全研究者当攻击样本库参考。",
+        "category": [
+          "AI 安全",
+          "开源项目",
+          "大模型研究"
+        ],
+        "suitable": [
+          "AI 安全与红队工程师",
+          "AI 产品开发者",
+          "Agent 工具（Cursor/OpenCode）开发者",
+          "模型厂商对齐团队",
+          "AI 安全方向研究者"
+        ],
+        "description": "这是一个无任何代码、纯 Markdown 文本的开源仓库，按'一文件一目标'组织了 31 份提示词，涵盖系统提示词抽取、人格锁越狱、AGENTS.md 注入、Ollama Modelfile 等 5 大类，零门槛复制即用。它对防御者是难得的 2026 年真实攻击面快照，但直接用于商业模型会违反服务条款甚至触碰法律红线，请仅作安全研究参考。"
+      }
+    },
+    {
       "id": "425007bd-85ac-4d23-80ab-a081b8957ddd",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -90981,8 +91034,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 108348,
-      "forks": 9505,
+      "stars": 108415,
+      "forks": 9509,
       "starsAdded": 1723,
       "createdAt": "2026-10-31T16:00:02.006Z",
       "metaData": {
@@ -91113,8 +91166,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 10023,
-      "forks": 1385,
+      "stars": 10065,
+      "forks": 1394,
       "starsAdded": 1303,
       "createdAt": "2026-10-31T16:00:02.038Z",
       "metaData": {
@@ -91179,8 +91232,8 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 36313,
-      "forks": 8834,
+      "stars": 36428,
+      "forks": 8842,
       "starsAdded": 1148,
       "createdAt": "2026-10-31T16:00:02.027Z",
       "metaData": {
@@ -91232,8 +91285,8 @@
       "repo": "Renhuai123/ziwei-doushu",
       "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
       "language": "TypeScript",
-      "stars": 12675,
-      "forks": 2485,
+      "stars": 12712,
+      "forks": 2492,
       "starsAdded": 1092,
       "createdAt": "2026-10-31T16:00:02.031Z",
       "metaData": {
@@ -91433,8 +91486,8 @@
       "repo": "lightpanda-io/browser",
       "description": "Lightpanda: the headless browser designed for AI and automation",
       "language": "Zig",
-      "stars": 39520,
-      "forks": 1928,
+      "stars": 39560,
+      "forks": 1932,
       "starsAdded": 929,
       "createdAt": "2026-10-31T16:00:02.048Z",
       "metaData": {
@@ -91546,8 +91599,8 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 31534,
-      "forks": 4312,
+      "stars": 31577,
+      "forks": 4316,
       "starsAdded": 742,
       "createdAt": "2026-10-31T16:00:02.022Z",
       "metaData": {
@@ -91667,6 +91720,229 @@
       }
     },
     {
+      "id": "3ef275b3-92dc-4a0d-9a7a-1c7ea91c778d",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 44898,
+      "forks": 7421,
+      "starsAdded": 611,
+      "createdAt": "2026-11-01T11:00:02.069Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+      }
+    },
+    {
+      "id": "46514e2b-90dc-449e-8bac-636590e39fec",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/cjpais/Handy",
+      "repo": "cjpais/Handy",
+      "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+      "language": "Rust",
+      "stars": 36015,
+      "forks": 3424,
+      "starsAdded": 611,
+      "createdAt": "2026-11-01T11:00:02.086Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "语音转文字",
+          "本地离线",
+          "Whisper",
+          "Wispr Flow 替代品"
+        ],
+        "cover": "",
+        "title": "Handy 深度评测：35k Star 的完全本地化开源语音听写工具",
+        "ability": [
+          "完全本地离线的语音转文字，隐私零上传",
+          "全局快捷键随处听写，松手自动粘贴到任意输入框",
+          "可插拔 LLM 后处理管道，支持润色/翻译/口语转要点",
+          "跨平台支持 macOS/Windows/Linux",
+          "高度可扩展：自定义词典、CLI 控制、Raycast 集成"
+        ],
+        "summary": "免费开源、完全离线的跨平台语音转文字工具，按住快捷键说话松手即出文字，音频永不离开你的电脑。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "跨平台重度文字工作者",
+          "律师/医生等隐私敏感岗位人士",
+          "开发者、写作者、学生",
+          "Linux/Wayland 用户",
+          "不想付订阅费的预算敏感型用户"
+        ],
+        "description": "Handy 是一款基于 Tauri + Rust 构建的免费开源语音听写工具，支持 Mac/Windows/Linux 三平台，所有转写完全在本地完成、音频不上传云端。它内置 Whisper/Parakeet 模型实现高精度识别，还支持接入云端或本地 LLM 做二次润色，是 Wispr Flow 的最佳免费替代品，GitHub 已获 3.5 万 Star。"
+      }
+    },
+    {
+      "id": "f5bc66f5-8083-44c4-a928-dc7c5447c622",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "repo": "CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 9206,
+      "forks": 1159,
+      "starsAdded": 608,
+      "createdAt": "2026-11-01T11:00:02.118Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui",
+          "agent-governance",
+          "ai-agents",
+          "browser-automation",
+          "copilotkit",
+          "generative-ui",
+          "mcp"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.copilotkit.ai/openbot",
+        "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent. - CopilotKit/OpenBot"
+      },
+      "summaryData": {
+        "tags": [
+          "CopilotKit",
+          "AG-UI",
+          "Agent治理",
+          "自托管",
+          "开源"
+        ],
+        "cover": "",
+        "title": "OpenBot 深度评测：给每个 AI Agent 一间带保险门的独立工位",
+        "ability": [
+          "每个 Bot 独立 Docker 容器 + 专属 Chromium 浏览器 + 隔离文件工作区",
+          "CEL 策略治理网关：先决策、后执行、必留痕，fail-closed 安全语义",
+          "通过 AG-UI 协议接入任意 Agent（LangGraph/Mastra/CrewAI/手写均可）",
+          "Take the Wheel 人工实时接管浏览器，接管期间 Bot 动作直接拒绝",
+          "Generative UI 组件式输出 + 内置 Slack/Notion/Drive 等治理型 MCP 连接器"
+        ],
+        "summary": "CopilotKit 开源的 AI 数字同事平台，为每个 Agent 提供独立容器、专属浏览器和 fail-closed 治理网关，MIT 协议可完全自托管。",
+        "category": [
+          "开发工具",
+          "AI Agent",
+          "开源项目"
+        ],
+        "suitable": [
+          "企业平台/安全团队",
+          "AG-UI 生态开发者",
+          "企业内部工具负责人",
+          "Agent 安全研究工程师",
+          "自托管与开源爱好者"
+        ],
+        "description": "OpenBot 是 CopilotKit 团队 2026 年 8 月开源（MIT 协议）的企业级 AI 数字同事平台。它为每个 Agent 分配独立 Docker 容器与专属浏览器，所有动作必须经过 fail-closed 治理网关并强制审计，支持接入任意 AG-UI 协议 Agent，可完全自托管。目前处于 Alpha 阶段，GitHub Star 超 7k，是开源界少见的敢交给安全团队的 Agent 治理参考实现。"
+      }
+    },
+    {
+      "id": "df719345-12fe-4017-a97a-daf398117b3b",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+      "language": "Jupyter Notebook",
+      "stars": 39713,
+      "forks": 6439,
+      "starsAdded": 573,
+      "createdAt": "2026-11-01T11:00:02.148Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai",
+          "llms",
+          "machine-learning",
+          "mcp",
+          "rag"
+        ],
+        "license": "MIT license",
+        "homepage": "https://join.dailydoseofds.com",
+        "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications. - patchy631/ai-engineering-hub"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源项目",
+          "AI工程",
+          "RAG",
+          "Agent",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "AI Engineering Hub 深度评测：37k Star 的 AI 工程实战 Notebook 宝库",
+        "ability": [
+          "提供 90+ 个可直接运行的 AI 工程 Jupyter 实战项目，按初/中/高三档难度分类",
+          "覆盖 RAG、Agent、MCP、语音、OCR、模型评测、微调等全领域",
+          "更新极快，新模型发布 1-2 周内即出配套实战教程",
+          "拥有全网最全的 MCP 实操代码集（10+ 个项目）",
+          "内置多家大模型（DeepSeek、Llama 4、Qwen3 等）横向对比评测代码"
+        ],
+        "summary": "一个 37k+ Star 的开源 AI 工程实战项目合集，90+ 个可一键运行的 Notebook，帮你把 RAG、Agent、MCP 等前沿概念从'看得懂'变成'跑得通'。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "学习资源"
+        ],
+        "suitable": [
+          "想转行 AI 工程的后端/全栈开发者",
+          "正在做 AI 产品的独立开发者",
+          "需要做技术选型的工程师",
+          "准备 AI 工程师面试的求职者",
+          "MCP 生态开发者"
+        ],
+        "description": "由知名数据科学创作者 Avi Chawla 主理的开源仓库，累计 37k+ Star。它把 RAG、Agent、MCP、多模态等前沿 AI 概念打包成 90+ 个可运行的 Jupyter 项目，每周更新，能将'从看文档到跑通 Demo'的时间从几天压缩到几小时。需注意：代码为教程级、不适合直接上生产，且部分项目依赖商业 API 工具。"
+      }
+    },
+    {
       "id": "1f46f272-1834-45d6-a3ab-fc17ad851138",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -91736,6 +92012,80 @@
       }
     },
     {
+      "id": "d17abbf8-6ffe-4602-8317-53cd69a17913",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/beenuar/AiSOC",
+      "repo": "beenuar/AiSOC",
+      "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+      "language": "Python",
+      "stars": 5824,
+      "forks": 613,
+      "starsAdded": 436,
+      "createdAt": "2026-11-01T11:00:02.096Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic-ai",
+          "ai-security",
+          "alert-triage",
+          "blue-team",
+          "cybersecurity",
+          "detection-engineering",
+          "incident-response",
+          "langgraph",
+          "llm-agents",
+          "mcp",
+          "mitre-attack",
+          "model-context-protocol",
+          "purple-team",
+          "security-operations",
+          "self-hosted",
+          "siem",
+          "soar",
+          "soc",
+          "threat-detection",
+          "threat-intelligence"
+        ],
+        "license": "MIT license",
+        "homepage": "https://beenuar.github.io/AiSOC/",
+        "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. - beenuar/AiSOC"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI SOC",
+          "网络安全",
+          "LLM Agent",
+          "自托管"
+        ],
+        "cover": "",
+        "title": "AiSOC 深度评测：可自托管的开源 AI 安全运营中心，让 AI 决策全程可审计",
+        "ability": [
+          "AI 告警分诊：本地 LLM 多 Agent 自动调查告警并判定真阳/误报",
+          "调查账本：每一步 prompt、工具调用与证据引用可重放、可导出审计",
+          "检测引擎：2535 条已验证可触发的规则，接入 87 个数据源连接器",
+          "响应 Playbook：三道开关默认全关，人工审批通过后才执行动作",
+          "内置 MCP Server，可在 Claude/Cursor 中直接查询和操控 SOC"
+        ],
+        "summary": "开源可自托管的 AI 安全运营中心：本地 LLM 自动分诊安全告警，AI 每一步调查都有可回放审计的账本。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI Agent"
+        ],
+        "suitable": [
+          "中小企业的安全团队",
+          "MSSP 托管安全服务提供商",
+          "合规要求高的金融/政企机构",
+          "安全研究者与蓝队工程师",
+          "AI Agent 工程师"
+        ],
+        "description": "AiSOC 是由 Cyble 资助、MIT 协议开源的 AI 安全运营中心，把 EDR、SIEM、云日志统一接入，用本地 LLM 多 Agent 自动分诊告警并执行响应动作。最大亮点是「调查账本」——AI 的每一步推理与证据引用都可回放审计，支持完全离线的 air-gap 部署，数据不出自建机房。缺点是内置小模型能力有限、资源门槛不低、社区生态尚早期。"
+      }
+    },
+    {
       "id": "43f02a18-5496-4b7e-b3a5-eb35a4362caf",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -91789,6 +92139,197 @@
       }
     },
     {
+      "id": "403cdc0e-a854-4186-a6e2-c870b16e14ce",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/public-apis/public-apis",
+      "repo": "public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars": 493936,
+      "forks": 55147,
+      "starsAdded": 298,
+      "createdAt": "2026-11-01T11:00:02.083Z",
+      "metaData": {
+        "forks": "52988",
+        "stars": "480358",
+        "topics": [
+          "api",
+          "apis",
+          "dataset",
+          "development",
+          "free",
+          "list",
+          "lists",
+          "open-source",
+          "public",
+          "public-api",
+          "public-apis",
+          "resources",
+          "software"
+        ],
+        "license": "MIT license",
+        "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+        "description": "A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "API",
+          "开发者工具",
+          "免费资源",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "public-apis：从社区瑰宝到争议广告牌的深度评测",
+        "ability": [
+          "免费API资源聚合",
+          "分类索引与检索",
+          "API元数据标注",
+          "Markdown格式易读",
+          "社区驱动的更新机制（历史上）"
+        ],
+        "summary": "曾被誉为开发者“API圣经”的免费API目录，如今因商业化与维护停滞，仅能作为参考起点。",
+        "category": [
+          "开发资源",
+          "API 集合",
+          "工具箱"
+        ],
+        "suitable": [
+          "全栈开发者",
+          "初创团队",
+          "编程学生与初学者",
+          "数据科学家",
+          "产品原型设计人员"
+        ],
+        "description": "public-apis 是 GitHub 上极具知名度的免费API列表项目，收录了超过1600个涵盖各类领域的API接口。虽然项目因商业化争议和维护停滞导致实用性下降，但其庞大的历史资源库依然是寻找免费数据接口的有价值起点，建议结合官方文档严格验证后使用。"
+      }
+    },
+    {
+      "id": "4afc49ea-2132-47ec-8235-32e8224f0049",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "repo": "FlashML-org/FreeToken",
+      "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+      "language": "Python",
+      "stars": 15073,
+      "forks": 1532,
+      "starsAdded": 232,
+      "createdAt": "2026-11-01T11:00:02.151Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "deepseek-v4",
+          "edge",
+          "glm",
+          "inference",
+          "minimax",
+          "moe",
+          "qwen",
+          "transformer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://flashml.ai",
+        "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. - FlashML-org/FreeToken"
+      },
+      "summaryData": {
+        "tags": [
+          "FreeToken",
+          "MoE推理",
+          "本地大模型",
+          "GPU加速",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "FreeToken 深度评测：让游戏显卡跑千亿 MoE 大模型的边缘推理引擎",
+        "ability": [
+          "消费级显卡运行超大 MoE 模型（最高 753B 的 GLM-5.2）",
+          "带宽自适应 CPU-GPU 协同调度，动态切分专家计算",
+          "语义感知缓存，Agent 多轮对话场景 TTFT 稳定",
+          "提供 OpenAI/Anthropic 兼容 API，无缝接入 Claude Code 等工具",
+          "支持 NVFP4/MXFP4 量化与 FTW 高效权重格式"
+        ],
+        "summary": "UC Berkeley 与 MIT 联合出品的边缘 MoE 推理引擎，让 8GB 显存游戏本也能流畅跑 35B 级大模型，Agent 实战比 llama.cpp 快 1.5-2.3 倍。",
+        "category": [
+          "开发工具",
+          "AI 推理引擎",
+          "本地部署"
+        ],
+        "suitable": [
+          "Agent 重度用户（Claude Code / Codex / OpenClaw）",
+          "数据隐私敏感的企业与专业人士",
+          "MoE 模型与系统方向的研究者",
+          "拥有 RTX 30/40/50 系显卡的本地部署玩家",
+          "想用一次性硬件成本替代付费 API 的独立开发者"
+        ],
+        "description": "由 UC Berkeley Sky Lab 与 MIT 韩松组联合开源的边缘 MoE 推理引擎，通过带宽自适应执行（q* 策略）、全层双缓冲 prefill 流水线和语义感知缓存三大核心技术，让 8GB 显存笔记本跑 35B、单张 RTX 5090 跑 284B 的 DeepSeek-V4-Flash，在真实 Agent 工作负载下对 llama.cpp、Ollama、KTransformers 取得 1.5-2.3 倍解码吞吐优势，且输出数值与原模型完全等价。"
+      }
+    },
+    {
+      "id": "be0657f9-f0be-424f-b622-6616449de32b",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/anomalyco/hex",
+      "repo": "anomalyco/hex",
+      "description": "Local-first voice dictation for macOS. Hold a shortcut, speak, and paste into any app. Native Rust, on-device speech recognition, and a Linux beta.",
+      "language": "Rust",
+      "stars": 2458,
+      "forks": 157,
+      "starsAdded": 172,
+      "createdAt": "2026-11-01T11:00:02.112Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dictation",
+          "linux",
+          "local-first",
+          "macos",
+          "rust",
+          "speech-recognition",
+          "speech-to-text",
+          "voice-control"
+        ],
+        "license": "MIT license",
+        "homepage": "https://anoma.ly/hex",
+        "description": "Local-first voice dictation for macOS. Hold a shortcut, speak, and paste into any app. Native Rust, on-device speech recognition, and a Linux beta. - anomalyco/hex"
+      },
+      "summaryData": {
+        "tags": [
+          "语音听写",
+          "本地优先",
+          "开源",
+          "macOS",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "HEX 深度评测：免费开源的本地语音听写神器",
+        "ability": [
+          "按住说话松开即出字的极简听写交互",
+          "100% 本地离线语音识别（Parakeet/Whisper 模型）",
+          "Modes 自定义纠错词典与文本变换规则",
+          "可选 AI 语音指令与后处理润色",
+          "MIT 开源可审计，支持 TypeScript 自定义命令"
+        ],
+        "summary": "HEX 是一款本地优先的语音听写工具，按住快捷键说话、松开即得文字，全程离线、免费开源、保护隐私。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "写作与内容创作者",
+          "程序员与开源贡献者",
+          "远程办公重度沟通者",
+          "律师医生等隐私敏感从业者",
+          "爱折腾的 macOS 折腾党"
+        ],
+        "description": "HEX 是用 Rust 重写的 macOS 本地语音听写应用，首次启动后下载 Parakeet V3 或 Whisper 模型即可完全离线使用，识别速度快、不存音频、不传云端，且免费无订阅。相比 Wispr Flow、SuperWhisper 等竞品，它在隐私、成本和可编程性上优势明显，但仅支持 Apple Silicon + macOS 15+，Windows/Linux 尚在 Beta。"
+      }
+    },
+    {
       "id": "13400e7a-002c-44ff-9def-de99be7f12d9",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -91839,6 +92380,129 @@
           "教育科技公司"
         ],
         "description": "OpenMAIC 能将任意文档或主题一键转化为包含幻灯片、测验、仿真实验的互动课堂。支持多智能体协作模拟真实教学环境，提供本地化部署及多格式导出功能，大幅降低教学内容生产成本并提升互动体验。"
+      }
+    },
+    {
+      "id": "a0f8e06e-c46e-429a-a8b4-4bcd1ffac30a",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/kornia/kornia",
+      "repo": "kornia/kornia",
+      "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "language": "Python",
+      "stars": 11565,
+      "forks": 1456,
+      "starsAdded": 88,
+      "createdAt": "2026-11-01T11:00:02.092Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "artificial-intelligence",
+          "computer-vision",
+          "deep-learning",
+          "hacktoberfest",
+          "image-processing",
+          "machine-learning",
+          "neural-network",
+          "python",
+          "pytorch",
+          "robotics",
+          "spatial-ai"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://kornia.readthedocs.io",
+        "description": "🐍 Geometric Computer Vision Library for Spatial AI - kornia/kornia"
+      },
+      "summaryData": {
+        "tags": [
+          "PyTorch",
+          "计算机视觉",
+          "可微编程",
+          "开源库",
+          "深度学习"
+        ],
+        "cover": "",
+        "title": "Kornia 深度评测：让计算机视觉真正可微的 PyTorch 瑞士军刀",
+        "ability": [
+          "1200+ 可微 CV 算子，支持梯度反传与端到端训练",
+          "原生 GPU 批处理，一次调用处理整个 batch 的异构参数",
+          "完整的几何视觉生态：对极几何、PnP、RANSAC、Lie 群全部可微",
+          "内置 LoFTR、LightGlue、DISK 等 SOTA 特征匹配模型",
+          "AugmentationSequential 同步变换图像/mask/框/关键点，1000+ 算子可导出 ONNX"
+        ],
+        "summary": "Kornia 是一个构建在 PyTorch 之上的可微计算机视觉库，把传统 CV 算子变成能反向传播、能跑 GPU、能批处理的神经网络零件。",
+        "category": [
+          "开发工具",
+          "AI / 机器学习",
+          "开源项目"
+        ],
+        "suitable": [
+          "深度学习研究员",
+          "SLAM / 三维重建工程师",
+          "算法工程师（部署向）",
+          "多模态 / 生成模型从业者",
+          "计算机视觉方向的学生与入门者"
+        ],
+        "description": "Kornia 是基于 PyTorch 的开源可微计算机视觉库（Apache 2.0 可商用），解决了 OpenCV 梯度断裂、torchvision 几何能力缺失的痛点。它让 Canny、单应变换、RANSAC 等传统算子变成可反向传播的神经网络层，支持 GPU 批量计算与 ONNX 导出，是端到端训练与 CV+深度学习融合场景的理想选择，但在单图 CPU 性能与半精度支持上仍不如 OpenCV。"
+      }
+    },
+    {
+      "id": "45d5b3b7-dc74-48f9-adca-0924e682b3e4",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "repo": "hyprwm/Hyprland",
+      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "language": "C++",
+      "stars": 39115,
+      "forks": 2111,
+      "starsAdded": 37,
+      "createdAt": "2026-11-01T11:00:02.156Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compositor",
+          "cpp26",
+          "wayland",
+          "wayland-compositor"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://hypr.land",
+        "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. - hyprwm/Hyprland"
+      },
+      "summaryData": {
+        "tags": [
+          "Wayland",
+          "Linux桌面",
+          "窗口管理器",
+          "平铺WM",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Hyprland 深度评测：把 Linux 桌面雕琢成作品的 Wayland 合成器",
+        "ability": [
+          "动态平铺窗口管理，键盘驱动的高效工作流",
+          "丰富视觉特效：模糊、发光、贝塞尔曲线动画、果冻窗口",
+          "hyprctl 与 IPC 控制，可脚本化远程操控桌面",
+          "插件系统与 Lua 配置，高度可定制扩展",
+          "工作区级屏幕共享，演示协作更安全"
+        ],
+        "summary": "一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。",
+        "category": [
+          "开发工具",
+          "操作系统桌面",
+          "开源项目"
+        ],
+        "suitable": [
+          "追求键盘效率的开发者与运维工程师",
+          "Linux 桌面美化玩家",
+          "追求流畅体验的笔记本用户",
+          "想学习 Wayland 协议的极客",
+          "需要精准屏幕共享的内容创作者"
+        ],
+        "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
       }
     }
   ]

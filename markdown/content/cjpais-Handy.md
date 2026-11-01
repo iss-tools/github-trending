@@ -1,0 +1,189 @@
+# cjpais/Handy
+
+[GitHub URL](https://github.com/cjpais/Handy)
+
+
+## Handy 深度评测：35k Star 的完全本地化开源语音听写工具
+
+> 免费开源、完全离线的跨平台语音转文字工具，按住快捷键说话松手即出文字，音频永不离开你的电脑。
+
+- **Tags**: 开源项目, 语音转文字, 本地离线, Whisper, Wispr Flow 替代品
+- **Category**: 开发工具, 生活效率, AI 工具
+
+## Details
+
+# Handy 深度评测：把「语音转文字」还给你的本地开源方案
+> 一句话总结：**Handy 是一款基于 Tauri + Rust + Whisper/Parakeet 的完全本地化、跨平台开源语音听写工具——你按住快捷键说话，松手后文字直接粘贴进任何输入框，全程零云端、零订阅、零数据上传，堪称 2026 年 Mac/Win/Linux 三端 Wispr Flow 的最佳免费替代品。**
+目前它在 GitHub 上已有 **35.1k Stars、176 位贡献者、本周新增 744 Stars** 的热度，是全球 Top 1000 的热门仓库，正处于从「明星新秀」向「社区基础设施」过渡的关键阶段。
+---
+## 一、背景与痛点：为什么我们需要 Handy
+2024 年以来，「AI 语音听写」几乎是效率工具赛道最卷的品类之一。Wispr Flow 用极丝滑的云端 AI 润色圈粉无数，Superwhisper 凭借 Mac 端深度定制占据 Power User 心智，macOS 自带的听写也开始变得可用。但仔细看你会发现，这个赛道有个明显的「三角悖论」：
+- **云端的（Wispr Flow）够聪明但不够私密**——音频每次都要上传到第三方服务器，且要付每月 15 美元的订阅费；
+- **本地的（Superwhisper）够私密但只服务 Mac**，且 Pro 功能照样收费 9 美元/月；
+- **免费的（系统自带听写）够便宜但不够准、不够跨平台**。
+Handy 的作者 cjpais 正是看准了这块「三不管」的空白：他想要一款**同时满足「免费 + 开源 + 跨平台 + 完全本地 + 不被任何一个公司的商业模式绑架」**的听写工具。README 里那句 "Accessibility tooling belongs in everyone's hands, not behind a paywall"（无障碍工具应该握在每个人手里，而不是锁在付费墙后面）就是它的立身之本。
+如果你跟作者一样，觉得「我就是想把说的话变成文字，为什么要交月费、为什么要让音频离开我的电脑」，那 Handy 几乎是为这个执念量身定做的。
+---
+## 二、核心亮点：它到底强在哪
+### 1. 完全本地 + 完全免费 + 完全跨平台，三件套齐活
+这是 Handy 最硬核的差异化。打开 README 第一行写得清清楚楚：**"A free, open source, and extensible speech-to-text application that works completely offline"**——所有关键词一句到位。
+技术上是这么做的：
+- **音频先过 Silero VAD（Voice Activity Detection）做静音过滤**，把没说话的部分裁掉，省算力也减少误识别；
+- **本地跑 Whisper 系列模型**（Small / Medium / Turbo / Large，有 GPU 就走 GPU 加速，底层用的是 transcribe.cpp 推理引擎）；
+- **可选 NVIDIA Parakeet V3**——一个 CPU 友好、自带自动语种检测的模型，对没独显的用户特别友好。
+用个通俗的比喻：Wispr Flow 像把录音快递寄到总部让 AI 大脑帮你处理再寄回来；Superwhisper 像在自己家书房装了一台小型服务器；**Handy 则是把这个小型服务器直接焊在你电脑里，并且不锁门、不收费、源码全给你看**。
+### 2. 隐藏大招：可插拔的「后处理」管道
+这是 Handy 区别于其他纯本地听写工具最关键的一点，也是它被严重低估的能力。它的 Post-Processing（实验性功能）允许你在「Whisper 出来的原始转写文本」和「最终粘贴到屏幕」之间，再插一层 LLM 处理。
+支持的 Provider 覆盖极广：
+| 类别 | 可选项 |
+|---|---|
+| 云端 | OpenAI（GPT-4o-mini）、Anthropic（Claude Haiku）、OpenRouter、Groq、Cerebras、Z.AI（GLM-4.5-Air） |
+| 本地 | Apple Intelligence（macOS 26+ Apple Silicon）、任何 OpenAI 兼容端点（LM Studio / Ollama / vLLM） |
+| 推荐本地模型 | Qwen3 8B 及以上 |
+这意味着你可以做「混合模式」：**转写永远在本地、永远私密，要不要再让 LLM 润色由你按需选择**——润色走单独的快捷键，普通转写走另一个快捷键，互不干扰。这是 Wispr Flow 做不到的（它强制云端），也是 Superwhisper 只能做到一部分的。
+### 3. 「说话即输入」的交互哲学
+Handy 的交互极简到几乎不需要学习：
+1. 按下你自定义的快捷键（默认支持 Hold 按住说话 / Toggle 点按切换 / Hold-only / Toggle-only 四种模式）；
+2. 说话；
+3. 松手，文字直接粘贴进当前焦点所在的输入框。
+没有弹窗、没有窗口切换、没有「打开 App → 点按钮 → 说话 → 复制 → 切到目标 App → 粘贴」这套流程。它是真正的「系统级输入法外挂」，跟用键盘打字几乎无缝。
+### 4. 可扩展性：-Raycast 集成 + CLI 控制 + 自定义词典
+- **Raycast 集成**：社区贡献者 @mattiacolombomc 做了官方 Raycast 扩展，可以启动/停止录音、浏览历史、管理自定义词典、切换模型和语言。
+- **CLI 控制**：`handy --toggle-transcription`、`--toggle-post-process`、`--cancel`、`--start-hidden`、`--no-tray` 等参数，方便脚本化、自启动、Wayland 下让窗口管理器接管快捷键。
+- **自定义词典**：可以加自己的专有名词、人名、术语，提高识别准确度。
+- **多语言 UI**：已支持中文简繁、土耳其语、丹麦语、加泰罗尼亚语、印尼语等十几种语言。
+---
+## 三、Demo / 使用示例：5 分钟上手速查
+### 安装（任选其一）
+```bash
+# macOS（Homebrew）
+brew install --cask handy
+# Windows（winget）
+winget install cjpais.Handy
+# Debian/Ubuntu（注意用 apt 装 .deb，自动解决依赖，别用 dpkg -i）
+sudo apt install ./Handy_*.deb
+```
+### 典型工作流
+1. 启动 Handy，授予麦克风和辅助功能权限；
+2. 在 Settings 里挑一个模型（Apple Silicon 推荐先试 Parakeet V3，CPU 占用低、带自动语种检测）；
+3. 设一个不顺手的快捷键（避开系统占用，比如 `Ctrl+Space` 或 `Option+D`）；
+4. 在任何输入框（浏览器地址栏、Notion、微信、VS Code、终端）按住快捷键说话，松手即出文字。
+### Post-Processing 的 Prompt 示例
+开启方式：Settings → Advanced → Experimental Features → 勾选 Post Processing，然后在 Post-Processing 区域选 Provider、填 API Key、写 Prompt。
+**修复语法和标点：**
+```
+Fix any grammar or punctuation errors in the following text,
+but don't change the meaning or tone: ${output}
+```
+**口语转要点：**
+```
+Convert the following text into concise bullet points: ${output}
+```
+**把说出来的标点变成符号：**
+```
+Convert spoken punctuation words to their symbols (e.g., "period" to ".",
+"comma" to ",", "new line" to a line break). Don't change anything else: ${output}
+```
+`${output}` 是模板变量，会被替换成 Whisper 的原始转写结果。Prompt 写法完全自由，等于给你一个可以定制任意「语音输入后处理」的小型自动化工作流。
+### 本地 LLM 接入（LM Studio 为例）
+1. 安装并启动 LM Studio，加载模型，启动本地服务；
+2. 在 Handy 的 Post-Processing 设置里选 Provider = `Custom`；
+3. Base URL 填 `http://localhost:1234/v1`；
+4. 选模型、写 Prompt，搞定。
+---
+## 四、技术栈与架构解析：为什么它是「最好 Fork 的语音转文字应用」
+CONTRIBUTING.md 里有一句话非常关键：**"Handy aims to be the most forkable speech-to-text app"**——它的目标不仅是做一个好用的工具，更是做一个**让大家愿意基于它去构建自己产品的基础设施**。
+为此，作者在架构上做了几个明确的设计取舍：
+### 技术选型：Tauri 2 + Rust + React/TS
+| 层 | 技术 | 位置 |
+|---|---|---|
+| 后端 | Rust | `src-tauri/src/` |
+| 前端 | React + TypeScript + Tailwind | `src/` |
+| 包管理 | Bun | 项目根 |
+| 打包 | Tauri 2 | 跨平台桌面 |
+Rust 后端负责音频采集、VAD、模型推理、全局快捷键、文本注入——这些性能敏感的部分；前端 React 只负责设置界面。这种「Rust 重 / Web 轻」的组合让 Handy 安装包小、启动快、内存占用低，相比 Electron 方案优势明显。
+### 代码组织：清晰得像教科书
+CONTRIBUTING.md 里给出的代码地图非常干净：
+- `lib.rs` — Tauri 入口
+- `managers/` — 核心业务（audio / model / transcription）
+- `audio_toolkit/` — 底层音频（录音、VAD）
+- `commands/` — Tauri 命令处理器（前端 ↔ 后端桥接）
+- `shortcut.rs` — 全局快捷键
+- `settings.rs` — 设置管理
+每个文件职责单一，新贡献者几乎不需要看懂全貌就能定位某个 Bug。这种「按功能分文件夹 + 命名直白」的写法，让 Handy 的 176 位贡献者能持续并行开发——这是它能一路涨到 35k Stars 的工程基础。
+### 当前的「Feature Freeze」哲学
+值得注意的是，项目目前**主动进入功能冻结期**：CONTRIBUTING.md 明确写着 "Handy is currently undergoing a feature freeze"，社区没强烈要求的新特性 PR 会被直接拒收，全部精力先解决 60+ 个 Bug。
+这种「先把地基打牢再盖楼」的克制非常罕见，也侧面说明作者对工程质量有敬畏心。
+---
+## 五、目标人群与收益
+### 强烈推荐的人群
+| 人群 | 收益 |
+|---|---|
+| **跨平台重度文字工作者** | 同一个工具在 Mac/Win/Linux 之间无缝迁移，肌肉记忆不浪费 |
+| **律师 / 医生 / 财务 / 涉密岗位** | 音频永不离开本地，规避云 SaaS 的合规风险（HIPAA / GDPR） |
+| **开发者 / 写作者 / 学生** | 写文档、commit message、issue 描述、笔记时省 50%+ 打字时间 |
+| **非英语母语者** | 多语言模型 + Post-Processing 翻译/润色，中英混说也顺手 |
+| **Fedora / Arch / NixOS / Wayland 用户** | 几乎是市面上唯一认真维护 Linux Wayland 体验的听写工具 |
+| **预算敏感 / 隐私偏执 / 自由软件爱好者** | MIT 协议，永久免费，可 fork 可商用 |
+### 不是为谁准备的
+- 想要**自动加入 Zoom 出会议纪要**的——这是听写工具，不是 Meeting Bot，请用 Otter；
+- 想要**移动端（iOS / Android）**的——目前只有桌面版，Android 已在讨论区被高频提需求；
+- 想要**完全不用配置、装完即 Wispr Flow 级别体验**的小白——需要接受一次模型下载（1-3 GB）和基本的设置成本。
+---
+## 六、竞品对比：Handy 在 2026 年语音听写赛道的坐标
+| 维度 | **Handy** | Wispr Flow | Superwhisper | whisper（商业版） |
+|---|---|---|---|---|
+| 平台 | **Mac + Win + Linux** | Mac + Win (+iOS) | 仅 Mac | Mac + Win + Linux |
+| 价格 | **永久免费** | $15-18/月 | $9/月 Pro | $29 一次性 |
+| 转写位置 | **本地** | 云端 | 本地 | 本地 |
+| 开源 | **MIT 完全开源** | 闭源 | 闭源 | 闭源 |
+| 离线可用 | **✅** | ❌ | ✅ | ✅ |
+| LLM 后处理 | **可插拔（云/本地/Apple Intelligence 任选）** | 内置强制 | 自定义 Prompt | 简单清理 |
+| 自定义深度 | 高（模型+Prompt+词典+CLI+Raycast） | 低 | 极高 | 低 |
+| 隐私等级 | **音频零出机** | 全程上传 | 零出机 | 零出机 |
+| 适合人群 | 跨平台 / 隐私 / 免费 / 折腾党 | 追求极致润色 / 不差钱 | Mac 深度用户 | 想省心付一次费 |
+**Handy 的独特位置**：它是这个对比表里**唯一一款同时满足「完全免费 + 完全开源 + 跨三平台 + 完全本地 + 可扩展」**的产品。Wispr Flow 在「润色智能度」和「开箱体验」上仍占优，Superwhisper 在「Mac 端定制深度」上仍占优，但只要你的需求清单里出现「Linux」或「不想付订阅费」或「源码可审计」中的任何一项，Handy 就几乎是唯一答案。
+---
+## 七、上手门槛与部署体验
+### 好消息
+- 三端都有官方一键安装方式（Homebrew / winget / .deb）；
+- UI 走简洁风，主要设置项（快捷键、模型、Post-Processing）一目了然；
+- 文档站点 handy.computer/docs 写得相当用心，Post-Processing、Paste Methods、Debug 都有独立页面；
+- 有 Debug 模式（`Cmd/Ctrl+Shift+D`）方便自查问题。
+### 需要提醒的几个坑
+**模型下载**：首次使用需要下载所选模型（1-3 GB 不等），国内用户可能要面对 Hugging Face 访问问题——好在 v0.9.5 已经加入了 HF 镜像 fallback。
+**Linux Wayland 用户**：必须额外装 `wtype` 或 `dotool`（X11 用 `xdotool`），否则文本粘贴可能失灵；Ubuntu 26.04 由于默认 Wayland，需要走 `ydotool` + systemd 路线。
+**Linux 还需要装 `libgtk-layer-shell0`**，否则可能报 `error while loading shared libraries: libgtk-layer-shell.so.0`。
+**Linux 上的浮层默认关闭**：因为某些合成器会把它当成活动窗口抢焦点，导致粘贴到错误的应用。
+**macOS 蓝牙耳机**：用蓝牙麦克风录音时可能临时降低播放音质（蓝牙协议切到双向模式所致），建议输出用耳机、麦克风用内置或外接 USB。
+**fn/Globe 键快捷键**只在 Apple 原生键盘上有效，第三方键盘硬件层面就不传这个事件。
+---
+## 八、社区活跃度与生命力
+判断一个开源项目是否能长期活下去，看三件事：贡献者广度、更新节奏、Issue 响应。
+- **贡献者广度**：176 位贡献者，且 v0.9.7 一个版本就涌入 8 位新贡献者，说明社区虹吸能力仍在加速。
+- **更新节奏**：v0.9.4 → v0.9.5 → v0.9.6 → v0.9.7 节奏稳定，每个版本都是十几到二十几个 PR 的合并量，且能看到大量「外部贡献者第一笔 PR」，社区不是一个人在战斗。
+- **Issue / Discussions**：有活跃的 Discussion 区（Post-Processing 优化、Android 版本呼声、剪贴板上下文集成提案等），Discord 社区也在运营。
+- **作者 AI 透明度**：CONTRIBUTING.md 明确欢迎 AI 辅助 PR，但要求披露工具名和使用范围——这种对 AI 时代的工程治理意识非常领先。
+一句话：**这不是个人玩票项目，是一个有清晰治理结构、有哲学、有克制力的中型开源社区**。
+---
+## 九、局限与不足：客观说说它还不够好的地方
+评测不吹不黑才算有用。Handy 的局限主要有五条：
+### 1. 没有 iOS / Android 版本
+纯桌面工具，移动端只能等社区或官方后续规划（Android 在 Discussion 里被高频提及，但还停留在需求阶段）。
+### 2. 首次配置仍有一定门槛
+相比 Wispr Flow 「装完即用」的极致体验，Handy 需要你自己选模型、等下载、调快捷键。这是「可定制」的代价，但对纯小白不友好。
+### 3. Linux 体验依然是短板
+尽管作者已经做了大量工作（多种粘贴工具、CLI 信号触发、镜像 fallback），但 Linux 用户需要面对 Wayland 兼容、libgtk-layer-shell、合成器抢焦点等一长串潜在坑。这不是 Handy 的锅，是 Linux 桌面生态的锅，但用户感受是真实的。
+### 4. Post-Processing 是把双刃剑
+开启后会增加一轮 API / 本地推理的延迟；小于 3B 的本地模型经常无视 Prompt；带思维链的模型可能把 `<reasoning>` 标签也吐出来污染输出（Discussion #168 已经有用户踩过 Amazon Bedrock 的坑）。
+### 5. 数据历史 / 团队协作能力缺失
+没有团队工作区、没有云端历史同步、没有多人共享转写——这是「本地优先」哲学的必然取舍，但如果你期待的是 Notion AI 那种「把所有语音笔记沉淀成可检索知识库」的体验，会失望。
+---
+## 十、结语与行动建议
+如果用一句话给 Handy 下判断：**它是 2026 年最值得关注的「本地化、开源、跨平台」语音听写工具，是 Wispr Flow 在隐私党、Linux 党、免费党阵营里的对位答案，并且其可扩展架构让它具备了成为「语音输入基础设施」的潜质。**
+它现在还不是一款「完美产品」——移动端缺失、Linux 体验需打磨、首次配置有门槛、润色能力需要你自己组装——但它的工程哲学、社区健康度、以及那个被低估的「Post-Processing 可插拔管道」让它有长期价值。
+**给你的三步行动建议：**
+1. **如果你已经在付 Wispr Flow 或 Superwhisper 订阅费，且只用基础功能**——花 10 分钟装个 Handy 试试 Parakeet V3，体验上大概率不输，钱包会感谢你；
+2. **如果你是 Linux / Wayland 用户、或经常处理涉密内容**——直接把 Handy 作为默认听写工具，记得先按 Linux Notes 装好 `wtype` / `xdotool` / `libgtk-layer-shell0`；
+3. **如果你是想做「语音 + LLM」产品或工作流的开发者**——把 Handy 当作一个 fork-friendly 的基础设施去研究，它的 Rust 后端架构、可插拔 Provider 设计、以及 CLI / 信号双触发机制都是可以直接复用的工程模板。
+最后引用 handy.computer 上那句俏皮的口号作结：**"Sit back, relax, and let Handy give you a hand."**（坐好放松，让 Handy 帮你一把。） 这五个字母的项目，正在用最朴素的方式重新定义「我说话，电脑打字」这件事。

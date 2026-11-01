@@ -1,0 +1,75 @@
+{
+  "id": "009d172c-6fc9-43b4-97aa-d3a8953dfb0a",
+  "url": "https://github.com/beenuar/AiSOC",
+  "domain": "github.com",
+  "repo": "beenuar/AiSOC",
+  "description": "AiSOC 是由 Cyble 资助、MIT 协议开源的 AI 安全运营中心，把 EDR、SIEM、云日志统一接入，用本地 LLM 多 Agent 自动分诊告警并执行响应动作。最大亮点是「调查账本」——AI 的每一步推理与证据引用都可回放审计，支持完全离线的 air-gap 部署，数据不出自建机房。缺点是内置小模型能力有限、资源门槛不低、社区生态尚早期。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-11-01T11:14:30.242Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "agentic-ai",
+      "ai-security",
+      "alert-triage",
+      "blue-team",
+      "cybersecurity",
+      "detection-engineering",
+      "incident-response",
+      "langgraph",
+      "llm-agents",
+      "mcp",
+      "mitre-attack",
+      "model-context-protocol",
+      "purple-team",
+      "security-operations",
+      "self-hosted",
+      "siem",
+      "soar",
+      "soc",
+      "threat-detection",
+      "threat-intelligence"
+    ],
+    "license": "MIT license",
+    "homepage": "https://beenuar.github.io/AiSOC/",
+    "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. - beenuar/AiSOC"
+  },
+  "summaryData": {
+    "tags": [
+      "开源项目",
+      "AI SOC",
+      "网络安全",
+      "LLM Agent",
+      "自托管"
+    ],
+    "cover": "",
+    "title": "AiSOC 深度评测：可自托管的开源 AI 安全运营中心，让 AI 决策全程可审计",
+    "ability": [
+      "AI 告警分诊：本地 LLM 多 Agent 自动调查告警并判定真阳/误报",
+      "调查账本：每一步 prompt、工具调用与证据引用可重放、可导出审计",
+      "检测引擎：2535 条已验证可触发的规则，接入 87 个数据源连接器",
+      "响应 Playbook：三道开关默认全关，人工审批通过后才执行动作",
+      "内置 MCP Server，可在 Claude/Cursor 中直接查询和操控 SOC"
+    ],
+    "summary": "开源可自托管的 AI 安全运营中心：本地 LLM 自动分诊安全告警，AI 每一步调查都有可回放审计的账本。",
+    "category": [
+      "开发工具",
+      "网络安全",
+      "AI Agent"
+    ],
+    "suitable": [
+      "中小企业的安全团队",
+      "MSSP 托管安全服务提供商",
+      "合规要求高的金融/政企机构",
+      "安全研究者与蓝队工程师",
+      "AI Agent 工程师"
+    ],
+    "description": "AiSOC 是由 Cyble 资助、MIT 协议开源的 AI 安全运营中心，把 EDR、SIEM、云日志统一接入，用本地 LLM 多 Agent 自动分诊告警并执行响应动作。最大亮点是「调查账本」——AI 的每一步推理与证据引用都可回放审计，支持完全离线的 air-gap 部署，数据不出自建机房。缺点是内置小模型能力有限、资源门槛不低、社区生态尚早期。"
+  },
+  "contentDetail": "# AiSOC 深度评测：当\"AI 安全分析师\"变成一段可以 `make up` 起来的开源代码\n> 评测对象：[github.com/beenuar/AiSOC](https://github.com/beenuar/AiSOC)\n> 类型识别：开源项目（属于 **「GitHub 开源项目 / 开发者工具」** 双重维度，兼有 **AI Agent** 与 **安全产品** 属性）\n> 数据来源：官方 README、官方文档站、KitPloit 收录页、Cyble 官网、对同类 AI SOC 产品的公开资料\n---\n## 一句话总结\n**AiSOC 是一个由 Cyble 资助、MIT 协议开源、可自托管的「AI 安全运营中心」**：它把你散落在 EDR、SIEM、云审计日志里的告警吃进来，用 2500 多条已验证可触发的检测规则做关联，再让一个本地跑的 LLM Agent 像初级分析师那样做\"分诊 + 调查\"，**每一步 prompt、每一次工具调用、每一条证据引用都被写入一份可重放、可导出的\"调查账本\"**，最终由人类点确认，才把响应动作推到厂商那边。它不打算取代 Splunk，却可能是把\"AI SOC\"这件原本只有 Dropzone AI、Prophet Security 等创业公司按席位收订阅费才能玩的事，搬进你自建机房的第一份认真答案。\n---\n## 背景与痛点：为什么 SOC 需要\"AI 分诊\"\n在聊这个项目之前，先把行业痛点铺一铺。\n**一个真实的企业安全团队每天要面对的，是\"告警海啸\"**：CrowdStrike、Sentinel、Okta、AWS CloudTrail 每天吐出成千上万条原始事件，SOC 分析师要做的第一件事不是\"抓黑客\"，而是\"从噪音里分辨出哪 5 条是真的\"。这件事枯燥、重复、又极度依赖经验。商业 AI SOC 厂商（Dropzone AI、Prophet Security、Purple AI、Anvilogic 等）的核心卖点，就是用一个 LLM Agent 模拟\"初级分析师\"把这层分诊自动化掉，但它们的定价模型普遍是 **按告警数、按端点数或按席位计费**，对小团队和研究者并不友好。\n开源世界里，传统的\"开源 SOC 三件套\"是 **Wazuh（XDR + SIEM）、Security Onion（网络流量监控）、TheHive + Cortex（事件响应）**，它们都成熟稳定，但有一个共同的尴尬：**没有原生的 LLM 调查能力**，要接 AI 你得自己拼一套 RAG + Agent 工具链。AiSOC 的差异化，正是把这层\"AI 分诊 + 可审计调查\"直接做成产品级开箱体验。\n> **一个比喻**：传统 SIEM 像机场安检门，规则命中了就\"嘀\"一声让你过去；AiSOC 是给安检门旁边配了一个 7×24 在岗、会翻你护照、会查你背景、还会把\"我为什么觉得你可疑\"逐条写进调查笔录的 AI 实习分析师——而且笔录任何人都可以回放审计。\n项目背后是 **Cyble**（一家做威胁情报的公司），README 明确写明\"开发由 Cyble 出资、按 MIT 协议开源、无 Cyble 专属功能、无埋点遥测\"，KitPloit 显示目前约 **1.8k star / 234 fork**，最近一次提交在 6 小时前，**迭代速度非常凶猛**（README 里的数字每隔几天就在被 CI 自动重算——这是它一个独特的设计，后面会讲）。\n---\n## 核心亮点与功能剖析\n### 1. Investigation Ledger：AI 的每一个念头都有\"台账\"\n这是 AiSOC 最有产品哲学味道的一个设计。它的 AI Agent 在调查一条告警时，会产生 prompt、会调用工具（查事件湖、查实体图、做富化）、会给出\"真阳/误报\"的判定与置信度。**所有这些动作都被逐条写入 Postgres 里的账本，且最终可导出为一份\"签名的证据包\"（byte-identical、OCSF 1.9.0 格式）**。\n> **比喻**：相当于给 AI 装了行车记录仪 + 法庭速记员。当合规官问\"你凭什么把这条告警自动关掉了\"，你不是答\"AI 说的\"，而是掏出一份完整 prompt + 工具调用链 + 引用证据的回放。\n更难得的是它做了一件业内很少做的事——**\"Grounding 校验\"**：如果 AI 的判定引用了一个证据里根本不存在的 indicator，这条判定会被自动降级为\"需人工复核\"，而不是悄悄自动关单。这是对 LLM 幻觉问题一个非常工程化的对策。\n### 2. \"Executable is earned, not declared\"：规则不是声明出来的，是被\"看见\"触发的\nREADME 里有一段非常硬核的话，值得摘出来：\n> A rule joins the compiled ruleset only after a vendor-shaped event is replayed through the real connector and engine and that rule is _watched to fire_ — never inferred from a directory or an `enabled:` flag.\n翻译成大白话：**一条规则要进入\"可执行池\"，必须有一个真实形状的事件、走真实连接器、进真实引擎、被人看见它真的响了，才有资格**。结果就是 6991 条规则库里只有 2535 条左右是\"可执行\"的，剩下那些要么还在等待验证，要么被拒绝计入（README 提到\"why 1,362 were refused\"，并且明确说\"还有两条规则不能触发，比之前的 119 条已经少很多，因为不触发的规则不再被算作可执行\"）。\n**这种\"宁可少报、不可虚报\"的诚实度，在开源安全项目里是稀有物种。** Wazuh 之类项目里大量\"存在但从未被实测命中\"的检测规则，是行业内公开的秘密。\n### 3. 87 个连接器 + 4 个云采集器 + 规则迁移器\n它提供 **87 个\"click-and-connect\"数据源连接器**（Splunk、Microsoft Sentinel、Elastic、CrowdStrike、Okta、AWS、Kubernetes 审计等），并针对真实云环境的难点做了 4 个专用采集器：**AWS CloudTrail 走 S3+SQS、GCP 走 Pub/Sub、Azure 走 Event Hubs、通用 syslog/CEF 监听**，每个都支持游标续传与背压。\n更贴心的是 **`packages/aisoc-migrate`**：把你已有的 Splunk SPL、Sentinel KQL、Elastic EQL 检测规则翻译进来，**而且它选择\"翻不动就明确拒绝\"，而不是近似翻译**——README 给的实测数据是 2005 条 Splunk 规则中 1734 条能翻、其中 1711 条是部分翻译。理由写得漂亮：\"一条几乎对的规则比一条缺失的规则更难排查\"。\n### 4. Playbooks：默认三道开关 + 持久化的\"审批暂停\"\n响应自动化是最容易出事的地方，AiSOC 的做法是 **默认全关、三道开关（部署级 / 租户级 / 剧本级）必须全部同意才会执行**，默认进入 preview 模式。审批是一个\"持久化的暂停\"：run 会挂起到 Postgres，**重启后能恢复，审批过期会记录 outcome**，不会出现\"管理员出差一周，playbook 一直挂着\"的尴尬。\n### 5. MCP Server：把 SOC 接到 Claude / Cursor 里\n它 ships 一个 `@aisoc/mcp`，对外暴露 **13 个工具**给 Claude、Cursor、Continue、Cody 使用，让你在 IDE 里就能\"重放某个 Agent 的判定\"或\"运行受治理的 SELECT 查询\"。这是把 MCP 生态用到安全运营上的少见落地。\n### 6. CISA KEV 威胁情报：唯一一个\"开箱即真实\"的外部数据\n它内置了一个 `services/threatintel` 服务，定时拉取 **CISA Known Exploited Vulnerabilities（已公开利用漏洞目录）**，不需要 API key。这是新装实例里唯一一个\"既不是你自己的、也不是合成\"的数据源——体现了作者对\"真实 vs 演示数据\"分界的执念。\n### 7. 一个罕见的设计：README 由 CI 重算\n`make stats` 会**重算 README 中公布的每一个数字**，CI 会在 README 与代码不一致时直接失败。KitPloit 抓到的版本（规则数 2530 vs 官方站 2535）就是这种\"快照时差\"的体现——这其实是**公开可验证诚实度**的一种工程实现，非常有趣。\n---\n## 技术栈与架构解析\n虽然 README 给的架构图偏简洁，但官方文档站披露得相当完整：\n| 层 | 技术选型 | 角色 |\n|---|---|---|\n| **接入层** | Go · OCSF 规范化 | 87 个连接器把异构遥测归一化为 OCSF 格式 |\n| **总线** | Kafka spine | 亚秒级事件分发，10M+ IOC 用 Bloom filter 去重 |\n| **检测引擎** | Sigma / YARA / KQL / EQL，OpenSearch + ClickHouse | 6991 条规则库，2535 条可执行，76 条滑动窗口规则 |\n| **存储层** | Postgres + ClickHouse + OpenSearch + Qdrant + Neo4j + Redis | 分别承担事务、事件湖、全文检索、向量记忆、实体图、缓存 |\n| **ML 层** | LightGBM + Isolation Forest（融合打分）、UEBA 用 Welford 在线基线 | 经典 ML 做 z-score 异常，LLM 只做\"分诊与调查\" |\n| **Agent 层** | LangGraph 多 Agent（Orchestrator / Recon / Forensic / Responder / Report-writer） | 每个 Agent 接 MITRE ATT&CK 知识，Qdrant 做 RAG 记忆 |\n| **LLM 网关** | Ollama（默认 pinned 到 `llama3.2:3b-instruct-q4_K_M`，约 2GB） | 可切换 vLLM / LiteLLM / 任意 BYOK，支持**完全 air-gap 部署** |\n| **控制台** | Next.js 14 + FastAPI | v1.5 改造为\"工作台\"风格，包括 Investigation Rail、Investigation Queue、Rule Tuning 等 |\n| **移动端** | Responder PWA（Passkey 登录 + Web Push + 离线 shell） | 给值班响应人用 |\n**几个值得夸的架构决策**：\n- **经典 ML 和 LLM 的分工非常清醒**：用 LightGBM/Isolation Forest 做大规模融合打分，UEBA 用数学基线，**LLM 只负责它擅长的\"读上下文 + 写推理\"**，不越权去写 SQL（Agent 调用的是 typed tools，模型只挑工具和传参）。\n- **Air-gap 是一等公民**：通过 Docker Compose overlay + 单个环境变量切换，就能让整个 AiSOC **零出网**运行——这对金融、政府、能源等强合规客户是刚需，大多数 SaaS 形态的 AI SOC 给不了。\n- **多租户隔离做到了查询层**：Postgres 用 DML-only 角色 + 行级安全，每个 store（包括 Neo4j、ClickHouse）都在查询层强制租户隔离，README 还专门提到\"曾有 CVE 类问题修复了这条\"，并附了 ADR。\n---\n## 上手体验与部署 Demo\n部署流程把\"小白能不能跑起来\"这个事做到了极高优先级。四种路径：\n```bash\n# 1. 标准路径（需 Docker Compose v2，8GB 内存 + 20GB 磁盘）\ngit clone https://github.com/beenuar/AiSOC && cd AiSOC\nmake up            # 16 个服务，core profile\nmake smoke         # 端到端自检：ingest → Kafka → 检测 → 关联 → API 回读\n# 2. Windows / 裸机一条命令装好所有依赖\niwr -useb https://raw.githubusercontent.com/beenuar/AiSOC/main/install.ps1 | iex\n# 3. 没有机器？GitHub Codespaces 里 make up 也能跑\n# 4. 没有任何基础设施？纯 Python 离线体验 Agent 漏斗\npip install aisoc-sandbox && aisoc-sandbox demo   # 30 秒内走完一条告警的 Agent 链路\n```\n**官方 `make smoke` 的输出**（直接摘自 README），把\"装好了\"这件事变成了可验证的：\n```\n$ make smoke\n[PASS] raw telemetry accepted by ingest\n[PASS] event traversed the spine and became an alert\nPASS: 10/10 stages\n```\n> **比喻**：`make smoke` 像新车下线前的\"点火测试\"——不是看仪表盘有没有亮，而是真的把一颗螺丝推进气缸、看能不能转出来。\n**送一条真实告警进 Agent 的 curl 示例**：\n```bash\ncurl -X POST http://localhost:8081/v1/ingest/batch \\\n  -H 'Content-Type: application/json' \\\n  -H \"Authorization: Bearer $AISOC_INGEST_TOKEN\" \\\n  -d '{\"connector_id\":\"edr-1\",\"connector_type\":\"crowdstrike\",\n       \"events\":[{\"severity\":\"high\",\n                  \"title\":\"Encoded PowerShell from Office\",\n                  \"host\":\"WIN-FIN-01\"}]}'\n```\n`make up` 还会**自动生成 15 个密钥**（凭证保险库、会话签名密钥、服务间凭证、四个数据存储密码），并把管理员密码打印一次后**永不再存储**。一个特别贴心的小细节：**端口被占用不会让安装失败**——它会自动换一个空闲端口、告诉你是谁占了旧端口，并把控制台地址跟着挪过去（README 给的实测是 64 秒拿到登录界面）。\n---\n## 目标人群与收益\n| 人群 | 能拿到什么 |\n|---|---|\n| **中小企业 / 初创安全团队（1–5 人 SOC）** | 在没有百万美元预算的情况下，获得一套接近商业 AI SOC 的\"分诊自动化\"，且数据不出自己机房。 |\n| **MSSP / 托管安全服务提供商** | 多租户架构、白标 branding、跨租户 MTTD/MTTR 高管看板都做进去了，可以作为自建 AI SOC 底座。 |\n| **合规 / 金融 / 政企** | Air-gap 模式 + 本地 LLM + 签名证据包 + SOC 2 / ISO 27001 / PCI-DSS 证据自动化采集，是少数能\"全离线跑 AI Agent\"的方案。 |\n| **安全研究者 / 蓝队工程师** | 完整可读的检测工程链路（DAC、Hunt-as-Code、Purple Team 集成 Caldera），是学习\"现代 SOC 怎么搭\"的绝佳参考实现。 |\n| **AI Agent 工程师** | Investigation Ledger、Grounding 校验、typed tools、prompt 校验拒绝 secret 形状的值——这是**一套可抄的\"LLM Agent 工程范式\"**，跟安全无关也值得看。 |\n| **想搭 MCP 生态的开发者** | 它是少数提供 **生产级 MCP server + 13 个工具**的开源项目，可以直接在 Cursor 里调试自己的 SOC。 |\n**最直接的痛点解决**：把每天几百到几千条告警里\"显然是误报\"的那 70%–80% 自动关掉，把人类注意力留给真正需要经验判断的 20%。\n---\n## 竞品对比：它究竟站在哪里\n| 产品 | 形态 | AI Agent 原生 | 自托管 | 数据主权 | 价格模型 | 适合 |\n|---|---|---|---|---|---|---|\n| **AiSOC** | 开源（MIT） | ✅ LangGraph 多 Agent + Ledger | ✅（Docker/K8s） | ✅ 完全本地，可 air-gap | **免费**，自己出算力 | 想自建 / 研究者 / 中小 SOC |\n| **Wazuh** | 开源 | ❌（无原生 LLM） | ✅ | ✅ | 免费 | 合规驱动、传统 XDR/SIEM |\n| **Security Onion** | 开源 | ❌ | ✅ | ✅ | 免费 | 网络流量监控、NSM |\n| **Dropzone AI** | 商业 SaaS | ✅ | ❌（单租户托管） | 部分 | 按告警量/席位 | 不差钱的中大型企业 |\n| **Prophet Security** | 商业 SaaS | ✅ | ❌ | 部分 | 按平台费/告警 | 大型企业 |\n| **Torq / Anvilogic / Purple AI** | 商业 SaaS | ✅ / 部分 | ❌ | 部分 | 多为订阅 | 已有 SIEM 之上的 SOAR 补强 |\n来源：[Dropzone AI 定价页](https://www.dropzone.ai/pricing)、[Prophet Security 关于 AI SOC 定价模型的博客](https://www.prophetsecurity.ai/blog/ai-soc-pricing-models)、[2026 AI SOC 平台对比](https://securityboulevard.com/2026/09/ai-soc-platforms-for-mssps-compared-in-2026)、[Wazuh vs Security Onion vs CrowdSec](https://tech-insider.org/wazuh-vs-security-onion-vs-crowdsec-2026)\n**AiSOC 的独特竞争力就一句话**：**\"商业 AI SOC 的能力边界 + Wazuh 的部署自由度 + 任何人都拿不走的审计账本。\"** 在这个组合里，目前没有第二个开源项目做到同等完成度。\n---\n## 局限与不足：要把丑话说在前面\n客观讲，这个项目有明显的\"早期产品锋利 + 工业级野心\"混合气质，以下是它**确实做不到或做得不到位**的地方。\n1. **内置模型并非前沿**。默认的 `llama3.2:3b-instruct-q4_K_M` 只有约 2GB，是 CPU 推理档。README 自己承认：\"over 50 alerts it gave triage usable output 44 times before the reply was constrained to JSON and 50 after\"——也就是说**勉强能用，远谈不上\"聪明\"**。想真正好用，必须自己接 GPT-4 / Claude / DeepSeek 这种前沿模型，而**\"任何托管 provider 都从未被项目作者本人测过\"**——这是诚实的，但也意味着你接上去之后，质量是个未知数。\n2. **它明确\"不是 SIEM 替代品\"**。README 原话：\"Not a drop-in SIEM replacement. It correlates and investigates; it does not replace long-term log retention and compliance search.\"——如果你的需求是\"替代 Splunk 做长期合规检索\"，**这个项目不在那个赛道**。\n3. **资源门槛不低**。Core profile 16 个服务、8GB 内存、20GB 磁盘（还要留给 Docker VM），full profile 12GB——**笔记本上跑会非常勉强**，台式机/服务器是合理起步。\n4. **文档与代码之间存在\"快照时差\"**。官方站说 52 个连接器，README 说 87 个；README 说 2535 条可执行规则，KitPloit 抓到的版本是 2530 条。**这是 CI 自动重算 README 的副作用**——诚实，但读者容易晕。\n5. **连接器质量不均匀**。没有 vendor 专属 profile 的连接器走通用映射，只能解析 host/user/source IP 这种基本字段，**深度场景还是要靠那 87 个里被 vendor-specific normalization 覆盖的部分**。\n6. **版本号跳跃式增长**。KitPloit 抓到 v20.1.0，官方文档里又说 \"v1.5 wave\"、\"v8.0 wave-1\"——**版本号语义不清**，给生产环境锁定版本带来麻烦。\n7. **\"executable rule\" ≠ \"能检出攻击\"**。README 自己坦白：可执行只代表\"规则能被真实事件触达\"，**不代表它真能识别真实攻击**。这是它比那些\"规则数=N 万\"吹牛项目诚实的地方，但也意味着**实际检测精度需要你自己做 PoC 验证**。\n8. **生产成熟度仍偏早期**。1.8k star、234 fork、KitPloit 收录一周内——**社区生态（第三方插件、国内教程、商业支持）还很稀薄**，遇到坑基本只能看源码和 Discussions。\n---\n## 结语与行动建议\n**AiSOC 是我近期评测过的项目里，少见的\"产品哲学与技术诚实度都让人眼前一亮\"的开源作品**。它没有\"用 AI 颠覆安全\"那种空洞口号，而是把行业最头疼的两个真问题——**告警疲劳**和 **AI 决策不可审计**——用 Investigation Ledger、Grounding 校验、Human-in-the-loop、可执行规则门控这一整套工程机制，逐一拆掉。它的 README 写得像一份安全行业的 ADR 文档，连\"哪里没测过\"都标得清清楚楚，这种坦诚在开源世界里值钱。\n**给你的分场景行动建议**：\n- **如果你是中小企业的安全负责人**：拿一台 16GB 内存的测试机，`make up` + `make smoke` 跑通，然后 `Load sample data` 演练一遍五套场景，**一小时内你就能判断它能不能替代你们现在手工翻告警的流程**。\n- **如果你是 MSSP 或已经在用 Splunk / Sentinel**：先用 `packages/aisoc-migrate` 把现有的 SPL/KQL 规则搬进来试试翻译率，再评估它作为\"上层 AI 分诊层\"而非 SIEM 替代品的可行性。\n- **如果你是 AI Agent 工程师**：直接去读 `services/agents/` 目录下关于 Investigation Ledger 和 Grounding 校验的实现，**这是一份可以照抄到任何垂直领域 Agent 工程里的\"生产级参考答案\"**。\n- **如果你只是好奇 MCP 怎么和真实业务系统结合**：装好后在 Claude Desktop / Cursor 里配 `@aisoc/mcp`，13 个工具够你玩一周。\n- **如果你期待的是\"一条命令替代 Splunk\"或\"AI 帮我自动抓黑客\"**：**跳过它**——这不是它的赛道，商业 MDR / XDR 更适合你。\n**一句话终极评判**：**AiSOC 把\"AI SOC\"从营销 PPT 拉回到了可部署、可审计、可复现的工程现实里**。它不是终点，但它给整个行业树立了一个\"AI 决策必须可回放\"的标杆。这个标杆本身，已经值得你花一个周末把代码 clone 下来跑一遍。",
+  "type": "project",
+  "dateAdded": "20261101"
+}
