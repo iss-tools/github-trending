@@ -90981,8 +90981,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 107786,
-      "forks": 9460,
+      "stars": 107834,
+      "forks": 9462,
       "starsAdded": 1723,
       "createdAt": "2026-10-31T16:00:02.006Z",
       "metaData": {
@@ -91054,9 +91054,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 98208,
-      "forks": 5792,
-      "starsAdded": 1339,
+      "stars": 98249,
+      "forks": 5793,
+      "starsAdded": 1338,
       "createdAt": "2026-10-31T16:00:02.042Z",
       "metaData": {
         "forks": "0",
@@ -91113,9 +91113,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 9545,
-      "forks": 1323,
-      "starsAdded": 1304,
+      "stars": 9588,
+      "forks": 1326,
+      "starsAdded": 1303,
       "createdAt": "2026-10-31T16:00:02.038Z",
       "metaData": {
         "forks": "0",
@@ -91179,8 +91179,8 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 35384,
-      "forks": 8773,
+      "stars": 35500,
+      "forks": 8778,
       "starsAdded": 1148,
       "createdAt": "2026-10-31T16:00:02.027Z",
       "metaData": {
@@ -91225,6 +91225,70 @@
       }
     },
     {
+      "id": "f54197d8-6c5e-4cb9-8e44-ce0c985a41cf",
+      "dateAdded": "20261101",
+      "type": "github-daily",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 12256,
+      "forks": 2409,
+      "starsAdded": 1092,
+      "createdAt": "2026-10-31T16:00:02.031Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ouranic.cn/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
       "id": "32360880-8bbc-4681-9ac9-bfc10056229c",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -91232,9 +91296,9 @@
       "repo": "Orkas-AI/Orkas",
       "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
       "language": "JavaScript",
-      "stars": 6104,
+      "stars": 6125,
       "forks": 369,
-      "starsAdded": 1118,
+      "starsAdded": 1044,
       "createdAt": "2026-10-31T16:00:02.054Z",
       "metaData": {
         "forks": "0",
@@ -91299,70 +91363,6 @@
       }
     },
     {
-      "id": "f54197d8-6c5e-4cb9-8e44-ce0c985a41cf",
-      "dateAdded": "20261101",
-      "type": "github-daily",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "repo": "Renhuai123/ziwei-doushu",
-      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-      "language": "TypeScript",
-      "stars": 12241,
-      "forks": 2407,
-      "starsAdded": 1093,
-      "createdAt": "2026-10-31T16:00:02.031Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bazi",
-          "chinese-astrology",
-          "divination",
-          "fortune-telling",
-          "nextjs",
-          "open-source",
-          "purple-star-astrology",
-          "typescript",
-          "zi-wei-dou-shu",
-          "ziwei-doushu"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ouranic.cn/?from=gh-about",
-        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
-      },
-      "summaryData": {
-        "tags": [
-          "紫微斗数",
-          "开源项目",
-          "AI训练数据",
-          "Next.js",
-          "排盘引擎"
-        ],
-        "cover": "",
-        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
-        "ability": [
-          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
-          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
-          "三部紫微斗数古籍全文数字化与在线阅读器",
-          "完整可一键部署的Next.js排盘网站前端",
-          "马云、乔布斯等名人命盘样本库供对照学习"
-        ],
-        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
-        "category": [
-          "开发工具",
-          "AI 数据集",
-          "传统文化"
-        ],
-        "suitable": [
-          "想微调命理垂直小模型的AI开发者",
-          "紫微斗数研究者与命理老师",
-          "需要现成产品原型的前端/全栈开发者",
-          "紫微斗数初学者",
-          "命理类内容创作者"
-        ],
-        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
-      }
-    },
-    {
       "id": "fc9f6a9b-f39e-4c96-9d72-45d11bc31553",
       "dateAdded": "20261101",
       "type": "github-daily",
@@ -91370,9 +91370,9 @@
       "repo": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 52755,
-      "forks": 6459,
-      "starsAdded": 1035,
+      "stars": 52783,
+      "forks": 6461,
+      "starsAdded": 1034,
       "createdAt": "2026-10-31T16:00:02.051Z",
       "metaData": {
         "forks": "0",
@@ -91433,8 +91433,8 @@
       "repo": "lightpanda-io/browser",
       "description": "Lightpanda: the headless browser designed for AI and automation",
       "language": "Zig",
-      "stars": 39194,
-      "forks": 1905,
+      "stars": 39230,
+      "forks": 1906,
       "starsAdded": 929,
       "createdAt": "2026-10-31T16:00:02.048Z",
       "metaData": {
@@ -91495,9 +91495,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 308324,
-      "forks": 25942,
-      "starsAdded": 882,
+      "stars": 308352,
+      "forks": 25943,
+      "starsAdded": 883,
       "createdAt": "2026-10-31T16:00:02.019Z",
       "metaData": {
         "forks": "0",
@@ -91546,9 +91546,9 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 31119,
+      "stars": 31146,
       "forks": 4264,
-      "starsAdded": 724,
+      "starsAdded": 742,
       "createdAt": "2026-10-31T16:00:02.022Z",
       "metaData": {
         "forks": "0",
@@ -91612,9 +91612,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 310028,
-      "forks": 27578,
-      "starsAdded": 663,
+      "stars": 310044,
+      "forks": 27582,
+      "starsAdded": 665,
       "createdAt": "2026-10-31T16:00:02.046Z",
       "metaData": {
         "forks": "0",
@@ -91674,9 +91674,9 @@
       "repo": "vorssaint/vorssaint-utils",
       "description": "Free and open-source macOS menu bar toolkit.",
       "language": "Swift",
-      "stars": 31866,
+      "stars": 31885,
       "forks": 1537,
-      "starsAdded": 499,
+      "starsAdded": 501,
       "createdAt": "2026-10-31T16:00:02.064Z",
       "metaData": {
         "forks": "0",
@@ -91743,9 +91743,9 @@
       "repo": "bregman-arie/devops-exercises",
       "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions",
       "language": "Python",
-      "stars": 85944,
-      "forks": 20542,
-      "starsAdded": 341,
+      "stars": 85967,
+      "forks": 20544,
+      "starsAdded": 342,
       "createdAt": "2026-10-31T16:00:02.062Z",
       "metaData": {
         "forks": "0",
@@ -91796,9 +91796,9 @@
       "repo": "THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "stars": 42166,
+      "stars": 42174,
       "forks": 6511,
-      "starsAdded": 115,
+      "starsAdded": 116,
       "createdAt": "2026-10-31T16:00:02.056Z",
       "metaData": {
         "forks": "0",
