@@ -24111,59 +24111,6 @@
   ],
   "202645": [
     {
-      "id": "a09619ba-2037-4114-a1f6-c5ef5eb43475",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 44771,
-      "forks": 2374,
-      "starsAdded": 12062,
-      "createdAt": "2026-11-01T18:00:04.376Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
-        ],
-        "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
-        "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
-        ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
-        ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
-      }
-    },
-    {
       "id": "5c25a561-2a95-4639-9d77-73709bcfc672",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24171,9 +24118,9 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 99249,
-      "forks": 5866,
-      "starsAdded": 12031,
+      "stars": 99294,
+      "forks": 5871,
+      "starsAdded": 12017,
       "createdAt": "2026-11-01T18:00:04.387Z",
       "metaData": {
         "forks": "0",
@@ -24223,6 +24170,59 @@
       }
     },
     {
+      "id": "a09619ba-2037-4114-a1f6-c5ef5eb43475",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 44849,
+      "forks": 2383,
+      "starsAdded": 11566,
+      "createdAt": "2026-11-01T18:00:04.376Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
       "id": "4a57a2a8-f2b5-4e82-8929-5edd6b14607a",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24230,9 +24230,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 56291,
-      "forks": 3670,
-      "starsAdded": 11908,
+      "stars": 56347,
+      "forks": 3673,
+      "starsAdded": 10069,
       "createdAt": "2026-11-01T18:00:04.463Z",
       "metaData": {
         "forks": "0",
@@ -24275,6 +24275,59 @@
       }
     },
     {
+      "id": "05849113-2b0a-4359-8d05-4142cfa5a827",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 37911,
+      "forks": 8910,
+      "starsAdded": 6926,
+      "createdAt": "2026-11-01T18:00:04.507Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
       "id": "6cb57520-4327-4383-877e-be06ac138ecc",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24282,9 +24335,9 @@
       "repo": "YuJunZhiXue/dsh-purge",
       "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
       "language": "JavaScript",
-      "stars": 15319,
-      "forks": 3519,
-      "starsAdded": 6641,
+      "stars": 15332,
+      "forks": 3520,
+      "starsAdded": 6644,
       "createdAt": "2026-11-01T18:00:04.526Z",
       "metaData": {
         "forks": "0",
@@ -24342,9 +24395,9 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 294744,
-      "forks": 43630,
-      "starsAdded": 6380,
+      "stars": 294788,
+      "forks": 43635,
+      "starsAdded": 6299,
       "createdAt": "2026-11-01T18:00:04.523Z",
       "metaData": {
         "forks": "0",
@@ -24396,73 +24449,6 @@
       }
     },
     {
-      "id": "f67612fa-ea43-4984-b663-6e4d136ebccc",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/JetBrains/thinkrail",
-      "repo": "JetBrains/thinkrail",
-      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-      "language": "TypeScript",
-      "stars": 6952,
-      "forks": 391,
-      "starsAdded": 5738,
-      "createdAt": "2026-11-01T18:00:04.503Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "agentic-ai",
-          "agentic-workflow",
-          "ai-coding",
-          "ai-tools",
-          "pi-agent",
-          "pi-agent-extension",
-          "spec-driven",
-          "spec-driven-coding",
-          "spec-driven-development",
-          "vibe-coding",
-          "vibecoding"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://thinkrail.ai/",
-        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
-      },
-      "summaryData": {
-        "tags": [
-          "JetBrains",
-          "AI IDE",
-          "多智能体",
-          "Git Worktree",
-          "开源"
-        ],
-        "cover": "",
-        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
-        "ability": [
-          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
-          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
-          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
-          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
-          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
-        ],
-        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "需要同时跑多个 AI Agent 干活的重度开发者",
-          "长期维护大型代码仓库的工程师",
-          "注重隐私、想自托管或内网使用的用户",
-          "想研究 AI IDE 架构的技术爱好者",
-          "已有的 pi 生态用户"
-        ],
-        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
-      }
-    },
-    {
       "id": "c761a558-d638-4284-8bc1-84c5b0690de5",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24470,9 +24456,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 310587,
-      "forks": 27646,
-      "starsAdded": 5636,
+      "stars": 310623,
+      "forks": 27648,
+      "starsAdded": 5896,
       "createdAt": "2026-11-01T18:00:04.489Z",
       "metaData": {
         "forks": "0",
@@ -24525,191 +24511,6 @@
       }
     },
     {
-      "id": "56445418-8e1a-4294-8ed8-f331fdc17258",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "repo": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "stars": 119485,
-      "forks": 22860,
-      "starsAdded": 5483,
-      "createdAt": "2026-11-01T18:00:04.516Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "finance",
-          "llm",
-          "multiagent",
-          "trading"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://arxiv.org/pdf/2412.20138",
-        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "量化交易",
-          "LangGraph",
-          "智能体",
-          "Python"
-        ],
-        "cover": "",
-        "title": "TradingAgents 深度评测",
-        "ability": [
-          "多智能体协作分析",
-          "全方位市场数据处理",
-          "投资逻辑辩论与风控",
-          "LangGraph 高度可定制",
-          "支持多模型与本地部署"
-        ],
-        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
-        "category": [
-          "金融科技",
-          "人工智能",
-          "开发者工具"
-        ],
-        "suitable": [
-          "量化研究人员",
-          "AI 应用开发者",
-          "个人投资者",
-          "金融专业学生",
-          "金融机构技术团队"
-        ],
-        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
-      }
-    },
-    {
-      "id": "a4904c69-4bfd-4bf5-bbfa-45c7322c1f5a",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "repo": "Leonxlnx/taste-skill",
-      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-      "language": "JavaScript",
-      "stars": 107705,
-      "forks": 7277,
-      "starsAdded": 4975,
-      "createdAt": "2026-11-01T18:00:04.519Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "anti-slop",
-          "claude-code",
-          "codex",
-          "cursor",
-          "design-system",
-          "frontend",
-          "landing-page",
-          "ui-design",
-          "web-design"
-        ],
-        "license": "MIT license",
-        "homepage": "https://tasteskill.dev",
-        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "Agent Skill",
-          "UI 设计",
-          "反 AI 味",
-          "开源工具"
-        ],
-        "cover": "",
-        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
-        "ability": [
-          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
-          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
-          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
-          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
-          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
-        ],
-        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
-        "category": [
-          "开源项目",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "独立开发者和创业者：不请设计师也能做出非模板感官网",
-          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
-          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
-          "自由职业设计师：想把个人设计规则产品化交付",
-          "想做个人品牌或作品集的非技术人员"
-        ],
-        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
-      }
-    },
-    {
-      "id": "9fc2565f-9c5e-4cb7-ab94-d8dd27807a20",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/AgriciDaniel/claude-seo",
-      "repo": "AgriciDaniel/claude-seo",
-      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-      "language": "Python",
-      "stars": 25485,
-      "forks": 3353,
-      "starsAdded": 4814,
-      "createdAt": "2026-11-01T18:00:04.413Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-seo",
-          "claude-code",
-          "claude-code-skill",
-          "marketing-automation",
-          "open-source",
-          "seo"
-        ],
-        "license": "MIT license",
-        "homepage": "https://skool.com/ai-marketing-hub-pro",
-        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "SEO 审计",
-          "开源项目",
-          "AI Agent",
-          "GEO/AEO"
-        ],
-        "cover": "",
-        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
-        "ability": [
-          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
-          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
-          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
-          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
-          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
-        ],
-        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "SEO 营销"
-        ],
-        "suitable": [
-          "管理多个客户站点的 SEO Agency 从业者",
-          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
-          "独立 SEO 顾问（用于现场谈单和交付）",
-          "已有 Claude Code 订阅的独立开发者",
-          "想做 GEO/AEO 优化的内容创作者"
-        ],
-        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
-      }
-    },
-    {
       "id": "d00d38fa-a39e-42e9-bad1-32248273252a",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24717,9 +24518,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 109108,
-      "forks": 9554,
-      "starsAdded": 4575,
+      "stars": 109209,
+      "forks": 9563,
+      "starsAdded": 5852,
       "createdAt": "2026-11-01T18:00:04.434Z",
       "metaData": {
         "forks": "0",
@@ -24783,6 +24584,258 @@
       }
     },
     {
+      "id": "f67612fa-ea43-4984-b663-6e4d136ebccc",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "repo": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 6964,
+      "forks": 391,
+      "starsAdded": 5760,
+      "createdAt": "2026-11-01T18:00:04.503Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://thinkrail.ai/",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need - JetBrains/thinkrail"
+      },
+      "summaryData": {
+        "tags": [
+          "JetBrains",
+          "AI IDE",
+          "多智能体",
+          "Git Worktree",
+          "开源"
+        ],
+        "cover": "",
+        "title": "JetBrains ThinkRail 深度评测：为多智能体并行而生的开源 AI IDE",
+        "ability": [
+          "Git Worktree 沙箱隔离，支持多智能体并行开发互不干扰",
+          "Spec Graph 用 Markdown 沉淀项目上下文，Agent 可自主检索维护",
+          "桌面安装包 + CLI 浏览器双形态，支持手机/远程设备访问本地 Agent",
+          "内置 pi 引擎，支持 15+ 模型供应商（Anthropic/OpenAI/Ollama 等）自由切换",
+          "Apache-2.0 完全开源免费，BYOM 模式数据不出本机"
+        ],
+        "summary": "JetBrains 开源的 Agentic IDE，用 Git Worktree 隔离多智能体并行干活，用 Spec Graph 给项目装上'记忆地图'。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "需要同时跑多个 AI Agent 干活的重度开发者",
+          "长期维护大型代码仓库的工程师",
+          "注重隐私、想自托管或内网使用的用户",
+          "想研究 AI IDE 架构的技术爱好者",
+          "已有的 pi 生态用户"
+        ],
+        "description": "ThinkRail 是 JetBrains InnovationHub 孵化的开源 AI 智能体 IDE（Apache-2.0 协议），底层基于当红的 pi 编码引擎。它以'智能体优先'为核心理念：每个智能体拥有独立的 Git Worktree 沙箱，可并行开发互不污染；Spec Graph 用结构化 Markdown 为项目沉淀'活地图'式上下文，告别每次会话从零喂背景。支持桌面与浏览器两种形态，手机也能远程操控本地 Agent。但对 Intel Mac、IntelliJ 深度依赖者不够友好，Spec-first 流程也有学习成本。"
+      }
+    },
+    {
+      "id": "56445418-8e1a-4294-8ed8-f331fdc17258",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "repo": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 119517,
+      "forks": 22868,
+      "starsAdded": 5432,
+      "createdAt": "2026-11-01T18:00:04.516Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://arxiv.org/pdf/2412.20138",
+        "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework - TauricResearch/TradingAgents"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "量化交易",
+          "LangGraph",
+          "智能体",
+          "Python"
+        ],
+        "cover": "",
+        "title": "TradingAgents 深度评测",
+        "ability": [
+          "多智能体协作分析",
+          "全方位市场数据处理",
+          "投资逻辑辩论与风控",
+          "LangGraph 高度可定制",
+          "支持多模型与本地部署"
+        ],
+        "summary": "基于多智能体架构的 AI 金融交易研究框架，模拟交易团队协作，提供深度市场分析与决策支持。",
+        "category": [
+          "金融科技",
+          "人工智能",
+          "开发者工具"
+        ],
+        "suitable": [
+          "量化研究人员",
+          "AI 应用开发者",
+          "个人投资者",
+          "金融专业学生",
+          "金融机构技术团队"
+        ],
+        "description": "TradingAgents 是一个创新的多智能体 LLM 交易框架，通过模拟基本面、技术面、情绪面分析师及辩论团队的协作流程，生成可解释的投资决策报告。它适合深度研究和辅助决策，非自动化赚钱工具。"
+      }
+    },
+    {
+      "id": "a4904c69-4bfd-4bf5-bbfa-45c7322c1f5a",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "repo": "Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "language": "JavaScript",
+      "stars": 107759,
+      "forks": 7279,
+      "starsAdded": 5336,
+      "createdAt": "2026-11-01T18:00:04.519Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "anti-slop",
+          "claude-code",
+          "codex",
+          "cursor",
+          "design-system",
+          "frontend",
+          "landing-page",
+          "ui-design",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tasteskill.dev",
+        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Agent Skill",
+          "UI 设计",
+          "反 AI 味",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
+        "ability": [
+          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
+          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
+          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
+          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
+          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
+        ],
+        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
+        "category": [
+          "开源项目",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "独立开发者和创业者：不请设计师也能做出非模板感官网",
+          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
+          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
+          "自由职业设计师：想把个人设计规则产品化交付",
+          "想做个人品牌或作品集的非技术人员"
+        ],
+        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
+      }
+    },
+    {
+      "id": "9fc2565f-9c5e-4cb7-ab94-d8dd27807a20",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 25520,
+      "forks": 3357,
+      "starsAdded": 5034,
+      "createdAt": "2026-11-01T18:00:04.413Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skool.com/ai-marketing-hub-pro",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data. - AgriciDaniel/claude-seo"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "SEO 审计",
+          "开源项目",
+          "AI Agent",
+          "GEO/AEO"
+        ],
+        "cover": "",
+        "title": "claude-seo 深度评测：把 SEO 团队装进 Claude Code 的开源 Agent 体系",
+        "ability": [
+          "一条 /seo audit 命令调度最多 15 个专家 Agent 并行完成全站 SEO 审计",
+          "基于 Google 一手源评估 E-E-A-T 内容质量与 AI 搜索（GEO/AEO）可引用性",
+          "Schema JSON-LD 检测、校验与生成，能发现页面内容与结构化数据的语义矛盾",
+          "每条建议带可证伪检查、依赖关系和可监控的领先指标",
+          "通过 MCP 集成 Ahrefs、DataForSEO、Profound 等扩展，本地 Markdown/PDF/JSON 报告输出"
+        ],
+        "summary": "一个把整支 SEO 审计团队塞进 Claude Code 的开源插件，一条命令 10-15 分钟完成原本数小时的外包级网站审计。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "SEO 营销"
+        ],
+        "suitable": [
+          "管理多个客户站点的 SEO Agency 从业者",
+          "SaaS / 电商 / 出版平台的内部 SEO 负责人",
+          "独立 SEO 顾问（用于现场谈单和交付）",
+          "已有 Claude Code 订阅的独立开发者",
+          "想做 GEO/AEO 优化的内容创作者"
+        ],
+        "description": "claude-seo 是 GitHub 上约 17k Star 的开源项目（MIT 协议），包含 25 个子技能、18 个专家 Agent 和 32 个斜杠命令。它把 Google 官方质量评估指南和 AI 优化指南写进规则，用多 Agent 并行的方式替代传统人工审计和付费工具，单次审计 10-15 分钟，输出带优先级、可证伪的行动方案。需配合 Claude Code 订阅使用，部分功能依赖 Google API 凭据。"
+      }
+    },
+    {
       "id": "0da1c98e-aad9-4056-a65e-b2fe02dcbd80",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24790,9 +24843,9 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
-      "stars": 227952,
-      "forks": 22737,
-      "starsAdded": 4277,
+      "stars": 227981,
+      "forks": 22742,
+      "starsAdded": 4459,
       "createdAt": "2026-11-01T18:00:04.510Z",
       "metaData": {
         "forks": "0",
@@ -24834,59 +24887,6 @@
       }
     },
     {
-      "id": "05849113-2b0a-4359-8d05-4142cfa5a827",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/pingdotgg/t3code",
-      "repo": "pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 37706,
-      "forks": 8896,
-      "starsAdded": 3718,
-      "createdAt": "2026-11-01T18:00:04.507Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://t3.codes",
-        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "GitHub",
-          "TypeScript",
-          "开发者工具",
-          "代码审查"
-        ],
-        "cover": "",
-        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
-        "ability": [
-          "多代理统一控制",
-          "线程化会话管理",
-          "代码差异实时审查",
-          "深度 Git 集成",
-          "代码本地化存储"
-        ],
-        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "多 AI 编程工具重度用户",
-          "团队开发与代码审查者",
-          "注重数据安全的开发者",
-          "追求极致开发体验者",
-          "AI 编程初学者"
-        ],
-        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
-      }
-    },
-    {
       "id": "c0b2e5a6-f8f1-47dc-982b-84fed82a67e3",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24894,9 +24894,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 186326,
-      "forks": 22013,
-      "starsAdded": 2389,
+      "stars": 186356,
+      "forks": 22020,
+      "starsAdded": 2600,
       "createdAt": "2026-11-01T18:00:04.521Z",
       "metaData": {
         "forks": "0",
@@ -24949,9 +24949,9 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 10033,
+      "stars": 10064,
       "forks": 391,
-      "starsAdded": 1272,
+      "starsAdded": 1607,
       "createdAt": "2026-11-01T18:00:04.513Z",
       "metaData": {
         "forks": "0",
@@ -25002,9 +25002,9 @@
       "repo": "ghostty-org/ghostty",
       "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
       "language": "Zig",
-      "stars": 63170,
-      "forks": 3815,
-      "starsAdded": 556,
+      "stars": 63175,
+      "forks": 3817,
+      "starsAdded": 589,
       "createdAt": "2026-11-01T18:00:04.528Z",
       "metaData": {
         "forks": "0",
