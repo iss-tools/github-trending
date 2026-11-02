@@ -1,0 +1,163 @@
+# vercel-labs/agent-desktop
+
+[GitHub URL](https://github.com/vercel-labs/agent-desktop)
+
+
+## agent-desktop 深度评测：让 AI Agent 像操作 DOM 一样操控电脑桌面
+
+> Vercel 开源的 Rust CLI 工具，让 AI Agent 无需截图、直接读取系统无障碍树来精准操控 macOS/Windows/Linux 桌面应用。
+
+- **Tags**: AI Agent, Computer Use, 开源项目, 桌面自动化, Vercel
+- **Category**: 开发工具, AI 编程, 自动化
+
+## Details
+
+# agent-desktop 深度评测：让 AI Agent 真正"长出手"的开源方案
+> **一句话总结**：agent-desktop 是 Vercel Labs 于 2026 年 10 月底开源的 Rust CLI + C 库，让任意编码 Agent 通过操作系统"无障碍树"（Accessibility Tree）原生操控 macOS / Windows / Linux 桌面应用——它不是又一个"看截图猜坐标"的 Computer Use，而是把桌面 UI 变成一份**结构化、可定位、可验证**的 JSON，模型无需视觉也能精准点击与输入。
+---
+## 一、背景与痛点：为什么"截图流"已经不够用了
+过去一年，Anthropic 的 Computer Use、OpenAI 的 Operator/CLUA 都走的是**视觉派路线**：截屏 → 视觉模型定位按钮 → 返回像素坐标 → 模拟点击。这条路有三个结构性痛点：
+1. **Token 成本爆炸**：Anthropic 官方文档承认，每张截图约消耗 1,000–1,800 输入 token，再加上约 4,500 token 的工具定义，一次长任务的账单非常可观。
+2. **像素坐标脆弱**：UI 缩放、DPI、窗口位置一变，同一组 (x, y) 立刻失效，Agent 会"点错按钮"。
+3. **无法后台运行**：模拟点击需要抢焦点、移动真实鼠标，Agent 工作时你就不能干活。
+与此同时，**视觉派的本职工具其实早就存在**——屏幕阅读器（VoiceOver、NVDA）读取的"无障碍树"。这棵树由操作系统原生维护，每个控件都有 role、name、value 和稳定句柄。agent-desktop 的核心洞察就是：**与其让模型"看"，不如让模型"读"**。
+项目由开发者 Lahfir 于 2026 年 2 月启动，10 月被 Vercel Labs 收编并由 Chris Tate（也是知名项目 agent-browser 的作者）正式发布，定位口号是 **"agent-browser，for your whole computer"**——即"agent-browser 管浏览器，agent-desktop 管剩下的整个桌面"。 项目首发即突破 5,000 star，与其姊妹项目 agent-browser（43.9k star）共同构成了 Vercel 的"Agent 工具双子星"。
+---
+## 二、核心亮点与架构剖析：Refs、Skeleton、Headless
+### 2.1 Ref 引用机制：像 DOM 选择器一样操作桌面
+agent-desktop 的灵魂是 **Ref 系统**。每次 `snapshot` 命令会返回一棵带句柄的 UI 树，每个可交互元素都被分配一个形如 `@s8f3k2p9:e8` 的引用——前半段是快照 ID，后半段是元素 ID。
+```json
+{
+  "command": "snapshot",
+  "data": {
+    "app": "Finder",
+    "snapshot_id": "s8f3k2p9",
+    "ref_count": 59,
+    "tree": {
+      "role": "window",
+      "name": "Downloads",
+      "children": [
+        { "role": "treeitem", "name": "Documents",
+          "ref_id": "@s8f3k2p9:e8",
+          "available_actions": ["Click"] }
+      ]
+    }
+  }
+}
+```
+这个设计极其聪明，把"桌面"彻底当成了"网页 DOM"来处理：
+- **Ref 与快照绑定**：裸 `@e8` 会被 `INVALID_ARGS` 拒绝，强制 Agent 携带快照上下文，避免"上一步的句柄命中下一步的新元素"——这是把 Playwright "ElementHandle Stale" 的教训移植到了桌面端。
+- **失败语义显式**：UI 一变，操作立刻返回 `STALE_REF` 或 `AMBIGUOUS_TARGET`，并且每个 error 都带 `disposition` 字段，**明确告诉 Agent 哪些错误可以重试、哪些必须重新观察**——而不是闭眼硬干。
+- **自描述 JSON envelope**：每条命令统一返回 `{ok, data | error}` 包络，Agent 不需要解析多变的输出格式。
+> **通俗比喻**：传统 Computer Use 像是闭着眼凭照片摸按钮，agent-desktop 像是给每个按钮贴了二维码——扫码即点，而且二维码带时间戳，过期就作废。
+### 2.2 Skeleton + Drill-down：把 3,811 token 压到 273
+面对 Slack、VS Code 这类动辄上千节点的复杂应用，agent-desktop 提供两段式读取：
+```bash
+agent-desktop snapshot --app Slack --skeleton -i --compact   # 只读 3 层深
+agent-desktop snapshot --root @s8f3k2p9:e3 -i --compact      # 按需下钻一个区域
+```
+被截断的容器会标记 `children_count` 并给出"下钻 ref"，Agent 只读自己关心的那一支。作者自报的实测数据：Apple Maps 单次观察从 3,811 token 降到 273；模拟的 52 步任务从 198k token 降到 31k——**78%~96% 的 token 节省**（注意是自报数据，尚无独立 benchmark）。
+### 2.3 Headless by Default：Agent 与你并行工作
+所有 ref 操作走无障碍 API，**默认不动真实鼠标、不抢焦点**——Agent 在后台把 Notion 写完、把 Excel 算完，你那边键盘照常用。需要真实物理输入（如某些游戏、手写签名）时再加 `--headed`。多 Agent 并行时，每个子 Agent 还能拿到**一个独立颜色的虚拟光标 overlay**，避免多 Agent 视觉混淆。
+### 2.4 架构：教科书级的 Rust 平台适配器模式
+```
+┌──────────────────────────────┐
+│  你的 Agent (Claude Code 等)  │
+└──────────┬───────────────────┘
+           │ shell / FFI
+┌──────────▼───────────────────┐
+│  agent-desktop CLI / C lib   │  ← 同一二进制，编译时绑定平台
+├──────────────────────────────┤
+│  agent-desktop-core          │  ← PlatformAdapter trait（核心隔离）
+├──────────┬─────────┬─────────┤
+│ -macos   │ -windows│ -linux  │  ← 各自适配 AX / UIA / AT-SPI
+└──────────┴─────────┴─────────┘
+```
+关键工程约束：core 永不 import 平台 crate、平台 crate 互不依赖、每个平台只编译自己的二进制；Rust 文件强制 ≤400 行、MSRV 锁定 1.89、二进制 ≤15MB，CI 含 CodeQL、cargo-deny、secret scanning。 这种"严苛到近乎偏执"的工程规范，让它在 1.0 阶段就拥有工业级可靠性——罕见地在 CONTRIBUTING.md 里写明"禁止在源码里留交付计划引用"。
+### 2.5 命令面：56 个操作命令覆盖桌面全场景
+| 类别 | 命令示例 |
+|---|---|
+| 观察 | `snapshot` `find` `get` `is` `screenshot` `list-surfaces` |
+| Ref 操作 | `click` `type` `set-value` `select` `toggle` `expand` `scroll-to` 等 16 个 |
+| 键鼠 | `press` `hover` `drag` `mouse-move` `mouse-wheel` |
+| 窗口/应用 | `launch` `focus-window` `resize-window` `minimize` `open-system-surface` |
+| 通知/剪贴板 | `list-notifications` `clipboard-get/set/clear` |
+| Agent 自描述 | `skills get desktop` `skills get platform` |
+最妙的是 `agent-desktop skills get desktop`——**工具自带面向 Agent 的使用手册**，Agent 第一次调用时会读到自己该按什么流程、如何校验、何时重试。这种"self-describing tool"的设计哲学与 Anthropic 的 Agent Skills 标准高度契合。
+---
+## 三、快速上手：三条命令跑通 macOS Finder
+```bash
+# 安装（npm / pnpm / bun 均可）
+npm install -g agent-desktop
+# macOS 需授权辅助功能
+agent-desktop permissions --guide
+# 完整的 observe → act → verify 循环
+agent-desktop snapshot --app Finder -i                  # 1. 看见：拿到 ref
+agent-desktop click @s8f3k2p9:e8                        # 2. 行动：点那个 ref
+agent-desktop snapshot --app Finder -i                  # 3. 校验：再 snapshot 一次
+```
+把它接到任意编码 Agent 上只需在 `AGENTS.md` 里加一段：
+```markdown
+Use `agent-desktop` to see and operate desktop apps. Before the first use, run
+`agent-desktop skills get desktop` and `agent-desktop skills get platform`, and follow them.
+```
+或通过 `npx skills add https://github.com/vercel-labs/agent-desktop --skill agent-desktop` 一键安装为 Agent Skill。
+Linux 上 Python 调用 C FFI 的示例也极简：
+```python
+import ctypes
+lib = ctypes.CDLL("./lib/libagent_desktop_ffi.dylib")
+lib.ad_adapter_create.restype = ctypes.c_void_p
+assert lib.ad_init(6) == 0                      # AD_RESULT_OK
+adapter = lib.ad_adapter_create()
+lib.ad_adapter_destroy(adapter)
+```
+---
+## 四、目标人群与典型场景
+**最适合的三类人**：
+1. **构建桌面 Agent 工作流的开发者**——想把 Claude Code、Codex、Cursor Agent 接到本地 Office、IDE、财务软件上的工程师。agent-desktop 是模型中立的：Claude、GPT、DeepSeek、Qwen 都能调用，不锁供应商。
+2. **RPA / 自动化测试工程师**——传统 RPA（UiPath、Power Automate）成本高、脚本脆，agent-desktop 用 LLM + Ref 系统写出"自适应脚本"，特别适合版本频繁迭代的企业内网应用。
+3. **无障碍/辅助技术从业者**——它的能力底层就是屏幕阅读器那一套，能反向为无障碍适配调试提供工具。
+**典型场景举例**：
+- 让 Agent 在 Excel 里粘贴一批数据、刷新数据透视表、导出 CSV，全程后台进行。
+- 让 Agent 自动打开 WhatsApp Desktop 给指定联系人发日报，下班前定时执行。
+- 多 Agent 并行：一个 Agent 改 VS Code 代码，另一个在 Safari 测试页面，第三个管 Notion 记录结果——各持一个彩色光标互不干扰。
+---
+## 五、竞品对比：在 Computer Use 版图中的位置
+| 维度 | **agent-desktop** | Claude Computer Use | OpenAI CUA | Microsoft UFO² |
+|---|---|---|---|---|
+| 形态 | CLI + C 库（工具） | API 工具集 | API 工具 | Windows 全栈 Agent 框架 |
+| 感知方式 | OS 无障碍树 | 截图（视觉） | 截图 / PyAutoGUI | UIA + 视觉混合 |
+| 内置模型 | 无（任意模型） | 仅 Claude | 仅 OpenAI | 可配置 LLM |
+| 平台 | macOS / Win / Linux | 自托管 Linux Docker | 浏览器或自托管 | 仅 Windows |
+| 抢鼠标焦点 | 否（headless 默认） | 是 | 是 | GUI + API 混合 |
+| 单次观察 token | 273（自报 skeleton） | 1,000–1,800 | 未公开 | 未公开 |
+| 协议 | Apache-2.0 | 闭源 API | 闭源 API | MIT |
+| 适合场景 | 本地原生 App 自动化 | 通用桌面操控 | 浏览器+桌面混合 | Windows 企业 Agent |
+它和 agent-browser 是**互补而非竞争**：浏览器内容 agent-browser 接管（基于 CDP），桌面原生 App 归 agent-desktop 管，二者通过 `launch --cdp` 联动——打开 Electron 应用时同时开 DevTools 端口，浏览器部分交给 agent-browser，原生部分自己处理。
+至于 MCP，agent-desktop 走的是 **CLI-as-tool** 路线而非 MCP Server：好处是任何能跑 shell 的 Agent 都能用、零依赖、单二进制；代价是没有 MCP 那种"发现/协商/权限"机制，需要靠 AGENTS.md 或 Skill 文件来教育 Agent。
+---
+## 六、局限与不足：一个刚满周岁的真实画像
+客观说，这个项目还很年轻，issue 区暴露出不少真实痛点：
+### 6.1 平台支持参差不齐
+- **macOS**：成熟度最高，但 Arc 浏览器会报 "Renderer did not enable accessibility activation"（Chrome 正常），SwiftUI ScrollView 内的控件可能被误判为 offscreen。
+- **Windows**：UWP 框架托管的顶层窗口在 `list-apps / list-windows` 中缺失；Notepad 等 SetValue-only 编辑控件在 headless 模式下被 `POLICY_DENIED` 拒绝；Windows ARM64 退出时 combase.dll 崩溃；cursor overlay 在部分机器上无法渲染。
+- **Linux**：最弱。Wayland 截图需要 portal 且分数缩放 (166.67% + 100%) 下直接拒；WebKitGTK/Tauri 应用快照只看到 webarea 没有子节点；GNOME Shell 50.1 上所有 inventory 命令报 `native_window_unproven`；Chromium 应用挂在 AT-SPI 总线上时 `list-apps` 会卡住。
+### 6.2 应用覆盖的天花板
+只支持暴露无障碍树的应用。**游戏、自绘 UI（很多 Qt 自定义渲染）、加密壳应用、视频画面内容**都读不到。网页部分完全交给 agent-browser，不做像素识别。
+### 6.3 隐私与安全的真实风险
+快照、剪贴板、截图都包含桌面真实内容——**如果把 Agent 输出直接丢到公共日志、Slack、Issue 区，等于把工作桌面截图贴到网上**。官方文档反复强调这一点。可选的 JEV helper 会把屏幕描述发送到你配置的模型供应商，这是默认关闭、且独立于 CLI 的路径，企业用户需自行审计。
+另一个隐性问题：一个能点击任意 App、读取剪贴板、发送键盘事件的工具，**等同于给 Agent 一把万能钥匙**。dev.to 上有评论员直言："Finder 里点了一次没有 diff，你永远无法审计 Agent 到底做了什么"——建议给它加" leash"：明确点名目标 App、明确任务边界、headless 优先、`--headed` 仅作兜底。
+### 6.4 工程仍偏早期
+- 43 个 open issue、67 个 PR，1.0.0 (10/27) 到 1.0.2 (10/30) 三天连发 patch，迭代很快但 API 还在打磨。
+- 0.10.0 有一次大破坏性变更：C ABI 升 major=5，移除了一堆 legacy entrypoint；ref 格式强制带 snapshot_id，旧调用方需重写。**生产环境接入要做好 API 不稳定的心理准备**。
+- Homebrew / Scoop 官方包仍在审核中，目前主流是 `npm install -g`。
+- 自报的 78–96% token 节省数据尚未有独立第三方复测，需谨慎看待。
+---
+## 七、结语与行动建议
+**agent-desktop 是 2026 年 AI Agent 桌面控制赛道最具工程诚意、最反主流的开源实现**——它没去卷"视觉模型更强"，而是绕开像素，用操作系统原生的无障碍 API 重新发明了一套"DOM 选择器 + 事务性操作"的桌面交互范式。Refs 让操作可重试、Skeleton 让成本可控、Headless 让 Agent 与你并行、自描述 Skill 让 Agent 自学使用——这四件事拼起来，构成了对 Claude / OpenAI 视觉派 Computer Use 的实质性降维打击。
+**给你的行动建议**：
+- 🟢 **如果你是 Agent 应用开发者**：立刻装一个，搭配 Claude Code 或 Codex 跑一遍 Excel / Finder / Notion 流程，你会立刻理解为什么 5k star 三天达成。把它当成你 Agent 栈里的"桌面 driver"。
+- 🟡 **如果你想上生产**：等 1.x 系列 API 稳定（建议 1.2 之后），先在受限场景（特定 App、白名单命令、headless-only）灰度，把 JEV 关掉、把日志出口审计清楚。
+- 🔴 **如果你的核心需求是**：操控游戏、自绘 UI、做图像理解任务，agent-desktop 不是答案；视觉派的 Claude Computer Use 或微软 UFO² 更合适。
+- ⚫ **Linux/Wayland 用户**：现在可以观望，等 X11/Wayland 的分数缩放、Tauri/WebKitGTK 这些 issue 关掉再上车。
+开源地址：https://github.com/vercel-labs/agent-desktop ，姊妹项目 agent-browser 在 https://github.com/vercel-labs/agent-browser —— 把这两个项目放在一起读，你会看清 Vercel 对"Agent 时代的工具长什么样"的整套判断。
