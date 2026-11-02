@@ -4202,7 +4202,7 @@
         ],
         "license": "License",
         "homepage": "",
-        "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need - ranxianglei/billion-context"
+        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
       },
       "summaryData": {
         "tags": [
@@ -4794,25 +4794,25 @@
         "stars": "0",
         "topics": [
           "agent-skills",
-          "ai-agents",
-          "binary-analysis",
+          "ai",
+          "android",
           "claude-code",
           "cli",
-          "codex",
-          "cordis",
-          "decompiler",
-          "developer-tools",
-          "dsh",
+          "cpp",
           "dsh-plugin",
-          "ghidra",
-          "hopper",
-          "llm",
+          "html",
+          "java",
+          "javascript",
+          "linux",
           "mcp",
-          "model-context-protocol",
+          "nodejs",
+          "python",
           "rea",
-          "reverse-engineering",
-          "static-analysis",
-          "touhou"
+          "react",
+          "rust",
+          "security",
+          "touhou",
+          "typescript"
         ],
         "license": "MIT license",
         "homepage": "https://rea.tools",
@@ -5210,8 +5210,8 @@
       "forks": 0,
       "createdAt": "2026-10-04T12:15:44.429Z",
       "metaData": {
-        "forks": "155",
-        "stars": "1476",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-plugin",
           "agent-skills",
@@ -5229,14 +5229,14 @@
           "codex-plugin",
           "codex-skills",
           "coding-agent",
-          "developer-tools",
           "gemini-cli",
+          "muse-plugin",
           "opencode",
           "pstack"
         ],
         "license": "MIT license",
         "homepage": "",
-        "description": "Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses. - michael-denyer/pstack-claude"
+        "description": "Claude Code, Codex, Copilot, Pi, OpenCode, Muse, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses. - michael-denyer/pstack-claude"
       },
       "summaryData": {
         "tags": [
@@ -5365,7 +5365,7 @@
           "web"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://tester.army/e2e",
+        "homepage": "https://e2e.tester.army",
         "description": "Next generation e2e testing framework for web and mobile apps. - tester-army/e2e"
       },
       "summaryData": {
