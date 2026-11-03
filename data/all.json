@@ -1,6 +1,137 @@
 {
   "all": [
     {
+      "id": "5acd606e-b71d-4e58-a13a-f22bfe1e0c6c",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "domain": "github.com",
+      "repo": "Usagi-org/ai-goofish-monitor",
+      "description": "开源闲鱼智能监控工具：Playwright 模拟真人浏览器抓取商品，多模态大模型分析图文判断值不值得买，过滤关键词陷阱与货不对板，命中即推送手机。提供完整 Web 后台与 Docker 一键部署，但需注意闲鱼账号风控、登录态维护与 AI 调用成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-03T12:10:53.114Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-assistant",
+          "ai-tools",
+          "automation",
+          "gemini",
+          "goofish",
+          "open-source",
+          "openai",
+          "playwright",
+          "tool",
+          "xian-yu",
+          "xianyu",
+          "xianyu-bot"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 - Usagi-org/ai-goofish-monitor"
+      },
+      "summaryData": {
+        "tags": [
+          "闲鱼监控",
+          "Playwright",
+          "多模态大模型",
+          "开源项目",
+          "捡漏神器"
+        ],
+        "cover": "",
+        "title": "ai-goofish-monitor 深度评测：AI 视觉驱动的闲鱼自动监控捡漏神器",
+        "ability": [
+          "Playwright 模拟真人浏览器抓取闲鱼商品，支持代理池与多账号轮换",
+          "多模态大模型分析商品图文，精准过滤关键词陷阱与货不对板",
+          "自然语言一句话创建监控任务，自动生成 AI 分析标准",
+          "Web 可视化管理后台，任务/账号/日志/Prompt 一站式管理",
+          "多渠道推送（Telegram、企业微信、Bark 等）+ Cron 定时调度 + Docker 一键部署"
+        ],
+        "summary": "用 Playwright 模拟真人逛闲鱼，再让多模态大模型替你判断商品值不值得买，命中即推送到手机。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "生活效率"
+        ],
+        "suitable": [
+          "二手数码捡漏玩家",
+          "限量球鞋、潮玩、收藏品蹲守党",
+          "二手商家与倒卖从业者",
+          "想学 Playwright + AI 工程化的开发者",
+          "需要跨城市比价的买家"
+        ],
+        "description": "开源闲鱼智能监控工具：Playwright 模拟真人浏览器抓取商品，多模态大模型分析图文判断值不值得买，过滤关键词陷阱与货不对板，命中即推送手机。提供完整 Web 后台与 Docker 一键部署，但需注意闲鱼账号风控、登录态维护与 AI 调用成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261103"
+    },
+    {
+      "id": "297343b4-3061-4ef0-8c30-4dc7835848e7",
+      "url": "https://github.com/floci-io/floci",
+      "domain": "github.com",
+      "repo": "floci-io/floci",
+      "description": "Floci 是 2026 年 3 月 LocalStack Community 停更后迅速崛起的开源 AWS 本地仿真器。它以 24 毫秒启动、13MB 内存著称，采用「进程内模拟 + 真 Docker」分层架构：SQS、S3 等轻量服务毫秒级响应，RDS、EKS、Lambda 等则拉起真实容器保证保真度。它免费开放了 LocalStack Pro 才有的 Cognito、API Gateway v2 等能力，但 Bedrock 等 AI 服务仅为 stub，IAM 校验默认宽松，需注意适用边界。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-03T12:06:59.576Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "aws",
+          "aws-emulation",
+          "devops",
+          "docker",
+          "ec2",
+          "ecs",
+          "localstack",
+          "s3",
+          "sqs",
+          "testcontainers"
+        ],
+        "license": "MIT license",
+        "homepage": "https://floci.io/floci/",
+        "description": "Light, fluffy, and always free - The AWS Local Emulator alternative - floci-io/floci"
+      },
+      "summaryData": {
+        "tags": [
+          "AWS",
+          "本地仿真",
+          "开源项目",
+          "测试工具",
+          "LocalStack替代"
+        ],
+        "cover": "",
+        "title": "Floci 深度评测：免费开源的 AWS 本地仿真器，LocalStack 停更后的最佳接棒者",
+        "ability": [
+          "本地仿真 100+ AWS 服务（S3/DynamoDB/SQS/Lambda 等），AWS CLI、多语言 SDK、Terraform/CDK 可零改动接入",
+          "分层保真架构：轻量服务进程内毫秒级模拟，RDS/EKS/CodeBuild/Neptune 等重型服务自动拉起真 Docker 容器",
+          "极致轻量：Quarkus + GraalVM 原生编译，24ms 启动、13MB 空闲内存、90MB 镜像，另有 40MB 免 Docker 原生二进制",
+          "四种存储模式（memory/persistent/hybrid/wal）可插拔，支持多 AWS 账户资源隔离与 STS 跨账户演练",
+          "内置 Web Console、官方 Testcontainers 集成（Java/Python/Node/.NET）及 2500+ 自动化兼容性测试，从 LocalStack 迁移近乎零成本"
+        ],
+        "summary": "Floci 是一款 MIT 协议、完全免费的 AWS 本地仿真器，24 毫秒启动、90MB 镜像，用真 Docker 跑 RDS/EKS/Lambda，是 LocalStack Community 停更后的强力替代品。",
+        "category": [
+          "开发工具",
+          "云原生",
+          "DevOps/测试"
+        ],
+        "suitable": [
+          "后端与云原生开发者（Serverless/事件驱动架构）",
+          "DevOps 与 CI 工程师",
+          "云成本敏感的初创团队与自由职业者",
+          "AWS 学习者与 SAA/SAP 备考人群",
+          "被 LocalStack Token/付费墙困扰的现有用户"
+        ],
+        "description": "Floci 是 2026 年 3 月 LocalStack Community 停更后迅速崛起的开源 AWS 本地仿真器。它以 24 毫秒启动、13MB 内存著称，采用「进程内模拟 + 真 Docker」分层架构：SQS、S3 等轻量服务毫秒级响应，RDS、EKS、Lambda 等则拉起真实容器保证保真度。它免费开放了 LocalStack Pro 才有的 Cognito、API Gateway v2 等能力，但 Bedrock 等 AI 服务仅为 stub，IAM 校验默认宽松，需注意适用边界。"
+      },
+      "type": "project",
+      "dateAdded": "20261103"
+    },
+    {
       "id": "70bfcb22-205f-4bf7-83ec-80bda46b64c8",
       "url": "https://github.com/vercel-labs/agent-desktop",
       "domain": "github.com",

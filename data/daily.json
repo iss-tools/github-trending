@@ -94057,59 +94057,6 @@
   ],
   "20261103": [
     {
-      "id": "cf58ae18-a1de-43b6-9c55-d4cf91ba17ec",
-      "dateAdded": "20261103",
-      "type": "github-daily",
-      "url": "https://github.com/pingdotgg/t3code",
-      "repo": "pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars": 42878,
-      "forks": 9156,
-      "starsAdded": 3229,
-      "createdAt": "2026-11-02T17:00:02.351Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://t3.codes",
-        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "GitHub",
-          "TypeScript",
-          "开发者工具",
-          "代码审查"
-        ],
-        "cover": "",
-        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
-        "ability": [
-          "多代理统一控制",
-          "线程化会话管理",
-          "代码差异实时审查",
-          "深度 Git 集成",
-          "代码本地化存储"
-        ],
-        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "多 AI 编程工具重度用户",
-          "团队开发与代码审查者",
-          "注重数据安全的开发者",
-          "追求极致开发体验者",
-          "AI 编程初学者"
-        ],
-        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
-      }
-    },
-    {
       "id": "f86e3508-ee6b-4e60-ad45-13ebe0a2f4dc",
       "dateAdded": "20261103",
       "type": "github-daily",
@@ -94117,9 +94064,9 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 11316,
-      "forks": 774,
-      "starsAdded": 2275,
+      "stars": 11558,
+      "forks": 785,
+      "starsAdded": 3792,
       "createdAt": "2026-11-02T17:00:02.214Z",
       "metaData": {
         "forks": "0",
@@ -94176,246 +94123,56 @@
       }
     },
     {
-      "id": "dcaa74e2-898c-4eea-9aaf-800a87dd9bf9",
+      "id": "cf58ae18-a1de-43b6-9c55-d4cf91ba17ec",
       "dateAdded": "20261103",
       "type": "github-daily",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "repo": "thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
       "language": "TypeScript",
-      "stars": 111198,
-      "forks": 9688,
-      "starsAdded": 1803,
-      "createdAt": "2026-11-02T17:00:02.240Z",
+      "stars": 42878,
+      "forks": 9156,
+      "starsAdded": 3229,
+      "createdAt": "2026-11-02T17:00:02.351Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "ai",
-          "ai-agents",
-          "ai-memory",
-          "anthropic",
-          "artificial-intelligence",
-          "chromadb",
-          "claude",
-          "claude-agent-sdk",
-          "claude-agents",
-          "claude-code",
-          "claude-code-plugin",
-          "claude-skills",
-          "embeddings",
-          "long-term-memory",
-          "mem0",
-          "memory-engine",
-          "openmemory",
-          "rag",
-          "sqlite",
-          "supermemory"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://claude-mem.ai",
-        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
+          "开源",
           "GitHub",
-          "Claude",
-          "记忆管理",
-          "知识库",
-          "上下文增强"
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
         ],
         "cover": "",
-        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
         "ability": [
-          "持久化记忆存储",
-          "自动上下文注入",
-          "语义化搜索",
-          "隐私数据保护",
-          "多模式与多语言支持"
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
         ],
-        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
         "category": [
-          "AI 编程",
           "开发工具",
+          "AI 编程",
           "效率工具"
         ],
         "suitable": [
-          "AI 编程重度用户",
-          "Claude Code 开发者",
-          "技术团队",
-          "长周期项目维护者"
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
         ],
-        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
-      }
-    },
-    {
-      "id": "ea286614-38e2-42fd-8af5-db8a3bce2355",
-      "dateAdded": "20261103",
-      "type": "github-daily",
-      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-      "repo": "Donchitos/Claude-Code-Game-Studios",
-      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-      "language": "Shell",
-      "stars": 34063,
-      "forks": 4560,
-      "starsAdded": 1379,
-      "createdAt": "2026-11-02T17:00:02.314Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "ai-assisted-development",
-          "anthropic",
-          "claude",
-          "claude-code",
-          "game-design",
-          "game-development",
-          "gamedev",
-          "godot",
-          "indie-game-dev",
-          "unity",
-          "unreal-engine"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. - Donchitos/Claude-Code-Game-Studios"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "游戏开发",
-          "AI Agent",
-          "开源模板",
-          "独立开发"
-        ],
-        "cover": "",
-        "title": "Claude-Code-Game-Studios 深度评测：把 Claude Code 变成一家虚拟游戏工作室",
-        "ability": [
-          "三层 Agent 架构（总监-部门负责人-专员）模拟真实工作室协作",
-          "74 个覆盖游戏全生命周期的 Slash Skill 命令（设计到发行）",
-          "15 个自动化 Hook 拦截魔法数字、危险操作并保护上下文",
-          "三档严格度旋钮（minimal/standard/full）灵活控制流程重量",
-          "路径级编码规则：写到哪个目录自动启用哪套规范"
-        ],
-        "summary": "一个开源 Claude Code 模板仓库，用 49 个分层 Agent、74 个 Skill 和 15 个 Hook 把 AI 对话升级为带创意总监、主程、QA 的完整游戏工作室流程。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "游戏开发"
-        ],
-        "suitable": [
-          "有引擎基础的独立游戏开发者",
-          "Game Jam 参赛者",
-          "想学游戏工作室 SOP 的开发者",
-          "2-5 人小型游戏团队",
-          "AI Agent 框架研究者"
-        ],
-        "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
-      }
-    },
-    {
-      "id": "33d38acc-24c7-4f2f-b840-28ce9f74f4eb",
-      "dateAdded": "20261103",
-      "type": "github-daily",
-      "url": "https://github.com/mattpocock/skills",
-      "repo": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 310700,
-      "forks": 26134,
-      "starsAdded": 858,
-      "createdAt": "2026-11-02T17:00:02.444Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://aihero.dev/skills",
-        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "GitHub",
-          "AI 技能",
-          "TDD",
-          "工作流"
-        ],
-        "cover": "",
-        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
-        "ability": [
-          "需求精准对齐",
-          "测试驱动开发 (TDD)",
-          "生成技术规范与工单",
-          "代码架构优化",
-          "系统化Bug诊断"
-        ],
-        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
-        "category": [
-          "AI 编程",
-          "开发者工具"
-        ],
-        "suitable": [
-          "追求代码质量的软件工程师",
-          "技术团队负责人",
-          "独立开发者",
-          "AI 编程工具深度用户"
-        ],
-        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
-      }
-    },
-    {
-      "id": "03541eab-5fe9-4740-bec6-e764f0862e08",
-      "dateAdded": "20261103",
-      "type": "github-daily",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "repo": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "stars": 46187,
-      "forks": 7611,
-      "starsAdded": 857,
-      "createdAt": "2026-11-02T17:00:02.363Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
-      },
-      "summaryData": {
-        "tags": [
-          "金融大模型",
-          "K线预测",
-          "时间序列",
-          "量化交易",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
-        "ability": [
-          "零样本K线价格预测，跨市场、跨频率泛化",
-          "波动率预测（MAE 较通用模型降低9%）",
-          "高保真合成K线生成，可用于回测数据增强",
-          "量化Alpha因子/交易信号特征提取",
-          "支持Python微调，附Qlib A股完整流水线"
-        ],
-        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
-        "category": [
-          "AI 模型",
-          "开源项目",
-          "金融量化"
-        ],
-        "suitable": [
-          "量化研究员",
-          "FinTech 工程师",
-          "机器学习/金融方向学生与研究者",
-          "独立开发者与 AI 爱好者",
-          "需要合成行情数据的团队"
-        ],
-        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
       }
     },
     {
@@ -94426,9 +94183,9 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 93617,
-      "forks": 9834,
-      "starsAdded": 706,
+      "stars": 93731,
+      "forks": 9841,
+      "starsAdded": 1658,
       "createdAt": "2026-11-02T17:00:02.265Z",
       "metaData": {
         "forks": "0",
@@ -94493,16 +94250,268 @@
       }
     },
     {
+      "id": "ea286614-38e2-42fd-8af5-db8a3bce2355",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "repo": "Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "language": "Shell",
+      "stars": 34152,
+      "forks": 4566,
+      "starsAdded": 1181,
+      "createdAt": "2026-11-02T17:00:02.314Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-assisted-development",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "game-design",
+          "game-development",
+          "gamedev",
+          "godot",
+          "indie-game-dev",
+          "unity",
+          "unreal-engine"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. - Donchitos/Claude-Code-Game-Studios"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "游戏开发",
+          "AI Agent",
+          "开源模板",
+          "独立开发"
+        ],
+        "cover": "",
+        "title": "Claude-Code-Game-Studios 深度评测：把 Claude Code 变成一家虚拟游戏工作室",
+        "ability": [
+          "三层 Agent 架构（总监-部门负责人-专员）模拟真实工作室协作",
+          "74 个覆盖游戏全生命周期的 Slash Skill 命令（设计到发行）",
+          "15 个自动化 Hook 拦截魔法数字、危险操作并保护上下文",
+          "三档严格度旋钮（minimal/standard/full）灵活控制流程重量",
+          "路径级编码规则：写到哪个目录自动启用哪套规范"
+        ],
+        "summary": "一个开源 Claude Code 模板仓库，用 49 个分层 Agent、74 个 Skill 和 15 个 Hook 把 AI 对话升级为带创意总监、主程、QA 的完整游戏工作室流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "游戏开发"
+        ],
+        "suitable": [
+          "有引擎基础的独立游戏开发者",
+          "Game Jam 参赛者",
+          "想学游戏工作室 SOP 的开发者",
+          "2-5 人小型游戏团队",
+          "AI Agent 框架研究者"
+        ],
+        "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
+      }
+    },
+    {
+      "id": "33d38acc-24c7-4f2f-b840-28ce9f74f4eb",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 310807,
+      "forks": 26142,
+      "starsAdded": 1164,
+      "createdAt": "2026-11-02T17:00:02.444Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "dcaa74e2-898c-4eea-9aaf-800a87dd9bf9",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 111310,
+      "forks": 9699,
+      "starsAdded": 1138,
+      "createdAt": "2026-11-02T17:00:02.240Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "25383d0f-6546-4c26-b350-7d934c3b62f6",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/anomalyco/hex",
+      "repo": "anomalyco/hex",
+      "description": "Local voice dictation for mac, windows and linux",
+      "language": "Rust",
+      "stars": 4224,
+      "forks": 248,
+      "starsAdded": 1134,
+      "createdAt": "2026-11-03T12:00:20.408Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dictation",
+          "linux",
+          "local-first",
+          "macos",
+          "rust",
+          "speech-recognition",
+          "speech-to-text",
+          "voice-control"
+        ],
+        "license": "MIT license",
+        "homepage": "https://anoma.ly/hex",
+        "description": "Local voice dictation for mac, windows and linux. Contribute to anomalyco/hex development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "语音听写",
+          "本地优先",
+          "开源",
+          "macOS",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "HEX 深度评测：免费开源的本地语音听写神器",
+        "ability": [
+          "按住说话松开即出字的极简听写交互",
+          "100% 本地离线语音识别（Parakeet/Whisper 模型）",
+          "Modes 自定义纠错词典与文本变换规则",
+          "可选 AI 语音指令与后处理润色",
+          "MIT 开源可审计，支持 TypeScript 自定义命令"
+        ],
+        "summary": "HEX 是一款本地优先的语音听写工具，按住快捷键说话、松开即得文字，全程离线、免费开源、保护隐私。",
+        "category": [
+          "开发工具",
+          "生活效率",
+          "AI 工具"
+        ],
+        "suitable": [
+          "写作与内容创作者",
+          "程序员与开源贡献者",
+          "远程办公重度沟通者",
+          "律师医生等隐私敏感从业者",
+          "爱折腾的 macOS 折腾党"
+        ],
+        "description": "HEX 是用 Rust 重写的 macOS 本地语音听写应用，首次启动后下载 Parakeet V3 或 Whisper 模型即可完全离线使用，识别速度快、不存音频、不传云端，且免费无订阅。相比 Wispr Flow、SuperWhisper 等竞品，它在隐私、成本和可编程性上优势明显，但仅支持 Apple Silicon + macOS 15+，Windows/Linux 尚在 Beta。"
+      }
+    },
+    {
       "id": "0fd1931b-7c1c-433b-9e93-211050d71ba7",
       "dateAdded": "20261103",
       "type": "github-daily",
       "url": "https://github.com/JustVugg/colibri",
       "repo": "JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
       "language": "C",
-      "stars": 46865,
-      "forks": 5412,
-      "starsAdded": 675,
+      "stars": 46934,
+      "forks": 5419,
+      "starsAdded": 803,
       "createdAt": "2026-11-02T17:00:02.430Z",
       "metaData": {
         "forks": "0",
@@ -94541,6 +94550,67 @@
           "硬件资源受限的开发者"
         ],
         "description": "Colibrì 是一款基于纯 C 语言的开源推理引擎，支持 GLM、DeepSeek 等多种模型。它创新性地利用分层存储技术，将硬盘、内存和显存统一调度，使得仅需消费级硬件即可运行高达 744B 参数的 MoE 模型，兼顾性能与成本。"
+      }
+    },
+    {
+      "id": "38996d0e-e8ca-48f2-b7ae-2e3043d461ba",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/p-e-w/heretic",
+      "repo": "p-e-w/heretic",
+      "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+      "language": "Python",
+      "stars": 38456,
+      "forks": 4347,
+      "starsAdded": 699,
+      "createdAt": "2026-11-02T17:00:02.547Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "abliteration",
+          "anti-censorship",
+          "anticensorship",
+          "censorship",
+          "censorship-resistance",
+          "llm",
+          "transformer"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://heretic-project.org",
+        "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more - p-e-w/heretic"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "去审查",
+          "模型微调",
+          "CLI",
+          "HuggingFace"
+        ],
+        "cover": "",
+        "title": "Heretic：一键去审查 LLM 的自动化工具",
+        "ability": [
+          "自动去除模型审查",
+          "双目标参数优化",
+          "一键 CLI 部署",
+          "硬件感知量化支持",
+          "可视化研究分析"
+        ],
+        "summary": "自动移除大模型安全审查的命令行工具，无需重训即可生成更自由的模型。",
+        "category": [
+          "AI 模型工具",
+          "开发者工具",
+          "自动化脚本"
+        ],
+        "suitable": [
+          "本地 LLM 爱好者",
+          "AI 安全研究员",
+          "角色扮演开发者",
+          "内容创作者",
+          "模型微调工程师"
+        ],
+        "description": "Heretic 是一个基于方向性消融技术的 CLI 工具，能自动寻找最佳参数移除 LLM 的安全审查。它支持量化部署，降低显存需求，并包含可视化分析功能，适合研究和个人探索。"
       }
     },
     {
@@ -94664,64 +94734,114 @@
       }
     },
     {
-      "id": "38996d0e-e8ca-48f2-b7ae-2e3043d461ba",
+      "id": "03541eab-5fe9-4740-bec6-e764f0862e08",
       "dateAdded": "20261103",
       "type": "github-daily",
-      "url": "https://github.com/p-e-w/heretic",
-      "repo": "p-e-w/heretic",
-      "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 38379,
-      "forks": 4344,
-      "starsAdded": 420,
-      "createdAt": "2026-11-02T17:00:02.547Z",
+      "stars": 46228,
+      "forks": 7621,
+      "starsAdded": 503,
+      "createdAt": "2026-11-02T17:00:02.363Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos"
+      },
+      "summaryData": {
+        "tags": [
+          "金融大模型",
+          "K线预测",
+          "时间序列",
+          "量化交易",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Kronos 深度评测：全球首个开源金融K线基础模型，把K线当一门语言来学",
+        "ability": [
+          "零样本K线价格预测，跨市场、跨频率泛化",
+          "波动率预测（MAE 较通用模型降低9%）",
+          "高保真合成K线生成，可用于回测数据增强",
+          "量化Alpha因子/交易信号特征提取",
+          "支持Python微调，附Qlib A股完整流水线"
+        ],
+        "summary": "清华团队开源的首个金融K线基础模型，用120亿根K线训练，零样本预测价格与波动率，AAAI 2026 论文，但不是炒股印钞机。",
+        "category": [
+          "AI 模型",
+          "开源项目",
+          "金融量化"
+        ],
+        "suitable": [
+          "量化研究员",
+          "FinTech 工程师",
+          "机器学习/金融方向学生与研究者",
+          "独立开发者与 AI 爱好者",
+          "需要合成行情数据的团队"
+        ],
+        "description": "Kronos 是清华团队开源的首个金融K线基础模型，采用 BSQ Tokenizer + 自回归 Transformer 架构，基于覆盖 45+ 交易所的 120 亿根K线预训练，价格预测 RankIC 较最强通用时序模型提升 93%，论文入选 AAAI 2026。但它只看K线、不懂消息面，RankIC 不等于实盘盈利，更适合作为量化研究的底座，而非炒股工具。"
+      }
+    },
+    {
+      "id": "099a7385-3847-439b-a96e-bc1adcd89789",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "repo": "max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 10255,
+      "forks": 371,
+      "starsAdded": 437,
+      "createdAt": "2026-11-02T17:00:02.476Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "abliteration",
-          "anti-censorship",
-          "anticensorship",
-          "censorship",
-          "censorship-resistance",
-          "llm",
-          "transformer"
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
         ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://heretic-project.org",
-        "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more - p-e-w/heretic"
+        "license": "License",
+        "homepage": "https://worktrunk.dev",
+        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
       },
       "summaryData": {
         "tags": [
-          "LLM",
-          "去审查",
-          "模型微调",
+          "Git",
           "CLI",
-          "HuggingFace"
+          "Worktree",
+          "效率工具",
+          "Rust"
         ],
         "cover": "",
-        "title": "Heretic：一键去审查 LLM 的自动化工具",
+        "title": "Worktrunk：Git 并行开发的效率加速器",
         "ability": [
-          "自动去除模型审查",
-          "双目标参数优化",
-          "一键 CLI 部署",
-          "硬件感知量化支持",
-          "可视化研究分析"
+          "Worktree 极简管理",
+          "AI 代理并行开发",
+          "自动化工作流 Hooks",
+          "可视化状态概览",
+          "构建缓存共享"
         ],
-        "summary": "自动移除大模型安全审查的命令行工具，无需重训即可生成更自由的模型。",
+        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
         "category": [
-          "AI 模型工具",
-          "开发者工具",
-          "自动化脚本"
+          "开发工具",
+          "AI 编程"
         ],
         "suitable": [
-          "本地 LLM 爱好者",
-          "AI 安全研究员",
-          "角色扮演开发者",
-          "内容创作者",
-          "模型微调工程师"
+          "Git Worktree 重度用户",
+          "AI 辅助编程开发者",
+          "高频切换分支的开发者",
+          "追求终端效率的极客"
         ],
-        "description": "Heretic 是一个基于方向性消融技术的 CLI 工具，能自动寻找最佳参数移除 LLM 的安全审查。它支持量化部署，降低显存需求，并包含可视化分析功能，适合研究和个人探索。"
+        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
       }
     },
     {
@@ -94898,61 +95018,187 @@
       }
     },
     {
-      "id": "099a7385-3847-439b-a96e-bc1adcd89789",
+      "id": "34dcca0d-fe9d-4a89-854c-6563ef5490a1",
       "dateAdded": "20261103",
       "type": "github-daily",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "repo": "max-sixty/worktrunk",
-      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-      "language": "Rust",
-      "stars": 10208,
-      "forks": 368,
-      "starsAdded": 77,
-      "createdAt": "2026-11-02T17:00:02.476Z",
+      "url": "https://github.com/floci-io/floci",
+      "repo": "floci-io/floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "language": "Java",
+      "stars": 28176,
+      "forks": 3161,
+      "starsAdded": 219,
+      "createdAt": "2026-11-03T12:00:20.404Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "agents",
-          "claude-code",
-          "codex",
-          "developer-tools",
-          "git",
-          "worktrees"
+          "aws",
+          "aws-emulation",
+          "devops",
+          "docker",
+          "ec2",
+          "ecs",
+          "localstack",
+          "s3",
+          "sqs",
+          "testcontainers"
         ],
-        "license": "License",
-        "homepage": "https://worktrunk.dev",
-        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
+        "license": "MIT license",
+        "homepage": "https://floci.io/floci/",
+        "description": "Light, fluffy, and always free - The AWS Local Emulator alternative - floci-io/floci"
       },
       "summaryData": {
         "tags": [
-          "Git",
-          "CLI",
-          "Worktree",
-          "效率工具",
-          "Rust"
+          "AWS",
+          "本地仿真",
+          "开源项目",
+          "测试工具",
+          "LocalStack替代"
         ],
         "cover": "",
-        "title": "Worktrunk：Git 并行开发的效率加速器",
+        "title": "Floci 深度评测：免费开源的 AWS 本地仿真器，LocalStack 停更后的最佳接棒者",
         "ability": [
-          "Worktree 极简管理",
-          "AI 代理并行开发",
-          "自动化工作流 Hooks",
-          "可视化状态概览",
-          "构建缓存共享"
+          "本地仿真 100+ AWS 服务（S3/DynamoDB/SQS/Lambda 等），AWS CLI、多语言 SDK、Terraform/CDK 可零改动接入",
+          "分层保真架构：轻量服务进程内毫秒级模拟，RDS/EKS/CodeBuild/Neptune 等重型服务自动拉起真 Docker 容器",
+          "极致轻量：Quarkus + GraalVM 原生编译，24ms 启动、13MB 空闲内存、90MB 镜像，另有 40MB 免 Docker 原生二进制",
+          "四种存储模式（memory/persistent/hybrid/wal）可插拔，支持多 AWS 账户资源隔离与 STS 跨账户演练",
+          "内置 Web Console、官方 Testcontainers 集成（Java/Python/Node/.NET）及 2500+ 自动化兼容性测试，从 LocalStack 迁移近乎零成本"
         ],
-        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
+        "summary": "Floci 是一款 MIT 协议、完全免费的 AWS 本地仿真器，24 毫秒启动、90MB 镜像，用真 Docker 跑 RDS/EKS/Lambda，是 LocalStack Community 停更后的强力替代品。",
         "category": [
           "开发工具",
-          "AI 编程"
+          "云原生",
+          "DevOps/测试"
         ],
         "suitable": [
-          "Git Worktree 重度用户",
-          "AI 辅助编程开发者",
-          "高频切换分支的开发者",
-          "追求终端效率的极客"
+          "后端与云原生开发者（Serverless/事件驱动架构）",
+          "DevOps 与 CI 工程师",
+          "云成本敏感的初创团队与自由职业者",
+          "AWS 学习者与 SAA/SAP 备考人群",
+          "被 LocalStack Token/付费墙困扰的现有用户"
         ],
-        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+        "description": "Floci 是 2026 年 3 月 LocalStack Community 停更后迅速崛起的开源 AWS 本地仿真器。它以 24 毫秒启动、13MB 内存著称，采用「进程内模拟 + 真 Docker」分层架构：SQS、S3 等轻量服务毫秒级响应，RDS、EKS、Lambda 等则拉起真实容器保证保真度。它免费开放了 LocalStack Pro 才有的 Cognito、API Gateway v2 等能力，但 Bedrock 等 AI 服务仅为 stub，IAM 校验默认宽松，需注意适用边界。"
+      }
+    },
+    {
+      "id": "f272e7c5-1c24-469f-aa67-c11c3823508b",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "repo": "Usagi-org/ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "language": "Python",
+      "stars": 16103,
+      "forks": 2820,
+      "starsAdded": 204,
+      "createdAt": "2026-11-03T12:00:20.406Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-assistant",
+          "ai-tools",
+          "automation",
+          "gemini",
+          "goofish",
+          "open-source",
+          "openai",
+          "playwright",
+          "tool",
+          "xian-yu",
+          "xianyu",
+          "xianyu-bot"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 - Usagi-org/ai-goofish-monitor"
+      },
+      "summaryData": {
+        "tags": [
+          "闲鱼监控",
+          "Playwright",
+          "多模态大模型",
+          "开源项目",
+          "捡漏神器"
+        ],
+        "cover": "",
+        "title": "ai-goofish-monitor 深度评测：AI 视觉驱动的闲鱼自动监控捡漏神器",
+        "ability": [
+          "Playwright 模拟真人浏览器抓取闲鱼商品，支持代理池与多账号轮换",
+          "多模态大模型分析商品图文，精准过滤关键词陷阱与货不对板",
+          "自然语言一句话创建监控任务，自动生成 AI 分析标准",
+          "Web 可视化管理后台，任务/账号/日志/Prompt 一站式管理",
+          "多渠道推送（Telegram、企业微信、Bark 等）+ Cron 定时调度 + Docker 一键部署"
+        ],
+        "summary": "用 Playwright 模拟真人逛闲鱼，再让多模态大模型替你判断商品值不值得买，命中即推送到手机。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "生活效率"
+        ],
+        "suitable": [
+          "二手数码捡漏玩家",
+          "限量球鞋、潮玩、收藏品蹲守党",
+          "二手商家与倒卖从业者",
+          "想学 Playwright + AI 工程化的开发者",
+          "需要跨城市比价的买家"
+        ],
+        "description": "开源闲鱼智能监控工具：Playwright 模拟真人浏览器抓取商品，多模态大模型分析图文判断值不值得买，过滤关键词陷阱与货不对板，命中即推送手机。提供完整 Web 后台与 Docker 一键部署，但需注意闲鱼账号风控、登录态维护与 AI 调用成本。"
+      }
+    },
+    {
+      "id": "f5acbafa-dcea-4ba9-b0cd-d46d13249154",
+      "dateAdded": "20261103",
+      "type": "github-daily",
+      "url": "https://github.com/spotify/portal-ai-plugins",
+      "repo": "spotify/portal-ai-plugins",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 2914,
+      "forks": 228,
+      "starsAdded": 94,
+      "createdAt": "2026-11-03T12:00:20.398Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Contribute to spotify/portal-ai-plugins development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Spotify",
+          "Claude Code",
+          "Token优化",
+          "Backstage",
+          "AI插件"
+        ],
+        "cover": "",
+        "title": "Spotify Portal AI Plugins 深度评测：让便宜模型替 Claude Code 打工的官方省钱方案",
+        "ability": [
+          "Token 成本分流：将大文件阅读、样板代码生成等 I/O 重活自动转包给 Gemini Flash 等廉价模型",
+          "企业软件目录 AI 前台：让 Claude Code 直接查询服务的 Owner、文档、健康状态与 Incident",
+          "声明式 Agent 配置：AiKA Modes 让模型路由从系统工程问题变成一份 YAML 配置",
+          "多层强制拦截：PreToolUse Hook 强制大文件读取走省钱通道，不靠 prompt 恳请",
+          "多工具兼容：支持 Claude Code、Codex、Cursor 三大主流 AI 编码工具一键安装"
+        ],
+        "summary": "Spotify 官方开源的 AI 编码插件市场，把大文件阅读等烧钱任务路由给廉价模型，实测节省 82-94% 的 token 成本。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "Spotify Portal 企业客户",
+          "被 token 账单困扰的工程负责人",
+          "Backstage 自建企业的平台工程团队",
+          "Claude Code 重度用户",
+          "AI Agent 工具开发者"
+        ],
+        "description": "Spotify 官方开源的 Claude Code 插件仓库，核心插件 shunt 通过 PreToolUse Hook 拦截超 350 行的大文件读取，把 I/O 重活委托给 Gemini 2.5 Flash 等廉价模型，Java 单体仓库实测节省 82-94% token 成本。需依赖 Portal 实例，不能委托编辑和推理，更像是给现有 AI 编码工具打补丁省钱的基础设施。"
       }
     }
   ]
