@@ -96131,7 +96131,32 @@
       "createdAt": "2026-11-04T15:00:38.766Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "avx2",
+          "c99",
+          "cpu-inference",
+          "deep-learning",
+          "from-scratch",
+          "inference-engine",
+          "kimi-k3",
+          "linear-attention",
+          "llm",
+          "llm-inference",
+          "machine-learning",
+          "memory-efficient",
+          "mixture-of-experts",
+          "moe",
+          "mxfp4",
+          "quantization",
+          "simd",
+          "systems-programming",
+          "transformer",
+          "zero-dependencies"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59",
+        "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU. - FareedKhan-dev/kimi-k3-in-c"
       },
       "summaryData": {
         "tags": [
@@ -96594,6 +96619,1013 @@
           "AI Agent 工具开发者"
         ],
         "description": "Spotify 官方开源的 Claude Code 插件仓库，核心插件 shunt 通过 PreToolUse Hook 拦截超 350 行的大文件读取，把 I/O 重活委托给 Gemini 2.5 Flash 等廉价模型，Java 单体仓库实测节省 82-94% token 成本。需依赖 Portal 实例，不能委托编辑和推理，更像是给现有 AI 编码工具打补丁省钱的基础设施。"
+      }
+    }
+  ],
+  "20261105": [
+    {
+      "id": "2523d0f4-db39-4ec2-803e-2dbd9a8d63b8",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "repo": "vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "stars": 14397,
+      "forks": 987,
+      "starsAdded": 2463,
+      "createdAt": "2026-11-04T16:00:02.486Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "accessibility",
+          "accessibility-api",
+          "ai-agents",
+          "automation",
+          "cli",
+          "computer-use",
+          "computer-use-agent",
+          "computer-use-agents",
+          "desktop-automation",
+          "macos",
+          "mcp",
+          "rust"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev/desktop",
+        "description": "Computer use CLI for AI agents. Contribute to vercel-labs/agent-desktop development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Computer Use",
+          "开源项目",
+          "桌面自动化",
+          "Vercel"
+        ],
+        "cover": "",
+        "title": "agent-desktop 深度评测：让 AI Agent 像操作 DOM 一样操控电脑桌面",
+        "ability": [
+          "通过操作系统无障碍树结构化读取桌面 UI，无需截图与视觉模型",
+          "Ref 引用机制让操作可定位、可验证、失败可重试",
+          "Skeleton 加按需下钻压缩 token 消耗（自报节省 78%-96%）",
+          "默认 headless 后台运行，不抢鼠标焦点，支持多 Agent 并行",
+          "模型中立，任意大模型均可调用，自带面向 Agent 的使用手册"
+        ],
+        "summary": "Vercel 开源的 Rust CLI 工具，让 AI Agent 无需截图、直接读取系统无障碍树来精准操控 macOS/Windows/Linux 桌面应用。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "构建桌面 Agent 工作流的开发者",
+          "RPA 与自动化测试工程师",
+          "想让编码 Agent 操控本地软件的效率玩家",
+          "无障碍与辅助技术从业者",
+          "关注 Computer Use 赛道的技术研究者"
+        ],
+        "description": "agent-desktop 是 Vercel Labs 开源的 Rust CLI 与 C 库，核心思路是不让 AI 看屏幕截图，而是读取操作系统原生的无障碍树，把桌面 UI 变成带 Ref 句柄的结构化 JSON，Agent 可像操作网页 DOM 一样精准点击与输入，默认后台运行、省 token、支持任意大模型。项目较新，Linux 支持与部分应用覆盖仍有短板。"
+      }
+    },
+    {
+      "id": "de35ffa7-e8b9-4f42-b5f2-3c54dbcfb756",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 4218,
+      "forks": 359,
+      "starsAdded": 2053,
+      "createdAt": "2026-11-04T16:00:02.443Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
+      "id": "d1461230-2046-46a0-8500-712870c6e7e6",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "repo": "D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "language": "Python",
+      "stars": 96054,
+      "forks": 10069,
+      "starsAdded": 2006,
+      "createdAt": "2026-11-04T16:00:02.568Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-scraping",
+          "automation",
+          "crawler",
+          "crawling",
+          "crawling-python",
+          "data",
+          "data-extraction",
+          "mcp",
+          "mcp-server",
+          "playwright",
+          "python",
+          "scraping",
+          "selectors",
+          "stealth",
+          "web-scraper",
+          "web-scraping",
+          "web-scraping-python",
+          "webscraping",
+          "xpath"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://scrapling.readthedocs.io/en/latest/",
+        "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev - D4Vinci/Scrapling"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "爬虫",
+          "开源项目",
+          "反反爬",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "Scrapling 深度评测：一个会自我修复的 Python 爬虫框架",
+        "ability": [
+          "自适应选择器：网站改版后爬虫自动重新定位元素，无需改代码",
+          "内置三种抓取器，用 Camoufox 反检测浏览器可绕过 Cloudflare 等反爬系统",
+          "解析速度比 BeautifulSoup 快约 800 倍",
+          "提供 Spider 爬虫框架，支持断点续爬、自动限速和分布式并发",
+          "内置 MCP Server，可接入 Claude/Cursor 让 AI 对话式抓取网页数据"
+        ],
+        "summary": "一个自适应、能自我修复、可绕过反爬的 Python 全能爬虫框架，还内置 AI 接口。",
+        "category": [
+          "开发工具",
+          "数据采集",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI Agent 开发者",
+          "需要长期维护爬虫的工程师",
+          "数据工程师 / RAG 语料构建者",
+          "小型爬虫项目与个人脚本开发者",
+          "想入门数据采集的初学者"
+        ],
+        "description": "Scrapling 是安全研究员 Karim Shoair 开源的 Python 爬虫框架，GitHub 星标超 8.7 万。它把 HTTP 请求、反检测浏览器、智能解析、分布式爬虫和 MCP 服务器整合进一个库。核心亮点是自适应选择器功能：网站改版后爬虫能自动找回目标元素，无需人工修改代码，大幅降低长期维护成本。开源免费，BSD-3 协议可商用。"
+      }
+    },
+    {
+      "id": "a133efeb-63dd-4058-9437-90776ea42094",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "repo": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "description": "",
+      "language": "C#",
+      "stars": 6192,
+      "forks": 216,
+      "starsAdded": 1792,
+      "createdAt": "2026-11-04T16:00:02.550Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Contribute to JiaFeiMiao-K-Cat/DiscImageStudio development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "光盘刻录",
+          "CDImage",
+          "数据面绘图",
+          "GPL-3.0"
+        ],
+        "cover": "",
+        "title": "DiscImageStudio 深度评测：用普通刻录机把图片'刻'进光盘数据面",
+        "ability": [
+          "将任意图片编码为物理合法的 CD/DVD/BD-R 数据，刻录后盘面浮现浮雕图案",
+          "三介质全覆盖：CD-R（音轨/RAW）、DVD-R（ISO）、单层 BD-R（ISO+UDF 2.01）",
+          "三次轨距拟合标定算法，线条精度最高达 10⁻¹⁴，校准前后精度提升最高 1000 万倍",
+          "WPF 图形界面 + 统一命令行 + Linux/macOS 跨平台 CLI 三种入口",
+          "基于 Windows IMAPI2 的安全刻录层，不联网、不上传、无遥测，EXE 免安装自带运行时"
+        ],
+        "summary": "把图片转换成合法光盘数据，用普通刻录机刻完后，CD/DVD/蓝光的数据面会浮现肉眼可见的图案。",
+        "category": [
+          "开发工具",
+          "极客创意",
+          "复古数码"
+        ],
+        "suitable": [
+          "复古数码爱好者 / 光盘收藏家",
+          "独立音乐人 / Demo 小批量发行者",
+          "解谜游戏与密室逃脱设计师",
+          "光学存储 / 信号编码方向的学生和开发者",
+          "极客礼物制作者"
+        ],
+        "description": "一款 C#/.NET 开源工具（GPL-3.0），能把任意图片转换成物理合法的 CD/DVD/BD-R 数据，用任意普通刻录机烧录后，盘面反射层即可浮现肉眼可见的浮雕图案。它继承并大幅升级 CDImage 项目，亮点是三次轨距标定算法与三介质全覆盖，堪称'数据驱动的光学雕刻机'。注意一次性盘片有报废风险，GUI 仅支持 Windows，定位是艺术玩具而非备份工具。"
+      }
+    },
+    {
+      "id": "8004a016-716f-4a85-89d5-b933466c718e",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 312659,
+      "forks": 26244,
+      "starsAdded": 1376,
+      "createdAt": "2026-11-04T16:00:02.471Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "49d31e05-a8aa-47c2-8677-d6e902b729b1",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 112562,
+      "forks": 9781,
+      "starsAdded": 1165,
+      "createdAt": "2026-11-04T16:00:02.478Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "e66a9042-2109-4cd6-a66f-9165c736897d",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/floci-io/floci",
+      "repo": "floci-io/floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "language": "Java",
+      "stars": 29361,
+      "forks": 3259,
+      "starsAdded": 1082,
+      "createdAt": "2026-11-04T16:00:02.474Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "aws",
+          "aws-emulation",
+          "devops",
+          "docker",
+          "ec2",
+          "ecs",
+          "localstack",
+          "s3",
+          "sqs",
+          "testcontainers"
+        ],
+        "license": "MIT license",
+        "homepage": "https://floci.io/floci/",
+        "description": "Light, fluffy, and always free - The AWS Local Emulator alternative - floci-io/floci"
+      },
+      "summaryData": {
+        "tags": [
+          "AWS",
+          "本地仿真",
+          "开源项目",
+          "测试工具",
+          "LocalStack替代"
+        ],
+        "cover": "",
+        "title": "Floci 深度评测：免费开源的 AWS 本地仿真器，LocalStack 停更后的最佳接棒者",
+        "ability": [
+          "本地仿真 100+ AWS 服务（S3/DynamoDB/SQS/Lambda 等），AWS CLI、多语言 SDK、Terraform/CDK 可零改动接入",
+          "分层保真架构：轻量服务进程内毫秒级模拟，RDS/EKS/CodeBuild/Neptune 等重型服务自动拉起真 Docker 容器",
+          "极致轻量：Quarkus + GraalVM 原生编译，24ms 启动、13MB 空闲内存、90MB 镜像，另有 40MB 免 Docker 原生二进制",
+          "四种存储模式（memory/persistent/hybrid/wal）可插拔，支持多 AWS 账户资源隔离与 STS 跨账户演练",
+          "内置 Web Console、官方 Testcontainers 集成（Java/Python/Node/.NET）及 2500+ 自动化兼容性测试，从 LocalStack 迁移近乎零成本"
+        ],
+        "summary": "Floci 是一款 MIT 协议、完全免费的 AWS 本地仿真器，24 毫秒启动、90MB 镜像，用真 Docker 跑 RDS/EKS/Lambda，是 LocalStack Community 停更后的强力替代品。",
+        "category": [
+          "开发工具",
+          "云原生",
+          "DevOps/测试"
+        ],
+        "suitable": [
+          "后端与云原生开发者（Serverless/事件驱动架构）",
+          "DevOps 与 CI 工程师",
+          "云成本敏感的初创团队与自由职业者",
+          "AWS 学习者与 SAA/SAP 备考人群",
+          "被 LocalStack Token/付费墙困扰的现有用户"
+        ],
+        "description": "Floci 是 2026 年 3 月 LocalStack Community 停更后迅速崛起的开源 AWS 本地仿真器。它以 24 毫秒启动、13MB 内存著称，采用「进程内模拟 + 真 Docker」分层架构：SQS、S3 等轻量服务毫秒级响应，RDS、EKS、Lambda 等则拉起真实容器保证保真度。它免费开放了 LocalStack Pro 才有的 Cognito、API Gateway v2 等能力，但 Bedrock 等 AI 服务仅为 stub，IAM 校验默认宽松，需注意适用边界。"
+      }
+    },
+    {
+      "id": "1fe642df-6eb8-4c18-91fe-ffa770aed311",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/github/spec-kit",
+      "repo": "github/spec-kit",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "language": "Python",
+      "stars": 147094,
+      "forks": 13199,
+      "starsAdded": 810,
+      "createdAt": "2026-11-04T16:00:02.490Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "copilot",
+          "development",
+          "engineering",
+          "prd",
+          "spec",
+          "spec-driven"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.github.com/spec-kit/",
+        "description": "💫 Toolkit to help you get started with SDD or any other process! - github/spec-kit"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "工作流",
+          "规范驱动",
+          "开源",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "GitHub Spec Kit - 意图驱动的 AI 开发规范工具",
+        "ability": [
+          "四阶段 SDD 工作流",
+          "支持 30+ AI 编码代理集成",
+          "扩展/预设/Bundle 可扩展体系",
+          "Bug 修复与 Idea 评估工作流",
+          "企业离线环境支持"
+        ],
+        "summary": "把需求意图转化为可执行规范的 AI 编码辅助工具",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "项目管理"
+        ],
+        "suitable": [
+          "独立开发者",
+          "小微团队",
+          "中大型研发团队",
+          "产品经理/需求分析师",
+          "AI 重度用户"
+        ],
+        "description": "GitHub Spec Kit 是一套将产品意图转化为可执行规范的 AI 编码辅助工具，通过规范化的四阶段工作流，让需求、方案、任务与代码形成闭环，支持多种 AI 代理，适合个人到企业级团队落地。"
+      }
+    },
+    {
+      "id": "c8ea2be9-de77-4a4e-9622-67ba2d44ab63",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "stars": 138719,
+      "forks": 22142,
+      "starsAdded": 615,
+      "createdAt": "2026-11-04T16:00:02.499Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-video-generator",
+          "content-creation",
+          "ffmpeg",
+          "instagram-reels",
+          "llm",
+          "python",
+          "short-video",
+          "subtitles",
+          "text-to-speech",
+          "tiktok",
+          "video-automation",
+          "video-workflow",
+          "workflow-automation",
+          "youtube-shorts"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. - harry0703/MoneyPrinterTurbo"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "自动化",
+          "短视频制作",
+          "AIGC",
+          "生产力"
+        ],
+        "cover": "",
+        "title": "MoneyPrinterTurbo深度评测：AI短视频自动生成效率神器",
+        "ability": [
+          "智能文案生成",
+          "海量素材自动匹配",
+          "专业级语音合成",
+          "精准字幕对齐",
+          "全流程视频合成"
+        ],
+        "summary": "开源AI工具，一键自动生成包含文案、配音、字幕的高质量短视频，极大提升创作效率。",
+        "category": [
+          "AI应用",
+          "视频工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "自媒体创作者",
+          "企业营销人员",
+          "教育工作者",
+          "电商运营者",
+          "视频剪辑师"
+        ],
+        "description": "MoneyPrinterTurbo 是一款开源的 AI 短视频自动生成工具，通过自动化脚本撰写、素材检索、配音及剪辑流程，将数小时的工作缩短至几分钟。它支持多种大模型和TTS引擎，适合需要批量生产视频内容的用户，显著降低制作门槛与成本。"
+      }
+    },
+    {
+      "id": "955da47e-156e-4bb5-87a2-da27476259a1",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "repo": "max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 10867,
+      "forks": 403,
+      "starsAdded": 524,
+      "createdAt": "2026-11-04T16:00:02.464Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
+        ],
+        "license": "License",
+        "homepage": "https://worktrunk.dev",
+        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
+      },
+      "summaryData": {
+        "tags": [
+          "Git",
+          "CLI",
+          "Worktree",
+          "效率工具",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "Worktrunk：Git 并行开发的效率加速器",
+        "ability": [
+          "Worktree 极简管理",
+          "AI 代理并行开发",
+          "自动化工作流 Hooks",
+          "可视化状态概览",
+          "构建缓存共享"
+        ],
+        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Git Worktree 重度用户",
+          "AI 辅助编程开发者",
+          "高频切换分支的开发者",
+          "追求终端效率的极客"
+        ],
+        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+      }
+    },
+    {
+      "id": "59d07496-ce10-43d7-9f89-37e5fc9f7a87",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "repo": "FareedKhan-dev/kimi-k3-in-c",
+      "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "language": "C",
+      "stars": 10082,
+      "forks": 1610,
+      "starsAdded": 351,
+      "createdAt": "2026-11-04T16:00:02.533Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "avx2",
+          "c99",
+          "cpu-inference",
+          "deep-learning",
+          "from-scratch",
+          "inference-engine",
+          "kimi-k3",
+          "linear-attention",
+          "llm",
+          "llm-inference",
+          "machine-learning",
+          "memory-efficient",
+          "mixture-of-experts",
+          "moe",
+          "mxfp4",
+          "quantization",
+          "simd",
+          "systems-programming",
+          "transformer",
+          "zero-dependencies"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59",
+        "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU. - FareedKhan-dev/kimi-k3-in-c"
+      },
+      "summaryData": {
+        "tags": [
+          "C语言",
+          "大模型推理",
+          "MoE",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "kimi-k3-in-c 深度评测：176KB 纯 C 代码把 2.8 万亿参数大模型塞进 8GB 内存",
+        "ability": [
+          "零依赖纯 C99 实现大模型推理，整个引擎仅 176KB 代码",
+          "四步内存压缩（5560GB→8.24GB），端到端 675 倍压缩且零精度损失",
+          "输出与 PyTorch 参考实现比特级一致，跨平台跨编译器可复现",
+          "MXFP4 量化直通乘法，避免反量化带来的内存流量爆炸",
+          "完整拆解 LLM 底层数据流：MoE 路由、KDA 线性注意力、safetensors 解析、专家流式加载"
+        ],
+        "summary": "用 176KB 零依赖纯 C 代码，在 8GB 内存的普通 CPU 上跑通 2.78 万亿参数大模型的推理引擎，教学价值远大于实用价值。",
+        "category": [
+          "开发工具",
+          "AI 工程",
+          "技术学习"
+        ],
+        "suitable": [
+          "C/C++ 系统程序员",
+          "AI/LLM 推理工程师",
+          "想深入理解大模型底层原理的学生与转型者",
+          "极客爱好者（有 1.7TB 硬盘+大量耐心）",
+          "AI Infra 方向的学习者"
+        ],
+        "description": "该项目用 176KB 纯 C99 代码从零手写推理引擎，通过 MXFP4 直通乘法、MoE 专家按需流式加载、LRU 缓存等四步压缩，把 5.5TB 的 Kimi K3 权重压进 8.24GB 内存运行，输出与 PyTorch 比特级一致。但每 token 需约 26 秒且需下载 1.56TB 权重，实用性趋近于零，堪称'用 C 语言写的大模型教科书'。"
+      }
+    },
+    {
+      "id": "6a135783-8789-4a95-abcf-9cfa443ff221",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/garrytan/gstack",
+      "repo": "garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "stars": 139129,
+      "forks": 20615,
+      "starsAdded": 285,
+      "createdAt": "2026-11-04T16:00:02.512Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA - garrytan/gstack"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI 编码",
+          "Garry Tan",
+          "工作流",
+          "开源"
+        ],
+        "cover": "",
+        "title": "gstack 深度评测：Garry Tan 开源 AI 工程兵团，把 Claude Code 变成虚拟研发团队",
+        "ability": [
+          "30+ 角色化斜杠命令，一条命令切换 AI 工程身份（顾问/工程师/QA/安全官等）",
+          "角色间自动传递产出文档，形成 Think→Plan→Build→Review→Test→Ship 流水线",
+          "跨平台支持 10+ AI 编码代理（Claude Code、Cursor、Codex CLI、OpenCode 等）",
+          "/learn 经验记忆机制，跨会话累积项目踩坑知识",
+          "内置真实浏览器 QA 测试与 OWASP 安全审计能力"
+        ],
+        "summary": "YC 总裁 Garry Tan 开源的 Claude Code 斜杠命令包，把一个 AI 助手拆成 30+ 角色组成的虚拟工程团队，覆盖从规划到部署的完整研发流水线。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "技术型创始人和 CEO",
+          "独立开发者 / Solopreneur",
+          "Claude Code 新手",
+          "Tech Lead / 资深工程师",
+          "想学习 AI 编码工作流最佳实践的开发者"
+        ],
+        "description": "由 YC 总裁 Garry Tan 于 2026 年开源的 MIT 协议斜杠命令包，本质是一套精心设计的 Claude Code Skill（Markdown 文件）集合。通过 /office-hours、/review、/qa、/ship 等 30+ 命令，把 AI 切换成不同工程角色并自动衔接产出，作者自称借此实现数百倍产出提升，上线数月已获 133k+ Stars，是当前 AI 编码工作流领域最火的开源项目之一。"
+      }
+    },
+    {
+      "id": "2137dafe-5ff2-4d1d-9356-a65624e33fa5",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "repo": "The-PR-Agent/pr-agent",
+      "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+      "language": "Python",
+      "stars": 14602,
+      "forks": 2071,
+      "starsAdded": 279,
+      "createdAt": "2026-11-04T16:00:02.493Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "anthropic",
+          "code-review",
+          "coding-assistant",
+          "devtools",
+          "ollama",
+          "openai",
+          "pull-request",
+          "pull-requests"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.pr-agent.ai",
+        "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. - The-PR-Agent/pr-agent"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "代码评审",
+          "GitHub",
+          "AI Agent",
+          "私有化部署"
+        ],
+        "cover": "",
+        "title": "PR-Agent 深度评测：开源 AI 代码审查的祖师爷还能打吗",
+        "ability": [
+          "斜杠命令式 AI 代码评审（/review、/improve、/describe、/ask 等）",
+          "自动生成 PR 描述、变更总结和标签",
+          "PR 压缩策略，可处理超出模型上下文的大型 PR",
+          "支持 GitHub/GitLab/Bitbucket 等五大平台，可接入 OpenAI/Claude/本地模型等任意 LLM",
+          "通过 TOML 配置和自定义提示词深度定制评审规则"
+        ],
+        "summary": "一个用斜杠命令驱动的开源 AI 代码评审机器人，在 PR 评论里敲 /review 就能自动审查代码，支持私有化部署和任意大模型。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "对数据合规有要求、需要代码不出内网的企业团队",
+          "想低成本体验 AI 代码评审的独立开发者和小团队",
+          "想基于开源底座自研 AI 评审产品的工程师",
+          "需要自动生成 PR 描述和 CHANGELOG 的开源项目维护者"
+        ],
+        "description": "PR-Agent 是 AI 代码审查赛道的开山之作，由 Qodo 开源（Apache 2.0 协议）。在 PR 评论区输入斜杠命令即可触发结构化评审、代码改进建议和 PR 描述生成，精准定位到行号。它采用 PR 压缩和 JSON 提示词两项核心工程设计，平台、模型、部署方式三重中立，是企业私有化部署 AI 评审的首选。局限是缺乏全仓库上下文、存在 AI 评审通病（噪音与幻觉），且最尖端能力被留在闭源商业版中。"
+      }
+    },
+    {
+      "id": "804c1c81-1a5b-4423-a8cf-8afea6060dfe",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/scenario-labs/skills",
+      "repo": "scenario-labs/skills",
+      "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+      "language": "Python",
+      "stars": 2208,
+      "forks": 238,
+      "starsAdded": 224,
+      "createdAt": "2026-11-04T16:00:02.580Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-models",
+          "agent-skills",
+          "ai-agents",
+          "ai-art",
+          "blender",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "game-assets",
+          "game-development",
+          "generative-ai",
+          "image-generation",
+          "maya",
+          "mcp",
+          "model-context-protocol",
+          "skills-sh",
+          "unity",
+          "unreal-engine",
+          "video-generation",
+          "zbrush"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.skills.sh/scenario-labs/skills",
+        "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. - scenario-labs/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Scenario",
+          "游戏美术",
+          "AI 绘图",
+          "Agent 技能"
+        ],
+        "cover": "",
+        "title": "scenario-game-assets：基于 Scenario MCP 的游戏美术资产生成技能",
+        "ability": [
+          "通过 MCP 协议调用 Scenario 生成游戏美术素材",
+          "为 AI Agent 注入游戏艺术创作的程序性知识",
+          "支持角色、场景、道具等游戏资产生成",
+          "用自然语言指令驱动游戏美术生产流程"
+        ],
+        "summary": "一个让 AI Agent 通过 Scenario MCP 快速生成游戏美术资产的技能工具。",
+        "category": [
+          "游戏开发",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "游戏开发者",
+          "独立游戏团队",
+          "游戏美术师",
+          "MCP / AI Agent 工具爱好者"
+        ],
+        "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。"
+      }
+    },
+    {
+      "id": "3dd5e440-95dc-4c7b-a8fc-2ab62e68ac0b",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+      "repo": "MichaelCade/90DaysOfDevOps",
+      "description": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.",
+      "language": "Shell",
+      "stars": 30238,
+      "forks": 6786,
+      "starsAdded": 156,
+      "createdAt": "2026-11-04T16:00:02.558Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ansible",
+          "backup",
+          "containers",
+          "devops",
+          "iac",
+          "kubernetes",
+          "networking",
+          "terraform"
+        ],
+        "license": "License",
+        "homepage": "https://www.90daysofdevops.com/",
+        "description": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.  - GitHub - MichaelCade/90DaysOfDevOps: This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic."
+      },
+      "summaryData": {
+        "tags": [
+          "DevOps",
+          "开源项目",
+          "学习路线",
+          "DevSecOps",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "90DaysOfDevOps 深度评测：90 天打牢 DevOps 地基的开源学习地图",
+        "ability": [
+          "13 大专题体系化拆解 DevOps 全流程，拒绝碎片化工具清单",
+          "覆盖从 Go/Linux/网络到 Kubernetes/Terraform/CI-CD 的完整知识链",
+          "独家收录存储与数据保护专题（Day 84-90），全网少见",
+          "2023 卷聚焦 DevSecOps，由社区一线安全专家共笔",
+          "免费开源无厂商广告，提供社区维护的中文等多语言版本"
+        ],
+        "summary": "一份近 3 万 Star、三年三卷的开源 DevOps 系统化学习路线，每天 1 小时，90 天从零构建完整知识体系。",
+        "category": [
+          "开发工具",
+          "技术教程",
+          "开源项目"
+        ],
+        "suitable": [
+          "想转行 DevOps 的零基础小白",
+          "想补齐安全与数据保护短板的 1-3 年经验工程师",
+          "需要现成团队内训大纲的技术负责人",
+          "关注云原生备份与容灾的 SRE",
+          "准备 DevOps 面试的求职者"
+        ],
+        "description": "由 Veeam Field CTO Michael Cade 于 2022 年发起的开源学习项目，近 3 万 Star。以每天 1 小时、90 天为周期，用 13 个专题系统讲解 DevOps 全流程，从 Linux、网络、Git 到 Kubernetes、Terraform、CI/CD 和数据保护，后续还推出 DevSecOps 安全卷与 91 场社区视频。内容免费中立无带货，含中文版，是体系化入门的优质教材。"
+      }
+    },
+    {
+      "id": "5593eb21-798b-4def-85cc-a868a3ca4738",
+      "dateAdded": "20261105",
+      "type": "github-daily",
+      "url": "https://github.com/Thysrael/Horizon",
+      "repo": "Thysrael/Horizon",
+      "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+      "language": "Python",
+      "stars": 12367,
+      "forks": 1810,
+      "starsAdded": 121,
+      "createdAt": "2026-11-04T16:00:02.577Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "aggregator",
+          "feishu-bot",
+          "llm",
+          "mcp",
+          "news",
+          "openclaw",
+          "python",
+          "webhook"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.horizon1123.top",
+        "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达 - Thysrael/Horizon"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "信息聚合",
+          "自托管",
+          "AI 评分",
+          "RSS"
+        ],
+        "cover": "",
+        "title": "Horizon 深度评测：自托管 AI 新闻雷达，把信息筛选的编辑权还给你",
+        "ability": [
+          "多源聚合：一站式整合 Hacker News、Reddit、RSS、Twitter/X、GitHub 等信息源",
+          "AI 透明评分：0-10 分可配置阈值过滤，评分标准公开可调，拒绝黑盒推荐",
+          "Profile 编辑系统：为科技新闻、技术博客、AI 创作素材等不同内容匹配不同 AI 主编人设",
+          "跨源去重与社区讨论补充：自动合并重复报道，并附带 HN/Reddit 高赞评论作为参考",
+          "多通道投递：支持 GitHub Pages、邮件订阅、飞书/钉钉/Slack/Discord 推送及 MCP Server 接入 AI Agent"
+        ],
+        "summary": "一个开源自托管工具，把 HN、Reddit、RSS 等多个信息源聚合成按你口味打分排序的中英双语每日简报。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "效率工具"
+        ],
+        "suitable": [
+          "独立开发者与极客",
+          "AI 研究者与工程师",
+          "内容创作者与 Newsletter 主理人",
+          "投资人/行业分析师",
+          "自托管爱好者与 NAS 用户"
+        ],
+        "description": "Horizon 是上海交大 IPADS 实验室作者开源的自托管信息聚合流水线（约 1.1 万 Star，MIT 协议），用 Python 实现多源抓取、AI 评分、去重、翻译与日报生成，支持 Docker 部署和 GitHub Actions 定时运行。核心理念是'AI 当助手，不当主编'——过滤阈值和评分标准由用户自己定义，阅读品味不外包给算法。"
       }
     }
   ]
