@@ -1,6 +1,55 @@
 {
   "all": [
     {
+      "id": "1c0aad12-7177-4948-96cb-f6b6e1099e61",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "domain": "github.com",
+      "repo": "FareedKhan-dev/kimi-k3-in-c",
+      "description": "该项目用 176KB 纯 C99 代码从零手写推理引擎，通过 MXFP4 直通乘法、MoE 专家按需流式加载、LRU 缓存等四步压缩，把 5.5TB 的 Kimi K3 权重压进 8.24GB 内存运行，输出与 PyTorch 比特级一致。但每 token 需约 26 秒且需下载 1.56TB 权重，实用性趋近于零，堪称'用 C 语言写的大模型教科书'。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T15:07:03.196Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "C语言",
+          "大模型推理",
+          "MoE",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "kimi-k3-in-c 深度评测：176KB 纯 C 代码把 2.8 万亿参数大模型塞进 8GB 内存",
+        "ability": [
+          "零依赖纯 C99 实现大模型推理，整个引擎仅 176KB 代码",
+          "四步内存压缩（5560GB→8.24GB），端到端 675 倍压缩且零精度损失",
+          "输出与 PyTorch 参考实现比特级一致，跨平台跨编译器可复现",
+          "MXFP4 量化直通乘法，避免反量化带来的内存流量爆炸",
+          "完整拆解 LLM 底层数据流：MoE 路由、KDA 线性注意力、safetensors 解析、专家流式加载"
+        ],
+        "summary": "用 176KB 零依赖纯 C 代码，在 8GB 内存的普通 CPU 上跑通 2.78 万亿参数大模型的推理引擎，教学价值远大于实用价值。",
+        "category": [
+          "开发工具",
+          "AI 工程",
+          "技术学习"
+        ],
+        "suitable": [
+          "C/C++ 系统程序员",
+          "AI/LLM 推理工程师",
+          "想深入理解大模型底层原理的学生与转型者",
+          "极客爱好者（有 1.7TB 硬盘+大量耐心）",
+          "AI Infra 方向的学习者"
+        ],
+        "description": "该项目用 176KB 纯 C99 代码从零手写推理引擎，通过 MXFP4 直通乘法、MoE 专家按需流式加载、LRU 缓存等四步压缩，把 5.5TB 的 Kimi K3 权重压进 8.24GB 内存运行，输出与 PyTorch 比特级一致。但每 token 需约 26 秒且需下载 1.56TB 权重，实用性趋近于零，堪称'用 C 语言写的大模型教科书'。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
       "id": "47ddaecb-0cdd-476d-a6e0-32681b389cb1",
       "url": "https://github.com/Thysrael/Horizon",
       "domain": "github.com",

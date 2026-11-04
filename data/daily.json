@@ -95211,8 +95211,8 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 14093,
-      "forks": 965,
+      "stars": 14303,
+      "forks": 978,
       "starsAdded": 2463,
       "createdAt": "2026-11-03T16:00:02.255Z",
       "metaData": {
@@ -95277,8 +95277,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 3769,
-      "forks": 326,
+      "stars": 4085,
+      "forks": 346,
       "starsAdded": 2053,
       "createdAt": "2026-11-04T12:00:02.132Z",
       "metaData": {
@@ -95330,8 +95330,8 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 95796,
-      "forks": 10042,
+      "stars": 95973,
+      "forks": 10062,
       "starsAdded": 2006,
       "createdAt": "2026-11-03T16:00:02.300Z",
       "metaData": {
@@ -95404,8 +95404,8 @@
       "repo": "JiaFeiMiao-K-Cat/DiscImageStudio",
       "description": "",
       "language": "C#",
-      "stars": 6040,
-      "forks": 204,
+      "stars": 6142,
+      "forks": 212,
       "starsAdded": 1792,
       "createdAt": "2026-11-04T12:00:02.194Z",
       "metaData": {
@@ -95457,8 +95457,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 312309,
-      "forks": 26229,
+      "stars": 312564,
+      "forks": 26238,
       "starsAdded": 1376,
       "createdAt": "2026-11-03T16:00:02.284Z",
       "metaData": {
@@ -95574,8 +95574,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 112452,
-      "forks": 9774,
+      "stars": 112531,
+      "forks": 9779,
       "starsAdded": 1165,
       "createdAt": "2026-11-03T16:00:02.238Z",
       "metaData": {
@@ -95647,8 +95647,8 @@
       "repo": "floci-io/floci",
       "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
       "language": "Java",
-      "stars": 29256,
-      "forks": 3249,
+      "stars": 29329,
+      "forks": 3254,
       "starsAdded": 1082,
       "createdAt": "2026-11-03T16:00:02.291Z",
       "metaData": {
@@ -95711,8 +95711,8 @@
       "repo": "github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
       "language": "Python",
-      "stars": 146948,
-      "forks": 13184,
+      "stars": 147051,
+      "forks": 13197,
       "starsAdded": 810,
       "createdAt": "2026-11-04T12:00:02.179Z",
       "metaData": {
@@ -95884,8 +95884,8 @@
       "repo": "harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 138585,
-      "forks": 22125,
+      "stars": 138680,
+      "forks": 22138,
       "starsAdded": 615,
       "createdAt": "2026-11-04T12:00:02.188Z",
       "metaData": {
@@ -95952,8 +95952,8 @@
       "repo": "max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars": 10798,
-      "forks": 399,
+      "stars": 10846,
+      "forks": 403,
       "starsAdded": 524,
       "createdAt": "2026-11-03T16:00:02.275Z",
       "metaData": {
@@ -96118,6 +96118,55 @@
       }
     },
     {
+      "id": "714b4423-f1c0-4772-8cb8-b4db9ca94ca6",
+      "dateAdded": "20261104",
+      "type": "github-daily",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "repo": "FareedKhan-dev/kimi-k3-in-c",
+      "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "language": "C",
+      "stars": 10044,
+      "forks": 1608,
+      "starsAdded": 351,
+      "createdAt": "2026-11-04T15:00:38.766Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "C语言",
+          "大模型推理",
+          "MoE",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "kimi-k3-in-c 深度评测：176KB 纯 C 代码把 2.8 万亿参数大模型塞进 8GB 内存",
+        "ability": [
+          "零依赖纯 C99 实现大模型推理，整个引擎仅 176KB 代码",
+          "四步内存压缩（5560GB→8.24GB），端到端 675 倍压缩且零精度损失",
+          "输出与 PyTorch 参考实现比特级一致，跨平台跨编译器可复现",
+          "MXFP4 量化直通乘法，避免反量化带来的内存流量爆炸",
+          "完整拆解 LLM 底层数据流：MoE 路由、KDA 线性注意力、safetensors 解析、专家流式加载"
+        ],
+        "summary": "用 176KB 零依赖纯 C 代码，在 8GB 内存的普通 CPU 上跑通 2.78 万亿参数大模型的推理引擎，教学价值远大于实用价值。",
+        "category": [
+          "开发工具",
+          "AI 工程",
+          "技术学习"
+        ],
+        "suitable": [
+          "C/C++ 系统程序员",
+          "AI/LLM 推理工程师",
+          "想深入理解大模型底层原理的学生与转型者",
+          "极客爱好者（有 1.7TB 硬盘+大量耐心）",
+          "AI Infra 方向的学习者"
+        ],
+        "description": "该项目用 176KB 纯 C99 代码从零手写推理引擎，通过 MXFP4 直通乘法、MoE 专家按需流式加载、LRU 缓存等四步压缩，把 5.5TB 的 Kimi K3 权重压进 8.24GB 内存运行，输出与 PyTorch 比特级一致。但每 token 需约 26 秒且需下载 1.56TB 权重，实用性趋近于零，堪称'用 C 语言写的大模型教科书'。"
+      }
+    },
+    {
       "id": "9ab3a22d-c3ca-4d37-adef-699998c3f4a1",
       "dateAdded": "20261104",
       "type": "github-daily",
@@ -96125,8 +96174,8 @@
       "repo": "garrytan/gstack",
       "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
-      "stars": 139047,
-      "forks": 20609,
+      "stars": 139098,
+      "forks": 20612,
       "starsAdded": 285,
       "createdAt": "2026-11-04T12:00:02.191Z",
       "metaData": {
@@ -96178,8 +96227,8 @@
       "repo": "The-PR-Agent/pr-agent",
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars": 14517,
-      "forks": 2067,
+      "stars": 14574,
+      "forks": 2068,
       "starsAdded": 279,
       "createdAt": "2026-11-04T12:00:02.184Z",
       "metaData": {
@@ -96306,8 +96355,8 @@
       "repo": "scenario-labs/skills",
       "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
       "language": "Python",
-      "stars": 2105,
-      "forks": 233,
+      "stars": 2168,
+      "forks": 236,
       "starsAdded": 224,
       "createdAt": "2026-11-04T12:00:02.208Z",
       "metaData": {
@@ -96378,8 +96427,8 @@
       "repo": "MichaelCade/90DaysOfDevOps",
       "description": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.",
       "language": "Shell",
-      "stars": 30164,
-      "forks": 6783,
+      "stars": 30208,
+      "forks": 6784,
       "starsAdded": 156,
       "createdAt": "2026-11-04T12:00:02.201Z",
       "metaData": {
@@ -96440,8 +96489,8 @@
       "repo": "Thysrael/Horizon",
       "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
       "language": "Python",
-      "stars": 12298,
-      "forks": 1803,
+      "stars": 12338,
+      "forks": 1804,
       "starsAdded": 121,
       "createdAt": "2026-11-04T13:00:02.409Z",
       "metaData": {
