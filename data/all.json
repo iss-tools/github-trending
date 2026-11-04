@@ -1,6 +1,369 @@
 {
   "all": [
     {
+      "id": "47ddaecb-0cdd-476d-a6e0-32681b389cb1",
+      "url": "https://github.com/Thysrael/Horizon",
+      "domain": "github.com",
+      "repo": "Thysrael/Horizon",
+      "description": "Horizon 是上海交大 IPADS 实验室作者开源的自托管信息聚合流水线（约 1.1 万 Star，MIT 协议），用 Python 实现多源抓取、AI 评分、去重、翻译与日报生成，支持 Docker 部署和 GitHub Actions 定时运行。核心理念是'AI 当助手，不当主编'——过滤阈值和评分标准由用户自己定义，阅读品味不外包给算法。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T13:03:49.550Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "aggregator",
+          "feishu-bot",
+          "llm",
+          "mcp",
+          "news",
+          "openclaw",
+          "python",
+          "webhook"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.horizon1123.top",
+        "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达 - Thysrael/Horizon"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "信息聚合",
+          "自托管",
+          "AI 评分",
+          "RSS"
+        ],
+        "cover": "",
+        "title": "Horizon 深度评测：自托管 AI 新闻雷达，把信息筛选的编辑权还给你",
+        "ability": [
+          "多源聚合：一站式整合 Hacker News、Reddit、RSS、Twitter/X、GitHub 等信息源",
+          "AI 透明评分：0-10 分可配置阈值过滤，评分标准公开可调，拒绝黑盒推荐",
+          "Profile 编辑系统：为科技新闻、技术博客、AI 创作素材等不同内容匹配不同 AI 主编人设",
+          "跨源去重与社区讨论补充：自动合并重复报道，并附带 HN/Reddit 高赞评论作为参考",
+          "多通道投递：支持 GitHub Pages、邮件订阅、飞书/钉钉/Slack/Discord 推送及 MCP Server 接入 AI Agent"
+        ],
+        "summary": "一个开源自托管工具，把 HN、Reddit、RSS 等多个信息源聚合成按你口味打分排序的中英双语每日简报。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "效率工具"
+        ],
+        "suitable": [
+          "独立开发者与极客",
+          "AI 研究者与工程师",
+          "内容创作者与 Newsletter 主理人",
+          "投资人/行业分析师",
+          "自托管爱好者与 NAS 用户"
+        ],
+        "description": "Horizon 是上海交大 IPADS 实验室作者开源的自托管信息聚合流水线（约 1.1 万 Star，MIT 协议），用 Python 实现多源抓取、AI 评分、去重、翻译与日报生成，支持 Docker 部署和 GitHub Actions 定时运行。核心理念是'AI 当助手，不当主编'——过滤阈值和评分标准由用户自己定义，阅读品味不外包给算法。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
+      "id": "3a3a4910-a04c-45ba-bb9b-6fda4ed40b73",
+      "url": "https://github.com/scenario-labs/skills",
+      "domain": "github.com",
+      "repo": "scenario-labs/skills",
+      "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T12:25:25.251Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-models",
+          "agent-skills",
+          "ai-agents",
+          "ai-art",
+          "blender",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "game-assets",
+          "game-development",
+          "generative-ai",
+          "image-generation",
+          "maya",
+          "mcp",
+          "model-context-protocol",
+          "skills-sh",
+          "unity",
+          "unreal-engine",
+          "video-generation",
+          "zbrush"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.skills.sh/scenario-labs/skills",
+        "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. - scenario-labs/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Scenario",
+          "游戏美术",
+          "AI 绘图",
+          "Agent 技能"
+        ],
+        "cover": "",
+        "title": "scenario-game-assets：基于 Scenario MCP 的游戏美术资产生成技能",
+        "ability": [
+          "通过 MCP 协议调用 Scenario 生成游戏美术素材",
+          "为 AI Agent 注入游戏艺术创作的程序性知识",
+          "支持角色、场景、道具等游戏资产生成",
+          "用自然语言指令驱动游戏美术生产流程"
+        ],
+        "summary": "一个让 AI Agent 通过 Scenario MCP 快速生成游戏美术资产的技能工具。",
+        "category": [
+          "游戏开发",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "游戏开发者",
+          "独立游戏团队",
+          "游戏美术师",
+          "MCP / AI Agent 工具爱好者"
+        ],
+        "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
+      "id": "654d9fd9-f9ac-47aa-980f-d25db9d2a329",
+      "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+      "domain": "github.com",
+      "repo": "MichaelCade/90DaysOfDevOps",
+      "description": "由 Veeam Field CTO Michael Cade 于 2022 年发起的开源学习项目，近 3 万 Star。以每天 1 小时、90 天为周期，用 13 个专题系统讲解 DevOps 全流程，从 Linux、网络、Git 到 Kubernetes、Terraform、CI/CD 和数据保护，后续还推出 DevSecOps 安全卷与 91 场社区视频。内容免费中立无带货，含中文版，是体系化入门的优质教材。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T12:13:17.602Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ansible",
+          "backup",
+          "containers",
+          "devops",
+          "iac",
+          "kubernetes",
+          "networking",
+          "terraform"
+        ],
+        "license": "License",
+        "homepage": "https://www.90daysofdevops.com/",
+        "description": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.  - GitHub - MichaelCade/90DaysOfDevOps: This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic."
+      },
+      "summaryData": {
+        "tags": [
+          "DevOps",
+          "开源项目",
+          "学习路线",
+          "DevSecOps",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "90DaysOfDevOps 深度评测：90 天打牢 DevOps 地基的开源学习地图",
+        "ability": [
+          "13 大专题体系化拆解 DevOps 全流程，拒绝碎片化工具清单",
+          "覆盖从 Go/Linux/网络到 Kubernetes/Terraform/CI-CD 的完整知识链",
+          "独家收录存储与数据保护专题（Day 84-90），全网少见",
+          "2023 卷聚焦 DevSecOps，由社区一线安全专家共笔",
+          "免费开源无厂商广告，提供社区维护的中文等多语言版本"
+        ],
+        "summary": "一份近 3 万 Star、三年三卷的开源 DevOps 系统化学习路线，每天 1 小时，90 天从零构建完整知识体系。",
+        "category": [
+          "开发工具",
+          "技术教程",
+          "开源项目"
+        ],
+        "suitable": [
+          "想转行 DevOps 的零基础小白",
+          "想补齐安全与数据保护短板的 1-3 年经验工程师",
+          "需要现成团队内训大纲的技术负责人",
+          "关注云原生备份与容灾的 SRE",
+          "准备 DevOps 面试的求职者"
+        ],
+        "description": "由 Veeam Field CTO Michael Cade 于 2022 年发起的开源学习项目，近 3 万 Star。以每天 1 小时、90 天为周期，用 13 个专题系统讲解 DevOps 全流程，从 Linux、网络、Git 到 Kubernetes、Terraform、CI/CD 和数据保护，后续还推出 DevSecOps 安全卷与 91 场社区视频。内容免费中立无带货，含中文版，是体系化入门的优质教材。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
+      "id": "01bf72fd-4e2a-4290-960d-4e8c07a8290a",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "domain": "github.com",
+      "repo": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "description": "一款 C#/.NET 开源工具（GPL-3.0），能把任意图片转换成物理合法的 CD/DVD/BD-R 数据，用任意普通刻录机烧录后，盘面反射层即可浮现肉眼可见的浮雕图案。它继承并大幅升级 CDImage 项目，亮点是三次轨距标定算法与三介质全覆盖，堪称'数据驱动的光学雕刻机'。注意一次性盘片有报废风险，GUI 仅支持 Windows，定位是艺术玩具而非备份工具。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T12:10:20.406Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Contribute to JiaFeiMiao-K-Cat/DiscImageStudio development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "光盘刻录",
+          "CDImage",
+          "数据面绘图",
+          "GPL-3.0"
+        ],
+        "cover": "",
+        "title": "DiscImageStudio 深度评测：用普通刻录机把图片'刻'进光盘数据面",
+        "ability": [
+          "将任意图片编码为物理合法的 CD/DVD/BD-R 数据，刻录后盘面浮现浮雕图案",
+          "三介质全覆盖：CD-R（音轨/RAW）、DVD-R（ISO）、单层 BD-R（ISO+UDF 2.01）",
+          "三次轨距拟合标定算法，线条精度最高达 10⁻¹⁴，校准前后精度提升最高 1000 万倍",
+          "WPF 图形界面 + 统一命令行 + Linux/macOS 跨平台 CLI 三种入口",
+          "基于 Windows IMAPI2 的安全刻录层，不联网、不上传、无遥测，EXE 免安装自带运行时"
+        ],
+        "summary": "把图片转换成合法光盘数据，用普通刻录机刻完后，CD/DVD/蓝光的数据面会浮现肉眼可见的图案。",
+        "category": [
+          "开发工具",
+          "极客创意",
+          "复古数码"
+        ],
+        "suitable": [
+          "复古数码爱好者 / 光盘收藏家",
+          "独立音乐人 / Demo 小批量发行者",
+          "解谜游戏与密室逃脱设计师",
+          "光学存储 / 信号编码方向的学生和开发者",
+          "极客礼物制作者"
+        ],
+        "description": "一款 C#/.NET 开源工具（GPL-3.0），能把任意图片转换成物理合法的 CD/DVD/BD-R 数据，用任意普通刻录机烧录后，盘面反射层即可浮现肉眼可见的浮雕图案。它继承并大幅升级 CDImage 项目，亮点是三次轨距标定算法与三介质全覆盖，堪称'数据驱动的光学雕刻机'。注意一次性盘片有报废风险，GUI 仅支持 Windows，定位是艺术玩具而非备份工具。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
+      "id": "126fdcad-c9b8-4e74-a80c-2dfa3f3ad73a",
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "domain": "github.com",
+      "repo": "The-PR-Agent/pr-agent",
+      "description": "PR-Agent 是 AI 代码审查赛道的开山之作，由 Qodo 开源（Apache 2.0 协议）。在 PR 评论区输入斜杠命令即可触发结构化评审、代码改进建议和 PR 描述生成，精准定位到行号。它采用 PR 压缩和 JSON 提示词两项核心工程设计，平台、模型、部署方式三重中立，是企业私有化部署 AI 评审的首选。局限是缺乏全仓库上下文、存在 AI 评审通病（噪音与幻觉），且最尖端能力被留在闭源商业版中。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T12:07:14.325Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "anthropic",
+          "code-review",
+          "coding-assistant",
+          "devtools",
+          "ollama",
+          "openai",
+          "pull-request",
+          "pull-requests"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.pr-agent.ai",
+        "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. - The-PR-Agent/pr-agent"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "代码评审",
+          "GitHub",
+          "AI Agent",
+          "私有化部署"
+        ],
+        "cover": "",
+        "title": "PR-Agent 深度评测：开源 AI 代码审查的祖师爷还能打吗",
+        "ability": [
+          "斜杠命令式 AI 代码评审（/review、/improve、/describe、/ask 等）",
+          "自动生成 PR 描述、变更总结和标签",
+          "PR 压缩策略，可处理超出模型上下文的大型 PR",
+          "支持 GitHub/GitLab/Bitbucket 等五大平台，可接入 OpenAI/Claude/本地模型等任意 LLM",
+          "通过 TOML 配置和自定义提示词深度定制评审规则"
+        ],
+        "summary": "一个用斜杠命令驱动的开源 AI 代码评审机器人，在 PR 评论里敲 /review 就能自动审查代码，支持私有化部署和任意大模型。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "对数据合规有要求、需要代码不出内网的企业团队",
+          "想低成本体验 AI 代码评审的独立开发者和小团队",
+          "想基于开源底座自研 AI 评审产品的工程师",
+          "需要自动生成 PR 描述和 CHANGELOG 的开源项目维护者"
+        ],
+        "description": "PR-Agent 是 AI 代码审查赛道的开山之作，由 Qodo 开源（Apache 2.0 协议）。在 PR 评论区输入斜杠命令即可触发结构化评审、代码改进建议和 PR 描述生成，精准定位到行号。它采用 PR 压缩和 JSON 提示词两项核心工程设计，平台、模型、部署方式三重中立，是企业私有化部署 AI 评审的首选。局限是缺乏全仓库上下文、存在 AI 评审通病（噪音与幻觉），且最尖端能力被留在闭源商业版中。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
+      "id": "161627a7-cbdc-4c38-9f5b-4107ff2fa937",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "domain": "github.com",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-04T12:03:43.695Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      },
+      "type": "project",
+      "dateAdded": "20261104"
+    },
+    {
       "id": "5acd606e-b71d-4e58-a13a-f22bfe1e0c6c",
       "url": "https://github.com/Usagi-org/ai-goofish-monitor",
       "domain": "github.com",
@@ -5288,10 +5651,10 @@
       "forks": 0,
       "createdAt": "2026-10-04T12:21:14.253Z",
       "metaData": {
-        "forks": "20100",
-        "stars": "135270",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
-        "license": "licenses",
+        "license": "MIT license",
         "homepage": "",
         "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA - garrytan/gstack"
       },
@@ -13603,8 +13966,8 @@
       "forks": 0,
       "createdAt": "2026-09-11T11:44:39.739Z",
       "metaData": {
-        "forks": "12311",
-        "stars": "137449",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "copilot",
@@ -13616,7 +13979,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://github.github.com/spec-kit/",
-        "description": "💫 Toolkit to help you get started with Spec-Driven Development - github/spec-kit"
+        "description": "💫 Toolkit to help you get started with SDD or any other process! - github/spec-kit"
       },
       "summaryData": {
         "tags": [
@@ -21549,8 +21912,8 @@
       "forks": 0,
       "createdAt": "2026-08-27T11:14:25.762Z",
       "metaData": {
-        "forks": "8161",
-        "stars": "64453",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent",
           "agentic-ai",
@@ -25089,8 +25452,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T14:49:29.867Z",
       "metaData": {
-        "forks": "20134",
-        "stars": "128753",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai-video-generator",
           "content-creation",

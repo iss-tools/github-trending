@@ -1,0 +1,223 @@
+# NVIDIA/auto-ontology
+
+[GitHub URL](https://github.com/NVIDIA/auto-ontology)
+
+
+## NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」
+
+> NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。
+
+- **Tags**: NVIDIA, 语义层, 知识图谱, MCP, Text-to-SQL
+- **Category**: 开源项目, 开发工具, AI 基础设施
+
+## Details
+
+# NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」
+> **一句话总结**：NVIDIA Auto Ontology 是一个 Apache 2.0 开源的 Python 框架，用 LLM 自动从企业元数据里生成「业务语义层 + 知识图谱」，并通过 MCP / CLI / REST API 把「这列数据到底是什么意思」喂给任意 Agent——它是 2026 年 NVIDIA GTC 柏林上发布的 **Agent Knowledge Foundation** 生态里最关键的那块「地基」。
+---
+## 一、它到底是什么：先打一个比方
+想象一下你刚入职一家公司，被丢进一个有 2000 张表的 Snowflake 仓库，然后老板问你「上季度活跃客户贡献的毛利率是多少？」——你大概率会先去翻 BI 词典、问老同事「活跃客户的口径是什么」「毛利率分子分母各是什么」。**这就是 Agent 每天在企业数据仓库上面临的困境。**
+NVIDIA 官方 README 把这件事说得很直白：*「Agentic analytics 的真正瓶颈不是速度而是可靠性：一个营收数字答得再快，数字本身错了就一文不值。」*
+Auto Ontology 做的事情，就是**扮演那位「老同事」**：
+- 告诉 Agent **数据在哪**（物理表和列的位置）
+- 告诉 Agent **它意味着什么**（"tier" 和 "plan" 是同一回事；"活跃客户" 在营销口径是 90 天有登录，财务口径是 12 个月有付费）
+- 告诉 Agent **能不能用、怎么用、从哪来、和什么相似**
+如果用一句行业黑话来说：**它是 Text-to-SQL 的 "Grounding Layer"，是 GraphRAG 在结构化数据上的 "企业级版本"**。NVIDIA 产品副总裁 Adel El Hallak 在接受 The New Stack 采访时直接质疑过传统 RAG：*「RAG was awesome, but is it good enough?」*——他给出的替代方案就是本体 + 知识图谱。
+---
+## 二、背景与出处：一个被「买」出来的项目
+理解 Auto Ontology 的设计哲学，必须看它的血统。
+- **2026 年 2 月**，NVIDIA 以约 **7500 万美元** 收购了以色列初创公司 **Illumex**，这家公司主营业务就是「自动化构建企业语义层与本体」
+- **2026 年 10 月**，Auto Ontology 作为 **Agent Knowledge Foundation** 的核心组件在 GTC 柏林正式亮相
+- **2026 年 11 月初**仓库开源到 GitHub，3 天内冲上 Hacker News，截至 11 月 3 日已有约 **1100 Stars / 112 Forks**
+这套生态的兄弟组件包括 Nemotron Retriever（嵌入/重排模型）、Kumo（关系型数据基础模型，NVIDIA 在 6 月以 4 亿美元收购 Kumo）、cuGraph / cuDF 等 CUDA-X 数据库加速库。Auto Ontology 在其中的角色是**第 3 步「理解」**——前面准备数据、做检索，最后靠本体把「数据」变成「业务事实」。
+> **为什么值得关心它的出身？** 因为这套架构不是从 0 到 1 的玩具，而是 Illumex 团队多年「给银行/电信/零售做语义层落地」经验的工程化沉淀，里面满是「企业真实痛点」的妥协痕迹——比如模型调用慢、语义层编译失败时的诡异状态、Viewer 权限必须继承到底，这些都是踩过坑的人才会写出的问题处理。
+---
+## 三、核心亮点与功能剖析
+### 3.1 五个动词——把「语义层」拆成一则口诀
+README 把整个框架浓缩成 5 个动词，这是理解 Auto Ontology 最好的目录：
+| 动词 | 做什么 | 对应的痛点 |
+|---|---|---|
+| **Discover** | 从元数据自动生成企业本体、对接已有语义模型、构建 AI-ready 知识图谱 | 人工标注语义层要数月 |
+| **Ground** | 给 Agent 提供可信的指标/实体/关系定义，跨系统调和冲突定义 | "活跃客户" 每个部门口径都不一样 |
+| **Validate** | 用已认证定义 + lineage 校验生成的 SQL，每次返回都带 provenance | Agent 编出貌似合理的 SQL 但语义错了 |
+| **Expose** | 通过 MCP、CLI、REST API 暴露给任意 Agent harness | 语义层被锁死在某个 BI 工具里 |
+| **Learn** | 把人工修正回灌进本体，让共享上下文越用越准 | 语义层是一次性工程，慢慢腐化 |
+**其中最有想法的是 "Learn" 这一步**——很多语义层产品把本体当一次性工程，Auto Ontology 把它当**活文档**，错误修正可以持续沉淀。
+### 3.2 技术架构：一份非常「现实」的选型
+Auto Ontology 的 4 个核心服务值得逐条点评，因为这套技术栈非常「2026 年生成式 AI 网关」的典型范式：
+| 组件 | 技术栈 | 角色 | 默认端口 |
+|---|---|---|---|
+| **Frontend** | Next.js 16 + React 19 + Tailwind 4 + Better Auth + Prisma | Web UI、认证、API 网关 | 3000 |
+| **Backend** | FastAPI (Python 3.12+) + LangChain | Chat / NL-to-SQL / Catalog API | 3001 |
+| **Ingestion Worker** | FastAPI (Python 3.12+) | 摄入表数据、写 embedding | 3002 |
+| **存储** | Postgres + pgvector | App 元数据 + 本体 + 向量库 | 5432 |
+| **凭据存储**（可选） | HashiCorp Vault | 数据库连接凭据加密 | — |
+**几个值得点评的设计选择**：
+- **本体不是单独的图数据库，而是和它描述的数据一起住在 Postgres 里**。这是个很务实的决定——多数企业不想再养一个 Neo4j / NebulaGraph。pgvector 同时承担了向量检索和关系存储。
+- **认证和权限统一收口在 Next.js 网关层**（`frontend/auth/resolve-user.ts`），所有 MCP/API/CLI 调用都过同一个门。这意味着 **MCP 会话继承登录用户的权限**——一个 viewer 的 token 永远拿不到 admin 数据。这是很多 Agent 项目忽视的关键安全细节。
+- **API Token 只存 SHA-256 哈希**、不可自己续签自己、撤销立即生效——教科书级的 token 设计。
+### 3.3 MCP Server：9 个只读工具，故意「做减法」
+Auto Ontology 的 MCP 服务器是这个项目最值得研究的部分。它对外只暴露 **9 个只读工具**：
+```
+ask_question              # 主入口：自然语言问题 → 答案 + SQL + 数据行（分开返回）
+check_answerable          # 廉价预检：这个问题语义层能不能答
+check_readiness           # 部署体检：语义层编译了吗？数据库通了吗？
+search_terms              # 业务术语搜索
+get_term                  # 单个术语的定义、同义词、关联术语
+get_term_columns          # 术语映射到的物理列
+get_term_sql_attributes   # 术语下的 SQL 属性
+get_sql_attribute         # 单个 SQL 属性表达式
+describe_table            # 表结构 + 关联术语 + SQL 属性一锅端
+```
+**最值得点赞的设计**：文档里明确写着——*「deliberately no tool for browsing databases, schemas, or raw columns」*，故意不提供原始 schema 浏览工具。NVIDIA 的设计哲学是：**一旦给 Agent 浏览原始表的工具，它就会绕过语义层去直接猜表**，整层 grounding 就白做了。这是所有自研 MCP Server 的人都该记住的一条经验：「**Expose meaning, not plumbing**」。
+`ask_question` 的几个细节：
+- 调用 `POST /api/chat/completions`，跟 Web UI 走的是同一条 NL-to-SQL Agent 链路
+- 因为串了多个模型调用，**典型耗时「几十秒」**，默认 MCP 超时 900 秒——为慢调用做好准备
+- 返回 `answer / sql / rows` 三个独立字段，agent 可以直接复用 SQL 而不用从 prose 里抠出来
+- **结果硬性 cap 100 行**，超出部分通过 `row_count` 和 `truncated` 字段告知
+- 整个过程通过 MCP **progress notification** 流式通知进度
+### 3.4 模型配置：三元组 + 兜底链
+Auto Ontology 默认走 NVIDIA NIM（NVIDIA Inference Microservices），但任何 **OpenAI 兼容端点都能接**。配置采用「三元组（triplet）+ 兜底」模式：
+```
+<prefix>_ENDPOINT   # 端点 URL
+<prefix>_API_KEY    # 密钥
+<prefix>_MODEL      # 模型名
+```
+5 个 prefix 各管一个角色：
+| Prefix | 角色 |
+|---|---|
+| `DEFAULT_MODELS` | 全局兜底，未配置的字段全部回落到它 |
+| `REASONING` | 主 Chat / NL-to-SQL 模型 |
+| `NON_REASONING` | 轻量实体抽取模型 |
+| `EMBED` | 嵌入模型（**注意：ingest 和 query 必须一致**） |
+| `RERANK` | 检索重排模型 |
+**默认模型组合**（`.env.example`）：
+- LLM: `nvidia/nemotron-3-nano-30b-a3b`（30B MoE，A3B 表示激活约 3B 参数）
+- Embedding: `nvidia/nemotron-3-embed-1b`
+- Reranker: `nvidia/llama-nemotron-rerank-vl-1b-v2`
+**这套设计的精妙之处**在于：你可以把 `REASONING` 指向更强的 Claude / GPT，但保留便宜的 Nemotron 做抽取和嵌入——**控制成本的同时不让语义质量掉链子**。这正是 NVIDIA 最近力推「小模型在 Agent Pipeline 里分工」的整体策略。
+---
+## 四、快速上手卡片：5 分钟看懂部署
+### 🐳 部署体验
+```bash
+# 1. 克隆仓库
+git clone <repo-url> auto_ontology && cd auto_ontology
+# 2. 配置环境变量
+cp .env.example .env
+# 必填：AUTH_SECRET、APP_URL、DEFAULT_MODELS_API_KEY（nvapi-...）、
+#       POSTGRES_*、CONNECTION_STRINGS
+# 3. 启动整套栈（前端 + 后端 + 摄入 worker + Postgres + pgAdmin）
+docker compose up -d --build
+# 4. 访问 Web UI
+#    http://localhost:3000  (前端)
+#    http://localhost:3001  (后端 API)
+#    http://localhost:5050  (pgAdmin)
+```
+**必须知道的坑**：
+- **不填 `AUTH_SECRET` 和 `APP_URL`，所有页面都会报 Better Auth "default secret" 错误**——这是最容易卡住新人的地方
+- `POSTGRES_PORT` 只影响宿主机端口映射，容器间通信永远走内部 5432
+- 如果重启后 UI 没有左侧导航栏，清掉 `localhost:3000` 的 cookie（`AUTH_SECRET` 改了会让旧 session 失效）
+- **不配 Vault 时，UI 添加的数据库连接（包括密码）会以明文 JSON 存进 Postgres**——生产环境务必启用 Vault（四个变量都设齐才会启用，部分配置会被忽略并警告）
+- 生产环境用 Kubernetes：仓库带 `DEPLOYMENT.md` 和 Helm chart，NGC catalog 也提供了现成的 backend 容器
+### 🤖 模型与硬件门槛
+| 角色建议 | 推荐配置 | 说明 |
+|---|---|---|
+| **试水/原型** | NVIDIA hosted NIM（`build.nvidia.com` 申请 `nvapi-` key） | 零 GPU，按 token 计费，开箱即用 |
+| **小规模生产** | 自托管 Nemotron Nano 30B A3B（激活约 3B） | 单张 24GB GPU 可跑 |
+| **高质量 Agent** | `REASONING` 指向 Claude / GPT-4o 等更强模型，Nemotron 做嵌入/重排 | 评测 harness 默认就是这么测的 |
+**最简 MCP 接入示例**（任何一个支持 MCP 的 Client 都能用）：
+```bash
+# MCP server 是一个无状态的 HTTP 客户端，只需要指向你的部署
+AUTO_ONTOLOGY_API_URL=https://your-deployment.example.com \
+  npx auto-ontology-mcp
+```
+在 Cursor / Claude Desktop 里配上之后，你可以直接问：
+```
+> 用户输入：上季度有多少活跃客户下了订单？
+  
+> ask_question 返回（简化）：
+{
+  "answer": "1,247 active customers placed orders in Q3...",
+  "sql": "SELECT COUNT(DISTINCT c.customer_id) FROM orders o 
+          JOIN customers c ON c.id = o.customer_id 
+          WHERE o.order_date >= '2026-07-01' ...",
+  "rows": [[1247]],
+  "row_count": 1,
+  "truncated": false
+}
+```
+注意返回结构里 **SQL 是独立字段**——这是刻意为之，方便下游 Agent 复用、审计、缓存，而不是把 SQL 藏在自然语言回答里。
+---
+## 五、目标人群与收益：谁该装它？
+| 用户角色 | 能拿到什么 | 不建议装的理由 |
+|---|---|---|
+| **企业数据平台团队** | 把内部几十个系统的「客户」「订单」「营收」口径统一进一个可认证的本体，让全公司的 Agent 调用同一份语义 | 已有成熟 dbt semantic layer + Cube 且满意的可跳过 |
+| **Agent 工程师** | 接 MCP 就能让 Agent 在企业数据库上写出「语义正确」的 SQL，不用自己重造 grounding layer | 只做个人 RAG / 单库 demo 的不需要 |
+| **BI / Analytics 工程师** | 自动生成 80% 的语义层初稿，把精力集中在「认证」和「边界 case」上 | 业务规模小、表不到 50 张的用 dbt MetricFlow 更轻 |
+| **AI 产品创业者** | 接入企业客户的多源数据时省掉 90% 的元数据清洗工程 | 单一 SaaS 数据源场景直接用 vendor API 就够 |
+| **学术研究者** | 评测 harness（auto-ontology-eval）本身就是个 NeMo Gym + 多数据集的 text-to-SQL 评测范式 | 只关心 benchmark 排名的会失望（见下文局限） |
+NVIDIA 自报的核心收益数据是：**「本体构建时间减少 90%」**——这个数字在他们的内测里来自 Illumex 团队的实际交付经验，但请注意这是 NVIDIA 自己测的，没有第三方复现。
+---
+## 六、竞品对比：它在语义层生态里的位置
+| 维度 | **NVIDIA Auto Ontology** | **Wren AI** | **Cube Core** | **dbt MetricFlow** |
+|---|---|---|---|---|
+| **License** | Apache 2.0（单仓） | Apache 2.0 核心（open core） | Apache 2.0 后端 / MIT 客户端 | Apache 2.0 (v0.209.0+) |
+| **语义层怎么建** | LLM 从元数据自动生成，再人工认证 | Agent 协助在 Git 里写 context 文件 | 代码定义 | 在 dbt 项目里用 YAML 代码定义 |
+| **Agent 接口** | **MCP + CLI + REST API（原生）** | MCP + CLI + SDK | SQL / REST / GraphQL | Python 库 + CLI |
+| **数据源** | Databricks / Postgres / Snowflake / DuckDB | **22+ 数据源** | 所有 SQL 数据源 | 经由 dbt adapters |
+| **默认模型** | Nemotron via NIM（可换任意 OpenAI 兼容） | 未公开 | 不适用（纯语义层） | 不适用 |
+| **强项** | 自动生成本体 + 知识图谱 + 学习回路 | 数据源广、轻量 | BI 集成生态最成熟 | 与 dbt 工作流零摩擦 |
+| **短板** | 数据源少（4 种）、不接受外部 PR | 语义治理深度不如 NVIDIA | 没有 LLM 自动生成 | 没有 MCP、Agent 适配弱 |
+**关键差异点**：传统语义层产品（Cube / dbt MetricFlow）的核心理念是「**人写代码定义语义**」——工程化强、可控性强，但冷启动成本高。Auto Ontology 反过来打「**LLM 自动生成，人来认证**」这条路线，赌的是企业不愿意再花 3 个月手写 dbt semantic layer。
+另一个值得注意的对手是 **Databricks 的 Genie Ontology**（2026 年 6 月发布）——NVIDIA 显然在和云厂商的语义层产品正面竞争，并选择通过「开放 + 不绑定平台」的方式切入（El Hallak 原话：「我不打算跟 Snowflake 竞争，相反我要跟他们合作」）。
+---
+## 七、社区活跃度与生命力
+- **GitHub 数据**（2026-11-03）：约 **1100 Stars / 112 Forks**，发布 3 天冲上 Hacker News
+- **Issue 处理**：23 个 Open Issues，部分可追溯到 9 月份，**Issue 编号已经冲到 #403**——说明内部开发和 issue 提交都很活跃
+- **配套 eval 仓库**（`NVIDIA/auto-ontology-eval`）：357 commits、4 PRs，**但是只有 8 stars / 2 forks**——评测仓库还是 NVIDIA 内部驱动
+- **外部贡献**：**README 明确写着 "This project is currently not accepting external contributions"**——这是 NVIDIA 开源项目常见的「观察期」做法，Apache 2.0 允许你 fork 但官方不收 PR
+- **周边生态**：已挂在 NGC Catalog（Helm chart）和 NVIDIA Skills 仓库（`nvidia-ontology-query` skill），企业部署链路已经齐备
+**活跃度评级**：⭐⭐⭐⭐☆（核心仓库极活跃但单源，社区生态刚起步）
+---
+## 八、局限与不足：不能回避的几个硬伤
+评测必须诚实。Auto Ontology 虽然工程基础扎实，但目前的几条「硬伤」值得知道：
+### 1. **零公开 Text-to-SQL 基准成绩**
+这是最致命的一条。NVIDIA 自报了「本体构建时间 -90%」，但 **「本体-grounded Agent 比纯 schema-only Agent 准确率高多少」这个最关键的问题，没有任何公开数字**。eval 仓库只是个 harness，没有 published results。
+### 2. **Eval harness 的对比臂不等价**
+auto-ontology-eval 文档自己承认了两个限制：
+- **Few-shot exemplars 和 value anchors 只喂给 ontology arm，不喂给 control arm**——所以测出的 delta 包含了这些额外输入，不只是 grounding 本身的贡献
+- 默认对照臂和 Agent 臂都路由到 **AWS Bedrock 上的 Claude Opus 4.8 / Sonnet 5.5**（通过 NVIDIA 推理网关）——这是个很昂贵的配置，也意味着 NVIDIA 官方推荐的高质量场景要接第三方强模型，纯 Nemotron 默认模型的实际能力并未被官方测试
+### 3. **数据源支持偏窄**
+目前只支持 **Databricks / Postgres / Snowflake / DuckDB** 4 种，对比 Wren AI 的 22+ 还差得远。MySQL、SQL Server、Oracle 等企业里依然庞大的存量数据源暂未原生支持。
+### 4. **不接受外部贡献**
+ fork 可以，PR 进不去。这意味着：
+- 你遇到 bug 只能等 NVIDIA 修
+- 不能像 Cube、dbt 那样靠社区 PR 加新数据源
+- 企业级深度定制只能走 fork 维护的「孤儿分支」路线
+### 5. **调用延迟高**
+`ask_question` 是一个串行多模型调用的完整 Agent 流程，**典型耗时「数十秒」，默认 MCP 超时设到 900 秒**。在 interactive BI 场景下，这个延迟比 Cube / dbt 直接执行预编译 SQL 慢一个数量级。NVIDIA 把宝押在「准确率优先于速度」上，但企业用户是否接受这个 trade-off 还要观察。
+### 6. **MCP 100 行结果 cap**
+对做大表导出、聚合明细的场景不够用，需要在 SQL 层先做聚合。
+### 7. **风险点：暗依赖与免责声明**
+README 有个不起眼的免责声明——*「本软件自动检索、访问或与外部材料交互」*——意味着对 hosted NVIDIA API 的服务条款、配置的其他模型端点、以及源数据库本身，**合规责任都在用户**。可选的 **KumoRFM 预测服务**只在设了 `KUMO_RFM_API_KEY` 时激活，不留神可能开了自己不知道的服务。
+### 8. **没有公开的第三方复现**
+目前所有性能数据都来自 NVIDIA 自己（Illumex 团队），尚无独立机构或企业用户的公开案例复盘。VAST Data 有一个「healthcare agent knowledge foundation」demo，但属于商业合作。
+---
+## 九、结语与行动建议
+### 🎯 终极评判
+**Auto Ontology 是 2026 年企业 Agent 语义基础设施这个赛道上工程品质最高、设计哲学最成熟的开源项目之一，但它仍是一个「基础设施项目」而非「产品」**——它把最脏的活（自动生成、跨系统调和、MCP 暴露、学习回路）做了，但把最关键的「可信度证明」（benchmark 数字）留给了用户自己。
+**适合入场的信号**：
+- 你已经有 50+ 张表、多个数据源、多种「客户/营收」口径，正打算自己手写语义层 → **直接装，省 3 个月**
+- 你在做 Agent + 企业数据的 POC，需要 grounding layer → **强烈推荐，MCP 接入 5 分钟搞定**
+- 你在研究 Agent 可信度 / Grounding 技术 → **代码本身就是最好的研究素材，especially MCP server 设计**
+**应该等等再上的信号**：
+- 数据源不在 4 种支持范围内
+- 不接受 fork + 内部维护的成本
+- 必须看到第三方 benchmark 数据才能上生产
+- 调用延迟要求 P95 < 5 秒
+### 📋 行动清单
+1. **第一晚**：拉仓库、`docker compose up`、用 DuckDB 喂一张 demo 表、Web UI 里跑几个问题——感受自动生成本体的过程
+2. **第一周**：把 MCP server 接到 Claude Desktop / Cursor，跑 `check_readiness`，理解「语义层编译 vs 数据库连通」双状态的 difference
+3. **第一个月**：跑一遍 auto-ontology-eval 的 BIRD Mini-Dev（500 题），**自己测出 ontology-grounded vs schema-only 的 delta**——这是目前唯一能拿到真实数字的方法
+4. **第一个季度**：业务专家认证前 50 个核心术语，开启 Learn 回路，观察 Agent 准确率随使用如何提升
+**一句话收尾**：在 RAG 已经不够好、Agent 必须理解企业数据的这个时间节点，Auto Ontology 给出了一个非常 NVIDIA 风格的答案——**用最强的模型 + 最稳的工程 + 最开放的协议去打最难啃的语义层问题**。它未必是你今天就要部署的生产系统，但绝对是你接下来半年绕不开的研究对象。

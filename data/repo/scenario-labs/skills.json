@@ -1,0 +1,73 @@
+{
+  "id": "3a3a4910-a04c-45ba-bb9b-6fda4ed40b73",
+  "url": "https://github.com/scenario-labs/skills",
+  "domain": "github.com",
+  "repo": "scenario-labs/skills",
+  "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-11-04T12:25:25.251Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "3d-models",
+      "agent-skills",
+      "ai-agents",
+      "ai-art",
+      "blender",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "game-assets",
+      "game-development",
+      "generative-ai",
+      "image-generation",
+      "maya",
+      "mcp",
+      "model-context-protocol",
+      "skills-sh",
+      "unity",
+      "unreal-engine",
+      "video-generation",
+      "zbrush"
+    ],
+    "license": "MIT license",
+    "homepage": "https://www.skills.sh/scenario-labs/skills",
+    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. - scenario-labs/skills"
+  },
+  "summaryData": {
+    "tags": [
+      "MCP",
+      "Scenario",
+      "游戏美术",
+      "AI 绘图",
+      "Agent 技能"
+    ],
+    "cover": "",
+    "title": "scenario-game-assets：基于 Scenario MCP 的游戏美术资产生成技能",
+    "ability": [
+      "通过 MCP 协议调用 Scenario 生成游戏美术素材",
+      "为 AI Agent 注入游戏艺术创作的程序性知识",
+      "支持角色、场景、道具等游戏资产生成",
+      "用自然语言指令驱动游戏美术生产流程"
+    ],
+    "summary": "一个让 AI Agent 通过 Scenario MCP 快速生成游戏美术资产的技能工具。",
+    "category": [
+      "游戏开发",
+      "AI 编程",
+      "开发工具"
+    ],
+    "suitable": [
+      "游戏开发者",
+      "独立游戏团队",
+      "游戏美术师",
+      "MCP / AI Agent 工具爱好者"
+    ],
+    "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。"
+  },
+  "contentDetail": "name: scenario-game-assetsdescription: Use when creating game art through Scenario MCP…Instructions(加载到 Agent 上下文的程序性知识)",
+  "type": "project",
+  "dateAdded": "20261104"
+}
