@@ -97973,5 +97973,896 @@
         "description": "LZ4 是 Yann Collet 主导开发的无损压缩算法库，通过极简的 LZ77 实现、放弃熵编码换来极致速度，解压速度是 zlib 的 10 倍以上。它不是压缩比王者，但在实时热路径场景至今无对手，是每天默默节省大量 CPU 时间的隐形冠军。局限是压缩比不如 zstd、CLI 不支持多线程。"
       }
     }
+  ],
+  "20261106": [
+    {
+      "id": "140ddc6a-120c-450a-b8f8-08fc7af2e997",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 6815,
+      "forks": 539,
+      "starsAdded": 2707,
+      "createdAt": "2026-11-05T17:00:02.398Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
+      "id": "f6c9b750-964b-4ffb-a4bb-feeb04f473ad",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "repo": "vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "stars": 16465,
+      "forks": 1151,
+      "starsAdded": 2173,
+      "createdAt": "2026-11-05T17:00:02.646Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "accessibility",
+          "accessibility-api",
+          "ai-agents",
+          "automation",
+          "cli",
+          "computer-use",
+          "computer-use-agent",
+          "computer-use-agents",
+          "desktop-automation",
+          "macos",
+          "mcp",
+          "rust"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev/desktop",
+        "description": "Computer use CLI for AI agents. Contribute to vercel-labs/agent-desktop development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Computer Use",
+          "开源项目",
+          "桌面自动化",
+          "Vercel"
+        ],
+        "cover": "",
+        "title": "agent-desktop 深度评测：让 AI Agent 像操作 DOM 一样操控电脑桌面",
+        "ability": [
+          "通过操作系统无障碍树结构化读取桌面 UI，无需截图与视觉模型",
+          "Ref 引用机制让操作可定位、可验证、失败可重试",
+          "Skeleton 加按需下钻压缩 token 消耗（自报节省 78%-96%）",
+          "默认 headless 后台运行，不抢鼠标焦点，支持多 Agent 并行",
+          "模型中立，任意大模型均可调用，自带面向 Agent 的使用手册"
+        ],
+        "summary": "Vercel 开源的 Rust CLI 工具，让 AI Agent 无需截图、直接读取系统无障碍树来精准操控 macOS/Windows/Linux 桌面应用。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "构建桌面 Agent 工作流的开发者",
+          "RPA 与自动化测试工程师",
+          "想让编码 Agent 操控本地软件的效率玩家",
+          "无障碍与辅助技术从业者",
+          "关注 Computer Use 赛道的技术研究者"
+        ],
+        "description": "agent-desktop 是 Vercel Labs 开源的 Rust CLI 与 C 库，核心思路是不让 AI 看屏幕截图，而是读取操作系统原生的无障碍树，把桌面 UI 变成带 Ref 句柄的结构化 JSON，Agent 可像操作网页 DOM 一样精准点击与输入，默认后台运行、省 token、支持任意大模型。项目较新，Linux 支持与部分应用覆盖仍有短板。"
+      }
+    },
+    {
+      "id": "5926dd75-080a-41bb-befb-309d1f77f14e",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 314676,
+      "forks": 26362,
+      "starsAdded": 2053,
+      "createdAt": "2026-11-05T17:00:02.515Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "2e1eb776-d0e2-4bb0-8b2b-f8919424d893",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "repo": "D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "language": "Python",
+      "stars": 97653,
+      "forks": 10233,
+      "starsAdded": 1661,
+      "createdAt": "2026-11-05T17:00:02.584Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-scraping",
+          "automation",
+          "crawler",
+          "crawling",
+          "crawling-python",
+          "data",
+          "data-extraction",
+          "mcp",
+          "mcp-server",
+          "playwright",
+          "python",
+          "scraping",
+          "selectors",
+          "stealth",
+          "web-scraper",
+          "web-scraping",
+          "web-scraping-python",
+          "webscraping",
+          "xpath"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://scrapling.readthedocs.io/en/latest/",
+        "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev - D4Vinci/Scrapling"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "爬虫",
+          "开源项目",
+          "反反爬",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "Scrapling 深度评测：一个会自我修复的 Python 爬虫框架",
+        "ability": [
+          "自适应选择器：网站改版后爬虫自动重新定位元素，无需改代码",
+          "内置三种抓取器，用 Camoufox 反检测浏览器可绕过 Cloudflare 等反爬系统",
+          "解析速度比 BeautifulSoup 快约 800 倍",
+          "提供 Spider 爬虫框架，支持断点续爬、自动限速和分布式并发",
+          "内置 MCP Server，可接入 Claude/Cursor 让 AI 对话式抓取网页数据"
+        ],
+        "summary": "一个自适应、能自我修复、可绕过反爬的 Python 全能爬虫框架，还内置 AI 接口。",
+        "category": [
+          "开发工具",
+          "数据采集",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI Agent 开发者",
+          "需要长期维护爬虫的工程师",
+          "数据工程师 / RAG 语料构建者",
+          "小型爬虫项目与个人脚本开发者",
+          "想入门数据采集的初学者"
+        ],
+        "description": "Scrapling 是安全研究员 Karim Shoair 开源的 Python 爬虫框架，GitHub 星标超 8.7 万。它把 HTTP 请求、反检测浏览器、智能解析、分布式爬虫和 MCP 服务器整合进一个库。核心亮点是自适应选择器功能：网站改版后爬虫能自动找回目标元素，无需人工修改代码，大幅降低长期维护成本。开源免费，BSD-3 协议可商用。"
+      }
+    },
+    {
+      "id": "913a7820-6648-45a4-9c0f-e9b3566d71ca",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "repo": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "description": "",
+      "language": "C#",
+      "stars": 7120,
+      "forks": 253,
+      "starsAdded": 977,
+      "createdAt": "2026-11-05T17:00:02.864Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Contribute to JiaFeiMiao-K-Cat/DiscImageStudio development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "光盘刻录",
+          "CDImage",
+          "数据面绘图",
+          "GPL-3.0"
+        ],
+        "cover": "",
+        "title": "DiscImageStudio 深度评测：用普通刻录机把图片'刻'进光盘数据面",
+        "ability": [
+          "将任意图片编码为物理合法的 CD/DVD/BD-R 数据，刻录后盘面浮现浮雕图案",
+          "三介质全覆盖：CD-R（音轨/RAW）、DVD-R（ISO）、单层 BD-R（ISO+UDF 2.01）",
+          "三次轨距拟合标定算法，线条精度最高达 10⁻¹⁴，校准前后精度提升最高 1000 万倍",
+          "WPF 图形界面 + 统一命令行 + Linux/macOS 跨平台 CLI 三种入口",
+          "基于 Windows IMAPI2 的安全刻录层，不联网、不上传、无遥测，EXE 免安装自带运行时"
+        ],
+        "summary": "把图片转换成合法光盘数据，用普通刻录机刻完后，CD/DVD/蓝光的数据面会浮现肉眼可见的图案。",
+        "category": [
+          "开发工具",
+          "极客创意",
+          "复古数码"
+        ],
+        "suitable": [
+          "复古数码爱好者 / 光盘收藏家",
+          "独立音乐人 / Demo 小批量发行者",
+          "解谜游戏与密室逃脱设计师",
+          "光学存储 / 信号编码方向的学生和开发者",
+          "极客礼物制作者"
+        ],
+        "description": "一款 C#/.NET 开源工具（GPL-3.0），能把任意图片转换成物理合法的 CD/DVD/BD-R 数据，用任意普通刻录机烧录后，盘面反射层即可浮现肉眼可见的浮雕图案。它继承并大幅升级 CDImage 项目，亮点是三次轨距标定算法与三介质全覆盖，堪称'数据驱动的光学雕刻机'。注意一次性盘片有报废风险，GUI 仅支持 Windows，定位是艺术玩具而非备份工具。"
+      }
+    },
+    {
+      "id": "ab38318b-12b8-4541-96d4-3b5b70caca22",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/floci-io/floci",
+      "repo": "floci-io/floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "language": "Java",
+      "stars": 30171,
+      "forks": 3318,
+      "starsAdded": 784,
+      "createdAt": "2026-11-05T17:00:02.861Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "aws",
+          "aws-emulation",
+          "devops",
+          "docker",
+          "ec2",
+          "ecs",
+          "localstack",
+          "s3",
+          "sqs",
+          "testcontainers"
+        ],
+        "license": "MIT license",
+        "homepage": "https://floci.io/floci/",
+        "description": "Light, fluffy, and always free - The AWS Local Emulator alternative - floci-io/floci"
+      },
+      "summaryData": {
+        "tags": [
+          "AWS",
+          "本地仿真",
+          "开源项目",
+          "测试工具",
+          "LocalStack替代"
+        ],
+        "cover": "",
+        "title": "Floci 深度评测：免费开源的 AWS 本地仿真器，LocalStack 停更后的最佳接棒者",
+        "ability": [
+          "本地仿真 100+ AWS 服务（S3/DynamoDB/SQS/Lambda 等），AWS CLI、多语言 SDK、Terraform/CDK 可零改动接入",
+          "分层保真架构：轻量服务进程内毫秒级模拟，RDS/EKS/CodeBuild/Neptune 等重型服务自动拉起真 Docker 容器",
+          "极致轻量：Quarkus + GraalVM 原生编译，24ms 启动、13MB 空闲内存、90MB 镜像，另有 40MB 免 Docker 原生二进制",
+          "四种存储模式（memory/persistent/hybrid/wal）可插拔，支持多 AWS 账户资源隔离与 STS 跨账户演练",
+          "内置 Web Console、官方 Testcontainers 集成（Java/Python/Node/.NET）及 2500+ 自动化兼容性测试，从 LocalStack 迁移近乎零成本"
+        ],
+        "summary": "Floci 是一款 MIT 协议、完全免费的 AWS 本地仿真器，24 毫秒启动、90MB 镜像，用真 Docker 跑 RDS/EKS/Lambda，是 LocalStack Community 停更后的强力替代品。",
+        "category": [
+          "开发工具",
+          "云原生",
+          "DevOps/测试"
+        ],
+        "suitable": [
+          "后端与云原生开发者（Serverless/事件驱动架构）",
+          "DevOps 与 CI 工程师",
+          "云成本敏感的初创团队与自由职业者",
+          "AWS 学习者与 SAA/SAP 备考人群",
+          "被 LocalStack Token/付费墙困扰的现有用户"
+        ],
+        "description": "Floci 是 2026 年 3 月 LocalStack Community 停更后迅速崛起的开源 AWS 本地仿真器。它以 24 毫秒启动、13MB 内存著称，采用「进程内模拟 + 真 Docker」分层架构：SQS、S3 等轻量服务毫秒级响应，RDS、EKS、Lambda 等则拉起真实容器保证保真度。它免费开放了 LocalStack Pro 才有的 Cognito、API Gateway v2 等能力，但 Bedrock 等 AI 服务仅为 stub，IAM 校验默认宽松，需注意适用边界。"
+      }
+    },
+    {
+      "id": "43d638ce-3915-48fc-bd44-7eade04e04e5",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/scenario-labs/skills",
+      "repo": "scenario-labs/skills",
+      "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+      "language": "Python",
+      "stars": 2881,
+      "forks": 261,
+      "starsAdded": 674,
+      "createdAt": "2026-11-05T17:00:02.822Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "3d-models",
+          "agent-skills",
+          "ai-agents",
+          "ai-art",
+          "blender",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "game-assets",
+          "game-development",
+          "generative-ai",
+          "image-generation",
+          "maya",
+          "mcp",
+          "model-context-protocol",
+          "skills-sh",
+          "unity",
+          "unreal-engine",
+          "video-generation",
+          "zbrush"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.skills.sh/scenario-labs/skills",
+        "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. - scenario-labs/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "MCP",
+          "Scenario",
+          "游戏美术",
+          "AI 绘图",
+          "Agent 技能"
+        ],
+        "cover": "",
+        "title": "scenario-game-assets：基于 Scenario MCP 的游戏美术资产生成技能",
+        "ability": [
+          "通过 MCP 协议调用 Scenario 生成游戏美术素材",
+          "为 AI Agent 注入游戏艺术创作的程序性知识",
+          "支持角色、场景、道具等游戏资产生成",
+          "用自然语言指令驱动游戏美术生产流程"
+        ],
+        "summary": "一个让 AI Agent 通过 Scenario MCP 快速生成游戏美术资产的技能工具。",
+        "category": [
+          "游戏开发",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "游戏开发者",
+          "独立游戏团队",
+          "游戏美术师",
+          "MCP / AI Agent 工具爱好者"
+        ],
+        "description": "scenario-game-assets 是一个面向 AI Agent 的技能包，当需要通过 Scenario MCP 创建游戏美术时加载使用。它为 Agent 提供操作 Scenario 平台的程序性知识与指令指引，帮助开发者以自然语言快速生成角色、场景、道具等游戏素材，降低游戏美术门槛，提升资产生产效率。"
+      }
+    },
+    {
+      "id": "deb8a669-88dc-4695-be3c-38818e271c1a",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/garrytan/gstack",
+      "repo": "garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "stars": 139779,
+      "forks": 20676,
+      "starsAdded": 608,
+      "createdAt": "2026-11-05T17:00:02.529Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA - garrytan/gstack"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI 编码",
+          "Garry Tan",
+          "工作流",
+          "开源"
+        ],
+        "cover": "",
+        "title": "gstack 深度评测：Garry Tan 开源 AI 工程兵团，把 Claude Code 变成虚拟研发团队",
+        "ability": [
+          "30+ 角色化斜杠命令，一条命令切换 AI 工程身份（顾问/工程师/QA/安全官等）",
+          "角色间自动传递产出文档，形成 Think→Plan→Build→Review→Test→Ship 流水线",
+          "跨平台支持 10+ AI 编码代理（Claude Code、Cursor、Codex CLI、OpenCode 等）",
+          "/learn 经验记忆机制，跨会话累积项目踩坑知识",
+          "内置真实浏览器 QA 测试与 OWASP 安全审计能力"
+        ],
+        "summary": "YC 总裁 Garry Tan 开源的 Claude Code 斜杠命令包，把一个 AI 助手拆成 30+ 角色组成的虚拟工程团队，覆盖从规划到部署的完整研发流水线。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "技术型创始人和 CEO",
+          "独立开发者 / Solopreneur",
+          "Claude Code 新手",
+          "Tech Lead / 资深工程师",
+          "想学习 AI 编码工作流最佳实践的开发者"
+        ],
+        "description": "由 YC 总裁 Garry Tan 于 2026 年开源的 MIT 协议斜杠命令包，本质是一套精心设计的 Claude Code Skill（Markdown 文件）集合。通过 /office-hours、/review、/qa、/ship 等 30+ 命令，把 AI 切换成不同工程角色并自动衔接产出，作者自称借此实现数百倍产出提升，上线数月已获 133k+ Stars，是当前 AI 编码工作流领域最火的开源项目之一。"
+      }
+    },
+    {
+      "id": "600563e1-9059-46d6-b957-253756768493",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "repo": "max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 11389,
+      "forks": 428,
+      "starsAdded": 546,
+      "createdAt": "2026-11-05T17:00:02.666Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
+        ],
+        "license": "License",
+        "homepage": "https://worktrunk.dev",
+        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
+      },
+      "summaryData": {
+        "tags": [
+          "Git",
+          "CLI",
+          "Worktree",
+          "效率工具",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "Worktrunk：Git 并行开发的效率加速器",
+        "ability": [
+          "Worktree 极简管理",
+          "AI 代理并行开发",
+          "自动化工作流 Hooks",
+          "可视化状态概览",
+          "构建缓存共享"
+        ],
+        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Git Worktree 重度用户",
+          "AI 辅助编程开发者",
+          "高频切换分支的开发者",
+          "追求终端效率的极客"
+        ],
+        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+      }
+    },
+    {
+      "id": "be2ffb7a-617f-4d05-89f5-93efaccd0ac2",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "repo": "Usagi-org/ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "language": "Python",
+      "stars": 17438,
+      "forks": 2935,
+      "starsAdded": 242,
+      "createdAt": "2026-11-05T17:00:02.567Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-assistant",
+          "ai-tools",
+          "automation",
+          "gemini",
+          "goofish",
+          "open-source",
+          "openai",
+          "playwright",
+          "tool",
+          "xian-yu",
+          "xianyu",
+          "xianyu-bot"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 - Usagi-org/ai-goofish-monitor"
+      },
+      "summaryData": {
+        "tags": [
+          "闲鱼监控",
+          "Playwright",
+          "多模态大模型",
+          "开源项目",
+          "捡漏神器"
+        ],
+        "cover": "",
+        "title": "ai-goofish-monitor 深度评测：AI 视觉驱动的闲鱼自动监控捡漏神器",
+        "ability": [
+          "Playwright 模拟真人浏览器抓取闲鱼商品，支持代理池与多账号轮换",
+          "多模态大模型分析商品图文，精准过滤关键词陷阱与货不对板",
+          "自然语言一句话创建监控任务，自动生成 AI 分析标准",
+          "Web 可视化管理后台，任务/账号/日志/Prompt 一站式管理",
+          "多渠道推送（Telegram、企业微信、Bark 等）+ Cron 定时调度 + Docker 一键部署"
+        ],
+        "summary": "用 Playwright 模拟真人逛闲鱼，再让多模态大模型替你判断商品值不值得买，命中即推送到手机。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "生活效率"
+        ],
+        "suitable": [
+          "二手数码捡漏玩家",
+          "限量球鞋、潮玩、收藏品蹲守党",
+          "二手商家与倒卖从业者",
+          "想学 Playwright + AI 工程化的开发者",
+          "需要跨城市比价的买家"
+        ],
+        "description": "开源闲鱼智能监控工具：Playwright 模拟真人浏览器抓取商品，多模态大模型分析图文判断值不值得买，过滤关键词陷阱与货不对板，命中即推送手机。提供完整 Web 后台与 Docker 一键部署，但需注意闲鱼账号风控、登录态维护与 AI 调用成本。"
+      }
+    },
+    {
+      "id": "a1ac2e4d-5d2f-4893-a1f3-743907066237",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "repo": "microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "stars": 55573,
+      "forks": 6258,
+      "starsAdded": 214,
+      "createdAt": "2026-11-05T17:00:02.841Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://microsoft.github.io/VibeVoice/",
+        "description": "Open-Source Frontier Voice AI. Contribute to microsoft/VibeVoice development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "TTS 语音合成",
+          "ASR 语音识别",
+          "微软研究院",
+          "ICLR 2026 Oral",
+          "长对话语音"
+        ],
+        "cover": "",
+        "title": "Microsoft VibeVoice 深度评测：从开源顶流到“被自己下架”的语音 AI 传奇",
+        "ability": [
+          "90 分钟多人对话级长文本语音合成（TTS）",
+          "60 分钟长音频单遍转写 + 说话人分离 + 时间戳（ASR）",
+          "自定义热词注入，无需微调提升专业术语识别率",
+          "Realtime-0.5B 流式语音生成，首包延迟约 300ms",
+          "BitNet 量化版 1.58GB 纯 CPU 实时推理，超越 Whisper.cpp"
+        ],
+        "summary": "微软开源的语音全栈模型家族，TTS 因滥用风险被官方撤码、靠社区续命，ASR 仍在活跃迭代，至今是开源长对话语音的唯一孤本。",
+        "category": [
+          "开源项目",
+          "AI 语音",
+          "开发工具"
+        ],
+        "suitable": [
+          "播客 / 有声书 / 有声剧创作者",
+          "做会议纪要与访谈研究的团队（法律、医疗、技术）",
+          "AI Agent / 实时语音助手开发者",
+          "边缘设备与本地化部署工程师",
+          "语音 AI 技术研究者"
+        ],
+        "description": "微软研究院开源的语音模型家族，以 7.5Hz 连续语音 Tokenizer 和 Next-Token Diffusion 架构首次实现 90 分钟多人一致对话合成，获 ICLR 2026 Oral。TTS 部分因 deepfake 滥用被微软主动撤码，由社区 fork 接棒维护；ASR 分支仍在官方活跃更新并登陆 Azure AI Foundry Labs，整体仍是开源长对话语音赛道不可替代的方案。"
+      }
+    },
+    {
+      "id": "e7789700-574a-42cf-8102-2d9ddd540094",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/google/skills",
+      "repo": "google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 22217,
+      "forks": 1884,
+      "starsAdded": 199,
+      "createdAt": "2026-11-05T17:00:02.769Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "google",
+          "googlecloud",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Agent Skills for Google products and technologies. Contribute to google/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Google",
+          "AI Agent",
+          "GitHub",
+          "开源",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "Google 官方 Agent 技能包",
+        "ability": [
+          "提供 Google 生态预置技能",
+          "一键集成 Claude Code 等工具",
+          "覆盖开发运维数据全链路",
+          "官方权威与开源协议"
+        ],
+        "summary": "Google 官方提供的 AI 技能包，一键集成 GCP/Android 等知识到 AI 助手，提升开发效率。",
+        "category": [
+          "AI 编程",
+          "开发者工具",
+          "云服务"
+        ],
+        "suitable": [
+          "Google 技术栈工程师",
+          "数据/平台工程师",
+          "前端/客户端开发者",
+          "DevOps/SRE"
+        ],
+        "description": "这是 Google 推出的开源技能合集，整合了云平台、移动开发、数据分析等领域的官方最佳实践。它能被 Claude Code 等 AI 工具直接调用，让助手更懂 Google 产品，从而更精准地完成配置、排障和代码生成任务。"
+      }
+    },
+    {
+      "id": "dfc969b2-4e9b-4a63-a392-9564a03b7c18",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 45722,
+      "forks": 3139,
+      "starsAdded": 181,
+      "createdAt": "2026-11-05T17:00:02.804Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "25f8ed0b-b9d2-464f-b891-f377bdaf51fa",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "repo": "ConardLi/garden-skills",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "language": "JavaScript",
+      "stars": 14040,
+      "forks": 1640,
+      "starsAdded": 181,
+      "createdAt": "2026-11-05T17:00:02.831Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "claude",
+          "gpt-image-2",
+          "rag",
+          "skills",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/ConardLi/garden-skills",
+        "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more. - ConardLi/garden-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Agent Skills",
+          "Claude Code",
+          "前端开发",
+          "工作流自动化"
+        ],
+        "cover": "",
+        "title": "Garden Skills：生产级 AI Agent 技能包深度评测",
+        "ability": [
+          "提升前端设计质量",
+          "文本转视频演示",
+          "本地知识库检索",
+          "自动化图文排版",
+          "结构化生图提示词"
+        ],
+        "summary": "一套精选的生产级 AI 编码 Agent 能力包，可一键安装至 Claude/Cursor，显著提升设计、视频与检索质量。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "前端/设计工程师",
+          "内容创作者/讲师",
+          "知识库维护团队",
+          "产品/运营人员",
+          "AI 编程爱好者"
+        ],
+        "description": "这是一套生产级的 AI Agent 技能合集，兼容 Claude Code 和 Cursor 等主流环境。它通过前端设计、视频生成、知识检索等标准化技能包，解决 AI 输出不可控的痛点，帮助团队实现高质量、可复用的自动化工作流。"
+      }
+    },
+    {
+      "id": "0dcb4c06-4264-4123-9e68-b20cdcc21d4c",
+      "dateAdded": "20261106",
+      "type": "github-daily",
+      "url": "https://github.com/lz4/lz4",
+      "repo": "lz4/lz4",
+      "description": "Extremely Fast Compression algorithm",
+      "language": "C",
+      "stars": 12291,
+      "forks": 1632,
+      "starsAdded": 16,
+      "createdAt": "2026-11-05T17:00:02.696Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "c",
+          "compression",
+          "lz4"
+        ],
+        "license": "License",
+        "homepage": "http://www.lz4.org",
+        "description": "Extremely Fast Compression algorithm. Contribute to lz4/lz4 development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "压缩算法",
+          "高性能",
+          "C语言",
+          "开源项目",
+          "BSD协议"
+        ],
+        "cover": "",
+        "title": "LZ4 深度评测：把压缩速度逼近内存带宽的性能怪兽",
+        "ability": [
+          "极速压缩解压：压缩 780MB/s、解压近 5GB/s，几乎贴上内存带宽极限",
+          "双模式设计：Fast 模式极致提速、HC 模式用时间换更高压缩比，解压速度完全一致",
+          "字典模式：通过预置字典解决小数据（网络包、日志条目）压缩效果差的问题",
+          "Frame/Block 双层格式：支持流式传输与跨系统互操作，内置 XXHash 校验",
+          "BSD 开源协议零门槛商用：被 Linux 内核、ClickHouse、Kafka、RocksDB 等广泛集成"
+        ],
+        "summary": "LZ4 是一个极致追求压缩与解压速度的开源无损压缩库，解压速度接近 5GB/s，是操作系统、数据库、游戏引擎背后的隐形基石。",
+        "category": [
+          "开发工具",
+          "性能优化",
+          "开源库"
+        ],
+        "suitable": [
+          "做 Kafka/ClickHouse/RocksDB 调优的后端工程师",
+          "需要优化 AssetBundle 加载速度的游戏开发者",
+          "从事 ZFS/ZRAM/内核 I/O 的系统与嵌入式工程师",
+          "需要压缩日志、网络传输、序列化数据的业务开发者",
+          "想学习工业级高性能 C 代码的程序员"
+        ],
+        "description": "LZ4 是 Yann Collet 主导开发的无损压缩算法库，通过极简的 LZ77 实现、放弃熵编码换来极致速度，解压速度是 zlib 的 10 倍以上。它不是压缩比王者，但在实时热路径场景至今无对手，是每天默默节省大量 CPU 时间的隐形冠军。局限是压缩比不如 zstd、CLI 不支持多线程。"
+      }
+    }
   ]
 }
