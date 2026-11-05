@@ -1,6 +1,169 @@
 {
   "all": [
     {
+      "id": "51827452-743a-4ab1-a032-e633266e2aad",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "domain": "github.com",
+      "repo": "microsoft/VibeVoice",
+      "description": "微软研究院开源的语音模型家族，以 7.5Hz 连续语音 Tokenizer 和 Next-Token Diffusion 架构首次实现 90 分钟多人一致对话合成，获 ICLR 2026 Oral。TTS 部分因 deepfake 滥用被微软主动撤码，由社区 fork 接棒维护；ASR 分支仍在官方活跃更新并登陆 Azure AI Foundry Labs，整体仍是开源长对话语音赛道不可替代的方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-05T12:13:09.430Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://microsoft.github.io/VibeVoice/",
+        "description": "Open-Source Frontier Voice AI. Contribute to microsoft/VibeVoice development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "TTS 语音合成",
+          "ASR 语音识别",
+          "微软研究院",
+          "ICLR 2026 Oral",
+          "长对话语音"
+        ],
+        "cover": "",
+        "title": "Microsoft VibeVoice 深度评测：从开源顶流到“被自己下架”的语音 AI 传奇",
+        "ability": [
+          "90 分钟多人对话级长文本语音合成（TTS）",
+          "60 分钟长音频单遍转写 + 说话人分离 + 时间戳（ASR）",
+          "自定义热词注入，无需微调提升专业术语识别率",
+          "Realtime-0.5B 流式语音生成，首包延迟约 300ms",
+          "BitNet 量化版 1.58GB 纯 CPU 实时推理，超越 Whisper.cpp"
+        ],
+        "summary": "微软开源的语音全栈模型家族，TTS 因滥用风险被官方撤码、靠社区续命，ASR 仍在活跃迭代，至今是开源长对话语音的唯一孤本。",
+        "category": [
+          "开源项目",
+          "AI 语音",
+          "开发工具"
+        ],
+        "suitable": [
+          "播客 / 有声书 / 有声剧创作者",
+          "做会议纪要与访谈研究的团队（法律、医疗、技术）",
+          "AI Agent / 实时语音助手开发者",
+          "边缘设备与本地化部署工程师",
+          "语音 AI 技术研究者"
+        ],
+        "description": "微软研究院开源的语音模型家族，以 7.5Hz 连续语音 Tokenizer 和 Next-Token Diffusion 架构首次实现 90 分钟多人一致对话合成，获 ICLR 2026 Oral。TTS 部分因 deepfake 滥用被微软主动撤码，由社区 fork 接棒维护；ASR 分支仍在官方活跃更新并登陆 Azure AI Foundry Labs，整体仍是开源长对话语音赛道不可替代的方案。"
+      },
+      "type": "project",
+      "dateAdded": "20261105"
+    },
+    {
+      "id": "fb1ddaf8-71cf-496a-9198-89e631f1eaee",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "domain": "github.com",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-05T12:07:39.782Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      },
+      "type": "project",
+      "dateAdded": "20261105"
+    },
+    {
+      "id": "2374e849-1e82-423e-a39c-dd8fad5b1d4d",
+      "url": "https://github.com/lz4/lz4",
+      "domain": "github.com",
+      "repo": "lz4/lz4",
+      "description": "LZ4 是 Yann Collet 主导开发的无损压缩算法库，通过极简的 LZ77 实现、放弃熵编码换来极致速度，解压速度是 zlib 的 10 倍以上。它不是压缩比王者，但在实时热路径场景至今无对手，是每天默默节省大量 CPU 时间的隐形冠军。局限是压缩比不如 zstd、CLI 不支持多线程。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-05T12:03:56.126Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "c",
+          "compression",
+          "lz4"
+        ],
+        "license": "License",
+        "homepage": "http://www.lz4.org",
+        "description": "Extremely Fast Compression algorithm. Contribute to lz4/lz4 development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "压缩算法",
+          "高性能",
+          "C语言",
+          "开源项目",
+          "BSD协议"
+        ],
+        "cover": "",
+        "title": "LZ4 深度评测：把压缩速度逼近内存带宽的性能怪兽",
+        "ability": [
+          "极速压缩解压：压缩 780MB/s、解压近 5GB/s，几乎贴上内存带宽极限",
+          "双模式设计：Fast 模式极致提速、HC 模式用时间换更高压缩比，解压速度完全一致",
+          "字典模式：通过预置字典解决小数据（网络包、日志条目）压缩效果差的问题",
+          "Frame/Block 双层格式：支持流式传输与跨系统互操作，内置 XXHash 校验",
+          "BSD 开源协议零门槛商用：被 Linux 内核、ClickHouse、Kafka、RocksDB 等广泛集成"
+        ],
+        "summary": "LZ4 是一个极致追求压缩与解压速度的开源无损压缩库，解压速度接近 5GB/s，是操作系统、数据库、游戏引擎背后的隐形基石。",
+        "category": [
+          "开发工具",
+          "性能优化",
+          "开源库"
+        ],
+        "suitable": [
+          "做 Kafka/ClickHouse/RocksDB 调优的后端工程师",
+          "需要优化 AssetBundle 加载速度的游戏开发者",
+          "从事 ZFS/ZRAM/内核 I/O 的系统与嵌入式工程师",
+          "需要压缩日志、网络传输、序列化数据的业务开发者",
+          "想学习工业级高性能 C 代码的程序员"
+        ],
+        "description": "LZ4 是 Yann Collet 主导开发的无损压缩算法库，通过极简的 LZ77 实现、放弃熵编码换来极致速度，解压速度是 zlib 的 10 倍以上。它不是压缩比王者，但在实时热路径场景至今无对手，是每天默默节省大量 CPU 时间的隐形冠军。局限是压缩比不如 zstd、CLI 不支持多线程。"
+      },
+      "type": "project",
+      "dateAdded": "20261105"
+    },
+    {
       "id": "1c0aad12-7177-4948-96cb-f6b6e1099e61",
       "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
       "domain": "github.com",
@@ -18946,8 +19109,8 @@
       "forks": 0,
       "createdAt": "2026-09-01T12:12:09.537Z",
       "metaData": {
-        "forks": "1726",
-        "stars": "20852",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "google",
           "googlecloud",
@@ -22444,8 +22607,8 @@
       "forks": 0,
       "createdAt": "2026-08-26T15:51:42.798Z",
       "metaData": {
-        "forks": "1472",
-        "stars": "12058",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent",
           "claude",
