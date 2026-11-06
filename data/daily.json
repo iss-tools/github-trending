@@ -51610,8 +51610,8 @@
       "starsAdded": 78,
       "createdAt": "2026-09-26T11:00:38.409Z",
       "metaData": {
-        "forks": "43620",
-        "stars": "193157",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "editor",
           "electron",
@@ -51619,7 +51619,7 @@
           "typescript",
           "visual-studio-code"
         ],
-        "license": "cglicenses.json",
+        "license": "MIT license",
         "homepage": "https://code.visualstudio.com",
         "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub."
       },
@@ -52784,8 +52784,8 @@
       "starsAdded": 223,
       "createdAt": "2026-09-26T16:00:02.240Z",
       "metaData": {
-        "forks": "43620",
-        "stars": "193157",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "editor",
           "electron",
@@ -52793,7 +52793,7 @@
           "typescript",
           "visual-studio-code"
         ],
-        "license": "cglicenses.json",
+        "license": "MIT license",
         "homepage": "https://code.visualstudio.com",
         "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub."
       },
@@ -97983,8 +97983,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 62852,
-      "forks": 4075,
+      "stars": 62969,
+      "forks": 4081,
       "starsAdded": 2524,
       "createdAt": "2026-11-06T13:00:02.866Z",
       "metaData": {
@@ -98101,8 +98101,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 316162,
-      "forks": 26448,
+      "stars": 316220,
+      "forks": 26453,
       "starsAdded": 2058,
       "createdAt": "2026-11-05T17:00:02.515Z",
       "metaData": {
@@ -98152,8 +98152,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 8362,
-      "forks": 673,
+      "stars": 8433,
+      "forks": 678,
       "starsAdded": 2005,
       "createdAt": "2026-11-05T17:00:02.398Z",
       "metaData": {
@@ -98579,8 +98579,8 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 22634,
-      "forks": 1904,
+      "stars": 22656,
+      "forks": 1905,
       "starsAdded": 532,
       "createdAt": "2026-11-05T17:00:02.769Z",
       "metaData": {
@@ -98634,7 +98634,7 @@
       "repo": "lz4/lz4",
       "description": "Extremely Fast Compression algorithm",
       "language": "C",
-      "stars": 12541,
+      "stars": 12554,
       "forks": 1640,
       "starsAdded": 313,
       "createdAt": "2026-11-05T17:00:02.696Z",
@@ -98691,13 +98691,13 @@
       "repo": "microsoft/vscode",
       "description": "Visual Studio Code",
       "language": "TypeScript",
-      "stars": 194806,
+      "stars": 194848,
       "forks": 44404,
       "starsAdded": 295,
       "createdAt": "2026-11-06T13:00:02.792Z",
       "metaData": {
-        "forks": "43620",
-        "stars": "193157",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "editor",
           "electron",
@@ -98705,7 +98705,7 @@
           "typescript",
           "visual-studio-code"
         ],
-        "license": "cglicenses.json",
+        "license": "MIT license",
         "homepage": "https://code.visualstudio.com",
         "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub."
       },
@@ -98750,8 +98750,8 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 93031,
-      "forks": 11459,
+      "stars": 93093,
+      "forks": 11460,
       "starsAdded": 292,
       "createdAt": "2026-11-06T13:00:02.723Z",
       "metaData": {
@@ -98807,8 +98807,8 @@
       "repo": "react/react",
       "description": "The library for web and native user interfaces.",
       "language": "JavaScript",
-      "stars": 252056,
-      "forks": 51787,
+      "stars": 252092,
+      "forks": 51793,
       "starsAdded": 244,
       "createdAt": "2026-11-06T13:00:02.769Z",
       "metaData": {
@@ -98987,8 +98987,8 @@
       "repo": "rust-lang/rust",
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
-      "stars": 121181,
-      "forks": 17357,
+      "stars": 121221,
+      "forks": 17356,
       "starsAdded": 186,
       "createdAt": "2026-11-06T13:00:02.764Z",
       "metaData": {
@@ -99157,7 +99157,7 @@
       "repo": "prometheus/prometheus",
       "description": "The Prometheus monitoring system and time series database.",
       "language": "Go",
-      "stars": 66997,
+      "stars": 67006,
       "forks": 10979,
       "starsAdded": 140,
       "createdAt": "2026-11-06T13:00:02.783Z",
@@ -99218,13 +99218,25 @@
       "repo": "angular/angular",
       "description": "Deliver web apps with confidence 🚀",
       "language": "TypeScript",
-      "stars": 101153,
-      "forks": 28906,
+      "stars": 101167,
+      "forks": 28901,
       "starsAdded": 128,
       "createdAt": "2026-11-06T13:00:02.772Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "angular",
+          "javascript",
+          "pwa",
+          "typescript",
+          "web",
+          "web-framework",
+          "web-performance"
+        ],
+        "license": "MIT license",
+        "homepage": "https://angular.dev",
+        "description": "Deliver web apps with confidence 🚀. Contribute to angular/angular development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -99266,11 +99278,29 @@
       "repo": "etcd-io/etcd",
       "description": "Distributed reliable key-value store for the most critical data of a distributed system",
       "language": "Go",
-      "stars": 52491,
-      "forks": 10572,
+      "stars": 52501,
+      "forks": 10573,
       "starsAdded": 123,
       "createdAt": "2026-11-06T13:00:02.828Z",
-      "metaData": null,
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cncf",
+          "consensus",
+          "database",
+          "distributed-database",
+          "distributed-systems",
+          "etcd",
+          "go",
+          "key-value",
+          "kubernetes",
+          "raft"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://etcd.io",
+        "description": "Distributed reliable key-value store for the most critical data of a distributed system - etcd-io/etcd"
+      },
       "summaryData": null
     },
     {
@@ -99281,12 +99311,62 @@
       "repo": "astral-sh/ruff",
       "description": "An extremely fast Python linter and code formatter, written in Rust.",
       "language": "Rust",
-      "stars": 50495,
+      "stars": 50505,
       "forks": 2597,
       "starsAdded": 107,
       "createdAt": "2026-11-06T13:00:02.871Z",
-      "metaData": null,
-      "summaryData": null
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "linter",
+          "pep8",
+          "python",
+          "python3",
+          "ruff",
+          "rust",
+          "rustpython",
+          "static-analysis",
+          "static-code-analysis",
+          "style-guide",
+          "styleguide"
+        ],
+        "license": "MIT license",
+        "homepage": "https://docs.astral.sh/ruff",
+        "description": "An extremely fast Python linter and code formatter, written in Rust. - astral-sh/ruff"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "Rust",
+          "Linter",
+          "代码格式化",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruff 深度评测：Rust 打造的 Python 代码质量神器",
+        "ability": [
+          "极速代码检查：0.2 秒完成数万行代码 lint，比 Flake8 快约 50 倍",
+          "一站式替代：内置 900+ 规则，可替代 Flake8、Black、isort、pyupgrade 等多个工具",
+          "自动修复：--fix 一键修复大量常见代码问题",
+          "零配置上手：默认规则开箱即用，pyproject.toml 统一管理配置",
+          "生态完善：支持 pre-commit、GitHub Action、VS Code 插件，主流开源项目广泛采用"
+        ],
+        "summary": "用 Rust 编写的 Python 代码检查 + 格式化二合一工具，比传统方案快 10-1000 倍，一个工具顶十几个。",
+        "category": [
+          "开发工具",
+          "编程效率",
+          "代码质量"
+        ],
+        "suitable": [
+          "Python 个人开发者",
+          "技术团队负责人 / Tech Lead",
+          "开源项目维护者",
+          "Monorepo 大型项目团队",
+          "AI Coding Agent 开发者"
+        ],
+        "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。"
+      }
     },
     {
       "id": "d3a92b05-93cf-45fe-8098-2f9c2b851969",
@@ -99296,13 +99376,25 @@
       "repo": "symfony/symfony",
       "description": "The Symfony PHP framework",
       "language": "PHP",
-      "stars": 31260,
+      "stars": 31272,
       "forks": 9939,
       "starsAdded": 89,
       "createdAt": "2026-11-06T13:00:02.775Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "bundle",
+          "framework",
+          "hacktoberfest",
+          "php",
+          "php-framework",
+          "symfony",
+          "symfony-bundle"
+        ],
+        "license": "MIT license",
+        "homepage": "https://symfony.com",
+        "description": "The Symfony PHP framework. Contribute to symfony/symfony development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -99345,13 +99437,21 @@
       "repo": "nushell/nushell",
       "description": "A new type of shell",
       "language": "Rust",
-      "stars": 40807,
-      "forks": 2331,
+      "stars": 40817,
+      "forks": 2330,
       "starsAdded": 88,
       "createdAt": "2026-11-06T13:00:02.820Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "nushell",
+          "rust",
+          "shell"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.nushell.sh/",
+        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -99394,8 +99494,8 @@
       "repo": "rails/rails",
       "description": "Ruby on Rails",
       "language": "Ruby",
-      "stars": 58897,
-      "forks": 23822,
+      "stars": 58905,
+      "forks": 23823,
       "starsAdded": 44,
       "createdAt": "2026-11-06T13:00:02.758Z",
       "metaData": {
@@ -99455,13 +99555,25 @@
       "repo": "mpv-player/mpv",
       "description": "🎥 Command line media player",
       "language": "C",
-      "stars": 37764,
+      "stars": 37778,
       "forks": 3628,
       "starsAdded": 36,
       "createdAt": "2026-11-06T13:00:02.761Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "audio",
+          "c",
+          "ffmpeg",
+          "mplayer",
+          "mpv",
+          "multimedia",
+          "video"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://mpv.io",
+        "description": "🎥 Command line media player. Contribute to mpv-player/mpv development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -99504,12 +99616,57 @@
       "repo": "openssl/openssl",
       "description": "General purpose TLS and crypto library",
       "language": "C",
-      "stars": 31205,
-      "forks": 11579,
+      "stars": 31215,
+      "forks": 11580,
       "starsAdded": 24,
       "createdAt": "2026-11-06T13:00:02.849Z",
-      "metaData": null,
-      "summaryData": null
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cryptography",
+          "decryption",
+          "encryption",
+          "openssl",
+          "ssl",
+          "tls"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://openssl-library.org/",
+        "description": "General purpose TLS and crypto library. Contribute to openssl/openssl development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "OpenSSL",
+          "TLS加密",
+          "开源项目",
+          "FIPS合规",
+          "后量子密码"
+        ],
+        "cover": "",
+        "title": "OpenSSL 深度评测：互联网加密世界的隐形地基与 3.x 架构重构全解析",
+        "ability": [
+          "TLS/QUIC 协议完整实现",
+          "通用对称/非对称加解密",
+          "FIPS 140-3 合规认证",
+          "后量子密码支持",
+          "证书管理与命令行工具"
+        ],
+        "summary": "OpenSSL 是支撑全球 HTTPS 加密通信的 C 语言密码学标准库，3.5 LTS 仍是 FIPS 合规与后量子密码落地的唯一主流选择。",
+        "category": [
+          "开发工具",
+          "安全加密",
+          "基础软件"
+        ],
+        "suitable": [
+          "后端/系统工程师",
+          "C/C++ 应用开发者",
+          "运维/DevOps",
+          "安全与合规工程师",
+          "密码学研究者"
+        ],
+        "description": "OpenSSL 是有近 30 年历史的开源密码学库，支撑着全球 HTTPS、VPN、证书签发等加密基础设施。3.x 引入 Provider 可插拔架构，3.5 LTS 新增 QUIC 服务器与后量子密码（ML-KEM/ML-DSA）支持，是唯一通过 FIPS 140-3 验证的主流 TLS 库。但 1.1.1 升级 3.x 存在 Legacy Provider、低级 API 弃用等大量迁移陷阱，生产环境升级需谨慎评估。"
+      }
     }
   ]
 }

@@ -1,6 +1,164 @@
 {
   "all": [
     {
+      "id": "c905f4e9-51fd-434e-94e6-7ca110a65aaa",
+      "url": "https://github.com/astral-sh/ruff",
+      "domain": "github.com",
+      "repo": "astral-sh/ruff",
+      "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:39:25.838Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "linter",
+          "pep8",
+          "python",
+          "python3",
+          "ruff",
+          "rust",
+          "rustpython",
+          "static-analysis",
+          "static-code-analysis",
+          "style-guide",
+          "styleguide"
+        ],
+        "license": "MIT license",
+        "homepage": "https://docs.astral.sh/ruff",
+        "description": "An extremely fast Python linter and code formatter, written in Rust. - astral-sh/ruff"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "Rust",
+          "Linter",
+          "代码格式化",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruff 深度评测：Rust 打造的 Python 代码质量神器",
+        "ability": [
+          "极速代码检查：0.2 秒完成数万行代码 lint，比 Flake8 快约 50 倍",
+          "一站式替代：内置 900+ 规则，可替代 Flake8、Black、isort、pyupgrade 等多个工具",
+          "自动修复：--fix 一键修复大量常见代码问题",
+          "零配置上手：默认规则开箱即用，pyproject.toml 统一管理配置",
+          "生态完善：支持 pre-commit、GitHub Action、VS Code 插件，主流开源项目广泛采用"
+        ],
+        "summary": "用 Rust 编写的 Python 代码检查 + 格式化二合一工具，比传统方案快 10-1000 倍，一个工具顶十几个。",
+        "category": [
+          "开发工具",
+          "编程效率",
+          "代码质量"
+        ],
+        "suitable": [
+          "Python 个人开发者",
+          "技术团队负责人 / Tech Lead",
+          "开源项目维护者",
+          "Monorepo 大型项目团队",
+          "AI Coding Agent 开发者"
+        ],
+        "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "558ddcfe-f10c-4b24-9a07-9eabaeb39e33",
+      "url": "https://github.com/openssl/openssl",
+      "domain": "github.com",
+      "repo": "openssl/openssl",
+      "description": "OpenSSL 是有近 30 年历史的开源密码学库，支撑着全球 HTTPS、VPN、证书签发等加密基础设施。3.x 引入 Provider 可插拔架构，3.5 LTS 新增 QUIC 服务器与后量子密码（ML-KEM/ML-DSA）支持，是唯一通过 FIPS 140-3 验证的主流 TLS 库。但 1.1.1 升级 3.x 存在 Legacy Provider、低级 API 弃用等大量迁移陷阱，生产环境升级需谨慎评估。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:35:18.103Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cryptography",
+          "decryption",
+          "encryption",
+          "openssl",
+          "ssl",
+          "tls"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://openssl-library.org/",
+        "description": "General purpose TLS and crypto library. Contribute to openssl/openssl development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "OpenSSL",
+          "TLS加密",
+          "开源项目",
+          "FIPS合规",
+          "后量子密码"
+        ],
+        "cover": "",
+        "title": "OpenSSL 深度评测：互联网加密世界的隐形地基与 3.x 架构重构全解析",
+        "ability": [
+          "TLS/QUIC 协议完整实现",
+          "通用对称/非对称加解密",
+          "FIPS 140-3 合规认证",
+          "后量子密码支持",
+          "证书管理与命令行工具"
+        ],
+        "summary": "OpenSSL 是支撑全球 HTTPS 加密通信的 C 语言密码学标准库，3.5 LTS 仍是 FIPS 合规与后量子密码落地的唯一主流选择。",
+        "category": [
+          "开发工具",
+          "安全加密",
+          "基础软件"
+        ],
+        "suitable": [
+          "后端/系统工程师",
+          "C/C++ 应用开发者",
+          "运维/DevOps",
+          "安全与合规工程师",
+          "密码学研究者"
+        ],
+        "description": "OpenSSL 是有近 30 年历史的开源密码学库，支撑着全球 HTTPS、VPN、证书签发等加密基础设施。3.x 引入 Provider 可插拔架构，3.5 LTS 新增 QUIC 服务器与后量子密码（ML-KEM/ML-DSA）支持，是唯一通过 FIPS 140-3 验证的主流 TLS 库。但 1.1.1 升级 3.x 存在 Legacy Provider、低级 API 弃用等大量迁移陷阱，生产环境升级需谨慎评估。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "488277fc-7123-4b32-8882-d64154d27bca",
+      "url": "https://github.com/etcd-io/etcd",
+      "domain": "github.com",
+      "repo": "etcd-io/etcd",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:30:38.985Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cncf",
+          "consensus",
+          "database",
+          "distributed-database",
+          "distributed-systems",
+          "etcd",
+          "go",
+          "key-value",
+          "kubernetes",
+          "raft"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://etcd.io",
+        "description": "Distributed reliable key-value store for the most critical data of a distributed system - etcd-io/etcd"
+      },
+      "summaryData": null,
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
       "id": "1edd4d9f-0f26-4f05-87e0-fbaabf8ca33f",
       "url": "https://github.com/nushell/nushell",
       "domain": "github.com",
@@ -12,7 +170,15 @@
       "createdAt": "2026-11-06T13:29:27.727Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "nushell",
+          "rust",
+          "shell"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.nushell.sh/",
+        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -122,7 +288,19 @@
       "createdAt": "2026-11-06T13:22:13.660Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "bundle",
+          "framework",
+          "hacktoberfest",
+          "php",
+          "php-framework",
+          "symfony",
+          "symfony-bundle"
+        ],
+        "license": "MIT license",
+        "homepage": "https://symfony.com",
+        "description": "The Symfony PHP framework. Contribute to symfony/symfony development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -171,7 +349,19 @@
       "createdAt": "2026-11-06T13:18:36.291Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "angular",
+          "javascript",
+          "pwa",
+          "typescript",
+          "web",
+          "web-framework",
+          "web-performance"
+        ],
+        "license": "MIT license",
+        "homepage": "https://angular.dev",
+        "description": "Deliver web apps with confidence 🚀. Contribute to angular/angular development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -279,7 +469,19 @@
       "createdAt": "2026-11-06T13:11:01.481Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "audio",
+          "c",
+          "ffmpeg",
+          "mplayer",
+          "mpv",
+          "multimedia",
+          "video"
+        ],
+        "license": "GPL-2.0 license",
+        "homepage": "https://mpv.io",
+        "description": "🎥 Command line media player. Contribute to mpv-player/mpv development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -8768,8 +8970,8 @@
       "forks": 0,
       "createdAt": "2026-09-26T11:10:55.192Z",
       "metaData": {
-        "forks": "43620",
-        "stars": "193157",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "editor",
           "electron",
@@ -8777,7 +8979,7 @@
           "typescript",
           "visual-studio-code"
         ],
-        "license": "cglicenses.json",
+        "license": "MIT license",
         "homepage": "https://code.visualstudio.com",
         "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub."
       },
