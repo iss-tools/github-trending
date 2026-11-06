@@ -99678,8 +99678,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 63613,
-      "forks": 4124,
+      "stars": 63796,
+      "forks": 4136,
       "starsAdded": 2524,
       "createdAt": "2026-11-06T16:00:02.934Z",
       "metaData": {
@@ -99730,8 +99730,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 316521,
-      "forks": 26478,
+      "stars": 316619,
+      "forks": 26485,
       "starsAdded": 2058,
       "createdAt": "2026-11-06T16:00:02.930Z",
       "metaData": {
@@ -99781,8 +99781,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 8788,
-      "forks": 707,
+      "stars": 8896,
+      "forks": 717,
       "starsAdded": 2005,
       "createdAt": "2026-11-06T16:00:02.823Z",
       "metaData": {
@@ -99834,8 +99834,8 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 22769,
-      "forks": 1917,
+      "stars": 22800,
+      "forks": 1919,
       "starsAdded": 532,
       "createdAt": "2026-11-06T16:00:02.866Z",
       "metaData": {
@@ -99889,7 +99889,7 @@
       "repo": "lz4/lz4",
       "description": "Extremely Fast Compression algorithm",
       "language": "C",
-      "stars": 12618,
+      "stars": 12631,
       "forks": 1643,
       "starsAdded": 313,
       "createdAt": "2026-11-06T16:00:02.872Z",
@@ -99946,8 +99946,8 @@
       "repo": "microsoft/vscode",
       "description": "Visual Studio Code",
       "language": "TypeScript",
-      "stars": 194933,
-      "forks": 44412,
+      "stars": 194978,
+      "forks": 44421,
       "starsAdded": 295,
       "createdAt": "2026-11-06T16:00:02.870Z",
       "metaData": {
@@ -100005,8 +100005,8 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 93429,
-      "forks": 11486,
+      "stars": 93528,
+      "forks": 11493,
       "starsAdded": 292,
       "createdAt": "2026-11-06T16:00:02.816Z",
       "metaData": {
@@ -100062,8 +100062,8 @@
       "repo": "react/react",
       "description": "The library for web and native user interfaces.",
       "language": "JavaScript",
-      "stars": 252180,
-      "forks": 51803,
+      "stars": 252217,
+      "forks": 51807,
       "starsAdded": 244,
       "createdAt": "2026-11-06T16:00:02.850Z",
       "metaData": {
@@ -100115,6 +100115,71 @@
       }
     },
     {
+      "id": "bc5be318-85ea-4979-8e1c-f2a62d7ae2a5",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/astral-sh/ruff",
+      "repo": "astral-sh/ruff",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "language": "Rust",
+      "stars": 50634,
+      "forks": 2604,
+      "starsAdded": 213,
+      "createdAt": "2026-11-06T16:00:02.936Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "linter",
+          "pep8",
+          "python",
+          "python3",
+          "ruff",
+          "rust",
+          "rustpython",
+          "static-analysis",
+          "static-code-analysis",
+          "style-guide",
+          "styleguide"
+        ],
+        "license": "MIT license",
+        "homepage": "https://docs.astral.sh/ruff",
+        "description": "An extremely fast Python linter and code formatter, written in Rust. - astral-sh/ruff"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "Rust",
+          "Linter",
+          "代码格式化",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruff 深度评测：Rust 打造的 Python 代码质量神器",
+        "ability": [
+          "极速代码检查：0.2 秒完成数万行代码 lint，比 Flake8 快约 50 倍",
+          "一站式替代：内置 900+ 规则，可替代 Flake8、Black、isort、pyupgrade 等多个工具",
+          "自动修复：--fix 一键修复大量常见代码问题",
+          "零配置上手：默认规则开箱即用，pyproject.toml 统一管理配置",
+          "生态完善：支持 pre-commit、GitHub Action、VS Code 插件，主流开源项目广泛采用"
+        ],
+        "summary": "用 Rust 编写的 Python 代码检查 + 格式化二合一工具，比传统方案快 10-1000 倍，一个工具顶十几个。",
+        "category": [
+          "开发工具",
+          "编程效率",
+          "代码质量"
+        ],
+        "suitable": [
+          "Python 个人开发者",
+          "技术团队负责人 / Tech Lead",
+          "开源项目维护者",
+          "Monorepo 大型项目团队",
+          "AI Coding Agent 开发者"
+        ],
+        "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。"
+      }
+    },
+    {
       "id": "8fb1cea6-9469-471a-9dd9-56725b69660b",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100122,8 +100187,8 @@
       "repo": "rust-lang/rust",
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
-      "stars": 121340,
-      "forks": 17361,
+      "stars": 121383,
+      "forks": 17363,
       "starsAdded": 186,
       "createdAt": "2026-11-06T16:00:02.843Z",
       "metaData": {
@@ -100172,6 +100237,63 @@
       }
     },
     {
+      "id": "9e4fa8c8-0952-488a-98ce-62455ffa092e",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/nushell/nushell",
+      "repo": "nushell/nushell",
+      "description": "A new type of shell",
+      "language": "Rust",
+      "stars": 40941,
+      "forks": 2341,
+      "starsAdded": 177,
+      "createdAt": "2026-11-06T16:00:02.881Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "nushell",
+          "rust",
+          "shell"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.nushell.sh/",
+        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Nushell",
+          "Shell",
+          "Rust",
+          "开源项目",
+          "命令行"
+        ],
+        "cover": "",
+        "title": "Nushell 深度评测：把 Shell 从文本处理工具重造为数据查询引擎",
+        "ability": [
+          "结构化数据管道：用 where/select/sort-by 等统一动词操作表格数据，告别 grep/awk 正则咒语",
+          "原生解析多种格式：open 一个命令直接读取 JSON/YAML/TOML/CSV/XML/Excel/SQLite",
+          "内置 http get 直接调用 REST API 并结构化展示结果",
+          "跨平台一致体验：Rust 单二进制，Windows/macOS/Linux 表现统一",
+          "活跃插件生态：nu_plugin_polars 处理百万行数据、query 解析网页、explore 交互式探索 JSON"
+        ],
+        "summary": "用 Rust 编写的现代 Shell，管道里流动的是结构化表格数据而非文本，让 JSON、CSV、日志处理变得像写人话一样简单。",
+        "category": [
+          "开发工具",
+          "命令行工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "DevOps / SRE 工程师（日志分析、监控数据处理）",
+          "数据工程师与后端开发者（天天和 JSON/CSV 打交道）",
+          "跨平台开发者（macOS/Linux/Windows 三边跑）",
+          "被 bash 折磨的 Shell 脚本重度用户",
+          "需要处理命令行输出和 API 数据的技术人员"
+        ],
+        "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。"
+      }
+    },
+    {
       "id": "87e99acd-6bea-4a9d-ba34-85db23fe52f9",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100179,8 +100301,8 @@
       "repo": "rails/rails",
       "description": "Ruby on Rails",
       "language": "Ruby",
-      "stars": 58965,
-      "forks": 23826,
+      "stars": 58992,
+      "forks": 23828,
       "starsAdded": 152,
       "createdAt": "2026-11-06T16:00:02.831Z",
       "metaData": {
@@ -100240,8 +100362,8 @@
       "repo": "prometheus/prometheus",
       "description": "The Prometheus monitoring system and time series database.",
       "language": "Go",
-      "stars": 67096,
-      "forks": 10980,
+      "stars": 67131,
+      "forks": 10982,
       "starsAdded": 140,
       "createdAt": "2026-11-06T16:00:02.860Z",
       "metaData": {
@@ -100301,8 +100423,8 @@
       "repo": "angular/angular",
       "description": "Deliver web apps with confidence 🚀",
       "language": "TypeScript",
-      "stars": 101256,
-      "forks": 28908,
+      "stars": 101300,
+      "forks": 28910,
       "starsAdded": 128,
       "createdAt": "2026-11-06T16:00:02.854Z",
       "metaData": {
@@ -100361,8 +100483,8 @@
       "repo": "etcd-io/etcd",
       "description": "Distributed reliable key-value store for the most critical data of a distributed system",
       "language": "Go",
-      "stars": 52559,
-      "forks": 10586,
+      "stars": 52582,
+      "forks": 10590,
       "starsAdded": 123,
       "createdAt": "2026-11-06T16:00:02.900Z",
       "metaData": {
@@ -100387,71 +100509,6 @@
       "summaryData": null
     },
     {
-      "id": "bc5be318-85ea-4979-8e1c-f2a62d7ae2a5",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/astral-sh/ruff",
-      "repo": "astral-sh/ruff",
-      "description": "An extremely fast Python linter and code formatter, written in Rust.",
-      "language": "Rust",
-      "stars": 50593,
-      "forks": 2601,
-      "starsAdded": 107,
-      "createdAt": "2026-11-06T16:00:02.936Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "linter",
-          "pep8",
-          "python",
-          "python3",
-          "ruff",
-          "rust",
-          "rustpython",
-          "static-analysis",
-          "static-code-analysis",
-          "style-guide",
-          "styleguide"
-        ],
-        "license": "MIT license",
-        "homepage": "https://docs.astral.sh/ruff",
-        "description": "An extremely fast Python linter and code formatter, written in Rust. - astral-sh/ruff"
-      },
-      "summaryData": {
-        "tags": [
-          "Python",
-          "Rust",
-          "Linter",
-          "代码格式化",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Ruff 深度评测：Rust 打造的 Python 代码质量神器",
-        "ability": [
-          "极速代码检查：0.2 秒完成数万行代码 lint，比 Flake8 快约 50 倍",
-          "一站式替代：内置 900+ 规则，可替代 Flake8、Black、isort、pyupgrade 等多个工具",
-          "自动修复：--fix 一键修复大量常见代码问题",
-          "零配置上手：默认规则开箱即用，pyproject.toml 统一管理配置",
-          "生态完善：支持 pre-commit、GitHub Action、VS Code 插件，主流开源项目广泛采用"
-        ],
-        "summary": "用 Rust 编写的 Python 代码检查 + 格式化二合一工具，比传统方案快 10-1000 倍，一个工具顶十几个。",
-        "category": [
-          "开发工具",
-          "编程效率",
-          "代码质量"
-        ],
-        "suitable": [
-          "Python 个人开发者",
-          "技术团队负责人 / Tech Lead",
-          "开源项目维护者",
-          "Monorepo 大型项目团队",
-          "AI Coding Agent 开发者"
-        ],
-        "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。"
-      }
-    },
-    {
       "id": "e2e32dce-2026-4cae-87a4-56f18c053e0f",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100459,8 +100516,8 @@
       "repo": "symfony/symfony",
       "description": "The Symfony PHP framework",
       "language": "PHP",
-      "stars": 31347,
-      "forks": 9944,
+      "stars": 31394,
+      "forks": 9945,
       "starsAdded": 89,
       "createdAt": "2026-11-06T16:00:02.857Z",
       "metaData": {
@@ -100513,63 +100570,6 @@
       }
     },
     {
-      "id": "9e4fa8c8-0952-488a-98ce-62455ffa092e",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/nushell/nushell",
-      "repo": "nushell/nushell",
-      "description": "A new type of shell",
-      "language": "Rust",
-      "stars": 40894,
-      "forks": 2338,
-      "starsAdded": 88,
-      "createdAt": "2026-11-06T16:00:02.881Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "nushell",
-          "rust",
-          "shell"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.nushell.sh/",
-        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Nushell",
-          "Shell",
-          "Rust",
-          "开源项目",
-          "命令行"
-        ],
-        "cover": "",
-        "title": "Nushell 深度评测：把 Shell 从文本处理工具重造为数据查询引擎",
-        "ability": [
-          "结构化数据管道：用 where/select/sort-by 等统一动词操作表格数据，告别 grep/awk 正则咒语",
-          "原生解析多种格式：open 一个命令直接读取 JSON/YAML/TOML/CSV/XML/Excel/SQLite",
-          "内置 http get 直接调用 REST API 并结构化展示结果",
-          "跨平台一致体验：Rust 单二进制，Windows/macOS/Linux 表现统一",
-          "活跃插件生态：nu_plugin_polars 处理百万行数据、query 解析网页、explore 交互式探索 JSON"
-        ],
-        "summary": "用 Rust 编写的现代 Shell，管道里流动的是结构化表格数据而非文本，让 JSON、CSV、日志处理变得像写人话一样简单。",
-        "category": [
-          "开发工具",
-          "命令行工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "DevOps / SRE 工程师（日志分析、监控数据处理）",
-          "数据工程师与后端开发者（天天和 JSON/CSV 打交道）",
-          "跨平台开发者（macOS/Linux/Windows 三边跑）",
-          "被 bash 折磨的 Shell 脚本重度用户",
-          "需要处理命令行输出和 API 数据的技术人员"
-        ],
-        "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。"
-      }
-    },
-    {
       "id": "0d623828-fb4f-487e-bfc3-bbb9dc98da6d",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100577,7 +100577,7 @@
       "repo": "mpv-player/mpv",
       "description": "🎥 Command line media player",
       "language": "C",
-      "stars": 37837,
+      "stars": 37856,
       "forks": 3630,
       "starsAdded": 36,
       "createdAt": "2026-11-06T16:00:02.833Z",
@@ -100638,7 +100638,7 @@
       "repo": "openssl/openssl",
       "description": "General purpose TLS and crypto library",
       "language": "C",
-      "stars": 31256,
+      "stars": 31271,
       "forks": 11580,
       "starsAdded": 24,
       "createdAt": "2026-11-06T16:00:02.920Z",
