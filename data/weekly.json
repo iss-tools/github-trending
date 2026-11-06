@@ -24122,9 +24122,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 48182,
-      "forks": 9600,
-      "starsAdded": 14580,
+      "stars": 48300,
+      "forks": 9612,
+      "starsAdded": 16235,
       "createdAt": "2026-11-01T18:00:04.507Z",
       "metaData": {
         "forks": "0",
@@ -24168,65 +24168,6 @@
       }
     },
     {
-      "id": "5c25a561-2a95-4639-9d77-73709bcfc672",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/pbakaus/impeccable",
-      "repo": "pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "language": "Rust",
-      "stars": 103837,
-      "forks": 6153,
-      "starsAdded": 10921,
-      "createdAt": "2026-11-01T18:00:04.387Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai",
-          "anti-slop",
-          "design",
-          "slop"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://impeccable.style",
-        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "AI Skill",
-          "UI 设计",
-          "开源项目",
-          "Cursor"
-        ],
-        "cover": "",
-        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
-        "ability": [
-          "24 条专业设计指令（polish/critique/distill/bolder 等）",
-          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
-          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
-          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
-          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
-        ],
-        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端设计"
-        ],
-        "suitable": [
-          "Solo Founder / 独立开发者",
-          "全栈 / 前端工程师",
-          "用 AI 做 MVP 的产品经理",
-          "没有设计师的创业团队",
-          "想提升 AI 产出界面质感的普通用户"
-        ],
-        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
-      }
-    },
-    {
       "id": "d00d38fa-a39e-42e9-bad1-32248273252a",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24234,9 +24175,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 113495,
+      "stars": 113524,
       "forks": 9850,
-      "starsAdded": 8822,
+      "starsAdded": 9318,
       "createdAt": "2026-11-01T18:00:04.434Z",
       "metaData": {
         "forks": "0",
@@ -24300,6 +24241,65 @@
       }
     },
     {
+      "id": "5c25a561-2a95-4639-9d77-73709bcfc672",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/pbakaus/impeccable",
+      "repo": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 103902,
+      "forks": 6157,
+      "starsAdded": 9303,
+      "createdAt": "2026-11-01T18:00:04.387Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai",
+          "anti-slop",
+          "design",
+          "slop"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://impeccable.style",
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. - pbakaus/impeccable"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "AI Skill",
+          "UI 设计",
+          "开源项目",
+          "Cursor"
+        ],
+        "cover": "",
+        "title": "Impeccable 深度评测：把'设计总监'塞进 Claude Code 的开源技能",
+        "ability": [
+          "24 条专业设计指令（polish/critique/distill/bolder 等）",
+          "61 条确定性反 AI 味检测器，纯代码运行无需 LLM",
+          "持久化产品档案（PRODUCT.md + DESIGN.md），避免每次从零猜需求",
+          "支持 Claude Code、Cursor、Codex 等 15+ AI 编程工具",
+          "显式反模式黑名单（禁 Inter 字体、紫蓝渐变、卡片套卡片等 AI Slop）"
+        ],
+        "summary": "一个让 AI 编程助手真正'懂设计'的开源 Skill，让 Claude Code/Cursor 生成的前端界面告别'一眼 AI 味'",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端设计"
+        ],
+        "suitable": [
+          "Solo Founder / 独立开发者",
+          "全栈 / 前端工程师",
+          "用 AI 做 MVP 的产品经理",
+          "没有设计师的创业团队",
+          "想提升 AI 产出界面质感的普通用户"
+        ],
+        "description": "由 jQuery UI 之父、前 Google 工程师 Paul Bakaus 开源的设计 Skill，把设计品味工程化为三件套：24 条命名指令 + 61 条确定性检测规则 + 持久化产品档案，让 AI 生成的界面从'AI 味一眼假'提升到'客户愿意付钱'的水平。同类中最成熟、覆盖最广，免费使用。"
+      }
+    },
+    {
       "id": "4a57a2a8-f2b5-4e82-8929-5edd6b14607a",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24359,9 +24359,9 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 48684,
+      "stars": 48749,
       "forks": 2583,
-      "starsAdded": 7622,
+      "starsAdded": 6994,
       "createdAt": "2026-11-01T18:00:04.376Z",
       "metaData": {
         "forks": "0",
@@ -24402,69 +24402,6 @@
           "Cursor / Claude Code 重度用户"
         ],
         "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
-      }
-    },
-    {
-      "id": "5c0ed4e2-9465-4478-874b-1da968798427",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "repo": "HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-      "language": "Python",
-      "stars": 55417,
-      "forks": 6793,
-      "starsAdded": 7512,
-      "createdAt": "2026-11-05T12:00:06.085Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "ai-tutor",
-          "clawbot",
-          "cli-tool",
-          "deepresearch",
-          "interactive-learning",
-          "learning",
-          "multi-agent-systems",
-          "rag"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "http://arxiv.org/abs/2604.26962",
-        "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor"
-      },
-      "summaryData": {
-        "tags": [
-          "DeepTutor",
-          "开源项目",
-          "AI私教",
-          "本地部署",
-          "RAG知识库"
-        ],
-        "cover": "",
-        "title": "DeepTutor 深度评测：港大开源 43k Star 的 Agent 原生 AI 私教学习工作台",
-        "ability": [
-          "统一 Agent 运行时：Chat、解题、测验、研究、笔记等模块共享上下文，学习体验不割裂",
-          "三层可审计记忆系统（Trace Forest），持续追踪用户薄弱点，且结论可追溯来源",
-          "页码级引用溯源的知识库 RAG，支持 LightRAG、GraphRAG、Obsidian 等 6 种检索引擎插拔",
-          "Partners AI 私教可接入飞书、微信、Telegram 等 15+ 即时通讯软件",
-          "全本地部署（Docker/PyPI 一键启动），学习数据不出本机"
-        ],
-        "summary": "港大数据智能实验室开源的 Agent 原生终身学习工作台，把读资料、问问题、解题、刷题、研究、笔记全链路整合进同一套 AI 架构，支持本地部署保护隐私。",
-        "category": [
-          "开源项目",
-          "AI 学习工具",
-          "教育科技"
-        ],
-        "suitable": [
-          "需要长期消化教材与论文的大学生、研究生",
-          "考研/雅思/公考等刷题备考人群",
-          "需要文献综述与深度调研的科研工作者",
-          "想制作可交互活教材的教师与课程设计者",
-          "想学习工业级多 Agent 记忆架构的 AI 开发者"
-        ],
-        "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。"
       }
     },
     {
@@ -24525,6 +24462,69 @@
           "受默认策略束缚的 DSH 重度用户（需自担风险）"
         ],
         "description": "由开发者小杨（YuJunZhiXue）维护的 DeepSeek Harness 本地插件，可清理宿主安全策略并为不同模型注入越狱提示词，工程完成度与文档质量在同类中领先（约 6500 Star）。但作者已暂停维护，且绕过模型安全策略的行为触碰 DeepSeek 服务条款，建议仅作学习材料在隔离环境使用。"
+      }
+    },
+    {
+      "id": "5c0ed4e2-9465-4478-874b-1da968798427",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "repo": "HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 55437,
+      "forks": 6796,
+      "starsAdded": 6229,
+      "createdAt": "2026-11-05T12:00:06.085Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-tutor",
+          "clawbot",
+          "cli-tool",
+          "deepresearch",
+          "interactive-learning",
+          "learning",
+          "multi-agent-systems",
+          "rag"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "http://arxiv.org/abs/2604.26962",
+        "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/. - HKUDS/DeepTutor"
+      },
+      "summaryData": {
+        "tags": [
+          "DeepTutor",
+          "开源项目",
+          "AI私教",
+          "本地部署",
+          "RAG知识库"
+        ],
+        "cover": "",
+        "title": "DeepTutor 深度评测：港大开源 43k Star 的 Agent 原生 AI 私教学习工作台",
+        "ability": [
+          "统一 Agent 运行时：Chat、解题、测验、研究、笔记等模块共享上下文，学习体验不割裂",
+          "三层可审计记忆系统（Trace Forest），持续追踪用户薄弱点，且结论可追溯来源",
+          "页码级引用溯源的知识库 RAG，支持 LightRAG、GraphRAG、Obsidian 等 6 种检索引擎插拔",
+          "Partners AI 私教可接入飞书、微信、Telegram 等 15+ 即时通讯软件",
+          "全本地部署（Docker/PyPI 一键启动），学习数据不出本机"
+        ],
+        "summary": "港大数据智能实验室开源的 Agent 原生终身学习工作台，把读资料、问问题、解题、刷题、研究、笔记全链路整合进同一套 AI 架构，支持本地部署保护隐私。",
+        "category": [
+          "开源项目",
+          "AI 学习工具",
+          "教育科技"
+        ],
+        "suitable": [
+          "需要长期消化教材与论文的大学生、研究生",
+          "考研/雅思/公考等刷题备考人群",
+          "需要文献综述与深度调研的科研工作者",
+          "想制作可交互活教材的教师与课程设计者",
+          "想学习工业级多 Agent 记忆架构的 AI 开发者"
+        ],
+        "description": "DeepTutor 是港大 HKUDS 实验室开源的 AI 学习工作台（Apache 2.0 免费商用），将阅读、提问、解题、刷题、研究、笔记整合进同一 Agent 架构，凭借三层记忆系统持续追踪个人学习薄弱点，形成'教-练-评'闭环。支持本地部署与多种 RAG 引擎插拔，兼顾数据隐私与个性化辅导，但学习成本与资源占用偏高。"
       }
     },
     {
@@ -24589,71 +24589,6 @@
       }
     },
     {
-      "id": "a4904c69-4bfd-4bf5-bbfa-45c7322c1f5a",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "repo": "Leonxlnx/taste-skill",
-      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-      "language": "JavaScript",
-      "stars": 110603,
-      "forks": 7431,
-      "starsAdded": 5935,
-      "createdAt": "2026-11-01T18:00:04.519Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "anti-slop",
-          "claude-code",
-          "codex",
-          "cursor",
-          "design-system",
-          "frontend",
-          "landing-page",
-          "ui-design",
-          "web-design"
-        ],
-        "license": "MIT license",
-        "homepage": "https://tasteskill.dev",
-        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "Agent Skill",
-          "UI 设计",
-          "反 AI 味",
-          "开源工具"
-        ],
-        "cover": "",
-        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
-        "ability": [
-          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
-          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
-          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
-          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
-          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
-        ],
-        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
-        "category": [
-          "开源项目",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "独立开发者和创业者：不请设计师也能做出非模板感官网",
-          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
-          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
-          "自由职业设计师：想把个人设计规则产品化交付",
-          "想做个人品牌或作品集的非技术人员"
-        ],
-        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
-      }
-    },
-    {
       "id": "8f88a370-8d25-4376-b3f0-83b306627927",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24661,9 +24596,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 13189,
-      "forks": 1829,
-      "starsAdded": 5847,
+      "stars": 13267,
+      "forks": 1844,
+      "starsAdded": 5580,
       "createdAt": "2026-11-05T12:00:06.090Z",
       "metaData": {
         "forks": "0",
@@ -24720,6 +24655,71 @@
       }
     },
     {
+      "id": "a4904c69-4bfd-4bf5-bbfa-45c7322c1f5a",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "repo": "Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "language": "JavaScript",
+      "stars": 110648,
+      "forks": 7433,
+      "starsAdded": 5426,
+      "createdAt": "2026-11-01T18:00:04.519Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "anti-slop",
+          "claude-code",
+          "codex",
+          "cursor",
+          "design-system",
+          "frontend",
+          "landing-page",
+          "ui-design",
+          "web-design"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tasteskill.dev",
+        "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages - Leonxlnx/taste-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "Agent Skill",
+          "UI 设计",
+          "反 AI 味",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Taste-Skill 深度评测：把设计师审美塞进 AI 编程助手的 9 万 Star 开源神器",
+        "ability": [
+          "通过 247 个获奖站点提炼的方向库随机发牌，逼 AI 跳出模板舒适区",
+          "真实浏览器三档分辨率检查器，14 条反 AI 味规则可机器验证",
+          "内置 Openverse、维基百科等四个免费图库脚本，自动找真图并记录版权",
+          "13 个风格技能全覆盖：营销页、极简风、粗野主义、仪表盘等场景",
+          "跨平台通用，支持 Claude Code、Codex、Cursor、Gemini CLI 等 20+ 工具一行命令安装"
+        ],
+        "summary": "一套让 Claude Code、Codex、Cursor 等 AI 编程工具告别'一眼假模板页'的开源 Agent Skill 合集，用可执行的规则和脚本把审美变成工程。",
+        "category": [
+          "开源项目",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "独立开发者和创业者：不请设计师也能做出非模板感官网",
+          "AI 编程工具重度用户：想让代码助手输出杂志级页面",
+          "前端工程师：想把主观审美变成可进 CI 的设计 lint",
+          "自由职业设计师：想把个人设计规则产品化交付",
+          "想做个人品牌或作品集的非技术人员"
+        ],
+        "description": "Taste-Skill 是一套 9.4 万 Star 的开源 Agent Skill 合集，针对 AI 生成前端页面千篇一律的'AI 味'痛点，把审美拆解为发牌、查表、照镜三个可验证环节：随机抽取设计方向、强制从主体独占资产找创意、用真实浏览器测量违规样式，让 AI 前端输出从模板脸升级为有品牌感的成品。"
+      }
+    },
+    {
       "id": "c761a558-d638-4284-8bc1-84c5b0690de5",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24727,9 +24727,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 312976,
-      "forks": 27848,
-      "starsAdded": 5565,
+      "stars": 313003,
+      "forks": 27851,
+      "starsAdded": 5131,
       "createdAt": "2026-11-01T18:00:04.489Z",
       "metaData": {
         "forks": "0",
@@ -24851,57 +24851,6 @@
       }
     },
     {
-      "id": "0da1c98e-aad9-4056-a65e-b2fe02dcbd80",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "repo": "multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "stars": 229850,
-      "forks": 22882,
-      "starsAdded": 3808,
-      "createdAt": "2026-11-01T18:00:04.510Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "",
-        "homepage": "",
-        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "Claude",
-          "Cursor",
-          "代码规范",
-          "自动化"
-        ],
-        "cover": "",
-        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
-        "ability": [
-          "纠正 AI 错误假设与沉默猜测",
-          "抑制过度设计与代码膨胀",
-          "实施精准的手术式代码修改",
-          "目标驱动的闭环验证机制"
-        ],
-        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率提升"
-        ],
-        "suitable": [
-          "Claude Code 或 Cursor 重度用户",
-          "追求高质量代码的开发者",
-          "技术团队负责人",
-          "需要规范 AI 输出的用户"
-        ],
-        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
-      }
-    },
-    {
       "id": "f7e7e401-256b-4d78-a1b8-d21a21e5d29b",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24909,9 +24858,9 @@
       "repo": "calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
-      "stars": 77104,
-      "forks": 10241,
-      "starsAdded": 3743,
+      "stars": 77139,
+      "forks": 10247,
+      "starsAdded": 4132,
       "createdAt": "2026-11-04T12:00:04.673Z",
       "metaData": {
         "forks": "0",
@@ -24971,6 +24920,57 @@
           "AI 极客与开发者"
         ],
         "description": "OpenMontage 将 Claude、Cursor 等编程助手转化为影视制作公司，支持从选题调研、脚本生成、素材检索到剪辑合成的全自动化。兼容本地与云端模型，提供成本预估与质量审核，是高效、低成本、可控的 AI 视频生产流水线。"
+      }
+    },
+    {
+      "id": "0da1c98e-aad9-4056-a65e-b2fe02dcbd80",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "stars": 229870,
+      "forks": 22883,
+      "starsAdded": 3713,
+      "createdAt": "2026-11-01T18:00:04.510Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "",
+        "homepage": "",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. - multica-ai/andrej-karpathy-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "Cursor",
+          "代码规范",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "Karpathy-Inspired Claude Code Guidelines 深度评测",
+        "ability": [
+          "纠正 AI 错误假设与沉默猜测",
+          "抑制过度设计与代码膨胀",
+          "实施精准的手术式代码修改",
+          "目标驱动的闭环验证机制"
+        ],
+        "summary": "通过四大核心原则，让 AI 编程助手从易出错变得精准可控。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code 或 Cursor 重度用户",
+          "追求高质量代码的开发者",
+          "技术团队负责人",
+          "需要规范 AI 输出的用户"
+        ],
+        "description": "这个 GitHub 项目通过配置文件将 Andrej Karpathy 的编程洞察转化为可执行的原则，有效解决 AI 编程助手容易自作主张、过度工程化和缺乏验证等痛点，显著提升代码质量和开发效率。"
       }
     },
     {
@@ -25094,6 +25094,61 @@
       }
     },
     {
+      "id": "c0b2e5a6-f8f1-47dc-982b-84fed82a67e3",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 187752,
+      "forks": 22152,
+      "starsAdded": 3072,
+      "createdAt": "2026-11-01T18:00:04.521Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
       "id": "f67612fa-ea43-4984-b663-6e4d136ebccc",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -25161,61 +25216,6 @@
       }
     },
     {
-      "id": "c0b2e5a6-f8f1-47dc-982b-84fed82a67e3",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/skills",
-      "repo": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "stars": 187733,
-      "forks": 22150,
-      "starsAdded": 3003,
-      "createdAt": "2026-11-01T18:00:04.521Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills"
-        ],
-        "license": "",
-        "homepage": "",
-        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Anthropic",
-          "Claude",
-          "Agent Skills",
-          "MCP",
-          "开源生态"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
-        "ability": [
-          "标准化技能定义",
-          "动态加载与组合",
-          "渐进式上下文管理",
-          "跨平台生态兼容",
-          "脚本与资源集成"
-        ],
-        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源框架"
-        ],
-        "suitable": [
-          "AI 应用开发者",
-          "研发与 DevOps 工程师",
-          "产品与知识管理者",
-          "企业工具链负责人",
-          "Agent 架构研究者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
-      }
-    },
-    {
       "id": "a2a86b9a-9f07-4915-a2e8-1e2f7b41ce0c",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -25223,9 +25223,9 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 11013,
-      "forks": 424,
-      "starsAdded": 1865,
+      "stars": 11025,
+      "forks": 425,
+      "starsAdded": 1840,
       "createdAt": "2026-11-01T18:00:04.513Z",
       "metaData": {
         "forks": "0",
@@ -25269,64 +25269,6 @@
       }
     },
     {
-      "id": "ebf8b9c9-3207-4154-954e-fd9908c8d6a4",
-      "dateAdded": "202645",
-      "type": "github-weekly",
-      "url": "https://github.com/hyprwm/Hyprland",
-      "repo": "hyprwm/Hyprland",
-      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-      "language": "C++",
-      "stars": 40355,
-      "forks": 2169,
-      "starsAdded": 1325,
-      "createdAt": "2026-11-03T12:00:22.213Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "compositor",
-          "cpp26",
-          "wayland",
-          "wayland-compositor"
-        ],
-        "license": "BSD-3-Clause license",
-        "homepage": "https://hypr.land",
-        "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. - hyprwm/Hyprland"
-      },
-      "summaryData": {
-        "tags": [
-          "Wayland",
-          "Linux桌面",
-          "窗口管理器",
-          "平铺WM",
-          "开源"
-        ],
-        "cover": "",
-        "title": "Hyprland 深度评测：把 Linux 桌面雕琢成作品的 Wayland 合成器",
-        "ability": [
-          "动态平铺窗口管理，键盘驱动的高效工作流",
-          "丰富视觉特效：模糊、发光、贝塞尔曲线动画、果冻窗口",
-          "hyprctl 与 IPC 控制，可脚本化远程操控桌面",
-          "插件系统与 Lua 配置，高度可定制扩展",
-          "工作区级屏幕共享，演示协作更安全"
-        ],
-        "summary": "一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。",
-        "category": [
-          "开发工具",
-          "操作系统桌面",
-          "开源项目"
-        ],
-        "suitable": [
-          "追求键盘效率的开发者与运维工程师",
-          "Linux 桌面美化玩家",
-          "追求流畅体验的笔记本用户",
-          "想学习 Wayland 协议的极客",
-          "需要精准屏幕共享的内容创作者"
-        ],
-        "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
-      }
-    },
-    {
       "id": "d7980eda-f76a-456f-9918-b56dad44c470",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -25334,9 +25276,9 @@
       "repo": "max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars": 11464,
-      "forks": 433,
-      "starsAdded": 1261,
+      "stars": 11500,
+      "forks": 437,
+      "starsAdded": 1802,
       "createdAt": "2026-11-03T12:00:22.217Z",
       "metaData": {
         "forks": "0",
@@ -25385,6 +25327,64 @@
       }
     },
     {
+      "id": "ebf8b9c9-3207-4154-954e-fd9908c8d6a4",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "repo": "hyprwm/Hyprland",
+      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "language": "C++",
+      "stars": 40359,
+      "forks": 2169,
+      "starsAdded": 1371,
+      "createdAt": "2026-11-03T12:00:22.213Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compositor",
+          "cpp26",
+          "wayland",
+          "wayland-compositor"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://hypr.land",
+        "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. - hyprwm/Hyprland"
+      },
+      "summaryData": {
+        "tags": [
+          "Wayland",
+          "Linux桌面",
+          "窗口管理器",
+          "平铺WM",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Hyprland 深度评测：把 Linux 桌面雕琢成作品的 Wayland 合成器",
+        "ability": [
+          "动态平铺窗口管理，键盘驱动的高效工作流",
+          "丰富视觉特效：模糊、发光、贝塞尔曲线动画、果冻窗口",
+          "hyprctl 与 IPC 控制，可脚本化远程操控桌面",
+          "插件系统与 Lua 配置，高度可定制扩展",
+          "工作区级屏幕共享，演示协作更安全"
+        ],
+        "summary": "一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。",
+        "category": [
+          "开发工具",
+          "操作系统桌面",
+          "开源项目"
+        ],
+        "suitable": [
+          "追求键盘效率的开发者与运维工程师",
+          "Linux 桌面美化玩家",
+          "追求流畅体验的笔记本用户",
+          "想学习 Wayland 协议的极客",
+          "需要精准屏幕共享的内容创作者"
+        ],
+        "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      }
+    },
+    {
       "id": "29657b17-f371-4272-8475-e55027175129",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -25392,9 +25392,9 @@
       "repo": "The-PR-Agent/pr-agent",
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars": 15075,
+      "stars": 15085,
       "forks": 2113,
-      "starsAdded": 966,
+      "starsAdded": 1355,
       "createdAt": "2026-11-05T12:00:06.114Z",
       "metaData": {
         "forks": "0",
@@ -25453,9 +25453,9 @@
       "repo": "ghostty-org/ghostty",
       "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
       "language": "Zig",
-      "stars": 63637,
-      "forks": 3830,
-      "starsAdded": 738,
+      "stars": 63644,
+      "forks": 3829,
+      "starsAdded": 726,
       "createdAt": "2026-11-01T18:00:04.528Z",
       "metaData": {
         "forks": "0",
