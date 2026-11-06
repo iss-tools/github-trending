@@ -2,15 +2,15 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 634
+      "count": 636
     },
     {
       "tag": "开源项目",
-      "count": 515
+      "count": 525
     },
     {
       "tag": "AI Agent",
-      "count": 385
+      "count": 389
     },
     {
       "tag": "自动化",
@@ -18,11 +18,11 @@
     },
     {
       "tag": "GitHub",
-      "count": 319
+      "count": 321
     },
     {
       "tag": "Claude Code",
-      "count": 230
+      "count": 231
     },
     {
       "tag": "Claude",
@@ -30,7 +30,7 @@
     },
     {
       "tag": "MCP",
-      "count": 169
+      "count": 170
     },
     {
       "tag": "自托管",
@@ -42,7 +42,7 @@
     },
     {
       "tag": "Rust",
-      "count": 106
+      "count": 110
     },
     {
       "tag": "工作流",
@@ -73,30 +73,30 @@
       "count": 77
     },
     {
-      "tag": "AI",
+      "tag": "Python",
       "count": 75
     },
     {
-      "tag": "开源工具",
-      "count": 74
+      "tag": "AI",
+      "count": 75
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1783
+      "count": 1798
     },
     {
       "name": "AI 编程",
-      "count": 1172
+      "count": 1177
     },
     {
       "name": "开源项目",
-      "count": 463
+      "count": 468
     },
     {
       "name": "效率工具",
-      "count": 427
+      "count": 429
     },
     {
       "name": "开发者工具",
@@ -108,7 +108,7 @@
     },
     {
       "name": "网络安全",
-      "count": 72
+      "count": 73
     },
     {
       "name": "AI编程",
@@ -202,11 +202,11 @@
     },
     {
       "name": "全栈开发者",
-      "count": 55
+      "count": 56
     },
     {
       "name": "数据科学家",
-      "count": 49
+      "count": 50
     },
     {
       "name": "AI 工具重度用户",
@@ -222,7 +222,7 @@
     },
     {
       "name": "AI 编程爱好者",
-      "count": 40
+      "count": 41
     },
     {
       "name": "技术团队",
@@ -248,19 +248,19 @@
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 461
+      "count": 462
     },
     {
       "name": "ai",
-      "count": 425
+      "count": 427
     },
     {
       "name": "ai-agents",
-      "count": 371
+      "count": 373
     },
     {
       "name": "mcp",
-      "count": 309
+      "count": 310
     },
     {
       "name": "llm",
@@ -268,7 +268,7 @@
     },
     {
       "name": "claude",
-      "count": 268
+      "count": 269
     },
     {
       "name": "agent-skills",
@@ -276,15 +276,15 @@
     },
     {
       "name": "codex",
-      "count": 239
+      "count": 240
     },
     {
       "name": "typescript",
-      "count": 189
+      "count": 191
     },
     {
       "name": "python",
-      "count": 187
+      "count": 188
     },
     {
       "name": "skills",
@@ -296,7 +296,7 @@
     },
     {
       "name": "anthropic",
-      "count": 139
+      "count": 140
     },
     {
       "name": "agents",
@@ -330,27 +330,27 @@
   "topLanguages": [
     {
       "name": "Python",
-      "count": 714
+      "count": 716
     },
     {
       "name": "TypeScript",
-      "count": 543
+      "count": 546
     },
     {
       "name": "JavaScript",
-      "count": 257
+      "count": 259
     },
     {
       "name": "Rust",
-      "count": 179
+      "count": 184
     },
     {
       "name": "Shell",
-      "count": 102
+      "count": 103
     },
     {
       "name": "Go",
-      "count": 97
+      "count": 99
     },
     {
       "name": "C++",
@@ -358,7 +358,7 @@
     },
     {
       "name": "C",
-      "count": 44
+      "count": 46
     },
     {
       "name": "HTML",
@@ -405,7 +405,7 @@
       "count": 5
     },
     {
-      "name": "LLVM",
+      "name": "PHP",
       "count": 5
     }
   ],
@@ -419,7 +419,7 @@
     {
       "repo": "morluto/rea",
       "url": "https://github.com/morluto/rea",
-      "stars": 436104,
+      "stars": 436383,
       "appearances": 11
     },
     {
@@ -437,13 +437,13 @@
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 316046,
+      "stars": 316162,
       "appearances": 29
     },
     {
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "stars": 313289,
+      "stars": 313333,
       "appearances": 24
     },
     {
@@ -451,6 +451,12 @@
       "url": "https://github.com/affaan-m/ECC",
       "stars": 296821,
       "appearances": 28
+    },
+    {
+      "repo": "react/react",
+      "url": "https://github.com/react/react",
+      "stars": 252056,
+      "appearances": 1
     },
     {
       "repo": "NousResearch/hermes-agent",
@@ -461,21 +467,15 @@
     {
       "repo": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 230063,
+      "stars": 230097,
       "appearances": 8
-    },
-    {
-      "repo": "anomalyco/opencode",
-      "url": "https://github.com/anomalyco/opencode",
-      "stars": 222825,
-      "appearances": 9
     }
   ],
   "topAppearances": [
     {
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 316046,
+      "stars": 316162,
       "appearances": 29
     },
     {
@@ -487,13 +487,13 @@
     {
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "stars": 102337,
+      "stars": 102421,
       "appearances": 24
     },
     {
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "stars": 313289,
+      "stars": 313333,
       "appearances": 24
     },
     {
@@ -505,13 +505,13 @@
     {
       "repo": "pbakaus/impeccable",
       "url": "https://github.com/pbakaus/impeccable",
-      "stars": 104331,
+      "stars": 104404,
       "appearances": 20
     },
     {
       "repo": "thedotmack/claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
-      "stars": 113747,
+      "stars": 113791,
       "appearances": 17
     },
     {

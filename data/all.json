@@ -1,6 +1,440 @@
 {
   "all": [
     {
+      "id": "1edd4d9f-0f26-4f05-87e0-fbaabf8ca33f",
+      "url": "https://github.com/nushell/nushell",
+      "domain": "github.com",
+      "repo": "nushell/nushell",
+      "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:29:27.727Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Nushell",
+          "Shell",
+          "Rust",
+          "开源项目",
+          "命令行"
+        ],
+        "cover": "",
+        "title": "Nushell 深度评测：把 Shell 从文本处理工具重造为数据查询引擎",
+        "ability": [
+          "结构化数据管道：用 where/select/sort-by 等统一动词操作表格数据，告别 grep/awk 正则咒语",
+          "原生解析多种格式：open 一个命令直接读取 JSON/YAML/TOML/CSV/XML/Excel/SQLite",
+          "内置 http get 直接调用 REST API 并结构化展示结果",
+          "跨平台一致体验：Rust 单二进制，Windows/macOS/Linux 表现统一",
+          "活跃插件生态：nu_plugin_polars 处理百万行数据、query 解析网页、explore 交互式探索 JSON"
+        ],
+        "summary": "用 Rust 编写的现代 Shell，管道里流动的是结构化表格数据而非文本，让 JSON、CSV、日志处理变得像写人话一样简单。",
+        "category": [
+          "开发工具",
+          "命令行工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "DevOps / SRE 工程师（日志分析、监控数据处理）",
+          "数据工程师与后端开发者（天天和 JSON/CSV 打交道）",
+          "跨平台开发者（macOS/Linux/Windows 三边跑）",
+          "被 bash 折磨的 Shell 脚本重度用户",
+          "需要处理命令行输出和 API 数据的技术人员"
+        ],
+        "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "321cbf2f-d90e-4957-a409-7b163aead748",
+      "url": "https://github.com/prometheus/prometheus",
+      "domain": "github.com",
+      "repo": "prometheus/prometheus",
+      "description": "Prometheus 是 CNCF 毕业项目，生产环境使用率高达 77%，是云原生监控的行业标准。它单机自治、部署极简，配合 Grafana 即可低成本替代商业 APM；但需警惕高基数陷阱，大规模长期存储需搭配 Thanos 或 VictoriaMetrics 等扩展方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:25:28.378Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "alerting",
+          "graphing",
+          "hacktoberfest",
+          "metrics",
+          "monitoring",
+          "prometheus",
+          "time-series"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://prometheus.io/",
+        "description": "The Prometheus monitoring system and time series database. - prometheus/prometheus"
+      },
+      "summaryData": {
+        "tags": [
+          "Prometheus",
+          "监控告警",
+          "时序数据库",
+          "云原生",
+          "CNCF"
+        ],
+        "cover": "",
+        "title": "Prometheus 深度评测：云原生监控界的“事实标准”，凭什么独占鳌头？",
+        "ability": [
+          "多维标签时序数据采集与存储（Pull 模型 + 内置 TSDB）",
+          "PromQL 查询语言，支持多维切片、聚合、分位数与趋势预测",
+          "告警全链路管理（Alertmanager 去重、分组、路由、静默）",
+          "庞大 Exporter 生态，覆盖 Node/MySQL/Blackbox 等几乎所有中间件",
+          "单一 Go 二进制部署，Apache 2.0 协议免费商用"
+        ],
+        "summary": "CNCF 毕业的开源监控告警系统，用 Pull 模型 + 多维标签 + PromQL 三件套成为云原生监控事实标准。",
+        "category": [
+          "开发工具",
+          "运维监控",
+          "开源项目"
+        ],
+        "suitable": [
+          "Kubernetes 运维 / SRE 工程师",
+          "微服务后端开发者",
+          "想摆脱 Datadog 等按量计费账单的团队",
+          "数据工程师与中间件维护者",
+          "云原生架构师"
+        ],
+        "description": "Prometheus 是 CNCF 毕业项目，生产环境使用率高达 77%，是云原生监控的行业标准。它单机自治、部署极简，配合 Grafana 即可低成本替代商业 APM；但需警惕高基数陷阱，大规模长期存储需搭配 Thanos 或 VictoriaMetrics 等扩展方案。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "72b437d6-596e-458f-bbb9-e3bc89a0227b",
+      "url": "https://github.com/symfony/symfony",
+      "domain": "github.com",
+      "repo": "symfony/symfony",
+      "description": "Symfony 由 Fabien Potencier 于 2005 年创建，采用 monorepo 模式同时输出全栈框架和几十个独立组件，GitHub 累计 31.2k Star、3374 位贡献者，其 HttpFoundation、Console、Twig 等组件被 Laravel、Drupal、Composer 广泛复用。2025 年同时发布 Symfony 8.0 和 7.4 LTS，新增官方 AI 工具链、单文件应用等特性。学习曲线陡峭，但长期可维护性和企业级治理能力在 PHP 生态中无可替代，适合长周期中大型项目。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:22:13.660Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "PHP",
+          "Symfony",
+          "开源框架",
+          "企业级",
+          "Web开发"
+        ],
+        "cover": "",
+        "title": "Symfony 深度评测：20 年常青的企业级 PHP 框架",
+        "ability": [
+          "组件化架构：HttpFoundation、Console 等组件可脱离框架独立使用",
+          "LTS 长期支持：7.4 LTS 安全修复持续到 2029 年，企业级版本治理",
+          "强大的调试生态：Web Debug Toolbar 可视化展示 SQL、性能、日志等信息",
+          "官方 Symfony AI 支持：Agent 智能体、RAG 向量检索、MCP 协议集成",
+          "单文件应用与 PHP Attributes：现代 PHP 特性全面接管路由与配置"
+        ],
+        "summary": "Symfony 是一个历经 20 年活跃维护的企业级 PHP 框架与可复用组件库，Laravel 和 Drupal 的底层都在用它的组件。",
+        "category": [
+          "开发工具",
+          "编程框架",
+          "Web 开发"
+        ],
+        "suitable": [
+          "企业级 PHP 项目架构师 / CTO",
+          "想进阶理解框架底层的 Laravel 开发者",
+          "Drupal、Shopware 等系统的二次开发者",
+          "想在 PHP 生态中构建 AI 应用的程序员",
+          "需要开发 Composer 包或 CLI 工具的 PHP 工程师"
+        ],
+        "description": "Symfony 由 Fabien Potencier 于 2005 年创建，采用 monorepo 模式同时输出全栈框架和几十个独立组件，GitHub 累计 31.2k Star、3374 位贡献者，其 HttpFoundation、Console、Twig 等组件被 Laravel、Drupal、Composer 广泛复用。2025 年同时发布 Symfony 8.0 和 7.4 LTS，新增官方 AI 工具链、单文件应用等特性。学习曲线陡峭，但长期可维护性和企业级治理能力在 PHP 生态中无可替代，适合长周期中大型项目。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "11dfe57c-f8f8-4a77-983a-0711c41d861a",
+      "url": "https://github.com/angular/angular",
+      "domain": "github.com",
+      "repo": "angular/angular",
+      "description": "Angular 是 Google 主导维护的 TypeScript 企业级前端框架，GitHub 101k Star。它已从‘重、难学、过时’的旧形象蜕变为 Signals 响应式、Zoneless 默认的现代框架，自带路由、表单、CLI 全套工具，并率先内置 MCP Server 拥抱 AI 辅助开发。学习曲线仍陡峭、社区生态不及 React，但其一致性与可维护性在企业级场景中无可替代。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:18:36.291Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Angular",
+          "前端框架",
+          "TypeScript",
+          "企业级开发",
+          "Google"
+        ],
+        "cover": "",
+        "title": "Angular 深度评测：一个被误解太久、却正在悄悄翻身的“老将”前端框架",
+        "ability": [
+          "Signals 细粒度响应式，变更检测性能提升约 40%",
+          "Standalone 组件 + 强大 CLI，开箱即用无需配置",
+          "Ivy 编译器严格模板类型检查，把错误挡在编译期",
+          "内置 MCP Server 与 AI Tutor，AI 编程助手可读取最新官方文档",
+          "官方自动迁移工具 ng update，跨大版本升级省心"
+        ],
+        "summary": "Angular 是 Google 主导的企业级前端全家桶框架，已用 Signals 重写响应式内核并默认告别 zone.js，最适合大型团队与长周期项目。",
+        "category": [
+          "开发工具",
+          "前端框架"
+        ],
+        "suitable": [
+          "维护中后台、SaaS、CRM 等系统的企业级前端工程师",
+          "从 Java/.NET 后端转前端的全栈开发者",
+          "需要长期维护 5 年以上的 B 端系统团队",
+          "20 人以上、跨团队协作的强规范性开发团队",
+          "正在做技术选型的架构师"
+        ],
+        "description": "Angular 是 Google 主导维护的 TypeScript 企业级前端框架，GitHub 101k Star。它已从‘重、难学、过时’的旧形象蜕变为 Signals 响应式、Zoneless 默认的现代框架，自带路由、表单、CLI 全套工具，并率先内置 MCP Server 拥抱 AI 辅助开发。学习曲线仍陡峭、社区生态不及 React，但其一致性与可维护性在企业级场景中无可替代。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "d7ada7d9-43a1-4351-afdd-3029919e9b20",
+      "url": "https://github.com/react/react",
+      "domain": "github.com",
+      "repo": "react/react",
+      "description": "React 是 Meta 开源的声明式 UI 库，24 万+ Star、年下载 1.6 亿次。React 19 引入 Server Components 与 Actions 全面拥抱全栈开发，React Compiler 实现编译器级自动性能优化。它虽不是技术最尖端的框架，却凭借最厚的生态、最多的岗位和最强的 AI 辅助成为风险最低的前端选择。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:15:08.225Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "declarative",
+          "frontend",
+          "javascript",
+          "library",
+          "react",
+          "ui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://react.dev",
+        "description": "The library for web and native user interfaces. Contribute to react/react development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "前端框架",
+          "开源项目",
+          "Meta",
+          "JavaScript"
+        ],
+        "cover": "",
+        "title": "React 深度评测：定义现代前端的开源巨擘，2026 年还值得押注吗？",
+        "ability": [
+          "声明式组件化开发，UI = f(state)，告别手动操作 DOM",
+          "Hooks 函数式状态管理，组件即有状态的函数",
+          "React 19 全栈能力：Server Components、Actions、useOptimistic",
+          "React Compiler 自动性能优化，无需手写 useMemo/useCallback",
+          "庞大跨端生态：React Native 移动端、Next.js 元框架、AI 编程工具最佳支持"
+        ],
+        "summary": "Meta 开源的声明式 UI 库，用组件化和虚拟 DOM 定义了现代前端标准，是生态最厚、岗位最多的前端硬通货。",
+        "category": [
+          "开发工具",
+          "前端框架",
+          "开源项目"
+        ],
+        "suitable": [
+          "前端新人与求职者（招聘市场硬通货）",
+          "全栈工程师与创业团队",
+          "中后台业务开发者",
+          "React Native 移动端开发者",
+          "AI 编程工具重度用户"
+        ],
+        "description": "React 是 Meta 开源的声明式 UI 库，24 万+ Star、年下载 1.6 亿次。React 19 引入 Server Components 与 Actions 全面拥抱全栈开发，React Compiler 实现编译器级自动性能优化。它虽不是技术最尖端的框架，却凭借最厚的生态、最多的岗位和最强的 AI 辅助成为风险最低的前端选择。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "7e17d6f9-e230-450f-95f7-97b4d16a5180",
+      "url": "https://github.com/mpv-player/mpv",
+      "domain": "github.com",
+      "repo": "mpv-player/mpv",
+      "description": "mpv 是从 MPlayer 分叉出的极简开源播放器，砍掉臃肿 GUI，把精力全部投入解码、渲染和可编程性。它画质媲美付费的 madVR，通过 Lua 脚本生态和 libmpv 嵌入能力，既是普通人的观影利器，也是开发者的基础设施。代价是配置有一定学习成本，不适合追求开箱即用的小白。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:11:01.481Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "mpv",
+          "视频播放器",
+          "开源",
+          "高画质",
+          "FFmpeg"
+        ],
+        "cover": "",
+        "title": "mpv 深度评测：藏在命令行背后的视频播放器性价比之王",
+        "ability": [
+          "基于 libplacebo/gpu-next 渲染管线，开源界顶级画质，支持 HDR 和高质量缩放",
+          "Lua 脚本 + 配置文件高度可编程，几乎一切行为都能定制",
+          "libmpv 可嵌入第三方应用，是 IINA、mpv-android 等播放器的底层引擎",
+          "集成 yt-dlp，直接播放 B 站、YouTube 等上千个流媒体站点链接",
+          "核心轻量稳定，支持硬件解码，资源占用极低"
+        ],
+        "summary": "mpv 是一个极简、高画质、高度可定制的开源视频播放器内核，也是众多播放器背后的引擎。",
+        "category": [
+          "开发工具",
+          "影音娱乐",
+          "开源项目"
+        ],
+        "suitable": [
+          "开发工程师（需要嵌入视频播放能力）",
+          "影视发烧友 / 本地高清资源玩家",
+          "Linux 和命令行重度用户",
+          "追番追剧党（配合 yt-dlp 做无广告客户端）",
+          "macOS 用户（通过 IINA 间接使用）"
+        ],
+        "description": "mpv 是从 MPlayer 分叉出的极简开源播放器，砍掉臃肿 GUI，把精力全部投入解码、渲染和可编程性。它画质媲美付费的 madVR，通过 Lua 脚本生态和 libmpv 嵌入能力，既是普通人的观影利器，也是开发者的基础设施。代价是配置有一定学习成本，不适合追求开箱即用的小白。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "71393d46-5a62-4f85-b613-06c9cd272c6f",
+      "url": "https://github.com/rails/rails",
+      "domain": "github.com",
+      "repo": "rails/rails",
+      "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:07:47.037Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "activejob",
+          "activerecord",
+          "framework",
+          "html",
+          "mvc",
+          "rails",
+          "ruby"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rubyonrails.org",
+        "description": "Ruby on Rails. Contribute to rails/rails development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Ruby on Rails",
+          "全栈框架",
+          "MVC",
+          "Hotwire",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruby on Rails 深度评测：一个快二十岁的框架，凭什么依然是 SaaS 创业者的瑞士军刀",
+        "ability": [
+          "全栈内置：前端、后端、队列、缓存、认证、部署一站式解决",
+          "Scaffold 脚手架：一条命令生成完整 CRUD 应用与测试",
+          "Hotwire 实时交互：服务端渲染实现 SPA 般丝滑体验",
+          "Solid 三件套：用数据库替代 Redis，砍掉外部依赖",
+          "Kamal 一键部署：任意 VPS 实现零停机上线"
+        ],
+        "summary": "约定优于配置的全栈 Web 框架，一条命令就能从想法跑到生产环境上线",
+        "category": [
+          "开发工具",
+          "Web 框架",
+          "编程语言生态"
+        ],
+        "suitable": [
+          "独立开发者与 SaaS 创业者",
+          "3-20 人的中小业务团队",
+          "后端转全栈的工程师",
+          "企业内部管理系统开发者",
+          "电商与内容平台建设者"
+        ],
+        "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
+      "id": "d0d61164-6618-4fb7-a35e-4e515e06254b",
+      "url": "https://github.com/zed-industries/zed",
+      "domain": "github.com",
+      "repo": "zed-industries/zed",
+      "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-06T13:03:50.395Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://zed.dev",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
+      },
+      "summaryData": {
+        "tags": [
+          "代码编辑器",
+          "Rust",
+          "开源项目",
+          "GPU 加速",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
+        "ability": [
+          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
+          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
+          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
+          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
+          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
+        ],
+        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Rust/Go/Python/TypeScript 等语言的开发者",
+          "受够 VS Code 卡顿与高内存占用的用户",
+          "需要远程结对编程的协作团队",
+          "想省去配置成本的 Vim/Neovim 老用户",
+          "AI Agent 重度使用与工作流研究者"
+        ],
+        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
+      },
+      "type": "project",
+      "dateAdded": "20261106"
+    },
+    {
       "id": "51827452-743a-4ab1-a032-e633266e2aad",
       "url": "https://github.com/microsoft/VibeVoice",
       "domain": "github.com",
