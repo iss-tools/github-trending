@@ -99678,8 +99678,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 63207,
-      "forks": 4094,
+      "stars": 63315,
+      "forks": 4104,
       "starsAdded": 2524,
       "createdAt": "2026-11-06T16:00:02.934Z",
       "metaData": {
@@ -99730,8 +99730,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 316311,
-      "forks": 26458,
+      "stars": 316372,
+      "forks": 26463,
       "starsAdded": 2058,
       "createdAt": "2026-11-06T16:00:02.930Z",
       "metaData": {
@@ -99781,8 +99781,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 8566,
-      "forks": 695,
+      "stars": 8626,
+      "forks": 698,
       "starsAdded": 2005,
       "createdAt": "2026-11-06T16:00:02.823Z",
       "metaData": {
@@ -99834,8 +99834,8 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 22696,
-      "forks": 1907,
+      "stars": 22716,
+      "forks": 1910,
       "starsAdded": 532,
       "createdAt": "2026-11-06T16:00:02.866Z",
       "metaData": {
@@ -99889,8 +99889,8 @@
       "repo": "lz4/lz4",
       "description": "Extremely Fast Compression algorithm",
       "language": "C",
-      "stars": 12580,
-      "forks": 1640,
+      "stars": 12592,
+      "forks": 1641,
       "starsAdded": 313,
       "createdAt": "2026-11-06T16:00:02.872Z",
       "metaData": {
@@ -99946,8 +99946,8 @@
       "repo": "microsoft/vscode",
       "description": "Visual Studio Code",
       "language": "TypeScript",
-      "stars": 194880,
-      "forks": 44407,
+      "stars": 194890,
+      "forks": 44410,
       "starsAdded": 295,
       "createdAt": "2026-11-06T16:00:02.870Z",
       "metaData": {
@@ -100005,8 +100005,8 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 93230,
-      "forks": 11472,
+      "stars": 93273,
+      "forks": 11474,
       "starsAdded": 292,
       "createdAt": "2026-11-06T16:00:02.816Z",
       "metaData": {
@@ -100062,8 +100062,8 @@
       "repo": "react/react",
       "description": "The library for web and native user interfaces.",
       "language": "JavaScript",
-      "stars": 252123,
-      "forks": 51798,
+      "stars": 252132,
+      "forks": 51800,
       "starsAdded": 244,
       "createdAt": "2026-11-06T16:00:02.850Z",
       "metaData": {
@@ -100122,7 +100122,7 @@
       "repo": "rust-lang/rust",
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
-      "stars": 121265,
+      "stars": 121282,
       "forks": 17357,
       "starsAdded": 186,
       "createdAt": "2026-11-06T16:00:02.843Z",
@@ -100172,6 +100172,67 @@
       }
     },
     {
+      "id": "87e99acd-6bea-4a9d-ba34-85db23fe52f9",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/rails/rails",
+      "repo": "rails/rails",
+      "description": "Ruby on Rails",
+      "language": "Ruby",
+      "stars": 58935,
+      "forks": 23824,
+      "starsAdded": 152,
+      "createdAt": "2026-11-06T16:00:02.831Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "activejob",
+          "activerecord",
+          "framework",
+          "html",
+          "mvc",
+          "rails",
+          "ruby"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rubyonrails.org",
+        "description": "Ruby on Rails. Contribute to rails/rails development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Ruby on Rails",
+          "全栈框架",
+          "MVC",
+          "Hotwire",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruby on Rails 深度评测：一个快二十岁的框架，凭什么依然是 SaaS 创业者的瑞士军刀",
+        "ability": [
+          "全栈内置：前端、后端、队列、缓存、认证、部署一站式解决",
+          "Scaffold 脚手架：一条命令生成完整 CRUD 应用与测试",
+          "Hotwire 实时交互：服务端渲染实现 SPA 般丝滑体验",
+          "Solid 三件套：用数据库替代 Redis，砍掉外部依赖",
+          "Kamal 一键部署：任意 VPS 实现零停机上线"
+        ],
+        "summary": "约定优于配置的全栈 Web 框架，一条命令就能从想法跑到生产环境上线",
+        "category": [
+          "开发工具",
+          "Web 框架",
+          "编程语言生态"
+        ],
+        "suitable": [
+          "独立开发者与 SaaS 创业者",
+          "3-20 人的中小业务团队",
+          "后端转全栈的工程师",
+          "企业内部管理系统开发者",
+          "电商与内容平台建设者"
+        ],
+        "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。"
+      }
+    },
+    {
       "id": "c9a1d881-f9c3-430d-95cd-7a352ea60967",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100179,7 +100240,7 @@
       "repo": "prometheus/prometheus",
       "description": "The Prometheus monitoring system and time series database.",
       "language": "Go",
-      "stars": 67038,
+      "stars": 67051,
       "forks": 10979,
       "starsAdded": 140,
       "createdAt": "2026-11-06T16:00:02.860Z",
@@ -100240,7 +100301,7 @@
       "repo": "angular/angular",
       "description": "Deliver web apps with confidence 🚀",
       "language": "TypeScript",
-      "stars": 101202,
+      "stars": 101210,
       "forks": 28906,
       "starsAdded": 128,
       "createdAt": "2026-11-06T16:00:02.854Z",
@@ -100300,8 +100361,8 @@
       "repo": "etcd-io/etcd",
       "description": "Distributed reliable key-value store for the most critical data of a distributed system",
       "language": "Go",
-      "stars": 52521,
-      "forks": 10576,
+      "stars": 52533,
+      "forks": 10577,
       "starsAdded": 123,
       "createdAt": "2026-11-06T16:00:02.900Z",
       "metaData": {
@@ -100333,7 +100394,7 @@
       "repo": "astral-sh/ruff",
       "description": "An extremely fast Python linter and code formatter, written in Rust.",
       "language": "Rust",
-      "stars": 50542,
+      "stars": 50550,
       "forks": 2597,
       "starsAdded": 107,
       "createdAt": "2026-11-06T16:00:02.936Z",
@@ -100398,7 +100459,7 @@
       "repo": "symfony/symfony",
       "description": "The Symfony PHP framework",
       "language": "PHP",
-      "stars": 31295,
+      "stars": 31304,
       "forks": 9942,
       "starsAdded": 89,
       "createdAt": "2026-11-06T16:00:02.857Z",
@@ -100459,7 +100520,7 @@
       "repo": "nushell/nushell",
       "description": "A new type of shell",
       "language": "Rust",
-      "stars": 40841,
+      "stars": 40852,
       "forks": 2334,
       "starsAdded": 88,
       "createdAt": "2026-11-06T16:00:02.881Z",
@@ -100509,67 +100570,6 @@
       }
     },
     {
-      "id": "87e99acd-6bea-4a9d-ba34-85db23fe52f9",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/rails/rails",
-      "repo": "rails/rails",
-      "description": "Ruby on Rails",
-      "language": "Ruby",
-      "stars": 58926,
-      "forks": 23824,
-      "starsAdded": 44,
-      "createdAt": "2026-11-06T16:00:02.831Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "activejob",
-          "activerecord",
-          "framework",
-          "html",
-          "mvc",
-          "rails",
-          "ruby"
-        ],
-        "license": "MIT license",
-        "homepage": "https://rubyonrails.org",
-        "description": "Ruby on Rails. Contribute to rails/rails development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Ruby on Rails",
-          "全栈框架",
-          "MVC",
-          "Hotwire",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Ruby on Rails 深度评测：一个快二十岁的框架，凭什么依然是 SaaS 创业者的瑞士军刀",
-        "ability": [
-          "全栈内置：前端、后端、队列、缓存、认证、部署一站式解决",
-          "Scaffold 脚手架：一条命令生成完整 CRUD 应用与测试",
-          "Hotwire 实时交互：服务端渲染实现 SPA 般丝滑体验",
-          "Solid 三件套：用数据库替代 Redis，砍掉外部依赖",
-          "Kamal 一键部署：任意 VPS 实现零停机上线"
-        ],
-        "summary": "约定优于配置的全栈 Web 框架，一条命令就能从想法跑到生产环境上线",
-        "category": [
-          "开发工具",
-          "Web 框架",
-          "编程语言生态"
-        ],
-        "suitable": [
-          "独立开发者与 SaaS 创业者",
-          "3-20 人的中小业务团队",
-          "后端转全栈的工程师",
-          "企业内部管理系统开发者",
-          "电商与内容平台建设者"
-        ],
-        "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。"
-      }
-    },
-    {
       "id": "0d623828-fb4f-487e-bfc3-bbb9dc98da6d",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100577,7 +100577,7 @@
       "repo": "mpv-player/mpv",
       "description": "🎥 Command line media player",
       "language": "C",
-      "stars": 37801,
+      "stars": 37810,
       "forks": 3630,
       "starsAdded": 36,
       "createdAt": "2026-11-06T16:00:02.833Z",
@@ -100638,7 +100638,7 @@
       "repo": "openssl/openssl",
       "description": "General purpose TLS and crypto library",
       "language": "C",
-      "stars": 31230,
+      "stars": 31238,
       "forks": 11580,
       "starsAdded": 24,
       "createdAt": "2026-11-06T16:00:02.920Z",
