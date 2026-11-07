@@ -10,7 +10,17 @@
   "createdAt": "2026-11-07T15:26:56.283Z",
   "metaData": {
     "forks": "0",
-    "stars": "0"
+    "stars": "0",
+    "topics": [
+      "bare-metal",
+      "cluster-api",
+      "gpu",
+      "kubernetes",
+      "nvidia"
+    ],
+    "license": "Apache-2.0 license",
+    "homepage": "https://docs.nvidia.com/nvke/",
+    "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
   },
   "summaryData": null,
   "contentDetail": "# NVKE",

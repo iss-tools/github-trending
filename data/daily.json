@@ -100610,7 +100610,22 @@
       "createdAt": "2026-11-07T15:00:02.905Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "coap-protocol",
+          "coap-server",
+          "custom-component",
+          "dtls",
+          "hacs",
+          "hacs-integration",
+          "home-assistant",
+          "home-automation",
+          "samsung",
+          "smartthings"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account. - mbillow/localthings"
       },
       "summaryData": {
         "tags": [
@@ -101027,7 +101042,17 @@
       "createdAt": "2026-11-07T15:00:02.930Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "bare-metal",
+          "cluster-api",
+          "gpu",
+          "kubernetes",
+          "nvidia"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/nvke/",
+        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
       },
       "summaryData": null
     },
@@ -101151,6 +101176,836 @@
         ],
         "description": "OpenSSL 是有近 30 年历史的开源密码学库，支撑着全球 HTTPS、VPN、证书签发等加密基础设施。3.x 引入 Provider 可插拔架构，3.5 LTS 新增 QUIC 服务器与后量子密码（ML-KEM/ML-DSA）支持，是唯一通过 FIPS 140-3 验证的主流 TLS 库。但 1.1.1 升级 3.x 存在 Legacy Provider、低级 API 弃用等大量迁移陷阱，生产环境升级需谨慎评估。"
       }
+    }
+  ],
+  "20261108": [
+    {
+      "id": "83bbbb69-2131-41a1-8215-f9275dbe1051",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "repo": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 65493,
+      "forks": 4257,
+      "starsAdded": 2088,
+      "createdAt": "2026-11-07T16:00:04.078Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings - cloudflare/security-audit-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "安全审计",
+          "Cloudflare",
+          "AI Agent",
+          "DevSecOps"
+        ],
+        "cover": "",
+        "title": "Cloudflare Security Audit Skill 深度评测",
+        "ability": [
+          "多智能体并行审计",
+          "对抗验证防误报",
+          "结构化漏洞报告",
+          "增量式覆盖扫描",
+          "多类攻击库支持"
+        ],
+        "summary": "让 AI 变身为专业的安全审计员，自动扫描代码漏洞并生成可机读报告。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI 编程爱好者",
+          "安全研究人员",
+          "DevSecOps 工程师",
+          "全栈开发者"
+        ],
+        "description": "这是一套 AI 审计“剧本”，通过六阶段流水线让智能体执行代码安全审查，覆盖 Web、LLM 等漏洞，输出人类可读报告和机器可读的 JSON 数据，适合集成到开发流程中提升代码安全性。"
+      }
+    },
+    {
+      "id": "a4fcbac8-0920-4464-aabf-85693f867351",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 16841,
+      "forks": 2388,
+      "starsAdded": 1986,
+      "createdAt": "2026-11-07T16:00:04.221Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "expo",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.openmausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
+      "id": "bd58618c-0f96-4d6c-bb82-49a0434bea34",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "repo": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 100258,
+      "forks": 11853,
+      "starsAdded": 1819,
+      "createdAt": "2026-11-07T16:00:04.199Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cli",
+          "cti",
+          "cybersecurity",
+          "forensics",
+          "hacktoberfest",
+          "information-gathering",
+          "infosec",
+          "linux",
+          "osint",
+          "pentesting",
+          "python",
+          "python3",
+          "reconnaissance",
+          "redteam",
+          "sherlock",
+          "tools"
+        ],
+        "license": "MIT license",
+        "homepage": "https://sherlockproject.xyz",
+        "description": "Hunt down social media accounts by username across social networks - sherlock-project/sherlock"
+      },
+      "summaryData": {
+        "tags": [
+          "OSINT",
+          "开源项目",
+          "用户名侦察",
+          "GitHub",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Sherlock 深度评测：开源 OSINT 用户名全网侦察工具，一条命令撒网 400+ 平台",
+        "ability": [
+          "一键在 400+ 社交平台并发探测用户名是否被注册",
+          "支持多用户批量查询与 CSV/Excel 报表导出",
+          "支持 Tor/SOCKS5 代理与超时配置，保护调查者真实 IP",
+          "通配符变体查询（如 john{.}_doe），覆盖不同平台的命名差异",
+          "规则配置化设计（data.json），社区可零代码扩展新站点"
+        ],
+        "summary": "输入一个用户名，30 秒内在 400+ 社交平台探测账号是否存在并返回直接链接。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "OSINT"
+        ],
+        "suitable": [
+          "OSINT 情报分析师与调查记者",
+          "红队/渗透测试工程师",
+          "关注个人隐私、想自查数字足迹的普通用户",
+          "品牌运营与商标抢注监测人员",
+          "想学习并发爬虫与规则引擎设计的开发者"
+        ],
+        "description": "Sherlock 是 MIT 协议开源的 OSINT 命令行工具，输入一个用户名即可在 400+ 社交平台并发探测账号是否存在并返回链接。支持批量查询、报表导出与 Tor 代理，一条 pipx 命令即可安装，是用户名侦察赛道公认的开山鼻祖。"
+      }
+    },
+    {
+      "id": "bcc28ec9-2bd3-4b9e-b799-6e32cf9ab033",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/zed-industries/zed",
+      "repo": "zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars": 94219,
+      "forks": 11548,
+      "starsAdded": 1119,
+      "createdAt": "2026-11-07T16:00:04.304Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://zed.dev",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
+      },
+      "summaryData": {
+        "tags": [
+          "代码编辑器",
+          "Rust",
+          "开源项目",
+          "GPU 加速",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
+        "ability": [
+          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
+          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
+          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
+          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
+          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
+        ],
+        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Rust/Go/Python/TypeScript 等语言的开发者",
+          "受够 VS Code 卡顿与高内存占用的用户",
+          "需要远程结对编程的协作团队",
+          "想省去配置成本的 Vim/Neovim 老用户",
+          "AI Agent 重度使用与工作流研究者"
+        ],
+        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
+      }
+    },
+    {
+      "id": "054dff68-0c37-4854-96af-49164e3b5caf",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 317568,
+      "forks": 26568,
+      "starsAdded": 1111,
+      "createdAt": "2026-11-07T16:00:04.146Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "4808d081-1090-4622-88eb-03d9939e9e6e",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/google/skills",
+      "repo": "google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 23302,
+      "forks": 1948,
+      "starsAdded": 449,
+      "createdAt": "2026-11-07T16:00:04.114Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "google",
+          "googlecloud",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Agent Skills for Google products and technologies. Contribute to google/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Google",
+          "AI Agent",
+          "GitHub",
+          "开源",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "Google 官方 Agent 技能包",
+        "ability": [
+          "提供 Google 生态预置技能",
+          "一键集成 Claude Code 等工具",
+          "覆盖开发运维数据全链路",
+          "官方权威与开源协议"
+        ],
+        "summary": "Google 官方提供的 AI 技能包，一键集成 GCP/Android 等知识到 AI 助手，提升开发效率。",
+        "category": [
+          "AI 编程",
+          "开发者工具",
+          "云服务"
+        ],
+        "suitable": [
+          "Google 技术栈工程师",
+          "数据/平台工程师",
+          "前端/客户端开发者",
+          "DevOps/SRE"
+        ],
+        "description": "这是 Google 推出的开源技能合集，整合了云平台、移动开发、数据分析等领域的官方最佳实践。它能被 Claude Code 等 AI 工具直接调用，让助手更懂 Google 产品，从而更精准地完成配置、排障和代码生成任务。"
+      }
+    },
+    {
+      "id": "7b5fd1b8-8e59-454b-ad42-9be81c32ee52",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 188672,
+      "forks": 22242,
+      "starsAdded": 386,
+      "createdAt": "2026-11-07T16:00:04.157Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
+      "id": "79414a38-5e8e-424a-9799-b12367b25e59",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/astral-sh/ruff",
+      "repo": "astral-sh/ruff",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "language": "Rust",
+      "stars": 50939,
+      "forks": 2629,
+      "starsAdded": 350,
+      "createdAt": "2026-11-07T16:00:04.235Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "linter",
+          "pep8",
+          "python",
+          "python3",
+          "ruff",
+          "rust",
+          "rustpython",
+          "static-analysis",
+          "static-code-analysis",
+          "style-guide",
+          "styleguide"
+        ],
+        "license": "MIT license",
+        "homepage": "https://docs.astral.sh/ruff",
+        "description": "An extremely fast Python linter and code formatter, written in Rust. - astral-sh/ruff"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "Rust",
+          "Linter",
+          "代码格式化",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruff 深度评测：Rust 打造的 Python 代码质量神器",
+        "ability": [
+          "极速代码检查：0.2 秒完成数万行代码 lint，比 Flake8 快约 50 倍",
+          "一站式替代：内置 900+ 规则，可替代 Flake8、Black、isort、pyupgrade 等多个工具",
+          "自动修复：--fix 一键修复大量常见代码问题",
+          "零配置上手：默认规则开箱即用，pyproject.toml 统一管理配置",
+          "生态完善：支持 pre-commit、GitHub Action、VS Code 插件，主流开源项目广泛采用"
+        ],
+        "summary": "用 Rust 编写的 Python 代码检查 + 格式化二合一工具，比传统方案快 10-1000 倍，一个工具顶十几个。",
+        "category": [
+          "开发工具",
+          "编程效率",
+          "代码质量"
+        ],
+        "suitable": [
+          "Python 个人开发者",
+          "技术团队负责人 / Tech Lead",
+          "开源项目维护者",
+          "Monorepo 大型项目团队",
+          "AI Coding Agent 开发者"
+        ],
+        "description": "Ruff 是 Astral（2026 年被 OpenAI 收购）用 Rust 编写的 Python 代码检查与格式化工具，性能比 Flake8 快数十倍、比 Pylint 快数百倍，一个二进制即可替代十几个传统工具，已是 Python 生态事实上的新标准。局限是不支持自定义插件、深度分析不及 Pylint。"
+      }
+    },
+    {
+      "id": "81fe3dba-fe18-4f8f-bba8-eee95a0731db",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/prometheus/prometheus",
+      "repo": "prometheus/prometheus",
+      "description": "The Prometheus monitoring system and time series database.",
+      "language": "Go",
+      "stars": 67404,
+      "forks": 11001,
+      "starsAdded": 325,
+      "createdAt": "2026-11-07T16:00:04.195Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "alerting",
+          "graphing",
+          "hacktoberfest",
+          "metrics",
+          "monitoring",
+          "prometheus",
+          "time-series"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://prometheus.io/",
+        "description": "The Prometheus monitoring system and time series database. - prometheus/prometheus"
+      },
+      "summaryData": {
+        "tags": [
+          "Prometheus",
+          "监控告警",
+          "时序数据库",
+          "云原生",
+          "CNCF"
+        ],
+        "cover": "",
+        "title": "Prometheus 深度评测：云原生监控界的“事实标准”，凭什么独占鳌头？",
+        "ability": [
+          "多维标签时序数据采集与存储（Pull 模型 + 内置 TSDB）",
+          "PromQL 查询语言，支持多维切片、聚合、分位数与趋势预测",
+          "告警全链路管理（Alertmanager 去重、分组、路由、静默）",
+          "庞大 Exporter 生态，覆盖 Node/MySQL/Blackbox 等几乎所有中间件",
+          "单一 Go 二进制部署，Apache 2.0 协议免费商用"
+        ],
+        "summary": "CNCF 毕业的开源监控告警系统，用 Pull 模型 + 多维标签 + PromQL 三件套成为云原生监控事实标准。",
+        "category": [
+          "开发工具",
+          "运维监控",
+          "开源项目"
+        ],
+        "suitable": [
+          "Kubernetes 运维 / SRE 工程师",
+          "微服务后端开发者",
+          "想摆脱 Datadog 等按量计费账单的团队",
+          "数据工程师与中间件维护者",
+          "云原生架构师"
+        ],
+        "description": "Prometheus 是 CNCF 毕业项目，生产环境使用率高达 77%，是云原生监控的行业标准。它单机自治、部署极简，配合 Grafana 即可低成本替代商业 APM；但需警惕高基数陷阱，大规模长期存储需搭配 Thanos 或 VictoriaMetrics 等扩展方案。"
+      }
+    },
+    {
+      "id": "20a1faea-a871-45eb-aad4-a20db438f63d",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 14378,
+      "forks": 1179,
+      "starsAdded": 185,
+      "createdAt": "2026-11-07T16:00:04.181Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
+      "id": "fa515a4d-1717-4758-99f8-aaa03a1bef65",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 4562,
+      "forks": 365,
+      "starsAdded": 185,
+      "createdAt": "2026-11-07T16:00:04.308Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      }
+    },
+    {
+      "id": "60709b10-ef28-47ad-a36b-e16a830e8ed8",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/mbillow/localthings",
+      "repo": "mbillow/localthings",
+      "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account.",
+      "language": "Python",
+      "stars": 1025,
+      "forks": 109,
+      "starsAdded": 184,
+      "createdAt": "2026-11-07T16:00:04.282Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "coap-protocol",
+          "coap-server",
+          "custom-component",
+          "dtls",
+          "hacs",
+          "hacs-integration",
+          "home-assistant",
+          "home-automation",
+          "samsung",
+          "smartthings"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account. - mbillow/localthings"
+      },
+      "summaryData": {
+        "tags": [
+          "Home Assistant",
+          "三星SmartThings",
+          "本地控制",
+          "OCF协议",
+          "智能家居"
+        ],
+        "cover": "",
+        "title": "LocalThings 深度评测：把三星家电从 SmartThings 云端拉回自家局域网",
+        "ability": [
+          "局域网直连三星家电（OCF + CoAP-DTLS 协议，无需云端）",
+          "零订阅费，绕开 2026 年 10 月后 SmartThings API 每月 4.99 美元收费",
+          "覆盖洗衣机、烘干机、冰箱、空调、烤箱等全品类三星白色家电",
+          "提供实时状态监控与写控制（启动、暂停、切换程序、设定温度）",
+          "HACS 一键部署，声明式设备映射表便于社区快速扩展新型号"
+        ],
+        "summary": "一个无需云端账号和订阅费、通过 OCF/CoAP-DTLS 协议在局域网内直连三星家电的开源 Home Assistant 集成。",
+        "category": [
+          "开源项目",
+          "智能家居",
+          "开发工具"
+        ],
+        "suitable": [
+          "拥有三星白色家电的 Home Assistant 重度玩家",
+          "隐私敏感、追求局域网本地化的用户",
+          "能源监控与自动化爱好者（可接入 HA 能源面板）",
+          "想省下每年 60 美元订阅费的家庭用户",
+          "对 CoAP-DTLS 协议感兴趣的底层开发者"
+        ],
+        "description": "LocalThings 是 2026 年 6 月诞生的开源 Home Assistant 自定义集成，在三星宣布 SmartThings 云 API 收费后迅速走红。它利用三星家电自带的 OCF 标准协议，通过 DTLS 客户端证书在局域网内直接与家电通信，支持多品类白电的状态读取与写控制，全程数据不出家门。项目迭代活跃（4 个月近千星），已进入 HACS 默认列表，但也存在老型号设备部署繁琐、能耗统计部分依赖云、协议路径非官方支持等局限。"
+      }
+    },
+    {
+      "id": "3f7c0e5d-7906-4104-97bf-140e0c747b7d",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/tailwindlabs/tailwindcss",
+      "repo": "tailwindlabs/tailwindcss",
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "language": "TypeScript",
+      "stars": 98401,
+      "forks": 7102,
+      "starsAdded": 181,
+      "createdAt": "2026-11-07T16:00:04.239Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "css",
+          "css-framework",
+          "functional-css",
+          "postcss",
+          "responsive",
+          "tailwindcss",
+          "utility-classes"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tailwindcss.com/",
+        "description": "A utility-first CSS framework for rapid UI development. - tailwindlabs/tailwindcss"
+      },
+      "summaryData": {
+        "tags": [
+          "ChatGLM",
+          "语音",
+          "内容不完整"
+        ],
+        "cover": "",
+        "title": "内容无法解析：原文已截断",
+        "ability": [],
+        "summary": "提供的评测内容被终止截断，仅残留 ChatGLM 语音相关碎片文字，无法提取有效信息",
+        "category": [],
+        "suitable": [],
+        "description": "本次提供的文本疑似回答被中断后的残留内容，仅包含 ChatGLM 语音等零散字样以及本次回答已被终止、重新回答等界面提示语，并非完整的开源项目、软件或文章评测。无法据此提炼核心能力、适用人群等结构化信息，建议重新提供完整的评测原文后再进行解析。"
+      }
+    },
+    {
+      "id": "cfd9c37d-b27a-480f-8ee2-8cfba4978185",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 46729,
+      "forks": 3202,
+      "starsAdded": 180,
+      "createdAt": "2026-11-07T16:00:03.904Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "87f51c8c-ae6d-401c-a7f8-b1892a753e7a",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "repo": "dsx-ai-factory/nvke",
+      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+      "language": "Go",
+      "stars": 512,
+      "forks": 85,
+      "starsAdded": 125,
+      "createdAt": "2026-11-07T16:00:04.312Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bare-metal",
+          "cluster-api",
+          "gpu",
+          "kubernetes",
+          "nvidia"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/nvke/",
+        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
+      },
+      "summaryData": null
     }
   ]
 }
