@@ -24122,8 +24122,8 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 50332,
-      "forks": 9800,
+      "stars": 50655,
+      "forks": 9829,
       "starsAdded": 16782,
       "createdAt": "2026-11-01T18:00:04.507Z",
       "metaData": {
@@ -24168,6 +24168,57 @@
       }
     },
     {
+      "id": "84f327a7-d4ae-4ded-9395-f96eb55e9c72",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 317315,
+      "forks": 26552,
+      "starsAdded": 9589,
+      "createdAt": "2026-11-07T15:00:05.045Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
       "id": "d00d38fa-a39e-42e9-bad1-32248273252a",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24175,8 +24226,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 114187,
-      "forks": 9910,
+      "stars": 114287,
+      "forks": 9917,
       "starsAdded": 8726,
       "createdAt": "2026-11-01T18:00:04.434Z",
       "metaData": {
@@ -24300,8 +24351,8 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 99020,
-      "forks": 10378,
+      "stars": 99138,
+      "forks": 10386,
       "starsAdded": 8372,
       "createdAt": "2026-11-06T13:00:05.305Z",
       "metaData": {
@@ -24374,8 +24425,8 @@
       "repo": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 105069,
-      "forks": 6242,
+      "stars": 105227,
+      "forks": 6255,
       "starsAdded": 8172,
       "createdAt": "2026-11-01T18:00:04.387Z",
       "metaData": {
@@ -24433,8 +24484,8 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 49847,
-      "forks": 2642,
+      "stars": 50005,
+      "forks": 2652,
       "starsAdded": 6900,
       "createdAt": "2026-11-01T18:00:04.376Z",
       "metaData": {
@@ -24546,8 +24597,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 16077,
-      "forks": 2279,
+      "stars": 16457,
+      "forks": 2332,
       "starsAdded": 6395,
       "createdAt": "2026-11-05T12:00:06.090Z",
       "metaData": {
@@ -24673,8 +24724,8 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 36263,
-      "forks": 4775,
+      "stars": 36390,
+      "forks": 4796,
       "starsAdded": 6018,
       "createdAt": "2026-11-06T13:00:05.227Z",
       "metaData": {
@@ -24729,6 +24780,70 @@
           "AI Agent 框架研究者"
         ],
         "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
+      }
+    },
+    {
+      "id": "97b1e276-0eda-4edf-b4c1-43cac05d9ee1",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 16674,
+      "forks": 3231,
+      "starsAdded": 5476,
+      "createdAt": "2026-11-07T15:00:05.010Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ouranic.cn/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
       }
     },
     {
@@ -24936,8 +25051,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 313801,
-      "forks": 27915,
+      "stars": 313927,
+      "forks": 27925,
       "starsAdded": 4577,
       "createdAt": "2026-11-01T18:00:04.489Z",
       "metaData": {
@@ -24998,8 +25113,8 @@
       "repo": "calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
-      "stars": 77921,
-      "forks": 10375,
+      "stars": 78054,
+      "forks": 10397,
       "starsAdded": 4405,
       "createdAt": "2026-11-04T12:00:04.673Z",
       "metaData": {
@@ -25060,6 +25175,67 @@
           "AI 极客与开发者"
         ],
         "description": "OpenMontage 将 Claude、Cursor 等编程助手转化为影视制作公司，支持从选题调研、脚本生成、素材检索到剪辑合成的全自动化。兼容本地与云端模型，提供成本预估与质量审核，是高效、低成本、可控的 AI 视频生产流水线。"
+      }
+    },
+    {
+      "id": "cf869c17-7560-416f-8658-e9b1e197d274",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/github/spec-kit",
+      "repo": "github/spec-kit",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "language": "Python",
+      "stars": 148332,
+      "forks": 13329,
+      "starsAdded": 4202,
+      "createdAt": "2026-11-07T15:00:05.051Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "copilot",
+          "development",
+          "engineering",
+          "prd",
+          "spec",
+          "spec-driven"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.github.com/spec-kit/",
+        "description": "💫 Toolkit to help you get started with SDD or any other process! - github/spec-kit"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "工作流",
+          "规范驱动",
+          "开源",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "GitHub Spec Kit - 意图驱动的 AI 开发规范工具",
+        "ability": [
+          "四阶段 SDD 工作流",
+          "支持 30+ AI 编码代理集成",
+          "扩展/预设/Bundle 可扩展体系",
+          "Bug 修复与 Idea 评估工作流",
+          "企业离线环境支持"
+        ],
+        "summary": "把需求意图转化为可执行规范的 AI 编码辅助工具",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "项目管理"
+        ],
+        "suitable": [
+          "独立开发者",
+          "小微团队",
+          "中大型研发团队",
+          "产品经理/需求分析师",
+          "AI 重度用户"
+        ],
+        "description": "GitHub Spec Kit 是一套将产品意图转化为可执行规范的 AI 编码辅助工具，通过规范化的四阶段工作流，让需求、方案、任务与代码形成闭环，支持多种 AI 代理，适合个人到企业级团队落地。"
       }
     },
     {
@@ -25241,8 +25417,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 188305,
-      "forks": 22205,
+      "stars": 188439,
+      "forks": 22225,
       "starsAdded": 3159,
       "createdAt": "2026-11-01T18:00:04.521Z",
       "metaData": {
@@ -25363,8 +25539,8 @@
       "repo": "shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 47127,
-      "forks": 7793,
+      "stars": 47167,
+      "forks": 7799,
       "starsAdded": 2984,
       "createdAt": "2026-11-06T13:00:05.309Z",
       "metaData": {
@@ -25416,8 +25592,8 @@
       "repo": "max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars": 11858,
-      "forks": 459,
+      "stars": 11891,
+      "forks": 461,
       "starsAdded": 2184,
       "createdAt": "2026-11-03T12:00:22.217Z",
       "metaData": {
@@ -25474,7 +25650,7 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 11363,
+      "stars": 11412,
       "forks": 441,
       "starsAdded": 1921,
       "createdAt": "2026-11-01T18:00:04.513Z",
@@ -25589,8 +25765,8 @@
       "repo": "The-PR-Agent/pr-agent",
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars": 15358,
-      "forks": 2132,
+      "stars": 15385,
+      "forks": 2135,
       "starsAdded": 1523,
       "createdAt": "2026-11-05T12:00:06.114Z",
       "metaData": {
@@ -25650,8 +25826,8 @@
       "repo": "hyprwm/Hyprland",
       "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
       "language": "C++",
-      "stars": 40463,
-      "forks": 2167,
+      "stars": 40473,
+      "forks": 2168,
       "starsAdded": 1413,
       "createdAt": "2026-11-03T12:00:22.213Z",
       "metaData": {
@@ -25698,6 +25874,59 @@
           "需要精准屏幕共享的内容创作者"
         ],
         "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      }
+    },
+    {
+      "id": "acadf3c8-5100-42c5-9101-c5e2c5d2ba11",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 46516,
+      "forks": 3188,
+      "starsAdded": 1404,
+      "createdAt": "2026-11-07T15:00:05.035Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {

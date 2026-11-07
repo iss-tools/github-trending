@@ -1,6 +1,239 @@
 {
   "all": [
     {
+      "id": "4a9562f6-7ad4-452a-aa4f-feb22af6095c",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "domain": "github.com",
+      "repo": "dsx-ai-factory/nvke",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-07T15:26:56.283Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": null,
+      "type": "project",
+      "dateAdded": "20261107"
+    },
+    {
+      "id": "ca7649bc-aec1-419b-87ca-f33b12d7fb9d",
+      "url": "https://github.com/mbillow/localthings",
+      "domain": "github.com",
+      "repo": "mbillow/localthings",
+      "description": "LocalThings 是 2026 年 6 月诞生的开源 Home Assistant 自定义集成，在三星宣布 SmartThings 云 API 收费后迅速走红。它利用三星家电自带的 OCF 标准协议，通过 DTLS 客户端证书在局域网内直接与家电通信，支持多品类白电的状态读取与写控制，全程数据不出家门。项目迭代活跃（4 个月近千星），已进入 HACS 默认列表，但也存在老型号设备部署繁琐、能耗统计部分依赖云、协议路径非官方支持等局限。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-07T15:22:20.023Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0"
+      },
+      "summaryData": {
+        "tags": [
+          "Home Assistant",
+          "三星SmartThings",
+          "本地控制",
+          "OCF协议",
+          "智能家居"
+        ],
+        "cover": "",
+        "title": "LocalThings 深度评测：把三星家电从 SmartThings 云端拉回自家局域网",
+        "ability": [
+          "局域网直连三星家电（OCF + CoAP-DTLS 协议，无需云端）",
+          "零订阅费，绕开 2026 年 10 月后 SmartThings API 每月 4.99 美元收费",
+          "覆盖洗衣机、烘干机、冰箱、空调、烤箱等全品类三星白色家电",
+          "提供实时状态监控与写控制（启动、暂停、切换程序、设定温度）",
+          "HACS 一键部署，声明式设备映射表便于社区快速扩展新型号"
+        ],
+        "summary": "一个无需云端账号和订阅费、通过 OCF/CoAP-DTLS 协议在局域网内直连三星家电的开源 Home Assistant 集成。",
+        "category": [
+          "开源项目",
+          "智能家居",
+          "开发工具"
+        ],
+        "suitable": [
+          "拥有三星白色家电的 Home Assistant 重度玩家",
+          "隐私敏感、追求局域网本地化的用户",
+          "能源监控与自动化爱好者（可接入 HA 能源面板）",
+          "想省下每年 60 美元订阅费的家庭用户",
+          "对 CoAP-DTLS 协议感兴趣的底层开发者"
+        ],
+        "description": "LocalThings 是 2026 年 6 月诞生的开源 Home Assistant 自定义集成，在三星宣布 SmartThings 云 API 收费后迅速走红。它利用三星家电自带的 OCF 标准协议，通过 DTLS 客户端证书在局域网内直接与家电通信，支持多品类白电的状态读取与写控制，全程数据不出家门。项目迭代活跃（4 个月近千星），已进入 HACS 默认列表，但也存在老型号设备部署繁琐、能耗统计部分依赖云、协议路径非官方支持等局限。"
+      },
+      "type": "project",
+      "dateAdded": "20261107"
+    },
+    {
+      "id": "1478bf59-d4be-4889-b444-63b62acc4618",
+      "url": "https://github.com/tailwindlabs/tailwindcss",
+      "domain": "github.com",
+      "repo": "tailwindlabs/tailwindcss",
+      "description": "本次提供的文本疑似回答被中断后的残留内容，仅包含 ChatGLM 语音等零散字样以及本次回答已被终止、重新回答等界面提示语，并非完整的开源项目、软件或文章评测。无法据此提炼核心能力、适用人群等结构化信息，建议重新提供完整的评测原文后再进行解析。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-07T15:18:05.450Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "css",
+          "css-framework",
+          "functional-css",
+          "postcss",
+          "responsive",
+          "tailwindcss",
+          "utility-classes"
+        ],
+        "license": "MIT license",
+        "homepage": "https://tailwindcss.com/",
+        "description": "A utility-first CSS framework for rapid UI development. - tailwindlabs/tailwindcss"
+      },
+      "summaryData": {
+        "tags": [
+          "ChatGLM",
+          "语音",
+          "内容不完整"
+        ],
+        "cover": "",
+        "title": "内容无法解析：原文已截断",
+        "ability": [],
+        "summary": "提供的评测内容被终止截断，仅残留 ChatGLM 语音相关碎片文字，无法提取有效信息",
+        "category": [],
+        "suitable": [],
+        "description": "本次提供的文本疑似回答被中断后的残留内容，仅包含 ChatGLM 语音等零散字样以及本次回答已被终止、重新回答等界面提示语，并非完整的开源项目、软件或文章评测。无法据此提炼核心能力、适用人群等结构化信息，建议重新提供完整的评测原文后再进行解析。"
+      },
+      "type": "project",
+      "dateAdded": "20261107"
+    },
+    {
+      "id": "56a85eee-6e03-45b8-818e-42b460c2a075",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "domain": "github.com",
+      "repo": "sherlock-project/sherlock",
+      "description": "Sherlock 是 MIT 协议开源的 OSINT 命令行工具，输入一个用户名即可在 400+ 社交平台并发探测账号是否存在并返回链接。支持批量查询、报表导出与 Tor 代理，一条 pipx 命令即可安装，是用户名侦察赛道公认的开山鼻祖。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-07T15:13:41.032Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cli",
+          "cti",
+          "cybersecurity",
+          "forensics",
+          "hacktoberfest",
+          "information-gathering",
+          "infosec",
+          "linux",
+          "osint",
+          "pentesting",
+          "python",
+          "python3",
+          "reconnaissance",
+          "redteam",
+          "sherlock",
+          "tools"
+        ],
+        "license": "MIT license",
+        "homepage": "https://sherlockproject.xyz",
+        "description": "Hunt down social media accounts by username across social networks - sherlock-project/sherlock"
+      },
+      "summaryData": {
+        "tags": [
+          "OSINT",
+          "开源项目",
+          "用户名侦察",
+          "GitHub",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Sherlock 深度评测：开源 OSINT 用户名全网侦察工具，一条命令撒网 400+ 平台",
+        "ability": [
+          "一键在 400+ 社交平台并发探测用户名是否被注册",
+          "支持多用户批量查询与 CSV/Excel 报表导出",
+          "支持 Tor/SOCKS5 代理与超时配置，保护调查者真实 IP",
+          "通配符变体查询（如 john{.}_doe），覆盖不同平台的命名差异",
+          "规则配置化设计（data.json），社区可零代码扩展新站点"
+        ],
+        "summary": "输入一个用户名，30 秒内在 400+ 社交平台探测账号是否存在并返回直接链接。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "OSINT"
+        ],
+        "suitable": [
+          "OSINT 情报分析师与调查记者",
+          "红队/渗透测试工程师",
+          "关注个人隐私、想自查数字足迹的普通用户",
+          "品牌运营与商标抢注监测人员",
+          "想学习并发爬虫与规则引擎设计的开发者"
+        ],
+        "description": "Sherlock 是 MIT 协议开源的 OSINT 命令行工具，输入一个用户名即可在 400+ 社交平台并发探测账号是否存在并返回链接。支持批量查询、报表导出与 Tor 代理，一条 pipx 命令即可安装，是用户名侦察赛道公认的开山鼻祖。"
+      },
+      "type": "project",
+      "dateAdded": "20261107"
+    },
+    {
+      "id": "47cd73be-4878-4fa5-8ff1-591badd08584",
+      "url": "https://github.com/meta/astryx",
+      "domain": "github.com",
+      "repo": "meta/astryx",
+      "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-07T15:10:08.760Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      },
+      "type": "project",
+      "dateAdded": "20261107"
+    },
+    {
       "id": "c905f4e9-51fd-434e-94e6-7ca110a65aaa",
       "url": "https://github.com/astral-sh/ruff",
       "domain": "github.com",
