@@ -99678,9 +99678,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 63875,
-      "forks": 4140,
-      "starsAdded": 2524,
+      "stars": 64017,
+      "forks": 4147,
+      "starsAdded": 2548,
       "createdAt": "2026-11-06T16:00:02.934Z",
       "metaData": {
         "forks": "0",
@@ -99730,9 +99730,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 316658,
-      "forks": 26489,
-      "starsAdded": 2058,
+      "stars": 316720,
+      "forks": 26496,
+      "starsAdded": 2070,
       "createdAt": "2026-11-06T16:00:02.930Z",
       "metaData": {
         "forks": "0",
@@ -99781,9 +99781,9 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 8939,
-      "forks": 720,
-      "starsAdded": 2005,
+      "stars": 9036,
+      "forks": 725,
+      "starsAdded": 2015,
       "createdAt": "2026-11-06T16:00:02.823Z",
       "metaData": {
         "forks": "0",
@@ -99834,9 +99834,9 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 22808,
-      "forks": 1919,
-      "starsAdded": 532,
+      "stars": 22838,
+      "forks": 1920,
+      "starsAdded": 534,
       "createdAt": "2026-11-06T16:00:02.866Z",
       "metaData": {
         "forks": "0",
@@ -99939,6 +99939,63 @@
       }
     },
     {
+      "id": "10280283-ea73-43db-a9e2-d807973becbd",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/zed-industries/zed",
+      "repo": "zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars": 93628,
+      "forks": 11499,
+      "starsAdded": 306,
+      "createdAt": "2026-11-06T16:00:02.816Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://zed.dev",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
+      },
+      "summaryData": {
+        "tags": [
+          "代码编辑器",
+          "Rust",
+          "开源项目",
+          "GPU 加速",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
+        "ability": [
+          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
+          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
+          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
+          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
+          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
+        ],
+        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Rust/Go/Python/TypeScript 等语言的开发者",
+          "受够 VS Code 卡顿与高内存占用的用户",
+          "需要远程结对编程的协作团队",
+          "想省去配置成本的 Vim/Neovim 老用户",
+          "AI Agent 重度使用与工作流研究者"
+        ],
+        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
+      }
+    },
+    {
       "id": "cb2712e1-2297-4f89-85bc-ff8add33b34f",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -99946,9 +100003,9 @@
       "repo": "microsoft/vscode",
       "description": "Visual Studio Code",
       "language": "TypeScript",
-      "stars": 195009,
-      "forks": 44424,
-      "starsAdded": 295,
+      "stars": 195024,
+      "forks": 44425,
+      "starsAdded": 301,
       "createdAt": "2026-11-06T16:00:02.870Z",
       "metaData": {
         "forks": "0",
@@ -99998,63 +100055,6 @@
       }
     },
     {
-      "id": "10280283-ea73-43db-a9e2-d807973becbd",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/zed-industries/zed",
-      "repo": "zed-industries/zed",
-      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "language": "Rust",
-      "stars": 93577,
-      "forks": 11497,
-      "starsAdded": 292,
-      "createdAt": "2026-11-06T16:00:02.816Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "gpui",
-          "rust-lang",
-          "text-editor",
-          "zed"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://zed.dev",
-        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
-      },
-      "summaryData": {
-        "tags": [
-          "代码编辑器",
-          "Rust",
-          "开源项目",
-          "GPU 加速",
-          "AI Agent"
-        ],
-        "cover": "",
-        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
-        "ability": [
-          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
-          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
-          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
-          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
-          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
-        ],
-        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "Rust/Go/Python/TypeScript 等语言的开发者",
-          "受够 VS Code 卡顿与高内存占用的用户",
-          "需要远程结对编程的协作团队",
-          "想省去配置成本的 Vim/Neovim 老用户",
-          "AI Agent 重度使用与工作流研究者"
-        ],
-        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
-      }
-    },
-    {
       "id": "fae9feb1-83ef-4434-990f-920ae01b6aa8",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100062,9 +100062,9 @@
       "repo": "react/react",
       "description": "The library for web and native user interfaces.",
       "language": "JavaScript",
-      "stars": 252239,
-      "forks": 51809,
-      "starsAdded": 244,
+      "stars": 252257,
+      "forks": 51811,
+      "starsAdded": 248,
       "createdAt": "2026-11-06T16:00:02.850Z",
       "metaData": {
         "forks": "0",
@@ -100115,6 +100115,63 @@
       }
     },
     {
+      "id": "8fb1cea6-9469-471a-9dd9-56725b69660b",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/rust-lang/rust",
+      "repo": "rust-lang/rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "language": "Rust",
+      "stars": 121450,
+      "forks": 17363,
+      "starsAdded": 192,
+      "createdAt": "2026-11-06T16:00:02.843Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "language",
+          "rust"
+        ],
+        "license": "license-metadata.json",
+        "homepage": "https://www.rust-lang.org",
+        "description": "Empowering everyone to build reliable and efficient software. - rust-lang/rust"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "系统编程",
+          "内存安全",
+          "开源项目",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Rust 深度评测：连续十年霸榜最受喜爱的系统级编程语言",
+        "ability": [
+          "编译期内存安全：所有权+借用检查器把内存错误从运行时炸弹变成编译报错",
+          "零成本抽象：高级语法编译后与手写低级代码性能一致",
+          "无 GC 高性能：运行时零开销，可深入内核、嵌入式等极端场景",
+          "工业级工具链：Cargo/rustup/Clippy/rust-analyzer 全链路开箱即用",
+          "成熟生态治理：RFC 流程演进 + crates.io 超 15 万个库"
+        ],
+        "summary": "用'所有权'机制在无 GC 前提下实现内存安全的系统级编程语言，已落地 Linux 内核与 Cloudflare 等顶级生产环境。",
+        "category": [
+          "编程语言",
+          "开发工具",
+          "系统编程"
+        ],
+        "suitable": [
+          "后端与系统开发者（高并发服务、数据库、中间件）",
+          "嵌入式/区块链/密码学领域工程师",
+          "WebAssembly 与前端工具链开发者",
+          "有 C/C++ 背景想摆脱内存问题折磨的程序员",
+          "想构建长期竞争力的年轻工程师"
+        ],
+        "description": "Rust 以独特的所有权模型，在无垃圾回收的前提下实现编译期内存安全，化解了 C/C++ 不安全、带 GC 语言有停顿的古老矛盾。如今已进入 Linux 内核、Windows 内核、Cloudflare（日处理万亿请求）等生产环境，并连续十年蝉联 Stack Overflow'最受喜爱语言'。主要短板是学习曲线陡峭、编译速度偏慢、异步生态略有碎片化。"
+      }
+    },
+    {
       "id": "bc5be318-85ea-4979-8e1c-f2a62d7ae2a5",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100122,9 +100179,9 @@
       "repo": "astral-sh/ruff",
       "description": "An extremely fast Python linter and code formatter, written in Rust.",
       "language": "Rust",
-      "stars": 50672,
-      "forks": 2610,
-      "starsAdded": 213,
+      "stars": 50691,
+      "forks": 2612,
+      "starsAdded": 169,
       "createdAt": "2026-11-06T16:00:02.936Z",
       "metaData": {
         "forks": "0",
@@ -100180,181 +100237,6 @@
       }
     },
     {
-      "id": "8fb1cea6-9469-471a-9dd9-56725b69660b",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/rust-lang/rust",
-      "repo": "rust-lang/rust",
-      "description": "Empowering everyone to build reliable and efficient software.",
-      "language": "Rust",
-      "stars": 121420,
-      "forks": 17365,
-      "starsAdded": 186,
-      "createdAt": "2026-11-06T16:00:02.843Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "compiler",
-          "language",
-          "rust"
-        ],
-        "license": "license-metadata.json",
-        "homepage": "https://www.rust-lang.org",
-        "description": "Empowering everyone to build reliable and efficient software. - rust-lang/rust"
-      },
-      "summaryData": {
-        "tags": [
-          "Rust",
-          "系统编程",
-          "内存安全",
-          "开源项目",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "Rust 深度评测：连续十年霸榜最受喜爱的系统级编程语言",
-        "ability": [
-          "编译期内存安全：所有权+借用检查器把内存错误从运行时炸弹变成编译报错",
-          "零成本抽象：高级语法编译后与手写低级代码性能一致",
-          "无 GC 高性能：运行时零开销，可深入内核、嵌入式等极端场景",
-          "工业级工具链：Cargo/rustup/Clippy/rust-analyzer 全链路开箱即用",
-          "成熟生态治理：RFC 流程演进 + crates.io 超 15 万个库"
-        ],
-        "summary": "用'所有权'机制在无 GC 前提下实现内存安全的系统级编程语言，已落地 Linux 内核与 Cloudflare 等顶级生产环境。",
-        "category": [
-          "编程语言",
-          "开发工具",
-          "系统编程"
-        ],
-        "suitable": [
-          "后端与系统开发者（高并发服务、数据库、中间件）",
-          "嵌入式/区块链/密码学领域工程师",
-          "WebAssembly 与前端工具链开发者",
-          "有 C/C++ 背景想摆脱内存问题折磨的程序员",
-          "想构建长期竞争力的年轻工程师"
-        ],
-        "description": "Rust 以独特的所有权模型，在无垃圾回收的前提下实现编译期内存安全，化解了 C/C++ 不安全、带 GC 语言有停顿的古老矛盾。如今已进入 Linux 内核、Windows 内核、Cloudflare（日处理万亿请求）等生产环境，并连续十年蝉联 Stack Overflow'最受喜爱语言'。主要短板是学习曲线陡峭、编译速度偏慢、异步生态略有碎片化。"
-      }
-    },
-    {
-      "id": "9e4fa8c8-0952-488a-98ce-62455ffa092e",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/nushell/nushell",
-      "repo": "nushell/nushell",
-      "description": "A new type of shell",
-      "language": "Rust",
-      "stars": 40966,
-      "forks": 2342,
-      "starsAdded": 177,
-      "createdAt": "2026-11-06T16:00:02.881Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "nushell",
-          "rust",
-          "shell"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.nushell.sh/",
-        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Nushell",
-          "Shell",
-          "Rust",
-          "开源项目",
-          "命令行"
-        ],
-        "cover": "",
-        "title": "Nushell 深度评测：把 Shell 从文本处理工具重造为数据查询引擎",
-        "ability": [
-          "结构化数据管道：用 where/select/sort-by 等统一动词操作表格数据，告别 grep/awk 正则咒语",
-          "原生解析多种格式：open 一个命令直接读取 JSON/YAML/TOML/CSV/XML/Excel/SQLite",
-          "内置 http get 直接调用 REST API 并结构化展示结果",
-          "跨平台一致体验：Rust 单二进制，Windows/macOS/Linux 表现统一",
-          "活跃插件生态：nu_plugin_polars 处理百万行数据、query 解析网页、explore 交互式探索 JSON"
-        ],
-        "summary": "用 Rust 编写的现代 Shell，管道里流动的是结构化表格数据而非文本，让 JSON、CSV、日志处理变得像写人话一样简单。",
-        "category": [
-          "开发工具",
-          "命令行工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "DevOps / SRE 工程师（日志分析、监控数据处理）",
-          "数据工程师与后端开发者（天天和 JSON/CSV 打交道）",
-          "跨平台开发者（macOS/Linux/Windows 三边跑）",
-          "被 bash 折磨的 Shell 脚本重度用户",
-          "需要处理命令行输出和 API 数据的技术人员"
-        ],
-        "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。"
-      }
-    },
-    {
-      "id": "87e99acd-6bea-4a9d-ba34-85db23fe52f9",
-      "dateAdded": "20261107",
-      "type": "github-daily",
-      "url": "https://github.com/rails/rails",
-      "repo": "rails/rails",
-      "description": "Ruby on Rails",
-      "language": "Ruby",
-      "stars": 59014,
-      "forks": 23833,
-      "starsAdded": 152,
-      "createdAt": "2026-11-06T16:00:02.831Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "activejob",
-          "activerecord",
-          "framework",
-          "html",
-          "mvc",
-          "rails",
-          "ruby"
-        ],
-        "license": "MIT license",
-        "homepage": "https://rubyonrails.org",
-        "description": "Ruby on Rails. Contribute to rails/rails development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Ruby on Rails",
-          "全栈框架",
-          "MVC",
-          "Hotwire",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Ruby on Rails 深度评测：一个快二十岁的框架，凭什么依然是 SaaS 创业者的瑞士军刀",
-        "ability": [
-          "全栈内置：前端、后端、队列、缓存、认证、部署一站式解决",
-          "Scaffold 脚手架：一条命令生成完整 CRUD 应用与测试",
-          "Hotwire 实时交互：服务端渲染实现 SPA 般丝滑体验",
-          "Solid 三件套：用数据库替代 Redis，砍掉外部依赖",
-          "Kamal 一键部署：任意 VPS 实现零停机上线"
-        ],
-        "summary": "约定优于配置的全栈 Web 框架，一条命令就能从想法跑到生产环境上线",
-        "category": [
-          "开发工具",
-          "Web 框架",
-          "编程语言生态"
-        ],
-        "suitable": [
-          "独立开发者与 SaaS 创业者",
-          "3-20 人的中小业务团队",
-          "后端转全栈的工程师",
-          "企业内部管理系统开发者",
-          "电商与内容平台建设者"
-        ],
-        "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。"
-      }
-    },
-    {
       "id": "c9a1d881-f9c3-430d-95cd-7a352ea60967",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100362,9 +100244,9 @@
       "repo": "prometheus/prometheus",
       "description": "The Prometheus monitoring system and time series database.",
       "language": "Go",
-      "stars": 67161,
-      "forks": 10987,
-      "starsAdded": 140,
+      "stars": 67183,
+      "forks": 10988,
+      "starsAdded": 148,
       "createdAt": "2026-11-06T16:00:02.860Z",
       "metaData": {
         "forks": "0",
@@ -100416,6 +100298,67 @@
       }
     },
     {
+      "id": "87e99acd-6bea-4a9d-ba34-85db23fe52f9",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/rails/rails",
+      "repo": "rails/rails",
+      "description": "Ruby on Rails",
+      "language": "Ruby",
+      "stars": 59026,
+      "forks": 23832,
+      "starsAdded": 142,
+      "createdAt": "2026-11-06T16:00:02.831Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "activejob",
+          "activerecord",
+          "framework",
+          "html",
+          "mvc",
+          "rails",
+          "ruby"
+        ],
+        "license": "MIT license",
+        "homepage": "https://rubyonrails.org",
+        "description": "Ruby on Rails. Contribute to rails/rails development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Ruby on Rails",
+          "全栈框架",
+          "MVC",
+          "Hotwire",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Ruby on Rails 深度评测：一个快二十岁的框架，凭什么依然是 SaaS 创业者的瑞士军刀",
+        "ability": [
+          "全栈内置：前端、后端、队列、缓存、认证、部署一站式解决",
+          "Scaffold 脚手架：一条命令生成完整 CRUD 应用与测试",
+          "Hotwire 实时交互：服务端渲染实现 SPA 般丝滑体验",
+          "Solid 三件套：用数据库替代 Redis，砍掉外部依赖",
+          "Kamal 一键部署：任意 VPS 实现零停机上线"
+        ],
+        "summary": "约定优于配置的全栈 Web 框架，一条命令就能从想法跑到生产环境上线",
+        "category": [
+          "开发工具",
+          "Web 框架",
+          "编程语言生态"
+        ],
+        "suitable": [
+          "独立开发者与 SaaS 创业者",
+          "3-20 人的中小业务团队",
+          "后端转全栈的工程师",
+          "企业内部管理系统开发者",
+          "电商与内容平台建设者"
+        ],
+        "description": "Ruby on Rails 是拥有近 20 年历史的成熟全栈 Web 框架，以约定优于配置哲学著称。Rails 8 引入 Solid Queue/Cache/Cable 三件套与 Kamal 部署工具，把外部依赖缩减到仅需一个数据库。它能让开发者用最少时间从想法落地到生产级应用，是构建业务型 Web 产品和 SaaS 的高性价比之选；但不适合 AI 密集型、超大规模微服务或重前端交互场景。"
+      }
+    },
+    {
       "id": "2c1801ab-7b8b-4ed6-9059-f0a60416ee5f",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100423,9 +100366,9 @@
       "repo": "angular/angular",
       "description": "Deliver web apps with confidence 🚀",
       "language": "TypeScript",
-      "stars": 101342,
+      "stars": 101361,
       "forks": 28911,
-      "starsAdded": 128,
+      "starsAdded": 135,
       "createdAt": "2026-11-06T16:00:02.854Z",
       "metaData": {
         "forks": "0",
@@ -100476,6 +100419,63 @@
       }
     },
     {
+      "id": "9e4fa8c8-0952-488a-98ce-62455ffa092e",
+      "dateAdded": "20261107",
+      "type": "github-daily",
+      "url": "https://github.com/nushell/nushell",
+      "repo": "nushell/nushell",
+      "description": "A new type of shell",
+      "language": "Rust",
+      "stars": 40983,
+      "forks": 2343,
+      "starsAdded": 131,
+      "createdAt": "2026-11-06T16:00:02.881Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "nushell",
+          "rust",
+          "shell"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.nushell.sh/",
+        "description": "A new type of shell. Contribute to nushell/nushell development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Nushell",
+          "Shell",
+          "Rust",
+          "开源项目",
+          "命令行"
+        ],
+        "cover": "",
+        "title": "Nushell 深度评测：把 Shell 从文本处理工具重造为数据查询引擎",
+        "ability": [
+          "结构化数据管道：用 where/select/sort-by 等统一动词操作表格数据，告别 grep/awk 正则咒语",
+          "原生解析多种格式：open 一个命令直接读取 JSON/YAML/TOML/CSV/XML/Excel/SQLite",
+          "内置 http get 直接调用 REST API 并结构化展示结果",
+          "跨平台一致体验：Rust 单二进制，Windows/macOS/Linux 表现统一",
+          "活跃插件生态：nu_plugin_polars 处理百万行数据、query 解析网页、explore 交互式探索 JSON"
+        ],
+        "summary": "用 Rust 编写的现代 Shell，管道里流动的是结构化表格数据而非文本，让 JSON、CSV、日志处理变得像写人话一样简单。",
+        "category": [
+          "开发工具",
+          "命令行工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "DevOps / SRE 工程师（日志分析、监控数据处理）",
+          "数据工程师与后端开发者（天天和 JSON/CSV 打交道）",
+          "跨平台开发者（macOS/Linux/Windows 三边跑）",
+          "被 bash 折磨的 Shell 脚本重度用户",
+          "需要处理命令行输出和 API 数据的技术人员"
+        ],
+        "description": "Nushell 由 Yehuda Katz（Rails/TypeScript 核心贡献者）等人于 2019 年发起，GitHub 40k+ star。它将 Unix 管道从字符文本流升级为结构化表格，让 ls、ps、http 请求的输出都能用统一的查询动词过滤排序。代价是不兼容 POSIX、学习曲线较陡，官方建议保留 bash 作登录 Shell，把 Nu 当作日常数据处理利器。"
+      }
+    },
+    {
       "id": "05f917fa-798b-420f-824e-6590a5b248bb",
       "dateAdded": "20261107",
       "type": "github-daily",
@@ -100483,9 +100483,9 @@
       "repo": "etcd-io/etcd",
       "description": "Distributed reliable key-value store for the most critical data of a distributed system",
       "language": "Go",
-      "stars": 52602,
+      "stars": 52614,
       "forks": 10590,
-      "starsAdded": 123,
+      "starsAdded": 128,
       "createdAt": "2026-11-06T16:00:02.900Z",
       "metaData": {
         "forks": "0",
@@ -100516,9 +100516,9 @@
       "repo": "symfony/symfony",
       "description": "The Symfony PHP framework",
       "language": "PHP",
-      "stars": 31413,
+      "stars": 31430,
       "forks": 9948,
-      "starsAdded": 89,
+      "starsAdded": 128,
       "createdAt": "2026-11-06T16:00:02.857Z",
       "metaData": {
         "forks": "0",
@@ -100577,9 +100577,9 @@
       "repo": "mpv-player/mpv",
       "description": "🎥 Command line media player",
       "language": "C",
-      "stars": 37865,
+      "stars": 37876,
       "forks": 3632,
-      "starsAdded": 36,
+      "starsAdded": 37,
       "createdAt": "2026-11-06T16:00:02.833Z",
       "metaData": {
         "forks": "0",
@@ -100638,9 +100638,9 @@
       "repo": "openssl/openssl",
       "description": "General purpose TLS and crypto library",
       "language": "C",
-      "stars": 31277,
+      "stars": 31292,
       "forks": 11580,
-      "starsAdded": 24,
+      "starsAdded": 26,
       "createdAt": "2026-11-06T16:00:02.920Z",
       "metaData": {
         "forks": "0",
