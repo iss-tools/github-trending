@@ -101187,9 +101187,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 65563,
-      "forks": 4261,
-      "starsAdded": 2088,
+      "stars": 65741,
+      "forks": 4269,
+      "starsAdded": 2085,
       "createdAt": "2026-11-07T16:00:04.078Z",
       "metaData": {
         "forks": "0",
@@ -101239,9 +101239,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 16881,
-      "forks": 2390,
-      "starsAdded": 1986,
+      "stars": 16989,
+      "forks": 2407,
+      "starsAdded": 1955,
       "createdAt": "2026-11-07T16:00:04.221Z",
       "metaData": {
         "forks": "0",
@@ -101305,9 +101305,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 100317,
-      "forks": 11855,
-      "starsAdded": 1819,
+      "stars": 100474,
+      "forks": 11870,
+      "starsAdded": 1766,
       "createdAt": "2026-11-07T16:00:04.199Z",
       "metaData": {
         "forks": "0",
@@ -101375,9 +101375,9 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 94233,
-      "forks": 11550,
-      "starsAdded": 1119,
+      "stars": 94283,
+      "forks": 11554,
+      "starsAdded": 1114,
       "createdAt": "2026-11-07T16:00:04.304Z",
       "metaData": {
         "forks": "0",
@@ -101432,9 +101432,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 317603,
-      "forks": 26571,
-      "starsAdded": 1111,
+      "stars": 317716,
+      "forks": 26580,
+      "starsAdded": 1100,
       "createdAt": "2026-11-07T16:00:04.146Z",
       "metaData": {
         "forks": "0",
@@ -101483,9 +101483,9 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 23334,
-      "forks": 1950,
-      "starsAdded": 449,
+      "stars": 23405,
+      "forks": 1955,
+      "starsAdded": 443,
       "createdAt": "2026-11-07T16:00:04.114Z",
       "metaData": {
         "forks": "0",
@@ -101538,9 +101538,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 188706,
-      "forks": 22243,
-      "starsAdded": 386,
+      "stars": 188790,
+      "forks": 22252,
+      "starsAdded": 390,
       "createdAt": "2026-11-07T16:00:04.157Z",
       "metaData": {
         "forks": "0",
@@ -101593,8 +101593,8 @@
       "repo": "astral-sh/ruff",
       "description": "An extremely fast Python linter and code formatter, written in Rust.",
       "language": "Rust",
-      "stars": 50953,
-      "forks": 2628,
+      "stars": 50979,
+      "forks": 2631,
       "starsAdded": 350,
       "createdAt": "2026-11-07T16:00:04.235Z",
       "metaData": {
@@ -101658,9 +101658,9 @@
       "repo": "prometheus/prometheus",
       "description": "The Prometheus monitoring system and time series database.",
       "language": "Go",
-      "stars": 67426,
-      "forks": 11001,
-      "starsAdded": 325,
+      "stars": 67449,
+      "forks": 11003,
+      "starsAdded": 322,
       "createdAt": "2026-11-07T16:00:04.195Z",
       "metaData": {
         "forks": "0",
@@ -101712,59 +101712,6 @@
       }
     },
     {
-      "id": "20a1faea-a871-45eb-aad4-a20db438f63d",
-      "dateAdded": "20261108",
-      "type": "github-daily",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 14412,
-      "forks": 1179,
-      "starsAdded": 185,
-      "createdAt": "2026-11-07T16:00:04.181Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
-      },
-      "summaryData": {
-        "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
-        ],
-        "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
-        "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
-        ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
-        "category": [
-          "开发工具",
-          "前端开发",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
-        ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
-      }
-    },
-    {
       "id": "fa515a4d-1717-4758-99f8-aaa03a1bef65",
       "dateAdded": "20261108",
       "type": "github-daily",
@@ -101772,9 +101719,9 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
       "language": "TypeScript",
-      "stars": 4571,
-      "forks": 365,
-      "starsAdded": 185,
+      "stars": 4615,
+      "forks": 369,
+      "starsAdded": 191,
       "createdAt": "2026-11-07T16:00:04.308Z",
       "metaData": {
         "forks": "0",
@@ -101820,6 +101767,59 @@
       }
     },
     {
+      "id": "cfd9c37d-b27a-480f-8ee2-8cfba4978185",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 46830,
+      "forks": 3209,
+      "starsAdded": 190,
+      "createdAt": "2026-11-07T16:00:03.904Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
       "id": "60709b10-ef28-47ad-a36b-e16a830e8ed8",
       "dateAdded": "20261108",
       "type": "github-daily",
@@ -101827,9 +101827,9 @@
       "repo": "mbillow/localthings",
       "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account.",
       "language": "Python",
-      "stars": 1034,
-      "forks": 110,
-      "starsAdded": 184,
+      "stars": 1062,
+      "forks": 112,
+      "starsAdded": 186,
       "createdAt": "2026-11-07T16:00:04.282Z",
       "metaData": {
         "forks": "0",
@@ -101884,6 +101884,34 @@
       }
     },
     {
+      "id": "87f51c8c-ae6d-401c-a7f8-b1892a753e7a",
+      "dateAdded": "20261108",
+      "type": "github-daily",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "repo": "dsx-ai-factory/nvke",
+      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+      "language": "Go",
+      "stars": 560,
+      "forks": 89,
+      "starsAdded": 123,
+      "createdAt": "2026-11-07T16:00:04.312Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bare-metal",
+          "cluster-api",
+          "gpu",
+          "kubernetes",
+          "nvidia"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/nvke/",
+        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
+      },
+      "summaryData": null
+    },
+    {
       "id": "3f7c0e5d-7906-4104-97bf-140e0c747b7d",
       "dateAdded": "20261108",
       "type": "github-daily",
@@ -101891,9 +101919,9 @@
       "repo": "tailwindlabs/tailwindcss",
       "description": "A utility-first CSS framework for rapid UI development.",
       "language": "TypeScript",
-      "stars": 98421,
-      "forks": 7102,
-      "starsAdded": 181,
+      "stars": 98474,
+      "forks": 7108,
+      "starsAdded": 122,
       "createdAt": "2026-11-07T16:00:04.239Z",
       "metaData": {
         "forks": "0",
@@ -101927,85 +101955,57 @@
       }
     },
     {
-      "id": "cfd9c37d-b27a-480f-8ee2-8cfba4978185",
+      "id": "20a1faea-a871-45eb-aad4-a20db438f63d",
       "dateAdded": "20261108",
       "type": "github-daily",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 46758,
-      "forks": 3202,
-      "starsAdded": 180,
-      "createdAt": "2026-11-07T16:00:03.904Z",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 14531,
+      "forks": 1188,
+      "starsAdded": 96,
+      "createdAt": "2026-11-07T16:00:04.181Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
       },
       "summaryData": {
         "tags": [
-          "Vercel",
+          "React",
+          "设计系统",
+          "Meta 开源",
           "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
+          "组件库"
         ],
         "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
         "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
         ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
         "category": [
           "开发工具",
-          "AI 编程",
-          "浏览器自动化"
+          "前端开发",
+          "AI 编程"
         ],
         "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
         ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
       }
-    },
-    {
-      "id": "87f51c8c-ae6d-401c-a7f8-b1892a753e7a",
-      "dateAdded": "20261108",
-      "type": "github-daily",
-      "url": "https://github.com/dsx-ai-factory/nvke",
-      "repo": "dsx-ai-factory/nvke",
-      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
-      "language": "Go",
-      "stars": 527,
-      "forks": 86,
-      "starsAdded": 125,
-      "createdAt": "2026-11-07T16:00:04.312Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bare-metal",
-          "cluster-api",
-          "gpu",
-          "kubernetes",
-          "nvidia"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/nvke/",
-        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
-      },
-      "summaryData": null
     }
   ]
 }
