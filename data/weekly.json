@@ -26119,5 +26119,1025 @@
         "description": "Ghostty 是 HashiCorp 联合创始人 Mitchell Hashimoto 离职后用 Zig 语言打造的开源终端，2024 年底发布，GitHub 星标超 2.5 万。它解决了终端圈'快、功能、原生'不可兼得的老难题：GPU 渲染带来极致性能，SwiftUI/GTK4 保证平台原生感，libghostty 引擎可被第三方应用嵌入。最新 1.4 版本由 172 位贡献者共同完成。缺点是暂无 Windows 官方版、无 AI 功能。"
       }
     }
+  ],
+  "202646": [
+    {
+      "id": "f1d6ed4c-ea5f-4363-b617-355c1cf07da1",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/pingdotgg/t3code",
+      "repo": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 52248,
+      "forks": 9983,
+      "starsAdded": 17100,
+      "createdAt": "2026-11-08T18:00:03.932Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://t3.codes",
+        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "GitHub",
+          "TypeScript",
+          "开发者工具",
+          "代码审查"
+        ],
+        "cover": "",
+        "title": "T3Code：AI 编程时代的“统一指挥官”深度评测",
+        "ability": [
+          "多代理统一控制",
+          "线程化会话管理",
+          "代码差异实时审查",
+          "深度 Git 集成",
+          "代码本地化存储"
+        ],
+        "summary": "T3Code 是一款统一管理多 AI 编程工具的本地化图形界面，旨在解决工具割裂与协作效率低的问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "多 AI 编程工具重度用户",
+          "团队开发与代码审查者",
+          "注重数据安全的开发者",
+          "追求极致开发体验者",
+          "AI 编程初学者"
+        ],
+        "description": "T3Code 作为一个极简的 Web GUI，充当 Codex、Claude Code 等代理的“指挥官”。它提供统一的操作入口、可视化的代码 Diff 审查以及无缝的 Git 工作流集成，且代码完全本地存储，极大提升了开发效率与安全性。"
+      }
+    },
+    {
+      "id": "5ee7642d-783a-4262-95d7-c50d59ef9895",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 318372,
+      "forks": 26647,
+      "starsAdded": 9664,
+      "createdAt": "2026-11-08T18:00:03.968Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
+      "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 10205,
+      "forks": 826,
+      "starsAdded": 9044,
+      "createdAt": "2026-11-08T18:00:03.599Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
+      "id": "c6b2e432-5df1-455e-af1d-52895f0ca2d1",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "repo": "D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "language": "Python",
+      "stars": 99760,
+      "forks": 10431,
+      "starsAdded": 8712,
+      "createdAt": "2026-11-08T18:00:03.962Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-scraping",
+          "automation",
+          "crawler",
+          "crawling",
+          "crawling-python",
+          "data",
+          "data-extraction",
+          "mcp",
+          "mcp-server",
+          "playwright",
+          "python",
+          "scraping",
+          "selectors",
+          "stealth",
+          "web-scraper",
+          "web-scraping",
+          "web-scraping-python",
+          "webscraping",
+          "xpath"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://scrapling.readthedocs.io/en/latest/",
+        "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev - D4Vinci/Scrapling"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "爬虫",
+          "开源项目",
+          "反反爬",
+          "MCP"
+        ],
+        "cover": "",
+        "title": "Scrapling 深度评测：一个会自我修复的 Python 爬虫框架",
+        "ability": [
+          "自适应选择器：网站改版后爬虫自动重新定位元素，无需改代码",
+          "内置三种抓取器，用 Camoufox 反检测浏览器可绕过 Cloudflare 等反爬系统",
+          "解析速度比 BeautifulSoup 快约 800 倍",
+          "提供 Spider 爬虫框架，支持断点续爬、自动限速和分布式并发",
+          "内置 MCP Server，可接入 Claude/Cursor 让 AI 对话式抓取网页数据"
+        ],
+        "summary": "一个自适应、能自我修复、可绕过反爬的 Python 全能爬虫框架，还内置 AI 接口。",
+        "category": [
+          "开发工具",
+          "数据采集",
+          "AI 编程"
+        ],
+        "suitable": [
+          "AI Agent 开发者",
+          "需要长期维护爬虫的工程师",
+          "数据工程师 / RAG 语料构建者",
+          "小型爬虫项目与个人脚本开发者",
+          "想入门数据采集的初学者"
+        ],
+        "description": "Scrapling 是安全研究员 Karim Shoair 开源的 Python 爬虫框架，GitHub 星标超 8.7 万。它把 HTTP 请求、反检测浏览器、智能解析、分布式爬虫和 MCP 服务器整合进一个库。核心亮点是自适应选择器功能：网站改版后爬虫能自动找回目标元素，无需人工修改代码，大幅降低长期维护成本。开源免费，BSD-3 协议可商用。"
+      }
+    },
+    {
+      "id": "2cbd0b0e-5eaa-458e-b01d-c22cc87f4fcf",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 114809,
+      "forks": 9970,
+      "starsAdded": 7482,
+      "createdAt": "2026-11-08T18:00:03.608Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://claude-mem.ai",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More - thedotmack/claude-mem"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "Claude",
+          "记忆管理",
+          "知识库",
+          "上下文增强"
+        ],
+        "cover": "",
+        "title": "Claude Code 持久化记忆插件：claude-mem 深度评测",
+        "ability": [
+          "持久化记忆存储",
+          "自动上下文注入",
+          "语义化搜索",
+          "隐私数据保护",
+          "多模式与多语言支持"
+        ],
+        "summary": "为 Claude Code 增加“永久记忆”的外挂，解决 AI 跨会话遗忘问题。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "AI 编程重度用户",
+          "Claude Code 开发者",
+          "技术团队",
+          "长周期项目维护者"
+        ],
+        "description": "claude-mem 自动捕获会话信息并压缩存储，为 Claude Code 增加“长期记忆”。新会话启动时自动注入相关上下文，支持自然语言搜索历史决策，解决 AI 助手“隔夜即忘”的痛点，提升代码开发连续性与效率。"
+      }
+    },
+    {
+      "id": "8825ba99-430a-4601-8947-e81f90023639",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 18027,
+      "forks": 2517,
+      "starsAdded": 7077,
+      "createdAt": "2026-11-08T18:00:03.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.mausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
+      "id": "59d49d12-c3e6-41dd-b805-09fd03207b0e",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 50805,
+      "forks": 2696,
+      "starsAdded": 6624,
+      "createdAt": "2026-11-08T18:00:03.947Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
+        ],
+        "cover": "",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
+        "ability": [
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
+        ],
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
+        ],
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
+      }
+    },
+    {
+      "id": "87bb2e70-93f4-4bda-8fc2-1d9b5565a3fb",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "repo": "Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "language": "Shell",
+      "stars": 36900,
+      "forks": 4866,
+      "starsAdded": 5719,
+      "createdAt": "2026-11-08T18:00:03.902Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "ai-assisted-development",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "game-design",
+          "game-development",
+          "gamedev",
+          "godot",
+          "indie-game-dev",
+          "unity",
+          "unreal-engine"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. - Donchitos/Claude-Code-Game-Studios"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "游戏开发",
+          "AI Agent",
+          "开源模板",
+          "独立开发"
+        ],
+        "cover": "",
+        "title": "Claude-Code-Game-Studios 深度评测：把 Claude Code 变成一家虚拟游戏工作室",
+        "ability": [
+          "三层 Agent 架构（总监-部门负责人-专员）模拟真实工作室协作",
+          "74 个覆盖游戏全生命周期的 Slash Skill 命令（设计到发行）",
+          "15 个自动化 Hook 拦截魔法数字、危险操作并保护上下文",
+          "三档严格度旋钮（minimal/standard/full）灵活控制流程重量",
+          "路径级编码规则：写到哪个目录自动启用哪套规范"
+        ],
+        "summary": "一个开源 Claude Code 模板仓库，用 49 个分层 Agent、74 个 Skill 和 15 个 Hook 把 AI 对话升级为带创意总监、主程、QA 的完整游戏工作室流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "游戏开发"
+        ],
+        "suitable": [
+          "有引擎基础的独立游戏开发者",
+          "Game Jam 参赛者",
+          "想学游戏工作室 SOP 的开发者",
+          "2-5 人小型游戏团队",
+          "AI Agent 框架研究者"
+        ],
+        "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
+      }
+    },
+    {
+      "id": "a0cdc0ab-b48d-4ecf-bc9c-10d6fa94f40c",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "repo": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 16926,
+      "forks": 3276,
+      "starsAdded": 4906,
+      "createdAt": "2026-11-08T18:00:03.959Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ouranic.cn/?from=gh-about",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 - Renhuai123/ziwei-doushu"
+      },
+      "summaryData": {
+        "tags": [
+          "紫微斗数",
+          "开源项目",
+          "AI训练数据",
+          "Next.js",
+          "排盘引擎"
+        ],
+        "cover": "",
+        "title": "ziwei-doushu：严格复刻倪海厦《天纪》体系的紫微斗数开源排盘引擎与67.5万条命盘数据集",
+        "ability": [
+          "生产级紫微斗数排盘引擎，支持真太阳时校正、四化飞星与1100+行格局判定",
+          "开放67.5万条命盘+877万段解读文本的AI训练数据集",
+          "三部紫微斗数古籍全文数字化与在线阅读器",
+          "完整可一键部署的Next.js排盘网站前端",
+          "马云、乔布斯等名人命盘样本库供对照学习"
+        ],
+        "summary": "一个把紫微斗数排盘算法、格局知识库、海量命盘解读数据集和可部署网站全部开源的TypeScript项目。",
+        "category": [
+          "开发工具",
+          "AI 数据集",
+          "传统文化"
+        ],
+        "suitable": [
+          "想微调命理垂直小模型的AI开发者",
+          "紫微斗数研究者与命理老师",
+          "需要现成产品原型的前端/全栈开发者",
+          "紫微斗数初学者",
+          "命理类内容创作者"
+        ],
+        "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
+      "id": "c179ee35-b158-4dde-932e-5d1ae5b9e4d0",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/github/spec-kit",
+      "repo": "github/spec-kit",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "language": "Python",
+      "stars": 148654,
+      "forks": 13355,
+      "starsAdded": 4280,
+      "createdAt": "2026-11-08T18:00:03.978Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "copilot",
+          "development",
+          "engineering",
+          "prd",
+          "spec",
+          "spec-driven"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.github.com/spec-kit/",
+        "description": "💫 Toolkit to help you get started with SDD or any other process! - github/spec-kit"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "工作流",
+          "规范驱动",
+          "开源",
+          "自动化"
+        ],
+        "cover": "",
+        "title": "GitHub Spec Kit - 意图驱动的 AI 开发规范工具",
+        "ability": [
+          "四阶段 SDD 工作流",
+          "支持 30+ AI 编码代理集成",
+          "扩展/预设/Bundle 可扩展体系",
+          "Bug 修复与 Idea 评估工作流",
+          "企业离线环境支持"
+        ],
+        "summary": "把需求意图转化为可执行规范的 AI 编码辅助工具",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "项目管理"
+        ],
+        "suitable": [
+          "独立开发者",
+          "小微团队",
+          "中大型研发团队",
+          "产品经理/需求分析师",
+          "AI 重度用户"
+        ],
+        "description": "GitHub Spec Kit 是一套将产品意图转化为可执行规范的 AI 编码辅助工具，通过规范化的四阶段工作流，让需求、方案、任务与代码形成闭环，支持多种 AI 代理，适合个人到企业级团队落地。"
+      }
+    },
+    {
+      "id": "2411b055-b1d2-408f-ab27-4164a3534cb1",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/blader/humanizer",
+      "repo": "blader/humanizer",
+      "description": "Agent skill that removes signs of AI-generated writing from text",
+      "language": "Python",
+      "stars": 66348,
+      "forks": 5230,
+      "starsAdded": 3067,
+      "createdAt": "2026-11-08T18:00:03.984Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-humanizer",
+          "ai-writing",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "codex",
+          "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
+          "prompt-engineering",
+          "writing-tools"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.sh/blader/humanizer",
+        "description": "Agent skill that removes signs of AI-generated writing from text - blader/humanizer"
+      },
+      "summaryData": {
+        "tags": [
+          "AI去味",
+          "文本润色",
+          "Claude Skill",
+          "Markdown提示",
+          "写作风格迁移"
+        ],
+        "cover": "",
+        "title": "Humanizer：基于维基百科标准的 AI 文本“除味剂”技能",
+        "ability": [
+          "识别并改写 35 种 AI 写作套路",
+          "支持个人写作与参考文本的场景区分",
+          "提供“语音匹配”功能，学习用户个人风格",
+          "兼容 Claude Code / Cursor 等多种智能体",
+          "严格保持原意与事实，不凭空捏造"
+        ],
+        "summary": "基于 Wikipedia AI 写作特征清单，系统性去除 LLM 输出中的“AI 味”，让文本读起来更像真人写的。",
+        "category": [
+          "AI 编程",
+          "写作工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "内容创作者与博主",
+          "产品运营与公关人员",
+          "开发者与文档维护者",
+          "使用 Claude / Cursor 的重度用户",
+          "需要对事实负责的文案工作者"
+        ],
+        "description": "Humanizer 是一个开源的 AI 技能，通过对照 Wikipedia 归纳的 35 条 AI 写作特征，对文本进行“检测—改写—二次校验”，在保持原意的前提下，去除机器生成的僵硬感与套路化表达，适合博客、公告、技术文档等多种场景。"
+      }
+    },
+    {
+      "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 189421,
+      "forks": 22329,
+      "starsAdded": 2796,
+      "createdAt": "2026-11-08T18:00:03.821Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
+      "id": "a4a1b36c-69e9-4c3e-90b4-df7341ff287f",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "repo": "max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 12088,
+      "forks": 466,
+      "starsAdded": 2292,
+      "createdAt": "2026-11-08T18:00:03.734Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
+        ],
+        "license": "License",
+        "homepage": "https://worktrunk.dev",
+        "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows - max-sixty/worktrunk"
+      },
+      "summaryData": {
+        "tags": [
+          "Git",
+          "CLI",
+          "Worktree",
+          "效率工具",
+          "Rust"
+        ],
+        "cover": "",
+        "title": "Worktrunk：Git 并行开发的效率加速器",
+        "ability": [
+          "Worktree 极简管理",
+          "AI 代理并行开发",
+          "自动化工作流 Hooks",
+          "可视化状态概览",
+          "构建缓存共享"
+        ],
+        "summary": "让 Git Worktree 像切分支一样简单，专为 AI 代理并行开发设计，一键管理多分支与构建缓存。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Git Worktree 重度用户",
+          "AI 辅助编程开发者",
+          "高频切换分支的开发者",
+          "追求终端效率的极客"
+        ],
+        "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+      }
+    },
+    {
+      "id": "d26b79b5-aaef-41a2-9ad6-139e1d1c9eb6",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/jakubkrehel/skills",
+      "repo": "jakubkrehel/skills",
+      "description": "A collection of agent skills that help you build great interfaces.",
+      "language": "Markdown",
+      "stars": 11670,
+      "forks": 452,
+      "starsAdded": 1938,
+      "createdAt": "2026-11-08T18:00:03.974Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://jakub.kr/skills",
+        "description": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "UI 审查",
+          "前端自动化",
+          "Design Systems",
+          "开源"
+        ],
+        "cover": "",
+        "title": "全能型 AI 设计工程助手：jakubkrehel/skills 深度评测",
+        "ability": [
+          "全链路界面审查",
+          "排版与色彩优化",
+          "无障碍性检查",
+          "复杂交互解释",
+          "组件变体生成"
+        ],
+        "summary": "专为前端与UI设计打造的高质量 AI 技能合集，一键提升界面打磨与代码审查效率。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "设计辅助"
+        ],
+        "suitable": [
+          "前端开发",
+          "UI/UX 设计师",
+          "AI 编程爱好者",
+          "产品团队",
+          "技术初学者"
+        ],
+        "description": "这是一个将资深设计工程经验固化为 AI 技能的开源项目。它能自动评审 UI、排版、色彩和无障碍性，帮助开发者快速发现设计瑕疵，提升代码与视觉的一致性。"
+      }
+    },
+    {
+      "id": "51eba984-78b6-4830-8745-3e16116debe8",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "repo": "The-PR-Agent/pr-agent",
+      "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+      "language": "Python",
+      "stars": 15574,
+      "forks": 2148,
+      "starsAdded": 1576,
+      "createdAt": "2026-11-08T18:00:03.980Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "anthropic",
+          "code-review",
+          "coding-assistant",
+          "devtools",
+          "ollama",
+          "openai",
+          "pull-request",
+          "pull-requests"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.pr-agent.ai",
+        "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. - The-PR-Agent/pr-agent"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "代码评审",
+          "GitHub",
+          "AI Agent",
+          "私有化部署"
+        ],
+        "cover": "",
+        "title": "PR-Agent 深度评测：开源 AI 代码审查的祖师爷还能打吗",
+        "ability": [
+          "斜杠命令式 AI 代码评审（/review、/improve、/describe、/ask 等）",
+          "自动生成 PR 描述、变更总结和标签",
+          "PR 压缩策略，可处理超出模型上下文的大型 PR",
+          "支持 GitHub/GitLab/Bitbucket 等五大平台，可接入 OpenAI/Claude/本地模型等任意 LLM",
+          "通过 TOML 配置和自定义提示词深度定制评审规则"
+        ],
+        "summary": "一个用斜杠命令驱动的开源 AI 代码评审机器人，在 PR 评论里敲 /review 就能自动审查代码，支持私有化部署和任意大模型。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "对数据合规有要求、需要代码不出内网的企业团队",
+          "想低成本体验 AI 代码评审的独立开发者和小团队",
+          "想基于开源底座自研 AI 评审产品的工程师",
+          "需要自动生成 PR 描述和 CHANGELOG 的开源项目维护者"
+        ],
+        "description": "PR-Agent 是 AI 代码审查赛道的开山之作，由 Qodo 开源（Apache 2.0 协议）。在 PR 评论区输入斜杠命令即可触发结构化评审、代码改进建议和 PR 描述生成，精准定位到行号。它采用 PR 压缩和 JSON 提示词两项核心工程设计，平台、模型、部署方式三重中立，是企业私有化部署 AI 评审的首选。局限是缺乏全仓库上下文、存在 AI 评审通病（噪音与幻觉），且最尖端能力被留在闭源商业版中。"
+      }
+    },
+    {
+      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 47442,
+      "forks": 3252,
+      "starsAdded": 1476,
+      "createdAt": "2026-11-08T18:00:03.966Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "f70186f1-6a01-4f6d-8efb-65a2f49596b4",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "repo": "hyprwm/Hyprland",
+      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "language": "C++",
+      "stars": 40546,
+      "forks": 2167,
+      "starsAdded": 1436,
+      "createdAt": "2026-11-08T18:00:03.982Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compositor",
+          "cpp26",
+          "wayland",
+          "wayland-compositor"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://hypr.land",
+        "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. - hyprwm/Hyprland"
+      },
+      "summaryData": {
+        "tags": [
+          "Wayland",
+          "Linux桌面",
+          "窗口管理器",
+          "平铺WM",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Hyprland 深度评测：把 Linux 桌面雕琢成作品的 Wayland 合成器",
+        "ability": [
+          "动态平铺窗口管理，键盘驱动的高效工作流",
+          "丰富视觉特效：模糊、发光、贝塞尔曲线动画、果冻窗口",
+          "hyprctl 与 IPC 控制，可脚本化远程操控桌面",
+          "插件系统与 Lua 配置，高度可定制扩展",
+          "工作区级屏幕共享，演示协作更安全"
+        ],
+        "summary": "一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。",
+        "category": [
+          "开发工具",
+          "操作系统桌面",
+          "开源项目"
+        ],
+        "suitable": [
+          "追求键盘效率的开发者与运维工程师",
+          "Linux 桌面美化玩家",
+          "追求流畅体验的笔记本用户",
+          "想学习 Wayland 协议的极客",
+          "需要精准屏幕共享的内容创作者"
+        ],
+        "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      }
+    }
   ]
 }
