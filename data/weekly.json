@@ -6536,14 +6536,20 @@
       "starsAdded": 4069,
       "createdAt": "2026-09-08T12:00:04.856Z",
       "metaData": {
-        "forks": "4106",
-        "stars": "51223",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
+          "ai-humanizer",
           "ai-writing",
+          "chatgpt",
+          "claude",
           "claude-code",
           "codex",
           "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
           "prompt-engineering",
           "writing-tools"
         ],
@@ -9760,14 +9766,20 @@
       "starsAdded": 3024,
       "createdAt": "2026-09-13T23:00:03.941Z",
       "metaData": {
-        "forks": "4106",
-        "stars": "51223",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
+          "ai-humanizer",
           "ai-writing",
+          "chatgpt",
+          "claude",
           "claude-code",
           "codex",
           "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
           "prompt-engineering",
           "writing-tools"
         ],
@@ -11932,14 +11944,20 @@
       "starsAdded": 3023,
       "createdAt": "2026-09-20T18:00:03.663Z",
       "metaData": {
-        "forks": "4106",
-        "stars": "51223",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
+          "ai-humanizer",
           "ai-writing",
+          "chatgpt",
+          "claude",
           "claude-code",
           "codex",
           "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
           "prompt-engineering",
           "writing-tools"
         ],
@@ -24122,8 +24140,8 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 51732,
-      "forks": 9932,
+      "stars": 51793,
+      "forks": 9940,
       "starsAdded": 17100,
       "createdAt": "2026-11-01T18:00:04.507Z",
       "metaData": {
@@ -24175,8 +24193,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 318103,
-      "forks": 26623,
+      "stars": 318134,
+      "forks": 26625,
       "starsAdded": 9664,
       "createdAt": "2026-11-07T15:00:05.045Z",
       "metaData": {
@@ -24219,6 +24237,59 @@
       }
     },
     {
+      "id": "92e86429-dae2-4c33-96df-b437b3d1cff8",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 9953,
+      "forks": 811,
+      "starsAdded": 9044,
+      "createdAt": "2026-11-08T12:00:03.762Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
       "id": "9c8086fb-1ffb-454c-86a5-d52ef3c637a2",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -24226,8 +24297,8 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 99536,
-      "forks": 10417,
+      "stars": 99556,
+      "forks": 10418,
       "starsAdded": 8712,
       "createdAt": "2026-11-06T13:00:05.305Z",
       "metaData": {
@@ -24411,8 +24482,8 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 114665,
-      "forks": 9949,
+      "stars": 114677,
+      "forks": 9953,
       "starsAdded": 7482,
       "createdAt": "2026-11-01T18:00:04.434Z",
       "metaData": {
@@ -24484,8 +24555,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 17550,
-      "forks": 2457,
+      "stars": 17620,
+      "forks": 2465,
       "starsAdded": 7077,
       "createdAt": "2026-11-05T12:00:06.090Z",
       "metaData": {
@@ -24498,7 +24569,6 @@
           "computer-use",
           "docker",
           "electron",
-          "expo",
           "grok",
           "grok-bot",
           "grok-bot-alternative",
@@ -24506,7 +24576,7 @@
           "typescript"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://www.openmausbot.com/",
+        "homepage": "https://www.mausbot.com/",
         "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
       },
       "summaryData": {
@@ -24610,7 +24680,7 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 50549,
+      "stars": 50579,
       "forks": 2683,
       "starsAdded": 6624,
       "createdAt": "2026-11-01T18:00:04.376Z",
@@ -24724,8 +24794,8 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 36767,
-      "forks": 4852,
+      "stars": 36786,
+      "forks": 4855,
       "starsAdded": 5719,
       "createdAt": "2026-11-06T13:00:05.227Z",
       "metaData": {
@@ -24924,8 +24994,8 @@
       "repo": "Renhuai123/ziwei-doushu",
       "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
       "language": "TypeScript",
-      "stars": 16832,
-      "forks": 3262,
+      "stars": 16836,
+      "forks": 3264,
       "starsAdded": 4906,
       "createdAt": "2026-11-07T15:00:05.010Z",
       "metaData": {
@@ -25185,7 +25255,7 @@
       "repo": "github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
       "language": "Python",
-      "stars": 148546,
+      "stars": 148559,
       "forks": 13353,
       "starsAdded": 4280,
       "createdAt": "2026-11-07T15:00:05.051Z",
@@ -25410,6 +25480,73 @@
       }
     },
     {
+      "id": "5e0714bc-f8ca-470d-97eb-d48caf6a77d2",
+      "dateAdded": "202645",
+      "type": "github-weekly",
+      "url": "https://github.com/blader/humanizer",
+      "repo": "blader/humanizer",
+      "description": "Agent skill that removes signs of AI-generated writing from text",
+      "language": "Python",
+      "stars": 66148,
+      "forks": 5224,
+      "starsAdded": 3067,
+      "createdAt": "2026-11-08T12:00:03.805Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-humanizer",
+          "ai-writing",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "codex",
+          "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
+          "prompt-engineering",
+          "writing-tools"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.sh/blader/humanizer",
+        "description": "Agent skill that removes signs of AI-generated writing from text - blader/humanizer"
+      },
+      "summaryData": {
+        "tags": [
+          "AI去味",
+          "文本润色",
+          "Claude Skill",
+          "Markdown提示",
+          "写作风格迁移"
+        ],
+        "cover": "",
+        "title": "Humanizer：基于维基百科标准的 AI 文本“除味剂”技能",
+        "ability": [
+          "识别并改写 35 种 AI 写作套路",
+          "支持个人写作与参考文本的场景区分",
+          "提供“语音匹配”功能，学习用户个人风格",
+          "兼容 Claude Code / Cursor 等多种智能体",
+          "严格保持原意与事实，不凭空捏造"
+        ],
+        "summary": "基于 Wikipedia AI 写作特征清单，系统性去除 LLM 输出中的“AI 味”，让文本读起来更像真人写的。",
+        "category": [
+          "AI 编程",
+          "写作工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "内容创作者与博主",
+          "产品运营与公关人员",
+          "开发者与文档维护者",
+          "使用 Claude / Cursor 的重度用户",
+          "需要对事实负责的文案工作者"
+        ],
+        "description": "Humanizer 是一个开源的 AI 技能，通过对照 Wikipedia 归纳的 35 条 AI 写作特征，对文本进行“检测—改写—二次校验”，在保持原意的前提下，去除机器生成的僵硬感与套路化表达，适合博客、公告、技术文档等多种场景。"
+      }
+    },
+    {
       "id": "f67612fa-ea43-4984-b663-6e4d136ebccc",
       "dateAdded": "202645",
       "type": "github-weekly",
@@ -25537,8 +25674,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 189082,
-      "forks": 22291,
+      "stars": 189116,
+      "forks": 22292,
       "starsAdded": 2796,
       "createdAt": "2026-11-01T18:00:04.521Z",
       "metaData": {
@@ -25592,7 +25729,7 @@
       "repo": "max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars": 12015,
+      "stars": 12025,
       "forks": 465,
       "starsAdded": 2292,
       "createdAt": "2026-11-03T12:00:22.217Z",
@@ -25650,7 +25787,7 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 11594,
+      "stars": 11602,
       "forks": 450,
       "starsAdded": 1938,
       "createdAt": "2026-11-01T18:00:04.513Z",
@@ -25765,7 +25902,7 @@
       "repo": "The-PR-Agent/pr-agent",
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars": 15519,
+      "stars": 15524,
       "forks": 2145,
       "starsAdded": 1576,
       "createdAt": "2026-11-05T12:00:06.114Z",
@@ -25826,8 +25963,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 47178,
-      "forks": 3233,
+      "stars": 47218,
+      "forks": 3235,
       "starsAdded": 1476,
       "createdAt": "2026-11-07T15:00:05.035Z",
       "metaData": {
@@ -25879,7 +26016,7 @@
       "repo": "hyprwm/Hyprland",
       "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
       "language": "C++",
-      "stars": 40518,
+      "stars": 40522,
       "forks": 2164,
       "starsAdded": 1436,
       "createdAt": "2026-11-03T12:00:22.213Z",

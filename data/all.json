@@ -1,6 +1,116 @@
 {
   "all": [
     {
+      "id": "777a2bab-5c98-4546-8fa3-179d04c15776",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "domain": "github.com",
+      "repo": "google-deepmind/mujoco",
+      "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-08T12:08:14.795Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      },
+      "type": "project",
+      "dateAdded": "20261108"
+    },
+    {
+      "id": "b9f15608-551c-434d-9ee2-b72a00b8f9e2",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "domain": "github.com",
+      "repo": "anthropics/claude-quickstarts",
+      "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-08T12:04:36.969Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "AI Agent",
+          "Computer Use",
+          "Managed Agents"
+        ],
+        "cover": "",
+        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
+        "ability": [
+          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
+          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
+          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
+          "Computer Use Best Practices 示范生产级工程最佳实践",
+          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
+        ],
+        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "初次接触 Claude API 的工程师",
+          "想开发 Agent 产品的创业者与全栈开发者",
+          "研究 AI Agent 架构的技术人员",
+          "想自动化团队工作流的运营/运维人员",
+          "金融、法律等需要智能文档分析的行业从业者"
+        ],
+        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
+      },
+      "type": "project",
+      "dateAdded": "20261108"
+    },
+    {
       "id": "4a9562f6-7ad4-452a-aa4f-feb22af6095c",
       "url": "https://github.com/dsx-ai-factory/nvke",
       "domain": "github.com",
@@ -2574,7 +2684,6 @@
           "computer-use",
           "docker",
           "electron",
-          "expo",
           "grok",
           "grok-bot",
           "grok-bot-alternative",
@@ -2582,7 +2691,7 @@
           "typescript"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://www.openmausbot.com/",
+        "homepage": "https://www.mausbot.com/",
         "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
       },
       "summaryData": {
@@ -19382,14 +19491,20 @@
       "forks": 0,
       "createdAt": "2026-09-02T12:30:31.132Z",
       "metaData": {
-        "forks": "4106",
-        "stars": "51223",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "agent-skills",
+          "ai-humanizer",
           "ai-writing",
+          "chatgpt",
+          "claude",
           "claude-code",
           "codex",
           "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "llm",
           "prompt-engineering",
           "writing-tools"
         ],
