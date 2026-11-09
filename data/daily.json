@@ -102156,9 +102156,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 103130,
-      "forks": 12099,
-      "starsAdded": 2372,
+      "stars": 103405,
+      "forks": 12119,
+      "starsAdded": 2373,
       "createdAt": "2026-11-08T17:00:01.946Z",
       "metaData": {
         "forks": "0",
@@ -102226,9 +102226,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 18103,
-      "forks": 2527,
-      "starsAdded": 1437,
+      "stars": 18215,
+      "forks": 2532,
+      "starsAdded": 1439,
       "createdAt": "2026-11-08T17:00:02.012Z",
       "metaData": {
         "forks": "0",
@@ -102291,9 +102291,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 16342,
-      "forks": 1298,
-      "starsAdded": 863,
+      "stars": 16658,
+      "forks": 1317,
+      "starsAdded": 875,
       "createdAt": "2026-11-08T17:00:02.050Z",
       "metaData": {
         "forks": "0",
@@ -102344,9 +102344,9 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 47501,
-      "forks": 3254,
-      "starsAdded": 812,
+      "stars": 47559,
+      "forks": 3257,
+      "starsAdded": 815,
       "createdAt": "2026-11-08T17:00:02.046Z",
       "metaData": {
         "forks": "0",
@@ -102397,9 +102397,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 189502,
-      "forks": 22337,
-      "starsAdded": 793,
+      "stars": 189604,
+      "forks": 22346,
+      "starsAdded": 792,
       "createdAt": "2026-11-08T17:00:02.056Z",
       "metaData": {
         "forks": "0",
@@ -102452,8 +102452,8 @@
       "repo": "ranxianglei/billion-context",
       "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
       "language": "TypeScript",
-      "stars": 5059,
-      "forks": 402,
+      "stars": 5121,
+      "forks": 404,
       "starsAdded": 460,
       "createdAt": "2026-11-08T17:00:02.085Z",
       "metaData": {
@@ -102507,8 +102507,8 @@
       "repo": "dsx-ai-factory/nvke",
       "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
       "language": "Go",
-      "stars": 802,
-      "forks": 109,
+      "stars": 834,
+      "forks": 110,
       "starsAdded": 345,
       "createdAt": "2026-11-08T17:00:01.989Z",
       "metaData": {
@@ -102528,59 +102528,6 @@
       "summaryData": null
     },
     {
-      "id": "8b27a08e-774a-4690-b24e-157ee74a9dc7",
-      "dateAdded": "20261109",
-      "type": "github-daily",
-      "url": "https://github.com/anthropics/claude-quickstarts",
-      "repo": "anthropics/claude-quickstarts",
-      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "language": "Python",
-      "stars": 19355,
-      "forks": 3277,
-      "starsAdded": 28,
-      "createdAt": "2026-11-08T17:00:02.037Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
-      },
-      "summaryData": {
-        "tags": [
-          "Anthropic",
-          "Claude",
-          "AI Agent",
-          "Computer Use",
-          "Managed Agents"
-        ],
-        "cover": "",
-        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
-        "ability": [
-          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
-          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
-          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
-          "Computer Use Best Practices 示范生产级工程最佳实践",
-          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
-        ],
-        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "初次接触 Claude API 的工程师",
-          "想开发 Agent 产品的创业者与全栈开发者",
-          "研究 AI Agent 架构的技术人员",
-          "想自动化团队工作流的运营/运维人员",
-          "金融、法律等需要智能文档分析的行业从业者"
-        ],
-        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
-      }
-    },
-    {
       "id": "e5f22871-a833-4035-b2b2-2a2ebe5a0dbb",
       "dateAdded": "20261109",
       "type": "github-daily",
@@ -102588,9 +102535,9 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 16337,
-      "forks": 1950,
-      "starsAdded": 26,
+      "stars": 16391,
+      "forks": 1952,
+      "starsAdded": 41,
       "createdAt": "2026-11-08T17:00:02.074Z",
       "metaData": {
         "forks": "0",
@@ -102635,6 +102582,59 @@
           "机械臂与硬件初创团队"
         ],
         "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
+      "id": "8b27a08e-774a-4690-b24e-157ee74a9dc7",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "repo": "anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 19401,
+      "forks": 3281,
+      "starsAdded": 32,
+      "createdAt": "2026-11-08T17:00:02.037Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "AI Agent",
+          "Computer Use",
+          "Managed Agents"
+        ],
+        "cover": "",
+        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
+        "ability": [
+          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
+          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
+          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
+          "Computer Use Best Practices 示范生产级工程最佳实践",
+          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
+        ],
+        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "初次接触 Claude API 的工程师",
+          "想开发 Agent 产品的创业者与全栈开发者",
+          "研究 AI Agent 架构的技术人员",
+          "想自动化团队工作流的运营/运维人员",
+          "金融、法律等需要智能文档分析的行业从业者"
+        ],
+        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
       }
     }
   ]

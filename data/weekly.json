@@ -26129,9 +26129,9 @@
       "repo": "pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars": 52301,
-      "forks": 9991,
-      "starsAdded": 17100,
+      "stars": 52466,
+      "forks": 10011,
+      "starsAdded": 15379,
       "createdAt": "2026-11-08T18:00:03.932Z",
       "metaData": {
         "forks": "0",
@@ -26182,9 +26182,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 318402,
-      "forks": 26648,
-      "starsAdded": 9664,
+      "stars": 318491,
+      "forks": 26655,
+      "starsAdded": 9635,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
         "forks": "0",
@@ -26233,9 +26233,9 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 10236,
-      "forks": 831,
-      "starsAdded": 9044,
+      "stars": 10360,
+      "forks": 837,
+      "starsAdded": 9327,
       "createdAt": "2026-11-08T18:00:03.599Z",
       "metaData": {
         "forks": "0",
@@ -26286,9 +26286,9 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 99775,
-      "forks": 10433,
-      "starsAdded": 8712,
+      "stars": 99855,
+      "forks": 10438,
+      "starsAdded": 8342,
       "createdAt": "2026-11-08T18:00:03.962Z",
       "metaData": {
         "forks": "0",
@@ -26353,6 +26353,71 @@
       }
     },
     {
+      "id": "8825ba99-430a-4601-8947-e81f90023639",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 18215,
+      "forks": 2532,
+      "starsAdded": 7621,
+      "createdAt": "2026-11-08T18:00:03.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.mausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
       "id": "2cbd0b0e-5eaa-458e-b01d-c22cc87f4fcf",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26360,9 +26425,9 @@
       "repo": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 114827,
-      "forks": 9974,
-      "starsAdded": 7482,
+      "stars": 114889,
+      "forks": 9980,
+      "starsAdded": 6443,
       "createdAt": "2026-11-08T18:00:03.608Z",
       "metaData": {
         "forks": "0",
@@ -26426,71 +26491,6 @@
       }
     },
     {
-      "id": "8825ba99-430a-4601-8947-e81f90023639",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "repo": "milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "language": "TypeScript",
-      "stars": 18073,
-      "forks": 2525,
-      "starsAdded": 7077,
-      "createdAt": "2026-11-08T18:00:03.916Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "claude-code",
-          "codex",
-          "computer-use",
-          "docker",
-          "electron",
-          "grok",
-          "grok-bot",
-          "grok-bot-alternative",
-          "self-hosted",
-          "typescript"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://www.mausbot.com/",
-        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "AI Agent",
-          "多模型",
-          "本地优先",
-          "BYOA"
-        ],
-        "cover": "",
-        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
-        "ability": [
-          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
-          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
-          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
-          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
-          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
-        ],
-        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
-        "category": [
-          "AI Agent",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
-          "独立开发者与小团队，想自动化研究、文档和代码工作流",
-          "追求本地优先、数据自主的隐私敏感用户",
-          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
-          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
-        ],
-        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
-      }
-    },
-    {
       "id": "59d49d12-c3e6-41dd-b805-09fd03207b0e",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26498,9 +26498,9 @@
       "repo": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 50834,
-      "forks": 2698,
-      "starsAdded": 6624,
+      "stars": 50947,
+      "forks": 2705,
+      "starsAdded": 6356,
       "createdAt": "2026-11-08T18:00:03.947Z",
       "metaData": {
         "forks": "0",
@@ -26551,9 +26551,9 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 36919,
-      "forks": 4866,
-      "starsAdded": 5719,
+      "stars": 36990,
+      "forks": 4873,
+      "starsAdded": 5235,
       "createdAt": "2026-11-08T18:00:03.902Z",
       "metaData": {
         "forks": "0",
@@ -26617,9 +26617,9 @@
       "repo": "Renhuai123/ziwei-doushu",
       "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
       "language": "TypeScript",
-      "stars": 16935,
-      "forks": 3277,
-      "starsAdded": 4906,
+      "stars": 16953,
+      "forks": 3280,
+      "starsAdded": 4191,
       "createdAt": "2026-11-08T18:00:03.959Z",
       "metaData": {
         "forks": "0",
@@ -26681,9 +26681,9 @@
       "repo": "github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
       "language": "Python",
-      "stars": 148662,
-      "forks": 13355,
-      "starsAdded": 4280,
+      "stars": 148704,
+      "forks": 13356,
+      "starsAdded": 4045,
       "createdAt": "2026-11-08T18:00:03.978Z",
       "metaData": {
         "forks": "0",
@@ -26735,6 +26735,61 @@
       }
     },
     {
+      "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 189604,
+      "forks": 22346,
+      "starsAdded": 3169,
+      "createdAt": "2026-11-08T18:00:03.821Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
       "id": "2411b055-b1d2-408f-ab27-4164a3534cb1",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26742,9 +26797,9 @@
       "repo": "blader/humanizer",
       "description": "Agent skill that removes signs of AI-generated writing from text",
       "language": "Python",
-      "stars": 66385,
-      "forks": 5231,
-      "starsAdded": 3067,
+      "stars": 66481,
+      "forks": 5239,
+      "starsAdded": 3118,
       "createdAt": "2026-11-08T18:00:03.984Z",
       "metaData": {
         "forks": "0",
@@ -26802,61 +26857,6 @@
       }
     },
     {
-      "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/skills",
-      "repo": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "stars": 189464,
-      "forks": 22335,
-      "starsAdded": 2796,
-      "createdAt": "2026-11-08T18:00:03.821Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills"
-        ],
-        "license": "",
-        "homepage": "",
-        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Anthropic",
-          "Claude",
-          "Agent Skills",
-          "MCP",
-          "开源生态"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
-        "ability": [
-          "标准化技能定义",
-          "动态加载与组合",
-          "渐进式上下文管理",
-          "跨平台生态兼容",
-          "脚本与资源集成"
-        ],
-        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源框架"
-        ],
-        "suitable": [
-          "AI 应用开发者",
-          "研发与 DevOps 工程师",
-          "产品与知识管理者",
-          "企业工具链负责人",
-          "Agent 架构研究者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
-      }
-    },
-    {
       "id": "a4a1b36c-69e9-4c3e-90b4-df7341ff287f",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26864,9 +26864,9 @@
       "repo": "max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars": 12094,
-      "forks": 466,
-      "starsAdded": 2292,
+      "stars": 12114,
+      "forks": 468,
+      "starsAdded": 2313,
       "createdAt": "2026-11-08T18:00:03.734Z",
       "metaData": {
         "forks": "0",
@@ -26915,6 +26915,59 @@
       }
     },
     {
+      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 47559,
+      "forks": 3257,
+      "starsAdded": 2190,
+      "createdAt": "2026-11-08T18:00:03.966Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
       "id": "d26b79b5-aaef-41a2-9ad6-139e1d1c9eb6",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26922,9 +26975,9 @@
       "repo": "jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars": 11680,
-      "forks": 452,
-      "starsAdded": 1938,
+      "stars": 11719,
+      "forks": 456,
+      "starsAdded": 1857,
       "createdAt": "2026-11-08T18:00:03.974Z",
       "metaData": {
         "forks": "0",
@@ -26975,9 +27028,9 @@
       "repo": "The-PR-Agent/pr-agent",
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars": 15575,
-      "forks": 2148,
-      "starsAdded": 1576,
+      "stars": 15601,
+      "forks": 2150,
+      "starsAdded": 1706,
       "createdAt": "2026-11-08T18:00:03.980Z",
       "metaData": {
         "forks": "0",
@@ -27029,59 +27082,6 @@
       }
     },
     {
-      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 47470,
-      "forks": 3253,
-      "starsAdded": 1476,
-      "createdAt": "2026-11-08T18:00:03.966Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
-      }
-    },
-    {
       "id": "f70186f1-6a01-4f6d-8efb-65a2f49596b4",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27089,9 +27089,9 @@
       "repo": "hyprwm/Hyprland",
       "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
       "language": "C++",
-      "stars": 40551,
+      "stars": 40560,
       "forks": 2167,
-      "starsAdded": 1436,
+      "starsAdded": 1465,
       "createdAt": "2026-11-08T18:00:03.982Z",
       "metaData": {
         "forks": "0",
