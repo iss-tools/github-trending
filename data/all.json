@@ -1,6 +1,182 @@
 {
   "all": [
     {
+      "id": "90ccba10-506d-4b6b-b250-81d6cc75a37b",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "domain": "github.com",
+      "repo": "homeassistant-ai/ha-mcp",
+      "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-09T12:12:05.219Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "claude",
+          "hacs",
+          "home-assistant",
+          "home-automation",
+          "llm",
+          "mcp",
+          "model-context-protocol"
+        ],
+        "license": "MIT license",
+        "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
+        "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. - homeassistant-ai/ha-mcp"
+      },
+      "summaryData": {
+        "tags": [
+          "Home Assistant",
+          "MCP",
+          "智能家居",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ha-mcp 深度评测：87 个工具把 Claude 变成你的智能家居 AI 管家",
+        "ability": [
+          "用自然语言控制 Home Assistant 设备，替代繁琐的语音指令和界面操作",
+          "让 AI 直接创建和修改自动化、脚本、仪表盘、helper 等 HA 配置",
+          "通过执行 trace 帮 AI 精准定位自动化不触发的 Bug",
+          "管理备份、插件（Add-on）、HACS、Zigbee 设备等系统级操作",
+          "提供只读模式、按工具启停、自动备份等多层安全防护机制"
+        ],
+        "summary": "ha-mcp 是一个开源 MCP 服务器，让 Claude 等 AI 客户端全面接管 Home Assistant 的控制、配置与调试，告别手写 YAML。",
+        "category": [
+          "智能家居",
+          "AI 工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "Home Assistant 重度玩家与自托管爱好者",
+          "刚入门 HA、不想啃 YAML 语法的新手",
+          "智能家居内容创作者与折腾党",
+          "追求安全模型的极客与运维人员",
+          "想用 AI 简化家务管理的普通家庭用户"
+        ],
+        "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
+      },
+      "type": "project",
+      "dateAdded": "20261109"
+    },
+    {
+      "id": "17fb1051-70a2-445e-8229-5e78c4efd727",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "domain": "github.com",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-09T12:08:14.157Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      },
+      "type": "project",
+      "dateAdded": "20261109"
+    },
+    {
+      "id": "b9ea1fb6-970a-4516-94c3-5de803afa0d9",
+      "url": "https://github.com/garrytan/gbrain",
+      "domain": "github.com",
+      "repo": "garrytan/gbrain",
+      "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-09T12:03:37.451Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain. Contribute to garrytan/gbrain development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "MCP",
+          "知识库",
+          "开源项目",
+          "本地优先"
+        ],
+        "cover": "",
+        "title": "GBrain 深度评测：YC 总裁 Garry Tan 开源的 AI Agent 记忆系统",
+        "ability": [
+          "MCP 原生接入，支持 Claude Code / Codex / Cursor 等主流 Agent",
+          "零 LLM 调用自动构建类型化知识图谱，写入零 token 成本",
+          "think 命令合成带引用的答案，并主动指出知识盲区",
+          "Dream Cycle 后台自动去重、修引用、检测矛盾",
+          "Markdown + Git 本地存储，数据完全自主可控可重建"
+        ],
+        "summary": "GBrain 是 YC 总裁开源的 AI Agent 本地记忆系统，让 Claude Code 等智能体真正拥有跨会话长期记忆",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "知识管理"
+        ],
+        "suitable": [
+          "Claude Code / Codex / Cursor 重度用户",
+          "创业者、投资人、销售负责人",
+          "研究者与写作者",
+          "小团队知识管理负责人",
+          "AI Agent 开发者"
+        ],
+        "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。"
+      },
+      "type": "project",
+      "dateAdded": "20261109"
+    },
+    {
       "id": "777a2bab-5c98-4546-8fa3-179d04c15776",
       "url": "https://github.com/google-deepmind/mujoco",
       "domain": "github.com",
@@ -13898,29 +14074,28 @@
         "forks": "0",
         "stars": "0",
         "topics": [
-          "awesome",
           "claude",
-          "densepose",
+          "claude-code",
           "esp32",
           "firmware",
           "home-assistant",
           "home-automation",
           "iot",
+          "mcp",
           "monitoring",
           "networking",
-          "npm",
           "pose-estimation",
           "react",
           "rf",
           "self-learning",
-          "skills",
           "spatial-intelligence",
           "typescript",
+          "webassembly",
           "wifi",
           "wifi-security"
         ],
         "license": "MIT license",
-        "homepage": "https://Cognitum.One/RuView",
+        "homepage": "https://ruv.io",
         "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
       },
       "summaryData": {

@@ -33782,29 +33782,28 @@
         "forks": "0",
         "stars": "0",
         "topics": [
-          "awesome",
           "claude",
-          "densepose",
+          "claude-code",
           "esp32",
           "firmware",
           "home-assistant",
           "home-automation",
           "iot",
+          "mcp",
           "monitoring",
           "networking",
-          "npm",
           "pose-estimation",
           "react",
           "rf",
           "self-learning",
-          "skills",
           "spatial-intelligence",
           "typescript",
+          "webassembly",
           "wifi",
           "wifi-security"
         ],
         "license": "MIT license",
-        "homepage": "https://Cognitum.One/RuView",
+        "homepage": "https://ruv.io",
         "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
       },
       "summaryData": {
@@ -35677,29 +35676,28 @@
         "forks": "0",
         "stars": "0",
         "topics": [
-          "awesome",
           "claude",
-          "densepose",
+          "claude-code",
           "esp32",
           "firmware",
           "home-assistant",
           "home-automation",
           "iot",
+          "mcp",
           "monitoring",
           "networking",
-          "npm",
           "pose-estimation",
           "react",
           "rf",
           "self-learning",
-          "skills",
           "spatial-intelligence",
           "typescript",
+          "webassembly",
           "wifi",
           "wifi-security"
         ],
         "license": "MIT license",
-        "homepage": "https://Cognitum.One/RuView",
+        "homepage": "https://ruv.io",
         "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
       },
       "summaryData": {
@@ -87315,29 +87313,28 @@
         "forks": "0",
         "stars": "0",
         "topics": [
-          "awesome",
           "claude",
-          "densepose",
+          "claude-code",
           "esp32",
           "firmware",
           "home-assistant",
           "home-automation",
           "iot",
+          "mcp",
           "monitoring",
           "networking",
-          "npm",
           "pose-estimation",
           "react",
           "rf",
           "self-learning",
-          "skills",
           "spatial-intelligence",
           "typescript",
+          "webassembly",
           "wifi",
           "wifi-security"
         ],
         "license": "MIT license",
-        "homepage": "https://Cognitum.One/RuView",
+        "homepage": "https://ruv.io",
         "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
       },
       "summaryData": {
@@ -88248,29 +88245,28 @@
         "forks": "0",
         "stars": "0",
         "topics": [
-          "awesome",
           "claude",
-          "densepose",
+          "claude-code",
           "esp32",
           "firmware",
           "home-assistant",
           "home-automation",
           "iot",
+          "mcp",
           "monitoring",
           "networking",
-          "npm",
           "pose-estimation",
           "react",
           "rf",
           "self-learning",
-          "skills",
           "spatial-intelligence",
           "typescript",
+          "webassembly",
           "wifi",
           "wifi-security"
         ],
         "license": "MIT license",
-        "homepage": "https://Cognitum.One/RuView",
+        "homepage": "https://ruv.io",
         "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
       },
       "summaryData": {
@@ -102156,9 +102152,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 105306,
-      "forks": 12248,
-      "starsAdded": 2373,
+      "stars": 105890,
+      "forks": 12294,
+      "starsAdded": 4294,
       "createdAt": "2026-11-08T17:00:01.946Z",
       "metaData": {
         "forks": "0",
@@ -102219,6 +102215,59 @@
       }
     },
     {
+      "id": "20a06f66-05d1-4227-90ac-19f6a9356d72",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 18314,
+      "forks": 1422,
+      "starsAdded": 3324,
+      "createdAt": "2026-11-08T17:00:02.050Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "399be354-9a54-4bc6-a3c8-579a2987ebaf",
       "dateAdded": "20261109",
       "type": "github-daily",
@@ -102226,9 +102275,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 18959,
-      "forks": 2613,
-      "starsAdded": 1439,
+      "stars": 19166,
+      "forks": 2640,
+      "starsAdded": 1589,
       "createdAt": "2026-11-08T17:00:02.012Z",
       "metaData": {
         "forks": "0",
@@ -102284,112 +102333,6 @@
       }
     },
     {
-      "id": "20a06f66-05d1-4227-90ac-19f6a9356d72",
-      "dateAdded": "20261109",
-      "type": "github-daily",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 17963,
-      "forks": 1404,
-      "starsAdded": 875,
-      "createdAt": "2026-11-08T17:00:02.050Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
-      },
-      "summaryData": {
-        "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
-        ],
-        "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
-        "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
-        ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
-        "category": [
-          "开发工具",
-          "前端开发",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
-        ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
-      }
-    },
-    {
-      "id": "7b7c6f49-c9aa-4328-aa3f-4e36b08c8cb5",
-      "dateAdded": "20261109",
-      "type": "github-daily",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 47997,
-      "forks": 3278,
-      "starsAdded": 815,
-      "createdAt": "2026-11-08T17:00:02.046Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
-      }
-    },
-    {
       "id": "509e250b-26fa-4b56-9d26-258c53612c8b",
       "dateAdded": "20261109",
       "type": "github-daily",
@@ -102397,9 +102340,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 190001,
-      "forks": 22384,
-      "starsAdded": 792,
+      "stars": 190141,
+      "forks": 22388,
+      "starsAdded": 1052,
       "createdAt": "2026-11-08T17:00:02.056Z",
       "metaData": {
         "forks": "0",
@@ -102445,87 +102388,57 @@
       }
     },
     {
-      "id": "a6ffdf7a-017c-421e-a775-19f1460f6d5c",
+      "id": "7b7c6f49-c9aa-4328-aa3f-4e36b08c8cb5",
       "dateAdded": "20261109",
       "type": "github-daily",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "repo": "ranxianglei/billion-context",
-      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-      "language": "TypeScript",
-      "stars": 5485,
-      "forks": 421,
-      "starsAdded": 460,
-      "createdAt": "2026-11-08T17:00:02.085Z",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 48110,
+      "forks": 3286,
+      "starsAdded": 914,
+      "createdAt": "2026-11-08T17:00:02.046Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "dsh-plugin"
-        ],
-        "license": "License",
-        "homepage": "",
-        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "上下文压缩",
-          "开源项目",
+          "Vercel",
           "AI Agent",
-          "API 代理",
+          "浏览器自动化",
+          "Rust",
           "Claude Code"
         ],
         "cover": "",
-        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
         "ability": [
-          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
-          "T1→T2→T3 三层递进式摘要，长会话不失忆",
-          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
-          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
-          "Web 仪表盘与缓存健康诊断，可观测性强"
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
         ],
-        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
         "category": [
           "开发工具",
           "AI 编程",
-          "效率工具"
+          "浏览器自动化"
         ],
         "suitable": [
-          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
-          "API 按量付费、心疼账单的开发者",
-          "使用无缓存中转站/公益站的用户",
-          "想做工具链整合的团队",
-          "想突破上下文窗口限制的极客"
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
         ],
-        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
-    },
-    {
-      "id": "b7f3ac36-5827-4d92-a63f-337b0e2519f6",
-      "dateAdded": "20261109",
-      "type": "github-daily",
-      "url": "https://github.com/dsx-ai-factory/nvke",
-      "repo": "dsx-ai-factory/nvke",
-      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
-      "language": "Go",
-      "stars": 969,
-      "forks": 113,
-      "starsAdded": 345,
-      "createdAt": "2026-11-08T17:00:01.989Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "bare-metal",
-          "cluster-api",
-          "gpu",
-          "kubernetes",
-          "nvidia"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/nvke/",
-        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
-      },
-      "summaryData": null
     },
     {
       "id": "e5f22871-a833-4035-b2b2-2a2ebe5a0dbb",
@@ -102535,9 +102448,9 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 16649,
-      "forks": 1964,
-      "starsAdded": 41,
+      "stars": 16710,
+      "forks": 1970,
+      "starsAdded": 579,
       "createdAt": "2026-11-08T17:00:02.074Z",
       "metaData": {
         "forks": "0",
@@ -102592,9 +102505,9 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 19652,
-      "forks": 3291,
-      "starsAdded": 32,
+      "stars": 19725,
+      "forks": 3293,
+      "starsAdded": 560,
       "createdAt": "2026-11-08T17:00:02.037Z",
       "metaData": {
         "forks": "0",
@@ -102635,6 +102548,338 @@
           "金融、法律等需要智能文档分析的行业从业者"
         ],
         "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
+      }
+    },
+    {
+      "id": "bb878be9-c787-4ea4-a968-1f4a36a752c4",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 68445,
+      "forks": 56303,
+      "starsAdded": 505,
+      "createdAt": "2026-11-09T12:00:03.412Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      }
+    },
+    {
+      "id": "a6ffdf7a-017c-421e-a775-19f1460f6d5c",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 5561,
+      "forks": 423,
+      "starsAdded": 460,
+      "createdAt": "2026-11-08T17:00:02.085Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      }
+    },
+    {
+      "id": "b7f3ac36-5827-4d92-a63f-337b0e2519f6",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "repo": "dsx-ai-factory/nvke",
+      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+      "language": "Go",
+      "stars": 995,
+      "forks": 116,
+      "starsAdded": 345,
+      "createdAt": "2026-11-08T17:00:01.989Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bare-metal",
+          "cluster-api",
+          "gpu",
+          "kubernetes",
+          "nvidia"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/nvke/",
+        "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke"
+      },
+      "summaryData": null
+    },
+    {
+      "id": "e4eec393-8d95-40d3-ad21-8a302bb1248f",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/garrytan/gbrain",
+      "repo": "garrytan/gbrain",
+      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+      "language": "TypeScript",
+      "stars": 31853,
+      "forks": 4743,
+      "starsAdded": 215,
+      "createdAt": "2026-11-09T12:00:03.400Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain. Contribute to garrytan/gbrain development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "MCP",
+          "知识库",
+          "开源项目",
+          "本地优先"
+        ],
+        "cover": "",
+        "title": "GBrain 深度评测：YC 总裁 Garry Tan 开源的 AI Agent 记忆系统",
+        "ability": [
+          "MCP 原生接入，支持 Claude Code / Codex / Cursor 等主流 Agent",
+          "零 LLM 调用自动构建类型化知识图谱，写入零 token 成本",
+          "think 命令合成带引用的答案，并主动指出知识盲区",
+          "Dream Cycle 后台自动去重、修引用、检测矛盾",
+          "Markdown + Git 本地存储，数据完全自主可控可重建"
+        ],
+        "summary": "GBrain 是 YC 总裁开源的 AI Agent 本地记忆系统，让 Claude Code 等智能体真正拥有跨会话长期记忆",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "知识管理"
+        ],
+        "suitable": [
+          "Claude Code / Codex / Cursor 重度用户",
+          "创业者、投资人、销售负责人",
+          "研究者与写作者",
+          "小团队知识管理负责人",
+          "AI Agent 开发者"
+        ],
+        "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。"
+      }
+    },
+    {
+      "id": "80f2cf4e-b55a-448e-a4bf-42843aee5891",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/ruvnet/RuView",
+      "repo": "ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "stars": 103142,
+      "forks": 13388,
+      "starsAdded": 203,
+      "createdAt": "2026-11-09T12:00:03.408Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude",
+          "claude-code",
+          "esp32",
+          "firmware",
+          "home-assistant",
+          "home-automation",
+          "iot",
+          "mcp",
+          "monitoring",
+          "networking",
+          "pose-estimation",
+          "react",
+          "rf",
+          "self-learning",
+          "spatial-intelligence",
+          "typescript",
+          "webassembly",
+          "wifi",
+          "wifi-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ruv.io",
+        "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. - ruvnet/RuView"
+      },
+      "summaryData": {
+        "tags": [
+          "WiFi感知",
+          "ESP32",
+          "智能家居",
+          "隐私保护",
+          "人工智能"
+        ],
+        "cover": "",
+        "title": "RuView 开源评测：把 WiFi 变成雷达的智能家居感知平台",
+        "ability": [
+          "WiFi 人体感知",
+          "无视觉隐私保护",
+          "智能家居生态接入",
+          "生命体征监测",
+          "开源端到端方案"
+        ],
+        "summary": "无需摄像头的 WiFi 感知开源平台，能通过 ESP32 检测存在、姿态和生命体征。",
+        "category": [
+          "智能硬件",
+          "AI 应用",
+          "开源项目"
+        ],
+        "suitable": [
+          "智能家居玩家",
+          "算法研究者",
+          "隐私关注用户",
+          "DIY 爱好者",
+          "养老照护开发者"
+        ],
+        "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。"
+      }
+    },
+    {
+      "id": "d3bcacf0-a04e-4678-ac0e-00f899812ce5",
+      "dateAdded": "20261109",
+      "type": "github-daily",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "repo": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "stars": 5547,
+      "forks": 272,
+      "starsAdded": 31,
+      "createdAt": "2026-11-09T12:00:03.417Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "claude",
+          "hacs",
+          "home-assistant",
+          "home-automation",
+          "llm",
+          "mcp",
+          "model-context-protocol"
+        ],
+        "license": "MIT license",
+        "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
+        "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. - homeassistant-ai/ha-mcp"
+      },
+      "summaryData": {
+        "tags": [
+          "Home Assistant",
+          "MCP",
+          "智能家居",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ha-mcp 深度评测：87 个工具把 Claude 变成你的智能家居 AI 管家",
+        "ability": [
+          "用自然语言控制 Home Assistant 设备，替代繁琐的语音指令和界面操作",
+          "让 AI 直接创建和修改自动化、脚本、仪表盘、helper 等 HA 配置",
+          "通过执行 trace 帮 AI 精准定位自动化不触发的 Bug",
+          "管理备份、插件（Add-on）、HACS、Zigbee 设备等系统级操作",
+          "提供只读模式、按工具启停、自动备份等多层安全防护机制"
+        ],
+        "summary": "ha-mcp 是一个开源 MCP 服务器，让 Claude 等 AI 客户端全面接管 Home Assistant 的控制、配置与调试，告别手写 YAML。",
+        "category": [
+          "智能家居",
+          "AI 工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "Home Assistant 重度玩家与自托管爱好者",
+          "刚入门 HA、不想啃 YAML 语法的新手",
+          "智能家居内容创作者与折腾党",
+          "追求安全模型的极客与运维人员",
+          "想用 AI 简化家务管理的普通家庭用户"
+        ],
+        "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
       }
     }
   ]
