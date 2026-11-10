@@ -102885,6 +102885,59 @@
   ],
   "20261110": [
     {
+      "id": "4f0e9e77-7ccb-4cfa-a9b7-407b17c97ef9",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 21705,
+      "forks": 1677,
+      "starsAdded": 3111,
+      "createdAt": "2026-11-09T16:00:01.927Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "339f6984-d676-4a18-9be7-d7770942d281",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -102892,9 +102945,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 108109,
-      "forks": 12527,
-      "starsAdded": 4267,
+      "stars": 108355,
+      "forks": 12549,
+      "starsAdded": 2387,
       "createdAt": "2026-11-09T16:00:01.950Z",
       "metaData": {
         "forks": "0",
@@ -102955,56 +103008,58 @@
       }
     },
     {
-      "id": "4f0e9e77-7ccb-4cfa-a9b7-407b17c97ef9",
+      "id": "13c1b345-a181-4142-85fa-f65179ea049c",
       "dateAdded": "20261110",
       "type": "github-daily",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 21270,
-      "forks": 1655,
-      "starsAdded": 3278,
-      "createdAt": "2026-11-09T16:00:01.927Z",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 191853,
+      "forks": 22540,
+      "starsAdded": 1676,
+      "createdAt": "2026-11-09T16:00:01.898Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
         ],
         "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
         "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
         ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
         "category": [
+          "AI 编程",
           "开发工具",
-          "前端开发",
-          "AI 编程"
+          "开源框架"
         ],
         "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
         ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
       }
     },
     {
@@ -103080,8 +103135,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 320259,
-      "forks": 26818,
+      "stars": 320413,
+      "forks": 26828,
       "starsAdded": 1223,
       "createdAt": "2026-11-10T11:00:02.297Z",
       "metaData": {
@@ -103124,58 +103179,65 @@
       }
     },
     {
-      "id": "13c1b345-a181-4142-85fa-f65179ea049c",
+      "id": "b94f3f6b-9b21-4c93-9dc8-e263c22f45c7",
       "dateAdded": "20261110",
       "type": "github-daily",
-      "url": "https://github.com/anthropics/skills",
-      "repo": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "repo": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
-      "stars": 191712,
-      "forks": 22529,
-      "starsAdded": 1038,
-      "createdAt": "2026-11-09T16:00:01.898Z",
+      "stars": 6366,
+      "forks": 350,
+      "starsAdded": 792,
+      "createdAt": "2026-11-09T16:00:02.009Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "agent-skills"
+          "ai",
+          "claude",
+          "hacs",
+          "home-assistant",
+          "home-automation",
+          "llm",
+          "mcp",
+          "model-context-protocol"
         ],
-        "license": "",
-        "homepage": "",
-        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+        "license": "MIT license",
+        "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
+        "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. - homeassistant-ai/ha-mcp"
       },
       "summaryData": {
         "tags": [
-          "Anthropic",
-          "Claude",
-          "Agent Skills",
+          "Home Assistant",
           "MCP",
-          "开源生态"
+          "智能家居",
+          "AI Agent",
+          "开源项目"
         ],
         "cover": "",
-        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "title": "ha-mcp 深度评测：87 个工具把 Claude 变成你的智能家居 AI 管家",
         "ability": [
-          "标准化技能定义",
-          "动态加载与组合",
-          "渐进式上下文管理",
-          "跨平台生态兼容",
-          "脚本与资源集成"
+          "用自然语言控制 Home Assistant 设备，替代繁琐的语音指令和界面操作",
+          "让 AI 直接创建和修改自动化、脚本、仪表盘、helper 等 HA 配置",
+          "通过执行 trace 帮 AI 精准定位自动化不触发的 Bug",
+          "管理备份、插件（Add-on）、HACS、Zigbee 设备等系统级操作",
+          "提供只读模式、按工具启停、自动备份等多层安全防护机制"
         ],
-        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "summary": "ha-mcp 是一个开源 MCP 服务器，让 Claude 等 AI 客户端全面接管 Home Assistant 的控制、配置与调试，告别手写 YAML。",
         "category": [
-          "AI 编程",
-          "开发工具",
-          "开源框架"
+          "智能家居",
+          "AI 工具",
+          "开发工具"
         ],
         "suitable": [
-          "AI 应用开发者",
-          "研发与 DevOps 工程师",
-          "产品与知识管理者",
-          "企业工具链负责人",
-          "Agent 架构研究者"
+          "Home Assistant 重度玩家与自托管爱好者",
+          "刚入门 HA、不想啃 YAML 语法的新手",
+          "智能家居内容创作者与折腾党",
+          "追求安全模型的极客与运维人员",
+          "想用 AI 简化家务管理的普通家庭用户"
         ],
-        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+        "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
       }
     },
     {
@@ -103186,9 +103248,9 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 48855,
-      "forks": 3386,
-      "starsAdded": 916,
+      "stars": 48940,
+      "forks": 3390,
+      "starsAdded": 775,
       "createdAt": "2026-11-09T16:00:01.994Z",
       "metaData": {
         "forks": "0",
@@ -103232,118 +103294,6 @@
       }
     },
     {
-      "id": "d01c5b8c-fc6d-470d-a3bc-994c923d3afa",
-      "dateAdded": "20261110",
-      "type": "github-daily",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "repo": "ranxianglei/billion-context",
-      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-      "language": "TypeScript",
-      "stars": 5929,
-      "forks": 449,
-      "starsAdded": 760,
-      "createdAt": "2026-11-10T11:00:02.292Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "dsh-plugin"
-        ],
-        "license": "License",
-        "homepage": "",
-        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
-      },
-      "summaryData": {
-        "tags": [
-          "上下文压缩",
-          "开源项目",
-          "AI Agent",
-          "API 代理",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
-        "ability": [
-          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
-          "T1→T2→T3 三层递进式摘要，长会话不失忆",
-          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
-          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
-          "Web 仪表盘与缓存健康诊断，可观测性强"
-        ],
-        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
-          "API 按量付费、心疼账单的开发者",
-          "使用无缓存中转站/公益站的用户",
-          "想做工具链整合的团队",
-          "想突破上下文窗口限制的极客"
-        ],
-        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
-      }
-    },
-    {
-      "id": "8c5b9d37-b2f6-47fe-9c4d-2b567f841894",
-      "dateAdded": "20261110",
-      "type": "github-daily",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "repo": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "stars": 17145,
-      "forks": 2067,
-      "starsAdded": 574,
-      "createdAt": "2026-11-09T16:00:01.959Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "mujoco",
-          "physics",
-          "robotics"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://mujoco.org",
-        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
-      },
-      "summaryData": {
-        "tags": [
-          "物理引擎",
-          "机器人仿真",
-          "强化学习",
-          "开源项目",
-          "DeepMind"
-        ],
-        "cover": "",
-        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
-        "ability": [
-          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
-          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
-          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
-          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
-          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
-        ],
-        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
-        "category": [
-          "开发工具",
-          "AI 与机器学习",
-          "科研工具"
-        ],
-        "suitable": [
-          "强化学习/机器人学研究者",
-          "具身智能与 VLA 大模型工程师",
-          "Sim2Real 落地工程师",
-          "生物力学/康复研究人员",
-          "机械臂与硬件初创团队"
-        ],
-        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
-      }
-    },
-    {
       "id": "8e3f069a-058d-47d1-8e26-9475fac1057b",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103351,9 +103301,9 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 20229,
-      "forks": 3381,
-      "starsAdded": 551,
+      "stars": 20286,
+      "forks": 3387,
+      "starsAdded": 530,
       "createdAt": "2026-11-09T16:00:01.969Z",
       "metaData": {
         "forks": "0",
@@ -103465,8 +103415,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 114756,
-      "forks": 11993,
+      "stars": 114836,
+      "forks": 12001,
       "starsAdded": 465,
       "createdAt": "2026-11-10T11:00:02.252Z",
       "metaData": {
@@ -103515,6 +103465,118 @@
           "AI工具集成商"
         ],
         "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "8c5b9d37-b2f6-47fe-9c4d-2b567f841894",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "repo": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 17182,
+      "forks": 2069,
+      "starsAdded": 453,
+      "createdAt": "2026-11-09T16:00:01.959Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
+      "id": "d01c5b8c-fc6d-470d-a3bc-994c923d3afa",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 6025,
+      "forks": 453,
+      "starsAdded": 374,
+      "createdAt": "2026-11-10T11:00:02.292Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
       }
     },
     {
@@ -103578,8 +103640,8 @@
       "repo": "tokio-rs/topcoat",
       "description": "A batteries-included framework for building web apps",
       "language": "Rust",
-      "stars": 6573,
-      "forks": 235,
+      "stars": 6616,
+      "forks": 236,
       "starsAdded": 192,
       "createdAt": "2026-11-10T11:00:02.288Z",
       "metaData": {
@@ -103631,8 +103693,8 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 11373,
-      "forks": 795,
+      "stars": 11502,
+      "forks": 806,
       "starsAdded": 184,
       "createdAt": "2026-11-10T11:00:02.278Z",
       "metaData": {
@@ -103747,68 +103809,6 @@
           "养老照护开发者"
         ],
         "description": "RuView 利用 ESP32 等硬件采集 WiFi 信号（CSI），通过 AI 算法实现非视觉的人体存在检测、姿态估计和生命体征监测。它支持 Docker 一键体验，能无缝接入 Home Assistant 和 Apple Home 等主流生态，是构建隐私友好的智能空间的强大开源工具。"
-      }
-    },
-    {
-      "id": "b94f3f6b-9b21-4c93-9dc8-e263c22f45c7",
-      "dateAdded": "20261110",
-      "type": "github-daily",
-      "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "repo": "homeassistant-ai/ha-mcp",
-      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-      "language": "Python",
-      "stars": 6303,
-      "forks": 347,
-      "starsAdded": 31,
-      "createdAt": "2026-11-09T16:00:02.009Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "claude",
-          "hacs",
-          "home-assistant",
-          "home-automation",
-          "llm",
-          "mcp",
-          "model-context-protocol"
-        ],
-        "license": "MIT license",
-        "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
-        "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. - homeassistant-ai/ha-mcp"
-      },
-      "summaryData": {
-        "tags": [
-          "Home Assistant",
-          "MCP",
-          "智能家居",
-          "AI Agent",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "ha-mcp 深度评测：87 个工具把 Claude 变成你的智能家居 AI 管家",
-        "ability": [
-          "用自然语言控制 Home Assistant 设备，替代繁琐的语音指令和界面操作",
-          "让 AI 直接创建和修改自动化、脚本、仪表盘、helper 等 HA 配置",
-          "通过执行 trace 帮 AI 精准定位自动化不触发的 Bug",
-          "管理备份、插件（Add-on）、HACS、Zigbee 设备等系统级操作",
-          "提供只读模式、按工具启停、自动备份等多层安全防护机制"
-        ],
-        "summary": "ha-mcp 是一个开源 MCP 服务器，让 Claude 等 AI 客户端全面接管 Home Assistant 的控制、配置与调试，告别手写 YAML。",
-        "category": [
-          "智能家居",
-          "AI 工具",
-          "开发工具"
-        ],
-        "suitable": [
-          "Home Assistant 重度玩家与自托管爱好者",
-          "刚入门 HA、不想啃 YAML 语法的新手",
-          "智能家居内容创作者与折腾党",
-          "追求安全模型的极客与运维人员",
-          "想用 AI 简化家务管理的普通家庭用户"
-        ],
-        "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
       }
     }
   ]
