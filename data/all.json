@@ -1,6 +1,112 @@
 {
   "all": [
     {
+      "id": "c989cb8b-7dca-4084-8ee3-4b66cf8628d8",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "domain": "github.com",
+      "repo": "tokio-rs/topcoat",
+      "description": "Topcoat 是 Tokio 创始人 Carl Lerche 主导的全栈 Rust Web 框架（v0.9/v0.10），对标 Rails 与 Phoenix LiveView。它把传统“前端+REST API+后端”三层结构压扁为一堆带类型的 async 函数，通过跨编译 Rust 表达式到 JS 实现无需 WASM 的响应式交互。目前仍处早期阶段，API 会有破坏性变更，适合试用与学习，生产环境需谨慎。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-10T11:07:02.612Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A batteries-included framework for building web apps - tokio-rs/topcoat"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "Web框架",
+          "Tokio",
+          "全栈开发",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Topcoat 深度评测：Tokio 官方出品的“Rust 版 Rails”全栈 Web 框架",
+        "ability": [
+          "batteries-included 全栈开发：路由、视图、ORM、资产、会话开箱即用",
+          "无 WASM 响应式：view! 宏中的 $(...) 表达式自动跨编译为 JavaScript，客户端运行时仅约 15KB",
+          "Signal + Shard 双原语：浏览器本地响应与服务端片段重渲染分工明确，支持 WebSocket 服务器推送",
+          "集成 Toasty 异步 ORM：宏驱动 API，把 ActiveRecord 体验用 Rust 类型系统重新发明",
+          "模块化路由与 Tailwind/shadcn 风格组件库：无需 Node 环境，CLI 一键生成项目"
+        ],
+        "summary": "Tokio 团队打造的 batteries-included 全栈 Rust Web 框架，用服务端渲染 + Rust 表达式跨编译 JS 的独特方式，让 Rust 写 Web 应用像 Rails 一样高效。",
+        "category": [
+          "开发工具",
+          "Web 开发",
+          "Rust 生态"
+        ],
+        "suitable": [
+          "已有 Rust 后端团队，需要做管理后台、内部工具",
+          "Rails/Django/Laravel 老兵想迁移到 Rust 生态",
+          "依赖 AI 编程协作的开发者，强约定让 LLM 生成代码更准",
+          "追求低内存占用（约 20MB RAM）的 SaaS 团队",
+          "想要 SSR + 响应式但不想引入 WASM 工具链的团队"
+        ],
+        "description": "Topcoat 是 Tokio 创始人 Carl Lerche 主导的全栈 Rust Web 框架（v0.9/v0.10），对标 Rails 与 Phoenix LiveView。它把传统“前端+REST API+后端”三层结构压扁为一堆带类型的 async 函数，通过跨编译 Rust 表达式到 JS 实现无需 WASM 的响应式交互。目前仍处早期阶段，API 会有破坏性变更，适合试用与学习，生产环境需谨慎。"
+      },
+      "type": "project",
+      "dateAdded": "20261110"
+    },
+    {
+      "id": "3d895acd-4354-4e8d-b206-89a8b654e800",
+      "url": "https://github.com/we-promise/sure",
+      "domain": "github.com",
+      "repo": "we-promise/sure",
+      "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-10T11:03:49.752Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      },
+      "type": "project",
+      "dateAdded": "20261110"
+    },
+    {
       "id": "90ccba10-506d-4b6b-b250-81d6cc75a37b",
       "url": "https://github.com/homeassistant-ai/ha-mcp",
       "domain": "github.com",

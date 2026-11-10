@@ -102892,8 +102892,8 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 107939,
-      "forks": 12486,
+      "stars": 108109,
+      "forks": 12527,
       "starsAdded": 4267,
       "createdAt": "2026-11-09T16:00:01.950Z",
       "metaData": {
@@ -102962,8 +102962,8 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 21092,
-      "forks": 1608,
+      "stars": 21270,
+      "forks": 1655,
       "starsAdded": 3278,
       "createdAt": "2026-11-09T16:00:01.927Z",
       "metaData": {
@@ -103073,6 +103073,57 @@
       }
     },
     {
+      "id": "0a1e231e-8d76-40ce-a608-f9309a7b408e",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 320259,
+      "forks": 26818,
+      "starsAdded": 1223,
+      "createdAt": "2026-11-10T11:00:02.297Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
+        "ability": [
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
+        ],
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
+        "category": [
+          "AI 编程",
+          "开发者工具"
+        ],
+        "suitable": [
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
+        ],
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
+      }
+    },
+    {
       "id": "13c1b345-a181-4142-85fa-f65179ea049c",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103080,8 +103131,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 191550,
-      "forks": 22490,
+      "stars": 191712,
+      "forks": 22529,
       "starsAdded": 1038,
       "createdAt": "2026-11-09T16:00:01.898Z",
       "metaData": {
@@ -103135,8 +103186,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 48797,
-      "forks": 3330,
+      "stars": 48855,
+      "forks": 3386,
       "starsAdded": 916,
       "createdAt": "2026-11-09T16:00:01.994Z",
       "metaData": {
@@ -103181,6 +103232,61 @@
       }
     },
     {
+      "id": "d01c5b8c-fc6d-470d-a3bc-994c923d3afa",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "repo": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 5929,
+      "forks": 449,
+      "starsAdded": 760,
+      "createdAt": "2026-11-10T11:00:02.292Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "dsh-plugin"
+        ],
+        "license": "License",
+        "homepage": "",
+        "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need - ranxianglei/billion-context"
+      },
+      "summaryData": {
+        "tags": [
+          "上下文压缩",
+          "开源项目",
+          "AI Agent",
+          "API 代理",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "billion-context 深度评测：让 AI 自己折叠记忆的上下文压缩代理",
+        "ability": [
+          "让模型自主决定何时压缩/解压上下文，历史可搜索可还原",
+          "T1→T2→T3 三层递进式摘要，长会话不失忆",
+          "Prefix Cache 友好，缓存命中率 95%+，节省约 5 倍 token",
+          "支持 Claude Code、Codex 等 20+ 客户端一行接入",
+          "Web 仪表盘与缓存健康诊断，可观测性强"
+        ],
+        "summary": "一个架在 AI Agent 与模型 API 之间的上下文压缩代理，让模型自主折叠历史对话，实现超长会话与约 5 倍 token 节省",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度长会话 AI 编码用户（Claude Code/Codex 等）",
+          "API 按量付费、心疼账单的开发者",
+          "使用无缓存中转站/公益站的用户",
+          "想做工具链整合的团队",
+          "想突破上下文窗口限制的极客"
+        ],
+        "description": "billion-context 是一个架在 AI 编码 Agent 与模型 API 之间的本地压缩代理，让模型自主折叠历史对话、按需还原，配合三层递进式摘要实现超长会话不失忆。官方数据显示可节省约 5 倍 token，缓存命中率超 95%，支持 20+ 客户端一行接入。"
+      }
+    },
+    {
       "id": "8c5b9d37-b2f6-47fe-9c4d-2b567f841894",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103188,8 +103294,8 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 17108,
-      "forks": 2025,
+      "stars": 17145,
+      "forks": 2067,
       "starsAdded": 574,
       "createdAt": "2026-11-09T16:00:01.959Z",
       "metaData": {
@@ -103245,8 +103351,8 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 20197,
-      "forks": 3341,
+      "stars": 20229,
+      "forks": 3381,
       "starsAdded": 551,
       "createdAt": "2026-11-09T16:00:01.969Z",
       "metaData": {
@@ -103352,6 +103458,66 @@
       }
     },
     {
+      "id": "aebacbdf-80bb-43d4-9df2-caaa114c1d21",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 114756,
+      "forks": 11993,
+      "starsAdded": 465,
+      "createdAt": "2026-11-10T11:00:02.252Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
       "id": "813f9874-734e-439d-a622-13d7c1e96b87",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103402,6 +103568,112 @@
           "AI Agent 开发者"
         ],
         "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。"
+      }
+    },
+    {
+      "id": "6ef6115b-bcb3-4db6-9486-b95715ce2520",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "repo": "tokio-rs/topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "language": "Rust",
+      "stars": 6573,
+      "forks": 235,
+      "starsAdded": 192,
+      "createdAt": "2026-11-10T11:00:02.288Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A batteries-included framework for building web apps - tokio-rs/topcoat"
+      },
+      "summaryData": {
+        "tags": [
+          "Rust",
+          "Web框架",
+          "Tokio",
+          "全栈开发",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Topcoat 深度评测：Tokio 官方出品的“Rust 版 Rails”全栈 Web 框架",
+        "ability": [
+          "batteries-included 全栈开发：路由、视图、ORM、资产、会话开箱即用",
+          "无 WASM 响应式：view! 宏中的 $(...) 表达式自动跨编译为 JavaScript，客户端运行时仅约 15KB",
+          "Signal + Shard 双原语：浏览器本地响应与服务端片段重渲染分工明确，支持 WebSocket 服务器推送",
+          "集成 Toasty 异步 ORM：宏驱动 API，把 ActiveRecord 体验用 Rust 类型系统重新发明",
+          "模块化路由与 Tailwind/shadcn 风格组件库：无需 Node 环境，CLI 一键生成项目"
+        ],
+        "summary": "Tokio 团队打造的 batteries-included 全栈 Rust Web 框架，用服务端渲染 + Rust 表达式跨编译 JS 的独特方式，让 Rust 写 Web 应用像 Rails 一样高效。",
+        "category": [
+          "开发工具",
+          "Web 开发",
+          "Rust 生态"
+        ],
+        "suitable": [
+          "已有 Rust 后端团队，需要做管理后台、内部工具",
+          "Rails/Django/Laravel 老兵想迁移到 Rust 生态",
+          "依赖 AI 编程协作的开发者，强约定让 LLM 生成代码更准",
+          "追求低内存占用（约 20MB RAM）的 SaaS 团队",
+          "想要 SSR + 响应式但不想引入 WASM 工具链的团队"
+        ],
+        "description": "Topcoat 是 Tokio 创始人 Carl Lerche 主导的全栈 Rust Web 框架（v0.9/v0.10），对标 Rails 与 Phoenix LiveView。它把传统“前端+REST API+后端”三层结构压扁为一堆带类型的 async 函数，通过跨编译 Rust 表达式到 JS 实现无需 WASM 的响应式交互。目前仍处早期阶段，API 会有破坏性变更，适合试用与学习，生产环境需谨慎。"
+      }
+    },
+    {
+      "id": "8a501f44-1743-4dd4-96d2-0fddd0413499",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 11373,
+      "forks": 795,
+      "starsAdded": 184,
+      "createdAt": "2026-11-10T11:00:02.278Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
       }
     },
     {
@@ -103485,8 +103757,8 @@
       "repo": "homeassistant-ai/ha-mcp",
       "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
-      "stars": 6240,
-      "forks": 315,
+      "stars": 6303,
+      "forks": 347,
       "starsAdded": 31,
       "createdAt": "2026-11-09T16:00:02.009Z",
       "metaData": {
