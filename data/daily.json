@@ -102892,9 +102892,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 106914,
-      "forks": 12374,
-      "starsAdded": 4294,
+      "stars": 106967,
+      "forks": 12373,
+      "starsAdded": 4267,
       "createdAt": "2026-11-09T16:00:01.950Z",
       "metaData": {
         "forks": "0",
@@ -102962,9 +102962,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 19850,
-      "forks": 1511,
-      "starsAdded": 3324,
+      "stars": 19954,
+      "forks": 1521,
+      "starsAdded": 3278,
       "createdAt": "2026-11-09T16:00:01.927Z",
       "metaData": {
         "forks": "0",
@@ -103015,9 +103015,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 19608,
-      "forks": 2688,
-      "starsAdded": 1589,
+      "stars": 19641,
+      "forks": 2692,
+      "starsAdded": 1587,
       "createdAt": "2026-11-09T16:00:02.013Z",
       "metaData": {
         "forks": "0",
@@ -103080,9 +103080,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 190885,
-      "forks": 22437,
-      "starsAdded": 1052,
+      "stars": 190925,
+      "forks": 22438,
+      "starsAdded": 1038,
       "createdAt": "2026-11-09T16:00:01.898Z",
       "metaData": {
         "forks": "0",
@@ -103135,9 +103135,9 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 48417,
+      "stars": 48441,
       "forks": 3299,
-      "starsAdded": 914,
+      "starsAdded": 916,
       "createdAt": "2026-11-09T16:00:01.994Z",
       "metaData": {
         "forks": "0",
@@ -103188,9 +103188,9 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 16878,
+      "stars": 16892,
       "forks": 1991,
-      "starsAdded": 579,
+      "starsAdded": 574,
       "createdAt": "2026-11-09T16:00:01.959Z",
       "metaData": {
         "forks": "0",
@@ -103245,9 +103245,9 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 19984,
-      "forks": 3308,
-      "starsAdded": 560,
+      "stars": 19999,
+      "forks": 3310,
+      "starsAdded": 551,
       "createdAt": "2026-11-09T16:00:01.969Z",
       "metaData": {
         "forks": "0",
@@ -103298,9 +103298,9 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 68791,
-      "forks": 56376,
-      "starsAdded": 505,
+      "stars": 68814,
+      "forks": 56382,
+      "starsAdded": 506,
       "createdAt": "2026-11-09T16:00:02.006Z",
       "metaData": {
         "forks": "0",
@@ -103352,6 +103352,59 @@
       }
     },
     {
+      "id": "813f9874-734e-439d-a622-13d7c1e96b87",
+      "dateAdded": "20261110",
+      "type": "github-daily",
+      "url": "https://github.com/garrytan/gbrain",
+      "repo": "garrytan/gbrain",
+      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+      "language": "TypeScript",
+      "stars": 32122,
+      "forks": 4764,
+      "starsAdded": 216,
+      "createdAt": "2026-11-09T16:00:01.976Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain. Contribute to garrytan/gbrain development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "MCP",
+          "知识库",
+          "开源项目",
+          "本地优先"
+        ],
+        "cover": "",
+        "title": "GBrain 深度评测：YC 总裁 Garry Tan 开源的 AI Agent 记忆系统",
+        "ability": [
+          "MCP 原生接入，支持 Claude Code / Codex / Cursor 等主流 Agent",
+          "零 LLM 调用自动构建类型化知识图谱，写入零 token 成本",
+          "think 命令合成带引用的答案，并主动指出知识盲区",
+          "Dream Cycle 后台自动去重、修引用、检测矛盾",
+          "Markdown + Git 本地存储，数据完全自主可控可重建"
+        ],
+        "summary": "GBrain 是 YC 总裁开源的 AI Agent 本地记忆系统，让 Claude Code 等智能体真正拥有跨会话长期记忆",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "知识管理"
+        ],
+        "suitable": [
+          "Claude Code / Codex / Cursor 重度用户",
+          "创业者、投资人、销售负责人",
+          "研究者与写作者",
+          "小团队知识管理负责人",
+          "AI Agent 开发者"
+        ],
+        "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。"
+      }
+    },
+    {
       "id": "b4f6b2ac-f9f0-4ffd-b520-299c6586f9af",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103359,9 +103412,9 @@
       "repo": "ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
-      "stars": 103405,
-      "forks": 13400,
-      "starsAdded": 245,
+      "stars": 103424,
+      "forks": 13403,
+      "starsAdded": 172,
       "createdAt": "2026-11-09T16:00:02.002Z",
       "metaData": {
         "forks": "0",
@@ -103425,59 +103478,6 @@
       }
     },
     {
-      "id": "813f9874-734e-439d-a622-13d7c1e96b87",
-      "dateAdded": "20261110",
-      "type": "github-daily",
-      "url": "https://github.com/garrytan/gbrain",
-      "repo": "garrytan/gbrain",
-      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
-      "language": "TypeScript",
-      "stars": 32105,
-      "forks": 4761,
-      "starsAdded": 215,
-      "createdAt": "2026-11-09T16:00:01.976Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain. Contribute to garrytan/gbrain development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "AI Agent",
-          "MCP",
-          "知识库",
-          "开源项目",
-          "本地优先"
-        ],
-        "cover": "",
-        "title": "GBrain 深度评测：YC 总裁 Garry Tan 开源的 AI Agent 记忆系统",
-        "ability": [
-          "MCP 原生接入，支持 Claude Code / Codex / Cursor 等主流 Agent",
-          "零 LLM 调用自动构建类型化知识图谱，写入零 token 成本",
-          "think 命令合成带引用的答案，并主动指出知识盲区",
-          "Dream Cycle 后台自动去重、修引用、检测矛盾",
-          "Markdown + Git 本地存储，数据完全自主可控可重建"
-        ],
-        "summary": "GBrain 是 YC 总裁开源的 AI Agent 本地记忆系统，让 Claude Code 等智能体真正拥有跨会话长期记忆",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "知识管理"
-        ],
-        "suitable": [
-          "Claude Code / Codex / Cursor 重度用户",
-          "创业者、投资人、销售负责人",
-          "研究者与写作者",
-          "小团队知识管理负责人",
-          "AI Agent 开发者"
-        ],
-        "description": "GBrain 是 YC 总裁 Garry Tan 开源的 Agent 记忆系统，通过分层丰富、零成本图抽取、Dream Cycle 自进化三层架构实现知识复利。本地优先、MIT 协议、Markdown 存储，发布 24 小时斩获 5K stars，目前累计超 2.6 万 stars，是 Agent 记忆赛道最热门的开源项目。"
-      }
-    },
-    {
       "id": "b94f3f6b-9b21-4c93-9dc8-e263c22f45c7",
       "dateAdded": "20261110",
       "type": "github-daily",
@@ -103485,8 +103485,8 @@
       "repo": "homeassistant-ai/ha-mcp",
       "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
-      "stars": 5911,
-      "forks": 292,
+      "stars": 5945,
+      "forks": 293,
       "starsAdded": 31,
       "createdAt": "2026-11-09T16:00:02.009Z",
       "metaData": {
