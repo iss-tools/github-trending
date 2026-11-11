@@ -103813,9 +103813,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 24074,
-      "forks": 1880,
-      "starsAdded": 3108,
+      "stars": 24299,
+      "forks": 1896,
+      "starsAdded": 2842,
       "createdAt": "2026-11-10T16:00:02.373Z",
       "metaData": {
         "forks": "0",
@@ -104035,6 +104035,59 @@
       }
     },
     {
+      "id": "f957af10-dc50-4021-b1fc-05e7e8fcb5ad",
+      "dateAdded": "20261111",
+      "type": "github-daily",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 12575,
+      "forks": 932,
+      "starsAdded": 1079,
+      "createdAt": "2026-11-10T16:00:02.429Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
       "id": "ed61a743-479d-4bb0-9f0a-5880d0d7867b",
       "dateAdded": "20261111",
       "type": "github-daily",
@@ -104042,8 +104095,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 69686,
-      "forks": 56740,
+      "stars": 69852,
+      "forks": 56765,
       "starsAdded": 960,
       "createdAt": "2026-11-11T11:00:01.776Z",
       "metaData": {
@@ -104096,6 +104149,119 @@
       }
     },
     {
+      "id": "66c75570-c67e-434e-a554-c697d46f3a5d",
+      "dateAdded": "20261111",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 115612,
+      "forks": 12126,
+      "starsAdded": 788,
+      "createdAt": "2026-11-10T16:00:02.414Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "c5348c88-476c-4aca-a6dd-419a39929965",
+      "dateAdded": "20261111",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 49632,
+      "forks": 3473,
+      "starsAdded": 712,
+      "createdAt": "2026-11-10T16:00:02.438Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
       "id": "fbdeaeea-1c53-4b22-80e2-7ce78151a967",
       "dateAdded": "20261111",
       "type": "github-daily",
@@ -104103,9 +104269,9 @@
       "repo": "homeassistant-ai/ha-mcp",
       "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
-      "stars": 6936,
-      "forks": 442,
-      "starsAdded": 790,
+      "stars": 7015,
+      "forks": 445,
+      "starsAdded": 640,
       "createdAt": "2026-11-10T16:00:02.435Z",
       "metaData": {
         "forks": "0",
@@ -104155,59 +104321,6 @@
           "想用 AI 简化家务管理的普通家庭用户"
         ],
         "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
-      }
-    },
-    {
-      "id": "c5348c88-476c-4aca-a6dd-419a39929965",
-      "dateAdded": "20261111",
-      "type": "github-daily",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 49554,
-      "forks": 3470,
-      "starsAdded": 780,
-      "createdAt": "2026-11-10T16:00:02.438Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {
@@ -104261,66 +104374,6 @@
           "金融、法律等需要智能文档分析的行业从业者"
         ],
         "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
-      }
-    },
-    {
-      "id": "66c75570-c67e-434e-a554-c697d46f3a5d",
-      "dateAdded": "20261111",
-      "type": "github-daily",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "repo": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "stars": 115518,
-      "forks": 12118,
-      "starsAdded": 465,
-      "createdAt": "2026-11-10T16:00:02.414Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "antigravity",
-          "claude-code",
-          "codex",
-          "cursor",
-          "skills"
-        ],
-        "license": "MIT license",
-        "homepage": "https://skills.addy.ie",
-        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI技能",
-          "TDD",
-          "代码审查",
-          "工作流"
-        ],
-        "cover": "",
-        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
-        "ability": [
-          "全生命周期流程覆盖",
-          "TDD自动化支持",
-          "多维度代码审查",
-          "跨AI工具兼容",
-          "反合理化机制"
-        ],
-        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率提升"
-        ],
-        "suitable": [
-          "个人开发者",
-          "小型技术团队",
-          "AI编程重度用户",
-          "追求工程规范的开发者",
-          "AI工具集成商"
-        ],
-        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
       }
     },
     {
@@ -104441,7 +104494,7 @@
       "repo": "shadcn/improve",
       "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
       "language": "",
-      "stars": 10353,
+      "stars": 10486,
       "forks": 427,
       "starsAdded": 333,
       "createdAt": "2026-11-11T11:00:01.835Z",
@@ -104539,59 +104592,6 @@
       }
     },
     {
-      "id": "f957af10-dc50-4021-b1fc-05e7e8fcb5ad",
-      "dateAdded": "20261111",
-      "type": "github-daily",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 12444,
-      "forks": 921,
-      "starsAdded": 159,
-      "createdAt": "2026-11-10T16:00:02.429Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
       "id": "ef2ab609-c893-48e9-825f-0bbd88d61498",
       "dateAdded": "20261111",
       "type": "github-daily",
@@ -104599,8 +104599,8 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "",
       "language": "TypeScript",
-      "stars": 1388,
-      "forks": 126,
+      "stars": 1475,
+      "forks": 130,
       "starsAdded": 133,
       "createdAt": "2026-11-11T11:00:01.819Z",
       "metaData": {
@@ -104652,8 +104652,8 @@
       "repo": "TheAlgorithms/Java",
       "description": "All Algorithms implemented in Java",
       "language": "Java",
-      "stars": 66838,
-      "forks": 21488,
+      "stars": 66888,
+      "forks": 21491,
       "starsAdded": 39,
       "createdAt": "2026-11-11T11:00:01.889Z",
       "metaData": {
@@ -104716,8 +104716,8 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 11378,
-      "forks": 914,
+      "stars": 11444,
+      "forks": 916,
       "starsAdded": 20,
       "createdAt": "2026-11-11T11:00:01.866Z",
       "metaData": {
