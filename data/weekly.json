@@ -26178,8 +26178,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 69557,
-      "forks": 4596,
+      "stars": 69798,
+      "forks": 4622,
       "starsAdded": 10967,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
@@ -26230,8 +26230,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 321170,
-      "forks": 26928,
+      "stars": 321452,
+      "forks": 26944,
       "starsAdded": 9872,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
@@ -26281,8 +26281,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 11550,
-      "forks": 953,
+      "stars": 11648,
+      "forks": 956,
       "starsAdded": 9621,
       "createdAt": "2026-11-08T18:00:03.599Z",
       "metaData": {
@@ -26334,8 +26334,8 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 21558,
-      "forks": 1602,
+      "stars": 21713,
+      "forks": 1613,
       "starsAdded": 9502,
       "createdAt": "2026-11-09T12:00:05.698Z",
       "metaData": {
@@ -26400,8 +26400,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 20810,
-      "forks": 2888,
+      "stars": 20968,
+      "forks": 2916,
       "starsAdded": 8951,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
@@ -26465,8 +26465,8 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 101266,
-      "forks": 10565,
+      "stars": 101406,
+      "forks": 10575,
       "starsAdded": 7291,
       "createdAt": "2026-11-08T18:00:03.962Z",
       "metaData": {
@@ -26592,8 +26592,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 192558,
-      "forks": 22668,
+      "stars": 192782,
+      "forks": 22682,
       "starsAdded": 5014,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
@@ -26845,8 +26845,8 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 38151,
-      "forks": 4975,
+      "stars": 38253,
+      "forks": 4983,
       "starsAdded": 3730,
       "createdAt": "2026-11-08T18:00:03.902Z",
       "metaData": {
@@ -26911,8 +26911,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 49407,
-      "forks": 3460,
+      "stars": 49554,
+      "forks": 3470,
       "starsAdded": 3606,
       "createdAt": "2026-11-08T18:00:03.966Z",
       "metaData": {
@@ -27024,6 +27024,134 @@
       }
     },
     {
+      "id": "8c1ba88b-3146-4298-b947-42585a2a439e",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/zed-industries/zed",
+      "repo": "zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars": 94729,
+      "forks": 11630,
+      "starsAdded": 2262,
+      "createdAt": "2026-11-11T11:00:03.795Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://zed.dev",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
+      },
+      "summaryData": {
+        "tags": [
+          "代码编辑器",
+          "Rust",
+          "开源项目",
+          "GPU 加速",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
+        "ability": [
+          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
+          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
+          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
+          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
+          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
+        ],
+        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Rust/Go/Python/TypeScript 等语言的开发者",
+          "受够 VS Code 卡顿与高内存占用的用户",
+          "需要远程结对编程的协作团队",
+          "想省去配置成本的 Vim/Neovim 老用户",
+          "AI Agent 重度使用与工作流研究者"
+        ],
+        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
+      }
+    },
+    {
+      "id": "4aa2be20-1ade-4d0f-a36b-b0286695af45",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/herdrdev/herdr",
+      "repo": "herdrdev/herdr",
+      "description": "the runtime your coding agents live on",
+      "language": "Rust",
+      "stars": 50132,
+      "forks": 4052,
+      "starsAdded": 2196,
+      "createdAt": "2026-11-11T11:00:03.814Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-orchestration",
+          "ai",
+          "ai-agents",
+          "claude-code",
+          "cli",
+          "codex",
+          "coding-agents",
+          "developer-tools",
+          "devtools",
+          "multiplexer",
+          "rust",
+          "terminal",
+          "terminal-multiplexer",
+          "terminal-ui",
+          "tmux",
+          "tui",
+          "workspace-manager"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://herdr.dev",
+        "description": "the runtime your coding agents live on. Contribute to herdrdev/herdr development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "终端工具",
+          "开源项目",
+          "Rust",
+          "tmux替代"
+        ],
+        "cover": "",
+        "title": "Herdr 深度评测：AI Agent 时代的终端运行时，tmux 的下一代替代品",
+        "ability": [
+          "持久化终端会话：断网、关机、重启后工作现场完整恢复",
+          "实时感知 Agent 状态：一眼看清哪个 Agent 在工作、被阻塞还是已完成",
+          "Agent 原生编排：通过 CLI 和 Socket API 让 Agent 互相启动、派活、等待、汇报",
+          "多机统一管理：本地与 SSH 远程机器在同一窗口操控",
+          "丰富插件生态：千级插件支持代码评审、token 用量监控、手机远程指挥等扩展"
+        ],
+        "summary": "一个用 Rust 编写的 AI Agent 终端运行时，让你同时管理十几个 AI 编码 Agent，还能让它们互相派活协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "同时运行 3 个以上 AI Agent 的资深开发者",
+          "VPS / 自托管重度用户",
+          "想做多 Agent 编排的工程师",
+          "需要手机远程接管任务的移动办公者",
+          "关注终端协议演进的工具作者"
+        ],
+        "description": "Herdr 是 2026 年加入 YC 的 Rust 开源项目，单二进制仅约 10MB，零依赖无遥测。它专为多 AI Agent 并行开发而生：让 Claude Code、Codex 等 Agent 在持久化终端中同时运行，实时感知各自状态，并支持 Agent 间互相派活协作。上线 5 个月斩获近 5 万 Stars，被誉为 AI 时代的 tmux。"
+      }
+    },
+    {
       "id": "a4a1b36c-69e9-4c3e-90b4-df7341ff287f",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27079,6 +27207,61 @@
           "追求终端效率的极客"
         ],
         "description": "Worktrunk 是一款基于 Rust 的 CLI 工具，将繁琐的 Git Worktree 操作封装为简单的命令。它支持路径模板、Hooks 自动化、LLM 提交信息及构建缓存共享，完美适配 Claude Code 等 AI 代理的并行工作流，显著提升多任务开发效率。"
+      }
+    },
+    {
+      "id": "a10739f7-8c0f-4635-a9b6-e59673c69825",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/google/skills",
+      "repo": "google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 23851,
+      "forks": 1991,
+      "starsAdded": 2024,
+      "createdAt": "2026-11-11T11:00:03.805Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "google",
+          "googlecloud",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Agent Skills for Google products and technologies. Contribute to google/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Google",
+          "AI Agent",
+          "GitHub",
+          "开源",
+          "DevOps"
+        ],
+        "cover": "",
+        "title": "Google 官方 Agent 技能包",
+        "ability": [
+          "提供 Google 生态预置技能",
+          "一键集成 Claude Code 等工具",
+          "覆盖开发运维数据全链路",
+          "官方权威与开源协议"
+        ],
+        "summary": "Google 官方提供的 AI 技能包，一键集成 GCP/Android 等知识到 AI 助手，提升开发效率。",
+        "category": [
+          "AI 编程",
+          "开发者工具",
+          "云服务"
+        ],
+        "suitable": [
+          "Google 技术栈工程师",
+          "数据/平台工程师",
+          "前端/客户端开发者",
+          "DevOps/SRE"
+        ],
+        "description": "这是 Google 推出的开源技能合集，整合了云平台、移动开发、数据分析等领域的官方最佳实践。它能被 Claude Code 等 AI 工具直接调用，让助手更懂 Google 产品，从而更精准地完成配置、排障和代码生成任务。"
       }
     },
     {
@@ -27313,6 +27496,63 @@
           "需要精准屏幕共享的内容创作者"
         ],
         "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      }
+    },
+    {
+      "id": "14311865-e588-451d-a7da-8c41894dce33",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "repo": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 17559,
+      "forks": 2160,
+      "starsAdded": 1130,
+      "createdAt": "2026-11-11T11:00:03.809Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
       }
     }
   ]

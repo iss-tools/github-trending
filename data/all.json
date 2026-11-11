@@ -1,6 +1,383 @@
 {
   "all": [
     {
+      "id": "9832f01e-cfe2-47d0-8c8a-b6110d73c4ee",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "domain": "github.com",
+      "repo": "Vincentwei1021/video-shotcraft",
+      "description": "video-shotcraft 是一个 Apache-2.0 开源 Skill，安装到 Claude Code/Codex 后，AI 会先采集你的真实页面截图并生成分镜，再按 124 张镜头配方卡用 Remotion 代码逐帧绘制 1080P 电影感宣传片。它不是视频生成模型，核心价值在于把动效师的品味工程化为可复用指令集，交付物可人工继续修改。注意：4 人以上公司需支付 Remotion 商用许可，渲染需固定 --concurrency=1 避免伪影。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:22:38.139Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "ai-video",
+          "claude-code",
+          "claude-code-skills",
+          "claude-skills",
+          "codex",
+          "motion-design",
+          "motion-graphics",
+          "product-video",
+          "promo-video",
+          "remotion",
+          "video-generation",
+          "video-production"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://vincentwei1021.github.io/video-shotcraft/",
+        "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export. - Vincentwei1021/video-shotcraft"
+      },
+      "summaryData": {
+        "tags": [
+          "video-shotcraft",
+          "Claude Code",
+          "Remotion",
+          "开源项目",
+          "AI 视频"
+        ],
+        "cover": "",
+        "title": "video-shotcraft 深度评测：让 AI 用代码拍出电影感产品宣传片",
+        "ability": [
+          "124 张电影感镜头配方卡（运镜、转场、字卡、数据展示等 10 大类）",
+          "六阶段生产流水线：素材采集→视觉方向→分镜审核→镜头构建→声音设计→终检验收",
+          "基于真实产品页面截图的代码级确定性渲染，文字锐利、可进版本管理",
+          "交付不只是 MP4：含完整 Remotion 工程、Motion Workbench 编辑器与剪映草稿",
+          "自动完成 BGM 节拍对齐与音效编排，产出 1080P 成片最快约 35 分钟"
+        ],
+        "summary": "一个安装到 Claude Code 的开源 Skill，把顶级 SaaS 宣传片的镜头语言拆成 124 张配方卡，让 AI 用代码自动产出可二次编辑的电影感产品宣传片",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "视频创作"
+        ],
+        "suitable": [
+          "独立开发者与 SaaS 团队（缺动效预算但需要专业宣传片）",
+          "AI 编程玩家（Claude Code / Codex 用户，想探索 Skill 边界）",
+          "想系统学习镜头语言的视频创作者（124 张卡即活教材）",
+          "3 人以内小团队（Remotion 可免费商用，几乎零成本）",
+          "国内团队（支持 AtomGit 镜像与剪映后期流程）"
+        ],
+        "description": "video-shotcraft 是一个 Apache-2.0 开源 Skill，安装到 Claude Code/Codex 后，AI 会先采集你的真实页面截图并生成分镜，再按 124 张镜头配方卡用 Remotion 代码逐帧绘制 1080P 电影感宣传片。它不是视频生成模型，核心价值在于把动效师的品味工程化为可复用指令集，交付物可人工继续修改。注意：4 人以上公司需支付 Remotion 商用许可，渲染需固定 --concurrency=1 避免伪影。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
+      "id": "f7396127-e347-484b-80e2-7158e777e286",
+      "url": "https://github.com/herdrdev/herdr",
+      "domain": "github.com",
+      "repo": "herdrdev/herdr",
+      "description": "Herdr 是 2026 年加入 YC 的 Rust 开源项目，单二进制仅约 10MB，零依赖无遥测。它专为多 AI Agent 并行开发而生：让 Claude Code、Codex 等 Agent 在持久化终端中同时运行，实时感知各自状态，并支持 Agent 间互相派活协作。上线 5 个月斩获近 5 万 Stars，被誉为 AI 时代的 tmux。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:15:56.979Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-orchestration",
+          "ai",
+          "ai-agents",
+          "claude-code",
+          "cli",
+          "codex",
+          "coding-agents",
+          "developer-tools",
+          "devtools",
+          "multiplexer",
+          "rust",
+          "terminal",
+          "terminal-multiplexer",
+          "terminal-ui",
+          "tmux",
+          "tui",
+          "workspace-manager"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://herdr.dev",
+        "description": "the runtime your coding agents live on. Contribute to herdrdev/herdr development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "终端工具",
+          "开源项目",
+          "Rust",
+          "tmux替代"
+        ],
+        "cover": "",
+        "title": "Herdr 深度评测：AI Agent 时代的终端运行时，tmux 的下一代替代品",
+        "ability": [
+          "持久化终端会话：断网、关机、重启后工作现场完整恢复",
+          "实时感知 Agent 状态：一眼看清哪个 Agent 在工作、被阻塞还是已完成",
+          "Agent 原生编排：通过 CLI 和 Socket API 让 Agent 互相启动、派活、等待、汇报",
+          "多机统一管理：本地与 SSH 远程机器在同一窗口操控",
+          "丰富插件生态：千级插件支持代码评审、token 用量监控、手机远程指挥等扩展"
+        ],
+        "summary": "一个用 Rust 编写的 AI Agent 终端运行时，让你同时管理十几个 AI 编码 Agent，还能让它们互相派活协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "同时运行 3 个以上 AI Agent 的资深开发者",
+          "VPS / 自托管重度用户",
+          "想做多 Agent 编排的工程师",
+          "需要手机远程接管任务的移动办公者",
+          "关注终端协议演进的工具作者"
+        ],
+        "description": "Herdr 是 2026 年加入 YC 的 Rust 开源项目，单二进制仅约 10MB，零依赖无遥测。它专为多 AI Agent 并行开发而生：让 Claude Code、Codex 等 Agent 在持久化终端中同时运行，实时感知各自状态，并支持 Agent 间互相派活协作。上线 5 个月斩获近 5 万 Stars，被誉为 AI 时代的 tmux。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
+      "id": "4658ba7a-e46f-4d92-b246-898f011a9b76",
+      "url": "https://github.com/TheAlgorithms/Java",
+      "domain": "github.com",
+      "repo": "TheAlgorithms/Java",
+      "description": "TheAlgorithms/Java 是 GitHub 上 66k Star 的开源算法百科全书，用 Java 实现了排序、搜索、图论、动态规划、密码学等 30+ 领域的经典算法，每个算法配有完整注释、复杂度分析和单元测试。它定位为学习参考而非生产工具，性能不及 JDK 标准库，但代码教学友好度极高，是算法学习与面试复习的优质免费教材。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:13:20.261Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "algorithm",
+          "algorithm-challenges",
+          "algorithms",
+          "algorithms-datastructures",
+          "data-structures",
+          "hacktoberfest",
+          "java",
+          "search",
+          "sort",
+          "sorting-algorithms"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "All Algorithms implemented in Java. Contribute to TheAlgorithms/Java development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Java",
+          "算法",
+          "数据结构",
+          "开源项目",
+          "面试刷题"
+        ],
+        "cover": "",
+        "title": "TheAlgorithms/Java 深度评测：66k Star 的开源算法百科全书",
+        "ability": [
+          "覆盖排序、搜索、图论、动态规划、密码学等 30+ 算法领域",
+          "每个算法配完整 Javadoc 注释与时间/空间复杂度分析",
+          "全部算法附带 JUnit 单元测试，Maven 一键构建",
+          "CI/CD + Checkstyle/PMD/SpotBugs 静态分析保障代码质量",
+          "支持 Gitpod 云 IDE 一键在线运行与调试"
+        ],
+        "summary": "用 Java 实现几乎所有经典算法与数据结构的开源学习宝库，学习价值拉满但别用于生产。",
+        "category": [
+          "学习教程",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "学习数据结构与算法的计算机专业学生",
+          "准备面试刷题的求职者",
+          "自学编程的转行新手",
+          "需要查阅算法参考实现的 Java 工程师",
+          "想参与开源贡献的新人（Hacktoberfest）"
+        ],
+        "description": "TheAlgorithms/Java 是 GitHub 上 66k Star 的开源算法百科全书，用 Java 实现了排序、搜索、图论、动态规划、密码学等 30+ 领域的经典算法，每个算法配有完整注释、复杂度分析和单元测试。它定位为学习参考而非生产工具，性能不及 JDK 标准库，但代码教学友好度极高，是算法学习与面试复习的优质免费教材。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
+      "id": "d931b0f6-ac99-488e-863f-5c735de213b8",
+      "url": "https://github.com/openai/codex-security",
+      "domain": "github.com",
+      "repo": "openai/codex-security",
+      "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:10:40.954Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "application-security",
+          "cli",
+          "code-scanning",
+          "codex",
+          "codex-security",
+          "cybersecurity",
+          "devsecops",
+          "nodejs",
+          "npm",
+          "openai",
+          "sdk",
+          "security",
+          "typescript",
+          "vulnerability-scanning"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developers.openai.com/codex/security",
+        "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security - openai/codex-security"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI",
+          "安全审计",
+          "SAST",
+          "开源项目",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "OpenAI Codex Security 深度评测：会用沙箱验证漏洞的 AI 安全审计工具，是安全副驾还是营销噱头？",
+        "ability": [
+          "LLM 威胁建模：自动梳理代码库攻击面、信任边界与敏感数据流",
+          "沙箱漏洞验证：在隔离环境中真实复现漏洞，只上报确认可打的，大幅降低误报",
+          "自动补丁生成：调用 Codex 生成修复 PR 并做回归验证",
+          "生态互通：支持导入 GitHub/Snyk 告警，导出 SARIF，可推送 Linear",
+          "CLI + TypeScript SDK + GitHub Actions 全套集成，支持多模型接入"
+        ],
+        "summary": "OpenAI 开源的 AI 原生安全审计 CLI：先建威胁模型、再把漏洞丢进沙箱真实复现，适合深度审计但不适合当 CI 门禁。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "接手陌生代码库的安全工程师",
+          "维护安全 backlog 的 AppSec 团队",
+          "大量使用 AI 生成代码的开发团队",
+          "想找漏报补位的开源项目维护者",
+          "不适合：需要离线扫描、依赖 CVE 管控或 CI 阻断门禁的场景"
+        ],
+        "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
+      "id": "efe17a82-92a9-406c-8471-f76836b7d0b4",
+      "url": "https://github.com/shadcn/improve",
+      "domain": "github.com",
+      "repo": "shadcn/improve",
+      "description": "shadcn/improve 是 shadcn（shadcn/ui 作者）推出的 AI Agent Skill，一条命令即可让昂贵旗舰模型侦察、审计、复核整个代码库，输出带证据、验证命令和明确边界的实施计划，再由任何便宜模型或人类照图施工。全程只读不改码，把贵的智力和便宜的手彻底拆开，显著降低 agentic 编码成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:06:25.500Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute. - shadcn/improve"
+      },
+      "summaryData": {
+        "tags": [
+          "shadcn",
+          "Agent Skill",
+          "代码审计",
+          "AI 编码",
+          "技术债"
+        ],
+        "cover": "",
+        "title": "shadcn/improve 深度评测：让贵模型写计划、便宜模型干活的 AI 编码 Skill",
+        "ability": [
+          "九类并行审计代码库（bug、安全、性能、技术债等），发现均带 file:line 证据",
+          "生成自包含的 Markdown 实施计划（Plan）并写入 plans/ 目录",
+          "严格只读不改源代码，仅在隔离 worktree 中派执行者干活",
+          "支持 quick/standard/deep 三档强度、分支 diff 审计和单类别聚焦",
+          "Plan 内置验证门、硬边界、STOP 条件与漂移检查，弱模型也能照图施工"
+        ],
+        "summary": "一个让顶级 AI 只审计代码库并输出实施计划、坚决不改代码，把执行交给便宜模型的 Agent Skill。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "用 Claude Code / Cursor 维护真实项目的资深工程师",
+          "接手陌生代码库的新成员或外包开发者",
+          "维护遗留系统、需要管理技术债的团队负责人",
+          "被旗舰模型 token 账单困扰的 AI 编码用户",
+          "想把技术债标准化为可分配 backlog 的团队"
+        ],
+        "description": "shadcn/improve 是 shadcn（shadcn/ui 作者）推出的 AI Agent Skill，一条命令即可让昂贵旗舰模型侦察、审计、复核整个代码库，输出带证据、验证命令和明确边界的实施计划，再由任何便宜模型或人类照图施工。全程只读不改码，把贵的智力和便宜的手彻底拆开，显著降低 agentic 编码成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
+      "id": "3488baa3-5d44-4291-b536-12875d8feee7",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "domain": "github.com",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-11T11:02:54.870Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Contribute to GoogleChrome/modern-web-guidance-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      },
+      "type": "project",
+      "dateAdded": "20261111"
+    },
+    {
       "id": "c989cb8b-7dca-4084-8ee3-4b66cf8628d8",
       "url": "https://github.com/tokio-rs/topcoat",
       "domain": "github.com",

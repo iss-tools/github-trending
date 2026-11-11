@@ -1,0 +1,165 @@
+# openai/codex-security
+
+[GitHub URL](https://github.com/openai/codex-security)
+
+
+## OpenAI Codex Security 深度评测：会用沙箱验证漏洞的 AI 安全审计工具，是安全副驾还是营销噱头？
+
+> OpenAI 开源的 AI 原生安全审计 CLI：先建威胁模型、再把漏洞丢进沙箱真实复现，适合深度审计但不适合当 CI 门禁。
+
+- **Tags**: OpenAI, 安全审计, SAST, 开源项目, AI Agent
+- **Category**: 开发工具, 网络安全, AI 编程
+
+## Details
+
+# OpenAI Codex Security 深度评测：当威胁建模遇上沙箱验证，SAST 的"第三次范式转移"真的来了吗？
+**一句话总结：这是 OpenAI 在 2026 年 7 月开源（Apache-2.0）的 AI 原生安全审计 CLI + TypeScript SDK，它不靠规则匹配、而是先用 LLM 给你的代码库画一张"威胁地图"，再把每一个疑似漏洞丢进隔离沙箱里真实复现——这是它与传统 SAST 最本质的分水岭，但"客户端开源、后端闭源"的发行策略、按 token 计费的成本模型，以及第三方实测暴露出的低精确度，都意味着它目前更适合做"深度审计副驾"，而不是"CI 上的极速门卫"。**
+---
+## 一、项目档案：先看清楚这是什么
+| 维度 | 信息 |
+|---|---|
+| 仓库 | `openai/codex-security` |
+| 语言 / 协议 | TypeScript / Apache-2.0 |
+| 仓库创建 | 2026-07-13；正式开源 2026-07-29 |
+| GitHub 热度 | TypeScript 趋势榜当日 #1，约 **10.7k stars / 808 forks**（2026-07 起势阶段） |
+| 历史 | 前身是 2025 年 10 月私测的 **Aardvark**，2026 年 3 月更名 Codex Security 进入研究预览，2026 年 9 月 DevDay 推出 Codex Security Cloud |
+| 依赖 | Node.js 22.13+ / 24.x / 26.x，**Python 3.10+** |
+| 模型接入 | OpenAI（Daybreak Blue/Red）、Amazon Bedrock、OpenRouter、Fireworks AI、Cheaper Inference |
+值得一提的是，OpenAI 给这个项目起了个非常"土但精准"的命令别名：`cs`（codex-security），装机后直接 `cs scan .` 就能跑起来，对开发者相当友好。
+---
+## 二、背景与痛点：SAST 的"三宗罪"，它想逐一击破
+理解 Codex Security 的价值，必须先看清它要颠覆的对手有多"痛"。传统静态扫描（SAST）领域有三大顽疾，开发者早已习惯性麻木：
+**第一宗罪是"报 400 个 finding，没人愿意看"。** 行业基准估算传统 SAST 的误报率高达 68–78%，Semgrep OSS 和 OpenGrep 在同一测试集上各自报出 460+ 条告警，团队往往开了扫描器、triage 一周、直接调成 warn-only 然后遗忘。规则匹配器的本质缺陷是：它告诉你"模式匹配到了"，但从不告诉你"这个漏洞到底能不能被打"。
+**第二宗罪是"规则永远追不上新型漏洞"。** Semgrep 的引擎刻意做成无状态、快速的 AST 模式匹配——这是它的强项，但也意味着它只能找出"已经有人写过规则"的问题。逻辑漏洞、不完整的修复、隐私泄露这类需要语义理解的问题，规则库基本束手无策。
+**第三宗罪是 AI 生成代码洪流的冲击。** 当 Cursor、Codex、Claude Code 每天吐出上万行"看起来对、其实不对"的代码时（比如"endpoint 的鉴权检查引用了一个永远为真的变量"），人工 review 跟不上，规则匹配也抓不到。Anthropic 在 2026 年初推出 Claude Code Security 后，多家网安公司股价应声下跌，足见"AI Agent 做安全审计"已成行业共识。
+OpenAI 的回答是：与其加更多规则，不如让一个会用工具、能跑代码的 Agent 来做这件事——这正是 Aardvark → Codex Security 演进的核心动机。
+---
+## 三、核心架构与工作原理：三段式 Agent 流水线
+如果把传统 SAST 比作"用放大镜在书里找特定的字符组合"，Codex Security 更像是"雇一个安全研究员，先读完你的整本书画出章节地图，再针对每个可疑情节动手实验"。它的核心管线分三步：
+**Stage 1 — 威胁建模**：从 Git 历史倒序遍历 commits，构建一份可编辑的 threat model，记录攻击者入口、信任边界、敏感数据流和高影响路径。这一步是 Semgrep 结构性做不到的。
+**Stage 2 — 漏洞发现与沙箱验证**：基于威胁模型发现可疑漏洞，然后**把它丢进隔离的沙箱环境里尝试真实复现**，捕捉执行细节，只有确认可利用才上报。这是它与传统 SAST 真正分道扬镳的一步。
+**Stage 3 — 补丁生成与回归验证**：调用 Codex 生成符合现有系统行为的补丁，提交 PR 供人审；merge 后还能再次扫描验证漏洞确实被修掉了。
+> **一句话理解差异化**：Snyk/Semgrep 告诉你"匹配到了一个模式"，Codex Security 告诉你"我试过了，真的能打穿，这是 PoC 和修复 patch"。
+---
+## 四、核心功能与上手示例：从一条命令到 CI 流水线
+### 4.1 CLI 三行起步
+```bash
+npm install --global @openai/codex-security
+cs login                 # ChatGPT 账号登录，CI 用 OPENAI_API_KEY
+cs scan .                # 扫描当前目录
+```
+进阶玩法非常丰富：
+```bash
+# 只扫特定路径
+cs scan . --path src --path tests
+# 只扫从 origin/main 到 HEAD 的 diff（适合 PR 审计）
+cs scan . --diff origin/main
+# 深度扫描（多 worker 并行探索，最贵也最彻底）
+cs scan . --mode deep
+# 限制单次扫描预算（15 分钟 advisory 配额）
+cs scan . --max-time 15
+# 起草/更新 SECURITY.md 安全策略
+cs policy . --knowledge-base architecture.md
+# 导出威胁模型
+cs export --scan SCAN_ID --artifact threat-model --output threatmodel.md
+```
+需要 Daybreak Blue（OpenAI 为合法防御性安全研究降级拒绝率的"网安专用通道"）时，加 `--cyber-access-program daybreak_blue`；要更激进的 Red 档则需额外通过 **Trusted Access for Cyber** 审核。
+### 4.2 TypeScript SDK：把 Agent 嵌进你自己的工作流
+```ts
+import { CodexSecurity } from "@openai/codex-security";
+const security = new CodexSecurity();
+try {
+  const result = await security.run("/path/to/repository", {
+    target: ["src", "tests"],
+    scanPrompt: "Focus on authentication and authorization.",
+    maxCostUsd: 5,                       // 成本硬上限
+    mode: "deep",                        // 或 "standard"
+    workers: 2,                          // Deep 模式并行 worker 数
+  });
+  console.log(result.reportPath);
+  if (result.hasFindingsAtOrAbove("high")) {
+    process.exitCode = 1;                // 让 CI 失败
+  }
+} finally {
+  await security.close();                // 不 close 会泄漏 session
+}
+```
+SDK 还支持 `preflight()` 干跑校验、`validate()` 独立验证已有 finding、`patch()` 生成修复、`onCost` / `onProgress` 回调实时观测 token 消耗。`close()` 不是装饰——SDK 持有会话句柄，长跑进程里忘掉它就是泄漏。
+### 4.3 GitHub Actions 集成：官方推荐模板里有两个"必踩坑"
+官方给的 workflow 模板里需要配置 Bubblewrap + AppArmor 让沙箱能跑起来，并且**必须显式指定 Action 的 commit SHA**而不是 tag，体现了"不要盲跑安全工具"的谨慎态度。
+```yaml
+- uses: actions/checkout@<pinned-sha>
+  with:
+    fetch-depth: 0        # 关键！默认 shallow clone 会让威胁建模走不下去
+    persist-credentials: false
+- uses: openai/codex-security@<pinned-sha>
+  with:
+    model: gpt-5.6-sol
+    effort: high
+  env:
+    OPENAI_API_KEY: ${{ secrets.CODEX_SECURITY_API_KEY }}
+```
+社区实践还补充了两个官方 Quick Start 不写、但能让你多折腾一个下午的细节：
+- **`fetch-depth: 0`**：威胁建模第一步是倒序走 Git 历史，shallow clone 会直接让它空手而归。
+- **`CODEX_SECURITY_STATE_DIR`**：扫描历史落到 workbench 状态目录，在 hosted runner 上默认路径不可靠可写，必须显式指定。
+### 4.4 数据互操作：不是孤岛，而是入口
+它支持导入 GitHub Code Scanning 告警、Snyk Open Source（SARIF/JSON），也能导出 SARIF/JSON/CSV，并可直接把 finding 推送到 Linear 或自建 findings service。这意味着 Codex Security 可以作为**已有安全栈的"二次验证层"和"补丁生成层"**，而不必推倒重来。
+---
+## 五、真实效果：官方数据 vs 第三方实测，差距值得看清
+这是评测一款"AI 安全 Agent"最关键、也最容易被营销话术掩盖的部分。
+**官方口径相当亮眼**：Aardvark 在"golden repository"基准上识别出 **92%** 的已知与合成漏洞；过去 30 天扫描了 **120 万 commits**，发现 **792 个 critical**、**10,561 个 high-severity** 问题，其中包括 GnuPG、GnuTLS、OpenSSH、libssh、PHP、Chromium、Thorium、GOGS 等明星开源项目里被分配了 CVE 编号的真实漏洞；同一仓库的重复扫描误报率下降超过 50%。
+**第三方实测则冷峻得多**：Cantina 安全团队用同一个 OpenClaw 仓库横向对比 Cantina Apex、Claude Code Security 和 Codex Security 深度扫描，结果是——Codex Security 报了 6 个"自认为有效"的 finding，**只有 1 个通过独立 review 复核**（precision 仅 16.7%），单次 Deep 扫描花费 **$133.20**；同期 Apex 是 14 报 11 中（78.6%），Claude Code Security 是 14 报 4 中（28.6%）。
+Endor Labs 的另一项基准补充了更深的洞察：在大型企业级 Java 代码库上，**Claude 与 Codex 这类 LLM Agent 真正审到的安全相关代码低于 10%**——它们足够灵活、能找出"没人写过规则"的问题，但每轮探索的覆盖面窄且不稳定，仓库越大漂移越严重。
+把两组数据摆在一起，结论就很清晰了：**它确实能挖出人类研究员和规则引擎都会漏的"深水炸弹"（CVE 级别的发现是真实的），但它不是一个稳定可重复的"漏报率为 0"的扫描器**——这正是 DevOps.com 引述 Futurum Group 的 Mitch Ashley 的核心警告："AI 扫描在配置不变的情况下也可能产生不同结果，前一次报过的问题在下次扫描中消失，并不能证明它被修复了。"
+---
+## 六、目标人群与收益场景：谁该用、谁别用
+| 用户画像 | 是否推荐 | 关键收益 / 风险 |
+|---|---|---|
+| **接手陌生代码库的安全工程师** | ★★★★★ | 入职、收购、外包交接场景下，威胁建模能一天内给出 trust boundary 与 triage 顺序，而不是等三周 |
+| **维护安全 backlog 的 AppSec 团队** | ★★★★☆ | 用它给积压的 Snyk/CodeQL finding 跑一遍"可利用性判定"，是最便宜的尝鲜方式 |
+| **大量使用 AI 生成代码的团队** | ★★★★☆ | 它能抓到"硬编码密钥"之外的语义级漏洞，但每轮覆盖 <10%，需搭配规则扫描器 |
+| **CI 流水线上的 blocking gate** | ★★☆☆☆ | 分钟级延迟 + token 成本 + 结果漂移，先把 Semgrep 留在 pre-commit |
+| **需要 air-gapped / 离线扫描** | ☆☆☆☆☆ | 完全不适用，必须连 OpenAI 托管服务 |
+| **做依赖 CVE 管控的团队** | ☆☆☆☆☆ | 它不做 SCA，`package-lock.json` 仍归 Snyk 管 |
+| **开源维护者** | ★★★★☆ | 通过 Codex for OSS 计划可申请免费额度，但审批节奏不稳定（有 vim 维护者申请两次未果） |
+---
+## 七、竞品横向对比：在 17 家安全平台里，它站哪个位置
+| 维度 | **Codex Security** | **Semgrep** | **Snyk Code** | **CodeQL** | **Claude Code Security** |
+|---|---|---|---|---|---|
+| 协议 | Apache-2.0（仅客户端） | LGPL-2.1 CE + 付费 | 闭源 | 闭源（OSS 免费） | 闭源 |
+| 核心方法 | 威胁建模 + LLM + 沙箱验证 | AST 模式匹配 + YAML 规则 | DeepCode AI ML | 编译后 DB 上的数据流查询 | LLM Agent |
+| 沙箱验证 | **有** | 无 | 无 | 无 | 有（cutoff 45 候选） |
+| 中型仓库耗时 | 分钟级 | **<30s** | 秒-分钟 | 3–10 min / 100K LOC | 分钟级 |
+| SCA / 依赖 CVE | ✗ | 部分（Supply Chain 套餐） | **✓** | ✗ | ✗ |
+| 自定义规则 | 无规则语言 | **2000+ 社区规则 / 30+ 语言** | 有限 | 完整 QL 语言 | 提示词级 |
+| 离线 / air-gapped | ✗ | **✓** | 部分 | ✓ | ✗ |
+| 计费模型 | API token 用量 | Free CE / 付费档 | ~$50/mo/dev | 私有仓库需 GHAS | 模型 token 用量 |
+| 最适合 | "这漏洞真能打吗？" | 速度 + 自定义规则 | 依赖覆盖广 | 深度数据流 | 同类对照 |
+数据综合自第三方对比与官方文档。
+**真正的差异化只有一条**：沙箱验证。它决定了 Codex Security 是"另一种成本结构的 SAST"，还是" 一个新物种"。其他维度——速度、SCA、规则生态、离线能力——它全面落后于成熟工具。
+---
+## 八、局限与不足：把话说明白
+**1. "开源"是个营销话术，不是事实。** Futurum Group 的评价已经写得很尖锐："OpenAI open-sourced the client and kept the scanner. That is distribution, not openness." Apache-2.0 的 CLI/SDK 落到你的 CI 配置里，但模型、triage 逻辑、计费关系全部锁在 beta-gated 的 OpenAI 后端。**你不能用它自建一个独立的离线扫描器。**
+**2. 成本模型不透明且偏高。** eesel 实测一个 56 行 Flask 小项目（植入 5 个 bug）扫描消耗约 **3.6M tokens ≈ 89 credits ≈ $3.58**，而官方口径"典型 Codex 任务 2–15 credits"——也就是说，**一次玩具级扫描等于 6–45 次普通 Codex 任务**。真实项目会显著高于此数，且 OpenAI 不公布 per-scan 价格、Pro/Business 也不公开 per-credit 价格，做预算需要自己实测。
+**3. Cyber 安全过滤的"误拒"消耗大量时间。** 2026 年 7 月前的 CLI 用户普遍遭遇 30–40 分钟扫描时间被 refusal 中断的问题，Cloud 版通过捆绑 Daybreak Blue 缓解了这一点，但 Daybreak Red 仍需 Trusted Access for Cyber 单独审批。讽刺的是，OpenAI 自己的 Codex 仓库里就有用户抱怨：静态分析、fuzzing 等纯防御性研究任务常被误判为 cyber 请求被打断。
+**4. 结果可重复性差，做 merge gate 还为时过早。** 同一配置下两次扫描结果可能不同；官方文档自己也承认"上次报的问题这次消失 ≠ 已修复"。Ashley 的建议是：**先跑 advisory 模式，等 OpenAI 证明跨次扫描的 finding 足够稳定，再考虑把它接进 blocking CI**。
+**5. 工程依赖较重。** Node.js 22 + Python 3.10 双运行时意味着没法做成单个静态 binary 塞进 slim Alpine 镜像，CI 构建时间会被拉长。`cs` 这个短别名还会和部分既有工具冲突，遇到 `EEXIST` 错误只能退到 `npx @openai/codex-security`。
+**6. 覆盖面漂移。** 大仓库下每轮 LLM 探索的安全相关代码可能低于 10%，意味着"扫过一次没问题"远不等于"全代码库没问题"。
+**7. 不做 SCA。** 它解决的是"你写的代码有没有漏洞"，而不是"你依赖的代码有没有 CVE"——这两件事在预算表里必须分开列。
+---
+## 九、社区活跃度与生命力
+仓库虽然只创建了不到 4 个月，但热度与更新节奏都属上乘：
+- **Trendshift 榜单**：2026 年 7 月 29 日开源当日冲上全语言 Daily #1，Weekly #1，Monthly #19。
+- **Issue 区活跃但痛点集中**：高频 issue 集中在 `usage_limit_exceeded` 中断、并发扫描冲突（`os error 2`）、terminal unsealed scan 恢复失败等工程稳定性问题，说明底层的"安全过滤 + 配额管理"还在打补丁阶段。
+- **生态绑定紧**：GitHub Action、Docker Compose 批量扫描、Linear findings 推送、Snyk/GHAS 导入导出、Amazon Bedrock/OpenRouter 多 provider 支持，集成面已经铺得很广。
+- **本地 `serve` 命令与浏览器 dashboard 已被移除**，意味着 OpenAI 在主动把"看结果"这个动作往 Codex Security Cloud 收口——这是商业策略，也是社区轻微不满的点。
+---
+## 十、结语与行动建议：什么时候按下 install，什么时候按住不装
+Codex Security 代表的"AI Agent 做漏洞审计"方向几乎肯定是未来，但"未来"和"现在就能上生产 gate"是两件事。它真正无可替代的场景是**深度审计**——接手陌生代码库、清理积压 backlog、审 AI 生成代码——在这些场景下，它的威胁建模和沙箱验证确实能把"我猜有洞"升级成"我证明能打穿，这是 PoC 和 patch"。
+**给你的可执行路线图**：
+1. **本周就做**：在 ChatGPT Pro/Business 账号下跑一次 `cs scan .` 在你最重要的 1 个仓库上，自己测一次 token 消耗与 finding 质量——这是判断它值不值得接入的最便宜方式。
+2. **本周别做**：把它接进 blocking CI、设 severity threshold 直接 fail build。先 advisory，等团队摸清它的稳定性再说。
+3. **组合拳**：保留 Semgrep 做 pre-commit 极速 gate，保留 Snyk 做 SCA，把 Codex Security 放在每周定时 Deep Scan + PR diff 审计这两条非阻塞轨道上，配合官方 GitHub Action 模板即可。
+4. **预算控制**：永远设置 `maxCostUsd` 或 `max-time`，开 credit alerts，否则一次失控的 Deep Scan 能烧掉一个普通团队一周的 Codex 配额。
+5. **保持人类在 merge 按钮**：Cantina 的实测和 DevOps.com 的分析指向同一个结论——验证器告诉你"finding 是真的"，但**不告诉你"patch 是对的"**。
+把它当成一位"不知疲倦但偶尔抽风"的安全研究副驾，而不是一位"永远在线的自动守门员"——这是当前阶段对它最准确、也最划算的定位。
