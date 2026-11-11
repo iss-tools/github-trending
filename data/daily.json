@@ -104777,5 +104777,587 @@
         "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。"
       }
     }
+  ],
+  "20261112": [
+    {
+      "id": "062db370-c157-4876-89eb-5b8f464043a9",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 24531,
+      "forks": 1916,
+      "starsAdded": 2842,
+      "createdAt": "2026-11-11T17:00:01.866Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
+      "id": "62ad3b07-1886-4804-94cb-a16b2cadb2e5",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 12694,
+      "forks": 941,
+      "starsAdded": 1079,
+      "createdAt": "2026-11-11T17:00:01.927Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
+      "id": "61358d3f-98ef-4add-a6fe-61653d655102",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 115710,
+      "forks": 12138,
+      "starsAdded": 788,
+      "createdAt": "2026-11-11T17:00:01.915Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "268a3fb2-b2f0-4eb1-87b4-0a2624280480",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 49716,
+      "forks": 3478,
+      "starsAdded": 712,
+      "createdAt": "2026-11-11T17:00:01.922Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "8cba5ffb-bc62-4de3-9db2-aaba29b5f2ba",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "repo": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "stars": 7114,
+      "forks": 446,
+      "starsAdded": 640,
+      "createdAt": "2026-11-11T17:00:01.929Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "claude",
+          "hacs",
+          "home-assistant",
+          "home-automation",
+          "llm",
+          "mcp",
+          "model-context-protocol"
+        ],
+        "license": "MIT license",
+        "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
+        "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. - homeassistant-ai/ha-mcp"
+      },
+      "summaryData": {
+        "tags": [
+          "Home Assistant",
+          "MCP",
+          "智能家居",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ha-mcp 深度评测：87 个工具把 Claude 变成你的智能家居 AI 管家",
+        "ability": [
+          "用自然语言控制 Home Assistant 设备，替代繁琐的语音指令和界面操作",
+          "让 AI 直接创建和修改自动化、脚本、仪表盘、helper 等 HA 配置",
+          "通过执行 trace 帮 AI 精准定位自动化不触发的 Bug",
+          "管理备份、插件（Add-on）、HACS、Zigbee 设备等系统级操作",
+          "提供只读模式、按工具启停、自动备份等多层安全防护机制"
+        ],
+        "summary": "ha-mcp 是一个开源 MCP 服务器，让 Claude 等 AI 客户端全面接管 Home Assistant 的控制、配置与调试，告别手写 YAML。",
+        "category": [
+          "智能家居",
+          "AI 工具",
+          "开发工具"
+        ],
+        "suitable": [
+          "Home Assistant 重度玩家与自托管爱好者",
+          "刚入门 HA、不想啃 YAML 语法的新手",
+          "智能家居内容创作者与折腾党",
+          "追求安全模型的极客与运维人员",
+          "想用 AI 简化家务管理的普通家庭用户"
+        ],
+        "description": "ha-mcp 是由 @julienld 等人维护的开源项目，为 Home Assistant 提供 87 个细粒度 MCP 工具，涵盖搜索、控制、管理、监控、系统、安全六大类。AI 客户端可通过它直接生成自动化 YAML、调试执行 trace、编辑仪表盘、管理备份与插件，并提供 Demo Server 和多种部署路线（HACS、Docker、Add-on 等）降低上手门槛。"
+      }
+    },
+    {
+      "id": "de651c1d-6958-42c4-a273-5d70b829182d",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 69997,
+      "forks": 56801,
+      "starsAdded": 429,
+      "createdAt": "2026-11-11T17:00:01.903Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      }
+    },
+    {
+      "id": "81ebbdb2-4a5c-47c1-aeb0-8cb06cb5362f",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/shadcn/improve",
+      "repo": "shadcn/improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "language": "",
+      "stars": 10615,
+      "forks": 433,
+      "starsAdded": 333,
+      "createdAt": "2026-11-11T17:00:01.910Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute. - shadcn/improve"
+      },
+      "summaryData": {
+        "tags": [
+          "shadcn",
+          "Agent Skill",
+          "代码审计",
+          "AI 编码",
+          "技术债"
+        ],
+        "cover": "",
+        "title": "shadcn/improve 深度评测：让贵模型写计划、便宜模型干活的 AI 编码 Skill",
+        "ability": [
+          "九类并行审计代码库（bug、安全、性能、技术债等），发现均带 file:line 证据",
+          "生成自包含的 Markdown 实施计划（Plan）并写入 plans/ 目录",
+          "严格只读不改源代码，仅在隔离 worktree 中派执行者干活",
+          "支持 quick/standard/deep 三档强度、分支 diff 审计和单类别聚焦",
+          "Plan 内置验证门、硬边界、STOP 条件与漂移检查，弱模型也能照图施工"
+        ],
+        "summary": "一个让顶级 AI 只审计代码库并输出实施计划、坚决不改代码，把执行交给便宜模型的 Agent Skill。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "用 Claude Code / Cursor 维护真实项目的资深工程师",
+          "接手陌生代码库的新成员或外包开发者",
+          "维护遗留系统、需要管理技术债的团队负责人",
+          "被旗舰模型 token 账单困扰的 AI 编码用户",
+          "想把技术债标准化为可分配 backlog 的团队"
+        ],
+        "description": "shadcn/improve 是 shadcn（shadcn/ui 作者）推出的 AI Agent Skill，一条命令即可让昂贵旗舰模型侦察、审计、复核整个代码库，输出带证据、验证命令和明确边界的实施计划，再由任何便宜模型或人类照图施工。全程只读不改码，把贵的智力和便宜的手彻底拆开，显著降低 agentic 编码成本。"
+      }
+    },
+    {
+      "id": "dc3ebbbe-dc7d-4907-a7f1-3a973a7e748c",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 1569,
+      "forks": 134,
+      "starsAdded": 133,
+      "createdAt": "2026-11-11T17:00:01.908Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Contribute to GoogleChrome/modern-web-guidance-src development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
+    },
+    {
+      "id": "a3034b4e-6c0d-4396-bcb4-fccf78613e55",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/TheAlgorithms/Java",
+      "repo": "TheAlgorithms/Java",
+      "description": "All Algorithms implemented in Java",
+      "language": "Java",
+      "stars": 66929,
+      "forks": 21497,
+      "starsAdded": 108,
+      "createdAt": "2026-11-11T17:00:01.939Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "algorithm",
+          "algorithm-challenges",
+          "algorithms",
+          "algorithms-datastructures",
+          "data-structures",
+          "hacktoberfest",
+          "java",
+          "search",
+          "sort",
+          "sorting-algorithms"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "All Algorithms implemented in Java. Contribute to TheAlgorithms/Java development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Java",
+          "算法",
+          "数据结构",
+          "开源项目",
+          "面试刷题"
+        ],
+        "cover": "",
+        "title": "TheAlgorithms/Java 深度评测：66k Star 的开源算法百科全书",
+        "ability": [
+          "覆盖排序、搜索、图论、动态规划、密码学等 30+ 算法领域",
+          "每个算法配完整 Javadoc 注释与时间/空间复杂度分析",
+          "全部算法附带 JUnit 单元测试，Maven 一键构建",
+          "CI/CD + Checkstyle/PMD/SpotBugs 静态分析保障代码质量",
+          "支持 Gitpod 云 IDE 一键在线运行与调试"
+        ],
+        "summary": "用 Java 实现几乎所有经典算法与数据结构的开源学习宝库，学习价值拉满但别用于生产。",
+        "category": [
+          "学习教程",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "学习数据结构与算法的计算机专业学生",
+          "准备面试刷题的求职者",
+          "自学编程的转行新手",
+          "需要查阅算法参考实现的 Java 工程师",
+          "想参与开源贡献的新人（Hacktoberfest）"
+        ],
+        "description": "TheAlgorithms/Java 是 GitHub 上 66k Star 的开源算法百科全书，用 Java 实现了排序、搜索、图论、动态规划、密码学等 30+ 领域的经典算法，每个算法配有完整注释、复杂度分析和单元测试。它定位为学习参考而非生产工具，性能不及 JDK 标准库，但代码教学友好度极高，是算法学习与面试复习的优质免费教材。"
+      }
+    },
+    {
+      "id": "ea3ed341-cfd5-449d-bef6-f9ae0eb19525",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/openai/codex-security",
+      "repo": "openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 11536,
+      "forks": 919,
+      "starsAdded": 20,
+      "createdAt": "2026-11-11T17:00:01.935Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "application-security",
+          "cli",
+          "code-scanning",
+          "codex",
+          "codex-security",
+          "cybersecurity",
+          "devsecops",
+          "nodejs",
+          "npm",
+          "openai",
+          "sdk",
+          "security",
+          "typescript",
+          "vulnerability-scanning"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developers.openai.com/codex/security",
+        "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security - openai/codex-security"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI",
+          "安全审计",
+          "SAST",
+          "开源项目",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "OpenAI Codex Security 深度评测：会用沙箱验证漏洞的 AI 安全审计工具，是安全副驾还是营销噱头？",
+        "ability": [
+          "LLM 威胁建模：自动梳理代码库攻击面、信任边界与敏感数据流",
+          "沙箱漏洞验证：在隔离环境中真实复现漏洞，只上报确认可打的，大幅降低误报",
+          "自动补丁生成：调用 Codex 生成修复 PR 并做回归验证",
+          "生态互通：支持导入 GitHub/Snyk 告警，导出 SARIF，可推送 Linear",
+          "CLI + TypeScript SDK + GitHub Actions 全套集成，支持多模型接入"
+        ],
+        "summary": "OpenAI 开源的 AI 原生安全审计 CLI：先建威胁模型、再把漏洞丢进沙箱真实复现，适合深度审计但不适合当 CI 门禁。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "接手陌生代码库的安全工程师",
+          "维护安全 backlog 的 AppSec 团队",
+          "大量使用 AI 生成代码的开发团队",
+          "想找漏报补位的开源项目维护者",
+          "不适合：需要离线扫描、依赖 CVE 管控或 CI 阻断门禁的场景"
+        ],
+        "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。"
+      }
+    }
   ]
 }
