@@ -26178,9 +26178,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 70279,
-      "forks": 4659,
-      "starsAdded": 10967,
+      "stars": 70350,
+      "forks": 4666,
+      "starsAdded": 11507,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
         "forks": "0",
@@ -26230,9 +26230,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 321942,
-      "forks": 26994,
-      "starsAdded": 9872,
+      "stars": 322006,
+      "forks": 26999,
+      "starsAdded": 9575,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
         "forks": "0",
@@ -26274,6 +26274,71 @@
       }
     },
     {
+      "id": "8825ba99-430a-4601-8947-e81f90023639",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "repo": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 21219,
+      "forks": 2962,
+      "starsAdded": 9257,
+      "createdAt": "2026-11-08T18:00:03.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://www.mausbot.com/",
+        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "AI Agent",
+          "多模型",
+          "本地优先",
+          "BYOA"
+        ],
+        "cover": "",
+        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "ability": [
+          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
+          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
+          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
+          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
+          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+        ],
+        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "category": [
+          "AI Agent",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
+          "独立开发者与小团队，想自动化研究、文档和代码工作流",
+          "追求本地优先、数据自主的隐私敏感用户",
+          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
+          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+        ],
+        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+      }
+    },
+    {
       "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26281,9 +26346,9 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 11805,
-      "forks": 969,
-      "starsAdded": 9621,
+      "stars": 11826,
+      "forks": 970,
+      "starsAdded": 7947,
       "createdAt": "2026-11-08T18:00:03.599Z",
       "metaData": {
         "forks": "0",
@@ -26334,9 +26399,9 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 22009,
-      "forks": 1640,
-      "starsAdded": 9502,
+      "stars": 22051,
+      "forks": 1641,
+      "starsAdded": 7772,
       "createdAt": "2026-11-09T12:00:05.698Z",
       "metaData": {
         "forks": "0",
@@ -26393,68 +26458,56 @@
       }
     },
     {
-      "id": "8825ba99-430a-4601-8947-e81f90023639",
+      "id": "59d49d12-c3e6-41dd-b805-09fd03207b0e",
       "dateAdded": "202646",
       "type": "github-weekly",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "repo": "milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "language": "TypeScript",
-      "stars": 21203,
-      "forks": 2957,
-      "starsAdded": 8951,
-      "createdAt": "2026-11-08T18:00:03.916Z",
+      "url": "https://github.com/Nutlope/hallmark",
+      "repo": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 51978,
+      "forks": 2769,
+      "starsAdded": 5987,
+      "createdAt": "2026-11-08T18:00:03.947Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "ai-agents",
-          "claude-code",
-          "codex",
-          "computer-use",
-          "docker",
-          "electron",
-          "grok",
-          "grok-bot",
-          "grok-bot-alternative",
-          "self-hosted",
-          "typescript"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://www.mausbot.com/",
-        "description": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://www.usehallmark.com/",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
       },
       "summaryData": {
         "tags": [
-          "开源项目",
-          "AI Agent",
-          "多模型",
-          "本地优先",
-          "BYOA"
+          "Claude Code",
+          "反 AI Slop",
+          "Vibe Coding",
+          "UI 设计",
+          "开源 Skill"
         ],
         "cover": "",
-        "title": "OpenMausBot 深度评测：把 Claude、Codex、Grok 变成一支免费 AI 团队的开源桌面应用",
+        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
         "ability": [
-          "多模型 Bot 管理：每个联系人可独立指定或中途切换 Claude、Codex、Grok 等模型",
-          "复用已有订阅：直接调用本机已登录的 claude/codex/grok CLI，零额外费用",
-          "独立云电脑：每个 Bot 拥有专属 Linux 桌面，可实时观看它操作或亲自接管",
-          "权限审批卡片：Bot 执行 Shell、改文件等危险操作前需 Allow/Deny 人工确认",
-          "自动化集成：支持定时任务 Routines、Webhook 触发、MCP Server 与 CLI 接入 CI"
+          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
+          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
+          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
+          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
+          "design.md 设计系统沉淀机制，团队共享统一品味基线"
         ],
-        "summary": "一款免费开源的桌面应用，像用通讯录一样指挥多个 AI Bot 干活，100% 复用你已有的 Claude/Grok/ChatGPT 订阅，不额外花一分钱。",
+        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
         "category": [
-          "AI Agent",
           "开发工具",
-          "效率工具"
+          "AI 编程",
+          "开源项目"
         ],
         "suitable": [
-          "已订阅 Claude Pro、ChatGPT Pro 或 SuperGrok 的开发者",
-          "独立开发者与小团队，想自动化研究、文档和代码工作流",
-          "追求本地优先、数据自主的隐私敏感用户",
-          "想学习 Agent 架构（驱动 SPI、事件总线、权限代理）的工程师",
-          "不喜欢 Waitlist 和 $200 订阅墙的尝鲜者"
+          "独立开发者 / 独立 SaaS 创业者",
+          "前端工程师",
+          "设计师",
+          "Agency / 外包团队",
+          "Cursor / Claude Code 重度用户"
         ],
-        "description": "OpenMausBot 是一款 Apache 2.0 开源的 Electron 桌面应用，受 xAI Grok Bot 启发，用 BYOA（自带 Agent）方式实现多 Bot AI 团队：每个 Bot 有独立模型、独立云电脑和独立记忆，危险操作前需人工审批。对话与密钥全部存本机，零 Waitlist、零额外订阅费，GitHub 约 5k Star，支持 macOS/Windows/Ubuntu。"
+        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
       }
     },
     {
@@ -26465,9 +26518,9 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 101611,
+      "stars": 101632,
       "forks": 10589,
-      "starsAdded": 7291,
+      "starsAdded": 5814,
       "createdAt": "2026-11-08T18:00:03.962Z",
       "metaData": {
         "forks": "0",
@@ -26532,59 +26585,6 @@
       }
     },
     {
-      "id": "59d49d12-c3e6-41dd-b805-09fd03207b0e",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/Nutlope/hallmark",
-      "repo": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars": 51978,
-      "forks": 2769,
-      "starsAdded": 5987,
-      "createdAt": "2026-11-08T18:00:03.947Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://www.usehallmark.com/",
-        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. - Nutlope/hallmark"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "反 AI Slop",
-          "Vibe Coding",
-          "UI 设计",
-          "开源 Skill"
-        ],
-        "cover": "",
-        "title": "Hallmark 深度评测：给 AI 编程助手装上“反 AI 味”设计过滤器的那把刀",
-        "ability": [
-          "提供 audit/redesign/study 四大动词指令：从只读诊断到结构级重设计再到提取参考站设计 DNA",
-          "内置 60 道 Slop Gate + 6 维发布前自评，自动拦截紫色渐变、Inter 字体、虚构数据等 AI 陈词滥调",
-          "21 个命名主题 × 21 种宏观结构组合，保证每次输出结构多样、绝不千篇一律",
-          "诚实文案纪律：用户没提供的数字一律不编，用占位块标注待确认指标",
-          "design.md 设计系统沉淀机制，团队共享统一品味基线"
-        ],
-        "summary": "一个给 Claude Code、Cursor 等 AI 编程助手注入“反 AI 味”设计规则的开源 Skill，让 Vibe Coding 生成的 UI 不再一眼假。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "独立开发者 / 独立 SaaS 创业者",
-          "前端工程师",
-          "设计师",
-          "Agency / 外包团队",
-          "Cursor / Claude Code 重度用户"
-        ],
-        "description": "Hallmark 是 Together AI 开发者关系负责人 Hassan 打造的开源设计 Skill（约 3 万 Star，MIT 协议），通过一套精心编写的 Markdown 规则集注入 AI 编程助手上下文，用 60 道反模式检查、6 维自评和多主题宏观结构库，让 AI 生成的 UI 摆脱千篇一律的“AI 味”，产出有立场、有品味的界面。一行命令即可安装。"
-      }
-    },
-    {
       "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26592,9 +26592,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 193080,
-      "forks": 22726,
-      "starsAdded": 5014,
+      "stars": 193109,
+      "forks": 22729,
+      "starsAdded": 5738,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
         "forks": "0",
@@ -26777,6 +26777,59 @@
       }
     },
     {
+      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 49846,
+      "forks": 3487,
+      "starsAdded": 4183,
+      "createdAt": "2026-11-08T18:00:03.966Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
       "id": "c179ee35-b158-4dde-932e-5d1ae5b9e4d0",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26845,9 +26898,9 @@
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars": 38435,
+      "stars": 38459,
       "forks": 5004,
-      "starsAdded": 3730,
+      "starsAdded": 3150,
       "createdAt": "2026-11-08T18:00:03.902Z",
       "metaData": {
         "forks": "0",
@@ -26901,59 +26954,6 @@
           "AI Agent 框架研究者"
         ],
         "description": "CCGS 是一个 MIT 协议的开源 Claude Code 模板仓库（Star 2.5 万+）。它把真实游戏工作室的组织架构、SOP 流程和质量闸门搬进 AI 编程会话：内置 Godot/Unity/UE5 三套引擎专家、按工作阶段分组的 74 个命令、强制质量门的自动化钩子，以及可按需调节的严格度开关。默认 minimal 档几乎零文档负担，适合从游戏 Jam 到正式团队的各类项目。"
-      }
-    },
-    {
-      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 49805,
-      "forks": 3484,
-      "starsAdded": 3606,
-      "createdAt": "2026-11-08T18:00:03.966Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {
@@ -27031,9 +27031,9 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 94698,
-      "forks": 11627,
-      "starsAdded": 2262,
+      "stars": 94710,
+      "forks": 11629,
+      "starsAdded": 2310,
       "createdAt": "2026-11-11T11:00:03.795Z",
       "metaData": {
         "forks": "0",
@@ -27088,9 +27088,9 @@
       "repo": "herdrdev/herdr",
       "description": "the runtime your coding agents live on",
       "language": "Rust",
-      "stars": 50296,
-      "forks": 4064,
-      "starsAdded": 2196,
+      "stars": 50329,
+      "forks": 4063,
+      "starsAdded": 2213,
       "createdAt": "2026-11-11T11:00:03.814Z",
       "metaData": {
         "forks": "0",
@@ -27217,9 +27217,9 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 23927,
-      "forks": 1995,
-      "starsAdded": 2024,
+      "stars": 23936,
+      "forks": 1994,
+      "starsAdded": 2013,
       "createdAt": "2026-11-11T11:00:03.805Z",
       "metaData": {
         "forks": "0",
@@ -27441,6 +27441,63 @@
       }
     },
     {
+      "id": "14311865-e588-451d-a7da-8c41894dce33",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "repo": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 17640,
+      "forks": 2170,
+      "starsAdded": 1535,
+      "createdAt": "2026-11-11T11:00:03.809Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
       "id": "f70186f1-6a01-4f6d-8efb-65a2f49596b4",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27496,63 +27553,6 @@
           "需要精准屏幕共享的内容创作者"
         ],
         "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
-      }
-    },
-    {
-      "id": "14311865-e588-451d-a7da-8c41894dce33",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "repo": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "stars": 17630,
-      "forks": 2168,
-      "starsAdded": 1130,
-      "createdAt": "2026-11-11T11:00:03.809Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "mujoco",
-          "physics",
-          "robotics"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://mujoco.org",
-        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
-      },
-      "summaryData": {
-        "tags": [
-          "物理引擎",
-          "机器人仿真",
-          "强化学习",
-          "开源项目",
-          "DeepMind"
-        ],
-        "cover": "",
-        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
-        "ability": [
-          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
-          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
-          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
-          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
-          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
-        ],
-        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
-        "category": [
-          "开发工具",
-          "AI 与机器学习",
-          "科研工具"
-        ],
-        "suitable": [
-          "强化学习/机器人学研究者",
-          "具身智能与 VLA 大模型工程师",
-          "Sim2Real 落地工程师",
-          "生物力学/康复研究人员",
-          "机械臂与硬件初创团队"
-        ],
-        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
       }
     }
   ]

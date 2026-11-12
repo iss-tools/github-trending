@@ -104787,9 +104787,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 24801,
-      "forks": 1940,
-      "starsAdded": 2842,
+      "stars": 24921,
+      "forks": 1948,
+      "starsAdded": 2776,
       "createdAt": "2026-11-11T17:00:01.866Z",
       "metaData": {
         "forks": "0",
@@ -104840,9 +104840,9 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 12859,
-      "forks": 951,
-      "starsAdded": 1079,
+      "stars": 12934,
+      "forks": 957,
+      "starsAdded": 1078,
       "createdAt": "2026-11-11T17:00:01.927Z",
       "metaData": {
         "forks": "0",
@@ -104893,9 +104893,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 115865,
-      "forks": 12153,
-      "starsAdded": 788,
+      "stars": 115918,
+      "forks": 12158,
+      "starsAdded": 787,
       "createdAt": "2026-11-11T17:00:01.915Z",
       "metaData": {
         "forks": "0",
@@ -104953,9 +104953,9 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 49805,
-      "forks": 3484,
-      "starsAdded": 712,
+      "stars": 49846,
+      "forks": 3487,
+      "starsAdded": 708,
       "createdAt": "2026-11-11T17:00:01.922Z",
       "metaData": {
         "forks": "0",
@@ -105006,9 +105006,9 @@
       "repo": "homeassistant-ai/ha-mcp",
       "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
-      "stars": 7280,
-      "forks": 451,
-      "starsAdded": 640,
+      "stars": 7345,
+      "forks": 454,
+      "starsAdded": 645,
       "createdAt": "2026-11-11T17:00:01.929Z",
       "metaData": {
         "forks": "0",
@@ -105061,6 +105061,58 @@
       }
     },
     {
+      "id": "81ebbdb2-4a5c-47c1-aeb0-8cb06cb5362f",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/shadcn/improve",
+      "repo": "shadcn/improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "language": "",
+      "stars": 10845,
+      "forks": 442,
+      "starsAdded": 361,
+      "createdAt": "2026-11-11T17:00:01.910Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute. - shadcn/improve"
+      },
+      "summaryData": {
+        "tags": [
+          "shadcn",
+          "Agent Skill",
+          "代码审计",
+          "AI 编码",
+          "技术债"
+        ],
+        "cover": "",
+        "title": "shadcn/improve 深度评测：让贵模型写计划、便宜模型干活的 AI 编码 Skill",
+        "ability": [
+          "九类并行审计代码库（bug、安全、性能、技术债等），发现均带 file:line 证据",
+          "生成自包含的 Markdown 实施计划（Plan）并写入 plans/ 目录",
+          "严格只读不改源代码，仅在隔离 worktree 中派执行者干活",
+          "支持 quick/standard/deep 三档强度、分支 diff 审计和单类别聚焦",
+          "Plan 内置验证门、硬边界、STOP 条件与漂移检查，弱模型也能照图施工"
+        ],
+        "summary": "一个让顶级 AI 只审计代码库并输出实施计划、坚决不改代码，把执行交给便宜模型的 Agent Skill。",
+        "category": [
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "用 Claude Code / Cursor 维护真实项目的资深工程师",
+          "接手陌生代码库的新成员或外包开发者",
+          "维护遗留系统、需要管理技术债的团队负责人",
+          "被旗舰模型 token 账单困扰的 AI 编码用户",
+          "想把技术债标准化为可分配 backlog 的团队"
+        ],
+        "description": "shadcn/improve 是 shadcn（shadcn/ui 作者）推出的 AI Agent Skill，一条命令即可让昂贵旗舰模型侦察、审计、复核整个代码库，输出带证据、验证命令和明确边界的实施计划，再由任何便宜模型或人类照图施工。全程只读不改码，把贵的智力和便宜的手彻底拆开，显著降低 agentic 编码成本。"
+      }
+    },
+    {
       "id": "de651c1d-6958-42c4-a273-5d70b829182d",
       "dateAdded": "20261112",
       "type": "github-daily",
@@ -105068,9 +105120,9 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 70122,
-      "forks": 56819,
-      "starsAdded": 429,
+      "stars": 70194,
+      "forks": 56833,
+      "starsAdded": 278,
       "createdAt": "2026-11-11T17:00:01.903Z",
       "metaData": {
         "forks": "0",
@@ -105122,58 +105174,6 @@
       }
     },
     {
-      "id": "81ebbdb2-4a5c-47c1-aeb0-8cb06cb5362f",
-      "dateAdded": "20261112",
-      "type": "github-daily",
-      "url": "https://github.com/shadcn/improve",
-      "repo": "shadcn/improve",
-      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
-      "language": "",
-      "stars": 10782,
-      "forks": 439,
-      "starsAdded": 333,
-      "createdAt": "2026-11-11T17:00:01.910Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute. - shadcn/improve"
-      },
-      "summaryData": {
-        "tags": [
-          "shadcn",
-          "Agent Skill",
-          "代码审计",
-          "AI 编码",
-          "技术债"
-        ],
-        "cover": "",
-        "title": "shadcn/improve 深度评测：让贵模型写计划、便宜模型干活的 AI 编码 Skill",
-        "ability": [
-          "九类并行审计代码库（bug、安全、性能、技术债等），发现均带 file:line 证据",
-          "生成自包含的 Markdown 实施计划（Plan）并写入 plans/ 目录",
-          "严格只读不改源代码，仅在隔离 worktree 中派执行者干活",
-          "支持 quick/standard/deep 三档强度、分支 diff 审计和单类别聚焦",
-          "Plan 内置验证门、硬边界、STOP 条件与漂移检查，弱模型也能照图施工"
-        ],
-        "summary": "一个让顶级 AI 只审计代码库并输出实施计划、坚决不改代码，把执行交给便宜模型的 Agent Skill。",
-        "category": [
-          "AI 编程",
-          "开发工具"
-        ],
-        "suitable": [
-          "用 Claude Code / Cursor 维护真实项目的资深工程师",
-          "接手陌生代码库的新成员或外包开发者",
-          "维护遗留系统、需要管理技术债的团队负责人",
-          "被旗舰模型 token 账单困扰的 AI 编码用户",
-          "想把技术债标准化为可分配 backlog 的团队"
-        ],
-        "description": "shadcn/improve 是 shadcn（shadcn/ui 作者）推出的 AI Agent Skill，一条命令即可让昂贵旗舰模型侦察、审计、复核整个代码库，输出带证据、验证命令和明确边界的实施计划，再由任何便宜模型或人类照图施工。全程只读不改码，把贵的智力和便宜的手彻底拆开，显著降低 agentic 编码成本。"
-      }
-    },
-    {
       "id": "dc3ebbbe-dc7d-4907-a7f1-3a973a7e748c",
       "dateAdded": "20261112",
       "type": "github-daily",
@@ -105181,9 +105181,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "",
       "language": "TypeScript",
-      "stars": 1679,
-      "forks": 137,
-      "starsAdded": 133,
+      "stars": 1725,
+      "forks": 138,
+      "starsAdded": 159,
       "createdAt": "2026-11-11T17:00:01.908Z",
       "metaData": {
         "forks": "0",
@@ -105227,70 +105227,6 @@
       }
     },
     {
-      "id": "a3034b4e-6c0d-4396-bcb4-fccf78613e55",
-      "dateAdded": "20261112",
-      "type": "github-daily",
-      "url": "https://github.com/TheAlgorithms/Java",
-      "repo": "TheAlgorithms/Java",
-      "description": "All Algorithms implemented in Java",
-      "language": "Java",
-      "stars": 66979,
-      "forks": 21500,
-      "starsAdded": 108,
-      "createdAt": "2026-11-11T17:00:01.939Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "algorithm",
-          "algorithm-challenges",
-          "algorithms",
-          "algorithms-datastructures",
-          "data-structures",
-          "hacktoberfest",
-          "java",
-          "search",
-          "sort",
-          "sorting-algorithms"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "All Algorithms implemented in Java. Contribute to TheAlgorithms/Java development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Java",
-          "算法",
-          "数据结构",
-          "开源项目",
-          "面试刷题"
-        ],
-        "cover": "",
-        "title": "TheAlgorithms/Java 深度评测：66k Star 的开源算法百科全书",
-        "ability": [
-          "覆盖排序、搜索、图论、动态规划、密码学等 30+ 算法领域",
-          "每个算法配完整 Javadoc 注释与时间/空间复杂度分析",
-          "全部算法附带 JUnit 单元测试，Maven 一键构建",
-          "CI/CD + Checkstyle/PMD/SpotBugs 静态分析保障代码质量",
-          "支持 Gitpod 云 IDE 一键在线运行与调试"
-        ],
-        "summary": "用 Java 实现几乎所有经典算法与数据结构的开源学习宝库，学习价值拉满但别用于生产。",
-        "category": [
-          "学习教程",
-          "开源项目",
-          "开发工具"
-        ],
-        "suitable": [
-          "学习数据结构与算法的计算机专业学生",
-          "准备面试刷题的求职者",
-          "自学编程的转行新手",
-          "需要查阅算法参考实现的 Java 工程师",
-          "想参与开源贡献的新人（Hacktoberfest）"
-        ],
-        "description": "TheAlgorithms/Java 是 GitHub 上 66k Star 的开源算法百科全书，用 Java 实现了排序、搜索、图论、动态规划、密码学等 30+ 领域的经典算法，每个算法配有完整注释、复杂度分析和单元测试。它定位为学习参考而非生产工具，性能不及 JDK 标准库，但代码教学友好度极高，是算法学习与面试复习的优质免费教材。"
-      }
-    },
-    {
       "id": "ea3ed341-cfd5-449d-bef6-f9ae0eb19525",
       "dateAdded": "20261112",
       "type": "github-daily",
@@ -105298,9 +105234,9 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 11651,
-      "forks": 927,
-      "starsAdded": 20,
+      "stars": 11695,
+      "forks": 936,
+      "starsAdded": 52,
       "createdAt": "2026-11-11T17:00:01.935Z",
       "metaData": {
         "forks": "0",
@@ -105357,6 +105293,70 @@
           "不适合：需要离线扫描、依赖 CVE 管控或 CI 阻断门禁的场景"
         ],
         "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。"
+      }
+    },
+    {
+      "id": "a3034b4e-6c0d-4396-bcb4-fccf78613e55",
+      "dateAdded": "20261112",
+      "type": "github-daily",
+      "url": "https://github.com/TheAlgorithms/Java",
+      "repo": "TheAlgorithms/Java",
+      "description": "All Algorithms implemented in Java",
+      "language": "Java",
+      "stars": 67006,
+      "forks": 21505,
+      "starsAdded": 51,
+      "createdAt": "2026-11-11T17:00:01.939Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "algorithm",
+          "algorithm-challenges",
+          "algorithms",
+          "algorithms-datastructures",
+          "data-structures",
+          "hacktoberfest",
+          "java",
+          "search",
+          "sort",
+          "sorting-algorithms"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "All Algorithms implemented in Java. Contribute to TheAlgorithms/Java development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Java",
+          "算法",
+          "数据结构",
+          "开源项目",
+          "面试刷题"
+        ],
+        "cover": "",
+        "title": "TheAlgorithms/Java 深度评测：66k Star 的开源算法百科全书",
+        "ability": [
+          "覆盖排序、搜索、图论、动态规划、密码学等 30+ 算法领域",
+          "每个算法配完整 Javadoc 注释与时间/空间复杂度分析",
+          "全部算法附带 JUnit 单元测试，Maven 一键构建",
+          "CI/CD + Checkstyle/PMD/SpotBugs 静态分析保障代码质量",
+          "支持 Gitpod 云 IDE 一键在线运行与调试"
+        ],
+        "summary": "用 Java 实现几乎所有经典算法与数据结构的开源学习宝库，学习价值拉满但别用于生产。",
+        "category": [
+          "学习教程",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "学习数据结构与算法的计算机专业学生",
+          "准备面试刷题的求职者",
+          "自学编程的转行新手",
+          "需要查阅算法参考实现的 Java 工程师",
+          "想参与开源贡献的新人（Hacktoberfest）"
+        ],
+        "description": "TheAlgorithms/Java 是 GitHub 上 66k Star 的开源算法百科全书，用 Java 实现了排序、搜索、图论、动态规划、密码学等 30+ 领域的经典算法，每个算法配有完整注释、复杂度分析和单元测试。它定位为学习参考而非生产工具，性能不及 JDK 标准库，但代码教学友好度极高，是算法学习与面试复习的优质免费教材。"
       }
     }
   ]
