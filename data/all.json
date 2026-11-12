@@ -1,6 +1,238 @@
 {
   "all": [
     {
+      "id": "231b468e-c3da-4e97-ae9c-2f5786bb31b7",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "domain": "github.com",
+      "repo": "ggml-org/llama.cpp",
+      "description": "llama.cpp 是本地大模型生态的地基，Ollama、LM Studio 等流行工具底层都跑在它上面。核心价值在于用 GGUF 格式和量化技术把模型体积压缩数倍，配合多硬件后端让大模型能在 MacBook、消费级显卡和国产芯片上流畅运行。它单用户推理体验极佳，但高并发场景吞吐较弱，生产级服务建议改用 vLLM。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-12T11:16:32.028Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ggml"
+        ],
+        "license": "MIT license",
+        "homepage": "https://llama.app",
+        "description": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "llama.cpp",
+          "GGUF",
+          "本地大模型",
+          "推理引擎",
+          "模型量化"
+        ],
+        "cover": "",
+        "title": "llama.cpp 深度评测：本地大模型推理的事实标准引擎",
+        "ability": [
+          "GGUF 单文件模型格式：把权重、tokenizer、元数据打包成一个文件，即拷即用",
+          "全谱系量化（1.5-bit 到 8-bit）：把 30GB 模型压到 4GB，几乎不损质量",
+          "多后端硬件支持：CPU、CUDA、Metal、Vulkan、昇腾、摩尔线程等全平台通吃",
+          "llama-server 内置 OpenAI 兼容 API：改一下 base_url 就能无缝接入现有代码",
+          "零依赖跨平台部署：纯 C/C++ 实现，可跑在笔记本、手机甚至浏览器里"
+        ],
+        "summary": "一个用纯 C/C++ 写成的零依赖大模型推理引擎，让原本只能在数据中心 GPU 上运行的 LLM 飞入普通笔记本和国产硬件。",
+        "category": [
+          "开发工具",
+          "AI 基础设施",
+          "本地部署"
+        ],
+        "suitable": [
+          "想本地跑模型、省 API 费用的独立开发者",
+          "工厂、医院等保密离线场景的边缘部署工程师",
+          "想在 App 内集成 LLM 的 iOS/macOS 开发者",
+          "适配国产芯片（昇腾/摩尔线程）的硬件工程师",
+          "研究量化和性能 benchmark 的 AI 研究者"
+        ],
+        "description": "llama.cpp 是本地大模型生态的地基，Ollama、LM Studio 等流行工具底层都跑在它上面。核心价值在于用 GGUF 格式和量化技术把模型体积压缩数倍，配合多硬件后端让大模型能在 MacBook、消费级显卡和国产芯片上流畅运行。它单用户推理体验极佳，但高并发场景吞吐较弱，生产级服务建议改用 vLLM。"
+      },
+      "type": "project",
+      "dateAdded": "20261112"
+    },
+    {
+      "id": "3eaf6282-23ab-4568-8d74-2a300b1af139",
+      "url": "https://github.com/ashhart/TensorFold",
+      "domain": "github.com",
+      "repo": "ashhart/TensorFold",
+      "description": "TensorFold 是 2026 年 9 月开源的本地 LLM 推理引擎（Apache 2.0，Zig 编写）。它解决了行业默认接受的痛点——投机解码会改变输出，通过 Row-exact kernel 和确定性 Gumbel 采样做到开/关加速输出逐字节一致，速度却快 2~3 倍。局限是仅支持 6 个模型族、社区尚幼、benchmark 多为自报。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-12T11:10:52.131Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-tools",
+          "llm",
+          "llm-inference",
+          "llm-tools"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tensorfold.dev",
+        "description": "LLM Inference Engine for Metal, CUDA and Vulkan. Contribute to ashhart/TensorFold development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "本地推理",
+          "投机解码",
+          "Zig",
+          "Apple Silicon",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "TensorFold 深度评测：字节级精确投机解码的本地 LLM 推理引擎",
+        "ability": [
+          "字节级精确投机解码：开/关加速输出完全一致，agent 可复现",
+          "Apple Silicon 与 DGX Spark 上速度达 vLLM/mlx_lm 的 1.6~3.1 倍",
+          "秒级模型冷启动，比 vLLM 快约 6 倍",
+          "Living Weights：模型运行时把事实写回权重文件，无需 RAG 即可记忆",
+          "Context Compaction：超长对话自动压缩成结构化记忆笔记，不丢系统提示词"
+        ],
+        "summary": "一个用 Zig 写的本地大模型推理引擎，靠'开加速但输出逐字节不变'的精确投机解码，在 Mac 和 DGX Spark 上把推理速度做到竞品的 1.6~3.1 倍。",
+        "category": [
+          "开发工具",
+          "AI 推理",
+          "AI 编程"
+        ],
+        "suitable": [
+          "在 Mac 上跑代码 Agent（Cline/aider 等）的开发者",
+          "拥有 DGX Spark 或 Apple Silicon 工作站的用户",
+          "对输出可复现性有硬性要求的 AI 应用开发者",
+          "追求本地推理极致速度的技术极客"
+        ],
+        "description": "TensorFold 是 2026 年 9 月开源的本地 LLM 推理引擎（Apache 2.0，Zig 编写）。它解决了行业默认接受的痛点——投机解码会改变输出，通过 Row-exact kernel 和确定性 Gumbel 采样做到开/关加速输出逐字节一致，速度却快 2~3 倍。局限是仅支持 6 个模型族、社区尚幼、benchmark 多为自报。"
+      },
+      "type": "project",
+      "dateAdded": "20261112"
+    },
+    {
+      "id": "f2b546a5-54b8-4d93-8a23-26e1227cd159",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "domain": "github.com",
+      "repo": "QwenLM/qwen-code",
+      "description": "Qwen Code 是阿里通义千问团队基于 Gemini CLI fork 并独立演进的开源终端 AI 编程 Agent。框架与模型双开源，支持四大协议接入任意模型，功能堆栈对标 Claude Code，中文体验和 IM 集成是其独特优势。SWE-bench 自测约 77%，真实体验略逊 Claude 但远超预期；免费 OAuth 已于 2026 年 4 月停服，需付费订阅或自带 API Key。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-12T11:07:57.071Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic",
+          "ai",
+          "ai-agent",
+          "ai-coding",
+          "cli",
+          "coding-agent",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "qwen",
+          "terminal",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+        "description": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code"
+      },
+      "summaryData": {
+        "tags": [
+          "Qwen Code",
+          "AI Agent",
+          "终端工具",
+          "代码生成",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Qwen Code 深度评测：阿里开源终端 AI 编程 Agent，Claude Code 的开源平替",
+        "ability": [
+          "终端原生 Agentic Coding，命令行直接读写文件、跑命令、调 MCP",
+          "多协议架构（OpenAI/Anthropic/Gemini/Qwen），可随时切换任意模型或本地 Ollama",
+          "全形态覆盖：CLI、VS Code/JetBrains 插件、桌面应用、IM 机器人（微信/飞书/钉钉）、Daemon 常驻服务",
+          "内置 /review 代码审查、SubAgents、Auto-Memory、Agent Arena 多模型对抗等 Agentic 能力",
+          "框架 Apache 2.0 + 模型开放权重，真正双开源，无厂商锁定"
+        ],
+        "summary": "阿里开源的终端 AI 编程 Agent，功能对标 Claude Code，多协议接入任意模型，中文友好且性价比高，但免费额度已停需付费使用",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "国内后端/全栈开发者",
+          "习惯终端工作流的老手",
+          "对厂商锁定敏感的技术团队",
+          "预算敏感的独立开发者",
+          "Agent 二次开发工程师"
+        ],
+        "description": "Qwen Code 是阿里通义千问团队基于 Gemini CLI fork 并独立演进的开源终端 AI 编程 Agent。框架与模型双开源，支持四大协议接入任意模型，功能堆栈对标 Claude Code，中文体验和 IM 集成是其独特优势。SWE-bench 自测约 77%，真实体验略逊 Claude 但远超预期；免费 OAuth 已于 2026 年 4 月停服，需付费订阅或自带 API Key。"
+      },
+      "type": "project",
+      "dateAdded": "20261112"
+    },
+    {
+      "id": "0bdf1b85-34eb-4cb7-9127-c51d15a541ea",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "domain": "github.com",
+      "repo": "pookjw/HermesEnabler",
+      "description": "HermesEnabler 是开发者 pookjw 开源的 watchOS 灰色地带工具，通过 MobileGestalt 设备指纹伪装，让系统误认为你佩戴的是 Hermès 版手表，从而解锁爱马仕专属表盘，并附带大量隐藏功能开关。需用 Mac + Xcode 侧载安装，7 天需重签，改版前务必备份，不建议在 Beta 系统使用。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-12T11:04:32.043Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Enable Hermès Watch Faces on any Apple Watch devices - pookjw/HermesEnabler"
+      },
+      "summaryData": {
+        "tags": [
+          "Apple Watch",
+          "watchOS",
+          "爱马仕表盘",
+          "MobileGestalt",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "HermesEnabler 深度评测：让任意 Apple Watch 解锁爱马仕专属表盘的开源神器",
+        "ability": [
+          "解锁全部爱马仕官方真表盘（真字体、真机械动画、真复杂功能联动）",
+          "调整 Ultra 表盘布局与屏幕分辨率预设",
+          "开关 Apple Intelligence、端侧 Siri、Audio Intelligence 等隐藏功能",
+          "自定义地区代码与销售区域",
+          "提供手动/自动/导入三种备份机制，支持 Watch 与 iPhone 互传并带完整性校验"
+        ],
+        "summary": "通过篡改 watchOS 设备指纹，让普通 Apple Watch 免费解锁被苹果硬件锁定的爱马仕表盘及隐藏功能。",
+        "category": [
+          "开发工具",
+          "数码玩机",
+          "开源项目"
+        ],
+        "suitable": [
+          "拥有 Mac + Xcode 且使用正式版 watchOS 的 Apple Watch 用户",
+          "想免费获得爱马仕表盘体验的普通表主",
+          "Apple Watch Ultra / Ultra 2 进阶玩家",
+          "iOS / watchOS 逆向工程与 MobileGestalt 研究爱好者",
+          "科技测评与视频内容创作者"
+        ],
+        "description": "HermesEnabler 是开发者 pookjw 开源的 watchOS 灰色地带工具，通过 MobileGestalt 设备指纹伪装，让系统误认为你佩戴的是 Hermès 版手表，从而解锁爱马仕专属表盘，并附带大量隐藏功能开关。需用 Mac + Xcode 侧载安装，7 天需重签，改版前务必备份，不建议在 Beta 系统使用。"
+      },
+      "type": "project",
+      "dateAdded": "20261112"
+    },
+    {
       "id": "9832f01e-cfe2-47d0-8c8a-b6110d73c4ee",
       "url": "https://github.com/Vincentwei1021/video-shotcraft",
       "domain": "github.com",
@@ -3285,7 +3517,7 @@
           "mcp"
         ],
         "license": "MIT license",
-        "homepage": "https://www.copilotkit.ai/openbot",
+        "homepage": "https://open.bot",
         "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent. - CopilotKit/OpenBot"
       },
       "summaryData": {
@@ -25503,10 +25735,19 @@
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [],
+        "topics": [
+          "agent-orchestration",
+          "agents",
+          "ai",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "code",
+          "vibe-coding"
+        ],
         "license": "MIT license",
         "homepage": "https://t3.codes",
-        "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub."
+        "description": "The best way to control Claude Code, Codex and more from any computer or phone - pingdotgg/t3code"
       },
       "summaryData": {
         "tags": [
@@ -26426,7 +26667,7 @@
         "topics": [],
         "license": "License",
         "homepage": "",
-        "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
+        "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) - Alishahryar1/free-claude-code"
       },
       "summaryData": {
         "tags": [

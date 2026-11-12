@@ -5,6 +5,34 @@
     <link>https://trending.pptboard.com</link>
     <description>AI generated insights for GitHub trending repositories</description>
     <item>
+      <title>ggml-org/llama.cpp</title>
+      <link>https://trending.pptboard.com/repo/ggml-org/llama.cpp.html</link>
+      <description>一个用纯 C/C++ 写成的零依赖大模型推理引擎，让原本只能在数据中心 GPU 上运行的 LLM 飞入普通笔记本和国产硬件。</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/ggml-org/llama.cpp.html</guid>
+    </item>
+    <item>
+      <title>ashhart/TensorFold</title>
+      <link>https://trending.pptboard.com/repo/ashhart/TensorFold.html</link>
+      <description>一个用 Zig 写的本地大模型推理引擎，靠'开加速但输出逐字节不变'的精确投机解码，在 Mac 和 DGX Spark 上把推理速度做到竞品的 1.6~3.1 倍。</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/ashhart/TensorFold.html</guid>
+    </item>
+    <item>
+      <title>QwenLM/qwen-code</title>
+      <link>https://trending.pptboard.com/repo/QwenLM/qwen-code.html</link>
+      <description>阿里开源的终端 AI 编程 Agent，功能对标 Claude Code，多协议接入任意模型，中文友好且性价比高，但免费额度已停需付费使用</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/QwenLM/qwen-code.html</guid>
+    </item>
+    <item>
+      <title>pookjw/HermesEnabler</title>
+      <link>https://trending.pptboard.com/repo/pookjw/HermesEnabler.html</link>
+      <description>通过篡改 watchOS 设备指纹，让普通 Apple Watch 免费解锁被苹果硬件锁定的爱马仕表盘及隐藏功能。</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://trending.pptboard.com/repo/pookjw/HermesEnabler.html</guid>
+    </item>
+    <item>
       <title>Vincentwei1021/video-shotcraft</title>
       <link>https://trending.pptboard.com/repo/Vincentwei1021/video-shotcraft.html</link>
       <description>一个安装到 Claude Code 的开源 Skill，把顶级 SaaS 宣传片的镜头语言拆成 124 张配方卡，让 AI 用代码自动产出可二次编辑的电影感产品宣传片</description>
@@ -325,34 +353,6 @@
       <description>一款自带动画、模糊、发光特效的动态平铺 Wayland 合成器，让 Linux 桌面既高效又养眼。</description>
       <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
       <guid>https://trending.pptboard.com/repo/hyprwm/Hyprland.html</guid>
-    </item>
-    <item>
-      <title>patchy631/ai-engineering-hub</title>
-      <link>https://trending.pptboard.com/repo/patchy631/ai-engineering-hub.html</link>
-      <description>一个 37k+ Star 的开源 AI 工程实战项目合集，90+ 个可一键运行的 Notebook，帮你把 RAG、Agent、MCP 等前沿概念从'看得懂'变成'跑得通'。</description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/patchy631/ai-engineering-hub.html</guid>
-    </item>
-    <item>
-      <title>anomalyco/hex</title>
-      <link>https://trending.pptboard.com/repo/anomalyco/hex.html</link>
-      <description>HEX 是一款本地优先的语音听写工具，按住快捷键说话、松开即得文字，全程离线、免费开源、保护隐私。</description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/anomalyco/hex.html</guid>
-    </item>
-    <item>
-      <title>beenuar/AiSOC</title>
-      <link>https://trending.pptboard.com/repo/beenuar/AiSOC.html</link>
-      <description>开源可自托管的 AI 安全运营中心：本地 LLM 自动分诊安全告警，AI 每一步调查都有可回放审计的账本。</description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/beenuar/AiSOC.html</guid>
-    </item>
-    <item>
-      <title>kornia/kornia</title>
-      <link>https://trending.pptboard.com/repo/kornia/kornia.html</link>
-      <description>Kornia 是一个构建在 PyTorch 之上的可微计算机视觉库，把传统 CV 算子变成能反向传播、能跑 GPU、能批处理的神经网络零件。</description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <guid>https://trending.pptboard.com/repo/kornia/kornia.html</guid>
     </item>
   </channel>
 </rss>
