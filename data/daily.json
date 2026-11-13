@@ -105920,9 +105920,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 26343,
-      "forks": 2040,
-      "starsAdded": 1789,
+      "stars": 26494,
+      "forks": 2055,
+      "starsAdded": 1830,
       "createdAt": "2026-11-12T17:00:02.567Z",
       "metaData": {
         "forks": "0",
@@ -105973,9 +105973,9 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 13771,
-      "forks": 1025,
-      "starsAdded": 974,
+      "stars": 13889,
+      "forks": 1037,
+      "starsAdded": 967,
       "createdAt": "2026-11-12T17:00:02.528Z",
       "metaData": {
         "forks": "0",
@@ -106026,9 +106026,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 116574,
-      "forks": 12204,
-      "starsAdded": 812,
+      "stars": 116655,
+      "forks": 12209,
+      "starsAdded": 816,
       "createdAt": "2026-11-12T17:00:02.564Z",
       "metaData": {
         "forks": "0",
@@ -106086,9 +106086,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 2678,
-      "forks": 186,
-      "starsAdded": 799,
+      "stars": 2872,
+      "forks": 194,
+      "starsAdded": 739,
       "createdAt": "2026-11-12T17:00:02.306Z",
       "metaData": {
         "forks": "0",
@@ -106139,9 +106139,9 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 12296,
-      "forks": 972,
-      "starsAdded": 663,
+      "stars": 12398,
+      "forks": 976,
+      "starsAdded": 643,
       "createdAt": "2026-11-12T17:00:02.431Z",
       "metaData": {
         "forks": "0",
@@ -106208,9 +106208,9 @@
       "repo": "Alishahryar1/free-claude-code",
       "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 69145,
-      "forks": 10742,
-      "starsAdded": 461,
+      "stars": 69268,
+      "forks": 10755,
+      "starsAdded": 415,
       "createdAt": "2026-11-12T17:00:02.579Z",
       "metaData": {
         "forks": "0",
@@ -106251,59 +106251,6 @@
       }
     },
     {
-      "id": "05cd3a7e-a376-40ef-b8a6-5820cf20ffdc",
-      "dateAdded": "20261113",
-      "type": "github-daily",
-      "url": "https://github.com/pookjw/HermesEnabler",
-      "repo": "pookjw/HermesEnabler",
-      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
-      "language": "Objective-C",
-      "stars": 1480,
-      "forks": 138,
-      "starsAdded": 300,
-      "createdAt": "2026-11-12T17:00:02.515Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Enable Hermès Watch Faces on any Apple Watch devices - pookjw/HermesEnabler"
-      },
-      "summaryData": {
-        "tags": [
-          "Apple Watch",
-          "watchOS",
-          "爱马仕表盘",
-          "MobileGestalt",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "HermesEnabler 深度评测：让任意 Apple Watch 解锁爱马仕专属表盘的开源神器",
-        "ability": [
-          "解锁全部爱马仕官方真表盘（真字体、真机械动画、真复杂功能联动）",
-          "调整 Ultra 表盘布局与屏幕分辨率预设",
-          "开关 Apple Intelligence、端侧 Siri、Audio Intelligence 等隐藏功能",
-          "自定义地区代码与销售区域",
-          "提供手动/自动/导入三种备份机制，支持 Watch 与 iPhone 互传并带完整性校验"
-        ],
-        "summary": "通过篡改 watchOS 设备指纹，让普通 Apple Watch 免费解锁被苹果硬件锁定的爱马仕表盘及隐藏功能。",
-        "category": [
-          "开发工具",
-          "数码玩机",
-          "开源项目"
-        ],
-        "suitable": [
-          "拥有 Mac + Xcode 且使用正式版 watchOS 的 Apple Watch 用户",
-          "想免费获得爱马仕表盘体验的普通表主",
-          "Apple Watch Ultra / Ultra 2 进阶玩家",
-          "iOS / watchOS 逆向工程与 MobileGestalt 研究爱好者",
-          "科技测评与视频内容创作者"
-        ],
-        "description": "HermesEnabler 是开发者 pookjw 开源的 watchOS 灰色地带工具，通过 MobileGestalt 设备指纹伪装，让系统误认为你佩戴的是 Hermès 版手表，从而解锁爱马仕专属表盘，并附带大量隐藏功能开关。需用 Mac + Xcode 侧载安装，7 天需重签，改版前务必备份，不建议在 Beta 系统使用。"
-      }
-    },
-    {
       "id": "f0dec96a-9518-4e18-955b-6db5577f543a",
       "dateAdded": "20261113",
       "type": "github-daily",
@@ -106311,9 +106258,9 @@
       "repo": "CopilotKit/OpenBot",
       "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
       "language": "TypeScript",
-      "stars": 11477,
-      "forks": 1424,
-      "starsAdded": 291,
+      "stars": 11581,
+      "forks": 1430,
+      "starsAdded": 298,
       "createdAt": "2026-11-12T17:00:02.575Z",
       "metaData": {
         "forks": "0",
@@ -106365,6 +106312,59 @@
       }
     },
     {
+      "id": "05cd3a7e-a376-40ef-b8a6-5820cf20ffdc",
+      "dateAdded": "20261113",
+      "type": "github-daily",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "repo": "pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "stars": 1520,
+      "forks": 139,
+      "starsAdded": 218,
+      "createdAt": "2026-11-12T17:00:02.515Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Enable Hermès Watch Faces on any Apple Watch devices - pookjw/HermesEnabler"
+      },
+      "summaryData": {
+        "tags": [
+          "Apple Watch",
+          "watchOS",
+          "爱马仕表盘",
+          "MobileGestalt",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "HermesEnabler 深度评测：让任意 Apple Watch 解锁爱马仕专属表盘的开源神器",
+        "ability": [
+          "解锁全部爱马仕官方真表盘（真字体、真机械动画、真复杂功能联动）",
+          "调整 Ultra 表盘布局与屏幕分辨率预设",
+          "开关 Apple Intelligence、端侧 Siri、Audio Intelligence 等隐藏功能",
+          "自定义地区代码与销售区域",
+          "提供手动/自动/导入三种备份机制，支持 Watch 与 iPhone 互传并带完整性校验"
+        ],
+        "summary": "通过篡改 watchOS 设备指纹，让普通 Apple Watch 免费解锁被苹果硬件锁定的爱马仕表盘及隐藏功能。",
+        "category": [
+          "开发工具",
+          "数码玩机",
+          "开源项目"
+        ],
+        "suitable": [
+          "拥有 Mac + Xcode 且使用正式版 watchOS 的 Apple Watch 用户",
+          "想免费获得爱马仕表盘体验的普通表主",
+          "Apple Watch Ultra / Ultra 2 进阶玩家",
+          "iOS / watchOS 逆向工程与 MobileGestalt 研究爱好者",
+          "科技测评与视频内容创作者"
+        ],
+        "description": "HermesEnabler 是开发者 pookjw 开源的 watchOS 灰色地带工具，通过 MobileGestalt 设备指纹伪装，让系统误认为你佩戴的是 Hermès 版手表，从而解锁爱马仕专属表盘，并附带大量隐藏功能开关。需用 Mac + Xcode 侧载安装，7 天需重签，改版前务必备份，不建议在 Beta 系统使用。"
+      }
+    },
+    {
       "id": "678f6ec8-7179-4ea7-a8fe-72e3c7fc0e5c",
       "dateAdded": "20261113",
       "type": "github-daily",
@@ -106372,9 +106372,9 @@
       "repo": "ggml-org/llama.cpp",
       "description": "LLM inference in C/C++",
       "language": "C++",
-      "stars": 134454,
-      "forks": 25495,
-      "starsAdded": 287,
+      "stars": 134539,
+      "forks": 25507,
+      "starsAdded": 176,
       "createdAt": "2026-11-12T17:00:02.586Z",
       "metaData": {
         "forks": "0",
@@ -106427,8 +106427,8 @@
       "repo": "QwenLM/qwen-code",
       "description": "An open-source AI coding agent that lives in your terminal.",
       "language": "TypeScript",
-      "stars": 29719,
-      "forks": 3389,
+      "stars": 29787,
+      "forks": 3392,
       "starsAdded": 151,
       "createdAt": "2026-11-12T17:00:02.538Z",
       "metaData": {
@@ -106486,69 +106486,6 @@
       }
     },
     {
-      "id": "c5727d66-527c-4356-be92-db5e0ae706d8",
-      "dateAdded": "20261113",
-      "type": "github-daily",
-      "url": "https://github.com/nodejs/node",
-      "repo": "nodejs/node",
-      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-      "language": "JavaScript",
-      "stars": 123562,
-      "forks": 38053,
-      "starsAdded": 133,
-      "createdAt": "2026-11-12T17:00:02.550Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "javascript",
-          "js",
-          "linux",
-          "macos",
-          "mit",
-          "node",
-          "nodejs",
-          "runtime",
-          "windows"
-        ],
-        "license": "License",
-        "homepage": "https://nodejs.org",
-        "description": "Node.js JavaScript runtime ✨🐢🚀✨. Contribute to nodejs/node development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Node.js",
-          "JavaScript",
-          "运行时",
-          "开源项目",
-          "后端开发"
-        ],
-        "cover": "",
-        "title": "Node.js 深度评测：定义服务端 JavaScript 的开源巨头",
-        "ability": [
-          "事件驱动 + 非阻塞 I/O，轻松支撑数万并发连接",
-          "内置测试运行器 node:test，零依赖替代 Jest",
-          "v24 起原生稳定支持 TypeScript，直接运行 .ts 文件",
-          "依托 npm 庞大生态，超 200 万可复用包",
-          "提供 worker_threads / cluster 等多核扩展方案"
-        ],
-        "summary": "Node.js 是用事件循环重新定义服务端开发的 JavaScript 运行时，是生产环境的默认答案。",
-        "category": [
-          "开发工具",
-          "后端开发",
-          "开源项目"
-        ],
-        "suitable": [
-          "后端工程师与架构师",
-          "想转型全栈的前端开发者",
-          "希望进入大厂的开源贡献者",
-          "DevOps / SRE 运维人员",
-          "JavaScript 初学者"
-        ],
-        "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
-      }
-    },
-    {
       "id": "dedd76a3-d80c-4868-8e87-e2c91ca4700a",
       "dateAdded": "20261113",
       "type": "github-daily",
@@ -106556,9 +106493,9 @@
       "repo": "nvm-sh/nvm",
       "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
       "language": "Shell",
-      "stars": 95982,
-      "forks": 10756,
-      "starsAdded": 107,
+      "stars": 96005,
+      "forks": 10758,
+      "starsAdded": 63,
       "createdAt": "2026-11-12T17:00:02.472Z",
       "metaData": {
         "forks": "0",
@@ -106613,6 +106550,69 @@
       }
     },
     {
+      "id": "c5727d66-527c-4356-be92-db5e0ae706d8",
+      "dateAdded": "20261113",
+      "type": "github-daily",
+      "url": "https://github.com/nodejs/node",
+      "repo": "nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "stars": 123592,
+      "forks": 38054,
+      "starsAdded": 62,
+      "createdAt": "2026-11-12T17:00:02.550Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "javascript",
+          "js",
+          "linux",
+          "macos",
+          "mit",
+          "node",
+          "nodejs",
+          "runtime",
+          "windows"
+        ],
+        "license": "License",
+        "homepage": "https://nodejs.org",
+        "description": "Node.js JavaScript runtime ✨🐢🚀✨. Contribute to nodejs/node development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "JavaScript",
+          "运行时",
+          "开源项目",
+          "后端开发"
+        ],
+        "cover": "",
+        "title": "Node.js 深度评测：定义服务端 JavaScript 的开源巨头",
+        "ability": [
+          "事件驱动 + 非阻塞 I/O，轻松支撑数万并发连接",
+          "内置测试运行器 node:test，零依赖替代 Jest",
+          "v24 起原生稳定支持 TypeScript，直接运行 .ts 文件",
+          "依托 npm 庞大生态，超 200 万可复用包",
+          "提供 worker_threads / cluster 等多核扩展方案"
+        ],
+        "summary": "Node.js 是用事件循环重新定义服务端开发的 JavaScript 运行时，是生产环境的默认答案。",
+        "category": [
+          "开发工具",
+          "后端开发",
+          "开源项目"
+        ],
+        "suitable": [
+          "后端工程师与架构师",
+          "想转型全栈的前端开发者",
+          "希望进入大厂的开源贡献者",
+          "DevOps / SRE 运维人员",
+          "JavaScript 初学者"
+        ],
+        "description": "Node.js 官方仓库（nodejs/node）基于 V8 引擎与 libuv 库构建，用单线程事件循环 + 多线程 I/O 调度的架构解决了传统服务端高并发的痛点。LTS 版本支持长达 30 个月，生态成熟度满分，虽在微基准上略逊于 Bun，但凭借无可撼动的生态壁垒，仍是 90% 后端项目的首选运行时。"
+      }
+    },
+    {
       "id": "b061ea47-8d92-49ee-ba92-1fa30ca70efc",
       "dateAdded": "20261113",
       "type": "github-daily",
@@ -106620,9 +106620,9 @@
       "repo": "ashhart/TensorFold",
       "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
       "language": "Zig",
-      "stars": 1902,
+      "stars": 1928,
       "forks": 391,
-      "starsAdded": 94,
+      "starsAdded": 54,
       "createdAt": "2026-11-12T17:00:02.548Z",
       "metaData": {
         "forks": "0",

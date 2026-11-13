@@ -26232,9 +26232,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 71060,
-      "forks": 4722,
-      "starsAdded": 11507,
+      "stars": 71197,
+      "forks": 4733,
+      "starsAdded": 10700,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
         "forks": "0",
@@ -26277,57 +26277,6 @@
       }
     },
     {
-      "id": "5ee7642d-783a-4262-95d7-c50d59ef9895",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/mattpocock/skills",
-      "repo": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 322895,
-      "forks": 27076,
-      "starsAdded": 9575,
-      "createdAt": "2026-11-08T18:00:03.968Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://aihero.dev/skills",
-        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "GitHub",
-          "AI 技能",
-          "TDD",
-          "工作流"
-        ],
-        "cover": "",
-        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
-        "ability": [
-          "需求精准对齐",
-          "测试驱动开发 (TDD)",
-          "生成技术规范与工单",
-          "代码架构优化",
-          "系统化Bug诊断"
-        ],
-        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
-        "category": [
-          "AI 编程",
-          "开发者工具"
-        ],
-        "suitable": [
-          "追求代码质量的软件工程师",
-          "技术团队负责人",
-          "独立开发者",
-          "AI 编程工具深度用户"
-        ],
-        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
-      }
-    },
-    {
       "id": "8825ba99-430a-4601-8947-e81f90023639",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26335,9 +26284,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 21664,
-      "forks": 3016,
-      "starsAdded": 9257,
+      "stars": 21702,
+      "forks": 3018,
+      "starsAdded": 9104,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
         "forks": "0",
@@ -26393,56 +26342,54 @@
       }
     },
     {
-      "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
+      "id": "5ee7642d-783a-4262-95d7-c50d59ef9895",
       "dateAdded": "202646",
       "type": "github-weekly",
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "repo": "NVIDIA/auto-ontology",
-      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "language": "Python",
-      "stars": 12186,
-      "forks": 1005,
-      "starsAdded": 7947,
-      "createdAt": "2026-11-08T18:00:03.599Z",
+      "url": "https://github.com/mattpocock/skills",
+      "repo": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 322999,
+      "forks": 27092,
+      "starsAdded": 8731,
+      "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+        "license": "MIT license",
+        "homepage": "https://aihero.dev/skills",
+        "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills"
       },
       "summaryData": {
         "tags": [
-          "NVIDIA",
-          "语义层",
-          "知识图谱",
-          "MCP",
-          "Text-to-SQL"
+          "开源项目",
+          "GitHub",
+          "AI 技能",
+          "TDD",
+          "工作流"
         ],
         "cover": "",
-        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "title": "Matt Pocock's Skills：让 AI 编程助手成为真正“高级工程师”的实战指南",
         "ability": [
-          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
-          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
-          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
-          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
-          "支持人工修正回灌本体的学习回路，语义层越用越准"
+          "需求精准对齐",
+          "测试驱动开发 (TDD)",
+          "生成技术规范与工单",
+          "代码架构优化",
+          "系统化Bug诊断"
         ],
-        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "summary": "一套将资深工程师经验转化为可复用AI技能的开源项目，让Claude Code等工具像专家一样思考与编码。",
         "category": [
-          "开源项目",
-          "开发工具",
-          "AI 基础设施"
+          "AI 编程",
+          "开发者工具"
         ],
         "suitable": [
-          "企业数据平台团队（统一多系统数据口径）",
-          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
-          "BI / 数据分析工程师（自动生成语义层初稿）",
-          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
-          "研究 Agent 可信度的学术研究者"
+          "追求代码质量的软件工程师",
+          "技术团队负责人",
+          "独立开发者",
+          "AI 编程工具深度用户"
         ],
-        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+        "description": "该项目通过定义 /grill-with-docs、/tdd 等技能，将软件工程的最佳实践融入AI工作流。它解决了AI编程中沟通失准、代码质量不可控等痛点，帮助团队建立共享语言，实现从“快速生成代码”到“高质量工程化交付”的转变。"
       }
     },
     {
@@ -26453,9 +26400,9 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 22636,
-      "forks": 1678,
-      "starsAdded": 7772,
+      "stars": 22698,
+      "forks": 1683,
+      "starsAdded": 6414,
       "createdAt": "2026-11-09T12:00:05.698Z",
       "metaData": {
         "forks": "0",
@@ -26512,6 +26459,61 @@
       }
     },
     {
+      "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 193692,
+      "forks": 22787,
+      "starsAdded": 6055,
+      "createdAt": "2026-11-08T18:00:03.821Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
       "id": "59d49d12-c3e6-41dd-b805-09fd03207b0e",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26565,6 +26567,59 @@
       }
     },
     {
+      "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 12229,
+      "forks": 1007,
+      "starsAdded": 5802,
+      "createdAt": "2026-11-08T18:00:03.599Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
       "id": "c6b2e432-5df1-455e-af1d-52895f0ca2d1",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26572,9 +26627,9 @@
       "repo": "D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "language": "Python",
-      "stars": 102061,
-      "forks": 10622,
-      "starsAdded": 5814,
+      "stars": 102124,
+      "forks": 10627,
+      "starsAdded": 4743,
       "createdAt": "2026-11-08T18:00:03.962Z",
       "metaData": {
         "forks": "0",
@@ -26639,58 +26694,56 @@
       }
     },
     {
-      "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
+      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
       "dateAdded": "202646",
       "type": "github-weekly",
-      "url": "https://github.com/anthropics/skills",
-      "repo": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "stars": 193635,
-      "forks": 22777,
-      "starsAdded": 5738,
-      "createdAt": "2026-11-08T18:00:03.821Z",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 50322,
+      "forks": 3504,
+      "starsAdded": 4601,
+      "createdAt": "2026-11-08T18:00:03.966Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "agent-skills"
-        ],
-        "license": "",
-        "homepage": "",
-        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "Anthropic",
-          "Claude",
-          "Agent Skills",
-          "MCP",
-          "开源生态"
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
         ],
         "cover": "",
-        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
         "ability": [
-          "标准化技能定义",
-          "动态加载与组合",
-          "渐进式上下文管理",
-          "跨平台生态兼容",
-          "脚本与资源集成"
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
         ],
-        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
         "category": [
-          "AI 编程",
           "开发工具",
-          "开源框架"
+          "AI 编程",
+          "浏览器自动化"
         ],
         "suitable": [
-          "AI 应用开发者",
-          "研发与 DevOps 工程师",
-          "产品与知识管理者",
-          "企业工具链负责人",
-          "Agent 架构研究者"
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
         ],
-        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {
@@ -26828,59 +26881,6 @@
           "命理类内容创作者"
         ],
         "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
-      }
-    },
-    {
-      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 50277,
-      "forks": 3501,
-      "starsAdded": 4183,
-      "createdAt": "2026-11-08T18:00:03.966Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {
@@ -27085,9 +27085,9 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 94821,
-      "forks": 11658,
-      "starsAdded": 2310,
+      "stars": 94840,
+      "forks": 11667,
+      "starsAdded": 2339,
       "createdAt": "2026-11-11T11:00:03.795Z",
       "metaData": {
         "forks": "0",
@@ -27271,9 +27271,9 @@
       "repo": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars": 24045,
-      "forks": 2003,
-      "starsAdded": 2013,
+      "stars": 24060,
+      "forks": 2004,
+      "starsAdded": 1933,
       "createdAt": "2026-11-11T11:00:03.805Z",
       "metaData": {
         "forks": "0",
@@ -27434,6 +27434,63 @@
       }
     },
     {
+      "id": "14311865-e588-451d-a7da-8c41894dce33",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "repo": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 17761,
+      "forks": 2179,
+      "starsAdded": 1671,
+      "createdAt": "2026-11-11T11:00:03.809Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
       "id": "51eba984-78b6-4830-8745-3e16116debe8",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27492,63 +27549,6 @@
           "需要自动生成 PR 描述和 CHANGELOG 的开源项目维护者"
         ],
         "description": "PR-Agent 是 AI 代码审查赛道的开山之作，由 Qodo 开源（Apache 2.0 协议）。在 PR 评论区输入斜杠命令即可触发结构化评审、代码改进建议和 PR 描述生成，精准定位到行号。它采用 PR 压缩和 JSON 提示词两项核心工程设计，平台、模型、部署方式三重中立，是企业私有化部署 AI 评审的首选。局限是缺乏全仓库上下文、存在 AI 评审通病（噪音与幻觉），且最尖端能力被留在闭源商业版中。"
-      }
-    },
-    {
-      "id": "14311865-e588-451d-a7da-8c41894dce33",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "repo": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "stars": 17748,
-      "forks": 2180,
-      "starsAdded": 1535,
-      "createdAt": "2026-11-11T11:00:03.809Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "mujoco",
-          "physics",
-          "robotics"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://mujoco.org",
-        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
-      },
-      "summaryData": {
-        "tags": [
-          "物理引擎",
-          "机器人仿真",
-          "强化学习",
-          "开源项目",
-          "DeepMind"
-        ],
-        "cover": "",
-        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
-        "ability": [
-          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
-          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
-          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
-          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
-          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
-        ],
-        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
-        "category": [
-          "开发工具",
-          "AI 与机器学习",
-          "科研工具"
-        ],
-        "suitable": [
-          "强化学习/机器人学研究者",
-          "具身智能与 VLA 大模型工程师",
-          "Sim2Real 落地工程师",
-          "生物力学/康复研究人员",
-          "机械臂与硬件初创团队"
-        ],
-        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
       }
     },
     {
