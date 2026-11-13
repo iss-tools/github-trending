@@ -2,15 +2,15 @@
   "topTags": [
     {
       "tag": "开源",
-      "count": 655
+      "count": 657
     },
     {
       "tag": "开源项目",
-      "count": 610
+      "count": 615
     },
     {
       "tag": "AI Agent",
-      "count": 446
+      "count": 448
     },
     {
       "tag": "GitHub",
@@ -22,7 +22,7 @@
     },
     {
       "tag": "Claude Code",
-      "count": 249
+      "count": 250
     },
     {
       "tag": "Claude",
@@ -30,7 +30,7 @@
     },
     {
       "tag": "MCP",
-      "count": 188
+      "count": 189
     },
     {
       "tag": "Rust",
@@ -38,7 +38,7 @@
     },
     {
       "tag": "自托管",
-      "count": 127
+      "count": 130
     },
     {
       "tag": "本地部署",
@@ -53,6 +53,10 @@
       "count": 94
     },
     {
+      "tag": "LLM",
+      "count": 92
+    },
+    {
       "tag": "Anthropic",
       "count": 90
     },
@@ -61,12 +65,12 @@
       "count": 90
     },
     {
-      "tag": "LLM",
-      "count": 90
-    },
-    {
       "tag": "Python",
       "count": 86
+    },
+    {
+      "tag": "开源工具",
+      "count": 78
     },
     {
       "tag": "Agent",
@@ -75,24 +79,20 @@
     {
       "tag": "Cursor",
       "count": 77
-    },
-    {
-      "tag": "开源工具",
-      "count": 76
     }
   ],
   "topCategories": [
     {
       "name": "开发工具",
-      "count": 1950
+      "count": 1962
     },
     {
       "name": "AI 编程",
-      "count": 1266
+      "count": 1273
     },
     {
       "name": "开源项目",
-      "count": 502
+      "count": 504
     },
     {
       "name": "效率工具",
@@ -104,15 +104,15 @@
     },
     {
       "name": "生活效率",
-      "count": 88
+      "count": 89
     },
     {
       "name": "网络安全",
-      "count": 87
+      "count": 89
     },
     {
       "name": "AI 应用",
-      "count": 81
+      "count": 83
     },
     {
       "name": "AI编程",
@@ -225,6 +225,10 @@
       "count": 45
     },
     {
+      "name": "软件开发者",
+      "count": 39
+    },
+    {
       "name": "技术团队",
       "count": 39
     },
@@ -237,10 +241,6 @@
       "count": 39
     },
     {
-      "name": "软件开发者",
-      "count": 38
-    },
-    {
       "name": "专业开发团队",
       "count": 38
     }
@@ -248,7 +248,7 @@
   "topTopics": [
     {
       "name": "claude-code",
-      "count": 505
+      "count": 506
     },
     {
       "name": "ai",
@@ -260,11 +260,11 @@
     },
     {
       "name": "mcp",
-      "count": 328
+      "count": 329
     },
     {
       "name": "llm",
-      "count": 324
+      "count": 325
     },
     {
       "name": "claude",
@@ -272,15 +272,15 @@
     },
     {
       "name": "agent-skills",
-      "count": 281
+      "count": 282
     },
     {
       "name": "codex",
-      "count": 259
+      "count": 261
     },
     {
       "name": "typescript",
-      "count": 208
+      "count": 209
     },
     {
       "name": "python",
@@ -288,11 +288,11 @@
     },
     {
       "name": "skills",
-      "count": 190
+      "count": 191
     },
     {
       "name": "agents",
-      "count": 153
+      "count": 154
     },
     {
       "name": "developer-tools",
@@ -304,7 +304,7 @@
     },
     {
       "name": "agent",
-      "count": 130
+      "count": 131
     },
     {
       "name": "claude-skills",
@@ -312,7 +312,7 @@
     },
     {
       "name": "cli",
-      "count": 106
+      "count": 107
     },
     {
       "name": "cursor",
@@ -324,25 +324,25 @@
     },
     {
       "name": "ai-agent",
-      "count": 100
+      "count": 101
     }
   ],
   "topLanguages": [
     {
       "name": "Python",
-      "count": 762
+      "count": 764
     },
     {
       "name": "TypeScript",
-      "count": 587
+      "count": 591
     },
     {
       "name": "JavaScript",
-      "count": 271
+      "count": 272
     },
     {
       "name": "Rust",
-      "count": 209
+      "count": 210
     },
     {
       "name": "Shell",
@@ -350,11 +350,11 @@
     },
     {
       "name": "Go",
-      "count": 107
+      "count": 109
     },
     {
       "name": "C++",
-      "count": 57
+      "count": 58
     },
     {
       "name": "C",
@@ -401,11 +401,11 @@
       "count": 8
     },
     {
-      "name": "PHP",
-      "count": 6
+      "name": "Ruby",
+      "count": 7
     },
     {
-      "name": "Ruby",
+      "name": "PHP",
       "count": 6
     }
   ],
