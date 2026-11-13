@@ -107202,8 +107202,8 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 4413,
-      "forks": 249,
+      "stars": 4476,
+      "forks": 252,
       "starsAdded": 1875,
       "createdAt": "2026-11-13T16:00:02.182Z",
       "metaData": {
@@ -107255,8 +107255,8 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 14483,
-      "forks": 1092,
+      "stars": 14520,
+      "forks": 1097,
       "starsAdded": 944,
       "createdAt": "2026-11-13T16:00:02.263Z",
       "metaData": {
@@ -107308,8 +107308,8 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 12922,
-      "forks": 1011,
+      "stars": 12954,
+      "forks": 1013,
       "starsAdded": 754,
       "createdAt": "2026-11-13T16:00:02.243Z",
       "metaData": {
@@ -107370,6 +107370,59 @@
       }
     },
     {
+      "id": "0f300bc4-30ca-487b-8f2e-1e6f9d83dc0e",
+      "dateAdded": "20261114",
+      "type": "github-daily",
+      "url": "https://github.com/tailscale/tailcat",
+      "repo": "tailscale/tailcat",
+      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "language": "Go",
+      "stars": 9311,
+      "forks": 428,
+      "starsAdded": 324,
+      "createdAt": "2026-11-13T16:00:02.308Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://tailscale.com/tailcat",
+        "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane - tailscale/tailcat"
+      },
+      "summaryData": {
+        "tags": [
+          "Tailscale",
+          "内网穿透",
+          "WireGuard",
+          "Go",
+          "开源工具"
+        ],
+        "cover": "",
+        "title": "Tailcat：一条命令构建的 Tailscale 安全管道",
+        "ability": [
+          "无需权限的P2P加密通信",
+          "一键内网穿透与端口转发",
+          "无需账号和服务器",
+          "支持DNS TXT集成",
+          "可作为Go库嵌入使用"
+        ],
+        "summary": "复用 Tailscale 技术栈的去控制面安全管道，无需账号和 root 即可实现一键内网穿透与加密传输。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "内网穿透"
+        ],
+        "suitable": [
+          "开发与运维人员",
+          "云原生架构师",
+          "安全合规团队",
+          "Go语言开发者",
+          "需要临时远程调试的用户"
+        ],
+        "description": "Tailcat 是 Tailscale 推出的开源工具，利用其强大的数据平面实现加密传输，但去除了复杂的控制面和账号体系。它允许用户通过一个简单的令牌在两台设备间建立安全连接，支持文件传输、端口转发和临时 SSH，无需 root 权限，完美适配临时调试、CI/CD 及嵌入式开发场景。"
+      }
+    },
+    {
       "id": "81aaf378-464a-4780-b33a-c9a27e4fbed3",
       "dateAdded": "20261114",
       "type": "github-daily",
@@ -107377,8 +107430,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 71379,
-      "forks": 57242,
+      "stars": 71411,
+      "forks": 57250,
       "starsAdded": 272,
       "createdAt": "2026-11-13T16:00:02.251Z",
       "metaData": {
@@ -107438,7 +107491,7 @@
       "repo": "Likely7/Veyra-NRVideo",
       "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
       "language": "C++",
-      "stars": 1488,
+      "stars": 1508,
       "forks": 66,
       "starsAdded": 245,
       "createdAt": "2026-11-13T16:00:02.312Z",
@@ -107491,8 +107544,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 50322,
-      "forks": 3738,
+      "stars": 50360,
+      "forks": 3741,
       "starsAdded": 206,
       "createdAt": "2026-11-13T16:00:02.144Z",
       "metaData": {
@@ -107543,59 +107596,6 @@
       }
     },
     {
-      "id": "0f300bc4-30ca-487b-8f2e-1e6f9d83dc0e",
-      "dateAdded": "20261114",
-      "type": "github-daily",
-      "url": "https://github.com/tailscale/tailcat",
-      "repo": "tailscale/tailcat",
-      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-      "language": "Go",
-      "stars": 9287,
-      "forks": 427,
-      "starsAdded": 173,
-      "createdAt": "2026-11-13T16:00:02.308Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "BSD-3-Clause license",
-        "homepage": "https://tailscale.com/tailcat",
-        "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane - tailscale/tailcat"
-      },
-      "summaryData": {
-        "tags": [
-          "Tailscale",
-          "内网穿透",
-          "WireGuard",
-          "Go",
-          "开源工具"
-        ],
-        "cover": "",
-        "title": "Tailcat：一条命令构建的 Tailscale 安全管道",
-        "ability": [
-          "无需权限的P2P加密通信",
-          "一键内网穿透与端口转发",
-          "无需账号和服务器",
-          "支持DNS TXT集成",
-          "可作为Go库嵌入使用"
-        ],
-        "summary": "复用 Tailscale 技术栈的去控制面安全管道，无需账号和 root 即可实现一键内网穿透与加密传输。",
-        "category": [
-          "开发工具",
-          "网络安全",
-          "内网穿透"
-        ],
-        "suitable": [
-          "开发与运维人员",
-          "云原生架构师",
-          "安全合规团队",
-          "Go语言开发者",
-          "需要临时远程调试的用户"
-        ],
-        "description": "Tailcat 是 Tailscale 推出的开源工具，利用其强大的数据平面实现加密传输，但去除了复杂的控制面和账号体系。它允许用户通过一个简单的令牌在两台设备间建立安全连接，支持文件传输、端口转发和临时 SSH，无需 root 权限，完美适配临时调试、CI/CD 及嵌入式开发场景。"
-      }
-    },
-    {
       "id": "a4ecd996-fdec-44e6-9337-3a7efd76bee7",
       "dateAdded": "20261114",
       "type": "github-daily",
@@ -107603,7 +107603,7 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 55299,
+      "stars": 55317,
       "forks": 4609,
       "starsAdded": 145,
       "createdAt": "2026-11-13T16:00:02.318Z",
@@ -107665,7 +107665,7 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 10327,
+      "stars": 10348,
       "forks": 781,
       "starsAdded": 100,
       "createdAt": "2026-11-13T16:00:02.278Z",
@@ -107727,8 +107727,8 @@
       "repo": "block/buzz",
       "description": "A hive mind communication platform",
       "language": "Rust",
-      "stars": 37208,
-      "forks": 4933,
+      "stars": 37227,
+      "forks": 4935,
       "starsAdded": 95,
       "createdAt": "2026-11-13T16:00:02.300Z",
       "metaData": {
@@ -107780,8 +107780,8 @@
       "repo": "louislam/uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",
       "language": "JavaScript",
-      "stars": 93702,
-      "forks": 8713,
+      "stars": 93728,
+      "forks": 8715,
       "starsAdded": 61,
       "createdAt": "2026-11-13T16:00:02.295Z",
       "metaData": {
@@ -107846,8 +107846,8 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 3973,
-      "forks": 851,
+      "stars": 4004,
+      "forks": 853,
       "starsAdded": 60,
       "createdAt": "2026-11-13T16:00:02.304Z",
       "metaData": {
