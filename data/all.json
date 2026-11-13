@@ -1,6 +1,70 @@
 {
   "all": [
     {
+      "id": "ce43d2cf-f9cd-41eb-b648-94c14c154cb8",
+      "url": "https://github.com/lobehub/lobehub",
+      "domain": "github.com",
+      "repo": "lobehub/lobehub",
+      "description": "LobeHub（原 LobeChat）是拥有 8 万+ Star 的开源 AI 工作站，支持 Docker 一键部署或桌面版安装，可聚合 40+ 大模型、搭建多 Agent 协作团队并接入常用聊天软件。但需注意：许可证限制衍生分发、安全公告较多需挂认证反代，功能丰富也带来了较高的学习成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T11:06:34.837Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-collaboration",
+          "agent-harness",
+          "loop-engineering",
+          "mcp",
+          "personal-assistant",
+          "proactive-agent",
+          "skills",
+          "super-agent",
+          "task-management"
+        ],
+        "license": "License",
+        "homepage": "https://lobehub.com",
+        "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week. - lobehub/lobehub"
+      },
+      "summaryData": {
+        "tags": [
+          "LobeHub",
+          "AI Agent",
+          "多模型聚合",
+          "自托管",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "LobeHub 深度评测：从最好看的 ChatGPT 前端到 AI 团队工作站",
+        "ability": [
+          "40+ 模型供应商统一接入一个对话框",
+          "Agent Builder 一句话生成智能体配置",
+          "Agent Groups 多智能体协作编排与定时调度",
+          "白盒记忆，可查看可编辑，合规可控",
+          "集成 Slack/飞书/微信等 IM 并开放 MCP 与 Skills 市场"
+        ],
+        "summary": "颜值最高的开源 AI Agent 工作站，把 40+ 大模型和 AI 团队协作装进同一个界面",
+        "category": [
+          "AI 工作站",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "同时订阅多家 API 的重度 AI 用户",
+          "想要数据自托管的小团队负责人",
+          "不想碰服务器的个人订阅用户",
+          "想借鉴架构的前端/平台工程师",
+          "需要 AI 生产力工具的知识工作者"
+        ],
+        "description": "LobeHub（原 LobeChat）是拥有 8 万+ Star 的开源 AI 工作站，支持 Docker 一键部署或桌面版安装，可聚合 40+ 大模型、搭建多 Agent 协作团队并接入常用聊天软件。但需注意：许可证限制衍生分发、安全公告较多需挂认证反代，功能丰富也带来了较高的学习成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
       "id": "231b468e-c3da-4e97-ae9c-2f5786bb31b7",
       "url": "https://github.com/ggml-org/llama.cpp",
       "domain": "github.com",

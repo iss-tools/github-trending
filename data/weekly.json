@@ -26163,6 +26163,76 @@
   ],
   "202646": [
     {
+      "id": "0f18aad4-faf8-4c03-8d64-f5a5fd881c75",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "repo": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 110782,
+      "forks": 12830,
+      "starsAdded": 14381,
+      "createdAt": "2026-11-13T11:01:11.742Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "cli",
+          "cti",
+          "cybersecurity",
+          "forensics",
+          "hacktoberfest",
+          "information-gathering",
+          "infosec",
+          "linux",
+          "osint",
+          "pentesting",
+          "python",
+          "python3",
+          "reconnaissance",
+          "redteam",
+          "sherlock",
+          "tools"
+        ],
+        "license": "MIT license",
+        "homepage": "https://sherlockproject.xyz",
+        "description": "Hunt down social media accounts by username across social networks - sherlock-project/sherlock"
+      },
+      "summaryData": {
+        "tags": [
+          "OSINT",
+          "开源项目",
+          "用户名侦察",
+          "GitHub",
+          "Python"
+        ],
+        "cover": "",
+        "title": "Sherlock 深度评测：开源 OSINT 用户名全网侦察工具，一条命令撒网 400+ 平台",
+        "ability": [
+          "一键在 400+ 社交平台并发探测用户名是否被注册",
+          "支持多用户批量查询与 CSV/Excel 报表导出",
+          "支持 Tor/SOCKS5 代理与超时配置，保护调查者真实 IP",
+          "通配符变体查询（如 john{.}_doe），覆盖不同平台的命名差异",
+          "规则配置化设计（data.json），社区可零代码扩展新站点"
+        ],
+        "summary": "输入一个用户名，30 秒内在 400+ 社交平台探测账号是否存在并返回直接链接。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "OSINT"
+        ],
+        "suitable": [
+          "OSINT 情报分析师与调查记者",
+          "红队/渗透测试工程师",
+          "关注个人隐私、想自查数字足迹的普通用户",
+          "品牌运营与商标抢注监测人员",
+          "想学习并发爬虫与规则引擎设计的开发者"
+        ],
+        "description": "Sherlock 是 MIT 协议开源的 OSINT 命令行工具，输入一个用户名即可在 400+ 社交平台并发探测账号是否存在并返回链接。支持批量查询、报表导出与 Tor 代理，一条 pipx 命令即可安装，是用户名侦察赛道公认的开山鼻祖。"
+      }
+    },
+    {
       "id": "f1d6ed4c-ea5f-4363-b617-355c1cf07da1",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26232,8 +26302,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 71376,
-      "forks": 4752,
+      "stars": 71490,
+      "forks": 4762,
       "starsAdded": 10700,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
@@ -26284,8 +26354,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 21855,
-      "forks": 3035,
+      "stars": 21950,
+      "forks": 3044,
       "starsAdded": 9104,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
@@ -26349,8 +26419,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 323223,
-      "forks": 27117,
+      "stars": 323379,
+      "forks": 27138,
       "starsAdded": 8731,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
@@ -26400,8 +26470,8 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 22895,
-      "forks": 1696,
+      "stars": 23008,
+      "forks": 1704,
       "starsAdded": 6414,
       "createdAt": "2026-11-09T12:00:05.698Z",
       "metaData": {
@@ -26466,8 +26536,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 193831,
-      "forks": 22807,
+      "stars": 193915,
+      "forks": 22810,
       "starsAdded": 6055,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
@@ -26574,8 +26644,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 12341,
-      "forks": 1015,
+      "stars": 12405,
+      "forks": 1017,
       "starsAdded": 5802,
       "createdAt": "2026-11-08T18:00:03.599Z",
       "metaData": {
@@ -26701,8 +26771,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 50433,
-      "forks": 3511,
+      "stars": 50490,
+      "forks": 3512,
       "starsAdded": 4601,
       "createdAt": "2026-11-08T18:00:03.966Z",
       "metaData": {
@@ -26945,6 +27015,127 @@
       }
     },
     {
+      "id": "dc7adf7a-2c8b-4473-8222-4c25f4e3e498",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 71196,
+      "forks": 57202,
+      "starsAdded": 3569,
+      "createdAt": "2026-11-13T11:01:11.779Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      }
+    },
+    {
+      "id": "ba06cf98-1532-46ff-814e-92e3ace30c94",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 116966,
+      "forks": 12224,
+      "starsAdded": 3199,
+      "createdAt": "2026-11-13T11:01:11.794Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "skills"
+        ],
+        "license": "MIT license",
+        "homepage": "https://skills.addy.ie",
+        "description": "Production-grade engineering skills for AI coding agents. - addyosmani/agent-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI技能",
+          "TDD",
+          "代码审查",
+          "工作流"
+        ],
+        "cover": "",
+        "title": "agent-skills 深度评测：将资深工程师的流程植入 AI",
+        "ability": [
+          "全生命周期流程覆盖",
+          "TDD自动化支持",
+          "多维度代码审查",
+          "跨AI工具兼容",
+          "反合理化机制"
+        ],
+        "summary": "一套将资深开发流程（如TDD、Code Review）转化为AI可执行脚本的GitHub开源技能库。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "个人开发者",
+          "小型技术团队",
+          "AI编程重度用户",
+          "追求工程规范的开发者",
+          "AI工具集成商"
+        ],
+        "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
       "id": "87bb2e70-93f4-4bda-8fc2-1d9b5565a3fb",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27085,8 +27276,8 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 94884,
-      "forks": 11674,
+      "stars": 94897,
+      "forks": 11679,
       "starsAdded": 2339,
       "createdAt": "2026-11-11T11:00:03.795Z",
       "metaData": {
@@ -27434,6 +27625,59 @@
       }
     },
     {
+      "id": "5d616042-9310-4fbe-90ae-e129ed2e4d01",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "repo": "anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 20823,
+      "forks": 3492,
+      "starsAdded": 1710,
+      "createdAt": "2026-11-13T11:01:11.835Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "AI Agent",
+          "Computer Use",
+          "Managed Agents"
+        ],
+        "cover": "",
+        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
+        "ability": [
+          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
+          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
+          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
+          "Computer Use Best Practices 示范生产级工程最佳实践",
+          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
+        ],
+        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "初次接触 Claude API 的工程师",
+          "想开发 Agent 产品的创业者与全栈开发者",
+          "研究 AI Agent 架构的技术人员",
+          "想自动化团队工作流的运营/运维人员",
+          "金融、法律等需要智能文档分析的行业从业者"
+        ],
+        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
+      }
+    },
+    {
       "id": "14311865-e588-451d-a7da-8c41894dce33",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27441,8 +27685,8 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 17802,
-      "forks": 2183,
+      "stars": 17814,
+      "forks": 2186,
       "starsAdded": 1671,
       "createdAt": "2026-11-11T11:00:03.809Z",
       "metaData": {
@@ -27607,6 +27851,70 @@
           "需要精准屏幕共享的内容创作者"
         ],
         "description": "Hyprland 是 100% 自研渲染后端 Aquamarine 的动态平铺 Wayland 合成器，凭 38.8k Stars 成为近年 Linux 桌面圈最火项目。它兼顾 i3 式键盘工作流与 GNOME 级颜值，支持多布局、窗口规则、插件生态。但存在 NVIDIA 兼容性欠佳、偶发崩溃、0.57 起配置从 .conf 迁移到 Lua 的生态断档，以及社区争议等问题。"
+      }
+    },
+    {
+      "id": "16e2be2b-35a6-4170-8f7f-516c4ca19a60",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/lobehub/lobehub",
+      "repo": "lobehub/lobehub",
+      "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+      "language": "TypeScript",
+      "stars": 85238,
+      "forks": 16272,
+      "starsAdded": 1186,
+      "createdAt": "2026-11-13T11:01:11.844Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-collaboration",
+          "agent-harness",
+          "loop-engineering",
+          "mcp",
+          "personal-assistant",
+          "proactive-agent",
+          "skills",
+          "super-agent",
+          "task-management"
+        ],
+        "license": "License",
+        "homepage": "https://lobehub.com",
+        "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week. - lobehub/lobehub"
+      },
+      "summaryData": {
+        "tags": [
+          "LobeHub",
+          "AI Agent",
+          "多模型聚合",
+          "自托管",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "LobeHub 深度评测：从最好看的 ChatGPT 前端到 AI 团队工作站",
+        "ability": [
+          "40+ 模型供应商统一接入一个对话框",
+          "Agent Builder 一句话生成智能体配置",
+          "Agent Groups 多智能体协作编排与定时调度",
+          "白盒记忆，可查看可编辑，合规可控",
+          "集成 Slack/飞书/微信等 IM 并开放 MCP 与 Skills 市场"
+        ],
+        "summary": "颜值最高的开源 AI Agent 工作站，把 40+ 大模型和 AI 团队协作装进同一个界面",
+        "category": [
+          "AI 工作站",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "同时订阅多家 API 的重度 AI 用户",
+          "想要数据自托管的小团队负责人",
+          "不想碰服务器的个人订阅用户",
+          "想借鉴架构的前端/平台工程师",
+          "需要 AI 生产力工具的知识工作者"
+        ],
+        "description": "LobeHub（原 LobeChat）是拥有 8 万+ Star 的开源 AI 工作站，支持 Docker 一键部署或桌面版安装，可聚合 40+ 大模型、搭建多 Agent 协作团队并接入常用聊天软件。但需注意：许可证限制衍生分发、安全公告较多需挂认证反代，功能丰富也带来了较高的学习成本。"
       }
     }
   ]
