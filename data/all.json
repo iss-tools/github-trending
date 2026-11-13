@@ -1,6 +1,76 @@
 {
   "all": [
     {
+      "id": "58d7cfaa-0031-49f0-8a4b-e81a833ba86a",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "domain": "github.com",
+      "repo": "google/elephant-goldfish-model",
+      "description": "Google 开源的 AI 编程流程插件（Apache 2.0），由 Distinguished Engineer Dave Rensin 背书。核心理念是把「写设计」和「审设计」拆成两类 Agent：大象负责写，零上下文的金鱼负责以天真视角逐段复述、挑刺，从而在动手写代码前发现幻觉与设计缺陷。Google 内部已有数千工程师使用，但 token 消耗大、隔离性并非百分百可靠。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T19:03:47.571Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "antigravity",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "codex-plugin",
+          "coding-agents",
+          "context-engineering",
+          "developer-tools",
+          "gemini",
+          "llm",
+          "multi-agent",
+          "prompt-engineering",
+          "spec-driven-development"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://egm.dev",
+        "description": "Open-source plugin for designing and reviewing software with agents - google/elephant-goldfish-model"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub 开源",
+          "Google",
+          "AI Coding Agent",
+          "设计评审",
+          "工作流插件"
+        ],
+        "cover": "",
+        "title": "Google Elephant-Goldfish Model 深度评测：AI Coding Agent 的「记忆手术刀」",
+        "ability": [
+          "五阶段 Goldfish Review：从宏观架构到实现就绪逐层评审",
+          "强制零上下文子 Agent 独立评审，杜绝谄媚与上下文污染",
+          "全流程 slash 命令：brainstorm / draft / review / resolve / drift-report",
+          "egm-bootstrap 自动生成项目 README 层级地图",
+          "跨宿主支持 Claude Code、Codex、Antigravity 等主流 Agent"
+        ],
+        "summary": "Google 开源的设计评审插件：让「有记忆的大象」Agent 写设计文档，让「零记忆的金鱼」子 Agent 独立挑刺，在写代码前暴露设计缺陷。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code / Codex 等重度用户",
+          "需要在老代码库上设计新子系统的工程师",
+          "长期维护设计文档的团队",
+          "AI Agent Workflow 设计者与研究者",
+          "想学习 AI 协作方法论的开发者"
+        ],
+        "description": "Google 开源的 AI 编程流程插件（Apache 2.0），由 Distinguished Engineer Dave Rensin 背书。核心理念是把「写设计」和「审设计」拆成两类 Agent：大象负责写，零上下文的金鱼负责以天真视角逐段复述、挑刺，从而在动手写代码前发现幻觉与设计缺陷。Google 内部已有数千工程师使用，但 token 消耗大、隔离性并非百分百可靠。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
       "id": "cbc3b372-874d-4491-9bf5-a13d59c5c2b0",
       "url": "https://github.com/Likely7/Veyra-NRVideo",
       "domain": "github.com",

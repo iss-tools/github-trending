@@ -26170,8 +26170,8 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 110782,
-      "forks": 12830,
+      "stars": 111018,
+      "forks": 12851,
       "starsAdded": 14381,
       "createdAt": "2026-11-13T11:01:11.742Z",
       "metaData": {
@@ -26302,8 +26302,8 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 71490,
-      "forks": 4762,
+      "stars": 71768,
+      "forks": 4779,
       "starsAdded": 10700,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
@@ -26354,8 +26354,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 21950,
-      "forks": 3044,
+      "stars": 22117,
+      "forks": 3066,
       "starsAdded": 9104,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
@@ -26419,8 +26419,8 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 323379,
-      "forks": 27138,
+      "stars": 323694,
+      "forks": 27164,
       "starsAdded": 8731,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
@@ -26470,8 +26470,8 @@
       "repo": "vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars": 23008,
-      "forks": 1704,
+      "stars": 23213,
+      "forks": 1720,
       "starsAdded": 6414,
       "createdAt": "2026-11-09T12:00:05.698Z",
       "metaData": {
@@ -26536,8 +26536,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 193915,
-      "forks": 22810,
+      "stars": 194072,
+      "forks": 22821,
       "starsAdded": 6055,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
@@ -26644,8 +26644,8 @@
       "repo": "NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars": 12405,
-      "forks": 1017,
+      "stars": 12511,
+      "forks": 1024,
       "starsAdded": 5802,
       "createdAt": "2026-11-08T18:00:03.599Z",
       "metaData": {
@@ -26687,6 +26687,76 @@
           "研究 Agent 可信度的学术研究者"
         ],
         "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
+      }
+    },
+    {
+      "id": "51bb7112-c658-4599-9455-640de7064a98",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "repo": "google/elephant-goldfish-model",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "language": "Python",
+      "stars": 18526,
+      "forks": 1378,
+      "starsAdded": 5555,
+      "createdAt": "2026-11-13T19:00:04.119Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "antigravity",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "codex-plugin",
+          "coding-agents",
+          "context-engineering",
+          "developer-tools",
+          "gemini",
+          "llm",
+          "multi-agent",
+          "prompt-engineering",
+          "spec-driven-development"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://egm.dev",
+        "description": "Open-source plugin for designing and reviewing software with agents - google/elephant-goldfish-model"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub 开源",
+          "Google",
+          "AI Coding Agent",
+          "设计评审",
+          "工作流插件"
+        ],
+        "cover": "",
+        "title": "Google Elephant-Goldfish Model 深度评测：AI Coding Agent 的「记忆手术刀」",
+        "ability": [
+          "五阶段 Goldfish Review：从宏观架构到实现就绪逐层评审",
+          "强制零上下文子 Agent 独立评审，杜绝谄媚与上下文污染",
+          "全流程 slash 命令：brainstorm / draft / review / resolve / drift-report",
+          "egm-bootstrap 自动生成项目 README 层级地图",
+          "跨宿主支持 Claude Code、Codex、Antigravity 等主流 Agent"
+        ],
+        "summary": "Google 开源的设计评审插件：让「有记忆的大象」Agent 写设计文档，让「零记忆的金鱼」子 Agent 独立挑刺，在写代码前暴露设计缺陷。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率提升"
+        ],
+        "suitable": [
+          "Claude Code / Codex 等重度用户",
+          "需要在老代码库上设计新子系统的工程师",
+          "长期维护设计文档的团队",
+          "AI Agent Workflow 设计者与研究者",
+          "想学习 AI 协作方法论的开发者"
+        ],
+        "description": "Google 开源的 AI 编程流程插件（Apache 2.0），由 Distinguished Engineer Dave Rensin 背书。核心理念是把「写设计」和「审设计」拆成两类 Agent：大象负责写，零上下文的金鱼负责以天真视角逐段复述、挑刺，从而在动手写代码前发现幻觉与设计缺陷。Google 内部已有数千工程师使用，但 token 消耗大、隔离性并非百分百可靠。"
       }
     },
     {
@@ -26771,8 +26841,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 50490,
-      "forks": 3512,
+      "stars": 50645,
+      "forks": 3522,
       "starsAdded": 4601,
       "createdAt": "2026-11-08T18:00:03.966Z",
       "metaData": {
@@ -27022,8 +27092,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 71196,
-      "forks": 57202,
+      "stars": 71475,
+      "forks": 57261,
       "starsAdded": 3569,
       "createdAt": "2026-11-13T11:01:11.779Z",
       "metaData": {
@@ -27083,8 +27153,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 116966,
-      "forks": 12224,
+      "stars": 117081,
+      "forks": 12243,
       "starsAdded": 3199,
       "createdAt": "2026-11-13T11:01:11.794Z",
       "metaData": {
@@ -27276,8 +27346,8 @@
       "repo": "zed-industries/zed",
       "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "language": "Rust",
-      "stars": 94897,
-      "forks": 11679,
+      "stars": 94943,
+      "forks": 11687,
       "starsAdded": 2339,
       "createdAt": "2026-11-11T11:00:03.795Z",
       "metaData": {
@@ -27632,8 +27702,8 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 20823,
-      "forks": 3492,
+      "stars": 20853,
+      "forks": 3491,
       "starsAdded": 1710,
       "createdAt": "2026-11-13T11:01:11.835Z",
       "metaData": {
@@ -27685,8 +27755,8 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 17814,
-      "forks": 2186,
+      "stars": 17849,
+      "forks": 2187,
       "starsAdded": 1671,
       "createdAt": "2026-11-11T11:00:03.809Z",
       "metaData": {
@@ -27861,8 +27931,8 @@
       "repo": "lobehub/lobehub",
       "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
       "language": "TypeScript",
-      "stars": 85238,
-      "forks": 16272,
+      "stars": 85350,
+      "forks": 16286,
       "starsAdded": 1186,
       "createdAt": "2026-11-13T11:01:11.844Z",
       "metaData": {
