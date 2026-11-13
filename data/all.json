@@ -1,6 +1,240 @@
 {
   "all": [
     {
+      "id": "cbc3b372-874d-4491-9bf5-a13d59c5c2b0",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "domain": "github.com",
+      "repo": "Likely7/Veyra-NRVideo",
+      "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T15:12:40.263Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience. - Likely7/Veyra-NRVideo"
+      },
+      "summaryData": {
+        "tags": [
+          "DLSS",
+          "视频增强",
+          "补帧",
+          "PS5串流",
+          "开源播放器"
+        ],
+        "cover": "",
+        "title": "Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮",
+        "ability": [
+          "AI 超分辨率（DLSS / RTX Video SR / XeSS / FSR）",
+          "神经降噪（NVIDIA NR，RTX 30/40/50 系列）",
+          "帧生成补帧（DLSS FG / Smooth Motion，最高 6X）",
+          "PS5 串流与采集卡实时增强（主机画面推到 4K 120FPS）",
+          "节点模式自定义处理链与 OBS 直播采集、HDR 导出"
+        ],
+        "summary": "一款集成 DLSS 超分、AI 降噪、补帧、PS5 串流与采集卡增强的开源 Windows 视频播放器",
+        "category": [
+          "开发工具",
+          "影音娱乐",
+          "开源项目"
+        ],
+        "suitable": [
+          "PS5 / Xbox 主机玩家（想给主机画面上 AI 画质特效）",
+          "老片修复与影音收藏爱好者",
+          "OBS 直播 / 剪辑 UP 主",
+          "硬件折腾党与开源极客",
+          "双显卡协同玩家"
+        ],
+        "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
+      "id": "c1e3b912-700f-421a-bde2-83db6c587ee9",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "domain": "github.com",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T15:09:54.826Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
+      "id": "c45f4184-354d-4b4c-8e18-9019c4678ebf",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "domain": "github.com",
+      "repo": "louislam/uptime-kuma",
+      "description": "Uptime Kuma 是一款开源（MIT）自托管可用性监控工具，GitHub Star 约 9.1 万。一条 Docker 命令即可部署，支持 31 种监控类型、90+ 通知渠道，提供实时面板与公开状态页，可替代 UptimeRobot 付费版并大幅节省成本；但存在单点故障、无正式 REST API 等局限，不适合大型企业作为唯一监控方案。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T15:06:56.922Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "docker",
+          "monitor",
+          "monitoring",
+          "responsive",
+          "self-hosted",
+          "selfhosted",
+          "single-page-app",
+          "socket-io",
+          "uptime",
+          "uptime-monitoring",
+          "webapp",
+          "websocket"
+        ],
+        "license": "MIT license",
+        "homepage": "https://uptime.kuma.pet",
+        "description": "A fancy self-hosted monitoring tool. Contribute to louislam/uptime-kuma development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Uptime Kuma",
+          "自托管",
+          "开源监控",
+          "Docker",
+          "可用性监控"
+        ],
+        "cover": "",
+        "title": "Uptime Kuma 深度评测：91k Star 的开源自托管监控神器",
+        "ability": [
+          "支持 31 种监控类型（HTTP/TCP/Ping/DNS/Push/Docker 等）",
+          "90+ 通知渠道告警推送（Telegram/Discord/邮件/钉钉等）",
+          "基于 WebSocket 的实时刷新监控面板",
+          "自定义公开状态页与 SSL 证书过期提醒",
+          "Docker 一键部署，SQLite 存储，数据完全自主掌控"
+        ],
+        "summary": "一个开源免费的自托管可用性监控工具，一条 Docker 命令就能拥有媲美 UptimeRobot 的监控面板与状态页。",
+        "category": [
+          "开发工具",
+          "运维监控",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人开发者与独立 SaaS 作者",
+          "Homelab / 自托管爱好者",
+          "小团队与中小企业运维",
+          "需要给客户提供状态页的乙方外包公司",
+          "想替代 UptimeRobot 付费版节省成本的用户"
+        ],
+        "description": "Uptime Kuma 是一款开源（MIT）自托管可用性监控工具，GitHub Star 约 9.1 万。一条 Docker 命令即可部署，支持 31 种监控类型、90+ 通知渠道，提供实时面板与公开状态页，可替代 UptimeRobot 付费版并大幅节省成本；但存在单点故障、无正式 REST API 等局限，不适合大型企业作为唯一监控方案。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
+      "id": "8ef7b484-c1d8-48c5-8e96-e867f1154679",
+      "url": "https://github.com/backnotprop/plannotator",
+      "domain": "github.com",
+      "repo": "backnotprop/plannotator",
+      "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-13T15:03:44.306Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      },
+      "type": "project",
+      "dateAdded": "20261113"
+    },
+    {
       "id": "ce43d2cf-f9cd-41eb-b648-94c14c154cb8",
       "url": "https://github.com/lobehub/lobehub",
       "domain": "github.com",
@@ -23279,8 +23513,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:19:36.534Z",
       "metaData": {
-        "forks": "3655",
-        "stars": "52009",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "browser",
           "chrome",
@@ -23397,8 +23631,8 @@
       "forks": 0,
       "createdAt": "2026-08-28T12:12:23.083Z",
       "metaData": {
-        "forks": "265",
-        "stars": "6764",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "BSD-3-Clause license",
         "homepage": "https://tailscale.com/tailcat",
@@ -27376,8 +27610,8 @@
       "forks": 0,
       "createdAt": "2026-08-23T15:27:22.838Z",
       "metaData": {
-        "forks": "4601",
-        "stars": "34951",
+        "forks": "0",
+        "stars": "0",
         "topics": [],
         "license": "Apache-2.0 license",
         "homepage": "",

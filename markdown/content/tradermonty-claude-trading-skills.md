@@ -1,0 +1,231 @@
+# tradermonty/claude-trading-skills
+
+[GitHub URL](https://github.com/tradermonty/claude-trading-skills)
+
+
+## Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师
+
+> 一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。
+
+- **Tags**: Claude Skills, 量化交易, 开源项目, 美股投资, 交易纪律
+- **Category**: AI 编程, 投资理财, 开发工具
+
+## Details
+
+# Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师，而不是荐股大师
+> **一句话定位**：这是目前 Claude Skills 生态中**最严肃、最系统化**的开源交易工作流工具包 —— 74 个 Skills、5 条开箱即用工作流、覆盖 O'Neil/Minervini/Kanchi/Shapiro 等多个经典派系，定位是"给时间有限的散户做结构化交易决策辅助"，而非"AI 自动炒股"。
+直接给出终极评判：**如果你是一个有长期持仓 + 偶尔做波段、希望用 AI 把自己"逼成"一个有纪律的交易者，而不是想找一个能预测涨跌的神仙，这个仓库目前是 Claude Skills 生态里几乎唯一值得认真研究的选择**。但如果你期待的是"喂点数据就出买卖点"，它一定会让你失望 —— 它反复强调的是"纪律"和"检查表"，而不是"预测"。
+---
+## 一、背景与痛点：它到底在解决什么
+### 1.1 Claude Skills 是什么（30 秒科普）
+理解这个项目前，必须先理解 Claude Skills 这个机制。Anthropic 在 2025 年 10 月 16 日发布了 Agent Skills，并在 12 月把它开放为标准协议。它的本质极简：**一个文件夹，里面必须有一个 `SKILL.md` 文件，写清楚"这个技能做什么、什么时候触发、怎么做"**，Claude 在对话时根据你的请求判断是否加载它。
+可以用一个非常贴切的比喻：**MCP 是给 Claude 装"手"（连接外部工具和数据），Skills 是给 Claude 装" SOP 手册"（让 Claude 按照固定流程做事）**。一个是能力扩展，一个是流程固化。两者不冲突，但定位完全不同 —— 这也是很多新手把 Skills 和 MCP 搞混的根本原因。
+### 1.2 它要解决的真正痛点
+散户（尤其是有本职工作的兼职交易者）最大的问题不是"不会用 AI"，而是：
+- **决策流程混乱**：每天看盘看到什么就想什么，没有固定 checklist；
+- **纪律崩塌**：明明定了止损规则，真正操作时总想"再等等"；
+- **交易日志断层**：复盘全靠记忆和模糊印象，亏了不知道为什么亏；
+- **信息过载**：市场宽度、行业轮动、CFTC 持仓、财报日程……一个人根本看不过来；
+- **工具价格昂贵**：Bloomberg、FactSet 动辄每月数千美元，散户根本付不起。
+**Claude Trading Skills 的核心赌注是：把这些散户缺的"制度、检查表、复盘机制"做成一组可调用的 Skills，让 Claude 当那个严格按 SOP 走流程的"分析师助理"，而人保留最终决策权**。仓库首页的免责声明写得很硬核："这不是信号服务，也不是盈利承诺，它是一个帮助交易者构建更好决策过程的工具包"。
+### 1.3 作者背景
+仓库作者是 **tradermonty**，从 README 第一行就能看出这是一个"自己用得很爽才开源"的项目 —— 文档里反复出现 *"first for self, open for others"*（先为自己用，再开放给他人）。作者的方法论底子非常扎实，整套 Skills 明显融合了多位经典大师的体系：
+- **William O'Neil** 派系：CANSLIM 筛选、FTD（Follow-Through Day）、Distribution Day 监控；
+- **Mark Minervini** 派系：VCP（Volatility Contraction Pattern）筛选、突破交易计划；
+- **Jason Shapiro** 派系：CFTC 反向交易、拥挤持仓检测、新闻反应失败分析；
+- **Stockbee** 派系：动量爆发、Momentum Burst、Episodic Pivot、20% 涨跌幅研究；
+- **Kanchi（関地）** 派系：股息投资的 SOP 化流程（这部分应该是作者借鉴日本投资者的体系）；
+- **Druckenmiller** 派系：宏观主题识别 + 8 个上游 Skills 综合打分。
+这不是一个"周末 vibe coding 的 markdown 堆砌项目"，而是真正把多位交易大师的方法论**程序化、检查表化**了。GitHub 上 moneyflock 的横向评测也指出，搜索 "claude trading skills" 能找到 444 个仓库，但其中大多是周末作品，tradermonty 这套是少数有"安全门"和严肃结构的。
+截至 2026 年 11 月，这个仓库已经积累约 **2.7k stars、620 forks、500+ commits**，并且 changelog 更新到本周仍在合并 PR，在快速退烧的 "AI 交易"类开源项目中，这个活跃度非常罕见。
+---
+## 二、核心亮点与架构剖析
+### 2.1 架构设计：三层结构，这个设计相当精妙
+让我用一张图解释它的逻辑：
+```
+┌─────────────────────────────────────────┐
+│   Layer 3: Workflows（工作流清单）          │  ← workflows/*.yaml
+│   "今天该做哪几步、按什么顺序、产出什么"        │
+├─────────────────────────────────────────┤
+│   Layer 2: Skills（原子能力）              │  ← skills/<name>/SKILL.md
+│   "一个具体能力：分析/筛选/计算/记录"          │
+├─────────────────────────────────────────┤
+│   Layer 1: Skills Index（元数据索引）       │  ← skills-index.yaml
+│   "id、依赖、状态、所属模块"                  │
+└─────────────────────────────────────────┘
+```
+这个设计有三个聪明之处：
+**第一，元数据驱动 + 自动生成文档**。所有 74 个 Skills 的描述、依赖、状态都集中在 `skills-index.yaml` 里，README 的"详细目录"和文档站点是脚本自动生成的。这意味着**不会出现 README 写一套、代码里另一套的"文档漂移"** —— 这是大多数开源项目的顽疾，作者用工程方法解决了。
+**第二，工作流和 Skills 解耦**。你不需要一次学会 74 个 Skills，每个 Workflow 只是声明"今天早晨用哪 3 个 Skills、按什么顺序、产出什么文件"。比如 `market-regime-daily` 工作流就只调用了 3 个核心 Skills。
+**第三，质量评测体系内建**。仓库里甚至有一个 `dual-axis-skill-reviewer` Skill，用双轴评分（确定性代码检查 + LLM 深度审查）给自己仓库里的每个 Skill 评分。这种"自我质量管控"的设计在开源 AI 项目里非常少见。
+### 2.2 七大模块全景图
+为您梳理一份 74 个 Skills 的核心模块速查表（精简到最值得关注的 30+ 个）：
+| 模块 | 代表 Skills | 核心价值 | API 依赖 |
+|---|---|---|---|
+| **Market Regime**（市场状态）| `market-breadth-analyzer` / `uptrend-analyzer` / `market-top-detector` / `ftd-detector` / `ibd-distribution-day-monitor` | 判断"今天是进攻日还是防守日" | 部分仅用免费 CSV |
+| **Core Portfolio**（核心持仓）| `portfolio-manager` / `value-dividend-screener` / `kanchi-dividend-sop` / `kanchi-dividend-review-monitor` | 股息/ETF 长期持仓的结构化复盘 | FMP 必须，Alpaca 必须 |
+| **Swing Opportunity**（波段机会）| `vcp-screener` / `canslim-screener` / `stockbee-momentum-burst-screener` / `breakout-trade-planner` | 找符合 Minervini/O'Neil 形态的标的 | FMP 必须 |
+| **Trade Planning**（交易计划）| `position-sizer` / `technical-analyst` / `pre-trade-discipline-gate` / `drawdown-circuit-breaker` | **强迫你写出止损价、仓位、失效条件** | 纯本地计算 |
+| **Trade Memory**（交易记忆）| `trader-memory-core` / `signal-postmortem` / `weekly-performance-digest` / `trade-performance-coach` | 交易日志+复盘闭环，持续改进 | 纯本地 YAML |
+| **Strategy Research**（策略研究）| `backtest-expert` / `manifoldbt-backtester` / `edge-pipeline-orchestrator` / `strategy-pivot-designer` | 系统化回测和策略迭代 | 本地 Rust 引擎 |
+| **Advanced Satellite**（进阶卫星）| `earnings-trade-analyzer` / `pead-screener` / `institutional-flow-tracker` / `pair-trade-screener` | 财报漂移、13F 跟踪、配对交易等 | FMP 必须 |
+| **Meta/Dev Tooling**（元工具）| `trading-skills-navigator` / `skill-designer` / `data-quality-checker` | 帮你选 Skills、防幻觉、保证数据质量 | 无 |
+最值得吹爆的几个 Skills：
+- **`pre-trade-discipline-gate`**：在每次下单前，强制你回答"有没有计划？仓位是否超？是不是报复性交易？市场状态是否允许？熔断器是否触发？"任何一个不过关就阻止进场，并把这次"被拦截"写进日志。这是整套体系里**最反人性、也最值钱**的设计。
+- **`drawdown-circuit-breaker`**：账户级熔断器，根据连续亏损次数、日亏损限额、月度回撤水平判断"今天是否允许开新仓"。
+- **`trader-memory-core`**：用本地 YAML 记录每个投资想法从筛选到平仓的完整生命周期，这是让 AI 在你这儿"越用越懂你"的关键。
+### 2.3 设计理念的核心："人机分工"
+读完整个 README 和文档，最深刻的设计哲学是这一句：
+> **"The goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement."**
+翻译成大白话：**AI 负责做重复性、计算性、纪律性的工作（算仓位、跑筛选、写复盘、拦截冲动下单），人负责做判断和拍板（要不要进、进多少、什么时候出）**。
+这个定位让它跟市面上那些"AI 自动炒股机器人"划清了界限 —— 后者大多是在卖一个不可解释的"黑盒信号"，而这个项目是给你一个**透明、可审计、可定制的 SOP 系统**。
+---
+## 三、上手门槛与部署体验
+### 3.1 三种部署方式，按难度递增
+**方式 A：Claude Web App（最简单，适合小白）**
+直接从 `skill-packages/` 下载现成的 `.skill` ZIP 包，在 Claude 网页端的 **Customize → Skills** 上传即可。注意需要在 Settings → Capabilities 里启用 "Code execution and file creation"。
+**方式 B：Claude Code CLI（推荐给开发者）**
+```bash
+# 一行命令装好一个 Skill
+git clone https://github.com/tradermonty/claude-trading-skills.git
+cp -r claude-trading-skills/skills/backtest-expert ~/.claude/skills/
+```
+Claude Code 会自动检测 `~/.claude/skills/` 目录下的变化，重启会话即可生效。
+**方式 C：Hermes Trading Research Agent（懒人版）**
+作者提供了一个名为 Hermes 的 Agent 包装包，把整套 Skills 串成斜杠命令工作流，比如 `/pre-market-routine`、`/after-close-review`、`/trade-journal`、`/weekly-portfolio-review`。每天敲一个命令就跑完一整套流程，适合不想自己组装工作流的用户。
+### 3.2 新手入门路径（官方推荐 + 我的建议）
+官方 README 给出了一个**完全免付费 API Key 的入门 5 件套**：
+| Skill | 用途 | 是否需要 API |
+|---|---|---|
+| `market-breadth-analyzer` | 用公开 CSV 算市场宽度分数 | ❌ |
+| `uptrend-analyzer` | 分析上涨股参与率 | ❌ |
+| `position-sizer` | 风险仓位计算器 | ❌（纯本地计算）|
+| `trader-memory-core` | 本地 YAML 交易日志 | ❌ |
+| `signal-postmortem` | 平仓后复盘框架 | ❌ |
+这五件套能让你跑通"看市场 → 算仓位 → 记日志 → 复盘"的完整闭环，**唯一外部成本就是 Claude 订阅本身**。
+### 3.3 真实使用示例
+**案例 1：用 `position-sizer` 算仓位（最简单的体验）**
+用户输入：
+> "我有 10 万美元账户，想买 NVDA，止损位放在 138，当前价 152，单笔最大风险 1%，帮我算下买多少股。"
+Claude 调用 position-sizer 后大致输出：
+```
+Account: $100,000
+Risk per trade (1%): $1,000
+Entry: $152.00
+Stop: $138.00
+Risk per share: $14.00
+Position size: $1,000 / $14 = 71 shares
+Position value: $10,792 (10.79% of account)
+R-multiple targets: 2R = $180, 3R = $194
+```
+**案例 2：用 `market-regime-daily` 工作流做盘前 15 分钟检查（核心场景）**
+用户输入：
+> "执行 market-regime-daily 工作流"
+Claude 按顺序调用三个 Skills 后输出一张"市场姿态卡"：
+```
+═══════════════════════════════════
+Market Posture — 2026-11-13
+═══════════════════════════════════
+Breadth Score:        62/100 (Neutral-Bullish)
+Uptrend Participation: 48% (Healthy)
+Distribution Days:    2 in last 25 sessions (NORMAL)
+Net Exposure Ceiling: 80%
+Growth vs Value Bias: Lean Growth
+New Entries Allowed:  ✅ Yes
+Cash Priority:        🟡 Maintain 20% cushion
+═══════════════════════════════════
+Suggested next action: Run vcp-screener
+   on S&P 500 to find breakout candidates
+```
+**这是它的精髓：一张可肉眼 10 秒读完的姿态卡，而不是 1000 字的"AI 看多看空"长篇大论**。
+**案例 3：`pre-trade-discipline-gate` 拦截冲动交易**
+用户输入：
+> "我想立刻全仓买 TSLA，跌太多了该反弹了"
+Claude 输出：
+```
+⚠️  Pre-Trade Discipline Gate — BLOCKED
+Checks:
+[FAIL] No trading plan (no entry/stop/target defined)
+[FAIL] Position size exceeds 5% single-stock cap
+[FAIL] Market regime check: last Distribution Day
+       within 5 sessions — new longs discouraged
+[PASS] No drawdown circuit breaker trigger
+Reason for block: 3 critical failures
+Action: Journal this impulse as "Revenge trade
+        attempt" in trader-memory-core, then
+        re-evaluate after market-regime-daily
+```
+这就是它最反人性也最值钱的部分 —— **AI 当那个"拦住你的人"**。
+---
+## 四、目标人群与实际收益
+### 4.1 谁最该用？
+按收益从高到低排序：
+| 用户画像 | 收益 | 适配度 |
+|---|---|---|
+| **美股长期 + 波段混合型散户**（持有 ETF/股息股，偶尔做波段）| 拿到一套完整的"核心-卫星"决策框架 | ⭐⭐⭐⭐⭐ |
+| **有本职工作、每天只能看盘 15-30 分钟的兼职交易者** | 把盘前盘后复盘流程压缩到 15 分钟 | ⭐⭐⭐⭐⭐ |
+| **喜欢 O'Neil/Minervini/Stockbee 这套方法论的成长股交易者** | 直接调用现成的 CANSLIM/VCP/Momentum Burst 筛选器 | ⭐⭐⭐⭐⭐ |
+| **交易日志不连贯、纪律性差的散户** | `pre-trade-discipline-gate` 强制拦截冲动交易 | ⭐⭐⭐⭐⭐ |
+| **想做策略回测的个人研究者** | `backtest-expert` + `manifoldbt-backtester` 提供系统化框架 | ⭐⭐⭐⭐ |
+| **A 股 / 港股交易者** | 几乎无法直接使用，数据源以美股为主 | ⭐ |
+| **高频交易 / 期货日内 / 加密货币量化** | 设计初衷就不是给这类用户，会水土不服 | ⭐ |
+### 4.2 它能帮你省下什么？
+- **时间**：原来盘前 1-2 小时的杂乱浏览，压成 15 分钟结构化检查；
+- **纪律成本**：几次被拦下的冲动交易，可能就是几千上万美元的止损差异；
+- **认知负担**：不用自己搭市场宽度仪表盘、不用自己写 CANSLIM 筛选代码；
+- **真金白银**：相比订阅 Bloomberg（月费 $2000+）或 TradingView Premium + Koyfin + 各种工具的"散装组合"，这套东西几乎是 0 边际成本。
+---
+## 五、竞品/同类对比
+GitHub 上能找到的"Claude Skills for Trading"仓库超过 400 个，但绝大多数是周末项目。值得横向对比的有以下几个：
+| 项目 | 定位 | 优势 | 劣势 |
+|---|---|---|---|
+| **tradermonty/claude-trading-skills** | 完整交易决策 SOP 体系 | 74 Skills 体系化、多方法论融合、活跃维护、有质量内审 | 学习曲线陡、深度依赖 Claude 订阅 |
+| **balasekar/TradingAssistant** | 业余者的 3 工具组合（TradingSkills + TradingView + OpenBB）| 思路清晰、入门快、$0 成本 | 本质是教程不是工具，没有 Skills 自身 |
+| **moneyflock 推荐的 free trade journal skill** | 单一交易日志 skill | 极简、能直接复制 | 功能单一，不成体系 |
+| **各类 "AI 炒股机器人" / agent 项目** | 自动下单 | 听起来酷 | 风险极高、不可审计、常是营销项目 |
+| **传统工具（TradingView、Finviz、TC2000）** | 数据/图表 | 数据全、图表强 | 不提供决策框架，纪律靠人 |
+**它最大的差异化竞争力是"方法论深度"**：市面上 95% 的 AI 交易项目都是把 LLM 当聊天机器人用（"帮我分析这只股票"），而这一套是把 LLM 当"流程执行器"用，背后是几十年的交易大师方法论被拆解成了可执行检查表。
+一项 2026 年 9-10 月的横向研究中，Claude 在 8 个 agentic trading 任务中拿了 5 个第一，总分 91.2/100，领先 ChatGPT（90.5）和 Gemini（89.1），尤其是在"遵循交易指令"（93.4）和"拒绝危险请求"（94.6）两项上优势明显。这从模型层面验证了"为什么用 Claude Skills 做交易辅助是合理选择"。
+---
+## 六、局限与不足（这部分必须看）
+写评测不能只吹。这套东西有几个真实的问题：
+### 6.1 **学习曲线比想象中陡**
+74 个 Skills，每个都有自己的"适用场景、API 依赖、输入输出契约"。虽然提供了 `trading-skills-navigator` 推荐系统，但如果你不花 2-3 小时读文档，**很容易陷入"我装了 74 个 skill 但不知道从哪儿开始"的瘫痪状态**。建议按官方 "Your First Week" 路径走，别贪多。
+### 6.2 **数据源以美股为主，A 股/港股几乎无法用**
+所有 FMP、FINVIZ、Alpaca 集成都是美股数据。如果你主要做 A 股或港股，这套工具对你价值有限 —— 只能用 `position-sizer`、`trader-memory-core` 这种纯本地计算的部分。
+### 6.3 **隐性成本叠加**
+让我算一笔真实的账：
+- Claude Pro：$20/月（必需，免费版不能用 Skills 的 Code execution）
+- Claude Max：$100-200/月（重度使用推荐）
+- FMP API：免费档 250 请求/天，多数场景够用；Starter 档 $19/月起
+- FINVIZ Elite：$39.50/月或 $299.50/年（可选，能把某些筛选提速 70-80%）
+- Alpaca：免费（paper trading 完全够用）
+**最低成本路径约 $20/月（Claude Pro only）**，**完整体验约 $60-80/月**。并不便宜，但相比 Bloomberg 月费 $2000，是常识性便宜。
+### 6.4 **AI 幻觉风险仍然存在**
+虽然仓库设计了 `data-quality-checker` 来校验数据，但**它不能完全消除 LLM 的幻觉**。比如 technical-analyst 看图表时，仍然可能看错 K 线、编造价格 —— 这是所有 LLM 共有的问题。文档里也明确提醒"上传图片模型也可能看错 K 线或在你不锚定时编造价格"。**永远把 AI 输出当"待验证的草稿"，不要当"权威答案"**。
+### 6.5 **不能自动化下单，这是设计而非缺陷**
+`drawdown-circuit-breaker` 和 `pre-trade-discipline-gate` 都是"建议式"，没有强制执行力。如果你跳过这一步直接手动下单，整套纪律体系等于白搭。**它的价值取决于你是否诚实地走完每一步**。
+### 6.6 **Claude Skills 自身的限制**
+- Skills 不会在 claude.ai / API / Claude Code 之间自动同步，需要分别配置；
+- Skills 不存储过往运行记录（除了 `trader-memory-core` 显式写日志到本地）；
+- 每个 Skill 触发靠 description 匹配，写得含糊就会"该触发不触发"。
+### 6.7 **避坑指南**
+几条实战建议：
+1. **不要一次装 74 个 Skills** —— 先装入门 5 件套跑两周，再根据需要加；
+2. **FMP 免费 250 次/天会用得很快**，跑 `vcp-screener` 这种全市场筛选时建议在盘后非高峰时段；
+3. **Alpaca 一定要先用 paper trading**，不要一上来就接真实账户；
+4. **`trader-memory-core` 的 YAML 日志一定要勤写**，这是整套系统积累个人 alpha 的核心，不写等于白装；
+5. **Kanchi 系列对日本派系方法论不熟悉的用户会很陌生**，建议先读 `kanchi-dividend-sop` 的 SKILL.md 中的"背景说明"再使用；
+6. **每周跑一次 `weekly-performance-digest`**，不要只装不用；
+7. **如果你不是美股用户，先把 FMP/Alpaca 集成忘掉**，只用本地计算类 Skills。
+---
+## 七、结语与行动建议
+> **它不是 AI 炒股机器，而是给散户装了一套"职业交易员的纪律操作系统"。**
+这套项目最值钱的不是那 74 个 Skills，而是它背后那个朴素的判断：**散户亏钱的原因，往往不是缺乏信息，而是缺乏纪律**。LLM 的真正价值不是预测市场，而是**在你最冲动、最累、最想"就这一次"的时候，冷冷地递给你那张检查表**。
+具体建议按以下三步走：
+1. **第一步（30 分钟）**：打开 GitHub 仓库 → 看 `PROJECT_VISION.md` 和 FAQ → 跑一次免费的 `trading-skills-navigator`，让它根据你的目标推荐起步路径；
+2. **第二步（两周）**：装入门 5 件套（`market-breadth-analyzer`、`uptrend-analyzer`、`position-sizer`、`trader-memory-core`、`signal-postmortem`），坚持每天 15 分钟跑 `market-regime-daily` 工作流，并认真记 5 笔交易日志；
+3. **第三步（一个月后）**：根据自己的方法论偏好，挑 2-3 个进阶模块（比如 Minervini 派就装 `vcp-screener` + `breakout-trade-planner`；股息派就装 `kanchi-dividend-sop`），并考虑是否付费升级 FMP 或 FINVIZ Elite。
+最后一句忠告：**它的上限取决于你愿意多诚实地使用它**。装了不等于用了，用了不等于信了，信了不等于改了。把它当成"职业交易员的纪律操作系统"，而不是"另一个 AI 玩具"，你才能从中真正受益。
+---
+**参考来源**：项目官方 GitHub 仓库、Anthropic Skills 官方文档、Anthropic Agent Skills 标准说明、moneyflock 横向评测、FirstPage Sage 2026 AI Trading 对比研究、balasekar/TradingAssistant 三工具组合分析、tradermonty GitHub 主页、项目 CHANGELOG。所有内容仅供技术研究参考，不构成任何投资建议；市场有风险，决策请独立判断。

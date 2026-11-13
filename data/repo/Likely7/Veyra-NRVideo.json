@@ -1,0 +1,54 @@
+{
+  "id": "cbc3b372-874d-4491-9bf5-a13d59c5c2b0",
+  "url": "https://github.com/Likely7/Veyra-NRVideo",
+  "domain": "github.com",
+  "repo": "Likely7/Veyra-NRVideo",
+  "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-11-13T15:12:40.263Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [],
+    "license": "GPL-3.0 license",
+    "homepage": "",
+    "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience. - Likely7/Veyra-NRVideo"
+  },
+  "summaryData": {
+    "tags": [
+      "DLSS",
+      "视频增强",
+      "补帧",
+      "PS5串流",
+      "开源播放器"
+    ],
+    "cover": "",
+    "title": "Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮",
+    "ability": [
+      "AI 超分辨率（DLSS / RTX Video SR / XeSS / FSR）",
+      "神经降噪（NVIDIA NR，RTX 30/40/50 系列）",
+      "帧生成补帧（DLSS FG / Smooth Motion，最高 6X）",
+      "PS5 串流与采集卡实时增强（主机画面推到 4K 120FPS）",
+      "节点模式自定义处理链与 OBS 直播采集、HDR 导出"
+    ],
+    "summary": "一款集成 DLSS 超分、AI 降噪、补帧、PS5 串流与采集卡增强的开源 Windows 视频播放器",
+    "category": [
+      "开发工具",
+      "影音娱乐",
+      "开源项目"
+    ],
+    "suitable": [
+      "PS5 / Xbox 主机玩家（想给主机画面上 AI 画质特效）",
+      "老片修复与影音收藏爱好者",
+      "OBS 直播 / 剪辑 UP 主",
+      "硬件折腾党与开源极客",
+      "双显卡协同玩家"
+    ],
+    "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。"
+  },
+  "contentDetail": "# Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮\n## 一句话总结\n**Veyra 是一款把 NVIDIA DLSS、RTX Video SR、神经降噪、AI 补帧、PS5 串流、采集卡实时预览\"全打成一个包\"的开源 Windows 视频增强播放器，堪称\"小黄鸭 Lossless Scaling 的视频播放器版 + 主机串流增强版\"，是目前唯一能把 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源方案。**\nGitHub 项目地址：https://github.com/Likely7/Veyra-NRVideo（当前版本 1.4.4 / 2.0.8，2026 年 11 月仍在高频更新）\n---\n## 背景与痛点：为什么会有 Veyra？\n要理解 Veyra 的诞生逻辑，得先看清它针对的几个\"老大难\"场景。\n**痛点 1：老片源画质\"原地踏步\"。** 30 年前的电影、PS2 时代的老游戏录像、低码率追剧片源，放到 4K 显示器上糊成一团，传统播放器顶多做一下 Lanczos 拉伸，依然救不了。\n**痛点 2：低帧率片源\"看着难受\"。** 30fps 的电影、24fps 的老动画、60fps 的主机采集，在 120Hz/144Hz 高刷屏上拖影明显。业界主流方案是 SVP（付费）、RIFE（折腾）、Lossless Scaling（通用游戏向），但都各有短板。\n**痛点 3：主机画面\"用不上去画质特效\"。** PS5 主机原生 30fps 锁帧，画质锁死，DLSS/NR 这些 PC 专属的 AI 画质特性根本碰不到主机。唯一入口就是采集卡——但采集卡软件生态一潭死水。\n**痛点 4：工具链\"散装\"。** 想做\"超分 + 降噪 + 补帧 + HDR + 导出\"五件事，得 MPC-HC + madVR + SVP + HandBrake 来回折腾，参数互不打通。\nVeyra 的作者 Likely7 在 GitHub 与 B 站（@Likely7Ai）以\"硬件实测 + 持续打磨\"的方式，把这套分散的链路收成了一站式工具，并在 docs/ 目录公开了大量逐版本实测数据——这是它区别于一般玩具项目的硬核之处。\n---\n## 核心亮点与功能剖析\n### 亮点 1：四大增强模块同链路组合，可以\"叠 buff\"\nVeyra 用一条统一的 D3D12 处理管线，把以下能力按需串联：\n| 模块 | 实现方式 | 适用场景 |\n|------|---------|---------|\n| **超分辨率 SR** | DLSS SR / RTX Video SR / XeSS / FSR | 1080p 片源拉 4K、8K，老片翻新 |\n| **NR 神经降噪** | NVIDIA 原版 / RTX 40/50 社区版 / RTX 30 兼容实验版 | 暗部噪点、压缩块痕、胶片颗粒 |\n| **补帧 FG** | DLSS Frame Generation / XeSS / Smooth Motion（驱动侧） | 30fps 老片→120fps、主机 30fps→120fps |\n| **HDR** | HDR10/PQ/HLG 直通，HDR→SDR 色调映射 | PS5 HDR 串流、HDR 影片预览 |\n**处理顺序默认\"超分→NR→补帧\"**，\"低延迟模式\"可切换为\"NR→超分→补帧\"，UI 上有四个独立阶段卡实时显示 GPU 耗时，让你一眼看清瓶颈在哪一段。\n> **关键洞见**：Veyra 的杀手锏不是某一项单一功能，而是\"模块化组合\"——它允许你只开 NR 不开补帧、只开超分不开 NR、或者全开压榨 GPU，每一段都能在 UI 上独立调节。\n### 亮点 2：PS5 串流 + 增强链 = 主机版\"DLSS 5\"\n这是 Veyra 最具话题性的能力。它内置了基于 chiagi-ng 的 PS5 Remote Play 串流支持，本地解码 H.264/H.265 后直接进增强链，码率请求 5–100Mbps，最多可推到 4K 超分 + 4X 补帧。README 直接打出了\"Bring PS5 GTA6 to 120FPS with DLSS 5\"的硬核标题。\n社区用户 RevolutionaryBus8208 在 Reddit 上展示了完整方案：PS5 → 4K 采集卡 → PC Veyra（DLSS 5 神经渲染）→ 帧生成 90fps → 4K 电视，验证了\"主机独占大作也能蹭到 PC AI 画质特效\"这条路。\n### 亮点 3：节点模式（Node Mode）——把处理链做成可拖拽的积木\n2.0 版本引入的节点模式是 Veyra 的\"工程师浪漫\"：在画布上像 DaVinci Resolve 一样拖拽节点、连线，自由编排属于自己的超分 + 去噪 + HDR 工作流，并实时看到每段的处理效果与 GPU 耗时。节点不是示意图，**连线即真实处理链**。\n### 亮点 4：极硬核的发布与边界文档\n这是它区别于\"个人小工具\"的最大差异点。每个版本 Release Notes 都会明确写\"已验证\"和\"边界\"两栏，比如 1.2.0 中明确标注：\n> \"RTX 5070 已验证 HDR GPU 处理…真实 HDR 屏观感、5.1 扬声器定位、不同采集卡、PS5 HDR 与 RTX30/40 实机仍需各自验收。NR / RTX Video SR 的 HDR 路径是 SDR 代理与保留 HDR 基底合成，不是原生 HDR 模型推理。\"\n这种\"不吹不黑、把话说死\"的发布风格在开源社区里相当少见，对重度用户非常友好。\n### 亮点 5：OBS 直播友好 + 可截取处理后的画面\nVeyra 在 1.4.4 中专门处理了\"OBS 采集 Veyra 视频区域黑屏\"的问题，把捕获方式锁定到\"Windows 10 (1903+)\"，让主播可以在 OBS 里直接采集\"增强后\"的画面进行直播或录制。SDR 截图为 PNG，HDR 截图为 FP16 scRGB JPEG XR（保留高光浮点信息）。\n---\n## Demo 演示：5 分钟跑通第一帧 120FPS\n对于普通用户，Veyra 官方推荐的\"最小可跑通\"流程是：\n```text\n1. Releases 下载 Veyra-1.4.4-win64-portable.zip\n   （别下 Source code，那是依赖源码包）\n2. 完整解压到可写目录，双击 Veyra.exe\n   （无需装 Qt / SDK / Python，便携包内置运行时）\n3. 点击底栏\"打开\"，加载片源 → 切到\"专业模式\"\n4. 画质页 → 开\"超分\"选 4K → 开\"NR\"选 RTX 对应运行版本\n5. 补帧页 → 选 DLSS 2X（60fps→120fps）或 XeSS\n6. 全屏，享受画面\n```\n补帧的实际效果可以从 B 站 UP 主\"公鸡咯咯大\"的实测看出：用 PS5 Pro + Elgato 4K60 Pro MK.2 + RTX 5080，Veyra 2.0 开双层 DLSS5 + 补帧，**端到端延迟稳定在 32ms**，画面无果冻帧、无垃圾帧。另一位 UP 主\"慈祥的儿\"则反馈：之前用小黄鸭或 XeSS 补帧都有\"上楼梯\"伪影和果冻帧，Veyra 支持 VFG 后完全消除。\n对于技术玩家，Veyra 还允许替换运行时 DLL（不锁哈希），在 `runtime/experimental/` 下可放自定义的 NR / XeSS 组件，开放性拉满。\n---\n## 目标人群与收益\n| 用户画像 | Veyra 能解决什么 | 收益 |\n|---------|----------------|-----|\n| **PS5 / Xbox 主机玩家** | 主机锁 30fps/锁画质，DLSS 5 / NR 推到 120FPS | 主机党第一次\"蹭到\"PC AI 画质特效 |\n| **老片修复爱好者** | 1080p 老电影/老动画想拉到 4K 看清楚 | NR 去噪 + SR 超分 + 补帧一条龙 |\n| **音影 / 蓝光收藏党** | 24fps 电影在 144Hz 屏拖影 | DLSS FG / Smooth Motion 补帧 |\n| **OBS 直播 / 剪辑 UP 主** | 想把\"增强后\"画面录下来 | OBS 直接采集，支持 HDR 截图与导出 |\n| **硬件折腾党 / 极客** | 想研究实时 GPU 视频增强管线 | 开源 GPL v3，docs/ 公开实测数据 |\n| **掌机 / 双卡玩家** | 副卡分摊补帧压力 | 支持 A+N 双卡协同，B 站已有实测案例 |\n**明显不是给谁用的：** 网游玩家（额外延迟 + 反作弊风险）、A 卡用户（NR 暂不支持 AMD）、Mac / Linux 用户、显卡性能孱弱的核显党。\n---\n## 上手门槛与部署体验\n**部署体验：满分。** Veyra 是完全便携式，下载 zip 解压即可运行，不用装 Qt、不用装 SDK、不用装 Python。卸载就是删除目录。\n**文档体验：超高。** README 同时维护中英文，docs/ 目录有数十份实测报告（如 `CAPTURE_LATENCY_FIX_2026-09-07.md`、`REMOTEPLAY_PS5_ACCEPTANCE_2026-09-11.md`），每个版本都附带 SHA-256 与第三方许可清单。\n**配置学习成本：中等偏高。** 日常模式 5 步即可跑通，但要真正调好 NR 强度、保护区域、超分档位、补帧倍率，需要理解光流、神经渲染这些概念，建议先看官方\"日常模式入门\"教程。\n---\n## 竞品对比：Veyra 在同领域处于什么位置？\n| 工具 | 价格 | 平台 | 补帧 | 超分 | 采集卡 | PS5 串流 | 上手难度 |\n|------|-----|------|-----|------|--------|---------|---------|\n| **Veyra-NRVideo** | 免费（GPLv3） | Win11 x64 | DLSS / XeSS / Smooth Motion | DLSS / RTX SR / XeSS / FSR | ✅ DirectShow | ✅ 内置 | ★★★ |\n| **Lossless Scaling（小黄鸭）** | ~29 元 | Win10/11 | LSFG 3.1 / AFG | LS1 / FSR / Anime4K | ❌ | ❌ | ★ |\n| **SVP 4 Pro** | ~$29 | Win/Mac/Linux | RIFE 模型 | ❌ | ❌ | ❌ | ★★★★ |\n| **mpv-lazy + RIFE** | 免费 | 跨平台 | RIFE | ❌ | ❌ | ❌ | ★★★★★ |\n| **Smooth Motion（NVIDIA App）** | 免费 | Win | 驱动级 AI 插帧 | ❌ | ❌ | ❌ | ★★ |\n| **Magpie Experimental** | 免费 | Win | ❌ | 多种 | ❌ | ❌ | ★★ |\n| **chiaki-ng** | 免费 | 跨平台 | ❌ | ❌ | ❌ | ✅ | ★★★ |\n**核心差异点：**\n1. **Veyra 是唯一把\"视频播放器 + 采集卡 + 串流 + AI 增强\"全部合体**的方案。小黄鸭能在播放器窗口上补帧，但不能接采集卡信号、不能接 PS5 串流、没有 NR。\n2. **NR（神经渲染）是 Veyra 独有的杀手锏。** 小黄鸭没有 NR，SVP 没有 NR，Magpie 是研究灵感来源但偏单独超分。\n3. **补帧质量对比**：NGA 玩家社区横评里，小黄鸭最丝滑但烂帧多，SVP 适合动画，RIFE 伪影最少但吃资源；Veyra 因为走 DLSS FG 这条硬光流路线，在采集卡场景下\"果冻帧\"问题显著优于小黄鸭。\n4. **价格优势碾压**：免费开源 vs SVP 的百元付费、小黄鸭的 29 元。\n> **一句话定位**：如果你只是给视频文件补帧，小黄鸭更省心；如果你要接采集卡、串流 PS5、做神经渲染增强，**Veyra 没有对手**。\n---\n## 局限与不足：客观存在的问题\nVeyra 不是没有短板，README 和 Release Notes 自己都列得清清楚楚。\n### 1. 硬件门槛真实存在\n- **主测试平台是 RTX 5070**，RTX 30/40 系要靠\"社区实验版\"的 NR 运行时，签名状态为 `HashMismatch`，性能与画质取决于实际显卡。\n- **AMD 显卡暂无 NR 支持**，只能用 XeSS 补帧与 FidelityFX 光流，体验打折。\n- **8K 超分、多层 NR、6X 补帧**对显存极敏感，1.4.4 中实测\"输出上限现在决定补帧实际生成多少\"，6X 在真超分档功耗从 221W 降到 174W——说明 GPU 负载非常重。\n### 2. 部分功能仍属\"实验级\"\n- **真 PS5 HDR 与 Sony 登录仍待验收**，HDR 处理本质上是\"SDR 代理 + HDR 基底合成\"，不是原生 HDR NR 模型。\n- **真 1080p→4K 超分 + NR 下 DLSS 4X/6X 仍有长间隔**，XeSS 4X 重负载连续性问题未根治。\n- **AV1 / ProRes 导出尚不支持**，XeSS 仅用于预览，导出只走 DLSS 路径。\n- **NR/补帧的叠加未官方验证**，可能与 Smooth Motion 同时开启产生不可预测的副作用。\n### 3. 软件形态与稳定性风险\n- **便携式单机软件，无自动更新**，升级需要手动解压新目录，避免旧目录覆盖运行时组件。\n- **不绑定任何官方支持**，社区 NR 二进制是修改版，NVIDIA 与 Sony 不背书，存在驱动兼容性风险。\n- **衍生生态混乱**：B 站已有第三方做的\"Veyra 改版 2.0\"（带百度网盘下载），集成\"本地游戏窗口捕获\"等功能，但属于非官方魔改，安全性与稳定性自行评估。\n- **强依赖特定驱动版本**，README 反复强调\"使用当前显卡驱动\"，旧驱动可能直接报错。\n### 4. 文档虽详实，但偏硬核\n中文为主、英文为辅，对非技术玩家来说，里面大量出现的\"DPAPI 加密\"、\"WASAPI 端点\"、\"P010 / NV12\"、\"BitBlt vs WGC\"等术语需要一定 Windows 媒体架构背景才能秒懂。\n---\n## 深度剖析：技术栈与架构\n从公开源码组织看，Veyra 是一个相当成熟的 C++ 项目：\n- **核心语言**：C++20 + Win32 + D3D12\n- **解码与封装**：FFmpeg（自带 patched 版本）\n- **采集**：DirectShow（支持 RGB24/32、YUY2、UYVY、NV12、P010、P016 等 15 种像素格式）\n- **编码**：NVENC（视频导出走 H.264/HEVC）\n- **UI**：QML（`qml/Veyra/Main.qml`、`ProPage.qml`、`NodePage.qml`、`ExportPage.qml`）\n- **串流**：基于 chiaki-ng 的 PS5 Remote Play、基于 Moonlight 的 Xbox/PC 串流\n- **架构核心**：一套 EnhanceGraph，多个输入源共享同一条 D3D12 处理链\n```\ninclude/veyra/\n├── engine/      # 增强图、NR/SR/调色调度\n├── source/      # 文件、采集卡、屏幕捕获\n├── sink/        # 输出、编码与录制\n├── remoteplay/  # PS5 串流\n├── pipeline/    # 帧管线与帧同步\n└── xbox/        # Xbox 接入\n```\n**许可证**：Veyra 原有源码采用 GPLv3，含串流的组合程序同时适用 AGPLv3 与上游 OpenSSL 例外。SDK、模型和运行时不进入源码仓库。\n---\n## 结语与行动建议\n**Veyra-NRVideo 是一款\"看起来像个人项目、实际上像商业产品\"的开源工具，** 它把过去散落在 MPC-HC、madVR、SVP、chiaki-ng、小黄鸭等多个工具上的能力收成了一站式方案，并在每个版本都附带了\"已验证 vs 边界\"这种少见的诚实文档。\n### 给你的行动建议\n| 如果你... | 建议你... |\n|----------|----------|\n| 是 PS5 主机玩家 + 4K 显示器 | **强烈建议尝试**，是开源社区里唯一能让主机画面上 DLSS 5 + 120FPS 的方案 |\n| 是老片修复 / 影音爱好者 | **值得装入常备**，NR + SR + 补帧三件套体验超过小黄鸭 |\n| 只是普通视频补帧需求 | **优先小黄鸭或 Smooth Motion**，Veyra 学习成本对你偏高 |\n| 是 A 卡用户 / 核显党 | **暂不推荐**，NR 不支持、DLSS 路径缺位，等社区后续 |\n| 想研究 GPU 实时视频增强管线 | **必看**，源码结构清晰、docs/ 有完整实测记录，是难得的工程级参考 |\n| 担心稳定性 / 担心安全问题 | **只用官方 Release**，绕开 B 站改版和魔改包，每版升级完整解压新目录 |\n### 一句话终极评判\n> **Veyra 是目前开源社区里，把\"NVIDIA AI 画质栈\"塞进视频播放器和主机采集链路里最认真、最诚实、也最硬核的尝试。** 它不是要替代 PotPlayer、也不是要替代小黄鸭，它开辟的是一条过去根本不存在的路径——让 PS5/Xbox 主机画面也能享受 PC 级的神经渲染与帧生成。\n如果你想第一时间跟进它的迭代，关注 GitHub Release 页与作者 @Likely7Ai 的 B 站账号是最高效的方式。",
+  "type": "project",
+  "dateAdded": "20261113"
+}
