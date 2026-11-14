@@ -11623,16 +11623,16 @@
       "starsAdded": 4660,
       "createdAt": "2026-09-26T11:00:40.206Z",
       "metaData": {
-        "forks": "1870",
-        "stars": "22269",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "board",
           "collaboration",
-          "data-table",
           "doc",
           "docx",
           "excel",
-          "grid",
+          "offce365",
+          "office",
           "pdf",
           "ppt",
           "pptx",
@@ -11641,14 +11641,15 @@
           "sheet",
           "slides",
           "spreadsheet",
-          "table",
+          "univer",
           "word",
           "wordprocessor",
+          "workspace",
           "xlsx"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://docs.univer.ai",
-        "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime. - dream-num/univer"
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
       },
       "summaryData": {
         "tags": [
@@ -14285,16 +14286,16 @@
       "starsAdded": 5267,
       "createdAt": "2026-09-30T13:00:05.314Z",
       "metaData": {
-        "forks": "1870",
-        "stars": "22269",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "board",
           "collaboration",
-          "data-table",
           "doc",
           "docx",
           "excel",
-          "grid",
+          "offce365",
+          "office",
           "pdf",
           "ppt",
           "pptx",
@@ -14303,14 +14304,15 @@
           "sheet",
           "slides",
           "spreadsheet",
-          "table",
+          "univer",
           "word",
           "wordprocessor",
+          "workspace",
           "xlsx"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://docs.univer.ai",
-        "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime. - dream-num/univer"
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
       },
       "summaryData": {
         "tags": [
@@ -26163,6 +26165,59 @@
   ],
   "202646": [
     {
+      "id": "bf989008-3424-4baf-b52d-316b8f44ddbc",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 27738,
+      "forks": 2161,
+      "starsAdded": 13375,
+      "createdAt": "2026-11-14T14:00:21.379Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "0f18aad4-faf8-4c03-8d64-f5a5fd881c75",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26170,8 +26225,8 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 111507,
-      "forks": 12911,
+      "stars": 111544,
+      "forks": 12912,
       "starsAdded": 13364,
       "createdAt": "2026-11-13T11:01:11.742Z",
       "metaData": {
@@ -26354,8 +26409,8 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 22518,
-      "forks": 3130,
+      "stars": 22546,
+      "forks": 3134,
       "starsAdded": 7763,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
@@ -26470,8 +26525,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 194370,
-      "forks": 22872,
+      "stars": 194402,
+      "forks": 22875,
       "starsAdded": 6169,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
@@ -26578,7 +26633,7 @@
       "repo": "google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars": 18852,
+      "stars": 18880,
       "forks": 1407,
       "starsAdded": 5560,
       "createdAt": "2026-11-13T19:00:04.119Z",
@@ -26861,8 +26916,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 50959,
-      "forks": 3549,
+      "stars": 50983,
+      "forks": 3550,
       "starsAdded": 4360,
       "createdAt": "2026-11-08T18:00:03.966Z",
       "metaData": {
@@ -27092,8 +27147,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 72105,
-      "forks": 57424,
+      "stars": 72131,
+      "forks": 57432,
       "starsAdded": 3778,
       "createdAt": "2026-11-13T11:01:11.779Z",
       "metaData": {
@@ -27153,8 +27208,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 117370,
-      "forks": 12278,
+      "stars": 117387,
+      "forks": 12279,
       "starsAdded": 3502,
       "createdAt": "2026-11-13T11:01:11.794Z",
       "metaData": {
@@ -27702,8 +27757,8 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 17930,
-      "forks": 2191,
+      "stars": 17936,
+      "forks": 2194,
       "starsAdded": 1764,
       "createdAt": "2026-11-11T11:00:03.809Z",
       "metaData": {
@@ -27759,7 +27814,7 @@
       "repo": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
-      "stars": 20919,
+      "stars": 20923,
       "forks": 3494,
       "starsAdded": 1731,
       "createdAt": "2026-11-13T11:01:11.835Z",
@@ -27985,6 +28040,68 @@
           "需要 AI 生产力工具的知识工作者"
         ],
         "description": "LobeHub（原 LobeChat）是拥有 8 万+ Star 的开源 AI 工作站，支持 Docker 一键部署或桌面版安装，可聚合 40+ 大模型、搭建多 Agent 协作团队并接入常用聊天软件。但需注意：许可证限制衍生分发、安全公告较多需挂认证反代，功能丰富也带来了较高的学习成本。"
+      }
+    },
+    {
+      "id": "9dedebef-c50d-4c94-9715-9381a4dad3fa",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 10724,
+      "forks": 797,
+      "starsAdded": 511,
+      "createdAt": "2026-11-14T14:00:21.399Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
       }
     }
   ]

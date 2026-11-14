@@ -1,6 +1,201 @@
 {
   "all": [
     {
+      "id": "13564625-7c45-4bcd-8192-5fbf5c4d1a2e",
+      "url": "https://github.com/martin-olivier/airgorah",
+      "domain": "github.com",
+      "repo": "martin-olivier/airgorah",
+      "description": "Airgorah 是一款用 Rust + GTK4 编写的开源 WiFi 安全审计工具，底层基于 aircrack-ng 工具套件。它把原本需要背诵十几条终端命令的 WiFi 测试流程（切监听模式、扫描、Deauth、抓握手包、字典破解）整合成直观的图形界面，支持双频扫描、双 Deauth 引擎切换、破解任务独立后台运行。安装只需三行命令，提供 deb/rpm/arch 预编译包。注意：仅限测试自己拥有或已获书面授权的网络，对他人网络使用属违法行为。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-14T14:15:06.951Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gui",
+          "kali",
+          "linux-app",
+          "security",
+          "security-audit",
+          "wifi",
+          "wifi-security",
+          "wireless"
+        ],
+        "license": "MIT license",
+        "homepage": "https://crates.io/crates/airgorah",
+        "description": "A WiFi security auditing software. Contribute to martin-olivier/airgorah development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "WiFi安全",
+          "开源项目",
+          "aircrack-ng",
+          "渗透测试",
+          "Linux"
+        ],
+        "cover": "",
+        "title": "Airgorah 深度评测：把 aircrack-ng 命令行装进现代 GUI 的 WiFi 安全审计工具",
+        "ability": [
+          "实时扫描 2.4G/5G 双频 WiFi 网络并列出 AP 与客户端",
+          "可视化 Deauth 攻击（支持 aireplay-ng 与 mdk4 双引擎）",
+          "自动抓取握手包并调用 aircrack-ng 跑字典/暴力破解",
+          "集成 MAC 地址随机化保护测试者隐私",
+          "采用 GUI 普通用户 + Agent 提权的最小权限安全架构，兼容 Wayland"
+        ],
+        "summary": "基于 Rust+GTK4 的开源 WiFi 安全审计图形化工具，让 aircrack-ng 的复杂命令行流程变成可视化点点鼠标就能完成的操作",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "Linux 工具"
+        ],
+        "suitable": [
+          "想检查自家路由器密码强度的家庭用户",
+          "无线安全领域初学者",
+          "红队/渗透测试工程师",
+          "CTF 选手与网络安全讲师",
+          "想通过真实项目学习 Rust+GTK4 开发的程序员"
+        ],
+        "description": "Airgorah 是一款用 Rust + GTK4 编写的开源 WiFi 安全审计工具，底层基于 aircrack-ng 工具套件。它把原本需要背诵十几条终端命令的 WiFi 测试流程（切监听模式、扫描、Deauth、抓握手包、字典破解）整合成直观的图形界面，支持双频扫描、双 Deauth 引擎切换、破解任务独立后台运行。安装只需三行命令，提供 deb/rpm/arch 预编译包。注意：仅限测试自己拥有或已获书面授权的网络，对他人网络使用属违法行为。"
+      },
+      "type": "project",
+      "dateAdded": "20261114"
+    },
+    {
+      "id": "512016f6-4c1a-455b-8ea0-0be400c3640b",
+      "url": "https://github.com/Tencent/LoopForge",
+      "domain": "github.com",
+      "repo": "Tencent/LoopForge",
+      "description": "LoopForge 是腾讯轻量云团队基于内部 20+ 业务、月均交付 200+ 需求的实践经验开源的多 Agent 工作流编排层（MIT 协议）。它不直接写代码，而是让 AI 编程助手先澄清需求再动手、由独立 Agent 交叉评审、跑过测试才算完成，每步证据落盘留痕。适合被 Vibe Coding '假装完成'坑过的团队，但轻量补全场景下仪式感偏重。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-14T14:11:47.786Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-orchestration",
+          "agentic-workflow",
+          "ai-agents",
+          "ai-coding",
+          "claude-code",
+          "code-review",
+          "codebuddy",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "developer-tools",
+          "human-on-the-loop",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "sdlc",
+          "self-hosted",
+          "sop",
+          "workflow-automation",
+          "workflow-engine"
+        ],
+        "license": "License",
+        "homepage": "https://loopforge.cn",
+        "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants. - Tencent/LoopForge"
+      },
+      "summaryData": {
+        "tags": [
+          "LoopForge",
+          "腾讯开源",
+          "Coding Agent",
+          "规范驱动开发",
+          "多 Agent 工作流"
+        ],
+        "cover": "",
+        "title": "LoopForge 深度评测：腾讯开源的多 Agent 研发流水线编排器",
+        "ability": [
+          "五阶段 Devflow 工作流：按任务复杂度自动分流，小改动走快速路径，中大型任务走完整多 Agent 流水线",
+          "角色隔离与独立评审：设计、实现、审查、测试由上下文独立的 Agent 分工完成，避免'自审自夸'",
+          "交付产物全留痕：自动生成需求、设计、评审报告、测试结果等工程档案目录",
+          "可恢复状态管理：任务中断后可从断点继续，不丢上下文现场",
+          "多宿主兼容：支持 CodeBuddy、Claude Code、Codex、Cursor、Pi 五大宿主一键安装"
+        ],
+        "summary": "腾讯开源的 AI 编程工作流编排框架，给 Claude Code 等 Coding Agent 装上'流程经理'，强制走需求澄清、设计、实现、独立评审、测试五步 SOP 并留痕。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "工程效能"
+        ],
+        "suitable": [
+          "研发效能负责人与平台架构师",
+          "Claude Code / CodeBuddy 等 Coding Agent 重度用户",
+          "接手无测试老项目（屎山代码）的开发者",
+          "需要交付物可回溯、可 Review 的团队",
+          "腾讯云生态用户（可搭配 tcmcp 工具接入云资源）"
+        ],
+        "description": "LoopForge 是腾讯轻量云团队基于内部 20+ 业务、月均交付 200+ 需求的实践经验开源的多 Agent 工作流编排层（MIT 协议）。它不直接写代码，而是让 AI 编程助手先澄清需求再动手、由独立 Agent 交叉评审、跑过测试才算完成，每步证据落盘留痕。适合被 Vibe Coding '假装完成'坑过的团队，但轻量补全场景下仪式感偏重。"
+      },
+      "type": "project",
+      "dateAdded": "20261114"
+    },
+    {
+      "id": "f28b432b-269f-44d3-ac2f-e09ce7ce26a0",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "domain": "github.com",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-14T14:07:50.252Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      },
+      "type": "project",
+      "dateAdded": "20261114"
+    },
+    {
       "id": "58d7cfaa-0031-49f0-8a4b-e81a833ba86a",
       "url": "https://github.com/google/elephant-goldfish-model",
       "domain": "github.com",
@@ -12158,16 +12353,16 @@
       "forks": 0,
       "createdAt": "2026-09-22T11:08:24.495Z",
       "metaData": {
-        "forks": "1870",
-        "stars": "22269",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "board",
           "collaboration",
-          "data-table",
           "doc",
           "docx",
           "excel",
-          "grid",
+          "offce365",
+          "office",
           "pdf",
           "ppt",
           "pptx",
@@ -12176,14 +12371,15 @@
           "sheet",
           "slides",
           "spreadsheet",
-          "table",
+          "univer",
           "word",
           "wordprocessor",
+          "workspace",
           "xlsx"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://docs.univer.ai",
-        "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime. - dream-num/univer"
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
       },
       "summaryData": {
         "tags": [
