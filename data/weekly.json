@@ -26170,9 +26170,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 111094,
-      "forks": 12855,
-      "starsAdded": 14381,
+      "stars": 111139,
+      "forks": 12860,
+      "starsAdded": 13364,
       "createdAt": "2026-11-13T11:01:11.742Z",
       "metaData": {
         "forks": "0",
@@ -26302,9 +26302,9 @@
       "repo": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 71878,
-      "forks": 4788,
-      "starsAdded": 10700,
+      "stars": 71931,
+      "forks": 4793,
+      "starsAdded": 8829,
       "createdAt": "2026-11-09T12:00:06.001Z",
       "metaData": {
         "forks": "0",
@@ -26354,9 +26354,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 22157,
-      "forks": 3074,
-      "starsAdded": 9104,
+      "stars": 22186,
+      "forks": 3077,
+      "starsAdded": 7763,
       "createdAt": "2026-11-08T18:00:03.916Z",
       "metaData": {
         "forks": "0",
@@ -26419,9 +26419,9 @@
       "repo": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 323785,
-      "forks": 27172,
-      "starsAdded": 8731,
+      "stars": 323833,
+      "forks": 27176,
+      "starsAdded": 7599,
       "createdAt": "2026-11-08T18:00:03.968Z",
       "metaData": {
         "forks": "0",
@@ -26463,72 +26463,6 @@
       }
     },
     {
-      "id": "348a4859-a6a5-4234-962d-2bc535f771c9",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-desktop",
-      "repo": "vercel-labs/agent-desktop",
-      "description": "Computer use CLI for AI agents",
-      "language": "Rust",
-      "stars": 23265,
-      "forks": 1722,
-      "starsAdded": 6414,
-      "createdAt": "2026-11-09T12:00:05.698Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "accessibility",
-          "accessibility-api",
-          "ai-agents",
-          "automation",
-          "cli",
-          "computer-use",
-          "computer-use-agent",
-          "computer-use-agents",
-          "desktop-automation",
-          "macos",
-          "mcp",
-          "rust"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev/desktop",
-        "description": "Computer use CLI for AI agents. Contribute to vercel-labs/agent-desktop development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "AI Agent",
-          "Computer Use",
-          "开源项目",
-          "桌面自动化",
-          "Vercel"
-        ],
-        "cover": "",
-        "title": "agent-desktop 深度评测：让 AI Agent 像操作 DOM 一样操控电脑桌面",
-        "ability": [
-          "通过操作系统无障碍树结构化读取桌面 UI，无需截图与视觉模型",
-          "Ref 引用机制让操作可定位、可验证、失败可重试",
-          "Skeleton 加按需下钻压缩 token 消耗（自报节省 78%-96%）",
-          "默认 headless 后台运行，不抢鼠标焦点，支持多 Agent 并行",
-          "模型中立，任意大模型均可调用，自带面向 Agent 的使用手册"
-        ],
-        "summary": "Vercel 开源的 Rust CLI 工具，让 AI Agent 无需截图、直接读取系统无障碍树来精准操控 macOS/Windows/Linux 桌面应用。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "构建桌面 Agent 工作流的开发者",
-          "RPA 与自动化测试工程师",
-          "想让编码 Agent 操控本地软件的效率玩家",
-          "无障碍与辅助技术从业者",
-          "关注 Computer Use 赛道的技术研究者"
-        ],
-        "description": "agent-desktop 是 Vercel Labs 开源的 Rust CLI 与 C 库，核心思路是不让 AI 看屏幕截图，而是读取操作系统原生的无障碍树，把桌面 UI 变成带 Ref 句柄的结构化 JSON，Agent 可像操作网页 DOM 一样精准点击与输入，默认后台运行、省 token、支持任意大模型。项目较新，Linux 支持与部分应用覆盖仍有短板。"
-      }
-    },
-    {
       "id": "df0d9568-3259-41de-bcbc-36b3d7c72259",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26536,9 +26470,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 194114,
-      "forks": 22829,
-      "starsAdded": 6055,
+      "stars": 194145,
+      "forks": 22832,
+      "starsAdded": 6169,
       "createdAt": "2026-11-08T18:00:03.821Z",
       "metaData": {
         "forks": "0",
@@ -26637,59 +26571,6 @@
       }
     },
     {
-      "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "repo": "NVIDIA/auto-ontology",
-      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "language": "Python",
-      "stars": 12539,
-      "forks": 1028,
-      "starsAdded": 5802,
-      "createdAt": "2026-11-08T18:00:03.599Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "",
-        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
-      },
-      "summaryData": {
-        "tags": [
-          "NVIDIA",
-          "语义层",
-          "知识图谱",
-          "MCP",
-          "Text-to-SQL"
-        ],
-        "cover": "",
-        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
-        "ability": [
-          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
-          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
-          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
-          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
-          "支持人工修正回灌本体的学习回路，语义层越用越准"
-        ],
-        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
-        "category": [
-          "开源项目",
-          "开发工具",
-          "AI 基础设施"
-        ],
-        "suitable": [
-          "企业数据平台团队（统一多系统数据口径）",
-          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
-          "BI / 数据分析工程师（自动生成语义层初稿）",
-          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
-          "研究 Agent 可信度的学术研究者"
-        ],
-        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
-      }
-    },
-    {
       "id": "51bb7112-c658-4599-9455-640de7064a98",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26697,9 +26578,9 @@
       "repo": "google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars": 18587,
-      "forks": 1385,
-      "starsAdded": 5555,
+      "stars": 18624,
+      "forks": 1388,
+      "starsAdded": 5560,
       "createdAt": "2026-11-13T19:00:04.119Z",
       "metaData": {
         "forks": "0",
@@ -26757,6 +26638,72 @@
           "想学习 AI 协作方法论的开发者"
         ],
         "description": "Google 开源的 AI 编程流程插件（Apache 2.0），由 Distinguished Engineer Dave Rensin 背书。核心理念是把「写设计」和「审设计」拆成两类 Agent：大象负责写，零上下文的金鱼负责以天真视角逐段复述、挑刺，从而在动手写代码前发现幻觉与设计缺陷。Google 内部已有数千工程师使用，但 token 消耗大、隔离性并非百分百可靠。"
+      }
+    },
+    {
+      "id": "348a4859-a6a5-4234-962d-2bc535f771c9",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "repo": "vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "stars": 23297,
+      "forks": 1725,
+      "starsAdded": 5408,
+      "createdAt": "2026-11-09T12:00:05.698Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "accessibility",
+          "accessibility-api",
+          "ai-agents",
+          "automation",
+          "cli",
+          "computer-use",
+          "computer-use-agent",
+          "computer-use-agents",
+          "desktop-automation",
+          "macos",
+          "mcp",
+          "rust"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev/desktop",
+        "description": "Computer use CLI for AI agents. Contribute to vercel-labs/agent-desktop development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI Agent",
+          "Computer Use",
+          "开源项目",
+          "桌面自动化",
+          "Vercel"
+        ],
+        "cover": "",
+        "title": "agent-desktop 深度评测：让 AI Agent 像操作 DOM 一样操控电脑桌面",
+        "ability": [
+          "通过操作系统无障碍树结构化读取桌面 UI，无需截图与视觉模型",
+          "Ref 引用机制让操作可定位、可验证、失败可重试",
+          "Skeleton 加按需下钻压缩 token 消耗（自报节省 78%-96%）",
+          "默认 headless 后台运行，不抢鼠标焦点，支持多 Agent 并行",
+          "模型中立，任意大模型均可调用，自带面向 Agent 的使用手册"
+        ],
+        "summary": "Vercel 开源的 Rust CLI 工具，让 AI Agent 无需截图、直接读取系统无障碍树来精准操控 macOS/Windows/Linux 桌面应用。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "构建桌面 Agent 工作流的开发者",
+          "RPA 与自动化测试工程师",
+          "想让编码 Agent 操控本地软件的效率玩家",
+          "无障碍与辅助技术从业者",
+          "关注 Computer Use 赛道的技术研究者"
+        ],
+        "description": "agent-desktop 是 Vercel Labs 开源的 Rust CLI 与 C 库，核心思路是不让 AI 看屏幕截图，而是读取操作系统原生的无障碍树，把桌面 UI 变成带 Ref 句柄的结构化 JSON，Agent 可像操作网页 DOM 一样精准点击与输入，默认后台运行、省 token、支持任意大模型。项目较新，Linux 支持与部分应用覆盖仍有短板。"
       }
     },
     {
@@ -26834,59 +26781,6 @@
       }
     },
     {
-      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 50690,
-      "forks": 3525,
-      "starsAdded": 4601,
-      "createdAt": "2026-11-08T18:00:03.966Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
-      }
-    },
-    {
       "id": "2cbd0b0e-5eaa-458e-b01d-c22cc87f4fcf",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -26960,6 +26854,59 @@
       }
     },
     {
+      "id": "6091a7d8-848a-42d5-9d34-a4df74c80519",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 50727,
+      "forks": 3526,
+      "starsAdded": 4360,
+      "createdAt": "2026-11-08T18:00:03.966Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
       "id": "a0cdc0ab-b48d-4ecf-bc9c-10d6fa94f40c",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27021,6 +26968,59 @@
           "命理类内容创作者"
         ],
         "description": "由王多鱼AI开源的紫微斗数项目，严格按倪海厦《天纪》体系实现排盘算法，附真太阳时校正、夏令时处理等细节。核心资产是67.5万条命盘与解读配对数据集，可直接用于AI微调或RAG，另有古籍全文和完整前端，代码MIT协议可商用。"
+      }
+    },
+    {
+      "id": "4ff092b2-0cd6-4e91-8e12-69d8f2c7fc24",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "repo": "NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 12560,
+      "forks": 1029,
+      "starsAdded": 4108,
+      "createdAt": "2026-11-08T18:00:03.599Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows. - NVIDIA/auto-ontology"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "语义层",
+          "知识图谱",
+          "MCP",
+          "Text-to-SQL"
+        ],
+        "cover": "",
+        "title": "NVIDIA Auto Ontology 深度评测：给 AI Agent 造一本「企业数据词典」",
+        "ability": [
+          "用 LLM 自动从元数据生成企业语义层与知识图谱，宣称节省 90% 构建时间",
+          "通过 MCP/CLI/REST API 为 AI Agent 提供可信的 Text-to-SQL 语义层",
+          "跨系统调和冲突的业务术语定义（如不同部门对'活跃客户'的口径）",
+          "对生成的 SQL 进行语义校验与数据血缘追踪，每次返回带来源",
+          "支持人工修正回灌本体的学习回路，语义层越用越准"
+        ],
+        "summary": "NVIDIA 开源的语义层框架，用 LLM 自动生成企业数据知识图谱，让 AI Agent 真正读懂数据库背后的业务含义。",
+        "category": [
+          "开源项目",
+          "开发工具",
+          "AI 基础设施"
+        ],
+        "suitable": [
+          "企业数据平台团队（统一多系统数据口径）",
+          "AI Agent 工程师（需要 grounding layer 让 Agent 写出语义正确的 SQL）",
+          "BI / 数据分析工程师（自动生成语义层初稿）",
+          "AI 产品创业者（对接企业多源数据省去大量清洗工作）",
+          "研究 Agent 可信度的学术研究者"
+        ],
+        "description": "NVIDIA 于 2026 年开源的 Python 框架（Apache 2.0 协议），源自其收购的 Illumex 团队。它用 LLM 自动扫描企业数据库元数据，生成带业务含义的语义层和知识图谱，再通过 MCP 等 9 个只读工具暴露给任意 AI Agent，解决 Agent 写 SQL 时'看不懂这列数据是什么意思'的核心痛点。工程品质高、设计成熟，但仅支持 4 种数据源、不接受外部 PR、且缺乏公开基准测试数据。"
       }
     },
     {
@@ -27092,9 +27092,9 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 71550,
-      "forks": 57271,
-      "starsAdded": 3569,
+      "stars": 71598,
+      "forks": 57284,
+      "starsAdded": 3778,
       "createdAt": "2026-11-13T11:01:11.779Z",
       "metaData": {
         "forks": "0",
@@ -27153,9 +27153,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 117126,
-      "forks": 12246,
-      "starsAdded": 3199,
+      "stars": 117148,
+      "forks": 12250,
+      "starsAdded": 3502,
       "createdAt": "2026-11-13T11:01:11.794Z",
       "metaData": {
         "forks": "0",
@@ -27339,63 +27339,6 @@
       }
     },
     {
-      "id": "8c1ba88b-3146-4298-b947-42585a2a439e",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/zed-industries/zed",
-      "repo": "zed-industries/zed",
-      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "language": "Rust",
-      "stars": 94952,
-      "forks": 11694,
-      "starsAdded": 2339,
-      "createdAt": "2026-11-11T11:00:03.795Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "gpui",
-          "rust-lang",
-          "text-editor",
-          "zed"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://zed.dev",
-        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
-      },
-      "summaryData": {
-        "tags": [
-          "代码编辑器",
-          "Rust",
-          "开源项目",
-          "GPU 加速",
-          "AI Agent"
-        ],
-        "cover": "",
-        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
-        "ability": [
-          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
-          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
-          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
-          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
-          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
-        ],
-        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "Rust/Go/Python/TypeScript 等语言的开发者",
-          "受够 VS Code 卡顿与高内存占用的用户",
-          "需要远程结对编程的协作团队",
-          "想省去配置成本的 Vim/Neovim 老用户",
-          "AI Agent 重度使用与工作流研究者"
-        ],
-        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
-      }
-    },
-    {
       "id": "4aa2be20-1ade-4d0f-a36b-b0286695af45",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27464,6 +27407,63 @@
           "关注终端协议演进的工具作者"
         ],
         "description": "Herdr 是 2026 年加入 YC 的 Rust 开源项目，单二进制仅约 10MB，零依赖无遥测。它专为多 AI Agent 并行开发而生：让 Claude Code、Codex 等 Agent 在持久化终端中同时运行，实时感知各自状态，并支持 Agent 间互相派活协作。上线 5 个月斩获近 5 万 Stars，被誉为 AI 时代的 tmux。"
+      }
+    },
+    {
+      "id": "8c1ba88b-3146-4298-b947-42585a2a439e",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/zed-industries/zed",
+      "repo": "zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars": 94961,
+      "forks": 11697,
+      "starsAdded": 2117,
+      "createdAt": "2026-11-11T11:00:03.795Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://zed.dev",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. - zed-industries/zed"
+      },
+      "summaryData": {
+        "tags": [
+          "代码编辑器",
+          "Rust",
+          "开源项目",
+          "GPU 加速",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Zed 深度评测：Atom 创始团队用 Rust 重写的新一代高性能代码编辑器",
+        "ability": [
+          "极致性能：GPU 加速渲染，启动仅 0.4 秒，输入延迟约 2ms，内存占用约为 VS Code 的三分之一",
+          "原生 AI：内置 Agent 面板，支持 MCP 与 ACP 协议，可接入 Claude Code、Codex 等外部 Agent",
+          "多人协作：基于 CRDT 的实时共同编辑，团队与 Agent 可共享同一工作区",
+          "大文件流畅：Tree-sitter 增量解析，十万行级文件依然亚毫秒响应",
+          "低迁移成本：内置 Vim 模式与 VS Code/JetBrains 键位映射，一个 settings.json 即可完成配置"
+        ],
+        "summary": "Atom 创始团队用 Rust 从零重写的高性能开源代码编辑器，主打 GPU 加速、毫秒级输入延迟、原生 AI 与多人实时协作。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "Rust/Go/Python/TypeScript 等语言的开发者",
+          "受够 VS Code 卡顿与高内存占用的用户",
+          "需要远程结对编程的协作团队",
+          "想省去配置成本的 Vim/Neovim 老用户",
+          "AI Agent 重度使用与工作流研究者"
+        ],
+        "description": "Zed 由 Atom 创始团队打造，采用 Rust 与自研 GPUI 框架，从架构层面摆脱 Electron 系编辑器的性能顽疾。它在启动速度、输入延迟、内存占用上全面领先 VS Code 和 Cursor，并将 AI 与多人协作做进编辑器核心。但扩展生态仅约 800 个，调试器与 Windows 端体验仍在追赶，适合作为追求速度与开源透明的主力或第二编辑器。"
       }
     },
     {
@@ -27695,59 +27695,6 @@
       }
     },
     {
-      "id": "5d616042-9310-4fbe-90ae-e129ed2e4d01",
-      "dateAdded": "202646",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/claude-quickstarts",
-      "repo": "anthropics/claude-quickstarts",
-      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "language": "Python",
-      "stars": 20862,
-      "forks": 3490,
-      "starsAdded": 1710,
-      "createdAt": "2026-11-13T11:01:11.835Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
-      },
-      "summaryData": {
-        "tags": [
-          "Anthropic",
-          "Claude",
-          "AI Agent",
-          "Computer Use",
-          "Managed Agents"
-        ],
-        "cover": "",
-        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
-        "ability": [
-          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
-          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
-          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
-          "Computer Use Best Practices 示范生产级工程最佳实践",
-          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
-        ],
-        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "开源项目"
-        ],
-        "suitable": [
-          "初次接触 Claude API 的工程师",
-          "想开发 Agent 产品的创业者与全栈开发者",
-          "研究 AI Agent 架构的技术人员",
-          "想自动化团队工作流的运营/运维人员",
-          "金融、法律等需要智能文档分析的行业从业者"
-        ],
-        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
-      }
-    },
-    {
       "id": "14311865-e588-451d-a7da-8c41894dce33",
       "dateAdded": "202646",
       "type": "github-weekly",
@@ -27755,9 +27702,9 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 17867,
-      "forks": 2187,
-      "starsAdded": 1671,
+      "stars": 17874,
+      "forks": 2188,
+      "starsAdded": 1764,
       "createdAt": "2026-11-11T11:00:03.809Z",
       "metaData": {
         "forks": "0",
@@ -27802,6 +27749,59 @@
           "机械臂与硬件初创团队"
         ],
         "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
+      "id": "5d616042-9310-4fbe-90ae-e129ed2e4d01",
+      "dateAdded": "202646",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "repo": "anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 20871,
+      "forks": 3490,
+      "starsAdded": 1731,
+      "createdAt": "2026-11-13T11:01:11.835Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API - anthropics/claude-quickstarts"
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "AI Agent",
+          "Computer Use",
+          "Managed Agents"
+        ],
+        "cover": "",
+        "title": "Anthropic claude-quickstarts：17 个官方可跑通的 Claude Agent 实战脚手架深度评测",
+        "ability": [
+          "提供 17 个开箱即用的 Claude Agent 参考实现（客服、金融分析、Computer Use 等）",
+          "覆盖 Managed Agents 全场景示例（Slack/Linear/定时任务/多 Agent 协作/MCP 桥接）",
+          "双层教学设计：Docker 一键体验 + 百行代码读懂底层 Toolset 协议",
+          "Computer Use Best Practices 示范生产级工程最佳实践",
+          "MIT 协议可直接 fork 改造为生产项目，不被框架绑架"
+        ],
+        "summary": "Anthropic 官方维护的 17 个可跑通 Agent 示例仓库，是学习 Claude Agent 开发最有价值的实战入口。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "开源项目"
+        ],
+        "suitable": [
+          "初次接触 Claude API 的工程师",
+          "想开发 Agent 产品的创业者与全栈开发者",
+          "研究 AI Agent 架构的技术人员",
+          "想自动化团队工作流的运营/运维人员",
+          "金融、法律等需要智能文档分析的行业从业者"
+        ],
+        "description": "Anthropic 官方维护的 Claude API 实战示例仓库，含客服机器人、金融分析、Computer Use 桌面操控、Agent SDK 编码智能体及 8 个 Managed Agents 示例等 17 个项目。每个示例都是可部署的完整工程，是从官方教程走向生产落地的桥梁；但部分示例强依赖 AWS Bedrock，且存在模型名过时、镜像体积大等坑。"
       }
     },
     {
@@ -27931,9 +27931,9 @@
       "repo": "lobehub/lobehub",
       "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
       "language": "TypeScript",
-      "stars": 85372,
-      "forks": 16291,
-      "starsAdded": 1186,
+      "stars": 85397,
+      "forks": 16292,
+      "starsAdded": 1126,
       "createdAt": "2026-11-13T11:01:11.844Z",
       "metaData": {
         "forks": "0",
