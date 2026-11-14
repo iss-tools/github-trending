@@ -108357,5 +108357,925 @@
         "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
       }
     }
+  ],
+  "20261115": [
+    {
+      "id": "f568cf65-cd17-4feb-b9fe-b02b0e3bb3e1",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 5565,
+      "forks": 298,
+      "starsAdded": 1225,
+      "createdAt": "2026-11-14T16:00:38.277Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
+    },
+    {
+      "id": "4f177496-61f3-44b9-a708-5993d05a0d95",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 51187,
+      "forks": 3816,
+      "starsAdded": 897,
+      "createdAt": "2026-11-14T16:00:38.293Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "d540b6b8-9ccd-4543-9608-92ece56db0b4",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 56087,
+      "forks": 4646,
+      "starsAdded": 673,
+      "createdAt": "2026-11-14T16:00:38.288Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
+        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "DevTools",
+          "MCP",
+          "Puppeteer",
+          "自动化测试"
+        ],
+        "cover": "",
+        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+        "ability": [
+          "浏览器自动化操控",
+          "深度调试与性能分析",
+          "网络请求监控",
+          "Lighthouse 性能审计",
+          "MCP 协议标准集成"
+        ],
+        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "测试工具"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "QA/SRE 工程师",
+          "自动化测试人员",
+          "性能优化专家",
+          "AI 编程深度用户"
+        ],
+        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
+      }
+    },
+    {
+      "id": "4e1b8fc7-6964-42f3-9b41-5b5203753ce9",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 15107,
+      "forks": 1148,
+      "starsAdded": 659,
+      "createdAt": "2026-11-14T16:00:38.319Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
+      "id": "72482550-d32c-4ff5-aad5-bf959336e37f",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 4547,
+      "forks": 896,
+      "starsAdded": 556,
+      "createdAt": "2026-11-14T16:00:38.283Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      }
+    },
+    {
+      "id": "0295b505-39e7-48ea-b59b-d33af66bba19",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 24306,
+      "forks": 2104,
+      "starsAdded": 495,
+      "createdAt": "2026-11-14T16:00:38.300Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+      }
+    },
+    {
+      "id": "41a5e391-ec20-45bc-bcf3-e20d3e415fd6",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "repo": "QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "stars": 30201,
+      "forks": 3422,
+      "starsAdded": 462,
+      "createdAt": "2026-11-14T16:00:38.297Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic",
+          "ai",
+          "ai-agent",
+          "ai-coding",
+          "cli",
+          "coding-agent",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "qwen",
+          "terminal",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+        "description": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code"
+      },
+      "summaryData": {
+        "tags": [
+          "Qwen Code",
+          "AI Agent",
+          "终端工具",
+          "代码生成",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Qwen Code 深度评测：阿里开源终端 AI 编程 Agent，Claude Code 的开源平替",
+        "ability": [
+          "终端原生 Agentic Coding，命令行直接读写文件、跑命令、调 MCP",
+          "多协议架构（OpenAI/Anthropic/Gemini/Qwen），可随时切换任意模型或本地 Ollama",
+          "全形态覆盖：CLI、VS Code/JetBrains 插件、桌面应用、IM 机器人（微信/飞书/钉钉）、Daemon 常驻服务",
+          "内置 /review 代码审查、SubAgents、Auto-Memory、Agent Arena 多模型对抗等 Agentic 能力",
+          "框架 Apache 2.0 + 模型开放权重，真正双开源，无厂商锁定"
+        ],
+        "summary": "阿里开源的终端 AI 编程 Agent，功能对标 Claude Code，多协议接入任意模型，中文友好且性价比高，但免费额度已停需付费使用",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "国内后端/全栈开发者",
+          "习惯终端工作流的老手",
+          "对厂商锁定敏感的技术团队",
+          "预算敏感的独立开发者",
+          "Agent 二次开发工程师"
+        ],
+        "description": "Qwen Code 是阿里通义千问团队基于 Gemini CLI fork 并独立演进的开源终端 AI 编程 Agent。框架与模型双开源，支持四大协议接入任意模型，功能堆栈对标 Claude Code，中文体验和 IM 集成是其独特优势。SWE-bench 自测约 77%，真实体验略逊 Claude 但远超预期；免费 OAuth 已于 2026 年 4 月停服，需付费订阅或自带 API Key。"
+      }
+    },
+    {
+      "id": "c46af8b4-ea15-4653-9c0f-67bc230bca7b",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "repo": "louislam/uptime-kuma",
+      "description": "A fancy self-hosted monitoring tool",
+      "language": "JavaScript",
+      "stars": 94112,
+      "forks": 8734,
+      "starsAdded": 432,
+      "createdAt": "2026-11-14T16:00:38.314Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "docker",
+          "monitor",
+          "monitoring",
+          "responsive",
+          "self-hosted",
+          "selfhosted",
+          "single-page-app",
+          "socket-io",
+          "uptime",
+          "uptime-monitoring",
+          "webapp",
+          "websocket"
+        ],
+        "license": "MIT license",
+        "homepage": "https://uptime.kuma.pet",
+        "description": "A fancy self-hosted monitoring tool. Contribute to louislam/uptime-kuma development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Uptime Kuma",
+          "自托管",
+          "开源监控",
+          "Docker",
+          "可用性监控"
+        ],
+        "cover": "",
+        "title": "Uptime Kuma 深度评测：91k Star 的开源自托管监控神器",
+        "ability": [
+          "支持 31 种监控类型（HTTP/TCP/Ping/DNS/Push/Docker 等）",
+          "90+ 通知渠道告警推送（Telegram/Discord/邮件/钉钉等）",
+          "基于 WebSocket 的实时刷新监控面板",
+          "自定义公开状态页与 SSL 证书过期提醒",
+          "Docker 一键部署，SQLite 存储，数据完全自主掌控"
+        ],
+        "summary": "一个开源免费的自托管可用性监控工具，一条 Docker 命令就能拥有媲美 UptimeRobot 的监控面板与状态页。",
+        "category": [
+          "开发工具",
+          "运维监控",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人开发者与独立 SaaS 作者",
+          "Homelab / 自托管爱好者",
+          "小团队与中小企业运维",
+          "需要给客户提供状态页的乙方外包公司",
+          "想替代 UptimeRobot 付费版节省成本的用户"
+        ],
+        "description": "Uptime Kuma 是一款开源（MIT）自托管可用性监控工具，GitHub Star 约 9.1 万。一条 Docker 命令即可部署，支持 31 种监控类型、90+ 通知渠道，提供实时面板与公开状态页，可替代 UptimeRobot 付费版并大幅节省成本；但存在单点故障、无正式 REST API 等局限，不适合大型企业作为唯一监控方案。"
+      }
+    },
+    {
+      "id": "c792ff55-de7f-437f-8b7a-8a79250b64b1",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "repo": "Likely7/Veyra-NRVideo",
+      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "language": "C++",
+      "stars": 1921,
+      "forks": 87,
+      "starsAdded": 423,
+      "createdAt": "2026-11-14T16:00:38.338Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience. - Likely7/Veyra-NRVideo"
+      },
+      "summaryData": {
+        "tags": [
+          "DLSS",
+          "视频增强",
+          "补帧",
+          "PS5串流",
+          "开源播放器"
+        ],
+        "cover": "",
+        "title": "Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮",
+        "ability": [
+          "AI 超分辨率（DLSS / RTX Video SR / XeSS / FSR）",
+          "神经降噪（NVIDIA NR，RTX 30/40/50 系列）",
+          "帧生成补帧（DLSS FG / Smooth Motion，最高 6X）",
+          "PS5 串流与采集卡实时增强（主机画面推到 4K 120FPS）",
+          "节点模式自定义处理链与 OBS 直播采集、HDR 导出"
+        ],
+        "summary": "一款集成 DLSS 超分、AI 降噪、补帧、PS5 串流与采集卡增强的开源 Windows 视频播放器",
+        "category": [
+          "开发工具",
+          "影音娱乐",
+          "开源项目"
+        ],
+        "suitable": [
+          "PS5 / Xbox 主机玩家（想给主机画面上 AI 画质特效）",
+          "老片修复与影音收藏爱好者",
+          "OBS 直播 / 剪辑 UP 主",
+          "硬件折腾党与开源极客",
+          "双显卡协同玩家"
+        ],
+        "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。"
+      }
+    },
+    {
+      "id": "b69221dc-4c20-4a76-b40f-a472edcb1b14",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 10816,
+      "forks": 802,
+      "starsAdded": 412,
+      "createdAt": "2026-11-14T16:00:38.258Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "21f988cd-637a-4e86-9c26-93d655e389b2",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/martin-olivier/airgorah",
+      "repo": "martin-olivier/airgorah",
+      "description": "A WiFi security auditing software",
+      "language": "Rust",
+      "stars": 5592,
+      "forks": 929,
+      "starsAdded": 269,
+      "createdAt": "2026-11-14T16:00:38.352Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "gui",
+          "kali",
+          "linux-app",
+          "security",
+          "security-audit",
+          "wifi",
+          "wifi-security",
+          "wireless"
+        ],
+        "license": "MIT license",
+        "homepage": "https://crates.io/crates/airgorah",
+        "description": "A WiFi security auditing software. Contribute to martin-olivier/airgorah development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "WiFi安全",
+          "开源项目",
+          "aircrack-ng",
+          "渗透测试",
+          "Linux"
+        ],
+        "cover": "",
+        "title": "Airgorah 深度评测：把 aircrack-ng 命令行装进现代 GUI 的 WiFi 安全审计工具",
+        "ability": [
+          "实时扫描 2.4G/5G 双频 WiFi 网络并列出 AP 与客户端",
+          "可视化 Deauth 攻击（支持 aireplay-ng 与 mdk4 双引擎）",
+          "自动抓取握手包并调用 aircrack-ng 跑字典/暴力破解",
+          "集成 MAC 地址随机化保护测试者隐私",
+          "采用 GUI 普通用户 + Agent 提权的最小权限安全架构，兼容 Wayland"
+        ],
+        "summary": "基于 Rust+GTK4 的开源 WiFi 安全审计图形化工具，让 aircrack-ng 的复杂命令行流程变成可视化点点鼠标就能完成的操作",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "Linux 工具"
+        ],
+        "suitable": [
+          "想检查自家路由器密码强度的家庭用户",
+          "无线安全领域初学者",
+          "红队/渗透测试工程师",
+          "CTF 选手与网络安全讲师",
+          "想通过真实项目学习 Rust+GTK4 开发的程序员"
+        ],
+        "description": "Airgorah 是一款用 Rust + GTK4 编写的开源 WiFi 安全审计工具，底层基于 aircrack-ng 工具套件。它把原本需要背诵十几条终端命令的 WiFi 测试流程（切监听模式、扫描、Deauth、抓握手包、字典破解）整合成直观的图形界面，支持双频扫描、双 Deauth 引擎切换、破解任务独立后台运行。安装只需三行命令，提供 deb/rpm/arch 预编译包。注意：仅限测试自己拥有或已获书面授权的网络，对他人网络使用属违法行为。"
+      }
+    },
+    {
+      "id": "7353e441-de27-414a-bba9-b9e0d999c82f",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "repo": "JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "language": "Go",
+      "stars": 119877,
+      "forks": 6991,
+      "starsAdded": 227,
+      "createdAt": "2026-11-14T16:00:38.312Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "anthropic",
+          "caveman",
+          "claude",
+          "claude-code",
+          "llm",
+          "meme",
+          "prompt-engineering",
+          "skill",
+          "tokens"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.caveman.so/caveman",
+        "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. - JuliusBrussee/caveman"
+      },
+      "summaryData": {
+        "tags": [
+          "Token 节省",
+          "AI 助手",
+          "成本优化",
+          "开源",
+          "Claude"
+        ],
+        "cover": "",
+        "title": "Caveman 项目评测：大模型 Token 压缩与成本优化神器",
+        "ability": [
+          "风格压缩",
+          "本地代理压缩",
+          "多端统一适配",
+          "技能图片化",
+          "本地审计优化"
+        ],
+        "summary": "通过压缩 AI 输出风格与本地代理处理上下文，大幅降低 Token 消耗并提升阅读效率的开源全家桶。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "重度 AI 编程用户",
+          "多 Agent 开发者",
+          "注重隐私的团队",
+          "成本敏感型开发者",
+          "追求极致效率的极客"
+        ],
+        "description": "Caveman 是一个适配 Claude、Cursor 等 30+ 助手的插件与本地代理。它通过精简 AI 输出风格、压缩上下文输入、将技能文档转为图片等方式，在不降低代码质量的前提下，有效减少 Token 消耗，并提供本地审计功能帮助用户清晰掌握成本。"
+      }
+    },
+    {
+      "id": "ff09cc2f-7ab6-473a-8546-d6dbcb5ef5b9",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/ashhart/TensorFold",
+      "repo": "ashhart/TensorFold",
+      "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "language": "Zig",
+      "stars": 2111,
+      "forks": 407,
+      "starsAdded": 188,
+      "createdAt": "2026-11-14T16:00:38.308Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-tools",
+          "llm",
+          "llm-inference",
+          "llm-tools"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://tensorfold.dev",
+        "description": "LLM Inference Engine for Metal, CUDA and Vulkan. Contribute to ashhart/TensorFold development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "本地推理",
+          "投机解码",
+          "Zig",
+          "Apple Silicon",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "TensorFold 深度评测：字节级精确投机解码的本地 LLM 推理引擎",
+        "ability": [
+          "字节级精确投机解码：开/关加速输出完全一致，agent 可复现",
+          "Apple Silicon 与 DGX Spark 上速度达 vLLM/mlx_lm 的 1.6~3.1 倍",
+          "秒级模型冷启动，比 vLLM 快约 6 倍",
+          "Living Weights：模型运行时把事实写回权重文件，无需 RAG 即可记忆",
+          "Context Compaction：超长对话自动压缩成结构化记忆笔记，不丢系统提示词"
+        ],
+        "summary": "一个用 Zig 写的本地大模型推理引擎，靠'开加速但输出逐字节不变'的精确投机解码，在 Mac 和 DGX Spark 上把推理速度做到竞品的 1.6~3.1 倍。",
+        "category": [
+          "开发工具",
+          "AI 推理",
+          "AI 编程"
+        ],
+        "suitable": [
+          "在 Mac 上跑代码 Agent（Cline/aider 等）的开发者",
+          "拥有 DGX Spark 或 Apple Silicon 工作站的用户",
+          "对输出可复现性有硬性要求的 AI 应用开发者",
+          "追求本地推理极致速度的技术极客"
+        ],
+        "description": "TensorFold 是 2026 年 9 月开源的本地 LLM 推理引擎（Apache 2.0，Zig 编写）。它解决了行业默认接受的痛点——投机解码会改变输出，通过 Row-exact kernel 和确定性 Gumbel 采样做到开/关加速输出逐字节一致，速度却快 2~3 倍。局限是仅支持 6 个模型族、社区尚幼、benchmark 多为自报。"
+      }
+    },
+    {
+      "id": "b05bcc20-7af2-4d12-8f97-fc09ca4425fe",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/Tencent/LoopForge",
+      "repo": "Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "language": "Go",
+      "stars": 763,
+      "forks": 117,
+      "starsAdded": 174,
+      "createdAt": "2026-11-14T16:00:38.326Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-orchestration",
+          "agentic-workflow",
+          "ai-agents",
+          "ai-coding",
+          "claude-code",
+          "code-review",
+          "codebuddy",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "developer-tools",
+          "human-on-the-loop",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "sdlc",
+          "self-hosted",
+          "sop",
+          "workflow-automation",
+          "workflow-engine"
+        ],
+        "license": "License",
+        "homepage": "https://loopforge.cn",
+        "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants. - Tencent/LoopForge"
+      },
+      "summaryData": {
+        "tags": [
+          "LoopForge",
+          "腾讯开源",
+          "Coding Agent",
+          "规范驱动开发",
+          "多 Agent 工作流"
+        ],
+        "cover": "",
+        "title": "LoopForge 深度评测：腾讯开源的多 Agent 研发流水线编排器",
+        "ability": [
+          "五阶段 Devflow 工作流：按任务复杂度自动分流，小改动走快速路径，中大型任务走完整多 Agent 流水线",
+          "角色隔离与独立评审：设计、实现、审查、测试由上下文独立的 Agent 分工完成，避免'自审自夸'",
+          "交付产物全留痕：自动生成需求、设计、评审报告、测试结果等工程档案目录",
+          "可恢复状态管理：任务中断后可从断点继续，不丢上下文现场",
+          "多宿主兼容：支持 CodeBuddy、Claude Code、Codex、Cursor、Pi 五大宿主一键安装"
+        ],
+        "summary": "腾讯开源的 AI 编程工作流编排框架，给 Claude Code 等 Coding Agent 装上'流程经理'，强制走需求澄清、设计、实现、独立评审、测试五步 SOP 并留痕。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "工程效能"
+        ],
+        "suitable": [
+          "研发效能负责人与平台架构师",
+          "Claude Code / CodeBuddy 等 Coding Agent 重度用户",
+          "接手无测试老项目（屎山代码）的开发者",
+          "需要交付物可回溯、可 Review 的团队",
+          "腾讯云生态用户（可搭配 tcmcp 工具接入云资源）"
+        ],
+        "description": "LoopForge 是腾讯轻量云团队基于内部 20+ 业务、月均交付 200+ 需求的实践经验开源的多 Agent 工作流编排层（MIT 协议）。它不直接写代码，而是让 AI 编程助手先澄清需求再动手、由独立 Agent 交叉评审、跑过测试才算完成，每步证据落盘留痕。适合被 Vibe Coding '假装完成'坑过的团队，但轻量补全场景下仪式感偏重。"
+      }
+    },
+    {
+      "id": "38068f73-0077-40eb-a2bf-bd139bbfe747",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 17239,
+      "forks": 1582,
+      "starsAdded": 9,
+      "createdAt": "2026-11-14T16:00:38.304Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      }
+    }
   ]
 }
