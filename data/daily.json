@@ -107202,9 +107202,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 5273,
-      "forks": 288,
-      "starsAdded": 1925,
+      "stars": 5322,
+      "forks": 290,
+      "starsAdded": 1225,
       "createdAt": "2026-11-13T16:00:02.182Z",
       "metaData": {
         "forks": "0",
@@ -107248,6 +107248,188 @@
       }
     },
     {
+      "id": "d7777c5d-9931-464f-b7d0-41d0ff652d42",
+      "dateAdded": "20261114",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 51029,
+      "forks": 3805,
+      "starsAdded": 897,
+      "createdAt": "2026-11-13T16:00:02.144Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "81aaf378-464a-4780-b33a-c9a27e4fbed3",
+      "dateAdded": "20261114",
+      "type": "github-daily",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 72064,
+      "forks": 57411,
+      "starsAdded": 867,
+      "createdAt": "2026-11-13T16:00:02.251Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      }
+    },
+    {
+      "id": "a4ecd996-fdec-44e6-9337-3a7efd76bee7",
+      "dateAdded": "20261114",
+      "type": "github-daily",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 55887,
+      "forks": 4630,
+      "starsAdded": 673,
+      "createdAt": "2026-11-13T16:00:02.318Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
+        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "DevTools",
+          "MCP",
+          "Puppeteer",
+          "自动化测试"
+        ],
+        "cover": "",
+        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+        "ability": [
+          "浏览器自动化操控",
+          "深度调试与性能分析",
+          "网络请求监控",
+          "Lighthouse 性能审计",
+          "MCP 协议标准集成"
+        ],
+        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "测试工具"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "QA/SRE 工程师",
+          "自动化测试人员",
+          "性能优化专家",
+          "AI 编程深度用户"
+        ],
+        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
+      }
+    },
+    {
       "id": "f30dddcf-00bc-4ab2-8cd6-fd7084859895",
       "dateAdded": "20261114",
       "type": "github-daily",
@@ -107255,9 +107437,9 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 14978,
-      "forks": 1140,
-      "starsAdded": 925,
+      "stars": 15004,
+      "forks": 1141,
+      "starsAdded": 659,
       "createdAt": "2026-11-13T16:00:02.263Z",
       "metaData": {
         "forks": "0",
@@ -107308,9 +107490,9 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 13366,
-      "forks": 1034,
-      "starsAdded": 751,
+      "stars": 13403,
+      "forks": 1040,
+      "starsAdded": 599,
       "createdAt": "2026-11-13T16:00:02.243Z",
       "metaData": {
         "forks": "0",
@@ -107370,64 +107552,56 @@
       }
     },
     {
-      "id": "81aaf378-464a-4780-b33a-c9a27e4fbed3",
+      "id": "653b0bd2-a011-4a99-911c-b694d7e038f3",
       "dateAdded": "20261114",
       "type": "github-daily",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "repo": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 72029,
-      "forks": 57400,
-      "starsAdded": 256,
-      "createdAt": "2026-11-13T16:00:02.251Z",
+      "stars": 4417,
+      "forks": 885,
+      "starsAdded": 556,
+      "createdAt": "2026-11-13T16:00:02.304Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
-        "topics": [
-          "a-stock",
-          "ai-agent",
-          "aigc",
-          "llm",
-          "quant",
-          "quantitative-finance",
-          "quantitative-trading"
-        ],
+        "topics": [],
         "license": "MIT license",
-        "homepage": "https://dsa.zhulinsen.tech",
-        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
       },
       "summaryData": {
         "tags": [
-          "LLM",
-          "股票分析",
-          "自动推送",
-          "GitHub Actions",
-          "开源项目"
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
         ],
         "cover": "",
-        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
         "ability": [
-          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
-          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
-          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
-          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
-          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
         ],
-        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
         "category": [
-          "AI 应用",
-          "金融投资",
+          "AI 编程",
+          "投资理财",
           "开发工具"
         ],
         "suitable": [
-          "想自动盯盘、省去每日复盘麻烦的个人投资者",
-          "持有A股与海外股票混合配置的全球投资者",
-          "想学习 LLM 工程化落地的开发者",
-          "希望零成本搭建自动化信息推送的小白用户",
-          "对开源金融 AI 工具感兴趣的技术爱好者"
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
         ],
-        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
       }
     },
     {
@@ -107438,9 +107612,9 @@
       "repo": "tailscale/tailcat",
       "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
       "language": "Go",
-      "stars": 9647,
+      "stars": 9677,
       "forks": 443,
-      "starsAdded": 256,
+      "starsAdded": 490,
       "createdAt": "2026-11-13T16:00:02.308Z",
       "metaData": {
         "forks": "0",
@@ -107484,6 +107658,72 @@
       }
     },
     {
+      "id": "04de53a9-74fa-4a05-a768-a0a2bdd62f45",
+      "dateAdded": "20261114",
+      "type": "github-daily",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "repo": "louislam/uptime-kuma",
+      "description": "A fancy self-hosted monitoring tool",
+      "language": "JavaScript",
+      "stars": 94044,
+      "forks": 8731,
+      "starsAdded": 432,
+      "createdAt": "2026-11-13T16:00:02.295Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "docker",
+          "monitor",
+          "monitoring",
+          "responsive",
+          "self-hosted",
+          "selfhosted",
+          "single-page-app",
+          "socket-io",
+          "uptime",
+          "uptime-monitoring",
+          "webapp",
+          "websocket"
+        ],
+        "license": "MIT license",
+        "homepage": "https://uptime.kuma.pet",
+        "description": "A fancy self-hosted monitoring tool. Contribute to louislam/uptime-kuma development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Uptime Kuma",
+          "自托管",
+          "开源监控",
+          "Docker",
+          "可用性监控"
+        ],
+        "cover": "",
+        "title": "Uptime Kuma 深度评测：91k Star 的开源自托管监控神器",
+        "ability": [
+          "支持 31 种监控类型（HTTP/TCP/Ping/DNS/Push/Docker 等）",
+          "90+ 通知渠道告警推送（Telegram/Discord/邮件/钉钉等）",
+          "基于 WebSocket 的实时刷新监控面板",
+          "自定义公开状态页与 SSL 证书过期提醒",
+          "Docker 一键部署，SQLite 存储，数据完全自主掌控"
+        ],
+        "summary": "一个开源免费的自托管可用性监控工具，一条 Docker 命令就能拥有媲美 UptimeRobot 的监控面板与状态页。",
+        "category": [
+          "开发工具",
+          "运维监控",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人开发者与独立 SaaS 作者",
+          "Homelab / 自托管爱好者",
+          "小团队与中小企业运维",
+          "需要给客户提供状态页的乙方外包公司",
+          "想替代 UptimeRobot 付费版节省成本的用户"
+        ],
+        "description": "Uptime Kuma 是一款开源（MIT）自托管可用性监控工具，GitHub Star 约 9.1 万。一条 Docker 命令即可部署，支持 31 种监控类型、90+ 通知渠道，提供实时面板与公开状态页，可替代 UptimeRobot 付费版并大幅节省成本；但存在单点故障、无正式 REST API 等局限，不适合大型企业作为唯一监控方案。"
+      }
+    },
+    {
       "id": "eebd916e-e7c4-43ca-bc97-fac34ea6e7c5",
       "dateAdded": "20261114",
       "type": "github-daily",
@@ -107491,9 +107731,9 @@
       "repo": "Likely7/Veyra-NRVideo",
       "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
       "language": "C++",
-      "stars": 1801,
-      "forks": 80,
-      "starsAdded": 256,
+      "stars": 1823,
+      "forks": 82,
+      "starsAdded": 423,
       "createdAt": "2026-11-13T16:00:02.312Z",
       "metaData": {
         "forks": "0",
@@ -107537,65 +107777,6 @@
       }
     },
     {
-      "id": "d7777c5d-9931-464f-b7d0-41d0ff652d42",
-      "dateAdded": "20261114",
-      "type": "github-daily",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 50990,
-      "forks": 3802,
-      "starsAdded": 215,
-      "createdAt": "2026-11-13T16:00:02.144Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
-      },
-      "summaryData": {
-        "tags": [
-          "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
-        ],
-        "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
-        "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
-        ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "DevOps"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
-        ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
-      }
-    },
-    {
       "id": "eb5331e5-80b6-4790-9415-6c049df452fb",
       "dateAdded": "20261114",
       "type": "github-daily",
@@ -107603,9 +107784,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 10639,
+      "stars": 10667,
       "forks": 795,
-      "starsAdded": 108,
+      "starsAdded": 412,
       "createdAt": "2026-11-13T16:00:02.278Z",
       "metaData": {
         "forks": "0",
@@ -107665,9 +107846,9 @@
       "repo": "block/buzz",
       "description": "A hive mind communication platform",
       "language": "Rust",
-      "stars": 37402,
+      "stars": 37412,
       "forks": 4946,
-      "starsAdded": 97,
+      "starsAdded": 275,
       "createdAt": "2026-11-13T16:00:02.300Z",
       "metaData": {
         "forks": "0",
@@ -107708,187 +107889,6 @@
           "开源早期采用者"
         ],
         "description": "Buzz 是 Block 公司推出的开源工作空间，利用 Nostr 协议让人类与 AI 代理在同一密钥身份体系下协同。它集代码评审、沟通、CI/CD 于一体，所有操作加密签名可追溯，支持完全自托管，适合追求数据主权与深度人机协作的团队。"
-      }
-    },
-    {
-      "id": "04de53a9-74fa-4a05-a768-a0a2bdd62f45",
-      "dateAdded": "20261114",
-      "type": "github-daily",
-      "url": "https://github.com/louislam/uptime-kuma",
-      "repo": "louislam/uptime-kuma",
-      "description": "A fancy self-hosted monitoring tool",
-      "language": "JavaScript",
-      "stars": 94022,
-      "forks": 8730,
-      "starsAdded": 71,
-      "createdAt": "2026-11-13T16:00:02.295Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "docker",
-          "monitor",
-          "monitoring",
-          "responsive",
-          "self-hosted",
-          "selfhosted",
-          "single-page-app",
-          "socket-io",
-          "uptime",
-          "uptime-monitoring",
-          "webapp",
-          "websocket"
-        ],
-        "license": "MIT license",
-        "homepage": "https://uptime.kuma.pet",
-        "description": "A fancy self-hosted monitoring tool. Contribute to louislam/uptime-kuma development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Uptime Kuma",
-          "自托管",
-          "开源监控",
-          "Docker",
-          "可用性监控"
-        ],
-        "cover": "",
-        "title": "Uptime Kuma 深度评测：91k Star 的开源自托管监控神器",
-        "ability": [
-          "支持 31 种监控类型（HTTP/TCP/Ping/DNS/Push/Docker 等）",
-          "90+ 通知渠道告警推送（Telegram/Discord/邮件/钉钉等）",
-          "基于 WebSocket 的实时刷新监控面板",
-          "自定义公开状态页与 SSL 证书过期提醒",
-          "Docker 一键部署，SQLite 存储，数据完全自主掌控"
-        ],
-        "summary": "一个开源免费的自托管可用性监控工具，一条 Docker 命令就能拥有媲美 UptimeRobot 的监控面板与状态页。",
-        "category": [
-          "开发工具",
-          "运维监控",
-          "开源项目"
-        ],
-        "suitable": [
-          "个人开发者与独立 SaaS 作者",
-          "Homelab / 自托管爱好者",
-          "小团队与中小企业运维",
-          "需要给客户提供状态页的乙方外包公司",
-          "想替代 UptimeRobot 付费版节省成本的用户"
-        ],
-        "description": "Uptime Kuma 是一款开源（MIT）自托管可用性监控工具，GitHub Star 约 9.1 万。一条 Docker 命令即可部署，支持 31 种监控类型、90+ 通知渠道，提供实时面板与公开状态页，可替代 UptimeRobot 付费版并大幅节省成本；但存在单点故障、无正式 REST API 等局限，不适合大型企业作为唯一监控方案。"
-      }
-    },
-    {
-      "id": "653b0bd2-a011-4a99-911c-b694d7e038f3",
-      "dateAdded": "20261114",
-      "type": "github-daily",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "repo": "tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "language": "Python",
-      "stars": 4393,
-      "forks": 884,
-      "starsAdded": 69,
-      "createdAt": "2026-11-13T16:00:02.304Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Skills",
-          "量化交易",
-          "开源项目",
-          "美股投资",
-          "交易纪律"
-        ],
-        "cover": "",
-        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
-        "ability": [
-          "市场状态分析（宽度、趋势、分布日监控）",
-          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
-          "仓位计算与交易前纪律拦截",
-          "交易日志与复盘闭环（本地 YAML 记忆）",
-          "策略回测与一键式交易工作流"
-        ],
-        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
-        "category": [
-          "AI 编程",
-          "投资理财",
-          "开发工具"
-        ],
-        "suitable": [
-          "美股长期+波段混合型散户",
-          "每天只有 15-30 分钟看盘的兼职交易者",
-          "O'Neil/Minervini 方法论追随者",
-          "纪律性差、交易日志不连贯的投资者",
-          "想做系统化策略回测的个人研究者"
-        ],
-        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
-      }
-    },
-    {
-      "id": "a4ecd996-fdec-44e6-9337-3a7efd76bee7",
-      "dateAdded": "20261114",
-      "type": "github-daily",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "repo": "ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "language": "TypeScript",
-      "stars": 55847,
-      "forks": 4626,
-      "starsAdded": 67,
-      "createdAt": "2026-11-13T16:00:02.318Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "browser",
-          "chrome",
-          "chrome-devtools",
-          "debugging",
-          "devtools",
-          "mcp",
-          "mcp-server",
-          "puppeteer"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://developer.chrome.com/docs/devtools/agents",
-        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Chrome",
-          "DevTools",
-          "MCP",
-          "Puppeteer",
-          "自动化测试"
-        ],
-        "cover": "",
-        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
-        "ability": [
-          "浏览器自动化操控",
-          "深度调试与性能分析",
-          "网络请求监控",
-          "Lighthouse 性能审计",
-          "MCP 协议标准集成"
-        ],
-        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "测试工具"
-        ],
-        "suitable": [
-          "前端/全栈开发者",
-          "QA/SRE 工程师",
-          "自动化测试人员",
-          "性能优化专家",
-          "AI 编程深度用户"
-        ],
-        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
       }
     }
   ]
