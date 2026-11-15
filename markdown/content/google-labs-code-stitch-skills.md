@@ -1,0 +1,141 @@
+# google-labs-code/stitch-skills
+
+[GitHub URL](https://github.com/google-labs-code/stitch-skills)
+
+
+## Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计
+
+> Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。
+
+- **Tags**: Google Stitch, Agent Skills, AI 编程, 设计转代码, 开源项目
+- **Category**: 开发工具, AI 编程, UI 设计
+
+## Details
+
+# Stitch Skills 深度评测：Google 给「AI 设计师 + 编程智能体」搭的那座桥
+> **一句话总结**：这是 Google Labs 官方维护的一套「Agent Skills 技能库」，让 Claude Code / Cursor / Codex / Gemini CLI 等编程智能体在编辑器里直接调用 Google Stitch 的 UI 设计能力，把「一句话生成界面原型 + 自动落地成 React 代码」拧成了一个闭环工作流——如果你已经在用 AI 编程智能体写前端，它可能是 2026 年最值得花 5 分钟接入的生产力放大器。
+---
+## 背景与痛点：为什么需要这套「Skills」
+要理解 Stitch Skills 的价值，得先把两件事拆开看。
+第一件是 **Google Stitch** 本身。这是 Google Labs 在收购 Galileo AI 之后推出的 AI UI 设计工具，2025 年上线、2026 年 3 月升级到 2.0 版本（加入多屏生成、无限画布、语音输入），底层跑的是 Gemini 3 Pro / Flash。它能根据自然语言、截图或手绘草图直接产出高保真 UI 设计稿，并一键导出 HTML/CSS、Tailwind、Vue、Angular、Flutter、SwiftUI 等多种框架代码——目前完全免费，每月送 350 次「标准生成」+ 200 次「实验性生成」。
+第二件是 **AI 编程智能体（Coding Agent）**。2025 年底 Anthropic 发布了 **Agent Skills 开放标准**，规定一个技能就是一个带 YAML frontmatter 的 `SKILL.md` 文件夹，任何兼容该标准的智能体（Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity、OpenCode 等）都能识别并调用。从此开发者可以"一份 skill，跨所有 agent 复用"，不用再维护 `.cursorrules`、`.claude/instructions` 各一套。
+把这两个世界拼起来，就出现了一个非常尴尬的空白：
+> **设计工具在浏览器里，代码在编辑器里，AI 智能体却只看得见代码。**
+传统流程是：写需求 → 切到浏览器打开 Stitch → 等设计生成 → 导出代码 → 复制回编辑器 → 改一下不满意又切回去重生成。循环往复，**上下文切换**比设计本身还消耗心力。Google Stitch MCP 服务器（`https://stitch.googleapis.com/mcp`）虽然已经把 Stitch 能力封装成了 MCP 工具，但**怎么"指挥"agent 用好这些工具**是个新问题——直接让 Claude Code 调 `generate_screen_from_text`，出来的设计常常还是千篇一律的紫色渐变 + 三张等宽卡片。
+Stitch Skills 就是为填这个空白而生的：**MCP 提供"能力"，Skills 提供"Know-how"**。
+---
+## 核心亮点与功能剖析
+### 整体架构：三个 Plugin，15 个 Skill，一个开放标准
+仓库结构非常工整，按工作流分成了三个插件，每个插件下挂若干个遵循 Agent Skills 标准的子技能：
+```
+plugins/
+├── stitch-design/     — 设计侧：生成、编辑、迁移、管理设计系统
+├── stitch-build/      — 构建侧：设计稿 → React / React Native / shadcn/ui 代码
+└── stitch-utilities/  — 辅助侧：Prompt 优化、DESIGN.md 生成、多页站点一键产出
+```
+每个 skill 文件夹内部分为四块：`SKILL.md`（agent 的工作手册）、`scripts/`（可执行的校验/网络脚本）、`resources/`（设计 Checklist 与风格指南）、`examples/`（参考实现）。这种"知识 + 脚本 + 范例"的三层结构是 Stitch Skills 区别于普通 prompt 合集的关键——agent 不是凭一段模糊指令瞎猜，而是有可调用的真实工具和可参照的"金标准"代码。
+### 亮点一：把 Stitch 的「设计盲区」用 DESIGN.md 堵死
+用过 Stitch 的都知道它最大的痛点是**输出偏 AI 味儿**——紫色渐变、Inter 字体、纯黑 `#000000`、三张等宽卡片、居中 Hero、心形 emoji 图标，怎么生成都是那一套。评测机构 Moda 和 UX Planet 都把它列为 Stitch 的最大短板。
+Stitch Skills 的解法非常聪明：**用 `taste-design` 这个 skill 让 agent 先写一份 DESIGN.md，再让所有后续生成基于这份 brief 跑**。这份 DESIGN.md 是一份相当严格的「反 AI 味儿规范」：
+| 类别 | 强制规则（节选） |
+|---|---|
+| 颜色 | 每个色都必须有命名 + hex + 功能角色；纯黑禁用（用 off-black / charcoal 替代）；accent 色饱和度 < 80% |
+| 字体 | Inter 在 premium 场景禁用（推荐 Geist / Outfit / Cabinet Grotesk / Satoshi）；Times、Georgia、Garamond 全禁；正文行宽 ≤ 65 字符 |
+| 布局 | CSS Grid 优先于 flexbox 百分比；`min-h-[100dvh]` 替代 `h-screen`；768px 以下单栏；触控目标 ≥ 44px |
+| 动效 | Spring 物理（stiffness 100, damping 20）；只允许 transform / opacity 参与动画 |
+| 反模式 | 三张等宽卡片、居中 Hero、emoji、自定义光标、假数据、滚动提示语——全禁 |
+> 这相当于给 Stitch 配了一个**独断但品味在线的艺术总监**，把"AI 设计师"逼出舒适区。
+### 亮点二：设计 → 代码的「AST 级校验」链路
+`stitch::react-components` 是最值得认真评估的一个 skill。它不是把 Stitch 导出的 HTML 直接糊到项目里，而是做了一整套工程化处理：
+- **组件模块化**：把设计稿拆成独立可复用的 React 组件，业务逻辑下沉到自定义 Hooks
+- **数据解耦**：硬编码内容抽到外部 mock 数据文件，方便后续接真实 API
+- **AST 校验**：通过语法树层面校验生成代码，保证 TypeScript 类型安全、Tailwind 配置正确映射
+- **架构一致性**：强制要求生成的代码符合 Vite + React + Tailwind 的项目结构
+底层调用的就是 Stitch MCP 暴露的 `get_screen`、`list_screens`、`apply_design_system` 等工具，再叠加 skill 自己的脚本和规则——**MCP 是手，Skills 是脑**。
+### 亮点三：跨 Agent 一份配置走天下
+兼容矩阵相当友好：
+| Agent | 安装命令 |
+|---|---|
+| Claude Code | `npx plugins add google-labs-code/stitch-skills --scope project --target claude-code` |
+| Cursor | `npx plugins add google-labs-code/stitch-skills --scope workspace --target cursor` |
+| Codex | `codex plugin marketplace add google-labs-code/stitch-skills --ref main --sparse ...` |
+| OpenCode | 手动复制文件夹到 `.opencode/skills/`（注意要把 `stitch::xxx` 名字改成 kebab-case） |
+一条命令装完即可，**不用改配置文件，不用写胶水代码**。前提只有一个：Stitch MCP 服务器已经接入你的 agent（5 分钟配置即可，免费，吃 Stitch 本身的额度）。
+### 亮点四：兄弟项目生态非常扎实
+Stitch Skills 不是孤立的，它和同 org 的另外两个项目构成了一套完整方法论：
+- **`design.md`（28.8k ⭐）**：DESIGN.md 格式规范本身，让 coding agent 持有结构化的设计系统认知
+- **`stitch-sdk`（1.8k ⭐）**：编程式调用 Stitch 的 TypeScript SDK，跑批生成、CI 集成都靠它
+- **`stitch-skills`（8.7k ⭐）**：本文主角，把上述两者串起来的"技能层"
+---
+## 目标人群与实际收益
+不同角色拿到的价值差别很大，按收益从高到低排序：
+**🥇 前端工程师 + 重度 AI 编程智能体用户（最高优先级）**
+直接收益是**消除设计稿与代码之间的来回搬运**。Fractional CTO Justin McKelvey 实测：在 Claude Code / Cursor 里跑这个工作流，UI 实现速度提升 3–5 倍，原本 1 小时的"设计 + 实现"压缩到 5–15 分钟。
+**🥈 独立开发者 / 小团队 Founder**
+没有设计师的情况下，可以从一个想法直接拿到能跑的 React 项目骨架，UI 质量足以做 MVP 或 Demo 演示，省下的设计外包费就以万计。
+**🥉 设计师（作为探索工具）**
+价值不是替代 Figma，而是**前期 brainstorm 的极速出图器**。Stitch 一张屏约 45 秒、五屏流程约 3 分钟，能在一次会议前试完 5 种风格方向，再导出 Figma 精修。
+**⚠️ 纯设计师（重度协作工作流） / 营销 / 内容创作者**
+不太合适。Stitch 的协作深度远不如 Figma，也不做 PPT、社媒图、Banner 这类非 UI 内容，硬要硬上会失望。
+---
+## 真实交互案例：从 Prompt 到 React 组件
+为了直观感受这套 skill 怎么用，给你一个简化后的实战对比。
+**用户输入：**
+> "帮我做一个 5 页的个人作品集网站，重点展示 2026 年做的三个 AI 产品。"
+**没有 Stitch Skills 时（裸用 Stitch MCP）：**
+agent 直接调 `generate_screen_from_text`，5 屏在 Stitch 上生成，你看到的输出大概率是：紫色主色 + Inter 字体 + 三张等宽卡片阵列 + "Projects" 标题 + 一个居中 Hero——**一眼就是 AI 生成的**。要让它有个性，得在 prompt 里写满风格描述，每次都要重新写。
+**装上 Stitch Skills 后：**
+```
+1. 你：Generate a premium DESIGN.md with strict typography 
+      and calibrated colors, vibe: editorial brutalist.
+2. Agent（调用 taste-design skill）→ 写出 DESIGN.md：
+   - 颜色：Muted Ivory #F5F1E8 + Charcoal #1A1A1A + 单 accent Rust #C2410C
+   - 字体：Display = Cabinet Grotesk / Body = Inter Tight（60 字符行宽）
+   - 布局：Asymmetric grid，禁止三等分卡片
+3. 你：Build a 5-page portfolio website with Stitch using this DESIGN.md.
+4. Agent（调用 stitch-loop skill）→ 
+   依次调用 Stitch MCP 生成 Home / Work / About / Contact / 404，
+   每一屏都自动套用 DESIGN.md 的 token，
+   然后调用 react-components skill 把 5 屏转成
+   src/components/{Header,ProjectCard,Footer}.tsx + mock/projects.ts
+5. 终端输出：✅ 5 screens × 23 components generated, 
+             0 type errors, 0 unvalidated Tailwind classes.
+```
+差距不是"快一点"，而是**从"随机抽奖"变成了"可复现的生产流程"**。
+---
+## 竞品对比：它到底站在什么位置
+需要把 Stitch Skills 和几个常被混着聊的工具分开看：
+| 维度 | Stitch Skills + Stitch MCP | v0 (Vercel) | Figma Make | Lovable | Anima Playground |
+|---|---|---|---|---|---|
+| 核心定位 | Agent 技能库（设计+代码闭环） | 文字到全栈 App | 设计工具内的 AI 生成 | 全栈 AI 建站 | Figma → 代码 |
+| 设计质量 | 依赖 Stitch（中上，反AI味儿靠 taste-design） | 偏 shadcn 默认风格 | Figma 风格延续 | 较通用 | 取决于原 Figma |
+| 代码产出 | React / RN / shadcn / Vite | Next.js + shadcn | 受限 | 全栈 | 多框架 |
+| 是否依赖 MCP | ✅ 必须 | ❌ | ❌ | ❌ | ❌ |
+| 是否免费 | ✅（吃 Stitch 350 次/月额度） | 有免费额度 | Pro $16/月 | 订阅制 | 免费+付费 |
+| 工作流粘性 | **嵌入你已有的 coding agent** | 独立平台 | 嵌入 Figma | 独立平台 | 独立平台 |
+Stitch Skills 的**独特竞争力**在于：它不是又一个要你切换过去的 SaaS 平台，而是寄生在你已经每天在用的 Claude Code / Cursor 里的"能力包"。**学习成本几乎为零（命令行一句话），改造的是工作流而不是工具栈**。
+---
+## 局限与不足：必须诚实说的部分
+客观来看，这个项目有几个不容忽视的隐患，**别被 8.7k star 迷惑了双眼**：
+### 1. 维护节奏有放缓迹象
+仓库最近一次 push 是 **2026 年 8 月 17 日**，到现在已经 3 个月没有更新。考虑到 Stitch 本身 3 月才升 2.0、9 月还在改 MCP 工具集，skills 的更新节奏明显落后于上游 API。如果 Stitch 后续改了工具签名或新增能力，skills 可能短期失灵。
+### 2. 强依赖 Google Labs 这个"实验品"
+Stitch 本身还在 Google Labs 里，**没有 SLA、没有付费升级通道、Google 也没有长期承诺**。Google 关停 Labs 项目的历史不是没有过——这意味着你今天围绕它搭的工作流，明天可能突然断供。
+### 3. 350 次/月的额度是隐形天花板
+对个人开发者完全够用，但**重设计负载的小团队会很快耗尽**。而且 Stitch MCP 的 generate/edit 调用"可能需要几分钟"，agent 默认超时太短会报错，然后重试又烧掉一次配额——这是实操中最容易踩的坑。
+### 4. MCP 是远程 server，安全边界要自己把好
+Stitch MCP 托管在 `https://stitch.googleapis.com/mcp`，**API key 走 `X-Goog-Api-Key` 头部随请求发送**。这意味着 key 一旦泄漏，整个 Stitch 账号被任意调用。把它写在项目 `.mcp.json` 里 commit 上 GitHub 是绝对禁忌，应该走环境变量或用户级配置。
+### 5. 跨 Agent 兼容性有暗坑
+OpenCode 不支持 `stitch::xxx` 这种带冒号的命名空间，必须手动改名才能加载；`allowed-tools`、`context: fork` 等高级 frontmatter 字段只在 Claude Code 生效，其他 agent 会静默忽略——**"一次编写，处处运行"目前还只是理想化描述**。
+### 6. 代码生成质量依然要看 agent 底色
+Stitch MCP 不直接提供"导出 React / Flutter"工具，**agent 是读了 Stitch 屏幕后自己写框架代码**。同一个 skill 在 Claude Opus 4.5 和某个小模型上跑，结果天差地别——skill 只能放大模型能力，不能替代模型能力。
+---
+## 结语与行动建议
+**一句话定性**：Stitch Skills 是目前 2026 年设计-代码-智能体三方融合这条路上，**工程完成度最高、上手成本最低、附带"反 AI 味儿"独门秘籍**的开源方案。它的价值不是替代 Figma 或 v0，而是把你已经付费订阅（或免费用着）的 coding agent 突然升级成"会设计的全能工程师"。
+**行动建议（按读者类型）**：
+- **如果你已经在用 Claude Code 或 Cursor 写前端**：花 5 分钟接 Stitch MCP，再跑一遍 `npx plugins add google-labs-code/stitch-skills --scope project --target claude-code`，跑一次 `taste-design → stitch-loop → react-components` 的完整链路感受下差距。**这 5 分钟的预期回报远高于任何一场 AI 编程分享会。**
+- **如果你是设计师，只在 brainstorm 阶段想试试**：直接用 Stitch 网页版就够了，**不必上 Skills**。Skills 的价值在于"无缝衔接代码"，你不需要这段路。
+- **如果你打算团队推广或商业项目依赖**：先想清楚 Google Labs 项目的寿命风险，**永远准备一个 Figma/v0 的 Plan B**，不要把核心设计流程单点绑死在 Stitch 上。
+- **如果你想看源码学怎么写 Agent Skill**：这个仓库是**目前写 Skill 最佳实践的最权威示范之一**，把 `SKILL.md`、`scripts/`、`resources/`、`examples/` 四件套的结构学下来，自己写任何领域的 Skill 都受益。
+**风险提示（再啰嗦一次）**：API key 不要 commit、超时调大避免重复消耗配额、月度 350 次规划着用——这三件事记牢，可以避开 90% 的踩坑。
+Star 数会涨会跌，但「让 AI 智能体天生懂设计」这条主线已经无法逆转。Stitch Skills 是这条路上第一份足够完整的开源答卷，值得在它的本地窗口期内认真用一遍。

@@ -1,6 +1,256 @@
 {
   "all": [
     {
+      "id": "1ceaba1c-fb49-41d1-971b-f2c23e3c4b72",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "domain": "github.com",
+      "repo": "NVIDIA/SkillEvaluator",
+      "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-15T15:15:07.740Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "agent-plugins",
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "benchmark",
+          "claude-code",
+          "codex",
+          "evaluate",
+          "evaluation",
+          "plugin",
+          "plugin-evaluation",
+          "security-scanner",
+          "skill-eval",
+          "skill-evals",
+          "skill-evaluation",
+          "skill-evaluator",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "Agent Skills",
+          "Skill Lift",
+          "开源工具",
+          "AI 评测"
+        ],
+        "cover": "",
+        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
+        "ability": [
+          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
+          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
+          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
+          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
+          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
+        ],
+        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "评测工具"
+        ],
+        "suitable": [
+          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
+          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
+          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
+          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
+          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
+        ],
+        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
+      },
+      "type": "project",
+      "dateAdded": "20261115"
+    },
+    {
+      "id": "f93338b2-b531-4dbc-9601-ef7eeec6d0d9",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "domain": "github.com",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-15T15:11:53.182Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "anthropic",
+          "application-security",
+          "bug-bounty",
+          "bugbounty",
+          "bugcrowd",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "ethical-hacking",
+          "hackerone",
+          "offensive-security",
+          "pentesting",
+          "red-team",
+          "security-tools",
+          "web-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+      },
+      "summaryData": {
+        "tags": [
+          "Bug Bounty",
+          "渗透测试",
+          "Claude Code",
+          "Agent Skills",
+          "红队"
+        ],
+        "cover": "",
+        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
+        "ability": [
+          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
+          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
+          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
+          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
+          "Burp Suite MCP 集成，联动真实渗透工具链"
+        ],
+        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全职 Bug Bounty 赏金猎人",
+          "外部红队工程师 / 安全咨询顾问",
+          "做攻防演练的企业安全工程师",
+          "安全初学者 / 学生（需在授权沙箱练习）",
+          "Agent 技能开发与 Prompt 工程师"
+        ],
+        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
+      },
+      "type": "project",
+      "dateAdded": "20261115"
+    },
+    {
+      "id": "345e57c2-4453-454c-8997-d7ab4b76d944",
+      "url": "https://github.com/ggml-org/ggml",
+      "domain": "github.com",
+      "repo": "ggml-org/ggml",
+      "description": "ggml 由 Georgi Gerganov 开发，MIT 协议、无任何第三方依赖。它通过静态计算图、块级量化和多后端架构，把 FP16 下需要 14GB 显存的 7B 模型压缩到 4GB 内存流畅运行，是 llama.cpp、whisper.cpp、piper 等现象级项目的共同底层。文档偏少、不适合训练，但作为推理引擎教科书价值极高。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-15T15:08:52.186Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "machine-learning"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/ggml-org",
+        "description": "Tensor library for machine learning. Contribute to ggml-org/ggml development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "ggml",
+          "本地大模型",
+          "llama.cpp",
+          "量化",
+          "C/C++"
+        ],
+        "cover": "",
+        "title": "ggml：让大模型跑在笔记本上的零依赖推理引擎",
+        "ability": [
+          "块级量化压缩，让 7B 大模型仅需 4GB 内存即可本地推理",
+          "多后端跨硬件支持（CPU/Metal/CUDA/Vulkan/WebGPU 一套代码通吃）",
+          "CPU-GPU 混合调度，显存不足时自动切分计算图",
+          "零依赖极简部署，纯 C 静态库可嵌入任意语言与设备",
+          "定义 GGUF 模型格式标准，K-quant 量化体系业界独一份"
+        ],
+        "summary": "纯 C/C++ 编写、零依赖的张量计算库，是 llama.cpp、Ollama、LM Studio 等本地大模型项目背后的共同引擎",
+        "category": [
+          "开发工具",
+          "AI 推理引擎",
+          "开源库"
+        ],
+        "suitable": [
+          "端侧/嵌入式 AI 工程师",
+          "推理性能优化工程师",
+          "模型压缩与量化研究者",
+          "本地 AI 应用开发者",
+          "想读懂推理引擎底层原理的进阶学习者"
+        ],
+        "description": "ggml 由 Georgi Gerganov 开发，MIT 协议、无任何第三方依赖。它通过静态计算图、块级量化和多后端架构，把 FP16 下需要 14GB 显存的 7B 模型压缩到 4GB 内存流畅运行，是 llama.cpp、whisper.cpp、piper 等现象级项目的共同底层。文档偏少、不适合训练，但作为推理引擎教科书价值极高。"
+      },
+      "type": "project",
+      "dateAdded": "20261115"
+    },
+    {
+      "id": "c36dda4c-cded-4bf5-967e-59d363a09b97",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "domain": "github.com",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-15T15:03:34.647Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      },
+      "type": "project",
+      "dateAdded": "20261115"
+    },
+    {
       "id": "13564625-7c45-4bcd-8192-5fbf5c4d1a2e",
       "url": "https://github.com/martin-olivier/airgorah",
       "domain": "github.com",

@@ -108367,8 +108367,8 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 6658,
-      "forks": 527,
+      "stars": 6780,
+      "forks": 535,
       "starsAdded": 1220,
       "createdAt": "2026-11-14T16:00:38.277Z",
       "metaData": {
@@ -108413,6 +108413,80 @@
       }
     },
     {
+      "id": "0295b505-39e7-48ea-b59b-d33af66bba19",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 25302,
+      "forks": 2315,
+      "starsAdded": 1041,
+      "createdAt": "2026-11-14T16:00:38.300Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+      }
+    },
+    {
       "id": "b69221dc-4c20-4a76-b40f-a472edcb1b14",
       "dateAdded": "20261115",
       "type": "github-daily",
@@ -108420,8 +108494,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 11582,
-      "forks": 1020,
+      "stars": 11634,
+      "forks": 1024,
       "starsAdded": 860,
       "createdAt": "2026-11-14T16:00:38.258Z",
       "metaData": {
@@ -108535,8 +108609,8 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 56615,
-      "forks": 4792,
+      "stars": 56680,
+      "forks": 4793,
       "starsAdded": 718,
       "createdAt": "2026-11-14T16:00:38.288Z",
       "metaData": {
@@ -108597,8 +108671,8 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 5172,
-      "forks": 1099,
+      "stars": 5237,
+      "forks": 1105,
       "starsAdded": 707,
       "createdAt": "2026-11-14T16:00:38.283Z",
       "metaData": {
@@ -108650,8 +108724,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 51718,
-      "forks": 4026,
+      "stars": 51773,
+      "forks": 4030,
       "starsAdded": 688,
       "createdAt": "2026-11-14T16:00:38.293Z",
       "metaData": {
@@ -108755,77 +108829,136 @@
       }
     },
     {
-      "id": "0295b505-39e7-48ea-b59b-d33af66bba19",
+      "id": "b05bcc20-7af2-4d12-8f97-fc09ca4425fe",
       "dateAdded": "20261115",
       "type": "github-daily",
-      "url": "https://github.com/dream-num/univer",
-      "repo": "dream-num/univer",
-      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "language": "TypeScript",
-      "stars": 25240,
-      "forks": 2311,
-      "starsAdded": 495,
-      "createdAt": "2026-11-14T16:00:38.300Z",
+      "url": "https://github.com/Tencent/LoopForge",
+      "repo": "Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "language": "Go",
+      "stars": 1243,
+      "forks": 254,
+      "starsAdded": 484,
+      "createdAt": "2026-11-14T16:00:38.326Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "board",
-          "collaboration",
-          "doc",
-          "docx",
-          "excel",
-          "offce365",
-          "office",
-          "pdf",
-          "ppt",
-          "pptx",
-          "presentation",
-          "sdk",
-          "sheet",
-          "slides",
-          "spreadsheet",
-          "univer",
-          "word",
-          "wordprocessor",
-          "workspace",
-          "xlsx"
+          "agent-orchestration",
+          "agentic-workflow",
+          "ai-agents",
+          "ai-coding",
+          "claude-code",
+          "code-review",
+          "codebuddy",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "developer-tools",
+          "human-on-the-loop",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "sdlc",
+          "self-hosted",
+          "sop",
+          "workflow-automation",
+          "workflow-engine"
         ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://univer.ai",
-        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+        "license": "License",
+        "homepage": "https://loopforge.cn",
+        "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants. - Tencent/LoopForge"
       },
       "summaryData": {
         "tags": [
-          "Univer",
-          "开源",
-          "在线表格",
-          "Office SDK",
-          "AI Agent"
+          "LoopForge",
+          "腾讯开源",
+          "Coding Agent",
+          "规范驱动开发",
+          "多 Agent 工作流"
         ],
         "cover": "",
-        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "title": "LoopForge 深度评测：腾讯开源的多 Agent 研发流水线编排器",
         "ability": [
-          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
-          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
-          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
-          "原生实时多人协作（OT 算法，支持 200 人并发）",
-          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+          "五阶段 Devflow 工作流：按任务复杂度自动分流，小改动走快速路径，中大型任务走完整多 Agent 流水线",
+          "角色隔离与独立评审：设计、实现、审查、测试由上下文独立的 Agent 分工完成，避免'自审自夸'",
+          "交付产物全留痕：自动生成需求、设计、评审报告、测试结果等工程档案目录",
+          "可恢复状态管理：任务中断后可从断点继续，不丢上下文现场",
+          "多宿主兼容：支持 CodeBuddy、Claude Code、Codex、Cursor、Pi 五大宿主一键安装"
         ],
-        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "summary": "腾讯开源的 AI 编程工作流编排框架，给 Claude Code 等 Coding Agent 装上'流程经理'，强制走需求澄清、设计、实现、独立评审、测试五步 SOP 并留痕。",
         "category": [
+          "AI 编程",
           "开发工具",
-          "开源项目",
-          "办公协作"
+          "工程效能"
         ],
         "suitable": [
-          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
-          "BI/报表平台团队",
-          "协同办公与知识库产品团队",
-          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
-          "企业内部工具团队与独立开发者"
+          "研发效能负责人与平台架构师",
+          "Claude Code / CodeBuddy 等 Coding Agent 重度用户",
+          "接手无测试老项目（屎山代码）的开发者",
+          "需要交付物可回溯、可 Review 的团队",
+          "腾讯云生态用户（可搭配 tcmcp 工具接入云资源）"
         ],
-        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+        "description": "LoopForge 是腾讯轻量云团队基于内部 20+ 业务、月均交付 200+ 需求的实践经验开源的多 Agent 工作流编排层（MIT 协议）。它不直接写代码，而是让 AI 编程助手先澄清需求再动手、由独立 Agent 交叉评审、跑过测试才算完成，每步证据落盘留痕。适合被 Vibe Coding '假装完成'坑过的团队，但轻量补全场景下仪式感偏重。"
+      }
+    },
+    {
+      "id": "38068f73-0077-40eb-a2bf-bd139bbfe747",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 17616,
+      "forks": 1763,
+      "starsAdded": 393,
+      "createdAt": "2026-11-14T16:00:38.304Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
       }
     },
     {
@@ -108957,6 +109090,59 @@
       }
     },
     {
+      "id": "4828d369-3eb5-4a95-a2fd-72364b98868e",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9093,
+      "forks": 1083,
+      "starsAdded": 248,
+      "createdAt": "2026-11-15T15:00:01.811Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
       "id": "7353e441-de27-414a-bba9-b9e0d999c82f",
       "dateAdded": "20261115",
       "type": "github-daily",
@@ -109018,6 +109204,203 @@
           "追求极致效率的极客"
         ],
         "description": "Caveman 是一个适配 Claude、Cursor 等 30+ 助手的插件与本地代理。它通过精简 AI 输出风格、压缩上下文输入、将技能文档转为图片等方式，在不降低代码质量的前提下，有效减少 Token 消耗，并提供本地审计功能帮助用户清晰掌握成本。"
+      }
+    },
+    {
+      "id": "7e065050-4882-4df9-a797-7b85cb4a2918",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/ggml-org/ggml",
+      "repo": "ggml-org/ggml",
+      "description": "Tensor library for machine learning",
+      "language": "C++",
+      "stars": 15812,
+      "forks": 1949,
+      "starsAdded": 154,
+      "createdAt": "2026-11-15T15:00:01.893Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "machine-learning"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/ggml-org",
+        "description": "Tensor library for machine learning. Contribute to ggml-org/ggml development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "ggml",
+          "本地大模型",
+          "llama.cpp",
+          "量化",
+          "C/C++"
+        ],
+        "cover": "",
+        "title": "ggml：让大模型跑在笔记本上的零依赖推理引擎",
+        "ability": [
+          "块级量化压缩，让 7B 大模型仅需 4GB 内存即可本地推理",
+          "多后端跨硬件支持（CPU/Metal/CUDA/Vulkan/WebGPU 一套代码通吃）",
+          "CPU-GPU 混合调度，显存不足时自动切分计算图",
+          "零依赖极简部署，纯 C 静态库可嵌入任意语言与设备",
+          "定义 GGUF 模型格式标准，K-quant 量化体系业界独一份"
+        ],
+        "summary": "纯 C/C++ 编写、零依赖的张量计算库，是 llama.cpp、Ollama、LM Studio 等本地大模型项目背后的共同引擎",
+        "category": [
+          "开发工具",
+          "AI 推理引擎",
+          "开源库"
+        ],
+        "suitable": [
+          "端侧/嵌入式 AI 工程师",
+          "推理性能优化工程师",
+          "模型压缩与量化研究者",
+          "本地 AI 应用开发者",
+          "想读懂推理引擎底层原理的进阶学习者"
+        ],
+        "description": "ggml 由 Georgi Gerganov 开发，MIT 协议、无任何第三方依赖。它通过静态计算图、块级量化和多后端架构，把 FP16 下需要 14GB 显存的 7B 模型压缩到 4GB 内存流畅运行，是 llama.cpp、whisper.cpp、piper 等现象级项目的共同底层。文档偏少、不适合训练，但作为推理引擎教科书价值极高。"
+      }
+    },
+    {
+      "id": "ad0c2045-1ff6-4fc3-b669-3e346fb7886a",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "repo": "NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 1363,
+      "forks": 159,
+      "starsAdded": 133,
+      "createdAt": "2026-11-15T15:00:01.952Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "agent-plugins",
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "benchmark",
+          "claude-code",
+          "codex",
+          "evaluate",
+          "evaluation",
+          "plugin",
+          "plugin-evaluation",
+          "security-scanner",
+          "skill-eval",
+          "skill-evals",
+          "skill-evaluation",
+          "skill-evaluator",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "Agent Skills",
+          "Skill Lift",
+          "开源工具",
+          "AI 评测"
+        ],
+        "cover": "",
+        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
+        "ability": [
+          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
+          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
+          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
+          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
+          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
+        ],
+        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "评测工具"
+        ],
+        "suitable": [
+          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
+          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
+          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
+          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
+          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
+        ],
+        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
+      }
+    },
+    {
+      "id": "350e0b76-e4b6-4e51-9ab1-ea38c1b59aca",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 5977,
+      "forks": 912,
+      "starsAdded": 124,
+      "createdAt": "2026-11-15T15:00:01.908Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "anthropic",
+          "application-security",
+          "bug-bounty",
+          "bugbounty",
+          "bugcrowd",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "ethical-hacking",
+          "hackerone",
+          "offensive-security",
+          "pentesting",
+          "red-team",
+          "security-tools",
+          "web-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+      },
+      "summaryData": {
+        "tags": [
+          "Bug Bounty",
+          "渗透测试",
+          "Claude Code",
+          "Agent Skills",
+          "红队"
+        ],
+        "cover": "",
+        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
+        "ability": [
+          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
+          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
+          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
+          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
+          "Burp Suite MCP 集成，联动真实渗透工具链"
+        ],
+        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全职 Bug Bounty 赏金猎人",
+          "外部红队工程师 / 安全咨询顾问",
+          "做攻防演练的企业安全工程师",
+          "安全初学者 / 学生（需在授权沙箱练习）",
+          "Agent 技能开发与 Prompt 工程师"
+        ],
+        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
       }
     },
     {
@@ -109143,19 +109526,384 @@
         ],
         "description": "TensorFold 是 2026 年 9 月开源的本地 LLM 推理引擎（Apache 2.0，Zig 编写）。它解决了行业默认接受的痛点——投机解码会改变输出，通过 Row-exact kernel 和确定性 Gumbel 采样做到开/关加速输出逐字节一致，速度却快 2~3 倍。局限是仅支持 6 个模型族、社区尚幼、benchmark 多为自报。"
       }
+    }
+  ],
+  "20261116": [
+    {
+      "id": "7c91bb84-0671-4682-bab5-d2b26ce6a75f",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 6831,
+      "forks": 547,
+      "starsAdded": 1220,
+      "createdAt": "2026-11-15T16:00:02.025Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
     },
     {
-      "id": "b05bcc20-7af2-4d12-8f97-fc09ca4425fe",
-      "dateAdded": "20261115",
+      "id": "690dad3f-0f12-4e5f-a27a-f746de119b8a",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 25342,
+      "forks": 2318,
+      "starsAdded": 1041,
+      "createdAt": "2026-11-15T16:00:01.977Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+      }
+    },
+    {
+      "id": "242b64b5-7904-4e3f-8c00-121ed40a9cd4",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 11661,
+      "forks": 1033,
+      "starsAdded": 860,
+      "createdAt": "2026-11-15T16:00:01.999Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "1e067608-c146-4c2d-9db6-98529d74ffd9",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 56719,
+      "forks": 4794,
+      "starsAdded": 718,
+      "createdAt": "2026-11-15T16:00:02.002Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
+        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "DevTools",
+          "MCP",
+          "Puppeteer",
+          "自动化测试"
+        ],
+        "cover": "",
+        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+        "ability": [
+          "浏览器自动化操控",
+          "深度调试与性能分析",
+          "网络请求监控",
+          "Lighthouse 性能审计",
+          "MCP 协议标准集成"
+        ],
+        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "测试工具"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "QA/SRE 工程师",
+          "自动化测试人员",
+          "性能优化专家",
+          "AI 编程深度用户"
+        ],
+        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
+      }
+    },
+    {
+      "id": "8273b8ee-dba3-4529-8acb-0b74724a27a0",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 5273,
+      "forks": 1115,
+      "starsAdded": 707,
+      "createdAt": "2026-11-15T16:00:02.027Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      }
+    },
+    {
+      "id": "bd98ea77-70b4-45e5-9eb5-406912deb4c9",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 51809,
+      "forks": 4045,
+      "starsAdded": 688,
+      "createdAt": "2026-11-15T16:00:02.007Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "9ba81658-9083-4186-b1d3-dc18c16513bb",
+      "dateAdded": "20261116",
       "type": "github-daily",
       "url": "https://github.com/Tencent/LoopForge",
       "repo": "Tencent/LoopForge",
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
-      "stars": 1171,
-      "forks": 248,
-      "starsAdded": 33,
-      "createdAt": "2026-11-14T16:00:38.326Z",
+      "stars": 1277,
+      "forks": 257,
+      "starsAdded": 484,
+      "createdAt": "2026-11-15T16:00:02.011Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
@@ -109219,17 +109967,17 @@
       }
     },
     {
-      "id": "38068f73-0077-40eb-a2bf-bd139bbfe747",
-      "dateAdded": "20261115",
+      "id": "919c92f4-1fab-4f7f-8180-9c832877c210",
+      "dateAdded": "20261116",
       "type": "github-daily",
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 17565,
-      "forks": 1758,
-      "starsAdded": 9,
-      "createdAt": "2026-11-14T16:00:38.304Z",
+      "stars": 17643,
+      "forks": 1770,
+      "starsAdded": 393,
+      "createdAt": "2026-11-15T16:00:01.991Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
@@ -109275,6 +110023,256 @@
           "想了解 Agent 基础设施演进方向的架构师"
         ],
         "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      }
+    },
+    {
+      "id": "2a4dfc73-6ef5-42e9-bf07-b897ea7d830c",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9113,
+      "forks": 1089,
+      "starsAdded": 248,
+      "createdAt": "2026-11-15T16:00:01.996Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
+      "id": "6d226349-ba10-4a16-8480-27fcc0316df5",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/ggml-org/ggml",
+      "repo": "ggml-org/ggml",
+      "description": "Tensor library for machine learning",
+      "language": "C++",
+      "stars": 15820,
+      "forks": 1961,
+      "starsAdded": 154,
+      "createdAt": "2026-11-15T16:00:02.013Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "machine-learning"
+        ],
+        "license": "MIT license",
+        "homepage": "https://github.com/ggml-org",
+        "description": "Tensor library for machine learning. Contribute to ggml-org/ggml development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "ggml",
+          "本地大模型",
+          "llama.cpp",
+          "量化",
+          "C/C++"
+        ],
+        "cover": "",
+        "title": "ggml：让大模型跑在笔记本上的零依赖推理引擎",
+        "ability": [
+          "块级量化压缩，让 7B 大模型仅需 4GB 内存即可本地推理",
+          "多后端跨硬件支持（CPU/Metal/CUDA/Vulkan/WebGPU 一套代码通吃）",
+          "CPU-GPU 混合调度，显存不足时自动切分计算图",
+          "零依赖极简部署，纯 C 静态库可嵌入任意语言与设备",
+          "定义 GGUF 模型格式标准，K-quant 量化体系业界独一份"
+        ],
+        "summary": "纯 C/C++ 编写、零依赖的张量计算库，是 llama.cpp、Ollama、LM Studio 等本地大模型项目背后的共同引擎",
+        "category": [
+          "开发工具",
+          "AI 推理引擎",
+          "开源库"
+        ],
+        "suitable": [
+          "端侧/嵌入式 AI 工程师",
+          "推理性能优化工程师",
+          "模型压缩与量化研究者",
+          "本地 AI 应用开发者",
+          "想读懂推理引擎底层原理的进阶学习者"
+        ],
+        "description": "ggml 由 Georgi Gerganov 开发，MIT 协议、无任何第三方依赖。它通过静态计算图、块级量化和多后端架构，把 FP16 下需要 14GB 显存的 7B 模型压缩到 4GB 内存流畅运行，是 llama.cpp、whisper.cpp、piper 等现象级项目的共同底层。文档偏少、不适合训练，但作为推理引擎教科书价值极高。"
+      }
+    },
+    {
+      "id": "cbe50f0f-1101-49b2-9a26-d6654beadd37",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "repo": "NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 1403,
+      "forks": 172,
+      "starsAdded": 133,
+      "createdAt": "2026-11-15T16:00:02.033Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "agent-plugins",
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "benchmark",
+          "claude-code",
+          "codex",
+          "evaluate",
+          "evaluation",
+          "plugin",
+          "plugin-evaluation",
+          "security-scanner",
+          "skill-eval",
+          "skill-evals",
+          "skill-evaluation",
+          "skill-evaluator",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "Agent Skills",
+          "Skill Lift",
+          "开源工具",
+          "AI 评测"
+        ],
+        "cover": "",
+        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
+        "ability": [
+          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
+          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
+          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
+          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
+          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
+        ],
+        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "评测工具"
+        ],
+        "suitable": [
+          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
+          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
+          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
+          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
+          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
+        ],
+        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
+      }
+    },
+    {
+      "id": "f5d96b53-d5bb-4c27-bdea-92ea1b4345f3",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 6022,
+      "forks": 918,
+      "starsAdded": 124,
+      "createdAt": "2026-11-15T16:00:02.022Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "anthropic",
+          "application-security",
+          "bug-bounty",
+          "bugbounty",
+          "bugcrowd",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "ethical-hacking",
+          "hackerone",
+          "offensive-security",
+          "pentesting",
+          "red-team",
+          "security-tools",
+          "web-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+      },
+      "summaryData": {
+        "tags": [
+          "Bug Bounty",
+          "渗透测试",
+          "Claude Code",
+          "Agent Skills",
+          "红队"
+        ],
+        "cover": "",
+        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
+        "ability": [
+          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
+          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
+          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
+          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
+          "Burp Suite MCP 集成，联动真实渗透工具链"
+        ],
+        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全职 Bug Bounty 赏金猎人",
+          "外部红队工程师 / 安全咨询顾问",
+          "做攻防演练的企业安全工程师",
+          "安全初学者 / 学生（需在授权沙箱练习）",
+          "Agent 技能开发与 Prompt 工程师"
+        ],
+        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
       }
     }
   ]

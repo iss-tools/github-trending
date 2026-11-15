@@ -1,0 +1,169 @@
+# elementalsouls/Claude-BugHunter
+
+[GitHub URL](https://github.com/elementalsouls/Claude-BugHunter)
+
+
+## Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家
+
+> 一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。
+
+- **Tags**: Bug Bounty, 渗透测试, Claude Code, Agent Skills, 红队
+- **Category**: 网络安全, AI 编程, 开发工具
+
+## Details
+
+# Claude-BugHunter 深度评测：把 Claude Code 从"聊天机器人"改造成"持证渗透专家"的 83 项技能包
+> **一句话总结**：`elementalsouls/Claude-BugHunter` 是一套可直接投喂给 Claude Code（也兼容 OpenCode / Codex CLI / Hermes / AntiGravity）的 **Agent Skills 捆绑包**，作者把 681 份公开 HackerOne 报告的利用链模式、24 个 Web 漏洞类的猎杀手册、企业级身份与边界设备（M365/Entra、Okta、vCenter、SSL-VPN）2024–2026 CVE 链，以及 Burp Suite 的 MCP 接口，压缩成 **83 个自动按话题加载的 `SKILL.md` 文件 + 15 条 slash 命令**——一次安装，Claude 就从"知道 OWASP Top 10"升级为"知道真实赏金猎人怎么打链、怎么写报告、怎么守住 scope"。
+它不是又一个"PentestGPT 平替"，而是把方法论、payload 库、证据规范、平台 CVE 矩阵全部"硬编码"进 Agent Skills 体系的一次认真尝试——下面我们按背景、架构、上手、案例、对比、局限的顺序拆开看。
+---
+## 一、背景与痛点：它诞生于哪种"真实的痛"
+作者 **Sachin Sharma**（Bug Hunting & GenAI Security Research）在 README 的"Why this exists"里写得很直白：当前市面上的"AI + 安全"项目基本分成两类，**要么太泛**（一个巨型 prompt 说"你是渗透测试专家"），**要么太散**（你收藏了 30 份 disclosed report，每次接案都重新翻一遍）。这两种方式都撑不过第二个目标。
+更重要的是，作者用真实的接案经历反推出这套 bundle 必须解决的 9 个具体痛点——这一点比大多数"玩具 prompt 库"高出一个量级：
+**Bug Bounty 实战暴露的 4 个缺口**：
+1. 没有假设纪律——报告在验证前就写好了，浪费小时数、伤害 validity ratio
+2. 没有按平台的报告策略——VRT 默认值把 P3 级别的发现自动降成 P4
+3. 没有 engagement 协调——发现、证据、submission ID 散落在不同文件夹
+4. 没有证据卫生——截图里泄露了 cookie 和受害者 PII
+**外部红队实战暴露的 5 个缺口**：
+- WAPT 思维在防御严密的客户那里"提前收工"，错过了绕过链
+- 没有中场 situational awareness——客户 SOC 30 分钟内修掉了确认的 SQLi，攻击者锁了 14 个账号，全都没被察觉
+- 缺企业平台攻击链（M365+Entra、SharePoint 本地、Cisco SSL VPN、vCenter、7 个 Android APK）
+- Bug bounty 报告模板塞不下企业红队的 50KB+ MD/DOCX 交付物
+- 拿到凭证（AWS key、JWT、GCP JSON）后不知道如何升权
+可以说，**这套 bundle 不是从"我想做一个 AI 安全项目"出发，而是从"我接案时被打了脸"出发**——这种工程化的反向工程，是它和大部分玩具仓库最大的区别。
+---
+## 二、核心亮点与架构剖析：四层"洋葱"是怎么叠起来的
+官方把整套能力描述为**四层叠加**，每层都对应真实的"工作流节拍"，而不是按漏洞类型平铺。
+### 1. Think 层——方法论与纪律
+`bb-methodology` + `redteam-mindset` 提供 5 阶段非线性工作流和红队操作纪律。这是很多同类项目最缺的一层：**没有"该不该继续往下打"的判断框架，再多 payload 也是噪音**。
+### 2. Hunt-Webapp 层——24 个核心漏洞类 + 58 个 `hunt-*` 技能
+覆盖 XSS、SQLi、SSRF、IDOR、LFI、SSTI、XXE、CSRF、CORS、open-redirect、SharePoint、ASP.NET/NTLM 等。每个 `hunt-*` 技能都来自真实 disclosed report，包含"检测模式 → payload → bypass 表 → 利用链模板"四件套。
+举一个最有代表性的子技能——`hunt-xss`。第三方 Tessl Registry 给它打了 **18/20 实现质量 + 19/20 发现质量**的高分，并评价其为"专家级 XSS 猎杀手册"：包含反射型/属性型/SVG/Markdown/DOM 各上下文的精确 payload、curl 反射检查命令、grep 模式，以及"Verify reflection before claiming XSS""OOB-Or-It-Didn't-Happen Gate"等**硬性验证门**。该技能明确声明"由 174 份公开赏金报告构建"，并设置了与 `hunt-html-injection` 的升级路由——**这种"边界声明"是高质量 skill 与 prompt 堆砌的分水岭**。
+### 3. Enterprise Perimeter 层——企业平台攻击矩阵（★ 最有差异化的一层）
+覆盖 M365/Entra、Okta、SharePoint 本地（ToolShell + 旧 SOAP）、VMware vCenter / Workspace ONE、SSL VPN 设备（Cisco / Fortinet / Citrix / Palo Alto / Pulse / SonicWall / F5）、Android APK 红队管道、供应链侦察，**全部带 2024–2026 CVE 链与凭据后升权模型**（`cloud-iam-deep`）。
+这一层是**目前公开 AI 安全 skill 生态里少有人覆盖的硬骨头**——大多数开源"AI 安全"项目还停留在 webapp 漏洞类，而企业红队最值钱的恰恰是这堆边界设备 + 身份 fabric 的链式利用。
+### 4. Ship It 层——验证与报告
+`triage-validation` 的 **7-Question Gate**（Q2 = 影响是否在 program 接受列表、Q3 = 资产是否在 scope）会在你指 Claude 向未验证第三方目标时**自动触发**；`evidence-hygiene` 防止截图泄 PII；`bugcrowd-reporting` 带 VRT 映射和 friendly-tester 姿态；还有 client-facing 红队交付物模板。
+> **一句话概括四层架构**：Think 层解决"该怎么想"，Hunt 层解决"该往哪打"，Perimeter 层解决"打不穿时往哪升级"，Ship 层解决"打到了怎么交差还不踩法务坑"。这是一套**完整闭环**，而不是 payload 词典。
+### 5. 多 Harness 兼容 + Burp MCP 集成（被低估的亮点）
+官方一个 `bash scripts/install.sh --all --burp-mcp` 就能同时把 skills 铺到 Claude Code、OpenCode、OpenAI Codex CLI、Hermes Agent、Google AntiGravity 五个 harness 的本地路径，并接通 Burp Suite 的 MCP 服务器。知识层跨 harness 共享，slash 命令和 `/hunt` 引擎保持 Claude-Code-only。
+这意味着这套 bundle **不是 Anthropic 生态的私有品**——只要你的 agent harness 读 `SKILL.md`，它就能跑。
+---
+## 三、上手门槛与部署体验：两行命令 vs 五行命令
+部署体验是**这套 bundle 工程成熟度最直观的体现**。官方提供两条路径：
+**Option A — 插件方式（推荐）**，在 Claude Code 里两行搞定，所有 skills 命名空间化在 `claude-bughunter:` 下，升版本自动更新，不污染 `~/.claude/`：
+```bash
+/plugin marketplace add elementalsouls/Claude-BugHunter
+/plugin install claude-bughunter@elementalsouls
+```
+**Option B — 复制安装**（pin 到某个 clone，能拿到 `cbh` CLI 和 `hunt` engagement 脚手架）：
+```bash
+git clone https://github.com/elementalsouls/Claude-BugHunter.git
+cd Claude-BugHunter
+bash scripts/install.sh            # macOS / Linux
+pwsh ./scripts/install.ps1         # Windows
+```
+装完后，**不需要任何 slash 命令**——用大白话描述目标即可：
+```text
+> Testing acme.com — an in-scope HackerOne target. Run recon and rank the surface.
+  ⟳ loading skills: web2-recon, offensive-osint, bb-methodology …
+    → subdomain enum (subfinder + crt.sh) … 47 hosts
+    → live hosts (httpx) … 12 · tech fingerprint … 6 distinct stacks
+    → ranked surface: api.acme.com (GraphQL, introspection ON)  ← start here
+                      auth.acme.com (OAuth, SSO)               ← hunt-oauth
+  Next: want me to probe the GraphQL introspection + OAuth redirect_uri?
+```
+**DX 评分：高**。文档体系完整（README / INSTALL / USAGE / architecture / cbh-cli / cve-coverage / credits / SECURITY / NOTICE），Licenses 也做得很干净——代码 MIT、skill 方法和 wordlist 是 CC BY 4.0，并明确给出 43 个原创 skills + 8 个 vendored 上游 skills 的 attribution。这种"代码与内容分开授权"的精细度，在 GitHub 上不到 5% 的项目能做到。
+---
+## 四、真实案例演示：从输入到输出的"链式反应"
+官方 README 给的 transcript 是 illustrative 的，下面这个案例结合 README 描述 + `hunt-xss` 的 Tessl 评测材料，让你直观看到 Claude-BugHunter 装上之后的"对话质感"到底变在哪。
+### 用户输入（你想偷懒的版本）
+```text
+> I'm testing acme.com, in-scope on HackerOne. I found a reflected
+  value in /search?q=<script>alert(1)</script> — looks like XSS, can I report?
+```
+### 没有 Claude-BugHunter 的输出（典型 ChatGPT 风格）
+> "看起来像反射型 XSS。建议你 URL-encode 一下再确认。可以报告。"
+——这种回答会把一个 P4 当 P3 提交，然后被 triager 拒掉。
+### 装 Claude-BugHunter 后的输出（hunt-xss + triage-validation 自动加载）
+```text
+[hunt-xss loaded — 174 disclosed patterns, 12-step methodology]
+Gate 0 — Context & Scope check:
+  ✓ Q3 (asset in-scope) confirmed by user statement
+  ? Q2 (impact on program's accepted-impact list) — H1 acme.com program
+    lists XSS as P3 (reflected, unauth) / P2 (stored or auth-required)
+    → assuming P3, validate impact before submission
+Step 1 — Verify reflection BEFORE claiming XSS:
+  curl -s 'https://acme.com/search?q=%3Csvg%2Fonload%3Dalert(1)%3E'
+       | grep -i 'svg/onload'
+  → Raw reflection in HTML body: YES
+  → Context: HTML body, not attribute / not JS string / not markdown
+Step 2 — Sanitization probe:
+  → < > escaped? Try `<svg onload=alert(1)>` vs `<img src=x onerror=alert(1)>`
+  → Event-handler filter? `on` keyword stripped? Use `onmouseover` / `onfocus`
+  → Tag allowlist? Try `<math><mtext>`, `<details open ontoggle=...>`
+Step 3 — Marker discipline (autonomous testing priority):
+  Insert unique canary `cbhXSS7f3a` per payload — no collisions with other tests
+OOB-Or-It-Didn't-Happen Gate:
+  → If blind execution is plausible, fire collaborator-style OOB callback
+  → No OOB callback? Downgrade claim to "markup injection hypothesis"
+    and route to hunt-html-injection (escalation rule)
+Final verdict: NOT YET REPORTABLE
+  - Reflection confirmed, but sanitizer likely strips event handlers
+  - Required next step: test `<math><mtext>` + `ontoggle` variants
+  - If all blocked → do NOT report as XSS; consider CSP bypass chain via hunt-csp
+Evidence hygiene reminder: redact cookies in screenshot, use Bugcrowdninja alias
+  if testing on Bugcrowd-equivalent program.
+```
+——看到区别了吗？**它的价值不是 payload 多，而是"报告门"硬**：在你写出 triager 拒稿的报告之前，它已经替你挡掉了 80% 的常见翻车路径。
+---
+## 五、目标人群与收益：5 类人各自的"获得感"
+| 用户画像 | 能拿到的核心收益 | 推荐技能子集 |
+|---|---|---|
+| **全职 Bug Bounty Hunter**（已接案 6 个月以上） | 把 disclosed-report 的隐性知识"自动加载"，从读 30 份报告 → 让 Claude 帮你打链；VRT 默认值修正可单月挽回几个被降级的 P3 | `hunt-*` 全套 + `triage-validation` + `bugcrowd-reporting` |
+| **安全咨询公司 / 外部红队工程师** | M365/Okta/vCenter/SSL-VPN CVE 链 + `redteam-mindset` + 50KB 交付物模板，把"周边资产踩点 → 初始访问 → 报告"整链压缩 30–50% 时间 | Enterprise Perimeter 层 + `redteam-report-template` + `mid-engagement-ir-detection` |
+| **企业安全工程师（做自家攻防演练）** | 在 CTF / 自家 lab（DVWA、Juice Shop、Hacker101）里系统化练习，看 Claude 怎么"想"漏洞链 | 全套 + `bb-methodology` |
+| **安全初学者 / 学生** | 把 681 份报告当成"内置教材"，看每个漏洞类的真实模式而不是 OWASP 抽象描述；但**不能拿来直接打没授权的目标** | `hunt-xss` / `hunt-sqli` 等单类 + Juice Shop 沙箱 |
+| **Agent Harness 开发者 / Prompt 工程师** | 这是目前最完整的 Agent Skills 工程化范本之一——分层加载、自动触发、scope 守门、跨 harness 兼容的实操参考 | 阅读其 `SKILL.md` 结构 + `engine/` 路由逻辑 |
+**新手提醒**：如果你连"反射型 XSS 和存储型 XSS 区别"都还要查，直接装全套会**晕车**——建议先用 Option A 装好，然后在 Juice Shop 上**只调一个 `hunt-*` 技能**，看 Claude 怎么跑 12 步方法论，再逐步扩展。
+---
+## 六、竞品对比：它在 AI 攻防赛道处于什么位置
+我把目前值得比较的几类对手放在一张表里看：
+| 工具 | 形态 | 强项 | 弱项 | 与 Claude-BugHunter 关系 |
+|---|---|---|---|---|
+| **Claude-BugHunter**（本项目） | Agent Skills bundle（83 skills / 15 commands） | 681 disclosed 报告作为知识底座；企业平台 CVE 链；scope 守门；跨 5 harness；MIT + CC BY 4.0 | 仅覆盖外部攻击面（无内网 AD / C2 / 后渗透）；依赖底层模型是否触发 Anthropic 安全分类器 | — |
+| **PentestGPT**（GreyDGL） | Python CLI + LLM | 经典 IKNOW 分解方法论，社区成熟 | 知识停留在 2023 前后，无 disclosed-report 模式；与 Claude Skills 体系不兼容 | 互不重叠——PentestGPT 适合教学与结构化任务分解，CBH 适合实战猎杀 |
+| **Trail of Bits Skills Marketplace** | Anthropic 官方 Skills 生态里的安全插件集 | 静态分析、Burp 项目解析、Semgrep 规则生成、YARA、供应链审计——偏**防御 / 白盒** | 不覆盖黑盒 webapp 猎杀和企业红队链 | **互补**——ToB 适合"我已经有源码/CI"，CBH 适合"我在打一个黑盒目标" |
+| **Penligent.ai** | 商业化 AI 渗透平台（SaaS） | 200+ 工具集成、一键 PoC、SOC 2 / ISO 27001 报告、scope locking | 闭源、按订阅付费，黑盒工作流固定 | 商业替代品，适合公司级采购；个人 hunter 性价比不如 CBH |
+| **codexstar69/bug-hunter**（v3.2.0） | 代码审计 skill（Hunter/Skeptic/Referee 三角色对抗） | AST-aware 源码 fuzzing、最小复现用例、scan-only 默认 | 主要面向**源码审计**，不做 webapp 黑盒与企业平台攻击 | 不同细分——一个打"源码里的 bug"，一个打"在线服务的漏洞" |
+| **通用 Claude Code + 自写 prompt** | 自由工作台 | 灵活、零成本 | 没有 681 报告作为先验、没有 scope/证据/VRT 规范，每个目标都要重新拉上下文 | CBH 就是"通用 Claude Code + 安全"的**升级包** |
+** Penligent 那篇对比文的观点值得引用**：他们把这类工具分成"Coding Agent 工作台"和"Pentest 工作流"两个物种——前者强在"下一步该看什么"，后者强在"如何产出可信的可复现证据"。Claude-BugHunter 的聪明之处在于，它**承认 Claude Code 是前者，然后用 Skills 把前者的输出强行拉到后者的质量线**——这是设计哲学上的清醒。
+**独特的竞争力一句话**：CBH 是目前唯一把**"disclosed-report 知识底座 + 企业边界 CVE 链 + 证据卫生 + 多 harness 兼容"四件事同时做完**的开源 skill bundle，且法律授权（MIT + CC BY 4.0 + NOTICE）做得干净。
+---
+## 七、局限与不足：一些必须直说的真话
+### 1. 它自己就明确承认的 scope 盲区（不是缺陷，是设计决策）
+内网 AD（BloodHound / Kerberoasting / DCSync / NTLM relay）、C2 框架（Cobalt Strike / Sliver / Mythic）、后渗透 / 持久化 / 横向移动、AMSI/ETW/EDR bypass、iOS、硬件 / RF / ICS、二进制漏洞利用——**全部明确排除**。
+如果你的工作是**内网红队**，这套 bundle 在"突破边界之后"对你没用，README 写得非常坦诚："we'd rather say that up front than have you find out mid-engagement"。这种坦诚值得尊敬，但**选型前请别误解它的边界**。
+### 2. Anthropic 模型级安全分类器是最大不确定性
+这是 README 用整整一节"Hospital 告示"说清楚的事，也是**所有"用 LLM 做攻防"项目的共同天花板**：
+- Anthropic 默认会拦截"漏洞利用 / 攻防工具开发"，**即使你的工作是完全授权的**
+- 解决方案是申请 Anthropic 的 **Cyber Verification Program（CVP）**——免费、按申请审核，个人研究者（含独立 bug bounty hunter）可申请 Defense Access tier；通过后分类器阈值会调整，但**大规模数据外传、勒索软件开发仍然禁止且不可调**
+- **隐蔽陷阱**：在 Opus 5 上，部分高风险 cyber 请求会被**默默降级到 Opus 4.8** 而不是拒绝，长 agent run 中你很容易忽略 notice，以为"模型变笨了"。Settings → Capabilities 可以关闭自动切换
+- 不要试图把"攻击性工作"包装成"防御性审计"绕过分类器——README 明确反对这种做法
+**实操建议**：如果你认真想用 CBH 接活，**第一件事是申请 CVP**，第二件事是把 `/hunt` 的"授权 / scope-bounded / remediable finding"首句话保留——那是为你挡分类器设计的。
+### 3. 部分 skill 的写作密度可以更好
+Tessl 对 `hunt-xss` 的评测指出：449 行内联、payload/chain 部分应该拆到 `PAYLOADS.md` / `CHAINS.md` 引用文件、几段"Real Impact Examples"的叙事场景可以压缩——**不影响使用，但影响 token 消耗和 Claude 的上下文预算**。
+### 4. 知识底座依赖 disclosed report，有天然滞后性
+681 份 HackerOne 报告 + 433 份单独引用是它的护城河，但**报告从披露到 skill 化有时间差**。Roadmap 里也承认："Refresh hunt-* skills with newer disclosed reports (re-run public-skills-builder)" 还在待办。
+### 5. 没有 per-engagement 记忆层
+跨目标的"模式召回"还在 roadmap——意味着每次新 engagement，Claude 还是要重新加载相关知识，没有"上次遇到 Fortinet SSL-VPN 那个客户用的什么绕过"的持久化。
+### 6. Hacktivism / 误用风险与法律边界
+README 反复强调 "authorized, scope-bounded, remediable finding"，`SECURITY.md` 给出了完整的授权姿态。但**任何把攻防能力打包的开源项目都无法在技术层面阻止滥用**——这是社会性/法律性问题，不是工程问题。README 的 Scope 章节已经写得非常清楚，但**"写得清楚"不等于"防得住"**——这是所有此类项目共同的伦理赤字。
+---
+## 八、结语与行动建议
+**最终评判：值得装，且是当前 Claude Code 生态里"AI + 主动安全"类项目里**工程成熟度、知识密度、法律姿态三项综合分最高**的一个**——前提是你要清楚它的边界（外攻专用、不含内网 AD、不含 C2、不含后渗透），并且接受"模型层安全分类器"是行业级天花板而非 CBH 的锅。
+**三类读者的行动路径**：
+- **如果你是赏金猎人**：Option A 两行装好 → 申请 Anthropic CVP → 从 `hunt-xss` / `hunt-sqli` 两个最高频的类目开始跑 Juice Shop 验证手感 → 接一个真实授权 target → 把 `triage-validation` 的 7-Question Gate 当成你的提交前 checklist。
+- **如果你是企业红队工程师**：重点关注 Enterprise Perimeter 层 + `redteam-mindset` + `mid-engagement-ir-detection`，这三个 skill 直接对应"客户 SOC 反应太快、我提前收工、交付物塞不下"三个最常见的红队翻车场景。
+- **如果你只是想看看这套 skill 是怎么写的**：直接 `git clone` 后打开 `skills/hunt-xss/SKILL.md`，你会看到教科书级的 Agent Skills 工程样本——12 步方法论、payload 检测表、验证门、跨技能升级路由、明确的 scope 声明。**无论你做不做安全，这份 SKILL.md 都值得做 prompt 工程的人精读一遍**。
+> 一句话收尾：在"AI + 攻防"这个赛道上，大多数项目在比谁的 payload 词典更大，**Claude-BugHunter 在比谁能把方法论、证据规范和法律边界写得最像一份真的 engagement playbook**——这种思路上的代差，才是它最值得被关注的地方。
