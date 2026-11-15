@@ -108367,9 +108367,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 6440,
-      "forks": 505,
-      "starsAdded": 1231,
+      "stars": 6551,
+      "forks": 524,
+      "starsAdded": 1220,
       "createdAt": "2026-11-14T16:00:38.277Z",
       "metaData": {
         "forks": "0",
@@ -108413,62 +108413,118 @@
       }
     },
     {
-      "id": "4f177496-61f3-44b9-a708-5993d05a0d95",
+      "id": "b69221dc-4c20-4a76-b40f-a472edcb1b14",
       "dateAdded": "20261115",
       "type": "github-daily",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 51643,
-      "forks": 4008,
-      "starsAdded": 893,
-      "createdAt": "2026-11-14T16:00:38.293Z",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 11535,
+      "forks": 1017,
+      "starsAdded": 860,
+      "createdAt": "2026-11-14T16:00:38.258Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "agent",
-          "agent-skills",
+          "agents",
+          "claude-code",
           "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
         ],
         "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
       },
       "summaryData": {
         "tags": [
+          "Claude Code",
           "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
+          "AI Agent",
+          "开源工具",
+          "人机协作"
         ],
         "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
         "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
         ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
         "category": [
           "开发工具",
-          "AI 编程",
-          "DevOps"
+          "AI 编程"
         ],
         "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
         ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "c792ff55-de7f-437f-8b7a-8a79250b64b1",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "repo": "Likely7/Veyra-NRVideo",
+      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "language": "C++",
+      "stars": 2582,
+      "forks": 207,
+      "starsAdded": 731,
+      "createdAt": "2026-11-14T16:00:38.338Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "GPL-3.0 license",
+        "homepage": "",
+        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience. - Likely7/Veyra-NRVideo"
+      },
+      "summaryData": {
+        "tags": [
+          "DLSS",
+          "视频增强",
+          "补帧",
+          "PS5串流",
+          "开源播放器"
+        ],
+        "cover": "",
+        "title": "Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮",
+        "ability": [
+          "AI 超分辨率（DLSS / RTX Video SR / XeSS / FSR）",
+          "神经降噪（NVIDIA NR，RTX 30/40/50 系列）",
+          "帧生成补帧（DLSS FG / Smooth Motion，最高 6X）",
+          "PS5 串流与采集卡实时增强（主机画面推到 4K 120FPS）",
+          "节点模式自定义处理链与 OBS 直播采集、HDR 导出"
+        ],
+        "summary": "一款集成 DLSS 超分、AI 降噪、补帧、PS5 串流与采集卡增强的开源 Windows 视频播放器",
+        "category": [
+          "开发工具",
+          "影音娱乐",
+          "开源项目"
+        ],
+        "suitable": [
+          "PS5 / Xbox 主机玩家（想给主机画面上 AI 画质特效）",
+          "老片修复与影音收藏爱好者",
+          "OBS 直播 / 剪辑 UP 主",
+          "硬件折腾党与开源极客",
+          "双显卡协同玩家"
+        ],
+        "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。"
       }
     },
     {
@@ -108479,9 +108535,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 56536,
-      "forks": 4785,
-      "starsAdded": 664,
+      "stars": 56581,
+      "forks": 4790,
+      "starsAdded": 718,
       "createdAt": "2026-11-14T16:00:38.288Z",
       "metaData": {
         "forks": "0",
@@ -108534,59 +108590,6 @@
       }
     },
     {
-      "id": "4e1b8fc7-6964-42f3-9b41-5b5203753ce9",
-      "dateAdded": "20261115",
-      "type": "github-daily",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 15479,
-      "forks": 1338,
-      "starsAdded": 659,
-      "createdAt": "2026-11-14T16:00:38.319Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
       "id": "72482550-d32c-4ff5-aad5-bf959336e37f",
       "dateAdded": "20261115",
       "type": "github-daily",
@@ -108594,9 +108597,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 5082,
-      "forks": 1077,
-      "starsAdded": 553,
+      "stars": 5134,
+      "forks": 1099,
+      "starsAdded": 707,
       "createdAt": "2026-11-14T16:00:38.283Z",
       "metaData": {
         "forks": "0",
@@ -108640,6 +108643,118 @@
       }
     },
     {
+      "id": "4f177496-61f3-44b9-a708-5993d05a0d95",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 51698,
+      "forks": 4024,
+      "starsAdded": 688,
+      "createdAt": "2026-11-14T16:00:38.293Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "4e1b8fc7-6964-42f3-9b41-5b5203753ce9",
+      "dateAdded": "20261115",
+      "type": "github-daily",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 15520,
+      "forks": 1363,
+      "starsAdded": 520,
+      "createdAt": "2026-11-14T16:00:38.319Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
       "id": "0295b505-39e7-48ea-b59b-d33af66bba19",
       "dateAdded": "20261115",
       "type": "github-daily",
@@ -108647,8 +108762,8 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 25158,
-      "forks": 2303,
+      "stars": 25212,
+      "forks": 2309,
       "starsAdded": 495,
       "createdAt": "2026-11-14T16:00:38.300Z",
       "metaData": {
@@ -108721,9 +108836,9 @@
       "repo": "louislam/uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",
       "language": "JavaScript",
-      "stars": 94356,
-      "forks": 8838,
-      "starsAdded": 430,
+      "stars": 94379,
+      "forks": 8840,
+      "starsAdded": 352,
       "createdAt": "2026-11-14T16:00:38.314Z",
       "metaData": {
         "forks": "0",
@@ -108780,121 +108895,6 @@
       }
     },
     {
-      "id": "c792ff55-de7f-437f-8b7a-8a79250b64b1",
-      "dateAdded": "20261115",
-      "type": "github-daily",
-      "url": "https://github.com/Likely7/Veyra-NRVideo",
-      "repo": "Likely7/Veyra-NRVideo",
-      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
-      "language": "C++",
-      "stars": 2495,
-      "forks": 206,
-      "starsAdded": 420,
-      "createdAt": "2026-11-14T16:00:38.338Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "GPL-3.0 license",
-        "homepage": "",
-        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience. - Likely7/Veyra-NRVideo"
-      },
-      "summaryData": {
-        "tags": [
-          "DLSS",
-          "视频增强",
-          "补帧",
-          "PS5串流",
-          "开源播放器"
-        ],
-        "cover": "",
-        "title": "Veyra-NRVideo 深度评测：把 DLSS 5 带进视频播放器与主机采集的开源小钢炮",
-        "ability": [
-          "AI 超分辨率（DLSS / RTX Video SR / XeSS / FSR）",
-          "神经降噪（NVIDIA NR，RTX 30/40/50 系列）",
-          "帧生成补帧（DLSS FG / Smooth Motion，最高 6X）",
-          "PS5 串流与采集卡实时增强（主机画面推到 4K 120FPS）",
-          "节点模式自定义处理链与 OBS 直播采集、HDR 导出"
-        ],
-        "summary": "一款集成 DLSS 超分、AI 降噪、补帧、PS5 串流与采集卡增强的开源 Windows 视频播放器",
-        "category": [
-          "开发工具",
-          "影音娱乐",
-          "开源项目"
-        ],
-        "suitable": [
-          "PS5 / Xbox 主机玩家（想给主机画面上 AI 画质特效）",
-          "老片修复与影音收藏爱好者",
-          "OBS 直播 / 剪辑 UP 主",
-          "硬件折腾党与开源极客",
-          "双显卡协同玩家"
-        ],
-        "description": "Veyra-NRVideo 是基于 C++20 + D3D12 的开源视频增强播放器，把超分、神经降噪、补帧、HDR、PS5 串流、采集卡处理收成一站式方案。它是唯一能让 PS5 主机画面通过 DLSS 5 推到 120FPS 的本地开源工具，文档详实、便携免安装，但仅支持 NVIDIA 显卡与 Windows 11，学习成本中等偏高。"
-      }
-    },
-    {
-      "id": "b69221dc-4c20-4a76-b40f-a472edcb1b14",
-      "dateAdded": "20261115",
-      "type": "github-daily",
-      "url": "https://github.com/backnotprop/plannotator",
-      "repo": "backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "language": "TypeScript",
-      "stars": 11460,
-      "forks": 1005,
-      "starsAdded": 408,
-      "createdAt": "2026-11-14T16:00:38.258Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "claude-code",
-          "code-review",
-          "codex",
-          "obsidian",
-          "opencode",
-          "pi-mono",
-          "plan-mode",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://plannotator.ai",
-        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "代码审查",
-          "AI Agent",
-          "开源工具",
-          "人机协作"
-        ],
-        "cover": "",
-        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
-        "ability": [
-          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
-          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
-          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
-          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
-          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
-        ],
-        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Claude Code / Codex 的开发者",
-          "推广 Agentic Workflow 的技术团队负责人",
-          "需要异步协作的远程工作者",
-          "终端命令行爱好者",
-          "经常写技术文档 / PRD 的作者"
-        ],
-        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
-      }
-    },
-    {
       "id": "21f988cd-637a-4e86-9c26-93d655e389b2",
       "dateAdded": "20261115",
       "type": "github-daily",
@@ -108902,8 +108902,8 @@
       "repo": "martin-olivier/airgorah",
       "description": "A WiFi security auditing software",
       "language": "Rust",
-      "stars": 6091,
-      "forks": 1049,
+      "stars": 6144,
+      "forks": 1052,
       "starsAdded": 270,
       "createdAt": "2026-11-14T16:00:38.352Z",
       "metaData": {
@@ -108964,8 +108964,8 @@
       "repo": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
       "language": "Go",
-      "stars": 120255,
-      "forks": 7009,
+      "stars": 120305,
+      "forks": 7011,
       "starsAdded": 227,
       "createdAt": "2026-11-14T16:00:38.312Z",
       "metaData": {
@@ -109028,8 +109028,8 @@
       "repo": "QwenLM/qwen-code",
       "description": "An open-source AI coding agent that lives in your terminal.",
       "language": "TypeScript",
-      "stars": 30457,
-      "forks": 3526,
+      "stars": 30489,
+      "forks": 3530,
       "starsAdded": 64,
       "createdAt": "2026-11-14T16:00:38.297Z",
       "metaData": {
@@ -109094,7 +109094,7 @@
       "repo": "ashhart/TensorFold",
       "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
       "language": "Zig",
-      "stars": 2217,
+      "stars": 2228,
       "forks": 520,
       "starsAdded": 37,
       "createdAt": "2026-11-14T16:00:38.308Z",
@@ -109152,8 +109152,8 @@
       "repo": "Tencent/LoopForge",
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
-      "stars": 1079,
-      "forks": 238,
+      "stars": 1138,
+      "forks": 245,
       "starsAdded": 33,
       "createdAt": "2026-11-14T16:00:38.326Z",
       "metaData": {
@@ -109226,8 +109226,8 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 17503,
-      "forks": 1745,
+      "stars": 17542,
+      "forks": 1755,
       "starsAdded": 9,
       "createdAt": "2026-11-14T16:00:38.304Z",
       "metaData": {
