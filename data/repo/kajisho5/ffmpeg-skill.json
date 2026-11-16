@@ -10,7 +10,32 @@
   "createdAt": "2026-11-16T13:18:15.655Z",
   "metaData": {
     "forks": "0",
-    "stars": "0"
+    "stars": "0",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "audio-processing",
+      "captions",
+      "claude-code",
+      "codex",
+      "coding-agent",
+      "cursor",
+      "ffmpeg",
+      "gemini-cli-extension",
+      "loudness-normalization",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "python",
+      "subtitles",
+      "transcoding",
+      "video",
+      "video-editing",
+      "whisper"
+    ],
+    "license": "MIT license",
+    "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
   },
   "summaryData": {
     "tags": [

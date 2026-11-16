@@ -28114,8 +28114,8 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 29280,
-      "forks": 2292,
+      "stars": 29441,
+      "forks": 2295,
       "starsAdded": 13501,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
@@ -28167,8 +28167,8 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 112870,
-      "forks": 13015,
+      "stars": 113006,
+      "forks": 13025,
       "starsAdded": 10412,
       "createdAt": "2026-11-15T16:00:03.736Z",
       "metaData": {
@@ -28237,8 +28237,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 195653,
-      "forks": 22990,
+      "stars": 195833,
+      "forks": 22993,
       "starsAdded": 6077,
       "createdAt": "2026-11-15T16:00:03.459Z",
       "metaData": {
@@ -28282,6 +28282,59 @@
           "Agent 架构研究者"
         ],
         "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
+      "id": "cf795096-3b5f-4d1d-bdbd-c9768f756903",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 7862,
+      "forks": 689,
+      "starsAdded": 5692,
+      "createdAt": "2026-11-16T17:00:03.956Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
       }
     },
     {
@@ -28357,8 +28410,8 @@
       "repo": "google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars": 20098,
-      "forks": 1490,
+      "stars": 20229,
+      "forks": 1497,
       "starsAdded": 5060,
       "createdAt": "2026-11-15T16:00:03.942Z",
       "metaData": {
@@ -28427,8 +28480,8 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 15860,
-      "forks": 1397,
+      "stars": 15918,
+      "forks": 1389,
       "starsAdded": 4556,
       "createdAt": "2026-11-15T16:00:03.926Z",
       "metaData": {
@@ -28480,8 +28533,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 72686,
-      "forks": 57638,
+      "stars": 72751,
+      "forks": 57656,
       "starsAdded": 4548,
       "createdAt": "2026-11-15T16:00:03.899Z",
       "metaData": {
@@ -28541,8 +28594,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 51836,
-      "forks": 3628,
+      "stars": 51915,
+      "forks": 3626,
       "starsAdded": 4217,
       "createdAt": "2026-11-15T16:00:03.823Z",
       "metaData": {
@@ -28594,8 +28647,8 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 118135,
-      "forks": 12352,
+      "stars": 118222,
+      "forks": 12348,
       "starsAdded": 3889,
       "createdAt": "2026-11-15T16:00:03.960Z",
       "metaData": {
@@ -28647,6 +28700,134 @@
       }
     },
     {
+      "id": "a1ea9f0d-4995-4d61-9fdb-6fe79245c40d",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/openai/codex-security",
+      "repo": "openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 13706,
+      "forks": 1070,
+      "starsAdded": 2294,
+      "createdAt": "2026-11-16T17:00:04.101Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "application-security",
+          "cli",
+          "code-scanning",
+          "codex",
+          "codex-security",
+          "cybersecurity",
+          "devsecops",
+          "nodejs",
+          "npm",
+          "openai",
+          "sdk",
+          "security",
+          "typescript",
+          "vulnerability-scanning"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developers.openai.com/codex/security",
+        "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security - openai/codex-security"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenAI",
+          "安全审计",
+          "SAST",
+          "开源项目",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "OpenAI Codex Security 深度评测：会用沙箱验证漏洞的 AI 安全审计工具，是安全副驾还是营销噱头？",
+        "ability": [
+          "LLM 威胁建模：自动梳理代码库攻击面、信任边界与敏感数据流",
+          "沙箱漏洞验证：在隔离环境中真实复现漏洞，只上报确认可打的，大幅降低误报",
+          "自动补丁生成：调用 Codex 生成修复 PR 并做回归验证",
+          "生态互通：支持导入 GitHub/Snyk 告警，导出 SARIF，可推送 Linear",
+          "CLI + TypeScript SDK + GitHub Actions 全套集成，支持多模型接入"
+        ],
+        "summary": "OpenAI 开源的 AI 原生安全审计 CLI：先建威胁模型、再把漏洞丢进沙箱真实复现，适合深度审计但不适合当 CI 门禁。",
+        "category": [
+          "开发工具",
+          "网络安全",
+          "AI 编程"
+        ],
+        "suitable": [
+          "接手陌生代码库的安全工程师",
+          "维护安全 backlog 的 AppSec 团队",
+          "大量使用 AI 生成代码的开发团队",
+          "想找漏报补位的开源项目维护者",
+          "不适合：需要离线扫描、依赖 CVE 管控或 CI 阻断门禁的场景"
+        ],
+        "description": "OpenAI 2026 年 7 月开源（Apache-2.0）的 AI 安全审计工具，前身 Aardvark。不同于规则匹配的传统 SAST，它先用 LLM 画威胁地图，再把疑似漏洞丢进沙箱真实复现，官方称发现过 OpenSSH、Chromium 等项目的 CVE 级漏洞。但'开源'仅限客户端，后端按 token 计费且成本偏高（单次扫描可达百美元级），第三方实测精确度仅约 17%，结果可重复性差。适合当深度审计副驾，别急着接进 CI。"
+      }
+    },
+    {
+      "id": "639206a1-18b5-4fa1-8ab5-4eb87353103b",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 52788,
+      "forks": 4244,
+      "starsAdded": 2238,
+      "createdAt": "2026-11-16T17:00:04.097Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
       "id": "30f3a02b-3081-49a7-96a6-4479a64790f1",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28654,8 +28835,8 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 18138,
-      "forks": 2217,
+      "stars": 18158,
+      "forks": 2205,
       "starsAdded": 1922,
       "createdAt": "2026-11-15T16:00:03.958Z",
       "metaData": {
@@ -28711,8 +28892,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12196,
-      "forks": 1147,
+      "stars": 12367,
+      "forks": 1164,
       "starsAdded": 1719,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
@@ -28763,6 +28944,72 @@
           "经常写技术文档 / PRD 的作者"
         ],
         "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "3e93d11c-fd68-49b7-8bc8-c2fabd0eda38",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "repo": "QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "stars": 30601,
+      "forks": 3545,
+      "starsAdded": 1469,
+      "createdAt": "2026-11-16T17:00:04.103Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agentic",
+          "ai",
+          "ai-agent",
+          "ai-coding",
+          "cli",
+          "coding-agent",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "qwen",
+          "terminal",
+          "typescript"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+        "description": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code"
+      },
+      "summaryData": {
+        "tags": [
+          "Qwen Code",
+          "AI Agent",
+          "终端工具",
+          "代码生成",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Qwen Code 深度评测：阿里开源终端 AI 编程 Agent，Claude Code 的开源平替",
+        "ability": [
+          "终端原生 Agentic Coding，命令行直接读写文件、跑命令、调 MCP",
+          "多协议架构（OpenAI/Anthropic/Gemini/Qwen），可随时切换任意模型或本地 Ollama",
+          "全形态覆盖：CLI、VS Code/JetBrains 插件、桌面应用、IM 机器人（微信/飞书/钉钉）、Daemon 常驻服务",
+          "内置 /review 代码审查、SubAgents、Auto-Memory、Agent Arena 多模型对抗等 Agentic 能力",
+          "框架 Apache 2.0 + 模型开放权重，真正双开源，无厂商锁定"
+        ],
+        "summary": "阿里开源的终端 AI 编程 Agent，功能对标 Claude Code，多协议接入任意模型，中文友好且性价比高，但免费额度已停需付费使用",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "国内后端/全栈开发者",
+          "习惯终端工作流的老手",
+          "对厂商锁定敏感的技术团队",
+          "预算敏感的独立开发者",
+          "Agent 二次开发工程师"
+        ],
+        "description": "Qwen Code 是阿里通义千问团队基于 Gemini CLI fork 并独立演进的开源终端 AI 编程 Agent。框架与模型双开源，支持四大协议接入任意模型，功能堆栈对标 Claude Code，中文体验和 IM 集成是其独特优势。SWE-bench 自测约 77%，真实体验略逊 Claude 但远超预期；免费 OAuth 已于 2026 年 4 月停服，需付费订阅或自带 API Key。"
       }
     }
   ]

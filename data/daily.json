@@ -110039,7 +110039,32 @@
       "createdAt": "2026-11-16T13:00:02.345Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "audio-processing",
+          "captions",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "cursor",
+          "ffmpeg",
+          "gemini-cli-extension",
+          "loudness-normalization",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "python",
+          "subtitles",
+          "transcoding",
+          "video",
+          "video-editing",
+          "whisper"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+        "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
       },
       "summaryData": {
         "tags": [
@@ -110144,7 +110169,22 @@
       "createdAt": "2026-11-16T13:00:02.318Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "ancient-china",
+          "cartography",
+          "china-map",
+          "chinese-history",
+          "classical-chinese-poetry",
+          "digital-humanities",
+          "gis",
+          "historical-atlas",
+          "historical-map",
+          "interactive-map"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://deanchen.me/jiangshan-map/",
+        "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes - DeanChensj/jiangshan-map"
       },
       "summaryData": {
         "tags": [
@@ -110462,7 +110502,15 @@
       "createdAt": "2026-11-16T13:00:02.340Z",
       "metaData": {
         "forks": "0",
-        "stars": "0"
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "template",
+          "ui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://svelte.dev",
+        "description": "web development for the rest of us. Contribute to sveltejs/svelte development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
@@ -110564,6 +110612,892 @@
       "forks": 354,
       "starsAdded": 31,
       "createdAt": "2026-11-16T13:00:02.315Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compose",
+          "container-management",
+          "containers",
+          "docker",
+          "docker-compose",
+          "docker-management",
+          "go",
+          "self-hosted",
+          "sveltekit",
+          "typescript",
+          "web-ui"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://getarcane.app",
+        "description": "Modern Docker Management, Designed for Everyone. Contribute to getarcaneapp/arcane development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Docker",
+          "Portainer替代",
+          "自托管",
+          "Homelab",
+          "开源面板"
+        ],
+        "cover": "",
+        "title": "Arcane 深度评测：免费开源的现代 Docker 管理面板，Portainer 平替首选",
+        "ability": [
+          "一站式管理容器、镜像、卷、网络与 Compose 项目",
+          "内置带依赖检查的 Cron 容器自动更新，可替代 Watchtower",
+          "免费不限节点的 RBAC 权限控制与 OIDC 单点登录",
+          "GitOps 自动部署 + Webhook 对接 CI/CD 流水线",
+          "内置 Trivy 镜像漏洞扫描与后量子签名等安全能力"
+        ],
+        "summary": "一个用 Go + SvelteKit 打造的开源 Docker 管理面板，把 Portainer 付费版才有的 RBAC、OIDC、Trivy 扫描等功能全部免费开放。",
+        "category": [
+          "开发工具",
+          "运维部署",
+          "开源项目"
+        ],
+        "suitable": [
+          "Homelab 自托管玩家",
+          "中小团队运维工程师",
+          "想从 Portainer / Dockge 迁移的用户",
+          "需要自动化部署的开发者",
+          "安全敏感的自托管爱好者"
+        ],
+        "description": "Arcane 是基于 Go + SvelteKit 的开源 Docker 管理面板，空闲内存仅约 67MB。它将 Portainer 付费墙内的 RBAC、OIDC、Trivy 扫描、GitOps、多主机 Agent 管理全部免费开放，并内置可替代 Watchtower 的容器自动更新。项目年轻、迭代快，曾有三个月三条 CVE 的记录，建议内网使用、紧跟版本升级。"
+      }
+    }
+  ],
+  "20261117": [
+    {
+      "id": "a9234121-7ee9-407a-afec-602ecda7f99c",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 27616,
+      "forks": 2515,
+      "starsAdded": 1878,
+      "createdAt": "2026-11-16T16:00:02.107Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+      }
+    },
+    {
+      "id": "d3b871a3-8344-4f63-aa59-411769896395",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "repo": "NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 2426,
+      "forks": 308,
+      "starsAdded": 953,
+      "createdAt": "2026-11-16T16:00:02.181Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-evaluation",
+          "agent-plugins",
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "benchmark",
+          "claude-code",
+          "codex",
+          "evaluate",
+          "evaluation",
+          "plugin",
+          "plugin-evaluation",
+          "security-scanner",
+          "skill-eval",
+          "skill-evals",
+          "skill-evaluation",
+          "skill-evaluator",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+      },
+      "summaryData": {
+        "tags": [
+          "NVIDIA",
+          "Agent Skills",
+          "Skill Lift",
+          "开源工具",
+          "AI 评测"
+        ],
+        "cover": "",
+        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
+        "ability": [
+          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
+          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
+          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
+          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
+          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
+        ],
+        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "评测工具"
+        ],
+        "suitable": [
+          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
+          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
+          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
+          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
+          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
+        ],
+        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
+      }
+    },
+    {
+      "id": "0aa5bee6-b7c6-423d-b4db-cf9d6b1d3d24",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 52788,
+      "forks": 4244,
+      "starsAdded": 946,
+      "createdAt": "2026-11-16T16:00:02.186Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "66a9ac2c-7d62-4b7c-887a-75bc5282dbf4",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 6120,
+      "forks": 1279,
+      "starsAdded": 841,
+      "createdAt": "2026-11-16T16:00:02.129Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      }
+    },
+    {
+      "id": "7713e991-0b73-47af-be03-2a9e153ee09a",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 57538,
+      "forks": 4842,
+      "starsAdded": 837,
+      "createdAt": "2026-11-16T16:00:02.205Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
+        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "DevTools",
+          "MCP",
+          "Puppeteer",
+          "自动化测试"
+        ],
+        "cover": "",
+        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+        "ability": [
+          "浏览器自动化操控",
+          "深度调试与性能分析",
+          "网络请求监控",
+          "Lighthouse 性能审计",
+          "MCP 协议标准集成"
+        ],
+        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "测试工具"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "QA/SRE 工程师",
+          "自动化测试人员",
+          "性能优化专家",
+          "AI 编程深度用户"
+        ],
+        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
+      }
+    },
+    {
+      "id": "b5b4d91f-e017-4dd0-833e-d743ea62259e",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 18643,
+      "forks": 1916,
+      "starsAdded": 790,
+      "createdAt": "2026-11-16T16:00:02.075Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      }
+    },
+    {
+      "id": "702e2626-9a3a-44ca-a3aa-aba430775377",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 12367,
+      "forks": 1164,
+      "starsAdded": 689,
+      "createdAt": "2026-11-16T16:00:02.089Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "e5ffdf18-c182-4628-b34b-715e7b55b90e",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9652,
+      "forks": 1210,
+      "starsAdded": 540,
+      "createdAt": "2026-11-16T16:00:02.169Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
+      "id": "7b3658a2-c064-4eb5-a171-134d8f889c3f",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "repo": "kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars": 6405,
+      "forks": 563,
+      "starsAdded": 475,
+      "createdAt": "2026-11-16T16:00:02.220Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "audio-processing",
+          "captions",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "cursor",
+          "ffmpeg",
+          "gemini-cli-extension",
+          "loudness-normalization",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "python",
+          "subtitles",
+          "transcoding",
+          "video",
+          "video-editing",
+          "whisper"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+        "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "ffmpeg",
+          "AI Agent Skill",
+          "MCP",
+          "视频剪辑",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ffmpeg-skill 深度评测：给 AI 编程助手装上一个本地视频剪辑师",
+        "ability": [
+          "42 个结构化工具覆盖剪辑、音频、字幕、调色、批量交付全流程",
+          "自然语言驱动，Agent 自动探测、生成并校验 FFmpeg 命令",
+          "内置 YouTube/TikTok/Reels 等平台合规检查与一键预设导出",
+          "SPEC 自产契约 + MCP 双形态接入，schema 与文档永不漂移",
+          "100% 本地离线执行，不上传素材、无需 API Key"
+        ],
+        "summary": "把 FFmpeg 封装成 42 个 AI Agent 可直接调用的本地视频工具，一句话完成剪辑、转码与平台合规交付，全程离线免费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "开发者 / Vlogger 双重身份用户",
+          "独立创作者与课程博主",
+          "播客主理人",
+          "多机位视频工作者",
+          "想给 Agent 接入媒体能力的 AI 工程师"
+        ],
+        "description": "ffmpeg-skill 是一个 MIT 协议的开源 AI Agent Skill，将强大的 FFmpeg 封装为 42 个结构化本地工具，兼容 Claude Code、Cursor、Codex 与 MCP。它强制遵循先探测、能无损就无损、渲染前预演、结果校验的工程化流程，内置主流平台合规检查，一行 npx 命令即可安装，让 AI 用自然语言完成专业级视频剪辑交付。"
+      }
+    },
+    {
+      "id": "b71c2008-ab3e-4bf2-8383-c55dd9d7cec1",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "repo": "google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 1219,
+      "forks": 199,
+      "starsAdded": 306,
+      "createdAt": "2026-11-16T16:00:02.191Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-research-assistant",
+          "multi-agent-systems"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://yiwen-song.github.io/paper_orchestra/",
+        "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing. - google-research/paper-orchestra"
+      },
+      "summaryData": {
+        "tags": [
+          "Google开源",
+          "多智能体Agent",
+          "论文写作",
+          "学术科研",
+          "PaperWritingBench"
+        ],
+        "cover": "",
+        "title": "PaperOrchestra 深度评测：Google 开源的多智能体论文写作框架",
+        "ability": [
+          "五 Agent 协作完成大纲、绘图、文献、写作、评审全流程",
+          "自动生成 45+ 条经 Semantic Scholar 验证的真实引用，杜绝幻觉引用",
+          "内置 PaperBanana 自动生成统计图与概念示意图",
+          "模拟同行评审并迭代修订，支持评分回退机制",
+          "适配 CVPR/ICLR 等 LaTeX 模板，无需本地 GPU"
+        ],
+        "summary": "Google 开源的多智能体论文写作框架，40 分钟把散乱实验日志变成带真实引用的会议级论文初稿",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "学术科研"
+        ],
+        "suitable": [
+          "临近 DDL 需要赶论文的研究生和博后",
+          "写 Related Work 到崩溃的科研人员",
+          "需要多会议投稿切换格式的学者",
+          "想学多智能体架构的 Agent 工程师",
+          "科研团队负责人（预评审稿件）"
+        ],
+        "description": "PaperOrchestra 是 Google Cloud AI Research 于 2026 年 4 月开源的多智能体框架，专门接管论文写作的最后一公里。用户只需提供 idea 简述和实验日志，五个分工明确的 Agent 即可并行完成提纲、绘图、文献检索、正文写作和模拟评审，约 40 分钟输出带 45+ 条真实可核验引用、能编译通过的会议 LaTeX 手稿。 Apache 2.0 协议可商用，但需自备 API Key，且不含官方支持承诺。"
+      }
+    },
+    {
+      "id": "b0416eed-8d8c-4ea3-ad57-9aa3d7a0d0ab",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "repo": "DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 6620,
+      "forks": 752,
+      "starsAdded": 285,
+      "createdAt": "2026-11-16T16:00:02.156Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ancient-china",
+          "cartography",
+          "china-map",
+          "chinese-history",
+          "classical-chinese-poetry",
+          "digital-humanities",
+          "gis",
+          "historical-atlas",
+          "historical-map",
+          "interactive-map"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://deanchen.me/jiangshan-map/",
+        "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes - DeanChensj/jiangshan-map"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "中国历史",
+          "交互地图",
+          "AI Agent",
+          "数据可视化"
+        ],
+        "cover": "",
+        "title": "江山时序：2400年中国历史交互地图，AI 也能调用的开源舆图引擎",
+        "ability": [
+          "拖动时间轴查看18个历史时期164张疆域快照，带残影边界对照",
+          "点击任意古城弹出2400年建置沿革卡与诗词题跋",
+          "内置104位历史人物万里行迹路线动画（李白、苏轼、玄奘等）",
+          "提供AI Agent专用出图协议：URL深链+CLI脚本+JS API，零坐标调用",
+          "舆图寻址挑战模式，凭线索盲猜古地名趣味学习"
+        ],
+        "summary": "一位 Google 工程师用零框架纯前端打造的开源中国历史地图，拖动时间轴就能看2400年王朝疆域流转，还能让大模型一键出历史地图。",
+        "category": [
+          "开发工具",
+          "教育学习",
+          "数据可视化"
+        ],
+        "suitable": [
+          "文史爱好者与学生",
+          "中学/大学历史教师",
+          "AI应用开发者",
+          "前端可视化工程师",
+          "亲子教育家长"
+        ],
+        "description": "基于谭其骧《中国历史地图集》、CHGIS等权威数据的开源交互地图，零依赖纯前端架构，git克隆后一行命令即可启动。除展示功能外，它首创面向大模型的零坐标出图协议，可直接装进Claude Code等AI工具当技能使用，让LLM具备绘制历史地理图的能力。"
+      }
+    },
+    {
+      "id": "cc83971e-6810-45ea-ac0e-6b0dd6a6bee8",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 67950,
+      "forks": 5988,
+      "starsAdded": 122,
+      "createdAt": "2026-11-16T16:00:02.175Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
+      "id": "9e671853-03a2-477e-8223-00fc38faa7ef",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/sveltejs/svelte",
+      "repo": "sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 88842,
+      "forks": 6047,
+      "starsAdded": 58,
+      "createdAt": "2026-11-16T16:00:02.214Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "template",
+          "ui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://svelte.dev",
+        "description": "web development for the rest of us. Contribute to sveltejs/svelte development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Svelte",
+          "前端框架",
+          "编译器",
+          "响应式",
+          "JavaScript"
+        ],
+        "cover": "",
+        "title": "Svelte 深度评测：把框架做成编译器的优雅豪赌",
+        "ability": [
+          "编译器架构，构建时生成无运行时负担的原生 JS",
+          "Runes 响应式系统（$state/$derived/$effect），细粒度精准更新",
+          "产物体积极小（中型应用约 22KB），渲染性能优于 React/Vue",
+          "SvelteKit 全栈方案，支持 SSR/SSG/SPA 多种渲染模式",
+          "接近原生 HTML/CSS/JS 的写法，学习曲线平缓"
+        ],
+        "summary": "Svelte 是一个无虚拟 DOM 的编译器型前端框架，用更少的代码写出更快更轻的应用。",
+        "category": [
+          "开发工具",
+          "前端框架",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人/独立开发者",
+          "前端新手入门",
+          "内容站/营销页/文档站团队",
+          "追求极致性能的产品团队",
+          "想减负转型的 React 工程师"
+        ],
+        "description": "Svelte 把响应式框架做成了编译器：放弃虚拟 DOM，在构建阶段将声明式代码编译为直接操作 DOM 的原生 JS，浏览器无需背负运行时税。Svelte 5 引入 Runes 信号系统重写响应式，兼顾轻量、性能与开发体验。GitHub 88.8k Star，被 Apple、Spotify 等采用，但生态与招聘市场仍不及 React。"
+      }
+    },
+    {
+      "id": "f7cb8661-1880-4b52-a437-bdcaac7f3615",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "repo": "getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 8535,
+      "forks": 365,
+      "starsAdded": 31,
+      "createdAt": "2026-11-16T16:00:02.149Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
