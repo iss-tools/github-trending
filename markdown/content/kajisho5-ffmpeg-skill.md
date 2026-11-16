@@ -1,0 +1,181 @@
+# kajisho5/ffmpeg-skill
+
+[GitHub URL](https://github.com/kajisho5/ffmpeg-skill)
+
+
+## ffmpeg-skill 深度评测：给 AI 编程助手装上一个本地视频剪辑师
+
+> 把 FFmpeg 封装成 42 个 AI Agent 可直接调用的本地视频工具，一句话完成剪辑、转码与平台合规交付，全程离线免费。
+
+- **Tags**: ffmpeg, AI Agent Skill, MCP, 视频剪辑, 开源项目
+- **Category**: AI 编程, 开发工具, 视频创作
+
+## Details
+
+# ffmpeg-skill 深度评测：给你的 Coding Agent 配一个本地视频剪辑师
+> 评测对象：[kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) · 类型：AI Agent Skill（兼容 Claude Code / Cursor / Codex / MCP）· 开源协议：MIT · 语言：Python 标准库
+---
+## 一句话总结
+**ffmpeg-skill 把 FFmpeg 这个命令行怪兽，封装成 42 个结构化、可被 AI Agent 直接调用的本地工具，让你用一句自然语言就能完成过去要查半天 Stack Overflow 才能敲出的剪辑指令——而且全程离线、不传云端、不收 API Key。** 它是当前 Anthropic Agent Skill 生态里，把"视频剪辑"这一复杂任务工程化得最完整的开源作品之一，上线后曾连续 50 天进入 GitHub Trending（峰值 #46），星数已达 5.4k 量级。
+---
+## 一、背景与痛点：AI Agent 都会 FFmpeg，但都"在猜"
+如果你曾经对着 Claude Code 说"帮我剪掉视频前 10 秒再压成 TikTok 竖屏"，大概率会经历这样的崩溃循环：Agent 凭印象拼出一条 `ffmpeg -i input.mp4 -ss 10 ...`，结果要么帧率对不上、要么 iPhone 拍的杜比视界素材导出后颜色发灰、要么干脆把只能 stream copy 的无损剪辑强行重编码了一遍，几分钟白等。
+这其实是所有"Agent + FFmpeg"组合的通病。作者 kajisho5 在 README 里把这个问题剖析得非常透彻：
+> "An agent that 'knows FFmpeg' still guesses: it assumes a frame rate, picks a codec the container cannot hold, re-encodes a file that only needed a stream copy, and reports 'done' without opening the result."
+翻译过来就是：**Agent "知道 FFmpeg"，但它每次都在猜**——猜帧率、猜编解码器兼容性、猜文件能不能无损处理，最后在没有验证结果的情况下就告诉你"搞定了"。
+这正是 ffmpeg-skill 要解决的核心问题。它把 FFmpeg 这位"什么都能做但语言极其晦涩"的老师傅，变成一位**拿着标准化工作流程（probe → edit → check → verify）、会主动汇报结构化结果、永不擅自覆盖你原片的助手**。
+而它选择的载体——Agent Skill（Anthropic 2025 年推出的能力包格式）+ MCP（Model Context Protocol）——正好是当下 Coding Agent 最主流的"工具接入"协议，这让 ffmpeg-skill 天然就能插进 Claude Code、Cursor、Codex 这些开发者每天都在用的环境里。
+---
+## 二、核心亮点与功能剖析
+### 2.1 它到底有多少能力？——42 个工具的全景图
+虽然 README 主推"42 tools"，但作者把它们按职责切得很细，每个工具只干一件清晰的事，类似 Unix 哲学的"do one thing well"。下面这张表是按官方分类整理的核心能力地图：
+| 类别 | 工具 | 解决什么问题 |
+|---|---|---|
+| **分析检查** | `probe` / `scenes` / `look` | 读元数据（含 VFR 检测、HDR/Dolby Vision 探测）、按场景/音频节拍找剪辑点、生成 contact sheet 给多模态 Agent "看" |
+| **剪辑** | `cut` / `join` / `silence` / `fit` / `crop` / `stabilize` / `denoise` / `reverse` / `freeze` / `speedramp` / `loop` 等 | 无损剪切、跨片段拼接（含 xfade 转场）、自动跳剪去"嗯啊"、竖屏/横屏适配、增稳降噪 |
+| **音频** | `audio` / `sync` / `loudness` | 一站式人声链（压限/门限/降噪）、双声道/多机位音频对齐（含漂移修正）、EBU R128 两遍响度归一 |
+| **画面** | `caption` / `overlay` / `graphics` / `color` | SRT/ASS 硬字幕（支持卡拉OK式逐词动画）、Logo/画中画/绿幕合成、HDR→SDR 与 3D LUT 调色 |
+| **交付** | `export` / `proxy` / `check` / `report` | 内置 YouTube / Reels / TikTok / Shorts / X / LinkedIn / Podcast 等平台预设；按平台规范做 PASS/WARN/FAIL 合规检查；输出 HTML 交付报告 |
+| **编排** | `render` / `batch` / `multicam` / `verify` | 用声明式 `project.json` 渲染整条时间线、批量处理文件夹（带内容哈希缓存）、多机位切换剪辑 |
+亮点是**"交付"那一栏**。普通 FFmpeg 工具能转码，但很少内化这些平台规范：YouTube 要 BT.709 tag、TikTok 要 -14 LUFS 响度、Reels 必须严格 9:16、广播要 -23 LUFS。ffmpeg-skill 的 `check.py` 会按平台规范逐项打 PASS/WARN/FAIL，并附**修复建议**——这是它对创作者最实在的价值。
+### 2.2 工程哲学：五个让它区别于"FFmpeg 命令大全"的设计原则
+如果把 ffmpeg-skill 比作餐厅，**它不是一份菜谱，而是一台装配了 SOP、自检、报错收集、洁癖后厨的自动烹饪机**。具体在五个原则上：
+1. **Probe first（先探测）**：所有判断都来自 `probe.py` 实测出的时长/fps/分辨率/色彩/音轨，绝不信文件名。
+2. **Lossless when possible（能无损就无损）**：`cut.py` / `join.py` / `loudness.py` 默认 stream copy，只有真正需要时才重编码——这是它比"无脑让 GPT 写 ffmpeg 命令"快得多的根本原因。
+3. **Plan before render（先 dry-run）**：每个工具都支持 `--dry-run`、`--json`、`--fast`（预览质量）、`--progress`（百分比+ETA），长编码前可以核对计划。
+4. **Machine-readable contract（机器可读契约）**：`contract --json` 描述每个工具的输入 schema、能力依赖、校验方式，Agent 可以在运行前就"读菜谱"。
+5. **Verify the result（结果校验）**：输出后跑 probe + check，画面有变更时再调 `look.py` 出 contact sheet，强制要求 Agent 亲眼"看"一眼再上报——这是它跟竞品最大的差别。
+### 2.3 真正的杀手锏：SPEC（自产执行契约）
+这是评测过程中最值得单独讲的技术点，也是这个项目最"硬核"的工程贡献。
+在传统 MCP 服务器里，工具的 input schema、CLI flag、文档三者经常"打架"——某天加了 flag 忘了改 schema，Agent 调用就崩。ffmpeg-skill 用一种叫 **SPEC（Self-Producing Execution Contract）** 的方式根治了它：
+- 每个工具的 `input_schema` **不手写**，而是运行时从该脚本自己的 `argparse` parser 直接派生；
+- MCP 服务器 `mcp/server.py` **不存自己的 schema**，启动时直接从 contract 翻译出 `tools/list`；
+- CI 里有一个测试**逐字节比对**这两者，任何漂移直接 fail 构建。
+打个比方：就像酒店的菜单不是后厨打印的，而是**直接从食材库存系统自动生成**——你今晚进了什么菜，菜单上就有什么菜，永远不会出现"客人点了菜单上有但厨房没有的菜"这种尴尬。
+实际收益是：你给某个工具加一个 `--fancy-filter` flag，schema 和 MCP tool 定义**自动跟着更新**，不需要第二次手动维护。这种"杜绝漂移"的工程纪律，在开源 Skill 生态里非常少见。
+### 2.4 架构总览
+```mermaid
+flowchart TD
+    U[用户自然语言请求] --> A[AI Agent<br/>Claude Code / Cursor / Codex]
+    A -->|读| S[SKILL.md<br/>workflow + 请求→工具映射]
+    A -->|调用| T[42 个结构化工具<br/>scripts/&#42;.py, typed argparse]
+    T --> C[Machine-readable Contract<br/>input schema · capabilities · verification]
+    C --> D[doctor 能力检测<br/>ffmpeg encoders / filters / bsfs]
+    D --> F[FFmpeg 执行<br/>无 shell · 优先 stream copy]
+    F --> V[结果校验<br/>probe · check · look.py contact sheet]
+    V --> R[结构化 JSON 返回<br/>status · output · commands · probe]
+    R --> A
+    A -->|MCP tools/list<br/>tools/call| P[mcp/server.py<br/>stdio JSON-RPC]
+```
+从这张图能看出它的两层定位：**对 Coding Agent 来说是 Skill 文件**，**对 MCP 客户端来说是 stdio JSON-RPC 服务器**，同一份工具代码，两条接入口。
+### 2.5 真实案例演示：一句话 → 一套命令
+README 给了一个非常直观的例子，这是它能立刻打动开发者的关键。
+**用户的输入**（纯自然语言）：
+> "Take `interview.mp4`, keep 0:45–3:10 and 5:00–6:30, and make it exactly 60 seconds for Reels."
+**Agent 实际做的事**（Skill 自动触发）：
+```bash
+S=~/.claude/skills/ffmpeg-skill/scripts
+python3 $S/probe.py interview.mp4 --compact              # 先探测，不瞎猜
+python3 $S/cut.py interview.mp4 --segments 0:45-3:10,5:00-6:30
+python3 $S/fit.py  out.mp4 --duration 60 --aspect 9:16 --fit crop
+python3 $S/export.py out.mp4 --preset reels              # Reels 平台预设
+python3 $S/check.py final.mp4 --platform reels           # 合规检查
+python3 $S/look.py  final.mp4 --tiles 3x2                # 渲染 contact sheet
+```
+**Agent 最终汇报**：
+> "final.mp4: 59.98 s, 1080×1920, 30 fps, AAC stereo"
+注意最后那个数字精度——59.98 s 而不是"差不多 60 秒"。这种**带具体数字的交付感**就是 Skill 强校验流程的直接产物。
+### 2.6 三分钟上手：安装与最小可跑样例
+**前置条件**（必须自己装，Skill 不会帮你装）：
+- FFmpeg 6.1+（含 libx264 / libass / zscale / loudnorm / xfade 等常用 filter 与 encoder）
+- Python 3.9+（仅标准库，无需 pip install 任何依赖）
+- Node.js（仅用于 `npx` 启动安装器）
+**安装一行命令**：
+```bash
+# Claude Code（默认）
+npx ffmpeg-skill
+# 其他 Agent
+npx ffmpeg-skill --cursor       # 仅 Cursor
+npx ffmpeg-skill --codex        # 仅 Codex
+npx ffmpeg-skill --all          # 三家全装
+```
+**自检**（检查你这台机器的 FFmpeg 缺哪些能力）：
+```bash
+npx ffmpeg-skill doctor
+```
+这一步非常关键：macOS 上 Homebrew 装的"裸" ffmpeg 看起来 `ok`，但 `caption.py` 可能因为缺 `subtitles` filter 而失败。`doctor --json` 会**按工具**逐个报告 `usable: yes/no/unknown`，避免"job 跑到一半才崩"。
+**MCP 接入配置示例**（Claude Desktop / Cursor 的 MCP settings）：
+```json
+{
+  "mcpServers": {
+    "ffmpeg-skill": {
+      "command": "npx",
+      "args": ["-y", "ffmpeg-skill", "mcp"]
+    }
+  }
+}
+```
+> ⚠️ 默认 `tools/list` 只暴露核心 12 个工具（避免污染客户端上下文窗口），其余 30 个仍可按名调用；想要全部 42 个，设置环境变量 `FFMPEG_SKILL_MCP_FULL=1`。
+**最简命令行体验**（不挂 Agent 也能用）：
+```bash
+S=~/.claude/skills/ffmpeg-skill/scripts
+python3 $S/probe.py input.mp4 --compact
+python3 $S/fit.py input.mp4 --duration 60 --aspect 9:16 --dry-run   # 只打印计划
+python3 $S/export.py input.mp4 --preset reels --json                # 结构化结果
+```
+---
+## 三、目标人群与收益
+| 人群 | 能解决什么痛点 | 具体收益 |
+|---|---|---|
+| **开发者 / Vlogger 双重身份** | 剪自己的产品 demo、技术视频，但不想学 Premiere | 用 Claude Code 一次说清剪辑意图，几条命令交付平台合规成片 |
+| **独立 SaaS / 课程创作者** | 一个素材要出 YouTube / Reels / TikTok / X 多版本 | `render.py --template all` 一条命令产出所有平台版本 |
+| **播客主** | 响度不达标、章节缺失、需要 audiogram 视频 | `loudness.py` + `metadata.py --chapters` + `render.py --template audiogram` 全套覆盖 |
+| **访谈 / 多机位视频工作者** | 双机位+领夹麦时间轴对不上 | `sync.py` 用音频互相关做 1ms 对齐，并修正长时间漂移 |
+| **AI Agent 工程师** | 想给自家 Agent 接入本地媒体处理能力 | 完整 `contract --json` + MCP 协议，机器可读契约可直接对接任何 Agent 框架 |
+| **隐私敏感用户** | 不想让未发布素材传到云端 | 100% 本地执行，无云端、无 API Key |
+---
+## 四、竞品对比：它凭什么能火？
+目前在"Claude / Agent + FFmpeg"这条赛道上，主要有三类玩家：**纯 Prompt 型 Skill**、**FFmpeg MCP 服务器**、**ffmpeg-skill 这种结构化 Skill**。下表横向拉齐：
+| 维度 | **ffmpeg-skill**<br/>(kajisho5) | **claude-ffmpeg-skill**<br/>(ychoi-kr) | **通用 FFmpeg MCP 服务器**<br/>(社区多份实现) | 直接用 Claude 写<br/>裸 ffmpeg 命令 |
+|---|---|---|---|---|
+| 定位 | 42 个结构化本地工具 | Prompt 型 Skill（提示 Claude 怎么写命令）| 暴露 1~5 个原生命令 | 无工具，纯生成 |
+| 是否需手写 ffmpeg | 否 | 间接需要 | 是 | 是 |
+| 事先 probe 探测 | ✅ 强制 | ⚠️ 提示建议 | ❌ | ❌ |
+| 默认优先 stream copy | ✅ | ❌ | ❌ | ❌ |
+| 平台规范检查（TikTok/YouTube…）| ✅ PASS/WARN/FAIL | ⚠️ 提供 preset 但无校验 | ❌ | ❌ |
+| 结果校验（contact sheet 视觉检查）| ✅ look.py | ❌ | ❌ | ❌ |
+| Machine-readable contract | ✅ SPEC 自产 schema | ❌ | 部分 | ❌ |
+| MCP / Skill 双形态 | ✅ | 仅 Skill | 仅 MCP | — |
+| 学习成本 | 低（自然语言）| 低 | 中（需懂 ffmpeg flag）| 中（Prompt 工程）|
+| 适合谁 | 开发者+创作者，要稳定可验证交付 | 偶尔剪辑的重度 Claude 用户 | 已有 ffmpeg 流水线想接 MCP | 一次性简单任务 |
+**它的真正差异化**不是"工具多"，而是**把"是否完成"这件事变成了可验证的工程问题**：probe → edit → check → verify 的硬流程、PASS/WARN/FAIL 的平台合规检查、contact sheet 的视觉验收——这三件事在竞品中几乎是空白。竞品 ychoi-kr/claude-ffmpeg-skill 自己的 README 也承认："Claude 本来就懂 FFmpeg，这个 Skill 主要是提供优化过的 recipe"——属于"提示增强"，而非"工程加固"。
+---
+## 五、局限与不足：不想让你踩的几个坑
+评测要做到客观，下面这些点是这个项目**客观存在**的短板：
+1. **强依赖本地 FFmpeg 环境**。`doctor` 揭示的事实是：macOS Homebrew 默认装的 ffmpeg 不带 `libass`、`zscale`，会导致字幕/调色类工具直接不可用；Windows 用户经常要自行编译或找第三方构建版本。这是使用门槛最大的环节。
+2. **`curl | sh` / `wget | sh` 安装模式被安全审计点名**。ClawSecure 给这个仓库打了 75/100（Moderate），主要发现集中在 Code Injection 和 Permissions Manifest 两类。另一份第三方评估（QAI）也提示它能"touch credentials、install more skills、run shell commands、reach the network"。安装前**务必读一遍 `bin/install.js` 源码**，或在隔离环境跑。
+3. **无时间线概念，本质是线性流水线**。它不是 Premiere / DaVinci Resolve 那种可视化 NLE——适合"单条素材→成片"，做复杂多轨时间线、精细关键帧动画、复杂蒙版时会力不从心。
+4. **没有"眼睛"，看不懂内容**。作者在 SKILL.md 里非常诚实地划清了边界："这个 Skill 不决定哪个 cut 是对的，也不知道什么是 highlight"——`scenes.py --highlights` 只是用音频能量或时长做 proxy 排序；`fit.py --fit crop` 的默认裁切是居中，**真正想保住人脸/产品**必须靠多模态 Agent 看 `look.py` 出的 PNG，或自己指定 `--crop-x/--crop-y`。如果你的 Agent 不带视觉能力，这块就是空转。
+5. **多步任务需要项目文件**。一旦超过 3 步，作者强制建议用 `render.py` + `project.json` 而不是单条命令串联——学习曲线略陡，但这是为避免"中间文件被反复重编码"的合理代价。
+6. **MCP 默认只暴露 12 个核心工具**。如果你用 Claude Desktop 这类 MCP 客户端而没设 `FFMPEG_SKILL_MCP_FULL=1`，会发现"为什么我看不到 caption.py"——这是上下文窗口友好的设计，但需要心里有数。
+7. **作者本人在 README 明确：这是"手"，不是"脑"**。决定剪点、判断成片是否合格、规划整条时间线，需要配合他家生态的 `video-production-agent` / `video-editing-skill` 等上游仓库。如果你只想"开箱即用一键出片"，会失望。
+---
+## 六、结语与行动建议
+**一句话终极评判**：在 2025-2026 的 Agent Skill 生态里，ffmpeg-skill 是少数同时具备**"工程严谨度"（SPEC 契约、CI 强校验）+"业务完整度"（从 probe 到平台合规交付的闭环）+"易用性"（`npx` 一行装）**的标杆项目。如果你日常已经活在 Claude Code / Cursor 里，它值得立刻装上；如果你只是偶尔剪一次视频，装完后跑一次 `doctor` 比直接派活更重要。
+**分场景行动清单**：
+- 🎬 **想立即体验**：装好 ffmpeg + python3 → `npx ffmpeg-skill` → `npx ffmpeg-skill doctor` → 对 Claude Code 说一句 *"把 `xxx.mp4` 的中间静音都剪掉，输出 Reels 版本"*，10 分钟内就能感受它的工程化交付。
+- 🛠️ **想深度集成**：跑 `npx ffmpeg-skill contract --json | head -40`，把 ToolSpec 喂给你自己的 Agent 框架；要接 MCP 就用 `mcp/server.py` + `FFMPEG_SKILL_MCP_FULL=1`。
+- 📦 **想要"完整视频工作流"**：去看作者生态里的 `video-production-agent` / `video-editing-skill` / `color-grading-skill` / `subtitle-skill`，ffmpeg-skill 在这个矩阵里扮演的是"执行力"角色。
+- ⚠️ **安全洁癖者**：先读 `bin/install.js`，或在 Docker 容器/沙盒里跑第一次安装。
+---
+## 附录：高频小问
+**Q1：我必须先会 FFmpeg 吗？**
+不需要。它的设计目标就是"用自然语言说意图，Skill 翻译成正确的 FFmpeg 命令"。但如果你懂 ffmpeg flag，能更快读懂 `--dry-run` 输出的命令流。
+**Q2：个人电脑跑得动吗？**
+能。Python 标准库 + 系统自带 FFmpeg 即可，没有 GPU 要求。但 HDR→SDR、ProRes 输出、AV1 编码这类重活时长就跟 CPU 强相关，建议先用 `--fast` 预览再全量渲染。
+**Q3：会不会有版权/隐私风险？**
+项目本身 100% 本地执行，不上传文件、不需要 API Key。但第三方安全审计（ClawSecure）给出的 75/100 评分提示它存在一些"激进的安装模式"，建议在信任的环境下使用。
+**Q4：能不能商用？**
+MIT 协议，可以商用，自担风险即可。FFmpeg 本身的 LGPL/GPL 协议与你输出的视频内容无关（你只是调用，不分发二进制）。
+**Q5：和 Remotion、DaVinci Resolve 这种替代方案比呢？**
+Remotion 适合"用 React 代码做动画视频"，ffmpeg-skill 适合"对已有素材做剪辑与交付"，二者是互补不是替代；DaVinci Resolve 仍是复杂时间线的最佳工具，ffmpeg-skill 不打算抢它的位置。
