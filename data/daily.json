@@ -109298,7 +109298,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
-        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
       },
       "summaryData": {
         "tags": [
@@ -110383,7 +110383,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
-        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
       },
       "summaryData": {
         "tags": [
@@ -110675,8 +110675,8 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 27616,
-      "forks": 2515,
+      "stars": 27720,
+      "forks": 2522,
       "starsAdded": 1878,
       "createdAt": "2026-11-16T16:00:02.107Z",
       "metaData": {
@@ -110742,15 +110742,85 @@
       }
     },
     {
+      "id": "7da1a103-1c62-45e8-b2ca-b7ee07d38177",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 7341,
+      "forks": 1138,
+      "starsAdded": 1057,
+      "createdAt": "2026-11-16T20:00:02.166Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "anthropic",
+          "application-security",
+          "bug-bounty",
+          "bugbounty",
+          "bugcrowd",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "ethical-hacking",
+          "hackerone",
+          "offensive-security",
+          "pentesting",
+          "red-team",
+          "security-tools",
+          "web-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+      },
+      "summaryData": {
+        "tags": [
+          "Bug Bounty",
+          "渗透测试",
+          "Claude Code",
+          "Agent Skills",
+          "红队"
+        ],
+        "cover": "",
+        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
+        "ability": [
+          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
+          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
+          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
+          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
+          "Burp Suite MCP 集成，联动真实渗透工具链"
+        ],
+        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全职 Bug Bounty 赏金猎人",
+          "外部红队工程师 / 安全咨询顾问",
+          "做攻防演练的企业安全工程师",
+          "安全初学者 / 学生（需在授权沙箱练习）",
+          "Agent 技能开发与 Prompt 工程师"
+        ],
+        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
+      }
+    },
+    {
       "id": "d3b871a3-8344-4f63-aa59-411769896395",
       "dateAdded": "20261117",
       "type": "github-daily",
       "url": "https://github.com/NVIDIA/SkillEvaluator",
       "repo": "NVIDIA/SkillEvaluator",
-      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
       "language": "Python",
-      "stars": 2426,
-      "forks": 308,
+      "stars": 2583,
+      "forks": 355,
       "starsAdded": 953,
       "createdAt": "2026-11-16T16:00:02.181Z",
       "metaData": {
@@ -110778,7 +110848,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
-        "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
       },
       "summaryData": {
         "tags": [
@@ -110821,8 +110891,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 52788,
-      "forks": 4244,
+      "stars": 52880,
+      "forks": 4293,
       "starsAdded": 946,
       "createdAt": "2026-11-16T16:00:02.186Z",
       "metaData": {
@@ -110880,8 +110950,8 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 6120,
-      "forks": 1279,
+      "stars": 6240,
+      "forks": 1325,
       "starsAdded": 841,
       "createdAt": "2026-11-16T16:00:02.129Z",
       "metaData": {
@@ -110933,8 +111003,8 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 57538,
-      "forks": 4842,
+      "stars": 57635,
+      "forks": 4849,
       "starsAdded": 837,
       "createdAt": "2026-11-16T16:00:02.205Z",
       "metaData": {
@@ -110995,8 +111065,8 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 18643,
-      "forks": 1916,
+      "stars": 18870,
+      "forks": 1960,
       "starsAdded": 790,
       "createdAt": "2026-11-16T16:00:02.075Z",
       "metaData": {
@@ -111054,8 +111124,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12367,
-      "forks": 1164,
+      "stars": 12489,
+      "forks": 1224,
       "starsAdded": 689,
       "createdAt": "2026-11-16T16:00:02.089Z",
       "metaData": {
@@ -111116,8 +111186,8 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 9652,
-      "forks": 1210,
+      "stars": 9702,
+      "forks": 1241,
       "starsAdded": 540,
       "createdAt": "2026-11-16T16:00:02.169Z",
       "metaData": {
@@ -111169,8 +111239,8 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 6405,
-      "forks": 563,
+      "stars": 6587,
+      "forks": 598,
       "starsAdded": 475,
       "createdAt": "2026-11-16T16:00:02.220Z",
       "metaData": {
@@ -111243,8 +111313,8 @@
       "repo": "google-research/paper-orchestra",
       "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
       "language": "Python",
-      "stars": 1219,
-      "forks": 199,
+      "stars": 1391,
+      "forks": 233,
       "starsAdded": 306,
       "createdAt": "2026-11-16T16:00:02.191Z",
       "metaData": {
@@ -111299,8 +111369,8 @@
       "repo": "DeanChensj/jiangshan-map",
       "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
       "language": "JavaScript",
-      "stars": 6620,
-      "forks": 752,
+      "stars": 6661,
+      "forks": 785,
       "starsAdded": 285,
       "createdAt": "2026-11-16T16:00:02.156Z",
       "metaData": {
@@ -111363,8 +111433,8 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 67950,
-      "forks": 5988,
+      "stars": 68067,
+      "forks": 6032,
       "starsAdded": 122,
       "createdAt": "2026-11-16T16:00:02.175Z",
       "metaData": {
@@ -111437,8 +111507,8 @@
       "repo": "sveltejs/svelte",
       "description": "web development for the rest of us",
       "language": "JavaScript",
-      "stars": 88842,
-      "forks": 6047,
+      "stars": 88938,
+      "forks": 6092,
       "starsAdded": 58,
       "createdAt": "2026-11-16T16:00:02.214Z",
       "metaData": {
@@ -111494,8 +111564,8 @@
       "repo": "getarcaneapp/arcane",
       "description": "Modern Docker Management, Designed for Everyone",
       "language": "Go",
-      "stars": 8535,
-      "forks": 365,
+      "stars": 8650,
+      "forks": 402,
       "starsAdded": 31,
       "createdAt": "2026-11-16T16:00:02.149Z",
       "metaData": {
