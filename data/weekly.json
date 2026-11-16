@@ -28114,9 +28114,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 28790,
-      "forks": 2250,
-      "starsAdded": 13660,
+      "stars": 28980,
+      "forks": 2263,
+      "starsAdded": 13501,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
         "forks": "0",
@@ -28167,9 +28167,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 112424,
-      "forks": 12984,
-      "starsAdded": 12401,
+      "stars": 112565,
+      "forks": 12995,
+      "starsAdded": 10412,
       "createdAt": "2026-11-15T16:00:03.736Z",
       "metaData": {
         "forks": "0",
@@ -28230,6 +28230,61 @@
       }
     },
     {
+      "id": "d9c71683-2944-4618-b248-e57ac059ecda",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/anthropics/skills",
+      "repo": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 195426,
+      "forks": 22968,
+      "starsAdded": 6077,
+      "createdAt": "2026-11-15T16:00:03.459Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills"
+        ],
+        "license": "",
+        "homepage": "",
+        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Anthropic",
+          "Claude",
+          "Agent Skills",
+          "MCP",
+          "开源生态"
+        ],
+        "cover": "",
+        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
+        "ability": [
+          "标准化技能定义",
+          "动态加载与组合",
+          "渐进式上下文管理",
+          "跨平台生态兼容",
+          "脚本与资源集成"
+        ],
+        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源框架"
+        ],
+        "suitable": [
+          "AI 应用开发者",
+          "研发与 DevOps 工程师",
+          "产品与知识管理者",
+          "企业工具链负责人",
+          "Agent 架构研究者"
+        ],
+        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
+      }
+    },
+    {
       "id": "e02a58bf-1e64-4b3e-af6b-bc0556d52603",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28237,9 +28292,9 @@
       "repo": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 23305,
-      "forks": 3234,
-      "starsAdded": 6413,
+      "stars": 23499,
+      "forks": 3265,
+      "starsAdded": 5463,
       "createdAt": "2026-11-15T16:00:03.937Z",
       "metaData": {
         "forks": "0",
@@ -28295,61 +28350,6 @@
       }
     },
     {
-      "id": "d9c71683-2944-4618-b248-e57ac059ecda",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/anthropics/skills",
-      "repo": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "stars": 195317,
-      "forks": 22957,
-      "starsAdded": 6220,
-      "createdAt": "2026-11-15T16:00:03.459Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills"
-        ],
-        "license": "",
-        "homepage": "",
-        "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Anthropic",
-          "Claude",
-          "Agent Skills",
-          "MCP",
-          "开源生态"
-        ],
-        "cover": "",
-        "title": "Anthropic 官方 Agent Skills 仓库评测：构建 AI 生态的标准化基石",
-        "ability": [
-          "标准化技能定义",
-          "动态加载与组合",
-          "渐进式上下文管理",
-          "跨平台生态兼容",
-          "脚本与资源集成"
-        ],
-        "summary": "Anthropic 官方 Agent Skills 规范与示例库，让 AI 拥有可复用的“专业技能包”。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源框架"
-        ],
-        "suitable": [
-          "AI 应用开发者",
-          "研发与 DevOps 工程师",
-          "产品与知识管理者",
-          "企业工具链负责人",
-          "Agent 架构研究者"
-        ],
-        "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
-      }
-    },
-    {
       "id": "d817fb7a-d1fe-4c47-bf8f-419adda30e0b",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28357,9 +28357,9 @@
       "repo": "google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars": 19695,
-      "forks": 1460,
-      "starsAdded": 5539,
+      "stars": 19844,
+      "forks": 1474,
+      "starsAdded": 5060,
       "createdAt": "2026-11-15T16:00:03.942Z",
       "metaData": {
         "forks": "0",
@@ -28420,56 +28420,56 @@
       }
     },
     {
-      "id": "c5f1add6-dfcf-4aa4-9d89-37c57f1881f9",
+      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
       "dateAdded": "202647",
       "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 51577,
-      "forks": 3604,
-      "starsAdded": 4601,
-      "createdAt": "2026-11-15T16:00:03.823Z",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 15744,
+      "forks": 1380,
+      "starsAdded": 4556,
+      "createdAt": "2026-11-15T16:00:03.926Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
       },
       "summaryData": {
         "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
         ],
         "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
         "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
         ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
         "category": [
+          "生活效率",
           "开发工具",
-          "AI 编程",
-          "浏览器自动化"
+          "AI 应用"
         ],
         "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
         ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
       }
     },
     {
@@ -28480,9 +28480,9 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 72478,
-      "forks": 57567,
-      "starsAdded": 4526,
+      "stars": 72547,
+      "forks": 57582,
+      "starsAdded": 4548,
       "createdAt": "2026-11-15T16:00:03.899Z",
       "metaData": {
         "forks": "0",
@@ -28534,56 +28534,56 @@
       }
     },
     {
-      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
+      "id": "c5f1add6-dfcf-4aa4-9d89-37c57f1881f9",
       "dateAdded": "202647",
       "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 15670,
-      "forks": 1371,
-      "starsAdded": 4483,
-      "createdAt": "2026-11-15T16:00:03.926Z",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 51677,
+      "forks": 3615,
+      "starsAdded": 4217,
+      "createdAt": "2026-11-15T16:00:03.823Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
       },
       "summaryData": {
         "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
         ],
         "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
         "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
         ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
         "category": [
-          "生活效率",
           "开发工具",
-          "AI 应用"
+          "AI 编程",
+          "浏览器自动化"
         ],
         "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
         ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
       }
     },
     {
@@ -28594,9 +28594,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 117910,
-      "forks": 12337,
-      "starsAdded": 3670,
+      "stars": 117985,
+      "forks": 12342,
+      "starsAdded": 3889,
       "createdAt": "2026-11-15T16:00:03.960Z",
       "metaData": {
         "forks": "0",
@@ -28654,9 +28654,9 @@
       "repo": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars": 18063,
-      "forks": 2213,
-      "starsAdded": 1859,
+      "stars": 18087,
+      "forks": 2215,
+      "starsAdded": 1922,
       "createdAt": "2026-11-15T16:00:03.958Z",
       "metaData": {
         "forks": "0",
@@ -28711,9 +28711,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 11777,
-      "forks": 1080,
-      "starsAdded": 818,
+      "stars": 11937,
+      "forks": 1088,
+      "starsAdded": 1719,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
         "forks": "0",

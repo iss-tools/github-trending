@@ -109537,9 +109537,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 7059,
-      "forks": 594,
-      "starsAdded": 1220,
+      "stars": 7294,
+      "forks": 606,
+      "starsAdded": 1219,
       "createdAt": "2026-11-15T16:00:02.025Z",
       "metaData": {
         "forks": "0",
@@ -109590,9 +109590,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 25546,
-      "forks": 2332,
-      "starsAdded": 1041,
+      "stars": 26328,
+      "forks": 2370,
+      "starsAdded": 988,
       "createdAt": "2026-11-15T16:00:01.977Z",
       "metaData": {
         "forks": "0",
@@ -109664,9 +109664,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 11777,
-      "forks": 1080,
-      "starsAdded": 860,
+      "stars": 11937,
+      "forks": 1088,
+      "starsAdded": 866,
       "createdAt": "2026-11-15T16:00:01.999Z",
       "metaData": {
         "forks": "0",
@@ -109726,9 +109726,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 56854,
-      "forks": 4804,
-      "starsAdded": 718,
+      "stars": 57061,
+      "forks": 4814,
+      "starsAdded": 717,
       "createdAt": "2026-11-15T16:00:02.002Z",
       "metaData": {
         "forks": "0",
@@ -109788,9 +109788,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 5451,
-      "forks": 1168,
-      "starsAdded": 707,
+      "stars": 5644,
+      "forks": 1177,
+      "starsAdded": 706,
       "createdAt": "2026-11-15T16:00:02.027Z",
       "metaData": {
         "forks": "0",
@@ -109841,9 +109841,9 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 51981,
-      "forks": 4102,
-      "starsAdded": 688,
+      "stars": 52220,
+      "forks": 4122,
+      "starsAdded": 691,
       "createdAt": "2026-11-15T16:00:02.007Z",
       "metaData": {
         "forks": "0",
@@ -109900,9 +109900,9 @@
       "repo": "Tencent/LoopForge",
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
-      "stars": 1420,
-      "forks": 262,
-      "starsAdded": 484,
+      "stars": 1648,
+      "forks": 285,
+      "starsAdded": 423,
       "createdAt": "2026-11-15T16:00:02.011Z",
       "metaData": {
         "forks": "0",
@@ -109974,9 +109974,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 17790,
-      "forks": 1817,
-      "starsAdded": 393,
+      "stars": 17995,
+      "forks": 1824,
+      "starsAdded": 355,
       "createdAt": "2026-11-15T16:00:01.991Z",
       "metaData": {
         "forks": "0",
@@ -110033,9 +110033,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 9244,
-      "forks": 1125,
-      "starsAdded": 248,
+      "stars": 9373,
+      "forks": 1130,
+      "starsAdded": 247,
       "createdAt": "2026-11-15T16:00:01.996Z",
       "metaData": {
         "forks": "0",
@@ -110079,76 +110079,6 @@
       }
     },
     {
-      "id": "f5d96b53-d5bb-4c27-bdea-92ea1b4345f3",
-      "dateAdded": "20261116",
-      "type": "github-daily",
-      "url": "https://github.com/elementalsouls/Claude-BugHunter",
-      "repo": "elementalsouls/Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "language": "Python",
-      "stars": 6323,
-      "forks": 965,
-      "starsAdded": 221,
-      "createdAt": "2026-11-15T16:00:02.022Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-security",
-          "anthropic",
-          "application-security",
-          "bug-bounty",
-          "bugbounty",
-          "bugcrowd",
-          "claude",
-          "claude-code",
-          "claude-skills",
-          "ethical-hacking",
-          "hackerone",
-          "offensive-security",
-          "pentesting",
-          "red-team",
-          "security-tools",
-          "web-security"
-        ],
-        "license": "MIT license",
-        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
-        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
-      },
-      "summaryData": {
-        "tags": [
-          "Bug Bounty",
-          "渗透测试",
-          "Claude Code",
-          "Agent Skills",
-          "红队"
-        ],
-        "cover": "",
-        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
-        "ability": [
-          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
-          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
-          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
-          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
-          "Burp Suite MCP 集成，联动真实渗透工具链"
-        ],
-        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
-        "category": [
-          "网络安全",
-          "AI 编程",
-          "开发工具"
-        ],
-        "suitable": [
-          "全职 Bug Bounty 赏金猎人",
-          "外部红队工程师 / 安全咨询顾问",
-          "做攻防演练的企业安全工程师",
-          "安全初学者 / 学生（需在授权沙箱练习）",
-          "Agent 技能开发与 Prompt 工程师"
-        ],
-        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
-      }
-    },
-    {
       "id": "cbe50f0f-1101-49b2-9a26-d6654beadd37",
       "dateAdded": "20261116",
       "type": "github-daily",
@@ -110156,9 +110086,9 @@
       "repo": "NVIDIA/SkillEvaluator",
       "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
       "language": "Python",
-      "stars": 1598,
-      "forks": 227,
-      "starsAdded": 205,
+      "stars": 1783,
+      "forks": 236,
+      "starsAdded": 122,
       "createdAt": "2026-11-15T16:00:02.033Z",
       "metaData": {
         "forks": "0",
@@ -110221,6 +110151,76 @@
       }
     },
     {
+      "id": "f5d96b53-d5bb-4c27-bdea-92ea1b4345f3",
+      "dateAdded": "20261116",
+      "type": "github-daily",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 6554,
+      "forks": 982,
+      "starsAdded": 98,
+      "createdAt": "2026-11-15T16:00:02.022Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-security",
+          "anthropic",
+          "application-security",
+          "bug-bounty",
+          "bugbounty",
+          "bugcrowd",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "ethical-hacking",
+          "hackerone",
+          "offensive-security",
+          "pentesting",
+          "red-team",
+          "security-tools",
+          "web-security"
+        ],
+        "license": "MIT license",
+        "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+      },
+      "summaryData": {
+        "tags": [
+          "Bug Bounty",
+          "渗透测试",
+          "Claude Code",
+          "Agent Skills",
+          "红队"
+        ],
+        "cover": "",
+        "title": "Claude-BugHunter 深度评测：83 项技能包把 Claude Code 改造成渗透专家",
+        "ability": [
+          "24 个 Web 漏洞类猎杀手册（XSS/SQLi/SSRF/IDOR 等，含 payload 与 bypass 表）",
+          "企业级平台攻击链覆盖（M365/Okta/vCenter/SSL-VPN 的 2024-2026 CVE 链）",
+          "报告前自动验证门与证据卫生规范，防止误报提交和 PII 泄露",
+          "跨 5 种 Agent Harness 兼容（Claude Code/OpenCode/Codex CLI 等）",
+          "Burp Suite MCP 集成，联动真实渗透工具链"
+        ],
+        "summary": "一套把 681 份真实赏金报告经验压缩成 83 个 AI 技能文件的开源安全技能包，让 Claude Code 从聊天机器人变身持证渗透专家。",
+        "category": [
+          "网络安全",
+          "AI 编程",
+          "开发工具"
+        ],
+        "suitable": [
+          "全职 Bug Bounty 赏金猎人",
+          "外部红队工程师 / 安全咨询顾问",
+          "做攻防演练的企业安全工程师",
+          "安全初学者 / 学生（需在授权沙箱练习）",
+          "Agent 技能开发与 Prompt 工程师"
+        ],
+        "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
+      }
+    },
+    {
       "id": "6d226349-ba10-4a16-8480-27fcc0316df5",
       "dateAdded": "20261116",
       "type": "github-daily",
@@ -110228,9 +110228,9 @@
       "repo": "ggml-org/ggml",
       "description": "Tensor library for machine learning",
       "language": "C++",
-      "stars": 15883,
-      "forks": 2018,
-      "starsAdded": 53,
+      "stars": 15946,
+      "forks": 2021,
+      "starsAdded": 43,
       "createdAt": "2026-11-15T16:00:02.013Z",
       "metaData": {
         "forks": "0",
