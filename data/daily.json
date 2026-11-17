@@ -111904,68 +111904,6 @@
   ],
   "20261118": [
     {
-      "id": "0259ddc8-95d0-47d3-9bd4-a0eb8d5555c7",
-      "dateAdded": "20261118",
-      "type": "github-daily",
-      "url": "https://github.com/obra/superpowers",
-      "repo": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 319084,
-      "forks": 28446,
-      "starsAdded": 1905,
-      "createdAt": "2026-11-17T16:00:04.265Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "工作流自动化",
-          "TDD",
-          "代码质量",
-          "Prompt工程"
-        ],
-        "cover": "",
-        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
-        "ability": [
-          "标准化工程流程",
-          "强制测试驱动开发 (TDD)",
-          "跨 AI 工具兼容",
-          "自动化代码评审",
-          "环境隔离与管理"
-        ],
-        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "使用 AI 编程的开发者",
-          "追求代码质量的团队",
-          "技术负责人",
-          "工程化新手",
-          "多工具混合用户"
-        ],
-        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
-      }
-    },
-    {
       "id": "20e7d2a5-2a61-405d-b072-1f4001af04b5",
       "dateAdded": "20261118",
       "type": "github-daily",
@@ -111973,8 +111911,8 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 28733,
-      "forks": 2611,
+      "stars": 28782,
+      "forks": 2613,
       "starsAdded": 1776,
       "createdAt": "2026-11-17T16:00:04.255Z",
       "metaData": {
@@ -112047,8 +111985,8 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 19852,
-      "forks": 2052,
+      "stars": 19885,
+      "forks": 2061,
       "starsAdded": 1444,
       "createdAt": "2026-11-17T16:00:04.273Z",
       "metaData": {
@@ -112106,8 +112044,8 @@
       "repo": "google-research/paper-orchestra",
       "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
       "language": "Python",
-      "stars": 2515,
-      "forks": 364,
+      "stars": 2677,
+      "forks": 382,
       "starsAdded": 1175,
       "createdAt": "2026-11-17T16:00:04.311Z",
       "metaData": {
@@ -112162,8 +112100,8 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 8534,
-      "forks": 1301,
+      "stars": 8737,
+      "forks": 1319,
       "starsAdded": 1007,
       "createdAt": "2026-11-17T16:00:04.200Z",
       "metaData": {
@@ -112232,8 +112170,8 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 305158,
-      "forks": 44939,
+      "stars": 305246,
+      "forks": 44951,
       "starsAdded": 902,
       "createdAt": "2026-11-17T16:00:04.306Z",
       "metaData": {
@@ -112293,8 +112231,8 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 68729,
-      "forks": 6126,
+      "stars": 68805,
+      "forks": 6137,
       "starsAdded": 772,
       "createdAt": "2026-11-17T16:00:04.233Z",
       "metaData": {
@@ -112367,8 +112305,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 53516,
-      "forks": 4405,
+      "stars": 53573,
+      "forks": 4415,
       "starsAdded": 764,
       "createdAt": "2026-11-17T16:00:04.246Z",
       "metaData": {
@@ -112426,8 +112364,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12950,
-      "forks": 1298,
+      "stars": 12969,
+      "forks": 1307,
       "starsAdded": 691,
       "createdAt": "2026-11-17T16:00:04.284Z",
       "metaData": {
@@ -112488,8 +112426,8 @@
       "repo": "getarcaneapp/arcane",
       "description": "Modern Docker Management, Designed for Everyone",
       "language": "Go",
-      "stars": 9140,
-      "forks": 491,
+      "stars": 9186,
+      "forks": 501,
       "starsAdded": 654,
       "createdAt": "2026-11-17T16:00:04.258Z",
       "metaData": {
@@ -112546,6 +112484,68 @@
       }
     },
     {
+      "id": "0259ddc8-95d0-47d3-9bd4-a0eb8d5555c7",
+      "dateAdded": "20261118",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 319145,
+      "forks": 28454,
+      "starsAdded": 598,
+      "createdAt": "2026-11-17T16:00:04.265Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
       "id": "ed8fd6a5-7af9-4be2-ae65-77601769b21e",
       "dateAdded": "20261118",
       "type": "github-daily",
@@ -112553,8 +112553,8 @@
       "repo": "Tencent/LoopForge",
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
-      "stars": 2931,
-      "forks": 425,
+      "stars": 2980,
+      "forks": 430,
       "starsAdded": 590,
       "createdAt": "2026-11-17T16:00:04.251Z",
       "metaData": {
@@ -112627,8 +112627,8 @@
       "repo": "sveltejs/svelte",
       "description": "web development for the rest of us",
       "language": "JavaScript",
-      "stars": 89415,
-      "forks": 6208,
+      "stars": 89507,
+      "forks": 6252,
       "starsAdded": 533,
       "createdAt": "2026-11-17T16:00:04.295Z",
       "metaData": {
@@ -112684,8 +112684,8 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 9976,
-      "forks": 1309,
+      "stars": 9999,
+      "forks": 1320,
       "starsAdded": 350,
       "createdAt": "2026-11-17T16:00:04.260Z",
       "metaData": {
@@ -112737,8 +112737,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 16793,
-      "forks": 1816,
+      "stars": 16820,
+      "forks": 1825,
       "starsAdded": 196,
       "createdAt": "2026-11-17T16:00:04.262Z",
       "metaData": {
@@ -112764,8 +112764,8 @@
       "repo": "jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 65760,
-      "forks": 8635,
+      "stars": 65795,
+      "forks": 8645,
       "starsAdded": 188,
       "createdAt": "2026-11-17T16:00:04.309Z",
       "metaData": {
