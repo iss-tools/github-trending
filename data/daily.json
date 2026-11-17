@@ -110675,9 +110675,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 27720,
-      "forks": 2522,
-      "starsAdded": 1878,
+      "stars": 27760,
+      "forks": 2524,
+      "starsAdded": 1828,
       "createdAt": "2026-11-16T16:00:02.107Z",
       "metaData": {
         "forks": "0",
@@ -110812,6 +110812,65 @@
       }
     },
     {
+      "id": "0aa5bee6-b7c6-423d-b4db-cf9d6b1d3d24",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 52917,
+      "forks": 4294,
+      "starsAdded": 951,
+      "createdAt": "2026-11-16T16:00:02.186Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
       "id": "d3b871a3-8344-4f63-aa59-411769896395",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -110819,9 +110878,9 @@
       "repo": "NVIDIA/SkillEvaluator",
       "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
       "language": "Python",
-      "stars": 2583,
-      "forks": 355,
-      "starsAdded": 953,
+      "stars": 2667,
+      "forks": 358,
+      "starsAdded": 873,
       "createdAt": "2026-11-16T16:00:02.181Z",
       "metaData": {
         "forks": "0",
@@ -110884,118 +110943,6 @@
       }
     },
     {
-      "id": "0aa5bee6-b7c6-423d-b4db-cf9d6b1d3d24",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 52880,
-      "forks": 4293,
-      "starsAdded": 946,
-      "createdAt": "2026-11-16T16:00:02.186Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
-      },
-      "summaryData": {
-        "tags": [
-          "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
-        ],
-        "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
-        "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
-        ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "DevOps"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
-        ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
-      }
-    },
-    {
-      "id": "66a9ac2c-7d62-4b7c-887a-75bc5282dbf4",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "repo": "tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "language": "Python",
-      "stars": 6240,
-      "forks": 1325,
-      "starsAdded": 841,
-      "createdAt": "2026-11-16T16:00:02.129Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Skills",
-          "量化交易",
-          "开源项目",
-          "美股投资",
-          "交易纪律"
-        ],
-        "cover": "",
-        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
-        "ability": [
-          "市场状态分析（宽度、趋势、分布日监控）",
-          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
-          "仓位计算与交易前纪律拦截",
-          "交易日志与复盘闭环（本地 YAML 记忆）",
-          "策略回测与一键式交易工作流"
-        ],
-        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
-        "category": [
-          "AI 编程",
-          "投资理财",
-          "开发工具"
-        ],
-        "suitable": [
-          "美股长期+波段混合型散户",
-          "每天只有 15-30 分钟看盘的兼职交易者",
-          "O'Neil/Minervini 方法论追随者",
-          "纪律性差、交易日志不连贯的投资者",
-          "想做系统化策略回测的个人研究者"
-        ],
-        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
-      }
-    },
-    {
       "id": "7713e991-0b73-47af-be03-2a9e153ee09a",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -111003,9 +110950,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 57635,
-      "forks": 4849,
-      "starsAdded": 837,
+      "stars": 57665,
+      "forks": 4848,
+      "starsAdded": 841,
       "createdAt": "2026-11-16T16:00:02.205Z",
       "metaData": {
         "forks": "0",
@@ -111058,6 +111005,59 @@
       }
     },
     {
+      "id": "66a9ac2c-7d62-4b7c-887a-75bc5282dbf4",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 6295,
+      "forks": 1329,
+      "starsAdded": 837,
+      "createdAt": "2026-11-16T16:00:02.129Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      }
+    },
+    {
       "id": "b5b4d91f-e017-4dd0-833e-d743ea62259e",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -111065,9 +111065,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 18870,
-      "forks": 1960,
-      "starsAdded": 790,
+      "stars": 18936,
+      "forks": 1962,
+      "starsAdded": 791,
       "createdAt": "2026-11-16T16:00:02.075Z",
       "metaData": {
         "forks": "0",
@@ -111124,9 +111124,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12489,
-      "forks": 1224,
-      "starsAdded": 689,
+      "stars": 12536,
+      "forks": 1228,
+      "starsAdded": 696,
       "createdAt": "2026-11-16T16:00:02.089Z",
       "metaData": {
         "forks": "0",
@@ -111186,9 +111186,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 9702,
-      "forks": 1241,
-      "starsAdded": 540,
+      "stars": 9727,
+      "forks": 1240,
+      "starsAdded": 529,
       "createdAt": "2026-11-16T16:00:02.169Z",
       "metaData": {
         "forks": "0",
@@ -111239,9 +111239,9 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 6587,
-      "forks": 598,
-      "starsAdded": 475,
+      "stars": 6670,
+      "forks": 599,
+      "starsAdded": 367,
       "createdAt": "2026-11-16T16:00:02.220Z",
       "metaData": {
         "forks": "0",
@@ -111313,9 +111313,9 @@
       "repo": "google-research/paper-orchestra",
       "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
       "language": "Python",
-      "stars": 1391,
-      "forks": 233,
-      "starsAdded": 306,
+      "stars": 1473,
+      "forks": 236,
+      "starsAdded": 313,
       "createdAt": "2026-11-16T16:00:02.191Z",
       "metaData": {
         "forks": "0",
@@ -111369,9 +111369,9 @@
       "repo": "DeanChensj/jiangshan-map",
       "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
       "language": "JavaScript",
-      "stars": 6661,
-      "forks": 785,
-      "starsAdded": 285,
+      "stars": 6682,
+      "forks": 788,
+      "starsAdded": 288,
       "createdAt": "2026-11-16T16:00:02.156Z",
       "metaData": {
         "forks": "0",
@@ -111433,9 +111433,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 68067,
-      "forks": 6032,
-      "starsAdded": 122,
+      "stars": 68103,
+      "forks": 6035,
+      "starsAdded": 135,
       "createdAt": "2026-11-16T16:00:02.175Z",
       "metaData": {
         "forks": "0",
@@ -111507,9 +111507,9 @@
       "repo": "sveltejs/svelte",
       "description": "web development for the rest of us",
       "language": "JavaScript",
-      "stars": 88938,
-      "forks": 6092,
-      "starsAdded": 58,
+      "stars": 88973,
+      "forks": 6093,
+      "starsAdded": 115,
       "createdAt": "2026-11-16T16:00:02.214Z",
       "metaData": {
         "forks": "0",
@@ -111564,9 +111564,9 @@
       "repo": "getarcaneapp/arcane",
       "description": "Modern Docker Management, Designed for Everyone",
       "language": "Go",
-      "stars": 8650,
-      "forks": 402,
-      "starsAdded": 31,
+      "stars": 8696,
+      "forks": 403,
+      "starsAdded": 46,
       "createdAt": "2026-11-16T16:00:02.149Z",
       "metaData": {
         "forks": "0",

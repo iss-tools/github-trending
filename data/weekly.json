@@ -28114,9 +28114,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 29524,
-      "forks": 2304,
-      "starsAdded": 13501,
+      "stars": 29564,
+      "forks": 2301,
+      "starsAdded": 10939,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
         "forks": "0",
@@ -28167,9 +28167,9 @@
       "repo": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 113119,
-      "forks": 13034,
-      "starsAdded": 10412,
+      "stars": 113154,
+      "forks": 13030,
+      "starsAdded": 7067,
       "createdAt": "2026-11-15T16:00:03.736Z",
       "metaData": {
         "forks": "0",
@@ -28230,6 +28230,59 @@
       }
     },
     {
+      "id": "cf795096-3b5f-4d1d-bdbd-c9768f756903",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 7970,
+      "forks": 694,
+      "starsAdded": 6542,
+      "createdAt": "2026-11-16T17:00:03.956Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
+    },
+    {
       "id": "d9c71683-2944-4618-b248-e57ac059ecda",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28237,9 +28290,9 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 195986,
-      "forks": 23008,
-      "starsAdded": 6077,
+      "stars": 196031,
+      "forks": 23011,
+      "starsAdded": 5666,
       "createdAt": "2026-11-15T16:00:03.459Z",
       "metaData": {
         "forks": "0",
@@ -28282,59 +28335,6 @@
           "Agent 架构研究者"
         ],
         "description": "这是一个由 Anthropic 官方维护的开源项目，定义了 Agent Skills 的标准格式。它不仅提供了官方示例，还建立了跨平台的技能生态规范，让 AI Agent 能像装插件一样动态加载和使用专业技能，极大提升了 AI 在复杂任务中的复用性和落地效率。"
-      }
-    },
-    {
-      "id": "cf795096-3b5f-4d1d-bdbd-c9768f756903",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "repo": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 7943,
-      "forks": 693,
-      "starsAdded": 5692,
-      "createdAt": "2026-11-16T17:00:03.956Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://goo.gle/modern-web-guidance",
-        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
-      },
-      "summaryData": {
-        "tags": [
-          "Chrome",
-          "AI 编码代理",
-          "Web 最佳实践",
-          "开源项目",
-          "Agent Skills"
-        ],
-        "cover": "",
-        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
-        "ability": [
-          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
-          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
-          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
-          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
-          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
-        ],
-        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "重度使用 AI 编码代理的前端工程师",
-          "React / Vue / Next.js 项目维护者",
-          "需要统一现代化标准的企业前端团队",
-          "独立开发者与 Vibe Coder",
-          "设计系统与组件库作者"
-        ],
-        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
       }
     },
     {
@@ -28403,6 +28403,120 @@
       }
     },
     {
+      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 16004,
+      "forks": 1390,
+      "starsAdded": 4679,
+      "createdAt": "2026-11-15T16:00:03.926Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
+      "id": "1610eb03-5215-4bf2-b60d-6cb5fa782466",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 72797,
+      "forks": 57666,
+      "starsAdded": 4355,
+      "createdAt": "2026-11-15T16:00:03.899Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ],
+        "license": "MIT license",
+        "homepage": "https://dsa.zhulinsen.tech",
+        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "股票分析",
+          "自动推送",
+          "GitHub Actions",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
+        "ability": [
+          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
+          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
+          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
+          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
+          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
+        ],
+        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
+        "category": [
+          "AI 应用",
+          "金融投资",
+          "开发工具"
+        ],
+        "suitable": [
+          "想自动盯盘、省去每日复盘麻烦的个人投资者",
+          "持有A股与海外股票混合配置的全球投资者",
+          "想学习 LLM 工程化落地的开发者",
+          "希望零成本搭建自动化信息推送的小白用户",
+          "对开源金融 AI 工具感兴趣的技术爱好者"
+        ],
+        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
+      }
+    },
+    {
       "id": "d817fb7a-d1fe-4c47-bf8f-419adda30e0b",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28410,9 +28524,9 @@
       "repo": "google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars": 20325,
-      "forks": 1504,
-      "starsAdded": 5060,
+      "stars": 20360,
+      "forks": 1505,
+      "starsAdded": 4249,
       "createdAt": "2026-11-15T16:00:03.942Z",
       "metaData": {
         "forks": "0",
@@ -28473,173 +28587,6 @@
       }
     },
     {
-      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 15976,
-      "forks": 1391,
-      "starsAdded": 4556,
-      "createdAt": "2026-11-15T16:00:03.926Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
-      "id": "1610eb03-5215-4bf2-b60d-6cb5fa782466",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "repo": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "stars": 72786,
-      "forks": 57667,
-      "starsAdded": 4548,
-      "createdAt": "2026-11-15T16:00:03.899Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "a-stock",
-          "ai-agent",
-          "aigc",
-          "llm",
-          "quant",
-          "quantitative-finance",
-          "quantitative-trading"
-        ],
-        "license": "MIT license",
-        "homepage": "https://dsa.zhulinsen.tech",
-        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. - ZhuLinsen/daily_stock_analysis"
-      },
-      "summaryData": {
-        "tags": [
-          "LLM",
-          "股票分析",
-          "自动推送",
-          "GitHub Actions",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "daily_stock_analysis 深度评测：用 LLM 打造每日自动盯盘的股票分析推送工具",
-        "ability": [
-          "覆盖A股/港股/美股/日股/韩股/台股六大市场的自选股每日自动分析",
-          "生成字段契约化的结构化决策报告（评分、风险警报、利好催化、买卖位）",
-          "多渠道自动推送（企业微信、飞书、Telegram、Discord、Slack、钉钉、邮件等）",
-          "Fork 即部署，GitHub Actions 零服务器成本定时跑批",
-          "Web 工作台 + Agent 策略问股，内置15种策略与 AI 预测回测"
-        ],
-        "summary": "用 LLM 把自选股行情与新闻舆情自动生成结构化决策报告，Fork 即部署、零服务器成本定时推送到手机。",
-        "category": [
-          "AI 应用",
-          "金融投资",
-          "开发工具"
-        ],
-        "suitable": [
-          "想自动盯盘、省去每日复盘麻烦的个人投资者",
-          "持有A股与海外股票混合配置的全球投资者",
-          "想学习 LLM 工程化落地的开发者",
-          "希望零成本搭建自动化信息推送的小白用户",
-          "对开源金融 AI 工具感兴趣的技术爱好者"
-        ],
-        "description": "daily_stock_analysis 是一个 MIT 协议开源 Python 项目，聚合自选股行情、新闻与舆情数据，交由 LLM 生成可扫读的结构化决策仪表盘，并定时推送到企微、飞书、TG 等渠道。数据源与 AI 模型均为插拔式设计，免费额度即可跑通；配套 Web 工作台支持持仓管理、历史报告与预测回测，67,000+ Star 证明了其火爆程度。"
-      }
-    },
-    {
-      "id": "c5f1add6-dfcf-4aa4-9d89-37c57f1881f9",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "repo": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars": 51982,
-      "forks": 3629,
-      "starsAdded": 4217,
-      "createdAt": "2026-11-15T16:00:03.823Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://agent-browser.dev",
-        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Vercel",
-          "AI Agent",
-          "浏览器自动化",
-          "Rust",
-          "Claude Code"
-        ],
-        "cover": "",
-        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
-        "ability": [
-          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
-          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
-          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
-          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
-          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
-        ],
-        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "浏览器自动化"
-        ],
-        "suitable": [
-          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
-          "需要控制 Token 成本的 AI Agent 开发者",
-          "构建自验证（写代码→自测→修复）工作流的工程师",
-          "多 Agent 并行系统构建者",
-          "轻量级网页采集与表单自动化需求者"
-        ],
-        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
-      }
-    },
-    {
       "id": "2dd167a9-1fd3-4fec-bd39-80ada30c7976",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28647,9 +28594,9 @@
       "repo": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 118302,
-      "forks": 12356,
-      "starsAdded": 3889,
+      "stars": 118328,
+      "forks": 12355,
+      "starsAdded": 3960,
       "createdAt": "2026-11-15T16:00:03.960Z",
       "metaData": {
         "forks": "0",
@@ -28700,6 +28647,118 @@
       }
     },
     {
+      "id": "c5f1add6-dfcf-4aa4-9d89-37c57f1881f9",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "repo": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 52008,
+      "forks": 3629,
+      "starsAdded": 3760,
+      "createdAt": "2026-11-15T16:00:03.823Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://agent-browser.dev",
+        "description": "Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Vercel",
+          "AI Agent",
+          "浏览器自动化",
+          "Rust",
+          "Claude Code"
+        ],
+        "cover": "",
+        "title": "Vercel Agent-Browser 深度评测：让 AI Agent 省 80% Token 的浏览器自动化神器",
+        "ability": [
+          "Snapshot+Ref 引用系统，单页快照仅 280 字符，Token 效率是 Playwright MCP 的 5.7 倍",
+          "原生 Rust CLI + 常驻守护进程架构，毫秒级响应且无 Node 运行时依赖",
+          "50+ 命令全家桶：导航交互、截图录制、网络拦截 Mock、React 组件树检查、Web Vitals 分析",
+          "多会话隔离（--session），支持多 Agent 并行操作互不干扰",
+          "一行命令接入 Claude Code/Cursor，支持真实 Chrome 附身与 Browserbase 等云浏览器"
+        ],
+        "summary": "Vercel 用 Rust 打造的 CLI 工具，让 Claude Code 等 AI Agent 高效操控浏览器，Token 消耗直降 80% 以上。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "浏览器自动化"
+        ],
+        "suitable": [
+          "Claude Code / Cursor / Codex 等 AI 编程工具重度用户",
+          "需要控制 Token 成本的 AI Agent 开发者",
+          "构建自验证（写代码→自测→修复）工作流的工程师",
+          "多 Agent 并行系统构建者",
+          "轻量级网页采集与表单自动化需求者"
+        ],
+        "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "639206a1-18b5-4fa1-8ab5-4eb87353103b",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 52917,
+      "forks": 4294,
+      "starsAdded": 3056,
+      "createdAt": "2026-11-16T17:00:04.097Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
       "id": "a1ea9f0d-4995-4d61-9fdb-6fe79245c40d",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28707,9 +28766,9 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 13745,
+      "stars": 13763,
       "forks": 1073,
-      "starsAdded": 2294,
+      "starsAdded": 2352,
       "createdAt": "2026-11-16T17:00:04.101Z",
       "metaData": {
         "forks": "0",
@@ -28769,122 +28828,6 @@
       }
     },
     {
-      "id": "639206a1-18b5-4fa1-8ab5-4eb87353103b",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 52880,
-      "forks": 4293,
-      "starsAdded": 2238,
-      "createdAt": "2026-11-16T17:00:04.097Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
-      },
-      "summaryData": {
-        "tags": [
-          "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
-        ],
-        "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
-        "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
-        ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "DevOps"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
-        ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
-      }
-    },
-    {
-      "id": "30f3a02b-3081-49a7-96a6-4479a64790f1",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "repo": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "stars": 18174,
-      "forks": 2206,
-      "starsAdded": 1922,
-      "createdAt": "2026-11-15T16:00:03.958Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "mujoco",
-          "physics",
-          "robotics"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://mujoco.org",
-        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
-      },
-      "summaryData": {
-        "tags": [
-          "物理引擎",
-          "机器人仿真",
-          "强化学习",
-          "开源项目",
-          "DeepMind"
-        ],
-        "cover": "",
-        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
-        "ability": [
-          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
-          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
-          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
-          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
-          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
-        ],
-        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
-        "category": [
-          "开发工具",
-          "AI 与机器学习",
-          "科研工具"
-        ],
-        "suitable": [
-          "强化学习/机器人学研究者",
-          "具身智能与 VLA 大模型工程师",
-          "Sim2Real 落地工程师",
-          "生物力学/康复研究人员",
-          "机械臂与硬件初创团队"
-        ],
-        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
-      }
-    },
-    {
       "id": "358cfdbe-1dd7-46a4-bff6-b47c2e9f3f68",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28892,9 +28835,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12489,
-      "forks": 1224,
-      "starsAdded": 1719,
+      "stars": 12536,
+      "forks": 1228,
+      "starsAdded": 2325,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
         "forks": "0",
@@ -28954,9 +28897,9 @@
       "repo": "QwenLM/qwen-code",
       "description": "An open-source AI coding agent that lives in your terminal.",
       "language": "TypeScript",
-      "stars": 30627,
-      "forks": 3546,
-      "starsAdded": 1469,
+      "stars": 30642,
+      "forks": 3547,
+      "starsAdded": 1497,
       "createdAt": "2026-11-16T17:00:04.103Z",
       "metaData": {
         "forks": "0",
@@ -29010,6 +28953,63 @@
           "Agent 二次开发工程师"
         ],
         "description": "Qwen Code 是阿里通义千问团队基于 Gemini CLI fork 并独立演进的开源终端 AI 编程 Agent。框架与模型双开源，支持四大协议接入任意模型，功能堆栈对标 Claude Code，中文体验和 IM 集成是其独特优势。SWE-bench 自测约 77%，真实体验略逊 Claude 但远超预期；免费 OAuth 已于 2026 年 4 月停服，需付费订阅或自带 API Key。"
+      }
+    },
+    {
+      "id": "30f3a02b-3081-49a7-96a6-4479a64790f1",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "repo": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 18179,
+      "forks": 2203,
+      "starsAdded": 1448,
+      "createdAt": "2026-11-15T16:00:03.958Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "mujoco",
+          "physics",
+          "robotics"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://mujoco.org",
+        "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator. - google-deepmind/mujoco"
+      },
+      "summaryData": {
+        "tags": [
+          "物理引擎",
+          "机器人仿真",
+          "强化学习",
+          "开源项目",
+          "DeepMind"
+        ],
+        "cover": "",
+        "title": "MuJoCo 深度评测：DeepMind 开源的物理仿真天花板",
+        "ability": [
+          "高精度接触动力学仿真，软接触模型解决抓取、灵巧手等场景的抖动穿模问题",
+          "MJX/MJWarp 支持 GPU 加速，吞吐量最高可达 313 倍提速",
+          "MJCF 建模语言支持肌肉、肌腱、传感器等高级特性，可用 Python 程序化建模",
+          "pip 一行安装，零依赖零驱动，Mac/Linux/Windows 全平台可用",
+          "丰富的 sim2real 生态，配合 Playground 可实现训练到真机部署一站式流程"
+        ],
+        "summary": "被 Google DeepMind 收购并全面开源的机器人物理仿真引擎，学术界公认的接触动力学金标准，一行 pip 命令即可在自己电脑上运行。",
+        "category": [
+          "开发工具",
+          "AI 与机器学习",
+          "科研工具"
+        ],
+        "suitable": [
+          "强化学习/机器人学研究者",
+          "具身智能与 VLA 大模型工程师",
+          "Sim2Real 落地工程师",
+          "生物力学/康复研究人员",
+          "机械臂与硬件初创团队"
+        ],
+        "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
       }
     }
   ]
