@@ -110675,8 +110675,8 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 318977,
-      "forks": 28436,
+      "stars": 319012,
+      "forks": 28443,
       "starsAdded": 1905,
       "createdAt": "2026-11-17T11:00:02.167Z",
       "metaData": {
@@ -110737,7 +110737,7 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 28670,
+      "stars": 28686,
       "forks": 2608,
       "starsAdded": 1776,
       "createdAt": "2026-11-16T16:00:02.107Z",
@@ -110811,7 +110811,7 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 19779,
+      "stars": 19807,
       "forks": 2048,
       "starsAdded": 1444,
       "createdAt": "2026-11-16T16:00:02.075Z",
@@ -110863,6 +110863,62 @@
       }
     },
     {
+      "id": "b71c2008-ab3e-4bf2-8383-c55dd9d7cec1",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "repo": "google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 2285,
+      "forks": 332,
+      "starsAdded": 1175,
+      "createdAt": "2026-11-16T16:00:02.191Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-research-assistant",
+          "multi-agent-systems"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://yiwen-song.github.io/paper_orchestra/",
+        "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing. - google-research/paper-orchestra"
+      },
+      "summaryData": {
+        "tags": [
+          "Google开源",
+          "多智能体Agent",
+          "论文写作",
+          "学术科研",
+          "PaperWritingBench"
+        ],
+        "cover": "",
+        "title": "PaperOrchestra 深度评测：Google 开源的多智能体论文写作框架",
+        "ability": [
+          "五 Agent 协作完成大纲、绘图、文献、写作、评审全流程",
+          "自动生成 45+ 条经 Semantic Scholar 验证的真实引用，杜绝幻觉引用",
+          "内置 PaperBanana 自动生成统计图与概念示意图",
+          "模拟同行评审并迭代修订，支持评分回退机制",
+          "适配 CVPR/ICLR 等 LaTeX 模板，无需本地 GPU"
+        ],
+        "summary": "Google 开源的多智能体论文写作框架，40 分钟把散乱实验日志变成带真实引用的会议级论文初稿",
+        "category": [
+          "AI 工具",
+          "开源项目",
+          "学术科研"
+        ],
+        "suitable": [
+          "临近 DDL 需要赶论文的研究生和博后",
+          "写 Related Work 到崩溃的科研人员",
+          "需要多会议投稿切换格式的学者",
+          "想学多智能体架构的 Agent 工程师",
+          "科研团队负责人（预评审稿件）"
+        ],
+        "description": "PaperOrchestra 是 Google Cloud AI Research 于 2026 年 4 月开源的多智能体框架，专门接管论文写作的最后一公里。用户只需提供 idea 简述和实验日志，五个分工明确的 Agent 即可并行完成提纲、绘图、文献检索、正文写作和模拟评审，约 40 分钟输出带 45+ 条真实可核验引用、能编译通过的会议 LaTeX 手稿。 Apache 2.0 协议可商用，但需自备 API Key，且不含官方支持承诺。"
+      }
+    },
+    {
       "id": "7da1a103-1c62-45e8-b2ca-b7ee07d38177",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -110870,8 +110926,8 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 8207,
-      "forks": 1267,
+      "stars": 8311,
+      "forks": 1271,
       "starsAdded": 1007,
       "createdAt": "2026-11-16T20:00:02.166Z",
       "metaData": {
@@ -110930,6 +110986,67 @@
           "Agent 技能开发与 Prompt 工程师"
         ],
         "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
+      }
+    },
+    {
+      "id": "cdbd71fc-9879-4038-a430-72b9b8f29263",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/affaan-m/ECC",
+      "repo": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 305067,
+      "forks": 44923,
+      "starsAdded": 902,
+      "createdAt": "2026-11-17T11:00:02.178Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ecc.tools",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
+      },
+      "summaryData": {
+        "tags": [
+          "AI",
+          "编程",
+          "自动化",
+          "安全",
+          "开源"
+        ],
+        "cover": "",
+        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
+        "ability": [
+          "跨平台统一配置",
+          "内置工程化工作流",
+          "自动化安全扫描",
+          "模块化技能库",
+          "会话记忆机制"
+        ],
+        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "效率工具"
+        ],
+        "suitable": [
+          "专业开发团队",
+          "AI 工具重度用户",
+          "开源项目维护者",
+          "企业技术负责人"
+        ],
+        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
       }
     },
     {
@@ -111120,6 +111237,80 @@
       }
     },
     {
+      "id": "cc83971e-6810-45ea-ac0e-6b0dd6a6bee8",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 68626,
+      "forks": 6111,
+      "starsAdded": 772,
+      "createdAt": "2026-11-16T16:00:02.175Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
       "id": "0aa5bee6-b7c6-423d-b4db-cf9d6b1d3d24",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -111127,8 +111318,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 53406,
-      "forks": 4386,
+      "stars": 53436,
+      "forks": 4390,
       "starsAdded": 764,
       "createdAt": "2026-11-16T16:00:02.186Z",
       "metaData": {
@@ -111179,67 +111370,6 @@
       }
     },
     {
-      "id": "cdbd71fc-9879-4038-a430-72b9b8f29263",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/affaan-m/ECC",
-      "repo": "affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars": 305023,
-      "forks": 44919,
-      "starsAdded": 718,
-      "createdAt": "2026-11-17T11:00:02.178Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agents",
-          "anthropic",
-          "claude",
-          "claude-code",
-          "developer-tools",
-          "llm",
-          "mcp",
-          "productivity"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ecc.tools",
-        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. - affaan-m/ECC"
-      },
-      "summaryData": {
-        "tags": [
-          "AI",
-          "编程",
-          "自动化",
-          "安全",
-          "开源"
-        ],
-        "cover": "",
-        "title": "ECC（Everything Claude Code）：AI 编程代理的“操作系统”深度评测",
-        "ability": [
-          "跨平台统一配置",
-          "内置工程化工作流",
-          "自动化安全扫描",
-          "模块化技能库",
-          "会话记忆机制"
-        ],
-        "summary": "ECC 是一套让 AI 编程助手像资深工程师一样工作的配置与工作流系统。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "效率工具"
-        ],
-        "suitable": [
-          "专业开发团队",
-          "AI 工具重度用户",
-          "开源项目维护者",
-          "企业技术负责人"
-        ],
-        "description": "ECC 是一个开源的跨平台配置框架，通过预定义的 Agents、Skills 和 Hooks，规范 AI 编程助手的行为。它强制执行计划、测试、审查、记忆的工程循环，显著提升代码质量与安全性，适用于生产环境。"
-      }
-    },
-    {
       "id": "702e2626-9a3a-44ca-a3aa-aba430775377",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -111247,8 +111377,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 12896,
-      "forks": 1293,
+      "stars": 12915,
+      "forks": 1294,
       "starsAdded": 691,
       "createdAt": "2026-11-16T16:00:02.089Z",
       "metaData": {
@@ -111302,6 +111432,71 @@
       }
     },
     {
+      "id": "f7cb8661-1880-4b52-a437-bdcaac7f3615",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "repo": "getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 9088,
+      "forks": 483,
+      "starsAdded": 654,
+      "createdAt": "2026-11-16T16:00:02.149Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compose",
+          "container-management",
+          "containers",
+          "docker",
+          "docker-compose",
+          "docker-management",
+          "go",
+          "self-hosted",
+          "sveltekit",
+          "typescript",
+          "web-ui"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://getarcane.app",
+        "description": "Modern Docker Management, Designed for Everyone. Contribute to getarcaneapp/arcane development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Docker",
+          "Portainer替代",
+          "自托管",
+          "Homelab",
+          "开源面板"
+        ],
+        "cover": "",
+        "title": "Arcane 深度评测：免费开源的现代 Docker 管理面板，Portainer 平替首选",
+        "ability": [
+          "一站式管理容器、镜像、卷、网络与 Compose 项目",
+          "内置带依赖检查的 Cron 容器自动更新，可替代 Watchtower",
+          "免费不限节点的 RBAC 权限控制与 OIDC 单点登录",
+          "GitOps 自动部署 + Webhook 对接 CI/CD 流水线",
+          "内置 Trivy 镜像漏洞扫描与后量子签名等安全能力"
+        ],
+        "summary": "一个用 Go + SvelteKit 打造的开源 Docker 管理面板，把 Portainer 付费版才有的 RBAC、OIDC、Trivy 扫描等功能全部免费开放。",
+        "category": [
+          "开发工具",
+          "运维部署",
+          "开源项目"
+        ],
+        "suitable": [
+          "Homelab 自托管玩家",
+          "中小团队运维工程师",
+          "想从 Portainer / Dockge 迁移的用户",
+          "需要自动化部署的开发者",
+          "安全敏感的自托管爱好者"
+        ],
+        "description": "Arcane 是基于 Go + SvelteKit 的开源 Docker 管理面板，空闲内存仅约 67MB。它将 Portainer 付费墙内的 RBAC、OIDC、Trivy 扫描、GitOps、多主机 Agent 管理全部免费开放，并内置可替代 Watchtower 的容器自动更新。项目年轻、迭代快，曾有三个月三条 CVE 的记录，建议内网使用、紧跟版本升级。"
+      }
+    },
+    {
       "id": "6baec40c-6c61-4689-921e-f1b1fa05a185",
       "dateAdded": "20261117",
       "type": "github-daily",
@@ -111309,8 +111504,8 @@
       "repo": "Tencent/LoopForge",
       "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "language": "Go",
-      "stars": 2815,
-      "forks": 408,
+      "stars": 2850,
+      "forks": 415,
       "starsAdded": 590,
       "createdAt": "2026-11-17T11:00:02.151Z",
       "metaData": {
@@ -111373,6 +111568,63 @@
           "腾讯云生态用户（可搭配 tcmcp 工具接入云资源）"
         ],
         "description": "LoopForge 是腾讯轻量云团队基于内部 20+ 业务、月均交付 200+ 需求的实践经验开源的多 Agent 工作流编排层（MIT 协议）。它不直接写代码，而是让 AI 编程助手先澄清需求再动手、由独立 Agent 交叉评审、跑过测试才算完成，每步证据落盘留痕。适合被 Vibe Coding '假装完成'坑过的团队，但轻量补全场景下仪式感偏重。"
+      }
+    },
+    {
+      "id": "9e671853-03a2-477e-8223-00fc38faa7ef",
+      "dateAdded": "20261117",
+      "type": "github-daily",
+      "url": "https://github.com/sveltejs/svelte",
+      "repo": "sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 89313,
+      "forks": 6180,
+      "starsAdded": 533,
+      "createdAt": "2026-11-16T16:00:02.214Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "compiler",
+          "template",
+          "ui"
+        ],
+        "license": "MIT license",
+        "homepage": "https://svelte.dev",
+        "description": "web development for the rest of us. Contribute to sveltejs/svelte development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Svelte",
+          "前端框架",
+          "编译器",
+          "响应式",
+          "JavaScript"
+        ],
+        "cover": "",
+        "title": "Svelte 深度评测：把框架做成编译器的优雅豪赌",
+        "ability": [
+          "编译器架构，构建时生成无运行时负担的原生 JS",
+          "Runes 响应式系统（$state/$derived/$effect），细粒度精准更新",
+          "产物体积极小（中型应用约 22KB），渲染性能优于 React/Vue",
+          "SvelteKit 全栈方案，支持 SSR/SSG/SPA 多种渲染模式",
+          "接近原生 HTML/CSS/JS 的写法，学习曲线平缓"
+        ],
+        "summary": "Svelte 是一个无虚拟 DOM 的编译器型前端框架，用更少的代码写出更快更轻的应用。",
+        "category": [
+          "开发工具",
+          "前端框架",
+          "开源项目"
+        ],
+        "suitable": [
+          "个人/独立开发者",
+          "前端新手入门",
+          "内容站/营销页/文档站团队",
+          "追求极致性能的产品团队",
+          "想减负转型的 React 工程师"
+        ],
+        "description": "Svelte 把响应式框架做成了编译器：放弃虚拟 DOM，在构建阶段将声明式代码编译为直接操作 DOM 的原生 JS，浏览器无需背负运行时税。Svelte 5 引入 Runes 信号系统重写响应式，兼顾轻量、性能与开发体验。GitHub 88.8k Star，被 Apple、Spotify 等采用，但生态与招聘市场仍不及 React。"
       }
     },
     {
@@ -111457,8 +111709,8 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 9930,
-      "forks": 1298,
+      "stars": 9942,
+      "forks": 1299,
       "starsAdded": 350,
       "createdAt": "2026-11-16T16:00:02.169Z",
       "metaData": {
@@ -111500,62 +111752,6 @@
           "希望打通设计到代码工作流的小型团队"
         ],
         "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
-      }
-    },
-    {
-      "id": "b71c2008-ab3e-4bf2-8383-c55dd9d7cec1",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/google-research/paper-orchestra",
-      "repo": "google-research/paper-orchestra",
-      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "language": "Python",
-      "stars": 2195,
-      "forks": 328,
-      "starsAdded": 313,
-      "createdAt": "2026-11-16T16:00:02.191Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-research-assistant",
-          "multi-agent-systems"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://yiwen-song.github.io/paper_orchestra/",
-        "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing. - google-research/paper-orchestra"
-      },
-      "summaryData": {
-        "tags": [
-          "Google开源",
-          "多智能体Agent",
-          "论文写作",
-          "学术科研",
-          "PaperWritingBench"
-        ],
-        "cover": "",
-        "title": "PaperOrchestra 深度评测：Google 开源的多智能体论文写作框架",
-        "ability": [
-          "五 Agent 协作完成大纲、绘图、文献、写作、评审全流程",
-          "自动生成 45+ 条经 Semantic Scholar 验证的真实引用，杜绝幻觉引用",
-          "内置 PaperBanana 自动生成统计图与概念示意图",
-          "模拟同行评审并迭代修订，支持评分回退机制",
-          "适配 CVPR/ICLR 等 LaTeX 模板，无需本地 GPU"
-        ],
-        "summary": "Google 开源的多智能体论文写作框架，40 分钟把散乱实验日志变成带真实引用的会议级论文初稿",
-        "category": [
-          "AI 工具",
-          "开源项目",
-          "学术科研"
-        ],
-        "suitable": [
-          "临近 DDL 需要赶论文的研究生和博后",
-          "写 Related Work 到崩溃的科研人员",
-          "需要多会议投稿切换格式的学者",
-          "想学多智能体架构的 Agent 工程师",
-          "科研团队负责人（预评审稿件）"
-        ],
-        "description": "PaperOrchestra 是 Google Cloud AI Research 于 2026 年 4 月开源的多智能体框架，专门接管论文写作的最后一公里。用户只需提供 idea 简述和实验日志，五个分工明确的 Agent 即可并行完成提纲、绘图、文献检索、正文写作和模拟评审，约 40 分钟输出带 45+ 条真实可核验引用、能编译通过的会议 LaTeX 手稿。 Apache 2.0 协议可商用，但需自备 API Key，且不含官方支持承诺。"
       }
     },
     {
@@ -111630,8 +111826,8 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 16749,
-      "forks": 1799,
+      "stars": 16761,
+      "forks": 1800,
       "starsAdded": 196,
       "createdAt": "2026-11-17T11:00:02.165Z",
       "metaData": {
@@ -111657,8 +111853,8 @@
       "repo": "jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 65679,
-      "forks": 8620,
+      "stars": 65700,
+      "forks": 8622,
       "starsAdded": 188,
       "createdAt": "2026-11-17T11:00:02.181Z",
       "metaData": {
@@ -111703,202 +111899,6 @@
           "大模型技术爱好者"
         ],
         "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
-      }
-    },
-    {
-      "id": "cc83971e-6810-45ea-ac0e-6b0dd6a6bee8",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "repo": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 68591,
-      "forks": 6110,
-      "starsAdded": 135,
-      "createdAt": "2026-11-16T16:00:02.175Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-prompts",
-          "ai-skill",
-          "bluesky",
-          "claude",
-          "claude-code",
-          "clawhub",
-          "deep-research",
-          "hackernews",
-          "instagram",
-          "openclaw",
-          "polymarket",
-          "recency",
-          "reddit",
-          "research",
-          "social-media",
-          "tiktok",
-          "trends",
-          "twitter",
-          "web-search",
-          "youtube"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "AI Agent",
-          "舆情分析",
-          "信息搜集",
-          "Claude Skill"
-        ],
-        "cover": "",
-        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
-        "ability": [
-          "多源实时聚合",
-          "AI生成带引用简报",
-          "真实参与度排序",
-          "多AI平台集成",
-          "本地隐私保护"
-        ],
-        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
-        "category": [
-          "AI工具",
-          "信息聚合",
-          "效率工具"
-        ],
-        "suitable": [
-          "内容创作者",
-          "投资人",
-          "产品经理",
-          "开发者",
-          "科技爱好者"
-        ],
-        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
-      }
-    },
-    {
-      "id": "9e671853-03a2-477e-8223-00fc38faa7ef",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/sveltejs/svelte",
-      "repo": "sveltejs/svelte",
-      "description": "web development for the rest of us",
-      "language": "JavaScript",
-      "stars": 89263,
-      "forks": 6163,
-      "starsAdded": 115,
-      "createdAt": "2026-11-16T16:00:02.214Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "compiler",
-          "template",
-          "ui"
-        ],
-        "license": "MIT license",
-        "homepage": "https://svelte.dev",
-        "description": "web development for the rest of us. Contribute to sveltejs/svelte development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Svelte",
-          "前端框架",
-          "编译器",
-          "响应式",
-          "JavaScript"
-        ],
-        "cover": "",
-        "title": "Svelte 深度评测：把框架做成编译器的优雅豪赌",
-        "ability": [
-          "编译器架构，构建时生成无运行时负担的原生 JS",
-          "Runes 响应式系统（$state/$derived/$effect），细粒度精准更新",
-          "产物体积极小（中型应用约 22KB），渲染性能优于 React/Vue",
-          "SvelteKit 全栈方案，支持 SSR/SSG/SPA 多种渲染模式",
-          "接近原生 HTML/CSS/JS 的写法，学习曲线平缓"
-        ],
-        "summary": "Svelte 是一个无虚拟 DOM 的编译器型前端框架，用更少的代码写出更快更轻的应用。",
-        "category": [
-          "开发工具",
-          "前端框架",
-          "开源项目"
-        ],
-        "suitable": [
-          "个人/独立开发者",
-          "前端新手入门",
-          "内容站/营销页/文档站团队",
-          "追求极致性能的产品团队",
-          "想减负转型的 React 工程师"
-        ],
-        "description": "Svelte 把响应式框架做成了编译器：放弃虚拟 DOM，在构建阶段将声明式代码编译为直接操作 DOM 的原生 JS，浏览器无需背负运行时税。Svelte 5 引入 Runes 信号系统重写响应式，兼顾轻量、性能与开发体验。GitHub 88.8k Star，被 Apple、Spotify 等采用，但生态与招聘市场仍不及 React。"
-      }
-    },
-    {
-      "id": "f7cb8661-1880-4b52-a437-bdcaac7f3615",
-      "dateAdded": "20261117",
-      "type": "github-daily",
-      "url": "https://github.com/getarcaneapp/arcane",
-      "repo": "getarcaneapp/arcane",
-      "description": "Modern Docker Management, Designed for Everyone",
-      "language": "Go",
-      "stars": 9072,
-      "forks": 483,
-      "starsAdded": 46,
-      "createdAt": "2026-11-16T16:00:02.149Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "compose",
-          "container-management",
-          "containers",
-          "docker",
-          "docker-compose",
-          "docker-management",
-          "go",
-          "self-hosted",
-          "sveltekit",
-          "typescript",
-          "web-ui"
-        ],
-        "license": "BSD-3-Clause license",
-        "homepage": "https://getarcane.app",
-        "description": "Modern Docker Management, Designed for Everyone. Contribute to getarcaneapp/arcane development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Docker",
-          "Portainer替代",
-          "自托管",
-          "Homelab",
-          "开源面板"
-        ],
-        "cover": "",
-        "title": "Arcane 深度评测：免费开源的现代 Docker 管理面板，Portainer 平替首选",
-        "ability": [
-          "一站式管理容器、镜像、卷、网络与 Compose 项目",
-          "内置带依赖检查的 Cron 容器自动更新，可替代 Watchtower",
-          "免费不限节点的 RBAC 权限控制与 OIDC 单点登录",
-          "GitOps 自动部署 + Webhook 对接 CI/CD 流水线",
-          "内置 Trivy 镜像漏洞扫描与后量子签名等安全能力"
-        ],
-        "summary": "一个用 Go + SvelteKit 打造的开源 Docker 管理面板，把 Portainer 付费版才有的 RBAC、OIDC、Trivy 扫描等功能全部免费开放。",
-        "category": [
-          "开发工具",
-          "运维部署",
-          "开源项目"
-        ],
-        "suitable": [
-          "Homelab 自托管玩家",
-          "中小团队运维工程师",
-          "想从 Portainer / Dockge 迁移的用户",
-          "需要自动化部署的开发者",
-          "安全敏感的自托管爱好者"
-        ],
-        "description": "Arcane 是基于 Go + SvelteKit 的开源 Docker 管理面板，空闲内存仅约 67MB。它将 Portainer 付费墙内的 RBAC、OIDC、Trivy 扫描、GitOps、多主机 Agent 管理全部免费开放，并内置可替代 Watchtower 的容器自动更新。项目年轻、迭代快，曾有三个月三条 CVE 的记录，建议内网使用、紧跟版本升级。"
       }
     }
   ]
