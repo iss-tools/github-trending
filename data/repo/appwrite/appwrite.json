@@ -1,0 +1,75 @@
+{
+  "id": "d2131f17-aab6-4032-93ad-a2c4a66f7943",
+  "url": "https://github.com/appwrite/appwrite",
+  "domain": "github.com",
+  "repo": "appwrite/appwrite",
+  "description": "Appwrite 是 GitHub 5 万+ Star 的开源后端即服务（BaaS）平台，把认证、数据库、存储、云函数、消息和托管打包成一套 API，一条 Docker 命令即可自部署。短板是不支持 SQL 复杂查询、数据迁出成本高，更适合应用型后端而非数据型后端。",
+  "language": null,
+  "stars": 0,
+  "forks": 0,
+  "createdAt": "2026-11-18T11:09:34.031Z",
+  "metaData": {
+    "forks": "0",
+    "stars": "0",
+    "topics": [
+      "android",
+      "appwrite",
+      "backend",
+      "backend-as-a-service",
+      "docker",
+      "firebase",
+      "firewall",
+      "flutter",
+      "hosting",
+      "ios",
+      "javascript",
+      "nextjs",
+      "react",
+      "react-native",
+      "reactnative",
+      "self-hosted",
+      "selfhosted",
+      "supabase",
+      "swift",
+      "web"
+    ],
+    "license": "BSD-3-Clause license",
+    "homepage": "https://appwrite.io",
+    "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more - appwrite/appwrite"
+  },
+  "summaryData": {
+    "tags": [
+      "BaaS",
+      "开源",
+      "Appwrite",
+      "后端即服务",
+      "Firebase替代"
+    ],
+    "cover": "",
+    "title": "Appwrite 深度评测：开源后端即服务的“全家桶”，到底值不值得押上生产环境？",
+    "ability": [
+      "一站式后端：认证、数据库、存储、云函数、消息推送、前端托管全覆盖",
+      "一条 Docker 命令即可自部署，数据合规可控（支持 GDPR/SOC2/HIPAA）",
+      "全平台 SDK：Web、Flutter、iOS、Android、React Native 乃至 Unity",
+      "原生 MCP 集成，Cursor/Claude 等 AI 编码代理可直接操作真实项目",
+      "资源级权限模型 + 全平台实时事件订阅"
+    ],
+    "summary": "开源后端即服务平台，一套 API 搞定登录、数据库、存储、云函数和托管部署",
+    "category": [
+      "开发工具",
+      "开源项目",
+      "云服务"
+    ],
+    "suitable": [
+      "想快速上线 MVP 的独立开发者与小团队",
+      "Flutter / React Native 跨端应用团队",
+      "有数据合规与自部署需求的企业",
+      "用 Cursor/Claude 做 Vibe Coding 的开发者",
+      "想摆脱 Firebase 高额账单的初创公司"
+    ],
+    "description": "Appwrite 是 GitHub 5 万+ Star 的开源后端即服务（BaaS）平台，把认证、数据库、存储、云函数、消息和托管打包成一套 API，一条 Docker 命令即可自部署。短板是不支持 SQL 复杂查询、数据迁出成本高，更适合应用型后端而非数据型后端。"
+  },
+  "contentDetail": "# Appwrite 深度评测：开源后端即服务的\"全家桶\"，到底值不值得押上生产环境？\n> 评测对象：[github.com/appwrite/appwrite](https://github.com/appwrite/appwrite)\n> 评测时间：2026 年 11 月\n> 一句话画像：**一个把 Auth、数据库、存储、函数、托管、消息、实时通信全部装进同一套 API 的开源后端即服务（BaaS）平台，2025 年后进一步把自己重定位为\"AI Agent 时代的原生云\"。**\n如果你正在 Firebase 的按调用计费里被\"成功税\"反复刺伤，或在 Supabase 的 RLS 策略里写到手软，Appwrite 是目前最值得认真评估的第三条路——**前提是您的应用是\"前端/移动端为主、数据模型不过度依赖 SQL\"那种**。下面为您把它拆开看。\n---\n## 一、背景与痛点：它为什么要诞生\nAppwrite 由以色列工程师 **Eldad Fux** 在 2019 年创立，最初就瞄准了一个非常具体的痛点：开发者既想要 Firebase 那种\"开箱即用\"的速度，又受不了它的黑盒、按操作计费和厂商锁定。\n那一年前后，围绕\"后端是否还要自己写\"这件事，整个行业其实陷入了三难：\n- **Firebase / AWS Amplify**：上手极快，但闭源、计费不可预测、数据搬不走；\n- **自建后端**：可控、便宜，但 Auth、文件、推送、WebSocket 这些\"非业务\"代码要全部自己重写一遍；\n- **传统 PaaS（Heroku 等）**：解决不了\"业务后端 API\"这一层。\nAppwrite 的解法很有意思：**它不是把数据库包成 API，而是把\"一整套现代应用的通用后端能力\"打包成 API**。在 2025 年之后，它又叠加了一层新叙事——通过原生 MCP（Model Context Protocol）让 Cursor、Claude Code、Codex 这些 AI 编码代理能直接操作一个真实的 Appwrite 项目，把自己重新定位为\"agent-first cloud\"。\n到 2025 年，它的成绩单大致是：**GitHub Stars 超过 52k，Cloud 用户 12 万+，社区贡献者 800+，9 天以上发版节奏，累计 900+ 个版本迭代**。在开源 BaaS 这个细分里，它已经是 Star 数第一的项目。\n---\n## 二、技术架构与核心能力：18 个 Docker 容器怎么咬合\n### 2.1 架构设计的精妙之处\nAppwrite 自我描述为 **\"hybrid monolithic-microservice architecture\"（混合型单体-微服务架构）**。这句话背后是一个被很多文章忽略、但决定了它运维体感的关键设计：\n> **对外是一套 API，对内是 18 个独立的 Docker 容器。**\n每个微服务（Auth、Databases、Storage、Functions、Messaging、Realtime 等）独立容器化、独立扩展，彼此通过 TCP 在私有网络里通信，**只有 80/443 端口对外暴露**。API 层做了内存缓存，把重活全部丢给后台 Worker 队列——这意味着前端一次请求的延迟，与一次批量导出的耗时，是被物理隔离的。\n```mermaid\nflowchart LR\n    subgraph Client[\"客户端层\"]\n        A[Web / Flutter / iOS / Android]\n        B[CLI / SDKs / Terraform]\n        C[AI Agents / MCP / Cursor]\n    end\n    subgraph Edge[\"API 层\"]\n        R[REST]\n        W[Realtime WebSocket]\n        G[GraphQL]\n    end\n    subgraph Core[\"核心服务\"]\n        Auth\n        Dbs[Databases / TablesDB]\n        St[Storage]\n        Fn[Functions]\n        Msg[Messaging]\n        Sites\n    end\n    subgraph Infra[\"底座\"]\n        Cache[(内存缓存)]\n        Queue[[消息队列]]\n        Db[(PostgreSQL / MariaDB / MongoDB)]\n        Run[Open Runtimes 执行器]\n    end\n    Client --> Edge\n    Edge --> Core\n    Core --> Cache\n    Core --> Queue\n    Cache --> Db\n    Queue --> Run\n```\n值得注意的是，Appwrite 在 1.7+ 版本之后允许你在安装时选择底层存储引擎为 **PostgreSQL / MariaDB / MongoDB**，但**装完后不能换**——这一点后面会作为踩坑点单独提。\n### 2.2 模块速览表\n为您把 Appwrite 的产品矩阵拆成一张速查表：\n| 模块 | 解决什么问题 | 类比参照 |\n|---|---|---|\n| **Appwrite Auth** | 邮箱/SMS/OAuth/匿名/Magic Link/MFA | Firebase Auth |\n| **Appwrite TablesDB**（原 Databases） | 表格 + 行 + 关系属性，自带权限模型 | Supabase 表 + RLS |\n| **Appwrite Storage** | 文件存储 + 压缩/加密 + 图片变换 + 访问控制 | S3 + Cloudinary |\n| **Appwrite Functions** | 隔离容器跑 serverless，支持 13+ 运行时 | Cloud Functions / Vercel Functions |\n| **Appwrite Sites** | 静态/SSR 前端托管，Git 推送即上线 | Vercel / Netlify |\n| **Appwrite Messaging** | 邮件 / SMS / Push / WhatsApp / Slack 统一收口 | Novu / OneSignal |\n| **Appwrite Realtime** | 全平台事件 WebSocket 订阅 | Firebase Realtime |\n| **Appwrite Firewall** | 流量规则、防滥用、边缘防护 | Cloudflare |\n| **Appwrite MCP** | 让 Cursor / Claude Code 直接操作项目 | —— 新物种 |\n### 2.3 2025 年的关键变化\n如果只看 2024 年之前的资料会错过几件事：\n- **Databases → TablesDB**：1.8 版本把\"Collection + Document\"改为\"Table + Row\"，并补齐了关系属性和原子数值操作（自增/自减不再有竞态问题），UI 也改成了类表格编辑器；\n- **Sites 服务上线**：补齐前端托管，定位直指 Vercel；\n- **MCP 服务 GA**：托管地址 `mcp.appwrite.io`，OAuth 鉴权、不需要本地管 API key；\n- **2025 年 9 月新定价**：Pro 从 $15 涨到 $25/月，**从\"按席位\"改为\"按项目\"**，带宽从 300GB 提到 2TB（涨幅 566%），超出单价从 $40/100GB 降到 $15/100GB。\n---\n## 三、上手体验与代码示例：从一行命令到一份生产代码\n### 3.1 自部署：一条 Docker 命令\nAppwrite 把\"自部署\"做到了开源 BaaS 里最丝滑的程度。在装好 Docker 的机器上：\n```bash\ndocker run -it --rm \\\n    --publish 127.0.0.1:20080:20080 \\\n    --volume /var/run/docker.sock:/var/run/docker.sock \\\n    --volume \"$(pwd)\"/appwrite:/usr/src/code/appwrite:rw \\\n    --entrypoint=\"install\" \\\n    appwrite/appwrite:2.7.2\n```\n安装向导监听在 `localhost:20080`，并会在终端打印一个**一次性 installer secret**，浏览器打开 URL 即可完成图形化配置。最低硬件门槛低到 **1 CPU + 2GB RAM**，这意味着一台 6 美元/月的 VPS 就能跑起来——这与 Firebase 不可自部署、Supabase 自部署堆栈庞杂形成鲜明对比。\n### 3.2 SDK 体验：一份 Node.js 后端的最小可用示例\nAppwrite 把\"client（前端）\"和\"server（后端）\"SDK 严格分开。下面是一个**服务端创建用户 + 客户端登录 + 写一行数据**的完整闭环，您可以用它对照评估 DX：\n**服务端（node-appwrite）**——初始化 + 创建文档：\n```javascript\nconst sdk = require('node-appwrite');\nconst client = new sdk.Client()\n  .setEndpoint('https://cloud.appwrite.io/v1')\n  .setProject('your-project-id')\n  .setKey('your-api-key');           // 仅服务端持有\nconst tablesDB = new sdk.TablesDB(client);\nconst users = new sdk.Users(client);\n// 创建一行数据（TablesDB 新 API）\nconst row = await tablesDB.createRow({\n  databaseId: 'shop',\n  tableId: 'orders',\n  rowId: sdk.ID.unique(),\n  data: {\n    userId: '665f...abc',\n    amount: 199,\n    status: 'paid',\n  },\n});\n```\n**客户端（appwrite，前端 SDK）**——登录 + 实时订阅：\n```javascript\nimport { Client, Account, Databases } from 'appwrite';\nconst client = new Client()\n  .setEndpoint('https://cloud.appwrite.io/v1')\n  .setProject('your-project-id');\nconst account = new Account(client);\nawait account.createEmailPasswordSession('a@b.com', 'password');\n// 全平台统一的实时订阅\nclient.subscribe('databases.shop.collections.orders.documents', (res) => {\n  console.log('新订单：', res.payload);\n});\n```\n**让 AI Agent 接管**——在 Cursor 的 `mcp.json` 里只需：\n```json\n{\n  \"mcpServers\": {\n    \"appwrite\": {\n      \"url\": \"https://mcp.appwrite.io/\"\n    }\n  }\n}\n```\n之后就可以在 Cursor 里用自然语言创建用户、查表、改数据，无需手动管 key。\n### 3.3 文档与学习曲线\n文档整体质量在开源项目里属于上游，但有两点值得提醒：\n- **API 名称在 1.8 之后有较大变化**（Databases → TablesDB，方法名同步变更），网上大量旧教程会失效，请优先看官方 docs；\n- **自托管和 Cloud 在资源限制上不完全对齐**，例如 Bulk API 在自部署上限是 100 行，Cloud Pro 用户则更高——迁移前请先翻\"Self-hosting\"章节。\n---\n## 四、目标人群与典型场景\n| 人群 | 推荐指数 | 一句话理由 |\n|---|---|---|\n| **独立开发者 / 小团队做 SaaS MVP** | ⭐⭐⭐⭐⭐ | 一套 SDK 替掉 Auth + DB + Storage + 邮件 + Hosting 五家供应商 |\n| **Flutter / React Native 跨端 App** | ⭐⭐⭐⭐⭐ | 移动端 SDK 覆盖是同类里最完整的（连 Unity 都有） |\n| **企业内部工具、需要数据合规** | ⭐⭐⭐⭐ | 自部署 + GDPR/SOC2/HIPAA/CCPA |\n| **AI Agent / Vibe Coding 项目** | ⭐⭐⭐⭐⭐ | MCP 原生集成，Cursor 直接操作真实后端 |\n| **重 SQL 报表、复杂查询的 BI 类系统** | ⭐⭐ | 没有 SQL，复杂查询会很难受 |\n| **需要 Postgres 生态（pgvector、扩展）** | ⭐⭐ | 选 Supabase 更合适 |\n---\n## 五、横向对比：它在 BaaS 三国杀里处于什么位置\n为您把 Appwrite、Supabase、Firebase 三个常被并列讨论的项目做一张客观对比表（价格数据以 2025 年 9 月之后为准）：\n| 维度 | **Appwrite** | **Supabase** | **Firebase** |\n|---|---|---|---|\n| 开源协议 | 开源（可自部署） | 开源（可自部署） | **闭源** |\n| 数据库形态 | 表格 + 行 + 关系（TablesDB API） | **真 Postgres，可写 SQL** | Firestore（NoSQL） |\n| 直接 SQL 访问 | ❌ | ✅ | ❌ |\n| 权限模型 | 资源级权限（用户/团队/标签） | Postgres RLS | Firestore Security Rules |\n| 自部署难度 | **一条 docker 命令** | Docker 全家桶（约 10+ 服务） | 不可自部署 |\n| 移动端 SDK | Flutter / iOS / Android / RN / **Unity** | Flutter / iOS / Android / RN | Flutter / iOS / Android |\n| Serverless 运行时 | 13+ 语言（Node/Python/Dart/Go/Rust...） | 仅 Deno | 仅 Node / Python |\n| 实时能力 | 全平台事件订阅 | Postgres 变更 + Presence | 仅数据库 |\n| 前端托管 | ✅ Sites | ❌ 需第三方 | ✅ Hosting |\n| 消息推送 | ✅ 邮件/SMS/Push/WhatsApp | ❌ | ✅ FCM |\n| MCP / AI 集成 | ✅ 原生 MCP | 第三方 MCP | Vertex AI 生态 |\n| Pro 起步价 | **$25/月**（按项目） | $25/月（按组织） | 按调用计费 |\n| 大流量成本 | 2TB 含在内，超出 $15/100GB | 较低 | 同样流量常 $500+/月 |\n| 锁定程度 | 中（离开需重写 SDK 调用） | **低**（数据是标准 Postgres） | **极高** |\n**一句话给出选择倾向**：\n> **您的应用\"重前端/移动端，业务逻辑不复杂\"→ Appwrite 最舒服；\"重数据库、要写复杂 SQL、需要 pgvector\"→ Supabase 更稳；\"手机端 + 离线同步 + 已经在 Google 生态\"→ Firebase 仍合理。**\n---\n## 六、局限与踩坑：必须坦诚的几件事\n这是评测里最值钱也最容易被官方宣传掩盖的部分，为您按\"严重程度\"排序：\n### 6.1 没有真正的 SQL，复杂查询会痛\nAppwrite 的查询 API 是自家的 Query Operator（`equal`、`greaterThan`、`search`...），不支持 JOIN、子查询、窗口函数、CTE。对于报表、数据分析、复杂权限继承，您得把逻辑搬到 Appwrite Functions 里跑——**这本质上是把数据库的工作转移到了应用层**。\n### 6.2 数据可移植性弱于 Supabase\nAppwrite 的\"开源\"指的是**基础设施可移植**——可以从 Cloud 搬到自部署，因为 API 一致。但**离开 Appwrite 本身**意味着重写 SDK 调用、权限模型、Auth 会话、存储约定。Supabase 的数据是标准 Postgres，`pg_dump` 就能搬走。如果您做的是需要\"数据可被客户带走\"的 ToB 产品，这是一个真实的契约风险。\n### 6.3 数据模型有约束\nProduct Hunt 上真实用户的负反馈很直白：\n> \"Function 开发很慢；数据库数据类型受限；不能在 Auth 用户和文件之间直接建关系。\"\n这些点在 Appwrite 的 Discord / Threads 里也有大量讨论，关系属性目前覆盖\"常见应用模型\"，但**不支持把 Auth 用户直接当作外键关联到文件对象**这种复合场景。\n### 6.4 自部署 ≠ 免费，更 ≠ 简单\nAppwrite 文档自己也承认：自部署意味着您要运维**应用服务 + 数据库 + 存储 + Function 运行时 + TLS + 备份 + 监控 + 升级**这一整套。**18 个容器**意味着版本升级、故障定位、容量规划都是真实的工程活。**如果团队没有 DevOps 经验，官方建议直接上 Cloud**——这是文档原话，不是评测者的调侃。\n### 6.5 自部署与 Cloud 的能力不完全对等\nBulk API 在自部署上限 100 行，Cloud Pro 上限更高；新增的 Sites、Firewall、部分 MCP 能力也是 Cloud 优先。自部署版的\"完整度\"是动态的，升级前请先翻 release notes。\n### 6.6 数据库后端装完就不能换\n安装时选定 PostgreSQL / MariaDB / MongoDB 后**无法切换**。如果您中期想从 MongoDB 切到 Postgres，唯一路径是导出 → 重装 → 导入。这在 1.9.0 版本把默认值从 MariaDB 换成 PostgreSQL 之后，对老用户来说是个潜在的迁移雷区。\n### 6.7 价格上涨与定位转变\n2025 年 9 月起 Pro 从 $15 涨到 $25、按席位改为按项目。对单人开发者影响不大（每人不再额外收 $15），但**多项目团队**成本会上升：每个项目 $15。官方把带宽和 Functions 单价下调作为补偿，但确实意味着\"白菜价时代\"结束了。\n---\n## 七、选型建议与行动路径\n### 7.1 三个明确的\"什么时候选它\"\n- **您一个人/两三个人在做移动 App 或 SaaS，想一周内上线 MVP** → 直接上 Appwrite Cloud Free，体验完整的 Auth + DB + Storage + Functions 闭环；\n- **您的客户要求数据不能出境，或行业要求 SOC2 / HIPAA** → 自部署 Appwrite 是合规路径里最轻的；\n- **您已经在用 Cursor / Claude Code 做 Vibe Coding，希望 AI 直接管后端** → Appwrite 的 MCP 是目前 BaaS 里最完整的，没有之一。\n### 7.2 三个明确的\"什么时候避开它\"\n- **您的项目本质是个 BI / 数据分析平台，复杂查询是日常** → Supabase；\n- **您的团队只有前端工程师，没有 DevOps，但又坚持自部署** → 重新评估 Cloud 方案，或选 Firebase；\n- **您的数据未来可能要被客户或第三方系统直接访问** → Supabase（Postgres 是通用语言，TablesDB API 不是）。\n### 7.3 一条平滑的尝试路径\n1. **第 1 天**：注册 Appwrite Cloud 免费版，用 Quick Start 创建一个 Web 项目，跑通注册登录 + 写一行数据 + 实时订阅；\n2. **第 1 周**：在 Cursor 里接入 `mcp.appwrite.io`，体验\"用自然语言改 schema\"的工作流；\n3. **第 1 个月**：把 Functions、Messaging、Sites 各用一个真实小需求跑一遍，验证 DX 是否符合团队习惯；\n4. **第 1 季度**：如果决定长期用，再评估\"Cloud Pro ($25/月)\" vs \"VPS 自部署 (一台 $10/月 + 运维工时)\"的真实 TCO，而不是只看订阅价。\n---\n## 八、适合人群速查（一句话清单）\n✅ **推荐冲**：独立开发者、Flutter/RN 跨端团队、Vibe Coder、需要合规自部署的企业、想摆脱 Firebase 账单的初创。\n⚠️ **谨慎评估**：重 SQL 报表、需要 Postgres 生态、纯数据中台、多人但无 DevOps 的团队。\n❌ **不建议**：闭源 / 强依赖 Firestore 离线同步的场景、已经有深度 Firebase / Amplify 集成的存量项目。\n---\n**最终评判**：Appwrite 已经从\"Firebase 开源替代品\"进化成了一个产品边界最完整的开源后端平台——在移动端 SDK 覆盖、自部署体验、AI Agent 集成这三件事上，目前是同类里的明显领跑者；它的真实短板在**数据库表达力**和**离开它的迁移成本**，这两点决定了它更适合\"应用型后端\"而不是\"数据型后端\"。把它当成\"一套带权限的现代应用 API\"而不是\"一个数据库\"来评估，结论会清晰很多。",
+  "type": "project",
+  "dateAdded": "20261118"
+}

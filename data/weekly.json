@@ -4889,8 +4889,8 @@
       "starsAdded": 1287,
       "createdAt": "2026-09-01T12:00:04.119Z",
       "metaData": {
-        "forks": "15794",
-        "stars": "94538",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "mcp"
@@ -7721,8 +7721,8 @@
       "starsAdded": 1326,
       "createdAt": "2026-09-06T18:00:04.832Z",
       "metaData": {
-        "forks": "15794",
-        "stars": "94538",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "mcp"
@@ -28114,8 +28114,8 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 30365,
-      "forks": 2370,
+      "stars": 30399,
+      "forks": 2373,
       "starsAdded": 8700,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
@@ -28237,8 +28237,8 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 8619,
-      "forks": 732,
+      "stars": 8654,
+      "forks": 731,
       "starsAdded": 7015,
       "createdAt": "2026-11-16T17:00:03.956Z",
       "metaData": {
@@ -28280,6 +28280,80 @@
           "设计系统与组件库作者"
         ],
         "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
+    },
+    {
+      "id": "7e0aa452-0095-4560-816b-80a4a5f94373",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 29762,
+      "forks": 2660,
+      "starsAdded": 5845,
+      "createdAt": "2026-11-18T11:00:04.508Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
       }
     },
     {
@@ -28355,8 +28429,8 @@
       "repo": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 196956,
-      "forks": 23077,
+      "stars": 196988,
+      "forks": 23080,
       "starsAdded": 4847,
       "createdAt": "2026-11-15T16:00:03.459Z",
       "metaData": {
@@ -28410,7 +28484,7 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 16362,
+      "stars": 16374,
       "forks": 1430,
       "starsAdded": 4786,
       "createdAt": "2026-11-15T16:00:03.926Z",
@@ -28593,8 +28667,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 54050,
-      "forks": 4466,
+      "stars": 54076,
+      "forks": 4469,
       "starsAdded": 3675,
       "createdAt": "2026-11-16T17:00:04.097Z",
       "metaData": {
@@ -28652,8 +28726,8 @@
       "repo": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 73230,
-      "forks": 57848,
+      "stars": 73250,
+      "forks": 57858,
       "starsAdded": 3653,
       "createdAt": "2026-11-15T16:00:03.899Z",
       "metaData": {
@@ -28713,8 +28787,8 @@
       "repo": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 52499,
-      "forks": 3671,
+      "stars": 52519,
+      "forks": 3672,
       "starsAdded": 3429,
       "createdAt": "2026-11-15T16:00:03.823Z",
       "metaData": {
@@ -28766,8 +28840,8 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 6956,
-      "forks": 1419,
+      "stars": 6984,
+      "forks": 1425,
       "starsAdded": 2985,
       "createdAt": "2026-11-17T11:00:03.757Z",
       "metaData": {
@@ -28819,8 +28893,8 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58129,
-      "forks": 4872,
+      "stars": 58142,
+      "forks": 4873,
       "starsAdded": 2948,
       "createdAt": "2026-11-17T11:00:03.755Z",
       "metaData": {
@@ -28881,8 +28955,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 13231,
-      "forks": 1334,
+      "stars": 13256,
+      "forks": 1336,
       "starsAdded": 2926,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
@@ -28936,6 +29010,65 @@
       }
     },
     {
+      "id": "69c51077-b978-46e6-811a-926e2c687677",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 20272,
+      "forks": 2086,
+      "starsAdded": 2773,
+      "createdAt": "2026-11-18T11:00:04.502Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      }
+    },
+    {
       "id": "a1ea9f0d-4995-4d61-9fdb-6fe79245c40d",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28943,7 +29076,7 @@
       "repo": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
-      "stars": 14024,
+      "stars": 14034,
       "forks": 1096,
       "starsAdded": 2531,
       "createdAt": "2026-11-16T17:00:04.101Z",
@@ -29012,8 +29145,8 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 10198,
-      "forks": 1431,
+      "stars": 10355,
+      "forks": 1445,
       "starsAdded": 2508,
       "createdAt": "2026-11-17T11:00:03.749Z",
       "metaData": {
@@ -29072,6 +29205,80 @@
           "Agent 技能开发与 Prompt 工程师"
         ],
         "description": "一套可直接投喂给 Claude Code 的开源安全技能包，含 83 个自动加载的技能文件和 15 条 slash 命令。它将 681 份公开 HackerOne 报告的漏洞利用链模式、24 个 Web 漏洞猎杀手册及企业边界设备 CVE 攻击链内置于 AI，自带 7 问验证门防止误报提交。MIT + CC BY 4.0 双协议，两行命令即可安装。注意：仅覆盖外部攻击面，不含内网 AD、C2 和后渗透。"
+      }
+    },
+    {
+      "id": "6b6ac6fa-fa88-48a5-950c-f0a05b1e074f",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 69566,
+      "forks": 6195,
+      "starsAdded": 1548,
+      "createdAt": "2026-11-18T11:00:04.500Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
       }
     },
     {
@@ -29205,8 +29412,8 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 10250,
-      "forks": 1344,
+      "stars": 10274,
+      "forks": 1347,
       "starsAdded": 1197,
       "createdAt": "2026-11-17T11:00:03.758Z",
       "metaData": {

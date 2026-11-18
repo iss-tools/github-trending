@@ -1,6 +1,327 @@
 {
   "all": [
     {
+      "id": "233864a2-a96e-4e6a-ac1c-dbcac60239c4",
+      "url": "https://github.com/solidjs/solid",
+      "domain": "github.com",
+      "repo": "solidjs/solid",
+      "description": "SolidJS 由 Ryan Carniato 创建，GitHub 35.4K Star。它通过编译器把 JSX 转成真实 DOM 更新指令，配合细粒度响应式系统，做到只有变化的数据才触发对应 UI 更新。State of JS 连续 5 年满意度第一，但生态规模和使用率仍远小于 React，适合新项目和学习响应式思想。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-18T11:17:04.596Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "declarative",
+          "fine-grained",
+          "javascript",
+          "jsx",
+          "performance",
+          "proxies",
+          "reactive",
+          "solid"
+        ],
+        "license": "MIT license",
+        "homepage": "https://solidjs.com",
+        "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces. - solidjs/solid"
+      },
+      "summaryData": {
+        "tags": [
+          "SolidJS",
+          "前端框架",
+          "响应式编程",
+          "JavaScript",
+          "开源"
+        ],
+        "cover": "",
+        "title": "SolidJS 深度评测：连续 5 年满意度第一的反主流前端框架",
+        "ability": [
+          "细粒度响应式：Signals 自动精确依赖追踪，组件函数只运行一次",
+          "编译时优化：JSX 直接编译为原生 DOM 操作，无 Virtual DOM diff",
+          "极致性能与体积：包体积仅 React 的 6.6%（约 9.4 kB），渲染性能顶级",
+          "全栈能力：Solid 2.0 内置 Server Functions、流式 SSR 与渐进式水合",
+          "AI 友好诊断：提供带错误码和修复指引的诊断系统，适合 AI 编程场景"
+        ],
+        "summary": "SolidJS 是一个用编译时优化替代 Virtual DOM、以细粒度响应式为核心的高性能前端框架。",
+        "category": [
+          "前端开发",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "想理解响应式底层原理的 React 开发者",
+          "追求极致性能的项目团队（长列表、可视化、低配设备）",
+          "追求一体化开发体验的全栈/独立开发者",
+          "想打通响应式底层知识的前端学习者",
+          "使用 AI Agent 辅助编码的开发者"
+        ],
+        "description": "SolidJS 由 Ryan Carniato 创建，GitHub 35.4K Star。它通过编译器把 JSX 转成真实 DOM 更新指令，配合细粒度响应式系统，做到只有变化的数据才触发对应 UI 更新。State of JS 连续 5 年满意度第一，但生态规模和使用率仍远小于 React，适合新项目和学习响应式思想。"
+      },
+      "type": "project",
+      "dateAdded": "20261118"
+    },
+    {
+      "id": "9d26f3d9-7775-40f9-9497-68752dc81b05",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "domain": "github.com",
+      "repo": "openvinotoolkit/openvino",
+      "description": "OpenVINO 是 Intel 开源的 AI 推理优化与部署工具链，可将 PyTorch、HuggingFace、ONNX 等框架训练的模型无损转换并加速部署到 Intel CPU、核显、Arc 独显及 Core Ultra NPU。支持 INT8/INT4 量化，覆盖 LLM、多模态、语音全场景，是 AI PC 时代调用 NPU 几乎唯一的成熟方案，但在 NVIDIA GPU 和 AMD 显卡上不占优势。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-18T11:13:36.791Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "computer-vision",
+          "deep-learning",
+          "deploy-ai",
+          "diffusion-models",
+          "generative-ai",
+          "good-first-issue",
+          "inference",
+          "llm-inference",
+          "natural-language-processing",
+          "nlp",
+          "openvino",
+          "optimize-ai",
+          "performance-boost",
+          "recommendation-system",
+          "speech-recognition",
+          "stable-diffusion",
+          "transformers",
+          "yolo"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.openvino.ai",
+        "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference - openvinotoolkit/openvino"
+      },
+      "summaryData": {
+        "tags": [
+          "OpenVINO",
+          "Intel",
+          "推理加速",
+          "边缘部署",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "OpenVINO 深度评测：Intel 生态下最被低估的 AI 推理加速引擎",
+        "ability": [
+          "跨 Intel 硬件统一部署：一份模型通吃 CPU/iGPU/Arc/NPU，无需改代码",
+          "模型格式无损转换：PyTorch/TensorFlow/ONNX/HuggingFace 一键转为 OpenVINO IR",
+          "NNCF 量化压缩：INT8/INT4/SmoothQuant 让模型体积缩至 1/4、性能提升 2-4 倍",
+          "GenAI 高层 API：5 行代码跑通 LLM、文生图、多模态、语音识别",
+          "服务器级部署：OVMS 支持 KServe/Docker，自带 OpenAI 兼容 API"
+        ],
+        "summary": "Intel 开源的一站式 AI 推理加速引擎，让同一份模型在 CPU、核显、Arc 独显和 NPU 上高效运行",
+        "category": [
+          "开发工具",
+          "AI 部署",
+          "深度学习"
+        ],
+        "suitable": [
+          "想调用 Core Ultra NPU 的 AI PC 应用开发者",
+          "需要在工控机/边缘盒子上跑视觉任务的工程师",
+          "已在用 HuggingFace 想白嫖 2-5 倍加速的应用开发者",
+          "做本地私有化 LLM 部署的企业团队",
+          "Intel 硬件上追求极致推理性能的 ML 工程师"
+        ],
+        "description": "OpenVINO 是 Intel 开源的 AI 推理优化与部署工具链，可将 PyTorch、HuggingFace、ONNX 等框架训练的模型无损转换并加速部署到 Intel CPU、核显、Arc 独显及 Core Ultra NPU。支持 INT8/INT4 量化，覆盖 LLM、多模态、语音全场景，是 AI PC 时代调用 NPU 几乎唯一的成熟方案，但在 NVIDIA GPU 和 AMD 显卡上不占优势。"
+      },
+      "type": "project",
+      "dateAdded": "20261118"
+    },
+    {
+      "id": "d2131f17-aab6-4032-93ad-a2c4a66f7943",
+      "url": "https://github.com/appwrite/appwrite",
+      "domain": "github.com",
+      "repo": "appwrite/appwrite",
+      "description": "Appwrite 是 GitHub 5 万+ Star 的开源后端即服务（BaaS）平台，把认证、数据库、存储、云函数、消息和托管打包成一套 API，一条 Docker 命令即可自部署。短板是不支持 SQL 复杂查询、数据迁出成本高，更适合应用型后端而非数据型后端。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-18T11:09:34.031Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "android",
+          "appwrite",
+          "backend",
+          "backend-as-a-service",
+          "docker",
+          "firebase",
+          "firewall",
+          "flutter",
+          "hosting",
+          "ios",
+          "javascript",
+          "nextjs",
+          "react",
+          "react-native",
+          "reactnative",
+          "self-hosted",
+          "selfhosted",
+          "supabase",
+          "swift",
+          "web"
+        ],
+        "license": "BSD-3-Clause license",
+        "homepage": "https://appwrite.io",
+        "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more - appwrite/appwrite"
+      },
+      "summaryData": {
+        "tags": [
+          "BaaS",
+          "开源",
+          "Appwrite",
+          "后端即服务",
+          "Firebase替代"
+        ],
+        "cover": "",
+        "title": "Appwrite 深度评测：开源后端即服务的“全家桶”，到底值不值得押上生产环境？",
+        "ability": [
+          "一站式后端：认证、数据库、存储、云函数、消息推送、前端托管全覆盖",
+          "一条 Docker 命令即可自部署，数据合规可控（支持 GDPR/SOC2/HIPAA）",
+          "全平台 SDK：Web、Flutter、iOS、Android、React Native 乃至 Unity",
+          "原生 MCP 集成，Cursor/Claude 等 AI 编码代理可直接操作真实项目",
+          "资源级权限模型 + 全平台实时事件订阅"
+        ],
+        "summary": "开源后端即服务平台，一套 API 搞定登录、数据库、存储、云函数和托管部署",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "云服务"
+        ],
+        "suitable": [
+          "想快速上线 MVP 的独立开发者与小团队",
+          "Flutter / React Native 跨端应用团队",
+          "有数据合规与自部署需求的企业",
+          "用 Cursor/Claude 做 Vibe Coding 的开发者",
+          "想摆脱 Firebase 高额账单的初创公司"
+        ],
+        "description": "Appwrite 是 GitHub 5 万+ Star 的开源后端即服务（BaaS）平台，把认证、数据库、存储、云函数、消息和托管打包成一套 API，一条 Docker 命令即可自部署。短板是不支持 SQL 复杂查询、数据迁出成本高，更适合应用型后端而非数据型后端。"
+      },
+      "type": "project",
+      "dateAdded": "20261118"
+    },
+    {
+      "id": "59524bb0-dfd0-4b81-85d4-b072b3f4632d",
+      "url": "https://github.com/jquery/jquery",
+      "domain": "github.com",
+      "repo": "jquery/jquery",
+      "description": "jQuery 是 2006 年诞生的 JavaScript DOM 操作库，凭『选择器 + 链式调用 + 跨浏览器兼容』三件套改写了前端史，至今仍跑在 64.3% 的网站上。2026 年发布 4.0 大版本完成现代化改造（支持 ES Modules、瘦身到 19.5KB）。它虽不再是新项目首选，但作为祖传代码的命脉、WordPress 生态的核心、以及理解 React/Vue 等现代框架演进逻辑的最佳标本，依然值得每个前端工程师认真读一遍。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-18T11:06:49.581Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "jquery"
+        ],
+        "license": "MIT license",
+        "homepage": "https://jquery.com",
+        "description": "jQuery JavaScript Library. Contribute to jquery/jquery development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "jQuery",
+          "JavaScript",
+          "前端开发",
+          "DOM操作",
+          "开源库"
+        ],
+        "cover": "",
+        "title": "jQuery 深度评测：统治 64% 网站的前端老牌宗师，20 年后为何依然坚挺？",
+        "ability": [
+          "用 CSS 选择器语法快速操作 DOM",
+          "链式调用让代码一气呵成",
+          "统一封装跨浏览器兼容（含 IE11）",
+          "一行代码完成 Ajax 请求",
+          "API 近 20 年保持稳定，老项目升级无痛"
+        ],
+        "summary": "跑在全球 64% 网站上的老牌 JS 库，新项目不必选它，但读懂它是前端工程师的必修历史课",
+        "category": [
+          "前端开发",
+          "开源项目",
+          "开发工具"
+        ],
+        "suitable": [
+          "前端初学者（理解 DOM 的最佳起点）",
+          "WordPress/PHP 老派工程师",
+          "维护遗留系统/祖传代码的工程师",
+          "准备前端面试的求职者",
+          "开发轻量小工具的全栈工程师"
+        ],
+        "description": "jQuery 是 2006 年诞生的 JavaScript DOM 操作库，凭『选择器 + 链式调用 + 跨浏览器兼容』三件套改写了前端史，至今仍跑在 64.3% 的网站上。2026 年发布 4.0 大版本完成现代化改造（支持 ES Modules、瘦身到 19.5KB）。它虽不再是新项目首选，但作为祖传代码的命脉、WordPress 生态的核心、以及理解 React/Vue 等现代框架演进逻辑的最佳标本，依然值得每个前端工程师认真读一遍。"
+      },
+      "type": "project",
+      "dateAdded": "20261118"
+    },
+    {
+      "id": "0b77f8b1-dd55-4694-a85b-77b657f18eac",
+      "url": "https://github.com/astral-sh/uv",
+      "domain": "github.com",
+      "repo": "astral-sh/uv",
+      "description": "uv 是 Astral 公司（Ruff 的缔造者）用 Rust 重写的 Python 包与项目管理器，把 pip、poetry、pyenv、pipx 等七个传统工具合而为一。它靠全局缓存和 PubGrub 依赖解析实现 10-100 倍于 pip 的速度，锁文件让环境可复现。纯 PyPI 生态下几乎没有对手，但不兼容 conda 的二进制库（如 CUDA、GDAL），深度数据科学用户需谨慎。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-18T11:03:13.018Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "packaging",
+          "python",
+          "resolver",
+          "uv"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.astral.sh/uv",
+        "description": "An extremely fast Python package and project manager, written in Rust. - astral-sh/uv"
+      },
+      "summaryData": {
+        "tags": [
+          "Python",
+          "包管理器",
+          "Rust",
+          "开源项目",
+          "开发者工具"
+        ],
+        "cover": "",
+        "title": "uv 深度评测：一个 Rust 二进制干掉 Python 工具链七件套，快到不像话",
+        "ability": [
+          "极速安装依赖：全局缓存 + 并行下载，热缓存下秒级装包",
+          "七合一工具链：替代 pip、pipx、poetry、pyenv、virtualenv、pip-tools、twine",
+          "跨平台可复现锁文件：uv.lock 保证团队与 CI 环境完全一致，支持 monorepo workspace",
+          "单文件脚本即项目：支持 PEP 723 内联依赖，一段脚本免建虚拟环境直接跑",
+          "一键管理多版本 Python 解释器"
+        ],
+        "summary": "Astral 用 Rust 重写的 Python 包管理神器，速度比 pip 快 10-100 倍，一个工具替代 pip/poetry/pyenv/pipx 等七件套。",
+        "category": [
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "Python 初学者与个人开发者",
+          "CI/CD 与 DevOps 工程师",
+          "AI / 数据科学从业者（纯 PyPI 生态）",
+          "维护 Monorepo 的团队",
+          "开源库作者"
+        ],
+        "description": "uv 是 Astral 公司（Ruff 的缔造者）用 Rust 重写的 Python 包与项目管理器，把 pip、poetry、pyenv、pipx 等七个传统工具合而为一。它靠全局缓存和 PubGrub 依赖解析实现 10-100 倍于 pip 的速度，锁文件让环境可复现。纯 PyPI 生态下几乎没有对手，但不兼容 conda 的二进制库（如 CUDA、GDAL），深度数据科学用户需谨慎。"
+      },
+      "type": "project",
+      "dateAdded": "20261118"
+    },
+    {
       "id": "564a1329-b07c-4000-9a17-0f9afeceef47",
       "url": "https://github.com/kajisho5/ffmpeg-skill",
       "domain": "github.com",
@@ -14376,8 +14697,8 @@
       "forks": 0,
       "createdAt": "2026-09-17T11:32:14.145Z",
       "metaData": {
-        "forks": "60764",
-        "stars": "205200",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "apis",
@@ -23310,8 +23631,8 @@
       "forks": 0,
       "createdAt": "2026-08-30T12:26:16.611Z",
       "metaData": {
-        "forks": "15794",
-        "stars": "94538",
+        "forks": "0",
+        "stars": "0",
         "topics": [
           "ai",
           "mcp"
