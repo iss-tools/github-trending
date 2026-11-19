@@ -1,0 +1,217 @@
+# nginx/nginx
+
+[GitHub URL](https://github.com/nginx/nginx)
+
+
+## Nginx 深度评测：撑起全球三分之一网站流量的「超级门童」
+
+> 高性能开源 Web 服务器与反向代理，以事件驱动架构解决高并发难题的 25 年老将
+
+- **Tags**: nginx, 反向代理, 负载均衡, 高性能, 开源
+- **Category**: 开发工具, Web 服务器, 基础设施
+
+## Details
+
+# Nginx：互联网世界的「超级门童」—— 25 年老将的硬核重生
+> 一句话总结：**它是一台用 C 语言锻造、以事件驱动为心脏的高性能 Web 服务器 / 反向代理 / 负载均衡器，撑起了全球近三分之一的网站流量**——从入门级的个人博客到 Netflix、Cloudflare 这种日均万亿请求的巨型基础设施，都在用它。GitHub 上 31.9k Star、8.3k Fork 的 https://github.com/nginx/nginx ，是每一位后端 / 运维 / SRE 工程师绕不开的「必修课」。
+---
+## 一、背景与痛点：为什么会有 Nginx？
+时间倒回 1990 年代末到 2000 年代初，互联网的「门童」几乎被 **Apache** 一家垄断。Apache 的设计哲学是「一个连接 = 一个进程 / 线程」——好比餐厅里一位服务员盯一桌客人，来 10,000 位客人就要请 10,000 位服务员。当 2000 年代初并发量冲破 10,000（业内称为 **C10K 问题**）时，Apache 开始疯狂消耗内存和 CPU 上下文切换资源，服务器「喘不过气来」。
+2002 年，俄罗斯工程师 **Igor Sysoev** 为了解决自己所在公司 Rambler 的高并发访问问题，决定换一种思路：**让一位服务员同时盯 10,000 桌客人**——也就是「事件驱动 + 非阻塞 I/O」。Nginx 应运而生，并于 2004 年正式开源发布。
+> 💡 **为什么值得关注？** 即使在云原生、Envoy、Kong 等新生代网关层出不穷的 2026 年，Nginx 依然是 **全球 Web 服务器市场份额第一（约 34%）** 的常青树，是「高并发、低内存占用」事实上的行业基准。
+---
+## 二、技术栈与架构解析：一位服务员是怎么同时盯 10,000 桌的？
+### 2.1 核心技术栈
+- **编程语言**：纯 C，零依赖、零 GC、极致性能
+- **License**：BSD-2-Clause，可以**免费商用**，闭源产品里嵌入 Nginx 也没问题
+- **代码组织**：仓库根目录下 `src/`、`conf/`、`auto/`、`contrib/`、`docs/` 几个文件夹就把核心装完了，整体代码量约 10 万行左右，**对一个 25 年的工业级项目来说极其克制**
+### 2.2 Master-Worker 进程模型
+Nginx 的运行时不是「一个大块头」，而是一组进程的协作：
+| 角色 | 数量 | 职责 | 类比 |
+|------|------|------|------|
+| **Master 进程** | 1 个 | 读配置、管理 worker、平滑 reload、处理信号 | 餐厅经理 |
+| **Worker 进程** | 默认 = CPU 核数 | 真正处理 HTTP / TCP 请求 | 一线服务员 |
+| **Cache Loader / Manager** | 偶尔 | 维护磁盘缓存的元数据 | 仓库管理员 |
+**为什么这种设计很精妙？**
+1. **master 与 worker 分离**意味着 worker 崩了不会拖死整个服务，master 会立刻拉起新的 worker；
+2. `nginx -s reload` 时，master 会**先启动新 worker 接新流量，再优雅关闭老 worker**——这就是传说中的「平滑热重载」，0 秒停机；
+3. worker 之间通过**共享内存**通信（例如限流计数器必须放在共享 zone 里，否则每个 worker 各算各的，限流就成了摆设）。
+### 2.3 事件驱动：epoll 才是灵魂
+每个 worker 是一个**单线程事件循环**，底层调用 Linux 的 `epoll`、BSD/macOS 的 `kqueue`，Windows 上是 IOCP。
+打个比方：
+> **Apache** 像一个「笨服务员」——来一个客人，就一直站在他桌边直到结账；第 100 个客人来时，前面的 99 桌还没结完，他已经累死了。
+> **Nginx** 像一个「聪明服务员」——手里拿着一个对讲机（epoll），客人一挥手他就立刻响应，没挥手的时候他自己去给别的桌倒水。同一秒他能服务上万个客人，但人始终没变多。
+**带来的实际收益**：
+- 内存占用几乎不随并发数线性增长（一个 worker 几 MB 就能扛 10k+ 连接）
+- CPU 上下文切换极低，没有「线程爆炸」问题
+- 同样一台 4 核 8G 的云主机，Nginx 经常能扛出 Apache 5–10 倍的 QPS
+### 2.4 模块化：乐高积木式设计
+Nginx 由一个个 module 组成，1.9.11 之后支持 **Dynamic Modules**（运行时动态加载），你可以用 `nginx -V` 查看当前编译进了哪些模块。
+常见模块流派：
+- **核心 HTTP 模块**：`ngx_http_core_module`、`ngx_http_upstream_module`
+- **代理与负载均衡**：`proxy`、`fastcgi`、`uwsgi`、`grpc`
+- **缓存**：`proxy_cache`、`fastcgi_cache`
+- **安全**：`limit_req`、`limit_conn`、`auth_basic`、`secure_link`
+- **第三方生态**：`lua-nginx-module`（OpenResty 的基石）、`njs`（官方 JS 引擎）、`modsecurity`
+---
+## 三、上手门槛与部署体验：写给你第一份能跑的配置
+### 3.1 部署方式（按推荐度排序）
+| 方式 | 命令 | 适合谁 |
+|------|------|--------|
+| **Docker 一行起** | `docker run -d -p 80:80 nginx:latest` | 学习、PoC、CI 测试 |
+| **官方 apt/yum 仓库** | `apt install nginx` | 生产环境首选 |
+| **源码编译** | `./configure && make && make install` | 需要定制模块、极致调优 |
+| **K8s Ingress** | `helm install ingress-nginx` | 云原生 |
+官方明确建议**优先用官方 binary 仓库**，因为系统自带版本往往滞后于安全补丁。
+### 3.2 最小可用配置示例（一次看懂所有关键概念）
+下面这份 30 行不到的 `nginx.conf`，覆盖了「静态站点 + 反向代理 + 负载均衡 + HTTPS 跳转 + 限流 + 缓存」五大核心能力——这是 Nginx 真正在生产里 80% 场景的浓缩：
+```nginx
+# 全局：worker 数量 = CPU 核数
+worker_processes auto;
+events { worker_connections 10240; }   # 每个 worker 最多可持有的连接数
+http {
+    # ---------- 1. 限流：每个 IP 每秒最多 10 个请求 ----------
+    limit_req_zone $binary_remote_addr zone=one:10m rate=10r/s;
+    # ---------- 2. 上游服务器池（负载均衡） ----------
+    upstream backend {
+        server 127.0.0.1:8001 weight=3;   # 权重轮询
+        server 127.0.0.1:8002;
+        server 127.0.0.1:8003 backup;     # 备胎
+        keepalive 32;                      # 长连接复用，省去反复握手
+    }
+    # ---------- 3. HTTP -> HTTPS 跳转 ----------
+    server {
+        listen 80;
+        return 301 https://$host$request_uri;
+    }
+    # ---------- 4. 主站点：反向代理 + 静态文件 + 缓存 ----------
+    server {
+        listen 443 ssl http2;
+        server_name example.com;
+        ssl_certificate     /etc/letsencrypt/live/example.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+        # 静态资源直接 Nginx 出，并设置浏览器缓存 7 天
+        location /static/ {
+            root /var/www/mysite;
+            expires 7d;
+        }
+        # 动态请求转给后端应用集群，并启用代理缓存
+        location / {
+            limit_req zone=one burst=20 nodelay;
+            proxy_pass http://backend;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_cache my_cache;
+            proxy_cache_valid 200 10m;
+        }
+    }
+    proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=my_cache:10m max_size=1g;
+}
+```
+**只需改 3 个地方**：`server_name`、证书路径、`upstream` 的后端 IP，就能上线一套带 HTTPS 和负载均衡的站点——这是 Nginx 配置「简洁而强大」的真实写照。
+### 3.3 验证与重载（运维日常三连）
+```bash
+nginx -t                  # 测试配置语法，避免「改完挂掉」
+nginx -s reload           # 平滑热加载，0 停机
+tail -f /var/log/nginx/error.log   # 排错第一现场
+```
+> 🚨 **避坑第一条**：99% 的「reload 后配置没生效」都是因为 `nginx -t` 没跑。这个命令是 Nginx 给你的免费保险。
+---
+## 四、社区活跃度与生命力：从邮件列表到 GitHub 的「重生」
+这是 Nginx 历史上一个值得单独讲一笔的事件：
+> **2024 年 9 月 6 日**，Nginx 项目正式把开发工作流从自托管的 Trac + 邮件列表 **整体迁移到 GitHub**——issue 走 GitHub Issues，讨论走 GitHub Discussions，PR 走 GitHub Pull Requests。
+这意味着什么？
+- 过去 20 年里，给 Nginx 提一个 patch 要靠「发邮件给 mailing list 等审核」，对新人极不友好；
+- 现在，任何人都可以像给前端项目提 PR 一样给 Nginx 提代码，**开源参与门槛被显著降低**。
+仓库当前的硬指标：
+| 指标 | 数值 |
+|------|------|
+| Stars | **31.9k** |
+| Forks | **8.3k** |
+| Watchers | 952 |
+| 总 Commits | 8,763 |
+| Open Issues | 165 |
+| Open Pull Requests | 282 |
+更新节奏同样非常健康：2024 年发布了 **1.26.x（stable）和 1.27.x（mainline）两条线**，1.27.3 引入了「upstream 主机名通过 DNS 自动重新解析」这一呼声多年的功能；同期还有 **njs 0.8.6/0.8.7（加入 QuickJS 引擎）** 和 **NGINX Unit 1.33.0** 等周边项目的版本更新。
+> 💡 **选择哪个分支？**
+> - **Mainline（1.27.x）**：相当于「每周更新版」，功能最新，适合愿意追新的团队
+> - **Stable（1.26.x）**：相当于「长期支持版」，只回移关键 bugfix 和安全补丁，生产推荐
+---
+## 五、核心亮点与功能剖析：它凭什么能统治 20 年？
+### 5.1 五大核心能力（README 原文提炼）
+官方 README 把 Nginx 的定位写得非常清楚：**Web Server、Load Balancer、Reverse Proxy、API Gateway、Content Cache**。我们逐个拆解：
+| 能力 | 一句话解释 | 典型场景 |
+|------|-----------|---------|
+| **静态资源服务器** | 直接把磁盘上的 HTML/JS/图片吐给用户 | 个人博客、CDN 回源 |
+| **反向代理** | 站在业务服务器前面挡流量 | 隐藏后端 IP、统一入口 |
+| **负载均衡** | 把请求按策略分发给后端集群 | 4 层/7 层分发、健康检查 |
+| **API Gateway** | 限流、鉴权、路由、灰度 | 微服务统一网关 |
+| **内容缓存** | 把上游响应缓存到本地磁盘 | 大幅降低后端压力 |
+### 5.2 几个「用一次就回不去」的杀手锏
+- **`proxy_cache`**：一行配置就能让上游服务 QPS 降一个数量级；
+- **`limit_req_zone` + `burst`**：精准限流，配合 `nodelay` 实现「允许突发但不放行超额」的工业级算法；
+- **`upstream` 的 `backup` 参数**：主节点全挂了，备胎自动顶上——这是很多新手不知道的免费 HA 方案；
+- **`nginx -s reload` 的优雅重载**：老连接不中断，新配置即时生效，是 7×24 服务的命脉。
+---
+## 六、商业模式：Nginx 开源版 vs Nginx Plus（企业版）
+Nginx 在 2019 年被 **F5 Networks** 以 6.7 亿美元收购，从此形成了「开源社区 + 商业订阅」的双轨模式。
+| 维度 | Nginx Open Source（GitHub） | Nginx Plus / NGINX One（商业版） |
+|------|----------------------------|--------------------------------|
+| 价格 | 免费 | 按实例订阅，年费约 $2500+/实例 |
+| 主动健康检查 | ❌（只有被动） | ✅ |
+| 会话持久性（sticky） | 仅 ip_hash / cookie 注入 | ✅ 更精细 |
+| 热加载无抖动 | reload 有毫秒级中断 | ✅ 真正无中断 |
+| 动态 upstream API | ❌ | ✅（REST API 改上游不 reload） |
+| 可视化管理 | ❌ | NGINX One Console |
+| WAF（App Protect） | ❌（需自己加 ModSecurity） | ✅ 内置 |
+| 技术支持 | 社区 | 7×24 官方 SLA |
+> 🎯 **判断要不要买 Plus 的简单标准**：如果你的业务场景是「多机房大规模集群 + 必须动态调整 upstream + 需要 SLA 兜底」，Plus 值得；如果是中小规模、能接受 reload，开源版完全够用——**全球 80% 的 Nginx 用户终生不需要买 Plus**。
+---
+## 七、竞品对比：Nginx 在 2026 年的江湖位置
+为您梳理了当前主流方案的多维度对比，方便快速定位 Nginx 在自己技术栈中的位置：
+| 维度 | **Nginx** | Apache httpd | Caddy | Envoy | HAProxy |
+|------|-----------|--------------|-------|-------|---------|
+| **架构** | 事件驱动 + master-worker | 进程/线程 per connection | 事件驱动（Go goroutine） | 事件驱动（C++） | 事件驱动（C） |
+| **性能** | ⭐⭐⭐⭐⭐ 静态+高并发王者 | ⭐⭐⭐ 高内存 | ⭐⭐⭐⭐ 略逊 Nginx | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ 4 层最强 |
+| **HTTPS** | 手动 certbot | 手动 certbot | ✅ **自动 ACME，开箱即用** | 手动 | 手动 |
+| **配置语言** | 自家 DSL（学习曲线中等） | httpd.conf + .htaccess | **Caddyfile（极简）** | YAML（冗长但强大） | 自家 DSL |
+| **可观测性** | access/error log + stub_status | mod_status | 一般 | ⭐⭐⭐⭐⭐ Prometheus/Tracing 一应俱全 | ⭐⭐⭐⭐ |
+| **服务网格适配** | ❌ | ❌ | ❌ | ✅ 原生 xDS | ⭐ |
+| **典型用户** | Netflix、Cloudflare、国内大厂 | 传统企业、cPanel | 个人/小团队/独立开发 | Istio 默认数据面 | GitHub、Reddit |
+| **一句话定位** | **通用性能之王** | 老将、生态广 | **新手友好+自动 HTTPS** | **云原生/服务网格标配** | 极致 4 层 LB |
+**选型决策树**：
+- 单机部署 + 想要 HTTPS 自动签发 → **Caddy**
+- 通用 Web 服务、反向代理、静态站点 → **Nginx**（生态最广、招聘最容易）
+- K8s 服务网格 / 多语言 gRPC 治理 → **Envoy**
+- 纯 4 层超高性能 LB → **HAProxy**
+- 老项目兼容 .htaccess / 共享主机 → **Apache**
+数据参考：Nginx 全球市场份额约 34%（第一），Apache 约 29%（逐年下滑），Caddy 仍属于「精品小众」。
+---
+## 八、局限与不足：再完美的老兵也有软肋
+为了客观，必须列出 Nginx 真实的几个痛点：
+1. **配置语法学习曲线**：自创的 DSL 不是 YAML 也不是 JSON，新手容易在 `location` 匹配优先级、`if` 的邪恶用法上栽跟头；
+2. **不支持 `.htaccess` 式的分散配置**：所有配置集中在 master 持有的文件里，多团队共用一台 Nginx 时容易「牵一发动全身」；
+3. **reload 不是 100% 无感**：极端高并发下，reload 时旧 worker 等待现有连接结束，可能持续几秒，对某些长连接业务（如 WebSocket）需要额外用 `worker_shutdown_timeout` 控制；
+4. **可观测性弱于 Envoy**：原生只有 `stub_status` 几个数字，要做 Prometheus 监控、链路追踪、动态配置 API，必须额外装模块或买 Plus；
+5. **配置错误是生产事故重灾区**：`proxy_pass` 末尾斜杠、`location` 正则的贪婪匹配、`try_files` 的 `$uri` 陷阱——这些都是新人最容易引发线上事故的三大坑；
+6. **Windows 版本只是 PoC**：官方 README 明确说 Windows 版仅供开发测试，**不要用于生产**；
+7. **动态 upstream 较弱**：开源版改 upstream 列表必须 reload，不能像 Envoy 那样通过 xDS API 实时推送。
+---
+## 九、目标人群与收益：这本书到底写给谁读？
+| 你是谁 | 你能从 Nginx 获得什么 |
+|--------|----------------------|
+| **前端工程师** | 让本地 dev 环境 CORS、HTTPS、Mock 一站搞定，不再被后端接口「本机能跑线上挂」折磨 |
+| **后端工程师** | 理解请求到底如何进入你的应用，调优 `keepalive` 和 `proxy_buffer` 让接口延迟降低 30%+ |
+| **运维 / SRE** | 用一台 4 核 8G 的机器扛住别人 8 核 32G 才能扛的流量，省下真金白银的服务器成本 |
+| **独立开发者** | 一个 Nginx 容器 = 静态站点 + 反向代理 + 限流 + 缓存 + HTTPS 终端，全部免费 |
+| **架构师** | 理解 25 年来被反复验证的高并发架构范式，迁移到 Envoy/Kong 时也能举一反三 |
+> 💰 **最实在的收益**：学会 Nginx 调优，平均可以让一台 1000 元/月的云主机发挥出 3000 元/月的承载能力——这是工程师里少有的「学了立刻给公司省钱」的技能。
+---
+## 十、结语与行动建议：终极评判
+**Nginx 是一个「值得花 200 小时学习，能用 20 年不贬值」的基础设施。**
+它不像某些流行框架那样「三年一换代」，也不会被云原生浪潮淘汰——Envoy、Caddy、Kong 在各自赛道上很强，但在「通用、稳定、性能、生态」四个维度的平衡上，**目前还没有出现真正把 Nginx 拉下马的对手**。再加上 2024 年迁到 GitHub 后开发流程的现代化改造，这个 25 年老将正在焕发第二春。
+**给你的三条行动建议**：
+1. **今天就把 Docker 跑起来**：`docker run -d -p 80:80 nginx:latest`，30 分钟内亲手写出一个反向代理 + 限流的最小配置；
+2. **读一遍官方 README**：https://github.com/nginx/nginx 的 README 是所有官方文档里最平易近人的一篇，新人友好度比过去提升了不止一个量级；
+3. **进阶路线**：基础配置 → `proxy_cache` 性能调优 → 写第一个 `njs` 脚本 → 看 `lua-nginx-module`（OpenResty）→ 玩 `ngx_http_lua` 做自定义网关，这条路径足以让你成为团队里「Nginx 一哥」。
+最后一句忠告：**当你下一次想给后端加并发、加缓存、加网关、加 WAF 的时候，先想想是不是 Nginx 的一行配置就能解决——很多时候，我们缺的不是更复杂的架构，而是更深入地用好这台「超级门童」。**

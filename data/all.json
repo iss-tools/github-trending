@@ -1,6 +1,436 @@
 {
   "all": [
     {
+      "id": "a0bb6892-ff70-49bb-8e93-d01152061445",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "domain": "github.com",
+      "repo": "XiaoYouChR/Ghost-Downloader-3",
+      "description": "Ghost-Downloader-3 是基于 PySide6 的开源下载器，性能环节外包给 Rust/C++ 库保证速度。支持四大平台和丰富协议解析，采用 Feature Pack 热插拔架构。免费替代 IDM，但 BT 场景不如 qBittorrent，高线程可能触发站点反爬，且为高中生单人维护，生产环境需谨慎。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:18:46.039Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "async",
+          "asyncio",
+          "bittorent",
+          "bt",
+          "cross-platform",
+          "download-manager",
+          "downloader",
+          "fluent-design",
+          "ftp",
+          "http3",
+          "magnet",
+          "pyqt",
+          "pyside6",
+          "python",
+          "qt",
+          "quic",
+          "react",
+          "software",
+          "streaming"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://gd.xychr.com/",
+        "description": "The only downloader you need. 下载器的集大成者。. Contribute to XiaoYouChR/Ghost-Downloader-3 development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "下载器",
+          "开源",
+          "跨平台",
+          "IDM替代",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Ghost-Downloader-3 深度评测：高中生开发的免费开源全能下载器",
+        "ability": [
+          "智能动态线程调度（俗称 AI 加速），最高 253 线程自动增减",
+          "TLS 指纹模拟，可绕过 Cloudflare 等反爬检测",
+          "多协议支持：HTTP/BT磁力/M3U8/eD2k/B站/YouTube/GitHub/HuggingFace",
+          "分块直写磁盘，下载完即完整文件，无需合并",
+          "兼容 aria2 RPC + 浏览器扩展一键接管下载"
+        ],
+        "summary": "一款免费开源、跨平台的全能下载器，把 IDM 的智能分块、Motrix 的多协议和视频解析整合进 Fluent 界面，实测速度跑赢 IDM。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "科研/AI 从业者（HuggingFace 模型加速下载）",
+          "追番视频党（B站4K/YouTube 批量下载）",
+          "不想付费买 IDM 的普通用户",
+          "需要 aria2 兼容方案的开发者",
+          "缺好下载工具的 Android 用户"
+        ],
+        "description": "Ghost-Downloader-3 是基于 PySide6 的开源下载器，性能环节外包给 Rust/C++ 库保证速度。支持四大平台和丰富协议解析，采用 Feature Pack 热插拔架构。免费替代 IDM，但 BT 场景不如 qBittorrent，高线程可能触发站点反爬，且为高中生单人维护，生产环境需谨慎。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
+      "id": "7848f8cd-c05b-4f58-857e-0cd0f779a4dd",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "domain": "github.com",
+      "repo": "toeverything/AFFiNE",
+      "description": "AFFiNE 由 toeverything 团队开源，GitHub 33k+ Star。底层用 BlockSuite + Rust 版 CRDT 实现块级统一，让文字、便利贴、表格既是文档内容也是画布元素。桌面端可完全离线使用，数据落盘本地。短板是移动端体验落后、导出和双链较弱、官方 AI 仍需经云端中转、服务端采用 EE 许可限制商用自托管规模。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:16:39.738Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "app",
+          "crdt",
+          "editor",
+          "electron",
+          "knowledge-base",
+          "markdown",
+          "miro",
+          "notes",
+          "notion",
+          "notion-alternative",
+          "rust",
+          "rust-lang",
+          "rust-language",
+          "table",
+          "tableview",
+          "whiteboard",
+          "wiki",
+          "workspace"
+        ],
+        "license": "MIT license",
+        "homepage": "https://affine.pro",
+        "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.  - GitHub - toeverything/AFFiNE: There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use."
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "Notion替代",
+          "本地优先",
+          "自托管",
+          "知识库"
+        ],
+        "cover": "",
+        "title": "AFFiNE 深度评测：开源界的 Notion+Miro 合体，本地优先知识库天花板",
+        "ability": [
+          "文档/画布/数据库三种视图共享同一块级数据模型，一键切换",
+          "本地优先存储 + CRDT 算法实现多端离线编辑、重新联网自动无损合并",
+          "Docker Compose 一键自托管，免费支持 10 席位 + 100GB 存储",
+          "内置 AI Copilot：块级改写、大纲转思维导图、笔记转幻灯片、支持 BYOK 和 MCP",
+          "客户端 MIT 开源，自研 y-octo/OctoBase（Rust）高性能数据引擎"
+        ],
+        "summary": "AFFiNE 是一款开源 all-in-one 知识库，把 Notion 式文档、Miro 式无限画布、多视图数据库和 AI Copilot 融合在一个本地优先工作区里。",
+        "category": [
+          "开发工具",
+          "办公效率",
+          "知识管理"
+        ],
+        "suitable": [
+          "对数据隐私敏感、坚持本地优先的个人用户",
+          "产品经理/设计师等需要文档+画布混合工作流的人",
+          "想逃离 Notion 数据锁定的小微团队（10 人以下）",
+          "喜欢 Docker 自托管的极客与 NAS 玩家",
+          "需要 AI 写作与头脑风暴辅助的知识工作者"
+        ],
+        "description": "AFFiNE 由 toeverything 团队开源，GitHub 33k+ Star。底层用 BlockSuite + Rust 版 CRDT 实现块级统一，让文字、便利贴、表格既是文档内容也是画布元素。桌面端可完全离线使用，数据落盘本地。短板是移动端体验落后、导出和双链较弱、官方 AI 仍需经云端中转、服务端采用 EE 许可限制商用自托管规模。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
+      "id": "624d3fc7-80b3-4565-9c30-de2a525e21ec",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "domain": "github.com",
+      "repo": "Tracer-Cloud/opensre",
+      "description": "OpenSRE 是 Tracer 团队开源的可自托管 AI SRE Agent 框架，通过 Fetch-Mask-Reason-Answer-Suggest-Post 六步流程自动调查生产事故，结论带证据引用、敏感信息可逆脱敏，已集成 Grafana、K8s、AWS 等 60+ 工具链，Star 数居同类开源项目之首。但目前处于 Public Alpha 阶段，API 不稳定且缺乏独立第三方基准测试，不建议直接用于生产值班。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:13:40.846Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "alerting",
+          "ci-cd",
+          "cli",
+          "datadog",
+          "devops",
+          "gitlab-ci",
+          "grafana",
+          "incident-management",
+          "llm",
+          "observability",
+          "ollama",
+          "remediation",
+          "root-cause-analysis",
+          "site-reliability-engineering",
+          "slack"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://opensre.com",
+        "description": "The open-source agent for CI/CD reliability. Contribute to Tracer-Cloud/opensre development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "AI SRE",
+          "开源项目",
+          "可观测性",
+          "事故响应",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "OpenSRE 深度评测：对标 SWE-bench 的开源 AI SRE Agent，社区最热但仍处 Alpha 期",
+        "ability": [
+          "自动拉取并关联日志/指标/Trace 做根因调查",
+          "调用外部 LLM 前对敏感信息做可逆脱敏",
+          "输出带证据引用的诊断结论与修复建议",
+          "支持 REPL、无头 CLI、Python API 三种使用方式",
+          "集成 60+ 云原生工具链，支持 MCP 协议"
+        ],
+        "summary": "Tracer 团队开源的可自托管 AI SRE Agent 框架，自动调查生产事故并给出带证据引用的结论。",
+        "category": [
+          "开发工具",
+          "AI 应用",
+          "运维/DevOps"
+        ],
+        "suitable": [
+          "有数据合规诉求、需要自托管的 SRE 团队",
+          "想二次开发专属 SRE Agent 的平台工程师",
+          "关注 AI Agent 训练环境的研究者",
+          "云原生/DevOps 运维工程师",
+          "追踪开源 AI SRE 赛道的技术决策者"
+        ],
+        "description": "OpenSRE 是 Tracer 团队开源的可自托管 AI SRE Agent 框架，通过 Fetch-Mask-Reason-Answer-Suggest-Post 六步流程自动调查生产事故，结论带证据引用、敏感信息可逆脱敏，已集成 Grafana、K8s、AWS 等 60+ 工具链，Star 数居同类开源项目之首。但目前处于 Public Alpha 阶段，API 不稳定且缺乏独立第三方基准测试，不建议直接用于生产值班。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
+      "id": "e1571be9-5035-47af-a0d8-94e65720c133",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "domain": "github.com",
+      "repo": "mjmirza/app-store-compliance",
+      "description": "一个把 App Store 与 Google Play 拒审规则彻底结构化的开源项目，提供 JSON 规则库、Bash 拦截钩子和 Claude Skill 三件套。它像一道闸门坐在 fastlane 前面，在提交前 30 秒扫出 Privacy Manifest 缺失、Demo 账号缺失等确定性拒审项，把'等被拒才知道'变成'提交前就知道'。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:09:52.878Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "accessibility",
+          "ai-agents",
+          "android",
+          "app-review-guidelines",
+          "app-store",
+          "app-store-connect",
+          "app-store-rejection",
+          "app-store-review",
+          "claude-code",
+          "coppa",
+          "data-safety",
+          "eu-ai-act",
+          "gdpr",
+          "google-play",
+          "google-play-policy",
+          "ios",
+          "mobile-compliance",
+          "play-console",
+          "pre-submission-checklist",
+          "privacy-manifest"
+        ],
+        "license": "openroots.org/licenses/ora/2.3/legalcode.txt",
+        "homepage": "https://mjmirza.github.io/app-store-compliance/",
+        "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents. - mjmirza/app-store-compliance"
+      },
+      "summaryData": {
+        "tags": [
+          "App Store",
+          "合规审查",
+          "开源项目",
+          "Claude Skill",
+          "移动开发"
+        ],
+        "cover": "",
+        "title": "app-store-compliance：让 AI 编码助手在 App 提交前自动拦截拒审风险的开源合规守卫",
+        "ability": [
+          "双端拒审规则知识库：将 Apple 与 Google Play 审核规则结构化为机器可读的 rejection-patterns.json",
+          "提交前自动拦截：以 PreToolUse 钩子阻断 fastlane deliver、eas submit 等高危提交命令",
+          "AI Agent 合规审计：内置 Claude Skill，强制输出'可提交/阻断+编号修复清单'的二元判定",
+          "商店文案元数据审计：专门扫描 listing 层的描述违规、隐私政策缺失、订阅条款等问题",
+          "2026 法律层覆盖：含 EU AI Act、COPPA、DMA、分国家博彩规则等冷门合规文档"
+        ],
+        "summary": "把 Apple/Google Play 拒审规则编译成机器可读知识库，让 Claude Code 等工具在 fastlane deliver 前自动扫描并阻断高危提交。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "合规审核"
+        ],
+        "suitable": [
+          "独立开发者",
+          "AI 编码重度用户",
+          "移动端产品经理与技术负责人",
+          "被拒审后需申诉的开发者",
+          "多国发行/出海团队"
+        ],
+        "description": "一个把 App Store 与 Google Play 拒审规则彻底结构化的开源项目，提供 JSON 规则库、Bash 拦截钩子和 Claude Skill 三件套。它像一道闸门坐在 fastlane 前面，在提交前 30 秒扫出 Privacy Manifest 缺失、Demo 账号缺失等确定性拒审项，把'等被拒才知道'变成'提交前就知道'。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
+      "id": "a6c3ca23-5ca3-4415-a4b4-6fcaa7a79e04",
+      "url": "https://github.com/nginx/nginx",
+      "domain": "github.com",
+      "repo": "nginx/nginx",
+      "description": "Nginx 是用 C 语言编写的事件驱动型高性能 Web 服务器，通过 Master-Worker 进程模型和 epoll 技术优雅解决 C10K 高并发难题。它集静态服务、反向代理、负载均衡、API 网关、内容缓存五大能力于一身，全球市场份额约 34%，BSD 协议免费商用，是后端与运维工程师的必修课。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:05:53.877Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "content-cache",
+          "http",
+          "http2",
+          "http3",
+          "https",
+          "load-balancer",
+          "mail-proxy-server",
+          "nginx",
+          "quic",
+          "reverse-proxy",
+          "security",
+          "tcp-proxy-server",
+          "tls",
+          "udp-proxy-server",
+          "web-server"
+        ],
+        "license": "BSD-2-Clause license",
+        "homepage": "https://nginx.org/",
+        "description": "The official NGINX Open Source repository. Contribute to nginx/nginx development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "nginx",
+          "反向代理",
+          "负载均衡",
+          "高性能",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Nginx 深度评测：撑起全球三分之一网站流量的「超级门童」",
+        "ability": [
+          "静态资源服务器与反向代理",
+          "四层/七层负载均衡",
+          "内容缓存，大幅降低后端压力",
+          "限流与 API 网关能力",
+          "Master-Worker 架构支持零停机平滑热重载"
+        ],
+        "summary": "高性能开源 Web 服务器与反向代理，以事件驱动架构解决高并发难题的 25 年老将",
+        "category": [
+          "开发工具",
+          "Web 服务器",
+          "基础设施"
+        ],
+        "suitable": [
+          "后端工程师",
+          "运维 / SRE 工程师",
+          "前端工程师",
+          "独立开发者",
+          "系统架构师"
+        ],
+        "description": "Nginx 是用 C 语言编写的事件驱动型高性能 Web 服务器，通过 Master-Worker 进程模型和 epoll 技术优雅解决 C10K 高并发难题。它集静态服务、反向代理、负载均衡、API 网关、内容缓存五大能力于一身，全球市场份额约 34%，BSD 协议免费商用，是后端与运维工程师的必修课。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
+      "id": "cee0b3c4-7945-4451-84a4-33c6df34cf59",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "domain": "github.com",
+      "repo": "firecrawl/firecrawl",
+      "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T13:02:57.444Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-crawler",
+          "ai-scraping",
+          "ai-search",
+          "crawler",
+          "data-extraction",
+          "html-to-markdown",
+          "llm",
+          "markdown",
+          "scraper",
+          "scraping",
+          "web-crawler",
+          "web-data",
+          "web-data-extraction",
+          "web-scraper",
+          "web-scraping",
+          "web-search",
+          "webscraping"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://firecrawl.dev",
+        "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API. - firecrawl/firecrawl"
+      },
+      "summaryData": {
+        "tags": [
+          "Firecrawl",
+          "网页爬虫",
+          "RAG",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Firecrawl 深度评测：LLM 时代的一站式网页数据采集 API",
+        "ability": [
+          "一行 API 将网页转为 LLM 友好的 Markdown/JSON/截图",
+          "支持整站递归爬取与站点地图秒级探索",
+          "按自定义 Schema 抽取结构化数据",
+          "通过 MCP 让 AI 助手具备联网与操作网页能力",
+          "云端反爬代理池，网页覆盖率高达 96%"
+        ],
+        "summary": "把任意网页一键转为大模型可用的干净 Markdown，AI 爬虫赛道的标杆级开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "数据采集"
+        ],
+        "suitable": [
+          "RAG/知识库工程师",
+          "AI Agent 开发者",
+          "数据分析师与研究员",
+          "投研与商业情报人员",
+          "需要联网能力的 AI 应用团队"
+        ],
+        "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
       "id": "5c191e22-6538-4169-9002-163bd58866a3",
       "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
       "domain": "github.com",
@@ -20821,7 +21251,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [
@@ -23239,7 +23669,7 @@
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://jingyaogong.github.io/minimind",
-        "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h! - jingyaogong/minimind"
+        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
       },
       "summaryData": {
         "tags": [
