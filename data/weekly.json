@@ -28114,8 +28114,8 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 8967,
-      "forks": 748,
+      "stars": 8993,
+      "forks": 749,
       "starsAdded": 7257,
       "createdAt": "2026-11-16T17:00:03.956Z",
       "metaData": {
@@ -28237,8 +28237,8 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 30250,
-      "forks": 2724,
+      "stars": 30396,
+      "forks": 2735,
       "starsAdded": 6840,
       "createdAt": "2026-11-18T11:00:04.508Z",
       "metaData": {
@@ -28311,8 +28311,8 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 30736,
-      "forks": 2407,
+      "stars": 30767,
+      "forks": 2410,
       "starsAdded": 6250,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
@@ -28429,8 +28429,8 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 54274,
-      "forks": 4490,
+      "stars": 54297,
+      "forks": 4493,
       "starsAdded": 4383,
       "createdAt": "2026-11-16T17:00:04.097Z",
       "metaData": {
@@ -28673,8 +28673,8 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 16592,
-      "forks": 1455,
+      "stars": 16607,
+      "forks": 1460,
       "starsAdded": 3866,
       "createdAt": "2026-11-15T16:00:03.926Z",
       "metaData": {
@@ -28787,8 +28787,8 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 13556,
-      "forks": 1368,
+      "stars": 13568,
+      "forks": 1369,
       "starsAdded": 3290,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
@@ -28849,8 +28849,8 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7140,
-      "forks": 1445,
+      "stars": 7159,
+      "forks": 1449,
       "starsAdded": 3242,
       "createdAt": "2026-11-17T11:00:03.757Z",
       "metaData": {
@@ -28902,8 +28902,8 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 20541,
-      "forks": 2110,
+      "stars": 20550,
+      "forks": 2112,
       "starsAdded": 3221,
       "createdAt": "2026-11-18T11:00:04.502Z",
       "metaData": {
@@ -28961,8 +28961,8 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58279,
-      "forks": 4879,
+      "stars": 58295,
+      "forks": 4881,
       "starsAdded": 3143,
       "createdAt": "2026-11-17T11:00:03.755Z",
       "metaData": {
@@ -29066,6 +29066,80 @@
           "轻量级网页采集与表单自动化需求者"
         ],
         "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "9970a4e6-0c5b-4753-ad2a-25de3bdeb001",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "repo": "kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars": 8129,
+      "forks": 763,
+      "starsAdded": 2894,
+      "createdAt": "2026-11-19T12:00:53.063Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "audio-processing",
+          "captions",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "cursor",
+          "ffmpeg",
+          "gemini-cli-extension",
+          "loudness-normalization",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "python",
+          "subtitles",
+          "transcoding",
+          "video",
+          "video-editing",
+          "whisper"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+        "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "ffmpeg",
+          "AI Agent Skill",
+          "MCP",
+          "视频剪辑",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ffmpeg-skill 深度评测：给 AI 编程助手装上一个本地视频剪辑师",
+        "ability": [
+          "42 个结构化工具覆盖剪辑、音频、字幕、调色、批量交付全流程",
+          "自然语言驱动，Agent 自动探测、生成并校验 FFmpeg 命令",
+          "内置 YouTube/TikTok/Reels 等平台合规检查与一键预设导出",
+          "SPEC 自产契约 + MCP 双形态接入，schema 与文档永不漂移",
+          "100% 本地离线执行，不上传素材、无需 API Key"
+        ],
+        "summary": "把 FFmpeg 封装成 42 个 AI Agent 可直接调用的本地视频工具，一句话完成剪辑、转码与平台合规交付，全程离线免费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "开发者 / Vlogger 双重身份用户",
+          "独立创作者与课程博主",
+          "播客主理人",
+          "多机位视频工作者",
+          "想给 Agent 接入媒体能力的 AI 工程师"
+        ],
+        "description": "ffmpeg-skill 是一个 MIT 协议的开源 AI Agent Skill，将强大的 FFmpeg 封装为 42 个结构化本地工具，兼容 Claude Code、Cursor、Codex 与 MCP。它强制遵循先探测、能无损就无损、渲染前预演、结果校验的工程化流程，内置主流平台合规检查，一行 npx 命令即可安装，让 AI 用自然语言完成专业级视频剪辑交付。"
       }
     },
     {
@@ -29215,8 +29289,8 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 70422,
-      "forks": 6270,
+      "stars": 70495,
+      "forks": 6276,
       "starsAdded": 2423,
       "createdAt": "2026-11-18T11:00:04.500Z",
       "metaData": {
@@ -29289,8 +29363,8 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 10544,
-      "forks": 1374,
+      "stars": 10561,
+      "forks": 1376,
       "starsAdded": 1567,
       "createdAt": "2026-11-17T11:00:03.758Z",
       "metaData": {
@@ -29455,6 +29529,59 @@
           "机械臂与硬件初创团队"
         ],
         "description": "MuJoCo 是一款由华盛顿大学教授孕育、2021 年被 DeepMind 收购并以 Apache 2.0 协议开源的物理仿真引擎。它以业界最精准的接触动力学著称，是 Gymnasium、DeepMind Control Suite 等主流机器人学习基准的默认引擎。从笔记本到 GPU 集群均可运行，是机器人 RL 研究与仿真训练的事实标准。"
+      }
+    },
+    {
+      "id": "9c481f3a-54e7-43f4-94dc-2cf9a59c966e",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "repo": "pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "stars": 2223,
+      "forks": 189,
+      "starsAdded": 1019,
+      "createdAt": "2026-11-19T12:00:53.039Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Enable Hermès Watch Faces on any Apple Watch devices - pookjw/HermesEnabler"
+      },
+      "summaryData": {
+        "tags": [
+          "Apple Watch",
+          "watchOS",
+          "爱马仕表盘",
+          "MobileGestalt",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "HermesEnabler 深度评测：让任意 Apple Watch 解锁爱马仕专属表盘的开源神器",
+        "ability": [
+          "解锁全部爱马仕官方真表盘（真字体、真机械动画、真复杂功能联动）",
+          "调整 Ultra 表盘布局与屏幕分辨率预设",
+          "开关 Apple Intelligence、端侧 Siri、Audio Intelligence 等隐藏功能",
+          "自定义地区代码与销售区域",
+          "提供手动/自动/导入三种备份机制，支持 Watch 与 iPhone 互传并带完整性校验"
+        ],
+        "summary": "通过篡改 watchOS 设备指纹，让普通 Apple Watch 免费解锁被苹果硬件锁定的爱马仕表盘及隐藏功能。",
+        "category": [
+          "开发工具",
+          "数码玩机",
+          "开源项目"
+        ],
+        "suitable": [
+          "拥有 Mac + Xcode 且使用正式版 watchOS 的 Apple Watch 用户",
+          "想免费获得爱马仕表盘体验的普通表主",
+          "Apple Watch Ultra / Ultra 2 进阶玩家",
+          "iOS / watchOS 逆向工程与 MobileGestalt 研究爱好者",
+          "科技测评与视频内容创作者"
+        ],
+        "description": "HermesEnabler 是开发者 pookjw 开源的 watchOS 灰色地带工具，通过 MobileGestalt 设备指纹伪装，让系统误认为你佩戴的是 Hermès 版手表，从而解锁爱马仕专属表盘，并附带大量隐藏功能开关。需用 Mac + Xcode 侧载安装，7 天需重签，改版前务必备份，不建议在 Beta 系统使用。"
       }
     }
   ]

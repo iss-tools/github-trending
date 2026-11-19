@@ -1,6 +1,59 @@
 {
   "all": [
     {
+      "id": "5c191e22-6538-4169-9002-163bd58866a3",
+      "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
+      "domain": "github.com",
+      "repo": "Jakeschincariol/instagram-agent-skill",
+      "description": "MIT 协议开源的 Claude Skill 套件，含 13 个 /ig-* 命令和 5 个本地 Python 评分工具，覆盖 Instagram 选题、钩子、脚本、文案、评论、复盘全流程；设计上生成、评分、发布三层隔离，主打清洗 AI 味，GitHub 6.1k stars，但为单人维护且不自动发布内容。",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-19T12:07:04.131Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT. - Jakeschincariol/instagram-agent-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "Instagram",
+          "开源项目",
+          "内容营销",
+          "AI 写作"
+        ],
+        "cover": "",
+        "title": "Instagram Agent Skill 深度评测：13 个 Claude Skill 把 IG 内容流水线装进终端",
+        "ability": [
+          "13 个 /ig-* 命令覆盖选题、钩子、脚本、文案、评论、DM、复盘全流程",
+          "本地 Python 工具量化评分钩子强度、口播节奏和文案折叠点，完全离线保护隐私",
+          "humanizer 内置 154 条 slop 词表与 18 类不可见字符检测，系统性清洗 AI 痕迹",
+          "voice.md 声音档案持久化个人风格，所有 Skill 共享调用",
+          "MIT 协议零依赖可自由定制，hooks 公式库和评分规则均可修改"
+        ],
+        "summary": "13 个开源 Claude Skill 加 5 个本地 Python 评分工具，把 Instagram 内容生产全流程打包进 Claude Code，主打清洗 AI 味。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "内容创作"
+        ],
+        "suitable": [
+          "个人品牌创业者与知识型自由职业者",
+          "社媒代运营与 MCN 内容团队",
+          "Claude Code 重度用户",
+          "想学习 Claude Skill 工程范式的开发者",
+          "需要给文案做 AI 味检测的创作者"
+        ],
+        "description": "MIT 协议开源的 Claude Skill 套件，含 13 个 /ig-* 命令和 5 个本地 Python 评分工具，覆盖 Instagram 选题、钩子、脚本、文案、评论、复盘全流程；设计上生成、评分、发布三层隔离，主打清洗 AI 味，GitHub 6.1k stars，但为单人维护且不自动发布内容。"
+      },
+      "type": "project",
+      "dateAdded": "20261119"
+    },
+    {
       "id": "233864a2-a96e-4e6a-ac1c-dbcac60239c4",
       "url": "https://github.com/solidjs/solid",
       "domain": "github.com",
