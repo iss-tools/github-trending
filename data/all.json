@@ -657,22 +657,24 @@
           "agent-skills",
           "agentic-ai",
           "benchmark",
+          "ci-templates",
           "claude-code",
           "codex",
           "evaluate",
           "evaluation",
+          "harness",
           "plugin",
           "plugin-evaluation",
           "security-scanner",
           "skill-eval",
-          "skill-evals",
           "skill-evaluation",
           "skill-evaluator",
+          "skill-gap-analysis",
           "skills"
         ],
         "license": "Apache-2.0 license",
         "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
-        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
+        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, security scanning, harness compatibility checks, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. Ships reusable CI templates that bring every check to any repository. - NVIDIA/SkillEvaluator"
       },
       "summaryData": {
         "tags": [
