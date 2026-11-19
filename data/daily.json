@@ -113596,9 +113596,9 @@
       "repo": "google-research/paper-orchestra",
       "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
       "language": "Python",
-      "stars": 4226,
-      "forks": 529,
-      "starsAdded": 1529,
+      "stars": 4420,
+      "forks": 545,
+      "starsAdded": 1524,
       "createdAt": "2026-11-18T17:00:02.686Z",
       "metaData": {
         "forks": "0",
@@ -113652,9 +113652,9 @@
       "repo": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 306449,
-      "forks": 45115,
-      "starsAdded": 1109,
+      "stars": 306645,
+      "forks": 45145,
+      "starsAdded": 1108,
       "createdAt": "2026-11-18T17:00:02.742Z",
       "metaData": {
         "forks": "0",
@@ -113713,9 +113713,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 69944,
-      "forks": 6240,
-      "starsAdded": 1062,
+      "stars": 70156,
+      "forks": 6252,
+      "starsAdded": 1059,
       "createdAt": "2026-11-18T17:00:02.658Z",
       "metaData": {
         "forks": "0",
@@ -113787,9 +113787,9 @@
       "repo": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 321292,
-      "forks": 28550,
-      "starsAdded": 823,
+      "stars": 321417,
+      "forks": 28569,
+      "starsAdded": 822,
       "createdAt": "2026-11-18T17:00:02.730Z",
       "metaData": {
         "forks": "0",
@@ -113849,9 +113849,9 @@
       "repo": "sveltejs/svelte",
       "description": "web development for the rest of us",
       "language": "JavaScript",
-      "stars": 89654,
-      "forks": 6214,
-      "starsAdded": 694,
+      "stars": 89653,
+      "forks": 6208,
+      "starsAdded": 692,
       "createdAt": "2026-11-18T17:00:02.695Z",
       "metaData": {
         "forks": "0",
@@ -113906,8 +113906,8 @@
       "repo": "getarcaneapp/arcane",
       "description": "Modern Docker Management, Designed for Everyone",
       "language": "Go",
-      "stars": 9774,
-      "forks": 561,
+      "stars": 9879,
+      "forks": 568,
       "starsAdded": 547,
       "createdAt": "2026-11-18T17:00:02.671Z",
       "metaData": {
@@ -113971,9 +113971,9 @@
       "repo": "HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 59693,
-      "forks": 5422,
-      "starsAdded": 384,
+      "stars": 59893,
+      "forks": 5437,
+      "starsAdded": 389,
       "createdAt": "2026-11-18T17:00:02.653Z",
       "metaData": {
         "forks": "0",
@@ -114024,9 +114024,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 10383,
-      "forks": 1365,
-      "starsAdded": 369,
+      "stars": 10454,
+      "forks": 1370,
+      "starsAdded": 365,
       "createdAt": "2026-11-18T17:00:02.691Z",
       "metaData": {
         "forks": "0",
@@ -114070,78 +114070,6 @@
       }
     },
     {
-      "id": "3463dac2-9a4c-4b63-b1ce-04476366f502",
-      "dateAdded": "20261119",
-      "type": "github-daily",
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "repo": "NVIDIA/SkillEvaluator",
-      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-      "language": "Python",
-      "stars": 3690,
-      "forks": 514,
-      "starsAdded": 323,
-      "createdAt": "2026-11-18T17:00:02.674Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-evaluation",
-          "agent-plugins",
-          "agent-security",
-          "agent-skills",
-          "agentic-ai",
-          "benchmark",
-          "claude-code",
-          "codex",
-          "evaluate",
-          "evaluation",
-          "plugin",
-          "plugin-evaluation",
-          "security-scanner",
-          "skill-eval",
-          "skill-evals",
-          "skill-evaluation",
-          "skill-evaluator",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
-        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
-      },
-      "summaryData": {
-        "tags": [
-          "NVIDIA",
-          "Agent Skills",
-          "Skill Lift",
-          "开源工具",
-          "AI 评测"
-        ],
-        "cover": "",
-        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
-        "ability": [
-          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
-          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
-          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
-          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
-          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
-        ],
-        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "评测工具"
-        ],
-        "suitable": [
-          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
-          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
-          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
-          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
-          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
-        ],
-        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
-      }
-    },
-    {
       "id": "36e915f3-342e-4b70-b063-cbbcd319a7d0",
       "dateAdded": "20261119",
       "type": "github-daily",
@@ -114149,9 +114077,9 @@
       "repo": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "language": "TypeScript",
-      "stars": 211040,
-      "forks": 61568,
-      "starsAdded": 315,
+      "stars": 211168,
+      "forks": 61573,
+      "starsAdded": 325,
       "createdAt": "2026-11-18T17:00:02.751Z",
       "metaData": {
         "forks": "0",
@@ -114223,9 +114151,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 17175,
-      "forks": 1893,
-      "starsAdded": 315,
+      "stars": 17282,
+      "forks": 1907,
+      "starsAdded": 314,
       "createdAt": "2026-11-18T17:00:02.645Z",
       "metaData": {
         "forks": "0",
@@ -114243,67 +114171,75 @@
       }
     },
     {
-      "id": "e58a5bce-b771-47f9-870f-50151402a162",
+      "id": "3463dac2-9a4c-4b63-b1ce-04476366f502",
       "dateAdded": "20261119",
       "type": "github-daily",
-      "url": "https://github.com/DeanChensj/jiangshan-map",
-      "repo": "DeanChensj/jiangshan-map",
-      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
-      "language": "JavaScript",
-      "stars": 7912,
-      "forks": 968,
-      "starsAdded": 280,
-      "createdAt": "2026-11-18T17:00:02.746Z",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "repo": "NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 3807,
+      "forks": 523,
+      "starsAdded": 312,
+      "createdAt": "2026-11-18T17:00:02.674Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "ancient-china",
-          "cartography",
-          "china-map",
-          "chinese-history",
-          "classical-chinese-poetry",
-          "digital-humanities",
-          "gis",
-          "historical-atlas",
-          "historical-map",
-          "interactive-map"
+          "agent-evaluation",
+          "agent-plugins",
+          "agent-security",
+          "agent-skills",
+          "agentic-ai",
+          "benchmark",
+          "claude-code",
+          "codex",
+          "evaluate",
+          "evaluation",
+          "plugin",
+          "plugin-evaluation",
+          "security-scanner",
+          "skill-eval",
+          "skill-evals",
+          "skill-evaluation",
+          "skill-evaluator",
+          "skills"
         ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://deanchen.me/jiangshan-map/",
-        "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes - DeanChensj/jiangshan-map"
+        "license": "Apache-2.0 license",
+        "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+        "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. - NVIDIA/SkillEvaluator"
       },
       "summaryData": {
         "tags": [
-          "开源项目",
-          "中国历史",
-          "交互地图",
-          "AI Agent",
-          "数据可视化"
+          "NVIDIA",
+          "Agent Skills",
+          "Skill Lift",
+          "开源工具",
+          "AI 评测"
         ],
         "cover": "",
-        "title": "江山时序：2400年中国历史交互地图，AI 也能调用的开源舆图引擎",
+        "title": "NVIDIA SkillEvaluator 深度评测：给 AI Agent Skill 装上\"出厂质检机\"",
         "ability": [
-          "拖动时间轴查看18个历史时期164张疆域快照，带残影边界对照",
-          "点击任意古城弹出2400年建置沿革卡与诗词题跋",
-          "内置104位历史人物万里行迹路线动画（李白、苏轼、玄奘等）",
-          "提供AI Agent专用出图协议：URL深链+CLI脚本+JS API，零坐标调用",
-          "舆图寻址挑战模式，凭线索盲猜古地名趣味学习"
+          "Tier 1 结构与安全检查：schema 校验、prompt injection 扫描、密钥泄漏检测，输出 0-100 质量评分",
+          "Tier 2 语义去重：用 embedding 相似度找出 Skill 内部重复指令及与整个 Skill 目录的功能撞车",
+          "Tier 3 真机 A/B 实测：基于 Harbor 框架在 Docker 沙箱中做\"装 vs 不装\"配对实验，输出五维分数与 Skill Lift 增益值",
+          "自动生成评测集（含显式、隐式、负例等 case）并支持人工 review 定制",
+          "CLI / JSON / HTML / Markdown 多格式报告输出，官方提供 GitHub Actions 可复用 workflow 一键接入 CI"
         ],
-        "summary": "一位 Google 工程师用零框架纯前端打造的开源中国历史地图，拖动时间轴就能看2400年王朝疆域流转，还能让大模型一键出历史地图。",
+        "summary": "NVIDIA 开源的 Agent Skill 三级质检流水线，用 Skill Lift 指标量化\"装了 Skill 后 Agent 到底变强多少\"。",
         "category": [
           "开发工具",
-          "教育学习",
-          "数据可视化"
+          "AI 编程",
+          "评测工具"
         ],
         "suitable": [
-          "文史爱好者与学生",
-          "中学/大学历史教师",
-          "AI应用开发者",
-          "前端可视化工程师",
-          "亲子教育家长"
+          "Agent Skill 开发者（想知道自己写的 SKILL.md 是否真有用）",
+          "企业 Agent 平台运营团队（需治理内部 Skill 仓库的质量、重复与安全）",
+          "Skill 市场 / 应用商店方（想给上架 Skill 打可信的 verified 标签）",
+          "Agent 评测研究者（可复用其 Skill Lift 指标与 ACES 方法论）",
+          "普通 Claude Code / Codex 用户（装第三方 Skill 前先扫一遍安全与质量）"
         ],
-        "description": "基于谭其骧《中国历史地图集》、CHGIS等权威数据的开源交互地图，零依赖纯前端架构，git克隆后一行命令即可启动。除展示功能外，它首创面向大模型的零坐标出图协议，可直接装进Claude Code等AI工具当技能使用，让LLM具备绘制历史地理图的能力。"
+        "description": "SkillEvaluator 是 NVIDIA 开源（Apache-2.0）的 Agent Skill 质检工具，像工厂流水线一样对 SKILL.md 做三层检查：结构与安全扫描、语义查重、以及借 Harbor 框架在隔离沙箱中做配对 A/B 实测，核心指标 Skill Lift 直接量化 Skill 带来的能力增益。官方 300+ verified skills 实测显示平均增益 +31 分，但也暴露了 token 消耗可能反增的问题。目前处于 Experimental 阶段，需 Python 3.13+，Tier 3 有 LLM 调用成本。"
       }
     },
     {
@@ -114314,9 +114250,9 @@
       "repo": "jquery/jquery",
       "description": "jQuery JavaScript Library",
       "language": "JavaScript",
-      "stars": 60004,
-      "forks": 20714,
-      "starsAdded": 268,
+      "stars": 60029,
+      "forks": 20709,
+      "starsAdded": 266,
       "createdAt": "2026-11-18T17:00:02.698Z",
       "metaData": {
         "forks": "0",
@@ -114369,9 +114305,9 @@
       "repo": "astral-sh/uv",
       "description": "An extremely fast Python package and project manager, written in Rust.",
       "language": "Rust",
-      "stars": 92210,
-      "forks": 3921,
-      "starsAdded": 260,
+      "stars": 92271,
+      "forks": 3924,
+      "starsAdded": 258,
       "createdAt": "2026-11-18T17:00:02.684Z",
       "metaData": {
         "forks": "0",
@@ -114419,6 +114355,70 @@
       }
     },
     {
+      "id": "c80252cd-822c-4452-b510-64c89878f130",
+      "dateAdded": "20261119",
+      "type": "github-daily",
+      "url": "https://github.com/nvm-sh/nvm",
+      "repo": "nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "stars": 96167,
+      "forks": 10781,
+      "starsAdded": 237,
+      "createdAt": "2026-11-18T17:00:02.679Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "bash",
+          "install",
+          "lts",
+          "node",
+          "node-js",
+          "nodejs",
+          "nvm",
+          "nvmrc",
+          "posix",
+          "posix-compliant",
+          "shell",
+          "version-manager",
+          "zsh"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. - nvm-sh/nvm"
+      },
+      "summaryData": {
+        "tags": [
+          "Node.js",
+          "版本管理",
+          "nvm",
+          "开发工具",
+          "Shell脚本"
+        ],
+        "cover": "",
+        "title": "Node 版本管理的“事实标准”：nvm-sh/nvm 深度评测",
+        "ability": [
+          "多版本共存与切换",
+          "项目级版本控制",
+          "LTS 版本支持",
+          "零侵入环境配置",
+          "镜像源定制"
+        ],
+        "summary": "macOS/Linux/WSL 上管理多版本 Node.js 的首选工具，轻量、稳定且生态成熟。",
+        "category": [
+          "开发工具",
+          "环境配置"
+        ],
+        "suitable": [
+          "前端/Node.js 开发者",
+          "DevOps 工程师",
+          "团队技术负责人"
+        ],
+        "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。"
+      }
+    },
+    {
       "id": "47e297b6-cd20-48f9-b87e-4d9b840f4966",
       "dateAdded": "20261119",
       "type": "github-daily",
@@ -114426,9 +114426,9 @@
       "repo": "appwrite/appwrite",
       "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
       "language": "TypeScript",
-      "stars": 58220,
-      "forks": 5888,
-      "starsAdded": 239,
+      "stars": 58265,
+      "forks": 5884,
+      "starsAdded": 232,
       "createdAt": "2026-11-18T17:00:02.702Z",
       "metaData": {
         "forks": "0",
@@ -114493,67 +114493,67 @@
       }
     },
     {
-      "id": "c80252cd-822c-4452-b510-64c89878f130",
+      "id": "e58a5bce-b771-47f9-870f-50151402a162",
       "dateAdded": "20261119",
       "type": "github-daily",
-      "url": "https://github.com/nvm-sh/nvm",
-      "repo": "nvm-sh/nvm",
-      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-      "language": "Shell",
-      "stars": 96147,
-      "forks": 10782,
-      "starsAdded": 111,
-      "createdAt": "2026-11-18T17:00:02.679Z",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "repo": "DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 8101,
+      "forks": 991,
+      "starsAdded": 218,
+      "createdAt": "2026-11-18T17:00:02.746Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
-          "bash",
-          "install",
-          "lts",
-          "node",
-          "node-js",
-          "nodejs",
-          "nvm",
-          "nvmrc",
-          "posix",
-          "posix-compliant",
-          "shell",
-          "version-manager",
-          "zsh"
+          "ancient-china",
+          "cartography",
+          "china-map",
+          "chinese-history",
+          "classical-chinese-poetry",
+          "digital-humanities",
+          "gis",
+          "historical-atlas",
+          "historical-map",
+          "interactive-map"
         ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. - nvm-sh/nvm"
+        "license": "GPL-3.0 license",
+        "homepage": "https://deanchen.me/jiangshan-map/",
+        "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes - DeanChensj/jiangshan-map"
       },
       "summaryData": {
         "tags": [
-          "Node.js",
-          "版本管理",
-          "nvm",
-          "开发工具",
-          "Shell脚本"
+          "开源项目",
+          "中国历史",
+          "交互地图",
+          "AI Agent",
+          "数据可视化"
         ],
         "cover": "",
-        "title": "Node 版本管理的“事实标准”：nvm-sh/nvm 深度评测",
+        "title": "江山时序：2400年中国历史交互地图，AI 也能调用的开源舆图引擎",
         "ability": [
-          "多版本共存与切换",
-          "项目级版本控制",
-          "LTS 版本支持",
-          "零侵入环境配置",
-          "镜像源定制"
+          "拖动时间轴查看18个历史时期164张疆域快照，带残影边界对照",
+          "点击任意古城弹出2400年建置沿革卡与诗词题跋",
+          "内置104位历史人物万里行迹路线动画（李白、苏轼、玄奘等）",
+          "提供AI Agent专用出图协议：URL深链+CLI脚本+JS API，零坐标调用",
+          "舆图寻址挑战模式，凭线索盲猜古地名趣味学习"
         ],
-        "summary": "macOS/Linux/WSL 上管理多版本 Node.js 的首选工具，轻量、稳定且生态成熟。",
+        "summary": "一位 Google 工程师用零框架纯前端打造的开源中国历史地图，拖动时间轴就能看2400年王朝疆域流转，还能让大模型一键出历史地图。",
         "category": [
           "开发工具",
-          "环境配置"
+          "教育学习",
+          "数据可视化"
         ],
         "suitable": [
-          "前端/Node.js 开发者",
-          "DevOps 工程师",
-          "团队技术负责人"
+          "文史爱好者与学生",
+          "中学/大学历史教师",
+          "AI应用开发者",
+          "前端可视化工程师",
+          "亲子教育家长"
         ],
-        "description": "nvm 是 Node.js 的版本管理事实标准，通过简单的 Shell 命令实现多版本共存、快速切换及项目级配置，无需 sudo 权限，完美适配 macOS/Linux/WSL 环境。"
+        "description": "基于谭其骧《中国历史地图集》、CHGIS等权威数据的开源交互地图，零依赖纯前端架构，git克隆后一行命令即可启动。除展示功能外，它首创面向大模型的零坐标出图协议，可直接装进Claude Code等AI工具当技能使用，让LLM具备绘制历史地理图的能力。"
       }
     },
     {
@@ -114564,9 +114564,9 @@
       "repo": "punkpeye/awesome-mcp-servers",
       "description": "A collection of MCP servers.",
       "language": "",
-      "stars": 97999,
-      "forks": 20347,
-      "starsAdded": 52,
+      "stars": 98094,
+      "forks": 20364,
+      "starsAdded": 53,
       "createdAt": "2026-11-18T17:00:02.755Z",
       "metaData": {
         "forks": "0",
@@ -114620,9 +114620,9 @@
       "repo": "solidjs/solid",
       "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
       "language": "TypeScript",
-      "stars": 36555,
-      "forks": 1182,
-      "starsAdded": 37,
+      "stars": 36631,
+      "forks": 1185,
+      "starsAdded": 40,
       "createdAt": "2026-11-18T17:00:02.753Z",
       "metaData": {
         "forks": "0",
@@ -114682,9 +114682,9 @@
       "repo": "openvinotoolkit/openvino",
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
-      "stars": 11307,
-      "forks": 3601,
-      "starsAdded": 18,
+      "stars": 11368,
+      "forks": 3604,
+      "starsAdded": 24,
       "createdAt": "2026-11-18T17:00:02.705Z",
       "metaData": {
         "forks": "0",
