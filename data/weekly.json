@@ -28114,9 +28114,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 30933,
-      "forks": 2826,
-      "starsAdded": 7248,
+      "stars": 30939,
+      "forks": 2825,
+      "starsAdded": 7539,
       "createdAt": "2026-11-18T11:00:04.508Z",
       "metaData": {
         "forks": "0",
@@ -28251,59 +28251,6 @@
       }
     },
     {
-      "id": "cf795096-3b5f-4d1d-bdbd-c9768f756903",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "repo": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 9518,
-      "forks": 773,
-      "starsAdded": 6858,
-      "createdAt": "2026-11-16T17:00:03.956Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://goo.gle/modern-web-guidance",
-        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
-      },
-      "summaryData": {
-        "tags": [
-          "Chrome",
-          "AI 编码代理",
-          "Web 最佳实践",
-          "开源项目",
-          "Agent Skills"
-        ],
-        "cover": "",
-        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
-        "ability": [
-          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
-          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
-          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
-          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
-          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
-        ],
-        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "重度使用 AI 编码代理的前端工程师",
-          "React / Vue / Next.js 项目维护者",
-          "需要统一现代化标准的企业前端团队",
-          "独立开发者与 Vibe Coder",
-          "设计系统与组件库作者"
-        ],
-        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
-      }
-    },
-    {
       "id": "e02a58bf-1e64-4b3e-af6b-bc0556d52603",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28369,56 +28316,56 @@
       }
     },
     {
-      "id": "6c678940-bc07-40ff-9750-d4450c1cd9e4",
+      "id": "cf795096-3b5f-4d1d-bdbd-c9768f756903",
       "dateAdded": "202647",
       "type": "github-weekly",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 31332,
-      "forks": 2459,
-      "starsAdded": 4977,
-      "createdAt": "2026-11-15T16:00:03.450Z",
+      "stars": 9521,
+      "forks": 768,
+      "starsAdded": 5224,
+      "createdAt": "2026-11-16T17:00:03.956Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
       },
       "summaryData": {
         "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
         ],
         "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
         "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
         ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
         "category": [
           "开发工具",
-          "前端开发",
-          "AI 编程"
+          "AI 编程",
+          "前端开发"
         ],
         "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
         ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
       }
     },
     {
@@ -28429,9 +28376,9 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 54755,
-      "forks": 4527,
-      "starsAdded": 4492,
+      "stars": 54766,
+      "forks": 4523,
+      "starsAdded": 4457,
       "createdAt": "2026-11-16T17:00:04.097Z",
       "metaData": {
         "forks": "0",
@@ -28606,6 +28553,59 @@
       }
     },
     {
+      "id": "6c678940-bc07-40ff-9750-d4450c1cd9e4",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 31341,
+      "forks": 2460,
+      "starsAdded": 4131,
+      "createdAt": "2026-11-15T16:00:03.450Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "2dd167a9-1fd3-4fec-bd39-80ada30c7976",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28663,6 +28663,139 @@
           "AI工具集成商"
         ],
         "description": "agent-skills 是一个开源项目，提供了一套基于 Markdown 的 AI 技能包，旨在将资深工程师的最佳实践（如编写规格说明书、测试驱动开发、代码审查）转化为 AI 可执行的步骤。它覆盖从需求到上线的全流程，帮助提升代码质量与团队协作效率。"
+      }
+    },
+    {
+      "id": "6b6ac6fa-fa88-48a5-950c-f0a05b1e074f",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 71431,
+      "forks": 6343,
+      "starsAdded": 3788,
+      "createdAt": "2026-11-18T11:00:04.500Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
+      "id": "69c51077-b978-46e6-811a-926e2c687677",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "repo": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 20814,
+      "forks": 2125,
+      "starsAdded": 3621,
+      "createdAt": "2026-11-18T11:00:04.502Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "license": "MIT license",
+        "homepage": "https://ag-ui.com",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
+      },
+      "summaryData": {
+        "tags": [
+          "AG-UI",
+          "Agent协议",
+          "CopilotKit",
+          "前端交互",
+          "Human-in-the-Loop"
+        ],
+        "cover": "",
+        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
+        "ability": [
+          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
+          "支持双向通信与 Human-in-the-Loop 人工审批中断",
+          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
+          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
+          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
+        ],
+        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "正在做产品级 Agent 应用的全栈团队",
+          "需要在多个产品中嵌入 Agent 能力的企业开发者",
+          "需要人工审批介入的金融/医疗/运维等严肃业务",
+          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
+          "想了解 Agent 基础设施演进方向的架构师"
+        ],
+        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
       }
     },
     {
@@ -28734,9 +28867,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 13879,
-      "forks": 1397,
-      "starsAdded": 3468,
+      "stars": 13888,
+      "forks": 1389,
+      "starsAdded": 3555,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
         "forks": "0",
@@ -28789,65 +28922,6 @@
       }
     },
     {
-      "id": "69c51077-b978-46e6-811a-926e2c687677",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/ag-ui-protocol/ag-ui",
-      "repo": "ag-ui-protocol/ag-ui",
-      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "language": "TypeScript",
-      "stars": 20806,
-      "forks": 2130,
-      "starsAdded": 3455,
-      "createdAt": "2026-11-18T11:00:04.502Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ag-ui-protocol",
-          "agent-frontend",
-          "agent-ui",
-          "agentic-workflow",
-          "ai-agents"
-        ],
-        "license": "MIT license",
-        "homepage": "https://ag-ui.com",
-        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. - ag-ui-protocol/ag-ui"
-      },
-      "summaryData": {
-        "tags": [
-          "AG-UI",
-          "Agent协议",
-          "CopilotKit",
-          "前端交互",
-          "Human-in-the-Loop"
-        ],
-        "cover": "",
-        "title": "AG-UI Protocol 深度评测：Agent 与前端交互的开放标准协议",
-        "ability": [
-          "通过约 30 种标准事件类型实现 Agent 行为的流式实时播报（文本、工具调用、状态同步等）",
-          "支持双向通信与 Human-in-the-Loop 人工审批中断",
-          "提供快照+增量 diff 的 Agent-前端共享状态同步机制",
-          "传输无关（SSE/WebSocket/Webhook 均可承载），跨语言跨框架解耦",
-          "提供 TS/Python/.NET 官方 SDK，一行命令 npx create-ag-ui-app 快速上手"
-        ],
-        "summary": "AG-UI 是让 AI Agent 与前端界面标准化通信的开放协议，被称为 Agent 协议栈继 MCP、A2A 之后的'第三极'",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "正在做产品级 Agent 应用的全栈团队",
-          "需要在多个产品中嵌入 Agent 能力的企业开发者",
-          "需要人工审批介入的金融/医疗/运维等严肃业务",
-          "在 LangChain/Mastra/CrewAI 等框架间切换的团队",
-          "想了解 Agent 基础设施演进方向的架构师"
-        ],
-        "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
-      }
-    },
-    {
       "id": "fda322a8-92a8-4509-95d4-3c426f416a5a",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28855,9 +28929,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7426,
+      "stars": 7432,
       "forks": 1479,
-      "starsAdded": 3385,
+      "starsAdded": 3471,
       "createdAt": "2026-11-17T11:00:03.757Z",
       "metaData": {
         "forks": "0",
@@ -28908,9 +28982,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58529,
-      "forks": 4886,
-      "starsAdded": 3229,
+      "stars": 58533,
+      "forks": 4883,
+      "starsAdded": 3306,
       "createdAt": "2026-11-17T11:00:03.755Z",
       "metaData": {
         "forks": "0",
@@ -28963,133 +29037,6 @@
       }
     },
     {
-      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 16900,
-      "forks": 1491,
-      "starsAdded": 3226,
-      "createdAt": "2026-11-15T16:00:03.926Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
-      "id": "6b6ac6fa-fa88-48a5-950c-f0a05b1e074f",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "repo": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 71408,
-      "forks": 6347,
-      "starsAdded": 3179,
-      "createdAt": "2026-11-18T11:00:04.500Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-prompts",
-          "ai-skill",
-          "bluesky",
-          "claude",
-          "claude-code",
-          "clawhub",
-          "deep-research",
-          "hackernews",
-          "instagram",
-          "openclaw",
-          "polymarket",
-          "recency",
-          "reddit",
-          "research",
-          "social-media",
-          "tiktok",
-          "trends",
-          "twitter",
-          "web-search",
-          "youtube"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "AI Agent",
-          "舆情分析",
-          "信息搜集",
-          "Claude Skill"
-        ],
-        "cover": "",
-        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
-        "ability": [
-          "多源实时聚合",
-          "AI生成带引用简报",
-          "真实参与度排序",
-          "多AI平台集成",
-          "本地隐私保护"
-        ],
-        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
-        "category": [
-          "AI工具",
-          "信息聚合",
-          "效率工具"
-        ],
-        "suitable": [
-          "内容创作者",
-          "投资人",
-          "产品经理",
-          "开发者",
-          "科技爱好者"
-        ],
-        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
-      }
-    },
-    {
       "id": "9970a4e6-0c5b-4753-ad2a-25de3bdeb001",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -29097,9 +29044,9 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 8811,
-      "forks": 807,
-      "starsAdded": 2998,
+      "stars": 8827,
+      "forks": 808,
+      "starsAdded": 3268,
       "createdAt": "2026-11-19T12:00:53.063Z",
       "metaData": {
         "forks": "0",
@@ -29356,6 +29303,59 @@
       }
     },
     {
+      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 16906,
+      "forks": 1488,
+      "starsAdded": 2476,
+      "createdAt": "2026-11-15T16:00:03.926Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
       "id": "7150f683-77b5-4e64-bc76-3887483bd1e1",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -29363,9 +29363,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11010,
+      "stars": 11021,
       "forks": 1406,
-      "starsAdded": 1829,
+      "starsAdded": 2152,
       "createdAt": "2026-11-17T11:00:03.758Z",
       "metaData": {
         "forks": "0",
@@ -29541,7 +29541,7 @@
       "language": "Objective-C",
       "stars": 2300,
       "forks": 192,
-      "starsAdded": 904,
+      "starsAdded": 582,
       "createdAt": "2026-11-19T12:00:53.039Z",
       "metaData": {
         "forks": "0",
