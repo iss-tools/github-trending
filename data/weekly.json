@@ -28114,9 +28114,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31094,
-      "forks": 2833,
-      "starsAdded": 7539,
+      "stars": 31099,
+      "forks": 2834,
+      "starsAdded": 7240,
       "createdAt": "2026-11-18T11:00:04.508Z",
       "metaData": {
         "forks": "0",
@@ -28323,9 +28323,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 9881,
+      "stars": 9890,
       "forks": 789,
-      "starsAdded": 5224,
+      "starsAdded": 4400,
       "createdAt": "2026-11-16T17:00:03.956Z",
       "metaData": {
         "forks": "0",
@@ -28366,65 +28366,6 @@
           "设计系统与组件库作者"
         ],
         "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
-      }
-    },
-    {
-      "id": "639206a1-18b5-4fa1-8ab5-4eb87353103b",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 55086,
-      "forks": 4561,
-      "starsAdded": 4457,
-      "createdAt": "2026-11-16T17:00:04.097Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
-      },
-      "summaryData": {
-        "tags": [
-          "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
-        ],
-        "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
-        "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
-        ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "DevOps"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
-        ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
       }
     },
     {
@@ -28553,6 +28494,139 @@
       }
     },
     {
+      "id": "6b6ac6fa-fa88-48a5-950c-f0a05b1e074f",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 71988,
+      "forks": 6373,
+      "starsAdded": 4198,
+      "createdAt": "2026-11-18T11:00:04.500Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
+      "id": "639206a1-18b5-4fa1-8ab5-4eb87353103b",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 55099,
+      "forks": 4563,
+      "starsAdded": 4032,
+      "createdAt": "2026-11-16T17:00:04.097Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
       "id": "6c678940-bc07-40ff-9750-d4450c1cd9e4",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28560,9 +28634,9 @@
       "repo": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 31781,
-      "forks": 2497,
-      "starsAdded": 4131,
+      "stars": 31796,
+      "forks": 2498,
+      "starsAdded": 3967,
       "createdAt": "2026-11-15T16:00:03.450Z",
       "metaData": {
         "forks": "0",
@@ -28666,80 +28740,6 @@
       }
     },
     {
-      "id": "6b6ac6fa-fa88-48a5-950c-f0a05b1e074f",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "repo": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 71959,
-      "forks": 6372,
-      "starsAdded": 3788,
-      "createdAt": "2026-11-18T11:00:04.500Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-prompts",
-          "ai-skill",
-          "bluesky",
-          "claude",
-          "claude-code",
-          "clawhub",
-          "deep-research",
-          "hackernews",
-          "instagram",
-          "openclaw",
-          "polymarket",
-          "recency",
-          "reddit",
-          "research",
-          "social-media",
-          "tiktok",
-          "trends",
-          "twitter",
-          "web-search",
-          "youtube"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "AI Agent",
-          "舆情分析",
-          "信息搜集",
-          "Claude Skill"
-        ],
-        "cover": "",
-        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
-        "ability": [
-          "多源实时聚合",
-          "AI生成带引用简报",
-          "真实参与度排序",
-          "多AI平台集成",
-          "本地隐私保护"
-        ],
-        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
-        "category": [
-          "AI工具",
-          "信息聚合",
-          "效率工具"
-        ],
-        "suitable": [
-          "内容创作者",
-          "投资人",
-          "产品经理",
-          "开发者",
-          "科技爱好者"
-        ],
-        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
-      }
-    },
-    {
       "id": "69c51077-b978-46e6-811a-926e2c687677",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -28747,9 +28747,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21003,
-      "forks": 2141,
-      "starsAdded": 3621,
+      "stars": 21011,
+      "forks": 2142,
+      "starsAdded": 3792,
       "createdAt": "2026-11-18T11:00:04.502Z",
       "metaData": {
         "forks": "0",
@@ -28796,6 +28796,80 @@
           "想了解 Agent 基础设施演进方向的架构师"
         ],
         "description": "AG-UI 是 CopilotKit 团队开源的 Agent 与前端交互标准协议（GitHub 约 17K Star），已被 Google ADK、Microsoft Agent Framework、AWS Bedrock 等 20+ 主流框架原生采纳。它通过约 30 种标准事件类型，消除 Agent 框架与前端之间反复编写胶水代码的痛点，采用 MIT 协议完全可商用，是 Agent 协议栈中继 MCP、A2A 之后的'第三极'。"
+      }
+    },
+    {
+      "id": "9970a4e6-0c5b-4753-ad2a-25de3bdeb001",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "repo": "kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars": 9269,
+      "forks": 836,
+      "starsAdded": 3598,
+      "createdAt": "2026-11-19T12:00:53.063Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "audio-processing",
+          "captions",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "cursor",
+          "ffmpeg",
+          "gemini-cli-extension",
+          "loudness-normalization",
+          "mcp",
+          "mcp-server",
+          "model-context-protocol",
+          "python",
+          "subtitles",
+          "transcoding",
+          "video",
+          "video-editing",
+          "whisper"
+        ],
+        "license": "MIT license",
+        "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+        "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "ffmpeg",
+          "AI Agent Skill",
+          "MCP",
+          "视频剪辑",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "ffmpeg-skill 深度评测：给 AI 编程助手装上一个本地视频剪辑师",
+        "ability": [
+          "42 个结构化工具覆盖剪辑、音频、字幕、调色、批量交付全流程",
+          "自然语言驱动，Agent 自动探测、生成并校验 FFmpeg 命令",
+          "内置 YouTube/TikTok/Reels 等平台合规检查与一键预设导出",
+          "SPEC 自产契约 + MCP 双形态接入，schema 与文档永不漂移",
+          "100% 本地离线执行，不上传素材、无需 API Key"
+        ],
+        "summary": "把 FFmpeg 封装成 42 个 AI Agent 可直接调用的本地视频工具，一句话完成剪辑、转码与平台合规交付，全程离线免费。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "开发者 / Vlogger 双重身份用户",
+          "独立创作者与课程博主",
+          "播客主理人",
+          "多机位视频工作者",
+          "想给 Agent 接入媒体能力的 AI 工程师"
+        ],
+        "description": "ffmpeg-skill 是一个 MIT 协议的开源 AI Agent Skill，将强大的 FFmpeg 封装为 42 个结构化本地工具，兼容 Claude Code、Cursor、Codex 与 MCP。它强制遵循先探测、能无损就无损、渲染前预演、结果校验的工程化流程，内置主流平台合规检查，一行 npx 命令即可安装，让 AI 用自然语言完成专业级视频剪辑交付。"
       }
     },
     {
@@ -28867,9 +28941,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 14149,
-      "forks": 1408,
-      "starsAdded": 3555,
+      "stars": 14161,
+      "forks": 1410,
+      "starsAdded": 3396,
       "createdAt": "2026-11-15T16:00:03.809Z",
       "metaData": {
         "forks": "0",
@@ -28929,9 +29003,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7609,
+      "stars": 7622,
       "forks": 1480,
-      "starsAdded": 3471,
+      "starsAdded": 3113,
       "createdAt": "2026-11-17T11:00:03.757Z",
       "metaData": {
         "forks": "0",
@@ -28972,142 +29046,6 @@
           "想做系统化策略回测的个人研究者"
         ],
         "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
-      }
-    },
-    {
-      "id": "d1f8f2c9-fd45-47ae-b1ad-5de545fe9063",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "repo": "ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "language": "TypeScript",
-      "stars": 58686,
-      "forks": 4904,
-      "starsAdded": 3306,
-      "createdAt": "2026-11-17T11:00:03.755Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "browser",
-          "chrome",
-          "chrome-devtools",
-          "debugging",
-          "devtools",
-          "mcp",
-          "mcp-server",
-          "puppeteer"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://developer.chrome.com/docs/devtools/agents",
-        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "Chrome",
-          "DevTools",
-          "MCP",
-          "Puppeteer",
-          "自动化测试"
-        ],
-        "cover": "",
-        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
-        "ability": [
-          "浏览器自动化操控",
-          "深度调试与性能分析",
-          "网络请求监控",
-          "Lighthouse 性能审计",
-          "MCP 协议标准集成"
-        ],
-        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "测试工具"
-        ],
-        "suitable": [
-          "前端/全栈开发者",
-          "QA/SRE 工程师",
-          "自动化测试人员",
-          "性能优化专家",
-          "AI 编程深度用户"
-        ],
-        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
-      }
-    },
-    {
-      "id": "9970a4e6-0c5b-4753-ad2a-25de3bdeb001",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/kajisho5/ffmpeg-skill",
-      "repo": "kajisho5/ffmpeg-skill",
-      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "language": "Python",
-      "stars": 9254,
-      "forks": 836,
-      "starsAdded": 3268,
-      "createdAt": "2026-11-19T12:00:53.063Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "audio-processing",
-          "captions",
-          "claude-code",
-          "codex",
-          "coding-agent",
-          "cursor",
-          "ffmpeg",
-          "gemini-cli-extension",
-          "loudness-normalization",
-          "mcp",
-          "mcp-server",
-          "model-context-protocol",
-          "python",
-          "subtitles",
-          "transcoding",
-          "video",
-          "video-editing",
-          "whisper"
-        ],
-        "license": "MIT license",
-        "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
-        "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. - kajisho5/ffmpeg-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "ffmpeg",
-          "AI Agent Skill",
-          "MCP",
-          "视频剪辑",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "ffmpeg-skill 深度评测：给 AI 编程助手装上一个本地视频剪辑师",
-        "ability": [
-          "42 个结构化工具覆盖剪辑、音频、字幕、调色、批量交付全流程",
-          "自然语言驱动，Agent 自动探测、生成并校验 FFmpeg 命令",
-          "内置 YouTube/TikTok/Reels 等平台合规检查与一键预设导出",
-          "SPEC 自产契约 + MCP 双形态接入，schema 与文档永不漂移",
-          "100% 本地离线执行，不上传素材、无需 API Key"
-        ],
-        "summary": "把 FFmpeg 封装成 42 个 AI Agent 可直接调用的本地视频工具，一句话完成剪辑、转码与平台合规交付，全程离线免费。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "视频创作"
-        ],
-        "suitable": [
-          "开发者 / Vlogger 双重身份用户",
-          "独立创作者与课程博主",
-          "播客主理人",
-          "多机位视频工作者",
-          "想给 Agent 接入媒体能力的 AI 工程师"
-        ],
-        "description": "ffmpeg-skill 是一个 MIT 协议的开源 AI Agent Skill，将强大的 FFmpeg 封装为 42 个结构化本地工具，兼容 Claude Code、Cursor、Codex 与 MCP。它强制遵循先探测、能无损就无损、渲染前预演、结果校验的工程化流程，内置主流平台合规检查，一行 npx 命令即可安装，让 AI 用自然语言完成专业级视频剪辑交付。"
       }
     },
     {
@@ -29161,6 +29099,68 @@
           "轻量级网页采集与表单自动化需求者"
         ],
         "description": "Agent-Browser 是 Vercel Labs 开源的浏览器自动化 CLI（GitHub 43.9k Stars），专为 AI Agent 时代重新设计。通过 Rust 原生实现与 Snapshot+Ref 创新机制，将浏览器操作的上下文消耗降低 80% 以上，一行命令即可接入主流 AI 编程工具，让 Agent 自动完成网页操作、E2E 测试与结果验证。局限是仅支持 Chrome 内核，项目较年轻 API 仍有变动。"
+      }
+    },
+    {
+      "id": "d1f8f2c9-fd45-47ae-b1ad-5de545fe9063",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 58692,
+      "forks": 4905,
+      "starsAdded": 2795,
+      "createdAt": "2026-11-17T11:00:03.755Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://developer.chrome.com/docs/devtools/agents",
+        "description": "Chrome DevTools for coding agents. Contribute to ChromeDevTools/chrome-devtools-mcp development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "DevTools",
+          "MCP",
+          "Puppeteer",
+          "自动化测试"
+        ],
+        "cover": "",
+        "title": "Chrome DevTools MCP 深度评测：给 AI 装上浏览器的眼睛",
+        "ability": [
+          "浏览器自动化操控",
+          "深度调试与性能分析",
+          "网络请求监控",
+          "Lighthouse 性能审计",
+          "MCP 协议标准集成"
+        ],
+        "summary": "Google Chrome 官方开源的 MCP 服务器，让 AI 助手能直接操控真实浏览器进行调试与测试。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "测试工具"
+        ],
+        "suitable": [
+          "前端/全栈开发者",
+          "QA/SRE 工程师",
+          "自动化测试人员",
+          "性能优化专家",
+          "AI 编程深度用户"
+        ],
+        "description": "该项目通过 MCP 标准将 Chrome DevTools Protocol 暴露给 AI，支持页面导航、点击、截图、内存堆快照及性能追踪，让 Claude、Cursor 等 AI 助手能在真实浏览器中执行调试任务，极大提升开发与测试效率。"
       }
     },
     {
@@ -29303,59 +29303,6 @@
       }
     },
     {
-      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
-      "dateAdded": "202647",
-      "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 17130,
-      "forks": 1498,
-      "starsAdded": 2476,
-      "createdAt": "2026-11-15T16:00:03.926Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
       "id": "7150f683-77b5-4e64-bc76-3887483bd1e1",
       "dateAdded": "202647",
       "type": "github-weekly",
@@ -29363,9 +29310,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11389,
-      "forks": 1435,
-      "starsAdded": 2152,
+      "stars": 11412,
+      "forks": 1439,
+      "starsAdded": 2431,
       "createdAt": "2026-11-17T11:00:03.758Z",
       "metaData": {
         "forks": "0",
@@ -29406,6 +29353,59 @@
           "希望打通设计到代码工作流的小型团队"
         ],
         "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
+      "id": "8cdf1290-85ed-4879-85b3-c7ea77639028",
+      "dateAdded": "202647",
+      "type": "github-weekly",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 17137,
+      "forks": 1498,
+      "starsAdded": 2041,
+      "createdAt": "2026-11-15T16:00:03.926Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
       }
     },
     {
@@ -29539,9 +29539,9 @@
       "repo": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2347,
+      "stars": 2352,
       "forks": 198,
-      "starsAdded": 582,
+      "starsAdded": 524,
       "createdAt": "2026-11-19T12:00:53.039Z",
       "metaData": {
         "forks": "0",
