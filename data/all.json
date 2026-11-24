@@ -1,6 +1,35 @@
 {
   "all": [
     {
+      "id": "264a86f9-f471-4009-afef-3d436b88c47b",
+      "url": "https://github.com/yetone/magpie",
+      "domain": "github.com",
+      "repo": "yetone/magpie",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "createdAt": "2026-11-24T04:07:32.076Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "claude-code",
+          "codex",
+          "deepseek",
+          "gemini-cli",
+          "llm",
+          "macos"
+        ],
+        "license": "MIT license",
+        "homepage": "https://usemagpie.ai",
+        "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar. - yetone/magpie"
+      },
+      "summaryData": null,
+      "type": "project",
+      "dateAdded": "20261124"
+    },
+    {
       "id": "a0bb6892-ff70-49bb-8e93-d01152061445",
       "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
       "domain": "github.com",
@@ -1227,7 +1256,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
-        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
       },
       "summaryData": {
         "tags": [
@@ -21258,7 +21287,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [

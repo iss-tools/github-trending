@@ -6234,7 +6234,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [
@@ -9102,7 +9102,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [
@@ -19297,7 +19297,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [
@@ -21046,7 +21046,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
       },
       "summaryData": {
         "tags": [
@@ -29312,7 +29312,7 @@
         ],
         "license": "MIT license",
         "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
-        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
+        "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. - elementalsouls/Claude-BugHunter"
       },
       "summaryData": {
         "tags": [
@@ -29632,80 +29632,6 @@
   ],
   "202648": [
     {
-      "id": "6b330913-b535-4c0b-b1ea-e979541b8c4e",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/dream-num/univer",
-      "repo": "dream-num/univer",
-      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "language": "TypeScript",
-      "stars": 31295,
-      "forks": 2845,
-      "starsAdded": 6436,
-      "createdAt": "2026-11-22T19:00:39.918Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "board",
-          "collaboration",
-          "doc",
-          "docx",
-          "excel",
-          "offce365",
-          "office",
-          "pdf",
-          "ppt",
-          "pptx",
-          "presentation",
-          "sdk",
-          "sheet",
-          "slides",
-          "spreadsheet",
-          "univer",
-          "word",
-          "wordprocessor",
-          "workspace",
-          "xlsx"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://univer.ai",
-        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
-      },
-      "summaryData": {
-        "tags": [
-          "Univer",
-          "开源",
-          "在线表格",
-          "Office SDK",
-          "AI Agent"
-        ],
-        "cover": "",
-        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
-        "ability": [
-          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
-          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
-          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
-          "原生实时多人协作（OT 算法，支持 200 人并发）",
-          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
-        ],
-        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
-        "category": [
-          "开发工具",
-          "开源项目",
-          "办公协作"
-        ],
-        "suitable": [
-          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
-          "BI/报表平台团队",
-          "协同办公与知识库产品团队",
-          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
-          "企业内部工具团队与独立开发者"
-        ],
-        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
-      }
-    },
-    {
       "id": "7d9318c1-daf5-4305-ac1d-a6daccacf2c9",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29713,9 +29639,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72822,
-      "forks": 6430,
-      "starsAdded": 4731,
+      "stars": 73573,
+      "forks": 6493,
+      "starsAdded": 5448,
       "createdAt": "2026-11-22T19:00:39.902Z",
       "metaData": {
         "forks": "0",
@@ -29780,6 +29706,80 @@
       }
     },
     {
+      "id": "6b330913-b535-4c0b-b1ea-e979541b8c4e",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/dream-num/univer",
+      "repo": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 31533,
+      "forks": 2846,
+      "starsAdded": 4324,
+      "createdAt": "2026-11-22T19:00:39.918Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "board",
+          "collaboration",
+          "doc",
+          "docx",
+          "excel",
+          "offce365",
+          "office",
+          "pdf",
+          "ppt",
+          "pptx",
+          "presentation",
+          "sdk",
+          "sheet",
+          "slides",
+          "spreadsheet",
+          "univer",
+          "word",
+          "wordprocessor",
+          "workspace",
+          "xlsx"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://univer.ai",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core. - dream-num/univer"
+      },
+      "summaryData": {
+        "tags": [
+          "Univer",
+          "开源",
+          "在线表格",
+          "Office SDK",
+          "AI Agent"
+        ],
+        "cover": "",
+        "title": "Univer 深度评测：把 Excel 装进浏览器的全栈 Office SDK",
+        "ability": [
+          "嵌入式在线表格/文档/幻灯片编辑器（类 Excel/Word/PPT）",
+          "高性能 Canvas 渲染 + 500+ 公式引擎，600 万单元格流畅滚动",
+          "同构架构：浏览器与 Node.js 服务端 Headless 双端运行",
+          "原生实时多人协作（OT 算法，支持 200 人并发）",
+          "AI 原生：MCP 集成 + Facade API，Agent 可用自然语言操作表格"
+        ],
+        "summary": "Luckysheet 团队打造的下一代开源 Office SDK，让 Web 应用一键嵌入类 Excel/Word/PPT 编辑器。",
+        "category": [
+          "开发工具",
+          "开源项目",
+          "办公协作"
+        ],
+        "suitable": [
+          "需要在产品中嵌入在线表格编辑器的 SaaS 开发者",
+          "BI/报表平台团队",
+          "协同办公与知识库产品团队",
+          "想让 AI Agent 操作 Office 文件的 AI 应用开发者",
+          "企业内部工具团队与独立开发者"
+        ],
+        "description": "Univer 是 Luckysheet 原班人马用 TypeScript 全新重写的开源 Office SDK，采用微内核+插件化架构，支持 Canvas 高性能渲染、浏览器与 Node.js 同构运行、实时协作及 AI Agent（MCP）集成。Apache-2.0 协议可免费商用，但实时协作、XLSX 导入导出等企业级能力需购买 Pro 版。"
+      }
+    },
+    {
       "id": "25004d78-7b22-4212-894e-385d57ad2c8c",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29787,9 +29787,9 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9792,
-      "forks": 869,
-      "starsAdded": 3748,
+      "stars": 10312,
+      "forks": 900,
+      "starsAdded": 3891,
       "createdAt": "2026-11-22T19:00:39.920Z",
       "metaData": {
         "forks": "0",
@@ -29854,6 +29854,59 @@
       }
     },
     {
+      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 32623,
+      "forks": 2562,
+      "starsAdded": 3165,
+      "createdAt": "2026-11-22T19:00:39.912Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "4f15eade-3131-4ac8-b80b-528bf90b74f3",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29861,9 +29914,9 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55443,
-      "forks": 4605,
-      "starsAdded": 3700,
+      "stars": 55782,
+      "forks": 4616,
+      "starsAdded": 3015,
       "createdAt": "2026-11-22T19:00:39.900Z",
       "metaData": {
         "forks": "0",
@@ -29913,59 +29966,6 @@
       }
     },
     {
-      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 32271,
-      "forks": 2533,
-      "starsAdded": 3626,
-      "createdAt": "2026-11-22T19:00:39.912Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
-      },
-      "summaryData": {
-        "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
-        ],
-        "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
-        "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
-        ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
-        "category": [
-          "开发工具",
-          "前端开发",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
-        ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
-      }
-    },
-    {
       "id": "0277163c-d781-4dee-a6e4-48c6c2343839",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29973,9 +29973,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21220,
-      "forks": 2157,
-      "starsAdded": 3620,
+      "stars": 21424,
+      "forks": 2161,
+      "starsAdded": 2966,
       "createdAt": "2026-11-22T19:00:39.911Z",
       "metaData": {
         "forks": "0",
@@ -30032,9 +30032,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 10248,
-      "forks": 810,
-      "starsAdded": 3575,
+      "stars": 10575,
+      "forks": 814,
+      "starsAdded": 2694,
       "createdAt": "2026-11-22T19:00:39.898Z",
       "metaData": {
         "forks": "0",
@@ -30078,6 +30078,59 @@
       }
     },
     {
+      "id": "1bc009a6-bd08-4034-9a36-b0e9c905a461",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 12380,
+      "forks": 1517,
+      "starsAdded": 2572,
+      "createdAt": "2026-11-22T19:00:39.896Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
       "id": "5cd43540-bb7c-472f-ba10-7c5e845583ce",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30085,9 +30138,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 14469,
-      "forks": 1431,
-      "starsAdded": 2815,
+      "stars": 14713,
+      "forks": 1428,
+      "starsAdded": 2395,
       "createdAt": "2026-11-22T19:00:39.892Z",
       "metaData": {
         "forks": "0",
@@ -30140,59 +30193,6 @@
       }
     },
     {
-      "id": "1bc009a6-bd08-4034-9a36-b0e9c905a461",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "repo": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 11961,
-      "forks": 1475,
-      "starsAdded": 2683,
-      "createdAt": "2026-11-22T19:00:39.896Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Google Stitch",
-          "Agent Skills",
-          "AI 编程",
-          "设计转代码",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
-        "ability": [
-          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
-          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
-          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
-          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
-          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
-        ],
-        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "UI 设计"
-        ],
-        "suitable": [
-          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
-          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
-          "想在前期头脑风暴中快速出设计方向的设计师",
-          "想学习如何编写高质量 Agent Skill 的开发者",
-          "希望打通设计到代码工作流的小型团队"
-        ],
-        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
-      }
-    },
-    {
       "id": "11012dcd-c1ba-4837-bfc4-2e04bfe1d307",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30200,9 +30200,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7812,
-      "forks": 1497,
-      "starsAdded": 2616,
+      "stars": 8119,
+      "forks": 1515,
+      "starsAdded": 1903,
       "createdAt": "2026-11-22T19:00:39.907Z",
       "metaData": {
         "forks": "0",
@@ -30246,6 +30246,59 @@
       }
     },
     {
+      "id": "daf7fc30-e079-4307-874c-e152aac15f3f",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 17611,
+      "forks": 1537,
+      "starsAdded": 1612,
+      "createdAt": "2026-11-22T19:00:39.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
       "id": "9496b3e0-9e1c-47c8-b9c6-ec8f9a54b31a",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30253,9 +30306,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58864,
-      "forks": 4919,
-      "starsAdded": 2268,
+      "stars": 59072,
+      "forks": 4910,
+      "starsAdded": 1581,
       "createdAt": "2026-11-22T19:00:39.905Z",
       "metaData": {
         "forks": "0",
@@ -30308,59 +30361,6 @@
       }
     },
     {
-      "id": "daf7fc30-e079-4307-874c-e152aac15f3f",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 17369,
-      "forks": 1526,
-      "starsAdded": 1771,
-      "createdAt": "2026-11-22T19:00:39.916Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
       "id": "ca27c386-a55c-4539-87d0-b90015c41734",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30368,9 +30368,9 @@
       "repo": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2408,
-      "forks": 200,
-      "starsAdded": 461,
+      "stars": 2458,
+      "forks": 205,
+      "starsAdded": 390,
       "createdAt": "2026-11-22T19:00:39.914Z",
       "metaData": {
         "forks": "0",
