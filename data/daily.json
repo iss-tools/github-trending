@@ -119547,9 +119547,9 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 20368,
-      "forks": 2144,
-      "starsAdded": 2029,
+      "stars": 20698,
+      "forks": 2182,
+      "starsAdded": 1833,
       "createdAt": "2026-11-24T04:00:02.385Z",
       "metaData": {
         "forks": "0",
@@ -119617,9 +119617,9 @@
       "repo": "XiaoYouChR/Ghost-Downloader-3",
       "description": "The only downloader you need. 下载器的集大成者。",
       "language": "Python",
-      "stars": 16782,
-      "forks": 1013,
-      "starsAdded": 1087,
+      "stars": 16975,
+      "forks": 1023,
+      "starsAdded": 1102,
       "createdAt": "2026-11-24T04:00:02.562Z",
       "metaData": {
         "forks": "0",
@@ -119683,6 +119683,121 @@
       }
     },
     {
+      "id": "78b2e85c-3bbb-4236-ac54-2f37ffacdaab",
+      "dateAdded": "20261124",
+      "type": "github-daily",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 64283,
+      "forks": 5853,
+      "starsAdded": 1075,
+      "createdAt": "2026-11-24T04:00:02.513Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      }
+    },
+    {
+      "id": "9400a96b-4822-433c-a339-29a2951ebc78",
+      "dateAdded": "20261124",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 325574,
+      "forks": 28876,
+      "starsAdded": 1006,
+      "createdAt": "2026-11-24T04:00:02.498Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
       "id": "ec10581e-4e00-44f3-b23f-6765afd62e4e",
       "dateAdded": "20261124",
       "type": "github-daily",
@@ -119690,9 +119805,9 @@
       "repo": "firecrawl/firecrawl",
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "language": "TypeScript",
-      "stars": 208277,
-      "forks": 10881,
-      "starsAdded": 924,
+      "stars": 208435,
+      "forks": 10893,
+      "starsAdded": 990,
       "createdAt": "2026-11-24T04:00:02.540Z",
       "metaData": {
         "forks": "0",
@@ -119763,9 +119878,9 @@
       "repo": "zhouxiaoka/autoclip",
       "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "language": "Python",
-      "stars": 14875,
-      "forks": 2241,
-      "starsAdded": 907,
+      "stars": 15065,
+      "forks": 2251,
+      "starsAdded": 981,
       "createdAt": "2026-11-24T04:00:02.571Z",
       "metaData": {
         "forks": "0",
@@ -119825,251 +119940,6 @@
       }
     },
     {
-      "id": "9400a96b-4822-433c-a339-29a2951ebc78",
-      "dateAdded": "20261124",
-      "type": "github-daily",
-      "url": "https://github.com/obra/superpowers",
-      "repo": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 325433,
-      "forks": 28861,
-      "starsAdded": 840,
-      "createdAt": "2026-11-24T04:00:02.498Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "工作流自动化",
-          "TDD",
-          "代码质量",
-          "Prompt工程"
-        ],
-        "cover": "",
-        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
-        "ability": [
-          "标准化工程流程",
-          "强制测试驱动开发 (TDD)",
-          "跨 AI 工具兼容",
-          "自动化代码评审",
-          "环境隔离与管理"
-        ],
-        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "使用 AI 编程的开发者",
-          "追求代码质量的团队",
-          "技术负责人",
-          "工程化新手",
-          "多工具混合用户"
-        ],
-        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
-      }
-    },
-    {
-      "id": "a61d43d2-a1cf-406b-b0cf-7df70c48c270",
-      "dateAdded": "20261124",
-      "type": "github-daily",
-      "url": "https://github.com/jingyaogong/minimind",
-      "repo": "jingyaogong/minimind",
-      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-      "language": "Python",
-      "stars": 69814,
-      "forks": 9103,
-      "starsAdded": 828,
-      "createdAt": "2026-11-24T04:00:02.526Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "artificial-intelligence",
-          "large-language-model"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://jingyaogong.github.io/minimind",
-        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
-      },
-      "summaryData": {
-        "tags": [
-          "LLM",
-          "小模型",
-          "PyTorch",
-          "教学",
-          "大模型训练"
-        ],
-        "cover": "",
-        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
-        "ability": [
-          "全栈训练链路",
-          "原生 PyTorch 教学",
-          "极低成本训练",
-          "多后端部署支持",
-          "强化学习与智能体"
-        ],
-        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
-        "category": [
-          "开源项目",
-          "AI 模型",
-          "开发工具"
-        ],
-        "suitable": [
-          "AI 初学者与入门者",
-          "算法研究工程师",
-          "教育培训讲师",
-          "边缘端开发团队",
-          "大模型技术爱好者"
-        ],
-        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
-      }
-    },
-    {
-      "id": "b25105f3-c5d7-485d-a133-cc856ba6b29e",
-      "dateAdded": "20261124",
-      "type": "github-daily",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "repo": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 73709,
-      "forks": 6499,
-      "starsAdded": 797,
-      "createdAt": "2026-11-24T04:00:02.551Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "artificial-intelligence",
-          "automation",
-          "bot",
-          "command-line",
-          "data-science",
-          "dsh",
-          "dsh-plugin",
-          "golang",
-          "instagram",
-          "llms",
-          "nlp",
-          "osint",
-          "polymarket",
-          "python3",
-          "reddit",
-          "terminal",
-          "tiktok",
-          "twitter",
-          "youtube"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "AI Agent",
-          "舆情分析",
-          "信息搜集",
-          "Claude Skill"
-        ],
-        "cover": "",
-        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
-        "ability": [
-          "多源实时聚合",
-          "AI生成带引用简报",
-          "真实参与度排序",
-          "多AI平台集成",
-          "本地隐私保护"
-        ],
-        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
-        "category": [
-          "AI工具",
-          "信息聚合",
-          "效率工具"
-        ],
-        "suitable": [
-          "内容创作者",
-          "投资人",
-          "产品经理",
-          "开发者",
-          "科技爱好者"
-        ],
-        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
-      }
-    },
-    {
-      "id": "78b2e85c-3bbb-4236-ac54-2f37ffacdaab",
-      "dateAdded": "20261124",
-      "type": "github-daily",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 64105,
-      "forks": 5828,
-      "starsAdded": 790,
-      "createdAt": "2026-11-24T04:00:02.513Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
-        ],
-        "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
-        "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
-        ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
-        ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
-      }
-    },
-    {
       "id": "cf99030c-8a51-487e-97c8-2127e0f2d240",
       "dateAdded": "20261124",
       "type": "github-daily",
@@ -120077,9 +119947,9 @@
       "repo": "mjmirza/app-store-compliance",
       "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "language": "Shell",
-      "stars": 5281,
-      "forks": 336,
-      "starsAdded": 761,
+      "stars": 5427,
+      "forks": 349,
+      "starsAdded": 936,
       "createdAt": "2026-11-24T04:00:02.555Z",
       "metaData": {
         "forks": "0",
@@ -120151,9 +120021,9 @@
       "repo": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 71291,
-      "forks": 4763,
-      "starsAdded": 620,
+      "stars": 71496,
+      "forks": 4771,
+      "starsAdded": 794,
       "createdAt": "2026-11-24T04:00:02.548Z",
       "metaData": {
         "forks": "0",
@@ -120206,6 +120076,136 @@
       }
     },
     {
+      "id": "a61d43d2-a1cf-406b-b0cf-7df70c48c270",
+      "dateAdded": "20261124",
+      "type": "github-daily",
+      "url": "https://github.com/jingyaogong/minimind",
+      "repo": "jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "language": "Python",
+      "stars": 69928,
+      "forks": 9111,
+      "starsAdded": 727,
+      "createdAt": "2026-11-24T04:00:02.526Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "artificial-intelligence",
+          "large-language-model"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://jingyaogong.github.io/minimind",
+        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "小模型",
+          "PyTorch",
+          "教学",
+          "大模型训练"
+        ],
+        "cover": "",
+        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
+        "ability": [
+          "全栈训练链路",
+          "原生 PyTorch 教学",
+          "极低成本训练",
+          "多后端部署支持",
+          "强化学习与智能体"
+        ],
+        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 初学者与入门者",
+          "算法研究工程师",
+          "教育培训讲师",
+          "边缘端开发团队",
+          "大模型技术爱好者"
+        ],
+        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
+      }
+    },
+    {
+      "id": "b25105f3-c5d7-485d-a133-cc856ba6b29e",
+      "dateAdded": "20261124",
+      "type": "github-daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 73828,
+      "forks": 6516,
+      "starsAdded": 695,
+      "createdAt": "2026-11-24T04:00:02.551Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "artificial-intelligence",
+          "automation",
+          "bot",
+          "command-line",
+          "data-science",
+          "dsh",
+          "dsh-plugin",
+          "golang",
+          "instagram",
+          "llms",
+          "nlp",
+          "osint",
+          "polymarket",
+          "python3",
+          "reddit",
+          "terminal",
+          "tiktok",
+          "twitter",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
       "id": "7d2f1681-27af-48b8-8c88-10cad305c2dd",
       "dateAdded": "20261124",
       "type": "github-daily",
@@ -120213,9 +120213,9 @@
       "repo": "toeverything/AFFiNE",
       "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "language": "TypeScript",
-      "stars": 77598,
-      "forks": 5674,
-      "starsAdded": 595,
+      "stars": 77692,
+      "forks": 5682,
+      "starsAdded": 589,
       "createdAt": "2026-11-24T04:00:02.560Z",
       "metaData": {
         "forks": "0",
@@ -120285,9 +120285,9 @@
       "repo": "Tracer-Cloud/opensre",
       "description": "The open-source agent for CI/CD reliability.",
       "language": "Python",
-      "stars": 14957,
-      "forks": 1999,
-      "starsAdded": 436,
+      "stars": 15027,
+      "forks": 2004,
+      "starsAdded": 408,
       "createdAt": "2026-11-24T04:00:02.557Z",
       "metaData": {
         "forks": "0",
@@ -120354,9 +120354,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 12457,
-      "forks": 1520,
-      "starsAdded": 422,
+      "stars": 12510,
+      "forks": 1521,
+      "starsAdded": 401,
       "createdAt": "2026-11-24T04:00:02.553Z",
       "metaData": {
         "forks": "0",
@@ -120407,9 +120407,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 18937,
-      "forks": 2051,
-      "starsAdded": 397,
+      "stars": 19020,
+      "forks": 2056,
+      "starsAdded": 359,
       "createdAt": "2026-11-24T04:00:02.535Z",
       "metaData": {
         "forks": "0",
@@ -120434,9 +120434,9 @@
       "repo": "openvinotoolkit/openvino",
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
-      "stars": 12350,
-      "forks": 3683,
-      "starsAdded": 184,
+      "stars": 12381,
+      "forks": 3684,
+      "starsAdded": 187,
       "createdAt": "2026-11-24T04:00:02.546Z",
       "metaData": {
         "forks": "0",
@@ -120507,9 +120507,9 @@
       "repo": "nginx/nginx",
       "description": "The official NGINX Open Source repository.",
       "language": "C",
-      "stars": 33103,
-      "forks": 8394,
-      "starsAdded": 174,
+      "stars": 33129,
+      "forks": 8392,
+      "starsAdded": 158,
       "createdAt": "2026-11-24T04:00:02.543Z",
       "metaData": {
         "forks": "0",
