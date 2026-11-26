@@ -12,16 +12,25 @@
     "forks": "0",
     "stars": "0",
     "topics": [
+      "ai-agents",
+      "chatgpt",
+      "claude",
       "claude-code",
       "codex",
       "deepseek",
       "gemini-cli",
+      "github-copilot",
+      "glm",
+      "kimi",
+      "linux",
       "llm",
-      "macos"
+      "llm-gateway",
+      "macos",
+      "windows"
     ],
     "license": "MIT license",
     "homepage": "https://usemagpie.ai",
-    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar. - yetone/magpie"
+    "description": "Pool every plan you pay for — Claude, ChatGPT, Copilot, GLM Coding Plan, Kimi Code and more — and use them in any agent: Claude Code, Codex, Claude Desktop… When one runs out, the next takes over. - yetone/magpie"
   },
   "summaryData": null,
   "contentDetail": "Magpie 深度评测：一个统一网关，驯服所有 AI 编程 Agent 的“模型混乱”\n\n一句话总结：Magpie 是一款开源的本地网关和配置管理工具，它能让你的 Claude Code、Codex、Gemini CLI 等任意一个编程 Agent，瞬间切换使用任意一家大模型",
