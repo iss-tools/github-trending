@@ -122690,9 +122690,9 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 25163,
-      "forks": 2559,
-      "starsAdded": 1597,
+      "stars": 25339,
+      "forks": 2591,
+      "starsAdded": 1615,
       "createdAt": "2026-11-26T16:00:03.542Z",
       "metaData": {
         "forks": "0",
@@ -122753,138 +122753,65 @@
       }
     },
     {
-      "id": "2b336f81-edf9-42fb-a4c4-b528a640646a",
+      "id": "86cf5c89-6416-4352-b502-a87618b00fb4",
       "dateAdded": "20261127",
       "type": "github-daily",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "repo": "firecrawl/firecrawl",
-      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-      "language": "TypeScript",
-      "stars": 211210,
-      "forks": 11073,
-      "starsAdded": 1046,
-      "createdAt": "2026-11-26T16:00:04.010Z",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 327902,
+      "forks": 29123,
+      "starsAdded": 916,
+      "createdAt": "2026-11-26T16:00:03.915Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
           "ai",
-          "ai-agents",
-          "ai-crawler",
-          "ai-scraping",
-          "ai-search",
-          "crawler",
-          "data-extraction",
-          "html-to-markdown",
-          "llm",
-          "markdown",
-          "scraper",
-          "scraping",
-          "web-crawler",
-          "web-data",
-          "web-data-extraction",
-          "web-scraper",
-          "web-scraping",
-          "web-search",
-          "webscraping"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://firecrawl.dev",
-        "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API. - firecrawl/firecrawl"
-      },
-      "summaryData": {
-        "tags": [
-          "Firecrawl",
-          "网页爬虫",
-          "RAG",
-          "AI Agent",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Firecrawl 深度评测：LLM 时代的一站式网页数据采集 API",
-        "ability": [
-          "一行 API 将网页转为 LLM 友好的 Markdown/JSON/截图",
-          "支持整站递归爬取与站点地图秒级探索",
-          "按自定义 Schema 抽取结构化数据",
-          "通过 MCP 让 AI 助手具备联网与操作网页能力",
-          "云端反爬代理池，网页覆盖率高达 96%"
-        ],
-        "summary": "把任意网页一键转为大模型可用的干净 Markdown，AI 爬虫赛道的标杆级开源项目。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "数据采集"
-        ],
-        "suitable": [
-          "RAG/知识库工程师",
-          "AI Agent 开发者",
-          "数据分析师与研究员",
-          "投研与商业情报人员",
-          "需要联网能力的 AI 应用团队"
-        ],
-        "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。"
-      }
-    },
-    {
-      "id": "64ec9f55-3484-4cb9-afe7-21c6893b0404",
-      "dateAdded": "20261127",
-      "type": "github-daily",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "repo": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars": 74135,
-      "forks": 4966,
-      "starsAdded": 955,
-      "createdAt": "2026-11-26T16:00:04.031Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "claude-code",
-          "codex",
-          "data-visualization",
-          "diagrams",
-          "drawio",
-          "mermaid",
-          "svg"
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
         ],
         "license": "MIT license",
-        "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
       },
       "summaryData": {
         "tags": [
-          "图表生成",
-          "可视化",
-          "品牌适配",
-          "开源工具",
-          "Claude插件"
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
         ],
         "cover": "",
-        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
         "ability": [
-          "39种图表类型生成",
-          "自动品牌配色适配",
-          "HTML+SVG零依赖输出",
-          "Mermaid/draw.io重绘",
-          "语义化设计系统"
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
         ],
-        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
         "category": [
-          "AI编程",
+          "AI 编程",
           "开发工具",
-          "设计工具"
+          "效率工具"
         ],
         "suitable": [
-          "Claude Code/Codex用户",
-          "技术文档作者",
-          "系统架构师",
-          "内容创作团队",
-          "需要高频出图的开发者"
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
         ],
-        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
       }
     },
     {
@@ -122895,9 +122822,9 @@
       "repo": "XiaoYouChR/Ghost-Downloader-3",
       "description": "The only downloader you need. 下载器的集大成者。",
       "language": "Python",
-      "stars": 19477,
-      "forks": 1186,
-      "starsAdded": 889,
+      "stars": 19563,
+      "forks": 1208,
+      "starsAdded": 843,
       "createdAt": "2026-11-26T16:00:04.088Z",
       "metaData": {
         "forks": "0",
@@ -122961,65 +122888,76 @@
       }
     },
     {
-      "id": "86cf5c89-6416-4352-b502-a87618b00fb4",
+      "id": "2b336f81-edf9-42fb-a4c4-b528a640646a",
       "dateAdded": "20261127",
       "type": "github-daily",
-      "url": "https://github.com/obra/superpowers",
-      "repo": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 327801,
-      "forks": 29088,
-      "starsAdded": 854,
-      "createdAt": "2026-11-26T16:00:03.915Z",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "repo": "firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "language": "TypeScript",
+      "stars": 211298,
+      "forks": 11098,
+      "starsAdded": 833,
+      "createdAt": "2026-11-26T16:00:04.010Z",
       "metaData": {
         "forks": "0",
         "stars": "0",
         "topics": [
           "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
+          "ai-agents",
+          "ai-crawler",
+          "ai-scraping",
+          "ai-search",
+          "crawler",
+          "data-extraction",
+          "html-to-markdown",
+          "llm",
+          "markdown",
+          "scraper",
+          "scraping",
+          "web-crawler",
+          "web-data",
+          "web-data-extraction",
+          "web-scraper",
+          "web-scraping",
+          "web-search",
+          "webscraping"
         ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+        "license": "AGPL-3.0 license",
+        "homepage": "https://firecrawl.dev",
+        "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API. - firecrawl/firecrawl"
       },
       "summaryData": {
         "tags": [
-          "GitHub开源",
-          "工作流自动化",
-          "TDD",
-          "代码质量",
-          "Prompt工程"
+          "Firecrawl",
+          "网页爬虫",
+          "RAG",
+          "AI Agent",
+          "开源项目"
         ],
         "cover": "",
-        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "title": "Firecrawl 深度评测：LLM 时代的一站式网页数据采集 API",
         "ability": [
-          "标准化工程流程",
-          "强制测试驱动开发 (TDD)",
-          "跨 AI 工具兼容",
-          "自动化代码评审",
-          "环境隔离与管理"
+          "一行 API 将网页转为 LLM 友好的 Markdown/JSON/截图",
+          "支持整站递归爬取与站点地图秒级探索",
+          "按自定义 Schema 抽取结构化数据",
+          "通过 MCP 让 AI 助手具备联网与操作网页能力",
+          "云端反爬代理池，网页覆盖率高达 96%"
         ],
-        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "summary": "把任意网页一键转为大模型可用的干净 Markdown，AI 爬虫赛道的标杆级开源项目。",
         "category": [
-          "AI 编程",
           "开发工具",
-          "效率工具"
+          "AI 编程",
+          "数据采集"
         ],
         "suitable": [
-          "使用 AI 编程的开发者",
-          "追求代码质量的团队",
-          "技术负责人",
-          "工程化新手",
-          "多工具混合用户"
+          "RAG/知识库工程师",
+          "AI Agent 开发者",
+          "数据分析师与研究员",
+          "投研与商业情报人员",
+          "需要联网能力的 AI 应用团队"
         ],
-        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+        "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。"
       }
     },
     {
@@ -123030,9 +122968,9 @@
       "repo": "zhouxiaoka/autoclip",
       "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
       "language": "Python",
-      "stars": 17275,
-      "forks": 2420,
-      "starsAdded": 774,
+      "stars": 17345,
+      "forks": 2444,
+      "starsAdded": 733,
       "createdAt": "2026-11-26T16:00:04.096Z",
       "metaData": {
         "forks": "0",
@@ -123097,6 +123035,177 @@
       }
     },
     {
+      "id": "64ec9f55-3484-4cb9-afe7-21c6893b0404",
+      "dateAdded": "20261127",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 74203,
+      "forks": 4988,
+      "starsAdded": 731,
+      "createdAt": "2026-11-26T16:00:04.031Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://diagramdesign.dev",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
+      "id": "80ead0f5-ddf5-4640-850c-9804b98c13ec",
+      "dateAdded": "20261127",
+      "type": "github-daily",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 66685,
+      "forks": 6098,
+      "starsAdded": 668,
+      "createdAt": "2026-11-26T16:00:03.977Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      }
+    },
+    {
+      "id": "b6913faf-a57e-4533-b58b-9b28b95fc8cf",
+      "dateAdded": "20261127",
+      "type": "github-daily",
+      "url": "https://github.com/jingyaogong/minimind",
+      "repo": "jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "language": "Python",
+      "stars": 72029,
+      "forks": 9381,
+      "starsAdded": 667,
+      "createdAt": "2026-11-26T16:00:03.994Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "artificial-intelligence",
+          "large-language-model"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://jingyaogong.github.io/minimind",
+        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "小模型",
+          "PyTorch",
+          "教学",
+          "大模型训练"
+        ],
+        "cover": "",
+        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
+        "ability": [
+          "全栈训练链路",
+          "原生 PyTorch 教学",
+          "极低成本训练",
+          "多后端部署支持",
+          "强化学习与智能体"
+        ],
+        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 初学者与入门者",
+          "算法研究工程师",
+          "教育培训讲师",
+          "边缘端开发团队",
+          "大模型技术爱好者"
+        ],
+        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
+      }
+    },
+    {
       "id": "d01f0325-377b-4ddd-81dc-8a148c743ebc",
       "dateAdded": "20261127",
       "type": "github-daily",
@@ -123104,9 +123213,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 76013,
-      "forks": 6715,
-      "starsAdded": 759,
+      "stars": 76093,
+      "forks": 6744,
+      "starsAdded": 664,
       "createdAt": "2026-11-26T16:00:04.042Z",
       "metaData": {
         "forks": "0",
@@ -123171,115 +123280,6 @@
       }
     },
     {
-      "id": "80ead0f5-ddf5-4640-850c-9804b98c13ec",
-      "dateAdded": "20261127",
-      "type": "github-daily",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 66617,
-      "forks": 6081,
-      "starsAdded": 746,
-      "createdAt": "2026-11-26T16:00:03.977Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
-        ],
-        "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
-        "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
-        ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
-        ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
-      }
-    },
-    {
-      "id": "b6913faf-a57e-4533-b58b-9b28b95fc8cf",
-      "dateAdded": "20261127",
-      "type": "github-daily",
-      "url": "https://github.com/jingyaogong/minimind",
-      "repo": "jingyaogong/minimind",
-      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-      "language": "Python",
-      "stars": 71942,
-      "forks": 9354,
-      "starsAdded": 702,
-      "createdAt": "2026-11-26T16:00:03.994Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "artificial-intelligence",
-          "large-language-model"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://jingyaogong.github.io/minimind",
-        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
-      },
-      "summaryData": {
-        "tags": [
-          "LLM",
-          "小模型",
-          "PyTorch",
-          "教学",
-          "大模型训练"
-        ],
-        "cover": "",
-        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
-        "ability": [
-          "全栈训练链路",
-          "原生 PyTorch 教学",
-          "极低成本训练",
-          "多后端部署支持",
-          "强化学习与智能体"
-        ],
-        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
-        "category": [
-          "开源项目",
-          "AI 模型",
-          "开发工具"
-        ],
-        "suitable": [
-          "AI 初学者与入门者",
-          "算法研究工程师",
-          "教育培训讲师",
-          "边缘端开发团队",
-          "大模型技术爱好者"
-        ],
-        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
-      }
-    },
-    {
       "id": "1d9abf71-dc47-4600-84a9-31f409b2db09",
       "dateAdded": "20261127",
       "type": "github-daily",
@@ -123287,9 +123287,9 @@
       "repo": "mjmirza/app-store-compliance",
       "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "language": "Shell",
-      "stars": 7227,
-      "forks": 504,
-      "starsAdded": 562,
+      "stars": 7295,
+      "forks": 521,
+      "starsAdded": 531,
       "createdAt": "2026-11-26T16:00:04.067Z",
       "metaData": {
         "forks": "0",
@@ -123361,9 +123361,9 @@
       "repo": "toeverything/AFFiNE",
       "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "language": "TypeScript",
-      "stars": 79138,
-      "forks": 5775,
-      "starsAdded": 525,
+      "stars": 79188,
+      "forks": 5792,
+      "starsAdded": 469,
       "createdAt": "2026-11-26T16:00:04.085Z",
       "metaData": {
         "forks": "0",
@@ -123433,9 +123433,9 @@
       "repo": "Tracer-Cloud/opensre",
       "description": "The open-source agent for CI/CD reliability.",
       "language": "Python",
-      "stars": 15953,
-      "forks": 2084,
-      "starsAdded": 327,
+      "stars": 15986,
+      "forks": 2107,
+      "starsAdded": 326,
       "createdAt": "2026-11-26T16:00:04.072Z",
       "metaData": {
         "forks": "0",
@@ -123502,9 +123502,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 13409,
-      "forks": 1580,
-      "starsAdded": 309,
+      "stars": 13446,
+      "forks": 1589,
+      "starsAdded": 311,
       "createdAt": "2026-11-26T16:00:04.048Z",
       "metaData": {
         "forks": "0",
@@ -123555,9 +123555,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 19871,
-      "forks": 2169,
-      "starsAdded": 270,
+      "stars": 19899,
+      "forks": 2195,
+      "starsAdded": 242,
       "createdAt": "2026-11-26T16:00:04.005Z",
       "metaData": {
         "forks": "0",
@@ -123582,9 +123582,9 @@
       "repo": "openvinotoolkit/openvino",
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
-      "stars": 12867,
-      "forks": 3754,
-      "starsAdded": 176,
+      "stars": 12886,
+      "forks": 3777,
+      "starsAdded": 152,
       "createdAt": "2026-11-26T16:00:04.022Z",
       "metaData": {
         "forks": "0",
@@ -123655,9 +123655,9 @@
       "repo": "nginx/nginx",
       "description": "The official NGINX Open Source repository.",
       "language": "C",
-      "stars": 33574,
-      "forks": 8441,
-      "starsAdded": 150,
+      "stars": 33593,
+      "forks": 8454,
+      "starsAdded": 148,
       "createdAt": "2026-11-26T16:00:04.017Z",
       "metaData": {
         "forks": "0",
