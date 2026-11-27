@@ -29639,9 +29639,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 75661,
-      "forks": 6672,
-      "starsAdded": 5302,
+      "stars": 75760,
+      "forks": 6681,
+      "starsAdded": 5090,
       "createdAt": "2026-11-22T19:00:39.902Z",
       "metaData": {
         "forks": "0",
@@ -29713,9 +29713,9 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 11473,
-      "forks": 960,
-      "starsAdded": 3048,
+      "stars": 11536,
+      "forks": 963,
+      "starsAdded": 3229,
       "createdAt": "2026-11-22T19:00:39.920Z",
       "metaData": {
         "forks": "0",
@@ -29780,59 +29780,6 @@
       }
     },
     {
-      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 33318,
-      "forks": 2601,
-      "starsAdded": 2635,
-      "createdAt": "2026-11-22T19:00:39.912Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
-      },
-      "summaryData": {
-        "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
-        ],
-        "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
-        "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
-        ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
-        "category": [
-          "开发工具",
-          "前端开发",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
-        ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
-      }
-    },
-    {
       "id": "1bc009a6-bd08-4034-9a36-b0e9c905a461",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29840,9 +29787,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 13250,
-      "forks": 1561,
-      "starsAdded": 2616,
+      "stars": 13293,
+      "forks": 1564,
+      "starsAdded": 2619,
       "createdAt": "2026-11-22T19:00:39.896Z",
       "metaData": {
         "forks": "0",
@@ -29886,6 +29833,171 @@
       }
     },
     {
+      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 33355,
+      "forks": 2601,
+      "starsAdded": 2519,
+      "createdAt": "2026-11-22T19:00:39.912Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
+      "id": "4f15eade-3131-4ac8-b80b-528bf90b74f3",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/alibaba/open-code-review",
+      "repo": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 56646,
+      "forks": 4685,
+      "starsAdded": 2284,
+      "createdAt": "2026-11-22T19:00:39.900Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://open-codereview.ai",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
+      },
+      "summaryData": {
+        "tags": [
+          "代码审查",
+          "阿里巴巴",
+          "开源",
+          "LLM",
+          "CLI"
+        ],
+        "cover": "",
+        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
+        "ability": [
+          "高精度代码审查",
+          "低Token成本",
+          "混合架构(工程+Agent)",
+          "委托模式",
+          "CI/CD集成"
+        ],
+        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "DevOps"
+        ],
+        "suitable": [
+          "软件开发者",
+          "技术团队Leader",
+          "DevOps工程师",
+          "AI Agent开发者"
+        ],
+        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
+      }
+    },
+    {
+      "id": "8aadbd33-b21c-446b-9fa7-fd6187dfc917",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 11260,
+      "forks": 842,
+      "starsAdded": 2209,
+      "createdAt": "2026-11-22T19:00:39.898Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://goo.gle/modern-web-guidance",
+        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
+      },
+      "summaryData": {
+        "tags": [
+          "Chrome",
+          "AI 编码代理",
+          "Web 最佳实践",
+          "开源项目",
+          "Agent Skills"
+        ],
+        "cover": "",
+        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
+        "ability": [
+          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
+          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
+          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
+          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
+          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
+        ],
+        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "前端开发"
+        ],
+        "suitable": [
+          "重度使用 AI 编码代理的前端工程师",
+          "React / Vue / Next.js 项目维护者",
+          "需要统一现代化标准的企业前端团队",
+          "独立开发者与 Vibe Coder",
+          "设计系统与组件库作者"
+        ],
+        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
+      }
+    },
+    {
       "id": "6b330913-b535-4c0b-b1ea-e979541b8c4e",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29893,9 +30005,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31954,
-      "forks": 2872,
-      "starsAdded": 2319,
+      "stars": 31969,
+      "forks": 2871,
+      "starsAdded": 1825,
       "createdAt": "2026-11-22T19:00:39.918Z",
       "metaData": {
         "forks": "0",
@@ -29960,118 +30072,6 @@
       }
     },
     {
-      "id": "8aadbd33-b21c-446b-9fa7-fd6187dfc917",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "repo": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 11233,
-      "forks": 842,
-      "starsAdded": 2309,
-      "createdAt": "2026-11-22T19:00:39.898Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://goo.gle/modern-web-guidance",
-        "description": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance-src"
-      },
-      "summaryData": {
-        "tags": [
-          "Chrome",
-          "AI 编码代理",
-          "Web 最佳实践",
-          "开源项目",
-          "Agent Skills"
-        ],
-        "cover": "",
-        "title": "Chrome 官方出品：让 AI 编码代理写出 2026 年现代 Web 代码的技能包深度评测",
-        "ability": [
-          "离线语义检索 131 条 Web 最佳实践指南，零网络请求、零 API key",
-          "深度集成 Baseline 浏览器兼容性决策，自动判断 API 该不该用",
-          "一键适配 Claude Code / Gemini CLI / Copilot CLI 等 10+ 主流编码代理",
-          "内置 Playwright 双盲校准评测体系，实测最佳实践遵循度提升 37 个百分点",
-          "Skill 常驻仅 234 token，按需检索不挤占模型上下文窗口"
-        ],
-        "summary": "Chrome 团队开源的 Agent Skills 工具包，让 Claude Code、Gemini CLI 等 AI 编码代理自动写出符合最新 Web 最佳实践的现代化前端代码。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "前端开发"
-        ],
-        "suitable": [
-          "重度使用 AI 编码代理的前端工程师",
-          "React / Vue / Next.js 项目维护者",
-          "需要统一现代化标准的企业前端团队",
-          "独立开发者与 Vibe Coder",
-          "设计系统与组件库作者"
-        ],
-        "description": "这是 Chrome 团队开源（Apache 2.0）的 AI 编码代理技能包，通过 Agent Skills + 离线 CLI 检索器，把 104 个现代 Web 平台特性和 131 条最佳实践指南直接喂给 Claude Code、Gemini CLI 等 AI 代理，专治 AI 写代码风格陈旧、无脑装依赖、性能差的顽疾。第三方实测最佳实践遵循度提升 37 个百分点，INP 平均降低 18%，日本 LY Corporation 更称 Lighthouse 人工审计分析减少 96% 以上。"
-      }
-    },
-    {
-      "id": "4f15eade-3131-4ac8-b80b-528bf90b74f3",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/alibaba/open-code-review",
-      "repo": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 56622,
-      "forks": 4683,
-      "starsAdded": 2259,
-      "createdAt": "2026-11-22T19:00:39.900Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://open-codereview.ai",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. - alibaba/open-code-review"
-      },
-      "summaryData": {
-        "tags": [
-          "代码审查",
-          "阿里巴巴",
-          "开源",
-          "LLM",
-          "CLI"
-        ],
-        "cover": "",
-        "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review 评测",
-        "ability": [
-          "高精度代码审查",
-          "低Token成本",
-          "混合架构(工程+Agent)",
-          "委托模式",
-          "CI/CD集成"
-        ],
-        "summary": "阿里巴巴开源的高精度AI代码审查工具，用工程确定性解决通用AI审查的漏审与定位漂移问题。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "DevOps"
-        ],
-        "suitable": [
-          "软件开发者",
-          "技术团队Leader",
-          "DevOps工程师",
-          "AI Agent开发者"
-        ],
-        "description": "阿里巴巴将内部打磨两年的AI代码审查助手开源，主打高精度与低Token消耗。它通过“确定性工程”约束覆盖率和定位精度，结合LLM进行语义理解，支持CLI本地运行和委托模式，数据隐私安全，适合各类开发工作流集成。"
-      }
-    },
-    {
       "id": "5cd43540-bb7c-472f-ba10-7c5e845583ce",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30079,9 +30079,9 @@
       "repo": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 15233,
-      "forks": 1457,
-      "starsAdded": 1764,
+      "stars": 15262,
+      "forks": 1461,
+      "starsAdded": 1631,
       "createdAt": "2026-11-22T19:00:39.892Z",
       "metaData": {
         "forks": "0",
@@ -30141,9 +30141,9 @@
       "repo": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 18068,
-      "forks": 1570,
-      "starsAdded": 1509,
+      "stars": 18096,
+      "forks": 1572,
+      "starsAdded": 1430,
       "createdAt": "2026-11-22T19:00:39.916Z",
       "metaData": {
         "forks": "0",
@@ -30194,9 +30194,9 @@
       "repo": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 8575,
-      "forks": 1561,
-      "starsAdded": 1422,
+      "stars": 8601,
+      "forks": 1562,
+      "starsAdded": 1381,
       "createdAt": "2026-11-22T19:00:39.907Z",
       "metaData": {
         "forks": "0",
@@ -30247,9 +30247,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21829,
-      "forks": 2189,
-      "starsAdded": 1421,
+      "stars": 21842,
+      "forks": 2190,
+      "starsAdded": 1269,
       "createdAt": "2026-11-22T19:00:39.911Z",
       "metaData": {
         "forks": "0",
@@ -30306,9 +30306,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59488,
-      "forks": 4894,
-      "starsAdded": 1203,
+      "stars": 59503,
+      "forks": 4895,
+      "starsAdded": 1175,
       "createdAt": "2026-11-22T19:00:39.905Z",
       "metaData": {
         "forks": "0",
@@ -30368,9 +30368,9 @@
       "repo": "n8n-io/nod",
       "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
       "language": "TypeScript",
-      "stars": 3947,
-      "forks": 615,
-      "starsAdded": 1008,
+      "stars": 4008,
+      "forks": 616,
+      "starsAdded": 1165,
       "createdAt": "2026-11-25T14:00:04.312Z",
       "metaData": {
         "forks": "0",
@@ -30411,8 +30411,8 @@
       "repo": "obsidianmd/obsidian-skills",
       "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
       "language": "Shell",
-      "stars": 53951,
-      "forks": 3839,
+      "stars": 54017,
+      "forks": 3844,
       "starsAdded": 704,
       "createdAt": "2026-11-26T16:00:06.270Z",
       "metaData": {
@@ -30454,9 +30454,9 @@
       "repo": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2543,
+      "stars": 2544,
       "forks": 206,
-      "starsAdded": 318,
+      "starsAdded": 325,
       "createdAt": "2026-11-22T19:00:39.914Z",
       "metaData": {
         "forks": "0",
