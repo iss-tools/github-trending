@@ -123726,9 +123726,9 @@
       "repo": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 26577,
-      "forks": 2729,
-      "starsAdded": 1608,
+      "stars": 26708,
+      "forks": 2745,
+      "starsAdded": 1372,
       "createdAt": "2026-11-27T16:00:02.573Z",
       "metaData": {
         "forks": "0",
@@ -123789,533 +123789,6 @@
       }
     },
     {
-      "id": "f3ea80d1-1b1b-4d3c-94dd-56c0ac45c7a4",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/obra/superpowers",
-      "repo": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 328616,
-      "forks": 29216,
-      "starsAdded": 922,
-      "createdAt": "2026-11-27T16:00:03.007Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "工作流自动化",
-          "TDD",
-          "代码质量",
-          "Prompt工程"
-        ],
-        "cover": "",
-        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
-        "ability": [
-          "标准化工程流程",
-          "强制测试驱动开发 (TDD)",
-          "跨 AI 工具兼容",
-          "自动化代码评审",
-          "环境隔离与管理"
-        ],
-        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
-        "category": [
-          "AI 编程",
-          "开发工具",
-          "效率工具"
-        ],
-        "suitable": [
-          "使用 AI 编程的开发者",
-          "追求代码质量的团队",
-          "技术负责人",
-          "工程化新手",
-          "多工具混合用户"
-        ],
-        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
-      }
-    },
-    {
-      "id": "795d5581-1272-4a37-944a-6b41615c1e5e",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
-      "repo": "XiaoYouChR/Ghost-Downloader-3",
-      "description": "The only downloader you need. 下载器的集大成者。",
-      "language": "Python",
-      "stars": 20150,
-      "forks": 1292,
-      "starsAdded": 836,
-      "createdAt": "2026-11-27T16:00:03.241Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "async",
-          "asyncio",
-          "bittorent",
-          "bt",
-          "cross-platform",
-          "download-manager",
-          "downloader",
-          "fluent-design",
-          "ftp",
-          "http3",
-          "magnet",
-          "pyqt",
-          "pyside6",
-          "python",
-          "qt",
-          "quic",
-          "react",
-          "software",
-          "streaming"
-        ],
-        "license": "GPL-3.0 license",
-        "homepage": "https://gd.xychr.com/",
-        "description": "The only downloader you need. 下载器的集大成者。. Contribute to XiaoYouChR/Ghost-Downloader-3 development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "下载器",
-          "开源",
-          "跨平台",
-          "IDM替代",
-          "GitHub"
-        ],
-        "cover": "",
-        "title": "Ghost-Downloader-3 深度评测：高中生开发的免费开源全能下载器",
-        "ability": [
-          "智能动态线程调度（俗称 AI 加速），最高 253 线程自动增减",
-          "TLS 指纹模拟，可绕过 Cloudflare 等反爬检测",
-          "多协议支持：HTTP/BT磁力/M3U8/eD2k/B站/YouTube/GitHub/HuggingFace",
-          "分块直写磁盘，下载完即完整文件，无需合并",
-          "兼容 aria2 RPC + 浏览器扩展一键接管下载"
-        ],
-        "summary": "一款免费开源、跨平台的全能下载器，把 IDM 的智能分块、Motrix 的多协议和视频解析整合进 Fluent 界面，实测速度跑赢 IDM。",
-        "category": [
-          "开发工具",
-          "效率工具",
-          "开源项目"
-        ],
-        "suitable": [
-          "科研/AI 从业者（HuggingFace 模型加速下载）",
-          "追番视频党（B站4K/YouTube 批量下载）",
-          "不想付费买 IDM 的普通用户",
-          "需要 aria2 兼容方案的开发者",
-          "缺好下载工具的 Android 用户"
-        ],
-        "description": "Ghost-Downloader-3 是基于 PySide6 的开源下载器，性能环节外包给 Rust/C++ 库保证速度。支持四大平台和丰富协议解析，采用 Feature Pack 热插拔架构。免费替代 IDM，但 BT 场景不如 qBittorrent，高线程可能触发站点反爬，且为高中生单人维护，生产环境需谨慎。"
-      }
-    },
-    {
-      "id": "898e53d1-a5ce-4ab9-b572-19936e7a8465",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "repo": "firecrawl/firecrawl",
-      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-      "language": "TypeScript",
-      "stars": 211924,
-      "forks": 11167,
-      "starsAdded": 822,
-      "createdAt": "2026-11-27T16:00:03.121Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai",
-          "ai-agents",
-          "ai-crawler",
-          "ai-scraping",
-          "ai-search",
-          "crawler",
-          "data-extraction",
-          "html-to-markdown",
-          "llm",
-          "markdown",
-          "scraper",
-          "scraping",
-          "web-crawler",
-          "web-data",
-          "web-data-extraction",
-          "web-scraper",
-          "web-scraping",
-          "web-search",
-          "webscraping"
-        ],
-        "license": "AGPL-3.0 license",
-        "homepage": "https://firecrawl.dev",
-        "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API. - firecrawl/firecrawl"
-      },
-      "summaryData": {
-        "tags": [
-          "Firecrawl",
-          "网页爬虫",
-          "RAG",
-          "AI Agent",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Firecrawl 深度评测：LLM 时代的一站式网页数据采集 API",
-        "ability": [
-          "一行 API 将网页转为 LLM 友好的 Markdown/JSON/截图",
-          "支持整站递归爬取与站点地图秒级探索",
-          "按自定义 Schema 抽取结构化数据",
-          "通过 MCP 让 AI 助手具备联网与操作网页能力",
-          "云端反爬代理池，网页覆盖率高达 96%"
-        ],
-        "summary": "把任意网页一键转为大模型可用的干净 Markdown，AI 爬虫赛道的标杆级开源项目。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "数据采集"
-        ],
-        "suitable": [
-          "RAG/知识库工程师",
-          "AI Agent 开发者",
-          "数据分析师与研究员",
-          "投研与商业情报人员",
-          "需要联网能力的 AI 应用团队"
-        ],
-        "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。"
-      }
-    },
-    {
-      "id": "aa0f2331-c232-4b08-a948-b37ea7e1884f",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "repo": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars": 74632,
-      "forks": 5050,
-      "starsAdded": 725,
-      "createdAt": "2026-11-27T16:00:03.177Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "claude-code",
-          "codex",
-          "data-visualization",
-          "diagrams",
-          "drawio",
-          "mermaid",
-          "svg"
-        ],
-        "license": "MIT license",
-        "homepage": "https://diagramdesign.dev",
-        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
-      },
-      "summaryData": {
-        "tags": [
-          "图表生成",
-          "可视化",
-          "品牌适配",
-          "开源工具",
-          "Claude插件"
-        ],
-        "cover": "",
-        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
-        "ability": [
-          "39种图表类型生成",
-          "自动品牌配色适配",
-          "HTML+SVG零依赖输出",
-          "Mermaid/draw.io重绘",
-          "语义化设计系统"
-        ],
-        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
-        "category": [
-          "AI编程",
-          "开发工具",
-          "设计工具"
-        ],
-        "suitable": [
-          "Claude Code/Codex用户",
-          "技术文档作者",
-          "系统架构师",
-          "内容创作团队",
-          "需要高频出图的开发者"
-        ],
-        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
-      }
-    },
-    {
-      "id": "f27170eb-de9e-4c81-b663-064fd1595d6c",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/zhouxiaoka/autoclip",
-      "repo": "zhouxiaoka/autoclip",
-      "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-      "language": "Python",
-      "stars": 17800,
-      "forks": 2513,
-      "starsAdded": 718,
-      "createdAt": "2026-11-27T16:00:03.244Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "ai-agent",
-          "ai-video-editor",
-          "claude-code",
-          "content-repurposing",
-          "desktop-app",
-          "douyin",
-          "instagram-reels",
-          "local-first",
-          "mcp",
-          "mcp-server",
-          "open-source",
-          "opusclip-alternative",
-          "podcast",
-          "subtitles",
-          "tiktok",
-          "video-clipping",
-          "video-editing-software",
-          "whisper",
-          "xiaohongshu",
-          "youtube-shorts"
-        ],
-        "license": "MIT license",
-        "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
-        "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。 - zhouxiaoka/autoclip"
-      },
-      "summaryData": {
-        "tags": [
-          "开源",
-          "AI视频切片",
-          "通义千问",
-          "B站二创",
-          "FFmpeg"
-        ],
-        "cover": "",
-        "title": "AutoClip 深度评测：开源 AI 视频切片工具，粘贴链接自动提取高光片段",
-        "ability": [
-          "基于通义千问 LLM 分析视频字幕，自动提取高光片段并打分",
-          "支持 B 站和 YouTube 链接，一键下载并按时间戳切片输出 MP4",
-          "AI 自动生成吸引人的切片标题和主题合集推荐",
-          "本地化部署，视频数据不离开本机，隐私安全",
-          "提供 FastAPI + React 完整 Web 界面，WebSocket 实时进度推送"
-        ],
-        "summary": "一款开源本地部署的 AI 视频切片工具，粘贴 B 站/YouTube 链接即可自动识别精彩片段并剪成短视频。",
-        "category": [
-          "开源项目",
-          "AI 工具",
-          "视频创作"
-        ],
-        "suitable": [
-          "有技术能力的 B 站切片 UP 主",
-          "视频二创工作室",
-          "在线教育机构",
-          "企业培训部门",
-          "想学习 LLM+视频处理落地的开发者"
-        ],
-        "description": "AutoClip 是一款 MIT 协议开源的 AI 视频切片工具，采用 yt-dlp + 通义千问 + FFmpeg 七步流水线架构，自动完成高光识别、评分、标题生成与切片。相比 OpusClip 等 SaaS，它免费且数据本地化，但部署需要 Docker、Redis 和 API Key，且强依赖视频字幕质量，适合有一定技术基础的创作者。"
-      }
-    },
-    {
-      "id": "68e585ba-2db8-4cbf-af23-629e73c681e8",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "repo": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 76539,
-      "forks": 6821,
-      "starsAdded": 675,
-      "createdAt": "2026-11-27T16:00:03.182Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agent-skills",
-          "artificial-intelligence",
-          "automation",
-          "bot",
-          "command-line",
-          "data-science",
-          "dsh",
-          "dsh-plugin",
-          "golang",
-          "instagram",
-          "llms",
-          "nlp",
-          "osint",
-          "polymarket",
-          "python3",
-          "reddit",
-          "terminal",
-          "tiktok",
-          "twitter",
-          "youtube"
-        ],
-        "license": "MIT license",
-        "homepage": "",
-        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub",
-          "AI Agent",
-          "舆情分析",
-          "信息搜集",
-          "Claude Skill"
-        ],
-        "cover": "",
-        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
-        "ability": [
-          "多源实时聚合",
-          "AI生成带引用简报",
-          "真实参与度排序",
-          "多AI平台集成",
-          "本地隐私保护"
-        ],
-        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
-        "category": [
-          "AI工具",
-          "信息聚合",
-          "效率工具"
-        ],
-        "suitable": [
-          "内容创作者",
-          "投资人",
-          "产品经理",
-          "开发者",
-          "科技爱好者"
-        ],
-        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
-      }
-    },
-    {
-      "id": "1ec4c527-75f9-47c5-85e1-f3f8add5e7e8",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "repo": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 67191,
-      "forks": 6188,
-      "starsAdded": 666,
-      "createdAt": "2026-11-27T16:00:03.071Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://clianything.cc/",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
-      },
-      "summaryData": {
-        "tags": [
-          "GitHub开源",
-          "AI Agent",
-          "CLI",
-          "深度评测",
-          "HKUDS"
-        ],
-        "cover": "",
-        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
-        "ability": [
-          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
-          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
-          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
-          "相比 MCP 调用 Token 成本降低 4-32 倍",
-          "Agent 可自主搜索、安装工具并完成复杂任务"
-        ],
-        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "自动化"
-        ],
-        "suitable": [
-          "AI Agent 重度用户",
-          "自动化工程师 / RPA 替代者",
-          "开源软件开发者",
-          "数据与科研工作者",
-          "企业 IT / 运维人员"
-        ],
-        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
-      }
-    },
-    {
-      "id": "eb138b14-3ada-4286-b206-1131b6ac4d4c",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/jingyaogong/minimind",
-      "repo": "jingyaogong/minimind",
-      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-      "language": "Python",
-      "stars": 72375,
-      "forks": 9473,
-      "starsAdded": 660,
-      "createdAt": "2026-11-27T16:00:03.086Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "artificial-intelligence",
-          "large-language-model"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://jingyaogong.github.io/minimind",
-        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
-      },
-      "summaryData": {
-        "tags": [
-          "LLM",
-          "小模型",
-          "PyTorch",
-          "教学",
-          "大模型训练"
-        ],
-        "cover": "",
-        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
-        "ability": [
-          "全栈训练链路",
-          "原生 PyTorch 教学",
-          "极低成本训练",
-          "多后端部署支持",
-          "强化学习与智能体"
-        ],
-        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
-        "category": [
-          "开源项目",
-          "AI 模型",
-          "开发工具"
-        ],
-        "suitable": [
-          "AI 初学者与入门者",
-          "算法研究工程师",
-          "教育培训讲师",
-          "边缘端开发团队",
-          "大模型技术爱好者"
-        ],
-        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
-      }
-    },
-    {
       "id": "33e57d23-bdbe-4a62-a3f8-ce7f883f6bee",
       "dateAdded": "20261128",
       "type": "github-daily",
@@ -124323,9 +123796,9 @@
       "repo": "mjmirza/app-store-compliance",
       "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "language": "Shell",
-      "stars": 8149,
-      "forks": 618,
-      "starsAdded": 530,
+      "stars": 8250,
+      "forks": 629,
+      "starsAdded": 907,
       "createdAt": "2026-11-27T16:00:03.214Z",
       "metaData": {
         "forks": "0",
@@ -124390,6 +123863,477 @@
       }
     },
     {
+      "id": "f3ea80d1-1b1b-4d3c-94dd-56c0ac45c7a4",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 328706,
+      "forks": 29227,
+      "starsAdded": 809,
+      "createdAt": "2026-11-27T16:00:03.007Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "工作流自动化",
+          "TDD",
+          "代码质量",
+          "Prompt工程"
+        ],
+        "cover": "",
+        "title": "Superpowers：让 AI 遵守工程规范的技能库框架",
+        "ability": [
+          "标准化工程流程",
+          "强制测试驱动开发 (TDD)",
+          "跨 AI 工具兼容",
+          "自动化代码评审",
+          "环境隔离与管理"
+        ],
+        "summary": "一套跨平台的 AI 编程技能库，自动强制执行 TDD 与规范化流程。",
+        "category": [
+          "AI 编程",
+          "开发工具",
+          "效率工具"
+        ],
+        "suitable": [
+          "使用 AI 编程的开发者",
+          "追求代码质量的团队",
+          "技术负责人",
+          "工程化新手",
+          "多工具混合用户"
+        ],
+        "description": "该项目将测试驱动、设计先行等最佳实践封装为 AI 技能，支持 Claude Code、Cursor 等多款工具，通过自动化从需求澄清到代码评审的闭环，解决了 AI 编码“不可控、易偏航”的痛点。"
+      }
+    },
+    {
+      "id": "898e53d1-a5ce-4ab9-b572-19936e7a8465",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "repo": "firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "language": "TypeScript",
+      "stars": 212002,
+      "forks": 11173,
+      "starsAdded": 717,
+      "createdAt": "2026-11-27T16:00:03.121Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-crawler",
+          "ai-scraping",
+          "ai-search",
+          "crawler",
+          "data-extraction",
+          "html-to-markdown",
+          "llm",
+          "markdown",
+          "scraper",
+          "scraping",
+          "web-crawler",
+          "web-data",
+          "web-data-extraction",
+          "web-scraper",
+          "web-scraping",
+          "web-search",
+          "webscraping"
+        ],
+        "license": "AGPL-3.0 license",
+        "homepage": "https://firecrawl.dev",
+        "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API. - firecrawl/firecrawl"
+      },
+      "summaryData": {
+        "tags": [
+          "Firecrawl",
+          "网页爬虫",
+          "RAG",
+          "AI Agent",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Firecrawl 深度评测：LLM 时代的一站式网页数据采集 API",
+        "ability": [
+          "一行 API 将网页转为 LLM 友好的 Markdown/JSON/截图",
+          "支持整站递归爬取与站点地图秒级探索",
+          "按自定义 Schema 抽取结构化数据",
+          "通过 MCP 让 AI 助手具备联网与操作网页能力",
+          "云端反爬代理池，网页覆盖率高达 96%"
+        ],
+        "summary": "把任意网页一键转为大模型可用的干净 Markdown，AI 爬虫赛道的标杆级开源项目。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "数据采集"
+        ],
+        "suitable": [
+          "RAG/知识库工程师",
+          "AI Agent 开发者",
+          "数据分析师与研究员",
+          "投研与商业情报人员",
+          "需要联网能力的 AI 应用团队"
+        ],
+        "description": "Firecrawl 是专为 LLM 设计的网页数据 API，把浏览器渲染、反爬、HTML 清洗等脏活封装成一行代码调用。支持单页抓取、整站爬取、结构化抽取和 PDF 解析，开源可自托管（AGPL），云版被 Shopify、Apple 等公司使用，是 RAG 与 AI Agent 项目事实标准级的上下文采集层。"
+      }
+    },
+    {
+      "id": "795d5581-1272-4a37-944a-6b41615c1e5e",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "repo": "XiaoYouChR/Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "language": "Python",
+      "stars": 20250,
+      "forks": 1304,
+      "starsAdded": 664,
+      "createdAt": "2026-11-27T16:00:03.241Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "async",
+          "asyncio",
+          "bittorent",
+          "bt",
+          "cross-platform",
+          "download-manager",
+          "downloader",
+          "fluent-design",
+          "ftp",
+          "http3",
+          "magnet",
+          "pyqt",
+          "pyside6",
+          "python",
+          "qt",
+          "quic",
+          "react",
+          "software",
+          "streaming"
+        ],
+        "license": "GPL-3.0 license",
+        "homepage": "https://gd.xychr.com/",
+        "description": "The only downloader you need. 下载器的集大成者。. Contribute to XiaoYouChR/Ghost-Downloader-3 development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "下载器",
+          "开源",
+          "跨平台",
+          "IDM替代",
+          "GitHub"
+        ],
+        "cover": "",
+        "title": "Ghost-Downloader-3 深度评测：高中生开发的免费开源全能下载器",
+        "ability": [
+          "智能动态线程调度（俗称 AI 加速），最高 253 线程自动增减",
+          "TLS 指纹模拟，可绕过 Cloudflare 等反爬检测",
+          "多协议支持：HTTP/BT磁力/M3U8/eD2k/B站/YouTube/GitHub/HuggingFace",
+          "分块直写磁盘，下载完即完整文件，无需合并",
+          "兼容 aria2 RPC + 浏览器扩展一键接管下载"
+        ],
+        "summary": "一款免费开源、跨平台的全能下载器，把 IDM 的智能分块、Motrix 的多协议和视频解析整合进 Fluent 界面，实测速度跑赢 IDM。",
+        "category": [
+          "开发工具",
+          "效率工具",
+          "开源项目"
+        ],
+        "suitable": [
+          "科研/AI 从业者（HuggingFace 模型加速下载）",
+          "追番视频党（B站4K/YouTube 批量下载）",
+          "不想付费买 IDM 的普通用户",
+          "需要 aria2 兼容方案的开发者",
+          "缺好下载工具的 Android 用户"
+        ],
+        "description": "Ghost-Downloader-3 是基于 PySide6 的开源下载器，性能环节外包给 Rust/C++ 库保证速度。支持四大平台和丰富协议解析，采用 Feature Pack 热插拔架构。免费替代 IDM，但 BT 场景不如 qBittorrent，高线程可能触发站点反爬，且为高中生单人维护，生产环境需谨慎。"
+      }
+    },
+    {
+      "id": "1ec4c527-75f9-47c5-85e1-f3f8add5e7e8",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "repo": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 67249,
+      "forks": 6192,
+      "starsAdded": 561,
+      "createdAt": "2026-11-27T16:00:03.071Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://clianything.cc/",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/ - HKUDS/CLI-Anything"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub开源",
+          "AI Agent",
+          "CLI",
+          "深度评测",
+          "HKUDS"
+        ],
+        "cover": "",
+        "title": "CLI-Anything 深度评测：把全世界的软件变成 AI Agent 的手脚",
+        "ability": [
+          "自动为任意软件生成结构化 Python CLI（7-Phase HARNESS 方法论）",
+          "让 Claude Code、Cursor 等 AI Agent 直接调用真实软件后端",
+          "CLI-Hub 市场一键安装现成工具，覆盖 18+ 领域 2400+ 测试",
+          "相比 MCP 调用 Token 成本降低 4-32 倍",
+          "Agent 可自主搜索、安装工具并完成复杂任务"
+        ],
+        "summary": "港大 HKUDS 开源的 Agent 原生化框架，一条命令让 AI 自动生成并驱动任意软件的 CLI，告别截图点击式自动化",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "自动化"
+        ],
+        "suitable": [
+          "AI Agent 重度用户",
+          "自动化工程师 / RPA 替代者",
+          "开源软件开发者",
+          "数据与科研工作者",
+          "企业 IT / 运维人员"
+        ],
+        "description": "CLI-Anything 是港大数据智能实验室（HKUDS）推出的现象级开源项目（49.6k Stars），能将 GIMP、Blender、LibreOffice 等任意软件自动转化为 AI Agent 可调用的结构化命令行工具。它强制调用真实软件后端而非重写功能，配合 CLI-Hub 市场与 SKILL.md 技能说明书，让 Agent 一条命令即可亲手操作专业软件，是替代脆弱 UI 自动化的架构级方案。"
+      }
+    },
+    {
+      "id": "68e585ba-2db8-4cbf-af23-629e73c681e8",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 76610,
+      "forks": 6827,
+      "starsAdded": 519,
+      "createdAt": "2026-11-27T16:00:03.182Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "artificial-intelligence",
+          "automation",
+          "bot",
+          "command-line",
+          "data-science",
+          "dsh",
+          "dsh-plugin",
+          "golang",
+          "instagram",
+          "llms",
+          "nlp",
+          "osint",
+          "polymarket",
+          "python3",
+          "reddit",
+          "terminal",
+          "tiktok",
+          "twitter",
+          "youtube"
+        ],
+        "license": "MIT license",
+        "homepage": "",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill"
+      },
+      "summaryData": {
+        "tags": [
+          "GitHub",
+          "AI Agent",
+          "舆情分析",
+          "信息搜集",
+          "Claude Skill"
+        ],
+        "cover": "",
+        "title": "last30days-skill：跨平台近30天热点聚合与AI简报工具",
+        "ability": [
+          "多源实时聚合",
+          "AI生成带引用简报",
+          "真实参与度排序",
+          "多AI平台集成",
+          "本地隐私保护"
+        ],
+        "summary": "一个聚合全网近30天高赞内容，并由AI生成深度简报的跨平台研究工具。",
+        "category": [
+          "AI工具",
+          "信息聚合",
+          "效率工具"
+        ],
+        "suitable": [
+          "内容创作者",
+          "投资人",
+          "产品经理",
+          "开发者",
+          "科技爱好者"
+        ],
+        "description": "该工具能自动抓取 Reddit、X、YouTube 等多个平台最近 30 天的热门讨论，基于点赞和评论等真实信号进行排序，并利用 Claude 或 Grok 等 AI 模型生成包含数据来源的深度简报，极大提升信息搜集效率。"
+      }
+    },
+    {
+      "id": "f27170eb-de9e-4c81-b663-064fd1595d6c",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "repo": "zhouxiaoka/autoclip",
+      "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+      "language": "Python",
+      "stars": 17875,
+      "forks": 2519,
+      "starsAdded": 517,
+      "createdAt": "2026-11-27T16:00:03.244Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "ai-agent",
+          "ai-video-editor",
+          "claude-code",
+          "content-repurposing",
+          "desktop-app",
+          "douyin",
+          "instagram-reels",
+          "local-first",
+          "mcp",
+          "mcp-server",
+          "open-source",
+          "opusclip-alternative",
+          "podcast",
+          "subtitles",
+          "tiktok",
+          "video-clipping",
+          "video-editing-software",
+          "whisper",
+          "xiaohongshu",
+          "youtube-shorts"
+        ],
+        "license": "MIT license",
+        "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+        "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。 - zhouxiaoka/autoclip"
+      },
+      "summaryData": {
+        "tags": [
+          "开源",
+          "AI视频切片",
+          "通义千问",
+          "B站二创",
+          "FFmpeg"
+        ],
+        "cover": "",
+        "title": "AutoClip 深度评测：开源 AI 视频切片工具，粘贴链接自动提取高光片段",
+        "ability": [
+          "基于通义千问 LLM 分析视频字幕，自动提取高光片段并打分",
+          "支持 B 站和 YouTube 链接，一键下载并按时间戳切片输出 MP4",
+          "AI 自动生成吸引人的切片标题和主题合集推荐",
+          "本地化部署，视频数据不离开本机，隐私安全",
+          "提供 FastAPI + React 完整 Web 界面，WebSocket 实时进度推送"
+        ],
+        "summary": "一款开源本地部署的 AI 视频切片工具，粘贴 B 站/YouTube 链接即可自动识别精彩片段并剪成短视频。",
+        "category": [
+          "开源项目",
+          "AI 工具",
+          "视频创作"
+        ],
+        "suitable": [
+          "有技术能力的 B 站切片 UP 主",
+          "视频二创工作室",
+          "在线教育机构",
+          "企业培训部门",
+          "想学习 LLM+视频处理落地的开发者"
+        ],
+        "description": "AutoClip 是一款 MIT 协议开源的 AI 视频切片工具，采用 yt-dlp + 通义千问 + FFmpeg 七步流水线架构，自动完成高光识别、评分、标题生成与切片。相比 OpusClip 等 SaaS，它免费且数据本地化，但部署需要 Docker、Redis 和 API Key，且强依赖视频字幕质量，适合有一定技术基础的创作者。"
+      }
+    },
+    {
+      "id": "aa0f2331-c232-4b08-a948-b37ea7e1884f",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 74708,
+      "forks": 5064,
+      "starsAdded": 499,
+      "createdAt": "2026-11-27T16:00:03.177Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ],
+        "license": "MIT license",
+        "homepage": "https://diagramdesign.dev",
+        "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. - cathrynlavery/diagram-design"
+      },
+      "summaryData": {
+        "tags": [
+          "图表生成",
+          "可视化",
+          "品牌适配",
+          "开源工具",
+          "Claude插件"
+        ],
+        "cover": "",
+        "title": "Diagram Design：AI驱动的编辑级图表生成工具",
+        "ability": [
+          "39种图表类型生成",
+          "自动品牌配色适配",
+          "HTML+SVG零依赖输出",
+          "Mermaid/draw.io重绘",
+          "语义化设计系统"
+        ],
+        "summary": "一句话让AI生成39种可直接发布的品牌化图表，60秒适配网站风格",
+        "category": [
+          "AI编程",
+          "开发工具",
+          "设计工具"
+        ],
+        "suitable": [
+          "Claude Code/Codex用户",
+          "技术文档作者",
+          "系统架构师",
+          "内容创作团队",
+          "需要高频出图的开发者"
+        ],
+        "description": "Diagram Design是为AI智能体准备的图表技能库，通过自然语言指令生成39种编辑级图表，支持60秒自动抓取网站配色字体，输出自包含HTML+SVG文件，让AI画出的图直接符合品牌规范并可用于正式发布。"
+      }
+    },
+    {
       "id": "5fb38ae2-3ee9-4ac4-981a-9e7e5924952e",
       "dateAdded": "20261128",
       "type": "github-daily",
@@ -124397,9 +124341,9 @@
       "repo": "toeverything/AFFiNE",
       "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "language": "TypeScript",
-      "stars": 79624,
-      "forks": 5865,
-      "starsAdded": 474,
+      "stars": 79671,
+      "forks": 5874,
+      "starsAdded": 495,
       "createdAt": "2026-11-27T16:00:03.238Z",
       "metaData": {
         "forks": "0",
@@ -124462,6 +124406,115 @@
       }
     },
     {
+      "id": "eb138b14-3ada-4286-b206-1131b6ac4d4c",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/jingyaogong/minimind",
+      "repo": "jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "language": "Python",
+      "stars": 72418,
+      "forks": 9482,
+      "starsAdded": 391,
+      "createdAt": "2026-11-27T16:00:03.086Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "artificial-intelligence",
+          "large-language-model"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://jingyaogong.github.io/minimind",
+        "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours. - jingyaogong/minimind"
+      },
+      "summaryData": {
+        "tags": [
+          "LLM",
+          "小模型",
+          "PyTorch",
+          "教学",
+          "大模型训练"
+        ],
+        "cover": "",
+        "title": "MiniMind：从零训练的微型 LLM 全栈教程与框架",
+        "ability": [
+          "全栈训练链路",
+          "原生 PyTorch 教学",
+          "极低成本训练",
+          "多后端部署支持",
+          "强化学习与智能体"
+        ],
+        "summary": "个人可从零训练的微型大模型，覆盖数据到部署全流程。",
+        "category": [
+          "开源项目",
+          "AI 模型",
+          "开发工具"
+        ],
+        "suitable": [
+          "AI 初学者与入门者",
+          "算法研究工程师",
+          "教育培训讲师",
+          "边缘端开发团队",
+          "大模型技术爱好者"
+        ],
+        "description": "这是一个适合个人在单卡 GPU 上从零训练的小模型框架，涵盖 Tokenizer、预训练、SFT、RLHF 到部署的全流程。代码透明度高，极具教学价值，同时也支持多模态扩展与生态工具集成。"
+      }
+    },
+    {
+      "id": "cccb6004-974f-4a3e-816d-fc59dcb03bde",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "repo": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 13747,
+      "forks": 1655,
+      "starsAdded": 293,
+      "createdAt": "2026-11-27T16:00:03.188Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "Apache-2.0 license",
+        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Google Stitch",
+          "Agent Skills",
+          "AI 编程",
+          "设计转代码",
+          "开源项目"
+        ],
+        "cover": "",
+        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
+        "ability": [
+          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
+          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
+          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
+          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
+          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
+        ],
+        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
+        "category": [
+          "开发工具",
+          "AI 编程",
+          "UI 设计"
+        ],
+        "suitable": [
+          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
+          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
+          "想在前期头脑风暴中快速出设计方向的设计师",
+          "想学习如何编写高质量 Agent Skill 的开发者",
+          "希望打通设计到代码工作流的小型团队"
+        ],
+        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
+      }
+    },
+    {
       "id": "85bca4c7-ed59-4367-a74d-0b25d3f3cbf2",
       "dateAdded": "20261128",
       "type": "github-daily",
@@ -124469,9 +124522,9 @@
       "repo": "Tracer-Cloud/opensre",
       "description": "The open-source agent for CI/CD reliability.",
       "language": "Python",
-      "stars": 16228,
-      "forks": 2174,
-      "starsAdded": 328,
+      "stars": 16262,
+      "forks": 2183,
+      "starsAdded": 270,
       "createdAt": "2026-11-27T16:00:03.227Z",
       "metaData": {
         "forks": "0",
@@ -124531,59 +124584,6 @@
       }
     },
     {
-      "id": "cccb6004-974f-4a3e-816d-fc59dcb03bde",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "repo": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 13698,
-      "forks": 1645,
-      "starsAdded": 311,
-      "createdAt": "2026-11-27T16:00:03.188Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "Apache-2.0 license",
-        "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor. - google-labs-code/stitch-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Google Stitch",
-          "Agent Skills",
-          "AI 编程",
-          "设计转代码",
-          "开源项目"
-        ],
-        "cover": "",
-        "title": "Stitch Skills 深度评测：Google 官方技能库，让 AI 编程智能体天生懂设计",
-        "ability": [
-          "让编程智能体在编辑器内直接调用 Google Stitch 生成和编辑 UI 设计，免去浏览器与代码间的来回切换",
-          "taste-design 技能自动生成 DESIGN.md，用严格的反'AI 味儿'规范（禁紫色渐变、禁三等分卡片等）提升设计品味",
-          "stitch::react-components 技能把设计稿拆解为模块化 React 组件，含 Hooks 抽离与 AST 级类型校验",
-          "遵循开放 Agent Skills 标准，一条 npx 命令即可跨 Claude Code / Cursor / Codex / Gemini CLI 安装使用",
-          "支持多页站点批量生成、设计系统管理与 Prompt 自动优化"
-        ],
-        "summary": "Google 官方开源的 Agent Skills 技能库，让 Claude Code、Cursor 等 AI 编程智能体直接调用 Stitch 的 UI 设计能力，实现从一句话生成设计稿到自动落地 React 代码的闭环。",
-        "category": [
-          "开发工具",
-          "AI 编程",
-          "UI 设计"
-        ],
-        "suitable": [
-          "重度使用 AI 编程智能体（Claude Code/Cursor）的前端工程师",
-          "没有设计师、需要快速做出 MVP 的独立开发者和创业者",
-          "想在前期头脑风暴中快速出设计方向的设计师",
-          "想学习如何编写高质量 Agent Skill 的开发者",
-          "希望打通设计到代码工作流的小型团队"
-        ],
-        "description": "Google Labs 官方维护的开源技能库（8.7k star），包含 3 个插件、15 个技能，让 AI 编程智能体直接调用 Stitch 的 UI 设计能力。实测可将 UI 实现速度提升 3-5 倍，但需注意其依赖的 Stitch 免费额度（350 次/月）和 Google Labs 项目的不确定性。"
-      }
-    },
-    {
       "id": "733c256d-803e-436d-869a-70fc65049faa",
       "dateAdded": "20261128",
       "type": "github-daily",
@@ -124591,9 +124591,9 @@
       "repo": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 20086,
-      "forks": 2260,
-      "starsAdded": 243,
+      "stars": 20106,
+      "forks": 2267,
+      "starsAdded": 214,
       "createdAt": "2026-11-27T16:00:03.095Z",
       "metaData": {
         "forks": "0",
@@ -124611,6 +124611,75 @@
       }
     },
     {
+      "id": "611e1687-ef0f-45a6-a000-ff57cb8c5887",
+      "dateAdded": "20261128",
+      "type": "github-daily",
+      "url": "https://github.com/nginx/nginx",
+      "repo": "nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "language": "C",
+      "stars": 33716,
+      "forks": 8493,
+      "starsAdded": 131,
+      "createdAt": "2026-11-27T16:00:03.146Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "content-cache",
+          "http",
+          "http2",
+          "http3",
+          "https",
+          "load-balancer",
+          "mail-proxy-server",
+          "nginx",
+          "quic",
+          "reverse-proxy",
+          "security",
+          "tcp-proxy-server",
+          "tls",
+          "udp-proxy-server",
+          "web-server"
+        ],
+        "license": "BSD-2-Clause license",
+        "homepage": "https://nginx.org/",
+        "description": "The official NGINX Open Source repository. Contribute to nginx/nginx development by creating an account on GitHub."
+      },
+      "summaryData": {
+        "tags": [
+          "nginx",
+          "反向代理",
+          "负载均衡",
+          "高性能",
+          "开源"
+        ],
+        "cover": "",
+        "title": "Nginx 深度评测：撑起全球三分之一网站流量的「超级门童」",
+        "ability": [
+          "静态资源服务器与反向代理",
+          "四层/七层负载均衡",
+          "内容缓存，大幅降低后端压力",
+          "限流与 API 网关能力",
+          "Master-Worker 架构支持零停机平滑热重载"
+        ],
+        "summary": "高性能开源 Web 服务器与反向代理，以事件驱动架构解决高并发难题的 25 年老将",
+        "category": [
+          "开发工具",
+          "Web 服务器",
+          "基础设施"
+        ],
+        "suitable": [
+          "后端工程师",
+          "运维 / SRE 工程师",
+          "前端工程师",
+          "独立开发者",
+          "系统架构师"
+        ],
+        "description": "Nginx 是用 C 语言编写的事件驱动型高性能 Web 服务器，通过 Master-Worker 进程模型和 epoll 技术优雅解决 C10K 高并发难题。它集静态服务、反向代理、负载均衡、API 网关、内容缓存五大能力于一身，全球市场份额约 34%，BSD 协议免费商用，是后端与运维工程师的必修课。"
+      }
+    },
+    {
       "id": "50c0cce5-62dd-47f6-aaf0-2be02f4d8be6",
       "dateAdded": "20261128",
       "type": "github-daily",
@@ -124618,9 +124687,9 @@
       "repo": "openvinotoolkit/openvino",
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
-      "stars": 12987,
-      "forks": 3825,
-      "starsAdded": 151,
+      "stars": 12996,
+      "forks": 3832,
+      "starsAdded": 111,
       "createdAt": "2026-11-27T16:00:03.170Z",
       "metaData": {
         "forks": "0",
@@ -124681,75 +124750,6 @@
           "Intel 硬件上追求极致推理性能的 ML 工程师"
         ],
         "description": "OpenVINO 是 Intel 开源的 AI 推理优化与部署工具链，可将 PyTorch、HuggingFace、ONNX 等框架训练的模型无损转换并加速部署到 Intel CPU、核显、Arc 独显及 Core Ultra NPU。支持 INT8/INT4 量化，覆盖 LLM、多模态、语音全场景，是 AI PC 时代调用 NPU 几乎唯一的成熟方案，但在 NVIDIA GPU 和 AMD 显卡上不占优势。"
-      }
-    },
-    {
-      "id": "611e1687-ef0f-45a6-a000-ff57cb8c5887",
-      "dateAdded": "20261128",
-      "type": "github-daily",
-      "url": "https://github.com/nginx/nginx",
-      "repo": "nginx/nginx",
-      "description": "The official NGINX Open Source repository.",
-      "language": "C",
-      "stars": 33710,
-      "forks": 8488,
-      "starsAdded": 146,
-      "createdAt": "2026-11-27T16:00:03.146Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "content-cache",
-          "http",
-          "http2",
-          "http3",
-          "https",
-          "load-balancer",
-          "mail-proxy-server",
-          "nginx",
-          "quic",
-          "reverse-proxy",
-          "security",
-          "tcp-proxy-server",
-          "tls",
-          "udp-proxy-server",
-          "web-server"
-        ],
-        "license": "BSD-2-Clause license",
-        "homepage": "https://nginx.org/",
-        "description": "The official NGINX Open Source repository. Contribute to nginx/nginx development by creating an account on GitHub."
-      },
-      "summaryData": {
-        "tags": [
-          "nginx",
-          "反向代理",
-          "负载均衡",
-          "高性能",
-          "开源"
-        ],
-        "cover": "",
-        "title": "Nginx 深度评测：撑起全球三分之一网站流量的「超级门童」",
-        "ability": [
-          "静态资源服务器与反向代理",
-          "四层/七层负载均衡",
-          "内容缓存，大幅降低后端压力",
-          "限流与 API 网关能力",
-          "Master-Worker 架构支持零停机平滑热重载"
-        ],
-        "summary": "高性能开源 Web 服务器与反向代理，以事件驱动架构解决高并发难题的 25 年老将",
-        "category": [
-          "开发工具",
-          "Web 服务器",
-          "基础设施"
-        ],
-        "suitable": [
-          "后端工程师",
-          "运维 / SRE 工程师",
-          "前端工程师",
-          "独立开发者",
-          "系统架构师"
-        ],
-        "description": "Nginx 是用 C 语言编写的事件驱动型高性能 Web 服务器，通过 Master-Worker 进程模型和 epoll 技术优雅解决 C10K 高并发难题。它集静态服务、反向代理、负载均衡、API 网关、内容缓存五大能力于一身，全球市场份额约 34%，BSD 协议免费商用，是后端与运维工程师的必修课。"
       }
     }
   ]
