@@ -29639,9 +29639,9 @@
       "repo": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 76335,
+      "stars": 76353,
       "forks": 6795,
-      "starsAdded": 5090,
+      "starsAdded": 5072,
       "createdAt": "2026-11-22T19:00:39.902Z",
       "metaData": {
         "forks": "0",
@@ -29713,9 +29713,9 @@
       "repo": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 11878,
+      "stars": 11888,
       "forks": 985,
-      "starsAdded": 3229,
+      "starsAdded": 3169,
       "createdAt": "2026-11-22T19:00:39.920Z",
       "metaData": {
         "forks": "0",
@@ -29787,9 +29787,9 @@
       "repo": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 13581,
+      "stars": 13585,
       "forks": 1627,
-      "starsAdded": 2619,
+      "starsAdded": 2616,
       "createdAt": "2026-11-22T19:00:39.896Z",
       "metaData": {
         "forks": "0",
@@ -29833,59 +29833,6 @@
       }
     },
     {
-      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/meta/astryx",
-      "repo": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 33528,
-      "forks": 2614,
-      "starsAdded": 2519,
-      "createdAt": "2026-11-22T19:00:39.912Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "http://astryx.atmeta.com",
-        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
-      },
-      "summaryData": {
-        "tags": [
-          "React",
-          "设计系统",
-          "Meta 开源",
-          "AI Agent",
-          "组件库"
-        ],
-        "cover": "",
-        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
-        "ability": [
-          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
-          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
-          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
-          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
-          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
-        ],
-        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
-        "category": [
-          "开发工具",
-          "前端开发",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
-          "新建 React 19 中后台、Dashboard、内部工具的团队",
-          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
-          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
-          "关注 AI 时代前端基础设施走向的技术决策者"
-        ],
-        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
-      }
-    },
-    {
       "id": "4f15eade-3131-4ac8-b80b-528bf90b74f3",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29893,9 +29840,9 @@
       "repo": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 56885,
-      "forks": 4702,
-      "starsAdded": 2284,
+      "stars": 56892,
+      "forks": 4703,
+      "starsAdded": 2335,
       "createdAt": "2026-11-22T19:00:39.900Z",
       "metaData": {
         "forks": "0",
@@ -29945,6 +29892,59 @@
       }
     },
     {
+      "id": "c042fee4-ddcb-4cc0-b3dc-c27e306a7a9e",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/meta/astryx",
+      "repo": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 33531,
+      "forks": 2613,
+      "starsAdded": 2306,
+      "createdAt": "2026-11-22T19:00:39.912Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "http://astryx.atmeta.com",
+        "description": "An open source design system that's fully customizable and agent ready - meta/astryx"
+      },
+      "summaryData": {
+        "tags": [
+          "React",
+          "设计系统",
+          "Meta 开源",
+          "AI Agent",
+          "组件库"
+        ],
+        "cover": "",
+        "title": "Meta 开源 Astryx：首个 AI 原生的 React 设计系统深度评测",
+        "ability": [
+          "150+ 生产级 React 组件，经 Meta 内部 8 年、13000+ 应用真实打磨",
+          "AI Agent 原生支持：CLI 查询 + 托管 MCP 服务器 + 自动生成 AGENTS.md",
+          "纯 CSS 变量主题系统，支持响应式规则，改 Token 即完成品牌化",
+          "样式工具零耦合，兼容 Tailwind、CSS Modules、原生 CSS",
+          "五级定制阶梯，默认保留上游升级，可按需 eject（swizzle）"
+        ],
+        "summary": "Meta 开源的 AI 友好型 React 设计系统，让人和 AI 编程助手都能高效写出可靠的界面代码。",
+        "category": [
+          "开发工具",
+          "前端开发",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Cursor / Claude Code 等 AI 编程工具的前端开发者",
+          "新建 React 19 中后台、Dashboard、内部工具的团队",
+          "希望改主题文件而非改代码即可品牌化的小团队与设计师",
+          "需要无障碍、国际化、RTL 能力的 B 端产品开发者",
+          "关注 AI 时代前端基础设施走向的技术决策者"
+        ],
+        "description": "Astryx 是 Meta 2026 年开源的 React 设计系统，源自内部 8 年锤炼、支撑 13000+ 应用的组件库。它首次把 CLI、MCP 服务器、AGENTS.md 打包成 AI Agent 一等公民工具链，主题采用纯 CSS 变量、无品牌锁定。目前为 0.x Beta，硬性要求 React 19，新项目可上车，存量项目建议观望 v1。"
+      }
+    },
+    {
       "id": "8aadbd33-b21c-446b-9fa7-fd6187dfc917",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -29952,9 +29952,9 @@
       "repo": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 11445,
+      "stars": 11452,
       "forks": 848,
-      "starsAdded": 2209,
+      "starsAdded": 2008,
       "createdAt": "2026-11-22T19:00:39.898Z",
       "metaData": {
         "forks": "0",
@@ -29998,6 +29998,217 @@
       }
     },
     {
+      "id": "5cd43540-bb7c-472f-ba10-7c5e845583ce",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/backnotprop/plannotator",
+      "repo": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 15424,
+      "forks": 1476,
+      "starsAdded": 1596,
+      "createdAt": "2026-11-22T19:00:39.892Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://plannotator.ai",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Code",
+          "代码审查",
+          "AI Agent",
+          "开源工具",
+          "人机协作"
+        ],
+        "cover": "",
+        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
+        "ability": [
+          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
+          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
+          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
+          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
+          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
+        ],
+        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
+        "category": [
+          "开发工具",
+          "AI 编程"
+        ],
+        "suitable": [
+          "重度使用 Claude Code / Codex 的开发者",
+          "推广 Agentic Workflow 的技术团队负责人",
+          "需要异步协作的远程工作者",
+          "终端命令行爱好者",
+          "经常写技术文档 / PRD 的作者"
+        ],
+        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
+      }
+    },
+    {
+      "id": "9ccb7eaf-a171-4451-84c5-5fcba1ed01ee",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/n8n-io/nod",
+      "repo": "n8n-io/nod",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "language": "TypeScript",
+      "stars": 4304,
+      "forks": 652,
+      "starsAdded": 1424,
+      "createdAt": "2026-11-25T14:00:04.312Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [
+          "agents",
+          "ai-agent",
+          "ai-assistant",
+          "anthropic",
+          "automation",
+          "browser-automation",
+          "computer-use",
+          "electron",
+          "llm",
+          "local-first",
+          "mcp",
+          "n8n",
+          "openai",
+          "personal-agent",
+          "personal-assistant",
+          "privacy",
+          "self-hosted",
+          "telegram-bot",
+          "typescript",
+          "whatsapp-bot"
+        ],
+        "license": "Apache-2.0 license",
+        "homepage": "https://nod.n8n.io/",
+        "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n. - n8n-io/nod"
+      },
+      "summaryData": null
+    },
+    {
+      "id": "daf7fc30-e079-4307-874c-e152aac15f3f",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/we-promise/sure",
+      "repo": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 18214,
+      "forks": 1585,
+      "starsAdded": 1375,
+      "createdAt": "2026-11-22T19:00:39.916Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "AGPLv3 license",
+        "homepage": "https://sure.am",
+        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
+      },
+      "summaryData": {
+        "tags": [
+          "开源项目",
+          "个人理财",
+          "自托管",
+          "Rails",
+          "AI助手"
+        ],
+        "cover": "",
+        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
+        "ability": [
+          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
+          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
+          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
+          "家庭多用户与账户级权限隔离",
+          "Docker 一键部署，备份数据完全自主掌控"
+        ],
+        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
+        "category": [
+          "生活效率",
+          "开发工具",
+          "AI 应用"
+        ],
+        "suitable": [
+          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
+          "加密货币与多资产持有者",
+          "需要家人共同记账的家庭",
+          "自托管爱好者与开发者",
+          "注重数据隐私主权的个人"
+        ],
+        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
+      }
+    },
+    {
+      "id": "11012dcd-c1ba-4837-bfc4-2e04bfe1d307",
+      "dateAdded": "202648",
+      "type": "github-weekly",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "repo": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 8724,
+      "forks": 1572,
+      "starsAdded": 1332,
+      "createdAt": "2026-11-22T19:00:39.907Z",
+      "metaData": {
+        "forks": "0",
+        "stars": "0",
+        "topics": [],
+        "license": "MIT license",
+        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
+      },
+      "summaryData": {
+        "tags": [
+          "Claude Skills",
+          "量化交易",
+          "开源项目",
+          "美股投资",
+          "交易纪律"
+        ],
+        "cover": "",
+        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
+        "ability": [
+          "市场状态分析（宽度、趋势、分布日监控）",
+          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
+          "仓位计算与交易前纪律拦截",
+          "交易日志与复盘闭环（本地 YAML 记忆）",
+          "策略回测与一键式交易工作流"
+        ],
+        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
+        "category": [
+          "AI 编程",
+          "投资理财",
+          "开发工具"
+        ],
+        "suitable": [
+          "美股长期+波段混合型散户",
+          "每天只有 15-30 分钟看盘的兼职交易者",
+          "O'Neil/Minervini 方法论追随者",
+          "纪律性差、交易日志不连贯的投资者",
+          "想做系统化策略回测的个人研究者"
+        ],
+        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
+      }
+    },
+    {
       "id": "6b330913-b535-4c0b-b1ea-e979541b8c4e",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30005,9 +30216,9 @@
       "repo": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 32053,
+      "stars": 32060,
       "forks": 2880,
-      "starsAdded": 1825,
+      "starsAdded": 1280,
       "createdAt": "2026-11-22T19:00:39.918Z",
       "metaData": {
         "forks": "0",
@@ -30072,174 +30283,6 @@
       }
     },
     {
-      "id": "5cd43540-bb7c-472f-ba10-7c5e845583ce",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/backnotprop/plannotator",
-      "repo": "backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "language": "TypeScript",
-      "stars": 15416,
-      "forks": 1476,
-      "starsAdded": 1631,
-      "createdAt": "2026-11-22T19:00:39.892Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "claude-code",
-          "code-review",
-          "codex",
-          "obsidian",
-          "opencode",
-          "pi-mono",
-          "plan-mode",
-          "skills"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://plannotator.ai",
-        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.  - GitHub - backnotprop/plannotator: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click."
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Code",
-          "代码审查",
-          "AI Agent",
-          "开源工具",
-          "人机协作"
-        ],
-        "cover": "",
-        "title": "Plannotator 深度评测：让 AI 编码 Agent 的计划与代码变得可批注、可回传",
-        "ability": [
-          "Plan Review：拦截 Agent 计划，在浏览器中行级标注后回传",
-          "Code Review：支持本地 diff、commit、GitHub/GitLab PR 的完整代码审查",
-          "Plannotator Inbox：异步留言板，Agent 长任务时不阻塞等待用户反馈",
-          "Herdr Annotate：终端内直接对 Markdown/Agent 输出画线批注",
-          "VS Code 扩展：评审界面嵌入编辑器，选中代码快捷批注"
-        ],
-        "summary": "一个开源本地工具，把 Claude Code 等 AI 编码 Agent 的计划和代码搬到浏览器里行级批注，再一键回传给 Agent 修正。",
-        "category": [
-          "开发工具",
-          "AI 编程"
-        ],
-        "suitable": [
-          "重度使用 Claude Code / Codex 的开发者",
-          "推广 Agentic Workflow 的技术团队负责人",
-          "需要异步协作的远程工作者",
-          "终端命令行爱好者",
-          "经常写技术文档 / PRD 的作者"
-        ],
-        "description": "Plannotator 是一个本地优先的开源人机协作审批层，通过 Hook、MCP、Slash Commands 三种方式接入 Claude Code、Codex、OpenCode 等 AI 编码 Agent。当 Agent 输出计划或代码时，浏览器会弹出评审界面，用户可像批改作业一样行级标注、添加 Conventional Comments 标签，批复作为下一轮输入回灌给 Agent，把'按 Y 盲跑'变成带闸门的可控流水线。仓库约 8.6k Stars，支持 macOS/Linux/Windows。"
-      }
-    },
-    {
-      "id": "daf7fc30-e079-4307-874c-e152aac15f3f",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/we-promise/sure",
-      "repo": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 18210,
-      "forks": 1585,
-      "starsAdded": 1430,
-      "createdAt": "2026-11-22T19:00:39.916Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "AGPLv3 license",
-        "homepage": "https://sure.am",
-        "description": "The personal finance app for everyone (by everyone) - we-promise/sure"
-      },
-      "summaryData": {
-        "tags": [
-          "开源项目",
-          "个人理财",
-          "自托管",
-          "Rails",
-          "AI助手"
-        ],
-        "cover": "",
-        "title": "Sure：Maybe Finance 停摆后的社区复活版，开源免费的全资产个人财务管理应用",
-        "ability": [
-          "全资产净值追踪（银行/股票/加密/房产/贷款一图统览）",
-          "对接 Plaid、Enable Banking 等十余种数据源自动同步",
-          "AI 助手 + 本地 Ollama 推理 + MCP 端点可接入 Claude 等 Agent",
-          "家庭多用户与账户级权限隔离",
-          "Docker 一键部署，备份数据完全自主掌控"
-        ],
-        "summary": "Maybe Finance 归档后由 293 位志愿者接管的社区 Fork，商业级开源 PFM，支持全资产追踪、AI 助手与自托管，完全免费。",
-        "category": [
-          "生活效率",
-          "开发工具",
-          "AI 应用"
-        ],
-        "suitable": [
-          "想摆脱 YNAB/Monarch 年费订阅的海外用户",
-          "加密货币与多资产持有者",
-          "需要家人共同记账的家庭",
-          "自托管爱好者与开发者",
-          "注重数据隐私主权的个人"
-        ],
-        "description": "Sure 是 Maybe Finance 归档后由志愿者接管的社区 Fork，继承原作近百万美元打造的 Rails 商用级代码库，10 个月获 8.4k Star。支持银行、股票、加密货币、房产贷款的全资产净值追踪，内置贝叶斯 + LLM 双 AI 分类管线，提供 MCP 端点，Docker 一行命令即可自托管，AGPLv3 完全免费开源。"
-      }
-    },
-    {
-      "id": "11012dcd-c1ba-4837-bfc4-2e04bfe1d307",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "repo": "tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "language": "Python",
-      "stars": 8719,
-      "forks": 1572,
-      "starsAdded": 1381,
-      "createdAt": "2026-11-22T19:00:39.907Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [],
-        "license": "MIT license",
-        "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. - tradermonty/claude-trading-skills"
-      },
-      "summaryData": {
-        "tags": [
-          "Claude Skills",
-          "量化交易",
-          "开源项目",
-          "美股投资",
-          "交易纪律"
-        ],
-        "cover": "",
-        "title": "Claude Trading Skills 深度评测：把 Claude 变成纪律严明的交易分析师",
-        "ability": [
-          "市场状态分析（宽度、趋势、分布日监控）",
-          "形态化选股筛选（VCP/CANSLIM/动量爆发）",
-          "仓位计算与交易前纪律拦截",
-          "交易日志与复盘闭环（本地 YAML 记忆）",
-          "策略回测与一键式交易工作流"
-        ],
-        "summary": "一套由 74 个 Claude Skills 组成的开源交易决策 SOP 工具包，帮散户用 AI 强化纪律与复盘，而非预测涨跌。",
-        "category": [
-          "AI 编程",
-          "投资理财",
-          "开发工具"
-        ],
-        "suitable": [
-          "美股长期+波段混合型散户",
-          "每天只有 15-30 分钟看盘的兼职交易者",
-          "O'Neil/Minervini 方法论追随者",
-          "纪律性差、交易日志不连贯的投资者",
-          "想做系统化策略回测的个人研究者"
-        ],
-        "description": "GitHub 上最系统化的 Claude 交易 Skills 工具包，含 74 个原子 Skills 与 5 条开箱即用工作流，融合 O'Neil、Minervini、Shapiro 等交易大师方法论。它不预测涨跌，而是提供市场分析、仓位计算、纪律拦截、复盘日志等结构化流程，核心理念是「人负责决策、AI 负责执行与纪律」。"
-      }
-    },
-    {
       "id": "0277163c-d781-4dee-a6e4-48c6c2343839",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30247,9 +30290,9 @@
       "repo": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21942,
+      "stars": 21946,
       "forks": 2193,
-      "starsAdded": 1269,
+      "starsAdded": 1185,
       "createdAt": "2026-11-22T19:00:39.911Z",
       "metaData": {
         "forks": "0",
@@ -30306,9 +30349,9 @@
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59619,
-      "forks": 4895,
-      "starsAdded": 1175,
+      "stars": 59623,
+      "forks": 4881,
+      "starsAdded": 1150,
       "createdAt": "2026-11-22T19:00:39.905Z",
       "metaData": {
         "forks": "0",
@@ -30361,49 +30404,6 @@
       }
     },
     {
-      "id": "9ccb7eaf-a171-4451-84c5-5fcba1ed01ee",
-      "dateAdded": "202648",
-      "type": "github-weekly",
-      "url": "https://github.com/n8n-io/nod",
-      "repo": "n8n-io/nod",
-      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
-      "language": "TypeScript",
-      "stars": 4287,
-      "forks": 650,
-      "starsAdded": 1165,
-      "createdAt": "2026-11-25T14:00:04.312Z",
-      "metaData": {
-        "forks": "0",
-        "stars": "0",
-        "topics": [
-          "agents",
-          "ai-agent",
-          "ai-assistant",
-          "anthropic",
-          "automation",
-          "browser-automation",
-          "computer-use",
-          "electron",
-          "llm",
-          "local-first",
-          "mcp",
-          "n8n",
-          "openai",
-          "personal-agent",
-          "personal-assistant",
-          "privacy",
-          "self-hosted",
-          "telegram-bot",
-          "typescript",
-          "whatsapp-bot"
-        ],
-        "license": "Apache-2.0 license",
-        "homepage": "https://nod.n8n.io/",
-        "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n. - n8n-io/nod"
-      },
-      "summaryData": null
-    },
-    {
       "id": "121db341-8389-470f-95d1-5c2b71b7aba9",
       "dateAdded": "202648",
       "type": "github-weekly",
@@ -30411,9 +30411,9 @@
       "repo": "obsidianmd/obsidian-skills",
       "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
       "language": "Shell",
-      "stars": 54316,
+      "stars": 54325,
       "forks": 3865,
-      "starsAdded": 704,
+      "starsAdded": 950,
       "createdAt": "2026-11-26T16:00:06.270Z",
       "metaData": {
         "forks": "0",
@@ -30454,9 +30454,9 @@
       "repo": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2577,
+      "stars": 2579,
       "forks": 206,
-      "starsAdded": 325,
+      "starsAdded": 296,
       "createdAt": "2026-11-22T19:00:39.914Z",
       "metaData": {
         "forks": "0",
